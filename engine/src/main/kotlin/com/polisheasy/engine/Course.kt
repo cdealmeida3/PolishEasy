@@ -36,3 +36,13 @@ data class ChooseTranslation(
     val options: List<Localized>,
     val correctOption: Int,
 ) : Exercise
+
+@Serializable
+@SerialName("type_answer")
+data class TypeAnswer(
+    override val id: String,
+    /** What to say in Polish, in each Base Language. */
+    val prompt: Localized,
+    /** Every Polish answer treated as correct, with its proper spelling. The first is shown when the Learner is wrong. */
+    val acceptedAnswers: List<String>,
+) : Exercise

@@ -40,6 +40,27 @@ class LoadingContentTest {
         assertNamesTheDailySet(failure)
     }
 
+    @Test
+    fun `a typing Exercise with no Accepted Answers is rejected`() {
+        val failure = assertFailsWith<IllegalArgumentException> {
+            FixtureCourse.loadWithDayOne(typingDay())
+        }
+
+        assertNamesTheDailySet(failure)
+        assertTrue("a1-u01-d01-e01" in failure.message.orEmpty(), "Message was: ${failure.message}")
+    }
+
+    @Test
+    fun `a typing Exercise with a blank or punctuation-only Accepted Answer is rejected`() {
+        listOf("", "   ", "?!").forEach { blank ->
+            val failure = assertFailsWith<IllegalArgumentException>("Accepted Answer \"$blank\"") {
+                FixtureCourse.loadWithDayOne(typingDay("dziękuję", blank))
+            }
+
+            assertNamesTheDailySet(failure)
+        }
+    }
+
     private fun assertNamesTheDailySet(failure: IllegalArgumentException) =
         assertTrue("a1-u01-d01" in failure.message.orEmpty(), "Message was: ${failure.message}")
 

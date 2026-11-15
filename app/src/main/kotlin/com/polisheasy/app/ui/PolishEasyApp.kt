@@ -3,6 +3,25 @@ package com.polisheasy.app.ui
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.focus.FocusRequester
+import androidx.compose.ui.focus.focusProperties
+import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.text.TextRange
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardCapitalization
+import androidx.compose.ui.text.input.TextFieldValue
+import androidx.compose.ui.text.intl.LocaleList
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -65,8 +84,8 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
             }
             is Screen.Player -> {
                 BackHandler(onBack = viewModel::backToHome)
-                // Keyed on the screen the engine produced, so an Exercise that returns starts fresh.
-                key(screen.copy(feedback = null)) {
+                // Keyed on each showing, so an Exercise that returns starts fresh, typed text included.
+                key(screen.shown) {
                     PlayerScreen(
                         screen.exercise,
                         screen.progress,
@@ -96,9 +115,16 @@ private fun ScreenColumn(content: @Composable () -> Unit) {
     ) { content() }
 }
 
-/** A Daily Set screen: the progress bar pinned at the top, the content centred below it. */
+/**
+ * A Daily Set screen: the progress bar pinned at the top, the content centred below it, and
+ * [bottomBar] along the bottom edge, which is the top of the keyboard while it is open.
+ */
 @Composable
-private fun DailySetColumn(progress: SetProgress, content: @Composable () -> Unit) {
+private fun DailySetColumn(
+    progress: SetProgress,
+    bottomBar: @Composable () -> Unit = {},
+    content: @Composable () -> Unit,
+) {
     val fraction by animateFloatAsState(
         targetValue = if (progress.total == 0) 0f else progress.correct.toFloat() / progress.total,
         label = "Daily Set progress",
@@ -107,27 +133,33 @@ private fun DailySetColumn(progress: SetProgress, content: @Composable () -> Uni
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .safeDrawingPadding()
-            .padding(24.dp),
+            .safeDrawingPadding(),
     ) {
-        LinearProgressIndicator(
-            progress = { fraction },
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(8.dp)
-                .semantics { contentDescription = description },
-        )
         Column(
             modifier = Modifier
                 .weight(1f)
-                .fillMaxWidth()
-                .verticalScroll(rememberScrollState()),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally,
+                .padding(24.dp),
         ) {
-            Spacer(Modifier.height(24.dp))
-            content()
+            LinearProgressIndicator(
+                progress = { fraction },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(8.dp)
+                    .semantics { contentDescription = description },
+            )
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth()
+                    .verticalScroll(rememberScrollState()),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally,
+            ) {
+                Spacer(Modifier.height(24.dp))
+                content()
+            }
         }
+        bottomBar()
     }
 }
 
@@ -186,17 +218,34 @@ private fun PlayerScreen(
     onAnswer: (Answer) -> Unit,
     onContinue: () -> Unit,
 ) {
-    DailySetColumn(progress) {
+    // Held here so the Polish key row and the text field share it.
+    var typed by rememberSaveable(stateSaver = TextFieldValue.Saver) { mutableStateOf(TextFieldValue("")) }
+    DailySetColumn(
+        progress,
+        bottomBar = {
+            if (exercise is ExerciseView.TypeAnswer && feedback == null) {
+                PolishKeyRow(onKey = { letter -> typed = typed.inserting(letter) })
+            }
+        },
+    ) {
         when (exercise) {
             is ExerciseView.ChooseTranslation -> ChooseTranslation(exercise, enabled = feedback == null, onAnswer)
+            is ExerciseView.TypeAnswer -> TypeAnswerExercise(
+                exercise,
+                typed,
+                onTypedChange = { typed = it },
+                enabled = feedback == null,
+                onAnswer,
+            )
         }
         Spacer(Modifier.height(24.dp))
         if (feedback != null) {
             Text(
-                text = if (feedback.correct) {
-                    stringResource(R.string.feedback_correct)
-                } else {
-                    stringResource(R.string.feedback_wrong, feedback.correctAnswer)
+                text = when {
+                    feedback.correct && feedback.accentWarning ->
+                        stringResource(R.string.feedback_accent_warning, feedback.correctAnswer)
+                    feedback.correct -> stringResource(R.string.feedback_correct)
+                    else -> stringResource(R.string.feedback_wrong, feedback.correctAnswer)
                 },
                 color = if (feedback.correct) MaterialTheme.colorScheme.tertiary else MaterialTheme.colorScheme.error,
                 style = MaterialTheme.typography.titleMedium,
@@ -233,6 +282,93 @@ private fun ChooseTranslation(
         ) { Text(option) }
     }
 }
+
+@Composable
+private fun TypeAnswerExercise(
+    exercise: ExerciseView.TypeAnswer,
+    typed: TextFieldValue,
+    onTypedChange: (TextFieldValue) -> Unit,
+    enabled: Boolean,
+    onAnswer: (Answer) -> Unit,
+) {
+    val focusRequester = remember { FocusRequester() }
+    val keyboard = LocalSoftwareKeyboardController.current
+    val submit = {
+        if (enabled && typed.text.isNotBlank()) {
+            // Hidden so the feedback and "Continue" are not behind the keyboard.
+            keyboard?.hide()
+            onAnswer(Answer.Typed(typed.text))
+        }
+    }
+    // Opens the keyboard as soon as the Exercise appears.
+    LaunchedEffect(Unit) { if (enabled) focusRequester.requestFocus() }
+
+    Text(stringResource(R.string.type_answer_instruction), style = MaterialTheme.typography.labelLarge)
+    Spacer(Modifier.height(16.dp))
+    Text(exercise.prompt, style = MaterialTheme.typography.headlineMedium, textAlign = TextAlign.Center)
+    Spacer(Modifier.height(32.dp))
+    OutlinedTextField(
+        value = typed,
+        onValueChange = onTypedChange,
+        readOnly = !enabled,
+        singleLine = true,
+        label = { Text(stringResource(R.string.type_answer_field_label)) },
+        keyboardOptions = KeyboardOptions(
+            capitalization = KeyboardCapitalization.None,
+            autoCorrectEnabled = false,
+            imeAction = ImeAction.Done,
+            hintLocales = LocaleList("pl"),
+        ),
+        keyboardActions = KeyboardActions(onDone = { submit() }),
+        modifier = Modifier
+            .fillMaxWidth()
+            .focusRequester(focusRequester),
+    )
+    if (enabled) {
+        Spacer(Modifier.height(16.dp))
+        Button(onClick = submit, enabled = typed.text.isNotBlank(), modifier = Modifier.fillMaxWidth()) {
+            Text(stringResource(R.string.action_check))
+        }
+    }
+}
+
+private val polishLetters = listOf("ą", "ć", "ę", "ł", "ń", "ó", "ś", "ź", "ż")
+
+/** The Polish letters a standard keyboard hides behind a long press, one tap each. */
+@Composable
+private fun PolishKeyRow(onKey: (String) -> Unit) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 4.dp, vertical = 4.dp),
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
+    ) {
+        polishLetters.forEach { letter ->
+            val description = stringResource(R.string.polish_key_description, letter)
+            Surface(
+                onClick = { onKey(letter) },
+                shape = MaterialTheme.shapes.small,
+                color = MaterialTheme.colorScheme.secondaryContainer,
+                modifier = Modifier
+                    .weight(1f)
+                    .height(48.dp)
+                    // A key must not take focus from the text field, or the keyboard would close.
+                    .focusProperties { canFocus = false }
+                    .semantics { contentDescription = description },
+            ) {
+                Box(contentAlignment = Alignment.Center) {
+                    Text(letter, style = MaterialTheme.typography.titleLarge)
+                }
+            }
+        }
+    }
+}
+
+/** This text with [letter] in place of the selection, or at the cursor, and the cursor after it. */
+private fun TextFieldValue.inserting(letter: String): TextFieldValue = copy(
+    text = text.replaceRange(selection.min, selection.max, letter),
+    selection = TextRange(selection.min + letter.length),
+)
 
 @Composable
 private fun SummaryScreen(correctAnswers: Int, exercises: Int, onDone: () -> Unit) {

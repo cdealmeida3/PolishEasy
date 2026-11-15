@@ -37,14 +37,23 @@ data class TipView(val title: String, val body: String)
 /** An Exercise as the Learner sees it: Base Language text resolved, answer withheld. */
 sealed interface ExerciseView {
     data class ChooseTranslation(val prompt: String, val options: List<String>) : ExerciseView
+
+    /** [prompt] is what to type in Polish, in the Base Language. */
+    data class TypeAnswer(val prompt: String) : ExerciseView
 }
 
 /** The Learner's response to an Exercise. */
 sealed interface Answer {
     data class Option(val index: Int) : Answer
+
+    data class Typed(val text: String) : Answer
 }
 
-data class Feedback(val correct: Boolean, val correctAnswer: String)
+/**
+ * An answer that is right apart from its accents is [correct] with [accentWarning] set;
+ * [correctAnswer] then shows the proper spelling.
+ */
+data class Feedback(val correct: Boolean, val correctAnswer: String, val accentWarning: Boolean = false)
 
 /**
  * All course rules. Screens ask it what to show and send it the Learner's answers;
@@ -164,6 +173,7 @@ class CourseEngine(
             prompt = exercise.prompt,
             options = exercise.options.map(::localize),
         )
+        is TypeAnswer -> ExerciseView.TypeAnswer(localize(exercise.prompt))
     }
 
     private fun check(exercise: Exercise, answer: Answer): Feedback = when (exercise) {
@@ -174,6 +184,7 @@ class CourseEngine(
                 correctAnswer = localize(exercise.options[exercise.correctOption]),
             )
         }
+        is TypeAnswer -> checkTyped((answer as Answer.Typed).text, exercise.acceptedAnswers)
     }
 
     private fun localize(text: Localized): String = text.getValue(baseLanguage)
