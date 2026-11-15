@@ -1,0 +1,55 @@
+# PolishEasy
+
+An Android app for learning Polish in short daily sessions, starting at A1 and designed to grow to further levels.
+
+## Language
+
+**Learner**:
+A person using the app to learn Polish.
+_Avoid_: User, student, player
+
+**Base Language**:
+The language the Learner already knows, in which instructions and translations are shown. English at first.
+_Avoid_: Native language, source language, UI language
+
+**Level**:
+A stage of Polish proficiency on the CEFR scale (A1, A2, …) that groups a complete body of course material.
+_Avoid_: Course, grade, difficulty
+
+**Unit**:
+A themed group of consecutive Daily Sets within a Level, such as Greetings or Food.
+_Avoid_: Chapter, module, topic
+
+**Path**:
+The ordered sequence of Daily Sets a Learner works through within a Level, Unit by Unit. Every Learner follows the same Path, starting from its first Daily Set whenever they begin.
+_Avoid_: Curriculum, track, journey
+
+**Daily Set**:
+One day's worth of Exercises on the Path, designed to take 10 to 15 minutes. A Learner can start at most one new Daily Set per calendar day, and the Path advances only when one is completed.
+_Avoid_: Lesson, session, daily challenge
+
+**New Material**:
+The part of a Daily Set that is Authored Content, identical for every Learner.
+
+**Review**:
+The part of a Daily Set chosen per Learner from material they previously got wrong or have not seen recently.
+_Avoid_: Practice, revision, recap
+
+**Tip**:
+A short explanation of new grammar or words shown before the Exercises that rely on it.
+_Avoid_: Lesson, hint, note
+
+**Replay**:
+Doing an already completed Daily Set again for practice. It does not advance the Path.
+_Avoid_: Redo, practice mode
+
+**Streak**:
+The number of consecutive calendar days on which the Learner completed a Daily Set.
+
+**Exercise**:
+A single task inside a Daily Set that the Learner answers and the app checks.
+_Avoid_: Question, activity, task
+
+**Authored Content**:
+Course material written and reviewed ahead of time and shipped with the app, as opposed to material generated while the Learner is using it.
+_Avoid_: Static content, generated content
