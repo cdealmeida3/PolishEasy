@@ -8,9 +8,14 @@
     <string name="home_all_completed">You\'ve completed every Daily Set released so far. More are on the way.</string>
     <string name="home_start">Start</string>
     <string name="choose_translation_instruction">Choose the correct translation</string>
+    <string name="type_answer_instruction">Type this in Polish</string>
+    <string name="type_answer_field_label">Your answer</string>
+    <string name="action_check">Check</string>
+    <string name="polish_key_description">Insert %1$s</string>
     <string name="tip_label">Tip</string>
     <string name="progress_description">%1$d of %2$d Exercises answered correctly</string>
     <string name="feedback_correct">Correct!</string>
+    <string name="feedback_accent_warning">Correct. Mind the accents: %1$s</string>
     <string name="feedback_wrong">Not quite. Correct answer: %1$s</string>
     <string name="action_continue">Continue</string>
     <string name="summary_title">Daily Set complete</string>

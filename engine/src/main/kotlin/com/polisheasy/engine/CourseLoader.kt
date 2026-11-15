@@ -40,7 +40,7 @@ fun loadCourse(readFile: (path: String) -> String): Course {
 
 private const val MAX_TIPS = 2
 
-/** Rejects a Daily Set whose Tips break what the course engine relies on. */
+/** Rejects a Daily Set whose Tips or Accepted Answers break what the course engine relies on. */
 private fun checked(dailySet: DailySet): DailySet {
     val exerciseIds = dailySet.exercises.map { it.id }.toSet()
     val placements = dailySet.tips.map { it.before }
@@ -54,6 +54,14 @@ private fun checked(dailySet: DailySet): DailySet {
     }
     require(placements.size == placements.toSet().size) {
         "Daily Set ${dailySet.id} has more than one Tip before the same Exercise"
+    }
+    dailySet.exercises.filterIsInstance<TypeAnswer>().forEach { exercise ->
+        require(exercise.acceptedAnswers.isNotEmpty()) {
+            "Daily Set ${dailySet.id}: Exercise ${exercise.id} has no Accepted Answers"
+        }
+        require(exercise.acceptedAnswers.none { normalizeAnswer(it).isEmpty() }) {
+            "Daily Set ${dailySet.id}: Exercise ${exercise.id} has a blank Accepted Answer"
+        }
     }
     return dailySet
 }

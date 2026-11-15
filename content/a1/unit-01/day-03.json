@@ -1,0 +1,71 @@
+{
+  "id": "a1-u01-d03",
+  "tips": [
+    {
+      "id": "a1-u01-d03-t01",
+      "before": "a1-u01-d03-e01",
+      "title": { "en": "Typing in Polish" },
+      "body": { "en": "Now you type the Polish yourself. The letters ą ć ę ł ń ó ś ź ż are on the row just above your keyboard. An answer with missing accents is still accepted, and you are shown its proper spelling." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d03-e01",
+      "prompt": { "en": "yes" },
+      "acceptedAnswers": ["tak"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d03-e02",
+      "prompt": { "en": "thank you" },
+      "acceptedAnswers": ["dziękuję", "dzięki"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d03-e03",
+      "prompt": "przepraszam",
+      "options": [
+        { "en": "sorry" },
+        { "en": "please" },
+        { "en": "good night" }
+      ],
+      "correctOption": 0
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d03-e04",
+      "prompt": { "en": "hi" },
+      "acceptedAnswers": ["cześć"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d03-e05",
+      "prompt": { "en": "goodbye" },
+      "acceptedAnswers": ["do widzenia", "do zobaczenia"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d03-e06",
+      "prompt": { "en": "good morning" },
+      "acceptedAnswers": ["dzień dobry"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d03-e07",
+      "prompt": "dobranoc",
+      "options": [
+        { "en": "good evening" },
+        { "en": "good night" },
+        { "en": "see you" }
+      ],
+      "correctOption": 1
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d03-e08",
+      "prompt": { "en": "please" },
+      "acceptedAnswers": ["proszę"]
+    }
+  ]
+}

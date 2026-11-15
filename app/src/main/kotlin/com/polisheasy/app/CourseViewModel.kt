@@ -27,6 +27,8 @@ sealed interface Screen {
     data class Player(
         val exercise: ExerciseView,
         val progress: SetProgress,
+        /** Different each time an Exercise is shown, so one that returns unchanged still starts fresh. */
+        val shown: Int,
         val feedback: Feedback? = null,
     ) : Screen
 
@@ -44,6 +46,8 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
 
     var screen: Screen by mutableStateOf(Screen.Home(engine.today()))
         private set
+
+    private var exercisesShown = 0
 
     fun startDailySet() = show(engine.startDailySet())
 
@@ -70,7 +74,7 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
     private fun show(step: Step) {
         screen = when (step) {
             is Step.ShowTip -> Screen.Tip(step.tip, step.progress)
-            is Step.ShowExercise -> Screen.Player(step.exercise, step.progress)
+            is Step.ShowExercise -> Screen.Player(step.exercise, step.progress, shown = ++exercisesShown)
             is Step.ShowSummary -> Screen.Summary(step.correctAnswers, step.exercises)
         }
     }

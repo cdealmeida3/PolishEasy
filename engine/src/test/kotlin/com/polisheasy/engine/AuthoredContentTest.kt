@@ -19,6 +19,7 @@ class AuthoredContentTest {
             val correct = dailySet.exercises.map { exercise ->
                 when (exercise) {
                     is ChooseTranslation -> Answer.Option(exercise.correctOption)
+                    is TypeAnswer -> Answer.Typed(exercise.acceptedAnswers.first())
                 }
             }
             // One Learner may complete only one Daily Set per day.
@@ -36,5 +37,21 @@ class AuthoredContentTest {
         }
 
         assertEquals(Today.AllCompleted, CourseEngine(course, progress, clock).today())
+    }
+
+    @Test
+    fun `every Accepted Answer shipped with the app is correct when typed exactly, with no accent warning`() {
+        val typing = course.path.flatMap { it.exercises }.filterIsInstance<TypeAnswer>()
+        assertTrue(typing.isNotEmpty())
+
+        typing.forEach { exercise ->
+            exercise.acceptedAnswers.forEach { accepted ->
+                assertEquals(
+                    Feedback(correct = true, correctAnswer = accepted),
+                    checkTyped(accepted, exercise.acceptedAnswers),
+                    "Exercise ${exercise.id}",
+                )
+            }
+        }
     }
 }
