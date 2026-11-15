@@ -62,6 +62,64 @@ class LoadingContentTest {
     }
 
     @Test
+    fun `a word tiles Exercise with no Accepted Answers is rejected`() {
+        assertWordTilesRejected(tilesDay(accepted = emptyList()))
+    }
+
+    @Test
+    fun `a word tiles Exercise with a blank or punctuation-only Accepted Answer is rejected`() {
+        listOf("", "   ", "?!").forEach { blank ->
+            assertWordTilesRejected(tilesDay(listOf("dzień dobry", blank)), "Accepted Answer \"$blank\"")
+            assertWordTilesRejected(tilesDay(listOf(blank)), "Only Accepted Answer \"$blank\"")
+        }
+    }
+
+    @Test
+    fun `a word tiles Exercise whose first Accepted Answer is a single word is rejected`() {
+        assertWordTilesRejected(tilesDay(listOf("dziękuję")))
+        assertWordTilesRejected(tilesDay(listOf("dziękuję!"), distractors = listOf("tak", "nie")))
+    }
+
+    @Test
+    fun `a word tiles Exercise with a distractor that is not exactly one word is rejected`() {
+        listOf("na razie", "", "  ", "?").forEach { distractor ->
+            assertWordTilesRejected(tilesDay(listOf("dzień dobry"), listOf("tak", distractor)), "Distractor \"$distractor\"")
+        }
+    }
+
+    @Test
+    fun `a word tiles Exercise with an Accepted Answer that cannot be built from its tiles is rejected`() {
+        // A word that is not among the tiles.
+        assertWordTilesRejected(tilesDay(listOf("dzień dobry", "dobry wieczór")))
+        // A word needed twice, with one tile.
+        assertWordTilesRejected(tilesDay(listOf("tak, proszę", "tak, tak, proszę")))
+    }
+
+    @Test
+    fun `a word tiles Exercise whose second Accepted Answer uses a distractor word loads`() {
+        val course = FixtureCourse.loadWithDayOne(
+            tilesDay(listOf("dzień dobry", "Dobry wieczór"), distractors = listOf("wieczór")),
+        )
+
+        assertEquals(
+            WordTiles(
+                id = "a1-u01-d01-e01",
+                prompt = mapOf("en" to "good morning, how are you?"),
+                acceptedAnswers = listOf("dzień dobry", "Dobry wieczór"),
+                distractors = listOf("wieczór"),
+            ),
+            course.path.first().exercises.single(),
+        )
+    }
+
+    private fun assertWordTilesRejected(day: String, case: String? = null) {
+        val failure = assertFailsWith<IllegalArgumentException>(case) { FixtureCourse.loadWithDayOne(day) }
+
+        assertNamesTheDailySet(failure)
+        assertTrue("a1-u01-d01-e01" in failure.message.orEmpty(), "Message was: ${failure.message}")
+    }
+
+    @Test
     fun `Items are loaded from the files the course lists, and each Exercise's Items are read`() {
         val course = loadWithItems(
             listOf(

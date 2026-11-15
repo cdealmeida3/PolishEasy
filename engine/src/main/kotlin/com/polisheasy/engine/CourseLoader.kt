@@ -1,5 +1,6 @@
 package com.polisheasy.engine
 
+import java.util.Locale
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
@@ -97,5 +98,25 @@ private fun checked(dailySet: DailySet): DailySet {
             "Daily Set ${dailySet.id}: Exercise ${exercise.id} has a blank Accepted Answer"
         }
     }
+    dailySet.exercises.filterIsInstance<WordTiles>().forEach { exercise ->
+        val name = "Daily Set ${dailySet.id}: Exercise ${exercise.id}"
+        require(exercise.acceptedAnswers.isNotEmpty()) { "$name has no Accepted Answers" }
+        require(exercise.acceptedAnswers.none { words(it).isEmpty() }) { "$name has a blank Accepted Answer" }
+        require(words(exercise.acceptedAnswers.first()).size >= 2) {
+            "$name has a first Accepted Answer of fewer than two words, which leaves nothing to build"
+        }
+        exercise.distractors.forEach { distractor ->
+            require(words(distractor).size == 1) { "$name has the distractor \"$distractor\", which is not one word" }
+        }
+        val tiles = tilesOf(exercise).wordCounts()
+        exercise.acceptedAnswers.forEach { accepted ->
+            require(words(accepted).wordCounts().all { (word, count) -> count <= (tiles[word] ?: 0) }) {
+                "$name has the Accepted Answer \"$accepted\", which cannot be built from its tiles"
+            }
+        }
+    }
     return dailySet
 }
+
+/** How many times each word is in this list, letter case ignored. */
+private fun List<String>.wordCounts(): Map<String, Int> = groupingBy { it.lowercase(Locale.ROOT) }.eachCount()

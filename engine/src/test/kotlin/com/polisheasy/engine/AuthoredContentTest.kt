@@ -23,6 +23,13 @@ class AuthoredContentTest {
                     .first { it.prompt.getValue("en") == view.prompt }
                     .acceptedAnswers.first(),
             )
+            is ExerciseView.WordTiles -> Answer.Tiles(
+                words(
+                    exercises.filterIsInstance<WordTiles>()
+                        .first { it.prompt.getValue("en") == view.prompt && tilesOf(it).sorted() == view.tiles.sorted() }
+                        .acceptedAnswers.first(),
+                ),
+            )
         }
     }
 
@@ -79,12 +86,12 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `played one per day, day 1 has no Review, day 2 ends with 7 Review Exercises and day 3 with 4`() {
+    fun `played one per day, day 1 has no Review, day 2 ends with 7 Review Exercises, day 3 with 4 and day 4 with none`() {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
-        assertEquals(listOf(0, 7, 4), days.map { steps -> steps.count { it is Step.ShowExercise && it.review } })
+        assertEquals(listOf(0, 7, 4, 0), days.map { steps -> steps.count { it is Step.ShowExercise && it.review } })
         assertEquals(
-            listOf(7, 6, 0),
+            listOf(7, 6, 0, 0),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -99,6 +106,31 @@ class AuthoredContentTest {
                 assertEquals(
                     Feedback(correct = true, correctAnswer = accepted),
                     checkTyped(accepted, exercise.acceptedAnswers),
+                    "Exercise ${exercise.id}",
+                )
+            }
+        }
+    }
+
+    @Test
+    fun `every Accepted Answer of every word tiles Exercise shipped is correct when built from its tiles`() {
+        val wordTiles = course.path.flatMap { it.exercises }.filterIsInstance<WordTiles>()
+        assertTrue(wordTiles.isNotEmpty())
+
+        wordTiles.forEach { exercise ->
+            exercise.acceptedAnswers.forEach { accepted ->
+                // Each word is taken from the bank, so a word used twice needs two tiles.
+                val bank = tilesOf(exercise).toMutableList()
+                val built = words(accepted).map { word ->
+                    val tile = bank.firstOrNull { it.equals(word, ignoreCase = true) }
+                    assertTrue(tile != null, "Exercise ${exercise.id} has no tile left for \"$word\" of \"$accepted\"")
+                    bank.remove(tile)
+                    tile
+                }
+
+                assertEquals(
+                    Feedback(correct = true, correctAnswer = accepted),
+                    checkTiles(built, exercise.acceptedAnswers),
                     "Exercise ${exercise.id}",
                 )
             }

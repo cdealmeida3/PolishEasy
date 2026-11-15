@@ -54,6 +54,9 @@ sealed interface ExerciseView {
 
     /** [prompt] is what to type in Polish, in the Base Language. */
     data class TypeAnswer(val prompt: String) : ExerciseView
+
+    /** [prompt] is what to build in Polish, in the Base Language. [tiles] are the words to build it from, mixed. */
+    data class WordTiles(val prompt: String, val tiles: List<String>) : ExerciseView
 }
 
 /** The Learner's response to an Exercise. */
@@ -61,6 +64,9 @@ sealed interface Answer {
     data class Option(val index: Int) : Answer
 
     data class Typed(val text: String) : Answer
+
+    /** The words of the tiles the Learner placed, in order. */
+    data class Tiles(val words: List<String>) : Answer
 }
 
 /**
@@ -226,6 +232,7 @@ class CourseEngine(
             options = exercise.options.map(::localize),
         )
         is TypeAnswer -> ExerciseView.TypeAnswer(localize(exercise.prompt))
+        is WordTiles -> ExerciseView.WordTiles(localize(exercise.prompt), tilesOf(exercise))
     }
 
     private fun check(exercise: Exercise, answer: Answer): Feedback = when (exercise) {
@@ -237,6 +244,7 @@ class CourseEngine(
             )
         }
         is TypeAnswer -> checkTyped((answer as Answer.Typed).text, exercise.acceptedAnswers)
+        is WordTiles -> checkTiles((answer as Answer.Tiles).words, exercise.acceptedAnswers)
     }
 
     private fun localize(text: Localized): String = text.getValue(baseLanguage)

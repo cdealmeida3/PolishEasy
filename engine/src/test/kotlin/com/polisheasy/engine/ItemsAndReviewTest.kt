@@ -241,6 +241,30 @@ class ItemsAndReviewTest {
     }
 
     @Test
+    fun `a word tiles Exercise tagged with a due Item is chosen for Review and reschedules the Item`() {
+        val learner = ItemLearner(
+            courseOf(
+                abc,
+                day("d1", tiles("d1-e1", "good morning", "dzień dobry", "a")),
+                day("d2", choose("d2-e1", "two", "b")),
+                day("d3", choose("d3-e1", "three", "c")),
+            ),
+        )
+        learner.playDay(march(2))
+        assertEquals(boxOne(march(2)), learner.progress.scheduleOf("a"))
+
+        val secondDay = learner.playDay(march(3), wrongFirst = setOf("good morning"))
+
+        assertEquals(listOf("good morning"), reviewed(secondDay).distinct())
+        assertEquals(boxOne(march(3)), learner.progress.scheduleOf("a"))
+
+        val thirdDay = learner.playDay(march(4))
+
+        assertEquals(listOf("good morning", "two"), reviewed(thirdDay))
+        assertEquals(ItemSchedule(box = 2, due = march(6), lastAnswered = march(4)), learner.progress.scheduleOf("a"))
+    }
+
+    @Test
     fun `Items of a Daily Set completed before Items were tracked are due the day after it was completed`() {
         val learner = ItemLearner(
             courseOf(
