@@ -30,6 +30,14 @@ class AuthoredContentTest {
                         .acceptedAnswers.first(),
                 ),
             )
+            is ExerciseView.Conjugation -> Answer.Typed(
+                exercises.filterIsInstance<Conjugation>()
+                    .first {
+                        it.verb == view.verb && it.person == view.person &&
+                            it.sentence?.let(::gapOf) == view.sentence?.let { gap -> gap.before to gap.after }
+                    }
+                    .acceptedAnswers.first(),
+            )
         }
     }
 
@@ -86,12 +94,12 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `played one per day, day 1 has no Review, day 2 ends with 7 Review Exercises, day 3 with 4 and day 4 with none`() {
+    fun `played one per day, day 1 has no Review, day 2 ends with 7 Review Exercises, day 3 with 4, day 4 with none and day 5 with 3`() {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
-        assertEquals(listOf(0, 7, 4, 0), days.map { steps -> steps.count { it is Step.ShowExercise && it.review } })
+        assertEquals(listOf(0, 7, 4, 0, 3), days.map { steps -> steps.count { it is Step.ShowExercise && it.review } })
         assertEquals(
-            listOf(7, 6, 0, 0),
+            listOf(7, 6, 0, 0, 6),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -132,6 +140,40 @@ class AuthoredContentTest {
                     Feedback(correct = true, correctAnswer = accepted),
                     checkTiles(built, exercise.acceptedAnswers),
                     "Exercise ${exercise.id}",
+                )
+            }
+        }
+    }
+
+    @Test
+    fun `every Accepted Answer of every conjugation Exercise shipped is correct when typed exactly, with no accent warning`() {
+        val conjugations = course.path.flatMap { it.exercises }.filterIsInstance<Conjugation>()
+        assertTrue(conjugations.isNotEmpty())
+
+        conjugations.forEach { exercise ->
+            exercise.acceptedAnswers.forEach { accepted ->
+                assertEquals(
+                    Feedback(correct = true, correctAnswer = accepted),
+                    checkTyped(accepted, exercise.acceptedAnswers),
+                    "Exercise ${exercise.id}",
+                )
+            }
+        }
+    }
+
+    @Test
+    fun `every conjugation table shipped agrees with the conjugation Exercises of its verb`() {
+        val tables = course.path.flatMap { it.tips }.mapNotNull { it.conjugation }
+        val conjugations = course.path.flatMap { it.exercises }.filterIsInstance<Conjugation>()
+        assertTrue(tables.isNotEmpty())
+
+        tables.forEach { table ->
+            conjugations.filter { it.verb == table.verb }.forEach { exercise ->
+                val form = table.forms.getValue(exercise.person)
+                assertEquals(
+                    Feedback(correct = true, correctAnswer = form),
+                    checkTyped(form, exercise.acceptedAnswers),
+                    "Exercise ${exercise.id} against the table of ${table.verb}",
                 )
             }
         }

@@ -23,6 +23,10 @@ fun typed(id: String, prompt: String, answer: String, vararg items: String): Typ
 fun tiles(id: String, prompt: String, answer: String, vararg items: String): WordTiles =
     WordTiles(id, mapOf("en" to prompt), listOf(answer), items = items.toList())
 
+/** A conjugation Exercise with one Accepted Answer and no sentence. Tests name it by verb and pronouns, "być my". */
+fun conjugate(id: String, verb: String, person: Person, answer: String, vararg items: String): Conjugation =
+    Conjugation(id, verb, mapOf("en" to "to $verb"), person, acceptedAnswers = listOf(answer), items = items.toList())
+
 fun day(id: String, vararg exercises: Exercise): DailySet = DailySet(id, exercises = exercises.toList())
 
 private val title = mapOf("en" to "Title")
@@ -38,6 +42,7 @@ private val Step.ShowExercise.prompt: String
         is ExerciseView.ChooseTranslation -> view.prompt
         is ExerciseView.TypeAnswer -> view.prompt
         is ExerciseView.WordTiles -> view.prompt
+        is ExerciseView.Conjugation -> "${view.verb} ${view.person.pronouns}"
     }
 
 /** The prompts of the Exercises among [steps], in the order they were shown. */
@@ -114,6 +119,11 @@ class ItemLearner(
                 .first { it.prompt.getValue("en") == view.prompt }
             val words = words(exercise.acceptedAnswers.first())
             Answer.Tiles(if (correct) words else words.reversed())
+        }
+        is ExerciseView.Conjugation -> {
+            val exercise = course.exercises.values.filterIsInstance<Conjugation>()
+                .first { it.verb == view.verb && it.person == view.person }
+            Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
         }
     }
 }

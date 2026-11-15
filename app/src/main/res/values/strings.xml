@@ -12,6 +12,15 @@
     <string name="type_answer_field_label">Your answer</string>
     <string name="word_tiles_instruction">Build this in Polish</string>
     <string name="word_tiles_answer_description">Your answer</string>
+    <string name="conjugation_instruction">Type the verb form</string>
+    <string name="conjugation_person">%1$s (%2$s)</string>
+    <string name="conjugation_table_title">%1$s · %2$s</string>
+    <string name="person_i">I</string>
+    <string name="person_you">you (one person)</string>
+    <string name="person_he_she_it">he / she / it</string>
+    <string name="person_we">we</string>
+    <string name="person_you_plural">you (several people)</string>
+    <string name="person_they">they</string>
     <string name="action_check">Check</string>
     <string name="polish_key_description">Insert %1$s</string>
     <string name="tip_label">Tip</string>

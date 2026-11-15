@@ -1,0 +1,140 @@
+{
+  "id": "a1-u01-d05",
+  "tips": [
+    {
+      "id": "a1-u01-d05-t01",
+      "before": "a1-u01-d05-e01",
+      "title": { "en": "The verb być (to be)" },
+      "body": { "en": "Polish verbs change their ending for each person. Być is irregular, so learn its six forms by heart. The pronoun is often left out, because the form already says who is meant: jestem on its own means \"I am\"." },
+      "conjugation": {
+        "verb": "być",
+        "meaning": { "en": "to be" },
+        "forms": { "ja": "jestem", "ty": "jesteś", "on": "jest", "my": "jesteśmy", "wy": "jesteście", "oni": "są" }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d05-e01",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "ja",
+      "acceptedAnswers": ["jestem"],
+      "items": ["byc-jestem"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d05-e02",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "ty",
+      "acceptedAnswers": ["jesteś"],
+      "items": ["byc-jestes"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d05-e03",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "on",
+      "acceptedAnswers": ["jest"],
+      "items": ["byc-jest"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d05-e04",
+      "prompt": "jestem",
+      "options": [
+        { "en": "I am" },
+        { "en": "you are" },
+        { "en": "he is" }
+      ],
+      "correctOption": 0,
+      "items": ["byc-jestem"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d05-e05",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "my",
+      "acceptedAnswers": ["jesteśmy"],
+      "items": ["byc-jestesmy"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d05-e06",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "wy",
+      "acceptedAnswers": ["jesteście"],
+      "items": ["byc-jestescie"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d05-e07",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "oni",
+      "acceptedAnswers": ["są"],
+      "items": ["byc-sa"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d05-e08",
+      "prompt": "jesteśmy",
+      "options": [
+        { "en": "they are" },
+        { "en": "we are" },
+        { "en": "you are" }
+      ],
+      "correctOption": 1,
+      "items": ["byc-jestesmy"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d05-e09",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "ja",
+      "sentence": "Ja ___ z Polski.",
+      "sentenceMeaning": { "en": "I am from Poland." },
+      "acceptedAnswers": ["jestem"],
+      "items": ["byc-jestem"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d05-e10",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "on",
+      "sentence": "On ___ w domu.",
+      "sentenceMeaning": { "en": "He is at home." },
+      "acceptedAnswers": ["jest"],
+      "items": ["byc-jest"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d05-e11",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "my",
+      "sentence": "My ___ w Polsce.",
+      "sentenceMeaning": { "en": "We are in Poland." },
+      "acceptedAnswers": ["jesteśmy"],
+      "items": ["byc-jestesmy"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d05-e12",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "oni",
+      "sentence": "Oni ___ w domu.",
+      "sentenceMeaning": { "en": "They are at home." },
+      "acceptedAnswers": ["są"],
+      "items": ["byc-sa"]
+    }
+  ]
+}

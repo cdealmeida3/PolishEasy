@@ -21,6 +21,7 @@ import androidx.compose.ui.focus.focusProperties
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.TextRange
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.TextFieldValue
@@ -60,9 +61,11 @@ import com.polisheasy.app.CourseViewModel
 import com.polisheasy.app.R
 import com.polisheasy.app.Screen
 import com.polisheasy.engine.Answer
+import com.polisheasy.engine.ConjugationTableView
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.ItemView
+import com.polisheasy.engine.Person
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.TileSelection
 import com.polisheasy.engine.TipView
@@ -217,9 +220,46 @@ private fun TipScreen(tip: TipView, progress: SetProgress, onContinue: () -> Uni
         Text(tip.title, style = MaterialTheme.typography.headlineMedium, textAlign = TextAlign.Center)
         Spacer(Modifier.height(16.dp))
         Text(tip.body, style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
+        tip.conjugation?.let { table ->
+            Spacer(Modifier.height(24.dp))
+            ConjugationTableCard(table)
+        }
         Spacer(Modifier.height(32.dp))
         Button(onClick = onContinue, modifier = Modifier.fillMaxWidth()) {
             Text(stringResource(R.string.action_continue))
+        }
+    }
+}
+
+/** A verb's six forms, one row per person: the Polish pronouns and the form. */
+@Composable
+private fun ConjugationTableCard(table: ConjugationTableView) {
+    Surface(
+        color = MaterialTheme.colorScheme.surfaceVariant,
+        shape = MaterialTheme.shapes.medium,
+        modifier = Modifier.fillMaxWidth(),
+    ) {
+        Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text(
+                stringResource(R.string.conjugation_table_title, table.verb, table.meaning),
+                style = MaterialTheme.typography.titleMedium,
+            )
+            table.rows.forEach { row ->
+                Row(modifier = Modifier.fillMaxWidth()) {
+                    Text(
+                        row.person.pronouns,
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.weight(1f),
+                    )
+                    Text(
+                        row.form,
+                        style = MaterialTheme.typography.bodyLarge,
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.weight(1f),
+                    )
+                }
+            }
         }
     }
 }
@@ -238,7 +278,7 @@ private fun PlayerScreen(
     DailySetColumn(
         progress,
         bottomBar = {
-            if (exercise is ExerciseView.TypeAnswer && feedback == null) {
+            if ((exercise is ExerciseView.TypeAnswer || exercise is ExerciseView.Conjugation) && feedback == null) {
                 PolishKeyRow(onKey = { letter -> typed = typed.inserting(letter) })
             }
         },
@@ -261,6 +301,13 @@ private fun PlayerScreen(
                 onAnswer,
             )
             is ExerciseView.WordTiles -> WordTilesExercise(exercise, enabled = feedback == null, onAnswer)
+            is ExerciseView.Conjugation -> ConjugationExercise(
+                exercise,
+                typed,
+                onTypedChange = { typed = it },
+                enabled = feedback == null,
+                onAnswer,
+            )
         }
         Spacer(Modifier.height(24.dp))
         if (feedback != null) {
@@ -315,6 +362,79 @@ private fun TypeAnswerExercise(
     enabled: Boolean,
     onAnswer: (Answer) -> Unit,
 ) {
+    Text(stringResource(R.string.type_answer_instruction), style = MaterialTheme.typography.labelLarge)
+    Spacer(Modifier.height(16.dp))
+    Text(exercise.prompt, style = MaterialTheme.typography.headlineMedium, textAlign = TextAlign.Center)
+    Spacer(Modifier.height(32.dp))
+    PolishAnswerField(typed, onTypedChange, enabled, onAnswer)
+}
+
+@Composable
+private fun ConjugationExercise(
+    exercise: ExerciseView.Conjugation,
+    typed: TextFieldValue,
+    onTypedChange: (TextFieldValue) -> Unit,
+    enabled: Boolean,
+    onAnswer: (Answer) -> Unit,
+) {
+    Text(stringResource(R.string.conjugation_instruction), style = MaterialTheme.typography.labelLarge)
+    Spacer(Modifier.height(16.dp))
+    Text(exercise.verb, style = MaterialTheme.typography.headlineMedium, textAlign = TextAlign.Center)
+    Text(
+        exercise.meaning,
+        style = MaterialTheme.typography.bodyLarge,
+        color = MaterialTheme.colorScheme.onSurfaceVariant,
+        textAlign = TextAlign.Center,
+    )
+    Spacer(Modifier.height(16.dp))
+    Text(
+        stringResource(R.string.conjugation_person, personLabel(exercise.person), exercise.person.pronouns),
+        style = MaterialTheme.typography.titleLarge,
+        color = MaterialTheme.colorScheme.primary,
+        textAlign = TextAlign.Center,
+    )
+    exercise.sentence?.let { sentence ->
+        Spacer(Modifier.height(24.dp))
+        Text(
+            sentence.before + SHOWN_GAP + sentence.after,
+            style = MaterialTheme.typography.titleMedium,
+            textAlign = TextAlign.Center,
+        )
+        Text(
+            sentence.meaning,
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            textAlign = TextAlign.Center,
+        )
+    }
+    Spacer(Modifier.height(32.dp))
+    PolishAnswerField(typed, onTypedChange, enabled, onAnswer)
+}
+
+/** The gap of a sentence as the Learner sees it. */
+private const val SHOWN_GAP = "_____"
+
+/** The person in the Base Language, as the Learner is asked for it. */
+@Composable
+private fun personLabel(person: Person): String = stringResource(
+    when (person) {
+        Person.I -> R.string.person_i
+        Person.YOU -> R.string.person_you
+        Person.HE_SHE_IT -> R.string.person_he_she_it
+        Person.WE -> R.string.person_we
+        Person.YOU_PLURAL -> R.string.person_you_plural
+        Person.THEY -> R.string.person_they
+    },
+)
+
+/** The field a Polish answer is typed into, with its "Check" button. The keyboard opens with it. */
+@Composable
+private fun PolishAnswerField(
+    typed: TextFieldValue,
+    onTypedChange: (TextFieldValue) -> Unit,
+    enabled: Boolean,
+    onAnswer: (Answer) -> Unit,
+) {
     val focusRequester = remember { FocusRequester() }
     val keyboard = LocalSoftwareKeyboardController.current
     val submit = {
@@ -327,10 +447,6 @@ private fun TypeAnswerExercise(
     // Opens the keyboard as soon as the Exercise appears.
     LaunchedEffect(Unit) { if (enabled) focusRequester.requestFocus() }
 
-    Text(stringResource(R.string.type_answer_instruction), style = MaterialTheme.typography.labelLarge)
-    Spacer(Modifier.height(16.dp))
-    Text(exercise.prompt, style = MaterialTheme.typography.headlineMedium, textAlign = TextAlign.Center)
-    Spacer(Modifier.height(32.dp))
     OutlinedTextField(
         value = typed,
         onValueChange = onTypedChange,

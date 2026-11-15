@@ -265,6 +265,35 @@ class ItemsAndReviewTest {
     }
 
     @Test
+    fun `a conjugation Exercise is chosen for Review, and a form answered wrongly returns without the verb's other forms`() {
+        val learner = ItemLearner(
+            courseOf(
+                abc,
+                day(
+                    "d1",
+                    conjugate("d1-e1", "być", Person.WE, "jesteśmy", "a"),
+                    conjugate("d1-e2", "być", Person.THEY, "są", "b"),
+                ),
+                day("d2", choose("d2-e1", "two", "c")),
+                day("d3", choose("d3-e1", "three", "d")),
+            ),
+        )
+        learner.playDay(march(2))
+        assertEquals(boxOne(march(2)), learner.progress.scheduleOf("a"))
+
+        val secondDay = learner.playDay(march(3), wrongFirst = setOf("być my"))
+
+        assertEquals(listOf("być my", "być oni / one", "być my"), reviewed(secondDay))
+        assertEquals(boxOne(march(3)), learner.progress.scheduleOf("a"))
+        assertEquals(ItemSchedule(box = 2, due = march(5), lastAnswered = march(3)), learner.progress.scheduleOf("b"))
+
+        val thirdDay = learner.playDay(march(4))
+
+        assertEquals(listOf("być my", "two"), reviewed(thirdDay))
+        assertEquals(ItemSchedule(box = 2, due = march(6), lastAnswered = march(4)), learner.progress.scheduleOf("a"))
+    }
+
+    @Test
     fun `Items of a Daily Set completed before Items were tracked are due the day after it was completed`() {
         val learner = ItemLearner(
             courseOf(
