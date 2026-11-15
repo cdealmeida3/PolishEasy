@@ -1,0 +1,16 @@
+{
+  "id": "a1-u01-d01",
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d01-e01",
+      "prompt": "dzień dobry",
+      "options": [
+        { "en": "good night" },
+        { "en": "good morning" },
+        { "en": "goodbye" }
+      ],
+      "correctOption": 1
+    }
+  ]
+}
