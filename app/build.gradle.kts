@@ -6,6 +6,9 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
+// CI numbers each build so a newer APK always installs over an older one.
+val ciRunNumber = System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull()
+
 android {
     namespace = "com.polisheasy.app"
     compileSdk = 36
@@ -14,8 +17,19 @@ android {
         applicationId = "com.polisheasy.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = ciRunNumber ?: 1
+        versionName = "0.1.0" + (ciRunNumber?.let { ".$it" } ?: "")
+    }
+
+    // A committed debug keystore gives every build, on any machine, the same signature,
+    // so each new APK installs as an update over the previous one.
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
     }
 
     buildFeatures {
