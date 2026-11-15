@@ -19,6 +19,10 @@ fun choose(id: String, prompt: String, vararg items: String): ChooseTranslation 
 fun typed(id: String, prompt: String, answer: String, vararg items: String): TypeAnswer =
     TypeAnswer(id, mapOf("en" to prompt), listOf(answer), items.toList())
 
+/** A word tiles Exercise with one Accepted Answer and no distractors. */
+fun tiles(id: String, prompt: String, answer: String, vararg items: String): WordTiles =
+    WordTiles(id, mapOf("en" to prompt), listOf(answer), items = items.toList())
+
 fun day(id: String, vararg exercises: Exercise): DailySet = DailySet(id, exercises = exercises.toList())
 
 private val title = mapOf("en" to "Title")
@@ -33,6 +37,7 @@ private val Step.ShowExercise.prompt: String
     get() = when (val view = exercise) {
         is ExerciseView.ChooseTranslation -> view.prompt
         is ExerciseView.TypeAnswer -> view.prompt
+        is ExerciseView.WordTiles -> view.prompt
     }
 
 /** The prompts of the Exercises among [steps], in the order they were shown. */
@@ -103,6 +108,12 @@ class ItemLearner(
             val exercise = course.exercises.values.filterIsInstance<TypeAnswer>()
                 .first { it.prompt.getValue("en") == view.prompt }
             Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
+        }
+        is ExerciseView.WordTiles -> {
+            val exercise = course.exercises.values.filterIsInstance<WordTiles>()
+                .first { it.prompt.getValue("en") == view.prompt }
+            val words = words(exercise.acceptedAnswers.first())
+            Answer.Tiles(if (correct) words else words.reversed())
         }
     }
 }

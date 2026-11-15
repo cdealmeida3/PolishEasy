@@ -4,6 +4,9 @@ import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
@@ -32,6 +35,7 @@ import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
@@ -43,6 +47,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -58,6 +64,7 @@ import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.ItemView
 import com.polisheasy.engine.SetProgress
+import com.polisheasy.engine.TileSelection
 import com.polisheasy.engine.TipView
 import com.polisheasy.engine.Today
 import java.time.format.DateTimeFormatter
@@ -253,6 +260,7 @@ private fun PlayerScreen(
                 enabled = feedback == null,
                 onAnswer,
             )
+            is ExerciseView.WordTiles -> WordTilesExercise(exercise, enabled = feedback == null, onAnswer)
         }
         Spacer(Modifier.height(24.dp))
         if (feedback != null) {
@@ -344,6 +352,97 @@ private fun TypeAnswerExercise(
         Spacer(Modifier.height(16.dp))
         Button(onClick = submit, enabled = typed.text.isNotBlank(), modifier = Modifier.fillMaxWidth()) {
             Text(stringResource(R.string.action_check))
+        }
+    }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun WordTilesExercise(
+    exercise: ExerciseView.WordTiles,
+    enabled: Boolean,
+    onAnswer: (Answer) -> Unit,
+) {
+    // The bank positions of the tiles in the answer, in order. The engine's TileSelection holds the rule.
+    var placed by rememberSaveable { mutableStateOf(listOf<Int>()) }
+    val selection = TileSelection(exercise.tiles, placed)
+    val answerDescription = stringResource(R.string.word_tiles_answer_description)
+
+    Text(stringResource(R.string.word_tiles_instruction), style = MaterialTheme.typography.labelLarge)
+    Spacer(Modifier.height(16.dp))
+    Text(exercise.prompt, style = MaterialTheme.typography.headlineMedium, textAlign = TextAlign.Center)
+    Spacer(Modifier.height(32.dp))
+    // Tall enough for two rows of tiles from the start, so the bank below does not jump as tiles move.
+    FlowRow(
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = TileHeight * 2 + TileSpacing)
+            .semantics { contentDescription = answerDescription },
+        horizontalArrangement = Arrangement.spacedBy(TileSpacing),
+        verticalArrangement = Arrangement.spacedBy(TileSpacing),
+    ) {
+        selection.placed.forEach { tile ->
+            WordTile(exercise.tiles[tile], enabled, onClick = { placed = selection.takeBack(tile).placed })
+        }
+    }
+    Spacer(Modifier.height(TileSpacing))
+    HorizontalDivider()
+    Spacer(Modifier.height(24.dp))
+    FlowRow(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(TileSpacing, Alignment.CenterHorizontally),
+        verticalArrangement = Arrangement.spacedBy(TileSpacing),
+    ) {
+        exercise.tiles.forEachIndexed { tile, word ->
+            if (selection.isPlaced(tile)) {
+                EmptyTileSlot(word)
+            } else {
+                WordTile(word, enabled, onClick = { placed = selection.place(tile).placed })
+            }
+        }
+    }
+    if (enabled) {
+        Spacer(Modifier.height(24.dp))
+        Button(
+            onClick = { onAnswer(selection.answer) },
+            enabled = selection.placed.isNotEmpty(),
+            modifier = Modifier.fillMaxWidth(),
+        ) {
+            Text(stringResource(R.string.action_check))
+        }
+    }
+}
+
+private val TileHeight = 48.dp
+private val TileSpacing = 8.dp
+
+@Composable
+private fun WordTile(word: String, enabled: Boolean, onClick: () -> Unit) {
+    Surface(
+        onClick = onClick,
+        enabled = enabled,
+        shape = MaterialTheme.shapes.small,
+        color = MaterialTheme.colorScheme.secondaryContainer,
+        modifier = Modifier.heightIn(min = TileHeight),
+    ) {
+        Box(contentAlignment = Alignment.Center, modifier = Modifier.padding(horizontal = 12.dp)) {
+            Text(word, style = MaterialTheme.typography.titleMedium)
+        }
+    }
+}
+
+/** Where a tile now in the answer came from: the same size as the tile, so the rest of the bank does not shift. */
+@Composable
+private fun EmptyTileSlot(word: String) {
+    Surface(
+        shape = MaterialTheme.shapes.small,
+        color = MaterialTheme.colorScheme.surfaceVariant,
+        modifier = Modifier
+            .heightIn(min = TileHeight)
+            .clearAndSetSemantics { },
+    ) {
+        Box(contentAlignment = Alignment.Center, modifier = Modifier.padding(horizontal = 12.dp)) {
+            Text(word, style = MaterialTheme.typography.titleMedium, modifier = Modifier.alpha(0f))
         }
     }
 }

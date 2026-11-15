@@ -67,3 +67,22 @@ data class TypeAnswer(
     val acceptedAnswers: List<String>,
     override val items: List<String> = emptyList(),
 ) : Exercise
+
+/**
+ * The Learner builds a Polish sentence by putting word tiles in order. The tiles are the words of
+ * the first Accepted Answer plus the [distractors]; they are never authored, so they cannot drift
+ * out of step with the answer. Tiles show words exactly as written here, so write the answers
+ * without a sentence capital, which would give the first word away, and capitalise only proper nouns.
+ */
+@Serializable
+@SerialName("word_tiles")
+data class WordTiles(
+    override val id: String,
+    /** What to say in Polish, in each Base Language. */
+    val prompt: Localized,
+    /** Every word order treated as correct, as whole sentences. The first is shown when the Learner is wrong. */
+    val acceptedAnswers: List<String>,
+    /** Single words offered as tiles that the first Accepted Answer does not need. */
+    val distractors: List<String> = emptyList(),
+    override val items: List<String> = emptyList(),
+) : Exercise

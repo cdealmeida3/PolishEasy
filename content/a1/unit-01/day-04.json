@@ -1,0 +1,77 @@
+{
+  "id": "a1-u01-d04",
+  "tips": [
+    {
+      "id": "a1-u01-d04-t01",
+      "before": "a1-u01-d04-e01",
+      "title": { "en": "Building sentences" },
+      "body": { "en": "Tap the words in the right order to build the Polish sentence. Tap a word in your answer to put it back. Not every word is needed." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d04-e01",
+      "prompt": { "en": "good morning" },
+      "acceptedAnswers": ["dzień dobry"],
+      "distractors": ["wieczór", "dobranoc"],
+      "items": ["dzien-dobry"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d04-e02",
+      "prompt": { "en": "good evening" },
+      "acceptedAnswers": ["dobry wieczór"],
+      "distractors": ["dzień", "dobranoc"],
+      "items": ["dobry-wieczor"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d04-e03",
+      "prompt": { "en": "goodbye" },
+      "acceptedAnswers": ["do widzenia"],
+      "distractors": ["na", "razie"],
+      "items": ["do-widzenia"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d04-e04",
+      "prompt": { "en": "how are you?" },
+      "acceptedAnswers": ["jak się masz?"],
+      "distractors": ["tak", "nie"],
+      "items": ["jak-sie-masz"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d04-e05",
+      "prompt": { "en": "hi, how are you?" },
+      "acceptedAnswers": ["cześć, jak się masz?"],
+      "distractors": ["dobranoc", "dobrze"],
+      "items": ["czesc", "jak-sie-masz"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d04-e06",
+      "prompt": { "en": "good, thank you" },
+      "acceptedAnswers": ["dobrze, dziękuję", "dziękuję, dobrze"],
+      "distractors": ["proszę", "nie"],
+      "items": ["dobrze", "dziekuje"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d04-e07",
+      "prompt": { "en": "no, thank you" },
+      "acceptedAnswers": ["nie, dziękuję", "dziękuję, nie"],
+      "distractors": ["tak", "proszę"],
+      "items": ["nie", "dziekuje"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d04-e08",
+      "prompt": { "en": "yes, please" },
+      "acceptedAnswers": ["tak, proszę"],
+      "distractors": ["nie", "dziękuję"],
+      "items": ["tak", "prosze"]
+    }
+  ]
+}
