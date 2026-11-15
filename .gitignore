@@ -4,3 +4,7 @@ local.properties
 *.iml
 .idea/
 .kotlin/
+# Never commit a release keystore. Only the shared debug keystore is tracked.
+*.jks
+*.keystore
+!app/debug.keystore
