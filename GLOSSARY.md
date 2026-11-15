@@ -25,7 +25,7 @@ The ordered sequence of Daily Sets a Learner works through within a Level, Unit 
 _Avoid_: Curriculum, track, journey
 
 **Daily Set**:
-One day's worth of Exercises on the Path, designed to take 10 to 15 minutes. A Learner can start at most one new Daily Set per calendar day, and the Path advances only when one is completed.
+One day's worth of Exercises on the Path, designed to take 10 to 15 minutes. A Learner can start at most one new Daily Set per calendar day, and the Path advances only when one is completed. It belongs to the calendar day on which it is completed.
 _Avoid_: Lesson, session, daily challenge
 
 **New Material**:
@@ -47,7 +47,7 @@ A short explanation of new grammar or words shown before the Exercises that rely
 _Avoid_: Lesson, hint, note
 
 **Replay**:
-Doing an already completed Daily Set again for practice. It does not advance the Path.
+Doing an already completed Daily Set again for practice. It does not advance the Path and does not affect Review.
 _Avoid_: Redo, practice mode
 
 **Streak**:
