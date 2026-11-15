@@ -61,6 +61,111 @@ class LoadingContentTest {
         }
     }
 
+    @Test
+    fun `Items are loaded from the files the course lists, and each Exercise's Items are read`() {
+        val course = loadWithItems(
+            listOf(
+                """{ "items": [ { "id": "dziekuje", "text": "dziękuję", "meaning": { "en": "thank you" } } ] }""",
+                """{ "items": [ { "id": "tak", "text": "tak", "meaning": { "en": "yes" } } ] }""",
+            ),
+            taggedDay("d1", "d1-e1" to listOf("dziekuje", "tak"), "d1-e2" to emptyList()),
+        )
+
+        assertEquals(
+            listOf(
+                Item("dziekuje", "dziękuję", mapOf("en" to "thank you")),
+                Item("tak", "tak", mapOf("en" to "yes")),
+            ),
+            course.items,
+        )
+        assertEquals(listOf(listOf("dziekuje", "tak"), emptyList()), course.path.single().exercises.map { it.items })
+    }
+
+    @Test
+    fun `a course that lists no Item files has no Items`() {
+        assertEquals(emptyList(), FixtureCourse.load().items)
+    }
+
+    @Test
+    fun `an Exercise that lists an unknown Item is rejected, naming the Daily Set, the Exercise and the Item`() {
+        val failure = assertFailsWith<IllegalArgumentException> {
+            loadWithItems(listOf(itemsFile("tak")), taggedDay("d1", "d1-e1" to listOf("tak"), "d1-e2" to listOf("nie")))
+        }
+
+        listOf("d1", "d1-e2", "nie").forEach { name ->
+            assertTrue(name in failure.message.orEmpty(), "Message was: ${failure.message}")
+        }
+    }
+
+    @Test
+    fun `two Items with the same id are rejected`() {
+        val failure = assertFailsWith<IllegalArgumentException> {
+            loadWithItems(listOf(itemsFile("tak", "nie"), itemsFile("tak")), taggedDay("d1", "d1-e1" to listOf("tak")))
+        }
+
+        assertTrue("tak" in failure.message.orEmpty(), "Message was: ${failure.message}")
+    }
+
+    @Test
+    fun `an Item with blank text is rejected`() {
+        val failure = assertFailsWith<IllegalArgumentException> {
+            loadWithItems(
+                listOf("""{ "items": [ { "id": "tak", "text": " ", "meaning": { "en": "yes" } } ] }"""),
+                taggedDay("d1", "d1-e1" to listOf("tak")),
+            )
+        }
+
+        assertTrue("tak" in failure.message.orEmpty(), "Message was: ${failure.message}")
+    }
+
+    @Test
+    fun `two Exercises with the same id in different Daily Sets are rejected`() {
+        val failure = assertFailsWith<IllegalArgumentException> {
+            loadWithItems(
+                listOf(itemsFile("tak")),
+                taggedDay("d1", "e1" to listOf("tak")),
+                taggedDay("d2", "e2" to emptyList(), "e1" to emptyList()),
+            )
+        }
+
+        assertTrue("e1" in failure.message.orEmpty(), "Message was: ${failure.message}")
+    }
+
+    /** A course whose `course.json` lists these Item files and Daily Sets. */
+    private fun loadWithItems(itemFiles: List<String>, vararg days: String): Course {
+        val itemPaths = itemFiles.indices.map { "items-$it.json" }
+        val dayPaths = days.indices.map { "day-$it.json" }
+        fun quoted(paths: List<String>) = paths.joinToString { "\"$it\"" }
+        val files = mapOf(
+            "course.json" to """
+                {
+                  "items": [${quoted(itemPaths)}],
+                  "levels": [
+                    { "id": "a1", "title": { "en": "A1" }, "units": [
+                      { "id": "a1-u01", "title": { "en": "Unit" }, "dailySets": [${quoted(dayPaths)}] }
+                    ] }
+                  ]
+                }
+            """,
+        ) + itemPaths.zip(itemFiles) + dayPaths.zip(days)
+        return loadCourse(files::getValue)
+    }
+
+    private fun itemsFile(vararg ids: String): String {
+        val items = ids.joinToString { """{ "id": "$it", "text": "$it", "meaning": { "en": "$it in English" } }""" }
+        return """{ "items": [$items] }"""
+    }
+
+    /** A Daily Set of choice Exercises, each given as its id and the Items it lists. */
+    private fun taggedDay(id: String, vararg exercises: Pair<String, List<String>>): String {
+        val exercisesJson = exercises.joinToString { (exerciseId, items) ->
+            """{ "type": "choose_translation", "id": "$exerciseId", "prompt": "tak",
+                 "options": [{ "en": "yes" }, { "en": "no" }], "correctOption": 0,
+                 "items": [${items.joinToString { "\"$it\"" }}] }"""
+        }
+        return """{ "id": "$id", "exercises": [$exercisesJson] }"""
+    }
+
     private fun assertNamesTheDailySet(failure: IllegalArgumentException) =
         assertTrue("a1-u01-d01" in failure.message.orEmpty(), "Message was: ${failure.message}")
 
