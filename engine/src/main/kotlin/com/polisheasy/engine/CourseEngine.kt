@@ -12,10 +12,19 @@ sealed interface Today {
 
 /** What the Daily Set player shows next. */
 sealed interface Step {
-    data class ShowExercise(val exercise: ExerciseView) : Step
+    data class ShowTip(val tip: TipView, val progress: SetProgress) : Step
 
+    data class ShowExercise(val exercise: ExerciseView, val progress: SetProgress) : Step
+
+    /** [correctAnswers] counts the Exercises answered correctly on the first attempt. */
     data class ShowSummary(val correctAnswers: Int, val exercises: Int) : Step
 }
+
+/** How far through the Daily Set the Learner is: Exercises answered correctly out of all of them. */
+data class SetProgress(val correct: Int, val total: Int)
+
+/** A Tip as the Learner sees it, in the Base Language. */
+data class TipView(val title: String, val body: String)
 
 /** An Exercise as the Learner sees it: Base Language text resolved, answer withheld. */
 sealed interface ExerciseView {
@@ -40,36 +49,60 @@ class CourseEngine(
     private val baseLanguage: String = "en",
 ) {
     private var dailySet: DailySet? = null
-    private var position = 0
-    private var correctAnswers = 0
+
+    /** Exercises still to be answered correctly; the head is the one being shown. */
+    private val queue = ArrayDeque<Exercise>()
+    private val pendingTips = mutableListOf<Tip>()
+
+    /** Ids of Exercises answered wrongly at least once. */
+    private val missed = mutableSetOf<String>()
+    private var firstAttemptCorrect = 0
 
     fun today(): Today =
         if (nextDailySet() == null) Today.DoneForToday else Today.DailySetAvailable
 
     fun startDailySet(): Step {
-        dailySet = checkNotNull(nextDailySet()) { "No Daily Set is available" }
-        position = 0
-        correctAnswers = 0
+        val set = checkNotNull(nextDailySet()) { "No Daily Set is available" }
+        dailySet = set
+        queue.clear()
+        queue.addAll(set.exercises)
+        pendingTips.clear()
+        pendingTips.addAll(set.tips)
+        missed.clear()
+        firstAttemptCorrect = 0
         return next()
     }
 
-    /** Checks the Learner's answer to the Exercise currently shown. */
+    /**
+     * Checks the Learner's answer to the Exercise currently shown. A wrongly answered
+     * Exercise goes to the end of the queue and returns until it is answered correctly.
+     */
     fun answer(answer: Answer): Feedback {
-        val exercise = current().exercises[position]
+        val set = current()
+        check(queue.isNotEmpty()) { "Every Exercise of Daily Set ${set.id} has already been answered" }
+        val exercise = queue.removeFirst()
         val feedback = check(exercise, answer)
-        if (feedback.correct) correctAnswers++
-        position++
-        if (position == current().exercises.size) {
-            progress.recordCompleted(current().id, on = LocalDate.now(clock))
+        if (feedback.correct) {
+            if (exercise.id !in missed) firstAttemptCorrect++
+        } else {
+            missed += exercise.id
+            queue.addLast(exercise)
         }
+        if (queue.isEmpty()) progress.recordCompleted(set.id, on = LocalDate.now(clock))
         return feedback
     }
 
     fun next(): Step {
         val set = current()
-        val exercise = set.exercises.getOrNull(position)
-            ?: return Step.ShowSummary(correctAnswers, set.exercises.size)
-        return Step.ShowExercise(view(exercise))
+        val exercise = queue.firstOrNull()
+            ?: return Step.ShowSummary(firstAttemptCorrect, set.exercises.size)
+        val progress = SetProgress(correct = set.exercises.size - queue.size, total = set.exercises.size)
+        val tip = pendingTips.firstOrNull { it.before == exercise.id }
+        if (tip != null) {
+            pendingTips -= tip
+            return Step.ShowTip(TipView(localize(tip.title), localize(tip.body)), progress)
+        }
+        return Step.ShowExercise(view(exercise), progress)
     }
 
     /** The first Daily Set on the Path the Learner has not completed. */

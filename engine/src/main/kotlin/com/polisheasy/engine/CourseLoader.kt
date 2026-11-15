@@ -30,10 +30,30 @@ fun loadCourse(readFile: (path: String) -> String): Course {
                     CourseUnit(
                         unit.id,
                         unit.title,
-                        unit.dailySets.map { path -> json.decodeFromString<DailySet>(readFile(path)) },
+                        unit.dailySets.map { path -> checked(json.decodeFromString<DailySet>(readFile(path))) },
                     )
                 },
             )
         },
     )
+}
+
+private const val MAX_TIPS = 2
+
+/** Rejects a Daily Set whose Tips break what the course engine relies on. */
+private fun checked(dailySet: DailySet): DailySet {
+    val exerciseIds = dailySet.exercises.map { it.id }.toSet()
+    val placements = dailySet.tips.map { it.before }
+    require(dailySet.tips.size <= MAX_TIPS) {
+        "Daily Set ${dailySet.id} has ${dailySet.tips.size} Tips; at most $MAX_TIPS are allowed"
+    }
+    dailySet.tips.forEach { tip ->
+        require(tip.before in exerciseIds) {
+            "Daily Set ${dailySet.id}: Tip ${tip.id} is placed before ${tip.before}, which is not one of its Exercises"
+        }
+    }
+    require(placements.size == placements.toSet().size) {
+        "Daily Set ${dailySet.id} has more than one Tip before the same Exercise"
+    }
+    return dailySet
 }

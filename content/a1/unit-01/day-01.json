@@ -1,5 +1,19 @@
 {
   "id": "a1-u01-d01",
+  "tips": [
+    {
+      "id": "a1-u01-d01-t01",
+      "before": "a1-u01-d01-e01",
+      "title": { "en": "Saying hello" },
+      "body": { "en": "Dzień dobry is the polite hello. It literally means \"good day\" and works from morning until evening. With friends and family, say cześć, which means both \"hi\" and \"bye\"." }
+    },
+    {
+      "id": "a1-u01-d01-t02",
+      "before": "a1-u01-d01-e04",
+      "title": { "en": "Please and thank you" },
+      "body": { "en": "Dziękuję means \"thank you\". Proszę means \"please\", and it is also what you answer when someone thanks you, like \"you're welcome\"." }
+    }
+  ],
   "exercises": [
     {
       "type": "choose_translation",
@@ -9,6 +23,72 @@
         { "en": "good night" },
         { "en": "good morning" },
         { "en": "goodbye" }
+      ],
+      "correctOption": 1
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d01-e02",
+      "prompt": "cześć",
+      "options": [
+        { "en": "hi" },
+        { "en": "please" },
+        { "en": "no" }
+      ],
+      "correctOption": 0
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d01-e03",
+      "prompt": "do widzenia",
+      "options": [
+        { "en": "thank you" },
+        { "en": "good morning" },
+        { "en": "goodbye" }
+      ],
+      "correctOption": 2
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d01-e04",
+      "prompt": "dziękuję",
+      "options": [
+        { "en": "thank you" },
+        { "en": "yes" },
+        { "en": "hi" }
+      ],
+      "correctOption": 0
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d01-e05",
+      "prompt": "proszę",
+      "options": [
+        { "en": "goodbye" },
+        { "en": "please" },
+        { "en": "no" }
+      ],
+      "correctOption": 1
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d01-e06",
+      "prompt": "tak",
+      "options": [
+        { "en": "no" },
+        { "en": "thank you" },
+        { "en": "yes" }
+      ],
+      "correctOption": 2
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d01-e07",
+      "prompt": "nie",
+      "options": [
+        { "en": "yes" },
+        { "en": "no" },
+        { "en": "please" }
       ],
       "correctOption": 1
     }
