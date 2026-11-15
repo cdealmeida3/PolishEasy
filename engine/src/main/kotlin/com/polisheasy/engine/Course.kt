@@ -36,7 +36,14 @@ data class DailySet(val id: String, val tips: List<Tip> = emptyList(), val exerc
 
 /** Shown once, just before the Exercise whose id is [before]. */
 @Serializable
-data class Tip(val id: String, val before: String, val title: Localized, val body: Localized)
+data class Tip(
+    val id: String,
+    val before: String,
+    val title: Localized,
+    val body: Localized,
+    /** Optional: a verb's forms, shown under the body. */
+    val conjugation: ConjugationTable? = null,
+)
 
 @Serializable
 sealed interface Exercise {
@@ -84,5 +91,24 @@ data class WordTiles(
     val acceptedAnswers: List<String>,
     /** Single words offered as tiles that the first Accepted Answer does not need. */
     val distractors: List<String> = emptyList(),
+    override val items: List<String> = emptyList(),
+) : Exercise
+
+/** The Learner types the form of [verb] for [person], optionally into the gap of [sentence]. */
+@Serializable
+@SerialName("conjugation")
+data class Conjugation(
+    override val id: String,
+    /** The dictionary form, for example być. */
+    val verb: String,
+    /** What the verb means, in each Base Language. */
+    val meaning: Localized,
+    val person: Person,
+    /** Optional: a Polish sentence with `___` where the form belongs. */
+    val sentence: String? = null,
+    /** The whole sentence in each Base Language. Required with [sentence]. */
+    val sentenceMeaning: Localized? = null,
+    /** Every form treated as correct. The first is shown when the Learner is wrong. */
+    val acceptedAnswers: List<String>,
     override val items: List<String> = emptyList(),
 ) : Exercise

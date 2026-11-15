@@ -75,7 +75,7 @@ private fun List<String>.repeated(): Set<String> = groupingBy { it }.eachCount()
 
 private const val MAX_TIPS = 2
 
-/** Rejects a Daily Set whose Tips or Accepted Answers break what the course engine relies on. */
+/** Rejects a Daily Set whose Tips, Accepted Answers or conjugations break what the course engine relies on. */
 private fun checked(dailySet: DailySet): DailySet {
     val exerciseIds = dailySet.exercises.map { it.id }.toSet()
     val placements = dailySet.tips.map { it.before }
@@ -112,6 +112,37 @@ private fun checked(dailySet: DailySet): DailySet {
         exercise.acceptedAnswers.forEach { accepted ->
             require(words(accepted).wordCounts().all { (word, count) -> count <= (tiles[word] ?: 0) }) {
                 "$name has the Accepted Answer \"$accepted\", which cannot be built from its tiles"
+            }
+        }
+    }
+    dailySet.exercises.filterIsInstance<Conjugation>().forEach { exercise ->
+        val name = "Daily Set ${dailySet.id}: Exercise ${exercise.id}"
+        require(exercise.acceptedAnswers.isNotEmpty()) { "$name has no Accepted Answers" }
+        require(exercise.acceptedAnswers.none { normalizeAnswer(it).isEmpty() }) { "$name has a blank Accepted Answer" }
+        require(exercise.verb.isNotBlank()) { "$name has a blank verb" }
+        require((exercise.sentence == null) == (exercise.sentenceMeaning == null)) {
+            "$name must have both a sentence and a sentence meaning, or neither"
+        }
+        exercise.sentence?.let { sentence ->
+            val gap = gapOf(sentence)
+            require(gap != null) {
+                "$name has the sentence \"$sentence\", which does not have exactly one gap written as $GAP"
+            }
+            require(words(gap.first + " " + gap.second).isNotEmpty()) {
+                "$name has the sentence \"$sentence\", which has no words apart from the gap"
+            }
+        }
+    }
+    dailySet.tips.forEach { tip ->
+        val table = tip.conjugation ?: return@forEach
+        val name = "Daily Set ${dailySet.id}: Tip ${tip.id}"
+        require(table.verb.isNotBlank()) { "$name has a conjugation table with a blank verb" }
+        Person.entries.forEach { person ->
+            require(person in table.forms) {
+                "$name has a conjugation table with no form for ${person.pronouns}"
+            }
+            require(table.forms.getValue(person).isNotBlank()) {
+                "$name has a conjugation table with a blank form for ${person.pronouns}"
             }
         }
     }

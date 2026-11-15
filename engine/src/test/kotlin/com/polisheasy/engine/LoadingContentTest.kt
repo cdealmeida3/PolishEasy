@@ -120,6 +120,124 @@ class LoadingContentTest {
     }
 
     @Test
+    fun `a conjugation Exercise with no Accepted Answers, a blank Accepted Answer or a blank verb is rejected`() {
+        assertConjugationRejected(conjugationDay(accepted = emptyList()))
+        listOf("", "   ", "?!").forEach { blank ->
+            assertConjugationRejected(conjugationDay(listOf("jesteśmy", blank)), "Accepted Answer \"$blank\"")
+        }
+        listOf("", "  ").forEach { blank ->
+            assertConjugationRejected(conjugationDay(listOf("jesteśmy"), verb = blank), "Verb \"$blank\"")
+        }
+    }
+
+    @Test
+    fun `a conjugation Exercise with a person that is not one of the six is rejected`() {
+        listOf("ona", "we", "").forEach { person ->
+            assertFailsWith<IllegalArgumentException>("Person \"$person\"") {
+                FixtureCourse.loadWithDayOne(conjugationDay(listOf("jesteśmy"), person = person))
+            }
+        }
+    }
+
+    @Test
+    fun `a conjugation Exercise with a sentence but no sentence meaning, or the reverse, is rejected`() {
+        assertConjugationRejected(conjugationDay(listOf("jesteśmy"), sentence = "My ___ w Polsce."))
+        assertConjugationRejected(conjugationDay(listOf("jesteśmy"), sentenceMeaning = "We are in Poland."))
+    }
+
+    @Test
+    fun `a conjugation Exercise whose sentence does not have exactly one gap of three underscores is rejected`() {
+        listOf(
+            "My jesteśmy w Polsce.",
+            "My ___ w ___.",
+            "My __ w Polsce.",
+            "My ____ w Polsce.",
+            "My ______ w Polsce.",
+            "My ___ w _ Polsce.",
+        ).forEach { sentence ->
+            assertConjugationRejected(
+                conjugationDay(listOf("jesteśmy"), sentence = sentence, sentenceMeaning = "We are in Poland."),
+                "Sentence \"$sentence\"",
+            )
+        }
+    }
+
+    @Test
+    fun `a conjugation Exercise whose sentence is only the gap is rejected`() {
+        listOf("___", " ___ .", "___?!").forEach { sentence ->
+            assertConjugationRejected(
+                conjugationDay(listOf("jesteśmy"), sentence = sentence, sentenceMeaning = "We are."),
+                "Sentence \"$sentence\"",
+            )
+        }
+    }
+
+    @Test
+    fun `a Tip whose conjugation table misses a person, has a blank form or has a blank verb is rejected`() {
+        listOf(
+            conjugationTable(forms = formsOfByc - "wy"),
+            conjugationTable(forms = formsOfByc + ("oni" to " ")),
+            conjugationTable(forms = formsOfByc + ("ja" to "")),
+            conjugationTable(verb = " "),
+        ).forEach { table ->
+            val failure = assertFailsWith<IllegalArgumentException>(table) {
+                FixtureCourse.loadWithDayOne(conjugationDay(listOf("jesteśmy"), tipTable = table))
+            }
+
+            assertNamesTheDailySet(failure)
+            assertTrue("a1-u01-d01-t01" in failure.message.orEmpty(), "Message was: ${failure.message}")
+        }
+    }
+
+    @Test
+    fun `a conjugation Exercise with a sentence, and a Tip with a full conjugation table, load`() {
+        val course = FixtureCourse.loadWithDayOne(
+            conjugationDay(
+                listOf("jesteśmy"),
+                sentence = "My ___ w Polsce.",
+                sentenceMeaning = "We are in Poland.",
+                tipTable = conjugationTable(),
+            ),
+        )
+
+        val dailySet = course.path.first()
+        assertEquals(
+            Conjugation(
+                id = "a1-u01-d01-e01",
+                verb = "być",
+                meaning = mapOf("en" to "to be"),
+                person = Person.WE,
+                sentence = "My ___ w Polsce.",
+                sentenceMeaning = mapOf("en" to "We are in Poland."),
+                acceptedAnswers = listOf("jesteśmy"),
+            ),
+            dailySet.exercises.single(),
+        )
+        assertEquals(
+            ConjugationTable(
+                verb = "być",
+                meaning = mapOf("en" to "to be"),
+                forms = mapOf(
+                    Person.I to "jestem",
+                    Person.YOU to "jesteś",
+                    Person.HE_SHE_IT to "jest",
+                    Person.WE to "jesteśmy",
+                    Person.YOU_PLURAL to "jesteście",
+                    Person.THEY to "są",
+                ),
+            ),
+            dailySet.tips.single().conjugation,
+        )
+    }
+
+    private fun assertConjugationRejected(day: String, case: String? = null) {
+        val failure = assertFailsWith<IllegalArgumentException>(case) { FixtureCourse.loadWithDayOne(day) }
+
+        assertNamesTheDailySet(failure)
+        assertTrue("a1-u01-d01-e01" in failure.message.orEmpty(), "Message was: ${failure.message}")
+    }
+
+    @Test
     fun `Items are loaded from the files the course lists, and each Exercise's Items are read`() {
         val course = loadWithItems(
             listOf(

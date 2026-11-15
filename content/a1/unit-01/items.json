@@ -12,6 +12,12 @@
     { "id": "przepraszam", "text": "przepraszam", "meaning": { "en": "sorry" } },
     { "id": "na-razie", "text": "na razie", "meaning": { "en": "see you" } },
     { "id": "jak-sie-masz", "text": "jak się masz?", "meaning": { "en": "how are you?" } },
-    { "id": "dobrze", "text": "dobrze", "meaning": { "en": "good" } }
+    { "id": "dobrze", "text": "dobrze", "meaning": { "en": "good" } },
+    { "id": "byc-jestem", "text": "jestem", "meaning": { "en": "I am" } },
+    { "id": "byc-jestes", "text": "jesteś", "meaning": { "en": "you are (one person)" } },
+    { "id": "byc-jest", "text": "jest", "meaning": { "en": "he / she / it is" } },
+    { "id": "byc-jestesmy", "text": "jesteśmy", "meaning": { "en": "we are" } },
+    { "id": "byc-jestescie", "text": "jesteście", "meaning": { "en": "you are (several people)" } },
+    { "id": "byc-sa", "text": "są", "meaning": { "en": "they are" } }
   ]
 }

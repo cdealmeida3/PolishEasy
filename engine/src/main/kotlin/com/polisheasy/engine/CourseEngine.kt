@@ -46,7 +46,15 @@ data class ItemView(val text: String, val meaning: String)
 data class SetProgress(val correct: Int, val total: Int)
 
 /** A Tip as the Learner sees it, in the Base Language. */
-data class TipView(val title: String, val body: String)
+data class TipView(val title: String, val body: String, val conjugation: ConjugationTableView? = null)
+
+/** A verb's forms for every person, in the usual order. */
+data class ConjugationTableView(val verb: String, val meaning: String, val rows: List<ConjugationRow>)
+
+data class ConjugationRow(val person: Person, val form: String)
+
+/** A sentence with one gap where the verb form belongs. [meaning] is the whole sentence in the Base Language. */
+data class GapSentence(val before: String, val after: String, val meaning: String)
 
 /** An Exercise as the Learner sees it: Base Language text resolved, answer withheld. */
 sealed interface ExerciseView {
@@ -57,6 +65,14 @@ sealed interface ExerciseView {
 
     /** [prompt] is what to build in Polish, in the Base Language. [tiles] are the words to build it from, mixed. */
     data class WordTiles(val prompt: String, val tiles: List<String>) : ExerciseView
+
+    /** [verb] is the dictionary form, [meaning] its Base Language meaning. The Learner types the form for [person]. */
+    data class Conjugation(
+        val verb: String,
+        val meaning: String,
+        val person: Person,
+        val sentence: GapSentence? = null,
+    ) : ExerciseView
 }
 
 /** The Learner's response to an Exercise. */
@@ -187,7 +203,7 @@ class CourseEngine(
         if (tip != null) {
             // Saved with the next answer: a Tip seen but not followed by an answer is shown again on resume.
             playing.state = state.copy(shownTips = state.shownTips + tip.id)
-            return Step.ShowTip(TipView(localize(tip.title), localize(tip.body)), progressOf(playing))
+            return Step.ShowTip(view(tip), progressOf(playing))
         }
         return Step.ShowExercise(
             view(course.exercises.getValue(exerciseId)),
@@ -233,7 +249,29 @@ class CourseEngine(
         )
         is TypeAnswer -> ExerciseView.TypeAnswer(localize(exercise.prompt))
         is WordTiles -> ExerciseView.WordTiles(localize(exercise.prompt), tilesOf(exercise))
+        is Conjugation -> ExerciseView.Conjugation(
+            verb = exercise.verb,
+            meaning = localize(exercise.meaning),
+            person = exercise.person,
+            sentence = exercise.sentence?.let { sentence ->
+                // The loader guarantees one gap and a meaning for every sentence.
+                val (before, after) = checkNotNull(gapOf(sentence)) { "Exercise ${exercise.id} has no single gap" }
+                GapSentence(before, after, localize(checkNotNull(exercise.sentenceMeaning)))
+            },
+        )
     }
+
+    private fun view(tip: Tip): TipView = TipView(
+        title = localize(tip.title),
+        body = localize(tip.body),
+        conjugation = tip.conjugation?.let { table ->
+            ConjugationTableView(
+                verb = table.verb,
+                meaning = localize(table.meaning),
+                rows = Person.entries.map { ConjugationRow(it, table.forms.getValue(it)) },
+            )
+        },
+    )
 
     private fun check(exercise: Exercise, answer: Answer): Feedback = when (exercise) {
         is ChooseTranslation -> {
@@ -245,6 +283,7 @@ class CourseEngine(
         }
         is TypeAnswer -> checkTyped((answer as Answer.Typed).text, exercise.acceptedAnswers)
         is WordTiles -> checkTiles((answer as Answer.Tiles).words, exercise.acceptedAnswers)
+        is Conjugation -> checkTyped((answer as Answer.Typed).text, exercise.acceptedAnswers)
     }
 
     private fun localize(text: Localized): String = text.getValue(baseLanguage)
