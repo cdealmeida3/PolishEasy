@@ -13,7 +13,7 @@ The language the Learner already knows, in which instructions and translations a
 _Avoid_: Native language, source language, UI language
 
 **Level**:
-A stage of Polish proficiency on the CEFR scale (A1, A2, …) that groups a complete body of course material.
+A stage of Polish proficiency on the CEFR scale (A1, A2, …) that groups a complete body of course material. Each Level has its own Path; a Learner works on one Level at a time and the next opens when the current one is complete.
 _Avoid_: Course, grade, difficulty
 
 **Unit**:
@@ -32,7 +32,7 @@ _Avoid_: Lesson, session, daily challenge
 The part of a Daily Set that is Authored Content, identical for every Learner.
 
 **Item**:
-The smallest thing a Learner can know or not know: one word, one phrase, or one verb form such as *jestem*. Every Exercise practises one or more Items.
+The smallest thing a Learner can know or not know: one word, one phrase, or one verb form such as *jestem*. Every Exercise practises one or more Items, and an Item has several Exercises. Items stay with the Learner across Levels.
 _Avoid_: Card, fact, vocabulary entry
 
 **Review**:
