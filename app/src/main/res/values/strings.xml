@@ -2,7 +2,10 @@
 <resources>
     <string name="app_name">PolishEasy</string>
     <string name="home_ready">Today\'s Daily Set is ready.</string>
-    <string name="home_done">You\'re done for today. Do widzenia!</string>
+    <string name="home_in_progress">You have a Daily Set in progress: %1$d of %2$d Exercises done.</string>
+    <string name="home_continue">Continue</string>
+    <string name="home_done">You\'re done for today. Your next Daily Set unlocks tomorrow at %1$s.</string>
+    <string name="home_all_completed">You\'ve completed every Daily Set released so far. More are on the way.</string>
     <string name="home_start">Start</string>
     <string name="choose_translation_instruction">Choose the correct translation</string>
     <string name="tip_label">Tip</string>

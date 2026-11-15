@@ -10,7 +10,7 @@ class LoadingContentTest {
     fun `a Daily Set without Tips loads`() {
         val course = FixtureCourse.loadWithDayOne(dayOne(tips = null))
 
-        assertEquals(emptyList(), course.path.single().tips)
+        assertEquals(emptyList(), course.path.first().tips)
     }
 
     @Test

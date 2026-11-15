@@ -13,15 +13,17 @@ class AuthoredContentTest {
     fun `every Daily Set shipped with the app can be played through to its Summary`() {
         assertTrue(course.path.isNotEmpty())
         val progress = InMemoryLearnerProgress()
+        val clock = FakeClock()
 
-        course.path.forEach { dailySet ->
+        course.path.forEachIndexed { day, dailySet ->
             val correct = dailySet.exercises.map { exercise ->
                 when (exercise) {
                     is ChooseTranslation -> Answer.Option(exercise.correctOption)
                 }
             }
-            // A new engine each time: one Learner may start only one new Daily Set per day.
-            val engine = CourseEngine(course, progress, FakeClock())
+            // One Learner may complete only one Daily Set per day.
+            clock.moveTo(march(2).plusDays(day.toLong()))
+            val engine = CourseEngine(course, progress, clock)
 
             val steps = engine.play(engine.startDailySet(), correct)
 
@@ -32,5 +34,7 @@ class AuthoredContentTest {
             )
             assertEquals(dailySet.tips.size, steps.count { it is Step.ShowTip }, "Tips of ${dailySet.id}")
         }
+
+        assertEquals(Today.AllCompleted, CourseEngine(course, progress, clock).today())
     }
 }

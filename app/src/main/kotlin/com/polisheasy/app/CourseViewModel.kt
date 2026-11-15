@@ -9,12 +9,13 @@ import com.polisheasy.engine.Answer
 import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
-import com.polisheasy.engine.InMemoryLearnerProgress
+import com.polisheasy.engine.FileLearnerProgress
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.Step
 import com.polisheasy.engine.TipView
 import com.polisheasy.engine.Today
 import com.polisheasy.engine.loadCourse
+import java.io.File
 import java.time.Clock
 
 /** What the app is showing. Every rule behind it lives in the course engine. */
@@ -37,8 +38,7 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
         course = loadCourse { path ->
             application.assets.open(path).bufferedReader().use { it.readText() }
         },
-        // Progress is kept only while the app is open until saved progress is built.
-        progress = InMemoryLearnerProgress(),
+        progress = FileLearnerProgress(File(application.filesDir, "progress.json")),
         clock = Clock.systemDefaultZone(),
     )
 
@@ -46,6 +46,13 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
         private set
 
     fun startDailySet() = show(engine.startDailySet())
+
+    fun resumeDailySet() = show(engine.resumeDailySet())
+
+    /** Asks the engine again what today holds, so Home is right after midnight has passed. */
+    fun refreshHome() {
+        if (screen is Screen.Home) screen = Screen.Home(engine.today())
+    }
 
     fun answer(answer: Answer) {
         val player = screen as? Screen.Player ?: return

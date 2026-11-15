@@ -3,6 +3,8 @@ package com.polisheasy.engine
 import java.time.Clock
 import java.time.Instant
 import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.LocalTime
 import java.time.ZoneId
 
 /** A tiny course held in memory, in the same file format as the real Authored Content. */
@@ -18,7 +20,7 @@ object FixtureCourse {
                     {
                       "id": "a1-u01",
                       "title": { "en": "Greetings" },
-                      "dailySets": ["a1/unit-01/day-01.json"]
+                      "dailySets": ["a1/unit-01/day-01.json", "a1/unit-01/day-02.json"]
                     }
                   ]
                 }
@@ -79,10 +81,37 @@ object FixtureCourse {
               ]
             }
         """,
+        "a1/unit-01/day-02.json" to """
+            {
+              "id": "a1-u01-d02",
+              "exercises": [
+                {
+                  "type": "choose_translation",
+                  "id": "a1-u01-d02-e01",
+                  "prompt": "tak",
+                  "options": [
+                    { "en": "yes" },
+                    { "en": "no" }
+                  ],
+                  "correctOption": 0
+                },
+                {
+                  "type": "choose_translation",
+                  "id": "a1-u01-d02-e02",
+                  "prompt": "nie",
+                  "options": [
+                    { "en": "yes" },
+                    { "en": "no" }
+                  ],
+                  "correctOption": 1
+                }
+              ]
+            }
+        """,
     )
 
-    /** The option that answers each Exercise of day 1 correctly, by prompt. */
-    val correctOption = mapOf("cześć" to 1, "do widzenia" to 0, "dziękuję" to 2)
+    /** The option that answers each Exercise of days 1 and 2 correctly, by prompt. */
+    val correctOption = mapOf("cześć" to 1, "do widzenia" to 0, "dziękuję" to 2, "tak" to 0, "nie" to 1)
 
     fun load(): Course = loadCourse { path -> files.getValue(path) }
 
@@ -91,16 +120,31 @@ object FixtureCourse {
         loadCourse { path -> if (path == "a1/unit-01/day-01.json") dayOne else files.getValue(path) }
 }
 
-class FakeClock(private var date: LocalDate = LocalDate.of(2026, 3, 2)) : Clock() {
-    private val zone: ZoneId = ZoneId.of("Europe/Warsaw")
+val warsaw: ZoneId = ZoneId.of("Europe/Warsaw")
 
-    override fun getZone(): ZoneId = zone
+/** A clock the test moves by hand. It starts on 2 March 2026 at 09:00 in Warsaw. */
+class FakeClock(private var now: LocalDateTime = LocalDate.of(2026, 3, 2).atTime(9, 0)) : Clock() {
+    fun moveTo(date: LocalDate, time: LocalTime = LocalTime.of(9, 0)) {
+        now = date.atTime(time)
+    }
+
+    override fun getZone(): ZoneId = warsaw
     override fun withZone(zone: ZoneId): Clock = this
-    override fun instant(): Instant = date.atTime(9, 0).atZone(zone).toInstant()
+    override fun instant(): Instant = now.atZone(warsaw).toInstant()
 }
 
-fun newLearnerEngine(clock: Clock = FakeClock()): CourseEngine =
-    CourseEngine(FixtureCourse.load(), InMemoryLearnerProgress(), clock)
+fun march(day: Int): LocalDate = LocalDate.of(2026, 3, day)
+
+/** One Learner's phone: their saved progress and their clock. */
+class Learner(
+    val progress: LearnerProgress = InMemoryLearnerProgress(),
+    val clock: FakeClock = FakeClock(),
+) {
+    /** Opening the app, or reopening it after it was closed: a new engine over what was saved. */
+    fun openApp(): CourseEngine = CourseEngine(FixtureCourse.load(), progress, clock)
+}
+
+fun newLearnerEngine(): CourseEngine = Learner().openApp()
 
 /**
  * Plays from the Step currently due, continuing past Tips and giving one of [answers] to each
@@ -126,3 +170,23 @@ fun prompts(steps: List<Step>): List<String> =
 
 val right = FixtureCourse.correctOption.mapValues { Answer.Option(it.value) }
 val wrongHello = Answer.Option(0)
+
+/** Plays from the Step currently due to the Summary, answering every Exercise correctly. */
+fun CourseEngine.playToSummary(first: Step): List<Step> {
+    val seen = mutableListOf(first)
+    while (true) {
+        when (val step = seen.last()) {
+            is Step.ShowTip -> Unit
+            is Step.ShowExercise ->
+                answer(right.getValue((step.exercise as ExerciseView.ChooseTranslation).prompt))
+            is Step.ShowSummary -> return seen
+        }
+        seen += next()
+    }
+}
+
+fun describe(step: Step): String = when (step) {
+    is Step.ShowTip -> "Tip: ${step.tip.title}"
+    is Step.ShowExercise -> (step.exercise as ExerciseView.ChooseTranslation).prompt
+    is Step.ShowSummary -> "Summary"
+}

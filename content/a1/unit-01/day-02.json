@@ -1,0 +1,79 @@
+{
+  "id": "a1-u01-d02",
+  "tips": [
+    {
+      "id": "a1-u01-d02-t01",
+      "before": "a1-u01-d02-e01",
+      "title": { "en": "Evening and night" },
+      "body": { "en": "In the evening, dzień dobry gives way to dobry wieczór, \"good evening\". Dobranoc means \"good night\" and is only said when parting for the night or going to bed." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d02-e01",
+      "prompt": "dobry wieczór",
+      "options": [
+        { "en": "good evening" },
+        { "en": "good night" },
+        { "en": "good morning" }
+      ],
+      "correctOption": 0
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d02-e02",
+      "prompt": "dobranoc",
+      "options": [
+        { "en": "goodbye" },
+        { "en": "good evening" },
+        { "en": "good night" }
+      ],
+      "correctOption": 2
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d02-e03",
+      "prompt": "przepraszam",
+      "options": [
+        { "en": "thank you" },
+        { "en": "sorry" },
+        { "en": "please" }
+      ],
+      "correctOption": 1
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d02-e04",
+      "prompt": "na razie",
+      "options": [
+        { "en": "see you" },
+        { "en": "good night" },
+        { "en": "hi" }
+      ],
+      "correctOption": 0
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d02-e05",
+      "prompt": "jak się masz?",
+      "options": [
+        { "en": "what is your name?" },
+        { "en": "where are you?" },
+        { "en": "how are you?" }
+      ],
+      "correctOption": 2
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d02-e06",
+      "prompt": "dobrze",
+      "options": [
+        { "en": "no" },
+        { "en": "good" },
+        { "en": "sorry" }
+      ],
+      "correctOption": 1
+    }
+  ]
+}
