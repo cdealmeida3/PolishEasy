@@ -29,6 +29,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.polisheasy.app.CourseViewModel
 import com.polisheasy.app.R
@@ -39,12 +40,25 @@ import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.TipView
 import com.polisheasy.engine.Today
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
 
 @Composable
 fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
     Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         when (val screen = viewModel.screen) {
-            is Screen.Home -> HomeScreen(screen.today, onStart = viewModel::startDailySet)
+            is Screen.Home -> {
+                // Coming back to the app after midnight unlocks the next Daily Set.
+                LifecycleResumeEffect(Unit) {
+                    viewModel.refreshHome()
+                    onPauseOrDispose { }
+                }
+                HomeScreen(
+                    screen.today,
+                    onStart = viewModel::startDailySet,
+                    onContinue = viewModel::resumeDailySet,
+                )
+            }
             is Screen.Tip -> {
                 BackHandler(onBack = viewModel::backToHome)
                 TipScreen(screen.tip, screen.progress, onContinue = viewModel::continueToNext)
@@ -118,7 +132,7 @@ private fun DailySetColumn(progress: SetProgress, content: @Composable () -> Uni
 }
 
 @Composable
-private fun HomeScreen(today: Today, onStart: () -> Unit) {
+private fun HomeScreen(today: Today, onStart: () -> Unit, onContinue: () -> Unit) {
     ScreenColumn {
         Text(stringResource(R.string.app_name), style = MaterialTheme.typography.displaySmall)
         Spacer(Modifier.height(16.dp))
@@ -130,7 +144,21 @@ private fun HomeScreen(today: Today, onStart: () -> Unit) {
                     Text(stringResource(R.string.home_start))
                 }
             }
-            Today.DoneForToday -> Text(stringResource(R.string.home_done), textAlign = TextAlign.Center)
+            is Today.InProgress -> {
+                Text(
+                    stringResource(R.string.home_in_progress, today.progress.correct, today.progress.total),
+                    textAlign = TextAlign.Center,
+                )
+                Spacer(Modifier.height(32.dp))
+                Button(onClick = onContinue, modifier = Modifier.fillMaxWidth()) {
+                    Text(stringResource(R.string.home_continue))
+                }
+            }
+            is Today.DoneForToday -> {
+                val unlockTime = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).format(today.nextUnlock)
+                Text(stringResource(R.string.home_done, unlockTime), textAlign = TextAlign.Center)
+            }
+            Today.AllCompleted -> Text(stringResource(R.string.home_all_completed), textAlign = TextAlign.Center)
         }
     }
 }

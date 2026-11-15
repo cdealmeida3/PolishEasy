@@ -119,10 +119,10 @@ class PlayingADailySetTest {
         val engine = newLearnerEngine()
 
         engine.play(engine.startDailySet(), listOf(wrongHello, goodbye, thanks))
-        assertEquals(Today.DailySetAvailable, engine.today())
+        assertIs<Today.InProgress>(engine.today())
 
         engine.answer(hello)
-        assertEquals(Today.DoneForToday, engine.today())
+        assertIs<Today.DoneForToday>(engine.today())
     }
 
     @Test
@@ -170,34 +170,12 @@ class PlayingADailySetTest {
 
     @Test
     fun `finishing the Daily Set means the Learner is done for today, even after reopening the app`() {
-        val course = FixtureCourse.load()
-        val progress = InMemoryLearnerProgress()
-        val clock = FakeClock()
-        val engine = CourseEngine(course, progress, clock)
+        val learner = Learner()
+        val engine = learner.openApp()
 
         engine.play(engine.startDailySet(), listOf(hello, goodbye, thanks))
 
-        assertEquals(Today.DoneForToday, engine.today())
-        assertEquals(Today.DoneForToday, CourseEngine(course, progress, clock).today())
-    }
-
-    @Test
-    fun `starting again after leaving part way begins the Daily Set afresh`() {
-        val engine = newLearnerEngine()
-        engine.play(engine.startDailySet(), listOf(wrongHello, goodbye))
-
-        val steps = engine.play(engine.startDailySet(), listOf(hello, goodbye, thanks))
-
-        assertEquals(
-            listOf("Tip: Saying hello", "cześć", "do widzenia", "Tip: Saying thank you", "dziękuję", "Summary"),
-            steps.map(::describe),
-        )
-        assertEquals(Step.ShowSummary(correctAnswers = 3, exercises = 3), steps.last())
-    }
-
-    private fun describe(step: Step): String = when (step) {
-        is Step.ShowTip -> "Tip: ${step.tip.title}"
-        is Step.ShowExercise -> (step.exercise as ExerciseView.ChooseTranslation).prompt
-        is Step.ShowSummary -> "Summary"
+        assertIs<Today.DoneForToday>(engine.today())
+        assertIs<Today.DoneForToday>(learner.openApp().today())
     }
 }

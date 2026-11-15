@@ -1,0 +1,11 @@
+# Learner progress is saved in one JSON file, not a database
+
+The v1 spec calls for an on-device database for Learner progress. We store it in a single JSON file in the app's private files directory instead, behind the `LearnerProgress` interface. The data is tiny (at most a few hundred small records), the course engine already uses kotlinx.serialization, and a file store lives in the engine module where it is tested on the JVM with no device. A database such as Room would add code generation, a schema and tests that need an emulator, for no benefit at this size.
+
+## Consequences
+
+- Every change rewrites the whole file, through a temporary file and an atomic move, so a crash mid-write leaves the previous version intact.
+- A file that cannot be read is moved aside to `progress.json.corrupt` and the Learner starts with empty progress, rather than the app failing to open.
+- The file refers to content only by stable ids and ignores fields it does not know, so later features can add to it.
+- Android's device backup includes the file with no extra work.
+- If progress outgrows a file (many records, or queries), moving to a database means writing one new `LearnerProgress` implementation and a one-time import.
