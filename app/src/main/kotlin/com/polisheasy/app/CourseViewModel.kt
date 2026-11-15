@@ -10,6 +10,7 @@ import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.FileLearnerProgress
+import com.polisheasy.engine.ItemView
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.Step
 import com.polisheasy.engine.TipView
@@ -29,10 +30,12 @@ sealed interface Screen {
         val progress: SetProgress,
         /** Different each time an Exercise is shown, so one that returns unchanged still starts fresh. */
         val shown: Int,
+        /** Whether this Exercise is part of the Review that ends the Daily Set. */
+        val review: Boolean,
         val feedback: Feedback? = null,
     ) : Screen
 
-    data class Summary(val correctAnswers: Int, val exercises: Int) : Screen
+    data class Summary(val correctAnswers: Int, val exercises: Int, val itemsLearned: List<ItemView>) : Screen
 }
 
 class CourseViewModel(application: Application) : AndroidViewModel(application) {
@@ -74,8 +77,8 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
     private fun show(step: Step) {
         screen = when (step) {
             is Step.ShowTip -> Screen.Tip(step.tip, step.progress)
-            is Step.ShowExercise -> Screen.Player(step.exercise, step.progress, shown = ++exercisesShown)
-            is Step.ShowSummary -> Screen.Summary(step.correctAnswers, step.exercises)
+            is Step.ShowExercise -> Screen.Player(step.exercise, step.progress, shown = ++exercisesShown, review = step.review)
+            is Step.ShowSummary -> Screen.Summary(step.correctAnswers, step.exercises, step.itemsLearned)
         }
     }
 }

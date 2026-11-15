@@ -99,6 +99,97 @@ class SavedProgressTest {
     }
 
     @Test
+    fun `Item progress survives reopening with its box, dates and recently shown Exercises`() {
+        val items = mapOf(
+            "czesc" to ItemProgress(
+                ItemSchedule(box = 3, due = march(9), lastAnswered = march(5)),
+                recentExercises = listOf("a1-u01-d01-e02", "a1-u01-d03-e04"),
+            ),
+            "tak" to ItemProgress(ItemSchedule(box = 1, due = march(6), lastAnswered = march(5))),
+        )
+        val progress = FileLearnerProgress(file)
+
+        progress.saveInProgress(inProgress, items)
+
+        assertEquals(items, progress.itemProgress())
+        assertEquals(items, reopened().itemProgress())
+    }
+
+    @Test
+    fun `Items given with the queue or the completion are stored with it, merged with those already stored`() {
+        val first = ItemProgress(ItemSchedule(box = 1, due = march(3), lastAnswered = march(2)))
+        val moved = ItemProgress(ItemSchedule(box = 2, due = march(5), lastAnswered = march(3)), listOf("a1-u01-d01-e01"))
+        val progress = FileLearnerProgress(file)
+
+        progress.saveInProgress(inProgress, mapOf("czesc" to first, "tak" to first))
+        progress.recordCompleted("a1-u01-d02", on = march(3), items = mapOf("tak" to moved, "nie" to first))
+
+        val expected = mapOf("czesc" to first, "tak" to moved, "nie" to first)
+        assertEquals(expected, progress.itemProgress())
+        assertEquals(expected, reopened().itemProgress())
+        assertEquals(mapOf("a1-u01-d02" to march(3)), reopened().completedDailySets())
+        assertNull(reopened().dailySetInProgress())
+
+        reopened().saveInProgress(inProgress)
+        assertEquals(expected, reopened().itemProgress())
+        assertEquals(inProgress, reopened().dailySetInProgress())
+    }
+
+    @Test
+    fun `the Review Exercises chosen for a Daily Set in progress survive reopening`() {
+        val withReview = inProgress.copy(
+            remaining = inProgress.remaining + "a1-u01-d01-e01",
+            review = listOf("a1-u01-d01-e01"),
+        )
+
+        FileLearnerProgress(file).saveInProgress(withReview)
+
+        assertEquals(withReview, reopened().dailySetInProgress())
+    }
+
+    @Test
+    fun `a file written before Items were tracked loads with empty Item progress and its completions intact`() {
+        file.writeText(
+            """
+            {
+              "version": 1,
+              "completed": { "a1-u01-d01": "2026-03-02" },
+              "inProgress": { "dailySetId": "a1-u01-d02", "remaining": ["a1-u01-d02-e01"], "missed": [], "shownTips": [] }
+            }
+            """,
+        )
+
+        val progress = FileLearnerProgress(file)
+
+        assertEquals(emptyMap(), progress.itemProgress())
+        assertEquals(mapOf("a1-u01-d01" to march(2)), progress.completedDailySets())
+        assertEquals(
+            DailySetInProgress("a1-u01-d02", remaining = listOf("a1-u01-d02-e01"), review = emptyList()),
+            progress.dailySetInProgress(),
+        )
+    }
+
+    @Test
+    fun `a file with an unreadable Item date is moved aside like any other corrupt file`() {
+        file.writeText(
+            """
+            {
+              "version": 1,
+              "completed": { "a1-u01-d01": "2026-03-02" },
+              "items": { "czesc": { "box": 2, "due": "soon", "lastAnswered": "2026-03-02" } }
+            }
+            """,
+        )
+
+        val progress = FileLearnerProgress(file)
+
+        assertEquals(emptyMap(), progress.itemProgress())
+        assertEquals(emptyMap(), progress.completedDailySets())
+        assertFalse(file.exists())
+        assertTrue(File(directory, "progress.json.corrupt").exists())
+    }
+
+    @Test
     fun `a Daily Set can be played across closing and reopening the app`() {
         val clock = FakeClock()
         fun openApp() = CourseEngine(FixtureCourse.load(), reopened(), clock)

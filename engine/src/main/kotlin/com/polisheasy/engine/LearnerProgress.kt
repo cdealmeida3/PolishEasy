@@ -13,36 +13,53 @@ data class DailySetInProgress(
     val missed: Set<String> = emptySet(),
     /** Ids of Tips already shown. */
     val shownTips: Set<String> = emptySet(),
+    /** Ids of the Review Exercises chosen for this Daily Set when it was started. They follow its own in [remaining]. */
+    val review: List<String> = emptyList(),
 )
+
+/** What is remembered about one Item: when it is next due, and the Exercises last shown for it, oldest first. */
+data class ItemProgress(val schedule: ItemSchedule, val recentExercises: List<String> = emptyList())
 
 /** What the app remembers about a Learner between launches. */
 interface LearnerProgress {
     /** Completed Daily Sets by id, with the calendar day each was completed. */
     fun completedDailySets(): Map<String, LocalDate>
 
-    /** Records the completion and forgets the Daily Set in progress, as one change. */
-    fun recordCompleted(dailySetId: String, on: LocalDate)
+    /**
+     * Records the completion and forgets the Daily Set in progress, as one change. [items] are the
+     * Items the last answer changed, stored in the same change.
+     */
+    fun recordCompleted(dailySetId: String, on: LocalDate, items: Map<String, ItemProgress> = emptyMap())
 
     fun dailySetInProgress(): DailySetInProgress?
 
-    fun saveInProgress(state: DailySetInProgress)
+    /** Saves where the Learner is, together with the [items] the answer changed, as one change. */
+    fun saveInProgress(state: DailySetInProgress, items: Map<String, ItemProgress> = emptyMap())
+
+    /** Progress on every Item answered so far, by Item id. It knows nothing of Levels. */
+    fun itemProgress(): Map<String, ItemProgress>
 }
 
 /** Progress that is lost when the process ends. For tests. */
 class InMemoryLearnerProgress : LearnerProgress {
     private val completed = mutableMapOf<String, LocalDate>()
     private var inProgress: DailySetInProgress? = null
+    private val items = mutableMapOf<String, ItemProgress>()
 
     override fun completedDailySets(): Map<String, LocalDate> = completed.toMap()
 
-    override fun recordCompleted(dailySetId: String, on: LocalDate) {
+    override fun recordCompleted(dailySetId: String, on: LocalDate, items: Map<String, ItemProgress>) {
         completed[dailySetId] = on
         inProgress = null
+        this.items += items
     }
 
     override fun dailySetInProgress(): DailySetInProgress? = inProgress
 
-    override fun saveInProgress(state: DailySetInProgress) {
+    override fun saveInProgress(state: DailySetInProgress, items: Map<String, ItemProgress>) {
         inProgress = state
+        this.items += items
     }
+
+    override fun itemProgress(): Map<String, ItemProgress> = items.toMap()
 }
