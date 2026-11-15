@@ -31,9 +31,16 @@ _Avoid_: Lesson, session, daily challenge
 **New Material**:
 The part of a Daily Set that is Authored Content, identical for every Learner.
 
+**Item**:
+The smallest thing a Learner can know or not know: one word, one phrase, or one verb form such as *jestem*. Every Exercise practises one or more Items.
+_Avoid_: Card, fact, vocabulary entry
+
 **Review**:
-The part of a Daily Set chosen per Learner from material they previously got wrong or have not seen recently.
+The part of a Daily Set chosen per Learner from Items they previously got wrong or have not seen recently.
 _Avoid_: Practice, revision, recap
+
+**Review-only Daily Set**:
+A Daily Set made entirely of Review, offered once per day when the Learner has completed every Daily Set on the Path released so far.
 
 **Tip**:
 A short explanation of new grammar or words shown before the Exercises that rely on it.
@@ -44,11 +51,15 @@ Doing an already completed Daily Set again for practice. It does not advance the
 _Avoid_: Redo, practice mode
 
 **Streak**:
-The number of consecutive calendar days on which the Learner completed a Daily Set.
+The number of consecutive calendar days on which the Learner completed a new or Review-only Daily Set. A Replay does not count.
 
 **Exercise**:
-A single task inside a Daily Set that the Learner answers and the app checks.
+A single task inside a Daily Set that the Learner answers and the app checks. A Daily Set is complete once every Exercise has been answered correctly.
 _Avoid_: Question, activity, task
+
+**Accepted Answer**:
+Any one of the responses an Exercise treats as correct; an Exercise may have several because Polish word order is flexible.
+_Avoid_: Solution, correct answer
 
 **Authored Content**:
 Course material written and reviewed ahead of time and shipped with the app, as opposed to material generated while the Learner is using it.
