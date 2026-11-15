@@ -24,7 +24,8 @@
         { "en": "good morning" },
         { "en": "goodbye" }
       ],
-      "correctOption": 1
+      "correctOption": 1,
+      "items": ["dzien-dobry"]
     },
     {
       "type": "choose_translation",
@@ -35,7 +36,8 @@
         { "en": "please" },
         { "en": "no" }
       ],
-      "correctOption": 0
+      "correctOption": 0,
+      "items": ["czesc"]
     },
     {
       "type": "choose_translation",
@@ -46,7 +48,8 @@
         { "en": "good morning" },
         { "en": "goodbye" }
       ],
-      "correctOption": 2
+      "correctOption": 2,
+      "items": ["do-widzenia"]
     },
     {
       "type": "choose_translation",
@@ -57,7 +60,8 @@
         { "en": "yes" },
         { "en": "hi" }
       ],
-      "correctOption": 0
+      "correctOption": 0,
+      "items": ["dziekuje"]
     },
     {
       "type": "choose_translation",
@@ -68,7 +72,8 @@
         { "en": "please" },
         { "en": "no" }
       ],
-      "correctOption": 1
+      "correctOption": 1,
+      "items": ["prosze"]
     },
     {
       "type": "choose_translation",
@@ -79,7 +84,8 @@
         { "en": "thank you" },
         { "en": "yes" }
       ],
-      "correctOption": 2
+      "correctOption": 2,
+      "items": ["tak"]
     },
     {
       "type": "choose_translation",
@@ -90,7 +96,8 @@
         { "en": "no" },
         { "en": "please" }
       ],
-      "correctOption": 1
+      "correctOption": 1,
+      "items": ["nie"]
     }
   ]
 }

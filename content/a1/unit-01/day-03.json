@@ -13,13 +13,15 @@
       "type": "type_answer",
       "id": "a1-u01-d03-e01",
       "prompt": { "en": "yes" },
-      "acceptedAnswers": ["tak"]
+      "acceptedAnswers": ["tak"],
+      "items": ["tak"]
     },
     {
       "type": "type_answer",
       "id": "a1-u01-d03-e02",
       "prompt": { "en": "thank you" },
-      "acceptedAnswers": ["dziękuję", "dzięki"]
+      "acceptedAnswers": ["dziękuję", "dzięki"],
+      "items": ["dziekuje"]
     },
     {
       "type": "choose_translation",
@@ -30,25 +32,29 @@
         { "en": "please" },
         { "en": "good night" }
       ],
-      "correctOption": 0
+      "correctOption": 0,
+      "items": ["przepraszam"]
     },
     {
       "type": "type_answer",
       "id": "a1-u01-d03-e04",
       "prompt": { "en": "hi" },
-      "acceptedAnswers": ["cześć"]
+      "acceptedAnswers": ["cześć"],
+      "items": ["czesc"]
     },
     {
       "type": "type_answer",
       "id": "a1-u01-d03-e05",
       "prompt": { "en": "goodbye" },
-      "acceptedAnswers": ["do widzenia", "do zobaczenia"]
+      "acceptedAnswers": ["do widzenia", "do zobaczenia"],
+      "items": ["do-widzenia"]
     },
     {
       "type": "type_answer",
       "id": "a1-u01-d03-e06",
       "prompt": { "en": "good morning" },
-      "acceptedAnswers": ["dzień dobry"]
+      "acceptedAnswers": ["dzień dobry"],
+      "items": ["dzien-dobry"]
     },
     {
       "type": "choose_translation",
@@ -59,13 +65,15 @@
         { "en": "good night" },
         { "en": "see you" }
       ],
-      "correctOption": 1
+      "correctOption": 1,
+      "items": ["dobranoc"]
     },
     {
       "type": "type_answer",
       "id": "a1-u01-d03-e08",
       "prompt": { "en": "please" },
-      "acceptedAnswers": ["proszę"]
+      "acceptedAnswers": ["proszę"],
+      "items": ["prosze"]
     }
   ]
 }

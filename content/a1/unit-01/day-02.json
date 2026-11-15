@@ -18,7 +18,8 @@
         { "en": "good night" },
         { "en": "good morning" }
       ],
-      "correctOption": 0
+      "correctOption": 0,
+      "items": ["dobry-wieczor"]
     },
     {
       "type": "choose_translation",
@@ -29,7 +30,8 @@
         { "en": "good evening" },
         { "en": "good night" }
       ],
-      "correctOption": 2
+      "correctOption": 2,
+      "items": ["dobranoc"]
     },
     {
       "type": "choose_translation",
@@ -40,7 +42,8 @@
         { "en": "sorry" },
         { "en": "please" }
       ],
-      "correctOption": 1
+      "correctOption": 1,
+      "items": ["przepraszam"]
     },
     {
       "type": "choose_translation",
@@ -51,7 +54,8 @@
         { "en": "good night" },
         { "en": "hi" }
       ],
-      "correctOption": 0
+      "correctOption": 0,
+      "items": ["na-razie"]
     },
     {
       "type": "choose_translation",
@@ -62,7 +66,8 @@
         { "en": "where are you?" },
         { "en": "how are you?" }
       ],
-      "correctOption": 2
+      "correctOption": 2,
+      "items": ["jak-sie-masz"]
     },
     {
       "type": "choose_translation",
@@ -73,7 +78,8 @@
         { "en": "good" },
         { "en": "sorry" }
       ],
-      "correctOption": 1
+      "correctOption": 1,
+      "items": ["dobrze"]
     }
   ]
 }

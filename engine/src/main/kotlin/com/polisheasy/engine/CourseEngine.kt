@@ -22,13 +22,27 @@ sealed interface Today {
 sealed interface Step {
     data class ShowTip(val tip: TipView, val progress: SetProgress) : Step
 
-    data class ShowExercise(val exercise: ExerciseView, val progress: SetProgress) : Step
+    /** [review] marks an Exercise from the Review that ends the Daily Set. */
+    data class ShowExercise(val exercise: ExerciseView, val progress: SetProgress, val review: Boolean = false) : Step
 
-    /** [correctAnswers] counts the Exercises answered correctly on the first attempt. */
-    data class ShowSummary(val correctAnswers: Int, val exercises: Int) : Step
+    /**
+     * [correctAnswers] counts the Exercises answered correctly on the first attempt, Review included.
+     * [itemsLearned] are the Items this Daily Set introduced.
+     */
+    data class ShowSummary(
+        val correctAnswers: Int,
+        val exercises: Int,
+        val itemsLearned: List<ItemView> = emptyList(),
+    ) : Step
 }
 
-/** How far through the Daily Set the Learner is: Exercises answered correctly out of all of them. */
+/** An Item as the Learner sees it: the Polish and its meaning in the Base Language. */
+data class ItemView(val text: String, val meaning: String)
+
+/**
+ * How far through the Daily Set the Learner is: Exercises answered correctly out of all of them,
+ * its Review Exercises included.
+ */
 data class SetProgress(val correct: Int, val total: Int)
 
 /** A Tip as the Learner sees it, in the Base Language. */
@@ -64,6 +78,7 @@ class CourseEngine(
     private val progress: LearnerProgress,
     private val clock: Clock,
     private val baseLanguage: String = "en",
+    private val scheduler: ReviewScheduler = LeitnerScheduler(),
 ) {
     /** The Daily Set being played, with how far the Learner is through it. */
     private var playing: Playing? = null
@@ -81,12 +96,21 @@ class CourseEngine(
         return Today.InProgress(progressOf(saved))
     }
 
-    /** Starts the next Daily Set on the Path. Fails unless [today] is [Today.DailySetAvailable]. */
+    /**
+     * Starts the next Daily Set on the Path. Its Review is chosen now and saved with it, so the
+     * Daily Set keeps the same Exercises however much later it is finished.
+     * Fails unless [today] is [Today.DailySetAvailable].
+     */
     fun startDailySet(): Step {
         check(today() == Today.DailySetAvailable) { "No Daily Set is available to start: ${today()}" }
         val completed = progress.completedDailySets()
         val set = course.path.first { it.id !in completed }
-        val state = DailySetInProgress(dailySetId = set.id, remaining = set.exercises.map { it.id })
+        val review = chooseReview(course, completed, progress.itemProgress(), set, LocalDate.now(clock))
+        val state = DailySetInProgress(
+            dailySetId = set.id,
+            remaining = set.exercises.map { it.id } + review,
+            review = review,
+        )
         progress.saveInProgress(state)
         playing = Playing(set, state)
         return next()
@@ -103,14 +127,16 @@ class CourseEngine(
      * Checks the Learner's answer to the Exercise currently shown and saves where the Learner is.
      * A wrongly answered Exercise goes to the end of the queue and returns until it is answered
      * correctly. The Daily Set is completed, on the day of this answer, when none remain.
+     * The first attempt at an Exercise, and only the first, reschedules each of its Items.
      */
     fun answer(answer: Answer): Feedback {
         val playing = current()
         val set = playing.dailySet
         val state = playing.state
         check(state.remaining.isNotEmpty()) { "Every Exercise of Daily Set ${set.id} has already been answered" }
-        val exercise = set.exercise(state.remaining.first())
+        val exercise = course.exercises.getValue(state.remaining.first())
         val feedback = check(exercise, answer)
+        val items = if (exercise.id in state.missed) emptyMap() else itemsAfter(exercise, feedback.correct)
         val rest = state.remaining.drop(1)
         playing.state = if (feedback.correct) {
             state.copy(remaining = rest)
@@ -118,41 +144,66 @@ class CourseEngine(
             state.copy(remaining = rest + exercise.id, missed = state.missed + exercise.id)
         }
         if (playing.state.remaining.isEmpty()) {
-            progress.recordCompleted(set.id, on = LocalDate.now(clock))
+            progress.recordCompleted(set.id, on = LocalDate.now(clock), items)
         } else {
-            progress.saveInProgress(playing.state)
+            progress.saveInProgress(playing.state, items)
         }
         return feedback
+    }
+
+    /** The progress of each Item of [exercise] after a first attempt at it today. */
+    private fun itemsAfter(exercise: Exercise, correct: Boolean): Map<String, ItemProgress> {
+        val today = LocalDate.now(clock)
+        val completed = progress.completedDailySets()
+        val stored = progress.itemProgress()
+        return exercise.items.filter { it in course.itemsById }.associateWith { itemId ->
+            ItemProgress(
+                schedule = scheduler.afterAnswer(scheduleOf(itemId, course, completed, stored), correct, today),
+                recentExercises = (stored[itemId]?.recentExercises.orEmpty() - exercise.id + exercise.id)
+                    .takeLast(RECENT_EXERCISES),
+            )
+        }
     }
 
     fun next(): Step {
         val playing = current()
         val set = playing.dailySet
         val state = playing.state
+        val total = total(playing)
         val exerciseId = state.remaining.firstOrNull()
             // First-attempt correct: every Exercise that was never answered wrongly.
-            ?: return Step.ShowSummary(set.exercises.size - state.missed.size, set.exercises.size)
+            ?: return Step.ShowSummary(
+                correctAnswers = total - state.missed.size,
+                exercises = total,
+                itemsLearned = course.introducedIn(set).map { ItemView(it.text, localize(it.meaning)) },
+            )
         val tip = set.tips.firstOrNull { it.before == exerciseId && it.id !in state.shownTips }
         if (tip != null) {
             // Saved with the next answer: a Tip seen but not followed by an answer is shown again on resume.
             playing.state = state.copy(shownTips = state.shownTips + tip.id)
             return Step.ShowTip(TipView(localize(tip.title), localize(tip.body)), progressOf(playing))
         }
-        return Step.ShowExercise(view(set.exercise(exerciseId)), progressOf(playing))
+        return Step.ShowExercise(
+            view(course.exercises.getValue(exerciseId)),
+            progressOf(playing),
+            review = exerciseId in state.review,
+        )
     }
 
     /**
      * The saved Daily Set in progress, if it can still be played: its Daily Set is on the Path and
-     * not completed, and every id it refers to still exists there. Otherwise the content changed
-     * in an update, and the saved state is ignored.
+     * not completed, and every id it refers to still exists: its Exercises and Tips there, its
+     * Review Exercises anywhere in the course. Otherwise the content changed in an update, and
+     * the saved state is ignored.
      */
     private fun savedDailySet(): Playing? {
         val saved = progress.dailySetInProgress() ?: return null
         if (saved.dailySetId in progress.completedDailySets()) return null
         val set = course.path.firstOrNull { it.id == saved.dailySetId } ?: return null
-        val exerciseIds = set.exercises.map { it.id }.toSet()
+        val exerciseIds = set.exercises.map { it.id }.toSet() + saved.review
         val tipIds = set.tips.map { it.id }.toSet()
         val playable = saved.remaining.isNotEmpty() &&
+            course.exercises.keys.containsAll(saved.review) &&
             exerciseIds.containsAll(saved.remaining) &&
             exerciseIds.containsAll(saved.missed) &&
             tipIds.containsAll(saved.shownTips)
@@ -160,11 +211,12 @@ class CourseEngine(
     }
 
     private fun progressOf(playing: Playing): SetProgress {
-        val total = playing.dailySet.exercises.size
+        val total = total(playing)
         return SetProgress(correct = total - playing.state.remaining.size, total = total)
     }
 
-    private fun DailySet.exercise(id: String): Exercise = exercises.first { it.id == id }
+    /** Every Exercise of the Daily Set being played: its New Material and its Review. */
+    private fun total(playing: Playing): Int = playing.dailySet.exercises.size + playing.state.review.size
 
     private fun current(): Playing = checkNotNull(playing) { "No Daily Set has been started" }
 

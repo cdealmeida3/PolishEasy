@@ -56,6 +56,7 @@ import com.polisheasy.app.Screen
 import com.polisheasy.engine.Answer
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
+import com.polisheasy.engine.ItemView
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.TipView
 import com.polisheasy.engine.Today
@@ -89,6 +90,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                     PlayerScreen(
                         screen.exercise,
                         screen.progress,
+                        screen.review,
                         screen.feedback,
                         onAnswer = viewModel::answer,
                         onContinue = viewModel::continueToNext,
@@ -97,7 +99,12 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
             }
             is Screen.Summary -> {
                 BackHandler(onBack = viewModel::backToHome)
-                SummaryScreen(screen.correctAnswers, screen.exercises, onDone = viewModel::backToHome)
+                SummaryScreen(
+                    screen.correctAnswers,
+                    screen.exercises,
+                    screen.itemsLearned,
+                    onDone = viewModel::backToHome,
+                )
             }
         }
     }
@@ -214,6 +221,7 @@ private fun TipScreen(tip: TipView, progress: SetProgress, onContinue: () -> Uni
 private fun PlayerScreen(
     exercise: ExerciseView,
     progress: SetProgress,
+    review: Boolean,
     feedback: Feedback?,
     onAnswer: (Answer) -> Unit,
     onContinue: () -> Unit,
@@ -228,6 +236,14 @@ private fun PlayerScreen(
             }
         },
     ) {
+        if (review) {
+            Text(
+                stringResource(R.string.review_label),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.primary,
+            )
+            Spacer(Modifier.height(8.dp))
+        }
         when (exercise) {
             is ExerciseView.ChooseTranslation -> ChooseTranslation(exercise, enabled = feedback == null, onAnswer)
             is ExerciseView.TypeAnswer -> TypeAnswerExercise(
@@ -371,12 +387,37 @@ private fun TextFieldValue.inserting(letter: String): TextFieldValue = copy(
 )
 
 @Composable
-private fun SummaryScreen(correctAnswers: Int, exercises: Int, onDone: () -> Unit) {
-    ScreenColumn {
-        Text(stringResource(R.string.summary_title), style = MaterialTheme.typography.headlineMedium)
+private fun SummaryScreen(correctAnswers: Int, exercises: Int, itemsLearned: List<ItemView>, onDone: () -> Unit) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .safeDrawingPadding()
+            .padding(24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ) {
+        // Scrolls when the list of Items is long, so the button below stays on screen.
+        Column(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxWidth()
+                .verticalScroll(rememberScrollState()),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            Text(stringResource(R.string.summary_title), style = MaterialTheme.typography.headlineMedium)
+            Spacer(Modifier.height(16.dp))
+            Text(stringResource(R.string.summary_accuracy, correctAnswers, exercises))
+            if (itemsLearned.isNotEmpty()) {
+                Spacer(Modifier.height(32.dp))
+                Text(stringResource(R.string.summary_items_learned), style = MaterialTheme.typography.labelLarge)
+                itemsLearned.forEach { item ->
+                    Spacer(Modifier.height(12.dp))
+                    Text(item.text, style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
+                    Text(item.meaning, style = MaterialTheme.typography.bodyMedium, textAlign = TextAlign.Center)
+                }
+            }
+        }
         Spacer(Modifier.height(16.dp))
-        Text(stringResource(R.string.summary_accuracy, correctAnswers, exercises))
-        Spacer(Modifier.height(32.dp))
         Button(onClick = onDone, modifier = Modifier.fillMaxWidth()) {
             Text(stringResource(R.string.summary_back_home))
         }

@@ -1,0 +1,17 @@
+{
+  "items": [
+    { "id": "dzien-dobry", "text": "dzień dobry", "meaning": { "en": "good morning" } },
+    { "id": "czesc", "text": "cześć", "meaning": { "en": "hi" } },
+    { "id": "do-widzenia", "text": "do widzenia", "meaning": { "en": "goodbye" } },
+    { "id": "dziekuje", "text": "dziękuję", "meaning": { "en": "thank you" } },
+    { "id": "prosze", "text": "proszę", "meaning": { "en": "please" } },
+    { "id": "tak", "text": "tak", "meaning": { "en": "yes" } },
+    { "id": "nie", "text": "nie", "meaning": { "en": "no" } },
+    { "id": "dobry-wieczor", "text": "dobry wieczór", "meaning": { "en": "good evening" } },
+    { "id": "dobranoc", "text": "dobranoc", "meaning": { "en": "good night" } },
+    { "id": "przepraszam", "text": "przepraszam", "meaning": { "en": "sorry" } },
+    { "id": "na-razie", "text": "na razie", "meaning": { "en": "see you" } },
+    { "id": "jak-sie-masz", "text": "jak się masz?", "meaning": { "en": "how are you?" } },
+    { "id": "dobrze", "text": "dobrze", "meaning": { "en": "good" } }
+  ]
+}

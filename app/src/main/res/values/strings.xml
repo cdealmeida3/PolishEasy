@@ -13,6 +13,7 @@
     <string name="action_check">Check</string>
     <string name="polish_key_description">Insert %1$s</string>
     <string name="tip_label">Tip</string>
+    <string name="review_label">Review</string>
     <string name="progress_description">%1$d of %2$d Exercises answered correctly</string>
     <string name="feedback_correct">Correct!</string>
     <string name="feedback_accent_warning">Correct. Mind the accents: %1$s</string>
@@ -20,5 +21,6 @@
     <string name="action_continue">Continue</string>
     <string name="summary_title">Daily Set complete</string>
     <string name="summary_accuracy">%1$d of %2$d correct on the first try</string>
+    <string name="summary_items_learned">You learned</string>
     <string name="summary_back_home">Back to Home</string>
 </resources>
