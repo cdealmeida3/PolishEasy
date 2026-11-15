@@ -16,7 +16,11 @@ data class Level(val id: String, val title: Localized, val units: List<CourseUni
 data class CourseUnit(val id: String, val title: Localized, val dailySets: List<DailySet>)
 
 @Serializable
-data class DailySet(val id: String, val exercises: List<Exercise>)
+data class DailySet(val id: String, val tips: List<Tip> = emptyList(), val exercises: List<Exercise>)
+
+/** Shown once, just before the Exercise whose id is [before]. */
+@Serializable
+data class Tip(val id: String, val before: String, val title: Localized, val body: Localized)
 
 @Serializable
 sealed interface Exercise {

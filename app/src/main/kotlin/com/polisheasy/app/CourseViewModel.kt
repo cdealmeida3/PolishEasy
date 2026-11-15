@@ -10,7 +10,9 @@ import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.InMemoryLearnerProgress
+import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.Step
+import com.polisheasy.engine.TipView
 import com.polisheasy.engine.Today
 import com.polisheasy.engine.loadCourse
 import java.time.Clock
@@ -19,7 +21,13 @@ import java.time.Clock
 sealed interface Screen {
     data class Home(val today: Today) : Screen
 
-    data class Player(val exercise: ExerciseView, val feedback: Feedback? = null) : Screen
+    data class Tip(val tip: TipView, val progress: SetProgress) : Screen
+
+    data class Player(
+        val exercise: ExerciseView,
+        val progress: SetProgress,
+        val feedback: Feedback? = null,
+    ) : Screen
 
     data class Summary(val correctAnswers: Int, val exercises: Int) : Screen
 }
@@ -45,7 +53,8 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
         screen = player.copy(feedback = engine.answer(answer))
     }
 
-    fun continueAfterFeedback() = show(engine.next())
+    /** Moves on from a Tip or from the feedback on an answer. */
+    fun continueToNext() = show(engine.next())
 
     fun backToHome() {
         screen = Screen.Home(engine.today())
@@ -53,7 +62,8 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
 
     private fun show(step: Step) {
         screen = when (step) {
-            is Step.ShowExercise -> Screen.Player(step.exercise)
+            is Step.ShowTip -> Screen.Tip(step.tip, step.progress)
+            is Step.ShowExercise -> Screen.Player(step.exercise, step.progress)
             is Step.ShowSummary -> Screen.Summary(step.correctAnswers, step.exercises)
         }
     }
