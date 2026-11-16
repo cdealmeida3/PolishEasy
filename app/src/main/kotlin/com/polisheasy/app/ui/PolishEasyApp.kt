@@ -92,6 +92,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
                     screen.itemsLearned,
                     screen.reviewOnly,
                     screen.replay,
+                    screen.streakRaised,
                     onDone = viewModel::leaveDailySet,
                 )
             }

@@ -5,10 +5,14 @@ import android.content.ComponentName
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import androidx.activity.ComponentActivity
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
@@ -16,6 +20,7 @@ import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
 import com.polisheasy.app.ui.PolishEasyApp
 import com.polisheasy.app.ui.PolishEasyTheme
+import com.polisheasy.app.ui.screens.SummaryScreen
 import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.FileLearnerProgress
 import java.io.File
@@ -80,6 +85,38 @@ class ScreenshotsTest {
         shot("real-03-first-step")
     }
 
+    @Test
+    fun `the Summary of a Review-only Daily Set and of a Replay in the light theme`() = summaryVariants("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `the Summary of a Review-only Daily Set and of a Replay in the dark theme`() = summaryVariants("dark")
+
+    /** The Summaries the fixture course does not reach in one day, shown with made-up scores. */
+    private fun summaryVariants(theme: String) {
+        var replay by mutableStateOf(false)
+        screen.setContent {
+            PolishEasyTheme {
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+                    key(replay) {
+                        SummaryScreen(
+                            correctAnswers = if (replay) 6 else 9,
+                            exercises = if (replay) 6 else 12,
+                            itemsLearned = emptyList(),
+                            reviewOnly = !replay,
+                            replay = replay,
+                            streakRaised = if (replay) null else StreakRaised(from = 11, to = 12),
+                            onDone = {},
+                        )
+                    }
+                }
+            }
+        }
+        shot("$theme-18-summary-review-only")
+        replay = true
+        shot("$theme-19-summary-replay")
+    }
+
     /** Daily Set 1 of the fixture course, with one wrong answer so the Exercise comes back at the end. */
     private fun fixtureCourseTour(theme: String) {
         fun shot(name: String) = this.shot("$theme-$name")
@@ -131,6 +168,11 @@ class ScreenshotsTest {
         tap("hello (polite); good morning")
         tap(R.string.action_continue)
 
+        // The Summary part of the way through its celebration, and then at rest.
+        screen.mainClock.autoAdvance = false
+        screen.mainClock.advanceTimeBy(1_900)
+        shot("15-summary-celebrating")
+        screen.mainClock.autoAdvance = true
         shot("15-summary")
         tap(R.string.summary_back_home)
         shot("16-home-done")

@@ -2,6 +2,7 @@ package com.polisheasy.app
 
 import android.app.Application
 import android.content.ComponentName
+import android.provider.Settings
 import androidx.activity.ComponentActivity
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
@@ -13,6 +14,7 @@ import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
@@ -20,6 +22,7 @@ import com.polisheasy.app.RecordingClips.Played
 import com.polisheasy.app.RecordingClips.Stopped
 import com.polisheasy.app.ui.PolishEasyApp
 import com.polisheasy.app.ui.PolishEasyTheme
+import com.polisheasy.app.ui.components.CONFETTI_TAG
 import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.FileLearnerProgress
 import java.io.File
@@ -120,6 +123,7 @@ class PlayingADailySetOnScreenTest {
         shows(R.string.summary_title)
         shows(text(R.string.summary_accuracy, 6, 6))
         shows(R.string.summary_items_learned)
+        showsStreakRaised(to = 1)
         shows("dziękuję")
         shows("thank you")
         tap(R.string.summary_back_home)
@@ -314,6 +318,8 @@ class PlayingADailySetOnScreenTest {
         typeNo()
         typeIAm()
         shows(R.string.summary_replay_title)
+        noStreakRaised()
+        screen.onNodeWithTag(CONFETTI_TAG).assertDoesNotExist()
         tap(R.string.summary_back_path)
         shows(R.string.path_locked)
 
@@ -327,6 +333,34 @@ class PlayingADailySetOnScreenTest {
         tap(R.string.home_start)
         shows(R.string.choose_translation_instruction)
         shows("tak")
+    }
+
+    @Test
+    fun `the Summary celebrates with confetti that falls once and is gone`() {
+        openApp()
+        tap(R.string.home_start)
+        playDailySetOneAndStopTheClockAtTheSummary()
+        screen.mainClock.advanceTimeBy(1_500)
+        screen.onNodeWithTag(CONFETTI_TAG).assertExists()
+
+        screen.mainClock.autoAdvance = true
+        shows(R.string.summary_title)
+        screen.onNodeWithTag(CONFETTI_TAG).assertDoesNotExist()
+        showsStreakRaised(to = 1)
+    }
+
+    @Test
+    fun `with animations removed the Summary shows its final state at once and no confetti`() {
+        Settings.Global.putFloat(app.contentResolver, Settings.Global.ANIMATOR_DURATION_SCALE, 0f)
+        openApp()
+        tap(R.string.home_start)
+        playDailySetOneAndStopTheClockAtTheSummary()
+        screen.mainClock.advanceTimeBy(100)
+
+        shows(R.string.summary_title)
+        shows("100%")
+        showsStreakRaised(to = 1)
+        screen.onNodeWithTag(CONFETTI_TAG).assertDoesNotExist()
     }
 
     @Test
@@ -382,6 +416,21 @@ class PlayingADailySetOnScreenTest {
         chooseGoodbye()
         typeNo()
         typeIAm()
+    }
+
+    /** The clock stops as the Summary is asked for, so a test can look at it part of the way through. */
+    private fun playDailySetOneAndStopTheClockAtTheSummary() {
+        tap(R.string.action_continue)
+        chooseHello()
+        buildThisIsAdam()
+        typeThankYou()
+        chooseGoodbye()
+        typeNo()
+        type("jestem")
+        tap(R.string.action_check)
+        shows(R.string.feedback_correct)
+        screen.mainClock.autoAdvance = false
+        tap(R.string.action_continue)
     }
 
     private fun chooseHello() {
@@ -442,6 +491,12 @@ class PlayingADailySetOnScreenTest {
     }
 
     private fun absent(id: Int) = screen.onNodeWithText(text(id)).assertDoesNotExist()
+
+    private fun showsStreakRaised(to: Int) {
+        screen.onNodeWithContentDescription(app.resources.getQuantityString(R.plurals.home_streak, to, to)).assertIsDisplayed()
+    }
+
+    private fun noStreakRaised() = screen.onNodeWithText(text(R.string.summary_streak_title)).assertDoesNotExist()
 
     private fun noSpeaker() = screen.onNodeWithContentDescription(text(R.string.audio_play)).assertDoesNotExist()
 

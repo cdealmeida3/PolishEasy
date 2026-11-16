@@ -65,8 +65,13 @@ sealed interface Screen {
         val reviewOnly: Boolean,
         /** Whether it was a Replay. */
         val replay: Boolean,
+        /** The Streak this Daily Set raised, or null when it raised none, as a Replay never does. */
+        val streakRaised: StreakRaised? = null,
     ) : Screen
 }
+
+/** The Streak going up as a Daily Set is completed: what it was and what it is now. */
+data class StreakRaised(val from: Int, val to: Int)
 
 /**
  * The course engine over the packaged course and the Learner's saved progress, as it is now.
@@ -90,6 +95,9 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
         private set
 
     private var stepsShown = 0
+
+    /** Set by the answer that completed today's Daily Set, for its Summary. */
+    private var streakRaised: StreakRaised? = null
 
     fun startDailySet() = show(engine.startDailySet(sound = settings.soundOn))
 
@@ -158,7 +166,12 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
     fun answer(answer: Answer) {
         val player = screen as? Screen.Player ?: return
         if (player.feedback != null) return
-        screen = player.copy(feedback = engine.answer(answer))
+        val streakBefore = engine.streak()
+        val feedback = engine.answer(answer)
+        // The answer that completes the Daily Set is the one that raises the Streak.
+        val streakNow = engine.streak()
+        if (streakNow > streakBefore) streakRaised = StreakRaised(streakBefore, streakNow)
+        screen = player.copy(feedback = feedback)
     }
 
     /**
@@ -206,7 +219,8 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
                 step.itemsLearned,
                 step.reviewOnly,
                 step.replay,
-            )
+                streakRaised = streakRaised.takeUnless { step.replay },
+            ).also { streakRaised = null }
         }
     }
 }
