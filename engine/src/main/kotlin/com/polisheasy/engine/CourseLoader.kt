@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
 @Serializable
-private data class CourseFile(
+internal data class CourseFile(
     val levels: List<LevelEntry>,
     val items: List<String> = emptyList(),
     /** Optional: the path of the file that lists the Clips. */
@@ -13,190 +13,328 @@ private data class CourseFile(
 )
 
 @Serializable
-private data class ClipsFile(val clips: List<Clip>)
+internal data class ClipsFile(val clips: List<Clip>)
 
 @Serializable
-private data class ItemsFile(val items: List<Item>)
+internal data class ItemsFile(val items: List<Item>)
 
 @Serializable
-private data class LevelEntry(val id: String, val title: Localized, val units: List<UnitEntry>)
+internal data class LevelEntry(val id: String, val title: Localized, val units: List<UnitEntry>)
 
 @Serializable
-private data class UnitEntry(val id: String, val title: Localized, val dailySets: List<String>)
+internal data class UnitEntry(val id: String, val title: Localized, val dailySets: List<String>)
 
-private val json = Json { classDiscriminator = "type" }
+internal val contentJson = Json { classDiscriminator = "type" }
+
+/** The file the course starts at. */
+internal const val COURSE_FILE = "course.json"
 
 /**
  * Loads the Authored Content. [readFile] returns the text of a content file given its
  * path relative to the content root; the course starts at `course.json`, which lists
  * the path of every Daily Set file and of every Item file, and of the file that lists the Clips.
+ *
+ * Throws an [IllegalArgumentException] that names everything the course engine could not run,
+ * one line each. What makes content good enough to ship is judged by [checkContent], not here.
  */
 fun loadCourse(readFile: (path: String) -> String): Course {
-    val index = json.decodeFromString<CourseFile>(readFile("course.json"))
-    return checked(
+    val content = readContent(readFile)
+    val problems = content.unreadable + loadingProblems(content)
+    require(problems.isEmpty()) {
+        // A rule's sentence already names what it is about. Only a file that could not be read needs its path.
+        problems.joinToString("\n") { if (it.id == null) it.toString() else it.message }
+    }
+    return content.course()
+}
+
+/** Something read from the content, with the file it was written in. */
+internal data class Filed<T>(val file: String, val value: T)
+
+/** Everything `course.json` lists that could be read, before any rule has judged it. */
+internal class ReadContent(
+    /** The Levels and Units as `course.json` writes them. */
+    val levels: List<LevelEntry>,
+    /** Every listed Daily Set file that could be read, once each, in Path order. */
+    val dailySets: List<Filed<DailySet>>,
+    val items: List<Filed<Item>>,
+    val clips: List<Filed<Clip>>,
+    /** The file that lists the Clips, if the course has one. */
+    val clipsFile: String?,
+    /** The Item files `course.json` lists. */
+    val itemFiles: List<String>,
+    /** One problem for each listed file that is missing or does not decode. */
+    val unreadable: List<ContentProblem>,
+) {
+    val clipDir: String = clipsFile?.substringBeforeLast('/', "") ?: "audio"
+
+    /** Every path `course.json` names. */
+    val listed: Set<String> = (dailySetListings() + itemFiles + listOfNotNull(clipsFile)).toSet()
+
+    private val unreadableFiles = unreadable.map { it.file }.toSet()
+
+    /** False while an Item file cannot be read, when an Item that looks undefined may only be unread. */
+    val itemsComplete: Boolean = itemFiles.none { it in unreadableFiles }
+
+    /** False while the Clip manifest cannot be read, when a text that looks unspoken may only be unread. */
+    val clipsComplete: Boolean = clipsFile !in unreadableFiles
+
+    private val built by lazy {
+        val byFile = dailySets.associate { it.file to it.value }
+        val placed = mutableSetOf<String>()
         Course(
-            levels(index, readFile),
-            items = index.items.flatMap { path -> json.decodeFromString<ItemsFile>(readFile(path)).items },
-            clips = index.audio?.let { path -> json.decodeFromString<ClipsFile>(readFile(path)).clips }.orEmpty(),
-            clipDir = index.audio?.substringBeforeLast('/', "") ?: "audio",
-        ),
+            levels.map { level ->
+                Level(
+                    level.id,
+                    level.title,
+                    level.units.map { unit ->
+                        CourseUnit(unit.id, unit.title, unit.dailySets.filter(placed::add).mapNotNull(byFile::get))
+                    },
+                )
+            },
+            items.map { it.value },
+            clips.map { it.value },
+            clipDir,
+        )
+    }
+
+    /** The course these files make. A Daily Set file that could not be read is left out of the Path. */
+    fun course(): Course = built
+
+    /** The path of every Daily Set file, as often as `course.json` lists it. */
+    fun dailySetListings(): List<String> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }
+}
+
+/**
+ * Reads `course.json` and every file it lists. A file that is missing or does not decode becomes
+ * a problem and the rest are still read; if `course.json` itself cannot be read, that is the only problem.
+ */
+internal fun readContent(readFile: (path: String) -> String): ReadContent {
+    val unreadable = mutableListOf<ContentProblem>()
+    fun <T> read(path: String, decode: (String) -> T): T? = try {
+        decode(readFile(path))
+    } catch (failure: Exception) {
+        // Decoding failures quote the JSON on further lines. One line per problem is enough to find it.
+        val reason = failure.message?.lineSequence()?.firstOrNull()?.takeIf { it.isNotBlank() } ?: failure.toString()
+        unreadable += ContentProblem(path, null, "Cannot be read: $reason")
+        null
+    }
+
+    val index = read(COURSE_FILE) { contentJson.decodeFromString<CourseFile>(it) }
+        ?: return ReadContent(emptyList(), emptyList(), emptyList(), emptyList(), null, emptyList(), unreadable)
+    val dailySetPaths = index.levels.flatMap { level -> level.units.flatMap { it.dailySets } }
+    return ReadContent(
+        levels = index.levels,
+        dailySets = dailySetPaths.distinct().mapNotNull { path ->
+            read(path) { contentJson.decodeFromString<DailySet>(it) }?.let { Filed(path, it) }
+        },
+        items = index.items.distinct().flatMap { path ->
+            read(path) { contentJson.decodeFromString<ItemsFile>(it) }?.items.orEmpty().map { Filed(path, it) }
+        },
+        clips = index.audio?.let { path ->
+            read(path) { contentJson.decodeFromString<ClipsFile>(it) }?.clips.orEmpty().map { Filed(path, it) }
+        }.orEmpty(),
+        clipsFile = index.audio,
+        itemFiles = index.items,
+        unreadable = unreadable,
     )
 }
 
-private fun levels(index: CourseFile, readFile: (path: String) -> String): List<Level> =
-    index.levels.map { level ->
-        Level(
-            level.id,
-            level.title,
-            level.units.map { unit ->
-                CourseUnit(
-                    unit.id,
-                    unit.title,
-                    unit.dailySets.map { path -> checked(json.decodeFromString<DailySet>(readFile(path))) },
-                )
-            },
-        )
-    }
-
 private val clipId = Regex("[a-z0-9]+(-[a-z0-9]+)*")
 
-/** Rejects a course whose Items or Exercise ids break what Review relies on, or whose Clips cannot be played. */
-private fun checked(course: Course): Course {
-    val repeatedItems = course.items.map { it.id }.repeated()
-    require(repeatedItems.isEmpty()) { "More than one Item has the id: ${repeatedItems.joinToString()}" }
-    val blank = course.items.filter { it.text.isBlank() }.map { it.id }
-    require(blank.isEmpty()) { "Items with no text: ${blank.joinToString()}" }
-    course.path.forEach { dailySet ->
-        dailySet.exercises.forEach { exercise ->
-            exercise.items.forEach { item ->
-                require(item in course.itemsById) {
-                    "Daily Set ${dailySet.id}: Exercise ${exercise.id} lists Item $item, which is not defined"
-                }
-            }
+/**
+ * Everything in [content] that the course engine could not run: what Review relies on in Items
+ * and Exercise ids, Clips that could not be played, and Tips, Accepted Answers or conjugations
+ * the engine would trip over.
+ */
+internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
+    val course = content.course()
+    val exercises = content.dailySets.flatMap { dailySet ->
+        dailySet.value.exercises.map { Filed(dailySet.file, dailySet.value to it) }
+    }
+    val problems = mutableListOf<ContentProblem>()
+
+    val dailySetIds = content.dailySets.associate { it.file to it.value.id }
+    content.dailySetListings().repeated().forEach { path ->
+        problems += ContentProblem(path, dailySetIds[path], "This Daily Set file is listed more than once in $COURSE_FILE")
+    }
+    content.dailySets.forEach { problems += dailySetProblems(it.file, it.value) }
+
+    problems += repeatedIds("Item", content.items.map { Filed(it.file, it.value.id) })
+    content.items.filter { it.value.text.isBlank() }.forEach { item ->
+        problems += ContentProblem(item.file, item.value.id, "Item ${item.value.id} has no text")
+    }
+    exercises.forEach { (file, placed) ->
+        val (dailySet, exercise) = placed
+        exercise.items.filter { content.itemsComplete && it !in course.itemsById }.forEach { item ->
+            problems += ContentProblem(
+                file,
+                exercise.id,
+                "Daily Set ${dailySet.id}: Exercise ${exercise.id} lists Item $item, which is not defined",
+            )
         }
     }
     // Review refers to an Exercise by its id alone.
-    val repeatedExercises = course.path.flatMap { it.exercises }.map { it.id }.repeated()
-    require(repeatedExercises.isEmpty()) {
-        "More than one Exercise in the course has the id: ${repeatedExercises.joinToString()}"
-    }
-    val repeatedClips = course.clips.map { it.id }.repeated()
-    require(repeatedClips.isEmpty()) { "More than one Clip has the id: ${repeatedClips.joinToString()}" }
-    course.clips.forEach { clip ->
+    problems += repeatedIds("Exercise in the course", exercises.map { Filed(it.file, it.value.second.id) })
+
+    problems += repeatedIds("Clip", content.clips.map { Filed(it.file, it.value.id) })
+    content.clips.forEach { (file, clip) ->
         // The id is the name of the Clip's file.
-        require(clipId.matches(clip.id)) {
-            "Clip id \"${clip.id}\" is not lower-case letters and digits, in groups joined by single hyphens"
+        if (!clipId.matches(clip.id)) {
+            problems += ContentProblem(
+                file,
+                clip.id,
+                "Clip id \"${clip.id}\" is not lower-case letters and digits, in groups joined by single hyphens",
+            )
         }
-        require(clip.text.isNotBlank()) { "Clip ${clip.id} has no text" }
+        if (clip.text.isBlank()) problems += ContentProblem(file, clip.id, "Clip ${clip.id} has no text")
     }
-    course.clips.groupBy { audioKey(it.text) }.values.firstOrNull { it.size > 1 }?.let { same ->
-        throw IllegalArgumentException(
-            "More than one Clip says \"${same.first().text}\": ${same.joinToString { it.id }}",
+    content.clips.groupBy { audioKey(it.value.text) }.values.filter { it.size > 1 }.forEach { same ->
+        problems += ContentProblem(
+            same[1].file,
+            same[1].value.id,
+            "More than one Clip says \"${same.first().value.text}\": ${same.joinToString { it.value.id }}",
         )
     }
-    course.path.forEach { dailySet ->
-        dailySet.exercises.filter { it is ListenChoose || it is ListenType }.forEach { exercise ->
-            spoken(exercise).forEach { text ->
-                require(course.clipFor(text) != null) {
-                    "Daily Set ${dailySet.id}: Exercise ${exercise.id} has no Clip for \"$text\""
-                }
+    exercises.forEach { (file, placed) ->
+        val (dailySet, exercise) = placed
+        if (content.clipsComplete && (exercise is ListenChoose || exercise is ListenType)) {
+            spoken(exercise).filter { course.clipFor(it) == null }.forEach { text ->
+                problems += ContentProblem(
+                    file,
+                    exercise.id,
+                    "Daily Set ${dailySet.id}: Exercise ${exercise.id} has no Clip for \"$text\"",
+                )
             }
         }
     }
-    return course
+    return problems
 }
 
-private fun List<String>.repeated(): Set<String> = groupingBy { it }.eachCount().filterValues { it > 1 }.keys
+/** One problem for each id after the first that repeats an earlier one, naming the file of the first. */
+internal fun repeatedIds(kind: String, ids: List<Filed<String>>): List<ContentProblem> {
+    val first = mutableMapOf<String, String>()
+    return ids.mapNotNull { (file, id) ->
+        val earlier = first.putIfAbsent(id, file) ?: return@mapNotNull null
+        ContentProblem(file, id, "More than one $kind has the id $id. The first is in $earlier")
+    }
+}
 
-private const val MAX_TIPS = 2
+internal fun List<String>.repeated(): Set<String> = groupingBy { it }.eachCount().filterValues { it > 1 }.keys
 
-/** Rejects a Daily Set whose Tips, Accepted Answers or conjugations break what the course engine relies on. */
-private fun checked(dailySet: DailySet): DailySet {
+internal const val MAX_TIPS = 2
+
+/** What the course engine could not run in one Daily Set: its Tips first, then at most one problem for each Exercise. */
+private fun dailySetProblems(file: String, dailySet: DailySet): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
     val exerciseIds = dailySet.exercises.map { it.id }.toSet()
     val placements = dailySet.tips.map { it.before }
-    require(dailySet.tips.size <= MAX_TIPS) {
-        "Daily Set ${dailySet.id} has ${dailySet.tips.size} Tips; at most $MAX_TIPS are allowed"
+    if (dailySet.tips.size > MAX_TIPS) {
+        problems += ContentProblem(
+            file,
+            dailySet.id,
+            "Daily Set ${dailySet.id} has ${dailySet.tips.size} Tips; at most $MAX_TIPS are allowed",
+        )
+    }
+    dailySet.tips.filter { it.before !in exerciseIds }.forEach { tip ->
+        problems += ContentProblem(
+            file,
+            tip.id,
+            "Daily Set ${dailySet.id}: Tip ${tip.id} is placed before ${tip.before}, which is not one of its Exercises",
+        )
+    }
+    if (placements.size != placements.toSet().size) {
+        problems += ContentProblem(
+            file,
+            dailySet.id,
+            "Daily Set ${dailySet.id} has more than one Tip before the same Exercise",
+        )
+    }
+    dailySet.exercises.forEach { exercise ->
+        exerciseProblem(exercise)?.let { problem ->
+            problems += ContentProblem(file, exercise.id, "Daily Set ${dailySet.id}: Exercise ${exercise.id} $problem")
+        }
     }
     dailySet.tips.forEach { tip ->
-        require(tip.before in exerciseIds) {
-            "Daily Set ${dailySet.id}: Tip ${tip.id} is placed before ${tip.before}, which is not one of its Exercises"
+        tip.conjugation?.let(::tableProblem)?.let { problem ->
+            problems += ContentProblem(file, tip.id, "Daily Set ${dailySet.id}: Tip ${tip.id} $problem")
         }
     }
-    require(placements.size == placements.toSet().size) {
-        "Daily Set ${dailySet.id} has more than one Tip before the same Exercise"
+    return problems
+}
+
+/** The first thing about [exercise] that the course engine could not run, as the end of a sentence, or null. */
+private fun exerciseProblem(exercise: Exercise): String? = when (exercise) {
+    is ChooseTranslation -> when {
+        // The engine reads the option at this position to give feedback.
+        exercise.correctOption !in exercise.options.indices ->
+            "has correctOption ${exercise.correctOption}, which is not one of its ${exercise.options.size} options"
+        else -> null
     }
-    dailySet.exercises.filterIsInstance<TypeAnswer>().forEach { exercise ->
-        require(exercise.acceptedAnswers.isNotEmpty()) {
-            "Daily Set ${dailySet.id}: Exercise ${exercise.id} has no Accepted Answers"
-        }
-        require(exercise.acceptedAnswers.none { normalizeAnswer(it).isEmpty() }) {
-            "Daily Set ${dailySet.id}: Exercise ${exercise.id} has a blank Accepted Answer"
-        }
-    }
-    dailySet.exercises.filterIsInstance<WordTiles>().forEach { exercise ->
-        val name = "Daily Set ${dailySet.id}: Exercise ${exercise.id}"
-        require(exercise.acceptedAnswers.isNotEmpty()) { "$name has no Accepted Answers" }
-        require(exercise.acceptedAnswers.none { words(it).isEmpty() }) { "$name has a blank Accepted Answer" }
-        require(words(exercise.acceptedAnswers.first()).size >= 2) {
-            "$name has a first Accepted Answer of fewer than two words, which leaves nothing to build"
-        }
-        exercise.distractors.forEach { distractor ->
-            require(words(distractor).size == 1) { "$name has the distractor \"$distractor\", which is not one word" }
-        }
-        val tiles = tilesOf(exercise).wordCounts()
-        exercise.acceptedAnswers.forEach { accepted ->
-            require(words(accepted).wordCounts().all { (word, count) -> count <= (tiles[word] ?: 0) }) {
-                "$name has the Accepted Answer \"$accepted\", which cannot be built from its tiles"
-            }
+    is TypeAnswer -> typedAnswersProblem(exercise.acceptedAnswers)
+    is WordTiles -> when {
+        exercise.acceptedAnswers.isEmpty() -> "has no Accepted Answers"
+        exercise.acceptedAnswers.any { words(it).isEmpty() } -> "has a blank Accepted Answer"
+        words(exercise.acceptedAnswers.first()).size < 2 ->
+            "has a first Accepted Answer of fewer than two words, which leaves nothing to build"
+        else -> {
+            val tiles = tilesOf(exercise).wordCounts()
+            exercise.distractors.firstOrNull { words(it).size != 1 }
+                ?.let { "has the distractor \"$it\", which is not one word" }
+                ?: exercise.acceptedAnswers
+                    .firstOrNull { accepted ->
+                        words(accepted).wordCounts().any { (word, count) -> count > (tiles[word] ?: 0) }
+                    }
+                    ?.let { "has the Accepted Answer \"$it\", which cannot be built from its tiles" }
         }
     }
-    dailySet.exercises.filterIsInstance<Conjugation>().forEach { exercise ->
-        val name = "Daily Set ${dailySet.id}: Exercise ${exercise.id}"
-        require(exercise.acceptedAnswers.isNotEmpty()) { "$name has no Accepted Answers" }
-        require(exercise.acceptedAnswers.none { normalizeAnswer(it).isEmpty() }) { "$name has a blank Accepted Answer" }
-        require(exercise.verb.isNotBlank()) { "$name has a blank verb" }
-        require((exercise.sentence == null) == (exercise.sentenceMeaning == null)) {
-            "$name must have both a sentence and a sentence meaning, or neither"
-        }
-        exercise.sentence?.let { sentence ->
+    is Conjugation -> typedAnswersProblem(exercise.acceptedAnswers) ?: when {
+        exercise.verb.isBlank() -> "has a blank verb"
+        (exercise.sentence == null) != (exercise.sentenceMeaning == null) ->
+            "must have both a sentence and a sentence meaning, or neither"
+        else -> exercise.sentence?.let { sentence ->
             val gap = gapOf(sentence)
-            require(gap != null) {
-                "$name has the sentence \"$sentence\", which does not have exactly one gap written as $GAP"
-            }
-            require(words(gap.first + " " + gap.second).isNotEmpty()) {
-                "$name has the sentence \"$sentence\", which has no words apart from the gap"
+            when {
+                gap == null -> "has the sentence \"$sentence\", which does not have exactly one gap written as $GAP"
+                words(gap.first + " " + gap.second).isEmpty() ->
+                    "has the sentence \"$sentence\", which has no words apart from the gap"
+                else -> null
             }
         }
     }
-    dailySet.exercises.filterIsInstance<ListenChoose>().forEach { exercise ->
-        val name = "Daily Set ${dailySet.id}: Exercise ${exercise.id}"
-        require(normalizeAnswer(exercise.text).isNotEmpty()) { "$name has blank text" }
-        require(exercise.distractors.isNotEmpty()) { "$name has no distractors" }
-        require(exercise.distractors.none { normalizeAnswer(it).isEmpty() }) { "$name has a blank distractor" }
+    is ListenChoose -> {
         // Options that differ only by an accent are a real listening test, so they are allowed.
         val same = (listOf(exercise.text) + exercise.distractors).map(::normalizeAnswer).repeated()
-        require(same.isEmpty()) { "$name has more than one option that reads: ${same.joinToString()}" }
+        when {
+            normalizeAnswer(exercise.text).isEmpty() -> "has blank text"
+            exercise.distractors.isEmpty() -> "has no distractors"
+            exercise.distractors.any { normalizeAnswer(it).isEmpty() } -> "has a blank distractor"
+            same.isNotEmpty() -> "has more than one option that reads: ${same.joinToString()}"
+            else -> null
+        }
     }
-    dailySet.exercises.filterIsInstance<ListenType>().forEach { exercise ->
-        val name = "Daily Set ${dailySet.id}: Exercise ${exercise.id}"
-        require(exercise.acceptedAnswers.isNotEmpty()) { "$name has no Accepted Answers" }
-        require(exercise.acceptedAnswers.none { normalizeAnswer(it).isEmpty() }) { "$name has a blank Accepted Answer" }
-    }
-    dailySet.tips.forEach { tip ->
-        val table = tip.conjugation ?: return@forEach
-        val name = "Daily Set ${dailySet.id}: Tip ${tip.id}"
-        require(table.verb.isNotBlank()) { "$name has a conjugation table with a blank verb" }
-        Person.entries.forEach { person ->
-            require(person in table.forms) {
-                "$name has a conjugation table with no form for ${person.pronouns}"
-            }
-            require(table.forms.getValue(person).isNotBlank()) {
-                "$name has a conjugation table with a blank form for ${person.pronouns}"
+    is ListenType -> typedAnswersProblem(exercise.acceptedAnswers)
+}
+
+private fun typedAnswersProblem(acceptedAnswers: List<String>): String? = when {
+    acceptedAnswers.isEmpty() -> "has no Accepted Answers"
+    acceptedAnswers.any { normalizeAnswer(it).isEmpty() } -> "has a blank Accepted Answer"
+    else -> null
+}
+
+/** The first thing wrong with a Tip's conjugation [table], as the end of a sentence, or null. */
+private fun tableProblem(table: ConjugationTable): String? =
+    if (table.verb.isBlank()) {
+        "has a conjugation table with a blank verb"
+    } else {
+        Person.entries.firstNotNullOfOrNull { person ->
+            when {
+                person !in table.forms -> "has a conjugation table with no form for ${person.pronouns}"
+                table.forms.getValue(person).isBlank() ->
+                    "has a conjugation table with a blank form for ${person.pronouns}"
+                else -> null
             }
         }
     }
-    return dailySet
-}
 
 /** How many times each word is in this list, letter case ignored. */
 private fun List<String>.wordCounts(): Map<String, Int> = groupingBy { it.lowercase(Locale.ROOT) }.eachCount()

@@ -9,4 +9,4 @@ We rejected an `"audio": "<id>"` field on each Exercise. The feedback of a typin
 - The Clip id is still a stable identifier: it names the file (`<id>.ogg` beside the manifest) and does not change when the same text is used somewhere new.
 - Changing a Polish text, even its punctuation, needs a new Clip.
 - A listening Exercise whose spoken text has no Clip is rejected when the content loads. A speaker icon whose text has no Clip is simply not shown.
-- A test over the shipped content keeps it and the audio files in step: every text the app can speak has a Clip, every Clip has its file, and no Clip or file is left over.
+- The build's content check (first a test, since issue #15 the checker in `docs/content-checks.md`) keeps the shipped content and the audio files in step: every text the app can speak has a Clip, every Clip has its file, and no Clip or file is left over.

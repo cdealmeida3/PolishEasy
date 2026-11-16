@@ -22,7 +22,7 @@ Exercises do not name Clips. The course engine looks up the Clip whose text matc
 | `listen_choose` | `text` |
 | `listen_type` | the first Accepted Answer |
 
-A listening Exercise must have its Clip, or the content does not load. Everywhere else a missing Clip only hides the speaker icon, but a test (`AuthoredContentTest`) requires the shipped content to have a Clip for every spoken text, a file for every Clip, and nothing left over. **After adding or changing Polish text in the content, run the script below**, or that test fails.
+A listening Exercise must have its Clip, or the content does not load. Everywhere else a missing Clip only hides the speaker icon, but the build's [content check](content-checks.md) requires the shipped content to have a Clip for every spoken text, a file for every Clip, and nothing left over, and reports each missing Clip and stray file. **After adding or changing Polish text in the content, run the script below**, or the build fails.
 
 ## Making the Clips
 

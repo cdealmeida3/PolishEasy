@@ -21,6 +21,8 @@ All debug builds are signed with the same debug key, so a new debug APK installs
 
 The APK is written to `app/build/outputs/apk/debug/app-debug.apk`.
 
+Every build of the app first checks the Authored Content and fails if anything in it is broken; `./gradlew :engine:checkContent` runs the check alone. See [docs/content-checks.md](docs/content-checks.md).
+
 ```
 ./gradlew :app:assembleRelease :app:bundleRelease
 ```

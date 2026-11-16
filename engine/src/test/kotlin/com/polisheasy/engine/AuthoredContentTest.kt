@@ -97,12 +97,14 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `every Exercise shipped lists at least one Item, and every Item is listed by an Exercise`() {
-        val exercises = course.path.flatMap { it.exercises }
-        assertTrue(course.items.isNotEmpty())
+    fun `the Authored Content shipped with the app has no problems`() {
+        val released = contentJson.decodeFromString(ReleasedIds.serializer(), File(System.getProperty("releasedIds")).readText())
 
-        assertEquals(emptyList(), exercises.filter { it.items.isEmpty() }.map { it.id })
-        assertEquals(course.items.map { it.id }.toSet(), exercises.flatMap { it.items }.toSet())
+        val problems = checkContent(DirectoryContent(contentDir), released)
+
+        assertEquals(emptyList(), problems, problems.joinToString("\n"))
+        assertTrue(course.items.isNotEmpty())
+        assertTrue(course.path.flatMap { it.exercises }.any { it is ListenChoose })
     }
 
     @Test
@@ -149,28 +151,14 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `every Polish text the app can speak has a Clip, every Clip has its audio file, and nothing is left over`() {
-        val spoken = course.spokenTexts()
-        assertTrue(spoken.isNotEmpty())
-        assertTrue(course.path.flatMap { it.exercises }.any { it is ListenChoose })
-
-        assertEquals(emptyList(), spoken.filter { course.clipFor(it) == null }, "Spoken texts with no Clip")
-        assertEquals(
-            emptyList(),
-            course.clips.filter { clip -> spoken.none { course.clipFor(it) == course.clipFor(clip.text) } }.map { it.id },
-            "Clips whose text is never spoken",
-        )
+    fun `every Clip's file is real audio`() {
+        // The content checker sees that each file is there. Only this test opens it.
+        assertTrue(course.clips.isNotEmpty())
         course.clips.forEach { clip ->
             val file = File(contentDir, checkNotNull(course.clipFor(clip.text)).path)
-            assertTrue(file.isFile, "Clip ${clip.id} has no file ${file.name}")
             assertTrue(file.length() > 500, "The file of Clip ${clip.id} is only ${file.length()} bytes")
             assertEquals("OggS", String(file.readBytes().copyOf(4), Charsets.ISO_8859_1), "The file of Clip ${clip.id}")
         }
-        assertEquals(
-            (course.clips.map { "${it.id}.ogg" } + "clips.json").sorted(),
-            File(contentDir, course.clipDir).list().orEmpty().sorted(),
-            "Files beside the Clip manifest",
-        )
     }
 
     @Test

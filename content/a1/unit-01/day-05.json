@@ -135,6 +135,30 @@
       "sentenceMeaning": { "en": "They are at home." },
       "acceptedAnswers": ["są"],
       "items": ["byc-sa"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d05-e13",
+      "prompt": "jesteś",
+      "options": [
+        { "en": "you are (one person)" },
+        { "en": "I am" },
+        { "en": "they are" }
+      ],
+      "correctOption": 0,
+      "items": ["byc-jestes"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d05-e14",
+      "prompt": "jesteście",
+      "options": [
+        { "en": "we are" },
+        { "en": "he is" },
+        { "en": "you are (several people)" }
+      ],
+      "correctOption": 2,
+      "items": ["byc-jestescie"]
     }
   ]
 }
