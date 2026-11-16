@@ -35,6 +35,8 @@ import androidx.compose.ui.res.stringArrayResource
  * One Exercise of a Daily Set, then what the Learner is told about the answer. What the Learner has
  * typed, placed or tapped is held here, so the Exercise above and "Check" below share it.
  * [praise] picks the word a right answer is praised with, so it is not the same every time.
+ * With [canListen] the Polish is said as it appears, without a tap on a speaker.
+ * [clipOf] gives the Clip that says a Polish word or sentence, if there is one and sound is on.
  */
 @Composable
 internal fun PlayerScreen(
@@ -45,6 +47,8 @@ internal fun PlayerScreen(
     gloss: String?,
     playing: Boolean,
     praise: Int,
+    canListen: Boolean,
+    clipOf: (String) -> ClipView?,
     onAnswer: (Answer) -> Unit,
     onContinue: () -> Unit,
     onPlay: (ClipView, Boolean) -> Unit,
@@ -64,6 +68,9 @@ internal fun PlayerScreen(
         if (feedback != null && !felt) {
             felt = true
             if (feedback.correct) haptics.right() else haptics.wrong()
+            // The answer is heard as the feedback appears, unless it is what the Learner has just listened to.
+            val listened = exercise is ExerciseView.ListenChoose || exercise is ExerciseView.ListenType
+            if (canListen && !listened) feedback.audio?.let { onPlay(it, false) }
         }
     }
     val answering = feedback == null
@@ -108,6 +115,38 @@ internal fun PlayerScreen(
         } else {
             null
         },
+        answer = when (exercise) {
+            is ExerciseView.ChooseTranslation -> {
+                { Options(exercise.options, tapped, feedback, polish = false, choose) }
+            }
+            is ExerciseView.ListenChoose -> {
+                {
+                    Options(exercise.options, tapped, feedback, polish = true, choose)
+                    CantListen(answering, onCantListen)
+                }
+            }
+            is ExerciseView.ChoosePolish -> {
+                { Options(exercise.options, tapped, feedback, polish = true, choose) }
+            }
+            is ExerciseView.WordTiles -> {
+                { WordTilesAnswer(exercise, placed, onPlacedChange = { placed = it }, answering, clipOf, onPlay) }
+            }
+            is ExerciseView.TypeAnswer -> {
+                { PolishAnswerField(typed, onTypedChange = { typed = it }, answering, submitTyped) }
+            }
+            is ExerciseView.ListenType -> {
+                {
+                    PolishAnswerField(typed, onTypedChange = { typed = it }, answering, submitTyped)
+                    CantListen(answering, onCantListen)
+                }
+            }
+            // With a sentence the Learner types into the sentence itself, up in the prompt.
+            is ExerciseView.Conjugation -> if (exercise.sentence == null) {
+                { PolishAnswerField(typed, onTypedChange = { typed = it }, answering, submitTyped) }
+            } else {
+                null
+            }
+        },
     ) {
         // A Replay has no Review, so the two labels never meet.
         if (review || replay) {
@@ -115,26 +154,16 @@ internal fun PlayerScreen(
             Spacer(Modifier.height(Space.xs))
         }
         when (exercise) {
-            is ExerciseView.ChooseTranslation -> ChooseTranslationExercise(exercise, tapped, feedback, choose, onPlay)
-            is ExerciseView.TypeAnswer ->
-                TypeAnswerExercise(exercise, typed, onTypedChange = { typed = it }, answering, submitTyped)
-            is ExerciseView.WordTiles ->
-                WordTilesExercise(exercise, placed, onPlacedChange = { placed = it }, answering)
+            is ExerciseView.ChooseTranslation -> ChooseTranslationPrompt(exercise, speak = answering && canListen, onPlay)
+            is ExerciseView.TypeAnswer -> BasePromptCard(stringResource(R.string.type_answer_instruction), exercise.prompt)
+            is ExerciseView.WordTiles -> BasePromptCard(stringResource(R.string.word_tiles_instruction), exercise.prompt)
             is ExerciseView.Conjugation ->
-                ConjugationExercise(exercise, typed, onTypedChange = { typed = it }, answering, submitTyped)
+                ConjugationPrompt(exercise, typed, onTypedChange = { typed = it }, answering, submitTyped)
             is ExerciseView.ListenChoose ->
-                ListenChooseExercise(exercise, playing, tapped, feedback, choose, onPlay, onCantListen)
-            is ExerciseView.ListenType -> ListenTypeExercise(
-                exercise,
-                playing,
-                typed,
-                onTypedChange = { typed = it },
-                answering,
-                submitTyped,
-                onPlay,
-                onCantListen,
-            )
-            is ExerciseView.ChoosePolish -> ChoosePolishExercise(exercise, tapped, feedback, choose)
+                ListenPrompt(stringResource(R.string.listen_choose_instruction), exercise.audio, playing, answering, onPlay)
+            is ExerciseView.ListenType ->
+                ListenPrompt(stringResource(R.string.listen_type_instruction), exercise.audio, playing, answering, onPlay)
+            is ExerciseView.ChoosePolish -> BasePromptCard(stringResource(R.string.choose_polish_instruction), exercise.prompt)
         }
     }
 }
@@ -173,7 +202,7 @@ private fun Feedback(feedback: Feedback, gloss: String?, praise: Int, onContinue
                 SpeakerButton(
                     stringResource(R.string.audio_play),
                     onClick = { onPlay(clip, false) },
-                    tint = if (feedback.correct && !feedback.accentWarning) colors.success else colors.caution,
+                    tint = if (right) colors.success else colors.caution,
                 )
             }
         },

@@ -82,8 +82,11 @@ class PlayingADailySetOnScreenTest {
 
         showsProgress(0)
         shows(R.string.choose_translation_instruction)
+        // A Polish prompt is said as it appears, and again from its speaker.
+        val hello = Played("audio/dzien-dobry.ogg", slow = false)
+        assertEquals(listOf(hello), clips.played)
         screen.onNodeWithContentDescription(text(R.string.audio_play)).performClick()
-        assertEquals(listOf(Played("audio/dzien-dobry.ogg", slow = false)), clips.played)
+        assertEquals(listOf(hello, hello), clips.played)
         tap("hello (polite); good morning")
         correctThenContinue()
 
@@ -115,7 +118,7 @@ class PlayingADailySetOnScreenTest {
 
         showsProgress(5)
         shows(R.string.conjugation_instruction)
-        shows(text(R.string.conjugation_person, text(R.string.person_i), "ja"))
+        shows(text(R.string.conjugation_chip, "być", text(R.string.person_i), "ja"))
         type("jestem")
         tap(R.string.action_check)
         correctThenContinue()
@@ -180,7 +183,10 @@ class PlayingADailySetOnScreenTest {
         tap(R.string.action_continue)
         chooseHello()
         buildThisIsAdam()
+        // The answer to a Polish Exercise is said as its feedback appears.
+        assertEquals(Played("audio/to-jest-adam.ogg", slow = false), clips.played.last())
         typeThankYou()
+        clips.asked.clear()
 
         shows(R.string.listen_choose_instruction)
         val clip = "audio/do-widzenia.ogg"

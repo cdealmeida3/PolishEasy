@@ -67,6 +67,9 @@ object Size {
 
     val progressBar: Dp = 12.dp
 
+    /** The room kept at the bottom of an Exercise for the feedback panel, so the answers above it never move. */
+    val feedbackRoom: Dp = 176.dp
+
     /** The Streak's flame, on Home and on the Summary. */
     val flame: Dp = 48.dp
 

@@ -41,6 +41,8 @@ class ContrastTest {
                 text("primary", scheme.primary, name, surface)
             }
             text("onSurfaceVariant", scheme.onSurfaceVariant, "a disabled button", scheme.surfaceContainerHighest)
+            text("a prompt", scheme.onSurface, "its card", scheme.surfaceContainerHigh)
+            shape("the slot of a sentence", scheme.outline, "secondaryContainer", scheme.secondaryContainer)
             text("onPrimaryContainer", scheme.onPrimaryContainer, "primaryContainer", scheme.primaryContainer)
             text("onSecondaryContainer", scheme.onSecondaryContainer, "secondaryContainer", scheme.secondaryContainer)
             text("onBrand", colors.onBrand, "brand", colors.brand)

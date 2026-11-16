@@ -30,6 +30,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import com.polisheasy.app.ui.theme.Space
+import androidx.compose.foundation.shape.CircleShape
 
 /**
  * The big button of a listening Exercise. [description] is what a screen reader says. It is a
@@ -83,20 +84,33 @@ fun PlayControls(play: @Composable () -> Unit, helper: @Composable () -> Unit, m
     }
 }
 
-/** The small speaker beside Polish text. [tint] is for a speaker that sits on a coloured panel. */
+/**
+ * The small speaker beside Polish text: a round tonal button, so it reads as something to tap, and
+ * it grows with the phone's font size. With a [tint] it has no field of its own, for a speaker
+ * that sits on a coloured panel.
+ */
 @Composable
 fun SpeakerButton(
     description: String,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    tint: Color = MaterialTheme.colorScheme.primary,
+    tint: Color? = null,
 ) {
-    IconButton(onClick = onClick, modifier = modifier.size(Size.touch)) {
-        Icon(
-            painterResource(R.drawable.ic_volume_up),
-            contentDescription = description,
-            tint = tint,
-            modifier = Modifier.size(Scaled.icon()),
-        )
+    val scheme = MaterialTheme.colorScheme
+    val icon = Scaled.icon()
+    IconButton(onClick = onClick, modifier = modifier.size(maxOf(Size.touch, icon + Space.m))) {
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = Modifier
+                .size(icon + Space.m)
+                .background(if (tint == null) scheme.primaryContainer else Color.Transparent, CircleShape),
+        ) {
+            Icon(
+                painterResource(R.drawable.ic_volume_up),
+                contentDescription = description,
+                tint = tint ?: scheme.onPrimaryContainer,
+                modifier = Modifier.size(icon),
+            )
+        }
     }
 }

@@ -20,7 +20,7 @@ writes one PNG per screen to `app/build/screenshots/`: the fixture course in the
 
 ## Principles
 
-1. **The Polish is the hero.** On every Exercise the Polish being learned is the biggest, boldest thing on the screen.
+1. **The Polish is the hero.** On every Exercise the Polish being learned is the biggest, boldest thing on the screen, and it is heard as well as seen.
 2. **One thing per screen, one main action.** The main action is a full-width button pinned to the bottom, at the same height on every screen. Home is the one exception: its main action sits inside the Today card, with what it starts.
 3. **Crimson is for the main action and for highlights.** It never means "wrong".
 4. **Never colour alone.** Right, wrong, chosen, locked and completed each have an icon or words as well as a colour.
@@ -117,9 +117,9 @@ Two families. **Nunito** (SIL Open Font Licence, covers every Polish letter) is 
 | --- | --- | --- | --- | --- |
 | `displayLarge` | Nunito | ExtraBold 800 | 57 / 64 | Not used yet |
 | `displayMedium` | Nunito | ExtraBold 800 | 45 / 52 | The Streak number, the score on the Summary |
-| `displaySmall` | Nunito | ExtraBold 800 | 36 / 44 | Not used yet |
-| `headlineLarge` | Nunito | ExtraBold 800 | 32 / 40 | A Polish prompt of up to about 20 letters |
-| `headlineMedium` | Nunito | Bold 700 | 26 / 34 | A longer Polish prompt, the Summary's title |
+| `displaySmall` | Nunito | ExtraBold 800 | 36 / 44 | A Polish prompt of a word or two, up to 12 letters |
+| `headlineLarge` | Nunito | ExtraBold 800 | 32 / 40 | A Polish prompt of 13 to 20 letters, Home's greeting |
+| `headlineMedium` | Nunito | Bold 700 | 26 / 34 | A longer Polish prompt, the sentence of a conjugation Exercise, the Summary's title |
 | `headlineSmall` | Nunito | Bold 700 | 22 / 28 | Screen titles, a Tip's title, a prompt in the Base Language |
 | `titleLarge` | Nunito | Bold 700 | 20 / 26 | Card titles, the feedback heading |
 | `titleMedium` | Nunito | SemiBold 600 | 18 / 24 | Option cards, word tiles, Polish key row, text a Learner types |
@@ -136,17 +136,17 @@ Rules:
 - Sizes are in sp and nothing sets a fixed height around text, so the phone's font size setting works.
 - No size, weight or family is set in a screen file. Name a style.
 - No all-capitals text, and no italics except a Polish word quoted inside a sentence in the Base Language.
-- Polish is never shrunk to fit. A long prompt wraps, and uses `headlineMedium`.
+- Polish is never shrunk to fit. A short prompt is set very large; a long one wraps, and uses `headlineMedium`.
 
 ## Space
 
 A 4 dp grid. Use only these steps: 4, 8, 12, 16, 24, 32, 48.
 
 - Screen edge to content: 24 at the sides, 16 at the top below the bar, 24 above the bottom edge or the navigation bar.
-- Between an instruction and its prompt: 8. Between a prompt and its answer area: 32. Between option cards: 12. Between word tiles: 8. Inside a card: 16.
+- Between an instruction and its prompt card: 12. Between a prompt and its answers: at least 24. Between option cards: 12. Between word tiles: 8. Inside a card: 16.
 - Anything a finger taps is at least 48 × 48, including icons.
 - Content is at most 480 wide and centred beyond that.
-- Content starts from the top, on the Summary too. Nothing is centred vertically.
+- **In an Exercise the prompt starts from the top and the answers from the bottom**, just above the main action, where a thumb reaches them. The space between the two is the screen's breathing room. Everywhere else content starts from the top, on the Summary too. Nothing is centred vertically.
 
 ## Shape
 
@@ -185,14 +185,17 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
   - wrong: `cautionContainer`, a cross, "Not quite", then "Correct answer:" and the answer
 
   It holds the speaker for the Polish, Continue as a `PrimaryButton` in the panel's tone, and "Report a mistake" as a small flag icon button with that label for screen readers.
-- **`DailySetFrame`** and **`DailySetStep`**: the layout of every Tip and Exercise. The frame is the top bar, a close button and the progress bar, which stays put for the whole Daily Set while the steps slide under it. A step is content from the top, scrolling if it must, and the main action pinned to the bottom, with the Polish key row below it. Nothing moves when feedback appears. An Exercise draws only what is above the main action: "Check" belongs to the step's bottom, not to the Exercise.
+- **`DailySetFrame`** and **`DailySetStep`**: the layout of every Tip and Exercise. The frame is the top bar, a close button and the progress bar, which stays put for the whole Daily Set while the steps slide under it. A step has two parts: the prompt from the top and the answers from the bottom (options, the word tile board, the text field), sitting just above the main action, which is pinned to the bottom with the Polish key row below it. If the two parts do not fit they scroll as one. The feedback panel rises over the main action's place, and 176 of room is kept there from the start, so nothing moves when it appears; only a panel taller than that, at a large font size, pushes the answers up. An Exercise draws only what is above the main action: "Check" belongs to the step's bottom, not to the Exercise.
 - **The close button** leaves the Daily Set at once, with no question: every answer is already saved, and Home offers to continue. It is the close icon in `onSurfaceVariant`, lined up with the content's edge.
 - **`WordTileBoard`**: the answer being built, on two ruled lines in `outlineVariant` that are there before the first tile is, and under it the bank of `WordTile`s. It owns the tiles' movement between the two.
 - **Listening controls** (`PlayControls`): the `PlayButton` centred with "Slow" beside it as a `TonalButton`, which goes under it at a large font size. "Can't listen now" is a subdued `QuietButton` under the answers.
 - **`ScreenFrame`**: the layout of a screen outside a Daily Set, with the edge spacing under Space.
 - **`Instruction`**, **`PolishPrompt`**, **`BasePrompt`**: the label above a prompt and the prompt itself, so the choice of style between a short and a long Polish prompt is made in one place.
+- **`PromptCard`**: what an Exercise asks about, set apart at the top: `surfaceContainerHigh`, `large` corners, at least 96 high, 24 at the sides, the prompt in `onSurface` and its `SpeakerButton` at the end when it can be heard. No border and no edge: it is not tapped.
+- **`PromptChip`**: the verb and the person of a conjugation Exercise in one small label ("być · I (ja)"): `titleSmall` on a `secondaryContainer` pill with a 1 dp `outlineVariant` border.
+- **`SentenceField`**: the sentence of a conjugation Exercise in `headlineMedium`, with the gap drawn as a slot the Learner types into: `secondaryContainer`, `small` corners, at least 96 wide, growing with what is typed, with a 2 dp border in `outline`, `primary` while it has focus. The meaning of the sentence is under it in `bodyLarge` in `onSurfaceVariant`. A conjugation Exercise with no sentence has the chip and an `AnswerField` at the bottom.
 - **`ProgressBar`**: 12 high, fully rounded, `brand` on `surfaceContainer`.
-- **`PlayButton`**: 72 across in `brand` with the speaker icon in `onBrand`, for listening Exercises. A circle at rest and a rounded square with `large` corners while a Clip plays. **`SpeakerButton`**, the small speaker beside Polish text, is a 48 icon button in `primary`.
+- **`PlayButton`**: 72 across in `brand` with the speaker icon in `onBrand`, for listening Exercises. A circle at rest and a rounded square with `large` corners while a Clip plays. **`SpeakerButton`**, the small speaker beside Polish text, is a 40 circle in `primaryContainer` with the icon in `onPrimaryContainer`, inside a 48 touch area, so it reads as a button; it grows with the font size. On the feedback panel it has no field and takes the panel's accent.
 - **`TopBar`**: Path and Settings have a `headlineSmall` title, and the Path a `bodyLarge` line under it in `onSurfaceVariant`. Home has a greeting in its place (see Home). Inside a Daily Set it is the close button and the progress bar only.
 - **`NavigationFrame`**, the navigation bar: Home, Path, Settings, with icons and `labelSmall` labels, on `surfaceContainer`. The selected one has a `primaryContainer` pill behind a `primary` icon and its label in `onSurface`; the others are `onSurfaceVariant`. Hidden inside a Daily Set and on the Summary. Back from the Path or Settings goes to Home.
 - **`StreakWeekCard`**: the Streak on Home. A `ContentCard` with the Streak flame at 48 and the number in `displayMedium`, "day Streak" in `titleLarge` and a line in `bodyMedium` saying what today's Daily Set would do for it. Under them this calendar week, Monday to Sunday, as 32 dots with two letters of the weekday below each: a completed day is `streak` with a tick, a day that passed without one is `surfaceContainerHigh` with a dashed `outline` line, today has a 2 dp `streak` ring until it is completed and its letters in `titleSmall`, and a day still to come is a small 12 dot, never drawn as missed. At a large font size the words go under the flame and the number. A screen reader hears the card as one sentence.
@@ -298,7 +301,7 @@ Rules:
 - Finishing a Daily Set: `CONFIRM` once as the Summary appears (`KEYBOARD_TAP` below Android 11).
 - Nothing else vibrates.
 
-**Sound.** Only Clips play today; the Daily Set player was built without sound effects. Any sound effect added later obeys the Sound setting and "can't listen now", exactly as Clips do.
+**Sound.** Only Clips play; there are no sound effects. Polish is said when it appears, without a tap: a Polish prompt as its Exercise opens, the answer as the feedback panel appears (not after a listening Exercise, where it was just heard), and a word tile as it is placed, where a Clip exists for the word. All of it obeys the Sound setting and "can't listen now": with either, nothing plays that the Learner did not tap a speaker for. Any sound effect added later obeys them too.
 
 ## Accessibility
 
@@ -306,7 +309,7 @@ Rules:
 - Every icon button has a content description from `strings.xml`. Decorative icons have none.
 - Touch targets are at least 48 dp. Contrast as under Colour.
 - The app works at the largest font size: content scrolls, the main button stays pinned and nothing is cut off. The `large-…` pictures show it. Above a font scale of 1.3 two things side by side go one under the other (`Scaled.roomy()`): a setting's switch under its words, the Streak card's words under its number, "Slow" under the play button. Icons beside text grow with it. `ValueSetting` wraps when its two parts no longer fit, and the score ring grows by up to a third so that "100%" stays inside it.
-- Text that is always Polish (a Polish prompt, Home's greeting, an Item's Polish) is marked as Polish with `inPolish()`, so a screen reader says it with a Polish voice. Options and word tiles, which are Polish in some Exercises and the Base Language in others, are not marked yet.
+- Text that is always Polish (a Polish prompt, Home's greeting, an Item's Polish) is marked as Polish with `inPolish()`, so a screen reader says it with a Polish voice. Word tiles are always Polish and are marked; option cards are marked when the Exercise's answers are Polish.
 - Both themes are designed, not derived: check both sets of screenshots.
 
 ## Not part of the look
