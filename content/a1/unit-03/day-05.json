@@ -1,0 +1,189 @@
+{
+  "id": "a1-u03-d05",
+  "tips": [
+    {
+      "id": "a1-u03-d05-t01",
+      "before": "a1-u03-d05-e01",
+      "title": { "en": "Masculine and feminine" },
+      "body": { "en": "Every Polish noun has a gender. A noun that ends in a consonant is usually masculine: brat, problem, numer. A noun that ends in -a is usually feminine: mama, siostra. A word for a man is masculine whatever its ending: tata." }
+    },
+    {
+      "id": "a1-u03-d05-t02",
+      "before": "a1-u03-d05-e08",
+      "title": { "en": "Mój and moja" },
+      "body": { "en": "\"My\" follows the gender of the noun, not of the person speaking. Mój goes with a masculine noun: mój brat, mój tata. Moja goes with a feminine noun: moja mama, moja siostra." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d05-e01",
+      "prompt": "mama",
+      "options": [
+        { "en": "mum" },
+        { "en": "dad" },
+        { "en": "we have" }
+      ],
+      "correctOption": 0,
+      "items": ["mama"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d05-e02",
+      "prompt": "tata",
+      "options": [
+        { "en": "mum" },
+        { "en": "a brother" },
+        { "en": "dad" }
+      ],
+      "correctOption": 2,
+      "items": ["tata"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d05-e03",
+      "text": "mama",
+      "distractors": ["tata", "masz"],
+      "items": ["mama"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d05-e04",
+      "prompt": { "en": "mum is here" },
+      "acceptedAnswers": ["mama jest tutaj", "tutaj jest mama", "mama tutaj jest"],
+      "distractors": ["tata", "są"],
+      "items": ["mama", "byc-jest", "tutaj"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d05-e05",
+      "prompt": "brat",
+      "options": [
+        { "en": "a brother" },
+        { "en": "a sister" },
+        { "en": "dad" }
+      ],
+      "correctOption": 0,
+      "items": ["brat"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d05-e06",
+      "prompt": "siostra",
+      "options": [
+        { "en": "a brother" },
+        { "en": "mum" },
+        { "en": "a sister" }
+      ],
+      "correctOption": 2,
+      "items": ["siostra"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d05-e07",
+      "acceptedAnswers": ["brat i siostra"],
+      "items": ["brat", "i", "siostra"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d05-e08",
+      "prompt": "mój",
+      "options": [
+        { "en": "my (with a masculine noun)" },
+        { "en": "my (with a feminine noun)" },
+        { "en": "I have" }
+      ],
+      "correctOption": 0,
+      "items": ["moj"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d05-e09",
+      "prompt": { "en": "this is my brother" },
+      "acceptedAnswers": ["to jest mój brat", "to mój brat"],
+      "distractors": ["moja", "siostra"],
+      "items": ["to", "byc-jest", "moj", "brat"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d05-e10",
+      "prompt": "moja",
+      "options": [
+        { "en": "my (with a masculine noun)" },
+        { "en": "mum" },
+        { "en": "my (with a feminine noun)" }
+      ],
+      "correctOption": 2,
+      "items": ["moja"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d05-e11",
+      "prompt": { "en": "this is my sister" },
+      "acceptedAnswers": ["to jest moja siostra", "to moja siostra"],
+      "distractors": ["mój", "brat"],
+      "items": ["to", "byc-jest", "moja", "siostra"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d05-e12",
+      "text": "mój tata",
+      "distractors": ["moja mama", "mój brat"],
+      "items": ["moj", "tata"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d05-e13",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "on",
+      "sentence": "Mój brat ___ na imię Adam.",
+      "sentenceMeaning": { "en": "My brother's first name is Adam." },
+      "acceptedAnswers": ["ma"],
+      "items": ["moj", "brat", "miec-ma", "na-imie", "adam"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d05-e14",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "on",
+      "sentence": "Moja siostra ___ dwanaście lat.",
+      "sentenceMeaning": { "en": "My sister is twelve years old." },
+      "acceptedAnswers": ["ma"],
+      "items": ["moja", "siostra", "miec-ma", "dwanascie", "lat"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u03-d05-e15",
+      "prompt": { "en": "my mum" },
+      "acceptedAnswers": ["moja mama"],
+      "items": ["moja", "mama"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d05-e16",
+      "acceptedAnswers": ["moja mama ma na imię Ewa"],
+      "items": ["moja", "mama", "miec-ma", "na-imie", "ewa"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d05-e17",
+      "prompt": { "en": "my dad speaks Polish" },
+      "acceptedAnswers": ["mój tata mówi po polsku"],
+      "distractors": ["moja", "mówię"],
+      "items": ["moj", "tata", "mowic-mowi", "po-polsku"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d05-e18",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "on",
+      "sentence": "Mój tata ___ z Polski, a moja mama jest z Anglii.",
+      "sentenceMeaning": { "en": "My dad is from Poland, and my mum is from England." },
+      "acceptedAnswers": ["jest"],
+      "items": ["moj", "tata", "byc-jest", "z-polski", "a", "moja", "mama", "z-anglii"]
+    }
+  ]
+}

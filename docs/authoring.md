@@ -36,6 +36,9 @@ A Daily Set has 15 to 18 Exercises and 6 to 8 new Items. With up to 8 Review Exe
 | here | tutaj, tu |
 | my name is | mam na imię, nazywam się, jestem (only where the prompt does not name the verb) |
 | what's your name? | jak masz na imię?, jak się nazywasz? |
+| mum | mama |
+| dad | tata |
+| how old are you? | ile masz lat?, ile lat masz? |
 
 ## Conventions since Unit 2
 
@@ -49,6 +52,17 @@ A Daily Set has 15 to 18 Exercises and 6 to 8 new Items. With up to 8 Review Exe
 - **Listening:** no `listen_type` on a bare one-syllable word (*i*, *a*, *on*, *są*, *ma*, *czy*): put it in a short sentence. *czy* is never a distractor for or against *trzy*. Never pair *Polką* with *Polka*, or *mówię* with a made-up *mówie* (rule 5). When the spoken text is a question, the wrong options carry the question mark too.
 - **No two conjugation Exercises have the same verb, person and sentence** (rule 10, and the Review needs variety): only one bare Exercise for each form.
 - **Every form of a verb is introduced on a day whose Tip shows that verb's table**, and is practised by a conjugation Exercise. `AuthoredContentTest` holds *być*, *mieć* and *mówić* to this.
+
+## Conventions since Unit 3
+
+- **Numbers count only years.** *Jeden* and *dwa* change with gender (*jedna siostra*, *dwie siostry*) and counted people need other forms (*dwóch braci*, *dwoje dzieci*). Until a Unit teaches that, a number is followed only by *rok*, *lata*, *lat*, *plus*, *to*, *jest*, another number, or nothing. *numer dziewięć* is the other honest use. `AuthoredContentTest` holds the content to this.
+- **A sum is accepted with *to*, *jest* and *to jest*:** *dwa plus dwa to cztery*, *dwa plus dwa jest cztery*, *dwa plus dwa to jest cztery*. Its tiles include *jest* so that all three can be built. A question about a sum is accepted as *ile to jest dwa plus sześć?*, *ile jest…?*, *ile to…?*, and as *dwa plus sześć to ile?*, *…to jest ile?*
+- **Age prompts read "X is N years old".** For one year, *on ma rok* comes first and *on ma jeden rok* is accepted. 2 to 4 take *lata*, 0 and 5 to 20 take *lat*; a test checks every number that stands before one of the three.
+- **Asking an age:** *ile lat ma twój syn?*, *ile ma lat twój syn?*, *ile twój syn ma lat?*, *ile ma twój syn lat?* and *twój syn ile ma lat?* are all accepted. The echo question *twój syn ma ile lat?* is not offered.
+- **English "your" always says "(one friend)"** and is *twój*, *twoja*, *twoje*. It is never used to *pan* or *pani*, whose word (*pana*, *pani*) is not taught yet.
+- **A possessive agrees with the noun after it**, and a test checks each one against the gender of its noun, so a new family noun has to be added to the lists in that test.
+- **No possessive before *brata*, *siostrę*, *syna*, *córkę*** (*mam mojego brata* needs a form that is not taught), and they stand only after a form of *mieć*, after *i*, or after *rodzeństwo*.
+- **Listening:** no `listen_type` on a bare one-syllable number or noun (*dwa*, *lat*, *brat*): use a run of three numbers or a sentence. *czy* is still never against *trzy*.
 
 ## How the Polish is checked
 

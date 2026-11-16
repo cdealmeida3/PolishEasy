@@ -109,22 +109,22 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `played one per day, Unit 1 has 0, 5, 6 then 8 Review Exercises a day, and every day of Unit 2 has 8`() {
+    fun `played one per day, Unit 1 has 0, 5, 6 then 8 Review Exercises a day, and every day of Units 2 and 3 has 8`() {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
-            listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7),
+            listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7) + listOf(7, 7, 6, 7, 6, 6, 6, 6),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
 
     @Test
-    fun `the course has 2 Units of 7 and 8 Daily Sets`() {
-        assertEquals(listOf(7, 8), course.levels.single().units.map { it.dailySets.size })
+    fun `the course has 3 Units of 7, 8 and 8 Daily Sets`() {
+        assertEquals(listOf(7, 8, 8), course.levels.single().units.map { it.dailySets.size })
     }
 
     @Test
@@ -334,6 +334,117 @@ class AuthoredContentTest {
                     checkTyped(form, exercise.acceptedAnswers),
                     "Exercise ${exercise.id} against the table of ${table.verb}",
                 )
+            }
+        }
+    }
+
+    // What Unit 3 (numbers and family) must hold.
+
+    /** Every text the course can speak, each as its lower-case words. Covers every Accepted Answer. */
+    private val spokenSentences: List<List<String>> =
+        allExercises.flatMap(::spoken).distinct().map { text -> words(text).map { it.lowercase(Locale.ROOT) } }
+
+    private val numbers = listOf(
+        "zero", "jeden", "dwa", "trzy", "cztery", "pięć", "sześć", "siedem", "osiem", "dziewięć", "dziesięć",
+        "jedenaście", "dwanaście", "trzynaście", "czternaście", "piętnaście", "szesnaście", "siedemnaście",
+        "osiemnaście", "dziewiętnaście", "dwadzieścia",
+    )
+    private val yearWords = setOf("rok", "lata", "lat")
+    private val formsOfMiec = setOf("mam", "masz", "ma", "mamy", "macie", "mają")
+
+    private fun dailySetIntroducing(text: String): DailySet {
+        val item = course.items.single { it.text == text }
+        return course.path.first { item in course.introducedIn(it) }
+    }
+
+    @Test
+    fun `each number from 0 to 20 is an Item that the Learner reads, hears and types`() {
+        numbers.forEach { number ->
+            val item = course.items.singleOrNull { it.text == number }
+            assertTrue(item != null, "$number is not the text of exactly one Item")
+            val practice = allExercises.filter { item!!.id in it.items }
+            assertTrue(practice.any { it is ChooseTranslation }, "$number is never read")
+            assertTrue(practice.any { it is ListenChoose || it is ListenType }, "$number is never heard")
+            assertTrue(practice.any { it is TypeAnswer || it is ListenType }, "$number is never typed")
+        }
+    }
+
+    @Test
+    fun `a number before rok, lata or lat is one that goes with it`() {
+        yearWords.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
+        assertTrue(
+            dailySetIntroducing("lata").tips.any { tip -> yearWords.all { it in lowerCaseWords(tip.body.getValue("en")) } },
+            "No Tip of the Daily Set that introduces lata names rok, lata and lat",
+        )
+
+        val counted = spokenSentences.flatMap { sentence ->
+            sentence.zipWithNext().filter { (number, word) -> number in numbers && word in yearWords }
+        }
+        counted.forEach { (number, word) ->
+            val right = when (number) {
+                "jeden" -> "rok"
+                "dwa", "trzy", "cztery" -> "lata"
+                else -> "lat"
+            }
+            assertEquals(right, word, "After $number")
+        }
+        assertEquals(yearWords, counted.map { it.second }.toSet())
+    }
+
+    @Test
+    fun `a number is never used to count anything but years`() {
+        val allowed = numbers + yearWords + listOf("plus", "to", "jest")
+        spokenSentences.forEach { sentence ->
+            sentence.zipWithNext().filter { (number, _) -> number in numbers }.forEach { (number, next) ->
+                assertTrue(next in allowed, "\"${sentence.joinToString(" ")}\" has $next after $number")
+            }
+        }
+    }
+
+    @Test
+    fun `mój, moja, moje, twój, twoja and twoje agree with the gender of the noun after them`() {
+        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas")
+        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina")
+        val neuter = setOf("dziecko", "pytanie", "rodzeństwo")
+        val possessives = mapOf(
+            "mój" to masculine, "twój" to masculine, "moja" to feminine, "twoja" to feminine, "moje" to neuter, "twoje" to neuter,
+        )
+        possessives.keys.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
+        assertTrue(
+            dailySetIntroducing("mój").tips.any { tip -> lowerCaseWords(tip.body.getValue("en")).containsAll(setOf("mój", "moja")) },
+            "No Tip of the Daily Set that introduces mój names mój and moja",
+        )
+
+        val used = mutableSetOf<String>()
+        spokenSentences.filter { it.size > 1 }.forEach { sentence ->
+            sentence.forEachIndexed { index, word ->
+                val nouns = possessives[word] ?: return@forEachIndexed
+                val noun = sentence.getOrNull(index + 1) ?: return@forEachIndexed
+                assertTrue(noun in nouns, "\"${sentence.joinToString(" ")}\" has $word before $noun")
+                used += word
+            }
+        }
+        assertEquals(possessives.keys, used)
+    }
+
+    @Test
+    fun `brata, siostrę, syna and córkę are only what someone has, and mieć is never negated with an object`() {
+        val had = setOf("brata", "siostrę", "syna", "córkę")
+        had.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
+        val fixedPhrases = listOf(listOf("nie", "ma", "za", "co"), listOf("nie", "ma", "sprawy"))
+
+        spokenSentences.forEach { sentence ->
+            val text = sentence.joinToString(" ")
+            sentence.forEachIndexed { index, word ->
+                if (word in had && sentence.size > 1) {
+                    val before = sentence.getOrNull(index - 1)
+                    assertTrue(before in formsOfMiec + listOf("i", "rodzeństwo"), "\"$text\" has $word after $before")
+                }
+                // "nie ma za co" and "nie ma sprawy" are fixed phrases of Unit 1, not someone who has nothing.
+                val fixedPhrase = fixedPhrases.any { phrase -> sentence.drop(index).take(phrase.size) == phrase }
+                if (word == "nie" && sentence.getOrNull(index + 1) in formsOfMiec && !fixedPhrase) {
+                    assertTrue(index + 2 >= sentence.size, "\"$text\" negates mieć with an object")
+                }
             }
         }
     }

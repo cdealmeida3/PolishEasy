@@ -1,0 +1,185 @@
+{
+  "id": "a1-u03-d03",
+  "tips": [
+    {
+      "id": "a1-u03-d03-t01",
+      "before": "a1-u03-d03-e01",
+      "title": { "en": "Mam … lat" },
+      "body": { "en": "In Polish you \"have\" years: mam dziesięć lat, \"I am ten\". To ask a friend: ile masz lat? Politely: ile pan ma lat? or ile pani ma lat?" }
+    },
+    {
+      "id": "a1-u03-d03-t02",
+      "before": "a1-u03-d03-e11",
+      "title": { "en": "Rok, lata, lat" },
+      "body": { "en": "The word for \"years\" depends on the number. 1 takes rok: on ma rok. 2, 3 and 4 take lata: trzy lata. From 5 to 20 it is lat, and that includes 12, 13 and 14: pięć lat, dwanaście lat." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d03-e01",
+      "prompt": "lat",
+      "options": [
+        { "en": "years (after 5 to 20: pięć lat)" },
+        { "en": "time" },
+        { "en": "how many; how much" }
+      ],
+      "correctOption": 0,
+      "items": ["lat"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d03-e02",
+      "prompt": { "en": "I am ten years old" },
+      "acceptedAnswers": ["mam dziesięć lat", "ja mam dziesięć lat"],
+      "distractors": ["ja", "masz"],
+      "items": ["miec-mam", "dziesiec", "lat"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d03-e03",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "ty",
+      "sentence": "Ile ___ lat?",
+      "sentenceMeaning": { "en": "How old are you? (one friend)" },
+      "acceptedAnswers": ["masz"],
+      "items": ["ile", "miec-masz", "lat"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d03-e04",
+      "text": "ile masz lat?",
+      "distractors": ["ile ma lat?", "ile mam lat?"],
+      "items": ["ile", "miec-masz", "lat"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d03-e05",
+      "prompt": "jedenaście",
+      "options": [
+        { "en": "twelve" },
+        { "en": "ten" },
+        { "en": "eleven" }
+      ],
+      "correctOption": 2,
+      "items": ["jedenascie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d03-e06",
+      "prompt": "dwanaście",
+      "options": [
+        { "en": "eleven" },
+        { "en": "twelve" },
+        { "en": "two" }
+      ],
+      "correctOption": 1,
+      "items": ["dwanascie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d03-e07",
+      "prompt": "trzynaście",
+      "options": [
+        { "en": "thirteen" },
+        { "en": "three" },
+        { "en": "twelve" }
+      ],
+      "correctOption": 0,
+      "items": ["trzynascie"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d03-e08",
+      "text": "dwanaście",
+      "distractors": ["jedenaście", "dziesięć"],
+      "items": ["dwanascie"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d03-e09",
+      "acceptedAnswers": ["jedenaście, dwanaście, trzynaście"],
+      "items": ["jedenascie", "dwanascie", "trzynascie"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d03-e10",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "on",
+      "sentence": "Adam ___ trzynaście lat.",
+      "sentenceMeaning": { "en": "Adam is thirteen years old." },
+      "acceptedAnswers": ["ma"],
+      "items": ["adam", "miec-ma", "trzynascie", "lat"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d03-e11",
+      "prompt": "lata",
+      "options": [
+        { "en": "years (after 2, 3 and 4: dwa lata)" },
+        { "en": "years (after 5 to 20: pięć lat)" },
+        { "en": "time" }
+      ],
+      "correctOption": 0,
+      "items": ["lata"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d03-e12",
+      "prompt": { "en": "Ewa is three years old" },
+      "acceptedAnswers": ["Ewa ma trzy lata"],
+      "distractors": ["lat", "rok"],
+      "items": ["ewa", "miec-ma", "trzy", "lata"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d03-e13",
+      "prompt": "rok",
+      "options": [
+        { "en": "years (after 2, 3 and 4: dwa lata)" },
+        { "en": "a year; one year" },
+        { "en": "years (after 5 to 20: pięć lat)" }
+      ],
+      "correctOption": 1,
+      "items": ["rok"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d03-e14",
+      "prompt": { "en": "he is one year old" },
+      "acceptedAnswers": ["on ma rok", "on ma jeden rok"],
+      "distractors": ["jeden", "lata"],
+      "items": ["on", "miec-ma", "rok"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d03-e15",
+      "text": "ona ma cztery lata",
+      "distractors": ["ona ma trzy lata", "on ma cztery lata"],
+      "items": ["ona", "miec-ma", "cztery", "lata"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u03-d03-e16",
+      "prompt": { "en": "I am twelve years old" },
+      "acceptedAnswers": ["mam dwanaście lat", "ja mam dwanaście lat"],
+      "items": ["miec-mam", "dwanascie", "lat"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d03-e17",
+      "acceptedAnswers": ["ile pan ma lat?"],
+      "items": ["ile", "pan", "miec-ma", "lat"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d03-e18",
+      "prompt": { "en": "I am eleven years old, and you? (one friend)" },
+      "acceptedAnswers": ["mam jedenaście lat, a ty?"],
+      "distractors": ["lata", "masz"],
+      "items": ["miec-mam", "jedenascie", "lat", "a-ty"]
+    }
+  ]
+}

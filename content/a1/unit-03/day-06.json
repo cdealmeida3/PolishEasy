@@ -1,0 +1,189 @@
+{
+  "id": "a1-u03-d06",
+  "tips": [
+    {
+      "id": "a1-u03-d06-t01",
+      "before": "a1-u03-d06-e01",
+      "title": { "en": "Twój and twoja" },
+      "body": { "en": "\"Your\", to a friend you call ty, works like mój and moja: twój brat, twoja siostra. To several people, or to someone you call pan or pani, Polish uses other words, which come in a later Unit." }
+    },
+    {
+      "id": "a1-u03-d06-t02",
+      "before": "a1-u03-d06-e05",
+      "title": { "en": "Syn, córka, mąż, żona" },
+      "body": { "en": "The endings tell you the gender. Syn and mąż end in a consonant: mój syn, mój mąż. Córka and żona end in -a: moja córka, moja żona. To ask an age: ile lat ma twój syn?" }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d06-e01",
+      "prompt": "twój",
+      "options": [
+        { "en": "your (one friend, with a masculine noun)" },
+        { "en": "my (with a masculine noun)" },
+        { "en": "your (one friend, with a feminine noun)" }
+      ],
+      "correctOption": 0,
+      "items": ["twoj"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d06-e02",
+      "prompt": "twoja",
+      "options": [
+        { "en": "my (with a feminine noun)" },
+        { "en": "your (one friend, with a feminine noun)" },
+        { "en": "your (one friend, with a masculine noun)" }
+      ],
+      "correctOption": 1,
+      "items": ["twoja"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d06-e03",
+      "prompt": { "en": "is this your brother? (to one friend)" },
+      "acceptedAnswers": ["czy to jest twój brat?", "to jest twój brat?", "czy to twój brat?", "to twój brat?"],
+      "distractors": ["twoja", "mój"],
+      "items": ["czy", "to", "byc-jest", "twoj", "brat"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d06-e04",
+      "text": "twoja siostra",
+      "distractors": ["moja siostra", "twoja mama"],
+      "items": ["twoja", "siostra"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d06-e05",
+      "prompt": "syn",
+      "options": [
+        { "en": "a son" },
+        { "en": "a daughter" },
+        { "en": "a brother" }
+      ],
+      "correctOption": 0,
+      "items": ["syn"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d06-e06",
+      "prompt": "córka",
+      "options": [
+        { "en": "a son" },
+        { "en": "a sister" },
+        { "en": "a daughter" }
+      ],
+      "correctOption": 2,
+      "items": ["corka"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d06-e07",
+      "prompt": { "en": "my son and my daughter" },
+      "acceptedAnswers": ["mój syn i moja córka", "moja córka i mój syn"],
+      "distractors": ["twój", "twoja"],
+      "items": ["moj", "syn", "i", "moja", "corka"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d06-e08",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "on",
+      "sentence": "Mój syn ___ rok.",
+      "sentenceMeaning": { "en": "My son is one year old." },
+      "acceptedAnswers": ["ma"],
+      "items": ["moj", "syn", "miec-ma", "rok"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d06-e09",
+      "acceptedAnswers": ["moja córka ma trzy lata"],
+      "items": ["moja", "corka", "miec-ma", "trzy", "lata"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d06-e10",
+      "prompt": "mąż",
+      "options": [
+        { "en": "a husband" },
+        { "en": "a wife" },
+        { "en": "a son" }
+      ],
+      "correctOption": 0,
+      "items": ["maz"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d06-e11",
+      "prompt": "żona",
+      "options": [
+        { "en": "a wife" },
+        { "en": "a husband" },
+        { "en": "a daughter" }
+      ],
+      "correctOption": 0,
+      "items": ["zona"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d06-e12",
+      "text": "to jest mój mąż",
+      "distractors": ["to jest moja żona", "to jest mój syn"],
+      "items": ["to", "byc-jest", "moj", "maz"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d06-e13",
+      "prompt": { "en": "this is my wife" },
+      "acceptedAnswers": ["to jest moja żona", "to moja żona"],
+      "distractors": ["mój", "mąż"],
+      "items": ["to", "byc-jest", "moja", "zona"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d06-e14",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "on",
+      "sentence": "Jak ___ na imię twoja żona?",
+      "sentenceMeaning": { "en": "What is your wife's first name? (to one friend)" },
+      "acceptedAnswers": ["ma"],
+      "items": ["jak", "miec-ma", "na-imie", "twoja", "zona"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d06-e15",
+      "prompt": { "en": "how old is your son? (to one friend)" },
+      "acceptedAnswers": ["ile lat ma twój syn?", "ile ma lat twój syn?", "ile twój syn ma lat?", "ile ma twój syn lat?", "twój syn ile ma lat?"],
+      "distractors": ["twoja", "rok"],
+      "items": ["ile", "lat", "miec-ma", "twoj", "syn"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u03-d06-e16",
+      "prompt": { "en": "my husband" },
+      "acceptedAnswers": ["mój mąż"],
+      "items": ["moj", "maz"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d06-e17",
+      "acceptedAnswers": ["czy twój mąż jest z Polski?"],
+      "items": ["czy", "twoj", "maz", "byc-jest", "z-polski"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d06-e18",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "on",
+      "sentence": "Twoja córka ___ tutaj.",
+      "sentenceMeaning": { "en": "Your daughter is here. (to one friend)" },
+      "acceptedAnswers": ["jest"],
+      "items": ["twoja", "corka", "byc-jest", "tutaj"]
+    }
+  ]
+}
