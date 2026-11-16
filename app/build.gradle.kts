@@ -30,14 +30,18 @@ android {
             keyAlias = "androiddebugkey"
             keyPassword = "android"
         }
-        // The upload keystore is committed too, so every build publishes a signed release
-        // with no secrets to set up. Anyone who can read the repository can read this key:
-        // replace it before the repository is ever made public (docs/release.md).
-        create("release") {
-            storeFile = file("upload.keystore")
-            storePassword = "I8GJe5U8XyqVihF7ApIu"
-            keyAlias = "upload"
-            keyPassword = "I8GJe5U8XyqVihF7ApIu"
+        // The upload key is never committed. CI writes it from the repository's Actions
+        // secrets and passes it in through these variables (docs/release.md). Without
+        // them the release build is unsigned.
+        val releaseKeystore = System.getenv("RELEASE_KEYSTORE_FILE")?.takeIf { it.isNotBlank() }
+        if (releaseKeystore != null) {
+            val releaseStorePassword = System.getenv("RELEASE_KEYSTORE_PASSWORD")
+            create("release") {
+                storeFile = file(releaseKeystore)
+                storePassword = releaseStorePassword
+                keyAlias = System.getenv("RELEASE_KEY_ALIAS") ?: "upload"
+                keyPassword = System.getenv("RELEASE_KEY_PASSWORD") ?: releaseStorePassword
+            }
         }
     }
 
@@ -51,7 +55,7 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = signingConfigs.getByName("release")
+            signingConfig = signingConfigs.findByName("release")
         }
     }
 
