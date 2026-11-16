@@ -3,6 +3,10 @@
     {
       "problem": "grammar: PODMIOT_ORZECZENIE: to Adam, jest z Polski",
       "reason": "False alarm. The rule reads the comma as standing between a subject and its verb, but \"to Adam\" is a whole clause (\"this is Adam\") and \"jest z Polski\" is a second one with the pronoun left out, so the comma joins two clauses. The independent review had no finding on the sentence."
+    },
+    {
+      "problem": "dictionary: dzi",
+      "reason": "Not a word and not meant as one. The Tip on ź and dź marks \"zi\" and \"dzi\" as the Polish spellings of those sounds before a vowel; \"dzi\" is three letters long, so the dictionary pass takes it for a word."
     }
   ]
 }

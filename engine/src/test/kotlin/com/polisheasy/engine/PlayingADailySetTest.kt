@@ -24,7 +24,7 @@ class PlayingADailySetTest {
 
         assertEquals(
             Step.ShowTip(
-                TipView(title = "Saying hello", body = "Cześć is an informal hello."),
+                TipView(title = "Saying hello", body = "Cześć is an informal hello.", polish = listOf(0..4)),
                 SetProgress(correct = 0, total = 3),
             ),
             step,

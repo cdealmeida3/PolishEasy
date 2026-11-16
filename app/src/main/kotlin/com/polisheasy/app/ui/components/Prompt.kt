@@ -24,6 +24,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
 import com.polisheasy.app.ui.theme.Size
+import androidx.compose.ui.text.AnnotatedString
 
 /** A Polish prompt up to this long is a word or two, and is set largest. One longer than [SHORT_PROMPT_LETTERS] uses the smallest prompt style. */
 private const val WORD_PROMPT_LETTERS = 12
@@ -31,10 +32,10 @@ private const val SHORT_PROMPT_LETTERS = 20
 
 /**
  * A Tip's prose in bites: the [lead], the one thing to take away, set apart, and under it each of
- * the [points] on a line of its own.
+ * the [points] on a line of its own. The Polish in them comes already set apart (`withPolish`).
  */
 @Composable
-fun TipPoints(lead: String, points: List<String>, modifier: Modifier = Modifier) {
+fun TipPoints(lead: AnnotatedString, points: List<AnnotatedString>, modifier: Modifier = Modifier) {
     val scheme = MaterialTheme.colorScheme
     Column(modifier = modifier) {
         Text(lead, style = MaterialTheme.typography.titleMedium, color = scheme.onSurface)

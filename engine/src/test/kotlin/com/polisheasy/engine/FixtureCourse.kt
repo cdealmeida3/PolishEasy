@@ -35,13 +35,13 @@ object FixtureCourse {
                   "id": "a1-u01-d01-t01",
                   "before": "a1-u01-d01-e01",
                   "title": { "en": "Saying hello" },
-                  "body": { "en": "Cześć is an informal hello." }
+                  "body": { "en": "*Cześć* is an informal hello." }
                 },
                 {
                   "id": "a1-u01-d01-t02",
                   "before": "a1-u01-d01-e03",
                   "title": { "en": "Saying thank you" },
-                  "body": { "en": "Dziękuję means thank you." }
+                  "body": { "en": "*Dziękuję* means thank you." }
                 }
               ],
               "exercises": [

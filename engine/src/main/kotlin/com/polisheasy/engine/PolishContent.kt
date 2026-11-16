@@ -11,8 +11,11 @@ data class PolishSentence(val text: String, val meaning: String?, val uses: List
 /** The content's claim that [form] is the form of [verb] for [person]. */
 data class VerbForm(val verb: String, val person: Person, val form: String, val uses: List<PolishUse>)
 
-/** A Tip as the Learner reads it. [text] is its title, its body and its table's forms, one per line. */
-data class TipText(val file: String, val id: String, val text: String)
+/**
+ * A Tip as the Learner reads it. [text] is its title, its body without its marks and its table's
+ * forms, one per line. [polish] is each stretch of the body that is marked as Polish.
+ */
+data class TipText(val file: String, val id: String, val text: String, val polish: List<String> = emptyList())
 
 /** Every Polish text in the Authored Content, for the Polish check. */
 class PolishContent(
@@ -115,9 +118,11 @@ fun polishContent(files: ContentFiles): PolishContent {
         verbForms = claims.map { (key, uses) -> VerbForm(key.first, key.second, key.third, uses) },
         tips = content.dailySets.flatMap { (file, dailySet) ->
             dailySet.tips.map { tip ->
-                val lines = listOf(tip.title[language].orEmpty(), tip.body[language].orEmpty()) +
+                // The marks are not part of what is read, so marking a Tip does not send it back to review.
+                val body = readPolishMarks(tip.body[language].orEmpty())
+                val lines = listOf(tip.title[language].orEmpty(), body.text) +
                     tip.conjugation?.let { table -> Person.entries.mapNotNull { table.forms[it] } }.orEmpty()
-                TipText(file, tip.id, lines.joinToString("\n") { it.trim() })
+                TipText(file, tip.id, lines.joinToString("\n") { it.trim() }, polish = body.polish.map { body.text.substring(it) })
             }
         },
         unreadable = content.unreadable,

@@ -76,8 +76,13 @@ data class StepProgress(val done: Int, val total: Int)
 /** A Unit the Learner has just completed: its number in its Level, from 1, and its title. */
 data class UnitCompletedView(val number: Int, val title: String)
 
-/** A Tip as the Learner sees it, in the Base Language. */
-data class TipView(val title: String, val body: String, val conjugation: ConjugationTableView? = null)
+/** A Tip as the Learner sees it, in the Base Language. [polish] is where in [body] the Polish is, so it can be set apart. */
+data class TipView(
+    val title: String,
+    val body: String,
+    val conjugation: ConjugationTableView? = null,
+    val polish: List<IntRange> = emptyList(),
+)
 
 /** A verb's forms for every person, in the usual order. */
 data class ConjugationTableView(val verb: String, val meaning: String, val rows: List<ConjugationRow>)
@@ -588,17 +593,21 @@ class CourseEngine(
     private fun clipOf(exercise: Exercise, text: String): ClipView =
         checkNotNull(course.clipFor(text)) { "Exercise ${exercise.id} has no Clip for \"$text\"" }
 
-    private fun view(tip: Tip): TipView = TipView(
-        title = localize(tip.title),
-        body = localize(tip.body),
-        conjugation = tip.conjugation?.let { table ->
-            ConjugationTableView(
-                verb = table.verb,
-                meaning = localize(table.meaning),
-                rows = Person.entries.map { ConjugationRow(it, table.forms.getValue(it)) },
-            )
-        },
-    )
+    private fun view(tip: Tip): TipView {
+        val body = readPolishMarks(localize(tip.body))
+        return TipView(
+            title = localize(tip.title),
+            body = body.text,
+            conjugation = tip.conjugation?.let { table ->
+                ConjugationTableView(
+                    verb = table.verb,
+                    meaning = localize(table.meaning),
+                    rows = Person.entries.map { ConjugationRow(it, table.forms.getValue(it)) },
+                )
+            },
+            polish = body.polish,
+        )
+    }
 
     /** [reading] when a listening Exercise was shown in its reading form, where a listen-and-type one also takes its reading answers. */
     private fun check(exercise: Exercise, answer: Answer, reading: Boolean): Feedback = when (exercise) {
