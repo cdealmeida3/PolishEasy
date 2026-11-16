@@ -24,7 +24,19 @@ class Settings(context: Context) {
         get() = preferences.getBoolean(SOUND_ON, true)
         set(value) = preferences.edit().putBoolean(SOUND_ON, value).apply()
 
+    /** Whether the Learner has been through the welcome, which is shown once, before the first Daily Set. */
+    var welcomed: Boolean
+        get() = preferences.getBoolean(WELCOMED, false)
+        set(value) = preferences.edit().putBoolean(WELCOMED, value).apply()
+
+    /** Whether a Summary has offered the Reminder. It offers it once and never again. */
+    var reminderOffered: Boolean
+        get() = preferences.getBoolean(REMINDER_OFFERED, false)
+        set(value) = preferences.edit().putBoolean(REMINDER_OFFERED, value).apply()
+
     private companion object {
+        const val WELCOMED = "welcomed"
+        const val REMINDER_OFFERED = "reminder_offered"
         const val SOUND_ON = "sound_on"
         const val REMINDER_ENABLED = "reminder_enabled"
         const val REMINDER_MINUTES = "reminder_minutes"

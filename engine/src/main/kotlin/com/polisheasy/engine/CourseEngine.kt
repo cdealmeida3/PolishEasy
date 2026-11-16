@@ -205,6 +205,26 @@ class CourseEngine(
      */
     fun thisWeek(): List<DayView> = weekOf(LocalDate.now(clock), completionDays())
 
+    /**
+     * What the Learner has built up so far. A Replay records nothing, so it changes none of it, and
+     * a Review-only Daily Set counts as a Daily Set and teaches no new word.
+     */
+    fun soFar(): SoFarView {
+        val completed = progress.completedDailySets().keys
+        return SoFarView(
+            wordsLearned = course.path.filter { it.id in completed }.flatMap { it.itemIds() }.distinct().count { it in course.itemsById },
+            dailySetsCompleted = course.path.count { it.id in completed } + progress.reviewOnlyDays().size,
+            longestStreak = longestStreakIn(completionDays()),
+        )
+    }
+
+    /** The Daily Set on the Path that was completed today, which Home offers to replay, or null when there is none. */
+    fun completedToday(): String? {
+        val today = LocalDate.now(clock)
+        val completed = progress.completedDailySets()
+        return course.path.lastOrNull { completed[it.id] == today }?.id
+    }
+
     /** Every calendar day on which a new or Review-only Daily Set was completed. */
     private fun completionDays(): Set<LocalDate> = progress.completedDailySets().values.toSet() + progress.reviewOnlyDays()
 

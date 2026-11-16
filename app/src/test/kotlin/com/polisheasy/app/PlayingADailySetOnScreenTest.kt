@@ -1,5 +1,8 @@
 package com.polisheasy.app
 
+import kotlin.test.assertTrue
+import androidx.compose.ui.test.performScrollTo
+import android.Manifest
 import android.app.Application
 import android.content.ComponentName
 import android.provider.Settings
@@ -56,6 +59,8 @@ class PlayingADailySetOnScreenTest {
     val hostActivity = object : ExternalResource() {
         override fun before() {
             shadowOf(app.packageManager).addActivityIfNotPresent(ComponentName(app, ComponentActivity::class.java))
+            // The welcome is shown once; these tests start after it, except the one about it.
+            Settings(app).welcomed = true
         }
     }
 
@@ -127,8 +132,8 @@ class PlayingADailySetOnScreenTest {
         showsFirstTry(6, 6)
         shows(R.string.summary_items_learned)
         showsStreakRaised(to = 1)
-        shows("dziękuję")
-        shows("thank you")
+        screen.onNodeWithText("dziękuję").performScrollTo().assertIsDisplayed()
+        screen.onNodeWithText("thank you").performScrollTo().assertIsDisplayed()
         tap(R.string.summary_back_home)
 
         shows(doneForToday())
@@ -346,6 +351,70 @@ class PlayingADailySetOnScreenTest {
     }
 
     @Test
+    fun `a new Learner is welcomed once and goes straight into the first Daily Set`() {
+        Settings(app).welcomed = false
+        openApp()
+        shows(R.string.welcome_title)
+        tap(R.string.welcome_start)
+        shows(R.string.tip_label)
+
+        // Left part of the way, the app opens on Home from then on.
+        back()
+        shows(R.string.home_streak_start_title)
+        closeAndOpenApp()
+        shows(R.string.home_streak_start_title)
+        absent(R.string.welcome_title)
+    }
+
+    @Test
+    fun `Home counts nothing on day one, and what was built up once a Daily Set is completed`() {
+        openApp()
+        shows(R.string.home_streak_start_title)
+        absent(R.string.home_so_far)
+        absent(R.string.streak_title)
+
+        tap(R.string.home_start)
+        playDailySetOne()
+        tap(R.string.summary_back_home)
+
+        showsStreakOnHome(1)
+        shows(R.string.home_so_far)
+        screen.onNodeWithContentDescription(app.resources.getQuantityString(R.plurals.home_so_far_sets, 1, 1)).assertExists()
+        screen.onNodeWithContentDescription(app.resources.getQuantityString(R.plurals.home_so_far_streak, 1, 1)).assertExists()
+    }
+
+    @Test
+    fun `the first Summary offers the Reminder once, and taking it turns it on`() {
+        shadowOf(app).grantPermissions(Manifest.permission.POST_NOTIFICATIONS)
+        openApp()
+        tap(R.string.home_start)
+        playDailySetOne()
+
+        screen.onNodeWithText(text(R.string.summary_reminder_action)).performScrollTo().performClick()
+        absent(R.string.summary_reminder_action)
+        assertTrue(Settings(app).reminderEnabled)
+        // It is offered once: no later Summary asks again.
+        assertTrue(Settings(app).reminderOffered)
+    }
+
+    @Test
+    fun `today's Daily Set can be replayed from Home, which the Replay comes back to`() {
+        openApp()
+        tap(R.string.home_start)
+        playDailySetOne()
+        tap(R.string.summary_back_home)
+
+        tap(R.string.home_replay_today)
+        shows(R.string.tip_label)
+        playDailySetOne()
+        shows(R.string.summary_replay_title)
+        noStreakRaised()
+        tap(R.string.summary_back_path)
+        shows(R.string.home_done_title)
+        showsStreakOnHome(1)
+    }
+
+    @Test
     fun `the Summary celebrates with confetti that falls once and is gone`() {
         openApp()
         tap(R.string.home_start)
@@ -504,6 +573,11 @@ class PlayingADailySetOnScreenTest {
     }
 
     private fun absent(id: Int) = screen.onNodeWithText(text(id)).assertDoesNotExist()
+
+    private fun showsStreakOnHome(streak: Int) {
+        val words = app.resources.getQuantityString(R.plurals.home_streak, streak, streak)
+        screen.onNodeWithContentDescription(words, substring = true).assertIsDisplayed()
+    }
 
     private fun showsStreakRaised(to: Int) {
         screen.onNodeWithContentDescription(app.resources.getQuantityString(R.plurals.home_streak, to, to)).assertIsDisplayed()

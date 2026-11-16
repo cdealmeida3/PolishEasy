@@ -25,9 +25,13 @@ import java.io.File
 import java.time.Clock
 import java.time.LocalTime
 import com.polisheasy.engine.ClipView
+import com.polisheasy.engine.SoFarView
 
 /** What the app is showing. Every rule behind it lives in the course engine. */
 sealed interface Screen {
+    /** The welcome a new Learner sees once, before their first Daily Set. */
+    data object Welcome : Screen
+
     /**
      * [week] is this calendar week, Monday to Sunday. [next] is where the Learner is
      * on the Path, or null once every Daily Set released so far is completed.
@@ -39,6 +43,10 @@ sealed interface Screen {
         val next: NextDailySetView?,
         /** Set when the Learner has just come back from the Daily Set that raised the Streak from this number. */
         val streakRaisedFrom: Int? = null,
+        /** What the Learner has built up so far. */
+        val soFar: SoFarView = SoFarView(0, 0, 0),
+        /** Whether a Daily Set of the Path was completed today, which can be replayed from here. */
+        val replayToday: Boolean = false,
     ) : Screen
 
     data class Path(val path: PathView) : Screen
@@ -87,8 +95,13 @@ sealed interface Screen {
         val streakRaised: StreakRaised? = null,
         /** This calendar week, Monday to Sunday, for the Streak's dots. */
         val week: List<DayView> = emptyList(),
+        /** The Reminder as this Summary offers it, or null when it does not: it is offered once, while it is off. */
+        val reminder: ReminderOffer? = null,
     ) : Screen
 }
+
+/** The Reminder offered on a Summary: the [time] it would come at, and whether the Learner has taken it [on]. */
+data class ReminderOffer(val time: LocalTime, val on: Boolean = false)
 
 /** The Streak going up as a Daily Set is completed: what it was and what it is now. */
 data class StreakRaised(val from: Int, val to: Int)
@@ -111,8 +124,11 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
 
     private val settings = Settings(application)
 
-    var screen: Screen by mutableStateOf(home())
+    var screen: Screen by mutableStateOf(firstScreen())
         private set
+
+    /** Whether the Replay being played was started from Home, where it then goes back to. */
+    private var replayFromHome = false
 
     private var stepsShown = 0
 
@@ -121,13 +137,29 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
 
     fun startDailySet() = show(engine.startDailySet(sound = settings.soundOn))
 
+    /** "Start" on the welcome: it is not shown again, and the Learner goes straight into their first Daily Set. */
+    fun startFromWelcome() {
+        settings.welcomed = true
+        startDailySet()
+    }
+
     fun resumeDailySet() = show(engine.resumeDailySet(sound = settings.soundOn))
 
     fun openPath() {
         screen = Screen.Path(engine.path())
     }
 
-    fun replay(dailySetId: String) = show(engine.startReplay(dailySetId, sound = settings.soundOn))
+    fun replay(dailySetId: String) {
+        replayFromHome = false
+        show(engine.startReplay(dailySetId, sound = settings.soundOn))
+    }
+
+    /** Home's "Replay today's Daily Set": the one completed today, again, counting for nothing. */
+    fun replayToday() {
+        val dailySetId = engine.completedToday() ?: return
+        replayFromHome = true
+        show(engine.startReplay(dailySetId, sound = settings.soundOn))
+    }
 
     /** Today's Daily Set tapped on the Path: started or continued, as from Home. */
     fun openTodays() = when (val today = engine.today()) {
@@ -146,6 +178,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
             else -> false
         }
         when {
+            replay && replayFromHome -> backToHome()
             replay -> openPath()
             // Home shows the Streak go up once more, as the Learner arrives from the Summary that raised it.
             current is Screen.Summary -> screen = home().copy(streakRaisedFrom = current.streakRaised?.from)
@@ -168,6 +201,15 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
         settings.reminderTime = time
         Reminder.arm(getApplication())
         screen = settingsScreen()
+    }
+
+    /** "Remind me" on the Summary that offers the Reminder: it is turned on at the time it has, and the Summary says so. */
+    fun acceptReminder() {
+        val summary = screen as? Screen.Summary ?: return
+        val offer = summary.reminder ?: return
+        settings.reminderEnabled = true
+        Reminder.arm(getApplication())
+        screen = summary.copy(reminder = offer.copy(on = true))
     }
 
     /** Turns sound on or off. It takes effect when a Daily Set is next started, continued or replayed. */
@@ -222,7 +264,27 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
         screen = home()
     }
 
-    private fun home() = Screen.Home(engine.today(), engine.streak(), engine.thisWeek(), engine.nextDailySet())
+    /** A Learner who has done nothing yet is welcomed first, once. */
+    private fun firstScreen(): Screen {
+        val new = !settings.welcomed && engine.today() == Today.DailySetAvailable && engine.soFar().dailySetsCompleted == 0
+        return if (new) Screen.Welcome else home()
+    }
+
+    private fun home() = Screen.Home(
+        engine.today(),
+        engine.streak(),
+        engine.thisWeek(),
+        engine.nextDailySet(),
+        soFar = engine.soFar(),
+        replayToday = engine.completedToday() != null,
+    )
+
+    /** The Reminder for a Summary to offer: once, at the end of a Daily Set that counted, while it is off. */
+    private fun reminderOffer(replay: Boolean): ReminderOffer? {
+        if (replay || settings.reminderEnabled || settings.reminderOffered) return null
+        settings.reminderOffered = true
+        return ReminderOffer(settings.reminderTime)
+    }
 
     private fun settingsScreen() = Screen.Settings(
         reminderEnabled = settings.reminderEnabled,
@@ -253,6 +315,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
                 step.replay,
                 streakRaised = streakRaised.takeUnless { step.replay },
                 week = engine.thisWeek(),
+                reminder = reminderOffer(step.replay),
             ).also { streakRaised = null }
         }
     }

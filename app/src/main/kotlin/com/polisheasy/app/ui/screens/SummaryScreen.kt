@@ -38,6 +38,20 @@ import com.polisheasy.app.ui.theme.inPolish
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.DayView
 import com.polisheasy.engine.ItemView
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.platform.LocalContext
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
+import com.polisheasy.app.ReminderOffer
+import com.polisheasy.app.ui.components.OfferCard
 
 /** The Streaks that get a bigger celebration, once each: a week, a month and a hundred days. */
 private val MILESTONES = mapOf(
@@ -50,7 +64,8 @@ private val MILESTONES = mapOf(
  * The end of a Daily Set, as a celebration and not a grade: a cheer in Polish, the Streak it
  * raised as the hero with [week]'s days, then the score and the new words as small facts, and what
  * was learned, each word with its speaker when [clipOf] has a Clip for it. A Replay raises no
- * Streak, lists no Items and gets no confetti.
+ * Streak, lists no Items and gets no confetti. With [reminder] the Summary offers the Reminder,
+ * here where the Learner has a reason to want one; [onRemind] takes it.
  */
 @Composable
 internal fun SummaryScreen(
@@ -64,7 +79,16 @@ internal fun SummaryScreen(
     clipOf: (String) -> ClipView?,
     onPlay: (ClipView) -> Unit,
     onDone: () -> Unit,
+    reminder: ReminderOffer? = null,
+    onRemind: () -> Unit = {},
 ) {
+    val context = LocalContext.current
+    // Whether the Learner refused the permission here, so the offer can say where to turn it on later.
+    var refused by rememberSaveable { mutableStateOf(false) }
+    val askPermission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
+        refused = !granted
+        if (granted) onRemind()
+    }
     val haptics = rememberAnswerHaptics()
     LaunchedEffect(Unit) { haptics.finished() }
     val milestone = streakRaised?.let { MILESTONES[it.to] }
@@ -156,6 +180,34 @@ internal fun SummaryScreen(
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         textAlign = TextAlign.Center,
                     )
+                }
+                if (reminder != null) {
+                    Spacer(Modifier.height(Space.m))
+                    val time = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).format(reminder.time)
+                    when {
+                        reminder.on -> OfferCard(
+                            R.drawable.ic_notifications,
+                            stringResource(R.string.summary_reminder_on_title, time),
+                            stringResource(R.string.summary_reminder_on_note),
+                        )
+                        refused -> OfferCard(
+                            R.drawable.ic_notifications,
+                            stringResource(R.string.summary_reminder_refused_title),
+                            stringResource(R.string.summary_reminder_refused_note),
+                        )
+                        else -> OfferCard(
+                            R.drawable.ic_notifications,
+                            stringResource(R.string.summary_reminder_title),
+                            stringResource(R.string.summary_reminder_note, time),
+                            action = stringResource(R.string.summary_reminder_action),
+                            onAction = {
+                                val mustAsk = Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+                                    context.checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) !=
+                                    PackageManager.PERMISSION_GRANTED
+                                if (mustAsk) askPermission.launch(Manifest.permission.POST_NOTIFICATIONS) else onRemind()
+                            },
+                        )
+                    }
                 }
                 if (itemsLearned.isNotEmpty()) {
                     Spacer(Modifier.height(Space.l))

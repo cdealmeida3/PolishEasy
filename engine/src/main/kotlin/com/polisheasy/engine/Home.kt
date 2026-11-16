@@ -6,10 +6,22 @@ import java.time.temporal.TemporalAdjusters
 
 /**
  * One calendar day as Home shows it. [completed] when a new or Review-only Daily Set was completed
- * on it. [today] for the day it is now, and [upcoming] for a day still to come, which is never a
- * day missed.
+ * on it. [today] for the day it is now, [upcoming] for a day still to come, and [beforeStart] for a
+ * day before the Learner's first completed one. Neither of those two is ever a day missed.
  */
-data class DayView(val date: LocalDate, val completed: Boolean, val today: Boolean = false, val upcoming: Boolean = false)
+data class DayView(
+    val date: LocalDate,
+    val completed: Boolean,
+    val today: Boolean = false,
+    val upcoming: Boolean = false,
+    val beforeStart: Boolean = false,
+)
+
+/**
+ * What the Learner has built up so far, in numbers that only ever go up: the Items of the Daily
+ * Sets they completed, how many Daily Sets that is, new and Review-only, and their longest Streak.
+ */
+data class SoFarView(val wordsLearned: Int, val dailySetsCompleted: Int, val longestStreak: Int)
 
 /**
  * Where the Learner is on the Path: the first Daily Set not yet completed, whether it can be
@@ -28,7 +40,9 @@ data class NextDailySetView(
 /** The calendar week [today] is in, Monday to Sunday, each day with whether it is among [completionDays]. */
 internal fun weekOf(today: LocalDate, completionDays: Set<LocalDate>): List<DayView> {
     val monday = today.with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY))
+    // Until a first day is completed, the Learner starts today.
+    val start = completionDays.minOrNull() ?: today
     return (0L..6L).map { monday.plusDays(it) }.map { day ->
-        DayView(day, completed = day in completionDays, today = day == today, upcoming = day > today)
+        DayView(day, completed = day in completionDays, today = day == today, upcoming = day > today, beforeStart = day < start)
     }
 }

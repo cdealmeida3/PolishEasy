@@ -31,6 +31,12 @@ import com.polisheasy.engine.Today
 import java.time.format.TextStyle
 import java.util.Locale
 import com.polisheasy.app.ui.components.Arriving
+import com.polisheasy.engine.SoFarView
+import com.polisheasy.app.ui.components.StreakStartCard
+import com.polisheasy.app.ui.components.QuietButton
+import com.polisheasy.app.ui.components.StatRow
+import com.polisheasy.app.ui.components.StatTile
+import com.polisheasy.app.ui.components.Instruction
 
 /**
  * Home: a greeting, the Streak with this week's days, and what today holds. [next] is where the
@@ -38,6 +44,8 @@ import com.polisheasy.app.ui.components.Arriving
  * [today] can be has its own card: ready, in progress, done for today, and the Review-only ones.
  * With [streakRaisedFrom] the Learner has just come back from the Daily Set that raised the Streak
  * from that number, and Home shows it happen: the number rolls, today's dot fills in.
+ * Under the cards is [soFar], what the Learner has built up, once there is something to count; and
+ * with [onReplayToday] the done state offers today's Daily Set again.
  */
 @Composable
 internal fun HomeScreen(
@@ -47,7 +55,9 @@ internal fun HomeScreen(
     next: NextDailySetView?,
     onStart: () -> Unit,
     onContinue: () -> Unit,
+    soFar: SoFarView,
     streakRaisedFrom: Int? = null,
+    onReplayToday: (() -> Unit)? = null,
 ) {
     val done = today is Today.DoneForToday
     ScreenFrame {
@@ -78,7 +88,12 @@ internal fun HomeScreen(
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
             Spacer(Modifier.height(Space.l))
-            Streak(streak, week, today, streakRaisedFrom)
+            if (soFar.dailySetsCompleted == 0 && today !is Today.AllCompleted) {
+                // Day one: nothing to count yet, so nothing is counted. No zero, no empty week.
+                StreakStartCard(stringResource(R.string.home_streak_start_title), stringResource(R.string.home_streak_start_note))
+            } else {
+                Streak(streak, week, today, streakRaisedFrom)
+            }
             Spacer(Modifier.height(Space.m))
             when (today) {
                 Today.DailySetAvailable -> NextDailySet(next, R.string.home_today, highlighted = true) {
@@ -113,6 +128,10 @@ internal fun HomeScreen(
                     Arriving(play = streakRaisedFrom != null) {
                         TodayCard(stringResource(R.string.home_done_title), done = true) {
                             CardNote(stringResource(message))
+                            if (onReplayToday != null) {
+                                Spacer(Modifier.height(Space.xs))
+                                QuietButton(stringResource(R.string.home_replay_today), onReplayToday)
+                            }
                         }
                     }
                     if (next != null) {
@@ -124,17 +143,49 @@ internal fun HomeScreen(
                     CardNote(stringResource(R.string.home_all_completed))
                 }
             }
+            if (soFar.dailySetsCompleted > 0) {
+                Spacer(Modifier.height(Space.l))
+                SoFar(soFar)
+            }
+            Spacer(Modifier.height(Space.m))
         }
     }
 }
 
-/** A week's days as the Streak's dots show them, each with two letters of its weekday so that no two look the same. */
+/** What the Learner has built up: the words, the Daily Sets and the longest Streak. They only ever go up. */
+@Composable
+private fun SoFar(soFar: SoFarView) {
+    Instruction(stringResource(R.string.home_so_far), modifier = Modifier.semantics { heading() })
+    Spacer(Modifier.height(Space.xs))
+    val facts = listOf(
+        Triple(soFar.wordsLearned, R.plurals.home_so_far_words_label, R.plurals.home_so_far_words),
+        Triple(soFar.dailySetsCompleted, R.plurals.home_so_far_sets_label, R.plurals.home_so_far_sets),
+        Triple(soFar.longestStreak, R.plurals.home_so_far_streak_label, R.plurals.home_so_far_streak),
+    )
+    StatRow(
+        tiles = facts.map { (count, label, sentence) ->
+            { modifier ->
+                StatTile(
+                    value = count.toString(),
+                    label = pluralStringResource(label, count),
+                    description = pluralStringResource(sentence, count, count),
+                    modifier = modifier,
+                )
+            }
+        },
+    )
+}
+
+/**
+ * A week's days as the Streak's dots show them, each with two letters of its weekday so that no
+ * two look the same. A day before the Learner's first is drawn like one still to come: never as missed.
+ */
 internal fun weekDays(week: List<DayView>): List<WeekDay> = week.map { day ->
     WeekDay(
         label = day.date.dayOfWeek.getDisplayName(TextStyle.SHORT, Locale.getDefault()).take(2),
         completed = day.completed,
         today = day.today,
-        upcoming = day.upcoming,
+        upcoming = day.upcoming || day.beforeStart,
     )
 }
 

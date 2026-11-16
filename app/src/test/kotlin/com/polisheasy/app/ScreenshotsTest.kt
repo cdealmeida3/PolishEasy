@@ -1,5 +1,6 @@
 package com.polisheasy.app
 
+import com.polisheasy.engine.SoFarView
 import android.app.Application
 import android.content.ComponentName
 import android.content.res.Configuration
@@ -89,6 +90,8 @@ class ScreenshotsTest {
     val hostActivity = object : ExternalResource() {
         override fun before() {
             shadowOf(app.packageManager).addActivityIfNotPresent(ComponentName(app, ComponentActivity::class.java))
+            // The welcome is shown once; the tour shows it and then starts after it.
+            Settings(app).welcomed = true
         }
     }
 
@@ -222,7 +225,16 @@ class ScreenshotsTest {
                             selected = 0,
                             onSelect = {},
                         ) {
-                            HomeScreen(today, streak = if (done) 5 else 4, week = week(today = done), next = position, onStart = {}, onContinue = {})
+                            HomeScreen(
+                                today,
+                                streak = if (done) 5 else 4,
+                                week = week(today = done),
+                                next = position,
+                                onStart = {},
+                                onContinue = {},
+                                soFar = SoFarView(wordsLearned = 58, dailySetsCompleted = if (done) 12 else 11, longestStreak = 9),
+                                onReplayToday = if (done && position != null) ({}) else null,
+                            )
                         }
                     }
                 }
@@ -365,7 +377,12 @@ class ScreenshotsTest {
     private fun fixtureCourseTour(theme: String) {
         fun shot(name: String) = this.shot("$theme-$name")
 
-        open(CourseViewModel(app, CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock)))
+        fun fixture() = CourseViewModel(app, CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock))
+        Settings(app).welcomed = false
+        open(fixture())
+        shot("00-welcome")
+        Settings(app).welcomed = true
+        viewModel = fixture()
         shot("01-home-ready")
         tap(R.string.nav_settings)
         shot("02-settings")

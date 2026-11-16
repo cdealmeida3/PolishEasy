@@ -100,6 +100,31 @@ fun StreakWeekCard(
 }
 
 /**
+ * The Streak before it has started: no number and no week, only today's ring with the flame in
+ * it, waiting to be lit. [title] invites, [note] says how, and a screen reader hears both.
+ */
+@Composable
+fun StreakStartCard(title: String, note: String, modifier: Modifier = Modifier) {
+    val scheme = MaterialTheme.colorScheme
+    val streak = PolishEasyTheme.colors.streak
+    ContentCard(modifier = modifier.semantics(mergeDescendants = true) {}) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier.size(Size.flame).border(Edge.border, streak, CircleShape),
+            ) {
+                Icon(painterResource(R.drawable.ic_flame), contentDescription = null, tint = streak, modifier = Modifier.size(Size.icon))
+            }
+            Spacer(Modifier.width(Space.m))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(title, style = MaterialTheme.typography.titleLarge, color = scheme.onSurface)
+                Text(note, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant)
+            }
+        }
+    }
+}
+
+/**
  * The days of a week as dots, Monday first. With [raised], today has just been completed: its dot
  * starts as today's ring and fills in with a bounce, so the day is seen to be won.
  */

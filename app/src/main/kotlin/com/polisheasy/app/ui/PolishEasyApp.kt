@@ -32,6 +32,7 @@ import com.polisheasy.app.ui.screens.TipScreen
 import com.polisheasy.app.ui.screens.description
 import com.polisheasy.app.ui.screens.fraction
 import com.polisheasy.engine.SetProgress
+import com.polisheasy.app.ui.screens.WelcomeScreen
 
 /** [player] plays the Clips, and is released when the app's screens go. */
 @Composable
@@ -42,6 +43,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
     LifecycleStartEffect(Unit) { onStopOrDispose { player.stop() } }
     Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         when (val screen = viewModel.screen) {
+            Screen.Welcome -> WelcomeScreen(onStart = viewModel::startFromWelcome)
             is Screen.Home, is Screen.Path, is Screen.Settings -> Tabs(screen, viewModel)
             is Screen.Tip -> DailySet(screen, screen.shown, screen.progress, viewModel, player)
             is Screen.Player -> DailySet(screen, screen.shown, screen.progress, viewModel, player)
@@ -61,6 +63,8 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
                         player.stop()
                         viewModel.leaveDailySet()
                     },
+                    reminder = screen.reminder,
+                    onRemind = viewModel::acceptReminder,
                 )
             }
         }
@@ -164,7 +168,9 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
                 showing.next,
                 onStart = viewModel::startDailySet,
                 onContinue = viewModel::resumeDailySet,
+                soFar = showing.soFar,
                 streakRaisedFrom = showing.streakRaisedFrom,
+                onReplayToday = if (showing.replayToday) viewModel::replayToday else null,
             )
             is Screen.Path -> {
                 BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)
