@@ -94,7 +94,36 @@ class AuthoredContentTest {
             assertEquals(dailySet.tips.size, steps.count { it is Step.ShowTip }, "Tips of ${dailySet.id}")
         }
 
-        assertEquals(Today.AllCompleted, CourseEngine(course, progress, clock).today())
+        val dayAfter = march(2).plusDays(course.path.size.toLong())
+        assertEquals(
+            Today.DoneForToday(nextUnlock = dayAfter.atStartOfDay(warsaw), reviewOnlyNext = true),
+            CourseEngine(course, progress, clock).today(),
+        )
+    }
+
+    @Test
+    fun `after the course, each of the next 7 days has a Review-only Daily Set of 20 different Exercises that plays through to its Summary`() {
+        val progress = InMemoryLearnerProgress()
+        val clock = FakeClock()
+        playTheCourse(progress, clock)
+        val lastDay = march(2).plusDays(course.path.size - 1L)
+
+        (1L..7L).forEach { day ->
+            clock.moveTo(lastDay.plusDays(day))
+            val engine = CourseEngine(course, progress, clock)
+            assertEquals(Today.ReviewOnlyAvailable, engine.today(), "Day $day after the course")
+
+            val steps = engine.playCorrectly()
+
+            val exercises = steps.filterIsInstance<Step.ShowExercise>()
+            assertTrue(steps.none { it is Step.ShowTip }, "Day $day after the course")
+            assertEquals(20, exercises.size, "Day $day after the course")
+            assertTrue(exercises.all { it.review }, "Day $day after the course")
+            assertEquals(20, exercises.map { it.exercise }.distinct().size, "Day $day after the course")
+            assertEquals(Step.ShowSummary(20, 20, emptyList(), reviewOnly = true), steps.last(), "Day $day after the course")
+        }
+        assertEquals(course.path.size, progress.completedDailySets().size)
+        assertEquals(7, progress.reviewOnlyDays().size)
     }
 
     @Test

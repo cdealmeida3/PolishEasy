@@ -8,5 +8,6 @@ The v1 spec calls for an on-device database for Learner progress. We store it in
 - A file that cannot be read is moved aside to `progress.json.corrupt` and the Learner starts with empty progress, rather than the app failing to open.
 - The file refers to content only by stable ids and ignores fields it does not know, so later features can add to it.
 - Item progress (box, next-due date and recently shown Exercises) is stored in the same file, keyed by Item id with no reference to a Level, and written in the same file write as the answer that changed it.
+- Review-only Daily Sets are stored as the calendar days they were completed, apart from the completed Daily Sets, which stay a record of the Path. One in progress is saved under the reserved id `review-only`.
 - Android's device backup includes the file with no extra work.
 - If progress outgrows a file (many records, or queries), moving to a database means writing one new `LearnerProgress` implementation and a one-time import.

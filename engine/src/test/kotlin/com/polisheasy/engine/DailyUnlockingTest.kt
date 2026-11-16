@@ -81,7 +81,7 @@ class DailyUnlockingTest {
     }
 
     @Test
-    fun `when the last released Daily Set is completed everything is completed, that day and later`() {
+    fun `in a course with nothing to review, everything is completed once the last Daily Set is, that day and later`() {
         val dayOne = learner.openApp()
         dayOne.playToSummary(dayOne.startDailySet())
         learner.clock.moveTo(march(3))

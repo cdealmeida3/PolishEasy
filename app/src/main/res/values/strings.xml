@@ -6,6 +6,9 @@
     <string name="home_continue">Continue</string>
     <string name="home_done">You\'re done for today. Your next Daily Set unlocks tomorrow at %1$s.</string>
     <string name="home_all_completed">You\'ve completed every Daily Set released so far. More are on the way.</string>
+    <string name="home_review_only_ready">You\'ve completed every Daily Set released so far. More Units are on the way. Until then, today\'s Review-only Daily Set is ready.</string>
+    <string name="home_review_only_in_progress">You have a Review-only Daily Set in progress: %1$d of %2$d Exercises done.</string>
+    <string name="home_done_review_only_next">You\'re done for today. You\'ve completed every Daily Set released so far, and more Units are on the way. Your next Review-only Daily Set unlocks tomorrow at %1$s.</string>
     <string name="home_start">Start</string>
     <string name="choose_translation_instruction">Choose the correct translation</string>
     <string name="type_answer_instruction">Type this in Polish</string>
@@ -36,6 +39,8 @@
     <string name="feedback_wrong">Not quite. Correct answer: %1$s</string>
     <string name="action_continue">Continue</string>
     <string name="summary_title">Daily Set complete</string>
+    <string name="summary_review_only_title">Review-only Daily Set complete</string>
+    <string name="summary_more_units">You\'ve completed every Daily Set released so far. More Units are on the way.</string>
     <string name="summary_accuracy">%1$d of %2$d correct on the first try</string>
     <string name="summary_items_learned">You learned</string>
     <string name="summary_back_home">Back to Home</string>

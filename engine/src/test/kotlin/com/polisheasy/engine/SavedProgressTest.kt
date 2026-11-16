@@ -190,6 +190,83 @@ class SavedProgressTest {
     }
 
     @Test
+    fun `Review-only days survive reopening`() {
+        val progress = FileLearnerProgress(file)
+        progress.recordReviewOnlyCompleted(on = march(5))
+        progress.recordReviewOnlyCompleted(on = march(4))
+
+        assertEquals(setOf(march(4), march(5)), progress.reviewOnlyDays())
+        assertEquals(setOf(march(4), march(5)), reopened().reviewOnlyDays())
+
+        // Other changes keep them.
+        reopened().saveInProgress(inProgress)
+        reopened().recordCompleted("a1-u01-d02", on = march(6))
+        assertEquals(setOf(march(4), march(5)), reopened().reviewOnlyDays())
+    }
+
+    @Test
+    fun `recording a Review-only completion clears the Daily Set in progress and stores its Items, and leaves the completed Daily Sets alone`() {
+        val moved = ItemProgress(ItemSchedule(box = 2, due = march(6), lastAnswered = march(4)), listOf("a1-u01-d01-e01"))
+        val progress = FileLearnerProgress(file)
+        progress.recordCompleted("a1-u01-d01", on = march(2))
+        progress.saveInProgress(DailySetInProgress(REVIEW_ONLY_ID, remaining = listOf("a1-u01-d01-e01"), review = listOf("a1-u01-d01-e01")))
+
+        progress.recordReviewOnlyCompleted(on = march(4), items = mapOf("czesc" to moved))
+
+        listOf(progress, reopened()).forEach { saved ->
+            assertNull(saved.dailySetInProgress())
+            assertEquals(mapOf("czesc" to moved), saved.itemProgress())
+            assertEquals(mapOf("a1-u01-d01" to march(2)), saved.completedDailySets())
+            assertEquals(setOf(march(4)), saved.reviewOnlyDays())
+        }
+    }
+
+    @Test
+    fun `a file written before Review-only days existed loads with none and its other progress intact`() {
+        file.writeText(
+            """
+            {
+              "version": 1,
+              "completed": { "a1-u01-d01": "2026-03-02" },
+              "inProgress": { "dailySetId": "a1-u01-d02", "remaining": ["a1-u01-d02-e01"] },
+              "items": { "czesc": { "box": 2, "due": "2026-03-05", "lastAnswered": "2026-03-03" } }
+            }
+            """,
+        )
+
+        val progress = FileLearnerProgress(file)
+
+        assertEquals(emptySet(), progress.reviewOnlyDays())
+        assertEquals(mapOf("a1-u01-d01" to march(2)), progress.completedDailySets())
+        assertEquals(DailySetInProgress("a1-u01-d02", remaining = listOf("a1-u01-d02-e01")), progress.dailySetInProgress())
+        assertEquals(
+            mapOf("czesc" to ItemProgress(ItemSchedule(box = 2, due = march(5), lastAnswered = march(3)))),
+            progress.itemProgress(),
+        )
+        assertTrue(file.exists())
+    }
+
+    @Test
+    fun `a file with an unreadable Review-only day is moved aside like any other corrupt file`() {
+        file.writeText(
+            """
+            {
+              "version": 1,
+              "completed": { "a1-u01-d01": "2026-03-02" },
+              "reviewOnlyDays": ["2026-03-04", "someday"]
+            }
+            """,
+        )
+
+        val progress = FileLearnerProgress(file)
+
+        assertEquals(emptySet(), progress.reviewOnlyDays())
+        assertEquals(emptyMap(), progress.completedDailySets())
+        assertFalse(file.exists())
+        assertTrue(File(directory, "progress.json.corrupt").exists())
+    }
+
+    @Test
     fun `a Daily Set can be played across closing and reopening the app`() {
         val clock = FakeClock()
         fun openApp() = CourseEngine(FixtureCourse.load(), reopened(), clock)
