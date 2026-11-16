@@ -28,8 +28,6 @@ import com.polisheasy.app.ui.components.CONFETTI_TAG
 import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.FileLearnerProgress
 import java.io.File
-import java.time.format.DateTimeFormatter
-import java.time.format.FormatStyle
 import kotlin.test.assertEquals
 import org.junit.Rule
 import org.junit.Test
@@ -261,7 +259,7 @@ class PlayingADailySetOnScreenTest {
 
         type("dziękuję")
         tap(R.string.action_check)
-        shows(R.string.feedback_correct)
+        showsCorrect()
         noSpeaker()
         tap(R.string.action_continue)
 
@@ -307,7 +305,7 @@ class PlayingADailySetOnScreenTest {
         // Daily Set 1 is named by its first Tip; Daily Set 2 has no Tip, so its number stands in.
         shows(text(R.string.path_progress, 1, 2))
         shows(text(R.string.path_unit_progress, 1, 2))
-        val completed = text(R.string.path_stop_note, text(R.string.path_daily_set, 1), text(R.string.path_completed))
+        val completed = text(R.string.path_stop_note, text(R.string.path_stop_number, 1, 2), text(R.string.path_completed))
         val dailySetOne = screen.onNode(hasText("The verb być") and hasText(completed))
         dailySetOne.assertIsDisplayed()
         val dailySetTwo = hasText(text(R.string.path_daily_set, 2))
@@ -434,7 +432,7 @@ class PlayingADailySetOnScreenTest {
         typeNo()
         type("jestem")
         tap(R.string.action_check)
-        shows(R.string.feedback_correct)
+        showsCorrect()
         screen.mainClock.autoAdvance = false
         tap(R.string.action_continue)
     }
@@ -469,8 +467,11 @@ class PlayingADailySetOnScreenTest {
         correctThenContinue()
     }
 
+    /** A right answer is praised in Polish; a screen reader is told "Correct". */
+    private fun showsCorrect() = screen.onNodeWithContentDescription(text(R.string.feedback_correct)).assertIsDisplayed()
+
     private fun correctThenContinue() {
-        shows(R.string.feedback_correct)
+        showsCorrect()
         tap(R.string.action_continue)
     }
 
@@ -510,9 +511,6 @@ class PlayingADailySetOnScreenTest {
         screen.onNodeWithContentDescription(text(R.string.progress_description, correct, 6)).assertIsDisplayed()
     }
 
-    /** What Home says once today's Daily Set is completed: the next one unlocks at the start of tomorrow. */
-    private fun doneForToday(): String {
-        val unlock = clock.today.plusDays(1).atStartOfDay(clock.zone)
-        return text(R.string.home_done, DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).format(unlock))
-    }
+    /** What Home says once today's Daily Set is completed. */
+    private fun doneForToday(): String = text(R.string.home_done)
 }

@@ -26,7 +26,7 @@ writes one PNG per screen to `app/build/screenshots/`: the fixture course in the
 4. **Never colour alone.** Right, wrong, chosen, locked and completed each have an icon or words as well as a colour.
 5. **Things respond.** A tap gives way under the finger, an answer gets a reaction, a finished Daily Set gets a celebration. Every reaction is short and none blocks the next tap.
 6. **Calm outside the moment.** Colour fields and motion mark what just happened. The resting screen is quiet: warm neutral surfaces, plenty of space.
-7. **Words from `GLOSSARY.md`.** Short, friendly, no exclamation marks except "Correct!" and the Summary.
+7. **Words from `GLOSSARY.md`, and praise in Polish.** Short, friendly, no label-and-colon. A right answer and a finished Daily Set are praised in Polish ("Dobrze!", "Świetnie!"), which is one more word learned; a screen reader is told the meaning. No exclamation marks anywhere else.
 
 ## Colour
 
@@ -93,10 +93,13 @@ Material has no role for these, so the theme adds them: a `PolishEasyColors` val
 | `cautionContainer` | `#FFE3B3` | `#4A2C00` | The feedback panel and the wrong option's fill |
 | `onCautionContainer` | `#3A2200` | `#FFE3B3` | |
 | `streak` | `#E2570B` | `#FF8A3D` | The flame and the completed-day dots. Same value as `tertiary` |
+| `completed` | `#17733A` | `#3FA65C` | A completed stop on the Path and the trail walked so far. `success` in the light theme, one step quieter in the dark one |
+| `completedEdge` | `#0E5428` | `#2B7A42` | The bottom edge of a completed stop |
 
 Rules:
 
 - **The main button is `brand` with `onBrand` in both themes.** In the dark theme `primary` is a light pink so that crimson text stays readable on a dark surface; it is for text and icons, never for a button's fill.
+- **One accent in the dark theme.** Everything that is filled with the accent is `brand` in both themes: buttons, the progress bar, progress segments. The dark theme's pink is for text and icons only. A completed stop is `completed`, quieter than `success` in the dark theme, so that today's `brand` stop is the loudest thing on the Path.
 - **Inside the feedback panel the main button takes the panel's colour**: `success` with `onSuccess` after a right answer, `caution` with `onCaution` after a wrong one or an accent warning. A crimson button there would be red on "wrong", and in the dark theme `brand` is under 3 to 1 against either container.
 - **A wrong answer is `caution` (amber), not red and not `error`.** A right answer is `success` (green).
 - **An accent warning is `caution` with the tick icon**: accepted, with something to notice.
@@ -164,43 +167,44 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 
 - **`PrimaryButton`**: the one main action. Full width, 56 high, `brand` fill, `labelLarge` in `onBrand`, the bottom edge. Disabled: `surfaceContainerHighest` with `onSurfaceVariant` text. Its `tone` is set only by the feedback panel (see Colour).
 - **`SecondaryButton`**: 56 high, `surfaceContainerLowest` fill, outlined, `primary` text. Used rarely; most screens have no second button.
-- **`QuietButton`** (a text button): `primary` text, 48 high. "Can't listen now", "Slow".
+- **`QuietButton`** (a text button): `primary` text, 48 high. Subdued, it is `onSurfaceVariant`: a way out that is rarely taken, such as "Can't listen now".
+- **`TonalButton`**: a small helper beside a bigger control. A pill at least 48 high in `primaryContainer` with an icon and a word in `onPrimaryContainer`. "Slow".
 - **`OptionCard`**: an answer to choose. Full width, at least 56 high, text at the start in `titleMedium`, an icon slot at the end. States:
   - idle: `surfaceContainerLowest`, `outlineVariant` border
   - chosen (before Check, where there is one): `primaryContainer`, `primary` border
   - right: `successContainer`, `success` border, tick icon
   - wrong (the one tapped): `cautionContainer`, `caution` border, cross icon
-  - others after an answer: idle at 60% opacity, not tappable
+  - others after an answer: idle at 70% opacity, not tappable
   
   After an answer the right option is always marked, whichever was tapped.
-- **`WordTile`**: `secondaryContainer`, `titleMedium`, 48 high, the bottom edge. A tile that has been used leaves an empty slot in the bank, so the bank never shifts.
+- **`WordTile`**: `secondaryContainer`, `titleMedium`, 48 high, the bottom edge. A tile that has been used leaves an empty slot in the bank, so the bank never shifts. The slot is `surfaceContainerHigh` with a dashed `outline` line around it, so it shows in bright light.
 - **`AnswerField`** and **`PolishKeyRow`**: outlined, `titleMedium` for what is typed, 2 dp `primary` border when focused. The Polish key row sits directly above the keyboard, with keys at least 48 high.
 - **`FeedbackPanel`**: rises from the bottom over the main button's place and holds the next one. It has a heading in `titleLarge` in the panel's accent colour and, under it, a line in `bodyLarge`:
-  - right: `successContainer`, a tick, "Correct!", no second line
+  - right: `successContainer`, a tick, praise in Polish taken in turn ("Dobrze!", "Świetnie!", "Tak!", said as "Correct" by a screen reader), and under it the other side of the answer: what it means, or for a meaning the Polish
   - accent warning: `cautionContainer`, a tick, "Correct", then "Mind the accents:" and the proper spelling
   - wrong: `cautionContainer`, a cross, "Not quite", then "Correct answer:" and the answer
 
   It holds the speaker for the Polish, Continue as a `PrimaryButton` in the panel's tone, and "Report a mistake" as a small flag icon button with that label for screen readers.
 - **`DailySetFrame`** and **`DailySetStep`**: the layout of every Tip and Exercise. The frame is the top bar, a close button and the progress bar, which stays put for the whole Daily Set while the steps slide under it. A step is content from the top, scrolling if it must, and the main action pinned to the bottom, with the Polish key row below it. Nothing moves when feedback appears. An Exercise draws only what is above the main action: "Check" belongs to the step's bottom, not to the Exercise.
 - **The close button** leaves the Daily Set at once, with no question: every answer is already saved, and Home offers to continue. It is the close icon in `onSurfaceVariant`, lined up with the content's edge.
-- **`WordTileBoard`**: the answer being built, a divider, and the bank of `WordTile`s. It owns the tiles' movement between the two.
-- **Listening controls**: the `PlayButton` centred, and under it "Slow" and "Can't listen now" side by side as `QuietButton`s.
+- **`WordTileBoard`**: the answer being built, on two ruled lines in `outlineVariant` that are there before the first tile is, and under it the bank of `WordTile`s. It owns the tiles' movement between the two.
+- **Listening controls** (`PlayControls`): the `PlayButton` centred with "Slow" beside it as a `TonalButton`, which goes under it at a large font size. "Can't listen now" is a subdued `QuietButton` under the answers.
 - **`ScreenFrame`**: the layout of a screen outside a Daily Set, with the edge spacing under Space.
 - **`Instruction`**, **`PolishPrompt`**, **`BasePrompt`**: the label above a prompt and the prompt itself, so the choice of style between a short and a long Polish prompt is made in one place.
-- **`ProgressBar`**: 12 high, fully rounded, `primary` on `surfaceContainerHigh`.
-- **`PlayButton`**: a 72 circle in `brand` with the speaker icon in `onBrand`, for listening Exercises. **`SpeakerButton`**, the small speaker beside Polish text, is a 48 icon button in `primary`.
+- **`ProgressBar`**: 12 high, fully rounded, `brand` on `surfaceContainer`.
+- **`PlayButton`**: 72 across in `brand` with the speaker icon in `onBrand`, for listening Exercises. A circle at rest and a rounded square with `large` corners while a Clip plays. **`SpeakerButton`**, the small speaker beside Polish text, is a 48 icon button in `primary`.
 - **`TopBar`**: Path and Settings have a `headlineSmall` title, and the Path a `bodyLarge` line under it in `onSurfaceVariant`. Home has a greeting in its place (see Home). Inside a Daily Set it is the close button and the progress bar only.
 - **`NavigationFrame`**, the navigation bar: Home, Path, Settings, with icons and `labelSmall` labels, on `surfaceContainer`. The selected one has a `primaryContainer` pill behind a `primary` icon and its label in `onSurface`; the others are `onSurfaceVariant`. Hidden inside a Daily Set and on the Summary. Back from the Path or Settings goes to Home.
-- **`StreakWeekCard`**: the Streak on Home. A `ContentCard` with the Streak flame at 48 and the number in `displayMedium`, "day Streak" in `titleLarge` and a line in `bodyMedium` saying what today's Daily Set would do for it. Under them the last seven days, oldest first and ending today, as 32 dots with the weekday's letter below each: a completed day is `streak` with a tick, a day without is `surfaceContainerHigh`, and today has a 2 dp `streak` ring until it is completed and its letter in `titleSmall`. A screen reader hears the card as one sentence.
+- **`StreakWeekCard`**: the Streak on Home. A `ContentCard` with the Streak flame at 48 and the number in `displayMedium`, "day Streak" in `titleLarge` and a line in `bodyMedium` saying what today's Daily Set would do for it. Under them this calendar week, Monday to Sunday, as 32 dots with two letters of the weekday below each: a completed day is `streak` with a tick, a day that passed without one is `surfaceContainerHigh` with a dashed `outline` line, today has a 2 dp `streak` ring until it is completed and its letters in `titleSmall`, and a day still to come is a small 12 dot, never drawn as missed. At a large font size the words go under the flame and the number. A screen reader hears the card as one sentence.
 - **`TodayCard`**: what today holds, on Home. A `ContentCard` with a small label in `titleSmall` ("Today" in `primary` on the card with the main action, "Up next" in `onSurfaceVariant`), a `headlineSmall` title, and below it what the state needs: `UnitProgress`, `Teaches`, a `CardNote`, the `PrimaryButton`. Done states have no label and put the `success` tick beside the title.
-- **`UnitProgress`**: the Unit's name in `bodyMedium`, and under it `ProgressSegments`: one 12 high segment for each of the Unit's Daily Sets, `primary` when completed, `primaryContainer` with a 2 dp `primary` border for the one the card is about, `surfaceContainerHigh` for the rest.
-- **`Teaches`**: "You'll learn" as an `Instruction`, then one `bodyLarge` line for each of the Daily Set's Tip titles, with an 8 dot in `primary`.
+- **`UnitProgress`**: the Unit's name in `bodyMedium`, and under it `ProgressSegments`: one 12 high segment for each of the Unit's Daily Sets, `brand` when completed, `primaryContainer` with a 2 dp `brand` border for the one the card is about, `surfaceContainerHigh` for the rest.
+- **`Teaches`**: "Also today" as an `Instruction`, then one `bodyLarge` line for each of the Daily Set's Tip titles after the first, which is the card's title, with an 8 dot in `primary`.
 - **`ContentCard`**: `surfaceContainerLowest`, `large` corners, 1 dp `outlineVariant` border, 16 padding, no shadow.
 - **`ScoreRing`**: the Summary's score. A 184 ring, 16 thick with round ends, `success` on `surfaceContainerHigh`, with the share of Exercises answered correctly on the first try inside it in `displayMedium`. The same score is written in words under it.
 - **`StreakCard`**: the Streak going up, on the Summary of the Daily Set that raised it and nowhere else. A `ContentCard` with the flame at 48 and the number in `displayMedium`, both in `streak`, then "day Streak" in `titleLarge` and a line in `bodyMedium`. A Replay never shows it.
 - **`ItemCard`**: one Item under "You learned": a `ContentCard` with the Polish in `titleMedium` and its meaning under it in `bodyMedium`.
 - **`SettingsCard`**: a group of settings that belong together. A `ContentCard` whose rows reach its edges, with a `SettingDivider` between rows that starts where their words start. Every row is at least 56 high, has its icon in `primary` on a 40 `primaryContainer` circle, its label in `titleMedium` and, under it, a note in `bodyMedium` in `onSurfaceVariant`. The whole row is tapped, and a screen reader hears it as one thing.
-  - **`SwitchSetting`**: on or off. The switch is `brand` with an `onBrand` thumb when on, in both themes, and `surfaceContainerHighest` with an `outline` border and thumb when off.
+  - **`SwitchSetting`**: on or off. At a large font size the switch goes under the words. The switch is `brand` with an `onBrand` thumb when on, in both themes, and `surfaceContainerHighest` with an `outline` border and thumb when off.
   - **`ValueSetting`**: a value to change, such as the Reminder's time, shown in `titleMedium` on a `secondaryContainer` field with `small` corners. At a large font size the value goes under the label.
   - **`LinkSetting`**: leads out of the screen, such as to the email app. It ends with an arrow in `onSurfaceVariant`.
   - **`SettingNotice`**: something in the way of a setting, such as notifications turned off in Android: `cautionContainer` with `medium` corners inside the card, a sentence in `bodyLarge` and the one `SecondaryButton` that fixes it. It is a caution, not an `error`: nothing broke.
@@ -208,12 +212,12 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`Confetti`**: see Motion and touch. It is laid over the Summary's content, above the main button. A Replay gets none.
 - **Streak flame**: the flame icon in `streak` beside the number. With a Streak of zero the flame and the number are `outline`, not hidden.
 - **`UnitCard`**: a Unit on the Path. A `ContentCard` with "Unit N" in `titleSmall` in `primary`, the Unit's title in `titleLarge`, "4 of 7 completed" in `bodyMedium`, `ProgressSegments` with today's Daily Set outlined, and under them the Unit's stops. A Unit that is all completed has the `success` tick beside its title.
-- **`TrailStop`**: one Daily Set on a Unit's trail. Its node, then its title in `titleMedium` and under it a `bodyMedium` line with its number and its state in words. The stop the Learner is at has a `titleSmall` label above its title: "Today" in `primary`, or "Up next" in `onSurfaceVariant` when it unlocks tomorrow. A completed stop ends with the replay icon in `primary`. The whole stop is tapped as one, with no ripple: its node goes down. A locked stop's title is `onSurfaceVariant` and it is not tappable.
-- **Path node**: a 56 circle. Completed: `success` fill with a tick in `onSuccess`, on the bottom edge in `successEdge`. Today: `brand` fill with a play icon in `onBrand`, on the bottom edge in `brandEdge`, inside a 2 dp `brand` ring 72 across. Locked: `surfaceContainerHighest` with a lock icon in `onSurfaceVariant`, flat. Today's node sits on the card, never on a container colour.
-- **The trail**: a 4 dp line joining a Unit's nodes. It is `success` as far as the Learner has come, up to today's node, and `outlineVariant` beyond.
+- **`TrailStop`**: one Daily Set on a Unit's trail. Its node, then its title in `titleMedium` and under it a `bodyMedium` line with its number in its Unit and its state in words ("4 of 8 · Completed"). The stop the Learner is at has a `titleSmall` label above its title: "Today" in `primary`, or "Up next" in `onSurfaceVariant` when it unlocks tomorrow. A completed stop ends with the replay icon in `primary`. The whole stop is tapped as one, with no ripple: its node goes down. A locked stop's title is `onSurfaceVariant` and it is not tappable.
+- **Path node**: a 56 circle. Completed: `completed` fill with a tick in `onSuccess`, on the bottom edge in `completedEdge`. Today: `brand` fill with a play icon in `onBrand`, on the bottom edge in `brandEdge`, inside a 2 dp `brand` ring 72 across. Locked: `surfaceContainerHighest` with a lock icon in `onSurfaceVariant`, flat. Today's node sits on the card, never on a container colour.
+- **The trail**: a 4 dp line joining a Unit's nodes. It is `completed` as far as the Learner has come, up to today's node, and `outlineVariant` beyond.
 - **`Journey`**: the Path's scrolling column. It opens already in place, with no visible jump (see The Path).
 
-Icons are Material Symbols, rounded style, filled, 24 dp, kept as vector drawables in `res/drawable`. No icon library is added to the build.
+Icons are Material Symbols, rounded style, filled, 24 dp, kept as vector drawables in `res/drawable`. An icon that sits beside text grows with the phone's font size, up to 36 dp (`Scaled.icon()`). No icon library is added to the build.
 
 ## Home
 
@@ -225,12 +229,14 @@ Home answers three things from the top down: hello, how the Streak stands, and w
 
 | State | Card |
 | --- | --- |
-| A Daily Set is ready | "Today", "Daily Set N of M", `UnitProgress`, `Teaches`, Start |
-| In progress | The same, with "In progress: N of M Exercises done." and Continue |
-| Done for today | The tick, "Done for today" and the unlock time. Then an "Up next" card for the next Daily Set, with no button |
-| Review-only, ready or in progress | "Today", "Review-only Daily Set", a note, Start or Continue |
-| Review-only, done | The tick, "Done for today" and when the next Review-only Daily Set unlocks |
+| A Daily Set is ready | "Today", the Daily Set's topic as on the Path ("Czy and nie"), then "Unit 2 · About me · 4 of 8" over `UnitProgress`, `Teaches`, Start |
+| In progress | The same, with "N of M Exercises done" and Continue |
+| Done for today | The tick, "Done for today" and "Your next Daily Set unlocks tomorrow." Then an "Up next" card for the next Daily Set, with no button |
+| Review-only, ready or in progress | "Today", "Review", a note, Start or Continue |
+| Review-only, done | The tick, "Done for today" and "All caught up. Your next Review unlocks tomorrow." |
 | Nothing left and nothing to review | The tick and "Every Daily Set completed" |
+
+A Daily Set has one name and one number on every screen: its topic, the title of its first Tip, and its number in its Unit. The course-wide number is never shown. On screen a Review-only Daily Set is called a Review; the Glossary's term stays in the docs and the code.
 
 Home scrolls if the font size makes it too tall. Nothing on it moves at rest.
 
@@ -240,7 +246,7 @@ The Path answers where the Learner is and how far they have come.
 
 - **The title** is the Level's name and "Path" ("A1 Path"), with "10 of 23 Daily Sets completed" under it.
 - **A `UnitCard` for each Unit**, 16 apart, each holding its Daily Sets as `TrailStop`s.
-- **A Daily Set's title is the title of its first Tip** (`docs/authoring.md`). A Daily Set with no Tip shows "Daily Set N" in its place.
+- **A Daily Set's title is the title of its first Tip** (`docs/authoring.md`). A Daily Set with no Tip shows "Daily Set N" in its place, numbered within its Unit.
 - **Three states, each with its own icon**: a tick (completed), a play arrow in a ring (today), a lock (locked). The words under the title say the same.
 - **It opens at the stop the Learner is at**: the first Daily Set not yet completed. If that stop is within the top 60% of the screen when its Unit's card is at the top, the Path opens at the top of the card; otherwise the stop sits a third of the way down. With every Daily Set completed it opens at the top.
 - **Tapping** a completed stop starts a Replay, today's opens today's Daily Set, a locked one does nothing.
@@ -274,14 +280,14 @@ Motion says what just happened. It never makes the Learner wait: every tap is ac
 | Progress bar | A spring to the new value, with a little bounce |
 | The right option, a tick appearing | Scales from 0.8 to 1 with a little bounce, 200 ms |
 | The wrong option | One short side-to-side shake of 8 dp, 250 ms |
-| The play button while a Clip plays | A slow pulse, 1 to 1.06, 700 ms each way |
+| The play button while a Clip plays | Its corners go from a circle to a rounded square in 200 ms, and back when the Clip ends |
 | Summary | The score ring fills in 800 ms, numbers count up, then confetti falls once for about 2 seconds |
 | The Streak going up | When the score ring has filled: the old number rolls up and out, the new one rolls in from below, 350 ms, and the flame scales once from 1.35 back to 1 |
 
 Rules:
 
 - **Reduced motion.** When Android's "remove animations" is on (the animator duration scale is 0), every change is instant, there is no confetti and no shake, and the final state shows at once. One helper in `ui/theme` answers this; components ask it and screens do not.
-- Nothing loops except the play button's pulse while a Clip is playing.
+- Nothing loops.
 - Confetti is drawn in Compose in `brand`, `success`, `caution` and `streak`, with no library and no image. It does not cover the main button and cannot be tapped. It is for a Daily Set that counts, new or Review-only, not for a Replay.
 - Durations and springs are named values in `ui/theme`, like colours.
 
@@ -299,7 +305,7 @@ Rules:
 - Every state has words or an icon as well as colour, and a state change is announced to a screen reader (the feedback panel is a live region).
 - Every icon button has a content description from `strings.xml`. Decorative icons have none.
 - Touch targets are at least 48 dp. Contrast as under Colour.
-- The app works at the largest font size: content scrolls, the main button stays pinned and nothing is cut off. The `large-…` pictures show it. Where two things side by side no longer fit, the second goes under the first (`ValueSetting`), and the score ring grows by up to a third so that "100%" stays inside it.
+- The app works at the largest font size: content scrolls, the main button stays pinned and nothing is cut off. The `large-…` pictures show it. Above a font scale of 1.3 two things side by side go one under the other (`Scaled.roomy()`): a setting's switch under its words, the Streak card's words under its number, "Slow" under the play button. Icons beside text grow with it. `ValueSetting` wraps when its two parts no longer fit, and the score ring grows by up to a third so that "100%" stays inside it.
 - Text that is always Polish (a Polish prompt, Home's greeting, an Item's Polish) is marked as Polish with `inPolish()`, so a screen reader says it with a Polish voice. Options and word tiles, which are Polish in some Exercises and the Base Language in others, are not marked yet.
 - Both themes are designed, not derived: check both sets of screenshots.
 

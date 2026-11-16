@@ -6,7 +6,6 @@ import androidx.compose.animation.ContentTransform
 import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
 import androidx.compose.animation.core.AnimationSpec
-import androidx.compose.animation.core.DurationBasedAnimationSpec
 import androidx.compose.animation.core.Easing
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.LinearEasing
@@ -42,15 +41,14 @@ object Motion {
     /** The one shake of the option that was wrong. */
     const val SHAKE_MILLIS = 250
 
-    /** Half a pulse of the play button while a Clip plays, and how far it grows. */
-    const val PULSE_MILLIS = 700
-    const val PULSE_SCALE = 1.06f
+    /** The play button changing shape as a Clip starts and ends. */
+    const val SHAPE_MILLIS = 200
 
     /** The size a tick or a cross starts from as it appears. */
     const val MARK_FROM_SCALE = 0.8f
 
     /** How far an option that was not chosen fades once the Exercise is answered. */
-    const val FADED_ALPHA = 0.6f
+    const val FADED_ALPHA = 0.7f
 
     /** The Summary's score ring filling. The Streak rolls and the confetti starts when it has. */
     const val RING_MILLIS = 800
@@ -133,9 +131,9 @@ object Motion {
         }
     }
 
-    /** One way of the play button's slow pulse. Null when animations are removed, and then it is still. */
+    /** The play button going from a circle to a rounded square while a Clip plays, and back. */
     @Composable
-    fun pulse(): DurationBasedAnimationSpec<Float>? = if (reduced()) null else tween(PULSE_MILLIS)
+    fun <T> shape(): AnimationSpec<T> = if (reduced()) snap() else tween(SHAPE_MILLIS, easing = FastOutSlowInEasing)
 
     /** The score ring filling and its number counting up. Null when animations are removed: it shows full at once. */
     @Composable

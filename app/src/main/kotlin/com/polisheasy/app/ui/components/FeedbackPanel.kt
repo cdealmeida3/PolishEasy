@@ -32,6 +32,8 @@ import com.polisheasy.app.ui.PolishEasyTheme
 import com.polisheasy.app.ui.theme.Corner
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
+import com.polisheasy.app.ui.theme.Scaled
+import androidx.compose.ui.semantics.contentDescription
 
 /** What the feedback is about. Green is right, amber is wrong; red is never used for an answer. */
 enum class FeedbackTone {
@@ -49,6 +51,7 @@ enum class FeedbackTone {
  * What the Learner is told about an answer, in the place of the main action, with the next main
  * action inside it. [heading] says how it went and [detail] what to take from it, such as the
  * correct answer. [speaker] is the speaker for the Polish, when there is something to play.
+ * [headingDescription] is what a screen reader says for a [heading] that is praise in Polish.
  */
 @Composable
 fun FeedbackPanel(
@@ -61,6 +64,7 @@ fun FeedbackPanel(
     modifier: Modifier = Modifier,
     detail: String? = null,
     speaker: (@Composable () -> Unit)? = null,
+    headingDescription: String? = null,
 ) {
     val colors = PolishEasyTheme.colors
     val right = tone == FeedbackTone.Correct
@@ -95,14 +99,19 @@ fun FeedbackPanel(
                         .padding(vertical = Space.xs)
                         .semantics { liveRegion = LiveRegionMode.Polite },
                 ) {
-                    Text(heading, style = MaterialTheme.typography.titleLarge, color = accent)
+                    Text(
+                        heading,
+                        style = MaterialTheme.typography.titleLarge,
+                        color = accent,
+                        modifier = if (headingDescription == null) Modifier else Modifier.semantics { contentDescription = headingDescription },
+                    )
                     if (detail != null) {
                         Text(detail, style = MaterialTheme.typography.bodyLarge)
                     }
                 }
                 speaker?.invoke()
                 IconButton(onClick = onReport, modifier = Modifier.size(Size.touch)) {
-                    Icon(painterResource(R.drawable.ic_flag), contentDescription = reportLabel, tint = accent)
+                    Icon(painterResource(R.drawable.ic_flag), contentDescription = reportLabel, tint = accent, modifier = Modifier.size(Scaled.icon()))
                 }
             }
             Spacer(Modifier.height(Space.xs))

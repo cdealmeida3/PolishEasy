@@ -62,6 +62,16 @@ class PlayingADailySetTest {
     }
 
     @Test
+    fun `the other side of the answer is the Polish for a meaning, and nothing before a Daily Set is started`() {
+        val engine = newLearnerEngine()
+        assertEquals(null, engine.answerGloss())
+
+        engine.play(engine.startDailySet(), emptyList())
+
+        assertEquals("cześć", engine.answerGloss())
+    }
+
+    @Test
     fun `a wrong answer shows the correct one`() {
         val engine = newLearnerEngine()
         engine.play(engine.startDailySet(), emptyList())

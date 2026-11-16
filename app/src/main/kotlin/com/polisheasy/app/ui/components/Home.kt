@@ -31,16 +31,21 @@ import com.polisheasy.app.ui.PolishEasyTheme
 import com.polisheasy.app.ui.theme.Edge
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
+import com.polisheasy.app.ui.theme.Scaled
 
 private val DayDot = 32.dp
 private val DayTick = 20.dp
+private val UpcomingDot = 12.dp
 private val Bullet = 8.dp
 
-/** One day of the Streak's week: its [label], a letter for the weekday, and whether it is [completed] and is [today]. */
-class WeekDay(val label: String, val completed: Boolean, val today: Boolean)
+/**
+ * One day of the Streak's week: its [label], two letters for the weekday, and whether it is
+ * [completed], is [today], or is [upcoming]: a day still to come, which is never drawn as missed.
+ */
+class WeekDay(val label: String, val completed: Boolean, val today: Boolean, val upcoming: Boolean = false)
 
 /**
- * The Streak on Home: the flame and the number, and under them the last seven [days] as dots.
+ * The Streak on Home: the flame and the number, and under them the [days] of this week as dots.
  * A completed day is filled and ticked, today has a ring until it is completed, and with a Streak
  * of zero the flame is grey, not hidden. [title] and [note] are the words beside the number, and
  * [description] is the whole card in words for a screen reader.
@@ -56,17 +61,23 @@ fun StreakWeekCard(
 ) {
     val scheme = MaterialTheme.colorScheme
     val lit = if (streak > 0) PolishEasyTheme.colors.streak else scheme.outline
+    val stacked = Scaled.roomy()
     ContentCard(modifier = modifier.clearAndSetSemantics { contentDescription = description }) {
+        val words: @Composable ColumnScope.() -> Unit = {
+            Text(title, style = MaterialTheme.typography.titleLarge, color = scheme.onSurface)
+            if (note != null) Text(note, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant)
+        }
         Row(verticalAlignment = Alignment.CenterVertically) {
             Icon(painterResource(R.drawable.ic_flame), contentDescription = null, tint = lit, modifier = Modifier.size(Size.flame))
             Spacer(Modifier.width(Space.xs))
             Text(streak.toString(), style = MaterialTheme.typography.displayMedium, color = lit)
-            Spacer(Modifier.width(Space.m))
-            Column(modifier = Modifier.weight(1f)) {
-                Text(title, style = MaterialTheme.typography.titleLarge, color = scheme.onSurface)
-                if (note != null) Text(note, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant)
+            if (!stacked) {
+                Spacer(Modifier.width(Space.m))
+                Column(modifier = Modifier.weight(1f), content = words)
             }
         }
+        // At a large font size the words go under the number, where they have the card's whole width.
+        if (stacked) Column(content = words)
         Spacer(Modifier.height(Space.m))
         Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
             days.forEach { day -> Day(day) }
@@ -85,9 +96,12 @@ private fun Day(day: WeekDay) {
             modifier = when {
                 day.completed -> dot.background(streak, CircleShape)
                 day.today -> dot.border(Edge.border, streak, CircleShape)
-                else -> dot.background(scheme.surfaceContainerHigh, CircleShape)
+                // A day to come is a small quiet dot; a day that passed without one is an empty circle.
+                day.upcoming -> dot
+                else -> dot.background(scheme.surfaceContainerHigh, CircleShape).dashedOutline(DayDot)
             },
         ) {
+            if (day.upcoming && !day.completed) Box(Modifier.size(UpcomingDot).background(scheme.surfaceContainerHighest, CircleShape))
             if (day.completed) {
                 // onTertiary is what sits on the flame's colour: streak and tertiary are one value.
                 Icon(
@@ -188,6 +202,8 @@ fun UnitProgress(unit: String, completed: Int, dailySets: Int, description: Stri
 @Composable
 internal fun ProgressSegments(completed: Int, current: Int?, total: Int, description: String?, modifier: Modifier = Modifier) {
     val scheme = MaterialTheme.colorScheme
+    // The brand's own colour in both themes: the dark theme's pink `primary` is for text.
+    val brand = PolishEasyTheme.colors.brand
     Row(
         horizontalArrangement = Arrangement.spacedBy(Space.xxs),
         modifier = modifier
@@ -200,9 +216,9 @@ internal fun ProgressSegments(completed: Int, current: Int?, total: Int, descrip
                 .height(Size.progressBar)
             Box(
                 modifier = when {
-                    index < completed -> segment.background(scheme.primary, CircleShape)
+                    index < completed -> segment.background(brand, CircleShape)
                     index == current ->
-                        segment.background(scheme.primaryContainer, CircleShape).border(Edge.border, scheme.primary, CircleShape)
+                        segment.background(scheme.primaryContainer, CircleShape).border(Edge.border, brand, CircleShape)
                     else -> segment.background(scheme.surfaceContainerHigh, CircleShape)
                 },
             )

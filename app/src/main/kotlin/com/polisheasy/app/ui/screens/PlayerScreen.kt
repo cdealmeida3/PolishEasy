@@ -29,10 +29,12 @@ import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.TileSelection
+import androidx.compose.ui.res.stringArrayResource
 
 /**
  * One Exercise of a Daily Set, then what the Learner is told about the answer. What the Learner has
  * typed, placed or tapped is held here, so the Exercise above and "Check" below share it.
+ * [praise] picks the word a right answer is praised with, so it is not the same every time.
  */
 @Composable
 internal fun PlayerScreen(
@@ -40,7 +42,9 @@ internal fun PlayerScreen(
     review: Boolean,
     replay: Boolean,
     feedback: Feedback?,
+    gloss: String?,
     playing: Boolean,
+    praise: Int,
     onAnswer: (Answer) -> Unit,
     onContinue: () -> Unit,
     onPlay: (ClipView, Boolean) -> Unit,
@@ -92,7 +96,7 @@ internal fun PlayerScreen(
         else -> null
     }
     DailySetStep(
-        feedback = feedback?.let { { Feedback(it, onContinue, onPlay, onReport) } },
+        feedback = feedback?.let { { Feedback(it, gloss, praise, onContinue, onPlay, onReport) } },
         action = check,
         keyRow = if (typing) {
             {
@@ -136,25 +140,28 @@ internal fun PlayerScreen(
 }
 
 @Composable
-private fun Feedback(feedback: Feedback, onContinue: () -> Unit, onPlay: (ClipView, Boolean) -> Unit, onReport: () -> Unit) {
+private fun Feedback(feedback: Feedback, gloss: String?, praise: Int, onContinue: () -> Unit, onPlay: (ClipView, Boolean) -> Unit, onReport: () -> Unit) {
     val colors = PolishEasyTheme.colors
+    val right = feedback.correct && !feedback.accentWarning
+    // A right answer is praised in Polish, a different word each time; a screen reader says "Correct".
+    val praises = stringArrayResource(R.array.feedback_praise)
     FeedbackPanel(
         tone = when {
             feedback.correct && feedback.accentWarning -> FeedbackTone.Noted
             feedback.correct -> FeedbackTone.Correct
             else -> FeedbackTone.Wrong
         },
-        heading = stringResource(
-            when {
-                feedback.correct && feedback.accentWarning -> R.string.feedback_accepted
-                feedback.correct -> R.string.feedback_correct
-                else -> R.string.feedback_wrong
-            },
-        ),
+        heading = when {
+            right -> praises[praise.mod(praises.size)]
+            feedback.correct -> stringResource(R.string.feedback_accepted)
+            else -> stringResource(R.string.feedback_wrong)
+        },
+        headingDescription = if (right) stringResource(R.string.feedback_correct) else null,
         detail = when {
             feedback.correct && feedback.accentWarning ->
                 stringResource(R.string.feedback_accent_warning, feedback.correctAnswer)
-            feedback.correct -> null
+            // One more look at the other side of the answer: its meaning, or the Polish for it.
+            feedback.correct -> gloss
             else -> stringResource(R.string.feedback_correct_answer, feedback.correctAnswer)
         },
         continueLabel = stringResource(R.string.action_continue),

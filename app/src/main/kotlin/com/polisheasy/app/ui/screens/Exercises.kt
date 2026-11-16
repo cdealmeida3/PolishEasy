@@ -31,6 +31,9 @@ import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.Person
 import com.polisheasy.engine.TileSelection
+import androidx.compose.foundation.layout.width
+import com.polisheasy.app.ui.components.TonalButton
+import com.polisheasy.app.ui.components.PlayControls
 
 // The seven Exercises as the player shows them. Each draws only what is above the main action.
 
@@ -76,8 +79,7 @@ private fun Options(options: List<String>, tapped: Int?, feedback: Feedback?, on
 
 /**
  * The controls of a listening Exercise: [clip] plays by itself when the Exercise opens, the big
- * speaker plays it again and "Slow" plays it slowly. They stay usable after the answer, and
- * "Can't listen now" is offered until then.
+ * speaker plays it again and "Slow", beside it, plays it slowly. They stay usable after the answer.
  */
 @Composable
 private fun ListenControls(
@@ -85,21 +87,22 @@ private fun ListenControls(
     playing: Boolean,
     answering: Boolean,
     onPlay: (ClipView, Boolean) -> Unit,
-    onCantListen: () -> Unit,
 ) {
     // Once per showing: not again when the feedback appears, nor when an answered Exercise is rebuilt.
     LaunchedEffect(Unit) { if (answering) onPlay(clip, false) }
 
-    Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.fillMaxWidth()) {
-        PlayButton(stringResource(R.string.audio_play_again), onClick = { onPlay(clip, false) }, playing = playing)
-        Spacer(Modifier.height(Space.xs))
-        Row(horizontalArrangement = Arrangement.spacedBy(Space.xs)) {
-            QuietButton(stringResource(R.string.audio_slow), onClick = { onPlay(clip, true) })
-            if (answering) {
-                QuietButton(stringResource(R.string.cant_listen_now), onCantListen)
-            }
-        }
-    }
+    PlayControls(
+        play = { PlayButton(stringResource(R.string.audio_play_again), onClick = { onPlay(clip, false) }, playing = playing) },
+        helper = { TonalButton(stringResource(R.string.audio_slow), R.drawable.ic_speed, onClick = { onPlay(clip, true) }) },
+    )
+}
+
+/** The way out of listening, under the answers and quiet: it is rarely needed. Gone once the Exercise is answered. */
+@Composable
+private fun CantListen(answering: Boolean, onCantListen: () -> Unit) {
+    if (!answering) return
+    Spacer(Modifier.height(Space.xs))
+    QuietButton(stringResource(R.string.cant_listen_now), onCantListen, modifier = Modifier.fillMaxWidth(), subdued = true)
 }
 
 @Composable
@@ -114,9 +117,10 @@ internal fun ListenChooseExercise(
 ) {
     Instruction(stringResource(R.string.listen_choose_instruction))
     Spacer(Modifier.height(Space.m))
-    ListenControls(exercise.audio, playing, answering = feedback == null, onPlay, onCantListen)
+    ListenControls(exercise.audio, playing, answering = feedback == null, onPlay)
     Spacer(Modifier.height(Space.l))
     Options(exercise.options, tapped, feedback, onChoose)
+    CantListen(answering = feedback == null, onCantListen)
 }
 
 /** The reading form of a listen-and-choose Exercise: its meaning, and the same Polish options. Nothing plays. */
@@ -147,9 +151,10 @@ internal fun ListenTypeExercise(
 ) {
     Instruction(stringResource(R.string.listen_type_instruction))
     Spacer(Modifier.height(Space.m))
-    ListenControls(exercise.audio, playing, answering, onPlay, onCantListen)
+    ListenControls(exercise.audio, playing, answering, onPlay)
     Spacer(Modifier.height(Space.l))
     PolishAnswerField(typed, onTypedChange, answering, onSubmit)
+    CantListen(answering, onCantListen)
 }
 
 @Composable

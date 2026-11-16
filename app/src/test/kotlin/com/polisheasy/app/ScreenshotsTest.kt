@@ -177,8 +177,8 @@ class ScreenshotsTest {
             dailySetsInUnit = 8,
             teaches = listOf("Czy and nie", "Pan and pani"),
         )
-        // Yesterday and the three days before it were completed; the days before those were not.
-        fun week(today: Boolean) = (6L downTo 0L).map { ago -> DayView(clock.today.minusDays(ago), if (ago == 0L) today else ago <= 4) }
+        // A Thursday: Tuesday and Wednesday were completed, Monday was not, and three days are still to come.
+        fun week(today: Boolean) = (0L..6L).map { day -> DayView(clock.today.plusDays(day), if (day == 3L) today else day in 1L..2L, today = day == 3L, upcoming = day > 3) }
         val states = listOf(
             Triple("20-home-in-progress", Today.InProgress(SetProgress(correct = 7, total = 18)), next),
             Triple("21-home-ready-mid-unit", Today.DailySetAvailable, next),

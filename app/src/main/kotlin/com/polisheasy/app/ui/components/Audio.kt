@@ -1,14 +1,9 @@
 package com.polisheasy.app.ui.components
 
-import androidx.compose.animation.core.RepeatMode
-import androidx.compose.animation.core.animateFloat
-import androidx.compose.animation.core.infiniteRepeatable
-import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -17,41 +12,41 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
 import com.polisheasy.app.R
 import com.polisheasy.app.ui.PolishEasyTheme
 import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.app.ui.theme.Size
+import androidx.compose.animation.core.animateDpAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.foundation.shape.RoundedCornerShape
+import com.polisheasy.app.ui.theme.Corner
+import com.polisheasy.app.ui.theme.Scaled
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
+import com.polisheasy.app.ui.theme.Space
 
 /**
- * The big round button of a listening Exercise. [description] is what a screen reader says. While
- * [playing] it pulses slowly, the one thing in the app that moves without being touched.
+ * The big button of a listening Exercise. [description] is what a screen reader says. It is a
+ * circle at rest and a rounded square while [playing], so a Clip being heard can be seen.
  */
 @Composable
 fun PlayButton(description: String, onClick: () -> Unit, modifier: Modifier = Modifier, playing: Boolean = false) {
-    val pulse = Motion.pulse()
-    val scale = if (playing && pulse != null) {
-        rememberInfiniteTransition(label = "Clip playing").animateFloat(
-            initialValue = 1f,
-            targetValue = Motion.PULSE_SCALE,
-            animationSpec = infiniteRepeatable(pulse, RepeatMode.Reverse),
-            label = "Pulse",
-        )
-    } else {
-        null
-    }
+    val corner by animateDpAsState(
+        targetValue = if (playing) Corner.large else Size.playButton / 2,
+        animationSpec = Motion.shape(),
+        label = "Clip playing",
+    )
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
             .size(Size.playButton)
-            .graphicsLayer {
-                val now = scale?.value ?: 1f
-                scaleX = now
-                scaleY = now
-            }
-            .clip(CircleShape)
+            .clip(RoundedCornerShape(corner))
             .background(PolishEasyTheme.colors.brand)
             .clickable(role = Role.Button, onClick = onClick),
     ) {
@@ -64,6 +59,30 @@ fun PlayButton(description: String, onClick: () -> Unit, modifier: Modifier = Mo
     }
 }
 
+/**
+ * The [play] button of a listening Exercise in the middle, with its [helper], such as "Slow", to
+ * one side. At a large font size the helper goes under it, where its word fits on one line.
+ */
+@Composable
+fun PlayControls(play: @Composable () -> Unit, helper: @Composable () -> Unit, modifier: Modifier = Modifier) {
+    if (Scaled.roomy()) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = modifier.fillMaxWidth()) {
+            play()
+            Spacer(Modifier.height(Space.xs))
+            helper()
+        }
+    } else {
+        Row(verticalAlignment = Alignment.CenterVertically, modifier = modifier.fillMaxWidth()) {
+            Spacer(Modifier.weight(1f))
+            play()
+            Row(modifier = Modifier.weight(1f)) {
+                Spacer(Modifier.width(Space.m))
+                helper()
+            }
+        }
+    }
+}
+
 /** The small speaker beside Polish text. [tint] is for a speaker that sits on a coloured panel. */
 @Composable
 fun SpeakerButton(
@@ -73,6 +92,11 @@ fun SpeakerButton(
     tint: Color = MaterialTheme.colorScheme.primary,
 ) {
     IconButton(onClick = onClick, modifier = modifier.size(Size.touch)) {
-        Icon(painterResource(R.drawable.ic_volume_up), contentDescription = description, tint = tint)
+        Icon(
+            painterResource(R.drawable.ic_volume_up),
+            contentDescription = description,
+            tint = tint,
+            modifier = Modifier.size(Scaled.icon()),
+        )
     }
 }

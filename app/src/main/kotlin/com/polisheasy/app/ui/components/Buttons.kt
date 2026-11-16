@@ -17,6 +17,17 @@ import com.polisheasy.app.ui.theme.Corner
 import com.polisheasy.app.ui.theme.Edge
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Icon
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.ui.res.painterResource
+import androidx.annotation.DrawableRes
+import com.polisheasy.app.ui.theme.Scaled
 
 /** What a [PrimaryButton] sits in: on a screen it is the brand's, inside feedback it takes the feedback's colour. */
 enum class ButtonTone { Brand, Success, Caution }
@@ -79,10 +90,43 @@ private fun ButtonLabel(text: String, color: Color) {
     }
 }
 
-/** A quiet action in words alone: "Can't listen now", "Slow". */
+/**
+ * A quiet action in words alone: "OK", "Cancel". With [subdued] it is the colour of secondary
+ * text, for a way out that is rarely taken, such as "Can't listen now".
+ */
 @Composable
-fun QuietButton(text: String, onClick: () -> Unit, modifier: Modifier = Modifier) {
-    TextButton(onClick = onClick, modifier = modifier.heightIn(min = Size.touch)) {
-        Text(text, style = MaterialTheme.typography.labelLarge)
+fun QuietButton(text: String, onClick: () -> Unit, modifier: Modifier = Modifier, subdued: Boolean = false) {
+    val scheme = MaterialTheme.colorScheme
+    TextButton(
+        onClick = onClick,
+        colors = ButtonDefaults.textButtonColors(contentColor = if (subdued) scheme.onSurfaceVariant else scheme.primary),
+        modifier = modifier.heightIn(min = Size.touch),
+    ) {
+        Text(text, style = MaterialTheme.typography.labelLarge, textAlign = TextAlign.Center)
+    }
+}
+
+/**
+ * A small helper beside a bigger control, such as "Slow" beside the play button: a tonal pill with
+ * an [icon] and the word, so it reads as a button without competing with the main one.
+ */
+@Composable
+fun TonalButton(text: String, @DrawableRes icon: Int, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    val scheme = MaterialTheme.colorScheme
+    Surface(
+        onClick = onClick,
+        color = scheme.primaryContainer,
+        contentColor = scheme.onPrimaryContainer,
+        shape = CircleShape,
+        modifier = modifier.heightIn(min = Size.touch),
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.padding(start = Space.s, end = Space.m, top = Space.xs, bottom = Space.xs),
+        ) {
+            Icon(painterResource(icon), contentDescription = null, modifier = Modifier.size(Scaled.icon()))
+            Spacer(Modifier.width(Space.xs))
+            Text(text, style = MaterialTheme.typography.labelLarge)
+        }
     }
 }

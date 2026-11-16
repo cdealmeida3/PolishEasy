@@ -26,6 +26,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.polisheasy.app.ui.theme.Edge
 import com.polisheasy.app.ui.theme.Motion
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.ui.graphics.PathEffect
+import androidx.compose.ui.graphics.drawscope.Stroke
 
 /**
  * The shape buttons, option cards and word tiles share: a flat face in [fill] with a darker bottom
@@ -105,6 +108,28 @@ internal fun Edged(
         content = content,
     )
 }
+
+/**
+ * A dashed line around something empty that waits to be filled: a tile's slot, a day not yet
+ * completed. It is `outline`, so it shows in bright light where a faint fill alone would not.
+ */
+@Composable
+internal fun Modifier.dashedOutline(corner: Dp): Modifier {
+    val color = MaterialTheme.colorScheme.outline
+    return drawBehind {
+        val line = Edge.hairline.toPx() * 1.5f
+        val dash = DashLength.toPx()
+        drawRoundRect(
+            color = color,
+            topLeft = Offset(line / 2, line / 2),
+            size = Size(size.width - line, size.height - line),
+            cornerRadius = CornerRadius(corner.toPx().coerceAtMost(size.minDimension / 2)),
+            style = Stroke(line, pathEffect = PathEffect.dashPathEffect(floatArrayOf(dash, dash))),
+        )
+    }
+}
+
+private val DashLength = 4.dp
 
 /** A tick or a cross arriving: it grows to its size with a little bounce, once. */
 @Composable

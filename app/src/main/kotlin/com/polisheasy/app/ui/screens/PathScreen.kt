@@ -66,7 +66,8 @@ private fun PathUnit(unit: UnitView, at: DailySetView?, marks: JourneyMarks, onR
     ) {
         stops.forEachIndexed { index, dailySet ->
             val state = dailySet.state
-            val number = stringResource(R.string.path_daily_set, dailySet.number)
+            // Its number in its Unit, the same one Home shows.
+            val number = stringResource(R.string.path_stop_number, index + 1, stops.size)
             // A Daily Set with no Tip has no title of its own, so its number stands in for one.
             val numbered = dailySet.title != null
             val next = at?.id == dailySet.id && state == DailySetState.LOCKED
@@ -82,7 +83,7 @@ private fun PathUnit(unit: UnitView, at: DailySetView?, marks: JourneyMarks, onR
                     DailySetState.TODAY -> StopState.Today
                     DailySetState.LOCKED -> StopState.Locked
                 },
-                title = dailySet.title ?: number,
+                title = dailySet.title ?: stringResource(R.string.path_daily_set, index + 1),
                 note = when {
                     !numbered -> says
                     says == null -> number

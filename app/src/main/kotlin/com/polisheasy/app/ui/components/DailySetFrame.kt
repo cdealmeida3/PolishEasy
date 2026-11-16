@@ -45,6 +45,8 @@ import androidx.compose.ui.semantics.semantics
 import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
+import com.polisheasy.app.ui.theme.Scaled
+import com.polisheasy.app.ui.PolishEasyTheme
 
 /**
  * What every Tip and Exercise of a Daily Set sits in: a close button and the progress bar at the
@@ -81,6 +83,7 @@ fun <K> DailySetFrame(
                     painterResource(R.drawable.ic_close),
                     contentDescription = closeLabel,
                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.size(Scaled.icon()),
                 )
             }
             Spacer(Modifier.width(Space.xxs))
@@ -164,7 +167,8 @@ fun ProgressBar(progress: Float, description: String, modifier: Modifier = Modif
         modifier = modifier
             .height(Size.progressBar)
             .clip(CircleShape)
-            .background(MaterialTheme.colorScheme.surfaceContainerHigh)
+            // One step quieter than other tracks, so the brand's fill stands out from it in the dark theme too.
+            .background(MaterialTheme.colorScheme.surfaceContainer)
             .semantics {
                 contentDescription = description
                 progressBarRangeInfo = ProgressBarRangeInfo(progress.coerceIn(0f, 1f), 0f..1f)
@@ -175,7 +179,7 @@ fun ProgressBar(progress: Float, description: String, modifier: Modifier = Modif
                 // The spring may pass its target for a moment; the bar never draws outside its track.
                 .fillMaxWidth(shown.coerceIn(0f, 1f))
                 .fillMaxHeight()
-                .background(MaterialTheme.colorScheme.primary, CircleShape),
+                .background(PolishEasyTheme.colors.brand, CircleShape),
         )
     }
 }

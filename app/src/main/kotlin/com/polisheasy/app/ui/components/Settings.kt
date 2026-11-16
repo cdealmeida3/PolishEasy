@@ -37,6 +37,7 @@ import com.polisheasy.app.R
 import com.polisheasy.app.ui.PolishEasyTheme
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
+import com.polisheasy.app.ui.theme.Scaled
 
 private val Badge = 40.dp
 
@@ -72,10 +73,9 @@ fun SwitchSetting(
     val scheme = MaterialTheme.colorScheme
     val colors = PolishEasyTheme.colors
     SettingRow(icon, modifier.toggleable(value = checked, role = Role.Switch, onValueChange = onCheckedChange)) {
-        SettingWords(label, note, Modifier.weight(1f))
-        Spacer(Modifier.width(Space.m))
         // On is the brand's colour in both themes, like the main button. The row handles the tap.
-        Switch(
+        val switch = @Composable {
+            Switch(
             checked = checked,
             onCheckedChange = null,
             colors = SwitchDefaults.colors(
@@ -86,6 +86,19 @@ fun SwitchSetting(
                 uncheckedBorderColor = scheme.outline,
             ),
         )
+        }
+        if (Scaled.roomy()) {
+            // At a large font size the switch goes under the words, which then have the row's width.
+            Column(modifier = Modifier.weight(1f)) {
+                SettingWords(label, note, Modifier)
+                Spacer(Modifier.height(Space.xs))
+                switch()
+            }
+        } else {
+            SettingWords(label, note, Modifier.weight(1f))
+            Spacer(Modifier.width(Space.m))
+            switch()
+        }
     }
 }
 
@@ -137,6 +150,7 @@ fun LinkSetting(
             painterResource(R.drawable.ic_chevron_right),
             contentDescription = null,
             tint = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.size(Scaled.icon()),
         )
     }
 }

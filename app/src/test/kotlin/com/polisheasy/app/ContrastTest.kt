@@ -53,7 +53,11 @@ class ContrastTest {
 
             // Icons and shapes that say something, and numbers at display size.
             shape("primary", scheme.primary, "primaryContainer", scheme.primaryContainer)
-            shape("the progress bar", scheme.primary, "its track", scheme.surfaceContainerHigh)
+            shape("the progress bar", colors.brand, "its track", scheme.surfaceContainer)
+            shape("a completed stop", colors.completed, "a card", scheme.surfaceContainerLowest)
+            shape("the tick on a completed stop", colors.onSuccess, "a completed stop", colors.completed)
+            shape("the outline of an empty slot", scheme.outline, "its fill", scheme.surfaceContainerHigh)
+            text("onPrimaryContainer", scheme.onPrimaryContainer, "a tonal button", scheme.primaryContainer)
             shape("the ring of the score", colors.success, "its track", scheme.surfaceContainerHigh)
             shape("a text field's border", scheme.outline, "background", scheme.background)
             shape("a switch that is off", scheme.outline, "a card", scheme.surfaceContainerLowest)
