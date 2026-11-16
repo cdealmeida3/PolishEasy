@@ -1,0 +1,191 @@
+{
+  "id": "a1-u02-d05",
+  "tips": [
+    {
+      "id": "a1-u02-d05-t01",
+      "before": "a1-u02-d05-e01",
+      "title": { "en": "Mieć: to have" },
+      "body": { "en": "Mam, masz, ma follow a common pattern: -m for \"I\", -sz for \"you\", and no ending for \"he\" and \"she\". Mam pytanie is \"I have a question\", and masz czas? is \"do you have time?\"." },
+      "conjugation": {
+        "verb": "mieć",
+        "meaning": { "en": "to have" },
+        "forms": { "ja": "mam", "ty": "masz", "on": "ma", "my": "mamy", "wy": "macie", "oni": "mają" }
+      }
+    },
+    {
+      "id": "a1-u02-d05-t02",
+      "before": "a1-u02-d05-e07",
+      "title": { "en": "Mam na imię" },
+      "body": { "en": "To give a first name, Poles say \"I have for a name\": mam na imię Ewa. To ask a friend: jak masz na imię? To ask politely: jak pan ma na imię? Jak means \"how\"." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d05-e01",
+      "prompt": "mam",
+      "options": [
+        { "en": "I have" },
+        { "en": "you have (one friend)" },
+        { "en": "I am" }
+      ],
+      "correctOption": 0,
+      "items": ["miec-mam"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d05-e02",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "ja",
+      "acceptedAnswers": ["mam"],
+      "items": ["miec-mam"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d05-e03",
+      "prompt": "masz",
+      "options": [
+        { "en": "I have" },
+        { "en": "you are (one friend)" },
+        { "en": "you have (one friend)" }
+      ],
+      "correctOption": 2,
+      "items": ["miec-masz"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d05-e04",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "ty",
+      "acceptedAnswers": ["masz"],
+      "items": ["miec-masz"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d05-e05",
+      "prompt": "ma",
+      "options": [
+        { "en": "I have" },
+        { "en": "he has; she has; it has" },
+        { "en": "he is; she is; it is" }
+      ],
+      "correctOption": 1,
+      "items": ["miec-ma"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d05-e06",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "on",
+      "acceptedAnswers": ["ma"],
+      "items": ["miec-ma"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d05-e07",
+      "prompt": "na imię",
+      "options": [
+        { "en": "nice to meet you" },
+        { "en": "as a first name (mam na imię: my name is)" },
+        { "en": "where from" }
+      ],
+      "correctOption": 1,
+      "items": ["na-imie"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d05-e08",
+      "prompt": { "en": "my first name is Ewa" },
+      "acceptedAnswers": ["mam na imię Ewa"],
+      "distractors": ["Adam", "masz"],
+      "items": ["miec-mam", "na-imie", "ewa"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d05-e09",
+      "prompt": "jak",
+      "options": [
+        { "en": "where from" },
+        { "en": "how" },
+        { "en": "also; too" }
+      ],
+      "correctOption": 1,
+      "items": ["jak"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d05-e10",
+      "prompt": { "en": "what is your first name? (one friend)" },
+      "acceptedAnswers": ["jak masz na imię?"],
+      "distractors": ["ma", "czy"],
+      "items": ["jak", "miec-masz", "na-imie"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d05-e11",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "on",
+      "sentence": "Ona ___ na imię Ewa.",
+      "sentenceMeaning": { "en": "Her name is Ewa." },
+      "acceptedAnswers": ["ma"],
+      "items": ["ona", "miec-ma", "na-imie", "ewa"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d05-e12",
+      "prompt": "czas",
+      "options": [
+        { "en": "a question" },
+        { "en": "here" },
+        { "en": "time" }
+      ],
+      "correctOption": 2,
+      "items": ["czas"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d05-e13",
+      "text": "masz czas?",
+      "distractors": ["mam czas?", "ma czas?"],
+      "items": ["miec-masz", "czas"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d05-e14",
+      "prompt": "pytanie",
+      "options": [
+        { "en": "a question" },
+        { "en": "time" },
+        { "en": "a problem" }
+      ],
+      "correctOption": 0,
+      "items": ["pytanie"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d05-e15",
+      "prompt": { "en": "excuse me, I have a question" },
+      "acceptedAnswers": ["przepraszam, mam pytanie"],
+      "distractors": ["czas", "masz"],
+      "items": ["przepraszam", "miec-mam", "pytanie"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u02-d05-e16",
+      "prompt": { "en": "what is your first name? (to a man, formal)" },
+      "acceptedAnswers": ["jak pan ma na imię?", "jak ma pan na imię?"],
+      "items": ["jak", "pan", "miec-ma", "na-imie"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d05-e17",
+      "text": "jak się pani ma?",
+      "distractors": ["jak się pan ma?", "jak się masz?"],
+      "items": ["jak-sie-pani-ma"]
+    }
+  ]
+}

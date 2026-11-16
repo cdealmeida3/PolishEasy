@@ -17,8 +17,23 @@ An outline of the Units of the A1 Path, so that each Unit fits what follows it. 
 | 11 | Travel and plans | 8 | Future with będę; do with the genitive; transport, tickets, weather |
 | 12 | Health and help | 7 | Body; boli mnie; mi, ci; polite requests; revision of A1 |
 
-## What Unit 1 leaves for later
+## What Unit 1 left for Unit 2
 
-- **być** is not in Unit 1. Unit 2 introduces it, and must give its Items the ids `byc-jestem`, `byc-jestes`, `byc-jest`, `byc-jestesmy`, `byc-jestescie` and `byc-sa`, which an early build shipped.
-- **pan and pani** are not in Unit 1, because greeting someone by title needs the dative or vocative (*dzień dobry panu*, *panie Nowak*). Unit 2 introduces them in *Jak się pan ma?*, where the nominative is right.
-- Unit 1 shows the endings of one verb, *dziękować*, and practises only its "we" form. Unit 2 teaches conjugation properly.
+Unit 1 has no *być*, no *pan* and *pani*, and shows the endings of only one verb, *dziękować*. Unit 2 took all three up: it introduces *być* under the ids `byc-jestem`, `byc-jestes`, `byc-jest`, `byc-jestesmy`, `byc-jestescie` and `byc-sa`, which an early build shipped, teaches *pan* and *pani* in the nominative (*Jak się pan ma?*, *czy pani mówi po polsku?*), and teaches conjugation with three full tables.
+
+## What Unit 2 gives, and leaves for later
+
+Unit 2 has 8 Daily Sets and 56 Items. A later Unit can rely on:
+
+- every personal pronoun except *ono*: *ja, ty, on, ona, my, wy, oni, one*, and formal *pan*, *pani*;
+- all six present forms of *być*, *mieć* and *mówić*, each its own Item (`byc-…`, `miec-…`, `mowic-…`);
+- *to jest…*, *czy* questions, *nie* before a verb, *i*, *a*, *też*, *ale*, *jak*, *skąd*, *tutaj*, *trochę*;
+- the names *Adam* and *Ewa*, which are Items so that sentences can have a subject;
+- *mam na imię…*, *nazywam się…*, *jak się nazywasz?*; *z Polski*, *z Anglii*; *po polsku*, *po angielsku*; *czas*, *pytanie*, *problem*.
+
+Left for later, on purpose:
+
+- **Cases.** The instrumental is met only as four fixed words, *Polakiem*, *Polką*, *Anglikiem*, *Angielką* (ids `polakiem`, `polka-instr`, `anglikiem`, `angielka-instr`, so that the dictionary forms *Polak*, *Polka* can have their own ids). Unit 4 explains the ending. The genitive after *z* is met only as two fixed phrases.
+- ***mieć* is never negated with an object** (*nie mam czasu* needs the genitive, Unit 6). *Mieć* takes only *czas*, *pytanie*, *problem*, whose form does not change after it. Unit 3 can use *mam* for age and *mieć* for family.
+- ***ono*** is named in a Tip but is not an Item. ***państwo***, ***jak się pan nazywa?***, surnames, other countries and other languages (some are listed in Tips, none is an Item), ***kto*** and ***co to jest?*** (Unit 4), and the gender of nouns (Unit 3).
+- *nie* keeps its Unit 1 meaning "no" as an Item; that it also means "not" is taught by a Tip.

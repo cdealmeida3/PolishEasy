@@ -1,0 +1,180 @@
+{
+  "id": "a1-u02-d06",
+  "tips": [
+    {
+      "id": "a1-u02-d06-t01",
+      "before": "a1-u02-d06-e01",
+      "title": { "en": "The plural of mieć" },
+      "body": { "en": "Mamy, macie, mają. The endings -my and -cie are the same as in jesteśmy and jesteście, and \"they\" ends in -ą. Mamy problem is \"we have a problem\"." },
+      "conjugation": {
+        "verb": "mieć",
+        "meaning": { "en": "to have" },
+        "forms": { "ja": "mam", "ty": "masz", "on": "ma", "my": "mamy", "wy": "macie", "oni": "mają" }
+      }
+    },
+    {
+      "id": "a1-u02-d06-t02",
+      "before": "a1-u02-d06-e11",
+      "title": { "en": "Nazywam się" },
+      "body": { "en": "Nazywam się is \"I am called\". It is the usual way to give a full name, and the one for formal situations: nazywam się Adam Nowak. Mam na imię gives only the first name. To ask a friend: jak się nazywasz?" }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d06-e01",
+      "prompt": "mamy",
+      "options": [
+        { "en": "you have (several people)" },
+        { "en": "we have" },
+        { "en": "we are" }
+      ],
+      "correctOption": 1,
+      "items": ["miec-mamy"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d06-e02",
+      "prompt": "problem",
+      "options": [
+        { "en": "a problem" },
+        { "en": "a question" },
+        { "en": "time" }
+      ],
+      "correctOption": 0,
+      "items": ["problem"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d06-e03",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "my",
+      "sentence": "My ___ problem.",
+      "sentenceMeaning": { "en": "We have a problem." },
+      "acceptedAnswers": ["mamy"],
+      "items": ["my", "miec-mamy", "problem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d06-e04",
+      "prompt": "macie",
+      "options": [
+        { "en": "we have" },
+        { "en": "you are (several people)" },
+        { "en": "you have (several people)" }
+      ],
+      "correctOption": 2,
+      "items": ["miec-macie"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d06-e05",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "wy",
+      "sentence": "Czy ___ czas?",
+      "sentenceMeaning": { "en": "Do you have time? (several people)" },
+      "acceptedAnswers": ["macie"],
+      "items": ["czy", "miec-macie", "czas"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d06-e06",
+      "text": "macie problem?",
+      "distractors": ["mamy problem?", "mają problem?"],
+      "items": ["miec-macie", "problem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d06-e07",
+      "prompt": "mają",
+      "options": [
+        { "en": "we have" },
+        { "en": "they have" },
+        { "en": "they are" }
+      ],
+      "correctOption": 1,
+      "items": ["miec-maja"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d06-e08",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "oni",
+      "sentence": "Adam i Ewa ___ pytanie.",
+      "sentenceMeaning": { "en": "Adam and Ewa have a question." },
+      "acceptedAnswers": ["mają"],
+      "items": ["adam", "i", "ewa", "miec-maja", "pytanie"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d06-e09",
+      "prompt": { "en": "they (men, or men and women) have a problem too" },
+      "acceptedAnswers": ["oni też mają problem", "też mają problem"],
+      "distractors": ["one", "ma"],
+      "items": ["oni", "tez", "miec-maja", "problem"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u02-d06-e10",
+      "prompt": { "en": "we have time" },
+      "acceptedAnswers": ["mamy czas", "my mamy czas"],
+      "items": ["miec-mamy", "czas"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d06-e11",
+      "prompt": "nazywam się",
+      "options": [
+        { "en": "how are you?" },
+        { "en": "my name is; I am called" },
+        { "en": "nice to meet you" }
+      ],
+      "correctOption": 1,
+      "items": ["nazywam-sie"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d06-e12",
+      "prompt": { "en": "I am called Ewa, and you? (to a man, formal)" },
+      "acceptedAnswers": ["nazywam się Ewa, a pan?"],
+      "distractors": ["pani", "ty"],
+      "items": ["nazywam-sie", "ewa", "a", "pan"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d06-e13",
+      "prompt": "jak się nazywasz?",
+      "options": [
+        { "en": "how are you?" },
+        { "en": "where are you from? (one friend)" },
+        { "en": "what is your name? (one friend)" }
+      ],
+      "correctOption": 2,
+      "items": ["jak-sie-nazywasz"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d06-e14",
+      "prompt": { "en": "hi, what is your name? (one friend)" },
+      "acceptedAnswers": ["cześć, jak się nazywasz?"],
+      "distractors": ["masz", "pan"],
+      "items": ["czesc", "jak-sie-nazywasz"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d06-e15",
+      "text": "jak się nazywasz?",
+      "distractors": ["jak się masz?", "jak masz na imię?"],
+      "items": ["jak-sie-nazywasz"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u02-d06-e16",
+      "acceptedAnswers": ["nazywam się Adam"],
+      "items": ["nazywam-sie", "adam"]
+    }
+  ]
+}

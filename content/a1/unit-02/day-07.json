@@ -1,0 +1,194 @@
+{
+  "id": "a1-u02-d07",
+  "tips": [
+    {
+      "id": "a1-u02-d07-t01",
+      "before": "a1-u02-d07-e01",
+      "title": { "en": "Mówić: to speak" },
+      "body": { "en": "Mówię, mówisz, mówi. Many verbs go this way: -ę for \"I\", -isz for \"you\", -i for \"he\" and \"she\". At the end of a word, ę is said almost like a plain e." },
+      "conjugation": {
+        "verb": "mówić",
+        "meaning": { "en": "to speak" },
+        "forms": { "ja": "mówię", "ty": "mówisz", "on": "mówi", "my": "mówimy", "wy": "mówicie", "oni": "mówią" }
+      }
+    },
+    {
+      "id": "a1-u02-d07-t02",
+      "before": "a1-u02-d07-e07",
+      "title": { "en": "Po polsku" },
+      "body": { "en": "A language you speak is said with po: mówię po polsku is \"I speak Polish\", and po angielsku is \"English\". Trochę means \"a little\" and ale means \"but\". Other languages: po niemiecku (German), po hiszpańsku (Spanish), po francusku (French), po portugalsku (Portuguese)." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d07-e01",
+      "prompt": "mówię",
+      "options": [
+        { "en": "you speak (one friend)" },
+        { "en": "I have" },
+        { "en": "I speak" }
+      ],
+      "correctOption": 2,
+      "items": ["mowic-mowie"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d07-e02",
+      "verb": "mówić",
+      "meaning": { "en": "to speak" },
+      "person": "ja",
+      "acceptedAnswers": ["mówię"],
+      "items": ["mowic-mowie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d07-e03",
+      "prompt": "mówisz",
+      "options": [
+        { "en": "I speak" },
+        { "en": "you speak (one friend)" },
+        { "en": "you have (one friend)" }
+      ],
+      "correctOption": 1,
+      "items": ["mowic-mowisz"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d07-e04",
+      "verb": "mówić",
+      "meaning": { "en": "to speak" },
+      "person": "ty",
+      "acceptedAnswers": ["mówisz"],
+      "items": ["mowic-mowisz"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d07-e05",
+      "prompt": "mówi",
+      "options": [
+        { "en": "he speaks; she speaks" },
+        { "en": "I speak" },
+        { "en": "he has; she has; it has" }
+      ],
+      "correctOption": 0,
+      "items": ["mowic-mowi"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d07-e06",
+      "verb": "mówić",
+      "meaning": { "en": "to speak" },
+      "person": "on",
+      "acceptedAnswers": ["mówi"],
+      "items": ["mowic-mowi"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d07-e07",
+      "prompt": "po polsku",
+      "options": [
+        { "en": "(in) Polish" },
+        { "en": "from Poland" },
+        { "en": "(in) English" }
+      ],
+      "correctOption": 0,
+      "items": ["po-polsku"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d07-e08",
+      "prompt": { "en": "I speak Polish" },
+      "acceptedAnswers": ["mówię po polsku"],
+      "distractors": ["mówi", "tak"],
+      "items": ["mowic-mowie", "po-polsku"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d07-e09",
+      "prompt": "po angielsku",
+      "options": [
+        { "en": "from England" },
+        { "en": "(in) English" },
+        { "en": "(in) Polish" }
+      ],
+      "correctOption": 1,
+      "items": ["po-angielsku"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d07-e10",
+      "text": "czy mówisz po angielsku?",
+      "distractors": ["czy mówi po angielsku?", "czy mówisz po polsku?"],
+      "items": ["czy", "mowic-mowisz", "po-angielsku"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d07-e11",
+      "verb": "mówić",
+      "meaning": { "en": "to speak" },
+      "person": "on",
+      "sentence": "Czy pani ___ po polsku?",
+      "sentenceMeaning": { "en": "Do you speak Polish? (to a woman, formal)" },
+      "acceptedAnswers": ["mówi"],
+      "items": ["czy", "pani", "mowic-mowi", "po-polsku"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d07-e12",
+      "prompt": "trochę",
+      "options": [
+        { "en": "very; very much" },
+        { "en": "a little" },
+        { "en": "also; too" }
+      ],
+      "correctOption": 1,
+      "items": ["troche"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d07-e13",
+      "prompt": { "en": "I speak a little Polish" },
+      "acceptedAnswers": ["mówię trochę po polsku", "trochę mówię po polsku"],
+      "distractors": ["bardzo", "mówi"],
+      "items": ["mowic-mowie", "troche", "po-polsku"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d07-e14",
+      "prompt": "ale",
+      "options": [
+        { "en": "and" },
+        { "en": "also; too" },
+        { "en": "but" }
+      ],
+      "correctOption": 2,
+      "items": ["ale"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d07-e15",
+      "prompt": { "en": "I speak English, but I do not speak Polish" },
+      "acceptedAnswers": ["mówię po angielsku, ale nie mówię po polsku"],
+      "distractors": ["tak", "mówi"],
+      "items": ["mowic-mowie", "po-angielsku", "ale", "nie", "po-polsku"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d07-e16",
+      "verb": "mówić",
+      "meaning": { "en": "to speak" },
+      "person": "on",
+      "sentence": "Ewa jest z Anglii, ale ___ po polsku.",
+      "sentenceMeaning": { "en": "Ewa is from England, but she speaks Polish." },
+      "acceptedAnswers": ["mówi"],
+      "items": ["ewa", "byc-jest", "z-anglii", "ale", "mowic-mowi", "po-polsku"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u02-d07-e17",
+      "acceptedAnswers": ["Adam też mówi po angielsku"],
+      "items": ["adam", "tez", "mowic-mowi", "po-angielsku"]
+    }
+  ]
+}

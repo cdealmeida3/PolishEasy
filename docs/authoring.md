@@ -1,6 +1,6 @@
 # Authoring Daily Sets
 
-The rules the Authored Content is written to. The [content checker](content-checks.md) decides whether content can ship; these rules are about whether it teaches. `AuthoredContentTest` holds the content to rules 1, 2, 3 and 8. The rest need a person, or the Polish check of issue #16.
+The rules the Authored Content is written to. The [content checker](content-checks.md) decides whether content can ship; these rules are about whether it teaches. `AuthoredContentTest` holds the content to rules 1, 2, 3 and 8, and to part of rule 10. The rest need a person, or the Polish check of issue #16.
 
 Before writing a Unit, read [a1-path.md](a1-path.md) for what it covers and what the Units around it cover.
 
@@ -17,7 +17,7 @@ Before writing a Unit, read [a1-path.md](a1-path.md) for what it covers and what
 9. **Tips are short** (three or four sentences), explain a sound with an English comparison and one or two Polish words from that day, and sit before the first Exercise that needs them. At most 2 a day.
 10. **Two Exercises that look the same to the Learner have the same answer.** Two `type_answer` Exercises with the same prompt, or two `word_tiles` Exercises with the same prompt and tiles, list the same Accepted Answers.
 
-A Daily Set has 15 to 17 Exercises and 6 to 8 new Items. With up to 8 Review Exercises that is 23 to 25 Exercises, about 10 to 15 minutes.
+A Daily Set has 15 to 18 Exercises and 6 to 8 new Items. With up to 8 Review Exercises that is 23 to 25 Exercises, about 10 to 15 minutes.
 
 ## Synonyms to accept
 
@@ -33,6 +33,22 @@ A Daily Set has 15 to 17 Exercises and 6 to 8 new Items. With up to 8 Review Exe
 | likewise | nawzajem, wzajemnie |
 | just a moment | chwileczkę, chwilę, momencik |
 | great | świetnie, super |
+| here | tutaj, tu |
+| my name is | mam na imię, nazywam się, jestem (only where the prompt does not name the verb) |
+| what's your name? | jak masz na imię?, jak się nazywasz? |
+
+## Conventions since Unit 2
+
+- **English "you" always says which.** "you (one friend)" is *ty*, "you (several people)" is *wy*, "you (to a man, formal)" is *pan*, "you (to a woman, formal)" is *pani*. The same for "they": "they (men, or men and women)" is *oni*, "they (women)" is *one*. Where a sentence depends on who is speaking, the prompt says so: "I am English (a woman speaking)".
+- **The pronoun is optional, so both are accepted.** The first Accepted Answer is the natural one without *ja*, *ty*, *my*, *wy* (*jestem z Polski*), and the version with the pronoun is also accepted (*ja jestem z Polski*). The third person keeps its pronoun or name. When the first Accepted Answer has no pronoun, the Exercise does not list the pronoun's Item.
+- **A question is accepted with and without *czy*** in `type_answer` (*czy pan ma czas?*, *pan ma czas?*). In `word_tiles`, the tiles of the first Accepted Answer include *czy*, so the answer without it is listed too.
+- **Formal "you" takes the form of *on*:** *czy pan mówi po angielsku?* A conjugation Exercise with *pan* or *pani* in its sentence has the person `on`.
+- **Word order to accept:** *mówię trochę po polsku* and *trochę mówię po polsku*; *ona mówi dobrze po angielsku* and *ona dobrze mówi po angielsku*; *ja też jestem z Polski* and *też jestem z Polski*.
+- **A masculine and a feminine answer are both accepted** when the prompt does not say who is speaking: "I am Polish" is *jestem Polakiem* and *jestem Polką*.
+- **Word tiles can be left unused**, so a shorter right answer that the tiles can build is listed too: *to jest Adam* and *to Adam*.
+- **Listening:** no `listen_type` on a bare one-syllable word (*i*, *a*, *on*, *są*, *ma*, *czy*): put it in a short sentence. *czy* is never a distractor for or against *trzy*. Never pair *Polką* with *Polka*, or *mówię* with a made-up *mówie* (rule 5). When the spoken text is a question, the wrong options carry the question mark too.
+- **No two conjugation Exercises have the same verb, person and sentence** (rule 10, and the Review needs variety): only one bare Exercise for each form.
+- **Every form of a verb is introduced on a day whose Tip shows that verb's table**, and is practised by a conjugation Exercise. `AuthoredContentTest` holds *być*, *mieć* and *mówić* to this.
 
 ## How the Polish is checked
 

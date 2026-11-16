@@ -109,14 +109,66 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `played one per day, day 1 has no Review, day 2 ends with 5 Review Exercises, day 3 with 6 and days 4 to 7 with 8`() {
+    fun `played one per day, Unit 1 has 0, 5, 6 then 8 Review Exercises a day, and every day of Unit 2 has 8`() {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
-        assertEquals(listOf(0, 5, 6, 8, 8, 8, 8), days.map { steps -> steps.count { it is Step.ShowExercise && it.review } })
         assertEquals(
-            listOf(8, 7, 6, 7, 6, 6, 6),
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 },
+            days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
+        )
+        assertEquals(
+            listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
+    }
+
+    @Test
+    fun `the course has 2 Units of 7 and 8 Daily Sets`() {
+        assertEquals(listOf(7, 8), course.levels.single().units.map { it.dailySets.size })
+    }
+
+    @Test
+    fun `every form of być, mieć and mówić is an Item, introduced after a Tip that shows its verb's table, and practised by a conjugation Exercise`() {
+        val verbs = setOf("być", "mieć", "mówić")
+        val tables = course.path.flatMap { it.tips }.mapNotNull { it.conjugation }.filter { it.verb in verbs }.distinct()
+        assertEquals(verbs, tables.map { it.verb }.toSet())
+
+        tables.forEach { table ->
+            table.forms.forEach { (person, form) ->
+                val item = course.items.singleOrNull { it.text == form }
+                assertTrue(item != null, "The form $form of ${table.verb} is not the text of exactly one Item")
+                val dailySet = course.path.first { item in course.introducedIn(it) }
+                val position = { id: String -> dailySet.exercises.indexOfFirst { it.id == id } }
+                val introduction = dailySet.exercises.indexOfFirst { item!!.id in it.items }
+                assertTrue(
+                    dailySet.tips.any { it.conjugation?.verb == table.verb && position(it.before) <= introduction },
+                    "${dailySet.id} introduces $form without first showing the table of ${table.verb}",
+                )
+                assertTrue(
+                    allExercises.any { it is Conjugation && it.verb == table.verb && it.person == person && item!!.id in it.items },
+                    "No conjugation Exercise of ${table.verb} practises $form",
+                )
+            }
+        }
+    }
+
+    @Test
+    fun `Unit 2 reuses the six być Item ids an early build shipped`() {
+        assertEquals(
+            mapOf(
+                "byc-jestem" to "jestem", "byc-jestes" to "jesteś", "byc-jest" to "jest",
+                "byc-jestesmy" to "jesteśmy", "byc-jestescie" to "jesteście", "byc-sa" to "są",
+            ),
+            course.items.filter { it.id.startsWith("byc-") }.associate { it.id to it.text },
+        )
+    }
+
+    @Test
+    fun `no two conjugation Exercises look the same to the Learner`() {
+        val alike = allExercises.filterIsInstance<Conjugation>().groupBy { Triple(it.verb, it.person, it.sentence) }
+        alike.values.filter { it.size > 1 }.forEach { group ->
+            assertTrue(false, "Conjugation Exercises ${group.map { it.id }} look the same")
+        }
     }
 
     // The authoring rules of docs/authoring.md that a test can hold the content to.
