@@ -93,6 +93,17 @@ internal class CheckingPolishTest {
         assertEquals(emptyList(), letters.problems)
     }
 
+    @Test
+    fun `what a Tip marks as Polish has to be Polish, even a word with no Polish letter`() {
+        val english = check(content(tips = listOf(TipText(file, "t1", "Say thanks and bardzo.", polish = listOf("thanks", "bardzo")))))
+        val pieces = check(
+            content(tips = listOf(TipText(file, "t1", "sz, -my and do-BRA-noc, mam czas.", polish = listOf("sz", "-my", "do-BRA-noc", "mam czas")))),
+        )
+
+        assertEquals(listOf("dictionary: thanks"), english.problems.map { it.key })
+        assertEquals(emptyList(), pieces.problems)
+    }
+
     // Verb forms
 
     @Test

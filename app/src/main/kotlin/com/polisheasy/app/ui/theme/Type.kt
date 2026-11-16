@@ -8,6 +8,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.intl.LocaleList
 import androidx.compose.ui.unit.sp
 import com.polisheasy.app.R
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.buildAnnotatedString
 
 /** Bundled, so the app stays offline. Its licence text is `res/raw/nunito_ofl.txt`. */
 private val Nunito = FontFamily(
@@ -49,3 +52,19 @@ internal val PolishEasyTypography = Typography(
 fun TextStyle.inPolish(): TextStyle = copy(localeList = Polish)
 
 private val Polish = LocaleList("pl")
+
+/** Polish standing inside a sentence of the Base Language: Nunito at its heaviest, and said with a Polish voice. */
+private val PolishInProse = SpanStyle(fontFamily = Nunito, fontWeight = FontWeight.ExtraBold, localeList = Polish)
+
+/**
+ * [text] with the stretches at [polish] set apart as Polish, so the eye finds the words being
+ * taught and a screen reader says them as Polish. A range that reaches outside the text is cut to it.
+ */
+fun withPolish(text: String, polish: List<IntRange>): AnnotatedString = buildAnnotatedString {
+    append(text)
+    polish.forEach { range ->
+        val start = range.first.coerceIn(0, text.length)
+        val end = (range.last + 1).coerceIn(start, text.length)
+        if (end > start) addStyle(PolishInProse, start, end)
+    }
+}

@@ -116,6 +116,17 @@ fun checkPolish(content: PolishContent, reference: PolishReference, reviews: Rev
     }
     content.sentences.forEach { look(it.text, places(it.uses), inTip = false) }
     content.tips.forEach { look(it.text, listOf(Place(it.file, it.id)), inTip = true) }
+    // What a Tip marks as Polish has to be Polish: every word of it, not only those spelt with a Polish letter.
+    // A letter, a pair of letters, an ending or a word cut into syllables ("sz", "-my", "do-BRA-noc") is not a
+    // word and is not looked up.
+    content.tips.forEach { tip ->
+        tip.polish.filter { '-' !in it }.forEach { marked ->
+            word.findAll(marked).map { it.value }.filter { it.length > 2 }.forEach { candidate ->
+                looked += candidate
+                if (!reference.knows(candidate)) unknown.getOrPut(candidate) { mutableListOf() } += Place(tip.file, tip.id)
+            }
+        }
+    }
     unknown.forEach { (unknownWord, places) ->
         found += PolishProblem(Pass.DICTIONARY, "dictionary: $unknownWord", "$unknownWord is not in the dictionary", places.distinct())
     }

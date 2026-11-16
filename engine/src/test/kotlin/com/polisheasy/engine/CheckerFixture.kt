@@ -79,7 +79,7 @@ internal data class CheckerFixture(val texts: Map<String, String>) {
 
         private val dayOne = DailySet(
             id = "a1-u01-d01",
-            tips = listOf(Tip("a1-u01-d01-t01", before = "a1-u01-d01-e01", title = en("Saying hello"), body = en("Cześć is informal."))),
+            tips = listOf(Tip("a1-u01-d01-t01", before = "a1-u01-d01-e01", title = en("Saying hello"), body = en("*Cześć* is informal."))),
             exercises = listOf(
                 choice("a1-u01-d01-e01", "cześć", "hi", "thank you", "czesc"),
                 TypeAnswer("a1-u01-d01-e02", en("thank you"), listOf("dziękuję"), listOf("dziekuje")),

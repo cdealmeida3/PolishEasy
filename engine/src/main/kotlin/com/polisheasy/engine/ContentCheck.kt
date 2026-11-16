@@ -155,6 +155,9 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
             }
             needsText(file, tip.id, "The title of $name", tip.title)
             needsText(file, tip.id, "The body of $name", tip.body)
+            tip.body.values.mapNotNull(::marksProblem).distinct().forEach { problem ->
+                report(file, tip.id, "The body of $name $problem")
+            }
             tip.conjugation?.let { needsText(file, tip.id, "The meaning in the conjugation table of $name", it.meaning) }
         }
         dailySet.exercises.forEach { exercise ->

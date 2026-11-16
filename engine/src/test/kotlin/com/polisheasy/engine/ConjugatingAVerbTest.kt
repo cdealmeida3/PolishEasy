@@ -146,6 +146,7 @@ class ConjugatingAVerbTest {
                 TipView(
                     title = "The verb być",
                     body = "Być is irregular.",
+                    polish = listOf(0..2),
                     conjugation = ConjugationTableView(
                         verb = "być",
                         meaning = "to be",
@@ -221,7 +222,7 @@ fun conjugationDay(
         """
           "tips": [
             { "id": "a1-u01-d01-t01", "before": "a1-u01-d01-e01", "title": { "en": "The verb być" },
-              "body": { "en": "Być is irregular." }, "conjugation": $it }
+              "body": { "en": "*Być* is irregular." }, "conjugation": $it }
           ],
         """
     }.orEmpty()
