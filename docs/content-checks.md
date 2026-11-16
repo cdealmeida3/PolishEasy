@@ -51,6 +51,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 ### Shipping rules
 
 - **Sizes.** A Daily Set has 12 to 18 Exercises and introduces at most 8 new Items. (Constants `DAILY_SET_EXERCISES` and `MAX_NEW_ITEMS`.)
+- **A title.** A Daily Set has at least one Tip: the title of its first Tip is its title on the Path.
 - **Items.** Every Exercise lists at least one Item, and every Item is practised by at least 2 Exercises (`MIN_EXERCISES_PER_ITEM`), so Review has something to vary.
 - **Choices.** A `choose_translation` Exercise has at least 2 options, and no two read the same.
 - **Base Language.** Everything the Learner reads in the Base Language has English text that is not blank: Level and Unit titles, Tip titles and bodies, the meaning in a conjugation table, the options of `choose_translation`, the prompt of `type_answer` and `word_tiles`, the `meaning` and `sentenceMeaning` of `conjugation`, the `meaning` of `listen_choose` and `listen_type`, and the `meaning` of an Item. (`BASE_LANGUAGES` lists the languages required.)

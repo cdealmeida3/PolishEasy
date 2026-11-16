@@ -348,6 +348,11 @@ internal class CheckingContentTest {
         assertOnlyProblem(valid.withDailySet(DAY_1) { it.copy(tips = it.tips + more) }, DAY_1, "a1-u01-d01", "3 Tips")
     }
 
+    @Test
+    fun `a Daily Set with no Tip is reported, since it would have no title on the Path`() {
+        assertOnlyProblem(valid.withDailySet(DAY_2) { it.copy(tips = emptyList()) }, DAY_2, "a1-u01-d02", "no Tip")
+    }
+
     // 10: belonging
 
     @Test
@@ -388,6 +393,7 @@ internal class CheckingContentTest {
         assertProblemsAt(
             valid.withDailySet(DAY_2) { it.copy(id = "a1-u02-d02") },
             DAY_2 to "a1-u02-d02",
+            *dayTwo.tips.map { DAY_2 to it.id }.toTypedArray(),
             *dayTwo.exercises.map { DAY_2 to it.id }.toTypedArray(),
         )
         assertOnlyProblem(

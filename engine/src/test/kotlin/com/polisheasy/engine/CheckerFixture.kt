@@ -102,6 +102,7 @@ internal data class CheckerFixture(val texts: Map<String, String>) {
 
         private val dayTwo = DailySet(
             id = "a1-u01-d02",
+            tips = listOf(Tip("a1-u01-d02-t01", before = "a1-u01-d02-e02", title = en("Yes and no"), body = en("Tak is yes."))),
             exercises = listOf(
                 choice("a1-u01-d02-e01", "tak", "yes", "no", "tak"),
                 choice("a1-u01-d02-e02", "nie", "no", "yes", "nie"),
@@ -157,9 +158,10 @@ internal data class CheckerFixture(val texts: Map<String, String>) {
         /** Every identifier of [valid], as if it had shipped. */
         val shipped: ReleasedIds = identifiersOf(valid.files())
 
-        /** A Daily Set of [exercises] choice Exercises that all practise "tak", which already has a Clip. */
+        /** A Daily Set of a Tip and [exercises] choice Exercises that all practise "tak", which already has a Clip. */
         fun fillerDay(exercises: Int): DailySet = DailySet(
             id = "a1-u01-d03",
+            tips = listOf(Tip("a1-u01-d03-t01", before = "a1-u01-d03-e01", title = en("Yes"), body = en("Tak is yes."))),
             exercises = (1..exercises).map { number ->
                 choice("a1-u01-d03-e%02d".format(number), "tak", "yes", "no", "tak")
             },

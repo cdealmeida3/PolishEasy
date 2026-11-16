@@ -23,18 +23,24 @@ import androidx.compose.ui.semantics.semantics
 import com.polisheasy.app.ui.theme.Edge
 import com.polisheasy.app.ui.theme.Space
 
-/** The title at the top of the Path and of Settings. Home has none. */
+/** The title at the top of the Path and of Settings, with a quiet [note] under it if there is one. Home has none. */
 @Composable
-fun TopBar(title: String, modifier: Modifier = Modifier) {
-    Text(
-        title,
-        style = MaterialTheme.typography.headlineSmall,
-        color = MaterialTheme.colorScheme.onSurface,
+fun TopBar(title: String, modifier: Modifier = Modifier, note: String? = null) {
+    Column(
         modifier = modifier
             .fillMaxWidth()
-            .padding(bottom = Space.m)
-            .semantics { heading() },
-    )
+            .padding(bottom = Space.m),
+    ) {
+        Text(
+            title,
+            style = MaterialTheme.typography.headlineSmall,
+            color = MaterialTheme.colorScheme.onSurface,
+            modifier = Modifier.semantics { heading() },
+        )
+        if (note != null) {
+            Text(note, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+    }
 }
 
 /** A plain card: a white field with a thin border and no shadow. */

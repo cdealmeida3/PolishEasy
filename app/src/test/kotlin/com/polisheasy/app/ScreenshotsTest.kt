@@ -23,13 +23,19 @@ import com.polisheasy.app.ui.PolishEasyTheme
 import com.polisheasy.app.ui.components.NavigationFrame
 import com.polisheasy.app.ui.components.NavigationTab
 import com.polisheasy.app.ui.screens.HomeScreen
+import com.polisheasy.app.ui.screens.PathScreen
 import com.polisheasy.app.ui.screens.SummaryScreen
 import com.polisheasy.engine.CourseEngine
+import com.polisheasy.engine.DailySetState
+import com.polisheasy.engine.DailySetView
 import com.polisheasy.engine.DayView
 import com.polisheasy.engine.FileLearnerProgress
+import com.polisheasy.engine.LevelView
 import com.polisheasy.engine.NextDailySetView
+import com.polisheasy.engine.PathView
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.Today
+import com.polisheasy.engine.UnitView
 import java.io.File
 import kotlin.test.assertTrue
 import org.junit.Rule
@@ -175,6 +181,86 @@ class ScreenshotsTest {
             }
         }
         states.forEachIndexed { index, (name, _, _) ->
+            showing = index
+            shot("$theme-$name")
+        }
+    }
+
+    @Test
+    fun `the Path part of the way along in the light theme`() = pathStates("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `the Path part of the way along in the dark theme`() = pathStates("dark")
+
+    /** The Path with the real course's titles and made-up progress: today's Daily Set ready, then done, then every one completed. */
+    private fun pathStates(theme: String) {
+        val units = listOf(
+            "Sounds and greetings" to listOf("How Polish is read", "sz and cz", "ę and ą", "ł", "ś and ć", "ź and dź", "The Polish alphabet"),
+            "About me" to listOf(
+                "Być: to be", "On, ona, ono", "The plural of być", "Czy and nie",
+                "Mieć: to have", "The plural of mieć", "Mówić: to speak", "The plural of mówić",
+            ),
+            "Numbers and family" to listOf(
+                "Counting to five", "Six to ten", "Mam … lat", "The teens",
+                "Masculine and feminine", "Twój and twoja", "The third gender: neuter", "Babcia and dziadek",
+            ),
+        )
+
+        /** The Path with the first [completed] Daily Sets done, and the one after them today's if [ready]. */
+        fun path(completed: Int, ready: Boolean): PathView {
+            var number = 0
+            return PathView(
+                listOf(
+                    LevelView(
+                        "a1",
+                        "A1",
+                        units.mapIndexed { index, (title, dailySets) ->
+                            UnitView(
+                                "a1-u0${index + 1}",
+                                index + 1,
+                                title,
+                                dailySets.map { name ->
+                                    val state = when {
+                                        number < completed -> DailySetState.COMPLETED
+                                        number == completed && ready -> DailySetState.TODAY
+                                        else -> DailySetState.LOCKED
+                                    }
+                                    DailySetView("d${number + 1}", ++number, state, name)
+                                },
+                            )
+                        },
+                    ),
+                ),
+            )
+        }
+        val states = listOf(
+            "27-path-today" to path(completed = 10, ready = true),
+            "28-path-done-for-today" to path(completed = 11, ready = false),
+            "29-path-unit-starts" to path(completed = 15, ready = true),
+            "30-path-all-completed" to path(completed = 23, ready = false),
+        )
+        var showing by mutableStateOf(0)
+        screen.setContent {
+            PolishEasyTheme {
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+                    key(showing) {
+                        NavigationFrame(
+                            tabs = listOf(
+                                NavigationTab(app.getString(R.string.nav_home), R.drawable.ic_home),
+                                NavigationTab(app.getString(R.string.nav_path), R.drawable.ic_route),
+                                NavigationTab(app.getString(R.string.nav_settings), R.drawable.ic_settings),
+                            ),
+                            selected = 1,
+                            onSelect = {},
+                        ) {
+                            PathScreen(states[showing].second, onReplay = {}, onOpenTodays = {})
+                        }
+                    }
+                }
+            }
+        }
+        states.forEachIndexed { index, (name, _) ->
             showing = index
             shot("$theme-$name")
         }

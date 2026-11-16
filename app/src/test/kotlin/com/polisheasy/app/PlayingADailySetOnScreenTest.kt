@@ -8,8 +8,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.test.assert
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsOff
+import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
@@ -302,10 +304,16 @@ class PlayingADailySetOnScreenTest {
         tap(R.string.summary_back_home)
 
         tap(R.string.nav_path)
-        val dailySetOne = screen.onNode(hasText(text(R.string.path_daily_set, 1)) and hasText(text(R.string.path_completed)))
+        // Daily Set 1 is named by its first Tip; Daily Set 2 has no Tip, so its number stands in.
+        shows(text(R.string.path_progress, 1, 2))
+        shows(text(R.string.path_unit_progress, 1, 2))
+        val completed = text(R.string.path_stop_note, text(R.string.path_daily_set, 1), text(R.string.path_completed))
+        val dailySetOne = screen.onNode(hasText("The verb być") and hasText(completed))
         dailySetOne.assertIsDisplayed()
-        shows(text(R.string.path_daily_set, 2))
-        shows(R.string.path_locked)
+        val dailySetTwo = hasText(text(R.string.path_daily_set, 2))
+        screen.onNode(dailySetTwo and hasText(text(R.string.home_up_next)) and hasText(text(R.string.path_unlocks_tomorrow)))
+            .assertIsDisplayed()
+            .assert(!hasClickAction())
 
         dailySetOne.performClick()
         shows(R.string.tip_label)
@@ -321,16 +329,14 @@ class PlayingADailySetOnScreenTest {
         noStreakRaised()
         screen.onNodeWithTag(CONFETTI_TAG).assertDoesNotExist()
         tap(R.string.summary_back_path)
-        shows(R.string.path_locked)
+        shows(R.string.path_unlocks_tomorrow)
 
         clock.moveToNextDay()
         back()
         shows(R.string.home_ready)
         tap(R.string.nav_path)
-        screen.onNode(hasText(text(R.string.path_daily_set, 2)) and hasText(text(R.string.path_today))).assertIsDisplayed()
-        back()
-
-        tap(R.string.home_start)
+        // Today's stop opens today's Daily Set, as Start on Home does.
+        screen.onNode(dailySetTwo and hasText(text(R.string.path_today))).assertIsDisplayed().performClick()
         shows(R.string.choose_translation_instruction)
         shows("tak")
     }

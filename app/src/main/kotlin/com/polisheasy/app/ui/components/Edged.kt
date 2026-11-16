@@ -33,7 +33,9 @@ import com.polisheasy.app.ui.theme.Motion
  * what makes a tap feel physical. With a [border] the edge colour also outlines the other sides.
  *
  * Without [onClick], or when not [enabled], it does not respond. With [flat] it has no edge and
- * keeps the room for one, so a control does not change size when it is disabled.
+ * keeps the room for one, so a control does not change size when it is disabled. Given an
+ * [interaction], it also goes down while that is pressed: the face of a larger thing that is tapped
+ * as a whole, such as a stop on the Path.
  */
 @Composable
 internal fun Edged(
@@ -46,11 +48,12 @@ internal fun Edged(
     enabled: Boolean = true,
     onClick: (() -> Unit)? = null,
     onClickLabel: String? = null,
+    interaction: MutableInteractionSource? = null,
     contentAlignment: Alignment = Alignment.Center,
     content: @Composable BoxScope.() -> Unit,
 ) {
-    val interaction = remember { MutableInteractionSource() }
-    val pressed by interaction.collectIsPressedAsState()
+    val source = interaction ?: remember { MutableInteractionSource() }
+    val pressed by source.collectIsPressedAsState()
     // What shows below the face: the whole edge, less the border the face already has.
     val travel = Edge.depth - border
     val sunk by animateDpAsState(
@@ -63,7 +66,7 @@ internal fun Edged(
     } else {
         // No ripple: the face moving is the response.
         Modifier.clickable(
-            interactionSource = interaction,
+            interactionSource = source,
             indication = null,
             enabled = enabled,
             onClickLabel = onClickLabel,

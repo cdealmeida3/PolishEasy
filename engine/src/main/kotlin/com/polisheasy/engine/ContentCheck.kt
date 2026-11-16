@@ -145,6 +145,9 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
         if (introduced > MAX_NEW_ITEMS) {
             report(file, dailySet.id, "Daily Set ${dailySet.id} introduces $introduced new Items; at most $MAX_NEW_ITEMS are allowed")
         }
+        if (dailySet.tips.isEmpty()) {
+            report(file, dailySet.id, "Daily Set ${dailySet.id} has no Tip; the title of its first Tip is its title on the Path")
+        }
         dailySet.tips.forEach { tip ->
             val name = "Tip ${tip.id}"
             if (!tip.id.startsWith("${dailySet.id}-")) {

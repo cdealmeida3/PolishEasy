@@ -271,7 +271,7 @@ class CourseEngine(
                                     todays -> DailySetState.TODAY
                                     else -> DailySetState.LOCKED
                                 }
-                                DailySetView(set.id, ++number, state)
+                                DailySetView(set.id, ++number, state, title = set.tips.firstOrNull()?.let { localize(it.title) })
                             },
                         )
                     },

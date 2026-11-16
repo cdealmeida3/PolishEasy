@@ -39,7 +39,7 @@ The one copy outside `ui/theme` is `window_background` in `res/values/colors.xml
 | --- | --- | --- | --- |
 | `primary` | `#C8102E` | `#FFB3B5` | Text buttons, links, selected icons, progress |
 | `onPrimary` | `#FFFFFF` | `#680012` | |
-| `primaryContainer` | `#FFDAD9` | `#7A0A1C` | The chosen option, today's node on the Path |
+| `primaryContainer` | `#FFDAD9` | `#7A0A1C` | The chosen option, the segment of the Daily Set a card is about |
 | `onPrimaryContainer` | `#410008` | `#FFDAD9` | |
 | `secondary` | `#5A4740` | `#D9C3B9` | Quiet controls |
 | `onSecondary` | `#FFFFFF` | `#2B1D17` | |
@@ -187,11 +187,11 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`Instruction`**, **`PolishPrompt`**, **`BasePrompt`**: the label above a prompt and the prompt itself, so the choice of style between a short and a long Polish prompt is made in one place.
 - **`ProgressBar`**: 12 high, fully rounded, `primary` on `surfaceContainerHigh`.
 - **`PlayButton`**: a 72 circle in `brand` with the speaker icon in `onBrand`, for listening Exercises. **`SpeakerButton`**, the small speaker beside Polish text, is a 48 icon button in `primary`.
-- **`TopBar`**: Path and Settings have a `headlineSmall` title. Home has a greeting in its place (see Home). Inside a Daily Set it is the close button and the progress bar only.
+- **`TopBar`**: Path and Settings have a `headlineSmall` title, and the Path a `bodyLarge` line under it in `onSurfaceVariant`. Home has a greeting in its place (see Home). Inside a Daily Set it is the close button and the progress bar only.
 - **`NavigationFrame`**, the navigation bar: Home, Path, Settings, with icons and `labelSmall` labels, on `surfaceContainer`. The selected one has a `primaryContainer` pill behind a `primary` icon and its label in `onSurface`; the others are `onSurfaceVariant`. Hidden inside a Daily Set and on the Summary. Back from the Path or Settings goes to Home.
 - **`StreakWeekCard`**: the Streak on Home. A `ContentCard` with the Streak flame at 48 and the number in `displayMedium`, "day Streak" in `titleLarge` and a line in `bodyMedium` saying what today's Daily Set would do for it. Under them the last seven days, oldest first and ending today, as 32 dots with the weekday's letter below each: a completed day is `streak` with a tick, a day without is `surfaceContainerHigh`, and today has a 2 dp `streak` ring until it is completed and its letter in `titleSmall`. A screen reader hears the card as one sentence.
 - **`TodayCard`**: what today holds, on Home. A `ContentCard` with a small label in `titleSmall` ("Today" in `primary` on the card with the main action, "Up next" in `onSurfaceVariant`), a `headlineSmall` title, and below it what the state needs: `UnitProgress`, `Teaches`, a `CardNote`, the `PrimaryButton`. Done states have no label and put the `success` tick beside the title.
-- **`UnitProgress`**: the Unit's name in `bodyMedium`, and under it one 12 high segment for each of the Unit's Daily Sets: `primary` when completed, `primaryContainer` with a 2 dp `primary` border for the one the card is about, `surfaceContainerHigh` for the rest.
+- **`UnitProgress`**: the Unit's name in `bodyMedium`, and under it `ProgressSegments`: one 12 high segment for each of the Unit's Daily Sets, `primary` when completed, `primaryContainer` with a 2 dp `primary` border for the one the card is about, `surfaceContainerHigh` for the rest.
 - **`Teaches`**: "You'll learn" as an `Instruction`, then one `bodyLarge` line for each of the Daily Set's Tip titles, with an 8 dot in `primary`.
 - **`ContentCard`**: `surfaceContainerLowest`, `large` corners, 1 dp `outlineVariant` border, 16 padding, no shadow.
 - **`ScoreRing`**: the Summary's score. A 184 ring, 16 thick with round ends, `success` on `surfaceContainerHigh`, with the share of Exercises answered correctly on the first try inside it in `displayMedium`. The same score is written in words under it.
@@ -199,7 +199,11 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`ItemCard`**: one Item under "You learned": a `ContentCard` with the Polish in `titleMedium` and its meaning under it in `bodyMedium`.
 - **`Confetti`**: see Motion and touch. It is laid over the Summary's content, above the main button. A Replay gets none.
 - **Streak flame**: the flame icon in `streak` beside the number. With a Streak of zero the flame and the number are `outline`, not hidden.
-- **Path node**: a 56 circle. Completed: `success` fill with a tick. Today: `brand` fill with a play icon and a ring. Locked: `surfaceContainerHighest` with a lock icon.
+- **`UnitCard`**: a Unit on the Path. A `ContentCard` with "Unit N" in `titleSmall` in `primary`, the Unit's title in `titleLarge`, "4 of 7 completed" in `bodyMedium`, `ProgressSegments` with today's Daily Set outlined, and under them the Unit's stops. A Unit that is all completed has the `success` tick beside its title.
+- **`TrailStop`**: one Daily Set on a Unit's trail. Its node, then its title in `titleMedium` and under it a `bodyMedium` line with its number and its state in words. The stop the Learner is at has a `titleSmall` label above its title: "Today" in `primary`, or "Up next" in `onSurfaceVariant` when it unlocks tomorrow. A completed stop ends with the replay icon in `primary`. The whole stop is tapped as one, with no ripple: its node goes down. A locked stop's title is `onSurfaceVariant` and it is not tappable.
+- **Path node**: a 56 circle. Completed: `success` fill with a tick in `onSuccess`, on the bottom edge in `successEdge`. Today: `brand` fill with a play icon in `onBrand`, on the bottom edge in `brandEdge`, inside a 2 dp `brand` ring 72 across. Locked: `surfaceContainerHighest` with a lock icon in `onSurfaceVariant`, flat. Today's node sits on the card, never on a container colour.
+- **The trail**: a 4 dp line joining a Unit's nodes. It is `success` as far as the Learner has come, up to today's node, and `outlineVariant` beyond.
+- **`Journey`**: the Path's scrolling column. It opens already in place, with no visible jump (see The Path).
 
 Icons are Material Symbols, rounded style, filled, 24 dp, kept as vector drawables in `res/drawable`. No icon library is added to the build.
 
@@ -221,6 +225,18 @@ Home answers three things from the top down: hello, how the Streak stands, and w
 | Nothing left and nothing to review | The tick and "Every Daily Set completed" |
 
 Home scrolls if the font size makes it too tall. Nothing on it moves at rest.
+
+## The Path
+
+The Path answers where the Learner is and how far they have come.
+
+- **The title** is the Level's name and "Path" ("A1 Path"), with "10 of 23 Daily Sets completed" under it.
+- **A `UnitCard` for each Unit**, 16 apart, each holding its Daily Sets as `TrailStop`s.
+- **A Daily Set's title is the title of its first Tip** (`docs/authoring.md`). A Daily Set with no Tip shows "Daily Set N" in its place.
+- **Three states, each with its own icon**: a tick (completed), a play arrow in a ring (today), a lock (locked). The words under the title say the same.
+- **It opens at the stop the Learner is at**: the first Daily Set not yet completed. If that stop is within the top 60% of the screen when its Unit's card is at the top, the Path opens at the top of the card; otherwise the stop sits a third of the way down. With every Daily Set completed it opens at the top.
+- **Tapping** a completed stop starts a Replay, today's opens today's Daily Set, a locked one does nothing.
+- With every Daily Set completed, a line after the last Unit says more Units are on the way.
 
 ## Motion and touch
 
