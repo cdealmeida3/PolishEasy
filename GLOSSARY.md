@@ -51,7 +51,7 @@ Doing an already completed Daily Set again for practice. It does not advance the
 _Avoid_: Redo, practice mode
 
 **Streak**:
-The number of consecutive calendar days on which the Learner completed a new or Review-only Daily Set. A Replay does not count.
+The number of consecutive calendar days on which the Learner completed a new or Review-only Daily Set. Until today's is completed it is the Streak earned up to yesterday; a day with none resets it to zero. A Replay does not count.
 
 **Exercise**:
 A single task inside a Daily Set that the Learner answers and the app checks. A Daily Set is complete once every Exercise has been answered correctly.

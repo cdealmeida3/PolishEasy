@@ -158,6 +158,15 @@ class CourseEngine(
     }
 
     /**
+     * The Learner's Streak: the consecutive calendar days on which a new or Review-only Daily Set
+     * was completed. Until today's is completed it is the Streak earned up to yesterday; a day with
+     * none resets it to zero. It is worked out from the saved completion days and nothing else, so
+     * a Replay, which records no completion, cannot change it.
+     */
+    fun streak(): Int =
+        streakOn(LocalDate.now(clock), progress.completedDailySets().values.toSet() + progress.reviewOnlyDays())
+
+    /**
      * Starts what today offers: the next Daily Set on the Path or, once every one is completed, a
      * Review-only Daily Set. Its Review is chosen now and saved with it, so the Daily Set keeps
      * the same Exercises however much later it is finished.

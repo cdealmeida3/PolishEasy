@@ -56,6 +56,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
@@ -101,6 +102,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                 }
                 HomeScreen(
                     screen.today,
+                    screen.streak,
                     onStart = viewModel::startDailySet,
                     onContinue = viewModel::resumeDailySet,
                 )
@@ -201,9 +203,15 @@ private fun DailySetColumn(
 }
 
 @Composable
-private fun HomeScreen(today: Today, onStart: () -> Unit, onContinue: () -> Unit) {
+private fun HomeScreen(today: Today, streak: Int, onStart: () -> Unit, onContinue: () -> Unit) {
     ScreenColumn {
         Text(stringResource(R.string.app_name), style = MaterialTheme.typography.displaySmall)
+        Spacer(Modifier.height(8.dp))
+        Text(
+            pluralStringResource(R.plurals.home_streak, streak, streak),
+            style = MaterialTheme.typography.titleMedium,
+            color = MaterialTheme.colorScheme.primary,
+        )
         Spacer(Modifier.height(16.dp))
         when (today) {
             Today.DailySetAvailable -> {

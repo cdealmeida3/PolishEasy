@@ -99,6 +99,7 @@ class AuthoredContentTest {
             Today.DoneForToday(nextUnlock = dayAfter.atStartOfDay(warsaw), reviewOnlyNext = true),
             CourseEngine(course, progress, clock).today(),
         )
+        assertEquals(course.path.size, CourseEngine(course, progress, clock).streak())
     }
 
     @Test
@@ -124,6 +125,7 @@ class AuthoredContentTest {
         }
         assertEquals(course.path.size, progress.completedDailySets().size)
         assertEquals(7, progress.reviewOnlyDays().size)
+        assertEquals(course.path.size + 7, CourseEngine(course, progress, clock).streak())
     }
 
     @Test
