@@ -70,8 +70,8 @@
     <string name="action_ok">OK</string>
     <string name="action_cancel">Cancel</string>
     <string name="report_mistake">Report a mistake</string>
-    <!-- Where mistake reports go. While it is empty, the email draft opens with no recipient. -->
-    <string name="report_email" translatable="false"></string>
+    <!-- Where mistake reports go. -->
+    <string name="report_email" translatable="false">3dev.carlos@gmail.com</string>
     <string name="report_subject_exercise">PolishEasy: mistake in Exercise %1$s</string>
     <string name="report_subject_general">PolishEasy: mistake report</string>
     <string name="report_body_exercise">Exercise: %1$s</string>
