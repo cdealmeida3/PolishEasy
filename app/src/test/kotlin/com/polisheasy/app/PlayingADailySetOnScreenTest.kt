@@ -244,7 +244,7 @@ class PlayingADailySetOnScreenTest {
     @Test
     fun `with Sound off in Settings a Daily Set shows no speaker and plays nothing`() {
         openApp()
-        tap(R.string.home_settings)
+        tap(R.string.nav_settings)
         val sound = screen.onNodeWithContentDescription(text(R.string.settings_sound))
         sound.performClick()
         sound.assertIsOff()
@@ -301,7 +301,7 @@ class PlayingADailySetOnScreenTest {
         playDailySetOne()
         tap(R.string.summary_back_home)
 
-        tap(R.string.home_path)
+        tap(R.string.nav_path)
         val dailySetOne = screen.onNode(hasText(text(R.string.path_daily_set, 1)) and hasText(text(R.string.path_completed)))
         dailySetOne.assertIsDisplayed()
         shows(text(R.string.path_daily_set, 2))
@@ -326,7 +326,7 @@ class PlayingADailySetOnScreenTest {
         clock.moveToNextDay()
         back()
         shows(R.string.home_ready)
-        tap(R.string.home_path)
+        tap(R.string.nav_path)
         screen.onNode(hasText(text(R.string.path_daily_set, 2)) and hasText(text(R.string.path_today))).assertIsDisplayed()
         back()
 
@@ -496,7 +496,7 @@ class PlayingADailySetOnScreenTest {
         screen.onNodeWithContentDescription(app.resources.getQuantityString(R.plurals.home_streak, to, to)).assertIsDisplayed()
     }
 
-    private fun noStreakRaised() = screen.onNodeWithText(text(R.string.summary_streak_title)).assertDoesNotExist()
+    private fun noStreakRaised() = screen.onNodeWithText(text(R.string.streak_title)).assertDoesNotExist()
 
     private fun noSpeaker() = screen.onNodeWithContentDescription(text(R.string.audio_play)).assertDoesNotExist()
 

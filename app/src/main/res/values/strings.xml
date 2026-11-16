@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PolishEasy</string>
+    <!-- Polish: "hi", and "see you tomorrow" once today's Daily Set is done. Not translated. -->
+    <string name="home_greeting" translatable="false">Cześć</string>
+    <string name="home_greeting_done" translatable="false">Do jutra</string>
     <string name="home_ready">Today\'s Daily Set is ready.</string>
-    <string name="home_in_progress">You have a Daily Set in progress: %1$d of %2$d Exercises done.</string>
+    <string name="home_in_progress_headline">Pick up where you left off.</string>
+    <string name="home_done_headline">See you tomorrow.</string>
+    <string name="home_all_completed_headline">You\'re all caught up.</string>
+    <string name="home_today">Today</string>
+    <string name="home_up_next">Up next</string>
+    <string name="home_daily_set">Daily Set %1$d of %2$d</string>
+    <string name="home_unit_progress">%1$d of %2$d Daily Sets of this Unit completed</string>
+    <string name="home_teaches">You\'ll learn</string>
+    <string name="home_done_title">Done for today</string>
+    <string name="home_all_completed_title">Every Daily Set completed</string>
+    <string name="home_review_only_title">Review-only Daily Set</string>
+    <string name="home_review_only_note">You\'ve completed every Daily Set released so far, and more Units are on the way. Until then, a Review a day keeps what you know fresh.</string>
+    <string name="home_streak_note_start">Complete today\'s Daily Set to start your Streak.</string>
+    <string name="home_streak_note_keep">Complete today\'s Daily Set to keep it going.</string>
+    <string name="home_streak_note_done">Come back tomorrow to keep it going.</string>
+    <string name="home_in_progress">In progress: %1$d of %2$d Exercises done.</string>
     <string name="home_continue">Continue</string>
-    <string name="home_done">You\'re done for today. Your next Daily Set unlocks tomorrow at %1$s.</string>
+    <string name="home_done">Your next Daily Set unlocks tomorrow at %1$s.</string>
     <string name="home_all_completed">You\'ve completed every Daily Set released so far. More are on the way.</string>
-    <string name="home_review_only_ready">You\'ve completed every Daily Set released so far. More Units are on the way. Until then, today\'s Review-only Daily Set is ready.</string>
-    <string name="home_review_only_in_progress">You have a Review-only Daily Set in progress: %1$d of %2$d Exercises done.</string>
-    <string name="home_done_review_only_next">You\'re done for today. You\'ve completed every Daily Set released so far, and more Units are on the way. Your next Review-only Daily Set unlocks tomorrow at %1$s.</string>
+    <string name="home_review_only_ready">Today\'s Review-only Daily Set is ready.</string>
+    <string name="home_review_only_in_progress">In progress: %1$d of %2$d Exercises done.</string>
+    <string name="home_done_review_only_next">You\'ve completed every Daily Set released so far, and more Units are on the way. Your next Review-only Daily Set unlocks tomorrow at %1$s.</string>
     <string name="home_start">Start</string>
     <string name="choose_translation_instruction">Choose the correct translation</string>
     <string name="type_answer_instruction">Type this in Polish</string>
@@ -48,11 +66,12 @@
     <string name="summary_more_units">You\'ve completed every Daily Set released so far. More Units are on the way.</string>
     <string name="summary_accuracy">%1$d of %2$d correct on the first try</string>
     <string name="summary_items_learned">You learned</string>
-    <string name="summary_streak_title">day Streak</string>
+    <string name="streak_title">day Streak</string>
     <string name="summary_streak_note_first">Your Streak has started. Come back tomorrow to keep it going.</string>
     <string name="summary_streak_note">One more day in a row. Come back tomorrow to keep it going.</string>
     <string name="summary_back_home">Back to Home</string>
-    <string name="home_path">Path</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_path">Path</string>
     <string name="path_unit">Unit %1$d · %2$s</string>
     <string name="path_daily_set">Daily Set %1$d</string>
     <string name="path_completed">Completed</string>
@@ -63,7 +82,7 @@
     <string name="replay_label">Replay</string>
     <string name="summary_replay_title">Replay complete</string>
     <string name="summary_back_path">Back to the Path</string>
-    <string name="home_settings">Settings</string>
+    <string name="nav_settings">Settings</string>
     <string name="settings_title">Settings</string>
     <string name="settings_reminder">Daily reminder</string>
     <string name="settings_reminder_note">One notification a day, only if today\'s Daily Set isn\'t done.</string>
@@ -90,5 +109,9 @@
     <plurals name="home_streak">
         <item quantity="one">Streak: %d day</item>
         <item quantity="other">Streak: %d days</item>
+    </plurals>
+    <plurals name="home_week">
+        <item quantity="one">Completed on %1$d of the last %2$d days.</item>
+        <item quantity="other">Completed on %1$d of the last %2$d days.</item>
     </plurals>
 </resources>

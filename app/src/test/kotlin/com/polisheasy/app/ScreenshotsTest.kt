@@ -20,9 +20,16 @@ import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
 import com.polisheasy.app.ui.PolishEasyApp
 import com.polisheasy.app.ui.PolishEasyTheme
+import com.polisheasy.app.ui.components.NavigationFrame
+import com.polisheasy.app.ui.components.NavigationTab
+import com.polisheasy.app.ui.screens.HomeScreen
 import com.polisheasy.app.ui.screens.SummaryScreen
 import com.polisheasy.engine.CourseEngine
+import com.polisheasy.engine.DayView
 import com.polisheasy.engine.FileLearnerProgress
+import com.polisheasy.engine.NextDailySetView
+import com.polisheasy.engine.SetProgress
+import com.polisheasy.engine.Today
 import java.io.File
 import kotlin.test.assertTrue
 import org.junit.Rule
@@ -78,7 +85,7 @@ class ScreenshotsTest {
     fun `the real course on Home, on the Path and at its first step`() {
         open(CourseViewModel(app))
         shot("real-01-home")
-        tap(R.string.home_path)
+        tap(R.string.nav_path)
         shot("real-02-path")
         back()
         tap(R.string.home_start)
@@ -117,13 +124,69 @@ class ScreenshotsTest {
         shot("$theme-19-summary-replay")
     }
 
+    @Test
+    fun `the states of Home the tour does not reach in the light theme`() = homeStates("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `the states of Home the tour does not reach in the dark theme`() = homeStates("dark")
+
+    /** Home part of the way through a Unit and a week, and in its Review-only states, with made-up progress. */
+    private fun homeStates(theme: String) {
+        val unlock = clock.today.plusDays(1).atStartOfDay(clock.zone)
+        val next = NextDailySetView(
+            unitNumber = 2,
+            unitTitle = "About me",
+            numberInUnit = 4,
+            dailySetsInUnit = 8,
+            teaches = listOf("Czy and nie", "Pan and pani"),
+        )
+        // Yesterday and the three days before it were completed; the days before those were not.
+        fun week(today: Boolean) = (6L downTo 0L).map { ago -> DayView(clock.today.minusDays(ago), if (ago == 0L) today else ago <= 4) }
+        val states = listOf(
+            Triple("20-home-in-progress", Today.InProgress(SetProgress(correct = 7, total = 18)), next),
+            Triple("21-home-ready-mid-unit", Today.DailySetAvailable, next),
+            Triple("22-home-done-mid-unit", Today.DoneForToday(unlock), next.copy(numberInUnit = 5, teaches = listOf("Mieć: to have", "Mam na imię"))),
+            Triple("23-home-review-only-ready", Today.ReviewOnlyAvailable, null),
+            Triple("24-home-review-only-in-progress", Today.InProgress(SetProgress(correct = 5, total = 20), reviewOnly = true), null),
+            Triple("25-home-review-only-done", Today.DoneForToday(unlock, reviewOnlyNext = true), null),
+            Triple("26-home-all-completed", Today.AllCompleted, null),
+        )
+        var showing by mutableStateOf(0)
+        screen.setContent {
+            PolishEasyTheme {
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+                    val (_, today, position) = states[showing]
+                    val done = today is Today.DoneForToday
+                    key(showing) {
+                        NavigationFrame(
+                            tabs = listOf(
+                                NavigationTab(app.getString(R.string.nav_home), R.drawable.ic_home),
+                                NavigationTab(app.getString(R.string.nav_path), R.drawable.ic_route),
+                                NavigationTab(app.getString(R.string.nav_settings), R.drawable.ic_settings),
+                            ),
+                            selected = 0,
+                            onSelect = {},
+                        ) {
+                            HomeScreen(today, streak = if (done) 5 else 4, week = week(today = done), next = position, onStart = {}, onContinue = {})
+                        }
+                    }
+                }
+            }
+        }
+        states.forEachIndexed { index, (name, _, _) ->
+            showing = index
+            shot("$theme-$name")
+        }
+    }
+
     /** Daily Set 1 of the fixture course, with one wrong answer so the Exercise comes back at the end. */
     private fun fixtureCourseTour(theme: String) {
         fun shot(name: String) = this.shot("$theme-$name")
 
         open(CourseViewModel(app, CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock)))
         shot("01-home-ready")
-        tap(R.string.home_settings)
+        tap(R.string.nav_settings)
         shot("02-settings")
         back()
 
@@ -176,7 +239,7 @@ class ScreenshotsTest {
         shot("15-summary")
         tap(R.string.summary_back_home)
         shot("16-home-done")
-        tap(R.string.home_path)
+        tap(R.string.nav_path)
         shot("17-path")
     }
 

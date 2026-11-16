@@ -45,6 +45,9 @@ object Size {
 
     val progressBar: Dp = 12.dp
 
+    /** The Streak's flame, on Home and on the Summary. */
+    val flame: Dp = 48.dp
+
     /** Content is never wider than this, and is centred beyond it. */
     val contentMax: Dp = 480.dp
 }

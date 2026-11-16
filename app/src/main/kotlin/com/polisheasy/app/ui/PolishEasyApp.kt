@@ -21,6 +21,8 @@ import com.polisheasy.app.CourseViewModel
 import com.polisheasy.app.R
 import com.polisheasy.app.Screen
 import com.polisheasy.app.ui.components.DailySetFrame
+import com.polisheasy.app.ui.components.NavigationFrame
+import com.polisheasy.app.ui.components.NavigationTab
 import com.polisheasy.app.ui.screens.HomeScreen
 import com.polisheasy.app.ui.screens.PathScreen
 import com.polisheasy.app.ui.screens.PlayerScreen
@@ -40,48 +42,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
     LifecycleStartEffect(Unit) { onStopOrDispose { player.stop() } }
     Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         when (val screen = viewModel.screen) {
-            is Screen.Home -> {
-                // Coming back to the app after midnight unlocks the next Daily Set.
-                LifecycleResumeEffect(Unit) {
-                    viewModel.refresh()
-                    onPauseOrDispose { }
-                }
-                HomeScreen(
-                    screen.today,
-                    screen.streak,
-                    onStart = viewModel::startDailySet,
-                    onContinue = viewModel::resumeDailySet,
-                    onOpenPath = viewModel::openPath,
-                    onOpenSettings = viewModel::openSettings,
-                )
-            }
-            is Screen.Settings -> {
-                BackHandler(onBack = viewModel::backToHome)
-                // Coming back from Android's settings, notifications may have been allowed or turned off.
-                LifecycleResumeEffect(Unit) {
-                    viewModel.refresh()
-                    onPauseOrDispose { }
-                }
-                SettingsScreen(
-                    screen.reminderEnabled,
-                    screen.reminderTime,
-                    screen.notificationsAllowed,
-                    screen.soundOn,
-                    onReminderEnabled = viewModel::setReminderEnabled,
-                    onReminderTime = viewModel::setReminderTime,
-                    onSoundOn = viewModel::setSoundOn,
-                    onReport = { reportMistake(context, exerciseId = null) },
-                )
-            }
-            is Screen.Path -> {
-                BackHandler(onBack = viewModel::backToHome)
-                // Coming back after midnight makes the next Daily Set today's.
-                LifecycleResumeEffect(Unit) {
-                    viewModel.refresh()
-                    onPauseOrDispose { }
-                }
-                PathScreen(screen.path, onReplay = viewModel::replay, onOpenTodays = viewModel::openTodays)
-            }
+            is Screen.Home, is Screen.Path, is Screen.Settings -> Tabs(screen, viewModel)
             is Screen.Tip -> DailySet(screen, screen.shown, screen.progress, viewModel, player)
             is Screen.Player -> DailySet(screen, screen.shown, screen.progress, viewModel, player)
             is Screen.Summary -> {
@@ -147,6 +108,66 @@ private fun DailySet(screen: Screen, shown: Int, progress: SetProgress, viewMode
                 },
                 onReport = { live { reportMistake(context, showing.exerciseId) } },
             )
+            else -> Unit
+        }
+    }
+}
+
+/** Home, the Path or Settings, with the navigation bar that moves between them. Back goes to Home. */
+@Composable
+private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
+    val context = LocalContext.current
+    // Whichever of the three is showing, coming back to the app asks again what it shows: midnight
+    // may have unlocked the next Daily Set, and Android's settings may have changed notifications.
+    LifecycleResumeEffect(Unit) {
+        viewModel.refresh()
+        onPauseOrDispose { }
+    }
+    NavigationFrame(
+        tabs = listOf(
+            NavigationTab(stringResource(R.string.nav_home), R.drawable.ic_home),
+            NavigationTab(stringResource(R.string.nav_path), R.drawable.ic_route),
+            NavigationTab(stringResource(R.string.nav_settings), R.drawable.ic_settings),
+        ),
+        selected = when (screen) {
+            is Screen.Path -> 1
+            is Screen.Settings -> 2
+            else -> 0
+        },
+        onSelect = { tab ->
+            when (tab) {
+                1 -> viewModel.openPath()
+                2 -> viewModel.openSettings()
+                else -> viewModel.backToHome()
+            }
+        },
+    ) {
+        when (screen) {
+            is Screen.Home -> HomeScreen(
+                screen.today,
+                screen.streak,
+                screen.week,
+                screen.next,
+                onStart = viewModel::startDailySet,
+                onContinue = viewModel::resumeDailySet,
+            )
+            is Screen.Path -> {
+                BackHandler(onBack = viewModel::backToHome)
+                PathScreen(screen.path, onReplay = viewModel::replay, onOpenTodays = viewModel::openTodays)
+            }
+            is Screen.Settings -> {
+                BackHandler(onBack = viewModel::backToHome)
+                SettingsScreen(
+                    screen.reminderEnabled,
+                    screen.reminderTime,
+                    screen.notificationsAllowed,
+                    screen.soundOn,
+                    onReminderEnabled = viewModel::setReminderEnabled,
+                    onReminderTime = viewModel::setReminderTime,
+                    onSoundOn = viewModel::setSoundOn,
+                    onReport = { reportMistake(context, exerciseId = null) },
+                )
+            }
             else -> Unit
         }
     }
