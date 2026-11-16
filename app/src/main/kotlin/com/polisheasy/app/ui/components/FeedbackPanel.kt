@@ -47,17 +47,19 @@ enum class FeedbackTone {
 
 /**
  * What the Learner is told about an answer, in the place of the main action, with the next main
- * action inside it. [speaker] is the speaker for the Polish, when there is something to play.
+ * action inside it. [heading] says how it went and [detail] what to take from it, such as the
+ * correct answer. [speaker] is the speaker for the Polish, when there is something to play.
  */
 @Composable
 fun FeedbackPanel(
     tone: FeedbackTone,
-    message: String,
+    heading: String,
     continueLabel: String,
     onContinue: () -> Unit,
     reportLabel: String,
     onReport: () -> Unit,
     modifier: Modifier = Modifier,
+    detail: String? = null,
     speaker: (@Composable () -> Unit)? = null,
 ) {
     val colors = PolishEasyTheme.colors
@@ -82,17 +84,22 @@ fun FeedbackPanel(
                     painterResource(if (tone == FeedbackTone.Wrong) R.drawable.ic_cancel else R.drawable.ic_check_circle),
                     contentDescription = null,
                     tint = accent,
-                    modifier = Modifier.size(Size.feedbackIcon),
+                    modifier = Modifier
+                        .size(Size.feedbackIcon)
+                        .appearing(),
                 )
                 Spacer(Modifier.width(Space.s))
-                Text(
-                    message,
-                    style = MaterialTheme.typography.titleLarge,
+                Column(
                     modifier = Modifier
                         .weight(1f)
-                        .padding(vertical = Space.s)
+                        .padding(vertical = Space.xs)
                         .semantics { liveRegion = LiveRegionMode.Polite },
-                )
+                ) {
+                    Text(heading, style = MaterialTheme.typography.titleLarge, color = accent)
+                    if (detail != null) {
+                        Text(detail, style = MaterialTheme.typography.bodyLarge)
+                    }
+                }
                 speaker?.invoke()
                 IconButton(onClick = onReport, modifier = Modifier.size(Size.touch)) {
                     Icon(painterResource(R.drawable.ic_flag), contentDescription = reportLabel, tint = accent)

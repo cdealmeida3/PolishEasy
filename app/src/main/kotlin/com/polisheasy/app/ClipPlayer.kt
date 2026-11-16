@@ -1,10 +1,14 @@
 package com.polisheasy.app
 
 import android.content.Context
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.media3.common.AudioAttributes
 import androidx.media3.common.C
 import androidx.media3.common.MediaItem
 import androidx.media3.common.PlaybackParameters
+import androidx.media3.common.Player
 import androidx.media3.exoplayer.ExoPlayer
 
 private const val SLOW_SPEED = 0.6f
@@ -15,6 +19,9 @@ interface Clips {
     fun play(path: String, slow: Boolean = false)
 
     fun stop()
+
+    /** Whether a Clip is being heard right now. The screens watch it. */
+    val playing: Boolean
 
     /** Called once, when the app's screens are gone for good. */
     fun release()
@@ -27,7 +34,17 @@ class ClipPlayer(context: Context) : Clips {
             AudioAttributes.Builder().setUsage(C.USAGE_MEDIA).setContentType(C.AUDIO_CONTENT_TYPE_SPEECH).build(),
             /* handleAudioFocus = */ true,
         )
+        addListener(
+            object : Player.Listener {
+                override fun onIsPlayingChanged(isPlaying: Boolean) {
+                    playing = isPlaying
+                }
+            },
+        )
     }
+
+    override var playing by mutableStateOf(false)
+        private set
 
     override fun play(path: String, slow: Boolean) {
         player.setMediaItem(MediaItem.fromUri("asset:///$path"))

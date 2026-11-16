@@ -2,14 +2,10 @@ package com.polisheasy.app.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.heightIn
-import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -17,13 +13,10 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.input.TextFieldValue
 import com.polisheasy.app.R
 import com.polisheasy.app.ui.components.AnswerField
 import com.polisheasy.app.ui.components.BasePrompt
-import com.polisheasy.app.ui.components.EmptyTileSlot
 import com.polisheasy.app.ui.components.Instruction
 import com.polisheasy.app.ui.components.OptionCard
 import com.polisheasy.app.ui.components.OptionState
@@ -31,8 +24,7 @@ import com.polisheasy.app.ui.components.PlayButton
 import com.polisheasy.app.ui.components.PolishPrompt
 import com.polisheasy.app.ui.components.QuietButton
 import com.polisheasy.app.ui.components.SpeakerButton
-import com.polisheasy.app.ui.components.WordTile
-import com.polisheasy.app.ui.components.WordTileHeight
+import com.polisheasy.app.ui.components.WordTileBoard
 import com.polisheasy.app.ui.theme.Space
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.ExerciseView
@@ -90,6 +82,7 @@ private fun Options(options: List<String>, tapped: Int?, feedback: Feedback?, on
 @Composable
 private fun ListenControls(
     clip: ClipView,
+    playing: Boolean,
     answering: Boolean,
     onPlay: (ClipView, Boolean) -> Unit,
     onCantListen: () -> Unit,
@@ -98,11 +91,13 @@ private fun ListenControls(
     LaunchedEffect(Unit) { if (answering) onPlay(clip, false) }
 
     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.fillMaxWidth()) {
-        PlayButton(stringResource(R.string.audio_play_again), onClick = { onPlay(clip, false) })
+        PlayButton(stringResource(R.string.audio_play_again), onClick = { onPlay(clip, false) }, playing = playing)
         Spacer(Modifier.height(Space.xs))
-        QuietButton(stringResource(R.string.audio_slow), onClick = { onPlay(clip, true) })
-        if (answering) {
-            QuietButton(stringResource(R.string.cant_listen_now), onCantListen)
+        Row(horizontalArrangement = Arrangement.spacedBy(Space.xs)) {
+            QuietButton(stringResource(R.string.audio_slow), onClick = { onPlay(clip, true) })
+            if (answering) {
+                QuietButton(stringResource(R.string.cant_listen_now), onCantListen)
+            }
         }
     }
 }
@@ -110,6 +105,7 @@ private fun ListenControls(
 @Composable
 internal fun ListenChooseExercise(
     exercise: ExerciseView.ListenChoose,
+    playing: Boolean,
     tapped: Int?,
     feedback: Feedback?,
     onChoose: (Int) -> Unit,
@@ -118,7 +114,7 @@ internal fun ListenChooseExercise(
 ) {
     Instruction(stringResource(R.string.listen_choose_instruction))
     Spacer(Modifier.height(Space.m))
-    ListenControls(exercise.audio, answering = feedback == null, onPlay, onCantListen)
+    ListenControls(exercise.audio, playing, answering = feedback == null, onPlay, onCantListen)
     Spacer(Modifier.height(Space.l))
     Options(exercise.options, tapped, feedback, onChoose)
 }
@@ -141,6 +137,7 @@ internal fun ChoosePolishExercise(
 @Composable
 internal fun ListenTypeExercise(
     exercise: ExerciseView.ListenType,
+    playing: Boolean,
     typed: TextFieldValue,
     onTypedChange: (TextFieldValue) -> Unit,
     answering: Boolean,
@@ -150,7 +147,7 @@ internal fun ListenTypeExercise(
 ) {
     Instruction(stringResource(R.string.listen_type_instruction))
     Spacer(Modifier.height(Space.m))
-    ListenControls(exercise.audio, answering, onPlay, onCantListen)
+    ListenControls(exercise.audio, playing, answering, onPlay, onCantListen)
     Spacer(Modifier.height(Space.l))
     PolishAnswerField(typed, onTypedChange, answering, onSubmit)
 }
@@ -231,7 +228,6 @@ private fun PolishAnswerField(
     AnswerField(typed, onTypedChange, stringResource(R.string.type_answer_field_label), enabled = answering, onDone = onSubmit)
 }
 
-@OptIn(ExperimentalLayoutApi::class)
 @Composable
 internal fun WordTilesExercise(
     exercise: ExerciseView.WordTiles,
@@ -239,40 +235,19 @@ internal fun WordTilesExercise(
     onPlacedChange: (List<Int>) -> Unit,
     answering: Boolean,
 ) {
+    // The engine's TileSelection holds the rule for what may be placed and taken back.
     val selection = TileSelection(exercise.tiles, placed)
-    val answerDescription = stringResource(R.string.word_tiles_answer_description)
 
     Instruction(stringResource(R.string.word_tiles_instruction))
     Spacer(Modifier.height(Space.xs))
     BasePrompt(exercise.prompt)
     Spacer(Modifier.height(Space.xl))
-    // Tall enough for two rows of tiles from the start, so the bank below does not jump as tiles move.
-    FlowRow(
-        modifier = Modifier
-            .fillMaxWidth()
-            .heightIn(min = WordTileHeight * 2 + Space.xs)
-            .semantics { contentDescription = answerDescription },
-        horizontalArrangement = Arrangement.spacedBy(Space.xs),
-        verticalArrangement = Arrangement.spacedBy(Space.xs),
-    ) {
-        selection.placed.forEach { tile ->
-            WordTile(exercise.tiles[tile], answering, onClick = { onPlacedChange(selection.takeBack(tile).placed) })
-        }
-    }
-    Spacer(Modifier.height(Space.xs))
-    HorizontalDivider()
-    Spacer(Modifier.height(Space.l))
-    FlowRow(
-        modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.spacedBy(Space.xs),
-        verticalArrangement = Arrangement.spacedBy(Space.xs),
-    ) {
-        exercise.tiles.forEachIndexed { tile, word ->
-            if (selection.isPlaced(tile)) {
-                EmptyTileSlot(word)
-            } else {
-                WordTile(word, answering, onClick = { onPlacedChange(selection.place(tile).placed) })
-            }
-        }
-    }
+    WordTileBoard(
+        words = exercise.tiles,
+        placed = selection.placed,
+        enabled = answering,
+        onPlace = { tile -> onPlacedChange(selection.place(tile).placed) },
+        onTakeBack = { tile -> onPlacedChange(selection.takeBack(tile).placed) },
+        answerDescription = stringResource(R.string.word_tiles_answer_description),
+    )
 }

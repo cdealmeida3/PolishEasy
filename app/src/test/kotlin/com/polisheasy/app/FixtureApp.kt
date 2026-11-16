@@ -59,5 +59,7 @@ class RecordingClips : Clips {
         asked += Stopped
     }
 
+    override val playing = false
+
     override fun release() = Unit
 }

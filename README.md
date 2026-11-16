@@ -35,7 +35,7 @@ builds the minified release APK and App Bundle under `app/build/outputs/`. They 
 ./gradlew :app:testDebugUnitTest
 ```
 
-plays the real screens on the computer, with no phone or emulator, and CI runs it on every build. The tests start the app on Home and tap and type their way through a Daily Set to its Summary: one Exercise of each type, a wrong answer, an answer missing its accents, the listening controls, "can't listen now", Sound turned off in Settings, leaving and coming back, the Path and a Replay. The first run downloads the Android version they run on (about 150 MB).
+plays the real screens on the computer, with no phone or emulator, and CI runs it on every build. The tests start the app on Home and tap and type their way through a Daily Set to its Summary: one Exercise of each type, a wrong answer, an answer missing its accents, the listening controls, "can't listen now", the close button, Sound turned off in Settings, leaving and coming back, the Path and a Replay. The first run downloads the Android version they run on (about 150 MB).
 
 They play a small fixture course in `app/src/test/resources/fixture-course`, written in the same files as `content/`, so an edit to the real course cannot break them. One test opens the real packaged course and checks only that its first step shows. The clock and the Clip player are replaced too, so a test can move to the next day and can say which Clip a screen asked for.
 

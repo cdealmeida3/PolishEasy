@@ -6,24 +6,30 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
-import androidx.compose.runtime.key
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.LifecycleStartEffect
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.polisheasy.app.ClipPlayer
 import com.polisheasy.app.Clips
 import com.polisheasy.app.CourseViewModel
+import com.polisheasy.app.R
 import com.polisheasy.app.Screen
+import com.polisheasy.app.ui.components.DailySetFrame
 import com.polisheasy.app.ui.screens.HomeScreen
 import com.polisheasy.app.ui.screens.PathScreen
 import com.polisheasy.app.ui.screens.PlayerScreen
 import com.polisheasy.app.ui.screens.SettingsScreen
 import com.polisheasy.app.ui.screens.SummaryScreen
 import com.polisheasy.app.ui.screens.TipScreen
-import com.polisheasy.engine.ClipView
+import com.polisheasy.app.ui.screens.description
+import com.polisheasy.app.ui.screens.fraction
+import com.polisheasy.engine.SetProgress
 
 /** [player] plays the Clips, and is released when the app's screens go. */
 @Composable
@@ -32,7 +38,6 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
     DisposableEffect(Unit) { onDispose { player.release() } }
     // The app is silent once it leaves the screen.
     LifecycleStartEffect(Unit) { onStopOrDispose { player.stop() } }
-    val onPlay: (ClipView, Boolean) -> Unit = { clip, slow -> player.play(clip.path, slow) }
     Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         when (val screen = viewModel.screen) {
             is Screen.Home -> {
@@ -77,30 +82,8 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
                 }
                 PathScreen(screen.path, onReplay = viewModel::replay, onOpenTodays = viewModel::openTodays)
             }
-            is Screen.Tip -> {
-                BackHandler(onBack = viewModel::leaveDailySet)
-                TipScreen(screen.tip, screen.progress, onContinue = viewModel::continueToNext)
-            }
-            is Screen.Player -> {
-                BackHandler(onBack = viewModel::leaveDailySet)
-                // Keyed on each showing, so an Exercise that returns starts fresh, typed text included.
-                key(screen.shown) {
-                    // A Clip stops when the Learner moves on.
-                    DisposableEffect(Unit) { onDispose { player.stop() } }
-                    PlayerScreen(
-                        screen.exercise,
-                        screen.progress,
-                        screen.review,
-                        screen.replay,
-                        screen.feedback,
-                        onAnswer = viewModel::answer,
-                        onContinue = viewModel::continueToNext,
-                        onPlay = onPlay,
-                        onCantListen = viewModel::cantListenNow,
-                        onReport = { reportMistake(context, screen.exerciseId) },
-                    )
-                }
-            }
+            is Screen.Tip -> DailySet(screen, screen.shown, screen.progress, viewModel, player)
+            is Screen.Player -> DailySet(screen, screen.shown, screen.progress, viewModel, player)
             is Screen.Summary -> {
                 BackHandler(onBack = viewModel::leaveDailySet)
                 SummaryScreen(
@@ -112,6 +95,58 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
                     onDone = viewModel::leaveDailySet,
                 )
             }
+        }
+    }
+}
+
+/**
+ * The Tip or Exercise the Learner is on. [shown] names it: when it changes, the old step slides
+ * out while the new one slides in, and only the new one answers taps.
+ */
+@Composable
+private fun DailySet(screen: Screen, shown: Int, progress: SetProgress, viewModel: CourseViewModel, player: Clips) {
+    val context = LocalContext.current
+    val current by rememberUpdatedState(shown)
+    BackHandler(onBack = viewModel::leaveDailySet)
+    // A Clip stops when the Learner leaves the Daily Set, and when they move on within it.
+    DisposableEffect(Unit) { onDispose { player.stop() } }
+    DailySetFrame(
+        progress = progress.fraction,
+        progressDescription = progress.description(),
+        closeLabel = stringResource(R.string.daily_set_close),
+        onClose = viewModel::leaveDailySet,
+        step = shown,
+    ) { step ->
+        // A step on its way out keeps what it last showed.
+        val held = remember { arrayOf(screen) }
+        if (step == shown) held[0] = screen
+        val live: (() -> Unit) -> Unit = { act -> if (step == current) act() }
+        val moveOn = {
+            live {
+                player.stop()
+                viewModel.continueToNext()
+            }
+        }
+        when (val showing = held[0]) {
+            is Screen.Tip -> TipScreen(showing.tip, onContinue = moveOn)
+            is Screen.Player -> PlayerScreen(
+                showing.exercise,
+                showing.review,
+                showing.replay,
+                showing.feedback,
+                playing = player.playing,
+                onAnswer = { answer -> live { viewModel.answer(answer) } },
+                onContinue = moveOn,
+                onPlay = { clip, slow -> live { player.play(clip.path, slow) } },
+                onCantListen = {
+                    live {
+                        player.stop()
+                        viewModel.cantListenNow()
+                    }
+                },
+                onReport = { live { reportMistake(context, showing.exerciseId) } },
+            )
+            else -> Unit
         }
     }
 }

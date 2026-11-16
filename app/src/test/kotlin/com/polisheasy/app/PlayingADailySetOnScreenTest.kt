@@ -135,7 +135,8 @@ class PlayingADailySetOnScreenTest {
         tap(R.string.action_continue)
 
         tap("good night")
-        shows(text(R.string.feedback_wrong, "hello (polite); good morning"))
+        shows(R.string.feedback_wrong)
+        shows(text(R.string.feedback_correct_answer, "hello (polite); good morning"))
         tap(R.string.action_continue)
         buildThisIsAdam()
         typeThankYou()
@@ -162,6 +163,7 @@ class PlayingADailySetOnScreenTest {
         type("dziekuje")
         tap(R.string.action_check)
 
+        shows(R.string.feedback_accepted)
         shows(text(R.string.feedback_accent_warning, "dziękuję"))
         tap(R.string.action_continue)
         showsProgress(3)
@@ -192,6 +194,21 @@ class PlayingADailySetOnScreenTest {
         chooseGoodbye()
         shows(R.string.listen_type_instruction)
         assertEquals(listOf(Stopped, Played("audio/nie.ogg", slow = false)), clips.asked)
+    }
+
+    @Test
+    fun `the close button leaves a Daily Set, which Home then offers to continue`() {
+        openApp()
+        tap(R.string.home_start)
+        tap(R.string.action_continue)
+        chooseHello()
+
+        screen.onNodeWithContentDescription(text(R.string.daily_set_close)).performClick()
+
+        shows(text(R.string.home_in_progress, 1, 6))
+        tap(R.string.home_continue)
+        showsProgress(1)
+        shows(R.string.word_tiles_instruction)
     }
 
     @Test

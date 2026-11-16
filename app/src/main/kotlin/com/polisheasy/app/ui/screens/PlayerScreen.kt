@@ -3,6 +3,7 @@ package com.polisheasy.app.ui.screens
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -13,7 +14,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import com.polisheasy.app.R
 import com.polisheasy.app.ui.PolishEasyTheme
-import com.polisheasy.app.ui.components.DailySetFrame
+import com.polisheasy.app.ui.components.DailySetStep
 import com.polisheasy.app.ui.components.FeedbackPanel
 import com.polisheasy.app.ui.components.FeedbackTone
 import com.polisheasy.app.ui.components.Instruction
@@ -21,12 +22,12 @@ import com.polisheasy.app.ui.components.PolishKeyRow
 import com.polisheasy.app.ui.components.PrimaryButton
 import com.polisheasy.app.ui.components.SpeakerButton
 import com.polisheasy.app.ui.components.inserting
+import com.polisheasy.app.ui.components.rememberAnswerHaptics
 import com.polisheasy.app.ui.theme.Space
 import com.polisheasy.engine.Answer
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
-import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.TileSelection
 
 /**
@@ -36,10 +37,10 @@ import com.polisheasy.engine.TileSelection
 @Composable
 internal fun PlayerScreen(
     exercise: ExerciseView,
-    progress: SetProgress,
     review: Boolean,
     replay: Boolean,
     feedback: Feedback?,
+    playing: Boolean,
     onAnswer: (Answer) -> Unit,
     onContinue: () -> Unit,
     onPlay: (ClipView, Boolean) -> Unit,
@@ -52,6 +53,15 @@ internal fun PlayerScreen(
     // The option the Learner tapped, so it can be marked once the answer is known.
     var tapped by rememberSaveable { mutableStateOf<Int?>(null) }
     val keyboard = LocalSoftwareKeyboardController.current
+    // Felt once, when the answer is checked, and not again if the screen is rebuilt.
+    var felt by rememberSaveable { mutableStateOf(feedback != null) }
+    val haptics = rememberAnswerHaptics()
+    LaunchedEffect(feedback) {
+        if (feedback != null && !felt) {
+            felt = true
+            if (feedback.correct) haptics.right() else haptics.wrong()
+        }
+    }
     val answering = feedback == null
     val typing = exercise is ExerciseView.TypeAnswer || exercise is ExerciseView.Conjugation ||
         exercise is ExerciseView.ListenType
@@ -81,9 +91,7 @@ internal fun PlayerScreen(
         }
         else -> null
     }
-    DailySetFrame(
-        progress = progress.fraction,
-        progressDescription = progress.description(),
+    DailySetStep(
         feedback = feedback?.let { { Feedback(it, onContinue, onPlay, onReport) } },
         action = check,
         keyRow = if (typing) {
@@ -111,9 +119,10 @@ internal fun PlayerScreen(
             is ExerciseView.Conjugation ->
                 ConjugationExercise(exercise, typed, onTypedChange = { typed = it }, answering, submitTyped)
             is ExerciseView.ListenChoose ->
-                ListenChooseExercise(exercise, tapped, feedback, choose, onPlay, onCantListen)
+                ListenChooseExercise(exercise, playing, tapped, feedback, choose, onPlay, onCantListen)
             is ExerciseView.ListenType -> ListenTypeExercise(
                 exercise,
+                playing,
                 typed,
                 onTypedChange = { typed = it },
                 answering,
@@ -135,11 +144,18 @@ private fun Feedback(feedback: Feedback, onContinue: () -> Unit, onPlay: (ClipVi
             feedback.correct -> FeedbackTone.Correct
             else -> FeedbackTone.Wrong
         },
-        message = when {
+        heading = stringResource(
+            when {
+                feedback.correct && feedback.accentWarning -> R.string.feedback_accepted
+                feedback.correct -> R.string.feedback_correct
+                else -> R.string.feedback_wrong
+            },
+        ),
+        detail = when {
             feedback.correct && feedback.accentWarning ->
                 stringResource(R.string.feedback_accent_warning, feedback.correctAnswer)
-            feedback.correct -> stringResource(R.string.feedback_correct)
-            else -> stringResource(R.string.feedback_wrong, feedback.correctAnswer)
+            feedback.correct -> null
+            else -> stringResource(R.string.feedback_correct_answer, feedback.correctAnswer)
         },
         continueLabel = stringResource(R.string.action_continue),
         onContinue = onContinue,

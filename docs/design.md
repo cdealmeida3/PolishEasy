@@ -173,8 +173,16 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
   After an answer the right option is always marked, whichever was tapped.
 - **`WordTile`**: `secondaryContainer`, `titleMedium`, 48 high, the bottom edge. A tile that has been used leaves an empty slot in the bank, so the bank never shifts.
 - **`AnswerField`** and **`PolishKeyRow`**: outlined, `titleMedium` for what is typed, 2 dp `primary` border when focused. The Polish key row sits directly above the keyboard, with keys at least 48 high.
-- **`FeedbackPanel`**: rises from the bottom over the main button's place and holds the next one. `successContainer` with a tick and "Correct!", or `cautionContainer` with a cross and "Not quite" and the correct answer in `bodyLarge`. An accent warning is `cautionContainer` with a tick. It holds the speaker for the Polish, Continue as a `PrimaryButton` in the panel's tone, and "Report a mistake" as a small flag icon button with that label for screen readers.
-- **`DailySetFrame`**: the layout of every Tip and Exercise. Top bar with a close button and the progress bar; content from the top, scrolling if it must; the main action pinned to the bottom, with the Polish key row below it. Nothing moves when feedback appears. An Exercise draws only what is above the main action: "Check" belongs to the frame's bottom, not to the Exercise.
+- **`FeedbackPanel`**: rises from the bottom over the main button's place and holds the next one. It has a heading in `titleLarge` in the panel's accent colour and, under it, a line in `bodyLarge`:
+  - right: `successContainer`, a tick, "Correct!", no second line
+  - accent warning: `cautionContainer`, a tick, "Correct", then "Mind the accents:" and the proper spelling
+  - wrong: `cautionContainer`, a cross, "Not quite", then "Correct answer:" and the answer
+
+  It holds the speaker for the Polish, Continue as a `PrimaryButton` in the panel's tone, and "Report a mistake" as a small flag icon button with that label for screen readers.
+- **`DailySetFrame`** and **`DailySetStep`**: the layout of every Tip and Exercise. The frame is the top bar, a close button and the progress bar, which stays put for the whole Daily Set while the steps slide under it. A step is content from the top, scrolling if it must, and the main action pinned to the bottom, with the Polish key row below it. Nothing moves when feedback appears. An Exercise draws only what is above the main action: "Check" belongs to the step's bottom, not to the Exercise.
+- **The close button** leaves the Daily Set at once, with no question: every answer is already saved, and Home offers to continue. It is the close icon in `onSurfaceVariant`, lined up with the content's edge.
+- **`WordTileBoard`**: the answer being built, a divider, and the bank of `WordTile`s. It owns the tiles' movement between the two.
+- **Listening controls**: the `PlayButton` centred, and under it "Slow" and "Can't listen now" side by side as `QuietButton`s.
 - **`ScreenFrame`**: the layout of a screen outside a Daily Set, with the edge spacing under Space.
 - **`Instruction`**, **`PolishPrompt`**, **`BasePrompt`**: the label above a prompt and the prompt itself, so the choice of style between a short and a long Polish prompt is made in one place.
 - **`ProgressBar`**: 12 high, fully rounded, `primary` on `surfaceContainerHigh`.
@@ -199,8 +207,8 @@ Motion says what just happened. It never makes the Learner wait: every tap is ac
 | Feedback panel | Slides up from the bottom, 250 ms, ease out. Leaves in 150 ms |
 | Progress bar | A spring to the new value, with a little bounce |
 | The right option, a tick appearing | Scales from 0.8 to 1 with a little bounce, 200 ms |
-| The wrong option | One short side-to-side shake, 250 ms |
-| The play button while a Clip plays | A slow pulse, 1 to 1.06 |
+| The wrong option | One short side-to-side shake of 8 dp, 250 ms |
+| The play button while a Clip plays | A slow pulse, 1 to 1.06, 700 ms each way |
 | Summary | The score ring fills in 800 ms, numbers count up, then confetti falls once for about 2 seconds |
 | The Streak going up | The old number rolls up and out, the new one rolls in, and the flame scales once |
 
@@ -213,12 +221,12 @@ Rules:
 
 **Haptics.** Through the view's haptic feedback, so the phone's own touch setting is respected and no permission is needed.
 
-- Right answer: `CONFIRM`. Wrong answer: `REJECT`. On Android versions without those (below 11): `KEYBOARD_TAP` for right and `LONG_PRESS` for wrong.
+- Felt once, as the feedback panel appears. Right answer, with or without an accent warning: `CONFIRM`. Wrong answer: `REJECT`. On Android versions without those (below 11): `KEYBOARD_TAP` for right and `LONG_PRESS` for wrong.
 - Placing a word tile: `CLOCK_TICK`.
 - Finishing a Daily Set: `CONFIRM` once as the Summary appears.
 - Nothing else vibrates.
 
-**Sound.** Only Clips play today. Any sound effect added later obeys the Sound setting and "can't listen now", exactly as Clips do.
+**Sound.** Only Clips play today; the Daily Set player was built without sound effects. Any sound effect added later obeys the Sound setting and "can't listen now", exactly as Clips do.
 
 ## Accessibility
 

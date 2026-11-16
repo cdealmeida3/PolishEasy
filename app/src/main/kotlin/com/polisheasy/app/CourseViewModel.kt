@@ -40,13 +40,13 @@ sealed interface Screen {
         val soundOn: Boolean,
     ) : Screen
 
-    /** [replay] when the Tip belongs to a Replay. */
-    data class Tip(val tip: TipView, val progress: SetProgress, val replay: Boolean) : Screen
+    /** [shown] is different for each step shown. [replay] when the Tip belongs to a Replay. */
+    data class Tip(val tip: TipView, val progress: SetProgress, val shown: Int, val replay: Boolean) : Screen
 
     data class Player(
         val exercise: ExerciseView,
         val progress: SetProgress,
-        /** Different each time an Exercise is shown, so one that returns unchanged still starts fresh. */
+        /** Different for each step shown, so an Exercise that returns unchanged still starts fresh. */
         val shown: Int,
         /** Whether this Exercise is part of the Review that ends the Daily Set. */
         val review: Boolean,
@@ -89,7 +89,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
     var screen: Screen by mutableStateOf(home())
         private set
 
-    private var exercisesShown = 0
+    private var stepsShown = 0
 
     fun startDailySet() = show(engine.startDailySet(sound = settings.soundOn))
 
@@ -191,11 +191,11 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
 
     private fun show(step: Step) {
         screen = when (step) {
-            is Step.ShowTip -> Screen.Tip(step.tip, step.progress, step.replay)
+            is Step.ShowTip -> Screen.Tip(step.tip, step.progress, shown = ++stepsShown, replay = step.replay)
             is Step.ShowExercise -> Screen.Player(
                 step.exercise,
                 step.progress,
-                shown = ++exercisesShown,
+                shown = ++stepsShown,
                 review = step.review,
                 replay = step.replay,
                 exerciseId = step.exerciseId,

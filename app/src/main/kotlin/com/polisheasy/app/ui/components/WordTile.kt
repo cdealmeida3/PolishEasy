@@ -1,6 +1,29 @@
 package com.polisheasy.app.ui.components
 
+import androidx.compose.animation.core.Animatable
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.key
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.layout.positionInRoot
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.zIndex
+import com.polisheasy.app.ui.theme.Motion
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
@@ -64,5 +87,108 @@ private fun TileWord(word: String, modifier: Modifier) {
             color = MaterialTheme.colorScheme.onSecondaryContainer,
             modifier = modifier,
         )
+    }
+}
+
+/**
+ * The two halves of a word tiles Exercise: the answer being built, and below a line the bank of
+ * [words]. [placed] is the bank positions of the tiles in the answer, in order. A tile travels
+ * between its slot in the bank and its place in the answer, and its slot stays behind, so the bank
+ * never shifts. [answerDescription] is what a screen reader calls the answer.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+fun WordTileBoard(
+    words: List<String>,
+    placed: List<Int>,
+    enabled: Boolean,
+    onPlace: (Int) -> Unit,
+    onTakeBack: (Int) -> Unit,
+    answerDescription: String,
+    modifier: Modifier = Modifier,
+) {
+    val haptics = rememberAnswerHaptics()
+    // Where each tile last sat in the bank and in the answer, so it can set off from there.
+    val inBank = remember { mutableMapOf<Int, Offset>() }
+    val inAnswer = remember { mutableMapOf<Int, Offset>() }
+    Column(modifier = modifier) {
+        // Tall enough for two rows of tiles from the start, so the bank below does not jump as tiles move.
+        FlowRow(
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = WordTileHeight * 2 + Space.xs)
+                .zIndex(1f)
+                .semantics { contentDescription = answerDescription },
+            horizontalArrangement = Arrangement.spacedBy(Space.xs),
+            verticalArrangement = Arrangement.spacedBy(Space.xs),
+        ) {
+            placed.forEach { tile ->
+                key(tile) {
+                    Travelling(from = { inBank[tile] }, onPlaced = { inAnswer[tile] = it }) {
+                        WordTile(words[tile], enabled, onClick = { onTakeBack(tile) })
+                    }
+                }
+            }
+        }
+        Spacer(Modifier.height(Space.xs))
+        HorizontalDivider()
+        Spacer(Modifier.height(Space.l))
+        FlowRow(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(Space.xs),
+            verticalArrangement = Arrangement.spacedBy(Space.xs),
+        ) {
+            words.forEachIndexed { tile, word ->
+                if (tile in placed) {
+                    EmptyTileSlot(word, Modifier.onGloballyPositioned { inBank[tile] = it.positionInRoot() })
+                } else {
+                    // A tile that was never in the answer has nowhere to come from, and stays put.
+                    Travelling(from = { inAnswer.remove(tile) }, onPlaced = { inBank[tile] = it }) {
+                        WordTile(
+                            word,
+                            enabled,
+                            onClick = {
+                                haptics.tick()
+                                onPlace(tile)
+                            },
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Draws [content] setting off from where [from] says it was and arriving where it now belongs.
+ * [onPlaced] is told that place. The layout is not touched, only where it is drawn.
+ */
+@Composable
+private fun Travelling(from: () -> Offset?, onPlaced: (Offset) -> Unit, content: @Composable () -> Unit) {
+    val spec = Motion.tile()
+    // How much of the way is still to go, from 1 to 0.
+    val left = remember { Animatable(1f) }
+    var way by remember { mutableStateOf<Offset?>(null) }
+    var set by remember { mutableStateOf(false) }
+    LaunchedEffect(Unit) { left.animateTo(0f, spec) }
+    Box(
+        modifier = Modifier
+            .zIndex(if (left.value != 0f) 1f else 0f)
+            .onGloballyPositioned { coordinates ->
+                val here = coordinates.positionInRoot()
+                if (!set) {
+                    set = true
+                    way = from()?.minus(here)
+                }
+                onPlaced(here)
+            },
+    ) {
+        Box(
+            modifier = Modifier.graphicsLayer {
+                val start = way ?: Offset.Zero
+                translationX = start.x * left.value
+                translationY = start.y * left.value
+            },
+        ) { content() }
     }
 }

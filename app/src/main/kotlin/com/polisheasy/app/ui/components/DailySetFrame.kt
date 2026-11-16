@@ -1,6 +1,19 @@
 package com.polisheasy.app.ui.components
 
+import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.ExitTransition
+import androidx.compose.animation.core.MutableTransitionState
 import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.runtime.remember
+import androidx.compose.ui.res.painterResource
+import com.polisheasy.app.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -34,49 +47,87 @@ import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
 
 /**
- * The layout of every Tip and Exercise: the progress bar at the top, [content] from the top and
- * scrolling if it must, and the main action pinned to the bottom, which is the top of the keyboard
- * while it is open.
- *
- * The bottom holds [feedback] when there is some, and otherwise [action] with [keyRow] below it.
- * Content starts at the same place whichever it is, so nothing moves when feedback appears.
+ * What every Tip and Exercise of a Daily Set sits in: a close button and the progress bar at the
+ * top, which stay where they are, and below them the [step] being shown. When [step] changes the
+ * old one slides out and the new one slides in; [content] draws either, usually as a [DailySetStep].
  */
 @Composable
-fun DailySetFrame(
+fun <K> DailySetFrame(
     progress: Float,
     progressDescription: String,
+    closeLabel: String,
+    onClose: () -> Unit,
+    step: K,
     modifier: Modifier = Modifier,
-    feedback: (@Composable () -> Unit)? = null,
-    action: (@Composable () -> Unit)? = null,
-    keyRow: (@Composable () -> Unit)? = null,
-    content: @Composable ColumnScope.() -> Unit,
+    content: @Composable (step: K) -> Unit,
 ) {
-    val sides = WindowInsets.safeDrawing.only(WindowInsetsSides.Horizontal)
+    val transition = Motion.step()
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
             .fillMaxSize()
             .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Top)),
     ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Horizontal))
+                .widthIn(max = Size.contentMax)
+                // The close icon, not its touch area, lines up with the content below.
+                .padding(start = Space.s, end = Space.screenSide, top = Space.xs),
+        ) {
+            IconButton(onClick = onClose, modifier = Modifier.size(Size.touch)) {
+                Icon(
+                    painterResource(R.drawable.ic_close),
+                    contentDescription = closeLabel,
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+            Spacer(Modifier.width(Space.xxs))
+            ProgressBar(progress, progressDescription, Modifier.weight(1f))
+        }
+        AnimatedContent(
+            targetState = step,
+            transitionSpec = { transition },
+            label = "Daily Set step",
+            modifier = Modifier.weight(1f),
+        ) { shown -> content(shown) }
+    }
+}
+
+/**
+ * One Tip or Exercise inside a [DailySetFrame]: [content] from the top, scrolling if it must, and
+ * the main action pinned to the bottom, which is the top of the keyboard while it is open.
+ *
+ * The bottom holds [feedback] when there is some, rising into place, and otherwise [action] with
+ * [keyRow] below it. Content starts at the same place whichever it is, so nothing moves when
+ * feedback appears.
+ */
+@Composable
+fun DailySetStep(
+    modifier: Modifier = Modifier,
+    feedback: (@Composable () -> Unit)? = null,
+    action: (@Composable () -> Unit)? = null,
+    keyRow: (@Composable () -> Unit)? = null,
+    content: @Composable ColumnScope.() -> Unit,
+) {
+    Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = modifier.fillMaxSize()) {
         Column(
             modifier = Modifier
                 .weight(1f)
-                .windowInsetsPadding(sides)
+                .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Horizontal))
                 .widthIn(max = Size.contentMax)
-                .padding(start = Space.screenSide, end = Space.screenSide, top = Space.screenTop),
-        ) {
-            ProgressBar(progress, progressDescription)
-            Column(
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxWidth()
-                    .verticalScroll(rememberScrollState())
-                    .padding(top = Space.l, bottom = Space.m),
-                content = content,
-            )
-        }
+                .fillMaxWidth()
+                .verticalScroll(rememberScrollState())
+                .padding(start = Space.screenSide, end = Space.screenSide, top = Space.m, bottom = Space.m),
+            content = content,
+        )
         if (feedback != null) {
-            feedback()
+            // Starts hidden, so the panel rises the moment it is first shown.
+            val rising = remember { MutableTransitionState(false).apply { targetState = true } }
+            AnimatedVisibility(visibleState = rising, enter = Motion.panelEnter(), exit = ExitTransition.None) {
+                feedback()
+            }
         } else {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
@@ -111,7 +162,6 @@ fun ProgressBar(progress: Float, description: String, modifier: Modifier = Modif
     )
     Box(
         modifier = modifier
-            .fillMaxWidth()
             .height(Size.progressBar)
             .clip(CircleShape)
             .background(MaterialTheme.colorScheme.surfaceContainerHigh)

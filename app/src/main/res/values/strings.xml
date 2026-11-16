@@ -37,8 +37,11 @@
     <string name="review_label">Review</string>
     <string name="progress_description">%1$d of %2$d Exercises answered correctly</string>
     <string name="feedback_correct">Correct!</string>
-    <string name="feedback_accent_warning">Correct. Mind the accents: %1$s</string>
-    <string name="feedback_wrong">Not quite. Correct answer: %1$s</string>
+    <string name="feedback_accepted">Correct</string>
+    <string name="feedback_accent_warning">Mind the accents: %1$s</string>
+    <string name="feedback_wrong">Not quite</string>
+    <string name="feedback_correct_answer">Correct answer: %1$s</string>
+    <string name="daily_set_close">Close</string>
     <string name="action_continue">Continue</string>
     <string name="summary_title">Daily Set complete</string>
     <string name="summary_review_only_title">Review-only Daily Set complete</string>
