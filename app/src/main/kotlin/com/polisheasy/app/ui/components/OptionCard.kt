@@ -1,0 +1,91 @@
+package com.polisheasy.app.ui.components
+
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.res.painterResource
+import com.polisheasy.app.R
+import com.polisheasy.app.ui.PolishEasyTheme
+import com.polisheasy.app.ui.theme.Corner
+import com.polisheasy.app.ui.theme.Edge
+import com.polisheasy.app.ui.theme.Motion
+import com.polisheasy.app.ui.theme.Size
+import com.polisheasy.app.ui.theme.Space
+
+/** What an [OptionCard] is showing. Each state has an icon or a border as well as a colour. */
+enum class OptionState {
+    /** Waiting to be chosen. */
+    Idle,
+
+    /** Chosen, before "Check", where an Exercise has one. */
+    Chosen,
+
+    /** The right answer, marked once the Exercise is answered, whichever option was tapped. */
+    Right,
+
+    /** The option the Learner tapped, when it was not the right one. */
+    Wrong,
+
+    /** Any other option once the Exercise is answered. */
+    Faded,
+}
+
+/** An answer to choose. Only an idle or a chosen card can be tapped. */
+@Composable
+fun OptionCard(text: String, state: OptionState, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    val colors = PolishEasyTheme.colors
+    val scheme = MaterialTheme.colorScheme
+    val (fill, edge, label) = when (state) {
+        OptionState.Idle, OptionState.Faded -> Triple(scheme.surfaceContainerLowest, scheme.outlineVariant, scheme.onSurface)
+        OptionState.Chosen -> Triple(scheme.primaryContainer, scheme.primary, scheme.onPrimaryContainer)
+        OptionState.Right -> Triple(colors.successContainer, colors.success, colors.onSuccessContainer)
+        OptionState.Wrong -> Triple(colors.cautionContainer, colors.caution, colors.onCautionContainer)
+    }
+    val tappable = state == OptionState.Idle || state == OptionState.Chosen
+    Edged(
+        fill = fill,
+        edge = edge,
+        corner = Corner.medium,
+        border = Edge.border,
+        enabled = tappable,
+        onClick = onClick,
+        contentAlignment = Alignment.CenterStart,
+        modifier = modifier
+            .fillMaxWidth()
+            .alpha(if (state == OptionState.Faded) Motion.FADED_ALPHA else 1f),
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = Size.control)
+                .padding(horizontal = Space.m, vertical = Space.s),
+        ) {
+            Text(text, style = MaterialTheme.typography.titleMedium, color = label, modifier = Modifier.weight(1f))
+            // The feedback panel says the result in words; these mark where it happened.
+            when (state) {
+                OptionState.Right -> StateIcon(R.drawable.ic_check_circle, colors.success)
+                OptionState.Wrong -> StateIcon(R.drawable.ic_cancel, colors.caution)
+                else -> Unit
+            }
+        }
+    }
+}
+
+@Composable
+private fun StateIcon(drawable: Int, tint: Color) {
+    Spacer(Modifier.width(Space.s))
+    Icon(painterResource(drawable), contentDescription = null, tint = tint, modifier = Modifier.size(Size.icon))
+}
