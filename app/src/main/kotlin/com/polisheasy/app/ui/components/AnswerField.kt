@@ -29,6 +29,22 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.intl.LocaleList
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
+import androidx.compose.foundation.text.BasicTextField
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.focus.onFocusChanged
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.ui.unit.dp
+import com.polisheasy.app.ui.theme.inPolish
+import com.polisheasy.app.ui.theme.Edge
 
 /**
  * The field a Polish answer is typed into. The keyboard opens with it while [enabled], and its
@@ -55,18 +71,84 @@ fun AnswerField(
         textStyle = MaterialTheme.typography.titleMedium,
         shape = MaterialTheme.shapes.small,
         label = { Text(label) },
-        keyboardOptions = KeyboardOptions(
-            capitalization = KeyboardCapitalization.None,
-            autoCorrectEnabled = false,
-            imeAction = ImeAction.Done,
-            hintLocales = LocaleList("pl"),
-        ),
+        keyboardOptions = PolishKeyboard,
         keyboardActions = KeyboardActions(onDone = { onDone() }),
         modifier = modifier
             .fillMaxWidth()
             .focusRequester(focusRequester),
     )
 }
+
+/**
+ * A Polish sentence with a gap the Learner types into: the words [before] and [after] the gap at
+ * prompt size, and between them a slot that holds what is typed and grows with it. The whole
+ * sentence is the text field, so the keyboard opens with it while [enabled], and its "Done" key
+ * calls [onDone]. [label] is what a screen reader calls the slot.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+fun SentenceField(
+    before: String,
+    after: String,
+    typed: TextFieldValue,
+    onTypedChange: (TextFieldValue) -> Unit,
+    label: String,
+    enabled: Boolean,
+    onDone: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val scheme = MaterialTheme.colorScheme
+    val focusRequester = remember { FocusRequester() }
+    var focused by remember { mutableStateOf(false) }
+    LaunchedEffect(Unit) { if (enabled) focusRequester.requestFocus() }
+    val style = MaterialTheme.typography.headlineMedium.inPolish()
+
+    BasicTextField(
+        value = typed,
+        onValueChange = onTypedChange,
+        readOnly = !enabled,
+        singleLine = true,
+        textStyle = style.copy(color = scheme.onSecondaryContainer),
+        cursorBrush = SolidColor(scheme.primary),
+        keyboardOptions = PolishKeyboard,
+        keyboardActions = KeyboardActions(onDone = { onDone() }),
+        modifier = modifier
+            .fillMaxWidth()
+            .focusRequester(focusRequester)
+            .onFocusChanged { focused = it.isFocused }
+            .semantics { contentDescription = label },
+        decorationBox = { slot ->
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(Space.xs),
+                verticalArrangement = Arrangement.spacedBy(Space.xs),
+                itemVerticalAlignment = Alignment.CenterVertically,
+            ) {
+                wordsOf(before).forEach { Text(it, style = style, color = scheme.onSurface) }
+                Box(
+                    modifier = Modifier
+                        .width(IntrinsicSize.Min)
+                        .widthIn(min = SlotLeast)
+                        .background(scheme.secondaryContainer, MaterialTheme.shapes.small)
+                        .border(Edge.border, if (focused && enabled) scheme.primary else scheme.outline, MaterialTheme.shapes.small)
+                        .padding(horizontal = Space.s, vertical = Space.xxs),
+                ) { slot() }
+                wordsOf(after).forEach { Text(it, style = style, color = scheme.onSurface) }
+            }
+        },
+    )
+}
+
+private fun wordsOf(text: String): List<String> = text.split(' ').filter { it.isNotBlank() }
+
+private val SlotLeast = 96.dp
+
+/** A keyboard for typing Polish: no capitals and no corrections forced on the Learner. */
+private val PolishKeyboard = KeyboardOptions(
+    capitalization = KeyboardCapitalization.None,
+    autoCorrectEnabled = false,
+    imeAction = ImeAction.Done,
+    hintLocales = LocaleList("pl"),
+)
 
 private val polishLetters = listOf("ą", "ć", "ę", "ł", "ń", "ó", "ś", "ź", "ż")
 

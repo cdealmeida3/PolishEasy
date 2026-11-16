@@ -47,6 +47,14 @@ import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
 import com.polisheasy.app.ui.theme.Scaled
 import com.polisheasy.app.ui.PolishEasyTheme
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.unit.dp
 
 /**
  * What every Tip and Exercise of a Daily Set sits in: a close button and the progress bar at the
@@ -99,12 +107,13 @@ fun <K> DailySetFrame(
 }
 
 /**
- * One Tip or Exercise inside a [DailySetFrame]: [content] from the top, scrolling if it must, and
- * the main action pinned to the bottom, which is the top of the keyboard while it is open.
+ * One Tip or Exercise inside a [DailySetFrame]: the prompt from the top and the answers from the
+ * bottom, under the thumb. [content] is the prompt and [answer] what the Learner answers with, which
+ * sits just above the main action. If the two do not fit they scroll as one.
  *
- * The bottom holds [feedback] when there is some, rising into place, and otherwise [action] with
- * [keyRow] below it. Content starts at the same place whichever it is, so nothing moves when
- * feedback appears.
+ * The bottom holds [action] with [keyRow] below it, on top of the keyboard while it is open.
+ * [feedback] rises over that place when there is some. The room it needs is kept from the start,
+ * so nothing moves when it appears.
  */
 @Composable
 fun DailySetStep(
@@ -112,31 +121,39 @@ fun DailySetStep(
     feedback: (@Composable () -> Unit)? = null,
     action: (@Composable () -> Unit)? = null,
     keyRow: (@Composable () -> Unit)? = null,
+    answer: (@Composable ColumnScope.() -> Unit)? = null,
     content: @Composable ColumnScope.() -> Unit,
 ) {
-    Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = modifier.fillMaxSize()) {
-        Column(
-            modifier = Modifier
-                .weight(1f)
-                .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Horizontal))
-                .widthIn(max = Size.contentMax)
-                .fillMaxWidth()
-                .verticalScroll(rememberScrollState())
-                .padding(start = Space.screenSide, end = Space.screenSide, top = Space.m, bottom = Space.m),
-            content = content,
-        )
-        if (feedback != null) {
-            // Starts hidden, so the panel rises the moment it is first shown.
-            val rising = remember { MutableTransitionState(false).apply { targetState = true } }
-            AnimatedVisibility(visibleState = rising, enter = Motion.panelEnter(), exit = ExitTransition.None) {
-                feedback()
+    val density = LocalDensity.current
+    // A panel taller than the room kept for it, at a large font size, pushes the answers up to stay clear.
+    var panel by remember { mutableStateOf(0.dp) }
+    val room = if (answer == null) 0.dp else maxOf(Size.feedbackRoom, if (feedback != null) panel else 0.dp)
+    Box(modifier = modifier.fillMaxSize()) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.fillMaxSize()) {
+            BoxWithConstraints(modifier = Modifier.weight(1f)) {
+                Column(
+                    verticalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Horizontal))
+                        .widthIn(max = Size.contentMax)
+                        .fillMaxWidth()
+                        .verticalScroll(rememberScrollState())
+                        .heightIn(min = maxHeight)
+                        .padding(start = Space.screenSide, end = Space.screenSide, top = Space.m, bottom = Space.m),
+                ) {
+                    Column(content = content)
+                    if (answer != null) {
+                        Spacer(Modifier.height(Space.l))
+                        Column(content = answer)
+                    }
+                }
             }
-        } else {
             Column(
+                verticalArrangement = Arrangement.Bottom,
                 horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.windowInsetsPadding(
-                    WindowInsets.safeDrawing.only(WindowInsetsSides.Bottom + WindowInsetsSides.Horizontal),
-                ),
+                modifier = Modifier
+                    .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Bottom + WindowInsetsSides.Horizontal))
+                    .heightIn(min = room),
             ) {
                 if (action != null) {
                     Box(
@@ -150,6 +167,20 @@ fun DailySetStep(
                     ) { action() }
                 }
                 keyRow?.invoke()
+            }
+        }
+        if (feedback != null) {
+            // Starts hidden, so the panel rises the moment it is first shown.
+            val rising = remember { MutableTransitionState(false).apply { targetState = true } }
+            AnimatedVisibility(
+                visibleState = rising,
+                enter = Motion.panelEnter(),
+                exit = ExitTransition.None,
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .onSizeChanged { panel = with(density) { it.height.toDp() } },
+            ) {
+                feedback()
             }
         }
     }

@@ -387,6 +387,7 @@ class ScreenshotsTest {
 
         shot("13-conjugation")
         type("jestem")
+        shot("13-conjugation-typed")
         tap(R.string.action_check)
         tap(R.string.action_continue)
 

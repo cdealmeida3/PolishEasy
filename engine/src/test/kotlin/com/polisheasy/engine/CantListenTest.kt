@@ -51,6 +51,27 @@ class CantListenTest {
     }
 
     @Test
+    fun `Polish can be said without being asked for only while the Learner can listen`() {
+        val before = ItemLearner(course).openApp()
+        assertEquals(false, before.canListen())
+        assertEquals(null, before.clipOf("tak"))
+
+        val engine = atTak()
+        assertEquals(true, engine.canListen())
+        assertEquals(ClipView("audio/tak.ogg"), engine.clipOf("Tak"))
+        assertEquals(null, engine.clipOf("a word with no Clip"))
+
+        engine.cantListenNow()
+        assertEquals(false, engine.canListen())
+        assertEquals(null, engine.clipOf("tak"))
+
+        val silent = ItemLearner(course).openApp()
+        silent.startDailySet(sound = false)
+        assertEquals(false, silent.canListen())
+        assertEquals(null, silent.clipOf("tak"))
+    }
+
+    @Test
     fun `can't listen now shows the same Exercise as a choice of the Polish for its meaning`() {
         val learner = ItemLearner(course)
         val engine = learner.openApp()

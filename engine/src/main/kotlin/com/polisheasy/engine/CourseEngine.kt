@@ -582,6 +582,20 @@ class CourseEngine(
         return glossOf(course.exercises.getValue(exerciseId))
     }
 
+    /**
+     * Whether the Learner can hear the Daily Set being played: it has sound and they have not said
+     * "can't listen now". Only then may anything play that the Learner did not ask for by a tap on
+     * a speaker.
+     */
+    fun canListen(): Boolean = playing?.reading == false
+
+    /**
+     * The Clip that says [polish], a word or a sentence, whatever its capitals and spacing. Null
+     * when there is none or when the Learner cannot listen (see [canListen]). It lets the screens
+     * say the Polish they show, such as a word tile as it is placed.
+     */
+    fun clipOf(polish: String): ClipView? = if (canListen()) course.clipFor(polish) else null
+
     private fun glossOf(exercise: Exercise): String? = when (exercise) {
         is ChooseTranslation -> exercise.prompt
         is TypeAnswer -> localize(exercise.prompt)

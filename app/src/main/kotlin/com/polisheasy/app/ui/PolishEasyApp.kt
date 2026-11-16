@@ -99,6 +99,8 @@ private fun DailySet(screen: Screen, shown: Int, progress: SetProgress, viewMode
                 showing.gloss,
                 playing = player.playing,
                 praise = showing.progress.correct,
+                canListen = showing.canListen,
+                clipOf = viewModel::clipOf,
                 onAnswer = { answer -> live { viewModel.answer(answer) } },
                 onContinue = moveOn,
                 onPlay = { clip, slow -> live { player.play(clip.path, slow) } },

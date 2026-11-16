@@ -24,6 +24,7 @@ import com.polisheasy.engine.loadCourse
 import java.io.File
 import java.time.Clock
 import java.time.LocalTime
+import com.polisheasy.engine.ClipView
 
 /** What the app is showing. Every rule behind it lives in the course engine. */
 sealed interface Screen {
@@ -63,6 +64,8 @@ sealed interface Screen {
         val feedback: Feedback? = null,
         /** The other side of the answer, shown with the feedback on a right one: its meaning, or the Polish for it. */
         val gloss: String? = null,
+        /** Whether Polish may be played without the Learner tapping a speaker: sound is on and they can listen now. */
+        val canListen: Boolean = false,
     ) : Screen
 
     data class Summary(
@@ -193,6 +196,9 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
         show(engine.cantListenNow())
     }
 
+    /** The Clip that says [polish], if there is one and the Learner can listen now. */
+    fun clipOf(polish: String): ClipView? = engine.clipOf(polish)
+
     /** Moves on from a Tip or from the feedback on an answer. */
     fun continueToNext() = show(engine.next())
 
@@ -221,6 +227,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
                 review = step.review,
                 replay = step.replay,
                 exerciseId = step.exerciseId,
+                canListen = engine.canListen(),
             )
             is Step.ShowSummary -> Screen.Summary(
                 step.correctAnswers,

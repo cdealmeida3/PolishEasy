@@ -40,6 +40,7 @@ import com.polisheasy.app.ui.theme.Edge
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
 import androidx.compose.ui.draw.drawBehind
+import com.polisheasy.app.ui.theme.inPolish
 
 /** The height a row of word tiles takes, bottom edge included. */
 val WordTileHeight: Dp = Size.tile + Edge.depth - Edge.border
@@ -85,7 +86,8 @@ private fun TileWord(word: String, modifier: Modifier) {
     ) {
         Text(
             word,
-            style = MaterialTheme.typography.titleMedium,
+            // A tile is always a Polish word.
+            style = MaterialTheme.typography.titleMedium.inPolish(),
             color = MaterialTheme.colorScheme.onSecondaryContainer,
             modifier = modifier,
         )

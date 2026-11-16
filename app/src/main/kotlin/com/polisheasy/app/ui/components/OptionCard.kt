@@ -24,6 +24,7 @@ import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
 import com.polisheasy.app.ui.theme.Scaled
+import com.polisheasy.app.ui.theme.inPolish
 
 /** What an [OptionCard] is showing. Each state has an icon or a border as well as a colour. */
 enum class OptionState {
@@ -43,9 +44,12 @@ enum class OptionState {
     Faded,
 }
 
-/** An answer to choose. Only an idle or a chosen card can be tapped. */
+/**
+ * An answer to choose. Only an idle or a chosen card can be tapped. [polish] when the answer is
+ * Polish, so a screen reader says it with a Polish voice.
+ */
 @Composable
-fun OptionCard(text: String, state: OptionState, onClick: () -> Unit, modifier: Modifier = Modifier) {
+fun OptionCard(text: String, state: OptionState, onClick: () -> Unit, modifier: Modifier = Modifier, polish: Boolean = false) {
     val colors = PolishEasyTheme.colors
     val scheme = MaterialTheme.colorScheme
     val (fill, edge, label) = when (state) {
@@ -75,7 +79,8 @@ fun OptionCard(text: String, state: OptionState, onClick: () -> Unit, modifier: 
                 .heightIn(min = Size.control)
                 .padding(horizontal = Space.m, vertical = Space.s),
         ) {
-            Text(text, style = MaterialTheme.typography.titleMedium, color = label, modifier = Modifier.weight(1f))
+            val style = MaterialTheme.typography.titleMedium
+            Text(text, style = if (polish) style.inPolish() else style, color = label, modifier = Modifier.weight(1f))
             // The feedback panel says the result in words; these mark where it happened.
             when (state) {
                 OptionState.Right -> StateIcon(R.drawable.ic_check_circle, colors.success)
