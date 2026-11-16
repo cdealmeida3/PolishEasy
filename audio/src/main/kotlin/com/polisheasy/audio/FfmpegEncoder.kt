@@ -4,7 +4,6 @@ import java.io.File
 import java.io.IOException
 import java.nio.file.Path
 import java.util.Locale
-import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds
 
 /**
@@ -12,6 +11,7 @@ import kotlin.time.Duration.Companion.seconds
  * `ffprobe`. Nothing of either ships in the app.
  */
 class FfmpegEncoder(private val settings: VoiceSettings) : Encoder {
+    private val peakLine = Regex("max_volume: (-?[0-9.]+) dB")
     private val encoding = settings.encoding
 
     override fun problem(): String? = when {
@@ -27,7 +27,7 @@ class FfmpegEncoder(private val settings: VoiceSettings) : Encoder {
         false
     }
 
-    override fun encode(wav: ByteArray, target: Path): Duration {
+    override fun encode(wav: ByteArray, target: Path): Measured {
         fun ms(millis: Int) = String.format(Locale.ROOT, "%.3f", millis / 1000.0)
         // The end of the speech fades out, then silence goes before and after it.
         val filter = listOf(
@@ -47,10 +47,15 @@ class FfmpegEncoder(private val settings: VoiceSettings) : Encoder {
             null,
             "ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", target.toString(),
         )
-        return shown.trim().toDoubleOrNull()?.seconds ?: throw VoiceFailure("ffprobe could not measure the Clip it was given")
+        val length = shown.trim().toDoubleOrNull()?.seconds ?: throw VoiceFailure("ffprobe could not measure the Clip it was given")
+        // volumedetect reports on the error stream, at the "info" level.
+        val volume = run(null, "ffmpeg", "-v", "info", "-nostats", "-i", target.toString(), "-af", "volumedetect", "-f", "null", "-", fromErrors = true)
+        val peak = peakLine.find(volume)?.groupValues?.get(1)?.toDoubleOrNull()
+            ?: throw VoiceFailure("ffmpeg could not measure how loud the Clip is")
+        return Measured(length, peak)
     }
 
-    private fun run(input: ByteArray?, vararg command: String): String {
+    private fun run(input: ByteArray?, vararg command: String, fromErrors: Boolean = false): String {
         val errors = File.createTempFile("clip", ".log")
         try {
             val process = try {
@@ -67,7 +72,7 @@ class FfmpegEncoder(private val settings: VoiceSettings) : Encoder {
             if (process.waitFor() != 0) {
                 throw VoiceFailure("${command.first()} failed: ${errors.readText().trim().lineSequence().lastOrNull().orEmpty()}")
             }
-            return output
+            return if (fromErrors) errors.readText() else output
         } finally {
             errors.delete()
         }

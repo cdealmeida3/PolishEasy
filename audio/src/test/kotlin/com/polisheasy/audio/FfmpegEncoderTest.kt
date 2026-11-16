@@ -39,10 +39,10 @@ internal class FfmpegEncoderTest {
     }
 
     /** One second of a 440 Hz tone as a 16-bit mono WAV file, which is what the voice service sends. */
-    private fun tone(): ByteArray {
+    private fun tone(loudness: Int = 12000): ByteArray {
         val rate = 24000
         val samples = ByteBuffer.allocate(rate * 2).order(ByteOrder.LITTLE_ENDIAN)
-        repeat(rate) { samples.putShort((sin(2 * PI * 440 * it / rate) * 12000).toInt().toShort()) }
+        repeat(rate) { samples.putShort((sin(2 * PI * 440 * it / rate) * loudness).toInt().toShort()) }
         val header = ByteBuffer.allocate(44).order(ByteOrder.LITTLE_ENDIAN)
         header.put("RIFF".toByteArray()).putInt(36 + rate * 2).put("WAVE".toByteArray())
         header.put("fmt ".toByteArray()).putInt(16).putShort(1).putShort(1).putInt(rate).putInt(rate * 2).putShort(2).putShort(16)
@@ -55,11 +55,21 @@ internal class FfmpegEncoderTest {
         assumeTrue(ffmpegIsHere())
         val target = File(dir, "tone.part")
 
-        val length = FfmpegEncoder(settings).encode(tone(), target.toPath())
+        val measured = FfmpegEncoder(settings).encode(tone(), target.toPath())
 
-        assertEquals(1.28, length.toDouble(DurationUnit.SECONDS), 0.03)
+        assertEquals(1.28, measured.length.toDouble(DurationUnit.SECONDS), 0.03)
+        assertTrue(measured.peakDb in -12.0..-5.0, "The tone peaks at ${measured.peakDb} dB")
         assertEquals("OggS", target.readBytes().take(4).toByteArray().toString(Charsets.US_ASCII))
         assertTrue(target.length() in 1000..12000, "The file is ${target.length()} bytes")
+    }
+
+    @Test
+    fun `silence measures as silence`() {
+        assumeTrue(ffmpegIsHere())
+
+        val measured = FfmpegEncoder(settings).encode(tone(loudness = 0), File(dir, "silence.part").toPath())
+
+        assertTrue(measured.peakDb < -60, "Silence peaks at ${measured.peakDb} dB")
     }
 
     @Test

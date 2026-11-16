@@ -62,7 +62,9 @@ A Clip that stays keeps its id whatever happens to its file. So:
 
 See [ADR-0009](adr/0009-each-clip-is-tied-to-the-settings-that-made-it.md) for why the fingerprints are in a file of their own.
 
-If the service fails part-way, the command keeps and records what it finished, says how many are left and exits with an error. Running it again carries on from there. A Clip shorter than 0.2 s or longer than 20 s stops the run: that is silence or a runaway, not speech.
+If the service fails part-way, the command keeps and records what it finished, says how many are left and exits with an error. Running it again carries on from there. A Clip shorter than 0.2 s or longer than 20 s stops the run: that is not speech.
+
+The voice now and then answers a one-syllable word (*tak*, *ty*, *ja*) with a quarter of a second of silence, and not the same way twice. So the command measures the loudest moment of every Clip it makes, and asks again, up to six times, for one that is silent. If a word is silent six times running the run stops; run it again.
 
 ### After a run
 
@@ -87,36 +89,6 @@ This is for the project's owner. It takes about ten minutes. Google's console ch
 **Never paste the key into a chat, an issue or a file in the repository.** The command reads it only from the environment, sends it only in a request header, and never prints or stores it. If a key does leak, delete it under "Credentials" and make another.
 
 Without the key the command stops before changing anything and says so, naming this section.
-
-## The placeholder voice (in use until the key is added)
-
-The audio in the repository today is a stand-in made by a free offline voice. **Until the Clips have been made once with `makeClips`, keep using this script after changing Polish text.** It and this section are deleted when that run lands. Nothing here needs a key.
-
-- Voice: [Piper](https://github.com/OHF-Voice/piper1-gpl) `pl_PL-gosia-medium`, a single speaker trained on a CC0 dataset.
-- Tool: `piper-tts` 1.8.0 from PyPI (GPL-3). It is a build tool only; nothing of it ships in the app.
-- Also needed: the `ffmpeg` and `ffprobe` commands, with libopus.
-
-Setup, once (the voice is taken from a GitHub release and checked against its hash):
-
-```
-python3 -m venv /tmp/piper && /tmp/piper/bin/pip install piper-tts==1.8.0
-curl -L -o /tmp/gosia.tar.bz2 https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-pl_PL-gosia-medium.tar.bz2
-echo "75bd34dcbdc4dd98d763954756b4b34b4208100497c836381542e4d73dcefa9c  /tmp/gosia.tar.bz2" | sha256sum -c
-tar xjf /tmp/gosia.tar.bz2 -C /tmp
-```
-
-Then, from the repository root:
-
-```
-/tmp/piper/bin/python tools/placeholder-audio.py --voice /tmp/vits-piper-pl_PL-gosia-medium/pl_PL-gosia-medium.onnx
-```
-
-The script reads the content, adds a Clip for every spoken text that has none (its id is a slug of the text), records each Clip that has no file, removes Clips and files whose text is no longer spoken, and rewrites `clips.json`. A Clip that already has its file is left alone, so its id and its recording do not change. To record a Clip again, delete its `.ogg` and run the script.
-
-Two things the script does to the voice's output:
-
-- The voice rushes some one-syllable words (*nie* comes out at 0.14 s). A text spoken in under 0.35 s is spoken again more slowly until it is long enough.
-- Each Clip fades out over its last 20 ms and gets 80 ms of silence before and 200 ms after, so a player never clips the first or last sound.
 
 ## Playing
 
