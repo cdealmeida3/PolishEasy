@@ -4,161 +4,168 @@
     {
       "id": "a1-u01-d05-t01",
       "before": "a1-u01-d05-e01",
-      "title": { "en": "The verb być (to be)" },
-      "body": { "en": "Polish verbs change their ending for each person. Być is irregular, so learn its six forms by heart. The pronoun is often left out, because the form already says who is meant: jestem on its own means \"I am\"." },
-      "conjugation": {
-        "verb": "być",
-        "meaning": { "en": "to be" },
-        "forms": { "ja": "jestem", "ty": "jesteś", "on": "jest", "my": "jesteśmy", "wy": "jesteście", "oni": "są" }
-      }
+      "title": { "en": "ś and ć" },
+      "body": { "en": "Ś and ć are soft versions of sz and cz. Say them with the middle of the tongue against the roof of the mouth and the lips spread, as in a smile. Cześć has all three sounds: cz, ś, ć." }
+    },
+    {
+      "id": "a1-u01-d05-t02",
+      "before": "a1-u01-d05-e07",
+      "title": { "en": "si and ci" },
+      "body": { "en": "Before a vowel, si is said like ś and ci like ć, and the i itself is not heard: się is ś followed by ę. Jak się masz? and co słychać? both ask how someone is. Co słychać? is the more everyday one." }
     }
   ],
   "exercises": [
     {
-      "type": "conjugation",
+      "type": "listen_choose",
       "id": "a1-u01-d05-e01",
-      "verb": "być",
-      "meaning": { "en": "to be" },
-      "person": "ja",
-      "acceptedAnswers": ["jestem"],
-      "items": ["byc-jestem"]
+      "text": "cześć",
+      "distractors": ["sześć", "jeść"],
+      "items": ["czesc"]
     },
     {
-      "type": "conjugation",
+      "type": "choose_translation",
       "id": "a1-u01-d05-e02",
-      "verb": "być",
-      "meaning": { "en": "to be" },
-      "person": "ty",
-      "acceptedAnswers": ["jesteś"],
-      "items": ["byc-jestes"]
+      "prompt": "co słychać?",
+      "options": [
+        { "en": "and you?" },
+        { "en": "how are things?" },
+        { "en": "of course" }
+      ],
+      "correctOption": 1,
+      "items": ["co-slychac"]
     },
     {
-      "type": "conjugation",
+      "type": "listen_choose",
       "id": "a1-u01-d05-e03",
-      "verb": "być",
-      "meaning": { "en": "to be" },
-      "person": "on",
-      "acceptedAnswers": ["jest"],
-      "items": ["byc-jest"]
+      "text": "co słychać?",
+      "distractors": ["co widać?", "co słyszysz?"],
+      "items": ["co-slychac"]
     },
     {
       "type": "choose_translation",
       "id": "a1-u01-d05-e04",
-      "prompt": "jestem",
+      "prompt": "świetnie",
       "options": [
-        { "en": "I am" },
-        { "en": "you are" },
-        { "en": "he is" }
+        { "en": "great" },
+        { "en": "so-so" },
+        { "en": "maybe" }
       ],
       "correctOption": 0,
-      "items": ["byc-jestem"]
+      "items": ["swietnie"]
     },
     {
-      "type": "conjugation",
+      "type": "listen_choose",
       "id": "a1-u01-d05-e05",
-      "verb": "być",
-      "meaning": { "en": "to be" },
-      "person": "my",
-      "acceptedAnswers": ["jesteśmy"],
-      "items": ["byc-jestesmy"]
+      "text": "świetnie",
+      "distractors": ["świetny", "śmiesznie"],
+      "items": ["swietnie"]
     },
     {
-      "type": "conjugation",
+      "type": "word_tiles",
       "id": "a1-u01-d05-e06",
-      "verb": "być",
-      "meaning": { "en": "to be" },
-      "person": "wy",
-      "acceptedAnswers": ["jesteście"],
-      "items": ["byc-jestescie"]
+      "prompt": { "en": "hi, how are things?" },
+      "acceptedAnswers": ["cześć, co słychać?"],
+      "distractors": ["jak", "tak"],
+      "items": ["czesc", "co-slychac"]
     },
     {
-      "type": "conjugation",
+      "type": "choose_translation",
       "id": "a1-u01-d05-e07",
-      "verb": "być",
-      "meaning": { "en": "to be" },
-      "person": "oni",
-      "acceptedAnswers": ["są"],
-      "items": ["byc-sa"]
-    },
-    {
-      "type": "choose_translation",
-      "id": "a1-u01-d05-e08",
-      "prompt": "jesteśmy",
+      "prompt": "jak się masz?",
       "options": [
-        { "en": "they are" },
-        { "en": "we are" },
-        { "en": "you are" }
-      ],
-      "correctOption": 1,
-      "items": ["byc-jestesmy"]
-    },
-    {
-      "type": "conjugation",
-      "id": "a1-u01-d05-e09",
-      "verb": "być",
-      "meaning": { "en": "to be" },
-      "person": "ja",
-      "sentence": "Ja ___ z Polski.",
-      "sentenceMeaning": { "en": "I am from Poland." },
-      "acceptedAnswers": ["jestem"],
-      "items": ["byc-jestem"]
-    },
-    {
-      "type": "conjugation",
-      "id": "a1-u01-d05-e10",
-      "verb": "być",
-      "meaning": { "en": "to be" },
-      "person": "on",
-      "sentence": "On ___ w domu.",
-      "sentenceMeaning": { "en": "He is at home." },
-      "acceptedAnswers": ["jest"],
-      "items": ["byc-jest"]
-    },
-    {
-      "type": "conjugation",
-      "id": "a1-u01-d05-e11",
-      "verb": "być",
-      "meaning": { "en": "to be" },
-      "person": "my",
-      "sentence": "My ___ w Polsce.",
-      "sentenceMeaning": { "en": "We are in Poland." },
-      "acceptedAnswers": ["jesteśmy"],
-      "items": ["byc-jestesmy"]
-    },
-    {
-      "type": "conjugation",
-      "id": "a1-u01-d05-e12",
-      "verb": "być",
-      "meaning": { "en": "to be" },
-      "person": "oni",
-      "sentence": "Oni ___ w domu.",
-      "sentenceMeaning": { "en": "They are at home." },
-      "acceptedAnswers": ["są"],
-      "items": ["byc-sa"]
-    },
-    {
-      "type": "choose_translation",
-      "id": "a1-u01-d05-e13",
-      "prompt": "jesteś",
-      "options": [
-        { "en": "you are (one person)" },
-        { "en": "I am" },
-        { "en": "they are" }
+        { "en": "how are you?" },
+        { "en": "see you tomorrow" },
+        { "en": "nice to meet you" }
       ],
       "correctOption": 0,
-      "items": ["byc-jestes"]
+      "items": ["jak-sie-masz"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d05-e08",
+      "text": "jak się masz?",
+      "distractors": ["jak się ma?", "jak się macie?"],
+      "items": ["jak-sie-masz"]
     },
     {
       "type": "choose_translation",
-      "id": "a1-u01-d05-e14",
-      "prompt": "jesteście",
+      "id": "a1-u01-d05-e09",
+      "prompt": "oczywiście",
       "options": [
-        { "en": "we are" },
-        { "en": "he is" },
-        { "en": "you are (several people)" }
+        { "en": "maybe" },
+        { "en": "likewise; you too" },
+        { "en": "of course" }
       ],
       "correctOption": 2,
-      "items": ["byc-jestescie"]
+      "items": ["oczywiscie"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d05-e10",
+      "prompt": { "en": "yes, of course" },
+      "acceptedAnswers": ["tak, oczywiście"],
+      "distractors": ["nie", "może"],
+      "items": ["tak", "oczywiscie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d05-e11",
+      "prompt": "tak sobie",
+      "options": [
+        { "en": "great" },
+        { "en": "so-so" },
+        { "en": "all right; fine" }
+      ],
+      "correctOption": 1,
+      "items": ["tak-sobie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d05-e12",
+      "prompt": "a ty?",
+      "options": [
+        { "en": "how are things?" },
+        { "en": "of course" },
+        { "en": "and you?" }
+      ],
+      "correctOption": 2,
+      "items": ["a-ty"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d05-e13",
+      "prompt": { "en": "so-so, and you?" },
+      "acceptedAnswers": ["tak sobie, a ty?"],
+      "distractors": ["nie", "się"],
+      "items": ["tak-sobie", "a-ty"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d05-e14",
+      "text": "tak sobie",
+      "distractors": ["tak samo", "tak sądzę"],
+      "items": ["tak-sobie"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d05-e15",
+      "prompt": { "en": "great, thank you" },
+      "acceptedAnswers": ["świetnie, dziękuję", "dziękuję, świetnie"],
+      "distractors": ["sobie", "nie"],
+      "items": ["swietnie", "dziekuje"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u01-d05-e16",
+      "acceptedAnswers": ["oczywiście"],
+      "items": ["oczywiscie"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d05-e17",
+      "prompt": { "en": "how are you?" },
+      "acceptedAnswers": ["jak się masz?", "co słychać?", "co u ciebie?", "jak leci?", "co tam?"],
+      "items": ["jak-sie-masz"]
     }
   ]
 }

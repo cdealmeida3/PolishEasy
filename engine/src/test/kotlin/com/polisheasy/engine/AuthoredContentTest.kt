@@ -1,6 +1,7 @@
 package com.polisheasy.engine
 
 import java.io.File
+import java.util.Locale
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
@@ -108,14 +109,79 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `played one per day, day 1 has no Review, day 2 ends with 7 Review Exercises, day 3 with 4, day 4 with none, day 5 with 3 and day 6 with 6`() {
+    fun `played one per day, day 1 has no Review, day 2 ends with 5 Review Exercises, day 3 with 6 and days 4 to 7 with 8`() {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
-        assertEquals(listOf(0, 7, 4, 0, 3, 6), days.map { steps -> steps.count { it is Step.ShowExercise && it.review } })
+        assertEquals(listOf(0, 5, 6, 8, 8, 8, 8), days.map { steps -> steps.count { it is Step.ShowExercise && it.review } })
         assertEquals(
-            listOf(7, 6, 0, 0, 6, 0),
+            listOf(8, 7, 6, 7, 6, 6, 6),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
+    }
+
+    // The authoring rules of docs/authoring.md that a test can hold the content to.
+
+    private val allExercises = course.path.flatMap { it.exercises }
+
+    private fun lowerCaseWords(text: String): Set<String> = words(text).map { it.lowercase(Locale.ROOT) }.toSet()
+
+    @Test
+    fun `every Item is introduced by a translation choice that shows its text, lists only that Item and is answered by its meaning`() {
+        course.path.forEach { dailySet ->
+            course.introducedIn(dailySet).forEach { item ->
+                val first = dailySet.exercises.first { item.id in it.items }
+                assertTrue(
+                    first is ChooseTranslation && first.prompt == item.text && first.items == listOf(item.id) &&
+                        first.options[first.correctOption] == item.meaning,
+                    "Item ${item.id} is first practised by Exercise ${first.id}, which does not introduce it",
+                )
+            }
+        }
+    }
+
+    @Test
+    fun `every word a Learner must read, hear or build comes from an Item its Exercise lists, and every listed Item is there in full`() {
+        allExercises.forEach { exercise ->
+            // What the Learner is shown, hears, or has to produce: for typing and tiles, the first Accepted Answer.
+            val shown = lowerCaseWords(spoken(exercise).first())
+            val listed = exercise.items.map { lowerCaseWords(course.itemsById.getValue(it).text) }
+
+            assertEquals(emptySet(), shown - listed.flatten().toSet(), "Words of Exercise ${exercise.id} that none of its Items has")
+            exercise.items.zip(listed).forEach { (id, itemWords) ->
+                assertEquals(emptySet(), itemWords - shown, "Words of Item $id that Exercise ${exercise.id} does not use")
+            }
+        }
+    }
+
+    @Test
+    fun `every Item is practised by 2 types of Exercise on the day it is introduced and by 3 Exercises in all`() {
+        course.path.forEach { dailySet ->
+            course.introducedIn(dailySet).forEach { item ->
+                val sameDay = dailySet.exercises.filter { item.id in it.items }.map { it::class }.distinct()
+                assertTrue(sameDay.size >= 2, "Item ${item.id} is practised by only one type of Exercise in ${dailySet.id}")
+                val inAll = allExercises.count { item.id in it.items }
+                assertTrue(inAll >= 3, "Item ${item.id} is practised by only $inAll Exercises")
+            }
+        }
+    }
+
+    @Test
+    fun `every Item is practised by an Exercise that is not a listening one`() {
+        course.items.forEach { item ->
+            assertTrue(
+                allExercises.any { item.id in it.items && it !is ListenChoose && it !is ListenType },
+                "Item ${item.id} can only be practised by listening",
+            )
+        }
+    }
+
+    @Test
+    fun `every Daily Set mixes at least 4 types of Exercise, and the course uses all 6`() {
+        course.path.forEach { dailySet ->
+            val types = dailySet.exercises.map { it::class }.distinct()
+            assertTrue(types.size >= 4, "Daily Set ${dailySet.id} has only ${types.size} types of Exercise")
+        }
+        assertEquals(6, allExercises.map { it::class }.distinct().size)
     }
 
     @Test

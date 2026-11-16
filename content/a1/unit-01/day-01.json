@@ -4,48 +4,79 @@
     {
       "id": "a1-u01-d01-t01",
       "before": "a1-u01-d01-e01",
-      "title": { "en": "Saying hello" },
-      "body": { "en": "Dzień dobry is the polite hello. It literally means \"good day\" and works from morning until evening. With friends and family, say cześć, which means both \"hi\" and \"bye\"." }
+      "title": { "en": "How Polish is read" },
+      "body": { "en": "Polish is read the way it is written: a letter almost always keeps the same sound. The vowels a, e, i, o and u are short and pure. The stress falls on the second-to-last syllable: do-BRA-noc. Polish w sounds like English v, j like the y in \"yes\", and c like the ts in \"cats\"." }
     },
     {
       "id": "a1-u01-d01-t02",
       "before": "a1-u01-d01-e04",
-      "title": { "en": "Please and thank you" },
-      "body": { "en": "Dziękuję means \"thank you\". Proszę means \"please\", and it is also what you answer when someone thanks you, like \"you're welcome\"." }
+      "title": { "en": "Hello and goodbye" },
+      "body": { "en": "Dzień dobry is the polite hello, used all day until the evening. Cześć is for friends and family, and means both hi and bye. Letters with marks, such as ś, ć, ń and ę, have their own sounds. This Unit teaches them a few at a time, so for now just listen and copy. Tap the speaker to hear the Polish again, or Slow to hear it slowly." }
     }
   ],
   "exercises": [
     {
       "type": "choose_translation",
       "id": "a1-u01-d01-e01",
-      "prompt": "dzień dobry",
+      "prompt": "tak",
       "options": [
-        { "en": "good night" },
-        { "en": "good morning" },
-        { "en": "goodbye" }
+        { "en": "yes" },
+        { "en": "no" },
+        { "en": "hi" }
       ],
-      "correctOption": 1,
-      "items": ["dzien-dobry"]
+      "correctOption": 0,
+      "items": ["tak"]
     },
     {
       "type": "choose_translation",
       "id": "a1-u01-d01-e02",
-      "prompt": "cześć",
+      "prompt": "nie",
       "options": [
-        { "en": "hi" },
-        { "en": "please" },
-        { "en": "no" }
+        { "en": "yes" },
+        { "en": "no" },
+        { "en": "goodbye" }
+      ],
+      "correctOption": 1,
+      "items": ["nie"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d01-e03",
+      "prompt": { "en": "yes" },
+      "acceptedAnswers": ["tak"],
+      "items": ["tak"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d01-e04",
+      "prompt": "dzień dobry",
+      "options": [
+        { "en": "hello (polite); good morning" },
+        { "en": "good night" },
+        { "en": "goodbye" }
       ],
       "correctOption": 0,
+      "items": ["dzien-dobry"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d01-e05",
+      "prompt": "cześć",
+      "options": [
+        { "en": "good night" },
+        { "en": "hi; bye (to friends)" },
+        { "en": "yes" }
+      ],
+      "correctOption": 1,
       "items": ["czesc"]
     },
     {
       "type": "choose_translation",
-      "id": "a1-u01-d01-e03",
+      "id": "a1-u01-d01-e06",
       "prompt": "do widzenia",
       "options": [
-        { "en": "thank you" },
-        { "en": "good morning" },
+        { "en": "hello (polite); good morning" },
+        { "en": "no" },
         { "en": "goodbye" }
       ],
       "correctOption": 2,
@@ -53,51 +84,96 @@
     },
     {
       "type": "choose_translation",
-      "id": "a1-u01-d01-e04",
-      "prompt": "dziękuję",
+      "id": "a1-u01-d01-e07",
+      "prompt": "dobranoc",
       "options": [
-        { "en": "thank you" },
-        { "en": "yes" },
-        { "en": "hi" }
+        { "en": "good night" },
+        { "en": "goodbye" },
+        { "en": "hi; bye (to friends)" }
       ],
       "correctOption": 0,
-      "items": ["dziekuje"]
+      "items": ["dobranoc"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d01-e08",
+      "text": "dzień dobry",
+      "distractors": ["dobranoc", "do widzenia"],
+      "items": ["dzien-dobry"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u01-d01-e09",
+      "acceptedAnswers": ["nie"],
+      "items": ["nie"]
     },
     {
       "type": "choose_translation",
-      "id": "a1-u01-d01-e05",
-      "prompt": "proszę",
+      "id": "a1-u01-d01-e10",
+      "prompt": "do jutra",
       "options": [
-        { "en": "goodbye" },
-        { "en": "please" },
-        { "en": "no" }
+        { "en": "see you tomorrow" },
+        { "en": "good night" },
+        { "en": "goodbye" }
       ],
-      "correctOption": 1,
-      "items": ["prosze"]
+      "correctOption": 0,
+      "items": ["do-jutra"]
     },
     {
       "type": "choose_translation",
-      "id": "a1-u01-d01-e06",
-      "prompt": "tak",
-      "options": [
-        { "en": "no" },
-        { "en": "thank you" },
-        { "en": "yes" }
-      ],
-      "correctOption": 2,
-      "items": ["tak"]
-    },
-    {
-      "type": "choose_translation",
-      "id": "a1-u01-d01-e07",
-      "prompt": "nie",
+      "id": "a1-u01-d01-e11",
+      "prompt": "pa",
       "options": [
         { "en": "yes" },
-        { "en": "no" },
-        { "en": "please" }
+        { "en": "bye-bye (to friends and family)" },
+        { "en": "hello (polite); good morning" }
       ],
       "correctOption": 1,
-      "items": ["nie"]
+      "items": ["pa"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d01-e12",
+      "prompt": { "en": "good night, see you tomorrow" },
+      "acceptedAnswers": ["dobranoc, do jutra"],
+      "distractors": ["tak", "pa"],
+      "items": ["dobranoc", "do-jutra"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d01-e13",
+      "text": "do widzenia",
+      "distractors": ["do jutra", "dobranoc"],
+      "items": ["do-widzenia"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d01-e14",
+      "text": "pa",
+      "distractors": ["pan", "ta"],
+      "items": ["pa"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d01-e15",
+      "prompt": { "en": "bye, see you tomorrow" },
+      "acceptedAnswers": ["cześć, do jutra", "pa, do jutra"],
+      "distractors": ["pa", "nie"],
+      "items": ["czesc", "do-jutra"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d01-e16",
+      "prompt": { "en": "bye-bye, good night" },
+      "acceptedAnswers": ["pa, dobranoc"],
+      "distractors": ["tak", "nie"],
+      "items": ["pa", "dobranoc"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u01-d01-e17",
+      "acceptedAnswers": ["dobranoc"],
+      "items": ["dobranoc"]
     }
   ]
 }

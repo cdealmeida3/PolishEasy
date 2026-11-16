@@ -4,82 +4,175 @@
     {
       "id": "a1-u01-d02-t01",
       "before": "a1-u01-d02-e01",
-      "title": { "en": "Evening and night" },
-      "body": { "en": "In the evening, dzień dobry gives way to dobry wieczór, \"good evening\". Dobranoc means \"good night\" and is only said when parting for the night or going to bed." }
+      "title": { "en": "sz and cz" },
+      "body": { "en": "Sz sounds like the sh in \"shop\" and cz like the ch in \"chalk\". Both are a little harder than in English, said with the tip of the tongue further back. Each pair of letters is one sound: proszę, smacznego." }
+    },
+    {
+      "id": "a1-u01-d02-t02",
+      "before": "a1-u01-d02-e09",
+      "title": { "en": "ż and rz" },
+      "body": { "en": "Ż and rz spell the same sound, like the s in \"measure\": może, dobrze. After p, t, k and ch, rz is said like sz, so przepraszam starts \"pshe\". When you type, the letters with marks are on the row just above your keyboard." }
     }
   ],
   "exercises": [
     {
       "type": "choose_translation",
       "id": "a1-u01-d02-e01",
-      "prompt": "dobry wieczór",
+      "prompt": "proszę",
       "options": [
-        { "en": "good evening" },
-        { "en": "good night" },
-        { "en": "good morning" }
-      ],
-      "correctOption": 0,
-      "items": ["dobry-wieczor"]
-    },
-    {
-      "type": "choose_translation",
-      "id": "a1-u01-d02-e02",
-      "prompt": "dobranoc",
-      "options": [
-        { "en": "goodbye" },
-        { "en": "good evening" },
+        { "en": "please; here you are" },
+        { "en": "thank you" },
         { "en": "good night" }
       ],
-      "correctOption": 2,
-      "items": ["dobranoc"]
+      "correctOption": 0,
+      "items": ["prosze"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d02-e02",
+      "prompt": { "en": "yes, please" },
+      "acceptedAnswers": ["tak, proszę"],
+      "distractors": ["nie", "pa"],
+      "items": ["tak", "prosze"]
     },
     {
       "type": "choose_translation",
       "id": "a1-u01-d02-e03",
-      "prompt": "przepraszam",
+      "prompt": "smacznego",
       "options": [
-        { "en": "thank you" },
-        { "en": "sorry" },
-        { "en": "please" }
+        { "en": "see you tomorrow" },
+        { "en": "good night" },
+        { "en": "enjoy your meal" }
       ],
-      "correctOption": 1,
-      "items": ["przepraszam"]
+      "correctOption": 2,
+      "items": ["smacznego"]
     },
     {
-      "type": "choose_translation",
+      "type": "listen_choose",
       "id": "a1-u01-d02-e04",
-      "prompt": "na razie",
-      "options": [
-        { "en": "see you" },
-        { "en": "good night" },
-        { "en": "hi" }
-      ],
-      "correctOption": 0,
-      "items": ["na-razie"]
+      "text": "smacznego",
+      "distractors": ["smaczny", "smacznie"],
+      "items": ["smacznego"]
     },
     {
       "type": "choose_translation",
       "id": "a1-u01-d02-e05",
-      "prompt": "jak się masz?",
+      "prompt": "jeszcze raz",
       "options": [
-        { "en": "what is your name?" },
-        { "en": "where are you?" },
-        { "en": "how are you?" }
+        { "en": "see you tomorrow" },
+        { "en": "once more" },
+        { "en": "enjoy your meal" }
       ],
-      "correctOption": 2,
-      "items": ["jak-sie-masz"]
+      "correctOption": 1,
+      "items": ["jeszcze-raz"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d02-e06",
+      "prompt": { "en": "once more, please" },
+      "acceptedAnswers": ["jeszcze raz, proszę", "proszę jeszcze raz"],
+      "distractors": ["nie", "tak"],
+      "items": ["jeszcze-raz", "prosze"]
     },
     {
       "type": "choose_translation",
-      "id": "a1-u01-d02-e06",
+      "id": "a1-u01-d02-e07",
+      "prompt": "nic nie szkodzi",
+      "options": [
+        { "en": "no problem (answer to \"sorry\")" },
+        { "en": "enjoy your meal" },
+        { "en": "once more" }
+      ],
+      "correctOption": 0,
+      "items": ["nic-nie-szkodzi"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d02-e08",
+      "prompt": { "en": "no problem" },
+      "acceptedAnswers": ["nic nie szkodzi", "nie szkodzi"],
+      "distractors": ["tak", "raz"],
+      "items": ["nic-nie-szkodzi"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d02-e09",
+      "prompt": "przepraszam",
+      "options": [
+        { "en": "please; here you are" },
+        { "en": "enjoy your meal" },
+        { "en": "sorry; excuse me" }
+      ],
+      "correctOption": 2,
+      "items": ["przepraszam"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d02-e10",
+      "text": "przepraszam",
+      "distractors": ["zapraszam", "przepraszamy"],
+      "items": ["przepraszam"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d02-e11",
       "prompt": "dobrze",
       "options": [
-        { "en": "no" },
-        { "en": "good" },
-        { "en": "sorry" }
+        { "en": "once more" },
+        { "en": "well; OK" },
+        { "en": "no" }
       ],
       "correctOption": 1,
       "items": ["dobrze"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d02-e12",
+      "text": "dobrze",
+      "distractors": ["dobry", "dobra"],
+      "items": ["dobrze"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d02-e13",
+      "prompt": "może",
+      "options": [
+        { "en": "maybe" },
+        { "en": "yes" },
+        { "en": "well; OK" }
+      ],
+      "correctOption": 0,
+      "items": ["moze"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d02-e14",
+      "prompt": { "en": "maybe yes, maybe no" },
+      "acceptedAnswers": ["może tak, może nie"],
+      "distractors": ["dobrze", "pa"],
+      "items": ["moze", "tak", "nie"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d02-e15",
+      "prompt": { "en": "maybe" },
+      "acceptedAnswers": ["może", "być może"],
+      "items": ["moze"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d02-e16",
+      "prompt": { "en": "enjoy your meal" },
+      "acceptedAnswers": ["smacznego"],
+      "items": ["smacznego"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d02-e17",
+      "prompt": { "en": "OK, see you tomorrow" },
+      "acceptedAnswers": ["dobrze, do jutra"],
+      "distractors": ["może", "nie"],
+      "items": ["dobrze", "do-jutra"]
     }
   ]
 }

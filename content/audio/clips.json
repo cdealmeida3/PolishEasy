@@ -1,12 +1,64 @@
 {
   "clips": [
     {
+      "id": "a-ty",
+      "text": "a ty?"
+    },
+    {
+      "id": "bardzo",
+      "text": "bardzo"
+    },
+    {
+      "id": "bardzo-dziekuje",
+      "text": "bardzo dziękuję"
+    },
+    {
+      "id": "bardzo-mi-milo",
+      "text": "bardzo mi miło"
+    },
+    {
+      "id": "bardzo-przepraszamy",
+      "text": "Bardzo przepraszamy."
+    },
+    {
+      "id": "byc-moze",
+      "text": "być może"
+    },
+    {
+      "id": "chwileczke",
+      "text": "chwileczkę"
+    },
+    {
+      "id": "chwileczke-prosze",
+      "text": "chwileczkę, proszę"
+    },
+    {
+      "id": "co-slychac",
+      "text": "co słychać?"
+    },
+    {
+      "id": "co-tam",
+      "text": "co tam?"
+    },
+    {
+      "id": "co-u-ciebie",
+      "text": "co u ciebie?"
+    },
+    {
       "id": "czesc",
       "text": "cześć"
     },
     {
-      "id": "czesc-jak-sie-masz",
-      "text": "cześć, jak się masz?"
+      "id": "czesc-co-slychac",
+      "text": "cześć, co słychać?"
+    },
+    {
+      "id": "czesc-do-jutra",
+      "text": "cześć, do jutra"
+    },
+    {
+      "id": "do-jutra",
+      "text": "do jutra"
     },
     {
       "id": "do-widzenia",
@@ -21,72 +73,148 @@
       "text": "dobranoc"
     },
     {
+      "id": "dobranoc-do-jutra",
+      "text": "dobranoc, do jutra"
+    },
+    {
       "id": "dobry-wieczor",
       "text": "dobry wieczór"
+    },
+    {
+      "id": "dobry-wieczor-milo-mi",
+      "text": "dobry wieczór, miło mi"
     },
     {
       "id": "dobrze",
       "text": "dobrze"
     },
     {
-      "id": "dobrze-dziekuje",
-      "text": "dobrze, dziękuję"
+      "id": "dobrze-do-jutra",
+      "text": "dobrze, do jutra"
     },
     {
       "id": "dzieki",
       "text": "dzięki"
     },
     {
+      "id": "dzieki-milego-dnia",
+      "text": "dzięki, miłego dnia"
+    },
+    {
       "id": "dziekuje",
       "text": "dziękuję"
     },
     {
-      "id": "dziekuje-dobrze",
-      "text": "dziękuję, dobrze"
+      "id": "dziekuje-bardzo",
+      "text": "dziękuję bardzo"
+    },
+    {
+      "id": "dziekuje-nawzajem",
+      "text": "dziękuję, nawzajem"
     },
     {
       "id": "dziekuje-nie",
       "text": "dziękuję, nie"
     },
     {
+      "id": "dziekuje-swietnie",
+      "text": "dziękuję, świetnie"
+    },
+    {
+      "id": "dziekujemy",
+      "text": "dziękujemy"
+    },
+    {
+      "id": "dziekujemy-nawzajem",
+      "text": "dziękujemy, nawzajem."
+    },
+    {
       "id": "dzien-dobry",
       "text": "dzień dobry"
     },
     {
-      "id": "ja-jestem-z-polski",
-      "text": "Ja jestem z Polski."
+      "id": "dzien-dobry-witamy",
+      "text": "dzień dobry, witamy"
+    },
+    {
+      "id": "gratulacje",
+      "text": "gratulacje"
+    },
+    {
+      "id": "gratulacje-na-zdrowie",
+      "text": "gratulacje, na zdrowie"
+    },
+    {
+      "id": "halo",
+      "text": "halo"
+    },
+    {
+      "id": "halo-slucham",
+      "text": "halo, słucham"
+    },
+    {
+      "id": "jak-leci",
+      "text": "jak leci?"
     },
     {
       "id": "jak-sie-masz",
       "text": "jak się masz?"
     },
     {
-      "id": "jest",
-      "text": "jest"
+      "id": "jeszcze-raz",
+      "text": "jeszcze raz"
     },
     {
-      "id": "jestem",
-      "text": "jestem"
+      "id": "jeszcze-raz-prosze",
+      "text": "jeszcze raz, proszę"
     },
     {
-      "id": "jestes",
-      "text": "jesteś"
+      "id": "milego-dnia",
+      "text": "miłego dnia"
     },
     {
-      "id": "jestescie",
-      "text": "jesteście"
+      "id": "milo-cie-poznac",
+      "text": "miło cię poznać"
     },
     {
-      "id": "jestesmy",
-      "text": "jesteśmy"
+      "id": "milo-mi",
+      "text": "miło mi"
     },
     {
-      "id": "my-jestesmy-w-polsce",
-      "text": "My jesteśmy w Polsce."
+      "id": "milo-mi-cie-poznac",
+      "text": "miło mi cię poznać"
+    },
+    {
+      "id": "moze",
+      "text": "może"
+    },
+    {
+      "id": "moze-tak-moze-nie",
+      "text": "może tak, może nie"
     },
     {
       "id": "na-razie",
       "text": "na razie"
+    },
+    {
+      "id": "na-razie-do-zobaczenia",
+      "text": "na razie, do zobaczenia"
+    },
+    {
+      "id": "na-razie-milego-dnia",
+      "text": "na razie, miłego dnia"
+    },
+    {
+      "id": "na-zdrowie",
+      "text": "na zdrowie"
+    },
+    {
+      "id": "nawzajem",
+      "text": "nawzajem"
+    },
+    {
+      "id": "nic-nie-szkodzi",
+      "text": "nic nie szkodzi"
     },
     {
       "id": "nie",
@@ -97,32 +225,152 @@
       "text": "nie, dziękuję"
     },
     {
-      "id": "on-jest-w-domu",
-      "text": "On jest w domu."
+      "id": "nie-ma-sprawy",
+      "text": "nie ma sprawy"
     },
     {
-      "id": "oni-sa-w-domu",
-      "text": "Oni są w domu."
+      "id": "nie-ma-za-co",
+      "text": "nie ma za co"
+    },
+    {
+      "id": "nie-szkodzi",
+      "text": "nie szkodzi"
+    },
+    {
+      "id": "nie-wiem",
+      "text": "nie wiem"
+    },
+    {
+      "id": "niezle",
+      "text": "nieźle"
+    },
+    {
+      "id": "niezle-a-ty",
+      "text": "nieźle, a ty?"
+    },
+    {
+      "id": "oczywiscie",
+      "text": "oczywiście"
+    },
+    {
+      "id": "pa",
+      "text": "pa"
+    },
+    {
+      "id": "pa-do-jutra",
+      "text": "pa, do jutra"
+    },
+    {
+      "id": "pa-dobranoc",
+      "text": "pa, dobranoc"
+    },
+    {
+      "id": "powodzenia",
+      "text": "powodzenia"
+    },
+    {
+      "id": "powodzenia-do-widzenia",
+      "text": "powodzenia, do widzenia"
     },
     {
       "id": "prosze",
       "text": "proszę"
     },
     {
+      "id": "prosze-bardzo",
+      "text": "proszę bardzo"
+    },
+    {
+      "id": "prosze-chwileczke",
+      "text": "proszę chwileczkę"
+    },
+    {
+      "id": "prosze-jeszcze-raz",
+      "text": "proszę jeszcze raz"
+    },
+    {
       "id": "przepraszam",
       "text": "przepraszam"
     },
     {
-      "id": "sa",
-      "text": "są"
+      "id": "przepraszam-nie-rozumiem",
+      "text": "przepraszam, nie rozumiem"
+    },
+    {
+      "id": "przepraszamy",
+      "text": "przepraszamy"
+    },
+    {
+      "id": "rozumiem",
+      "text": "rozumiem"
+    },
+    {
+      "id": "slucham",
+      "text": "słucham"
+    },
+    {
+      "id": "slucham-halo",
+      "text": "słucham, halo"
+    },
+    {
+      "id": "smacznego",
+      "text": "smacznego"
+    },
+    {
+      "id": "swietnie",
+      "text": "świetnie"
+    },
+    {
+      "id": "swietnie-dziekuje",
+      "text": "świetnie, dziękuję"
     },
     {
       "id": "tak",
       "text": "tak"
     },
     {
+      "id": "tak-oczywiscie",
+      "text": "tak, oczywiście"
+    },
+    {
       "id": "tak-prosze",
       "text": "tak, proszę"
+    },
+    {
+      "id": "tak-sobie",
+      "text": "tak sobie"
+    },
+    {
+      "id": "tak-sobie-a-ty",
+      "text": "tak sobie, a ty?"
+    },
+    {
+      "id": "w-porzadku",
+      "text": "w porządku"
+    },
+    {
+      "id": "wiem",
+      "text": "wiem"
+    },
+    {
+      "id": "wiem-rozumiem",
+      "text": "wiem, rozumiem"
+    },
+    {
+      "id": "witamy",
+      "text": "witamy"
+    },
+    {
+      "id": "wszystko",
+      "text": "wszystko"
+    },
+    {
+      "id": "wszystko-w-porzadku",
+      "text": "wszystko w porządku"
+    },
+    {
+      "id": "zle",
+      "text": "źle"
     }
   ]
 }

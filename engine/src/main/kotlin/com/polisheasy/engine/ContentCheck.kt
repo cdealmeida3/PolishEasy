@@ -38,7 +38,7 @@ class DirectoryContent(private val root: File) : ContentFiles {
 const val MIN_EXERCISES_PER_ITEM = 2
 
 /** How many Exercises a Daily Set may have. */
-val DAILY_SET_EXERCISES = 6..18
+val DAILY_SET_EXERCISES = 12..18
 
 /** The most Items one Daily Set may introduce. */
 const val MAX_NEW_ITEMS = 8

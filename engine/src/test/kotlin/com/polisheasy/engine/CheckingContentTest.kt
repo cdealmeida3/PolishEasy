@@ -434,11 +434,14 @@ internal class CheckingContentTest {
             .withItems { items -> items.mapNotNull { if (it.id == "prosze") renamedTo?.let { id -> it.copy(id = id) } else it } }
     }
 
+    /** The ids of the first [count] Exercises of [dailySet], as the fixture numbers them. */
+    private fun exerciseIds(dailySet: String, count: Int) = (1..count).map { "$dailySet-e%02d".format(it) }
+
     private val withoutLastExercise = valid.withDailySet(DAY_2) { it.copy(exercises = it.exercises.dropLast(1)) }
 
     @Test
     fun `an Exercise or an Item that shipped and is gone is reported at the record of shipped identifiers`() {
-        assertOnlyProblem(withoutLastExercise, RELEASED_IDS_FILE, "a1-u01-d02-e08", "Exercise shipped before", released = shipped)
+        assertOnlyProblem(withoutLastExercise, RELEASED_IDS_FILE, CheckerFixture.LAST_OF_DAY_2, "Exercise shipped before", released = shipped)
         assertOnlyProblem(withoutProsze(valid), RELEASED_IDS_FILE, "prosze", "Item shipped before", released = shipped)
     }
 
@@ -448,7 +451,7 @@ internal class CheckingContentTest {
             problems(fixture, shipped).filter { it.file == RELEASED_IDS_FILE }.map { it.id }
 
         val noDayTwo = valid.without(DAY_2).withUnit { it.copy(dailySets = listOf(DAY_1)) }
-        assertEquals(listOf("a1-u01-d02") + (1..8).map { "a1-u01-d02-e0$it" }, gone(noDayTwo))
+        assertEquals(listOf("a1-u01-d02") + exerciseIds("a1-u01-d02", CheckerFixture.EXERCISES_ON_DAY_2), gone(noDayTwo))
 
         assertTrue("a1-u01" in gone(valid.withLevel { it.copy(units = emptyList()) }))
         assertTrue("a1" in gone(valid.withIndex { it.copy(levels = emptyList()) }))
@@ -464,10 +467,10 @@ internal class CheckingContentTest {
     @Test
     fun `a new Exercise that is not recorded is reported at its Daily Set file, saying how to record it`() {
         val added = valid.withDailySet(DAY_2) {
-            it.copy(exercises = it.exercises + (it.exercises.first() as ChooseTranslation).copy(id = "a1-u01-d02-e09"))
+            it.copy(exercises = it.exercises + (it.exercises.first() as ChooseTranslation).copy(id = "a1-u01-d02-e99"))
         }
 
-        assertOnlyProblem(added, DAY_2, "a1-u01-d02-e09", "recordContentIds", released = shipped)
+        assertOnlyProblem(added, DAY_2, "a1-u01-d02-e99", "recordContentIds", released = shipped)
     }
 
     @Test
@@ -490,7 +493,8 @@ internal class CheckingContentTest {
                 levels = listOf("a1"),
                 units = listOf("a1-u01"),
                 dailySets = listOf("a1-u01-d01", "a1-u01-d02"),
-                exercises = (1..7).map { "a1-u01-d01-e0$it" } + (1..8).map { "a1-u01-d02-e0$it" },
+                exercises = exerciseIds("a1-u01-d01", CheckerFixture.EXERCISES_ON_DAY_1) +
+                    exerciseIds("a1-u01-d02", CheckerFixture.EXERCISES_ON_DAY_2),
                 items = listOf("byc-jestem", "czesc", "dziekuje", "dzien-dobry", "nie", "prosze", "tak"),
             ),
             identifiersOf(valid.files()),

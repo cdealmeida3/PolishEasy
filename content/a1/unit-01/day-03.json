@@ -3,77 +3,168 @@
   "tips": [
     {
       "id": "a1-u01-d03-t01",
-      "before": "a1-u01-d03-e01",
-      "title": { "en": "Typing in Polish" },
-      "body": { "en": "Now you type the Polish yourself. The letters ą ć ę ł ń ó ś ź ż are on the row just above your keyboard. An answer with missing accents is still accepted, and you are shown its proper spelling." }
+      "before": "a1-u01-d03-e02",
+      "title": { "en": "ę and ą" },
+      "body": { "en": "Ę and ą are nasal vowels, said partly through the nose. Ę is close to \"en\" and ą to \"on\", as in French \"bon\": dziękuję, w porządku. At the very end of a word ę is said almost like a plain e, so proszę ends in \"sheh\". Ą never starts a word." }
+    },
+    {
+      "id": "a1-u01-d03-t02",
+      "before": "a1-u01-d03-e06",
+      "title": { "en": "Thank you and you're welcome" },
+      "body": { "en": "Dziękuję is thank you, and dzięki is thanks, said among friends. The usual replies are proszę and nie ma za co. Bardzo means very, and can come before or after: dziękuję bardzo, bardzo dziękuję." }
     }
   ],
   "exercises": [
     {
-      "type": "type_answer",
+      "type": "listen_type",
       "id": "a1-u01-d03-e01",
-      "prompt": { "en": "yes" },
-      "acceptedAnswers": ["tak"],
-      "items": ["tak"]
+      "acceptedAnswers": ["jeszcze raz"],
+      "items": ["jeszcze-raz"]
     },
     {
-      "type": "type_answer",
+      "type": "choose_translation",
       "id": "a1-u01-d03-e02",
-      "prompt": { "en": "thank you" },
-      "acceptedAnswers": ["dziękuję", "dzięki"],
+      "prompt": "w porządku",
+      "options": [
+        { "en": "once more" },
+        { "en": "all right; fine" },
+        { "en": "maybe" }
+      ],
+      "correctOption": 1,
+      "items": ["w-porzadku"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d03-e03",
+      "text": "w porządku",
+      "distractors": ["porządek", "w poniedziałek"],
+      "items": ["w-porzadku"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d03-e04",
+      "prompt": "wszystko",
+      "options": [
+        { "en": "everything" },
+        { "en": "maybe" },
+        { "en": "once more" }
+      ],
+      "correctOption": 0,
+      "items": ["wszystko"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d03-e05",
+      "prompt": { "en": "everything is fine" },
+      "acceptedAnswers": ["wszystko w porządku"],
+      "distractors": ["tak", "może"],
+      "items": ["wszystko", "w-porzadku"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d03-e06",
+      "prompt": "dziękuję",
+      "options": [
+        { "en": "sorry; excuse me" },
+        { "en": "please; here you are" },
+        { "en": "thank you" }
+      ],
+      "correctOption": 2,
       "items": ["dziekuje"]
     },
     {
       "type": "choose_translation",
-      "id": "a1-u01-d03-e03",
-      "prompt": "przepraszam",
+      "id": "a1-u01-d03-e07",
+      "prompt": "dzięki",
       "options": [
-        { "en": "sorry" },
-        { "en": "please" },
-        { "en": "good night" }
+        { "en": "thanks (to friends)" },
+        { "en": "sorry; excuse me" },
+        { "en": "bye-bye (to friends and family)" }
       ],
       "correctOption": 0,
-      "items": ["przepraszam"]
+      "items": ["dzieki"]
     },
     {
-      "type": "type_answer",
-      "id": "a1-u01-d03-e04",
-      "prompt": { "en": "hi" },
-      "acceptedAnswers": ["cześć"],
-      "items": ["czesc"]
-    },
-    {
-      "type": "type_answer",
-      "id": "a1-u01-d03-e05",
-      "prompt": { "en": "goodbye" },
-      "acceptedAnswers": ["do widzenia", "do zobaczenia"],
-      "items": ["do-widzenia"]
-    },
-    {
-      "type": "type_answer",
-      "id": "a1-u01-d03-e06",
-      "prompt": { "en": "good morning" },
-      "acceptedAnswers": ["dzień dobry"],
-      "items": ["dzien-dobry"]
+      "type": "listen_choose",
+      "id": "a1-u01-d03-e08",
+      "text": "dziękuję",
+      "distractors": ["dzięki", "dzień"],
+      "items": ["dziekuje"]
     },
     {
       "type": "choose_translation",
-      "id": "a1-u01-d03-e07",
-      "prompt": "dobranoc",
+      "id": "a1-u01-d03-e09",
+      "prompt": "bardzo",
       "options": [
-        { "en": "good evening" },
-        { "en": "good night" },
-        { "en": "see you" }
+        { "en": "maybe" },
+        { "en": "everything" },
+        { "en": "very; very much" }
+      ],
+      "correctOption": 2,
+      "items": ["bardzo"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d03-e10",
+      "prompt": { "en": "thank you very much" },
+      "acceptedAnswers": ["dziękuję bardzo", "bardzo dziękuję"],
+      "distractors": ["nie", "tak"],
+      "items": ["dziekuje", "bardzo"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d03-e11",
+      "prompt": "nie ma za co",
+      "options": [
+        { "en": "no problem (answer to \"sorry\")" },
+        { "en": "you're welcome; don't mention it" },
+        { "en": "thank you" }
       ],
       "correctOption": 1,
-      "items": ["dobranoc"]
+      "items": ["nie-ma-za-co"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d03-e12",
+      "text": "dzięki",
+      "distractors": ["dziki", "dźwięki"],
+      "items": ["dzieki"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d03-e13",
+      "prompt": { "en": "no, thank you" },
+      "acceptedAnswers": ["nie, dziękuję", "dziękuję, nie"],
+      "distractors": ["tak", "bardzo"],
+      "items": ["nie", "dziekuje"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d03-e14",
+      "text": "bardzo",
+      "distractors": ["bardziej", "barszcz"],
+      "items": ["bardzo"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u01-d03-e15",
+      "acceptedAnswers": ["wszystko"],
+      "items": ["wszystko"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d03-e16",
+      "prompt": { "en": "don't mention it" },
+      "acceptedAnswers": ["nie ma za co"],
+      "distractors": ["tak", "jutra"],
+      "items": ["nie-ma-za-co"]
     },
     {
       "type": "type_answer",
-      "id": "a1-u01-d03-e08",
-      "prompt": { "en": "please" },
-      "acceptedAnswers": ["proszę"],
-      "items": ["prosze"]
+      "id": "a1-u01-d03-e17",
+      "prompt": { "en": "you're welcome" },
+      "acceptedAnswers": ["nie ma za co", "proszę", "proszę bardzo", "nie ma sprawy"],
+      "items": ["nie-ma-za-co"]
     }
   ]
 }

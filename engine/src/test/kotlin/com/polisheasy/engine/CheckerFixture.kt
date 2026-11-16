@@ -55,11 +55,27 @@ internal data class CheckerFixture(val texts: Map<String, String>) {
         const val ITEMS = "a1/unit-01/items.json"
         const val CLIPS = "audio/clips.json"
 
+        /** Day 1 of [valid] has the fewest Exercises a Daily Set may have. */
+        val EXERCISES_ON_DAY_1 = DAILY_SET_EXERCISES.first
+
+        /** Day 2 of [valid] has one Exercise to spare, so a test can take its last one away. */
+        val EXERCISES_ON_DAY_2 = DAILY_SET_EXERCISES.first + 1
+
+        /** The id of the last Exercise of day 2 of [valid]. */
+        val LAST_OF_DAY_2 = "a1-u01-d02-e%02d".format(EXERCISES_ON_DAY_2)
+
         /** How many Items day 1 of [valid] introduces. */
         const val NEW_ITEMS_ON_DAY_1 = 7
 
         private fun choice(id: String, prompt: String, right: String, wrong: String, vararg items: String) =
             ChooseTranslation(id, prompt, listOf(en(right), en(wrong)), correctOption = 0, items = items.toList())
+
+        /**
+         * Choice Exercises numbered [from] to [to]. They only make a day long enough: each practises
+         * "tak", which already has a Clip and enough Exercises.
+         */
+        private fun padding(dailySet: String, from: Int, to: Int): List<Exercise> =
+            (from..to).map { number -> choice("$dailySet-e%02d".format(number), "tak", "yes", "no", "tak") }
 
         private val dayOne = DailySet(
             id = "a1-u01-d01",
@@ -81,7 +97,7 @@ internal data class CheckerFixture(val texts: Map<String, String>) {
                 ListenChoose("a1-u01-d01-e05", "tak", listOf("nie"), listOf("tak")),
                 ListenType("a1-u01-d01-e06", listOf("nie"), listOf("nie")),
                 choice("a1-u01-d01-e07", "jestem", "I am", "you are", "prosze", "byc-jestem"),
-            ),
+            ) + padding("a1-u01-d01", from = 8, to = EXERCISES_ON_DAY_1),
         )
 
         private val dayTwo = DailySet(
@@ -103,7 +119,7 @@ internal data class CheckerFixture(val texts: Map<String, String>) {
                 // Spare Exercises: any one can go, and the Item "prosze" with them, without breaking another rule.
                 choice("a1-u01-d02-e07", "proszę", "please", "sorry", "prosze", "tak"),
                 choice("a1-u01-d02-e08", "proszę", "please", "thanks", "prosze", "nie"),
-            ),
+            ) + padding("a1-u01-d02", from = 9, to = EXERCISES_ON_DAY_2),
         )
 
         private val items = listOf(
