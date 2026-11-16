@@ -66,6 +66,11 @@ android {
 
     // The Authored Content lives at the repository root and is packaged as app assets.
     sourceSets["main"].assets.srcDir(rootProject.file("content"))
+
+    // The screen tests run on the JVM and read the app's strings and the packaged course.
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 kotlin {
@@ -83,6 +88,12 @@ dependencies {
     implementation(libs.lifecycle.runtime.compose)
     implementation(libs.lifecycle.viewmodel.compose)
     implementation(libs.media3.exoplayer)
+
+    testImplementation(platform(libs.compose.bom))
+    testImplementation(libs.compose.ui.test.junit4)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.junit4)
+    testImplementation(kotlin("test"))
 }
 
 // No APK or bundle is built from broken Authored Content.

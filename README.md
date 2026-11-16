@@ -29,4 +29,18 @@ Every build of the app first checks the Authored Content and fails if anything i
 
 builds the minified release APK and App Bundle under `app/build/outputs/`. They are unsigned unless these four environment variables are set: `RELEASE_KEYSTORE_FILE` (a path to the keystore), `RELEASE_KEYSTORE_PASSWORD`, `RELEASE_KEY_ALIAS` and `RELEASE_KEY_PASSWORD`.
 
+## Screen tests
+
+```
+./gradlew :app:testDebugUnitTest
+```
+
+plays the real screens on the computer, with no phone or emulator, and CI runs it on every build. The tests start the app on Home and tap and type their way through a Daily Set to its Summary: one Exercise of each type, a wrong answer, an answer missing its accents, the listening controls, "can't listen now", Sound turned off in Settings, leaving and coming back, the Path and a Replay. The first run downloads the Android version they run on (about 150 MB).
+
+They play a small fixture course in `app/src/test/resources/fixture-course`, written in the same files as `content/`, so an edit to the real course cannot break them. One test opens the real packaged course and checks only that its first step shows. The clock and the Clip player are replaced too, so a test can move to the next day and can say which Clip a screen asked for.
+
+They check what a Learner sees, not the rules, which the engine's tests cover. What they cannot check stays with a run-through on a phone: the sound itself, the Reminder's notification, the time picker, the email draft for a mistake report, the real keyboard and how the screens look.
+
+## More
+
 See `GLOSSARY.md` for the project's vocabulary, `docs/adr/` for recorded decisions and [docs/audio.md](docs/audio.md) for how the spoken Polish is made and packaged. [docs/authoring.md](docs/authoring.md) has the rules for writing Daily Sets, and [docs/a1-path.md](docs/a1-path.md) outlines the Units of the A1 Path.

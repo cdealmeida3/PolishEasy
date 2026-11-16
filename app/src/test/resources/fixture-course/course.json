@@ -1,0 +1,17 @@
+{
+  "items": ["items.json"],
+  "audio": "audio/clips.json",
+  "levels": [
+    {
+      "id": "fx",
+      "title": { "en": "Fixture" },
+      "units": [
+        {
+          "id": "fx-u01",
+          "title": { "en": "A little of everything" },
+          "dailySets": ["day-01.json", "day-02.json"]
+        }
+      ]
+    }
+  ]
+}

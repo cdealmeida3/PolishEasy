@@ -1,0 +1,78 @@
+{
+  "id": "fx-u01-d01",
+  "tips": [
+    {
+      "id": "fx-u01-d01-t01",
+      "before": "fx-u01-d01-e01",
+      "title": { "en": "The verb być" },
+      "body": { "en": "Być means \"to be\". Each person has its own form, so the pronoun is usually left out: jestem already says \"I am\"." },
+      "conjugation": {
+        "verb": "być",
+        "meaning": { "en": "to be" },
+        "forms": {
+          "ja": "jestem",
+          "ty": "jesteś",
+          "on": "jest",
+          "my": "jesteśmy",
+          "wy": "jesteście",
+          "oni": "są"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "fx-u01-d01-e01",
+      "prompt": "dzień dobry",
+      "options": [
+        { "en": "hello (polite); good morning" },
+        { "en": "good night" },
+        { "en": "goodbye" }
+      ],
+      "correctOption": 0,
+      "items": ["dzien-dobry"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "fx-u01-d01-e02",
+      "prompt": { "en": "this is Adam" },
+      "acceptedAnswers": ["to jest Adam", "to Adam"],
+      "distractors": ["Ewa", "on"],
+      "items": ["to", "byc-jest"]
+    },
+    {
+      "type": "type_answer",
+      "id": "fx-u01-d01-e03",
+      "prompt": { "en": "thank you" },
+      "acceptedAnswers": ["dziękuję"],
+      "items": ["dziekuje"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "fx-u01-d01-e04",
+      "text": "do widzenia",
+      "meaning": { "en": "goodbye" },
+      "distractors": ["do jutra", "dobranoc"],
+      "items": ["do-widzenia"]
+    },
+    {
+      "type": "listen_type",
+      "id": "fx-u01-d01-e05",
+      "acceptedAnswers": ["nie"],
+      "meaning": { "en": "no" },
+      "items": ["nie"]
+    },
+    {
+      "type": "conjugation",
+      "id": "fx-u01-d01-e06",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "ja",
+      "sentence": "___ Adam.",
+      "sentenceMeaning": { "en": "I am Adam." },
+      "acceptedAnswers": ["jestem"],
+      "items": ["byc-jestem"]
+    }
+  ]
+}
