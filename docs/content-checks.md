@@ -22,7 +22,7 @@ First the file to open, relative to `content/`, then the identifier concerned (l
 
 ## After changing content
 
-1. If you added or changed any Polish text, make its audio: see [audio.md](audio.md).
+1. If you added or changed any Polish text, make its audio with `./gradlew :audio:makeClips`, which needs the voice service's key: see [audio.md](audio.md).
 2. If you added Levels, Units, Daily Sets, Exercises or Items, record their identifiers and commit the file:
 
    ```

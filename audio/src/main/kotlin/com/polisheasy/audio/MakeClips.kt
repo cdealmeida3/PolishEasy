@@ -32,6 +32,15 @@ private const val VOICES = "--voices"
 /** A Clip outside this range is silence or a runaway, not speech. */
 private val SENSIBLE = 0.2.seconds..20.seconds
 
+/**
+ * A Clip whose loudest moment is quieter than this is silence. The voice now and then answers a
+ * one-syllable word with a quarter of a second of nothing; speech peaks above -10 dB.
+ */
+private const val SILENT_BELOW_DB = -30.0
+
+/** How many times the voice is asked for one text before its silence stops the run. */
+private const val ASKS = 6
+
 /** How many of the shortest Clips a run lists, to be listened to first. */
 private const val SHORTEST = 10
 
@@ -176,7 +185,17 @@ fun runMakeClips(
         // Not ".ogg", so a run that is killed never leaves half a Clip that looks whole.
         val part = File(audioDir, "${clip.id}.part")
         try {
-            val length = encode.encode(checkNotNull(voice).speak(clip.text), part.toPath())
+            // The voice does not answer the same way twice, so silence is worth asking about again.
+            var measured: Measured
+            var asked = 0
+            do {
+                measured = encode.encode(checkNotNull(voice).speak(clip.text), part.toPath())
+                asked++
+            } while (measured.peakDb < SILENT_BELOW_DB && asked < ASKS)
+            if (measured.peakDb < SILENT_BELOW_DB) {
+                throw VoiceFailure("The voice answered \"${clip.text}\" with silence $ASKS times running")
+            }
+            val length = measured.length
             if (length !in SENSIBLE) throw VoiceFailure("The Clip of \"${clip.text}\" is ${seconds(length)} long, which cannot be right")
             Files.move(part.toPath(), fileOf(clip.id).toPath(), StandardCopyOption.REPLACE_EXISTING)
             made += wanted to length

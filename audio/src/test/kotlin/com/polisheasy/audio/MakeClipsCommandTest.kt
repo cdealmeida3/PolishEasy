@@ -36,6 +36,9 @@ internal class MakeClipsCommandTest {
 
     /** How long the fake encoder says the Clip of a text is. */
     private val lengths = mutableMapOf<String, Duration>()
+
+    /** How many more times the fake voice answers a text with silence. */
+    private val silences = mutableMapOf<String, Int>()
     private var voicesListed = 0
 
     private val voice = object : VoiceService {
@@ -55,7 +58,9 @@ internal class MakeClipsCommandTest {
     private fun encoder(settings: VoiceSettings) = Encoder { wav: ByteArray, target: Path ->
         val text = wav.toString(Charsets.UTF_8)
         Files.writeString(target, "OggS ${settings.voice} $text")
-        lengths[text] ?: 1.seconds
+        val silent = (silences[text] ?: 0) > 0
+        if (silent) silences[text] = silences.getValue(text) - 1
+        Measured(lengths[text] ?: 1.seconds, if (silent) -55.0 else -3.0)
     }
 
     @AfterTest
@@ -453,6 +458,32 @@ internal class MakeClipsCommandTest {
     }
 
     @Test
+    fun `a text the voice answers with silence is asked for again until it is spoken`() {
+        writeCourse("tak", "nie")
+        silences["tak"] = 2
+
+        val run = run()
+
+        assertEquals(0, run.exitCode, run.err)
+        assertEquals(listOf("tak", "tak", "tak", "nie"), sent)
+        assertEquals(listOf("nie.ogg", "tak.ogg"), audioFiles())
+    }
+
+    @Test
+    fun `a text the voice only ever answers with silence stops the run and leaves no file`() {
+        writeCourse("tak", "nie")
+        silences["nie"] = 100
+
+        val run = run()
+
+        assertEquals(1, run.exitCode)
+        assertEquals(7, sent.size)
+        assertTrue("The voice answered \"nie\" with silence 6 times running" in run.err, run.err)
+        assertEquals(listOf("tak.ogg"), audioFiles())
+        assertEquals(listOf("tak"), clips().map { it.id })
+    }
+
+    @Test
     fun `a run lists the shortest Clips it made, shortest first`() {
         writeCourse("tak", "a", "Dzień dobry")
         lengths["a"] = 0.4.seconds
@@ -513,7 +544,7 @@ internal class MakeClipsCommandTest {
         writeCourse("tak")
         val err = ByteArrayOutputStream()
         val broken = object : Encoder {
-            override fun encode(wav: ByteArray, target: Path): Duration = error("never asked")
+            override fun encode(wav: ByteArray, target: Path): Measured = error("never asked")
             override fun problem() = "The ffmpeg command was not found"
         }
 
