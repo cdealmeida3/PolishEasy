@@ -45,6 +45,7 @@ class PlayingADailySetTest {
                     options = listOf("thank you", "hi", "goodbye"),
                 ),
                 SetProgress(correct = 0, total = 3),
+                exerciseId = "a1-u01-d01-e01",
             ),
             step,
         )
@@ -177,5 +178,17 @@ class PlayingADailySetTest {
 
         assertIs<Today.DoneForToday>(engine.today())
         assertIs<Today.DoneForToday>(learner.openApp().today())
+    }
+
+    @Test
+    fun `each Exercise shown carries its identifier`() {
+        val engine = newLearnerEngine()
+
+        val steps = engine.play(engine.startDailySet(), listOf(wrongHello, goodbye, thanks, hello))
+
+        assertEquals(
+            listOf("a1-u01-d01-e01", "a1-u01-d01-e02", "a1-u01-d01-e03", "a1-u01-d01-e01"),
+            steps.filterIsInstance<Step.ShowExercise>().map { it.exerciseId },
+        )
     }
 }

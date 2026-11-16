@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- What Android 11 and earlier back up: the Learner's progress and settings, nothing else. -->
+<full-backup-content>
+    <include domain="file" path="progress.json" />
+    <include domain="sharedpref" path="settings.xml" />
+</full-backup-content>

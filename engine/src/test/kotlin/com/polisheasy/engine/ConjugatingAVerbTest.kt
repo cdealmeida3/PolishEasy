@@ -11,7 +11,11 @@ class ConjugatingAVerbTest {
         val engine = engineWith(conjugationDay(listOf("jesteśmy")))
 
         assertEquals(
-            Step.ShowExercise(ExerciseView.Conjugation(verb = "być", meaning = "to be", person = Person.WE), oneOfOne),
+            Step.ShowExercise(
+                ExerciseView.Conjugation(verb = "być", meaning = "to be", person = Person.WE),
+                oneOfOne,
+                exerciseId = "a1-u01-d01-e01",
+            ),
             engine.startDailySet(),
         )
     }

@@ -358,6 +358,7 @@ class ItemsAndReviewTest {
                 ExerciseView.ChooseTranslation("two", listOf("right", "wrong")),
                 SetProgress(correct = 2, total = 4),
                 review = true,
+                exerciseId = "d1-e2",
             ),
             beforeClosing,
         )
