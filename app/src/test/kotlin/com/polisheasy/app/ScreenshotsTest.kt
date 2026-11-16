@@ -61,6 +61,8 @@ import org.robolectric.RuntimeEnvironment
 import org.robolectric.Shadows.shadowOf
 import org.robolectric.annotation.Config
 import org.robolectric.annotation.GraphicsMode
+import com.polisheasy.engine.ItemView
+import com.polisheasy.engine.ClipView
 
 /**
  * A picture of every screen, written to `app/build/screenshots/` as one PNG per screen. CI uploads
@@ -132,20 +134,34 @@ class ScreenshotsTest {
     @Test
     fun `the Summary of a Review-only Daily Set and of a Replay at the largest font size`() = atTheLargestFontSize { summaryVariants("large") }
 
-    /** The Summaries the fixture course does not reach in one day, shown with made-up scores. */
+    /** The Summaries the fixture course does not reach in one day, shown with made-up scores: a Review-only one, a Replay, and a Streak reaching a week with a long list of words. */
     private fun summaryVariants(theme: String) {
-        var replay by mutableStateOf(false)
+        // A Thursday, with Monday to Wednesday completed and today just now.
+        val week = (0L..6L).map { day -> DayView(clock.today.plusDays(day), completed = day <= 3, today = day == 3L, upcoming = day > 3) }
+        val words = listOf(
+            ItemView("mam", "I have"), ItemView("masz", "you have"), ItemView("ma", "he, she or it has"),
+            ItemView("mieć", "to have"), ItemView("brat", "brother"), ItemView("siostra", "sister"),
+        )
+        var showing by mutableStateOf(0)
         screen.setContent {
             Shown {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    key(replay) {
+                    key(showing) {
+                        val replay = showing == 1
                         SummaryScreen(
                             correctAnswers = if (replay) 6 else 9,
                             exercises = if (replay) 6 else 12,
-                            itemsLearned = emptyList(),
-                            reviewOnly = !replay,
+                            itemsLearned = if (showing >= 2) words else emptyList(),
+                            reviewOnly = showing == 0,
                             replay = replay,
-                            streakRaised = if (replay) null else StreakRaised(from = 11, to = 12),
+                            streakRaised = when (showing) {
+                                0 -> StreakRaised(from = 11, to = 12)
+                                2 -> StreakRaised(from = 6, to = 7)
+                                else -> null
+                            },
+                            week = week,
+                            clipOf = { ClipView("audio/word.ogg") },
+                            onPlay = {},
                             onDone = {},
                         )
                     }
@@ -153,8 +169,10 @@ class ScreenshotsTest {
             }
         }
         shot("$theme-18-summary-review-only")
-        replay = true
+        showing = 1
         shot("$theme-19-summary-replay")
+        showing = 2
+        shot("$theme-19-summary-streak-milestone")
     }
 
     @Test
@@ -402,6 +420,8 @@ class ScreenshotsTest {
         screen.mainClock.autoAdvance = true
         shot("15-summary")
         tap(R.string.summary_back_home)
+        // Home shows the Streak go up once more; the picture is of it at rest.
+        screen.mainClock.advanceTimeBy(2_000)
         shot("16-home-done")
         tap(R.string.nav_path)
         shot("17-path")

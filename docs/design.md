@@ -106,7 +106,7 @@ Rules:
 - Text and icons that carry meaning have a contrast of at least 4.5 to 1 against what they sit on, and shapes that carry meaning at least 3 to 1. `ContrastTest` holds every pair a screen puts together to that, in both themes; a new pair is added there.
 - `outlineVariant` and the track colours are under 3 to 1 on purpose: a card's border, an idle option's edge and an empty progress segment are quiet. So none of them carries meaning alone. A control is known by its words, and what a track shows is also said in words ("4 of 7 completed"). In the dark theme the `brand` fill is 3.5 to 1 against the background, so a main button there never sits on a container colour.
 - `streak` is for graphics and large numbers only, not for small text in the light theme (3.6 to 1).
-- No gradients, no shadows deeper than the bottom edge described under Shape, no transparency used as a colour.
+- No gradients, no shadows deeper than the bottom edge described under Shape, no transparency used as a colour. The one exception is `fadingBottom`: a scrolling list that runs under a pinned button fades into `background` over its last 48 while there is more below, so it is not cut off hard.
 - Dynamic colour (Material You) stays off: the app looks the same on every phone.
 
 ## Type
@@ -115,12 +115,12 @@ Two families. **Nunito** (SIL Open Font Licence, covers every Polish letter) is 
 
 | Style | Family | Weight | Size / line (sp) | Used for |
 | --- | --- | --- | --- | --- |
-| `displayLarge` | Nunito | ExtraBold 800 | 57 / 64 | Not used yet |
-| `displayMedium` | Nunito | ExtraBold 800 | 45 / 52 | The Streak number, the score on the Summary |
-| `displaySmall` | Nunito | ExtraBold 800 | 36 / 44 | A Polish prompt of a word or two, up to 12 letters |
+| `displayLarge` | Nunito | ExtraBold 800 | 57 / 64 | The Streak number on the Summary |
+| `displayMedium` | Nunito | ExtraBold 800 | 45 / 52 | The Streak number on Home |
+| `displaySmall` | Nunito | ExtraBold 800 | 36 / 44 | A Polish prompt of a word or two, up to 12 letters, the Summary's cheer |
 | `headlineLarge` | Nunito | ExtraBold 800 | 32 / 40 | A Polish prompt of 13 to 20 letters, Home's greeting |
 | `headlineMedium` | Nunito | Bold 700 | 26 / 34 | A longer Polish prompt, the sentence of a conjugation Exercise, the Summary's title |
-| `headlineSmall` | Nunito | Bold 700 | 22 / 28 | Screen titles, a Tip's title, a prompt in the Base Language |
+| `headlineSmall` | Nunito | Bold 700 | 22 / 28 | Screen titles, a Tip's title, a prompt in the Base Language, the number on a `StatTile` |
 | `titleLarge` | Nunito | Bold 700 | 20 / 26 | Card titles, the feedback heading |
 | `titleMedium` | Nunito | SemiBold 600 | 18 / 24 | Option cards, word tiles, Polish key row, text a Learner types |
 | `titleSmall` | Nunito | Bold 700 | 14 / 20 | Unit headers, small headings |
@@ -197,15 +197,18 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`ProgressBar`**: 12 high, fully rounded, `brand` on `surfaceContainer`.
 - **`PlayButton`**: 72 across in `brand` with the speaker icon in `onBrand`, for listening Exercises. A circle at rest and a rounded square with `large` corners while a Clip plays. **`SpeakerButton`**, the small speaker beside Polish text, is a 40 circle in `primaryContainer` with the icon in `onPrimaryContainer`, inside a 48 touch area, so it reads as a button; it grows with the font size. On the feedback panel it has no field and takes the panel's accent.
 - **`TopBar`**: Path and Settings have a `headlineSmall` title, and the Path a `bodyLarge` line under it in `onSurfaceVariant`. Home has a greeting in its place (see Home). Inside a Daily Set it is the close button and the progress bar only.
-- **`NavigationFrame`**, the navigation bar: Home, Path, Settings, with icons and `labelSmall` labels, on `surfaceContainer`. The selected one has a `primaryContainer` pill behind a `primary` icon and its label in `onSurface`; the others are `onSurfaceVariant`. Hidden inside a Daily Set and on the Summary. Back from the Path or Settings goes to Home.
+- **`NavigationFrame`**, the navigation bar: Home, Path, Settings, with icons and `labelSmall` labels, on `surfaceContainer`. The selected one has a `primaryContainer` pill behind a `primary` icon and its label in `onSurface`; the others are `onSurfaceVariant`. Hidden inside a Daily Set and on the Summary. Back from the Path or Settings goes to Home. Moving between tabs is a fade-through; the pill moves as Material's own navigation bar moves it.
 - **`StreakWeekCard`**: the Streak on Home. A `ContentCard` with the Streak flame at 48 and the number in `displayMedium`, "day Streak" in `titleLarge` and a line in `bodyMedium` saying what today's Daily Set would do for it. Under them this calendar week, Monday to Sunday, as 32 dots with two letters of the weekday below each: a completed day is `streak` with a tick, a day that passed without one is `surfaceContainerHigh` with a dashed `outline` line, today has a 2 dp `streak` ring until it is completed and its letters in `titleSmall`, and a day still to come is a small 12 dot, never drawn as missed. At a large font size the words go under the flame and the number. A screen reader hears the card as one sentence.
 - **`TodayCard`**: what today holds, on Home. A `ContentCard` with a small label in `titleSmall` ("Today" in `primary` on the card with the main action, "Up next" in `onSurfaceVariant`), a `headlineSmall` title, and below it what the state needs: `UnitProgress`, `Teaches`, a `CardNote`, the `PrimaryButton`. Done states have no label and put the `success` tick beside the title.
 - **`UnitProgress`**: the Unit's name in `bodyMedium`, and under it `ProgressSegments`: one 12 high segment for each of the Unit's Daily Sets, `brand` when completed, `primaryContainer` with a 2 dp `brand` border for the one the card is about, `surfaceContainerHigh` for the rest.
 - **`Teaches`**: "Also today" as an `Instruction`, then one `bodyLarge` line for each of the Daily Set's Tip titles after the first, which is the card's title, with an 8 dot in `primary`.
 - **`ContentCard`**: `surfaceContainerLowest`, `large` corners, 1 dp `outlineVariant` border, 16 padding, no shadow.
-- **`ScoreRing`**: the Summary's score. A 184 ring, 16 thick with round ends, `success` on `surfaceContainerHigh`, with the share of Exercises answered correctly on the first try inside it in `displayMedium`. The same score is written in words under it.
-- **`StreakCard`**: the Streak going up, on the Summary of the Daily Set that raised it and nowhere else. A `ContentCard` with the flame at 48 and the number in `displayMedium`, both in `streak`, then "day Streak" in `titleLarge` and a line in `bodyMedium`. A Replay never shows it.
-- **`ItemCard`**: one Item under "You learned": a `ContentCard` with the Polish in `titleMedium` and its meaning under it in `bodyMedium`.
+- **`StreakHero`**: the Streak going up, the hero of the Summary of the Daily Set that raised it and nowhere else. A `ContentCard` with everything centred: the flame at 72 and the number in `displayLarge`, both in `streak`, then "day Streak" in `titleLarge`, a line in `bodyLarge` and the week's dots (`WeekRow`), with today's filling in. At 7, 30 and 100 days the line names the milestone and the confetti is doubled. A Replay never shows it.
+- **`StatTile`** and **`StatRow`**: a small fact with a number. A card with the number in `headlineSmall` and what it counts under it in `bodyMedium` in `onSurfaceVariant`, centred; tiles sit side by side, equally wide, 8 apart, and go one under the other at a large font size. A screen reader hears each as a sentence. The Summary has "5 of 6 · first try" and "7 · new words". The score is a fact here, never the hero: the Summary celebrates finishing, it does not grade.
+- **`ItemCard`**: one Item under "You learned": a `ContentCard` with the Polish in `titleMedium`, its meaning under it in `bodyMedium`, and at the end its `SpeakerButton` when it has a Clip.
+- **`WeekRow`**: the seven dots of the Streak's week, shared by Home and the Summary.
+- **`RollingNumber`**: a number that changes by rolling: the old one up and out, the new one in from below.
+- **`Arriving`**: wraps something that appears to mark what just happened, such as Home's "Done for today" card when the Learner comes back from the Summary.
 - **`SettingsCard`**: a group of settings that belong together. A `ContentCard` whose rows reach its edges, with a `SettingDivider` between rows that starts where their words start. Every row is at least 56 high, has its icon in `primary` on a 40 `primaryContainer` circle, its label in `titleMedium` and, under it, a note in `bodyMedium` in `onSurfaceVariant`. The whole row is tapped, and a screen reader hears it as one thing.
   - **`SwitchSetting`**: on or off. At a large font size the switch goes under the words. The switch is `brand` with an `onBrand` thumb when on, in both themes, and `surfaceContainerHighest` with an `outline` border and thumb when off.
   - **`ValueSetting`**: a value to change, such as the Reminder's time, shown in `titleMedium` on a `secondaryContainer` field with `small` corners. At a large font size the value goes under the label.
@@ -213,6 +216,7 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
   - **`SettingNotice`**: something in the way of a setting, such as notifications turned off in Android: `cautionContainer` with `medium` corners inside the card, a sentence in `bodyLarge` and the one `SecondaryButton` that fixes it. It is a caution, not an `error`: nothing broke.
   - **`SettingsFootnote`**: the version, centred in `labelSmall` under the cards.
 - **`Confetti`**: see Motion and touch. It is laid over the Summary's content, above the main button. A Replay gets none.
+- **The Summary** from the top: a cheer in Polish in `displaySmall` ("Brawo!", "Świetnie!", "Dobra robota!", taken in turn) with its meaning under it in `bodyMedium`, then what was finished in `titleLarge` ("Daily Set complete"), the `StreakHero` when the Streak went up, the `StatRow`, and "You learned" with an `ItemCard` for each Item. The list scrolls and fades out above the main button, which says "Done".
 - **Streak flame**: the flame icon in `streak` beside the number. With a Streak of zero the flame and the number are `outline`, not hidden.
 - **`UnitCard`**: a Unit on the Path. A `ContentCard` with "Unit N" in `titleSmall` in `primary`, the Unit's title in `titleLarge`, "4 of 7 completed" in `bodyMedium`, `ProgressSegments` with today's Daily Set outlined, and under them the Unit's stops. A Unit that is all completed has the `success` tick beside its title.
 - **`TrailStop`**: one Daily Set on a Unit's trail. Its node, then its title in `titleMedium` and under it a `bodyMedium` line with its number in its Unit and its state in words ("4 of 8 · Completed"). The stop the Learner is at has a `titleSmall` label above its title: "Today" in `primary`, or "Up next" in `onSurfaceVariant` when it unlocks tomorrow. A completed stop ends with the replay icon in `primary`. The whole stop is tapped as one, with no ripple: its node goes down. A locked stop's title is `onSurfaceVariant` and it is not tappable.
@@ -241,7 +245,7 @@ Home answers three things from the top down: hello, how the Streak stands, and w
 
 A Daily Set has one name and one number on every screen: its topic, the title of its first Tip, and its number in its Unit. The course-wide number is never shown. On screen a Review-only Daily Set is called a Review; the Glossary's term stays in the docs and the code.
 
-Home scrolls if the font size makes it too tall. Nothing on it moves at rest.
+Home scrolls if the font size makes it too tall. Nothing on it moves at rest. Coming back from the Summary of the Daily Set that raised the Streak, Home shows it happen once: the number rolls, today's dot fills in and the "Done for today" card arrives.
 
 ## The Path
 
@@ -284,8 +288,12 @@ Motion says what just happened. It never makes the Learner wait: every tap is ac
 | The right option, a tick appearing | Scales from 0.8 to 1 with a little bounce, 200 ms |
 | The wrong option | One short side-to-side shake of 8 dp, 250 ms |
 | The play button while a Clip plays | Its corners go from a circle to a rounded square in 200 ms, and back when the Clip ends |
-| Summary | The score ring fills in 800 ms, numbers count up, then confetti falls once for about 2 seconds |
-| The Streak going up | When the score ring has filled: the old number rolls up and out, the new one rolls in from below, 350 ms, and the flame scales once from 1.35 back to 1 |
+| Summary | The cheer stands for 500 ms, then confetti falls once for about 2 seconds |
+| The Streak going up, on the Summary and then once on Home | After the same 500 ms: the old number rolls up and out, the new one rolls in from below, 350 ms; on the Summary the flame scales once from 1.35 back to 1 |
+| Today's dot in the Streak's week | Starts as today's ring and fills from its centre with a little bounce, the tick growing with it |
+| Home's "Done for today" card, arriving from the Summary | Fades in and grows from 0.92 to 1, 250 ms |
+| From one tab to another | A fade-through: the old screen fades out in 90 ms, then the new one fades in over 210 ms |
+| A Streak of 7, 30 or 100 days | The Summary's line names it and the confetti is doubled, once |
 
 Rules:
 
@@ -308,7 +316,7 @@ Rules:
 - Every state has words or an icon as well as colour, and a state change is announced to a screen reader (the feedback panel is a live region).
 - Every icon button has a content description from `strings.xml`. Decorative icons have none.
 - Touch targets are at least 48 dp. Contrast as under Colour.
-- The app works at the largest font size: content scrolls, the main button stays pinned and nothing is cut off. The `large-…` pictures show it. Above a font scale of 1.3 two things side by side go one under the other (`Scaled.roomy()`): a setting's switch under its words, the Streak card's words under its number, "Slow" under the play button. Icons beside text grow with it. `ValueSetting` wraps when its two parts no longer fit, and the score ring grows by up to a third so that "100%" stays inside it.
+- The app works at the largest font size: content scrolls, the main button stays pinned and nothing is cut off. The `large-…` pictures show it. Above a font scale of 1.3 two things side by side go one under the other (`Scaled.roomy()`): a setting's switch under its words, the Streak card's words under its number, "Slow" under the play button. Icons beside text grow with it. `ValueSetting` wraps when its two parts no longer fit, and the Summary's `StatTile`s go one under the other.
 - Text that is always Polish (a Polish prompt, Home's greeting, an Item's Polish) is marked as Polish with `inPolish()`, so a screen reader says it with a Polish voice. Word tiles are always Polish and are marked; option cards are marked when the Exercise's answers are Polish.
 - Both themes are designed, not derived: check both sets of screenshots.
 

@@ -26,6 +26,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.IntOffset
+import androidx.compose.animation.scaleIn
 
 /** Named durations and springs (docs/design.md, Motion and touch). Components ask here; screens do not. */
 object Motion {
@@ -50,8 +51,15 @@ object Motion {
     /** How far an option that was not chosen fades once the Exercise is answered. */
     const val FADED_ALPHA = 0.7f
 
-    /** The Summary's score ring filling. The Streak rolls and the confetti starts when it has. */
-    const val RING_MILLIS = 800
+    /** How long the Summary's cheer stands alone before the Streak rolls up and the confetti starts. */
+    const val CHEER_MILLIS = 500
+
+    /** One tab fading out and the next fading in. */
+    const val TAB_OUT_MILLIS = 90
+    const val TAB_IN_MILLIS = 210
+
+    /** The size something starts from as it arrives on a screen, such as Home's card when today is done. */
+    const val ARRIVE_FROM_SCALE = 0.92f
 
     /** The confetti falling, once. */
     const val CONFETTI_MILLIS = 2200
@@ -135,9 +143,29 @@ object Motion {
     @Composable
     fun <T> shape(): AnimationSpec<T> = if (reduced()) snap() else tween(SHAPE_MILLIS, easing = FastOutSlowInEasing)
 
-    /** The score ring filling and its number counting up. Null when animations are removed: it shows full at once. */
+    /** Today's dot of the Streak's week filling in, with a bounce. */
     @Composable
-    fun ring(): AnimationSpec<Float>? = if (reduced()) null else tween(RING_MILLIS, easing = FastOutSlowInEasing)
+    fun fill(): AnimationSpec<Float> = if (reduced()) {
+        snap()
+    } else {
+        spring(dampingRatio = Spring.DampingRatioMediumBouncy, stiffness = Spring.StiffnessMediumLow)
+    }
+
+    /** A fade-through between two tabs: the old one goes quickly, then the new one comes. */
+    @Composable
+    fun tabs(): ContentTransform = if (reduced()) {
+        EnterTransition.None togetherWith ExitTransition.None
+    } else {
+        fadeIn(tween(TAB_IN_MILLIS, delayMillis = TAB_OUT_MILLIS)) togetherWith fadeOut(tween(TAB_OUT_MILLIS))
+    }
+
+    /** Something arriving on a screen to mark what just happened: it fades in and grows to its size. */
+    @Composable
+    fun arrive(): EnterTransition = if (reduced()) {
+        EnterTransition.None
+    } else {
+        fadeIn(tween(STEP_MILLIS)) + scaleIn(spring(Spring.DampingRatioLowBouncy, Spring.StiffnessMediumLow), initialScale = ARRIVE_FROM_SCALE)
+    }
 
     /** The old Streak number rolls up and out, the new one rolls in from below. */
     @Composable
@@ -158,14 +186,14 @@ object Motion {
     }
 
     /**
-     * The confetti's one fall, from 0 to 1, starting when the score ring has filled. Null when
+     * The confetti's one fall, from 0 to 1, starting when the cheer has stood for a moment. Null when
      * animations are removed, and then there is no confetti.
      */
     @Composable
     fun confetti(): AnimationSpec<Float>? = if (reduced()) {
         null
     } else {
-        tween(CONFETTI_MILLIS, delayMillis = RING_MILLIS, easing = LinearEasing)
+        tween(CONFETTI_MILLIS, delayMillis = CHEER_MILLIS, easing = LinearEasing)
     }
 
     private val Overshoot = Easing { OvershootInterpolator(1.5f).getInterpolation(it) }

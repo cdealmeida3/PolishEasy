@@ -54,7 +54,13 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
                     screen.reviewOnly,
                     screen.replay,
                     screen.streakRaised,
-                    onDone = viewModel::leaveDailySet,
+                    screen.week,
+                    clipOf = viewModel::clipOf,
+                    onPlay = { clip -> player.play(clip.path) },
+                    onDone = {
+                        player.stop()
+                        viewModel.leaveDailySet()
+                    },
                 )
             }
         }
@@ -127,17 +133,19 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
         viewModel.refresh()
         onPauseOrDispose { }
     }
+    val selected = when (screen) {
+        is Screen.Path -> 1
+        is Screen.Settings -> 2
+        else -> 0
+    }
+    val held = remember { arrayOfNulls<Screen>(3) }
     NavigationFrame(
         tabs = listOf(
             NavigationTab(stringResource(R.string.nav_home), R.drawable.ic_home),
             NavigationTab(stringResource(R.string.nav_path), R.drawable.ic_route),
             NavigationTab(stringResource(R.string.nav_settings), R.drawable.ic_settings),
         ),
-        selected = when (screen) {
-            is Screen.Path -> 1
-            is Screen.Settings -> 2
-            else -> 0
-        },
+        selected = selected,
         onSelect = { tab ->
             when (tab) {
                 1 -> viewModel.openPath()
@@ -145,27 +153,30 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
                 else -> viewModel.backToHome()
             }
         },
-    ) {
-        when (screen) {
+    ) { tab ->
+        // A tab on its way out keeps what it last showed.
+        if (tab == selected) held[tab] = screen
+        when (val showing = held[tab]) {
             is Screen.Home -> HomeScreen(
-                screen.today,
-                screen.streak,
-                screen.week,
-                screen.next,
+                showing.today,
+                showing.streak,
+                showing.week,
+                showing.next,
                 onStart = viewModel::startDailySet,
                 onContinue = viewModel::resumeDailySet,
+                streakRaisedFrom = showing.streakRaisedFrom,
             )
             is Screen.Path -> {
-                BackHandler(onBack = viewModel::backToHome)
-                PathScreen(screen.path, onReplay = viewModel::replay, onOpenTodays = viewModel::openTodays)
+                BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)
+                PathScreen(showing.path, onReplay = viewModel::replay, onOpenTodays = viewModel::openTodays)
             }
             is Screen.Settings -> {
-                BackHandler(onBack = viewModel::backToHome)
+                BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)
                 SettingsScreen(
-                    screen.reminderEnabled,
-                    screen.reminderTime,
-                    screen.notificationsAllowed,
-                    screen.soundOn,
+                    showing.reminderEnabled,
+                    showing.reminderTime,
+                    showing.notificationsAllowed,
+                    showing.soundOn,
                     onReminderEnabled = viewModel::setReminderEnabled,
                     onReminderTime = viewModel::setReminderTime,
                     onSoundOn = viewModel::setSoundOn,
