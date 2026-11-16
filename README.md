@@ -39,7 +39,9 @@ plays the real screens on the computer, with no phone or emulator, and CI runs i
 
 They play a small fixture course in `app/src/test/resources/fixture-course`, written in the same files as `content/`, so an edit to the real course cannot break them. One test opens the real packaged course and checks only that its first step shows. The clock and the Clip player are replaced too, so a test can move to the next day and can say which Clip a screen asked for.
 
-They check what a Learner sees, not the rules, which the engine's tests cover. What they cannot check stays with a run-through on a phone: the sound itself, the Reminder's notification, the time picker, the email draft for a mistake report, the real keyboard and how the screens look.
+They check what a Learner sees, not the rules, which the engine's tests cover. What they cannot check stays with a run-through on a phone: the sound itself, the Reminder's notification, the time picker, the email draft for a mistake report, the real keyboard and anything that moves.
+
+The same command writes a picture of every screen, in the light and the dark theme, to `app/build/screenshots/`, and CI keeps them as the `screenshots` artifact of each run. [docs/design.md](docs/design.md) says how the app should look.
 
 ## More
 

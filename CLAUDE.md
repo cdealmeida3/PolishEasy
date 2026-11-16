@@ -19,3 +19,7 @@ Single-context: one `GLOSSARY.md` and `docs/adr/` at the repo root. See `docs/ag
 ### Authoring content
 
 Read `docs/authoring.md` before writing or changing a Daily Set, and `docs/a1-path.md` for what each Unit of the A1 Path covers.
+
+### Changing how the app looks
+
+Read `docs/design.md` before changing a screen or a component: it has the colours, type, shapes and motion rules, and how to get a picture of every screen.
