@@ -27,7 +27,7 @@ Every build of the app first checks the Authored Content and fails if anything i
 ./gradlew :app:assembleRelease :app:bundleRelease
 ```
 
-builds the minified release APK and App Bundle under `app/build/outputs/`. They are unsigned unless these four environment variables are set: `RELEASE_KEYSTORE_FILE` (a path to the keystore), `RELEASE_KEYSTORE_PASSWORD`, `RELEASE_KEY_ALIAS` and `RELEASE_KEY_PASSWORD`.
+builds the minified release APK and App Bundle under `app/build/outputs/`. They are unsigned unless `RELEASE_KEYSTORE_FILE` (a path to the upload keystore) and `RELEASE_KEYSTORE_PASSWORD` are set. `RELEASE_KEY_ALIAS` defaults to `upload` and `RELEASE_KEY_PASSWORD` to the keystore password. The upload key is not in the repository: see [docs/release.md](docs/release.md).
 
 ## Screen tests
 

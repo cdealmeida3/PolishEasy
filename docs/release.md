@@ -10,9 +10,10 @@ Uploading to Play is a manual step.
 
 ## How signing works
 
-- The upload keystore is committed at `app/upload.keystore`, with its password in `app/build.gradle.kts`, so every build is signed with nothing to set up. Carlos chose this on 2026-11-16 over GitHub secrets, on the condition that the repository stays private.
-- Anyone who can read the repository can read the key. Before the repository is ever made public, create a new upload keystore, move it and its passwords into GitHub Actions secrets, remove the old one from the repository, and ask Play support to reset the upload key if the app is already on Play.
-- Keep a copy of `app/upload.keystore` outside GitHub. With Play App Signing a lost upload key can be reset through Play support, but it takes days.
+- The upload key is a PKCS12 keystore (alias `upload`) kept only in two repository Actions secrets: `UPLOAD_KEYSTORE_BASE64` (the keystore, base64-encoded) and `UPLOAD_KEYSTORE_PASSWORD` (the password for both the keystore and the key). `build.yml` writes the keystore to the runner's temp folder and passes it to Gradle through `RELEASE_KEYSTORE_FILE` and `RELEASE_KEYSTORE_PASSWORD`. Nothing secret is in the repository, so it can be made public.
+- The current upload key was created on 2026-11-16 and is valid until 2056. Its certificate SHA-256 fingerprint is `45:75:7F:E1:32:5E:ED:58:82:B3:E1:41:AC:20:54:DD:BF:8F:F6:D4:23:A1:84:43:4D:91:41:9B:05:FD:9B:B7`. It replaced an upload key that was committed to the repository for a few hours on the same day; that old key was never registered with Google Play and must never be used.
+- The keystore and its password are backed up outside GitHub, on Carlos's Mac in `~/Documents/PolishEasy upload key/`. Keep a second copy somewhere safe, such as a password manager. Secrets cannot be read back out of GitHub. With Play App Signing a lost upload key can be reset through Play support, but it takes days.
+- To replace the key, update both secrets: `base64 -i upload.p12 | gh secret set UPLOAD_KEYSTORE_BASE64`, then `gh secret set UPLOAD_KEYSTORE_PASSWORD`. If the app is already on Play, ask Play support to reset the upload key first.
 - `versionCode` is the run number of `.github/workflows/build.yml`. Play needs a higher code for every upload, so do not rename that file or move the release build to another workflow: the counter would restart at 1.
 
 ## Steps to do by hand

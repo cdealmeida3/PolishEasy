@@ -4,8 +4,8 @@ local.properties
 *.iml
 .idea/
 .kotlin/
-# Only the two shared keystores are tracked.
+# Only the shared debug keystore is tracked. The upload key lives in Actions secrets.
 *.jks
 *.keystore
+*.p12
 !app/debug.keystore
-!app/upload.keystore
