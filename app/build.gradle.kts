@@ -96,5 +96,11 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
+// ScreenshotsTest writes a picture of every screen here. Declared so that a run whose tests are
+// up to date or restored from the build cache still has its pictures.
+tasks.withType<Test>().matching { it.name == "testDebugUnitTest" }.configureEach {
+    outputs.dir(layout.buildDirectory.dir("screenshots"))
+}
+
 // No APK or bundle is built from broken Authored Content.
 tasks.named("preBuild") { dependsOn(":engine:checkContent") }
