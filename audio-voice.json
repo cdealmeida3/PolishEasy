@@ -1,0 +1,14 @@
+{
+  "service": "google-cloud-text-to-speech",
+  "voice": "pl-PL-Chirp3-HD-Aoede",
+  "languageCode": "pl-PL",
+  "sampleRateHertz": 24000,
+  "speakingRate": 1.0,
+  "encoding": {
+    "codec": "opus",
+    "bitrateKbps": 32,
+    "leadMs": 80,
+    "tailMs": 200,
+    "fadeOutMs": 20
+  }
+}
