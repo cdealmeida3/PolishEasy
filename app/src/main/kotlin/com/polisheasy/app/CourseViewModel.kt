@@ -11,6 +11,7 @@ import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.FileLearnerProgress
 import com.polisheasy.engine.ItemView
+import com.polisheasy.engine.PathView
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.Step
 import com.polisheasy.engine.TipView
@@ -23,7 +24,10 @@ import java.time.Clock
 sealed interface Screen {
     data class Home(val today: Today, val streak: Int) : Screen
 
-    data class Tip(val tip: TipView, val progress: SetProgress) : Screen
+    data class Path(val path: PathView) : Screen
+
+    /** [replay] when the Tip belongs to a Replay. */
+    data class Tip(val tip: TipView, val progress: SetProgress, val replay: Boolean) : Screen
 
     data class Player(
         val exercise: ExerciseView,
@@ -32,6 +36,8 @@ sealed interface Screen {
         val shown: Int,
         /** Whether this Exercise is part of the Review that ends the Daily Set. */
         val review: Boolean,
+        /** Whether this is a Replay, which saves nothing. */
+        val replay: Boolean,
         val feedback: Feedback? = null,
     ) : Screen
 
@@ -41,6 +47,8 @@ sealed interface Screen {
         val itemsLearned: List<ItemView>,
         /** Whether it was a Review-only Daily Set. */
         val reviewOnly: Boolean,
+        /** Whether it was a Replay. */
+        val replay: Boolean,
     ) : Screen
 }
 
@@ -62,9 +70,37 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
 
     fun resumeDailySet() = show(engine.resumeDailySet())
 
-    /** Asks the engine again what today holds, so Home is right after midnight has passed. */
-    fun refreshHome() {
-        if (screen is Screen.Home) screen = home()
+    fun openPath() {
+        screen = Screen.Path(engine.path())
+    }
+
+    fun replay(dailySetId: String) = show(engine.startReplay(dailySetId))
+
+    /** Today's Daily Set tapped on the Path: started or continued, as from Home. */
+    fun openTodays() = when (val today = engine.today()) {
+        Today.DailySetAvailable -> startDailySet()
+        is Today.InProgress -> if (today.reviewOnly) openPath() else resumeDailySet()
+        else -> openPath() // Midnight passed while the Path was showing; show it afresh.
+    }
+
+    /** Leaves a Tip, an Exercise or a Summary: a Replay goes back to the Path, anything else to Home. */
+    fun leaveDailySet() {
+        val replay = when (val current = screen) {
+            is Screen.Tip -> current.replay
+            is Screen.Player -> current.replay
+            is Screen.Summary -> current.replay
+            else -> false
+        }
+        if (replay) openPath() else backToHome()
+    }
+
+    /** Asks the engine again what today holds, so Home and the Path are right after midnight has passed. */
+    fun refresh() {
+        when (screen) {
+            is Screen.Home -> screen = home()
+            is Screen.Path -> screen = Screen.Path(engine.path())
+            else -> Unit
+        }
     }
 
     fun answer(answer: Answer) {
@@ -84,9 +120,21 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
 
     private fun show(step: Step) {
         screen = when (step) {
-            is Step.ShowTip -> Screen.Tip(step.tip, step.progress)
-            is Step.ShowExercise -> Screen.Player(step.exercise, step.progress, shown = ++exercisesShown, review = step.review)
-            is Step.ShowSummary -> Screen.Summary(step.correctAnswers, step.exercises, step.itemsLearned, step.reviewOnly)
+            is Step.ShowTip -> Screen.Tip(step.tip, step.progress, step.replay)
+            is Step.ShowExercise -> Screen.Player(
+                step.exercise,
+                step.progress,
+                shown = ++exercisesShown,
+                review = step.review,
+                replay = step.replay,
+            )
+            is Step.ShowSummary -> Screen.Summary(
+                step.correctAnswers,
+                step.exercises,
+                step.itemsLearned,
+                step.reviewOnly,
+                step.replay,
+            )
         }
     }
 }

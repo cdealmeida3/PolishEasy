@@ -45,6 +45,11 @@ private val title = mapOf("en" to "Title")
 fun levelOf(id: String, vararg dailySets: DailySet): Level =
     Level(id, title, listOf(CourseUnit("$id-u01", title, dailySets.toList())))
 
+fun unitOf(id: String, title: String, vararg dailySets: DailySet): CourseUnit =
+    CourseUnit(id, mapOf("en" to title), dailySets.toList())
+
+fun levelOf(id: String, title: String, vararg units: CourseUnit): Level = Level(id, mapOf("en" to title), units.toList())
+
 /** A one-Level course of these Daily Sets, in Path order. */
 fun courseOf(items: List<Item>, vararg dailySets: DailySet): Course = Course(listOf(levelOf("a1", *dailySets)), items)
 
@@ -60,6 +65,14 @@ private val Step.ShowExercise.prompt: String
         is ExerciseView.Conjugation -> "${view.verb} ${view.person.pronouns}"
         is ExerciseView.ListenChoose -> view.audio.path
         is ExerciseView.ListenType -> view.audio.path
+    }
+
+/** Whether this Step belongs to a Replay. */
+val Step.isReplay: Boolean
+    get() = when (this) {
+        is Step.ShowTip -> replay
+        is Step.ShowExercise -> replay
+        is Step.ShowSummary -> replay
     }
 
 /** The prompts of the Exercises among [steps], in the order they were shown. */
