@@ -2,6 +2,8 @@ package com.polisheasy.app.ui.theme
 
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.LocalDensity
 
 /** The only steps of space between things: a 4 dp grid (docs/design.md, Space). */
 object Space {
@@ -23,6 +25,23 @@ object Space {
     val screenBottom: Dp = l
 }
 
+/**
+ * What changes with the phone's font size besides the text itself (docs/design.md, Accessibility).
+ * Components ask here; screens do not.
+ */
+object Scaled {
+    private const val ROOMY_FROM = 1.3f
+    private const val ICON_MOST = 1.5f
+
+    /** Whether text is large enough that two things side by side go one under the other. */
+    @Composable
+    fun roomy(): Boolean = LocalDensity.current.fontScale > ROOMY_FROM
+
+    /** An icon that sits beside text: it grows with the text, up to half as big again. */
+    @Composable
+    fun icon(size: Dp = Size.icon): Dp = size * LocalDensity.current.fontScale.coerceIn(1f, ICON_MOST)
+}
+
 /** Sizes that more than one component shares. */
 object Size {
     /** The least a finger can tap, icons included. */
@@ -42,6 +61,9 @@ object Size {
     /** The play button of a listening Exercise, and the speaker inside it. */
     val playButton: Dp = 72.dp
     val playIcon: Dp = 36.dp
+
+    /** A small round tonal button, such as the speaker beside Polish text, and a setting's badge. */
+    val tonalButton: Dp = 40.dp
 
     val progressBar: Dp = 12.dp
 

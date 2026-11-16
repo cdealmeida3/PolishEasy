@@ -187,7 +187,7 @@ fun TrailStop(
     onClick: (() -> Unit)? = null,
 ) {
     val scheme = MaterialTheme.colorScheme
-    val walked = PolishEasyTheme.colors.success
+    val walked = PolishEasyTheme.colors.completed
     val ahead = scheme.outlineVariant
     val interaction = remember { MutableInteractionSource() }
     val tap = if (onClick == null) {
@@ -254,7 +254,7 @@ private fun StopNode(state: StopState, interaction: MutableInteractionSource) {
     val scheme = MaterialTheme.colorScheme
     val colors = PolishEasyTheme.colors
     when (state) {
-        StopState.Completed -> Raised(colors.success, colors.successEdge, interaction) {
+        StopState.Completed -> Raised(colors.completed, colors.completedEdge, interaction) {
             Icon(painterResource(R.drawable.ic_check), contentDescription = null, tint = colors.onSuccess, modifier = Modifier.size(Size.feedbackIcon))
         }
         StopState.Today -> Box(

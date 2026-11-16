@@ -28,7 +28,7 @@ import java.time.LocalTime
 /** What the app is showing. Every rule behind it lives in the course engine. */
 sealed interface Screen {
     /**
-     * [week] is the last seven days, oldest first and ending today. [next] is where the Learner is
+     * [week] is this calendar week, Monday to Sunday. [next] is where the Learner is
      * on the Path, or null once every Daily Set released so far is completed.
      */
     data class Home(val today: Today, val streak: Int, val week: List<DayView>, val next: NextDailySetView?) : Screen
@@ -61,6 +61,8 @@ sealed interface Screen {
         /** The Exercise's stable identifier, for a mistake report. */
         val exerciseId: String,
         val feedback: Feedback? = null,
+        /** The other side of the answer, shown with the feedback on a right one: its meaning, or the Polish for it. */
+        val gloss: String? = null,
     ) : Screen
 
     data class Summary(
@@ -173,11 +175,12 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
         val player = screen as? Screen.Player ?: return
         if (player.feedback != null) return
         val streakBefore = engine.streak()
+        val gloss = engine.answerGloss()
         val feedback = engine.answer(answer)
         // The answer that completes the Daily Set is the one that raises the Streak.
         val streakNow = engine.streak()
         if (streakNow > streakBefore) streakRaised = StreakRaised(streakBefore, streakNow)
-        screen = player.copy(feedback = feedback)
+        screen = player.copy(feedback = feedback, gloss = gloss)
     }
 
     /**
@@ -197,7 +200,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
         screen = home()
     }
 
-    private fun home() = Screen.Home(engine.today(), engine.streak(), engine.lastSevenDays(), engine.nextDailySet())
+    private fun home() = Screen.Home(engine.today(), engine.streak(), engine.thisWeek(), engine.nextDailySet())
 
     private fun settingsScreen() = Screen.Settings(
         reminderEnabled = settings.reminderEnabled,

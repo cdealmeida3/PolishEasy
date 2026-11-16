@@ -20,6 +20,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.polisheasy.app.ui.theme.Scaled
+import androidx.compose.foundation.layout.size
 
 /** One destination of the navigation bar: its [label] and its [icon]. */
 class NavigationTab(val label: String, @DrawableRes val icon: Int)
@@ -52,7 +54,7 @@ fun NavigationFrame(
                 NavigationBarItem(
                     selected = index == selected,
                     onClick = { onSelect(index) },
-                    icon = { Icon(painterResource(tab.icon), contentDescription = null) },
+                    icon = { Icon(painterResource(tab.icon), contentDescription = null, modifier = Modifier.size(Scaled.icon())) },
                     label = { Text(tab.label, style = MaterialTheme.typography.labelSmall) },
                     colors = NavigationBarItemDefaults.colors(
                         selectedIconColor = scheme.primary,

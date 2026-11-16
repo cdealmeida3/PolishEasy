@@ -28,13 +28,11 @@ import com.polisheasy.app.ui.theme.inPolish
 import com.polisheasy.engine.DayView
 import com.polisheasy.engine.NextDailySetView
 import com.polisheasy.engine.Today
-import java.time.format.DateTimeFormatter
-import java.time.format.FormatStyle
 import java.time.format.TextStyle
 import java.util.Locale
 
 /**
- * Home: a greeting, the Streak with the last seven days, and what today holds. [next] is where the
+ * Home: a greeting, the Streak with this week's days, and what today holds. [next] is where the
  * Learner is on the Path, or null once every Daily Set released so far is completed. Each thing
  * [today] can be has its own card: ready, in progress, done for today, and the Review-only ones.
  */
@@ -106,10 +104,9 @@ internal fun HomeScreen(
                     PrimaryButton(stringResource(R.string.home_start), onStart)
                 }
                 is Today.DoneForToday -> {
-                    val unlockTime = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).format(today.nextUnlock)
                     val message = if (today.reviewOnlyNext) R.string.home_done_review_only_next else R.string.home_done
                     TodayCard(stringResource(R.string.home_done_title), done = true) {
-                        CardNote(stringResource(message, unlockTime))
+                        CardNote(stringResource(message))
                     }
                     if (next != null) {
                         Spacer(Modifier.height(Space.m))
@@ -138,19 +135,24 @@ private fun Streak(streak: Int, week: List<DayView>, today: Today) {
         streak = streak,
         title = stringResource(R.string.streak_title),
         note = note?.let { stringResource(it) },
-        days = week.mapIndexed { index, day ->
+        days = week.map { day ->
             WeekDay(
-                label = day.date.dayOfWeek.getDisplayName(TextStyle.NARROW, Locale.getDefault()),
+                // Two letters, so that no two days of a week look the same.
+                label = day.date.dayOfWeek.getDisplayName(TextStyle.SHORT, Locale.getDefault()).take(2),
                 completed = day.completed,
-                today = index == week.lastIndex,
+                today = day.today,
+                upcoming = day.upcoming,
             )
         },
         description = pluralStringResource(R.plurals.home_streak, streak, streak) + ". " +
-            pluralStringResource(R.plurals.home_week, completed, completed, week.size),
+            pluralStringResource(R.plurals.home_week, completed, completed),
     )
 }
 
-/** The Daily Set the Learner is at: its number in its Unit, how far through the Unit that is, and what it teaches. */
+/**
+ * The Daily Set the Learner is at, named by its topic as on the Path: the title of its first Tip.
+ * Under it its Unit and its number in the Unit, how far through the Unit that is, and what else it teaches.
+ */
 @Composable
 private fun NextDailySet(
     next: NextDailySetView?,
@@ -162,20 +164,22 @@ private fun NextDailySet(
     if (next == null) return
     val completed = next.numberInUnit - 1
     TodayCard(
-        title = stringResource(R.string.home_daily_set, next.numberInUnit, next.dailySetsInUnit),
+        // A Daily Set with no Tip has no topic, so its number stands in for one.
+        title = next.teaches.firstOrNull() ?: stringResource(R.string.home_daily_set, next.numberInUnit),
         label = stringResource(label),
         highlighted = highlighted,
     ) {
         Spacer(Modifier.height(Space.xxs))
         UnitProgress(
-            unit = stringResource(R.string.path_unit, next.unitNumber, next.unitTitle),
+            unit = stringResource(R.string.home_unit_place, next.unitNumber, next.unitTitle, next.numberInUnit, next.dailySetsInUnit),
             completed = completed,
             dailySets = next.dailySetsInUnit,
             description = stringResource(R.string.home_unit_progress, completed, next.dailySetsInUnit),
         )
-        if (next.teaches.isNotEmpty()) {
+        val alsoTeaches = next.teaches.drop(1)
+        if (alsoTeaches.isNotEmpty()) {
             Spacer(Modifier.height(Space.m))
-            Teaches(stringResource(R.string.home_teaches), next.teaches)
+            Teaches(stringResource(R.string.home_teaches), alsoTeaches)
         }
         action()
     }

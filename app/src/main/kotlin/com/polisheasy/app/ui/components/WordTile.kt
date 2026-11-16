@@ -39,6 +39,7 @@ import com.polisheasy.app.ui.theme.Corner
 import com.polisheasy.app.ui.theme.Edge
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
+import androidx.compose.ui.draw.drawBehind
 
 /** The height a row of word tiles takes, bottom edge included. */
 val WordTileHeight: Dp = Size.tile + Edge.depth - Edge.border
@@ -67,6 +68,7 @@ fun EmptyTileSlot(word: String, modifier: Modifier = Modifier) {
         modifier = modifier
             .padding(bottom = Edge.depth - Edge.border)
             .background(MaterialTheme.colorScheme.surfaceContainerHigh, MaterialTheme.shapes.small)
+            .dashedOutline(Corner.small)
             .clearAndSetSemantics { },
     ) {
         TileWord(word, Modifier.alpha(0f))
@@ -91,8 +93,8 @@ private fun TileWord(word: String, modifier: Modifier) {
 }
 
 /**
- * The two halves of a word tiles Exercise: the answer being built, and below a line the bank of
- * [words]. [placed] is the bank positions of the tiles in the answer, in order. A tile travels
+ * The two halves of a word tiles Exercise: the answer being built, on ruled lines that show where
+ * the tiles go, and below it the bank of [words]. [placed] is the bank positions of the tiles in the answer, in order. A tile travels
  * between its slot in the bank and its place in the answer, and its slot stays behind, so the bank
  * never shifts. [answerDescription] is what a screen reader calls the answer.
  */
@@ -111,16 +113,26 @@ fun WordTileBoard(
     // Where each tile last sat in the bank and in the answer, so it can set off from there.
     val inBank = remember { mutableMapOf<Int, Offset>() }
     val inAnswer = remember { mutableMapOf<Int, Offset>() }
+    val rule = MaterialTheme.colorScheme.outlineVariant
     Column(modifier = modifier) {
         // Tall enough for two rows of tiles from the start, so the bank below does not jump as tiles move.
         FlowRow(
             modifier = Modifier
                 .fillMaxWidth()
-                .heightIn(min = WordTileHeight * 2 + Space.xs)
+                .heightIn(min = (WordTileHeight + Space.s) * 2)
                 .zIndex(1f)
+                // One ruled line under each row of the answer, there before the first tile is.
+                .drawBehind {
+                    val row = (WordTileHeight + Space.s).toPx()
+                    var y = row - Edge.border.toPx() / 2
+                    while (y <= size.height) {
+                        drawLine(rule, Offset(0f, y), Offset(size.width, y), Edge.border.toPx())
+                        y += row
+                    }
+                }
                 .semantics { contentDescription = answerDescription },
             horizontalArrangement = Arrangement.spacedBy(Space.xs),
-            verticalArrangement = Arrangement.spacedBy(Space.xs),
+            verticalArrangement = Arrangement.spacedBy(Space.s),
         ) {
             placed.forEach { tile ->
                 key(tile) {
@@ -130,8 +142,6 @@ fun WordTileBoard(
                 }
             }
         }
-        Spacer(Modifier.height(Space.xs))
-        HorizontalDivider()
         Spacer(Modifier.height(Space.l))
         FlowRow(
             modifier = Modifier.fillMaxWidth(),

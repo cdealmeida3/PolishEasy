@@ -98,8 +98,8 @@ internal val DarkColorScheme: ColorScheme = darkColorScheme(
 )
 
 /**
- * The roles Material has none for: the main button's fill, a right answer, a wrong answer and the
- * Streak. Read through [PolishEasyTheme.colors][com.polisheasy.app.ui.PolishEasyTheme].
+ * The roles Material has none for: the main button's fill, a right answer, a wrong answer, the
+ * Streak and a completed stop on the Path. Read through [PolishEasyTheme.colors][com.polisheasy.app.ui.PolishEasyTheme].
  */
 @Immutable
 data class PolishEasyColors(
@@ -117,6 +117,8 @@ data class PolishEasyColors(
     val cautionContainer: Color,
     val onCautionContainer: Color,
     val streak: Color,
+    val completed: Color,
+    val completedEdge: Color,
 )
 
 internal val LightPolishEasyColors = PolishEasyColors(
@@ -134,6 +136,8 @@ internal val LightPolishEasyColors = PolishEasyColors(
     cautionContainer = Color(0xFFFFE3B3),
     onCautionContainer = Color(0xFF3A2200),
     streak = FlameLight,
+    completed = Color(0xFF17733A),
+    completedEdge = Color(0xFF0E5428),
 )
 
 internal val DarkPolishEasyColors = PolishEasyColors(
@@ -151,6 +155,8 @@ internal val DarkPolishEasyColors = PolishEasyColors(
     cautionContainer = Color(0xFF4A2C00),
     onCautionContainer = Color(0xFFFFE3B3),
     streak = FlameDark,
+    completed = Color(0xFF3FA65C),
+    completedEdge = Color(0xFF2B7A42),
 )
 
 internal val LocalPolishEasyColors = staticCompositionLocalOf { LightPolishEasyColors }

@@ -199,11 +199,11 @@ class CourseEngine(
     fun streak(): Int = streakOn(LocalDate.now(clock), completionDays())
 
     /**
-     * The last seven calendar days, oldest first and ending today, each with whether a new or
-     * Review-only Daily Set was completed on it. Like the [streak], it is worked out from the saved
-     * completion days and nothing else, so a Replay cannot change it.
+     * The calendar week today is in, Monday to Sunday as a Polish calendar shows it, each day with
+     * whether a new or Review-only Daily Set was completed on it. Like the [streak], it is worked
+     * out from the saved completion days and nothing else, so a Replay cannot change it.
      */
-    fun lastSevenDays(): List<DayView> = daysEnding(LocalDate.now(clock), completionDays(), days = 7)
+    fun thisWeek(): List<DayView> = weekOf(LocalDate.now(clock), completionDays())
 
     /** Every calendar day on which a new or Review-only Daily Set was completed. */
     private fun completionDays(): Set<LocalDate> = progress.completedDailySets().values.toSet() + progress.reviewOnlyDays()
@@ -570,6 +570,26 @@ class CourseEngine(
         // What was spoken, whichever spelling was matched.
         is ListenChoose -> course.clipFor(exercise.text)
         is ListenType -> course.clipFor(exercise.acceptedAnswers.first())
+    }
+
+    /**
+     * The other side of the answer to the Exercise being shown: what the answer means when it is
+     * Polish, or the Polish it is the meaning of. Shown with the feedback on a right answer, as one
+     * more look at the pair. Null when no Exercise is being shown or it has nothing to add.
+     */
+    fun answerGloss(): String? {
+        val exerciseId = playing?.state?.remaining?.firstOrNull() ?: return null
+        return glossOf(course.exercises.getValue(exerciseId))
+    }
+
+    private fun glossOf(exercise: Exercise): String? = when (exercise) {
+        is ChooseTranslation -> exercise.prompt
+        is TypeAnswer -> localize(exercise.prompt)
+        is WordTiles -> localize(exercise.prompt)
+        // A form alone has no meaning to show; in a sentence it has the sentence's.
+        is Conjugation -> exercise.sentenceMeaning?.let(::localize)
+        is ListenChoose -> localize(exercise.meaning)
+        is ListenType -> localize(exercise.meaning)
     }
 
     private fun localize(text: Localized): String = text.getValue(baseLanguage)

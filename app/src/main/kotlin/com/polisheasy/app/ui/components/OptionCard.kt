@@ -23,6 +23,7 @@ import com.polisheasy.app.ui.theme.Edge
 import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
+import com.polisheasy.app.ui.theme.Scaled
 
 /** What an [OptionCard] is showing. Each state has an icon or a border as well as a colour. */
 enum class OptionState {
@@ -93,7 +94,7 @@ private fun StateIcon(drawable: Int, tint: Color) {
         contentDescription = null,
         tint = tint,
         modifier = Modifier
-            .size(Size.icon)
+            .size(Scaled.icon())
             .appearing(),
     )
 }

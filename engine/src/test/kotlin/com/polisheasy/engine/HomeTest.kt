@@ -6,7 +6,7 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNull
 
-/** What Home shows beside [Today] and the Streak: the last seven days, and where the Learner is on the Path. */
+/** What Home shows beside [Today] and the Streak: this week's days, and where the Learner is on the Path. */
 class HomeTest {
     private val items = listOf(item("a"), item("b"), item("c"), item("d"), item("e"))
     private val d1 = day("d1", choose("d1-e1", "one", "a"), choose("d1-e2", "two", "b"))
@@ -29,10 +29,13 @@ class HomeTest {
     private fun completed(days: List<DayView>): List<Int> = days.filter { it.completed }.map { it.date.dayOfMonth }
 
     @Test
-    fun `a new Learner's last seven days end today, oldest first, and none is completed`() {
-        val days = newLearnerEngine().lastSevenDays()
+    fun `a new Learner's week runs Monday to Sunday with today marked, the rest still to come and none completed`() {
+        // The fixed day the tests start on, 2 March 2026, is a Monday.
+        val days = newLearnerEngine().thisWeek()
 
-        assertEquals((6L downTo 0L).map { march(2).minusDays(it) }, days.map { it.date })
+        assertEquals((0L..6L).map { march(2).plusDays(it) }, days.map { it.date })
+        assertEquals(listOf(march(2)), days.filter { it.today }.map { it.date })
+        assertEquals((3..8).map(::march), days.filter { it.upcoming }.map { it.date })
         assertEquals(emptyList(), completed(days))
     }
 
@@ -42,36 +45,40 @@ class HomeTest {
         val engine = learner.openApp()
 
         engine.play(engine.startDailySet(), listOf(right.getValue("cześć")))
-        assertEquals(emptyList(), completed(engine.lastSevenDays()))
+        assertEquals(emptyList(), completed(engine.thisWeek()))
 
         engine.playToSummary(engine.next())
-        assertEquals(listOf(2), completed(engine.lastSevenDays()))
-        assertEquals(listOf(2), completed(learner.openApp().lastSevenDays()))
+        assertEquals(listOf(2), completed(engine.thisWeek()))
+        assertEquals(listOf(2), completed(learner.openApp().thisWeek()))
     }
 
     @Test
-    fun `a missed day stays empty between the days that were completed`() {
+    fun `a missed day stays empty between the days that were completed, and is not a day to come`() {
         val learner = learner()
         learner.playDay(march(2))
         learner.playDay(march(4))
 
         learner.clock.moveTo(march(5))
-        val days = learner.openApp().lastSevenDays()
-        assertEquals(march(5), days.last().date)
+        val days = learner.openApp().thisWeek()
+        assertEquals(march(5), days.single { it.today }.date)
         assertEquals(listOf(2, 4), completed(days))
+        assertEquals(listOf(6, 7, 8), days.filter { it.upcoming }.map { it.date.dayOfMonth })
     }
 
     @Test
-    fun `a day leaves the last seven once it is a week old, and the days turn over at midnight`() {
+    fun `the week stays the same through Sunday and a new one starts at midnight on Monday`() {
         val learner = learner()
         learner.playDay(march(2))
 
         learner.clock.moveTo(march(8), LocalTime.of(23, 59))
-        assertEquals(listOf(2), completed(learner.openApp().lastSevenDays()))
+        val sunday = learner.openApp().thisWeek()
+        assertEquals(listOf(2), completed(sunday))
+        assertEquals(march(8), sunday.last().date)
+        assertEquals(emptyList(), sunday.filter { it.upcoming })
 
         learner.clock.moveTo(march(9), LocalTime.MIDNIGHT)
-        val days = learner.openApp().lastSevenDays()
-        assertEquals(march(3), days.first().date)
+        val days = learner.openApp().thisWeek()
+        assertEquals(march(9), days.first().date)
         assertEquals(emptyList(), completed(days))
     }
 
@@ -85,16 +92,19 @@ class HomeTest {
         val engine = learner.openApp()
         learner.play(engine, engine.startReplay("d1"))
 
-        assertEquals(listOf(2, 3, 4, 5, 6), completed(engine.lastSevenDays()))
+        assertEquals(listOf(2, 3, 4, 5, 6), completed(engine.thisWeek()))
     }
 
     @Test
-    fun `the last seven days run across the end of a month`() {
+    fun `the week runs across the end of a month`() {
         val progress = InMemoryLearnerProgress()
         progress.recordReviewOnlyCompleted(on = LocalDate.of(2026, 2, 27))
 
-        val days = ItemLearner(course, progress).openApp().lastSevenDays()
-        assertEquals(LocalDate.of(2026, 2, 24), days.first().date)
+        val learner = ItemLearner(course, progress)
+        learner.clock.moveTo(LocalDate.of(2026, 2, 28))
+        val days = learner.openApp().thisWeek()
+        assertEquals(LocalDate.of(2026, 2, 23), days.first().date)
+        assertEquals(march(1), days.last().date)
         assertEquals(listOf(27), completed(days))
     }
 

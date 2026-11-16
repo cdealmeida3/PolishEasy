@@ -1,9 +1,15 @@
 package com.polisheasy.engine
 
 import java.time.LocalDate
+import java.time.DayOfWeek
+import java.time.temporal.TemporalAdjusters
 
-/** One calendar day as Home shows it. [completed] when a new or Review-only Daily Set was completed on it. */
-data class DayView(val date: LocalDate, val completed: Boolean)
+/**
+ * One calendar day as Home shows it. [completed] when a new or Review-only Daily Set was completed
+ * on it. [today] for the day it is now, and [upcoming] for a day still to come, which is never a
+ * day missed.
+ */
+data class DayView(val date: LocalDate, val completed: Boolean, val today: Boolean = false, val upcoming: Boolean = false)
 
 /**
  * Where the Learner is on the Path: the first Daily Set not yet completed, whether it can be
@@ -19,6 +25,10 @@ data class NextDailySetView(
     val teaches: List<String> = emptyList(),
 )
 
-/** The [days] calendar days ending [today], oldest first, each with whether it is among [completionDays]. */
-internal fun daysEnding(today: LocalDate, completionDays: Set<LocalDate>, days: Int): List<DayView> =
-    (days - 1 downTo 0).map { ago -> today.minusDays(ago.toLong()).let { DayView(it, it in completionDays) } }
+/** The calendar week [today] is in, Monday to Sunday, each day with whether it is among [completionDays]. */
+internal fun weekOf(today: LocalDate, completionDays: Set<LocalDate>): List<DayView> {
+    val monday = today.with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY))
+    return (0L..6L).map { monday.plusDays(it) }.map { day ->
+        DayView(day, completed = day in completionDays, today = day == today, upcoming = day > today)
+    }
+}
