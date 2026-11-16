@@ -9,6 +9,10 @@
       "text": "a ty?"
     },
     {
+      "id": "a-ty-jak-masz-na-imie",
+      "text": "a ty jak masz na imię?"
+    },
+    {
       "id": "adam",
       "text": "Adam"
     },
@@ -445,10 +449,6 @@
       "text": "miło mi"
     },
     {
-      "id": "milo-mi-a-ty",
-      "text": "miło mi, a ty?"
-    },
-    {
       "id": "milo-mi-cie-poznac",
       "text": "miło mi cię poznać"
     },
@@ -761,6 +761,14 @@
       "text": "są"
     },
     {
+      "id": "sa-tu",
+      "text": "są tu"
+    },
+    {
+      "id": "sa-tutaj",
+      "text": "są tutaj"
+    },
+    {
       "id": "skad",
       "text": "skąd"
     },
@@ -821,6 +829,10 @@
       "text": "też jestem z Anglii"
     },
     {
+      "id": "tez-maja-problem",
+      "text": "też mają problem"
+    },
+    {
       "id": "to",
       "text": "to"
     },
@@ -829,12 +841,20 @@
       "text": "to Adam"
     },
     {
+      "id": "to-adam-jest-z-polski",
+      "text": "to Adam, jest z Polski"
+    },
+    {
       "id": "to-adam-on-jest-z-polski",
       "text": "to Adam, on jest z Polski"
     },
     {
       "id": "to-jest-adam",
       "text": "to jest Adam"
+    },
+    {
+      "id": "to-jest-adam-jest-z-polski",
+      "text": "to jest Adam, jest z Polski"
     },
     {
       "id": "to-jest-adam-on-jest-z-polski",
@@ -849,12 +869,20 @@
       "text": "trochę mówię po polsku"
     },
     {
+      "id": "tu-sa",
+      "text": "tu są"
+    },
+    {
       "id": "tutaj",
       "text": "tutaj"
     },
     {
       "id": "tutaj-jestem",
       "text": "tutaj jestem"
+    },
+    {
+      "id": "tutaj-sa",
+      "text": "tutaj są"
     },
     {
       "id": "ty",

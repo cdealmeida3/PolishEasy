@@ -16,7 +16,7 @@
       "id": "a1-u02-d08-t02",
       "before": "a1-u02-d08-e07",
       "title": { "en": "Polakiem, Polką" },
-      "body": { "en": "After jestem, jesteś and jest, the word for what someone is takes a special ending. A man says jestem Polakiem or jestem Anglikiem, a woman jestem Polką or jestem Angielką. Unit 4 explains this ending. If your country is not here, jestem z… always works." }
+      "body": { "en": "After jestem, jesteś and jest, the word for what someone is takes a special ending. A man says jestem Polakiem or jestem Anglikiem, a woman jestem Polką or jestem Angielką. Unit 4 explains this ending; a name does not change (jestem Adam). If your country is not here, jestem z… always works." }
     }
   ],
   "exercises": [
@@ -168,7 +168,7 @@
     {
       "type": "word_tiles",
       "id": "a1-u02-d08-e15",
-      "prompt": { "en": "hi, my name is Ewa" },
+      "prompt": { "en": "hi, my first name is Ewa" },
       "acceptedAnswers": ["cześć, mam na imię Ewa"],
       "distractors": ["Adam", "masz"],
       "items": ["czesc", "miec-mam", "na-imie", "ewa"]
@@ -192,10 +192,10 @@
     {
       "type": "word_tiles",
       "id": "a1-u02-d08-e18",
-      "prompt": { "en": "nice to meet you, and you?" },
-      "acceptedAnswers": ["miło mi, a ty?"],
-      "distractors": ["tak", "nie"],
-      "items": ["milo-mi", "a-ty"]
+      "prompt": { "en": "and you, what is your first name? (one friend)" },
+      "acceptedAnswers": ["a ty jak masz na imię?"],
+      "distractors": ["ma", "tak"],
+      "items": ["a-ty", "jak", "miec-masz", "na-imie"]
     }
   ]
 }

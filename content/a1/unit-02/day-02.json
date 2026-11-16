@@ -16,7 +16,7 @@
       "id": "a1-u02-d02-t02",
       "before": "a1-u02-d02-e08",
       "title": { "en": "Where from" },
-      "body": { "en": "Skąd asks \"where from\", and the answer is z with the country: z Polski, z Anglii. The country's ending changes after z, so for now learn yours as a whole: z Irlandii, z Kanady, z Australii, z Brazylii, z Niemiec (from Germany)." }
+      "body": { "en": "Skąd asks \"where from\", and the answer is z with the country: z Polski, z Anglii. The country's ending changes after z, so for now learn yours as a whole: z Irlandii, z Kanady, z Australii, z Brazylii, z Niemiec (from Germany), z USA, ze Szkocji (from Scotland: z becomes ze before some groups of consonants)." }
     }
   ],
   "exercises": [
@@ -131,7 +131,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d02-e11",
       "text": "z Polski",
-      "distractors": ["z Anglii", "po polsku"],
+      "distractors": ["z Anglii", "tutaj"],
       "items": ["z-polski"]
     },
     {
@@ -176,7 +176,7 @@
       "type": "word_tiles",
       "id": "a1-u02-d02-e16",
       "prompt": { "en": "this is Adam, he is from Poland" },
-      "acceptedAnswers": ["to jest Adam, on jest z Polski", "to Adam, on jest z Polski"],
+      "acceptedAnswers": ["to jest Adam, on jest z Polski", "to Adam, on jest z Polski", "to jest Adam, jest z Polski", "to Adam, jest z Polski"],
       "distractors": ["Ewa", "ona"],
       "items": ["to", "byc-jest", "adam", "on", "z-polski"]
     },

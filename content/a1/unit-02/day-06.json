@@ -112,7 +112,7 @@
       "type": "word_tiles",
       "id": "a1-u02-d06-e09",
       "prompt": { "en": "they (men, or men and women) have a problem too" },
-      "acceptedAnswers": ["oni też mają problem"],
+      "acceptedAnswers": ["oni też mają problem", "też mają problem"],
       "distractors": ["one", "ma"],
       "items": ["oni", "tez", "miec-maja", "problem"]
     },
@@ -158,7 +158,7 @@
     {
       "type": "word_tiles",
       "id": "a1-u02-d06-e14",
-      "prompt": { "en": "hi, what is your name?" },
+      "prompt": { "en": "hi, what is your name? (one friend)" },
       "acceptedAnswers": ["cześć, jak się nazywasz?"],
       "distractors": ["masz", "pan"],
       "items": ["czesc", "jak-sie-nazywasz"]

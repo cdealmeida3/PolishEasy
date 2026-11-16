@@ -98,7 +98,7 @@
     {
       "type": "word_tiles",
       "id": "a1-u02-d05-e08",
-      "prompt": { "en": "my name is Ewa" },
+      "prompt": { "en": "my first name is Ewa" },
       "acceptedAnswers": ["mam na imię Ewa"],
       "distractors": ["Adam", "masz"],
       "items": ["miec-mam", "na-imie", "ewa"]
@@ -118,7 +118,7 @@
     {
       "type": "word_tiles",
       "id": "a1-u02-d05-e10",
-      "prompt": { "en": "what is your name? (one friend)" },
+      "prompt": { "en": "what is your first name? (one friend)" },
       "acceptedAnswers": ["jak masz na imię?"],
       "distractors": ["ma", "czy"],
       "items": ["jak", "miec-masz", "na-imie"]

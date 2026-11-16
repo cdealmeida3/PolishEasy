@@ -170,7 +170,7 @@
     {
       "type": "word_tiles",
       "id": "a1-u02-d01-e16",
-      "prompt": { "en": "hi, I am Ewa, and you?" },
+      "prompt": { "en": "hi, I am Ewa, and you? (one friend)" },
       "acceptedAnswers": ["cześć, jestem Ewa, a ty?"],
       "distractors": ["Adam", "tak"],
       "items": ["czesc", "byc-jestem", "ewa", "a-ty"]
