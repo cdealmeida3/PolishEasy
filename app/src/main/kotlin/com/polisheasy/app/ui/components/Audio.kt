@@ -1,5 +1,9 @@
 package com.polisheasy.app.ui.components
 
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -13,19 +17,40 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
 import com.polisheasy.app.R
 import com.polisheasy.app.ui.PolishEasyTheme
+import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.app.ui.theme.Size
 
-/** The big round button of a listening Exercise. [description] is what a screen reader says. */
+/**
+ * The big round button of a listening Exercise. [description] is what a screen reader says. While
+ * [playing] it pulses slowly, the one thing in the app that moves without being touched.
+ */
 @Composable
-fun PlayButton(description: String, onClick: () -> Unit, modifier: Modifier = Modifier) {
+fun PlayButton(description: String, onClick: () -> Unit, modifier: Modifier = Modifier, playing: Boolean = false) {
+    val pulse = Motion.pulse()
+    val scale = if (playing && pulse != null) {
+        rememberInfiniteTransition(label = "Clip playing").animateFloat(
+            initialValue = 1f,
+            targetValue = Motion.PULSE_SCALE,
+            animationSpec = infiniteRepeatable(pulse, RepeatMode.Reverse),
+            label = "Pulse",
+        )
+    } else {
+        null
+    }
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
             .size(Size.playButton)
+            .graphicsLayer {
+                val now = scale?.value ?: 1f
+                scaleX = now
+                scaleY = now
+            }
             .clip(CircleShape)
             .background(PolishEasyTheme.colors.brand)
             .clickable(role = Role.Button, onClick = onClick),

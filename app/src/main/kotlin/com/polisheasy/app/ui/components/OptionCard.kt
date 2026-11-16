@@ -64,6 +64,7 @@ fun OptionCard(text: String, state: OptionState, onClick: () -> Unit, modifier: 
         contentAlignment = Alignment.CenterStart,
         modifier = modifier
             .fillMaxWidth()
+            .shaking(state == OptionState.Wrong)
             .alpha(if (state == OptionState.Faded) Motion.FADED_ALPHA else 1f),
     ) {
         Row(
@@ -87,5 +88,12 @@ fun OptionCard(text: String, state: OptionState, onClick: () -> Unit, modifier: 
 @Composable
 private fun StateIcon(drawable: Int, tint: Color) {
     Spacer(Modifier.width(Space.s))
-    Icon(painterResource(drawable), contentDescription = null, tint = tint, modifier = Modifier.size(Size.icon))
+    Icon(
+        painterResource(drawable),
+        contentDescription = null,
+        tint = tint,
+        modifier = Modifier
+            .size(Size.icon)
+            .appearing(),
+    )
 }

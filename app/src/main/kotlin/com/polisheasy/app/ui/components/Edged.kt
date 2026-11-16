@@ -1,5 +1,6 @@
 package com.polisheasy.app.ui.components
 
+import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -9,6 +10,7 @@ import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -18,6 +20,7 @@ import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -99,3 +102,26 @@ internal fun Edged(
         content = content,
     )
 }
+
+/** A tick or a cross arriving: it grows to its size with a little bounce, once. */
+@Composable
+internal fun Modifier.appearing(): Modifier {
+    val spec = Motion.mark()
+    val scale = remember { Animatable(Motion.MARK_FROM_SCALE) }
+    LaunchedEffect(Unit) { scale.animateTo(1f, spec) }
+    return graphicsLayer {
+        scaleX = scale.value
+        scaleY = scale.value
+    }
+}
+
+/** One short side-to-side shake when [shaken] becomes true. Nothing moves when animations are removed. */
+@Composable
+internal fun Modifier.shaking(shaken: Boolean): Modifier {
+    val spec = Motion.shake()
+    val share = remember { Animatable(0f) }
+    LaunchedEffect(shaken) { if (shaken && spec != null) share.animateTo(0f, spec) }
+    return graphicsLayer { translationX = share.value * ShakeDistance.toPx() }
+}
+
+private val ShakeDistance = 8.dp

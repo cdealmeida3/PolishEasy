@@ -9,7 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.polisheasy.app.R
 import com.polisheasy.app.ui.components.ConjugationTable
-import com.polisheasy.app.ui.components.DailySetFrame
+import com.polisheasy.app.ui.components.DailySetStep
 import com.polisheasy.app.ui.components.Instruction
 import com.polisheasy.app.ui.components.PrimaryButton
 import com.polisheasy.app.ui.theme.Space
@@ -17,10 +17,8 @@ import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.TipView
 
 @Composable
-internal fun TipScreen(tip: TipView, progress: SetProgress, onContinue: () -> Unit) {
-    DailySetFrame(
-        progress = progress.fraction,
-        progressDescription = progress.description(),
+internal fun TipScreen(tip: TipView, onContinue: () -> Unit) {
+    DailySetStep(
         action = { PrimaryButton(stringResource(R.string.action_continue), onContinue) },
     ) {
         Instruction(stringResource(R.string.tip_label), highlighted = true)
