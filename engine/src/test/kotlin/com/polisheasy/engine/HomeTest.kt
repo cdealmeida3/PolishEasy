@@ -175,4 +175,64 @@ class HomeTest {
 
         assertEquals(NextDailySetView(1, "Greetings", numberInUnit = 2, dailySetsInUnit = 2), engine.nextDailySet())
     }
+
+    @Test
+    fun `days before the Learner's first completed day are never days missed`() {
+        val learner = learner()
+        learner.clock.moveTo(march(4))
+        val before = learner.openApp().thisWeek()
+        assertEquals(listOf(2, 3), before.filter { it.beforeStart }.map { it.date.dayOfMonth })
+
+        learner.playDay(march(4))
+        learner.clock.moveTo(march(6))
+        val days = learner.openApp().thisWeek()
+        assertEquals(listOf(2, 3), days.filter { it.beforeStart }.map { it.date.dayOfMonth })
+        // Thursday the 5th came after the first day and had no Daily Set: that one was missed.
+        assertEquals(listOf(5), days.filter { !it.completed && !it.today && !it.upcoming && !it.beforeStart }.map { it.date.dayOfMonth })
+
+        learner.clock.moveTo(march(9))
+        assertEquals(emptyList(), learner.openApp().thisWeek().filter { it.beforeStart })
+    }
+
+    @Test
+    fun `what the Learner has built up so far counts words, Daily Sets and the longest Streak, and a Replay adds nothing`() {
+        val learner = learner()
+        assertEquals(SoFarView(wordsLearned = 0, dailySetsCompleted = 0, longestStreak = 0), learner.openApp().soFar())
+
+        learner.playDay(march(2))
+        learner.playDay(march(3))
+        assertEquals(SoFarView(wordsLearned = 3, dailySetsCompleted = 2, longestStreak = 2), learner.openApp().soFar())
+
+        // A day missed: the Streak starts again, and the longest one stays.
+        learner.playDay(march(5))
+        val engine = learner.openApp()
+        assertEquals(1, engine.streak())
+        assertEquals(SoFarView(wordsLearned = 4, dailySetsCompleted = 3, longestStreak = 2), engine.soFar())
+
+        learner.play(engine, engine.startReplay("d1"))
+        assertEquals(SoFarView(wordsLearned = 4, dailySetsCompleted = 3, longestStreak = 2), engine.soFar())
+    }
+
+    @Test
+    fun `a Review-only Daily Set counts as a Daily Set and teaches no new word`() {
+        val learner = learner()
+        (2..6).forEach { learner.playDay(march(it)) }
+
+        assertEquals(SoFarView(wordsLearned = 5, dailySetsCompleted = 5, longestStreak = 5), learner.openApp().soFar())
+    }
+
+    @Test
+    fun `the Daily Set completed today can be replayed from Home, and a Review-only one or yesterday's cannot`() {
+        val learner = learner()
+        assertNull(learner.openApp().completedToday())
+
+        learner.playDay(march(2))
+        assertEquals("d1", learner.openApp().completedToday())
+
+        learner.clock.moveTo(march(3))
+        assertNull(learner.openApp().completedToday())
+
+        (3..6).forEach { learner.playDay(march(it)) }
+        assertNull(learner.openApp().completedToday())
+    }
 }

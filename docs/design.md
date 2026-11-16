@@ -115,7 +115,7 @@ Two families. **Nunito** (SIL Open Font Licence, covers every Polish letter) is 
 
 | Style | Family | Weight | Size / line (sp) | Used for |
 | --- | --- | --- | --- | --- |
-| `displayLarge` | Nunito | ExtraBold 800 | 57 / 64 | The Streak number on the Summary |
+| `displayLarge` | Nunito | ExtraBold 800 | 57 / 64 | The Streak number on the Summary, "Cześć!" on the welcome |
 | `displayMedium` | Nunito | ExtraBold 800 | 45 / 52 | The Streak number on Home |
 | `displaySmall` | Nunito | ExtraBold 800 | 36 / 44 | A Polish prompt of a word or two, up to 12 letters, the Summary's cheer |
 | `headlineLarge` | Nunito | ExtraBold 800 | 32 / 40 | A Polish prompt of 13 to 20 letters, Home's greeting |
@@ -198,12 +198,15 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`PlayButton`**: 72 across in `brand` with the speaker icon in `onBrand`, for listening Exercises. A circle at rest and a rounded square with `large` corners while a Clip plays. **`SpeakerButton`**, the small speaker beside Polish text, is a 40 circle in `primaryContainer` with the icon in `onPrimaryContainer`, inside a 48 touch area, so it reads as a button; it grows with the font size. On the feedback panel it has no field and takes the panel's accent.
 - **`TopBar`**: Path and Settings have a `headlineSmall` title, and the Path a `bodyLarge` line under it in `onSurfaceVariant`. Home has a greeting in its place (see Home). Inside a Daily Set it is the close button and the progress bar only.
 - **`NavigationFrame`**, the navigation bar: Home, Path, Settings, with icons and `labelSmall` labels, on `surfaceContainer`. The selected one has a `primaryContainer` pill behind a `primary` icon and its label in `onSurface`; the others are `onSurfaceVariant`. Hidden inside a Daily Set and on the Summary. Back from the Path or Settings goes to Home. Moving between tabs is a fade-through; the pill moves as Material's own navigation bar moves it.
-- **`StreakWeekCard`**: the Streak on Home. A `ContentCard` with the Streak flame at 48 and the number in `displayMedium`, "day Streak" in `titleLarge` and a line in `bodyMedium` saying what today's Daily Set would do for it. Under them this calendar week, Monday to Sunday, as 32 dots with two letters of the weekday below each: a completed day is `streak` with a tick, a day that passed without one is `surfaceContainerHigh` with a dashed `outline` line, today has a 2 dp `streak` ring until it is completed and its letters in `titleSmall`, and a day still to come is a small 12 dot, never drawn as missed. At a large font size the words go under the flame and the number. A screen reader hears the card as one sentence.
+- **`StreakWeekCard`**: the Streak on Home. A `ContentCard` with the Streak flame at 48 and the number in `displayMedium`, "day Streak" in `titleLarge` and a line in `bodyMedium` saying what today's Daily Set would do for it. Under them this calendar week, Monday to Sunday, as 32 dots with two letters of the weekday below each: a completed day is `streak` with a tick, a day that passed without one is `surfaceContainerHigh` with a dashed `outline` line, today has a 2 dp `streak` ring until it is completed and its letters in `titleSmall`, and a day still to come is a small 12 dot, never drawn as missed; nor is a day before the Learner's first completed one, which is drawn the same way. At a large font size the words go under the flame and the number. A screen reader hears the card as one sentence.
 - **`TodayCard`**: what today holds, on Home. A `ContentCard` with a small label in `titleSmall` ("Today" in `primary` on the card with the main action, "Up next" in `onSurfaceVariant`), a `headlineSmall` title, and below it what the state needs: `UnitProgress`, `Teaches`, a `CardNote`, the `PrimaryButton`. Done states have no label and put the `success` tick beside the title.
 - **`UnitProgress`**: the Unit's name in `bodyMedium`, and under it `ProgressSegments`: one 12 high segment for each of the Unit's Daily Sets, `brand` when completed, `primaryContainer` with a 2 dp `brand` border for the one the card is about, `surfaceContainerHigh` for the rest.
 - **`Teaches`**: "Also today" as an `Instruction`, then one `bodyLarge` line for each of the Daily Set's Tip titles after the first, which is the card's title, with an 8 dot in `primary`.
 - **`ContentCard`**: `surfaceContainerLowest`, `large` corners, 1 dp `outlineVariant` border, 16 padding, no shadow.
 - **`StreakHero`**: the Streak going up, the hero of the Summary of the Daily Set that raised it and nowhere else. A `ContentCard` with everything centred: the flame at 72 and the number in `displayLarge`, both in `streak`, then "day Streak" in `titleLarge`, a line in `bodyLarge` and the week's dots (`WeekRow`), with today's filling in. At 7, 30 and 100 days the line names the milestone and the confetti is doubled. A Replay never shows it.
+- **`StreakStartCard`**: the Streak before it has started, in place of the `StreakWeekCard` until a first Daily Set is completed. No number and no week: today's 2 dp `streak` ring at 48 with the flame at 24 inside it, "Start your Streak today" in `titleLarge` and how in `bodyMedium`. An empty history is never shown as a zero or as a row of empty days.
+- **`Point`**: one thing worth knowing on the welcome: an icon at 24 in a 48 `primaryContainer` circle, a title in `titleMedium` and a note in `bodyMedium`.
+- **`OfferCard`**: something offered once, where the Learner has a reason to want it. A `ContentCard` with an icon in `primary`, a title in `titleMedium`, a note in `bodyMedium` and a `SecondaryButton` under them. Once taken it loses the button and says what happened. The first Summary offers the Reminder with it ("Want a nudge tomorrow?", "Remind me"); no later Summary asks again.
 - **`StatTile`** and **`StatRow`**: a small fact with a number. A card with the number in `headlineSmall` and what it counts under it in `bodyMedium` in `onSurfaceVariant`, centred; tiles sit side by side, equally wide, 8 apart, and go one under the other at a large font size. A screen reader hears each as a sentence. The Summary has "5 of 6 · first try" and "7 · new words". The score is a fact here, never the hero: the Summary celebrates finishing, it does not grade.
 - **`ItemCard`**: one Item under "You learned": a `ContentCard` with the Polish in `titleMedium`, its meaning under it in `bodyMedium`, and at the end its `SpeakerButton` when it has a Clip.
 - **`WeekRow`**: the seven dots of the Streak's week, shared by Home and the Summary.
@@ -228,22 +231,28 @@ Icons are Material Symbols, rounded style, filled, 24 dp, kept as vector drawabl
 
 ## Home
 
-Home answers three things from the top down: hello, how the Streak stands, and what to do today.
+Home answers four things from the top down: hello, how the Streak stands, what to do today, and what has been built up so far.
 
 - **The greeting** is Polish, in `headlineLarge`: "Cześć", and "Do jutra" once today's Daily Set is done. Under it one `bodyLarge` line in `onSurfaceVariant` says the state in the Base Language.
-- **The `StreakWeekCard`**, 24 below the greeting.
+- **The `StreakWeekCard`**, 24 below the greeting. Until a first Daily Set is completed it is the `StreakStartCard`.
 - **The `TodayCard`**, 16 below that. Each state has its own:
 
 | State | Card |
 | --- | --- |
 | A Daily Set is ready | "Today", the Daily Set's topic as on the Path ("Czy and nie"), then "Unit 2 · About me · 4 of 8" over `UnitProgress`, `Teaches`, Start |
 | In progress | The same, with "N of M Exercises done" and Continue |
-| Done for today | The tick, "Done for today" and "Your next Daily Set unlocks tomorrow." Then an "Up next" card for the next Daily Set, with no button |
+| Done for today | The tick, "Done for today", "Your next Daily Set unlocks tomorrow." and a `QuietButton`, "Replay today's Daily Set", which counts for nothing and comes back to Home. Then an "Up next" card for the next Daily Set, with no button |
 | Review-only, ready or in progress | "Today", "Review", a note, Start or Continue |
 | Review-only, done | The tick, "Done for today" and "All caught up. Your next Review unlocks tomorrow." |
 | Nothing left and nothing to review | The tick and "Every Daily Set completed" |
 
 A Daily Set has one name and one number on every screen: its topic, the title of its first Tip, and its number in its Unit. The course-wide number is never shown. On screen a Review-only Daily Set is called a Review; the Glossary's term stays in the docs and the code.
+
+- **"Your Polish so far"**, 24 below the cards: a `StatRow` of three `StatTile`s, the words learned, the Daily Sets completed and the longest Streak. They only ever go up, and they are not there on day one, when all three would be zero.
+
+## The welcome
+
+A new Learner sees it once, before Home: "Cześć!" in `displayLarge` in `primary` with "hello" under it, "Polish, a little every day" in `headlineSmall`, three `Point`s (one Daily Set a day, about five minutes, the next one unlocks tomorrow) and one `PrimaryButton`, "Start my first Daily Set", which goes straight into it. There is nothing to choose and nothing to skip.
 
 Home scrolls if the font size makes it too tall. Nothing on it moves at rest. Coming back from the Summary of the Daily Set that raised the Streak, Home shows it happen once: the number rolls, today's dot fills in and the "Done for today" card arrives.
 
@@ -322,4 +331,4 @@ Rules:
 
 ## Not part of the look
 
-No mascot, character or illustration. No photographs or images in Exercises. No points, levels, leaderboards or Streak freezes: the celebration is for finishing a Daily Set and keeping the Streak, which are the rules the app already has.
+No mascot, character or illustration. No photographs or images in Exercises. No points, levels, leaderboards or Streak freezes. The counts under "Your Polish so far" are not points: they count what the Learner did, nothing is bought or unlocked with them, and they are never compared with anyone's. The celebration is for finishing a Daily Set and keeping the Streak, which are the rules the app already has.

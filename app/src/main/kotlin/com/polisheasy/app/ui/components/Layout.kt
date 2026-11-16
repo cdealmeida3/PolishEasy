@@ -39,6 +39,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.app.ui.theme.Scaled
+import androidx.annotation.DrawableRes
+import androidx.compose.foundation.background
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Icon
+import androidx.compose.ui.res.painterResource
 
 /** The title at the top of the Path and of Settings, with a quiet [note] under it if there is one. Home has none. */
 @Composable
@@ -135,6 +143,59 @@ fun StatRow(modifier: Modifier = Modifier, tiles: List<@Composable (Modifier) ->
     } else {
         Row(horizontalArrangement = Arrangement.spacedBy(Space.xs), modifier = modifier.fillMaxWidth().height(IntrinsicSize.Min)) {
             tiles.forEach { tile -> tile(Modifier.weight(1f).fillMaxHeight()) }
+        }
+    }
+}
+
+/**
+ * One thing worth knowing, as the welcome lists them: an [icon] in a soft circle, a short [title]
+ * and a [note] under it.
+ */
+@Composable
+fun Point(@DrawableRes icon: Int, title: String, note: String, modifier: Modifier = Modifier) {
+    val scheme = MaterialTheme.colorScheme
+    Row(verticalAlignment = Alignment.CenterVertically, modifier = modifier.fillMaxWidth().semantics(mergeDescendants = true) {}) {
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = Modifier.size(Size.touch).background(scheme.primaryContainer, CircleShape),
+        ) {
+            Icon(painterResource(icon), contentDescription = null, tint = scheme.onPrimaryContainer, modifier = Modifier.size(Size.icon))
+        }
+        Spacer(Modifier.width(Space.m))
+        Column(modifier = Modifier.weight(1f)) {
+            Text(title, style = MaterialTheme.typography.titleMedium, color = scheme.onSurface)
+            Text(note, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant)
+        }
+    }
+}
+
+/**
+ * Something offered once, where the Learner has a reason to want it, such as the Reminder at the
+ * end of a Daily Set: an [icon], a [title] and a [note], and under them the [action] that takes
+ * it. Without an [action] it only says what happened.
+ */
+@Composable
+fun OfferCard(
+    @DrawableRes icon: Int,
+    title: String,
+    note: String,
+    modifier: Modifier = Modifier,
+    action: String? = null,
+    onAction: () -> Unit = {},
+) {
+    val scheme = MaterialTheme.colorScheme
+    ContentCard(modifier = modifier) {
+        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.semantics(mergeDescendants = true) {}) {
+            Icon(painterResource(icon), contentDescription = null, tint = scheme.primary, modifier = Modifier.size(Size.icon))
+            Spacer(Modifier.width(Space.s))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(title, style = MaterialTheme.typography.titleMedium, color = scheme.onSurface)
+                Text(note, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant)
+            }
+        }
+        if (action != null) {
+            Spacer(Modifier.height(Space.s))
+            SecondaryButton(action, onAction)
         }
     }
 }

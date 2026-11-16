@@ -29,6 +29,51 @@
     <string name="home_review_only_in_progress">%1$d of %2$d Exercises done</string>
     <string name="home_done_review_only_next">All caught up. Your next Review unlocks tomorrow.</string>
     <string name="home_start">Start</string>
+    <string name="home_streak_start_title">Start your Streak today</string>
+    <string name="home_streak_start_note">Finish today\'s Daily Set to light it.</string>
+    <string name="home_replay_today">Replay today\'s Daily Set</string>
+    <string name="home_so_far">Your Polish so far</string>
+    <plurals name="home_so_far_words_label">
+        <item quantity="one">word</item>
+        <item quantity="other">words</item>
+    </plurals>
+    <plurals name="home_so_far_sets_label">
+        <item quantity="one">Daily Set</item>
+        <item quantity="other">Daily Sets</item>
+    </plurals>
+    <plurals name="home_so_far_streak_label">
+        <item quantity="one">longest Streak</item>
+        <item quantity="other">longest Streak</item>
+    </plurals>
+    <plurals name="home_so_far_words">
+        <item quantity="one">%1$d word learned</item>
+        <item quantity="other">%1$d words learned</item>
+    </plurals>
+    <plurals name="home_so_far_sets">
+        <item quantity="one">%1$d Daily Set completed</item>
+        <item quantity="other">%1$d Daily Sets completed</item>
+    </plurals>
+    <plurals name="home_so_far_streak">
+        <item quantity="one">Your longest Streak is %1$d day</item>
+        <item quantity="other">Your longest Streak is %1$d days</item>
+    </plurals>
+    <string name="welcome_greeting" translatable="false">Cześć!</string>
+    <string name="welcome_greeting_meaning">hello</string>
+    <string name="welcome_title">Polish, a little every day</string>
+    <string name="welcome_point_daily">One Daily Set a day</string>
+    <string name="welcome_point_daily_note">A short lesson, and then you\'re done for the day.</string>
+    <string name="welcome_point_minutes">About five minutes</string>
+    <string name="welcome_point_minutes_note">A few new words, a Tip and a quick Review.</string>
+    <string name="welcome_point_tomorrow">The next one unlocks tomorrow</string>
+    <string name="welcome_point_tomorrow_note">Come back each day and your Streak grows.</string>
+    <string name="welcome_start">Start my first Daily Set</string>
+    <string name="summary_reminder_title">Want a nudge tomorrow?</string>
+    <string name="summary_reminder_note">One notification at %1$s, only if your Daily Set isn\'t done.</string>
+    <string name="summary_reminder_action">Remind me</string>
+    <string name="summary_reminder_on_title">Reminder set for %1$s</string>
+    <string name="summary_reminder_on_note">You can change the time in Settings.</string>
+    <string name="summary_reminder_refused_title">Notifications are off</string>
+    <string name="summary_reminder_refused_note">You can turn the Reminder on in Settings whenever you like.</string>
     <string name="choose_translation_instruction">What does this mean?</string>
     <string name="type_answer_instruction">Type this in Polish</string>
     <string name="type_answer_field_label">Your answer</string>
