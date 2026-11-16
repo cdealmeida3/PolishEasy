@@ -21,7 +21,7 @@ import java.time.Clock
 
 /** What the app is showing. Every rule behind it lives in the course engine. */
 sealed interface Screen {
-    data class Home(val today: Today) : Screen
+    data class Home(val today: Today, val streak: Int) : Screen
 
     data class Tip(val tip: TipView, val progress: SetProgress) : Screen
 
@@ -53,7 +53,7 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
         clock = Clock.systemDefaultZone(),
     )
 
-    var screen: Screen by mutableStateOf(Screen.Home(engine.today()))
+    var screen: Screen by mutableStateOf(home())
         private set
 
     private var exercisesShown = 0
@@ -64,7 +64,7 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
 
     /** Asks the engine again what today holds, so Home is right after midnight has passed. */
     fun refreshHome() {
-        if (screen is Screen.Home) screen = Screen.Home(engine.today())
+        if (screen is Screen.Home) screen = home()
     }
 
     fun answer(answer: Answer) {
@@ -77,8 +77,10 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
     fun continueToNext() = show(engine.next())
 
     fun backToHome() {
-        screen = Screen.Home(engine.today())
+        screen = home()
     }
+
+    private fun home() = Screen.Home(engine.today(), engine.streak())
 
     private fun show(step: Step) {
         screen = when (step) {

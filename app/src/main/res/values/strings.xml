@@ -44,4 +44,8 @@
     <string name="summary_accuracy">%1$d of %2$d correct on the first try</string>
     <string name="summary_items_learned">You learned</string>
     <string name="summary_back_home">Back to Home</string>
+    <plurals name="home_streak">
+        <item quantity="one">Streak: %d day</item>
+        <item quantity="other">Streak: %d days</item>
+    </plurals>
 </resources>
