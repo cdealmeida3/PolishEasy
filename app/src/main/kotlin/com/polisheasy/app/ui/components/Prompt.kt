@@ -20,10 +20,37 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
 import com.polisheasy.app.ui.theme.Space
 import com.polisheasy.app.ui.theme.Edge
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
+import com.polisheasy.app.ui.theme.Size
 
 /** A Polish prompt up to this long is a word or two, and is set largest. One longer than [SHORT_PROMPT_LETTERS] uses the smallest prompt style. */
 private const val WORD_PROMPT_LETTERS = 12
 private const val SHORT_PROMPT_LETTERS = 20
+
+/**
+ * A Tip's prose in bites: the [lead], the one thing to take away, set apart, and under it each of
+ * the [points] on a line of its own.
+ */
+@Composable
+fun TipPoints(lead: String, points: List<String>, modifier: Modifier = Modifier) {
+    val scheme = MaterialTheme.colorScheme
+    Column(modifier = modifier) {
+        Text(lead, style = MaterialTheme.typography.titleMedium, color = scheme.onSurface)
+        points.forEach { point ->
+            Spacer(Modifier.height(Space.s))
+            Row {
+                // The dot sits on the first line of its sentence.
+                Box(contentAlignment = Alignment.Center, modifier = Modifier.height(Size.icon)) {
+                    Box(Modifier.size(Space.xs).background(scheme.primary, CircleShape))
+                }
+                Spacer(Modifier.width(Space.s))
+                Text(point, style = MaterialTheme.typography.bodyLarge, color = scheme.onSurface)
+            }
+        }
+    }
+}
 
 /** What to do, above a prompt: "Type this in Polish". Also the small label of a Tip or a Review. */
 @Composable

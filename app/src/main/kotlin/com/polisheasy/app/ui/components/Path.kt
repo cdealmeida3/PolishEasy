@@ -51,9 +51,12 @@ import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.first
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.semantics.stateDescription
 
 /** A Path node, and the room its column keeps so that today's ring fits around one. */
 private val Node = 56.dp
+private val SmallNode = 40.dp
 private val NodeColumn = 72.dp
 private val Trail = 4.dp
 
@@ -114,6 +117,10 @@ fun Journey(modifier: Modifier = Modifier, opensAtTop: Boolean = false, content:
  * Learner is, in the words of [progress] and as one segment for each of its [dailySets], and under
  * those its stops. The first [completed] segments are filled and the one at [current], today's,
  * is outlined. A Unit that is all completed has the tick beside its title.
+ *
+ * With [onToggle] the Unit is one still ahead: its heading is tapped to open and close it, which
+ * [toggleLabel] says to a screen reader, and while it is not [open] the card is only its heading,
+ * with no segments and no stops.
  */
 @Composable
 fun UnitCard(
@@ -124,21 +131,27 @@ fun UnitCard(
     dailySets: Int,
     modifier: Modifier = Modifier,
     current: Int? = null,
+    open: Boolean = true,
+    toggleLabel: String? = null,
+    onToggle: (() -> Unit)? = null,
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val scheme = MaterialTheme.colorScheme
     val done = completed == dailySets
     ContentCard(modifier = modifier) {
-        Text(label, style = MaterialTheme.typography.titleSmall, color = scheme.primary)
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Text(
-                title,
-                style = MaterialTheme.typography.titleLarge,
-                color = scheme.onSurface,
-                modifier = Modifier
-                    .weight(1f)
-                    .semantics { heading() },
-            )
+        val heading = if (onToggle == null) Modifier else Modifier.clickable(onClickLabel = toggleLabel, role = Role.Button, onClick = onToggle)
+        Row(verticalAlignment = Alignment.CenterVertically, modifier = heading.fillMaxWidth()) {
+            Column(modifier = Modifier.weight(1f)) {
+                Text(label, style = MaterialTheme.typography.titleSmall, color = if (onToggle == null) scheme.primary else scheme.onSurfaceVariant)
+                Text(
+                    title,
+                    style = MaterialTheme.typography.titleLarge,
+                    color = scheme.onSurface,
+                    modifier = Modifier.semantics { heading() },
+                )
+                Spacer(Modifier.height(Space.xxs))
+                Text(progress, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant)
+            }
             if (done) {
                 Spacer(Modifier.width(Space.xs))
                 Icon(
@@ -148,13 +161,74 @@ fun UnitCard(
                     modifier = Modifier.size(Size.icon),
                 )
             }
+            if (onToggle != null) {
+                Spacer(Modifier.width(Space.xs))
+                Box(contentAlignment = Alignment.Center, modifier = Modifier.size(Size.touch)) {
+                    Icon(
+                        painterResource(R.drawable.ic_expand_more),
+                        contentDescription = null,
+                        tint = scheme.onSurfaceVariant,
+                        // The arrow points up while the Unit is open: tapping closes it.
+                        modifier = Modifier.size(Size.icon).graphicsLayer { rotationZ = if (open) 180f else 0f },
+                    )
+                }
+            }
         }
-        Spacer(Modifier.height(Space.xxs))
-        Text(progress, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant)
-        Spacer(Modifier.height(Space.xs))
-        ProgressSegments(completed, current, dailySets, description = null)
-        Spacer(Modifier.height(Space.m))
-        content()
+        if (open) {
+            Spacer(Modifier.height(Space.xs))
+            ProgressSegments(completed, current, dailySets, description = null)
+            Spacer(Modifier.height(Space.m))
+            content()
+        }
+    }
+}
+
+/**
+ * The end of a Unit's trail: a star, lit in the Streak's colour once the Unit is [reached], which
+ * is when every Daily Set before it is completed, and waiting in grey until then. [title] says
+ * which it is.
+ */
+@Composable
+fun TrailMilestone(title: String, reached: Boolean, modifier: Modifier = Modifier) {
+    val scheme = MaterialTheme.colorScheme
+    val trail = if (reached) PolishEasyTheme.colors.completed else scheme.outlineVariant
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = modifier
+            .fillMaxWidth()
+            .semantics(mergeDescendants = true) {}
+            .height(IntrinsicSize.Min),
+    ) {
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = Modifier
+                .width(NodeColumn)
+                .fillMaxHeight()
+                .drawBehind { drawLine(trail, Offset(size.width / 2, 0f), Offset(size.width / 2, size.height / 2), Trail.toPx()) }
+                .padding(vertical = Space.xs),
+        ) {
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .size(SmallNode)
+                    .background(if (reached) PolishEasyTheme.colors.streak else scheme.surfaceContainerHighest, CircleShape),
+            ) {
+                Icon(
+                    painterResource(R.drawable.ic_star),
+                    contentDescription = null,
+                    // onTertiary is what sits on the flame's colour: streak and tertiary are one value.
+                    tint = if (reached) scheme.onTertiary else scheme.onSurfaceVariant,
+                    modifier = Modifier.size(Size.icon),
+                )
+            }
+        }
+        Spacer(Modifier.width(Space.s))
+        Text(
+            title,
+            style = MaterialTheme.typography.titleSmall,
+            color = if (reached) scheme.onSurface else scheme.onSurfaceVariant,
+            modifier = Modifier.weight(1f),
+        )
     }
 }
 
@@ -170,6 +244,10 @@ enum class StopState { Completed, Today, Locked }
  * the [last], and each half is coloured as walked when the Learner has come that way. With
  * [onClick] the whole stop is tapped as one and its node gives way; [action] is the icon at its
  * end that says what a tap does, and [onClickLabel] says it to a screen reader.
+ *
+ * A [compact] stop has a small node, for the ones already behind the Learner. [said] is what a
+ * screen reader adds that the eye gets from the node alone, such as "Locked". [detail] goes under
+ * the words of the stop the Learner is at: what it teaches, and the button that starts it.
  */
 @Composable
 fun TrailStop(
@@ -185,37 +263,41 @@ fun TrailStop(
     action: Int? = null,
     onClickLabel: String? = null,
     onClick: (() -> Unit)? = null,
+    compact: Boolean = false,
+    said: String? = null,
+    detail: (@Composable ColumnScope.() -> Unit)? = null,
 ) {
     val scheme = MaterialTheme.colorScheme
     val walked = PolishEasyTheme.colors.completed
     val ahead = scheme.outlineVariant
     val interaction = remember { MutableInteractionSource() }
     val tap = if (onClick == null) {
-        Modifier.semantics(mergeDescendants = true) {}
+        Modifier.semantics(mergeDescendants = true) { if (said != null) stateDescription = said }
     } else {
         // No ripple: the node going down is the response.
         Modifier.clickable(interaction, indication = null, onClickLabel = onClickLabel, role = Role.Button, onClick = onClick)
     }
     Row(
-        verticalAlignment = Alignment.CenterVertically,
+        // With more under its words, the node stays level with the title and does not drift to the middle.
+        verticalAlignment = if (detail == null) Alignment.CenterVertically else Alignment.Top,
         modifier = modifier
             .fillMaxWidth()
             .then(tap)
             .height(IntrinsicSize.Min),
     ) {
         Box(
-            contentAlignment = Alignment.Center,
             modifier = Modifier
                 .width(NodeColumn)
                 .fillMaxHeight()
                 .drawBehind {
-                    val middle = Offset(size.width / 2, size.height / 2)
+                    val middle = Offset(size.width / 2, if (detail == null) size.height / 2 else NodeColumn.toPx() / 2 + Space.xs.toPx())
                     if (!first) drawLine(if (walkedAbove) walked else ahead, Offset(middle.x, 0f), middle, Trail.toPx())
                     if (!last) drawLine(if (walkedBelow) walked else ahead, middle, Offset(middle.x, size.height), Trail.toPx())
                 }
-                .padding(vertical = Space.xs),
+                .padding(vertical = if (compact) Space.xxs else Space.xs),
+            contentAlignment = if (detail == null) Alignment.Center else Alignment.TopCenter,
         ) {
-            StopNode(state, interaction)
+            StopNode(state, interaction, if (compact) SmallNode else Node)
         }
         Spacer(Modifier.width(Space.s))
         Column(
@@ -236,6 +318,10 @@ fun TrailStop(
                 color = if (state == StopState.Locked) scheme.onSurfaceVariant else scheme.onSurface,
             )
             if (note != null) Text(note, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant)
+            if (detail != null) {
+                Spacer(Modifier.height(Space.s))
+                detail()
+            }
         }
         if (action != null) {
             Box(contentAlignment = Alignment.Center, modifier = Modifier.size(Size.touch)) {
@@ -250,12 +336,17 @@ fun TrailStop(
  * [interaction]; a locked one is flat. Today's has a ring around it.
  */
 @Composable
-private fun StopNode(state: StopState, interaction: MutableInteractionSource) {
+private fun StopNode(state: StopState, interaction: MutableInteractionSource, node: Dp) {
     val scheme = MaterialTheme.colorScheme
     val colors = PolishEasyTheme.colors
     when (state) {
-        StopState.Completed -> Raised(colors.completed, colors.completedEdge, interaction) {
-            Icon(painterResource(R.drawable.ic_check), contentDescription = null, tint = colors.onSuccess, modifier = Modifier.size(Size.feedbackIcon))
+        StopState.Completed -> Raised(colors.completed, colors.completedEdge, interaction, node) {
+            Icon(
+                painterResource(R.drawable.ic_check),
+                contentDescription = null,
+                tint = colors.onSuccess,
+                modifier = Modifier.size(if (node < Node) Size.icon else Size.feedbackIcon),
+            )
         }
         StopState.Today -> Box(
             contentAlignment = Alignment.Center,
@@ -263,14 +354,14 @@ private fun StopNode(state: StopState, interaction: MutableInteractionSource) {
                 .border(Edge.border, colors.brand, CircleShape)
                 .padding(Space.xs),
         ) {
-            Raised(colors.brand, colors.brandEdge, interaction) {
+            Raised(colors.brand, colors.brandEdge, interaction, node) {
                 Icon(painterResource(R.drawable.ic_play_arrow), contentDescription = null, tint = colors.onBrand, modifier = Modifier.size(Size.feedbackIcon))
             }
         }
         StopState.Locked -> Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier
-                .size(Node)
+                .size(node)
                 .background(scheme.surfaceContainerHighest, CircleShape),
         ) {
             Icon(painterResource(R.drawable.ic_lock), contentDescription = null, tint = scheme.onSurfaceVariant, modifier = Modifier.size(Size.icon))
@@ -279,8 +370,8 @@ private fun StopNode(state: StopState, interaction: MutableInteractionSource) {
 }
 
 @Composable
-private fun Raised(fill: Color, edge: Color, interaction: MutableInteractionSource, icon: @Composable () -> Unit) {
-    Edged(fill = fill, edge = edge, corner = Node / 2, interaction = interaction) {
-        Box(contentAlignment = Alignment.Center, modifier = Modifier.size(Node)) { icon() }
+private fun Raised(fill: Color, edge: Color, interaction: MutableInteractionSource, node: Dp, icon: @Composable () -> Unit) {
+    Edged(fill = fill, edge = edge, corner = node / 2, interaction = interaction) {
+        Box(contentAlignment = Alignment.Center, modifier = Modifier.size(node)) { icon() }
     }
 }

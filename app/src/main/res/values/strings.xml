@@ -99,7 +99,7 @@
     <string name="polish_key_description">Insert %1$s</string>
     <string name="tip_label">Tip</string>
     <string name="review_label">Review</string>
-    <string name="progress_description">%1$d of %2$d Exercises answered correctly</string>
+    <string name="progress_description">%1$d of %2$d steps done</string>
     <!-- What a screen reader says for the praise below. -->
     <string name="feedback_correct">Correct</string>
     <!-- Polish praise for a right answer, taken in turn: "good", "great", "yes". Not translated. -->
@@ -162,6 +162,15 @@
     <string name="path_completed">Completed</string>
     <string name="path_today">Today</string>
     <string name="path_locked">Locked</string>
+    <plurals name="path_unit_ahead">
+        <item quantity="one">%1$d Daily Set · Locked</item>
+        <item quantity="other">%1$d Daily Sets · Locked</item>
+    </plurals>
+    <string name="path_unit_open">Show the Daily Sets</string>
+    <string name="path_unit_close">Hide the Daily Sets</string>
+    <string name="path_unit_complete">Unit %1$d complete</string>
+    <string name="path_unit_end">End of Unit %1$d</string>
+    <string name="summary_unit_complete">Unit %1$d complete</string>
     <string name="path_replay">Replay</string>
     <string name="path_more_units">You\'ve completed every Daily Set released so far. More Units are on the way.</string>
     <string name="replay_label">Replay</string>
