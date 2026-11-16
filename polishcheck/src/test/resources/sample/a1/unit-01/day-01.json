@@ -1,0 +1,24 @@
+{
+  "id": "a1-u01-d01",
+  "tips": [
+    {
+      "id": "a1-u01-d01-t01",
+      "before": "a1-u01-d01-e04",
+      "title": { "en": "The verb być" },
+      "body": { "en": "Być means to be. Each person has its own form, so the pronoun is often left out: jesteśmy alone means we are." },
+      "conjugation": {
+        "verb": "być",
+        "meaning": { "en": "to be" },
+        "forms": { "ja": "jestem", "ty": "jesteś", "on": "jest", "my": "jesteśmy", "wy": "jesteście", "oni": "są" }
+      }
+    }
+  ],
+  "exercises": [
+    { "type": "choose_translation", "id": "a1-u01-d01-e01", "prompt": "dzień dobry", "options": [{ "en": "good morning" }, { "en": "thank you" }], "correctOption": 0, "items": ["dzien-dobry"] },
+    { "type": "type_answer", "id": "a1-u01-d01-e02", "prompt": { "en": "thank you" }, "acceptedAnswers": ["dziękuję"], "items": ["dziekuje"] },
+    { "type": "word_tiles", "id": "a1-u01-d01-e03", "prompt": { "en": "we are from Poland" }, "acceptedAnswers": ["jesteśmy z Polski"], "distractors": ["nie"], "items": ["byc-jestesmy"] },
+    { "type": "conjugation", "id": "a1-u01-d01-e04", "verb": "być", "meaning": { "en": "to be" }, "person": "my", "sentence": "my ___ tutaj", "sentenceMeaning": { "en": "we are here" }, "acceptedAnswers": ["jesteśmy"], "items": ["byc-jestesmy"] },
+    { "type": "listen_choose", "id": "a1-u01-d01-e05", "text": "tak", "meaning": { "en": "yes" }, "distractors": ["dobry"], "items": ["tak"] },
+    { "type": "listen_type", "id": "a1-u01-d01-e06", "acceptedAnswers": ["dziękuję"], "meaning": { "en": "thank you" }, "readingAnswers": ["dzięki"], "items": ["dziekuje"] }
+  ]
+}

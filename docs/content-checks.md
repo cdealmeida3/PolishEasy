@@ -30,6 +30,7 @@ First the file to open, relative to `content/`, then the identifier concerned (l
    ```
 
 3. Run `./gradlew :engine:checkContent`.
+4. If you added or changed any Polish text, a Tip, or the English a Polish text stands for, run `./gradlew :polishcheck:checkPolish`, have what it lists reviewed, and record the review: see [polish-check.md](polish-check.md). CI fails until every sentence has a verdict.
 
 ## What it checks
 
@@ -60,7 +61,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 
 When a listed file cannot be read, the rules that count across files (an Item's Exercises, Clips nothing speaks, identifiers that are gone) are skipped until it can, so that one broken file is one problem.
 
-The checker does not judge whether the Polish is correct. That is issue #16. Nor does it judge how the content teaches: the rules for that are in [authoring.md](authoring.md), and `AuthoredContentTest` holds the content to the ones a test can check.
+The checker does not judge whether the Polish is correct. That is the [Polish check](polish-check.md). Nor does it judge how the content teaches: the rules for that are in [authoring.md](authoring.md), and `AuthoredContentTest` holds the content to the ones a test can check.
 
 ## Identifiers that have shipped
 

@@ -1,6 +1,6 @@
 # Authoring Daily Sets
 
-The rules the Authored Content is written to. The [content checker](content-checks.md) decides whether content can ship; these rules are about whether it teaches. `AuthoredContentTest` holds the content to rules 1, 2, 3 and 8, and to part of rules 10 and 11: every reading form plays, every reading answer is accepted read and refused heard, and a `listen_type` that is read looks like no `type_answer` with other answers. The rest need a person, or the Polish check of issue #16.
+The rules the Authored Content is written to. The [content checker](content-checks.md) decides whether content can ship; these rules are about whether it teaches. `AuthoredContentTest` holds the content to rules 1, 2, 3 and 8, and to part of rules 10 and 11: every reading form plays, every reading answer is accepted read and refused heard, and a `listen_type` that is read looks like no `type_answer` with other answers. Whether the Polish itself is right is the job of the [Polish check](polish-check.md). The rest need a person.
 
 Before writing a Unit, read [a1-path.md](a1-path.md) for what it covers and what the Units around it cover.
 
@@ -59,7 +59,7 @@ A Daily Set has 15 to 18 Exercises and 6 to 8 new Items. With up to 8 Review Exe
 - **Numbers count only years.** *Jeden* and *dwa* change with gender (*jedna siostra*, *dwie siostry*) and counted people need other forms (*dwóch braci*, *dwoje dzieci*). Until a Unit teaches that, a number is followed only by *rok*, *lata*, *lat*, *plus*, *to*, *jest*, another number, or nothing. *numer dziewięć* is the other honest use. `AuthoredContentTest` holds the content to this.
 - **A sum is accepted with *to*, *jest* and *to jest*:** *dwa plus dwa to cztery*, *dwa plus dwa jest cztery*, *dwa plus dwa to jest cztery*. Its tiles include *jest* so that all three can be built. A question about a sum is accepted as *ile to jest dwa plus sześć?*, *ile jest…?*, *ile to…?*, and as *dwa plus sześć to ile?*, *…to jest ile?*
 - **Age prompts read "X is N years old".** For one year, *on ma rok* comes first and *on ma jeden rok* is accepted. 2 to 4 take *lata*, 0 and 5 to 20 take *lat*; a test checks every number that stands before one of the three.
-- **Asking an age:** *ile lat ma twój syn?*, *ile ma lat twój syn?*, *ile twój syn ma lat?*, *ile ma twój syn lat?* and *twój syn ile ma lat?* are all accepted. The echo question *twój syn ma ile lat?* is not offered.
+- **Asking an age:** *ile lat ma twój syn?*, *ile ma lat twój syn?* and *ile twój syn ma lat?* are all accepted. *ile ma twój syn lat?* and *twój syn ile ma lat?* are not: the review for the Polish check found the first unnatural and the second natural only as a follow-up (*a twój syn ile ma lat?*). The echo question *twój syn ma ile lat?* is not offered either.
 - **English "your" always says "(one friend)"** and is *twój*, *twoja*, *twoje*. It is never used to *pan* or *pani*, whose word (*pana*, *pani*) is not taught yet.
 - **A possessive agrees with the noun after it**, and a test checks each one against the gender of its noun, so a new family noun has to be added to the lists in that test.
 - **No possessive before *brata*, *siostrę*, *syna*, *córkę*** (*mam mojego brata* needs a form that is not taught), and they stand only after a form of *mieć*, after *i*, or after *rodzeństwo*.
@@ -67,16 +67,18 @@ A Daily Set has 15 to 18 Exercises and 6 to 8 new Items. With up to 8 Review Exe
 
 ## How the Polish is checked
 
-[ADR-0002](adr/0002-automated-content-check-instead-of-native-review.md) asks for a check that is separate from the drafting. Until issue #16 automates it, do it by hand and say in the pull request what each step found:
+[ADR-0002](adr/0002-automated-content-check-instead-of-native-review.md) asks for a check that is separate from the drafting. That is the [Polish check](polish-check.md):
 
-1. Look up every distinct Polish word (Items, prompts, Accepted Answers, distractors, conjugation tables) in a dictionary of inflected forms. The `morfeusz2` package from PyPI carries the SGJP dictionary and can also generate a verb's forms to compare with a table.
-2. Have someone who did not draft the content review it: spelling and diacritics, grammar, register, naturalness, misleading English, missing Accepted Answers, distractors that sound like the answer, and wrong claims in Tips.
-3. Drop or replace anything still in doubt.
+1. Run `./gradlew :polishcheck:checkPolish`. It compares every word with a dictionary and every verb form with a reference conjugation, applies grammar rules, and lists every sentence and Tip that has no review verdict.
+2. Have the unreviewed sentences reviewed by someone who did not draft them, and record the reviewed file. In an agent session that is one fresh agent given only `to-review.json` and the checklist in [polish-check.md](polish-check.md).
+3. Fix what is wrong, or accept it with a reason. Drop or replace anything still in doubt.
+
+The review is of each sentence. Missing Accepted Answers (rule 6) and distractors that sound like the answer (rule 5) are still for the author and the pull request's reviewer to look for.
 
 Nobody can hear the Clips in a build session. How they sound is checked on a phone.
 
 ## After changing content
 
-Follow "After changing content" in [content-checks.md](content-checks.md): make the audio, record the new identifiers, run the checker.
+Follow "After changing content" in [content-checks.md](content-checks.md): make the audio, record the new identifiers, run the checker, run the Polish check and record the review.
 
 Replacing a Daily Set under an id that has shipped means a phone that completed the old one will skip the new one. Say so in the pull request: the Learner has to clear the app's storage.

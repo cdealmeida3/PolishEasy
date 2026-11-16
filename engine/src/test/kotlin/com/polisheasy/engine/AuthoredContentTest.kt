@@ -609,4 +609,18 @@ class AuthoredContentTest {
             }
         }
     }
+
+    @Test
+    fun `every form of być, mieć and mówić is listed for the Polish check as a verb form claim on an Item`() {
+        val claims = polishContent(DirectoryContent(contentDir)).verbForms
+
+        listOf("być", "mieć", "mówić").forEach { verb ->
+            Person.entries.forEach { person ->
+                assertTrue(
+                    claims.any { claim -> claim.verb == verb && claim.person == person && claim.uses.any { it.role == PolishRole.ITEM } },
+                    "No Item is claimed to be the form of $verb for ${person.pronouns}",
+                )
+            }
+        }
+    }
 }
