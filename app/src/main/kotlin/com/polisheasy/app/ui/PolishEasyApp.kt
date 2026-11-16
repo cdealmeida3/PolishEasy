@@ -87,6 +87,7 @@ import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.LifecycleStartEffect
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.polisheasy.app.ClipPlayer
+import com.polisheasy.app.Clips
 import com.polisheasy.app.CourseViewModel
 import com.polisheasy.app.R
 import com.polisheasy.app.Screen
@@ -108,10 +109,10 @@ import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
+/** [player] plays the Clips, and is released when the app's screens go. */
 @Composable
-fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
+fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = rememberClipPlayer()) {
     val context = LocalContext.current
-    val player = remember { ClipPlayer(context) }
     DisposableEffect(Unit) { onDispose { player.release() } }
     // The app is silent once it leaves the screen.
     LifecycleStartEffect(Unit) { onStopOrDispose { player.stop() } }
@@ -197,6 +198,12 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
             }
         }
     }
+}
+
+@Composable
+private fun rememberClipPlayer(): Clips {
+    val context = LocalContext.current
+    return remember { ClipPlayer(context) }
 }
 
 @Composable

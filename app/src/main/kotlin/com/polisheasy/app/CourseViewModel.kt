@@ -80,8 +80,10 @@ fun courseEngine(context: Context): CourseEngine = CourseEngine(
     clock = Clock.systemDefaultZone(),
 )
 
-class CourseViewModel(application: Application) : AndroidViewModel(application) {
-    private val engine = courseEngine(application)
+class CourseViewModel(application: Application, private val engine: CourseEngine) : AndroidViewModel(application) {
+    /** The one Android builds the view model with: the packaged course and the Learner's saved progress. */
+    constructor(application: Application) : this(application, courseEngine(application))
+
     private val settings = Settings(application)
 
     var screen: Screen by mutableStateOf(home())

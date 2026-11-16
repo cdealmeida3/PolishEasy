@@ -1,0 +1,24 @@
+{
+  "id": "fx-u01-d02",
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "fx-u01-d02-e01",
+      "prompt": "tak",
+      "options": [
+        { "en": "no" },
+        { "en": "yes" },
+        { "en": "goodbye" }
+      ],
+      "correctOption": 1,
+      "items": ["tak"]
+    },
+    {
+      "type": "type_answer",
+      "id": "fx-u01-d02-e02",
+      "prompt": { "en": "good night" },
+      "acceptedAnswers": ["dobranoc"],
+      "items": ["dobranoc"]
+    }
+  ]
+}
