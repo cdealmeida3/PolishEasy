@@ -4,6 +4,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.polisheasy.app.ui.theme.inPolish
 
 /** A Polish prompt longer than this wraps, and uses the smaller of the two prompt styles. */
 private const val SHORT_PROMPT_LETTERS = 20
@@ -28,7 +29,7 @@ fun PolishPrompt(text: String, modifier: Modifier = Modifier) {
             MaterialTheme.typography.headlineLarge
         } else {
             MaterialTheme.typography.headlineMedium
-        },
+        }.inPolish(),
         color = MaterialTheme.colorScheme.onSurface,
         modifier = modifier,
     )

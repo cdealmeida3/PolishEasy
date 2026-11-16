@@ -27,7 +27,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - name: Test the course engine and the screens, check the Polish and build the app
         run: ./gradlew :engine:test :polishcheck:test :audio:test :app:testDebugUnitTest :polishcheck:checkPolish :app:assembleDebug :app:assembleRelease :app:bundleRelease
-      # A picture of every screen, light and dark, from ScreenshotsTest (docs/design.md).
+      # A picture of every screen, light, dark and at the largest font size, from ScreenshotsTest (docs/design.md).
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -5,6 +5,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.intl.LocaleList
 import androidx.compose.ui.unit.sp
 import com.polisheasy.app.R
 
@@ -40,3 +41,11 @@ internal val PolishEasyTypography = Typography(
     labelMedium = system(FontWeight.Medium, 14, 20),
     labelSmall = system(FontWeight.Medium, 12, 16),
 )
+
+/**
+ * This style for text that is always Polish, so a screen reader says it with a Polish voice and
+ * not as if it were the Base Language.
+ */
+fun TextStyle.inPolish(): TextStyle = copy(localeList = Polish)
+
+private val Polish = LocaleList("pl")

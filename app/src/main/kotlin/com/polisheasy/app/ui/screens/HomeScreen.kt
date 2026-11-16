@@ -24,6 +24,7 @@ import com.polisheasy.app.ui.components.TodayCard
 import com.polisheasy.app.ui.components.UnitProgress
 import com.polisheasy.app.ui.components.WeekDay
 import com.polisheasy.app.ui.theme.Space
+import com.polisheasy.app.ui.theme.inPolish
 import com.polisheasy.engine.DayView
 import com.polisheasy.engine.NextDailySetView
 import com.polisheasy.engine.Today
@@ -57,7 +58,7 @@ internal fun HomeScreen(
             Spacer(Modifier.height(Space.xs))
             Text(
                 stringResource(if (done) R.string.home_greeting_done else R.string.home_greeting),
-                style = MaterialTheme.typography.headlineLarge,
+                style = MaterialTheme.typography.headlineLarge.inPolish(),
                 color = MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier.semantics { heading() },
             )

@@ -27,6 +27,7 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
@@ -36,6 +37,7 @@ import com.polisheasy.app.ui.PolishEasyTheme
 import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
+import com.polisheasy.app.ui.theme.inPolish
 import kotlinx.coroutines.delay
 import kotlin.math.PI
 import kotlin.math.roundToInt
@@ -43,6 +45,7 @@ import kotlin.math.sin
 import kotlin.random.Random
 
 private val RingSize = 184.dp
+private const val RingMostGrowth = 1.35f
 private val RingStroke = 16.dp
 private val ConfettiSide = 10.dp
 
@@ -58,8 +61,10 @@ fun ScoreRing(fraction: Float, modifier: Modifier = Modifier) {
     if (spec != null) LaunchedEffect(target) { filled.animateTo(target, spec) }
     val track = MaterialTheme.colorScheme.surfaceContainerHigh
     val fill = PolishEasyTheme.colors.success
-    Box(contentAlignment = Alignment.Center, modifier = modifier.size(RingSize)) {
-        Canvas(Modifier.size(RingSize)) {
+    // The ring grows some of the way with the phone's font size, so "100%" stays clear of it.
+    val ring = RingSize * LocalDensity.current.fontScale.coerceIn(1f, RingMostGrowth)
+    Box(contentAlignment = Alignment.Center, modifier = modifier.size(ring)) {
+        Canvas(Modifier.size(ring)) {
             val stroke = RingStroke.toPx()
             val inset = Offset(stroke / 2, stroke / 2)
             val area = Area(size.width - stroke, size.height - stroke)
@@ -137,7 +142,7 @@ fun StreakCard(from: Int, to: Int, title: String, note: String, description: Str
 @Composable
 fun ItemCard(polish: String, meaning: String, modifier: Modifier = Modifier) {
     ContentCard(modifier = modifier) {
-        Text(polish, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurface)
+        Text(polish, style = MaterialTheme.typography.titleMedium.inPolish(), color = MaterialTheme.colorScheme.onSurface)
         Text(meaning, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }

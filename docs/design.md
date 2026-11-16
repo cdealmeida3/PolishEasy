@@ -10,11 +10,12 @@ Read this before changing a screen or a component. If a value you need is missin
 ./gradlew :app:testDebugUnitTest --tests '*ScreenshotsTest'
 ```
 
-writes one PNG per screen to `app/build/screenshots/`: the fixture course in the light theme (`light-…`) and the dark theme (`dark-…`), and the real course on Home, the Path and its first step (`real-…`). They are 411 × 891 dp. CI keeps them as the `screenshots` artifact of every run.
+writes one PNG per screen to `app/build/screenshots/`: the fixture course in the light theme (`light-…`) and the dark theme (`dark-…`), the light theme again at the largest font size a phone offers (`large-…`), and the real course on Home, the Path and its first step (`real-…`). They are 411 × 891 dp. CI keeps them as the `screenshots` artifact of every run.
 
 - Look at the pictures before and after any change to a screen. Open the PNGs themselves; they are the only way to see the app without a phone.
 - A pull request that changes how a screen looks shows the changed pictures, light and dark, in its description or links the run's `screenshots` artifact.
 - A new screen, or a new state of one, gets a `shot(…)` in `ScreenshotsTest`.
+- Every `shot(…)` also checks what a picture cannot show: that each thing a finger can tap has a name for a screen reader and is at least 48 dp each way.
 - The pictures show layout, colour and type. They do not show motion, haptics, the real keyboard or sound. Those stay with a run-through on a phone, so say in the pull request what could not be seen.
 
 ## Principles
@@ -31,7 +32,7 @@ writes one PNG per screen to `app/build/screenshots/`: the fixture course in the
 
 Every value lives in `ui/theme` and nowhere else. A screen file names a role, never a hex value. All Material roles are set, so none falls back to Material's purple baseline. The build fails on a colour or a font value anywhere else (`./gradlew :app:checkDesignTokens`, see `CODING_STANDARDS.md`).
 
-The one copy outside `ui/theme` is `window_background` in `res/values/colors.xml` and `res/values-night/colors.xml`: the `background` value, which Android shows for a moment before the first screen is drawn.
+Two values are copied outside `ui/theme`, in `res/values/colors.xml`, for what Android draws before the app can: `window_background` (and its dark value in `res/values-night`), the `background` value shown for a moment before the first screen is drawn, and `brand`, the light `brand` value behind the app icon, on the splash screen and on the Reminder's notification.
 
 ### Material roles
 
@@ -99,7 +100,8 @@ Rules:
 - **Inside the feedback panel the main button takes the panel's colour**: `success` with `onSuccess` after a right answer, `caution` with `onCaution` after a wrong one or an accent warning. A crimson button there would be red on "wrong", and in the dark theme `brand` is under 3 to 1 against either container.
 - **A wrong answer is `caution` (amber), not red and not `error`.** A right answer is `success` (green).
 - **An accent warning is `caution` with the tick icon**: accepted, with something to notice.
-- Text and icons that carry meaning have a contrast of at least 4.5 to 1 against what they sit on, and shapes that carry meaning at least 3 to 1. The pairs above were checked against that. In the dark theme the `brand` fill is 3.5 to 1 against the background, so a main button there never sits on a container colour.
+- Text and icons that carry meaning have a contrast of at least 4.5 to 1 against what they sit on, and shapes that carry meaning at least 3 to 1. `ContrastTest` holds every pair a screen puts together to that, in both themes; a new pair is added there.
+- `outlineVariant` and the track colours are under 3 to 1 on purpose: a card's border, an idle option's edge and an empty progress segment are quiet. So none of them carries meaning alone. A control is known by its words, and what a track shows is also said in words ("4 of 7 completed"). In the dark theme the `brand` fill is 3.5 to 1 against the background, so a main button there never sits on a container colour.
 - `streak` is for graphics and large numbers only, not for small text in the light theme (3.6 to 1).
 - No gradients, no shadows deeper than the bottom edge described under Shape, no transparency used as a colour.
 - Dynamic colour (Material You) stays off: the app looks the same on every phone.
@@ -197,6 +199,12 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`ScoreRing`**: the Summary's score. A 184 ring, 16 thick with round ends, `success` on `surfaceContainerHigh`, with the share of Exercises answered correctly on the first try inside it in `displayMedium`. The same score is written in words under it.
 - **`StreakCard`**: the Streak going up, on the Summary of the Daily Set that raised it and nowhere else. A `ContentCard` with the flame at 48 and the number in `displayMedium`, both in `streak`, then "day Streak" in `titleLarge` and a line in `bodyMedium`. A Replay never shows it.
 - **`ItemCard`**: one Item under "You learned": a `ContentCard` with the Polish in `titleMedium` and its meaning under it in `bodyMedium`.
+- **`SettingsCard`**: a group of settings that belong together. A `ContentCard` whose rows reach its edges, with a `SettingDivider` between rows that starts where their words start. Every row is at least 56 high, has its icon in `primary` on a 40 `primaryContainer` circle, its label in `titleMedium` and, under it, a note in `bodyMedium` in `onSurfaceVariant`. The whole row is tapped, and a screen reader hears it as one thing.
+  - **`SwitchSetting`**: on or off. The switch is `brand` with an `onBrand` thumb when on, in both themes, and `surfaceContainerHighest` with an `outline` border and thumb when off.
+  - **`ValueSetting`**: a value to change, such as the Reminder's time, shown in `titleMedium` on a `secondaryContainer` field with `small` corners. At a large font size the value goes under the label.
+  - **`LinkSetting`**: leads out of the screen, such as to the email app. It ends with an arrow in `onSurfaceVariant`.
+  - **`SettingNotice`**: something in the way of a setting, such as notifications turned off in Android: `cautionContainer` with `medium` corners inside the card, a sentence in `bodyLarge` and the one `SecondaryButton` that fixes it. It is a caution, not an `error`: nothing broke.
+  - **`SettingsFootnote`**: the version, centred in `labelSmall` under the cards.
 - **`Confetti`**: see Motion and touch. It is laid over the Summary's content, above the main button. A Replay gets none.
 - **Streak flame**: the flame icon in `streak` beside the number. With a Streak of zero the flame and the number are `outline`, not hidden.
 - **`UnitCard`**: a Unit on the Path. A `ContentCard` with "Unit N" in `titleSmall` in `primary`, the Unit's title in `titleLarge`, "4 of 7 completed" in `bodyMedium`, `ProgressSegments` with today's Daily Set outlined, and under them the Unit's stops. A Unit that is all completed has the `success` tick beside its title.
@@ -238,6 +246,21 @@ The Path answers where the Learner is and how far they have come.
 - **Tapping** a completed stop starts a Replay, today's opens today's Daily Set, a locked one does nothing.
 - With every Daily Set completed, a line after the last Unit says more Units are on the way.
 
+## Settings
+
+Settings is quiet: three `SettingsCard`s, 16 apart, and nothing that moves.
+
+- **The Reminder**: its switch, and when it is on, its time. If Android will not show notifications, a `SettingNotice` between them says so and opens Android's settings.
+- **Sound**: one switch.
+- **Report a mistake**: a `LinkSetting` to the email app.
+- **The version**, 24 below the last card.
+
+## App icon and splash screen
+
+- **The icon** is a white speech bubble on `brand` saying **ą**, a letter only Polish has in this shape, set in Nunito ExtraBold in `brand`. Under the bubble is its bottom edge in `brandEdge`, 3 of the icon's 108 units deep: the same edge every button in the app has. It is drawn from shapes and a letter, which keeps to "no mascot". Everything sits inside the middle 66 units, so no launcher's mask cuts it.
+- **The themed icon** (`ic_launcher_monochrome`) is the bubble with the ą cut out of it, for launchers that colour icons themselves. The Reminder's notification uses the same shape as its small icon, on `brand`.
+- **The splash screen** is the icon's bubble on `brand`, in both themes, and lasts only until the first screen is drawn. Nothing is animated and nothing is loaded behind it. `Theme.PolishEasy.Starting` holds it and `MainActivity` hands over to `Theme.PolishEasy`.
+
 ## Motion and touch
 
 Motion says what just happened. It never makes the Learner wait: every tap is accepted while something is still moving.
@@ -276,7 +299,8 @@ Rules:
 - Every state has words or an icon as well as colour, and a state change is announced to a screen reader (the feedback panel is a live region).
 - Every icon button has a content description from `strings.xml`. Decorative icons have none.
 - Touch targets are at least 48 dp. Contrast as under Colour.
-- The app works at the largest font size: content scrolls, the main button stays pinned and nothing is cut off.
+- The app works at the largest font size: content scrolls, the main button stays pinned and nothing is cut off. The `large-…` pictures show it. Where two things side by side no longer fit, the second goes under the first (`ValueSetting`), and the score ring grows by up to a third so that "100%" stays inside it.
+- Text that is always Polish (a Polish prompt, Home's greeting, an Item's Polish) is marked as Polish with `inPolish()`, so a screen reader says it with a Polish voice. Options and word tiles, which are Polish in some Exercises and the Base Language in others, are not marked yet.
 - Both themes are designed, not derived: check both sets of screenshots.
 
 ## Not part of the look

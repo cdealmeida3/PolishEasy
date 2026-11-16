@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- A white-over-red roundel, after the Polish flag. -->
+<!-- The app icon: a speech bubble saying the Polish letter ą, set in Nunito ExtraBold, with the bottom edge the app's buttons have (docs/design.md, App icon). -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+    <group android:translateY="3">
+        <path
+            android:fillColor="#9A0A22"
+            android:pathData="M40,28H68A13,13 0 0 1 81,41V57A13,13 0 0 1 68,70H52L39.5,80.2Q37,82 37,79V69.65A13,13 0 0 1 27,57V41A13,13 0 0 1 40,28Z" />
+    </group>
     <path
-        android:fillColor="#D4213D"
-        android:pathData="M30,54a24,24 0 0,0 48,0z" />
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,28H68A13,13 0 0 1 81,41V57A13,13 0 0 1 68,70H52L39.5,80.2Q37,82 37,79V69.65A13,13 0 0 1 27,57V41A13,13 0 0 1 40,28Z" />
     <path
-        android:fillColor="#F2F2F2"
-        android:pathData="M30,54a24,24 0 0,1 48,0z" />
-    <path
-        android:strokeColor="#D4213D"
-        android:strokeWidth="2"
-        android:pathData="M54,54m-24,0a24,24 0 1,0 48,0a24,24 0 1,0 -48,0" />
+        android:fillColor="#C8102E"
+        android:pathData="M59.18 61Q57.16 61 56.02 59.99Q54.89 58.97 54.89 57.29Q54.89 56.05 55.57 54.98Q56.26 53.92 57.4 53.19L57.33 53.81Q56.98 53.44 56.85 52.97Q56.71 52.51 56.71 51.89V50.62L56.95 50.82Q56.74 51.99 56.07 52.83Q55.4 53.68 54.37 54.14Q53.34 54.6 52 54.6Q50.14 54.6 48.66 53.88Q47.18 53.16 46.36 51.92Q45.53 50.68 45.53 49.14Q45.53 47.28 46.5 46.2Q47.46 45.11 49.63 44.65Q51.79 44.19 55.37 44.19H57.19V46.87H55.4Q53.65 46.87 52.57 47.06Q51.48 47.25 51.02 47.69Q50.55 48.14 50.55 48.93Q50.55 49.89 51.22 50.51Q51.9 51.13 53.17 51.13Q54.16 51.13 54.94 50.67Q55.71 50.2 56.16 49.4Q56.61 48.59 56.61 47.56V43.6Q56.61 42.09 55.92 41.45Q55.23 40.82 53.58 40.82Q52.65 40.82 51.57 41.04Q50.49 41.26 49.18 41.78Q48.42 42.12 47.84 41.93Q47.25 41.74 46.94 41.25Q46.63 40.75 46.63 40.15Q46.63 39.54 46.98 38.98Q47.32 38.41 48.11 38.13Q49.73 37.48 51.16 37.24Q52.58 37 53.79 37Q56.43 37 58.14 37.77Q59.84 38.55 60.7 40.15Q61.56 41.74 61.56 44.26V51.89Q61.56 53.02 61.09 53.64Q60.63 54.26 59.73 54.5Q58.98 54.74 58.5 55.34Q58.02 55.95 58.02 56.7Q58.02 57.49 58.55 57.92Q59.08 58.35 59.91 58.35Q60.15 58.35 60.39 58.32Q60.63 58.28 60.87 58.21Q61.59 58.08 61.99 58.35Q62.38 58.63 62.45 59.11Q62.52 59.59 62.26 60.04Q62 60.48 61.42 60.69Q60.84 60.9 60.25 60.95Q59.67 61 59.18 61Z" />
 </vector>

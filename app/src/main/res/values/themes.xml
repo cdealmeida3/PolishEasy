@@ -3,4 +3,11 @@
     <style name="Theme.PolishEasy" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:windowBackground">@color/window_background</item>
     </style>
+
+    <!-- What the app opens on: the icon's speech bubble on the brand colour, in both themes. MainActivity then moves to Theme.PolishEasy. -->
+    <style name="Theme.PolishEasy.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/brand</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.PolishEasy</item>
+    </style>
 </resources>

@@ -247,7 +247,7 @@ class PlayingADailySetOnScreenTest {
     fun `with Sound off in Settings a Daily Set shows no speaker and plays nothing`() {
         openApp()
         tap(R.string.nav_settings)
-        val sound = screen.onNodeWithContentDescription(text(R.string.settings_sound))
+        val sound = screen.onNodeWithText(text(R.string.settings_sound))
         sound.performClick()
         sound.assertIsOff()
         back()

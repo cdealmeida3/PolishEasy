@@ -7,6 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.polisheasy.app.ui.PolishEasyApp
 import com.polisheasy.app.ui.PolishEasyTheme
 
@@ -14,6 +15,8 @@ class MainActivity : ComponentActivity() {
     private val viewModel: CourseViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // The app opens on the splash screen of Theme.PolishEasy.Starting; this hands over to the app's own theme.
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         // The volume keys change the media volume even while no Clip is playing.
