@@ -29,4 +29,4 @@ Every build of the app first checks the Authored Content and fails if anything i
 
 builds the minified release APK and App Bundle under `app/build/outputs/`. They are unsigned unless these four environment variables are set: `RELEASE_KEYSTORE_FILE` (a path to the keystore), `RELEASE_KEYSTORE_PASSWORD`, `RELEASE_KEY_ALIAS` and `RELEASE_KEY_PASSWORD`.
 
-See `GLOSSARY.md` for the project's vocabulary, `docs/adr/` for recorded decisions and [docs/audio.md](docs/audio.md) for how the spoken Polish is made and packaged.
+See `GLOSSARY.md` for the project's vocabulary, `docs/adr/` for recorded decisions and [docs/audio.md](docs/audio.md) for how the spoken Polish is made and packaged. [docs/authoring.md](docs/authoring.md) has the rules for writing Daily Sets, and [docs/a1-path.md](docs/a1-path.md) outlines the Units of the A1 Path.

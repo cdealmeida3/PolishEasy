@@ -4,81 +4,170 @@
     {
       "id": "a1-u01-d06-t01",
       "before": "a1-u01-d06-e01",
-      "title": { "en": "Listening" },
-      "body": { "en": "A listening Exercise plays its Polish as soon as it opens. Tap the speaker to hear it again, or Slow to hear it more slowly. In other Exercises, tap a speaker next to Polish text to hear it." }
+      "title": { "en": "ź and dź" },
+      "body": { "en": "Ź is the soft partner of ż, as ś is of sz: źle. Dź is like a soft English j, as in \"jeans\". Before a vowel they are spelt zi and dzi, which is why dzień, dziękuję and do widzenia sound the way they do." }
+    },
+    {
+      "id": "a1-u01-d06-t02",
+      "before": "a1-u01-d06-e03",
+      "title": { "en": "ń, dz and dż" },
+      "body": { "en": "Ń is like the ny in \"canyon\", and ni before a vowel is the same sound: nie, nieźle. Dz is like the ds in \"kids\": bardzo. Dż is like the j in \"jam\", and the Polish word dżem means just that." }
     }
   ],
   "exercises": [
     {
-      "type": "listen_choose",
+      "type": "choose_translation",
       "id": "a1-u01-d06-e01",
-      "text": "cześć",
-      "distractors": ["sześć", "część"],
-      "items": ["czesc"]
+      "prompt": "źle",
+      "options": [
+        { "en": "badly; bad" },
+        { "en": "well; OK" },
+        { "en": "great" }
+      ],
+      "correctOption": 0,
+      "items": ["zle"]
     },
     {
       "type": "listen_choose",
       "id": "a1-u01-d06-e02",
-      "text": "tak",
-      "distractors": ["tam", "jak"],
-      "items": ["tak"]
+      "text": "źle",
+      "distractors": ["żel", "cel"],
+      "items": ["zle"]
     },
     {
-      "type": "listen_choose",
+      "type": "choose_translation",
       "id": "a1-u01-d06-e03",
-      "text": "nie",
-      "distractors": ["nic", "mnie"],
-      "items": ["nie"]
+      "prompt": "nieźle",
+      "options": [
+        { "en": "badly; bad" },
+        { "en": "of course" },
+        { "en": "not bad" }
+      ],
+      "correctOption": 2,
+      "items": ["niezle"]
     },
     {
-      "type": "listen_type",
+      "type": "word_tiles",
       "id": "a1-u01-d06-e04",
-      "acceptedAnswers": ["dziękuję"],
-      "items": ["dziekuje"]
+      "prompt": { "en": "not bad, and you?" },
+      "acceptedAnswers": ["nieźle, a ty?"],
+      "distractors": ["źle", "tak"],
+      "items": ["niezle", "a-ty"]
     },
     {
       "type": "listen_choose",
       "id": "a1-u01-d06-e05",
-      "text": "dzień dobry",
-      "distractors": ["dobry wieczór", "dobranoc"],
-      "items": ["dzien-dobry"]
+      "text": "nieźle",
+      "distractors": ["niedziela", "nigdzie"],
+      "items": ["niezle"]
     },
     {
-      "type": "listen_type",
+      "type": "choose_translation",
       "id": "a1-u01-d06-e06",
-      "acceptedAnswers": ["proszę"],
-      "items": ["prosze"]
+      "prompt": "na razie",
+      "options": [
+        { "en": "once more" },
+        { "en": "just a moment" },
+        { "en": "see you; bye for now" }
+      ],
+      "correctOption": 2,
+      "items": ["na-razie"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d06-e07",
+      "prompt": { "en": "bye for now, have a nice day" },
+      "acceptedAnswers": ["na razie, miłego dnia"],
+      "distractors": ["dzień", "do"],
+      "items": ["na-razie", "milego-dnia"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d06-e08",
+      "prompt": "do zobaczenia",
+      "options": [
+        { "en": "good night" },
+        { "en": "see you" },
+        { "en": "see you tomorrow" }
+      ],
+      "correctOption": 1,
+      "items": ["do-zobaczenia"]
     },
     {
       "type": "listen_choose",
-      "id": "a1-u01-d06-e07",
-      "text": "do widzenia",
-      "distractors": ["dobranoc", "na razie"],
-      "items": ["do-widzenia"]
-    },
-    {
-      "type": "listen_type",
-      "id": "a1-u01-d06-e08",
-      "acceptedAnswers": ["dobranoc"],
-      "items": ["dobranoc"]
-    },
-    {
-      "type": "listen_type",
       "id": "a1-u01-d06-e09",
-      "acceptedAnswers": ["jak się masz?"],
-      "items": ["jak-sie-masz"]
+      "text": "do zobaczenia",
+      "distractors": ["do widzenia", "do usłyszenia"],
+      "items": ["do-zobaczenia"]
     },
     {
-      "type": "listen_type",
+      "type": "word_tiles",
       "id": "a1-u01-d06-e10",
-      "acceptedAnswers": ["dzień dobry"],
-      "items": ["dzien-dobry"]
+      "prompt": { "en": "bye for now, see you" },
+      "acceptedAnswers": ["na razie, do zobaczenia"],
+      "distractors": ["jutra", "nie"],
+      "items": ["na-razie", "do-zobaczenia"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d06-e11",
+      "prompt": "wiem",
+      "options": [
+        { "en": "I understand" },
+        { "en": "I know" },
+        { "en": "of course" }
+      ],
+      "correctOption": 1,
+      "items": ["wiem"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d06-e12",
+      "prompt": { "en": "I don't know" },
+      "acceptedAnswers": ["nie wiem"],
+      "distractors": ["tak", "może"],
+      "items": ["nie", "wiem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d06-e13",
+      "prompt": "rozumiem",
+      "options": [
+        { "en": "I understand" },
+        { "en": "I know" },
+        { "en": "sorry; excuse me" }
+      ],
+      "correctOption": 0,
+      "items": ["rozumiem"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d06-e14",
+      "prompt": { "en": "sorry, I don't understand" },
+      "acceptedAnswers": ["przepraszam, nie rozumiem"],
+      "distractors": ["wiem", "tak"],
+      "items": ["przepraszam", "nie", "rozumiem"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d06-e15",
+      "prompt": { "en": "I know, I understand" },
+      "acceptedAnswers": ["wiem, rozumiem"],
+      "distractors": ["nie", "tak"],
+      "items": ["wiem", "rozumiem"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u01-d06-e16",
+      "prompt": { "en": "badly" },
+      "acceptedAnswers": ["źle"],
+      "items": ["zle"]
     },
     {
       "type": "listen_type",
-      "id": "a1-u01-d06-e11",
-      "acceptedAnswers": ["na razie"],
-      "items": ["na-razie"]
+      "id": "a1-u01-d06-e17",
+      "acceptedAnswers": ["nic nie szkodzi"],
+      "items": ["nic-nie-szkodzi"]
     }
   ]
 }

@@ -1,0 +1,187 @@
+{
+  "id": "a1-u01-d07",
+  "tips": [
+    {
+      "id": "a1-u01-d07-t01",
+      "before": "a1-u01-d07-e01",
+      "title": { "en": "The Polish alphabet" },
+      "body": { "en": "The Polish alphabet has 32 letters: a ą b c ć d e ę f g h i j k l ł m n ń o ó p r s ś t u w y z ź ż. Q, v and x appear only in foreign words. Nine letters carry marks, and seven pairs of letters spell one sound each: ch, cz, dz, dź, dż, rz, sz. You have now met them all." }
+    },
+    {
+      "id": "a1-u01-d07-t02",
+      "before": "a1-u01-d07-e12",
+      "title": { "en": "Dziękuję is a verb" },
+      "body": { "en": "Dziękuję literally means \"I thank\". Polish verbs change their ending for each person, and the ending -my means \"we\": a couple says dziękujemy. Here are all six forms. Unit 2 teaches verbs properly." },
+      "conjugation": {
+        "verb": "dziękować",
+        "meaning": { "en": "to thank" },
+        "forms": { "ja": "dziękuję", "ty": "dziękujesz", "on": "dziękuje", "my": "dziękujemy", "wy": "dziękujecie", "oni": "dziękują" }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d07-e01",
+      "prompt": "witamy",
+      "options": [
+        { "en": "welcome" },
+        { "en": "goodbye" },
+        { "en": "see you" }
+      ],
+      "correctOption": 0,
+      "items": ["witamy"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d07-e02",
+      "text": "witamy",
+      "distractors": ["witam", "witaj"],
+      "items": ["witamy"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d07-e03",
+      "prompt": { "en": "hello, welcome" },
+      "acceptedAnswers": ["dzień dobry, witamy"],
+      "distractors": ["dnia", "pa"],
+      "items": ["dzien-dobry", "witamy"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d07-e04",
+      "prompt": "na zdrowie",
+      "options": [
+        { "en": "cheers (a toast); bless you (after a sneeze)" },
+        { "en": "enjoy your meal" },
+        { "en": "good night" }
+      ],
+      "correctOption": 0,
+      "items": ["na-zdrowie"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d07-e05",
+      "text": "na zdrowie",
+      "distractors": ["zdrowy", "na drodze"],
+      "items": ["na-zdrowie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d07-e06",
+      "prompt": "gratulacje",
+      "options": [
+        { "en": "welcome" },
+        { "en": "thank you" },
+        { "en": "congratulations" }
+      ],
+      "correctOption": 2,
+      "items": ["gratulacje"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d07-e07",
+      "prompt": { "en": "congratulations, cheers (a toast)" },
+      "acceptedAnswers": ["gratulacje, na zdrowie"],
+      "distractors": ["tak", "dnia"],
+      "items": ["gratulacje", "na-zdrowie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d07-e08",
+      "prompt": "powodzenia",
+      "options": [
+        { "en": "goodbye" },
+        { "en": "good luck" },
+        { "en": "congratulations" }
+      ],
+      "correctOption": 1,
+      "items": ["powodzenia"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d07-e09",
+      "text": "powodzenia",
+      "distractors": ["do widzenia", "pozdrowienia"],
+      "items": ["powodzenia"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d07-e10",
+      "prompt": { "en": "good luck, goodbye" },
+      "acceptedAnswers": ["powodzenia, do widzenia"],
+      "distractors": ["jutra", "pa"],
+      "items": ["powodzenia", "do-widzenia"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u01-d07-e11",
+      "acceptedAnswers": ["gratulacje"],
+      "items": ["gratulacje"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d07-e12",
+      "prompt": "dziękujemy",
+      "options": [
+        { "en": "we are sorry" },
+        { "en": "welcome" },
+        { "en": "thank you (from us)" }
+      ],
+      "correctOption": 2,
+      "items": ["dziekujemy"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d07-e13",
+      "verb": "dziękować",
+      "meaning": { "en": "to thank" },
+      "person": "my",
+      "acceptedAnswers": ["dziękujemy"],
+      "items": ["dziekujemy"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d07-e14",
+      "verb": "dziękować",
+      "meaning": { "en": "to thank" },
+      "person": "my",
+      "sentence": "___, nawzajem.",
+      "sentenceMeaning": { "en": "Thank you (from us), you too." },
+      "acceptedAnswers": ["dziękujemy"],
+      "items": ["dziekujemy", "nawzajem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d07-e15",
+      "prompt": "przepraszamy",
+      "options": [
+        { "en": "thank you (from us)" },
+        { "en": "welcome" },
+        { "en": "we are sorry" }
+      ],
+      "correctOption": 2,
+      "items": ["przepraszamy"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d07-e16",
+      "verb": "przepraszać",
+      "meaning": { "en": "to apologise" },
+      "person": "my",
+      "acceptedAnswers": ["przepraszamy"],
+      "items": ["przepraszamy"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u01-d07-e17",
+      "verb": "przepraszać",
+      "meaning": { "en": "to apologise" },
+      "person": "my",
+      "sentence": "Bardzo ___.",
+      "sentenceMeaning": { "en": "We are very sorry." },
+      "acceptedAnswers": ["przepraszamy"],
+      "items": ["przepraszamy", "bardzo"]
+    }
+  ]
+}

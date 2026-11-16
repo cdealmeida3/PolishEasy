@@ -15,3 +15,7 @@ The five default labels: `needs-triage`, `needs-info`, `ready-for-agent`, `ready
 ### Domain docs
 
 Single-context: one `GLOSSARY.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
+
+### Authoring content
+
+Read `docs/authoring.md` before writing or changing a Daily Set, and `docs/a1-path.md` for what each Unit of the A1 Path covers.

@@ -49,7 +49,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 
 ### Shipping rules
 
-- **Sizes.** A Daily Set has 6 to 18 Exercises and introduces at most 8 new Items. (Constants `DAILY_SET_EXERCISES` and `MAX_NEW_ITEMS`. The lower limit is 6 only while the first Unit holds placeholder days; issue #18 raises it to 12.)
+- **Sizes.** A Daily Set has 12 to 18 Exercises and introduces at most 8 new Items. (Constants `DAILY_SET_EXERCISES` and `MAX_NEW_ITEMS`.)
 - **Items.** Every Exercise lists at least one Item, and every Item is practised by at least 2 Exercises (`MIN_EXERCISES_PER_ITEM`), so Review has something to vary.
 - **Choices.** A `choose_translation` Exercise has at least 2 options, and no two read the same.
 - **Base Language.** Everything the Learner reads in the Base Language has English text that is not blank: Level and Unit titles, Tip titles and bodies, the meaning in a conjugation table, the options of `choose_translation`, the prompt of `type_answer` and `word_tiles`, the `meaning` and `sentenceMeaning` of `conjugation`, and the `meaning` of an Item. (`BASE_LANGUAGES` lists the languages required.)
@@ -60,7 +60,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 
 When a listed file cannot be read, the rules that count across files (an Item's Exercises, Clips nothing speaks, identifiers that are gone) are skipped until it can, so that one broken file is one problem.
 
-The checker does not judge whether the Polish is correct. That is issue #16.
+The checker does not judge whether the Polish is correct. That is issue #16. Nor does it judge how the content teaches: the rules for that are in [authoring.md](authoring.md), and `AuthoredContentTest` holds the content to the ones a test can check.
 
 ## Identifiers that have shipped
 

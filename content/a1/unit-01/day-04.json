@@ -4,74 +4,175 @@
     {
       "id": "a1-u01-d04-t01",
       "before": "a1-u01-d04-e01",
-      "title": { "en": "Building sentences" },
-      "body": { "en": "Tap the words in the right order to build the Polish sentence. Tap a word in your answer to put it back. Not every word is needed." }
+      "title": { "en": "ł" },
+      "body": { "en": "Ł sounds like the English w in \"water\", so miło is \"MEE-wo\". Remember that the Polish letter w is said like v." }
+    },
+    {
+      "id": "a1-u01-d04-t02",
+      "before": "a1-u01-d04-e07",
+      "title": { "en": "Two spellings, one sound" },
+      "body": { "en": "Ch and h are the same sound, a strong h: słucham, halo. Ó and u are also the same sound, like the oo in \"boot\" but shorter: wieczór. Only the spelling differs, just as with rz and ż." }
     }
   ],
   "exercises": [
     {
-      "type": "word_tiles",
+      "type": "choose_translation",
       "id": "a1-u01-d04-e01",
-      "prompt": { "en": "good morning" },
-      "acceptedAnswers": ["dzień dobry"],
-      "distractors": ["wieczór", "dobranoc"],
-      "items": ["dzien-dobry"]
+      "prompt": "miło mi",
+      "options": [
+        { "en": "nice to meet you" },
+        { "en": "have a nice day" },
+        { "en": "good night" }
+      ],
+      "correctOption": 0,
+      "items": ["milo-mi"]
     },
     {
-      "type": "word_tiles",
+      "type": "type_answer",
       "id": "a1-u01-d04-e02",
-      "prompt": { "en": "good evening" },
-      "acceptedAnswers": ["dobry wieczór"],
-      "distractors": ["dzień", "dobranoc"],
-      "items": ["dobry-wieczor"]
+      "prompt": { "en": "nice to meet you" },
+      "acceptedAnswers": ["miło mi", "bardzo mi miło", "miło cię poznać", "miło mi cię poznać"],
+      "items": ["milo-mi"]
     },
     {
-      "type": "word_tiles",
+      "type": "choose_translation",
       "id": "a1-u01-d04-e03",
-      "prompt": { "en": "goodbye" },
-      "acceptedAnswers": ["do widzenia"],
-      "distractors": ["na", "razie"],
-      "items": ["do-widzenia"]
+      "prompt": "miłego dnia",
+      "options": [
+        { "en": "nice to meet you" },
+        { "en": "see you tomorrow" },
+        { "en": "have a nice day" }
+      ],
+      "correctOption": 2,
+      "items": ["milego-dnia"]
     },
     {
-      "type": "word_tiles",
+      "type": "choose_translation",
       "id": "a1-u01-d04-e04",
-      "prompt": { "en": "how are you?" },
-      "acceptedAnswers": ["jak się masz?"],
-      "distractors": ["tak", "nie"],
-      "items": ["jak-sie-masz"]
+      "prompt": "nawzajem",
+      "options": [
+        { "en": "likewise; you too" },
+        { "en": "everything" },
+        { "en": "maybe" }
+      ],
+      "correctOption": 0,
+      "items": ["nawzajem"]
     },
     {
       "type": "word_tiles",
       "id": "a1-u01-d04-e05",
-      "prompt": { "en": "hi, how are you?" },
-      "acceptedAnswers": ["cześć, jak się masz?"],
-      "distractors": ["dobranoc", "dobrze"],
-      "items": ["czesc", "jak-sie-masz"]
+      "prompt": { "en": "thank you, you too" },
+      "acceptedAnswers": ["dziękuję, nawzajem"],
+      "distractors": ["miło", "nie"],
+      "items": ["dziekuje", "nawzajem"]
     },
     {
       "type": "word_tiles",
       "id": "a1-u01-d04-e06",
-      "prompt": { "en": "good, thank you" },
-      "acceptedAnswers": ["dobrze, dziękuję", "dziękuję, dobrze"],
-      "distractors": ["proszę", "nie"],
-      "items": ["dobrze", "dziekuje"]
+      "prompt": { "en": "thanks, have a nice day" },
+      "acceptedAnswers": ["dzięki, miłego dnia"],
+      "distractors": ["miło", "dzień"],
+      "items": ["dzieki", "milego-dnia"]
     },
     {
-      "type": "word_tiles",
+      "type": "choose_translation",
       "id": "a1-u01-d04-e07",
-      "prompt": { "en": "no, thank you" },
-      "acceptedAnswers": ["nie, dziękuję", "dziękuję, nie"],
-      "distractors": ["tak", "proszę"],
-      "items": ["nie", "dziekuje"]
+      "prompt": "dobry wieczór",
+      "options": [
+        { "en": "good evening" },
+        { "en": "good night" },
+        { "en": "have a nice day" }
+      ],
+      "correctOption": 0,
+      "items": ["dobry-wieczor"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d04-e08",
+      "text": "dobry wieczór",
+      "distractors": ["dobry wybór", "dobry humor"],
+      "items": ["dobry-wieczor"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d04-e09",
+      "prompt": "halo",
+      "options": [
+        { "en": "goodbye" },
+        { "en": "good evening" },
+        { "en": "hello (on the phone)" }
+      ],
+      "correctOption": 2,
+      "items": ["halo"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d04-e10",
+      "text": "halo",
+      "distractors": ["hala", "chyba"],
+      "items": ["halo"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d04-e11",
+      "prompt": "słucham",
+      "options": [
+        { "en": "sorry; excuse me" },
+        { "en": "hello? (on the phone); pardon?" },
+        { "en": "just a moment" }
+      ],
+      "correctOption": 1,
+      "items": ["slucham"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d04-e12",
+      "text": "słucham",
+      "distractors": ["szukam", "słuchasz"],
+      "items": ["slucham"]
     },
     {
       "type": "word_tiles",
-      "id": "a1-u01-d04-e08",
-      "prompt": { "en": "yes, please" },
-      "acceptedAnswers": ["tak, proszę"],
-      "distractors": ["nie", "dziękuję"],
-      "items": ["tak", "prosze"]
+      "id": "a1-u01-d04-e13",
+      "prompt": { "en": "hello? (answering the phone)" },
+      "acceptedAnswers": ["halo, słucham", "słucham, halo", "halo", "słucham"],
+      "distractors": ["pa", "miło"],
+      "items": ["halo", "slucham"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u01-d04-e14",
+      "prompt": "chwileczkę",
+      "options": [
+        { "en": "once more" },
+        { "en": "just a moment" },
+        { "en": "likewise; you too" }
+      ],
+      "correctOption": 1,
+      "items": ["chwileczke"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d04-e15",
+      "text": "chwileczkę",
+      "distractors": ["chwileczka", "chwila"],
+      "items": ["chwileczke"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d04-e16",
+      "prompt": { "en": "just a moment, please" },
+      "acceptedAnswers": ["chwileczkę, proszę", "proszę chwileczkę"],
+      "distractors": ["halo", "nie"],
+      "items": ["chwileczke", "prosze"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u01-d04-e17",
+      "prompt": { "en": "good evening, nice to meet you" },
+      "acceptedAnswers": ["dobry wieczór, miło mi"],
+      "distractors": ["dnia", "dobranoc"],
+      "items": ["dobry-wieczor", "milo-mi"]
     }
   ]
 }
