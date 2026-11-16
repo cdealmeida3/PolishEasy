@@ -31,7 +31,7 @@ import com.polisheasy.app.ui.screens.SummaryScreen
 import com.polisheasy.app.ui.screens.TipScreen
 import com.polisheasy.app.ui.screens.description
 import com.polisheasy.app.ui.screens.fraction
-import com.polisheasy.engine.SetProgress
+import com.polisheasy.engine.StepProgress
 import com.polisheasy.app.ui.screens.WelcomeScreen
 
 /** [player] plays the Clips, and is released when the app's screens go. */
@@ -45,8 +45,8 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
         when (val screen = viewModel.screen) {
             Screen.Welcome -> WelcomeScreen(onStart = viewModel::startFromWelcome)
             is Screen.Home, is Screen.Path, is Screen.Settings -> Tabs(screen, viewModel)
-            is Screen.Tip -> DailySet(screen, screen.shown, screen.progress, viewModel, player)
-            is Screen.Player -> DailySet(screen, screen.shown, screen.progress, viewModel, player)
+            is Screen.Tip -> DailySet(screen, screen.shown, screen.steps, viewModel, player)
+            is Screen.Player -> DailySet(screen, screen.shown, screen.steps, viewModel, player)
             is Screen.Summary -> {
                 BackHandler(onBack = viewModel::leaveDailySet)
                 SummaryScreen(
@@ -64,6 +64,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
                         viewModel.leaveDailySet()
                     },
                     reminder = screen.reminder,
+                    unitCompleted = screen.unitCompleted,
                     onRemind = viewModel::acceptReminder,
                 )
             }
@@ -76,7 +77,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
  * out while the new one slides in, and only the new one answers taps.
  */
 @Composable
-private fun DailySet(screen: Screen, shown: Int, progress: SetProgress, viewModel: CourseViewModel, player: Clips) {
+private fun DailySet(screen: Screen, shown: Int, progress: StepProgress, viewModel: CourseViewModel, player: Clips) {
     val context = LocalContext.current
     val current by rememberUpdatedState(shown)
     BackHandler(onBack = viewModel::leaveDailySet)
@@ -100,7 +101,12 @@ private fun DailySet(screen: Screen, shown: Int, progress: SetProgress, viewMode
             }
         }
         when (val showing = held[0]) {
-            is Screen.Tip -> TipScreen(showing.tip, onContinue = moveOn)
+            is Screen.Tip -> TipScreen(
+                showing.tip,
+                clipOf = viewModel::clipOf,
+                onPlay = { clip -> live { player.play(clip.path) } },
+                onContinue = moveOn,
+            )
             is Screen.Player -> PlayerScreen(
                 showing.exercise,
                 showing.review,
@@ -174,7 +180,7 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
             )
             is Screen.Path -> {
                 BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)
-                PathScreen(showing.path, onReplay = viewModel::replay, onOpenTodays = viewModel::openTodays)
+                PathScreen(showing.path, onReplay = viewModel::replay, onOpenTodays = viewModel::openTodays, today = showing.today, started = showing.started)
             }
             is Screen.Settings -> {
                 BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)

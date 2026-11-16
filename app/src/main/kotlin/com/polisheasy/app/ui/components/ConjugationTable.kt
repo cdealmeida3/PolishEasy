@@ -13,10 +13,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.polisheasy.app.ui.theme.Edge
 import com.polisheasy.app.ui.theme.Space
+import androidx.compose.ui.Alignment
+import com.polisheasy.app.ui.theme.inPolish
 
-/** A verb's forms, one row per person: the Polish pronouns as [rows]' first, the form as their second. */
+/** One row of a [ConjugationTable]: the Polish [pronouns], the verb's [form], and the [speaker] that says the form, if it can be heard. */
+class ConjugationRowView(val pronouns: String, val form: String, val speaker: (@Composable () -> Unit)? = null)
+
+/** A verb's forms, one row per person: the Polish pronouns, the form, and its speaker at the end when it has one. */
 @Composable
-fun ConjugationTable(title: String, rows: List<Pair<String, String>>, modifier: Modifier = Modifier) {
+fun ConjugationTable(title: String, rows: List<ConjugationRowView>, modifier: Modifier = Modifier) {
     Surface(
         color = MaterialTheme.colorScheme.secondaryContainer,
         contentColor = MaterialTheme.colorScheme.onSecondaryContainer,
@@ -26,15 +31,16 @@ fun ConjugationTable(title: String, rows: List<Pair<String, String>>, modifier: 
     ) {
         Column(modifier = Modifier.padding(Space.m), verticalArrangement = Arrangement.spacedBy(Space.xs)) {
             Text(title, style = MaterialTheme.typography.titleLarge)
-            rows.forEach { (pronouns, form) ->
-                Row(modifier = Modifier.fillMaxWidth()) {
+            rows.forEach { row ->
+                Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
                     Text(
-                        pronouns,
+                        row.pronouns,
                         style = MaterialTheme.typography.bodyLarge,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.weight(1f),
                     )
-                    Text(form, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+                    Text(row.form, style = MaterialTheme.typography.titleMedium.inPolish(), modifier = Modifier.weight(1f))
+                    row.speaker?.invoke()
                 }
             }
         }

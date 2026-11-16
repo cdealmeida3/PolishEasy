@@ -124,7 +124,7 @@ Two families. **Nunito** (SIL Open Font Licence, covers every Polish letter) is 
 | `titleLarge` | Nunito | Bold 700 | 20 / 26 | Card titles, the feedback heading |
 | `titleMedium` | Nunito | SemiBold 600 | 18 / 24 | Option cards, word tiles, Polish key row, text a Learner types |
 | `titleSmall` | Nunito | Bold 700 | 14 / 20 | Unit headers, small headings |
-| `bodyLarge` | System | Regular 400 | 16 / 24 | A Tip's body, the correct answer in feedback |
+| `bodyLarge` | System | Regular 400 | 16 / 24 | A Tip's sentences after its lead, the correct answer in feedback |
 | `bodyMedium` | System | Regular 400 | 14 / 20 | Secondary text, meanings under Polish words |
 | `bodySmall` | System | Regular 400 | 12 / 16 | Not used yet |
 | `labelLarge` | Nunito | Bold 700 | 16 / 24 | Buttons |
@@ -194,7 +194,9 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`PromptCard`**: what an Exercise asks about, set apart at the top: `surfaceContainerHigh`, `large` corners, at least 96 high, 24 at the sides, the prompt in `onSurface` and its `SpeakerButton` at the end when it can be heard. No border and no edge: it is not tapped.
 - **`PromptChip`**: the verb and the person of a conjugation Exercise in one small label ("być · I (ja)"): `titleSmall` on a `secondaryContainer` pill with a 1 dp `outlineVariant` border.
 - **`SentenceField`**: the sentence of a conjugation Exercise in `headlineMedium`, with the gap drawn as a slot the Learner types into: `secondaryContainer`, `small` corners, at least 96 wide, growing with what is typed, with a 2 dp border in `outline`, `primary` while it has focus. The meaning of the sentence is under it in `bodyLarge` in `onSurfaceVariant`. A conjugation Exercise with no sentence has the chip and an `AnswerField` at the bottom.
-- **`ProgressBar`**: 12 high, fully rounded, `brand` on `surfaceContainer`.
+- **`ProgressBar`**: 12 high, fully rounded, `brand` on `surfaceContainer`. In a Daily Set it counts steps, the Tips read and the Exercises answered correctly, so it moves the first time Continue is tapped on a Tip; a screen reader hears "3 of 9 steps done".
+- **`TipPoints`**: a Tip's prose in bites. Its first sentence is the lead, in `titleMedium`; each sentence after it is on a line of its own in `bodyLarge` behind an 8 `primary` dot, 12 apart. The content is not changed: the screen splits the body at its full stops.
+- **`ConjugationTable`** rows end in a `SpeakerButton` when the form has a Clip.
 - **`PlayButton`**: 72 across in `brand` with the speaker icon in `onBrand`, for listening Exercises. A circle at rest and a rounded square with `large` corners while a Clip plays. **`SpeakerButton`**, the small speaker beside Polish text, is a 40 circle in `primaryContainer` with the icon in `onPrimaryContainer`, inside a 48 touch area, so it reads as a button; it grows with the font size. On the feedback panel it has no field and takes the panel's accent.
 - **`TopBar`**: Path and Settings have a `headlineSmall` title, and the Path a `bodyLarge` line under it in `onSurfaceVariant`. Home has a greeting in its place (see Home). Inside a Daily Set it is the close button and the progress bar only.
 - **`NavigationFrame`**, the navigation bar: Home, Path, Settings, with icons and `labelSmall` labels, on `surfaceContainer`. The selected one has a `primaryContainer` pill behind a `primary` icon and its label in `onSurface`; the others are `onSurfaceVariant`. Hidden inside a Daily Set and on the Summary. Back from the Path or Settings goes to Home. Moving between tabs is a fade-through; the pill moves as Material's own navigation bar moves it.
@@ -261,9 +263,13 @@ Home scrolls if the font size makes it too tall. Nothing on it moves at rest. Co
 The Path answers where the Learner is and how far they have come.
 
 - **The title** is the Level's name and "Path" ("A1 Path"), with "10 of 23 Daily Sets completed" under it.
-- **A `UnitCard` for each Unit**, 16 apart, each holding its Daily Sets as `TrailStop`s.
+- **A `UnitCard` for each Unit**, 16 apart, each holding its Daily Sets as `TrailStop`s and ending in a `TrailMilestone`.
+- **The road ahead is told a little at a time.** A Unit the Learner has not reached is only its heading, "Unit 3", its title and "8 Daily Sets · Locked", with an arrow; tapping the heading opens it and tapping again closes it.
+- **Completed stops are compact**, with a 40 node. **Today's stop has the room**: its ring, "Today", its title, what else it teaches ("Also today") and a `PrimaryButton`, Start or Continue, right there. The whole stop can still be tapped.
+- **A locked stop does not say "Locked"**: its padlock does, and a screen reader is still told. The next stop says "Unlocks tomorrow".
+- **`TrailMilestone`**: the end of a Unit's trail, a 40 circle with a star. Grey with "End of Unit 2" until every Daily Set of the Unit is completed, then `streak` with "Unit 2 complete". The Summary of the Daily Set that completes a Unit says "Unit 2 complete" with the Unit's title in place of "Daily Set complete", and its confetti is doubled, once.
 - **A Daily Set's title is the title of its first Tip** (`docs/authoring.md`). A Daily Set with no Tip shows "Daily Set N" in its place, numbered within its Unit.
-- **Three states, each with its own icon**: a tick (completed), a play arrow in a ring (today), a lock (locked). The words under the title say the same.
+- **Three states, each with its own icon**: a tick (completed), a play arrow in a ring (today), a lock (locked).
 - **It opens at the stop the Learner is at**: the first Daily Set not yet completed. If that stop is within the top 60% of the screen when its Unit's card is at the top, the Path opens at the top of the card; otherwise the stop sits a third of the way down. With every Daily Set completed it opens at the top.
 - **Tapping** a completed stop starts a Replay, today's opens today's Daily Set, a locked one does nothing.
 - With every Daily Set completed, a line after the last Unit says more Units are on the way.

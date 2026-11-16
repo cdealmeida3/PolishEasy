@@ -67,6 +67,15 @@ data class ItemView(val text: String, val meaning: String)
  */
 data class SetProgress(val correct: Int, val total: Int)
 
+/**
+ * How far through the Daily Set the Learner is, counted in steps: the Tips read and the Exercises
+ * answered correctly, out of all of them. It moves from the first tap, on a Tip.
+ */
+data class StepProgress(val done: Int, val total: Int)
+
+/** A Unit the Learner has just completed: its number in its Level, from 1, and its title. */
+data class UnitCompletedView(val number: Int, val title: String)
+
 /** A Tip as the Learner sees it, in the Base Language. */
 data class TipView(val title: String, val body: String, val conjugation: ConjugationTableView? = null)
 
@@ -438,6 +447,7 @@ class CourseEngine(
         val set = playing.dailySet
         val state = playing.state
         val total = total(playing)
+        tipShowing = false
         val exerciseId = state.remaining.firstOrNull()
             // First-attempt correct: every Exercise that was never answered wrongly.
             ?: return Step.ShowSummary(
@@ -455,6 +465,7 @@ class CourseEngine(
         if (tip != null) {
             // Saved with the next answer: a Tip seen but not followed by an answer is shown again on resume.
             playing.state = state.copy(shownTips = state.shownTips + tip.id)
+            tipShowing = true
             return Step.ShowTip(view(tip), progressOf(playing), replay = playing.replay)
         }
         return Step.ShowExercise(
@@ -498,6 +509,37 @@ class CourseEngine(
 
     private fun reviewOnly(state: DailySetInProgress, sound: Boolean): Playing =
         Playing(DailySet(REVIEW_ONLY_ID, exercises = emptyList()), state, reviewOnly = true, sound = sound)
+
+    /** Whether the step last given by [next] was a Tip, which is then being read and not yet done. */
+    private var tipShowing = false
+
+    /**
+     * How far through the Daily Set being played the Learner is, in steps. A Tip counts once the
+     * Learner has moved on from it, so the bar moves with the first tap. Call it while a Daily Set
+     * is being played.
+     */
+    fun stepProgress(): StepProgress {
+        val playing = current()
+        val tips = playing.dailySet.tips.map { it.id }.toSet()
+        val read = playing.state.shownTips.count { it in tips } - if (tipShowing) 1 else 0
+        val exercises = total(playing)
+        return StepProgress(done = read + exercises - playing.state.remaining.size, total = tips.size + exercises)
+    }
+
+    /**
+     * The Unit the Daily Set just played completed, or null: when it was not the last of its Unit,
+     * is not finished, or was a Replay or a Review-only Daily Set.
+     */
+    fun unitCompleted(): UnitCompletedView? {
+        val playing = playing ?: return null
+        if (playing.replay || playing.reviewOnly || playing.state.remaining.isNotEmpty()) return null
+        for (level in course.levels) {
+            level.units.forEachIndexed { index, unit ->
+                if (unit.dailySets.lastOrNull()?.id == playing.dailySet.id) return UnitCompletedView(index + 1, localize(unit.title))
+            }
+        }
+        return null
+    }
 
     private fun progressOf(playing: Playing): SetProgress {
         val total = total(playing)

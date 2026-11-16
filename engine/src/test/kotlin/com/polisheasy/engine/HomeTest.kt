@@ -235,4 +235,36 @@ class HomeTest {
         (3..6).forEach { learner.playDay(march(it)) }
         assertNull(learner.openApp().completedToday())
     }
+
+    @Test
+    fun `a Daily Set's progress counts its Tips as steps, and moves when the first Tip is left`() {
+        val engine = newLearnerEngine()
+        check(engine.startDailySet() is Step.ShowTip)
+        val steps = engine.stepProgress()
+        assertEquals(0, steps.done)
+
+        // Moving on from the Tip is the first step done, before any Exercise is answered.
+        val after = engine.next()
+        assertEquals(StepProgress(done = 1, total = steps.total), engine.stepProgress())
+
+        engine.playToSummary(after)
+        assertEquals(StepProgress(done = steps.total, total = steps.total), engine.stepProgress())
+    }
+
+    @Test
+    fun `the Daily Set that ends a Unit completes it, and a Replay of it does not`() {
+        val learner = learner()
+        learner.playDay(march(2))
+        learner.clock.moveTo(march(3))
+        val engine = learner.openApp()
+        assertNull(engine.unitCompleted())
+
+        learner.play(engine, engine.startDailySet(), answers = 0)
+        assertNull(engine.unitCompleted())
+        learner.play(engine, engine.next())
+        assertEquals(UnitCompletedView(number = 1, title = "Greetings"), engine.unitCompleted())
+
+        learner.play(engine, engine.startReplay("d2"))
+        assertNull(engine.unitCompleted())
+    }
 }

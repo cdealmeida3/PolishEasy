@@ -1,5 +1,7 @@
 package com.polisheasy.app
 
+import androidx.compose.ui.test.performScrollTo
+import com.polisheasy.engine.UnitCompletedView
 import com.polisheasy.engine.SoFarView
 import android.app.Application
 import android.content.ComponentName
@@ -155,11 +157,13 @@ class ScreenshotsTest {
                             correctAnswers = if (replay) 6 else 9,
                             exercises = if (replay) 6 else 12,
                             itemsLearned = if (showing >= 2) words else emptyList(),
+                            unitCompleted = if (showing == 3) UnitCompletedView(2, "About me") else null,
                             reviewOnly = showing == 0,
                             replay = replay,
                             streakRaised = when (showing) {
                                 0 -> StreakRaised(from = 11, to = 12)
                                 2 -> StreakRaised(from = 6, to = 7)
+                                3 -> StreakRaised(from = 15, to = 16)
                                 else -> null
                             },
                             week = week,
@@ -176,6 +180,8 @@ class ScreenshotsTest {
         shot("$theme-19-summary-replay")
         showing = 2
         shot("$theme-19-summary-streak-milestone")
+        showing = 3
+        shot("$theme-19-summary-unit-complete")
     }
 
     @Test
@@ -317,7 +323,12 @@ class ScreenshotsTest {
                             selected = 1,
                             onSelect = {},
                         ) {
-                            PathScreen(states[showing].second, onReplay = {}, onOpenTodays = {})
+                            PathScreen(
+                                states[showing].second,
+                                onReplay = {},
+                                onOpenTodays = {},
+                                today = NextDailySetView(2, "About me", 4, 8, teaches = listOf("Czy and nie", "Pan and pani")).takeIf { showing == 0 },
+                            )
                         }
                     }
                 }
@@ -327,6 +338,13 @@ class ScreenshotsTest {
             showing = index
             shot("$theme-$name")
         }
+        // A Unit still ahead is only its heading until it is tapped open.
+        showing = 0
+        screen.onNodeWithText("Numbers and family").performScrollTo()
+        shot("$theme-27-path-unit-ahead")
+        screen.onNodeWithText("Numbers and family").performClick()
+        screen.onNodeWithText("The teens").performScrollTo()
+        shot("$theme-27-path-unit-opened")
     }
 
     @Test

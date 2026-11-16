@@ -26,6 +26,8 @@ import java.time.Clock
 import java.time.LocalTime
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.SoFarView
+import com.polisheasy.engine.StepProgress
+import com.polisheasy.engine.UnitCompletedView
 
 /** What the app is showing. Every rule behind it lives in the course engine. */
 sealed interface Screen {
@@ -49,7 +51,8 @@ sealed interface Screen {
         val replayToday: Boolean = false,
     ) : Screen
 
-    data class Path(val path: PathView) : Screen
+    /** [today] is today's Daily Set as Home names it, for the stop the Learner is at; [started] when it is in progress. */
+    data class Path(val path: PathView, val today: NextDailySetView? = null, val started: Boolean = false) : Screen
 
     /**
      * [notificationsAllowed] is whether Android lets the app show notifications at all.
@@ -63,7 +66,14 @@ sealed interface Screen {
     ) : Screen
 
     /** [shown] is different for each step shown. [replay] when the Tip belongs to a Replay. */
-    data class Tip(val tip: TipView, val progress: SetProgress, val shown: Int, val replay: Boolean) : Screen
+    data class Tip(
+        val tip: TipView,
+        val progress: SetProgress,
+        val shown: Int,
+        val replay: Boolean,
+        /** How far through the Daily Set this is, in steps: what the bar shows. */
+        val steps: StepProgress = StepProgress(0, 0),
+    ) : Screen
 
     data class Player(
         val exercise: ExerciseView,
@@ -81,6 +91,8 @@ sealed interface Screen {
         val gloss: String? = null,
         /** Whether Polish may be played without the Learner tapping a speaker: sound is on and they can listen now. */
         val canListen: Boolean = false,
+        /** How far through the Daily Set this is, in steps: what the bar shows. */
+        val steps: StepProgress = StepProgress(0, 0),
     ) : Screen
 
     data class Summary(
@@ -97,6 +109,8 @@ sealed interface Screen {
         val week: List<DayView> = emptyList(),
         /** The Reminder as this Summary offers it, or null when it does not: it is offered once, while it is off. */
         val reminder: ReminderOffer? = null,
+        /** The Unit this Daily Set completed, or null when it completed none. */
+        val unitCompleted: UnitCompletedView? = null,
     ) : Screen
 }
 
@@ -146,8 +160,10 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
     fun resumeDailySet() = show(engine.resumeDailySet(sound = settings.soundOn))
 
     fun openPath() {
-        screen = Screen.Path(engine.path())
+        screen = path()
     }
+
+    private fun path() = Screen.Path(engine.path(), engine.nextDailySet(), started = engine.today() is Today.InProgress)
 
     fun replay(dailySetId: String) {
         replayFromHome = false
@@ -226,7 +242,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
         when (val current = screen) {
             // Home keeps what it is in the middle of showing: arriving from the Summary is itself a moment that asks again.
             is Screen.Home -> screen = home().copy(streakRaisedFrom = current.streakRaisedFrom)
-            is Screen.Path -> screen = Screen.Path(engine.path())
+            is Screen.Path -> screen = path()
             is Screen.Settings -> screen = settingsScreen()
             else -> Unit
         }
@@ -297,7 +313,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
 
     private fun show(step: Step) {
         screen = when (step) {
-            is Step.ShowTip -> Screen.Tip(step.tip, step.progress, shown = ++stepsShown, replay = step.replay)
+            is Step.ShowTip -> Screen.Tip(step.tip, step.progress, shown = ++stepsShown, replay = step.replay, steps = engine.stepProgress())
             is Step.ShowExercise -> Screen.Player(
                 step.exercise,
                 step.progress,
@@ -306,6 +322,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
                 replay = step.replay,
                 exerciseId = step.exerciseId,
                 canListen = engine.canListen(),
+                steps = engine.stepProgress(),
             )
             is Step.ShowSummary -> Screen.Summary(
                 step.correctAnswers,
@@ -316,6 +333,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
                 streakRaised = streakRaised.takeUnless { step.replay },
                 week = engine.thisWeek(),
                 reminder = reminderOffer(step.replay),
+                unitCompleted = engine.unitCompleted(),
             ).also { streakRaised = null }
         }
     }

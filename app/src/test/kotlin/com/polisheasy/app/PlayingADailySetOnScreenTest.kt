@@ -592,8 +592,9 @@ class PlayingADailySetOnScreenTest {
 
     private fun noSpeaker() = screen.onNodeWithContentDescription(text(R.string.audio_play)).assertDoesNotExist()
 
+    /** The bar counts steps: the Tip that opens Daily Set 1, which has been read by now, and its six Exercises. */
     private fun showsProgress(correct: Int) {
-        screen.onNodeWithContentDescription(text(R.string.progress_description, correct, 6)).assertIsDisplayed()
+        screen.onNodeWithContentDescription(text(R.string.progress_description, correct + 1, 7)).assertIsDisplayed()
     }
 
     /** What Home says once today's Daily Set is completed. */

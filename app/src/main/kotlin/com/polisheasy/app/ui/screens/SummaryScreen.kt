@@ -52,6 +52,7 @@ import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 import com.polisheasy.app.ReminderOffer
 import com.polisheasy.app.ui.components.OfferCard
+import com.polisheasy.engine.UnitCompletedView
 
 /** The Streaks that get a bigger celebration, once each: a week, a month and a hundred days. */
 private val MILESTONES = mapOf(
@@ -81,6 +82,7 @@ internal fun SummaryScreen(
     onDone: () -> Unit,
     reminder: ReminderOffer? = null,
     onRemind: () -> Unit = {},
+    unitCompleted: UnitCompletedView? = null,
 ) {
     val context = LocalContext.current
     // Whether the Learner refused the permission here, so the offer can say where to turn it on later.
@@ -123,17 +125,25 @@ internal fun SummaryScreen(
                 )
                 Spacer(Modifier.height(Space.xs))
                 Text(
-                    stringResource(
-                        when {
-                            replay -> R.string.summary_replay_title
-                            reviewOnly -> R.string.summary_review_only_title
-                            else -> R.string.summary_title
-                        },
-                    ),
+                    when {
+                        replay -> stringResource(R.string.summary_replay_title)
+                        reviewOnly -> stringResource(R.string.summary_review_only_title)
+                        // The Daily Set that ends a Unit says so: finishing a Unit is the bigger thing.
+                        unitCompleted != null -> stringResource(R.string.summary_unit_complete, unitCompleted.number)
+                        else -> stringResource(R.string.summary_title)
+                    },
                     style = MaterialTheme.typography.titleLarge,
                     color = MaterialTheme.colorScheme.onSurface,
                     textAlign = TextAlign.Center,
                 )
+                if (unitCompleted != null && !replay && !reviewOnly) {
+                    Text(
+                        unitCompleted.title,
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        textAlign = TextAlign.Center,
+                    )
+                }
                 if (streakRaised != null) {
                     Spacer(Modifier.height(Space.l))
                     StreakHero(
@@ -226,7 +236,7 @@ internal fun SummaryScreen(
                 }
                 Spacer(Modifier.height(Space.m))
             }
-            if (!replay) Confetti(Modifier.matchParentSize(), plenty = milestone != null)
+            if (!replay) Confetti(Modifier.matchParentSize(), plenty = milestone != null || unitCompleted != null)
         }
         Spacer(Modifier.height(Space.m))
         PrimaryButton(stringResource(if (replay) R.string.summary_back_path else R.string.summary_back_home), onDone)
