@@ -1,0 +1,78 @@
+{
+  "id": "a1-u01-d06",
+  "tips": [
+    {
+      "id": "a1-u01-d06-t01",
+      "before": "a1-u01-d06-e01",
+      "title": { "en": "Listening" },
+      "body": { "en": "A listening Exercise plays its Polish as soon as it opens. Tap the speaker to hear it again, or Slow to hear it more slowly. In other Exercises, tap a speaker next to Polish text to hear it." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d06-e01",
+      "text": "cześć",
+      "distractors": ["sześć", "część"],
+      "items": ["czesc"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d06-e02",
+      "text": "tak",
+      "distractors": ["tam", "jak"],
+      "items": ["tak"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d06-e03",
+      "text": "nie",
+      "distractors": ["nic", "mnie"],
+      "items": ["nie"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u01-d06-e04",
+      "acceptedAnswers": ["dziękuję"],
+      "items": ["dziekuje"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d06-e05",
+      "text": "dzień dobry",
+      "distractors": ["dobry wieczór", "dobranoc"],
+      "items": ["dzien-dobry"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u01-d06-e06",
+      "acceptedAnswers": ["proszę"],
+      "items": ["prosze"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u01-d06-e07",
+      "text": "do widzenia",
+      "distractors": ["dobranoc", "na razie"],
+      "items": ["do-widzenia"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u01-d06-e08",
+      "acceptedAnswers": ["dobranoc"],
+      "items": ["dobranoc"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u01-d06-e09",
+      "acceptedAnswers": ["jak się masz?"],
+      "items": ["jak-sie-masz"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u01-d06-e10",
+      "acceptedAnswers": ["dzień dobry"],
+      "items": ["dzien-dobry"]
+    }
+  ]
+}

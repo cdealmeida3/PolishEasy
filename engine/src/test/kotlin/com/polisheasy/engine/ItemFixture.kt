@@ -27,6 +27,17 @@ fun tiles(id: String, prompt: String, answer: String, vararg items: String): Wor
 fun conjugate(id: String, verb: String, person: Person, answer: String, vararg items: String): Conjugation =
     Conjugation(id, verb, mapOf("en" to "to $verb"), person, acceptedAnswers = listOf(answer), items = items.toList())
 
+/** A listen-and-choose Exercise with one distractor, "inne". Tests name it by its Clip, "audio/tak.ogg". */
+fun listenChoose(id: String, text: String, vararg items: String): ListenChoose =
+    ListenChoose(id, text, listOf("inne"), items.toList())
+
+/** A listen-and-type Exercise with one Accepted Answer. Tests name it by its Clip, "audio/tak.ogg". */
+fun listenType(id: String, text: String, vararg items: String): ListenType =
+    ListenType(id, listOf(text), items.toList())
+
+/** The Clip of [text], named after it: "dzień dobry" is `dzień-dobry`. */
+fun clip(text: String): Clip = Clip(text.replace(' ', '-'), text)
+
 fun day(id: String, vararg exercises: Exercise): DailySet = DailySet(id, exercises = exercises.toList())
 
 private val title = mapOf("en" to "Title")
@@ -37,12 +48,18 @@ fun levelOf(id: String, vararg dailySets: DailySet): Level =
 /** A one-Level course of these Daily Sets, in Path order. */
 fun courseOf(items: List<Item>, vararg dailySets: DailySet): Course = Course(listOf(levelOf("a1", *dailySets)), items)
 
+/** The same, with [clips] as its audio. */
+fun courseOf(items: List<Item>, clips: List<Clip>, vararg dailySets: DailySet): Course =
+    Course(listOf(levelOf("a1", *dailySets)), items, clips)
+
 private val Step.ShowExercise.prompt: String
     get() = when (val view = exercise) {
         is ExerciseView.ChooseTranslation -> view.prompt
         is ExerciseView.TypeAnswer -> view.prompt
         is ExerciseView.WordTiles -> view.prompt
         is ExerciseView.Conjugation -> "${view.verb} ${view.person.pronouns}"
+        is ExerciseView.ListenChoose -> view.audio.path
+        is ExerciseView.ListenType -> view.audio.path
     }
 
 /** The prompts of the Exercises among [steps], in the order they were shown. */
@@ -123,6 +140,16 @@ class ItemLearner(
         is ExerciseView.Conjugation -> {
             val exercise = course.exercises.values.filterIsInstance<Conjugation>()
                 .first { it.verb == view.verb && it.person == view.person }
+            Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
+        }
+        is ExerciseView.ListenChoose -> {
+            val exercise = course.exercises.values.filterIsInstance<ListenChoose>()
+                .first { course.clipFor(it.text) == view.audio }
+            Answer.Option(view.options.indexOf(if (correct) exercise.text else exercise.distractors.first()))
+        }
+        is ExerciseView.ListenType -> {
+            val exercise = course.exercises.values.filterIsInstance<ListenType>()
+                .first { course.clipFor(it.acceptedAnswers.first()) == view.audio }
             Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
         }
     }

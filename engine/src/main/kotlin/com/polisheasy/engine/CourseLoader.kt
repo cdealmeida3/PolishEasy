@@ -5,7 +5,15 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
 @Serializable
-private data class CourseFile(val levels: List<LevelEntry>, val items: List<String> = emptyList())
+private data class CourseFile(
+    val levels: List<LevelEntry>,
+    val items: List<String> = emptyList(),
+    /** Optional: the path of the file that lists the Clips. */
+    val audio: String? = null,
+)
+
+@Serializable
+private data class ClipsFile(val clips: List<Clip>)
 
 @Serializable
 private data class ItemsFile(val items: List<Item>)
@@ -21,7 +29,7 @@ private val json = Json { classDiscriminator = "type" }
 /**
  * Loads the Authored Content. [readFile] returns the text of a content file given its
  * path relative to the content root; the course starts at `course.json`, which lists
- * the path of every Daily Set file and of every Item file.
+ * the path of every Daily Set file and of every Item file, and of the file that lists the Clips.
  */
 fun loadCourse(readFile: (path: String) -> String): Course {
     val index = json.decodeFromString<CourseFile>(readFile("course.json"))
@@ -29,6 +37,8 @@ fun loadCourse(readFile: (path: String) -> String): Course {
         Course(
             levels(index, readFile),
             items = index.items.flatMap { path -> json.decodeFromString<ItemsFile>(readFile(path)).items },
+            clips = index.audio?.let { path -> json.decodeFromString<ClipsFile>(readFile(path)).clips }.orEmpty(),
+            clipDir = index.audio?.substringBeforeLast('/', "") ?: "audio",
         ),
     )
 }
@@ -48,7 +58,9 @@ private fun levels(index: CourseFile, readFile: (path: String) -> String): List<
         )
     }
 
-/** Rejects a course whose Items or Exercise ids break what Review relies on. */
+private val clipId = Regex("[a-z0-9]+(-[a-z0-9]+)*")
+
+/** Rejects a course whose Items or Exercise ids break what Review relies on, or whose Clips cannot be played. */
 private fun checked(course: Course): Course {
     val repeatedItems = course.items.map { it.id }.repeated()
     require(repeatedItems.isEmpty()) { "More than one Item has the id: ${repeatedItems.joinToString()}" }
@@ -67,6 +79,29 @@ private fun checked(course: Course): Course {
     val repeatedExercises = course.path.flatMap { it.exercises }.map { it.id }.repeated()
     require(repeatedExercises.isEmpty()) {
         "More than one Exercise in the course has the id: ${repeatedExercises.joinToString()}"
+    }
+    val repeatedClips = course.clips.map { it.id }.repeated()
+    require(repeatedClips.isEmpty()) { "More than one Clip has the id: ${repeatedClips.joinToString()}" }
+    course.clips.forEach { clip ->
+        // The id is the name of the Clip's file.
+        require(clipId.matches(clip.id)) {
+            "Clip id \"${clip.id}\" is not lower-case letters and digits, in groups joined by single hyphens"
+        }
+        require(clip.text.isNotBlank()) { "Clip ${clip.id} has no text" }
+    }
+    course.clips.groupBy { audioKey(it.text) }.values.firstOrNull { it.size > 1 }?.let { same ->
+        throw IllegalArgumentException(
+            "More than one Clip says \"${same.first().text}\": ${same.joinToString { it.id }}",
+        )
+    }
+    course.path.forEach { dailySet ->
+        dailySet.exercises.filter { it is ListenChoose || it is ListenType }.forEach { exercise ->
+            spoken(exercise).forEach { text ->
+                require(course.clipFor(text) != null) {
+                    "Daily Set ${dailySet.id}: Exercise ${exercise.id} has no Clip for \"$text\""
+                }
+            }
+        }
     }
     return course
 }
@@ -132,6 +167,20 @@ private fun checked(dailySet: DailySet): DailySet {
                 "$name has the sentence \"$sentence\", which has no words apart from the gap"
             }
         }
+    }
+    dailySet.exercises.filterIsInstance<ListenChoose>().forEach { exercise ->
+        val name = "Daily Set ${dailySet.id}: Exercise ${exercise.id}"
+        require(normalizeAnswer(exercise.text).isNotEmpty()) { "$name has blank text" }
+        require(exercise.distractors.isNotEmpty()) { "$name has no distractors" }
+        require(exercise.distractors.none { normalizeAnswer(it).isEmpty() }) { "$name has a blank distractor" }
+        // Options that differ only by an accent are a real listening test, so they are allowed.
+        val same = (listOf(exercise.text) + exercise.distractors).map(::normalizeAnswer).repeated()
+        require(same.isEmpty()) { "$name has more than one option that reads: ${same.joinToString()}" }
+    }
+    dailySet.exercises.filterIsInstance<ListenType>().forEach { exercise ->
+        val name = "Daily Set ${dailySet.id}: Exercise ${exercise.id}"
+        require(exercise.acceptedAnswers.isNotEmpty()) { "$name has no Accepted Answers" }
+        require(exercise.acceptedAnswers.none { normalizeAnswer(it).isEmpty() }) { "$name has a blank Accepted Answer" }
     }
     dailySet.tips.forEach { tip ->
         val table = tip.conjugation ?: return@forEach

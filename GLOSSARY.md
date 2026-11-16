@@ -61,6 +61,10 @@ _Avoid_: Question, activity, task
 Any one of the responses an Exercise treats as correct; an Exercise may have several because Polish word order is flexible.
 _Avoid_: Solution, correct answer
 
+**Clip**:
+One recording of spoken Polish, made ahead of time and packaged with the app. A listening Exercise plays one, and a speaker icon plays the Clip of the Polish beside it.
+_Avoid_: Audio file, sound, recording
+
 **Authored Content**:
 Course material written and reviewed ahead of time and shipped with the app, as opposed to material generated while the Learner is using it.
 _Avoid_: Static content, generated content

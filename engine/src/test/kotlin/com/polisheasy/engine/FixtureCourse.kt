@@ -113,11 +113,25 @@ object FixtureCourse {
     /** The option that answers each Exercise of days 1 and 2 correctly, by prompt. */
     val correctOption = mapOf("cześć" to 1, "do widzenia" to 0, "dziękuję" to 2, "tak" to 0, "nie" to 1)
 
-    fun load(): Course = loadCourse { path -> files.getValue(path) }
+    /** The fixture course. With [clips], it also lists that Clip manifest as its audio. */
+    fun load(clips: String? = null): Course = loadWithDayOne(files.getValue(DAY_ONE), clips)
 
-    /** The fixture course with day 1 replaced by [dayOne], for testing what the loader accepts. */
-    fun loadWithDayOne(dayOne: String): Course =
-        loadCourse { path -> if (path == "a1/unit-01/day-01.json") dayOne else files.getValue(path) }
+    /**
+     * The fixture course with day 1 replaced by [dayOne], for testing what the loader accepts.
+     * With [clips], the course also lists that Clip manifest as its audio.
+     */
+    fun loadWithDayOne(dayOne: String, clips: String? = null): Course = loadCourse { path ->
+        when {
+            path == DAY_ONE -> dayOne
+            path == "course.json" && clips != null ->
+                files.getValue(path).replaceFirst("{", "{ \"audio\": \"$CLIPS\",")
+            path == CLIPS && clips != null -> clips
+            else -> files.getValue(path)
+        }
+    }
+
+    private const val DAY_ONE = "a1/unit-01/day-01.json"
+    private const val CLIPS = "audio/clips.json"
 }
 
 val warsaw: ZoneId = ZoneId.of("Europe/Warsaw")

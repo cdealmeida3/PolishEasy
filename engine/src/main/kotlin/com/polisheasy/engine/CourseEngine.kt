@@ -58,7 +58,12 @@ data class GapSentence(val before: String, val after: String, val meaning: Strin
 
 /** An Exercise as the Learner sees it: Base Language text resolved, answer withheld. */
 sealed interface ExerciseView {
-    data class ChooseTranslation(val prompt: String, val options: List<String>) : ExerciseView
+    /** [promptAudio] is the Clip of the Polish [prompt], if it has one. */
+    data class ChooseTranslation(
+        val prompt: String,
+        val options: List<String>,
+        val promptAudio: ClipView? = null,
+    ) : ExerciseView
 
     /** [prompt] is what to type in Polish, in the Base Language. */
     data class TypeAnswer(val prompt: String) : ExerciseView
@@ -73,6 +78,12 @@ sealed interface ExerciseView {
         val person: Person,
         val sentence: GapSentence? = null,
     ) : ExerciseView
+
+    /** The Learner hears [audio] and picks, from [options], the Polish that was said. */
+    data class ListenChoose(val audio: ClipView, val options: List<String>) : ExerciseView
+
+    /** The Learner hears [audio] and types it. Nothing is shown, since the text is the answer. */
+    data class ListenType(val audio: ClipView) : ExerciseView
 }
 
 /** The Learner's response to an Exercise. */
@@ -87,9 +98,15 @@ sealed interface Answer {
 
 /**
  * An answer that is right apart from its accents is [correct] with [accentWarning] set;
- * [correctAnswer] then shows the proper spelling.
+ * [correctAnswer] then shows the proper spelling. [audio] is the Clip of the Polish the feedback
+ * is about, if it has one.
  */
-data class Feedback(val correct: Boolean, val correctAnswer: String, val accentWarning: Boolean = false)
+data class Feedback(
+    val correct: Boolean,
+    val correctAnswer: String,
+    val accentWarning: Boolean = false,
+    val audio: ClipView? = null,
+)
 
 /**
  * All course rules. Screens ask it what to show and send it the Learner's answers;
@@ -157,7 +174,7 @@ class CourseEngine(
         val state = playing.state
         check(state.remaining.isNotEmpty()) { "Every Exercise of Daily Set ${set.id} has already been answered" }
         val exercise = course.exercises.getValue(state.remaining.first())
-        val feedback = check(exercise, answer)
+        val feedback = check(exercise, answer).let { it.copy(audio = audioFor(exercise, it)) }
         val items = if (exercise.id in state.missed) emptyMap() else itemsAfter(exercise, feedback.correct)
         val rest = state.remaining.drop(1)
         playing.state = if (feedback.correct) {
@@ -246,6 +263,7 @@ class CourseEngine(
         is ChooseTranslation -> ExerciseView.ChooseTranslation(
             prompt = exercise.prompt,
             options = exercise.options.map(::localize),
+            promptAudio = course.clipFor(exercise.prompt),
         )
         is TypeAnswer -> ExerciseView.TypeAnswer(localize(exercise.prompt))
         is WordTiles -> ExerciseView.WordTiles(localize(exercise.prompt), tilesOf(exercise))
@@ -259,7 +277,13 @@ class CourseEngine(
                 GapSentence(before, after, localize(checkNotNull(exercise.sentenceMeaning)))
             },
         )
+        is ListenChoose -> ExerciseView.ListenChoose(clipOf(exercise, exercise.text), optionsOf(exercise))
+        is ListenType -> ExerciseView.ListenType(clipOf(exercise, exercise.acceptedAnswers.first()))
     }
+
+    /** The Clip a listening Exercise plays. The loader guarantees there is one. */
+    private fun clipOf(exercise: Exercise, text: String): ClipView =
+        checkNotNull(course.clipFor(text)) { "Exercise ${exercise.id} has no Clip for \"$text\"" }
 
     private fun view(tip: Tip): TipView = TipView(
         title = localize(tip.title),
@@ -284,6 +308,23 @@ class CourseEngine(
         is TypeAnswer -> checkTyped((answer as Answer.Typed).text, exercise.acceptedAnswers)
         is WordTiles -> checkTiles((answer as Answer.Tiles).words, exercise.acceptedAnswers)
         is Conjugation -> checkTyped((answer as Answer.Typed).text, exercise.acceptedAnswers)
+        is ListenChoose -> Feedback(
+            correct = optionsOf(exercise).getOrNull((answer as Answer.Option).index) == exercise.text,
+            correctAnswer = exercise.text,
+        )
+        is ListenType -> checkTyped((answer as Answer.Typed).text, exercise.acceptedAnswers)
+    }
+
+    /** The Clip of the Polish that [feedback] on [exercise] is about, if it has one. */
+    private fun audioFor(exercise: Exercise, feedback: Feedback): ClipView? = when (exercise) {
+        // The answer shown is in the Base Language; the prompt has the speaker.
+        is ChooseTranslation -> null
+        is TypeAnswer, is WordTiles -> course.clipFor(feedback.correctAnswer)
+        is Conjugation ->
+            course.clipFor(exercise.sentence?.let { filled(it, feedback.correctAnswer) } ?: feedback.correctAnswer)
+        // What was spoken, whichever spelling was matched.
+        is ListenChoose -> course.clipFor(exercise.text)
+        is ListenType -> course.clipFor(exercise.acceptedAnswers.first())
     }
 
     private fun localize(text: Localized): String = text.getValue(baseLanguage)

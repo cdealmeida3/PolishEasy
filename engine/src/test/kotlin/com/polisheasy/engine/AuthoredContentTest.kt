@@ -38,6 +38,18 @@ class AuthoredContentTest {
                     }
                     .acceptedAnswers.first(),
             )
+            is ExerciseView.ListenChoose -> Answer.Option(
+                view.options.indexOf(
+                    exercises.filterIsInstance<ListenChoose>()
+                        .first { course.clipFor(it.text) == view.audio && optionsOf(it).sorted() == view.options.sorted() }
+                        .text,
+                ),
+            )
+            is ExerciseView.ListenType -> Answer.Typed(
+                exercises.filterIsInstance<ListenType>()
+                    .first { course.clipFor(it.acceptedAnswers.first()) == view.audio }
+                    .acceptedAnswers.first(),
+            )
         }
     }
 
@@ -94,12 +106,12 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `played one per day, day 1 has no Review, day 2 ends with 7 Review Exercises, day 3 with 4, day 4 with none and day 5 with 3`() {
+    fun `played one per day, day 1 has no Review, day 2 ends with 7 Review Exercises, day 3 with 4, day 4 with none, day 5 with 3 and day 6 with 6`() {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
-        assertEquals(listOf(0, 7, 4, 0, 3), days.map { steps -> steps.count { it is Step.ShowExercise && it.review } })
+        assertEquals(listOf(0, 7, 4, 0, 3, 6), days.map { steps -> steps.count { it is Step.ShowExercise && it.review } })
         assertEquals(
-            listOf(7, 6, 0, 0, 6),
+            listOf(7, 6, 0, 0, 6, 0),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -118,6 +130,47 @@ class AuthoredContentTest {
                 )
             }
         }
+    }
+
+    @Test
+    fun `every Accepted Answer of every listen-and-type Exercise shipped is correct when typed exactly, with no accent warning`() {
+        val listening = course.path.flatMap { it.exercises }.filterIsInstance<ListenType>()
+        assertTrue(listening.isNotEmpty())
+
+        listening.forEach { exercise ->
+            exercise.acceptedAnswers.forEach { accepted ->
+                assertEquals(
+                    Feedback(correct = true, correctAnswer = accepted),
+                    checkTyped(accepted, exercise.acceptedAnswers),
+                    "Exercise ${exercise.id}",
+                )
+            }
+        }
+    }
+
+    @Test
+    fun `every Polish text the app can speak has a Clip, every Clip has its audio file, and nothing is left over`() {
+        val spoken = course.spokenTexts()
+        assertTrue(spoken.isNotEmpty())
+        assertTrue(course.path.flatMap { it.exercises }.any { it is ListenChoose })
+
+        assertEquals(emptyList(), spoken.filter { course.clipFor(it) == null }, "Spoken texts with no Clip")
+        assertEquals(
+            emptyList(),
+            course.clips.filter { clip -> spoken.none { course.clipFor(it) == course.clipFor(clip.text) } }.map { it.id },
+            "Clips whose text is never spoken",
+        )
+        course.clips.forEach { clip ->
+            val file = File(contentDir, checkNotNull(course.clipFor(clip.text)).path)
+            assertTrue(file.isFile, "Clip ${clip.id} has no file ${file.name}")
+            assertTrue(file.length() > 500, "The file of Clip ${clip.id} is only ${file.length()} bytes")
+            assertEquals("OggS", String(file.readBytes().copyOf(4), Charsets.ISO_8859_1), "The file of Clip ${clip.id}")
+        }
+        assertEquals(
+            (course.clips.map { "${it.id}.ogg" } + "clips.json").sorted(),
+            File(contentDir, course.clipDir).list().orEmpty().sorted(),
+            "Files beside the Clip manifest",
+        )
     }
 
     @Test
