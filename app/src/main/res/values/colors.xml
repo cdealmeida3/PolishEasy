@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="launcher_background">#FFFFFF</color>
+    <!-- What Android draws before the app can: the theme's light `brand`, behind the app icon and on the splash screen (docs/design.md). -->
+    <color name="brand">#C8102E</color>
     <!-- What shows for a moment before the first screen is drawn: the theme's `background` (docs/design.md). -->
     <color name="window_background">#FFF8F3</color>
 </resources>

@@ -43,16 +43,19 @@ fun TopBar(title: String, modifier: Modifier = Modifier, note: String? = null) {
     }
 }
 
-/** A plain card: a white field with a thin border and no shadow. */
+/**
+ * A plain card: a white field with a thin border and no shadow. [padded] is off for a card whose
+ * rows reach its edges and keep their own space, such as a card of settings.
+ */
 @Composable
-fun ContentCard(modifier: Modifier = Modifier, content: @Composable ColumnScope.() -> Unit) {
+fun ContentCard(modifier: Modifier = Modifier, padded: Boolean = true, content: @Composable ColumnScope.() -> Unit) {
     Surface(
         color = MaterialTheme.colorScheme.surfaceContainerLowest,
         shape = MaterialTheme.shapes.large,
         border = BorderStroke(Edge.hairline, MaterialTheme.colorScheme.outlineVariant),
         modifier = modifier.fillMaxWidth(),
     ) {
-        Column(modifier = Modifier.padding(Space.m), content = content)
+        Column(modifier = if (padded) Modifier.padding(Space.m) else Modifier, content = content)
     }
 }
 

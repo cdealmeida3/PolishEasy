@@ -75,6 +75,7 @@ object Reminder {
             NOTIFICATION,
             Notification.Builder(context, CHANNEL)
                 .setSmallIcon(R.drawable.ic_notification)
+                .setColor(context.getColor(R.color.brand))
                 .setContentTitle(context.getString(R.string.reminder_title))
                 .setContentText(context.getString(R.string.reminder_text))
                 .setCategory(Notification.CATEGORY_REMINDER)

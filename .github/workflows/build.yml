@@ -37,7 +37,7 @@ jobs:
           RELEASE_KEYSTORE_FILE: ${{ runner.temp }}/upload.p12
           RELEASE_KEYSTORE_PASSWORD: ${{ secrets.UPLOAD_KEYSTORE_PASSWORD }}
         run: ./gradlew :engine:test :polishcheck:test :audio:test :app:testDebugUnitTest :polishcheck:checkPolish :app:assembleDebug :app:assembleRelease :app:bundleRelease
-      # A picture of every screen, light and dark, from ScreenshotsTest (docs/design.md).
+      # A picture of every screen, light, dark and at the largest font size, from ScreenshotsTest (docs/design.md).
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -41,7 +41,7 @@ They play a small fixture course in `app/src/test/resources/fixture-course`, wri
 
 They check what a Learner sees, not the rules, which the engine's tests cover. What they cannot check stays with a run-through on a phone: the sound itself, the Reminder's notification, the time picker, the email draft for a mistake report, the real keyboard and anything that moves.
 
-The same command writes a picture of every screen, in the light and the dark theme, to `app/build/screenshots/`, and CI keeps them as the `screenshots` artifact of each run. [docs/design.md](docs/design.md) says how the app should look. Colours and font values live only in the app's `ui/theme` folder, and every build fails on one anywhere else (`./gradlew :app:checkDesignTokens`); [CODING_STANDARDS.md](CODING_STANDARDS.md) has the rest of the rules for writing a screen.
+The same command writes a picture of every screen, in the light and the dark theme and at the largest font size, to `app/build/screenshots/`, and CI keeps them as the `screenshots` artifact of each run. [docs/design.md](docs/design.md) says how the app should look. Colours and font values live only in the app's `ui/theme` folder, and every build fails on one anywhere else (`./gradlew :app:checkDesignTokens`); [CODING_STANDARDS.md](CODING_STANDARDS.md) has the rest of the rules for writing a screen.
 
 ## More
 

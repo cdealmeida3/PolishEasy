@@ -2,28 +2,40 @@ package com.polisheasy.app
 
 import android.app.Application
 import android.content.ComponentName
+import android.content.res.Configuration
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.semantics.SemanticsProperties
+import androidx.compose.ui.semantics.getOrNull
+import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
+import androidx.compose.ui.unit.Density
+import androidx.compose.ui.unit.dp
 import com.polisheasy.app.ui.PolishEasyApp
 import com.polisheasy.app.ui.PolishEasyTheme
 import com.polisheasy.app.ui.components.NavigationFrame
 import com.polisheasy.app.ui.components.NavigationTab
 import com.polisheasy.app.ui.screens.HomeScreen
 import com.polisheasy.app.ui.screens.PathScreen
+import com.polisheasy.app.ui.screens.SettingsScreen
 import com.polisheasy.app.ui.screens.SummaryScreen
 import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.DailySetState
@@ -37,6 +49,7 @@ import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.Today
 import com.polisheasy.engine.UnitView
 import java.io.File
+import java.time.LocalTime
 import kotlin.test.assertTrue
 import org.junit.Rule
 import org.junit.Test
@@ -55,7 +68,12 @@ import org.robolectric.annotation.GraphicsMode
  * (docs/design.md).
  *
  * It walks the fixture course in the light and the dark theme, and opens the real course once.
- * The pictures show layout, colour and type. They do not show motion, the keyboard or sound.
+ * The `large-` pictures are the light theme again at the largest font size a phone offers, to show
+ * that nothing is cut off. The pictures show layout, colour and type. They do not show motion, the
+ * keyboard or sound.
+ *
+ * Every picture is also checked for what a picture cannot show: that each thing a finger can tap
+ * has a name a screen reader can say, and is at least 48 dp across and high.
  *
  * The activity's view is drawn into a bitmap. `captureToImage()` is not used: it times out here.
  */
@@ -80,12 +98,18 @@ class ScreenshotsTest {
     private val clips = RecordingClips()
     private var viewModel: CourseViewModel? by mutableStateOf(null)
 
+    /** How much larger than usual the text is. Set before anything is shown. */
+    private var fontScale = 1f
+
     @Test
     fun `every screen of the fixture course in the light theme`() = fixtureCourseTour("light")
 
     @Test
     @Config(qualifiers = "+night")
     fun `every screen of the fixture course in the dark theme`() = fixtureCourseTour("dark")
+
+    @Test
+    fun `every screen of the fixture course at the largest font size`() = atTheLargestFontSize { fixtureCourseTour("large") }
 
     @Test
     fun `the real course on Home, on the Path and at its first step`() {
@@ -105,11 +129,14 @@ class ScreenshotsTest {
     @Config(qualifiers = "+night")
     fun `the Summary of a Review-only Daily Set and of a Replay in the dark theme`() = summaryVariants("dark")
 
+    @Test
+    fun `the Summary of a Review-only Daily Set and of a Replay at the largest font size`() = atTheLargestFontSize { summaryVariants("large") }
+
     /** The Summaries the fixture course does not reach in one day, shown with made-up scores. */
     private fun summaryVariants(theme: String) {
         var replay by mutableStateOf(false)
         screen.setContent {
-            PolishEasyTheme {
+            Shown {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     key(replay) {
                         SummaryScreen(
@@ -137,6 +164,9 @@ class ScreenshotsTest {
     @Config(qualifiers = "+night")
     fun `the states of Home the tour does not reach in the dark theme`() = homeStates("dark")
 
+    @Test
+    fun `the states of Home the tour does not reach at the largest font size`() = atTheLargestFontSize { homeStates("large") }
+
     /** Home part of the way through a Unit and a week, and in its Review-only states, with made-up progress. */
     private fun homeStates(theme: String) {
         val unlock = clock.today.plusDays(1).atStartOfDay(clock.zone)
@@ -160,7 +190,7 @@ class ScreenshotsTest {
         )
         var showing by mutableStateOf(0)
         screen.setContent {
-            PolishEasyTheme {
+            Shown {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     val (_, today, position) = states[showing]
                     val done = today is Today.DoneForToday
@@ -192,6 +222,9 @@ class ScreenshotsTest {
     @Test
     @Config(qualifiers = "+night")
     fun `the Path part of the way along in the dark theme`() = pathStates("dark")
+
+    @Test
+    fun `the Path part of the way along at the largest font size`() = atTheLargestFontSize { pathStates("large") }
 
     /** The Path with the real course's titles and made-up progress: today's Daily Set ready, then done, then every one completed. */
     private fun pathStates(theme: String) {
@@ -242,7 +275,7 @@ class ScreenshotsTest {
         )
         var showing by mutableStateOf(0)
         screen.setContent {
-            PolishEasyTheme {
+            Shown {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     key(showing) {
                         NavigationFrame(
@@ -264,6 +297,50 @@ class ScreenshotsTest {
             showing = index
             shot("$theme-$name")
         }
+    }
+
+    @Test
+    fun `Settings with the Reminder on in the light theme`() = settingsStates("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Settings with the Reminder on in the dark theme`() = settingsStates("dark")
+
+    @Test
+    fun `Settings with the Reminder on at the largest font size`() = atTheLargestFontSize { settingsStates("large") }
+
+    /** Settings with the Reminder on, and then with Android refusing to show its notification. */
+    private fun settingsStates(theme: String) {
+        var allowed by mutableStateOf(true)
+        screen.setContent {
+            Shown {
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+                    NavigationFrame(
+                        tabs = listOf(
+                            NavigationTab(app.getString(R.string.nav_home), R.drawable.ic_home),
+                            NavigationTab(app.getString(R.string.nav_path), R.drawable.ic_route),
+                            NavigationTab(app.getString(R.string.nav_settings), R.drawable.ic_settings),
+                        ),
+                        selected = 2,
+                        onSelect = {},
+                    ) {
+                        SettingsScreen(
+                            reminderEnabled = true,
+                            reminderTime = LocalTime.of(19, 30),
+                            notificationsAllowed = allowed,
+                            soundOn = false,
+                            onReminderEnabled = {},
+                            onReminderTime = {},
+                            onSoundOn = {},
+                            onReport = {},
+                        )
+                    }
+                }
+            }
+        }
+        shot("$theme-31-settings-reminder-on")
+        allowed = false
+        shot("$theme-32-settings-notifications-off")
     }
 
     /** Daily Set 1 of the fixture course, with one wrong answer so the Exercise comes back at the end. */
@@ -332,14 +409,53 @@ class ScreenshotsTest {
     private fun open(over: CourseViewModel) {
         viewModel = over
         screen.setContent {
-            PolishEasyTheme {
+            Shown {
                 viewModel?.let { key(it) { PolishEasyApp(it, clips) } }
             }
         }
     }
 
+    private fun atTheLargestFontSize(show: () -> Unit) {
+        fontScale = LARGEST_FONT_SCALE
+        show()
+    }
+
+    /** The app's theme, with text at [fontScale]: the scale is applied the way Android applies the phone's setting. */
+    @Composable
+    private fun Shown(content: @Composable () -> Unit) {
+        val context = LocalContext.current
+        val density = remember(fontScale) {
+            val scaled = Configuration(context.resources.configuration).also { it.fontScale = fontScale }
+            Density(context.createConfigurationContext(scaled))
+        }
+        CompositionLocalProvider(LocalDensity provides density) { PolishEasyTheme(content) }
+    }
+
+    /**
+     * What a screen reader and a finger need of the screen as it stands: everything that can be
+     * tapped says what it is, in words or a description, and is at least 48 dp each way.
+     */
+    private fun checkEverythingTappable(picture: String) {
+        val least = with(screen.density) { 48.dp.toPx() } - 1f
+        screen.onAllNodes(hasClickAction()).fetchSemanticsNodes().forEach { node ->
+            if (node.config.getOrNull(SemanticsProperties.Disabled) != null) return@forEach
+            val words = node.config.getOrNull(SemanticsProperties.Text).orEmpty().map { it.text } +
+                node.config.getOrNull(SemanticsProperties.ContentDescription).orEmpty()
+            val input = node.config.getOrNull(SemanticsProperties.EditableText) != null
+            assertTrue(input || words.any { it.isNotBlank() }, "$picture: something tappable at ${node.boundsInRoot} has no name")
+            val touch = node.touchBoundsInRoot
+            // A thing partly scrolled out of sight is cut to what shows; its whole size is checked where it shows whole.
+            val whole = node.boundsInRoot.width >= node.size.width - 1f && node.boundsInRoot.height >= node.size.height - 1f
+            assertTrue(
+                !whole || (touch.width >= least && touch.height >= least),
+                "$picture: \"${words.firstOrNull()}\" is ${touch.width} x ${touch.height} px to a finger, under 48 dp",
+            )
+        }
+    }
+
     private fun shot(name: String) {
         screen.waitForIdle()
+        checkEverythingTappable(name)
         val view = screen.activity.window.decorView
         val picture = Bitmap.createBitmap(view.width, view.height, Bitmap.Config.ARGB_8888)
         screen.runOnUiThread { view.draw(Canvas(picture)) }
@@ -361,5 +477,8 @@ class ScreenshotsTest {
     private companion object {
         /** Gradle runs the tests from the `app` directory. */
         val SCREENSHOTS = File("build/screenshots")
+
+        /** The top of Android's font size setting. */
+        const val LARGEST_FONT_SCALE = 2f
     }
 }
