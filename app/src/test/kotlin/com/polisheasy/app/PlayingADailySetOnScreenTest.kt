@@ -124,7 +124,7 @@ class PlayingADailySetOnScreenTest {
         correctThenContinue()
 
         shows(R.string.summary_title)
-        shows(text(R.string.summary_accuracy, 6, 6))
+        showsFirstTry(6, 6)
         shows(R.string.summary_items_learned)
         showsStreakRaised(to = 1)
         shows("dziękuję")
@@ -156,7 +156,7 @@ class PlayingADailySetOnScreenTest {
         chooseHello()
 
         shows(R.string.summary_title)
-        shows(text(R.string.summary_accuracy, 5, 6))
+        showsFirstTry(5, 6)
     }
 
     @Test
@@ -368,7 +368,7 @@ class PlayingADailySetOnScreenTest {
         screen.mainClock.advanceTimeBy(100)
 
         shows(R.string.summary_title)
-        shows("100%")
+        showsFirstTry(6, 6)
         showsStreakRaised(to = 1)
         screen.onNodeWithTag(CONFETTI_TAG).assertDoesNotExist()
     }
@@ -507,6 +507,11 @@ class PlayingADailySetOnScreenTest {
 
     private fun showsStreakRaised(to: Int) {
         screen.onNodeWithContentDescription(app.resources.getQuantityString(R.plurals.home_streak, to, to)).assertIsDisplayed()
+    }
+
+    /** The score is a small fact on the Summary, said to a screen reader as a sentence. */
+    private fun showsFirstTry(correct: Int, of: Int) {
+        screen.onNodeWithContentDescription(text(R.string.summary_accuracy, correct, of)).assertIsDisplayed()
     }
 
     private fun noStreakRaised() = screen.onNodeWithText(text(R.string.streak_title)).assertDoesNotExist()

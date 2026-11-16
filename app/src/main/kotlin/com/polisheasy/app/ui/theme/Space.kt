@@ -70,8 +70,9 @@ object Size {
     /** The room kept at the bottom of an Exercise for the feedback panel, so the answers above it never move. */
     val feedbackRoom: Dp = 176.dp
 
-    /** The Streak's flame, on Home and on the Summary. */
+    /** The Streak's flame on Home, and the larger one of the Summary, where the Streak going up is the hero. */
     val flame: Dp = 48.dp
+    val flameHero: Dp = 72.dp
 
     /** Content is never wider than this, and is centred beyond it. */
     val contentMax: Dp = 480.dp

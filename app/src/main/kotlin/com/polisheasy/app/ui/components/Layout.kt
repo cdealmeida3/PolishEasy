@@ -22,6 +22,23 @@ import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import com.polisheasy.app.ui.theme.Edge
 import com.polisheasy.app.ui.theme.Space
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.ExitTransition
+import androidx.compose.animation.core.MutableTransitionState
+import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.height
+import androidx.compose.runtime.remember
+import androidx.compose.ui.draw.drawWithContent
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+import com.polisheasy.app.ui.theme.Motion
+import com.polisheasy.app.ui.theme.Scaled
 
 /** The title at the top of the Path and of Settings, with a quiet [note] under it if there is one. Home has none. */
 @Composable
@@ -88,3 +105,68 @@ fun ScreenFrame(
         )
     }
 }
+
+/**
+ * One small fact with a number: the [value] large, and under it what it counts. Several sit side
+ * by side in a [StatRow]. A screen reader hears [description], the fact as a sentence.
+ */
+@Composable
+fun StatTile(value: String, label: String, description: String, modifier: Modifier = Modifier) {
+    Surface(
+        color = MaterialTheme.colorScheme.surfaceContainerLowest,
+        shape = MaterialTheme.shapes.large,
+        border = BorderStroke(Edge.hairline, MaterialTheme.colorScheme.outlineVariant),
+        modifier = modifier.clearAndSetSemantics { contentDescription = description },
+    ) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(horizontal = Space.xs, vertical = Space.s)) {
+            Text(value, style = MaterialTheme.typography.headlineSmall, color = MaterialTheme.colorScheme.onSurface, textAlign = TextAlign.Center)
+            Text(label, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant, textAlign = TextAlign.Center)
+        }
+    }
+}
+
+/** [StatTile]s side by side, each as wide and as tall as the others. At a large font size they go one under the other. */
+@Composable
+fun StatRow(modifier: Modifier = Modifier, tiles: List<@Composable (Modifier) -> Unit>) {
+    if (Scaled.roomy()) {
+        Column(verticalArrangement = Arrangement.spacedBy(Space.xs), modifier = modifier.fillMaxWidth()) {
+            tiles.forEach { tile -> tile(Modifier.fillMaxWidth()) }
+        }
+    } else {
+        Row(horizontalArrangement = Arrangement.spacedBy(Space.xs), modifier = modifier.fillMaxWidth().height(IntrinsicSize.Min)) {
+            tiles.forEach { tile -> tile(Modifier.weight(1f).fillMaxHeight()) }
+        }
+    }
+}
+
+/**
+ * [content] arriving to mark what has just happened: with [play] it fades in and grows to its
+ * size once; without, it is simply there.
+ */
+@Composable
+fun Arriving(play: Boolean, modifier: Modifier = Modifier, content: @Composable () -> Unit) {
+    val state = remember { MutableTransitionState(!play).apply { targetState = true } }
+    AnimatedVisibility(visibleState = state, enter = Motion.arrive(), exit = ExitTransition.None, modifier = modifier) { content() }
+}
+
+/**
+ * Fades the bottom of a scrolling list into the screen behind it while there is more below, so a
+ * list that runs under a pinned button is not cut off hard. It is the one fade in the app.
+ */
+@Composable
+fun Modifier.fadingBottom(more: Boolean): Modifier {
+    val behind = MaterialTheme.colorScheme.background
+    return drawWithContent {
+        drawContent()
+        if (more) {
+            val depth = FadeDepth.toPx()
+            drawRect(
+                Brush.verticalGradient(listOf(Color.Transparent, behind), startY = size.height - depth, endY = size.height),
+                topLeft = Offset(0f, size.height - depth),
+                size = androidx.compose.ui.geometry.Size(size.width, depth),
+            )
+        }
+    }
+}
+
+private val FadeDepth = 48.dp

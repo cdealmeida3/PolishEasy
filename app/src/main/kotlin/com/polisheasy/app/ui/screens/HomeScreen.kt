@@ -30,11 +30,14 @@ import com.polisheasy.engine.NextDailySetView
 import com.polisheasy.engine.Today
 import java.time.format.TextStyle
 import java.util.Locale
+import com.polisheasy.app.ui.components.Arriving
 
 /**
  * Home: a greeting, the Streak with this week's days, and what today holds. [next] is where the
  * Learner is on the Path, or null once every Daily Set released so far is completed. Each thing
  * [today] can be has its own card: ready, in progress, done for today, and the Review-only ones.
+ * With [streakRaisedFrom] the Learner has just come back from the Daily Set that raised the Streak
+ * from that number, and Home shows it happen: the number rolls, today's dot fills in.
  */
 @Composable
 internal fun HomeScreen(
@@ -44,6 +47,7 @@ internal fun HomeScreen(
     next: NextDailySetView?,
     onStart: () -> Unit,
     onContinue: () -> Unit,
+    streakRaisedFrom: Int? = null,
 ) {
     val done = today is Today.DoneForToday
     ScreenFrame {
@@ -74,7 +78,7 @@ internal fun HomeScreen(
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
             Spacer(Modifier.height(Space.l))
-            Streak(streak, week, today)
+            Streak(streak, week, today, streakRaisedFrom)
             Spacer(Modifier.height(Space.m))
             when (today) {
                 Today.DailySetAvailable -> NextDailySet(next, R.string.home_today, highlighted = true) {
@@ -105,8 +109,11 @@ internal fun HomeScreen(
                 }
                 is Today.DoneForToday -> {
                     val message = if (today.reviewOnlyNext) R.string.home_done_review_only_next else R.string.home_done
-                    TodayCard(stringResource(R.string.home_done_title), done = true) {
-                        CardNote(stringResource(message))
+                    // Coming back from the Daily Set that did it, the card arrives; otherwise it is simply there.
+                    Arriving(play = streakRaisedFrom != null) {
+                        TodayCard(stringResource(R.string.home_done_title), done = true) {
+                            CardNote(stringResource(message))
+                        }
                     }
                     if (next != null) {
                         Spacer(Modifier.height(Space.m))
@@ -121,9 +128,19 @@ internal fun HomeScreen(
     }
 }
 
+/** A week's days as the Streak's dots show them, each with two letters of its weekday so that no two look the same. */
+internal fun weekDays(week: List<DayView>): List<WeekDay> = week.map { day ->
+    WeekDay(
+        label = day.date.dayOfWeek.getDisplayName(TextStyle.SHORT, Locale.getDefault()).take(2),
+        completed = day.completed,
+        today = day.today,
+        upcoming = day.upcoming,
+    )
+}
+
 /** The Streak and its week. The note says what today's Daily Set would do for it. */
 @Composable
-private fun Streak(streak: Int, week: List<DayView>, today: Today) {
+private fun Streak(streak: Int, week: List<DayView>, today: Today, raisedFrom: Int?) {
     val note = when (today) {
         Today.DailySetAvailable, Today.ReviewOnlyAvailable, is Today.InProgress ->
             if (streak == 0) R.string.home_streak_note_start else R.string.home_streak_note_keep
@@ -135,15 +152,8 @@ private fun Streak(streak: Int, week: List<DayView>, today: Today) {
         streak = streak,
         title = stringResource(R.string.streak_title),
         note = note?.let { stringResource(it) },
-        days = week.map { day ->
-            WeekDay(
-                // Two letters, so that no two days of a week look the same.
-                label = day.date.dayOfWeek.getDisplayName(TextStyle.SHORT, Locale.getDefault()).take(2),
-                completed = day.completed,
-                today = day.today,
-                upcoming = day.upcoming,
-            )
-        },
+        days = weekDays(week),
+        raisedFrom = raisedFrom,
         description = pluralStringResource(R.plurals.home_streak, streak, streak) + ". " +
             pluralStringResource(R.plurals.home_week, completed, completed),
     )

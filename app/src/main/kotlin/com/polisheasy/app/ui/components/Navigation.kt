@@ -22,6 +22,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.polisheasy.app.ui.theme.Scaled
 import androidx.compose.foundation.layout.size
+import androidx.compose.animation.AnimatedContent
+import com.polisheasy.app.ui.theme.Motion
 
 /** One destination of the navigation bar: its [label] and its [icon]. */
 class NavigationTab(val label: String, @DrawableRes val icon: Int)
@@ -29,7 +31,8 @@ class NavigationTab(val label: String, @DrawableRes val icon: Int)
 /**
  * A screen outside a Daily Set with the navigation bar under it. The tab at [selected] is marked
  * by its pill and by its colour, and is announced as selected. The bar keeps clear of the system's
- * own navigation, so the [content] above it does not have to.
+ * own navigation, so the [content] above it does not have to. [content] draws the screen of the
+ * tab it is given; when [selected] changes, the old one fades out and the new one fades in.
  */
 @Composable
 fun NavigationFrame(
@@ -37,7 +40,7 @@ fun NavigationFrame(
     selected: Int,
     onSelect: (Int) -> Unit,
     modifier: Modifier = Modifier,
-    content: @Composable () -> Unit,
+    content: @Composable (tab: Int) -> Unit,
 ) {
     val scheme = MaterialTheme.colorScheme
     Column(modifier = modifier.fillMaxSize()) {
@@ -47,7 +50,8 @@ fun NavigationFrame(
                 .fillMaxWidth()
                 .consumeWindowInsets(WindowInsets.navigationBars.only(WindowInsetsSides.Bottom)),
         ) {
-            content()
+            val transition = Motion.tabs()
+            AnimatedContent(targetState = selected, transitionSpec = { transition }, label = "Tab") { tab -> content(tab) }
         }
         NavigationBar(containerColor = scheme.surfaceContainer, contentColor = scheme.onSurfaceVariant, tonalElevation = 0.dp) {
             tabs.forEachIndexed { index, tab ->

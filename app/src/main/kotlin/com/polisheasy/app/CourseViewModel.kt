@@ -32,7 +32,14 @@ sealed interface Screen {
      * [week] is this calendar week, Monday to Sunday. [next] is where the Learner is
      * on the Path, or null once every Daily Set released so far is completed.
      */
-    data class Home(val today: Today, val streak: Int, val week: List<DayView>, val next: NextDailySetView?) : Screen
+    data class Home(
+        val today: Today,
+        val streak: Int,
+        val week: List<DayView>,
+        val next: NextDailySetView?,
+        /** Set when the Learner has just come back from the Daily Set that raised the Streak from this number. */
+        val streakRaisedFrom: Int? = null,
+    ) : Screen
 
     data class Path(val path: PathView) : Screen
 
@@ -78,6 +85,8 @@ sealed interface Screen {
         val replay: Boolean,
         /** The Streak this Daily Set raised, or null when it raised none, as a Replay never does. */
         val streakRaised: StreakRaised? = null,
+        /** This calendar week, Monday to Sunday, for the Streak's dots. */
+        val week: List<DayView> = emptyList(),
     ) : Screen
 }
 
@@ -129,13 +138,19 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
 
     /** Leaves a Tip, an Exercise or a Summary: a Replay goes back to the Path, anything else to Home. */
     fun leaveDailySet() {
-        val replay = when (val current = screen) {
+        val current = screen
+        val replay = when (current) {
             is Screen.Tip -> current.replay
             is Screen.Player -> current.replay
             is Screen.Summary -> current.replay
             else -> false
         }
-        if (replay) openPath() else backToHome()
+        when {
+            replay -> openPath()
+            // Home shows the Streak go up once more, as the Learner arrives from the Summary that raised it.
+            current is Screen.Summary -> screen = home().copy(streakRaisedFrom = current.streakRaised?.from)
+            else -> backToHome()
+        }
     }
 
     fun openSettings() {
@@ -166,8 +181,9 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
      * and Settings is right when the Learner comes back from Android's own settings.
      */
     fun refresh() {
-        when (screen) {
-            is Screen.Home -> screen = home()
+        when (val current = screen) {
+            // Home keeps what it is in the middle of showing: arriving from the Summary is itself a moment that asks again.
+            is Screen.Home -> screen = home().copy(streakRaisedFrom = current.streakRaisedFrom)
             is Screen.Path -> screen = Screen.Path(engine.path())
             is Screen.Settings -> screen = settingsScreen()
             else -> Unit
@@ -236,6 +252,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
                 step.reviewOnly,
                 step.replay,
                 streakRaised = streakRaised.takeUnless { step.replay },
+                week = engine.thisWeek(),
             ).also { streakRaised = null }
         }
     }
