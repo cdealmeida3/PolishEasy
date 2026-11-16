@@ -73,6 +73,12 @@
     <string name="nav_home">Home</string>
     <string name="nav_path">Path</string>
     <string name="path_unit">Unit %1$d · %2$s</string>
+    <string name="path_level">%1$s Path</string>
+    <string name="path_unit_number">Unit %1$d</string>
+    <string name="path_progress">%1$d of %2$d Daily Sets completed</string>
+    <string name="path_unit_progress">%1$d of %2$d completed</string>
+    <string name="path_stop_note">%1$s · %2$s</string>
+    <string name="path_unlocks_tomorrow">Unlocks tomorrow</string>
     <string name="path_daily_set">Daily Set %1$d</string>
     <string name="path_completed">Completed</string>
     <string name="path_today">Today</string>

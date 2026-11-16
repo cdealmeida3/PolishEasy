@@ -198,10 +198,13 @@ internal class PolishContentTest {
         val content = polishContent(withTable.files())
 
         assertEquals(
-            listOf(TipText(DAY_1, "a1-u01-d01-t01", "The verb być\nByć means to be.\njestem\njesteś\njest\njesteśmy\njesteście\nsą")),
+            listOf(
+                TipText(DAY_1, "a1-u01-d01-t01", "The verb być\nByć means to be.\njestem\njesteś\njest\njesteśmy\njesteście\nsą"),
+                TipText(DAY_2, "a1-u01-d02-t01", "Yes and no\nTak is yes."),
+            ),
             content.tips,
         )
-        assertEquals("Saying hello\nCześć is informal.", polishContent(valid.files()).tips.single().text)
+        assertEquals("Saying hello\nCześć is informal.", polishContent(valid.files()).tips.first().text)
     }
 
     @Test

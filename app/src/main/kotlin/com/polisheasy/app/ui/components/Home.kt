@@ -176,25 +176,36 @@ fun UnitProgress(unit: String, completed: Int, dailySets: Int, description: Stri
     Column(modifier = modifier) {
         Text(unit, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant)
         Spacer(Modifier.height(Space.s))
-        Row(
-            horizontalArrangement = Arrangement.spacedBy(Space.xxs),
-            modifier = Modifier
-                .fillMaxWidth()
-                .clearAndSetSemantics { contentDescription = description },
-        ) {
-            repeat(dailySets) { index ->
-                val segment = Modifier
-                    .weight(1f)
-                    .height(Size.progressBar)
-                Box(
-                    modifier = when {
-                        index < completed -> segment.background(scheme.primary, CircleShape)
-                        index == completed ->
-                            segment.background(scheme.primaryContainer, CircleShape).border(Edge.border, scheme.primary, CircleShape)
-                        else -> segment.background(scheme.surfaceContainerHigh, CircleShape)
-                    },
-                )
-            }
+        ProgressSegments(completed, current = completed, total = dailySets, description = description)
+    }
+}
+
+/**
+ * One segment for each of [total] things done in order. The first [completed] are filled, the one
+ * at [current], if any, is outlined, and the rest are empty. A screen reader says [description];
+ * without one the segments are skipped, for when the words beside them already say it.
+ */
+@Composable
+internal fun ProgressSegments(completed: Int, current: Int?, total: Int, description: String?, modifier: Modifier = Modifier) {
+    val scheme = MaterialTheme.colorScheme
+    Row(
+        horizontalArrangement = Arrangement.spacedBy(Space.xxs),
+        modifier = modifier
+            .fillMaxWidth()
+            .clearAndSetSemantics { if (description != null) contentDescription = description },
+    ) {
+        repeat(total) { index ->
+            val segment = Modifier
+                .weight(1f)
+                .height(Size.progressBar)
+            Box(
+                modifier = when {
+                    index < completed -> segment.background(scheme.primary, CircleShape)
+                    index == current ->
+                        segment.background(scheme.primaryContainer, CircleShape).border(Edge.border, scheme.primary, CircleShape)
+                    else -> segment.background(scheme.surfaceContainerHigh, CircleShape)
+                },
+            )
         }
     }
 }

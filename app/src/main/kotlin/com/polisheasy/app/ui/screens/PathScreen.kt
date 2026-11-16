@@ -1,140 +1,116 @@
 package com.polisheasy.app.ui.screens
 
-import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.heightIn
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.rememberLazyListState
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.remember
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.style.TextAlign
 import com.polisheasy.app.R
+import com.polisheasy.app.ui.components.CardNote
+import com.polisheasy.app.ui.components.Journey
+import com.polisheasy.app.ui.components.JourneyMarks
 import com.polisheasy.app.ui.components.ScreenFrame
+import com.polisheasy.app.ui.components.StopState
 import com.polisheasy.app.ui.components.TopBar
-import com.polisheasy.app.ui.theme.Edge
-import com.polisheasy.app.ui.theme.Motion
-import com.polisheasy.app.ui.theme.Size
+import com.polisheasy.app.ui.components.TrailStop
+import com.polisheasy.app.ui.components.UnitCard
 import com.polisheasy.app.ui.theme.Space
 import com.polisheasy.engine.DailySetState
 import com.polisheasy.engine.DailySetView
 import com.polisheasy.engine.PathView
-
-/** One row of the Path screen's list. */
-private sealed interface PathRow {
-    val key: String
-
-    data class LevelTitle(override val key: String, val title: String) : PathRow
-
-    data class UnitHeader(override val key: String, val number: Int, val title: String) : PathRow
-
-    data class DailySetRow(val dailySet: DailySetView) : PathRow {
-        override val key: String get() = dailySet.id
-    }
-}
+import com.polisheasy.engine.UnitView
 
 /**
- * The Path: every Level opened so far, its Units and their Daily Sets, each marked Completed,
- * Today or Locked. A completed one starts a Replay and today's opens it; a locked one does nothing.
+ * The Path as a journey: every Level opened so far, a card for each of its Units with how far
+ * through it the Learner is, and in each card its Daily Sets as stops on a trail. A completed stop
+ * starts a Replay and today's opens it; a locked one does nothing. It opens at the stop the
+ * Learner is at: the first Daily Set not yet completed.
  */
 @Composable
 internal fun PathScreen(path: PathView, onReplay: (String) -> Unit, onOpenTodays: () -> Unit) {
-    val rows = remember(path) {
-        path.levels.flatMap { level ->
-            listOf(PathRow.LevelTitle("level-${level.id}", level.title)) + level.units.flatMap { unit ->
-                listOf(PathRow.UnitHeader("unit-${unit.id}", unit.number, unit.title)) +
-                    unit.dailySets.map { PathRow.DailySetRow(it) }
-            }
-        }
-    }
-    val allCompleted = rows.none { it is PathRow.DailySetRow && it.dailySet.state != DailySetState.COMPLETED }
-    // Opens at the Unit the Learner is in: the one holding the first Daily Set not yet completed.
-    val firstOpen = rows.indexOfFirst { it is PathRow.DailySetRow && it.dailySet.state != DailySetState.COMPLETED }
-    val startAt = if (firstOpen < 0) 0 else rows.take(firstOpen).indexOfLast { it is PathRow.UnitHeader }.coerceAtLeast(0)
-    val listState = rememberLazyListState(initialFirstVisibleItemIndex = startAt)
+    val at = path.levels.flatMap { level -> level.units.flatMap { it.dailySets } }
+        .firstOrNull { it.state != DailySetState.COMPLETED }
     ScreenFrame {
-        LazyColumn(state = listState, modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(Space.xs)) {
-            items(count = rows.size, key = { rows[it].key }) { index ->
-                when (val row = rows[index]) {
-                    is PathRow.LevelTitle -> TopBar(row.title)
-                    is PathRow.UnitHeader -> Text(
-                        stringResource(R.string.path_unit, row.number, row.title),
-                        style = MaterialTheme.typography.titleSmall,
-                        color = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.padding(top = Space.m),
-                    )
-                    is PathRow.DailySetRow -> DailySetPathRow(row.dailySet, onReplay, onOpenTodays)
+        Journey(modifier = Modifier.fillMaxSize(), opensAtTop = at == null) { marks ->
+            path.levels.forEachIndexed { index, level ->
+                if (index > 0) Spacer(Modifier.height(Space.m))
+                val dailySets = level.units.flatMap { it.dailySets }
+                TopBar(
+                    stringResource(R.string.path_level, level.title),
+                    note = stringResource(R.string.path_progress, dailySets.count { it.state == DailySetState.COMPLETED }, dailySets.size),
+                )
+                level.units.forEach { unit ->
+                    PathUnit(unit, at, marks, onReplay, onOpenTodays)
+                    Spacer(Modifier.height(Space.m))
                 }
             }
-            if (allCompleted) {
-                item(key = "more-units") {
-                    Text(
-                        stringResource(R.string.path_more_units),
-                        style = MaterialTheme.typography.bodyLarge,
-                        textAlign = TextAlign.Center,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(top = Space.m),
-                    )
-                }
-            }
+            if (at == null) CardNote(stringResource(R.string.path_more_units))
         }
     }
 }
 
-/** A Daily Set on the Path. Its state is always written out, never shown by colour alone. */
+/** One Unit's card. [at] is the stop the Learner is at: it and its card carry the [marks], so that the Path opens on them. */
 @Composable
-private fun DailySetPathRow(dailySet: DailySetView, onReplay: (String) -> Unit, onOpenTodays: () -> Unit) {
-    val replayLabel = stringResource(R.string.path_replay)
-    val startLabel = stringResource(R.string.home_start)
-    val scheme = MaterialTheme.colorScheme
-    val today = dailySet.state == DailySetState.TODAY
-    val modifier = when (dailySet.state) {
-        DailySetState.COMPLETED -> Modifier.clickable(onClickLabel = replayLabel) { onReplay(dailySet.id) }
-        DailySetState.TODAY -> Modifier.clickable(onClickLabel = startLabel, onClick = onOpenTodays)
-        DailySetState.LOCKED -> Modifier.alpha(Motion.FADED_ALPHA)
-    }
-    Surface(
-        color = if (today) scheme.primaryContainer else scheme.surfaceContainerLowest,
-        contentColor = if (today) scheme.onPrimaryContainer else scheme.onSurface,
-        shape = MaterialTheme.shapes.medium,
-        border = BorderStroke(Edge.hairline, if (today) scheme.primary else scheme.outlineVariant),
-        modifier = Modifier
-            .fillMaxWidth()
-            .heightIn(min = Size.control),
+private fun PathUnit(unit: UnitView, at: DailySetView?, marks: JourneyMarks, onReplay: (String) -> Unit, onOpenTodays: () -> Unit) {
+    val stops = unit.dailySets
+    val completed = stops.count { it.state == DailySetState.COMPLETED }
+    UnitCard(
+        label = stringResource(R.string.path_unit_number, unit.number),
+        title = unit.title,
+        progress = stringResource(R.string.path_unit_progress, completed, stops.size),
+        completed = completed,
+        dailySets = stops.size,
+        modifier = if (stops.any { it.id == at?.id }) marks.card else Modifier,
+        current = stops.indexOfFirst { it.state == DailySetState.TODAY }.takeIf { it >= 0 },
     ) {
-        Row(
-            modifier = modifier
-                .heightIn(min = Size.control)
-                .padding(horizontal = Space.m, vertical = Space.s),
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            Text(
-                stringResource(R.string.path_daily_set, dailySet.number),
-                style = MaterialTheme.typography.titleMedium,
-                modifier = Modifier.weight(1f),
-            )
-            Text(
-                stringResource(
-                    when (dailySet.state) {
-                        DailySetState.COMPLETED -> R.string.path_completed
-                        DailySetState.TODAY -> R.string.path_today
-                        DailySetState.LOCKED -> R.string.path_locked
-                    },
-                ),
-                style = if (today) MaterialTheme.typography.titleSmall else MaterialTheme.typography.labelMedium,
-                color = if (today) scheme.onPrimaryContainer else scheme.onSurfaceVariant,
+        stops.forEachIndexed { index, dailySet ->
+            val state = dailySet.state
+            val number = stringResource(R.string.path_daily_set, dailySet.number)
+            // A Daily Set with no Tip has no title of its own, so its number stands in for one.
+            val numbered = dailySet.title != null
+            val next = at?.id == dailySet.id && state == DailySetState.LOCKED
+            val says = when {
+                state == DailySetState.COMPLETED -> stringResource(R.string.path_completed)
+                state == DailySetState.TODAY -> null
+                next -> stringResource(R.string.path_unlocks_tomorrow)
+                else -> stringResource(R.string.path_locked)
+            }
+            TrailStop(
+                state = when (state) {
+                    DailySetState.COMPLETED -> StopState.Completed
+                    DailySetState.TODAY -> StopState.Today
+                    DailySetState.LOCKED -> StopState.Locked
+                },
+                title = dailySet.title ?: number,
+                note = when {
+                    !numbered -> says
+                    says == null -> number
+                    else -> stringResource(R.string.path_stop_note, number, says)
+                },
+                first = index == 0,
+                last = index == stops.lastIndex,
+                // The trail is walked as far as today's stop, and no further.
+                walkedAbove = state != DailySetState.LOCKED,
+                walkedBelow = state == DailySetState.COMPLETED && stops.getOrNull(index + 1)?.state == DailySetState.TODAY ||
+                    stops.getOrNull(index + 1)?.state == DailySetState.COMPLETED,
+                modifier = if (at?.id == dailySet.id) marks.stop else Modifier,
+                label = when {
+                    state == DailySetState.TODAY -> stringResource(R.string.path_today)
+                    next -> stringResource(R.string.home_up_next)
+                    else -> null
+                },
+                action = if (state == DailySetState.COMPLETED) R.drawable.ic_replay else null,
+                onClickLabel = when (state) {
+                    DailySetState.COMPLETED -> stringResource(R.string.path_replay)
+                    DailySetState.TODAY -> stringResource(R.string.home_start)
+                    DailySetState.LOCKED -> null
+                },
+                onClick = when (state) {
+                    DailySetState.COMPLETED -> ({ onReplay(dailySet.id) })
+                    DailySetState.TODAY -> onOpenTodays
+                    DailySetState.LOCKED -> null
+                },
             )
         }
     }

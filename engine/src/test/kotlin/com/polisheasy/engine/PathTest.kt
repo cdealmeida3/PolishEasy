@@ -57,6 +57,17 @@ class PathTest {
     }
 
     @Test
+    fun `a Daily Set's title on the Path is the title of its first Tip, and a Daily Set with no Tip has none`() {
+        val first = Tip("d1-t1", before = "d1-e2", title = mapOf("en" to "Hello"), body = mapOf("en" to "Body"))
+        val second = Tip("d1-t2", before = "d1-e1", title = mapOf("en" to "Goodbye"), body = mapOf("en" to "Body"))
+        val titled = Course(listOf(levelOf("a1", "A1", unitOf("a1-u01", "Greetings", d1.copy(tips = listOf(first, second)), d2))), items)
+
+        val dailySets = ItemLearner(titled).openApp().path().levels.single().units.single().dailySets
+
+        assertEquals(listOf("Hello", null), dailySets.map { it.title })
+    }
+
+    @Test
     fun `a Daily Set that was started and not finished is still today's, the same day and on a later day`() {
         val learner = learner()
         val engine = learner.openApp()

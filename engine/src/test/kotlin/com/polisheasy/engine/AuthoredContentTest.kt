@@ -253,6 +253,18 @@ class AuthoredContentTest {
     }
 
     @Test
+    fun `every Daily Set of Units 1 to 3 has a title on the Path, and no two in a Unit share one`() {
+        val units = CourseEngine(course, InMemoryLearnerProgress(), FakeClock()).path().levels.single().units
+
+        units.forEach { unit ->
+            val titles = unit.dailySets.map { it.title }
+            assertTrue(titles.none { it.isNullOrBlank() }, "Unit ${unit.number} has a Daily Set with no title: $titles")
+            assertEquals(titles.distinct(), titles, "Unit ${unit.number}")
+        }
+        assertEquals("How Polish is read", units.first().dailySets.first().title)
+    }
+
+    @Test
     fun `every Daily Set shipped with the app can be replayed to its Summary, and nothing saved changes`() {
         val progress = InMemoryLearnerProgress()
         val clock = FakeClock()
