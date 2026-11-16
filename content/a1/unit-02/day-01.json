@@ -1,0 +1,190 @@
+{
+  "id": "a1-u02-d01",
+  "tips": [
+    {
+      "id": "a1-u02-d01-t01",
+      "before": "a1-u02-d01-e01",
+      "title": { "en": "Być: to be" },
+      "body": { "en": "A Polish verb changes its ending for each person. Here is być, \"to be\": the most used verb in Polish, and an irregular one. Today you learn jestem, \"I am\", and jesteś, \"you are\"." },
+      "conjugation": {
+        "verb": "być",
+        "meaning": { "en": "to be" },
+        "forms": { "ja": "jestem", "ty": "jesteś", "on": "jest", "my": "jesteśmy", "wy": "jesteście", "oni": "są" }
+      }
+    },
+    {
+      "id": "a1-u02-d01-t02",
+      "before": "a1-u02-d01-e06",
+      "title": { "en": "You can leave out ja and ty" },
+      "body": { "en": "The ending of the verb already says who is meant, so Poles usually say just jestem Adam. Ja and ty are added to contrast or to stress: ja jestem Ewa, a ty? Both ways are accepted here." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d01-e01",
+      "prompt": "ja",
+      "options": [
+        { "en": "you (one friend)" },
+        { "en": "he" },
+        { "en": "I" }
+      ],
+      "correctOption": 2,
+      "items": ["ja"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d01-e02",
+      "prompt": "jestem",
+      "options": [
+        { "en": "you are (one friend)" },
+        { "en": "thank you" },
+        { "en": "I am" }
+      ],
+      "correctOption": 2,
+      "items": ["byc-jestem"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d01-e03",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "ja",
+      "acceptedAnswers": ["jestem"],
+      "items": ["byc-jestem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d01-e04",
+      "prompt": "Adam",
+      "options": [
+        { "en": "Ewa (a woman's name)" },
+        { "en": "Adam (a man's name)" },
+        { "en": "hi; bye (to friends)" }
+      ],
+      "correctOption": 1,
+      "items": ["adam"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d01-e05",
+      "prompt": "Ewa",
+      "options": [
+        { "en": "Adam (a man's name)" },
+        { "en": "I am" },
+        { "en": "Ewa (a woman's name)" }
+      ],
+      "correctOption": 2,
+      "items": ["ewa"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d01-e06",
+      "prompt": { "en": "I am Adam" },
+      "acceptedAnswers": ["jestem Adam", "ja jestem Adam"],
+      "distractors": ["ja", "Ewa"],
+      "items": ["byc-jestem", "adam"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d01-e07",
+      "text": "jestem",
+      "distractors": ["jesteś", "jest"],
+      "items": ["byc-jestem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d01-e08",
+      "prompt": "ty",
+      "options": [
+        { "en": "I" },
+        { "en": "you (one friend)" },
+        { "en": "yes" }
+      ],
+      "correctOption": 1,
+      "items": ["ty"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d01-e09",
+      "prompt": "jesteś",
+      "options": [
+        { "en": "I am" },
+        { "en": "you are (one friend)" },
+        { "en": "how are you?" }
+      ],
+      "correctOption": 1,
+      "items": ["byc-jestes"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d01-e10",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "ty",
+      "sentence": "Ty ___ Ewa?",
+      "sentenceMeaning": { "en": "Are you Ewa?" },
+      "acceptedAnswers": ["jesteś"],
+      "items": ["ty", "byc-jestes", "ewa"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u02-d01-e11",
+      "acceptedAnswers": ["ja jestem Ewa"],
+      "items": ["ja", "byc-jestem", "ewa"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d01-e12",
+      "prompt": "tutaj",
+      "options": [
+        { "en": "here" },
+        { "en": "there" },
+        { "en": "today" }
+      ],
+      "correctOption": 0,
+      "items": ["tutaj"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d01-e13",
+      "prompt": { "en": "I am here" },
+      "acceptedAnswers": ["jestem tutaj", "tutaj jestem"],
+      "distractors": ["ty", "Adam"],
+      "items": ["byc-jestem", "tutaj"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d01-e14",
+      "text": "jesteś tutaj?",
+      "distractors": ["jestem tutaj?", "jest tutaj?"],
+      "items": ["byc-jestes", "tutaj"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u02-d01-e15",
+      "prompt": { "en": "you are (one friend)" },
+      "acceptedAnswers": ["jesteś", "ty jesteś"],
+      "items": ["byc-jestes"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d01-e16",
+      "prompt": { "en": "hi, I am Ewa, and you?" },
+      "acceptedAnswers": ["cześć, jestem Ewa, a ty?"],
+      "distractors": ["Adam", "tak"],
+      "items": ["czesc", "byc-jestem", "ewa", "a-ty"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d01-e17",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "ja",
+      "sentence": "Miło mi, ___ Adam.",
+      "sentenceMeaning": { "en": "Nice to meet you, I am Adam." },
+      "acceptedAnswers": ["jestem"],
+      "items": ["milo-mi", "byc-jestem", "adam"]
+    }
+  ]
+}

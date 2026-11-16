@@ -1,0 +1,190 @@
+{
+  "id": "a1-u02-d02",
+  "tips": [
+    {
+      "id": "a1-u02-d02-t01",
+      "before": "a1-u02-d02-e01",
+      "title": { "en": "On, ona, ono" },
+      "body": { "en": "On is \"he\" and ona is \"she\". There is also ono, \"it\", for a child or a neuter thing. All three take jest. To jest… means \"this is…\" and introduces a person or a thing: to jest Adam." },
+      "conjugation": {
+        "verb": "być",
+        "meaning": { "en": "to be" },
+        "forms": { "ja": "jestem", "ty": "jesteś", "on": "jest", "my": "jesteśmy", "wy": "jesteście", "oni": "są" }
+      }
+    },
+    {
+      "id": "a1-u02-d02-t02",
+      "before": "a1-u02-d02-e08",
+      "title": { "en": "Where from" },
+      "body": { "en": "Skąd asks \"where from\", and the answer is z with the country: z Polski, z Anglii. The country's ending changes after z, so for now learn yours as a whole: z Irlandii, z Kanady, z Australii, z Brazylii, z Niemiec (from Germany)." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d02-e01",
+      "prompt": "on",
+      "options": [
+        { "en": "she" },
+        { "en": "I" },
+        { "en": "he" }
+      ],
+      "correctOption": 2,
+      "items": ["on"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d02-e02",
+      "prompt": "ona",
+      "options": [
+        { "en": "he" },
+        { "en": "you (one friend)" },
+        { "en": "she" }
+      ],
+      "correctOption": 2,
+      "items": ["ona"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d02-e03",
+      "text": "on",
+      "distractors": ["ona", "ono"],
+      "items": ["on"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d02-e04",
+      "prompt": "jest",
+      "options": [
+        { "en": "I am" },
+        { "en": "he is; she is; it is" },
+        { "en": "you are (one friend)" }
+      ],
+      "correctOption": 1,
+      "items": ["byc-jest"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d02-e05",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "on",
+      "acceptedAnswers": ["jest"],
+      "items": ["byc-jest"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d02-e06",
+      "prompt": "to",
+      "options": [
+        { "en": "this; it" },
+        { "en": "here" },
+        { "en": "he" }
+      ],
+      "correctOption": 0,
+      "items": ["to"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d02-e07",
+      "prompt": { "en": "this is Adam" },
+      "acceptedAnswers": ["to jest Adam", "to Adam"],
+      "distractors": ["Ewa", "on"],
+      "items": ["to", "byc-jest", "adam"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d02-e08",
+      "prompt": "z Polski",
+      "options": [
+        { "en": "from England" },
+        { "en": "from Poland" },
+        { "en": "in Polish" }
+      ],
+      "correctOption": 1,
+      "items": ["z-polski"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d02-e09",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "on",
+      "sentence": "Ona ___ z Polski.",
+      "sentenceMeaning": { "en": "She is from Poland." },
+      "acceptedAnswers": ["jest"],
+      "items": ["ona", "byc-jest", "z-polski"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d02-e10",
+      "prompt": "z Anglii",
+      "options": [
+        { "en": "from Poland" },
+        { "en": "in English" },
+        { "en": "from England" }
+      ],
+      "correctOption": 2,
+      "items": ["z-anglii"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d02-e11",
+      "text": "z Polski",
+      "distractors": ["z Anglii", "po polsku"],
+      "items": ["z-polski"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d02-e12",
+      "prompt": "skąd",
+      "options": [
+        { "en": "here" },
+        { "en": "this; it" },
+        { "en": "where from" }
+      ],
+      "correctOption": 2,
+      "items": ["skad"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d02-e13",
+      "prompt": { "en": "where are you from? (one friend)" },
+      "acceptedAnswers": ["skąd jesteś?"],
+      "distractors": ["jest", "to"],
+      "items": ["skad", "byc-jestes"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u02-d02-e14",
+      "prompt": { "en": "he is from England" },
+      "acceptedAnswers": ["on jest z Anglii", "jest z Anglii"],
+      "items": ["on", "byc-jest", "z-anglii"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d02-e15",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "ty",
+      "sentence": "Ty ___ z Anglii?",
+      "sentenceMeaning": { "en": "Are you from England? (one friend)" },
+      "acceptedAnswers": ["jesteś"],
+      "items": ["ty", "byc-jestes", "z-anglii"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d02-e16",
+      "prompt": { "en": "this is Adam, he is from Poland" },
+      "acceptedAnswers": ["to jest Adam, on jest z Polski", "to Adam, on jest z Polski"],
+      "distractors": ["Ewa", "ona"],
+      "items": ["to", "byc-jest", "adam", "on", "z-polski"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u02-d02-e17",
+      "acceptedAnswers": ["ona jest z Anglii"],
+      "items": ["ona", "byc-jest", "z-anglii"]
+    }
+  ]
+}

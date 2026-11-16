@@ -1,0 +1,202 @@
+{
+  "id": "a1-u02-d03",
+  "tips": [
+    {
+      "id": "a1-u02-d03-t01",
+      "before": "a1-u02-d03-e01",
+      "title": { "en": "The plural of być" },
+      "body": { "en": "My jesteśmy, wy jesteście, oni są. Wy is \"you\" said to several people. Notice -my for \"we\", as in dziękujemy, and -cie for \"you\" in the plural: these two endings come back in every verb." },
+      "conjugation": {
+        "verb": "być",
+        "meaning": { "en": "to be" },
+        "forms": { "ja": "jestem", "ty": "jesteś", "on": "jest", "my": "jesteśmy", "wy": "jesteście", "oni": "są" }
+      }
+    },
+    {
+      "id": "a1-u02-d03-t02",
+      "before": "a1-u02-d03-e10",
+      "title": { "en": "Oni and one" },
+      "body": { "en": "Oni is \"they\" for men, or for a group with at least one man in it. One is \"they\" for women only, and also for children and things. Both take są. I means \"and\": Adam i Ewa." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d03-e01",
+      "prompt": "my",
+      "options": [
+        { "en": "you (several people)" },
+        { "en": "I" },
+        { "en": "we" }
+      ],
+      "correctOption": 2,
+      "items": ["my"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d03-e02",
+      "prompt": "jesteśmy",
+      "options": [
+        { "en": "you are (several people)" },
+        { "en": "we are" },
+        { "en": "they are" }
+      ],
+      "correctOption": 1,
+      "items": ["byc-jestesmy"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d03-e03",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "my",
+      "acceptedAnswers": ["jesteśmy"],
+      "items": ["byc-jestesmy"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d03-e04",
+      "text": "my",
+      "distractors": ["wy", "ty"],
+      "items": ["my"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d03-e05",
+      "prompt": "wy",
+      "options": [
+        { "en": "we" },
+        { "en": "you (several people)" },
+        { "en": "you (one friend)" }
+      ],
+      "correctOption": 1,
+      "items": ["wy"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d03-e06",
+      "prompt": "jesteście",
+      "options": [
+        { "en": "we are" },
+        { "en": "you are (several people)" },
+        { "en": "you are (one friend)" }
+      ],
+      "correctOption": 1,
+      "items": ["byc-jestescie"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d03-e07",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "wy",
+      "acceptedAnswers": ["jesteście"],
+      "items": ["byc-jestescie"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d03-e08",
+      "text": "wy",
+      "distractors": ["my", "ty"],
+      "items": ["wy"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d03-e09",
+      "prompt": { "en": "we are from England" },
+      "acceptedAnswers": ["jesteśmy z Anglii", "my jesteśmy z Anglii"],
+      "distractors": ["my", "Polski"],
+      "items": ["byc-jestesmy", "z-anglii"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d03-e10",
+      "prompt": "oni",
+      "options": [
+        { "en": "they (men, or men and women)" },
+        { "en": "they (women)" },
+        { "en": "we" }
+      ],
+      "correctOption": 0,
+      "items": ["oni"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d03-e11",
+      "prompt": "one",
+      "options": [
+        { "en": "they (men, or men and women)" },
+        { "en": "she" },
+        { "en": "they (women)" }
+      ],
+      "correctOption": 2,
+      "items": ["one"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d03-e12",
+      "prompt": "są",
+      "options": [
+        { "en": "they are" },
+        { "en": "we are" },
+        { "en": "he is; she is; it is" }
+      ],
+      "correctOption": 0,
+      "items": ["byc-sa"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d03-e13",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "oni",
+      "acceptedAnswers": ["są"],
+      "items": ["byc-sa"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d03-e14",
+      "prompt": "i",
+      "options": [
+        { "en": "and" },
+        { "en": "or" },
+        { "en": "he" }
+      ],
+      "correctOption": 0,
+      "items": ["i"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d03-e15",
+      "prompt": { "en": "Adam and Ewa are here" },
+      "acceptedAnswers": ["Adam i Ewa są tutaj", "Adam i Ewa tutaj są"],
+      "distractors": ["jest", "oni"],
+      "items": ["adam", "i", "ewa", "byc-sa", "tutaj"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d03-e16",
+      "text": "oni są tutaj",
+      "distractors": ["one są tutaj", "on jest tutaj"],
+      "items": ["oni", "byc-sa", "tutaj"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d03-e17",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "wy",
+      "sentence": "Wy ___ z Polski?",
+      "sentenceMeaning": { "en": "Are you from Poland? (several people)" },
+      "acceptedAnswers": ["jesteście"],
+      "items": ["wy", "byc-jestescie", "z-polski"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u02-d03-e18",
+      "prompt": { "en": "they (women) are here" },
+      "acceptedAnswers": ["one są tutaj", "one tutaj są", "one są tu", "one tu są"],
+      "items": ["one", "byc-sa", "tutaj"]
+    }
+  ]
+}

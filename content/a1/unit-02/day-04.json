@@ -1,0 +1,186 @@
+{
+  "id": "a1-u02-d04",
+  "tips": [
+    {
+      "id": "a1-u02-d04-t01",
+      "before": "a1-u02-d04-e01",
+      "title": { "en": "Czy and nie" },
+      "body": { "en": "Put czy at the start to make a yes-or-no question: czy jesteś z Polski? In speech it is often left out, and then only the voice rises. Nie before a verb means \"not\": nie jestem z Polski. So nie, nie jestem is \"no, I am not\"." }
+    },
+    {
+      "id": "a1-u02-d04-t02",
+      "before": "a1-u02-d04-e04",
+      "title": { "en": "Pan and pani" },
+      "body": { "en": "To an adult you do not know well, say pan (to a man) or pani (to a woman) instead of ty. The verb then takes the form used with on and ona: czy pan jest z Polski? Jak się pan ma? is the polite jak się masz?" }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d04-e01",
+      "prompt": "czy",
+      "options": [
+        { "en": "(starts a yes-or-no question)" },
+        { "en": "where from" },
+        { "en": "and" }
+      ],
+      "correctOption": 0,
+      "items": ["czy"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d04-e02",
+      "prompt": { "en": "are you from Poland? (one friend)" },
+      "acceptedAnswers": ["czy jesteś z Polski?", "jesteś z Polski?"],
+      "distractors": ["tak", "jest"],
+      "items": ["czy", "byc-jestes", "z-polski"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d04-e03",
+      "prompt": { "en": "no, I am not from Poland" },
+      "acceptedAnswers": ["nie, nie jestem z Polski"],
+      "distractors": ["tak", "czy"],
+      "items": ["nie", "byc-jestem", "z-polski"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d04-e04",
+      "prompt": "pan",
+      "options": [
+        { "en": "you (to a man, formal); Mr" },
+        { "en": "you (to a woman, formal); Mrs, Ms" },
+        { "en": "you (one friend)" }
+      ],
+      "correctOption": 0,
+      "items": ["pan"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d04-e05",
+      "prompt": "pani",
+      "options": [
+        { "en": "you (to a woman, formal); Mrs, Ms" },
+        { "en": "you (to a man, formal); Mr" },
+        { "en": "she" }
+      ],
+      "correctOption": 0,
+      "items": ["pani"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d04-e06",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "on",
+      "sentence": "Czy pan ___ z Polski?",
+      "sentenceMeaning": { "en": "Are you from Poland? (to a man, formal)" },
+      "acceptedAnswers": ["jest"],
+      "items": ["czy", "pan", "byc-jest", "z-polski"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d04-e07",
+      "prompt": "jak się pan ma?",
+      "options": [
+        { "en": "how are you? (to a man, formal)" },
+        { "en": "how are you? (to a woman, formal)" },
+        { "en": "where are you from? (to a man, formal)" }
+      ],
+      "correctOption": 0,
+      "items": ["jak-sie-pan-ma"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d04-e08",
+      "prompt": "jak się pani ma?",
+      "options": [
+        { "en": "how are you? (to a woman, formal)" },
+        { "en": "how are you? (to a man, formal)" },
+        { "en": "where are you from? (to a woman, formal)" }
+      ],
+      "correctOption": 0,
+      "items": ["jak-sie-pani-ma"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d04-e09",
+      "text": "jak się pan ma?",
+      "distractors": ["jak się pani ma?", "jak się masz?"],
+      "items": ["jak-sie-pan-ma"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d04-e10",
+      "prompt": { "en": "hello, how are you? (to a woman, formal)" },
+      "acceptedAnswers": ["dzień dobry, jak się pani ma?"],
+      "distractors": ["pan", "masz"],
+      "items": ["dzien-dobry", "jak-sie-pani-ma"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d04-e11",
+      "prompt": { "en": "good evening, how are you? (to a man, formal)" },
+      "acceptedAnswers": ["dobry wieczór, jak się pan ma?"],
+      "distractors": ["pani", "masz"],
+      "items": ["dobry-wieczor", "jak-sie-pan-ma"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d04-e12",
+      "prompt": "a",
+      "options": [
+        { "en": "but" },
+        { "en": "also; too" },
+        { "en": "and (turning to someone or something else)" }
+      ],
+      "correctOption": 2,
+      "items": ["a"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d04-e13",
+      "prompt": { "en": "well, thank you, and you? (to a woman, formal)" },
+      "acceptedAnswers": ["dobrze, dziękuję, a pani?", "dziękuję, dobrze, a pani?"],
+      "distractors": ["pan", "ty"],
+      "items": ["dobrze", "dziekuje", "a", "pani"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d04-e14",
+      "prompt": "też",
+      "options": [
+        { "en": "but" },
+        { "en": "here" },
+        { "en": "also; too" }
+      ],
+      "correctOption": 2,
+      "items": ["tez"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d04-e15",
+      "prompt": { "en": "I am from England too" },
+      "acceptedAnswers": ["ja też jestem z Anglii", "też jestem z Anglii"],
+      "distractors": ["tak", "Polski"],
+      "items": ["ja", "tez", "byc-jestem", "z-anglii"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d04-e16",
+      "verb": "być",
+      "meaning": { "en": "to be" },
+      "person": "oni",
+      "sentence": "Czy oni ___ tutaj?",
+      "sentenceMeaning": { "en": "Are they here?" },
+      "acceptedAnswers": ["są"],
+      "items": ["czy", "oni", "byc-sa", "tutaj"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u02-d04-e17",
+      "acceptedAnswers": ["skąd pan jest?"],
+      "items": ["skad", "pan", "byc-jest"]
+    }
+  ]
+}

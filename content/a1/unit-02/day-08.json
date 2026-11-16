@@ -1,0 +1,201 @@
+{
+  "id": "a1-u02-d08",
+  "tips": [
+    {
+      "id": "a1-u02-d08-t01",
+      "before": "a1-u02-d08-e01",
+      "title": { "en": "The plural of mówić" },
+      "body": { "en": "Mówimy, mówicie, mówią: again -my for \"we\", -cie for \"you\" and -ą for \"they\". You now know three verbs in full: być, mieć and mówić." },
+      "conjugation": {
+        "verb": "mówić",
+        "meaning": { "en": "to speak" },
+        "forms": { "ja": "mówię", "ty": "mówisz", "on": "mówi", "my": "mówimy", "wy": "mówicie", "oni": "mówią" }
+      }
+    },
+    {
+      "id": "a1-u02-d08-t02",
+      "before": "a1-u02-d08-e07",
+      "title": { "en": "Polakiem, Polką" },
+      "body": { "en": "After jestem, jesteś and jest, the word for what someone is takes a special ending. A man says jestem Polakiem or jestem Anglikiem, a woman jestem Polką or jestem Angielką. Unit 4 explains this ending. If your country is not here, jestem z… always works." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d08-e01",
+      "prompt": "mówimy",
+      "options": [
+        { "en": "we speak" },
+        { "en": "you speak (several people)" },
+        { "en": "we have" }
+      ],
+      "correctOption": 0,
+      "items": ["mowic-mowimy"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d08-e02",
+      "prompt": "mówicie",
+      "options": [
+        { "en": "you speak (several people)" },
+        { "en": "we speak" },
+        { "en": "you have (several people)" }
+      ],
+      "correctOption": 0,
+      "items": ["mowic-mowicie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d08-e03",
+      "prompt": "mówią",
+      "options": [
+        { "en": "they speak" },
+        { "en": "we speak" },
+        { "en": "they have" }
+      ],
+      "correctOption": 0,
+      "items": ["mowic-mowia"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d08-e04",
+      "verb": "mówić",
+      "meaning": { "en": "to speak" },
+      "person": "my",
+      "sentence": "My ___ po angielsku, a oni mówią po polsku.",
+      "sentenceMeaning": { "en": "We speak English, and they speak Polish." },
+      "acceptedAnswers": ["mówimy"],
+      "items": ["my", "mowic-mowimy", "po-angielsku", "a", "oni", "mowic-mowia", "po-polsku"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d08-e05",
+      "verb": "mówić",
+      "meaning": { "en": "to speak" },
+      "person": "wy",
+      "sentence": "Czy ___ po polsku? Tak, mówimy.",
+      "sentenceMeaning": { "en": "Do you speak Polish? (several people) Yes, we do." },
+      "acceptedAnswers": ["mówicie"],
+      "items": ["czy", "mowic-mowicie", "po-polsku", "tak", "mowic-mowimy"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u02-d08-e06",
+      "verb": "mówić",
+      "meaning": { "en": "to speak" },
+      "person": "oni",
+      "sentence": "Wy mówicie po polsku, a one ___ po angielsku.",
+      "sentenceMeaning": { "en": "You (several people) speak Polish, and they (women) speak English." },
+      "acceptedAnswers": ["mówią"],
+      "items": ["wy", "mowic-mowicie", "po-polsku", "a", "one", "mowic-mowia", "po-angielsku"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d08-e07",
+      "prompt": "Polakiem",
+      "options": [
+        { "en": "Polish (a woman, after jestem, jesteś, jest)" },
+        { "en": "English (a man, after jestem, jesteś, jest)" },
+        { "en": "Polish (a man, after jestem, jesteś, jest)" }
+      ],
+      "correctOption": 2,
+      "items": ["polakiem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d08-e08",
+      "prompt": "Polką",
+      "options": [
+        { "en": "Polish (a man, after jestem, jesteś, jest)" },
+        { "en": "Polish (a woman, after jestem, jesteś, jest)" },
+        { "en": "English (a woman, after jestem, jesteś, jest)" }
+      ],
+      "correctOption": 1,
+      "items": ["polka-instr"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u02-d08-e09",
+      "prompt": { "en": "I am Polish" },
+      "acceptedAnswers": ["jestem Polką", "jestem Polakiem", "ja jestem Polką", "ja jestem Polakiem"],
+      "items": ["byc-jestem", "polka-instr"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d08-e10",
+      "prompt": "Anglikiem",
+      "options": [
+        { "en": "English (a man, after jestem, jesteś, jest)" },
+        { "en": "English (a woman, after jestem, jesteś, jest)" },
+        { "en": "Polish (a man, after jestem, jesteś, jest)" }
+      ],
+      "correctOption": 0,
+      "items": ["anglikiem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u02-d08-e11",
+      "prompt": "Angielką",
+      "options": [
+        { "en": "English (a man, after jestem, jesteś, jest)" },
+        { "en": "English (a woman, after jestem, jesteś, jest)" },
+        { "en": "Polish (a woman, after jestem, jesteś, jest)" }
+      ],
+      "correctOption": 1,
+      "items": ["angielka-instr"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u02-d08-e12",
+      "text": "Adam jest Polakiem, a Ewa jest Angielką",
+      "distractors": ["Adam jest Anglikiem, a Ewa jest Polką", "Adam jest Polakiem, a Ewa jest Polką"],
+      "items": ["adam", "byc-jest", "polakiem", "a", "ewa", "angielka-instr"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u02-d08-e13",
+      "acceptedAnswers": ["on jest Anglikiem, a ona jest Polką"],
+      "items": ["on", "byc-jest", "anglikiem", "a", "ona", "polka-instr"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d08-e14",
+      "prompt": { "en": "I am not Polish, I am English (a man speaking)" },
+      "acceptedAnswers": ["nie jestem Polakiem, jestem Anglikiem"],
+      "distractors": ["Polką", "tak"],
+      "items": ["nie", "byc-jestem", "polakiem", "anglikiem"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d08-e15",
+      "prompt": { "en": "hi, my name is Ewa" },
+      "acceptedAnswers": ["cześć, mam na imię Ewa"],
+      "distractors": ["Adam", "masz"],
+      "items": ["czesc", "miec-mam", "na-imie", "ewa"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d08-e16",
+      "prompt": { "en": "I am from England, I am English (a woman speaking)" },
+      "acceptedAnswers": ["jestem z Anglii, jestem Angielką"],
+      "distractors": ["Polski", "Anglikiem"],
+      "items": ["byc-jestem", "z-anglii", "angielka-instr"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d08-e17",
+      "prompt": { "en": "I speak English and a little Polish" },
+      "acceptedAnswers": ["mówię po angielsku i trochę po polsku"],
+      "distractors": ["tak", "mówi"],
+      "items": ["mowic-mowie", "po-angielsku", "i", "troche", "po-polsku"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u02-d08-e18",
+      "prompt": { "en": "nice to meet you, and you?" },
+      "acceptedAnswers": ["miło mi, a ty?"],
+      "distractors": ["tak", "nie"],
+      "items": ["milo-mi", "a-ty"]
+    }
+  ]
+}

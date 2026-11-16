@@ -1,8 +1,48 @@
 {
   "clips": [
     {
+      "id": "a",
+      "text": "a"
+    },
+    {
       "id": "a-ty",
       "text": "a ty?"
+    },
+    {
+      "id": "adam",
+      "text": "Adam"
+    },
+    {
+      "id": "adam-i-ewa-maja-pytanie",
+      "text": "Adam i Ewa mają pytanie."
+    },
+    {
+      "id": "adam-i-ewa-sa-tutaj",
+      "text": "Adam i Ewa są tutaj"
+    },
+    {
+      "id": "adam-i-ewa-tutaj-sa",
+      "text": "Adam i Ewa tutaj są"
+    },
+    {
+      "id": "adam-jest-polakiem-a-ewa-jest-angielka",
+      "text": "Adam jest Polakiem, a Ewa jest Angielką"
+    },
+    {
+      "id": "adam-tez-mowi-po-angielsku",
+      "text": "Adam też mówi po angielsku"
+    },
+    {
+      "id": "ale",
+      "text": "ale"
+    },
+    {
+      "id": "angielka",
+      "text": "Angielką"
+    },
+    {
+      "id": "anglikiem",
+      "text": "Anglikiem"
     },
     {
       "id": "bardzo",
@@ -45,6 +85,10 @@
       "text": "co u ciebie?"
     },
     {
+      "id": "czas",
+      "text": "czas"
+    },
+    {
       "id": "czesc",
       "text": "cześć"
     },
@@ -55,6 +99,50 @@
     {
       "id": "czesc-do-jutra",
       "text": "cześć, do jutra"
+    },
+    {
+      "id": "czesc-jak-sie-nazywasz",
+      "text": "cześć, jak się nazywasz?"
+    },
+    {
+      "id": "czesc-jestem-ewa-a-ty",
+      "text": "cześć, jestem Ewa, a ty?"
+    },
+    {
+      "id": "czesc-mam-na-imie-ewa",
+      "text": "cześć, mam na imię Ewa"
+    },
+    {
+      "id": "czy",
+      "text": "czy"
+    },
+    {
+      "id": "czy-jestes-z-polski",
+      "text": "czy jesteś z Polski?"
+    },
+    {
+      "id": "czy-macie-czas",
+      "text": "Czy macie czas?"
+    },
+    {
+      "id": "czy-mowicie-po-polsku-tak-mowimy",
+      "text": "Czy mówicie po polsku? Tak, mówimy."
+    },
+    {
+      "id": "czy-mowisz-po-angielsku",
+      "text": "czy mówisz po angielsku?"
+    },
+    {
+      "id": "czy-oni-sa-tutaj",
+      "text": "Czy oni są tutaj?"
+    },
+    {
+      "id": "czy-pan-jest-z-polski",
+      "text": "Czy pan jest z Polski?"
+    },
+    {
+      "id": "czy-pani-mowi-po-polsku",
+      "text": "Czy pani mówi po polsku?"
     },
     {
       "id": "do-jutra",
@@ -81,6 +169,10 @@
       "text": "dobry wieczór"
     },
     {
+      "id": "dobry-wieczor-jak-sie-pan-ma",
+      "text": "dobry wieczór, jak się pan ma?"
+    },
+    {
       "id": "dobry-wieczor-milo-mi",
       "text": "dobry wieczór, miło mi"
     },
@@ -91,6 +183,10 @@
     {
       "id": "dobrze-do-jutra",
       "text": "dobrze, do jutra"
+    },
+    {
+      "id": "dobrze-dziekuje-a-pani",
+      "text": "dobrze, dziękuję, a pani?"
     },
     {
       "id": "dzieki",
@@ -107,6 +203,10 @@
     {
       "id": "dziekuje-bardzo",
       "text": "dziękuję bardzo"
+    },
+    {
+      "id": "dziekuje-dobrze-a-pani",
+      "text": "dziękuję, dobrze, a pani?"
     },
     {
       "id": "dziekuje-nawzajem",
@@ -133,8 +233,20 @@
       "text": "dzień dobry"
     },
     {
+      "id": "dzien-dobry-jak-sie-pani-ma",
+      "text": "dzień dobry, jak się pani ma?"
+    },
+    {
       "id": "dzien-dobry-witamy",
       "text": "dzień dobry, witamy"
+    },
+    {
+      "id": "ewa",
+      "text": "Ewa"
+    },
+    {
+      "id": "ewa-jest-z-anglii-ale-mowi-po-polsku",
+      "text": "Ewa jest z Anglii, ale mówi po polsku."
     },
     {
       "id": "gratulacje",
@@ -153,12 +265,124 @@
       "text": "halo, słucham"
     },
     {
+      "id": "i",
+      "text": "i"
+    },
+    {
+      "id": "ja",
+      "text": "ja"
+    },
+    {
+      "id": "ja-jestem-adam",
+      "text": "ja jestem Adam"
+    },
+    {
+      "id": "ja-jestem-ewa",
+      "text": "ja jestem Ewa"
+    },
+    {
+      "id": "ja-jestem-polakiem",
+      "text": "ja jestem Polakiem"
+    },
+    {
+      "id": "ja-jestem-polka",
+      "text": "ja jestem Polką"
+    },
+    {
+      "id": "ja-tez-jestem-z-anglii",
+      "text": "ja też jestem z Anglii"
+    },
+    {
+      "id": "jak",
+      "text": "jak"
+    },
+    {
       "id": "jak-leci",
       "text": "jak leci?"
     },
     {
+      "id": "jak-ma-pan-na-imie",
+      "text": "jak ma pan na imię?"
+    },
+    {
+      "id": "jak-masz-na-imie",
+      "text": "jak masz na imię?"
+    },
+    {
+      "id": "jak-pan-ma-na-imie",
+      "text": "jak pan ma na imię?"
+    },
+    {
       "id": "jak-sie-masz",
       "text": "jak się masz?"
+    },
+    {
+      "id": "jak-sie-nazywasz",
+      "text": "jak się nazywasz?"
+    },
+    {
+      "id": "jak-sie-pan-ma",
+      "text": "jak się pan ma?"
+    },
+    {
+      "id": "jak-sie-pani-ma",
+      "text": "jak się pani ma?"
+    },
+    {
+      "id": "jest",
+      "text": "jest"
+    },
+    {
+      "id": "jest-z-anglii",
+      "text": "jest z Anglii"
+    },
+    {
+      "id": "jestem",
+      "text": "jestem"
+    },
+    {
+      "id": "jestem-adam",
+      "text": "jestem Adam"
+    },
+    {
+      "id": "jestem-polakiem",
+      "text": "jestem Polakiem"
+    },
+    {
+      "id": "jestem-polka",
+      "text": "jestem Polką"
+    },
+    {
+      "id": "jestem-tutaj",
+      "text": "jestem tutaj"
+    },
+    {
+      "id": "jestem-z-anglii-jestem-angielka",
+      "text": "jestem z Anglii, jestem Angielką"
+    },
+    {
+      "id": "jestes",
+      "text": "jesteś"
+    },
+    {
+      "id": "jestes-tutaj",
+      "text": "jesteś tutaj?"
+    },
+    {
+      "id": "jestes-z-polski",
+      "text": "jesteś z Polski?"
+    },
+    {
+      "id": "jestescie",
+      "text": "jesteście"
+    },
+    {
+      "id": "jestesmy",
+      "text": "jesteśmy"
+    },
+    {
+      "id": "jestesmy-z-anglii",
+      "text": "jesteśmy z Anglii"
     },
     {
       "id": "jeszcze-raz",
@@ -167,6 +391,46 @@
     {
       "id": "jeszcze-raz-prosze",
       "text": "jeszcze raz, proszę"
+    },
+    {
+      "id": "ma",
+      "text": "ma"
+    },
+    {
+      "id": "macie",
+      "text": "macie"
+    },
+    {
+      "id": "macie-problem",
+      "text": "macie problem?"
+    },
+    {
+      "id": "maja",
+      "text": "mają"
+    },
+    {
+      "id": "mam",
+      "text": "mam"
+    },
+    {
+      "id": "mam-na-imie-ewa",
+      "text": "mam na imię Ewa"
+    },
+    {
+      "id": "mamy",
+      "text": "mamy"
+    },
+    {
+      "id": "mamy-czas",
+      "text": "mamy czas"
+    },
+    {
+      "id": "masz",
+      "text": "masz"
+    },
+    {
+      "id": "masz-czas",
+      "text": "masz czas?"
     },
     {
       "id": "milego-dnia",
@@ -181,8 +445,56 @@
       "text": "miło mi"
     },
     {
+      "id": "milo-mi-a-ty",
+      "text": "miło mi, a ty?"
+    },
+    {
       "id": "milo-mi-cie-poznac",
       "text": "miło mi cię poznać"
+    },
+    {
+      "id": "milo-mi-jestem-adam",
+      "text": "Miło mi, jestem Adam."
+    },
+    {
+      "id": "mowi",
+      "text": "mówi"
+    },
+    {
+      "id": "mowia",
+      "text": "mówią"
+    },
+    {
+      "id": "mowicie",
+      "text": "mówicie"
+    },
+    {
+      "id": "mowie",
+      "text": "mówię"
+    },
+    {
+      "id": "mowie-po-angielsku-ale-nie-mowie-po-polsku",
+      "text": "mówię po angielsku, ale nie mówię po polsku"
+    },
+    {
+      "id": "mowie-po-angielsku-i-troche-po-polsku",
+      "text": "mówię po angielsku i trochę po polsku"
+    },
+    {
+      "id": "mowie-po-polsku",
+      "text": "mówię po polsku"
+    },
+    {
+      "id": "mowie-troche-po-polsku",
+      "text": "mówię trochę po polsku"
+    },
+    {
+      "id": "mowimy",
+      "text": "mówimy"
+    },
+    {
+      "id": "mowisz",
+      "text": "mówisz"
     },
     {
       "id": "moze",
@@ -191,6 +503,30 @@
     {
       "id": "moze-tak-moze-nie",
       "text": "może tak, może nie"
+    },
+    {
+      "id": "my",
+      "text": "my"
+    },
+    {
+      "id": "my-jestesmy-z-anglii",
+      "text": "my jesteśmy z Anglii"
+    },
+    {
+      "id": "my-mamy-czas",
+      "text": "my mamy czas"
+    },
+    {
+      "id": "my-mamy-problem",
+      "text": "My mamy problem."
+    },
+    {
+      "id": "my-mowimy-po-angielsku-a-oni-mowia-po-polsku",
+      "text": "My mówimy po angielsku, a oni mówią po polsku."
+    },
+    {
+      "id": "na-imie",
+      "text": "na imię"
     },
     {
       "id": "na-razie",
@@ -213,6 +549,18 @@
       "text": "nawzajem"
     },
     {
+      "id": "nazywam-sie",
+      "text": "nazywam się"
+    },
+    {
+      "id": "nazywam-sie-adam",
+      "text": "nazywam się Adam"
+    },
+    {
+      "id": "nazywam-sie-ewa-a-pan",
+      "text": "nazywam się Ewa, a pan?"
+    },
+    {
       "id": "nic-nie-szkodzi",
       "text": "nic nie szkodzi"
     },
@@ -225,12 +573,20 @@
       "text": "nie, dziękuję"
     },
     {
+      "id": "nie-jestem-polakiem-jestem-anglikiem",
+      "text": "nie jestem Polakiem, jestem Anglikiem"
+    },
+    {
       "id": "nie-ma-sprawy",
       "text": "nie ma sprawy"
     },
     {
       "id": "nie-ma-za-co",
       "text": "nie ma za co"
+    },
+    {
+      "id": "nie-nie-jestem-z-polski",
+      "text": "nie, nie jestem z Polski"
     },
     {
       "id": "nie-szkodzi",
@@ -253,6 +609,66 @@
       "text": "oczywiście"
     },
     {
+      "id": "on",
+      "text": "on"
+    },
+    {
+      "id": "on-jest-anglikiem-a-ona-jest-polka",
+      "text": "on jest Anglikiem, a ona jest Polką"
+    },
+    {
+      "id": "on-jest-z-anglii",
+      "text": "on jest z Anglii"
+    },
+    {
+      "id": "ona",
+      "text": "ona"
+    },
+    {
+      "id": "ona-jest-z-anglii",
+      "text": "ona jest z Anglii"
+    },
+    {
+      "id": "ona-jest-z-polski",
+      "text": "Ona jest z Polski."
+    },
+    {
+      "id": "ona-ma-na-imie-ewa",
+      "text": "Ona ma na imię Ewa."
+    },
+    {
+      "id": "one",
+      "text": "one"
+    },
+    {
+      "id": "one-sa-tu",
+      "text": "one są tu"
+    },
+    {
+      "id": "one-sa-tutaj",
+      "text": "one są tutaj"
+    },
+    {
+      "id": "one-tu-sa",
+      "text": "one tu są"
+    },
+    {
+      "id": "one-tutaj-sa",
+      "text": "one tutaj są"
+    },
+    {
+      "id": "oni",
+      "text": "oni"
+    },
+    {
+      "id": "oni-sa-tutaj",
+      "text": "oni są tutaj"
+    },
+    {
+      "id": "oni-tez-maja-problem",
+      "text": "oni też mają problem"
+    },
+    {
       "id": "pa",
       "text": "pa"
     },
@@ -265,12 +681,40 @@
       "text": "pa, dobranoc"
     },
     {
+      "id": "pan",
+      "text": "pan"
+    },
+    {
+      "id": "pani",
+      "text": "pani"
+    },
+    {
+      "id": "po-angielsku",
+      "text": "po angielsku"
+    },
+    {
+      "id": "po-polsku",
+      "text": "po polsku"
+    },
+    {
+      "id": "polakiem",
+      "text": "Polakiem"
+    },
+    {
+      "id": "polka",
+      "text": "Polką"
+    },
+    {
       "id": "powodzenia",
       "text": "powodzenia"
     },
     {
       "id": "powodzenia-do-widzenia",
       "text": "powodzenia, do widzenia"
+    },
+    {
+      "id": "problem",
+      "text": "problem"
     },
     {
       "id": "prosze",
@@ -293,6 +737,10 @@
       "text": "przepraszam"
     },
     {
+      "id": "przepraszam-mam-pytanie",
+      "text": "przepraszam, mam pytanie"
+    },
+    {
       "id": "przepraszam-nie-rozumiem",
       "text": "przepraszam, nie rozumiem"
     },
@@ -301,8 +749,28 @@
       "text": "przepraszamy"
     },
     {
+      "id": "pytanie",
+      "text": "pytanie"
+    },
+    {
       "id": "rozumiem",
       "text": "rozumiem"
+    },
+    {
+      "id": "sa",
+      "text": "są"
+    },
+    {
+      "id": "skad",
+      "text": "skąd"
+    },
+    {
+      "id": "skad-jestes",
+      "text": "skąd jesteś?"
+    },
+    {
+      "id": "skad-pan-jest",
+      "text": "skąd pan jest?"
     },
     {
       "id": "slucham",
@@ -345,6 +813,66 @@
       "text": "tak sobie, a ty?"
     },
     {
+      "id": "tez",
+      "text": "też"
+    },
+    {
+      "id": "tez-jestem-z-anglii",
+      "text": "też jestem z Anglii"
+    },
+    {
+      "id": "to",
+      "text": "to"
+    },
+    {
+      "id": "to-adam",
+      "text": "to Adam"
+    },
+    {
+      "id": "to-adam-on-jest-z-polski",
+      "text": "to Adam, on jest z Polski"
+    },
+    {
+      "id": "to-jest-adam",
+      "text": "to jest Adam"
+    },
+    {
+      "id": "to-jest-adam-on-jest-z-polski",
+      "text": "to jest Adam, on jest z Polski"
+    },
+    {
+      "id": "troche",
+      "text": "trochę"
+    },
+    {
+      "id": "troche-mowie-po-polsku",
+      "text": "trochę mówię po polsku"
+    },
+    {
+      "id": "tutaj",
+      "text": "tutaj"
+    },
+    {
+      "id": "tutaj-jestem",
+      "text": "tutaj jestem"
+    },
+    {
+      "id": "ty",
+      "text": "ty"
+    },
+    {
+      "id": "ty-jestes",
+      "text": "ty jesteś"
+    },
+    {
+      "id": "ty-jestes-ewa",
+      "text": "Ty jesteś Ewa?"
+    },
+    {
+      "id": "ty-jestes-z-anglii",
+      "text": "Ty jesteś z Anglii?"
+    },
+    {
       "id": "w-porzadku",
       "text": "w porządku"
     },
@@ -367,6 +895,26 @@
     {
       "id": "wszystko-w-porzadku",
       "text": "wszystko w porządku"
+    },
+    {
+      "id": "wy",
+      "text": "wy"
+    },
+    {
+      "id": "wy-jestescie-z-polski",
+      "text": "Wy jesteście z Polski?"
+    },
+    {
+      "id": "wy-mowicie-po-polsku-a-one-mowia-po-angielsku",
+      "text": "Wy mówicie po polsku, a one mówią po angielsku."
+    },
+    {
+      "id": "z-anglii",
+      "text": "z Anglii"
+    },
+    {
+      "id": "z-polski",
+      "text": "z Polski"
     },
     {
       "id": "zle",
