@@ -150,6 +150,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d05-e13",
       "text": "masz czas?",
+      "meaning": { "en": "do you have time? (one friend)" },
       "distractors": ["mam czas?", "ma czas?"],
       "items": ["miec-masz", "czas"]
     },
@@ -184,6 +185,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d05-e17",
       "text": "jak się pani ma?",
+      "meaning": { "en": "how are you? (to a woman, formal)" },
       "distractors": ["jak się pan ma?", "jak się masz?"],
       "items": ["jak-sie-pani-ma"]
     }

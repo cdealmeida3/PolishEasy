@@ -98,6 +98,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d01-e08",
       "text": "dzień dobry",
+      "meaning": { "en": "hello (polite); good morning" },
       "distractors": ["dobranoc", "do widzenia"],
       "items": ["dzien-dobry"]
     },
@@ -105,6 +106,7 @@
       "type": "listen_type",
       "id": "a1-u01-d01-e09",
       "acceptedAnswers": ["nie"],
+      "meaning": { "en": "no" },
       "items": ["nie"]
     },
     {
@@ -143,6 +145,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d01-e13",
       "text": "do widzenia",
+      "meaning": { "en": "goodbye" },
       "distractors": ["do jutra", "dobranoc"],
       "items": ["do-widzenia"]
     },
@@ -150,6 +153,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d01-e14",
       "text": "pa",
+      "meaning": { "en": "bye-bye (to friends and family)" },
       "distractors": ["pan", "ta"],
       "items": ["pa"]
     },
@@ -173,6 +177,7 @@
       "type": "listen_type",
       "id": "a1-u01-d01-e17",
       "acceptedAnswers": ["dobranoc"],
+      "meaning": { "en": "good night" },
       "items": ["dobranoc"]
     }
   ]

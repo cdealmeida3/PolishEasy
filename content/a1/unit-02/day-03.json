@@ -57,6 +57,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d03-e04",
       "text": "my",
+      "meaning": { "en": "we" },
       "distractors": ["wy", "ty"],
       "items": ["my"]
     },
@@ -97,6 +98,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d03-e08",
       "text": "wy",
+      "meaning": { "en": "you (several people)" },
       "distractors": ["my", "ty"],
       "items": ["wy"]
     },
@@ -177,6 +179,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d03-e16",
       "text": "oni są tutaj",
+      "meaning": { "en": "they (men, or men and women) are here" },
       "distractors": ["one są tutaj", "on jest tutaj"],
       "items": ["oni", "byc-sa", "tutaj"]
     },

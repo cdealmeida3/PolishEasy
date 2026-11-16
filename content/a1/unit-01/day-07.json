@@ -36,6 +36,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d07-e02",
       "text": "witamy",
+      "meaning": { "en": "welcome (said by several people: \"we welcome you\")" },
       "distractors": ["witam", "witaj"],
       "items": ["witamy"]
     },
@@ -63,6 +64,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d07-e05",
       "text": "na zdrowie",
+      "meaning": { "en": "cheers (a toast); bless you (after a sneeze)" },
       "distractors": ["zdrowy", "na drodze"],
       "items": ["na-zdrowie"]
     },
@@ -102,6 +104,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d07-e09",
       "text": "powodzenia",
+      "meaning": { "en": "good luck" },
       "distractors": ["do widzenia", "pozdrowienia"],
       "items": ["powodzenia"]
     },
@@ -117,6 +120,7 @@
       "type": "listen_type",
       "id": "a1-u01-d07-e11",
       "acceptedAnswers": ["gratulacje"],
+      "meaning": { "en": "congratulations" },
       "items": ["gratulacje"]
     },
     {

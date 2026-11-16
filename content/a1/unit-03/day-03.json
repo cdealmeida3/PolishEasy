@@ -50,6 +50,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d03-e04",
       "text": "ile masz lat?",
+      "meaning": { "en": "how old are you? (one friend)" },
       "distractors": ["ile ma lat?", "ile mam lat?"],
       "items": ["ile", "miec-masz", "lat"]
     },
@@ -93,6 +94,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d03-e08",
       "text": "dwanaście",
+      "meaning": { "en": "twelve" },
       "distractors": ["jedenaście", "dziesięć"],
       "items": ["dwanascie"]
     },
@@ -100,6 +102,7 @@
       "type": "listen_type",
       "id": "a1-u03-d03-e09",
       "acceptedAnswers": ["jedenaście, dwanaście, trzynaście"],
+      "meaning": { "en": "eleven, twelve, thirteen" },
       "items": ["jedenascie", "dwanascie", "trzynascie"]
     },
     {
@@ -157,6 +160,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d03-e15",
       "text": "ona ma cztery lata",
+      "meaning": { "en": "she is four years old" },
       "distractors": ["ona ma trzy lata", "on ma cztery lata"],
       "items": ["ona", "miec-ma", "cztery", "lata"]
     },
@@ -171,6 +175,8 @@
       "type": "listen_type",
       "id": "a1-u03-d03-e17",
       "acceptedAnswers": ["ile pan ma lat?"],
+      "meaning": { "en": "how old are you? (to a man, formal)" },
+      "readingAnswers": ["ile lat pan ma?", "ile ma pan lat?", "ile lat ma pan?", "pan ile ma lat?"],
       "items": ["ile", "pan", "miec-ma", "lat"]
     },
     {

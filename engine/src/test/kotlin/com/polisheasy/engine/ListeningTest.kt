@@ -232,7 +232,7 @@ class ListeningTest {
                     sentenceMeaning = mapOf("en" to "We are in Poland."),
                 ),
                 listenChoose("d2-e2", "tak"),
-                ListenType("d2-e3", listOf("nie", "nié")),
+                ListenType("d2-e3", listOf("nie", "nié"), mapOf("en" to "no")),
                 // Already listed, whatever the capitals and spacing.
                 choose("d2-e4", "Dzień  dobry"),
                 typed("d2-e5", "hi", "cześć"),
@@ -266,7 +266,7 @@ fun listenChooseDay(text: String, distractors: List<String>): String {
         {
           "id": "a1-u01-d01",
           "exercises": [
-            { "type": "listen_choose", "id": "a1-u01-d01-e01", "text": "$text", "distractors": [$wrong] }
+            { "type": "listen_choose", "id": "a1-u01-d01-e01", "text": "$text", "meaning": { "en": "$text in English" }, "distractors": [$wrong] }
           ]
         }
     """
@@ -279,7 +279,7 @@ fun listenTypeDay(vararg accepted: String): String {
         {
           "id": "a1-u01-d01",
           "exercises": [
-            { "type": "listen_type", "id": "a1-u01-d01-e01", "acceptedAnswers": [$answers] }
+            { "type": "listen_type", "id": "a1-u01-d01-e01", "acceptedAnswers": [$answers], "meaning": { "en": "what was said" } }
           ]
         }
     """

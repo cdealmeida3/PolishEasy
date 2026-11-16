@@ -19,7 +19,13 @@ class Settings(context: Context) {
         )
         set(value) = preferences.edit().putInt(REMINDER_MINUTES, value.hour * 60 + value.minute).apply()
 
+    /** Whether the app may play sound. On until the Learner turns it off. */
+    var soundOn: Boolean
+        get() = preferences.getBoolean(SOUND_ON, true)
+        set(value) = preferences.edit().putBoolean(SOUND_ON, value).apply()
+
     private companion object {
+        const val SOUND_ON = "sound_on"
         const val REMINDER_ENABLED = "reminder_enabled"
         const val REMINDER_MINUTES = "reminder_minutes"
         const val DEFAULT_REMINDER_MINUTES = 19 * 60

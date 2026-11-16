@@ -89,6 +89,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d01-e07",
       "text": "jestem",
+      "meaning": { "en": "I am" },
       "distractors": ["jesteś", "jest"],
       "items": ["byc-jestem"]
     },
@@ -131,6 +132,8 @@
       "type": "listen_type",
       "id": "a1-u02-d01-e11",
       "acceptedAnswers": ["ja jestem Ewa"],
+      "meaning": { "en": "I am Ewa" },
+      "readingAnswers": ["jestem Ewa"],
       "items": ["ja", "byc-jestem", "ewa"]
     },
     {
@@ -157,6 +160,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d01-e14",
       "text": "jesteś tutaj?",
+      "meaning": { "en": "are you here? (one friend)" },
       "distractors": ["jestem tutaj?", "jest tutaj?"],
       "items": ["byc-jestes", "tutaj"]
     },

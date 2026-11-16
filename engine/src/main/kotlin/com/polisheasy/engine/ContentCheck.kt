@@ -184,7 +184,8 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
                         needsText(file, exercise.id, "The sentence meaning of $name", exercise.sentenceMeaning)
                     }
                 }
-                is ListenChoose, is ListenType -> Unit
+                is ListenChoose -> needsText(file, exercise.id, "The meaning of $name", exercise.meaning)
+                is ListenType -> needsText(file, exercise.id, "The meaning of $name", exercise.meaning)
             }
             // A listening Exercise with no Clip cannot run at all, which the loading rules report.
             if (content.clipsComplete && exercise !is ListenChoose && exercise !is ListenType) {

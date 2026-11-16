@@ -90,6 +90,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d04-e08",
       "text": "dobry wieczór",
+      "meaning": { "en": "good evening" },
       "distractors": ["dobry wybór", "dobry humor"],
       "items": ["dobry-wieczor"]
     },
@@ -109,6 +110,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d04-e10",
       "text": "halo",
+      "meaning": { "en": "hello (on the phone)" },
       "distractors": ["hala", "chyba"],
       "items": ["halo"]
     },
@@ -128,6 +130,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d04-e12",
       "text": "słucham",
+      "meaning": { "en": "hello? (on the phone); pardon?" },
       "distractors": ["szukam", "słuchasz"],
       "items": ["slucham"]
     },
@@ -155,7 +158,8 @@
       "type": "listen_choose",
       "id": "a1-u01-d04-e15",
       "text": "chwileczkę",
-      "distractors": ["chwileczka", "chwila"],
+      "meaning": { "en": "just a moment" },
+      "distractors": ["wycieczkę", "troszeczkę"],
       "items": ["chwileczke"]
     },
     {

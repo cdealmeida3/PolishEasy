@@ -22,6 +22,8 @@ Exercises do not name Clips. The course engine looks up the Clip whose text matc
 | `listen_choose` | `text` |
 | `listen_type` | the first Accepted Answer |
 
+The `readingAnswers` of a `listen_type` are never spoken and need no Clip.
+
 A listening Exercise must have its Clip, or the content does not load. Everywhere else a missing Clip only hides the speaker icon, but the build's [content check](content-checks.md) requires the shipped content to have a Clip for every spoken text, a file for every Clip, and nothing left over, and reports each missing Clip and stray file. **After adding or changing Polish text in the content, run the script below**, or the build fails.
 
 ## Making the Clips
@@ -57,3 +59,5 @@ Two things the script does to the voice's output:
 ## Playing
 
 `ClipPlayer` in the app plays a Clip from the app's assets with AndroidX Media3. "Slow" plays the same file at 0.6 speed with the pitch kept.
+
+With Sound off in Settings the course engine hands the app no Clip, on an Exercise or on feedback, so nothing plays and no speaker icon is drawn. Listening Exercises come in their reading form ([ADR-0007](adr/0007-a-listening-exercise-is-read-in-place.md)).

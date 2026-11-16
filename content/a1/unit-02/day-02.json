@@ -48,6 +48,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d02-e03",
       "text": "on",
+      "meaning": { "en": "he" },
       "distractors": ["ona", "ono"],
       "items": ["on"]
     },
@@ -131,6 +132,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d02-e11",
       "text": "z Polski",
+      "meaning": { "en": "from Poland" },
       "distractors": ["z Anglii", "tutaj"],
       "items": ["z-polski"]
     },
@@ -184,6 +186,8 @@
       "type": "listen_type",
       "id": "a1-u02-d02-e17",
       "acceptedAnswers": ["ona jest z Anglii"],
+      "meaning": { "en": "she is from England" },
+      "readingAnswers": ["jest z Anglii"],
       "items": ["ona", "byc-jest", "z-anglii"]
     }
   ]

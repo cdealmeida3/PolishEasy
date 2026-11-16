@@ -29,11 +29,15 @@ sealed interface Screen {
 
     data class Path(val path: PathView) : Screen
 
-    /** [notificationsAllowed] is whether Android lets the app show notifications at all. */
+    /**
+     * [notificationsAllowed] is whether Android lets the app show notifications at all.
+     * [soundOn] is whether the app may play sound.
+     */
     data class Settings(
         val reminderEnabled: Boolean,
         val reminderTime: LocalTime,
         val notificationsAllowed: Boolean,
+        val soundOn: Boolean,
     ) : Screen
 
     /** [replay] when the Tip belongs to a Replay. */
@@ -85,15 +89,15 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
 
     private var exercisesShown = 0
 
-    fun startDailySet() = show(engine.startDailySet())
+    fun startDailySet() = show(engine.startDailySet(sound = settings.soundOn))
 
-    fun resumeDailySet() = show(engine.resumeDailySet())
+    fun resumeDailySet() = show(engine.resumeDailySet(sound = settings.soundOn))
 
     fun openPath() {
         screen = Screen.Path(engine.path())
     }
 
-    fun replay(dailySetId: String) = show(engine.startReplay(dailySetId))
+    fun replay(dailySetId: String) = show(engine.startReplay(dailySetId, sound = settings.soundOn))
 
     /** Today's Daily Set tapped on the Path: started or continued, as from Home. */
     fun openTodays() = when (val today = engine.today()) {
@@ -130,6 +134,12 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
         screen = settingsScreen()
     }
 
+    /** Turns sound on or off. It takes effect when a Daily Set is next started, continued or replayed. */
+    fun setSoundOn(on: Boolean) {
+        settings.soundOn = on
+        screen = settingsScreen()
+    }
+
     /**
      * Asks again what the screen shows, so Home and the Path are right after midnight has passed,
      * and Settings is right when the Learner comes back from Android's own settings.
@@ -149,6 +159,16 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
         screen = player.copy(feedback = engine.answer(answer))
     }
 
+    /**
+     * "Can't listen now" on a listening Exercise not yet answered: the same Exercise in its reading
+     * form, and no more listening in this Daily Set. Showing it anew stops the Clip that was playing.
+     */
+    fun cantListenNow() {
+        val player = screen as? Screen.Player ?: return
+        if (player.feedback != null) return
+        show(engine.cantListenNow())
+    }
+
     /** Moves on from a Tip or from the feedback on an answer. */
     fun continueToNext() = show(engine.next())
 
@@ -164,6 +184,7 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
         notificationsAllowed = getApplication<Application>()
             .getSystemService(NotificationManager::class.java)
             .areNotificationsEnabled(),
+        soundOn = settings.soundOn,
     )
 
     private fun show(step: Step) {

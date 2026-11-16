@@ -9,6 +9,7 @@ The v1 spec calls for an on-device database for Learner progress. We store it in
 - The file refers to content only by stable ids and ignores fields it does not know, so later features can add to it.
 - Item progress (box, next-due date and recently shown Exercises) is stored in the same file, keyed by Item id with no reference to a Level, and written in the same file write as the answer that changed it.
 - Review-only Daily Sets are stored as the calendar days they were completed, apart from the completed Daily Sets, which stay a record of the Path. One in progress is saved under the reserved id `review-only`.
+- A Daily Set in progress remembers that the Learner chose not to listen ([ADR-0007](0007-a-listening-exercise-is-read-in-place.md)).
 - Android's device backup includes the file with no extra work.
 - Settings are not in this file. They are in SharedPreferences, which Android's backup also carries; the backup rules name both.
 - If progress outgrows a file (many records, or queries), moving to a database means writing one new `LearnerProgress` implementation and a one-time import.

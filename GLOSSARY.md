@@ -69,6 +69,10 @@ _Avoid_: Solution, correct answer
 One recording of spoken Polish, made ahead of time and packaged with the app. A listening Exercise plays one, and a speaker icon plays the Clip of the Polish beside it.
 _Avoid_: Audio file, sound, recording
 
+**Reading form**:
+What a listening Exercise becomes when the Learner cannot listen, because they chose "can't listen now" for the Daily Set or turned sound off: the same Exercise, practising the same Items, asked from its meaning in the Base Language instead of from its Clip.
+_Avoid_: Substitute, replacement Exercise
+
 **Authored Content**:
 Course material written and reviewed ahead of time and shipped with the app, as opposed to material generated while the Learner is using it.
 _Avoid_: Static content, generated content

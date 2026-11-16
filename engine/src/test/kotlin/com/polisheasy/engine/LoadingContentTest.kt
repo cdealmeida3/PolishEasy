@@ -327,7 +327,12 @@ class LoadingContentTest {
         val course = FixtureCourse.loadWithDayOne(listenChooseDay("proszę", listOf("prosze", "prószę")), clipsFile("proszę"))
 
         assertEquals(
-            ListenChoose(id = "a1-u01-d01-e01", text = "proszę", distractors = listOf("prosze", "prószę")),
+            ListenChoose(
+                id = "a1-u01-d01-e01",
+                text = "proszę",
+                meaning = mapOf("en" to "proszę in English"),
+                distractors = listOf("prosze", "prószę"),
+            ),
             course.path.first().exercises.single(),
         )
     }
@@ -339,6 +344,50 @@ class LoadingContentTest {
             assertListeningRejected(listenTypeDay("dziękuję", blank), "Accepted Answer \"$blank\"")
             assertListeningRejected(listenTypeDay(blank), "Only Accepted Answer \"$blank\"")
         }
+    }
+
+    @Test
+    fun `a listening Exercise with no meaning is rejected as a file that cannot be read`() {
+        listOf(
+            listenChooseDay("cześć", listOf("sześć")).replace(""""meaning": { "en": "cześć in English" }, """, ""),
+            listenTypeDay("cześć").replace(""", "meaning": { "en": "what was said" }""", ""),
+        ).forEach { day ->
+            assertTrue("meaning" !in day)
+            val failure = assertFailsWith<IllegalArgumentException> { FixtureCourse.loadWithDayOne(day, clipsFile("cześć")) }
+
+            assertTrue("a1/unit-01/day-01.json" in failure.message.orEmpty(), "Message was: ${failure.message}")
+            assertTrue("meaning" in failure.message.orEmpty(), "Message was: ${failure.message}")
+        }
+    }
+
+    @Test
+    fun `a listen-and-type Exercise with a blank reading answer is rejected, naming the Daily Set and the Exercise`() {
+        listOf("", "   ", "?!").forEach { blank ->
+            val day = listenTypeDay("cześć").replace(""""meaning"""", """"readingAnswers": ["hej", "$blank"], "meaning"""")
+
+            val failure = assertFailsWith<IllegalArgumentException>("Reading answer \"$blank\"") {
+                FixtureCourse.loadWithDayOne(day, clipsFile("cześć"))
+            }
+
+            assertEquals("Daily Set a1-u01-d01: Exercise a1-u01-d01-e01 has a blank reading answer", failure.message)
+        }
+    }
+
+    @Test
+    fun `a listen-and-type Exercise loads with its meaning and its reading answers`() {
+        val day = listenTypeDay("ja jestem Ewa").replace(""""meaning"""", """"readingAnswers": ["jestem Ewa"], "meaning"""")
+
+        val course = FixtureCourse.loadWithDayOne(day, clipsFile("ja jestem Ewa"))
+
+        assertEquals(
+            ListenType(
+                id = "a1-u01-d01-e01",
+                acceptedAnswers = listOf("ja jestem Ewa"),
+                meaning = mapOf("en" to "what was said"),
+                readingAnswers = listOf("jestem Ewa"),
+            ),
+            course.path.first().exercises.single(),
+        )
     }
 
     @Test

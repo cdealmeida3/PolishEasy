@@ -19,6 +19,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d05-e01",
       "text": "cześć",
+      "meaning": { "en": "hi; bye (to friends)" },
       "distractors": ["sześć", "jeść"],
       "items": ["czesc"]
     },
@@ -38,6 +39,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d05-e03",
       "text": "co słychać?",
+      "meaning": { "en": "how are things?" },
       "distractors": ["co widać?", "co słyszysz?"],
       "items": ["co-slychac"]
     },
@@ -57,6 +59,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d05-e05",
       "text": "świetnie",
+      "meaning": { "en": "great (answering \"how are you?\")" },
       "distractors": ["świetny", "śmiesznie"],
       "items": ["swietnie"]
     },
@@ -84,6 +87,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d05-e08",
       "text": "jak się masz?",
+      "meaning": { "en": "how are you? (one friend)" },
       "distractors": ["jak się ma?", "jak się macie?"],
       "items": ["jak-sie-masz"]
     },
@@ -143,6 +147,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d05-e14",
       "text": "tak sobie",
+      "meaning": { "en": "so-so" },
       "distractors": ["tak samo", "tak sądzę"],
       "items": ["tak-sobie"]
     },
@@ -158,6 +163,7 @@
       "type": "listen_type",
       "id": "a1-u01-d05-e16",
       "acceptedAnswers": ["oczywiście"],
+      "meaning": { "en": "of course" },
       "items": ["oczywiscie"]
     },
     {
