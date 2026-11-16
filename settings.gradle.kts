@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "PolishEasy"
-include(":engine", ":polishcheck", ":app")
+include(":engine", ":polishcheck", ":audio", ":app")

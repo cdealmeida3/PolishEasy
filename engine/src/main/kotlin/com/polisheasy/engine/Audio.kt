@@ -23,7 +23,7 @@ private val whitespace = Regex("\\s+")
  * [text] in the form Clips are found by: composed letters, lower case, single spaces. Punctuation
  * is kept, because "tak?" is not spoken like "tak."
  */
-internal fun audioKey(text: String): String =
+fun audioKey(text: String): String =
     Normalizer.normalize(text, Normalizer.Form.NFC).lowercase(Locale.ROOT).trim().replace(whitespace, " ")
 
 /** The Polish this Exercise can speak: what a speaker icon or a listening Exercise plays. */
@@ -39,6 +39,32 @@ internal fun spoken(exercise: Exercise): List<String> = when (exercise) {
 /** Every Polish text the course can speak, once each, in Path order. Each needs a Clip. */
 fun Course.spokenTexts(): List<String> =
     path.flatMap { it.exercises }.flatMap(::spoken).distinctBy(::audioKey)
+
+/**
+ * What the command that makes the Clips needs of the content: [texts] is every Polish text the
+ * course can speak, once each, in Path order, and [manifest] is the path of the file that lists the
+ * Clips, or null if `course.json` names none.
+ */
+class SpokenContent(
+    val texts: List<String>,
+    val manifest: String?,
+    /** A listed file that could not be read, the manifest aside. Its texts are missing from [texts]. */
+    val unreadable: List<ContentProblem>,
+)
+
+/**
+ * Reads what the content speaks without judging it. Unlike [loadCourse] this accepts a listening
+ * Exercise that has no Clip yet and a manifest that is not there yet, because the command that
+ * calls it is what makes them.
+ */
+fun spokenContent(readFile: (path: String) -> String): SpokenContent {
+    val content = readContent(readFile)
+    return SpokenContent(
+        texts = content.course().spokenTexts(),
+        manifest = content.clipsFile,
+        unreadable = content.unreadable.filter { it.file != content.clipsFile },
+    )
+}
 
 /**
  * The options of [exercise] in the order the Learner sees them: the spoken text and the
