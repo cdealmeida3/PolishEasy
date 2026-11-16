@@ -138,7 +138,7 @@
       "type": "word_tiles",
       "id": "a1-u01-d04-e13",
       "prompt": { "en": "hello? (answering the phone)" },
-      "acceptedAnswers": ["halo, słucham", "słucham, halo", "halo", "słucham"],
+      "acceptedAnswers": ["halo, słucham", "halo", "słucham"],
       "distractors": ["pa", "miło"],
       "items": ["halo", "slucham"]
     },

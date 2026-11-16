@@ -160,7 +160,7 @@
       "type": "word_tiles",
       "id": "a1-u03-d06-e15",
       "prompt": { "en": "how old is your son? (to one friend)" },
-      "acceptedAnswers": ["ile lat ma twój syn?", "ile ma lat twój syn?", "ile twój syn ma lat?", "ile ma twój syn lat?", "twój syn ile ma lat?"],
+      "acceptedAnswers": ["ile lat ma twój syn?", "ile ma lat twój syn?", "ile twój syn ma lat?"],
       "distractors": ["twoja", "rok"],
       "items": ["ile", "lat", "miec-ma", "twoj", "syn"]
     },
