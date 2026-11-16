@@ -39,7 +39,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 
 - Every file `course.json` lists is there and decodes. A misspelt field, an unknown Exercise type or an unknown person is reported as a file that cannot be read.
 - No two Exercises, two Items or two Clips share an id, and no Daily Set file is listed twice.
-- Every `type_answer`, `word_tiles`, `conjugation` and `listen_type` Exercise has at least one Accepted Answer, and none is blank. A `listen_choose` Exercise has text and distractors, with no two options that read the same.
+- Every `type_answer`, `word_tiles`, `conjugation` and `listen_type` Exercise has at least one Accepted Answer, and none is blank. A `listen_choose` Exercise has text and distractors, with no two options that read the same. A `listen_type` has no blank reading answer, and both listening types have a `meaning`.
 - The `correctOption` of a `choose_translation` Exercise is one of its options.
 - Every Item an Exercise lists is defined, and every Item has text.
 - Every listening Exercise has a Clip for what it speaks.
@@ -52,7 +52,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 - **Sizes.** A Daily Set has 12 to 18 Exercises and introduces at most 8 new Items. (Constants `DAILY_SET_EXERCISES` and `MAX_NEW_ITEMS`.)
 - **Items.** Every Exercise lists at least one Item, and every Item is practised by at least 2 Exercises (`MIN_EXERCISES_PER_ITEM`), so Review has something to vary.
 - **Choices.** A `choose_translation` Exercise has at least 2 options, and no two read the same.
-- **Base Language.** Everything the Learner reads in the Base Language has English text that is not blank: Level and Unit titles, Tip titles and bodies, the meaning in a conjugation table, the options of `choose_translation`, the prompt of `type_answer` and `word_tiles`, the `meaning` and `sentenceMeaning` of `conjugation`, and the `meaning` of an Item. (`BASE_LANGUAGES` lists the languages required.)
+- **Base Language.** Everything the Learner reads in the Base Language has English text that is not blank: Level and Unit titles, Tip titles and bodies, the meaning in a conjugation table, the options of `choose_translation`, the prompt of `type_answer` and `word_tiles`, the `meaning` and `sentenceMeaning` of `conjugation`, the `meaning` of `listen_choose` and `listen_type`, and the `meaning` of an Item. (`BASE_LANGUAGES` lists the languages required.)
 - **Audio.** Every Polish text the app can speak has a Clip, every Clip has its `.ogg` file beside the manifest, every Clip says something the course speaks, and no other file sits beside the manifest.
 - **Belonging.** Every `.json` file under `content/` is listed by `course.json`. A Level has Units and a Unit has Daily Sets. A Unit's id starts with its Level's id and a hyphen, a Daily Set's with its Unit's, and an Exercise's or Tip's with its Daily Set's (`a1` → `a1-u01` → `a1-u01-d05` → `a1-u01-d05-e03`).
 - **No id twice.** No two Levels, Units, Daily Sets or Tips share an id.

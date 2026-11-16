@@ -55,6 +55,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d04-e04",
       "text": "czternaście",
+      "meaning": { "en": "fourteen" },
       "distractors": ["cztery", "trzynaście"],
       "items": ["czternascie"]
     },
@@ -62,6 +63,7 @@
       "type": "listen_type",
       "id": "a1-u03-d04-e05",
       "acceptedAnswers": ["czternaście, piętnaście, szesnaście"],
+      "meaning": { "en": "fourteen, fifteen, sixteen" },
       "items": ["czternascie", "pietnascie", "szesnascie"]
     },
     {
@@ -104,6 +106,7 @@
       "type": "listen_type",
       "id": "a1-u03-d04-e09",
       "acceptedAnswers": ["siedemnaście, osiemnaście, dziewiętnaście"],
+      "meaning": { "en": "seventeen, eighteen, nineteen" },
       "items": ["siedemnascie", "osiemnascie", "dziewietnascie"]
     },
     {
@@ -121,6 +124,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d04-e11",
       "text": "piętnaście lat",
+      "meaning": { "en": "fifteen years" },
       "distractors": ["pięć lat", "dziewiętnaście lat"],
       "items": ["pietnascie", "lat"]
     },
@@ -140,6 +144,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d04-e13",
       "text": "dwadzieścia",
+      "meaning": { "en": "twenty" },
       "distractors": ["dwanaście", "dziesięć"],
       "items": ["dwadziescia"]
     },
@@ -170,6 +175,7 @@
       "type": "listen_type",
       "id": "a1-u03-d04-e17",
       "acceptedAnswers": ["ona ma dziewiętnaście lat"],
+      "meaning": { "en": "she is nineteen years old" },
       "items": ["ona", "miec-ma", "dziewietnascie", "lat"]
     },
     {

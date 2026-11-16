@@ -275,6 +275,8 @@ internal class CheckingContentTest {
             Triple(valid.withExercise("a1-u01-d01-e04") { (it as Conjugation).copy(meaning = text) }, DAY_1, "a1-u01-d01-e04"),
             Triple(valid.withExercise("a1-u01-d01-e04") { (it as Conjugation).copy(sentenceMeaning = text) }, DAY_1, "a1-u01-d01-e04"),
             Triple(valid.withItems { items -> items.map { if (it.id == "tak") it.copy(meaning = text) else it } }, ITEMS, "tak"),
+            Triple(valid.withExercise("a1-u01-d01-e05") { (it as ListenChoose).copy(meaning = text) }, DAY_1, "a1-u01-d01-e05"),
+            Triple(valid.withExercise("a1-u01-d01-e06") { (it as ListenType).copy(meaning = text) }, DAY_1, "a1-u01-d01-e06"),
         )
 
         listOf("absent" to mapOf("pt" to "olá"), "blank" to en("  ")).forEach { (how, text) ->
@@ -282,6 +284,16 @@ internal class CheckingContentTest {
                 assertOnlyProblem(broken, file, id, "\"en\"", case = "Case $index, $how")
             }
         }
+    }
+
+    @Test
+    fun `a listening Exercise with no meaning in the Base Language is reported by name`() {
+        val problems = problems(valid.withExercise("a1-u01-d01-e05") { (it as ListenChoose).copy(meaning = emptyMap()) }, null)
+
+        assertEquals(
+            listOf("The meaning of Exercise a1-u01-d01-e05 has no text in the Base Language \"en\""),
+            problems.map { it.message },
+        )
     }
 
     @Test

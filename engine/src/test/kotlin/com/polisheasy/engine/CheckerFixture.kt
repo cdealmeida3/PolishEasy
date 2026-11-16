@@ -94,8 +94,8 @@ internal data class CheckerFixture(val texts: Map<String, String>) {
                     acceptedAnswers = listOf("jestem"),
                     items = listOf("byc-jestem"),
                 ),
-                ListenChoose("a1-u01-d01-e05", "tak", listOf("nie"), listOf("tak")),
-                ListenType("a1-u01-d01-e06", listOf("nie"), listOf("nie")),
+                ListenChoose("a1-u01-d01-e05", "tak", en("yes"), listOf("nie"), listOf("tak")),
+                ListenType("a1-u01-d01-e06", listOf("nie"), en("no"), items = listOf("nie")),
                 choice("a1-u01-d01-e07", "jestem", "I am", "you are", "prosze", "byc-jestem"),
             ) + padding("a1-u01-d01", from = 8, to = EXERCISES_ON_DAY_1),
         )
@@ -106,8 +106,8 @@ internal data class CheckerFixture(val texts: Map<String, String>) {
                 choice("a1-u01-d02-e01", "tak", "yes", "no", "tak"),
                 choice("a1-u01-d02-e02", "nie", "no", "yes", "nie"),
                 TypeAnswer("a1-u01-d02-e03", en("hi"), listOf("cześć"), listOf("czesc")),
-                ListenType("a1-u01-d02-e04", listOf("dziękuję"), listOf("dziekuje")),
-                ListenChoose("a1-u01-d02-e05", "dzień dobry", listOf("cześć"), listOf("dzien-dobry")),
+                ListenType("a1-u01-d02-e04", listOf("dziękuję"), en("thank you (to anyone)"), items = listOf("dziekuje")),
+                ListenChoose("a1-u01-d02-e05", "dzień dobry", en("good morning"), listOf("cześć"), listOf("dzien-dobry")),
                 Conjugation(
                     id = "a1-u01-d02-e06",
                     verb = "być",

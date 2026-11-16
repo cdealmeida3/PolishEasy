@@ -16,6 +16,8 @@ data class DailySetInProgress(
     val shownTips: Set<String> = emptySet(),
     /** Ids of the Review Exercises chosen for this Daily Set when it was started. They follow its own in [remaining]. */
     val review: List<String> = emptyList(),
+    /** The Learner chose "can't listen now": every listening Exercise still to come in this Daily Set is shown in its reading form. */
+    val cantListen: Boolean = false,
 )
 
 /** What is remembered about one Item: when it is next due, and the Exercises last shown for it, oldest first. */

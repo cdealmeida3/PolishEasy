@@ -55,6 +55,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d01-e04",
       "text": "jeden, dwa, trzy",
+      "meaning": { "en": "one, two, three" },
       "distractors": ["trzy, dwa, jeden", "dwa, trzy, jeden"],
       "items": ["jeden", "dwa", "trzy"]
     },
@@ -106,6 +107,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d01-e09",
       "text": "cztery",
+      "meaning": { "en": "four" },
       "distractors": ["trzy", "pięć"],
       "items": ["cztery"]
     },
@@ -113,6 +115,7 @@
       "type": "listen_type",
       "id": "a1-u03-d01-e10",
       "acceptedAnswers": ["trzy, cztery, pięć"],
+      "meaning": { "en": "three, four, five" },
       "items": ["trzy", "cztery", "piec"]
     },
     {
@@ -147,6 +150,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d01-e14",
       "text": "dwa plus trzy to pięć",
+      "meaning": { "en": "two plus three is five" },
       "distractors": ["dwa plus dwa to cztery", "jeden plus trzy to cztery"],
       "items": ["dwa", "plus", "trzy", "to", "piec"]
     },
@@ -161,6 +165,7 @@
       "type": "listen_type",
       "id": "a1-u03-d01-e16",
       "acceptedAnswers": ["zero, jeden, dwa"],
+      "meaning": { "en": "zero, one, two" },
       "items": ["zero", "jeden", "dwa"]
     },
     {

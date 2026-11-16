@@ -43,6 +43,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d05-e03",
       "text": "mama",
+      "meaning": { "en": "mum" },
       "distractors": ["tata", "masz"],
       "items": ["mama"]
     },
@@ -82,6 +83,7 @@
       "type": "listen_type",
       "id": "a1-u03-d05-e07",
       "acceptedAnswers": ["brat i siostra"],
+      "meaning": { "en": "a brother and a sister" },
       "items": ["brat", "i", "siostra"]
     },
     {
@@ -128,6 +130,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d05-e12",
       "text": "mój tata",
+      "meaning": { "en": "my dad" },
       "distractors": ["moja mama", "mój brat"],
       "items": ["moj", "tata"]
     },
@@ -164,6 +167,7 @@
       "type": "listen_type",
       "id": "a1-u03-d05-e16",
       "acceptedAnswers": ["moja mama ma na imię Ewa"],
+      "meaning": { "en": "my mum's first name is Ewa" },
       "items": ["moja", "mama", "miec-ma", "na-imie", "ewa"]
     },
     {

@@ -51,6 +51,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d02-e04",
       "text": "smacznego",
+      "meaning": { "en": "enjoy your meal" },
       "distractors": ["smaczny", "smacznie"],
       "items": ["smacznego"]
     },
@@ -110,6 +111,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d02-e10",
       "text": "przepraszam",
+      "meaning": { "en": "sorry; excuse me (one person speaking)" },
       "distractors": ["zapraszam", "przepraszamy"],
       "items": ["przepraszam"]
     },
@@ -129,6 +131,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d02-e12",
       "text": "dobrze",
+      "meaning": { "en": "well (how something is going)" },
       "distractors": ["dobry", "dobra"],
       "items": ["dobrze"]
     },

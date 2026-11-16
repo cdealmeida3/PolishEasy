@@ -148,6 +148,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d08-e12",
       "text": "Adam jest Polakiem, a Ewa jest Angielką",
+      "meaning": { "en": "Adam is Polish, and Ewa is English" },
       "distractors": ["Adam jest Anglikiem, a Ewa jest Polką", "Adam jest Polakiem, a Ewa jest Polką"],
       "items": ["adam", "byc-jest", "polakiem", "a", "ewa", "angielka-instr"]
     },
@@ -155,6 +156,8 @@
       "type": "listen_type",
       "id": "a1-u02-d08-e13",
       "acceptedAnswers": ["on jest Anglikiem, a ona jest Polką"],
+      "meaning": { "en": "he is English, and she is Polish" },
+      "readingAnswers": ["on jest Anglikiem, a ona Polką"],
       "items": ["on", "byc-jest", "anglikiem", "a", "ona", "polka-instr"]
     },
     {

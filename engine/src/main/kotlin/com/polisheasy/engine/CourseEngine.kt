@@ -87,7 +87,10 @@ sealed interface ExerciseView {
         val promptAudio: ClipView? = null,
     ) : ExerciseView
 
-    /** [prompt] is what to type in Polish, in the Base Language. */
+    /**
+     * [prompt] is what to type in Polish, in the Base Language. Also the reading form of a
+     * listen-and-type Exercise, whose [prompt] is the meaning of what would have been said.
+     */
     data class TypeAnswer(val prompt: String) : ExerciseView
 
     /** [prompt] is what to build in Polish, in the Base Language. [tiles] are the words to build it from, mixed. */
@@ -106,6 +109,12 @@ sealed interface ExerciseView {
 
     /** The Learner hears [audio] and types it. Nothing is shown, since the text is the answer. */
     data class ListenType(val audio: ClipView) : ExerciseView
+
+    /**
+     * The reading form of a listen-and-choose Exercise: the Learner reads [prompt], a meaning in
+     * the Base Language, and picks the Polish for it from [options].
+     */
+    data class ChoosePolish(val prompt: String, val options: List<String>) : ExerciseView
 }
 
 /** The Learner's response to an Exercise. */
@@ -147,14 +156,19 @@ class CourseEngine(
     /**
      * [dailySet] is the one on the Path, or for a Review-only Daily Set an empty one that is not
      * on the Path, so that every Exercise comes from the Review saved in [state]. [replay] when it
-     * is a Replay, whose [state] is never saved.
+     * is a Replay, whose [state] is never saved. [sound] is false when the app may play nothing; it
+     * is never saved.
      */
     private class Playing(
         val dailySet: DailySet,
         var state: DailySetInProgress,
         val reviewOnly: Boolean = false,
         val replay: Boolean = false,
-    )
+        val sound: Boolean = true,
+    ) {
+        /** Whether listening Exercises are shown in their reading form. */
+        val reading: Boolean get() = !sound || state.cantListen
+    }
 
     /** Whether any Exercise practises an Item, so a Review-only Daily Set would not be empty. */
     private val reviewable: Boolean by lazy {
@@ -238,8 +252,10 @@ class CourseEngine(
      * Review-only Daily Set. Its Review is chosen now and saved with it, so the Daily Set keeps
      * the same Exercises however much later it is finished.
      * Fails unless [today] is [Today.DailySetAvailable] or [Today.ReviewOnlyAvailable].
+     * With [sound] false nothing is given to play: listening Exercises come in their reading form
+     * and no Exercise or Feedback carries a Clip. It is not saved.
      */
-    fun startDailySet(): Step {
+    fun startDailySet(sound: Boolean = true): Step {
         val offered = today()
         check(offered == Today.DailySetAvailable || offered == Today.ReviewOnlyAvailable) {
             "No Daily Set is available to start: $offered"
@@ -249,7 +265,7 @@ class CourseEngine(
             val review = chooseReviewOnly(course, completed, progress.itemProgress(), LocalDate.now(clock))
             val state = DailySetInProgress(dailySetId = REVIEW_ONLY_ID, remaining = review, review = review)
             progress.saveInProgress(state)
-            playing = reviewOnly(state)
+            playing = reviewOnly(state, sound)
             return next()
         }
         val set = course.path.first { it.id !in completed }
@@ -260,14 +276,18 @@ class CourseEngine(
             review = review,
         )
         progress.saveInProgress(state)
-        playing = Playing(set, state)
+        playing = Playing(set, state, sound = sound)
         return next()
     }
 
-    /** Picks up the Daily Set in progress where it was left. Fails unless [today] is [Today.InProgress]. */
-    fun resumeDailySet(): Step {
+    /**
+     * Picks up the Daily Set in progress where it was left. Fails unless [today] is [Today.InProgress].
+     * With [sound] false nothing is given to play: listening Exercises come in their reading form
+     * and no Exercise or Feedback carries a Clip. It is not saved.
+     */
+    fun resumeDailySet(sound: Boolean = true): Step {
         check(today() is Today.InProgress) { "No Daily Set is in progress: ${today()}" }
-        playing = checkNotNull(savedDailySet())
+        playing = checkNotNull(savedDailySet(sound))
         return next()
     }
 
@@ -276,13 +296,36 @@ class CourseEngine(
      * A Replay is kept in memory only and saves nothing, so it cannot advance the Path, count
      * toward the Streak or reschedule an Item, and it is forgotten if it is left unfinished.
      * Fails unless [dailySetId] is a completed Daily Set on the Path.
+     * With [sound] false nothing is given to play: listening Exercises come in their reading form
+     * and no Exercise or Feedback carries a Clip. It is not saved.
      */
-    fun startReplay(dailySetId: String): Step {
+    fun startReplay(dailySetId: String, sound: Boolean = true): Step {
         val set = course.path.firstOrNull { it.id == dailySetId }
         check(set != null && dailySetId in progress.completedDailySets()) {
             "Daily Set $dailySetId is not completed, so it cannot be replayed"
         }
-        playing = Playing(set, DailySetInProgress(set.id, remaining = set.exercises.map { it.id }), replay = true)
+        playing = Playing(set, DailySetInProgress(set.id, remaining = set.exercises.map { it.id }), replay = true, sound = sound)
+        return next()
+    }
+
+    /**
+     * The Learner cannot listen: the Exercise being shown and every listening Exercise still to come
+     * in this Daily Set are shown in their reading form, the same Exercise asked from its meaning
+     * instead of its Clip. Returns the Exercise being shown again. Nothing is answered: no Item, no
+     * miss and no count changes. The choice is saved with the Daily Set in progress and ends with
+     * it; in a Replay it is kept in memory like the rest. Call it while an Exercise is shown.
+     */
+    fun cantListenNow(): Step {
+        val playing = current()
+        val exerciseId = playing.state.remaining.firstOrNull()
+        check(exerciseId != null) { "Every Exercise of Daily Set ${playing.dailySet.id} has already been answered" }
+        playing.state = playing.state.copy(cantListen = true)
+        if (!playing.replay) {
+            // The Tip before this Exercise is not yet followed by an answer, so it is not saved as shown.
+            val unanswered = playing.dailySet.tips.filter { it.before == exerciseId }.map { it.id }.toSet()
+            val saved = progress.dailySetInProgress()?.shownTips.orEmpty()
+            progress.saveInProgress(playing.state.copy(shownTips = playing.state.shownTips - (unanswered - saved)))
+        }
         return next()
     }
 
@@ -300,7 +343,8 @@ class CourseEngine(
         val state = playing.state
         check(state.remaining.isNotEmpty()) { "Every Exercise of Daily Set ${set.id} has already been answered" }
         val exercise = course.exercises.getValue(state.remaining.first())
-        val feedback = check(exercise, answer).let { it.copy(audio = audioFor(exercise, it)) }
+        val feedback = check(exercise, answer, playing.reading)
+            .let { it.copy(audio = if (playing.sound) audioFor(exercise, it) else null) }
         val items = if (playing.replay || exercise.id in state.missed) emptyMap() else itemsAfter(exercise, feedback.correct)
         val rest = state.remaining.drop(1)
         playing.state = if (feedback.correct) {
@@ -361,7 +405,7 @@ class CourseEngine(
             return Step.ShowTip(view(tip), progressOf(playing), replay = playing.replay)
         }
         return Step.ShowExercise(
-            view(course.exercises.getValue(exerciseId)),
+            view(course.exercises.getValue(exerciseId), playing),
             progressOf(playing),
             review = exerciseId in state.review,
             replay = playing.replay,
@@ -376,7 +420,7 @@ class CourseEngine(
      * every Daily Set on the Path is completed, and only if all its Exercises still exist.
      * Otherwise the content changed in an update, and the saved state is ignored.
      */
-    private fun savedDailySet(): Playing? {
+    private fun savedDailySet(sound: Boolean = true): Playing? {
         val saved = progress.dailySetInProgress() ?: return null
         val completed = progress.completedDailySets()
         if (saved.dailySetId == REVIEW_ONLY_ID) {
@@ -385,7 +429,7 @@ class CourseEngine(
                 course.exercises.keys.containsAll(saved.review) &&
                 saved.review.containsAll(saved.remaining) &&
                 saved.review.containsAll(saved.missed)
-            return if (playable) reviewOnly(saved) else null
+            return if (playable) reviewOnly(saved, sound) else null
         }
         if (saved.dailySetId in completed) return null
         val set = course.path.firstOrNull { it.id == saved.dailySetId } ?: return null
@@ -396,11 +440,11 @@ class CourseEngine(
             exerciseIds.containsAll(saved.remaining) &&
             exerciseIds.containsAll(saved.missed) &&
             tipIds.containsAll(saved.shownTips)
-        return if (playable) Playing(set, saved) else null
+        return if (playable) Playing(set, saved, sound = sound) else null
     }
 
-    private fun reviewOnly(state: DailySetInProgress): Playing =
-        Playing(DailySet(REVIEW_ONLY_ID, exercises = emptyList()), state, reviewOnly = true)
+    private fun reviewOnly(state: DailySetInProgress, sound: Boolean): Playing =
+        Playing(DailySet(REVIEW_ONLY_ID, exercises = emptyList()), state, reviewOnly = true, sound = sound)
 
     private fun progressOf(playing: Playing): SetProgress {
         val total = total(playing)
@@ -412,11 +456,12 @@ class CourseEngine(
 
     private fun current(): Playing = checkNotNull(playing) { "No Daily Set has been started" }
 
-    private fun view(exercise: Exercise): ExerciseView = when (exercise) {
+    /** [exercise] as [playing] shows it: a listening one in its reading form when it cannot be heard, and no Clip without sound. */
+    private fun view(exercise: Exercise, playing: Playing): ExerciseView = when (exercise) {
         is ChooseTranslation -> ExerciseView.ChooseTranslation(
             prompt = exercise.prompt,
             options = exercise.options.map(::localize),
-            promptAudio = course.clipFor(exercise.prompt),
+            promptAudio = if (playing.sound) course.clipFor(exercise.prompt) else null,
         )
         is TypeAnswer -> ExerciseView.TypeAnswer(localize(exercise.prompt))
         is WordTiles -> ExerciseView.WordTiles(localize(exercise.prompt), tilesOf(exercise))
@@ -430,8 +475,18 @@ class CourseEngine(
                 GapSentence(before, after, localize(checkNotNull(exercise.sentenceMeaning)))
             },
         )
-        is ListenChoose -> ExerciseView.ListenChoose(clipOf(exercise, exercise.text), optionsOf(exercise))
-        is ListenType -> ExerciseView.ListenType(clipOf(exercise, exercise.acceptedAnswers.first()))
+        is ListenChoose ->
+            if (playing.reading) {
+                ExerciseView.ChoosePolish(localize(exercise.meaning), optionsOf(exercise))
+            } else {
+                ExerciseView.ListenChoose(clipOf(exercise, exercise.text), optionsOf(exercise))
+            }
+        is ListenType ->
+            if (playing.reading) {
+                ExerciseView.TypeAnswer(localize(exercise.meaning))
+            } else {
+                ExerciseView.ListenType(clipOf(exercise, exercise.acceptedAnswers.first()))
+            }
     }
 
     /** The Clip a listening Exercise plays. The loader guarantees there is one. */
@@ -450,7 +505,8 @@ class CourseEngine(
         },
     )
 
-    private fun check(exercise: Exercise, answer: Answer): Feedback = when (exercise) {
+    /** [reading] when a listening Exercise was shown in its reading form, where a listen-and-type one also takes its reading answers. */
+    private fun check(exercise: Exercise, answer: Answer, reading: Boolean): Feedback = when (exercise) {
         is ChooseTranslation -> {
             val chosen = (answer as Answer.Option).index
             Feedback(
@@ -465,7 +521,10 @@ class CourseEngine(
             correct = optionsOf(exercise).getOrNull((answer as Answer.Option).index) == exercise.text,
             correctAnswer = exercise.text,
         )
-        is ListenType -> checkTyped((answer as Answer.Typed).text, exercise.acceptedAnswers)
+        is ListenType -> checkTyped(
+            (answer as Answer.Typed).text,
+            if (reading) exercise.acceptedAnswers + exercise.readingAnswers else exercise.acceptedAnswers,
+        )
     }
 
     /** The Clip of the Polish that [feedback] on [exercise] is about, if it has one. */

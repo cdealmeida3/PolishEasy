@@ -134,6 +134,8 @@ data class ListenChoose(
     override val id: String,
     /** The Polish that is spoken, and the one right option. */
     val text: String,
+    /** What [text] means, in each Base Language. The prompt of the reading form, so it must fit [text] and none of the [distractors]. */
+    val meaning: Localized,
     /** The wrong options, in Polish. */
     val distractors: List<String>,
     override val items: List<String> = emptyList(),
@@ -146,5 +148,9 @@ data class ListenType(
     override val id: String,
     /** Every spelling treated as correct. The first is what is spoken, and is shown when the Learner is wrong. */
     val acceptedAnswers: List<String>,
+    /** What the first Accepted Answer means, in each Base Language. The prompt of the reading form. */
+    val meaning: Localized,
+    /** Further answers accepted only in the reading form, where the Learner translates instead of copying what was said. Never spoken. */
+    val readingAnswers: List<String> = emptyList(),
     override val items: List<String> = emptyList(),
 ) : Exercise

@@ -10,49 +10,23 @@ class AuthoredContentTest {
     private val contentDir = File(System.getProperty("contentDir"))
     private val course = loadCourse { path -> File(contentDir, path).readText() }
 
-    /** The correct answer to the Exercise shown, found in the content by what the Learner sees. */
-    private fun correctAnswer(view: ExerciseView): Answer {
-        val exercises = course.exercises.values
-        return when (view) {
-            is ExerciseView.ChooseTranslation -> Answer.Option(
-                exercises.filterIsInstance<ChooseTranslation>()
-                    .first { it.prompt == view.prompt && it.options.map { option -> option.getValue("en") } == view.options }
-                    .correctOption,
-            )
-            is ExerciseView.TypeAnswer -> Answer.Typed(
-                exercises.filterIsInstance<TypeAnswer>()
-                    .first { it.prompt.getValue("en") == view.prompt }
-                    .acceptedAnswers.first(),
-            )
-            is ExerciseView.WordTiles -> Answer.Tiles(
-                words(
-                    exercises.filterIsInstance<WordTiles>()
-                        .first { it.prompt.getValue("en") == view.prompt && tilesOf(it).sorted() == view.tiles.sorted() }
-                        .acceptedAnswers.first(),
-                ),
-            )
-            is ExerciseView.Conjugation -> Answer.Typed(
-                exercises.filterIsInstance<Conjugation>()
-                    .first {
-                        it.verb == view.verb && it.person == view.person &&
-                            it.sentence?.let(::gapOf) == view.sentence?.let { gap -> gap.before to gap.after }
-                    }
-                    .acceptedAnswers.first(),
-            )
-            is ExerciseView.ListenChoose -> Answer.Option(
-                view.options.indexOf(
-                    exercises.filterIsInstance<ListenChoose>()
-                        .first { course.clipFor(it.text) == view.audio && optionsOf(it).sorted() == view.options.sorted() }
-                        .text,
-                ),
-            )
-            is ExerciseView.ListenType -> Answer.Typed(
-                exercises.filterIsInstance<ListenType>()
-                    .first { course.clipFor(it.acceptedAnswers.first()) == view.audio }
-                    .acceptedAnswers.first(),
-            )
+    /** The correct answer to the Exercise shown, whichever form it is shown in. */
+    private fun correctAnswer(step: Step.ShowExercise): Answer =
+        when (val exercise = course.exercises.getValue(step.exerciseId)) {
+            is ChooseTranslation -> Answer.Option(exercise.correctOption)
+            is TypeAnswer -> Answer.Typed(exercise.acceptedAnswers.first())
+            is WordTiles -> Answer.Tiles(words(exercise.acceptedAnswers.first()))
+            is Conjugation -> Answer.Typed(exercise.acceptedAnswers.first())
+            is ListenChoose -> {
+                val options = when (val view = step.exercise) {
+                    is ExerciseView.ListenChoose -> view.options
+                    is ExerciseView.ChoosePolish -> view.options
+                    else -> error("Exercise ${exercise.id} is shown as $view")
+                }
+                Answer.Option(options.indexOf(exercise.text))
+            }
+            is ListenType -> Answer.Typed(exercise.acceptedAnswers.first())
         }
-    }
 
     /**
      * Plays from [first], by default the start of today's Daily Set, Review included, answering
@@ -63,18 +37,21 @@ class AuthoredContentTest {
         while (true) {
             when (val step = seen.last()) {
                 is Step.ShowTip -> Unit
-                is Step.ShowExercise -> answer(correctAnswer(step.exercise))
+                is Step.ShowExercise -> assertTrue(answer(correctAnswer(step)).correct, "Exercise ${step.exerciseId}")
                 is Step.ShowSummary -> return seen
             }
             seen += next()
         }
     }
 
-    /** One Learner playing the whole course, one Daily Set per day from 2 March. Returns each day's Steps. */
-    private fun playTheCourse(progress: LearnerProgress, clock: FakeClock): List<List<Step>> =
+    /**
+     * One Learner playing the whole course, one Daily Set per day from 2 March, with or without
+     * [sound]. Returns each day's Steps.
+     */
+    private fun playTheCourse(progress: LearnerProgress, clock: FakeClock, sound: Boolean = true): List<List<Step>> =
         course.path.indices.map { day ->
             clock.moveTo(march(2).plusDays(day.toLong()))
-            CourseEngine(course, progress, clock).playCorrectly()
+            CourseEngine(course, progress, clock).run { playCorrectly(startDailySet(sound)) }
         }
 
     @Test
@@ -129,6 +106,108 @@ class AuthoredContentTest {
         assertEquals(course.path.size, progress.completedDailySets().size)
         assertEquals(7, progress.reviewOnlyDays().size)
         assertEquals(course.path.size + 7, CourseEngine(course, progress, clock).streak())
+    }
+
+    @Test
+    fun `with sound off, every Daily Set shipped and the next 7 Review-only Daily Sets play to their Summary with the same Exercises and nothing to hear`() {
+        fun play(sound: Boolean): List<List<Step>> {
+            val progress = InMemoryLearnerProgress()
+            val clock = FakeClock()
+            val lastDay = march(2).plusDays(course.path.size - 1L)
+            return playTheCourse(progress, clock, sound) + (1L..7L).map { day ->
+                clock.moveTo(lastDay.plusDays(day))
+                CourseEngine(course, progress, clock).run { playCorrectly(startDailySet(sound)) }
+            }
+        }
+        fun ids(steps: List<Step>) = steps.filterIsInstance<Step.ShowExercise>().map { it.exerciseId }
+        val heard = play(sound = true)
+        val silent = play(sound = false)
+
+        assertEquals(course.path.size + 7, silent.size)
+        silent.zip(heard).forEachIndexed { index, (steps, withSound) ->
+            val day = "Day ${index + 1}"
+            assertEquals(ids(withSound), ids(steps), day)
+            assertEquals(withSound.count { it is Step.ShowTip }, steps.count { it is Step.ShowTip }, day)
+            steps.filterIsInstance<Step.ShowExercise>().forEach { step ->
+                val view = step.exercise
+                assertTrue(view !is ExerciseView.ListenChoose && view !is ExerciseView.ListenType, "$day shows ${step.exerciseId} to be heard")
+                if (view is ExerciseView.ChooseTranslation) assertEquals(null, view.promptAudio, "$day, ${step.exerciseId}")
+            }
+            val summary = steps.last() as Step.ShowSummary
+            assertEquals(summary.exercises, summary.correctAnswers, day)
+        }
+        // Every listening Exercise was read at least once, on the day that introduces it.
+        val read = silent.flatMap(::ids).toSet()
+        assertTrue(allExercises.filter { it is ListenChoose || it is ListenType }.all { it.id in read })
+    }
+
+    @Test
+    fun `with sound off, no feedback on any Exercise shipped carries a Clip`() {
+        val progress = InMemoryLearnerProgress()
+        val clock = FakeClock()
+        course.path.forEachIndexed { day, dailySet -> progress.recordCompleted(dailySet.id, on = march(2).plusDays(day.toLong())) }
+        clock.moveTo(march(2).plusDays(course.path.size.toLong()))
+        val engine = CourseEngine(course, progress, clock)
+
+        course.path.forEach { dailySet ->
+            var step = engine.startReplay(dailySet.id, sound = false)
+            while (step !is Step.ShowSummary) {
+                if (step is Step.ShowExercise) {
+                    assertEquals(null, engine.answer(correctAnswer(step)).audio, "Exercise ${step.exerciseId}")
+                }
+                step = engine.next()
+            }
+        }
+    }
+
+    @Test
+    fun `every reading answer shipped is correct when its Exercise is read and typed exactly, with no accent warning, and wrong when it is heard`() {
+        val withReadingAnswers = allExercises.filterIsInstance<ListenType>().filter { it.readingAnswers.isNotEmpty() }
+        assertTrue(withReadingAnswers.isNotEmpty())
+        val progress = InMemoryLearnerProgress()
+        course.path.forEachIndexed { day, dailySet -> progress.recordCompleted(dailySet.id, on = march(2).plusDays(day.toLong())) }
+        val clock = FakeClock().apply { moveTo(march(2).plusDays(course.path.size.toLong())) }
+
+        /** What the Learner is told for [typed] at [exercise], reached in a Replay of its Daily Set. */
+        fun feedback(exercise: ListenType, typed: String, sound: Boolean): Feedback {
+            val engine = CourseEngine(course, progress, clock)
+            var step = engine.startReplay(course.path.first { exercise in it.exercises }.id, sound)
+            while (true) {
+                if (step is Step.ShowExercise) {
+                    if (step.exerciseId == exercise.id) return engine.answer(Answer.Typed(typed))
+                    engine.answer(correctAnswer(step))
+                }
+                step = engine.next()
+            }
+        }
+
+        withReadingAnswers.forEach { exercise ->
+            exercise.readingAnswers.forEach { answer ->
+                assertEquals(
+                    Feedback(correct = true, correctAnswer = answer),
+                    feedback(exercise, answer, sound = false),
+                    "Exercise ${exercise.id}, read",
+                )
+                assertEquals(false, feedback(exercise, answer, sound = true).correct, "Exercise ${exercise.id}, heard")
+            }
+        }
+    }
+
+    @Test
+    fun `a listen-and-type Exercise that is read looks like no typing Exercise with other answers`() {
+        fun answers(all: List<String>) = all.map(::normalizeAnswer).toSet()
+        val typing = allExercises.filterIsInstance<TypeAnswer>()
+            .map { Triple(it.id, it.prompt.getValue("en"), answers(it.acceptedAnswers)) }
+        val read = allExercises.filterIsInstance<ListenType>()
+            .map { Triple(it.id, it.meaning.getValue("en"), answers(it.acceptedAnswers + it.readingAnswers)) }
+        assertTrue(read.isNotEmpty())
+
+        (typing + read).groupBy { it.second.trim().lowercase(Locale.ROOT) }.values
+            // Two typing Exercises alone are not about the reading form.
+            .filter { alike -> alike.any { it in read } }
+            .forEach { alike ->
+                assertEquals(1, alike.map { it.third }.distinct().size, "Exercises ${alike.map { it.first }} ask \"${alike.first().second}\"")
+            }
     }
 
     @Test
@@ -418,9 +497,13 @@ class AuthoredContentTest {
 
     // What Unit 3 (numbers and family) must hold.
 
-    /** Every text the course can speak, each as its lower-case words. Covers every Accepted Answer. */
+    /**
+     * Every text the course can speak, and every reading answer, which is typed but never spoken,
+     * each as its lower-case words. Covers every Accepted Answer.
+     */
     private val spokenSentences: List<List<String>> =
-        allExercises.flatMap(::spoken).distinct().map { text -> words(text).map { it.lowercase(Locale.ROOT) } }
+        allExercises.flatMap { spoken(it) + (it as? ListenType)?.readingAnswers.orEmpty() }
+            .distinct().map { text -> words(text).map { it.lowercase(Locale.ROOT) } }
 
     private val numbers = listOf(
         "zero", "jeden", "dwa", "trzy", "cztery", "pięć", "sześć", "siedem", "osiem", "dziewięć", "dziesięć",

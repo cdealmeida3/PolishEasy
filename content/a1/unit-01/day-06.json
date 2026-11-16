@@ -31,6 +31,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d06-e02",
       "text": "źle",
+      "meaning": { "en": "badly; bad" },
       "distractors": ["żel", "cel"],
       "items": ["zle"]
     },
@@ -58,6 +59,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d06-e05",
       "text": "nieźle",
+      "meaning": { "en": "not bad" },
       "distractors": ["niedziela", "nigdzie"],
       "items": ["niezle"]
     },
@@ -97,6 +99,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d06-e09",
       "text": "do zobaczenia",
+      "meaning": { "en": "see you" },
       "distractors": ["do widzenia", "do usłyszenia"],
       "items": ["do-zobaczenia"]
     },
@@ -167,6 +170,8 @@
       "type": "listen_type",
       "id": "a1-u01-d06-e17",
       "acceptedAnswers": ["nic nie szkodzi"],
+      "meaning": { "en": "no problem (answer to \"sorry\")" },
+      "readingAnswers": ["nie szkodzi"],
       "items": ["nic-nie-szkodzi"]
     }
   ]

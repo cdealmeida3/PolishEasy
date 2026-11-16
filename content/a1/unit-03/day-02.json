@@ -55,6 +55,7 @@
       "type": "listen_type",
       "id": "a1-u03-d02-e04",
       "acceptedAnswers": ["sześć, siedem, osiem"],
+      "meaning": { "en": "six, seven, eight" },
       "items": ["szesc", "siedem", "osiem"]
     },
     {
@@ -93,6 +94,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d02-e08",
       "text": "dziewięć",
+      "meaning": { "en": "nine" },
       "distractors": ["dziesięć", "pięć"],
       "items": ["dziewiec"]
     },
@@ -100,6 +102,7 @@
       "type": "listen_type",
       "id": "a1-u03-d02-e09",
       "acceptedAnswers": ["osiem, dziewięć, dziesięć"],
+      "meaning": { "en": "eight, nine, ten" },
       "items": ["osiem", "dziewiec", "dziesiec"]
     },
     {
@@ -134,6 +137,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d02-e13",
       "text": "ile to jest pięć plus cztery?",
+      "meaning": { "en": "how much is five plus four?" },
       "distractors": ["ile to jest pięć plus pięć?", "ile to jest dziewięć plus cztery?"],
       "items": ["ile", "to", "byc-jest", "piec", "plus", "cztery"]
     },
@@ -161,6 +165,7 @@
       "type": "listen_type",
       "id": "a1-u03-d02-e16",
       "acceptedAnswers": ["numer osiem"],
+      "meaning": { "en": "number eight" },
       "items": ["numer", "osiem"]
     },
     {

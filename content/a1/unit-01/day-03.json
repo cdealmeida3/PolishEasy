@@ -19,6 +19,7 @@
       "type": "listen_type",
       "id": "a1-u01-d03-e01",
       "acceptedAnswers": ["jeszcze raz"],
+      "meaning": { "en": "once more" },
       "items": ["jeszcze-raz"]
     },
     {
@@ -37,6 +38,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d03-e03",
       "text": "w porządku",
+      "meaning": { "en": "all right; fine" },
       "distractors": ["porządek", "w poniedziałek"],
       "items": ["w-porzadku"]
     },
@@ -88,6 +90,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d03-e08",
       "text": "dziękuję",
+      "meaning": { "en": "thank you (to anyone)" },
       "distractors": ["dzięki", "dzień"],
       "items": ["dziekuje"]
     },
@@ -127,6 +130,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d03-e12",
       "text": "dzięki",
+      "meaning": { "en": "thanks (to friends)" },
       "distractors": ["dziki", "dźwięki"],
       "items": ["dzieki"]
     },
@@ -142,6 +146,7 @@
       "type": "listen_choose",
       "id": "a1-u01-d03-e14",
       "text": "bardzo",
+      "meaning": { "en": "very; very much" },
       "distractors": ["bardziej", "barszcz"],
       "items": ["bardzo"]
     },
@@ -149,6 +154,7 @@
       "type": "listen_type",
       "id": "a1-u01-d03-e15",
       "acceptedAnswers": ["wszystko"],
+      "meaning": { "en": "everything" },
       "items": ["wszystko"]
     },
     {

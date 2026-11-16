@@ -27,13 +27,19 @@ fun tiles(id: String, prompt: String, answer: String, vararg items: String): Wor
 fun conjugate(id: String, verb: String, person: Person, answer: String, vararg items: String): Conjugation =
     Conjugation(id, verb, mapOf("en" to "to $verb"), person, acceptedAnswers = listOf(answer), items = items.toList())
 
-/** A listen-and-choose Exercise with one distractor, "inne". Tests name it by its Clip, "audio/tak.ogg". */
+/**
+ * A listen-and-choose Exercise with one distractor, "inne". Tests name it by its Clip,
+ * "audio/tak.ogg", or by its meaning, "tak in English", when it is shown in its reading form.
+ */
 fun listenChoose(id: String, text: String, vararg items: String): ListenChoose =
-    ListenChoose(id, text, listOf("inne"), items.toList())
+    ListenChoose(id, text, mapOf("en" to "$text in English"), listOf("inne"), items.toList())
 
-/** A listen-and-type Exercise with one Accepted Answer. Tests name it by its Clip, "audio/tak.ogg". */
+/**
+ * A listen-and-type Exercise with one Accepted Answer. Tests name it by its Clip, "audio/tak.ogg",
+ * or by its meaning, "tak in English", when it is shown in its reading form.
+ */
 fun listenType(id: String, text: String, vararg items: String): ListenType =
-    ListenType(id, listOf(text), items.toList())
+    ListenType(id, listOf(text), mapOf("en" to "$text in English"), items = items.toList())
 
 /** The Clip of [text], named after it: "dzień dobry" is `dzień-dobry`. */
 fun clip(text: String): Clip = Clip(text.replace(' ', '-'), text)
@@ -65,6 +71,7 @@ private val Step.ShowExercise.prompt: String
         is ExerciseView.Conjugation -> "${view.verb} ${view.person.pronouns}"
         is ExerciseView.ListenChoose -> view.audio.path
         is ExerciseView.ListenType -> view.audio.path
+        is ExerciseView.ChoosePolish -> view.prompt
     }
 
 /** Whether this Step belongs to a Replay. */
@@ -137,33 +144,25 @@ class ItemLearner(
         }
     }
 
-    private fun answerTo(step: Step.ShowExercise, correct: Boolean): Answer = when (val view = step.exercise) {
-        is ExerciseView.ChooseTranslation -> Answer.Option(if (correct) 0 else 1)
-        is ExerciseView.TypeAnswer -> {
-            val exercise = course.exercises.values.filterIsInstance<TypeAnswer>()
-                .first { it.prompt.getValue("en") == view.prompt }
-            Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
-        }
-        is ExerciseView.WordTiles -> {
-            val exercise = course.exercises.values.filterIsInstance<WordTiles>()
-                .first { it.prompt.getValue("en") == view.prompt }
-            val words = words(exercise.acceptedAnswers.first())
-            Answer.Tiles(if (correct) words else words.reversed())
-        }
-        is ExerciseView.Conjugation -> {
-            val exercise = course.exercises.values.filterIsInstance<Conjugation>()
-                .first { it.verb == view.verb && it.person == view.person }
-            Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
-        }
-        is ExerciseView.ListenChoose -> {
-            val exercise = course.exercises.values.filterIsInstance<ListenChoose>()
-                .first { course.clipFor(it.text) == view.audio }
-            Answer.Option(view.options.indexOf(if (correct) exercise.text else exercise.distractors.first()))
-        }
-        is ExerciseView.ListenType -> {
-            val exercise = course.exercises.values.filterIsInstance<ListenType>()
-                .first { course.clipFor(it.acceptedAnswers.first()) == view.audio }
-            Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
+    private fun answerTo(step: Step.ShowExercise, correct: Boolean): Answer {
+        val view = step.exercise
+        return when (val exercise = course.exercises.getValue(step.exerciseId)) {
+            is ChooseTranslation -> Answer.Option(if (correct) 0 else 1)
+            is TypeAnswer -> Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
+            is WordTiles -> {
+                val words = words(exercise.acceptedAnswers.first())
+                Answer.Tiles(if (correct) words else words.reversed())
+            }
+            is Conjugation -> Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
+            is ListenChoose -> {
+                val options = when (view) {
+                    is ExerciseView.ListenChoose -> view.options
+                    is ExerciseView.ChoosePolish -> view.options
+                    else -> error("Exercise ${exercise.id} is shown as $view")
+                }
+                Answer.Option(options.indexOf(if (correct) exercise.text else exercise.distractors.first()))
+            }
+            is ListenType -> Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
         }
     }
 }

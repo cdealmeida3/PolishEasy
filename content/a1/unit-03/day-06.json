@@ -51,6 +51,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d06-e04",
       "text": "twoja siostra",
+      "meaning": { "en": "your sister (one friend)" },
       "distractors": ["moja siostra", "twoja mama"],
       "items": ["twoja", "siostra"]
     },
@@ -101,6 +102,7 @@
       "type": "listen_type",
       "id": "a1-u03-d06-e09",
       "acceptedAnswers": ["moja córka ma trzy lata"],
+      "meaning": { "en": "my daughter is three years old" },
       "items": ["moja", "corka", "miec-ma", "trzy", "lata"]
     },
     {
@@ -131,6 +133,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d06-e12",
       "text": "to jest mój mąż",
+      "meaning": { "en": "this is my husband" },
       "distractors": ["to jest moja żona", "to jest mój syn"],
       "items": ["to", "byc-jest", "moj", "maz"]
     },
@@ -172,6 +175,8 @@
       "type": "listen_type",
       "id": "a1-u03-d06-e17",
       "acceptedAnswers": ["czy twój mąż jest z Polski?"],
+      "meaning": { "en": "is your husband from Poland? (to one friend)" },
+      "readingAnswers": ["twój mąż jest z Polski?"],
       "items": ["czy", "twoj", "maz", "byc-jest", "z-polski"]
     },
     {

@@ -106,6 +106,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d04-e09",
       "text": "jak się pan ma?",
+      "meaning": { "en": "how are you? (to a man, formal)" },
       "distractors": ["jak się pani ma?", "jak się masz?"],
       "items": ["jak-sie-pan-ma"]
     },
@@ -180,6 +181,8 @@
       "type": "listen_type",
       "id": "a1-u02-d04-e17",
       "acceptedAnswers": ["skąd pan jest?"],
+      "meaning": { "en": "where are you from? (to a man, formal)" },
+      "readingAnswers": ["skąd jest pan?"],
       "items": ["skad", "pan", "byc-jest"]
     }
   ]

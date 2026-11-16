@@ -45,6 +45,32 @@ class SavedProgressTest {
     }
 
     @Test
+    fun `the choice not to listen survives reopening`() {
+        FileLearnerProgress(file).saveInProgress(inProgress.copy(cantListen = true))
+
+        assertEquals(inProgress.copy(cantListen = true), reopened().dailySetInProgress())
+    }
+
+    @Test
+    fun `a file written before the choice existed loads with listening on`() {
+        file.writeText(
+            """
+            {
+              "version": 1,
+              "completed": { "a1-u01-d01": "2026-03-02" },
+              "inProgress": { "dailySetId": "a1-u01-d02", "remaining": ["a1-u01-d02-e02", "a1-u01-d02-e01"], "review": ["a1-u01-d01-e01"] }
+            }
+            """,
+        )
+
+        val saved = FileLearnerProgress(file).dailySetInProgress()
+
+        assertEquals(false, saved?.cantListen)
+        assertEquals(listOf("a1-u01-d02-e02", "a1-u01-d02-e01"), saved?.remaining)
+        assertEquals(listOf("a1-u01-d01-e01"), saved?.review)
+    }
+
+    @Test
     fun `recording a completion clears the Daily Set in progress`() {
         val progress = FileLearnerProgress(file)
         progress.saveInProgress(inProgress)

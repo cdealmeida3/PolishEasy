@@ -1,6 +1,6 @@
 # Authoring Daily Sets
 
-The rules the Authored Content is written to. The [content checker](content-checks.md) decides whether content can ship; these rules are about whether it teaches. `AuthoredContentTest` holds the content to rules 1, 2, 3 and 8, and to part of rule 10. The rest need a person, or the Polish check of issue #16.
+The rules the Authored Content is written to. The [content checker](content-checks.md) decides whether content can ship; these rules are about whether it teaches. `AuthoredContentTest` holds the content to rules 1, 2, 3 and 8, and to part of rules 10 and 11: every reading form plays, every reading answer is accepted read and refused heard, and a `listen_type` that is read looks like no `type_answer` with other answers. The rest need a person, or the Polish check of issue #16.
 
 Before writing a Unit, read [a1-path.md](a1-path.md) for what it covers and what the Units around it cover.
 
@@ -16,6 +16,7 @@ Before writing a Unit, read [a1-path.md](a1-path.md) for what it covers and what
 8. **Each Daily Set mixes at least four Exercise types.** A rough share for 17 Exercises: 6 to 8 `choose_translation` (the introductions), 3 to 5 listening, 1 or 2 `type_answer`, 3 to 5 `word_tiles`.
 9. **Tips are short** (three or four sentences), explain a sound with an English comparison and one or two Polish words from that day, and sit before the first Exercise that needs them. At most 2 a day.
 10. **Two Exercises that look the same to the Learner have the same answer.** Two `type_answer` Exercises with the same prompt, or two `word_tiles` Exercises with the same prompt and tiles, list the same Accepted Answers.
+11. **A listening Exercise can also be read.** Its `meaning` is what the spoken text means, worded like a `type_answer` prompt (the "you" and "your" conventions apply). For `listen_choose` it fits the text and none of the distractors, so a distractor is never another way to say the same thing (*chwila* beside *chwileczkę*). For `listen_type`, `readingAnswers` lists every other reasonable answer to that meaning (rule 6 and the conventions below); they are accepted only when the Exercise is read ([ADR-0007](adr/0007-a-listening-exercise-is-read-in-place.md)).
 
 A Daily Set has 15 to 18 Exercises and 6 to 8 new Items. With up to 8 Review Exercises that is 23 to 25 Exercises, about 10 to 15 minutes.
 

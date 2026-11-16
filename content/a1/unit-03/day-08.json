@@ -51,6 +51,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d08-e04",
       "text": "mój dziadek",
+      "meaning": { "en": "my grandpa" },
       "distractors": ["moja babcia", "moje dziecko"],
       "items": ["moj", "dziadek"]
     },
@@ -144,6 +145,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d08-e13",
       "text": "oni mają córkę",
+      "meaning": { "en": "they (men, or men and women) have a daughter" },
       "distractors": ["oni mają syna", "one mają córkę"],
       "items": ["oni", "miec-maja", "corka-acc"]
     },
@@ -166,6 +168,8 @@
       "type": "listen_type",
       "id": "a1-u03-d08-e16",
       "acceptedAnswers": ["mam rodzeństwo, brata i siostrę"],
+      "meaning": { "en": "I have siblings: a brother and a sister" },
+      "readingAnswers": ["ja mam rodzeństwo, brata i siostrę"],
       "items": ["miec-mam", "rodzenstwo", "brat-acc", "i", "siostra-acc"]
     },
     {

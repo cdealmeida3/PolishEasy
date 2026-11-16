@@ -51,6 +51,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d07-e04",
       "text": "moje dziecko",
+      "meaning": { "en": "my child" },
       "distractors": ["moja córka", "mój syn"],
       "items": ["moje", "dziecko"]
     },
@@ -97,6 +98,8 @@
       "type": "listen_type",
       "id": "a1-u03-d07-e09",
       "acceptedAnswers": ["to nie jest twój problem"],
+      "meaning": { "en": "this is not your problem (to one friend)" },
+      "readingAnswers": ["to nie twój problem"],
       "items": ["to", "nie", "byc-jest", "twoj", "problem"]
     },
     {
@@ -126,6 +129,7 @@
       "type": "listen_choose",
       "id": "a1-u03-d07-e12",
       "text": "mamy dzieci",
+      "meaning": { "en": "we have children" },
       "distractors": ["mamy dziecko", "mamy czas"],
       "items": ["miec-mamy", "dzieci"]
     },
@@ -173,6 +177,7 @@
       "type": "listen_type",
       "id": "a1-u03-d07-e17",
       "acceptedAnswers": ["moja rodzina jest z Polski"],
+      "meaning": { "en": "my family is from Poland" },
       "items": ["moja", "rodzina", "byc-jest", "z-polski"]
     },
     {

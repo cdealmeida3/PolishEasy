@@ -119,6 +119,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d07-e10",
       "text": "czy mówisz po angielsku?",
+      "meaning": { "en": "do you speak English? (one friend)" },
       "distractors": ["czy mówi po angielsku?", "czy mówisz po polsku?"],
       "items": ["czy", "mowic-mowisz", "po-angielsku"]
     },
@@ -188,6 +189,8 @@
       "type": "listen_type",
       "id": "a1-u02-d07-e17",
       "acceptedAnswers": ["Adam też mówi po angielsku"],
+      "meaning": { "en": "Adam speaks English too" },
+      "readingAnswers": ["Adam mówi też po angielsku"],
       "items": ["adam", "tez", "mowic-mowi", "po-angielsku"]
     }
   ]

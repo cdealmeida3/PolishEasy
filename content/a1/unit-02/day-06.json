@@ -82,6 +82,7 @@
       "type": "listen_choose",
       "id": "a1-u02-d06-e06",
       "text": "macie problem?",
+      "meaning": { "en": "do you have a problem? (several people)" },
       "distractors": ["mamy problem?", "mają problem?"],
       "items": ["miec-macie", "problem"]
     },
@@ -167,13 +168,16 @@
       "type": "listen_choose",
       "id": "a1-u02-d06-e15",
       "text": "jak się nazywasz?",
-      "distractors": ["jak się masz?", "jak masz na imię?"],
+      "meaning": { "en": "what are you called? (one friend)" },
+      "distractors": ["jak się masz?", "jak się nazywam?"],
       "items": ["jak-sie-nazywasz"]
     },
     {
       "type": "listen_type",
       "id": "a1-u02-d06-e16",
       "acceptedAnswers": ["nazywam się Adam"],
+      "meaning": { "en": "I am called Adam" },
+      "readingAnswers": ["ja nazywam się Adam", "ja się nazywam Adam"],
       "items": ["nazywam-sie", "adam"]
     }
   ]

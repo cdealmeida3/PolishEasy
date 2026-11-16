@@ -144,8 +144,10 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                     screen.reminderEnabled,
                     screen.reminderTime,
                     screen.notificationsAllowed,
+                    screen.soundOn,
                     onReminderEnabled = viewModel::setReminderEnabled,
                     onReminderTime = viewModel::setReminderTime,
+                    onSoundOn = viewModel::setSoundOn,
                     onReport = { reportMistake(context, exerciseId = null) },
                 )
             }
@@ -177,6 +179,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                         onAnswer = viewModel::answer,
                         onContinue = viewModel::continueToNext,
                         onPlay = onPlay,
+                        onCantListen = viewModel::cantListenNow,
                         onReport = { reportMistake(context, screen.exerciseId) },
                     )
                 }
@@ -319,7 +322,7 @@ private fun HomeScreen(
 }
 
 /**
- * Settings: the Reminder's switch and time, and "Report a mistake". Turning the Reminder on is the
+ * Settings: the Reminder's switch and time, the Sound switch, and "Report a mistake". Turning the Reminder on is the
  * only moment the app asks for permission to show notifications.
  */
 @Composable
@@ -327,8 +330,10 @@ private fun SettingsScreen(
     reminderEnabled: Boolean,
     reminderTime: LocalTime,
     notificationsAllowed: Boolean,
+    soundOn: Boolean,
     onReminderEnabled: (Boolean) -> Unit,
     onReminderTime: (LocalTime) -> Unit,
+    onSoundOn: (Boolean) -> Unit,
     onReport: () -> Unit,
 ) {
     val context = LocalContext.current
@@ -340,6 +345,7 @@ private fun SettingsScreen(
         if (granted) onReminderEnabled(true)
     }
     val reminderLabel = stringResource(R.string.settings_reminder)
+    val soundLabel = stringResource(R.string.settings_sound)
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -396,6 +402,20 @@ private fun SettingsScreen(
                 )
             }
         }
+        Spacer(Modifier.height(16.dp))
+        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
+            Text(soundLabel, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+            Switch(
+                checked = soundOn,
+                onCheckedChange = onSoundOn,
+                modifier = Modifier.semantics { contentDescription = soundLabel },
+            )
+        }
+        Text(
+            stringResource(R.string.settings_sound_note),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
         Spacer(Modifier.height(16.dp))
         HorizontalDivider()
         Spacer(Modifier.height(16.dp))
@@ -667,6 +687,7 @@ private fun PlayerScreen(
     onAnswer: (Answer) -> Unit,
     onContinue: () -> Unit,
     onPlay: (ClipView, Boolean) -> Unit,
+    onCantListen: () -> Unit,
     onReport: () -> Unit,
 ) {
     // Held here so the Polish key row and the text field share it.
@@ -708,7 +729,8 @@ private fun PlayerScreen(
                 enabled = feedback == null,
                 onAnswer,
             )
-            is ExerciseView.ListenChoose -> ListenChooseExercise(exercise, enabled = feedback == null, onAnswer, onPlay)
+            is ExerciseView.ListenChoose ->
+                ListenChooseExercise(exercise, enabled = feedback == null, onAnswer, onPlay, onCantListen)
             is ExerciseView.ListenType -> ListenTypeExercise(
                 exercise,
                 typed,
@@ -716,7 +738,9 @@ private fun PlayerScreen(
                 enabled = feedback == null,
                 onAnswer,
                 onPlay,
+                onCantListen,
             )
+            is ExerciseView.ChoosePolish -> ChoosePolishExercise(exercise, enabled = feedback == null, onAnswer)
         }
         Spacer(Modifier.height(24.dp))
         if (feedback != null) {
@@ -815,10 +839,32 @@ private fun ListenChooseExercise(
     enabled: Boolean,
     onAnswer: (Answer) -> Unit,
     onPlay: (ClipView, Boolean) -> Unit,
+    onCantListen: () -> Unit,
 ) {
     Text(stringResource(R.string.listen_choose_instruction), style = MaterialTheme.typography.labelLarge)
     Spacer(Modifier.height(16.dp))
     ListenControls(exercise.audio, enabled, onPlay)
+    CantListenButton(enabled, onCantListen)
+    Spacer(Modifier.height(32.dp))
+    OptionButtons(exercise.options, enabled, onAnswer)
+}
+
+/** "Can't listen now", offered until the listening Exercise is answered. */
+@Composable
+private fun CantListenButton(enabled: Boolean, onCantListen: () -> Unit) {
+    if (enabled) {
+        TextButton(onClick = onCantListen) {
+            Text(stringResource(R.string.cant_listen_now))
+        }
+    }
+}
+
+/** The reading form of a listen-and-choose Exercise: its meaning, and the same Polish options. Nothing plays. */
+@Composable
+private fun ChoosePolishExercise(exercise: ExerciseView.ChoosePolish, enabled: Boolean, onAnswer: (Answer) -> Unit) {
+    Text(stringResource(R.string.choose_polish_instruction), style = MaterialTheme.typography.labelLarge)
+    Spacer(Modifier.height(16.dp))
+    Text(exercise.prompt, style = MaterialTheme.typography.headlineMedium, textAlign = TextAlign.Center)
     Spacer(Modifier.height(32.dp))
     OptionButtons(exercise.options, enabled, onAnswer)
 }
@@ -831,10 +877,12 @@ private fun ListenTypeExercise(
     enabled: Boolean,
     onAnswer: (Answer) -> Unit,
     onPlay: (ClipView, Boolean) -> Unit,
+    onCantListen: () -> Unit,
 ) {
     Text(stringResource(R.string.listen_type_instruction), style = MaterialTheme.typography.labelLarge)
     Spacer(Modifier.height(16.dp))
     ListenControls(exercise.audio, enabled, onPlay)
+    CantListenButton(enabled, onCantListen)
     Spacer(Modifier.height(32.dp))
     PolishAnswerField(typed, onTypedChange, enabled, onAnswer)
 }

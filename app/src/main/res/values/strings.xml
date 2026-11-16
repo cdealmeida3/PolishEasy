@@ -26,6 +26,8 @@
     <string name="person_they">they</string>
     <string name="listen_choose_instruction">Choose what you hear</string>
     <string name="listen_type_instruction">Type what you hear</string>
+    <string name="cant_listen_now">Can\'t listen now</string>
+    <string name="choose_polish_instruction">Choose the Polish for</string>
     <string name="audio_play">Play</string>
     <string name="audio_play_again">Play again</string>
     <string name="audio_slow">Slow</string>
@@ -62,6 +64,8 @@
     <string name="settings_reminder_time">Reminder time</string>
     <string name="settings_notifications_off">Notifications are turned off for PolishEasy.</string>
     <string name="settings_open_android_settings">Open Android settings</string>
+    <string name="settings_sound">Sound</string>
+    <string name="settings_sound_note">When off, nothing is played and listening Exercises become reading ones.</string>
     <string name="settings_version">Version %1$s</string>
     <string name="action_ok">OK</string>
     <string name="action_cancel">Cancel</string>

@@ -313,6 +313,7 @@ private fun exerciseProblem(exercise: Exercise): String? = when (exercise) {
         }
     }
     is ListenType -> typedAnswersProblem(exercise.acceptedAnswers)
+        ?: if (exercise.readingAnswers.any { normalizeAnswer(it).isEmpty() }) "has a blank reading answer" else null
 }
 
 private fun typedAnswersProblem(acceptedAnswers: List<String>): String? = when {
