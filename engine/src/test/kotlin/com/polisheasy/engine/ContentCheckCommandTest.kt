@@ -115,7 +115,7 @@ internal class ContentCheckCommandTest {
         assertEquals(CheckerFixture.shipped, contentJson.decodeFromString(ReleasedIds.serializer(), releasedIds.readText()))
         val check = run()
         assertEquals(1, check.exitCode)
-        assertTrue("released-ids.json: a1-u01-d02-e08: " in check.err, check.err)
+        assertTrue("released-ids.json: ${CheckerFixture.LAST_OF_DAY_2}: " in check.err, check.err)
     }
 
     @Test
