@@ -189,7 +189,7 @@ fun runMakeClips(
             var measured: Measured
             var asked = 0
             do {
-                measured = encode.encode(checkNotNull(voice).speak(clip.text), part.toPath())
+                measured = encode.encode(checkNotNull(voice).speak(settings.said(clip.text)), part.toPath())
                 asked++
             } while (measured.peakDb < SILENT_BELOW_DB && asked < ASKS)
             if (measured.peakDb < SILENT_BELOW_DB) {

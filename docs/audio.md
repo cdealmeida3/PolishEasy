@@ -43,7 +43,7 @@ Only new or changed text is sent. A run on an unchanged repository sends nothing
 
 ### The voice is recorded in one place
 
-`audio-voice.json`, at the repository root, holds everything that decides how a Clip sounds: the service, the voice's name, the sample rate, the speaking rate, and how the sound is encoded (Opus at 32 kbit/s, the last 20 ms faded out, 80 ms of silence before and 200 ms after so a player never clips the first or last sound).
+`audio-voice.json`, at the repository root, holds everything that decides how a Clip sounds: the service, the voice's name, the sample rate, the speaking rate, the few texts that are sent to the voice in another spelling (see "When the voice says a text wrongly" below), and how the sound is encoded (Opus at 32 kbit/s, the last 20 ms faded out, 80 ms of silence before and 200 ms after so a player never clips the first or last sound).
 
 The voice is Google Cloud Text-to-Speech, **Chirp 3 HD**, `pl-PL-Chirp3-HD-Aoede`. One voice speaks everything in v1.
 
@@ -56,7 +56,7 @@ The voice is Google Cloud Text-to-Speech, **Chirp 3 HD**, `pl-PL-Chirp3-HD-Aoede
 
 A Clip that stays keeps its id whatever happens to its file. So:
 
-- changing `audio-voice.json` (another voice, another bitrate) makes every Clip again, under the same ids;
+- changing `audio-voice.json` (another voice, another bitrate) makes every Clip again, under the same ids. Its `saidAs` list is the exception: an entry there makes only its own Clip again;
 - to record one Clip again, delete its `.ogg` and run the command;
 - a text that changes, even only in punctuation, is a new Clip, and the old one is removed.
 
@@ -65,6 +65,24 @@ See [ADR-0009](adr/0009-each-clip-is-tied-to-the-settings-that-made-it.md) for w
 If the service fails part-way, the command keeps and records what it finished, says how many are left and exits with an error. Running it again carries on from there. A Clip shorter than 0.2 s or longer than 20 s stops the run: that is not speech.
 
 The voice now and then answers a one-syllable word (*tak*, *ty*, *ja*) with a quarter of a second of silence, and not the same way twice. So the command measures the loudest moment of every Clip it makes, and asks again, up to six times, for one that is silent. If a word is silent six times running the run stops; run it again.
+
+### When the voice says a text wrongly
+
+The voice can say a text wrongly, and the cause can be how the text is written. Asked for *do jutra* in lower case, it said the *j* as a buzzing "zh" ("do żutra") in most takes; asked for *Do jutra*, with a capital, it said it right every time. The same words inside a longer phrase (*pa, do jutra*) came out right as they were.
+
+So `audio-voice.json` has a `saidAs` list: a text the course speaks, and the spelling sent to the voice in its place.
+
+```
+"saidAs": {
+  "do jutra": "Do jutra"
+}
+```
+
+The Clip still belongs to the text as the course writes it, and is found the same way. Adding, changing or removing an entry makes that one Clip again on the next run and no other. Keep the list short: a capital or a full stop is a small nudge, and a respelling that changes the words would teach the wrong thing.
+
+If a Clip only sounded wrong once, there is no need for an entry: delete its `.ogg` and run the command for another take.
+
+Nothing in the command catches a wrong sound. When nobody can listen, a speech recogniser run on the file (Whisper, set to Polish) is a rough check: two sizes of it disagreed on single takes of *do jutra*, and agreed only on the capitalised ones. It mishears short words often, so what it flags is something to listen to, not a verdict.
 
 ### After a run
 

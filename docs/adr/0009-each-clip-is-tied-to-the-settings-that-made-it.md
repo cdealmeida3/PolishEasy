@@ -16,4 +16,5 @@ We rejected hashing the audio files themselves. That shows a file has changed, n
 - A run that is interrupted loses nothing: finished Clips are recorded, and the next run makes the rest.
 - A Clip edited by hand, without the command, keeps its old fingerprint and is not noticed. To record one again, delete its `.ogg`.
 - Adding a setting to `audio-voice.json` changes every fingerprint. At about 6,000 characters for the whole course that costs nothing.
+- The `saidAs` list in `audio-voice.json` (a text, and the spelling sent to the voice in its place) is left out of the settings part of the fingerprint and counted through the text part: a Clip's fingerprint is of what is sent for it. So an entry makes its own Clip again and no other. A new take of every Clip to mend one would risk the voice saying another one wrongly.
 - The record can always be thrown away: without it every Clip is simply made again.

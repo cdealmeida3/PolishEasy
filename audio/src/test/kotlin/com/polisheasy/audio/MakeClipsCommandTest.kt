@@ -86,10 +86,10 @@ internal class MakeClipsCommandTest {
         return Run(exitCode, out.toString(Charsets.UTF_8), err.toString(Charsets.UTF_8))
     }
 
-    private fun writeVoice(name: String = "pl-PL-Chirp3-HD-Aoede") = voiceFile.writeText(
+    private fun writeVoice(name: String = "pl-PL-Chirp3-HD-Aoede", saidAs: String = "") = voiceFile.writeText(
         """
         {"service": "google-cloud-text-to-speech", "voice": "$name", "languageCode": "pl-PL", "sampleRateHertz": 24000,
-         "encoding": {"codec": "opus", "bitrateKbps": 32, "leadMs": 80, "tailMs": 200, "fadeOutMs": 20}}
+         "encoding": {"codec": "opus", "bitrateKbps": 32, "leadMs": 80, "tailMs": 200, "fadeOutMs": 20}$saidAs}
         """.trimIndent(),
     )
 
@@ -294,6 +294,24 @@ internal class MakeClipsCommandTest {
         assertEquals(before, clips())
         assertEquals("OggS pl-PL-Wavenet-A tak", File(audioDir, "tak.ogg").readText())
         assertTrue("2 Clips: 0 added, 2 recorded again, 0 removed, 0 kept." in run.out, run.out)
+    }
+
+    @Test
+    fun `a text given another spelling for the voice is the only one sent again, in that spelling, and keeps its Clip`() {
+        courseWithClips("do jutra", "tak")
+        val before = clips()
+
+        writeVoice(saidAs = """, "saidAs": {"Do  jutra": "Do jutra!"}""")
+        val run = run()
+
+        assertEquals(0, run.exitCode, run.err)
+        assertEquals(listOf("Do jutra!"), sent)
+        assertEquals(before, clips())
+        assertTrue("2 Clips: 0 added, 1 recorded again, 0 removed, 1 kept." in run.out, run.out)
+
+        sent.clear()
+        run()
+        assertEquals(emptyList(), sent)
     }
 
     @Test
