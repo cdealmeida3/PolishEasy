@@ -132,6 +132,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                     screen.correctAnswers,
                     screen.exercises,
                     screen.itemsLearned,
+                    screen.reviewOnly,
                     onDone = viewModel::backToHome,
                 )
             }
@@ -212,9 +213,17 @@ private fun HomeScreen(today: Today, onStart: () -> Unit, onContinue: () -> Unit
                     Text(stringResource(R.string.home_start))
                 }
             }
+            Today.ReviewOnlyAvailable -> {
+                Text(stringResource(R.string.home_review_only_ready), textAlign = TextAlign.Center)
+                Spacer(Modifier.height(32.dp))
+                Button(onClick = onStart, modifier = Modifier.fillMaxWidth()) {
+                    Text(stringResource(R.string.home_start))
+                }
+            }
             is Today.InProgress -> {
+                val message = if (today.reviewOnly) R.string.home_review_only_in_progress else R.string.home_in_progress
                 Text(
-                    stringResource(R.string.home_in_progress, today.progress.correct, today.progress.total),
+                    stringResource(message, today.progress.correct, today.progress.total),
                     textAlign = TextAlign.Center,
                 )
                 Spacer(Modifier.height(32.dp))
@@ -224,7 +233,8 @@ private fun HomeScreen(today: Today, onStart: () -> Unit, onContinue: () -> Unit
             }
             is Today.DoneForToday -> {
                 val unlockTime = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).format(today.nextUnlock)
-                Text(stringResource(R.string.home_done, unlockTime), textAlign = TextAlign.Center)
+                val message = if (today.reviewOnlyNext) R.string.home_done_review_only_next else R.string.home_done
+                Text(stringResource(message, unlockTime), textAlign = TextAlign.Center)
             }
             Today.AllCompleted -> Text(stringResource(R.string.home_all_completed), textAlign = TextAlign.Center)
         }
@@ -707,7 +717,13 @@ private fun TextFieldValue.inserting(letter: String): TextFieldValue = copy(
 )
 
 @Composable
-private fun SummaryScreen(correctAnswers: Int, exercises: Int, itemsLearned: List<ItemView>, onDone: () -> Unit) {
+private fun SummaryScreen(
+    correctAnswers: Int,
+    exercises: Int,
+    itemsLearned: List<ItemView>,
+    reviewOnly: Boolean,
+    onDone: () -> Unit,
+) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -724,9 +740,17 @@ private fun SummaryScreen(correctAnswers: Int, exercises: Int, itemsLearned: Lis
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            Text(stringResource(R.string.summary_title), style = MaterialTheme.typography.headlineMedium)
+            Text(
+                stringResource(if (reviewOnly) R.string.summary_review_only_title else R.string.summary_title),
+                style = MaterialTheme.typography.headlineMedium,
+                textAlign = TextAlign.Center,
+            )
             Spacer(Modifier.height(16.dp))
             Text(stringResource(R.string.summary_accuracy, correctAnswers, exercises))
+            if (reviewOnly) {
+                Spacer(Modifier.height(16.dp))
+                Text(stringResource(R.string.summary_more_units), textAlign = TextAlign.Center)
+            }
             if (itemsLearned.isNotEmpty()) {
                 Spacer(Modifier.height(32.dp))
                 Text(stringResource(R.string.summary_items_learned), style = MaterialTheme.typography.labelLarge)

@@ -8,13 +8,20 @@ import java.time.ZonedDateTime
 sealed interface Today {
     data object DailySetAvailable : Today
 
-    /** A Daily Set was started, today or earlier, and not finished. */
-    data class InProgress(val progress: SetProgress) : Today
+    /** Every Daily Set released so far is completed, and today's Review-only Daily Set can be started. */
+    data object ReviewOnlyAvailable : Today
 
-    /** A Daily Set was completed today. [nextUnlock] is the start of the next local calendar day. */
-    data class DoneForToday(val nextUnlock: ZonedDateTime) : Today
+    /** A Daily Set was started, today or earlier, and not finished. [reviewOnly] when it is a Review-only Daily Set. */
+    data class InProgress(val progress: SetProgress, val reviewOnly: Boolean = false) : Today
 
-    /** Every Daily Set released so far is completed. */
+    /**
+     * A new or Review-only Daily Set was completed today. [nextUnlock] is the start of the next
+     * local calendar day. [reviewOnlyNext] when every Daily Set released so far is completed, so
+     * tomorrow's is a Review-only Daily Set.
+     */
+    data class DoneForToday(val nextUnlock: ZonedDateTime, val reviewOnlyNext: Boolean = false) : Today
+
+    /** Every Daily Set released so far is completed and the course has nothing to review. */
     data object AllCompleted : Today
 }
 
@@ -27,12 +34,14 @@ sealed interface Step {
 
     /**
      * [correctAnswers] counts the Exercises answered correctly on the first attempt, Review included.
-     * [itemsLearned] are the Items this Daily Set introduced.
+     * [itemsLearned] are the Items this Daily Set introduced. [reviewOnly] when it was a
+     * Review-only Daily Set, which introduces none.
      */
     data class ShowSummary(
         val correctAnswers: Int,
         val exercises: Int,
         val itemsLearned: List<ItemView> = emptyList(),
+        val reviewOnly: Boolean = false,
     ) : Step
 }
 
@@ -122,27 +131,51 @@ class CourseEngine(
     /** The Daily Set being played, with how far the Learner is through it. */
     private var playing: Playing? = null
 
-    private class Playing(val dailySet: DailySet, var state: DailySetInProgress)
+    /**
+     * [dailySet] is the one on the Path, or for a Review-only Daily Set an empty one that is not
+     * on the Path, so that every Exercise comes from the Review saved in [state].
+     */
+    private class Playing(val dailySet: DailySet, var state: DailySetInProgress, val reviewOnly: Boolean = false)
+
+    /** Whether any Exercise practises an Item, so a Review-only Daily Set would not be empty. */
+    private val reviewable: Boolean by lazy {
+        course.exercises.values.any { exercise -> exercise.items.any { it in course.itemsById } }
+    }
 
     fun today(): Today {
         val completed = progress.completedDailySets()
         val today = LocalDate.now(clock)
-        if (course.path.all { it.id in completed }) return Today.AllCompleted
-        if (today in completed.values) {
-            return Today.DoneForToday(nextUnlock = today.plusDays(1).atStartOfDay(clock.zone))
+        val pathCompleted = course.path.all { it.id in completed }
+        if (pathCompleted && !reviewable) return Today.AllCompleted
+        if (today in completed.values || today in progress.reviewOnlyDays()) {
+            return Today.DoneForToday(
+                nextUnlock = today.plusDays(1).atStartOfDay(clock.zone),
+                reviewOnlyNext = pathCompleted,
+            )
         }
-        val saved = savedDailySet() ?: return Today.DailySetAvailable
-        return Today.InProgress(progressOf(saved))
+        savedDailySet()?.let { return Today.InProgress(progressOf(it), reviewOnly = it.reviewOnly) }
+        return if (pathCompleted) Today.ReviewOnlyAvailable else Today.DailySetAvailable
     }
 
     /**
-     * Starts the next Daily Set on the Path. Its Review is chosen now and saved with it, so the
-     * Daily Set keeps the same Exercises however much later it is finished.
-     * Fails unless [today] is [Today.DailySetAvailable].
+     * Starts what today offers: the next Daily Set on the Path or, once every one is completed, a
+     * Review-only Daily Set. Its Review is chosen now and saved with it, so the Daily Set keeps
+     * the same Exercises however much later it is finished.
+     * Fails unless [today] is [Today.DailySetAvailable] or [Today.ReviewOnlyAvailable].
      */
     fun startDailySet(): Step {
-        check(today() == Today.DailySetAvailable) { "No Daily Set is available to start: ${today()}" }
+        val offered = today()
+        check(offered == Today.DailySetAvailable || offered == Today.ReviewOnlyAvailable) {
+            "No Daily Set is available to start: $offered"
+        }
         val completed = progress.completedDailySets()
+        if (offered == Today.ReviewOnlyAvailable) {
+            val review = chooseReviewOnly(course, completed, progress.itemProgress(), LocalDate.now(clock))
+            val state = DailySetInProgress(dailySetId = REVIEW_ONLY_ID, remaining = review, review = review)
+            progress.saveInProgress(state)
+            playing = reviewOnly(state)
+            return next()
+        }
         val set = course.path.first { it.id !in completed }
         val review = chooseReview(course, completed, progress.itemProgress(), set, LocalDate.now(clock))
         val state = DailySetInProgress(
@@ -165,7 +198,8 @@ class CourseEngine(
     /**
      * Checks the Learner's answer to the Exercise currently shown and saves where the Learner is.
      * A wrongly answered Exercise goes to the end of the queue and returns until it is answered
-     * correctly. The Daily Set is completed, on the day of this answer, when none remain.
+     * correctly. The Daily Set, new or Review-only, is completed, on the day of this answer, when
+     * none remain.
      * The first attempt at an Exercise, and only the first, reschedules each of its Items.
      */
     fun answer(answer: Answer): Feedback {
@@ -183,7 +217,12 @@ class CourseEngine(
             state.copy(remaining = rest + exercise.id, missed = state.missed + exercise.id)
         }
         if (playing.state.remaining.isEmpty()) {
-            progress.recordCompleted(set.id, on = LocalDate.now(clock), items)
+            val today = LocalDate.now(clock)
+            if (playing.reviewOnly) {
+                progress.recordReviewOnlyCompleted(on = today, items)
+            } else {
+                progress.recordCompleted(set.id, on = today, items)
+            }
         } else {
             progress.saveInProgress(playing.state, items)
         }
@@ -215,6 +254,7 @@ class CourseEngine(
                 correctAnswers = total - state.missed.size,
                 exercises = total,
                 itemsLearned = course.introducedIn(set).map { ItemView(it.text, localize(it.meaning)) },
+                reviewOnly = playing.reviewOnly,
             )
         val tip = set.tips.firstOrNull { it.before == exerciseId && it.id !in state.shownTips }
         if (tip != null) {
@@ -232,12 +272,22 @@ class CourseEngine(
     /**
      * The saved Daily Set in progress, if it can still be played: its Daily Set is on the Path and
      * not completed, and every id it refers to still exists: its Exercises and Tips there, its
-     * Review Exercises anywhere in the course. Otherwise the content changed in an update, and
-     * the saved state is ignored.
+     * Review Exercises anywhere in the course. A Review-only Daily Set can be played only while
+     * every Daily Set on the Path is completed, and only if all its Exercises still exist.
+     * Otherwise the content changed in an update, and the saved state is ignored.
      */
     private fun savedDailySet(): Playing? {
         val saved = progress.dailySetInProgress() ?: return null
-        if (saved.dailySetId in progress.completedDailySets()) return null
+        val completed = progress.completedDailySets()
+        if (saved.dailySetId == REVIEW_ONLY_ID) {
+            val playable = course.path.all { it.id in completed } &&
+                saved.remaining.isNotEmpty() &&
+                course.exercises.keys.containsAll(saved.review) &&
+                saved.review.containsAll(saved.remaining) &&
+                saved.review.containsAll(saved.missed)
+            return if (playable) reviewOnly(saved) else null
+        }
+        if (saved.dailySetId in completed) return null
         val set = course.path.firstOrNull { it.id == saved.dailySetId } ?: return null
         val exerciseIds = set.exercises.map { it.id }.toSet() + saved.review
         val tipIds = set.tips.map { it.id }.toSet()
@@ -248,6 +298,9 @@ class CourseEngine(
             tipIds.containsAll(saved.shownTips)
         return if (playable) Playing(set, saved) else null
     }
+
+    private fun reviewOnly(state: DailySetInProgress): Playing =
+        Playing(DailySet(REVIEW_ONLY_ID, exercises = emptyList()), state, reviewOnly = true)
 
     private fun progressOf(playing: Playing): SetProgress {
         val total = total(playing)

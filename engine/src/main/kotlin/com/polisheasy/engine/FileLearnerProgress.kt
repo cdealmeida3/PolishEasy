@@ -16,6 +16,8 @@ private data class StoredProgress(
     val completed: Map<String, String> = emptyMap(),
     val inProgress: DailySetInProgress? = null,
     val items: Map<String, StoredItem> = emptyMap(),
+    /** The days a Review-only Daily Set was completed, in order. */
+    val reviewOnlyDays: List<String> = emptyList(),
 )
 
 @Serializable
@@ -47,24 +49,32 @@ class FileLearnerProgress(private val file: File) : LearnerProgress {
     private var completed: Map<String, LocalDate>
     private var inProgress: DailySetInProgress?
     private var items: Map<String, ItemProgress>
+    private var reviewOnly: Set<LocalDate>
 
     init {
         val stored = read()
         completed = stored.completed.mapValues { LocalDate.parse(it.value) }
         inProgress = stored.inProgress
         items = stored.items.mapValues { it.value.toItemProgress() }
+        reviewOnly = stored.reviewOnlyDays.map(LocalDate::parse).toSet()
     }
 
     override fun completedDailySets(): Map<String, LocalDate> = completed
 
     override fun recordCompleted(dailySetId: String, on: LocalDate, items: Map<String, ItemProgress>) {
-        write(completed + (dailySetId to on), inProgress = null, this.items + items)
+        write(completed + (dailySetId to on), inProgress = null, this.items + items, reviewOnly)
+    }
+
+    override fun reviewOnlyDays(): Set<LocalDate> = reviewOnly
+
+    override fun recordReviewOnlyCompleted(on: LocalDate, items: Map<String, ItemProgress>) {
+        write(completed, inProgress = null, this.items + items, reviewOnly + on)
     }
 
     override fun dailySetInProgress(): DailySetInProgress? = inProgress
 
     override fun saveInProgress(state: DailySetInProgress, items: Map<String, ItemProgress>) {
-        write(completed, inProgress = state, this.items + items)
+        write(completed, inProgress = state, this.items + items, reviewOnly)
     }
 
     override fun itemProgress(): Map<String, ItemProgress> = items
@@ -76,6 +86,7 @@ class FileLearnerProgress(private val file: File) : LearnerProgress {
             json.decodeFromString<StoredProgress>(file.readText()).also { stored ->
                 stored.completed.values.forEach(LocalDate::parse)
                 stored.items.values.forEach { it.toItemProgress() }
+                stored.reviewOnlyDays.forEach(LocalDate::parse)
             }
         } catch (e: Exception) {
             runCatching {
@@ -89,11 +100,13 @@ class FileLearnerProgress(private val file: File) : LearnerProgress {
         completed: Map<String, LocalDate>,
         inProgress: DailySetInProgress?,
         items: Map<String, ItemProgress>,
+        reviewOnly: Set<LocalDate>,
     ) {
         val stored = StoredProgress(
             completed = completed.mapValues { it.value.toString() },
             inProgress = inProgress,
             items = items.mapValues { StoredItem(it.value) },
+            reviewOnlyDays = reviewOnly.sorted().map { it.toString() },
         )
         val temporary = File(file.path + ".tmp")
         file.absoluteFile.parentFile?.mkdirs()
@@ -106,5 +119,6 @@ class FileLearnerProgress(private val file: File) : LearnerProgress {
         this.completed = completed
         this.inProgress = inProgress
         this.items = items
+        this.reviewOnly = reviewOnly
     }
 }

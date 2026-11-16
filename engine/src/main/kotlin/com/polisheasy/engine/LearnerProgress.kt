@@ -6,6 +6,7 @@ import kotlinx.serialization.Serializable
 /** A Daily Set the Learner has started and not finished, by stable ids only. */
 @Serializable
 data class DailySetInProgress(
+    /** The Daily Set's id, or [REVIEW_ONLY_ID] for a Review-only Daily Set, which is all [review]. */
     val dailySetId: String,
     /** Ids of Exercises still to be answered correctly; the head is the one being shown. */
     val remaining: List<String>,
@@ -31,6 +32,15 @@ interface LearnerProgress {
      */
     fun recordCompleted(dailySetId: String, on: LocalDate, items: Map<String, ItemProgress> = emptyMap())
 
+    /** The calendar days on which a Review-only Daily Set was completed. */
+    fun reviewOnlyDays(): Set<LocalDate>
+
+    /**
+     * Records that a Review-only Daily Set was completed [on] this day and forgets the Daily Set in
+     * progress, as one change. [items] are the Items the last answer changed, stored in the same change.
+     */
+    fun recordReviewOnlyCompleted(on: LocalDate, items: Map<String, ItemProgress> = emptyMap())
+
     fun dailySetInProgress(): DailySetInProgress?
 
     /** Saves where the Learner is, together with the [items] the answer changed, as one change. */
@@ -43,6 +53,7 @@ interface LearnerProgress {
 /** Progress that is lost when the process ends. For tests. */
 class InMemoryLearnerProgress : LearnerProgress {
     private val completed = mutableMapOf<String, LocalDate>()
+    private val reviewOnly = mutableSetOf<LocalDate>()
     private var inProgress: DailySetInProgress? = null
     private val items = mutableMapOf<String, ItemProgress>()
 
@@ -50,6 +61,14 @@ class InMemoryLearnerProgress : LearnerProgress {
 
     override fun recordCompleted(dailySetId: String, on: LocalDate, items: Map<String, ItemProgress>) {
         completed[dailySetId] = on
+        inProgress = null
+        this.items += items
+    }
+
+    override fun reviewOnlyDays(): Set<LocalDate> = reviewOnly.toSet()
+
+    override fun recordReviewOnlyCompleted(on: LocalDate, items: Map<String, ItemProgress>) {
+        reviewOnly += on
         inProgress = null
         this.items += items
     }

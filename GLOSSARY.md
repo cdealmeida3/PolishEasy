@@ -40,7 +40,7 @@ The part of a Daily Set chosen per Learner from Items they previously got wrong 
 _Avoid_: Practice, revision, recap
 
 **Review-only Daily Set**:
-A Daily Set made entirely of Review, offered once per day when the Learner has completed every Daily Set on the Path released so far.
+A Daily Set made entirely of Review, offered once per day when the Learner has completed every Daily Set on the Path released so far. It has about 20 Exercises: Items that are due first, then those answered longest ago. It is not on the Path.
 
 **Tip**:
 A short explanation of new grammar or words shown before the Exercises that rely on it.

@@ -35,7 +35,13 @@ sealed interface Screen {
         val feedback: Feedback? = null,
     ) : Screen
 
-    data class Summary(val correctAnswers: Int, val exercises: Int, val itemsLearned: List<ItemView>) : Screen
+    data class Summary(
+        val correctAnswers: Int,
+        val exercises: Int,
+        val itemsLearned: List<ItemView>,
+        /** Whether it was a Review-only Daily Set. */
+        val reviewOnly: Boolean,
+    ) : Screen
 }
 
 class CourseViewModel(application: Application) : AndroidViewModel(application) {
@@ -78,7 +84,7 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
         screen = when (step) {
             is Step.ShowTip -> Screen.Tip(step.tip, step.progress)
             is Step.ShowExercise -> Screen.Player(step.exercise, step.progress, shown = ++exercisesShown, review = step.review)
-            is Step.ShowSummary -> Screen.Summary(step.correctAnswers, step.exercises, step.itemsLearned)
+            is Step.ShowSummary -> Screen.Summary(step.correctAnswers, step.exercises, step.itemsLearned, step.reviewOnly)
         }
     }
 }
