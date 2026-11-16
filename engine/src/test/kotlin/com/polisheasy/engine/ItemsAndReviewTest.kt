@@ -294,6 +294,33 @@ class ItemsAndReviewTest {
     }
 
     @Test
+    fun `a listening Exercise of either type is chosen for Review and reschedules its Item, like any other Exercise`() {
+        val learner = ItemLearner(
+            courseOf(
+                abc,
+                listOf(clip("tak"), clip("nie")),
+                day("d1", listenChoose("d1-e1", "tak", "a"), listenType("d1-e2", "nie", "b")),
+                day("d2", choose("d2-e1", "two", "c")),
+                day("d3", choose("d3-e1", "three", "d")),
+            ),
+        )
+        learner.playDay(march(2))
+        assertEquals(boxOne(march(2)), learner.progress.scheduleOf("a"))
+        assertEquals(boxOne(march(2)), learner.progress.scheduleOf("b"))
+
+        val secondDay = learner.playDay(march(3), wrongFirst = setOf("audio/tak.ogg"))
+
+        assertEquals(listOf("audio/tak.ogg", "audio/nie.ogg", "audio/tak.ogg"), reviewed(secondDay))
+        assertEquals(boxOne(march(3)), learner.progress.scheduleOf("a"))
+        assertEquals(ItemSchedule(box = 2, due = march(5), lastAnswered = march(3)), learner.progress.scheduleOf("b"))
+
+        val thirdDay = learner.playDay(march(4))
+
+        assertEquals(listOf("audio/tak.ogg", "two"), reviewed(thirdDay))
+        assertEquals(ItemSchedule(box = 2, due = march(6), lastAnswered = march(4)), learner.progress.scheduleOf("a"))
+    }
+
+    @Test
     fun `Items of a Daily Set completed before Items were tracked are due the day after it was completed`() {
         val learner = ItemLearner(
             courseOf(

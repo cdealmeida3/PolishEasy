@@ -307,6 +307,148 @@ class LoadingContentTest {
         assertTrue("e1" in failure.message.orEmpty(), "Message was: ${failure.message}")
     }
 
+    @Test
+    fun `a listen-and-choose Exercise with blank text, no distractors or a blank distractor is rejected`() {
+        listOf("", "   ", "?!").forEach { blank ->
+            assertListeningRejected(listenChooseDay(blank, listOf("sześć")), "Text \"$blank\"")
+            assertListeningRejected(listenChooseDay("cześć", listOf("sześć", blank)), "Distractor \"$blank\"")
+        }
+        assertListeningRejected(listenChooseDay("cześć", emptyList()))
+    }
+
+    @Test
+    fun `a listen-and-choose Exercise with two options the same apart from capitals and punctuation is rejected`() {
+        assertListeningRejected(listenChooseDay("cześć", listOf("sześć", "Cześć!")))
+        assertListeningRejected(listenChooseDay("cześć", listOf("sześć", "część", " SZEŚĆ ")))
+    }
+
+    @Test
+    fun `a listen-and-choose Exercise whose distractor differs from the text only by an accent loads`() {
+        val course = FixtureCourse.loadWithDayOne(listenChooseDay("proszę", listOf("prosze", "prószę")), clipsFile("proszę"))
+
+        assertEquals(
+            ListenChoose(id = "a1-u01-d01-e01", text = "proszę", distractors = listOf("prosze", "prószę")),
+            course.path.first().exercises.single(),
+        )
+    }
+
+    @Test
+    fun `a listen-and-type Exercise with no Accepted Answers or a blank one is rejected`() {
+        assertListeningRejected(listenTypeDay())
+        listOf("", "   ", "?!").forEach { blank ->
+            assertListeningRejected(listenTypeDay("dziękuję", blank), "Accepted Answer \"$blank\"")
+            assertListeningRejected(listenTypeDay(blank), "Only Accepted Answer \"$blank\"")
+        }
+    }
+
+    @Test
+    fun `a listening Exercise whose spoken text has no Clip is rejected, naming the Daily Set, the Exercise and the text`() {
+        listOf(
+            // The Clip of a distractor does not count, nor that of a second Accepted Answer.
+            listenChooseDay("cześć", listOf("sześć")) to clipsFile("sześć"),
+            listenTypeDay("cześć", "czesc") to clipsFile("czesc"),
+            // A course that lists no audio has no Clips.
+            listenChooseDay("cześć", listOf("sześć")) to null,
+            listenTypeDay("cześć") to null,
+        ).forEach { (day, clips) ->
+            val failure = assertFailsWith<IllegalArgumentException> { FixtureCourse.loadWithDayOne(day, clips) }
+
+            assertEquals(
+                "Daily Set a1-u01-d01: Exercise a1-u01-d01-e01 has no Clip for \"cześć\"",
+                failure.message,
+            )
+        }
+    }
+
+    @Test
+    fun `two Clips with the same id are rejected`() {
+        val failure = assertFailsWith<IllegalArgumentException> {
+            FixtureCourse.load("""{ "clips": [ { "id": "tak", "text": "tak" }, { "id": "tak", "text": "nie" } ] }""")
+        }
+
+        assertTrue("tak" in failure.message.orEmpty(), "Message was: ${failure.message}")
+    }
+
+    @Test
+    fun `a Clip id that is not lower-case letters, digits and single hyphens is rejected`() {
+        listOf("Dzien", "a b", "a/b", "a.ogg", "-a", "a-", "a--b", "", "dzień").forEach { id ->
+            val failure = assertFailsWith<IllegalArgumentException>("Clip id \"$id\"") {
+                FixtureCourse.load("""{ "clips": [ { "id": "$id", "text": "tak" } ] }""")
+            }
+
+            assertTrue("\"$id\"" in failure.message.orEmpty(), "Message was: ${failure.message}")
+        }
+    }
+
+    @Test
+    fun `a Clip with blank text is rejected`() {
+        listOf("", "  ").forEach { blank ->
+            val failure = assertFailsWith<IllegalArgumentException> {
+                FixtureCourse.load("""{ "clips": [ { "id": "tak-2", "text": "$blank" } ] }""")
+            }
+
+            assertTrue("tak-2" in failure.message.orEmpty(), "Message was: ${failure.message}")
+        }
+    }
+
+    @Test
+    fun `two Clips for the same text apart from capitals and spacing are rejected`() {
+        val failure = assertFailsWith<IllegalArgumentException> {
+            FixtureCourse.load(
+                """{ "clips": [ { "id": "one", "text": "dzień dobry" }, { "id": "two", "text": " Dzień  Dobry" } ] }""",
+            )
+        }
+
+        assertTrue("one" in failure.message.orEmpty() && "two" in failure.message.orEmpty(), "Message was: ${failure.message}")
+    }
+
+    @Test
+    fun `two Clips whose texts differ only by punctuation both load`() {
+        val course = FixtureCourse.load(clipsFile("tak.", "tak?"))
+
+        assertEquals(ClipView("audio/c1.ogg"), course.clipFor("tak."))
+        assertEquals(ClipView("audio/c2.ogg"), course.clipFor("tak?"))
+        assertEquals(null, course.clipFor("tak"))
+    }
+
+    @Test
+    fun `a course that lists audio loads with its Clips, each one's file beside the manifest`() {
+        val course = FixtureCourse.load(clipsFile("cześć", "dzień dobry"))
+
+        assertEquals(listOf(Clip("c1", "cześć"), Clip("c2", "dzień dobry")), course.clips)
+        assertEquals(ClipView("audio/c1.ogg"), course.clipFor("cześć"))
+        assertEquals(ClipView("audio/c2.ogg"), course.clipFor("dzień dobry"))
+    }
+
+    @Test
+    fun `a Clip manifest at the content root has its files there too`() {
+        val files = mapOf(
+            "course.json" to """
+                { "audio": "clips.json", "levels": [ { "id": "a1", "title": { "en": "A1" }, "units": [] } ] }
+            """,
+            "clips.json" to clipsFile("tak"),
+        )
+
+        assertEquals(ClipView("c1.ogg"), loadCourse(files::getValue).clipFor("tak"))
+    }
+
+    @Test
+    fun `a course that lists no audio has no Clips`() {
+        val course = FixtureCourse.load()
+
+        assertEquals(emptyList(), course.clips)
+        assertEquals(null, course.clipFor("cześć"))
+    }
+
+    private fun assertListeningRejected(day: String, case: String? = null) {
+        val failure = assertFailsWith<IllegalArgumentException>(case) {
+            FixtureCourse.loadWithDayOne(day, clipsFile("cześć", "dziękuję"))
+        }
+
+        assertNamesTheDailySet(failure)
+        assertTrue("a1-u01-d01-e01" in failure.message.orEmpty(), "Message was: ${failure.message}")
+    }
+
     /** A course whose `course.json` lists these Item files and Daily Sets. */
     private fun loadWithItems(itemFiles: List<String>, vararg days: String): Course {
         val itemPaths = itemFiles.indices.map { "items-$it.json" }

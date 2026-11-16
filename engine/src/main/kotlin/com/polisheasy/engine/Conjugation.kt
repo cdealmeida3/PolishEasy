@@ -31,3 +31,7 @@ internal fun gapOf(sentence: String): Pair<String, String>? {
     val run = underscores.findAll(sentence).singleOrNull()?.takeIf { it.value == GAP } ?: return null
     return sentence.substring(0, run.range.first) to sentence.substring(run.range.last + 1)
 }
+
+/** [sentence] with [form] in its gap, or unchanged if it does not have exactly one gap. */
+internal fun filled(sentence: String, form: String): String =
+    gapOf(sentence)?.let { (before, after) -> before + form + after } ?: sentence

@@ -6,7 +6,14 @@ import kotlinx.serialization.Serializable
 /** Text keyed by Base Language code, for example `{"en": "hi"}`. */
 typealias Localized = Map<String, String>
 
-data class Course(val levels: List<Level>, val items: List<Item> = emptyList()) {
+data class Course(
+    val levels: List<Level>,
+    val items: List<Item> = emptyList(),
+    /** Every Clip packaged with the course. */
+    val clips: List<Clip> = emptyList(),
+    /** Where the Clips' files are, relative to the content root: the directory of the file that lists them. */
+    val clipDir: String = "audio",
+) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }
 
@@ -15,6 +22,13 @@ data class Course(val levels: List<Level>, val items: List<Item> = emptyList()) 
 
     /** Every Item by id. */
     val itemsById: Map<String, Item> = items.associateBy { it.id }
+
+    private val clipsByText: Map<String, Clip> = clips.associateBy { audioKey(it.text) }
+
+    /** The Clip that says [text], whatever its capitals and spacing, or null if there is none. */
+    fun clipFor(text: String): ClipView? = clipsByText[audioKey(text)]?.let { clip ->
+        ClipView(if (clipDir.isEmpty()) "${clip.id}.ogg" else "$clipDir/${clip.id}.ogg")
+    }
 }
 
 /** One word, phrase or verb form the Learner can know or not know. */
@@ -109,6 +123,28 @@ data class Conjugation(
     /** The whole sentence in each Base Language. Required with [sentence]. */
     val sentenceMeaning: Localized? = null,
     /** Every form treated as correct. The first is shown when the Learner is wrong. */
+    val acceptedAnswers: List<String>,
+    override val items: List<String> = emptyList(),
+) : Exercise
+
+/** The Learner hears [text] and picks it from among the [distractors]. */
+@Serializable
+@SerialName("listen_choose")
+data class ListenChoose(
+    override val id: String,
+    /** The Polish that is spoken, and the one right option. */
+    val text: String,
+    /** The wrong options, in Polish. */
+    val distractors: List<String>,
+    override val items: List<String> = emptyList(),
+) : Exercise
+
+/** The Learner hears the first Accepted Answer and types it. */
+@Serializable
+@SerialName("listen_type")
+data class ListenType(
+    override val id: String,
+    /** Every spelling treated as correct. The first is what is spoken, and is shown when the Learner is wrong. */
     val acceptedAnswers: List<String>,
     override val items: List<String> = emptyList(),
 ) : Exercise

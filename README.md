@@ -27,4 +27,4 @@ The APK is written to `app/build/outputs/apk/debug/app-debug.apk`.
 
 builds the minified release APK and App Bundle under `app/build/outputs/`. They are unsigned unless these four environment variables are set: `RELEASE_KEYSTORE_FILE` (a path to the keystore), `RELEASE_KEYSTORE_PASSWORD`, `RELEASE_KEY_ALIAS` and `RELEASE_KEY_PASSWORD`.
 
-See `GLOSSARY.md` for the project's vocabulary and `docs/adr/` for recorded decisions.
+See `GLOSSARY.md` for the project's vocabulary, `docs/adr/` for recorded decisions and [docs/audio.md](docs/audio.md) for how the spoken Polish is made and packaged.

@@ -32,10 +32,14 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
+import androidx.compose.material3.FilledIconButton
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.LinearProgressIndicator
@@ -44,11 +48,14 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
@@ -56,11 +63,14 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.LifecycleResumeEffect
+import androidx.lifecycle.compose.LifecycleStartEffect
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.polisheasy.app.ClipPlayer
 import com.polisheasy.app.CourseViewModel
 import com.polisheasy.app.R
 import com.polisheasy.app.Screen
 import com.polisheasy.engine.Answer
+import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.ConjugationTableView
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
@@ -75,6 +85,12 @@ import java.time.format.FormatStyle
 
 @Composable
 fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
+    val context = LocalContext.current
+    val player = remember { ClipPlayer(context) }
+    DisposableEffect(Unit) { onDispose { player.release() } }
+    // The app is silent once it leaves the screen.
+    LifecycleStartEffect(Unit) { onStopOrDispose { player.stop() } }
+    val onPlay: (ClipView, Boolean) -> Unit = { clip, slow -> player.play(clip.path, slow) }
     Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         when (val screen = viewModel.screen) {
             is Screen.Home -> {
@@ -97,6 +113,8 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                 BackHandler(onBack = viewModel::backToHome)
                 // Keyed on each showing, so an Exercise that returns starts fresh, typed text included.
                 key(screen.shown) {
+                    // A Clip stops when the Learner moves on.
+                    DisposableEffect(Unit) { onDispose { player.stop() } }
                     PlayerScreen(
                         screen.exercise,
                         screen.progress,
@@ -104,6 +122,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                         screen.feedback,
                         onAnswer = viewModel::answer,
                         onContinue = viewModel::continueToNext,
+                        onPlay = onPlay,
                     )
                 }
             }
@@ -272,13 +291,16 @@ private fun PlayerScreen(
     feedback: Feedback?,
     onAnswer: (Answer) -> Unit,
     onContinue: () -> Unit,
+    onPlay: (ClipView, Boolean) -> Unit,
 ) {
     // Held here so the Polish key row and the text field share it.
     var typed by rememberSaveable(stateSaver = TextFieldValue.Saver) { mutableStateOf(TextFieldValue("")) }
     DailySetColumn(
         progress,
         bottomBar = {
-            if ((exercise is ExerciseView.TypeAnswer || exercise is ExerciseView.Conjugation) && feedback == null) {
+            val typing = exercise is ExerciseView.TypeAnswer || exercise is ExerciseView.Conjugation ||
+                exercise is ExerciseView.ListenType
+            if (typing && feedback == null) {
                 PolishKeyRow(onKey = { letter -> typed = typed.inserting(letter) })
             }
         },
@@ -292,7 +314,8 @@ private fun PlayerScreen(
             Spacer(Modifier.height(8.dp))
         }
         when (exercise) {
-            is ExerciseView.ChooseTranslation -> ChooseTranslation(exercise, enabled = feedback == null, onAnswer)
+            is ExerciseView.ChooseTranslation ->
+                ChooseTranslation(exercise, enabled = feedback == null, onAnswer, onPlay)
             is ExerciseView.TypeAnswer -> TypeAnswerExercise(
                 exercise,
                 typed,
@@ -308,6 +331,15 @@ private fun PlayerScreen(
                 enabled = feedback == null,
                 onAnswer,
             )
+            is ExerciseView.ListenChoose -> ListenChooseExercise(exercise, enabled = feedback == null, onAnswer, onPlay)
+            is ExerciseView.ListenType -> ListenTypeExercise(
+                exercise,
+                typed,
+                onTypedChange = { typed = it },
+                enabled = feedback == null,
+                onAnswer,
+                onPlay,
+            )
         }
         Spacer(Modifier.height(24.dp))
         if (feedback != null) {
@@ -322,6 +354,7 @@ private fun PlayerScreen(
                 style = MaterialTheme.typography.titleMedium,
                 textAlign = TextAlign.Center,
             )
+            feedback.audio?.let { clip -> SpeakerButton(clip, onPlay) }
             Spacer(Modifier.height(16.dp))
             Button(onClick = onContinue, modifier = Modifier.fillMaxWidth()) {
                 Text(stringResource(R.string.action_continue))
@@ -335,12 +368,20 @@ private fun ChooseTranslation(
     exercise: ExerciseView.ChooseTranslation,
     enabled: Boolean,
     onAnswer: (Answer) -> Unit,
+    onPlay: (ClipView, Boolean) -> Unit,
 ) {
     Text(stringResource(R.string.choose_translation_instruction), style = MaterialTheme.typography.labelLarge)
     Spacer(Modifier.height(16.dp))
     Text(exercise.prompt, style = MaterialTheme.typography.headlineMedium, textAlign = TextAlign.Center)
+    exercise.promptAudio?.let { clip -> SpeakerButton(clip, onPlay) }
     Spacer(Modifier.height(32.dp))
-    exercise.options.forEachIndexed { index, option ->
+    OptionButtons(exercise.options, enabled, onAnswer)
+}
+
+/** One button per option, answering with the option's position. */
+@Composable
+private fun OptionButtons(options: List<String>, enabled: Boolean, onAnswer: (Answer) -> Unit) {
+    options.forEachIndexed { index, option ->
         OutlinedButton(
             onClick = { onAnswer(Answer.Option(index)) },
             enabled = enabled,
@@ -352,6 +393,70 @@ private fun ChooseTranslation(
                 .padding(vertical = 4.dp),
         ) { Text(option) }
     }
+}
+
+/** Plays [clip], the Polish shown beside it, at normal speed. */
+@Composable
+private fun SpeakerButton(clip: ClipView, onPlay: (ClipView, Boolean) -> Unit) {
+    IconButton(onClick = { onPlay(clip, false) }) {
+        Icon(
+            painterResource(R.drawable.ic_volume_up),
+            contentDescription = stringResource(R.string.audio_play),
+            tint = MaterialTheme.colorScheme.primary,
+        )
+    }
+}
+
+/**
+ * The controls of a listening Exercise: [clip] plays by itself when the Exercise opens, the big
+ * speaker plays it again and "Slow" plays it slowly. They stay usable after the answer.
+ */
+@Composable
+private fun ListenControls(clip: ClipView, enabled: Boolean, onPlay: (ClipView, Boolean) -> Unit) {
+    // Once per showing: not again when the feedback appears, nor when an answered Exercise is rebuilt.
+    LaunchedEffect(Unit) { if (enabled) onPlay(clip, false) }
+
+    FilledIconButton(onClick = { onPlay(clip, false) }, modifier = Modifier.size(72.dp)) {
+        Icon(
+            painterResource(R.drawable.ic_volume_up),
+            contentDescription = stringResource(R.string.audio_play_again),
+            modifier = Modifier.size(36.dp),
+        )
+    }
+    Spacer(Modifier.height(8.dp))
+    OutlinedButton(onClick = { onPlay(clip, true) }) {
+        Text(stringResource(R.string.audio_slow))
+    }
+}
+
+@Composable
+private fun ListenChooseExercise(
+    exercise: ExerciseView.ListenChoose,
+    enabled: Boolean,
+    onAnswer: (Answer) -> Unit,
+    onPlay: (ClipView, Boolean) -> Unit,
+) {
+    Text(stringResource(R.string.listen_choose_instruction), style = MaterialTheme.typography.labelLarge)
+    Spacer(Modifier.height(16.dp))
+    ListenControls(exercise.audio, enabled, onPlay)
+    Spacer(Modifier.height(32.dp))
+    OptionButtons(exercise.options, enabled, onAnswer)
+}
+
+@Composable
+private fun ListenTypeExercise(
+    exercise: ExerciseView.ListenType,
+    typed: TextFieldValue,
+    onTypedChange: (TextFieldValue) -> Unit,
+    enabled: Boolean,
+    onAnswer: (Answer) -> Unit,
+    onPlay: (ClipView, Boolean) -> Unit,
+) {
+    Text(stringResource(R.string.listen_type_instruction), style = MaterialTheme.typography.labelLarge)
+    Spacer(Modifier.height(16.dp))
+    ListenControls(exercise.audio, enabled, onPlay)
+    Spacer(Modifier.height(32.dp))
+    PolishAnswerField(typed, onTypedChange, enabled, onAnswer)
 }
 
 @Composable
