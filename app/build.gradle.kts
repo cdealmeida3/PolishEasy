@@ -104,3 +104,41 @@ tasks.withType<Test>().matching { it.name == "testDebugUnitTest" }.configureEach
 
 // No APK or bundle is built from broken Authored Content.
 tasks.named("preBuild") { dependsOn(":engine:checkContent") }
+
+// docs/design.md: colours, font sizes, weights and families live in `ui/theme` and nowhere else.
+// This fails the build when a screen or a component sets one of its own.
+val checkDesignTokens by tasks.registering {
+    group = "verification"
+    description = "Fails on a raw colour or font value outside ui/theme."
+    val sources = fileTree("src/main/kotlin") {
+        include("**/*.kt")
+        exclude("**/ui/theme/**")
+    }
+    val root = projectDir
+    val report = layout.buildDirectory.file("design-tokens/checked.txt")
+    inputs.files(sources)
+    outputs.file(report)
+    doLast {
+        val rules = listOf(
+            Regex("""\bColor\s*\(\s*(0x|\d)""") to "a colour value",
+            Regex("""\bColor\.(?!Transparent\b|Unspecified\b)[A-Z]\w*""") to "a named colour",
+            Regex("""\d\s*\.\s*(sp|em)\b""") to "a font size",
+            Regex("""\bfont(Size|Weight|Family)\s*=""") to "a font size, weight or family",
+            Regex("""\bFont(Weight|Family)\b""") to "a font weight or family",
+        )
+        val found = sources.files.sorted().flatMap { file ->
+            file.readLines().mapIndexedNotNull { index, line ->
+                val code = line.substringBefore("//")
+                if (code.trimStart().startsWith("import ")) return@mapIndexedNotNull null
+                rules.firstOrNull { (rule, _) -> rule.containsMatchIn(code) }?.let { (_, what) ->
+                    "${file.relativeTo(root)}:${index + 1}: $what. Name a role or a style from ui/theme instead."
+                }
+            }
+        }
+        if (found.isNotEmpty()) {
+            throw GradleException("Design values outside ui/theme (docs/design.md):\n" + found.joinToString("\n"))
+        }
+        report.get().asFile.apply { parentFile.mkdirs() }.writeText("${sources.files.size} files checked\n")
+    }
+}
+tasks.named("preBuild") { dependsOn(checkDesignTokens) }

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nunito's licence asks that its text travels with the font, so the release build must not shrink it away. -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@raw/nunito_ofl" />

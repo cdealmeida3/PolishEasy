@@ -29,7 +29,9 @@ writes one PNG per screen to `app/build/screenshots/`: the fixture course in the
 
 ## Colour
 
-Every value lives in `ui/theme` and nowhere else. A screen file names a role, never a hex value. All Material roles are set, so none falls back to Material's purple baseline.
+Every value lives in `ui/theme` and nowhere else. A screen file names a role, never a hex value. All Material roles are set, so none falls back to Material's purple baseline. The build fails on a colour or a font value anywhere else (`./gradlew :app:checkDesignTokens`, see `CODING_STANDARDS.md`).
+
+The one copy outside `ui/theme` is `window_background` in `res/values/colors.xml` and `res/values-night/colors.xml`: the `background` value, which Android shows for a moment before the first screen is drawn.
 
 ### Material roles
 
@@ -58,9 +60,21 @@ Every value lives in `ui/theme` and nowhere else. A screen file names a role, ne
 | `outlineVariant` | `#DEC8BC` | `#4A3B35` | Card borders, dividers |
 | `error`, `onError` | `#BA1A1A`, `#FFFFFF` | `#FFB4AB`, `#690005` | Something broke. Never a wrong answer |
 
+The roles no screen names yet are set too, so that a Material component which reaches for one stays in the palette:
+
+| Role | Light | Dark |
+| --- | --- | --- |
+| `tertiaryContainer`, `onTertiaryContainer` | `#FFDBCB`, `#351000` | `#7A2E00`, `#FFDBCB` |
+| `errorContainer`, `onErrorContainer` | `#FFDAD6`, `#410002` | `#93000A`, `#FFDAD6` |
+| `inverseSurface`, `inverseOnSurface` | `#382E2A`, `#FFEDE5` | `#F2E0D8`, `#382E2A` |
+| `inversePrimary` | `#FFB3B5` | `#C8102E` |
+| `surfaceBright`, `surfaceDim` | `#FFF8F3`, `#E8D7CC` | `#42362F`, `#1A1311` |
+| `surfaceTint` | same as `primary` | same as `primary` |
+| `scrim` | `#000000` | `#000000` |
+
 ### PolishEasy roles
 
-Material has no role for these, so the theme adds them (a `PolishEasyColors` value read through a composition local, next to `MaterialTheme.colorScheme`).
+Material has no role for these, so the theme adds them: a `PolishEasyColors` value read as `PolishEasyTheme.colors`, next to `MaterialTheme.colorScheme`.
 
 | Role | Light | Dark | Used for |
 | --- | --- | --- | --- |
@@ -69,10 +83,12 @@ Material has no role for these, so the theme adds them (a `PolishEasyColors` val
 | `brandEdge` | `#9A0A22` | `#8E0B22` | The main button's bottom edge |
 | `success` | `#17733A` | `#6FDB8C` | "Correct": icon, heading, the right option's border |
 | `onSuccess` | `#FFFFFF` | `#00390F` | |
+| `successEdge` | `#0E5428` | `#3FA65C` | The bottom edge of Continue after a right answer |
 | `successContainer` | `#D3F2DA` | `#0F3D1F` | The feedback panel and the right option's fill |
 | `onSuccessContainer` | `#0A3A1B` | `#BFF5CB` | |
 | `caution` | `#8A5200` | `#FFBA4A` | "Not quite" and the accent warning |
 | `onCaution` | `#FFFFFF` | `#3A2200` | |
+| `cautionEdge` | `#643B00` | `#C98A1E` | The bottom edge of Continue after a wrong answer |
 | `cautionContainer` | `#FFE3B3` | `#4A2C00` | The feedback panel and the wrong option's fill |
 | `onCautionContainer` | `#3A2200` | `#FFE3B3` | |
 | `streak` | `#E2570B` | `#FF8A3D` | The flame and the completed-day dots. Same value as `tertiary` |
@@ -80,6 +96,7 @@ Material has no role for these, so the theme adds them (a `PolishEasyColors` val
 Rules:
 
 - **The main button is `brand` with `onBrand` in both themes.** In the dark theme `primary` is a light pink so that crimson text stays readable on a dark surface; it is for text and icons, never for a button's fill.
+- **Inside the feedback panel the main button takes the panel's colour**: `success` with `onSuccess` after a right answer, `caution` with `onCaution` after a wrong one or an accent warning. A crimson button there would be red on "wrong", and in the dark theme `brand` is under 3 to 1 against either container.
 - **A wrong answer is `caution` (amber), not red and not `error`.** A right answer is `success` (green).
 - **An accent warning is `caution` with the tick icon**: accepted, with something to notice.
 - Text and icons that carry meaning have a contrast of at least 4.5 to 1 against what they sit on, and shapes that carry meaning at least 3 to 1. The pairs above were checked against that. In the dark theme the `brand` fill is 3.5 to 1 against the background, so a main button there never sits on a container colour.
@@ -89,11 +106,13 @@ Rules:
 
 ## Type
 
-Two families. **Nunito** (SIL Open Font Licence, covers every Polish letter) is bundled in `res/font` with its licence text, so the app stays offline. It is used for headings, Polish prompts, buttons and numbers. Body text uses the phone's own sans-serif.
+Two families. **Nunito** (SIL Open Font Licence, covers every Polish letter) is bundled in `res/font` in the three weights the table uses, with its licence text in `res/raw/nunito_ofl.txt`, so the app stays offline. It is used for headings, Polish prompts, buttons and numbers. Body text uses the phone's own sans-serif.
 
 | Style | Family | Weight | Size / line (sp) | Used for |
 | --- | --- | --- | --- | --- |
+| `displayLarge` | Nunito | ExtraBold 800 | 57 / 64 | Not used yet |
 | `displayMedium` | Nunito | ExtraBold 800 | 45 / 52 | The Streak number, the score on the Summary |
+| `displaySmall` | Nunito | ExtraBold 800 | 36 / 44 | Not used yet |
 | `headlineLarge` | Nunito | ExtraBold 800 | 32 / 40 | A Polish prompt of up to about 20 letters |
 | `headlineMedium` | Nunito | Bold 700 | 26 / 34 | A longer Polish prompt, the Summary's title |
 | `headlineSmall` | Nunito | Bold 700 | 22 / 28 | Screen titles, a Tip's title, a prompt in the Base Language |
@@ -102,6 +121,7 @@ Two families. **Nunito** (SIL Open Font Licence, covers every Polish letter) is 
 | `titleSmall` | Nunito | Bold 700 | 14 / 20 | Unit headers, small headings |
 | `bodyLarge` | System | Regular 400 | 16 / 24 | A Tip's body, the correct answer in feedback |
 | `bodyMedium` | System | Regular 400 | 14 / 20 | Secondary text, meanings under Polish words |
+| `bodySmall` | System | Regular 400 | 12 / 16 | Not used yet |
 | `labelLarge` | Nunito | Bold 700 | 16 / 24 | Buttons |
 | `labelMedium` | System | Medium 500 | 14 / 20 | The instruction above a prompt, in `onSurfaceVariant` |
 | `labelSmall` | System | Medium 500 | 12 / 16 | Navigation labels, "Locked", the version |
@@ -138,11 +158,11 @@ A 4 dp grid. Use only these steps: 4, 8, 12, 16, 24, 32, 48.
 
 ## Components
 
-Shared components live in `ui/components`. A screen builds from these and adds no styling of its own.
+Shared components live in `ui/components`, one screen per file in `ui/screens`. A screen builds from these and adds no styling of its own. The space steps are `Space`, the shared sizes `Size`, the corners `Corner` and the bottom edge `Edge`, all in `ui/theme`.
 
-- **`PrimaryButton`**: the one main action. Full width, 56 high, `brand` fill, `labelLarge` in `onBrand`, the bottom edge. Disabled: `surfaceContainerHighest` with `onSurfaceVariant` text.
+- **`PrimaryButton`**: the one main action. Full width, 56 high, `brand` fill, `labelLarge` in `onBrand`, the bottom edge. Disabled: `surfaceContainerHighest` with `onSurfaceVariant` text. Its `tone` is set only by the feedback panel (see Colour).
 - **`SecondaryButton`**: 56 high, `surfaceContainerLowest` fill, outlined, `primary` text. Used rarely; most screens have no second button.
-- **Text button**: `primary` text, 48 high. "Can't listen now", "Slow".
+- **`QuietButton`** (a text button): `primary` text, 48 high. "Can't listen now", "Slow".
 - **`OptionCard`**: an answer to choose. Full width, at least 56 high, text at the start in `titleMedium`, an icon slot at the end. States:
   - idle: `surfaceContainerLowest`, `outlineVariant` border
   - chosen (before Check, where there is one): `primaryContainer`, `primary` border
@@ -152,14 +172,16 @@ Shared components live in `ui/components`. A screen builds from these and adds n
   
   After an answer the right option is always marked, whichever was tapped.
 - **`WordTile`**: `secondaryContainer`, `titleMedium`, 48 high, the bottom edge. A tile that has been used leaves an empty slot in the bank, so the bank never shifts.
-- **Answer field**: outlined, `titleMedium` for what is typed, 2 dp `primary` border when focused. The Polish key row sits directly above the keyboard, with keys at least 48 high.
-- **`FeedbackPanel`**: rises from the bottom over the main button's place and holds the next one. `successContainer` with a tick and "Correct!", or `cautionContainer` with a cross and "Not quite" and the correct answer in `bodyLarge`. An accent warning is `cautionContainer` with a tick. It holds the speaker for the Polish, Continue as a `PrimaryButton`, and "Report a mistake" as a small flag icon button with that label for screen readers.
-- **`DailySetFrame`**: the layout of every Tip and Exercise. Top bar with a close button and the progress bar; content from the top, scrolling if it must; the main action pinned to the bottom. Nothing moves when feedback appears.
-- **Progress bar**: 12 high, fully rounded, `primary` on `surfaceContainerHigh`.
-- **Play button**: a 72 circle in `brand` with the speaker icon in `onBrand`, for listening Exercises. The small speaker beside Polish text is a 48 icon button in `primary`.
-- **Top bar**: Path and Settings have a `headlineSmall` title. Home has none. Inside a Daily Set it is the close button and the progress bar only.
+- **`AnswerField`** and **`PolishKeyRow`**: outlined, `titleMedium` for what is typed, 2 dp `primary` border when focused. The Polish key row sits directly above the keyboard, with keys at least 48 high.
+- **`FeedbackPanel`**: rises from the bottom over the main button's place and holds the next one. `successContainer` with a tick and "Correct!", or `cautionContainer` with a cross and "Not quite" and the correct answer in `bodyLarge`. An accent warning is `cautionContainer` with a tick. It holds the speaker for the Polish, Continue as a `PrimaryButton` in the panel's tone, and "Report a mistake" as a small flag icon button with that label for screen readers.
+- **`DailySetFrame`**: the layout of every Tip and Exercise. Top bar with a close button and the progress bar; content from the top, scrolling if it must; the main action pinned to the bottom, with the Polish key row below it. Nothing moves when feedback appears. An Exercise draws only what is above the main action: "Check" belongs to the frame's bottom, not to the Exercise.
+- **`ScreenFrame`**: the layout of a screen outside a Daily Set, with the edge spacing under Space.
+- **`Instruction`**, **`PolishPrompt`**, **`BasePrompt`**: the label above a prompt and the prompt itself, so the choice of style between a short and a long Polish prompt is made in one place.
+- **`ProgressBar`**: 12 high, fully rounded, `primary` on `surfaceContainerHigh`.
+- **`PlayButton`**: a 72 circle in `brand` with the speaker icon in `onBrand`, for listening Exercises. **`SpeakerButton`**, the small speaker beside Polish text, is a 48 icon button in `primary`.
+- **`TopBar`**: Path and Settings have a `headlineSmall` title. Home has none. Inside a Daily Set it is the close button and the progress bar only.
 - **Navigation bar**: Home, Path, Settings, with icons and labels, on `surfaceContainer`. Hidden inside a Daily Set and on the Summary.
-- **Card**: `surfaceContainerLowest`, `large` corners, 1 dp `outlineVariant` border, 16 padding, no shadow.
+- **`ContentCard`**: `surfaceContainerLowest`, `large` corners, 1 dp `outlineVariant` border, 16 padding, no shadow.
 - **Streak flame**: the flame icon in `streak` beside the number. With a Streak of zero it is `outline`, not hidden.
 - **Path node**: a 56 circle. Completed: `success` fill with a tick. Today: `brand` fill with a play icon and a ring. Locked: `surfaceContainerHighest` with a lock icon.
 

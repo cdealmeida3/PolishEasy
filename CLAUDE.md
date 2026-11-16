@@ -22,4 +22,4 @@ Read `docs/authoring.md` before writing or changing a Daily Set, and `docs/a1-pa
 
 ### Changing how the app looks
 
-Read `docs/design.md` before changing a screen or a component: it has the colours, type, shapes and motion rules, and how to get a picture of every screen.
+Read `docs/design.md` before changing a screen or a component: it has the colours, type, shapes and motion rules, and how to get a picture of every screen. Read `CODING_STANDARDS.md` for where theme values, components and screens go, and what the build checks.
