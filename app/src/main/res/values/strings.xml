@@ -48,6 +48,9 @@
     <string name="summary_more_units">You\'ve completed every Daily Set released so far. More Units are on the way.</string>
     <string name="summary_accuracy">%1$d of %2$d correct on the first try</string>
     <string name="summary_items_learned">You learned</string>
+    <string name="summary_streak_title">day Streak</string>
+    <string name="summary_streak_note_first">Your Streak has started. Come back tomorrow to keep it going.</string>
+    <string name="summary_streak_note">One more day in a row. Come back tomorrow to keep it going.</string>
     <string name="summary_back_home">Back to Home</string>
     <string name="home_path">Path</string>
     <string name="path_unit">Unit %1$d · %2$s</string>

@@ -22,6 +22,9 @@ class AnswerHaptics internal constructor(private val view: View) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) HapticFeedbackConstants.REJECT else HapticFeedbackConstants.LONG_PRESS,
     )
 
+    /** A Daily Set finished, felt once as the Summary appears. */
+    fun finished() = right()
+
     /** A word tile placed. */
     fun tick() = perform(HapticFeedbackConstants.CLOCK_TICK)
 

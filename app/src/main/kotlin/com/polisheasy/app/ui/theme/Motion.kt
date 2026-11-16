@@ -8,6 +8,8 @@ import androidx.compose.animation.ExitTransition
 import androidx.compose.animation.core.AnimationSpec
 import androidx.compose.animation.core.DurationBasedAnimationSpec
 import androidx.compose.animation.core.Easing
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.LinearOutSlowInEasing
 import androidx.compose.animation.core.keyframes
 import androidx.compose.animation.fadeIn
@@ -15,6 +17,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.snap
@@ -48,6 +51,16 @@ object Motion {
 
     /** How far an option that was not chosen fades once the Exercise is answered. */
     const val FADED_ALPHA = 0.6f
+
+    /** The Summary's score ring filling. The Streak rolls and the confetti starts when it has. */
+    const val RING_MILLIS = 800
+
+    /** The confetti falling, once. */
+    const val CONFETTI_MILLIS = 2200
+
+    /** The Streak's number rolling to the new one, and the flame's one scale. */
+    const val ROLL_MILLIS = 350
+    const val FLAME_FROM_SCALE = 1.35f
 
     /**
      * Whether Android's "remove animations" is on (the animator duration scale is 0). Then every
@@ -123,6 +136,39 @@ object Motion {
     /** One way of the play button's slow pulse. Null when animations are removed, and then it is still. */
     @Composable
     fun pulse(): DurationBasedAnimationSpec<Float>? = if (reduced()) null else tween(PULSE_MILLIS)
+
+    /** The score ring filling and its number counting up. Null when animations are removed: it shows full at once. */
+    @Composable
+    fun ring(): AnimationSpec<Float>? = if (reduced()) null else tween(RING_MILLIS, easing = FastOutSlowInEasing)
+
+    /** The old Streak number rolls up and out, the new one rolls in from below. */
+    @Composable
+    fun roll(): ContentTransform = if (reduced()) {
+        EnterTransition.None togetherWith ExitTransition.None
+    } else {
+        val slide = tween<IntOffset>(ROLL_MILLIS, easing = LinearOutSlowInEasing)
+        (slideInVertically(slide) { it } + fadeIn(tween(ROLL_MILLIS))) togetherWith
+            (slideOutVertically(slide) { -it } + fadeOut(tween(ROLL_MILLIS)))
+    }
+
+    /** The flame settling back to its size as the Streak goes up. Null when animations are removed. */
+    @Composable
+    fun flame(): AnimationSpec<Float>? = if (reduced()) {
+        null
+    } else {
+        spring(dampingRatio = Spring.DampingRatioMediumBouncy, stiffness = Spring.StiffnessMediumLow)
+    }
+
+    /**
+     * The confetti's one fall, from 0 to 1, starting when the score ring has filled. Null when
+     * animations are removed, and then there is no confetti.
+     */
+    @Composable
+    fun confetti(): AnimationSpec<Float>? = if (reduced()) {
+        null
+    } else {
+        tween(CONFETTI_MILLIS, delayMillis = RING_MILLIS, easing = LinearEasing)
+    }
 
     private val Overshoot = Easing { OvershootInterpolator(1.5f).getInterpolation(it) }
 }

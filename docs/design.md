@@ -141,7 +141,7 @@ A 4 dp grid. Use only these steps: 4, 8, 12, 16, 24, 32, 48.
 - Between an instruction and its prompt: 8. Between a prompt and its answer area: 32. Between option cards: 12. Between word tiles: 8. Inside a card: 16.
 - Anything a finger taps is at least 48 × 48, including icons.
 - Content is at most 480 wide and centred beyond that.
-- Content starts from the top. Nothing is centred vertically except the Summary's score.
+- Content starts from the top, on the Summary too. Nothing is centred vertically.
 
 ## Shape
 
@@ -190,6 +190,10 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`TopBar`**: Path and Settings have a `headlineSmall` title. Home has none. Inside a Daily Set it is the close button and the progress bar only.
 - **Navigation bar**: Home, Path, Settings, with icons and labels, on `surfaceContainer`. Hidden inside a Daily Set and on the Summary.
 - **`ContentCard`**: `surfaceContainerLowest`, `large` corners, 1 dp `outlineVariant` border, 16 padding, no shadow.
+- **`ScoreRing`**: the Summary's score. A 184 ring, 16 thick with round ends, `success` on `surfaceContainerHigh`, with the share of Exercises answered correctly on the first try inside it in `displayMedium`. The same score is written in words under it.
+- **`StreakCard`**: the Streak going up, on the Summary of the Daily Set that raised it and nowhere else. A `ContentCard` with the flame at 48 and the number in `displayMedium`, both in `streak`, then "day Streak" in `titleLarge` and a line in `bodyMedium`. A Replay never shows it.
+- **`ItemCard`**: one Item under "You learned": a `ContentCard` with the Polish in `titleMedium` and its meaning under it in `bodyMedium`.
+- **`Confetti`**: see Motion and touch. It is laid over the Summary's content, above the main button. A Replay gets none.
 - **Streak flame**: the flame icon in `streak` beside the number. With a Streak of zero it is `outline`, not hidden.
 - **Path node**: a 56 circle. Completed: `success` fill with a tick. Today: `brand` fill with a play icon and a ring. Locked: `surfaceContainerHighest` with a lock icon.
 
@@ -210,20 +214,20 @@ Motion says what just happened. It never makes the Learner wait: every tap is ac
 | The wrong option | One short side-to-side shake of 8 dp, 250 ms |
 | The play button while a Clip plays | A slow pulse, 1 to 1.06, 700 ms each way |
 | Summary | The score ring fills in 800 ms, numbers count up, then confetti falls once for about 2 seconds |
-| The Streak going up | The old number rolls up and out, the new one rolls in, and the flame scales once |
+| The Streak going up | When the score ring has filled: the old number rolls up and out, the new one rolls in from below, 350 ms, and the flame scales once from 1.35 back to 1 |
 
 Rules:
 
 - **Reduced motion.** When Android's "remove animations" is on (the animator duration scale is 0), every change is instant, there is no confetti and no shake, and the final state shows at once. One helper in `ui/theme` answers this; components ask it and screens do not.
 - Nothing loops except the play button's pulse while a Clip is playing.
-- Confetti is drawn in Compose in `brand`, `success`, `caution` and `streak`, with no library and no image. It does not cover the main button and cannot be tapped.
+- Confetti is drawn in Compose in `brand`, `success`, `caution` and `streak`, with no library and no image. It does not cover the main button and cannot be tapped. It is for a Daily Set that counts, new or Review-only, not for a Replay.
 - Durations and springs are named values in `ui/theme`, like colours.
 
 **Haptics.** Through the view's haptic feedback, so the phone's own touch setting is respected and no permission is needed.
 
 - Felt once, as the feedback panel appears. Right answer, with or without an accent warning: `CONFIRM`. Wrong answer: `REJECT`. On Android versions without those (below 11): `KEYBOARD_TAP` for right and `LONG_PRESS` for wrong.
 - Placing a word tile: `CLOCK_TICK`.
-- Finishing a Daily Set: `CONFIRM` once as the Summary appears.
+- Finishing a Daily Set: `CONFIRM` once as the Summary appears (`KEYBOARD_TAP` below Android 11).
 - Nothing else vibrates.
 
 **Sound.** Only Clips play today; the Daily Set player was built without sound effects. Any sound effect added later obeys the Sound setting and "can't listen now", exactly as Clips do.
