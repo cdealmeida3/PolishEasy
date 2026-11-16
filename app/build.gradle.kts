@@ -9,16 +9,6 @@ plugins {
 // CI numbers each build so a newer APK always installs over an older one.
 val ciRunNumber = System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull()
 
-// Release signing comes from the environment (GitHub Secrets in CI). When anything is
-// missing, release builds are left unsigned so PRs, forks and local builds still pass.
-fun env(name: String) = System.getenv(name)?.takeIf { it.isNotBlank() }
-val releaseKeystore = env("RELEASE_KEYSTORE_FILE")?.let { file(it) }?.takeIf { it.isFile }
-val releaseStorePassword = env("RELEASE_KEYSTORE_PASSWORD")
-val releaseKeyAlias = env("RELEASE_KEY_ALIAS")
-val releaseKeyPassword = env("RELEASE_KEY_PASSWORD")
-val hasReleaseSigning = releaseKeystore != null && releaseStorePassword != null &&
-    releaseKeyAlias != null && releaseKeyPassword != null
-
 android {
     namespace = "com.polisheasy.app"
     compileSdk = 36
@@ -40,13 +30,14 @@ android {
             keyAlias = "androiddebugkey"
             keyPassword = "android"
         }
-        if (hasReleaseSigning) {
-            create("release") {
-                storeFile = releaseKeystore
-                storePassword = releaseStorePassword
-                keyAlias = releaseKeyAlias
-                keyPassword = releaseKeyPassword
-            }
+        // The upload keystore is committed too, so every build publishes a signed release
+        // with no secrets to set up. Anyone who can read the repository can read this key:
+        // replace it before the repository is ever made public (docs/release.md).
+        create("release") {
+            storeFile = file("upload.keystore")
+            storePassword = "I8GJe5U8XyqVihF7ApIu"
+            keyAlias = "upload"
+            keyPassword = "I8GJe5U8XyqVihF7ApIu"
         }
     }
 
@@ -60,7 +51,7 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = if (hasReleaseSigning) signingConfigs.getByName("release") else null
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 

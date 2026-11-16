@@ -9,7 +9,7 @@ The newest builds of the app are always at the same links:
 - **[PolishEasy-debug.apk](https://github.com/cdealmeida3/PolishEasy/releases/download/latest/PolishEasy-debug.apk)**, the debug build. It installs as "PolishEasy Debug".
 - **[PolishEasy-release.apk](https://github.com/cdealmeida3/PolishEasy/releases/download/latest/PolishEasy-release.apk)**, the signed, minified release build.
 
-Every update to the default branch rebuilds them and replaces the `latest` release. The same release also holds `PolishEasy-release.aab`, the file to upload to Google Play, and `PolishEasy-release-mapping.txt` for reading crash stack traces. The release files only appear once the signing secrets are set; see [docs/release.md](docs/release.md).
+Every update to the default branch rebuilds them and replaces the `latest` release. The same release also holds `PolishEasy-release.aab`, the file to upload to Google Play, and `PolishEasy-release-mapping.txt` for reading crash stack traces. See [docs/release.md](docs/release.md).
 
 All debug builds are signed with the same debug key, so a new debug APK installs over the previous one without uninstalling. The debug build has its own application id, `com.polisheasy.app.debug`, so it can sit next to the release build (`com.polisheasy.app`) on one phone.
 
