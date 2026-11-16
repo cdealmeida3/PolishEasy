@@ -34,6 +34,7 @@ import androidx.compose.ui.unit.dp
 import com.polisheasy.app.R
 import com.polisheasy.app.ui.PolishEasyTheme
 import com.polisheasy.app.ui.theme.Motion
+import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
 import kotlinx.coroutines.delay
 import kotlin.math.PI
@@ -43,7 +44,6 @@ import kotlin.random.Random
 
 private val RingSize = 184.dp
 private val RingStroke = 16.dp
-private val FlameSize = 48.dp
 private val ConfettiSide = 10.dp
 
 /**
@@ -113,7 +113,7 @@ fun StreakCard(from: Int, to: Int, title: String, note: String, description: Str
                 contentDescription = null,
                 tint = streak,
                 modifier = Modifier
-                    .size(FlameSize)
+                    .size(Size.flame)
                     .graphicsLayer {
                         scaleX = flame.value
                         scaleY = flame.value

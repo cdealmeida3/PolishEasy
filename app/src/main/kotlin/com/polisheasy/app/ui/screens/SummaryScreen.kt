@@ -82,7 +82,7 @@ internal fun SummaryScreen(
                     StreakCard(
                         from = streakRaised.from,
                         to = streakRaised.to,
-                        title = stringResource(R.string.summary_streak_title),
+                        title = stringResource(R.string.streak_title),
                         note = stringResource(
                             if (streakRaised.to == 1) R.string.summary_streak_note_first else R.string.summary_streak_note,
                         ),

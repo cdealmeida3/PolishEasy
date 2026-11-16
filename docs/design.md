@@ -20,7 +20,7 @@ writes one PNG per screen to `app/build/screenshots/`: the fixture course in the
 ## Principles
 
 1. **The Polish is the hero.** On every Exercise the Polish being learned is the biggest, boldest thing on the screen.
-2. **One thing per screen, one main action.** The main action is a full-width button pinned to the bottom, at the same height on every screen.
+2. **One thing per screen, one main action.** The main action is a full-width button pinned to the bottom, at the same height on every screen. Home is the one exception: its main action sits inside the Today card, with what it starts.
 3. **Crimson is for the main action and for highlights.** It never means "wrong".
 4. **Never colour alone.** Right, wrong, chosen, locked and completed each have an icon or words as well as a colour.
 5. **Things respond.** A tap gives way under the finger, an answer gets a reaction, a finished Daily Set gets a celebration. Every reaction is short and none blocks the next tap.
@@ -187,17 +187,40 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`Instruction`**, **`PolishPrompt`**, **`BasePrompt`**: the label above a prompt and the prompt itself, so the choice of style between a short and a long Polish prompt is made in one place.
 - **`ProgressBar`**: 12 high, fully rounded, `primary` on `surfaceContainerHigh`.
 - **`PlayButton`**: a 72 circle in `brand` with the speaker icon in `onBrand`, for listening Exercises. **`SpeakerButton`**, the small speaker beside Polish text, is a 48 icon button in `primary`.
-- **`TopBar`**: Path and Settings have a `headlineSmall` title. Home has none. Inside a Daily Set it is the close button and the progress bar only.
-- **Navigation bar**: Home, Path, Settings, with icons and labels, on `surfaceContainer`. Hidden inside a Daily Set and on the Summary.
+- **`TopBar`**: Path and Settings have a `headlineSmall` title. Home has a greeting in its place (see Home). Inside a Daily Set it is the close button and the progress bar only.
+- **`NavigationFrame`**, the navigation bar: Home, Path, Settings, with icons and `labelSmall` labels, on `surfaceContainer`. The selected one has a `primaryContainer` pill behind a `primary` icon and its label in `onSurface`; the others are `onSurfaceVariant`. Hidden inside a Daily Set and on the Summary. Back from the Path or Settings goes to Home.
+- **`StreakWeekCard`**: the Streak on Home. A `ContentCard` with the Streak flame at 48 and the number in `displayMedium`, "day Streak" in `titleLarge` and a line in `bodyMedium` saying what today's Daily Set would do for it. Under them the last seven days, oldest first and ending today, as 32 dots with the weekday's letter below each: a completed day is `streak` with a tick, a day without is `surfaceContainerHigh`, and today has a 2 dp `streak` ring until it is completed and its letter in `titleSmall`. A screen reader hears the card as one sentence.
+- **`TodayCard`**: what today holds, on Home. A `ContentCard` with a small label in `titleSmall` ("Today" in `primary` on the card with the main action, "Up next" in `onSurfaceVariant`), a `headlineSmall` title, and below it what the state needs: `UnitProgress`, `Teaches`, a `CardNote`, the `PrimaryButton`. Done states have no label and put the `success` tick beside the title.
+- **`UnitProgress`**: the Unit's name in `bodyMedium`, and under it one 12 high segment for each of the Unit's Daily Sets: `primary` when completed, `primaryContainer` with a 2 dp `primary` border for the one the card is about, `surfaceContainerHigh` for the rest.
+- **`Teaches`**: "You'll learn" as an `Instruction`, then one `bodyLarge` line for each of the Daily Set's Tip titles, with an 8 dot in `primary`.
 - **`ContentCard`**: `surfaceContainerLowest`, `large` corners, 1 dp `outlineVariant` border, 16 padding, no shadow.
 - **`ScoreRing`**: the Summary's score. A 184 ring, 16 thick with round ends, `success` on `surfaceContainerHigh`, with the share of Exercises answered correctly on the first try inside it in `displayMedium`. The same score is written in words under it.
 - **`StreakCard`**: the Streak going up, on the Summary of the Daily Set that raised it and nowhere else. A `ContentCard` with the flame at 48 and the number in `displayMedium`, both in `streak`, then "day Streak" in `titleLarge` and a line in `bodyMedium`. A Replay never shows it.
 - **`ItemCard`**: one Item under "You learned": a `ContentCard` with the Polish in `titleMedium` and its meaning under it in `bodyMedium`.
 - **`Confetti`**: see Motion and touch. It is laid over the Summary's content, above the main button. A Replay gets none.
-- **Streak flame**: the flame icon in `streak` beside the number. With a Streak of zero it is `outline`, not hidden.
+- **Streak flame**: the flame icon in `streak` beside the number. With a Streak of zero the flame and the number are `outline`, not hidden.
 - **Path node**: a 56 circle. Completed: `success` fill with a tick. Today: `brand` fill with a play icon and a ring. Locked: `surfaceContainerHighest` with a lock icon.
 
 Icons are Material Symbols, rounded style, filled, 24 dp, kept as vector drawables in `res/drawable`. No icon library is added to the build.
+
+## Home
+
+Home answers three things from the top down: hello, how the Streak stands, and what to do today.
+
+- **The greeting** is Polish, in `headlineLarge`: "Cześć", and "Do jutra" once today's Daily Set is done. Under it one `bodyLarge` line in `onSurfaceVariant` says the state in the Base Language.
+- **The `StreakWeekCard`**, 24 below the greeting.
+- **The `TodayCard`**, 16 below that. Each state has its own:
+
+| State | Card |
+| --- | --- |
+| A Daily Set is ready | "Today", "Daily Set N of M", `UnitProgress`, `Teaches`, Start |
+| In progress | The same, with "In progress: N of M Exercises done." and Continue |
+| Done for today | The tick, "Done for today" and the unlock time. Then an "Up next" card for the next Daily Set, with no button |
+| Review-only, ready or in progress | "Today", "Review-only Daily Set", a note, Start or Continue |
+| Review-only, done | The tick, "Done for today" and when the next Review-only Daily Set unlocks |
+| Nothing left and nothing to review | The tick and "Every Daily Set completed" |
+
+Home scrolls if the font size makes it too tall. Nothing on it moves at rest.
 
 ## Motion and touch
 

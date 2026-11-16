@@ -196,8 +196,41 @@ class CourseEngine(
      * none resets it to zero. It is worked out from the saved completion days and nothing else, so
      * a Replay, which records no completion, cannot change it.
      */
-    fun streak(): Int =
-        streakOn(LocalDate.now(clock), progress.completedDailySets().values.toSet() + progress.reviewOnlyDays())
+    fun streak(): Int = streakOn(LocalDate.now(clock), completionDays())
+
+    /**
+     * The last seven calendar days, oldest first and ending today, each with whether a new or
+     * Review-only Daily Set was completed on it. Like the [streak], it is worked out from the saved
+     * completion days and nothing else, so a Replay cannot change it.
+     */
+    fun lastSevenDays(): List<DayView> = daysEnding(LocalDate.now(clock), completionDays(), days = 7)
+
+    /** Every calendar day on which a new or Review-only Daily Set was completed. */
+    private fun completionDays(): Set<LocalDate> = progress.completedDailySets().values.toSet() + progress.reviewOnlyDays()
+
+    /**
+     * The first Daily Set on the Path not yet completed, with its place in its Unit, or null once
+     * every Daily Set released so far is completed. It is the same one whether it can be started
+     * today, is in progress, or unlocks tomorrow; [today] says which.
+     */
+    fun nextDailySet(): NextDailySetView? {
+        val completed = progress.completedDailySets().keys
+        for (level in course.levels) {
+            level.units.forEachIndexed { unitIndex, unit ->
+                val index = unit.dailySets.indexOfFirst { it.id !in completed }
+                if (index >= 0) {
+                    return NextDailySetView(
+                        unitNumber = unitIndex + 1,
+                        unitTitle = localize(unit.title),
+                        numberInUnit = index + 1,
+                        dailySetsInUnit = unit.dailySets.size,
+                        teaches = unit.dailySets[index].tips.map { localize(it.title) },
+                    )
+                }
+            }
+        }
+        return null
+    }
 
     /**
      * Whether the Learner should be reminded now: today's Daily Set, new or Review-only, can be

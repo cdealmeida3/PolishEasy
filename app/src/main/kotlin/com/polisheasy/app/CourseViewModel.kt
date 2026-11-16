@@ -9,10 +9,12 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import com.polisheasy.engine.Answer
 import com.polisheasy.engine.CourseEngine
+import com.polisheasy.engine.DayView
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.FileLearnerProgress
 import com.polisheasy.engine.ItemView
+import com.polisheasy.engine.NextDailySetView
 import com.polisheasy.engine.PathView
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.Step
@@ -25,7 +27,11 @@ import java.time.LocalTime
 
 /** What the app is showing. Every rule behind it lives in the course engine. */
 sealed interface Screen {
-    data class Home(val today: Today, val streak: Int) : Screen
+    /**
+     * [week] is the last seven days, oldest first and ending today. [next] is where the Learner is
+     * on the Path, or null once every Daily Set released so far is completed.
+     */
+    data class Home(val today: Today, val streak: Int, val week: List<DayView>, val next: NextDailySetView?) : Screen
 
     data class Path(val path: PathView) : Screen
 
@@ -191,7 +197,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
         screen = home()
     }
 
-    private fun home() = Screen.Home(engine.today(), engine.streak())
+    private fun home() = Screen.Home(engine.today(), engine.streak(), engine.lastSevenDays(), engine.nextDailySet())
 
     private fun settingsScreen() = Screen.Settings(
         reminderEnabled = settings.reminderEnabled,
