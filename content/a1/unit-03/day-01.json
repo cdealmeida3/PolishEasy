@@ -1,0 +1,175 @@
+{
+  "id": "a1-u03-d01",
+  "tips": [
+    {
+      "id": "a1-u03-d01-t01",
+      "before": "a1-u03-d01-e01",
+      "title": { "en": "Counting to five" },
+      "body": { "en": "Jeden, dwa, trzy, cztery, pięć, and before them zero. After t, rz is said like sz, so trzy starts with t and then sh, not with English ch; cztery starts with cz and pięć ends in ć. Jeden and dwa change a little with the thing they count, which a later Unit teaches. For counting and for ages they are as here." }
+    },
+    {
+      "id": "a1-u03-d01-t02",
+      "before": "a1-u03-d01-e12",
+      "title": { "en": "Plus" },
+      "body": { "en": "Sums are said with plus and to: dwa plus dwa to cztery. Here to means \"is\" or \"makes\". You will also hear jest in its place." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d01-e01",
+      "prompt": "jeden",
+      "options": [
+        { "en": "two" },
+        { "en": "three" },
+        { "en": "one" }
+      ],
+      "correctOption": 2,
+      "items": ["jeden"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d01-e02",
+      "prompt": "dwa",
+      "options": [
+        { "en": "two" },
+        { "en": "one" },
+        { "en": "three" }
+      ],
+      "correctOption": 0,
+      "items": ["dwa"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d01-e03",
+      "prompt": "trzy",
+      "options": [
+        { "en": "three" },
+        { "en": "two" },
+        { "en": "one" }
+      ],
+      "correctOption": 0,
+      "items": ["trzy"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d01-e04",
+      "text": "jeden, dwa, trzy",
+      "distractors": ["trzy, dwa, jeden", "dwa, trzy, jeden"],
+      "items": ["jeden", "dwa", "trzy"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d01-e05",
+      "prompt": { "en": "one, two, three" },
+      "acceptedAnswers": ["jeden, dwa, trzy"],
+      "distractors": ["tak", "nie"],
+      "items": ["jeden", "dwa", "trzy"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d01-e06",
+      "prompt": "zero",
+      "options": [
+        { "en": "one" },
+        { "en": "five" },
+        { "en": "zero" }
+      ],
+      "correctOption": 2,
+      "items": ["zero"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d01-e07",
+      "prompt": "cztery",
+      "options": [
+        { "en": "four" },
+        { "en": "three" },
+        { "en": "five" }
+      ],
+      "correctOption": 0,
+      "items": ["cztery"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d01-e08",
+      "prompt": "pięć",
+      "options": [
+        { "en": "four" },
+        { "en": "three" },
+        { "en": "five" }
+      ],
+      "correctOption": 2,
+      "items": ["piec"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d01-e09",
+      "text": "cztery",
+      "distractors": ["trzy", "pięć"],
+      "items": ["cztery"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d01-e10",
+      "acceptedAnswers": ["trzy, cztery, pięć"],
+      "items": ["trzy", "cztery", "piec"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d01-e11",
+      "prompt": { "en": "five, four, three, two, one, zero" },
+      "acceptedAnswers": ["pięć, cztery, trzy, dwa, jeden, zero"],
+      "distractors": ["tak"],
+      "items": ["piec", "cztery", "trzy", "dwa", "jeden", "zero"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d01-e12",
+      "prompt": "plus",
+      "options": [
+        { "en": "but" },
+        { "en": "plus" },
+        { "en": "no" }
+      ],
+      "correctOption": 1,
+      "items": ["plus"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d01-e13",
+      "prompt": { "en": "two plus two is four" },
+      "acceptedAnswers": ["dwa plus dwa to cztery", "dwa plus dwa jest cztery", "dwa plus dwa to jest cztery"],
+      "distractors": ["jest", "trzy"],
+      "items": ["dwa", "plus", "to", "cztery"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d01-e14",
+      "text": "dwa plus trzy to pięć",
+      "distractors": ["dwa plus dwa to cztery", "jeden plus trzy to cztery"],
+      "items": ["dwa", "plus", "trzy", "to", "piec"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u03-d01-e15",
+      "prompt": { "en": "four" },
+      "acceptedAnswers": ["cztery"],
+      "items": ["cztery"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d01-e16",
+      "acceptedAnswers": ["zero, jeden, dwa"],
+      "items": ["zero", "jeden", "dwa"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d01-e17",
+      "prompt": { "en": "one plus zero is one" },
+      "acceptedAnswers": ["jeden plus zero to jeden", "jeden plus zero jest jeden", "jeden plus zero to jest jeden"],
+      "distractors": ["jest", "dwa"],
+      "items": ["jeden", "plus", "zero", "to"]
+    }
+  ]
+}

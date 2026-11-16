@@ -1,0 +1,186 @@
+{
+  "id": "a1-u03-d07",
+  "tips": [
+    {
+      "id": "a1-u03-d07-t01",
+      "before": "a1-u03-d07-e01",
+      "title": { "en": "The third gender: neuter" },
+      "body": { "en": "Nouns that end in -o or -e are usually neuter: dziecko, pytanie. With them \"my\" is moje and \"your\" is twoje. So: mój brat, moja siostra, moje dziecko." }
+    },
+    {
+      "id": "a1-u03-d07-t02",
+      "before": "a1-u03-d07-e10",
+      "title": { "en": "Dzieci and rodzeństwo" },
+      "body": { "en": "Dzieci is \"children\", the plural of dziecko (\"my children\" is moje dzieci). Rodzeństwo is one word for brothers and sisters together. Masz rodzeństwo? Tak, mam." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d07-e01",
+      "prompt": "dziecko",
+      "options": [
+        { "en": "a son" },
+        { "en": "a daughter" },
+        { "en": "a child" }
+      ],
+      "correctOption": 2,
+      "items": ["dziecko"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d07-e02",
+      "prompt": "moje",
+      "options": [
+        { "en": "my (with a masculine noun)" },
+        { "en": "my (with a feminine noun)" },
+        { "en": "my (with a neuter noun)" }
+      ],
+      "correctOption": 2,
+      "items": ["moje"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d07-e03",
+      "prompt": { "en": "this is my child" },
+      "acceptedAnswers": ["to jest moje dziecko", "to moje dziecko"],
+      "distractors": ["mój", "moja"],
+      "items": ["to", "byc-jest", "moje", "dziecko"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d07-e04",
+      "text": "moje dziecko",
+      "distractors": ["moja córka", "mój syn"],
+      "items": ["moje", "dziecko"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d07-e05",
+      "prompt": "twoje",
+      "options": [
+        { "en": "your (one friend, with a neuter noun)" },
+        { "en": "my (with a neuter noun)" },
+        { "en": "your (one friend, with a feminine noun)" }
+      ],
+      "correctOption": 0,
+      "items": ["twoje"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d07-e06",
+      "prompt": { "en": "is this your child? (to one friend)" },
+      "acceptedAnswers": ["czy to jest twoje dziecko?", "to jest twoje dziecko?", "czy to twoje dziecko?", "to twoje dziecko?"],
+      "distractors": ["twój", "twoja"],
+      "items": ["czy", "to", "byc-jest", "twoje", "dziecko"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d07-e07",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "on",
+      "sentence": "Twoje dziecko ___ pytanie.",
+      "sentenceMeaning": { "en": "Your child has a question. (to one friend)" },
+      "acceptedAnswers": ["ma"],
+      "items": ["twoje", "dziecko", "miec-ma", "pytanie"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d07-e08",
+      "prompt": { "en": "this is my question" },
+      "acceptedAnswers": ["to jest moje pytanie", "to moje pytanie"],
+      "distractors": ["mój", "problem"],
+      "items": ["to", "byc-jest", "moje", "pytanie"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d07-e09",
+      "acceptedAnswers": ["to nie jest twój problem"],
+      "items": ["to", "nie", "byc-jest", "twoj", "problem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d07-e10",
+      "prompt": "dzieci",
+      "options": [
+        { "en": "children" },
+        { "en": "a child" },
+        { "en": "a daughter" }
+      ],
+      "correctOption": 0,
+      "items": ["dzieci"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d07-e11",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "wy",
+      "sentence": "Czy ___ dzieci?",
+      "sentenceMeaning": { "en": "Do you have children? (several people)" },
+      "acceptedAnswers": ["macie"],
+      "items": ["czy", "miec-macie", "dzieci"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d07-e12",
+      "text": "mamy dzieci",
+      "distractors": ["mamy dziecko", "mamy czas"],
+      "items": ["miec-mamy", "dzieci"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d07-e13",
+      "prompt": "rodzeństwo",
+      "options": [
+        { "en": "children" },
+        { "en": "a sister" },
+        { "en": "brothers and sisters; siblings" }
+      ],
+      "correctOption": 2,
+      "items": ["rodzenstwo"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d07-e14",
+      "prompt": { "en": "do you have brothers and sisters? (one friend)" },
+      "acceptedAnswers": ["czy masz rodzeństwo?", "masz rodzeństwo?"],
+      "distractors": ["twoje", "ma"],
+      "items": ["czy", "miec-masz", "rodzenstwo"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d07-e15",
+      "prompt": "rodzina",
+      "options": [
+        { "en": "a family" },
+        { "en": "brothers and sisters; siblings" },
+        { "en": "children" }
+      ],
+      "correctOption": 0,
+      "items": ["rodzina"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d07-e16",
+      "prompt": { "en": "this is my family" },
+      "acceptedAnswers": ["to jest moja rodzina", "to moja rodzina"],
+      "distractors": ["moje", "mój"],
+      "items": ["to", "byc-jest", "moja", "rodzina"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d07-e17",
+      "acceptedAnswers": ["moja rodzina jest z Polski"],
+      "items": ["moja", "rodzina", "byc-jest", "z-polski"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u03-d07-e18",
+      "prompt": { "en": "your child (to one friend)" },
+      "acceptedAnswers": ["twoje dziecko"],
+      "items": ["twoje", "dziecko"]
+    }
+  ]
+}

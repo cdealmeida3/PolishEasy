@@ -37,3 +37,20 @@ Left for later, on purpose:
 - ***mieć* is never negated with an object** (*nie mam czasu* needs the genitive, Unit 6). *Mieć* takes only *czas*, *pytanie*, *problem*, whose form does not change after it. Unit 3 can use *mam* for age and *mieć* for family.
 - ***ono*** is named in a Tip but is not an Item. ***państwo***, ***jak się pan nazywa?***, surnames, other countries and other languages (some are listed in Tips, none is an Item), ***kto*** and ***co to jest?*** (Unit 4), and the gender of nouns (Unit 3).
 - *nie* keeps its Unit 1 meaning "no" as an Item; that it also means "not" is taught by a Tip.
+
+## What Unit 3 gives, and leaves for later
+
+Unit 3 has 8 Daily Sets and 51 Items. It is the last Unit of v1, and ends with a short speech about oneself and one's family. A later Unit can rely on:
+
+- the numbers 0 to 20, each its own Item (ids are the word without its marks: `piec`, `szesc`, `dwadziescia`), with *plus*, *ile* and *numer*;
+- age: *mam … lat*, *ile masz lat?*, and *rok*, *lata*, *lat* as three Items;
+- the three genders of nouns, and the six possessives *mój, moja, moje* and *twój, twoja, twoje*, so Unit 4 can make adjectives agree;
+- 14 family words in the nominative: *mama, tata, brat, siostra, syn, córka, mąż, żona, dziecko, dzieci, rodzeństwo, rodzina, babcia, dziadek* (*dzieci* is the only plural).
+
+Left for later, on purpose:
+
+- **Numbers count only years.** *jedna, jedno, dwie*, counting people or things, and numbers above 20 wait for Unit 6, which takes numbers further and makes them count things.
+- **The accusative exists only as four fixed forms**, *brata, siostrę, syna, córkę* (ids `brat-acc`, `siostra-acc`, `syn-acc`, `corka-acc`), taught as "the form after mam, masz, ma…". Unit 5 explains the ending. They never follow a possessive, and *mieć* is still never negated with an object.
+- ***matka***, ***ojciec***, ***rodzice*** (needs *moi*), ***wujek***, ***ciocia***.
+- ***jego***, ***jej***, ***nasz***, ***wasz***, and *pana*, *pani* as "your". Plural possessives: *moje dzieci* is named in a Tip, never in an Exercise.
+- ***kto to jest?*** (Unit 4).

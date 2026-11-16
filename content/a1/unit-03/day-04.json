@@ -1,0 +1,187 @@
+{
+  "id": "a1-u03-d04",
+  "tips": [
+    {
+      "id": "a1-u03-d04-t01",
+      "before": "a1-u03-d04-e01",
+      "title": { "en": "The teens" },
+      "body": { "en": "11 to 19 end in -naście, like English \"-teen\": trzy gives trzynaście. The start sometimes changes: czternaście (not cztery-), piętnaście, szesnaście, dziewiętnaście." }
+    },
+    {
+      "id": "a1-u03-d04-t02",
+      "before": "a1-u03-d04-e12",
+      "title": { "en": "Dwadzieścia" },
+      "body": { "en": "20 is dwadzieścia. Do not mix it up with dwanaście, 12. All the numbers from 5 to 20 take lat: mam dwadzieścia lat." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d04-e01",
+      "prompt": "czternaście",
+      "options": [
+        { "en": "four" },
+        { "en": "thirteen" },
+        { "en": "fourteen" }
+      ],
+      "correctOption": 2,
+      "items": ["czternascie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d04-e02",
+      "prompt": "piętnaście",
+      "options": [
+        { "en": "five" },
+        { "en": "fifteen" },
+        { "en": "sixteen" }
+      ],
+      "correctOption": 1,
+      "items": ["pietnascie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d04-e03",
+      "prompt": "szesnaście",
+      "options": [
+        { "en": "six" },
+        { "en": "sixteen" },
+        { "en": "fifteen" }
+      ],
+      "correctOption": 1,
+      "items": ["szesnascie"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d04-e04",
+      "text": "czternaście",
+      "distractors": ["cztery", "trzynaście"],
+      "items": ["czternascie"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d04-e05",
+      "acceptedAnswers": ["czternaście, piętnaście, szesnaście"],
+      "items": ["czternascie", "pietnascie", "szesnascie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d04-e06",
+      "prompt": "siedemnaście",
+      "options": [
+        { "en": "seven" },
+        { "en": "seventeen" },
+        { "en": "eighteen" }
+      ],
+      "correctOption": 1,
+      "items": ["siedemnascie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d04-e07",
+      "prompt": "osiemnaście",
+      "options": [
+        { "en": "eighteen" },
+        { "en": "eight" },
+        { "en": "seventeen" }
+      ],
+      "correctOption": 0,
+      "items": ["osiemnascie"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d04-e08",
+      "prompt": "dziewiętnaście",
+      "options": [
+        { "en": "nineteen" },
+        { "en": "nine" },
+        { "en": "eighteen" }
+      ],
+      "correctOption": 0,
+      "items": ["dziewietnascie"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d04-e09",
+      "acceptedAnswers": ["siedemnaście, osiemnaście, dziewiętnaście"],
+      "items": ["siedemnascie", "osiemnascie", "dziewietnascie"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d04-e10",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "ja",
+      "sentence": "___ osiemnaście lat.",
+      "sentenceMeaning": { "en": "I am eighteen years old." },
+      "acceptedAnswers": ["mam"],
+      "items": ["miec-mam", "osiemnascie", "lat"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d04-e11",
+      "text": "piętnaście lat",
+      "distractors": ["pięć lat", "dziewiętnaście lat"],
+      "items": ["pietnascie", "lat"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d04-e12",
+      "prompt": "dwadzieścia",
+      "options": [
+        { "en": "twelve" },
+        { "en": "twenty" },
+        { "en": "two" }
+      ],
+      "correctOption": 1,
+      "items": ["dwadziescia"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d04-e13",
+      "text": "dwadzieścia",
+      "distractors": ["dwanaście", "dziesięć"],
+      "items": ["dwadziescia"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d04-e14",
+      "prompt": { "en": "six plus fourteen is twenty" },
+      "acceptedAnswers": ["sześć plus czternaście to dwadzieścia", "sześć plus czternaście jest dwadzieścia", "sześć plus czternaście to jest dwadzieścia"],
+      "distractors": ["jest", "dwanaście"],
+      "items": ["szesc", "plus", "czternascie", "to", "dwadziescia"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u03-d04-e15",
+      "prompt": { "en": "I am twenty years old" },
+      "acceptedAnswers": ["mam dwadzieścia lat", "ja mam dwadzieścia lat"],
+      "items": ["miec-mam", "dwadziescia", "lat"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d04-e16",
+      "prompt": { "en": "Adam is sixteen years old" },
+      "acceptedAnswers": ["Adam ma szesnaście lat"],
+      "distractors": ["sześć", "lata"],
+      "items": ["adam", "miec-ma", "szesnascie", "lat"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d04-e17",
+      "acceptedAnswers": ["ona ma dziewiętnaście lat"],
+      "items": ["ona", "miec-ma", "dziewietnascie", "lat"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d04-e18",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "wy",
+      "sentence": "Ile ___ lat? Mamy siedemnaście lat.",
+      "sentenceMeaning": { "en": "How old are you? (several people) We are seventeen." },
+      "acceptedAnswers": ["macie"],
+      "items": ["ile", "miec-macie", "lat", "miec-mamy", "siedemnascie"]
+    }
+  ]
+}

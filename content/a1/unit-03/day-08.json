@@ -1,0 +1,191 @@
+{
+  "id": "a1-u03-d08",
+  "tips": [
+    {
+      "id": "a1-u03-d08-t01",
+      "before": "a1-u03-d08-e01",
+      "title": { "en": "Babcia and dziadek" },
+      "body": { "en": "Babcia, grandma, ends in -a: moja babcia. Dziadek, grandpa, ends in a consonant: mój dziadek." }
+    },
+    {
+      "id": "a1-u03-d08-t02",
+      "before": "a1-u03-d08-e06",
+      "title": { "en": "Mam brata, mam siostrę" },
+      "body": { "en": "After mam, masz, ma and the other forms of mieć, the person you have changes ending. Brat gives brata and syn gives syna; siostra gives siostrę and córka gives córkę. Neuter words stay as they are: mam dziecko, mam rodzeństwo. Other family words change too, so for now use only these four; Unit 5 explains the ending." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d08-e01",
+      "prompt": "babcia",
+      "options": [
+        { "en": "grandpa" },
+        { "en": "mum" },
+        { "en": "grandma" }
+      ],
+      "correctOption": 2,
+      "items": ["babcia"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d08-e02",
+      "prompt": "dziadek",
+      "options": [
+        { "en": "grandma" },
+        { "en": "grandpa" },
+        { "en": "dad" }
+      ],
+      "correctOption": 1,
+      "items": ["dziadek"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d08-e03",
+      "prompt": { "en": "my grandma and my grandpa" },
+      "acceptedAnswers": ["moja babcia i mój dziadek", "mój dziadek i moja babcia"],
+      "distractors": ["moje", "twój"],
+      "items": ["moja", "babcia", "i", "moj", "dziadek"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d08-e04",
+      "text": "mój dziadek",
+      "distractors": ["moja babcia", "moje dziecko"],
+      "items": ["moj", "dziadek"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d08-e05",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "on",
+      "sentence": "Moja babcia ___ na imię Ewa.",
+      "sentenceMeaning": { "en": "My grandma's first name is Ewa." },
+      "acceptedAnswers": ["ma"],
+      "items": ["moja", "babcia", "miec-ma", "na-imie", "ewa"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d08-e06",
+      "prompt": "brata",
+      "options": [
+        { "en": "a sister (after mam, masz, ma…)" },
+        { "en": "a brother (after mam, masz, ma…)" },
+        { "en": "a son (after mam, masz, ma…)" }
+      ],
+      "correctOption": 1,
+      "items": ["brat-acc"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d08-e07",
+      "prompt": "siostrę",
+      "options": [
+        { "en": "a sister (after mam, masz, ma…)" },
+        { "en": "a brother (after mam, masz, ma…)" },
+        { "en": "a daughter (after mam, masz, ma…)" }
+      ],
+      "correctOption": 0,
+      "items": ["siostra-acc"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d08-e08",
+      "prompt": { "en": "I have a brother and a sister" },
+      "acceptedAnswers": ["mam brata i siostrę", "mam siostrę i brata"],
+      "distractors": ["brat", "siostra"],
+      "items": ["miec-mam", "brat-acc", "i", "siostra-acc"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d08-e09",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "ty",
+      "sentence": "Czy ___ brata?",
+      "sentenceMeaning": { "en": "Do you have a brother? (one friend)" },
+      "acceptedAnswers": ["masz"],
+      "items": ["czy", "miec-masz", "brat-acc"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d08-e10",
+      "prompt": "syna",
+      "options": [
+        { "en": "a son (after mam, masz, ma…)" },
+        { "en": "a daughter (after mam, masz, ma…)" },
+        { "en": "a brother (after mam, masz, ma…)" }
+      ],
+      "correctOption": 0,
+      "items": ["syn-acc"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d08-e11",
+      "prompt": "córkę",
+      "options": [
+        { "en": "a daughter (after mam, masz, ma…)" },
+        { "en": "a son (after mam, masz, ma…)" },
+        { "en": "a sister (after mam, masz, ma…)" }
+      ],
+      "correctOption": 0,
+      "items": ["corka-acc"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d08-e12",
+      "prompt": { "en": "we have a son and a daughter" },
+      "acceptedAnswers": ["mamy syna i córkę", "mamy córkę i syna"],
+      "distractors": ["syn", "córka"],
+      "items": ["miec-mamy", "syn-acc", "i", "corka-acc"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d08-e13",
+      "text": "oni mają córkę",
+      "distractors": ["oni mają syna", "one mają córkę"],
+      "items": ["oni", "miec-maja", "corka-acc"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u03-d08-e14",
+      "prompt": { "en": "Adam has a son" },
+      "acceptedAnswers": ["Adam ma syna"],
+      "items": ["adam", "miec-ma", "syn-acc"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d08-e15",
+      "prompt": { "en": "hi, my first name is Ewa and I am twenty years old" },
+      "acceptedAnswers": ["cześć, mam na imię Ewa i mam dwadzieścia lat"],
+      "distractors": ["lata", "masz"],
+      "items": ["czesc", "miec-mam", "na-imie", "ewa", "i", "dwadziescia", "lat"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d08-e16",
+      "acceptedAnswers": ["mam rodzeństwo, brata i siostrę"],
+      "items": ["miec-mam", "rodzenstwo", "brat-acc", "i", "siostra-acc"]
+    },
+    {
+      "type": "conjugation",
+      "id": "a1-u03-d08-e17",
+      "verb": "mieć",
+      "meaning": { "en": "to have" },
+      "person": "on",
+      "sentence": "Mój brat ma na imię Adam i ___ szesnaście lat.",
+      "sentenceMeaning": { "en": "My brother's first name is Adam and he is sixteen years old." },
+      "acceptedAnswers": ["ma"],
+      "items": ["moj", "brat", "miec-ma", "na-imie", "adam", "i", "szesnascie", "lat"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d08-e18",
+      "prompt": { "en": "this is my family, and yours? (to one friend)" },
+      "acceptedAnswers": ["to jest moja rodzina, a twoja?", "to moja rodzina, a twoja?"],
+      "distractors": ["twój", "moje"],
+      "items": ["to", "byc-jest", "moja", "rodzina", "a", "twoja"]
+    }
+  ]
+}

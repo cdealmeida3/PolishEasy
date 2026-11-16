@@ -1,0 +1,174 @@
+{
+  "id": "a1-u03-d02",
+  "tips": [
+    {
+      "id": "a1-u03-d02-t01",
+      "before": "a1-u03-d02-e01",
+      "title": { "en": "Six to ten" },
+      "body": { "en": "Sześć, siedem, osiem, dziewięć, dziesięć. Dziewięć (9) and dziesięć (10) are easy to mix up: nine has a w, said like English v, and ten has si, said like ś." }
+    },
+    {
+      "id": "a1-u03-d02-t02",
+      "before": "a1-u03-d02-e11",
+      "title": { "en": "Ile and numer" },
+      "body": { "en": "Ile asks \"how many\" or \"how much\": ile to jest dwa plus sześć? Numer is a number that names something, such as a house, a room or a bus: numer pięć." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d02-e01",
+      "prompt": "sześć",
+      "options": [
+        { "en": "seven" },
+        { "en": "five" },
+        { "en": "six" }
+      ],
+      "correctOption": 2,
+      "items": ["szesc"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d02-e02",
+      "prompt": "siedem",
+      "options": [
+        { "en": "six" },
+        { "en": "eight" },
+        { "en": "seven" }
+      ],
+      "correctOption": 2,
+      "items": ["siedem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d02-e03",
+      "prompt": "osiem",
+      "options": [
+        { "en": "eight" },
+        { "en": "seven" },
+        { "en": "six" }
+      ],
+      "correctOption": 0,
+      "items": ["osiem"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d02-e04",
+      "acceptedAnswers": ["sześć, siedem, osiem"],
+      "items": ["szesc", "siedem", "osiem"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d02-e05",
+      "prompt": { "en": "four, five, six, seven" },
+      "acceptedAnswers": ["cztery, pięć, sześć, siedem"],
+      "distractors": ["osiem", "trzy"],
+      "items": ["cztery", "piec", "szesc", "siedem"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d02-e06",
+      "prompt": "dziewięć",
+      "options": [
+        { "en": "nine" },
+        { "en": "ten" },
+        { "en": "eight" }
+      ],
+      "correctOption": 0,
+      "items": ["dziewiec"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d02-e07",
+      "prompt": "dziesięć",
+      "options": [
+        { "en": "ten" },
+        { "en": "nine" },
+        { "en": "six" }
+      ],
+      "correctOption": 0,
+      "items": ["dziesiec"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d02-e08",
+      "text": "dziewięć",
+      "distractors": ["dziesięć", "pięć"],
+      "items": ["dziewiec"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d02-e09",
+      "acceptedAnswers": ["osiem, dziewięć, dziesięć"],
+      "items": ["osiem", "dziewiec", "dziesiec"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d02-e10",
+      "prompt": { "en": "three plus seven is ten" },
+      "acceptedAnswers": ["trzy plus siedem to dziesięć", "trzy plus siedem jest dziesięć", "trzy plus siedem to jest dziesięć"],
+      "distractors": ["jest", "dziewięć"],
+      "items": ["trzy", "plus", "siedem", "to", "dziesiec"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d02-e11",
+      "prompt": "ile",
+      "options": [
+        { "en": "how" },
+        { "en": "how many; how much" },
+        { "en": "where from" }
+      ],
+      "correctOption": 1,
+      "items": ["ile"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d02-e12",
+      "prompt": { "en": "how much is two plus six?" },
+      "acceptedAnswers": ["ile to jest dwa plus sześć?", "ile jest dwa plus sześć?", "ile to dwa plus sześć?", "dwa plus sześć to ile?", "dwa plus sześć to jest ile?"],
+      "distractors": ["osiem", "tak"],
+      "items": ["ile", "to", "byc-jest", "dwa", "plus", "szesc"]
+    },
+    {
+      "type": "listen_choose",
+      "id": "a1-u03-d02-e13",
+      "text": "ile to jest pięć plus cztery?",
+      "distractors": ["ile to jest pięć plus pięć?", "ile to jest dziewięć plus cztery?"],
+      "items": ["ile", "to", "byc-jest", "piec", "plus", "cztery"]
+    },
+    {
+      "type": "choose_translation",
+      "id": "a1-u03-d02-e14",
+      "prompt": "numer",
+      "options": [
+        { "en": "a question" },
+        { "en": "a problem" },
+        { "en": "a number (numer pięć: number five)" }
+      ],
+      "correctOption": 2,
+      "items": ["numer"]
+    },
+    {
+      "type": "word_tiles",
+      "id": "a1-u03-d02-e15",
+      "prompt": { "en": "this is number nine" },
+      "acceptedAnswers": ["to jest numer dziewięć", "to numer dziewięć"],
+      "distractors": ["dziesięć", "ile"],
+      "items": ["to", "byc-jest", "numer", "dziewiec"]
+    },
+    {
+      "type": "listen_type",
+      "id": "a1-u03-d02-e16",
+      "acceptedAnswers": ["numer osiem"],
+      "items": ["numer", "osiem"]
+    },
+    {
+      "type": "type_answer",
+      "id": "a1-u03-d02-e17",
+      "prompt": { "en": "ten" },
+      "acceptedAnswers": ["dziesięć"],
+      "items": ["dziesiec"]
+    }
+  ]
+}
