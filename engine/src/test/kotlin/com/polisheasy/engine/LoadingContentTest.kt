@@ -449,6 +449,56 @@ class LoadingContentTest {
         assertTrue("a1-u01-d01-e01" in failure.message.orEmpty(), "Message was: ${failure.message}")
     }
 
+    @Test
+    fun `a course with problems in two Daily Sets is rejected once, naming both`() {
+        val failure = assertFailsWith<IllegalArgumentException> {
+            loadWithItems(
+                listOf(itemsFile("tak")),
+                taggedDay("d1", "d1-e1" to listOf("nope")),
+                taggedDay("d2", "d2-e1" to listOf("gone")),
+            )
+        }
+
+        listOf("d1-e1", "nope", "d2-e1", "gone").forEach { name ->
+            assertTrue(name in failure.message.orEmpty(), "Message was: ${failure.message}")
+        }
+        assertEquals(2, failure.message.orEmpty().lines().size, "Message was: ${failure.message}")
+    }
+
+    @Test
+    fun `a choice Exercise whose correct option is not one of its options is rejected, naming the Daily Set and the Exercise`() {
+        listOf(-1, 2).forEach { option ->
+            val failure = assertFailsWith<IllegalArgumentException>("Option $option") {
+                FixtureCourse.loadWithDayOne(
+                    """{ "id": "a1-u01-d01", "exercises": [ { "type": "choose_translation", "id": "a1-u01-d01-e01",
+                         "prompt": "tak", "options": [{ "en": "yes" }, { "en": "no" }], "correctOption": $option } ] }""",
+                )
+            }
+
+            assertNamesTheDailySet(failure)
+            assertTrue("a1-u01-d01-e01" in failure.message.orEmpty(), "Message was: ${failure.message}")
+        }
+    }
+
+    @Test
+    fun `a file that is missing is rejected, naming the file`() {
+        val failure = assertFailsWith<IllegalArgumentException> {
+            loadCourse { path -> if (path == "course.json") "{ \"items\": [\"lost.json\"], \"levels\": [] }" else error("no file") }
+        }
+
+        assertTrue("lost.json" in failure.message.orEmpty(), "Message was: ${failure.message}")
+    }
+
+    @Test
+    fun `a course that only breaks what the content checker asks of shipped content still loads`() {
+        // Three Exercises and two, none listing an Item, Tips whose ids are their own: fine to run, not to ship.
+        val course = FixtureCourse.loadWithDayOne(dayOne(tips = listOf("e01")))
+
+        assertEquals(listOf(3, 2), course.path.map { it.exercises.size })
+        assertEquals(emptyList(), course.path.flatMap { it.exercises }.flatMap { it.items })
+        assertEquals(listOf("t0"), course.path.first().tips.map { it.id })
+    }
+
     /** A course whose `course.json` lists these Item files and Daily Sets. */
     private fun loadWithItems(itemFiles: List<String>, vararg days: String): Course {
         val itemPaths = itemFiles.indices.map { "items-$it.json" }

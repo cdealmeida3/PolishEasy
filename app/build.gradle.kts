@@ -93,3 +93,6 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.compose)
     implementation(libs.media3.exoplayer)
 }
+
+// No APK or bundle is built from broken Authored Content.
+tasks.named("preBuild") { dependsOn(":engine:checkContent") }
