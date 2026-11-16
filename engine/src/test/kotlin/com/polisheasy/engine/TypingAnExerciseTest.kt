@@ -11,7 +11,11 @@ class TypingAnExerciseTest {
         val step = engine.startDailySet()
 
         assertEquals(
-            Step.ShowExercise(ExerciseView.TypeAnswer(prompt = "thank you"), SetProgress(correct = 0, total = 1)),
+            Step.ShowExercise(
+                ExerciseView.TypeAnswer(prompt = "thank you"),
+                SetProgress(correct = 0, total = 1),
+                exerciseId = "a1-u01-d01-e01",
+            ),
             step,
         )
     }

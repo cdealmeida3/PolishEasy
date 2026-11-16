@@ -33,12 +33,14 @@ sealed interface Step {
     /**
      * [review] marks an Exercise from the Review that ends the Daily Set.
      * [replay] when this is a Replay, which saves nothing.
+     * [exerciseId] is the Exercise's stable identifier, for a mistake report.
      */
     data class ShowExercise(
         val exercise: ExerciseView,
         val progress: SetProgress,
         val review: Boolean = false,
         val replay: Boolean = false,
+        val exerciseId: String = "",
     ) : Step
 
     /**
@@ -182,6 +184,16 @@ class CourseEngine(
      */
     fun streak(): Int =
         streakOn(LocalDate.now(clock), progress.completedDailySets().values.toSet() + progress.reviewOnlyDays())
+
+    /**
+     * Whether the Learner should be reminded now: today's Daily Set, new or Review-only, can be
+     * started or is in progress. Not once it is completed, and not when nothing is left to do.
+     * A Replay never changes [today], so it never changes this.
+     */
+    fun reminderDue(): Boolean = when (today()) {
+        Today.DailySetAvailable, Today.ReviewOnlyAvailable, is Today.InProgress -> true
+        is Today.DoneForToday, Today.AllCompleted -> false
+    }
 
     /**
      * The Path: every Level opened so far, with its Units and their Daily Sets. A Level opens when
@@ -353,6 +365,7 @@ class CourseEngine(
             progressOf(playing),
             review = exerciseId in state.review,
             replay = playing.replay,
+            exerciseId = exerciseId,
         )
     }
 

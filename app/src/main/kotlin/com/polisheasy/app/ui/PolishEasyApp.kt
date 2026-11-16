@@ -1,6 +1,23 @@
 package com.polisheasy.app.ui
 
+import android.Manifest
+import android.content.ActivityNotFoundException
+import android.content.Context
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
+import android.os.Build
+import android.text.format.DateFormat
+import android.widget.Toast
 import androidx.activity.compose.BackHandler
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Switch
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.TimePicker
+import androidx.compose.material3.rememberTimePickerState
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -87,6 +104,7 @@ import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.TileSelection
 import com.polisheasy.engine.TipView
 import com.polisheasy.engine.Today
+import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
@@ -112,6 +130,23 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                     onStart = viewModel::startDailySet,
                     onContinue = viewModel::resumeDailySet,
                     onOpenPath = viewModel::openPath,
+                    onOpenSettings = viewModel::openSettings,
+                )
+            }
+            is Screen.Settings -> {
+                BackHandler(onBack = viewModel::backToHome)
+                // Coming back from Android's settings, notifications may have been allowed or turned off.
+                LifecycleResumeEffect(Unit) {
+                    viewModel.refresh()
+                    onPauseOrDispose { }
+                }
+                SettingsScreen(
+                    screen.reminderEnabled,
+                    screen.reminderTime,
+                    screen.notificationsAllowed,
+                    onReminderEnabled = viewModel::setReminderEnabled,
+                    onReminderTime = viewModel::setReminderTime,
+                    onReport = { reportMistake(context, exerciseId = null) },
                 )
             }
             is Screen.Path -> {
@@ -142,6 +177,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                         onAnswer = viewModel::answer,
                         onContinue = viewModel::continueToNext,
                         onPlay = onPlay,
+                        onReport = { reportMistake(context, screen.exerciseId) },
                     )
                 }
             }
@@ -221,7 +257,14 @@ private fun DailySetColumn(
 }
 
 @Composable
-private fun HomeScreen(today: Today, streak: Int, onStart: () -> Unit, onContinue: () -> Unit, onOpenPath: () -> Unit) {
+private fun HomeScreen(
+    today: Today,
+    streak: Int,
+    onStart: () -> Unit,
+    onContinue: () -> Unit,
+    onOpenPath: () -> Unit,
+    onOpenSettings: () -> Unit,
+) {
     ScreenColumn {
         Text(stringResource(R.string.app_name), style = MaterialTheme.typography.displaySmall)
         Spacer(Modifier.height(8.dp))
@@ -268,6 +311,184 @@ private fun HomeScreen(today: Today, streak: Int, onStart: () -> Unit, onContinu
         OutlinedButton(onClick = onOpenPath, modifier = Modifier.fillMaxWidth()) {
             Text(stringResource(R.string.home_path))
         }
+        Spacer(Modifier.height(8.dp))
+        OutlinedButton(onClick = onOpenSettings, modifier = Modifier.fillMaxWidth()) {
+            Text(stringResource(R.string.home_settings))
+        }
+    }
+}
+
+/**
+ * Settings: the Reminder's switch and time, and "Report a mistake". Turning the Reminder on is the
+ * only moment the app asks for permission to show notifications.
+ */
+@Composable
+private fun SettingsScreen(
+    reminderEnabled: Boolean,
+    reminderTime: LocalTime,
+    notificationsAllowed: Boolean,
+    onReminderEnabled: (Boolean) -> Unit,
+    onReminderTime: (LocalTime) -> Unit,
+    onReport: () -> Unit,
+) {
+    val context = LocalContext.current
+    // Whether the Learner refused the permission here, so the screen can say why the switch stayed off.
+    var refused by rememberSaveable { mutableStateOf(false) }
+    var pickingTime by rememberSaveable { mutableStateOf(false) }
+    val askPermission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
+        refused = !granted
+        if (granted) onReminderEnabled(true)
+    }
+    val reminderLabel = stringResource(R.string.settings_reminder)
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .safeDrawingPadding()
+            .padding(24.dp)
+            .verticalScroll(rememberScrollState()),
+    ) {
+        Text(stringResource(R.string.settings_title), style = MaterialTheme.typography.headlineMedium)
+        Spacer(Modifier.height(24.dp))
+        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
+            Text(reminderLabel, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+            Switch(
+                checked = reminderEnabled,
+                onCheckedChange = { on ->
+                    val mustAsk = on && Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+                        context.checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) !=
+                        PackageManager.PERMISSION_GRANTED
+                    if (mustAsk) askPermission.launch(Manifest.permission.POST_NOTIFICATIONS) else onReminderEnabled(on)
+                },
+                modifier = Modifier.semantics { contentDescription = reminderLabel },
+            )
+        }
+        Text(
+            stringResource(R.string.settings_reminder_note),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        if (!notificationsAllowed && (refused || reminderEnabled)) {
+            Spacer(Modifier.height(16.dp))
+            Text(stringResource(R.string.settings_notifications_off), color = MaterialTheme.colorScheme.error)
+            Spacer(Modifier.height(8.dp))
+            OutlinedButton(onClick = { openNotificationSettings(context) }, modifier = Modifier.fillMaxWidth()) {
+                Text(stringResource(R.string.settings_open_android_settings))
+            }
+        }
+        if (reminderEnabled) {
+            Spacer(Modifier.height(8.dp))
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clickable { pickingTime = true }
+                    .heightIn(min = 56.dp),
+            ) {
+                Text(
+                    stringResource(R.string.settings_reminder_time),
+                    style = MaterialTheme.typography.titleMedium,
+                    modifier = Modifier.weight(1f),
+                )
+                Text(
+                    DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).format(reminderTime),
+                    style = MaterialTheme.typography.titleMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                )
+            }
+        }
+        Spacer(Modifier.height(16.dp))
+        HorizontalDivider()
+        Spacer(Modifier.height(16.dp))
+        OutlinedButton(onClick = onReport, modifier = Modifier.fillMaxWidth()) {
+            Text(stringResource(R.string.report_mistake))
+        }
+        Spacer(Modifier.height(24.dp))
+        Text(
+            stringResource(R.string.settings_version, appVersion(context)),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+    }
+    if (pickingTime) {
+        ReminderTimeDialog(
+            reminderTime,
+            onPicked = {
+                pickingTime = false
+                onReminderTime(it)
+            },
+            onDismiss = { pickingTime = false },
+        )
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun ReminderTimeDialog(time: LocalTime, onPicked: (LocalTime) -> Unit, onDismiss: () -> Unit) {
+    val state = rememberTimePickerState(
+        initialHour = time.hour,
+        initialMinute = time.minute,
+        is24Hour = DateFormat.is24HourFormat(LocalContext.current),
+    )
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        confirmButton = {
+            TextButton(onClick = { onPicked(LocalTime.of(state.hour, state.minute)) }) {
+                Text(stringResource(R.string.action_ok))
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) { Text(stringResource(R.string.action_cancel)) }
+        },
+        title = { Text(stringResource(R.string.settings_reminder_time)) },
+        text = { TimePicker(state) },
+    )
+}
+
+/** Android's own notification settings for this app, where a refused permission can be given. */
+private fun openNotificationSettings(context: Context) {
+    val intent = Intent(android.provider.Settings.ACTION_APP_NOTIFICATION_SETTINGS)
+        .putExtra(android.provider.Settings.EXTRA_APP_PACKAGE, context.packageName)
+    try {
+        context.startActivity(intent)
+    } catch (_: ActivityNotFoundException) {
+        // A phone without that page: nothing to open.
+    }
+}
+
+private fun appVersion(context: Context): String =
+    context.packageManager.getPackageInfo(context.packageName, 0).versionName.orEmpty()
+
+/**
+ * Opens a draft in the Learner's email app, naming the Exercise when the report is about one.
+ * The app itself sends nothing: it has no network permission.
+ */
+private fun reportMistake(context: Context, exerciseId: String?) {
+    val address = context.getString(R.string.report_email)
+    val subject = if (exerciseId == null) {
+        context.getString(R.string.report_subject_general)
+    } else {
+        context.getString(R.string.report_subject_exercise, exerciseId)
+    }
+    val body = listOfNotNull(
+        exerciseId?.let { context.getString(R.string.report_body_exercise, it) },
+        context.getString(R.string.report_body_version, appVersion(context)),
+        "",
+        context.getString(R.string.report_body_prompt),
+        "",
+    ).joinToString("\n")
+    val draft = Uri.parse(
+        "mailto:" + Uri.encode(address, "@") +
+            "?subject=" + Uri.encode(subject) +
+            "&body=" + Uri.encode(body.replace("\n", "\r\n")),
+    )
+    // Email apps differ in which of the two they read, so the subject and body go in both.
+    val intent = Intent(Intent.ACTION_SENDTO, draft)
+        .putExtra(Intent.EXTRA_SUBJECT, subject)
+        .putExtra(Intent.EXTRA_TEXT, body)
+    try {
+        context.startActivity(intent)
+    } catch (_: ActivityNotFoundException) {
+        Toast.makeText(context, R.string.report_no_email_app, Toast.LENGTH_LONG).show()
     }
 }
 
@@ -446,6 +667,7 @@ private fun PlayerScreen(
     onAnswer: (Answer) -> Unit,
     onContinue: () -> Unit,
     onPlay: (ClipView, Boolean) -> Unit,
+    onReport: () -> Unit,
 ) {
     // Held here so the Polish key row and the text field share it.
     var typed by rememberSaveable(stateSaver = TextFieldValue.Saver) { mutableStateOf(TextFieldValue("")) }
@@ -513,6 +735,9 @@ private fun PlayerScreen(
             Spacer(Modifier.height(16.dp))
             Button(onClick = onContinue, modifier = Modifier.fillMaxWidth()) {
                 Text(stringResource(R.string.action_continue))
+            }
+            TextButton(onClick = onReport) {
+                Text(stringResource(R.string.report_mistake))
             }
         }
     }

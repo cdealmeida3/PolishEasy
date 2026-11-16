@@ -53,6 +53,10 @@ _Avoid_: Redo, practice mode
 **Streak**:
 The number of consecutive calendar days on which the Learner completed a new or Review-only Daily Set. Until today's is completed it is the Streak earned up to yesterday; a day with none resets it to zero. A Replay does not count.
 
+**Reminder**:
+One notification a day, at a time the Learner chooses, sent only while today's new or Review-only Daily Set is not completed. It is off until the Learner turns it on. A Replay does not count as completing today's.
+_Avoid_: Alert, alarm, push notification
+
 **Exercise**:
 A single task inside a Daily Set that the Learner answers and the app checks. A Daily Set is complete once every Exercise has been answered correctly.
 _Avoid_: Question, activity, task

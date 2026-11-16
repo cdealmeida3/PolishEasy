@@ -75,7 +75,7 @@ class ListeningTest {
         val engine = engineWith(listenTypeDay("dziękuję", "dzięki"), clipsFile("dzięki", "dziękuję"))
 
         assertEquals(
-            Step.ShowExercise(ExerciseView.ListenType(ClipView("audio/c2.ogg")), oneOfOne),
+            Step.ShowExercise(ExerciseView.ListenType(ClipView("audio/c2.ogg")), oneOfOne, exerciseId = "a1-u01-d01-e01"),
             engine.startDailySet(),
         )
     }

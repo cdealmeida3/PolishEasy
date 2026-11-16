@@ -1,6 +1,8 @@
 package com.polisheasy.app
 
 import android.app.Application
+import android.app.NotificationManager
+import android.content.Context
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -19,12 +21,20 @@ import com.polisheasy.engine.Today
 import com.polisheasy.engine.loadCourse
 import java.io.File
 import java.time.Clock
+import java.time.LocalTime
 
 /** What the app is showing. Every rule behind it lives in the course engine. */
 sealed interface Screen {
     data class Home(val today: Today, val streak: Int) : Screen
 
     data class Path(val path: PathView) : Screen
+
+    /** [notificationsAllowed] is whether Android lets the app show notifications at all. */
+    data class Settings(
+        val reminderEnabled: Boolean,
+        val reminderTime: LocalTime,
+        val notificationsAllowed: Boolean,
+    ) : Screen
 
     /** [replay] when the Tip belongs to a Replay. */
     data class Tip(val tip: TipView, val progress: SetProgress, val replay: Boolean) : Screen
@@ -38,6 +48,8 @@ sealed interface Screen {
         val review: Boolean,
         /** Whether this is a Replay, which saves nothing. */
         val replay: Boolean,
+        /** The Exercise's stable identifier, for a mistake report. */
+        val exerciseId: String,
         val feedback: Feedback? = null,
     ) : Screen
 
@@ -52,14 +64,21 @@ sealed interface Screen {
     ) : Screen
 }
 
+/**
+ * The course engine over the packaged course and the Learner's saved progress, as it is now.
+ * The screens and the Reminder both build theirs here, so they answer from the same rules.
+ */
+fun courseEngine(context: Context): CourseEngine = CourseEngine(
+    course = loadCourse { path ->
+        context.assets.open(path).bufferedReader().use { it.readText() }
+    },
+    progress = FileLearnerProgress(File(context.filesDir, "progress.json")),
+    clock = Clock.systemDefaultZone(),
+)
+
 class CourseViewModel(application: Application) : AndroidViewModel(application) {
-    private val engine = CourseEngine(
-        course = loadCourse { path ->
-            application.assets.open(path).bufferedReader().use { it.readText() }
-        },
-        progress = FileLearnerProgress(File(application.filesDir, "progress.json")),
-        clock = Clock.systemDefaultZone(),
-    )
+    private val engine = courseEngine(application)
+    private val settings = Settings(application)
 
     var screen: Screen by mutableStateOf(home())
         private set
@@ -94,11 +113,32 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
         if (replay) openPath() else backToHome()
     }
 
-    /** Asks the engine again what today holds, so Home and the Path are right after midnight has passed. */
+    fun openSettings() {
+        screen = settingsScreen()
+    }
+
+    /** Turns the Reminder on or off and sets or removes its alarm. */
+    fun setReminderEnabled(enabled: Boolean) {
+        settings.reminderEnabled = enabled
+        Reminder.arm(getApplication())
+        screen = settingsScreen()
+    }
+
+    fun setReminderTime(time: LocalTime) {
+        settings.reminderTime = time
+        Reminder.arm(getApplication())
+        screen = settingsScreen()
+    }
+
+    /**
+     * Asks again what the screen shows, so Home and the Path are right after midnight has passed,
+     * and Settings is right when the Learner comes back from Android's own settings.
+     */
     fun refresh() {
         when (screen) {
             is Screen.Home -> screen = home()
             is Screen.Path -> screen = Screen.Path(engine.path())
+            is Screen.Settings -> screen = settingsScreen()
             else -> Unit
         }
     }
@@ -118,6 +158,14 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
 
     private fun home() = Screen.Home(engine.today(), engine.streak())
 
+    private fun settingsScreen() = Screen.Settings(
+        reminderEnabled = settings.reminderEnabled,
+        reminderTime = settings.reminderTime,
+        notificationsAllowed = getApplication<Application>()
+            .getSystemService(NotificationManager::class.java)
+            .areNotificationsEnabled(),
+    )
+
     private fun show(step: Step) {
         screen = when (step) {
             is Step.ShowTip -> Screen.Tip(step.tip, step.progress, step.replay)
@@ -127,6 +175,7 @@ class CourseViewModel(application: Application) : AndroidViewModel(application) 
                 shown = ++exercisesShown,
                 review = step.review,
                 replay = step.replay,
+                exerciseId = step.exerciseId,
             )
             is Step.ShowSummary -> Screen.Summary(
                 step.correctAnswers,
