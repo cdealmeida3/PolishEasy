@@ -431,6 +431,7 @@ class AuthoredContentTest {
     fun `brata, siostrę, syna and córkę are only what someone has, and mieć is never negated with an object`() {
         val had = setOf("brata", "siostrę", "syna", "córkę")
         had.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
+        val fixedPhrases = listOf(listOf("nie", "ma", "za", "co"), listOf("nie", "ma", "sprawy"))
 
         spokenSentences.forEach { sentence ->
             val text = sentence.joinToString(" ")
@@ -439,8 +440,8 @@ class AuthoredContentTest {
                     val before = sentence.getOrNull(index - 1)
                     assertTrue(before in formsOfMiec + listOf("i", "rodzeństwo"), "\"$text\" has $word after $before")
                 }
-                // "nie ma za co" is a fixed phrase of Unit 1, not someone who has nothing.
-                val fixedPhrase = sentence.drop(index).take(4) == listOf("nie", "ma", "za", "co")
+                // "nie ma za co" and "nie ma sprawy" are fixed phrases of Unit 1, not someone who has nothing.
+                val fixedPhrase = fixedPhrases.any { phrase -> sentence.drop(index).take(phrase.size) == phrase }
                 if (word == "nie" && sentence.getOrNull(index + 1) in formsOfMiec && !fixedPhrase) {
                     assertTrue(index + 2 >= sentence.size, "\"$text\" negates mieć with an object")
                 }
