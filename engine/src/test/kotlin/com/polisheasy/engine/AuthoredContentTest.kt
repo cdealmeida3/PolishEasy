@@ -54,9 +54,12 @@ class AuthoredContentTest {
         }
     }
 
-    /** Plays today's Daily Set, Review included, answering everything correctly. Returns every Step seen. */
-    private fun CourseEngine.playCorrectly(): List<Step> {
-        val seen = mutableListOf(startDailySet())
+    /**
+     * Plays from [first], by default the start of today's Daily Set, Review included, answering
+     * everything correctly. Returns every Step seen.
+     */
+    private fun CourseEngine.playCorrectly(first: Step = startDailySet()): List<Step> {
+        val seen = mutableListOf(first)
         while (true) {
             when (val step = seen.last()) {
                 is Step.ShowTip -> Unit
@@ -151,6 +154,50 @@ class AuthoredContentTest {
             listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7) + listOf(7, 7, 6, 7, 6, 6, 6, 6),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
+    }
+
+    @Test
+    fun `a new Learner's Path is A1 with Units 1 to 3 of 7, 8 and 8 Daily Sets, numbered 1 to 23, the first one today's`() {
+        val level = CourseEngine(course, InMemoryLearnerProgress(), FakeClock()).path().levels.single()
+
+        assertEquals("A1", level.title)
+        assertEquals(listOf(1, 2, 3), level.units.map { it.number })
+        assertEquals(listOf("Sounds and greetings", "About me", "Numbers and family"), level.units.map { it.title })
+        assertEquals(listOf(7, 8, 8), level.units.map { it.dailySets.size })
+        val dailySets = level.units.flatMap { it.dailySets }
+        assertEquals(course.path.map { it.id }, dailySets.map { it.id })
+        assertEquals((1..23).toList(), dailySets.map { it.number })
+        assertEquals(
+            listOf(DailySetState.TODAY) + List(22) { DailySetState.LOCKED },
+            dailySets.map { it.state },
+        )
+    }
+
+    @Test
+    fun `every Daily Set shipped with the app can be replayed to its Summary, and nothing saved changes`() {
+        val progress = InMemoryLearnerProgress()
+        val clock = FakeClock()
+        course.path.forEachIndexed { day, dailySet -> progress.recordCompleted(dailySet.id, on = march(2).plusDays(day.toLong())) }
+        clock.moveTo(march(2).plusDays(course.path.size.toLong()))
+        val completed = progress.completedDailySets()
+        val engine = CourseEngine(course, progress, clock)
+
+        course.path.forEach { dailySet ->
+            val steps = engine.playCorrectly(engine.startReplay(dailySet.id))
+
+            assertTrue(steps.all { it.isReplay }, "Daily Set ${dailySet.id}")
+            assertEquals(dailySet.tips.size, steps.count { it is Step.ShowTip }, "Tips of ${dailySet.id}")
+            assertEquals(
+                Step.ShowSummary(dailySet.exercises.size, dailySet.exercises.size, replay = true),
+                steps.last(),
+                "Daily Set ${dailySet.id}",
+            )
+        }
+
+        assertEquals(completed, progress.completedDailySets())
+        assertEquals(emptySet(), progress.reviewOnlyDays())
+        assertEquals(null, progress.dailySetInProgress())
+        assertEquals(emptyMap(), progress.itemProgress())
     }
 
     @Test

@@ -47,7 +47,7 @@ A short explanation of new grammar or words shown before the Exercises that rely
 _Avoid_: Lesson, hint, note
 
 **Replay**:
-Doing an already completed Daily Set again for practice. It does not advance the Path and does not affect Review.
+Doing an already completed Daily Set again for practice, started from the Path screen. It has the Daily Set's Tips and New Material but no Review. It does not advance the Path, does not count toward the Streak and does not affect Review, and one left unfinished is not kept.
 _Avoid_: Redo, practice mode
 
 **Streak**:

@@ -27,21 +27,32 @@ sealed interface Today {
 
 /** What the Daily Set player shows next. */
 sealed interface Step {
-    data class ShowTip(val tip: TipView, val progress: SetProgress) : Step
+    /** [replay] when this is a Replay, which saves nothing. */
+    data class ShowTip(val tip: TipView, val progress: SetProgress, val replay: Boolean = false) : Step
 
-    /** [review] marks an Exercise from the Review that ends the Daily Set. */
-    data class ShowExercise(val exercise: ExerciseView, val progress: SetProgress, val review: Boolean = false) : Step
+    /**
+     * [review] marks an Exercise from the Review that ends the Daily Set.
+     * [replay] when this is a Replay, which saves nothing.
+     */
+    data class ShowExercise(
+        val exercise: ExerciseView,
+        val progress: SetProgress,
+        val review: Boolean = false,
+        val replay: Boolean = false,
+    ) : Step
 
     /**
      * [correctAnswers] counts the Exercises answered correctly on the first attempt, Review included.
      * [itemsLearned] are the Items this Daily Set introduced. [reviewOnly] when it was a
-     * Review-only Daily Set, which introduces none.
+     * Review-only Daily Set, which introduces none. [replay] when this is a Replay, which saves
+     * nothing and lists no Items either, since none was learned for the first time.
      */
     data class ShowSummary(
         val correctAnswers: Int,
         val exercises: Int,
         val itemsLearned: List<ItemView> = emptyList(),
         val reviewOnly: Boolean = false,
+        val replay: Boolean = false,
     ) : Step
 }
 
@@ -133,9 +144,15 @@ class CourseEngine(
 
     /**
      * [dailySet] is the one on the Path, or for a Review-only Daily Set an empty one that is not
-     * on the Path, so that every Exercise comes from the Review saved in [state].
+     * on the Path, so that every Exercise comes from the Review saved in [state]. [replay] when it
+     * is a Replay, whose [state] is never saved.
      */
-    private class Playing(val dailySet: DailySet, var state: DailySetInProgress, val reviewOnly: Boolean = false)
+    private class Playing(
+        val dailySet: DailySet,
+        var state: DailySetInProgress,
+        val reviewOnly: Boolean = false,
+        val replay: Boolean = false,
+    )
 
     /** Whether any Exercise practises an Item, so a Review-only Daily Set would not be empty. */
     private val reviewable: Boolean by lazy {
@@ -165,6 +182,44 @@ class CourseEngine(
      */
     fun streak(): Int =
         streakOn(LocalDate.now(clock), progress.completedDailySets().values.toSet() + progress.reviewOnlyDays())
+
+    /**
+     * The Path: every Level opened so far, with its Units and their Daily Sets. A Level opens when
+     * every Daily Set of the Levels before it is completed. A Review-only Daily Set is not on it.
+     */
+    fun path(): PathView {
+        val completed = progress.completedDailySets().keys
+        val offered = today()
+        val startable = offered == Today.DailySetAvailable || (offered is Today.InProgress && !offered.reviewOnly)
+        val todays = if (startable) course.path.firstOrNull { it.id !in completed }?.id else null
+        val opened = course.levels.filterIndexed { index, _ ->
+            course.levels.take(index).all { earlier -> earlier.units.all { unit -> unit.dailySets.all { it.id in completed } } }
+        }
+        return PathView(
+            opened.map { level ->
+                var number = 0
+                LevelView(
+                    level.id,
+                    localize(level.title),
+                    level.units.mapIndexed { index, unit ->
+                        UnitView(
+                            unit.id,
+                            number = index + 1,
+                            title = localize(unit.title),
+                            dailySets = unit.dailySets.map { set ->
+                                val state = when (set.id) {
+                                    in completed -> DailySetState.COMPLETED
+                                    todays -> DailySetState.TODAY
+                                    else -> DailySetState.LOCKED
+                                }
+                                DailySetView(set.id, ++number, state)
+                            },
+                        )
+                    },
+                )
+            },
+        )
+    }
 
     /**
      * Starts what today offers: the next Daily Set on the Path or, once every one is completed, a
@@ -205,11 +260,27 @@ class CourseEngine(
     }
 
     /**
+     * Starts a Replay of a completed Daily Set: its Tips and New Material again, without Review.
+     * A Replay is kept in memory only and saves nothing, so it cannot advance the Path, count
+     * toward the Streak or reschedule an Item, and it is forgotten if it is left unfinished.
+     * Fails unless [dailySetId] is a completed Daily Set on the Path.
+     */
+    fun startReplay(dailySetId: String): Step {
+        val set = course.path.firstOrNull { it.id == dailySetId }
+        check(set != null && dailySetId in progress.completedDailySets()) {
+            "Daily Set $dailySetId is not completed, so it cannot be replayed"
+        }
+        playing = Playing(set, DailySetInProgress(set.id, remaining = set.exercises.map { it.id }), replay = true)
+        return next()
+    }
+
+    /**
      * Checks the Learner's answer to the Exercise currently shown and saves where the Learner is.
      * A wrongly answered Exercise goes to the end of the queue and returns until it is answered
      * correctly. The Daily Set, new or Review-only, is completed, on the day of this answer, when
      * none remain.
      * The first attempt at an Exercise, and only the first, reschedules each of its Items.
+     * A Replay is checked and queued the same way but nothing is saved.
      */
     fun answer(answer: Answer): Feedback {
         val playing = current()
@@ -218,13 +289,14 @@ class CourseEngine(
         check(state.remaining.isNotEmpty()) { "Every Exercise of Daily Set ${set.id} has already been answered" }
         val exercise = course.exercises.getValue(state.remaining.first())
         val feedback = check(exercise, answer).let { it.copy(audio = audioFor(exercise, it)) }
-        val items = if (exercise.id in state.missed) emptyMap() else itemsAfter(exercise, feedback.correct)
+        val items = if (playing.replay || exercise.id in state.missed) emptyMap() else itemsAfter(exercise, feedback.correct)
         val rest = state.remaining.drop(1)
         playing.state = if (feedback.correct) {
             state.copy(remaining = rest)
         } else {
             state.copy(remaining = rest + exercise.id, missed = state.missed + exercise.id)
         }
+        if (playing.replay) return feedback
         if (playing.state.remaining.isEmpty()) {
             val today = LocalDate.now(clock)
             if (playing.reviewOnly) {
@@ -262,19 +334,25 @@ class CourseEngine(
             ?: return Step.ShowSummary(
                 correctAnswers = total - state.missed.size,
                 exercises = total,
-                itemsLearned = course.introducedIn(set).map { ItemView(it.text, localize(it.meaning)) },
+                itemsLearned = if (playing.replay) {
+                    emptyList()
+                } else {
+                    course.introducedIn(set).map { ItemView(it.text, localize(it.meaning)) }
+                },
                 reviewOnly = playing.reviewOnly,
+                replay = playing.replay,
             )
         val tip = set.tips.firstOrNull { it.before == exerciseId && it.id !in state.shownTips }
         if (tip != null) {
             // Saved with the next answer: a Tip seen but not followed by an answer is shown again on resume.
             playing.state = state.copy(shownTips = state.shownTips + tip.id)
-            return Step.ShowTip(view(tip), progressOf(playing))
+            return Step.ShowTip(view(tip), progressOf(playing), replay = playing.replay)
         }
         return Step.ShowExercise(
             view(course.exercises.getValue(exerciseId)),
             progressOf(playing),
             review = exerciseId in state.review,
+            replay = playing.replay,
         )
     }
 

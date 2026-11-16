@@ -2,6 +2,7 @@ package com.polisheasy.app.ui
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
@@ -34,6 +35,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.safeDrawingPadding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
@@ -73,9 +76,12 @@ import com.polisheasy.app.Screen
 import com.polisheasy.engine.Answer
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.ConjugationTableView
+import com.polisheasy.engine.DailySetState
+import com.polisheasy.engine.DailySetView
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.ItemView
+import com.polisheasy.engine.PathView
 import com.polisheasy.engine.Person
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.TileSelection
@@ -97,7 +103,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
             is Screen.Home -> {
                 // Coming back to the app after midnight unlocks the next Daily Set.
                 LifecycleResumeEffect(Unit) {
-                    viewModel.refreshHome()
+                    viewModel.refresh()
                     onPauseOrDispose { }
                 }
                 HomeScreen(
@@ -105,14 +111,24 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                     screen.streak,
                     onStart = viewModel::startDailySet,
                     onContinue = viewModel::resumeDailySet,
+                    onOpenPath = viewModel::openPath,
                 )
             }
-            is Screen.Tip -> {
+            is Screen.Path -> {
                 BackHandler(onBack = viewModel::backToHome)
+                // Coming back after midnight makes the next Daily Set today's.
+                LifecycleResumeEffect(Unit) {
+                    viewModel.refresh()
+                    onPauseOrDispose { }
+                }
+                PathScreen(screen.path, onReplay = viewModel::replay, onOpenTodays = viewModel::openTodays)
+            }
+            is Screen.Tip -> {
+                BackHandler(onBack = viewModel::leaveDailySet)
                 TipScreen(screen.tip, screen.progress, onContinue = viewModel::continueToNext)
             }
             is Screen.Player -> {
-                BackHandler(onBack = viewModel::backToHome)
+                BackHandler(onBack = viewModel::leaveDailySet)
                 // Keyed on each showing, so an Exercise that returns starts fresh, typed text included.
                 key(screen.shown) {
                     // A Clip stops when the Learner moves on.
@@ -121,6 +137,7 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                         screen.exercise,
                         screen.progress,
                         screen.review,
+                        screen.replay,
                         screen.feedback,
                         onAnswer = viewModel::answer,
                         onContinue = viewModel::continueToNext,
@@ -129,13 +146,14 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel()) {
                 }
             }
             is Screen.Summary -> {
-                BackHandler(onBack = viewModel::backToHome)
+                BackHandler(onBack = viewModel::leaveDailySet)
                 SummaryScreen(
                     screen.correctAnswers,
                     screen.exercises,
                     screen.itemsLearned,
                     screen.reviewOnly,
-                    onDone = viewModel::backToHome,
+                    screen.replay,
+                    onDone = viewModel::leaveDailySet,
                 )
             }
         }
@@ -203,7 +221,7 @@ private fun DailySetColumn(
 }
 
 @Composable
-private fun HomeScreen(today: Today, streak: Int, onStart: () -> Unit, onContinue: () -> Unit) {
+private fun HomeScreen(today: Today, streak: Int, onStart: () -> Unit, onContinue: () -> Unit, onOpenPath: () -> Unit) {
     ScreenColumn {
         Text(stringResource(R.string.app_name), style = MaterialTheme.typography.displaySmall)
         Spacer(Modifier.height(8.dp))
@@ -245,6 +263,123 @@ private fun HomeScreen(today: Today, streak: Int, onStart: () -> Unit, onContinu
                 Text(stringResource(message, unlockTime), textAlign = TextAlign.Center)
             }
             Today.AllCompleted -> Text(stringResource(R.string.home_all_completed), textAlign = TextAlign.Center)
+        }
+        Spacer(Modifier.height(16.dp))
+        OutlinedButton(onClick = onOpenPath, modifier = Modifier.fillMaxWidth()) {
+            Text(stringResource(R.string.home_path))
+        }
+    }
+}
+
+/** One row of the Path screen's list. */
+private sealed interface PathRow {
+    val key: String
+
+    data class LevelTitle(override val key: String, val title: String) : PathRow
+
+    data class UnitHeader(override val key: String, val number: Int, val title: String) : PathRow
+
+    data class DailySetRow(val dailySet: DailySetView) : PathRow {
+        override val key: String get() = dailySet.id
+    }
+}
+
+/**
+ * The Path: every Level opened so far, its Units and their Daily Sets, each marked Completed,
+ * Today or Locked. A completed one starts a Replay and today's opens it; a locked one does nothing.
+ */
+@Composable
+private fun PathScreen(path: PathView, onReplay: (String) -> Unit, onOpenTodays: () -> Unit) {
+    val rows = remember(path) {
+        path.levels.flatMap { level ->
+            listOf(PathRow.LevelTitle("level-${level.id}", level.title)) + level.units.flatMap { unit ->
+                listOf(PathRow.UnitHeader("unit-${unit.id}", unit.number, unit.title)) +
+                    unit.dailySets.map { PathRow.DailySetRow(it) }
+            }
+        }
+    }
+    val allCompleted = rows.none { it is PathRow.DailySetRow && it.dailySet.state != DailySetState.COMPLETED }
+    // Opens at the Unit the Learner is in: the one holding the first Daily Set not yet completed.
+    val firstOpen = rows.indexOfFirst { it is PathRow.DailySetRow && it.dailySet.state != DailySetState.COMPLETED }
+    val startAt = if (firstOpen < 0) 0 else rows.take(firstOpen).indexOfLast { it is PathRow.UnitHeader }.coerceAtLeast(0)
+    val listState = rememberLazyListState(initialFirstVisibleItemIndex = startAt)
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .safeDrawingPadding()
+            .padding(24.dp),
+    ) {
+        LazyColumn(state = listState, modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            items(count = rows.size, key = { rows[it].key }) { index ->
+                when (val row = rows[index]) {
+                    is PathRow.LevelTitle -> Text(row.title, style = MaterialTheme.typography.headlineMedium)
+                    is PathRow.UnitHeader -> Text(
+                        stringResource(R.string.path_unit, row.number, row.title),
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.padding(top = 16.dp),
+                    )
+                    is PathRow.DailySetRow -> DailySetPathRow(row.dailySet, onReplay, onOpenTodays)
+                }
+            }
+            if (allCompleted) {
+                item(key = "more-units") {
+                    Text(
+                        stringResource(R.string.path_more_units),
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 16.dp),
+                    )
+                }
+            }
+        }
+    }
+}
+
+/** A Daily Set on the Path. Its state is always written out, never shown by colour alone. */
+@Composable
+private fun DailySetPathRow(dailySet: DailySetView, onReplay: (String) -> Unit, onOpenTodays: () -> Unit) {
+    val replayLabel = stringResource(R.string.path_replay)
+    val startLabel = stringResource(R.string.home_start)
+    val modifier = when (dailySet.state) {
+        DailySetState.COMPLETED -> Modifier.clickable(onClickLabel = replayLabel) { onReplay(dailySet.id) }
+        DailySetState.TODAY -> Modifier.clickable(onClickLabel = startLabel, onClick = onOpenTodays)
+        DailySetState.LOCKED -> Modifier.alpha(0.5f)
+    }
+    Surface(
+        color = MaterialTheme.colorScheme.surfaceVariant,
+        shape = MaterialTheme.shapes.medium,
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 56.dp),
+    ) {
+        Row(
+            modifier = modifier
+                .heightIn(min = 56.dp)
+                .padding(horizontal = 16.dp, vertical = 12.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text(
+                stringResource(R.string.path_daily_set, dailySet.number),
+                style = MaterialTheme.typography.bodyLarge,
+                modifier = Modifier.weight(1f),
+            )
+            when (dailySet.state) {
+                DailySetState.COMPLETED -> Text(
+                    stringResource(R.string.path_completed),
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                DailySetState.TODAY -> Text(
+                    stringResource(R.string.path_today),
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.SemiBold,
+                )
+                DailySetState.LOCKED -> Text(
+                    stringResource(R.string.path_locked),
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
         }
     }
 }
@@ -306,6 +441,7 @@ private fun PlayerScreen(
     exercise: ExerciseView,
     progress: SetProgress,
     review: Boolean,
+    replay: Boolean,
     feedback: Feedback?,
     onAnswer: (Answer) -> Unit,
     onContinue: () -> Unit,
@@ -323,9 +459,10 @@ private fun PlayerScreen(
             }
         },
     ) {
-        if (review) {
+        // A Replay has no Review, so the two labels never meet.
+        if (review || replay) {
             Text(
-                stringResource(R.string.review_label),
+                stringResource(if (replay) R.string.replay_label else R.string.review_label),
                 style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.primary,
             )
@@ -730,6 +867,7 @@ private fun SummaryScreen(
     exercises: Int,
     itemsLearned: List<ItemView>,
     reviewOnly: Boolean,
+    replay: Boolean,
     onDone: () -> Unit,
 ) {
     Column(
@@ -749,7 +887,13 @@ private fun SummaryScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Text(
-                stringResource(if (reviewOnly) R.string.summary_review_only_title else R.string.summary_title),
+                stringResource(
+                    when {
+                        replay -> R.string.summary_replay_title
+                        reviewOnly -> R.string.summary_review_only_title
+                        else -> R.string.summary_title
+                    },
+                ),
                 style = MaterialTheme.typography.headlineMedium,
                 textAlign = TextAlign.Center,
             )
@@ -771,7 +915,7 @@ private fun SummaryScreen(
         }
         Spacer(Modifier.height(16.dp))
         Button(onClick = onDone, modifier = Modifier.fillMaxWidth()) {
-            Text(stringResource(R.string.summary_back_home))
+            Text(stringResource(if (replay) R.string.summary_back_path else R.string.summary_back_home))
         }
     }
 }
