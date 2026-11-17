@@ -24,6 +24,8 @@ internal data class CourseFile(
     val listening: String? = null,
     /** The paths of the conversations of the Chat Game, one file each. */
     val chats: List<String> = emptyList(),
+    /** Optional: the path of the file with the forms and people of the Ankieta Game. */
+    val ankieta: String? = null,
 )
 
 /** The Polish instruction of each kind of Exercise, as the book words it. */
@@ -129,6 +131,8 @@ internal class ReadContent(
     /** The conversations of the Chat Game, each with its file. */
     val chats: List<Filed<ChatScript>> = emptyList(),
     val chatFiles: List<String> = emptyList(),
+    val ankieta: AnkietaFile = AnkietaFile(),
+    val ankietaFile: String? = null,
 ) {
     /** Where the pictures' files are: the directory of the file that lists them. */
     val pictureDir: String = picturesFile?.substringBeforeLast('/', "").orEmpty()
@@ -137,7 +141,7 @@ internal class ReadContent(
 
     /** Every path `course.json` names. */
     val listed: Set<String> =
-        (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile, practiceFile, instructionsFile, tracksFile, segmentsFile, listeningFile) + chatFiles).toSet()
+        (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile, practiceFile, instructionsFile, tracksFile, segmentsFile, listeningFile, ankietaFile) + chatFiles).toSet()
 
     private val unreadableFiles = unreadable.map { it.file }.toSet()
 
@@ -185,6 +189,7 @@ internal class ReadContent(
             }.toMap(),
             listening = listening,
             chats = chats.map { it.value },
+            ankieta = ankieta,
             letterNames = practice?.letters.orEmpty(),
         )
     }
@@ -245,6 +250,8 @@ internal fun readContent(readFile: (path: String) -> String): ReadContent {
         listeningFile = index.listening,
         chats = index.chats.distinct().mapNotNull { path -> read(path) { contentJson.decodeFromString<ChatScript>(it) }?.let { Filed(path, it) } },
         chatFiles = index.chats,
+        ankieta = index.ankieta?.let { path -> read(path) { contentJson.decodeFromString<AnkietaFile>(it) } } ?: AnkietaFile(),
+        ankietaFile = index.ankieta,
         unreadable = unreadable,
     )
 }
@@ -359,6 +366,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
+    problems += ankietaProblems(content)
     content.pictures.map { it.value.item }.repeated().forEach { item ->
         problems += ContentProblem(content.picturesFile.orEmpty(), item, "Item $item has more than one picture")
     }
@@ -629,6 +637,41 @@ private fun chatProblems(content: ReadContent): List<ContentProblem> {
                 if (!reply.right && reply.next != null) problem("turn ${turn.id} has a wrong reply that leads on")
                 if (reply.right) typedAnswersProblem(reply.answers)?.let { problem("turn ${turn.id}: the reply \"${reply.text}\" $it") }
             }
+        }
+    }
+    return problems
+}
+
+/**
+ * What the Ankieta Game could not play: repeated ids, an answer to a field that is not there, a
+ * field someone answers with too little to choose among, an Item not defined.
+ */
+private fun ankietaProblems(content: ReadContent): List<ContentProblem> {
+    val file = content.ankietaFile ?: return emptyList()
+    val ankieta = content.ankieta
+    val problems = mutableListOf<ContentProblem>()
+    ankieta.fields.map { it.id }.repeated().forEach { problems += ContentProblem(file, it, "Ankieta has more than one field $it") }
+    ankieta.people.map { it.id }.repeated().forEach { problems += ContentProblem(file, it, "Ankieta has more than one person $it") }
+    val fields = ankieta.fields.map { it.id }.toSet()
+    ankieta.fields.filter { it.label.isBlank() }.forEach { problems += ContentProblem(file, it.id, "Ankieta field ${it.id} has no label") }
+    ankieta.people.forEach { person ->
+        fun problem(message: String) {
+            problems += ContentProblem(file, person.id, "Ankieta person ${person.id} $message")
+        }
+        if (person.says.isEmpty()) problem("says nothing")
+        if (person.items.isEmpty()) problem("lists no Items, so they would be met before anything is learned")
+        if (person.says.any { it.text.isBlank() }) problem("has a blank line")
+        person.items.filter { content.itemsComplete && it !in content.course().itemsById }.forEach { problem("lists Item $it, which is not defined") }
+        (person.answers.keys + person.wrong.keys).filter { it !in fields }.forEach { problem("answers field $it, which is not there") }
+        if (person.answers.keys.none { it in fields }) problem("answers no field")
+        person.answers.forEach { (field, answer) ->
+            if (answer.isBlank()) problem("has a blank answer to $field")
+            val others = ankieta.people.filter { it.id != person.id }.mapNotNull { it.answers[field] } + person.wrong[field].orEmpty()
+            val choices = others.map { it.lowercase(Locale.ROOT) }.toSet() - answer.lowercase(Locale.ROOT)
+            if (choices.size < 2) problem("answers $field with fewer than two other answers to choose among")
+        }
+        person.wrong.forEach { (field, wrong) ->
+            if (wrong.any { it.equals(person.answers[field], ignoreCase = true) }) problem("gives the right answer to $field as a wrong one")
         }
     }
     return problems

@@ -32,6 +32,8 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_chat, R.string.game_chat_note, R.string.game_chat_needs, R.drawable.game_chat)
     Game.REGISTER_SORT ->
         GameWords(R.string.game_register_sort, R.string.game_register_sort_note, R.string.game_register_sort_needs, R.drawable.game_register_sort)
+    Game.ANKIETA ->
+        GameWords(R.string.game_ankieta, R.string.game_ankieta_note, R.string.game_ankieta_needs, R.drawable.game_ankieta)
     Game.PHRASE_CHAINS ->
         GameWords(R.string.game_phrase_chains, R.string.game_phrase_chains_note, R.string.game_phrase_chains_needs, R.drawable.game_phrase_chains)
     Game.LISTEN_AND_TAP ->
@@ -62,7 +64,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.CHAT -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.CHAT, Game.ANKIETA -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
@@ -89,6 +91,7 @@ internal fun choiceLabel(id: String): String = stringResource(
         "noun" -> R.string.choice_noun
         "chat" -> R.string.choice_chat
         "way" -> R.string.choice_way
+        "intro" -> R.string.choice_intro
         else -> error("No name for the choice $id")
     },
 )

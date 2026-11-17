@@ -1,0 +1,435 @@
+{
+  "fields": [
+    {
+      "id": "imie",
+      "label": "Imię",
+      "meaning": {
+        "en": "First name"
+      }
+    },
+    {
+      "id": "skad",
+      "label": "Skąd jest?",
+      "meaning": {
+        "en": "Where is this person from?"
+      }
+    },
+    {
+      "id": "mieszka",
+      "label": "Gdzie mieszka?",
+      "meaning": {
+        "en": "Where does this person live?"
+      }
+    },
+    {
+      "id": "telefon",
+      "label": "Numer telefonu",
+      "meaning": {
+        "en": "Phone number"
+      }
+    },
+    {
+      "id": "dlaczego",
+      "label": "Dlaczego uczy się polskiego?",
+      "meaning": {
+        "en": "Why is this person learning Polish?"
+      }
+    }
+  ],
+  "people": [
+    {
+      "id": "julia",
+      "items": [
+        "czesc",
+        "miec-mam",
+        "na-imie",
+        "byc-jestem",
+        "z-francji",
+        "i",
+        "mieszkac-mieszkam",
+        "w-warszawie",
+        "moj",
+        "numer-telefonu",
+        "to",
+        "czternascie",
+        "dwadziescia",
+        "jeden",
+        "osiem",
+        "ucze-sie-polskiego",
+        "bo",
+        "chlopak",
+        "byc-jest",
+        "z-polski",
+        "jej"
+      ],
+      "says": [
+        {
+          "text": "Cześć! Mam na imię Julia.",
+          "meaning": {
+            "en": "Hi! My name is Julia."
+          }
+        },
+        {
+          "text": "Jestem z Francji i mieszkam w Warszawie.",
+          "meaning": {
+            "en": "I am from France and I live in Warsaw."
+          }
+        },
+        {
+          "text": "Mój numer telefonu to dwadzieścia jeden, czternaście, dwadzieścia osiem.",
+          "meaning": {
+            "en": "My phone number is 21 14 28."
+          }
+        },
+        {
+          "text": "Uczę się polskiego, bo mój chłopak jest z Polski.",
+          "meaning": {
+            "en": "I am learning Polish because my boyfriend is from Poland."
+          }
+        }
+      ],
+      "answers": {
+        "imie": "Julia",
+        "skad": "z Francji",
+        "mieszka": "w Warszawie",
+        "telefon": "21 14 28",
+        "dlaczego": "bo jej chłopak jest z Polski"
+      },
+      "wrong": {
+        "telefon": [
+          "21 4 28",
+          "12 14 28",
+          "21 14 18"
+        ]
+      }
+    },
+    {
+      "id": "maria",
+      "items": [
+        "dzien-dobry",
+        "miec-mam",
+        "na-imie",
+        "byc-jestem",
+        "z-hiszpanii",
+        "i",
+        "mieszkac-mieszkam",
+        "w-krakowie",
+        "moj",
+        "numer-telefonu",
+        "to",
+        "dwadziescia",
+        "dwanascie",
+        "dziewietnascie",
+        "piec",
+        "ucze-sie-polskiego",
+        "zeby",
+        "studiowac",
+        "w-polsce"
+      ],
+      "says": [
+        {
+          "text": "Dzień dobry! Mam na imię Maria.",
+          "meaning": {
+            "en": "Good morning! My name is Maria."
+          }
+        },
+        {
+          "text": "Jestem z Hiszpanii i mieszkam w Krakowie.",
+          "meaning": {
+            "en": "I am from Spain and I live in Kraków."
+          }
+        },
+        {
+          "text": "Mój numer telefonu to dwanaście, dziewiętnaście, dwadzieścia pięć.",
+          "meaning": {
+            "en": "My phone number is 12 19 25."
+          }
+        },
+        {
+          "text": "Uczę się polskiego, żeby studiować w Polsce.",
+          "meaning": {
+            "en": "I am learning Polish to study in Poland."
+          }
+        }
+      ],
+      "answers": {
+        "imie": "Maria",
+        "skad": "z Hiszpanii",
+        "mieszka": "w Krakowie",
+        "telefon": "12 19 25",
+        "dlaczego": "żeby studiować w Polsce"
+      },
+      "wrong": {
+        "telefon": [
+          "12 9 25",
+          "20 19 25",
+          "12 19 15"
+        ]
+      }
+    },
+    {
+      "id": "anna",
+      "items": [
+        "czesc",
+        "miec-mam",
+        "na-imie",
+        "byc-jestem",
+        "z-niemiec",
+        "i",
+        "mieszkac-mieszkam",
+        "w-berlinie",
+        "moj",
+        "numer-telefonu",
+        "to",
+        "dwadziescia",
+        "jedenascie",
+        "siedemnascie",
+        "trzy",
+        "ucze-sie-polskiego",
+        "bo",
+        "moja",
+        "mama",
+        "byc-jest",
+        "z-polski",
+        "jej"
+      ],
+      "says": [
+        {
+          "text": "Cześć! Mam na imię Anna.",
+          "meaning": {
+            "en": "Hi! My name is Anna."
+          }
+        },
+        {
+          "text": "Jestem z Niemiec i mieszkam w Berlinie.",
+          "meaning": {
+            "en": "I am from Germany and I live in Berlin."
+          }
+        },
+        {
+          "text": "Mój numer telefonu to siedemnaście, jedenaście, dwadzieścia trzy.",
+          "meaning": {
+            "en": "My phone number is 17 11 23."
+          }
+        },
+        {
+          "text": "Uczę się polskiego, bo moja mama jest z Polski.",
+          "meaning": {
+            "en": "I am learning Polish because my mum is from Poland."
+          }
+        }
+      ],
+      "answers": {
+        "imie": "Anna",
+        "skad": "z Niemiec",
+        "mieszka": "w Berlinie",
+        "telefon": "17 11 23",
+        "dlaczego": "bo jej mama jest z Polski"
+      },
+      "wrong": {
+        "telefon": [
+          "17 11 13",
+          "7 11 23",
+          "17 12 23"
+        ]
+      }
+    },
+    {
+      "id": "robert",
+      "items": [
+        "dzien-dobry",
+        "miec-mam",
+        "na-imie",
+        "byc-jestem",
+        "z-anglii",
+        "i",
+        "mieszkac-mieszkam",
+        "w-londynie",
+        "moj",
+        "numer-telefonu",
+        "to",
+        "dwadziescia",
+        "pietnascie",
+        "szesc",
+        "trzynascie",
+        "ucze-sie-polskiego",
+        "bo",
+        "moja",
+        "dziewczyna",
+        "byc-jest",
+        "z-polski",
+        "jego"
+      ],
+      "says": [
+        {
+          "text": "Dzień dobry! Mam na imię Robert.",
+          "meaning": {
+            "en": "Good morning! My name is Robert."
+          }
+        },
+        {
+          "text": "Jestem z Anglii i mieszkam w Londynie.",
+          "meaning": {
+            "en": "I am from England and I live in London."
+          }
+        },
+        {
+          "text": "Mój numer telefonu to trzynaście, dwadzieścia sześć, piętnaście.",
+          "meaning": {
+            "en": "My phone number is 13 26 15."
+          }
+        },
+        {
+          "text": "Uczę się polskiego, bo moja dziewczyna jest z Polski.",
+          "meaning": {
+            "en": "I am learning Polish because my girlfriend is from Poland."
+          }
+        }
+      ],
+      "answers": {
+        "imie": "Robert",
+        "skad": "z Anglii",
+        "mieszka": "w Londynie",
+        "telefon": "13 26 15",
+        "dlaczego": "bo jego dziewczyna jest z Polski"
+      },
+      "wrong": {
+        "telefon": [
+          "13 16 15",
+          "13 26 5",
+          "3 26 15"
+        ]
+      }
+    },
+    {
+      "id": "leon",
+      "items": [
+        "czesc",
+        "miec-mam",
+        "na-imie",
+        "byc-jestem",
+        "z-wloch",
+        "i",
+        "mieszkac-mieszkam",
+        "w-krakowie",
+        "moj",
+        "numer-telefonu",
+        "to",
+        "cztery",
+        "dwadziescia",
+        "dziewiec",
+        "osiemnascie",
+        "ucze-sie-polskiego",
+        "zeby",
+        "pracowac",
+        "w-polsce"
+      ],
+      "says": [
+        {
+          "text": "Cześć! Mam na imię Leon.",
+          "meaning": {
+            "en": "Hi! My name is Leon."
+          }
+        },
+        {
+          "text": "Jestem z Włoch i mieszkam w Krakowie.",
+          "meaning": {
+            "en": "I am from Italy and I live in Kraków."
+          }
+        },
+        {
+          "text": "Mój numer telefonu to dwadzieścia cztery, osiemnaście, dwadzieścia dziewięć.",
+          "meaning": {
+            "en": "My phone number is 24 18 29."
+          }
+        },
+        {
+          "text": "Uczę się polskiego, żeby pracować w Polsce.",
+          "meaning": {
+            "en": "I am learning Polish to work in Poland."
+          }
+        }
+      ],
+      "answers": {
+        "imie": "Leon",
+        "skad": "z Włoch",
+        "mieszka": "w Krakowie",
+        "telefon": "24 18 29",
+        "dlaczego": "żeby pracować w Polsce"
+      },
+      "wrong": {
+        "telefon": [
+          "24 8 29",
+          "14 18 29",
+          "24 18 19"
+        ]
+      }
+    },
+    {
+      "id": "daniel",
+      "items": [
+        "dzien-dobry",
+        "miec-mam",
+        "na-imie",
+        "byc-jestem",
+        "z-niemiec",
+        "i",
+        "mieszkac-mieszkam",
+        "w-warszawie",
+        "moj",
+        "numer-telefonu",
+        "to",
+        "dwa",
+        "dwadziescia",
+        "siedem",
+        "szesnascie",
+        "ucze-sie-polskiego",
+        "bo",
+        "tata",
+        "byc-jest",
+        "z-polski",
+        "jego"
+      ],
+      "says": [
+        {
+          "text": "Dzień dobry! Mam na imię Daniel.",
+          "meaning": {
+            "en": "Good morning! My name is Daniel."
+          }
+        },
+        {
+          "text": "Jestem z Niemiec i mieszkam w Warszawie.",
+          "meaning": {
+            "en": "I am from Germany and I live in Warsaw."
+          }
+        },
+        {
+          "text": "Mój numer telefonu to szesnaście, dwadzieścia dwa, dwadzieścia siedem.",
+          "meaning": {
+            "en": "My phone number is 16 22 27."
+          }
+        },
+        {
+          "text": "Uczę się polskiego, bo mój tata jest z Polski.",
+          "meaning": {
+            "en": "I am learning Polish because my dad is from Poland."
+          }
+        }
+      ],
+      "answers": {
+        "imie": "Daniel",
+        "skad": "z Niemiec",
+        "mieszka": "w Warszawie",
+        "telefon": "16 22 27",
+        "dlaczego": "bo jego tata jest z Polski"
+      },
+      "wrong": {
+        "telefon": [
+          "16 22 7",
+          "6 22 27",
+          "16 12 27"
+        ]
+      }
+    }
+  ]
+}

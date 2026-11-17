@@ -101,6 +101,16 @@ fun polishContent(files: ContentFiles): PolishContent {
         }
     }
 
+    // Ankieta's fields and what its people say, each with what it means; the answers on the form are bare Polish.
+    content.ankietaFile?.let { file ->
+        content.ankieta.fields.forEach { field -> sentence(field.label, field.meaning, PolishUse(file, field.id, PolishRole.HEADING)) }
+        content.ankieta.people.forEach { person ->
+            person.says.forEach { sentence(it.text, it.meaning, PolishUse(file, person.id, PolishRole.PROMPT)) }
+            person.answers.values.forEach { sentence(it, null, PolishUse(file, person.id, PolishRole.ANSWER)) }
+            person.wrong.values.flatten().forEach { sentence(it, null, PolishUse(file, person.id, PolishRole.DISTRACTOR)) }
+        }
+    }
+
     content.dailySets.forEach { (file, dailySet) ->
         dailySet.section?.let { section ->
             sentence(section.heading, section.meaning, PolishUse(file, dailySet.id, PolishRole.HEADING))

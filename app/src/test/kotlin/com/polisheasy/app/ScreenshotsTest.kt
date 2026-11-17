@@ -66,6 +66,7 @@ import com.polisheasy.engine.RegisterRound
 import com.polisheasy.engine.Register
 import com.polisheasy.engine.SpellRound
 import com.polisheasy.engine.ListenRound
+import com.polisheasy.engine.AnkietaRound
 import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
@@ -1521,6 +1522,64 @@ class ScreenshotsTest {
     fun `Register sort over the real course at the largest font size`() = atTheLargestFontSize { registerSort("large") }
 
     /** Register sort: before a Round, a phrase, part of the way through, a wrong answer, and the result. */
+    @Test
+    fun `Ankieta over the real course in the light theme`() = ankieta("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Ankieta over the real course in the dark theme`() = ankieta("dark")
+
+    @Test
+    fun `Ankieta over the real course at the largest font size`() = atTheLargestFontSize { ankieta("large") }
+
+    /** Ankieta: before a Round, a person read with the first field asked, a field put right, the filled form, heard, and the result. */
+    private fun ankieta(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as AnkietaRound
+
+        fun fill(correctly: Boolean = true) {
+            val question = checkNotNull(round().question)
+            val option = if (correctly) question.right else question.options.first { it != question.right }
+            screen.onNode(hasText(option) and hasClickAction()).performScrollTo().performClick()
+            screen.waitForIdle()
+        }
+
+        fun moveOn() {
+            screen.mainClock.advanceTimeBy(Motion.MOVE_ON_MILLIS + 100)
+            screen.waitForIdle()
+        }
+
+        openRealPractice()
+        openGame(R.string.game_ankieta)
+        shot("160-ankieta-setup")
+        screen.onNodeWithText(app.getString(R.string.option_read)).performClick()
+        tap(R.string.setup_play)
+        shot("161-ankieta-read")
+        fill()
+        moveOn()
+        fill(correctly = false)
+        shot("162-ankieta-wrong")
+        tap(R.string.action_continue)
+        fill()
+        moveOn()
+        fill()
+        moveOn()
+        fill()
+        shot("163-ankieta-filled")
+        moveOn()
+        repeat(10) {
+            fill()
+            moveOn()
+        }
+        shot("164-ankieta-result")
+        tap(R.string.result_done)
+        openGame(R.string.game_ankieta)
+        screen.onNodeWithText(app.getString(R.string.option_listen)).performClick()
+        tap(R.string.setup_play)
+        shot("165-ankieta-heard")
+    }
+
     private fun registerSort(theme: String) {
         fun shot(name: String) = this.shot("$theme-$name")
 

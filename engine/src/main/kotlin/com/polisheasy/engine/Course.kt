@@ -31,6 +31,8 @@ data class Course(
     val listening: List<ListeningTask> = emptyList(),
     /** The conversations of the Chat Game, in the content's order. */
     val chats: List<ChatScript> = emptyList(),
+    /** The forms and people of the Ankieta Game. */
+    val ankieta: AnkietaFile = AnkietaFile(),
     /** What each small letter is called when a word is spelled aloud (*b* is *be*), for Spell it. */
     val letterNames: Map<String, String> = emptyMap(),
 ) {
