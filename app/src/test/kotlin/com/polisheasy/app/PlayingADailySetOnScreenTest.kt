@@ -318,9 +318,11 @@ class PlayingADailySetOnScreenTest {
         tap(R.string.summary_back_home)
 
         tap(R.string.nav_path)
+        // The Path is a shelf with a card for the Unit; the card opens its Lesson screen.
+        shows(text(R.string.path_shelf_progress, 1, 2))
+        shows(text(R.string.lesson_card_progress, 1, 2))
+        tap("A little of everything")
         // Daily Set 1 is named by its first Tip; Daily Set 2 has no Tip, so its number stands in.
-        shows(text(R.string.path_progress, 1, 2))
-        shows(text(R.string.path_unit_progress, 1, 2))
         val completed = text(R.string.path_stop_note, text(R.string.path_stop_number, 1, 2), text(R.string.path_completed))
         val dailySetOne = screen.onNode(hasText("The verb być") and hasText(completed))
         dailySetOne.assertIsDisplayed()
@@ -342,13 +344,16 @@ class PlayingADailySetOnScreenTest {
         shows(R.string.summary_replay_title)
         noStreakRaised()
         screen.onNodeWithTag(CONFETTI_TAG).assertDoesNotExist()
+        // A Replay started on the Lesson screen goes back to it.
         tap(R.string.summary_back_path)
         shows(R.string.path_unlocks_tomorrow)
 
         clock.moveToNextDay()
         back()
+        back()
         shows(R.string.home_ready)
         tap(R.string.nav_path)
+        tap("A little of everything")
         // Today's stop opens today's Daily Set, as Start on Home does.
         screen.onNode(dailySetTwo and hasText(text(R.string.path_today))).assertIsDisplayed().performClick()
         shows(R.string.choose_translation_instruction)
@@ -504,6 +509,7 @@ class PlayingADailySetOnScreenTest {
         shows(text(R.string.home_in_progress, 1, 6))
 
         tap(R.string.nav_path)
+        tap("A little of everything")
         absent(R.string.path_unlocks_tomorrow)
         screen.onNode(hasText(text(R.string.path_daily_set, 2)) and hasClickAction()).performClick()
         shows(R.string.path_replace_title)
@@ -511,6 +517,8 @@ class PlayingADailySetOnScreenTest {
         screen.onNode(hasText(text(R.string.path_replace_start)) and hasAnyAncestor(isDialog())).performClick()
 
         shows("tak")
+        back()
+        back()
         back()
         // Daily Set 1's progress is gone: Home offers Daily Set 2, in progress.
         shows(text(R.string.home_in_progress, 0, 2))
@@ -557,7 +565,10 @@ class PlayingADailySetOnScreenTest {
         CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock, oneADay = { Settings(app).oneADay }),
     )
 
-    private fun back() = screen.runOnUiThread { screen.activity.onBackPressedDispatcher.onBackPressed() }
+    private fun back() {
+        screen.runOnUiThread { screen.activity.onBackPressedDispatcher.onBackPressed() }
+        screen.waitForIdle()
+    }
 
     // Playing Daily Set 1 of the fixture course, each Exercise answered correctly
 

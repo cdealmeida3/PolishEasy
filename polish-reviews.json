@@ -159,11 +159,47 @@
             "meaning": "Polish (a man, after jestem, jesteś, jest)"
         },
         {
+            "text": "Polecenia",
+            "meaning": "Instructions"
+        },
+        {
             "text": "Polką",
             "meaning": "Polish (a woman, after jestem, jesteś, jest)"
         },
         {
             "text": "Polski"
+        },
+        {
+            "text": "Proszę napisać po polsku.",
+            "meaning": "Write it in Polish."
+        },
+        {
+            "text": "Proszę posłuchać i napisać.",
+            "meaning": "Listen and write."
+        },
+        {
+            "text": "Proszę posłuchać i wybrać.",
+            "meaning": "Listen and choose."
+        },
+        {
+            "text": "Proszę przetłumaczyć.",
+            "meaning": "Translate."
+        },
+        {
+            "text": "Proszę uzupełnić.",
+            "meaning": "Fill in the gap."
+        },
+        {
+            "text": "Proszę ułożyć zdanie.",
+            "meaning": "Put the words in order."
+        },
+        {
+            "text": "Proszę wybrać odpowiedź po polsku.",
+            "meaning": "Choose the answer in Polish."
+        },
+        {
+            "text": "Proszę, dziękuję, przepraszam",
+            "meaning": "Please, thank you, sorry"
         },
         {
             "text": "Twoja córka jest tutaj.",
@@ -180,6 +216,14 @@
         {
             "text": "Ty jesteś z Anglii?",
             "meaning": "Are you from England? (one friend)"
+        },
+        {
+            "text": "W klasie",
+            "meaning": "In the classroom"
+        },
+        {
+            "text": "W szkole",
+            "meaning": "At school"
         },
         {
             "text": "Wy jesteście z Polski?",
@@ -256,6 +300,14 @@
         },
         {
             "text": "chyba"
+        },
+        {
+            "text": "chłopak",
+            "meaning": "a boy; a boyfriend"
+        },
+        {
+            "text": "chłopak i dziewczyna",
+            "meaning": "a boy and a girl"
         },
         {
             "text": "co słychać?",
@@ -376,6 +428,10 @@
         {
             "text": "córkę",
             "meaning": "a daughter (after mam, masz, ma…)"
+        },
+        {
+            "text": "dialog",
+            "meaning": "a dialogue"
         },
         {
             "text": "dnia"
@@ -500,6 +556,10 @@
         {
             "text": "dziesięć",
             "meaning": "ten"
+        },
+        {
+            "text": "dziewczyna",
+            "meaning": "a girl; a girlfriend"
         },
         {
             "text": "dziewiętnaście",
@@ -679,6 +739,18 @@
         {
             "text": "ile twój syn ma lat?",
             "meaning": "how old is your son? (to one friend)"
+        },
+        {
+            "text": "imię",
+            "meaning": "a first name"
+        },
+        {
+            "text": "imię i nazwisko",
+            "meaning": "first name and surname"
+        },
+        {
+            "text": "imię, nazwisko, narodowość",
+            "meaning": "first name, surname, nationality"
         },
         {
             "text": "ja",
@@ -897,12 +969,44 @@
             "text": "jutra"
         },
         {
+            "text": "kolega",
+            "meaning": "a classmate; a friend (a man)"
+        },
+        {
+            "text": "kolega i koleżanka",
+            "meaning": "a classmate (a man) and a classmate (a woman)"
+        },
+        {
+            "text": "koleżanka",
+            "meaning": "a classmate (a woman)"
+        },
+        {
+            "text": "koleżanka",
+            "meaning": "a classmate; a friend (a woman)"
+        },
+        {
+            "text": "koleżanka i kolega",
+            "meaning": "a classmate (a man) and a classmate (a woman)"
+        },
+        {
             "text": "lat",
             "meaning": "years (after 5 to 20: pięć lat)"
         },
         {
             "text": "lata",
             "meaning": "years (after 2, 3 and 4: dwa lata)"
+        },
+        {
+            "text": "lekcja",
+            "meaning": "a lesson"
+        },
+        {
+            "text": "lekcja jeden",
+            "meaning": "lesson number one"
+        },
+        {
+            "text": "lekcja numer jeden",
+            "meaning": "lesson number one"
         },
         {
             "text": "ma",
@@ -1205,8 +1309,36 @@
             "meaning": "cheers (a toast); bless you (after a sneeze)"
         },
         {
+            "text": "napisać",
+            "meaning": "write"
+        },
+        {
+            "text": "narodowość",
+            "meaning": "a nationality"
+        },
+        {
+            "text": "nauczyciel",
+            "meaning": "a teacher (a man)"
+        },
+        {
+            "text": "nauczyciel i nauczycielka",
+            "meaning": "a teacher (a man) and a teacher (a woman)"
+        },
+        {
+            "text": "nauczycielka",
+            "meaning": "a teacher (a woman)"
+        },
+        {
+            "text": "nauczycielka i nauczyciel",
+            "meaning": "a teacher (a man) and a teacher (a woman)"
+        },
+        {
             "text": "nawzajem",
             "meaning": "likewise; you too"
+        },
+        {
+            "text": "nazwisko",
+            "meaning": "a surname"
         },
         {
             "text": "nazywam się",
@@ -1456,7 +1588,15 @@
             "meaning": "(in) Polish"
         },
         {
+            "text": "polecenie",
+            "meaning": "an instruction (in a book)"
+        },
+        {
             "text": "porządek"
+        },
+        {
+            "text": "posłuchać",
+            "meaning": "listen (proszę posłuchać: listen, please)"
         },
         {
             "text": "powodzenia",
@@ -1465,6 +1605,10 @@
         {
             "text": "powodzenia, do widzenia",
             "meaning": "good luck, goodbye"
+        },
+        {
+            "text": "powtórzyć",
+            "meaning": "repeat"
         },
         {
             "text": "pozdrowienia"
@@ -1494,6 +1638,69 @@
             "meaning": "once more, please"
         },
         {
+            "text": "proszę napisać",
+            "meaning": "write, please (an instruction)"
+        },
+        {
+            "text": "proszę posłuchać i napisać",
+            "meaning": "listen and write, please (an instruction)"
+        },
+        {
+            "text": "proszę posłuchać i powtórzyć",
+            "meaning": "listen and repeat, please"
+        },
+        {
+            "text": "proszę posłuchać i wybrać",
+            "meaning": "listen and choose, please"
+        },
+        {
+            "text": "proszę przeczytać"
+        },
+        {
+            "text": "proszę przeczytać i uzupełnić",
+            "meaning": "read and fill in, please"
+        },
+        {
+            "text": "proszę przeczytać polecenie",
+            "meaning": "read the instruction, please"
+        },
+        {
+            "text": "proszę przeczytać tekst",
+            "meaning": "read the text, please"
+        },
+        {
+            "text": "proszę przeliterować",
+            "meaning": "spell it, please (an instruction)"
+        },
+        {
+            "text": "proszę przeliterować nazwisko",
+            "meaning": "spell the surname, please"
+        },
+        {
+            "text": "proszę przetłumaczyć",
+            "meaning": "translate, please (an instruction)"
+        },
+        {
+            "text": "proszę przetłumaczyć dialog",
+            "meaning": "translate the dialogue, please"
+        },
+        {
+            "text": "proszę uzupełnić ćwiczenie",
+            "meaning": "complete the exercise, please"
+        },
+        {
+            "text": "proszę wybrać przykład",
+            "meaning": "choose an example, please"
+        },
+        {
+            "text": "przeczytać",
+            "meaning": "read"
+        },
+        {
+            "text": "przeliterować",
+            "meaning": "spell (letter by letter)"
+        },
+        {
             "text": "przepraszam",
             "meaning": "sorry; excuse me"
         },
@@ -1512,6 +1719,14 @@
         {
             "text": "przepraszamy",
             "meaning": "we are sorry"
+        },
+        {
+            "text": "przetłumaczyć",
+            "meaning": "translate"
+        },
+        {
+            "text": "przykład",
+            "meaning": "an example"
         },
         {
             "text": "pytanie",
@@ -1587,6 +1802,30 @@
         },
         {
             "text": "sobie"
+        },
+        {
+            "text": "strona",
+            "meaning": "a page"
+        },
+        {
+            "text": "strona pięć",
+            "meaning": "page five"
+        },
+        {
+            "text": "student",
+            "meaning": "a student (a man)"
+        },
+        {
+            "text": "student i studentka",
+            "meaning": "a student (a man) and a student (a woman)"
+        },
+        {
+            "text": "studentka",
+            "meaning": "a student (a woman)"
+        },
+        {
+            "text": "studentka i student",
+            "meaning": "a student (a man) and a student (a woman)"
         },
         {
             "text": "syn",
@@ -1680,6 +1919,18 @@
             "meaning": "dad"
         },
         {
+            "text": "tekst",
+            "meaning": "a text"
+        },
+        {
+            "text": "tekst i test",
+            "meaning": "a text and a test"
+        },
+        {
+            "text": "test",
+            "meaning": "a test"
+        },
+        {
             "text": "też",
             "meaning": "also; too"
         },
@@ -1708,6 +1959,10 @@
             "meaning": "this is Adam, he is from Poland"
         },
         {
+            "text": "to dziewczyna",
+            "meaning": "this is a girl"
+        },
+        {
             "text": "to jest Adam",
             "meaning": "this is Adam"
         },
@@ -1718,6 +1973,14 @@
         {
             "text": "to jest Adam, on jest z Polski",
             "meaning": "this is Adam, he is from Poland"
+        },
+        {
+            "text": "to jest dziewczyna",
+            "meaning": "this is a girl"
+        },
+        {
+            "text": "to jest lekcja",
+            "meaning": "this is a lesson"
         },
         {
             "text": "to jest moja rodzina",
@@ -1755,8 +2018,24 @@
             "text": "to jest mój syn"
         },
         {
+            "text": "to jest nauczyciel",
+            "meaning": "this is a teacher (a man)"
+        },
+        {
             "text": "to jest numer dziewięć",
             "meaning": "this is number nine"
+        },
+        {
+            "text": "to jest strona dziesięć",
+            "meaning": "this is page ten"
+        },
+        {
+            "text": "to jest student",
+            "meaning": "this is a student (a man)"
+        },
+        {
+            "text": "to jest studentka",
+            "meaning": "this is a student (a woman)"
         },
         {
             "text": "to jest twoje dziecko?",
@@ -1765,6 +2044,10 @@
         {
             "text": "to jest twój brat?",
             "meaning": "is this your brother? (to one friend)"
+        },
+        {
+            "text": "to lekcja",
+            "meaning": "this is a lesson"
         },
         {
             "text": "to moja rodzina",
@@ -1795,6 +2078,10 @@
             "meaning": "this is my brother"
         },
         {
+            "text": "to nauczyciel",
+            "meaning": "this is a teacher (a man)"
+        },
+        {
             "text": "to nie jest twój problem",
             "meaning": "this is not your problem (to one friend)"
         },
@@ -1805,6 +2092,18 @@
         {
             "text": "to numer dziewięć",
             "meaning": "this is number nine"
+        },
+        {
+            "text": "to strona dziesięć",
+            "meaning": "this is page ten"
+        },
+        {
+            "text": "to student",
+            "meaning": "this is a student (a man)"
+        },
+        {
+            "text": "to studentka",
+            "meaning": "this is a student (a woman)"
         },
         {
             "text": "to twoje dziecko?",
@@ -1908,6 +2207,10 @@
             "meaning": "you are (one friend)"
         },
         {
+            "text": "uzupełnić",
+            "meaning": "fill in; complete"
+        },
+        {
             "text": "w poniedziałek"
         },
         {
@@ -1949,6 +2252,10 @@
             "meaning": "you (several people)"
         },
         {
+            "text": "wybrać",
+            "meaning": "choose"
+        },
+        {
             "text": "wycieczkę"
         },
         {
@@ -1972,6 +2279,18 @@
         {
             "text": "zero, jeden, dwa",
             "meaning": "zero, one, two"
+        },
+        {
+            "text": "ćwiczenie",
+            "meaning": "an exercise"
+        },
+        {
+            "text": "ćwiczenie dwa",
+            "meaning": "exercise number two"
+        },
+        {
+            "text": "ćwiczenie numer dwa",
+            "meaning": "exercise number two"
         },
         {
             "text": "śmiesznie"
@@ -2191,6 +2510,22 @@
         {
             "id": "a1-u03-d08-t02",
             "hash": "8f34a020d202"
+        },
+        {
+            "id": "kpk1-l00-a-t01",
+            "hash": "7c7dac3e44d8"
+        },
+        {
+            "id": "kpk1-l00-b-t01",
+            "hash": "38a2a03e9c54"
+        },
+        {
+            "id": "kpk1-l00-c-t01",
+            "hash": "32af3ffa563c"
+        },
+        {
+            "id": "kpk1-l00-d-t01",
+            "hash": "18bbd0eef3c7"
         }
     ]
 }

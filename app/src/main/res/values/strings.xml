@@ -157,11 +157,7 @@
     <string name="summary_start_next">Start the next one</string>
     <string name="nav_home">Home</string>
     <string name="nav_path">Path</string>
-    <string name="path_unit">Unit %1$d · %2$s</string>
-    <string name="path_level">%1$s Path</string>
     <string name="path_unit_number">Unit %1$d</string>
-    <string name="path_progress">%1$d of %2$d Daily Sets completed</string>
-    <string name="path_unit_progress">%1$d of %2$d completed</string>
     <string name="path_stop_note">%1$s · %2$s</string>
     <string name="path_unlocks_tomorrow">Unlocks tomorrow</string>
     <string name="path_daily_set">Daily Set %1$d</string>
@@ -173,21 +169,10 @@
     <string name="path_replace_title">Start this one instead?</string>
     <string name="path_replace_note">Your progress in %1$s will be lost.</string>
     <string name="path_replace_start">Start</string>
-    <plurals name="path_unit_ahead">
-        <item quantity="one">%1$d Daily Set · Locked</item>
-        <item quantity="other">%1$d Daily Sets · Locked</item>
-    </plurals>
-    <plurals name="path_unit_ahead_open">
-        <item quantity="one">%1$d Daily Set</item>
-        <item quantity="other">%1$d Daily Sets</item>
-    </plurals>
-    <string name="path_unit_open">Show the Daily Sets</string>
-    <string name="path_unit_close">Hide the Daily Sets</string>
     <string name="path_unit_complete">Unit %1$d complete</string>
     <string name="path_unit_end">End of Unit %1$d</string>
     <string name="summary_unit_complete">Unit %1$d complete</string>
     <string name="path_replay">Replay</string>
-    <string name="path_more_units">You\'ve completed every Daily Set released so far. More Units are on the way.</string>
     <string name="replay_label">Replay</string>
     <string name="summary_replay_title">Replay complete</string>
     <string name="summary_back_path">Done</string>
@@ -422,4 +407,98 @@
     <string name="result_best_sentence">Your Best is %1$s</string>
     <string name="result_play_again">Play again</string>
     <string name="result_done">Done</string>
+
+    <!-- The Path as shelves, and a chapter's Lesson screen -->
+    <string name="path_shelf_progress">%1$d of %2$d sections completed</string>
+    <string name="lesson_card_progress">%1$d of %2$d sections</string>
+    <string name="lesson_card_coming">Coming soon</string>
+    <string name="lesson_card_current">You are here</string>
+    <string name="lesson_open">Open the lesson</string>
+    <string name="lesson_sealed">Test passed</string>
+    <string name="lesson_label">Lekcja %1$d</string>
+    <string name="lesson_strand_k">Komunikacja · speaking</string>
+    <string name="lesson_strand_l">Leksyka · words</string>
+    <string name="lesson_strand_g">Gramatyka · grammar</string>
+    <string name="lesson_strand_description">%1$s: %2$s. %3$d of %4$d sections completed.</string>
+    <string name="lesson_look_up">Sprawdź w słowniku</string>
+    <string name="lesson_look_up_note">Look it up: tap a word to hear it and see what it means.</string>
+    <string name="lesson_word_open">Hear it and see what it means</string>
+    <string name="lesson_sections">Sections</string>
+    <plurals name="lesson_new_words">
+        <item quantity="one">%d new word</item>
+        <item quantity="other">%d new words</item>
+    </plurals>
+    <string name="lesson_section_title">%1$s · %2$s</string>
+    <string name="lesson_review">Powtórzenie</string>
+    <string name="lesson_review_note">Go over the lesson whenever you like. Nothing here is locked.</string>
+    <string name="lesson_dictionary">Słownik</string>
+    <plurals name="lesson_dictionary_note">
+        <item quantity="one">%d word</item>
+        <item quantity="other">%d words</item>
+    </plurals>
+    <string name="lesson_dictionary_open">Open the word list</string>
+    <string name="lesson_flashcards">Fiszki</string>
+    <string name="lesson_flashcards_note">Flashcards</string>
+    <string name="lesson_flashcards_open">Turn the flashcards</string>
+    <string name="lesson_test">Test</string>
+    <plurals name="lesson_test_note">
+        <item quantity="one">%d question</item>
+        <item quantity="other">%d questions</item>
+    </plurals>
+    <string name="lesson_test_best">Best %1$d%%</string>
+    <string name="lesson_test_open">Take the Test</string>
+    <string name="lesson_coming_title">This lesson is on its way</string>
+    <string name="lesson_coming_note">Its sections are being written from the book. Above is what it will teach.</string>
+    <string name="lesson_complete">%1$s complete</string>
+    <string name="lesson_end">End of %1$s</string>
+    <string name="lesson_back">Back to the Path</string>
+
+    <!-- The book's register marks -->
+    <string name="register_formal">formal</string>
+    <string name="register_informal">informal</string>
+    <string name="register_universal">formal or informal</string>
+    <string name="register_description">%1$s, %2$s</string>
+
+    <!-- The Słownik -->
+    <string name="dictionary_title">Słownik</string>
+    <string name="dictionary_search">Find a word, in Polish or English</string>
+    <string name="dictionary_none">No word matches “%1$s”.</string>
+    <string name="dictionary_back">Back to the lesson</string>
+
+    <!-- The Fiszki -->
+    <string name="flashcards_title">Fiszki</string>
+    <string name="flashcards_count">Card %1$d of %2$d</string>
+    <string name="flashcards_turn">Turn the card</string>
+    <string name="flashcards_turn_hint">Say what it means, then tap to turn it.</string>
+    <string name="flashcards_knew">I knew it</string>
+    <string name="flashcards_not_yet">Not yet</string>
+    <string name="flashcards_due">Due for Review</string>
+    <string name="flashcards_new">New word</string>
+    <string name="flashcards_done_title">Wszystkie!</string>
+    <string name="flashcards_done_meaning">All of them!</string>
+    <string name="flashcards_done_note">You knew %1$d of %2$d. The ones you did not know come back in Review tomorrow.</string>
+    <string name="flashcards_again">Go again</string>
+    <string name="flashcards_empty">This lesson has no words yet.</string>
+
+    <!-- A chapter's Test -->
+    <string name="checkpoint_label">Test</string>
+    <string name="checkpoint_passed">Zdane!</string>
+    <string name="checkpoint_passed_meaning">Passed!</string>
+    <string name="checkpoint_not_passed">Jeszcze raz!</string>
+    <string name="checkpoint_not_passed_meaning">Once more!</string>
+    <string name="checkpoint_score">%1$d%%</string>
+    <string name="checkpoint_right">%1$d of %2$d right</string>
+    <string name="checkpoint_score_label">This time</string>
+    <string name="checkpoint_best_label">Best</string>
+    <string name="checkpoint_score_sentence">%1$d of %2$d right at the first try, %3$d percent.</string>
+    <string name="checkpoint_best_sentence">Your Best is %1$d percent.</string>
+    <string name="checkpoint_new_best">New Best</string>
+    <string name="checkpoint_sealed_note">The lesson has its seal. A Test passes at %1$d%%.</string>
+    <string name="checkpoint_try_note">%1$d%% passes and seals the lesson. Try again whenever you like: nothing is locked.</string>
+    <string name="checkpoint_again">Try again</string>
+
+    <!-- The book's instruction on an Exercise -->
+    <string name="instruction_translate">Show the instruction in English</string>
+    <string name="instruction_hide">Hide the English</string>
+    <string name="instruction_play">Hear the instruction</string>
 </resources>

@@ -28,6 +28,7 @@ import com.polisheasy.engine.Answer
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
+import com.polisheasy.engine.InstructionView
 import com.polisheasy.engine.TileSelection
 import androidx.compose.ui.res.stringArrayResource
 
@@ -54,6 +55,8 @@ internal fun PlayerScreen(
     onPlay: (ClipView, Boolean) -> Unit,
     onCantListen: () -> Unit,
     onReport: () -> Unit,
+    instruction: InstructionView? = null,
+    checkpoint: Boolean = false,
 ) {
     var typed by rememberSaveable(stateSaver = TextFieldValue.Saver) { mutableStateOf(TextFieldValue("")) }
     // The bank positions of the tiles in the answer, in order. The engine's TileSelection holds the rule.
@@ -148,22 +151,27 @@ internal fun PlayerScreen(
             }
         },
     ) {
-        // A Replay has no Review, so the two labels never meet.
-        if (review || replay) {
-            Instruction(stringResource(if (replay) R.string.replay_label else R.string.review_label), highlighted = true)
+        // A Replay and a Test have no Review, so the labels never meet.
+        if (review || replay || checkpoint) {
+            val label = when {
+                checkpoint -> R.string.checkpoint_label
+                replay -> R.string.replay_label
+                else -> R.string.review_label
+            }
+            Instruction(stringResource(label), highlighted = true)
             Spacer(Modifier.height(Space.xs))
         }
         when (exercise) {
-            is ExerciseView.ChooseTranslation -> ChooseTranslationPrompt(exercise, speak = answering && canListen, onPlay)
-            is ExerciseView.TypeAnswer -> BasePromptCard(stringResource(R.string.type_answer_instruction), exercise.prompt)
-            is ExerciseView.WordTiles -> BasePromptCard(stringResource(R.string.word_tiles_instruction), exercise.prompt)
+            is ExerciseView.ChooseTranslation -> ChooseTranslationPrompt(exercise, speak = answering && canListen, onPlay, instruction)
+            is ExerciseView.TypeAnswer -> BasePromptCard(stringResource(R.string.type_answer_instruction), exercise.prompt, instruction, onPlay)
+            is ExerciseView.WordTiles -> BasePromptCard(stringResource(R.string.word_tiles_instruction), exercise.prompt, instruction, onPlay)
             is ExerciseView.Conjugation ->
-                ConjugationPrompt(exercise, typed, onTypedChange = { typed = it }, answering, submitTyped)
+                ConjugationPrompt(exercise, typed, onTypedChange = { typed = it }, answering, submitTyped, instruction, onPlay)
             is ExerciseView.ListenChoose ->
-                ListenPrompt(stringResource(R.string.listen_choose_instruction), exercise.audio, playing, answering, onPlay)
+                ListenPrompt(stringResource(R.string.listen_choose_instruction), exercise.audio, playing, answering, onPlay, instruction)
             is ExerciseView.ListenType ->
-                ListenPrompt(stringResource(R.string.listen_type_instruction), exercise.audio, playing, answering, onPlay)
-            is ExerciseView.ChoosePolish -> BasePromptCard(stringResource(R.string.choose_polish_instruction), exercise.prompt)
+                ListenPrompt(stringResource(R.string.listen_type_instruction), exercise.audio, playing, answering, onPlay, instruction)
+            is ExerciseView.ChoosePolish -> BasePromptCard(stringResource(R.string.choose_polish_instruction), exercise.prompt, instruction, onPlay)
         }
     }
 }

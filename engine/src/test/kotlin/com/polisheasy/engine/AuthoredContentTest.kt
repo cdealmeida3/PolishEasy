@@ -222,29 +222,30 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `played one per day, Unit 1 has 0, 5, 6 then 8 Review Exercises a day, and every day of Units 2 and 3 has 8`() {
+    fun `played one per day, Unit 1 has 0, 5, 6 then 8 Review Exercises a day, and every later day has 8`() {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(4) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
-            listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7) + listOf(7, 7, 6, 7, 6, 6, 6, 6),
+            listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7) + listOf(7, 7, 6, 7, 6, 6, 6, 6) +
+                listOf(8, 8, 8, 3),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
 
     @Test
-    fun `a new Learner's Path is A1 with Units 1 to 3 of 7, 8 and 8 Daily Sets, numbered 1 to 23, the first one today's`() {
-        val level = CourseEngine(course, InMemoryLearnerProgress(), FakeClock(), oneADay = { true }).path().levels.single()
+    fun `a new Learner's Path starts with Starter, Units 1 to 3 of 7, 8 and 8 Daily Sets, numbered 1 to 23, the first one today's`() {
+        val level = CourseEngine(course, InMemoryLearnerProgress(), FakeClock(), oneADay = { true }).path().levels.first()
 
-        assertEquals("A1", level.title)
+        assertEquals("Starter", level.title)
         assertEquals(listOf(1, 2, 3), level.units.map { it.number })
         assertEquals(listOf("Sounds and greetings", "About me", "Numbers and family"), level.units.map { it.title })
         assertEquals(listOf(7, 8, 8), level.units.map { it.dailySets.size })
         val dailySets = level.units.flatMap { it.dailySets }
-        assertEquals(course.path.map { it.id }, dailySets.map { it.id })
+        assertEquals(course.levels.first().units.flatMap { u -> u.dailySets.map { it.id } }, dailySets.map { it.id })
         assertEquals((1..23).toList(), dailySets.map { it.number })
         assertEquals(
             listOf(DailySetState.TODAY) + List(22) { DailySetState.LOCKED },
@@ -253,8 +254,23 @@ class AuthoredContentTest {
     }
 
     @Test
+    fun `the book's Level has chapters 0 to 26 with their Polish titles, and chapter 0 has four sections`() {
+        val shelves = CourseEngine(course, InMemoryLearnerProgress(), FakeClock()).shelves()
+
+        assertEquals(listOf("a1", "kpk1"), shelves.map { it.id })
+        val book = shelves[1].lessons
+        assertEquals((0..26).toList(), book.map { it.number })
+        assertEquals("Dzień dobry!", book[0].title)
+        assertEquals("Pierwszy dzień w szkole", book[1].title)
+        assertEquals("The first day at school", book[1].subtitle)
+        assertEquals(4, book[0].sections)
+        assertTrue(book.drop(1).all { it.coming })
+        assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
+    }
+
+    @Test
     fun `every Daily Set of Units 1 to 3 has a title on the Path, and no two in a Unit share one`() {
-        val units = CourseEngine(course, InMemoryLearnerProgress(), FakeClock(), oneADay = { true }).path().levels.single().units
+        val units = CourseEngine(course, InMemoryLearnerProgress(), FakeClock(), oneADay = { true }).path().levels.first().units
 
         units.forEach { unit ->
             val titles = unit.dailySets.map { it.title }
@@ -292,8 +308,8 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `the course has 3 Units of 7, 8 and 8 Daily Sets`() {
-        assertEquals(listOf(7, 8, 8), course.levels.single().units.map { it.dailySets.size })
+    fun `Starter has 3 Units of 7, 8 and 8 Daily Sets`() {
+        assertEquals(listOf(7, 8, 8), course.levels.first().units.map { it.dailySets.size })
     }
 
     @Test

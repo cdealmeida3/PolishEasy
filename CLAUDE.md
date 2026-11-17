@@ -18,7 +18,7 @@ Single-context: one `GLOSSARY.md` and `docs/adr/` at the repo root. See `docs/ag
 
 ### Authoring content
 
-Read `docs/authoring.md` before writing or changing a Daily Set, and `docs/a1-path.md` for what each Unit of the A1 Path covers.
+Read `docs/authoring.md` before writing or changing a Daily Set, `docs/kpk1.md` for what each chapter of the book (the Path since ADR-0013) covers, and `docs/a1-path.md` for the Starter Units.
 
 ### Changing how the app looks
 

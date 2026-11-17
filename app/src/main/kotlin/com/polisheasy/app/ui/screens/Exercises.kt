@@ -30,6 +30,14 @@ import com.polisheasy.app.ui.components.TonalButton
 import com.polisheasy.app.ui.components.WordTileBoard
 import com.polisheasy.app.ui.theme.Space
 import com.polisheasy.engine.ClipView
+import com.polisheasy.engine.InstructionView
+import com.polisheasy.app.ui.components.PolishInstruction
+import com.polisheasy.app.ui.components.RegisterChip
+import com.polisheasy.app.ui.screens.lesson.registerWords
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import com.polisheasy.engine.ExerciseView
 import com.polisheasy.engine.Feedback
 import com.polisheasy.engine.Person
@@ -40,15 +48,47 @@ import com.polisheasy.engine.TileSelection
 
 /** A Polish prompt on its card. With [speak] its Clip plays by itself when the Exercise opens; the speaker plays it again. */
 @Composable
-internal fun ChooseTranslationPrompt(exercise: ExerciseView.ChooseTranslation, speak: Boolean, onPlay: (ClipView, Boolean) -> Unit) {
+internal fun ChooseTranslationPrompt(
+    exercise: ExerciseView.ChooseTranslation,
+    speak: Boolean,
+    onPlay: (ClipView, Boolean) -> Unit,
+    polish: InstructionView? = null,
+) {
     val clip = exercise.promptAudio
     // Once per showing: not again when the feedback appears, nor when an answered Exercise is rebuilt.
     LaunchedEffect(Unit) { if (speak && clip != null) onPlay(clip, false) }
-    Instruction(stringResource(R.string.choose_translation_instruction))
+    ExerciseInstruction(stringResource(R.string.choose_translation_instruction), polish, onPlay)
     Spacer(Modifier.height(Space.s))
     PromptCard(
         speaker = clip?.let { { SpeakerButton(stringResource(R.string.audio_play), onClick = { onPlay(it, false) }) } },
     ) { PolishPrompt(exercise.prompt) }
+    // The book marks whether a greeting is formal or informal: the mark goes under the phrase.
+    exercise.register?.let { register ->
+        Spacer(Modifier.height(Space.xs))
+        val words = registerWords(register)
+        RegisterChip(register.mark, description = stringResource(R.string.register_description, register.mark, words), label = words)
+    }
+}
+
+/**
+ * What to do, above a prompt. When the course gives the book's instruction, it is in Polish, with
+ * its English one tap away and a speaker to hear it; otherwise it is [english].
+ */
+@Composable
+internal fun ExerciseInstruction(english: String, polish: InstructionView?, onPlay: (ClipView, Boolean) -> Unit) {
+    if (polish == null) {
+        Instruction(english)
+        return
+    }
+    var translated by rememberSaveable { mutableStateOf(false) }
+    PolishInstruction(
+        polish = polish.polish,
+        english = polish.meaning,
+        translated = translated,
+        translateLabel = stringResource(if (translated) R.string.instruction_hide else R.string.instruction_translate),
+        onTranslate = { translated = !translated },
+        speaker = polish.audio?.let { clip -> { SpeakerButton(stringResource(R.string.instruction_play), onClick = { onPlay(clip, false) }) } },
+    )
 }
 
 /**
@@ -85,11 +125,12 @@ internal fun ListenPrompt(
     playing: Boolean,
     answering: Boolean,
     onPlay: (ClipView, Boolean) -> Unit,
+    polish: InstructionView? = null,
 ) {
     // Once per showing: not again when the feedback appears, nor when an answered Exercise is rebuilt.
     LaunchedEffect(Unit) { if (answering) onPlay(clip, false) }
 
-    Instruction(instruction)
+    ExerciseInstruction(instruction, polish, onPlay)
     Spacer(Modifier.height(Space.l))
     PlayControls(
         play = { PlayButton(stringResource(R.string.audio_play_again), onClick = { onPlay(clip, false) }, playing = playing) },
@@ -107,8 +148,8 @@ internal fun CantListen(answering: Boolean, onCantListen: () -> Unit) {
 
 /** A prompt in the Base Language on its card, under what to do with it. */
 @Composable
-internal fun BasePromptCard(instruction: String, prompt: String) {
-    Instruction(instruction)
+internal fun BasePromptCard(instruction: String, prompt: String, polish: InstructionView? = null, onPlay: (ClipView, Boolean) -> Unit = { _, _ -> }) {
+    ExerciseInstruction(instruction, polish, onPlay)
     Spacer(Modifier.height(Space.s))
     PromptCard { BasePrompt(prompt) }
 }
@@ -125,8 +166,10 @@ internal fun ConjugationPrompt(
     onTypedChange: (TextFieldValue) -> Unit,
     answering: Boolean,
     onSubmit: () -> Unit,
+    polish: InstructionView? = null,
+    onPlay: (ClipView, Boolean) -> Unit = { _, _ -> },
 ) {
-    Instruction(stringResource(R.string.conjugation_instruction))
+    ExerciseInstruction(stringResource(R.string.conjugation_instruction), polish, onPlay)
     Spacer(Modifier.height(Space.s))
     PromptChip(stringResource(R.string.conjugation_chip, exercise.verb, personLabel(exercise.person), exercise.person.pronouns))
     val sentence = exercise.sentence

@@ -1,0 +1,46 @@
+{
+  "instructions": {
+    "choose_translation": {
+      "polish": "Proszę przetłumaczyć.",
+      "meaning": {
+        "en": "Translate."
+      }
+    },
+    "type_answer": {
+      "polish": "Proszę napisać po polsku.",
+      "meaning": {
+        "en": "Write it in Polish."
+      }
+    },
+    "word_tiles": {
+      "polish": "Proszę ułożyć zdanie.",
+      "meaning": {
+        "en": "Put the words in order."
+      }
+    },
+    "conjugation": {
+      "polish": "Proszę uzupełnić.",
+      "meaning": {
+        "en": "Fill in the gap."
+      }
+    },
+    "listen_choose": {
+      "polish": "Proszę posłuchać i wybrać.",
+      "meaning": {
+        "en": "Listen and choose."
+      }
+    },
+    "listen_type": {
+      "polish": "Proszę posłuchać i napisać.",
+      "meaning": {
+        "en": "Listen and write."
+      }
+    },
+    "choose_polish": {
+      "polish": "Proszę wybrać odpowiedź po polsku.",
+      "meaning": {
+        "en": "Choose the answer in Polish."
+      }
+    }
+  }
+}

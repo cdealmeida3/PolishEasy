@@ -69,6 +69,14 @@ class ContrastTest {
             shape("the tick of a row", colors.success, "secondaryContainer", scheme.secondaryContainer)
             shape("the cross of a row", colors.caution, "secondaryContainer", scheme.secondaryContainer)
             shape("the outline of the row asked for", scheme.primary, "secondaryContainer", scheme.secondaryContainer)
+            // The lesson colours: a banner's words, a chip's words, and the number disc on a card.
+            colors.accents.forEachIndexed { index, accent ->
+                text("onFill of accent $index", accent.onFill, "its fill", accent.fill)
+                text("onContainer of accent $index", accent.onContainer, "its container", accent.container)
+                // The fill never carries meaning alone: its number or letter does. The seal on a card is drawn in onContainer.
+                text("the seal of accent $index", accent.onContainer, "a card", scheme.surfaceContainerLowest)
+            }
+            assertTrue(colors.accents.size == 8, "$theme has ${colors.accents.size} lesson colours, not 8")
             listOf("background" to scheme.background, "a card" to scheme.surfaceContainerLowest).forEach { (name, surface) ->
                 shape("brand", colors.brand, name, surface)
                 shape("success", colors.success, name, surface)

@@ -13,12 +13,12 @@ The language the Learner already knows, in which instructions and translations a
 _Avoid_: Native language, source language, UI language
 
 **Level**:
-A stage of Polish proficiency on the CEFR scale (A1, A2, …) that groups a complete body of course material. Each Level has its own Path; a Learner works on one Level at a time and the next opens when the current one is complete.
+A complete body of course material, shown on the Path as a shelf. There are two: **Starter**, the three Units the app began with, and **Polski krok po kroku 1**, the A1 class book Carlos studies from, whose chapters are its Units ([ADR-0013](docs/adr/0013-the-book-is-the-path.md)). At the Learner's own pace every Level is open; with One a day the next opens when the one before is complete.
 _Avoid_: Course, grade, difficulty
 
 **Unit**:
-A themed group of consecutive Daily Sets within a Level, such as Greetings or Food.
-_Avoid_: Chapter, module, topic
+A themed group of consecutive Daily Sets within a Level. In the book's Level a Unit is one chapter of the book, with the book's number (0 to 26), its Polish title and colour, and is called a lesson on screen as the book does ("Lekcja 5"). A Unit with no content yet is **coming**: it is on the Path with what it will teach, and has no Daily Sets.
+_Avoid_: Module, topic; "chapter" only for the book's Units
 
 **Path**:
 The ordered sequence of Daily Sets a Learner works through within a Level, Unit by Unit. Every Learner follows the same Path, starting from its first Daily Set whenever they begin. At the Learner's own pace its order is suggested, not required: any Daily Set on it not yet completed can be started.
@@ -27,6 +27,34 @@ _Avoid_: Curriculum, track, journey
 **Daily Set**:
 One day's worth of Exercises on the Path, designed to take 10 to 15 minutes. Unless the Learner chose One a day, they can start any Daily Set not yet completed, at any time, and as many in a day as they like; with One a day they can start at most one new Daily Set per calendar day, the next one. Only one is in progress at a time. It belongs to the calendar day on which it is completed.
 _Avoid_: Lesson, session, daily challenge
+
+**Section**:
+A Daily Set of the book's Level: one section of a chapter, with the book's letter (A, B, C) and heading ("Liczebniki 20–100"), its English, and the strands it teaches. On screen a section is called by its letter and heading, never "Daily Set".
+_Avoid_: Part, step
+
+**Strand**:
+One of the three things the book's contents list for each chapter: K, *komunikacja* (what to say), L, *leksyka* (words) and G, *gramatyka* (grammar). A chapter lists topics under each; a section says which strands it teaches.
+
+**Lesson screen**:
+A Unit's own screen, opened from its card on the Path: its banner, strands and look-up words, its sections as a trail, and its Powtórzenie (the Słownik, the Fiszki and the Test).
+
+**Słownik**:
+A Unit's word list: every Item a Unit introduces (as rule 1 of authoring does), with its meaning, register and Clip, searchable by Polish or meaning. A chapter of the book introduces again a word met earlier, so its Słownik has every word it uses.
+_Avoid_: Glossary, vocabulary
+
+**Fiszki**:
+A Unit's words as flashcards, those due for Review first. Turning one and saying whether it was known reschedules the Item as an answer to an Exercise would, so the Fiszki feed Review.
+_Avoid_: Cards (Picture cards is a Game)
+
+**Checkpoint**:
+The end of a Unit: up to 20 of its Exercises, every kind mixed, each asked once, with a wrong answer not asked again. Called "Test" on screen. It keeps a Best per Unit, in percent, in `checkpoints.json`; at 80 % or more the Unit is sealed. It changes nothing on the Path, in Review or in the Streak, and nothing is locked behind it.
+_Avoid_: Exam, quiz
+
+**Register**:
+The book's mark on a phrase: O (*oficjalnie*, formal), N (*nieoficjalnie*, informal), U (*uniwersalnie*, both). An Item may carry one; it is shown beside the phrase when it is introduced and in the Słownik.
+
+**Polish instruction**:
+An Exercise's instruction as the book words it ("Proszę przetłumaczyć."), one per kind of Exercise, in `content/kpk1/instructions.json`, with its English one tap away and a Clip. Without one, an Exercise shows its English instruction.
 
 **New Material**:
 The part of a Daily Set that is Authored Content, identical for every Learner.

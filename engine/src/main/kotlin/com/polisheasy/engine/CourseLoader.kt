@@ -14,7 +14,13 @@ internal data class CourseFile(
     val pictures: String? = null,
     /** Optional: the path of the file with what the Games of Practice need beyond the Items. */
     val practice: String? = null,
+    /** Optional: the path of the file with the Polish instruction of each kind of Exercise. */
+    val instructions: String? = null,
 )
+
+/** The Polish instruction of each kind of Exercise, as the book words it. */
+@Serializable
+internal data class InstructionsFile(val instructions: Map<InstructionKind, Instruction>)
 
 /** What the Games of Practice need to know that no Item says. */
 @Serializable
@@ -36,8 +42,23 @@ internal data class ItemsFile(val items: List<Item>)
 @Serializable
 internal data class LevelEntry(val id: String, val title: Localized, val units: List<UnitEntry>)
 
+/**
+ * A Unit as `course.json` writes it. A chapter of the book also has its [number], the book's
+ * [polishTitle], an [accent] colour, its [strands] from the contents, its [lookUp] Items, and is
+ * [coming] while it has no Daily Sets yet.
+ */
 @Serializable
-internal data class UnitEntry(val id: String, val title: Localized, val dailySets: List<String>)
+internal data class UnitEntry(
+    val id: String,
+    val title: Localized,
+    val dailySets: List<String> = emptyList(),
+    val number: Int? = null,
+    val polishTitle: String? = null,
+    val accent: Int = 0,
+    val strands: Map<Strand, List<String>> = emptyMap(),
+    val lookUp: List<String> = emptyList(),
+    val coming: Boolean = false,
+)
 
 internal val contentJson = Json { classDiscriminator = "type" }
 
@@ -85,6 +106,9 @@ internal class ReadContent(
     val practice: PracticeFile? = null,
     /** The file with what the Games of Practice need, if the course has one. */
     val practiceFile: String? = null,
+    val instructions: Map<InstructionKind, Instruction> = emptyMap(),
+    /** The file with the instructions, if the course has one. */
+    val instructionsFile: String? = null,
 ) {
     /** Where the pictures' files are: the directory of the file that lists them. */
     val pictureDir: String = picturesFile?.substringBeforeLast('/', "").orEmpty()
@@ -92,7 +116,8 @@ internal class ReadContent(
     val clipDir: String = clipsFile?.substringBeforeLast('/', "") ?: "audio"
 
     /** Every path `course.json` names. */
-    val listed: Set<String> = (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile, practiceFile)).toSet()
+    val listed: Set<String> =
+        (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile, practiceFile, instructionsFile)).toSet()
 
     private val unreadableFiles = unreadable.map { it.file }.toSet()
 
@@ -111,7 +136,17 @@ internal class ReadContent(
                     level.id,
                     level.title,
                     level.units.map { unit ->
-                        CourseUnit(unit.id, unit.title, unit.dailySets.filter(placed::add).mapNotNull(byFile::get))
+                        CourseUnit(
+                            unit.id,
+                            unit.title,
+                            unit.dailySets.filter(placed::add).mapNotNull(byFile::get),
+                            number = unit.number,
+                            polishTitle = unit.polishTitle,
+                            accent = unit.accent,
+                            strands = unit.strands,
+                            lookUp = unit.lookUp,
+                            coming = unit.coming,
+                        )
                     },
                 )
             },
@@ -123,6 +158,7 @@ internal class ReadContent(
             practice?.realWords.orEmpty().map { it.lowercase(Locale.ROOT) }.toSet(),
             practice?.genders.orEmpty().mapNotNull { (item, gender) -> Gender.of(gender)?.let { item to it } }.toMap(),
             practice?.my.orEmpty().mapNotNull { (gender, item) -> Gender.of(gender)?.let { it to item } }.toMap(),
+            instructions,
         )
     }
 
@@ -170,6 +206,10 @@ internal fun readContent(readFile: (path: String) -> String): ReadContent {
         picturesFile = index.pictures,
         practice = index.practice?.let { path -> read(path) { contentJson.decodeFromString<PracticeFile>(it) } },
         practiceFile = index.practice,
+        instructions = index.instructions?.let { path ->
+            read(path) { contentJson.decodeFromString<InstructionsFile>(it) }?.instructions
+        }.orEmpty(),
+        instructionsFile = index.instructions,
         unreadable = unreadable,
     )
 }
@@ -206,6 +246,11 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
                 exercise.id,
                 "Daily Set ${dailySet.id}: Exercise ${exercise.id} lists Item $item, which is not defined",
             )
+        }
+    }
+    content.levels.flatMap { it.units }.forEach { unit ->
+        unit.lookUp.filter { content.itemsComplete && it !in course.itemsById }.forEach { item ->
+            problems += ContentProblem(COURSE_FILE, unit.id, "Unit ${unit.id} looks up Item $item, which is not defined")
         }
     }
     // Review refers to an Exercise by its id alone.

@@ -119,6 +119,38 @@ data class PolishEasyColors(
     val streak: Color,
     val completed: Color,
     val completedEdge: Color,
+    /** The eight lesson colours, as the book gives each chapter one. A chapter's accent is `accents[accent % 8]`. */
+    val accents: List<AccentColors> = emptyList(),
+)
+
+/**
+ * One lesson colour: a strong [fill] for the chapter's banner and number with [onFill] on it, and a
+ * soft [container] for its chips and cards with [onContainer] on it.
+ */
+@Immutable
+data class AccentColors(val fill: Color, val onFill: Color, val container: Color, val onContainer: Color)
+
+// Red, teal, purple, green, slate, olive, brown and lavender, as the book's chapters are coloured.
+private val LightAccents = listOf(
+    AccentColors(Color(0xFFC8102E), White, Color(0xFFFFDAD9), Color(0xFF410008)),
+    AccentColors(Color(0xFF00696F), White, Color(0xFFC9F0F0), Color(0xFF002022)),
+    AccentColors(Color(0xFF6B3FA0), White, Color(0xFFEBDDFF), Color(0xFF250059)),
+    AccentColors(Color(0xFF2E7D32), White, Color(0xFFD3F2D3), Color(0xFF07390A)),
+    AccentColors(Color(0xFF455A75), White, Color(0xFFD6E3F7), Color(0xFF0F1D2E)),
+    AccentColors(Color(0xFF5E6816), White, Color(0xFFE5EDB8), Color(0xFF1B1F00)),
+    AccentColors(Color(0xFF8D4E2A), White, Color(0xFFFFDBC9), Color(0xFF341100)),
+    AccentColors(Color(0xFF5B4FB5), White, Color(0xFFE4DFFF), Color(0xFF170A57)),
+)
+
+private val DarkAccents = listOf(
+    AccentColors(Color(0xFFB0102B), White, Color(0xFF5C0A17), Color(0xFFFFDAD9)),
+    AccentColors(Color(0xFF00666C), White, Color(0xFF00363A), Color(0xFFC9F0F0)),
+    AccentColors(Color(0xFF65409A), White, Color(0xFF3A2266), Color(0xFFEBDDFF)),
+    AccentColors(Color(0xFF2E7032), White, Color(0xFF173C19), Color(0xFFD3F2D3)),
+    AccentColors(Color(0xFF475B74), White, Color(0xFF253244), Color(0xFFD6E3F7)),
+    AccentColors(Color(0xFF5A6318), White, Color(0xFF30360A), Color(0xFFE5EDB8)),
+    AccentColors(Color(0xFF85492A), White, Color(0xFF4A2512), Color(0xFFFFDBC9)),
+    AccentColors(Color(0xFF574BAA), White, Color(0xFF2F276A), Color(0xFFE4DFFF)),
 )
 
 internal val LightPolishEasyColors = PolishEasyColors(
@@ -138,6 +170,7 @@ internal val LightPolishEasyColors = PolishEasyColors(
     streak = FlameLight,
     completed = Color(0xFF17733A),
     completedEdge = Color(0xFF0E5428),
+    accents = LightAccents,
 )
 
 internal val DarkPolishEasyColors = PolishEasyColors(
@@ -157,6 +190,7 @@ internal val DarkPolishEasyColors = PolishEasyColors(
     streak = FlameDark,
     completed = Color(0xFF3FA65C),
     completedEdge = Color(0xFF2B7A42),
+    accents = DarkAccents,
 )
 
 internal val LocalPolishEasyColors = staticCompositionLocalOf { LightPolishEasyColors }

@@ -18,6 +18,7 @@ import com.polisheasy.engine.NextDailySetView
 import com.polisheasy.engine.PathView
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.Step
+import com.polisheasy.engine.DailySetState
 import com.polisheasy.engine.TipView
 import com.polisheasy.engine.Today
 import com.polisheasy.engine.loadCourse
@@ -34,6 +35,13 @@ import com.polisheasy.engine.Game
 import com.polisheasy.engine.GameState
 import com.polisheasy.engine.PracticeView
 import com.polisheasy.engine.PictureCardsView
+import com.polisheasy.engine.CheckpointResultView
+import com.polisheasy.engine.FileCheckpointBests
+import com.polisheasy.engine.FlashcardView
+import com.polisheasy.engine.InstructionView
+import com.polisheasy.engine.LessonView
+import com.polisheasy.engine.ShelfView
+import com.polisheasy.engine.WordView
 import com.polisheasy.engine.GameSetup as GameSetupView
 import com.polisheasy.engine.Practice as PracticeGames
 import com.polisheasy.engine.Round as PracticeRound
@@ -74,6 +82,38 @@ sealed interface Screen {
         val today: NextDailySetView? = null,
         val started: Boolean = false,
         val oneADay: Boolean = true,
+        /** The Path as shelves: Starter, then the book, a card for each chapter. */
+        val shelves: List<ShelfView> = emptyList(),
+    ) : Screen
+
+    /**
+     * A chapter's Lesson screen, inside the Path tab. [path] is the Path, for the state of each of its
+     * sections; [started] and [oneADay] as on [Path]. [inProgress] is the Daily Set in progress,
+     * for the question asked before another is started in its place.
+     */
+    data class Lesson(
+        val lesson: LessonView,
+        val path: PathView,
+        val today: NextDailySetView? = null,
+        val started: Boolean = false,
+        val oneADay: Boolean = true,
+        val inProgress: String? = null,
+    ) : Screen
+
+    /** A chapter's Słownik: its words, each with its meaning and Clip. [sound] is whether they may be heard. */
+    data class Dictionary(val lesson: LessonView, val words: List<WordView>, val sound: Boolean) : Screen
+
+    /**
+     * A chapter's Fiszki, one card at a time: [cards] in the order they come, the one at [index]
+     * showing, [knew] of those turned so far known. [shown] is different for each card.
+     */
+    data class Flashcards(
+        val lesson: LessonView,
+        val cards: List<FlashcardView>,
+        val index: Int = 0,
+        val knew: Int = 0,
+        val sound: Boolean = true,
+        val shown: Int = 0,
     ) : Screen
 
     /**
@@ -116,6 +156,10 @@ sealed interface Screen {
         val canListen: Boolean = false,
         /** How far through the Daily Set this is, in steps: what the bar shows. */
         val steps: StepProgress = StepProgress(0, 0),
+        /** The Exercise's instruction as the book gives it, in Polish, or null when the course gives none. */
+        val instruction: InstructionView? = null,
+        /** Whether this Exercise is a question of a chapter's Test. */
+        val checkpoint: Boolean = false,
     ) : Screen
 
     /** Practice. [today] is today's Daily Set, which the screen starts or continues while Practice is locked. */
@@ -151,6 +195,10 @@ sealed interface Screen {
         val unitCompleted: UnitCompletedView? = null,
         /** Whether the Summary offers to start the next Daily Set straight away, as it does at the Learner's own pace. */
         val startNext: Boolean = false,
+        /** The end of a chapter's Test, which has its own result screen, or null for a Daily Set. */
+        val checkpoint: CheckpointResultView? = null,
+        /** The colour of the chapter the Test was for. */
+        val accent: Int = 0,
     ) : Screen
 }
 
@@ -171,6 +219,7 @@ fun courseEngine(context: Context): CourseEngine = CourseEngine(
     progress = FileLearnerProgress(File(context.filesDir, "progress.json")),
     clock = Clock.systemDefaultZone(),
     oneADay = Settings(context).let { settings -> { settings.oneADay } },
+    checkpoints = FileCheckpointBests(File(context.filesDir, "checkpoints.json")),
 )
 
 class CourseViewModel(
@@ -187,8 +236,14 @@ class CourseViewModel(
     var screen: Screen by mutableStateOf(firstScreen())
         private set
 
+    /** Whether the app may play sound. */
+    val soundOn: Boolean get() = settings.soundOn
+
     /** Whether the Replay being played was started from Home, where it then goes back to. */
     private var replayFromHome = false
+
+    /** The chapter whose Lesson screen started what is being played, where leaving it goes back to; null for Home and the Path. */
+    private var fromLesson: String? = null
 
     private var stepsShown = 0
 
@@ -197,7 +252,10 @@ class CourseViewModel(
     /** Set by the answer that completed today's Daily Set, for its Summary. */
     private var streakRaised: StreakRaised? = null
 
-    fun startDailySet() = show(engine.startDailySet(sound = settings.soundOn))
+    fun startDailySet() {
+        fromLesson = null
+        show(engine.startDailySet(sound = settings.soundOn))
+    }
 
     /** "Start" on the welcome: it is not shown again, and the Learner goes straight into their first Daily Set. */
     fun startFromWelcome() {
@@ -205,7 +263,10 @@ class CourseViewModel(
         startDailySet()
     }
 
-    fun resumeDailySet() = show(engine.resumeDailySet(sound = settings.soundOn))
+    fun resumeDailySet() {
+        fromLesson = null
+        show(engine.resumeDailySet(sound = settings.soundOn))
+    }
 
     fun openPath() {
         screen = path()
@@ -216,10 +277,102 @@ class CourseViewModel(
         engine.nextDailySet(),
         started = engine.today() is Today.InProgress,
         oneADay = settings.oneADay,
+        shelves = engine.shelves(),
     )
+
+    /** A chapter tapped on the Path, or come back to: its Lesson screen. */
+    fun openLesson(unitId: String) {
+        screen = lessonScreen(unitId)
+    }
+
+    private fun lessonScreen(unitId: String): Screen.Lesson {
+        val today = engine.today()
+        val path = engine.path()
+        return Screen.Lesson(
+            engine.lesson(unitId),
+            path,
+            engine.nextDailySet(),
+            started = today is Today.InProgress,
+            oneADay = settings.oneADay,
+            inProgress = engine.dailySetInProgress(),
+        )
+    }
+
+    /** The unit of the Lesson screen showing, or of the Słownik or Fiszki opened from it. */
+    private fun lessonShowing(): String? = when (val current = screen) {
+        is Screen.Lesson -> current.lesson.unitId
+        is Screen.Dictionary -> current.lesson.unitId
+        is Screen.Flashcards -> current.lesson.unitId
+        else -> null
+    }
+
+    /** A section on a Lesson screen: today's started or continued, a completed one replayed, an open one started. */
+    fun openSection(dailySetId: String) {
+        val unitId = lessonShowing() ?: return
+        val state = engine.path().levels.flatMap { it.units }.flatMap { it.dailySets }.firstOrNull { it.id == dailySetId }?.state
+        when (state) {
+            DailySetState.COMPLETED -> {
+                replayFromHome = false
+                show(engine.startReplay(dailySetId, sound = settings.soundOn))
+            }
+            DailySetState.TODAY -> when (val today = engine.today()) {
+                Today.DailySetAvailable -> show(engine.startDailySet(sound = settings.soundOn))
+                is Today.InProgress -> if (today.reviewOnly) return openLesson(unitId) else show(engine.resumeDailySet(sound = settings.soundOn))
+                else -> return openLesson(unitId)
+            }
+            DailySetState.OPEN -> show(engine.startDailySet(sound = settings.soundOn, dailySetId = dailySetId))
+            DailySetState.LOCKED, null -> return
+        }
+        fromLesson = unitId
+    }
+
+    /** "Słownik" on a Lesson screen: every word of the chapter. */
+    fun openDictionary() {
+        val unitId = lessonShowing() ?: return
+        screen = Screen.Dictionary(engine.lesson(unitId), engine.dictionary(unitId), sound = settings.soundOn)
+    }
+
+    /** "Fiszki" on a Lesson screen: the chapter's words as cards, those due for Review first. */
+    fun openFlashcards() {
+        val unitId = lessonShowing() ?: return
+        screen = Screen.Flashcards(engine.lesson(unitId), engine.flashcards(unitId), sound = settings.soundOn, shown = ++stepsShown)
+    }
+
+    /** The card showing turned and answered: the Learner [knew] it or not. Its word is rescheduled, and the next card shows. */
+    fun answerFlashcard(knew: Boolean) {
+        val cards = screen as? Screen.Flashcards ?: return
+        val card = cards.cards.getOrNull(cards.index) ?: return
+        engine.answerFlashcard(card.word.itemId, knew)
+        screen = cards.copy(index = cards.index + 1, knew = cards.knew + if (knew) 1 else 0, shown = ++stepsShown)
+    }
+
+    /** "Again" at the end of the Fiszki: the cards afresh, in the order they come now. */
+    fun flashcardsAgain() = openFlashcards()
+
+    /** "Test" on a Lesson screen: the chapter's Checkpoint, which saves nothing but its Best. */
+    fun startCheckpoint() {
+        val unitId = lessonShowing() ?: return
+        fromLesson = unitId
+        replayFromHome = false
+        show(engine.startCheckpoint(unitId, sound = settings.soundOn))
+    }
+
+    /** "Try again" on a Test's result: the Test again, with other questions. */
+    fun checkpointAgain() {
+        val unitId = (screen as? Screen.Summary)?.checkpoint?.unitId ?: return
+        fromLesson = unitId
+        show(engine.startCheckpoint(unitId, sound = settings.soundOn))
+    }
+
+    /** Back from the Słownik or the Fiszki, to the Lesson screen they were opened from. */
+    fun backToLesson() {
+        val unitId = lessonShowing() ?: return openPath()
+        openLesson(unitId)
+    }
 
     fun replay(dailySetId: String) {
         replayFromHome = false
+        fromLesson = null
         show(engine.startReplay(dailySetId, sound = settings.soundOn))
     }
 
@@ -227,6 +380,7 @@ class CourseViewModel(
     fun replayToday() {
         val dailySetId = engine.completedToday() ?: return
         replayFromHome = true
+        fromLesson = null
         show(engine.startReplay(dailySetId, sound = settings.soundOn))
     }
 
@@ -234,11 +388,21 @@ class CourseViewModel(
      * A Daily Set the Learner chose on the Path, at their own pace: started, or continued when it
      * is the one in progress. Any other one in progress is forgotten; the Path has asked first.
      */
-    fun startChosen(dailySetId: String) = show(engine.startDailySet(sound = settings.soundOn, dailySetId = dailySetId))
+    fun startChosen(dailySetId: String) {
+        fromLesson = null
+        show(engine.startDailySet(sound = settings.soundOn, dailySetId = dailySetId))
+    }
 
     /** "Start the next one" on a Summary: the next Daily Set, straight away. */
     fun startNext() {
-        if (engine.today() == Today.DailySetAvailable) startDailySet() else leaveDailySet()
+        if (engine.today() == Today.DailySetAvailable) {
+            // The next one is played from where this one was: a Lesson screen is come back to.
+            val lesson = fromLesson
+            startDailySet()
+            fromLesson = lesson
+        } else {
+            leaveDailySet()
+        }
     }
 
     /** Today's Daily Set tapped on the Path: started or continued, as from Home. */
@@ -257,8 +421,14 @@ class CourseViewModel(
             is Screen.Summary -> current.replay
             else -> false
         }
+        val lesson = fromLesson
         when {
             replay && replayFromHome -> backToHome()
+            // A Daily Set, a Replay or a Test started from a Lesson screen goes back to it.
+            lesson != null -> {
+                fromLesson = null
+                openLesson(lesson)
+            }
             replay -> openPath()
             // Home shows the Streak go up once more, as the Learner arrives from the Summary that raised it.
             current is Screen.Summary -> screen = home().copy(streakRaisedFrom = current.streakRaised?.from)
@@ -387,6 +557,7 @@ class CourseViewModel(
             // Home keeps what it is in the middle of showing: arriving from the Summary is itself a moment that asks again.
             is Screen.Home -> screen = home().copy(streakRaisedFrom = current.streakRaisedFrom)
             is Screen.Path -> screen = path()
+            is Screen.Lesson -> screen = lessonScreen(current.lesson.unitId)
             is Screen.Settings -> screen = settingsScreen()
             is Screen.Practice -> screen = practiceScreen()
             else -> Unit
@@ -471,6 +642,8 @@ class CourseViewModel(
                 exerciseId = step.exerciseId,
                 canListen = engine.canListen(),
                 steps = engine.stepProgress(),
+                instruction = step.instruction,
+                checkpoint = step.checkpoint,
             )
             is Step.ShowSummary -> Screen.Summary(
                 step.correctAnswers,
@@ -484,6 +657,8 @@ class CourseViewModel(
                 unitCompleted = engine.unitCompleted(),
                 // A Daily Set can be started now only at the Learner's own pace, once one is done today.
                 startNext = !step.replay && !step.reviewOnly && engine.today() == Today.DailySetAvailable,
+                checkpoint = step.checkpoint,
+                accent = step.checkpoint?.let { engine.lesson(it.unitId).accent } ?: 0,
             ).also { streakRaised = null }
         }
     }

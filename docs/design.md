@@ -96,6 +96,10 @@ Material has no role for these, so the theme adds them: a `PolishEasyColors` val
 | `completed` | `#17733A` | `#3FA65C` | A completed stop on the Path and the trail walked so far. `success` in the light theme, one step quieter in the dark one |
 | `completedEdge` | `#0E5428` | `#2B7A42` | The bottom edge of a completed stop |
 
+### Lesson colours
+
+Each chapter of the book has a colour of its own, as the book does: `PolishEasyTheme.colors.accents`, eight `AccentColors` (`fill`, `onFill`, `container`, `onContainer`), taken in turn by the chapters (`accent` in `course.json`, chapter *n* has (*n* − 1) mod 8, chapter 0 the first). In order: red, teal, purple, green, slate, olive, brown, lavender. The fill is the banner, the number disc, the section letters and the seal; the container is the current card, a filled strand and a look-up word. `ContrastTest` holds every accent: white on the fill, `onContainer` on the container and `onContainer` on a card at 4.5 to 1. The fill never carries meaning alone (its number or letter does), so it need not stand out from a card: in the dark theme it cannot, while keeping white text readable. The seal on a chapter's card is drawn in `onContainer` for that reason.
+
 Rules:
 
 - **The main button is `brand` with `onBrand` in both themes.** In the dark theme `primary` is a light pink so that crimson text stays readable on a dark surface; it is for text and icons, never for a button's fill.
@@ -223,7 +227,16 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`Confetti`**: see Motion and touch. It is laid over the Summary's content, above the main button. A Replay gets none.
 - **The Summary** from the top: a cheer in Polish in `displaySmall` ("Brawo!", "Świetnie!", "Dobra robota!", taken in turn) with its meaning under it in `bodyMedium`, then what was finished in `titleLarge` ("Daily Set complete"), the `StreakHero` when the Streak went up, the `StatRow`, and "You learned" with an `ItemCard` for each Item. The list scrolls and fades out above the main button, which says "Done". At the Learner's own pace, after a new Daily Set with another one to start, the main button is "Start the next one" and "Done" is a `SecondaryButton` under it.
 - **Streak flame**: the flame icon in `streak` beside the number. With a Streak of zero the flame and the number are `outline`, not hidden.
-- **`UnitCard`**: a Unit on the Path. A `ContentCard` with "Unit N" in `titleSmall` in `primary`, the Unit's title in `titleLarge`, "4 of 7 completed" in `bodyMedium`, `ProgressSegments` with today's Daily Set outlined, and under them the Unit's stops. A Unit that is all completed has the `success` tick beside its title.
+- **`LessonCard`**: a chapter on the Path. A card at least 72 high with the chapter's number in a 48 disc in its colour (a Starter Unit's place stands in), the Polish title in `titleMedium` and the English under it in `bodyMedium`, and "2 of 4 sections" in `labelSmall`. The card of the chapter the Learner is at is in its colour's container, with "You are here" above the title. A chapter all completed has the `success` tick, one whose Test is passed the seal in its `onContainer`; a coming one says "Coming soon" and its title is `onSurfaceVariant`. It ends with an arrow.
+- **`LessonBanner`**: the top of a Lesson screen, like the book's opening page: the chapter's fill with `extraLarge` corners, "Lekcja 5" in `titleSmall`, the title in `headlineMedium` and the English in `bodyLarge`, and the number in `displayMedium` at the end, all in `onFill`.
+- **`StrandChip`**: one of K, L and G, as the book marks what a chapter teaches: the letter on a small square in the chapter's fill, the strand's name in `labelSmall` ("Gramatyka · grammar"), its topics in `bodyMedium` as the contents give them, and "1/3" at the end. Its background fills from the start in the chapter's container as its sections are completed. A screen reader hears it as one sentence.
+- **`WordChip`** in a **`ChipRow`**: a look-up word of "Sprawdź w słowniku", the Polish in `labelLarge` on the chapter's container. Tapped, it says the word and opens to show its meaning in `bodySmall` under it.
+- **`ToolTile`**: one of the Powtórzenie tools, Słownik, Fiszki and Test, three side by side: an icon in a 48 circle of the chapter's container, the Polish name in `titleSmall` and a note in `labelSmall` ("30 words", "20 questions", "Best 95%"). The Test's tile wears the seal once passed.
+- **`RegisterChip`**: the book's register mark, O (formal), N (informal) or U (both), as a letter on a small `secondaryContainer` square, with the word ("formal") beside it where there is room. A screen reader hears "O, formal".
+- **`PolishInstruction`**: an Exercise's instruction as the book gives it, "Proszę przetłumaczyć." in `titleSmall`, with a `SpeakerButton` to hear it and the translate icon button, which shows the English under it in `labelMedium` and hides it again. Without a Polish instruction in the course, the Exercise keeps its English `Instruction`.
+- **`Flashcard`**: a card at least 260 high with `extraLarge` corners and a 2 dp border in the chapter's fill. Face up, the Polish in `displaySmall` on the chapter's container; tapped, it turns over (`Motion.flip`) to the Polish small and the meaning in `headlineSmall`. Its register and speaker sit at its foot.
+- **`DictionaryRow`**: a word in the Słownik, its Polish in `titleMedium`, its meaning in `bodyMedium`, its register and speaker at the end; rows are divided by `outlineVariant` lines in one `ContentCard`. **`SearchField`** above them is outlined, with the search icon, and does not open the keyboard by itself.
+- **`Seal`**: a Test's score, a 128 disc with the percent in `headlineLarge`: in the chapter's fill with the seal's mark when passed, `surfaceContainerHighest` until then.
 - **`TrailStop`**: one Daily Set on a Unit's trail. Its node, then its title in `titleMedium` and under it a `bodyMedium` line with its number in its Unit and its state in words ("4 of 8 · Completed"). The stop the Learner is at has a `titleSmall` label above its title: "Today" in `primary`, or "Up next" in `onSurfaceVariant` when it unlocks tomorrow. A completed stop ends with the replay icon in `primary`. The whole stop is tapped as one, with no ripple: its node goes down. A locked stop's title is `onSurfaceVariant` and it is not tappable.
 - **Path node**: a 56 circle. Completed: `completed` fill with a tick in `onSuccess`, on the bottom edge in `completedEdge`. Today: `brand` fill with a play icon in `onBrand`, on the bottom edge in `brandEdge`, inside a 2 dp `brand` ring 72 across. Open: `surfaceContainerHighest` with a play icon in `onSurfaceVariant`, on the bottom edge in `outlineVariant`. Locked: `surfaceContainerHighest` with a lock icon in `onSurfaceVariant`, flat. Today's node sits on the card, never on a container colour.
 - **The trail**: a 4 dp line joining a Unit's nodes. It is `completed` as far as the Learner has come, up to today's node, and `outlineVariant` beyond.
@@ -263,20 +276,37 @@ Home scrolls if the font size makes it too tall. Nothing on it moves at rest. Co
 
 ## The Path
 
-The Path answers where the Learner is and how far they have come.
+The Path answers where the Learner is and how far they have come. It is the book's contents page.
 
-- **The title** is the Level's name and "Path" ("A1 Path"), with "10 of 23 Daily Sets completed" under it.
-- **A `UnitCard` for each Unit**, 16 apart, each holding its Daily Sets as `TrailStop`s and ending in a `TrailMilestone`.
-- **The road ahead is told a little at a time.** A Unit the Learner has not reached is only its heading, "Unit 3", its title and "8 Daily Sets · Locked", with an arrow; tapping the heading opens it and tapping again closes it.
+- **Shelves.** "Starter", the three Units the app began with, then "Polski krok po kroku 1", the book, each with its name in `headlineSmall` and "12 of 23 sections completed" under it. Every Level is on it from the start: nothing waits for another shelf.
+- **A `LessonCard` for each chapter**, 8 apart, in the book's order and colours: *Lekcja 0, Dzień dobry!* to *Lekcja 26, Same problemy!* A chapter still being written is on the shelf, "Coming soon", and opens on what it will teach.
+- **It opens at the chapter the Learner is at**, the first with a section not completed, whose card says "You are here".
+- **Tapping a card** opens the chapter's Lesson screen. Back goes to Home.
+
+## The Lesson screen
+
+A chapter, laid out like its opening page in the book, from the top:
+
+- **The `LessonBanner`**, then a **`StrandChip`** for each of K, L and G the chapter teaches.
+- **"Sprawdź w słowniku"**, with the look-up words of the book's page as `WordChip`s.
+- **"Sections"**: the chapter's sections as the trail of `TrailStop`s, each titled with its letter and the book's heading ("B · Liczebniki 20–100") and the English under it, ending in a `TrailMilestone`. A Starter Unit's Daily Sets are titled by their first Tip, as before.
+- **"Powtórzenie"**: the three `ToolTile`s, Słownik, Fiszki and Test, open whatever has been completed.
+- A chapter still being written has, in place of its sections and Powtórzenie, a `Point`: "This lesson is on its way".
+
+The rules of the trail are the Path's own, unchanged by being on a chapter's screen:
+
 - **Completed stops are compact**, with a 40 node. **Today's stop has the room**: its ring, "Today", its title, what else it teaches ("Also today") and a `PrimaryButton`, Start or Continue, right there. The whole stop can still be tapped.
 - **A locked stop does not say "Locked"**: its padlock does, and a screen reader is still told. The next stop says "Unlocks tomorrow". Padlocks and "Unlocks tomorrow" appear only with One a day.
-- **At the Learner's own pace nothing is locked.** The stop they are at is labelled "Up next" until it is started, then "Today". Every other stop not completed is open: the plain node with a play arrow, which a screen reader hears as "Open", and tapping it starts that Daily Set. If another Daily Set is in progress a dialog asks first: "Start this one instead? Your progress in … will be lost." A Unit with nothing completed and not the one the Learner is at is only its heading, "8 Daily Sets", until it is tapped open.
-- **`TrailMilestone`**: the end of a Unit's trail, a 40 circle with a star. Grey with "End of Unit 2" until every Daily Set of the Unit is completed, then `streak` with "Unit 2 complete". The Summary of the Daily Set that completes a Unit says "Unit 2 complete" with the Unit's title in place of "Daily Set complete", and its confetti is doubled, once.
-- **A Daily Set's title is the title of its first Tip** (`docs/authoring.md`). A Daily Set with no Tip shows "Daily Set N" in its place, numbered within its Unit.
+- **At the Learner's own pace nothing is locked.** The stop they are at is labelled "Up next" until it is started, then "Today". Every other stop not completed is open: the plain node with a play arrow, which a screen reader hears as "Open", and tapping it starts that Daily Set. If another Daily Set is in progress a dialog asks first: "Start this one instead? Your progress in … will be lost."
+- **`TrailMilestone`**: the end of a chapter's trail, a 40 circle with a star. Grey with "End of Lekcja 0" until every section is completed, then `streak` with "Lekcja 0 complete" ("Unit 2 complete" for Starter). The Summary of the Daily Set that completes a Unit says "Unit 2 complete" with the Unit's title in place of "Daily Set complete", and its confetti is doubled, once.
 - **Four states, each with its own node**: a tick (completed), a play arrow in a ring (today), a plain play arrow (open, own pace only), a lock (locked, One a day only).
-- **It opens at the stop the Learner is at**: the first Daily Set not yet completed. If that stop is within the top 60% of the screen when its Unit's card is at the top, the Path opens at the top of the card; otherwise the stop sits a third of the way down. With every Daily Set completed it opens at the top.
-- **Tapping** a completed stop starts a Replay, today's opens today's Daily Set, an open one starts it, a locked one does nothing.
-- With every Daily Set completed, a line after the last Unit says more Units are on the way.
+- **Tapping** a completed stop starts a Replay, today's opens today's Daily Set, an open one starts it, a locked one does nothing. Whatever was started here comes back here when it ends or is closed.
+
+## Słownik, Fiszki and Test
+
+- **Słownik**: "Słownik" with the chapter under it, the `SearchField`, and every word the chapter teaches as a `DictionaryRow` in the order it teaches them. Typing finds a word by its Polish, with or without its marks (*dziekuje* finds *dziękuję*), or by its meaning. Nothing found says so in a `CardNote`.
+- **Fiszki**: "Card 3 of 30", a label ("Due for Review" in `primary`, "Flashcards" for a word met, "New word"), the `Flashcard` and "Say what it means, then tap to turn it." Once turned, "Not yet" (`SecondaryButton`) and "I knew it" (`PrimaryButton`) side by side at the bottom: the word is rescheduled in Review as an answer would reschedule it. The cards due for Review come first. At the end, "Wszystkie!" in `displaySmall` with "All of them!" under it, how many were known, "Go again" and "Back to the lesson".
+- **Test**: the chapter's Checkpoint is played in the Daily Set frame, labelled "Test" like a Replay is labelled "Replay"; a wrong answer is not asked again. **Its result** has the `Seal`, "Zdane!" (passed) or "Jeszcze raz!" (once more) in `displaySmall` with its English, "Test · Dzień dobry!", "New Best" when beaten, a `StatRow` with "17 of 20 right · This time" and "95% · Best", a line on the pass mark, then "Try again" and "Done". A seal newly won gets the confetti. Nothing is locked behind a Test.
 
 ## Settings
 

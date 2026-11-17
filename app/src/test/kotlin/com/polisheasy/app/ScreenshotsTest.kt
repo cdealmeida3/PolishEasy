@@ -40,24 +40,19 @@ import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.app.ui.components.NavigationFrame
 import com.polisheasy.app.ui.components.NavigationTab
 import com.polisheasy.app.ui.screens.HomeScreen
-import com.polisheasy.app.ui.screens.PathScreen
 import com.polisheasy.app.ui.screens.SettingsScreen
 import com.polisheasy.app.ui.screens.SummaryScreen
 import com.polisheasy.engine.CourseEngine
-import com.polisheasy.engine.DailySetState
-import com.polisheasy.engine.DailySetView
 import com.polisheasy.engine.DayView
 import com.polisheasy.engine.FileLearnerProgress
-import com.polisheasy.engine.LevelView
 import com.polisheasy.engine.NextDailySetView
-import com.polisheasy.engine.PathView
 import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.Today
-import com.polisheasy.engine.UnitView
 import java.io.File
 import kotlin.random.Random
 import com.polisheasy.engine.FilePracticeProgress
 import com.polisheasy.engine.InMemoryLearnerProgress
+import com.polisheasy.engine.InMemoryCheckpointBests
 import com.polisheasy.engine.InMemoryPracticeProgress
 import com.polisheasy.engine.loadCourse
 import com.polisheasy.engine.ChainRound
@@ -274,108 +269,103 @@ class ScreenshotsTest {
     }
 
     @Test
-    fun `the Path part of the way along in the light theme`() = pathStates("light")
+    fun `the Path's shelves, a Lesson screen and its Powtórzenie in the light theme`() = bookTour("light")
 
     @Test
     @Config(qualifiers = "+night")
-    fun `the Path part of the way along in the dark theme`() = pathStates("dark")
+    fun `the Path's shelves, a Lesson screen and its Powtórzenie in the dark theme`() = bookTour("dark")
 
     @Test
-    fun `the Path part of the way along at the largest font size`() = atTheLargestFontSize { pathStates("large") }
+    fun `the Path's shelves, a Lesson screen and its Powtórzenie at the largest font size`() = atTheLargestFontSize { bookTour("large") }
 
-    /** The Path with the real course's titles and made-up progress: today's Daily Set ready, then done, then every one completed. */
-    private fun pathStates(theme: String) {
-        val units = listOf(
-            "Sounds and greetings" to listOf("How Polish is read", "sz and cz", "ę and ą", "ł", "ś and ć", "ź and dź", "The Polish alphabet"),
-            "About me" to listOf(
-                "Być: to be", "On, ona, ono", "The plural of być", "Czy and nie",
-                "Mieć: to have", "The plural of mieć", "Mówić: to speak", "The plural of mówić",
-            ),
-            "Numbers and family" to listOf(
-                "Counting to five", "Six to ten", "Mam … lat", "The teens",
-                "Masculine and feminine", "Twój and twoja", "The third gender: neuter", "Babcia and dziadek",
-            ),
-        )
+    /**
+     * The real course with made-up progress: the Path part of the way through Starter and a Starter
+     * Unit's Lesson screen, then Starter completed, chapter 0's Lesson screen with its look-up words,
+     * its Słownik, its Fiszki and its Test, with the Polish instruction and its English, a Test not
+     * passed and one passed, the chapter sealed, and a chapter still coming.
+     */
+    private fun bookTour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val progress = InMemoryLearnerProgress()
+        val starter = course.levels.first().units.flatMap { it.dailySets }
+        starter.take(10).forEachIndexed { index, dailySet -> progress.recordCompleted(dailySet.id, clock.today.minusDays(10L - index)) }
+        val engine = CourseEngine(course, progress, clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        tap(R.string.nav_path)
+        shot("27-path-shelves")
+        screen.onNode(hasText(app.getString(R.string.lesson_card_current)) and hasClickAction()).performClick()
+        shot("28-lesson-starter")
+        screen.onNodeWithText("The plural of mówić").performScrollTo()
+        shot("28-lesson-starter-sections")
+        back()
 
-        /**
-         * The Path with the first [completed] Daily Sets done, and the one after them today's if [ready].
-         * At the Learner's own pace, with [ownPace], the rest are open rather than locked, and [also]
-         * are completed out of order.
-         */
-        fun path(completed: Int, ready: Boolean, ownPace: Boolean = false, also: Set<Int> = emptySet()): PathView {
-            var number = 0
-            return PathView(
-                listOf(
-                    LevelView(
-                        "a1",
-                        "A1",
-                        units.mapIndexed { index, (title, dailySets) ->
-                            UnitView(
-                                "a1-u0${index + 1}",
-                                index + 1,
-                                title,
-                                dailySets.map { name ->
-                                    val state = when {
-                                        number < completed || number in also -> DailySetState.COMPLETED
-                                        number == completed && ready -> DailySetState.TODAY
-                                        ownPace -> DailySetState.OPEN
-                                        else -> DailySetState.LOCKED
-                                    }
-                                    DailySetView("d${number + 1}", ++number, state, name)
-                                },
-                            )
-                        },
-                    ),
-                ),
-            )
+        starter.drop(10).forEach { progress.recordCompleted(it.id, clock.today.minusDays(1)) }
+        back()
+        tap(R.string.nav_path)
+        shot("29-path-book")
+        screen.onNode(hasText("Dzień dobry!") and hasClickAction()).performClick()
+        shot("30-lesson-book")
+        screen.onNode(hasText("lekcja") and hasClickAction()).performScrollTo().performClick()
+        shot("30-lesson-book-look-up")
+        screen.onNodeWithText("Polecenia").performScrollTo()
+        shot("30-lesson-book-sections")
+        screen.onNodeWithText(app.getString(R.string.lesson_dictionary)).performScrollTo()
+        shot("30-lesson-book-review")
+
+        screen.onNodeWithText(app.getString(R.string.lesson_dictionary)).performScrollTo().performClick()
+        shot("34-dictionary")
+        type("naucz")
+        shot("34-dictionary-found")
+        back()
+
+        screen.onNodeWithText(app.getString(R.string.lesson_flashcards)).performScrollTo().performClick()
+        shot("35-flashcards")
+        model.screen.let { it as Screen.Flashcards }.let { cards ->
+            screen.onNode(hasText(cards.cards[0].word.text) and hasClickAction()).performClick()
         }
-        val states = listOf(
-            "27-path-today" to path(completed = 10, ready = true),
-            "28-path-done-for-today" to path(completed = 11, ready = false),
-            "29-path-unit-starts" to path(completed = 15, ready = true),
-            "30-path-all-completed" to path(completed = 23, ready = false),
-            "33-path-own-pace" to path(completed = 10, ready = true, ownPace = true, also = setOf(12)),
-        )
-        var showing by mutableStateOf(0)
-        screen.setContent {
-            Shown {
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    key(showing) {
-                        NavigationFrame(
-                            tabs = listOf(
-                                NavigationTab(app.getString(R.string.nav_home), R.drawable.ic_home),
-                                NavigationTab(app.getString(R.string.nav_path), R.drawable.ic_route),
-                                NavigationTab(app.getString(R.string.nav_practice), R.drawable.ic_stadia_controller),
-                                NavigationTab(app.getString(R.string.nav_practice), R.drawable.ic_stadia_controller),
-                            NavigationTab(app.getString(R.string.nav_settings), R.drawable.ic_settings),
-                            ),
-                            selected = 1,
-                            onSelect = {},
-                        ) {
-                            PathScreen(
-                                states[showing].second,
-                                onReplay = {},
-                                onOpenTodays = {},
-                                today = NextDailySetView(2, "About me", 4, 8, teaches = listOf("Czy and nie", "Pan and pani"))
-                                    .takeIf { showing == 0 || states[showing].first.endsWith("own-pace") },
-                                oneADay = !states[showing].first.endsWith("own-pace"),
-                            )
-                        }
-                    }
-                }
+        screen.mainClock.advanceTimeBy(1_000)
+        shot("35-flashcards-turned")
+        while ((model.screen as Screen.Flashcards).let { it.index < it.cards.size }) {
+            screen.runOnUiThread { model.answerFlashcard(knew = (model.screen as Screen.Flashcards).index % 3 != 0) }
+        }
+        shot("35-flashcards-done")
+        back()
+
+        screen.onNodeWithText(app.getString(R.string.lesson_test)).performScrollTo().performClick()
+        shot("36-test-question")
+        screen.onNodeWithContentDescription(app.getString(R.string.instruction_translate)).performClick()
+        shot("36-test-instruction-english")
+        playTest(model, course, wrongly = 5)
+        screen.mainClock.advanceTimeBy(3_000)
+        shot("37-test-not-passed")
+        tap(R.string.checkpoint_again)
+        playTest(model, course, wrongly = 1)
+        screen.mainClock.autoAdvance = false
+        screen.mainClock.advanceTimeBy(3_000)
+        screen.mainClock.autoAdvance = true
+        shot("37-test-passed")
+        tap(R.string.result_done)
+        screen.onNodeWithText(app.getString(R.string.lesson_test)).performScrollTo()
+        shot("38-lesson-sealed")
+        back()
+        shot("38-path-sealed")
+        screen.onNode(hasText("Jesteś instruktorem tanga?") and hasClickAction()).performScrollTo().performClick()
+        shot("39-lesson-coming")
+    }
+
+    /** Plays the Test showing to its end, answering the first [wrongly] questions wrongly and the rest rightly. */
+    private fun playTest(model: CourseViewModel, course: com.polisheasy.engine.Course, wrongly: Int) {
+        var asked = 0
+        while (true) {
+            val player = model.screen as? Screen.Player ?: return
+            val answer = rightAnswer(course, player.exerciseId, player.exercise)
+            screen.runOnUiThread {
+                model.answer(if (asked++ < wrongly) wrongAnswer(answer) else answer)
+                model.continueToNext()
             }
         }
-        states.forEachIndexed { index, (name, _) ->
-            showing = index
-            shot("$theme-$name")
-        }
-        // A Unit still ahead is only its heading until it is tapped open.
-        showing = 0
-        screen.onNodeWithText("Numbers and family").performScrollTo()
-        shot("$theme-27-path-unit-ahead")
-        screen.onNodeWithText("Numbers and family").performClick()
-        screen.onNodeWithText("The teens").performScrollTo()
-        shot("$theme-27-path-unit-opened")
     }
 
     @Test
@@ -442,7 +432,9 @@ class ScreenshotsTest {
 
         open(CourseViewModel(app, CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock, oneADay = { false })))
         tap(R.string.nav_path)
+        tap("A little of everything")
         shot("70-own-pace-path")
+        back()
         back()
 
         tap(R.string.home_start)
@@ -451,8 +443,10 @@ class ScreenshotsTest {
         tap(R.string.action_continue)
         back()
         tap(R.string.nav_path)
+        tap("A little of everything")
         // The one in progress is where the Learner is; the question before replacing it is a dialog, which a picture of the screen leaves out.
         shot("71-own-pace-path-in-progress")
+        back()
         back()
 
         tap(R.string.home_continue)
@@ -550,6 +544,8 @@ class ScreenshotsTest {
         shot("16-home-done")
         tap(R.string.nav_path)
         shot("17-path")
+        tap("A little of everything")
+        shot("17-lesson")
     }
 
     @Test
@@ -1364,7 +1360,10 @@ class ScreenshotsTest {
 
     private fun type(text: String) = screen.onNode(hasSetTextAction()).performTextInput(text)
 
-    private fun back() = screen.runOnUiThread { screen.activity.onBackPressedDispatcher.onBackPressed() }
+    private fun back() {
+        screen.runOnUiThread { screen.activity.onBackPressedDispatcher.onBackPressed() }
+        screen.waitForIdle()
+    }
 
     private companion object {
         /** Gradle runs the tests from the `app` directory. */

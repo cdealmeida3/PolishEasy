@@ -76,6 +76,10 @@ class FileLearnerProgress(file: File) : LearnerProgress {
 
     override fun itemProgress(): Map<String, ItemProgress> = items
 
+    override fun recordItems(items: Map<String, ItemProgress>) {
+        write(completed, inProgress, this.items + items, reviewOnly)
+    }
+
     /** A file that cannot be read is moved aside, so a bad file can never stop the app opening. */
     private fun read(): StoredProgress = saved.read(StoredProgress()) { text ->
         json.decodeFromString<StoredProgress>(text).also { stored ->

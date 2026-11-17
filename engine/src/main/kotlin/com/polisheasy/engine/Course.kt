@@ -21,6 +21,8 @@ data class Course(
     val genders: Map<String, Gender> = emptyMap(),
     /** The Item that says "my" with a noun of each gender, by its id. */
     val possessives: Map<Gender, String> = emptyMap(),
+    /** The instruction every Exercise of a kind shows, in Polish as in the book, by [InstructionKind]. */
+    val instructions: Map<InstructionKind, Instruction> = emptyMap(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }
@@ -47,14 +49,105 @@ data class Item(
     /** The Polish. */
     val text: String,
     val meaning: Localized,
+    /** Where the book marks one: whether the phrase is formal, informal or both (O, N, U). */
+    val register: Register? = null,
 )
+
+/** The book's register marks: O oficjalnie, N nieoficjalnie, U uniwersalnie. */
+@Serializable
+enum class Register(val mark: String) {
+    @SerialName("formal")
+    FORMAL("O"),
+
+    @SerialName("informal")
+    INFORMAL("N"),
+
+    @SerialName("universal")
+    UNIVERSAL("U"),
+}
+
+/** The three strands of a lesson in the book: K Komunikacja, L Leksyka, G Gramatyka. */
+@Serializable
+enum class Strand(val mark: String) {
+    @SerialName("K")
+    COMMUNICATION("K"),
+
+    @SerialName("L")
+    VOCABULARY("L"),
+
+    @SerialName("G")
+    GRAMMAR("G"),
+}
 
 data class Level(val id: String, val title: Localized, val units: List<CourseUnit>)
 
-data class CourseUnit(val id: String, val title: Localized, val dailySets: List<DailySet>)
+/**
+ * A Unit. In the book's Level it is a chapter: [number] is its lesson number, [polishTitle] the
+ * book's title (then [title] is the English under it), [accent] its colour, [strands] what the
+ * contents say it teaches, [lookUp] the Items of its "Sprawdź w słowniku" and [coming] when it has
+ * no content yet.
+ */
+data class CourseUnit(
+    val id: String,
+    val title: Localized,
+    val dailySets: List<DailySet>,
+    val number: Int? = null,
+    val polishTitle: String? = null,
+    val accent: Int = 0,
+    val strands: Map<Strand, List<String>> = emptyMap(),
+    val lookUp: List<String> = emptyList(),
+    val coming: Boolean = false,
+)
 
+/**
+ * A Daily Set. In the book's Level it is a section of a chapter: [section] gives its letter and
+ * heading as in the book.
+ */
 @Serializable
-data class DailySet(val id: String, val tips: List<Tip> = emptyList(), val exercises: List<Exercise>)
+data class DailySet(
+    val id: String,
+    val tips: List<Tip> = emptyList(),
+    val exercises: List<Exercise>,
+    val section: Section? = null,
+)
+
+/** A section of a chapter of the book: its [letter] (A, B, C…), the book's [heading] in Polish, its [meaning], and the [strands] it covers. */
+@Serializable
+data class Section(
+    val letter: String? = null,
+    val heading: String,
+    val meaning: Localized = emptyMap(),
+    val strands: List<Strand> = emptyList(),
+)
+
+/** What an Exercise asks, in Polish as the book writes it ([polish]), and in the Base Language. */
+@Serializable
+data class Instruction(val polish: String, val meaning: Localized)
+
+/** The kinds of Exercise as the Learner sees them, each with its own instruction. A reading form has its own. */
+@Serializable
+enum class InstructionKind {
+    @SerialName("choose_translation")
+    CHOOSE_TRANSLATION,
+
+    @SerialName("type_answer")
+    TYPE_ANSWER,
+
+    @SerialName("word_tiles")
+    WORD_TILES,
+
+    @SerialName("conjugation")
+    CONJUGATION,
+
+    @SerialName("listen_choose")
+    LISTEN_CHOOSE,
+
+    @SerialName("listen_type")
+    LISTEN_TYPE,
+
+    @SerialName("choose_polish")
+    CHOOSE_POLISH,
+}
 
 /** Shown once, just before the Exercise whose id is [before]. */
 @Serializable
