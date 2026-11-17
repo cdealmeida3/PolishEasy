@@ -325,6 +325,38 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Ankieta's people say only their Items' words, open in chapter 2, and every Round plays out heard and read`() {
+        assertTrue(course.ankieta.people.size >= 3)
+        val itemsById = course.itemsById
+        course.ankieta.people.forEach { person ->
+            // Their own name is the one word no Item has.
+            val words = (person.items.flatMap { words(itemsById.getValue(it).text) } + person.answers["imie"].orEmpty()).map { it.lowercase() }.toSet()
+            person.says.map { it.text }.forEach { line ->
+                assertEquals(emptySet(), words(line).map { it.lowercase() }.toSet() - words, "Words of \"$line\" of ${person.id} that none of their Items has")
+            }
+            assertTrue(person.answers.keys.containsAll(course.ankieta.fields.map { it.id }), "${person.id} leaves a field blank")
+        }
+        val chapter2 = course.levels.flatMap { it.units }.single { it.id == "kpk1-l02" }.dailySets
+        val before = course.path.indexOfFirst { it.id == chapter2.first().id }
+        val days = course.path.indexOfFirst { it.id == chapter2.last().id } + 1
+        assertEquals(GameState.NEEDS_MORE, practiceAfter(before).view().games.single { it.game == Game.ANKIETA }.state)
+        val practice = practiceAfter(days)
+        assertEquals(GameState.READY, practice.view().games.single { it.game == Game.ANKIETA }.state)
+        listOf("listen", "read").forEach { way ->
+            repeat(5) {
+                var round = practice.start(practice.setup(Game.ANKIETA, listOf(way))) as AnkietaRound
+                round.run.questions.forEach { question ->
+                    assertTrue(question.options.size >= 3, "$question")
+                    assertEquals(question.options.size, question.options.map { it.lowercase() }.distinct().size, "$question")
+                }
+                while (!round.finished) round = round.choose(checkNotNull(round.question).answer).next()
+                assertEquals(round.total, round.score.value)
+                assertEquals(15, round.total)
+            }
+        }
+    }
+
+    @Test
     fun `Register sort sorts only learned phrases the book marks, by the register it marks them with`() {
         (1..course.path.size).forEach { days ->
             val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()

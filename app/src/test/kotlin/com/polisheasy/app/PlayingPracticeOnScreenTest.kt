@@ -30,6 +30,7 @@ import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.FileLearnerProgress
 import com.polisheasy.engine.FilePracticeProgress
+import com.polisheasy.engine.AnkietaRound
 import com.polisheasy.engine.ChainRound
 import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
@@ -710,6 +711,72 @@ class PlayingPracticeOnScreenTest {
     }
 
     @Test
+    fun `Ankieta shows what a person says and fills in their form, a right answer in place and a wrong one put right`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_ankieta)
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+
+        // Read: what the person says, in one bubble without its meaning, the first field marked, and its options.
+        val round = ankieta()
+        val person = checkNotNull(round.person)
+        val meaning = person.says.joinToString(" ") { it.meaning }
+        shows(person.says.joinToString(" ") { it.text })
+        screen.onNodeWithText(meaning).assertDoesNotExist()
+        shows(text(R.string.ankieta_person, 1, 3))
+        val first = checkNotNull(round.question)
+        round.form.drop(1).forEach { field -> screen.onNodeWithContentDescription(text(R.string.ankieta_field_blank, field.label)).assertExists() }
+        first.options.forEach { screen.onNode(hasText(it) and hasClickAction()).assertExists() }
+
+        // Right: the field is filled in, and the next is asked by itself.
+        fillIn(first.right)
+        screen.onNodeWithContentDescription(text(R.string.ankieta_field_right, first.label, first.right)).assertExists()
+        screen.mainClock.advanceTimeBy(Motion.MOVE_ON_MILLIS + 100)
+        screen.waitForIdle()
+
+        // Wrong: the field is filled in with the right answer, and waits for Continue.
+        val second = checkNotNull(ankieta().question)
+        fillIn(second.options.first { it != second.right })
+        screen.onNodeWithContentDescription(text(R.string.ankieta_field_missed, second.label, second.right)).assertExists()
+        tap(R.string.action_continue)
+
+        // The rest right. Once the form is filled in, what each line means is shown.
+        while (ankieta().question?.person == 0) {
+            val question = checkNotNull(ankieta().question)
+            fillIn(question.right)
+            if (ankieta().form.all { it.filled != null }) screen.onNodeWithText(meaning).assertExists()
+            screen.mainClock.advanceTimeBy(Motion.MOVE_ON_MILLIS + 100)
+            screen.waitForIdle()
+        }
+        shows(text(R.string.ankieta_person, 2, 3))
+        while (viewModel?.screen is Screen.Round) {
+            fillIn(checkNotNull(ankieta().question).right)
+            screen.mainClock.advanceTimeBy(Motion.MOVE_ON_MILLIS + 100)
+            screen.waitForIdle()
+        }
+        showsScore(14, 15)
+        showsFirstBest()
+    }
+
+    @Test
+    fun `Ankieta heard plays all a person says when they appear and again from the button, and writes none of it before the form is filled in`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_ankieta)
+        tap(R.string.option_listen)
+        clips.asked.clear()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+        val person = checkNotNull(ankieta().person)
+        val all = person.says.map { Played(checkNotNull(viewModel?.practiceClipOf(it.text)).path, slow = false) }
+        assertEquals(all, clips.played)
+        screen.onNodeWithText(person.says.first().text).assertDoesNotExist()
+        clips.asked.clear()
+        screen.onNodeWithContentDescription(text(R.string.audio_play_again)).performClick()
+        screen.waitForIdle()
+        assertEquals(all, clips.played)
+    }
+
+    @Test
     fun `the Quick round runs against a clock, and a wrong answer waits while it runs`() {
         openPracticeOverTheRealCourse()
         openGame(R.string.game_quick_round)
@@ -925,6 +992,11 @@ class PlayingPracticeOnScreenTest {
     private fun spelling(): SpellRound = (viewModel?.screen as Screen.Round).round as SpellRound
 
     private fun quick(): QuickRound = (viewModel?.screen as Screen.Round).round as QuickRound
+
+    private fun ankieta(): AnkietaRound = (viewModel?.screen as Screen.Round).round as AnkietaRound
+
+    /** Fills in the field being asked with the option that reads [answer]. */
+    private fun fillIn(answer: String) = screen.onNode(hasText(answer) and hasClickAction()).performScrollTo().performClick()
 
     private fun registers(): RegisterRound = (viewModel?.screen as Screen.Round).round as RegisterRound
 

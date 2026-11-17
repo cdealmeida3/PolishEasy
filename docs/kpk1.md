@@ -62,7 +62,7 @@ Book pages 18 to 27, recordings 029 to 046. Twelve parts, 193 Exercises and 58 n
 - **F** *Dlaczego uczysz się polskiego?*, in two (14 and 15): *dlaczego* and *bo*; then *żeby* with a verb's basic form (*pracować, studiować w Polsce*), *hobby*, and an *Uwaga!* on *jego* and *jej*, which never change.
 - *Ćwiczenia* (18): the book's kinds again over the whole chapter.
 
-There are 35 listening tasks on all 18 recordings, and two Chats: *Your details* (Pani Anna at the school office, formal: how are things, where you are from and live, your phone number, why you learn Polish) and *Catching up* (Ewa on the phone, informal: how are things, where you are, tennis, why Polish). The Ankieta Game, the chapter's signature, follows in its own step.
+There are 35 listening tasks on all 18 recordings, and two Chats: *Your details* (Pani Anna at the school office, formal: how are things, where you are from and live, your phone number, why you learn Polish) and *Catching up* (Ewa on the phone, informal: how are things, where you are, tennis, why Polish). The chapter's Game is **Ankieta**: six people (Julia, Maria, Anna, Robert, Leon and Daniel) introduce themselves, heard or read, and the Learner fills in a form for each: name, where from, where they live, phone number, and why they learn Polish (*bo jej / jego…* or *żeby…*). A later chapter adds people, and fields where the book teaches more to ask.
 
 It gives the later chapters:
 

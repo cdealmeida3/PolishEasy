@@ -29,6 +29,7 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 | Spell it | `engine/.../SpellIt.kt` |
 | Quick round | `engine/.../QuickRound.kt` |
 | Register sort | `engine/.../RegisterSort.kt` |
+| Ankieta, and its form and people | `engine/.../Ankieta.kt` |
 | Listen and tap | `engine/.../ListenAndTap.kt` |
 | Chat, and its scripts | `engine/.../Chat.kt` |
 | Hearing Polish said (`saidAs`) | `engine/.../Speaking.kt` |
@@ -119,6 +120,8 @@ The clock is the only kind in the app. The engine does not read the time: the sc
 
 **Register sort** (Phrases). Chapter 1's Game. Opens with six learned Items the content marks with a register, of two registers at least. A phrase is shown alone and the Learner sorts it by who it is said to: "Pan or pani" (O), "A friend" (N) or "Anyone" (U), the last only once a universal phrase is learned. Each button counts what it holds. The meaning is not shown at first, because it often gives the register away. A right answer brings the next phrase at once; a wrong one shows the phrase's register chip and meaning, says it, and waits for "Continue", while the clock runs. It keeps the Quick round's clock, 60 seconds or 120, and every phrase comes round before any comes again. The result is the right answers, and the most is the Best of that time.
 
+**Ankieta** (Phrases). Chapter 2's Game, after the book's *dane personalne*. Opens once three people of `content/kpk1/ankieta.json` can be met: every Item a person lists is learned. Ways to play: their introductions heard (with sound on, where every line has a Clip) or read. A Round meets three people, those not met today first. Each introduces themselves in a few lines, and the Learner fills in a form for them a field at a time: *Imię*, *Skąd jest?*, *Gdzie mieszka?*, *Numer telefonu*, *Dlaczego uczy się polskiego?*. Each field offers the right answer among those of the other people who can be met and the wrong ones written for it, at most four, two across. Heard, all a person says is played when they appear and again from the play button, and is written only once the form is filled in; read, it is one chat bubble from the start. Once the form is filled in, what was said is shown with its meaning. A right answer fills the field and moves on by itself; a wrong one fills it with the right answer in amber and waits for "Continue". The result is the fields right first try.
+
 ## What Practice needs from the content
 
 `course.json` may name one file, `"practice": "practice/practice.json"`, for what the Games need to know that no Item says. It holds:
@@ -135,3 +138,9 @@ A new Unit adds its nouns to `genders`.
 `course.json` lists the scripts under `"chats"`. A script has an `id`, the `person`, a `title` and a `scene` in each Base Language (who the Learner is and where, and how to address the person), the `register` the chat is held in, the `items` it uses, and its `turns`. Each turn has an `id`, what the person `says` and its `meaning`, and two to four `replies`. A reply has its `text` and `meaning`; a right one is marked `right` and names the turn it leads to with `next` (none ends the chat), and may list `acceptedAnswers` for typing and saying. A wrong one may name its `register` and a `note` in each Base Language, its Polish marked with `*` as in a Tip. The last turn has no replies.
 
 Write it fresh, with only the Items listed, and list every Item it uses: `PracticeOverAuthoredContentTest` checks that its words come from them. `./gradlew :engine:checkContent` checks the rest: every turn reachable from the first, an end, a right reply in every turn that has replies, no wrong reply that leads on. Its Polish goes through the Polish check and review like a Daily Set's, and its lines and right replies need Clips (`./gradlew :audio:makeClips`).
+
+## The Ankieta's people
+
+`course.json` names one file, `"ankieta": "kpk1/ankieta.json"`. It holds the form's `fields`, in order, each an `id`, its Polish `label` and its `meaning` in each Base Language; and its `people`. A person has an `id`, the `items` they need, what they `says` (lines, each a `text` and its `meaning`), the form filled in from it as `answers` by field id, and may give `wrong` answers for a field, such as a phone number a digit off. A person may leave a field out; the form then has no row for it.
+
+Write people fresh, in the chapter's words, and list every Item they use: `PracticeOverAuthoredContentTest` checks their words come from them, their own name aside. An answer is about the person, in the third person (*bo jej mama jest z Polski*), and reads right after its field's label. A phone number is written in digits in pairs (`21 14 28`) and said in words in a line. `./gradlew :engine:checkContent` checks that every field answered is on the form and has at least two other answers to choose among, from the other people or `wrong`. The lines need Clips (`./gradlew :audio:makeClips`), and the labels, lines and answers go through the Polish check and review like a Daily Set's. A later chapter adds people, and fields where the book teaches more to ask (*wiek*, *zawód*).

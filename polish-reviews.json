@@ -4,7 +4,70 @@
             "text": "12"
         },
         {
+            "text": "12 14 28"
+        },
+        {
+            "text": "12 19 15"
+        },
+        {
+            "text": "12 19 25"
+        },
+        {
+            "text": "12 9 25"
+        },
+        {
+            "text": "13 16 15"
+        },
+        {
+            "text": "13 26 15"
+        },
+        {
+            "text": "13 26 5"
+        },
+        {
+            "text": "14 18 29"
+        },
+        {
+            "text": "16 12 27"
+        },
+        {
+            "text": "16 22 27"
+        },
+        {
+            "text": "16 22 7"
+        },
+        {
+            "text": "17 11 13"
+        },
+        {
+            "text": "17 11 23"
+        },
+        {
+            "text": "17 12 23"
+        },
+        {
             "text": "19"
+        },
+        {
+            "text": "20 19 25"
+        },
+        {
+            "text": "21 14 18"
+        },
+        {
+            "text": "21 14 28"
+        },
+        {
+            "text": "21 4 28"
+        },
+        {
+            "text": "24 18 19"
+        },
+        {
+            "text": "24 18 29"
+        },
+        {
+            "text": "24 8 29"
         },
         {
             "text": "29"
@@ -13,7 +76,16 @@
             "text": "3"
         },
         {
+            "text": "3 26 15"
+        },
+        {
             "text": "5"
+        },
+        {
+            "text": "6 22 27"
+        },
+        {
+            "text": "7 11 23"
         },
         {
             "text": "9"
@@ -151,6 +223,9 @@
             "meaning": "English (a man, after jestem, jesteś, jest)"
         },
         {
+            "text": "Anna"
+        },
+        {
             "text": "Anna to studentka.",
             "meaning": "Anna is a student."
         },
@@ -285,6 +360,18 @@
             "meaning": "Hi! My name is Adam."
         },
         {
+            "text": "Cześć! Mam na imię Anna.",
+            "meaning": "Hi! My name is Anna."
+        },
+        {
+            "text": "Cześć! Mam na imię Julia.",
+            "meaning": "Hi! My name is Julia."
+        },
+        {
+            "text": "Cześć! Mam na imię Leon.",
+            "meaning": "Hi! My name is Leon."
+        },
+        {
             "text": "Cześć! Po staremu. A u ciebie?",
             "meaning": "Hi! Same as ever. And with you?"
         },
@@ -349,6 +436,9 @@
             "meaning": "Personal details"
         },
         {
+            "text": "Daniel"
+        },
+        {
             "text": "Dlaczego Angela uczy się polskiego?",
             "meaning": "Why is Angela learning Polish?"
         },
@@ -359,6 +449,10 @@
         {
             "text": "Dlaczego ona uczy się polskiego?",
             "meaning": "Why is she learning Polish?"
+        },
+        {
+            "text": "Dlaczego uczy się polskiego?",
+            "meaning": "Why is this person learning Polish?"
         },
         {
             "text": "Dlaczego uczysz się polskiego?",
@@ -477,6 +571,18 @@
         {
             "text": "Dzień dobry! Jak się pani nazywa?",
             "meaning": "Good morning! What is your name, madam?"
+        },
+        {
+            "text": "Dzień dobry! Mam na imię Daniel.",
+            "meaning": "Good morning! My name is Daniel."
+        },
+        {
+            "text": "Dzień dobry! Mam na imię Maria.",
+            "meaning": "Good morning! My name is Maria."
+        },
+        {
+            "text": "Dzień dobry! Mam na imię Robert.",
+            "meaning": "Good morning! My name is Robert."
         },
         {
             "text": "Dzień dobry! Nazywam się Adam.",
@@ -648,6 +754,10 @@
             "meaning": "Where does the woman live?"
         },
         {
+            "text": "Gdzie mieszka?",
+            "meaning": "Where does this person live?"
+        },
+        {
             "text": "Gdzie ona jest?",
             "meaning": "Where is she?"
         },
@@ -688,6 +798,10 @@
         {
             "text": "Ile masz lat?",
             "meaning": "How old are you? (to a friend)"
+        },
+        {
+            "text": "Imię",
+            "meaning": "First name"
         },
         {
             "text": "Imię i nazwisko."
@@ -792,12 +906,32 @@
             "meaning": "I am in Kraków."
         },
         {
+            "text": "Jestem z Anglii i mieszkam w Londynie.",
+            "meaning": "I am from England and I live in London."
+        },
+        {
             "text": "Jestem z Anglii.",
             "meaning": "I am from England."
         },
         {
             "text": "Jestem z Anglii.",
             "meaning": "I'm from England."
+        },
+        {
+            "text": "Jestem z Francji i mieszkam w Warszawie.",
+            "meaning": "I am from France and I live in Warsaw."
+        },
+        {
+            "text": "Jestem z Hiszpanii i mieszkam w Krakowie.",
+            "meaning": "I am from Spain and I live in Kraków."
+        },
+        {
+            "text": "Jestem z Niemiec i mieszkam w Berlinie.",
+            "meaning": "I am from Germany and I live in Berlin."
+        },
+        {
+            "text": "Jestem z Niemiec i mieszkam w Warszawie.",
+            "meaning": "I am from Germany and I live in Warsaw."
         },
         {
             "text": "Jestem z Niemiec, ale mieszkam w Warszawie."
@@ -811,11 +945,18 @@
             "meaning": "I'm from Poland. Do you speak Polish?"
         },
         {
+            "text": "Jestem z Włoch i mieszkam w Krakowie.",
+            "meaning": "I am from Italy and I live in Kraków."
+        },
+        {
             "text": "Jesteś"
         },
         {
             "text": "Jesteś w Krakowie.",
             "meaning": "You are in Kraków."
+        },
+        {
+            "text": "Julia"
         },
         {
             "text": "Kawa i woda są tam, na prawo.",
@@ -846,6 +987,9 @@
         },
         {
             "text": "Książka."
+        },
+        {
+            "text": "Leon"
         },
         {
             "text": "Liczebniki 0–10",
@@ -881,6 +1025,9 @@
         {
             "text": "Mam na imię Adam.",
             "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Maria"
         },
         {
             "text": "Mieszkam w Krakowie.",
@@ -972,12 +1119,36 @@
             "meaning": "My pen is over there, on the left."
         },
         {
+            "text": "Mój numer telefonu to dwadzieścia cztery, osiemnaście, dwadzieścia dziewięć.",
+            "meaning": "My phone number is 24 18 29."
+        },
+        {
+            "text": "Mój numer telefonu to dwadzieścia jeden, czternaście, dwadzieścia osiem.",
+            "meaning": "My phone number is 21 14 28."
+        },
+        {
             "text": "Mój numer telefonu to dwanaście, dwadzieścia trzy, siedemnaście.",
             "meaning": "My phone number is 12 23 17."
         },
         {
+            "text": "Mój numer telefonu to dwanaście, dziewiętnaście, dwadzieścia pięć.",
+            "meaning": "My phone number is 12 19 25."
+        },
+        {
             "text": "Mój numer telefonu to dwanaście, trzy, siedemnaście.",
             "meaning": "My phone number is 12 3 17."
+        },
+        {
+            "text": "Mój numer telefonu to siedemnaście, jedenaście, dwadzieścia trzy.",
+            "meaning": "My phone number is 17 11 23."
+        },
+        {
+            "text": "Mój numer telefonu to szesnaście, dwadzieścia dwa, dwadzieścia siedem.",
+            "meaning": "My phone number is 16 22 27."
+        },
+        {
+            "text": "Mój numer telefonu to trzynaście, dwadzieścia sześć, piętnaście.",
+            "meaning": "My phone number is 13 26 15."
         },
         {
             "text": "Mój numer to dwanaście, dwadzieścia trzy, siedemnaście.",
@@ -1088,6 +1259,10 @@
         },
         {
             "text": "Niemcy"
+        },
+        {
+            "text": "Numer telefonu",
+            "meaning": "Phone number"
         },
         {
             "text": "Numer telefonu."
@@ -1302,6 +1477,9 @@
             "meaning": "Sorry, I don't understand. Please repeat."
         },
         {
+            "text": "Robert"
+        },
+        {
             "text": "Rozumiem! Dziękuję bardzo.",
             "meaning": "I understand! Thank you very much."
         },
@@ -1336,6 +1514,10 @@
         {
             "text": "Skąd jest pan?",
             "meaning": "Where is the man from?"
+        },
+        {
+            "text": "Skąd jest?",
+            "meaning": "Where is this person from?"
         },
         {
             "text": "Skąd jesteś? Gdzie mieszkasz?",
@@ -1526,6 +1708,14 @@
             "meaning": "I am learning Polish because my mum is from Poland."
         },
         {
+            "text": "Uczę się polskiego, bo mój chłopak jest z Polski.",
+            "meaning": "I am learning Polish because my boyfriend is from Poland."
+        },
+        {
+            "text": "Uczę się polskiego, bo mój tata jest z Polski.",
+            "meaning": "I am learning Polish because my dad is from Poland."
+        },
+        {
             "text": "Uczę się polskiego, bo pracować w Polsce.",
             "meaning": "I am learning Polish because to work in Poland.",
             "finding": "Deliberately wrong chat reply (its note explains bo vs żeby), but note it is ungrammatical Polish: bo cannot be followed by a bare infinitive. The correct form is \"Uczę się polskiego, żeby pracować w Polsce.\"; keep it only if an ungrammatical distractor is intended."
@@ -1533,6 +1723,10 @@
         {
             "text": "Uczę się polskiego, żeby pracować w Polsce.",
             "meaning": "I am learning Polish to work in Poland."
+        },
+        {
+            "text": "Uczę się polskiego, żeby studiować w Polsce.",
+            "meaning": "I am learning Polish to study in Poland."
         },
         {
             "text": "Ulica Długa: jaki numer?",
@@ -1732,6 +1926,18 @@
         {
             "text": "bo",
             "meaning": "because"
+        },
+        {
+            "text": "bo jego dziewczyna jest z Polski"
+        },
+        {
+            "text": "bo jego tata jest z Polski"
+        },
+        {
+            "text": "bo jej chłopak jest z Polski"
+        },
+        {
+            "text": "bo jej mama jest z Polski"
         },
         {
             "text": "brat",
@@ -5107,6 +5313,12 @@
         {
             "text": "żeby",
             "meaning": "so that; to (żeby pracować: to work)"
+        },
+        {
+            "text": "żeby pracować w Polsce"
+        },
+        {
+            "text": "żeby studiować w Polsce"
         },
         {
             "text": "żel"

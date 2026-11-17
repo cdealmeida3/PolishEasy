@@ -309,6 +309,14 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
         if (script.turns.isNotEmpty() && !ends) report(file, script.id, "$name never ends")
     }
 
+    // Ankieta
+    content.ankietaFile?.let { file ->
+        content.ankieta.fields.forEach { field -> needsText(file, field.id, "The meaning of Ankieta field ${field.id}", field.meaning) }
+        content.ankieta.people.forEach { person ->
+            person.says.forEachIndexed { index, line -> needsText(file, person.id, "The meaning of line ${index + 1} of Ankieta person ${person.id}", line.meaning) }
+        }
+    }
+
     // Items
     val exercisesOfItem = course.path.flatMap { it.exercises }
         .flatMap { exercise -> exercise.items.map { it to exercise.id } }

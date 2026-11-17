@@ -131,7 +131,9 @@ fun ChatBubble(
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         Column(modifier = Modifier.weight(1f, fill = false)) {
                             Text(text, style = MaterialTheme.typography.titleMedium.inPolish(), color = ink)
-                            Text(meaning, style = MaterialTheme.typography.bodySmall, color = if (mine) ink else scheme.onSurfaceVariant)
+                            if (meaning.isNotEmpty()) {
+                                Text(meaning, style = MaterialTheme.typography.bodySmall, color = if (mine) ink else scheme.onSurfaceVariant)
+                            }
                         }
                         speaker?.let {
                             Spacer(Modifier.width(Space.xxs))
