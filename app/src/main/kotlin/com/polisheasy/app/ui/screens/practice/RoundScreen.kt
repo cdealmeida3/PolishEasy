@@ -19,6 +19,7 @@ import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
 import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.QuickRound
+import com.polisheasy.engine.RegisterRound
 import com.polisheasy.engine.SpellRound
 import com.polisheasy.engine.Given
 import com.polisheasy.engine.ListenRound
@@ -53,8 +54,9 @@ internal fun RoundScreen(
     val sayFirst: (List<String>) -> Unit = { polish -> if (sound) polish.firstNotNullOfOrNull(clipOf)?.let(onPlay) }
     when (round) {
         is NumberRound -> NumbersStep(round, sayAll, onMove)
-        is SpellRound -> SpellItStep(round, say, onMove)
+        is SpellRound -> SpellItStep(round, say, sayAll, onMove)
         is QuickRound -> QuickRoundStep(round, onMove)
+        is RegisterRound -> RegisterSortStep(round, say, onMove)
         is GenderRound -> MojMojaMojeStep(round, say, sayFirst, onMove)
         is GapRound -> SoundGapsStep(round, say, onMove)
         is ChainRound -> PhraseChainsStep(round, say, onMove)

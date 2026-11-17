@@ -5,7 +5,8 @@ import kotlin.random.Random
 
 /**
  * One word of Spell it: the Item's [polish], what it means, its [picture] when the Round shows
- * pictures, and its letters as [tiles], mixed.
+ * pictures, and its letters as [tiles], mixed. Spelled aloud, [spelled] is the name of each of its
+ * letters in order (*be, a, er*), to be said one after the other.
  */
 data class SpellWord(
     val itemId: String,
@@ -13,6 +14,7 @@ data class SpellWord(
     val meaning: String,
     val picture: Picture?,
     val tiles: List<String>,
+    val spelled: List<String> = emptyList(),
 ) {
     /** The letters of the word, in order. */
     val letters: List<String> get() = polish.map { it.toString() }
@@ -21,12 +23,14 @@ data class SpellWord(
 /**
  * A Round of Spell it: for each word its letters lie mixed as tiles, and the Learner taps them in
  * order. A right letter takes its place in the word; a wrong one stays where it is and is a slip.
- * The result is the words spelled with no slip.
+ * [aloud], the word is not shown at all but spelled aloud, letter by letter, as *proszę
+ * przeliterować* asks. The result is the words spelled with no slip.
  */
 data class SpellRound(
     override val played: List<String>,
     val pictures: Boolean,
     val words: List<SpellWord>,
+    val aloud: Boolean = false,
     val index: Int = 0,
     /** The tiles placed so far, in order, as places in the word's tiles. */
     val placed: List<Int> = emptyList(),
@@ -75,6 +79,7 @@ internal object SpellIt : GameRules {
     const val FROM = "from"
     const val PICTURE = "picture"
     const val MEANING = "meaning"
+    const val ALOUD = "aloud"
     const val DECK = "deck"
 
     /** The fewest words a deck is offered with, and the most a Round has. */
@@ -93,10 +98,20 @@ internal object SpellIt : GameRules {
         return text.length in SHORTEST..LONGEST && text.all { it.isLetter() && it.isLowerCase() }
     }
 
+    /** The name of each letter of [text], in order, or null if a letter has no name or its name no Clip. */
+    private fun spelled(learned: Learned, text: String): List<String>? {
+        val names = text.map { learned.course.letterNames[it.toString()] }
+        return if (names.all { it != null && learned.course.clipFor(it) != null }) names.filterNotNull() else null
+    }
+
     private fun decks(learned: Learned, from: String): List<Deck> {
         val pictures = from == PICTURE
+        val aloud = from == ALOUD
         return learned
-            .decks(LEAST) { item -> spellable(item) && (!pictures || item.id in learned.course.pictures) }
+            .decks(LEAST) { item ->
+                spellable(item) && (!pictures || item.id in learned.course.pictures) &&
+                    (!aloud || spelled(learned, Normalizer.normalize(item.text, Normalizer.Form.NFC)) != null)
+            }
             .map { Deck(it.id, it.label, learned.unalike(it.items, if (pictures) Alike.PICTURE else Alike.MEANING)) }
             .filter { it.items.size >= LEAST }
     }
@@ -105,7 +120,8 @@ internal object SpellIt : GameRules {
         if (decks(learned, MEANING).isEmpty()) GameState.NEEDS_MORE else GameState.READY
 
     override fun choices(learned: Learned, wanted: List<String>, sound: Boolean): List<ChoiceView> {
-        val ways = listOf(PICTURE, MEANING).filter { decks(learned, it).isNotEmpty() }
+        // Spelled aloud is only listening, so it is offered only with sound on.
+        val ways = listOfNotNull(PICTURE, MEANING, ALOUD.takeIf { sound }).filter { decks(learned, it).isNotEmpty() }
         val from = choice(FROM, ways.map { OptionView(it) }, wanted.getOrNull(0))
         val decks = decks(learned, from.selected)
         return listOf(from, ChoiceView(DECK, decks.map { it.option }, deck(decks, wanted.getOrNull(1)).id))
@@ -113,6 +129,7 @@ internal object SpellIt : GameRules {
 
     override fun start(learned: Learned, selected: List<String>, sound: Boolean, random: Random, seen: Set<String>, avoidFirst: String?): Round {
         val pictures = selected[0] == PICTURE
+        val aloud = selected[0] == ALOUD
         val deck = deck(decks(learned, selected[0]), selected[1])
         val words = random.draw(deck.items, WORDS, seen, avoidFirst) { it.id }.map { item ->
             val text = Normalizer.normalize(item.text, Normalizer.Form.NFC)
@@ -121,8 +138,15 @@ internal object SpellIt : GameRules {
             var tiles = letters.shuffled(random)
             var tries = 0
             while (tiles == letters && tries++ < 20) tiles = letters.shuffled(random)
-            SpellWord(item.id, text, learned.localize(item.meaning), learned.course.pictures[item.id].takeIf { pictures }, tiles)
+            SpellWord(
+                item.id,
+                text,
+                learned.localize(item.meaning),
+                learned.course.pictures[item.id].takeIf { pictures },
+                tiles,
+                if (aloud) spelled(learned, text).orEmpty() else emptyList(),
+            )
         }
-        return SpellRound(selected, pictures, words)
+        return SpellRound(selected, pictures, words, aloud)
     }
 }

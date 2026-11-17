@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -342,6 +343,53 @@ private fun MatchButton(label: String, icon: Int, tint: Color, enabled: Boolean,
         ) {
             Icon(painterResource(icon), contentDescription = null, tint = tint, modifier = Modifier.size(Scaled.icon(Size.feedbackIcon)))
             Text(label, style = MaterialTheme.typography.titleMedium, color = scheme.onSurface, textAlign = TextAlign.Center)
+        }
+    }
+}
+
+/**
+ * One register to sort a phrase into, as Register sort offers them side by side: the book's
+ * [mark] (O, N or U) large in a square, what it means under it, and [count], the phrases sorted
+ * into it right so far. Not [enabled], it fades and does not respond.
+ */
+@Composable
+fun RegisterButton(
+    mark: String,
+    label: String,
+    count: Int,
+    description: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
+) {
+    val scheme = MaterialTheme.colorScheme
+    Edged(
+        fill = scheme.surfaceContainerLowest,
+        edge = scheme.outlineVariant,
+        corner = Corner.large,
+        border = Edge.border,
+        enabled = enabled,
+        onClick = onClick,
+        modifier = modifier
+            .heightIn(min = Size.letterOption)
+            .alpha(if (enabled) 1f else Motion.FADED_ALPHA),
+    ) {
+        // The button is read as one sentence, and still as a button the Learner can press.
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(Space.xxs),
+            modifier = Modifier.padding(Space.xs).clearAndSetSemantics { contentDescription = description },
+        ) {
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .size(Scaled.icon(Size.feedbackIcon) + Space.xs)
+                    .background(scheme.secondaryContainer, RoundedCornerShape(Corner.small)),
+            ) {
+                Text(mark, style = MaterialTheme.typography.titleLarge, color = scheme.onSecondaryContainer)
+            }
+            Text(label, style = MaterialTheme.typography.titleSmall, color = scheme.onSurface, textAlign = TextAlign.Center)
+            Text(count.toString(), style = MaterialTheme.typography.labelMedium, color = scheme.onSurfaceVariant)
         }
     }
 }

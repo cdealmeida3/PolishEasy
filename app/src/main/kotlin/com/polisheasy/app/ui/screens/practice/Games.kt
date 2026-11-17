@@ -11,6 +11,7 @@ import com.polisheasy.engine.GameGroup
 import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.OptionView
 import com.polisheasy.engine.QuickRound
+import com.polisheasy.engine.RegisterRound
 import com.polisheasy.engine.Round
 
 /** What the screens call a Game: its name, one line of what it is, what opens it, and its icon. */
@@ -29,6 +30,8 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_memory_pairs, R.string.game_memory_pairs_note, R.string.game_memory_pairs_needs, R.drawable.game_memory_pairs)
     Game.CHAT ->
         GameWords(R.string.game_chat, R.string.game_chat_note, R.string.game_chat_needs, R.drawable.game_chat)
+    Game.REGISTER_SORT ->
+        GameWords(R.string.game_register_sort, R.string.game_register_sort_note, R.string.game_register_sort_needs, R.drawable.game_register_sort)
     Game.PHRASE_CHAINS ->
         GameWords(R.string.game_phrase_chains, R.string.game_phrase_chains_note, R.string.game_phrase_chains_needs, R.drawable.game_phrase_chains)
     Game.LISTEN_AND_TAP ->
@@ -59,7 +62,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.CHAT -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.CHAT -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
@@ -105,6 +108,7 @@ internal fun optionLabel(option: OptionView): String = option.label
         "long" -> R.string.option_long
         "picture" -> R.string.option_picture
         "meaning" -> R.string.option_meaning
+        "aloud" -> R.string.option_aloud
         "word-meaning" -> R.string.option_word_meaning
         "sound-word" -> R.string.option_sound_word
         "mixed" -> R.string.option_mixed
@@ -135,6 +139,7 @@ private const val SECONDS = "seconds-"
 @Composable
 internal fun progressWords(round: Round): String = when (round) {
     is QuickRound -> pluralStringResource(R.plurals.quick_left, round.left, round.left)
+    is RegisterRound -> pluralStringResource(R.plurals.quick_left, round.left, round.left)
     is MemoryRound -> stringResource(R.string.memory_progress, round.done, round.total)
     else -> stringResource(R.string.round_progress, round.done, round.total)
 }

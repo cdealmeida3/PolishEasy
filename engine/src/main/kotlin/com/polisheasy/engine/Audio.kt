@@ -44,12 +44,13 @@ internal fun spoken(exercise: Exercise): List<String> = when (exercise) {
 internal fun spoken(script: ChatScript): List<String> =
     script.turns.flatMap { turn -> listOf(turn.says) + turn.replies.filter { it.right }.map { it.text } }
 
-/** Every Polish text the course can speak, once each, in Path order, then the instructions and the chats. Each needs a Clip. */
+/** Every Polish text the course can speak, once each, in Path order, then the instructions, the chats and the letters' names. Each needs a Clip. */
 fun Course.spokenTexts(): List<String> =
     (
         path.flatMap { it.exercises }.flatMap(::spoken) +
             InstructionKind.entries.mapNotNull { instructions[it]?.polish } +
-            chats.flatMap(::spoken)
+            chats.flatMap(::spoken) +
+            letterNames.values
         )
         .distinctBy(::audioKey)
 
