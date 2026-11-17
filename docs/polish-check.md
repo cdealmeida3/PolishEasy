@@ -8,7 +8,7 @@ The **Polish check** reads every Polish text in the Authored Content and lists e
 ./gradlew :polishcheck:checkPolish
 ```
 
-It needs no network once Gradle has its libraries, and takes a few seconds. CI runs it on every build, so no APK or bundle is published from content with a problem that is not accepted. A local build of the app does not run it. When nothing in `content/`, `polish-reviews.json` or `polish-accepted.json` has changed since it last passed, Gradle skips it (`UP-TO-DATE`).
+It needs no network once Gradle has its libraries, and takes a few seconds. It is part of `./gradlew checkBeforeMerge`, which every change passes before it is merged, and the build that publishes the `latest` release runs it again, so no APK or bundle is published from content with a problem that is not accepted. A local build of the app does not run it. When nothing in `content/`, `polish-reviews.json` or `polish-accepted.json` has changed since it last passed, Gradle skips it (`UP-TO-DATE`).
 
 It exits 0 when no problem is left, 1 when any is, and 2 when it is run with the wrong arguments. Each problem is one line, like the content checker's: the file to open, the identifier, what is wrong.
 
@@ -18,7 +18,7 @@ a1/unit-03/day-02.json: a1-u03-d02-e11: "ile ma lat twój syn?" has not been rev
 Polish check failed: 2 problems. Report: polishcheck/build/polish-check/report.md
 ```
 
-The report, `polishcheck/build/polish-check/report.md`, has a table of what each pass looked at, every problem grouped by pass with its **key** and every place its text is written, what is awaiting review, what is accepted and why, and the sources. The same content always gives the same report. CI keeps it as the artifact `polish-check`, also when the build fails.
+The report, `polishcheck/build/polish-check/report.md`, has a table of what each pass looked at, every problem grouped by pass with its **key** and every place its text is written, what is awaiting review, what is accepted and why, and the sources. The same content always gives the same report. A run on GitHub keeps it as the artifact `polish-check`, also when the build fails.
 
 ## What it looks at
 

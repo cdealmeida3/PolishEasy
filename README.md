@@ -21,7 +21,15 @@ All debug builds are signed with the same debug key, so a new debug APK installs
 
 The APK is written to `app/build/outputs/apk/debug/app-debug.apk`.
 
-Every build of the app first checks the Authored Content and fails if anything in it is broken; `./gradlew :engine:checkContent` runs the check alone. See [docs/content-checks.md](docs/content-checks.md). `./gradlew :polishcheck:checkPolish` checks the Polish itself against a dictionary, reference conjugations, grammar rules and a recorded review of every sentence, and CI runs it on every build. See [docs/polish-check.md](docs/polish-check.md).
+## Before merging
+
+```
+./gradlew checkBeforeMerge
+```
+
+runs every test and check and builds the debug and release app. Every change passes it on the computer that made it before it is merged: GitHub does not run the tests on a pull request. After a merge to the default branch GitHub only checks the Polish, builds the app and publishes it as the `latest` release, and a merge that changes only documentation (`*.md` at the root, `docs/`, `.claude/`) builds nothing. "Run workflow" on the repository's Actions tab runs the whole check on GitHub, on any branch. [ADR-0015](docs/adr/0015-the-checks-run-before-the-merge.md) records why.
+
+Every build of the app first checks the Authored Content and fails if anything in it is broken; `./gradlew :engine:checkContent` runs the check alone. See [docs/content-checks.md](docs/content-checks.md). `./gradlew :polishcheck:checkPolish` checks the Polish itself against a dictionary, reference conjugations, grammar rules and a recorded review of every sentence, and the check before merging and every published build run it. See [docs/polish-check.md](docs/polish-check.md).
 
 ```
 ./gradlew :app:assembleRelease :app:bundleRelease
@@ -35,13 +43,13 @@ builds the minified release APK and App Bundle under `app/build/outputs/`. They 
 ./gradlew :app:testDebugUnitTest
 ```
 
-plays the real screens on the computer, with no phone or emulator, and CI runs it on every build. The tests start the app on Home and tap and type their way through a Daily Set to its Summary: one Exercise of each type, a wrong answer, an answer missing its accents, the listening controls, "can't listen now", the close button, Sound turned off in Settings, leaving and coming back, the Path and a Replay. The first run downloads the Android version they run on (about 150 MB).
+plays the real screens on the computer, with no phone or emulator, and is part of the check before merging. The tests start the app on Home and tap and type their way through a Daily Set to its Summary: one Exercise of each type, a wrong answer, an answer missing its accents, the listening controls, "can't listen now", the close button, Sound turned off in Settings, leaving and coming back, the Path and a Replay. The first run downloads the Android version they run on (about 150 MB).
 
 They play a small fixture course in `app/src/test/resources/fixture-course`, written in the same files as `content/`, so an edit to the real course cannot break them. One test opens the real packaged course and checks only that its first step shows. The clock and the Clip player are replaced too, so a test can move to the next day and can say which Clip a screen asked for.
 
 They check what a Learner sees, not the rules, which the engine's tests cover. What they cannot check stays with a run-through on a phone: the sound itself, the Reminder's notification, the time picker, the email draft for a mistake report, the real keyboard and anything that moves.
 
-The same command writes a picture of every screen, in the light and the dark theme and at the largest font size, to `app/build/screenshots/`, and CI keeps them as the `screenshots` artifact of each run. [docs/design.md](docs/design.md) says how the app should look. Colours and font values live only in the app's `ui/theme` folder, and every build fails on one anywhere else (`./gradlew :app:checkDesignTokens`); [CODING_STANDARDS.md](CODING_STANDARDS.md) has the rest of the rules for writing a screen.
+The same command writes a picture of every screen, in the light and the dark theme and at the largest font size, to `app/build/screenshots/`. [docs/design.md](docs/design.md) says how the app should look. Colours and font values live only in the app's `ui/theme` folder, and every build fails on one anywhere else (`./gradlew :app:checkDesignTokens`); [CODING_STANDARDS.md](CODING_STANDARDS.md) has the rest of the rules for writing a screen.
 
 ## More
 

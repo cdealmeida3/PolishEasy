@@ -10,10 +10,10 @@ Read this before changing a screen or a component. If a value you need is missin
 ./gradlew :app:testDebugUnitTest --tests '*ScreenshotsTest'
 ```
 
-writes one PNG per screen to `app/build/screenshots/`: the fixture course in the light theme (`light-…`) and the dark theme (`dark-…`), the light theme again at the largest font size a phone offers (`large-…`), and the real course on Home, the Path and its first step (`real-…`). They are 411 × 891 dp. CI keeps them as the `screenshots` artifact of every run.
+writes one PNG per screen to `app/build/screenshots/`: the fixture course in the light theme (`light-…`) and the dark theme (`dark-…`), the light theme again at the largest font size a phone offers (`large-…`), and the real course on Home, the Path and its first step (`real-…`). They are 411 × 891 dp. A run of the Build workflow started by hand on GitHub keeps them as its `screenshots` artifact; merges do not run the screen tests (ADR-0015).
 
 - Look at the pictures before and after any change to a screen. Open the PNGs themselves; they are the only way to see the app without a phone.
-- A pull request that changes how a screen looks shows the changed pictures, light and dark, in its description or links the run's `screenshots` artifact.
+- A pull request that changes how a screen looks shows the changed pictures, light and dark, in its description.
 - A new screen, or a new state of one, gets a `shot(…)` in `ScreenshotsTest`.
 - Every `shot(…)` also checks what a picture cannot show: that each thing a finger can tap has a name for a screen reader and is at least 48 dp each way.
 - The pictures show layout, colour and type. They do not show motion, haptics, the real keyboard or sound. Those stay with a run-through on a phone, so say in the pull request what could not be seen.
