@@ -1,3 +1,4 @@
+import java.util.zip.ZipFile
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
@@ -93,6 +94,7 @@ dependencies {
     implementation(libs.lifecycle.runtime.compose)
     implementation(libs.lifecycle.viewmodel.compose)
     implementation(libs.media3.exoplayer)
+    implementation(libs.media3.session)
 
     testImplementation(platform(libs.compose.bom))
     testImplementation(libs.compose.ui.test.junit4)
@@ -147,3 +149,23 @@ val checkDesignTokens by tasks.registering {
     }
 }
 tasks.named("preBuild") { dependsOn(checkDesignTokens) }
+
+// ADR-0014: the class recordings stay on the phone. The content check fails on an MP3 in the
+// content; this fails any APK or bundle that has one in it, from anywhere.
+val packagedOutputs = layout.buildDirectory.dir("outputs")
+listOf("assembleDebug", "assembleRelease", "bundleRelease").forEach { name ->
+    tasks.matching { it.name == name }.configureEach {
+        val outputs = packagedOutputs
+        doLast {
+            val packages = outputs.get().asFile.walkTopDown().filter { it.extension == "apk" || it.extension == "aab" }.toList()
+            val found = packages.flatMap { file ->
+                ZipFile(file).use { zip ->
+                    zip.entries().toList().filter { it.name.endsWith(".mp3", ignoreCase = true) }.map { "${file.name}: ${it.name}" }
+                }
+            }
+            if (found.isNotEmpty()) {
+                throw GradleException("An MP3 is packaged; the class recordings stay on the phone (ADR-0014):\n" + found.joinToString("\n"))
+            }
+        }
+    }
+}

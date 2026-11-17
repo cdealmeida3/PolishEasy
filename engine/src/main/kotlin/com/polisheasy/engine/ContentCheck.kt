@@ -293,6 +293,24 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
     paths.filter { it.endsWith(".json") && it != COURSE_FILE && it !in content.listed }.sorted().forEach { path ->
         report(path, null, "$COURSE_FILE does not list this file, so nothing in it is part of the course")
     }
+
+    // The class recordings (ADR-0014)
+    paths.filter { it.endsWith(".mp3", ignoreCase = true) }.sorted().forEach { path ->
+        report(path, null, "An MP3 is in the content. The class recordings are imported on the phone and never packaged (ADR-0014)")
+    }
+    content.tracksFile?.let { file ->
+        val segmentsFile = content.segmentsFile
+        content.tracks.filter { segmentsFile != null && content.segments[it.number.toString()].isNullOrEmpty() }.forEach { track ->
+            report(segmentsFile.orEmpty(), track.number.toString(), "Class recording ${track.number} has no lines for step mode")
+        }
+        content.tracks.zipWithNext().filter { (a, b) -> b.number <= a.number }.forEach { (_, b) ->
+            report(file, b.number.toString(), "Class recording ${b.number} is listed out of order")
+        }
+        val chapters = content.levels.flatMap { it.units }.mapNotNull { it.number }.toSet()
+        content.tracks.filter { chapters.isNotEmpty() && it.lesson !in chapters }.forEach { track ->
+            report(file, track.number.toString(), "Class recording ${track.number} is of chapter ${track.lesson}, which the course does not have")
+        }
+    }
     return problems
 }
 

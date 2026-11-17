@@ -16,6 +16,12 @@ import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.LifecycleStartEffect
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.polisheasy.app.ClipPlayer
+import com.polisheasy.app.RecordingPlayer
+import com.polisheasy.app.RecordingTitle
+import com.polisheasy.app.Recordings
+import androidx.compose.runtime.LaunchedEffect
+import com.polisheasy.app.ui.screens.ClassAudioScreen
+import com.polisheasy.app.ui.screens.lesson.ListenScreen
 import com.polisheasy.app.Clips
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.app.CourseViewModel
@@ -46,11 +52,23 @@ import com.polisheasy.app.ui.screens.practice.RoundResultScreen
 import com.polisheasy.app.ui.screens.practice.RoundScreen
 import com.polisheasy.app.ui.screens.practice.progressWords
 
-/** [player] plays the Clips, and is released when the app's screens go. */
+/**
+ * [player] plays the Clips and [recordings] the class recordings; both are released when the
+ * app's screens go.
+ */
 @Composable
-fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = rememberClipPlayer()) {
+fun PolishEasyApp(
+    viewModel: CourseViewModel = viewModel(),
+    player: Clips = rememberClipPlayer(),
+    recordings: Recordings = rememberRecordings(),
+) {
     val context = LocalContext.current
-    DisposableEffect(Unit) { onDispose { player.release() } }
+    DisposableEffect(Unit) {
+        onDispose {
+            player.release()
+            recordings.release()
+        }
+    }
     // The app is silent once it leaves the screen.
     LifecycleStartEffect(Unit) { onStopOrDispose { player.stop() } }
     Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
@@ -106,8 +124,25 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
                     oneADay = screen.oneADay,
                     inProgress = screen.inProgress,
                     sound = viewModel.soundOn,
+                    listen = screen.listen,
+                    onRecording = viewModel::openRecording,
+                    onClassAudio = viewModel::openClassAudio,
                 )
             }
+            is Screen.ClassAudio -> {
+                BackHandler(onBack = viewModel::leaveClassAudio)
+                ClassAudioScreen(
+                    screen.view,
+                    importing = screen.importing,
+                    result = screen.result,
+                    failed = screen.failed,
+                    onFiles = { viewModel.importClassAudio(files = it) },
+                    onFolder = { viewModel.importClassAudio(folder = it) },
+                    onRemove = viewModel::removeClassAudio,
+                    onBack = viewModel::leaveClassAudio,
+                )
+            }
+            is Screen.Listen -> Listen(screen, viewModel, player, recordings)
             is Screen.Dictionary -> {
                 BackHandler(onBack = viewModel::backToLesson)
                 DisposableEffect(Unit) { onDispose { player.stop() } }
@@ -176,6 +211,41 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
             }
         }
     }
+}
+
+/**
+ * A class recording in the player. It opens when the screen does, and again for each recording
+ * skipped to; leaving the screen stops it. Leaving the app does not: it plays on in the background.
+ */
+@Composable
+private fun Listen(screen: Screen.Listen, viewModel: CourseViewModel, player: Clips, recordings: Recordings) {
+    val track = screen.play.track
+    val title = RecordingTitle(
+        stringResource(R.string.listen_notification_title, track.number, track.title),
+        stringResource(R.string.listen_notification_chapter, stringResource(R.string.lesson_label, track.lesson)),
+    )
+    LaunchedEffect(track.number) {
+        player.stop()
+        recordings.open(track.number, viewModel.recordingFile(track.number), title, screen.play.lines)
+    }
+    DisposableEffect(Unit) { onDispose { recordings.close() } }
+    BackHandler(onBack = viewModel::backToLesson)
+    val state = recordings.state
+    ListenScreen(
+        screen.lesson,
+        screen.play,
+        state,
+        screen.answered,
+        onPlayPause = recordings::playPause,
+        onSkip = recordings::skip,
+        onLine = recordings::line,
+        onSpeed = recordings::speed,
+        onRepeat = recordings::repeat,
+        onStep = recordings::step,
+        onAnswer = viewModel::answerListening,
+        onRecording = viewModel::openRecording,
+        onBack = viewModel::backToLesson,
+    )
 }
 
 /**
@@ -354,11 +424,19 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
                     onReport = { reportMistake(context, exerciseId = null) },
                     oneADay = showing.oneADay,
                     onOneADay = viewModel::setOneADay,
+                    classAudio = showing.classAudio,
+                    onClassAudio = viewModel::openClassAudio,
                 )
             }
             else -> Unit
         }
     }
+}
+
+@Composable
+private fun rememberRecordings(): Recordings {
+    val context = LocalContext.current
+    return remember { RecordingPlayer(context) }
 }
 
 @Composable

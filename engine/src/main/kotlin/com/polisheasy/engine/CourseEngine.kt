@@ -645,6 +645,9 @@ class CourseEngine(
     /** The Słownik of Unit [unitId]: every word it teaches. */
     fun dictionary(unitId: String): List<WordView> = lessons.dictionary(unitId)
 
+    /** The book's class recordings, with those the Learner imported kept in [dir]. */
+    fun classAudio(dir: java.io.File): ClassAudio = ClassAudio(course, dir, ::localize)
+
     /** The Fiszki of Unit [unitId], due words first. */
     fun flashcards(unitId: String): List<FlashcardView> = lessons.flashcards(unitId)
 

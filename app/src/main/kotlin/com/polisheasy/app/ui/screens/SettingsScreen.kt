@@ -40,13 +40,14 @@ import com.polisheasy.app.ui.components.SwitchSetting
 import com.polisheasy.app.ui.components.TopBar
 import com.polisheasy.app.ui.components.ValueSetting
 import com.polisheasy.app.ui.theme.Space
+import com.polisheasy.engine.ClassAudioView
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
 /**
  * Settings: a card for the Reminder's switch and time, one for the Sound switch, one for the One a
- * day switch, and one for "Report a mistake". Turning the Reminder on is the only moment the app
+ * day switch, one for the class recordings, and one for "Report a mistake". Turning the Reminder on is the only moment the app
  * asks for permission to show notifications.
  */
 @Composable
@@ -61,6 +62,8 @@ internal fun SettingsScreen(
     onReport: () -> Unit,
     oneADay: Boolean = false,
     onOneADay: (Boolean) -> Unit = {},
+    classAudio: ClassAudioView = ClassAudioView(0, 0, 0),
+    onClassAudio: () -> Unit = {},
 ) {
     val context = LocalContext.current
     // Whether the Learner refused the permission here, so the screen can say why the switch stayed off.
@@ -121,6 +124,15 @@ internal fun SettingsScreen(
                     note = stringResource(R.string.settings_one_a_day_note),
                     checked = oneADay,
                     onCheckedChange = onOneADay,
+                )
+            }
+            Spacer(Modifier.height(Space.m))
+            SettingsCard {
+                LinkSetting(
+                    icon = R.drawable.ic_headphones,
+                    label = stringResource(R.string.settings_class_audio),
+                    note = stringResource(R.string.settings_class_audio_note, classAudio.imported, classAudio.total),
+                    onClick = onClassAudio,
                 )
             }
             Spacer(Modifier.height(Space.m))

@@ -72,6 +72,23 @@ fun polishContent(files: ContentFiles): PolishContent {
         sentence(instruction.polish, instruction.meaning, PolishUse(file, kind.name.lowercase(java.util.Locale.ROOT), PolishRole.PROMPT))
     }
 
+    // The listening tasks are written for the app, so their Polish is checked like an Exercise's.
+    content.listening.forEach { task ->
+        val file = content.listeningFile.orEmpty()
+        fun use(role: PolishRole) = PolishUse(file, task.id, role)
+        when (task) {
+            is TrueFalseTask -> sentence(task.statement, task.meaning, use(PolishRole.PROMPT))
+            is ChooseTask -> {
+                sentence(task.question, task.meaning, use(PolishRole.PROMPT))
+                task.options.forEach { sentence(it, null, use(PolishRole.ANSWER)) }
+            }
+            is DictationTask -> {
+                sentence(task.question, task.meaning, use(PolishRole.PROMPT))
+                task.acceptedAnswers.forEach { sentence(it, null, use(PolishRole.ANSWER)) }
+            }
+        }
+    }
+
     content.dailySets.forEach { (file, dailySet) ->
         dailySet.section?.let { section ->
             sentence(section.heading, section.meaning, PolishUse(file, dailySet.id, PolishRole.HEADING))

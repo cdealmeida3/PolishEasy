@@ -23,6 +23,12 @@ data class Course(
     val possessives: Map<Gender, String> = emptyMap(),
     /** The instruction every Exercise of a kind shows, in Polish as in the book, by [InstructionKind]. */
     val instructions: Map<InstructionKind, Instruction> = emptyMap(),
+    /** The book's class recordings, in their order. Their files are imported on the phone, never packaged. */
+    val tracks: List<ClassTrack> = emptyList(),
+    /** Each class recording's lines, pause to pause, by track number. */
+    val trackLines: Map<Int, List<TrackLine>> = emptyMap(),
+    /** The listening tasks on the class recordings. */
+    val listening: List<ListeningTask> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

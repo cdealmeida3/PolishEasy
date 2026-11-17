@@ -58,10 +58,12 @@ fun AnswerField(
     enabled: Boolean,
     onDone: () -> Unit,
     modifier: Modifier = Modifier,
+    /** Whether the keyboard opens as soon as the field appears; otherwise it waits for a tap. */
+    focus: Boolean = true,
 ) {
     val focusRequester = remember { FocusRequester() }
     // Opens the keyboard as soon as the Exercise appears.
-    LaunchedEffect(Unit) { if (enabled) focusRequester.requestFocus() }
+    LaunchedEffect(Unit) { if (enabled && focus) focusRequester.requestFocus() }
 
     OutlinedTextField(
         value = typed,

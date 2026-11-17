@@ -56,6 +56,17 @@ The book's mark on a phrase: O (*oficjalnie*, formal), N (*nieoficjalnie*, infor
 **Polish instruction**:
 An Exercise's instruction as the book words it ("Proszę przetłumaczyć."), one per kind of Exercise, in `content/kpk1/instructions.json`, with its English one tap away and a Clip. Without one, an Exercise shows its English instruction.
 
+**Class recording**:
+One of the book's 271 recordings (001 to 271), from the class's `lekcja_NN.zip`. `content/kpk1/tracks.json` lists each with its chapter, section letter (P for Powtórzenie), exercise number, title and length, and `segments.json` its lines, pause to pause, for step mode. The recordings themselves are never in the repository or the app: the Learner adds them on the phone in Settings, Class audio, and they are kept where no backup reaches (ADR-0014). A chapter's **Słuchaj** lists its recordings by section.
+_Avoid_: Track (except for the number), audio file, Clip (a Clip is the app's own synthetic sound)
+
+**Step mode**:
+The player's *posłuchaj i powtórz*: it plays one line of a Class recording, waits a little longer than the line took for the Learner to say it aloud, then plays the next.
+
+**Listening task**:
+A short question on a Class recording, or on some of its lines, written for the app: true or false (*Prawda czy nieprawda?*), a choice, or a short dictation (*Co mówi lektor?*) checked like a typed answer. In `content/kpk1/listening.json`. Answered on the recording's screen, from Słuchaj, never inside a Daily Set, so the Path never depends on the recordings; nothing about it is saved.
+_Avoid_: Exercise (an Exercise is part of a Daily Set)
+
 **New Material**:
 The part of a Daily Set that is Authored Content, identical for every Learner.
 
