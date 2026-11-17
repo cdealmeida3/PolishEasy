@@ -1,0 +1,303 @@
+{
+  "id": "chat-on-the-desk",
+  "person": "Tomek",
+  "title": {
+    "en": "On the desk"
+  },
+  "scene": {
+    "en": "You are in class, and Tomek, a new classmate, asks about the things on your desk: your new backpack, your old but good dictionary, and a green pen, not a pencil. He is a friend, so talk to him as to a friend."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "co-to-jest",
+    "to",
+    "byc-jest",
+    "moj",
+    "plecak",
+    "kto-to-jest",
+    "jaki",
+    "ten",
+    "nowy",
+    "tak",
+    "nie",
+    "to-nie-jest",
+    "czy-to-jest",
+    "a",
+    "twoj",
+    "slownik",
+    "zeszyt",
+    "stary",
+    "ale",
+    "dobry",
+    "zly",
+    "olowek",
+    "dlugopis",
+    "fajny",
+    "kolor",
+    "zielony",
+    "czerwony",
+    "dzieki",
+    "do-jutra",
+    "pa",
+    "do-widzenia",
+    "pani"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Co to jest?",
+      "meaning": {
+        "en": "Hi! What is this?"
+      },
+      "replies": [
+        {
+          "text": "To jest mój plecak.",
+          "meaning": {
+            "en": "It is my backpack."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "To jest mój plecak.",
+            "To mój plecak.",
+            "To jest plecak.",
+            "Plecak."
+          ]
+        },
+        {
+          "text": "Kto to jest?",
+          "meaning": {
+            "en": "Who is it?"
+          },
+          "note": {
+            "en": "Tomek asked *co to jest?*, about a thing. Answer *to jest mój plecak*. *Kto?* is for a person."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Jaki jest ten plecak? Nowy?",
+      "meaning": {
+        "en": "What is this backpack like? New?"
+      },
+      "replies": [
+        {
+          "text": "Tak, ten plecak jest nowy.",
+          "meaning": {
+            "en": "Yes, this backpack is new."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Tak, ten plecak jest nowy.",
+            "Tak, jest nowy.",
+            "Tak, nowy."
+          ]
+        },
+        {
+          "text": "Tak, ten plecak jest nowa.",
+          "meaning": {
+            "en": "Yes, this backpack is new."
+          },
+          "note": {
+            "en": "*Plecak* is masculine, so its adjective ends in *-y*: *ten plecak jest nowy*."
+          }
+        },
+        {
+          "text": "Nie, to nie jest plecak.",
+          "meaning": {
+            "en": "No, it isn't a backpack."
+          },
+          "note": {
+            "en": "It is a backpack, and it is new: *tak, ten plecak jest nowy*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "A czy to jest twój słownik?",
+      "meaning": {
+        "en": "And is this your dictionary?"
+      },
+      "replies": [
+        {
+          "text": "Tak, to jest mój słownik.",
+          "meaning": {
+            "en": "Yes, it is my dictionary."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Tak, to jest mój słownik.",
+            "Tak, to mój słownik.",
+            "Tak."
+          ]
+        },
+        {
+          "text": "Nie, to nie jest słownik. To jest zeszyt.",
+          "meaning": {
+            "en": "No, it isn't a dictionary. It is a notebook."
+          },
+          "note": {
+            "en": "It is your dictionary, the old but good one: *tak, to jest mój słownik*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Jaki jest ten słownik?",
+      "meaning": {
+        "en": "What is this dictionary like?"
+      },
+      "replies": [
+        {
+          "text": "Stary, ale dobry.",
+          "meaning": {
+            "en": "Old, but good."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Stary, ale dobry.",
+            "Jest stary, ale dobry.",
+            "Ten słownik jest stary, ale dobry."
+          ]
+        },
+        {
+          "text": "Stara, ale dobra.",
+          "meaning": {
+            "en": "Old, but good."
+          },
+          "note": {
+            "en": "*Słownik* is masculine: *stary, ale dobry*, in *-y*. *Stara* and *dobra* go with a feminine noun."
+          }
+        },
+        {
+          "text": "Stary i zły.",
+          "meaning": {
+            "en": "Old and bad."
+          },
+          "note": {
+            "en": "Your dictionary is old, but it is good: *stary, ale dobry*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "A to? Czy to jest ołówek?",
+      "meaning": {
+        "en": "And this? Is it a pencil?"
+      },
+      "replies": [
+        {
+          "text": "Nie, to nie jest ołówek. To jest długopis.",
+          "meaning": {
+            "en": "No, it isn't a pencil. It is a pen."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Nie, to nie jest ołówek. To jest długopis.",
+            "Nie, to jest długopis.",
+            "Nie, to długopis."
+          ]
+        },
+        {
+          "text": "Tak, to jest ołówek.",
+          "meaning": {
+            "en": "Yes, it is a pencil."
+          },
+          "note": {
+            "en": "It is a pen, not a pencil: *nie, to nie jest ołówek. To jest długopis*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Fajny długopis! Jaki to kolor? Czerwony?",
+      "meaning": {
+        "en": "Cool pen! What colour is it? Red?"
+      },
+      "replies": [
+        {
+          "text": "Nie, zielony.",
+          "meaning": {
+            "en": "No, green."
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Nie, zielony.",
+            "Nie, jest zielony.",
+            "Nie, ten długopis jest zielony.",
+            "Zielony."
+          ]
+        },
+        {
+          "text": "Nie, zielona.",
+          "meaning": {
+            "en": "No, green."
+          },
+          "note": {
+            "en": "*Długopis* is masculine, so the colour ends in *-y*: *zielony*."
+          }
+        },
+        {
+          "text": "Tak, czerwony.",
+          "meaning": {
+            "en": "Yes, red."
+          },
+          "note": {
+            "en": "Your pen is green: *nie, zielony*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Dzięki! Pa, do jutra!",
+      "meaning": {
+        "en": "Thanks! Bye, see you tomorrow!"
+      },
+      "replies": [
+        {
+          "text": "Pa! Do jutra!",
+          "meaning": {
+            "en": "Bye! See you tomorrow!"
+          },
+          "right": true,
+          "next": "t8",
+          "acceptedAnswers": [
+            "Pa! Do jutra!",
+            "Pa!",
+            "Do jutra!",
+            "Cześć! Do jutra!"
+          ]
+        },
+        {
+          "text": "Do widzenia, pani!",
+          "meaning": {
+            "en": "Goodbye, madam!"
+          },
+          "register": "formal",
+          "note": {
+            "en": "Tomek is a friend, and *pani* is for a woman. To him say *pa* or *do jutra*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t8",
+      "says": "Pa!",
+      "meaning": {
+        "en": "Bye!"
+      }
+    }
+  ]
+}

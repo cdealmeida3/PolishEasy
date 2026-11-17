@@ -72,3 +72,23 @@ It gives the later chapters:
 - *jego* and *jej*, and *chłopak*, *dziewczyna*, *adres* and *hobby* in the possessive test's lists.
 
 It leaves for later: no other verb forms of the -m, -sz verbs than those listed, *uczyć się* only as the three phrases with *polskiego*, cities and countries only as the phrases above, no *pana* or *pani* as "your" (*jaki ma pan numer telefonu?* instead), and no counting with 21 to 29 (*dwadzieścia jeden lat* waits for its rule).
+
+## Chapter 3: Mami, kto to jest?
+
+Book pages 28 to 35, recordings 047 to 057. Ten parts, 173 Exercises and 61 new Items.
+
+- **A** *Kto…? Co…?*, in three (18, 17 and 17): *kto to jest?* and *co to jest?*, and the classroom and the bag: *słownik, zeszyt, torba, plecak, komórka, ołówek, gumka, klucz, ładowarka, kubek, słuchawki, tablica, mapa, okno, stół, krzesło, laptop, paszport*, and *niestety*.
+- **B** *Czy…?* (17): *czy to jest…?*, *tak, to jest…* and *nie, to nie jest…*, with a table; *pamiętam* and *tylko*.
+- **C** *Mianownik*, in three: the three genders by their ending and *ten, ta, to* (18, with a table, *auto, muzeum, akwarium, słońce, segregator*, and *ten kolega*); *jaki? jaka? jakie?* and the adjective's endings *-y, -a, -e* (17, with a table: *nowy, stary, dobry, zły, duży, mały*); more adjectives (16: *praktyczny, fajny, modny, sympatyczny, polski, interesujący*, and *-i* after *k*).
+- **D** *Kolory*, in two (18 and 17): eleven colours as adjectives, with a table, and *kolor*.
+- *Ćwiczenia* (18): the book's kinds again over the whole chapter.
+
+Each adjective is one Item with its feminine and neuter as `forms` (see [authoring.md](authoring.md)). There are 23 listening tasks on all 11 recordings (049 and 057 are word lists: the first and last word), and one Chat: *On the desk* (Tomek, informal: *co to jest?*, *czy to jest…?*, what your things are like and their colour). The new nouns are in Practice's `genders`, and 28 of them and the colours have pictures (the colours as hearts).
+
+It gives the later chapters:
+
+- adjective agreement in the nominative singular, which later cases build on;
+- *ten, ta, to*, and the classroom nouns with their genders for Mój, moja, moje;
+- *plecak*, *słownik* and *torba* in the possessive test's lists.
+
+It leaves for later: no plural but *słuchawki* (*to są słuchawki*), no adjective before a noun in a case other than the nominative, and *zły* only of things (said of a person it reads as "angry").

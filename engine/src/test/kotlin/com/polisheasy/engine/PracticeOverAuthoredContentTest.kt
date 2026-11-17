@@ -49,7 +49,7 @@ class PracticeOverAuthoredContentTest {
         assertTrue(course.chats.size >= 2)
         val itemsById = course.itemsById
         course.chats.forEach { script ->
-            val words = script.items.flatMap { words(itemsById.getValue(it).text) }.map { it.lowercase() }.toSet()
+            val words = script.items.flatMap { id -> itemsById.getValue(id).spellings.flatMap(::words) }.map { it.lowercase() }.toSet()
             script.turns.forEach { turn ->
                 val said = listOf(turn.says) + listOfNotNull(turn.replies.firstOrNull { it.right }?.text)
                 said.forEach { line ->
@@ -330,7 +330,7 @@ class PracticeOverAuthoredContentTest {
         val itemsById = course.itemsById
         course.ankieta.people.forEach { person ->
             // Their own name is the one word no Item has.
-            val words = (person.items.flatMap { words(itemsById.getValue(it).text) } + person.answers["imie"].orEmpty()).map { it.lowercase() }.toSet()
+            val words = (person.items.flatMap { id -> itemsById.getValue(id).spellings.flatMap(::words) } + person.answers["imie"].orEmpty()).map { it.lowercase() }.toSet()
             person.says.map { it.text }.forEach { line ->
                 assertEquals(emptySet(), words(line).map { it.lowercase() }.toSet() - words, "Words of \"$line\" of ${person.id} that none of their Items has")
             }

@@ -91,6 +91,10 @@
             "text": "9"
         },
         {
+            "text": "A czy to jest twój słownik?",
+            "meaning": "And is this your dictionary?"
+        },
+        {
             "text": "A dlaczego pan uczy się polskiego?",
             "meaning": "And why are you learning Polish?"
         },
@@ -99,11 +103,21 @@
             "meaning": "Thank you! And where is the coffee?"
         },
         {
+            "text": "A gdzie jest ołówek?"
+        },
+        {
             "text": "A gdzie pan mieszka?",
             "meaning": "And where do you live?"
         },
         {
             "text": "A to jest Anna, studentka."
+        },
+        {
+            "text": "A to? Czy to jest długopis?"
+        },
+        {
+            "text": "A to? Czy to jest ołówek?",
+            "meaning": "And this? Is it a pencil?"
         },
         {
             "text": "A ty mówisz po angielsku?",
@@ -230,11 +244,20 @@
             "meaning": "Anna is a student."
         },
         {
+            "text": "Bardzo mała."
+        },
+        {
             "text": "Bardzo mi miło."
+        },
+        {
+            "text": "Bardzo modna."
         },
         {
             "text": "Bardzo przepraszamy.",
             "meaning": "We are very sorry."
+        },
+        {
+            "text": "Bardzo stara."
         },
         {
             "text": "Berlinie"
@@ -252,6 +275,33 @@
             "text": "Bo jej mama jest z Polski."
         },
         {
+            "text": "Bo jest duża."
+        },
+        {
+            "text": "Bo jest duże."
+        },
+        {
+            "text": "Bo jest duży."
+        },
+        {
+            "text": "Bo jest japońskie."
+        },
+        {
+            "text": "Bo jest mała."
+        },
+        {
+            "text": "Bo jest mały."
+        },
+        {
+            "text": "Bo jest nowa."
+        },
+        {
+            "text": "Bo jest nowe."
+        },
+        {
+            "text": "Bo jest stary."
+        },
+        {
             "text": "Bo moja dziewczyna jest z Polski.",
             "meaning": "Because my girlfriend is from Poland."
         },
@@ -261,6 +311,13 @@
         },
         {
             "text": "Bo moja żona jest z Polski."
+        },
+        {
+            "text": "Co"
+        },
+        {
+            "text": "Co jest na fotografii z wakacji?",
+            "meaning": "What is in the holiday photo?"
         },
         {
             "text": "Co jest pod numerem trzy?",
@@ -302,6 +359,17 @@
             "meaning": "What is a cultural programme?"
         },
         {
+            "text": "Co to jest w trzecim dialogu?",
+            "meaning": "What is it in the third dialogue?"
+        },
+        {
+            "text": "Co to jest?"
+        },
+        {
+            "text": "Co to jest? To jest okno.",
+            "meaning": "What is it? It is a window."
+        },
+        {
             "text": "Co to znaczy „ćwiczenie”?"
         },
         {
@@ -318,6 +386,10 @@
         {
             "text": "Cześć!",
             "meaning": "Hi!"
+        },
+        {
+            "text": "Cześć! Co to jest?",
+            "meaning": "Hi! What is this?"
         },
         {
             "text": "Cześć! Co u ciebie?",
@@ -400,6 +472,9 @@
             "text": "Cześć."
         },
         {
+            "text": "Czy"
+        },
+        {
             "text": "Czy macie czas?",
             "meaning": "Do you have time? (several people)"
         },
@@ -428,8 +503,26 @@
             "meaning": "Do you speak Polish? (to a woman, formal)"
         },
         {
+            "text": "Czy to jest książka?"
+        },
+        {
+            "text": "Czy to jest ołówek?"
+        },
+        {
+            "text": "Czy to jest stół? Nie, to nie jest stół. To jest krzesło.",
+            "meaning": "Is it a table? No, it isn't a table. It is a chair."
+        },
+        {
+            "text": "Czy to jest tablica? Tak, to jest tablica.",
+            "meaning": "Is it a board? Yes, it is a board."
+        },
+        {
             "text": "Czy ty grasz w tenisa?",
             "meaning": "Do you play tennis? (one friend)"
+        },
+        {
+            "text": "Czy…?",
+            "meaning": "Is it…?"
         },
         {
             "text": "Dane personalne",
@@ -443,12 +536,24 @@
             "meaning": "Why is Angela learning Polish?"
         },
         {
+            "text": "Dlaczego drugi słownik jest zły?",
+            "meaning": "Why is the second dictionary bad?"
+        },
+        {
             "text": "Dlaczego on uczy się polskiego?",
             "meaning": "Why is he learning Polish?"
         },
         {
             "text": "Dlaczego ona uczy się polskiego?",
             "meaning": "Why is she learning Polish?"
+        },
+        {
+            "text": "Dlaczego ta torba jest dobra?",
+            "meaning": "Why is this bag good?"
+        },
+        {
+            "text": "Dlaczego to auto jest dobre?",
+            "meaning": "Why is this car good?"
         },
         {
             "text": "Dlaczego uczy się polskiego?",
@@ -473,6 +578,10 @@
         {
             "text": "Do widzenia!",
             "meaning": "Thank you! Goodbye!"
+        },
+        {
+            "text": "Do widzenia, pani!",
+            "meaning": "Goodbye, madam!"
         },
         {
             "text": "Do widzenia.",
@@ -512,6 +621,13 @@
         {
             "text": "Dobrze, na razie!",
             "meaning": "All right! See you!"
+        },
+        {
+            "text": "Druga rzecz to długopis.",
+            "meaning": "The second thing is a pen."
+        },
+        {
+            "text": "Duży, mały i zły."
         },
         {
             "text": "Dwa plus trzy równa się cztery.",
@@ -627,6 +743,10 @@
             "meaning": "Thanks! How much is two plus three?"
         },
         {
+            "text": "Dzięki! Pa, do jutra!",
+            "meaning": "Thanks! Bye, see you tomorrow!"
+        },
+        {
             "text": "Dziękuję bardzo! Do widzenia!",
             "meaning": "Thank you! Goodbye!"
         },
@@ -720,7 +840,15 @@
             "meaning": "Ewa, where are you?"
         },
         {
+            "text": "Fajny długopis! Jaki to kolor? Czerwony?",
+            "meaning": "Cool pen! What colour is it? Red?"
+        },
+        {
             "text": "Film, spotkanie."
+        },
+        {
+            "text": "Fotografia jest z Brazylii.",
+            "meaning": "The photo is from Brazil."
         },
         {
             "text": "Francja"
@@ -862,8 +990,34 @@
             "meaning": "What is the last number?"
         },
         {
+            "text": "Jaka jest torba?",
+            "meaning": "What is the bag like?"
+        },
+        {
+            "text": "Jaki jest Leon?"
+        },
+        {
             "text": "Jaki jest numer mieszkania?",
             "meaning": "What is the number of the flat?"
+        },
+        {
+            "text": "Jaki jest ostatni kolor?",
+            "meaning": "What is the last colour?"
+        },
+        {
+            "text": "Jaki jest pierwszy kolor?",
+            "meaning": "What is the first colour?"
+        },
+        {
+            "text": "Jaki jest ten plecak? Nowy?",
+            "meaning": "What is this backpack like? New?"
+        },
+        {
+            "text": "Jaki jest ten segregator?"
+        },
+        {
+            "text": "Jaki jest ten słownik?",
+            "meaning": "What is this dictionary like?"
         },
         {
             "text": "Jaki jest twój numer telefonu?",
@@ -874,12 +1028,39 @@
             "meaning": "What is your phone number?"
         },
         {
+            "text": "Jaki? Jaka? Jakie?",
+            "meaning": "What is it like?"
+        },
+        {
+            "text": "Jakie jest ostatnie słowo?",
+            "meaning": "What is the last word?"
+        },
+        {
+            "text": "Jakie jest pierwsze słowo?",
+            "meaning": "What is the first word?"
+        },
+        {
+            "text": "Jakie jest to auto? To auto jest małe.",
+            "meaning": "What is this car like? This car is small."
+        },
+        {
+            "text": "Jakie są trzy rodzaje?",
+            "meaning": "What are the three genders?"
+        },
+        {
             "text": "Jakie słowo trzeba przeliterować?",
             "meaning": "Which word has to be spelled?"
         },
         {
             "text": "Jego żona jest z Polski.",
             "meaning": "His wife is from Poland."
+        },
+        {
+            "text": "Jest stary, ale dobry.",
+            "meaning": "Old, but good."
+        },
+        {
+            "text": "Jest sympatyczny i interesujący."
         },
         {
             "text": "Jest tam, na lewo.",
@@ -982,6 +1163,10 @@
             "meaning": "The classmate says “miło mi cię poznać”."
         },
         {
+            "text": "Kolory",
+            "meaning": "Colours"
+        },
+        {
             "text": "Kraków",
             "meaning": "Kraków (a city in Poland)"
         },
@@ -989,7 +1174,31 @@
             "text": "Książka."
         },
         {
+            "text": "Kto to jest?",
+            "meaning": "Who is it?"
+        },
+        {
+            "text": "Kto to jest? To jest nowy student.",
+            "meaning": "Who is it? It is a new student."
+        },
+        {
+            "text": "Kto…? Co…?",
+            "meaning": "Who…? What…?"
+        },
+        {
             "text": "Leon"
+        },
+        {
+            "text": "Leon jest stary.",
+            "meaning": "Leon is old."
+        },
+        {
+            "text": "Leon jest sympatyczny.",
+            "meaning": "Leon is nice."
+        },
+        {
+            "text": "Leon jest z Włoch.",
+            "meaning": "Leon is from Italy."
         },
         {
             "text": "Liczebniki 0–10",
@@ -1027,7 +1236,24 @@
             "meaning": "My first name is Adam."
         },
         {
+            "text": "Mam tu komórkę, klucz i paszport."
+        },
+        {
+            "text": "Mapa i klucz to rzeczowniki.",
+            "meaning": "Map and key are nouns."
+        },
+        {
+            "text": "Mapa."
+        },
+        {
             "text": "Maria"
+        },
+        {
+            "text": "Mały i nowy."
+        },
+        {
+            "text": "Mianownik",
+            "meaning": "The nominative"
         },
         {
             "text": "Mieszkam w Krakowie.",
@@ -1167,6 +1393,9 @@
             "meaning": "Yes, a little."
         },
         {
+            "text": "Męski, żeński i nijaki."
+        },
+        {
             "text": "Na lewo.",
             "meaning": "Your pen is over there, on the left."
         },
@@ -1206,6 +1435,9 @@
             "meaning": "Nothing new. Where are you?"
         },
         {
+            "text": "Nie"
+        },
+        {
             "text": "Nie ma za co.",
             "meaning": "You're welcome."
         },
@@ -1238,6 +1470,10 @@
             "meaning": "I don't know."
         },
         {
+            "text": "Nie, jest zielony.",
+            "meaning": "No, green."
+        },
+        {
             "text": "Nie, jestem z Anglii.",
             "meaning": "No, I'm from England."
         },
@@ -1250,6 +1486,33 @@
             "meaning": "No, I'm from England. And you?"
         },
         {
+            "text": "Nie, ten długopis jest zielony.",
+            "meaning": "No, green."
+        },
+        {
+            "text": "Nie, to długopis.",
+            "meaning": "No, it isn't a pencil. It is a pen."
+        },
+        {
+            "text": "Nie, to jest długopis.",
+            "meaning": "No, it isn't a pencil. It is a pen."
+        },
+        {
+            "text": "Nie, to nie jest książka. To jest zeszyt."
+        },
+        {
+            "text": "Nie, to nie jest ołówek. To jest długopis.",
+            "meaning": "No, it isn't a pencil. It is a pen."
+        },
+        {
+            "text": "Nie, to nie jest plecak.",
+            "meaning": "No, it isn't a backpack."
+        },
+        {
+            "text": "Nie, to nie jest słownik. To jest zeszyt.",
+            "meaning": "No, it isn't a dictionary. It is a notebook."
+        },
+        {
             "text": "Nie, z Anglii.",
             "meaning": "No, I'm from England. And you?"
         },
@@ -1258,7 +1521,21 @@
             "meaning": "No, I'm from England. And you?"
         },
         {
+            "text": "Nie, zielona.",
+            "meaning": "No, green."
+        },
+        {
+            "text": "Nie, zielony.",
+            "meaning": "No, green."
+        },
+        {
             "text": "Niemcy"
+        },
+        {
+            "text": "Nowy, ale zły."
+        },
+        {
+            "text": "Nowy, stary i dobry."
         },
         {
             "text": "Numer telefonu",
@@ -1300,6 +1577,9 @@
             "meaning": "They live in Europe."
         },
         {
+            "text": "Ołówek jest tam."
+        },
+        {
             "text": "Pa!",
             "meaning": "Bye!"
         },
@@ -1322,6 +1602,9 @@
         {
             "text": "Pa! Do jutra!",
             "meaning": "Bye-bye! See you tomorrow!"
+        },
+        {
+            "text": "Palma."
         },
         {
             "text": "Pan Adam mieszka tutaj.",
@@ -1352,8 +1635,19 @@
             "meaning": "The woman is from England."
         },
         {
+            "text": "Paszport."
+        },
+        {
             "text": "Państwo Maj są w Krakowie.",
             "meaning": "Mr and Mrs Maj are in Kraków."
+        },
+        {
+            "text": "Pierwsza rzecz to książka.",
+            "meaning": "The first thing is a book."
+        },
+        {
+            "text": "Pierwsza rzecz to zeszyt.",
+            "meaning": "The first thing is a notebook."
         },
         {
             "text": "Pięć.",
@@ -1362,6 +1656,10 @@
         {
             "text": "Plac Mariacki: jaki numer?",
             "meaning": "Mariacki Square: what number?"
+        },
+        {
+            "text": "Plecak.",
+            "meaning": "It is my backpack."
         },
         {
             "text": "Po staremu."
@@ -1512,6 +1810,10 @@
             "meaning": "Where is the woman from?"
         },
         {
+            "text": "Skąd jest nowy student?",
+            "meaning": "Where is the new student from?"
+        },
+        {
             "text": "Skąd jest pan?",
             "meaning": "Where is the man from?"
         },
@@ -1536,6 +1838,18 @@
             "meaning": "Enjoy your meal!"
         },
         {
+            "text": "Stara, ale dobra.",
+            "meaning": "Old, but good."
+        },
+        {
+            "text": "Stary i zły.",
+            "meaning": "Old and bad."
+        },
+        {
+            "text": "Stary, ale dobry.",
+            "meaning": "Old, but good."
+        },
+        {
             "text": "Stein"
         },
         {
@@ -1544,6 +1858,33 @@
         },
         {
             "text": "Szkoła."
+        },
+        {
+            "text": "Słownik polsko-hiszpański jest stary i duży.",
+            "meaning": "The Polish-Spanish dictionary is old and big."
+        },
+        {
+            "text": "Ta gumka jest różowa.",
+            "meaning": "This rubber is pink."
+        },
+        {
+            "text": "Ta komórka to w Argentynie model numer jeden.",
+            "meaning": "In Argentina this mobile phone is the number one model."
+        },
+        {
+            "text": "Ta książka jest stara, ale dobra.",
+            "meaning": "This book is old, but good."
+        },
+        {
+            "text": "Ta tablica jest biała.",
+            "meaning": "This board is white."
+        },
+        {
+            "text": "Ta torba jest modna, ale nie jest praktyczna."
+        },
+        {
+            "text": "Tak, czerwony.",
+            "meaning": "Yes, red."
         },
         {
             "text": "Tak, gram w tenisa.",
@@ -1562,6 +1903,10 @@
             "meaning": "Yes, you play tennis."
         },
         {
+            "text": "Tak, jest nowy.",
+            "meaning": "Yes, this backpack is new."
+        },
+        {
             "text": "Tak, jestem z Anglii.",
             "meaning": "Yes, I'm from England."
         },
@@ -1572,6 +1917,33 @@
         {
             "text": "Tak, mówię trochę po polsku.",
             "meaning": "Yes, a little."
+        },
+        {
+            "text": "Tak, nowy.",
+            "meaning": "Yes, this backpack is new."
+        },
+        {
+            "text": "Tak, ten plecak jest nowa.",
+            "meaning": "Yes, this backpack is new."
+        },
+        {
+            "text": "Tak, ten plecak jest nowy.",
+            "meaning": "Yes, this backpack is new."
+        },
+        {
+            "text": "Tak, to jest długopis."
+        },
+        {
+            "text": "Tak, to jest mój słownik.",
+            "meaning": "Yes, it is my dictionary."
+        },
+        {
+            "text": "Tak, to jest ołówek.",
+            "meaning": "Yes, it is a pencil."
+        },
+        {
+            "text": "Tak, to mój słownik.",
+            "meaning": "Yes, it is my dictionary."
         },
         {
             "text": "Tak, trochę, ale tutaj mówimy po polsku!",
@@ -1586,11 +1958,46 @@
             "meaning": "Yes, I play tennis. It's my hobby."
         },
         {
+            "text": "Tak.",
+            "meaning": "Yes, it is my dictionary."
+        },
+        {
             "text": "Tam, na lewo.",
             "meaning": "Your pen is over there, on the left."
         },
         {
             "text": "Tam."
+        },
+        {
+            "text": "Ten klucz jest mały, a ta mapa jest duża.",
+            "meaning": "This key is small, and this map is big."
+        },
+        {
+            "text": "Ten kolega jest sympatyczny, a ta koleżanka jest interesująca.",
+            "meaning": "This classmate (a man) is nice, and this classmate (a woman) is interesting."
+        },
+        {
+            "text": "Ten ołówek jest żółty, a to okno jest duże.",
+            "meaning": "This pencil is yellow, and this window is big."
+        },
+        {
+            "text": "Ten plecak jest brązowy, a ta komórka jest czarna.",
+            "meaning": "This backpack is brown, and this mobile phone is black."
+        },
+        {
+            "text": "Ten segregator jest praktyczny."
+        },
+        {
+            "text": "Ten słownik jest stary, ale dobry.",
+            "meaning": "Old, but good."
+        },
+        {
+            "text": "Ten słownik jest zły.",
+            "meaning": "This dictionary is bad."
+        },
+        {
+            "text": "To auto jest duże.",
+            "meaning": "This car is big."
         },
         {
             "text": "To jest Adam, student."
@@ -1599,12 +2006,34 @@
             "text": "To jest Ewa, nauczycielka."
         },
         {
+            "text": "To jest Leon. Jest z Włoch."
+        },
+        {
             "text": "To jest dialog oficjalny.",
             "meaning": "This is a formal dialogue."
         },
         {
+            "text": "To jest moja torba. Jest duża i czerwona."
+        },
+        {
+            "text": "To jest mój plecak.",
+            "meaning": "It is my backpack."
+        },
+        {
+            "text": "To jest nowy student.",
+            "meaning": "It is a new student."
+        },
+        {
             "text": "To jest pięć.",
             "meaning": "Two plus three equals five."
+        },
+        {
+            "text": "To jest plecak.",
+            "meaning": "It is my backpack."
+        },
+        {
+            "text": "To jest polski słownik, a to jest polska szkoła.",
+            "meaning": "This is a Polish dictionary, and this is a Polish school."
         },
         {
             "text": "To jest rozmowa formalna.",
@@ -1619,8 +2048,19 @@
             "meaning": "This is a formal conversation."
         },
         {
+            "text": "To jest segregator."
+        },
+        {
             "text": "To jest sześć.",
             "meaning": "Ten minus four equals six."
+        },
+        {
+            "text": "To mój plecak.",
+            "meaning": "It is my backpack."
+        },
+        {
+            "text": "To okno jest duże.",
+            "meaning": "This window is big."
         },
         {
             "text": "Toaleta jest na lewo.",
@@ -1647,6 +2087,18 @@
         {
             "text": "Tom mówi: „Dzień dobry”.",
             "meaning": "Tom says “dzień dobry”."
+        },
+        {
+            "text": "Torba jest czerwona.",
+            "meaning": "The bag is red."
+        },
+        {
+            "text": "Torba jest mała.",
+            "meaning": "The bag is small."
+        },
+        {
+            "text": "Torba jest praktyczna.",
+            "meaning": "The bag is practical."
         },
         {
             "text": "Trochę mówię po polsku.",
@@ -1765,8 +2217,16 @@
             "text": "W domu."
         },
         {
+            "text": "W drugim dialogu to jest ołówek.",
+            "meaning": "In the second dialogue it is a pencil."
+        },
+        {
             "text": "W klasie",
             "meaning": "In the classroom"
+        },
+        {
+            "text": "W pierwszym dialogu to jest książka.",
+            "meaning": "In the first dialogue it is a book."
         },
         {
             "text": "W porządku!",
@@ -1782,6 +2242,10 @@
         {
             "text": "W szkole",
             "meaning": "At school"
+        },
+        {
+            "text": "W torbie jest mapa Krakowa.",
+            "meaning": "There is a map of Kraków in the bag."
         },
         {
             "text": "Woda jest na prawo.",
@@ -1835,10 +2299,16 @@
             "meaning": "I'm from England."
         },
         {
+            "text": "Z Argentyny."
+        },
+        {
             "text": "Z Francji."
         },
         {
             "text": "Z Hiszpanii."
+        },
+        {
+            "text": "Z Japonii."
         },
         {
             "text": "Z Niemiec."
@@ -1848,6 +2318,13 @@
         },
         {
             "text": "Z Włoch."
+        },
+        {
+            "text": "Zeszyt."
+        },
+        {
+            "text": "Zielony.",
+            "meaning": "No, green."
         },
         {
             "text": "a",
@@ -1882,12 +2359,20 @@
             "meaning": "an address"
         },
         {
+            "text": "akwarium",
+            "meaning": "an aquarium"
+        },
+        {
             "text": "ale",
             "meaning": "but"
         },
         {
             "text": "alfabet",
             "meaning": "the alphabet"
+        },
+        {
+            "text": "auto",
+            "meaning": "a car"
         },
         {
             "text": "babcia",
@@ -1924,6 +2409,22 @@
             "text": "barszcz"
         },
         {
+            "text": "biała",
+            "meaning": "white (biały, biała, białe)"
+        },
+        {
+            "text": "białe",
+            "meaning": "white (biały, biała, białe)"
+        },
+        {
+            "text": "biały",
+            "meaning": "white"
+        },
+        {
+            "text": "biały",
+            "meaning": "white (biały, biała, białe)"
+        },
+        {
             "text": "bo",
             "meaning": "because"
         },
@@ -1950,6 +2451,22 @@
         {
             "text": "brata",
             "meaning": "a brother (after mam, masz, ma…)"
+        },
+        {
+            "text": "brązowa",
+            "meaning": "brown (brązowy, brązowa, brązowe)"
+        },
+        {
+            "text": "brązowe",
+            "meaning": "brown (brązowy, brązowa, brązowe)"
+        },
+        {
+            "text": "brązowy",
+            "meaning": "brown"
+        },
+        {
+            "text": "brązowy",
+            "meaning": "brown (brązowy, brązowa, brązowe)"
         },
         {
             "text": "być może",
@@ -1983,6 +2500,10 @@
         },
         {
             "text": "ciebie"
+        },
+        {
+            "text": "co",
+            "meaning": "what"
         },
         {
             "text": "co nowego?",
@@ -2020,8 +2541,31 @@
             "meaning": "how are you?"
         },
         {
+            "text": "co to jest klucz?"
+        },
+        {
+            "text": "co to jest?",
+            "meaning": "what is it? what is this?"
+        },
+        {
+            "text": "co to jest? To jest ołówek.",
+            "meaning": "what is it? It is a pencil."
+        },
+        {
+            "text": "co to jest? To jest paszport.",
+            "meaning": "what is it? It is a passport."
+        },
+        {
+            "text": "co to jest? To jest słownik.",
+            "meaning": "what is it? It is a dictionary."
+        },
+        {
             "text": "co to znaczy?",
             "meaning": "what does it mean?"
+        },
+        {
+            "text": "co to?",
+            "meaning": "what is it? what is this?"
         },
         {
             "text": "co u ciebie słychać?",
@@ -2047,8 +2591,40 @@
             "text": "co widać?"
         },
         {
+            "text": "czarna",
+            "meaning": "black (czarny, czarna, czarne)"
+        },
+        {
+            "text": "czarne",
+            "meaning": "black (czarny, czarna, czarne)"
+        },
+        {
+            "text": "czarny",
+            "meaning": "black"
+        },
+        {
+            "text": "czarny",
+            "meaning": "black (czarny, czarna, czarne)"
+        },
+        {
             "text": "czas",
             "meaning": "time"
+        },
+        {
+            "text": "czerwona",
+            "meaning": "red (czerwony, czerwona, czerwone)"
+        },
+        {
+            "text": "czerwone",
+            "meaning": "red (czerwony, czerwona, czerwone)"
+        },
+        {
+            "text": "czerwony",
+            "meaning": "red"
+        },
+        {
+            "text": "czerwony",
+            "meaning": "red (czerwony, czerwona, czerwone)"
         },
         {
             "text": "cześć",
@@ -2192,12 +2768,36 @@
             "text": "czy mówisz po polsku?"
         },
         {
+            "text": "czy to jest klucz?",
+            "meaning": "is it a key?"
+        },
+        {
+            "text": "czy to jest mapa?",
+            "meaning": "is it a map?"
+        },
+        {
+            "text": "czy to jest ołówek? Nie, to nie jest ołówek.",
+            "meaning": "is it a pencil? No, it isn't a pencil."
+        },
+        {
+            "text": "czy to jest paszport?",
+            "meaning": "is it a passport?"
+        },
+        {
             "text": "czy to jest twoje dziecko?",
             "meaning": "is this your child? (to one friend)"
         },
         {
             "text": "czy to jest twój brat?",
             "meaning": "is this your brother? (to one friend)"
+        },
+        {
+            "text": "czy to jest zeszyt? Tak, to jest zeszyt.",
+            "meaning": "is it a notebook? Yes, it is a notebook."
+        },
+        {
+            "text": "czy to jest…?",
+            "meaning": "is it…? is this…? (czy to jest książka?)"
         },
         {
             "text": "czy to twoje dziecko?",
@@ -2288,7 +2888,8 @@
             "meaning": "see you"
         },
         {
-            "text": "dobra"
+            "text": "dobra",
+            "meaning": "good (dobry, dobra, dobre)"
         },
         {
             "text": "dobranoc",
@@ -2299,7 +2900,16 @@
             "meaning": "good night, see you tomorrow"
         },
         {
-            "text": "dobry"
+            "text": "dobre",
+            "meaning": "good (dobry, dobra, dobre)"
+        },
+        {
+            "text": "dobry",
+            "meaning": "good"
+        },
+        {
+            "text": "dobry",
+            "meaning": "good (dobry, dobra, dobre)"
         },
         {
             "text": "dobry humor"
@@ -2342,6 +2952,31 @@
         {
             "text": "dopasować",
             "meaning": "to match"
+        },
+        {
+            "text": "duża",
+            "meaning": "big (duży, duża, duże)"
+        },
+        {
+            "text": "duża mapa"
+        },
+        {
+            "text": "duże",
+            "meaning": "big (duży, duża, duże)"
+        },
+        {
+            "text": "duże okno"
+        },
+        {
+            "text": "duży",
+            "meaning": "big"
+        },
+        {
+            "text": "duży",
+            "meaning": "big (duży, duża, duże)"
+        },
+        {
+            "text": "duży klucz"
         },
         {
             "text": "dwa",
@@ -2613,6 +3248,38 @@
             "text": "dźwięki"
         },
         {
+            "text": "fajna",
+            "meaning": "cool, nice (fajny, fajna, fajne)"
+        },
+        {
+            "text": "fajne",
+            "meaning": "cool, nice (fajny, fajna, fajne)"
+        },
+        {
+            "text": "fajny",
+            "meaning": "cool, nice"
+        },
+        {
+            "text": "fajny",
+            "meaning": "cool, nice (fajny, fajna, fajne)"
+        },
+        {
+            "text": "fioletowa",
+            "meaning": "purple (fioletowy, fioletowa, fioletowe)"
+        },
+        {
+            "text": "fioletowe",
+            "meaning": "purple (fioletowy, fioletowa, fioletowe)"
+        },
+        {
+            "text": "fioletowy",
+            "meaning": "purple"
+        },
+        {
+            "text": "fioletowy",
+            "meaning": "purple (fioletowy, fioletowa, fioletowe)"
+        },
+        {
             "text": "gdzie",
             "meaning": "where"
         },
@@ -2666,6 +3333,9 @@
             "meaning": "where are you? (to a man and a woman, formal)"
         },
         {
+            "text": "gdzie to jest?"
+        },
+        {
             "text": "gdzie wy mieszkacie?",
             "meaning": "where do you live? (several people)"
         },
@@ -2711,6 +3381,10 @@
         {
             "text": "gratulacje, na zdrowie",
             "meaning": "congratulations, cheers (a toast)"
+        },
+        {
+            "text": "gumka",
+            "meaning": "a rubber, for rubbing out"
         },
         {
             "text": "hala"
@@ -2816,6 +3490,22 @@
             "meaning": "first name, surname, nationality"
         },
         {
+            "text": "interesująca",
+            "meaning": "interesting (interesujący, interesująca, interesujące)"
+        },
+        {
+            "text": "interesujące",
+            "meaning": "interesting (interesujący, interesująca, interesujące)"
+        },
+        {
+            "text": "interesujący",
+            "meaning": "interesting"
+        },
+        {
+            "text": "interesujący",
+            "meaning": "interesting (interesujący, interesująca, interesujące)"
+        },
+        {
             "text": "ja",
             "meaning": "I"
         },
@@ -2878,6 +3568,10 @@
         {
             "text": "ja oglądam serial i czytam",
             "meaning": "I watch a series and I read"
+        },
+        {
+            "text": "ja pamiętam",
+            "meaning": "I remember"
         },
         {
             "text": "ja się nazywam Adam",
@@ -3013,6 +3707,18 @@
             "meaning": "what is your first name? (one friend)"
         },
         {
+            "text": "jaka",
+            "meaning": "what… like (with a feminine noun: jaka jest ta torba?)"
+        },
+        {
+            "text": "jaka jest ta szkoła?",
+            "meaning": "what is this school like?"
+        },
+        {
+            "text": "jaka jest ta torba? Jest czerwona.",
+            "meaning": "what is this bag like? It is red."
+        },
+        {
             "text": "jaki",
             "meaning": "what (asking about a masculine noun: jaki jest twój adres?)"
         },
@@ -3023,6 +3729,9 @@
         {
             "text": "jaki jest numer telefonu?",
             "meaning": "what is your phone number? (one friend)"
+        },
+        {
+            "text": "jaki jest ta szkoła?"
         },
         {
             "text": "jaki jest twój adres?",
@@ -3043,6 +3752,25 @@
         {
             "text": "jaki masz numer telefonu?",
             "meaning": "what is your phone number? (one friend)"
+        },
+        {
+            "text": "jaki to kolor?",
+            "meaning": "what colour is it?"
+        },
+        {
+            "text": "jakie",
+            "meaning": "what… like (with a neuter noun: jakie jest to auto?)"
+        },
+        {
+            "text": "jakie jest ta szkoła?"
+        },
+        {
+            "text": "jakie jest to auto?",
+            "meaning": "what is this car like?"
+        },
+        {
+            "text": "jakie jest to auto? Jest małe.",
+            "meaning": "what is this car like? It is small."
         },
         {
             "text": "jeden",
@@ -3217,6 +3945,10 @@
             "meaning": "the coffee is here"
         },
         {
+            "text": "klucz",
+            "meaning": "a key"
+        },
+        {
             "text": "kocham",
             "meaning": "I love"
         },
@@ -3249,8 +3981,24 @@
             "meaning": "a classmate (a man) and a classmate (a woman)"
         },
         {
+            "text": "kolor",
+            "meaning": "a colour"
+        },
+        {
             "text": "komputer",
             "meaning": "a computer"
+        },
+        {
+            "text": "komórka",
+            "meaning": "a mobile phone"
+        },
+        {
+            "text": "komórka i ładowarka",
+            "meaning": "a mobile phone and a charger"
+        },
+        {
+            "text": "krzesło",
+            "meaning": "a chair"
         },
         {
             "text": "książka",
@@ -3259,6 +4007,38 @@
         {
             "text": "książka i długopis",
             "meaning": "a book and a pen"
+        },
+        {
+            "text": "kto",
+            "meaning": "who"
+        },
+        {
+            "text": "kto to jest?",
+            "meaning": "who is it?"
+        },
+        {
+            "text": "kto to jest?",
+            "meaning": "who is it? who is this?"
+        },
+        {
+            "text": "kto to jest? To jest student.",
+            "meaning": "who is it? It is a student."
+        },
+        {
+            "text": "kto to?",
+            "meaning": "who is it?"
+        },
+        {
+            "text": "kto? co?",
+            "meaning": "who? what?"
+        },
+        {
+            "text": "kubek",
+            "meaning": "a mug"
+        },
+        {
+            "text": "laptop",
+            "meaning": "a laptop"
         },
         {
             "text": "lat",
@@ -3358,6 +4138,10 @@
             "meaning": "I have a brother and a sister"
         },
         {
+            "text": "mam tylko długopis",
+            "meaning": "I only have a pen"
+        },
+        {
             "text": "mama",
             "meaning": "mum"
         },
@@ -3396,6 +4180,10 @@
             "meaning": "we have a son and a daughter"
         },
         {
+            "text": "mapa",
+            "meaning": "a map"
+        },
+        {
             "text": "masz",
             "meaning": "you have (one friend)"
         },
@@ -3406,6 +4194,22 @@
         {
             "text": "masz rodzeństwo?",
             "meaning": "do you have brothers and sisters? (one friend)"
+        },
+        {
+            "text": "mała",
+            "meaning": "small (mały, mała, małe)"
+        },
+        {
+            "text": "małe",
+            "meaning": "small (mały, mała, małe)"
+        },
+        {
+            "text": "mały",
+            "meaning": "small"
+        },
+        {
+            "text": "mały",
+            "meaning": "small (mały, mała, małe)"
         },
         {
             "text": "mieszka",
@@ -3519,6 +4323,22 @@
             "meaning": "me too (said back to \"nice to meet you\")"
         },
         {
+            "text": "modna",
+            "meaning": "fashionable (modny, modna, modne)"
+        },
+        {
+            "text": "modne",
+            "meaning": "fashionable (modny, modna, modne)"
+        },
+        {
+            "text": "modny",
+            "meaning": "fashionable"
+        },
+        {
+            "text": "modny",
+            "meaning": "fashionable (modny, modna, modne)"
+        },
+        {
             "text": "moja",
             "meaning": "my (with a feminine noun)"
         },
@@ -3570,6 +4390,10 @@
         {
             "text": "może tak, może nie",
             "meaning": "maybe yes, maybe no"
+        },
+        {
+            "text": "muzeum",
+            "meaning": "a museum"
         },
         {
             "text": "my",
@@ -3827,6 +4651,10 @@
             "meaning": "I don't know"
         },
         {
+            "text": "nie wiem, niestety",
+            "meaning": "unfortunately, I don't know"
+        },
+        {
             "text": "nie, dziękuję",
             "meaning": "no, thank you"
         },
@@ -3835,10 +4663,45 @@
             "meaning": "no, I am not from Poland"
         },
         {
+            "text": "nie, to jest torba"
+        },
+        {
+            "text": "nie, to nie jest klucz",
+            "meaning": "no, it isn't a key"
+        },
+        {
+            "text": "nie, to nie jest torba",
+            "meaning": "no, it isn't a bag"
+        },
+        {
+            "text": "niebieska",
+            "meaning": "blue (niebieski, niebieska, niebieskie)"
+        },
+        {
+            "text": "niebieski",
+            "meaning": "blue"
+        },
+        {
+            "text": "niebieski",
+            "meaning": "blue (niebieski, niebieska, niebieskie)"
+        },
+        {
+            "text": "niebieskie",
+            "meaning": "blue (niebieski, niebieska, niebieskie)"
+        },
+        {
             "text": "niedziela"
         },
         {
             "text": "nieoficjalnie"
+        },
+        {
+            "text": "niestety",
+            "meaning": "unfortunately"
+        },
+        {
+            "text": "niestety, nie wiem",
+            "meaning": "unfortunately, I don't know"
         },
         {
             "text": "nieźle",
@@ -3852,7 +4715,23 @@
             "text": "nigdzie"
         },
         {
+            "text": "nowa",
+            "meaning": "new (nowy, nowa, nowe)"
+        },
+        {
+            "text": "nowe",
+            "meaning": "new (nowy, nowa, nowe)"
+        },
+        {
             "text": "nowego"
+        },
+        {
+            "text": "nowy",
+            "meaning": "new"
+        },
+        {
+            "text": "nowy",
+            "meaning": "new (nowy, nowa, nowe)"
         },
         {
             "text": "numer",
@@ -3884,6 +4763,10 @@
         {
             "text": "oglądam serial i czytam",
             "meaning": "I watch a series and I read"
+        },
+        {
+            "text": "okno",
+            "meaning": "a window"
         },
         {
             "text": "on",
@@ -4080,6 +4963,10 @@
             "meaning": "eighteen minus five equals thirteen"
         },
         {
+            "text": "ołówek",
+            "meaning": "a pencil"
+        },
+        {
             "text": "pa",
             "meaning": "bye-bye (to friends and family)"
         },
@@ -4094,6 +4981,10 @@
         {
             "text": "pa, dobranoc",
             "meaning": "bye-bye, good night"
+        },
+        {
+            "text": "pamiętam",
+            "meaning": "I remember"
         },
         {
             "text": "pan",
@@ -4128,6 +5019,10 @@
         {
             "text": "panowie",
             "meaning": "gentlemen; you (to men, formal)"
+        },
+        {
+            "text": "paszport",
+            "meaning": "a passport"
         },
         {
             "text": "państwo",
@@ -4169,6 +5064,10 @@
             "meaning": "five, four, three, two, one, zero"
         },
         {
+            "text": "plecak",
+            "meaning": "a backpack"
+        },
+        {
             "text": "plus",
             "meaning": "plus"
         },
@@ -4203,6 +5102,38 @@
         {
             "text": "polecenie",
             "meaning": "an instruction (in a book)"
+        },
+        {
+            "text": "polska",
+            "meaning": "Polish (polski, polska, polskie)"
+        },
+        {
+            "text": "polski",
+            "meaning": "Polish"
+        },
+        {
+            "text": "polski",
+            "meaning": "Polish (polski, polska, polskie)"
+        },
+        {
+            "text": "polskie",
+            "meaning": "Polish (polski, polska, polskie)"
+        },
+        {
+            "text": "pomarańczowa",
+            "meaning": "orange (pomarańczowy, pomarańczowa, pomarańczowe)"
+        },
+        {
+            "text": "pomarańczowe",
+            "meaning": "orange (pomarańczowy, pomarańczowa, pomarańczowe)"
+        },
+        {
+            "text": "pomarańczowy",
+            "meaning": "orange"
+        },
+        {
+            "text": "pomarańczowy",
+            "meaning": "orange (pomarańczowy, pomarańczowa, pomarańczowe)"
         },
         {
             "text": "ponumerować",
@@ -4241,6 +5172,22 @@
         {
             "text": "pracować",
             "meaning": "work (to work)"
+        },
+        {
+            "text": "praktyczna",
+            "meaning": "practical (praktyczny, praktyczna, praktyczne)"
+        },
+        {
+            "text": "praktyczne",
+            "meaning": "practical (praktyczny, praktyczna, praktyczne)"
+        },
+        {
+            "text": "praktyczny",
+            "meaning": "practical"
+        },
+        {
+            "text": "praktyczny",
+            "meaning": "practical (praktyczny, praktyczna, praktyczne)"
         },
         {
             "text": "prawo"
@@ -4431,8 +5378,32 @@
             "meaning": "I understand"
         },
         {
+            "text": "rzeczownik",
+            "meaning": "a noun"
+        },
+        {
             "text": "równa się",
             "meaning": "equals"
+        },
+        {
+            "text": "różowa",
+            "meaning": "pink (różowy, różowa, różowe)"
+        },
+        {
+            "text": "różowe",
+            "meaning": "pink (różowy, różowa, różowe)"
+        },
+        {
+            "text": "różowy",
+            "meaning": "pink"
+        },
+        {
+            "text": "różowy",
+            "meaning": "pink (różowy, różowa, różowe)"
+        },
+        {
+            "text": "segregator",
+            "meaning": "a ring binder"
         },
         {
             "text": "serial",
@@ -4506,6 +5477,26 @@
             "text": "sobie"
         },
         {
+            "text": "stara",
+            "meaning": "old (stary, stara, stare)"
+        },
+        {
+            "text": "stare",
+            "meaning": "old (stary, stara, stare)"
+        },
+        {
+            "text": "stary",
+            "meaning": "old"
+        },
+        {
+            "text": "stary",
+            "meaning": "old (stary, stara, stare)"
+        },
+        {
+            "text": "stary, ale dobry",
+            "meaning": "old, but good"
+        },
+        {
             "text": "strona",
             "meaning": "a page"
         },
@@ -4534,12 +5525,44 @@
             "meaning": "study (at a university)"
         },
         {
+            "text": "stół",
+            "meaning": "a table"
+        },
+        {
+            "text": "sympatyczna",
+            "meaning": "nice, friendly (about a person) (sympatyczny, sympatyczna, sympatyczne)"
+        },
+        {
+            "text": "sympatyczne",
+            "meaning": "nice, friendly (about a person) (sympatyczny, sympatyczna, sympatyczne)"
+        },
+        {
+            "text": "sympatyczny",
+            "meaning": "nice, friendly (about a person) (sympatyczny, sympatyczna, sympatyczne)"
+        },
+        {
             "text": "syn",
             "meaning": "a son"
         },
         {
             "text": "syna",
             "meaning": "a son (after mam, masz, ma…)"
+        },
+        {
+            "text": "szara",
+            "meaning": "grey (szary, szara, szare)"
+        },
+        {
+            "text": "szare",
+            "meaning": "grey (szary, szara, szare)"
+        },
+        {
+            "text": "szary",
+            "meaning": "grey"
+        },
+        {
+            "text": "szary",
+            "meaning": "grey (szary, szara, szare)"
         },
         {
             "text": "szesnaście",
@@ -4619,6 +5642,14 @@
             "meaning": "they (women) are here"
         },
         {
+            "text": "słownik",
+            "meaning": "a dictionary"
+        },
+        {
+            "text": "słońce",
+            "meaning": "the sun"
+        },
+        {
             "text": "słucham",
             "meaning": "hello? (answering the phone)"
         },
@@ -4630,10 +5661,71 @@
             "text": "słuchasz"
         },
         {
+            "text": "słuchawki",
+            "meaning": "headphones"
+        },
+        {
             "text": "słychać"
         },
         {
-            "text": "ta"
+            "text": "ta",
+            "meaning": "this; that (with a feminine noun: ta torba)"
+        },
+        {
+            "text": "ta auto"
+        },
+        {
+            "text": "ta segregator"
+        },
+        {
+            "text": "ta studentka jest sympatyczna",
+            "meaning": "this student is nice"
+        },
+        {
+            "text": "ta tablica",
+            "meaning": "this board"
+        },
+        {
+            "text": "ta torba",
+            "meaning": "this bag"
+        },
+        {
+            "text": "ta torba jest czerwona",
+            "meaning": "this bag is red"
+        },
+        {
+            "text": "ta torba jest czerwony"
+        },
+        {
+            "text": "ta torba jest fioletowa",
+            "meaning": "this bag is purple"
+        },
+        {
+            "text": "ta torba jest modna",
+            "meaning": "this bag is fashionable"
+        },
+        {
+            "text": "ta torba jest modny"
+        },
+        {
+            "text": "ta torba jest nowa",
+            "meaning": "this bag is new"
+        },
+        {
+            "text": "ta torba jest nowe"
+        },
+        {
+            "text": "ta torba jest nowy"
+        },
+        {
+            "text": "ta torba jest praktyczna"
+        },
+        {
+            "text": "ta torba jest zielona"
+        },
+        {
+            "text": "tablica",
+            "meaning": "a board, in a classroom"
         },
         {
             "text": "tak",
@@ -4658,8 +5750,18 @@
             "meaning": "yes, of course"
         },
         {
+            "text": "tak, pamiętam",
+            "meaning": "yes, I remember"
+        },
+        {
             "text": "tak, proszę",
             "meaning": "yes, please"
+        },
+        {
+            "text": "tak, rozumiem"
+        },
+        {
+            "text": "tak, to jest torba"
         },
         {
             "text": "tam",
@@ -4676,6 +5778,69 @@
         {
             "text": "tekst i test",
             "meaning": "a text and a test"
+        },
+        {
+            "text": "ten",
+            "meaning": "this; that (with a masculine noun: ten zeszyt)"
+        },
+        {
+            "text": "ten auto"
+        },
+        {
+            "text": "ten długopis jest czarny",
+            "meaning": "this pen is black"
+        },
+        {
+            "text": "ten długopis jest dobry",
+            "meaning": "this pen is good"
+        },
+        {
+            "text": "ten klucz",
+            "meaning": "this key"
+        },
+        {
+            "text": "ten klucz jest szary",
+            "meaning": "this key is grey"
+        },
+        {
+            "text": "ten kubek jest biały",
+            "meaning": "this mug is white"
+        },
+        {
+            "text": "ten kubek jest pomarańczowy",
+            "meaning": "this mug is orange"
+        },
+        {
+            "text": "ten laptop jest fajny",
+            "meaning": "this laptop is cool"
+        },
+        {
+            "text": "ten plecak jest praktyczny",
+            "meaning": "this backpack is practical"
+        },
+        {
+            "text": "ten segregator",
+            "meaning": "this ring binder"
+        },
+        {
+            "text": "ten stół",
+            "meaning": "this table"
+        },
+        {
+            "text": "ten stół jest brązowy",
+            "meaning": "this table is brown"
+        },
+        {
+            "text": "ten słownik jest stary",
+            "meaning": "this dictionary is old"
+        },
+        {
+            "text": "ten zeszyt",
+            "meaning": "this notebook"
+        },
+        {
+            "text": "ten zeszyt jest niebieski",
+            "meaning": "this notebook is blue"
         },
         {
             "text": "test",
@@ -4710,8 +5875,36 @@
             "meaning": "this is Adam, he is from Poland"
         },
         {
+            "text": "to akwarium",
+            "meaning": "this aquarium"
+        },
+        {
+            "text": "to akwarium jest niebieski"
+        },
+        {
+            "text": "to akwarium jest niebieskie",
+            "meaning": "this aquarium is blue"
+        },
+        {
+            "text": "to akwarium jest zielone"
+        },
+        {
             "text": "to alfabet",
             "meaning": "this is the alphabet"
+        },
+        {
+            "text": "to auto",
+            "meaning": "this car"
+        },
+        {
+            "text": "to auto jest fioletowe"
+        },
+        {
+            "text": "to auto jest różowe",
+            "meaning": "this car is pink"
+        },
+        {
+            "text": "to auto jest różowy"
         },
         {
             "text": "to dziewczyna",
@@ -4738,8 +5931,23 @@
             "meaning": "this is the alphabet"
         },
         {
+            "text": "to jest duże okno",
+            "meaning": "this is a big window"
+        },
+        {
             "text": "to jest dziewczyna",
             "meaning": "this is a girl"
+        },
+        {
+            "text": "to jest fioletowa torba",
+            "meaning": "it is a purple bag"
+        },
+        {
+            "text": "to jest fioletowy torba"
+        },
+        {
+            "text": "to jest gumka",
+            "meaning": "it is a rubber"
         },
         {
             "text": "to jest jego hobby",
@@ -4749,12 +5957,38 @@
             "text": "to jest jej hobby"
         },
         {
+            "text": "to jest klucz",
+            "meaning": "it is a key"
+        },
+        {
             "text": "to jest komputer",
             "meaning": "this is a computer"
         },
         {
+            "text": "to jest komórka"
+        },
+        {
+            "text": "to jest krzesło",
+            "meaning": "it is a chair"
+        },
+        {
+            "text": "to jest książka"
+        },
+        {
+            "text": "to jest kubek",
+            "meaning": "it is a mug"
+        },
+        {
+            "text": "to jest laptop",
+            "meaning": "it is a laptop"
+        },
+        {
             "text": "to jest lekcja",
             "meaning": "this is a lesson"
+        },
+        {
+            "text": "to jest mapa",
+            "meaning": "it is a map"
         },
         {
             "text": "to jest moja rodzina",
@@ -4804,6 +6038,38 @@
             "meaning": "this is number nine"
         },
         {
+            "text": "to jest okno",
+            "meaning": "it is a window"
+        },
+        {
+            "text": "to jest ołówek"
+        },
+        {
+            "text": "to jest plecak",
+            "meaning": "it is a backpack"
+        },
+        {
+            "text": "to jest polska auto"
+        },
+        {
+            "text": "to jest polski auto"
+        },
+        {
+            "text": "to jest polskie auto",
+            "meaning": "it is a Polish car"
+        },
+        {
+            "text": "to jest pomarańczowy kubek",
+            "meaning": "it is an orange mug"
+        },
+        {
+            "text": "to jest różowa gumka",
+            "meaning": "it is a pink rubber"
+        },
+        {
+            "text": "to jest różowa torba"
+        },
+        {
             "text": "to jest strona dziesięć",
             "meaning": "this is page ten"
         },
@@ -4816,8 +6082,20 @@
             "meaning": "this is a student (a woman)"
         },
         {
+            "text": "to jest stół",
+            "meaning": "it is a table"
+        },
+        {
             "text": "to jest szkoła",
             "meaning": "this is a school"
+        },
+        {
+            "text": "to jest tablica",
+            "meaning": "it is a board"
+        },
+        {
+            "text": "to jest torba",
+            "meaning": "it is a bag"
         },
         {
             "text": "to jest twoje dziecko?",
@@ -4828,8 +6106,34 @@
             "meaning": "is this your brother? (to one friend)"
         },
         {
+            "text": "to jest zeszyt",
+            "meaning": "it is a notebook"
+        },
+        {
+            "text": "to jest ładowarka",
+            "meaning": "it is a charger"
+        },
+        {
             "text": "to komputer",
             "meaning": "this is a computer"
+        },
+        {
+            "text": "to krzesło",
+            "meaning": "this chair"
+        },
+        {
+            "text": "to krzesło jest zielone",
+            "meaning": "this chair is green"
+        },
+        {
+            "text": "to krzesło jest zielony"
+        },
+        {
+            "text": "to krzesło jest złe",
+            "meaning": "this chair is bad"
+        },
+        {
+            "text": "to krzesło jest żółte"
         },
         {
             "text": "to lekcja",
@@ -4864,12 +6168,30 @@
             "meaning": "this is my question"
         },
         {
+            "text": "to muzeum",
+            "meaning": "this museum"
+        },
+        {
+            "text": "to muzeum jest interesujące",
+            "meaning": "this museum is interesting"
+        },
+        {
             "text": "to mój brat",
             "meaning": "this is my brother"
         },
         {
             "text": "to nauczyciel",
             "meaning": "this is a teacher (a man)"
+        },
+        {
+            "text": "to nie jest",
+            "meaning": "it isn't; this isn't (to nie jest ołówek)"
+        },
+        {
+            "text": "to nie jest książka"
+        },
+        {
+            "text": "to nie jest ołówek"
         },
         {
             "text": "to nie jest twój problem",
@@ -4882,6 +6204,17 @@
         {
             "text": "to numer dziewięć",
             "meaning": "this is number nine"
+        },
+        {
+            "text": "to okno",
+            "meaning": "this window"
+        },
+        {
+            "text": "to okno, ta mapa, ten klucz",
+            "meaning": "this window, this map, this key"
+        },
+        {
+            "text": "to segregator"
         },
         {
             "text": "to strona dziesięć",
@@ -4900,6 +6233,18 @@
             "meaning": "this is a school"
         },
         {
+            "text": "to są słuchawki",
+            "meaning": "these are headphones"
+        },
+        {
+            "text": "to słońce jest żółte",
+            "meaning": "this sun is yellow"
+        },
+        {
+            "text": "to słońce, ta komórka, ten słownik",
+            "meaning": "this sun, this mobile phone, this dictionary"
+        },
+        {
             "text": "to twoje dziecko?",
             "meaning": "is this your child? (to one friend)"
         },
@@ -4914,6 +6259,20 @@
         {
             "text": "toaleta jest tam, na lewo",
             "meaning": "the toilet is there, on the left"
+        },
+        {
+            "text": "torba",
+            "meaning": "a bag"
+        },
+        {
+            "text": "torba to kolor"
+        },
+        {
+            "text": "torba to pytanie"
+        },
+        {
+            "text": "torba to rzeczownik",
+            "meaning": "'torba' is a noun"
         },
         {
             "text": "trochę",
@@ -5038,6 +6397,14 @@
         {
             "text": "ty jesteś",
             "meaning": "you are (one friend)"
+        },
+        {
+            "text": "tylko",
+            "meaning": "only"
+        },
+        {
+            "text": "tylko długopis",
+            "meaning": "only a pen"
         },
         {
             "text": "uczy się polskiego",
@@ -5234,10 +6601,46 @@
             "meaning": "zero, one, two"
         },
         {
+            "text": "zeszyt",
+            "meaning": "a notebook"
+        },
+        {
+            "text": "zielona",
+            "meaning": "green (zielony, zielona, zielone)"
+        },
+        {
+            "text": "zielone",
+            "meaning": "green (zielony, zielona, zielone)"
+        },
+        {
+            "text": "zielony",
+            "meaning": "green"
+        },
+        {
+            "text": "zielony",
+            "meaning": "green (zielony, zielona, zielone)"
+        },
+        {
             "text": "zmęczony"
         },
         {
             "text": "znaczy"
+        },
+        {
+            "text": "zła",
+            "meaning": "bad (zły, zła, złe)"
+        },
+        {
+            "text": "złe",
+            "meaning": "bad (zły, zła, złe)"
+        },
+        {
+            "text": "zły",
+            "meaning": "bad"
+        },
+        {
+            "text": "zły",
+            "meaning": "bad (zły, zła, złe)"
         },
         {
             "text": "Ćwiczenia",
@@ -5254,6 +6657,14 @@
         {
             "text": "ćwiczenie numer dwa",
             "meaning": "exercise number two"
+        },
+        {
+            "text": "ładowarka",
+            "meaning": "a charger"
+        },
+        {
+            "text": "ładowarka i komórka",
+            "meaning": "a mobile phone and a charger"
         },
         {
             "text": "Świetnie! A dlaczego uczysz się polskiego?",
@@ -5326,6 +6737,22 @@
         {
             "text": "żona",
             "meaning": "a wife"
+        },
+        {
+            "text": "żółta",
+            "meaning": "yellow (żółty, żółta, żółte)"
+        },
+        {
+            "text": "żółte",
+            "meaning": "yellow (żółty, żółta, żółte)"
+        },
+        {
+            "text": "żółty",
+            "meaning": "yellow"
+        },
+        {
+            "text": "żółty",
+            "meaning": "yellow (żółty, żółta, żółte)"
         }
     ],
     "tips": [
@@ -5666,6 +7093,46 @@
             "hash": "4f934b2caf84"
         },
         {
+            "id": "chat-on-the-desk/t1/2",
+            "hash": "02df0bac9221"
+        },
+        {
+            "id": "chat-on-the-desk/t2/2",
+            "hash": "d51ced5b808c"
+        },
+        {
+            "id": "chat-on-the-desk/t2/3",
+            "hash": "9e5b6db17b9c"
+        },
+        {
+            "id": "chat-on-the-desk/t3/2",
+            "hash": "e921d3439875"
+        },
+        {
+            "id": "chat-on-the-desk/t4/2",
+            "hash": "39ec1a65e1c0"
+        },
+        {
+            "id": "chat-on-the-desk/t4/3",
+            "hash": "e7c85f4dc64e"
+        },
+        {
+            "id": "chat-on-the-desk/t5/2",
+            "hash": "946ce3d2911c"
+        },
+        {
+            "id": "chat-on-the-desk/t6/2",
+            "hash": "4c9874d6fb7e"
+        },
+        {
+            "id": "chat-on-the-desk/t6/3",
+            "hash": "b5ac0762a0f1"
+        },
+        {
+            "id": "chat-on-the-desk/t7/2",
+            "hash": "f319211d75a0"
+        },
+        {
             "id": "chat-school-office/t1/2",
             "hash": "9c2abf918e96"
         },
@@ -5881,6 +7348,46 @@
         {
             "id": "kpk1-l02-g-t01",
             "hash": "2f09de5026a0"
+        },
+        {
+            "id": "kpk1-l03-a1-t01",
+            "hash": "dcae831e771a"
+        },
+        {
+            "id": "kpk1-l03-a2-t01",
+            "hash": "7e4a32fe825c"
+        },
+        {
+            "id": "kpk1-l03-a3-t01",
+            "hash": "2d89c19f2f5c"
+        },
+        {
+            "id": "kpk1-l03-b-t01",
+            "hash": "923fe56315e2"
+        },
+        {
+            "id": "kpk1-l03-c1-t01",
+            "hash": "a840e3f1611c"
+        },
+        {
+            "id": "kpk1-l03-c2-t01",
+            "hash": "49263f11461d"
+        },
+        {
+            "id": "kpk1-l03-c3-t01",
+            "hash": "d8934bcbb6c5"
+        },
+        {
+            "id": "kpk1-l03-d1-t01",
+            "hash": "c5cea9f1724a"
+        },
+        {
+            "id": "kpk1-l03-d2-t01",
+            "hash": "f260cb5d49e2"
+        },
+        {
+            "id": "kpk1-l03-g-t01",
+            "hash": "720a41a4d39a"
         }
     ]
 }

@@ -280,6 +280,9 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
     content.items.filter { it.value.text.isBlank() }.forEach { item ->
         problems += ContentProblem(item.file, item.value.id, "Item ${item.value.id} has no text")
     }
+    content.items.filter { item -> item.value.forms.any { it.isBlank() } || item.value.spellings.distinct().size < item.value.spellings.size }.forEach { item ->
+        problems += ContentProblem(item.file, item.value.id, "Item ${item.value.id} has a blank form, or a form that repeats its text or another form")
+    }
     exercises.forEach { (file, placed) ->
         val (dailySet, exercise) = placed
         exercise.items.filter { content.itemsComplete && it !in course.itemsById }.forEach { item ->

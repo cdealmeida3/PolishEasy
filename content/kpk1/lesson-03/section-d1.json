@@ -1,0 +1,446 @@
+{
+  "id": "kpk1-l03-d1",
+  "section": {
+    "letter": "D",
+    "heading": "Kolory",
+    "meaning": {
+      "en": "Colours"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l03-d1-t01",
+      "before": "kpk1-l03-d1-e01",
+      "title": {
+        "en": "Colours"
+      },
+      "body": {
+        "en": "A colour is an adjective, so it takes the noun's gender too: *czerwony długopis*, *czerwona torba*, *czerwone auto*. *Niebieski* ends in *-i* after *k*, like *polski*: *niebieska*, *niebieskie*."
+      },
+      "table": {
+        "title": {
+          "en": "Colours"
+        },
+        "columns": [
+          {
+            "header": "jaki?",
+            "gender": "m"
+          },
+          {
+            "header": "jaka?",
+            "gender": "f"
+          },
+          {
+            "header": "jakie?",
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "czerwon[y]",
+              "czerwon[a]",
+              "czerwon[e]"
+            ]
+          },
+          {
+            "cells": [
+              "niebiesk[i]",
+              "niebiesk[a]",
+              "niebiesk[ie]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-d1-e01",
+      "prompt": "czerwony",
+      "options": [
+        {
+          "en": "green (zielony, zielona, zielone)"
+        },
+        {
+          "en": "red (czerwony, czerwona, czerwone)"
+        },
+        {
+          "en": "yellow (żółty, żółta, żółte)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czerwony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-d1-e02",
+      "prompt": "niebieski",
+      "options": [
+        {
+          "en": "red (czerwony, czerwona, czerwone)"
+        },
+        {
+          "en": "grey (szary, szara, szare)"
+        },
+        {
+          "en": "blue (niebieski, niebieska, niebieskie)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "niebieski"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-d1-e03",
+      "prompt": "zielony",
+      "options": [
+        {
+          "en": "green (zielony, zielona, zielone)"
+        },
+        {
+          "en": "blue (niebieski, niebieska, niebieskie)"
+        },
+        {
+          "en": "brown (brązowy, brązowa, brązowe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zielony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-d1-e04",
+      "prompt": "żółty",
+      "options": [
+        {
+          "en": "white (biały, biała, białe)"
+        },
+        {
+          "en": "yellow (żółty, żółta, żółte)"
+        },
+        {
+          "en": "red (czerwony, czerwona, czerwone)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zolty"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-d1-e05",
+      "text": "ta torba jest czerwona",
+      "meaning": {
+        "en": "this bag is red"
+      },
+      "distractors": [
+        "ta torba jest czerwony",
+        "ta torba jest zielona"
+      ],
+      "items": [
+        "ta",
+        "torba",
+        "byc-jest",
+        "czerwony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-d1-e06",
+      "prompt": "czarny",
+      "options": [
+        {
+          "en": "white (biały, biała, białe)"
+        },
+        {
+          "en": "grey (szary, szara, szare)"
+        },
+        {
+          "en": "black (czarny, czarna, czarne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czarny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-d1-e07",
+      "prompt": "biały",
+      "options": [
+        {
+          "en": "white (biały, biała, białe)"
+        },
+        {
+          "en": "black (czarny, czarna, czarne)"
+        },
+        {
+          "en": "yellow (żółty, żółta, żółte)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bialy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-d1-e08",
+      "prompt": {
+        "en": "this pen is black"
+      },
+      "acceptedAnswers": [
+        "ten długopis jest czarny"
+      ],
+      "distractors": [
+        "czarna",
+        "ta"
+      ],
+      "items": [
+        "ten",
+        "dlugopis",
+        "byc-jest",
+        "czarny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-d1-e09",
+      "prompt": "szary",
+      "options": [
+        {
+          "en": "brown (brązowy, brązowa, brązowe)"
+        },
+        {
+          "en": "grey (szary, szara, szare)"
+        },
+        {
+          "en": "white (biały, biała, białe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szary"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-d1-e10",
+      "prompt": "brązowy",
+      "options": [
+        {
+          "en": "grey (szary, szara, szare)"
+        },
+        {
+          "en": "green (zielony, zielona, zielone)"
+        },
+        {
+          "en": "brown (brązowy, brązowa, brązowe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "brazowy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-d1-e11",
+      "text": "to krzesło jest zielone",
+      "meaning": {
+        "en": "this chair is green"
+      },
+      "distractors": [
+        "to krzesło jest zielony",
+        "to krzesło jest żółte"
+      ],
+      "items": [
+        "to",
+        "krzeslo",
+        "byc-jest",
+        "zielony"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-d1-e12",
+      "text": "Ten plecak jest ___, a ta komórka jest ___.",
+      "meaning": {
+        "en": "This backpack is brown, and this mobile phone is black."
+      },
+      "gaps": [
+        [
+          "brązowy"
+        ],
+        [
+          "czarna"
+        ]
+      ],
+      "distractors": [
+        "brązowa",
+        "czarny"
+      ],
+      "items": [
+        "ten",
+        "plecak",
+        "byc-jest",
+        "brazowy",
+        "a",
+        "ta",
+        "komorka",
+        "czarny"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l03-d1-e13",
+      "pairs": [
+        {
+          "polish": "czerwony",
+          "meaning": {
+            "en": "red"
+          }
+        },
+        {
+          "polish": "niebieski",
+          "meaning": {
+            "en": "blue"
+          }
+        },
+        {
+          "polish": "zielony",
+          "meaning": {
+            "en": "green"
+          }
+        },
+        {
+          "polish": "żółty",
+          "meaning": {
+            "en": "yellow"
+          }
+        },
+        {
+          "polish": "biały",
+          "meaning": {
+            "en": "white"
+          }
+        },
+        {
+          "polish": "szary",
+          "meaning": {
+            "en": "grey"
+          }
+        }
+      ],
+      "items": [
+        "czerwony",
+        "niebieski",
+        "zielony",
+        "zolty",
+        "bialy",
+        "szary"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-d1-e14",
+      "prompt": {
+        "en": "this mug is white"
+      },
+      "acceptedAnswers": [
+        "ten kubek jest biały"
+      ],
+      "items": [
+        "ten",
+        "kubek",
+        "byc-jest",
+        "bialy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-d1-e15",
+      "acceptedAnswers": [
+        "ten zeszyt jest niebieski"
+      ],
+      "meaning": {
+        "en": "this notebook is blue"
+      },
+      "items": [
+        "ten",
+        "zeszyt",
+        "byc-jest",
+        "niebieski"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-d1-e16",
+      "text": "Ta tablica jest ___.",
+      "meaning": {
+        "en": "This board is white."
+      },
+      "gaps": [
+        [
+          "biała"
+        ]
+      ],
+      "distractors": [
+        "biały",
+        "białe"
+      ],
+      "items": [
+        "ta",
+        "tablica",
+        "byc-jest",
+        "bialy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-d1-e17",
+      "acceptedAnswers": [
+        "to słońce jest żółte"
+      ],
+      "meaning": {
+        "en": "this sun is yellow"
+      },
+      "items": [
+        "to",
+        "slonce",
+        "byc-jest",
+        "zolty"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-d1-e18",
+      "prompt": {
+        "en": "this key is grey"
+      },
+      "acceptedAnswers": [
+        "ten klucz jest szary"
+      ],
+      "items": [
+        "ten",
+        "klucz",
+        "byc-jest",
+        "szary"
+      ]
+    }
+  ]
+}

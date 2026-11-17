@@ -63,7 +63,15 @@ data class Item(
     val meaning: Localized,
     /** Where the book marks one: whether the phrase is formal, informal or both (O, N, U). */
     val register: Register? = null,
-)
+    /**
+     * The word's other forms that an Exercise may use in its place, as an adjective's feminine and
+     * neuter (*nowa*, *nowe* of *nowy*): the Learner who knows the Item knows them too.
+     */
+    val forms: List<String> = emptyList(),
+) {
+    /** Every way the Item may be written: its text and then its [forms]. */
+    val spellings: List<String> get() = listOf(text) + forms
+}
 
 /** The book's register marks: O oficjalnie, N nieoficjalnie, U uniwersalnie. */
 @Serializable

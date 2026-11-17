@@ -1,0 +1,518 @@
+{
+  "id": "kpk1-l03-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l03-g-t01",
+      "before": "kpk1-l03-g-e01",
+      "title": {
+        "en": "Chapter 3 in the book's exercises"
+      },
+      "body": {
+        "en": "Now the chapter in the book's own exercises: join each word to its meaning, fill the gaps from the sticky notes, put a dialogue in order, and say what is *prawda*, true, or *nieprawda*, false."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l03-g-e01",
+      "pairs": [
+        {
+          "polish": "słownik",
+          "meaning": {
+            "en": "a dictionary"
+          }
+        },
+        {
+          "polish": "zeszyt",
+          "meaning": {
+            "en": "a notebook"
+          }
+        },
+        {
+          "polish": "torba",
+          "meaning": {
+            "en": "a bag"
+          }
+        },
+        {
+          "polish": "kubek",
+          "meaning": {
+            "en": "a mug"
+          }
+        },
+        {
+          "polish": "krzesło",
+          "meaning": {
+            "en": "a chair"
+          }
+        },
+        {
+          "polish": "okno",
+          "meaning": {
+            "en": "a window"
+          }
+        }
+      ],
+      "items": [
+        "slownik",
+        "zeszyt",
+        "torba",
+        "kubek",
+        "krzeslo",
+        "okno"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l03-g-e02",
+      "lines": [
+        "Co to jest?",
+        "To jest segregator.",
+        "Jaki jest ten segregator?",
+        "Ten segregator jest praktyczny."
+      ],
+      "meaning": {
+        "en": "Two students talk about a thing on the desk."
+      },
+      "items": [
+        "co-to-jest",
+        "to",
+        "byc-jest",
+        "segregator",
+        "jaki",
+        "ten",
+        "praktyczny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-g-e03",
+      "text": "___ to jest? To jest nowy student.",
+      "meaning": {
+        "en": "Who is it? It is a new student."
+      },
+      "gaps": [
+        [
+          "Kto"
+        ]
+      ],
+      "distractors": [
+        "Co",
+        "Czy"
+      ],
+      "items": [
+        "kto-to-jest",
+        "to",
+        "byc-jest",
+        "nowy",
+        "student"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l03-g-e04",
+      "lines": [
+        "Czy to jest ołówek?",
+        "Nie, to nie jest ołówek. To jest długopis.",
+        "A gdzie jest ołówek?",
+        "Ołówek jest tam."
+      ],
+      "meaning": {
+        "en": "A teacher asks a student about a pen."
+      },
+      "items": [
+        "czy-to-jest",
+        "olowek",
+        "nie",
+        "to-nie-jest",
+        "to",
+        "byc-jest",
+        "dlugopis",
+        "a",
+        "gdzie",
+        "tam"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l03-g-e05",
+      "pairs": [
+        {
+          "polish": "ten stół",
+          "meaning": {
+            "en": "this table"
+          }
+        },
+        {
+          "polish": "ta tablica",
+          "meaning": {
+            "en": "this board"
+          }
+        },
+        {
+          "polish": "to krzesło",
+          "meaning": {
+            "en": "this chair"
+          }
+        },
+        {
+          "polish": "ten klucz",
+          "meaning": {
+            "en": "this key"
+          }
+        }
+      ],
+      "items": [
+        "ten",
+        "stol",
+        "ta",
+        "tablica",
+        "to",
+        "krzeslo",
+        "klucz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l03-g-e06",
+      "lines": [
+        "To jest moja torba. Jest duża i czerwona.",
+        "Mam tu komórkę, klucz i paszport.",
+        "Ta torba jest modna, ale nie jest praktyczna."
+      ],
+      "meaning": {
+        "en": "Angela shows her bag."
+      },
+      "statements": [
+        {
+          "text": "Torba jest mała.",
+          "meaning": {
+            "en": "The bag is small."
+          },
+          "true": false
+        },
+        {
+          "text": "Torba jest czerwona.",
+          "meaning": {
+            "en": "The bag is red."
+          },
+          "true": true
+        },
+        {
+          "text": "Torba jest praktyczna.",
+          "meaning": {
+            "en": "The bag is practical."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "to",
+        "byc-jest",
+        "moja",
+        "torba",
+        "duzy",
+        "i",
+        "czerwony",
+        "miec-mam",
+        "tu",
+        "klucz",
+        "paszport",
+        "ta",
+        "modny",
+        "ale",
+        "nie",
+        "praktyczny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-g-e07",
+      "text": "Ta książka jest ___, ale ___.",
+      "meaning": {
+        "en": "This book is old, but good."
+      },
+      "gaps": [
+        [
+          "stara"
+        ],
+        [
+          "dobra"
+        ]
+      ],
+      "distractors": [
+        "stary",
+        "dobry"
+      ],
+      "items": [
+        "ta",
+        "ksiazka",
+        "byc-jest",
+        "stary",
+        "ale",
+        "dobry"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l03-g-e08",
+      "pairs": [
+        {
+          "polish": "czerwony",
+          "meaning": {
+            "en": "red"
+          }
+        },
+        {
+          "polish": "zielony",
+          "meaning": {
+            "en": "green"
+          }
+        },
+        {
+          "polish": "czarny",
+          "meaning": {
+            "en": "black"
+          }
+        },
+        {
+          "polish": "biały",
+          "meaning": {
+            "en": "white"
+          }
+        },
+        {
+          "polish": "różowy",
+          "meaning": {
+            "en": "pink"
+          }
+        },
+        {
+          "polish": "fioletowy",
+          "meaning": {
+            "en": "purple"
+          }
+        }
+      ],
+      "items": [
+        "czerwony",
+        "zielony",
+        "czarny",
+        "bialy",
+        "rozowy",
+        "fioletowy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l03-g-e09",
+      "lines": [
+        "Kto to jest?",
+        "To jest Leon. Jest z Włoch.",
+        "Jaki jest Leon?",
+        "Jest sympatyczny i interesujący."
+      ],
+      "meaning": {
+        "en": "Two classmates talk about a new student."
+      },
+      "statements": [
+        {
+          "text": "Leon jest z Włoch.",
+          "meaning": {
+            "en": "Leon is from Italy."
+          },
+          "true": true
+        },
+        {
+          "text": "Leon jest sympatyczny.",
+          "meaning": {
+            "en": "Leon is nice."
+          },
+          "true": true
+        },
+        {
+          "text": "Leon jest stary.",
+          "meaning": {
+            "en": "Leon is old."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "kto-to-jest",
+        "to",
+        "byc-jest",
+        "z-wloch",
+        "jaki",
+        "sympatyczny",
+        "i",
+        "interesujacy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-g-e10",
+      "text": "Jakie jest ___ auto? To auto jest ___.",
+      "meaning": {
+        "en": "What is this car like? This car is small."
+      },
+      "gaps": [
+        [
+          "to"
+        ],
+        [
+          "małe"
+        ]
+      ],
+      "distractors": [
+        "ten",
+        "mały"
+      ],
+      "items": [
+        "jakie",
+        "to",
+        "auto",
+        "byc-jest",
+        "maly"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-g-e11",
+      "acceptedAnswers": [
+        "czy to jest mapa?"
+      ],
+      "meaning": {
+        "en": "is it a map?"
+      },
+      "items": [
+        "czy-to-jest",
+        "mapa"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-g-e12",
+      "acceptedAnswers": [
+        "to jest ładowarka"
+      ],
+      "meaning": {
+        "en": "it is a charger"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "ladowarka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-g-e13",
+      "prompt": {
+        "en": "this is a big window"
+      },
+      "acceptedAnswers": [
+        "to jest duże okno"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "duzy",
+        "okno"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-g-e14",
+      "acceptedAnswers": [
+        "ten stół jest brązowy"
+      ],
+      "meaning": {
+        "en": "this table is brown"
+      },
+      "items": [
+        "ten",
+        "stol",
+        "byc-jest",
+        "brazowy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-g-e15",
+      "prompt": {
+        "en": "what is this car like?"
+      },
+      "acceptedAnswers": [
+        "jakie jest to auto?"
+      ],
+      "items": [
+        "jakie",
+        "byc-jest",
+        "to",
+        "auto"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-g-e16",
+      "acceptedAnswers": [
+        "słuchawki"
+      ],
+      "meaning": {
+        "en": "headphones"
+      },
+      "items": [
+        "sluchawki"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-g-e17",
+      "prompt": {
+        "en": "who? what?"
+      },
+      "acceptedAnswers": [
+        "kto? co?"
+      ],
+      "distractors": [
+        "czy",
+        "jak"
+      ],
+      "items": [
+        "kto",
+        "co"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-g-e18",
+      "text": "torba to rzeczownik",
+      "meaning": {
+        "en": "'torba' is a noun"
+      },
+      "distractors": [
+        "torba to kolor",
+        "torba to pytanie"
+      ],
+      "items": [
+        "torba",
+        "to",
+        "rzeczownik"
+      ]
+    }
+  ]
+}

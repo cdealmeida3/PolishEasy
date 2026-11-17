@@ -1,0 +1,378 @@
+{
+  "id": "kpk1-l03-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Kto…? Co…?",
+    "meaning": {
+      "en": "Who…? What…?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l03-a1-t01",
+      "before": "kpk1-l03-a1-e01",
+      "title": {
+        "en": "Who is it? What is it?"
+      },
+      "body": {
+        "en": "Ask *kto to jest?* about a person and *co to jest?* about a thing. The answer starts the same way for both: *to jest student*, *to jest słownik*. *Kto* is who, and *co* is what."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a1-e01",
+      "prompt": "kto",
+      "options": [
+        {
+          "en": "who"
+        },
+        {
+          "en": "what"
+        },
+        {
+          "en": "where"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kto"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a1-e02",
+      "prompt": "co",
+      "options": [
+        {
+          "en": "who"
+        },
+        {
+          "en": "what"
+        },
+        {
+          "en": "why"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "co"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a1-e03",
+      "prompt": "kto to jest?",
+      "options": [
+        {
+          "en": "what is it? what is this?"
+        },
+        {
+          "en": "where is it?"
+        },
+        {
+          "en": "who is it? who is this?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kto-to-jest"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a1-e04",
+      "prompt": "co to jest?",
+      "options": [
+        {
+          "en": "what is it? what is this?"
+        },
+        {
+          "en": "who is it? who is this?"
+        },
+        {
+          "en": "what does it mean?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "co-to-jest"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-a1-e05",
+      "text": "kto to jest?",
+      "meaning": {
+        "en": "who is it? who is this?"
+      },
+      "distractors": [
+        "co to jest?",
+        "gdzie to jest?"
+      ],
+      "items": [
+        "kto-to-jest"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a1-e06",
+      "prompt": "słownik",
+      "options": [
+        {
+          "en": "a notebook"
+        },
+        {
+          "en": "a dictionary"
+        },
+        {
+          "en": "a book"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "slownik"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-a1-e07",
+      "prompt": {
+        "en": "who is it? It is a student."
+      },
+      "acceptedAnswers": [
+        "kto to jest? To jest student."
+      ],
+      "distractors": [
+        "co",
+        "studentka"
+      ],
+      "items": [
+        "kto-to-jest",
+        "to",
+        "byc-jest",
+        "student"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a1-e08",
+      "prompt": "zeszyt",
+      "options": [
+        {
+          "en": "a dictionary"
+        },
+        {
+          "en": "a pen"
+        },
+        {
+          "en": "a notebook"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zeszyt"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a1-e09",
+      "prompt": "torba",
+      "options": [
+        {
+          "en": "a bag"
+        },
+        {
+          "en": "a backpack"
+        },
+        {
+          "en": "a mug"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "torba"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a1-e10",
+      "prompt": "plecak",
+      "options": [
+        {
+          "en": "a bag"
+        },
+        {
+          "en": "a backpack"
+        },
+        {
+          "en": "a key"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "plecak"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-a1-e11",
+      "text": "to jest plecak",
+      "meaning": {
+        "en": "it is a backpack"
+      },
+      "distractors": [
+        "to jest torba",
+        "to jest zeszyt"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "plecak"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-a1-e12",
+      "prompt": {
+        "en": "what is it? It is a dictionary."
+      },
+      "acceptedAnswers": [
+        "co to jest? To jest słownik."
+      ],
+      "distractors": [
+        "kto",
+        "zeszyt"
+      ],
+      "items": [
+        "co-to-jest",
+        "to",
+        "byc-jest",
+        "slownik"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-a1-e13",
+      "text": "co to jest?",
+      "meaning": {
+        "en": "what is it? what is this?"
+      },
+      "distractors": [
+        "kto to jest?",
+        "co to znaczy?"
+      ],
+      "items": [
+        "co-to-jest"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-a1-e14",
+      "prompt": {
+        "en": "it is a notebook"
+      },
+      "acceptedAnswers": [
+        "to jest zeszyt"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "zeszyt"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-a1-e15",
+      "acceptedAnswers": [
+        "to jest torba"
+      ],
+      "meaning": {
+        "en": "it is a bag"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "torba"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-a1-e16",
+      "prompt": {
+        "en": "who is it?"
+      },
+      "acceptedAnswers": [
+        "kto to jest?",
+        "kto to?"
+      ],
+      "items": [
+        "kto-to-jest"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l03-a1-e17",
+      "pairs": [
+        {
+          "polish": "kto",
+          "meaning": {
+            "en": "who"
+          }
+        },
+        {
+          "polish": "co",
+          "meaning": {
+            "en": "what"
+          }
+        },
+        {
+          "polish": "słownik",
+          "meaning": {
+            "en": "a dictionary"
+          }
+        },
+        {
+          "polish": "zeszyt",
+          "meaning": {
+            "en": "a notebook"
+          }
+        },
+        {
+          "polish": "plecak",
+          "meaning": {
+            "en": "a backpack"
+          }
+        }
+      ],
+      "items": [
+        "kto",
+        "co",
+        "slownik",
+        "zeszyt",
+        "plecak"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-a1-e18",
+      "acceptedAnswers": [
+        "co to jest?"
+      ],
+      "meaning": {
+        "en": "what is it? what is this?"
+      },
+      "items": [
+        "co-to-jest"
+      ],
+      "readingAnswers": [
+        "co to?"
+      ]
+    }
+  ]
+}

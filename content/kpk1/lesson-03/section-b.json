@@ -1,0 +1,396 @@
+{
+  "id": "kpk1-l03-b",
+  "section": {
+    "letter": "B",
+    "heading": "Czy…?",
+    "meaning": {
+      "en": "Is it…?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l03-b-t01",
+      "before": "kpk1-l03-b-e01",
+      "title": {
+        "en": "Is it…?"
+      },
+      "body": {
+        "en": "Put *czy* in front to ask a yes or no question: *czy to jest książka?* Say yes with *tak, to jest książka*, and no with *nie, to nie jest książka*: *nie* goes straight before *jest*."
+      },
+      "table": {
+        "title": {
+          "en": "Is it a book? Yes or no"
+        },
+        "columns": [
+          {
+            "header": "tak"
+          },
+          {
+            "header": "nie"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "to jest książka",
+              "to nie jest książka"
+            ]
+          },
+          {
+            "cells": [
+              "to jest ołówek",
+              "to nie jest ołówek"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-b-e01",
+      "prompt": "czy to jest…?",
+      "options": [
+        {
+          "en": "what is it? what is this?"
+        },
+        {
+          "en": "who is it? who is this?"
+        },
+        {
+          "en": "is it…? is this…? (czy to jest książka?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czy-to-jest"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-b-e02",
+      "prompt": "to nie jest",
+      "options": [
+        {
+          "en": "it isn't; this isn't (to nie jest ołówek)"
+        },
+        {
+          "en": "it is; this is"
+        },
+        {
+          "en": "is it…? is this…? (czy to jest książka?)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "to-nie-jest"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-b-e03",
+      "text": "czy to jest klucz?",
+      "meaning": {
+        "en": "is it a key?"
+      },
+      "distractors": [
+        "co to jest klucz?",
+        "to jest klucz"
+      ],
+      "items": [
+        "czy-to-jest",
+        "klucz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-b-e04",
+      "prompt": {
+        "en": "is it a notebook? Yes, it is a notebook."
+      },
+      "acceptedAnswers": [
+        "czy to jest zeszyt? Tak, to jest zeszyt."
+      ],
+      "distractors": [
+        "nie",
+        "co"
+      ],
+      "items": [
+        "czy-to-jest",
+        "zeszyt",
+        "tak",
+        "to",
+        "byc-jest"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-b-e05",
+      "prompt": "pamiętam",
+      "options": [
+        {
+          "en": "I don't remember"
+        },
+        {
+          "en": "I remember"
+        },
+        {
+          "en": "I understand"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pamietam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-b-e06",
+      "prompt": "tylko",
+      "options": [
+        {
+          "en": "also"
+        },
+        {
+          "en": "very"
+        },
+        {
+          "en": "only"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tylko"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-b-e07",
+      "prompt": {
+        "en": "is it a pencil? No, it isn't a pencil."
+      },
+      "acceptedAnswers": [
+        "czy to jest ołówek? Nie, to nie jest ołówek."
+      ],
+      "distractors": [
+        "tak",
+        "długopis"
+      ],
+      "items": [
+        "czy-to-jest",
+        "olowek",
+        "nie",
+        "to-nie-jest"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-b-e08",
+      "text": "nie, to nie jest torba",
+      "meaning": {
+        "en": "no, it isn't a bag"
+      },
+      "distractors": [
+        "tak, to jest torba",
+        "nie, to jest torba"
+      ],
+      "items": [
+        "nie",
+        "to-nie-jest",
+        "torba"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-b-e09",
+      "text": "Czy to jest tablica? ___, to jest tablica.",
+      "meaning": {
+        "en": "Is it a board? Yes, it is a board."
+      },
+      "gaps": [
+        [
+          "Tak"
+        ]
+      ],
+      "distractors": [
+        "Nie",
+        "Czy"
+      ],
+      "items": [
+        "czy-to-jest",
+        "tablica",
+        "tak",
+        "to",
+        "byc-jest"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-b-e10",
+      "text": "Czy to jest stół? Nie, to ___ jest stół. To jest krzesło.",
+      "meaning": {
+        "en": "Is it a table? No, it isn't a table. It is a chair."
+      },
+      "gaps": [
+        [
+          "nie"
+        ]
+      ],
+      "distractors": [
+        "tak",
+        "czy"
+      ],
+      "items": [
+        "czy-to-jest",
+        "stol",
+        "nie",
+        "to-nie-jest",
+        "krzeslo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-b-e11",
+      "prompt": {
+        "en": "I only have a pen"
+      },
+      "acceptedAnswers": [
+        "mam tylko długopis"
+      ],
+      "distractors": [
+        "ołówek",
+        "też"
+      ],
+      "items": [
+        "miec-mam",
+        "tylko",
+        "dlugopis"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-b-e12",
+      "text": "tak, pamiętam",
+      "meaning": {
+        "en": "yes, I remember"
+      },
+      "distractors": [
+        "nie pamiętam",
+        "tak, rozumiem"
+      ],
+      "items": [
+        "tak",
+        "pamietam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-b-e13",
+      "prompt": {
+        "en": "no, it isn't a key"
+      },
+      "acceptedAnswers": [
+        "nie, to nie jest klucz"
+      ],
+      "items": [
+        "nie",
+        "to-nie-jest",
+        "klucz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l03-b-e14",
+      "lines": [
+        "Czy to jest książka?",
+        "Nie, to nie jest książka. To jest zeszyt.",
+        "A to? Czy to jest długopis?",
+        "Tak, to jest długopis."
+      ],
+      "meaning": {
+        "en": "Two friends look at things on a desk."
+      },
+      "statements": [
+        {
+          "text": "Pierwsza rzecz to książka.",
+          "meaning": {
+            "en": "The first thing is a book."
+          },
+          "true": false
+        },
+        {
+          "text": "Pierwsza rzecz to zeszyt.",
+          "meaning": {
+            "en": "The first thing is a notebook."
+          },
+          "true": true
+        },
+        {
+          "text": "Druga rzecz to długopis.",
+          "meaning": {
+            "en": "The second thing is a pen."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "czy-to-jest",
+        "ksiazka",
+        "nie",
+        "to-nie-jest",
+        "to",
+        "byc-jest",
+        "zeszyt",
+        "a",
+        "dlugopis",
+        "tak"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-b-e15",
+      "acceptedAnswers": [
+        "czy to jest paszport?"
+      ],
+      "meaning": {
+        "en": "is it a passport?"
+      },
+      "items": [
+        "czy-to-jest",
+        "paszport"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-b-e16",
+      "prompt": {
+        "en": "I remember"
+      },
+      "acceptedAnswers": [
+        "pamiętam",
+        "ja pamiętam"
+      ],
+      "items": [
+        "pamietam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-b-e17",
+      "prompt": {
+        "en": "only a pen"
+      },
+      "acceptedAnswers": [
+        "tylko długopis"
+      ],
+      "items": [
+        "tylko",
+        "dlugopis"
+      ]
+    }
+  ]
+}

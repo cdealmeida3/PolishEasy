@@ -1,0 +1,442 @@
+{
+  "id": "kpk1-l03-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Jaki? Jaka? Jakie?",
+    "meaning": {
+      "en": "What is it like?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l03-c2-t01",
+      "before": "kpk1-l03-c2-e01",
+      "title": {
+        "en": "What is it like?"
+      },
+      "body": {
+        "en": "An adjective takes the noun's gender. *Jaki jest ten słownik?* asks about a masculine noun, and the answer ends in *-y*: *ten słownik jest stary*. *Jaka jest ta torba?* asks about a feminine one: *ta torba jest duża*, in *-a*. *Jakie jest to auto?* asks about a neuter one: *to auto jest małe*, in *-e*."
+      },
+      "table": {
+        "title": {
+          "en": "Jaki? Jaka? Jakie?"
+        },
+        "columns": [
+          {
+            "header": "jaki?",
+            "gender": "m"
+          },
+          {
+            "header": "jaka?",
+            "gender": "f"
+          },
+          {
+            "header": "jakie?",
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "now[y]",
+              "now[a]",
+              "now[e]"
+            ]
+          },
+          {
+            "cells": [
+              "dobr[y]",
+              "dobr[a]",
+              "dobr[e]"
+            ]
+          },
+          {
+            "cells": [
+              "duż[y] klucz",
+              "duż[a] mapa",
+              "duż[e] okno"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c2-e01",
+      "prompt": "jaka",
+      "options": [
+        {
+          "en": "what… like (with a neuter noun: jakie jest to auto?)"
+        },
+        {
+          "en": "who"
+        },
+        {
+          "en": "what… like (with a feminine noun: jaka jest ta torba?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jaka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c2-e02",
+      "prompt": "jakie",
+      "options": [
+        {
+          "en": "what… like (with a neuter noun: jakie jest to auto?)"
+        },
+        {
+          "en": "what… like (with a feminine noun: jaka jest ta torba?)"
+        },
+        {
+          "en": "why"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jakie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c2-e03",
+      "prompt": "nowy",
+      "options": [
+        {
+          "en": "old (stary, stara, stare)"
+        },
+        {
+          "en": "new (nowy, nowa, nowe)"
+        },
+        {
+          "en": "small (mały, mała, małe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c2-e04",
+      "prompt": "stary",
+      "options": [
+        {
+          "en": "new (nowy, nowa, nowe)"
+        },
+        {
+          "en": "good (dobry, dobra, dobre)"
+        },
+        {
+          "en": "old (stary, stara, stare)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "stary"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-c2-e05",
+      "prompt": {
+        "en": "this dictionary is old"
+      },
+      "acceptedAnswers": [
+        "ten słownik jest stary"
+      ],
+      "distractors": [
+        "stara",
+        "ta"
+      ],
+      "items": [
+        "ten",
+        "slownik",
+        "byc-jest",
+        "stary"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c2-e06",
+      "prompt": "dobry",
+      "options": [
+        {
+          "en": "good (dobry, dobra, dobre)"
+        },
+        {
+          "en": "bad (zły, zła, złe)"
+        },
+        {
+          "en": "big (duży, duża, duże)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dobry"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c2-e07",
+      "prompt": "zły",
+      "options": [
+        {
+          "en": "good (dobry, dobra, dobre)"
+        },
+        {
+          "en": "bad (zły, zła, złe)"
+        },
+        {
+          "en": "small (mały, mała, małe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zly"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-c2-e08",
+      "text": "ta torba jest nowa",
+      "meaning": {
+        "en": "this bag is new"
+      },
+      "distractors": [
+        "ta torba jest nowy",
+        "ta torba jest nowe"
+      ],
+      "items": [
+        "ta",
+        "torba",
+        "byc-jest",
+        "nowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c2-e09",
+      "prompt": "duży",
+      "options": [
+        {
+          "en": "small (mały, mała, małe)"
+        },
+        {
+          "en": "old (stary, stara, stare)"
+        },
+        {
+          "en": "big (duży, duża, duże)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "duzy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c2-e10",
+      "prompt": "mały",
+      "options": [
+        {
+          "en": "small (mały, mała, małe)"
+        },
+        {
+          "en": "big (duży, duża, duże)"
+        },
+        {
+          "en": "new (nowy, nowa, nowe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "maly"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-c2-e11",
+      "prompt": {
+        "en": "what is this car like? It is small."
+      },
+      "acceptedAnswers": [
+        "jakie jest to auto? Jest małe."
+      ],
+      "distractors": [
+        "jaki",
+        "mały"
+      ],
+      "items": [
+        "jakie",
+        "to",
+        "auto",
+        "byc-jest",
+        "maly"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-c2-e12",
+      "text": "Ten klucz jest ___, a ta mapa jest ___.",
+      "meaning": {
+        "en": "This key is small, and this map is big."
+      },
+      "gaps": [
+        [
+          "mały"
+        ],
+        [
+          "duża"
+        ]
+      ],
+      "distractors": [
+        "mała",
+        "duży"
+      ],
+      "items": [
+        "ten",
+        "klucz",
+        "byc-jest",
+        "maly",
+        "a",
+        "ta",
+        "mapa",
+        "duzy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-c2-e13",
+      "text": "jaka jest ta szkoła?",
+      "meaning": {
+        "en": "what is this school like?"
+      },
+      "distractors": [
+        "jaki jest ta szkoła?",
+        "jakie jest ta szkoła?"
+      ],
+      "items": [
+        "jaka",
+        "ta",
+        "szkola",
+        "byc-jest"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-c2-e14",
+      "text": "To okno jest ___.",
+      "meaning": {
+        "en": "This window is big."
+      },
+      "gaps": [
+        [
+          "duże"
+        ]
+      ],
+      "distractors": [
+        "duży",
+        "duża"
+      ],
+      "items": [
+        "to",
+        "okno",
+        "byc-jest",
+        "duzy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-c2-e15",
+      "prompt": {
+        "en": "this pen is good"
+      },
+      "acceptedAnswers": [
+        "ten długopis jest dobry"
+      ],
+      "items": [
+        "ten",
+        "dlugopis",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-c2-e16",
+      "acceptedAnswers": [
+        "to krzesło jest złe"
+      ],
+      "meaning": {
+        "en": "this chair is bad"
+      },
+      "items": [
+        "to",
+        "krzeslo",
+        "byc-jest",
+        "zly"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l03-c2-e17",
+      "pairs": [
+        {
+          "polish": "nowy",
+          "meaning": {
+            "en": "new"
+          }
+        },
+        {
+          "polish": "stary",
+          "meaning": {
+            "en": "old"
+          }
+        },
+        {
+          "polish": "dobry",
+          "meaning": {
+            "en": "good"
+          }
+        },
+        {
+          "polish": "zły",
+          "meaning": {
+            "en": "bad"
+          }
+        },
+        {
+          "polish": "duży",
+          "meaning": {
+            "en": "big"
+          }
+        },
+        {
+          "polish": "mały",
+          "meaning": {
+            "en": "small"
+          }
+        }
+      ],
+      "items": [
+        "nowy",
+        "stary",
+        "dobry",
+        "zly",
+        "duzy",
+        "maly"
+      ]
+    }
+  ]
+}
