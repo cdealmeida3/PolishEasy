@@ -18,7 +18,7 @@ class PracticeOverAuthoredContentTest {
         course.path.take(days).forEachIndexed { index, dailySet ->
             progress.recordCompleted(dailySet.id, march(2).minusDays((days - 1 - index).toLong()))
         }
-        return CourseEngine(course, progress, clock).practice(InMemoryPracticeProgress(), Random(seed))
+        return CourseEngine(course, progress, clock, oneADay = { true }).practice(InMemoryPracticeProgress(), Random(seed))
     }
 
     @Test

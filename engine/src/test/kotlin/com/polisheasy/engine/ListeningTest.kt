@@ -144,7 +144,7 @@ class ListeningTest {
     @Test
     fun `a choice Exercise whose Polish prompt has a Clip is shown with it, and its feedback has no Clip`() {
         // Day 1 of the fixture course asks for cześć, then do widzenia.
-        val engine = CourseEngine(FixtureCourse.load(clipsFile("cześć")), InMemoryLearnerProgress(), FakeClock())
+        val engine = CourseEngine(FixtureCourse.load(clipsFile("cześć")), InMemoryLearnerProgress(), FakeClock(), oneADay = { true })
         engine.startDailySet()
 
         val hello = (engine.next() as Step.ShowExercise).exercise as ExerciseView.ChooseTranslation
@@ -250,7 +250,7 @@ class ListeningTest {
 
     /** A new Learner whose first Daily Set is [day], in a course with these [clips]. */
     private fun engineWith(day: String, clips: String): CourseEngine =
-        CourseEngine(FixtureCourse.loadWithDayOne(day, clips), InMemoryLearnerProgress(), FakeClock())
+        CourseEngine(FixtureCourse.loadWithDayOne(day, clips), InMemoryLearnerProgress(), FakeClock(), oneADay = { true })
 }
 
 /** A Clip manifest with one Clip for each of [texts], with the ids c1, c2 and so on. */

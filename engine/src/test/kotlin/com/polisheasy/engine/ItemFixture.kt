@@ -95,11 +95,13 @@ class ItemLearner(
     val progress: LearnerProgress = InMemoryLearnerProgress(),
     val clock: FakeClock = FakeClock(),
     private val scheduler: ReviewScheduler? = null,
+    /** The One a day setting. On for the tests written before it existed, which are about its rules. */
+    var oneADay: Boolean = true,
 ) {
     /** Opening the app, or reopening it after it was closed: a new engine over what was saved. */
     fun openApp(): CourseEngine =
-        if (scheduler == null) CourseEngine(course, progress, clock)
-        else CourseEngine(course, progress, clock, scheduler = scheduler)
+        if (scheduler == null) CourseEngine(course, progress, clock, oneADay = { oneADay })
+        else CourseEngine(course, progress, clock, scheduler = scheduler, oneADay = { oneADay })
 
     /**
      * Opens the app on [date] and plays that day's Daily Set, started or resumed, to its Summary.

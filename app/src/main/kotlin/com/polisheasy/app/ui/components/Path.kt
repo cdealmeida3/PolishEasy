@@ -232,13 +232,13 @@ fun TrailMilestone(title: String, reached: Boolean, modifier: Modifier = Modifie
     }
 }
 
-/** What a stop on the Path is: done, the one to play today, or not reachable yet. */
-enum class StopState { Completed, Today, Locked }
+/** What a stop on the Path is: done, the one to play today, one that can be started too, or not reachable yet. */
+enum class StopState { Completed, Today, Open, Locked }
 
 /**
  * One Daily Set on a Unit's trail: its node, its [title] and a [note] under it, with a small
  * [label] above the title for the stop the Learner is at. The node says the [state] by its icon as
- * well as its colour: a tick, a play arrow in a ring, or a lock.
+ * well as its colour: a tick, a play arrow in a ring, a plain play arrow, or a lock.
  *
  * The trail runs up to the stop before unless it is the [first] and down to the next unless it is
  * the [last], and each half is coloured as walked when the Learner has come that way. With
@@ -275,7 +275,9 @@ fun TrailStop(
         Modifier.semantics(mergeDescendants = true) { if (said != null) stateDescription = said }
     } else {
         // No ripple: the node going down is the response.
-        Modifier.clickable(interaction, indication = null, onClickLabel = onClickLabel, role = Role.Button, onClick = onClick)
+        Modifier
+            .clickable(interaction, indication = null, onClickLabel = onClickLabel, role = Role.Button, onClick = onClick)
+            .semantics { if (said != null) stateDescription = said }
     }
     Row(
         // With more under its words, the node stays level with the title and does not drift to the middle.
@@ -333,7 +335,8 @@ fun TrailStop(
 
 /**
  * The node of a stop. One that can be tapped is raised on the bottom edge and goes down with
- * [interaction]; a locked one is flat. Today's has a ring around it.
+ * [interaction]; a locked one is flat. Today's has a ring around it; an open one is the plain
+ * colour of a stop ahead, with a play arrow.
  */
 @Composable
 private fun StopNode(state: StopState, interaction: MutableInteractionSource, node: Dp) {
@@ -357,6 +360,9 @@ private fun StopNode(state: StopState, interaction: MutableInteractionSource, no
             Raised(colors.brand, colors.brandEdge, interaction, node) {
                 Icon(painterResource(R.drawable.ic_play_arrow), contentDescription = null, tint = colors.onBrand, modifier = Modifier.size(Size.feedbackIcon))
             }
+        }
+        StopState.Open -> Raised(scheme.surfaceContainerHighest, scheme.outlineVariant, interaction, node) {
+            Icon(painterResource(R.drawable.ic_play_arrow), contentDescription = null, tint = scheme.onSurfaceVariant, modifier = Modifier.size(Size.icon))
         }
         StopState.Locked -> Box(
             contentAlignment = Alignment.Center,

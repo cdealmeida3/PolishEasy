@@ -4,7 +4,8 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 
 ## The rules every Game keeps
 
-- Practice is open when `CourseEngine.practiceOpen()` says so: today's new or Review-only Daily Set is completed. It locks again at midnight.
+- Practice is open when `CourseEngine.practiceOpen()` says so: always at the Learner's own pace, and with One a day once today's new or Review-only Daily Set is completed, locking again at midnight (ADR-0012).
+- At the Learner's own pace Daily Sets can be completed out of order. An Item belongs to the first Daily Set on the Path that has it (`Learned.introduced`), so a Game grouped by Unit leaves out an Item whose first Daily Set was skipped until that one is done. A Game's pool of Items is every Item of every completed Daily Set, so the Item is still played.
 - A Game uses only what completed Daily Sets taught: their Items, their Tips' tables and the sentences of their Exercises. `Learned` is the one place that works this out.
 - A Round saves nothing but the Best of the way it was played, the way the Game was last played, and one more Round for today. All of it goes to `practice.json` through `PracticeProgress`. Nothing is written to `progress.json`.
 - A Round left unfinished is not kept. There is nothing to resume.

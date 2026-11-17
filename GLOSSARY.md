@@ -21,11 +21,11 @@ A themed group of consecutive Daily Sets within a Level, such as Greetings or Fo
 _Avoid_: Chapter, module, topic
 
 **Path**:
-The ordered sequence of Daily Sets a Learner works through within a Level, Unit by Unit. Every Learner follows the same Path, starting from its first Daily Set whenever they begin.
+The ordered sequence of Daily Sets a Learner works through within a Level, Unit by Unit. Every Learner follows the same Path, starting from its first Daily Set whenever they begin. At the Learner's own pace its order is suggested, not required: any Daily Set on it not yet completed can be started.
 _Avoid_: Curriculum, track, journey
 
 **Daily Set**:
-One day's worth of Exercises on the Path, designed to take 10 to 15 minutes. A Learner can start at most one new Daily Set per calendar day, and the Path advances only when one is completed. It belongs to the calendar day on which it is completed.
+One day's worth of Exercises on the Path, designed to take 10 to 15 minutes. Unless the Learner chose One a day, they can start any Daily Set not yet completed, at any time, and as many in a day as they like; with One a day they can start at most one new Daily Set per calendar day, the next one. Only one is in progress at a time. It belongs to the calendar day on which it is completed.
 _Avoid_: Lesson, session, daily challenge
 
 **New Material**:
@@ -40,7 +40,11 @@ The part of a Daily Set chosen per Learner from Items they previously got wrong 
 _Avoid_: Revision, recap
 
 **Review-only Daily Set**:
-A Daily Set made entirely of Review, offered once per day when the Learner has completed every Daily Set on the Path released so far. It has about 20 Exercises: Items that are due first, then those answered longest ago. It is not on the Path.
+A Daily Set made entirely of Review, offered when the Learner has completed every Daily Set on the Path released so far: again as soon as one is finished, or once per day with One a day. It has about 20 Exercises: Items that are due first, then those answered longest ago. It is not on the Path.
+
+**One a day**:
+The setting that brings back one new Daily Set per calendar day: only the next one can be started, a Review-only Daily Set is offered once a day, and Practice opens once today's is done. It is off until the Learner turns it on; off, they go at their own pace. The Streak counts the same either way.
+_Avoid_: Pacing mode, daily limit
 
 **Tip**:
 A short explanation of new grammar or words shown before the Exercises that rely on it.
@@ -51,7 +55,7 @@ Doing an already completed Daily Set again, started from the Path screen. It has
 _Avoid_: Redo, practice mode, Practice (which is the Games)
 
 **Practice**:
-The part of the app outside the Path where the Learner plays Games with what they have already learned. It opens each day once today's new or Review-only Daily Set is completed and stays open until midnight. Nothing in it advances the Path, counts toward the Streak or affects Review.
+The part of the app outside the Path where the Learner plays Games with what they have already learned. It is always open, unless the Learner chose One a day: then it opens each day once today's new or Review-only Daily Set is completed and stays open until midnight. Nothing in it advances the Path, counts toward the Streak or affects Review.
 _Avoid_: Arcade, extras, practice mode
 
 **Game**:
@@ -74,7 +78,7 @@ _Avoid_: Icon, illustration, emoji
 The number of consecutive calendar days on which the Learner completed a new or Review-only Daily Set. Until today's is completed it is the Streak earned up to yesterday; a day with none resets it to zero. A Replay does not count.
 
 **Reminder**:
-One notification a day, at a time the Learner chooses, sent only while today's new or Review-only Daily Set is not completed. It is off until the Learner turns it on. A Replay does not count as completing today's.
+One notification a day, at a time the Learner chooses, sent only while no new or Review-only Daily Set has been completed today and something is left to do. It is off until the Learner turns it on. A Replay does not count as completing today's.
 _Avoid_: Alert, alarm, push notification
 
 **Exercise**:

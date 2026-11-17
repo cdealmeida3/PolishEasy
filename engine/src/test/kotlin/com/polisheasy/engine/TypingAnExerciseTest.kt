@@ -173,7 +173,7 @@ class TypingAnExerciseTest {
 
     /** A new Learner whose first Daily Set is one typing Exercise, "thank you", with these Accepted Answers. */
     private fun newLearnerEngineWithTypingDay(vararg accepted: String): CourseEngine =
-        CourseEngine(FixtureCourse.loadWithDayOne(typingDay(*accepted)), InMemoryLearnerProgress(), FakeClock())
+        CourseEngine(FixtureCourse.loadWithDayOne(typingDay(*accepted)), InMemoryLearnerProgress(), FakeClock(), oneADay = { true })
 }
 
 /** Day 1 as a single typing Exercise, "thank you", with these Accepted Answers. */

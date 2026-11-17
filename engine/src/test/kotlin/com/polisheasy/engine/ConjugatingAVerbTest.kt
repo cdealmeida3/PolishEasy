@@ -168,7 +168,7 @@ class ConjugatingAVerbTest {
 
     @Test
     fun `a Tip without a conjugation table is shown without one`() {
-        val step = CourseEngine(FixtureCourse.load(), InMemoryLearnerProgress(), FakeClock()).startDailySet()
+        val step = CourseEngine(FixtureCourse.load(), InMemoryLearnerProgress(), FakeClock(), oneADay = { true }).startDailySet()
 
         assertEquals(null, (step as Step.ShowTip).tip.conjugation)
     }
@@ -184,7 +184,7 @@ class ConjugatingAVerbTest {
 
     /** A new Learner whose first Daily Set is [day]. */
     private fun engineWith(day: String): CourseEngine =
-        CourseEngine(FixtureCourse.loadWithDayOne(day), InMemoryLearnerProgress(), FakeClock())
+        CourseEngine(FixtureCourse.loadWithDayOne(day), InMemoryLearnerProgress(), FakeClock(), oneADay = { true })
 }
 
 /** The six forms of być, by person as written in content. */

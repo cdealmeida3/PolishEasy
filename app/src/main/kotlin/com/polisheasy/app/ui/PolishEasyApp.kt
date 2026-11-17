@@ -100,6 +100,14 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
                     reminder = screen.reminder,
                     unitCompleted = screen.unitCompleted,
                     onRemind = viewModel::acceptReminder,
+                    onStartNext = if (screen.startNext) {
+                        {
+                            player.stop()
+                            viewModel.startNext()
+                        }
+                    } else {
+                        null
+                    },
                 )
             }
         }
@@ -250,10 +258,20 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
                 streakRaisedFrom = showing.streakRaisedFrom,
                 onReplayToday = if (showing.replayToday) viewModel::replayToday else null,
                 onPractice = viewModel::openPractice,
+                doneToday = showing.doneToday,
+                practiceOpen = showing.practiceOpen,
             )
             is Screen.Path -> {
                 BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)
-                PathScreen(showing.path, onReplay = viewModel::replay, onOpenTodays = viewModel::openTodays, today = showing.today, started = showing.started)
+                PathScreen(
+                    showing.path,
+                    onReplay = viewModel::replay,
+                    onOpenTodays = viewModel::openTodays,
+                    today = showing.today,
+                    started = showing.started,
+                    onStartChosen = viewModel::startChosen,
+                    oneADay = showing.oneADay,
+                )
             }
             is Screen.Practice -> {
                 BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)
@@ -276,6 +294,8 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
                     onReminderTime = viewModel::setReminderTime,
                     onSoundOn = viewModel::setSoundOn,
                     onReport = { reportMistake(context, exerciseId = null) },
+                    oneADay = showing.oneADay,
+                    onOneADay = viewModel::setOneADay,
                 )
             }
             else -> Unit

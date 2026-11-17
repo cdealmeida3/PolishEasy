@@ -159,7 +159,7 @@ class BuildingFromWordTilesTest {
 
     /** A new Learner whose first Daily Set is one word tiles Exercise. */
     private fun engineWith(accepted: List<String>, distractors: List<String> = emptyList()): CourseEngine =
-        CourseEngine(FixtureCourse.loadWithDayOne(tilesDay(accepted, distractors)), InMemoryLearnerProgress(), FakeClock())
+        CourseEngine(FixtureCourse.loadWithDayOne(tilesDay(accepted, distractors)), InMemoryLearnerProgress(), FakeClock(), oneADay = { true })
 }
 
 /** Day 1 as a single word tiles Exercise, "good morning, how are you?". */

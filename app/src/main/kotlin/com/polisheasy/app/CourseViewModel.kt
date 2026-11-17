@@ -59,20 +59,33 @@ sealed interface Screen {
         val soFar: SoFarView = SoFarView(0, 0, 0),
         /** Whether a Daily Set of the Path was completed today, which can be replayed from here. */
         val replayToday: Boolean = false,
+        /** Whether a new or Review-only Daily Set was completed today, so today counts for the Streak already. */
+        val doneToday: Boolean = false,
+        /** Whether Practice is open now. */
+        val practiceOpen: Boolean = false,
     ) : Screen
 
-    /** [today] is today's Daily Set as Home names it, for the stop the Learner is at; [started] when it is in progress. */
-    data class Path(val path: PathView, val today: NextDailySetView? = null, val started: Boolean = false) : Screen
+    /**
+     * [today] is today's Daily Set as Home names it, for the stop the Learner is at; [started] when it
+     * is in progress. [oneADay] when one new Daily Set opens a day, so the stops ahead are locked.
+     */
+    data class Path(
+        val path: PathView,
+        val today: NextDailySetView? = null,
+        val started: Boolean = false,
+        val oneADay: Boolean = true,
+    ) : Screen
 
     /**
      * [notificationsAllowed] is whether Android lets the app show notifications at all.
-     * [soundOn] is whether the app may play sound.
+     * [soundOn] is whether the app may play sound. [oneADay] is whether one new Daily Set opens a day.
      */
     data class Settings(
         val reminderEnabled: Boolean,
         val reminderTime: LocalTime,
         val notificationsAllowed: Boolean,
         val soundOn: Boolean,
+        val oneADay: Boolean = false,
     ) : Screen
 
     /** [shown] is different for each step shown. [replay] when the Tip belongs to a Replay. */
@@ -136,6 +149,8 @@ sealed interface Screen {
         val reminder: ReminderOffer? = null,
         /** The Unit this Daily Set completed, or null when it completed none. */
         val unitCompleted: UnitCompletedView? = null,
+        /** Whether the Summary offers to start the next Daily Set straight away, as it does at the Learner's own pace. */
+        val startNext: Boolean = false,
     ) : Screen
 }
 
@@ -155,6 +170,7 @@ fun courseEngine(context: Context): CourseEngine = CourseEngine(
     },
     progress = FileLearnerProgress(File(context.filesDir, "progress.json")),
     clock = Clock.systemDefaultZone(),
+    oneADay = Settings(context).let { settings -> { settings.oneADay } },
 )
 
 class CourseViewModel(
@@ -195,7 +211,12 @@ class CourseViewModel(
         screen = path()
     }
 
-    private fun path() = Screen.Path(engine.path(), engine.nextDailySet(), started = engine.today() is Today.InProgress)
+    private fun path() = Screen.Path(
+        engine.path(),
+        engine.nextDailySet(),
+        started = engine.today() is Today.InProgress,
+        oneADay = settings.oneADay,
+    )
 
     fun replay(dailySetId: String) {
         replayFromHome = false
@@ -207,6 +228,17 @@ class CourseViewModel(
         val dailySetId = engine.completedToday() ?: return
         replayFromHome = true
         show(engine.startReplay(dailySetId, sound = settings.soundOn))
+    }
+
+    /**
+     * A Daily Set the Learner chose on the Path, at their own pace: started, or continued when it
+     * is the one in progress. Any other one in progress is forgotten; the Path has asked first.
+     */
+    fun startChosen(dailySetId: String) = show(engine.startDailySet(sound = settings.soundOn, dailySetId = dailySetId))
+
+    /** "Start the next one" on a Summary: the next Daily Set, straight away. */
+    fun startNext() {
+        if (engine.today() == Today.DailySetAvailable) startDailySet() else leaveDailySet()
     }
 
     /** Today's Daily Set tapped on the Path: started or continued, as from Home. */
@@ -331,6 +363,15 @@ class CourseViewModel(
         screen = summary.copy(reminder = offer.copy(on = true))
     }
 
+    /**
+     * Turns One a day on or off. It takes effect at once: the engine and the Reminder read it each
+     * time they decide, so there is nothing to re-arm.
+     */
+    fun setOneADay(on: Boolean) {
+        settings.oneADay = on
+        screen = settingsScreen()
+    }
+
     /** Turns sound on or off. It takes effect when a Daily Set is next started, continued or replayed. */
     fun setSoundOn(on: Boolean) {
         settings.soundOn = on
@@ -397,6 +438,8 @@ class CourseViewModel(
         engine.nextDailySet(),
         soFar = engine.soFar(),
         replayToday = engine.completedToday() != null,
+        doneToday = engine.doneToday(),
+        practiceOpen = engine.practiceOpen(),
     )
 
     /** The Reminder for a Summary to offer: once, at the end of a Daily Set that counted, while it is off. */
@@ -413,6 +456,7 @@ class CourseViewModel(
             .getSystemService(NotificationManager::class.java)
             .areNotificationsEnabled(),
         soundOn = settings.soundOn,
+        oneADay = settings.oneADay,
     )
 
     private fun show(step: Step) {
@@ -438,6 +482,8 @@ class CourseViewModel(
                 week = engine.thisWeek(),
                 reminder = reminderOffer(step.replay),
                 unitCompleted = engine.unitCompleted(),
+                // A Daily Set can be started now only at the Learner's own pace, once one is done today.
+                startNext = !step.replay && !step.reviewOnly && engine.today() == Today.DailySetAvailable,
             ).also { streakRaised = null }
         }
     }

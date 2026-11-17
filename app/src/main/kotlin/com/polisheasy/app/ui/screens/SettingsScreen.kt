@@ -45,8 +45,9 @@ import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
 /**
- * Settings: a card for the Reminder's switch and time, one for the Sound switch, and one for "Report a mistake". Turning the Reminder on is the
- * only moment the app asks for permission to show notifications.
+ * Settings: a card for the Reminder's switch and time, one for the Sound switch, one for the One a
+ * day switch, and one for "Report a mistake". Turning the Reminder on is the only moment the app
+ * asks for permission to show notifications.
  */
 @Composable
 internal fun SettingsScreen(
@@ -58,6 +59,8 @@ internal fun SettingsScreen(
     onReminderTime: (LocalTime) -> Unit,
     onSoundOn: (Boolean) -> Unit,
     onReport: () -> Unit,
+    oneADay: Boolean = false,
+    onOneADay: (Boolean) -> Unit = {},
 ) {
     val context = LocalContext.current
     // Whether the Learner refused the permission here, so the screen can say why the switch stayed off.
@@ -108,6 +111,16 @@ internal fun SettingsScreen(
                     note = stringResource(R.string.settings_sound_note),
                     checked = soundOn,
                     onCheckedChange = onSoundOn,
+                )
+            }
+            Spacer(Modifier.height(Space.m))
+            SettingsCard {
+                SwitchSetting(
+                    icon = R.drawable.ic_calendar_today,
+                    label = stringResource(R.string.settings_one_a_day),
+                    note = stringResource(R.string.settings_one_a_day_note),
+                    checked = oneADay,
+                    onCheckedChange = onOneADay,
                 )
             }
             Spacer(Modifier.height(Space.m))

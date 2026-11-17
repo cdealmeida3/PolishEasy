@@ -33,6 +33,11 @@
     <string name="home_streak_start_note">Finish today\'s Daily Set to light it.</string>
     <string name="home_practice">Play a Game</string>
     <string name="home_replay_today">Replay today\'s Daily Set</string>
+    <string name="home_keep_going_headline">Today\'s done. Keep going?</string>
+    <string name="home_keep_going_title">Today\'s done</string>
+    <string name="home_keep_going">Today counts for your Streak. Go on with the next one whenever you like.</string>
+    <string name="home_keep_going_review_only">Today counts for your Streak. Another Review is ready whenever you like.</string>
+    <string name="home_streak_note_safe">Your Streak is safe for today.</string>
     <string name="home_so_far">Your Polish so far</string>
     <plurals name="home_so_far_words_label">
         <item quantity="one">word</item>
@@ -61,12 +66,12 @@
     <string name="welcome_greeting" translatable="false">Cześć!</string>
     <string name="welcome_greeting_meaning">hello</string>
     <string name="welcome_title">Polish, a little every day</string>
-    <string name="welcome_point_daily">One Daily Set a day</string>
-    <string name="welcome_point_daily_note">A short lesson, and then you\'re done for the day.</string>
+    <string name="welcome_point_daily">Short Daily Sets</string>
+    <string name="welcome_point_daily_note">A short lesson: a few new words, a Tip and a quick Review.</string>
     <string name="welcome_point_minutes">About five minutes</string>
-    <string name="welcome_point_minutes_note">A few new words, a Tip and a quick Review.</string>
-    <string name="welcome_point_tomorrow">The next one unlocks tomorrow</string>
-    <string name="welcome_point_tomorrow_note">Come back each day and your Streak grows.</string>
+    <string name="welcome_point_minutes_note">Each one fits into a coffee break.</string>
+    <string name="welcome_point_tomorrow">Go at your own pace</string>
+    <string name="welcome_point_tomorrow_note">Do one, or several, any day. Each day with one grows your Streak.</string>
     <string name="welcome_start">Start my first Daily Set</string>
     <string name="summary_reminder_title">Want a nudge tomorrow?</string>
     <string name="summary_reminder_note">One notification at %1$s, only if your Daily Set isn\'t done.</string>
@@ -149,6 +154,7 @@
     <string name="summary_streak_note_first">Your Streak has started.</string>
     <string name="summary_streak_note">One more day in a row.</string>
     <string name="summary_back_home">Done</string>
+    <string name="summary_start_next">Start the next one</string>
     <string name="nav_home">Home</string>
     <string name="nav_path">Path</string>
     <string name="path_unit">Unit %1$d · %2$s</string>
@@ -163,9 +169,17 @@
     <string name="path_completed">Completed</string>
     <string name="path_today">Today</string>
     <string name="path_locked">Locked</string>
+    <string name="path_open">Open</string>
+    <string name="path_replace_title">Start this one instead?</string>
+    <string name="path_replace_note">Your progress in %1$s will be lost.</string>
+    <string name="path_replace_start">Start</string>
     <plurals name="path_unit_ahead">
         <item quantity="one">%1$d Daily Set · Locked</item>
         <item quantity="other">%1$d Daily Sets · Locked</item>
+    </plurals>
+    <plurals name="path_unit_ahead_open">
+        <item quantity="one">%1$d Daily Set</item>
+        <item quantity="other">%1$d Daily Sets</item>
     </plurals>
     <string name="path_unit_open">Show the Daily Sets</string>
     <string name="path_unit_close">Hide the Daily Sets</string>
@@ -186,6 +200,8 @@
     <string name="settings_open_android_settings">Open Android settings</string>
     <string name="settings_sound">Sound</string>
     <string name="settings_sound_note">When off, nothing is played and listening Exercises become reading ones.</string>
+    <string name="settings_one_a_day">One new Daily Set a day</string>
+    <string name="settings_one_a_day_note">Off: learn at your own pace, as many as you like. On: the next one opens tomorrow.</string>
     <string name="settings_report_note">Spotted something wrong? Tell us by email.</string>
     <string name="settings_version">Version %1$s</string>
     <string name="action_ok">OK</string>
