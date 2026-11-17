@@ -1,0 +1,389 @@
+{
+  "id": "kpk1-l02-d4",
+  "section": {
+    "letter": "D",
+    "heading": "Skąd jesteś? Gdzie mieszkasz?",
+    "meaning": {
+      "en": "Where are you from? Where do you live?"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-d4-t01",
+      "before": "kpk1-l02-d4-e01",
+      "title": {
+        "en": "Verbs in -m and -sz"
+      },
+      "body": {
+        "en": "Many verbs go like *mam* and *mieszkam*: *-m* for \"I\" and *-sz* for \"you\". So *grać* (to play) is *gram*, *grasz*, *gra*; *czytać* (to read) is *czytam*, *czytasz*; and *rozumieć* is *rozumiem*, *rozumiesz*."
+      },
+      "conjugation": {
+        "verb": "grać",
+        "meaning": {
+          "en": "to play"
+        },
+        "forms": {
+          "ja": "gram",
+          "ty": "grasz",
+          "on": "gra",
+          "my": "gramy",
+          "wy": "gracie",
+          "oni": "grają"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l02-d4-t02",
+      "before": "kpk1-l02-d4-e05",
+      "title": {
+        "en": "What do you like doing?"
+      },
+      "body": {
+        "en": "*Gram w tenisa* is \"I play tennis\". *Czytam* is \"I read\", *oglądam serial* \"I watch a series\", and *kocham* is \"I love\": *kocham Kraków*. These are hobbies: *to moje hobby*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d4-e01",
+      "prompt": "gram",
+      "options": [
+        {
+          "en": "I read"
+        },
+        {
+          "en": "I play"
+        },
+        {
+          "en": "I watch"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "grac-gram"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d4-e02",
+      "prompt": "grasz",
+      "options": [
+        {
+          "en": "I play"
+        },
+        {
+          "en": "you live (one friend)"
+        },
+        {
+          "en": "you play (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "grac-grasz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l02-d4-e03",
+      "verb": "grać",
+      "meaning": {
+        "en": "to play"
+      },
+      "person": "ja",
+      "acceptedAnswers": [
+        "gram"
+      ],
+      "items": [
+        "grac-gram"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d4-e04",
+      "prompt": "rozumiem",
+      "options": [
+        {
+          "en": "I understand"
+        },
+        {
+          "en": "I don't understand"
+        },
+        {
+          "en": "I play"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rozumiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d4-e05",
+      "prompt": "w tenisa",
+      "options": [
+        {
+          "en": "a TV series"
+        },
+        {
+          "en": "tennis (after grać: gram w tenisa)"
+        },
+        {
+          "en": "a book"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-tenisa"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l02-d4-e06",
+      "verb": "grać",
+      "meaning": {
+        "en": "to play"
+      },
+      "person": "ty",
+      "sentence": "Czy ty ___ w tenisa?",
+      "sentenceMeaning": {
+        "en": "Do you play tennis? (one friend)"
+      },
+      "acceptedAnswers": [
+        "grasz"
+      ],
+      "items": [
+        "czy",
+        "ty",
+        "grac-grasz",
+        "w-tenisa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-d4-e07",
+      "text": "gram w tenisa",
+      "meaning": {
+        "en": "I play tennis"
+      },
+      "distractors": [
+        "grasz w tenisa",
+        "czytam tekst"
+      ],
+      "items": [
+        "grac-gram",
+        "w-tenisa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d4-e08",
+      "prompt": "czytam",
+      "options": [
+        {
+          "en": "I play"
+        },
+        {
+          "en": "I love"
+        },
+        {
+          "en": "I read"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czytac-czytam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d4-e09",
+      "prompt": "oglądam",
+      "options": [
+        {
+          "en": "I watch"
+        },
+        {
+          "en": "I read"
+        },
+        {
+          "en": "I live"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ogladac-ogladam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d4-e10",
+      "prompt": "serial",
+      "options": [
+        {
+          "en": "a text"
+        },
+        {
+          "en": "a TV series"
+        },
+        {
+          "en": "tennis (after grać: gram w tenisa)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "serial"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-d4-e11",
+      "prompt": {
+        "en": "I watch a series"
+      },
+      "acceptedAnswers": [
+        "oglądam serial"
+      ],
+      "distractors": [
+        "czytam",
+        "gram"
+      ],
+      "items": [
+        "ogladac-ogladam",
+        "serial"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d4-e12",
+      "prompt": "kocham",
+      "options": [
+        {
+          "en": "I watch"
+        },
+        {
+          "en": "I have"
+        },
+        {
+          "en": "I love"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kochac-kocham"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d4-e13",
+      "prompt": "Kraków",
+      "options": [
+        {
+          "en": "Kraków (a city in Poland)"
+        },
+        {
+          "en": "Warsaw (the capital of Poland)"
+        },
+        {
+          "en": "London (a city in England)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "krakow"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-d4-e14",
+      "acceptedAnswers": [
+        "kocham Kraków"
+      ],
+      "meaning": {
+        "en": "I love Kraków"
+      },
+      "items": [
+        "kochac-kocham",
+        "krakow"
+      ],
+      "readingAnswers": [
+        "ja kocham Kraków"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-d4-e15",
+      "prompt": {
+        "en": "do you play tennis? (one friend)"
+      },
+      "acceptedAnswers": [
+        "czy grasz w tenisa?",
+        "grasz w tenisa?"
+      ],
+      "distractors": [
+        "gram",
+        "czytasz"
+      ],
+      "items": [
+        "czy",
+        "grac-grasz",
+        "w-tenisa"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-d4-e16",
+      "prompt": {
+        "en": "I read a text"
+      },
+      "acceptedAnswers": [
+        "czytam tekst",
+        "ja czytam tekst"
+      ],
+      "items": [
+        "czytac-czytam",
+        "tekst"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-d4-e17",
+      "text": "czytam dialog",
+      "meaning": {
+        "en": "I am reading a dialogue"
+      },
+      "distractors": [
+        "czytam tekst",
+        "gram w tenisa"
+      ],
+      "items": [
+        "czytac-czytam",
+        "dialog"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-d4-e18",
+      "prompt": {
+        "en": "I play tennis, and you? (one friend)"
+      },
+      "acceptedAnswers": [
+        "gram w tenisa, a ty?"
+      ],
+      "distractors": [
+        "grasz",
+        "serial"
+      ],
+      "items": [
+        "grac-gram",
+        "w-tenisa",
+        "a-ty"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "id": "kpk1-l02-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-g-t01",
+      "before": "kpk1-l02-g-e01",
+      "title": {
+        "en": "Chapter 2 in the book's exercises"
+      },
+      "body": {
+        "en": "Now the chapter in the book's own exercises: join each phrase to its meaning, fill the gaps from the sticky notes, put a dialogue in order, and say what is *prawda*, true, or *nieprawda*, false."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l02-g-e01",
+      "pairs": [
+        {
+          "polish": "co nowego?",
+          "meaning": {
+            "en": "what's new?"
+          }
+        },
+        {
+          "polish": "po staremu",
+          "meaning": {
+            "en": "same as ever"
+          }
+        },
+        {
+          "polish": "nic nowego",
+          "meaning": {
+            "en": "nothing new"
+          }
+        },
+        {
+          "polish": "wszystko dobrze",
+          "meaning": {
+            "en": "everything is fine"
+          }
+        },
+        {
+          "polish": "co u ciebie?",
+          "meaning": {
+            "en": "how are things with you? (one friend)"
+          }
+        }
+      ],
+      "items": [
+        "co-nowego",
+        "po-staremu",
+        "nic-nowego",
+        "wszystko-dobrze",
+        "co-u-ciebie"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l02-g-e02",
+      "lines": [
+        "Dzień dobry! Co u pana słychać?",
+        "Dzień dobry! Po staremu, a u pani?",
+        "Dziękuję, wszystko w porządku."
+      ],
+      "meaning": {
+        "en": "Pani Ewa meets Pan Adam in the street."
+      },
+      "items": [
+        "dzien-dobry",
+        "co-u-pana-slychac",
+        "po-staremu",
+        "a-u-pani",
+        "dziekuje",
+        "wszystko-w-porzadku"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l02-g-e03",
+      "lines": [
+        "Cześć! Co u ciebie?",
+        "Cześć! Wszystko dobrze. A u ciebie?",
+        "Nic nowego."
+      ],
+      "meaning": {
+        "en": "Two friends meet before class."
+      },
+      "items": [
+        "czesc",
+        "co-u-ciebie",
+        "wszystko-dobrze",
+        "a-u-ciebie",
+        "nic-nowego"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l02-g-e04",
+      "text": "Skąd pani ___? ___ z Hiszpanii.",
+      "meaning": {
+        "en": "Where are you from? (to a woman, formal) I am from Spain."
+      },
+      "gaps": [
+        [
+          "jest"
+        ],
+        [
+          "Jestem"
+        ]
+      ],
+      "distractors": [
+        "Jesteś"
+      ],
+      "items": [
+        "skad-pani-jest",
+        "byc-jestem",
+        "z-hiszpanii"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l02-g-e05",
+      "pairs": [
+        {
+          "polish": "panowie",
+          "meaning": {
+            "en": "gentlemen"
+          }
+        },
+        {
+          "polish": "panie",
+          "meaning": {
+            "en": "ladies"
+          }
+        },
+        {
+          "polish": "państwo",
+          "meaning": {
+            "en": "Mr and Mrs"
+          }
+        },
+        {
+          "polish": "oni",
+          "meaning": {
+            "en": "they (men, or men and women)"
+          }
+        },
+        {
+          "polish": "one",
+          "meaning": {
+            "en": "they (women)"
+          }
+        },
+        {
+          "polish": "ono",
+          "meaning": {
+            "en": "it"
+          }
+        }
+      ],
+      "items": [
+        "panowie",
+        "panie",
+        "panstwo",
+        "oni",
+        "one",
+        "ono"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l02-g-e06",
+      "text": "Ja ___ w Warszawie, a ty gdzie ___?",
+      "meaning": {
+        "en": "I live in Warsaw, and where do you live? (one friend)"
+      },
+      "gaps": [
+        [
+          "mieszkam"
+        ],
+        [
+          "mieszkasz"
+        ]
+      ],
+      "distractors": [
+        "mieszka",
+        "mieszkają"
+      ],
+      "items": [
+        "ja",
+        "mieszkac-mieszkam",
+        "w-warszawie",
+        "a",
+        "ty",
+        "gdzie",
+        "mieszkac-mieszkasz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l02-g-e07",
+      "lines": [
+        "Cześć, jestem Ewa. Jestem z Polski.",
+        "Mieszkam w Londynie, ale kocham Kraków.",
+        "Gram w tenisa. To moje hobby."
+      ],
+      "meaning": {
+        "en": "Ewa says who she is."
+      },
+      "statements": [
+        {
+          "text": "Ewa jest z Polski.",
+          "meaning": {
+            "en": "Ewa is from Poland."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa mieszka w Krakowie.",
+          "meaning": {
+            "en": "Ewa lives in Kraków."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa mieszka w Londynie.",
+          "meaning": {
+            "en": "Ewa lives in London."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "czesc",
+        "byc-jestem",
+        "ewa",
+        "z-polski",
+        "mieszkac-mieszkam",
+        "w-londynie",
+        "ale",
+        "kochac-kocham",
+        "krakow",
+        "grac-gram",
+        "w-tenisa",
+        "to",
+        "moje",
+        "hobby"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l02-g-e08",
+      "pairs": [
+        {
+          "polish": "z Niemiec",
+          "meaning": {
+            "en": "from Germany"
+          }
+        },
+        {
+          "polish": "z Hiszpanii",
+          "meaning": {
+            "en": "from Spain"
+          }
+        },
+        {
+          "polish": "z Francji",
+          "meaning": {
+            "en": "from France"
+          }
+        },
+        {
+          "polish": "z Włoch",
+          "meaning": {
+            "en": "from Italy"
+          }
+        },
+        {
+          "polish": "z Anglii",
+          "meaning": {
+            "en": "from England"
+          }
+        }
+      ],
+      "items": [
+        "z-niemiec",
+        "z-hiszpanii",
+        "z-francji",
+        "z-wloch",
+        "z-anglii"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l02-g-e09",
+      "lines": [
+        "Skąd pan jest?",
+        "Jestem z Niemiec, ale mieszkam w Warszawie.",
+        "A dlaczego pan uczy się polskiego?",
+        "Bo moja żona jest z Polski."
+      ],
+      "meaning": {
+        "en": "At the school office."
+      },
+      "statements": [
+        {
+          "text": "Pan jest z Niemiec.",
+          "meaning": {
+            "en": "He is from Germany."
+          },
+          "true": true
+        },
+        {
+          "text": "Pan mieszka w Berlinie.",
+          "meaning": {
+            "en": "He lives in Berlin."
+          },
+          "true": false
+        },
+        {
+          "text": "Jego żona jest z Polski.",
+          "meaning": {
+            "en": "His wife is from Poland."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "skad-pan-jest",
+        "byc-jestem",
+        "z-niemiec",
+        "ale",
+        "mieszkac-mieszkam",
+        "w-warszawie",
+        "a",
+        "dlaczego",
+        "pan",
+        "uczy-sie-polskiego",
+        "bo",
+        "moja",
+        "zona",
+        "z-polski",
+        "byc-jest"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l02-g-e10",
+      "text": "Uczę się polskiego, ___ pracować w Polsce.",
+      "meaning": {
+        "en": "I am learning Polish to work in Poland."
+      },
+      "gaps": [
+        [
+          "żeby"
+        ]
+      ],
+      "distractors": [
+        "bo",
+        "i"
+      ],
+      "items": [
+        "ucze-sie-polskiego",
+        "zeby",
+        "pracowac",
+        "w-polsce"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l02-g-e11",
+      "pairs": [
+        {
+          "polish": "gram",
+          "meaning": {
+            "en": "I play"
+          }
+        },
+        {
+          "polish": "czytam",
+          "meaning": {
+            "en": "I read"
+          }
+        },
+        {
+          "polish": "oglądam",
+          "meaning": {
+            "en": "I watch"
+          }
+        },
+        {
+          "polish": "kocham",
+          "meaning": {
+            "en": "I love"
+          }
+        },
+        {
+          "polish": "mieszkam",
+          "meaning": {
+            "en": "I live"
+          }
+        }
+      ],
+      "items": [
+        "grac-gram",
+        "czytac-czytam",
+        "ogladac-ogladam",
+        "kochac-kocham",
+        "mieszkac-mieszkam"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l02-g-e12",
+      "text": "Jaki jest twój ___ telefonu?",
+      "meaning": {
+        "en": "What is your phone number? (one friend)"
+      },
+      "gaps": [
+        [
+          "numer"
+        ]
+      ],
+      "distractors": [
+        "adres",
+        "mieszkanie"
+      ],
+      "items": [
+        "jaki",
+        "byc-jest",
+        "twoj",
+        "numer-telefonu"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l02-g-e13",
+      "pairs": [
+        {
+          "polish": "adres",
+          "meaning": {
+            "en": "an address"
+          }
+        },
+        {
+          "polish": "ulica",
+          "meaning": {
+            "en": "a street"
+          }
+        },
+        {
+          "polish": "mieszkanie",
+          "meaning": {
+            "en": "a flat"
+          }
+        },
+        {
+          "polish": "imię",
+          "meaning": {
+            "en": "a first name"
+          }
+        },
+        {
+          "polish": "nazwisko",
+          "meaning": {
+            "en": "a surname"
+          }
+        }
+      ],
+      "items": [
+        "adres",
+        "ulica",
+        "mieszkanie",
+        "imie",
+        "nazwisko"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-g-e14",
+      "acceptedAnswers": [
+        "skąd jesteś?"
+      ],
+      "meaning": {
+        "en": "where are you from? (one friend)"
+      },
+      "items": [
+        "skad-jestes"
+      ],
+      "readingAnswers": [
+        "skąd ty jesteś?"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l02-g-e15",
+      "text": "Dzień dobry! Co u ___ słychać?",
+      "meaning": {
+        "en": "Good morning! How are things with you? (to a woman, formal)"
+      },
+      "gaps": [
+        [
+          "pani"
+        ]
+      ],
+      "distractors": [
+        "ciebie",
+        "pana"
+      ],
+      "items": [
+        "dzien-dobry",
+        "co-u-pani-slychac"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-g-e16",
+      "acceptedAnswers": [
+        "dziękuję, wszystko dobrze, a u pana?"
+      ],
+      "meaning": {
+        "en": "thank you, everything is fine, and with you? (to a man, formal)"
+      },
+      "items": [
+        "dziekuje",
+        "wszystko-dobrze",
+        "a-u-pana"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-g-e17",
+      "acceptedAnswers": [
+        "dwanaście przez dwa"
+      ],
+      "meaning": {
+        "en": "12/2, in an address"
+      },
+      "items": [
+        "dwanascie",
+        "przez",
+        "dwa"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-g-e18",
+      "prompt": {
+        "en": "I watch a series and I read"
+      },
+      "acceptedAnswers": [
+        "oglądam serial i czytam",
+        "czytam i oglądam serial",
+        "ja oglądam serial i czytam"
+      ],
+      "items": [
+        "ogladac-ogladam",
+        "serial",
+        "i",
+        "czytac-czytam"
+      ]
+    }
+  ]
+}

@@ -266,6 +266,557 @@
         8,
         8
       ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-029-1",
+      "track": 29,
+      "statement": "Pani jest z Anglii.",
+      "meaning": {
+        "en": "The woman is from England."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l02-029-2",
+      "track": 29,
+      "question": "Ulica Długa: jaki numer?",
+      "meaning": {
+        "en": "Długa Street: what number?"
+      },
+      "acceptedAnswers": [
+        "3",
+        "trzy"
+      ],
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-030-1",
+      "track": 30,
+      "statement": "Pan jest z Niemiec.",
+      "meaning": {
+        "en": "The man is from Germany."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l02-030-2",
+      "track": 30,
+      "question": "Jaki jest numer mieszkania?",
+      "meaning": {
+        "en": "What is the number of the flat?"
+      },
+      "acceptedAnswers": [
+        "3",
+        "trzy"
+      ],
+      "lines": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-031-1",
+      "track": 31,
+      "statement": "To jest rozmowa nieoficjalna.",
+      "meaning": {
+        "en": "This is an informal conversation."
+      },
+      "answer": true
+    },
+    {
+      "type": "choose",
+      "id": "l02-031-2",
+      "track": 31,
+      "question": "Co mówi nauczycielka zamiast „a ty?”?",
+      "meaning": {
+        "en": "What does the teacher say instead of “a ty?”?"
+      },
+      "options": [
+        "A u ciebie?",
+        "A u pana?",
+        "Co nowego?"
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-032-1",
+      "track": 32,
+      "statement": "To jest dialog oficjalny.",
+      "meaning": {
+        "en": "This is a formal dialogue."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l02-032-2",
+      "track": 32,
+      "question": "Co mówi pani na „co u pani słychać?”?",
+      "meaning": {
+        "en": "What does the woman answer to “co u pani słychać?”?"
+      },
+      "options": [
+        "Wszystko świetnie.",
+        "Nic nowego.",
+        "Po staremu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l02-033-1",
+      "track": 33,
+      "question": "Co mówi koleżanka na „co u ciebie?”?",
+      "meaning": {
+        "en": "What does the friend answer to “co u ciebie?”?"
+      },
+      "options": [
+        "Nic nowego.",
+        "Wszystko dobrze.",
+        "Po staremu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l02-034-1",
+      "track": 34,
+      "question": "Co jest pod numerem trzy?",
+      "meaning": {
+        "en": "What is number three?"
+      },
+      "options": [
+        "Wszystko w porządku.",
+        "Nic nowego.",
+        "Co u ciebie?"
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-034-2",
+      "track": 34,
+      "statement": "Pod numerem siedem jest „po staremu”.",
+      "meaning": {
+        "en": "Number seven is “po staremu”."
+      },
+      "answer": true,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l02-035-1",
+      "track": 35,
+      "question": "Gdzie jest pan Maj?",
+      "meaning": {
+        "en": "Where is Mr Maj?"
+      },
+      "options": [
+        "W pracy.",
+        "W domu.",
+        "W Krakowie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-035-2",
+      "track": 35,
+      "statement": "Państwo Maj są w Krakowie.",
+      "meaning": {
+        "en": "Mr and Mrs Maj are in Kraków."
+      },
+      "answer": true,
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l02-036-1",
+      "track": 36,
+      "question": "Skąd jest pan?",
+      "meaning": {
+        "en": "Where is the man from?"
+      },
+      "options": [
+        "Z Niemiec.",
+        "Z Polski.",
+        "Z Francji."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-036-2",
+      "track": 36,
+      "statement": "Pan mieszka w Krakowie.",
+      "meaning": {
+        "en": "The man lives in Kraków."
+      },
+      "answer": false,
+      "lines": [
+        6,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l02-037-1",
+      "track": 37,
+      "question": "Gdzie mieszka osoba z Anglii?",
+      "meaning": {
+        "en": "Where does the person from England live?"
+      },
+      "options": [
+        "W Londynie.",
+        "W Krakowie.",
+        "W Berlinie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-037-2",
+      "track": 37,
+      "statement": "To jest rozmowa oficjalna.",
+      "meaning": {
+        "en": "This is a formal conversation."
+      },
+      "answer": false
+    },
+    {
+      "type": "true_false",
+      "id": "l02-038-1",
+      "track": 38,
+      "statement": "Oni mieszkają w Europie.",
+      "meaning": {
+        "en": "They live in Europe."
+      },
+      "answer": true,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l02-038-2",
+      "track": 38,
+      "question": "Gdzie mieszka pani?",
+      "meaning": {
+        "en": "Where does the woman live?"
+      },
+      "options": [
+        "W Krakowie.",
+        "W Warszawie.",
+        "W Londynie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        10
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l02-039-1",
+      "track": 39,
+      "question": "Jaka jest ostatnia liczba?",
+      "meaning": {
+        "en": "What is the last number?"
+      },
+      "acceptedAnswers": [
+        "29",
+        "dwadzieścia dziewięć"
+      ],
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l02-040-1",
+      "track": 40,
+      "question": "Co mówi lektor przy literze b?",
+      "meaning": {
+        "en": "What does the reader say at letter b?"
+      },
+      "acceptedAnswers": [
+        "19",
+        "dziewiętnaście"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l02-041-1",
+      "track": 41,
+      "question": "Jaki jest numer mieszkania?",
+      "meaning": {
+        "en": "What is the number of the flat?"
+      },
+      "acceptedAnswers": [
+        "19",
+        "dziewiętnaście"
+      ],
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-041-2",
+      "track": 41,
+      "statement": "Adres to ulica Spacerowa siedem.",
+      "meaning": {
+        "en": "The address is 7 Spacerowa Street."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l02-042-1",
+      "track": 42,
+      "question": "Ulica Szewska: jaki numer?",
+      "meaning": {
+        "en": "Szewska Street: what number?"
+      },
+      "acceptedAnswers": [
+        "3",
+        "trzy"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l02-042-2",
+      "track": 42,
+      "question": "Plac Mariacki: jaki numer?",
+      "meaning": {
+        "en": "Mariacki Square: what number?"
+      },
+      "acceptedAnswers": [
+        "5",
+        "pięć"
+      ],
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l02-043-1",
+      "track": 43,
+      "question": "Skąd jest kobieta?",
+      "meaning": {
+        "en": "Where is the woman from?"
+      },
+      "options": [
+        "Z Hiszpanii.",
+        "Z Niemiec.",
+        "Z Polski."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-043-2",
+      "track": 43,
+      "statement": "On mieszka w Berlinie.",
+      "meaning": {
+        "en": "He lives in Berlin."
+      },
+      "answer": true,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l02-043-3",
+      "track": 43,
+      "question": "Dlaczego ona uczy się polskiego?",
+      "meaning": {
+        "en": "Why is she learning Polish?"
+      },
+      "options": [
+        "Żeby studiować w Polsce.",
+        "Żeby pracować w Warszawie.",
+        "Bo jej mama jest z Polski."
+      ],
+      "correctOption": 0,
+      "lines": [
+        16,
+        16
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l02-044-1",
+      "track": 44,
+      "question": "Skąd jest kobieta?",
+      "meaning": {
+        "en": "Where is the woman from?"
+      },
+      "options": [
+        "Z Włoch.",
+        "Z Polski.",
+        "Z Hiszpanii."
+      ],
+      "correctOption": 0
+    },
+    {
+      "type": "true_false",
+      "id": "l02-044-2",
+      "track": 44,
+      "statement": "Ona mieszka w Rzymie.",
+      "meaning": {
+        "en": "She lives in Rome."
+      },
+      "answer": true
+    },
+    {
+      "type": "choose",
+      "id": "l02-044-3",
+      "track": 44,
+      "question": "Dlaczego on uczy się polskiego?",
+      "meaning": {
+        "en": "Why is he learning Polish?"
+      },
+      "options": [
+        "Bo jego dziewczyna jest z Polski.",
+        "Bo jego mama jest z Polski.",
+        "Żeby pracować w Polsce."
+      ],
+      "correctOption": 0
+    },
+    {
+      "type": "true_false",
+      "id": "l02-045-1",
+      "track": 45,
+      "statement": "Pan jest z Argentyny.",
+      "meaning": {
+        "en": "He is from Argentina."
+      },
+      "answer": true,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l02-045-2",
+      "track": 45,
+      "question": "Ulica Nowowiejska: jaki numer domu?",
+      "meaning": {
+        "en": "Nowowiejska Street: what house number?"
+      },
+      "acceptedAnswers": [
+        "12",
+        "dwanaście"
+      ],
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l02-046-1",
+      "track": 46,
+      "statement": "Angela jest z Anglii.",
+      "meaning": {
+        "en": "Angela is from England."
+      },
+      "answer": true
+    },
+    {
+      "type": "choose",
+      "id": "l02-046-2",
+      "track": 46,
+      "question": "Dlaczego Angela uczy się polskiego?",
+      "meaning": {
+        "en": "Why is Angela learning Polish?"
+      },
+      "options": [
+        "Żeby mówić w domu po polsku.",
+        "Żeby pracować w Polsce.",
+        "Bo jej chłopak jest z Polski."
+      ],
+      "correctOption": 0
     }
   ]
 }

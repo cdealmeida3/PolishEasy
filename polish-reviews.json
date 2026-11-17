@@ -1,11 +1,34 @@
 {
     "sentences": [
         {
+            "text": "12"
+        },
+        {
+            "text": "19"
+        },
+        {
+            "text": "29"
+        },
+        {
+            "text": "3"
+        },
+        {
+            "text": "5"
+        },
+        {
             "text": "9"
+        },
+        {
+            "text": "A dlaczego pan uczy się polskiego?",
+            "meaning": "And why are you learning Polish?"
         },
         {
             "text": "A gdzie jest kawa?",
             "meaning": "Thank you! And where is the coffee?"
+        },
+        {
+            "text": "A gdzie pan mieszka?",
+            "meaning": "And where do you live?"
         },
         {
             "text": "A to jest Anna, studentka."
@@ -17,6 +40,12 @@
         {
             "text": "A ty?",
             "meaning": "And you?"
+        },
+        {
+            "text": "A u ciebie?"
+        },
+        {
+            "text": "A u pana?"
         },
         {
             "text": "Adam",
@@ -85,8 +114,16 @@
             "meaning": "Adam is a student."
         },
         {
+            "text": "Adam uczy się polskiego, bo Ewa jest z Polski",
+            "meaning": "Adam is learning Polish because Ewa is from Poland"
+        },
+        {
             "text": "Adam.",
             "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Adres to ulica Spacerowa siedem.",
+            "meaning": "The address is 7 Spacerowa Street."
         },
         {
             "text": "Adres."
@@ -96,8 +133,18 @@
             "meaning": "The alphabet"
         },
         {
+            "text": "Angela jest z Anglii.",
+            "meaning": "Angela is from England."
+        },
+        {
             "text": "Angielką",
             "meaning": "English (a woman, after jestem, jesteś, jest)"
+        },
+        {
+            "text": "Anglia"
+        },
+        {
+            "text": "Anglii"
         },
         {
             "text": "Anglikiem",
@@ -115,12 +162,65 @@
             "meaning": "We are very sorry."
         },
         {
+            "text": "Berlinie"
+        },
+        {
+            "text": "Bo jego dziewczyna jest z Polski."
+        },
+        {
+            "text": "Bo jego mama jest z Polski."
+        },
+        {
+            "text": "Bo jej chłopak jest z Polski."
+        },
+        {
+            "text": "Bo jej mama jest z Polski."
+        },
+        {
+            "text": "Bo moja dziewczyna jest z Polski.",
+            "meaning": "Because my girlfriend is from Poland."
+        },
+        {
+            "text": "Bo moja dziewczyna jest z Polski.",
+            "meaning": "I am learning Polish because my girlfriend is from Poland."
+        },
+        {
+            "text": "Bo moja żona jest z Polski."
+        },
+        {
+            "text": "Co jest pod numerem trzy?",
+            "meaning": "What is number three?"
+        },
+        {
             "text": "Co mówi Mami na „miło mi”?",
             "meaning": "What does Mami say to “miło mi”?"
         },
         {
+            "text": "Co mówi koleżanka na „co u ciebie?”?",
+            "meaning": "What does the friend answer to “co u ciebie?”?"
+        },
+        {
+            "text": "Co mówi lektor przy literze b?",
+            "meaning": "What does the reader say at letter b?"
+        },
+        {
+            "text": "Co mówi nauczycielka zamiast „a ty?”?",
+            "meaning": "What does the teacher say instead of “a ty?”?"
+        },
+        {
             "text": "Co mówi pani na początku?",
             "meaning": "What does the woman say first?"
+        },
+        {
+            "text": "Co mówi pani na „co u pani słychać?”?",
+            "meaning": "What does the woman answer to “co u pani słychać?”?"
+        },
+        {
+            "text": "Co nowego?"
+        },
+        {
+            "text": "Co słychać?",
+            "meaning": "How are things?"
         },
         {
             "text": "Co to jest program kulturalny?",
@@ -134,6 +234,9 @@
             "meaning": "What has to be spelled?"
         },
         {
+            "text": "Co u ciebie?"
+        },
+        {
             "text": "Cześć!",
             "meaning": "Bye! See you tomorrow!"
         },
@@ -142,8 +245,16 @@
             "meaning": "Hi!"
         },
         {
+            "text": "Cześć! Co u ciebie?",
+            "meaning": "Hi! How are things with you?"
+        },
+        {
             "text": "Cześć! Do jutra!",
             "meaning": "Bye! See you tomorrow!"
+        },
+        {
+            "text": "Cześć! Do jutra!",
+            "meaning": "Bye-bye! See you tomorrow!"
         },
         {
             "text": "Cześć! Gdzie jest toaleta?",
@@ -174,10 +285,29 @@
             "meaning": "Hi! My name is Adam."
         },
         {
+            "text": "Cześć! Po staremu. A u ciebie?",
+            "meaning": "Hi! Same as ever. And with you?"
+        },
+        {
+            "text": "Cześć! Skąd jesteś?",
+            "meaning": "Hi! Where are you from?"
+        },
+        {
+            "text": "Cześć! Wszystko dobrze, a u ciebie?",
+            "meaning": "Hi! Everything is fine, and with you?"
+        },
+        {
+            "text": "Cześć! Wszystko dobrze. A u ciebie?",
+            "meaning": "Hi! Same as ever. And with you?"
+        },
+        {
             "text": "Cześć, jestem Adam."
         },
         {
             "text": "Cześć, jestem Ewa, a ty?"
+        },
+        {
+            "text": "Cześć, jestem Ewa. Jestem z Polski."
         },
         {
             "text": "Cześć."
@@ -211,8 +341,36 @@
             "meaning": "Do you speak Polish? (to a woman, formal)"
         },
         {
+            "text": "Czy ty grasz w tenisa?",
+            "meaning": "Do you play tennis? (one friend)"
+        },
+        {
+            "text": "Dane personalne",
+            "meaning": "Personal details"
+        },
+        {
+            "text": "Dlaczego Angela uczy się polskiego?",
+            "meaning": "Why is Angela learning Polish?"
+        },
+        {
+            "text": "Dlaczego on uczy się polskiego?",
+            "meaning": "Why is he learning Polish?"
+        },
+        {
+            "text": "Dlaczego ona uczy się polskiego?",
+            "meaning": "Why is she learning Polish?"
+        },
+        {
+            "text": "Dlaczego uczysz się polskiego?",
+            "meaning": "Why are you learning Polish?"
+        },
+        {
             "text": "Do jutra!",
             "meaning": "Bye! See you tomorrow!"
+        },
+        {
+            "text": "Do jutra!",
+            "meaning": "Bye-bye! See you tomorrow!"
         },
         {
             "text": "Do widzenia!",
@@ -282,6 +440,10 @@
             "meaning": "I'm twenty years old."
         },
         {
+            "text": "Dwanaście, dwadzieścia trzy, siedemnaście.",
+            "meaning": "My phone number is 12 23 17."
+        },
+        {
             "text": "Dziesięć minus cztery równa się pięć.",
             "meaning": "Ten minus four equals five."
         },
@@ -296,6 +458,14 @@
         {
             "text": "Dzień dobry!",
             "meaning": "Good morning!"
+        },
+        {
+            "text": "Dzień dobry! Co u pana słychać?",
+            "meaning": "Good morning! How are things with you?"
+        },
+        {
+            "text": "Dzień dobry! Co u pani słychać?",
+            "meaning": "Good morning! How are things with you? (to a woman, formal)"
         },
         {
             "text": "Dzień dobry! Gdzie jest toaleta?",
@@ -313,6 +483,10 @@
             "meaning": "Good morning! My name is Adam."
         },
         {
+            "text": "Dzień dobry! Po staremu, a u pani?",
+            "meaning": "Good morning! Same as ever, and with you?"
+        },
+        {
             "text": "Dzień dobry! Proszę imię i nazwisko."
         },
         {
@@ -322,6 +496,14 @@
         {
             "text": "Dzień dobry! Słucham.",
             "meaning": "Good morning! How can I help?"
+        },
+        {
+            "text": "Dzień dobry! Wszystko dobrze, a u pani?",
+            "meaning": "Good morning! Everything is fine, and with you?"
+        },
+        {
+            "text": "Dzień dobry! Wszystko dobrze.",
+            "meaning": "Good morning! Everything is fine, and with you?"
         },
         {
             "text": "Dzień dobry."
@@ -375,11 +557,22 @@
             "meaning": "Thank you, same to you! Goodbye."
         },
         {
+            "text": "Dziękuję, po staremu. Skąd pan jest?",
+            "meaning": "Thank you, same as ever. Where are you from?"
+        },
+        {
+            "text": "Dziękuję, wszystko w porządku."
+        },
+        {
             "text": "Dziękuję."
         },
         {
             "text": "Dziękuję. A gdzie jest kawa?",
             "meaning": "Thank you! And where is the coffee?"
+        },
+        {
+            "text": "Dziękuję. Do widzenia!",
+            "meaning": "Thank you! Goodbye!"
         },
         {
             "text": "Dziękuję. Wszystko w porządku. Do widzenia!",
@@ -397,19 +590,42 @@
             "meaning": "Ewa is from England, but she speaks Polish."
         },
         {
+            "text": "Ewa jest z Polski.",
+            "meaning": "Ewa is from Poland."
+        },
+        {
             "text": "Ewa ma trzy lata",
             "meaning": "Ewa is three years old"
+        },
+        {
+            "text": "Ewa mieszka w Krakowie.",
+            "meaning": "Ewa lives in Kraków."
+        },
+        {
+            "text": "Ewa mieszka w Londynie.",
+            "meaning": "Ewa lives in London."
         },
         {
             "text": "Ewa to nauczycielka.",
             "meaning": "Ewa is a teacher."
         },
         {
+            "text": "Ewa, gdzie ty jesteś?",
+            "meaning": "Ewa, where are you?"
+        },
+        {
             "text": "Film, spotkanie."
+        },
+        {
+            "text": "Francja"
         },
         {
             "text": "Gdzie jest mój długopis?",
             "meaning": "Where is my pen?"
+        },
+        {
+            "text": "Gdzie jest pan Maj?",
+            "meaning": "Where is Mr Maj?"
         },
         {
             "text": "Gdzie jest toaleta?",
@@ -422,6 +638,40 @@
         {
             "text": "Gdzie jest…?",
             "meaning": "Where is…?"
+        },
+        {
+            "text": "Gdzie mieszka osoba z Anglii?",
+            "meaning": "Where does the person from England live?"
+        },
+        {
+            "text": "Gdzie mieszka pani?",
+            "meaning": "Where does the woman live?"
+        },
+        {
+            "text": "Gdzie ona jest?",
+            "meaning": "Where is she?"
+        },
+        {
+            "text": "Gdzie oni są?",
+            "meaning": "Where are they?"
+        },
+        {
+            "text": "Gdzie ty mieszkasz?",
+            "meaning": "Where do you live? (one friend)"
+        },
+        {
+            "text": "Gdzie wy jesteście?",
+            "meaning": "Where are you? (several people)"
+        },
+        {
+            "text": "Gdzie wy mieszkacie?",
+            "meaning": "Where do you live? (several people)"
+        },
+        {
+            "text": "Gram w tenisa. To moje hobby."
+        },
+        {
+            "text": "Hiszpania"
         },
         {
             "text": "Ile ma pan lat?",
@@ -443,8 +693,32 @@
             "text": "Imię i nazwisko."
         },
         {
+            "text": "Ja jestem w Krakowie.",
+            "meaning": "I am in Kraków."
+        },
+        {
+            "text": "Ja jestem z Anglii.",
+            "meaning": "I am from England."
+        },
+        {
             "text": "Ja jestem z Anglii.",
             "meaning": "I'm from England."
+        },
+        {
+            "text": "Ja mieszkam w Krakowie.",
+            "meaning": "I live in Kraków."
+        },
+        {
+            "text": "Ja mieszkam w Warszawie, a ty gdzie mieszkasz?",
+            "meaning": "I live in Warsaw, and where do you live? (one friend)"
+        },
+        {
+            "text": "Ja też! Grasz w tenisa?",
+            "meaning": "Me too! Do you play tennis?"
+        },
+        {
+            "text": "Ja uczę się polskiego, bo moja dziewczyna jest z Polski.",
+            "meaning": "I am learning Polish because my girlfriend is from Poland."
         },
         {
             "text": "Jak ma na imię kolega Angeli?",
@@ -470,8 +744,28 @@
             "meaning": "What is that word in Polish?"
         },
         {
+            "text": "Jaka jest ostatnia liczba?",
+            "meaning": "What is the last number?"
+        },
+        {
+            "text": "Jaki jest numer mieszkania?",
+            "meaning": "What is the number of the flat?"
+        },
+        {
+            "text": "Jaki jest twój numer telefonu?",
+            "meaning": "What is your phone number? (one friend)"
+        },
+        {
+            "text": "Jaki ma pan numer telefonu?",
+            "meaning": "What is your phone number?"
+        },
+        {
             "text": "Jakie słowo trzeba przeliterować?",
             "meaning": "Which word has to be spelled?"
+        },
+        {
+            "text": "Jego żona jest z Polski.",
+            "meaning": "His wife is from Poland."
         },
         {
             "text": "Jest tam, na lewo.",
@@ -494,12 +788,34 @@
             "meaning": "I'm here."
         },
         {
+            "text": "Jestem w Krakowie.",
+            "meaning": "I am in Kraków."
+        },
+        {
+            "text": "Jestem z Anglii.",
+            "meaning": "I am from England."
+        },
+        {
             "text": "Jestem z Anglii.",
             "meaning": "I'm from England."
         },
         {
+            "text": "Jestem z Niemiec, ale mieszkam w Warszawie."
+        },
+        {
+            "text": "Jestem z Polski.",
+            "meaning": "I am from Poland."
+        },
+        {
             "text": "Jestem z Polski. Mówisz po polsku?",
             "meaning": "I'm from Poland. Do you speak Polish?"
+        },
+        {
+            "text": "Jesteś"
+        },
+        {
+            "text": "Jesteś w Krakowie.",
+            "meaning": "You are in Kraków."
         },
         {
             "text": "Kawa i woda są tam, na prawo.",
@@ -525,11 +841,19 @@
             "meaning": "The classmate says “miło mi cię poznać”."
         },
         {
+            "text": "Kraków",
+            "meaning": "Kraków (a city in Poland)"
+        },
+        {
             "text": "Książka."
         },
         {
             "text": "Liczebniki 0–10",
             "meaning": "Numbers 0 to 10"
+        },
+        {
+            "text": "Liczebniki 11–29",
+            "meaning": "Numbers 11 to 29"
         },
         {
             "text": "Login i hasło."
@@ -557,6 +881,21 @@
         {
             "text": "Mam na imię Adam.",
             "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Mieszkam w Krakowie.",
+            "meaning": "I live in Kraków."
+        },
+        {
+            "text": "Mieszkam w Londynie, ale kocham Kraków."
+        },
+        {
+            "text": "Mieszkam w Londynie.",
+            "meaning": "I live in London."
+        },
+        {
+            "text": "Mieszkasz w Krakowie.",
+            "meaning": "You live in Kraków."
         },
         {
             "text": "Miłego dnia!",
@@ -605,8 +944,16 @@
             "meaning": "My sister is twelve years old."
         },
         {
+            "text": "My jesteśmy tutaj.",
+            "meaning": "We are here."
+        },
+        {
             "text": "My mamy problem.",
             "meaning": "We have a problem."
+        },
+        {
+            "text": "My mieszkamy tutaj.",
+            "meaning": "We live here."
         },
         {
             "text": "My mówimy po angielsku, a oni mówią po polsku.",
@@ -623,6 +970,18 @@
         {
             "text": "Mój długopis jest tam, na lewo.",
             "meaning": "My pen is over there, on the left."
+        },
+        {
+            "text": "Mój numer telefonu to dwanaście, dwadzieścia trzy, siedemnaście.",
+            "meaning": "My phone number is 12 23 17."
+        },
+        {
+            "text": "Mój numer telefonu to dwanaście, trzy, siedemnaście.",
+            "meaning": "My phone number is 12 3 17."
+        },
+        {
+            "text": "Mój numer to dwanaście, dwadzieścia trzy, siedemnaście.",
+            "meaning": "My phone number is 12 23 17."
         },
         {
             "text": "Mój syn ma rok.",
@@ -649,6 +1008,10 @@
             "meaning": "Bye! See you tomorrow!"
         },
         {
+            "text": "Na razie!",
+            "meaning": "Bye-bye! See you tomorrow!"
+        },
+        {
             "text": "Na razie! Do jutra!",
             "meaning": "Bye! See you tomorrow!"
         },
@@ -659,6 +1022,17 @@
         {
             "text": "Nazywam się Adam.",
             "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Nic nowego."
+        },
+        {
+            "text": "Nic nowego. A ty?",
+            "meaning": "Nothing new. And you?"
+        },
+        {
+            "text": "Nic nowego. Gdzie jesteś?",
+            "meaning": "Nothing new. Where are you?"
         },
         {
             "text": "Nie ma za co.",
@@ -713,11 +1087,18 @@
             "meaning": "No, I'm from England. And you?"
         },
         {
+            "text": "Niemcy"
+        },
+        {
             "text": "Numer telefonu."
         },
         {
             "text": "O co pyta student?",
             "meaning": "What does the student ask?"
+        },
+        {
+            "text": "On mieszka w Berlinie.",
+            "meaning": "He lives in Berlin."
         },
         {
             "text": "Ona jest Japonką.",
@@ -732,6 +1113,18 @@
             "meaning": "Her name is Ewa."
         },
         {
+            "text": "Ona mieszka w Rzymie.",
+            "meaning": "She lives in Rome."
+        },
+        {
+            "text": "Oni mieszkają tam.",
+            "meaning": "They live there."
+        },
+        {
+            "text": "Oni mieszkają w Europie.",
+            "meaning": "They live in Europe."
+        },
+        {
             "text": "Pa!",
             "meaning": "Bye!"
         },
@@ -740,12 +1133,71 @@
             "meaning": "Bye! See you tomorrow!"
         },
         {
+            "text": "Pa!",
+            "meaning": "Bye-bye!"
+        },
+        {
+            "text": "Pa!",
+            "meaning": "Bye-bye! See you tomorrow!"
+        },
+        {
             "text": "Pa! Do jutra!",
             "meaning": "Bye! See you tomorrow!"
         },
         {
+            "text": "Pa! Do jutra!",
+            "meaning": "Bye-bye! See you tomorrow!"
+        },
+        {
+            "text": "Pan Adam mieszka tutaj.",
+            "meaning": "Mr Adam lives here."
+        },
+        {
+            "text": "Pan jest z Argentyny.",
+            "meaning": "He is from Argentina."
+        },
+        {
+            "text": "Pan jest z Niemiec.",
+            "meaning": "He is from Germany."
+        },
+        {
+            "text": "Pan jest z Niemiec.",
+            "meaning": "The man is from Germany."
+        },
+        {
+            "text": "Pan mieszka w Berlinie.",
+            "meaning": "He lives in Berlin."
+        },
+        {
+            "text": "Pan mieszka w Krakowie.",
+            "meaning": "The man lives in Kraków."
+        },
+        {
+            "text": "Pani jest z Anglii.",
+            "meaning": "The woman is from England."
+        },
+        {
+            "text": "Państwo Maj są w Krakowie.",
+            "meaning": "Mr and Mrs Maj are in Kraków."
+        },
+        {
             "text": "Pięć.",
             "meaning": "Two plus three equals five."
+        },
+        {
+            "text": "Plac Mariacki: jaki numer?",
+            "meaning": "Mariacki Square: what number?"
+        },
+        {
+            "text": "Po staremu."
+        },
+        {
+            "text": "Po staremu. A u ciebie?",
+            "meaning": "Hi! Same as ever. And with you?"
+        },
+        {
+            "text": "Pod numerem siedem jest „po staremu”.",
+            "meaning": "Number seven is “po staremu”."
         },
         {
             "text": "Polakiem",
@@ -758,6 +1210,9 @@
         {
             "text": "Polką",
             "meaning": "Polish (a woman, after jestem, jesteś, jest)"
+        },
+        {
+            "text": "Polska"
         },
         {
             "text": "Polski"
@@ -851,6 +1306,10 @@
             "meaning": "I understand! Thank you very much."
         },
         {
+            "text": "Rozumiem! Na razie, do jutra!",
+            "meaning": "I see! Bye for now, see you tomorrow!"
+        },
+        {
             "text": "Rozumiem, dziękuję.",
             "meaning": "I understand! Thank you very much."
         },
@@ -871,8 +1330,24 @@
             "meaning": "At the school office: introducing yourself"
         },
         {
+            "text": "Skąd jest kobieta?",
+            "meaning": "Where is the woman from?"
+        },
+        {
+            "text": "Skąd jest pan?",
+            "meaning": "Where is the man from?"
+        },
+        {
+            "text": "Skąd jesteś? Gdzie mieszkasz?",
+            "meaning": "Where are you from? Where do you live?"
+        },
+        {
             "text": "Skąd pan jest?",
             "meaning": "Where are you from? (to a man)"
+        },
+        {
+            "text": "Skąd pani jest? Jestem z Hiszpanii.",
+            "meaning": "Where are you from? (to a woman, formal) I am from Spain."
         },
         {
             "text": "Smacznego!",
@@ -887,6 +1362,22 @@
         },
         {
             "text": "Szkoła."
+        },
+        {
+            "text": "Tak, gram w tenisa.",
+            "meaning": "Yes, I play tennis. It's my hobby."
+        },
+        {
+            "text": "Tak, gram w tenisa. To moje hobby.",
+            "meaning": "Yes, I play tennis. It's my hobby."
+        },
+        {
+            "text": "Tak, gram. To moje hobby.",
+            "meaning": "Yes, I play tennis. It's my hobby."
+        },
+        {
+            "text": "Tak, grasz w tenisa.",
+            "meaning": "Yes, you play tennis."
         },
         {
             "text": "Tak, jestem z Anglii.",
@@ -909,6 +1400,10 @@
             "meaning": "Yes, a little."
         },
         {
+            "text": "Tak.",
+            "meaning": "Yes, I play tennis. It's my hobby."
+        },
+        {
             "text": "Tam, na lewo.",
             "meaning": "Your pen is over there, on the left."
         },
@@ -922,11 +1417,23 @@
             "text": "To jest Ewa, nauczycielka."
         },
         {
+            "text": "To jest dialog oficjalny.",
+            "meaning": "This is a formal dialogue."
+        },
+        {
             "text": "To jest pięć.",
             "meaning": "Two plus three equals five."
         },
         {
             "text": "To jest rozmowa formalna.",
+            "meaning": "This is a formal conversation."
+        },
+        {
+            "text": "To jest rozmowa nieoficjalna.",
+            "meaning": "This is an informal conversation."
+        },
+        {
+            "text": "To jest rozmowa oficjalna.",
             "meaning": "This is a formal conversation."
         },
         {
@@ -1007,8 +1514,61 @@
             "meaning": "Are you from England? (one friend)"
         },
         {
+            "text": "Uczę się polskiego, bo moja dziewczyna jest z Polski.",
+            "meaning": "Because my girlfriend is from Poland."
+        },
+        {
+            "text": "Uczę się polskiego, bo moja dziewczyna jest z Polski.",
+            "meaning": "I am learning Polish because my girlfriend is from Poland."
+        },
+        {
+            "text": "Uczę się polskiego, bo moja mama jest z Polski.",
+            "meaning": "I am learning Polish because my mum is from Poland."
+        },
+        {
+            "text": "Uczę się polskiego, bo pracować w Polsce.",
+            "meaning": "I am learning Polish because to work in Poland.",
+            "finding": "Deliberately wrong chat reply (its note explains bo vs żeby), but note it is ungrammatical Polish: bo cannot be followed by a bare infinitive. The correct form is \"Uczę się polskiego, żeby pracować w Polsce.\"; keep it only if an ungrammatical distractor is intended."
+        },
+        {
+            "text": "Uczę się polskiego, żeby pracować w Polsce.",
+            "meaning": "I am learning Polish to work in Poland."
+        },
+        {
+            "text": "Ulica Długa: jaki numer?",
+            "meaning": "Długa Street: what number?"
+        },
+        {
+            "text": "Ulica Nowowiejska: jaki numer domu?",
+            "meaning": "Nowowiejska Street: what house number?"
+        },
+        {
             "text": "Ulica Spacerowa: jaki numer?",
             "meaning": "Spacerowa Street: what number?"
+        },
+        {
+            "text": "Ulica Szewska: jaki numer?",
+            "meaning": "Szewska Street: what number?"
+        },
+        {
+            "text": "W Berlinie."
+        },
+        {
+            "text": "W Krakowie.",
+            "meaning": "I am in Kraków."
+        },
+        {
+            "text": "W Krakowie.",
+            "meaning": "I live in Kraków."
+        },
+        {
+            "text": "W Londynie."
+        },
+        {
+            "text": "W Warszawie."
+        },
+        {
+            "text": "W domu."
         },
         {
             "text": "W klasie",
@@ -1021,6 +1581,9 @@
         {
             "text": "W porządku! Na razie!",
             "meaning": "All right! See you!"
+        },
+        {
+            "text": "W pracy."
         },
         {
             "text": "W szkole",
@@ -1038,6 +1601,24 @@
             "meaning": "The water is here."
         },
         {
+            "text": "Wszystko dobrze, a u pani?",
+            "meaning": "Good morning! Everything is fine, and with you?"
+        },
+        {
+            "text": "Wszystko dobrze.",
+            "meaning": "Good morning! Everything is fine, and with you?"
+        },
+        {
+            "text": "Wszystko dobrze. A u ciebie?",
+            "meaning": "Hi! Same as ever. And with you?"
+        },
+        {
+            "text": "Wszystko w porządku."
+        },
+        {
+            "text": "Wszystko świetnie."
+        },
+        {
             "text": "Wy jesteście z Polski?",
             "meaning": "Are you from Poland? (several people)"
         },
@@ -1046,8 +1627,33 @@
             "meaning": "You (several people) speak Polish, and they (women) speak English."
         },
         {
+            "text": "Włoch"
+        },
+        {
+            "text": "Włochy"
+        },
+        {
+            "text": "Z Anglii.",
+            "meaning": "I am from England."
+        },
+        {
             "text": "Z Anglii.",
             "meaning": "I'm from England."
+        },
+        {
+            "text": "Z Francji."
+        },
+        {
+            "text": "Z Hiszpanii."
+        },
+        {
+            "text": "Z Niemiec."
+        },
+        {
+            "text": "Z Polski."
+        },
+        {
+            "text": "Z Włoch."
         },
         {
             "text": "a",
@@ -1059,7 +1665,27 @@
         },
         {
             "text": "a ty?",
+            "meaning": "and with you? (one friend)"
+        },
+        {
+            "text": "a ty?",
             "meaning": "and you?"
+        },
+        {
+            "text": "a u ciebie?",
+            "meaning": "and with you? (one friend)"
+        },
+        {
+            "text": "a u pana?",
+            "meaning": "and with you? (to a man, formal)"
+        },
+        {
+            "text": "a u pani?",
+            "meaning": "and with you? (to a woman, formal)"
+        },
+        {
+            "text": "adres",
+            "meaning": "an address"
         },
         {
             "text": "ale",
@@ -1104,6 +1730,10 @@
             "text": "barszcz"
         },
         {
+            "text": "bo",
+            "meaning": "because"
+        },
+        {
             "text": "brat",
             "meaning": "a brother"
         },
@@ -1138,8 +1768,35 @@
             "meaning": "a boy; a boyfriend"
         },
         {
+            "text": "chłopak",
+            "meaning": "a boyfriend"
+        },
+        {
             "text": "chłopak i dziewczyna",
             "meaning": "a boy and a girl"
+        },
+        {
+            "text": "ciebie"
+        },
+        {
+            "text": "co nowego?",
+            "meaning": "what's new?"
+        },
+        {
+            "text": "co słychać u ciebie?",
+            "meaning": "how are things with you? (one friend)"
+        },
+        {
+            "text": "co słychać u pana?",
+            "meaning": "how are things with you? (to a man, formal)"
+        },
+        {
+            "text": "co słychać?",
+            "meaning": "how are things with you? (one friend)"
+        },
+        {
+            "text": "co słychać?",
+            "meaning": "how are things with you? (to a man, formal)"
         },
         {
             "text": "co słychać?",
@@ -1161,8 +1818,24 @@
             "meaning": "what does it mean?"
         },
         {
+            "text": "co u ciebie słychać?",
+            "meaning": "how are things with you? (one friend)"
+        },
+        {
+            "text": "co u ciebie?",
+            "meaning": "how are things with you? (one friend)"
+        },
+        {
             "text": "co u ciebie?",
             "meaning": "how are you?"
+        },
+        {
+            "text": "co u pana słychać?",
+            "meaning": "how are things with you? (to a man, formal)"
+        },
+        {
+            "text": "co u pani słychać?",
+            "meaning": "how are things with you? (to a woman, formal)"
         },
         {
             "text": "co widać?"
@@ -1177,7 +1850,19 @@
         },
         {
             "text": "cześć, co słychać?",
+            "meaning": "hi, how are things with you? (one friend)"
+        },
+        {
+            "text": "cześć, co słychać?",
             "meaning": "hi, how are things?"
+        },
+        {
+            "text": "cześć, co u ciebie słychać?",
+            "meaning": "hi, how are things with you? (one friend)"
+        },
+        {
+            "text": "cześć, co u ciebie?",
+            "meaning": "hi, how are things with you? (one friend)"
         },
         {
             "text": "cześć, do jutra",
@@ -1275,12 +1960,20 @@
             "meaning": "(starts a yes-or-no question)"
         },
         {
+            "text": "czy grasz w tenisa?",
+            "meaning": "do you play tennis? (one friend)"
+        },
+        {
             "text": "czy jesteś z Polski?",
             "meaning": "are you from Poland? (one friend)"
         },
         {
             "text": "czy masz rodzeństwo?",
             "meaning": "do you have brothers and sisters? (one friend)"
+        },
+        {
+            "text": "czy mieszkacie w Warszawie?",
+            "meaning": "do you live in Warsaw? (several people)"
         },
         {
             "text": "czy mówi po angielsku?"
@@ -1313,6 +2006,29 @@
             "meaning": "is your husband from Poland? (to one friend)"
         },
         {
+            "text": "czy wy mieszkacie w Warszawie?",
+            "meaning": "do you live in Warsaw? (several people)"
+        },
+        {
+            "text": "czytam",
+            "meaning": "I read"
+        },
+        {
+            "text": "czytam dialog",
+            "meaning": "I am reading a dialogue"
+        },
+        {
+            "text": "czytam i oglądam serial",
+            "meaning": "I watch a series and I read"
+        },
+        {
+            "text": "czytam tekst",
+            "meaning": "I read a text"
+        },
+        {
+            "text": "czytasz"
+        },
+        {
             "text": "córka",
             "meaning": "a daughter"
         },
@@ -1323,6 +2039,22 @@
         {
             "text": "dialog",
             "meaning": "a dialogue"
+        },
+        {
+            "text": "dlaczego",
+            "meaning": "why"
+        },
+        {
+            "text": "dlaczego ona uczy się polskiego?",
+            "meaning": "why is she learning Polish?"
+        },
+        {
+            "text": "dlaczego ty uczysz się polskiego?",
+            "meaning": "why are you learning Polish? (one friend)"
+        },
+        {
+            "text": "dlaczego uczysz się polskiego?",
+            "meaning": "why are you learning Polish? (one friend)"
         },
         {
             "text": "dnia"
@@ -1453,8 +2185,46 @@
             "meaning": "twenty"
         },
         {
+            "text": "dwadzieścia dziewięć"
+        },
+        {
+            "text": "dwadzieścia jeden, dwadzieścia dwa, dwadzieścia trzy",
+            "meaning": "twenty-one, twenty-two, twenty-three"
+        },
+        {
+            "text": "dwadzieścia osiem",
+            "meaning": "twenty-eight"
+        },
+        {
+            "text": "dwadzieścia pięć",
+            "meaning": "twenty-five"
+        },
+        {
+            "text": "dwadzieścia siedem"
+        },
+        {
             "text": "dwanaście",
             "meaning": "twelve"
+        },
+        {
+            "text": "dwanaście plus siedem jest dziewiętnaście",
+            "meaning": "twelve plus seven equals nineteen"
+        },
+        {
+            "text": "dwanaście plus siedem równa się dziewiętnaście",
+            "meaning": "twelve plus seven equals nineteen"
+        },
+        {
+            "text": "dwanaście plus siedem to dziewiętnaście",
+            "meaning": "twelve plus seven equals nineteen"
+        },
+        {
+            "text": "dwanaście plus siedem to jest dziewiętnaście",
+            "meaning": "twelve plus seven equals nineteen"
+        },
+        {
+            "text": "dwanaście przez dwa",
+            "meaning": "12/2, in an address"
         },
         {
             "text": "dziadek",
@@ -1477,6 +2247,9 @@
             "meaning": "ten"
         },
         {
+            "text": "dziesięć minus trzy"
+        },
+        {
             "text": "dziesięć minus trzy jest siedem",
             "meaning": "ten minus three equals seven"
         },
@@ -1493,8 +2266,19 @@
             "meaning": "ten minus three equals seven"
         },
         {
+            "text": "dziesięć plus trzy"
+        },
+        {
+            "text": "dziesięć przez trzy",
+            "meaning": "10/3, in an address"
+        },
+        {
             "text": "dziewczyna",
             "meaning": "a girl; a girlfriend"
+        },
+        {
+            "text": "dziewczyna",
+            "meaning": "a girlfriend"
         },
         {
             "text": "dziewiętnaście",
@@ -1582,8 +2366,30 @@
             "meaning": "thank you, you too"
         },
         {
+            "text": "dziękuję, nic nowego"
+        },
+        {
             "text": "dziękuję, nie",
             "meaning": "no, thank you"
+        },
+        {
+            "text": "dziękuję, po staremu"
+        },
+        {
+            "text": "dziękuję, wszystko dobrze, a u ciebie?",
+            "meaning": "thank you, everything is fine, and with you? (one friend)"
+        },
+        {
+            "text": "dziękuję, wszystko dobrze, a u pana?",
+            "meaning": "thank you, everything is fine, and with you? (to a man, formal)"
+        },
+        {
+            "text": "dziękuję, wszystko w porządku, a u pana?",
+            "meaning": "everything is all right, and with you? (to a man, formal)"
+        },
+        {
+            "text": "dziękuję, wszystko świetnie",
+            "meaning": "thank you, everything is great"
         },
         {
             "text": "dziękuję, świetnie",
@@ -1605,12 +2411,92 @@
             "meaning": "where"
         },
         {
+            "text": "gdzie jest pan?"
+        },
+        {
             "text": "gdzie jest toaleta?",
             "meaning": "where is the toilet?"
         },
         {
             "text": "gdzie jest woda?",
             "meaning": "where is the water?"
+        },
+        {
+            "text": "gdzie jest?"
+        },
+        {
+            "text": "gdzie jesteś?",
+            "meaning": "where are you? (one friend)"
+        },
+        {
+            "text": "gdzie mieszka pan?",
+            "meaning": "where do you live? (to a man, formal)"
+        },
+        {
+            "text": "gdzie mieszkacie?",
+            "meaning": "where do you live? (several people)"
+        },
+        {
+            "text": "gdzie mieszkasz?",
+            "meaning": "where do you live? (one friend)"
+        },
+        {
+            "text": "gdzie pan mieszka?",
+            "meaning": "where do you live? (to a man, formal)"
+        },
+        {
+            "text": "gdzie państwo są?",
+            "meaning": "where are you? (to a man and a woman, formal)"
+        },
+        {
+            "text": "gdzie są panie?"
+        },
+        {
+            "text": "gdzie są panowie?",
+            "meaning": "where are the gentlemen?"
+        },
+        {
+            "text": "gdzie są państwo?",
+            "meaning": "where are you? (to a man and a woman, formal)"
+        },
+        {
+            "text": "gdzie wy mieszkacie?",
+            "meaning": "where do you live? (several people)"
+        },
+        {
+            "text": "gra"
+        },
+        {
+            "text": "gracie"
+        },
+        {
+            "text": "grają"
+        },
+        {
+            "text": "gram",
+            "meaning": "I play"
+        },
+        {
+            "text": "gram w tenisa",
+            "meaning": "I play tennis"
+        },
+        {
+            "text": "gram w tenisa, a ty?",
+            "meaning": "I play tennis, and you? (one friend)"
+        },
+        {
+            "text": "gramy"
+        },
+        {
+            "text": "grasz",
+            "meaning": "you play (one friend)"
+        },
+        {
+            "text": "grasz w tenisa"
+        },
+        {
+            "text": "grasz w tenisa?",
+            "meaning": "do you play tennis? (one friend)"
         },
         {
             "text": "gratulacje",
@@ -1634,6 +2520,10 @@
         {
             "text": "halo, słucham",
             "meaning": "hello? (answering the phone)"
+        },
+        {
+            "text": "hobby",
+            "meaning": "a hobby"
         },
         {
             "text": "i",
@@ -1709,6 +2599,10 @@
         },
         {
             "text": "imię i nazwisko",
+            "meaning": "a first name and a surname"
+        },
+        {
+            "text": "imię i nazwisko",
             "meaning": "first name and surname"
         },
         {
@@ -1718,6 +2612,10 @@
         {
             "text": "ja",
             "meaning": "I"
+        },
+        {
+            "text": "ja czytam tekst",
+            "meaning": "I read a text"
         },
         {
             "text": "ja jestem Adam",
@@ -1736,6 +2634,18 @@
             "meaning": "I am Polish"
         },
         {
+            "text": "ja jestem z Francji",
+            "meaning": "I am from France"
+        },
+        {
+            "text": "ja jestem z Włoch",
+            "meaning": "I am from Italy"
+        },
+        {
+            "text": "ja kocham Kraków",
+            "meaning": "I love Kraków"
+        },
+        {
             "text": "ja mam dwadzieścia lat",
             "meaning": "I am twenty years old"
         },
@@ -1752,8 +2662,16 @@
             "meaning": "I have siblings: a brother and a sister"
         },
         {
+            "text": "ja mieszkam w Krakowie",
+            "meaning": "I live in Kraków"
+        },
+        {
             "text": "ja nazywam się Adam",
             "meaning": "I am called Adam"
+        },
+        {
+            "text": "ja oglądam serial i czytam",
+            "meaning": "I watch a series and I read"
         },
         {
             "text": "ja się nazywam Adam",
@@ -1762,6 +2680,14 @@
         {
             "text": "ja też jestem z Anglii",
             "meaning": "I am from England too"
+        },
+        {
+            "text": "ja uczę się polskiego, bo mój chłopak jest z Polski",
+            "meaning": "I am learning Polish because my boyfriend is from Poland"
+        },
+        {
+            "text": "ja uczę się polskiego, żeby studiować w Polsce",
+            "meaning": "I am learning Polish to study in Poland"
         },
         {
             "text": "jak",
@@ -1881,6 +2807,38 @@
             "meaning": "what is your first name? (one friend)"
         },
         {
+            "text": "jaki",
+            "meaning": "what (asking about a masculine noun: jaki jest twój adres?)"
+        },
+        {
+            "text": "jaki jest adres?",
+            "meaning": "what is your address? (one friend)"
+        },
+        {
+            "text": "jaki jest numer telefonu?",
+            "meaning": "what is your phone number? (one friend)"
+        },
+        {
+            "text": "jaki jest twój adres?",
+            "meaning": "what is your address? (one friend)"
+        },
+        {
+            "text": "jaki jest twój numer telefonu?",
+            "meaning": "what is your phone number? (one friend)"
+        },
+        {
+            "text": "jaki jest twój numer?",
+            "meaning": "what is your phone number? (one friend)"
+        },
+        {
+            "text": "jaki masz adres?",
+            "meaning": "what is your address? (one friend)"
+        },
+        {
+            "text": "jaki masz numer telefonu?",
+            "meaning": "what is your phone number? (one friend)"
+        },
+        {
             "text": "jeden",
             "meaning": "one"
         },
@@ -1910,6 +2868,28 @@
         {
             "text": "jedenaście, dwanaście, trzynaście",
             "meaning": "eleven, twelve, thirteen"
+        },
+        {
+            "text": "jego",
+            "meaning": "his"
+        },
+        {
+            "text": "jego chłopak jest z Hiszpanii"
+        },
+        {
+            "text": "jego mama jest z Polski",
+            "meaning": "his mum is from Poland"
+        },
+        {
+            "text": "jej",
+            "meaning": "her (whose? jej mama: her mum)"
+        },
+        {
+            "text": "jej chłopak jest z Francji"
+        },
+        {
+            "text": "jej chłopak jest z Hiszpanii",
+            "meaning": "her boyfriend is from Spain"
         },
         {
             "text": "jest",
@@ -1956,6 +2936,25 @@
         {
             "text": "jestem z Anglii, jestem Angielką",
             "meaning": "I am from England, I am English (a woman speaking)"
+        },
+        {
+            "text": "jestem z Francji",
+            "meaning": "I am from France"
+        },
+        {
+            "text": "jestem z Hiszpanii",
+            "meaning": "I am from Spain"
+        },
+        {
+            "text": "jestem z Niemiec"
+        },
+        {
+            "text": "jestem z Niemiec, a ty?",
+            "meaning": "I am from Germany, and you? (one friend)"
+        },
+        {
+            "text": "jestem z Włoch",
+            "meaning": "I am from Italy"
         },
         {
             "text": "jesteś",
@@ -2010,6 +3009,14 @@
         {
             "text": "kawa jest tutaj",
             "meaning": "the coffee is here"
+        },
+        {
+            "text": "kocham",
+            "meaning": "I love"
+        },
+        {
+            "text": "kocham Kraków",
+            "meaning": "I love Kraków"
         },
         {
             "text": "kolega",
@@ -2195,6 +3202,67 @@
             "meaning": "do you have brothers and sisters? (one friend)"
         },
         {
+            "text": "mieszka",
+            "meaning": "he lives; she lives"
+        },
+        {
+            "text": "mieszkacie",
+            "meaning": "you live (several people)"
+        },
+        {
+            "text": "mieszkacie w Warszawie?",
+            "meaning": "do you live in Warsaw? (several people)"
+        },
+        {
+            "text": "mieszkają",
+            "meaning": "they live"
+        },
+        {
+            "text": "mieszkają w Krakowie"
+        },
+        {
+            "text": "mieszkam",
+            "meaning": "I live"
+        },
+        {
+            "text": "mieszkam w Berlinie"
+        },
+        {
+            "text": "mieszkam w Krakowie",
+            "meaning": "I live in Kraków"
+        },
+        {
+            "text": "mieszkam w Londynie",
+            "meaning": "I live in London"
+        },
+        {
+            "text": "mieszkam w Warszawie",
+            "meaning": "I live in Warsaw"
+        },
+        {
+            "text": "mieszkamy",
+            "meaning": "we live"
+        },
+        {
+            "text": "mieszkamy w Krakowie",
+            "meaning": "we live in Kraków"
+        },
+        {
+            "text": "mieszkamy w Warszawie"
+        },
+        {
+            "text": "mieszkanie",
+            "meaning": "a flat"
+        },
+        {
+            "text": "mieszkanie numer pięć",
+            "meaning": "flat number five"
+        },
+        {
+            "text": "mieszkasz",
+            "meaning": "you live (one friend)"
+        },
+        {
             "text": "minus",
             "meaning": "minus"
         },
@@ -2329,6 +3397,14 @@
             "meaning": "my husband"
         },
         {
+            "text": "mój numer telefonu to dwanaście, dwadzieścia, piętnaście",
+            "meaning": "my phone number is twelve, twenty, fifteen"
+        },
+        {
+            "text": "mój numer telefonu to trzynaście, dwadzieścia sześć, jedenaście",
+            "meaning": "my phone number is thirteen, twenty-six, eleven"
+        },
+        {
             "text": "mój syn"
         },
         {
@@ -2459,6 +3535,10 @@
             "meaning": "a surname"
         },
         {
+            "text": "nazwisko i imię",
+            "meaning": "a first name and a surname"
+        },
+        {
             "text": "nazywam"
         },
         {
@@ -2478,12 +3558,19 @@
             "meaning": "I am called Ewa, and you? (to a man, formal)"
         },
         {
+            "text": "nic"
+        },
+        {
             "text": "nic nie szkodzi",
             "meaning": "no problem"
         },
         {
             "text": "nic nie szkodzi",
             "meaning": "no problem (answer to \"sorry\")"
+        },
+        {
+            "text": "nic nowego",
+            "meaning": "nothing new"
         },
         {
             "text": "nie",
@@ -2559,12 +3646,19 @@
             "text": "nigdzie"
         },
         {
+            "text": "nowego"
+        },
+        {
             "text": "numer",
             "meaning": "a number (numer pięć: number five)"
         },
         {
             "text": "numer osiem",
             "meaning": "number eight"
+        },
+        {
+            "text": "numer telefonu",
+            "meaning": "a phone number"
         },
         {
             "text": "oczywiście",
@@ -2574,8 +3668,26 @@
             "text": "oficjalnie"
         },
         {
+            "text": "oglądam",
+            "meaning": "I watch"
+        },
+        {
+            "text": "oglądam serial",
+            "meaning": "I watch a series"
+        },
+        {
+            "text": "oglądam serial i czytam",
+            "meaning": "I watch a series and I read"
+        },
+        {
             "text": "on",
             "meaning": "he"
+        },
+        {
+            "text": "on + on"
+        },
+        {
+            "text": "on + ona"
         },
         {
             "text": "on jest Anglikiem, a ona Polką",
@@ -2593,6 +3705,9 @@
             "meaning": "he is from England"
         },
         {
+            "text": "on jest z Włoch"
+        },
+        {
             "text": "on ma cztery lata"
         },
         {
@@ -2604,12 +3719,29 @@
             "meaning": "he is one year old"
         },
         {
+            "text": "on mieszka w Berlinie",
+            "meaning": "he lives in Berlin"
+        },
+        {
             "text": "ona",
             "meaning": "she"
         },
         {
+            "text": "ona + ona"
+        },
+        {
+            "text": "ona jest tutaj"
+        },
+        {
             "text": "ona jest z Anglii",
             "meaning": "she is from England"
+        },
+        {
+            "text": "ona jest z Polski"
+        },
+        {
+            "text": "ona jest z Włoch",
+            "meaning": "she is from Italy"
         },
         {
             "text": "ona ma cztery lata",
@@ -2623,11 +3755,26 @@
             "text": "ona ma trzy lata"
         },
         {
+            "text": "ona mieszka w Londynie",
+            "meaning": "she lives in London"
+        },
+        {
+            "text": "ona uczy się polskiego, bo jej chłopak jest z Polski",
+            "meaning": "she is learning Polish because her boyfriend is from Poland"
+        },
+        {
             "text": "one",
             "meaning": "they (women)"
         },
         {
             "text": "one mają córkę"
+        },
+        {
+            "text": "one mieszkają w Berlinie"
+        },
+        {
+            "text": "one są tam",
+            "meaning": "they are there (women)"
         },
         {
             "text": "one są tu",
@@ -2636,6 +3783,10 @@
         {
             "text": "one są tutaj",
             "meaning": "they (women) are here"
+        },
+        {
+            "text": "one tam są",
+            "meaning": "they are there (women)"
         },
         {
             "text": "one tu są",
@@ -2657,6 +3808,13 @@
             "text": "oni mają syna"
         },
         {
+            "text": "oni mieszkają w Berlinie",
+            "meaning": "they live in Berlin (men, or men and women)"
+        },
+        {
+            "text": "oni mieszkają w Londynie"
+        },
+        {
             "text": "oni są tutaj",
             "meaning": "they (men, or men and women) are here"
         },
@@ -2665,7 +3823,16 @@
             "meaning": "they (men, or men and women) have a problem too"
         },
         {
-            "text": "ono"
+            "text": "ono",
+            "meaning": "it"
+        },
+        {
+            "text": "ono",
+            "meaning": "it (a child, or a neuter noun)"
+        },
+        {
+            "text": "ono jest tutaj",
+            "meaning": "it is here"
         },
         {
             "text": "osiem",
@@ -2689,6 +3856,22 @@
         {
             "text": "osiemnaście",
             "meaning": "eighteen"
+        },
+        {
+            "text": "osiemnaście minus pięć jest trzynaście",
+            "meaning": "eighteen minus five equals thirteen"
+        },
+        {
+            "text": "osiemnaście minus pięć równa się trzynaście",
+            "meaning": "eighteen minus five equals thirteen"
+        },
+        {
+            "text": "osiemnaście minus pięć to jest trzynaście",
+            "meaning": "eighteen minus five equals thirteen"
+        },
+        {
+            "text": "osiemnaście minus pięć to trzynaście",
+            "meaning": "eighteen minus five equals thirteen"
         },
         {
             "text": "pa",
@@ -2718,7 +3901,35 @@
             "meaning": "you (to a woman, formal); Mrs, Ms"
         },
         {
+            "text": "panie",
+            "meaning": "ladies"
+        },
+        {
+            "text": "panie",
+            "meaning": "ladies; you (to women, formal)"
+        },
+        {
+            "text": "panie są tutaj",
+            "meaning": "the ladies are here"
+        },
+        {
             "text": "panią"
+        },
+        {
+            "text": "panowie",
+            "meaning": "gentlemen"
+        },
+        {
+            "text": "panowie",
+            "meaning": "gentlemen; you (to men, formal)"
+        },
+        {
+            "text": "państwo",
+            "meaning": "Mr and Mrs"
+        },
+        {
+            "text": "państwo",
+            "meaning": "Mr and Mrs; you (to a man and a woman, formal)"
         },
         {
             "text": "piętnaście",
@@ -2762,6 +3973,14 @@
         {
             "text": "po polsku",
             "meaning": "(in) Polish"
+        },
+        {
+            "text": "po staremu",
+            "meaning": "same as ever"
+        },
+        {
+            "text": "po staremu, a u ciebie?",
+            "meaning": "same as ever, and with you? (one friend)"
         },
         {
             "text": "podkreślić",
@@ -2812,6 +4031,10 @@
         },
         {
             "text": "pozdrowienia"
+        },
+        {
+            "text": "pracować",
+            "meaning": "work (to work)"
         },
         {
             "text": "prawo"
@@ -2967,6 +4190,10 @@
             "meaning": "translate"
         },
         {
+            "text": "przez",
+            "meaning": "slash, in a house number (dziesięć przez trzy: 10/3)"
+        },
+        {
             "text": "przykład",
             "meaning": "an example"
         },
@@ -3000,6 +4227,10 @@
         {
             "text": "równa się",
             "meaning": "equals"
+        },
+        {
+            "text": "serial",
+            "meaning": "a TV series"
         },
         {
             "text": "siedem",
@@ -3048,6 +4279,14 @@
             "meaning": "where are you from? (to a man, formal)"
         },
         {
+            "text": "skąd pani jest?",
+            "meaning": "where are you from? (to a woman, formal)"
+        },
+        {
+            "text": "skąd ty jesteś?",
+            "meaning": "where are you from? (one friend)"
+        },
+        {
             "text": "smacznego",
             "meaning": "enjoy your meal"
         },
@@ -3085,6 +4324,10 @@
             "meaning": "a student (a man) and a student (a woman)"
         },
         {
+            "text": "studiować",
+            "meaning": "study (at a university)"
+        },
+        {
             "text": "syn",
             "meaning": "a son"
         },
@@ -3095,6 +4338,13 @@
         {
             "text": "szesnaście",
             "meaning": "sixteen"
+        },
+        {
+            "text": "szesnaście, dwadzieścia dziewięć, jedenaście",
+            "meaning": "16, 29, 11"
+        },
+        {
+            "text": "szesnaście, dziewiętnaście, jedenaście"
         },
         {
             "text": "sześć",
@@ -3133,6 +4383,9 @@
             "meaning": "six plus three equals nine"
         },
         {
+            "text": "sześć, dwadzieścia dziewięć, jedenaście"
+        },
+        {
             "text": "sześć, siedem, osiem",
             "meaning": "six, seven, eight"
         },
@@ -3146,6 +4399,10 @@
         {
             "text": "są",
             "meaning": "they are"
+        },
+        {
+            "text": "są tam",
+            "meaning": "they are there (women)"
         },
         {
             "text": "są tu",
@@ -3165,6 +4422,9 @@
         },
         {
             "text": "słuchasz"
+        },
+        {
+            "text": "słychać"
         },
         {
             "text": "ta"
@@ -3276,6 +4536,13 @@
             "meaning": "this is a girl"
         },
         {
+            "text": "to jest jego hobby",
+            "meaning": "it is his hobby"
+        },
+        {
+            "text": "to jest jej hobby"
+        },
+        {
             "text": "to jest komputer",
             "meaning": "this is a computer"
         },
@@ -3302,6 +4569,10 @@
         {
             "text": "to jest moje dziecko",
             "meaning": "this is my child"
+        },
+        {
+            "text": "to jest moje hobby",
+            "meaning": "it's my hobby"
         },
         {
             "text": "to jest moje pytanie",
@@ -3377,6 +4648,10 @@
         {
             "text": "to moje dziecko",
             "meaning": "this is my child"
+        },
+        {
+            "text": "to moje hobby",
+            "meaning": "it's my hobby"
         },
         {
             "text": "to moje pytanie",
@@ -3520,6 +4795,10 @@
             "meaning": "they (women) are here"
         },
         {
+            "text": "tutaj są panie",
+            "meaning": "the ladies are here"
+        },
+        {
             "text": "twoja",
             "meaning": "your (one friend, with a feminine noun)"
         },
@@ -3555,6 +4834,44 @@
             "meaning": "you are (one friend)"
         },
         {
+            "text": "uczy się polskiego",
+            "meaning": "he is learning Polish; she is learning Polish"
+        },
+        {
+            "text": "uczysz się polskiego",
+            "meaning": "you are learning Polish (one friend)"
+        },
+        {
+            "text": "uczę"
+        },
+        {
+            "text": "uczę się polskiego",
+            "meaning": "I am learning Polish"
+        },
+        {
+            "text": "uczę się polskiego, bo moja dziewczyna jest z Polski",
+            "meaning": "I am learning Polish because my girlfriend is from Poland"
+        },
+        {
+            "text": "uczę się polskiego, bo moja mama jest z Polski"
+        },
+        {
+            "text": "uczę się polskiego, bo mój chłopak jest z Polski",
+            "meaning": "I am learning Polish because my boyfriend is from Poland"
+        },
+        {
+            "text": "uczę się polskiego, żeby pracować w Polsce",
+            "meaning": "I am learning Polish to work in Poland"
+        },
+        {
+            "text": "uczę się polskiego, żeby studiować w Polsce",
+            "meaning": "I am learning Polish to study in Poland"
+        },
+        {
+            "text": "ulica",
+            "meaning": "a street"
+        },
+        {
             "text": "uniwersalnie"
         },
         {
@@ -3566,11 +4883,47 @@
             "meaning": "fill in; complete"
         },
         {
+            "text": "w Berlinie",
+            "meaning": "in Berlin"
+        },
+        {
+            "text": "w Krakowie",
+            "meaning": "in Kraków"
+        },
+        {
+            "text": "w Krakowie mieszkam",
+            "meaning": "I live in Kraków"
+        },
+        {
+            "text": "w Krakowie mieszkamy",
+            "meaning": "we live in Kraków"
+        },
+        {
+            "text": "w Londynie",
+            "meaning": "in London"
+        },
+        {
+            "text": "w Londynie mieszkam",
+            "meaning": "I live in London"
+        },
+        {
+            "text": "w Polsce",
+            "meaning": "in Poland"
+        },
+        {
+            "text": "w Warszawie",
+            "meaning": "in Warsaw"
+        },
+        {
             "text": "w poniedziałek"
         },
         {
             "text": "w porządku",
             "meaning": "all right; fine"
+        },
+        {
+            "text": "w tenisa",
+            "meaning": "tennis (after grać: gram w tenisa)"
         },
         {
             "text": "widzenia"
@@ -3606,12 +4959,28 @@
             "meaning": "everything"
         },
         {
+            "text": "wszystko dobrze",
+            "meaning": "everything is fine"
+        },
+        {
+            "text": "wszystko w porządku",
+            "meaning": "everything is all right"
+        },
+        {
             "text": "wszystko w porządku",
             "meaning": "everything is fine"
         },
         {
+            "text": "wszystko w porządku, a u pana?",
+            "meaning": "everything is all right, and with you? (to a man, formal)"
+        },
+        {
             "text": "wy",
             "meaning": "you (several people)"
+        },
+        {
+            "text": "wy mieszkacie w Warszawie?",
+            "meaning": "do you live in Warsaw? (several people)"
         },
         {
             "text": "wybrać",
@@ -3625,8 +4994,24 @@
             "meaning": "from England"
         },
         {
+            "text": "z Francji",
+            "meaning": "from France"
+        },
+        {
+            "text": "z Hiszpanii",
+            "meaning": "from Spain"
+        },
+        {
+            "text": "z Niemiec",
+            "meaning": "from Germany"
+        },
+        {
             "text": "z Polski",
             "meaning": "from Poland"
+        },
+        {
+            "text": "z Włoch",
+            "meaning": "from Italy"
         },
         {
             "text": "zapraszam"
@@ -3665,8 +5050,16 @@
             "meaning": "exercise number two"
         },
         {
+            "text": "Świetnie! A dlaczego uczysz się polskiego?",
+            "meaning": "Great! And why are you learning Polish?"
+        },
+        {
             "text": "Świetnie! A dziesięć minus cztery?",
             "meaning": "Great! And ten minus four?"
+        },
+        {
+            "text": "Świetnie! Dziękuję, to wszystko. Do widzenia!",
+            "meaning": "Great! Thank you, that's all. Goodbye!"
         },
         {
             "text": "Świetnie! Na razie, do jutra!",
@@ -3697,6 +5090,23 @@
         {
             "text": "źle",
             "meaning": "badly; bad"
+        },
+        {
+            "text": "Żeby mówić w domu po polsku."
+        },
+        {
+            "text": "Żeby pracować w Polsce.",
+            "meaning": "I am learning Polish to work in Poland."
+        },
+        {
+            "text": "Żeby pracować w Warszawie."
+        },
+        {
+            "text": "Żeby studiować w Polsce."
+        },
+        {
+            "text": "żeby",
+            "meaning": "so that; to (żeby pracować: to work)"
         },
         {
             "text": "żel"
@@ -3892,6 +5302,34 @@
             "hash": "8f34a020d202"
         },
         {
+            "id": "chat-catching-up/t1/2",
+            "hash": "1f661b09ad27"
+        },
+        {
+            "id": "chat-catching-up/t1/3",
+            "hash": "18e26a8b9731"
+        },
+        {
+            "id": "chat-catching-up/t2/2",
+            "hash": "d8872202c393"
+        },
+        {
+            "id": "chat-catching-up/t2/3",
+            "hash": "d1fe590d8f99"
+        },
+        {
+            "id": "chat-catching-up/t3/2",
+            "hash": "ed8d6bce60a6"
+        },
+        {
+            "id": "chat-catching-up/t4/3",
+            "hash": "7ae34c090c38"
+        },
+        {
+            "id": "chat-catching-up/t5/2",
+            "hash": "708709682061"
+        },
+        {
             "id": "chat-front-desk/t1/2",
             "hash": "927ff816a73c"
         },
@@ -4056,6 +5494,50 @@
             "hash": "ac3691643ef3"
         },
         {
+            "id": "chat-your-details/t1/2",
+            "hash": "38f3180e9686"
+        },
+        {
+            "id": "chat-your-details/t1/3",
+            "hash": "369c11714313"
+        },
+        {
+            "id": "chat-your-details/t2/2",
+            "hash": "cb75d7b6020f"
+        },
+        {
+            "id": "chat-your-details/t2/3",
+            "hash": "fa76a503c9ae"
+        },
+        {
+            "id": "chat-your-details/t3/2",
+            "hash": "20a5fa26e3b0"
+        },
+        {
+            "id": "chat-your-details/t3/3",
+            "hash": "ebd1255c8de2"
+        },
+        {
+            "id": "chat-your-details/t4/2",
+            "hash": "d964256252a7"
+        },
+        {
+            "id": "chat-your-details/t4/3",
+            "hash": "b791f9d7c2d1"
+        },
+        {
+            "id": "chat-your-details/t5/2",
+            "hash": "cb08c38f0c98"
+        },
+        {
+            "id": "chat-your-details/t5/3",
+            "hash": "2d0615ad13d3"
+        },
+        {
+            "id": "chat-your-details/t6/2",
+            "hash": "6051efc00413"
+        },
+        {
             "id": "kpk1-l00-a-t01",
             "hash": "7c7dac3e44d8"
         },
@@ -4123,6 +5605,70 @@
         {
             "id": "kpk1-l01-g-t01",
             "hash": "0121dbda5c74"
+        },
+        {
+            "id": "kpk1-l02-a-t01",
+            "hash": "468f4e37e8ed"
+        },
+        {
+            "id": "kpk1-l02-b1-t01",
+            "hash": "527b1b8faa29"
+        },
+        {
+            "id": "kpk1-l02-b2-t01",
+            "hash": "417680c29f4a"
+        },
+        {
+            "id": "kpk1-l02-c-t01",
+            "hash": "e21d5e701b98"
+        },
+        {
+            "id": "kpk1-l02-c-t02",
+            "hash": "a5b58df730cd"
+        },
+        {
+            "id": "kpk1-l02-d1-t01",
+            "hash": "41e980d58047"
+        },
+        {
+            "id": "kpk1-l02-d2-t01",
+            "hash": "63563b277700"
+        },
+        {
+            "id": "kpk1-l02-d3-t01",
+            "hash": "b8409b5a107c"
+        },
+        {
+            "id": "kpk1-l02-d4-t01",
+            "hash": "6bb9f15903ae"
+        },
+        {
+            "id": "kpk1-l02-d4-t02",
+            "hash": "4c5116fcce02"
+        },
+        {
+            "id": "kpk1-l02-e-t01",
+            "hash": "9c41f4565bc6"
+        },
+        {
+            "id": "kpk1-l02-e-t02",
+            "hash": "e3495ca51f72"
+        },
+        {
+            "id": "kpk1-l02-f1-t01",
+            "hash": "bc88ec93589a"
+        },
+        {
+            "id": "kpk1-l02-f2-t01",
+            "hash": "e0817fa21f29"
+        },
+        {
+            "id": "kpk1-l02-f2-t02",
+            "hash": "fa472f025fbd"
+        },
+        {
+            "id": "kpk1-l02-g-t01",
+            "hash": "2f09de5026a0"
         }
     ]
 }

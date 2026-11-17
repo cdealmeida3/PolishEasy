@@ -1,0 +1,314 @@
+{
+  "id": "kpk1-l02-f1",
+  "section": {
+    "letter": "F",
+    "heading": "Dlaczego uczysz się polskiego?",
+    "meaning": {
+      "en": "Why are you learning Polish?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-f1-t01",
+      "before": "kpk1-l02-f1-e01",
+      "title": {
+        "en": "Why Polish?"
+      },
+      "body": {
+        "en": "*Dlaczego?* asks why: *dlaczego uczysz się polskiego?*. Answer with *bo* (because) and a whole sentence: *uczę się polskiego, bo moja dziewczyna jest z Polski*. About someone else it is *uczy się polskiego*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f1-e01",
+      "prompt": "dlaczego",
+      "options": [
+        {
+          "en": "where"
+        },
+        {
+          "en": "where from"
+        },
+        {
+          "en": "why"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dlaczego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f1-e02",
+      "prompt": "uczę się polskiego",
+      "options": [
+        {
+          "en": "I am learning Polish"
+        },
+        {
+          "en": "you are learning Polish (one friend)"
+        },
+        {
+          "en": "I speak Polish"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ucze-sie-polskiego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f1-e03",
+      "prompt": "uczysz się polskiego",
+      "options": [
+        {
+          "en": "I am learning Polish"
+        },
+        {
+          "en": "you are learning Polish (one friend)"
+        },
+        {
+          "en": "you speak (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "uczysz-sie-polskiego"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-f1-e04",
+      "prompt": {
+        "en": "why are you learning Polish? (one friend)"
+      },
+      "acceptedAnswers": [
+        "dlaczego uczysz się polskiego?"
+      ],
+      "distractors": [
+        "uczę",
+        "bo"
+      ],
+      "items": [
+        "dlaczego",
+        "uczysz-sie-polskiego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f1-e05",
+      "prompt": "bo",
+      "options": [
+        {
+          "en": "but"
+        },
+        {
+          "en": "and"
+        },
+        {
+          "en": "because"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f1-e06",
+      "prompt": "chłopak",
+      "options": [
+        {
+          "en": "a boy; a boyfriend"
+        },
+        {
+          "en": "a girl; a girlfriend"
+        },
+        {
+          "en": "a brother"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chlopak"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f1-e07",
+      "prompt": "dziewczyna",
+      "options": [
+        {
+          "en": "a boy; a boyfriend"
+        },
+        {
+          "en": "a girl; a girlfriend"
+        },
+        {
+          "en": "a sister"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dziewczyna"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-f1-e08",
+      "text": "uczę się polskiego, bo moja dziewczyna jest z Polski",
+      "meaning": {
+        "en": "I am learning Polish because my girlfriend is from Poland"
+      },
+      "distractors": [
+        "uczę się polskiego, bo mój chłopak jest z Polski",
+        "uczę się polskiego, bo moja mama jest z Polski"
+      ],
+      "items": [
+        "ucze-sie-polskiego",
+        "bo",
+        "moja",
+        "dziewczyna",
+        "byc-jest",
+        "z-polski"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f1-e09",
+      "prompt": "uczy się polskiego",
+      "options": [
+        {
+          "en": "I am learning Polish"
+        },
+        {
+          "en": "you are learning Polish (one friend)"
+        },
+        {
+          "en": "he is learning Polish; she is learning Polish"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "uczy-sie-polskiego"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-f1-e10",
+      "prompt": {
+        "en": "why is she learning Polish?"
+      },
+      "acceptedAnswers": [
+        "dlaczego ona uczy się polskiego?"
+      ],
+      "items": [
+        "dlaczego",
+        "ona",
+        "uczy-sie-polskiego"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-f1-e11",
+      "prompt": {
+        "en": "Adam is learning Polish because Ewa is from Poland"
+      },
+      "acceptedAnswers": [
+        "Adam uczy się polskiego, bo Ewa jest z Polski"
+      ],
+      "distractors": [
+        "uczę",
+        "Anglii"
+      ],
+      "items": [
+        "adam",
+        "uczy-sie-polskiego",
+        "bo",
+        "ewa",
+        "byc-jest",
+        "z-polski"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-f1-e12",
+      "acceptedAnswers": [
+        "dlaczego uczysz się polskiego?"
+      ],
+      "meaning": {
+        "en": "why are you learning Polish? (one friend)"
+      },
+      "items": [
+        "dlaczego",
+        "uczysz-sie-polskiego"
+      ],
+      "readingAnswers": [
+        "dlaczego ty uczysz się polskiego?"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-f1-e13",
+      "prompt": {
+        "en": "I am learning Polish because my boyfriend is from Poland"
+      },
+      "acceptedAnswers": [
+        "uczę się polskiego, bo mój chłopak jest z Polski",
+        "ja uczę się polskiego, bo mój chłopak jest z Polski"
+      ],
+      "items": [
+        "ucze-sie-polskiego",
+        "bo",
+        "moj",
+        "chlopak",
+        "byc-jest",
+        "z-polski"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l02-f1-e14",
+      "pairs": [
+        {
+          "polish": "dlaczego",
+          "meaning": {
+            "en": "why"
+          }
+        },
+        {
+          "polish": "bo",
+          "meaning": {
+            "en": "because"
+          }
+        },
+        {
+          "polish": "chłopak",
+          "meaning": {
+            "en": "a boyfriend"
+          }
+        },
+        {
+          "polish": "dziewczyna",
+          "meaning": {
+            "en": "a girlfriend"
+          }
+        }
+      ],
+      "items": [
+        "dlaczego",
+        "bo",
+        "chlopak",
+        "dziewczyna"
+      ]
+    }
+  ]
+}

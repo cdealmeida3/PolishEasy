@@ -1,0 +1,424 @@
+{
+  "items": [
+    {
+      "id": "adres",
+      "text": "adres",
+      "meaning": {
+        "en": "an address"
+      }
+    },
+    {
+      "id": "ulica",
+      "text": "ulica",
+      "meaning": {
+        "en": "a street"
+      }
+    },
+    {
+      "id": "numer-telefonu",
+      "text": "numer telefonu",
+      "meaning": {
+        "en": "a phone number"
+      }
+    },
+    {
+      "id": "mieszkanie",
+      "text": "mieszkanie",
+      "meaning": {
+        "en": "a flat"
+      }
+    },
+    {
+      "id": "przez",
+      "text": "przez",
+      "meaning": {
+        "en": "slash, in a house number (dziesięć przez trzy: 10/3)"
+      }
+    },
+    {
+      "id": "jaki",
+      "text": "jaki",
+      "meaning": {
+        "en": "what (asking about a masculine noun: jaki jest twój adres?)"
+      }
+    },
+    {
+      "id": "co-u-ciebie",
+      "text": "co u ciebie?",
+      "meaning": {
+        "en": "how are things with you? (one friend)"
+      },
+      "register": "informal"
+    },
+    {
+      "id": "co-u-pana-slychac",
+      "text": "co u pana słychać?",
+      "meaning": {
+        "en": "how are things with you? (to a man, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "co-u-pani-slychac",
+      "text": "co u pani słychać?",
+      "meaning": {
+        "en": "how are things with you? (to a woman, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "co-nowego",
+      "text": "co nowego?",
+      "meaning": {
+        "en": "what's new?"
+      },
+      "register": "universal"
+    },
+    {
+      "id": "a-u-ciebie",
+      "text": "a u ciebie?",
+      "meaning": {
+        "en": "and with you? (one friend)"
+      },
+      "register": "informal"
+    },
+    {
+      "id": "a-u-pana",
+      "text": "a u pana?",
+      "meaning": {
+        "en": "and with you? (to a man, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "a-u-pani",
+      "text": "a u pani?",
+      "meaning": {
+        "en": "and with you? (to a woman, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "wszystko-dobrze",
+      "text": "wszystko dobrze",
+      "meaning": {
+        "en": "everything is fine"
+      },
+      "register": "universal"
+    },
+    {
+      "id": "wszystko-w-porzadku",
+      "text": "wszystko w porządku",
+      "meaning": {
+        "en": "everything is all right"
+      },
+      "register": "universal"
+    },
+    {
+      "id": "po-staremu",
+      "text": "po staremu",
+      "meaning": {
+        "en": "same as ever"
+      },
+      "register": "universal"
+    },
+    {
+      "id": "nic-nowego",
+      "text": "nic nowego",
+      "meaning": {
+        "en": "nothing new"
+      },
+      "register": "universal"
+    },
+    {
+      "id": "ono",
+      "text": "ono",
+      "meaning": {
+        "en": "it (a child, or a neuter noun)"
+      }
+    },
+    {
+      "id": "panowie",
+      "text": "panowie",
+      "meaning": {
+        "en": "gentlemen; you (to men, formal)"
+      }
+    },
+    {
+      "id": "panie",
+      "text": "panie",
+      "meaning": {
+        "en": "ladies; you (to women, formal)"
+      }
+    },
+    {
+      "id": "panstwo",
+      "text": "państwo",
+      "meaning": {
+        "en": "Mr and Mrs; you (to a man and a woman, formal)"
+      }
+    },
+    {
+      "id": "skad-jestes",
+      "text": "skąd jesteś?",
+      "meaning": {
+        "en": "where are you from? (one friend)"
+      },
+      "register": "informal"
+    },
+    {
+      "id": "skad-pan-jest",
+      "text": "skąd pan jest?",
+      "meaning": {
+        "en": "where are you from? (to a man, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "skad-pani-jest",
+      "text": "skąd pani jest?",
+      "meaning": {
+        "en": "where are you from? (to a woman, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "z-niemiec",
+      "text": "z Niemiec",
+      "meaning": {
+        "en": "from Germany"
+      }
+    },
+    {
+      "id": "z-hiszpanii",
+      "text": "z Hiszpanii",
+      "meaning": {
+        "en": "from Spain"
+      }
+    },
+    {
+      "id": "z-francji",
+      "text": "z Francji",
+      "meaning": {
+        "en": "from France"
+      }
+    },
+    {
+      "id": "z-wloch",
+      "text": "z Włoch",
+      "meaning": {
+        "en": "from Italy"
+      }
+    },
+    {
+      "id": "mieszkac-mieszkam",
+      "text": "mieszkam",
+      "meaning": {
+        "en": "I live"
+      }
+    },
+    {
+      "id": "mieszkac-mieszkasz",
+      "text": "mieszkasz",
+      "meaning": {
+        "en": "you live (one friend)"
+      }
+    },
+    {
+      "id": "mieszkac-mieszka",
+      "text": "mieszka",
+      "meaning": {
+        "en": "he lives; she lives"
+      }
+    },
+    {
+      "id": "mieszkac-mieszkamy",
+      "text": "mieszkamy",
+      "meaning": {
+        "en": "we live"
+      }
+    },
+    {
+      "id": "mieszkac-mieszkacie",
+      "text": "mieszkacie",
+      "meaning": {
+        "en": "you live (several people)"
+      }
+    },
+    {
+      "id": "mieszkac-mieszkaja",
+      "text": "mieszkają",
+      "meaning": {
+        "en": "they live"
+      }
+    },
+    {
+      "id": "w-krakowie",
+      "text": "w Krakowie",
+      "meaning": {
+        "en": "in Kraków"
+      }
+    },
+    {
+      "id": "w-warszawie",
+      "text": "w Warszawie",
+      "meaning": {
+        "en": "in Warsaw"
+      }
+    },
+    {
+      "id": "w-londynie",
+      "text": "w Londynie",
+      "meaning": {
+        "en": "in London"
+      }
+    },
+    {
+      "id": "w-berlinie",
+      "text": "w Berlinie",
+      "meaning": {
+        "en": "in Berlin"
+      }
+    },
+    {
+      "id": "grac-gram",
+      "text": "gram",
+      "meaning": {
+        "en": "I play"
+      }
+    },
+    {
+      "id": "grac-grasz",
+      "text": "grasz",
+      "meaning": {
+        "en": "you play (one friend)"
+      }
+    },
+    {
+      "id": "w-tenisa",
+      "text": "w tenisa",
+      "meaning": {
+        "en": "tennis (after grać: gram w tenisa)"
+      }
+    },
+    {
+      "id": "czytac-czytam",
+      "text": "czytam",
+      "meaning": {
+        "en": "I read"
+      }
+    },
+    {
+      "id": "ogladac-ogladam",
+      "text": "oglądam",
+      "meaning": {
+        "en": "I watch"
+      }
+    },
+    {
+      "id": "serial",
+      "text": "serial",
+      "meaning": {
+        "en": "a TV series"
+      }
+    },
+    {
+      "id": "kochac-kocham",
+      "text": "kocham",
+      "meaning": {
+        "en": "I love"
+      }
+    },
+    {
+      "id": "krakow",
+      "text": "Kraków",
+      "meaning": {
+        "en": "Kraków (a city in Poland)"
+      }
+    },
+    {
+      "id": "dlaczego",
+      "text": "dlaczego",
+      "meaning": {
+        "en": "why"
+      }
+    },
+    {
+      "id": "ucze-sie-polskiego",
+      "text": "uczę się polskiego",
+      "meaning": {
+        "en": "I am learning Polish"
+      }
+    },
+    {
+      "id": "uczysz-sie-polskiego",
+      "text": "uczysz się polskiego",
+      "meaning": {
+        "en": "you are learning Polish (one friend)"
+      }
+    },
+    {
+      "id": "uczy-sie-polskiego",
+      "text": "uczy się polskiego",
+      "meaning": {
+        "en": "he is learning Polish; she is learning Polish"
+      }
+    },
+    {
+      "id": "bo",
+      "text": "bo",
+      "meaning": {
+        "en": "because"
+      }
+    },
+    {
+      "id": "zeby",
+      "text": "żeby",
+      "meaning": {
+        "en": "so that; to (żeby pracować: to work)"
+      }
+    },
+    {
+      "id": "pracowac",
+      "text": "pracować",
+      "meaning": {
+        "en": "work (to work)"
+      }
+    },
+    {
+      "id": "studiowac",
+      "text": "studiować",
+      "meaning": {
+        "en": "study (at a university)"
+      }
+    },
+    {
+      "id": "w-polsce",
+      "text": "w Polsce",
+      "meaning": {
+        "en": "in Poland"
+      }
+    },
+    {
+      "id": "hobby",
+      "text": "hobby",
+      "meaning": {
+        "en": "a hobby"
+      }
+    },
+    {
+      "id": "jego",
+      "text": "jego",
+      "meaning": {
+        "en": "his"
+      }
+    },
+    {
+      "id": "jej",
+      "text": "jej",
+      "meaning": {
+        "en": "her (whose? jej mama: her mum)"
+      }
+    }
+  ]
+}

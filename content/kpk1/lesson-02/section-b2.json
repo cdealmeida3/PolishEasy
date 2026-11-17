@@ -1,0 +1,275 @@
+{
+  "id": "kpk1-l02-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Co słychać?",
+    "meaning": {
+      "en": "How are things?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-b2-t01",
+      "before": "kpk1-l02-b2-e01",
+      "title": {
+        "en": "All is well"
+      },
+      "body": {
+        "en": "The answer is *dziękuję* and *wszystko dobrze*, *wszystko w porządku* or *wszystko świetnie*. *Po staremu* is \"same as ever\", and *nic nowego* is \"nothing new\". Then turn the question back: *a u ciebie?*"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b2-e01",
+      "prompt": "wszystko dobrze",
+      "options": [
+        {
+          "en": "nothing new"
+        },
+        {
+          "en": "everything is fine"
+        },
+        {
+          "en": "very nice to meet you"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wszystko-dobrze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b2-e02",
+      "prompt": "wszystko w porządku",
+      "options": [
+        {
+          "en": "same as ever"
+        },
+        {
+          "en": "see you"
+        },
+        {
+          "en": "everything is all right"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wszystko-w-porzadku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b2-e03",
+      "prompt": "po staremu",
+      "options": [
+        {
+          "en": "same as ever"
+        },
+        {
+          "en": "everything is fine"
+        },
+        {
+          "en": "what's new?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "po-staremu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b2-e04",
+      "prompt": "nic nowego",
+      "options": [
+        {
+          "en": "same as ever"
+        },
+        {
+          "en": "nothing new"
+        },
+        {
+          "en": "everything is all right"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nic-nowego"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-b2-e05",
+      "text": "po staremu",
+      "meaning": {
+        "en": "same as ever"
+      },
+      "distractors": [
+        "nic nowego",
+        "w porządku"
+      ],
+      "items": [
+        "po-staremu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-b2-e06",
+      "prompt": {
+        "en": "thank you, everything is fine, and with you? (one friend)"
+      },
+      "acceptedAnswers": [
+        "dziękuję, wszystko dobrze, a u ciebie?"
+      ],
+      "distractors": [
+        "pana",
+        "nowego"
+      ],
+      "items": [
+        "dziekuje",
+        "wszystko-dobrze",
+        "a-u-ciebie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-b2-e07",
+      "acceptedAnswers": [
+        "nic nowego"
+      ],
+      "meaning": {
+        "en": "nothing new"
+      },
+      "items": [
+        "nic-nowego"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-b2-e08",
+      "prompt": {
+        "en": "everything is all right, and with you? (to a man, formal)"
+      },
+      "acceptedAnswers": [
+        "wszystko w porządku, a u pana?",
+        "dziękuję, wszystko w porządku, a u pana?"
+      ],
+      "items": [
+        "wszystko-w-porzadku",
+        "a-u-pana"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-b2-e09",
+      "prompt": {
+        "en": "same as ever, and with you? (one friend)"
+      },
+      "acceptedAnswers": [
+        "po staremu, a u ciebie?"
+      ],
+      "distractors": [
+        "pana",
+        "nic"
+      ],
+      "items": [
+        "po-staremu",
+        "a-u-ciebie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-b2-e10",
+      "text": "wszystko w porządku",
+      "meaning": {
+        "en": "everything is all right"
+      },
+      "distractors": [
+        "nic nowego",
+        "po staremu"
+      ],
+      "items": [
+        "wszystko-w-porzadku"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-b2-e11",
+      "prompt": {
+        "en": "nothing new"
+      },
+      "acceptedAnswers": [
+        "nic nowego"
+      ],
+      "items": [
+        "nic-nowego"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l02-b2-e12",
+      "pairs": [
+        {
+          "polish": "wszystko dobrze",
+          "meaning": {
+            "en": "everything is fine"
+          }
+        },
+        {
+          "polish": "po staremu",
+          "meaning": {
+            "en": "same as ever"
+          }
+        },
+        {
+          "polish": "nic nowego",
+          "meaning": {
+            "en": "nothing new"
+          }
+        },
+        {
+          "polish": "co nowego?",
+          "meaning": {
+            "en": "what's new?"
+          }
+        },
+        {
+          "polish": "a u ciebie?",
+          "meaning": {
+            "en": "and with you? (one friend)"
+          }
+        }
+      ],
+      "items": [
+        "wszystko-dobrze",
+        "po-staremu",
+        "nic-nowego",
+        "co-nowego",
+        "a-u-ciebie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-b2-e13",
+      "text": "dziękuję, wszystko świetnie",
+      "meaning": {
+        "en": "thank you, everything is great"
+      },
+      "distractors": [
+        "dziękuję, nic nowego",
+        "dziękuję, po staremu"
+      ],
+      "items": [
+        "dziekuje",
+        "wszystko",
+        "swietnie"
+      ]
+    }
+  ]
+}

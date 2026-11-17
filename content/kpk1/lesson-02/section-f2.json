@@ -1,0 +1,331 @@
+{
+  "id": "kpk1-l02-f2",
+  "section": {
+    "letter": "F",
+    "heading": "Dlaczego uczysz się polskiego?",
+    "meaning": {
+      "en": "Why are you learning Polish?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-f2-t01",
+      "before": "kpk1-l02-f2-e01",
+      "title": {
+        "en": "Żeby: so that"
+      },
+      "body": {
+        "en": "*Żeby* (so that, to) is followed by a verb's basic form, the *bezokolicznik*: *uczę się polskiego, żeby pracować w Polsce*, or *żeby studiować w Polsce*. A hobby is another reason: *to moje hobby*."
+      }
+    },
+    {
+      "id": "kpk1-l02-f2-t02",
+      "before": "kpk1-l02-f2-e09",
+      "title": {
+        "en": "His and her"
+      },
+      "body": {
+        "en": "\"His\" is *jego* and \"her\" is *jej*, and unlike *mój* and *moja* they never change: *jego mama*, *jego chłopak*, *jej mama*, *jej chłopak*."
+      },
+      "kind": "uwaga"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f2-e01",
+      "prompt": "żeby",
+      "options": [
+        {
+          "en": "so that; to (żeby pracować: to work)"
+        },
+        {
+          "en": "because"
+        },
+        {
+          "en": "but"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zeby"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f2-e02",
+      "prompt": "pracować",
+      "options": [
+        {
+          "en": "study (at a university)"
+        },
+        {
+          "en": "work (to work)"
+        },
+        {
+          "en": "read"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pracowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f2-e03",
+      "prompt": "studiować",
+      "options": [
+        {
+          "en": "work (to work)"
+        },
+        {
+          "en": "play"
+        },
+        {
+          "en": "study (at a university)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "studiowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f2-e04",
+      "prompt": "w Polsce",
+      "options": [
+        {
+          "en": "in Poland"
+        },
+        {
+          "en": "in Kraków"
+        },
+        {
+          "en": "from Poland"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-polsce"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-f2-e05",
+      "prompt": {
+        "en": "I am learning Polish to work in Poland"
+      },
+      "acceptedAnswers": [
+        "uczę się polskiego, żeby pracować w Polsce"
+      ],
+      "distractors": [
+        "studiować",
+        "bo"
+      ],
+      "items": [
+        "ucze-sie-polskiego",
+        "zeby",
+        "pracowac",
+        "w-polsce"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-f2-e06",
+      "prompt": {
+        "en": "I am learning Polish to study in Poland"
+      },
+      "acceptedAnswers": [
+        "uczę się polskiego, żeby studiować w Polsce",
+        "ja uczę się polskiego, żeby studiować w Polsce"
+      ],
+      "items": [
+        "ucze-sie-polskiego",
+        "zeby",
+        "studiowac",
+        "w-polsce"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f2-e07",
+      "prompt": "hobby",
+      "options": [
+        {
+          "en": "a language"
+        },
+        {
+          "en": "a hobby"
+        },
+        {
+          "en": "a question"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "hobby"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-f2-e08",
+      "acceptedAnswers": [
+        "to moje hobby"
+      ],
+      "meaning": {
+        "en": "it's my hobby"
+      },
+      "items": [
+        "to",
+        "moje",
+        "hobby"
+      ],
+      "readingAnswers": [
+        "to jest moje hobby"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f2-e09",
+      "prompt": "jego",
+      "options": [
+        {
+          "en": "her (whose? jej mama: her mum)"
+        },
+        {
+          "en": "my (with a masculine noun)"
+        },
+        {
+          "en": "his"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-f2-e10",
+      "prompt": "jej",
+      "options": [
+        {
+          "en": "her (whose? jej mama: her mum)"
+        },
+        {
+          "en": "his"
+        },
+        {
+          "en": "your (one friend, with a feminine noun)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jej"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-f2-e11",
+      "prompt": {
+        "en": "his mum is from Poland"
+      },
+      "acceptedAnswers": [
+        "jego mama jest z Polski"
+      ],
+      "distractors": [
+        "jej",
+        "moja"
+      ],
+      "items": [
+        "jego",
+        "mama",
+        "byc-jest",
+        "z-polski"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-f2-e12",
+      "text": "jej chłopak jest z Hiszpanii",
+      "meaning": {
+        "en": "her boyfriend is from Spain"
+      },
+      "distractors": [
+        "jego chłopak jest z Hiszpanii",
+        "jej chłopak jest z Francji"
+      ],
+      "items": [
+        "jej",
+        "chlopak",
+        "byc-jest",
+        "z-hiszpanii"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-f2-e13",
+      "text": "to jest jego hobby",
+      "meaning": {
+        "en": "it is his hobby"
+      },
+      "distractors": [
+        "to jest jej hobby",
+        "to jest moje hobby"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "jego",
+        "hobby"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-f2-e14",
+      "prompt": {
+        "en": "she is learning Polish because her boyfriend is from Poland"
+      },
+      "acceptedAnswers": [
+        "ona uczy się polskiego, bo jej chłopak jest z Polski"
+      ],
+      "distractors": [
+        "jego",
+        "żeby"
+      ],
+      "items": [
+        "ona",
+        "uczy-sie-polskiego",
+        "bo",
+        "jej",
+        "chlopak",
+        "byc-jest",
+        "z-polski"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-f2-e15",
+      "text": "uczę się polskiego, żeby studiować w Polsce",
+      "meaning": {
+        "en": "I am learning Polish to study in Poland"
+      },
+      "distractors": [
+        "uczę się polskiego, żeby pracować w Polsce",
+        "uczę się polskiego, bo moja mama jest z Polski"
+      ],
+      "items": [
+        "ucze-sie-polskiego",
+        "zeby",
+        "studiowac",
+        "w-polsce"
+      ]
+    }
+  ]
+}

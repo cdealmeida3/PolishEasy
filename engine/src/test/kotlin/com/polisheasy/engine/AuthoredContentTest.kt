@@ -227,12 +227,13 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
             listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7) + listOf(7, 7, 6, 7, 6, 6, 6, 6) +
-                listOf(8, 8, 8, 3, 0) + listOf(5, 0, 7, 6, 8, 8, 1, 1, 0),
+                listOf(8, 8, 8, 3, 0) + listOf(5, 0, 7, 6, 8, 8, 1, 1, 0) +
+                listOf(6, 7, 4, 4, 7, 6, 4, 8, 0, 5, 7, 0),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -255,7 +256,7 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `the book's Level has chapters 0 to 26 with their Polish titles, chapter 0 has five sections and chapter 1 nine`() {
+    fun `the book's Level has chapters 0 to 26 with their Polish titles, chapter 0 has five sections, chapter 1 nine and chapter 2 twelve`() {
         val shelves = CourseEngine(course, InMemoryLearnerProgress(), FakeClock()).shelves()
 
         assertEquals(listOf("a1", "kpk1"), shelves.map { it.id })
@@ -266,8 +267,10 @@ class AuthoredContentTest {
         assertEquals("The first day at school", book[1].subtitle)
         assertEquals(5, book[0].sections)
         assertEquals(9, book[1].sections)
-        assertTrue(book.take(2).none { it.coming })
-        assertTrue(book.drop(2).all { it.coming })
+        assertEquals("Cześć, skąd jesteś?", book[2].title)
+        assertEquals(12, book[2].sections)
+        assertTrue(book.take(3).none { it.coming })
+        assertTrue(book.drop(3).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -587,7 +590,8 @@ class AuthoredContentTest {
 
     @Test
     fun `a number is never used to count anything but years`() {
-        val allowed = numbers + yearWords + listOf("plus", "minus", "równa", "to", "jest")
+        // A house number is joined to its flat's with przez: dziesięć przez trzy is 10/3.
+        val allowed = numbers + yearWords + listOf("plus", "minus", "równa", "to", "jest", "przez")
         spokenSentences.forEach { sentence ->
             sentence.zipWithNext().filter { (number, _) -> number in numbers }.forEach { (number, next) ->
                 assertTrue(next in allowed, "\"${sentence.joinToString(" ")}\" has $next after $number")
@@ -597,9 +601,9 @@ class AuthoredContentTest {
 
     @Test
     fun `mój, moja, moje, twój, twoja and twoje agree with the gender of the noun after them`() {
-        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas")
-        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina")
-        val neuter = setOf("dziecko", "pytanie", "rodzeństwo")
+        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres")
+        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna")
+        val neuter = setOf("dziecko", "pytanie", "rodzeństwo", "hobby")
         val possessives = mapOf(
             "mój" to masculine, "twój" to masculine, "moja" to feminine, "twoja" to feminine, "moje" to neuter, "twoje" to neuter,
         )

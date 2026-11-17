@@ -1,0 +1,254 @@
+{
+  "id": "chat-catching-up",
+  "person": "Ewa",
+  "title": {
+    "en": "Catching up"
+  },
+  "scene": {
+    "en": "You are Adam, and you are in Kraków. Ewa, a classmate, calls to catch up. You play tennis, and you are learning Polish because your girlfriend is from Poland. She is a friend, so talk to her as to a friend."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "co-u-ciebie",
+    "po-staremu",
+    "a-u-ciebie",
+    "wszystko-dobrze",
+    "dzien-dobry",
+    "a-u-pani",
+    "skad-jestes",
+    "nic-nowego",
+    "gdzie",
+    "byc-jestes",
+    "byc-jestem",
+    "w-krakowie",
+    "mieszkac-mieszkam",
+    "w-londynie",
+    "ja",
+    "tez",
+    "grac-grasz",
+    "grac-gram",
+    "w-tenisa",
+    "tak",
+    "to",
+    "moje",
+    "hobby",
+    "swietnie",
+    "a",
+    "dlaczego",
+    "uczysz-sie-polskiego",
+    "ucze-sie-polskiego",
+    "bo",
+    "moja",
+    "dziewczyna",
+    "byc-jest",
+    "z-polski",
+    "zeby",
+    "pracowac",
+    "w-polsce",
+    "rozumiem",
+    "na-razie",
+    "do-jutra",
+    "pa",
+    "do-widzenia"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Co u ciebie?",
+      "meaning": {
+        "en": "Hi! How are things with you?"
+      },
+      "replies": [
+        {
+          "text": "Cześć! Po staremu. A u ciebie?",
+          "meaning": {
+            "en": "Hi! Same as ever. And with you?"
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Cześć! Po staremu. A u ciebie?",
+            "Po staremu. A u ciebie?",
+            "Cześć! Wszystko dobrze. A u ciebie?",
+            "Wszystko dobrze. A u ciebie?"
+          ]
+        },
+        {
+          "text": "Dzień dobry! Po staremu, a u pani?",
+          "meaning": {
+            "en": "Good morning! Same as ever, and with you?"
+          },
+          "register": "formal",
+          "note": {
+            "en": "Ewa is a friend: *cześć* and *a u ciebie?*. *Dzień dobry* and *a u pani?* are for a woman you call *pani*."
+          }
+        },
+        {
+          "text": "Cześć! Skąd jesteś?",
+          "meaning": {
+            "en": "Hi! Where are you from?"
+          },
+          "note": {
+            "en": "Ewa asked how you are. Answer first: *po staremu* or *wszystko dobrze*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Nic nowego. Gdzie jesteś?",
+      "meaning": {
+        "en": "Nothing new. Where are you?"
+      },
+      "replies": [
+        {
+          "text": "Jestem w Krakowie.",
+          "meaning": {
+            "en": "I am in Kraków."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Jestem w Krakowie.",
+            "Ja jestem w Krakowie.",
+            "W Krakowie."
+          ]
+        },
+        {
+          "text": "Jesteś w Krakowie.",
+          "meaning": {
+            "en": "You are in Kraków."
+          },
+          "note": {
+            "en": "*Jesteś* is \"you are\". About yourself it is *jestem*."
+          }
+        },
+        {
+          "text": "Mieszkam w Londynie.",
+          "meaning": {
+            "en": "I live in London."
+          },
+          "note": {
+            "en": "Ewa asked where you are now: *jestem w Krakowie*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Ja też! Grasz w tenisa?",
+      "meaning": {
+        "en": "Me too! Do you play tennis?"
+      },
+      "replies": [
+        {
+          "text": "Tak, gram w tenisa. To moje hobby.",
+          "meaning": {
+            "en": "Yes, I play tennis. It's my hobby."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Tak, gram w tenisa. To moje hobby.",
+            "Tak, gram w tenisa.",
+            "Tak, gram. To moje hobby.",
+            "Tak."
+          ]
+        },
+        {
+          "text": "Tak, grasz w tenisa.",
+          "meaning": {
+            "en": "Yes, you play tennis."
+          },
+          "note": {
+            "en": "*Grasz* is \"you play\". About yourself it is *gram*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Świetnie! A dlaczego uczysz się polskiego?",
+      "meaning": {
+        "en": "Great! And why are you learning Polish?"
+      },
+      "replies": [
+        {
+          "text": "Bo moja dziewczyna jest z Polski.",
+          "meaning": {
+            "en": "Because my girlfriend is from Poland."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Bo moja dziewczyna jest z Polski.",
+            "Uczę się polskiego, bo moja dziewczyna jest z Polski."
+          ]
+        },
+        {
+          "text": "Uczę się polskiego, żeby pracować w Polsce.",
+          "meaning": {
+            "en": "I am learning Polish to work in Poland."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Uczę się polskiego, żeby pracować w Polsce.",
+            "Żeby pracować w Polsce."
+          ]
+        },
+        {
+          "text": "Uczę się polskiego, bo pracować w Polsce.",
+          "meaning": {
+            "en": "I am learning Polish because to work in Poland."
+          },
+          "note": {
+            "en": "*Bo* needs a whole sentence after it. Before a verb's basic form, such as *pracować*, say *żeby*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Rozumiem! Na razie, do jutra!",
+      "meaning": {
+        "en": "I see! Bye for now, see you tomorrow!"
+      },
+      "replies": [
+        {
+          "text": "Pa! Do jutra!",
+          "meaning": {
+            "en": "Bye-bye! See you tomorrow!"
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Pa! Do jutra!",
+            "Na razie!",
+            "Pa!",
+            "Do jutra!",
+            "Cześć! Do jutra!"
+          ]
+        },
+        {
+          "text": "Do widzenia!",
+          "meaning": {
+            "en": "Goodbye!"
+          },
+          "register": "formal",
+          "note": {
+            "en": "*Do widzenia* is formal. To a friend say *pa*, *na razie* or *do jutra*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Pa!",
+      "meaning": {
+        "en": "Bye-bye!"
+      }
+    }
+  ]
+}

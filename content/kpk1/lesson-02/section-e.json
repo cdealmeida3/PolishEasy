@@ -1,0 +1,383 @@
+{
+  "id": "kpk1-l02-e",
+  "section": {
+    "letter": "E",
+    "heading": "Liczebniki 11–29",
+    "meaning": {
+      "en": "Numbers 11 to 29"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-e-t01",
+      "before": "kpk1-l02-e-e01",
+      "title": {
+        "en": "Eleven to nineteen"
+      },
+      "body": {
+        "en": "From 11 to 19 the numbers end in *-naście*: *jedenaście*, *dwanaście*, *trzynaście*. Watch the spelling of three of them: *czternaście* has no *y*, and *piętnaście* and *dziewiętnaście* lose the *ć* of *pięć* and *dziewięć*."
+      }
+    },
+    {
+      "id": "kpk1-l02-e-t02",
+      "before": "kpk1-l02-e-e11",
+      "title": {
+        "en": "Twenty and on"
+      },
+      "body": {
+        "en": "*Dwadzieścia* is 20, and 21 to 29 put a number after it: *dwadzieścia jeden*, *dwadzieścia dwa*, up to *dwadzieścia dziewięć*. A phone number is often said in pairs of digits: *dwanaście, dwadzieścia trzy, trzynaście*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-e-e01",
+      "prompt": "jedenaście",
+      "options": [
+        {
+          "en": "twelve"
+        },
+        {
+          "en": "eleven"
+        },
+        {
+          "en": "twenty"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jedenascie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-e-e02",
+      "prompt": "dwanaście",
+      "options": [
+        {
+          "en": "eleven"
+        },
+        {
+          "en": "two"
+        },
+        {
+          "en": "twelve"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dwanascie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-e-e03",
+      "prompt": "trzynaście",
+      "options": [
+        {
+          "en": "thirteen"
+        },
+        {
+          "en": "thirty"
+        },
+        {
+          "en": "three"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "trzynascie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-e-e04",
+      "prompt": "czternaście",
+      "options": [
+        {
+          "en": "four"
+        },
+        {
+          "en": "fourteen"
+        },
+        {
+          "en": "fifteen"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czternascie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-e-e05",
+      "prompt": "piętnaście",
+      "options": [
+        {
+          "en": "fourteen"
+        },
+        {
+          "en": "five"
+        },
+        {
+          "en": "fifteen"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pietnascie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-e-e06",
+      "prompt": "szesnaście",
+      "options": [
+        {
+          "en": "sixteen"
+        },
+        {
+          "en": "six"
+        },
+        {
+          "en": "seventeen"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "szesnascie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-e-e07",
+      "prompt": "siedemnaście",
+      "options": [
+        {
+          "en": "seven"
+        },
+        {
+          "en": "seventeen"
+        },
+        {
+          "en": "sixteen"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "siedemnascie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-e-e08",
+      "prompt": "osiemnaście",
+      "options": [
+        {
+          "en": "nineteen"
+        },
+        {
+          "en": "eight"
+        },
+        {
+          "en": "eighteen"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "osiemnascie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-e-e09",
+      "prompt": "dziewiętnaście",
+      "options": [
+        {
+          "en": "nineteen"
+        },
+        {
+          "en": "eighteen"
+        },
+        {
+          "en": "nine"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dziewietnascie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-e-e10",
+      "prompt": "dwadzieścia",
+      "options": [
+        {
+          "en": "twelve"
+        },
+        {
+          "en": "twenty"
+        },
+        {
+          "en": "two"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dwadziescia"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-e-e11",
+      "acceptedAnswers": [
+        "dwadzieścia jeden, dwadzieścia dwa, dwadzieścia trzy"
+      ],
+      "meaning": {
+        "en": "twenty-one, twenty-two, twenty-three"
+      },
+      "items": [
+        "dwadziescia",
+        "jeden",
+        "dwa",
+        "trzy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-e-e12",
+      "text": "dwadzieścia osiem",
+      "meaning": {
+        "en": "twenty-eight"
+      },
+      "distractors": [
+        "dwadzieścia siedem",
+        "osiemnaście"
+      ],
+      "items": [
+        "dwadziescia",
+        "osiem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-e-e13",
+      "prompt": {
+        "en": "twenty-five"
+      },
+      "acceptedAnswers": [
+        "dwadzieścia pięć"
+      ],
+      "items": [
+        "dwadziescia",
+        "piec"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-e-e14",
+      "prompt": {
+        "en": "twelve plus seven equals nineteen"
+      },
+      "acceptedAnswers": [
+        "dwanaście plus siedem równa się dziewiętnaście",
+        "dwanaście plus siedem to dziewiętnaście",
+        "dwanaście plus siedem jest dziewiętnaście",
+        "dwanaście plus siedem to jest dziewiętnaście"
+      ],
+      "distractors": [
+        "to",
+        "jest"
+      ],
+      "items": [
+        "dwanascie",
+        "plus",
+        "siedem",
+        "rowna-sie",
+        "dziewietnascie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-e-e15",
+      "text": "szesnaście, dwadzieścia dziewięć, jedenaście",
+      "meaning": {
+        "en": "16, 29, 11"
+      },
+      "distractors": [
+        "sześć, dwadzieścia dziewięć, jedenaście",
+        "szesnaście, dziewiętnaście, jedenaście"
+      ],
+      "items": [
+        "szesnascie",
+        "dwadziescia",
+        "dziewiec",
+        "jedenascie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-e-e16",
+      "prompt": {
+        "en": "eighteen minus five equals thirteen"
+      },
+      "acceptedAnswers": [
+        "osiemnaście minus pięć równa się trzynaście",
+        "osiemnaście minus pięć to trzynaście",
+        "osiemnaście minus pięć jest trzynaście",
+        "osiemnaście minus pięć to jest trzynaście"
+      ],
+      "items": [
+        "osiemnascie",
+        "minus",
+        "piec",
+        "rowna-sie",
+        "trzynascie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-e-e17",
+      "acceptedAnswers": [
+        "siedemnaście, osiemnaście, dziewiętnaście"
+      ],
+      "meaning": {
+        "en": "seventeen, eighteen, nineteen"
+      },
+      "items": [
+        "siedemnascie",
+        "osiemnascie",
+        "dziewietnascie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-e-e18",
+      "prompt": {
+        "en": "my phone number is thirteen, twenty-six, eleven"
+      },
+      "acceptedAnswers": [
+        "mój numer telefonu to trzynaście, dwadzieścia sześć, jedenaście"
+      ],
+      "distractors": [
+        "twój",
+        "szesnaście"
+      ],
+      "items": [
+        "moj",
+        "numer-telefonu",
+        "to",
+        "trzynascie",
+        "dwadziescia",
+        "szesc",
+        "jedenascie"
+      ]
+    }
+  ]
+}
