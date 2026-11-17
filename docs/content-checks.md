@@ -32,7 +32,7 @@ First the file to open, relative to `content/`, then the identifier concerned (l
    ```
 
 4. Run `./gradlew :engine:checkContent`.
-5. If you added or changed any Polish text, a Tip, or the English a Polish text stands for, run `./gradlew :polishcheck:checkPolish`, have what it lists reviewed, and record the review: see [polish-check.md](polish-check.md). CI fails until every sentence has a verdict.
+5. If you added or changed any Polish text, a Tip, or the English a Polish text stands for, run `./gradlew :polishcheck:checkPolish`, have what it lists reviewed, and record the review: see [polish-check.md](polish-check.md). The check before merging, and the build that publishes the app, fail until every sentence has a verdict.
 
 ## What it checks
 

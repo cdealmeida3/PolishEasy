@@ -2,15 +2,26 @@ name: Build
 
 # Keep the release build in this file: versionCode is this workflow's run number, and
 # Google Play only accepts uploads with a higher versionCode than the last one.
+#
+# Every test and check runs before a merge, on the computer that made the change
+# (`./gradlew checkBeforeMerge`, docs/adr/0015-the-checks-run-before-the-merge.md). So pull requests
+# and other branches start no run here, and a merge to the default branch only checks the Polish,
+# builds the app and publishes it as the "latest" release. A merge that changes only docs starts no run.
+# "Run workflow" on the Actions tab runs everything, on any branch.
 
 on:
   push:
-    branches: ["**"]
-  pull_request:
+    branches: ["ccr-6bf7efb8-o771mt"]
+    paths-ignore:
+      - "*.md"
+      - "docs/**"
+      - ".claude/**"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
+# A newer merge cancels the build of the one before it; only the newest is published.
 concurrency:
   group: build-${{ github.ref }}
   cancel-in-progress: true
@@ -18,12 +29,14 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 21
+      # Caches Gradle's downloads and build outputs between runs; runs on the default branch save it.
       - uses: gradle/actions/setup-gradle@v4
       # The upload key lives only in the repository's Actions secrets (docs/release.md).
       - name: Write the upload key
@@ -32,14 +45,24 @@ jobs:
         run: |
           test -n "$UPLOAD_KEYSTORE_BASE64" || { echo "::error::The UPLOAD_KEYSTORE_BASE64 secret is missing (docs/release.md)"; exit 1; }
           echo "$UPLOAD_KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/upload.p12"
-      - name: Test the course engine and the screens, check the Polish and build the app
+      # The Polish check stays on every published build, so no APK or bundle ships from content
+      # with a problem that is not accepted (docs/polish-check.md). It takes seconds.
+      - name: Check the Polish and build the app
+        if: github.event_name == 'push'
         env:
           RELEASE_KEYSTORE_FILE: ${{ runner.temp }}/upload.p12
           RELEASE_KEYSTORE_PASSWORD: ${{ secrets.UPLOAD_KEYSTORE_PASSWORD }}
-        run: ./gradlew :engine:test :polishcheck:test :audio:test :app:testDebugUnitTest :polishcheck:checkPolish :app:assembleDebug :app:assembleRelease :app:bundleRelease
+        run: ./gradlew :polishcheck:checkPolish :app:assembleDebug :app:assembleRelease :app:bundleRelease
+      - name: Run every test and check, and build the app
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          RELEASE_KEYSTORE_FILE: ${{ runner.temp }}/upload.p12
+          RELEASE_KEYSTORE_PASSWORD: ${{ secrets.UPLOAD_KEYSTORE_PASSWORD }}
+        run: ./gradlew checkBeforeMerge
       # A picture of every screen, light, dark and at the largest font size, from ScreenshotsTest (docs/design.md).
+      # Only a run started by hand runs the screen tests that make them.
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && github.event_name == 'workflow_dispatch'
         with:
           name: screenshots
           path: app/build/screenshots/
@@ -50,9 +73,12 @@ jobs:
           name: polish-check
           path: polishcheck/build/polish-check/
           if-no-files-found: ignore
+      # On the default branch the "latest" release holds these files, so they are kept as artifacts
+      # (which count against the repository's storage) only for a run on another branch.
       - name: Name the APK
         run: mv app/build/outputs/apk/debug/app-debug.apk PolishEasy-debug.apk
       - uses: actions/upload-artifact@v4
+        if: github.ref_name != github.event.repository.default_branch
         with:
           name: PolishEasy-debug
           path: PolishEasy-debug.apk
@@ -68,6 +94,7 @@ jobs:
           jarsigner -verify PolishEasy-release.aab | tee aab-verify.txt
           grep -q "jar verified" aab-verify.txt
       - uses: actions/upload-artifact@v4
+        if: github.ref_name != github.event.repository.default_branch
         with:
           name: PolishEasy-release
           path: |
@@ -76,7 +103,7 @@ jobs:
             PolishEasy-release-mapping.txt
           if-no-files-found: error
       - name: Publish the builds as the "latest" release
-        if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
+        if: github.ref_name == github.event.repository.default_branch
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
