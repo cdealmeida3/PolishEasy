@@ -29,6 +29,7 @@ import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
 import androidx.compose.ui.unit.Density
@@ -55,6 +56,9 @@ import com.polisheasy.engine.UnitView
 import java.io.File
 import kotlin.random.Random
 import com.polisheasy.engine.FilePracticeProgress
+import com.polisheasy.engine.InMemoryLearnerProgress
+import com.polisheasy.engine.InMemoryPracticeProgress
+import com.polisheasy.engine.loadCourse
 import com.polisheasy.engine.VerbRound
 import com.polisheasy.engine.VerbStage
 import java.time.LocalTime
@@ -473,6 +477,33 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `the real course's Picture cards in the light theme`() = realPictureCards("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `the real course's Picture cards in the dark theme`() = realPictureCards("dark")
+
+    @Test
+    fun `the real course's Picture cards at the largest font size`() = atTheLargestFontSize { realPictureCards("large") }
+
+    /** Practice as a Learner who has completed the whole real course sees it: every Game open, every picture. */
+    private fun realPictureCards(theme: String) {
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val progress = InMemoryLearnerProgress()
+        course.path.forEachIndexed { index, dailySet ->
+            progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
+        }
+        val engine = CourseEngine(course, progress, clock)
+        open(CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7))))
+        tap(R.string.nav_practice)
+        shot("$theme-60-practice-real")
+        tap(R.string.game_picture_cards)
+        shot("$theme-61-picture-cards-real")
+        screen.onNode(hasText(course.levels.first().units.last().title.getValue("en")) and hasClickAction()).performClick()
+        shot("$theme-62-picture-cards-real-unit")
+    }
+
+    @Test
     fun `Practice and a Round of the Verb challenge in the light theme`() = practiceTour("light")
 
     @Test
@@ -622,6 +653,15 @@ class ScreenshotsTest {
         }
         type(right())
         shot("57-verb-sentence-typing")
+
+        // Picture cards: the pictures, and two cards turned to their words.
+        screen.onNodeWithContentDescription(app.getString(R.string.round_close)).performClick()
+        tap(R.string.game_picture_cards)
+        shot("58-picture-cards")
+        listOf("hello (polite); good morning", "no").forEach { screen.onNodeWithContentDescription(it).performClick() }
+        shot("59-picture-cards-turned")
+        tap(R.string.option_words)
+        shot("59-picture-cards-words")
     }
 
     private fun open(over: CourseViewModel) {

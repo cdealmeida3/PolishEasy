@@ -233,6 +233,17 @@
         <item quantity="one">%d right</item>
         <item quantity="other">%d right</item>
     </plurals>
+    <string name="game_picture_cards">Picture cards</string>
+    <string name="game_picture_cards_note">Turn a card to see the word and hear it.</string>
+    <string name="game_picture_cards_needs">Opens when you learn four words that have a picture.</string>
+    <string name="picture_card_turn">Turn the card</string>
+    <string name="choice_cards">Cards</string>
+    <string name="option_pictures">Pictures</string>
+    <string name="option_words">All words</string>
+    <string name="choice_deck">From</string>
+    <string name="option_all">Everything</string>
+    <string name="option_latest">Latest words</string>
+    <string name="option_tricky">Tricky words</string>
     <string name="game_verb_challenge">Verb challenge</string>
     <string name="game_verb_challenge_note">Pick the form, fill the table, finish the sentence.</string>
     <string name="game_verb_challenge_needs">Opens when you learn your first verb table.</string>

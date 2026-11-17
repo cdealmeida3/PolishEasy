@@ -61,6 +61,9 @@ object Motion {
     /** The size something starts from as it arrives on a screen, such as Home's card when today is done. */
     const val ARRIVE_FROM_SCALE = 0.92f
 
+    /** A tile turning over to show its other face. */
+    const val FLIP_MILLIS = 300
+
     /** How long a right answer in a Game stands before the Round moves on by itself. A tap on "Continue" skips it. */
     const val MOVE_ON_MILLIS = 700L
 
@@ -116,6 +119,10 @@ object Motion {
     /** A word tile reaching its place, a little past it and back. */
     @Composable
     fun tile(): AnimationSpec<Float> = if (reduced()) snap() else tween(TILE_MILLIS, easing = Overshoot)
+
+    /** A tile turning over; the face changes at the half turn. */
+    @Composable
+    fun flip(): AnimationSpec<Float> = if (reduced()) snap() else tween(FLIP_MILLIS, easing = FastOutSlowInEasing)
 
     /** A tick or a cross appearing, with a little bounce. */
     @Composable

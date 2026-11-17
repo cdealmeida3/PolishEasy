@@ -36,6 +36,7 @@ import com.polisheasy.app.ui.screens.WelcomeScreen
 import com.polisheasy.app.ui.components.RoundFrame
 import com.polisheasy.app.ui.screens.practice.GameSetupScreen
 import com.polisheasy.app.ui.screens.practice.PracticeScreen
+import com.polisheasy.app.ui.screens.practice.PictureCardsScreen
 import com.polisheasy.app.ui.screens.practice.RoundResultScreen
 import com.polisheasy.app.ui.screens.practice.RoundScreen
 
@@ -50,6 +51,19 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
         when (val screen = viewModel.screen) {
             Screen.Welcome -> WelcomeScreen(onStart = viewModel::startFromWelcome)
             is Screen.Home, is Screen.Path, is Screen.Practice, is Screen.Settings -> Tabs(screen, viewModel)
+            is Screen.PictureCards -> {
+                BackHandler(onBack = viewModel::leaveGame)
+                DisposableEffect(Unit) { onDispose { player.stop() } }
+                PictureCardsScreen(
+                    screen.view,
+                    sound = screen.sound,
+                    clipOf = viewModel::practiceClipOf,
+                    onPlay = { clip -> player.play(clip.path) },
+                    onKind = viewModel::chooseCards,
+                    onDeck = viewModel::chooseDeck,
+                    onBack = viewModel::leaveGame,
+                )
+            }
             is Screen.GameSetup -> {
                 BackHandler(onBack = viewModel::leaveGame)
                 GameSetupScreen(screen.setup, onChoose = viewModel::choose, onPlay = viewModel::play, onBack = viewModel::leaveGame)

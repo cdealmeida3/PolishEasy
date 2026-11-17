@@ -1,6 +1,7 @@
 package com.polisheasy.engine
 
 import com.polisheasy.engine.CheckerFixture.Companion.CLIPS
+import com.polisheasy.engine.CheckerFixture.Companion.PICTURES
 import com.polisheasy.engine.CheckerFixture.Companion.DAY_1
 import com.polisheasy.engine.CheckerFixture.Companion.DAY_2
 import com.polisheasy.engine.CheckerFixture.Companion.DAY_3
@@ -254,6 +255,54 @@ internal class CheckingContentTest {
     @Test
     fun `a stray file beside the Clip manifest is reported`() {
         assertOnlyProblem(valid.withFile("audio/notes.txt", "to do"), CLIPS, null, "audio/notes.txt")
+    }
+
+    // Pictures
+
+    private val pictured = valid.withPictures(PictureEntry("tak", image = "yes.webp"), PictureEntry("nie", glyph = "✗"))
+
+    @Test
+    fun `a course with pictures passes, and each Item gets its picture`() {
+        assertEquals(emptyList(), problems(pictured))
+        assertEquals(
+            mapOf("tak" to Picture.Image("pictures/yes.webp"), "nie" to Picture.Glyph("✗")),
+            loadCourse(pictured.files()::read).pictures,
+        )
+    }
+
+    @Test
+    fun `a picture for an Item that is not defined is reported`() {
+        assertOnlyProblem(valid.withPictures(PictureEntry("kot", glyph = "k")), PICTURES, "kot", "not defined")
+    }
+
+    @Test
+    fun `a picture with both an image and a glyph, or neither, is reported`() {
+        assertOnlyProblem(valid.withPictures(PictureEntry("tak")), PICTURES, "tak", "an image or a glyph")
+        assertOnlyProblem(valid.withPictures(PictureEntry("tak", image = "yes.webp", glyph = "y")), PICTURES, "tak", "an image or a glyph")
+    }
+
+    @Test
+    fun `an Item with two pictures is reported`() {
+        val twice = valid.withPictures(PictureEntry("tak", image = "yes.webp"), PictureEntry("tak", glyph = "y"))
+
+        assertOnlyProblem(twice, PICTURES, "tak", "more than one picture")
+    }
+
+    @Test
+    fun `a picture with no image file is reported`() {
+        assertOnlyProblem(pictured.without("pictures/yes.webp"), PICTURES, "tak", "pictures/yes.webp")
+    }
+
+    @Test
+    fun `a stray file beside the list of pictures is reported`() {
+        assertOnlyProblem(pictured.withFile("pictures/old.webp", "RIFF"), PICTURES, null, "pictures/old.webp")
+    }
+
+    @Test
+    fun `two Items of one Unit with the same picture are reported`() {
+        val shared = valid.withPictures(PictureEntry("tak", image = "yes.webp"), PictureEntry("nie", image = "yes.webp"))
+
+        assertOnlyProblem(shared, PICTURES, "nie", "the same picture")
     }
 
     // 8: Base Language text

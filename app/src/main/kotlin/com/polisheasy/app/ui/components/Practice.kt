@@ -1,6 +1,7 @@
 package com.polisheasy.app.ui.components
 
 import androidx.annotation.DrawableRes
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -68,24 +69,18 @@ fun SectionHeading(text: String, modifier: Modifier = Modifier) {
 }
 
 /**
- * What stands for a Game: its [icon] on a soft circle. [locked] shows the padlock in its place, so
- * that "not open yet" is not said by colour alone.
+ * What stands for a Game: its picture, [icon]. [locked] shows a padlock on a grey circle in its
+ * place, so that "not open yet" is not said by colour alone.
  */
 @Composable
 fun GameBadge(@DrawableRes icon: Int, modifier: Modifier = Modifier, size: Dp = Size.gameIcon, locked: Boolean = false) {
     val scheme = MaterialTheme.colorScheme
-    Box(
-        contentAlignment = Alignment.Center,
-        modifier = modifier
-            .size(size)
-            .background(if (locked) scheme.surfaceContainerHighest else scheme.primaryContainer, CircleShape),
-    ) {
-        Icon(
-            painterResource(if (locked) R.drawable.ic_lock else icon),
-            contentDescription = null,
-            tint = if (locked) scheme.onSurfaceVariant else scheme.onPrimaryContainer,
-            modifier = Modifier.size(size / 2),
-        )
+    if (locked) {
+        Box(contentAlignment = Alignment.Center, modifier = modifier.size(size).background(scheme.surfaceContainerHighest, CircleShape)) {
+            Icon(painterResource(R.drawable.ic_lock), contentDescription = null, tint = scheme.onSurfaceVariant, modifier = Modifier.size(size / 2))
+        }
+    } else {
+        Image(painterResource(icon), contentDescription = null, modifier = modifier.size(size))
     }
 }
 

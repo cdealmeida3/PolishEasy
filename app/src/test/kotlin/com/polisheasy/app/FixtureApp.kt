@@ -12,7 +12,8 @@ import java.time.ZonedDateTime
  * The course the screen tests play, from `src/test/resources/fixture-course`: one Unit of two
  * Daily Sets, the first with a Tip and exactly one Exercise of each type. It is written in the
  * same files as the real course, so the tests know every right answer and an edit to the real
- * course cannot break them.
+ * course cannot break them. Its pictures are the one thing borrowed: it names images of the real
+ * course, which the app reads from its packaged files.
  */
 fun fixtureCourse(): Course = loadCourse { path ->
     val file = checkNotNull(Course::class.java.classLoader?.getResource("fixture-course/$path")) {

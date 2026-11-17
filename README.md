@@ -45,4 +45,6 @@ The same command writes a picture of every screen, in the light and the dark the
 
 ## More
 
+The pictures in Practice are from Microsoft's [Fluent Emoji](https://github.com/microsoft/fluentui-emoji), used under the MIT licence; its text is packaged with the app. They are made by `tools/make-pictures.py`.
+
 See `GLOSSARY.md` for the project's vocabulary, `docs/adr/` for recorded decisions and [docs/audio.md](docs/audio.md) for how the spoken Polish is made and packaged. [docs/practice.md](docs/practice.md) describes Practice, the Games played after the Daily Set, and how to add one. [docs/authoring.md](docs/authoring.md) has the rules for writing Daily Sets, and [docs/a1-path.md](docs/a1-path.md) outlines the Units of the A1 Path.

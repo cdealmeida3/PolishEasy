@@ -9,9 +9,12 @@ enum class GameGroup { WORDS, PHRASES, VERBS, SOUNDS, NUMBERS }
 
 /**
  * A Game of Practice. [id] is stable: Bests are saved under it. With [fewestWins] the Best is the
- * lowest result, such as the fewest turns; otherwise the highest, such as the most right.
+ * lowest result, such as the fewest turns; otherwise the highest, such as the most right. A Game
+ * without [rounds] is opened and looked at, not played to a result.
  */
-enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = false) {
+enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = false, val rounds: Boolean = true) {
+    /** Nothing is asked: the cards are looked at and listened to. It has no Rounds and no Best. */
+    PICTURE_CARDS("picture-cards", GameGroup.WORDS, rounds = false),
     VERB_CHALLENGE("verb-challenge", GameGroup.VERBS),
 }
 
@@ -130,14 +133,35 @@ internal class Learned(
     progress: LearnerProgress,
     private val language: String,
 ) {
-    val dailySets: List<DailySet> = progress.completedDailySets().keys.let { completed ->
-        course.path.filter { it.id in completed }
+    private val completed: Set<String> = progress.completedDailySets().keys
+
+    val dailySets: List<DailySet> = course.path.filter { it.id in completed }
+
+    /** The Items each completed Daily Set introduced, by its id. */
+    private val introduced: Map<String, List<Item>> = buildMap {
+        val met = mutableSetOf<String>()
+        course.path.forEach { dailySet ->
+            val new = dailySet.itemIds().filter(met::add).mapNotNull(course.itemsById::get)
+            if (dailySet.id in completed) put(dailySet.id, new)
+        }
     }
 
     /** The Items of completed Daily Sets, once each, in Path order. */
     val items: List<Item> = dailySets.flatMap { it.itemIds() }.distinct().mapNotNull(course.itemsById::get)
 
+    /** The learned Items that have a picture. */
+    val pictured: List<Item> = items.filter { it.id in course.pictures }
+
+    /** Each Unit the Learner has completed a Daily Set of, with the Items those Daily Sets introduced. */
+    val units: List<Pair<CourseUnit, List<Item>>> = course.levels.flatMap { it.units }.mapNotNull { unit ->
+        val done = unit.dailySets.filter { it.id in completed }
+        if (done.isEmpty()) null else unit to introducedBy(done)
+    }
+
     val itemProgress: Map<String, ItemProgress> = progress.itemProgress()
+
+    /** The Items [dailySets] introduced, in order. */
+    fun introducedBy(dailySets: List<DailySet>): List<Item> = dailySets.flatMap { introduced[it.id].orEmpty() }
 
     fun localize(text: Localized): String = text.getValue(language)
 }
@@ -148,14 +172,18 @@ internal interface GameRules {
 
     fun state(learned: Learned, sound: Boolean): GameState
 
-    /** What there is to choose, each choice with [wanted]'s option selected where it is offered, or else its first. */
-    fun choices(learned: Learned, wanted: List<String>): List<ChoiceView>
+    /**
+     * What there is to choose, each choice with [wanted]'s option selected where it is offered, or
+     * else its first. Nothing, for a Game with nothing to choose.
+     */
+    fun choices(learned: Learned, wanted: List<String>): List<ChoiceView> = emptyList()
 
     /**
      * A new Round played the [selected] way. [seen] is what this Game has already asked today, to
      * ask something else where it can, and [avoidFirst] what the last Round opened with.
      */
-    fun start(learned: Learned, selected: List<String>, sound: Boolean, random: Random, seen: Set<String>, avoidFirst: String?): Round
+    fun start(learned: Learned, selected: List<String>, sound: Boolean, random: Random, seen: Set<String>, avoidFirst: String?): Round =
+        error("$game has no Rounds")
 }
 
 /** A choice with the option [wanted] selected if it is among [options], or else the first. */
@@ -185,7 +213,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf<GameRules>(VerbChallenge).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(PictureCards, VerbChallenge).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null
@@ -202,7 +230,7 @@ class Practice internal constructor(
                 val of = rules.getValue(game)
                 val state = of.state(learned, sound)
                 val last = bests.lastPlayed(game.id)
-                if (state == GameState.NEEDS_MORE || last == null) {
+                if (state == GameState.NEEDS_MORE || last == null || !game.rounds) {
                     GameView(game, state)
                 } else {
                     // The way it was last played, if that can still be played; its Best is the one to beat.
@@ -225,6 +253,7 @@ class Practice internal constructor(
      * longer is, gives way to the first of its choice. Fails unless the Game has enough to play with.
      */
     fun setup(game: Game, wanted: List<String>? = null): GameSetup {
+        check(game.rounds) { "$game has no Rounds" }
         val of = rules.getValue(game)
         val learned = learned()
         check(of.state(learned, sound = true) != GameState.NEEDS_MORE) { "$game has nothing to play with yet" }
@@ -272,6 +301,18 @@ class Practice internal constructor(
             newBest = better && previous != null,
             first = previous == null,
         )
+    }
+
+    /**
+     * Picture cards: the cards of the [deck] and [kind] wanted, "pictures" or "words". Without
+     * them, or when they are not offered, every card that has a picture. Fails unless Practice is
+     * open and there are enough pictures to show.
+     */
+    fun pictureCards(deck: String? = null, kind: String? = null): PictureCardsView {
+        check(isOpen()) { "Practice is locked until today's Daily Set is completed" }
+        val learned = learned()
+        check(PictureCards.state(learned, sound = true) == GameState.READY) { "There are not enough pictures to show yet" }
+        return PictureCards.view(learned, deck, kind)
     }
 
     /** The Clip that says [polish], whatever its capitals and spacing, or null if there is none. */

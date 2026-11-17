@@ -23,14 +23,15 @@ First the file to open, relative to `content/`, then the identifier concerned (l
 ## After changing content
 
 1. If you added or changed any Polish text, make its audio with `./gradlew :audio:makeClips`, which needs the voice service's key: see [audio.md](audio.md).
-2. If you added Levels, Units, Daily Sets, Exercises or Items, record their identifiers and commit the file:
+2. If you added words that can be pictured, give them pictures: see "Pictures" in [practice.md](practice.md).
+3. If you added Levels, Units, Daily Sets, Exercises or Items, record their identifiers and commit the file:
 
    ```
    ./gradlew :engine:recordContentIds
    ```
 
-3. Run `./gradlew :engine:checkContent`.
-4. If you added or changed any Polish text, a Tip, or the English a Polish text stands for, run `./gradlew :polishcheck:checkPolish`, have what it lists reviewed, and record the review: see [polish-check.md](polish-check.md). CI fails until every sentence has a verdict.
+4. Run `./gradlew :engine:checkContent`.
+5. If you added or changed any Polish text, a Tip, or the English a Polish text stands for, run `./gradlew :polishcheck:checkPolish`, have what it lists reviewed, and record the review: see [polish-check.md](polish-check.md). CI fails until every sentence has a verdict.
 
 ## What it checks
 
@@ -46,6 +47,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 - Every listening Exercise has a Clip for what it speaks.
 - A Daily Set has at most 2 Tips, each before a different one of its Exercises.
 - Word tiles can build every Accepted Answer; a conjugation sentence has exactly one gap; a conjugation table has a form for every person.
+- A picture names an Item that is defined, has an image or a glyph and not both, and no Item has two pictures.
 - A Clip has text, an id made of lower-case letters, digits and single hyphens, and no other Clip says the same text.
 
 ### Shipping rules
@@ -56,6 +58,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 - **Choices.** A `choose_translation` Exercise has at least 2 options, and no two read the same.
 - **Base Language.** Everything the Learner reads in the Base Language has English text that is not blank: Level and Unit titles, Tip titles and bodies, the meaning in a conjugation table, the options of `choose_translation`, the prompt of `type_answer` and `word_tiles`, the `meaning` and `sentenceMeaning` of `conjugation`, the `meaning` of `listen_choose` and `listen_type`, and the `meaning` of an Item. (`BASE_LANGUAGES` lists the languages required.)
 - **Audio.** Every Polish text the app can speak has a Clip, every Clip has its `.ogg` file beside the manifest, every Clip says something the course speaks, and no other file sits beside the manifest.
+- **Pictures.** Every picture's image file is beside the list of pictures, no other file sits there, and no two Items of one Unit have the same picture.
 - **Belonging.** Every `.json` file under `content/` is listed by `course.json`. A Level has Units and a Unit has Daily Sets. A Unit's id starts with its Level's id and a hyphen, a Daily Set's with its Unit's, and an Exercise's or Tip's with its Daily Set's (`a1` → `a1-u01` → `a1-u01-d05` → `a1-u01-d05-e03`).
 - **No id twice.** No two Levels, Units, Daily Sets or Tips share an id.
 - **Shipped identifiers.** See below.

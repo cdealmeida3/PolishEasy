@@ -115,3 +115,40 @@ fun VerbRound.playOut(wrong: Int = 0): VerbRound {
     while (!round.finished) round = round.answerAndMoveOn(correctly = missed++ >= wrong)
     return round
 }
+
+private fun word(id: String) = item(id, id, "$id in English")
+
+/** A Daily Set with one Exercise for each of [items], which it introduces. */
+private fun dayOfWords(id: String, vararg items: String): DailySet =
+    DailySet(id, exercises = items.mapIndexed { index, item -> choose("$id-e${index + 1}", item, item) })
+
+/** The picture of each pictured Item of [wordsCourse]: an image named after it, or for the numbers a numeral. */
+val wordPictures: Map<String, Picture> =
+    listOf("kot", "pies", "dom", "tak", "ryba", "ptak", "mama", "tata", "brat", "siostra")
+        .associateWith<String, Picture> { Picture.Image("pictures/$it.webp") } +
+        mapOf("jeden" to Picture.Glyph("1"), "dwa" to Picture.Glyph("2"))
+
+/**
+ * A course of words for the Games that use pictures. Unit "Animals": w1 teaches kot, pies, dom,
+ * tak and bardzo, w2 ryba and ptak. Unit "Family": w3 teaches jeden and dwa, w4 mama and tata,
+ * w5 brat, w6 siostra and bo. Every word has a picture but bardzo and bo.
+ */
+val wordsCourse = Course(
+    listOf(
+        levelOf(
+            "a1",
+            "A1",
+            unitOf("u1", "Animals", dayOfWords("w1", "kot", "pies", "dom", "tak", "bardzo"), dayOfWords("w2", "ryba", "ptak")),
+            unitOf(
+                "u2",
+                "Family",
+                dayOfWords("w3", "jeden", "dwa"),
+                dayOfWords("w4", "mama", "tata"),
+                dayOfWords("w5", "brat"),
+                dayOfWords("w6", "siostra", "bo"),
+            ),
+        ),
+    ),
+    listOf("kot", "pies", "dom", "tak", "bardzo", "ryba", "ptak", "jeden", "dwa", "mama", "tata", "brat", "siostra", "bo").map(::word),
+    pictures = wordPictures,
+)

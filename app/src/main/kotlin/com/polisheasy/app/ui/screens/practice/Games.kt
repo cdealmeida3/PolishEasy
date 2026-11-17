@@ -20,8 +20,10 @@ internal class GameWords(
 )
 
 internal fun Game.words(): GameWords = when (this) {
+    Game.PICTURE_CARDS ->
+        GameWords(R.string.game_picture_cards, R.string.game_picture_cards_note, R.string.game_picture_cards_needs, R.drawable.game_picture_cards)
     Game.VERB_CHALLENGE ->
-        GameWords(R.string.game_verb_challenge, R.string.game_verb_challenge_note, R.string.game_verb_challenge_needs, R.drawable.ic_bolt)
+        GameWords(R.string.game_verb_challenge, R.string.game_verb_challenge_note, R.string.game_verb_challenge_needs, R.drawable.game_verb_challenge)
 }
 
 @StringRes
@@ -37,6 +39,7 @@ internal fun GameGroup.title(): Int = when (this) {
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
     Game.VERB_CHALLENGE -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.PICTURE_CARDS -> error("Picture cards has no Best")
 }
 
 /** What one thing to choose before a Round is called: "Verb", "Level". */
@@ -45,6 +48,8 @@ internal fun choiceLabel(id: String): String = stringResource(
     when (id) {
         "verb" -> R.string.choice_verb
         "level" -> R.string.choice_level
+        "deck" -> R.string.choice_deck
+        "cards" -> R.string.choice_cards
         else -> error("No name for the choice $id")
     },
 )
@@ -54,6 +59,11 @@ internal fun choiceLabel(id: String): String = stringResource(
 internal fun optionLabel(option: OptionView): String = option.label ?: stringResource(
     when (option.id) {
         "mixed" -> R.string.option_mixed
+        "all" -> R.string.option_all
+        "pictures" -> R.string.option_pictures
+        "words" -> R.string.option_words
+        "latest" -> R.string.option_latest
+        "tricky" -> R.string.option_tricky
         "choose" -> R.string.option_choose
         "type" -> R.string.option_type
         else -> error("No name for the option ${option.id}")

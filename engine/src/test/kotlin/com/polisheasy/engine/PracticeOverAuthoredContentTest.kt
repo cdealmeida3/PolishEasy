@@ -64,4 +64,32 @@ class PracticeOverAuthoredContentTest {
             }
         }
     }
+
+    @Test
+    fun `Picture cards opens after the first Daily Set and shows only pictures of what has been learned`() {
+        assertTrue(course.pictures.size >= 50, "The course has ${course.pictures.size} pictures")
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            assertEquals(GameState.READY, practice.view().games.single { it.game == Game.PICTURE_CARDS }.state, "After $days Daily Sets")
+            val cards = practice.pictureCards()
+            assertEquals(learned.filter { it in course.pictures }.toSet(), cards.cards.map { it.itemId }.toSet(), "After $days Daily Sets")
+            cards.decks.options.forEach { deck ->
+                val inDeck = practice.pictureCards(deck.id)
+                assertEquals(deck.id, inDeck.decks.selected)
+                assertTrue(inDeck.cards.size >= PictureCards.LEAST, "After $days Daily Sets the deck ${deck.id} has ${inDeck.cards.size} cards")
+            }
+        }
+    }
+
+    @Test
+    fun `every picture is of a word that can be pictured without knowing Polish, once`() {
+        // A numeral stands for its number and nothing else.
+        val numerals = course.pictures.filterValues { it is Picture.Glyph }
+        numerals.forEach { (item, picture) ->
+            val text = (picture as Picture.Glyph).text
+            assertTrue(text == "+" || text.toIntOrNull() != null, "$item is drawn as \"$text\"")
+        }
+        assertEquals(numerals.size, numerals.values.toSet().size)
+    }
 }

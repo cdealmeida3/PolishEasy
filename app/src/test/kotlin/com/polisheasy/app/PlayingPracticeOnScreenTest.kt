@@ -15,6 +15,8 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performSemanticsAction
+import androidx.compose.ui.semantics.SemanticsActions
 import androidx.compose.ui.test.performTextInput
 import com.polisheasy.app.RecordingClips.Played
 import com.polisheasy.app.ui.PolishEasyApp
@@ -237,6 +239,59 @@ class PlayingPracticeOnScreenTest {
         clips.asked.clear()
         playOut()
         assertTrue(clips.played.isEmpty())
+    }
+
+    @Test
+    fun `Picture cards shows the pictures of the words learned, and a card turns to show its word and say it`() {
+        openPracticeAfterTodaysDailySet()
+        tap(R.string.game_picture_cards)
+
+        // Daily Set 1 taught four words that have a picture; a picture is named by what it means.
+        listOf("hello (polite); good morning", "thank you", "goodbye", "no").forEach { meaning ->
+            screen.onNodeWithContentDescription(meaning).assertIsDisplayed()
+        }
+        screen.onNodeWithText("dzień dobry").assertDoesNotExist()
+        clips.asked.clear()
+
+        screen.onNodeWithContentDescription("hello (polite); good morning").performClick()
+        shows("dzień dobry")
+        val hello = Played("audio/dzien-dobry.ogg", slow = false)
+        assertEquals(listOf(hello), clips.played)
+        screen.onNodeWithContentDescription(text(R.string.audio_play)).performClick()
+        assertEquals(listOf(hello, hello), clips.played)
+
+        // Tapped again, it turns back to its picture.
+        // (The card's own tap, not a touch in its middle, where the speaker is.)
+        screen.onNodeWithText("dzień dobry").performSemanticsAction(SemanticsActions.OnClick)
+        screen.onNodeWithText("dzień dobry").assertDoesNotExist()
+        screen.onNodeWithContentDescription("hello (polite); good morning").assertIsDisplayed()
+
+        // "All words" adds the words that have no picture, each shown by what it means.
+        screen.onNodeWithText("I am").assertDoesNotExist()
+        tap(R.string.option_words)
+        tap("I am")
+        shows("jestem")
+
+        // Looking at cards is not a Round.
+        back()
+        shows(R.string.practice_open_note)
+        screen.onNodeWithText(app.resources.getQuantityString(R.plurals.practice_rounds_today, 1, 1)).assertDoesNotExist()
+    }
+
+    @Test
+    fun `with Sound off a Picture card turns in silence and has no speaker`() {
+        openPracticeAfterTodaysDailySet()
+        tap(R.string.nav_settings)
+        tap(R.string.settings_sound)
+        tap(R.string.nav_practice)
+        tap(R.string.game_picture_cards)
+        clips.asked.clear()
+
+        screen.onNodeWithContentDescription("thank you").performClick()
+
+        shows("dziękuję")
+        assertTrue(clips.played.isEmpty())
+        screen.onNodeWithContentDescription(text(R.string.audio_play)).assertDoesNotExist()
     }
 
     // Getting there

@@ -23,7 +23,7 @@ We rejected drawing pictures in code or generating them. One consistent, license
 
 ## Consequences
 
-- The app grows by the pictures: a few megabytes at 256 pixels.
+- The app grows by the pictures: about 10 KB each at 256 pixels as WebP, under half a megabyte for the first sixty.
 - A Game can only use what a completed Daily Set taught, so a new Learner sees most Games locked, each saying what opens it. The engine tests walk the real course and check this at every point on the Path.
 - Each Game's rules live in the engine as an immutable Round with pure moves, tested without Android. The screens only show a Round and hand moves back.
 - `practice.json` is backed up and moved to a new phone with `progress.json`.

@@ -44,14 +44,14 @@ class PracticeBestsTest {
     @Test
     fun `the Practice screen shows the Best of the way the Game was last played`() {
         val practice = Player().completed("d1", "d2").practice()
-        assertEquals(GameView(Game.VERB_CHALLENGE, GameState.READY), practice.view().games.single())
+        assertEquals(GameView(Game.VERB_CHALLENGE, GameState.READY), practice.view().games.single { it.game == Game.VERB_CHALLENGE })
 
         practice.play("być", wrong = 2)
         practice.play("mieć", wrong = 1, level = "type")
 
         assertEquals(
             GameView(Game.VERB_CHALLENGE, GameState.READY, best = 13, lastPlayed = listOf(OptionView("mieć", "mieć"), OptionView("type"))),
-            practice.view().games.single(),
+            practice.view().games.single { it.game == Game.VERB_CHALLENGE },
         )
         // The Game opens the way it was last played.
         assertEquals(listOf("mieć", "type"), practice.setup(Game.VERB_CHALLENGE).selected)
