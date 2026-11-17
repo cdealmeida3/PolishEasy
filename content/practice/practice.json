@@ -294,5 +294,38 @@
     ["ladny", "brzydki"],
     ["zdrowy", "chory"],
     ["czysty", "brudny"]
-  ]
+  ],
+  "jobs": {
+    "after": "kim",
+    "items": [
+      "biznesmen",
+      "lektorka",
+      "lekarz",
+      "aktor",
+      "muzyk",
+      "kelner",
+      "kucharz",
+      "informatyk",
+      "policjant",
+      "rolnik",
+      "dziennikarz",
+      "urzednik",
+      "fotograf",
+      "tancerz",
+      "dentysta",
+      "inzynier",
+      "emeryt",
+      "lekarka",
+      "aktorka",
+      "kelnerka",
+      "dziennikarka",
+      "tancerka",
+      "urzedniczka",
+      "informatyczka",
+      "dentystka",
+      "instruktor",
+      "pisarz",
+      "malarz"
+    ]
+  }
 }

@@ -29,6 +29,7 @@ import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.Round
 import com.polisheasy.engine.VerbRound
+import com.polisheasy.engine.WhoRound
 import kotlinx.coroutines.delay
 
 /**
@@ -70,6 +71,7 @@ internal fun RoundScreen(
         is ChatRound -> ChatStep(round, sound, say, onMove, onFinish)
         is AnkietaRound -> AnkietaStep(round, sound, say, sayAll, onMove)
         is LabelRound -> LabelItStep(round, say, onMove)
+        is WhoRound -> WhosWhoStep(round, sayFirst, onMove)
         else -> error("No screen for a Round of ${round.game}")
     }
 }

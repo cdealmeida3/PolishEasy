@@ -39,6 +39,10 @@ data class Course(
     val demonstratives: Map<Gender, String> = emptyMap(),
     /** Pairs of adjectives that are opposites, as Item ids, for Opposites snap. A word may be in more than one pair. */
     val opposites: List<Pair<String, String>> = emptyList(),
+    /** The jobs of Who's who, as Item ids: each noun's first form is its instrumental (*lekarz*, *lekarzem*). */
+    val jobs: List<String> = emptyList(),
+    /** The Item Who's who waits for, which brings the instrumental (*kim*), or null if the content has no jobs. */
+    val jobsAfter: String? = null,
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

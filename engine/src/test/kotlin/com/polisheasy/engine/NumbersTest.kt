@@ -97,6 +97,39 @@ class NumbersTest {
         assertTrue(all.run.questions.all { it.numerals == it.answer && it.kind == NumberKind.SINGLE })
     }
 
+    /** The course with a Daily Set n4 after n3 that teaches [tens], each the numeral of its ten from twenty up. */
+    private fun withTens(vararg tens: String): Course = course.copy(
+        levels = course.levels.map { level ->
+            level.copy(units = level.units.map { unit -> unit.copy(dailySets = unit.dailySets + day("n4", *tens.map { choose("e-$it", it, it) }.toTypedArray())) })
+        },
+        items = course.items + tens.map { item(it) },
+        clips = course.clips + tens.map { clip(it) },
+        pictures = course.pictures + tens.withIndex().associate { (index, ten) -> ten to Picture.Glyph("${20 + 10 * index}") },
+    )
+
+    @Test
+    fun `numbers to a hundred are the learned tens, and a ten and a learned unit said one after the other`() {
+        // Twenty alone is no number above twenty.
+        assertFalse(Numbers.TO_100 in levels(player(withTens("dwadzieścia")).completed("n1", "n2", "n3", "n4").practice()))
+
+        val tens = listOf("dwadzieścia", "trzydzieści", "czterdzieści")
+        val practice = player(withTens(*tens.toTypedArray())).completed("n1", "n2", "n3", "n4").practice()
+        assertEquals(listOf(Numbers.TO_10, Numbers.TO_20, Numbers.TO_100, Numbers.RUNS, Numbers.SUMS), levels(practice))
+        assertTrue(practice.numbers(Numbers.READ, Numbers.TO_20).run.questions.all { it.answer.toInt() <= 20 })
+
+        val round = practice.numbers(Numbers.READ, Numbers.TO_100)
+        assertEquals(Numbers.QUESTIONS, round.total)
+        assertEquals(round.asked.size, round.asked.toSet().size)
+        round.run.questions.forEach { question ->
+            val number = question.answer.toInt()
+            assertTrue(number in 20..49, question.toString())
+            val unit = number % 10
+            assertEquals(listOf(tens[number / 10 - 2]) + if (unit == 0) emptyList() else listOf(names[unit]), question.words)
+            assertEquals("$number", question.numerals)
+        }
+        assertEquals(Numbers.QUESTIONS, round.playOut().score.value)
+    }
+
     @Test
     fun `a run is three learned digits said in a row, typed as they are`() {
         val round = player().completed("n1").practice().numbers(Numbers.READ, Numbers.RUNS)

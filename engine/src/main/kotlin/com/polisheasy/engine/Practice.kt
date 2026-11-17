@@ -35,6 +35,8 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     LABEL_IT("label-the-picture", GameGroup.WORDS),
     /** Chapter 4's Game: two adjectives side by side, against the clock: opposites or not? */
     OPPOSITES_SNAP("opposites-snap", GameGroup.WORDS),
+    /** Chapter 5's Game: a job is shown, and the Learner says who the person is: on jest lekarzem. */
+    WHOS_WHO("whos-who", GameGroup.WORDS),
     NUMBERS("numbers", GameGroup.NUMBERS),
 }
 
@@ -241,7 +243,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, Numbers).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, Numbers).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

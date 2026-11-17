@@ -333,6 +333,17 @@
     <string name="game_label_it">Label the picture</string>
     <string name="game_label_it_note">Stick the right Polish word under each picture on the board.</string>
     <string name="game_label_it_needs">Opens when you learn six words that have a picture.</string>
+    <string name="game_whos_who">Who\'s who</string>
+    <string name="game_whos_who_note">A job, and someone who does it: say who they are, as in on jest lekarzem.</string>
+    <string name="game_whos_who_needs">Opens when you learn kim and four jobs, in chapter 5.</string>
+    <string name="choice_job">The job is</string>
+    <string name="whos_who_he">Kim on jest?</string>
+    <string name="whos_who_she">Kim ona jest?</string>
+    <string name="whos_who_instruction">Who is it? Finish the sentence.</string>
+    <string name="whos_who_he_is">On jest %1$s.</string>
+    <string name="whos_who_she_is">Ona jest %1$s.</string>
+    <string name="whos_who_after_jest">After jest, a job takes the instrumental: %1$s, not %2$s.</string>
+    <string name="option_to_100">20 to 100</string>
     <string name="game_opposites_snap">Opposites snap</string>
     <string name="game_opposites_snap_note">Two words side by side: opposites or not? As many as you can before the time runs out.</string>
     <string name="game_opposites_snap_needs">Opens when you learn three pairs of opposites, such as nowy and stary.</string>

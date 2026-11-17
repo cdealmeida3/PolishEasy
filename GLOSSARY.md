@@ -137,6 +137,10 @@ _Avoid_: Gender quiz, demonstratives game
 The Game of saying, against the clock, whether two learned adjectives shown in the same gender are opposites, as *wesoły* and *smutny* are. Chapter 4's Game.
 _Avoid_: Antonym quiz, opposites match
 
+**Who's who**:
+The Game of saying who someone is by their job, *on jest lekarzem*, by choosing the job's instrumental after *jest*. Chapter 5's Game.
+_Avoid_: Jobs quiz, profession game
+
 **Register sort**:
 The Game of sorting learned phrases by Register, against the clock: to *pan* or *pani* (O), to a friend (N) or to anyone (U).
 _Avoid_: Formality quiz

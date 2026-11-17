@@ -69,6 +69,7 @@ import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.AnkietaRound
 import com.polisheasy.engine.LabelRound
 import com.polisheasy.engine.OppositesRound
+import com.polisheasy.engine.WhoRound
 import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
@@ -1820,6 +1821,51 @@ class ScreenshotsTest {
         shot("187-verb-group-setup")
         tap(R.string.setup_play)
         shot("188-verb-group-round")
+    }
+
+    @Test
+    fun `Who's who and numbers to 100 over the real course in the light theme`() = chapter5Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Who's who and numbers to 100 over the real course in the dark theme`() = chapter5Games("dark")
+
+    @Test
+    fun `Who's who and numbers to 100 over the real course at the largest font size`() = atTheLargestFontSize { chapter5Games("large") }
+
+    /** Chapter 5's Games: Who's who by picture and by word, a wrong answer, and the Number pad from 20 to 100. */
+    private fun chapter5Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun question() = checkNotNull(((viewModel?.screen as Screen.Round).round as WhoRound).question)
+
+        openRealPractice()
+        openGame(R.string.game_whos_who)
+        shot("193-whos-who-setup")
+        tap(R.string.setup_play)
+        shot("194-whos-who-picture")
+        screen.onNode(hasText(question().answer) and hasClickAction()).performClick()
+        screen.mainClock.autoAdvance = false
+        screen.mainClock.advanceTimeBy(100)
+        shot("195-whos-who-right")
+        screen.mainClock.autoAdvance = true
+        tap(R.string.action_continue)
+        screen.onNode(hasText(question().word) and hasClickAction()).performClick()
+        shot("196-whos-who-wrong")
+        leaveRound()
+
+        openGame(R.string.game_whos_who)
+        tap(R.string.option_word)
+        tap(R.string.setup_play)
+        shot("197-whos-who-word")
+        leaveRound()
+
+        openGame(R.string.game_numbers)
+        screen.onNodeWithText(app.getString(R.string.option_to_100)).performScrollTo().performClick()
+        shot("198-numbers-to-100-setup")
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        shot("199-numbers-to-100")
     }
 
     private fun registerSort(theme: String) {
