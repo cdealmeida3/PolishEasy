@@ -32,6 +32,10 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_listen_and_tap, R.string.game_listen_and_tap_note, R.string.game_listen_and_tap_needs, R.drawable.game_listen_and_tap)
     Game.SOUND_GAPS ->
         GameWords(R.string.game_sound_gaps, R.string.game_sound_gaps_note, R.string.game_sound_gaps_needs, R.drawable.game_sound_gaps)
+    Game.MOJ_MOJA_MOJE ->
+        GameWords(R.string.game_moj_moja_moje, R.string.game_moj_moja_moje_note, R.string.game_moj_moja_moje_needs, R.drawable.game_moj_moja_moje)
+    Game.NUMBERS ->
+        GameWords(R.string.game_numbers, R.string.game_numbers_note, R.string.game_numbers_needs, R.drawable.game_numbers)
     Game.VERB_CHALLENGE ->
         GameWords(R.string.game_verb_challenge, R.string.game_verb_challenge_note, R.string.game_verb_challenge_needs, R.drawable.game_verb_challenge)
 }
@@ -48,7 +52,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.NUMBERS -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
@@ -68,6 +72,8 @@ internal fun choiceLabel(id: String): String = stringResource(
         "length" -> R.string.choice_length
         "tap" -> R.string.choice_tap
         "size" -> R.string.choice_size
+        "number" -> R.string.choice_number
+        "noun" -> R.string.choice_noun
         else -> error("No name for the choice $id")
     },
 )
@@ -94,6 +100,11 @@ internal fun optionLabel(option: OptionView): String = option.label ?: option.id
         "tricky" -> R.string.option_tricky
         "choose" -> R.string.option_choose
         "type" -> R.string.option_type
+        "word" -> R.string.option_word
+        "to-10" -> R.string.option_to_10
+        "to-20" -> R.string.option_to_20
+        "runs" -> R.string.option_runs
+        "sums" -> R.string.option_sums
         else -> error("No name for the option ${option.id}")
     },
 )

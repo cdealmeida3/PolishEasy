@@ -33,6 +33,8 @@ The engine lists the Polish (`polishContent` in `PolishContent.kt`): each Item's
 
 There is a fifth, smaller pass, **Sound gaps**. The Game of that name shows a learned word with a gap and offers spellings that sound alike (*sz*, *ś*, *s*). The engine lists every wrong spelling it would offer (`Course.soundGaps()`), and none may be a form in the dictionary: asking for the *sz* of *kasza* would call *kasa* wrong. Such a word is a problem until it is listed under `realWords` in `content/practice/practice.json`, and then that gap is never asked. A word listed there that the dictionary does not know is a problem too. The dictionary is generous (*sześc* and *jeszce* are in it), so a few gaps are left out that need not be; none is asked that should not be.
 
+A sixth pass, **Genders**, is for Mój, moja, moje. The practice file gives each noun the Game sorts a gender, and names the word for "my" of each gender. The dictionary must know the noun as a singular nominative noun of that gender (*tata* is masculine, whatever its ending), and the word for "my" as one that goes with it. A noun in another form, such as *siostrę*, is a problem: list the form a dictionary gives.
+
 ## What the machine cannot see
 
 The first three passes are a net with wide holes. The review is what catches agreement, case and whether anyone would say it.

@@ -31,7 +31,14 @@ class PolishContent(
     /** The words the content says a wrong option of Sound gaps would spell, and the file that lists them. */
     val realWords: List<String> = emptyList(),
     val practiceFile: String? = null,
+    /** Each noun the content gives a gender, for the dictionary to confirm. */
+    val nouns: List<GenderedWord> = emptyList(),
+    /** Each word for "my" and the gender the content gives it. */
+    val possessives: List<GenderedWord> = emptyList(),
 )
+
+/** A word of Item [itemId] and the gender the practice file gives it. */
+data class GenderedWord(val itemId: String, val text: String, val gender: Gender)
 
 /**
  * Lists the Polish in the content: every text with the English it stands for and each place it is
@@ -134,6 +141,8 @@ fun polishContent(files: ContentFiles): PolishContent {
         soundGaps = content.course().soundGapRealWords.let { real -> content.items.flatMap { (file, item) -> soundGaps(item, real).map { file to it } } },
         realWords = content.practice?.realWords.orEmpty(),
         practiceFile = content.practiceFile,
+        nouns = content.course().let { course -> course.genders.mapNotNull { (id, gender) -> course.itemsById[id]?.let { GenderedWord(id, it.text, gender) } } },
+        possessives = content.course().let { course -> course.possessives.mapNotNull { (gender, id) -> course.itemsById[id]?.let { GenderedWord(id, it.text, gender) } } },
     )
 }
 

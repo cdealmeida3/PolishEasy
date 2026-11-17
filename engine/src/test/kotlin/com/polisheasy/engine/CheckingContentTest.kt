@@ -283,6 +283,40 @@ internal class CheckingContentTest {
         assertOnlyProblem(withRealWords("kasa").without("practice/practice.json"), "practice/practice.json", null, "")
     }
 
+    private fun withGenders(genders: Map<String, String>, my: Map<String, String>) = valid
+        .withIndex { it.copy(practice = "practice/practice.json") }
+        .withFile("practice/practice.json", contentJson.encodeToString(PracticeFile(genders = genders, my = my)))
+
+    @Test
+    fun `a course that gives nouns their gender and the words for my passes, and they are loaded`() {
+        val item = "prosze"
+        val other = "tak"
+        val gendered = withGenders(mapOf(item to "f"), mapOf("f" to other))
+
+        assertEquals(emptyList(), problems(gendered))
+        val course = loadCourse(gendered.files()::read)
+        assertEquals(mapOf(item to Gender.FEMININE), course.genders)
+        assertEquals(mapOf(Gender.FEMININE to other), course.possessives)
+    }
+
+    @Test
+    fun `a gender that is no gender, or given to no Item, is reported`() {
+        val item = "prosze"
+        val my = mapOf("m" to item, "f" to item)
+
+        assertOnlyProblem(withGenders(mapOf(item to "x"), my), "practice/practice.json", item, "\"x\"")
+        assertOnlyProblem(withGenders(mapOf("nobody" to "m"), my), "practice/practice.json", "nobody", "not defined")
+        assertOnlyProblem(withGenders(mapOf(item to "m"), my + ("x" to item)), "practice/practice.json", item, "\"x\"")
+        assertOnlyProblem(withGenders(mapOf(item to "m"), my + ("n" to "nobody")), "practice/practice.json", "nobody", "not defined")
+    }
+
+    @Test
+    fun `a gender with no word for my is reported`() {
+        val item = "prosze"
+
+        assertOnlyProblem(withGenders(mapOf(item to "n"), mapOf("m" to item)), "practice/practice.json", null, "\"n\"")
+    }
+
     // Pictures
 
     private val pictured = valid.withPictures(PictureEntry("tak", image = "yes.webp"), PictureEntry("nie", glyph = "✗"))

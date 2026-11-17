@@ -62,6 +62,8 @@ import com.polisheasy.engine.InMemoryPracticeProgress
 import com.polisheasy.engine.loadCourse
 import com.polisheasy.engine.ChainRound
 import com.polisheasy.engine.GapRound
+import com.polisheasy.engine.GenderRound
+import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
@@ -787,6 +789,168 @@ class ScreenshotsTest {
             moveOn()
         }
         shot("92-gaps-result")
+    }
+
+    /** Practice over the real course, for a Learner who has completed all of it, the last Daily Set today. */
+    private fun openRealPractice() {
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val progress = InMemoryLearnerProgress()
+        course.path.forEachIndexed { index, dailySet ->
+            progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
+        }
+        val engine = CourseEngine(course, progress, clock)
+        open(CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7))))
+        tap(R.string.nav_practice)
+    }
+
+    private fun leaveRound() {
+        screen.mainClock.autoAdvance = true
+        screen.onNodeWithContentDescription(app.getString(R.string.round_close)).performClick()
+    }
+
+    @Test
+    fun `Numbers over the real course in the light theme`() = numbers("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Numbers over the real course in the dark theme`() = numbers("dark")
+
+    @Test
+    fun `Numbers over the real course at the largest font size`() = atTheLargestFontSize { numbers("large") }
+
+    /** Numbers: before a Round, a number heard, typed, right and wrong, a run, a sum read, and the result. */
+    private fun numbers(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as NumberRound
+
+        fun press(digit: Char) = screen.onNode(hasText(digit.toString()) and hasClickAction()).performScrollTo().performClick()
+
+        /** Types the right answer, or a wrong one. */
+        fun type(correctly: Boolean) {
+            val answer = checkNotNull(round().question).answer
+            (if (correctly) answer else if (answer == "12") "2" else "12").forEach(::press)
+        }
+
+        /** Checks what is typed and holds the answered question for its picture. */
+        fun check() {
+            screen.waitForIdle()
+            screen.mainClock.autoAdvance = false
+            screen.onNodeWithContentDescription(app.getString(R.string.action_check)).performScrollTo().performClick()
+            screen.mainClock.advanceTimeBy(500)
+        }
+
+        fun moveOn() {
+            screen.mainClock.autoAdvance = true
+            tap(R.string.action_continue)
+        }
+
+        openRealPractice()
+        openGame(R.string.game_numbers)
+        tap(R.string.option_to_20)
+        shot("93-numbers-setup")
+        tap(R.string.setup_play)
+        shot("94-numbers-heard")
+        type(correctly = true)
+        shot("95-numbers-typed")
+        check()
+        shot("96-numbers-right")
+        moveOn()
+        type(correctly = false)
+        check()
+        shot("97-numbers-wrong")
+        leaveRound()
+
+        openGame(R.string.game_numbers)
+        tap(R.string.option_runs)
+        tap(R.string.setup_play)
+        type(correctly = true)
+        check()
+        shot("98-numbers-run")
+        leaveRound()
+
+        openGame(R.string.game_numbers)
+        tap(R.string.option_read)
+        tap(R.string.option_sums)
+        tap(R.string.setup_play)
+        shot("99-numbers-sum-read")
+        while (viewModel?.screen is Screen.Round) {
+            type(correctly = true)
+            check()
+            moveOn()
+        }
+        shot("100-numbers-result")
+    }
+
+    @Test
+    fun `Mój, moja, moje over the real course in the light theme`() = mojMojaMoje("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Mój, moja, moje over the real course in the dark theme`() = mojMojaMoje("dark")
+
+    @Test
+    fun `Mój, moja, moje over the real course at the largest font size`() = atTheLargestFontSize { mojMojaMoje("large") }
+
+    /** Mój, moja, moje: before a Round, a noun with a picture and one without, right and wrong, by meaning, by ear, and the result. */
+    private fun mojMojaMoje(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as GenderRound
+
+        /** Taps the right word, or a wrong one, and holds the answered question for its picture. */
+        fun answer(correctly: Boolean) {
+            val asked = checkNotNull(round().question)
+            val word = round().buckets.first { (it.gender == asked.gender) == correctly }.word
+            screen.waitForIdle()
+            screen.mainClock.autoAdvance = false
+            screen.onNode(hasText(word) and hasClickAction()).performScrollTo().performClick()
+            screen.mainClock.advanceTimeBy(500)
+        }
+
+        fun moveOn() {
+            screen.mainClock.autoAdvance = true
+            tap(R.string.action_continue)
+        }
+
+        /** Answers rightly until the noun shown has a picture, or has none. */
+        fun moveToANoun(pictured: Boolean) {
+            while ((checkNotNull(round().question).picture != null) != pictured) {
+                answer(correctly = true)
+                moveOn()
+            }
+        }
+
+        openRealPractice()
+        openGame(R.string.game_moj_moja_moje)
+        shot("101-moj-setup")
+        tap(R.string.setup_play)
+        moveToANoun(pictured = true)
+        shot("102-moj-question")
+        answer(correctly = true)
+        shot("103-moj-right")
+        moveOn()
+        moveToANoun(pictured = false)
+        answer(correctly = false)
+        shot("104-moj-wrong")
+        leaveRound()
+
+        openGame(R.string.game_moj_moja_moje)
+        tap(R.string.option_meaning)
+        tap(R.string.setup_play)
+        moveToANoun(pictured = true)
+        shot("105-moj-meaning")
+        leaveRound()
+
+        openGame(R.string.game_moj_moja_moje)
+        tap(R.string.option_listen)
+        tap(R.string.setup_play)
+        shot("106-moj-heard")
+        while (viewModel?.screen is Screen.Round) {
+            answer(correctly = true)
+            moveOn()
+        }
+        shot("107-moj-result")
     }
 
     @Test

@@ -24,7 +24,7 @@ First the file to open, relative to `content/`, then the identifier concerned (l
 
 1. If you added or changed any Polish text, make its audio with `./gradlew :audio:makeClips`, which needs the voice service's key: see [audio.md](audio.md).
 2. If you added words that can be pictured, give them pictures: see "Pictures" in [practice.md](practice.md).
-   The Polish check (step below) may name a new wrong spelling that Sound gaps would offer and that is a real word: add it to `realWords` in `content/practice/practice.json`.
+   The Polish check (step below) may name a new wrong spelling that Sound gaps would offer and that is a real word: add it to `realWords` in `content/practice/practice.json`. If you added nouns, give them their gender there too: see "What Practice needs from the content" in [practice.md](practice.md).
 3. If you added Levels, Units, Daily Sets, Exercises or Items, record their identifiers and commit the file:
 
    ```
@@ -49,6 +49,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 - A Daily Set has at most 2 Tips, each before a different one of its Exercises.
 - Word tiles can build every Accepted Answer; a conjugation sentence has exactly one gap; a conjugation table has a form for every person.
 - Each of the real words listed for Sound gaps in the practice file is one word, listed once.
+- A gender in the practice file is "m", "f" or "n", is given to a defined Item of one word, and every gender given has a word for "my", itself a defined Item.
 - A picture names an Item that is defined, has an image or a glyph and not both, and no Item has two pictures.
 - A Clip has text, an id made of lower-case letters, digits and single hyphens, and no other Clip says the same text.
 

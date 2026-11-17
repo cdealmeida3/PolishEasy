@@ -9,6 +9,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
@@ -30,6 +31,8 @@ import com.polisheasy.engine.FileLearnerProgress
 import com.polisheasy.engine.FilePracticeProgress
 import com.polisheasy.engine.ChainRound
 import com.polisheasy.engine.GapRound
+import com.polisheasy.engine.GenderRound
+import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.InMemoryLearnerProgress
 import com.polisheasy.engine.InMemoryPracticeProgress
 import com.polisheasy.engine.ListenRound
@@ -476,6 +479,128 @@ class PlayingPracticeOnScreenTest {
     }
 
     @Test
+    fun `Numbers says a number, and what is typed on the keypad is checked`() {
+        openPracticeOverTheRealCourse()
+        clips.asked.clear()
+        openGame(R.string.game_numbers)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        // The number is said, and nothing is typed yet: there is nothing to check.
+        val first = checkNotNull(numbers().question)
+        assertEquals(first.words.map { Played(checkNotNull(viewModel?.practiceClipOf(it)).path, slow = false) }, clips.played)
+        screen.onNodeWithContentDescription(text(R.string.numbers_typed_nothing)).assertIsDisplayed()
+        screen.onNodeWithContentDescription(text(R.string.action_check)).assertIsNotEnabled()
+        screen.onNodeWithText(first.polish).assertDoesNotExist()
+
+        // A digit typed can be taken back.
+        val wrong = if (first.answer == "1") "2" else "1"
+        press("9")
+        screen.onNodeWithContentDescription(text(R.string.numbers_typed, "9")).assertIsDisplayed()
+        screen.onNodeWithContentDescription(text(R.string.keypad_erase)).performClick()
+        press(wrong)
+        screen.onNodeWithContentDescription(text(R.string.action_check)).performClick()
+
+        // Wrong: the number is written out, in numerals and in words, and the Round waits.
+        shows(text(R.string.numbers_answer, first.numerals, first.polish))
+        screen.onNodeWithContentDescription(text(R.string.keypad_erase)).assertIsNotEnabled()
+        tap(R.string.action_continue)
+
+        typeTheRest()
+        showsScore(9, 10)
+        showsFirstBest()
+    }
+
+    @Test
+    fun `Numbers read shows the words and says nothing, and a run is three numbers in a row`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_numbers)
+        tap(R.string.option_read)
+        tap(R.string.option_sums)
+        clips.asked.clear()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val sum = checkNotNull(numbers().question)
+        shows(R.string.numbers_sum_read_instruction)
+        shows(sum.polish)
+        assertEquals(emptyList(), clips.played)
+        sum.answer.forEach { press(it.toString()) }
+        screen.onNodeWithContentDescription(text(R.string.action_check)).performClick()
+        shows(sum.numerals)
+        back()
+
+        openGame(R.string.game_numbers)
+        tap(R.string.option_listen)
+        tap(R.string.option_runs)
+        clips.asked.clear()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+        shows(R.string.numbers_run_listen_instruction)
+        assertEquals(3, clips.played.size)
+        typeTheRest()
+        showsScore(6, 6)
+    }
+
+    @Test
+    fun `Mój, moja, moje shows a noun, and the word tapped is marked with the two written together`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_moj_moja_moje)
+        clips.asked.clear()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        // The noun is written with its meaning, and is not said until it is answered.
+        val first = checkNotNull(sorting().question)
+        shows(first.polish)
+        shows(first.meaning)
+        assertEquals(emptyList(), clips.played)
+        assertEquals(3, sorting().buckets.size)
+
+        // The wrong word: the right one is marked, the two words are written together and said.
+        tapBucket(sorting().buckets.first { it.gender != first.gender }.word)
+        shows(first.phrase)
+        val said = checkNotNull(viewModel?.practiceClipOf(first.phrase) ?: viewModel?.practiceClipOf(first.polish))
+        assertEquals(listOf(Played(said.path, slow = false)), clips.played)
+        // The noun is counted under the word it belongs to.
+        screen.onNodeWithContentDescription(quantity(R.plurals.bucket_holds, 1), useUnmergedTree = true).assertIsDisplayed()
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            val asked = checkNotNull(sorting().question)
+            tapBucket(sorting().buckets.first { it.gender == asked.gender }.word)
+            tap(R.string.action_continue)
+        }
+        showsScore(9, 10)
+        showsFirstBest()
+    }
+
+    @Test
+    fun `Mój, moja, moje can give the noun by its meaning alone, or by ear`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_moj_moja_moje)
+        tap(R.string.option_meaning)
+        tap(R.string.setup_play)
+
+        val first = checkNotNull(sorting().question)
+        shows(first.meaning)
+        screen.onNodeWithText(first.polish).assertDoesNotExist()
+        tapBucket(sorting().buckets.first { it.gender == first.gender }.word)
+        shows(first.phrase)
+        back()
+
+        openGame(R.string.game_moj_moja_moje)
+        tap(R.string.option_listen)
+        clips.asked.clear()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+        val heard = checkNotNull(sorting().question)
+        assertEquals(listOf(Played(checkNotNull(viewModel?.practiceClipOf(heard.polish)).path, slow = false)), clips.played)
+        screen.onNodeWithText(heard.polish).assertDoesNotExist()
+        screen.onNodeWithText(heard.meaning).assertDoesNotExist()
+    }
+
+    @Test
     fun `Phrase chains stays closed until three sentences have been built`() {
         openPracticeAfterTodaysDailySet()
 
@@ -651,6 +776,30 @@ class PlayingPracticeOnScreenTest {
     }
 
     private fun slips(count: Int): String = quantity(R.plurals.practice_slips, count)
+
+    private fun numbers(): NumberRound = (viewModel?.screen as Screen.Round).round as NumberRound
+
+    private fun sorting(): GenderRound = (viewModel?.screen as Screen.Round).round as GenderRound
+
+    /** Taps a key of the keypad. */
+    private fun press(digit: String) = screen.onNode(hasText(digit) and hasClickAction()).performScrollTo().performClick()
+
+    /** Types the answer to every question left in the Round and checks it, moving on after each. */
+    private fun typeTheRest() {
+        while (viewModel?.screen is Screen.Round) {
+            checkNotNull(numbers().question).answer.forEach { press(it.toString()) }
+            screen.onNodeWithContentDescription(text(R.string.action_check)).performClick()
+            tap(R.string.action_continue)
+        }
+    }
+
+    /** Taps the word for "my" that says [word]. */
+    private fun tapBucket(word: String) = screen.onNode(hasText(word) and hasClickAction()).performScrollTo().performClick()
+
+    /** Opens a Game from the Practice screen, wherever on it the Game's card is. */
+    private fun openGame(name: Int) {
+        screen.onNodeWithText(text(name)).performScrollTo().performClick()
+    }
 
     private fun gapped(): GapRound = (viewModel?.screen as Screen.Round).round as GapRound
 

@@ -15,6 +15,8 @@ import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.ChainRound
 import com.polisheasy.engine.GapRound
+import com.polisheasy.engine.GenderRound
+import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.Given
 import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.MemoryRound
@@ -25,7 +27,8 @@ import kotlinx.coroutines.delay
 /**
  * The step of a Round being shown, whichever Game it is. A move the Learner makes is handed to
  * [onMove] as the Round it leaves; the rules of every move are the engine's. With [sound] the
- * Polish of an answer is said as it is given, where there is a Clip for it. A Game whose last
+ * Polish of an answer is said as it is given, where there is a Clip for it; [onPlayAll] plays
+ * several Clips one after the other. A Game whose last
  * move should be seen before the result calls [onFinish] when it has been.
  */
 @Composable
@@ -34,11 +37,20 @@ internal fun RoundScreen(
     sound: Boolean,
     clipOf: (String) -> ClipView?,
     onPlay: (ClipView) -> Unit,
+    onPlayAll: (List<ClipView>) -> Unit,
     onMove: (Round) -> Unit,
     onFinish: () -> Unit,
 ) {
     val say: (String) -> Unit = { polish -> if (sound) clipOf(polish)?.let(onPlay) }
+    // Several things in a row are said only when every one of them has a Clip.
+    val sayAll: (List<String>) -> Unit = { polish ->
+        if (sound) polish.map(clipOf).takeIf { clips -> clips.none { it == null } }?.let { onPlayAll(it.filterNotNull()) }
+    }
+    // The first of several ways to say a thing that has a Clip.
+    val sayFirst: (List<String>) -> Unit = { polish -> if (sound) polish.firstNotNullOfOrNull(clipOf)?.let(onPlay) }
     when (round) {
+        is NumberRound -> NumbersStep(round, sayAll, onMove)
+        is GenderRound -> MojMojaMojeStep(round, say, sayFirst, onMove)
         is GapRound -> SoundGapsStep(round, say, onMove)
         is ChainRound -> PhraseChainsStep(round, say, onMove)
         is ListenRound -> ListenAndTapStep(round, say, onMove)

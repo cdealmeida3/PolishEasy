@@ -1,4 +1,25 @@
 {
+  "my": { "m": "moj", "f": "moja", "n": "moje" },
+  "genders": {
+    "czas": "m",
+    "pytanie": "n",
+    "problem": "m",
+    "numer": "m",
+    "rok": "m",
+    "mama": "f",
+    "tata": "m",
+    "brat": "m",
+    "siostra": "f",
+    "syn": "m",
+    "corka": "f",
+    "maz": "m",
+    "zona": "f",
+    "dziecko": "n",
+    "rodzenstwo": "n",
+    "rodzina": "f",
+    "babcia": "f",
+    "dziadek": "m"
+  },
   "realWords": [
     "alę",
     "angielka",

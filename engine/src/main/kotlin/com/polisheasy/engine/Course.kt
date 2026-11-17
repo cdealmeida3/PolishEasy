@@ -17,6 +17,10 @@ data class Course(
     val pictures: Map<String, Picture> = emptyMap(),
     /** Real Polish words, in lower case, that a wrong option of Sound gaps would spell. Such a gap is never asked. */
     val soundGapRealWords: Set<String> = emptySet(),
+    /** The gender of each noun Item that Practice sorts by gender, by Item id. */
+    val genders: Map<String, Gender> = emptyMap(),
+    /** The Item that says "my" with a noun of each gender, by its id. */
+    val possessives: Map<Gender, String> = emptyMap(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }
