@@ -1,0 +1,390 @@
+{
+  "id": "kpk1-l04-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Jaki on jest?",
+    "meaning": {
+      "en": "What is he like?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l04-c2-t01",
+      "before": "kpk1-l04-c2-e01",
+      "title": {
+        "en": "Opposites"
+      },
+      "body": {
+        "en": "Adjectives often come in pairs of opposites: *pracowity* and *leniwy*, *gruby* and *szczupły*, *ładny* and *brzydki*, *zdrowy* and *chory*. Join two with *i* when they go together, and with *ale* when they clash: *ona jest ładna i szczupła*, *on jest gruby, ale zdrowy*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c2-e01",
+      "prompt": "pracowity",
+      "options": [
+        {
+          "en": "lazy (leniwy, leniwa, leniwe)"
+        },
+        {
+          "en": "tired (zmęczony, zmęczona, zmęczone)"
+        },
+        {
+          "en": "hard-working (pracowity, pracowita, pracowite)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pracowity"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c2-e02",
+      "prompt": "leniwy",
+      "options": [
+        {
+          "en": "lazy (leniwy, leniwa, leniwe)"
+        },
+        {
+          "en": "hard-working (pracowity, pracowita, pracowite)"
+        },
+        {
+          "en": "sad (smutny, smutna, smutne)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "leniwy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-c2-e03",
+      "text": "on jest leniwy",
+      "meaning": {
+        "en": "he is lazy"
+      },
+      "distractors": [
+        "on jest pracowity",
+        "on jest chory"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "leniwy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c2-e04",
+      "prompt": "gruby",
+      "options": [
+        {
+          "en": "slim (szczupły, szczupła, szczupłe)"
+        },
+        {
+          "en": "fat (gruby, gruba, grube)"
+        },
+        {
+          "en": "short (not tall) (niski, niska, niskie)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gruby"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c2-e05",
+      "prompt": "szczupły",
+      "options": [
+        {
+          "en": "fat (gruby, gruba, grube)"
+        },
+        {
+          "en": "tall (wysoki, wysoka, wysokie)"
+        },
+        {
+          "en": "slim (szczupły, szczupła, szczupłe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szczuply"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c2-e06",
+      "prompt": "ładny",
+      "options": [
+        {
+          "en": "pretty (ładny, ładna, ładne)"
+        },
+        {
+          "en": "ugly (brzydki, brzydka, brzydkie)"
+        },
+        {
+          "en": "young (młody, młoda, młode)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ladny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c2-e07",
+      "prompt": "brzydki",
+      "options": [
+        {
+          "en": "pretty (ładny, ładna, ładne)"
+        },
+        {
+          "en": "ugly (brzydki, brzydka, brzydkie)"
+        },
+        {
+          "en": "dirty (brudny, brudna, brudne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "brzydki"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-c2-e08",
+      "prompt": {
+        "en": "she is pretty and slim"
+      },
+      "acceptedAnswers": [
+        "ona jest ładna i szczupła",
+        "ona jest szczupła i ładna"
+      ],
+      "distractors": [
+        "ładny",
+        "gruba"
+      ],
+      "items": [
+        "ona",
+        "byc-jest",
+        "ladny",
+        "i",
+        "szczuply"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c2-e09",
+      "prompt": "zdrowy",
+      "options": [
+        {
+          "en": "ill (chory, chora, chore)"
+        },
+        {
+          "en": "clean (czysty, czysta, czyste)"
+        },
+        {
+          "en": "healthy (zdrowy, zdrowa, zdrowe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zdrowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c2-e10",
+      "prompt": "chory",
+      "options": [
+        {
+          "en": "ill (chory, chora, chore)"
+        },
+        {
+          "en": "healthy (zdrowy, zdrowa, zdrowe)"
+        },
+        {
+          "en": "tired (zmęczony, zmęczona, zmęczone)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chory"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-c2-e11",
+      "text": "On jest ___, ale ona jest ___.",
+      "meaning": {
+        "en": "He is ill, but she is healthy."
+      },
+      "gaps": [
+        [
+          "chory"
+        ],
+        [
+          "zdrowa"
+        ]
+      ],
+      "distractors": [
+        "chora",
+        "zdrowy"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "chory",
+        "ale",
+        "ona",
+        "zdrowy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l04-c2-e12",
+      "prompt": {
+        "en": "he is hard-working"
+      },
+      "acceptedAnswers": [
+        "on jest pracowity"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "pracowity"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-c2-e13",
+      "acceptedAnswers": [
+        "ona jest chora"
+      ],
+      "meaning": {
+        "en": "she is ill"
+      },
+      "items": [
+        "ona",
+        "byc-jest",
+        "chory"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l04-c2-e14",
+      "pairs": [
+        {
+          "polish": "pracowity",
+          "meaning": {
+            "en": "hard-working"
+          }
+        },
+        {
+          "polish": "leniwy",
+          "meaning": {
+            "en": "lazy"
+          }
+        },
+        {
+          "polish": "gruby",
+          "meaning": {
+            "en": "fat"
+          }
+        },
+        {
+          "polish": "szczupły",
+          "meaning": {
+            "en": "slim"
+          }
+        },
+        {
+          "polish": "ładny",
+          "meaning": {
+            "en": "pretty"
+          }
+        },
+        {
+          "polish": "brzydki",
+          "meaning": {
+            "en": "ugly"
+          }
+        }
+      ],
+      "items": [
+        "pracowity",
+        "leniwy",
+        "gruby",
+        "szczuply",
+        "ladny",
+        "brzydki"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-c2-e15",
+      "acceptedAnswers": [
+        "to dziecko jest zdrowe"
+      ],
+      "meaning": {
+        "en": "this child is healthy"
+      },
+      "items": [
+        "to",
+        "dziecko",
+        "byc-jest",
+        "zdrowy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-c2-e16",
+      "prompt": {
+        "en": "this student is lazy, but nice"
+      },
+      "acceptedAnswers": [
+        "ten student jest leniwy, ale sympatyczny"
+      ],
+      "distractors": [
+        "leniwa",
+        "i"
+      ],
+      "items": [
+        "ten",
+        "student",
+        "byc-jest",
+        "leniwy",
+        "ale",
+        "sympatyczny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-c2-e17",
+      "text": "ta torba jest brzydka",
+      "meaning": {
+        "en": "this bag is ugly"
+      },
+      "distractors": [
+        "ta torba jest ładna",
+        "ta torba jest duża"
+      ],
+      "items": [
+        "ta",
+        "torba",
+        "byc-jest",
+        "brzydki"
+      ]
+    }
+  ]
+}

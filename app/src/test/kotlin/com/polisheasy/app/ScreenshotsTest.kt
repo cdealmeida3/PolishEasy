@@ -563,6 +563,43 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 4 of the book over the real course in the light theme`() = chapter4Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 4 of the book over the real course in the dark theme`() = chapter4Tour("dark")
+
+    @Test
+    fun `chapter 4 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter4Tour("large") }
+
+    /**
+     * Chapter 4 over the real course: its Lesson screen at the top and its sections, then section
+     * B's Tip with the table of chodzić, section C's Tip on describing a person with its table, and
+     * the Zapamiętaj callout on giving an opinion.
+     */
+    private fun chapter4Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l04") }
+        screen.waitForIdle()
+        shot("178-chapter-4")
+        screen.onAllNodes(hasText("Jaki on jest?", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("178-chapter-4-sections")
+        listOf("kpk1-l04-b1" to "179-chapter-4-chodzic", "kpk1-l04-c1" to "180-chapter-4-jaki-on-jest", "kpk1-l04-c4" to "181-chapter-4-opinions")
+            .forEach { (section, name) ->
+                screen.runOnUiThread {
+                    model.openLesson("kpk1-l04")
+                    model.openSection(section)
+                }
+                screen.waitForIdle()
+                shot(name)
+            }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test
@@ -1263,14 +1300,14 @@ class ScreenshotsTest {
         // Typing, and saying.
         openGame(R.string.game_chat)
         tap("A new classmate")
-        tap(R.string.option_type)
+        // With eight Chats listed, the ways to reply are below the fold at the largest font.
+        screen.onNodeWithText(app.getString(R.string.option_type)).performScrollTo().performClick()
         tap(R.string.setup_play)
         arrive()
         type("Cześć! Jestem Adam.")
         shot("142-chat-type")
         leaveRound()
         openGame(R.string.game_chat)
-        // With seven Chats listed, the ways to reply are below the fold at the largest font.
         screen.onNodeWithText(app.getString(R.string.option_say)).performScrollTo().performClick()
         tap(R.string.setup_play)
         arrive()

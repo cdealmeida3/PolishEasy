@@ -227,13 +227,14 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
             listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7) + listOf(7, 7, 6, 7, 6, 6, 6, 6) +
                 listOf(8, 8, 8, 3, 0) + listOf(5, 0, 7, 6, 8, 8, 1, 1, 0) +
-                listOf(6, 7, 4, 4, 7, 6, 4, 8, 0, 5, 7, 0) + listOf(8, 8, 7, 4, 8, 8, 6, 8, 4, 0),
+                listOf(6, 7, 4, 4, 7, 6, 4, 8, 0, 5, 7, 0) + listOf(8, 8, 7, 4, 8, 8, 6, 8, 4, 0) +
+                listOf(8, 8, 8, 7, 8, 8, 8, 8, 8, 0),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -256,7 +257,7 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `the book's Level has chapters 0 to 26 with their Polish titles, chapter 0 has five sections, chapter 1 nine, chapter 2 twelve and chapter 3 ten`() {
+    fun `the book's Level has chapters 0 to 26 with their Polish titles, chapter 0 has five sections, chapter 1 nine, chapter 2 twelve, chapter 3 ten and chapter 4 ten`() {
         val shelves = CourseEngine(course, InMemoryLearnerProgress(), FakeClock()).shelves()
 
         assertEquals(listOf("a1", "kpk1"), shelves.map { it.id })
@@ -271,8 +272,10 @@ class AuthoredContentTest {
         assertEquals(12, book[2].sections)
         assertEquals("Mami, kto to jest?", book[3].title)
         assertEquals(10, book[3].sections)
-        assertTrue(book.take(4).none { it.coming })
-        assertTrue(book.drop(4).all { it.coming })
+        assertEquals("Jaki jesteś?", book[4].title)
+        assertEquals(10, book[4].sections)
+        assertTrue(book.take(5).none { it.coming })
+        assertTrue(book.drop(5).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -604,8 +607,8 @@ class AuthoredContentTest {
 
     @Test
     fun `mój, moja, moje, twój, twoja and twoje agree with the gender of the noun after them`() {
-        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres", "plecak", "słownik")
-        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna", "torba")
+        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres", "plecak", "słownik", "kolega")
+        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna", "torba", "koleżanka")
         val neuter = setOf("dziecko", "pytanie", "rodzeństwo", "hobby")
         val possessives = mapOf(
             "mój" to masculine, "twój" to masculine, "moja" to feminine, "twoja" to feminine, "moje" to neuter, "twoje" to neuter,

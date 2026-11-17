@@ -1,0 +1,296 @@
+{
+  "id": "chat-new-student",
+  "person": "Kasia",
+  "title": {
+    "en": "The new student"
+  },
+  "scene": {
+    "en": "Before class, Kasia, a classmate, asks you about a new student. You think he is from Spain: he speaks Spanish and only a little Polish, and he is nice, cheerful, tall and slim. You like sport. Kasia is a friend, so talk to her as to a friend."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "czy",
+    "wiedziec-wiesz",
+    "kto-to-jest",
+    "nie-wiem",
+    "co",
+    "ale",
+    "myslec-mysle",
+    "ze",
+    "to",
+    "nowy",
+    "student",
+    "chyba",
+    "ciekawy",
+    "skad",
+    "on",
+    "byc-jest",
+    "byc-jestem",
+    "z-hiszpanii",
+    "mowic-mowi",
+    "mowic-mowie",
+    "po-hiszpansku",
+    "tez",
+    "po-polsku",
+    "tak",
+    "tylko",
+    "troche",
+    "jaki",
+    "sympatyczny",
+    "bardzo",
+    "mily",
+    "i",
+    "wesoly",
+    "a-ty",
+    "lubic-lubisz",
+    "sport",
+    "lubic-lubie",
+    "ja",
+    "wysportowany",
+    "na-pewno",
+    "wysoki",
+    "szczuply",
+    "masz-racje",
+    "swietnie",
+    "pa",
+    "do-jutra",
+    "do-widzenia",
+    "pani"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Czy wiesz, kto to jest?",
+      "meaning": {
+        "en": "Hi! Do you know who that is?"
+      },
+      "replies": [
+        {
+          "text": "Nie wiem, ale myślę, że to nowy student.",
+          "meaning": {
+            "en": "I don't know, but I think it's a new student."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Nie wiem, ale myślę, że to nowy student.",
+            "Nie wiem, ale myślę, że to jest nowy student.",
+            "Myślę, że to nowy student.",
+            "To chyba nowy student.",
+            "Chyba nowy student."
+          ]
+        },
+        {
+          "text": "Nie wiem, co to jest.",
+          "meaning": {
+            "en": "I don't know what it is."
+          },
+          "note": {
+            "en": "Kasia asks about a person, so it is *kto*, not *co*: *nie wiem, ale myślę, że to nowy student*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Ciekawe, skąd on jest.",
+      "meaning": {
+        "en": "I wonder where he is from."
+      },
+      "replies": [
+        {
+          "text": "Chyba z Hiszpanii. Mówi po hiszpańsku.",
+          "meaning": {
+            "en": "Probably from Spain. He speaks Spanish."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Chyba z Hiszpanii. Mówi po hiszpańsku.",
+            "Chyba z Hiszpanii.",
+            "Myślę, że z Hiszpanii.",
+            "Z Hiszpanii."
+          ]
+        },
+        {
+          "text": "Jestem z Hiszpanii.",
+          "meaning": {
+            "en": "I am from Spain."
+          },
+          "note": {
+            "en": "Kasia wonders where he is from, not you: *chyba z Hiszpanii*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Mówi też po polsku?",
+      "meaning": {
+        "en": "Does he speak Polish too?"
+      },
+      "replies": [
+        {
+          "text": "Tak, ale tylko trochę.",
+          "meaning": {
+            "en": "Yes, but only a little."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Tak, ale tylko trochę.",
+            "Tak, trochę.",
+            "Tylko trochę."
+          ]
+        },
+        {
+          "text": "Tak, mówię po polsku.",
+          "meaning": {
+            "en": "Yes, I speak Polish."
+          },
+          "note": {
+            "en": "*Mówię* is \"I speak\", but Kasia asks about him. He speaks only a little: *tak, ale tylko trochę*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Jaki on jest? Sympatyczny?",
+      "meaning": {
+        "en": "What is he like? Nice?"
+      },
+      "replies": [
+        {
+          "text": "Tak, jest bardzo miły i wesoły.",
+          "meaning": {
+            "en": "Yes, he is very nice and cheerful."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Tak, jest bardzo miły i wesoły.",
+            "Tak, jest miły i wesoły.",
+            "Tak, jest bardzo miły.",
+            "Tak, bardzo sympatyczny.",
+            "Tak."
+          ]
+        },
+        {
+          "text": "Tak, jest bardzo miła i wesoła.",
+          "meaning": {
+            "en": "Yes, she is very nice and cheerful."
+          },
+          "note": {
+            "en": "He is a man, so his adjectives end in *-y*: *miły*, *wesoły*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "A ty? Lubisz sport?",
+      "meaning": {
+        "en": "And you? Do you like sport?"
+      },
+      "replies": [
+        {
+          "text": "Tak, lubię sport.",
+          "meaning": {
+            "en": "Yes, I like sport."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Tak, lubię sport.",
+            "Tak, lubię.",
+            "Lubię sport.",
+            "Tak."
+          ]
+        },
+        {
+          "text": "Tak, lubisz sport.",
+          "meaning": {
+            "en": "Yes, you like sport."
+          },
+          "note": {
+            "en": "*Lubisz* is \"you like\". About yourself say *lubię*: *tak, lubię sport*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Ja też! Myślę, że on też jest wysportowany.",
+      "meaning": {
+        "en": "Me too! I think he is sporty too."
+      },
+      "replies": [
+        {
+          "text": "Na pewno. Jest wysoki i szczupły.",
+          "meaning": {
+            "en": "Certainly. He is tall and slim."
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Na pewno. Jest wysoki i szczupły.",
+            "Masz rację, jest wysoki i szczupły.",
+            "Na pewno.",
+            "Masz rację."
+          ]
+        },
+        {
+          "text": "Na pewno. Jest wysoka i szczupła.",
+          "meaning": {
+            "en": "Certainly. She is tall and slim."
+          },
+          "note": {
+            "en": "It is still about him, so use the masculine forms: *wysoki* and *szczupły*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Świetnie! Pa, do jutra!",
+      "meaning": {
+        "en": "Great! Bye, see you tomorrow!"
+      },
+      "replies": [
+        {
+          "text": "Pa! Do jutra!",
+          "meaning": {
+            "en": "Bye! See you tomorrow!"
+          },
+          "right": true,
+          "next": "t8",
+          "acceptedAnswers": [
+            "Pa! Do jutra!",
+            "Pa!",
+            "Do jutra!",
+            "Cześć! Do jutra!"
+          ]
+        },
+        {
+          "text": "Do widzenia, pani!",
+          "meaning": {
+            "en": "Goodbye, madam!"
+          },
+          "register": "formal",
+          "note": {
+            "en": "Kasia is a friend, so *pani* is too formal. To her say *pa* or *do jutra*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t8",
+      "says": "Pa!",
+      "meaning": {
+        "en": "Bye!"
+      }
+    }
+  ]
+}

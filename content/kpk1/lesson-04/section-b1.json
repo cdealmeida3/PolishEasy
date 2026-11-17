@@ -1,0 +1,430 @@
+{
+  "id": "kpk1-l04-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Koniugacja -ę, -isz/-ysz",
+    "meaning": {
+      "en": "Verbs in -ę, -isz and -ysz"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l04-b1-t01",
+      "before": "kpk1-l04-b1-e01",
+      "title": {
+        "en": "Chodzić: -ę, -isz"
+      },
+      "body": {
+        "en": "Many verbs in *-ić* go like *mówić*: *-ę* for *ja*, *-isz* for *ty*, *-i* for *on* and *ona*, then *-imy*, *-icie* and *-ą*. In *chodzić* the *dzi* becomes *dz* before *-ę* and *-ą*: *chodzę*, *chodzą*. *Chodzić* is to go on foot, or to go somewhere regularly: *chodzę do szkoły*."
+      },
+      "conjugation": {
+        "verb": "chodzić",
+        "meaning": {
+          "en": "to go (on foot, or regularly)"
+        },
+        "forms": {
+          "ja": "chodzę",
+          "ty": "chodzisz",
+          "on": "chodzi",
+          "my": "chodzimy",
+          "wy": "chodzicie",
+          "oni": "chodzą"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l04-b1-t02",
+      "before": "kpk1-l04-b1-e11",
+      "title": {
+        "en": "Myśleć: to think"
+      },
+      "body": {
+        "en": "*Myśleć* ends in *-eć*, but it goes the same way: *myślę*, *myślisz*, *myśli*, *myślimy*, *myślicie*, *myślą*. *Myślisz, że…?* asks a friend \"do you think that…?\"."
+      },
+      "conjugation": {
+        "verb": "myśleć",
+        "meaning": {
+          "en": "to think"
+        },
+        "forms": {
+          "ja": "myślę",
+          "ty": "myślisz",
+          "on": "myśli",
+          "my": "myślimy",
+          "wy": "myślicie",
+          "oni": "myślą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b1-e01",
+      "prompt": "chodzę",
+      "options": [
+        {
+          "en": "I speak"
+        },
+        {
+          "en": "I go (on foot, or regularly)"
+        },
+        {
+          "en": "I think"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chodzic-chodze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b1-e02",
+      "prompt": "chodzisz",
+      "options": [
+        {
+          "en": "you speak (one friend)"
+        },
+        {
+          "en": "you live (one friend)"
+        },
+        {
+          "en": "you go (one friend; on foot, or regularly)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chodzic-chodzisz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b1-e03",
+      "prompt": "do szkoły",
+      "options": [
+        {
+          "en": "to school"
+        },
+        {
+          "en": "at school"
+        },
+        {
+          "en": "to Kraków"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-szkoly"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b1-e04",
+      "verb": "chodzić",
+      "meaning": {
+        "en": "to go (on foot, or regularly)"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ do szkoły.",
+      "sentenceMeaning": {
+        "en": "I go to school."
+      },
+      "acceptedAnswers": [
+        "chodzę"
+      ],
+      "items": [
+        "ja",
+        "chodzic-chodze",
+        "do-szkoly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b1-e05",
+      "prompt": "chodzi",
+      "options": [
+        {
+          "en": "he speaks, she speaks"
+        },
+        {
+          "en": "he goes, she goes (on foot, or regularly)"
+        },
+        {
+          "en": "he lives, she lives"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chodzic-chodzi"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-b1-e06",
+      "text": "on chodzi do szkoły",
+      "meaning": {
+        "en": "he goes to school"
+      },
+      "distractors": [
+        "oni chodzą do szkoły",
+        "ona mówi po polsku"
+      ],
+      "items": [
+        "on",
+        "chodzic-chodzi",
+        "do-szkoly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b1-e07",
+      "prompt": "chodzimy",
+      "options": [
+        {
+          "en": "we speak"
+        },
+        {
+          "en": "we live"
+        },
+        {
+          "en": "we go (on foot, or regularly)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chodzic-chodzimy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b1-e08",
+      "prompt": "chodzą",
+      "options": [
+        {
+          "en": "they go (on foot, or regularly)"
+        },
+        {
+          "en": "they speak"
+        },
+        {
+          "en": "they live"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chodzic-chodza"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b1-e09",
+      "verb": "chodzić",
+      "meaning": {
+        "en": "to go (on foot, or regularly)"
+      },
+      "person": "oni",
+      "sentence": "Oni ___ do szkoły.",
+      "sentenceMeaning": {
+        "en": "They go to school."
+      },
+      "acceptedAnswers": [
+        "chodzą"
+      ],
+      "items": [
+        "oni",
+        "chodzic-chodza",
+        "do-szkoly"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b1-e10",
+      "verb": "chodzić",
+      "meaning": {
+        "en": "to go (on foot, or regularly)"
+      },
+      "person": "my",
+      "sentence": "My też ___ do szkoły.",
+      "sentenceMeaning": {
+        "en": "We go to school too."
+      },
+      "acceptedAnswers": [
+        "chodzimy"
+      ],
+      "items": [
+        "my",
+        "tez",
+        "chodzic-chodzimy",
+        "do-szkoly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b1-e11",
+      "prompt": "myślisz",
+      "options": [
+        {
+          "en": "you know (one friend)"
+        },
+        {
+          "en": "you think (one friend)"
+        },
+        {
+          "en": "you go (one friend; on foot, or regularly)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "myslec-myslisz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b1-e12",
+      "prompt": "myśli",
+      "options": [
+        {
+          "en": "he knows, she knows"
+        },
+        {
+          "en": "he goes, she goes (on foot, or regularly)"
+        },
+        {
+          "en": "he thinks, she thinks"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "myslec-mysli"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b1-e13",
+      "verb": "myśleć",
+      "meaning": {
+        "en": "to think"
+      },
+      "person": "ty",
+      "sentence": "Czy ty ___, że to jest żart?",
+      "sentenceMeaning": {
+        "en": "Do you think that it is a joke?"
+      },
+      "acceptedAnswers": [
+        "myślisz"
+      ],
+      "items": [
+        "czy",
+        "ty",
+        "myslec-myslisz",
+        "ze",
+        "to",
+        "byc-jest",
+        "zart"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b1-e14",
+      "verb": "myśleć",
+      "meaning": {
+        "en": "to think"
+      },
+      "person": "on",
+      "sentence": "Ona ___, że on jest sympatyczny.",
+      "sentenceMeaning": {
+        "en": "She thinks that he is nice."
+      },
+      "acceptedAnswers": [
+        "myśli"
+      ],
+      "items": [
+        "ona",
+        "myslec-mysli",
+        "ze",
+        "on",
+        "byc-jest",
+        "sympatyczny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-b1-e15",
+      "prompt": {
+        "en": "do you go to school? (one friend)"
+      },
+      "acceptedAnswers": [
+        "czy chodzisz do szkoły?",
+        "chodzisz do szkoły?"
+      ],
+      "distractors": [
+        "chodzi",
+        "gdzie"
+      ],
+      "items": [
+        "czy",
+        "chodzic-chodzisz",
+        "do-szkoly"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-b1-e16",
+      "acceptedAnswers": [
+        "chodzimy do szkoły"
+      ],
+      "meaning": {
+        "en": "we go to school"
+      },
+      "items": [
+        "chodzic-chodzimy",
+        "do-szkoly"
+      ],
+      "readingAnswers": [
+        "my chodzimy do szkoły"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l04-b1-e17",
+      "prompt": {
+        "en": "they (men, or men and women) go to school"
+      },
+      "acceptedAnswers": [
+        "oni chodzą do szkoły"
+      ],
+      "items": [
+        "oni",
+        "chodzic-chodza",
+        "do-szkoly"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-b1-e18",
+      "acceptedAnswers": [
+        "myślisz, że to żart?"
+      ],
+      "meaning": {
+        "en": "do you think it is a joke? (one friend)"
+      },
+      "items": [
+        "myslec-myslisz",
+        "ze",
+        "to",
+        "zart"
+      ],
+      "readingAnswers": [
+        "czy myślisz, że to żart?",
+        "myślisz, że to jest żart?",
+        "czy myślisz, że to jest żart?",
+        "czy ty myślisz, że to żart?",
+        "ty myślisz, że to żart?"
+      ]
+    }
+  ]
+}

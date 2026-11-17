@@ -214,6 +214,16 @@ internal class CheckingPolishTest {
     }
 
     @Test
+    fun `a verb with się is conjugated with się after each form`() {
+        val written = listOf("uczę się", "uczysz się", "uczy się", "uczymy się", "uczycie się", "uczą się")
+        val claims = Person.entries.zip(written).map { (person, form) -> claim("uczyć się", person, form) }
+
+        assertEquals(emptyList(), check(content(verbForms = claims)).problems)
+        val problem = check(content(verbForms = listOf(claim("uczyć się", Person.I, "uczę")))).problems.single()
+        assertEquals("uczę is not the form of uczyć się for ja; the reference has uczę się", problem.message)
+    }
+
+    @Test
     fun `a form that is not a word is reported once as a verb form and once by the dictionary`() {
         val report = check(content(listOf(sentence("mówie")), listOf(claim("mówić", Person.I, "mówie"))))
 

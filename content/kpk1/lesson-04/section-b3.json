@@ -1,0 +1,447 @@
+{
+  "id": "kpk1-l04-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Koniugacja -ę, -isz/-ysz",
+    "meaning": {
+      "en": "Verbs in -ę, -isz and -ysz"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l04-b3-t01",
+      "before": "kpk1-l04-b3-e01",
+      "title": {
+        "en": "Słyszeć: to hear"
+      },
+      "body": {
+        "en": "*Słyszeć* has *sz* before its ending, so it goes like *uczyć się*: *słyszę*, *słyszysz*, *słyszy*, *słyszymy*, *słyszycie*, *słyszą*. *Nie słyszę, proszę powtórzyć* is \"I can't hear, please say it again\"."
+      },
+      "conjugation": {
+        "verb": "słyszeć",
+        "meaning": {
+          "en": "to hear"
+        },
+        "forms": {
+          "ja": "słyszę",
+          "ty": "słyszysz",
+          "on": "słyszy",
+          "my": "słyszymy",
+          "wy": "słyszycie",
+          "oni": "słyszą"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l04-b3-t02",
+      "before": "kpk1-l04-b3-e06",
+      "title": {
+        "en": "Robić: an extra i"
+      },
+      "body": {
+        "en": "After *b*, *p*, *w*, *f*, *m* and *n*, the forms for *ja* and *oni* have an extra *i*, as in *mówię* and *mówią*: *robię*, *robią*, but *robisz*, *robi*. *Lubić*, to like, goes the same way: *lubię*, *lubisz*. *Co robisz?* asks a friend \"what are you doing?\"."
+      },
+      "conjugation": {
+        "verb": "robić",
+        "meaning": {
+          "en": "to do, to make"
+        },
+        "forms": {
+          "ja": "robię",
+          "ty": "robisz",
+          "on": "robi",
+          "my": "robimy",
+          "wy": "robicie",
+          "oni": "robią"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b3-e01",
+      "prompt": "słyszę",
+      "options": [
+        {
+          "en": "I think"
+        },
+        {
+          "en": "I hear, I can hear"
+        },
+        {
+          "en": "I remember"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "slyszec-slysze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b3-e02",
+      "prompt": "słyszysz",
+      "options": [
+        {
+          "en": "you know (one friend)"
+        },
+        {
+          "en": "you think (one friend)"
+        },
+        {
+          "en": "you hear, you can hear (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "slyszec-slyszysz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b3-e03",
+      "verb": "słyszeć",
+      "meaning": {
+        "en": "to hear"
+      },
+      "person": "ja",
+      "sentence": "Przepraszam, nie ___.",
+      "sentenceMeaning": {
+        "en": "Sorry, I can't hear."
+      },
+      "acceptedAnswers": [
+        "słyszę"
+      ],
+      "items": [
+        "przepraszam",
+        "nie",
+        "slyszec-slysze"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-b3-e04",
+      "text": "nie słyszę, proszę powtórzyć",
+      "meaning": {
+        "en": "I can't hear, please say it again"
+      },
+      "distractors": [
+        "nie rozumiem, proszę powtórzyć",
+        "nie wiem, proszę powtórzyć"
+      ],
+      "items": [
+        "nie",
+        "slyszec-slysze",
+        "prosze",
+        "powtorzyc"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b3-e05",
+      "verb": "słyszeć",
+      "meaning": {
+        "en": "to hear"
+      },
+      "person": "ty",
+      "sentence": "Czy dobrze ___?",
+      "sentenceMeaning": {
+        "en": "Can you hear well?"
+      },
+      "acceptedAnswers": [
+        "słyszysz"
+      ],
+      "items": [
+        "czy",
+        "slyszec-slyszysz",
+        "dobrze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b3-e06",
+      "prompt": "robię",
+      "options": [
+        {
+          "en": "I do, I make"
+        },
+        {
+          "en": "I like"
+        },
+        {
+          "en": "I hear, I can hear"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "robic-robie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b3-e07",
+      "prompt": "robisz",
+      "options": [
+        {
+          "en": "you like (one friend)"
+        },
+        {
+          "en": "you do, you make (one friend)"
+        },
+        {
+          "en": "you hear, you can hear (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "robic-robisz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b3-e08",
+      "verb": "robić",
+      "meaning": {
+        "en": "to do, to make"
+      },
+      "person": "ty",
+      "sentence": "Co ty ___?",
+      "sentenceMeaning": {
+        "en": "What are you doing?"
+      },
+      "acceptedAnswers": [
+        "robisz"
+      ],
+      "items": [
+        "co",
+        "ty",
+        "robic-robisz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b3-e09",
+      "prompt": "lubię",
+      "options": [
+        {
+          "en": "I do, I make"
+        },
+        {
+          "en": "I am glad"
+        },
+        {
+          "en": "I like"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "lubic-lubie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b3-e10",
+      "prompt": "lubisz",
+      "options": [
+        {
+          "en": "you like (one friend)"
+        },
+        {
+          "en": "you do, you make (one friend)"
+        },
+        {
+          "en": "you know (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lubic-lubisz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b3-e11",
+      "prompt": "sport",
+      "options": [
+        {
+          "en": "a film"
+        },
+        {
+          "en": "sport"
+        },
+        {
+          "en": "a course"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sport"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-b3-e12",
+      "prompt": {
+        "en": "I like sport"
+      },
+      "acceptedAnswers": [
+        "lubię sport"
+      ],
+      "distractors": [
+        "lubisz",
+        "film"
+      ],
+      "items": [
+        "lubic-lubie",
+        "sport"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b3-e13",
+      "verb": "robić",
+      "meaning": {
+        "en": "to do, to make"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ test.",
+      "sentenceMeaning": {
+        "en": "I am doing a test."
+      },
+      "acceptedAnswers": [
+        "robię"
+      ],
+      "items": [
+        "ja",
+        "robic-robie",
+        "test"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b3-e14",
+      "prompt": "cieszę się",
+      "options": [
+        {
+          "en": "I am sure"
+        },
+        {
+          "en": "I think"
+        },
+        {
+          "en": "I am glad"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ciesze-sie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-b3-e15",
+      "prompt": {
+        "en": "I am glad that you are here (one friend)"
+      },
+      "acceptedAnswers": [
+        "cieszę się, że jesteś tutaj",
+        "cieszę się, że tutaj jesteś"
+      ],
+      "distractors": [
+        "jest",
+        "tam"
+      ],
+      "items": [
+        "ciesze-sie",
+        "ze",
+        "byc-jestes",
+        "tutaj"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-b3-e16",
+      "acceptedAnswers": [
+        "czy lubisz sport?"
+      ],
+      "meaning": {
+        "en": "do you like sport? (one friend)"
+      },
+      "items": [
+        "czy",
+        "lubic-lubisz",
+        "sport"
+      ],
+      "readingAnswers": [
+        "lubisz sport?",
+        "czy ty lubisz sport?",
+        "ty lubisz sport?"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l04-b3-e17",
+      "pairs": [
+        {
+          "polish": "słyszę",
+          "meaning": {
+            "en": "I hear"
+          }
+        },
+        {
+          "polish": "robię",
+          "meaning": {
+            "en": "I do"
+          }
+        },
+        {
+          "polish": "lubię",
+          "meaning": {
+            "en": "I like"
+          }
+        },
+        {
+          "polish": "sport",
+          "meaning": {
+            "en": "sport"
+          }
+        },
+        {
+          "polish": "cieszę się",
+          "meaning": {
+            "en": "I am glad"
+          }
+        }
+      ],
+      "items": [
+        "slyszec-slysze",
+        "robic-robie",
+        "lubic-lubie",
+        "sport",
+        "ciesze-sie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-b3-e18",
+      "acceptedAnswers": [
+        "słyszysz?"
+      ],
+      "meaning": {
+        "en": "can you hear? (one friend)"
+      },
+      "items": [
+        "slyszec-slyszysz"
+      ],
+      "readingAnswers": [
+        "czy słyszysz?",
+        "czy ty słyszysz?",
+        "ty słyszysz?"
+      ]
+    }
+  ]
+}

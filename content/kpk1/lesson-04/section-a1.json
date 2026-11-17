@@ -1,0 +1,402 @@
+{
+  "id": "kpk1-l04-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Kto to jest? To nowy student",
+    "meaning": {
+      "en": "Who is it? A new student"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l04-a1-t01",
+      "before": "kpk1-l04-a1-e01",
+      "title": {
+        "en": "Speaking a language"
+      },
+      "body": {
+        "en": "To say what language someone speaks, put *po* before it and end it in *-u*: *mówię po polsku*, *ona mówi po japońsku*. Where someone is from is *z…*: *z Japonii*, *z Ukrainy*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a1-e01",
+      "prompt": "po francusku",
+      "options": [
+        {
+          "en": "in French"
+        },
+        {
+          "en": "in Spanish"
+        },
+        {
+          "en": "in Italian"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "po-francusku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a1-e02",
+      "prompt": "po hiszpańsku",
+      "options": [
+        {
+          "en": "in French"
+        },
+        {
+          "en": "in Spanish"
+        },
+        {
+          "en": "in Ukrainian"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "po-hiszpansku"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-a1-e03",
+      "text": "mówię po francusku",
+      "meaning": {
+        "en": "I speak French"
+      },
+      "distractors": [
+        "mówię po angielsku",
+        "mówię po niemiecku"
+      ],
+      "items": [
+        "mowic-mowie",
+        "po-francusku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a1-e04",
+      "prompt": "po niemiecku",
+      "options": [
+        {
+          "en": "in Spanish"
+        },
+        {
+          "en": "in Japanese"
+        },
+        {
+          "en": "in German"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "po-niemiecku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a1-e05",
+      "prompt": "po włosku",
+      "options": [
+        {
+          "en": "in Italian"
+        },
+        {
+          "en": "in German"
+        },
+        {
+          "en": "in French"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "po-wlosku"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-a1-e06",
+      "prompt": {
+        "en": "he speaks Italian"
+      },
+      "acceptedAnswers": [
+        "on mówi po włosku"
+      ],
+      "distractors": [
+        "mówię",
+        "ona"
+      ],
+      "items": [
+        "on",
+        "mowic-mowi",
+        "po-wlosku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a1-e07",
+      "prompt": "po japońsku",
+      "options": [
+        {
+          "en": "in Italian"
+        },
+        {
+          "en": "in Japanese"
+        },
+        {
+          "en": "in Ukrainian"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "po-japonsku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a1-e08",
+      "prompt": "z Japonii",
+      "options": [
+        {
+          "en": "from Germany"
+        },
+        {
+          "en": "from Italy"
+        },
+        {
+          "en": "from Japan"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-japonii"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-a1-e09",
+      "text": "Ona jest z Japonii i mówi ___.",
+      "meaning": {
+        "en": "She is from Japan and speaks Japanese."
+      },
+      "gaps": [
+        [
+          "po japońsku"
+        ]
+      ],
+      "distractors": [
+        "po włosku",
+        "po niemiecku"
+      ],
+      "items": [
+        "ona",
+        "byc-jest",
+        "z-japonii",
+        "i",
+        "mowic-mowi",
+        "po-japonsku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a1-e10",
+      "prompt": "po ukraińsku",
+      "options": [
+        {
+          "en": "in Ukrainian"
+        },
+        {
+          "en": "in German"
+        },
+        {
+          "en": "in Spanish"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "po-ukrainsku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a1-e11",
+      "prompt": "z Ukrainy",
+      "options": [
+        {
+          "en": "from Japan"
+        },
+        {
+          "en": "from Ukraine"
+        },
+        {
+          "en": "from Spain"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-ukrainy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-a1-e12",
+      "text": "ona jest z Ukrainy",
+      "meaning": {
+        "en": "she is from Ukraine"
+      },
+      "distractors": [
+        "ona jest z Japonii",
+        "ona jest z Hiszpanii"
+      ],
+      "items": [
+        "ona",
+        "byc-jest",
+        "z-ukrainy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l04-a1-e13",
+      "prompt": {
+        "en": "he is from Ukraine and speaks Ukrainian"
+      },
+      "acceptedAnswers": [
+        "on jest z Ukrainy i mówi po ukraińsku"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "z-ukrainy",
+        "i",
+        "mowic-mowi",
+        "po-ukrainsku"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-a1-e14",
+      "acceptedAnswers": [
+        "mówimy po hiszpańsku"
+      ],
+      "meaning": {
+        "en": "we speak Spanish"
+      },
+      "items": [
+        "mowic-mowimy",
+        "po-hiszpansku"
+      ],
+      "readingAnswers": [
+        "my mówimy po hiszpańsku"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l04-a1-e15",
+      "pairs": [
+        {
+          "polish": "po francusku",
+          "meaning": {
+            "en": "in French"
+          }
+        },
+        {
+          "polish": "po hiszpańsku",
+          "meaning": {
+            "en": "in Spanish"
+          }
+        },
+        {
+          "polish": "po niemiecku",
+          "meaning": {
+            "en": "in German"
+          }
+        },
+        {
+          "polish": "po włosku",
+          "meaning": {
+            "en": "in Italian"
+          }
+        },
+        {
+          "polish": "po japońsku",
+          "meaning": {
+            "en": "in Japanese"
+          }
+        }
+      ],
+      "items": [
+        "po-francusku",
+        "po-hiszpansku",
+        "po-niemiecku",
+        "po-wlosku",
+        "po-japonsku"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-a1-e16",
+      "prompt": {
+        "en": "do you speak German? (one friend)"
+      },
+      "acceptedAnswers": [
+        "czy mówisz po niemiecku?",
+        "mówisz po niemiecku?"
+      ],
+      "distractors": [
+        "mówi",
+        "włosku"
+      ],
+      "items": [
+        "czy",
+        "mowic-mowisz",
+        "po-niemiecku"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-a1-e17",
+      "acceptedAnswers": [
+        "ona mówi po japońsku"
+      ],
+      "meaning": {
+        "en": "she speaks Japanese"
+      },
+      "items": [
+        "ona",
+        "mowic-mowi",
+        "po-japonsku"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-a1-e18",
+      "text": "Jesteś z Francji? Tak, mówię ___.",
+      "meaning": {
+        "en": "Are you from France? Yes, I speak French."
+      },
+      "gaps": [
+        [
+          "po francusku"
+        ]
+      ],
+      "distractors": [
+        "po włosku",
+        "po polsku"
+      ],
+      "items": [
+        "byc-jestes",
+        "z-francji",
+        "tak",
+        "mowic-mowie",
+        "po-francusku"
+      ]
+    }
+  ]
+}

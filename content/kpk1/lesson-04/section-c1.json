@@ -1,0 +1,452 @@
+{
+  "id": "kpk1-l04-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Jaki on jest?",
+    "meaning": {
+      "en": "What is he like?"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l04-c1-t01",
+      "before": "kpk1-l04-c1-e01",
+      "title": {
+        "en": "What is he like? What is she like?"
+      },
+      "body": {
+        "en": "To describe a person, ask *jaki on jest?* or *jaka ona jest?* and answer with an adjective in the same gender: *on jest wesoły*, *ona jest wesoła*. *Wysoki* and *niski* end in *-i* after *k*, like *polski*: *wysoka*, *niska*."
+      },
+      "table": {
+        "title": {
+          "en": "Jaki? Jaka? Jakie?"
+        },
+        "columns": [
+          {
+            "gender": "m"
+          },
+          {
+            "gender": "f"
+          },
+          {
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "wesoł[y]",
+              "wesoł[a]",
+              "wesoł[e]"
+            ]
+          },
+          {
+            "cells": [
+              "wysok[i]",
+              "wysok[a]",
+              "wysok[ie]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c1-e01",
+      "prompt": "smutny",
+      "options": [
+        {
+          "en": "sad (smutny, smutna, smutne)"
+        },
+        {
+          "en": "cheerful (wesoły, wesoła, wesołe)"
+        },
+        {
+          "en": "tired (zmęczony, zmęczona, zmęczone)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "smutny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c1-e02",
+      "prompt": "wesoły",
+      "options": [
+        {
+          "en": "sad (smutny, smutna, smutne)"
+        },
+        {
+          "en": "cheerful (wesoły, wesoła, wesołe)"
+        },
+        {
+          "en": "young (młody, młoda, młode)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wesoly"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-c1-e03",
+      "text": "ona jest smutna",
+      "meaning": {
+        "en": "she is sad"
+      },
+      "distractors": [
+        "ona jest wesoła",
+        "ona jest młoda"
+      ],
+      "items": [
+        "ona",
+        "byc-jest",
+        "smutny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c1-e04",
+      "prompt": "wysoki",
+      "options": [
+        {
+          "en": "short (not tall) (niski, niska, niskie)"
+        },
+        {
+          "en": "fat (gruby, gruba, grube)"
+        },
+        {
+          "en": "tall (wysoki, wysoka, wysokie)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wysoki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c1-e05",
+      "prompt": "niski",
+      "options": [
+        {
+          "en": "short (not tall) (niski, niska, niskie)"
+        },
+        {
+          "en": "tall (wysoki, wysoka, wysokie)"
+        },
+        {
+          "en": "slim (szczupły, szczupła, szczupłe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "niski"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c1-e06",
+      "prompt": "przystojny",
+      "options": [
+        {
+          "en": "sporty, athletic (wysportowany, wysportowana, wysportowane)"
+        },
+        {
+          "en": "handsome (przystojny, przystojna, przystojne)"
+        },
+        {
+          "en": "pretty (ładny, ładna, ładne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przystojny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-c1-e07",
+      "prompt": {
+        "en": "he is tall and handsome"
+      },
+      "acceptedAnswers": [
+        "on jest wysoki i przystojny",
+        "on jest przystojny i wysoki"
+      ],
+      "distractors": [
+        "wysoka",
+        "ale"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "wysoki",
+        "i",
+        "przystojny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-c1-e08",
+      "text": "On jest ___, a ona jest ___.",
+      "meaning": {
+        "en": "He is tall, and she is short."
+      },
+      "gaps": [
+        [
+          "wysoki"
+        ],
+        [
+          "niska"
+        ]
+      ],
+      "distractors": [
+        "wysoka",
+        "niski"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "wysoki",
+        "a",
+        "ona",
+        "niski"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c1-e09",
+      "prompt": "średniego wzrostu",
+      "options": [
+        {
+          "en": "short (not tall) (niski, niska, niskie)"
+        },
+        {
+          "en": "young (młody, młoda, młode)"
+        },
+        {
+          "en": "of medium height"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sredniego-wzrostu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c1-e10",
+      "prompt": "wysportowany",
+      "options": [
+        {
+          "en": "sporty, athletic (wysportowany, wysportowana, wysportowane)"
+        },
+        {
+          "en": "handsome (przystojny, przystojna, przystojne)"
+        },
+        {
+          "en": "hard-working (pracowity, pracowita, pracowite)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wysportowany"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c1-e11",
+      "prompt": "młody",
+      "options": [
+        {
+          "en": "old (stary, stara, stare)"
+        },
+        {
+          "en": "young (młody, młoda, młode)"
+        },
+        {
+          "en": "cheerful (wesoły, wesoła, wesołe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "mlody"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l04-c1-e12",
+      "prompt": {
+        "en": "she is young and sporty"
+      },
+      "acceptedAnswers": [
+        "ona jest młoda i wysportowana",
+        "ona jest wysportowana i młoda"
+      ],
+      "items": [
+        "ona",
+        "byc-jest",
+        "mlody",
+        "i",
+        "wysportowany"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-c1-e13",
+      "acceptedAnswers": [
+        "on jest średniego wzrostu"
+      ],
+      "meaning": {
+        "en": "he is of medium height"
+      },
+      "items": [
+        "on",
+        "byc-jest",
+        "sredniego-wzrostu"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l04-c1-e14",
+      "pairs": [
+        {
+          "polish": "wesoły",
+          "meaning": {
+            "en": "cheerful"
+          }
+        },
+        {
+          "polish": "smutny",
+          "meaning": {
+            "en": "sad"
+          }
+        },
+        {
+          "polish": "wysoki",
+          "meaning": {
+            "en": "tall"
+          }
+        },
+        {
+          "polish": "niski",
+          "meaning": {
+            "en": "short"
+          }
+        },
+        {
+          "polish": "młody",
+          "meaning": {
+            "en": "young"
+          }
+        }
+      ],
+      "items": [
+        "wesoly",
+        "smutny",
+        "wysoki",
+        "niski",
+        "mlody"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-c1-e15",
+      "acceptedAnswers": [
+        "jestem smutny"
+      ],
+      "meaning": {
+        "en": "I am sad (a man speaking)"
+      },
+      "items": [
+        "byc-jestem",
+        "smutny"
+      ],
+      "readingAnswers": [
+        "ja jestem smutny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-c1-e16",
+      "prompt": {
+        "en": "what is he like? He is cheerful."
+      },
+      "acceptedAnswers": [
+        "jaki on jest? On jest wesoły.",
+        "jaki on jest? Jest wesoły."
+      ],
+      "distractors": [
+        "jaka",
+        "wesoła"
+      ],
+      "items": [
+        "jaki",
+        "on",
+        "byc-jest",
+        "wesoly"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l04-c1-e17",
+      "lines": [
+        "Kto to jest?",
+        "To jest Adam. Jest wysoki, przystojny i wysportowany.",
+        "A Ewa?",
+        "Ewa jest średniego wzrostu. Jest młoda i wesoła."
+      ],
+      "meaning": {
+        "en": "Two friends look at a photo."
+      },
+      "statements": [
+        {
+          "text": "Adam jest niski.",
+          "meaning": {
+            "en": "Adam is short."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam jest wysportowany.",
+          "meaning": {
+            "en": "Adam is sporty."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa jest smutna.",
+          "meaning": {
+            "en": "Ewa is sad."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "kto-to-jest",
+        "to",
+        "byc-jest",
+        "adam",
+        "wysoki",
+        "przystojny",
+        "i",
+        "wysportowany",
+        "a",
+        "ewa",
+        "sredniego-wzrostu",
+        "mlody",
+        "wesoly"
+      ]
+    }
+  ]
+}

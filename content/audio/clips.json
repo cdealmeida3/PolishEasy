@@ -13,6 +13,10 @@
       "text": "A dlaczego pan uczy się polskiego?"
     },
     {
+      "id": "a-ewa",
+      "text": "A Ewa?"
+    },
+    {
       "id": "a-gdzie-jest-olowek",
       "text": "A gdzie jest ołówek?"
     },
@@ -33,12 +37,20 @@
       "text": "A to jest Anna, studentka."
     },
     {
+      "id": "a-twoja-kolezanka",
+      "text": "A twoja koleżanka?"
+    },
+    {
       "id": "a-ty",
       "text": "a ty?"
     },
     {
       "id": "a-ty-jak-masz-na-imie",
       "text": "a ty jak masz na imię?"
+    },
+    {
+      "id": "a-ty-lubisz-sport",
+      "text": "A ty? Lubisz sport?"
     },
     {
       "id": "a-u-ciebie",
@@ -113,6 +125,10 @@
       "text": "adres"
     },
     {
+      "id": "aktywny",
+      "text": "aktywny"
+    },
+    {
       "id": "akwarium",
       "text": "akwarium"
     },
@@ -125,12 +141,20 @@
       "text": "alfabet"
     },
     {
+      "id": "ambitny",
+      "text": "ambitny"
+    },
+    {
       "id": "angielka",
       "text": "Angielką"
     },
     {
       "id": "anglikiem",
       "text": "Anglikiem"
+    },
+    {
+      "id": "atrakcyjny",
+      "text": "atrakcyjny"
     },
     {
       "id": "auto",
@@ -197,6 +221,14 @@
       "text": "brązowy"
     },
     {
+      "id": "brudny",
+      "text": "brudny"
+    },
+    {
+      "id": "brzydki",
+      "text": "brzydki"
+    },
+    {
       "id": "byc-moze",
       "text": "być może"
     },
@@ -213,6 +245,42 @@
       "text": "chłopak i dziewczyna"
     },
     {
+      "id": "chodza",
+      "text": "chodzą"
+    },
+    {
+      "id": "chodze",
+      "text": "chodzę"
+    },
+    {
+      "id": "chodzi",
+      "text": "chodzi"
+    },
+    {
+      "id": "chodzi-do-szkoly-mysli-ze-szkola-jest-fajna",
+      "text": "Chodzi do szkoły. Myśli, że szkoła jest fajna."
+    },
+    {
+      "id": "chodzimy",
+      "text": "chodzimy"
+    },
+    {
+      "id": "chodzimy-do-szkoly",
+      "text": "chodzimy do szkoły"
+    },
+    {
+      "id": "chodzisz",
+      "text": "chodzisz"
+    },
+    {
+      "id": "chodzisz-do-szkoly",
+      "text": "chodzisz do szkoły?"
+    },
+    {
+      "id": "chory",
+      "text": "chory"
+    },
+    {
       "id": "chwileczke",
       "text": "chwileczkę"
     },
@@ -221,8 +289,36 @@
       "text": "chwileczkę, proszę"
     },
     {
+      "id": "chyba",
+      "text": "chyba"
+    },
+    {
+      "id": "chyba-z-hiszpanii-mowi-po-hiszpansku",
+      "text": "Chyba z Hiszpanii. Mówi po hiszpańsku."
+    },
+    {
       "id": "cie",
       "text": "cie"
+    },
+    {
+      "id": "ciekawe-skad-on-jest",
+      "text": "Ciekawe, skąd on jest."
+    },
+    {
+      "id": "ciekawy",
+      "text": "ciekawy"
+    },
+    {
+      "id": "ciesze-sie",
+      "text": "cieszę się"
+    },
+    {
+      "id": "ciesze-sie-ze-jestes-tutaj",
+      "text": "cieszę się, że jesteś tutaj"
+    },
+    {
+      "id": "ciesze-sie-ze-tutaj-jestes",
+      "text": "cieszę się, że tutaj jesteś"
     },
     {
       "id": "co",
@@ -271,6 +367,10 @@
     {
       "id": "co-to-znaczy",
       "text": "co to znaczy?"
+    },
+    {
+      "id": "co-ty-robisz",
+      "text": "Co ty robisz?"
     },
     {
       "id": "co-u-ciebie",
@@ -325,8 +425,16 @@
       "text": "cześć"
     },
     {
+      "id": "czesc-co-robisz",
+      "text": "Cześć! Co robisz?"
+    },
+    {
       "id": "czesc-co-slychac",
       "text": "cześć, co słychać?"
+    },
+    {
+      "id": "czesc-co-slychac-2",
+      "text": "Cześć! Co słychać?"
     },
     {
       "id": "czesc-co-to-jest",
@@ -343,6 +451,10 @@
     {
       "id": "czesc-co-u-ciebie-slychac",
       "text": "cześć, co u ciebie słychać?"
+    },
+    {
+      "id": "czesc-czy-wiesz-kto-to-jest",
+      "text": "Cześć! Czy wiesz, kto to jest?"
     },
     {
       "id": "czesc-do-jutra",
@@ -485,12 +597,24 @@
       "text": "czy"
     },
     {
+      "id": "czy-chodzisz-do-szkoly",
+      "text": "czy chodzisz do szkoły?"
+    },
+    {
+      "id": "czy-dobrze-slyszysz",
+      "text": "Czy dobrze słyszysz?"
+    },
+    {
       "id": "czy-grasz-w-tenisa",
       "text": "czy grasz w tenisa?"
     },
     {
       "id": "czy-jestes-z-polski",
       "text": "czy jesteś z Polski?"
+    },
+    {
+      "id": "czy-lubisz-sport",
+      "text": "czy lubisz sport?"
     },
     {
       "id": "czy-macie-czas",
@@ -519,6 +643,10 @@
     {
       "id": "czy-mowisz-po-angielsku",
       "text": "czy mówisz po angielsku?"
+    },
+    {
+      "id": "czy-mowisz-po-niemiecku",
+      "text": "czy mówisz po niemiecku?"
     },
     {
       "id": "czy-oni-sa-tutaj",
@@ -593,12 +721,32 @@
       "text": "czy twój mąż jest z Polski?"
     },
     {
+      "id": "czy-ty-chodzisz-do-szkoly",
+      "text": "Czy ty chodzisz do szkoły?"
+    },
+    {
       "id": "czy-ty-grasz-w-tenisa",
       "text": "Czy ty grasz w tenisa?"
     },
     {
+      "id": "czy-ty-myslisz-ze-to-jest-zart",
+      "text": "Czy ty myślisz, że to jest żart?"
+    },
+    {
+      "id": "czy-ty-tez-konczysz-kurs",
+      "text": "Czy ty też kończysz kurs?"
+    },
+    {
+      "id": "czy-wiesz-kto-to-jest",
+      "text": "czy wiesz, kto to jest?"
+    },
+    {
       "id": "czy-wy-mieszkacie-w-warszawie",
       "text": "czy wy mieszkacie w Warszawie?"
+    },
+    {
+      "id": "czysty",
+      "text": "czysty"
     },
     {
       "id": "czytam",
@@ -647,6 +795,10 @@
     {
       "id": "do-jutra",
       "text": "do jutra"
+    },
+    {
+      "id": "do-szkoly",
+      "text": "do szkoły"
     },
     {
       "id": "do-widzenia",
@@ -1009,6 +1161,18 @@
       "text": "dziewiętnaście"
     },
     {
+      "id": "dzis",
+      "text": "dziś"
+    },
+    {
+      "id": "dzis-jestem-zestresowany",
+      "text": "dziś jestem zestresowany"
+    },
+    {
+      "id": "dzis-konczy-kurs-i-jest-zmeczony",
+      "text": "Dziś kończy kurs i jest zmęczony."
+    },
+    {
       "id": "e",
       "text": "e"
     },
@@ -1041,6 +1205,10 @@
       "text": "eń"
     },
     {
+      "id": "energiczny",
+      "text": "energiczny"
+    },
+    {
       "id": "er",
       "text": "er"
     },
@@ -1061,6 +1229,10 @@
       "text": "Ewa, gdzie ty jesteś?"
     },
     {
+      "id": "ewa-jest-sredniego-wzrostu-jest-mloda-i-wesola",
+      "text": "Ewa jest średniego wzrostu. Jest młoda i wesoła."
+    },
+    {
       "id": "ewa-jest-z-anglii-ale-mowi-po-polsku",
       "text": "Ewa jest z Anglii, ale mówi po polsku."
     },
@@ -1079,6 +1251,10 @@
     {
       "id": "fajny-dlugopis-jaki-to-kolor-czerwony",
       "text": "Fajny długopis! Jaki to kolor? Czerwony?"
+    },
+    {
+      "id": "film",
+      "text": "film"
     },
     {
       "id": "fioletowy",
@@ -1185,6 +1361,10 @@
       "text": "gratulacje, na zdrowie"
     },
     {
+      "id": "gruby",
+      "text": "gruby"
+    },
+    {
       "id": "gumka",
       "text": "gumka"
     },
@@ -1273,12 +1453,24 @@
       "text": "imię, nazwisko, narodowość"
     },
     {
+      "id": "inteligentny",
+      "text": "inteligentny"
+    },
+    {
       "id": "interesujacy",
       "text": "interesujący"
     },
     {
       "id": "ja",
       "text": "ja"
+    },
+    {
+      "id": "ja-chodze-do-szkoly",
+      "text": "Ja chodzę do szkoły."
+    },
+    {
+      "id": "ja-chodze-do-szkoly-lubisz-sport",
+      "text": "Ja chodzę do szkoły. Lubisz sport?"
     },
     {
       "id": "ja-czytam-tekst",
@@ -1305,6 +1497,10 @@
       "text": "ja jestem z Włoch"
     },
     {
+      "id": "ja-koncze-kurs",
+      "text": "Ja kończę kurs."
+    },
+    {
       "id": "ja-mam-dwadziescia-lat",
       "text": "ja mam dwadzieścia lat"
     },
@@ -1329,12 +1525,20 @@
       "text": "ja pamiętam"
     },
     {
+      "id": "ja-robie-test",
+      "text": "Ja robię test."
+    },
+    {
       "id": "ja-tez-grasz-w-tenisa",
       "text": "Ja też! Grasz w tenisa?"
     },
     {
       "id": "ja-tez-jestem-z-anglii",
       "text": "ja też jestem z Anglii"
+    },
+    {
+      "id": "ja-tez-mysle-ze-on-tez-jest-wysportowany",
+      "text": "Ja też! Myślę, że on też jest wysportowany."
     },
     {
       "id": "ja-ucze-sie-polskiego-bo-moj-chlopak-jest-z-pols",
@@ -1425,12 +1629,20 @@
       "text": "jaka"
     },
     {
+      "id": "jaka-jest-ona",
+      "text": "jaka jest ona?"
+    },
+    {
       "id": "jaka-jest-ta-szkola",
       "text": "jaka jest ta szkoła?"
     },
     {
       "id": "jaka-jest-ta-torba-jest-czerwona",
       "text": "jaka jest ta torba? Jest czerwona."
+    },
+    {
+      "id": "jaka-ona-jest",
+      "text": "jaka ona jest?"
     },
     {
       "id": "jaki",
@@ -1465,6 +1677,10 @@
       "text": "jaki jest twój adres?"
     },
     {
+      "id": "jaki-jest-twoj-kolega",
+      "text": "Jaki jest twój kolega?"
+    },
+    {
       "id": "jaki-jest-twoj-numer",
       "text": "jaki jest twój numer?"
     },
@@ -1479,6 +1695,18 @@
     {
       "id": "jaki-masz-numer-telefonu",
       "text": "jaki masz numer telefonu?"
+    },
+    {
+      "id": "jaki-on-jest-jest-wesoly",
+      "text": "jaki on jest? Jest wesoły."
+    },
+    {
+      "id": "jaki-on-jest-on-jest-wesoly",
+      "text": "jaki on jest? On jest wesoły."
+    },
+    {
+      "id": "jaki-on-jest-sympatyczny",
+      "text": "Jaki on jest? Sympatyczny?"
     },
     {
       "id": "jaki-to-kolor",
@@ -1549,8 +1777,20 @@
       "text": "jest"
     },
     {
+      "id": "jest-leniwy",
+      "text": "Jest leniwy?"
+    },
+    {
+      "id": "jest-mloda-mila-i-bardzo-inteligentna",
+      "text": "Jest młoda, miła i bardzo inteligentna."
+    },
+    {
       "id": "jest-sympatyczny-i-interesujacy",
       "text": "Jest sympatyczny i interesujący."
+    },
+    {
+      "id": "jest-wysoki-i-przystojny",
+      "text": "Jest wysoki i przystojny."
     },
     {
       "id": "jest-z-anglii",
@@ -1565,12 +1805,28 @@
       "text": "jestem Adam"
     },
     {
+      "id": "jestem-pewna-ze-on-jest-ambitny",
+      "text": "Jestem pewna, że on jest ambitny."
+    },
+    {
+      "id": "jestem-pewna-ze-to-zart",
+      "text": "jestem pewna, że to żart"
+    },
+    {
+      "id": "jestem-pewny-ze-ona-jest-mila",
+      "text": "jestem pewny, że ona jest miła"
+    },
+    {
       "id": "jestem-polakiem",
       "text": "jestem Polakiem"
     },
     {
       "id": "jestem-polka",
       "text": "jestem Polką"
+    },
+    {
+      "id": "jestem-smutny",
+      "text": "jestem smutny"
     },
     {
       "id": "jestem-tutaj",
@@ -1637,6 +1893,14 @@
       "text": "Jestem z Włoch i mieszkam w Krakowie."
     },
     {
+      "id": "jestem-zmeczona",
+      "text": "jestem zmęczona"
+    },
+    {
+      "id": "jestem-zmeczony",
+      "text": "jestem zmęczony"
+    },
+    {
       "id": "jestes",
       "text": "jesteś"
     },
@@ -1645,8 +1909,16 @@
       "text": "jesteś tutaj?"
     },
     {
+      "id": "jestes-z-francji-tak-mowie-po-francusku",
+      "text": "Jesteś z Francji? Tak, mówię po francusku."
+    },
+    {
       "id": "jestes-z-polski",
       "text": "jesteś z Polski?"
+    },
+    {
+      "id": "jestes-zmeczona",
+      "text": "jesteś zmęczona?"
     },
     {
       "id": "jestescie",
@@ -1749,8 +2021,32 @@
       "text": "komputer"
     },
     {
+      "id": "koncze",
+      "text": "kończę"
+    },
+    {
+      "id": "koncze-kurs-a-ty",
+      "text": "Kończę kurs. A ty?"
+    },
+    {
+      "id": "konczy",
+      "text": "kończy"
+    },
+    {
+      "id": "konczysz",
+      "text": "kończysz"
+    },
+    {
+      "id": "konczysz-kurs",
+      "text": "kończysz kurs?"
+    },
+    {
       "id": "krakow",
       "text": "Kraków"
+    },
+    {
+      "id": "kreatywny",
+      "text": "kreatywny"
     },
     {
       "id": "krzeslo",
@@ -1793,6 +2089,14 @@
       "text": "kubek"
     },
     {
+      "id": "kurs",
+      "text": "kurs"
+    },
+    {
+      "id": "ladny",
+      "text": "ładny"
+    },
+    {
       "id": "ladowarka",
       "text": "ładowarka"
     },
@@ -1823,6 +2127,22 @@
     {
       "id": "lekcja-numer-jeden",
       "text": "lekcja numer jeden"
+    },
+    {
+      "id": "leniwy",
+      "text": "leniwy"
+    },
+    {
+      "id": "lubie",
+      "text": "lubię"
+    },
+    {
+      "id": "lubie-sport",
+      "text": "lubię sport"
+    },
+    {
+      "id": "lubisz",
+      "text": "lubisz"
     },
     {
       "id": "ma",
@@ -1957,6 +2277,18 @@
       "text": "masz czas?"
     },
     {
+      "id": "masz-racje",
+      "text": "masz rację"
+    },
+    {
+      "id": "masz-racje-to-jest-zart",
+      "text": "masz rację, to jest żart"
+    },
+    {
+      "id": "masz-racje-to-zart",
+      "text": "masz rację, to żart"
+    },
+    {
       "id": "masz-rodzenstwo",
       "text": "masz rodzeństwo?"
     },
@@ -2069,8 +2401,16 @@
       "text": "miło mi panią poznać"
     },
     {
+      "id": "mily",
+      "text": "miły"
+    },
+    {
       "id": "minus",
       "text": "minus"
+    },
+    {
+      "id": "mlody",
+      "text": "młody"
     },
     {
       "id": "mnie-rowniez",
@@ -2217,6 +2557,14 @@
       "text": "mówi"
     },
     {
+      "id": "mowi-po-francusku-i-troche-po-polsku",
+      "text": "Mówi po francusku i trochę po polsku."
+    },
+    {
+      "id": "mowi-tez-po-polsku",
+      "text": "Mówi też po polsku?"
+    },
+    {
       "id": "mowia",
       "text": "mówią"
     },
@@ -2237,8 +2585,16 @@
       "text": "mówię po angielsku i trochę po polsku"
     },
     {
+      "id": "mowie-po-francusku",
+      "text": "mówię po francusku"
+    },
+    {
       "id": "mowie-po-polsku",
       "text": "mówię po polsku"
+    },
+    {
+      "id": "mowie-troche-po-niemiecku",
+      "text": "mówię trochę po niemiecku"
     },
     {
       "id": "mowie-troche-po-polsku",
@@ -2249,8 +2605,16 @@
       "text": "mówimy"
     },
     {
+      "id": "mowimy-po-hiszpansku",
+      "text": "mówimy po hiszpańsku"
+    },
+    {
       "id": "mowisz",
       "text": "mówisz"
+    },
+    {
+      "id": "mowisz-po-niemiecku",
+      "text": "mówisz po niemiecku?"
     },
     {
       "id": "moze",
@@ -2293,6 +2657,58 @@
       "text": "My mówimy po angielsku, a oni mówią po polsku."
     },
     {
+      "id": "my-tez-chodzimy-do-szkoly",
+      "text": "My też chodzimy do szkoły."
+    },
+    {
+      "id": "my-uczymy-sie-w-krakowie",
+      "text": "My uczymy się w Krakowie."
+    },
+    {
+      "id": "my-uczymy-sie-w-warszawie",
+      "text": "my uczymy się w Warszawie"
+    },
+    {
+      "id": "mysle",
+      "text": "myślę"
+    },
+    {
+      "id": "mysle-ze-ona-jest-bardzo-mila",
+      "text": "Myślę, że ona jest bardzo miła."
+    },
+    {
+      "id": "mysle-ze-tak",
+      "text": "myślę, że tak"
+    },
+    {
+      "id": "mysle-ze-to-jest-nowy-student",
+      "text": "myślę, że to jest nowy student"
+    },
+    {
+      "id": "mysle-ze-to-jest-zart",
+      "text": "myślę, że to jest żart"
+    },
+    {
+      "id": "mysle-ze-to-nowy-student",
+      "text": "myślę, że to nowy student"
+    },
+    {
+      "id": "mysle-ze-to-zart",
+      "text": "myślę, że to żart"
+    },
+    {
+      "id": "mysli",
+      "text": "myśli"
+    },
+    {
+      "id": "myslisz",
+      "text": "myślisz"
+    },
+    {
+      "id": "myslisz-ze-to-zart",
+      "text": "myślisz, że to żart?"
+    },
+    {
       "id": "na-imie",
       "text": "na imię"
     },
@@ -2303,6 +2719,18 @@
     {
       "id": "na-lewo",
       "text": "na lewo"
+    },
+    {
+      "id": "na-pewno",
+      "text": "na pewno"
+    },
+    {
+      "id": "na-pewno-jest-wysoki-i-szczuply",
+      "text": "Na pewno. Jest wysoki i szczupły."
+    },
+    {
+      "id": "na-pewno-on-jest-ambitny",
+      "text": "na pewno on jest ambitny"
     },
     {
       "id": "na-prawo",
@@ -2405,6 +2833,10 @@
       "text": "nie, dziękuję"
     },
     {
+      "id": "nie-jest-bardzo-pracowity",
+      "text": "Nie, jest bardzo pracowity!"
+    },
+    {
       "id": "nie-jestem-polakiem-jestem-anglikiem",
       "text": "nie jestem Polakiem, jestem Anglikiem"
     },
@@ -2441,6 +2873,10 @@
       "text": "nie rozumiem, proszę powtórzyć"
     },
     {
+      "id": "nie-slysze-prosze-powtorzyc",
+      "text": "nie słyszę, proszę powtórzyć"
+    },
+    {
       "id": "nie-szkodzi",
       "text": "nie szkodzi"
     },
@@ -2463,6 +2899,26 @@
     {
       "id": "nie-wiem",
       "text": "nie wiem"
+    },
+    {
+      "id": "nie-wiem-ale-chyba-tak",
+      "text": "nie wiem, ale chyba tak"
+    },
+    {
+      "id": "nie-wiem-ale-mysle-ze-to-jest-nowy-student",
+      "text": "Nie wiem, ale myślę, że to jest nowy student."
+    },
+    {
+      "id": "nie-wiem-ale-mysle-ze-to-nowy-student",
+      "text": "Nie wiem, ale myślę, że to nowy student."
+    },
+    {
+      "id": "nie-wiem-czy-jest-mila-ale-na-pewno-jest-atrakcy",
+      "text": "Nie wiem, czy jest miła, ale na pewno jest atrakcyjna i spontaniczna."
+    },
+    {
+      "id": "nie-wiem-czy-on-jest-mily",
+      "text": "nie wiem, czy on jest miły"
     },
     {
       "id": "nie-wiem-niestety",
@@ -2491,6 +2947,10 @@
     {
       "id": "niezle-a-ty",
       "text": "nieźle, a ty?"
+    },
+    {
+      "id": "niski",
+      "text": "niski"
     },
     {
       "id": "nowy",
@@ -2549,12 +3009,76 @@
       "text": "on"
     },
     {
+      "id": "on-chodzi-do-szkoly",
+      "text": "on chodzi do szkoły"
+    },
+    {
+      "id": "on-jest-aktywny-i-energiczny",
+      "text": "on jest aktywny i energiczny"
+    },
+    {
       "id": "on-jest-anglikiem-a-ona-jest-polka",
       "text": "on jest Anglikiem, a ona jest Polką"
     },
     {
+      "id": "on-jest-bardzo-romantyczny",
+      "text": "on jest bardzo romantyczny"
+    },
+    {
+      "id": "on-jest-chory-ale-ona-jest-zdrowa",
+      "text": "On jest chory, ale ona jest zdrowa."
+    },
+    {
+      "id": "on-jest-energiczny-i-aktywny",
+      "text": "on jest energiczny i aktywny"
+    },
+    {
+      "id": "on-jest-gruby-ale-zdrowy-bo-jest-bardzo-aktywny",
+      "text": "On jest gruby, ale zdrowy, bo jest bardzo aktywny."
+    },
+    {
+      "id": "on-jest-leniwy",
+      "text": "on jest leniwy"
+    },
+    {
+      "id": "on-jest-na-pewno-ambitny",
+      "text": "on jest na pewno ambitny"
+    },
+    {
+      "id": "on-jest-pracowity",
+      "text": "on jest pracowity"
+    },
+    {
+      "id": "on-jest-przystojny-i-wysoki",
+      "text": "on jest przystojny i wysoki"
+    },
+    {
+      "id": "on-jest-sredniego-wzrostu",
+      "text": "on jest średniego wzrostu"
+    },
+    {
+      "id": "on-jest-wysoki-a-ona-jest-niska",
+      "text": "On jest wysoki, a ona jest niska."
+    },
+    {
+      "id": "on-jest-wysoki-ale-nie-jest-wysportowany",
+      "text": "on jest wysoki, ale nie jest wysportowany"
+    },
+    {
+      "id": "on-jest-wysoki-i-przystojny",
+      "text": "on jest wysoki i przystojny"
+    },
+    {
       "id": "on-jest-z-anglii",
       "text": "on jest z Anglii"
+    },
+    {
+      "id": "on-jest-z-ukrainy-i-mowi-po-ukrainsku",
+      "text": "on jest z Ukrainy i mówi po ukraińsku"
+    },
+    {
+      "id": "on-jest-z-ukrainy-i-mowi-po-ukrainsku-a-ona-jest",
+      "text": "On jest z Ukrainy i mówi po ukraińsku, a ona jest z Japonii i mówi po japońsku."
     },
     {
       "id": "on-ma-jeden-rok",
@@ -2569,20 +3093,72 @@
       "text": "on mieszka w Berlinie"
     },
     {
+      "id": "on-mowi-po-wlosku",
+      "text": "on mówi po włosku"
+    },
+    {
+      "id": "on-na-pewno-jest-ambitny",
+      "text": "on na pewno jest ambitny"
+    },
+    {
       "id": "ona",
       "text": "ona"
+    },
+    {
+      "id": "ona-jest-chora",
+      "text": "ona jest chora"
+    },
+    {
+      "id": "ona-jest-inteligentna-i-kreatywna",
+      "text": "ona jest inteligentna i kreatywna"
+    },
+    {
+      "id": "ona-jest-kreatywna-i-inteligentna",
+      "text": "ona jest kreatywna i inteligentna"
+    },
+    {
+      "id": "ona-jest-ladna-i-szczupla",
+      "text": "ona jest ładna i szczupła"
+    },
+    {
+      "id": "ona-jest-mloda-i-wysportowana",
+      "text": "ona jest młoda i wysportowana"
+    },
+    {
+      "id": "ona-jest-smutna",
+      "text": "ona jest smutna"
+    },
+    {
+      "id": "ona-jest-szczupla-i-ladna",
+      "text": "ona jest szczupła i ładna"
+    },
+    {
+      "id": "ona-jest-wysportowana-i-mloda",
+      "text": "ona jest wysportowana i młoda"
     },
     {
       "id": "ona-jest-z-anglii",
       "text": "ona jest z Anglii"
     },
     {
+      "id": "ona-jest-z-japonii-i-mowi-po-japonsku",
+      "text": "Ona jest z Japonii i mówi po japońsku."
+    },
+    {
       "id": "ona-jest-z-polski",
       "text": "Ona jest z Polski."
     },
     {
+      "id": "ona-jest-z-ukrainy",
+      "text": "ona jest z Ukrainy"
+    },
+    {
       "id": "ona-jest-z-wloch",
       "text": "ona jest z Włoch"
+    },
+    {
+      "id": "ona-konczy-kurs",
+      "text": "ona kończy kurs"
     },
     {
       "id": "ona-ma-cztery-lata",
@@ -2599,6 +3175,14 @@
     {
       "id": "ona-mieszka-w-londynie",
       "text": "ona mieszka w Londynie"
+    },
+    {
+      "id": "ona-mowi-po-japonsku",
+      "text": "ona mówi po japońsku"
+    },
+    {
+      "id": "ona-mysli-ze-on-jest-sympatyczny",
+      "text": "Ona myśli, że on jest sympatyczny."
     },
     {
       "id": "ona-uczy-sie-polskiego-bo-jej-chlopak-jest-z-pol",
@@ -2637,6 +3221,14 @@
       "text": "oni"
     },
     {
+      "id": "oni-chodza-do-szkoly",
+      "text": "Oni chodzą do szkoły."
+    },
+    {
+      "id": "oni-chodza-do-szkoly-2",
+      "text": "oni chodzą do szkoły"
+    },
+    {
       "id": "oni-maja-corke",
       "text": "oni mają córkę"
     },
@@ -2655,6 +3247,14 @@
     {
       "id": "oni-tez-maja-problem",
       "text": "oni też mają problem"
+    },
+    {
+      "id": "oni-ucza-sie-w-krakowie-a-my-uczymy-sie-w-warsza",
+      "text": "Oni uczą się w Krakowie, a my uczymy się w Warszawie."
+    },
+    {
+      "id": "oni-ucza-sie-w-warszawie",
+      "text": "Oni uczą się w Warszawie."
     },
     {
       "id": "ono",
@@ -2757,6 +3357,10 @@
       "text": "pe"
     },
     {
+      "id": "pewny",
+      "text": "pewny"
+    },
+    {
       "id": "piec",
       "text": "pięć"
     },
@@ -2797,6 +3401,22 @@
       "text": "po angielsku"
     },
     {
+      "id": "po-francusku",
+      "text": "po francusku"
+    },
+    {
+      "id": "po-hiszpansku",
+      "text": "po hiszpańsku"
+    },
+    {
+      "id": "po-japonsku",
+      "text": "po japońsku"
+    },
+    {
+      "id": "po-niemiecku",
+      "text": "po niemiecku"
+    },
+    {
       "id": "po-polsku",
       "text": "po polsku"
     },
@@ -2807,6 +3427,14 @@
     {
       "id": "po-staremu-a-u-ciebie",
       "text": "po staremu, a u ciebie?"
+    },
+    {
+      "id": "po-ukrainsku",
+      "text": "po ukraińsku"
+    },
+    {
+      "id": "po-wlosku",
+      "text": "po włosku"
     },
     {
       "id": "podkreslic",
@@ -2855,6 +3483,10 @@
     {
       "id": "pracowac",
       "text": "pracować"
+    },
+    {
+      "id": "pracowity",
+      "text": "pracowity"
     },
     {
       "id": "praktyczny",
@@ -3045,6 +3677,10 @@
       "text": "Przepraszam, nie rozumiem. Proszę powtórzyć."
     },
     {
+      "id": "przepraszam-nie-slysze",
+      "text": "Przepraszam, nie słyszę."
+    },
+    {
       "id": "przepraszamy",
       "text": "przepraszamy"
     },
@@ -3061,12 +3697,24 @@
       "text": "przykład"
     },
     {
+      "id": "przystojny",
+      "text": "przystojny"
+    },
+    {
       "id": "pytanie",
       "text": "pytanie"
     },
     {
       "id": "restauracja",
       "text": "restauracja"
+    },
+    {
+      "id": "robie",
+      "text": "robię"
+    },
+    {
+      "id": "robisz",
+      "text": "robisz"
     },
     {
       "id": "rodzenstwo",
@@ -3079,6 +3727,10 @@
     {
       "id": "rok",
       "text": "rok"
+    },
+    {
+      "id": "romantyczny",
+      "text": "romantyczny"
     },
     {
       "id": "rowna-sie",
@@ -3177,6 +3829,10 @@
       "text": "słownik"
     },
     {
+      "id": "slowo",
+      "text": "słowo"
+    },
+    {
       "id": "slucham",
       "text": "słucham"
     },
@@ -3185,8 +3841,36 @@
       "text": "słuchawki"
     },
     {
+      "id": "slysze",
+      "text": "słyszę"
+    },
+    {
+      "id": "slyszysz",
+      "text": "słyszysz"
+    },
+    {
+      "id": "slyszysz-2",
+      "text": "słyszysz?"
+    },
+    {
       "id": "smacznego",
       "text": "smacznego"
+    },
+    {
+      "id": "smutny",
+      "text": "smutny"
+    },
+    {
+      "id": "spontaniczny",
+      "text": "spontaniczny"
+    },
+    {
+      "id": "sport",
+      "text": "sport"
+    },
+    {
+      "id": "sredniego-wzrostu",
+      "text": "średniego wzrostu"
     },
     {
       "id": "stary",
@@ -3257,6 +3941,10 @@
       "text": "Świetnie! Na razie, do jutra!"
     },
     {
+      "id": "swietnie-pa-do-jutra",
+      "text": "Świetnie! Pa, do jutra!"
+    },
+    {
       "id": "sympatyczny",
       "text": "sympatyczny"
     },
@@ -3271,6 +3959,10 @@
     {
       "id": "szary",
       "text": "szary"
+    },
+    {
+      "id": "szczuply",
+      "text": "szczupły"
     },
     {
       "id": "szesc",
@@ -3349,6 +4041,10 @@
       "text": "ta torba"
     },
     {
+      "id": "ta-torba-jest-brzydka",
+      "text": "ta torba jest brzydka"
+    },
+    {
       "id": "ta-torba-jest-czerwona",
       "text": "ta torba jest czerwona"
     },
@@ -3377,8 +4073,20 @@
       "text": "tak"
     },
     {
+      "id": "tak-ale-tylko-troche",
+      "text": "Tak, ale tylko trochę."
+    },
+    {
       "id": "tak-gram-w-tenisa-to-moje-hobby",
       "text": "Tak, gram w tenisa. To moje hobby."
+    },
+    {
+      "id": "tak-jest-bardzo-mily-i-wesoly",
+      "text": "Tak, jest bardzo miły i wesoły."
+    },
+    {
+      "id": "tak-lubie-sport",
+      "text": "Tak, lubię sport."
     },
     {
       "id": "tak-oczywiscie",
@@ -3409,8 +4117,16 @@
       "text": "Tak, to jest długopis."
     },
     {
+      "id": "tak-to-jest-ewa-nowa-studentka",
+      "text": "Tak, to jest Ewa, nowa studentka."
+    },
+    {
       "id": "tak-to-jest-moj-slownik",
       "text": "Tak, to jest mój słownik."
+    },
+    {
+      "id": "tak-to-marek-jest-z-francji",
+      "text": "Tak, to Marek. Jest z Francji."
     },
     {
       "id": "tak-troche",
@@ -3453,6 +4169,10 @@
       "text": "ten długopis jest dobry"
     },
     {
+      "id": "ten-film-jest-ciekawy",
+      "text": "ten film jest ciekawy"
+    },
+    {
       "id": "ten-klucz",
       "text": "ten klucz"
     },
@@ -3473,6 +4193,10 @@
       "text": "ten kubek jest biały"
     },
     {
+      "id": "ten-kubek-jest-brudny",
+      "text": "ten kubek jest brudny"
+    },
+    {
       "id": "ten-kubek-jest-pomaranczowy",
       "text": "ten kubek jest pomarańczowy"
     },
@@ -3487,6 +4211,10 @@
     {
       "id": "ten-plecak-jest-brazowy-a-ta-komorka-jest-czarna",
       "text": "Ten plecak jest brązowy, a ta komórka jest czarna."
+    },
+    {
+      "id": "ten-plecak-jest-czysty-a-ta-torba-jest-brudna",
+      "text": "Ten plecak jest czysty, a ta torba jest brudna."
     },
     {
       "id": "ten-plecak-jest-praktyczny",
@@ -3513,6 +4241,14 @@
       "text": "ten stół jest brązowy"
     },
     {
+      "id": "ten-student-jest-leniwy-ale-sympatyczny",
+      "text": "ten student jest leniwy, ale sympatyczny"
+    },
+    {
+      "id": "ten-student-nie-jest-leniwy-jest-bardzo-pracowit",
+      "text": "Ten student nie jest leniwy, jest bardzo pracowity."
+    },
+    {
       "id": "ten-zeszyt",
       "text": "ten zeszyt"
     },
@@ -3527,6 +4263,10 @@
     {
       "id": "tez",
       "text": "też"
+    },
+    {
+      "id": "tez-dobrze-czy-wiesz-kto-to-jest",
+      "text": "Też dobrze. Czy wiesz, kto to jest?"
     },
     {
       "id": "tez-jestem-z-anglii",
@@ -3569,12 +4309,32 @@
       "text": "to auto"
     },
     {
+      "id": "to-auto-jest-czyste",
+      "text": "to auto jest czyste"
+    },
+    {
       "id": "to-auto-jest-rozowe",
       "text": "to auto jest różowe"
     },
     {
+      "id": "to-chyba-nowy-student-ciekawe-czy-jest-z-polski",
+      "text": "To chyba nowy student. Ciekawe, czy jest z Polski."
+    },
+    {
+      "id": "to-dziecko-jest-aktywne",
+      "text": "to dziecko jest aktywne"
+    },
+    {
+      "id": "to-dziecko-jest-zdrowe",
+      "text": "to dziecko jest zdrowe"
+    },
+    {
       "id": "to-jest-adam",
       "text": "to jest Adam"
+    },
+    {
+      "id": "to-jest-adam-jest-wysoki-przystojny-i-wysportowa",
+      "text": "To jest Adam. Jest wysoki, przystojny i wysportowany."
     },
     {
       "id": "to-jest-adam-jest-z-polski",
@@ -3591,6 +4351,10 @@
     {
       "id": "to-jest-alfabet",
       "text": "to jest alfabet"
+    },
+    {
+      "id": "to-jest-ciekawe-slowo",
+      "text": "to jest ciekawe słowo"
     },
     {
       "id": "to-jest-duze-okno",
@@ -3659,6 +4423,10 @@
     {
       "id": "to-jest-moj-brat",
       "text": "to jest mój brat"
+    },
+    {
+      "id": "to-jest-moj-brat-jest-wysoki-i-szczuply",
+      "text": "To jest mój brat. Jest wysoki i szczupły."
     },
     {
       "id": "to-jest-moj-maz",
@@ -3767,6 +4535,10 @@
     {
       "id": "to-jest-twoje-dziecko",
       "text": "to jest twoje dziecko?"
+    },
+    {
+      "id": "to-jest-zart",
+      "text": "to jest żart"
     },
     {
       "id": "to-jest-zeszyt",
@@ -4057,6 +4829,10 @@
       "text": "u"
     },
     {
+      "id": "ucza-sie",
+      "text": "uczą się"
+    },
+    {
       "id": "ucze-sie-polskiego",
       "text": "uczę się polskiego"
     },
@@ -4103,6 +4879,14 @@
     {
       "id": "uczy-sie-polskiego",
       "text": "uczy się polskiego"
+    },
+    {
+      "id": "uczymy-sie",
+      "text": "uczymy się"
+    },
+    {
+      "id": "uczymy-sie-w-warszawie",
+      "text": "uczymy się w Warszawie"
     },
     {
       "id": "uczysz-sie-polskiego",
@@ -4153,12 +4937,24 @@
       "text": "w Warszawie"
     },
     {
+      "id": "wesoly",
+      "text": "wesoły"
+    },
+    {
       "id": "wiem",
       "text": "wiem"
     },
     {
       "id": "wiem-rozumiem",
       "text": "wiem, rozumiem"
+    },
+    {
+      "id": "wiesz",
+      "text": "wiesz"
+    },
+    {
+      "id": "wiesz-kto-to-jest",
+      "text": "Wiesz, kto to jest?"
     },
     {
       "id": "witamy",
@@ -4179,6 +4975,10 @@
     {
       "id": "wszystko-dobrze",
       "text": "wszystko dobrze"
+    },
+    {
+      "id": "wszystko-dobrze-a-u-ciebie",
+      "text": "Wszystko dobrze. A u ciebie?"
     },
     {
       "id": "wszystko-w-porzadku",
@@ -4213,6 +5013,14 @@
       "text": "wybrać"
     },
     {
+      "id": "wysoki",
+      "text": "wysoki"
+    },
+    {
+      "id": "wysportowany",
+      "text": "wysportowany"
+    },
+    {
       "id": "z-anglii",
       "text": "z Anglii"
     },
@@ -4225,6 +5033,10 @@
       "text": "z Hiszpanii"
     },
     {
+      "id": "z-japonii",
+      "text": "z Japonii"
+    },
+    {
       "id": "z-niemiec",
       "text": "z Niemiec"
     },
@@ -4233,8 +5045,24 @@
       "text": "z Polski"
     },
     {
+      "id": "z-ukrainy",
+      "text": "z Ukrainy"
+    },
+    {
       "id": "z-wloch",
       "text": "z Włoch"
+    },
+    {
+      "id": "zart",
+      "text": "żart"
+    },
+    {
+      "id": "zdrowy",
+      "text": "zdrowy"
+    },
+    {
+      "id": "ze",
+      "text": "że"
     },
     {
       "id": "zeby",
@@ -4247,6 +5075,10 @@
     {
       "id": "zero-jeden-dwa",
       "text": "zero, jeden, dwa"
+    },
+    {
+      "id": "zestresowany",
+      "text": "zestresowany"
     },
     {
       "id": "zeszyt",
@@ -4275,6 +5107,10 @@
     {
       "id": "zly",
       "text": "zły"
+    },
+    {
+      "id": "zmeczony",
+      "text": "zmęczony"
     },
     {
       "id": "zolty",
