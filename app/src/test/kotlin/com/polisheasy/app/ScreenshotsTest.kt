@@ -67,6 +67,7 @@ import com.polisheasy.engine.Register
 import com.polisheasy.engine.SpellRound
 import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.AnkietaRound
+import com.polisheasy.engine.LabelRound
 import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
@@ -1629,6 +1630,75 @@ class ScreenshotsTest {
         screen.onNodeWithText(app.getString(R.string.option_listen)).performClick()
         tap(R.string.setup_play)
         shot("165-ankieta-heard")
+    }
+
+    @Test
+    fun `Label the picture and Ten, ta, to over the real course in the light theme`() = chapter3Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Label the picture and Ten, ta, to over the real course in the dark theme`() = chapter3Games("dark")
+
+    @Test
+    fun `Label the picture and Ten, ta, to over the real course at the largest font size`() = atTheLargestFontSize { chapter3Games("large") }
+
+    /**
+     * Chapter 3's Games. Label the picture: before a Round, the board with the first picture
+     * asked, a label put right, the board half labelled, typing, and the result. Ten, ta, to: a
+     * noun, and a noun sorted.
+     */
+    private fun chapter3Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as LabelRound
+
+        fun label(correctly: Boolean = true) {
+            val asked = checkNotNull(round().spot)
+            val word = if (correctly) asked.polish else round().spots.first { it != asked && !round().board[round().spots.indexOf(it)].labelled }.polish
+            screen.onNode(hasText(word) and hasClickAction()).performScrollTo().performClick()
+            screen.waitForIdle()
+        }
+
+        fun moveOn() {
+            screen.mainClock.advanceTimeBy(Motion.MOVE_ON_MILLIS + 100)
+            screen.waitForIdle()
+        }
+
+        openRealPractice()
+        openGame(R.string.game_label_it)
+        shot("170-label-setup")
+        tap(R.string.setup_play)
+        shot("171-label-board")
+        label()
+        moveOn()
+        label(correctly = false)
+        shot("172-label-wrong")
+        tap(R.string.action_continue)
+        label()
+        moveOn()
+        shot("173-label-half")
+        repeat(3) {
+            label()
+            moveOn()
+        }
+        shot("174-label-result")
+        tap(R.string.result_done)
+        openGame(R.string.game_label_it)
+        screen.onNodeWithText(app.getString(R.string.option_type)).performScrollTo().performClick()
+        tap(R.string.setup_play)
+        screen.onNode(hasSetTextAction()).performTextInput(checkNotNull(round().spot).polish.dropLast(1))
+        shot("175-label-type")
+        leaveRound()
+
+        openGame(R.string.game_ten_ta_to)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+        shot("176-ten-ta-to")
+        val sorting = (viewModel?.screen as Screen.Round).round as GenderRound
+        val noun = checkNotNull(sorting.question)
+        screen.onNode(hasText(sorting.buckets.first { it.gender == noun.gender }.word) and hasClickAction()).performScrollTo().performClick()
+        screen.waitForIdle()
+        shot("177-ten-ta-to-sorted")
     }
 
     private fun registerSort(theme: String) {

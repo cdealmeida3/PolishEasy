@@ -83,7 +83,7 @@ Book pages 28 to 35, recordings 047 to 057. Ten parts, 173 Exercises and 61 new 
 - **D** *Kolory*, in two (18 and 17): eleven colours as adjectives, with a table, and *kolor*.
 - *Ćwiczenia* (18): the book's kinds again over the whole chapter.
 
-Each adjective is one Item with its feminine and neuter as `forms` (see [authoring.md](authoring.md)). There are 23 listening tasks on all 11 recordings (049 and 057 are word lists: the first and last word), and one Chat: *On the desk* (Tomek, informal: *co to jest?*, *czy to jest…?*, what your things are like and their colour). The new nouns are in Practice's `genders`, and 28 of them and the colours have pictures (the colours as hearts).
+Each adjective is one Item with its feminine and neuter as `forms` (see [authoring.md](authoring.md)). There are 23 listening tasks on all 11 recordings (049 and 057 are word lists: the first and last word), and one Chat: *On the desk* (Tomek, informal: *co to jest?*, *czy to jest…?*, what your things are like and their colour). The new nouns are in Practice's `genders`, and 28 of them and the colours have pictures (the colours as hearts). The chapter's Games are **Label the picture** (a board of six pictures labelled one at a time, by tapping the word or typing it) and **Ten, ta, to** (nouns sorted under the word for "this", by Mój, moja, moje's rules).
 
 It gives the later chapters:
 

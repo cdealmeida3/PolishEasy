@@ -34,6 +34,7 @@ import com.polisheasy.engine.AnkietaRound
 import com.polisheasy.engine.ChainRound
 import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
+import com.polisheasy.engine.LabelRound
 import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.Register
@@ -580,6 +581,76 @@ class PlayingPracticeOnScreenTest {
     }
 
     @Test
+    fun `Ten, ta, to sorts a noun under the word for this, and writes the two together`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_ten_ta_to)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        shows(R.string.ten_instruction)
+        assertEquals(listOf("ten", "ta", "to"), sorting().buckets.map { it.word })
+        val first = checkNotNull(sorting().question)
+        shows(first.polish)
+        tapBucket(sorting().buckets.first { it.gender == first.gender }.word)
+        shows(first.phrase)
+        assertEquals(sorting().buckets.first { it.gender == first.gender }.word, first.phrase.substringBefore(' '))
+    }
+
+    @Test
+    fun `Label the picture marks a picture to label, a right label sticks and is said, and a wrong one puts the right one on`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_label_it)
+        clips.asked.clear()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        // The board: the first picture asked, the rest not labelled yet, every label lying below.
+        val round = labelling()
+        shows(R.string.label_choose_instruction)
+        shows(round.spots[0].meaning)
+        screen.onNodeWithContentDescription(text(R.string.label_picture_asked, round.spots[0].meaning)).assertExists()
+        round.spots.drop(1).forEach { screen.onNodeWithContentDescription(text(R.string.label_picture_blank, it.meaning)).assertExists() }
+        round.spots.forEach { screen.onNode(hasText(it.polish) and hasClickAction()).assertExists() }
+
+        // Right: the label sticks in green and is said, and the next picture is asked by itself.
+        tapLabel(round.spots[0].polish)
+        screen.onNodeWithContentDescription(text(R.string.label_picture_right, round.spots[0].meaning, round.spots[0].polish)).assertExists()
+        viewModel?.practiceClipOf(round.spots[0].polish)?.let { assertEquals(listOf(Played(it.path, slow = false)), clips.played) }
+        screen.onNode(hasText(round.spots[0].polish) and hasClickAction()).assertDoesNotExist()
+        screen.mainClock.advanceTimeBy(Motion.MOVE_ON_MILLIS + 100)
+        screen.waitForIdle()
+
+        // Wrong: the right label goes on in amber, and the one tapped stays below.
+        tapLabel(round.spots[2].polish)
+        screen.onNodeWithContentDescription(text(R.string.label_picture_missed, round.spots[1].meaning, round.spots[1].polish)).assertExists()
+        tap(R.string.action_continue)
+        screen.onNode(hasText(round.spots[2].polish) and hasClickAction()).assertExists()
+
+        while (viewModel?.screen is Screen.Round) {
+            tapLabel(checkNotNull(labelling().spot).polish)
+            screen.mainClock.advanceTimeBy(Motion.MOVE_ON_MILLIS + 100)
+            screen.waitForIdle()
+        }
+        showsScore(5, 6)
+        showsFirstBest()
+    }
+
+    @Test
+    fun `typed, Label the picture checks the word typed for the marked picture`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_label_it)
+        tap(R.string.option_type)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        shows(R.string.label_type_instruction)
+        val first = checkNotNull(labelling().spot)
+        type(first.polish)
+        tap(R.string.action_check)
+        screen.onNodeWithContentDescription(text(R.string.label_picture_right, first.meaning, first.polish)).assertExists()
+    }
+
+    @Test
     fun `Mój, moja, moje can give the noun by its meaning alone, or by ear`() {
         openPracticeOverTheRealCourse()
         openGame(R.string.game_moj_moja_moje)
@@ -816,7 +887,7 @@ class PlayingPracticeOnScreenTest {
     fun `Phrase chains stays closed until three sentences have been built`() {
         openPracticeAfterTodaysDailySet()
 
-        shows(R.string.game_phrase_chains_needs)
+        showsFurtherDown(text(R.string.game_phrase_chains_needs))
         openGame(R.string.game_phrase_chains)
         absent(R.string.setup_play)
     }
@@ -994,6 +1065,10 @@ class PlayingPracticeOnScreenTest {
     private fun quick(): QuickRound = (viewModel?.screen as Screen.Round).round as QuickRound
 
     private fun ankieta(): AnkietaRound = (viewModel?.screen as Screen.Round).round as AnkietaRound
+
+    private fun labelling(): LabelRound = (viewModel?.screen as Screen.Round).round as LabelRound
+
+    private fun tapLabel(word: String) = screen.onNode(hasText(word) and hasClickAction()).performScrollTo().performClick()
 
     /** Fills in the field being asked with the option that reads [answer]. */
     private fun fillIn(answer: String) = screen.onNode(hasText(answer) and hasClickAction()).performScrollTo().performClick()

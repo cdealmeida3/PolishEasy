@@ -125,6 +125,14 @@ _Avoid_: Dialogue (the book's printed dialogues), conversation Exercise
 The Game of filling in a form for people who introduce themselves, heard or read: their name, where they are from and live, their phone number and why they learn Polish. Chapter 2's Game.
 _Avoid_: Survey, questionnaire, profile
 
+**Label the picture**:
+The Game of labelling a board of six pictures one at a time, by tapping the word among the labels below or typing it. Chapter 3's Game.
+_Avoid_: Picture quiz, labelling exercise
+
+**Ten, ta, to**:
+The Game of sorting learned nouns under the word for "this" of their gender, as Mój, moja, moje sorts them under "my". Chapter 3's Game.
+_Avoid_: Gender quiz, demonstratives game
+
 **Register sort**:
 The Game of sorting learned phrases by Register, against the clock: to *pan* or *pani* (O), to a friend (N) or to anyone (U).
 _Avoid_: Formality quiz

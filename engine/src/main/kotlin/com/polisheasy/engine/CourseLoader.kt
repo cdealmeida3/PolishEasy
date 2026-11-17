@@ -1,6 +1,7 @@
 package com.polisheasy.engine
 
 import java.util.Locale
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
@@ -41,6 +42,9 @@ internal data class PracticeFile(
     val genders: Map<String, String> = emptyMap(),
     /** The Item that says "my" with a noun of each gender: "m", "f" or "n", and its id. */
     val my: Map<String, String> = emptyMap(),
+    /** The Item that says "this" with a noun of each gender: "m", "f" or "n", and its id. */
+    @SerialName("this")
+    val demonstratives: Map<String, String> = emptyMap(),
     /** What each small letter is called when a word is spelled aloud: the letter, and its name. */
     val letters: Map<String, String> = emptyMap(),
 )
@@ -191,6 +195,7 @@ internal class ReadContent(
             chats = chats.map { it.value },
             ankieta = ankieta,
             letterNames = practice?.letters.orEmpty(),
+            demonstratives = practice?.demonstratives.orEmpty().mapNotNull { (gender, item) -> Gender.of(gender)?.let { it to item } }.toMap(),
         )
     }
 
@@ -355,6 +360,12 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
             if (Gender.of(gender) == null) problems += ContentProblem(file, item, "\"$gender\" is not a gender to give a word for \"my\"; it must be one of $known")
             if (content.itemsComplete && item !in course.itemsById) {
                 problems += ContentProblem(file, item, "The word for \"my\" is given as Item $item, which is not defined")
+            }
+        }
+        practice.demonstratives.forEach { (gender, item) ->
+            if (Gender.of(gender) == null) problems += ContentProblem(file, item, "\"$gender\" is not a gender to give a word for \"this\"; it must be one of $known")
+            if (content.itemsComplete && item !in course.itemsById) {
+                problems += ContentProblem(file, item, "The word for \"this\" is given as Item $item, which is not defined")
             }
         }
         practice.genders.values.toSet().filter { Gender.of(it) != null && it !in practice.my }.forEach { gender ->

@@ -18,6 +18,7 @@ import com.polisheasy.engine.AnkietaRound
 import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
+import com.polisheasy.engine.LabelRound
 import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.RegisterRound
@@ -66,6 +67,7 @@ internal fun RoundScreen(
         is VerbRound -> VerbChallengeStep(round, say, onMove)
         is ChatRound -> ChatStep(round, sound, say, onMove, onFinish)
         is AnkietaRound -> AnkietaStep(round, sound, say, sayAll, onMove)
+        is LabelRound -> LabelItStep(round, say, onMove)
         else -> error("No screen for a Round of ${round.game}")
     }
 }

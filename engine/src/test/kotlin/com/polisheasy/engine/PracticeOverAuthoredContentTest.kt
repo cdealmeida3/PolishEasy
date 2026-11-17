@@ -290,6 +290,59 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Ten, ta, to opens with chapter 3's ten and ta, and sorts only learned nouns under learned words for this`() {
+        val firstOfTen = course.path.indexOfFirst { dailySet -> dailySet.id == "kpk1-l03-c1" }
+        assertTrue(firstOfTen > 0)
+        assertEquals(GameState.NEEDS_MORE, practiceAfter(firstOfTen).view().games.single { it.game == Game.TEN_TA_TO }.state)
+        (firstOfTen + 1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            assertEquals(GameState.READY, practice.view().games.single { it.game == Game.TEN_TA_TO }.state, "After $days Daily Sets")
+            practice.setup(Game.TEN_TA_TO).choices.single().options.forEach { clue ->
+                val round = practice.start(practice.setup(Game.TEN_TA_TO, listOf(clue.id))) as GenderRound
+                val about = "After $days Daily Sets, ${clue.id}"
+                assertEquals(listOf("ten", "ta", "to"), round.buckets.map { it.word }, about)
+                round.run.questions.forEach { question ->
+                    assertTrue(question.itemId in learned, about)
+                    assertEquals(course.genders[question.itemId], question.gender, about)
+                }
+            }
+        }
+    }
+
+    @Test
+    fun `Label the picture labels only learned words with an image, six that look and read unalike, from every deck`() {
+        var opened = false
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            if (practice.view().games.single { it.game == Game.LABEL_IT }.state != GameState.READY) return@forEach
+            opened = true
+            practice.setup(Game.LABEL_IT).choices[1].options.forEach { deck ->
+                listOf("choose", "type").forEach { way ->
+                    val round = practice.start(practice.setup(Game.LABEL_IT, listOf(way, deck.id))) as LabelRound
+                    val about = "After $days Daily Sets, ${deck.id}"
+                    assertEquals(LabelIt.SPOTS, round.spots.size, about)
+                    round.spots.forEach { spot ->
+                        assertTrue(spot.itemId in learned, about)
+                        assertTrue(spot.picture is Picture.Image, about)
+                        assertEquals(course.itemsById.getValue(spot.itemId).text, spot.polish, about)
+                    }
+                    assertEquals(round.spots.size, round.spots.map { it.picture }.toSet().size, about)
+                    assertEquals(round.spots.size, round.spots.map { it.polish.lowercase() }.toSet().size, about)
+                    var played = round
+                    while (!played.finished) {
+                        played = if (played.typed) played.type(checkNotNull(played.spot).polish) else played.choose(played.labels.indexOf(played.run.current))
+                        played = played.next()
+                    }
+                    assertEquals(Score(LabelIt.SPOTS, of = LabelIt.SPOTS), played.score, about)
+                }
+            }
+        }
+        assertTrue(opened)
+    }
+
+    @Test
     fun `Spell it spells only words that have been learned, from every deck it offers`() {
         (1..course.path.size).forEach { days ->
             val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
