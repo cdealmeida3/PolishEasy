@@ -15,6 +15,7 @@ enum class GameGroup { WORDS, PHRASES, VERBS, SOUNDS, NUMBERS }
 enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = false, val rounds: Boolean = true) {
     /** Nothing is asked: the cards are looked at and listened to. It has no Rounds and no Best. */
     PICTURE_CARDS("picture-cards", GameGroup.WORDS, rounds = false),
+    MEMORY_PAIRS("memory-pairs", GameGroup.WORDS, fewestWins = true),
     VERB_CHALLENGE("verb-challenge", GameGroup.VERBS),
 }
 
@@ -174,9 +175,10 @@ internal interface GameRules {
 
     /**
      * What there is to choose, each choice with [wanted]'s option selected where it is offered, or
-     * else its first. Nothing, for a Game with nothing to choose.
+     * else its first. Without [sound], a way to play that is only listening is not offered. Nothing,
+     * for a Game with nothing to choose.
      */
-    fun choices(learned: Learned, wanted: List<String>): List<ChoiceView> = emptyList()
+    fun choices(learned: Learned, wanted: List<String>, sound: Boolean): List<ChoiceView> = emptyList()
 
     /**
      * A new Round played the [selected] way. [seen] is what this Game has already asked today, to
@@ -213,7 +215,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(PictureCards, VerbChallenge).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(PictureCards, MemoryPairs, VerbChallenge).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null
@@ -234,7 +236,7 @@ class Practice internal constructor(
                     GameView(game, state)
                 } else {
                     // The way it was last played, if that can still be played; its Best is the one to beat.
-                    val choices = of.choices(learned, last)
+                    val choices = of.choices(learned, last, sound)
                     val played = choices.map { it.selected }
                     GameView(
                         game,
@@ -250,14 +252,15 @@ class Practice internal constructor(
     /**
      * [game] before a Round, with [wanted] selected: the id of an option for each choice, in
      * order. Without it, the way the Game was last played. An option that is not offered, or no
-     * longer is, gives way to the first of its choice. Fails unless the Game has enough to play with.
+     * longer is, gives way to the first of its choice. Without [sound], a way to play that is only
+     * listening is not offered. Fails unless the Game has enough to play with.
      */
-    fun setup(game: Game, wanted: List<String>? = null): GameSetup {
+    fun setup(game: Game, wanted: List<String>? = null, sound: Boolean = true): GameSetup {
         check(game.rounds) { "$game has no Rounds" }
         val of = rules.getValue(game)
         val learned = learned()
         check(of.state(learned, sound = true) != GameState.NEEDS_MORE) { "$game has nothing to play with yet" }
-        val choices = of.choices(learned, wanted ?: bests.lastPlayed(game.id).orEmpty())
+        val choices = of.choices(learned, wanted ?: bests.lastPlayed(game.id).orEmpty(), sound)
         return GameSetup(game, choices, bests.best(key(game, choices.map { it.selected })))
     }
 
@@ -275,7 +278,7 @@ class Practice internal constructor(
             seenOn = today()
         }
         val asked = seen.getOrPut(setup.game) { mutableSetOf() }
-        val selected = of.choices(learned, setup.selected).map { it.selected }
+        val selected = of.choices(learned, setup.selected, sound).map { it.selected }
         return of.start(learned, selected, sound, random, asked.toSet(), lastFirst[setup.game]).also { round ->
             asked += round.asked
             round.asked.firstOrNull()?.let { lastFirst[setup.game] = it }

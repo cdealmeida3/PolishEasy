@@ -243,9 +243,9 @@ Home answers four things from the top down: hello, how the Streak stands, what t
 | --- | --- |
 | A Daily Set is ready | "Today", the Daily Set's topic as on the Path ("Czy and nie"), then "Unit 2 · About me · 4 of 8" over `UnitProgress`, `Teaches`, Start |
 | In progress | The same, with "N of M Exercises done" and Continue |
-| Done for today | The tick, "Done for today", "Your next Daily Set unlocks tomorrow." and a `QuietButton`, "Replay today's Daily Set", which counts for nothing and comes back to Home. Then an "Up next" card for the next Daily Set, with no button |
+| Done for today | The tick, "Done for today", "Your next Daily Set unlocks tomorrow.", a `SecondaryButton`, "Play a Game", which opens Practice, and a `QuietButton`, "Replay today's Daily Set", which counts for nothing and comes back to Home. Then an "Up next" card for the next Daily Set, with no button |
 | Review-only, ready or in progress | "Today", "Review", a note, Start or Continue |
-| Review-only, done | The tick, "Done for today" and "All caught up. Your next Review unlocks tomorrow." |
+| Review-only, done | The tick, "Done for today", "All caught up. Your next Review unlocks tomorrow." and "Play a Game" |
 | Nothing left and nothing to review | The tick and "Every Daily Set completed" |
 
 A Daily Set has one name and one number on every screen: its topic, the title of its first Tip, and its number in its Unit. The course-wide number is never shown. On screen a Review-only Daily Set is called a Review; the Glossary's term stays in the docs and the code.
@@ -295,7 +295,9 @@ Practice is the fourth tab, between the Path and Settings, with a game controlle
 - **`VerbTable`**: the table of a Tip with slots for forms. An empty slot is dashed; the one asked for is `primaryContainer` with a `primary` border and a "?".
 - **Pictures**: the pictures of Practice are Fluent Emoji in the 3D style. They are glossy, so they are the one place the app has shading: the tile under a picture stays flat with the usual bottom edge, and nothing else gains a gradient. A Game's icon is a picture from the same set, shown as it is at 48, with no circle behind it. A number's picture is its numeral in `displayMedium` in `primary`.
 - **`PictureTile`**: `surfaceContainerLowest` with the outlined bottom edge and `large` corners, at least 168 high, the picture at 62% of its width. Turned: `primaryContainer` with a `primary` border, the Polish in `titleLarge` (never shrunk; a long phrase wraps), its meaning in `bodyMedium` and a `SpeakerButton`. A card with no picture shows its meaning in `titleMedium` on the front.
-- **`FlipTile`**: the turn itself, about the upright axis, with the face changing at the half turn (`Motion.flip()`, 300 ms; at once when animations are removed).
+- **`FlipTile`**: the turn itself, about the upright axis, with the face changing at the half turn (`Motion.flip()`, 300 ms; at once when animations are removed). Each face has a `TileLook`: plain, the brand's tint, found or missed.
+- **`MemoryTile`**: a `FlipTile` with four looks. Face down: `primaryContainer` with a `primary` border and a question mark. Turned up: a plain card with its picture, its Polish in `titleMedium` or its meaning in `bodyLarge`, or a speaker for a tile that is only heard. One of a pair found: `successContainer` with a `success` border and a small tick in the corner. One of two that are not a pair: `cautionContainer` with a `caution` border, for the 1.1 s before they turn back (`Motion.MISS_MILLIS`). A long word is hyphenated, never shrunk. A screen reader hears "Tile 5, face down", and for a turned tile its words, or what its picture means.
+- **Memory pairs**: the instruction and the turns so far on one line, then the board three across. The rows share the height of the screen, each between 64 and 160 high; at a large font size the board scrolls. The finished board stands for 0.9 s (`Motion.BOARD_DONE_MILLIS`) before the result.
 - **Picture cards**: a `DetailFrame` with the Game's name, chips for what the cards show and which words, then the cards two across under each Unit's title.
 - **The result**: the Game's icon, a cheer in Polish with its meaning, "Round complete", and two `StatTile`s: the result and the Best. A beaten Best is announced by `BestLine` with a star that bounces in once. "Play again" is the main action and "Done" the quiet one. There is no confetti: that is for a Daily Set.
 

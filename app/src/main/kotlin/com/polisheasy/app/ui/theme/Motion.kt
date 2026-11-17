@@ -64,6 +64,12 @@ object Motion {
     /** A tile turning over to show its other face. */
     const val FLIP_MILLIS = 300
 
+    /** How long two tiles that are not a pair stay up before they turn back. A tap on another tile skips it. */
+    const val MISS_MILLIS = 1100L
+
+    /** How long a finished board of Memory pairs stands before the result. */
+    const val BOARD_DONE_MILLIS = 900L
+
     /** How long a right answer in a Game stands before the Round moves on by itself. A tap on "Continue" skips it. */
     const val MOVE_ON_MILLIS = 700L
 

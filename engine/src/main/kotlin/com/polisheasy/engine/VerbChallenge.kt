@@ -158,7 +158,7 @@ internal object VerbChallenge : GameRules {
     override fun state(learned: Learned, sound: Boolean): GameState =
         if (learned.verbs().isEmpty()) GameState.NEEDS_MORE else GameState.READY
 
-    override fun choices(learned: Learned, wanted: List<String>): List<ChoiceView> {
+    override fun choices(learned: Learned, wanted: List<String>, sound: Boolean): List<ChoiceView> {
         val verbs = learned.verbs().map { OptionView(it.table.verb, label = it.table.verb) }
         // Mixed needs two verbs to mix.
         val mixed = if (verbs.size > 1) listOf(OptionView(MIXED)) else emptyList()
