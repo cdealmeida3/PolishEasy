@@ -13,7 +13,9 @@ import com.polisheasy.app.ui.components.PrimaryButton
 import com.polisheasy.app.ui.components.rememberAnswerHaptics
 import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.engine.ClipView
+import com.polisheasy.engine.ChainRound
 import com.polisheasy.engine.Given
+import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.Round
 import com.polisheasy.engine.VerbRound
@@ -36,6 +38,8 @@ internal fun RoundScreen(
 ) {
     val say: (String) -> Unit = { polish -> if (sound) clipOf(polish)?.let(onPlay) }
     when (round) {
+        is ChainRound -> PhraseChainsStep(round, say, onMove)
+        is ListenRound -> ListenAndTapStep(round, say, onMove)
         is MemoryRound -> MemoryPairsBoard(round, sound, say, onMove, onFinish)
         is VerbRound -> VerbChallengeStep(round, say, onMove)
         else -> error("No screen for a Round of ${round.game}")

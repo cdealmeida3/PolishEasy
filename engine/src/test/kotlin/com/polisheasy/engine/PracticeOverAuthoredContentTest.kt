@@ -110,6 +110,69 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Phrase chains chains only sentences that have been built, and every accepted order the cards can make completes one`() {
+        (1..course.path.size).forEach { days ->
+            val built = course.path.take(days).flatMap { it.exercises }.filterIsInstance<WordTiles>()
+            val practice = practiceAfter(days)
+            val game = practice.view().games.single { it.game == Game.PHRASE_CHAINS }
+            if (game.state != GameState.READY) {
+                assertTrue(built.size < 6, "After $days Daily Sets, with ${built.size} sentences built")
+                return@forEach
+            }
+            practice.setup(Game.PHRASE_CHAINS).choices.first().options.forEach { clue ->
+                practice.setup(Game.PHRASE_CHAINS, listOf(clue.id)).choices[1].options.forEach { level ->
+                    val way = listOf(clue.id, level.id)
+                    var round = practice.start(practice.setup(Game.PHRASE_CHAINS, way)) as ChainRound
+                    val about = "After $days Daily Sets, $way"
+                    assertEquals(way, round.played, about)
+                    assertTrue(round.total in PhraseChains.LEAST..PhraseChains.SENTENCES, about)
+                    while (!round.finished) {
+                        val sentence = checkNotNull(round.sentence)
+                        val exercise = built.single { it.id == sentence.id }
+                        assertTrue(sentence.accepted.isNotEmpty() && exercise.acceptedAnswers.containsAll(sentence.accepted), "$about: $sentence")
+                        if (round.listen) assertTrue(practice.clipOf(sentence.polish) != null, "$about: no Clip for ${sentence.polish}")
+                        val whole = sentence.accepted.map { answer ->
+                            words(answer).fold(round) { chain, word ->
+                                chain.tap(sentence.cards.indices.first { normalizeAnswer(sentence.cards[it]) == normalizeAnswer(word) && it !in chain.chain })
+                            }
+                        }
+                        whole.forEach { chain ->
+                            assertTrue(chain.complete, "$about: ${sentence.cards} cannot be chained into ${sentence.accepted}")
+                            assertEquals(0, chain.slips, about)
+                        }
+                        round = whole.first().next()
+                    }
+                }
+            }
+        }
+    }
+
+    @Test
+    fun `Listen and tap says only words that have been learned, each among four that can be told apart`() {
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            assertEquals(GameState.READY, practice.view().games.single { it.game == Game.LISTEN_AND_TAP }.state, "After $days Daily Sets")
+            assertEquals(GameState.NEEDS_SOUND, practice.view(sound = false).games.single { it.game == Game.LISTEN_AND_TAP }.state)
+            practice.setup(Game.LISTEN_AND_TAP).choices.first().options.forEach { mode ->
+                practice.setup(Game.LISTEN_AND_TAP, listOf(mode.id)).choices[1].options.forEach { deck ->
+                    val way = listOf(mode.id, deck.id)
+                    val round = practice.start(practice.setup(Game.LISTEN_AND_TAP, way)) as ListenRound
+                    val about = "After $days Daily Sets, $way"
+                    assertEquals(way, round.played, about)
+                    assertTrue(round.total in ListenAndTap.OPTIONS..ListenAndTap.QUESTIONS, about)
+                    round.run.questions.forEach { question ->
+                        assertTrue(practice.clipOf(question.polish) != null, "$about: no Clip for ${question.polish}")
+                        assertTrue(learned.containsAll(question.options.map { it.itemId }), about)
+                        val shown = question.options.map { if (round.pictures) checkNotNull(it.picture) else it.meaning }
+                        assertEquals(4, shown.toSet().size, "$about: $question")
+                    }
+                }
+            }
+        }
+    }
+
+    @Test
     fun `every picture is of a word that can be pictured without knowing Polish, once`() {
         // A numeral stands for its number and nothing else.
         val numerals = course.pictures.filterValues { it is Picture.Glyph }
