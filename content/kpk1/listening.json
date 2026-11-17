@@ -817,6 +817,387 @@
         "Bo jej chłopak jest z Polski."
       ],
       "correctOption": 0
+    },
+    {
+      "type": "true_false",
+      "id": "l03-047-1",
+      "track": 47,
+      "statement": "To jest nowy student.",
+      "meaning": {
+        "en": "It is a new student."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-047-2",
+      "track": 47,
+      "question": "Skąd jest nowy student?",
+      "meaning": {
+        "en": "Where is the new student from?"
+      },
+      "options": [
+        "Z Argentyny.",
+        "Z Anglii.",
+        "Z Japonii."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l03-048-1",
+      "track": 48,
+      "statement": "Słownik polsko-hiszpański jest stary i duży.",
+      "meaning": {
+        "en": "The Polish-Spanish dictionary is old and big."
+      },
+      "answer": true,
+      "lines": [
+        11,
+        12
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-048-2",
+      "track": 48,
+      "question": "Dlaczego drugi słownik jest zły?",
+      "meaning": {
+        "en": "Why is the second dictionary bad?"
+      },
+      "options": [
+        "Bo jest stary.",
+        "Bo jest mały.",
+        "Bo jest duży."
+      ],
+      "correctOption": 1,
+      "lines": [
+        13,
+        17
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-049-1",
+      "track": 49,
+      "question": "Jakie jest pierwsze słowo?",
+      "meaning": {
+        "en": "What is the first word?"
+      },
+      "options": [
+        "książka",
+        "zeszyt",
+        "kubek"
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l03-049-2",
+      "track": 49,
+      "question": "Jakie jest ostatnie słowo?",
+      "meaning": {
+        "en": "What is the last word?"
+      },
+      "acceptedAnswers": [
+        "klucz"
+      ],
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l03-050-1",
+      "track": 50,
+      "statement": "Ta komórka to w Argentynie model numer jeden.",
+      "meaning": {
+        "en": "In Argentina this mobile phone is the number one model."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-050-2",
+      "track": 50,
+      "question": "Co jest na fotografii z wakacji?",
+      "meaning": {
+        "en": "What is in the holiday photo?"
+      },
+      "options": [
+        "Mapa.",
+        "Plecak.",
+        "Palma."
+      ],
+      "correctOption": 2,
+      "lines": [
+        14,
+        16
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l03-050-3",
+      "track": 50,
+      "statement": "Fotografia jest z Brazylii.",
+      "meaning": {
+        "en": "The photo is from Brazil."
+      },
+      "answer": true,
+      "lines": [
+        16,
+        16
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-051-1",
+      "track": 51,
+      "question": "Jaka jest torba?",
+      "meaning": {
+        "en": "What is the bag like?"
+      },
+      "options": [
+        "Bardzo mała.",
+        "Bardzo modna.",
+        "Bardzo stara."
+      ],
+      "correctOption": 1,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l03-051-2",
+      "track": 51,
+      "statement": "W torbie jest mapa Krakowa.",
+      "meaning": {
+        "en": "There is a map of Kraków in the bag."
+      },
+      "answer": true,
+      "lines": [
+        7,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l03-052-1",
+      "track": 52,
+      "statement": "W pierwszym dialogu to jest książka.",
+      "meaning": {
+        "en": "In the first dialogue it is a book."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l03-052-2",
+      "track": 52,
+      "statement": "W drugim dialogu to jest ołówek.",
+      "meaning": {
+        "en": "In the second dialogue it is a pencil."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-052-3",
+      "track": 52,
+      "question": "Co to jest w trzecim dialogu?",
+      "meaning": {
+        "en": "What is it in the third dialogue?"
+      },
+      "options": [
+        "Zeszyt.",
+        "Książka.",
+        "Paszport."
+      ],
+      "correctOption": 2,
+      "lines": [
+        8,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l03-053-1",
+      "track": 53,
+      "statement": "Mapa i klucz to rzeczowniki.",
+      "meaning": {
+        "en": "Map and key are nouns."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-053-2",
+      "track": 53,
+      "question": "Jakie są trzy rodzaje?",
+      "meaning": {
+        "en": "What are the three genders?"
+      },
+      "options": [
+        "Męski, żeński i nijaki.",
+        "Nowy, stary i dobry.",
+        "Duży, mały i zły."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-054-1",
+      "track": 54,
+      "question": "Jaki jest ten słownik?",
+      "meaning": {
+        "en": "What is this dictionary like?"
+      },
+      "options": [
+        "Nowy, ale zły.",
+        "Stary, ale dobry.",
+        "Mały i nowy."
+      ],
+      "correctOption": 1,
+      "lines": [
+        3,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l03-054-2",
+      "track": 54,
+      "statement": "Ten słownik jest zły.",
+      "meaning": {
+        "en": "This dictionary is bad."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-055-1",
+      "track": 55,
+      "question": "Dlaczego ta torba jest dobra?",
+      "meaning": {
+        "en": "Why is this bag good?"
+      },
+      "options": [
+        "Bo jest duża.",
+        "Bo jest mała.",
+        "Bo jest nowa."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l03-056-1",
+      "track": 56,
+      "statement": "To auto jest duże.",
+      "meaning": {
+        "en": "This car is big."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-056-2",
+      "track": 56,
+      "question": "Dlaczego to auto jest dobre?",
+      "meaning": {
+        "en": "Why is this car good?"
+      },
+      "options": [
+        "Bo jest nowe.",
+        "Bo jest japońskie.",
+        "Bo jest duże."
+      ],
+      "correctOption": 1,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l03-057-1",
+      "track": 57,
+      "question": "Jaki jest pierwszy kolor?",
+      "meaning": {
+        "en": "What is the first colour?"
+      },
+      "options": [
+        "czerwony",
+        "zielony",
+        "czarny"
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l03-057-2",
+      "track": 57,
+      "question": "Jaki jest ostatni kolor?",
+      "meaning": {
+        "en": "What is the last colour?"
+      },
+      "acceptedAnswers": [
+        "pomarańczowy"
+      ],
+      "lines": [
+        11,
+        11
+      ]
     }
   ]
 }

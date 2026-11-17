@@ -512,6 +512,56 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 3 of the book over the real course in the light theme`() = chapter3Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 3 of the book over the real course in the dark theme`() = chapter3Tour("dark")
+
+    @Test
+    fun `chapter 3 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter3Tour("large") }
+
+    /**
+     * Chapter 3 over the real course: its Lesson screen at the top and its sections, then section
+     * A's first Exercise, section C's Tip on ten, ta, to with its gender table, and
+     * section D's Tip on the colours and section B's on czy.
+     */
+    private fun chapter3Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l03") }
+        screen.waitForIdle()
+        shot("166-chapter-3")
+        screen.onAllNodes(hasText("Kolory", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("166-chapter-3-sections")
+        screen.runOnUiThread { model.openSection("kpk1-l03-a2") }
+        screen.waitForIdle()
+        tap(R.string.action_continue)
+        shot("167-chapter-3-first")
+        screen.runOnUiThread {
+            model.openLesson("kpk1-l03")
+            model.openSection("kpk1-l03-c1")
+        }
+        screen.waitForIdle()
+        shot("168-chapter-3-ten-ta-to")
+        screen.runOnUiThread {
+            model.openLesson("kpk1-l03")
+            model.openSection("kpk1-l03-d1")
+        }
+        screen.waitForIdle()
+        shot("169-chapter-3-colours")
+        screen.runOnUiThread {
+            model.openLesson("kpk1-l03")
+            model.openSection("kpk1-l03-b")
+        }
+        screen.waitForIdle()
+        shot("169-chapter-3-czy")
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test
@@ -1219,7 +1269,8 @@ class ScreenshotsTest {
         shot("142-chat-type")
         leaveRound()
         openGame(R.string.game_chat)
-        tap(R.string.option_say)
+        // With seven Chats listed, the ways to reply are below the fold at the largest font.
+        screen.onNodeWithText(app.getString(R.string.option_say)).performScrollTo().performClick()
         tap(R.string.setup_play)
         arrive()
         shot("143-chat-say")

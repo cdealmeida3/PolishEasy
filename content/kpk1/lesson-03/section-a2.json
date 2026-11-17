@@ -1,0 +1,364 @@
+{
+  "id": "kpk1-l03-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Kto…? Co…?",
+    "meaning": {
+      "en": "Who…? What…?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l03-a2-t01",
+      "before": "kpk1-l03-a2-e01",
+      "title": {
+        "en": "In my bag"
+      },
+      "body": {
+        "en": "A student's bag holds a *komórka*, a *klucz*, an *ołówek* and a *gumka*, and maybe a *ładowarka* and *słuchawki*. *Słuchawki* is plural: headphones are two. In the classroom there is a *tablica*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a2-e01",
+      "prompt": "komórka",
+      "options": [
+        {
+          "en": "a charger"
+        },
+        {
+          "en": "a key"
+        },
+        {
+          "en": "a mobile phone"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "komorka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a2-e02",
+      "prompt": "ołówek",
+      "options": [
+        {
+          "en": "a pencil"
+        },
+        {
+          "en": "a pen"
+        },
+        {
+          "en": "a rubber, for rubbing out"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "olowek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a2-e03",
+      "prompt": "gumka",
+      "options": [
+        {
+          "en": "a pencil"
+        },
+        {
+          "en": "a rubber, for rubbing out"
+        },
+        {
+          "en": "a mug"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gumka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a2-e04",
+      "prompt": "klucz",
+      "options": [
+        {
+          "en": "a passport"
+        },
+        {
+          "en": "a map"
+        },
+        {
+          "en": "a key"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "klucz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-a2-e05",
+      "text": "to jest klucz",
+      "meaning": {
+        "en": "it is a key"
+      },
+      "distractors": [
+        "to jest kubek",
+        "to jest ołówek"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "klucz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a2-e06",
+      "prompt": "ładowarka",
+      "options": [
+        {
+          "en": "a charger"
+        },
+        {
+          "en": "a mobile phone"
+        },
+        {
+          "en": "headphones"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ladowarka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a2-e07",
+      "prompt": "kubek",
+      "options": [
+        {
+          "en": "a backpack"
+        },
+        {
+          "en": "a mug"
+        },
+        {
+          "en": "a key"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kubek"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-a2-e08",
+      "prompt": {
+        "en": "what is it? It is a pencil."
+      },
+      "acceptedAnswers": [
+        "co to jest? To jest ołówek."
+      ],
+      "distractors": [
+        "kto",
+        "gumka"
+      ],
+      "items": [
+        "co-to-jest",
+        "to",
+        "byc-jest",
+        "olowek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a2-e09",
+      "prompt": "słuchawki",
+      "options": [
+        {
+          "en": "a charger"
+        },
+        {
+          "en": "a mobile phone"
+        },
+        {
+          "en": "headphones"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sluchawki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a2-e10",
+      "prompt": "tablica",
+      "options": [
+        {
+          "en": "a board, in a classroom"
+        },
+        {
+          "en": "a table"
+        },
+        {
+          "en": "a map"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tablica"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-a2-e11",
+      "text": "to jest ładowarka",
+      "meaning": {
+        "en": "it is a charger"
+      },
+      "distractors": [
+        "to jest komórka",
+        "to jest tablica"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "ladowarka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l03-a2-e12",
+      "pairs": [
+        {
+          "polish": "komórka",
+          "meaning": {
+            "en": "a mobile phone"
+          }
+        },
+        {
+          "polish": "klucz",
+          "meaning": {
+            "en": "a key"
+          }
+        },
+        {
+          "polish": "gumka",
+          "meaning": {
+            "en": "a rubber, for rubbing out"
+          }
+        },
+        {
+          "polish": "kubek",
+          "meaning": {
+            "en": "a mug"
+          }
+        },
+        {
+          "polish": "tablica",
+          "meaning": {
+            "en": "a board, in a classroom"
+          }
+        }
+      ],
+      "items": [
+        "komorka",
+        "klucz",
+        "gumka",
+        "kubek",
+        "tablica"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-a2-e13",
+      "prompt": {
+        "en": "it is a mug"
+      },
+      "acceptedAnswers": [
+        "to jest kubek"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "kubek"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-a2-e14",
+      "acceptedAnswers": [
+        "to jest gumka"
+      ],
+      "meaning": {
+        "en": "it is a rubber"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "gumka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-a2-e15",
+      "prompt": {
+        "en": "these are headphones"
+      },
+      "acceptedAnswers": [
+        "to są słuchawki"
+      ],
+      "distractors": [
+        "jest",
+        "komórka"
+      ],
+      "items": [
+        "to",
+        "byc-sa",
+        "sluchawki"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-a2-e16",
+      "prompt": {
+        "en": "a mobile phone and a charger"
+      },
+      "acceptedAnswers": [
+        "komórka i ładowarka",
+        "ładowarka i komórka"
+      ],
+      "items": [
+        "komorka",
+        "i",
+        "ladowarka"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-a2-e17",
+      "acceptedAnswers": [
+        "to jest tablica"
+      ],
+      "meaning": {
+        "en": "it is a board"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "tablica"
+      ]
+    }
+  ]
+}

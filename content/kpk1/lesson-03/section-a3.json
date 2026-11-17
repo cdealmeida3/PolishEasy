@@ -1,0 +1,367 @@
+{
+  "id": "kpk1-l03-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Kto…? Co…?",
+    "meaning": {
+      "en": "Who…? What…?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l03-a3-t01",
+      "before": "kpk1-l03-a3-e01",
+      "title": {
+        "en": "In the classroom"
+      },
+      "body": {
+        "en": "In the classroom there is a *stół*, a *krzesło*, a *mapa* on the wall and an *okno*. A traveller has a *paszport*. *Niestety* is \"unfortunately\": *niestety, nie wiem*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a3-e01",
+      "prompt": "mapa",
+      "options": [
+        {
+          "en": "a board, in a classroom"
+        },
+        {
+          "en": "a map"
+        },
+        {
+          "en": "a passport"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "mapa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a3-e02",
+      "prompt": "okno",
+      "options": [
+        {
+          "en": "a table"
+        },
+        {
+          "en": "a chair"
+        },
+        {
+          "en": "a window"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "okno"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a3-e03",
+      "prompt": "stół",
+      "options": [
+        {
+          "en": "a table"
+        },
+        {
+          "en": "a chair"
+        },
+        {
+          "en": "a window"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "stol"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a3-e04",
+      "prompt": "krzesło",
+      "options": [
+        {
+          "en": "a table"
+        },
+        {
+          "en": "a chair"
+        },
+        {
+          "en": "a laptop"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "krzeslo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-a3-e05",
+      "text": "to jest krzesło",
+      "meaning": {
+        "en": "it is a chair"
+      },
+      "distractors": [
+        "to jest okno",
+        "to jest stół"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "krzeslo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a3-e06",
+      "prompt": "laptop",
+      "options": [
+        {
+          "en": "a computer"
+        },
+        {
+          "en": "a mobile phone"
+        },
+        {
+          "en": "a laptop"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "laptop"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a3-e07",
+      "prompt": "paszport",
+      "options": [
+        {
+          "en": "a passport"
+        },
+        {
+          "en": "a map"
+        },
+        {
+          "en": "a key"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "paszport"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-a3-e08",
+      "prompt": "niestety",
+      "options": [
+        {
+          "en": "of course"
+        },
+        {
+          "en": "unfortunately"
+        },
+        {
+          "en": "very"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "niestety"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-a3-e09",
+      "prompt": {
+        "en": "unfortunately, I don't know"
+      },
+      "acceptedAnswers": [
+        "niestety, nie wiem",
+        "nie wiem, niestety"
+      ],
+      "distractors": [
+        "tak",
+        "wiem"
+      ],
+      "items": [
+        "niestety",
+        "nie-wiem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-a3-e10",
+      "text": "to jest okno",
+      "meaning": {
+        "en": "it is a window"
+      },
+      "distractors": [
+        "to jest stół",
+        "to jest mapa"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "okno"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l03-a3-e11",
+      "pairs": [
+        {
+          "polish": "mapa",
+          "meaning": {
+            "en": "a map"
+          }
+        },
+        {
+          "polish": "okno",
+          "meaning": {
+            "en": "a window"
+          }
+        },
+        {
+          "polish": "stół",
+          "meaning": {
+            "en": "a table"
+          }
+        },
+        {
+          "polish": "krzesło",
+          "meaning": {
+            "en": "a chair"
+          }
+        },
+        {
+          "polish": "paszport",
+          "meaning": {
+            "en": "a passport"
+          }
+        }
+      ],
+      "items": [
+        "mapa",
+        "okno",
+        "stol",
+        "krzeslo",
+        "paszport"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-a3-e12",
+      "prompt": {
+        "en": "it is a table"
+      },
+      "acceptedAnswers": [
+        "to jest stół"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "stol"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-a3-e13",
+      "acceptedAnswers": [
+        "to jest laptop"
+      ],
+      "meaning": {
+        "en": "it is a laptop"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "laptop"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-a3-e14",
+      "prompt": {
+        "en": "what is it? It is a passport."
+      },
+      "acceptedAnswers": [
+        "co to jest? To jest paszport."
+      ],
+      "distractors": [
+        "kto",
+        "mapa"
+      ],
+      "items": [
+        "co-to-jest",
+        "to",
+        "byc-jest",
+        "paszport"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-a3-e15",
+      "acceptedAnswers": [
+        "niestety"
+      ],
+      "meaning": {
+        "en": "unfortunately"
+      },
+      "items": [
+        "niestety"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-a3-e16",
+      "prompt": {
+        "en": "it is a map"
+      },
+      "acceptedAnswers": [
+        "to jest mapa"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "mapa"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-a3-e17",
+      "text": "Co to ___? To jest ___.",
+      "meaning": {
+        "en": "What is it? It is a window."
+      },
+      "gaps": [
+        [
+          "jest"
+        ],
+        [
+          "okno"
+        ]
+      ],
+      "distractors": [
+        "są",
+        "kto"
+      ],
+      "items": [
+        "co-to-jest",
+        "to",
+        "byc-jest",
+        "okno"
+      ]
+    }
+  ]
+}

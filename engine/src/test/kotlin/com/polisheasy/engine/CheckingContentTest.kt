@@ -425,6 +425,16 @@ internal class CheckingContentTest {
     }
 
     @Test
+    fun `an Item's forms are accepted, and a blank one or one that repeats a spelling is reported`() {
+        fun withForms(vararg forms: String) = valid.withItems { items -> items.map { if (it.id == "tak") it.copy(forms = forms.toList()) else it } }
+
+        assertEquals(emptyList(), problems(withForms("taka", "takie"), shipped))
+        listOf(arrayOf(" "), arrayOf("tak"), arrayOf("taka", "taka")).forEach { forms ->
+            assertOnlyProblem(withForms(*forms), ITEMS, "tak", "form", case = forms.joinToString())
+        }
+    }
+
+    @Test
     fun `a Tip's conjugation table with no meaning in the Base Language is reported`() {
         val table = ConjugationTable("być", emptyMap(), Person.entries.associateWith { "jestem" })
 

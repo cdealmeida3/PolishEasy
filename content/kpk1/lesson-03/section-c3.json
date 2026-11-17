@@ -1,0 +1,371 @@
+{
+  "id": "kpk1-l03-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Jaki? Jaka? Jakie?",
+    "meaning": {
+      "en": "What is it like?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l03-c3-t01",
+      "before": "kpk1-l03-c3-e01",
+      "title": {
+        "en": "Old but good"
+      },
+      "body": {
+        "en": "More adjectives: *praktyczny*, *fajny*, *modny*, *interesujący*, and *sympatyczny* for a person. *Polski* (Polish) ends in *-i* after *k*, so it is *polski słownik*, *polska szkoła*, *polskie auto*. Join two with *ale*: *stary, ale dobry*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c3-e01",
+      "prompt": "praktyczny",
+      "options": [
+        {
+          "en": "fashionable (modny, modna, modne)"
+        },
+        {
+          "en": "practical (praktyczny, praktyczna, praktyczne)"
+        },
+        {
+          "en": "old (stary, stara, stare)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "praktyczny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c3-e02",
+      "prompt": "fajny",
+      "options": [
+        {
+          "en": "practical (praktyczny, praktyczna, praktyczne)"
+        },
+        {
+          "en": "bad (zły, zła, złe)"
+        },
+        {
+          "en": "cool, nice (fajny, fajna, fajne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "fajny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c3-e03",
+      "prompt": "modny",
+      "options": [
+        {
+          "en": "fashionable (modny, modna, modne)"
+        },
+        {
+          "en": "cool, nice (fajny, fajna, fajne)"
+        },
+        {
+          "en": "new (nowy, nowa, nowe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "modny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-c3-e04",
+      "text": "ta torba jest modna",
+      "meaning": {
+        "en": "this bag is fashionable"
+      },
+      "distractors": [
+        "ta torba jest modny",
+        "ta torba jest praktyczna"
+      ],
+      "items": [
+        "ta",
+        "torba",
+        "byc-jest",
+        "modny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c3-e05",
+      "prompt": "sympatyczny",
+      "options": [
+        {
+          "en": "interesting (interesujący, interesująca, interesujące)"
+        },
+        {
+          "en": "nice, friendly (about a person) (sympatyczny, sympatyczna, sympatyczne)"
+        },
+        {
+          "en": "good (dobry, dobra, dobre)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sympatyczny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-c3-e06",
+      "prompt": {
+        "en": "this student is nice"
+      },
+      "acceptedAnswers": [
+        "ta studentka jest sympatyczna"
+      ],
+      "distractors": [
+        "sympatyczny",
+        "ten"
+      ],
+      "items": [
+        "ta",
+        "studentka",
+        "byc-jest",
+        "sympatyczny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c3-e07",
+      "prompt": "polski",
+      "options": [
+        {
+          "en": "practical (praktyczny, praktyczna, praktyczne)"
+        },
+        {
+          "en": "from Poland"
+        },
+        {
+          "en": "Polish (polski, polska, polskie)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "polski"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c3-e08",
+      "prompt": "interesujący",
+      "options": [
+        {
+          "en": "interesting (interesujący, interesująca, interesujące)"
+        },
+        {
+          "en": "nice, friendly (about a person) (sympatyczny, sympatyczna, sympatyczne)"
+        },
+        {
+          "en": "cool, nice (fajny, fajna, fajne)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "interesujacy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-c3-e09",
+      "text": "to jest polskie auto",
+      "meaning": {
+        "en": "it is a Polish car"
+      },
+      "distractors": [
+        "to jest polski auto",
+        "to jest polska auto"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "polski",
+        "auto"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-c3-e10",
+      "prompt": {
+        "en": "old, but good"
+      },
+      "acceptedAnswers": [
+        "stary, ale dobry"
+      ],
+      "distractors": [
+        "stara",
+        "też"
+      ],
+      "items": [
+        "stary",
+        "ale",
+        "dobry"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-c3-e11",
+      "text": "To jest ___ słownik, a to jest ___ szkoła.",
+      "meaning": {
+        "en": "This is a Polish dictionary, and this is a Polish school."
+      },
+      "gaps": [
+        [
+          "polski"
+        ],
+        [
+          "polska"
+        ]
+      ],
+      "distractors": [
+        "polskie"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "polski",
+        "slownik",
+        "a",
+        "szkola"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-c3-e12",
+      "prompt": {
+        "en": "this backpack is practical"
+      },
+      "acceptedAnswers": [
+        "ten plecak jest praktyczny"
+      ],
+      "items": [
+        "ten",
+        "plecak",
+        "byc-jest",
+        "praktyczny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-c3-e13",
+      "acceptedAnswers": [
+        "ten laptop jest fajny"
+      ],
+      "meaning": {
+        "en": "this laptop is cool"
+      },
+      "items": [
+        "ten",
+        "laptop",
+        "byc-jest",
+        "fajny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-c3-e14",
+      "text": "Ten kolega jest ___, a ta koleżanka jest ___.",
+      "meaning": {
+        "en": "This classmate (a man) is nice, and this classmate (a woman) is interesting."
+      },
+      "gaps": [
+        [
+          "sympatyczny"
+        ],
+        [
+          "interesująca"
+        ]
+      ],
+      "distractors": [
+        "sympatyczna",
+        "interesujący"
+      ],
+      "items": [
+        "ten",
+        "kolega",
+        "byc-jest",
+        "sympatyczny",
+        "a",
+        "ta",
+        "kolezanka",
+        "interesujacy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l03-c3-e15",
+      "pairs": [
+        {
+          "polish": "praktyczny",
+          "meaning": {
+            "en": "practical"
+          }
+        },
+        {
+          "polish": "fajny",
+          "meaning": {
+            "en": "cool, nice"
+          }
+        },
+        {
+          "polish": "modny",
+          "meaning": {
+            "en": "fashionable"
+          }
+        },
+        {
+          "polish": "polski",
+          "meaning": {
+            "en": "Polish"
+          }
+        },
+        {
+          "polish": "interesujący",
+          "meaning": {
+            "en": "interesting"
+          }
+        }
+      ],
+      "items": [
+        "praktyczny",
+        "fajny",
+        "modny",
+        "polski",
+        "interesujacy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-c3-e16",
+      "acceptedAnswers": [
+        "to muzeum jest interesujące"
+      ],
+      "meaning": {
+        "en": "this museum is interesting"
+      },
+      "items": [
+        "to",
+        "muzeum",
+        "byc-jest",
+        "interesujacy"
+      ]
+    }
+  ]
+}

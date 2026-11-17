@@ -1,0 +1,523 @@
+{
+  "items": [
+    {
+      "id": "kto",
+      "text": "kto",
+      "meaning": {
+        "en": "who"
+      }
+    },
+    {
+      "id": "co",
+      "text": "co",
+      "meaning": {
+        "en": "what"
+      }
+    },
+    {
+      "id": "kto-to-jest",
+      "text": "kto to jest?",
+      "meaning": {
+        "en": "who is it? who is this?"
+      }
+    },
+    {
+      "id": "co-to-jest",
+      "text": "co to jest?",
+      "meaning": {
+        "en": "what is it? what is this?"
+      }
+    },
+    {
+      "id": "slownik",
+      "text": "słownik",
+      "meaning": {
+        "en": "a dictionary"
+      }
+    },
+    {
+      "id": "zeszyt",
+      "text": "zeszyt",
+      "meaning": {
+        "en": "a notebook"
+      }
+    },
+    {
+      "id": "torba",
+      "text": "torba",
+      "meaning": {
+        "en": "a bag"
+      }
+    },
+    {
+      "id": "plecak",
+      "text": "plecak",
+      "meaning": {
+        "en": "a backpack"
+      }
+    },
+    {
+      "id": "komorka",
+      "text": "komórka",
+      "meaning": {
+        "en": "a mobile phone"
+      }
+    },
+    {
+      "id": "olowek",
+      "text": "ołówek",
+      "meaning": {
+        "en": "a pencil"
+      }
+    },
+    {
+      "id": "gumka",
+      "text": "gumka",
+      "meaning": {
+        "en": "a rubber, for rubbing out"
+      }
+    },
+    {
+      "id": "klucz",
+      "text": "klucz",
+      "meaning": {
+        "en": "a key"
+      }
+    },
+    {
+      "id": "ladowarka",
+      "text": "ładowarka",
+      "meaning": {
+        "en": "a charger"
+      }
+    },
+    {
+      "id": "kubek",
+      "text": "kubek",
+      "meaning": {
+        "en": "a mug"
+      }
+    },
+    {
+      "id": "sluchawki",
+      "text": "słuchawki",
+      "meaning": {
+        "en": "headphones"
+      }
+    },
+    {
+      "id": "tablica",
+      "text": "tablica",
+      "meaning": {
+        "en": "a board, in a classroom"
+      }
+    },
+    {
+      "id": "mapa",
+      "text": "mapa",
+      "meaning": {
+        "en": "a map"
+      }
+    },
+    {
+      "id": "okno",
+      "text": "okno",
+      "meaning": {
+        "en": "a window"
+      }
+    },
+    {
+      "id": "stol",
+      "text": "stół",
+      "meaning": {
+        "en": "a table"
+      }
+    },
+    {
+      "id": "krzeslo",
+      "text": "krzesło",
+      "meaning": {
+        "en": "a chair"
+      }
+    },
+    {
+      "id": "laptop",
+      "text": "laptop",
+      "meaning": {
+        "en": "a laptop"
+      }
+    },
+    {
+      "id": "paszport",
+      "text": "paszport",
+      "meaning": {
+        "en": "a passport"
+      }
+    },
+    {
+      "id": "niestety",
+      "text": "niestety",
+      "meaning": {
+        "en": "unfortunately"
+      }
+    },
+    {
+      "id": "czy-to-jest",
+      "text": "czy to jest…?",
+      "meaning": {
+        "en": "is it…? is this…? (czy to jest książka?)"
+      }
+    },
+    {
+      "id": "to-nie-jest",
+      "text": "to nie jest",
+      "meaning": {
+        "en": "it isn't; this isn't (to nie jest ołówek)"
+      }
+    },
+    {
+      "id": "pamietam",
+      "text": "pamiętam",
+      "meaning": {
+        "en": "I remember"
+      }
+    },
+    {
+      "id": "tylko",
+      "text": "tylko",
+      "meaning": {
+        "en": "only"
+      }
+    },
+    {
+      "id": "ten",
+      "text": "ten",
+      "meaning": {
+        "en": "this; that (with a masculine noun: ten zeszyt)"
+      }
+    },
+    {
+      "id": "ta",
+      "text": "ta",
+      "meaning": {
+        "en": "this; that (with a feminine noun: ta torba)"
+      }
+    },
+    {
+      "id": "rzeczownik",
+      "text": "rzeczownik",
+      "meaning": {
+        "en": "a noun"
+      }
+    },
+    {
+      "id": "auto",
+      "text": "auto",
+      "meaning": {
+        "en": "a car"
+      }
+    },
+    {
+      "id": "muzeum",
+      "text": "muzeum",
+      "meaning": {
+        "en": "a museum"
+      }
+    },
+    {
+      "id": "akwarium",
+      "text": "akwarium",
+      "meaning": {
+        "en": "an aquarium"
+      }
+    },
+    {
+      "id": "slonce",
+      "text": "słońce",
+      "meaning": {
+        "en": "the sun"
+      }
+    },
+    {
+      "id": "segregator",
+      "text": "segregator",
+      "meaning": {
+        "en": "a ring binder"
+      }
+    },
+    {
+      "id": "jaka",
+      "text": "jaka",
+      "meaning": {
+        "en": "what… like (with a feminine noun: jaka jest ta torba?)"
+      }
+    },
+    {
+      "id": "jakie",
+      "text": "jakie",
+      "meaning": {
+        "en": "what… like (with a neuter noun: jakie jest to auto?)"
+      }
+    },
+    {
+      "id": "nowy",
+      "text": "nowy",
+      "meaning": {
+        "en": "new (nowy, nowa, nowe)"
+      },
+      "forms": [
+        "nowa",
+        "nowe"
+      ]
+    },
+    {
+      "id": "stary",
+      "text": "stary",
+      "meaning": {
+        "en": "old (stary, stara, stare)"
+      },
+      "forms": [
+        "stara",
+        "stare"
+      ]
+    },
+    {
+      "id": "dobry",
+      "text": "dobry",
+      "meaning": {
+        "en": "good (dobry, dobra, dobre)"
+      },
+      "forms": [
+        "dobra",
+        "dobre"
+      ]
+    },
+    {
+      "id": "zly",
+      "text": "zły",
+      "meaning": {
+        "en": "bad (zły, zła, złe)"
+      },
+      "forms": [
+        "zła",
+        "złe"
+      ]
+    },
+    {
+      "id": "duzy",
+      "text": "duży",
+      "meaning": {
+        "en": "big (duży, duża, duże)"
+      },
+      "forms": [
+        "duża",
+        "duże"
+      ]
+    },
+    {
+      "id": "maly",
+      "text": "mały",
+      "meaning": {
+        "en": "small (mały, mała, małe)"
+      },
+      "forms": [
+        "mała",
+        "małe"
+      ]
+    },
+    {
+      "id": "praktyczny",
+      "text": "praktyczny",
+      "meaning": {
+        "en": "practical (praktyczny, praktyczna, praktyczne)"
+      },
+      "forms": [
+        "praktyczna",
+        "praktyczne"
+      ]
+    },
+    {
+      "id": "fajny",
+      "text": "fajny",
+      "meaning": {
+        "en": "cool, nice (fajny, fajna, fajne)"
+      },
+      "forms": [
+        "fajna",
+        "fajne"
+      ]
+    },
+    {
+      "id": "modny",
+      "text": "modny",
+      "meaning": {
+        "en": "fashionable (modny, modna, modne)"
+      },
+      "forms": [
+        "modna",
+        "modne"
+      ]
+    },
+    {
+      "id": "sympatyczny",
+      "text": "sympatyczny",
+      "meaning": {
+        "en": "nice, friendly (about a person) (sympatyczny, sympatyczna, sympatyczne)"
+      },
+      "forms": [
+        "sympatyczna",
+        "sympatyczne"
+      ]
+    },
+    {
+      "id": "polski",
+      "text": "polski",
+      "meaning": {
+        "en": "Polish (polski, polska, polskie)"
+      },
+      "forms": [
+        "polska",
+        "polskie"
+      ]
+    },
+    {
+      "id": "interesujacy",
+      "text": "interesujący",
+      "meaning": {
+        "en": "interesting (interesujący, interesująca, interesujące)"
+      },
+      "forms": [
+        "interesująca",
+        "interesujące"
+      ]
+    },
+    {
+      "id": "czerwony",
+      "text": "czerwony",
+      "meaning": {
+        "en": "red (czerwony, czerwona, czerwone)"
+      },
+      "forms": [
+        "czerwona",
+        "czerwone"
+      ]
+    },
+    {
+      "id": "niebieski",
+      "text": "niebieski",
+      "meaning": {
+        "en": "blue (niebieski, niebieska, niebieskie)"
+      },
+      "forms": [
+        "niebieska",
+        "niebieskie"
+      ]
+    },
+    {
+      "id": "zielony",
+      "text": "zielony",
+      "meaning": {
+        "en": "green (zielony, zielona, zielone)"
+      },
+      "forms": [
+        "zielona",
+        "zielone"
+      ]
+    },
+    {
+      "id": "zolty",
+      "text": "żółty",
+      "meaning": {
+        "en": "yellow (żółty, żółta, żółte)"
+      },
+      "forms": [
+        "żółta",
+        "żółte"
+      ]
+    },
+    {
+      "id": "czarny",
+      "text": "czarny",
+      "meaning": {
+        "en": "black (czarny, czarna, czarne)"
+      },
+      "forms": [
+        "czarna",
+        "czarne"
+      ]
+    },
+    {
+      "id": "bialy",
+      "text": "biały",
+      "meaning": {
+        "en": "white (biały, biała, białe)"
+      },
+      "forms": [
+        "biała",
+        "białe"
+      ]
+    },
+    {
+      "id": "szary",
+      "text": "szary",
+      "meaning": {
+        "en": "grey (szary, szara, szare)"
+      },
+      "forms": [
+        "szara",
+        "szare"
+      ]
+    },
+    {
+      "id": "brazowy",
+      "text": "brązowy",
+      "meaning": {
+        "en": "brown (brązowy, brązowa, brązowe)"
+      },
+      "forms": [
+        "brązowa",
+        "brązowe"
+      ]
+    },
+    {
+      "id": "rozowy",
+      "text": "różowy",
+      "meaning": {
+        "en": "pink (różowy, różowa, różowe)"
+      },
+      "forms": [
+        "różowa",
+        "różowe"
+      ]
+    },
+    {
+      "id": "fioletowy",
+      "text": "fioletowy",
+      "meaning": {
+        "en": "purple (fioletowy, fioletowa, fioletowe)"
+      },
+      "forms": [
+        "fioletowa",
+        "fioletowe"
+      ]
+    },
+    {
+      "id": "pomaranczowy",
+      "text": "pomarańczowy",
+      "meaning": {
+        "en": "orange (pomarańczowy, pomarańczowa, pomarańczowe)"
+      },
+      "forms": [
+        "pomarańczowa",
+        "pomarańczowe"
+      ]
+    },
+    {
+      "id": "kolor",
+      "text": "kolor",
+      "meaning": {
+        "en": "a colour"
+      }
+    }
+  ]
+}

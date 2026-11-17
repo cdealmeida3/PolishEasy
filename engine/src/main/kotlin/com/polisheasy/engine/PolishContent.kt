@@ -63,7 +63,7 @@ fun polishContent(files: ContentFiles): PolishContent {
     }
 
     val itemsById = content.items.reversed().associateBy { it.value.id }
-    content.items.forEach { (file, item) -> sentence(item.text, item.meaning, PolishUse(file, item.id, PolishRole.ITEM)) }
+    content.items.forEach { (file, item) -> item.spellings.forEach { sentence(it, item.meaning, PolishUse(file, item.id, PolishRole.ITEM)) } }
 
     // A chapter's title and its K, L and G lists are quoted from the book's contents, abbreviations
     // and all, so they are not the app's Polish to check.

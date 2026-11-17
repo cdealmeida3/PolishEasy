@@ -1,0 +1,433 @@
+{
+  "id": "kpk1-l03-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Mianownik",
+    "meaning": {
+      "en": "The nominative"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l03-c1-t01",
+      "before": "kpk1-l03-c1-e01",
+      "title": {
+        "en": "This, in three genders: ten, ta, to"
+      },
+      "body": {
+        "en": "*Ten*, *ta* and *to* all mean \"this\", in the noun's gender. Every Polish noun is masculine, feminine or neuter (*rodzaj męski, żeński, nijaki*), and its ending usually tells you which. Most nouns ending in a consonant are masculine and take *ten*: *ten zeszyt* (a few, like *ta noc*, the night, are feminine). One in *-a* is feminine and takes *ta*: *ta torba*, but a few words for men end in *-a* too and take *ten*: *ten kolega*. One in *-o*, *-e*, *-ę* or *-um* is neuter and takes *to*: *to okno*, *to muzeum*. In *to jest…*, \"this is…\", *to* stays the same for every noun: *to jest torba*."
+      },
+      "table": {
+        "title": {
+          "en": "Ten, ta, to"
+        },
+        "columns": [
+          {
+            "header": "ten",
+            "gender": "m"
+          },
+          {
+            "header": "ta",
+            "gender": "f"
+          },
+          {
+            "header": "to",
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "student",
+              "student[ka]",
+              "dzieck[o]"
+            ]
+          },
+          {
+            "cells": [
+              "zeszyt",
+              "szkoł[a]",
+              "słońc[e]"
+            ]
+          },
+          {
+            "cells": [
+              "klucz",
+              "map[a]",
+              "muze[um]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c1-e01",
+      "prompt": "ten",
+      "options": [
+        {
+          "en": "this; that (with a masculine noun: ten zeszyt)"
+        },
+        {
+          "en": "this; that (with a feminine noun: ta torba)"
+        },
+        {
+          "en": "he"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ten"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c1-e02",
+      "prompt": "ta",
+      "options": [
+        {
+          "en": "this; that (with a masculine noun: ten zeszyt)"
+        },
+        {
+          "en": "this; that (with a feminine noun: ta torba)"
+        },
+        {
+          "en": "she"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c1-e03",
+      "prompt": "rzeczownik",
+      "options": [
+        {
+          "en": "a question"
+        },
+        {
+          "en": "a word"
+        },
+        {
+          "en": "a noun"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "rzeczownik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c1-e04",
+      "prompt": "auto",
+      "options": [
+        {
+          "en": "a car"
+        },
+        {
+          "en": "a car park"
+        },
+        {
+          "en": "a bus"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "auto"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-c1-e05",
+      "prompt": {
+        "en": "this notebook"
+      },
+      "acceptedAnswers": [
+        "ten zeszyt"
+      ],
+      "distractors": [
+        "ta",
+        "to"
+      ],
+      "items": [
+        "ten",
+        "zeszyt"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c1-e06",
+      "prompt": "muzeum",
+      "options": [
+        {
+          "en": "an aquarium"
+        },
+        {
+          "en": "a museum"
+        },
+        {
+          "en": "a school"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "muzeum"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c1-e07",
+      "prompt": "akwarium",
+      "options": [
+        {
+          "en": "a museum"
+        },
+        {
+          "en": "a window"
+        },
+        {
+          "en": "an aquarium"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "akwarium"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l03-c1-e08",
+      "prompt": {
+        "en": "this bag"
+      },
+      "acceptedAnswers": [
+        "ta torba"
+      ],
+      "distractors": [
+        "ten",
+        "to"
+      ],
+      "items": [
+        "ta",
+        "torba"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c1-e09",
+      "prompt": "słońce",
+      "options": [
+        {
+          "en": "the sun"
+        },
+        {
+          "en": "the moon"
+        },
+        {
+          "en": "a window"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "slonce"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l03-c1-e10",
+      "prompt": "segregator",
+      "options": [
+        {
+          "en": "a notebook"
+        },
+        {
+          "en": "a ring binder"
+        },
+        {
+          "en": "a dictionary"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "segregator"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-c1-e11",
+      "text": "ten segregator",
+      "meaning": {
+        "en": "this ring binder"
+      },
+      "distractors": [
+        "ta segregator",
+        "to segregator"
+      ],
+      "items": [
+        "ten",
+        "segregator"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-c1-e12",
+      "text": "___ okno, ___ mapa, ___ klucz",
+      "meaning": {
+        "en": "this window, this map, this key"
+      },
+      "gaps": [
+        [
+          "to"
+        ],
+        [
+          "ta"
+        ],
+        [
+          "ten"
+        ]
+      ],
+      "distractors": [],
+      "items": [
+        "to",
+        "okno",
+        "ta",
+        "mapa",
+        "ten",
+        "klucz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l03-c1-e13",
+      "pairs": [
+        {
+          "polish": "ten zeszyt",
+          "meaning": {
+            "en": "this notebook"
+          }
+        },
+        {
+          "polish": "ta torba",
+          "meaning": {
+            "en": "this bag"
+          }
+        },
+        {
+          "polish": "to okno",
+          "meaning": {
+            "en": "this window"
+          }
+        },
+        {
+          "polish": "to auto",
+          "meaning": {
+            "en": "this car"
+          }
+        }
+      ],
+      "items": [
+        "ten",
+        "zeszyt",
+        "ta",
+        "torba",
+        "to",
+        "okno",
+        "auto"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l03-c1-e14",
+      "text": "to auto",
+      "meaning": {
+        "en": "this car"
+      },
+      "distractors": [
+        "ta auto",
+        "ten auto"
+      ],
+      "items": [
+        "to",
+        "auto"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l03-c1-e15",
+      "prompt": {
+        "en": "this museum"
+      },
+      "acceptedAnswers": [
+        "to muzeum"
+      ],
+      "items": [
+        "to",
+        "muzeum"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l03-c1-e16",
+      "text": "___ słońce, ___ komórka, ___ słownik",
+      "meaning": {
+        "en": "this sun, this mobile phone, this dictionary"
+      },
+      "gaps": [
+        [
+          "to"
+        ],
+        [
+          "ta"
+        ],
+        [
+          "ten"
+        ]
+      ],
+      "distractors": [],
+      "items": [
+        "to",
+        "slonce",
+        "ta",
+        "komorka",
+        "ten",
+        "slownik"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-c1-e17",
+      "acceptedAnswers": [
+        "to akwarium"
+      ],
+      "meaning": {
+        "en": "this aquarium"
+      },
+      "items": [
+        "to",
+        "akwarium"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l03-c1-e18",
+      "acceptedAnswers": [
+        "rzeczownik"
+      ],
+      "meaning": {
+        "en": "a noun"
+      },
+      "items": [
+        "rzeczownik"
+      ]
+    }
+  ]
+}
