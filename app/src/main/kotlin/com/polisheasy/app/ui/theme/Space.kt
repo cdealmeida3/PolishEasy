@@ -70,6 +70,13 @@ object Size {
     /** The room kept at the bottom of an Exercise for the feedback panel, so the answers above it never move. */
     val feedbackRoom: Dp = 176.dp
 
+    /** The room kept at the bottom of a Round's step for "Continue", so the answers above it never move. */
+    val roundActionRoom: Dp = 84.dp
+
+    /** The picture or icon of a Game on its card, and larger at the top of the Game's own screen. */
+    val gameIcon: Dp = 48.dp
+    val gameIconHero: Dp = 72.dp
+
     /** The Streak's flame on Home, and the larger one of the Summary, where the Streak going up is the hero. */
     val flame: Dp = 48.dp
     val flameHero: Dp = 72.dp

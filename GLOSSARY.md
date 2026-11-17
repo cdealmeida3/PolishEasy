@@ -37,7 +37,7 @@ _Avoid_: Card, fact, vocabulary entry
 
 **Review**:
 The part of a Daily Set chosen per Learner from Items they previously got wrong or have not seen recently.
-_Avoid_: Practice, revision, recap
+_Avoid_: Revision, recap
 
 **Review-only Daily Set**:
 A Daily Set made entirely of Review, offered once per day when the Learner has completed every Daily Set on the Path released so far. It has about 20 Exercises: Items that are due first, then those answered longest ago. It is not on the Path.
@@ -47,8 +47,24 @@ A short explanation of new grammar or words shown before the Exercises that rely
 _Avoid_: Lesson, hint, note
 
 **Replay**:
-Doing an already completed Daily Set again for practice, started from the Path screen. It has the Daily Set's Tips and New Material but no Review. It does not advance the Path, does not count toward the Streak and does not affect Review, and one left unfinished is not kept.
-_Avoid_: Redo, practice mode
+Doing an already completed Daily Set again, started from the Path screen. It has the Daily Set's Tips and New Material but no Review. It does not advance the Path, does not count toward the Streak and does not affect Review, and one left unfinished is not kept.
+_Avoid_: Redo, practice mode, Practice (which is the Games)
+
+**Practice**:
+The part of the app outside the Path where the Learner plays Games with what they have already learned. It opens each day once today's new or Review-only Daily Set is completed and stays open until midnight. Nothing in it advances the Path, counts toward the Streak or affects Review.
+_Avoid_: Arcade, extras, practice mode
+
+**Game**:
+One kind of play in Practice, such as the Verb challenge. A Game uses only Items and Tips from Daily Sets the Learner has completed, and opens once they have learned enough for it. Most Games can be played in several ways, such as one verb or all of them, choosing or typing.
+_Avoid_: Mini-game, activity, Exercise (which belongs to a Daily Set)
+
+**Round**:
+One play of a Game from start to result. A Round left unfinished is not kept.
+_Avoid_: Match, session, level
+
+**Best**:
+The Learner's best result in a Game, kept separately for each way of playing it. It is the only score in the app: there are no points, levels or leaderboards.
+_Avoid_: High score, record, points
 
 **Streak**:
 The number of consecutive calendar days on which the Learner completed a new or Review-only Daily Set. Until today's is completed it is the Streak earned up to yesterday; a day with none resets it to zero. A Replay does not count.

@@ -188,7 +188,8 @@ private fun Day(day: WeekDay, filling: Boolean) {
 /**
  * A card of Home that says one thing about today: a small [label] over its [title], then whatever
  * the state needs. [highlighted] gives the label the brand's colour, for the card that holds the
- * main action; [done] puts the tick beside the title, so "done" is not said by words alone.
+ * main action; [done] puts the tick beside the title, so "done" is not said by words alone, and
+ * [locked] the padlock, for something that is not open yet.
  */
 @Composable
 fun TodayCard(
@@ -197,6 +198,7 @@ fun TodayCard(
     label: String? = null,
     highlighted: Boolean = false,
     done: Boolean = false,
+    locked: Boolean = false,
     content: @Composable ColumnScope.() -> Unit = {},
 ) {
     val scheme = MaterialTheme.colorScheme
@@ -215,6 +217,15 @@ fun TodayCard(
                     painterResource(R.drawable.ic_check_circle),
                     contentDescription = null,
                     tint = PolishEasyTheme.colors.success,
+                    modifier = Modifier.size(Size.feedbackIcon),
+                )
+                Spacer(Modifier.width(Space.xs))
+            }
+            if (locked) {
+                Icon(
+                    painterResource(R.drawable.ic_lock),
+                    contentDescription = null,
+                    tint = scheme.onSurfaceVariant,
                     modifier = Modifier.size(Size.feedbackIcon),
                 )
                 Spacer(Modifier.width(Space.xs))

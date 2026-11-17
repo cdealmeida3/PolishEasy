@@ -1,10 +1,6 @@
 package com.polisheasy.engine
 
 import java.io.File
-import java.nio.file.AtomicMoveNotSupportedException
-import java.nio.file.Files
-import java.nio.file.StandardCopyOption.ATOMIC_MOVE
-import java.nio.file.StandardCopyOption.REPLACE_EXISTING
 import java.time.LocalDate
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
@@ -45,7 +41,8 @@ private val json = Json {
  * created; every change rewrites it whole, through a temporary file and an atomic move, so a
  * crash mid-write leaves the previous version intact.
  */
-class FileLearnerProgress(private val file: File) : LearnerProgress {
+class FileLearnerProgress(file: File) : LearnerProgress {
+    private val saved = SavedFile(file)
     private var completed: Map<String, LocalDate>
     private var inProgress: DailySetInProgress?
     private var items: Map<String, ItemProgress>
@@ -80,19 +77,11 @@ class FileLearnerProgress(private val file: File) : LearnerProgress {
     override fun itemProgress(): Map<String, ItemProgress> = items
 
     /** A file that cannot be read is moved aside, so a bad file can never stop the app opening. */
-    private fun read(): StoredProgress {
-        if (!file.exists()) return StoredProgress()
-        return try {
-            json.decodeFromString<StoredProgress>(file.readText()).also { stored ->
-                stored.completed.values.forEach(LocalDate::parse)
-                stored.items.values.forEach { it.toItemProgress() }
-                stored.reviewOnlyDays.forEach(LocalDate::parse)
-            }
-        } catch (e: Exception) {
-            runCatching {
-                Files.move(file.toPath(), File(file.path + ".corrupt").toPath(), REPLACE_EXISTING)
-            }
-            StoredProgress()
+    private fun read(): StoredProgress = saved.read(StoredProgress()) { text ->
+        json.decodeFromString<StoredProgress>(text).also { stored ->
+            stored.completed.values.forEach(LocalDate::parse)
+            stored.items.values.forEach { it.toItemProgress() }
+            stored.reviewOnlyDays.forEach(LocalDate::parse)
         }
     }
 
@@ -108,14 +97,7 @@ class FileLearnerProgress(private val file: File) : LearnerProgress {
             items = items.mapValues { StoredItem(it.value) },
             reviewOnlyDays = reviewOnly.sorted().map { it.toString() },
         )
-        val temporary = File(file.path + ".tmp")
-        file.absoluteFile.parentFile?.mkdirs()
-        temporary.writeText(json.encodeToString(stored))
-        try {
-            Files.move(temporary.toPath(), file.toPath(), ATOMIC_MOVE, REPLACE_EXISTING)
-        } catch (e: AtomicMoveNotSupportedException) {
-            Files.move(temporary.toPath(), file.toPath(), REPLACE_EXISTING)
-        }
+        saved.write(json.encodeToString(stored))
         this.completed = completed
         this.inProgress = inProgress
         this.items = items

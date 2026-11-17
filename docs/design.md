@@ -283,6 +283,18 @@ Settings is quiet: three `SettingsCard`s, 16 apart, and nothing that moves.
 - **Report a mistake**: a `LinkSetting` to the email app.
 - **The version**, 24 below the last card.
 
+## Practice
+
+Practice is the fourth tab, between the Path and Settings, with a game controller for its icon. See `docs/practice.md` for how it is built.
+
+- **The Practice screen**: a greeting in Polish in the display typeface, one line under it, and "Played today · 2 Rounds" as a chip once a Round has been played. Then the Games under the names of their groups, one `GameCard` each.
+- **Locked**: until today's Daily Set is completed, a `TodayCard` with a padlock says what opens Practice and holds the button that starts or continues the Daily Set. Every `GameCard` under it is flat, with a padlock for its icon. A Game the Learner has not learned enough for is locked in the same way and says what opens it.
+- **`GameCard`**: `surfaceContainerLowest`, the bottom edge, the Game's icon on a 48 circle of `primaryContainer`, its name in `titleLarge`, one line in `bodyMedium`, and the Best under them with a small star in `primary`. A chevron at the end, which is dropped at large font sizes.
+- **Before a Round** (`DetailFrame`): a back arrow, the Game's icon at 72, its name, and each thing to choose as a row of `ChoiceChips`. The chip chosen is `primaryContainer` with a `primary` border and a tick, so it is not marked by colour alone. Under them the Best of what is chosen, and "Play" pinned to the bottom.
+- **A Round** (`RoundFrame`, `RoundStep`): the frame of a Daily Set, with the close button and a progress bar of questions answered. What is asked sits at the top and the answers at the bottom, as in an Exercise. There is no feedback panel: an answer is marked where it is, on the option, in the table's row or in the sentence's gap, in `success` with a tick or `caution` with a cross. "Continue" appears in the same colour. A typed answer gets a `RoundNote` under the question.
+- **`VerbTable`**: the table of a Tip with slots for forms. An empty slot is dashed; the one asked for is `primaryContainer` with a `primary` border and a "?".
+- **The result**: the Game's icon, a cheer in Polish with its meaning, "Round complete", and two `StatTile`s: the result and the Best. A beaten Best is announced by `BestLine` with a star that bounces in once. "Play again" is the main action and "Done" the quiet one. There is no confetti: that is for a Daily Set.
+
 ## App icon and splash screen
 
 - **The icon** is a white speech bubble on `brand` saying **ą**, a letter only Polish has in this shape, set in Nunito ExtraBold in `brand`. Under the bubble is its bottom edge in `brandEdge`, 3 of the icon's 108 units deep: the same edge every button in the app has. It is drawn from shapes and a letter, which keeps to "no mascot". Everything sits inside the middle 66 units, so no launcher's mask cuts it.
@@ -326,6 +338,12 @@ Rules:
 
 **Sound.** Only Clips play; there are no sound effects. Polish is said when it appears, without a tap: a Polish prompt as its Exercise opens, the answer as the feedback panel appears (not after a listening Exercise, where it was just heard), and a word tile as it is placed, where a Clip exists for the word. All of it obeys the Sound setting and "can't listen now": with either, nothing plays that the Learner did not tap a speaker for. Any sound effect added later obeys them too.
 
+### In a Game
+
+- A right answer moves on by itself after `Motion.MOVE_ON_MILLIS` (700 ms). "Continue" is there as well, for a Learner who does not want to wait or who uses a screen reader. A wrong answer always waits.
+- The same haptics as an Exercise for right and wrong, and one for the result.
+- Closing a Round asks nothing: a Round left unfinished is not kept, so nothing is lost that matters.
+
 ## Accessibility
 
 - Every state has words or an icon as well as colour, and a state change is announced to a screen reader (the feedback panel is a live region).
@@ -337,4 +355,4 @@ Rules:
 
 ## Not part of the look
 
-No mascot, character or illustration. No photographs or images in Exercises. No points, levels, leaderboards or Streak freezes. The counts under "Your Polish so far" are not points: they count what the Learner did, nothing is bought or unlocked with them, and they are never compared with anyone's. The celebration is for finishing a Daily Set and keeping the Streak, which are the rules the app already has.
+No mascot, character or illustration on the app's own screens. No photographs or images in Exercises; the pictures of Practice are for its Games only (ADR-0011). No points, levels, leaderboards or Streak freezes. A Best in a Game is the Learner's own result to beat, and nothing is bought or unlocked with it. The counts under "Your Polish so far" are not points: they count what the Learner did, nothing is bought or unlocked with them, and they are never compared with anyone's. The celebration is for finishing a Daily Set and keeping the Streak, which are the rules the app already has.
