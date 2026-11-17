@@ -358,14 +358,14 @@ fun RoundNote(mark: Mark, text: String, modifier: Modifier = Modifier, polish: B
 
 /** The tick of a right answer or the cross of a missed one, arriving with a little bounce. */
 @Composable
-internal fun MarkIcon(mark: Mark, modifier: Modifier = Modifier) {
+internal fun MarkIcon(mark: Mark, modifier: Modifier = Modifier, size: Dp = Scaled.icon()) {
     val colors = PolishEasyTheme.colors
     Icon(
         painterResource(if (mark == Mark.Right) R.drawable.ic_check_circle else R.drawable.ic_cancel),
         contentDescription = null,
         tint = if (mark == Mark.Right) colors.success else colors.caution,
         modifier = modifier
-            .size(Scaled.icon())
+            .size(size)
             .appearing(),
     )
 }

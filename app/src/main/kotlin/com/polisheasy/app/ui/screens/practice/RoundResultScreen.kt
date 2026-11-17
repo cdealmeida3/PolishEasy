@@ -14,6 +14,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringArrayResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
@@ -119,6 +120,11 @@ internal class ScoreWords(val value: String, val label: String, val sentence: St
 @Composable
 internal fun scoreWords(game: Game, score: Score): ScoreWords = when (game) {
     Game.PICTURE_CARDS -> error("Picture cards has no result")
+    Game.MEMORY_PAIRS -> ScoreWords(
+        value = score.value.toString(),
+        label = pluralStringResource(R.plurals.result_turns, score.value),
+        sentence = pluralStringResource(R.plurals.result_turns_sentence, score.value, score.value),
+    )
     Game.VERB_CHALLENGE -> ScoreWords(
         value = stringResource(R.string.summary_first_try_value, score.value, score.of ?: score.value),
         label = stringResource(R.string.summary_first_try),

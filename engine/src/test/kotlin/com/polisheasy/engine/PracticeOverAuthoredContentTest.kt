@@ -83,6 +83,33 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Memory pairs lays a board of what has been learned in every way it offers, and no two pairs look alike`() {
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            val game = practice.view().games.single { it.game == Game.MEMORY_PAIRS }
+            assertEquals(if (learned.size < 6) GameState.NEEDS_MORE else GameState.READY, game.state, "After $days Daily Sets")
+            if (game.state != GameState.READY) return@forEach
+            practice.setup(Game.MEMORY_PAIRS).choices.first().options.forEach { kind ->
+                practice.setup(Game.MEMORY_PAIRS, listOf(kind.id)).choices[1].options.forEach { deck ->
+                    practice.setup(Game.MEMORY_PAIRS, listOf(kind.id, deck.id)).choices[2].options.forEach { size ->
+                        val way = listOf(kind.id, deck.id, size.id)
+                        val round = practice.start(practice.setup(Game.MEMORY_PAIRS, way)) as MemoryRound
+                        val about = "After $days Daily Sets, $way"
+                        assertEquals(way, round.played, about)
+                        assertEquals(2 * size.id.removePrefix("pairs-").toInt(), round.tiles.size, about)
+                        assertTrue(learned.containsAll(round.asked), about)
+                        // A word and the sound of it are one pair; any other two tiles alike would be two.
+                        val faces = round.tiles.map { it.face }.filter { it !is MemoryFace.Sound }
+                        assertEquals(faces.size, faces.toSet().size, about)
+                        assertEquals(faces.size, faces.map { if (it is MemoryFace.Image) it.picture else it }.toSet().size, about)
+                    }
+                }
+            }
+        }
+    }
+
+    @Test
     fun `every picture is of a word that can be pictured without knowing Polish, once`() {
         // A numeral stands for its number and nothing else.
         val numerals = course.pictures.filterValues { it is Picture.Glyph }

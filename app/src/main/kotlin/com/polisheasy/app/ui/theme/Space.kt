@@ -80,6 +80,13 @@ object Size {
     /** The least height of a Picture card, so the picture has room and a turned card holds its words. */
     val pictureTile: Dp = 168.dp
 
+    /** The least and the most height of a tile of Memory pairs: a board fills the screen between the two. */
+    val memoryTileMin: Dp = 64.dp
+    val memoryTileMax: Dp = 160.dp
+
+    /** The tick in the corner of a tile whose pair was found: small, so it stays clear of the tile's words. */
+    val tileMark: Dp = 18.dp
+
     /** The Streak's flame on Home, and the larger one of the Summary, where the Streak going up is the hero. */
     val flame: Dp = 48.dp
     val flameHero: Dp = 72.dp

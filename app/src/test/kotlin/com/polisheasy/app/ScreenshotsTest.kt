@@ -36,6 +36,7 @@ import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
 import com.polisheasy.app.ui.PolishEasyApp
 import com.polisheasy.app.ui.PolishEasyTheme
+import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.app.ui.components.NavigationFrame
 import com.polisheasy.app.ui.components.NavigationTab
 import com.polisheasy.app.ui.screens.HomeScreen
@@ -59,6 +60,8 @@ import com.polisheasy.engine.FilePracticeProgress
 import com.polisheasy.engine.InMemoryLearnerProgress
 import com.polisheasy.engine.InMemoryPracticeProgress
 import com.polisheasy.engine.loadCourse
+import com.polisheasy.engine.MemoryFace
+import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.VerbRound
 import com.polisheasy.engine.VerbStage
 import java.time.LocalTime
@@ -501,6 +504,95 @@ class ScreenshotsTest {
         shot("$theme-61-picture-cards-real")
         screen.onNode(hasText(course.levels.first().units.last().title.getValue("en")) and hasClickAction()).performClick()
         shot("$theme-62-picture-cards-real-unit")
+    }
+
+    @Test
+    fun `Memory pairs over the real course in the light theme`() = memoryPairs("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Memory pairs over the real course in the dark theme`() = memoryPairs("dark")
+
+    @Test
+    fun `Memory pairs over the real course at the largest font size`() = atTheLargestFontSize { memoryPairs("large") }
+
+    /**
+     * Memory pairs as a Learner who has completed the whole real course plays it: before a Round, a
+     * board of pictures new, part found, with two tiles that are not a pair, and finished; the
+     * result; a board of sounds, and the largest board, of words and their meanings.
+     */
+    private fun memoryPairs(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun board() = (viewModel?.screen as Screen.Round).round as MemoryRound
+
+        fun pairs() = board().let { board -> board.tiles.indices.groupBy { board.tiles[it].pair }.values.toList() }
+
+        /** Taps the tile at [tile], which is face down, and lets it turn. */
+        fun turn(tile: Int) {
+            screen.onNodeWithContentDescription(app.getString(R.string.memory_tile, tile + 1)).performScrollTo().performClick()
+            screen.mainClock.advanceTimeBy(400)
+        }
+
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val progress = InMemoryLearnerProgress()
+        course.path.forEachIndexed { index, dailySet ->
+            progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
+        }
+        val engine = CourseEngine(course, progress, clock)
+        open(CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7))))
+        tap(R.string.nav_practice)
+        tap(R.string.game_memory_pairs)
+        shot("63-memory-setup")
+        tap(R.string.setup_play)
+        shot("64-memory-board")
+
+        // The clock is held, so two tiles that are not a pair stay up to be pictured.
+        screen.waitForIdle()
+        screen.mainClock.autoAdvance = false
+        val pictures = pairs()
+        pictures.take(2).forEach { pair -> pair.forEach(::turn) }
+        turn(pictures[2][0])
+        shot("65-memory-found")
+        turn(pictures[3][0])
+        shot("66-memory-not-a-pair")
+        // After a moment the two turn back.
+        screen.mainClock.advanceTimeBy(Motion.MISS_MILLIS + 400)
+        pictures.drop(2).forEach { pair -> pair.forEach(::turn) }
+        shot("67-memory-finished")
+        screen.mainClock.advanceTimeBy(Motion.BOARD_DONE_MILLIS + 100)
+        screen.mainClock.autoAdvance = true
+        shot("68-memory-result")
+
+        // Pairs of a sound and its word, on the middle board.
+        tap(R.string.result_done)
+        tap(R.string.game_memory_pairs)
+        tap(R.string.option_sound_word)
+        tap(app.getString(R.string.option_pairs, 9))
+        shot("69-memory-setup-sounds")
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+        screen.mainClock.autoAdvance = false
+        val sounds = pairs()
+        sounds.take(3).forEach { pair -> pair.forEach(::turn) }
+        turn(sounds[3].first { board().tiles[it].face is MemoryFace.Sound })
+        shot("70-memory-sounds")
+        screen.mainClock.autoAdvance = true
+
+        // Pairs of a word and its meaning, on the largest board.
+        screen.onNodeWithContentDescription(app.getString(R.string.round_close)).performClick()
+        tap(R.string.game_memory_pairs)
+        tap(R.string.option_word_meaning)
+        tap(app.getString(R.string.option_pairs, 12))
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+        screen.mainClock.autoAdvance = false
+        val words = pairs()
+        words.take(4).forEach { pair -> pair.forEach(::turn) }
+        turn(words[4][0])
+        turn(words[5][0])
+        shot("71-memory-words")
+        screen.mainClock.autoAdvance = true
     }
 
     @Test

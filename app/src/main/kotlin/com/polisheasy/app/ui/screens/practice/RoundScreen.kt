@@ -14,6 +14,7 @@ import com.polisheasy.app.ui.components.rememberAnswerHaptics
 import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.Given
+import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.Round
 import com.polisheasy.engine.VerbRound
 import kotlinx.coroutines.delay
@@ -21,12 +22,21 @@ import kotlinx.coroutines.delay
 /**
  * The step of a Round being shown, whichever Game it is. A move the Learner makes is handed to
  * [onMove] as the Round it leaves; the rules of every move are the engine's. With [sound] the
- * Polish of an answer is said as it is given, where there is a Clip for it.
+ * Polish of an answer is said as it is given, where there is a Clip for it. A Game whose last
+ * move should be seen before the result calls [onFinish] when it has been.
  */
 @Composable
-internal fun RoundScreen(round: Round, sound: Boolean, clipOf: (String) -> ClipView?, onPlay: (ClipView) -> Unit, onMove: (Round) -> Unit) {
+internal fun RoundScreen(
+    round: Round,
+    sound: Boolean,
+    clipOf: (String) -> ClipView?,
+    onPlay: (ClipView) -> Unit,
+    onMove: (Round) -> Unit,
+    onFinish: () -> Unit,
+) {
     val say: (String) -> Unit = { polish -> if (sound) clipOf(polish)?.let(onPlay) }
     when (round) {
+        is MemoryRound -> MemoryPairsBoard(round, sound, say, onMove, onFinish)
         is VerbRound -> VerbChallengeStep(round, say, onMove)
         else -> error("No screen for a Round of ${round.game}")
     }

@@ -39,6 +39,7 @@ import com.polisheasy.app.ui.screens.practice.PracticeScreen
 import com.polisheasy.app.ui.screens.practice.PictureCardsScreen
 import com.polisheasy.app.ui.screens.practice.RoundResultScreen
 import com.polisheasy.app.ui.screens.practice.RoundScreen
+import com.polisheasy.app.ui.screens.practice.progressWords
 
 /** [player] plays the Clips, and is released when the app's screens go. */
 @Composable
@@ -177,7 +178,7 @@ private fun Round(screen: Screen.Round, viewModel: CourseViewModel, player: Clip
     DisposableEffect(Unit) { onDispose { player.stop() } }
     RoundFrame(
         progress = screen.round.done.toFloat() / screen.round.total.coerceAtLeast(1),
-        progressDescription = stringResource(R.string.round_progress, screen.round.done, screen.round.total),
+        progressDescription = progressWords(screen.round),
         closeLabel = stringResource(R.string.round_close),
         onClose = viewModel::leaveGame,
         step = shown,
@@ -192,6 +193,7 @@ private fun Round(screen: Screen.Round, viewModel: CourseViewModel, player: Clip
             clipOf = viewModel::practiceClipOf,
             onPlay = { clip -> if (step == current) player.play(clip.path) },
             onMove = { round -> if (step == current) viewModel.move(round) },
+            onFinish = { if (step == current) viewModel.endRound() },
         )
     }
 }
@@ -243,6 +245,7 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
                 soFar = showing.soFar,
                 streakRaisedFrom = showing.streakRaisedFrom,
                 onReplayToday = if (showing.replayToday) viewModel::replayToday else null,
+                onPractice = viewModel::openPractice,
             )
             is Screen.Path -> {
                 BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)

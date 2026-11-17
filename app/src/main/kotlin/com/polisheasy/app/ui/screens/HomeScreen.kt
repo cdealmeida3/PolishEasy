@@ -18,6 +18,7 @@ import com.polisheasy.app.R
 import com.polisheasy.app.ui.components.CardNote
 import com.polisheasy.app.ui.components.PrimaryButton
 import com.polisheasy.app.ui.components.ScreenFrame
+import com.polisheasy.app.ui.components.SecondaryButton
 import com.polisheasy.app.ui.components.StreakWeekCard
 import com.polisheasy.app.ui.components.Teaches
 import com.polisheasy.app.ui.components.TodayCard
@@ -58,6 +59,7 @@ internal fun HomeScreen(
     soFar: SoFarView,
     streakRaisedFrom: Int? = null,
     onReplayToday: (() -> Unit)? = null,
+    onPractice: (() -> Unit)? = null,
 ) {
     val done = today is Today.DoneForToday
     ScreenFrame {
@@ -128,6 +130,11 @@ internal fun HomeScreen(
                     Arriving(play = streakRaisedFrom != null) {
                         TodayCard(stringResource(R.string.home_done_title), done = true) {
                             CardNote(stringResource(message))
+                            // Practice is open from now until midnight: the next thing there is to do today.
+                            if (onPractice != null) {
+                                Spacer(Modifier.height(Space.m))
+                                SecondaryButton(stringResource(R.string.home_practice), onPractice)
+                            }
                             if (onReplayToday != null) {
                                 Spacer(Modifier.height(Space.xs))
                                 QuietButton(stringResource(R.string.home_replay_today), onReplayToday)

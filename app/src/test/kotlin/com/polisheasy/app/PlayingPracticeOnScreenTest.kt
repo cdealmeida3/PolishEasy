@@ -25,6 +25,8 @@ import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.FileLearnerProgress
 import com.polisheasy.engine.FilePracticeProgress
+import com.polisheasy.engine.MemoryFace
+import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.VerbRound
 import com.polisheasy.engine.VerbStage
 import java.io.File
@@ -294,6 +296,84 @@ class PlayingPracticeOnScreenTest {
         screen.onNodeWithContentDescription(text(R.string.audio_play)).assertDoesNotExist()
     }
 
+    @Test
+    fun `Memory pairs is played by turning tiles two at a time, and the fewest turns is the Best`() {
+        openPracticeAfterTodaysDailySet()
+        tap(R.string.game_memory_pairs)
+        // Four pictures are too few for a board of them, and four Clips for one of sounds: the pairs are a word and its meaning.
+        absent(R.string.option_picture_word)
+        absent(R.string.option_sound_word)
+        shows(R.string.option_word_meaning)
+        tap(R.string.setup_play)
+        shows(R.string.memory_instruction)
+        shows(turns(0))
+        clips.asked.clear()
+
+        // Two tiles that are not a pair: a word, said as it turns, and the meaning of another.
+        val word = board().tiles.indexOfFirst { it.face is MemoryFace.Word }
+        val polish = (board().tiles[word].face as MemoryFace.Word).polish
+        val other = board().tiles.indexOfFirst { it.pair != board().tiles[word].pair && it.face is MemoryFace.Meaning }
+        val meaning = (board().tiles[other].face as MemoryFace.Meaning).text
+        screen.waitForIdle()
+        screen.mainClock.autoAdvance = false
+        turn(word)
+        screen.mainClock.advanceTimeBy(400)
+        shows(polish)
+        assertEquals(listOf(Played(checkNotNull(viewModel?.practiceClipOf(polish)).path, slow = false)), clips.played)
+        turn(other)
+        screen.mainClock.advanceTimeBy(400)
+        shows(meaning)
+        shows(turns(1))
+        // After a moment they turn back.
+        screen.mainClock.advanceTimeBy(Motion.MISS_MILLIS + 400)
+        screen.onNodeWithText(polish).assertDoesNotExist()
+        screen.onNodeWithText(meaning).assertDoesNotExist()
+        screen.mainClock.autoAdvance = true
+
+        // A pair found stays up; when every pair is, the Round ends with the turns it took.
+        findEveryPair()
+        screen.onNodeWithContentDescription(quantity(R.plurals.result_turns_sentence, 7)).assertIsDisplayed()
+        showsFirstBest()
+
+        // Fewer turns is a new Best.
+        tap(R.string.result_play_again)
+        findEveryPair()
+        screen.onNodeWithContentDescription(quantity(R.plurals.result_turns_sentence, 6)).assertIsDisplayed()
+        shows(R.string.result_new_best)
+        tap(R.string.result_done)
+        val played = listOf(text(R.string.option_word_meaning), text(R.string.option_all), text(R.string.option_pairs, 6)).joinToString(", ")
+        shows(text(R.string.practice_best_played, quantity(R.plurals.practice_turns, 6), played))
+    }
+
+    @Test
+    fun `with Sound off the tiles of Memory pairs turn in silence`() {
+        openPracticeAfterTodaysDailySet()
+        tap(R.string.nav_settings)
+        tap(R.string.settings_sound)
+        tap(R.string.nav_practice)
+        tap(R.string.game_memory_pairs)
+        tap(R.string.setup_play)
+        clips.asked.clear()
+
+        findEveryPair()
+
+        shows(R.string.result_title)
+        assertTrue(clips.played.isEmpty())
+    }
+
+    @Test
+    fun `Home offers a Game once today's Daily Set is done`() {
+        openApp()
+        absent(R.string.home_practice)
+        tap(R.string.home_start)
+        playDailySetOne()
+        tap(R.string.summary_back_home)
+
+        tap(R.string.home_practice)
+
+        shows(R.string.practice_open_note)
+    }
+
     // Getting there
 
     private fun openApp() {
@@ -370,6 +450,24 @@ class PlayingPracticeOnScreenTest {
     }
 
     // What the Learner does and sees
+
+    private fun board(): MemoryRound = (viewModel?.screen as Screen.Round).round as MemoryRound
+
+    /** Taps the tile at [tile], which is face down. */
+    private fun turn(tile: Int) = screen.onNodeWithContentDescription(text(R.string.memory_tile, tile + 1)).performClick()
+
+    /** Turns up the two tiles of each pair in turn, until the board is finished and gives way to the result. */
+    private fun findEveryPair() {
+        val board = board()
+        board.tiles.indices.groupBy { board.tiles[it].pair }.values.forEach { pair -> pair.forEach(::turn) }
+        // The finished board stands for a moment.
+        screen.mainClock.advanceTimeBy(Motion.BOARD_DONE_MILLIS + 100)
+        screen.waitForIdle()
+    }
+
+    private fun turns(count: Int): String = quantity(R.plurals.practice_turns, count)
+
+    private fun quantity(id: Int, count: Int): String = app.resources.getQuantityString(id, count, count)
 
     private fun text(id: Int, vararg values: Any): String = app.getString(id, *values)
 

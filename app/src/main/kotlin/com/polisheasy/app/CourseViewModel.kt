@@ -29,6 +29,7 @@ import com.polisheasy.engine.SoFarView
 import com.polisheasy.engine.StepProgress
 import com.polisheasy.engine.UnitCompletedView
 import com.polisheasy.engine.FilePracticeProgress
+import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.Game
 import com.polisheasy.engine.GameState
 import com.polisheasy.engine.PracticeView
@@ -247,7 +248,7 @@ class CourseViewModel(
     fun openGame(game: Game) {
         screen = when (game) {
             Game.PICTURE_CARDS -> Screen.PictureCards(practice.pictureCards(), sound = settings.soundOn)
-            else -> Screen.GameSetup(practice.setup(game))
+            else -> Screen.GameSetup(practice.setup(game, sound = settings.soundOn))
         }
     }
 
@@ -267,7 +268,7 @@ class CourseViewModel(
     fun choose(choice: Int, option: String) {
         val setup = (screen as? Screen.GameSetup)?.setup ?: return
         val wanted = setup.selected.toMutableList().also { it[choice] = option }
-        screen = Screen.GameSetup(practice.setup(setup.game, wanted))
+        screen = Screen.GameSetup(practice.setup(setup.game, wanted, settings.soundOn))
     }
 
     /** "Play" before a Round, and "Play again" after one: a new Round, played the same way. */
@@ -286,10 +287,20 @@ class CourseViewModel(
         screen = Screen.Round(practice.start(setup, sound), setup, number = ++roundsStarted, sound = sound)
     }
 
-    /** A move in the Round being played, as the Round it leaves. The last one ends the Round and saves its result. */
+    /**
+     * A move in the Round being played, as the Round it leaves. The last one ends the Round and
+     * saves its result, except on a board, which is shown finished until [endRound].
+     */
     fun move(round: PracticeRound) {
         val playing = screen as? Screen.Round ?: return
-        screen = if (round.finished) Screen.RoundResult(practice.finish(round), playing.setup) else playing.copy(round = round)
+        screen = playing.copy(round = round)
+        if (round !is MemoryRound) endRound()
+    }
+
+    /** Ends the Round being played, if it is finished, and saves its result. */
+    fun endRound() {
+        val playing = screen as? Screen.Round ?: return
+        if (playing.round.finished) screen = Screen.RoundResult(practice.finish(playing.round), playing.setup)
     }
 
     /** Leaves a Game for the Practice screen. A Round left unfinished is not kept. */

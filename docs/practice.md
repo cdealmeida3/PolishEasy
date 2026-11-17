@@ -20,6 +20,7 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 | Bests and the day's count | `engine/.../PracticeProgress.kt` |
 | The Verb challenge | `engine/.../VerbChallenge.kt` |
 | Pictures, decks and Picture cards | `engine/.../Pictures.kt`, `Decks.kt`, `PictureCards.kt` |
+| Memory pairs | `engine/.../MemoryPairs.kt` |
 
 A Round is an immutable value. Each move returns the next Round and never fails: a move that makes no sense now returns the Round unchanged. `Run<Q>` is the shared shape for a Game that is a list of questions.
 
@@ -29,7 +30,9 @@ A Round is an immutable value. Each move returns the next Round and never fails:
 
 `ui/screens/practice/` holds the Practice screen, the screen before a Round (`GameSetupScreen`), `RoundScreen`, which shows the step of whichever Game is being played, and `RoundResultScreen`. `Games.kt` is the one place that gives a Game its name, its line, its icon and the words for its result.
 
-The view model holds the Round. A screen makes a move by calling the engine's pure function and handing the Round it returns to `CourseViewModel.move`, which ends the Round when it is finished.
+The view model holds the Round. A screen makes a move by calling the engine's pure function and handing the Round it returns to `CourseViewModel.move`, which ends the Round when it is finished. A board is the exception: its last move should be seen, so the finished Round stays on screen and the screen calls `CourseViewModel.endRound` a moment later.
+
+What a Game offers can depend on sound: `Practice.setup` and `Practice.start` are told whether sound is on, and a way to play that is only listening is not offered without it.
 
 ## Adding a Game
 
@@ -70,3 +73,5 @@ A Game played with words offers decks to choose from: everything, each Unit the 
 **Verb challenge** (Verbs). Opens with the first verb table a Tip shows. Ways to play: one verb or, once there are two, "Mixed"; "Choose" or "Type". A Round is three stages: six times a person is shown and the form is picked or typed; then one verb's empty table is filled a row at a time from tiles; then up to four sentences from completed Exercises, each with a gap. The person is always shown with a sentence, because another form could be grammatical too. The result is the answers right first try.
 
 **Picture cards** (Words). Opens with four learned Items that have a Picture. Every card shows a Picture, two across, under the Unit that taught it; tapped, it turns over to the Polish, its meaning and a speaker, and says the word as it turns. "All words" adds the Items with no Picture, each shown by its meaning. Decks as above. Nothing is asked, so it has no Round and no Best, and does not count as a Round played.
+
+**Memory pairs** (Words). Opens with six learned Items. Ways to play: pairs of a picture and its word, a word and its meaning, or a sound and its word (only with sound on); a deck; a board of 6, 9 or 12 pairs. Each is offered only where there is enough to lay it. Tiles lie face down, three across; two are turned up at a time, and Polish is said as its tile turns. A pair stays up. Two that are not a pair turn back after a moment, or at once when another tile is tapped. No two pairs of a board look alike: Items with the same Polish, the same meaning or the same Picture do not share one. The result is the turns taken, and the fewest is the Best.

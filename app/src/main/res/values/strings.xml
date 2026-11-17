@@ -31,6 +31,7 @@
     <string name="home_start">Start</string>
     <string name="home_streak_start_title">Start your Streak today</string>
     <string name="home_streak_start_note">Finish today\'s Daily Set to light it.</string>
+    <string name="home_practice">Play a Game</string>
     <string name="home_replay_today">Replay today\'s Daily Set</string>
     <string name="home_so_far">Your Polish so far</string>
     <plurals name="home_so_far_words_label">
@@ -244,6 +245,37 @@
     <string name="option_all">Everything</string>
     <string name="option_latest">Latest words</string>
     <string name="option_tricky">Tricky words</string>
+    <string name="game_memory_pairs">Memory pairs</string>
+    <string name="game_memory_pairs_note">Turn two tiles at a time and find the pairs.</string>
+    <string name="game_memory_pairs_needs">Opens when you learn six words.</string>
+    <string name="choice_pairs">Pairs of</string>
+    <string name="option_picture_word">Picture and word</string>
+    <string name="option_word_meaning">Word and meaning</string>
+    <string name="option_sound_word">Sound and word</string>
+    <string name="choice_size">Board</string>
+    <string name="option_pairs">%d pairs</string>
+    <string name="memory_instruction">Find the pairs</string>
+    <string name="memory_progress">%1$d of %2$d pairs found</string>
+    <string name="memory_turn">Turn the tile</string>
+    <string name="memory_hear_again">Hear it again</string>
+    <string name="memory_tile">Tile %d</string>
+    <string name="memory_sound">Sound</string>
+    <string name="memory_down">Face down</string>
+    <string name="memory_up">Turned up</string>
+    <string name="memory_missed">Not a pair</string>
+    <string name="memory_found">Pair found</string>
+    <plurals name="practice_turns">
+        <item quantity="one">%d turn</item>
+        <item quantity="other">%d turns</item>
+    </plurals>
+    <plurals name="result_turns">
+        <item quantity="one">turn</item>
+        <item quantity="other">turns</item>
+    </plurals>
+    <plurals name="result_turns_sentence">
+        <item quantity="one">Every pair found in %d turn</item>
+        <item quantity="other">Every pair found in %d turns</item>
+    </plurals>
     <string name="game_verb_challenge">Verb challenge</string>
     <string name="game_verb_challenge_note">Pick the form, fill the table, finish the sentence.</string>
     <string name="game_verb_challenge_needs">Opens when you learn your first verb table.</string>
