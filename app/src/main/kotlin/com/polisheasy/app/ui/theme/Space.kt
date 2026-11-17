@@ -80,6 +80,9 @@ object Size {
     /** The least height of a Picture card, so the picture has room and a turned card holds its words. */
     val pictureTile: Dp = 168.dp
 
+    /** The least height of a picture to choose as an answer. */
+    val pictureOption: Dp = 120.dp
+
     /** The least and the most height of a tile of Memory pairs: a board fills the screen between the two. */
     val memoryTileMin: Dp = 64.dp
     val memoryTileMax: Dp = 160.dp

@@ -16,7 +16,9 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     /** Nothing is asked: the cards are looked at and listened to. It has no Rounds and no Best. */
     PICTURE_CARDS("picture-cards", GameGroup.WORDS, rounds = false),
     MEMORY_PAIRS("memory-pairs", GameGroup.WORDS, fewestWins = true),
+    PHRASE_CHAINS("phrase-chains", GameGroup.PHRASES, fewestWins = true),
     VERB_CHALLENGE("verb-challenge", GameGroup.VERBS),
+    LISTEN_AND_TAP("listen-and-tap", GameGroup.SOUNDS),
 }
 
 /** Whether a Game can be played now. */
@@ -215,7 +217,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(PictureCards, MemoryPairs, VerbChallenge).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(PictureCards, MemoryPairs, PhraseChains, VerbChallenge, ListenAndTap).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

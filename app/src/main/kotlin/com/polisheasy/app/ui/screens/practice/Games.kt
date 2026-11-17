@@ -26,6 +26,10 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_picture_cards, R.string.game_picture_cards_note, R.string.game_picture_cards_needs, R.drawable.game_picture_cards)
     Game.MEMORY_PAIRS ->
         GameWords(R.string.game_memory_pairs, R.string.game_memory_pairs_note, R.string.game_memory_pairs_needs, R.drawable.game_memory_pairs)
+    Game.PHRASE_CHAINS ->
+        GameWords(R.string.game_phrase_chains, R.string.game_phrase_chains_note, R.string.game_phrase_chains_needs, R.drawable.game_phrase_chains)
+    Game.LISTEN_AND_TAP ->
+        GameWords(R.string.game_listen_and_tap, R.string.game_listen_and_tap_note, R.string.game_listen_and_tap_needs, R.drawable.game_listen_and_tap)
     Game.VERB_CHALLENGE ->
         GameWords(R.string.game_verb_challenge, R.string.game_verb_challenge_note, R.string.game_verb_challenge_needs, R.drawable.game_verb_challenge)
 }
@@ -42,7 +46,8 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
 }
@@ -56,6 +61,9 @@ internal fun choiceLabel(id: String): String = stringResource(
         "deck" -> R.string.choice_deck
         "cards" -> R.string.choice_cards
         "pairs" -> R.string.choice_pairs
+        "clue" -> R.string.choice_clue
+        "length" -> R.string.choice_length
+        "tap" -> R.string.choice_tap
         "size" -> R.string.choice_size
         else -> error("No name for the choice $id")
     },
@@ -66,6 +74,13 @@ internal fun choiceLabel(id: String): String = stringResource(
 internal fun optionLabel(option: OptionView): String = option.label ?: option.id.pairs()?.let { stringResource(R.string.option_pairs, it) } ?: stringResource(
     when (option.id) {
         "picture-word" -> R.string.option_picture_word
+        "listen" -> R.string.option_listen
+        "read" -> R.string.option_read
+        "short" -> R.string.option_short
+        "medium" -> R.string.option_medium
+        "long" -> R.string.option_long
+        "picture" -> R.string.option_picture
+        "meaning" -> R.string.option_meaning
         "word-meaning" -> R.string.option_word_meaning
         "sound-word" -> R.string.option_sound_word
         "mixed" -> R.string.option_mixed

@@ -15,6 +15,7 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performSemanticsAction
 import androidx.compose.ui.semantics.SemanticsActions
 import androidx.compose.ui.test.performTextInput
@@ -25,7 +26,12 @@ import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.FileLearnerProgress
 import com.polisheasy.engine.FilePracticeProgress
+import com.polisheasy.engine.ChainRound
+import com.polisheasy.engine.InMemoryLearnerProgress
+import com.polisheasy.engine.InMemoryPracticeProgress
+import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.MemoryFace
+import com.polisheasy.engine.loadCourse
 import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.VerbRound
 import com.polisheasy.engine.VerbStage
@@ -374,6 +380,132 @@ class PlayingPracticeOnScreenTest {
         shows(R.string.practice_open_note)
     }
 
+    @Test
+    fun `Listen and tap says a word, and the picture tapped is marked right or wrong`() {
+        openPracticeAfterTodaysDailySet()
+        clips.asked.clear()
+        tap(R.string.game_listen_and_tap)
+        shows(R.string.option_picture)
+        shows(R.string.option_meaning)
+        tap(R.string.setup_play)
+
+        // The word is said as the question appears, and is not written.
+        screen.waitForIdle()
+        val first = checkNotNull(listening().question)
+        val said = Played(checkNotNull(viewModel?.practiceClipOf(first.polish)).path, slow = false)
+        assertEquals(listOf(said), clips.played)
+        screen.onNodeWithText(first.polish).assertDoesNotExist()
+        // The play button says it again.
+        screen.onNodeWithContentDescription(text(R.string.audio_play)).performClick()
+        assertEquals(listOf(said, said), clips.played)
+
+        // A wrong picture: the word is written, and the Round waits for "Continue".
+        screen.onNodeWithContentDescription(first.options.first { it.itemId != first.options[first.answer].itemId }.meaning).performClick()
+        shows(first.polish)
+        tap(R.string.action_continue)
+
+        // The rest right: each moves on by itself, or by "Continue".
+        while (viewModel?.screen is Screen.Round) {
+            val asked = checkNotNull(listening().question)
+            screen.onNodeWithContentDescription(asked.options[asked.answer].meaning).performClick()
+            tap(R.string.action_continue)
+        }
+        showsScore(3, 4)
+        showsFirstBest()
+    }
+
+    @Test
+    fun `Listen and tap by meaning shows four meanings to tap`() {
+        openPracticeAfterTodaysDailySet()
+        tap(R.string.game_listen_and_tap)
+        tap(R.string.option_meaning)
+        tap(R.string.setup_play)
+
+        val asked = checkNotNull(listening().question)
+        asked.options.forEach { shows(it.meaning) }
+        tap(asked.options[asked.answer].meaning)
+        shows(asked.polish)
+    }
+
+    @Test
+    fun `with Sound off Listen and tap stays closed and says why`() {
+        openPracticeAfterTodaysDailySet()
+        tap(R.string.nav_settings)
+        tap(R.string.settings_sound)
+        tap(R.string.nav_practice)
+
+        shows(R.string.practice_needs_sound)
+        tap(R.string.game_listen_and_tap)
+        shows(R.string.practice_open_note)
+        absent(R.string.setup_play)
+    }
+
+    @Test
+    fun `Phrase chains stays closed until three sentences have been built`() {
+        openPracticeAfterTodaysDailySet()
+
+        shows(R.string.game_phrase_chains_needs)
+        tap(R.string.game_phrase_chains)
+        absent(R.string.setup_play)
+    }
+
+    @Test
+    fun `a sentence is chained a word at a time, a wrong card is a slip, and the fewest slips is the Best`() {
+        openPracticeOverTheRealCourse()
+        tap(R.string.game_phrase_chains)
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+
+        // What to say is read; the chain starts empty.
+        val sentence = checkNotNull(chaining().sentence)
+        shows(sentence.meaning)
+        shows(R.string.chain_hint)
+        shows(slips(0))
+        val order = sentence.polish.split(" ").map { word -> word.trim(',', '.', '?', '!') }
+
+        // A word that does not belong is a slip, and the card stays.
+        tapCard(sentence.cards.first { it !in order })
+        shows(slips(1))
+        shows(R.string.chain_hint)
+
+        // In order, each card joins the chain; whole, the sentence is said.
+        clips.asked.clear()
+        order.forEach(::tapCard)
+        screen.onNodeWithContentDescription(text(R.string.chain_whole, order.joinToString(" "))).assertIsDisplayed()
+        assertEquals(listOf(Played(checkNotNull(viewModel?.practiceClipOf(sentence.polish)).path, slow = false)), clips.played)
+        tap(R.string.action_continue)
+
+        chainTheRest()
+        screen.onNodeWithContentDescription(quantity(R.plurals.result_slips_sentence, 1)).assertIsDisplayed()
+        showsFirstBest()
+
+        // No slips at all is a new Best.
+        tap(R.string.result_play_again)
+        chainTheRest()
+        screen.onNodeWithContentDescription(quantity(R.plurals.result_slips_sentence, 0)).assertIsDisplayed()
+        shows(R.string.result_new_best)
+    }
+
+    @Test
+    fun `heard, a sentence is said as it appears and its meaning is shown once it is chained`() {
+        openPracticeOverTheRealCourse()
+        clips.asked.clear()
+        tap(R.string.game_phrase_chains)
+        tap(R.string.setup_play)
+
+        screen.waitForIdle()
+        val sentence = checkNotNull(chaining().sentence)
+        val said = Played(checkNotNull(viewModel?.practiceClipOf(sentence.polish)).path, slow = false)
+        assertEquals(listOf(said), clips.played)
+        screen.onNodeWithText(sentence.meaning).assertDoesNotExist()
+
+        sentence.polish.split(" ").map { word -> word.trim(',', '.', '?', '!') }.forEach(::tapCard)
+
+        shows(sentence.meaning)
+        // It was heard already: it is not said again.
+        assertEquals(listOf(said), clips.played)
+    }
+
     // Getting there
 
     private fun openApp() {
@@ -393,6 +525,23 @@ class PlayingPracticeOnScreenTest {
     private fun fixtureViewModel(): CourseViewModel {
         val engine = CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock)
         return CourseViewModel(app, engine, engine.practice(FilePracticeProgress(File(folder.root, "practice.json")), Random(7)))
+    }
+
+    /** Practice as a Learner who has completed the whole real course sees it, the last Daily Set today. */
+    private fun openPracticeOverTheRealCourse() {
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val progress = InMemoryLearnerProgress()
+        course.path.forEachIndexed { index, dailySet ->
+            progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
+        }
+        val engine = CourseEngine(course, progress, clock)
+        viewModel = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        screen.setContent {
+            PolishEasyTheme {
+                viewModel?.let { key(it) { PolishEasyApp(it, clips) } }
+            }
+        }
+        tap(R.string.nav_practice)
     }
 
     private fun openPracticeAfterTodaysDailySet() {
@@ -450,6 +599,23 @@ class PlayingPracticeOnScreenTest {
     }
 
     // What the Learner does and sees
+
+    private fun listening(): ListenRound = (viewModel?.screen as Screen.Round).round as ListenRound
+
+    private fun chaining(): ChainRound = (viewModel?.screen as Screen.Round).round as ChainRound
+
+    /** Taps a card that says [word] and is not yet in the chain. */
+    private fun tapCard(word: String) = screen.onAllNodes(hasText(word) and hasClickAction())[0].performScrollTo().performClick()
+
+    /** Chains every sentence left in the Round the way it is written, moving on after each. */
+    private fun chainTheRest() {
+        while (viewModel?.screen is Screen.Round) {
+            checkNotNull(chaining().sentence).polish.split(" ").map { word -> word.trim(',', '.', '?', '!') }.forEach(::tapCard)
+            tap(R.string.action_continue)
+        }
+    }
+
+    private fun slips(count: Int): String = quantity(R.plurals.practice_slips, count)
 
     private fun board(): MemoryRound = (viewModel?.screen as Screen.Round).round as MemoryRound
 

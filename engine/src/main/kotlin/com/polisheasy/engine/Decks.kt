@@ -41,3 +41,19 @@ internal fun Learned.decks(least: Int, use: (Item) -> Boolean): List<Deck> {
 
 /** The deck with the id [wanted] among [decks], or else the first, which is everything. */
 internal fun deck(decks: List<Deck>, wanted: String?): Deck = decks.firstOrNull { it.id == wanted } ?: decks.first()
+
+/** What two Items must not share if they are to be told apart, besides their Polish. */
+internal enum class Alike { MEANING, PICTURE }
+
+/**
+ * [items] less any that would look or sound like one before it: the same Polish, or the same
+ * meaning or picture, whichever the Game shows ([by]), or with null neither.
+ */
+internal fun Learned.unalike(items: List<Item>, by: Alike?): List<Item> {
+    val words = items.distinctBy { audioKey(it.text) }
+    return when (by) {
+        Alike.PICTURE -> words.distinctBy { course.pictures[it.id] ?: it.id }
+        Alike.MEANING -> words.distinctBy { localize(it.meaning) }
+        null -> words
+    }
+}

@@ -60,6 +60,8 @@ import com.polisheasy.engine.FilePracticeProgress
 import com.polisheasy.engine.InMemoryLearnerProgress
 import com.polisheasy.engine.InMemoryPracticeProgress
 import com.polisheasy.engine.loadCourse
+import com.polisheasy.engine.ChainRound
+import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.VerbRound
@@ -596,6 +598,124 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `Phrase chains and Listen and tap over the real course in the light theme`() = chainsAndListening("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Phrase chains and Listen and tap over the real course in the dark theme`() = chainsAndListening("dark")
+
+    @Test
+    fun `Phrase chains and Listen and tap over the real course at the largest font size`() = atTheLargestFontSize { chainsAndListening("large") }
+
+    /**
+     * Phrase chains heard and read: before a Round, a chain new, part made with a slip, and whole,
+     * and the result. Listen and tap by picture and by meaning: a question new, answered right and
+     * answered wrong. Then Practice with sound off, where Listen and tap says why it is closed.
+     */
+    private fun chainsAndListening(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun chain() = (viewModel?.screen as Screen.Round).round as ChainRound
+
+        fun listening() = (viewModel?.screen as Screen.Round).round as ListenRound
+
+        fun order() = checkNotNull(chain().sentence).polish.split(" ").map { word -> word.trim(',', '.', '?', '!') }
+
+        fun tapCard(word: String) = screen.onAllNodes(hasText(word) and hasClickAction())[0].performScrollTo().performClick()
+
+        /** Answers with the option that is right, or with one that is not, and holds the answered question for its picture. */
+        fun answer(correctly: Boolean) {
+            val asked = checkNotNull(listening().question)
+            val option = asked.options.indices.first { (it == asked.answer) == correctly }
+            screen.waitForIdle()
+            screen.mainClock.autoAdvance = false
+            if (listening().pictures) {
+                screen.onNodeWithContentDescription(asked.options[option].meaning).performScrollTo().performClick()
+            } else {
+                screen.onNode(hasText(asked.options[option].meaning) and hasClickAction()).performScrollTo().performClick()
+            }
+            screen.mainClock.advanceTimeBy(500)
+        }
+
+        fun moveOn() {
+            screen.mainClock.autoAdvance = true
+            tap(R.string.action_continue)
+        }
+
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val progress = InMemoryLearnerProgress()
+        course.path.forEachIndexed { index, dailySet ->
+            progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
+        }
+        val engine = CourseEngine(course, progress, clock)
+        open(CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7))))
+        tap(R.string.nav_practice)
+
+        // Phrase chains, heard, on medium sentences.
+        openGame(R.string.game_phrase_chains)
+        tap(R.string.option_medium)
+        shot("72-chains-setup")
+        tap(R.string.setup_play)
+        shot("73-chains-heard")
+        order().take(2).forEach(::tapCard)
+        tapCard(checkNotNull(chain().sentence).cards.first { it !in order() })
+        shot("74-chains-slip")
+        screen.waitForIdle()
+        screen.mainClock.autoAdvance = false
+        order().drop(2).forEach(::tapCard)
+        screen.mainClock.advanceTimeBy(500)
+        shot("75-chains-whole")
+        screen.mainClock.autoAdvance = true
+        tap(R.string.action_continue)
+        while (viewModel?.screen is Screen.Round) {
+            order().forEach(::tapCard)
+            tap(R.string.action_continue)
+        }
+        shot("76-chains-result")
+
+        // Read, on long sentences.
+        tap(R.string.result_done)
+        openGame(R.string.game_phrase_chains)
+        tap(R.string.option_read)
+        tap(R.string.option_long)
+        tap(R.string.setup_play)
+        shot("77-chains-read")
+        order().take(3).forEach(::tapCard)
+        shot("78-chains-read-part")
+        screen.onNodeWithContentDescription(app.getString(R.string.round_close)).performClick()
+
+        // Listen and tap, by picture.
+        openGame(R.string.game_listen_and_tap)
+        shot("79-listen-setup")
+        tap(R.string.setup_play)
+        shot("80-listen-pictures")
+        answer(correctly = true)
+        shot("81-listen-pictures-right")
+        moveOn()
+        answer(correctly = false)
+        shot("82-listen-pictures-wrong")
+        moveOn()
+        screen.onNodeWithContentDescription(app.getString(R.string.round_close)).performClick()
+
+        // By meaning.
+        openGame(R.string.game_listen_and_tap)
+        tap(R.string.option_meaning)
+        tap(R.string.setup_play)
+        shot("83-listen-meanings")
+        answer(correctly = false)
+        shot("84-listen-meanings-wrong")
+        moveOn()
+        screen.onNodeWithContentDescription(app.getString(R.string.round_close)).performClick()
+
+        // With sound off, Listen and tap is closed and says why.
+        tap(R.string.nav_settings)
+        tap(R.string.settings_sound)
+        tap(R.string.nav_practice)
+        screen.onNodeWithText(app.getString(R.string.game_listen_and_tap)).performScrollTo()
+        shot("85-practice-sound-off")
+    }
+
+    @Test
     fun `Practice and a Round of the Verb challenge in the light theme`() = practiceTour("light")
 
     @Test
@@ -666,7 +786,7 @@ class ScreenshotsTest {
         tap(R.string.nav_practice)
         shot("41-practice-open")
 
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         shot("42-game-setup")
         tap(R.string.setup_play)
 
@@ -721,7 +841,7 @@ class ScreenshotsTest {
         shot("52-practice-played")
 
         // The same Game, typed: its own Best.
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         tap(R.string.option_type)
         shot("53-game-setup-type")
         tap(R.string.setup_play)
@@ -748,12 +868,17 @@ class ScreenshotsTest {
 
         // Picture cards: the pictures, and two cards turned to their words.
         screen.onNodeWithContentDescription(app.getString(R.string.round_close)).performClick()
-        tap(R.string.game_picture_cards)
+        openGame(R.string.game_picture_cards)
         shot("58-picture-cards")
         listOf("hello (polite); good morning", "no").forEach { screen.onNodeWithContentDescription(it).performClick() }
         shot("59-picture-cards-turned")
         tap(R.string.option_words)
         shot("59-picture-cards-words")
+    }
+
+    /** Taps a Game's card on the Practice screen, which may be below the fold at a large font size. */
+    private fun openGame(name: Int) {
+        screen.onNodeWithText(app.getString(name)).performScrollTo().performClick()
     }
 
     private fun open(over: CourseViewModel) {

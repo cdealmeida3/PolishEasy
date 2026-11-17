@@ -19,6 +19,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.graphicsLayer
@@ -284,4 +285,44 @@ private fun TileWords(text: String, polish: Boolean, color: Color) {
         textAlign = TextAlign.Center,
         modifier = Modifier.fillMaxWidth().padding(horizontal = Space.xs, vertical = Space.xs),
     )
+}
+
+/**
+ * A picture to choose as an answer, in the states an [OptionCard] has: the right one gets a tick,
+ * the one tapped wrongly a cross and one shake, and the others fade. [description] is what a
+ * screen reader says for the picture. With no [art] it shows the description in words.
+ */
+@Composable
+fun PictureOption(art: PictureArt?, description: String, state: OptionState, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    val look = when (state) {
+        OptionState.Right -> TileLook.Found
+        OptionState.Wrong -> TileLook.Missed
+        OptionState.Chosen -> TileLook.Brand
+        else -> TileLook.Plain
+    }
+    val (fill, edge) = look.colors()
+    Edged(
+        fill = fill,
+        edge = edge,
+        corner = Corner.large,
+        border = Edge.border,
+        enabled = state == OptionState.Idle || state == OptionState.Chosen,
+        onClick = onClick,
+        modifier = modifier
+            .heightIn(min = Size.pictureOption)
+            .shaking(state == OptionState.Wrong)
+            .alpha(if (state == OptionState.Faded) Motion.FADED_ALPHA else 1f)
+            .semantics { contentDescription = description },
+    ) {
+        if (art == null) {
+            TileWords(description, polish = false, color = look.content())
+        } else {
+            PictureFace(art, Modifier.fillMaxWidth().padding(Space.xs), glyphColor = look.content())
+        }
+        when (state) {
+            OptionState.Right -> MarkIcon(Mark.Right, Modifier.align(Alignment.TopEnd).padding(Space.xs))
+            OptionState.Wrong -> MarkIcon(Mark.Missed, Modifier.align(Alignment.TopEnd).padding(Space.xs))
+            else -> Unit
+        }
+    }
 }

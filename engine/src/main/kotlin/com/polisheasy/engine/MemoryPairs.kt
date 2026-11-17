@@ -104,7 +104,7 @@ internal object MemoryPairs : GameRules {
     override val game = Game.MEMORY_PAIRS
 
     override fun state(learned: Learned, sound: Boolean): GameState =
-        if (learned.distinct(learned.items, WORD_MEANING).size < SIZES.first()) GameState.NEEDS_MORE else GameState.READY
+        if (learned.unalike(learned.items, Alike.MEANING).size < SIZES.first()) GameState.NEEDS_MORE else GameState.READY
 
     /** The Items a kind of pair can be made of. */
     private fun usable(learned: Learned, kind: String): (Item) -> Boolean = when (kind) {
@@ -113,23 +113,17 @@ internal object MemoryPairs : GameRules {
         else -> { _ -> true }
     }
 
-    /**
-     * [items] less any whose tiles would look or sound like those of one before it: the same
-     * Polish, the same meaning, or the same picture. On a board, every tile has one partner.
-     */
-    private fun Learned.distinct(items: List<Item>, kind: String): List<Item> {
-        val words = items.distinctBy { audioKey(it.text) }
-        return when (kind) {
-            PICTURE_WORD -> words.distinctBy { course.pictures[it.id] }
-            SOUND_WORD -> words
-            else -> words.distinctBy { localize(it.meaning) }
-        }
+    /** What the pairs of a kind must not share: on a board, every tile has one partner. */
+    private fun alike(kind: String): Alike? = when (kind) {
+        PICTURE_WORD -> Alike.PICTURE
+        SOUND_WORD -> null
+        else -> Alike.MEANING
     }
 
     /** The decks a board of [kind] can be laid from, each with the Items that can share a board. */
     private fun decks(learned: Learned, kind: String): List<Deck> =
         learned.decks(SIZES.first(), usable(learned, kind))
-            .map { Deck(it.id, it.label, learned.distinct(it.items, kind)) }
+            .map { Deck(it.id, it.label, learned.unalike(it.items, alike(kind))) }
             .filter { it.items.size >= SIZES.first() }
 
     override fun choices(learned: Learned, wanted: List<String>, sound: Boolean): List<ChoiceView> {

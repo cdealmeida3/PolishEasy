@@ -46,6 +46,7 @@ import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.polisheasy.app.R
@@ -503,3 +504,61 @@ fun TileBank(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
         modifier = modifier.fillMaxWidth(),
     ) { content() }
 }
+
+/**
+ * The chain of Phrase chains: the [words] tapped so far, each a link joined to the one before it,
+ * on a soft field. Empty, it says [hint]. Once [complete] the links take the colour of a right
+ * answer and a tick ends the chain. [description] is what a screen reader calls it.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+fun PhraseChain(words: List<String>, complete: Boolean, hint: String, description: String, modifier: Modifier = Modifier) {
+    val scheme = MaterialTheme.colorScheme
+    val colors = PolishEasyTheme.colors
+    val fill = if (complete) colors.successContainer else scheme.secondaryContainer
+    val line = if (complete) colors.success else scheme.outline
+    val ink = if (complete) colors.onSuccessContainer else scheme.onSecondaryContainer
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = modifier
+            .fillMaxWidth()
+            .heightIn(min = ChainLeast)
+            .background(scheme.surfaceContainerHigh, MaterialTheme.shapes.large)
+            .padding(horizontal = Space.m, vertical = Space.m)
+            .semantics(mergeDescendants = true) {
+                contentDescription = description
+                liveRegion = LiveRegionMode.Polite
+            },
+    ) {
+        if (words.isEmpty()) {
+            Text(hint, style = MaterialTheme.typography.bodyLarge, color = scheme.onSurfaceVariant, textAlign = TextAlign.Center)
+        } else {
+            FlowRow(verticalArrangement = Arrangement.spacedBy(Space.xs), itemVerticalAlignment = Alignment.CenterVertically) {
+                words.forEachIndexed { index, word ->
+                    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.clearAndSetSemantics { }) {
+                        // The link to the word before.
+                        if (index > 0) Box(Modifier.width(Space.s).height(Edge.border).background(line))
+                        Text(
+                            word,
+                            style = MaterialTheme.typography.titleMedium.inPolish(),
+                            color = ink,
+                            modifier = Modifier
+                                .appearing()
+                                .background(fill, CircleShape)
+                                .border(Edge.border, line, CircleShape)
+                                .padding(horizontal = Space.s, vertical = Space.xs),
+                        )
+                    }
+                }
+                if (complete) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Spacer(Modifier.width(Space.xs))
+                        MarkIcon(Mark.Right)
+                    }
+                }
+            }
+        }
+    }
+}
+
+private val ChainLeast = 96.dp
