@@ -36,9 +36,10 @@ internal fun spoken(exercise: Exercise): List<String> = when (exercise) {
     is ListenType -> exercise.acceptedAnswers.take(1)
 }
 
-/** Every Polish text the course can speak, once each, in Path order. Each needs a Clip. */
+/** Every Polish text the course can speak, once each, in Path order, then the instructions. Each needs a Clip. */
 fun Course.spokenTexts(): List<String> =
-    path.flatMap { it.exercises }.flatMap(::spoken).distinctBy(::audioKey)
+    (path.flatMap { it.exercises }.flatMap(::spoken) + InstructionKind.entries.mapNotNull { instructions[it]?.polish })
+        .distinctBy(::audioKey)
 
 /**
  * What the command that makes the Clips needs of the content: [texts] is every Polish text the

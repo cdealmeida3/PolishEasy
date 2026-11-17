@@ -1,0 +1,351 @@
+{
+  "id": "kpk1-l00-a",
+  "section": {
+    "heading": "Polecenia",
+    "meaning": {
+      "en": "Instructions"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l00-a-t01",
+      "before": "kpk1-l00-a-e01",
+      "title": {
+        "en": "Instructions in Polish"
+      },
+      "body": {
+        "en": "The book gives every instruction in Polish: *proszę* and a verb, as in *proszę posłuchać*, \"listen, please\". The verb keeps this form whoever you speak to. From now on every Exercise shows its instruction in Polish; tap the globe for the English."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-a-e01",
+      "prompt": "posłuchać",
+      "options": [
+        {
+          "en": "repeat"
+        },
+        {
+          "en": "read"
+        },
+        {
+          "en": "listen (proszę posłuchać: listen, please)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "posluchac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-a-e02",
+      "prompt": "powtórzyć",
+      "options": [
+        {
+          "en": "write"
+        },
+        {
+          "en": "listen (proszę posłuchać: listen, please)"
+        },
+        {
+          "en": "repeat"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "powtorzyc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-a-e03",
+      "prompt": {
+        "en": "listen and repeat, please"
+      },
+      "acceptedAnswers": [
+        "proszę posłuchać i powtórzyć"
+      ],
+      "distractors": [
+        "napisać",
+        "tak"
+      ],
+      "items": [
+        "prosze",
+        "posluchac",
+        "i",
+        "powtorzyc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-a-e04",
+      "prompt": "przeczytać",
+      "options": [
+        {
+          "en": "write"
+        },
+        {
+          "en": "repeat"
+        },
+        {
+          "en": "read"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przeczytac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-a-e05",
+      "text": "przeczytać",
+      "meaning": {
+        "en": "read"
+      },
+      "distractors": [
+        "napisać",
+        "powtórzyć"
+      ],
+      "items": [
+        "przeczytac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-a-e06",
+      "prompt": "napisać",
+      "options": [
+        {
+          "en": "write"
+        },
+        {
+          "en": "read"
+        },
+        {
+          "en": "fill in; complete"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "napisac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l00-a-e07",
+      "prompt": {
+        "en": "write, please (an instruction)"
+      },
+      "acceptedAnswers": [
+        "proszę napisać"
+      ],
+      "items": [
+        "prosze",
+        "napisac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-a-e08",
+      "prompt": "uzupełnić",
+      "options": [
+        {
+          "en": "spell (letter by letter)"
+        },
+        {
+          "en": "fill in; complete"
+        },
+        {
+          "en": "write"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "uzupelnic"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-a-e09",
+      "prompt": {
+        "en": "read and fill in, please"
+      },
+      "acceptedAnswers": [
+        "proszę przeczytać i uzupełnić"
+      ],
+      "distractors": [
+        "napisać",
+        "nie"
+      ],
+      "items": [
+        "prosze",
+        "przeczytac",
+        "i",
+        "uzupelnic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-a-e10",
+      "prompt": "przeliterować",
+      "options": [
+        {
+          "en": "spell (letter by letter)"
+        },
+        {
+          "en": "translate"
+        },
+        {
+          "en": "fill in; complete"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przeliterowac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-a-e11",
+      "text": "proszę przeliterować",
+      "meaning": {
+        "en": "spell it, please (an instruction)"
+      },
+      "distractors": [
+        "proszę przetłumaczyć",
+        "proszę przeczytać"
+      ],
+      "items": [
+        "prosze",
+        "przeliterowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-a-e12",
+      "prompt": "przetłumaczyć",
+      "options": [
+        {
+          "en": "translate"
+        },
+        {
+          "en": "spell (letter by letter)"
+        },
+        {
+          "en": "choose"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przetlumaczyc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l00-a-e13",
+      "prompt": {
+        "en": "translate, please (an instruction)"
+      },
+      "acceptedAnswers": [
+        "proszę przetłumaczyć"
+      ],
+      "items": [
+        "prosze",
+        "przetlumaczyc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-a-e14",
+      "prompt": "wybrać",
+      "options": [
+        {
+          "en": "choose"
+        },
+        {
+          "en": "write"
+        },
+        {
+          "en": "translate"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wybrac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-a-e15",
+      "prompt": {
+        "en": "listen and choose, please"
+      },
+      "acceptedAnswers": [
+        "proszę posłuchać i wybrać"
+      ],
+      "distractors": [
+        "napisać",
+        "nie"
+      ],
+      "items": [
+        "prosze",
+        "posluchac",
+        "i",
+        "wybrac"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l00-a-e16",
+      "acceptedAnswers": [
+        "proszę posłuchać i napisać"
+      ],
+      "meaning": {
+        "en": "listen and write, please (an instruction)"
+      },
+      "items": [
+        "prosze",
+        "posluchac",
+        "i",
+        "napisac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-a-e17",
+      "text": "powtórzyć",
+      "meaning": {
+        "en": "repeat"
+      },
+      "distractors": [
+        "przeczytać",
+        "uzupełnić"
+      ],
+      "items": [
+        "powtorzyc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-a-e18",
+      "text": "uzupełnić",
+      "meaning": {
+        "en": "fill in; complete"
+      },
+      "distractors": [
+        "powtórzyć",
+        "przeliterować"
+      ],
+      "items": [
+        "uzupelnic"
+      ]
+    }
+  ]
+}

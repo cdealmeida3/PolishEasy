@@ -1,0 +1,357 @@
+{
+  "id": "kpk1-l00-c",
+  "section": {
+    "heading": "W szkole",
+    "meaning": {
+      "en": "At school"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l00-c-t01",
+      "before": "kpk1-l00-c-e01",
+      "title": {
+        "en": "Men and women"
+      },
+      "body": {
+        "en": "Many words for people have a form for a man and one for a woman, often with *-ka*: *nauczyciel*, *nauczycielka*; *student*, *studentka*; *kolega*, *koleżanka*. *To jest* fits them all: *to jest nauczyciel*, *to jest studentka*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-c-e01",
+      "prompt": "nauczyciel",
+      "options": [
+        {
+          "en": "a student (a man)"
+        },
+        {
+          "en": "a boy; a boyfriend"
+        },
+        {
+          "en": "a teacher (a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nauczyciel"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-c-e02",
+      "prompt": {
+        "en": "this is a teacher (a man)"
+      },
+      "acceptedAnswers": [
+        "to jest nauczyciel",
+        "to nauczyciel"
+      ],
+      "distractors": [
+        "ona",
+        "nie"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "nauczyciel"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-c-e03",
+      "prompt": "nauczycielka",
+      "options": [
+        {
+          "en": "a student (a woman)"
+        },
+        {
+          "en": "a girl; a girlfriend"
+        },
+        {
+          "en": "a teacher (a woman)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nauczycielka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-c-e04",
+      "text": "nauczycielka",
+      "meaning": {
+        "en": "a teacher (a woman)"
+      },
+      "distractors": [
+        "nauczyciel",
+        "koleżanka"
+      ],
+      "items": [
+        "nauczycielka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-c-e05",
+      "prompt": "student",
+      "options": [
+        {
+          "en": "a teacher (a man)"
+        },
+        {
+          "en": "a student (a man)"
+        },
+        {
+          "en": "a classmate; a friend (a man)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "student"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l00-c-e06",
+      "prompt": {
+        "en": "this is a student (a man)"
+      },
+      "acceptedAnswers": [
+        "to jest student",
+        "to student"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "student"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-c-e07",
+      "prompt": "studentka",
+      "options": [
+        {
+          "en": "a teacher (a woman)"
+        },
+        {
+          "en": "a student (a woman)"
+        },
+        {
+          "en": "a classmate; a friend (a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "studentka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-c-e08",
+      "prompt": {
+        "en": "this is a student (a woman)"
+      },
+      "acceptedAnswers": [
+        "to jest studentka",
+        "to studentka"
+      ],
+      "distractors": [
+        "on",
+        "tak"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "studentka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-c-e09",
+      "prompt": "kolega",
+      "options": [
+        {
+          "en": "a classmate; a friend (a man)"
+        },
+        {
+          "en": "a boy; a boyfriend"
+        },
+        {
+          "en": "a teacher (a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kolega"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-c-e10",
+      "text": "kolega",
+      "meaning": {
+        "en": "a classmate; a friend (a man)"
+      },
+      "distractors": [
+        "koleżanka",
+        "lekcja"
+      ],
+      "items": [
+        "kolega"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-c-e11",
+      "prompt": "koleżanka",
+      "options": [
+        {
+          "en": "a classmate; a friend (a woman)"
+        },
+        {
+          "en": "a girl; a girlfriend"
+        },
+        {
+          "en": "a student (a woman)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kolezanka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l00-c-e12",
+      "prompt": {
+        "en": "a classmate (a woman)"
+      },
+      "acceptedAnswers": [
+        "koleżanka"
+      ],
+      "items": [
+        "kolezanka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-c-e13",
+      "prompt": "chłopak",
+      "options": [
+        {
+          "en": "a boy; a boyfriend"
+        },
+        {
+          "en": "a classmate; a friend (a man)"
+        },
+        {
+          "en": "a student (a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chlopak"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-c-e14",
+      "prompt": "dziewczyna",
+      "options": [
+        {
+          "en": "a teacher (a woman)"
+        },
+        {
+          "en": "a girl; a girlfriend"
+        },
+        {
+          "en": "a classmate; a friend (a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dziewczyna"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-c-e15",
+      "prompt": {
+        "en": "a boy and a girl"
+      },
+      "acceptedAnswers": [
+        "chłopak i dziewczyna"
+      ],
+      "distractors": [
+        "pan",
+        "nie"
+      ],
+      "items": [
+        "chlopak",
+        "i",
+        "dziewczyna"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l00-c-e16",
+      "acceptedAnswers": [
+        "to jest dziewczyna"
+      ],
+      "meaning": {
+        "en": "this is a girl"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "dziewczyna"
+      ],
+      "readingAnswers": [
+        "to dziewczyna"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-c-e17",
+      "text": "chłopak",
+      "meaning": {
+        "en": "a boy; a boyfriend"
+      },
+      "distractors": [
+        "kolega",
+        "pan"
+      ],
+      "items": [
+        "chlopak"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-c-e18",
+      "prompt": {
+        "en": "a teacher (a man) and a teacher (a woman)"
+      },
+      "acceptedAnswers": [
+        "nauczyciel i nauczycielka",
+        "nauczycielka i nauczyciel"
+      ],
+      "distractors": [
+        "student",
+        "tak"
+      ],
+      "items": [
+        "nauczyciel",
+        "i",
+        "nauczycielka"
+      ]
+    }
+  ]
+}

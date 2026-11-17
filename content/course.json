@@ -1,27 +1,733 @@
 {
-  "items": ["a1/unit-01/items.json", "a1/unit-02/items.json", "a1/unit-03/items.json"],
+  "items": [
+    "a1/unit-01/items.json",
+    "a1/unit-02/items.json",
+    "a1/unit-03/items.json",
+    "kpk1/lesson-00/items.json"
+  ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
   "practice": "practice/practice.json",
+  "instructions": "kpk1/instructions.json",
   "levels": [
     {
       "id": "a1",
-      "title": { "en": "A1" },
+      "title": {
+        "en": "Starter"
+      },
       "units": [
         {
           "id": "a1-u01",
-          "title": { "en": "Sounds and greetings" },
-          "dailySets": ["a1/unit-01/day-01.json", "a1/unit-01/day-02.json", "a1/unit-01/day-03.json", "a1/unit-01/day-04.json", "a1/unit-01/day-05.json", "a1/unit-01/day-06.json", "a1/unit-01/day-07.json"]
+          "title": {
+            "en": "Sounds and greetings"
+          },
+          "dailySets": [
+            "a1/unit-01/day-01.json",
+            "a1/unit-01/day-02.json",
+            "a1/unit-01/day-03.json",
+            "a1/unit-01/day-04.json",
+            "a1/unit-01/day-05.json",
+            "a1/unit-01/day-06.json",
+            "a1/unit-01/day-07.json"
+          ]
         },
         {
           "id": "a1-u02",
-          "title": { "en": "About me" },
-          "dailySets": ["a1/unit-02/day-01.json", "a1/unit-02/day-02.json", "a1/unit-02/day-03.json", "a1/unit-02/day-04.json", "a1/unit-02/day-05.json", "a1/unit-02/day-06.json", "a1/unit-02/day-07.json", "a1/unit-02/day-08.json"]
+          "title": {
+            "en": "About me"
+          },
+          "dailySets": [
+            "a1/unit-02/day-01.json",
+            "a1/unit-02/day-02.json",
+            "a1/unit-02/day-03.json",
+            "a1/unit-02/day-04.json",
+            "a1/unit-02/day-05.json",
+            "a1/unit-02/day-06.json",
+            "a1/unit-02/day-07.json",
+            "a1/unit-02/day-08.json"
+          ]
         },
         {
           "id": "a1-u03",
-          "title": { "en": "Numbers and family" },
-          "dailySets": ["a1/unit-03/day-01.json", "a1/unit-03/day-02.json", "a1/unit-03/day-03.json", "a1/unit-03/day-04.json", "a1/unit-03/day-05.json", "a1/unit-03/day-06.json", "a1/unit-03/day-07.json", "a1/unit-03/day-08.json"]
+          "title": {
+            "en": "Numbers and family"
+          },
+          "dailySets": [
+            "a1/unit-03/day-01.json",
+            "a1/unit-03/day-02.json",
+            "a1/unit-03/day-03.json",
+            "a1/unit-03/day-04.json",
+            "a1/unit-03/day-05.json",
+            "a1/unit-03/day-06.json",
+            "a1/unit-03/day-07.json",
+            "a1/unit-03/day-08.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kpk1",
+      "title": {
+        "en": "Polski krok po kroku 1"
+      },
+      "units": [
+        {
+          "id": "kpk1-l00",
+          "number": 0,
+          "polishTitle": "Dzień dobry!",
+          "title": {
+            "en": "Hello!"
+          },
+          "accent": 0,
+          "strands": {
+            "L": [
+              "podstawowe słowa i zwroty",
+              "polecenia"
+            ]
+          },
+          "dailySets": [
+            "kpk1/lesson-00/section-a.json",
+            "kpk1/lesson-00/section-b.json",
+            "kpk1/lesson-00/section-c.json",
+            "kpk1/lesson-00/section-d.json"
+          ],
+          "lookUp": [
+            "posluchac",
+            "przeczytac",
+            "lekcja",
+            "nauczyciel"
+          ]
+        },
+        {
+          "id": "kpk1-l01",
+          "number": 1,
+          "polishTitle": "Pierwszy dzień w szkole",
+          "title": {
+            "en": "The first day at school"
+          },
+          "accent": 0,
+          "strands": {
+            "K": [
+              "powitania, pożegnania",
+              "przedstawianie się"
+            ],
+            "L": [
+              "podstawowe zwroty",
+              "polecenia"
+            ],
+            "G": [
+              "alfabet",
+              "liczebniki 0–10"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l02",
+          "number": 2,
+          "polishTitle": "Cześć, skąd jesteś?",
+          "title": {
+            "en": "Hi, where are you from?"
+          },
+          "accent": 1,
+          "strands": {
+            "K": [
+              "Co słychać?",
+              "Skąd jesteś?",
+              "Gdzie mieszkasz?"
+            ],
+            "L": [
+              "dane osobowe"
+            ],
+            "G": [
+              "zaimki osobowe",
+              "koniugacja -m, -sz",
+              "czasownik być",
+              "liczebniki 11–29"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l03",
+          "number": 3,
+          "polishTitle": "Mami, kto to jest?",
+          "title": {
+            "en": "Mami, who is this?"
+          },
+          "accent": 2,
+          "strands": {
+            "K": [
+              "Kto to jest? Co to jest?",
+              "Czy to jest…?"
+            ],
+            "L": [
+              "rzeczy w klasie",
+              "kolory",
+              "podstawowe przymiotniki"
+            ],
+            "G": [
+              "ten, ta, to",
+              "mianownik l.poj. rzeczowników i przymiotników"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l04",
+          "number": 4,
+          "polishTitle": "Jaki jesteś?",
+          "title": {
+            "en": "What are you like?"
+          },
+          "accent": 3,
+          "strands": {
+            "K": [
+              "prezentacja ludzi",
+              "wyrażanie opinii"
+            ],
+            "L": [
+              "opis osoby",
+              "przymiotniki"
+            ],
+            "G": [
+              "koniugacja -ę, -isz/-ysz"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l05",
+          "number": 5,
+          "polishTitle": "Jesteś instruktorem tanga?",
+          "title": {
+            "en": "Are you a tango instructor?"
+          },
+          "accent": 4,
+          "strands": {
+            "K": [
+              "Kim jesteś?",
+              "Czym się interesujesz?",
+              "Ile masz lat?"
+            ],
+            "L": [
+              "zawody",
+              "narodowości",
+              "zainteresowania"
+            ],
+            "G": [
+              "narzędnik l.poj.",
+              "liczebniki 20–100",
+              "formy rok, lat, lata"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l06",
+          "number": 6,
+          "polishTitle": "Co robisz? Nudzę się!",
+          "title": {
+            "en": "What are you doing? I'm bored!"
+          },
+          "accent": 5,
+          "strands": {
+            "K": [
+              "Co lubisz robić?",
+              "wyrażanie posiadania"
+            ],
+            "L": [
+              "czas wolny",
+              "hobby",
+              "sport"
+            ],
+            "G": [
+              "koniugacje -m, -sz; -ę, -esz; -ę, -isz/-ysz",
+              "zaimki mój, twój",
+              "czasowniki modalne móc, chcieć, musieć"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l07",
+          "number": 7,
+          "polishTitle": "Małe zakupy",
+          "title": {
+            "en": "A little shopping"
+          },
+          "accent": 6,
+          "strands": {
+            "K": [
+              "Ile kosztuje?",
+              "zakupy"
+            ],
+            "L": [
+              "kiosk",
+              "galeria handlowa"
+            ],
+            "G": [
+              "biernik l.poj. rzeczowników i przymiotników",
+              "liczebniki 100–1000"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l08",
+          "number": 8,
+          "polishTitle": "Mami, jesteś głodna?",
+          "title": {
+            "en": "Mami, are you hungry?"
+          },
+          "accent": 7,
+          "strands": {
+            "K": [
+              "Co lubisz jeść?",
+              "Z czym jesz kanapkę?",
+              "wyrażanie preferencji"
+            ],
+            "L": [
+              "posiłki",
+              "jedzenie"
+            ],
+            "G": [
+              "narzędnik l.mn.",
+              "czasowniki jeść, pić, woleć",
+              "przymiotniki odrzeczownikowe"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l09",
+          "number": 9,
+          "polishTitle": "Lubisz marchewkę?",
+          "title": {
+            "en": "Do you like carrots?"
+          },
+          "accent": 0,
+          "strands": {
+            "K": [
+              "zakupy"
+            ],
+            "L": [
+              "owoce",
+              "warzywa",
+              "supermarket"
+            ],
+            "G": [
+              "mianownik i biernik l.mn. rzeczowników niemęskoosobowych"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l10",
+          "number": 10,
+          "polishTitle": "Uwielbiam polskie jedzenie!",
+          "title": {
+            "en": "I love Polish food!"
+          },
+          "accent": 1,
+          "strands": {
+            "K": [
+              "kawiarnia",
+              "restauracja"
+            ],
+            "L": [
+              "potrawy",
+              "polskie dania",
+              "desery"
+            ],
+            "G": [
+              "dopełniacz l.poj. – negacja",
+              "zaimki osobowe w narzędniku"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l11",
+          "number": 11,
+          "polishTitle": "Rodzina",
+          "title": {
+            "en": "Family"
+          },
+          "accent": 2,
+          "strands": {
+            "K": [
+              "Czyj? Czyja? Czyje?",
+              "Jak często?",
+              "Kiedy?"
+            ],
+            "L": [
+              "rodzina",
+              "pory dnia",
+              "zawsze, zwykle…",
+              "plan dnia"
+            ],
+            "G": [
+              "zaimki dzierżawcze",
+              "przysłówki częstotliwości"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l12",
+          "number": 12,
+          "polishTitle": "Co robisz w poniedziałek o ósmej?",
+          "title": {
+            "en": "What are you doing on Monday at eight?"
+          },
+          "accent": 3,
+          "strands": {
+            "K": [
+              "umawianie się na spotkanie",
+              "zapraszanie"
+            ],
+            "L": [
+              "godziny",
+              "dni tygodnia",
+              "rutyna dnia"
+            ],
+            "G": [
+              "liczebniki porządkowe 1–24",
+              "zebranie czasowników"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l13",
+          "number": 13,
+          "polishTitle": "Gdzie byłaś, Mami? Byłam w kinie",
+          "title": {
+            "en": "Where were you, Mami? I was at the cinema"
+          },
+          "accent": 4,
+          "strands": {
+            "K": [
+              "Co robiłeś? Co robiłaś?"
+            ],
+            "L": [
+              "spędzanie wolnego czasu"
+            ],
+            "G": [
+              "czas przeszły",
+              "czasowniki jeść, pójść oraz zakończone na -eć"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l14",
+          "number": 14,
+          "polishTitle": "Z przewodnikiem po Krakowie",
+          "title": {
+            "en": "Around Kraków with a guide"
+          },
+          "accent": 5,
+          "strands": {
+            "K": [
+              "pytanie o drogę"
+            ],
+            "L": [
+              "obiekty w mieście",
+              "transport"
+            ],
+            "G": [
+              "czasowniki iść/chodzić, jechać/jeździć",
+              "zaimki osobowe w bierniku"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l15",
+          "number": 15,
+          "polishTitle": "Karton czy pudełko?",
+          "title": {
+            "en": "A carton or a box?"
+          },
+          "accent": 6,
+          "strands": {
+            "K": [
+              "zakupy",
+              "wyrażanie prośby"
+            ],
+            "L": [
+              "ilości i miary",
+              "opakowania",
+              "poczta"
+            ],
+            "G": [
+              "dopełniacz l.mn. rzeczowników i przymiotników",
+              "zaimki osobowe w dopełniaczu",
+              "rekcja liczebników"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l16",
+          "number": 16,
+          "polishTitle": "Co ma być, to będzie",
+          "title": {
+            "en": "What will be, will be"
+          },
+          "accent": 7,
+          "strands": {
+            "K": [
+              "plany na przyszłość"
+            ],
+            "L": [
+              "pogoda",
+              "pory roku",
+              "miesiące",
+              "andrzejki"
+            ],
+            "G": [
+              "przysłówek",
+              "czas przyszły złożony",
+              "czasowniki modalne w czasie przyszłym"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l17",
+          "number": 17,
+          "polishTitle": "Plotki, plotki. Kto z kim i o czym?",
+          "title": {
+            "en": "Gossip. Who with whom, and about what?"
+          },
+          "accent": 0,
+          "strands": {
+            "K": [
+              "Podoba ci się?",
+              "wyrażanie uczuć i opinii"
+            ],
+            "L": [
+              "samopoczucie",
+              "pamiątki z Polski"
+            ],
+            "G": [
+              "lubić, podobać się",
+              "deklinacja zaimków osobowych"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l18",
+          "number": 18,
+          "polishTitle": "Pokaż mi swoje mieszkanie…",
+          "title": {
+            "en": "Show me your flat…"
+          },
+          "accent": 1,
+          "strands": {
+            "K": [
+              "Gdzie to jest?",
+              "opis mieszkania",
+              "O czym marzysz?"
+            ],
+            "L": [
+              "mieszkanie",
+              "pomieszczenia i sprzęty",
+              "lokalizacja przedmiotów"
+            ],
+            "G": [
+              "miejscownik l.poj. i l.mn.",
+              "przyimki na, w, przy, o, po"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l19",
+          "number": 19,
+          "polishTitle": "Wszędzie dobrze, ale w domu najlepiej",
+          "title": {
+            "en": "East or west, home is best"
+          },
+          "accent": 2,
+          "strands": {
+            "K": [
+              "szukanie i wynajmowanie mieszkania"
+            ],
+            "L": [
+              "typy mieszkań",
+              "ogłoszenia",
+              "lokalizacja"
+            ],
+            "G": [
+              "przyimki statyczne"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l20",
+          "number": 20,
+          "polishTitle": "Podróże kształcą",
+          "title": {
+            "en": "Travel broadens the mind"
+          },
+          "accent": 3,
+          "strands": {
+            "K": [
+              "dworzec PKP"
+            ],
+            "L": [
+              "kierunki geograficzne",
+              "atrakcje turystyczne w Polsce"
+            ],
+            "G": [
+              "przyimki statyczne i dynamiczne"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l21",
+          "number": 21,
+          "polishTitle": "Kiedy to było?",
+          "title": {
+            "en": "When was that?"
+          },
+          "accent": 4,
+          "strands": {
+            "K": [
+              "Kiedy? W którym roku?",
+              "życzenia"
+            ],
+            "L": [
+              "pary aspektowe",
+              "biografia"
+            ],
+            "G": [
+              "aspekt w czasie przeszłym",
+              "daty"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l22",
+          "number": 22,
+          "polishTitle": "Dokąd pojedziemy na weekend?",
+          "title": {
+            "en": "Where shall we go for the weekend?"
+          },
+          "accent": 5,
+          "strands": {
+            "K": [
+              "Co robisz w weekend?",
+              "telefonowanie"
+            ],
+            "L": [
+              "plany na weekend"
+            ],
+            "G": [
+              "aspekt w czasie przyszłym"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l23",
+          "number": 23,
+          "polishTitle": "Za małe? Za duże? W sam raz!",
+          "title": {
+            "en": "Too small? Too big? Just right!"
+          },
+          "accent": 6,
+          "strands": {
+            "K": [
+              "zakupy",
+              "komplementy"
+            ],
+            "L": [
+              "ubrania",
+              "materiały i wzory"
+            ],
+            "G": [
+              "stopniowanie przymiotników",
+              "konstrukcje mieć na sobie, nosić + biernik"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l24",
+          "number": 24,
+          "polishTitle": "Jak cię widzą, tak cię piszą",
+          "title": {
+            "en": "Clothes make the man"
+          },
+          "accent": 7,
+          "strands": {
+            "K": [
+              "u fryzjera, w studio fitness",
+              "wyrażanie aprobaty i dezaprobaty"
+            ],
+            "L": [
+              "wygląd zewnętrzny",
+              "części ciała"
+            ],
+            "G": [
+              "stopniowanie przysłówków"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l25",
+          "number": 25,
+          "polishTitle": "Ani ręką, ani nogą…",
+          "title": {
+            "en": "Neither hand nor foot…"
+          },
+          "accent": 0,
+          "strands": {
+            "K": [
+              "u lekarza, u dentysty",
+              "dawanie rad"
+            ],
+            "L": [
+              "idiomy związane z częściami ciała"
+            ],
+            "G": [
+              "czasownik powinien"
+            ]
+          },
+          "coming": true
+        },
+        {
+          "id": "kpk1-l26",
+          "number": 26,
+          "polishTitle": "Same problemy!",
+          "title": {
+            "en": "Nothing but problems!"
+          },
+          "accent": 1,
+          "strands": {
+            "K": [
+              "wymiana informacji",
+              "prośby, reklamacje"
+            ],
+            "L": [
+              "usługi",
+              "wypadek, kradzież"
+            ],
+            "G": [
+              "tryb przypuszczający czasowników móc, chcieć"
+            ]
+          },
+          "coming": true
         }
       ]
     }

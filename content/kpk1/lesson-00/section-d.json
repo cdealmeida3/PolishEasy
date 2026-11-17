@@ -1,0 +1,351 @@
+{
+  "id": "kpk1-l00-d",
+  "section": {
+    "heading": "Proszę, dziękuję, przepraszam",
+    "meaning": {
+      "en": "Please, thank you, sorry"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l00-d-t01",
+      "before": "kpk1-l00-d-e01",
+      "title": {
+        "en": "Your name, please"
+      },
+      "body": {
+        "en": "A form at school asks for your *imię*, your *nazwisko* and your *narodowość*. *Proszę* asks politely, *dziękuję* thanks, and *przepraszam* says sorry or gets someone's attention, as in English \"excuse me\"."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-d-e01",
+      "prompt": "proszę",
+      "options": [
+        {
+          "en": "please; here you are"
+        },
+        {
+          "en": "thank you"
+        },
+        {
+          "en": "sorry; excuse me"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "prosze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-d-e02",
+      "prompt": "dziękuję",
+      "options": [
+        {
+          "en": "please; here you are"
+        },
+        {
+          "en": "thank you"
+        },
+        {
+          "en": "sorry; excuse me"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dziekuje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-d-e03",
+      "prompt": "przepraszam",
+      "options": [
+        {
+          "en": "sorry; excuse me"
+        },
+        {
+          "en": "thank you"
+        },
+        {
+          "en": "please; here you are"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przepraszam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-d-e04",
+      "text": "dziękuję",
+      "meaning": {
+        "en": "thank you"
+      },
+      "distractors": [
+        "przepraszam",
+        "proszę"
+      ],
+      "items": [
+        "dziekuje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-d-e05",
+      "prompt": "imię",
+      "options": [
+        {
+          "en": "a first name"
+        },
+        {
+          "en": "a surname"
+        },
+        {
+          "en": "a nationality"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "imie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-d-e06",
+      "prompt": "nazwisko",
+      "options": [
+        {
+          "en": "a first name"
+        },
+        {
+          "en": "a surname"
+        },
+        {
+          "en": "a nationality"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nazwisko"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l00-d-e07",
+      "prompt": {
+        "en": "first name and surname"
+      },
+      "acceptedAnswers": [
+        "imię i nazwisko"
+      ],
+      "items": [
+        "imie",
+        "i",
+        "nazwisko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-d-e08",
+      "prompt": "narodowość",
+      "options": [
+        {
+          "en": "a surname"
+        },
+        {
+          "en": "a nationality"
+        },
+        {
+          "en": "a first name"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "narodowosc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-d-e09",
+      "text": "narodowość",
+      "meaning": {
+        "en": "a nationality"
+      },
+      "distractors": [
+        "nazwisko",
+        "przykład"
+      ],
+      "items": [
+        "narodowosc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-d-e10",
+      "prompt": {
+        "en": "spell the surname, please"
+      },
+      "acceptedAnswers": [
+        "proszę przeliterować nazwisko"
+      ],
+      "distractors": [
+        "imię",
+        "tak"
+      ],
+      "items": [
+        "prosze",
+        "przeliterowac",
+        "nazwisko"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l00-d-e11",
+      "acceptedAnswers": [
+        "imię, nazwisko, narodowość"
+      ],
+      "meaning": {
+        "en": "first name, surname, nationality"
+      },
+      "items": [
+        "imie",
+        "nazwisko",
+        "narodowosc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-d-e12",
+      "prompt": {
+        "en": "a student (a man) and a student (a woman)"
+      },
+      "acceptedAnswers": [
+        "student i studentka",
+        "studentka i student"
+      ],
+      "distractors": [
+        "nie",
+        "tak"
+      ],
+      "items": [
+        "student",
+        "i",
+        "studentka"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l00-d-e13",
+      "acceptedAnswers": [
+        "proszę wybrać przykład"
+      ],
+      "meaning": {
+        "en": "choose an example, please"
+      },
+      "items": [
+        "prosze",
+        "wybrac",
+        "przyklad"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l00-d-e14",
+      "prompt": {
+        "en": "lesson number one"
+      },
+      "acceptedAnswers": [
+        "lekcja numer jeden",
+        "lekcja jeden"
+      ],
+      "items": [
+        "lekcja",
+        "numer",
+        "jeden"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-d-e15",
+      "prompt": {
+        "en": "complete the exercise, please"
+      },
+      "acceptedAnswers": [
+        "proszę uzupełnić ćwiczenie"
+      ],
+      "distractors": [
+        "strona",
+        "nie"
+      ],
+      "items": [
+        "prosze",
+        "uzupelnic",
+        "cwiczenie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-d-e16",
+      "text": "polecenie",
+      "meaning": {
+        "en": "an instruction (in a book)"
+      },
+      "distractors": [
+        "ćwiczenie",
+        "przykład"
+      ],
+      "items": [
+        "polecenie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-d-e17",
+      "prompt": {
+        "en": "this is page ten"
+      },
+      "acceptedAnswers": [
+        "to jest strona dziesięć",
+        "to strona dziesięć"
+      ],
+      "distractors": [
+        "lekcja",
+        "nie"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "strona",
+        "dziesiec"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-d-e18",
+      "prompt": {
+        "en": "a classmate (a man) and a classmate (a woman)"
+      },
+      "acceptedAnswers": [
+        "kolega i koleżanka",
+        "koleżanka i kolega"
+      ],
+      "distractors": [
+        "pan",
+        "nie"
+      ],
+      "items": [
+        "kolega",
+        "i",
+        "kolezanka"
+      ]
+    }
+  ]
+}

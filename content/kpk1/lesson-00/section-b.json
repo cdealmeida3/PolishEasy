@@ -1,0 +1,353 @@
+{
+  "id": "kpk1-l00-b",
+  "section": {
+    "heading": "W klasie",
+    "meaning": {
+      "en": "In the classroom"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l00-b-t01",
+      "before": "kpk1-l00-b-e01",
+      "title": {
+        "en": "Words of the classroom"
+      },
+      "body": {
+        "en": "A Polish noun has a gender, and its ending usually shows it. *Tekst* and *dialog* end in a consonant: masculine. *Lekcja* and *strona* end in *-a*: feminine. *Ćwiczenie* and *polecenie* end in *-e*: neuter. You will need the gender soon, so learn each word with it."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-b-e01",
+      "prompt": "lekcja",
+      "options": [
+        {
+          "en": "a lesson"
+        },
+        {
+          "en": "a page"
+        },
+        {
+          "en": "a test"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lekcja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-b-e02",
+      "prompt": "dialog",
+      "options": [
+        {
+          "en": "a dialogue"
+        },
+        {
+          "en": "a text"
+        },
+        {
+          "en": "an example"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dialog"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-b-e03",
+      "prompt": {
+        "en": "this is a lesson"
+      },
+      "acceptedAnswers": [
+        "to jest lekcja",
+        "to lekcja"
+      ],
+      "distractors": [
+        "dialog",
+        "nie"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "lekcja"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-b-e04",
+      "text": "dialog",
+      "meaning": {
+        "en": "a dialogue"
+      },
+      "distractors": [
+        "lekcja",
+        "numer"
+      ],
+      "items": [
+        "dialog"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-b-e05",
+      "prompt": "tekst",
+      "options": [
+        {
+          "en": "a text"
+        },
+        {
+          "en": "a lesson"
+        },
+        {
+          "en": "a dialogue"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tekst"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-b-e06",
+      "prompt": "test",
+      "options": [
+        {
+          "en": "a page"
+        },
+        {
+          "en": "a test"
+        },
+        {
+          "en": "an exercise"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "test"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-b-e07",
+      "text": "test",
+      "meaning": {
+        "en": "a test"
+      },
+      "distractors": [
+        "dialog",
+        "lekcja"
+      ],
+      "items": [
+        "test"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-b-e08",
+      "prompt": "ćwiczenie",
+      "options": [
+        {
+          "en": "an example"
+        },
+        {
+          "en": "an exercise"
+        },
+        {
+          "en": "a page"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "cwiczenie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l00-b-e09",
+      "prompt": {
+        "en": "exercise number two"
+      },
+      "acceptedAnswers": [
+        "ćwiczenie numer dwa",
+        "ćwiczenie dwa"
+      ],
+      "items": [
+        "cwiczenie",
+        "numer",
+        "dwa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-b-e10",
+      "prompt": "polecenie",
+      "options": [
+        {
+          "en": "an instruction (in a book)"
+        },
+        {
+          "en": "an exercise"
+        },
+        {
+          "en": "a test"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "polecenie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-b-e11",
+      "prompt": {
+        "en": "read the instruction, please"
+      },
+      "acceptedAnswers": [
+        "proszę przeczytać polecenie"
+      ],
+      "distractors": [
+        "dialog",
+        "tak"
+      ],
+      "items": [
+        "prosze",
+        "przeczytac",
+        "polecenie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-b-e12",
+      "prompt": "przykład",
+      "options": [
+        {
+          "en": "an instruction (in a book)"
+        },
+        {
+          "en": "a text"
+        },
+        {
+          "en": "an example"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przyklad"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-b-e13",
+      "text": "przykład",
+      "meaning": {
+        "en": "an example"
+      },
+      "distractors": [
+        "polecenie",
+        "ćwiczenie"
+      ],
+      "items": [
+        "przyklad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l00-b-e14",
+      "prompt": "strona",
+      "options": [
+        {
+          "en": "a page"
+        },
+        {
+          "en": "a lesson"
+        },
+        {
+          "en": "an example"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "strona"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l00-b-e15",
+      "prompt": {
+        "en": "page five"
+      },
+      "acceptedAnswers": [
+        "strona pięć"
+      ],
+      "items": [
+        "strona",
+        "piec"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-b-e16",
+      "prompt": {
+        "en": "translate the dialogue, please"
+      },
+      "acceptedAnswers": [
+        "proszę przetłumaczyć dialog"
+      ],
+      "distractors": [
+        "test",
+        "nie"
+      ],
+      "items": [
+        "prosze",
+        "przetlumaczyc",
+        "dialog"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-b-e17",
+      "prompt": {
+        "en": "read the text, please"
+      },
+      "acceptedAnswers": [
+        "proszę przeczytać tekst"
+      ],
+      "distractors": [
+        "strona",
+        "tak"
+      ],
+      "items": [
+        "prosze",
+        "przeczytac",
+        "tekst"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l00-b-e18",
+      "acceptedAnswers": [
+        "tekst i test"
+      ],
+      "meaning": {
+        "en": "a text and a test"
+      },
+      "items": [
+        "tekst",
+        "i",
+        "test"
+      ]
+    }
+  ]
+}

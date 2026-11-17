@@ -97,6 +97,14 @@
       "text": "być może"
     },
     {
+      "id": "chlopak",
+      "text": "chłopak"
+    },
+    {
+      "id": "chlopak-i-dziewczyna",
+      "text": "chłopak i dziewczyna"
+    },
+    {
       "id": "chwileczke",
       "text": "chwileczkę"
     },
@@ -123,6 +131,18 @@
     {
       "id": "corke",
       "text": "córkę"
+    },
+    {
+      "id": "cwiczenie",
+      "text": "ćwiczenie"
+    },
+    {
+      "id": "cwiczenie-dwa",
+      "text": "ćwiczenie dwa"
+    },
+    {
+      "id": "cwiczenie-numer-dwa",
+      "text": "ćwiczenie numer dwa"
     },
     {
       "id": "czas",
@@ -235,6 +255,10 @@
     {
       "id": "czy-twoj-maz-jest-z-polski",
       "text": "czy twój mąż jest z Polski?"
+    },
+    {
+      "id": "dialog",
+      "text": "dialog"
     },
     {
       "id": "do-jutra",
@@ -385,6 +409,10 @@
       "text": "dziesięć"
     },
     {
+      "id": "dziewczyna",
+      "text": "dziewczyna"
+    },
+    {
       "id": "dziewiec",
       "text": "dziewięć"
     },
@@ -467,6 +495,18 @@
     {
       "id": "ile-twoj-syn-ma-lat",
       "text": "ile twój syn ma lat?"
+    },
+    {
+      "id": "imie",
+      "text": "imię"
+    },
+    {
+      "id": "imie-i-nazwisko",
+      "text": "imię i nazwisko"
+    },
+    {
+      "id": "imie-nazwisko-narodowosc",
+      "text": "imię, nazwisko, narodowość"
     },
     {
       "id": "ja",
@@ -637,12 +677,40 @@
       "text": "jeszcze raz, proszę"
     },
     {
+      "id": "kolega",
+      "text": "kolega"
+    },
+    {
+      "id": "kolega-i-kolezanka",
+      "text": "kolega i koleżanka"
+    },
+    {
+      "id": "kolezanka",
+      "text": "koleżanka"
+    },
+    {
+      "id": "kolezanka-i-kolega",
+      "text": "koleżanka i kolega"
+    },
+    {
       "id": "lat",
       "text": "lat"
     },
     {
       "id": "lata",
       "text": "lata"
+    },
+    {
+      "id": "lekcja",
+      "text": "lekcja"
+    },
+    {
+      "id": "lekcja-jeden",
+      "text": "lekcja jeden"
+    },
+    {
+      "id": "lekcja-numer-jeden",
+      "text": "lekcja numer jeden"
     },
     {
       "id": "ma",
@@ -945,8 +1013,36 @@
       "text": "na zdrowie"
     },
     {
+      "id": "napisac",
+      "text": "napisać"
+    },
+    {
+      "id": "narodowosc",
+      "text": "narodowość"
+    },
+    {
+      "id": "nauczyciel",
+      "text": "nauczyciel"
+    },
+    {
+      "id": "nauczyciel-i-nauczycielka",
+      "text": "nauczyciel i nauczycielka"
+    },
+    {
+      "id": "nauczycielka",
+      "text": "nauczycielka"
+    },
+    {
+      "id": "nauczycielka-i-nauczyciel",
+      "text": "nauczycielka i nauczyciel"
+    },
+    {
       "id": "nawzajem",
       "text": "nawzajem"
+    },
+    {
+      "id": "nazwisko",
+      "text": "nazwisko"
     },
     {
       "id": "nazywam-sie",
@@ -1161,8 +1257,16 @@
       "text": "Polakiem"
     },
     {
+      "id": "polecenie",
+      "text": "polecenie"
+    },
+    {
       "id": "polka",
       "text": "Polką"
+    },
+    {
+      "id": "posluchac",
+      "text": "posłuchać"
     },
     {
       "id": "powodzenia",
@@ -1171,6 +1275,10 @@
     {
       "id": "powodzenia-do-widzenia",
       "text": "powodzenia, do widzenia"
+    },
+    {
+      "id": "powtorzyc",
+      "text": "powtórzyć"
     },
     {
       "id": "problem",
@@ -1193,6 +1301,94 @@
       "text": "proszę jeszcze raz"
     },
     {
+      "id": "prosze-napisac",
+      "text": "proszę napisać"
+    },
+    {
+      "id": "prosze-napisac-po-polsku",
+      "text": "Proszę napisać po polsku."
+    },
+    {
+      "id": "prosze-posluchac-i-napisac",
+      "text": "proszę posłuchać i napisać"
+    },
+    {
+      "id": "prosze-posluchac-i-napisac-2",
+      "text": "Proszę posłuchać i napisać."
+    },
+    {
+      "id": "prosze-posluchac-i-powtorzyc",
+      "text": "proszę posłuchać i powtórzyć"
+    },
+    {
+      "id": "prosze-posluchac-i-wybrac",
+      "text": "proszę posłuchać i wybrać"
+    },
+    {
+      "id": "prosze-posluchac-i-wybrac-2",
+      "text": "Proszę posłuchać i wybrać."
+    },
+    {
+      "id": "prosze-przeczytac-i-uzupelnic",
+      "text": "proszę przeczytać i uzupełnić"
+    },
+    {
+      "id": "prosze-przeczytac-polecenie",
+      "text": "proszę przeczytać polecenie"
+    },
+    {
+      "id": "prosze-przeczytac-tekst",
+      "text": "proszę przeczytać tekst"
+    },
+    {
+      "id": "prosze-przeliterowac",
+      "text": "proszę przeliterować"
+    },
+    {
+      "id": "prosze-przeliterowac-nazwisko",
+      "text": "proszę przeliterować nazwisko"
+    },
+    {
+      "id": "prosze-przetlumaczyc",
+      "text": "proszę przetłumaczyć"
+    },
+    {
+      "id": "prosze-przetlumaczyc-2",
+      "text": "Proszę przetłumaczyć."
+    },
+    {
+      "id": "prosze-przetlumaczyc-dialog",
+      "text": "proszę przetłumaczyć dialog"
+    },
+    {
+      "id": "prosze-ulozyc-zdanie",
+      "text": "Proszę ułożyć zdanie."
+    },
+    {
+      "id": "prosze-uzupelnic",
+      "text": "Proszę uzupełnić."
+    },
+    {
+      "id": "prosze-uzupelnic-cwiczenie",
+      "text": "proszę uzupełnić ćwiczenie"
+    },
+    {
+      "id": "prosze-wybrac-odpowiedz-po-polsku",
+      "text": "Proszę wybrać odpowiedź po polsku."
+    },
+    {
+      "id": "prosze-wybrac-przyklad",
+      "text": "proszę wybrać przykład"
+    },
+    {
+      "id": "przeczytac",
+      "text": "przeczytać"
+    },
+    {
+      "id": "przeliterowac",
+      "text": "przeliterować"
+    },
+    {
       "id": "przepraszam",
       "text": "przepraszam"
     },
@@ -1207,6 +1403,14 @@
     {
       "id": "przepraszamy",
       "text": "przepraszamy"
+    },
+    {
+      "id": "przetlumaczyc",
+      "text": "przetłumaczyć"
+    },
+    {
+      "id": "przyklad",
+      "text": "przykład"
     },
     {
       "id": "pytanie",
@@ -1281,6 +1485,30 @@
       "text": "smacznego"
     },
     {
+      "id": "strona",
+      "text": "strona"
+    },
+    {
+      "id": "strona-piec",
+      "text": "strona pięć"
+    },
+    {
+      "id": "student",
+      "text": "student"
+    },
+    {
+      "id": "student-i-studentka",
+      "text": "student i studentka"
+    },
+    {
+      "id": "studentka",
+      "text": "studentka"
+    },
+    {
+      "id": "studentka-i-student",
+      "text": "studentka i student"
+    },
+    {
       "id": "swietnie",
       "text": "świetnie"
     },
@@ -1345,6 +1573,18 @@
       "text": "tata"
     },
     {
+      "id": "tekst",
+      "text": "tekst"
+    },
+    {
+      "id": "tekst-i-test",
+      "text": "tekst i test"
+    },
+    {
+      "id": "test",
+      "text": "test"
+    },
+    {
       "id": "tez",
       "text": "też"
     },
@@ -1385,6 +1625,14 @@
       "text": "to jest Adam, on jest z Polski"
     },
     {
+      "id": "to-jest-dziewczyna",
+      "text": "to jest dziewczyna"
+    },
+    {
+      "id": "to-jest-lekcja",
+      "text": "to jest lekcja"
+    },
+    {
       "id": "to-jest-moj-brat",
       "text": "to jest mój brat"
     },
@@ -1417,8 +1665,24 @@
       "text": "to jest moje pytanie"
     },
     {
+      "id": "to-jest-nauczyciel",
+      "text": "to jest nauczyciel"
+    },
+    {
       "id": "to-jest-numer-dziewiec",
       "text": "to jest numer dziewięć"
+    },
+    {
+      "id": "to-jest-strona-dziesiec",
+      "text": "to jest strona dziesięć"
+    },
+    {
+      "id": "to-jest-student",
+      "text": "to jest student"
+    },
+    {
+      "id": "to-jest-studentka",
+      "text": "to jest studentka"
     },
     {
       "id": "to-jest-twoj-brat",
@@ -1427,6 +1691,10 @@
     {
       "id": "to-jest-twoje-dziecko",
       "text": "to jest twoje dziecko?"
+    },
+    {
+      "id": "to-lekcja",
+      "text": "to lekcja"
     },
     {
       "id": "to-moj-brat",
@@ -1457,12 +1725,28 @@
       "text": "to moje pytanie"
     },
     {
+      "id": "to-nauczyciel",
+      "text": "to nauczyciel"
+    },
+    {
       "id": "to-nie-jest-twoj-problem",
       "text": "to nie jest twój problem"
     },
     {
       "id": "to-numer-dziewiec",
       "text": "to numer dziewięć"
+    },
+    {
+      "id": "to-strona-dziesiec",
+      "text": "to strona dziesięć"
+    },
+    {
+      "id": "to-student",
+      "text": "to student"
+    },
+    {
+      "id": "to-studentka",
+      "text": "to studentka"
     },
     {
       "id": "to-twoj-brat",
@@ -1569,6 +1853,10 @@
       "text": "Ty jesteś z Anglii?"
     },
     {
+      "id": "uzupelnic",
+      "text": "uzupełnić"
+    },
+    {
       "id": "w-porzadku",
       "text": "w porządku"
     },
@@ -1603,6 +1891,10 @@
     {
       "id": "wy-mowicie-po-polsku-a-one-mowia-po-angielsku",
       "text": "Wy mówicie po polsku, a one mówią po angielsku."
+    },
+    {
+      "id": "wybrac",
+      "text": "wybrać"
     },
     {
       "id": "z-anglii",

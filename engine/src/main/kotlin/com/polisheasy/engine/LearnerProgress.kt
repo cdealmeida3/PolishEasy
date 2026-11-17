@@ -50,6 +50,9 @@ interface LearnerProgress {
 
     /** Progress on every Item answered so far, by Item id. It knows nothing of Levels. */
     fun itemProgress(): Map<String, ItemProgress>
+
+    /** Saves [items] answered outside a Daily Set, such as on a flashcard, as one change. */
+    fun recordItems(items: Map<String, ItemProgress>)
 }
 
 /** Progress that is lost when the process ends. For tests. */
@@ -83,4 +86,8 @@ class InMemoryLearnerProgress : LearnerProgress {
     }
 
     override fun itemProgress(): Map<String, ItemProgress> = items.toMap()
+
+    override fun recordItems(items: Map<String, ItemProgress>) {
+        this.items += items
+    }
 }

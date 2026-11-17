@@ -116,7 +116,13 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
         if (level.units.isEmpty()) report(COURSE_FILE, level.id, "Level ${level.id} has no Units")
         level.units.forEach { unit ->
             needsText(COURSE_FILE, unit.id, "The title of Unit ${unit.id}", unit.title)
-            if (unit.dailySets.isEmpty()) report(COURSE_FILE, unit.id, "Unit ${unit.id} has no Daily Sets")
+            if (unit.dailySets.isEmpty() && !unit.coming) report(COURSE_FILE, unit.id, "Unit ${unit.id} has no Daily Sets")
+            if (unit.dailySets.isNotEmpty() && unit.coming) {
+                report(COURSE_FILE, unit.id, "Unit ${unit.id} is marked as coming but has Daily Sets")
+            }
+            if (unit.number != null && unit.polishTitle.isNullOrBlank()) {
+                report(COURSE_FILE, unit.id, "Unit ${unit.id} is a chapter of the book and has no Polish title")
+            }
             if (!unit.id.startsWith("${level.id}-")) {
                 report(COURSE_FILE, unit.id, "Unit id ${unit.id} does not start with ${level.id}-, the id of its Level")
             }
@@ -144,6 +150,10 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
         val introduced = course.introducedIn(dailySet).size
         if (introduced > MAX_NEW_ITEMS) {
             report(file, dailySet.id, "Daily Set ${dailySet.id} introduces $introduced new Items; at most $MAX_NEW_ITEMS are allowed")
+        }
+        dailySet.section?.let { section ->
+            if (section.heading.isBlank()) report(file, dailySet.id, "The section of Daily Set ${dailySet.id} has no heading")
+            needsText(file, dailySet.id, "The meaning of the section heading of Daily Set ${dailySet.id}", section.meaning)
         }
         if (dailySet.tips.isEmpty()) {
             report(file, dailySet.id, "Daily Set ${dailySet.id} has no Tip; the title of its first Tip is its title on the Path")
@@ -199,6 +209,18 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
                     report(file, exercise.id, "$name has no Clip for \"$text\", so its speaker icon would be missing")
                 }
             }
+        }
+    }
+
+    // Instructions
+    content.instructionsFile?.takeIf { file -> file !in content.unreadable.map { it.file } }?.let { file ->
+        InstructionKind.entries.filter { it !in content.instructions }.forEach { kind ->
+            report(file, kind.name.lowercase(Locale.ROOT), "No instruction is given for ${kind.name.lowercase(Locale.ROOT)}")
+        }
+        content.instructions.forEach { (kind, instruction) ->
+            val id = kind.name.lowercase(Locale.ROOT)
+            if (instruction.polish.isBlank()) report(file, id, "The instruction for $id has no Polish")
+            needsText(file, id, "The instruction for $id", instruction.meaning)
         }
     }
 

@@ -3,7 +3,7 @@ package com.polisheasy.engine
 /** Where a Polish text is written: the content file and the Item, Exercise or Tip. */
 data class PolishUse(val file: String, val id: String, val role: PolishRole)
 
-enum class PolishRole { ITEM, PROMPT, ANSWER, DISTRACTOR, TABLE }
+enum class PolishRole { ITEM, PROMPT, ANSWER, DISTRACTOR, TABLE, HEADING }
 
 /** One Polish text with the English it stands for, or null where it stands for none (a distractor, a bare form). */
 data class PolishSentence(val text: String, val meaning: String?, val uses: List<PolishUse>)
@@ -65,7 +65,17 @@ fun polishContent(files: ContentFiles): PolishContent {
     val itemsById = content.items.reversed().associateBy { it.value.id }
     content.items.forEach { (file, item) -> sentence(item.text, item.meaning, PolishUse(file, item.id, PolishRole.ITEM)) }
 
+    // A chapter's title and its K, L and G lists are quoted from the book's contents, abbreviations
+    // and all, so they are not the app's Polish to check.
+    content.instructions.forEach { (kind, instruction) ->
+        val file = content.instructionsFile.orEmpty()
+        sentence(instruction.polish, instruction.meaning, PolishUse(file, kind.name.lowercase(java.util.Locale.ROOT), PolishRole.PROMPT))
+    }
+
     content.dailySets.forEach { (file, dailySet) ->
+        dailySet.section?.let { section ->
+            sentence(section.heading, section.meaning, PolishUse(file, dailySet.id, PolishRole.HEADING))
+        }
         dailySet.exercises.forEach { exercise ->
             fun use(role: PolishRole) = PolishUse(file, exercise.id, role)
             when (exercise) {

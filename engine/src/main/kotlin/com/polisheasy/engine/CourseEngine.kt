@@ -42,6 +42,10 @@ sealed interface Step {
         val review: Boolean = false,
         val replay: Boolean = false,
         val exerciseId: String = "",
+        /** What the Exercise asks, in Polish as the book words it, with its translation. Null when the course gives none. */
+        val instruction: InstructionView? = null,
+        /** [checkpoint] when this is a question of a Checkpoint, which keeps only its Best. */
+        val checkpoint: Boolean = false,
     ) : Step
 
     /**
@@ -56,8 +60,13 @@ sealed interface Step {
         val itemsLearned: List<ItemView> = emptyList(),
         val reviewOnly: Boolean = false,
         val replay: Boolean = false,
+        /** The result, when this was a Checkpoint. */
+        val checkpoint: CheckpointResultView? = null,
     ) : Step
 }
+
+/** An Exercise's instruction: the [polish] as the book words it, its [meaning] in the Base Language, and its Clip. */
+data class InstructionView(val polish: String, val meaning: String, val audio: ClipView? = null)
 
 /** An Item as the Learner sees it: the Polish and its meaning in the Base Language. */
 data class ItemView(val text: String, val meaning: String)
@@ -100,6 +109,8 @@ sealed interface ExerciseView {
         val prompt: String,
         val options: List<String>,
         val promptAudio: ClipView? = null,
+        /** Whether the Polish is formal, informal or both, where the book marks it. */
+        val register: Register? = null,
     ) : ExerciseView
 
     /**
@@ -171,6 +182,8 @@ class CourseEngine(
     private val baseLanguage: String = "en",
     private val scheduler: ReviewScheduler = LeitnerScheduler(),
     private val oneADay: () -> Boolean = { false },
+    /** Where the Best of each chapter's Checkpoint is kept. */
+    private val checkpoints: CheckpointBests = InMemoryCheckpointBests(),
 ) {
     /** The Daily Set being played, with how far the Learner is through it. */
     private var playing: Playing? = null
@@ -187,7 +200,12 @@ class CourseEngine(
         val reviewOnly: Boolean = false,
         val replay: Boolean = false,
         val sound: Boolean = true,
+        /** The Unit whose Checkpoint this is, or null. A Checkpoint saves nothing but its Best, and asks each question once. */
+        val checkpoint: String? = null,
     ) {
+        /** Set once the Checkpoint's Best has been saved, so it is saved once. */
+        var result: CheckpointResultView? = null
+
         /** Whether listening Exercises are shown in their reading form. */
         val reading: Boolean get() = !sound || state.cantListen
     }
@@ -491,6 +509,9 @@ class CourseEngine(
         val rest = state.remaining.drop(1)
         playing.state = if (feedback.correct) {
             state.copy(remaining = rest)
+        } else if (playing.checkpoint != null) {
+            // A Checkpoint asks each question once: a wrong answer counts and is not asked again.
+            state.copy(remaining = rest, missed = state.missed + exercise.id)
         } else {
             state.copy(remaining = rest + exercise.id, missed = state.missed + exercise.id)
         }
@@ -529,6 +550,14 @@ class CourseEngine(
         val total = total(playing)
         tipShowing = false
         val exerciseId = state.remaining.firstOrNull()
+            ?: playing.checkpoint?.let { unitId ->
+                return Step.ShowSummary(
+                    correctAnswers = total - state.missed.size,
+                    exercises = total,
+                    replay = true,
+                    checkpoint = checkpointResult(playing, unitId, correct = total - state.missed.size, questions = total),
+                )
+            }
             // First-attempt correct: every Exercise that was never answered wrongly.
             ?: return Step.ShowSummary(
                 correctAnswers = total - state.missed.size,
@@ -548,13 +577,88 @@ class CourseEngine(
             tipShowing = true
             return Step.ShowTip(view(tip), progressOf(playing), replay = playing.replay)
         }
+        val view = view(course.exercises.getValue(exerciseId), playing)
         return Step.ShowExercise(
-            view(course.exercises.getValue(exerciseId), playing),
+            view,
             progressOf(playing),
             review = exerciseId in state.review,
-            replay = playing.replay,
+            replay = playing.replay && playing.checkpoint == null,
             exerciseId = exerciseId,
+            instruction = instructionOf(view, playing),
+            checkpoint = playing.checkpoint != null,
         )
+    }
+
+    /** The instruction of [view], with its Clip when the Learner can listen. */
+    private fun instructionOf(view: ExerciseView, playing: Playing): InstructionView? {
+        val kind = when (view) {
+            is ExerciseView.ChooseTranslation -> InstructionKind.CHOOSE_TRANSLATION
+            is ExerciseView.TypeAnswer -> InstructionKind.TYPE_ANSWER
+            is ExerciseView.WordTiles -> InstructionKind.WORD_TILES
+            is ExerciseView.Conjugation -> InstructionKind.CONJUGATION
+            is ExerciseView.ListenChoose -> InstructionKind.LISTEN_CHOOSE
+            is ExerciseView.ListenType -> InstructionKind.LISTEN_TYPE
+            is ExerciseView.ChoosePolish -> InstructionKind.CHOOSE_POLISH
+        }
+        val instruction = course.instructions[kind] ?: return null
+        return InstructionView(
+            instruction.polish,
+            localize(instruction.meaning),
+            audio = if (playing.sound) course.clipFor(instruction.polish) else null,
+        )
+    }
+
+    /** Saves a finished Checkpoint's Best, once, and says how it went. */
+    private fun checkpointResult(playing: Playing, unitId: String, correct: Int, questions: Int): CheckpointResultView {
+        playing.result?.let { return it }
+        val percent = percentOf(correct, questions)
+        val before = checkpoints.best(unitId)
+        val newBest = before == null || percent > before
+        if (newBest) checkpoints.record(unitId, percent)
+        return CheckpointResultView(
+            unitId = unitId,
+            title = lessons.titleOf(lessons.unit(unitId)),
+            correct = correct,
+            questions = questions,
+            percent = percent,
+            best = maxOf(percent, before ?: 0),
+            newBest = newBest,
+            passed = percent >= CHECKPOINT_PASS_PERCENT,
+        ).also { playing.result = it }
+    }
+
+    private val lessons: Lessons by lazy {
+        Lessons(course, progress, checkpoints, clock, scheduler, ::localize) {
+            path().levels.flatMap { level -> level.units.flatMap { it.dailySets } }.associate { it.id to it.state }
+        }
+    }
+
+    /** The Path as shelves of lessons: Starter, then the book's chapters. */
+    fun shelves(): List<ShelfView> = lessons.shelves()
+
+    /** The Lesson screen of Unit [unitId]. */
+    fun lesson(unitId: String): LessonView = lessons.lesson(unitId)
+
+    /** The Słownik of Unit [unitId]: every word it teaches. */
+    fun dictionary(unitId: String): List<WordView> = lessons.dictionary(unitId)
+
+    /** The Fiszki of Unit [unitId], due words first. */
+    fun flashcards(unitId: String): List<FlashcardView> = lessons.flashcards(unitId)
+
+    /** A flashcard turned: the Learner [knew] the word of Item [itemId] or not yet. Reschedules the Item for Review. */
+    fun answerFlashcard(itemId: String, knew: Boolean) = lessons.answerFlashcard(itemId, knew)
+
+    /**
+     * Starts the Checkpoint of Unit [unitId]: up to [CHECKPOINT_QUESTIONS] of its Exercises,
+     * mixed, each asked once. Like a Replay it is kept in memory and changes nothing on the Path,
+     * in the Streak or in Review; at its end its Best is saved. It can be taken at any time.
+     */
+    fun startCheckpoint(unitId: String, sound: Boolean = true, random: Random = Random.Default): Step {
+        val questions = checkpointQuestions(lessons.exercisesOf(unitId), random)
+        check(questions.isNotEmpty()) { "Unit $unitId has no Exercises to test" }
+        val set = DailySet("checkpoint-$unitId", exercises = questions.map(course.exercises::getValue))
+        playing = Playing(set, DailySetInProgress(set.id, remaining = questions), replay = true, sound = sound, checkpoint = unitId)
+        return next()
     }
 
     /**
@@ -641,6 +745,8 @@ class CourseEngine(
             prompt = exercise.prompt,
             options = exercise.options.map(::localize),
             promptAudio = if (playing.sound) course.clipFor(exercise.prompt) else null,
+            register = exercise.items.singleOrNull()?.let(course.itemsById::get)
+                ?.takeIf { audioKey(it.text) == audioKey(exercise.prompt) }?.register,
         )
         is TypeAnswer -> ExerciseView.TypeAnswer(localize(exercise.prompt))
         is WordTiles -> ExerciseView.WordTiles(localize(exercise.prompt), tilesOf(exercise))
