@@ -1,4 +1,5 @@
 {
+  "practice": "practice/practice.json",
   "levels": [
     { "id": "a1", "title": { "en": "A1" }, "units": [
       { "id": "a1-u01", "title": { "en": "Sample" }, "dailySets": ["a1/unit-01/day-01.json"] }

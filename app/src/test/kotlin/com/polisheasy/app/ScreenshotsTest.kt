@@ -61,6 +61,7 @@ import com.polisheasy.engine.InMemoryLearnerProgress
 import com.polisheasy.engine.InMemoryPracticeProgress
 import com.polisheasy.engine.loadCourse
 import com.polisheasy.engine.ChainRound
+import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
@@ -713,6 +714,79 @@ class ScreenshotsTest {
         tap(R.string.nav_practice)
         screen.onNodeWithText(app.getString(R.string.game_listen_and_tap)).performScrollTo()
         shot("85-practice-sound-off")
+    }
+
+    @Test
+    fun `Sound gaps over the real course in the light theme`() = soundGaps("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Sound gaps over the real course in the dark theme`() = soundGaps("dark")
+
+    @Test
+    fun `Sound gaps over the real course at the largest font size`() = atTheLargestFontSize { soundGaps("large") }
+
+    /** Sound gaps: before a Round, a question new, answered right and answered wrong, in three sounds, and the result. */
+    private fun soundGaps(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun gapped() = (viewModel?.screen as Screen.Round).round as GapRound
+
+        /** Chooses the right letters, or wrong ones, and holds the answered question for its picture. */
+        fun answer(correctly: Boolean) {
+            val asked = checkNotNull(gapped().question)
+            val letters = asked.options.first { (it == asked.gap.answer) == correctly }
+            screen.waitForIdle()
+            screen.mainClock.autoAdvance = false
+            screen.onNode(hasText(letters) and hasClickAction()).performScrollTo().performClick()
+            screen.mainClock.advanceTimeBy(500)
+        }
+
+        fun moveOn() {
+            screen.mainClock.autoAdvance = true
+            tap(R.string.action_continue)
+        }
+
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val progress = InMemoryLearnerProgress()
+        course.path.forEachIndexed { index, dailySet ->
+            progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
+        }
+        val engine = CourseEngine(course, progress, clock)
+        open(CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7))))
+        tap(R.string.nav_practice)
+
+        openGame(R.string.game_sound_gaps)
+        shot("86-gaps-setup")
+        tap(R.string.setup_play)
+        shot("87-gaps-question")
+        answer(correctly = true)
+        shot("88-gaps-right")
+        moveOn()
+        answer(correctly = false)
+        shot("89-gaps-wrong")
+        moveOn()
+        screen.onNodeWithContentDescription(app.getString(R.string.round_close)).performClick()
+
+        // Two letters to choose from, and a phrase.
+        openGame(R.string.game_sound_gaps)
+        tap("l · ł")
+        tap(R.string.setup_play)
+        shot("90-gaps-two-letters")
+        screen.onNodeWithContentDescription(app.getString(R.string.round_close)).performClick()
+        openGame(R.string.game_sound_gaps)
+        tap(R.string.option_mixed)
+        tap(R.string.setup_play)
+        while (' ' !in checkNotNull(gapped().question).gap.polish) {
+            answer(correctly = true)
+            moveOn()
+        }
+        shot("91-gaps-phrase")
+        while (viewModel?.screen is Screen.Round) {
+            answer(correctly = true)
+            moveOn()
+        }
+        shot("92-gaps-result")
     }
 
     @Test

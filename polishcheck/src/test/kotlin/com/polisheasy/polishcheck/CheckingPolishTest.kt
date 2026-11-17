@@ -5,6 +5,8 @@ import com.polisheasy.engine.PolishContent
 import com.polisheasy.engine.PolishRole
 import com.polisheasy.engine.PolishSentence
 import com.polisheasy.engine.PolishUse
+import com.polisheasy.engine.SoundGap
+import com.polisheasy.engine.SoundGroup
 import com.polisheasy.engine.TipText
 import com.polisheasy.engine.VerbForm
 import kotlin.test.Test
@@ -61,6 +63,36 @@ internal class CheckingPolishTest {
 
         assertEquals(emptyList(), report.problems)
         assertEquals(6, report.sentences)
+    }
+
+    // Sound gaps
+
+    private fun gap(itemId: String, before: String, answer: String, after: String, group: SoundGroup) =
+        "a1/unit-01/items.json" to SoundGap(itemId, before + answer + after, group, before, answer, after)
+
+    @Test
+    fun `a wrong spelling Sound gaps would offer that is a real word is a problem, until it is listed`() {
+        // "kasa" is a word: asking for the sz of "kasza" would call a real word wrong. "śukam" and "sukam" are not.
+        val gaps = listOf(gap("kasza", "ka", "sz", "a", SoundGroup.SZ), gap("szukam", "", "sz", "ukam", SoundGroup.SZ))
+        val content = PolishContent(emptyList(), emptyList(), emptyList(), emptyList(), soundGaps = gaps, practiceFile = "practice/practice.json")
+
+        val problem = check(content).problems.single()
+
+        assertEquals(Pass.SOUND_GAPS, problem.pass)
+        assertEquals("sound-gap: kasa", problem.key)
+        assertTrue("practice/practice.json" in problem.message)
+        assertEquals(listOf(Place("a1/unit-01/items.json", "kasza")), problem.places)
+        assertEquals(4, check(content).looked[Pass.SOUND_GAPS])
+    }
+
+    @Test
+    fun `a word listed as real that the dictionary does not know is a problem`() {
+        val content = PolishContent(emptyList(), emptyList(), emptyList(), emptyList(), realWords = listOf("kasa", "śukam"), practiceFile = "practice/practice.json")
+
+        val problem = check(content).problems.single()
+
+        assertEquals("real-word: śukam", problem.key)
+        assertEquals(listOf(Place("practice/practice.json", null)), problem.places)
     }
 
     // Dictionary

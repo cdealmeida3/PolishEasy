@@ -12,6 +12,9 @@ enum class Pass(val title: String) {
     GRAMMAR("Grammar rules"),
     REVIEW("Review"),
 
+    /** The wrong spellings Sound gaps offers: none may be a real word. */
+    SOUND_GAPS("Sound gaps"),
+
     /** Not a pass over the content: what is wrong with `polish-accepted.json` itself. */
     ACCEPTANCES("Accepted problems"),
 }
@@ -168,6 +171,29 @@ fun checkPolish(content: PolishContent, reference: PolishReference, reviews: Rev
         }
     }
 
+    // Sound gaps: a wrong option must not spell another word, or the Learner would be told a real word is wrong.
+    val offered = LinkedHashMap<String, MutableList<Place>>()
+    content.soundGaps.forEach { (file, gap) ->
+        gap.wrongWords.forEach { wrong -> offered.getOrPut(wrong.lowercase(Locale.ROOT)) { mutableListOf() } += Place(file, gap.itemId) }
+    }
+    val practiceFile = content.practiceFile ?: "course.json"
+    offered.filterKeys { reference.knows(it) }.forEach { (wrong, places) ->
+        found += PolishProblem(
+            Pass.SOUND_GAPS,
+            "sound-gap: $wrong",
+            "$wrong is a real word, and Sound gaps would offer it as a wrong spelling; list it under realWords in $practiceFile",
+            places.distinct(),
+        )
+    }
+    content.realWords.filter { !reference.knows(it) }.forEach { listed ->
+        found += PolishProblem(
+            Pass.SOUND_GAPS,
+            "real-word: $listed",
+            "$listed is listed as a real word but is not in the dictionary; delete it",
+            listOf(Place(practiceFile, null)),
+        )
+    }
+
     // Review
     val sentencesToReview = mutableListOf<SentenceReview>()
     val tipsToReview = mutableListOf<TipReview>()
@@ -229,6 +255,7 @@ fun checkPolish(content: PolishContent, reference: PolishReference, reviews: Rev
             Pass.VERB_FORMS to content.verbForms.size,
             Pass.GRAMMAR to content.sentences.size,
             Pass.REVIEW to content.sentences.size + content.tips.size,
+            Pass.SOUND_GAPS to offered.size,
         ),
         toReview = Reviews(sentencesToReview, tipsToReview),
         sentences = content.sentences.size,

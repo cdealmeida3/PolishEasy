@@ -26,6 +26,11 @@ class PolishContent(
     val tips: List<TipText>,
     /** A listed file that could not be read. The Polish check does not run on half a course. */
     val unreadable: List<ContentProblem>,
+    /** Every gap Sound gaps can ask, with the file of its Item. No wrong option of one may spell a real word. */
+    val soundGaps: List<Pair<String, SoundGap>> = emptyList(),
+    /** The words the content says a wrong option of Sound gaps would spell, and the file that lists them. */
+    val realWords: List<String> = emptyList(),
+    val practiceFile: String? = null,
 )
 
 /**
@@ -126,6 +131,9 @@ fun polishContent(files: ContentFiles): PolishContent {
             }
         },
         unreadable = content.unreadable,
+        soundGaps = content.course().soundGapRealWords.let { real -> content.items.flatMap { (file, item) -> soundGaps(item, real).map { file to it } } },
+        realWords = content.practice?.realWords.orEmpty(),
+        practiceFile = content.practiceFile,
     )
 }
 

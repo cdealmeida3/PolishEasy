@@ -21,7 +21,7 @@ internal class PolishCheckCommandTest {
     private val toReview = File(outDir, "to-review.json")
 
     private val day = "a1/unit-01/day-01.json"
-    private val sampleFiles = listOf("course.json", "a1/unit-01/items.json", day)
+    private val sampleFiles = listOf("course.json", "a1/unit-01/items.json", "practice/practice.json", day)
 
     @AfterTest
     fun cleanUp() {

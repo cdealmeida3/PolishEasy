@@ -12,6 +12,15 @@ internal data class CourseFile(
     val audio: String? = null,
     /** Optional: the path of the file that lists the pictures. */
     val pictures: String? = null,
+    /** Optional: the path of the file with what the Games of Practice need beyond the Items. */
+    val practice: String? = null,
+)
+
+/** What the Games of Practice need to know that no Item says. */
+@Serializable
+internal data class PracticeFile(
+    /** Real Polish words that a wrong option of Sound gaps would spell: a gap that would offer one is never asked. */
+    val realWords: List<String> = emptyList(),
 )
 
 @Serializable
@@ -69,6 +78,9 @@ internal class ReadContent(
     val pictures: List<Filed<PictureEntry>> = emptyList(),
     /** The file that lists the pictures, if the course has one. */
     val picturesFile: String? = null,
+    val practice: PracticeFile? = null,
+    /** The file with what the Games of Practice need, if the course has one. */
+    val practiceFile: String? = null,
 ) {
     /** Where the pictures' files are: the directory of the file that lists them. */
     val pictureDir: String = picturesFile?.substringBeforeLast('/', "").orEmpty()
@@ -76,7 +88,7 @@ internal class ReadContent(
     val clipDir: String = clipsFile?.substringBeforeLast('/', "") ?: "audio"
 
     /** Every path `course.json` names. */
-    val listed: Set<String> = (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile)).toSet()
+    val listed: Set<String> = (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile, practiceFile)).toSet()
 
     private val unreadableFiles = unreadable.map { it.file }.toSet()
 
@@ -104,6 +116,7 @@ internal class ReadContent(
             clipDir,
             // The first picture of an Item is the one used; a second is reported, not loaded.
             pictures.reversed().mapNotNull { (_, entry) -> pictureOf(entry, pictureDir)?.let { entry.item to it } }.toMap(),
+            practice?.realWords.orEmpty().map { it.lowercase(Locale.ROOT) }.toSet(),
         )
     }
 
@@ -149,6 +162,8 @@ internal fun readContent(readFile: (path: String) -> String): ReadContent {
             read(path) { contentJson.decodeFromString<PicturesFile>(it) }?.pictures.orEmpty().map { Filed(path, it) }
         }.orEmpty(),
         picturesFile = index.pictures,
+        practice = index.practice?.let { path -> read(path) { contentJson.decodeFromString<PracticeFile>(it) } },
+        practiceFile = index.practice,
         unreadable = unreadable,
     )
 }
@@ -217,6 +232,15 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
             problems += ContentProblem(file, entry.item, "The picture of Item ${entry.item} must have an image or a glyph, and not both")
         } else if ((entry.image ?: entry.glyph).isNullOrBlank()) {
             problems += ContentProblem(file, entry.item, "The picture of Item ${entry.item} is blank")
+        }
+    }
+    content.practice?.realWords.orEmpty().let { words ->
+        val file = content.practiceFile.orEmpty()
+        words.filter { it.isBlank() || it.any(Char::isWhitespace) }.forEach { word ->
+            problems += ContentProblem(file, null, "A real word of Sound gaps must be one word, and \"$word\" is not")
+        }
+        words.map { it.lowercase(Locale.ROOT) }.repeated().forEach { word ->
+            problems += ContentProblem(file, null, "The real word \"$word\" is listed more than once")
         }
     }
     content.pictures.map { it.value.item }.repeated().forEach { item ->

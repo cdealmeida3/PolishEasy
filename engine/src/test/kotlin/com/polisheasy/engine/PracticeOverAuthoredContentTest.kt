@@ -173,6 +173,32 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Sound gaps asks only words that have been learned and can be heard, in every sound it offers`() {
+        val seen = mutableSetOf<String>()
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            assertEquals(GameState.READY, practice.view().games.single { it.game == Game.SOUND_GAPS }.state, "After $days Daily Sets")
+            practice.setup(Game.SOUND_GAPS).choices.single().options.forEach { sounds ->
+                seen += sounds.id
+                val round = practice.start(practice.setup(Game.SOUND_GAPS, listOf(sounds.id))) as GapRound
+                val about = "After $days Daily Sets, ${sounds.id}"
+                assertTrue(round.total in SoundGaps.LEAST..SoundGaps.QUESTIONS, about)
+                round.run.questions.forEach { question ->
+                    val gap = question.gap
+                    assertTrue(gap.itemId in learned, about)
+                    assertTrue(practice.clipOf(gap.polish) != null, "$about: no Clip for ${gap.polish}")
+                    assertEquals(course.itemsById.getValue(gap.itemId).text, gap.before + gap.answer + gap.after, about)
+                    assertTrue(sounds.id == SoundGaps.MIXED || gap.group.id == sounds.id, about)
+                    assertTrue(gap.wrongWords.none { it.lowercase() in course.soundGapRealWords }, "$about: $gap")
+                }
+            }
+        }
+        // By the end of the course most of the sounds can be drilled.
+        assertTrue(seen.size >= 6, "Only $seen are ever offered")
+    }
+
+    @Test
     fun `every picture is of a word that can be pictured without knowing Polish, once`() {
         // A numeral stands for its number and nothing else.
         val numerals = course.pictures.filterValues { it is Picture.Glyph }

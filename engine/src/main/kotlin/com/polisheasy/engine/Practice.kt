@@ -19,6 +19,7 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     PHRASE_CHAINS("phrase-chains", GameGroup.PHRASES, fewestWins = true),
     VERB_CHALLENGE("verb-challenge", GameGroup.VERBS),
     LISTEN_AND_TAP("listen-and-tap", GameGroup.SOUNDS),
+    SOUND_GAPS("sound-gaps", GameGroup.SOUNDS),
 }
 
 /** Whether a Game can be played now. */
@@ -217,7 +218,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(PictureCards, MemoryPairs, PhraseChains, VerbChallenge, ListenAndTap).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(PictureCards, MemoryPairs, PhraseChains, VerbChallenge, ListenAndTap, SoundGaps).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

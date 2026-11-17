@@ -35,6 +35,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
+import com.polisheasy.app.ui.theme.Motion
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.clearAndSetSemantics
@@ -562,3 +564,90 @@ fun PhraseChain(words: List<String>, complete: Boolean, hint: String, descriptio
 }
 
 private val ChainLeast = 96.dp
+
+/**
+ * A Polish word or phrase with a gap inside a word, as Sound gaps shows it: the letters [before]
+ * and [after] the gap at display size, and between them a small slot. The slot is empty until the
+ * question is answered, then holds [filled], coloured by its [mark]. The word with the gap is
+ * never broken across lines at the gap. [description] is what a screen reader says for the whole.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+fun GapWordText(before: String, after: String, description: String, modifier: Modifier = Modifier, filled: String? = null, mark: Mark? = null) {
+    val scheme = MaterialTheme.colorScheme
+    val colors = PolishEasyTheme.colors
+    val style = MaterialTheme.typography.headlineLarge.inPolish()
+    val (fill, line, ink) = when (mark) {
+        Mark.Right -> Triple(colors.successContainer, colors.success, colors.onSuccessContainer)
+        Mark.Missed -> Triple(colors.cautionContainer, colors.caution, colors.onCautionContainer)
+        null -> Triple(scheme.secondaryContainer, scheme.outline, scheme.onSecondaryContainer)
+    }
+    // The words wholly before and after the one with the gap, and that word's own two ends.
+    val wordsBefore = before.substringBeforeLast(' ', "").split(' ').filter { it.isNotBlank() }
+    val wordsAfter = after.substringAfter(' ', "").split(' ').filter { it.isNotBlank() }
+    FlowRow(
+        horizontalArrangement = Arrangement.spacedBy(Space.xs, Alignment.CenterHorizontally),
+        verticalArrangement = Arrangement.spacedBy(Space.xs),
+        itemVerticalAlignment = Alignment.CenterVertically,
+        modifier = modifier
+            .fillMaxWidth()
+            .clearAndSetSemantics { contentDescription = description },
+    ) {
+        wordsBefore.forEach { Text(it, style = style, color = scheme.onSurface) }
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(before.substringAfterLast(' '), style = style, color = scheme.onSurface)
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .padding(horizontal = Space.xxs)
+                    .widthIn(min = GapLettersLeast)
+                    .background(fill, MaterialTheme.shapes.small)
+                    .border(Edge.border, line, MaterialTheme.shapes.small)
+                    .padding(horizontal = Space.xs),
+            ) {
+                // An empty gap keeps the height of a letter, so the word does not move when it is filled.
+                Text(filled ?: " ", style = style, color = ink)
+            }
+            Text(after.substringBefore(' '), style = style, color = scheme.onSurface)
+        }
+        wordsAfter.forEach { Text(it, style = style, color = scheme.onSurface) }
+    }
+}
+
+private val GapLettersLeast = 48.dp
+
+/**
+ * Letters to choose for a gap, in the states of an [OptionCard]: large, centred, one of a few side
+ * by side. The right ones get a tick, the ones tapped wrongly a cross and one shake, and the
+ * others fade.
+ */
+@Composable
+fun LetterOption(letters: String, state: OptionState, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    val colors = PolishEasyTheme.colors
+    val scheme = MaterialTheme.colorScheme
+    val (fill, edge, label) = when (state) {
+        OptionState.Idle, OptionState.Faded -> Triple(scheme.surfaceContainerLowest, scheme.outlineVariant, scheme.onSurface)
+        OptionState.Chosen -> Triple(scheme.primaryContainer, scheme.primary, scheme.onPrimaryContainer)
+        OptionState.Right -> Triple(colors.successContainer, colors.success, colors.onSuccessContainer)
+        OptionState.Wrong -> Triple(colors.cautionContainer, colors.caution, colors.onCautionContainer)
+    }
+    Edged(
+        fill = fill,
+        edge = edge,
+        corner = Corner.large,
+        border = Edge.border,
+        enabled = state == OptionState.Idle || state == OptionState.Chosen,
+        onClick = onClick,
+        modifier = modifier
+            .heightIn(min = Size.letterOption)
+            .shaking(state == OptionState.Wrong)
+            .alpha(if (state == OptionState.Faded) Motion.FADED_ALPHA else 1f),
+    ) {
+        Text(letters, style = MaterialTheme.typography.headlineMedium.inPolish(), color = label, modifier = Modifier.padding(Space.xs))
+        when (state) {
+            OptionState.Right -> MarkIcon(Mark.Right, Modifier.align(Alignment.TopEnd).padding(Space.xs), size = Size.tileMark)
+            OptionState.Wrong -> MarkIcon(Mark.Missed, Modifier.align(Alignment.TopEnd).padding(Space.xs), size = Size.tileMark)
+            else -> Unit
+        }
+    }
+}

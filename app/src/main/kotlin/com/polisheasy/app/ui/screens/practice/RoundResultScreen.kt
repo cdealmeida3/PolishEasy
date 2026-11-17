@@ -130,7 +130,7 @@ internal fun scoreWords(game: Game, score: Score): ScoreWords = when (game) {
         label = pluralStringResource(R.plurals.result_slips, score.value),
         sentence = pluralStringResource(R.plurals.result_slips_sentence, score.value, score.value),
     )
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP -> ScoreWords(
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS -> ScoreWords(
         value = stringResource(R.string.summary_first_try_value, score.value, score.of ?: score.value),
         label = stringResource(R.string.summary_first_try),
         sentence = stringResource(R.string.summary_accuracy, score.value, score.of ?: score.value),

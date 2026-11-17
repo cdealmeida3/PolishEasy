@@ -2,6 +2,7 @@
   "items": ["a1/unit-01/items.json", "a1/unit-02/items.json", "a1/unit-03/items.json"],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
+  "practice": "practice/practice.json",
   "levels": [
     {
       "id": "a1",
