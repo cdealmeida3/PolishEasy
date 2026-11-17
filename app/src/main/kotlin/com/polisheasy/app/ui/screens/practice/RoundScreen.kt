@@ -14,6 +14,7 @@ import com.polisheasy.app.ui.components.rememberAnswerHaptics
 import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.ChainRound
+import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
 import com.polisheasy.engine.NumberRound
@@ -60,6 +61,7 @@ internal fun RoundScreen(
         is ListenRound -> ListenAndTapStep(round, say, onMove)
         is MemoryRound -> MemoryPairsBoard(round, sound, say, onMove, onFinish)
         is VerbRound -> VerbChallengeStep(round, say, onMove)
+        is ChatRound -> ChatStep(round, sound, say, onMove, onFinish)
         else -> error("No screen for a Round of ${round.game}")
     }
 }

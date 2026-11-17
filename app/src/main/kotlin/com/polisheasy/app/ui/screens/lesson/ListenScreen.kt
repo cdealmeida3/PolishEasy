@@ -24,6 +24,7 @@ import com.polisheasy.app.ui.components.ChoiceChips
 import com.polisheasy.app.ui.components.DetailFrame
 import com.polisheasy.app.ui.components.LessonBanner
 import com.polisheasy.app.ui.components.ListeningTaskCard
+import com.polisheasy.app.ui.components.MicButton
 import com.polisheasy.app.ui.components.Mark
 import com.polisheasy.app.ui.components.OptionCard
 import com.polisheasy.app.ui.components.OptionState
@@ -64,6 +65,7 @@ internal fun ListenScreen(
     onSpeed: (Float) -> Unit,
     onRepeat: (Boolean) -> Unit,
     onStep: (Boolean) -> Unit,
+    onHold: () -> Unit,
     onAnswer: (String, ListeningAnswer) -> Unit,
     onRecording: (Int) -> Unit,
     onBack: () -> Unit,
@@ -104,12 +106,27 @@ internal fun ListenScreen(
             onPrevious = { onLine(((line ?: 0) - 1).coerceAtLeast(0)) },
             onNext = { onLine(((line ?: -1) + 1).coerceAtMost(lines.lastIndex)) },
         )
+        // Powtórz na głos: the line said into the microphone is shown as heard. The recording has no
+        // words of its own to hold it against, so it is not marked right or wrong.
+        var heard by remember(line) { mutableStateOf<String?>(null) }
         YourTurn(
             visible = state.yourTurn && state.number == track.number,
             title = stringResource(R.string.listen_your_turn),
-            note = stringResource(R.string.listen_your_turn_note),
+            note = when (val said = heard) {
+                null -> stringResource(R.string.listen_your_turn_note)
+                "" -> stringResource(R.string.speak_heard_nothing)
+                else -> stringResource(R.string.speak_heard, said)
+            },
             accent = lesson.accent,
             modifier = Modifier.fillMaxWidth().padding(top = Space.s),
+            action = {
+                MicButton(
+                    stringResource(R.string.speak_mic),
+                    stringResource(R.string.speak_listening),
+                    onHeard = { guesses -> heard = guesses.firstOrNull { it.isNotBlank() }.orEmpty() },
+                    onStart = onHold,
+                )
+            },
         )
         Spacer(Modifier.height(Space.m))
         ChoiceChips(

@@ -94,7 +94,7 @@ class PlayingPracticeOnScreenTest {
         assertTrue(viewModel?.screen is Screen.Practice)
 
         // The card that says what opens Practice starts the Daily Set.
-        tap(R.string.home_start)
+        screen.onNodeWithText(text(R.string.home_start)).performScrollTo().performClick()
         shows(R.string.tip_label)
         playDailySetOne()
         tap(R.string.summary_back_home)
@@ -134,7 +134,7 @@ class PlayingPracticeOnScreenTest {
 
         // Practice shows the Best with the way it was played, and that a Round was played today.
         shows(app.resources.getQuantityString(R.plurals.practice_rounds_today, 1, 1))
-        shows(text(R.string.practice_best_played, right(12), "być, ${text(R.string.option_choose)}"))
+        showsFurtherDown(text(R.string.practice_best_played, right(12), "być, ${text(R.string.option_choose)}"))
     }
 
     @Test
@@ -227,7 +227,7 @@ class PlayingPracticeOnScreenTest {
 
         closeAndOpenApp()
         tap(R.string.nav_practice)
-        shows(text(R.string.practice_best_played, right(13), "być, ${text(R.string.option_choose)}"))
+        showsFurtherDown(text(R.string.practice_best_played, right(13), "być, ${text(R.string.option_choose)}"))
 
         clock.moveToNextDay()
         closeAndOpenApp()
@@ -917,6 +917,11 @@ class PlayingPracticeOnScreenTest {
 
     private fun shows(text: String) {
         screen.onNodeWithText(text).assertIsDisplayed()
+    }
+
+    /** Shows [text] somewhere down the screen, scrolled to: the Games further down than the screen is high. */
+    private fun showsFurtherDown(text: String) {
+        screen.onNodeWithText(text).performScrollTo().assertIsDisplayed()
     }
 
     private fun absent(id: Int) = screen.onNodeWithText(text(id)).assertDoesNotExist()

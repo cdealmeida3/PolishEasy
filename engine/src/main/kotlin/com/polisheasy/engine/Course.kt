@@ -29,6 +29,8 @@ data class Course(
     val trackLines: Map<Int, List<TrackLine>> = emptyMap(),
     /** The listening tasks on the class recordings. */
     val listening: List<ListeningTask> = emptyList(),
+    /** The conversations of the Chat Game, in the content's order. */
+    val chats: List<ChatScript> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

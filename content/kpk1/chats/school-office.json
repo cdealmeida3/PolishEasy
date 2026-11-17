@@ -1,0 +1,243 @@
+{
+  "id": "chat-school-office",
+  "person": "Pani Nowak",
+  "title": {
+    "en": "At the school office"
+  },
+  "scene": {
+    "en": "You are Adam, twenty, from England. You have come to the school office to sign up for a Polish course. Be polite: to the secretary you are pan, and she is pani."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "slucham",
+    "jak",
+    "pan",
+    "miec-ma",
+    "na-imie",
+    "miec-mam",
+    "adam",
+    "skad",
+    "byc-jest",
+    "byc-jestem",
+    "z-anglii",
+    "ile",
+    "lat",
+    "dwadziescia",
+    "dziekuje",
+    "wszystko",
+    "w-porzadku",
+    "do-widzenia",
+    "milego-dnia"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry! Słucham.",
+      "meaning": {
+        "en": "Good morning! How can I help?"
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry!",
+          "meaning": {
+            "en": "Good morning!"
+          },
+          "right": true,
+          "next": "t2"
+        },
+        {
+          "text": "Cześć!",
+          "meaning": {
+            "en": "Hi!"
+          },
+          "register": "informal",
+          "note": {
+            "en": "*Cześć* is for friends and family. To the secretary say *dzień dobry*."
+          }
+        },
+        {
+          "text": "Dobranoc!",
+          "meaning": {
+            "en": "Good night!"
+          },
+          "note": {
+            "en": "*Dobranoc* is for bedtime. During the day it is *dzień dobry*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Jak pan ma na imię?",
+      "meaning": {
+        "en": "What is your first name? (to a man)"
+      },
+      "replies": [
+        {
+          "text": "Mam na imię Adam.",
+          "meaning": {
+            "en": "My first name is Adam."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Mam na imię Adam.",
+            "Adam.",
+            "Nazywam się Adam.",
+            "Jestem Adam."
+          ]
+        },
+        {
+          "text": "A ty?",
+          "meaning": {
+            "en": "And you?"
+          },
+          "register": "informal",
+          "note": {
+            "en": "*A ty?* asks a friend the same question back. Here, give your name: *mam na imię Adam*."
+          }
+        },
+        {
+          "text": "Mam dwadzieścia lat.",
+          "meaning": {
+            "en": "I'm twenty years old."
+          },
+          "note": {
+            "en": "That is your age. She asked your first name, *na imię*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Skąd pan jest?",
+      "meaning": {
+        "en": "Where are you from? (to a man)"
+      },
+      "replies": [
+        {
+          "text": "Jestem z Anglii.",
+          "meaning": {
+            "en": "I'm from England."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Jestem z Anglii.",
+            "Z Anglii.",
+            "Ja jestem z Anglii."
+          ]
+        },
+        {
+          "text": "Jestem tutaj.",
+          "meaning": {
+            "en": "I'm here."
+          },
+          "note": {
+            "en": "*Skąd?* asks where from. Say *z Anglii*."
+          }
+        },
+        {
+          "text": "Tak, jestem z Polski.",
+          "meaning": {
+            "en": "Yes, I'm from Poland."
+          },
+          "note": {
+            "en": "You are from England, and *skąd?* is not a yes-or-no question."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Ile ma pan lat?",
+      "meaning": {
+        "en": "How old are you? (to a man)"
+      },
+      "replies": [
+        {
+          "text": "Mam dwadzieścia lat.",
+          "meaning": {
+            "en": "I'm twenty years old."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Mam dwadzieścia lat.",
+            "Dwadzieścia lat.",
+            "Dwadzieścia."
+          ]
+        },
+        {
+          "text": "Mam dwa lata.",
+          "meaning": {
+            "en": "I'm two years old."
+          },
+          "note": {
+            "en": "*Dwa lata* is two years. You are twenty: *dwadzieścia lat*."
+          }
+        },
+        {
+          "text": "Ile masz lat?",
+          "meaning": {
+            "en": "How old are you? (to a friend)"
+          },
+          "register": "informal",
+          "note": {
+            "en": "That asks her back, and as you would ask a friend. Give your age: *mam dwadzieścia lat*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Dziękuję. Wszystko w porządku. Do widzenia!",
+      "meaning": {
+        "en": "Thank you. Everything is in order. Goodbye!"
+      },
+      "replies": [
+        {
+          "text": "Dziękuję! Do widzenia!",
+          "meaning": {
+            "en": "Thank you! Goodbye!"
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Dziękuję! Do widzenia!",
+            "Do widzenia!",
+            "Dziękuję bardzo! Do widzenia!",
+            "Dziękuję, do widzenia!"
+          ]
+        },
+        {
+          "text": "Pa!",
+          "meaning": {
+            "en": "Bye!"
+          },
+          "register": "informal",
+          "note": {
+            "en": "*Pa* is for friends. To the secretary say *do widzenia*."
+          }
+        },
+        {
+          "text": "Smacznego!",
+          "meaning": {
+            "en": "Enjoy your meal!"
+          },
+          "note": {
+            "en": "*Smacznego* is for a meal. She is saying goodbye."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Miłego dnia!",
+      "meaning": {
+        "en": "Have a nice day!"
+      }
+    }
+  ]
+}

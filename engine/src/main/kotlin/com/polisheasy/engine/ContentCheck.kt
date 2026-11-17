@@ -49,6 +49,9 @@ val TRUE_FALSE_STATEMENTS = 3..5
 /** How many lines an order_lines dialogue has. */
 val ORDER_LINES = 3..6
 
+/** How many replies a turn of a chat offers. */
+val CHAT_REPLIES = 2..4
+
 /** The most Items one Daily Set may introduce. */
 const val MAX_NEW_ITEMS = 8
 
@@ -272,6 +275,38 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
             if (instruction.polish.isBlank()) report(file, id, "The instruction for $id has no Polish")
             needsText(file, id, "The instruction for $id", instruction.meaning)
         }
+    }
+
+    // Chats
+    content.chats.forEach { (file, script) ->
+        val name = "Chat ${script.id}"
+        needsText(file, script.id, "The title of $name", script.title)
+        needsText(file, script.id, "The scene of $name", script.scene)
+        if (script.items.isEmpty()) report(file, script.id, "$name lists no Items, so it would be offered before anything is learned")
+        script.turns.forEach { turn ->
+            needsText(file, script.id, "The meaning of turn ${turn.id} of $name", turn.meaning)
+            if (turn.replies.isNotEmpty() && turn.replies.size !in CHAT_REPLIES) {
+                report(file, script.id, "Turn ${turn.id} of $name has ${turn.replies.size} replies; it must have ${CHAT_REPLIES.first} to ${CHAT_REPLIES.last}")
+            }
+            turn.replies.forEachIndexed { index, reply ->
+                needsText(file, script.id, "The meaning of reply ${index + 1} of turn ${turn.id} of $name", reply.meaning)
+                if (!reply.right && reply.note != null) needsText(file, script.id, "The note of reply ${index + 1} of turn ${turn.id} of $name", reply.note)
+                reply.note?.let { note -> note.values.distinct().forEach { text -> marksProblem(text)?.let { report(file, script.id, "The note of reply ${index + 1} of turn ${turn.id} of $name $it") } } }
+            }
+        }
+        // Every turn can be reached from the first, and the conversation can end.
+        val byId = script.turns.associateBy { it.id }
+        val reached = mutableSetOf<String>()
+        val toVisit = ArrayDeque(listOfNotNull(script.turns.firstOrNull()?.id))
+        var ends = false
+        while (toVisit.isNotEmpty()) {
+            val turn = byId[toVisit.removeFirst()] ?: continue
+            if (!reached.add(turn.id)) continue
+            if (turn.replies.isEmpty()) ends = true
+            turn.replies.filter { it.right }.forEach { reply -> reply.next?.let(toVisit::addLast) ?: run { ends = true } }
+        }
+        script.turns.filter { it.id !in reached }.forEach { report(file, script.id, "Turn ${it.id} of $name cannot be reached from its first turn") }
+        if (script.turns.isNotEmpty() && !ends) report(file, script.id, "$name never ends")
     }
 
     // Items

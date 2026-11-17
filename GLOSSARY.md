@@ -63,6 +63,10 @@ _Avoid_: Track (except for the number), audio file, Clip (a Clip is the app's ow
 **Step mode**:
 The player's *posłuchaj i powtórz*: it plays one line of a Class recording, waits a little longer than the line took for the Learner to say it aloud, then plays the next.
 
+**Powtórz na głos**:
+The Learner saying Polish aloud into the microphone, heard by the phone's speech recognizer and matched leniently. It is never required: where it is offered there is always another way on, and without a recognizer or the microphone it is not offered.
+_Avoid_: Speech test, pronunciation score
+
 **Listening task**:
 A short question on a Class recording, or on some of its lines, written for the app: true or false (*Prawda czy nieprawda?*), a choice, or a short dictation (*Co mówi lektor?*) checked like a typed answer. In `content/kpk1/listening.json`. Answered on the recording's screen, from Słuchaj, never inside a Daily Set, so the Path never depends on the recordings; nothing about it is saved.
 _Avoid_: Exercise (an Exercise is part of a Daily Set)
@@ -112,6 +116,10 @@ _Avoid_: Arcade, extras, practice mode
 **Game**:
 One kind of play in Practice, such as the Verb challenge. A Game uses only Items and Tips from Daily Sets the Learner has completed, and opens once they have learned enough for it. Most Games can be played in several ways, such as one verb or all of them, choosing or typing.
 _Avoid_: Mini-game, activity, Exercise (which belongs to a Daily Set)
+
+**Chat**:
+The Game of a messenger conversation with one person, from a script written for the app. The Learner replies by choosing, typing or saying it; a reply in the wrong register is put right with a note.
+_Avoid_: Dialogue (the book's printed dialogues), conversation Exercise
 
 **Round**:
 One play of a Game from start to result. A Round left unfinished is not kept.

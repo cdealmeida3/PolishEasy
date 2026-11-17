@@ -622,4 +622,22 @@
     </plurals>
     <string name="lesson_grammar_note">%1$d of %2$d grammar tables of this chapter</string>
     <string name="settings_grammar_note">The grammar tables of every section you have done</string>
+    <string name="game_chat">Chat</string>
+    <string name="game_chat_note">Text back and forth with someone, in the right register.</string>
+    <string name="game_chat_needs">Opens when you have learned the words of a conversation.</string>
+    <string name="choice_chat">Chat with</string>
+    <string name="choice_way">Reply by</string>
+    <string name="option_say">Saying it</string>
+    <string name="chat_typing">%1$s is typing</string>
+    <string name="chat_type_label">Your reply in Polish</string>
+    <string name="chat_choose_instruction">Choose your reply</string>
+    <string name="chat_say_instruction">Say your reply</string>
+    <string name="chat_choose_instead">Choose instead</string>
+    <string name="speak_mic">Say it aloud</string>
+    <string name="speak_listening">Listening</string>
+    <string name="speak_heard_nothing">Nothing was heard. Try again, or skip it.</string>
+    <string name="speak_heard">You said: %1$s</string>
+    <string name="speak_say_it">Now say it aloud.</string>
+    <string name="speak_right">Well said!</string>
+    <string name="speak_again">Not quite. Listen once more and try again.</string>
 </resources>

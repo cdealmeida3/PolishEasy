@@ -118,6 +118,10 @@ class RecordingRecordings : Recordings {
         state = state.copy(step = on)
     }
 
+    override fun hold() {
+        asked += "hold"
+    }
+
     override fun close() {
         asked += "close"
         state = state.copy(number = null, playing = false)
@@ -153,4 +157,46 @@ fun taggedMp3(title: String): ByteArray {
     val header = byteArrayOf('I'.code.toByte(), 'D'.code.toByte(), '3'.code.toByte(), 3, 0, 0) +
         byteArrayOf((tag shr 21 and 0x7f).toByte(), (tag shr 14 and 0x7f).toByte(), (tag shr 7 and 0x7f).toByte(), (tag and 0x7f).toByte())
     return header + frame + byteArrayOf(0xFF.toByte(), 0xFB.toByte(), 0x90.toByte(), 0x00)
+}
+
+/**
+ * Stands in for the speech recognizer: whether it is [available] is the test's to set, the
+ * microphone is always permitted, and what is heard is what the test says with [hear].
+ */
+class FakeSpeech(available: Boolean = true) : Speech {
+    override var available by androidx.compose.runtime.mutableStateOf(available)
+    override val permitted = true
+    override var listening by androidx.compose.runtime.mutableStateOf(false)
+        private set
+
+    private var onHeard: ((List<String>) -> Unit)? = null
+
+    /** How many times the screens started listening. */
+    var listened = 0
+        private set
+
+    override fun listen(onHeard: (List<String>) -> Unit) {
+        listened++
+        listening = true
+        this.onHeard = onHeard
+    }
+
+    /** The Learner said something the recognizer understood as [guesses], best first; none for nothing understood. */
+    fun hear(vararg guesses: String) {
+        val heard = checkNotNull(onHeard) { "Nothing is listening" }
+        onHeard = null
+        listening = false
+        heard(guesses.toList())
+    }
+
+    override fun stop() {
+        listening = false
+        onHeard = null
+    }
+
+    override fun refused() {
+        available = false
+    }
+
+    override fun release() = Unit
 }

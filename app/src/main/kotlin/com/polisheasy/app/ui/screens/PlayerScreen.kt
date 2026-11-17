@@ -190,6 +190,7 @@ internal fun PlayerScreen(
                 {
                     Options(exercise.options, tapped, feedback, polish = true, choose)
                     CantListen(answering, onCantListen)
+                    SayItBack(feedback?.correctAnswer)
                 }
             }
             is ExerciseView.ChoosePolish -> {

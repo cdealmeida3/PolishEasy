@@ -54,6 +54,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 - A gender in the practice file is "m", "f" or "n", is given to a defined Item of one word, and every gender given has a word for "my", itself a defined Item.
 - A picture names an Item that is defined, has an image or a glyph and not both, and no Item has two pictures.
 - A Clip has text, an id made of lower-case letters, digits and single hyphens, and no other Clip says the same text.
+- A Chat script: no two scripts share an id; it has turns, no two with one id, and every Item it lists is defined. Every line the person says has text. A turn with replies has a right one, no blank reply and no two that read the same; a right reply leads only to a turn that exists, and a wrong reply leads nowhere. A right reply's Accepted Answers are not blank.
 
 ### Shipping rules
 
@@ -65,6 +66,7 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 - **Base Language.** Everything the Learner reads in the Base Language has English text that is not blank: Level and Unit titles, Tip titles and bodies, the meaning in a conjugation table, the options of `choose_translation`, the prompt of `type_answer` and `word_tiles`, the `meaning` and `sentenceMeaning` of `conjugation`, the `meaning` of `listen_choose` and `listen_type`, the `meaning` of `fill_gaps`, of each `match_pairs` pair, of a `true_false` and its statements, the `prompt` of `order_lines`, a grammar table's title, and the `meaning` of an Item. (`BASE_LANGUAGES` lists the languages required.)
 - **Audio.** Every Polish text the app can speak has a Clip, every Clip has its `.ogg` file beside the manifest, every Clip says something the course speaks, and no other file sits beside the manifest.
 - **Pictures.** Every picture's image file is beside the list of pictures, no other file sits there, and no two Items of one Unit have the same picture.
+- **Chats.** A Chat script has a title and a scene, lists its Items, and gives a meaning for every line and reply; a note has text and its Polish marks pair up. A turn with replies has 2 to 4 of them (`CHAT_REPLIES`). Every turn can be reached from the first, and the chat has an end.
 - **Belonging.** Every `.json` file under `content/` is listed by `course.json`. A Level has Units and a Unit has Daily Sets. A Unit's id starts with its Level's id and a hyphen, a Daily Set's with its Unit's, and an Exercise's or Tip's with its Daily Set's (`a1` → `a1-u01` → `a1-u01-d05` → `a1-u01-d05-e03`).
 - **No id twice.** No two Levels, Units, Daily Sets or Tips share an id.
 - **Shipped identifiers.** See below.
