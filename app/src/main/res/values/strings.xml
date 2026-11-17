@@ -346,6 +346,37 @@
     <string name="numbers_typed_nothing">Nothing typed yet</string>
     <string name="numbers_answer">%1$s · %2$s</string>
     <string name="keypad_erase">Delete the last digit</string>
+    <string name="game_spell_it">Spell it</string>
+    <string name="game_spell_it_note">Tap the letters in order to spell the word.</string>
+    <string name="game_spell_it_needs">Opens when you learn four words to spell.</string>
+    <string name="choice_from">Spell from the</string>
+    <string name="spell_instruction">Tap the letters to spell the word</string>
+    <string name="spell_empty">No letters yet, %d to place</string>
+    <string name="spell_so_far">%1$s so far, %2$d of %3$d letters</string>
+    <string name="spell_whole">Spelled: %1$s</string>
+    <string name="game_quick_round">Quick round</string>
+    <string name="game_quick_round_note">Match or no match? As many as you can before the time runs out.</string>
+    <string name="game_quick_round_needs">Opens when you learn six words.</string>
+    <string name="choice_match">Match the word with its</string>
+    <string name="choice_time">Time</string>
+    <string name="option_seconds">%d seconds</string>
+    <string name="quick_instruction">Do they match?</string>
+    <string name="quick_match">Match</string>
+    <string name="quick_no_match">No match</string>
+    <string name="quick_time">%1$d:%2$02d</string>
+    <string name="quick_missed">%1$s · %2$s</string>
+    <plurals name="quick_left">
+        <item quantity="one">%d second left</item>
+        <item quantity="other">%d seconds left</item>
+    </plurals>
+    <plurals name="result_right">
+        <item quantity="one">right answer</item>
+        <item quantity="other">right answers</item>
+    </plurals>
+    <plurals name="result_right_sentence">
+        <item quantity="one">%d right answer before the time ran out</item>
+        <item quantity="other">%d right answers before the time ran out</item>
+    </plurals>
     <string name="game_verb_challenge">Verb challenge</string>
     <string name="game_verb_challenge_note">Pick the form, fill the table, finish the sentence.</string>
     <string name="game_verb_challenge_needs">Opens when you learn your first verb table.</string>

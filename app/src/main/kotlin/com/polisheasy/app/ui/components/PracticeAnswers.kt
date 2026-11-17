@@ -5,6 +5,8 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
@@ -19,6 +21,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.LiveRegionMode
 import androidx.compose.ui.semantics.clearAndSetSemantics
@@ -243,6 +247,101 @@ private fun Bucket(bucket: BucketView, onClick: () -> Unit, modifier: Modifier, 
             OptionState.Right -> MarkIcon(Mark.Right, Modifier.align(Alignment.TopEnd).padding(Space.xs), size = Size.tileMark)
             OptionState.Wrong -> MarkIcon(Mark.Missed, Modifier.align(Alignment.TopEnd).padding(Space.xs), size = Size.tileMark)
             else -> Unit
+        }
+    }
+}
+
+/**
+ * A word being spelled: a slot for each of its [length] letters, the first of them holding the
+ * [letters] placed so far. Once the word is whole it takes the colours of its [mark], with the
+ * tick or the cross after it. [description] is what a screen reader says for it.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+fun SpelledWord(letters: List<String>, length: Int, description: String, modifier: Modifier = Modifier, mark: Mark? = null) {
+    val scheme = MaterialTheme.colorScheme
+    val colors = PolishEasyTheme.colors
+    val (fill, line, ink) = when (mark) {
+        Mark.Right -> Triple(colors.successContainer, colors.success, colors.onSuccessContainer)
+        Mark.Missed -> Triple(colors.cautionContainer, colors.caution, colors.onCautionContainer)
+        null -> Triple(scheme.secondaryContainer, scheme.outline, scheme.onSecondaryContainer)
+    }
+    FlowRow(
+        horizontalArrangement = Arrangement.spacedBy(Space.xxs, Alignment.CenterHorizontally),
+        verticalArrangement = Arrangement.spacedBy(Space.xxs),
+        itemVerticalAlignment = Alignment.CenterVertically,
+        modifier = modifier
+            .fillMaxWidth()
+            .clearAndSetSemantics {
+                contentDescription = description
+                liveRegion = LiveRegionMode.Polite
+            },
+    ) {
+        repeat(length) { place ->
+            val letter = letters.getOrNull(place)
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .widthIn(min = LetterSlotLeast)
+                    .heightIn(min = Size.tile)
+                    .background(if (letter == null) scheme.surfaceContainerHigh else fill, MaterialTheme.shapes.small)
+                    .border(Edge.border, if (letter == null) scheme.outlineVariant else line, MaterialTheme.shapes.small),
+            ) {
+                if (letter != null) {
+                    Text(letter, style = MaterialTheme.typography.headlineSmall.inPolish(), color = ink, modifier = Modifier.appearing())
+                }
+            }
+        }
+        if (mark != null) MarkIcon(mark)
+    }
+}
+
+private val LetterSlotLeast = 30.dp
+
+/**
+ * The two answers of the Quick round, side by side: "no match" with a cross on the left and
+ * "match" with a tick on the right. Not [enabled], they fade and do not respond.
+ */
+@Composable
+fun MatchButtons(
+    noMatchLabel: String,
+    matchLabel: String,
+    onNoMatch: () -> Unit,
+    onMatch: () -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
+) {
+    val colors = PolishEasyTheme.colors
+    Row(
+        horizontalArrangement = Arrangement.spacedBy(Space.xs),
+        modifier = modifier
+            .fillMaxWidth()
+            .alpha(if (enabled) 1f else Motion.FADED_ALPHA),
+    ) {
+        MatchButton(noMatchLabel, R.drawable.ic_close, colors.caution, enabled, onNoMatch, Modifier.weight(1f))
+        MatchButton(matchLabel, R.drawable.ic_check, colors.success, enabled, onMatch, Modifier.weight(1f))
+    }
+}
+
+@Composable
+private fun MatchButton(label: String, icon: Int, tint: Color, enabled: Boolean, onClick: () -> Unit, modifier: Modifier) {
+    val scheme = MaterialTheme.colorScheme
+    Edged(
+        fill = scheme.surfaceContainerLowest,
+        edge = scheme.outlineVariant,
+        corner = Corner.large,
+        border = Edge.border,
+        enabled = enabled,
+        onClick = onClick,
+        modifier = modifier.heightIn(min = Size.letterOption),
+    ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(Space.xxs),
+            modifier = Modifier.padding(Space.xs),
+        ) {
+            Icon(painterResource(icon), contentDescription = null, tint = tint, modifier = Modifier.size(Scaled.icon(Size.feedbackIcon)))
+            Text(label, style = MaterialTheme.typography.titleMedium, color = scheme.onSurface, textAlign = TextAlign.Center)
         }
     }
 }

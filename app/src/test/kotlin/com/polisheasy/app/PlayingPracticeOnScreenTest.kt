@@ -33,6 +33,8 @@ import com.polisheasy.engine.ChainRound
 import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
 import com.polisheasy.engine.NumberRound
+import com.polisheasy.engine.QuickRound
+import com.polisheasy.engine.SpellRound
 import com.polisheasy.engine.InMemoryLearnerProgress
 import com.polisheasy.engine.InMemoryPracticeProgress
 import com.polisheasy.engine.ListenRound
@@ -87,10 +89,9 @@ class PlayingPracticeOnScreenTest {
         openApp()
         tap(R.string.nav_practice)
         shows(R.string.practice_locked_title)
-        shows(R.string.game_verb_challenge)
-        // A locked Game does not open.
-        tap(R.string.game_verb_challenge)
-        shows(R.string.practice_locked_title)
+        // A locked Game does not open: its card is there, further down, and tapping it changes nothing.
+        openGame(R.string.game_verb_challenge)
+        assertTrue(viewModel?.screen is Screen.Practice)
 
         // The card that says what opens Practice starts the Daily Set.
         tap(R.string.home_start)
@@ -101,14 +102,14 @@ class PlayingPracticeOnScreenTest {
         tap(R.string.nav_practice)
         absent(R.string.practice_locked_title)
         shows(R.string.practice_open_note)
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         shows(R.string.setup_play)
     }
 
     @Test
     fun `a Round of the Verb challenge is played from its setup to its result, which becomes the Best`() {
         openPracticeAfterTodaysDailySet()
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         shows(R.string.setup_no_best)
         shows("być")
         tap(R.string.setup_play)
@@ -139,7 +140,7 @@ class PlayingPracticeOnScreenTest {
     @Test
     fun `a better Round is a new Best, and a worse one leaves the Best as it was`() {
         openPracticeAfterTodaysDailySet()
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         tap(R.string.setup_play)
         answerWrong()
         playOut()
@@ -162,12 +163,12 @@ class PlayingPracticeOnScreenTest {
     @Test
     fun `each way of playing has its own Best, and typing takes the form typed`() {
         openPracticeAfterTodaysDailySet()
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         tap(R.string.setup_play)
         playOut()
         tap(R.string.result_done)
 
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         shows(text(R.string.practice_best, right(13)))
         tap(R.string.option_type)
         shows(R.string.setup_no_best)
@@ -186,7 +187,7 @@ class PlayingPracticeOnScreenTest {
     @Test
     fun `a right answer moves on by itself after a moment`() {
         openPracticeAfterTodaysDailySet()
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         tap(R.string.setup_play)
         screen.waitForIdle()
         screen.mainClock.autoAdvance = false
@@ -202,14 +203,14 @@ class PlayingPracticeOnScreenTest {
     @Test
     fun `a Round left unfinished is not kept`() {
         openPracticeAfterTodaysDailySet()
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         tap(R.string.setup_play)
         answerRight()
         screen.onNodeWithContentDescription(text(R.string.round_close)).performClick()
 
         shows(R.string.practice_open_note)
         screen.onNodeWithText(app.resources.getQuantityString(R.plurals.practice_rounds_today, 1, 1)).assertDoesNotExist()
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         shows(R.string.setup_no_best)
         // Back from the setup is Practice again.
         back()
@@ -219,7 +220,7 @@ class PlayingPracticeOnScreenTest {
     @Test
     fun `the Best is kept when the app is closed, and Practice locks again the next day`() {
         openPracticeAfterTodaysDailySet()
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         tap(R.string.setup_play)
         playOut()
         tap(R.string.result_done)
@@ -238,7 +239,7 @@ class PlayingPracticeOnScreenTest {
     @Test
     fun `a sentence is said whole as it is answered, and nothing is said with Sound off`() {
         openPracticeAfterTodaysDailySet()
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         tap(R.string.setup_play)
         clips.asked.clear()
         playOut()
@@ -248,7 +249,7 @@ class PlayingPracticeOnScreenTest {
         tap(R.string.nav_settings)
         tap(R.string.settings_sound)
         tap(R.string.nav_practice)
-        tap(R.string.game_verb_challenge)
+        openGame(R.string.game_verb_challenge)
         tap(R.string.setup_play)
         clips.asked.clear()
         playOut()
@@ -258,7 +259,7 @@ class PlayingPracticeOnScreenTest {
     @Test
     fun `Picture cards shows the pictures of the words learned, and a card turns to show its word and say it`() {
         openPracticeAfterTodaysDailySet()
-        tap(R.string.game_picture_cards)
+        openGame(R.string.game_picture_cards)
 
         // Daily Set 1 taught four words that have a picture; a picture is named by what it means.
         listOf("hello (polite); good morning", "thank you", "goodbye", "no").forEach { meaning ->
@@ -298,7 +299,7 @@ class PlayingPracticeOnScreenTest {
         tap(R.string.nav_settings)
         tap(R.string.settings_sound)
         tap(R.string.nav_practice)
-        tap(R.string.game_picture_cards)
+        openGame(R.string.game_picture_cards)
         clips.asked.clear()
 
         screen.onNodeWithContentDescription("thank you").performClick()
@@ -311,7 +312,7 @@ class PlayingPracticeOnScreenTest {
     @Test
     fun `Memory pairs is played by turning tiles two at a time, and the fewest turns is the Best`() {
         openPracticeAfterTodaysDailySet()
-        tap(R.string.game_memory_pairs)
+        openGame(R.string.game_memory_pairs)
         // Four pictures are too few for a board of them, and four Clips for one of sounds: the pairs are a word and its meaning.
         absent(R.string.option_picture_word)
         absent(R.string.option_sound_word)
@@ -363,7 +364,7 @@ class PlayingPracticeOnScreenTest {
         tap(R.string.nav_settings)
         tap(R.string.settings_sound)
         tap(R.string.nav_practice)
-        tap(R.string.game_memory_pairs)
+        openGame(R.string.game_memory_pairs)
         tap(R.string.setup_play)
         clips.asked.clear()
 
@@ -390,7 +391,7 @@ class PlayingPracticeOnScreenTest {
     fun `Listen and tap says a word, and the picture tapped is marked right or wrong`() {
         openPracticeAfterTodaysDailySet()
         clips.asked.clear()
-        tap(R.string.game_listen_and_tap)
+        openGame(R.string.game_listen_and_tap)
         shows(R.string.option_picture)
         shows(R.string.option_meaning)
         tap(R.string.setup_play)
@@ -423,7 +424,7 @@ class PlayingPracticeOnScreenTest {
     @Test
     fun `Listen and tap by meaning shows four meanings to tap`() {
         openPracticeAfterTodaysDailySet()
-        tap(R.string.game_listen_and_tap)
+        openGame(R.string.game_listen_and_tap)
         tap(R.string.option_meaning)
         tap(R.string.setup_play)
 
@@ -442,18 +443,17 @@ class PlayingPracticeOnScreenTest {
 
         // Both Games that are only listening say so.
         screen.onAllNodesWithText(text(R.string.practice_needs_sound)).assertCountEquals(2)
-        tap(R.string.game_listen_and_tap)
-        shows(R.string.practice_open_note)
-        absent(R.string.setup_play)
-        tap(R.string.game_sound_gaps)
-        absent(R.string.setup_play)
+        openGame(R.string.game_listen_and_tap)
+        assertTrue(viewModel?.screen is Screen.Practice)
+        openGame(R.string.game_sound_gaps)
+        assertTrue(viewModel?.screen is Screen.Practice)
     }
 
     @Test
     fun `Sound gaps says a word and shows it with a gap, and the letters chosen fill it or are marked wrong`() {
         openPracticeAfterTodaysDailySet()
         clips.asked.clear()
-        tap(R.string.game_sound_gaps)
+        openGame(R.string.game_sound_gaps)
         tap(R.string.setup_play)
         screen.waitForIdle()
 
@@ -601,18 +601,87 @@ class PlayingPracticeOnScreenTest {
     }
 
     @Test
+    fun `Spell it lays out a word's letters, and tapped in order they spell it`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_spell_it)
+        tap(R.string.option_meaning)
+        clips.asked.clear()
+        tap(R.string.setup_play)
+
+        val first = checkNotNull(spelling().word)
+        shows(first.meaning)
+        screen.onNodeWithContentDescription(text(R.string.spell_empty, first.tiles.size)).assertIsDisplayed()
+
+        // A letter that does not come first stays where it is, and is a slip.
+        tapLetter(first.tiles.first { it != first.letters.first() })
+        assertEquals(1, spelling().slips)
+        screen.onNodeWithContentDescription(text(R.string.spell_empty, first.tiles.size)).assertIsDisplayed()
+
+        // In order, each letter takes its place; whole, the word is said, and the Round waits because of the slip.
+        tapLetter(first.letters.first())
+        screen.onNodeWithContentDescription(text(R.string.spell_so_far, first.letters.first(), 1, first.tiles.size)).assertIsDisplayed()
+        first.letters.drop(1).forEach(::tapLetter)
+        screen.onNodeWithContentDescription(text(R.string.spell_whole, first.polish)).assertIsDisplayed()
+        assertEquals(listOfNotNull(viewModel?.practiceClipOf(first.polish)?.let { Played(it.path, slow = false) }), clips.played)
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            checkNotNull(spelling().word).letters.forEach(::tapLetter)
+            tap(R.string.action_continue)
+        }
+        showsScore(5, 6)
+        showsFirstBest()
+    }
+
+    @Test
+    fun `the Quick round runs against a clock, and a wrong answer waits while it runs`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_quick_round)
+        tap(R.string.option_meaning)
+        tap(R.string.setup_play)
+
+        // A word and a meaning, and a minute on the clock.
+        val first = checkNotNull(quick().card)
+        shows(first.polish)
+        shows(first.shownMeaning)
+        shows(text(R.string.quick_time, 1, 0))
+        screen.onNodeWithContentDescription(quantity(R.plurals.quick_left, 60)).assertIsDisplayed()
+
+        // Right: the next card is there at once.
+        tap(if (first.matches) R.string.quick_match else R.string.quick_no_match)
+        shows(right(1))
+        val second = checkNotNull(quick().card)
+        shows(second.polish)
+
+        // Wrong: what the word means is shown, and nothing more is answered until the Learner moves on.
+        tap(if (second.matches) R.string.quick_no_match else R.string.quick_match)
+        shows(text(R.string.quick_missed, second.polish, second.meaning))
+        screen.onNode(hasText(text(R.string.quick_match)) and hasClickAction()).assertIsNotEnabled()
+        screen.mainClock.advanceTimeBy(2_000)
+        shows(text(R.string.quick_time, 0, 58))
+        tap(R.string.action_continue)
+        shows(checkNotNull(quick().card).polish)
+
+        // The time runs out: the result is the right answers.
+        screen.mainClock.advanceTimeBy(58_000)
+        screen.waitForIdle()
+        screen.onNodeWithContentDescription(quantity(R.plurals.result_right_sentence, 1)).assertIsDisplayed()
+        showsFirstBest()
+    }
+
+    @Test
     fun `Phrase chains stays closed until three sentences have been built`() {
         openPracticeAfterTodaysDailySet()
 
         shows(R.string.game_phrase_chains_needs)
-        tap(R.string.game_phrase_chains)
+        openGame(R.string.game_phrase_chains)
         absent(R.string.setup_play)
     }
 
     @Test
     fun `a sentence is chained a word at a time, a wrong card is a slip, and the fewest slips is the Best`() {
         openPracticeOverTheRealCourse()
-        tap(R.string.game_phrase_chains)
+        openGame(R.string.game_phrase_chains)
         tap(R.string.option_read)
         tap(R.string.setup_play)
 
@@ -650,7 +719,7 @@ class PlayingPracticeOnScreenTest {
     fun `heard, a sentence is said as it appears and its meaning is shown once it is chained`() {
         openPracticeOverTheRealCourse()
         clips.asked.clear()
-        tap(R.string.game_phrase_chains)
+        openGame(R.string.game_phrase_chains)
         tap(R.string.setup_play)
 
         screen.waitForIdle()
@@ -776,6 +845,13 @@ class PlayingPracticeOnScreenTest {
     }
 
     private fun slips(count: Int): String = quantity(R.plurals.practice_slips, count)
+
+    private fun spelling(): SpellRound = (viewModel?.screen as Screen.Round).round as SpellRound
+
+    private fun quick(): QuickRound = (viewModel?.screen as Screen.Round).round as QuickRound
+
+    /** Taps a tile that says [letter] and is not yet in the word. */
+    private fun tapLetter(letter: String) = screen.onAllNodes(hasText(letter) and hasClickAction())[0].performScrollTo().performClick()
 
     private fun numbers(): NumberRound = (viewModel?.screen as Screen.Round).round as NumberRound
 

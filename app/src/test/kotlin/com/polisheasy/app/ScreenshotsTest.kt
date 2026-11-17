@@ -64,6 +64,8 @@ import com.polisheasy.engine.ChainRound
 import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
 import com.polisheasy.engine.NumberRound
+import com.polisheasy.engine.QuickRound
+import com.polisheasy.engine.SpellRound
 import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
@@ -951,6 +953,117 @@ class ScreenshotsTest {
             moveOn()
         }
         shot("107-moj-result")
+    }
+
+    @Test
+    fun `Spell it over the real course in the light theme`() = spellIt("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Spell it over the real course in the dark theme`() = spellIt("dark")
+
+    @Test
+    fun `Spell it over the real course at the largest font size`() = atTheLargestFontSize { spellIt("large") }
+
+    /** Spell it: before a Round, a word new, part spelled, whole, whole after a slip, from a meaning, and the result. */
+    private fun spellIt(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as SpellRound
+
+        fun tapLetter(letter: String) = screen.onAllNodes(hasText(letter) and hasClickAction())[0].performScrollTo().performClick()
+
+        /** Spells what is left of the word and holds it, whole, for its picture. */
+        fun spell() {
+            val word = checkNotNull(round().word)
+            val left = word.letters.drop(round().placed.size)
+            left.dropLast(1).forEach(::tapLetter)
+            screen.waitForIdle()
+            screen.mainClock.autoAdvance = false
+            tapLetter(left.last())
+            screen.mainClock.advanceTimeBy(500)
+        }
+
+        fun moveOn() {
+            screen.mainClock.autoAdvance = true
+            tap(R.string.action_continue)
+        }
+
+        openRealPractice()
+        openGame(R.string.game_spell_it)
+        shot("108-spell-setup")
+        tap(R.string.setup_play)
+        shot("109-spell-question")
+        checkNotNull(round().word).letters.take(2).forEach(::tapLetter)
+        shot("110-spell-part")
+        spell()
+        shot("111-spell-whole")
+        moveOn()
+        val second = checkNotNull(round().word)
+        tapLetter(second.tiles.first { it != second.letters.first() })
+        spell()
+        shot("112-spell-slipped")
+        leaveRound()
+
+        openGame(R.string.game_spell_it)
+        tap(R.string.option_meaning)
+        tap(R.string.setup_play)
+        // The longest word of the Round, to show its tiles wrap.
+        val longest = round().words.maxOf { it.tiles.size }
+        while (checkNotNull(round().word).tiles.size != longest) {
+            spell()
+            moveOn()
+        }
+        tapLetter(checkNotNull(round().word).letters.first())
+        shot("113-spell-meaning")
+        while (viewModel?.screen is Screen.Round) {
+            spell()
+            moveOn()
+        }
+        shot("114-spell-result")
+    }
+
+    @Test
+    fun `the Quick round over the real course in the light theme`() = quickRound("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `the Quick round over the real course in the dark theme`() = quickRound("dark")
+
+    @Test
+    fun `the Quick round over the real course at the largest font size`() = atTheLargestFontSize { quickRound("large") }
+
+    /** The Quick round: before a Round, a card with a picture, a wrong answer, part of the way through, with a meaning, and the result. */
+    private fun quickRound(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as QuickRound
+
+        fun answer(correctly: Boolean) {
+            val matches = checkNotNull(round().card).matches
+            tap(if (matches == correctly) R.string.quick_match else R.string.quick_no_match)
+        }
+
+        openRealPractice()
+        openGame(R.string.game_quick_round)
+        shot("115-quick-setup")
+        tap(R.string.setup_play)
+        shot("116-quick-card")
+        repeat(4) { answer(correctly = true) }
+        screen.mainClock.advanceTimeBy(21_000)
+        shot("117-quick-under-way")
+        answer(correctly = false)
+        shot("118-quick-wrong")
+        leaveRound()
+
+        openGame(R.string.game_quick_round)
+        tap(R.string.option_meaning)
+        tap(R.string.setup_play)
+        repeat(7) { answer(correctly = true) }
+        screen.mainClock.advanceTimeBy(45_000)
+        shot("119-quick-meaning")
+        screen.mainClock.advanceTimeBy(15_000)
+        shot("120-quick-result")
     }
 
     @Test
