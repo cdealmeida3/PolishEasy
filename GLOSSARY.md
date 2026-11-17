@@ -133,6 +133,10 @@ _Avoid_: Picture quiz, labelling exercise
 The Game of sorting learned nouns under the word for "this" of their gender, as Mój, moja, moje sorts them under "my". Chapter 3's Game.
 _Avoid_: Gender quiz, demonstratives game
 
+**Opposites snap**:
+The Game of saying, against the clock, whether two learned adjectives shown in the same gender are opposites, as *wesoły* and *smutny* are. Chapter 4's Game.
+_Avoid_: Antonym quiz, opposites match
+
 **Register sort**:
 The Game of sorting learned phrases by Register, against the clock: to *pan* or *pani* (O), to a friend (N) or to anyone (U).
 _Avoid_: Formality quiz

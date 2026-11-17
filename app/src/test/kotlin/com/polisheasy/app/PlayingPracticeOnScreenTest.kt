@@ -36,6 +36,7 @@ import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
 import com.polisheasy.engine.LabelRound
 import com.polisheasy.engine.NumberRound
+import com.polisheasy.engine.OppositesRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.Register
 import com.polisheasy.engine.RegisterRound
@@ -884,6 +885,54 @@ class PlayingPracticeOnScreenTest {
     }
 
     @Test
+    fun `Opposites snap runs against a clock, and a wrong answer shows the real opposite while it runs`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_opposites_snap)
+        tap(R.string.setup_play)
+
+        // Two words, and a minute on the clock.
+        val first = checkNotNull(opposites().card)
+        shows(R.string.opposites_instruction)
+        shows(first.word)
+        shows(first.shown)
+        shows(text(R.string.quick_time, 1, 0))
+        screen.onNodeWithContentDescription(quantity(R.plurals.quick_left, 60)).assertIsDisplayed()
+
+        // Right: the next pair is there at once.
+        tap(if (first.opposites) R.string.opposites_yes else R.string.opposites_no)
+        shows(right(1))
+        val second = checkNotNull(opposites().card)
+
+        // Wrong: the real opposite is shown, and nothing more is answered until the Learner moves on.
+        tap(if (second.opposites) R.string.opposites_no else R.string.opposites_yes)
+        shows(text(R.string.opposites_missed, second.word, second.meaning, second.opposite, second.oppositeMeaning))
+        screen.onNode(hasText(text(R.string.opposites_yes)) and hasClickAction()).assertIsNotEnabled()
+        screen.mainClock.advanceTimeBy(2_000)
+        shows(text(R.string.quick_time, 0, 58))
+        tap(R.string.action_continue)
+        shows(checkNotNull(opposites().card).word)
+
+        // The time runs out: the result is the right answers.
+        screen.mainClock.advanceTimeBy(58_000)
+        screen.waitForIdle()
+        screen.onNodeWithContentDescription(quantity(R.plurals.result_right_sentence, 1)).assertIsDisplayed()
+        showsFirstBest()
+    }
+
+    @Test
+    fun `the Verb challenge offers a conjugation of two learned verbs as a way to play`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_verb_challenge)
+        screen.onNodeWithText("-ę, -isz/-ysz").performScrollTo().performClick()
+        tap(R.string.setup_play)
+
+        // Only verbs of that conjugation are asked: never być, nor mieć of -am, -asz.
+        val asked = ((viewModel?.screen as Screen.Round).round as VerbRound).run.questions.map { it.verb }.toSet()
+        assertTrue(asked.size > 1, "$asked")
+        assertTrue(asked.none { it == "być" || it == "mieć" }, "$asked")
+    }
+
+    @Test
     fun `Phrase chains stays closed until three sentences have been built`() {
         openPracticeAfterTodaysDailySet()
 
@@ -1063,6 +1112,8 @@ class PlayingPracticeOnScreenTest {
     private fun spelling(): SpellRound = (viewModel?.screen as Screen.Round).round as SpellRound
 
     private fun quick(): QuickRound = (viewModel?.screen as Screen.Round).round as QuickRound
+
+    private fun opposites(): OppositesRound = (viewModel?.screen as Screen.Round).round as OppositesRound
 
     private fun ankieta(): AnkietaRound = (viewModel?.screen as Screen.Round).round as AnkietaRound
 

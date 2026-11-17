@@ -3,6 +3,18 @@ package com.polisheasy.engine
 import kotlin.random.Random
 
 /**
+ * A Round against the clock: [seconds] in all, [left] still to go. The clock is the screen's: it
+ * calls [tick] once a second, and at none left the Round is finished.
+ */
+interface TimedRound : Round {
+    val seconds: Int
+    val left: Int
+
+    /** One second passes. */
+    fun tick(): TimedRound
+}
+
+/**
  * One card of the Quick round: a Polish word and, beside it, a meaning or a picture that is its
  * own or another word's. [matches] is whether it is its own; [meaning] is what the word does mean.
  */
@@ -25,15 +37,15 @@ data class QuickCard(
 data class QuickRound(
     override val played: List<String>,
     val pictures: Boolean,
-    val seconds: Int,
+    override val seconds: Int,
     val cards: List<QuickCard>,
     val index: Int = 0,
     val right: Int = 0,
     /** How many seconds are left. */
-    val left: Int = seconds,
+    override val left: Int = seconds,
     /** Set while a wrong answer is being shown. */
     val missed: Boolean = false,
-) : Round {
+) : TimedRound {
     override val game: Game get() = Game.QUICK_ROUND
 
     /** The clock, for the bar: the seconds gone of all there are. */
@@ -63,7 +75,7 @@ data class QuickRound(
     fun next(): QuickRound = if (missed) copy(index = index + 1, missed = false) else this
 
     /** One second passes. At none left the Round is finished. */
-    fun tick(): QuickRound = if (finished) this else copy(left = left - 1)
+    override fun tick(): QuickRound = if (finished) this else copy(left = left - 1)
 }
 
 internal object QuickRoundRules : GameRules {

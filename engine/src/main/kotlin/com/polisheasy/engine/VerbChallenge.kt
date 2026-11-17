@@ -143,6 +143,9 @@ internal object VerbChallenge : GameRules {
     const val VERB = "verb"
     const val LEVEL = "level"
     const val MIXED = "mixed"
+
+    /** What an option for a whole conjugation starts with: "group:-ę, -isz/-ysz". */
+    const val GROUP_PREFIX = "group:"
     const val CHOOSE = "choose"
     const val TYPE = "type"
 
@@ -155,22 +158,29 @@ internal object VerbChallenge : GameRules {
 
     override val game = Game.VERB_CHALLENGE
 
+    /** The learned verbs by the conjugation they follow, for each conjugation with two of them or more, in the order met. */
+    private fun groups(verbs: List<LearnedVerb>): Map<String, List<LearnedVerb>> =
+        verbs.filter { it.table.group != null }.groupBy { checkNotNull(it.table.group) }.filterValues { it.size > 1 }
+
     override fun state(learned: Learned, sound: Boolean): GameState =
         if (learned.verbs().isEmpty()) GameState.NEEDS_MORE else GameState.READY
 
     override fun choices(learned: Learned, wanted: List<String>, sound: Boolean): List<ChoiceView> {
-        val verbs = learned.verbs().map { OptionView(it.table.verb, label = it.table.verb) }
-        // Mixed needs two verbs to mix.
+        val learnedVerbs = learned.verbs()
+        val verbs = learnedVerbs.map { OptionView(it.table.verb, label = it.table.verb) }
+        // A conjugation is offered once two of its verbs are learned, to mix them; Mixed needs two verbs of any kind.
+        val groups = groups(learnedVerbs).keys.map { OptionView(GROUP_PREFIX + it, label = it) }
         val mixed = if (verbs.size > 1) listOf(OptionView(MIXED)) else emptyList()
         return listOf(
-            choice(VERB, verbs + mixed, wanted.getOrNull(0)),
+            choice(VERB, verbs + groups + mixed, wanted.getOrNull(0)),
             choice(LEVEL, listOf(OptionView(CHOOSE), OptionView(TYPE)), wanted.getOrNull(1)),
         )
     }
 
     override fun start(learned: Learned, selected: List<String>, sound: Boolean, random: Random, seen: Set<String>, avoidFirst: String?): Round {
         val all = learned.verbs()
-        val verbs = all.filter { it.table.verb == selected[0] }.ifEmpty { all }
+        val verbs = (groups(all)[selected[0].removePrefix(GROUP_PREFIX)]?.takeIf { selected[0].startsWith(GROUP_PREFIX) }
+            ?: all.filter { it.table.verb == selected[0] }).ifEmpty { all }
         fun question(stage: VerbStage, verb: LearnedVerb, person: Person, answers: List<String>, options: List<String>, sentence: Conjugation? = null) =
             VerbQuestion(
                 stage,

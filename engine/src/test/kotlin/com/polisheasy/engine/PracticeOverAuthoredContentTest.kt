@@ -449,6 +449,45 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Opposites snap opens with three learned pairs and shows only learned adjectives, in one gender, opposites only when a pair says so`() {
+        val pairs = course.opposites.flatMap { (one, other) -> listOf(one to other, other to one) }.toSet()
+        fun idOf(form: String) = course.items.single { form in it.spellings && it.forms.isNotEmpty() }.id
+        var opened = false
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val known = course.opposites.count { (one, other) -> one in learned && other in learned }
+            val practice = practiceAfter(days)
+            val state = practice.view().games.single { it.game == Game.OPPOSITES_SNAP }.state
+            assertEquals(if (known >= 3) GameState.READY else GameState.NEEDS_MORE, state, "After $days Daily Sets")
+            if (state != GameState.READY) return@forEach
+            opened = true
+            val round = practice.start(practice.setup(Game.OPPOSITES_SNAP, listOf("seconds-60"))) as OppositesRound
+            round.cards.forEach { card ->
+                val about = "After $days Daily Sets: $card"
+                val (word, shown, opposite) = listOf(card.word, card.shown, card.opposite).map(::idOf)
+                assertTrue(word in learned && shown in learned && opposite in learned, about)
+                assertEquals(card.opposites, (word to shown) in pairs, about)
+                assertTrue((word to opposite) in pairs, about)
+                val forms = listOf(card.word, card.shown, card.opposite).map { form -> course.itemsById.getValue(idOf(form)).spellings.indexOf(form) }
+                assertEquals(1, forms.toSet().size, about)
+            }
+        }
+        assertTrue(opened)
+    }
+
+    @Test
+    fun `the Verb challenge offers chapter 4's conjugation once its verbs are learned`() {
+        val afterB = course.path.indexOfFirst { it.id == "kpk1-l04-b3" } + 1
+        assertTrue(afterB > 0)
+        val verbs = practiceAfter(afterB).setup(Game.VERB_CHALLENGE).choices.first().options
+        val group = verbs.single { it.id == "group:-ę, -isz/-ysz" }
+        val round = practiceAfter(afterB).verbRound(group.id)
+        val members = course.path.take(afterB).flatMap { it.tips }.mapNotNull { it.conjugation }.filter { it.group == "-ę, -isz/-ysz" }.map { it.verb }.toSet()
+        assertTrue(setOf("chodzić", "myśleć", "uczyć się", "kończyć", "słyszeć", "robić").all { it in members }, "$members")
+        assertTrue(round.run.questions.all { it.verb in members })
+    }
+
+    @Test
     fun `every picture is of a word that can be pictured without knowing Polish, once`() {
         // A numeral stands for its number and nothing else, and a sign for its sum: plus, minus, equals.
         val numerals = course.pictures.filterValues { it is Picture.Glyph }

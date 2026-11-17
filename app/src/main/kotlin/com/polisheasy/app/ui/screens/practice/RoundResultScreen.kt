@@ -125,7 +125,7 @@ internal fun scoreWords(game: Game, score: Score): ScoreWords = when (game) {
         label = pluralStringResource(R.plurals.result_turns, score.value),
         sentence = pluralStringResource(R.plurals.result_turns_sentence, score.value, score.value),
     )
-    Game.QUICK_ROUND, Game.REGISTER_SORT -> ScoreWords(
+    Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP -> ScoreWords(
         value = score.value.toString(),
         label = pluralStringResource(R.plurals.result_right, score.value),
         sentence = pluralStringResource(R.plurals.result_right_sentence, score.value, score.value),
