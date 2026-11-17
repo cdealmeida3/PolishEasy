@@ -9,7 +9,7 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 - A Round saves nothing but the Best of the way it was played, the way the Game was last played, and one more Round for today. All of it goes to `practice.json` through `PracticeProgress`. Nothing is written to `progress.json`.
 - A Round left unfinished is not kept. There is nothing to resume.
 - The Sound setting is obeyed. A Game that is only listening says it needs sound; the others play without it.
-- Each question is answered once. A right answer moves on by itself after a moment; a wrong one shows the right answer and waits for "Continue".
+- Each question is answered once. A right answer moves on by itself after a moment; a wrong one shows the right answer and waits for "Continue". The Quick round is the one Game with a clock: there a right answer brings the next card at once.
 - The Best is kept for each way of playing: its key is the Game's id and the ids of the options chosen, such as `verb-challenge:być:type`. Ids are stable; renaming one loses the Bests saved under it.
 
 ## In the engine
@@ -25,6 +25,8 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 | Sound gaps | `engine/.../SoundGaps.kt` |
 | Numbers (shown as "Number pad") | `engine/.../Numbers.kt` |
 | Mój, moja, moje | `engine/.../MojMojaMoje.kt` |
+| Spell it | `engine/.../SpellIt.kt` |
+| Quick round | `engine/.../QuickRound.kt` |
 | Listen and tap | `engine/.../ListenAndTap.kt` |
 
 A Round is an immutable value. Each move returns the next Round and never fails: a move that makes no sense now returns the Round unchanged. `Run<Q>` is the shared shape for a Game that is a list of questions.
@@ -92,6 +94,12 @@ A Game that shows Items side by side uses `Learned.unalike` to leave out any tha
 **Numbers** (Numbers; its card says "Number pad", so the group's heading is not repeated). Opens with four learned numbers. A number is an Item whose Picture is a numeral, and "plus" is the Item whose Picture is the sign, so the Game needs no content of its own. Ways to play: the number heard (with sound on) or read as its Polish words; 0 to 10; 0 to 20, once a number above ten is learned; runs of three digits, said as three Clips one after the other; sums of two learned numbers that come to a learned number, once "plus" is learned. The Learner types on a keypad of up to three digits, whose last key checks. A run is typed digit for digit; a number may have a zero in front. A Round is up to ten numbers, six runs or eight sums. The result is the answers right first try.
 
 **Mój, moja, moje** (Words). Opens with two of the words for "my" and four nouns that go with them. A noun is shown, with its Picture when it has one, and the Learner taps the word for "my" that goes with it. A noun is asked only once its own word is learned, so *dziecko* waits for *moje*. Ways to play: the noun written with its meaning, heard (with sound on), or given by its meaning alone. Each word counts the nouns that belong under it so far. Answered, the two words are written together and said, where there is a Clip of them, and if not the noun is. A Round is up to ten nouns. The result is the answers right first try. When a Unit teaches *ten, ta, to*, the same rules can sort under those.
+
+**Spell it** (Words). Opens with four learned Items that can be spelled: one word of small letters, three to nine of them. Ways to play: from the word's Picture or from its meaning; a deck. A Round is up to six words. The word's letters lie mixed as tiles, Polish letters included, never already in order; tapped in order they fill the word's slots. A wrong tile stays and is a slip; where a letter is written twice, either tile of it will do. Whole, the word is said. The result is the words spelled with no slip.
+
+**Quick round** (Words). Opens with six learned Items. A Polish word is shown beside a Picture or a meaning, its own or another word's, and the Learner says "match" or "no match", for 60 seconds or 120. A right answer brings the next card at once. A wrong one shows what the word means and waits for "Continue", while the clock runs, which is also what makes guessing slow. Every word comes round before any comes again. The result is the right answers, and the most is the Best of that time.
+
+The clock is the only one in the app. The engine does not read the time: the screen calls `QuickRound.tick()` once a second, and the Round is finished when no seconds are left. The bar at the top of the Round shows the time left and empties; it moves once a second and nothing loops. When the time runs out the Round ends, even with a wrong answer still showing.
 
 ## What Practice needs from the content
 

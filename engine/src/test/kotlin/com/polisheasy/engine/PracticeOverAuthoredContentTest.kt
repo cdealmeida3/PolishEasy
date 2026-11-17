@@ -252,6 +252,54 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Spell it spells only words that have been learned, from every deck it offers`() {
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            if (practice.view().games.single { it.game == Game.SPELL_IT }.state != GameState.READY) return@forEach
+            practice.setup(Game.SPELL_IT).choices[0].options.forEach { from ->
+                practice.setup(Game.SPELL_IT, listOf(from.id)).choices[1].options.forEach { deck ->
+                    val round = practice.start(practice.setup(Game.SPELL_IT, listOf(from.id, deck.id))) as SpellRound
+                    val about = "After $days Daily Sets, ${from.id} ${deck.id}"
+                    assertTrue(round.total in SpellIt.LEAST..SpellIt.WORDS, about)
+                    round.words.forEach { word ->
+                        assertTrue(word.itemId in learned, about)
+                        assertEquals(course.itemsById.getValue(word.itemId).text, word.polish, about)
+                        assertEquals(word.letters.sorted(), word.tiles.sorted(), about)
+                        assertTrue(word.polish.length in SpellIt.SHORTEST..SpellIt.LONGEST && ' ' !in word.polish, "$about: ${word.polish}")
+                        assertEquals(round.pictures, word.picture != null, "$about: ${word.polish}")
+                    }
+                    // No two words of a Round are given the same way.
+                    val given = round.words.map { it.picture ?: it.meaning }
+                    assertEquals(given.size, given.toSet().size, about)
+                }
+            }
+        }
+        assertEquals(GameState.READY, practiceAfter(course.path.size).view().games.single { it.game == Game.SPELL_IT }.state)
+    }
+
+    @Test
+    fun `the Quick round shows only words that have been learned, and a card that does not match shows another word's side`() {
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            if (practice.view().games.single { it.game == Game.QUICK_ROUND }.state != GameState.READY) return@forEach
+            practice.setup(Game.QUICK_ROUND).choices[0].options.forEach { show ->
+                val round = practice.start(practice.setup(Game.QUICK_ROUND, listOf(show.id, "seconds-60"))) as QuickRound
+                val about = "After $days Daily Sets, ${show.id}"
+                round.cards.forEach { card ->
+                    assertTrue(card.itemId in learned, about)
+                    val own = if (round.pictures) course.pictures[card.itemId] else card.meaning
+                    val shown = if (round.pictures) checkNotNull(card.shownPicture) else card.shownMeaning
+                    // A card that says "no match" never shows the word's own side under another name.
+                    assertEquals(card.matches, shown == own, "$about: $card")
+                }
+            }
+        }
+        assertEquals(GameState.READY, practiceAfter(course.path.size).view().games.single { it.game == Game.QUICK_ROUND }.state)
+    }
+
+    @Test
     fun `every picture is of a word that can be pictured without knowing Polish, once`() {
         // A numeral stands for its number and nothing else.
         val numerals = course.pictures.filterValues { it is Picture.Glyph }

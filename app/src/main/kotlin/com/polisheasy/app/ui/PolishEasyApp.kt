@@ -17,6 +17,7 @@ import androidx.lifecycle.compose.LifecycleStartEffect
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.polisheasy.app.ClipPlayer
 import com.polisheasy.app.Clips
+import com.polisheasy.engine.QuickRound
 import com.polisheasy.app.CourseViewModel
 import com.polisheasy.app.R
 import com.polisheasy.app.Screen
@@ -177,7 +178,9 @@ private fun Round(screen: Screen.Round, viewModel: CourseViewModel, player: Clip
     BackHandler(onBack = viewModel::leaveGame)
     DisposableEffect(Unit) { onDispose { player.stop() } }
     RoundFrame(
-        progress = screen.round.done.toFloat() / screen.round.total.coerceAtLeast(1),
+        // The Quick round's bar is its clock, and empties; every other Round's fills as it is answered.
+        progress = (screen.round as? QuickRound)?.let { it.left.toFloat() / it.seconds }
+            ?: (screen.round.done.toFloat() / screen.round.total.coerceAtLeast(1)),
         progressDescription = progressWords(screen.round),
         closeLabel = stringResource(R.string.round_close),
         onClose = viewModel::leaveGame,

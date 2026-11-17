@@ -49,6 +49,9 @@ object Motion {
     const val MARK_FROM_SCALE = 0.8f
 
     /** How far an option that was not chosen fades once the Exercise is answered. */
+    /** One second of the Quick round's clock. */
+    const val SECOND_MILLIS = 1000L
+
     const val FADED_ALPHA = 0.7f
 
     /** How long the Summary's cheer stands alone before the Streak rolls up and the confetti starts. */

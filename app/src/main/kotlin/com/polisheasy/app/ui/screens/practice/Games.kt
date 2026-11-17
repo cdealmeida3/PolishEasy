@@ -10,6 +10,7 @@ import com.polisheasy.engine.Game
 import com.polisheasy.engine.GameGroup
 import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.OptionView
+import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.Round
 
 /** What the screens call a Game: its name, one line of what it is, what opens it, and its icon. */
@@ -32,6 +33,10 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_listen_and_tap, R.string.game_listen_and_tap_note, R.string.game_listen_and_tap_needs, R.drawable.game_listen_and_tap)
     Game.SOUND_GAPS ->
         GameWords(R.string.game_sound_gaps, R.string.game_sound_gaps_note, R.string.game_sound_gaps_needs, R.drawable.game_sound_gaps)
+    Game.SPELL_IT ->
+        GameWords(R.string.game_spell_it, R.string.game_spell_it_note, R.string.game_spell_it_needs, R.drawable.game_spell_it)
+    Game.QUICK_ROUND ->
+        GameWords(R.string.game_quick_round, R.string.game_quick_round_note, R.string.game_quick_round_needs, R.drawable.game_quick_round)
     Game.MOJ_MOJA_MOJE ->
         GameWords(R.string.game_moj_moja_moje, R.string.game_moj_moja_moje_note, R.string.game_moj_moja_moje_needs, R.drawable.game_moj_moja_moje)
     Game.NUMBERS ->
@@ -52,7 +57,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.NUMBERS -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
@@ -73,6 +78,9 @@ internal fun choiceLabel(id: String): String = stringResource(
         "tap" -> R.string.choice_tap
         "size" -> R.string.choice_size
         "number" -> R.string.choice_number
+        "from" -> R.string.choice_from
+        "match" -> R.string.choice_match
+        "time" -> R.string.choice_time
         "noun" -> R.string.choice_noun
         else -> error("No name for the choice $id")
     },
@@ -80,7 +88,10 @@ internal fun choiceLabel(id: String): String = stringResource(
 
 /** What a way to play is called: its own name where the content gives one, such as a verb. */
 @Composable
-internal fun optionLabel(option: OptionView): String = option.label ?: option.id.pairs()?.let { stringResource(R.string.option_pairs, it) } ?: stringResource(
+internal fun optionLabel(option: OptionView): String = option.label
+    ?: option.id.count(PAIRS)?.let { stringResource(R.string.option_pairs, it) }
+    ?: option.id.count(SECONDS)?.let { stringResource(R.string.option_seconds, it) }
+    ?: stringResource(
     when (option.id) {
         "picture-word" -> R.string.option_picture_word
         "listen" -> R.string.option_listen
@@ -109,12 +120,16 @@ internal fun optionLabel(option: OptionView): String = option.label ?: option.id
     },
 )
 
-/** The number of pairs an option for the size of a board stands for, or null if it is another kind of option. */
-private fun String.pairs(): Int? = if (startsWith(PAIRS)) removePrefix(PAIRS).toIntOrNull() else null
+/** The number an option such as "pairs-6" or "seconds-60" stands for, or null if it is another kind of option. */
+private fun String.count(prefix: String): Int? = if (startsWith(prefix)) removePrefix(prefix).toIntOrNull() else null
 
 private const val PAIRS = "pairs-"
+private const val SECONDS = "seconds-"
 
-/** How far a Round has come, for a screen reader: "3 of 14 answered", or on a board "2 of 6 pairs found". */
+/** How far a Round has come, for a screen reader: "3 of 14 answered", on a board "2 of 6 pairs found", against the clock "42 seconds left". */
 @Composable
-internal fun progressWords(round: Round): String =
-    stringResource(if (round is MemoryRound) R.string.memory_progress else R.string.round_progress, round.done, round.total)
+internal fun progressWords(round: Round): String = when (round) {
+    is QuickRound -> pluralStringResource(R.plurals.quick_left, round.left, round.left)
+    is MemoryRound -> stringResource(R.string.memory_progress, round.done, round.total)
+    else -> stringResource(R.string.round_progress, round.done, round.total)
+}
