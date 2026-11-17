@@ -13,6 +13,8 @@ data class Course(
     val clips: List<Clip> = emptyList(),
     /** Where the Clips' files are, relative to the content root: the directory of the file that lists them. */
     val clipDir: String = "audio",
+    /** The picture of each Item that has one, by Item id. Only the Games of Practice show them. */
+    val pictures: Map<String, Picture> = emptyMap(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

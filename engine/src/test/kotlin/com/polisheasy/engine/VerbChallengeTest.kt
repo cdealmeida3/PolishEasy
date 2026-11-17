@@ -16,7 +16,7 @@ class VerbChallengeTest {
         // The fixture course of the other tests has no conjugation table at all.
         val noTable = Learner().apply { progress.recordCompleted("a1-u01-d01", march(2)) }
         val practice = noTable.openApp().practice(InMemoryPracticeProgress())
-        assertEquals(GameState.NEEDS_MORE, practice.view().games.single().state)
+        assertEquals(GameState.NEEDS_MORE, practice.view().games.single { it.game == Game.VERB_CHALLENGE }.state)
         assertFailsWith<IllegalStateException> { practice.setup(Game.VERB_CHALLENGE) }
 
         assertEquals(GameState.READY, stateOf(Player().completed("d1")))

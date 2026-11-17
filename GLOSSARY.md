@@ -33,7 +33,7 @@ The part of a Daily Set that is Authored Content, identical for every Learner.
 
 **Item**:
 The smallest thing a Learner can know or not know: one word, one phrase, or one verb form such as *jestem*. Every Exercise practises one or more Items, and an Item has several Exercises. Items stay with the Learner across Levels.
-_Avoid_: Card, fact, vocabulary entry
+_Avoid_: Card (Picture cards is a Game), fact, vocabulary entry
 
 **Review**:
 The part of a Daily Set chosen per Learner from Items they previously got wrong or have not seen recently.
@@ -65,6 +65,10 @@ _Avoid_: Match, session, level
 **Best**:
 The Learner's best result in a Game, kept separately for each way of playing it. It is the only score in the app: there are no points, levels or leaderboards.
 _Avoid_: High score, record, points
+
+**Picture**:
+An image, or a numeral or sign, that stands for an Item in the Games of Practice. Only an Item whose meaning a picture shows to someone who has not learned the word has one. A Daily Set has no Pictures.
+_Avoid_: Icon, illustration, emoji
 
 **Streak**:
 The number of consecutive calendar days on which the Learner completed a new or Review-only Daily Set. Until today's is completed it is the Streak earned up to yesterday; a day with none resets it to zero. A Replay does not count.

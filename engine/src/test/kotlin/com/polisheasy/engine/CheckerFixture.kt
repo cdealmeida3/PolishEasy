@@ -48,12 +48,19 @@ internal data class CheckerFixture(val texts: Map<String, String>) {
     fun withClips(edit: (List<Clip>) -> List<Clip>): CheckerFixture =
         withFile(CLIPS, contentJson.encodeToString(ClipsFile(edit(contentJson.decodeFromString<ClipsFile>(texts.getValue(CLIPS)).clips))))
 
+    /** Gives the course a list of pictures, and a file for each image it names. */
+    fun withPictures(vararg entries: PictureEntry): CheckerFixture =
+        entries.mapNotNull { it.image }.distinct().fold(
+            withIndex { it.copy(pictures = PICTURES) }.withFile(PICTURES, contentJson.encodeToString(PicturesFile(entries.toList()))),
+        ) { fixture, image -> fixture.withFile("pictures/$image", "RIFF") }
+
     companion object {
         const val DAY_1 = "a1/unit-01/day-01.json"
         const val DAY_2 = "a1/unit-01/day-02.json"
         const val DAY_3 = "a1/unit-01/day-03.json"
         const val ITEMS = "a1/unit-01/items.json"
         const val CLIPS = "audio/clips.json"
+        const val PICTURES = "pictures/pictures.json"
 
         /** Day 1 of [valid] has the fewest Exercises a Daily Set may have. */
         val EXERCISES_ON_DAY_1 = DAILY_SET_EXERCISES.first

@@ -118,6 +118,7 @@ internal class ScoreWords(val value: String, val label: String, val sentence: St
 
 @Composable
 internal fun scoreWords(game: Game, score: Score): ScoreWords = when (game) {
+    Game.PICTURE_CARDS -> error("Picture cards has no result")
     Game.VERB_CHALLENGE -> ScoreWords(
         value = stringResource(R.string.summary_first_try_value, score.value, score.of ?: score.value),
         label = stringResource(R.string.summary_first_try),

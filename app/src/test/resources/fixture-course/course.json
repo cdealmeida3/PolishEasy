@@ -1,6 +1,7 @@
 {
   "items": ["items.json"],
   "audio": "audio/clips.json",
+  "pictures": "pictures/pictures.json",
   "levels": [
     {
       "id": "fx",

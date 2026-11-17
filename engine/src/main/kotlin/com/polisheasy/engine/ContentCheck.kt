@@ -238,6 +238,35 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
         }
     }
 
+    // Pictures and their files
+    val pictureList = content.picturesFile
+    if (pictureList != null && pictureList !in content.unreadable.map { it.file }) {
+        val dir = content.pictureDir
+        fun fileOf(image: String) = if (dir.isEmpty()) image else "$dir/$image"
+        val images = content.pictures.mapNotNull { (_, entry) -> entry.image?.let { entry.item to it } }
+        images.filter { fileOf(it.second) !in paths }.forEach { (item, image) ->
+            report(pictureList, item, "The picture of Item $item has no image file ${fileOf(image)}")
+        }
+        val expected = images.map { fileOf(it.second) }.toSet() + content.listed + COURSE_FILE
+        paths.filter { it.substringBeforeLast('/', "") == dir && it !in expected }.sorted().forEach { stray ->
+            report(pictureList, null, "$stray is beside the list of pictures but is neither the list nor a picture's file")
+        }
+        // Two words of one Unit with the same picture could not be told apart in a Game.
+        val unitOf = course.levels.flatMap { it.units }.flatMap { unit ->
+            unit.dailySets.flatMap { course.introducedIn(it) }.map { it.id to unit.id }
+        }.toMap()
+        content.pictures.map { it.value }.filter { it.item in unitOf }
+            .groupBy { unitOf.getValue(it.item) to (it.image ?: "glyph ${it.glyph}") }
+            .filterValues { it.size > 1 }
+            .forEach { (shared, entries) ->
+                report(
+                    pictureList,
+                    entries[1].item,
+                    "Items ${entries.joinToString { it.item }} of Unit ${shared.first} have the same picture, ${shared.second}",
+                )
+            }
+    }
+
     // Files nothing loads
     paths.filter { it.endsWith(".json") && it != COURSE_FILE && it !in content.listed }.sorted().forEach { path ->
         report(path, null, "$COURSE_FILE does not list this file, so nothing in it is part of the course")

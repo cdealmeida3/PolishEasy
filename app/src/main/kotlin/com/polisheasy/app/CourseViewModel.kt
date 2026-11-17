@@ -32,6 +32,7 @@ import com.polisheasy.engine.FilePracticeProgress
 import com.polisheasy.engine.Game
 import com.polisheasy.engine.GameState
 import com.polisheasy.engine.PracticeView
+import com.polisheasy.engine.PictureCardsView
 import com.polisheasy.engine.GameSetup as GameSetupView
 import com.polisheasy.engine.Practice as PracticeGames
 import com.polisheasy.engine.Round as PracticeRound
@@ -105,6 +106,9 @@ sealed interface Screen {
 
     /** Practice. [today] is today's Daily Set, which the screen starts or continues while Practice is locked. */
     data class Practice(val view: PracticeView, val today: Today) : Screen
+
+    /** Picture cards, to look at and listen to. [sound] is whether a card may say its word. */
+    data class PictureCards(val view: PictureCardsView, val sound: Boolean) : Screen
 
     /** A Game before a Round, with the ways to play it. */
     data class GameSetup(val setup: GameSetupView) : Screen
@@ -239,9 +243,24 @@ class CourseViewModel(
 
     private fun practiceScreen() = Screen.Practice(practice.view(sound = settings.soundOn), engine.today())
 
-    /** A Game tapped on the Practice screen: what there is to choose before a Round, as it was last played. */
+    /** A Game tapped on the Practice screen: its cards, or what there is to choose before a Round, as it was last played. */
     fun openGame(game: Game) {
-        screen = Screen.GameSetup(practice.setup(game))
+        screen = when (game) {
+            Game.PICTURE_CARDS -> Screen.PictureCards(practice.pictureCards(), sound = settings.soundOn)
+            else -> Screen.GameSetup(practice.setup(game))
+        }
+    }
+
+    /** Another deck of Picture cards chosen. */
+    fun chooseDeck(deck: String) {
+        val cards = screen as? Screen.PictureCards ?: return
+        screen = cards.copy(view = practice.pictureCards(deck, cards.view.kinds.selected))
+    }
+
+    /** Pictures or every word chosen for the Picture cards. */
+    fun chooseCards(kind: String) {
+        val cards = screen as? Screen.PictureCards ?: return
+        screen = cards.copy(view = practice.pictureCards(cards.view.decks.selected, kind))
     }
 
     /** One of the ways to play chosen: the option [option] for the choice at [choice]. */

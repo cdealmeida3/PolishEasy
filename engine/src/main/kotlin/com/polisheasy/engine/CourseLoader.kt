@@ -10,6 +10,8 @@ internal data class CourseFile(
     val items: List<String> = emptyList(),
     /** Optional: the path of the file that lists the Clips. */
     val audio: String? = null,
+    /** Optional: the path of the file that lists the pictures. */
+    val pictures: String? = null,
 )
 
 @Serializable
@@ -64,11 +66,17 @@ internal class ReadContent(
     val itemFiles: List<String>,
     /** One problem for each listed file that is missing or does not decode. */
     val unreadable: List<ContentProblem>,
+    val pictures: List<Filed<PictureEntry>> = emptyList(),
+    /** The file that lists the pictures, if the course has one. */
+    val picturesFile: String? = null,
 ) {
+    /** Where the pictures' files are: the directory of the file that lists them. */
+    val pictureDir: String = picturesFile?.substringBeforeLast('/', "").orEmpty()
+
     val clipDir: String = clipsFile?.substringBeforeLast('/', "") ?: "audio"
 
     /** Every path `course.json` names. */
-    val listed: Set<String> = (dailySetListings() + itemFiles + listOfNotNull(clipsFile)).toSet()
+    val listed: Set<String> = (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile)).toSet()
 
     private val unreadableFiles = unreadable.map { it.file }.toSet()
 
@@ -94,6 +102,8 @@ internal class ReadContent(
             items.map { it.value },
             clips.map { it.value },
             clipDir,
+            // The first picture of an Item is the one used; a second is reported, not loaded.
+            pictures.reversed().mapNotNull { (_, entry) -> pictureOf(entry, pictureDir)?.let { entry.item to it } }.toMap(),
         )
     }
 
@@ -135,6 +145,10 @@ internal fun readContent(readFile: (path: String) -> String): ReadContent {
         }.orEmpty(),
         clipsFile = index.audio,
         itemFiles = index.items,
+        pictures = index.pictures?.let { path ->
+            read(path) { contentJson.decodeFromString<PicturesFile>(it) }?.pictures.orEmpty().map { Filed(path, it) }
+        }.orEmpty(),
+        picturesFile = index.pictures,
         unreadable = unreadable,
     )
 }
@@ -194,6 +208,19 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
             same[1].value.id,
             "More than one Clip says \"${same.first().value.text}\": ${same.joinToString { it.value.id }}",
         )
+    }
+    content.pictures.forEach { (file, entry) ->
+        if (content.itemsComplete && entry.item !in course.itemsById) {
+            problems += ContentProblem(file, entry.item, "A picture is given for Item ${entry.item}, which is not defined")
+        }
+        if ((entry.image == null) == (entry.glyph == null)) {
+            problems += ContentProblem(file, entry.item, "The picture of Item ${entry.item} must have an image or a glyph, and not both")
+        } else if ((entry.image ?: entry.glyph).isNullOrBlank()) {
+            problems += ContentProblem(file, entry.item, "The picture of Item ${entry.item} is blank")
+        }
+    }
+    content.pictures.map { it.value.item }.repeated().forEach { item ->
+        problems += ContentProblem(content.picturesFile.orEmpty(), item, "Item $item has more than one picture")
     }
     exercises.forEach { (file, placed) ->
         val (dailySet, exercise) = placed

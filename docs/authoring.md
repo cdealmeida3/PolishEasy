@@ -79,6 +79,6 @@ Nobody can hear the Clips in a build session. How they sound is checked on a pho
 
 ## After changing content
 
-Follow "After changing content" in [content-checks.md](content-checks.md): make the audio, record the new identifiers, run the checker, run the Polish check and record the review.
+Follow "After changing content" in [content-checks.md](content-checks.md): make the audio, give the new words that can be pictured their pictures, record the new identifiers, run the checker, run the Polish check and record the review.
 
 Replacing a Daily Set under an id that has shipped means a phone that completed the old one will skip the new one. Say so in the pull request: the Learner has to clear the app's storage.

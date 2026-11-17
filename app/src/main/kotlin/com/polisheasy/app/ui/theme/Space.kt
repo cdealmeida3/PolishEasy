@@ -77,6 +77,9 @@ object Size {
     val gameIcon: Dp = 48.dp
     val gameIconHero: Dp = 72.dp
 
+    /** The least height of a Picture card, so the picture has room and a turned card holds its words. */
+    val pictureTile: Dp = 168.dp
+
     /** The Streak's flame on Home, and the larger one of the Summary, where the Streak going up is the hero. */
     val flame: Dp = 48.dp
     val flameHero: Dp = 72.dp
