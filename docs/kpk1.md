@@ -111,3 +111,23 @@ It gives the later chapters:
 - *kolega* and *koleżanka* in the possessive test's lists.
 
 It leaves for later: no adjective in the plural (*oni są zmęczeni*), no *lubić* table of its own (its Tip is *robić*'s), and the languages only after *mówić po…* (*znam polski* and *uczę się polskiego* wait).
+
+## Chapter 5: Jesteś instruktorem tanga?
+
+Book pages 42 to 49, recordings 064 to 070. Fourteen parts, 244 Exercises and 83 new Items, and 13 Starter Items introduced again (*ile*, *ma*, *masz*, *rok*, *lata*, *lat*, *mąż*, *rodzina*, *syn* and the four nationalities in the instrumental).
+
+- **A** *Kto to jest? Jaki on jest?*, in two (18 and 17): presenting someone (*Adam to biznesmen*, *lubi pracować*) and asking an age (*ile masz lat?*); then *rok*, *prawie*, *pół roku*, *co lubisz robić?* and *tańczyć tango*.
+- **B** *Liczebniki 20–100*, in two (16 and 18): the tens to *sto*, sums with *razy*, and the Tip on *lata* after 2, 3 and 4 (*dwadzieścia dwa lata*) and *lat* after everything else, 12 to 14 and 21 among them.
+- **C** *Zawody*, in four: jobs for a man (17 and 18: *lekarz, aktor, muzyk, kelner, kucharz, informatyk, policjant*, then *rolnik, dziennikarz, urzędnik, fotograf, tancerz, dentysta, inżynier, emeryt*); for a woman with *+ ka* (18, a table of the changes: *lekarz, lekarka*; *urzędnik, urzędniczka*; *dentysta, dentystka*); and *pracować* with five places (18: *w biurze, w szpitalu, w teatrze, w restauracji, w szkole*).
+- **D** *Kim ona jest?*, in five: *kim jesteś z zawodu?* and the instrumental of a job (18); an adjective with its noun after *jest* (17, a table: *dobrym lekarzem, dobrą lekarką, dobrym dzieckiem*, and *on jest dobry* against *on jest dobrym lekarzem*); the nationalities (18: *Polakiem, Polką, Anglikiem, Angielką, Niemcem, Niemką, Japończykiem, Japonką*); *interesować się* with what in the instrumental (17); *czytasz?*, *pisarz*, *malarz* and five more interests (17).
+- *Ćwiczenia* (17): sums written in words, who works where, how old people are, and who is who.
+
+Each job is one Item with its instrumental as `forms` (*lekarz*, *lekarzem*), so word coverage takes both; an adjective before a noun in the instrumental is an Item of its own (*dobrym*, with *dobrą* as its form), as are the interests (*muzyką*, *sportem*). The numbers tests now know the tens: a number before *rok*, *lata* or *lat* is read with the ten before it (*dwadzieścia jeden lat*), and *razy* may follow a number. There are 23 listening tasks on all 7 recordings (065 and 069 are word lists: the first and last word; of 068 only the first number is clear enough to ask), and one Chat: *At the tango class* (Ola, informal: dancing, your job and where you work, your age, your interests). The new nouns are in Practice's `genders`; 23 Items have pictures (a man or a woman at each job where Fluent Emoji has one) and the tens are glyphs.
+
+It gives the later chapters:
+
+- numbers to 100 and *rok, lata, lat* after any of them;
+- the instrumental after *być* for jobs, nationalities and an adjective with its noun, and after *interesować się*;
+- *pracować* and *interesować się*, two verbs of the *-ę, -esz* conjugation (*pracuję, pracujesz*) for the Verb challenge.
+
+It leaves for later: no plural in the instrumental (*interesuję się książkami*), *umieć* only as *umiesz*, and of *grać na…* only *na gitarze*.

@@ -1,0 +1,427 @@
+{
+  "id": "kpk1-l05-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Kto to jest? Jaki on jest?",
+    "meaning": {
+      "en": "Who is it? What is he like?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-a2-t01",
+      "before": "kpk1-l05-a2-e01",
+      "title": {
+        "en": "How old are you? What do you like doing?"
+      },
+      "body": {
+        "en": "A child of one *ma rok*, and a baby *ma pół roku*. *Prawie* is \"almost\": *mam prawie dwadzieścia lat*. To ask a friend what they like doing, say *co lubisz robić?*, and answer with a verb in its dictionary form: *lubię tańczyć*, *lubię pracować*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a2-e01",
+      "prompt": "rok",
+      "options": [
+        {
+          "en": "years (after 5 to 20: pięć lat)"
+        },
+        {
+          "en": "a month"
+        },
+        {
+          "en": "a year; one year"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "rok"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-a2-e02",
+      "text": "on ma rok",
+      "meaning": {
+        "en": "he is one (year old)"
+      },
+      "distractors": [
+        "on ma dwa lata",
+        "on ma pięć lat"
+      ],
+      "items": [
+        "on",
+        "miec-ma",
+        "rok"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a2-e03",
+      "prompt": "prawie",
+      "options": [
+        {
+          "en": "almost"
+        },
+        {
+          "en": "only"
+        },
+        {
+          "en": "also; too"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "prawie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-a2-e04",
+      "prompt": {
+        "en": "I'm almost twenty"
+      },
+      "acceptedAnswers": [
+        "mam prawie dwadzieścia lat"
+      ],
+      "distractors": [
+        "lata",
+        "ma"
+      ],
+      "items": [
+        "miec-mam",
+        "prawie",
+        "dwadziescia",
+        "lat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a2-e05",
+      "prompt": "pół roku",
+      "options": [
+        {
+          "en": "a year; one year"
+        },
+        {
+          "en": "half a year (ono ma pół roku: it is six months old)"
+        },
+        {
+          "en": "two years"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pol-roku"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-a2-e06",
+      "text": "To dziecko ma ___.",
+      "meaning": {
+        "en": "This child is six months old."
+      },
+      "gaps": [
+        [
+          "pół roku"
+        ]
+      ],
+      "distractors": [
+        "rok",
+        "lata"
+      ],
+      "items": [
+        "to",
+        "dziecko",
+        "miec-ma",
+        "pol-roku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a2-e07",
+      "prompt": "robić",
+      "options": [
+        {
+          "en": "work (to work)"
+        },
+        {
+          "en": "dance (to dance)"
+        },
+        {
+          "en": "do, make (to do, to make)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "robic"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-a2-e08",
+      "prompt": {
+        "en": "what do you like doing? (one friend)"
+      },
+      "acceptedAnswers": [
+        "co lubisz robić?"
+      ],
+      "distractors": [
+        "lubi",
+        "robisz"
+      ],
+      "items": [
+        "co",
+        "lubic-lubisz",
+        "robic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a2-e09",
+      "prompt": "tańczyć",
+      "options": [
+        {
+          "en": "dance (to dance)"
+        },
+        {
+          "en": "work (to work)"
+        },
+        {
+          "en": "do, make (to do, to make)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tanczyc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a2-e10",
+      "prompt": "tango",
+      "options": [
+        {
+          "en": "a film"
+        },
+        {
+          "en": "the tango"
+        },
+        {
+          "en": "sport"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "tango"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-a2-e11",
+      "text": "lubię tańczyć tango",
+      "meaning": {
+        "en": "I like dancing the tango"
+      },
+      "distractors": [
+        "lubisz tańczyć tango",
+        "lubię sport"
+      ],
+      "items": [
+        "lubic-lubie",
+        "tanczyc",
+        "tango"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-a2-e12",
+      "prompt": {
+        "en": "he is almost twenty"
+      },
+      "acceptedAnswers": [
+        "on ma prawie dwadzieścia lat",
+        "ma prawie dwadzieścia lat"
+      ],
+      "items": [
+        "on",
+        "miec-ma",
+        "prawie",
+        "dwadziescia",
+        "lat"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-a2-e13",
+      "acceptedAnswers": [
+        "co lubisz robić?"
+      ],
+      "meaning": {
+        "en": "what do you like doing? (one friend)"
+      },
+      "items": [
+        "co",
+        "lubic-lubisz",
+        "robic"
+      ],
+      "readingAnswers": [
+        "co ty lubisz robić?"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l05-a2-e14",
+      "lines": [
+        "Ile masz lat?",
+        "Mam prawie dwadzieścia lat. A ty?",
+        "Mam dziewiętnaście lat. Co lubisz robić?",
+        "Lubię tańczyć tango."
+      ],
+      "meaning": {
+        "en": "Two students get to know each other."
+      },
+      "items": [
+        "ile",
+        "miec-masz",
+        "lat",
+        "prawie",
+        "dwadziescia",
+        "a-ty",
+        "miec-mam",
+        "dziewietnascie",
+        "co",
+        "lubic-lubisz",
+        "robic",
+        "lubic-lubie",
+        "tanczyc",
+        "tango"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-a2-e15",
+      "pairs": [
+        {
+          "polish": "rok",
+          "meaning": {
+            "en": "a year"
+          }
+        },
+        {
+          "polish": "prawie",
+          "meaning": {
+            "en": "almost"
+          }
+        },
+        {
+          "polish": "pół roku",
+          "meaning": {
+            "en": "half a year"
+          }
+        },
+        {
+          "polish": "robić",
+          "meaning": {
+            "en": "to do"
+          }
+        },
+        {
+          "polish": "tańczyć",
+          "meaning": {
+            "en": "to dance"
+          }
+        },
+        {
+          "polish": "tango",
+          "meaning": {
+            "en": "the tango"
+          }
+        }
+      ],
+      "items": [
+        "rok",
+        "prawie",
+        "pol-roku",
+        "robic",
+        "tanczyc",
+        "tango"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-a2-e16",
+      "acceptedAnswers": [
+        "ona ma rok"
+      ],
+      "meaning": {
+        "en": "she is one (year old)"
+      },
+      "items": [
+        "ona",
+        "miec-ma",
+        "rok"
+      ],
+      "readingAnswers": [
+        "ma rok"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l05-a2-e17",
+      "lines": [
+        "Cześć! Jestem Ewa.",
+        "Mam prawie dwadzieścia lat.",
+        "Mieszkam w Krakowie.",
+        "Lubię tańczyć tango."
+      ],
+      "meaning": {
+        "en": "Ewa presents herself."
+      },
+      "statements": [
+        {
+          "text": "Ewa ma dwadzieścia pięć lat.",
+          "meaning": {
+            "en": "Ewa is twenty-five."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa mieszka w Krakowie.",
+          "meaning": {
+            "en": "Ewa lives in Kraków."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa lubi tańczyć.",
+          "meaning": {
+            "en": "Ewa likes dancing."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "czesc",
+        "byc-jestem",
+        "ewa",
+        "miec-mam",
+        "prawie",
+        "dwadziescia",
+        "lat",
+        "mieszkac-mieszkam",
+        "w-krakowie",
+        "lubic-lubie",
+        "tanczyc",
+        "tango"
+      ]
+    }
+  ]
+}

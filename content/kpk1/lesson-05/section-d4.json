@@ -1,0 +1,404 @@
+{
+  "id": "kpk1-l05-d4",
+  "section": {
+    "letter": "D",
+    "heading": "Kim ona jest?",
+    "meaning": {
+      "en": "Who is she? What does she do?"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-d4-t01",
+      "before": "kpk1-l05-d4-e01",
+      "title": {
+        "en": "Czym się interesujesz?"
+      },
+      "body": {
+        "en": "*Interesować się* goes like *pracować*: *interesuję się*, *interesujesz się*, *interesuje się*. What you are interested in is in the instrumental: *interesuję się sportem*, *muzyką*, *historią*. Ask a friend *czym się interesujesz?*: *czym* is *co* in the instrumental."
+      },
+      "conjugation": {
+        "verb": "interesować się",
+        "meaning": {
+          "en": "to be interested in"
+        },
+        "forms": {
+          "ja": "interesuję się",
+          "ty": "interesujesz się",
+          "on": "interesuje się",
+          "my": "interesujemy się",
+          "wy": "interesujecie się",
+          "oni": "interesują się"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d4-e01",
+      "prompt": "interesuję się",
+      "options": [
+        {
+          "en": "I like"
+        },
+        {
+          "en": "I work"
+        },
+        {
+          "en": "I am interested in"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "interesowac-sie-interesuje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d4-e02",
+      "prompt": "sportem",
+      "options": [
+        {
+          "en": "sport (after interesuję się: interesuję się sportem)"
+        },
+        {
+          "en": "music (after interesuję się: interesuję się muzyką)"
+        },
+        {
+          "en": "history (after interesuję się: interesuję się historią)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sportem"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l05-d4-e03",
+      "verb": "interesować się",
+      "meaning": {
+        "en": "to be interested in"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ sportem.",
+      "sentenceMeaning": {
+        "en": "I am interested in sport."
+      },
+      "acceptedAnswers": [
+        "interesuję się"
+      ],
+      "items": [
+        "ja",
+        "interesowac-sie-interesuje",
+        "sportem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d4-e04",
+      "prompt": "czym",
+      "options": [
+        {
+          "en": "who (kim jesteś?: who are you, what do you do?)"
+        },
+        {
+          "en": "what (czym się interesujesz?: what are you interested in?)"
+        },
+        {
+          "en": "where"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czym"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d4-e05",
+      "prompt": "interesujesz się",
+      "options": [
+        {
+          "en": "I am interested in"
+        },
+        {
+          "en": "you like (one friend)"
+        },
+        {
+          "en": "you are interested in (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "interesowac-sie-interesujesz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l05-d4-e06",
+      "verb": "interesować się",
+      "meaning": {
+        "en": "to be interested in"
+      },
+      "person": "ty",
+      "sentence": "Czy ty ___ sportem?",
+      "sentenceMeaning": {
+        "en": "Are you interested in sport?"
+      },
+      "acceptedAnswers": [
+        "interesujesz się"
+      ],
+      "items": [
+        "czy",
+        "ty",
+        "interesowac-sie-interesujesz",
+        "sportem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d4-e07",
+      "prompt": "muzyką",
+      "options": [
+        {
+          "en": "music (after interesuję się: interesuję się muzyką)"
+        },
+        {
+          "en": "sport (after interesuję się: interesuję się sportem)"
+        },
+        {
+          "en": "history (after interesuję się: interesuję się historią)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "muzyka-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d4-e08",
+      "prompt": "interesuje się",
+      "options": [
+        {
+          "en": "you are interested in (one friend)"
+        },
+        {
+          "en": "he is interested in, she is interested in"
+        },
+        {
+          "en": "he likes, she likes"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "interesowac-sie-interesuje-on"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l05-d4-e09",
+      "verb": "interesować się",
+      "meaning": {
+        "en": "to be interested in"
+      },
+      "person": "on",
+      "sentence": "Ewa ___ muzyką.",
+      "sentenceMeaning": {
+        "en": "Ewa is interested in music."
+      },
+      "acceptedAnswers": [
+        "interesuje się"
+      ],
+      "items": [
+        "ewa",
+        "interesowac-sie-interesuje-on",
+        "muzyka-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d4-e10",
+      "prompt": "historią",
+      "options": [
+        {
+          "en": "music (after interesuję się: interesuję się muzyką)"
+        },
+        {
+          "en": "photography (after interesuję się: interesuję się fotografią)"
+        },
+        {
+          "en": "history (after interesuję się: interesuję się historią)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "historia-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d4-e11",
+      "prompt": "fotografią",
+      "options": [
+        {
+          "en": "photography (after interesuję się: interesuję się fotografią)"
+        },
+        {
+          "en": "history (after interesuję się: interesuję się historią)"
+        },
+        {
+          "en": "sport (after interesuję się: interesuję się sportem)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "fotografia-instr"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-d4-e12",
+      "text": "interesuję się fotografią",
+      "meaning": {
+        "en": "I am interested in photography"
+      },
+      "distractors": [
+        "interesuję się historią",
+        "interesujesz się fotografią"
+      ],
+      "items": [
+        "interesowac-sie-interesuje",
+        "fotografia-instr"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-d4-e13",
+      "prompt": {
+        "en": "what are you interested in? (one friend)"
+      },
+      "acceptedAnswers": [
+        "czym się interesujesz?",
+        "czym interesujesz się?"
+      ],
+      "distractors": [
+        "kim",
+        "interesuje"
+      ],
+      "items": [
+        "czym",
+        "interesowac-sie-interesujesz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-d4-e14",
+      "acceptedAnswers": [
+        "on interesuje się historią"
+      ],
+      "meaning": {
+        "en": "he is interested in history"
+      },
+      "items": [
+        "on",
+        "interesowac-sie-interesuje-on",
+        "historia-instr"
+      ],
+      "readingAnswers": [
+        "interesuje się historią"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-d4-e15",
+      "pairs": [
+        {
+          "polish": "sportem",
+          "meaning": {
+            "en": "sport (after interesuję się)"
+          }
+        },
+        {
+          "polish": "muzyką",
+          "meaning": {
+            "en": "music"
+          }
+        },
+        {
+          "polish": "historią",
+          "meaning": {
+            "en": "history"
+          }
+        },
+        {
+          "polish": "fotografią",
+          "meaning": {
+            "en": "photography"
+          }
+        },
+        {
+          "polish": "czym",
+          "meaning": {
+            "en": "what (czym się interesujesz?)"
+          }
+        }
+      ],
+      "items": [
+        "sportem",
+        "muzyka-instr",
+        "historia-instr",
+        "fotografia-instr",
+        "czym"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-d4-e16",
+      "prompt": {
+        "en": "I am interested in music and history"
+      },
+      "acceptedAnswers": [
+        "interesuję się muzyką i historią",
+        "interesuję się historią i muzyką"
+      ],
+      "items": [
+        "interesowac-sie-interesuje",
+        "muzyka-instr",
+        "i",
+        "historia-instr"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l05-d4-e17",
+      "lines": [
+        "Czym się interesujesz?",
+        "Interesuję się fotografią. A ty?",
+        "Ja interesuję się sportem.",
+        "Adam też interesuje się sportem!"
+      ],
+      "meaning": {
+        "en": "Two classmates talk about their interests."
+      },
+      "items": [
+        "czym",
+        "interesowac-sie-interesujesz",
+        "interesowac-sie-interesuje",
+        "fotografia-instr",
+        "a-ty",
+        "ja",
+        "sportem",
+        "adam",
+        "tez",
+        "interesowac-sie-interesuje-on"
+      ]
+    }
+  ]
+}

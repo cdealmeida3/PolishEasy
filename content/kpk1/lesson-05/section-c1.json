@@ -1,0 +1,411 @@
+{
+  "id": "kpk1-l05-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Zawody",
+    "meaning": {
+      "en": "Jobs"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-c1-t01",
+      "before": "kpk1-l05-c1-e01",
+      "title": {
+        "en": "Kto to jest? Jobs"
+      },
+      "body": {
+        "en": "Ask *kto to jest?* and answer with *to jest* and the job: *to jest lekarz*, *to jest kelner*. *Adam to aktor* says the same as *Adam jest aktorem*, which comes in section D."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c1-e01",
+      "prompt": "lekarz",
+      "options": [
+        {
+          "en": "a doctor (a man)"
+        },
+        {
+          "en": "a teacher (a man)"
+        },
+        {
+          "en": "a waiter"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lekarz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c1-e02",
+      "prompt": "aktor",
+      "options": [
+        {
+          "en": "a musician (a man)"
+        },
+        {
+          "en": "an actor"
+        },
+        {
+          "en": "a doctor (a man)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "aktor"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-c1-e03",
+      "text": "to jest lekarz",
+      "meaning": {
+        "en": "this is a doctor (a man)"
+      },
+      "distractors": [
+        "to jest kelner",
+        "to jest aktor"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "lekarz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c1-e04",
+      "prompt": "muzyk",
+      "options": [
+        {
+          "en": "an actor"
+        },
+        {
+          "en": "a cook, a chef (a man)"
+        },
+        {
+          "en": "a musician (a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "muzyk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c1-e05",
+      "prompt": "kelner",
+      "options": [
+        {
+          "en": "a waiter"
+        },
+        {
+          "en": "a police officer (a man)"
+        },
+        {
+          "en": "a cook, a chef (a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kelner"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-c1-e06",
+      "prompt": {
+        "en": "is it a waiter?"
+      },
+      "acceptedAnswers": [
+        "czy to jest kelner?",
+        "czy to kelner?"
+      ],
+      "distractors": [
+        "kucharz",
+        "kto"
+      ],
+      "items": [
+        "czy",
+        "to",
+        "byc-jest",
+        "kelner"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c1-e07",
+      "prompt": "kucharz",
+      "options": [
+        {
+          "en": "a waiter"
+        },
+        {
+          "en": "a cook, a chef (a man)"
+        },
+        {
+          "en": "a doctor (a man)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kucharz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c1-e08",
+      "prompt": "informatyk",
+      "options": [
+        {
+          "en": "a musician (a man)"
+        },
+        {
+          "en": "an engineer"
+        },
+        {
+          "en": "an IT specialist (a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "informatyk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c1-e09",
+      "prompt": "policjant",
+      "options": [
+        {
+          "en": "a police officer (a man)"
+        },
+        {
+          "en": "a waiter"
+        },
+        {
+          "en": "an IT specialist (a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "policjant"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-c1-e10",
+      "text": "To nie jest aktor, to jest ___.",
+      "meaning": {
+        "en": "This isn't an actor, it's a police officer."
+      },
+      "gaps": [
+        [
+          "policjant"
+        ]
+      ],
+      "distractors": [
+        "kucharz",
+        "muzyk"
+      ],
+      "items": [
+        "to-nie-jest",
+        "aktor",
+        "to",
+        "byc-jest",
+        "policjant"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-c1-e11",
+      "pairs": [
+        {
+          "polish": "lekarz",
+          "meaning": {
+            "en": "a doctor (a man)"
+          }
+        },
+        {
+          "polish": "aktor",
+          "meaning": {
+            "en": "an actor"
+          }
+        },
+        {
+          "polish": "muzyk",
+          "meaning": {
+            "en": "a musician (a man)"
+          }
+        },
+        {
+          "polish": "kelner",
+          "meaning": {
+            "en": "a waiter"
+          }
+        },
+        {
+          "polish": "kucharz",
+          "meaning": {
+            "en": "a cook (a man)"
+          }
+        }
+      ],
+      "items": [
+        "lekarz",
+        "aktor",
+        "muzyk",
+        "kelner",
+        "kucharz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-c1-e12",
+      "acceptedAnswers": [
+        "to jest informatyk"
+      ],
+      "meaning": {
+        "en": "this is an IT specialist (a man)"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "informatyk"
+      ],
+      "readingAnswers": [
+        "to informatyk"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-c1-e13",
+      "prompt": {
+        "en": "who is it? a musician"
+      },
+      "acceptedAnswers": [
+        "kto to jest? muzyk",
+        "kto to jest? to jest muzyk",
+        "kto to jest? to muzyk"
+      ],
+      "items": [
+        "kto-to-jest",
+        "muzyk"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-c1-e14",
+      "text": "Adam to kucharz",
+      "meaning": {
+        "en": "Adam is a cook"
+      },
+      "distractors": [
+        "Adam to kelner",
+        "Adam to lekarz"
+      ],
+      "items": [
+        "adam",
+        "to",
+        "kucharz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l05-c1-e15",
+      "lines": [
+        "Kto to jest?",
+        "To jest Adam, mój kolega.",
+        "Czy Adam to lekarz?",
+        "Nie, Adam to policjant."
+      ],
+      "meaning": {
+        "en": "Two friends look at a photo."
+      },
+      "statements": [
+        {
+          "text": "Adam to policjant.",
+          "meaning": {
+            "en": "Adam is a police officer."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam to lekarz.",
+          "meaning": {
+            "en": "Adam is a doctor."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam to kolega.",
+          "meaning": {
+            "en": "Adam is a friend."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "kto-to-jest",
+        "to",
+        "byc-jest",
+        "adam",
+        "moj",
+        "kolega",
+        "czy",
+        "lekarz",
+        "nie",
+        "policjant"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-c1-e16",
+      "prompt": {
+        "en": "Ewa is a teacher, and Adam is an actor"
+      },
+      "acceptedAnswers": [
+        "Ewa to nauczycielka, a Adam to aktor"
+      ],
+      "distractors": [
+        "aktorka",
+        "jest"
+      ],
+      "items": [
+        "ewa",
+        "to",
+        "nauczycielka",
+        "a",
+        "adam",
+        "aktor"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-c1-e17",
+      "text": "mój brat to informatyk",
+      "meaning": {
+        "en": "my brother is an IT specialist"
+      },
+      "distractors": [
+        "mój brat to muzyk",
+        "mój brat to lekarz"
+      ],
+      "items": [
+        "moj",
+        "brat",
+        "to",
+        "informatyk"
+      ]
+    }
+  ]
+}

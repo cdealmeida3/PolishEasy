@@ -1,0 +1,411 @@
+{
+  "id": "kpk1-l05-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Liczebniki 20–100",
+    "meaning": {
+      "en": "Numbers from 20 to 100"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-b2-t01",
+      "before": "kpk1-l05-b2-e01",
+      "title": {
+        "en": "Lat or lata?"
+      },
+      "body": {
+        "en": "From 70: *siedemdziesiąt*, *osiemdziesiąt*, *dziewięćdziesiąt*, and 100 is *sto*. With an age, a number that ends in 2, 3 or 4 takes *lata*: *dwadzieścia dwa lata*, *czterdzieści trzy lata*. Every other number takes *lat*: *dwadzieścia jeden lat*, *czterdzieści pięć lat*, *sto lat*, and so do 12, 13 and 14. In Poland it is a little impolite to ask a woman her age!"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b2-e01",
+      "prompt": "siedemdziesiąt",
+      "options": [
+        {
+          "en": "seventeen"
+        },
+        {
+          "en": "seventy"
+        },
+        {
+          "en": "sixty"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "siedemdziesiat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b2-e02",
+      "prompt": "osiemdziesiąt",
+      "options": [
+        {
+          "en": "eighteen"
+        },
+        {
+          "en": "seventy"
+        },
+        {
+          "en": "eighty"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "osiemdziesiat"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-b2-e03",
+      "text": "osiemdziesiąt osiem",
+      "meaning": {
+        "en": "eighty-eight"
+      },
+      "distractors": [
+        "osiemnaście",
+        "siedemdziesiąt osiem"
+      ],
+      "items": [
+        "osiemdziesiat",
+        "osiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b2-e04",
+      "prompt": "dziewięćdziesiąt",
+      "options": [
+        {
+          "en": "ninety"
+        },
+        {
+          "en": "nineteen"
+        },
+        {
+          "en": "eighty"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dziewiecdziesiat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b2-e05",
+      "prompt": "sto",
+      "options": [
+        {
+          "en": "ninety"
+        },
+        {
+          "en": "a hundred"
+        },
+        {
+          "en": "a thousand"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sto"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-b2-e06",
+      "text": "Pięćdziesiąt plus pięćdziesiąt równa się ___.",
+      "meaning": {
+        "en": "50 + 50 = 100"
+      },
+      "gaps": [
+        [
+          "sto"
+        ]
+      ],
+      "distractors": [
+        "dziewięćdziesiąt",
+        "sześćdziesiąt"
+      ],
+      "items": [
+        "piecdziesiat",
+        "plus",
+        "rowna-sie",
+        "sto"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b2-e07",
+      "prompt": "mąż",
+      "options": [
+        {
+          "en": "a wife"
+        },
+        {
+          "en": "a brother"
+        },
+        {
+          "en": "a husband"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "maz"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-b2-e08",
+      "text": "Mam czterdzieści trzy ___, a mój mąż ma czterdzieści pięć ___.",
+      "meaning": {
+        "en": "I'm forty-three, and my husband is forty-five."
+      },
+      "gaps": [
+        [
+          "lata"
+        ],
+        [
+          "lat"
+        ]
+      ],
+      "distractors": [
+        "rok"
+      ],
+      "items": [
+        "miec-mam",
+        "czterdziesci",
+        "trzy",
+        "lata",
+        "a",
+        "moj",
+        "maz",
+        "miec-ma",
+        "piec",
+        "lat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b2-e09",
+      "prompt": "pytasz",
+      "options": [
+        {
+          "en": "you ask (one friend)"
+        },
+        {
+          "en": "you know (one friend)"
+        },
+        {
+          "en": "you have (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pytac-pytasz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b2-e10",
+      "prompt": "ćwiczę",
+      "options": [
+        {
+          "en": "I think"
+        },
+        {
+          "en": "I practise"
+        },
+        {
+          "en": "I do, I make"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "cwiczyc-cwicze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b2-e11",
+      "prompt": "liczebnik",
+      "options": [
+        {
+          "en": "a word"
+        },
+        {
+          "en": "a noun"
+        },
+        {
+          "en": "a numeral (liczebniki: numerals)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "liczebnik"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l05-b2-e12",
+      "lines": [
+        "Ile masz lat?",
+        "Dlaczego pytasz?",
+        "Ćwiczę liczebniki.",
+        "Mam dziewięćdziesiąt lat!"
+      ],
+      "meaning": {
+        "en": "Two classmates practise numbers."
+      },
+      "items": [
+        "ile",
+        "miec-masz",
+        "lat",
+        "dlaczego",
+        "pytac-pytasz",
+        "cwiczyc-cwicze",
+        "liczebnik",
+        "miec-mam",
+        "dziewiecdziesiat"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-b2-e13",
+      "acceptedAnswers": [
+        "dlaczego pytasz?"
+      ],
+      "meaning": {
+        "en": "why do you ask? (one friend)"
+      },
+      "items": [
+        "dlaczego",
+        "pytac-pytasz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-b2-e14",
+      "prompt": {
+        "en": "I practise numerals"
+      },
+      "acceptedAnswers": [
+        "ćwiczę liczebniki"
+      ],
+      "distractors": [
+        "liczebnik",
+        "ćwiczy"
+      ],
+      "items": [
+        "cwiczyc-cwicze",
+        "liczebnik"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-b2-e15",
+      "prompt": {
+        "en": "my husband is seventy-two"
+      },
+      "acceptedAnswers": [
+        "mój mąż ma siedemdziesiąt dwa lata"
+      ],
+      "items": [
+        "moj",
+        "maz",
+        "miec-ma",
+        "siedemdziesiat",
+        "dwa",
+        "lata"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-b2-e16",
+      "text": "sto lat",
+      "meaning": {
+        "en": "a hundred years"
+      },
+      "distractors": [
+        "dziewięćdziesiąt lat",
+        "siedemdziesiąt lat"
+      ],
+      "items": [
+        "sto",
+        "lat"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-b2-e17",
+      "pairs": [
+        {
+          "polish": "siedemdziesiąt",
+          "meaning": {
+            "en": "70"
+          }
+        },
+        {
+          "polish": "osiemdziesiąt",
+          "meaning": {
+            "en": "80"
+          }
+        },
+        {
+          "polish": "dziewięćdziesiąt",
+          "meaning": {
+            "en": "90"
+          }
+        },
+        {
+          "polish": "sto",
+          "meaning": {
+            "en": "100"
+          }
+        },
+        {
+          "polish": "ćwiczę",
+          "meaning": {
+            "en": "I practise"
+          }
+        },
+        {
+          "polish": "mąż",
+          "meaning": {
+            "en": "a husband"
+          }
+        }
+      ],
+      "items": [
+        "siedemdziesiat",
+        "osiemdziesiat",
+        "dziewiecdziesiat",
+        "sto",
+        "cwiczyc-cwicze",
+        "maz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-b2-e18",
+      "acceptedAnswers": [
+        "dziewięćdziesiąt dziewięć"
+      ],
+      "meaning": {
+        "en": "ninety-nine"
+      },
+      "items": [
+        "dziewiecdziesiat",
+        "dziewiec"
+      ]
+    }
+  ]
+}

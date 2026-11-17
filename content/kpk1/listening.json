@@ -1527,6 +1527,392 @@
         11,
         13
       ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-064-1",
+      "track": 64,
+      "question": "Skąd on jest?",
+      "meaning": {
+        "en": "Where is he from?"
+      },
+      "options": [
+        "Z Niemiec.",
+        "Z Polski.",
+        "Z Anglii."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-064-2",
+      "track": 64,
+      "question": "Gdzie on mieszka?",
+      "meaning": {
+        "en": "Where does he live?"
+      },
+      "options": [
+        "W Berlinie.",
+        "W Krakowie.",
+        "W Warszawie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l05-064-3",
+      "track": 64,
+      "statement": "On jest niski i gruby.",
+      "meaning": {
+        "en": "He is short and fat."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-064-4",
+      "track": 64,
+      "question": "Kim on jest z zawodu?",
+      "meaning": {
+        "en": "What does he do?"
+      },
+      "options": [
+        "Biznesmenem.",
+        "Lekarzem.",
+        "Aktorem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-064-5",
+      "track": 64,
+      "question": "Ile on ma lat?",
+      "meaning": {
+        "en": "How old is he?"
+      },
+      "options": [
+        "Czterdzieści cztery lata.",
+        "Czterdzieści lat.",
+        "Czternaście lat."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l05-064-6",
+      "track": 64,
+      "statement": "On lubi pracować.",
+      "meaning": {
+        "en": "He likes working."
+      },
+      "answer": true,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-065-1",
+      "track": 65,
+      "question": "Jaki jest pierwszy liczebnik?",
+      "meaning": {
+        "en": "What is the first numeral?"
+      },
+      "options": [
+        "dwadzieścia",
+        "dwanaście",
+        "trzydzieści"
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l05-065-2",
+      "track": 65,
+      "question": "Jaki jest ostatni liczebnik?",
+      "meaning": {
+        "en": "What is the last numeral?"
+      },
+      "acceptedAnswers": [
+        "sto"
+      ],
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l05-066-1",
+      "track": 66,
+      "statement": "Chłopak ma prawie osiemnaście lat.",
+      "meaning": {
+        "en": "The boy is almost eighteen."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-066-2",
+      "track": 66,
+      "question": "Ile lat ma dziewczyna?",
+      "meaning": {
+        "en": "How old is the girl?"
+      },
+      "options": [
+        "Dwadzieścia.",
+        "Osiemnaście.",
+        "Siedemnaście."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l05-067-1",
+      "track": 67,
+      "statement": "Dziewczyna ćwiczy liczebniki.",
+      "meaning": {
+        "en": "The girl is practising numerals."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l05-067-2",
+      "track": 67,
+      "statement": "Pani ma czterdzieści trzy lata.",
+      "meaning": {
+        "en": "The lady is forty-three."
+      },
+      "answer": true,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-067-3",
+      "track": 67,
+      "question": "Ile lat ma jej mąż?",
+      "meaning": {
+        "en": "How old is her husband?"
+      },
+      "options": [
+        "Czterdzieści pięć.",
+        "Czterdzieści trzy.",
+        "Pięćdziesiąt cztery."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-068-1",
+      "track": 68,
+      "question": "Jaki jest pierwszy liczebnik?",
+      "meaning": {
+        "en": "What is the first numeral?"
+      },
+      "options": [
+        "dwadzieścia siedem",
+        "siedemdziesiąt dwa",
+        "dwadzieścia sześć"
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-069-1",
+      "track": 69,
+      "question": "Jakie jest pierwsze słowo?",
+      "meaning": {
+        "en": "What is the first word?"
+      },
+      "options": [
+        "kelner",
+        "kucharz",
+        "lekarz"
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l05-069-2",
+      "track": 69,
+      "question": "Jakie jest ostatnie słowo?",
+      "meaning": {
+        "en": "What is the last word?"
+      },
+      "acceptedAnswers": [
+        "aktor"
+      ],
+      "lines": [
+        16,
+        16
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l05-070-1",
+      "track": 70,
+      "statement": "Jest przerwa.",
+      "meaning": {
+        "en": "It is a break."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-070-2",
+      "track": 70,
+      "question": "Co jest na fotografii?",
+      "meaning": {
+        "en": "What is in the photo?"
+      },
+      "options": [
+        "Jego rodzina.",
+        "Jego kolega.",
+        "Jego szkoła."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-070-3",
+      "track": 70,
+      "question": "Kim jest jego żona?",
+      "meaning": {
+        "en": "What does his wife do?"
+      },
+      "options": [
+        "Aktorką.",
+        "Lektorką.",
+        "Lekarką."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        9
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l05-070-4",
+      "track": 70,
+      "statement": "Ona pracuje w teatrze w Berlinie.",
+      "meaning": {
+        "en": "She works in a theatre in Berlin."
+      },
+      "answer": true,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l05-070-5",
+      "track": 70,
+      "question": "Kim jest z zawodu jego kolega?",
+      "meaning": {
+        "en": "What does his friend do?"
+      },
+      "options": [
+        "Muzykiem.",
+        "Biznesmenem.",
+        "Lekarzem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l05-070-6",
+      "track": 70,
+      "statement": "Kolega gra tylko na gitarze.",
+      "meaning": {
+        "en": "The friend only plays the guitar."
+      },
+      "answer": false,
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l05-070-7",
+      "track": 70,
+      "statement": "Kolega jest też instruktorem tanga.",
+      "meaning": {
+        "en": "The friend is also a tango instructor."
+      },
+      "answer": true,
+      "lines": [
+        12,
+        12
+      ]
     }
   ]
 }

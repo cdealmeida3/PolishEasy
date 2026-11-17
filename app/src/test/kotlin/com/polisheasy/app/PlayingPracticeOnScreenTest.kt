@@ -16,6 +16,7 @@ import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
@@ -558,8 +559,8 @@ class PlayingPracticeOnScreenTest {
 
         // The noun is written with its meaning, and is not said until it is answered.
         val first = checkNotNull(sorting().question)
-        shows(first.polish)
-        shows(first.meaning)
+        showsNoun(first.polish, first.meaning)
+        screen.onAllNodesWithText(first.meaning).onFirst().assertIsDisplayed()
         assertEquals(emptyList(), clips.played)
         assertEquals(3, sorting().buckets.size)
 
@@ -591,7 +592,7 @@ class PlayingPracticeOnScreenTest {
         shows(R.string.ten_instruction)
         assertEquals(listOf("ten", "ta", "to"), sorting().buckets.map { it.word })
         val first = checkNotNull(sorting().question)
-        shows(first.polish)
+        showsNoun(first.polish, first.meaning)
         tapBucket(sorting().buckets.first { it.gender == first.gender }.word)
         shows(first.phrase)
         assertEquals(sorting().buckets.first { it.gender == first.gender }.word, first.phrase.substringBefore(' '))
@@ -660,7 +661,8 @@ class PlayingPracticeOnScreenTest {
 
         val first = checkNotNull(sorting().question)
         shows(first.meaning)
-        screen.onNodeWithText(first.polish).assertDoesNotExist()
+        // Only the meaning, which is all that holds the noun's letters when it is written the same (sport is "sport").
+        screen.onAllNodesWithText(first.polish).assertCountEquals(if (first.polish in first.meaning) 1 else 0)
         tapBucket(sorting().buckets.first { it.gender == first.gender }.word)
         shows(first.phrase)
         back()
@@ -1208,6 +1210,13 @@ class PlayingPracticeOnScreenTest {
 
     private fun shows(text: String) {
         screen.onNodeWithText(text).assertIsDisplayed()
+    }
+
+    /** Shows the noun [polish], which a [meaning] such as "sport" holds too: then it is on the screen twice. */
+    private fun showsNoun(polish: String, meaning: String) {
+        val nodes = screen.onAllNodesWithText(polish)
+        nodes.assertCountEquals(if (polish in meaning) 2 else 1)
+        nodes[0].assertIsDisplayed()
     }
 
     /** Shows [text] somewhere down the screen, scrolled to: the Games further down than the screen is high. */

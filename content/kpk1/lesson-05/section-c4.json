@@ -1,0 +1,422 @@
+{
+  "id": "kpk1-l05-c4",
+  "section": {
+    "letter": "C",
+    "heading": "Zawody",
+    "meaning": {
+      "en": "Jobs"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-c4-t01",
+      "before": "kpk1-l05-c4-e01",
+      "title": {
+        "en": "Pracować: where do you work?"
+      },
+      "body": {
+        "en": "*Pracować* drops *-ować* and adds *-uj-* before the endings: *pracuję*, *pracujesz*, *pracuje*, *pracujemy*, *pracujecie*, *pracują*. *Gdzie pracujesz?* asks a friend where they work. The answer is *w* and the place with a new ending: *w szpitalu*, *w biurze*, *w teatrze*. For now, learn each as a whole."
+      },
+      "conjugation": {
+        "verb": "pracować",
+        "meaning": {
+          "en": "to work"
+        },
+        "forms": {
+          "ja": "pracuję",
+          "ty": "pracujesz",
+          "on": "pracuje",
+          "my": "pracujemy",
+          "wy": "pracujecie",
+          "oni": "pracują"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c4-e01",
+      "prompt": "pracuję",
+      "options": [
+        {
+          "en": "I live"
+        },
+        {
+          "en": "I like"
+        },
+        {
+          "en": "I work"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pracowac-pracuje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c4-e02",
+      "prompt": "w szpitalu",
+      "options": [
+        {
+          "en": "in a hospital"
+        },
+        {
+          "en": "in an office"
+        },
+        {
+          "en": "at school, in a school"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-szpitalu"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l05-c4-e03",
+      "verb": "pracować",
+      "meaning": {
+        "en": "to work"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ w szpitalu.",
+      "sentenceMeaning": {
+        "en": "I work in a hospital."
+      },
+      "acceptedAnswers": [
+        "pracuję"
+      ],
+      "items": [
+        "ja",
+        "pracowac-pracuje",
+        "w-szpitalu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c4-e04",
+      "prompt": "w biurze",
+      "options": [
+        {
+          "en": "in a hospital"
+        },
+        {
+          "en": "in an office"
+        },
+        {
+          "en": "in a theatre"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-biurze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c4-e05",
+      "prompt": "pracujesz",
+      "options": [
+        {
+          "en": "you live (one friend)"
+        },
+        {
+          "en": "you have (one friend)"
+        },
+        {
+          "en": "you work (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pracowac-pracujesz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l05-c4-e06",
+      "verb": "pracować",
+      "meaning": {
+        "en": "to work"
+      },
+      "person": "ty",
+      "sentence": "Gdzie ty ___?",
+      "sentenceMeaning": {
+        "en": "Where do you work?"
+      },
+      "acceptedAnswers": [
+        "pracujesz"
+      ],
+      "items": [
+        "gdzie",
+        "ty",
+        "pracowac-pracujesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c4-e07",
+      "prompt": "w teatrze",
+      "options": [
+        {
+          "en": "in a theatre"
+        },
+        {
+          "en": "in a restaurant"
+        },
+        {
+          "en": "in a museum"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-teatrze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c4-e08",
+      "prompt": "pracuje",
+      "options": [
+        {
+          "en": "he lives; she lives"
+        },
+        {
+          "en": "he works, she works"
+        },
+        {
+          "en": "he likes, she likes"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pracowac-pracuje-on"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l05-c4-e09",
+      "verb": "pracować",
+      "meaning": {
+        "en": "to work"
+      },
+      "person": "on",
+      "sentence": "Aktor ___ w teatrze.",
+      "sentenceMeaning": {
+        "en": "An actor works in a theatre."
+      },
+      "acceptedAnswers": [
+        "pracuje"
+      ],
+      "items": [
+        "aktor",
+        "pracowac-pracuje-on",
+        "w-teatrze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c4-e10",
+      "prompt": "w restauracji",
+      "options": [
+        {
+          "en": "at school, in a school"
+        },
+        {
+          "en": "in an office"
+        },
+        {
+          "en": "in a restaurant"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-restauracji"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-c4-e11",
+      "text": "Kelner pracuje ___.",
+      "meaning": {
+        "en": "A waiter works in a restaurant."
+      },
+      "gaps": [
+        [
+          "w restauracji"
+        ]
+      ],
+      "distractors": [
+        "w szpitalu",
+        "w teatrze"
+      ],
+      "items": [
+        "kelner",
+        "pracowac-pracuje-on",
+        "w-restauracji"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c4-e12",
+      "prompt": "w szkole",
+      "options": [
+        {
+          "en": "at school, in a school"
+        },
+        {
+          "en": "in a hospital"
+        },
+        {
+          "en": "in a restaurant"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-szkole"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-c4-e13",
+      "prompt": {
+        "en": "the teacher (a woman) works at a school"
+      },
+      "acceptedAnswers": [
+        "nauczycielka pracuje w szkole"
+      ],
+      "distractors": [
+        "pracuję",
+        "biurze"
+      ],
+      "items": [
+        "nauczycielka",
+        "pracowac-pracuje-on",
+        "w-szkole"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-c4-e14",
+      "text": "pracuję w biurze",
+      "meaning": {
+        "en": "I work in an office"
+      },
+      "distractors": [
+        "pracuję w szkole",
+        "pracujesz w biurze"
+      ],
+      "items": [
+        "pracowac-pracuje",
+        "w-biurze"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-c4-e15",
+      "pairs": [
+        {
+          "polish": "w szpitalu",
+          "meaning": {
+            "en": "in a hospital"
+          }
+        },
+        {
+          "polish": "w biurze",
+          "meaning": {
+            "en": "in an office"
+          }
+        },
+        {
+          "polish": "w teatrze",
+          "meaning": {
+            "en": "in a theatre"
+          }
+        },
+        {
+          "polish": "w restauracji",
+          "meaning": {
+            "en": "in a restaurant"
+          }
+        },
+        {
+          "polish": "w szkole",
+          "meaning": {
+            "en": "at school"
+          }
+        }
+      ],
+      "items": [
+        "w-szpitalu",
+        "w-biurze",
+        "w-teatrze",
+        "w-restauracji",
+        "w-szkole"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-c4-e16",
+      "acceptedAnswers": [
+        "gdzie pracujesz?"
+      ],
+      "meaning": {
+        "en": "where do you work? (one friend)"
+      },
+      "items": [
+        "gdzie",
+        "pracowac-pracujesz"
+      ],
+      "readingAnswers": [
+        "gdzie ty pracujesz?"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l05-c4-e17",
+      "lines": [
+        "Gdzie pracujesz?",
+        "Pracuję w szpitalu. A ty?",
+        "Ja pracuję w biurze.",
+        "Ewa też pracuje w biurze!"
+      ],
+      "meaning": {
+        "en": "Two friends talk about work."
+      },
+      "items": [
+        "gdzie",
+        "pracowac-pracujesz",
+        "pracowac-pracuje",
+        "w-szpitalu",
+        "a-ty",
+        "ja",
+        "w-biurze",
+        "ewa",
+        "tez",
+        "pracowac-pracuje-on"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-c4-e18",
+      "prompt": {
+        "en": "the doctor (a man) works in a hospital"
+      },
+      "acceptedAnswers": [
+        "lekarz pracuje w szpitalu"
+      ],
+      "items": [
+        "lekarz",
+        "pracowac-pracuje-on",
+        "w-szpitalu"
+      ]
+    }
+  ]
+}
