@@ -227,14 +227,15 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
             listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7) + listOf(7, 7, 6, 7, 6, 6, 6, 6) +
                 listOf(8, 8, 8, 3, 0) + listOf(5, 0, 7, 6, 8, 8, 1, 1, 0) +
                 listOf(6, 7, 4, 4, 7, 6, 4, 8, 0, 5, 7, 0) + listOf(8, 8, 7, 4, 8, 8, 6, 8, 4, 0) +
-                listOf(8, 8, 8, 7, 8, 8, 8, 8, 8, 0) + listOf(3, 5, 5, 7, 7, 8, 8, 8, 6, 6, 4, 8, 8, 0),
+                listOf(8, 8, 8, 7, 8, 8, 8, 8, 8, 0) + listOf(3, 5, 5, 7, 7, 8, 8, 8, 6, 6, 4, 8, 8, 0) +
+                listOf(7, 7, 6, 8, 3, 6, 8, 8, 7, 7, 5, 8, 8, 7, 8, 8, 5),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -276,8 +277,10 @@ class AuthoredContentTest {
         assertEquals(10, book[4].sections)
         assertEquals("Jesteś instruktorem tanga?", book[5].title)
         assertEquals(14, book[5].sections)
-        assertTrue(book.take(6).none { it.coming })
-        assertTrue(book.drop(6).all { it.coming })
+        assertEquals("Co robisz? Nudzę się!", book[6].title)
+        assertEquals(17, book[6].sections)
+        assertTrue(book.take(7).none { it.coming })
+        assertTrue(book.drop(7).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -617,8 +620,8 @@ class AuthoredContentTest {
 
     @Test
     fun `mój, moja, moje, twój, twoja and twoje agree with the gender of the noun after them`() {
-        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres", "plecak", "słownik", "kolega")
-        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna", "torba", "koleżanka", "dentystka")
+        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres", "plecak", "słownik", "kolega", "gospodarz")
+        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna", "torba", "koleżanka", "dentystka", "gospodyni")
         val neuter = setOf("dziecko", "pytanie", "rodzeństwo", "hobby")
         val possessives = mapOf(
             "mój" to masculine, "twój" to masculine, "moja" to feminine, "twoja" to feminine, "moje" to neuter, "twoje" to neuter,

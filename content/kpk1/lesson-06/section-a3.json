@@ -1,0 +1,394 @@
+{
+  "id": "kpk1-l06-a3",
+  "section": {
+    "letter": "A",
+    "heading": "W domu: co robisz?",
+    "meaning": {
+      "en": "At home: what are you doing?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-a3-t01",
+      "before": "kpk1-l06-a3-e01",
+      "title": {
+        "en": "Looking for, looking at"
+      },
+      "body": {
+        "en": "*Szukam* is \"I am looking for\", and what you look for changes its ending: *szukam informacji* (*informacja*). *Oglądam* is \"I watch\" or \"I look at\": *oglądam film*, *oglądam zdjęcia*. The plural of *zdjęcie* is *zdjęcia*, and of *e-mail* it is *e-maile*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a3-e01",
+      "prompt": "pan",
+      "options": [
+        {
+          "en": "you (to a woman, formal); Mrs, Ms"
+        },
+        {
+          "en": "you (to a man, formal); Mr"
+        },
+        {
+          "en": "he"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pan"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a3-e02",
+      "text": "co pan robi?",
+      "meaning": {
+        "en": "what are you doing? (to a man, formal)"
+      },
+      "distractors": [
+        "co pani robi?",
+        "co on robi?"
+      ],
+      "items": [
+        "co",
+        "pan",
+        "robic-robi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a3-e03",
+      "prompt": "piszę",
+      "options": [
+        {
+          "en": "I read"
+        },
+        {
+          "en": "I speak"
+        },
+        {
+          "en": "I write, I am writing"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pisac-pisze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a3-e04",
+      "prompt": "e-mail",
+      "options": [
+        {
+          "en": "an e-mail (e-maile: e-mails)"
+        },
+        {
+          "en": "a letter"
+        },
+        {
+          "en": "a text message"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "e-mail"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-a3-e05",
+      "prompt": {
+        "en": "I'm writing e-mails"
+      },
+      "acceptedAnswers": [
+        "piszę e-maile"
+      ],
+      "items": [
+        "pisac-pisze",
+        "e-mail"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a3-e06",
+      "prompt": "szukam",
+      "options": [
+        {
+          "en": "I read"
+        },
+        {
+          "en": "I am looking for"
+        },
+        {
+          "en": "I find"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szukac-szukam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a3-e07",
+      "prompt": "informacji",
+      "options": [
+        {
+          "en": "a question"
+        },
+        {
+          "en": "a problem"
+        },
+        {
+          "en": "information (after szukam: szukam informacji)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "informacja-gen"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-a3-e08",
+      "text": "Pracuję: ___ informacji, piszę e-maile.",
+      "meaning": {
+        "en": "I'm working: I'm looking for information, I'm writing e-mails."
+      },
+      "gaps": [
+        [
+          "szukam"
+        ]
+      ],
+      "distractors": [
+        "szukasz",
+        "czytam"
+      ],
+      "items": [
+        "pracowac-pracuje",
+        "szukac-szukam",
+        "informacja-gen",
+        "pisac-pisze",
+        "e-mail"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a3-e09",
+      "prompt": "córka",
+      "options": [
+        {
+          "en": "a daughter"
+        },
+        {
+          "en": "a sister"
+        },
+        {
+          "en": "a son"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "corka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a3-e10",
+      "prompt": "ogląda",
+      "options": [
+        {
+          "en": "I watch"
+        },
+        {
+          "en": "he watches, she watches; he looks at, she looks at"
+        },
+        {
+          "en": "he reads, she reads"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ogladac-oglada"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a3-e11",
+      "prompt": "zdjęcie",
+      "options": [
+        {
+          "en": "a film"
+        },
+        {
+          "en": "a painting"
+        },
+        {
+          "en": "a photo (zdjęcia: photos)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zdjecie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a3-e12",
+      "text": "moja córka ogląda zdjęcia",
+      "meaning": {
+        "en": "my daughter is looking at photos"
+      },
+      "distractors": [
+        "moja córka ogląda film",
+        "mój syn ogląda zdjęcia"
+      ],
+      "items": [
+        "moja",
+        "corka",
+        "ogladac-oglada",
+        "zdjecie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-a3-e13",
+      "prompt": {
+        "en": "I'm looking for information"
+      },
+      "acceptedAnswers": [
+        "szukam informacji",
+        "ja szukam informacji"
+      ],
+      "items": [
+        "szukac-szukam",
+        "informacja-gen"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-a3-e14",
+      "acceptedAnswers": [
+        "piszę e-mail"
+      ],
+      "meaning": {
+        "en": "I'm writing an e-mail"
+      },
+      "items": [
+        "pisac-pisze",
+        "e-mail"
+      ],
+      "readingAnswers": [
+        "ja piszę e-mail"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-a3-e15",
+      "lines": [
+        "Dzień dobry! Co pan robi?",
+        "Pracuję: szukam informacji i piszę e-maile.",
+        "A co robi pana córka?",
+        "Ogląda zdjęcia."
+      ],
+      "meaning": {
+        "en": "A student talks to the man of the house."
+      },
+      "statements": [
+        {
+          "text": "On pisze e-maile.",
+          "meaning": {
+            "en": "He is writing e-mails."
+          },
+          "true": true
+        },
+        {
+          "text": "On ogląda zdjęcia.",
+          "meaning": {
+            "en": "He is looking at photos."
+          },
+          "true": false
+        },
+        {
+          "text": "Jego córka ogląda zdjęcia.",
+          "meaning": {
+            "en": "His daughter is looking at photos."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "dzien-dobry",
+        "co",
+        "pan",
+        "robic-robi",
+        "pracowac-pracuje",
+        "szukac-szukam",
+        "informacja-gen",
+        "i",
+        "pisac-pisze",
+        "e-mail",
+        "corka",
+        "ogladac-oglada",
+        "zdjecie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-a3-e16",
+      "pairs": [
+        {
+          "polish": "szukam",
+          "meaning": {
+            "en": "I am looking for"
+          }
+        },
+        {
+          "polish": "informacji",
+          "meaning": {
+            "en": "information (after szukam)"
+          }
+        },
+        {
+          "polish": "piszę",
+          "meaning": {
+            "en": "I write"
+          }
+        },
+        {
+          "polish": "e-mail",
+          "meaning": {
+            "en": "an e-mail"
+          }
+        },
+        {
+          "polish": "córka",
+          "meaning": {
+            "en": "a daughter"
+          }
+        },
+        {
+          "polish": "zdjęcie",
+          "meaning": {
+            "en": "a photo"
+          }
+        }
+      ],
+      "items": [
+        "szukac-szukam",
+        "informacja-gen",
+        "pisac-pisze",
+        "e-mail",
+        "corka",
+        "zdjecie"
+      ]
+    }
+  ]
+}

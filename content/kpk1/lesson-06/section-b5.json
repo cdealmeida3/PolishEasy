@@ -1,0 +1,467 @@
+{
+  "id": "kpk1-l06-b5",
+  "section": {
+    "letter": "B",
+    "heading": "Hobby",
+    "meaning": {
+      "en": "Hobbies"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-b5-t01",
+      "before": "kpk1-l06-b5-e01",
+      "title": {
+        "en": "Jeździć"
+      },
+      "body": {
+        "en": "*Jeździć* goes like *robić*, but in *ja* and *oni* *ździ* becomes *żdż*: *jeżdżę*, *jeżdżą*. To ask about sport, say *jaki sport uprawiasz?*: *uprawiać sport* is \"to do sport\"."
+      },
+      "conjugation": {
+        "verb": "jeździć",
+        "meaning": {
+          "en": "to ride, to go (by bike, on skis…)"
+        },
+        "forms": {
+          "ja": "jeżdżę",
+          "ty": "jeździsz",
+          "on": "jeździ",
+          "my": "jeździmy",
+          "wy": "jeździcie",
+          "oni": "jeżdżą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b5-e01",
+      "prompt": "jeżdżę",
+      "options": [
+        {
+          "en": "you ride, you go (one friend; by bike, on skis…)"
+        },
+        {
+          "en": "I ride, I go (by bike, on skis…)"
+        },
+        {
+          "en": "I go (on foot, or regularly)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jezdzic-jezdze"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-b5-e02",
+      "verb": "jeździć",
+      "meaning": {
+        "en": "to ride, to go (by bike, on skis…)"
+      },
+      "person": "ja",
+      "sentence": "W weekend ___ na rowerze.",
+      "sentenceMeaning": {
+        "en": "At the weekend I ride my bike."
+      },
+      "acceptedAnswers": [
+        "jeżdżę"
+      ],
+      "items": [
+        "w-weekend",
+        "jezdzic-jezdze",
+        "na-rowerze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b5-e03",
+      "prompt": "jeździsz",
+      "options": [
+        {
+          "en": "I ride, I go (by bike, on skis…)"
+        },
+        {
+          "en": "you go (one friend; on foot, or regularly)"
+        },
+        {
+          "en": "you ride, you go (one friend; by bike, on skis…)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jezdzic-jezdzisz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-b5-e04",
+      "verb": "jeździć",
+      "meaning": {
+        "en": "to ride, to go (by bike, on skis…)"
+      },
+      "person": "ty",
+      "sentence": "Czy ty ___ na nartach?",
+      "sentenceMeaning": {
+        "en": "Do you ski?"
+      },
+      "acceptedAnswers": [
+        "jeździsz"
+      ],
+      "items": [
+        "czy",
+        "ty",
+        "jezdzic-jezdzisz",
+        "na-nartach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b5-e05",
+      "prompt": "jeździ",
+      "options": [
+        {
+          "en": "he rides, she rides"
+        },
+        {
+          "en": "they ride"
+        },
+        {
+          "en": "he goes, she goes (on foot, or regularly)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jezdzic-jezdzi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b5-e06",
+      "prompt": "na rolkach",
+      "options": [
+        {
+          "en": "skis (after jeździć: jeździć na nartach, to ski)"
+        },
+        {
+          "en": "rollerblades (after jeździć: jeździć na rolkach, to rollerblade)"
+        },
+        {
+          "en": "a bike (after jeździć: jeżdżę na rowerze)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-rolkach"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-b5-e07",
+      "verb": "jeździć",
+      "meaning": {
+        "en": "to ride, to go (by bike, on skis…)"
+      },
+      "person": "on",
+      "sentence": "Moja dziewczyna ___ na rolkach.",
+      "sentenceMeaning": {
+        "en": "My girlfriend rollerblades."
+      },
+      "acceptedAnswers": [
+        "jeździ"
+      ],
+      "items": [
+        "moja",
+        "dziewczyna",
+        "jezdzic-jezdzi",
+        "na-rolkach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b5-e08",
+      "prompt": "jeżdżą",
+      "options": [
+        {
+          "en": "he rides, she rides"
+        },
+        {
+          "en": "they go (on foot, or regularly)"
+        },
+        {
+          "en": "they ride"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jezdzic-jezdza"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-b5-e09",
+      "text": "oni jeżdżą konno",
+      "meaning": {
+        "en": "they ride horses"
+      },
+      "distractors": [
+        "oni jeżdżą na rowerze",
+        "on jeździ konno"
+      ],
+      "items": [
+        "oni",
+        "jezdzic-jezdza",
+        "konno"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b5-e10",
+      "prompt": "uprawiać",
+      "options": [
+        {
+          "en": "do (a sport: uprawiać sport)"
+        },
+        {
+          "en": "watch (to watch)"
+        },
+        {
+          "en": "play (to play)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "uprawiac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-b5-e11",
+      "prompt": {
+        "en": "I like doing sport"
+      },
+      "acceptedAnswers": [
+        "lubię uprawiać sport"
+      ],
+      "distractors": [
+        "grać",
+        "sportem"
+      ],
+      "items": [
+        "lubic-lubie",
+        "uprawiac",
+        "sport"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b5-e12",
+      "prompt": "na basen",
+      "options": [
+        {
+          "en": "to the gym"
+        },
+        {
+          "en": "to the swimming pool"
+        },
+        {
+          "en": "to the cinema"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-basen"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-b5-e13",
+      "acceptedAnswers": [
+        "chodzę na basen, bo lubię pływać"
+      ],
+      "meaning": {
+        "en": "I go to the swimming pool because I like swimming"
+      },
+      "items": [
+        "chodzic-chodze",
+        "na-basen",
+        "bo",
+        "lubic-lubie",
+        "plywac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-b5-e14",
+      "prompt": {
+        "en": "do you ride a bike? (one friend)"
+      },
+      "acceptedAnswers": [
+        "jeździsz na rowerze?",
+        "czy jeździsz na rowerze?",
+        "ty jeździsz na rowerze?"
+      ],
+      "items": [
+        "jezdzic-jezdzisz",
+        "na-rowerze"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-b5-e15",
+      "lines": [
+        "Jestem bardzo wysportowany.",
+        "Jeżdżę na rowerze i chodzę na basen.",
+        "Moja dziewczyna jeździ na rolkach.",
+        "W weekend gramy w piłkę."
+      ],
+      "meaning": {
+        "en": "Adam talks about his sports."
+      },
+      "statements": [
+        {
+          "text": "Adam jeździ na rowerze.",
+          "meaning": {
+            "en": "Adam rides a bike."
+          },
+          "true": true
+        },
+        {
+          "text": "Jego dziewczyna jeździ na nartach.",
+          "meaning": {
+            "en": "His girlfriend skis."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam chodzi na basen.",
+          "meaning": {
+            "en": "Adam goes to the swimming pool."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "byc-jestem",
+        "bardzo",
+        "wysportowany",
+        "jezdzic-jezdze",
+        "na-rowerze",
+        "i",
+        "chodzic-chodze",
+        "na-basen",
+        "moja",
+        "dziewczyna",
+        "jezdzic-jezdzi",
+        "na-rolkach",
+        "w-weekend",
+        "w-pilke"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-b5-e16",
+      "pairs": [
+        {
+          "polish": "jeżdżę",
+          "meaning": {
+            "en": "I ride"
+          }
+        },
+        {
+          "polish": "jeździsz",
+          "meaning": {
+            "en": "you ride"
+          }
+        },
+        {
+          "polish": "jeździ",
+          "meaning": {
+            "en": "he rides, she rides"
+          }
+        },
+        {
+          "polish": "jeżdżą",
+          "meaning": {
+            "en": "they ride"
+          }
+        },
+        {
+          "polish": "na rolkach",
+          "meaning": {
+            "en": "rollerblades"
+          }
+        },
+        {
+          "polish": "na basen",
+          "meaning": {
+            "en": "to the swimming pool"
+          }
+        }
+      ],
+      "items": [
+        "jezdzic-jezdze",
+        "jezdzic-jezdzisz",
+        "jezdzic-jezdzi",
+        "jezdzic-jezdza",
+        "na-rolkach",
+        "na-basen"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l06-b5-e17",
+      "lines": [
+        "Jaki sport uprawiasz?",
+        "Jeżdżę na rowerze. A ty?",
+        "Ja chodzę na basen.",
+        "Lubisz pływać?"
+      ],
+      "meaning": {
+        "en": "Two friends talk about sport."
+      },
+      "items": [
+        "jaki",
+        "sport",
+        "jezdzic-jezdze",
+        "na-rowerze",
+        "a-ty",
+        "ja",
+        "chodzic-chodze",
+        "na-basen",
+        "lubic-lubisz",
+        "plywac"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-b5-e18",
+      "text": "Czy lubisz ___ sport?",
+      "meaning": {
+        "en": "Do you like doing sport?"
+      },
+      "gaps": [
+        [
+          "uprawiać"
+        ]
+      ],
+      "distractors": [
+        "grać",
+        "jeździć"
+      ],
+      "items": [
+        "czy",
+        "lubic-lubisz",
+        "uprawiac",
+        "sport"
+      ]
+    }
+  ]
+}

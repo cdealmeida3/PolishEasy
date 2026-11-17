@@ -1,0 +1,387 @@
+{
+  "id": "kpk1-l06-a6",
+  "section": {
+    "letter": "A",
+    "heading": "Koniugacje",
+    "meaning": {
+      "en": "Conjugations"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-a6-t01",
+      "before": "kpk1-l06-a6-e01",
+      "title": {
+        "en": "Verbs in -m, -sz"
+      },
+      "body": {
+        "en": "Verbs like *znać* and *umieć* end in *-m* for *ja* and *-sz* for *ty*: *znam, znasz*; *umiem, umiesz*. *Mieć*, *czytać*, *grać* and *oglądać* go the same way. *Znać* is for knowing a person, a place or a film: *znam Kraków*."
+      },
+      "conjugation": {
+        "verb": "znać",
+        "meaning": {
+          "en": "to know (a person, a place)"
+        },
+        "forms": {
+          "ja": "znam",
+          "ty": "znasz",
+          "on": "zna",
+          "my": "znamy",
+          "wy": "znacie",
+          "oni": "znają"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l06-a6-t02",
+      "before": "kpk1-l06-a6-e07",
+      "title": {
+        "en": "Umieć: I know how to"
+      },
+      "body": {
+        "en": "*Umieć* is a skill, and it is followed by a verb's dictionary form: *umiem tańczyć*, *on umie grać na gitarze*. Only *oni* ends differently: *umieją*."
+      },
+      "conjugation": {
+        "verb": "umieć",
+        "meaning": {
+          "en": "to know how to, can"
+        },
+        "forms": {
+          "ja": "umiem",
+          "ty": "umiesz",
+          "on": "umie",
+          "my": "umiemy",
+          "wy": "umiecie",
+          "oni": "umieją"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a6-e01",
+      "prompt": "znam",
+      "options": [
+        {
+          "en": "I can, I know how to"
+        },
+        {
+          "en": "I know (a person, a place, a film)"
+        },
+        {
+          "en": "I have"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "znac-znam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a6-e02",
+      "text": "znam Kraków",
+      "meaning": {
+        "en": "I know Kraków"
+      },
+      "distractors": [
+        "znasz Kraków?",
+        "mam Kraków"
+      ],
+      "items": [
+        "znac-znam",
+        "krakow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a6-e03",
+      "prompt": "znasz",
+      "options": [
+        {
+          "en": "you have (one friend)"
+        },
+        {
+          "en": "you read, you are reading (one friend)"
+        },
+        {
+          "en": "you know (one friend; a person, a place, a film)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "znac-znasz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a6-e04",
+      "verb": "znać",
+      "meaning": {
+        "en": "to know (a person, a place)"
+      },
+      "person": "ty",
+      "sentence": "Czy ___ ten film?",
+      "sentenceMeaning": {
+        "en": "Do you know this film?"
+      },
+      "acceptedAnswers": [
+        "znasz"
+      ],
+      "items": [
+        "czy",
+        "znac-znasz",
+        "ten",
+        "film"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a6-e05",
+      "prompt": "zna",
+      "options": [
+        {
+          "en": "he knows, she knows (a person, a place, a film)"
+        },
+        {
+          "en": "I know (a person, a place, a film)"
+        },
+        {
+          "en": "he has; she has; it has"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "znac-zna"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a6-e06",
+      "verb": "znać",
+      "meaning": {
+        "en": "to know (a person, a place)"
+      },
+      "person": "on",
+      "sentence": "Ewa dobrze ___ Kraków.",
+      "sentenceMeaning": {
+        "en": "Ewa knows Kraków well."
+      },
+      "acceptedAnswers": [
+        "zna"
+      ],
+      "items": [
+        "ewa",
+        "dobrze",
+        "znac-zna",
+        "krakow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a6-e07",
+      "prompt": "umie",
+      "options": [
+        {
+          "en": "I can, I know how to"
+        },
+        {
+          "en": "he can, she can; he knows how to, she knows how to"
+        },
+        {
+          "en": "he likes, she likes"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "umiec-umie"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a6-e08",
+      "verb": "umieć",
+      "meaning": {
+        "en": "to know how to, can"
+      },
+      "person": "on",
+      "sentence": "Adam ___ grać na gitarze.",
+      "sentenceMeaning": {
+        "en": "Adam can play the guitar."
+      },
+      "acceptedAnswers": [
+        "umie"
+      ],
+      "items": [
+        "adam",
+        "umiec-umie",
+        "grac",
+        "na-gitarze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a6-e09",
+      "prompt": "umiemy",
+      "options": [
+        {
+          "en": "they can, they know how to"
+        },
+        {
+          "en": "I can, I know how to"
+        },
+        {
+          "en": "we can, we know how to"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "umiec-umiemy"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a6-e10",
+      "verb": "umieć",
+      "meaning": {
+        "en": "to know how to, can"
+      },
+      "person": "my",
+      "sentence": "My ___ tańczyć tango.",
+      "sentenceMeaning": {
+        "en": "We can dance the tango."
+      },
+      "acceptedAnswers": [
+        "umiemy"
+      ],
+      "items": [
+        "my",
+        "umiec-umiemy",
+        "tanczyc",
+        "tango"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a6-e11",
+      "prompt": "umieją",
+      "options": [
+        {
+          "en": "they can, they know how to"
+        },
+        {
+          "en": "we can, we know how to"
+        },
+        {
+          "en": "you know (one friend; a person, a place, a film)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "umiec-umieja"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a6-e12",
+      "text": "oni umieją gotować",
+      "meaning": {
+        "en": "they can cook"
+      },
+      "distractors": [
+        "oni lubią gotować",
+        "my umiemy gotować"
+      ],
+      "items": [
+        "oni",
+        "umiec-umieja",
+        "gotowac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-a6-e13",
+      "prompt": {
+        "en": "do you know this TV series? (one friend)"
+      },
+      "acceptedAnswers": [
+        "znasz ten serial?",
+        "czy znasz ten serial?"
+      ],
+      "items": [
+        "znac-znasz",
+        "ten",
+        "serial"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-a6-e14",
+      "acceptedAnswers": [
+        "ona umie gotować"
+      ],
+      "meaning": {
+        "en": "she can cook"
+      },
+      "items": [
+        "ona",
+        "umiec-umie",
+        "gotowac"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-a6-e15",
+      "pairs": [
+        {
+          "polish": "znam",
+          "meaning": {
+            "en": "I know"
+          }
+        },
+        {
+          "polish": "znasz",
+          "meaning": {
+            "en": "you know (one friend)"
+          }
+        },
+        {
+          "polish": "zna",
+          "meaning": {
+            "en": "he knows, she knows"
+          }
+        },
+        {
+          "polish": "umie",
+          "meaning": {
+            "en": "he can, she can"
+          }
+        },
+        {
+          "polish": "umiemy",
+          "meaning": {
+            "en": "we can"
+          }
+        },
+        {
+          "polish": "umieją",
+          "meaning": {
+            "en": "they can"
+          }
+        }
+      ],
+      "items": [
+        "znac-znam",
+        "znac-znasz",
+        "znac-zna",
+        "umiec-umie",
+        "umiec-umiemy",
+        "umiec-umieja"
+      ]
+    }
+  ]
+}

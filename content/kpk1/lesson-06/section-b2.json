@@ -1,0 +1,358 @@
+{
+  "id": "kpk1-l06-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Co lubicie robić?",
+    "meaning": {
+      "en": "What do you like doing?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-b2-t01",
+      "before": "kpk1-l06-b2-e01",
+      "title": {
+        "en": "At the weekend"
+      },
+      "body": {
+        "en": "*Spotykać się* is \"to meet up\": *lubię spotykać się ze znajomymi*. *Robić zakupy* is \"to do the shopping\". *Idziemy* is \"we are going\", for now or for a plan: *w weekend idziemy tańczyć*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b2-e01",
+      "prompt": "spotykać się",
+      "options": [
+        {
+          "en": "learn (to learn)"
+        },
+        {
+          "en": "meet up (to meet up)"
+        },
+        {
+          "en": "go (to go on foot, or regularly)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spotykac-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b2-e02",
+      "prompt": "ze znajomymi",
+      "options": [
+        {
+          "en": "with my family"
+        },
+        {
+          "en": "from Poland"
+        },
+        {
+          "en": "with friends"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ze-znajomymi"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-b2-e03",
+      "prompt": {
+        "en": "I like meeting up with friends"
+      },
+      "acceptedAnswers": [
+        "lubię spotykać się ze znajomymi"
+      ],
+      "distractors": [
+        "spotykam",
+        "znajomi"
+      ],
+      "items": [
+        "lubic-lubie",
+        "spotykac-sie",
+        "ze-znajomymi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b2-e04",
+      "prompt": "zakupy",
+      "options": [
+        {
+          "en": "shopping (robić zakupy: to do the shopping)"
+        },
+        {
+          "en": "the cleaning"
+        },
+        {
+          "en": "homework"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zakupy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-b2-e05",
+      "text": "Lubisz robić ___?",
+      "meaning": {
+        "en": "Do you like doing the shopping?"
+      },
+      "gaps": [
+        [
+          "zakupy"
+        ]
+      ],
+      "distractors": [
+        "muzyki",
+        "ryż"
+      ],
+      "items": [
+        "lubic-lubisz",
+        "robic",
+        "zakupy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b2-e06",
+      "prompt": "w weekend",
+      "options": [
+        {
+          "en": "today (the same as dziś)"
+        },
+        {
+          "en": "at the weekend"
+        },
+        {
+          "en": "now"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-weekend"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b2-e07",
+      "prompt": "idziemy",
+      "options": [
+        {
+          "en": "we do, we make"
+        },
+        {
+          "en": "we are dancing"
+        },
+        {
+          "en": "we are going (on foot)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "isc-idziemy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-b2-e08",
+      "text": "w weekend idziemy tańczyć",
+      "meaning": {
+        "en": "at the weekend we're going dancing"
+      },
+      "distractors": [
+        "dzisiaj idziemy tańczyć",
+        "w weekend lubimy tańczyć"
+      ],
+      "items": [
+        "w-weekend",
+        "isc-idziemy",
+        "tanczyc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-b2-e09",
+      "prompt": {
+        "en": "at the weekend I do the shopping"
+      },
+      "acceptedAnswers": [
+        "w weekend robię zakupy",
+        "w weekend ja robię zakupy"
+      ],
+      "items": [
+        "w-weekend",
+        "robic-robie",
+        "zakupy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-b2-e10",
+      "acceptedAnswers": [
+        "lubisz spotykać się ze znajomymi?"
+      ],
+      "meaning": {
+        "en": "do you like meeting up with friends? (one friend)"
+      },
+      "items": [
+        "lubic-lubisz",
+        "spotykac-sie",
+        "ze-znajomymi"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-b2-e11",
+      "lines": [
+        "W weekend nie pracuję.",
+        "Robię zakupy i spotykam się ze znajomymi.",
+        "Wieczorem idziemy tańczyć.",
+        "Bardzo lubię weekend!"
+      ],
+      "meaning": {
+        "en": "Adam talks about his weekend."
+      },
+      "statements": [
+        {
+          "text": "Adam w weekend pracuje.",
+          "meaning": {
+            "en": "Adam works at the weekend."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam robi zakupy.",
+          "meaning": {
+            "en": "Adam does the shopping."
+          },
+          "true": true
+        },
+        {
+          "text": "Wieczorem oni idą tańczyć.",
+          "meaning": {
+            "en": "In the evening they go dancing."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "w-weekend",
+        "nie",
+        "pracowac-pracuje",
+        "robic-robie",
+        "zakupy",
+        "i",
+        "ze-znajomymi",
+        "isc-idziemy",
+        "tanczyc",
+        "bardzo",
+        "lubic-lubie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-b2-e12",
+      "pairs": [
+        {
+          "polish": "spotykać się",
+          "meaning": {
+            "en": "to meet up"
+          }
+        },
+        {
+          "polish": "ze znajomymi",
+          "meaning": {
+            "en": "with friends"
+          }
+        },
+        {
+          "polish": "zakupy",
+          "meaning": {
+            "en": "shopping"
+          }
+        },
+        {
+          "polish": "w weekend",
+          "meaning": {
+            "en": "at the weekend"
+          }
+        },
+        {
+          "polish": "idziemy",
+          "meaning": {
+            "en": "we are going"
+          }
+        },
+        {
+          "polish": "tańczyć",
+          "meaning": {
+            "en": "to dance"
+          }
+        }
+      ],
+      "items": [
+        "spotykac-sie",
+        "ze-znajomymi",
+        "zakupy",
+        "w-weekend",
+        "isc-idziemy",
+        "tanczyc"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l06-b2-e13",
+      "lines": [
+        "Co robicie w weekend?",
+        "Idziemy tańczyć. A ty?",
+        "Robię zakupy i spotykam się ze znajomymi.",
+        "Świetnie!"
+      ],
+      "meaning": {
+        "en": "Friends talk about the weekend."
+      },
+      "items": [
+        "co",
+        "robic-robicie",
+        "w-weekend",
+        "isc-idziemy",
+        "tanczyc",
+        "a-ty",
+        "robic-robie",
+        "zakupy",
+        "i",
+        "ze-znajomymi",
+        "swietnie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-b2-e14",
+      "text": "robimy zakupy",
+      "meaning": {
+        "en": "we are doing the shopping"
+      },
+      "distractors": [
+        "robicie zakupy",
+        "robimy zdjęcia"
+      ],
+      "items": [
+        "robic-robimy",
+        "zakupy"
+      ]
+    }
+  ]
+}

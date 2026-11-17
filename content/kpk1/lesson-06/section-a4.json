@@ -1,0 +1,453 @@
+{
+  "id": "kpk1-l06-a4",
+  "section": {
+    "letter": "A",
+    "heading": "W domu: co robisz?",
+    "meaning": {
+      "en": "At home: what are you doing?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-a4-t01",
+      "before": "kpk1-l06-a4-e01",
+      "title": {
+        "en": "I'm bored"
+      },
+      "body": {
+        "en": "*Nudzę się* is \"I am bored\". Like *uczę się*, the verb keeps *się* in every form: *on się nudzi*, *ty się nudzisz*. *Nic* is \"nothing\", and the verb still takes *nie*: *nic nie robię*. *Dzisiaj* and *dziś* both mean \"today\"."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a4-e01",
+      "prompt": "nudzę się",
+      "options": [
+        {
+          "en": "I am bored"
+        },
+        {
+          "en": "I am tired"
+        },
+        {
+          "en": "I am sad"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nudzic-sie-nudze"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a4-e02",
+      "text": "nudzę się",
+      "meaning": {
+        "en": "I am bored"
+      },
+      "distractors": [
+        "uczę się",
+        "cieszę się"
+      ],
+      "items": [
+        "nudzic-sie-nudze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a4-e03",
+      "prompt": "nic",
+      "options": [
+        {
+          "en": "everything"
+        },
+        {
+          "en": "nothing (nic nie robię: I am doing nothing)"
+        },
+        {
+          "en": "only"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nic"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-a4-e04",
+      "prompt": {
+        "en": "I'm doing nothing, I'm bored"
+      },
+      "acceptedAnswers": [
+        "nic nie robię, nudzę się"
+      ],
+      "distractors": [
+        "nudzi",
+        "robisz"
+      ],
+      "items": [
+        "nic",
+        "nie",
+        "robic-robie",
+        "nudzic-sie-nudze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a4-e05",
+      "prompt": "dzisiaj",
+      "options": [
+        {
+          "en": "tomorrow"
+        },
+        {
+          "en": "yesterday"
+        },
+        {
+          "en": "today (the same as dziś)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dzisiaj"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-a4-e06",
+      "text": "Co robisz ___? Nic.",
+      "meaning": {
+        "en": "What are you doing today? Nothing."
+      },
+      "gaps": [
+        [
+          "dzisiaj"
+        ]
+      ],
+      "distractors": [
+        "nic",
+        "tylko"
+      ],
+      "items": [
+        "co",
+        "robic-robisz",
+        "dzisiaj",
+        "nic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a4-e07",
+      "prompt": "teraz",
+      "options": [
+        {
+          "en": "now"
+        },
+        {
+          "en": "today (the same as dziś)"
+        },
+        {
+          "en": "later"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "teraz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a4-e08",
+      "prompt": "nudzi się",
+      "options": [
+        {
+          "en": "I am bored"
+        },
+        {
+          "en": "he is bored, she is bored"
+        },
+        {
+          "en": "he is learning Polish; she is learning Polish"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nudzic-sie-nudzi"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-a4-e09",
+      "acceptedAnswers": [
+        "on się teraz nudzi",
+        "teraz on się nudzi"
+      ],
+      "meaning": {
+        "en": "he is bored now"
+      },
+      "items": [
+        "on",
+        "nudzic-sie-nudzi",
+        "teraz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a4-e10",
+      "prompt": "na uniwersytecie",
+      "options": [
+        {
+          "en": "at school, in a school"
+        },
+        {
+          "en": "in an office"
+        },
+        {
+          "en": "at university"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-uniwersytecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a4-e11",
+      "prompt": "na wakacjach",
+      "options": [
+        {
+          "en": "on holiday"
+        },
+        {
+          "en": "at home"
+        },
+        {
+          "en": "at work"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-wakacjach"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a4-e12",
+      "text": "mój brat jest na wakacjach",
+      "meaning": {
+        "en": "my brother is on holiday"
+      },
+      "distractors": [
+        "mój brat jest na uniwersytecie",
+        "mój tata jest na wakacjach"
+      ],
+      "items": [
+        "moj",
+        "brat",
+        "byc-jest",
+        "na-wakacjach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a4-e13",
+      "prompt": "w Japonii",
+      "options": [
+        {
+          "en": "from Japan"
+        },
+        {
+          "en": "in Japan"
+        },
+        {
+          "en": "in Poland"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-japonii"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-a4-e14",
+      "prompt": {
+        "en": "my family is in Japan"
+      },
+      "acceptedAnswers": [
+        "moja rodzina jest w Japonii"
+      ],
+      "items": [
+        "moja",
+        "rodzina",
+        "byc-jest",
+        "w-japonii"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-a4-e15",
+      "lines": [
+        "To są stare zdjęcia.",
+        "Tu moja mama i mój tata są na uniwersytecie.",
+        "A tu mój brat jest na wakacjach.",
+        "Dzisiaj nic nie robię i trochę się nudzę."
+      ],
+      "meaning": {
+        "en": "Ewa shows her old photos."
+      },
+      "statements": [
+        {
+          "text": "Mama i tata są na wakacjach.",
+          "meaning": {
+            "en": "Mum and dad are on holiday."
+          },
+          "true": false
+        },
+        {
+          "text": "Brat jest na wakacjach.",
+          "meaning": {
+            "en": "Her brother is on holiday."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa dzisiaj się nudzi.",
+          "meaning": {
+            "en": "Ewa is bored today."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "to",
+        "byc-sa",
+        "stary",
+        "zdjecie",
+        "tu",
+        "moja",
+        "mama",
+        "i",
+        "moj",
+        "tata",
+        "na-uniwersytecie",
+        "a",
+        "brat",
+        "byc-jest",
+        "na-wakacjach",
+        "dzisiaj",
+        "nic",
+        "nie",
+        "robic-robie",
+        "troche",
+        "nudzic-sie-nudze"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l06-a4-e16",
+      "lines": [
+        "Co robisz dzisiaj?",
+        "Nic. Nudzę się.",
+        "Dlaczego?",
+        "Moja rodzina jest w Japonii. Jestem trochę smutna."
+      ],
+      "meaning": {
+        "en": "Two friends talk at home."
+      },
+      "items": [
+        "co",
+        "robic-robisz",
+        "dzisiaj",
+        "nic",
+        "nudzic-sie-nudze",
+        "dlaczego",
+        "moja",
+        "rodzina",
+        "byc-jest",
+        "w-japonii",
+        "byc-jestem",
+        "troche",
+        "smutny"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-a4-e17",
+      "pairs": [
+        {
+          "polish": "nudzę się",
+          "meaning": {
+            "en": "I am bored"
+          }
+        },
+        {
+          "polish": "nic",
+          "meaning": {
+            "en": "nothing"
+          }
+        },
+        {
+          "polish": "dzisiaj",
+          "meaning": {
+            "en": "today"
+          }
+        },
+        {
+          "polish": "teraz",
+          "meaning": {
+            "en": "now"
+          }
+        },
+        {
+          "polish": "na wakacjach",
+          "meaning": {
+            "en": "on holiday"
+          }
+        },
+        {
+          "polish": "na uniwersytecie",
+          "meaning": {
+            "en": "at university"
+          }
+        }
+      ],
+      "items": [
+        "nudzic-sie-nudze",
+        "nic",
+        "dzisiaj",
+        "teraz",
+        "na-wakacjach",
+        "na-uniwersytecie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-a4-e18",
+      "prompt": {
+        "en": "she is bored now"
+      },
+      "acceptedAnswers": [
+        "ona się teraz nudzi",
+        "teraz ona się nudzi"
+      ],
+      "distractors": [
+        "nudzę",
+        "nic"
+      ],
+      "items": [
+        "ona",
+        "nudzic-sie-nudzi",
+        "teraz"
+      ]
+    }
+  ]
+}

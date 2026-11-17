@@ -1,0 +1,225 @@
+{
+  "id": "chat-weekend-plans",
+  "person": "Ola",
+  "title": {
+    "en": "Plans for the weekend"
+  },
+  "scene": {
+    "en": "After class you have nothing to do. Your friend Ola asks what you are doing. You like riding a bike and swimming, but you can't sing. At the weekend you have to study for an exam, but today you are free. Ola is a friend, so talk to her as to a friend."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "co",
+    "robic-robisz",
+    "nic",
+    "nudzic-sie-nudze",
+    "nie",
+    "robic-robie",
+    "nudzic-sie-nudzisz",
+    "lubic-lubisz",
+    "robic",
+    "lubic-lubie",
+    "jezdzic",
+    "jezdzic-jezdze",
+    "na-rowerze",
+    "i",
+    "plywac",
+    "ja",
+    "tez",
+    "a",
+    "umiec-umiesz",
+    "spiewac",
+    "umiec-umiem",
+    "tak",
+    "szkoda",
+    "w-weekend",
+    "isc-idziemy",
+    "na-koncert",
+    "chciec-chcesz",
+    "isc",
+    "chciec-chce",
+    "ale",
+    "musiec-musze",
+    "uczyc-sie",
+    "do-egzaminu",
+    "moc-moge",
+    "musiec-musisz",
+    "dzisiaj",
+    "moc-mozesz",
+    "na-kawe",
+    "swietnie"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Co robisz?",
+      "meaning": {
+        "en": "Hi! What are you doing?"
+      },
+      "replies": [
+        {
+          "text": "Nic. Nudzę się.",
+          "meaning": {
+            "en": "Nothing. I'm bored."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Nic. Nudzę się.",
+            "Nudzę się.",
+            "Nic nie robię. Nudzę się.",
+            "Nic nie robię.",
+            "Nic."
+          ]
+        },
+        {
+          "text": "Nic. Nudzisz się.",
+          "meaning": {
+            "en": "Nothing. You're bored."
+          },
+          "note": {
+            "en": "*Nudzisz się* is \"you are bored\". About yourself say *nudzę się*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Nudzisz się? A co lubisz robić?",
+      "meaning": {
+        "en": "You are bored? And what do you like doing?"
+      },
+      "replies": [
+        {
+          "text": "Lubię jeździć na rowerze i pływać.",
+          "meaning": {
+            "en": "I like riding a bike and swimming."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Lubię jeździć na rowerze i pływać.",
+            "Lubię pływać i jeździć na rowerze.",
+            "Lubię jeździć na rowerze.",
+            "Lubię pływać.",
+            "Jeździć na rowerze i pływać."
+          ]
+        },
+        {
+          "text": "Lubię jeżdżę na rowerze i pływać.",
+          "meaning": {
+            "en": "I like I ride a bike and swimming."
+          },
+          "note": {
+            "en": "After *lubię* comes a verb in its dictionary form: *lubię jeździć*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Ja też lubię pływać! A umiesz śpiewać?",
+      "meaning": {
+        "en": "I like swimming too! And can you sing?"
+      },
+      "replies": [
+        {
+          "text": "Nie, nie umiem śpiewać.",
+          "meaning": {
+            "en": "No, I can't sing."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Nie, nie umiem śpiewać.",
+            "Nie umiem śpiewać.",
+            "Nie, nie umiem.",
+            "Nie umiem."
+          ]
+        },
+        {
+          "text": "Nie, nie mogę śpiewać.",
+          "meaning": {
+            "en": "No, I can't (I am not free to) sing."
+          },
+          "note": {
+            "en": "*Mogę* is being free or allowed to. A skill is *umiem*: *nie umiem śpiewać*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Szkoda! W weekend idziemy na koncert. Chcesz iść?",
+      "meaning": {
+        "en": "Too bad! At the weekend we are going to a concert. Do you want to go?"
+      },
+      "replies": [
+        {
+          "text": "Chcę, ale muszę uczyć się do egzaminu.",
+          "meaning": {
+            "en": "I want to, but I have to study for an exam."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Chcę, ale muszę uczyć się do egzaminu.",
+            "Chcę, ale nie mogę. Muszę uczyć się do egzaminu.",
+            "Chcę, ale nie mogę.",
+            "Muszę uczyć się do egzaminu."
+          ]
+        },
+        {
+          "text": "Chcesz, ale muszę uczyć się do egzaminu.",
+          "meaning": {
+            "en": "You want to, but I have to study for an exam."
+          },
+          "note": {
+            "en": "*Chcesz* is \"you want\". About yourself say *chcę*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Musisz uczyć się do egzaminu? A dzisiaj możesz iść na kawę?",
+      "meaning": {
+        "en": "You have to study for an exam? And can you go for a coffee today?"
+      },
+      "replies": [
+        {
+          "text": "Tak, dzisiaj mogę!",
+          "meaning": {
+            "en": "Yes, today I can!"
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Tak, dzisiaj mogę!",
+            "Tak, mogę!",
+            "Dzisiaj mogę!",
+            "Mogę!",
+            "Tak, mogę iść na kawę!"
+          ]
+        },
+        {
+          "text": "Tak, dzisiaj możesz!",
+          "meaning": {
+            "en": "Yes, today you can!"
+          },
+          "note": {
+            "en": "*Możesz* is \"you can\". About yourself say *mogę*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Świetnie! Idziemy!",
+      "meaning": {
+        "en": "Great! Let's go!"
+      }
+    }
+  ]
+}

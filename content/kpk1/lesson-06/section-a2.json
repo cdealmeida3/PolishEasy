@@ -1,0 +1,429 @@
+{
+  "id": "kpk1-l06-a2",
+  "section": {
+    "letter": "A",
+    "heading": "W domu: co robisz?",
+    "meaning": {
+      "en": "At home: what are you doing?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-a2-t01",
+      "before": "kpk1-l06-a2-e01",
+      "title": {
+        "en": "I like reading, I prefer playing"
+      },
+      "body": {
+        "en": "To say what you like doing, use *lubię* with a verb's dictionary form: *lubię czytać*. *Wolę* is \"I prefer\": *wolę grać na komputerze*. After *czytam* a word for a thing like *książka* ends in *-ę*: *czytam książkę*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a2-e01",
+      "prompt": "czyta",
+      "options": [
+        {
+          "en": "you read, you are reading (one friend)"
+        },
+        {
+          "en": "he likes, she likes"
+        },
+        {
+          "en": "he reads, she reads"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czytac-czyta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a2-e02",
+      "prompt": "książkę",
+      "options": [
+        {
+          "en": "a book (after czytam, czytasz…)"
+        },
+        {
+          "en": "a film"
+        },
+        {
+          "en": "a TV series"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ksiazka-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a2-e03",
+      "text": "czytam książkę",
+      "meaning": {
+        "en": "I am reading a book"
+      },
+      "distractors": [
+        "czytasz książkę",
+        "mam książkę"
+      ],
+      "items": [
+        "czytac-czytam",
+        "ksiazka-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a2-e04",
+      "prompt": "czytać",
+      "options": [
+        {
+          "en": "write (to write)"
+        },
+        {
+          "en": "read (to read)"
+        },
+        {
+          "en": "do, make (to do, to make)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czytac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-a2-e05",
+      "prompt": {
+        "en": "I like reading very much"
+      },
+      "acceptedAnswers": [
+        "bardzo lubię czytać"
+      ],
+      "distractors": [
+        "czyta",
+        "lubi"
+      ],
+      "items": [
+        "bardzo",
+        "lubic-lubie",
+        "czytac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a2-e06",
+      "prompt": "grać",
+      "options": [
+        {
+          "en": "dance (to dance)"
+        },
+        {
+          "en": "do, make (to do, to make)"
+        },
+        {
+          "en": "play (to play)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "grac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a2-e07",
+      "prompt": "na komputerze",
+      "options": [
+        {
+          "en": "on the computer (grać na komputerze: to play computer games)"
+        },
+        {
+          "en": "the guitar (after grać: gram na gitarze)"
+        },
+        {
+          "en": "on the phone"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-komputerze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a2-e08",
+      "prompt": "wolę",
+      "options": [
+        {
+          "en": "I like"
+        },
+        {
+          "en": "I prefer"
+        },
+        {
+          "en": "I think"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wolec-wole"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-a2-e09",
+      "text": "Nie lubię czytać, ___ grać na komputerze.",
+      "meaning": {
+        "en": "I don't like reading, I prefer playing computer games."
+      },
+      "gaps": [
+        [
+          "wolę"
+        ]
+      ],
+      "distractors": [
+        "lubi",
+        "czyta"
+      ],
+      "items": [
+        "nie",
+        "lubic-lubie",
+        "czytac",
+        "wolec-wole",
+        "grac",
+        "na-komputerze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a2-e10",
+      "prompt": "tata",
+      "options": [
+        {
+          "en": "a brother"
+        },
+        {
+          "en": "a son"
+        },
+        {
+          "en": "dad"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tata"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a2-e11",
+      "text": "co robi twój tata?",
+      "meaning": {
+        "en": "what is your dad doing?"
+      },
+      "distractors": [
+        "co robi twój brat?",
+        "co robi twoja mama?"
+      ],
+      "items": [
+        "co",
+        "robic-robi",
+        "twoj",
+        "tata"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-a2-e12",
+      "acceptedAnswers": [
+        "mój tata czyta książkę"
+      ],
+      "meaning": {
+        "en": "my dad is reading a book"
+      },
+      "items": [
+        "moj",
+        "tata",
+        "czytac-czyta",
+        "ksiazka-acc"
+      ],
+      "readingAnswers": [
+        "tata czyta książkę"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a2-e13",
+      "prompt": "szkoda",
+      "options": [
+        {
+          "en": "what a pity, too bad"
+        },
+        {
+          "en": "well; OK"
+        },
+        {
+          "en": "of course"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "szkoda"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-a2-e14",
+      "prompt": {
+        "en": "I prefer playing computer games"
+      },
+      "acceptedAnswers": [
+        "wolę grać na komputerze",
+        "ja wolę grać na komputerze"
+      ],
+      "items": [
+        "wolec-wole",
+        "grac",
+        "na-komputerze"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-a2-e15",
+      "lines": [
+        "Mój tata czyta książkę.",
+        "On bardzo lubi czytać.",
+        "Ja nie lubię czytać.",
+        "Wolę grać na komputerze."
+      ],
+      "meaning": {
+        "en": "Ewa talks about her dad."
+      },
+      "statements": [
+        {
+          "text": "Tata czyta książkę.",
+          "meaning": {
+            "en": "Dad is reading a book."
+          },
+          "true": true
+        },
+        {
+          "text": "Tata nie lubi czytać.",
+          "meaning": {
+            "en": "Dad doesn't like reading."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa lubi czytać.",
+          "meaning": {
+            "en": "Ewa likes reading."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "moj",
+        "tata",
+        "czytac-czyta",
+        "ksiazka-acc",
+        "on",
+        "bardzo",
+        "lubic-lubi",
+        "czytac",
+        "ja",
+        "nie",
+        "lubic-lubie",
+        "wolec-wole",
+        "grac",
+        "na-komputerze"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-a2-e16",
+      "pairs": [
+        {
+          "polish": "czytać",
+          "meaning": {
+            "en": "to read"
+          }
+        },
+        {
+          "polish": "książkę",
+          "meaning": {
+            "en": "a book (after czytam)"
+          }
+        },
+        {
+          "polish": "grać",
+          "meaning": {
+            "en": "to play"
+          }
+        },
+        {
+          "polish": "wolę",
+          "meaning": {
+            "en": "I prefer"
+          }
+        },
+        {
+          "polish": "tata",
+          "meaning": {
+            "en": "dad"
+          }
+        },
+        {
+          "polish": "szkoda",
+          "meaning": {
+            "en": "what a pity"
+          }
+        }
+      ],
+      "items": [
+        "czytac",
+        "ksiazka-acc",
+        "grac",
+        "wolec-wole",
+        "tata",
+        "szkoda"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l06-a2-e17",
+      "lines": [
+        "Co robisz?",
+        "Czytam książkę. Lubisz czytać?",
+        "Nie, wolę grać na komputerze.",
+        "Szkoda!"
+      ],
+      "meaning": {
+        "en": "Two friends at home."
+      },
+      "items": [
+        "co",
+        "robic-robisz",
+        "czytac-czytam",
+        "ksiazka-acc",
+        "lubic-lubisz",
+        "czytac",
+        "nie",
+        "wolec-wole",
+        "grac",
+        "na-komputerze",
+        "szkoda"
+      ]
+    }
+  ]
+}

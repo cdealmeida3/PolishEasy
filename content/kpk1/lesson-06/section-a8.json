@@ -1,0 +1,411 @@
+{
+  "id": "kpk1-l06-a8",
+  "section": {
+    "letter": "A",
+    "heading": "Koniugacje",
+    "meaning": {
+      "en": "Conjugations"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-a8-t01",
+      "before": "kpk1-l06-a8-e01",
+      "title": {
+        "en": "More verbs in -ować"
+      },
+      "body": {
+        "en": "*Organizować*, *planować*, *rezerwować*, *trenować* and *podróżować* all go like *gotować*: *organizuję, organizujesz … organizują*. What you organise takes a new ending, as with *czytam książkę*: *organizuję imprezę* (*impreza*). *Bilety* and *weekend* do not change after the verb: *rezerwuję bilety*, *planuję weekend*."
+      },
+      "conjugation": {
+        "verb": "organizować",
+        "meaning": {
+          "en": "to organise"
+        },
+        "forms": {
+          "ja": "organizuję",
+          "ty": "organizujesz",
+          "on": "organizuje",
+          "my": "organizujemy",
+          "wy": "organizujecie",
+          "oni": "organizują"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a8-e01",
+      "prompt": "organizuję",
+      "options": [
+        {
+          "en": "I organise"
+        },
+        {
+          "en": "I work"
+        },
+        {
+          "en": "I invite"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "organizowac-organizuje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a8-e02",
+      "prompt": "imprezę",
+      "options": [
+        {
+          "en": "a concert"
+        },
+        {
+          "en": "a party (after organizuję, planuję…)"
+        },
+        {
+          "en": "a lesson"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "impreza-acc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-a8-e03",
+      "prompt": {
+        "en": "I'm organising a party"
+      },
+      "acceptedAnswers": [
+        "organizuję imprezę"
+      ],
+      "distractors": [
+        "organizuje",
+        "impreza"
+      ],
+      "items": [
+        "organizowac-organizuje",
+        "impreza-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a8-e04",
+      "prompt": "planuję",
+      "options": [
+        {
+          "en": "I organise"
+        },
+        {
+          "en": "I think"
+        },
+        {
+          "en": "I plan"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "planowac-planuje"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a8-e05",
+      "text": "planuję imprezę",
+      "meaning": {
+        "en": "I'm planning a party"
+      },
+      "distractors": [
+        "organizuję imprezę",
+        "planujesz imprezę"
+      ],
+      "items": [
+        "planowac-planuje",
+        "impreza-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a8-e06",
+      "prompt": "rezerwuję",
+      "options": [
+        {
+          "en": "I book, I reserve"
+        },
+        {
+          "en": "I plan"
+        },
+        {
+          "en": "I buy"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rezerwowac-rezerwuje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a8-e07",
+      "prompt": "bilet",
+      "options": [
+        {
+          "en": "a map"
+        },
+        {
+          "en": "a ticket (bilety: tickets)"
+        },
+        {
+          "en": "a passport"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bilet"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-a8-e08",
+      "text": "Teraz ___ bilety.",
+      "meaning": {
+        "en": "I'm booking the tickets now."
+      },
+      "gaps": [
+        [
+          "rezerwuję"
+        ]
+      ],
+      "distractors": [
+        "rezerwuje",
+        "planujesz"
+      ],
+      "items": [
+        "teraz",
+        "rezerwowac-rezerwuje",
+        "bilet"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a8-e09",
+      "prompt": "trenuję",
+      "options": [
+        {
+          "en": "I work"
+        },
+        {
+          "en": "I play"
+        },
+        {
+          "en": "I train (in a sport)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "trenowac-trenuje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a8-e10",
+      "prompt": "w klubie",
+      "options": [
+        {
+          "en": "at a club"
+        },
+        {
+          "en": "at school, in a school"
+        },
+        {
+          "en": "in a theatre"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-klubie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-a8-e11",
+      "acceptedAnswers": [
+        "trenuję w klubie"
+      ],
+      "meaning": {
+        "en": "I train at a club"
+      },
+      "items": [
+        "trenowac-trenuje",
+        "w-klubie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a8-e12",
+      "prompt": "podróżować",
+      "options": [
+        {
+          "en": "work (to work)"
+        },
+        {
+          "en": "travel (to travel)"
+        },
+        {
+          "en": "dance (to dance)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "podrozowac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-a8-e13",
+      "prompt": {
+        "en": "I like travelling"
+      },
+      "acceptedAnswers": [
+        "lubię podróżować",
+        "ja lubię podróżować"
+      ],
+      "items": [
+        "lubic-lubie",
+        "podrozowac"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a8-e14",
+      "verb": "organizować",
+      "meaning": {
+        "en": "to organise"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ imprezę w klubie.",
+      "sentenceMeaning": {
+        "en": "I am organising a party at a club."
+      },
+      "acceptedAnswers": [
+        "organizuję"
+      ],
+      "items": [
+        "ja",
+        "organizowac-organizuje",
+        "impreza-acc",
+        "w-klubie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-a8-e15",
+      "lines": [
+        "Jestem bardzo aktywny.",
+        "Trenuję w klubie i lubię podróżować.",
+        "Teraz planuję imprezę.",
+        "Rezerwuję też bilety."
+      ],
+      "meaning": {
+        "en": "Adam talks about his week."
+      },
+      "statements": [
+        {
+          "text": "Adam trenuje w klubie.",
+          "meaning": {
+            "en": "Adam trains at a club."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam nie lubi podróżować.",
+          "meaning": {
+            "en": "Adam doesn't like travelling."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam planuje imprezę.",
+          "meaning": {
+            "en": "Adam is planning a party."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "byc-jestem",
+        "bardzo",
+        "aktywny",
+        "trenowac-trenuje",
+        "w-klubie",
+        "i",
+        "lubic-lubie",
+        "podrozowac",
+        "teraz",
+        "planowac-planuje",
+        "impreza-acc",
+        "rezerwowac-rezerwuje",
+        "tez",
+        "bilet"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-a8-e16",
+      "pairs": [
+        {
+          "polish": "organizuję",
+          "meaning": {
+            "en": "I organise"
+          }
+        },
+        {
+          "polish": "imprezę",
+          "meaning": {
+            "en": "a party (after organizuję)"
+          }
+        },
+        {
+          "polish": "planuję",
+          "meaning": {
+            "en": "I plan"
+          }
+        },
+        {
+          "polish": "rezerwuję",
+          "meaning": {
+            "en": "I book"
+          }
+        },
+        {
+          "polish": "bilety",
+          "meaning": {
+            "en": "tickets"
+          }
+        },
+        {
+          "polish": "podróżować",
+          "meaning": {
+            "en": "to travel"
+          }
+        }
+      ],
+      "items": [
+        "organizowac-organizuje",
+        "impreza-acc",
+        "planowac-planuje",
+        "rezerwowac-rezerwuje",
+        "bilet",
+        "podrozowac"
+      ]
+    }
+  ]
+}

@@ -94,6 +94,9 @@
             "text": "A Ewa?"
         },
         {
+            "text": "A co robi pana córka?"
+        },
+        {
             "text": "A czy to jest twój słownik?",
             "meaning": "And is this your dictionary?"
         },
@@ -117,10 +120,25 @@
             "meaning": "And where do you work?"
         },
         {
+            "text": "A ich syn czyta książkę."
+        },
+        {
+            "text": "A ja chcę iść na koncert!"
+        },
+        {
+            "text": "A ja chodzić do klubu. Lubisz tańczyć?"
+        },
+        {
             "text": "A ja interesuję się kinem."
         },
         {
+            "text": "A potem idę na kawę ze znajomymi."
+        },
+        {
             "text": "A to jest Anna, studentka."
+        },
+        {
+            "text": "A to?"
         },
         {
             "text": "A to? Czy to jest długopis?"
@@ -128,6 +146,9 @@
         {
             "text": "A to? Czy to jest ołówek?",
             "meaning": "And this? Is it a pencil?"
+        },
+        {
+            "text": "A tu mój brat jest na wakacjach."
         },
         {
             "text": "A twoja koleżanka?"
@@ -158,6 +179,10 @@
             "meaning": "Adam (a man's name)"
         },
         {
+            "text": "Adam chodzi na basen.",
+            "meaning": "Adam goes to the swimming pool."
+        },
+        {
             "text": "Adam i Ewa mają pytanie.",
             "meaning": "Adam and Ewa have a question."
         },
@@ -168,6 +193,10 @@
         {
             "text": "Adam i Ewa tutaj są",
             "meaning": "Adam and Ewa are here"
+        },
+        {
+            "text": "Adam idzie na koncert.",
+            "meaning": "Adam is going to a concert."
         },
         {
             "text": "Adam jest Anglikiem, a Ewa jest Polką"
@@ -210,6 +239,17 @@
             "meaning": "Adam is from Poland, he is Polish, and Ewa is from England, she is English."
         },
         {
+            "text": "Adam jeździ na rowerze.",
+            "meaning": "Adam rides a bike."
+        },
+        {
+            "text": "Adam lubi słuchać muzyki.",
+            "meaning": "Adam likes listening to music."
+        },
+        {
+            "text": "Adam lubi tańczyć i chodzić do klubu."
+        },
+        {
             "text": "Adam ma dwadzieścia lat.",
             "meaning": "Adam is twenty."
         },
@@ -229,6 +269,14 @@
             "meaning": "Adam is thirteen years old."
         },
         {
+            "text": "Adam musi się uczyć.",
+            "meaning": "Adam has to study."
+        },
+        {
+            "text": "Adam musi uczyć się do egzaminu.",
+            "meaning": "Adam has to study for an exam."
+        },
+        {
             "text": "Adam mówi też po angielsku",
             "meaning": "Adam speaks English too"
         },
@@ -237,7 +285,19 @@
             "meaning": "Adam speaks a little Japanese."
         },
         {
+            "text": "Adam nie lubi podróżować.",
+            "meaning": "Adam doesn't like travelling."
+        },
+        {
             "text": "Adam nie mówi po polsku."
+        },
+        {
+            "text": "Adam planuje imprezę.",
+            "meaning": "Adam is planning a party."
+        },
+        {
+            "text": "Adam robi zakupy.",
+            "meaning": "Adam does the shopping."
         },
         {
             "text": "Adam też interesuje się sportem!"
@@ -324,8 +384,23 @@
             "meaning": "Adam is a dancer"
         },
         {
+            "text": "Adam trenuje w klubie.",
+            "meaning": "Adam trains at a club."
+        },
+        {
             "text": "Adam uczy się polskiego, bo Ewa jest z Polski",
             "meaning": "Adam is learning Polish because Ewa is from Poland"
+        },
+        {
+            "text": "Adam umie grać na gitarze.",
+            "meaning": "Adam can play the guitar."
+        },
+        {
+            "text": "Adam umie, bo jest tancerzem."
+        },
+        {
+            "text": "Adam w weekend pracuje.",
+            "meaning": "Adam works at the weekend."
         },
         {
             "text": "Adam.",
@@ -381,6 +456,9 @@
             "text": "Bardzo dobrym!"
         },
         {
+            "text": "Bardzo lubię weekend!"
+        },
+        {
             "text": "Bardzo mała."
         },
         {
@@ -424,7 +502,13 @@
             "text": "Bo jest duży."
         },
         {
+            "text": "Bo jest impreza."
+        },
+        {
             "text": "Bo jest japońskie."
+        },
+        {
+            "text": "Bo jest koncert."
         },
         {
             "text": "Bo jest mała."
@@ -440,6 +524,9 @@
         },
         {
             "text": "Bo jest stary."
+        },
+        {
+            "text": "Bo lubią tańczyć."
         },
         {
             "text": "Bo moja dziewczyna jest z Polski.",
@@ -461,11 +548,45 @@
             "meaning": "The brother is tired today."
         },
         {
+            "text": "Brat jest na wakacjach.",
+            "meaning": "Her brother is on holiday."
+        },
+        {
             "text": "Brat jest niski.",
             "meaning": "The brother is short."
         },
         {
+            "text": "Chcesz, ale muszę uczyć się do egzaminu.",
+            "meaning": "You want to, but I have to study for an exam."
+        },
+        {
+            "text": "Chcę, ale muszę pracować."
+        },
+        {
+            "text": "Chcę, ale muszę uczyć się do egzaminu.",
+            "meaning": "I want to, but I have to study for an exam."
+        },
+        {
+            "text": "Chcę, ale nie mogę",
+            "meaning": "I want to, but I can't"
+        },
+        {
+            "text": "Chcę, ale nie mogę.",
+            "meaning": "I want to, but I have to study for an exam."
+        },
+        {
+            "text": "Chcę, ale nie mogę. Muszę uczyć się do egzaminu.",
+            "meaning": "I want to, but I have to study for an exam."
+        },
+        {
             "text": "Chodzi do szkoły. Myśli, że szkoła jest fajna."
+        },
+        {
+            "text": "Chodzę na siłownię, a w weekend idę do kina.",
+            "meaning": "I go to the gym, and at the weekend I go to the cinema."
+        },
+        {
+            "text": "Chodzę też na siłownię."
         },
         {
             "text": "Chyba Anna."
@@ -490,11 +611,31 @@
             "meaning": "The boy is almost eighteen."
         },
         {
+            "text": "Chłopak myśli, że jego tata pracuje.",
+            "meaning": "The boy thinks that his dad is working."
+        },
+        {
             "text": "Ciekawe, skąd on jest.",
             "meaning": "I wonder where he is from."
         },
         {
             "text": "Co"
+        },
+        {
+            "text": "Co dzisiaj gotujesz?",
+            "meaning": "What are you cooking today?"
+        },
+        {
+            "text": "Co dzisiaj robimy?",
+            "meaning": "What are we doing today?"
+        },
+        {
+            "text": "Co gotuje gospodyni?",
+            "meaning": "What is the landlady cooking?"
+        },
+        {
+            "text": "Co gotuje pani?",
+            "meaning": "What is the lady cooking?"
         },
         {
             "text": "Co jest na fotografii z wakacji?",
@@ -507,6 +648,14 @@
         {
             "text": "Co jest pod numerem trzy?",
             "meaning": "What is number three?"
+        },
+        {
+            "text": "Co lubi robić jego dziewczyna?",
+            "meaning": "What does his girlfriend like doing?"
+        },
+        {
+            "text": "Co lubicie robić?",
+            "meaning": "What do you like doing?"
         },
         {
             "text": "Co mówi Mami na „miło mi”?",
@@ -534,6 +683,56 @@
         },
         {
             "text": "Co nowego?"
+        },
+        {
+            "text": "Co ogląda dziewczyna?",
+            "meaning": "What is the girl looking at?"
+        },
+        {
+            "text": "Co on robi w weekendy?",
+            "meaning": "What does he do at weekends?"
+        },
+        {
+            "text": "Co oni robią w weekend?",
+            "meaning": "What are they doing at the weekend?"
+        },
+        {
+            "text": "Co pani robi?"
+        },
+        {
+            "text": "Co piszesz?",
+            "meaning": "What are you writing?"
+        },
+        {
+            "text": "Co robi chłopak?",
+            "meaning": "What is the boy doing?"
+        },
+        {
+            "text": "Co robi jego córka?",
+            "meaning": "What is his daughter doing?"
+        },
+        {
+            "text": "Co robi pani w pierwszym dialogu?",
+            "meaning": "What is the lady doing in the first dialogue?"
+        },
+        {
+            "text": "Co robicie w weekend?"
+        },
+        {
+            "text": "Co robimy w weekend?"
+        },
+        {
+            "text": "Co robisz dzisiaj?"
+        },
+        {
+            "text": "Co robisz dzisiaj? Nic.",
+            "meaning": "What are you doing today? Nothing."
+        },
+        {
+            "text": "Co robisz w weekend?"
+        },
+        {
+            "text": "Co robisz?"
         },
         {
             "text": "Co słychać?",
@@ -569,6 +768,10 @@
             "text": "Co u ciebie?"
         },
         {
+            "text": "Czego on szuka?",
+            "meaning": "What is he looking for?"
+        },
+        {
             "text": "Cześć!",
             "meaning": "Bye! See you tomorrow!"
         },
@@ -577,7 +780,8 @@
             "meaning": "Hi!"
         },
         {
-            "text": "Cześć! Co robisz?"
+            "text": "Cześć! Co robisz?",
+            "meaning": "Hi! What are you doing?"
         },
         {
             "text": "Cześć! Co słychać?"
@@ -699,8 +903,16 @@
             "text": "Czy Adam to lekarz?"
         },
         {
+            "text": "Czy chcesz dzisiaj grać?",
+            "meaning": "Do you want to play today?"
+        },
+        {
             "text": "Czy dobrze słyszysz?",
             "meaning": "Can you hear well?"
+        },
+        {
+            "text": "Czy lubisz uprawiać sport?",
+            "meaning": "Do you like doing sport?"
         },
         {
             "text": "Czy macie czas?",
@@ -757,8 +969,16 @@
             "meaning": "Are you interested in sport?"
         },
         {
+            "text": "Czy ty jeździsz na nartach?",
+            "meaning": "Do you ski?"
+        },
+        {
             "text": "Czy ty myślisz, że to jest żart?",
             "meaning": "Do you think that it is a joke?"
+        },
+        {
+            "text": "Czy ty tańczysz tango?",
+            "meaning": "Do you dance the tango?"
         },
         {
             "text": "Czy ty też kończysz kurs?",
@@ -768,7 +988,17 @@
             "text": "Czy wiesz, kto to jest?"
         },
         {
+            "text": "Czy znasz ten film?",
+            "meaning": "Do you know this film?"
+        },
+        {
             "text": "Czym się interesujesz?"
+        },
+        {
+            "text": "Czyta książkę."
+        },
+        {
+            "text": "Czytam książkę. Lubisz czytać?"
         },
         {
             "text": "Czy…?",
@@ -788,6 +1018,18 @@
         {
             "text": "Dlaczego drugi słownik jest zły?",
             "meaning": "Why is the second dictionary bad?"
+        },
+        {
+            "text": "Dlaczego koleżanki chcą iść do klubu?",
+            "meaning": "Why do the friends want to go to a club?"
+        },
+        {
+            "text": "Dlaczego musisz pracować?",
+            "meaning": "Why do you have to work?"
+        },
+        {
+            "text": "Dlaczego nie możesz?",
+            "meaning": "Why can't you?"
         },
         {
             "text": "Dlaczego on uczy się polskiego?",
@@ -815,6 +1057,9 @@
         {
             "text": "Dlaczego uczysz się polskiego?",
             "meaning": "Why are you learning Polish?"
+        },
+        {
+            "text": "Dlaczego?"
         },
         {
             "text": "Do jutra!",
@@ -874,6 +1119,10 @@
         {
             "text": "Dobrze, na razie!",
             "meaning": "All right! See you!"
+        },
+        {
+            "text": "Druga dziewczyna dzisiaj się nudzi.",
+            "meaning": "The other girl is bored today."
         },
         {
             "text": "Druga rzecz to długopis.",
@@ -939,12 +1188,27 @@
             "meaning": "The girl is from Japan and speaks Japanese."
         },
         {
+            "text": "Dziewczyna nudzi się po lekcji.",
+            "meaning": "The girl is bored after the lesson."
+        },
+        {
+            "text": "Dziewczyna umie dobrze gotować.",
+            "meaning": "The girl can cook well."
+        },
+        {
+            "text": "Dziewczyna woli grać na komputerze.",
+            "meaning": "The girl prefers playing computer games."
+        },
+        {
             "text": "Dziewczyna ćwiczy liczebniki.",
             "meaning": "The girl is practising numerals."
         },
         {
             "text": "Dzień dobry!",
             "meaning": "Good morning!"
+        },
+        {
+            "text": "Dzień dobry! Co pan robi?"
         },
         {
             "text": "Dzień dobry! Co u pana słychać?",
@@ -1010,6 +1274,20 @@
         {
             "text": "Dzień dobry. Nazywam się Adam.",
             "meaning": "Good morning. My name is Adam."
+        },
+        {
+            "text": "Dzisiaj gotujemy makaron.",
+            "meaning": "Today we are cooking pasta."
+        },
+        {
+            "text": "Dzisiaj mogę!",
+            "meaning": "Yes, today I can!"
+        },
+        {
+            "text": "Dzisiaj nic nie robię i trochę się nudzę."
+        },
+        {
+            "text": "Dzisiaj nie mogę iść do kina."
         },
         {
             "text": "Dzięki! A gdzie jest kawa?",
@@ -1092,8 +1370,32 @@
             "text": "Ewa Nowak."
         },
         {
+            "text": "Ewa bardzo dobrze tańczy.",
+            "meaning": "Ewa dances very well."
+        },
+        {
+            "text": "Ewa chce iść na kawę.",
+            "meaning": "Ewa wants to go for a coffee."
+        },
+        {
+            "text": "Ewa chce iść na zakupy.",
+            "meaning": "Ewa wants to go shopping."
+        },
+        {
             "text": "Ewa czyta książkę.",
             "meaning": "Ewa is reading a book."
+        },
+        {
+            "text": "Ewa dobrze zna Kraków.",
+            "meaning": "Ewa knows Kraków well."
+        },
+        {
+            "text": "Ewa dzisiaj idzie do kina.",
+            "meaning": "Ewa is going to the cinema today."
+        },
+        {
+            "text": "Ewa dzisiaj się nudzi.",
+            "meaning": "Ewa is bored today."
         },
         {
             "text": "Ewa interesuje się fotografią.",
@@ -1172,6 +1474,21 @@
             "text": "Ewa jest średniego wzrostu. Jest młoda i wesoła."
         },
         {
+            "text": "Ewa lubi czytać.",
+            "meaning": "Ewa likes reading."
+        },
+        {
+            "text": "Ewa lubi malować i słuchać muzyki."
+        },
+        {
+            "text": "Ewa lubi malować.",
+            "meaning": "Ewa likes painting."
+        },
+        {
+            "text": "Ewa lubi pływać.",
+            "meaning": "Ewa likes swimming."
+        },
+        {
             "text": "Ewa lubi tańczyć tango."
         },
         {
@@ -1197,6 +1514,21 @@
         {
             "text": "Ewa mieszka w Londynie.",
             "meaning": "Ewa lives in London."
+        },
+        {
+            "text": "Ewa musi się uczyć.",
+            "meaning": "Ewa has to study."
+        },
+        {
+            "text": "Ewa nie chodzi na siłownię.",
+            "meaning": "Ewa doesn't go to the gym."
+        },
+        {
+            "text": "Ewa nie umie tańczyć."
+        },
+        {
+            "text": "Ewa pisze SMS.",
+            "meaning": "Ewa is writing a text message."
         },
         {
             "text": "Ewa też pracuje w biurze!"
@@ -1233,6 +1565,14 @@
             "meaning": "Ewa is a new student."
         },
         {
+            "text": "Ewa umie tańczyć.",
+            "meaning": "Ewa can dance."
+        },
+        {
+            "text": "Ewa umie śpiewać.",
+            "meaning": "Ewa can sing."
+        },
+        {
             "text": "Ewa, co czytasz?"
         },
         {
@@ -1247,6 +1587,9 @@
             "text": "Film, spotkanie."
         },
         {
+            "text": "Film."
+        },
+        {
             "text": "Fotografia jest z Brazylii.",
             "meaning": "The photo is from Brazil."
         },
@@ -1255,6 +1598,10 @@
         },
         {
             "text": "Francuski i trochę polski."
+        },
+        {
+            "text": "Gdzie jest jej rodzina?",
+            "meaning": "Where is her family?"
         },
         {
             "text": "Gdzie jest mój długopis?",
@@ -1267,6 +1614,10 @@
         {
             "text": "Gdzie jest toaleta?",
             "meaning": "Good morning! Excuse me, where is the toilet?"
+        },
+        {
+            "text": "Gdzie jest twój gospodarz?",
+            "meaning": "Where is your host?"
         },
         {
             "text": "Gdzie jest woda?",
@@ -1287,6 +1638,10 @@
         {
             "text": "Gdzie mieszka?",
             "meaning": "Where does this person live?"
+        },
+        {
+            "text": "Gdzie on chce iść?",
+            "meaning": "Where does he want to go?"
         },
         {
             "text": "Gdzie on mieszka?",
@@ -1324,7 +1679,36 @@
             "meaning": "Where do you live? (several people)"
         },
         {
+            "text": "Gospodarz pracuje w biurze.",
+            "meaning": "The host works in an office."
+        },
+        {
+            "text": "Gospodyni gotuje.",
+            "meaning": "The landlady is cooking."
+        },
+        {
+            "text": "Gospodyni i gospodarz."
+        },
+        {
+            "text": "Gotuje pierogi."
+        },
+        {
+            "text": "Gotuję pierogi. Umiesz gotować?"
+        },
+        {
+            "text": "Gra na komputerze."
+        },
+        {
+            "text": "Gra w piłkę."
+        },
+        {
+            "text": "Grają w tenisa."
+        },
+        {
             "text": "Gram w tenisa. To moje hobby."
+        },
+        {
+            "text": "Grasz dzisiaj w tenisa?"
         },
         {
             "text": "Gruby i smutny."
@@ -1334,6 +1718,22 @@
         },
         {
             "text": "Hiszpański i polski."
+        },
+        {
+            "text": "Hobby",
+            "meaning": "Hobbies"
+        },
+        {
+            "text": "Idziemy tańczyć. A ty?"
+        },
+        {
+            "text": "Idą na zakupy."
+        },
+        {
+            "text": "Idą tańczyć."
+        },
+        {
+            "text": "Idę na koncert. Chcesz iść?"
         },
         {
             "text": "Ile lat ma dziewczyna?",
@@ -1373,6 +1773,9 @@
         },
         {
             "text": "Imię i nazwisko."
+        },
+        {
+            "text": "Informacji."
         },
         {
             "text": "Informatyczką.",
@@ -1426,6 +1829,13 @@
             "text": "Ja chodzę do szkoły. Lubisz sport?"
         },
         {
+            "text": "Ja chodzę na basen."
+        },
+        {
+            "text": "Ja gotuję ryż, a ty?",
+            "meaning": "I am cooking rice, and you?"
+        },
+        {
             "text": "Ja interesuję się sportem.",
             "meaning": "I am interested in sport."
         },
@@ -1446,12 +1856,22 @@
             "meaning": "I am finishing the course."
         },
         {
+            "text": "Ja lubię malować."
+        },
+        {
             "text": "Ja mieszkam w Krakowie.",
             "meaning": "I live in Kraków."
         },
         {
             "text": "Ja mieszkam w Warszawie, a ty gdzie mieszkasz?",
             "meaning": "I live in Warsaw, and where do you live? (one friend)"
+        },
+        {
+            "text": "Ja nie lubię czytać."
+        },
+        {
+            "text": "Ja organizuję imprezę w klubie.",
+            "meaning": "I am organising a party at a club."
         },
         {
             "text": "Ja pracuję w biurze."
@@ -1467,6 +1887,10 @@
         {
             "text": "Ja robię test.",
             "meaning": "I am doing a test."
+        },
+        {
+            "text": "Ja też lubię pływać! A umiesz śpiewać?",
+            "meaning": "I like swimming too! And can you sing?"
         },
         {
             "text": "Ja też trochę. Kim jesteś z zawodu?",
@@ -1495,6 +1919,10 @@
         {
             "text": "Jak ma na imię twoja żona?",
             "meaning": "What is your wife's first name? (to one friend)"
+        },
+        {
+            "text": "Jak mówimy po polsku?",
+            "meaning": "What do we say in Polish?"
         },
         {
             "text": "Jak on się nazywa?",
@@ -1585,12 +2013,23 @@
             "meaning": "What is he like? Nice?"
         },
         {
+            "text": "Jaki sport uprawiasz?"
+        },
+        {
             "text": "Jaki? Jaka? Jakie?",
             "meaning": "What is it like?"
         },
         {
+            "text": "Jakie jest ostatnie hobby?",
+            "meaning": "What is the last hobby?"
+        },
+        {
             "text": "Jakie jest ostatnie słowo?",
             "meaning": "What is the last word?"
+        },
+        {
+            "text": "Jakie jest pierwsze hobby?",
+            "meaning": "What is the first hobby?"
         },
         {
             "text": "Jakie jest pierwsze słowo?",
@@ -1639,6 +2078,14 @@
             "meaning": "One person does not know if the teacher is nice."
         },
         {
+            "text": "Jego córka ogląda zdjęcia.",
+            "meaning": "His daughter is looking at photos."
+        },
+        {
+            "text": "Jego dziewczyna jeździ na nartach.",
+            "meaning": "His girlfriend skis."
+        },
+        {
             "text": "Jego kolega."
         },
         {
@@ -1650,6 +2097,10 @@
         {
             "text": "Jego żona jest z Polski.",
             "meaning": "His wife is from Poland."
+        },
+        {
+            "text": "Jej mama gotuje bardzo dobrze.",
+            "meaning": "Her mum cooks very well."
         },
         {
             "text": "Jest leniwy?"
@@ -1692,6 +2143,12 @@
         },
         {
             "text": "Jestem Angielką, ale mieszkam w Krakowie."
+        },
+        {
+            "text": "Jestem bardzo aktywny."
+        },
+        {
+            "text": "Jestem bardzo wysportowany."
         },
         {
             "text": "Jestem dziennikarką. A ty?"
@@ -1793,6 +2250,22 @@
             "meaning": "Are you from France? Yes, I speak French."
         },
         {
+            "text": "Jeździ konno."
+        },
+        {
+            "text": "Jeździć na rolkach."
+        },
+        {
+            "text": "Jeździć na rowerze i pływać.",
+            "meaning": "I like riding a bike and swimming."
+        },
+        {
+            "text": "Jeżdżę na rowerze i chodzę na basen."
+        },
+        {
+            "text": "Jeżdżę na rowerze. A ty?"
+        },
+        {
             "text": "Julia"
         },
         {
@@ -1841,6 +2314,9 @@
             "meaning": "In class: introducing yourself"
         },
         {
+            "text": "Koledzy z Berlina."
+        },
+        {
             "text": "Kolega gra tylko na gitarze.",
             "meaning": "The friend only plays the guitar."
         },
@@ -1863,12 +2339,19 @@
             "text": "Koleżanka z grupy."
         },
         {
+            "text": "Koleżanki z Londynu."
+        },
+        {
             "text": "Kolory",
             "meaning": "Colours"
         },
         {
             "text": "Koniugacja -ę, -isz/-ysz",
             "meaning": "Verbs in -ę, -isz and -ysz"
+        },
+        {
+            "text": "Koniugacje",
+            "meaning": "Conjugations"
         },
         {
             "text": "Kończę kurs. A ty?"
@@ -1879,6 +2362,13 @@
         },
         {
             "text": "Książka."
+        },
+        {
+            "text": "Książki."
+        },
+        {
+            "text": "Kto jest w weekend w Krakowie?",
+            "meaning": "Who is in Kraków at the weekend?"
         },
         {
             "text": "Kto to jest?",
@@ -1950,11 +2440,60 @@
             "text": "Lubi pracować."
         },
         {
+            "text": "Lubisz grać w piłkę?",
+            "meaning": "Do you like playing football?"
+        },
+        {
+            "text": "Lubisz jeździć na nartach?",
+            "meaning": "Do you like skiing?"
+        },
+        {
+            "text": "Lubisz pływać?"
+        },
+        {
+            "text": "Lubisz robić zakupy?",
+            "meaning": "Do you like doing the shopping?"
+        },
+        {
+            "text": "Lubię biegać i pływać."
+        },
+        {
+            "text": "Lubię grać na gitarze i w szachy.",
+            "meaning": "I like playing the guitar and chess."
+        },
+        {
+            "text": "Lubię jeździć na rowerze i pływać.",
+            "meaning": "I like riding a bike and swimming."
+        },
+        {
+            "text": "Lubię jeździć na rowerze.",
+            "meaning": "I like riding a bike and swimming."
+        },
+        {
+            "text": "Lubię jeżdżę na rowerze i pływać.",
+            "meaning": "I like I ride a bike and swimming."
+        },
+        {
+            "text": "Lubię malować i słuchać muzyki.",
+            "meaning": "I like painting and listening to music."
+        },
+        {
+            "text": "Lubię pływać i jeździć na rowerze.",
+            "meaning": "I like riding a bike and swimming."
+        },
+        {
+            "text": "Lubię pływać.",
+            "meaning": "I like riding a bike and swimming."
+        },
+        {
             "text": "Lubię sport.",
             "meaning": "Yes, I like sport."
         },
         {
             "text": "Lubię tańczyć tango."
+        },
+        {
+            "text": "Makaron."
         },
         {
             "text": "Mam czterdzieści trzy lata, a mój mąż ma czterdzieści pięć lat.",
@@ -1987,6 +2526,9 @@
             "text": "Mam dziewięćdziesiąt lat!"
         },
         {
+            "text": "Mam kontuzję."
+        },
+        {
             "text": "Mam na imię Adam.",
             "meaning": "Hi! I'm Adam."
         },
@@ -2006,6 +2548,13 @@
         },
         {
             "text": "Mam tu komórkę, klucz i paszport."
+        },
+        {
+            "text": "Mama i tata są na wakacjach.",
+            "meaning": "Mum and dad are on holiday."
+        },
+        {
+            "text": "Mama i tata."
         },
         {
             "text": "Mapa i klucz to rzeczowniki.",
@@ -2104,12 +2653,38 @@
             "meaning": "Me too!"
         },
         {
+            "text": "Mogę!",
+            "meaning": "Yes, today I can!"
+        },
+        {
             "text": "Moja babcia ma na imię Ewa.",
             "meaning": "My grandma's first name is Ewa."
         },
         {
+            "text": "Moja dziewczyna jeździ na rolkach.",
+            "meaning": "My girlfriend rollerblades."
+        },
+        {
+            "text": "Moja gospodyni gotuje pierogi."
+        },
+        {
+            "text": "Moja rodzina jest w Japonii. Jestem trochę smutna."
+        },
+        {
             "text": "Moja siostra ma dwanaście lat.",
             "meaning": "My sister is twelve years old."
+        },
+        {
+            "text": "Musisz uczyć się do egzaminu? A dzisiaj możesz iść na kawę?",
+            "meaning": "You have to study for an exam? And can you go for a coffee today?"
+        },
+        {
+            "text": "Muszę iść do lekarza.",
+            "meaning": "I have to go to the doctor."
+        },
+        {
+            "text": "Muszę uczyć się do egzaminu.",
+            "meaning": "I want to, but I have to study for an exam."
         },
         {
             "text": "Muzykiem."
@@ -2143,6 +2718,10 @@
             "meaning": "We study in Kraków."
         },
         {
+            "text": "My umiemy tańczyć tango.",
+            "meaning": "We can dance the tango."
+        },
+        {
             "text": "Myślę, że ona jest bardzo miła."
         },
         {
@@ -2164,6 +2743,9 @@
         {
             "text": "Mój długopis jest tam, na lewo.",
             "meaning": "My pen is over there, on the left."
+        },
+        {
+            "text": "Mój gospodarz pracuje w domu."
         },
         {
             "text": "Mój kolega jest Niemcem, a koleżanka jest Japonką."
@@ -2209,8 +2791,15 @@
             "meaning": "My son is one year old."
         },
         {
+            "text": "Mój tata czyta książkę."
+        },
+        {
             "text": "Mój tata jest z Polski, a moja mama jest z Anglii.",
             "meaning": "My dad is from Poland, and my mum is from England."
+        },
+        {
+            "text": "Mój, twój",
+            "meaning": "My, your"
         },
         {
             "text": "Mówi po francusku i trochę po polsku."
@@ -2227,12 +2816,18 @@
             "text": "Męski, żeński i nijaki."
         },
         {
+            "text": "Na kawę."
+        },
+        {
             "text": "Na lewo.",
             "meaning": "Your pen is over there, on the left."
         },
         {
             "text": "Na lewo?",
             "meaning": "On the left?"
+        },
+        {
+            "text": "Na masaż."
         },
         {
             "text": "Na pewno Ewa."
@@ -2262,12 +2857,31 @@
             "meaning": "Bye! See you tomorrow!"
         },
         {
+            "text": "Na zakupy."
+        },
+        {
+            "text": "Na zdjęciu brat jest na wakacjach.",
+            "meaning": "In the photo her brother is on holiday."
+        },
+        {
+            "text": "Najpierw chcą zrobić zakupy.",
+            "meaning": "First they want to do some shopping."
+        },
+        {
             "text": "Nawzajem! Do widzenia.",
             "meaning": "Thank you, same to you! Goodbye."
         },
         {
             "text": "Nazywam się Adam.",
             "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Nic nie robię.",
+            "meaning": "Nothing. I'm bored."
+        },
+        {
+            "text": "Nic nie robię. Nudzę się.",
+            "meaning": "Nothing. I'm bored."
         },
         {
             "text": "Nic nowego."
@@ -2281,7 +2895,23 @@
             "meaning": "Nothing new. Where are you?"
         },
         {
+            "text": "Nic.",
+            "meaning": "Nothing. I'm bored."
+        },
+        {
+            "text": "Nic. Nudzisz się.",
+            "meaning": "Nothing. You're bored."
+        },
+        {
+            "text": "Nic. Nudzę się.",
+            "meaning": "Nothing. I'm bored."
+        },
+        {
             "text": "Nie"
+        },
+        {
+            "text": "Nie lubię czytać, wolę grać na komputerze.",
+            "meaning": "I don't like reading, I prefer playing computer games."
         },
         {
             "text": "Nie ma za co.",
@@ -2294,6 +2924,9 @@
         {
             "text": "Nie ma za co. Miłego dnia!",
             "meaning": "You're welcome. Have a nice day!"
+        },
+        {
+            "text": "Nie mogę. Muszę iść do lekarza."
         },
         {
             "text": "Nie pamiętam.",
@@ -2310,6 +2943,21 @@
         {
             "text": "Nie rozumiem. Proszę powtórzyć.",
             "meaning": "Sorry, I don't understand. Please repeat."
+        },
+        {
+            "text": "Nie umiem śpiewać, ale lubię tańczyć."
+        },
+        {
+            "text": "Nie umiem śpiewać.",
+            "meaning": "I can't sing."
+        },
+        {
+            "text": "Nie umiem śpiewać.",
+            "meaning": "No, I can't sing."
+        },
+        {
+            "text": "Nie umiem.",
+            "meaning": "No, I can't sing."
         },
         {
             "text": "Nie wiem, ale myślę, że to jest nowy student.",
@@ -2356,6 +3004,18 @@
             "meaning": "No, I'm from England. And you?"
         },
         {
+            "text": "Nie, nie mogę śpiewać.",
+            "meaning": "No, I can't (I am not free to) sing."
+        },
+        {
+            "text": "Nie, nie umiem śpiewać.",
+            "meaning": "No, I can't sing."
+        },
+        {
+            "text": "Nie, nie umiem.",
+            "meaning": "No, I can't sing."
+        },
+        {
             "text": "Nie, ten długopis jest zielony.",
             "meaning": "No, green."
         },
@@ -2381,6 +3041,9 @@
         {
             "text": "Nie, to nie jest słownik. To jest zeszyt.",
             "meaning": "No, it isn't a dictionary. It is a notebook."
+        },
+        {
+            "text": "Nie, wolę grać na komputerze."
         },
         {
             "text": "Nie, z Anglii.",
@@ -2433,6 +3096,14 @@
             "text": "Nowy, stary i dobry."
         },
         {
+            "text": "Nudzisz się? A co lubisz robić?",
+            "meaning": "You are bored? And what do you like doing?"
+        },
+        {
+            "text": "Nudzę się.",
+            "meaning": "Nothing. I'm bored."
+        },
+        {
             "text": "Numer telefonu",
             "meaning": "Phone number"
         },
@@ -2442,6 +3113,19 @@
         {
             "text": "O co pyta student?",
             "meaning": "What does the student ask?"
+        },
+        {
+            "text": "Ogląda stare zdjęcia."
+        },
+        {
+            "text": "Ogląda zdjęcia."
+        },
+        {
+            "text": "On bardzo lubi czytać."
+        },
+        {
+            "text": "On chce oglądać filmy po hiszpańsku.",
+            "meaning": "He wants to watch films in Spanish."
         },
         {
             "text": "On jest chory, ale ona jest zdrowa.",
@@ -2472,6 +3156,10 @@
             "meaning": "He is from Ukraine and speaks Ukrainian, and she is from Japan and speaks Japanese."
         },
         {
+            "text": "On lubi aktywnie spędzać czas.",
+            "meaning": "He likes spending his time actively."
+        },
+        {
             "text": "On lubi pracować.",
             "meaning": "He likes working."
         },
@@ -2484,6 +3172,18 @@
             "meaning": "He lives in Berlin."
         },
         {
+            "text": "On ogląda zdjęcia.",
+            "meaning": "He is looking at photos."
+        },
+        {
+            "text": "On pisze e-maile.",
+            "meaning": "He is writing e-mails."
+        },
+        {
+            "text": "On umie śpiewać.",
+            "meaning": "He can sing."
+        },
+        {
             "text": "Ona jest Japonką.",
             "meaning": "She is Japanese."
         },
@@ -2494,6 +3194,10 @@
         {
             "text": "Ona jest z Polski.",
             "meaning": "She is from Poland."
+        },
+        {
+            "text": "Ona lubi słuchać muzyki rockowej.",
+            "meaning": "She likes listening to rock music."
         },
         {
             "text": "Ona ma na imię Ewa.",
@@ -2601,6 +3305,14 @@
             "meaning": "The man lives in Kraków."
         },
         {
+            "text": "Pan mówi, że pracuje.",
+            "meaning": "The man says that he is working."
+        },
+        {
+            "text": "Pan teraz naprawdę pracuje.",
+            "meaning": "The man is really working now."
+        },
+        {
             "text": "Pani jest z Anglii.",
             "meaning": "The woman is from England."
         },
@@ -2616,6 +3328,9 @@
             "meaning": "Mr and Mrs Maj are in Kraków."
         },
         {
+            "text": "Pierogi."
+        },
+        {
             "text": "Pierwsza rzecz to książka.",
             "meaning": "The first thing is a book."
         },
@@ -2626,6 +3341,9 @@
         {
             "text": "Pierwsze słowo jest po hiszpańsku.",
             "meaning": "The first word is in Spanish."
+        },
+        {
+            "text": "Pisze e-maile."
         },
         {
             "text": "Pięć.",
@@ -2681,11 +3399,17 @@
             "text": "Polska"
         },
         {
+            "text": "Polska mama i polski tata."
+        },
+        {
             "text": "Polski"
         },
         {
             "text": "Powitania i pożegnania",
             "meaning": "Hello and goodbye"
+        },
+        {
+            "text": "Pracuje."
         },
         {
             "text": "Pracujesz w biurze.",
@@ -2697,6 +3421,13 @@
         },
         {
             "text": "Pracuję w szpitalu. A ty?"
+        },
+        {
+            "text": "Pracuję: szukam informacji i piszę e-maile."
+        },
+        {
+            "text": "Pracuję: szukam informacji, piszę e-maile.",
+            "meaning": "I'm working: I'm looking for information, I'm writing e-mails."
         },
         {
             "text": "Prawda czy nieprawda?",
@@ -2783,7 +3514,22 @@
             "meaning": "Sorry, I can't hear."
         },
         {
+            "text": "Pływa."
+        },
+        {
+            "text": "Pływać."
+        },
+        {
+            "text": "Rezerwuję też bilety."
+        },
+        {
             "text": "Robert"
+        },
+        {
+            "text": "Robię zakupy i spotykam się ze znajomymi."
+        },
+        {
+            "text": "Rodzina z Japonii."
         },
         {
             "text": "Rozumiem! Dziękuję bardzo.",
@@ -2802,6 +3548,12 @@
             "meaning": "I understand! Thank you very much."
         },
         {
+            "text": "Ryż też jest dobry!"
+        },
+        {
+            "text": "Ryż."
+        },
+        {
             "text": "Równa się pięć.",
             "meaning": "Two plus three equals five."
         },
@@ -2810,8 +3562,15 @@
             "meaning": "Ten minus four equals six."
         },
         {
+            "text": "SMS",
+            "meaning": "a text message"
+        },
+        {
             "text": "Sekretariat, prezentacja",
             "meaning": "At the school office: introducing yourself"
+        },
+        {
+            "text": "Serial."
         },
         {
             "text": "Siedemnaście."
@@ -2857,6 +3616,9 @@
             "meaning": "Old, but good."
         },
         {
+            "text": "Stare zdjęcia."
+        },
+        {
             "text": "Stary i zły.",
             "meaning": "Old and bad."
         },
@@ -2868,8 +3630,19 @@
             "text": "Stein"
         },
         {
+            "text": "Syn czyta.",
+            "meaning": "The son is reading."
+        },
+        {
             "text": "Sześć.",
             "meaning": "Ten minus four equals six."
+        },
+        {
+            "text": "Szkoda!"
+        },
+        {
+            "text": "Szkoda! W weekend idziemy na koncert. Chcesz iść?",
+            "meaning": "Too bad! At the weekend we are going to a concert. Do you want to go?"
         },
         {
             "text": "Szkoła."
@@ -2898,6 +3671,9 @@
             "text": "Ta torba jest modna, ale nie jest praktyczna."
         },
         {
+            "text": "Tak, ale nie umiem."
+        },
+        {
             "text": "Tak, ale tylko trochę.",
             "meaning": "Yes, but only a little."
         },
@@ -2920,6 +3696,14 @@
         {
             "text": "Tak, czerwony.",
             "meaning": "Yes, red."
+        },
+        {
+            "text": "Tak, dzisiaj mogę!",
+            "meaning": "Yes, today I can!"
+        },
+        {
+            "text": "Tak, dzisiaj możesz!",
+            "meaning": "Yes, today you can!"
         },
         {
             "text": "Tak, gram w tenisa.",
@@ -2976,6 +3760,14 @@
         {
             "text": "Tak, lubię.",
             "meaning": "Yes, I like sport."
+        },
+        {
+            "text": "Tak, mogę iść na kawę!",
+            "meaning": "Yes, today I can!"
+        },
+        {
+            "text": "Tak, mogę!",
+            "meaning": "Yes, today I can!"
         },
         {
             "text": "Tak, mówię po polsku.",
@@ -3058,6 +3850,18 @@
             "text": "Tam."
         },
         {
+            "text": "Tata czyta książkę.",
+            "meaning": "Dad is reading a book."
+        },
+        {
+            "text": "Tata nie lubi czytać.",
+            "meaning": "Dad doesn't like reading."
+        },
+        {
+            "text": "Tata pisze e-mail.",
+            "meaning": "Dad is writing an e-mail."
+        },
+        {
             "text": "Ten klucz jest mały, a ta mapa jest duża.",
             "meaning": "This key is small, and this map is big."
         },
@@ -3095,6 +3899,13 @@
         {
             "text": "Ten słownik jest zły.",
             "meaning": "This dictionary is bad."
+        },
+        {
+            "text": "Teraz planuję imprezę."
+        },
+        {
+            "text": "Teraz rezerwuję bilety.",
+            "meaning": "I'm booking the tickets now."
         },
         {
             "text": "Też dobrze. Czy wiesz, kto to jest?"
@@ -3162,6 +3973,12 @@
             "meaning": "This is an IT specialist."
         },
         {
+            "text": "To jest jej syn, Adam."
+        },
+        {
+            "text": "To jest moja gospodyni, pani Ewa."
+        },
+        {
             "text": "To jest moja torba. Jest duża i czerwona."
         },
         {
@@ -3211,6 +4028,10 @@
             "meaning": "Ten minus four equals six."
         },
         {
+            "text": "To jest twoje dziecko?",
+            "meaning": "Is this your child?"
+        },
+        {
             "text": "To moja rodzina: żona Ewa i syn Adam."
         },
         {
@@ -3228,6 +4049,9 @@
         {
             "text": "To okno jest duże.",
             "meaning": "This window is big."
+        },
+        {
+            "text": "To są stare zdjęcia."
         },
         {
             "text": "Toaleta jest na lewo.",
@@ -3268,6 +4092,9 @@
             "meaning": "The bag is practical."
         },
         {
+            "text": "Trenuję w klubie i lubię podróżować."
+        },
+        {
             "text": "Trochę mówię po polsku.",
             "meaning": "Yes, a little."
         },
@@ -3294,6 +4121,9 @@
         {
             "text": "Trzydzieści jeden plus dwadzieścia trzy równa się pięćdziesiąt cztery.",
             "meaning": "31 + 23 = 54"
+        },
+        {
+            "text": "Tu moja mama i mój tata są na uniwersytecie."
         },
         {
             "text": "Tu."
@@ -3388,7 +4218,21 @@
             "meaning": "Szewska Street: what number?"
         },
         {
+            "text": "Umiem gotować tylko ryż."
+        },
+        {
+            "text": "Umiesz gotować? Tak, umiem.",
+            "meaning": "Can you cook? Yes, I can."
+        },
+        {
+            "text": "Umiesz grać na pianinie?",
+            "meaning": "Can you play the piano?"
+        },
+        {
             "text": "W Berlinie."
+        },
+        {
+            "text": "W Japonii."
         },
         {
             "text": "W Krakowie.",
@@ -3405,6 +4249,9 @@
             "text": "W Paryżu."
         },
         {
+            "text": "W Polsce."
+        },
+        {
             "text": "W Warszawie."
         },
         {
@@ -3413,6 +4260,10 @@
         },
         {
             "text": "W domu."
+        },
+        {
+            "text": "W domu: co robisz?",
+            "meaning": "At home: what are you doing?"
         },
         {
             "text": "W drugim dialogu to jest ołówek.",
@@ -3446,6 +4297,41 @@
             "meaning": "There is a map of Kraków in the bag."
         },
         {
+            "text": "W weekend Ewa idzie na masaż.",
+            "meaning": "At the weekend Ewa is going for a massage."
+        },
+        {
+            "text": "W weekend chodzimy do kina.",
+            "meaning": "At the weekend we go to the cinema."
+        },
+        {
+            "text": "W weekend gramy w piłkę."
+        },
+        {
+            "text": "W weekend idę na masaż."
+        },
+        {
+            "text": "W weekend jeżdżę na rowerze.",
+            "meaning": "At the weekend I ride my bike."
+        },
+        {
+            "text": "W weekend nie pracuję."
+        },
+        {
+            "text": "W weekendy on zwykle ma czas.",
+            "meaning": "At weekends he usually has time."
+        },
+        {
+            "text": "Wieczorem idziemy tańczyć."
+        },
+        {
+            "text": "Wieczorem oglądam telewizję."
+        },
+        {
+            "text": "Wieczorem oni idą tańczyć.",
+            "meaning": "In the evening they go dancing."
+        },
+        {
             "text": "Wiesz, kto to jest?"
         },
         {
@@ -3458,6 +4344,13 @@
         {
             "text": "Woda jest tu.",
             "meaning": "The water is here."
+        },
+        {
+            "text": "Wolę grać na komputerze."
+        },
+        {
+            "text": "Wszyscy umieją tańczyć.",
+            "meaning": "Everyone can dance."
         },
         {
             "text": "Wszystko dobrze, a u pani?",
@@ -3543,6 +4436,9 @@
         {
             "text": "Zawody",
             "meaning": "Jobs"
+        },
+        {
+            "text": "Zdjęć."
         },
         {
             "text": "Zeszyt."
@@ -3682,6 +4578,10 @@
             "meaning": "thank you very much"
         },
         {
+            "text": "bardzo lubię czytać",
+            "meaning": "I like reading very much"
+        },
+        {
             "text": "bardzo mi miło",
             "meaning": "nice to meet you"
         },
@@ -3715,6 +4615,26 @@
         {
             "text": "biały",
             "meaning": "white (biały, biała, białe)"
+        },
+        {
+            "text": "biegać",
+            "meaning": "run (to run, to jog)"
+        },
+        {
+            "text": "biegać",
+            "meaning": "to run"
+        },
+        {
+            "text": "bilet",
+            "meaning": "a ticket (bilety: tickets)"
+        },
+        {
+            "text": "bilety",
+            "meaning": "a ticket (bilety: tickets)"
+        },
+        {
+            "text": "bilety",
+            "meaning": "tickets"
         },
         {
             "text": "biurze"
@@ -3811,6 +4731,63 @@
             "text": "cel"
         },
         {
+            "text": "chce",
+            "meaning": "he wants, she wants"
+        },
+        {
+            "text": "chce iść na zakupy",
+            "meaning": "she wants to go shopping"
+        },
+        {
+            "text": "chcecie"
+        },
+        {
+            "text": "chcemy"
+        },
+        {
+            "text": "chcesz",
+            "meaning": "you want"
+        },
+        {
+            "text": "chcesz",
+            "meaning": "you want (one friend)"
+        },
+        {
+            "text": "chcieć",
+            "meaning": "to want"
+        },
+        {
+            "text": "chcieć",
+            "meaning": "to want (the dictionary form of chcę)"
+        },
+        {
+            "text": "chcieć",
+            "meaning": "want (to want)"
+        },
+        {
+            "text": "chcą"
+        },
+        {
+            "text": "chcę",
+            "meaning": "I want"
+        },
+        {
+            "text": "chcę grać w tenisa",
+            "meaning": "I want to play tennis"
+        },
+        {
+            "text": "chcę iść na koncert",
+            "meaning": "I want to go to a concert"
+        },
+        {
+            "text": "chcę iść na masaż",
+            "meaning": "I want to go for a massage"
+        },
+        {
+            "text": "chcę, ale nie mogę",
+            "meaning": "I want to, but I can't"
+        },
+        {
             "text": "chodzi",
             "meaning": "he goes, she goes (on foot, or regularly)"
         },
@@ -3838,12 +4815,37 @@
             "meaning": "do you go to school? (one friend)"
         },
         {
+            "text": "chodzić",
+            "meaning": "go (to go on foot, or regularly)"
+        },
+        {
+            "text": "chodzić",
+            "meaning": "to go (regularly)"
+        },
+        {
+            "text": "chodzić do kina"
+        },
+        {
+            "text": "chodzić na siłownię"
+        },
+        {
+            "text": "chodzić na spacery"
+        },
+        {
             "text": "chodzą",
             "meaning": "they go (on foot, or regularly)"
         },
         {
             "text": "chodzę",
             "meaning": "I go (on foot, or regularly)"
+        },
+        {
+            "text": "chodzę na basen, bo lubię pływać",
+            "meaning": "I go to the swimming pool because I like swimming"
+        },
+        {
+            "text": "chodzę na siłownię",
+            "meaning": "I go to the gym"
         },
         {
             "text": "chora",
@@ -3921,6 +4923,14 @@
             "meaning": "what are you reading? (one friend)"
         },
         {
+            "text": "co gotujemy?",
+            "meaning": "what are we cooking?"
+        },
+        {
+            "text": "co lubicie robić?",
+            "meaning": "what do you like doing? (several people)"
+        },
+        {
             "text": "co lubisz robić?",
             "meaning": "what do you like doing? (one friend)"
         },
@@ -3930,6 +4940,37 @@
         {
             "text": "co nowego?",
             "meaning": "what's new?"
+        },
+        {
+            "text": "co on robi?"
+        },
+        {
+            "text": "co ona robi?"
+        },
+        {
+            "text": "co pan robi?",
+            "meaning": "what are you doing? (to a man, formal)"
+        },
+        {
+            "text": "co pani robi?",
+            "meaning": "what are you doing? (to a woman, formal)"
+        },
+        {
+            "text": "co robi twoja mama?"
+        },
+        {
+            "text": "co robi twój brat?"
+        },
+        {
+            "text": "co robi twój tata?",
+            "meaning": "what is your dad doing?"
+        },
+        {
+            "text": "co robicie?",
+            "meaning": "what are you doing? (several people)"
+        },
+        {
+            "text": "co robimy?"
         },
         {
             "text": "co robisz?"
@@ -4206,6 +5247,10 @@
             "meaning": "are you tired? (one friend, a woman)"
         },
         {
+            "text": "czy jeździsz na rowerze?",
+            "meaning": "do you ride a bike? (one friend)"
+        },
+        {
             "text": "czy kończysz kurs?",
             "meaning": "are you finishing the course? (one friend)"
         },
@@ -4298,6 +5343,10 @@
         },
         {
             "text": "czy to jest twój brat?",
+            "meaning": "is that your brother?"
+        },
+        {
+            "text": "czy to jest twój brat?",
             "meaning": "is this your brother? (to one friend)"
         },
         {
@@ -4345,12 +5394,20 @@
             "meaning": "do you think it is a joke? (one friend)"
         },
         {
+            "text": "czy ty się nudzisz?",
+            "meaning": "are you bored? (one friend)"
+        },
+        {
             "text": "czy ty słyszysz?",
             "meaning": "can you hear? (one friend)"
         },
         {
             "text": "czy ty umiesz tańczyć tango?",
             "meaning": "can you dance the tango? (one friend)"
+        },
+        {
+            "text": "czy umiesz jeździć na nartach?",
+            "meaning": "can you ski? (one friend)"
         },
         {
             "text": "czy umiesz tańczyć tango?",
@@ -4370,6 +5427,10 @@
         {
             "text": "czy wy mieszkacie w Warszawie?",
             "meaning": "do you live in Warsaw? (several people)"
+        },
+        {
+            "text": "czy znasz ten serial?",
+            "meaning": "do you know this TV series? (one friend)"
         },
         {
             "text": "czym",
@@ -4404,6 +5465,10 @@
             "meaning": "clean (czysty, czysta, czyste)"
         },
         {
+            "text": "czyta",
+            "meaning": "he reads, she reads"
+        },
+        {
             "text": "czytam",
             "meaning": "I read"
         },
@@ -4416,12 +5481,27 @@
             "meaning": "I watch a series and I read"
         },
         {
+            "text": "czytam książkę",
+            "meaning": "I am reading a book"
+        },
+        {
             "text": "czytam tekst",
             "meaning": "I read a text"
         },
         {
             "text": "czytasz",
             "meaning": "you read, you are reading (one friend)"
+        },
+        {
+            "text": "czytasz książkę"
+        },
+        {
+            "text": "czytać",
+            "meaning": "read (to read)"
+        },
+        {
+            "text": "czytać",
+            "meaning": "to read"
         },
         {
             "text": "córka",
@@ -4478,8 +5558,24 @@
             "text": "do"
         },
         {
+            "text": "do egzaminu",
+            "meaning": "for an exam (uczyć się do egzaminu)"
+        },
+        {
             "text": "do jutra",
             "meaning": "see you tomorrow"
+        },
+        {
+            "text": "do kina",
+            "meaning": "to the cinema"
+        },
+        {
+            "text": "do klubu",
+            "meaning": "to a club"
+        },
+        {
+            "text": "do lekarza",
+            "meaning": "to the doctor"
         },
         {
             "text": "do szkoły",
@@ -4836,6 +5932,21 @@
             "text": "dziki"
         },
         {
+            "text": "dzisiaj",
+            "meaning": "today"
+        },
+        {
+            "text": "dzisiaj",
+            "meaning": "today (the same as dziś)"
+        },
+        {
+            "text": "dzisiaj idziemy tańczyć"
+        },
+        {
+            "text": "dzisiaj nie mogę",
+            "meaning": "I can't today"
+        },
+        {
             "text": "dzięki",
             "meaning": "thanks (to friends)"
         },
@@ -4931,6 +6042,18 @@
         },
         {
             "text": "dźwięki"
+        },
+        {
+            "text": "e-mail",
+            "meaning": "an e-mail"
+        },
+        {
+            "text": "e-mail",
+            "meaning": "an e-mail (e-maile: e-mails)"
+        },
+        {
+            "text": "e-maile",
+            "meaning": "an e-mail (e-maile: e-mails)"
         },
         {
             "text": "emeryt",
@@ -5077,6 +6200,61 @@
             "meaning": "where do you live? (several people)"
         },
         {
+            "text": "gospodarz",
+            "meaning": "a host, a landlord (the man of the house a student lives in)"
+        },
+        {
+            "text": "gospodyni",
+            "meaning": "a host, a landlady (the woman of the house a student lives in)"
+        },
+        {
+            "text": "gotować",
+            "meaning": "cook (to cook)"
+        },
+        {
+            "text": "gotować",
+            "meaning": "to cook"
+        },
+        {
+            "text": "gotuje",
+            "meaning": "he cooks, she cooks"
+        },
+        {
+            "text": "gotuje pierogi",
+            "meaning": "she is cooking pierogi"
+        },
+        {
+            "text": "gotujecie"
+        },
+        {
+            "text": "gotujemy",
+            "meaning": "we cook"
+        },
+        {
+            "text": "gotujesz",
+            "meaning": "you cook"
+        },
+        {
+            "text": "gotujesz",
+            "meaning": "you cook (one friend)"
+        },
+        {
+            "text": "gotują",
+            "meaning": "they cook"
+        },
+        {
+            "text": "gotuję",
+            "meaning": "I cook"
+        },
+        {
+            "text": "gotuję",
+            "meaning": "I cook, I am cooking"
+        },
+        {
+            "text": "gotuję pierogi",
+            "meaning": "I'm cooking pierogi"
+        },
+        {
             "text": "gra"
         },
         {
@@ -5094,6 +6272,22 @@
             "meaning": "I play the guitar"
         },
         {
+            "text": "gram na pianinie",
+            "meaning": "I play the piano"
+        },
+        {
+            "text": "gram w karty i w szachy",
+            "meaning": "I play chess and cards"
+        },
+        {
+            "text": "gram w piłkę",
+            "meaning": "I play football"
+        },
+        {
+            "text": "gram w szachy i w karty",
+            "meaning": "I play chess and cards"
+        },
+        {
             "text": "gram w tenisa",
             "meaning": "I play tennis"
         },
@@ -5109,6 +6303,9 @@
             "meaning": "you play (one friend)"
         },
         {
+            "text": "grasz w piłkę"
+        },
+        {
             "text": "grasz w tenisa"
         },
         {
@@ -5122,6 +6319,14 @@
         {
             "text": "gratulacje, na zdrowie",
             "meaning": "congratulations, cheers (a toast)"
+        },
+        {
+            "text": "grać",
+            "meaning": "play (to play)"
+        },
+        {
+            "text": "grać",
+            "meaning": "to play"
         },
         {
             "text": "gruba",
@@ -5173,6 +6378,39 @@
         {
             "text": "i",
             "meaning": "and"
+        },
+        {
+            "text": "idziemy",
+            "meaning": "we are going"
+        },
+        {
+            "text": "idziemy",
+            "meaning": "we are going (on foot)"
+        },
+        {
+            "text": "idziemy do kina"
+        },
+        {
+            "text": "idziemy na kawę"
+        },
+        {
+            "text": "idziemy na zakupy",
+            "meaning": "we're going shopping"
+        },
+        {
+            "text": "idę",
+            "meaning": "I am going"
+        },
+        {
+            "text": "idę",
+            "meaning": "I am going (on foot)"
+        },
+        {
+            "text": "idę na kawę",
+            "meaning": "I'm going for a coffee"
+        },
+        {
+            "text": "idę na zakupy"
         },
         {
             "text": "ile",
@@ -5258,6 +6496,25 @@
         {
             "text": "imię, nazwisko, narodowość",
             "meaning": "first name, surname, nationality"
+        },
+        {
+            "text": "impreza"
+        },
+        {
+            "text": "imprezę",
+            "meaning": "a party (after organizuję)"
+        },
+        {
+            "text": "imprezę",
+            "meaning": "a party (after organizuję, planuję…)"
+        },
+        {
+            "text": "informacji",
+            "meaning": "information (after szukam)"
+        },
+        {
+            "text": "informacji",
+            "meaning": "information (after szukam: szukam informacji)"
         },
         {
             "text": "informatyczka",
@@ -5392,6 +6649,14 @@
             "meaning": "an engineer"
         },
         {
+            "text": "iść",
+            "meaning": "go (to go on foot, now)"
+        },
+        {
+            "text": "iść",
+            "meaning": "to go"
+        },
+        {
             "text": "ja",
             "meaning": "I"
         },
@@ -5444,6 +6709,14 @@
             "meaning": "I love Kraków"
         },
         {
+            "text": "ja lubię oglądać telewizję",
+            "meaning": "I like watching TV"
+        },
+        {
+            "text": "ja lubię podróżować",
+            "meaning": "I like travelling"
+        },
+        {
             "text": "ja mam dwadzieścia lat",
             "meaning": "I am twenty years old"
         },
@@ -5476,8 +6749,16 @@
             "meaning": "I remember"
         },
         {
+            "text": "ja piszę e-mail",
+            "meaning": "I'm writing an e-mail"
+        },
+        {
             "text": "ja się nazywam Adam",
             "meaning": "I am called Adam"
+        },
+        {
+            "text": "ja szukam informacji",
+            "meaning": "I'm looking for information"
         },
         {
             "text": "ja też jestem z Anglii",
@@ -5490,6 +6771,14 @@
         {
             "text": "ja uczę się polskiego, żeby studiować w Polsce",
             "meaning": "I am learning Polish to study in Poland"
+        },
+        {
+            "text": "ja umiem gotować tylko ryż",
+            "meaning": "I can only cook rice"
+        },
+        {
+            "text": "ja wolę grać na komputerze",
+            "meaning": "I prefer playing computer games"
         },
         {
             "text": "jak",
@@ -5919,6 +7208,47 @@
             "text": "jeść"
         },
         {
+            "text": "jeździ",
+            "meaning": "he rides, she rides"
+        },
+        {
+            "text": "jeździcie"
+        },
+        {
+            "text": "jeździmy"
+        },
+        {
+            "text": "jeździsz",
+            "meaning": "you ride"
+        },
+        {
+            "text": "jeździsz",
+            "meaning": "you ride, you go (one friend; by bike, on skis…)"
+        },
+        {
+            "text": "jeździsz na rowerze?",
+            "meaning": "do you ride a bike? (one friend)"
+        },
+        {
+            "text": "jeździć",
+            "meaning": "ride (to ride, to go by bike, on skis…)"
+        },
+        {
+            "text": "jeździć konno"
+        },
+        {
+            "text": "jeżdżą",
+            "meaning": "they ride"
+        },
+        {
+            "text": "jeżdżę",
+            "meaning": "I ride"
+        },
+        {
+            "text": "jeżdżę",
+            "meaning": "I ride, I go (by bike, on skis…)"
+        },
+        {
             "text": "jutra"
         },
         {
@@ -6030,6 +7360,18 @@
             "meaning": "a mobile phone and a charger"
         },
         {
+            "text": "konno",
+            "meaning": "on horseback"
+        },
+        {
+            "text": "konno",
+            "meaning": "on horseback (jeździć konno: to ride a horse)"
+        },
+        {
+            "text": "kontuzję",
+            "meaning": "an injury (after mam: mam kontuzję)"
+        },
+        {
             "text": "kończy",
             "meaning": "he finishes, she finishes"
         },
@@ -6085,6 +7427,14 @@
         {
             "text": "książka i długopis",
             "meaning": "a book and a pen"
+        },
+        {
+            "text": "książkę",
+            "meaning": "a book (after czytam)"
+        },
+        {
+            "text": "książkę",
+            "meaning": "a book (after czytam, czytasz…)"
         },
         {
             "text": "kto",
@@ -6235,27 +7585,114 @@
             "meaning": "he likes, she likes"
         },
         {
+            "text": "lubi oglądać telewizję",
+            "meaning": "he likes watching TV"
+        },
+        {
+            "text": "lubicie",
+            "meaning": "you like (several people)"
+        },
+        {
             "text": "lubisz",
             "meaning": "you like (one friend)"
+        },
+        {
+            "text": "lubisz chodzić na spacery"
+        },
+        {
+            "text": "lubisz czytać?"
+        },
+        {
+            "text": "lubisz pisać?",
+            "meaning": "do you like writing?"
         },
         {
             "text": "lubisz sport?",
             "meaning": "do you like sport? (one friend)"
         },
         {
+            "text": "lubisz spotykać się ze znajomymi?",
+            "meaning": "do you like meeting up with friends? (one friend)"
+        },
+        {
             "text": "lubisz tańczyć tango"
+        },
+        {
+            "text": "lubią",
+            "meaning": "they like"
+        },
+        {
+            "text": "lubią tańczyć",
+            "meaning": "they like dancing"
         },
         {
             "text": "lubię",
             "meaning": "I like"
         },
         {
+            "text": "lubię biegać i śpiewać"
+        },
+        {
+            "text": "lubię chodzić do kina"
+        },
+        {
+            "text": "lubię chodzić do klubu",
+            "meaning": "I like going to a club"
+        },
+        {
+            "text": "lubię chodzić na spacery",
+            "meaning": "I like going for walks"
+        },
+        {
+            "text": "lubię grać w tenisa"
+        },
+        {
+            "text": "lubię jeździć konno"
+        },
+        {
+            "text": "lubię jeździć na rowerze",
+            "meaning": "I like riding a bike"
+        },
+        {
+            "text": "lubię oglądać telewizję",
+            "meaning": "I like watching TV"
+        },
+        {
+            "text": "lubię pisać"
+        },
+        {
+            "text": "lubię podróżować",
+            "meaning": "I like travelling"
+        },
+        {
+            "text": "lubię pływać i biegać",
+            "meaning": "I like swimming and running"
+        },
+        {
+            "text": "lubię pływać i tańczyć"
+        },
+        {
             "text": "lubię sport",
             "meaning": "I like sport"
         },
         {
+            "text": "lubię spotykać się ze znajomymi",
+            "meaning": "I like meeting up with friends"
+        },
+        {
+            "text": "lubię słuchać muzyki",
+            "meaning": "I like listening to music"
+        },
+        {
+            "text": "lubię tango"
+        },
+        {
             "text": "lubię tańczyć tango",
             "meaning": "I like dancing the tango"
+        },
+        {
+            "text": "lubię uprawiać sport",
+            "meaning": "I like doing sport"
         },
         {
             "text": "ma",
@@ -6300,6 +7737,10 @@
             "text": "mają problem?"
         },
         {
+            "text": "makaron",
+            "meaning": "pasta"
+        },
+        {
             "text": "malarstwem",
             "meaning": "painting"
         },
@@ -6319,8 +7760,22 @@
             "meaning": "a painter (a man)"
         },
         {
+            "text": "malować",
+            "meaning": "paint (to paint)"
+        },
+        {
+            "text": "malować",
+            "meaning": "to paint"
+        },
+        {
+            "text": "maluję"
+        },
+        {
             "text": "mam",
             "meaning": "I have"
+        },
+        {
+            "text": "mam Kraków"
         },
         {
             "text": "mam brata i siostrę",
@@ -6344,6 +7799,13 @@
         {
             "text": "mam jedenaście lat, a ty?",
             "meaning": "I am eleven years old, and you? (one friend)"
+        },
+        {
+            "text": "mam kontuzję i muszę iść do lekarza",
+            "meaning": "I have an injury and I have to go to the doctor"
+        },
+        {
+            "text": "mam książkę"
         },
         {
             "text": "mam na imię",
@@ -6631,6 +8093,17 @@
             "meaning": "fashion (after interesuję się: interesuję się modą)"
         },
         {
+            "text": "mogą"
+        },
+        {
+            "text": "mogę",
+            "meaning": "I can"
+        },
+        {
+            "text": "mogę",
+            "meaning": "I can (I am free to, I may)"
+        },
+        {
             "text": "moja",
             "meaning": "my (with a feminine noun)"
         },
@@ -6653,6 +8126,17 @@
             "meaning": "my daughter is three years old"
         },
         {
+            "text": "moja córka ogląda film"
+        },
+        {
+            "text": "moja córka ogląda zdjęcia",
+            "meaning": "my daughter is looking at photos"
+        },
+        {
+            "text": "moja gospodyni jest w domu",
+            "meaning": "my landlady is at home"
+        },
+        {
             "text": "moja koleżanka to tancerka",
             "meaning": "my friend (a woman) is a dancer"
         },
@@ -6661,8 +8145,22 @@
             "meaning": "my mum"
         },
         {
+            "text": "moja mama gotuje bardzo dobrze",
+            "meaning": "my mum cooks very well"
+        },
+        {
+            "text": "moja mama gotuje ryż"
+        },
+        {
             "text": "moja mama ma na imię Ewa",
             "meaning": "my mum's first name is Ewa"
+        },
+        {
+            "text": "moja mama pracuje bardzo dobrze"
+        },
+        {
+            "text": "moja rodzina jest w Japonii",
+            "meaning": "my family is in Japan"
         },
         {
             "text": "moja rodzina jest z Polski",
@@ -6688,6 +8186,69 @@
             "meaning": "maybe yes, maybe no"
         },
         {
+            "text": "możecie"
+        },
+        {
+            "text": "możemy"
+        },
+        {
+            "text": "możesz",
+            "meaning": "you can"
+        },
+        {
+            "text": "możesz",
+            "meaning": "you can (one friend; you are free to, you may)"
+        },
+        {
+            "text": "musi",
+            "meaning": "he must, she must"
+        },
+        {
+            "text": "musi",
+            "meaning": "he must, she must; he has to, she has to"
+        },
+        {
+            "text": "musicie"
+        },
+        {
+            "text": "musieć",
+            "meaning": "must, have to (to have to)"
+        },
+        {
+            "text": "musieć",
+            "meaning": "to have to"
+        },
+        {
+            "text": "musieć",
+            "meaning": "to have to (the dictionary form of muszę)"
+        },
+        {
+            "text": "musimy"
+        },
+        {
+            "text": "musisz",
+            "meaning": "you must"
+        },
+        {
+            "text": "musisz",
+            "meaning": "you must, you have to (one friend)"
+        },
+        {
+            "text": "muszą"
+        },
+        {
+            "text": "muszę",
+            "meaning": "I must"
+        },
+        {
+            "text": "muszę",
+            "meaning": "I must, I have to"
+        },
+        {
+            "text": "muszę uczyć się do egzaminu",
+            "meaning": "I have to study for an exam"
+        },
+        {
             "text": "muzeum",
             "meaning": "a museum"
         },
@@ -6697,6 +8258,10 @@
         },
         {
             "text": "muzyka"
+        },
+        {
+            "text": "muzyki",
+            "meaning": "music (after słuchać: słuchać muzyki)"
         },
         {
             "text": "muzykiem",
@@ -6731,8 +8296,15 @@
             "meaning": "we speak Spanish"
         },
         {
+            "text": "my nic nie robimy",
+            "meaning": "we are doing nothing"
+        },
+        {
             "text": "my uczymy się w Warszawie",
             "meaning": "we study in Warsaw"
+        },
+        {
+            "text": "my umiemy gotować"
         },
         {
             "text": "myśli",
@@ -6787,11 +8359,30 @@
             "meaning": "I think that it is a joke"
         },
         {
+            "text": "móc",
+            "meaning": "can, be able to (to be able to)"
+        },
+        {
+            "text": "móc",
+            "meaning": "can, to be able to (the dictionary form of mogę)"
+        },
+        {
+            "text": "móc",
+            "meaning": "to be able to"
+        },
+        {
             "text": "mój",
             "meaning": "my (with a masculine noun)"
         },
         {
             "text": "mój brat"
+        },
+        {
+            "text": "mój brat jest na uniwersytecie"
+        },
+        {
+            "text": "mój brat jest na wakacjach",
+            "meaning": "my brother is on holiday"
         },
         {
             "text": "mój brat to dentysta",
@@ -6814,6 +8405,10 @@
         {
             "text": "mój dziadek i moja babcia",
             "meaning": "my grandma and my grandpa"
+        },
+        {
+            "text": "mój gospodarz pracuje w domu",
+            "meaning": "my host is working at home"
         },
         {
             "text": "mój kolega jest Anglikiem",
@@ -6853,8 +8448,18 @@
             "meaning": "my son and my daughter"
         },
         {
+            "text": "mój syn ogląda zdjęcia"
+        },
+        {
             "text": "mój tata",
             "meaning": "my dad"
+        },
+        {
+            "text": "mój tata czyta książkę",
+            "meaning": "my dad is reading a book"
+        },
+        {
+            "text": "mój tata jest na wakacjach"
         },
         {
             "text": "mój tata mówi po polsku",
@@ -6958,6 +8563,13 @@
             "meaning": "young (młody, młoda, młode)"
         },
         {
+            "text": "na"
+        },
+        {
+            "text": "na basen",
+            "meaning": "to the swimming pool"
+        },
+        {
             "text": "na drodze"
         },
         {
@@ -6977,8 +8589,32 @@
             "meaning": "my first name is Ewa"
         },
         {
+            "text": "na kawę",
+            "meaning": "for a coffee"
+        },
+        {
+            "text": "na kawę",
+            "meaning": "for a coffee (iść na kawę)"
+        },
+        {
+            "text": "na komputerze",
+            "meaning": "on the computer (grać na komputerze: to play computer games)"
+        },
+        {
+            "text": "na koncert",
+            "meaning": "to a concert"
+        },
+        {
             "text": "na lewo",
             "meaning": "on the left; to the left"
+        },
+        {
+            "text": "na masaż",
+            "meaning": "for a massage (iść na masaż)"
+        },
+        {
+            "text": "na nartach",
+            "meaning": "skis (after jeździć: jeździć na nartach, to ski)"
         },
         {
             "text": "na pewno",
@@ -6991,6 +8627,14 @@
         {
             "text": "na pewno on jest ambitny",
             "meaning": "he is certainly ambitious"
+        },
+        {
+            "text": "na pianinie",
+            "meaning": "the piano"
+        },
+        {
+            "text": "na pianinie",
+            "meaning": "the piano (after grać: gram na pianinie)"
         },
         {
             "text": "na prawo",
@@ -7011,6 +8655,46 @@
         {
             "text": "na razie, miłego dnia",
             "meaning": "bye for now, have a nice day"
+        },
+        {
+            "text": "na rolkach",
+            "meaning": "rollerblades"
+        },
+        {
+            "text": "na rolkach",
+            "meaning": "rollerblades (after jeździć: jeździć na rolkach, to rollerblade)"
+        },
+        {
+            "text": "na rowerze",
+            "meaning": "a bike"
+        },
+        {
+            "text": "na rowerze",
+            "meaning": "a bike (after jeździć: jeżdżę na rowerze)"
+        },
+        {
+            "text": "na siłownię",
+            "meaning": "to the gym"
+        },
+        {
+            "text": "na spacery",
+            "meaning": "for walks"
+        },
+        {
+            "text": "na spacery",
+            "meaning": "for walks (chodzić na spacery: to go for walks)"
+        },
+        {
+            "text": "na uniwersytecie",
+            "meaning": "at university"
+        },
+        {
+            "text": "na wakacjach",
+            "meaning": "on holiday"
+        },
+        {
+            "text": "na zakupy",
+            "meaning": "shopping (iść na zakupy: to go shopping)"
         },
         {
             "text": "na zdrowie",
@@ -7076,7 +8760,20 @@
             "meaning": "I am called Ewa, and you? (to a man, formal)"
         },
         {
-            "text": "nic"
+            "text": "nic",
+            "meaning": "nothing"
+        },
+        {
+            "text": "nic",
+            "meaning": "nothing (nic nie robię: I am doing nothing)"
+        },
+        {
+            "text": "nic nie robimy",
+            "meaning": "we are doing nothing"
+        },
+        {
+            "text": "nic nie robię, nudzę się",
+            "meaning": "I'm doing nothing, I'm bored"
         },
         {
             "text": "nic nie szkodzi",
@@ -7115,6 +8812,10 @@
             "meaning": "you're welcome; don't mention it"
         },
         {
+            "text": "nie mogę dzisiaj",
+            "meaning": "I can't today"
+        },
+        {
             "text": "nie pamiętam",
             "meaning": "I don't remember"
         },
@@ -7137,6 +8838,10 @@
         {
             "text": "nie słyszę, proszę powtórzyć",
             "meaning": "I can't hear, please say it again"
+        },
+        {
+            "text": "nie umiem śpiewać",
+            "meaning": "I can't sing"
         },
         {
             "text": "nie wiem",
@@ -7260,6 +8965,45 @@
             "meaning": "new (nowy, nowa, nowe)"
         },
         {
+            "text": "nudzi"
+        },
+        {
+            "text": "nudzi się",
+            "meaning": "he is bored, she is bored"
+        },
+        {
+            "text": "nudzicie się"
+        },
+        {
+            "text": "nudzimy się"
+        },
+        {
+            "text": "nudzisz się",
+            "meaning": "you are bored (one friend)"
+        },
+        {
+            "text": "nudzisz się?",
+            "meaning": "are you bored? (one friend)"
+        },
+        {
+            "text": "nudzisz się? Ja też.",
+            "meaning": "Are you bored? Me too."
+        },
+        {
+            "text": "nudzą się"
+        },
+        {
+            "text": "nudzę"
+        },
+        {
+            "text": "nudzę się",
+            "meaning": "I am bored"
+        },
+        {
+            "text": "nudzę się, bo nic nie robię",
+            "meaning": "I'm bored because I'm doing nothing"
+        },
+        {
             "text": "numer",
             "meaning": "a number (numer pięć: number five)"
         },
@@ -7279,6 +9023,10 @@
             "text": "oficjalnie"
         },
         {
+            "text": "ogląda",
+            "meaning": "he watches, she watches; he looks at, she looks at"
+        },
+        {
             "text": "oglądam",
             "meaning": "I watch"
         },
@@ -7289,6 +9037,10 @@
         {
             "text": "oglądam serial i czytam",
             "meaning": "I watch a series and I read"
+        },
+        {
+            "text": "oglądać",
+            "meaning": "watch (to watch)"
         },
         {
             "text": "okno",
@@ -7411,6 +9163,13 @@
             "meaning": "he is of medium height"
         },
         {
+            "text": "on jeździ konno"
+        },
+        {
+            "text": "on lubi oglądać telewizję",
+            "meaning": "he likes watching TV"
+        },
+        {
             "text": "on lubi pracować",
             "meaning": "he likes working"
         },
@@ -7463,11 +9222,23 @@
             "meaning": "he is certainly ambitious"
         },
         {
+            "text": "on się teraz nudzi",
+            "meaning": "he is bored now"
+        },
+        {
             "text": "ona",
             "meaning": "she"
         },
         {
             "text": "ona + ona"
+        },
+        {
+            "text": "ona chce iść na zakupy",
+            "meaning": "she wants to go shopping"
+        },
+        {
+            "text": "ona gotuje pierogi",
+            "meaning": "she is cooking pierogi"
         },
         {
             "text": "ona interesuje się modą",
@@ -7595,8 +9366,16 @@
             "text": "ona mówi po polsku"
         },
         {
+            "text": "ona się teraz nudzi",
+            "meaning": "she is bored now"
+        },
+        {
             "text": "ona uczy się polskiego, bo jej chłopak jest z Polski",
             "meaning": "she is learning Polish because her boyfriend is from Poland"
+        },
+        {
+            "text": "ona umie gotować",
+            "meaning": "she can cook"
         },
         {
             "text": "one",
@@ -7644,6 +9423,24 @@
             "meaning": "they (men, or men and women) go to school"
         },
         {
+            "text": "oni gotują pierogi",
+            "meaning": "they are cooking pierogi"
+        },
+        {
+            "text": "oni jeżdżą konno",
+            "meaning": "they ride horses"
+        },
+        {
+            "text": "oni jeżdżą na rowerze"
+        },
+        {
+            "text": "oni lubią gotować"
+        },
+        {
+            "text": "oni lubią tańczyć",
+            "meaning": "they like dancing"
+        },
+        {
             "text": "oni mają córkę",
             "meaning": "they (men, or men and women) have a daughter"
         },
@@ -7666,6 +9463,10 @@
             "meaning": "they (men, or men and women) have a problem too"
         },
         {
+            "text": "oni umieją gotować",
+            "meaning": "they can cook"
+        },
+        {
             "text": "ono",
             "meaning": "it"
         },
@@ -7686,6 +9487,29 @@
         },
         {
             "text": "ono ma rok"
+        },
+        {
+            "text": "organizuje"
+        },
+        {
+            "text": "organizujecie"
+        },
+        {
+            "text": "organizujemy"
+        },
+        {
+            "text": "organizujesz"
+        },
+        {
+            "text": "organizują"
+        },
+        {
+            "text": "organizuję",
+            "meaning": "I organise"
+        },
+        {
+            "text": "organizuję imprezę",
+            "meaning": "I'm organising a party"
         },
         {
             "text": "osiem",
@@ -7821,6 +9645,14 @@
             "meaning": "sure, certain (pewny, pewna, pewne)"
         },
         {
+            "text": "pierogi",
+            "meaning": "Polish dumplings"
+        },
+        {
+            "text": "pierogi",
+            "meaning": "pierogi (Polish dumplings)"
+        },
+        {
             "text": "pisarz",
             "meaning": "a writer"
         },
@@ -7831,6 +9663,55 @@
         {
             "text": "pisarzem",
             "meaning": "a writer (a man)"
+        },
+        {
+            "text": "pisać",
+            "meaning": "to write"
+        },
+        {
+            "text": "pisać",
+            "meaning": "write (to write: piszę, piszesz)"
+        },
+        {
+            "text": "pisze",
+            "meaning": "he writes, she writes"
+        },
+        {
+            "text": "piszecie"
+        },
+        {
+            "text": "piszemy"
+        },
+        {
+            "text": "piszesz",
+            "meaning": "you write"
+        },
+        {
+            "text": "piszesz",
+            "meaning": "you write (one friend)"
+        },
+        {
+            "text": "piszą"
+        },
+        {
+            "text": "piszę",
+            "meaning": "I write"
+        },
+        {
+            "text": "piszę",
+            "meaning": "I write, I am writing"
+        },
+        {
+            "text": "piszę SMS",
+            "meaning": "I'm writing a text message"
+        },
+        {
+            "text": "piszę e-mail",
+            "meaning": "I'm writing an e-mail"
+        },
+        {
+            "text": "piszę e-maile",
+            "meaning": "I'm writing e-mails"
         },
         {
             "text": "piętnaście",
@@ -7877,6 +9758,20 @@
         },
         {
             "text": "pięćdziesiąt trzy"
+        },
+        {
+            "text": "planujesz"
+        },
+        {
+            "text": "planujesz imprezę"
+        },
+        {
+            "text": "planuję",
+            "meaning": "I plan"
+        },
+        {
+            "text": "planuję imprezę",
+            "meaning": "I'm planning a party"
         },
         {
             "text": "plecak",
@@ -7933,6 +9828,14 @@
         {
             "text": "podkreślić",
             "meaning": "underline"
+        },
+        {
+            "text": "podróżować",
+            "meaning": "to travel"
+        },
+        {
+            "text": "podróżować",
+            "meaning": "travel (to travel)"
         },
         {
             "text": "polecenie",
@@ -8297,6 +10200,14 @@
             "meaning": "half a year (ono ma pół roku: it is six months old)"
         },
         {
+            "text": "pływać",
+            "meaning": "swim (to swim)"
+        },
+        {
+            "text": "pływać",
+            "meaning": "to swim"
+        },
+        {
             "text": "raz"
         },
         {
@@ -8312,13 +10223,49 @@
             "meaning": "a restaurant"
         },
         {
-            "text": "robi"
+            "text": "rezerwuje"
         },
         {
-            "text": "robicie"
+            "text": "rezerwuję",
+            "meaning": "I book"
         },
         {
-            "text": "robimy"
+            "text": "rezerwuję",
+            "meaning": "I book, I reserve"
+        },
+        {
+            "text": "robi",
+            "meaning": "he does, she does"
+        },
+        {
+            "text": "robi",
+            "meaning": "he does, she does (co pani robi?: what are you doing?)"
+        },
+        {
+            "text": "robicie",
+            "meaning": "you do (several people)"
+        },
+        {
+            "text": "robicie",
+            "meaning": "you do, you make (several people)"
+        },
+        {
+            "text": "robicie zakupy"
+        },
+        {
+            "text": "robimy",
+            "meaning": "we do"
+        },
+        {
+            "text": "robimy",
+            "meaning": "we do, we make"
+        },
+        {
+            "text": "robimy zakupy",
+            "meaning": "we are doing the shopping"
+        },
+        {
+            "text": "robimy zdjęcia"
         },
         {
             "text": "robisz",
@@ -8386,6 +10333,10 @@
         {
             "text": "rozumiem",
             "meaning": "I understand"
+        },
+        {
+            "text": "ryż",
+            "meaning": "rice"
         },
         {
             "text": "rzeczownik",
@@ -8546,6 +10497,17 @@
         {
             "text": "sportem",
             "meaning": "sport (after interesuję się: interesuję się sportem)"
+        },
+        {
+            "text": "spotykam"
+        },
+        {
+            "text": "spotykać się",
+            "meaning": "meet up (to meet up)"
+        },
+        {
+            "text": "spotykać się",
+            "meaning": "to meet up"
         },
         {
             "text": "stara",
@@ -8733,11 +10695,27 @@
             "text": "sześćdziesiąt pięć"
         },
         {
+            "text": "szkoda",
+            "meaning": "what a pity"
+        },
+        {
+            "text": "szkoda",
+            "meaning": "what a pity, too bad"
+        },
+        {
             "text": "szkoła",
             "meaning": "a school"
         },
         {
-            "text": "szukam"
+            "text": "szukam",
+            "meaning": "I am looking for"
+        },
+        {
+            "text": "szukam informacji",
+            "meaning": "I'm looking for information"
+        },
+        {
+            "text": "szukasz"
         },
         {
             "text": "są",
@@ -8781,6 +10759,14 @@
         {
             "text": "słuchawki",
             "meaning": "headphones"
+        },
+        {
+            "text": "słuchać",
+            "meaning": "listen to (to listen to)"
+        },
+        {
+            "text": "słuchać",
+            "meaning": "to listen to"
         },
         {
             "text": "słychać"
@@ -8952,6 +10938,31 @@
             "meaning": "dad"
         },
         {
+            "text": "tata czyta książkę",
+            "meaning": "my dad is reading a book"
+        },
+        {
+            "text": "tańczy",
+            "meaning": "he dances, she dances"
+        },
+        {
+            "text": "tańczycie"
+        },
+        {
+            "text": "tańczymy"
+        },
+        {
+            "text": "tańczysz",
+            "meaning": "you dance"
+        },
+        {
+            "text": "tańczysz",
+            "meaning": "you dance (one friend)"
+        },
+        {
+            "text": "tańczysz tango"
+        },
+        {
             "text": "tańczyć",
             "meaning": "dance (to dance)"
         },
@@ -8960,12 +10971,30 @@
             "meaning": "to dance"
         },
         {
+            "text": "tańczą"
+        },
+        {
+            "text": "tańczę",
+            "meaning": "I dance"
+        },
+        {
+            "text": "tańczę tango",
+            "meaning": "I dance the tango"
+        },
+        {
             "text": "tekst",
             "meaning": "a text"
         },
         {
             "text": "tekst i test",
             "meaning": "a text and a test"
+        },
+        {
+            "text": "telewizja"
+        },
+        {
+            "text": "telewizję",
+            "meaning": "TV, television (after oglądać: oglądać telewizję)"
         },
         {
             "text": "ten",
@@ -9054,6 +11083,18 @@
         },
         {
             "text": "tenisa"
+        },
+        {
+            "text": "teraz",
+            "meaning": "now"
+        },
+        {
+            "text": "teraz on się nudzi",
+            "meaning": "he is bored now"
+        },
+        {
+            "text": "teraz ona się nudzi",
+            "meaning": "she is bored now"
         },
         {
             "text": "test",
@@ -9273,6 +11314,9 @@
             "meaning": "it is a map"
         },
         {
+            "text": "to jest moja córka"
+        },
+        {
             "text": "to jest moja dentystka",
             "meaning": "this is my dentist (a woman)"
         },
@@ -9283,6 +11327,9 @@
         {
             "text": "to jest moja rodzina, a twoja?",
             "meaning": "this is my family, and yours? (to one friend)"
+        },
+        {
+            "text": "to jest moja rodzina?"
         },
         {
             "text": "to jest moja siostra",
@@ -9393,8 +11440,19 @@
             "meaning": "it is a bag"
         },
         {
+            "text": "to jest twoja córka?"
+        },
+        {
+            "text": "to jest twoja rodzina?",
+            "meaning": "is this your family?"
+        },
+        {
             "text": "to jest twoje dziecko?",
             "meaning": "is this your child? (to one friend)"
+        },
+        {
+            "text": "to jest twój brat?",
+            "meaning": "is that your brother?"
         },
         {
             "text": "to jest twój brat?",
@@ -9564,6 +11622,10 @@
         },
         {
             "text": "to twój brat?",
+            "meaning": "is that your brother?"
+        },
+        {
+            "text": "to twój brat?",
             "meaning": "is this your brother? (to one friend)"
         },
         {
@@ -9587,6 +11649,14 @@
         {
             "text": "torba to rzeczownik",
             "meaning": "'torba' is a noun"
+        },
+        {
+            "text": "trenuję",
+            "meaning": "I train (in a sport)"
+        },
+        {
+            "text": "trenuję w klubie",
+            "meaning": "I train at a club"
         },
         {
             "text": "trochę",
@@ -9706,7 +11776,15 @@
             "meaning": "your (one friend, with a feminine noun)"
         },
         {
+            "text": "twoja gospodyni gotuje",
+            "meaning": "your landlady is cooking"
+        },
+        {
             "text": "twoja mama"
+        },
+        {
+            "text": "twoja siostra",
+            "meaning": "your sister"
         },
         {
             "text": "twoja siostra",
@@ -9718,11 +11796,19 @@
         },
         {
             "text": "twoje dziecko",
+            "meaning": "your child"
+        },
+        {
+            "text": "twoje dziecko",
             "meaning": "your child (to one friend)"
         },
         {
             "text": "twój",
             "meaning": "your (one friend, with a masculine noun)"
+        },
+        {
+            "text": "twój brat",
+            "meaning": "your brother"
         },
         {
             "text": "twój mąż jest z Polski?",
@@ -9739,6 +11825,10 @@
         {
             "text": "ty jesteś zmęczona?",
             "meaning": "are you tired? (one friend, a woman)"
+        },
+        {
+            "text": "ty jeździsz na rowerze?",
+            "meaning": "do you ride a bike? (one friend)"
         },
         {
             "text": "ty kończysz kurs?",
@@ -9776,7 +11866,16 @@
             "meaning": "he is learning Polish; she is learning Polish"
         },
         {
-            "text": "uczycie się"
+            "text": "uczycie się",
+            "meaning": "you learn, you study (several people)"
+        },
+        {
+            "text": "uczycie się",
+            "meaning": "you study (several people)"
+        },
+        {
+            "text": "uczycie się w Krakowie?",
+            "meaning": "Do you study in Kraków? (several people)"
         },
         {
             "text": "uczymy się",
@@ -9796,6 +11895,14 @@
         {
             "text": "uczysz się polskiego",
             "meaning": "you are learning Polish (one friend)"
+        },
+        {
+            "text": "uczyć się",
+            "meaning": "learn, study (to learn, to study)"
+        },
+        {
+            "text": "uczyć się",
+            "meaning": "to study"
         },
         {
             "text": "uczą się",
@@ -9835,8 +11942,61 @@
             "meaning": "a street"
         },
         {
+            "text": "umie",
+            "meaning": "he can, she can"
+        },
+        {
+            "text": "umie",
+            "meaning": "he can, she can; he knows how to, she knows how to"
+        },
+        {
+            "text": "umiecie"
+        },
+        {
+            "text": "umieją",
+            "meaning": "they can"
+        },
+        {
+            "text": "umieją",
+            "meaning": "they can, they know how to"
+        },
+        {
+            "text": "umiem",
+            "meaning": "I can"
+        },
+        {
+            "text": "umiem",
+            "meaning": "I can, I know how to"
+        },
+        {
+            "text": "umiem gotować tylko ryż",
+            "meaning": "I can only cook rice"
+        },
+        {
+            "text": "umiem grać w tenisa"
+        },
+        {
+            "text": "umiem jeździć konno",
+            "meaning": "I can ride a horse"
+        },
+        {
+            "text": "umiem jeździć na nartach"
+        },
+        {
+            "text": "umiemy",
+            "meaning": "we can"
+        },
+        {
+            "text": "umiemy",
+            "meaning": "we can, we know how to"
+        },
+        {
             "text": "umiesz",
             "meaning": "you can, you know how to (one friend)"
+        },
+        {
+            "text": "umiesz jeździć na nartach?",
+            "meaning": "can you ski? (one friend)"
         },
         {
             "text": "umiesz tańczyć tango?",
@@ -9848,6 +12008,10 @@
         },
         {
             "text": "uniwersalnie"
+        },
+        {
+            "text": "uprawiać",
+            "meaning": "do (a sport: uprawiać sport)"
         },
         {
             "text": "urzędniczka",
@@ -9882,8 +12046,15 @@
             "meaning": "fill in; complete"
         },
         {
+            "text": "w"
+        },
+        {
             "text": "w Berlinie",
             "meaning": "in Berlin"
+        },
+        {
+            "text": "w Japonii",
+            "meaning": "in Japan"
         },
         {
             "text": "w Krakowie",
@@ -9918,6 +12089,30 @@
             "meaning": "in an office"
         },
         {
+            "text": "w domu",
+            "meaning": "at home"
+        },
+        {
+            "text": "w karty",
+            "meaning": "cards"
+        },
+        {
+            "text": "w karty",
+            "meaning": "cards (after grać: gram w karty)"
+        },
+        {
+            "text": "w klubie",
+            "meaning": "at a club"
+        },
+        {
+            "text": "w piłkę",
+            "meaning": "football"
+        },
+        {
+            "text": "w piłkę",
+            "meaning": "football (after grać: gram w piłkę)"
+        },
+        {
             "text": "w poniedziałek"
         },
         {
@@ -9927,6 +12122,14 @@
         {
             "text": "w restauracji",
             "meaning": "in a restaurant"
+        },
+        {
+            "text": "w szachy",
+            "meaning": "chess"
+        },
+        {
+            "text": "w szachy",
+            "meaning": "chess (after grać: gram w szachy)"
         },
         {
             "text": "w szkole",
@@ -9947,6 +12150,25 @@
         {
             "text": "w tenisa",
             "meaning": "tennis (after grać: gram w tenisa)"
+        },
+        {
+            "text": "w weekend",
+            "meaning": "at the weekend"
+        },
+        {
+            "text": "w weekend idziemy tańczyć",
+            "meaning": "at the weekend we're going dancing"
+        },
+        {
+            "text": "w weekend ja robię zakupy",
+            "meaning": "at the weekend I do the shopping"
+        },
+        {
+            "text": "w weekend lubimy tańczyć"
+        },
+        {
+            "text": "w weekend robię zakupy",
+            "meaning": "at the weekend I do the shopping"
         },
         {
             "text": "wesoła",
@@ -10002,6 +12224,14 @@
         {
             "text": "woda",
             "meaning": "water"
+        },
+        {
+            "text": "wolę",
+            "meaning": "I prefer"
+        },
+        {
+            "text": "wolę grać na komputerze",
+            "meaning": "I prefer playing computer games"
         },
         {
             "text": "wszystko",
@@ -10118,7 +12348,27 @@
             "meaning": "by profession"
         },
         {
+            "text": "zakupy",
+            "meaning": "shopping"
+        },
+        {
+            "text": "zakupy",
+            "meaning": "shopping (robić zakupy: to do the shopping)"
+        },
+        {
             "text": "zapraszam"
+        },
+        {
+            "text": "zdjęcia",
+            "meaning": "a photo (zdjęcia: photos)"
+        },
+        {
+            "text": "zdjęcie",
+            "meaning": "a photo"
+        },
+        {
+            "text": "zdjęcie",
+            "meaning": "a photo (zdjęcia: photos)"
         },
         {
             "text": "zdrowa",
@@ -10131,6 +12381,10 @@
         {
             "text": "zdrowy",
             "meaning": "healthy (zdrowy, zdrowa, zdrowe)"
+        },
+        {
+            "text": "ze znajomymi",
+            "meaning": "with friends"
         },
         {
             "text": "zero",
@@ -10189,7 +12443,54 @@
             "meaning": "tired (zmęczony, zmęczona, zmęczone)"
         },
         {
+            "text": "zna",
+            "meaning": "he knows, she knows"
+        },
+        {
+            "text": "zna",
+            "meaning": "he knows, she knows (a person, a place, a film)"
+        },
+        {
+            "text": "znacie"
+        },
+        {
             "text": "znaczy"
+        },
+        {
+            "text": "znajomi"
+        },
+        {
+            "text": "znają"
+        },
+        {
+            "text": "znam",
+            "meaning": "I know"
+        },
+        {
+            "text": "znam",
+            "meaning": "I know (a person, a place, a film)"
+        },
+        {
+            "text": "znam Kraków",
+            "meaning": "I know Kraków"
+        },
+        {
+            "text": "znamy"
+        },
+        {
+            "text": "znasz",
+            "meaning": "you know (one friend)"
+        },
+        {
+            "text": "znasz",
+            "meaning": "you know (one friend; a person, a place, a film)"
+        },
+        {
+            "text": "znasz Kraków?"
+        },
+        {
+            "text": "znasz ten serial?",
+            "meaning": "do you know this TV series? (one friend)"
         },
         {
             "text": "zła",
@@ -10262,6 +12563,12 @@
             "meaning": "a mobile phone and a charger"
         },
         {
+            "text": "Śpiewać."
+        },
+        {
+            "text": "Świetnie!"
+        },
+        {
             "text": "Świetnie! A dlaczego uczysz się polskiego?",
             "meaning": "Great! And why are you learning Polish?"
         },
@@ -10272,6 +12579,10 @@
         {
             "text": "Świetnie! Dziękuję, to wszystko. Do widzenia!",
             "meaning": "Great! Thank you, that's all. Goodbye!"
+        },
+        {
+            "text": "Świetnie! Idziemy!",
+            "meaning": "Great! Let's go!"
         },
         {
             "text": "Świetnie! Ja jestem lekarką i interesuję się fotografią.",
@@ -10287,6 +12598,14 @@
         },
         {
             "text": "śmiesznie"
+        },
+        {
+            "text": "śpiewać",
+            "meaning": "sing (to sing)"
+        },
+        {
+            "text": "śpiewać",
+            "meaning": "to sing"
         },
         {
             "text": "średniego wzrostu",
@@ -10844,6 +13163,26 @@
             "hash": "a1d11e49e343"
         },
         {
+            "id": "chat-weekend-plans/t1/2",
+            "hash": "816f1bf58ff1"
+        },
+        {
+            "id": "chat-weekend-plans/t2/2",
+            "hash": "3ebccf1c12b5"
+        },
+        {
+            "id": "chat-weekend-plans/t3/2",
+            "hash": "eb56a83d6ad4"
+        },
+        {
+            "id": "chat-weekend-plans/t4/2",
+            "hash": "272a9e7c9bc7"
+        },
+        {
+            "id": "chat-weekend-plans/t5/2",
+            "hash": "7633a3deb7e7"
+        },
+        {
             "id": "chat-your-details/t1/2",
             "hash": "38f3180e9686"
         },
@@ -11168,6 +13507,90 @@
         {
             "id": "kpk1-l05-g-t01",
             "hash": "4f972d377fc5"
+        },
+        {
+            "id": "kpk1-l06-a1-t01",
+            "hash": "4cce77c8d94c"
+        },
+        {
+            "id": "kpk1-l06-a2-t01",
+            "hash": "1d61ffddcbdf"
+        },
+        {
+            "id": "kpk1-l06-a3-t01",
+            "hash": "03663ee93a7f"
+        },
+        {
+            "id": "kpk1-l06-a4-t01",
+            "hash": "364d143f0e84"
+        },
+        {
+            "id": "kpk1-l06-a5-t01",
+            "hash": "046bfb74fc61"
+        },
+        {
+            "id": "kpk1-l06-a6-t01",
+            "hash": "057446a8f1a9"
+        },
+        {
+            "id": "kpk1-l06-a6-t02",
+            "hash": "76e4c815bbdc"
+        },
+        {
+            "id": "kpk1-l06-a7-t01",
+            "hash": "f77c3b0d37c2"
+        },
+        {
+            "id": "kpk1-l06-a7-t02",
+            "hash": "af7cc983c54e"
+        },
+        {
+            "id": "kpk1-l06-a8-t01",
+            "hash": "983d42880e57"
+        },
+        {
+            "id": "kpk1-l06-a9-t01",
+            "hash": "b833df2236e3"
+        },
+        {
+            "id": "kpk1-l06-a9-t02",
+            "hash": "0a9ce0aaa3d7"
+        },
+        {
+            "id": "kpk1-l06-b1-t01",
+            "hash": "2e9817274d35"
+        },
+        {
+            "id": "kpk1-l06-b2-t01",
+            "hash": "fe6f5383074e"
+        },
+        {
+            "id": "kpk1-l06-b3-t01",
+            "hash": "7afb28d8dc2c"
+        },
+        {
+            "id": "kpk1-l06-b4-t01",
+            "hash": "fb8e4e7e0acf"
+        },
+        {
+            "id": "kpk1-l06-b5-t01",
+            "hash": "26ca878f978f"
+        },
+        {
+            "id": "kpk1-l06-b6-t01",
+            "hash": "35bc5dc069ad"
+        },
+        {
+            "id": "kpk1-l06-b6-t02",
+            "hash": "13a7c11821f6"
+        },
+        {
+            "id": "kpk1-l06-b7-t01",
+            "hash": "b16ac77298c0"
+        },
+        {
+            "id": "kpk1-l06-g-t01",
+            "hash": "e907b5e8ec9b"
         }
     ]
 }

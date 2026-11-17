@@ -1,0 +1,825 @@
+{
+  "items": [
+    {
+      "id": "robic-robi",
+      "text": "robi",
+      "meaning": {
+        "en": "he does, she does (co pani robi?: what are you doing?)"
+      }
+    },
+    {
+      "id": "gotowac-gotuje",
+      "text": "gotuję",
+      "meaning": {
+        "en": "I cook, I am cooking"
+      }
+    },
+    {
+      "id": "pierogi",
+      "text": "pierogi",
+      "meaning": {
+        "en": "pierogi (Polish dumplings)"
+      }
+    },
+    {
+      "id": "gotowac",
+      "text": "gotować",
+      "meaning": {
+        "en": "cook (to cook)"
+      }
+    },
+    {
+      "id": "umiec-umiem",
+      "text": "umiem",
+      "meaning": {
+        "en": "I can, I know how to"
+      }
+    },
+    {
+      "id": "ryz",
+      "text": "ryż",
+      "meaning": {
+        "en": "rice"
+      }
+    },
+    {
+      "id": "gotowac-gotuje-on",
+      "text": "gotuje",
+      "meaning": {
+        "en": "he cooks, she cooks"
+      }
+    },
+    {
+      "id": "czytac-czyta",
+      "text": "czyta",
+      "meaning": {
+        "en": "he reads, she reads"
+      }
+    },
+    {
+      "id": "ksiazka-acc",
+      "text": "książkę",
+      "meaning": {
+        "en": "a book (after czytam, czytasz…)"
+      }
+    },
+    {
+      "id": "czytac",
+      "text": "czytać",
+      "meaning": {
+        "en": "read (to read)"
+      }
+    },
+    {
+      "id": "grac",
+      "text": "grać",
+      "meaning": {
+        "en": "play (to play)"
+      }
+    },
+    {
+      "id": "na-komputerze",
+      "text": "na komputerze",
+      "meaning": {
+        "en": "on the computer (grać na komputerze: to play computer games)"
+      }
+    },
+    {
+      "id": "wolec-wole",
+      "text": "wolę",
+      "meaning": {
+        "en": "I prefer"
+      }
+    },
+    {
+      "id": "szkoda",
+      "text": "szkoda",
+      "meaning": {
+        "en": "what a pity, too bad"
+      }
+    },
+    {
+      "id": "pisac-pisze",
+      "text": "piszę",
+      "meaning": {
+        "en": "I write, I am writing"
+      }
+    },
+    {
+      "id": "e-mail",
+      "text": "e-mail",
+      "meaning": {
+        "en": "an e-mail (e-maile: e-mails)"
+      },
+      "forms": [
+        "e-maile"
+      ]
+    },
+    {
+      "id": "szukac-szukam",
+      "text": "szukam",
+      "meaning": {
+        "en": "I am looking for"
+      }
+    },
+    {
+      "id": "informacja-gen",
+      "text": "informacji",
+      "meaning": {
+        "en": "information (after szukam: szukam informacji)"
+      }
+    },
+    {
+      "id": "ogladac-oglada",
+      "text": "ogląda",
+      "meaning": {
+        "en": "he watches, she watches; he looks at, she looks at"
+      }
+    },
+    {
+      "id": "zdjecie",
+      "text": "zdjęcie",
+      "meaning": {
+        "en": "a photo (zdjęcia: photos)"
+      },
+      "forms": [
+        "zdjęcia"
+      ]
+    },
+    {
+      "id": "nudzic-sie-nudze",
+      "text": "nudzę się",
+      "meaning": {
+        "en": "I am bored"
+      }
+    },
+    {
+      "id": "nic",
+      "text": "nic",
+      "meaning": {
+        "en": "nothing (nic nie robię: I am doing nothing)"
+      }
+    },
+    {
+      "id": "dzisiaj",
+      "text": "dzisiaj",
+      "meaning": {
+        "en": "today (the same as dziś)"
+      }
+    },
+    {
+      "id": "teraz",
+      "text": "teraz",
+      "meaning": {
+        "en": "now"
+      }
+    },
+    {
+      "id": "nudzic-sie-nudzi",
+      "text": "nudzi się",
+      "meaning": {
+        "en": "he is bored, she is bored"
+      }
+    },
+    {
+      "id": "na-uniwersytecie",
+      "text": "na uniwersytecie",
+      "meaning": {
+        "en": "at university"
+      }
+    },
+    {
+      "id": "na-wakacjach",
+      "text": "na wakacjach",
+      "meaning": {
+        "en": "on holiday"
+      }
+    },
+    {
+      "id": "w-japonii",
+      "text": "w Japonii",
+      "meaning": {
+        "en": "in Japan"
+      }
+    },
+    {
+      "id": "gospodyni",
+      "text": "gospodyni",
+      "meaning": {
+        "en": "a host, a landlady (the woman of the house a student lives in)"
+      }
+    },
+    {
+      "id": "gospodarz",
+      "text": "gospodarz",
+      "meaning": {
+        "en": "a host, a landlord (the man of the house a student lives in)"
+      }
+    },
+    {
+      "id": "w-domu",
+      "text": "w domu",
+      "meaning": {
+        "en": "at home"
+      }
+    },
+    {
+      "id": "znac-znam",
+      "text": "znam",
+      "meaning": {
+        "en": "I know (a person, a place, a film)"
+      }
+    },
+    {
+      "id": "znac-znasz",
+      "text": "znasz",
+      "meaning": {
+        "en": "you know (one friend; a person, a place, a film)"
+      }
+    },
+    {
+      "id": "znac-zna",
+      "text": "zna",
+      "meaning": {
+        "en": "he knows, she knows (a person, a place, a film)"
+      }
+    },
+    {
+      "id": "umiec-umie",
+      "text": "umie",
+      "meaning": {
+        "en": "he can, she can; he knows how to, she knows how to"
+      }
+    },
+    {
+      "id": "umiec-umiemy",
+      "text": "umiemy",
+      "meaning": {
+        "en": "we can, we know how to"
+      }
+    },
+    {
+      "id": "umiec-umieja",
+      "text": "umieją",
+      "meaning": {
+        "en": "they can, they know how to"
+      }
+    },
+    {
+      "id": "pisac",
+      "text": "pisać",
+      "meaning": {
+        "en": "write (to write: piszę, piszesz)"
+      }
+    },
+    {
+      "id": "pisac-piszesz",
+      "text": "piszesz",
+      "meaning": {
+        "en": "you write (one friend)"
+      }
+    },
+    {
+      "id": "sms",
+      "text": "SMS",
+      "meaning": {
+        "en": "a text message"
+      }
+    },
+    {
+      "id": "pisac-pisze-on",
+      "text": "pisze",
+      "meaning": {
+        "en": "he writes, she writes"
+      }
+    },
+    {
+      "id": "gotowac-gotujesz",
+      "text": "gotujesz",
+      "meaning": {
+        "en": "you cook (one friend)"
+      }
+    },
+    {
+      "id": "makaron",
+      "text": "makaron",
+      "meaning": {
+        "en": "pasta"
+      }
+    },
+    {
+      "id": "gotowac-gotujemy",
+      "text": "gotujemy",
+      "meaning": {
+        "en": "we cook"
+      }
+    },
+    {
+      "id": "gotowac-gotuja",
+      "text": "gotują",
+      "meaning": {
+        "en": "they cook"
+      }
+    },
+    {
+      "id": "organizowac-organizuje",
+      "text": "organizuję",
+      "meaning": {
+        "en": "I organise"
+      }
+    },
+    {
+      "id": "impreza-acc",
+      "text": "imprezę",
+      "meaning": {
+        "en": "a party (after organizuję, planuję…)"
+      }
+    },
+    {
+      "id": "planowac-planuje",
+      "text": "planuję",
+      "meaning": {
+        "en": "I plan"
+      }
+    },
+    {
+      "id": "rezerwowac-rezerwuje",
+      "text": "rezerwuję",
+      "meaning": {
+        "en": "I book, I reserve"
+      }
+    },
+    {
+      "id": "bilet",
+      "text": "bilet",
+      "meaning": {
+        "en": "a ticket (bilety: tickets)"
+      },
+      "forms": [
+        "bilety"
+      ]
+    },
+    {
+      "id": "trenowac-trenuje",
+      "text": "trenuję",
+      "meaning": {
+        "en": "I train (in a sport)"
+      }
+    },
+    {
+      "id": "w-klubie",
+      "text": "w klubie",
+      "meaning": {
+        "en": "at a club"
+      }
+    },
+    {
+      "id": "podrozowac",
+      "text": "podróżować",
+      "meaning": {
+        "en": "travel (to travel)"
+      }
+    },
+    {
+      "id": "tanczyc-tancze",
+      "text": "tańczę",
+      "meaning": {
+        "en": "I dance"
+      }
+    },
+    {
+      "id": "tanczyc-tanczysz",
+      "text": "tańczysz",
+      "meaning": {
+        "en": "you dance (one friend)"
+      }
+    },
+    {
+      "id": "tanczyc-tanczy",
+      "text": "tańczy",
+      "meaning": {
+        "en": "he dances, she dances"
+      }
+    },
+    {
+      "id": "robic-robimy",
+      "text": "robimy",
+      "meaning": {
+        "en": "we do, we make"
+      }
+    },
+    {
+      "id": "robic-robicie",
+      "text": "robicie",
+      "meaning": {
+        "en": "you do, you make (several people)"
+      }
+    },
+    {
+      "id": "nudzic-sie-nudzisz",
+      "text": "nudzisz się",
+      "meaning": {
+        "en": "you are bored (one friend)"
+      }
+    },
+    {
+      "id": "uczyc-sie-uczycie",
+      "text": "uczycie się",
+      "meaning": {
+        "en": "you learn, you study (several people)"
+      }
+    },
+    {
+      "id": "lubic-lubicie",
+      "text": "lubicie",
+      "meaning": {
+        "en": "you like (several people)"
+      }
+    },
+    {
+      "id": "sluchac",
+      "text": "słuchać",
+      "meaning": {
+        "en": "listen to (to listen to)"
+      }
+    },
+    {
+      "id": "muzyka-gen",
+      "text": "muzyki",
+      "meaning": {
+        "en": "music (after słuchać: słuchać muzyki)"
+      }
+    },
+    {
+      "id": "malowac",
+      "text": "malować",
+      "meaning": {
+        "en": "paint (to paint)"
+      }
+    },
+    {
+      "id": "chodzic",
+      "text": "chodzić",
+      "meaning": {
+        "en": "go (to go on foot, or regularly)"
+      }
+    },
+    {
+      "id": "do-klubu",
+      "text": "do klubu",
+      "meaning": {
+        "en": "to a club"
+      }
+    },
+    {
+      "id": "lubic-lubia",
+      "text": "lubią",
+      "meaning": {
+        "en": "they like"
+      }
+    },
+    {
+      "id": "spotykac-sie",
+      "text": "spotykać się",
+      "meaning": {
+        "en": "meet up (to meet up)"
+      }
+    },
+    {
+      "id": "ze-znajomymi",
+      "text": "ze znajomymi",
+      "meaning": {
+        "en": "with friends"
+      }
+    },
+    {
+      "id": "zakupy",
+      "text": "zakupy",
+      "meaning": {
+        "en": "shopping (robić zakupy: to do the shopping)"
+      }
+    },
+    {
+      "id": "w-weekend",
+      "text": "w weekend",
+      "meaning": {
+        "en": "at the weekend"
+      }
+    },
+    {
+      "id": "isc-idziemy",
+      "text": "idziemy",
+      "meaning": {
+        "en": "we are going (on foot)"
+      }
+    },
+    {
+      "id": "na-spacery",
+      "text": "na spacery",
+      "meaning": {
+        "en": "for walks (chodzić na spacery: to go for walks)"
+      }
+    },
+    {
+      "id": "na-silownie",
+      "text": "na siłownię",
+      "meaning": {
+        "en": "to the gym"
+      }
+    },
+    {
+      "id": "do-kina",
+      "text": "do kina",
+      "meaning": {
+        "en": "to the cinema"
+      }
+    },
+    {
+      "id": "ogladac",
+      "text": "oglądać",
+      "meaning": {
+        "en": "watch (to watch)"
+      }
+    },
+    {
+      "id": "telewizja-acc",
+      "text": "telewizję",
+      "meaning": {
+        "en": "TV, television (after oglądać: oglądać telewizję)"
+      }
+    },
+    {
+      "id": "spiewac",
+      "text": "śpiewać",
+      "meaning": {
+        "en": "sing (to sing)"
+      }
+    },
+    {
+      "id": "biegac",
+      "text": "biegać",
+      "meaning": {
+        "en": "run (to run, to jog)"
+      }
+    },
+    {
+      "id": "plywac",
+      "text": "pływać",
+      "meaning": {
+        "en": "swim (to swim)"
+      }
+    },
+    {
+      "id": "w-pilke",
+      "text": "w piłkę",
+      "meaning": {
+        "en": "football (after grać: gram w piłkę)"
+      }
+    },
+    {
+      "id": "w-szachy",
+      "text": "w szachy",
+      "meaning": {
+        "en": "chess (after grać: gram w szachy)"
+      }
+    },
+    {
+      "id": "w-karty",
+      "text": "w karty",
+      "meaning": {
+        "en": "cards (after grać: gram w karty)"
+      }
+    },
+    {
+      "id": "na-pianinie",
+      "text": "na pianinie",
+      "meaning": {
+        "en": "the piano (after grać: gram na pianinie)"
+      }
+    },
+    {
+      "id": "jezdzic",
+      "text": "jeździć",
+      "meaning": {
+        "en": "ride (to ride, to go by bike, on skis…)"
+      }
+    },
+    {
+      "id": "na-rowerze",
+      "text": "na rowerze",
+      "meaning": {
+        "en": "a bike (after jeździć: jeżdżę na rowerze)"
+      }
+    },
+    {
+      "id": "na-nartach",
+      "text": "na nartach",
+      "meaning": {
+        "en": "skis (after jeździć: jeździć na nartach, to ski)"
+      }
+    },
+    {
+      "id": "konno",
+      "text": "konno",
+      "meaning": {
+        "en": "on horseback (jeździć konno: to ride a horse)"
+      }
+    },
+    {
+      "id": "jezdzic-jezdze",
+      "text": "jeżdżę",
+      "meaning": {
+        "en": "I ride, I go (by bike, on skis…)"
+      }
+    },
+    {
+      "id": "jezdzic-jezdzisz",
+      "text": "jeździsz",
+      "meaning": {
+        "en": "you ride, you go (one friend; by bike, on skis…)"
+      }
+    },
+    {
+      "id": "jezdzic-jezdzi",
+      "text": "jeździ",
+      "meaning": {
+        "en": "he rides, she rides"
+      }
+    },
+    {
+      "id": "na-rolkach",
+      "text": "na rolkach",
+      "meaning": {
+        "en": "rollerblades (after jeździć: jeździć na rolkach, to rollerblade)"
+      }
+    },
+    {
+      "id": "jezdzic-jezdza",
+      "text": "jeżdżą",
+      "meaning": {
+        "en": "they ride"
+      }
+    },
+    {
+      "id": "uprawiac",
+      "text": "uprawiać",
+      "meaning": {
+        "en": "do (a sport: uprawiać sport)"
+      }
+    },
+    {
+      "id": "na-basen",
+      "text": "na basen",
+      "meaning": {
+        "en": "to the swimming pool"
+      }
+    },
+    {
+      "id": "chciec-chce",
+      "text": "chcę",
+      "meaning": {
+        "en": "I want"
+      }
+    },
+    {
+      "id": "chciec-chcesz",
+      "text": "chcesz",
+      "meaning": {
+        "en": "you want (one friend)"
+      }
+    },
+    {
+      "id": "moc-moge",
+      "text": "mogę",
+      "meaning": {
+        "en": "I can (I am free to, I may)"
+      }
+    },
+    {
+      "id": "moc-mozesz",
+      "text": "możesz",
+      "meaning": {
+        "en": "you can (one friend; you are free to, you may)"
+      }
+    },
+    {
+      "id": "musiec-musze",
+      "text": "muszę",
+      "meaning": {
+        "en": "I must, I have to"
+      }
+    },
+    {
+      "id": "isc",
+      "text": "iść",
+      "meaning": {
+        "en": "go (to go on foot, now)"
+      }
+    },
+    {
+      "id": "do-lekarza",
+      "text": "do lekarza",
+      "meaning": {
+        "en": "to the doctor"
+      }
+    },
+    {
+      "id": "kontuzja-acc",
+      "text": "kontuzję",
+      "meaning": {
+        "en": "an injury (after mam: mam kontuzję)"
+      }
+    },
+    {
+      "id": "na-kawe",
+      "text": "na kawę",
+      "meaning": {
+        "en": "for a coffee (iść na kawę)"
+      }
+    },
+    {
+      "id": "chciec-chce-on",
+      "text": "chce",
+      "meaning": {
+        "en": "he wants, she wants"
+      }
+    },
+    {
+      "id": "na-zakupy",
+      "text": "na zakupy",
+      "meaning": {
+        "en": "shopping (iść na zakupy: to go shopping)"
+      }
+    },
+    {
+      "id": "na-koncert",
+      "text": "na koncert",
+      "meaning": {
+        "en": "to a concert"
+      }
+    },
+    {
+      "id": "musiec-musisz",
+      "text": "musisz",
+      "meaning": {
+        "en": "you must, you have to (one friend)"
+      }
+    },
+    {
+      "id": "uczyc-sie",
+      "text": "uczyć się",
+      "meaning": {
+        "en": "learn, study (to learn, to study)"
+      }
+    },
+    {
+      "id": "do-egzaminu",
+      "text": "do egzaminu",
+      "meaning": {
+        "en": "for an exam (uczyć się do egzaminu)"
+      }
+    },
+    {
+      "id": "musiec-musi",
+      "text": "musi",
+      "meaning": {
+        "en": "he must, she must; he has to, she has to"
+      }
+    },
+    {
+      "id": "isc-ide",
+      "text": "idę",
+      "meaning": {
+        "en": "I am going (on foot)"
+      }
+    },
+    {
+      "id": "chciec",
+      "text": "chcieć",
+      "meaning": {
+        "en": "want (to want)"
+      }
+    },
+    {
+      "id": "moc",
+      "text": "móc",
+      "meaning": {
+        "en": "can, be able to (to be able to)"
+      }
+    },
+    {
+      "id": "musiec",
+      "text": "musieć",
+      "meaning": {
+        "en": "must, have to (to have to)"
+      }
+    },
+    {
+      "id": "na-masaz",
+      "text": "na masaż",
+      "meaning": {
+        "en": "for a massage (iść na masaż)"
+      }
+    }
+  ]
+}

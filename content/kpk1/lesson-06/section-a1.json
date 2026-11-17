@@ -1,0 +1,378 @@
+{
+  "id": "kpk1-l06-a1",
+  "section": {
+    "letter": "A",
+    "heading": "W domu: co robisz?",
+    "meaning": {
+      "en": "At home: what are you doing?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-a1-t01",
+      "before": "kpk1-l06-a1-e01",
+      "title": {
+        "en": "What are you doing?"
+      },
+      "body": {
+        "en": "To ask a friend, say *co robisz?*. To a woman you don't know well, say *co pani robi?*, and to a man *co pan robi?*. Polish has one present tense, so *gotuję* is both \"I cook\" and \"I am cooking\". *Umiem* with a verb's dictionary form is \"I can, I know how to\": *umiem gotować*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a1-e01",
+      "prompt": "pani",
+      "options": [
+        {
+          "en": "you (to a woman, formal); Mrs, Ms"
+        },
+        {
+          "en": "you (to a man, formal); Mr"
+        },
+        {
+          "en": "she"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pani"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a1-e02",
+      "prompt": "robi",
+      "options": [
+        {
+          "en": "you do, you make (one friend)"
+        },
+        {
+          "en": "he does, she does (co pani robi?: what are you doing?)"
+        },
+        {
+          "en": "he likes, she likes"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "robic-robi"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a1-e03",
+      "text": "co pani robi?",
+      "meaning": {
+        "en": "what are you doing? (to a woman, formal)"
+      },
+      "distractors": [
+        "co pan robi?",
+        "co ona robi?"
+      ],
+      "items": [
+        "co",
+        "pani",
+        "robic-robi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a1-e04",
+      "prompt": "gotuję",
+      "options": [
+        {
+          "en": "I do, I make"
+        },
+        {
+          "en": "I work"
+        },
+        {
+          "en": "I cook, I am cooking"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "gotowac-gotuje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a1-e05",
+      "prompt": "pierogi",
+      "options": [
+        {
+          "en": "pierogi (Polish dumplings)"
+        },
+        {
+          "en": "a cake"
+        },
+        {
+          "en": "soup"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pierogi"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-a1-e06",
+      "prompt": {
+        "en": "I'm cooking pierogi"
+      },
+      "acceptedAnswers": [
+        "gotuję pierogi"
+      ],
+      "distractors": [
+        "gotuje",
+        "robi"
+      ],
+      "items": [
+        "gotowac-gotuje",
+        "pierogi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a1-e07",
+      "prompt": "gotować",
+      "options": [
+        {
+          "en": "eat (to eat)"
+        },
+        {
+          "en": "cook (to cook)"
+        },
+        {
+          "en": "dance (to dance)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gotowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a1-e08",
+      "prompt": "umiem",
+      "options": [
+        {
+          "en": "you can, you know how to (one friend)"
+        },
+        {
+          "en": "I like"
+        },
+        {
+          "en": "I can, I know how to"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "umiec-umiem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-a1-e09",
+      "text": "Umiesz ___? Tak, umiem.",
+      "meaning": {
+        "en": "Can you cook? Yes, I can."
+      },
+      "gaps": [
+        [
+          "gotować"
+        ]
+      ],
+      "distractors": [
+        "gotuję",
+        "gotuje"
+      ],
+      "items": [
+        "umiec-umiesz",
+        "gotowac",
+        "tak",
+        "umiec-umiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a1-e10",
+      "prompt": "ryż",
+      "options": [
+        {
+          "en": "rice"
+        },
+        {
+          "en": "pasta"
+        },
+        {
+          "en": "bread"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ryz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a1-e11",
+      "prompt": "gotuje",
+      "options": [
+        {
+          "en": "I cook, I am cooking"
+        },
+        {
+          "en": "he cooks, she cooks"
+        },
+        {
+          "en": "he works, she works"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gotowac-gotuje-on"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a1-e12",
+      "text": "moja mama gotuje bardzo dobrze",
+      "meaning": {
+        "en": "my mum cooks very well"
+      },
+      "distractors": [
+        "moja mama gotuje ryż",
+        "moja mama pracuje bardzo dobrze"
+      ],
+      "items": [
+        "moja",
+        "mama",
+        "gotowac-gotuje-on",
+        "bardzo",
+        "dobrze"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-a1-e13",
+      "prompt": {
+        "en": "I can only cook rice"
+      },
+      "acceptedAnswers": [
+        "umiem gotować tylko ryż",
+        "ja umiem gotować tylko ryż"
+      ],
+      "items": [
+        "umiec-umiem",
+        "gotowac",
+        "tylko",
+        "ryz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-a1-e14",
+      "acceptedAnswers": [
+        "ona gotuje pierogi"
+      ],
+      "meaning": {
+        "en": "she is cooking pierogi"
+      },
+      "items": [
+        "ona",
+        "gotowac-gotuje-on",
+        "pierogi"
+      ],
+      "readingAnswers": [
+        "gotuje pierogi"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l06-a1-e15",
+      "lines": [
+        "Co pani robi?",
+        "Gotuję pierogi. Umiesz gotować?",
+        "Umiem gotować tylko ryż.",
+        "Ryż też jest dobry!"
+      ],
+      "meaning": {
+        "en": "A student talks to the woman of the house."
+      },
+      "items": [
+        "co",
+        "pani",
+        "robic-robi",
+        "gotowac-gotuje",
+        "pierogi",
+        "umiec-umiesz",
+        "gotowac",
+        "umiec-umiem",
+        "tylko",
+        "ryz",
+        "tez",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-a1-e16",
+      "pairs": [
+        {
+          "polish": "gotować",
+          "meaning": {
+            "en": "to cook"
+          }
+        },
+        {
+          "polish": "gotuję",
+          "meaning": {
+            "en": "I cook"
+          }
+        },
+        {
+          "polish": "pierogi",
+          "meaning": {
+            "en": "Polish dumplings"
+          }
+        },
+        {
+          "polish": "umiem",
+          "meaning": {
+            "en": "I can"
+          }
+        },
+        {
+          "polish": "ryż",
+          "meaning": {
+            "en": "rice"
+          }
+        },
+        {
+          "polish": "robi",
+          "meaning": {
+            "en": "he does, she does"
+          }
+        }
+      ],
+      "items": [
+        "gotowac",
+        "gotowac-gotuje",
+        "pierogi",
+        "umiec-umiem",
+        "ryz",
+        "robic-robi"
+      ]
+    }
+  ]
+}
