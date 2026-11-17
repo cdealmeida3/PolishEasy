@@ -121,6 +121,10 @@ data class PolishEasyColors(
     val completedEdge: Color,
     /** The eight lesson colours, as the book gives each chapter one. A chapter's accent is `accents[accent % 8]`. */
     val accents: List<AccentColors> = emptyList(),
+    /** A sticky note, the book's word bank for gaps: a pale yellow face, a darker edge, and its words. */
+    val note: Color = Color.Unspecified,
+    val noteEdge: Color = Color.Unspecified,
+    val onNote: Color = Color.Unspecified,
 )
 
 /**
@@ -171,6 +175,9 @@ internal val LightPolishEasyColors = PolishEasyColors(
     completed = Color(0xFF17733A),
     completedEdge = Color(0xFF0E5428),
     accents = LightAccents,
+    note = Color(0xFFFFF1A6),
+    noteEdge = Color(0xFFD9B93A),
+    onNote = Color(0xFF332800),
 )
 
 internal val DarkPolishEasyColors = PolishEasyColors(
@@ -191,6 +198,9 @@ internal val DarkPolishEasyColors = PolishEasyColors(
     completed = Color(0xFF3FA65C),
     completedEdge = Color(0xFF2B7A42),
     accents = DarkAccents,
+    note = Color(0xFF4A4015),
+    noteEdge = Color(0xFF7A6A22),
+    onNote = Color(0xFFFFF1A6),
 )
 
 internal val LocalPolishEasyColors = staticCompositionLocalOf { LightPolishEasyColors }

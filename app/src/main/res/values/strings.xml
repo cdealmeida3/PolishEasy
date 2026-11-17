@@ -584,4 +584,42 @@
     <string name="listen_wrong">It was: %1$s</string>
     <string name="listen_previous_recording">Previous: %1$03d</string>
     <string name="listen_next_recording">Next: %1$03d</string>
+
+    <!-- The book's own Exercises (F3) -->
+    <string name="fill_gaps_instruction">Fill in the gaps</string>
+    <string name="fill_gaps_gap">Gap %1$d, empty</string>
+    <string name="fill_gaps_gap_filled">Gap %1$d: %2$s. Tap to take it out</string>
+    <string name="fill_gaps_note_used">In a gap</string>
+    <string name="fill_gaps_type">Type a word instead</string>
+    <string name="fill_gaps_type_label">The word for gap %1$d</string>
+    <string name="fill_gaps_put">Put it in the gap</string>
+    <string name="match_pairs_instruction">Match each word to its meaning</string>
+    <string name="match_pairs_note">Tap a Polish word, then what it means.</string>
+    <string name="match_pairs_joined">joined to</string>
+    <string name="true_false_instruction">Read, then true or false?</string>
+    <string name="listen_true_false_instruction">Listen, then true or false?</string>
+    <string name="true_false_play">Play the text</string>
+    <string name="true_false_true">%1$d: P, prawda, true</string>
+    <string name="true_false_false">%1$d: N, nieprawda, false</string>
+    <string name="order_lines_instruction">Put the dialogue in order</string>
+    <string name="order_lines_answer">The dialogue so far</string>
+    <string name="tip_uwaga">Uwaga!</string>
+    <string name="tip_zapamietaj">Zapamiętaj!</string>
+    <string name="gender_masculine">masculine</string>
+    <string name="gender_feminine">feminine</string>
+    <string name="gender_neuter">neuter</string>
+    <string name="gender_masculine_personal">masculine personal: a group with a man in it</string>
+    <string name="gender_non_masculine_personal">non-masculine personal: any other group</string>
+    <!-- The Grammar shelf -->
+    <string name="grammar_title">Komentarze gramatyczne</string>
+    <string name="grammar_note">The grammar tables of the sections you have done, by chapter.</string>
+    <string name="grammar_back">Back</string>
+    <string name="grammar_none">No tables yet. Each section with one adds it here once you finish it.</string>
+    <string name="grammar_chapter">Lekcja %1$d · %2$s</string>
+    <plurals name="grammar_to_come">
+        <item quantity="one">%1$d more table comes with its section.</item>
+        <item quantity="other">%1$d more tables come with their sections.</item>
+    </plurals>
+    <string name="lesson_grammar_note">%1$d of %2$d grammar tables of this chapter</string>
+    <string name="settings_grammar_note">The grammar tables of every section you have done</string>
 </resources>

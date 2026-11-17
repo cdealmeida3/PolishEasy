@@ -18,6 +18,41 @@
       },
       "body": {
         "en": "Many words for people have a form for a man and one for a woman, often with *-ka*: *nauczyciel*, *nauczycielka*; *student*, *studentka*; *kolega*, *koleżanka*. *To jest* fits them all: *to jest nauczyciel*, *to jest studentka*."
+      },
+      "table": {
+        "title": {
+          "en": "A man and a woman"
+        },
+        "columns": [
+          {
+            "header": "on",
+            "gender": "m"
+          },
+          {
+            "header": "ona",
+            "gender": "f"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "student",
+              "student[ka]"
+            ]
+          },
+          {
+            "cells": [
+              "nauczyciel",
+              "nauczyciel[ka]"
+            ]
+          },
+          {
+            "cells": [
+              "kole[ga]",
+              "kole[żanka]"
+            ]
+          }
+        ]
       }
     }
   ],

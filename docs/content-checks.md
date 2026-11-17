@@ -48,6 +48,8 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 - Every listening Exercise has a Clip for what it speaks.
 - A Daily Set has at most 2 Tips, each before a different one of its Exercises.
 - Word tiles can build every Accepted Answer; a conjugation sentence has exactly one gap; a conjugation table has a form for every person.
+- The book's own kinds: a `fill_gaps` text has 1 to 4 gaps, each exactly `___`, an answer list for each, none blank, and no note twice; a `match_pairs` has at least 2 pairs, no Polish twice; a `true_false` has text and statements; an `order_lines` has at least 2 lines, none twice.
+- A Tip has a conjugation or a grammar table, not both. A grammar table has columns and rows, every row a cell per column, no blank cell, a bracketed ending only round part of a word, and a case or a header on every row or none.
 - Each of the real words listed for Sound gaps in the practice file is one word, listed once.
 - A gender in the practice file is "m", "f" or "n", is given to a defined Item of one word, and every gender given has a word for "my", itself a defined Item.
 - A picture names an Item that is defined, has an image or a glyph and not both, and no Item has two pictures.
@@ -59,7 +61,8 @@ The rules are in two tiers. **Loading rules** are what the course engine needs i
 - **A title.** A Daily Set has at least one Tip: the title of its first Tip is its title on the Path.
 - **Items.** Every Exercise lists at least one Item, and every Item is practised by at least 2 Exercises (`MIN_EXERCISES_PER_ITEM`), so Review has something to vary.
 - **Choices.** A `choose_translation` Exercise has at least 2 options, and no two read the same.
-- **Base Language.** Everything the Learner reads in the Base Language has English text that is not blank: Level and Unit titles, Tip titles and bodies, the meaning in a conjugation table, the options of `choose_translation`, the prompt of `type_answer` and `word_tiles`, the `meaning` and `sentenceMeaning` of `conjugation`, the `meaning` of `listen_choose` and `listen_type`, and the `meaning` of an Item. (`BASE_LANGUAGES` lists the languages required.)
+- **The book's kinds.** A `match_pairs` has 4 to 6 pairs and no meaning twice; a `true_false` has 3 to 5 statements, at least one true and one false; an `order_lines` has 3 to 6 lines. A grammar table has a title, every column a header or a gender, and every row headed alike. A callout (`uwaga`, `zapamietaj`) has no table.
+- **Base Language.** Everything the Learner reads in the Base Language has English text that is not blank: Level and Unit titles, Tip titles and bodies, the meaning in a conjugation table, the options of `choose_translation`, the prompt of `type_answer` and `word_tiles`, the `meaning` and `sentenceMeaning` of `conjugation`, the `meaning` of `listen_choose` and `listen_type`, the `meaning` of `fill_gaps`, of each `match_pairs` pair, of a `true_false` and its statements, the `prompt` of `order_lines`, a grammar table's title, and the `meaning` of an Item. (`BASE_LANGUAGES` lists the languages required.)
 - **Audio.** Every Polish text the app can speak has a Clip, every Clip has its `.ogg` file beside the manifest, every Clip says something the course speaks, and no other file sits beside the manifest.
 - **Pictures.** Every picture's image file is beside the list of pictures, no other file sits there, and no two Items of one Unit have the same picture.
 - **Belonging.** Every `.json` file under `content/` is listed by `course.json`. A Level has Units and a Unit has Daily Sets. A Unit's id starts with its Level's id and a hyphen, a Daily Set's with its Unit's, and an Exercise's or Tip's with its Daily Set's (`a1` → `a1-u01` → `a1-u01-d05` → `a1-u01-d05-e03`).

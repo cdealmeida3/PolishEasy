@@ -64,6 +64,7 @@ internal fun SettingsScreen(
     onOneADay: (Boolean) -> Unit = {},
     classAudio: ClassAudioView = ClassAudioView(0, 0, 0),
     onClassAudio: () -> Unit = {},
+    onGrammar: () -> Unit = {},
 ) {
     val context = LocalContext.current
     // Whether the Learner refused the permission here, so the screen can say why the switch stayed off.
@@ -133,6 +134,13 @@ internal fun SettingsScreen(
                     label = stringResource(R.string.settings_class_audio),
                     note = stringResource(R.string.settings_class_audio_note, classAudio.imported, classAudio.total),
                     onClick = onClassAudio,
+                )
+                SettingDivider()
+                LinkSetting(
+                    icon = R.drawable.ic_edit_note,
+                    label = stringResource(R.string.grammar_title),
+                    note = stringResource(R.string.settings_grammar_note),
+                    onClick = onGrammar,
                 )
             }
             Spacer(Modifier.height(Space.m))

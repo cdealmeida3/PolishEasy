@@ -346,7 +346,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
     }
     exercises.forEach { (file, placed) ->
         val (dailySet, exercise) = placed
-        if (content.clipsComplete && (exercise is ListenChoose || exercise is ListenType)) {
+        if (content.clipsComplete && (exercise is ListenChoose || exercise is ListenType || (exercise is TrueFalse && exercise.listen))) {
             spoken(exercise).filter { course.clipFor(it) == null }.forEach { text ->
                 problems += ContentProblem(
                     file,
@@ -404,9 +404,10 @@ private fun dailySetProblems(file: String, dailySet: DailySet): List<ContentProb
         }
     }
     dailySet.tips.forEach { tip ->
-        tip.conjugation?.let(::tableProblem)?.let { problem ->
-            problems += ContentProblem(file, tip.id, "Daily Set ${dailySet.id}: Tip ${tip.id} $problem")
-        }
+        val problem = tip.conjugation?.let(::tableProblem)
+            ?: tip.table?.let(::grammarTableProblem)
+            ?: if (tip.conjugation != null && tip.table != null) "has both a conjugation table and a grammar table; give one" else null
+        problem?.let { problems += ContentProblem(file, tip.id, "Daily Set ${dailySet.id}: Tip ${tip.id} $it") }
     }
     return problems
 }
@@ -463,6 +464,47 @@ private fun exerciseProblem(exercise: Exercise): String? = when (exercise) {
     }
     is ListenType -> typedAnswersProblem(exercise.acceptedAnswers)
         ?: if (exercise.readingAnswers.any { normalizeAnswer(it).isEmpty() }) "has a blank reading answer" else null
+    is FillGaps -> {
+        val parts = gapParts(exercise.text)
+        val gaps = (parts?.size ?: 1) - 1
+        val notes = (exercise.gaps.mapNotNull { it.firstOrNull() } + exercise.distractors).map(::normalizeAnswer)
+        when {
+            parts == null -> "has the text \"${exercise.text}\", with a run of underscores that is not a gap written as $GAP"
+            gaps !in 1..MAX_GAPS -> "has $gaps gaps; it must have 1 to $MAX_GAPS"
+            exercise.gaps.size != gaps -> "has $gaps gaps in its text and answers for ${exercise.gaps.size}"
+            words(parts.joinToString(" ")).isEmpty() -> "has no words apart from its gaps"
+            else -> exercise.gaps.firstNotNullOfOrNull(::typedAnswersProblem)
+                ?: when {
+                    exercise.distractors.any { normalizeAnswer(it).isEmpty() } -> "has a blank distractor"
+                    notes.repeated().isNotEmpty() -> "has more than one note that reads: ${notes.repeated().joinToString()}"
+                    else -> null
+                }
+        }
+    }
+    is MatchPairs -> {
+        val polish = exercise.pairs.map { normalizeAnswer(it.polish) }
+        when {
+            exercise.pairs.size < 2 -> "has fewer than two pairs, which leaves nothing to match"
+            polish.any { it.isEmpty() } -> "has a pair with no Polish"
+            polish.repeated().isNotEmpty() -> "has more than one pair that reads: ${polish.repeated().joinToString()}"
+            else -> null
+        }
+    }
+    is TrueFalse -> when {
+        exercise.lines.isEmpty() || exercise.lines.any { normalizeAnswer(it).isEmpty() } -> "has no text, or a blank line"
+        exercise.statements.isEmpty() -> "has no statements"
+        exercise.statements.any { normalizeAnswer(it.text).isEmpty() } -> "has a blank statement"
+        else -> null
+    }
+    is OrderLines -> {
+        val lines = exercise.lines.map(::normalizeAnswer)
+        when {
+            lines.size < 2 -> "has fewer than two lines, which leaves nothing to order"
+            lines.any { it.isEmpty() } -> "has a blank line"
+            lines.repeated().isNotEmpty() -> "has more than one line that reads: ${lines.repeated().joinToString()}"
+            else -> null
+        }
+    }
 }
 
 private fun typedAnswersProblem(acceptedAnswers: List<String>): String? = when {

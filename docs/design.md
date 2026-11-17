@@ -44,7 +44,7 @@ Two values are copied outside `ui/theme`, in `res/values/colors.xml`, for what A
 | `onPrimaryContainer` | `#410008` | `#FFDAD9` | |
 | `secondary` | `#5A4740` | `#D9C3B9` | Quiet controls |
 | `onSecondary` | `#FFFFFF` | `#2B1D17` | |
-| `secondaryContainer` | `#F7E6DB` | `#2B211E` | Word tiles, the Polish key row, the conjugation table |
+| `secondaryContainer` | `#F7E6DB` | `#2B211E` | Word tiles, the Polish key row, a grammar table |
 | `onSecondaryContainer` | `#2B1D17` | `#F2E0D8` | |
 | `tertiary` | `#E2570B` | `#FF8A3D` | The Streak flame (see below) |
 | `onTertiary` | `#FFFFFF` | `#3A1400` | |
@@ -95,6 +95,9 @@ Material has no role for these, so the theme adds them: a `PolishEasyColors` val
 | `streak` | `#E2570B` | `#FF8A3D` | The flame and the completed-day dots. Same value as `tertiary` |
 | `completed` | `#17733A` | `#3FA65C` | A completed stop on the Path and the trail walked so far. `success` in the light theme, one step quieter in the dark one |
 | `completedEdge` | `#0E5428` | `#2B7A42` | The bottom edge of a completed stop |
+| `note` | `#FFF1A6` | `#4A4015` | A sticky note of a fill-the-gaps Exercise, and a gap holding one |
+| `noteEdge` | `#D9B93A` | `#7A6A22` | A sticky note's bottom edge |
+| `onNote` | `#332800` | `#FFF1A6` | The word on a sticky note |
 
 ### Lesson colours
 
@@ -159,7 +162,7 @@ A 4 dp grid. Use only these steps: 4, 8, 12, 16, 24, 32, 48.
 | `extraSmall` | 8 | The Polish key row keys |
 | `small` | 12 | Word tiles, text fields |
 | `medium` | 16 | Buttons, option cards |
-| `large` | 20 | Cards, the conjugation table |
+| `large` | 20 | Cards, a grammar table, a callout |
 | `extraLarge` | 28 | The feedback panel's top corners, dialogs |
 | full | half the height | The progress bar, day dots, Path nodes |
 
@@ -200,7 +203,14 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`SentenceField`**: the sentence of a conjugation Exercise in `headlineMedium`, with the gap drawn as a slot the Learner types into: `secondaryContainer`, `small` corners, at least 96 wide, growing with what is typed, with a 2 dp border in `outline`, `primary` while it has focus. The meaning of the sentence is under it in `bodyLarge` in `onSurfaceVariant`. A conjugation Exercise with no sentence has the chip and an `AnswerField` at the bottom.
 - **`ProgressBar`**: 12 high, fully rounded, `brand` on `surfaceContainer`. In a Daily Set it counts steps, the Tips read and the Exercises answered correctly, so it moves the first time Continue is tapped on a Tip; a screen reader hears "3 of 9 steps done".
 - **`TipPoints`**: a Tip's prose in bites. Its first sentence is the lead, in `titleMedium`; each sentence after it is on a line of its own in `bodyLarge` behind an 8 `primary` dot, 12 apart. The content is not changed: the screen splits the body at its full stops. The Polish a Tip marks (`docs/authoring.md`) is set in Nunito ExtraBold in the text's own colour (`withPolish`), and a screen reader says it as Polish.
-- **`ConjugationTable`** rows end in a `SpeakerButton` when the form has a Clip.
+- **`GrammarTable`**: a table as the book draws one, for a Tip's verb or its endings. `secondaryContainer`, `large` corners, a 1 dp `outlineVariant` border, 16 padding; its title in `titleLarge`; the column heads in `labelLarge`, each with its gender as a `primaryContainer` pill holding the book's icon (a man, a woman, a child, a group, things) and *m*, *f*, *n*, *mo* or *nmo*; then a row for each case or person, at least 48 high, headed in `titleSmall` `primary` with its question (*kto? co?*) in `labelSmall` under it. The words are `titleMedium` on one line, a word too wide for its column at a large font size set smaller to fit, never split. **The ending is in a red box**, as the book prints it: `primary` letters in a 2 dp `primary` outline with 4 corners, a narrow space either side. A screen reader hears a row as one: "feminine, studentka". A table of one column, a verb's forms, ends each row in a `SpeakerButton` when the form has a Clip.
+- **`Callout`**: the book's *Uwaga!* (watch out) and *Zapamiętaj!* (remember) boxes, a Tip of its own kind. *Uwaga!* is `cautionContainer` with a `priority_high` icon, *Zapamiętaj!* is `tertiaryContainer` with a light bulb; the label in `titleLarge` in Polish, then the Tip's `TipPoints` in the container's own text colour. `large` corners, no border.
+- **`StickyNote`**: a word to put in a gap, on a `note` card with `small` corners and a `noteEdge` bottom edge like a tile's, tipped 1.5 degrees one way, the next the other way, in `titleMedium` `onNote`, at least 48 high. A used note stays where it was, faded to 70%, and cannot be tapped, so the notes never shift; a screen reader hears "used".
+- **`GapText`**: a fill-the-gaps text in `headlineSmall`, flowing like a sentence, with each gap a slot at least 72 wide with `small` corners: its number when empty, the selected one with a doubled `primary` border, a filled one the note's colours with its word. Tapping a filled gap gives the note back. Once checked, a gap is `successContainer` with a tick or `cautionContainer` with a cross.
+- **`MatchBoard`**: the two columns of a match-the-pairs Exercise, the Polish on the left and the meanings mixed on the right, as `PairCard`s 56 high and 8 apart in `titleSmall`, 32 between the columns. The word tapped first is `primaryContainer` with a `primary` border, and its Clip plays. A right pair turns `successContainer` with a `success` border and is joined by a 4 dp round-capped `success` line from one card to the other, so the board ends as the book's lines between the columns. A wrong meaning shakes and the word stays chosen. The Exercise is answered when the last pair joins: right with no wrong meaning tapped, else wrong, and it comes back later.
+- **`StatementRow`**: a true-or-false statement on `surfaceContainerLowest` with `medium` corners and a hairline `outlineVariant` border: its number in `titleMedium` `primary`, the Polish in `titleMedium`, its meaning in `bodySmall` under it, and two 40 round chips, P and N, 48 to a finger. The chosen chip is filled; once checked it is `success` or `caution`.
+- **`DialogueLine`**: a line of a dialogue to put in order. Not yet placed: an outlined card. Placed: `surfaceContainerHigh` with its number in a small `primary` circle; tapping it takes it back. Once checked, each line is `successContainer` with a tick or amber with a cross.
+- **`ReadingText`**: a short text to read, a line to each turn in `titleMedium`, on `surfaceContainerHigh` with `large` corners, a `SpeakerButton` on each line that can be heard.
 - **`PlayButton`**: 72 across in `brand` with the speaker icon in `onBrand`, for listening Exercises. A circle at rest and a rounded square with `large` corners while a Clip plays. **`SpeakerButton`**, the small speaker beside Polish text, is a 40 circle in `primaryContainer` with the icon in `onPrimaryContainer`, inside a 48 touch area, so it reads as a button; it grows with the font size. On the feedback panel it has no field and takes the panel's accent.
 - **`TopBar`**: Path and Settings have a `headlineSmall` title, and the Path a `bodyLarge` line under it in `onSurfaceVariant`. Home has a greeting in its place (see Home). Inside a Daily Set it is the close button and the progress bar only.
 - **`NavigationFrame`**, the navigation bar: Home, Path, Settings, with icons and `labelSmall` labels, on `surfaceContainer`. The selected one has a `primaryContainer` pill behind a `primary` icon and its label in `onSurface`; the others are `onSurfaceVariant`. Hidden inside a Daily Set and on the Summary. Back from the Path or Settings goes to Home. Moving between tabs is a fade-through; the pill moves as Material's own navigation bar moves it.
@@ -296,6 +306,7 @@ A chapter, laid out like its opening page in the book, from the top:
 - **"Sections"**: the chapter's sections as the trail of `TrailStop`s, each titled with its letter and the book's heading ("B · Liczebniki 20–100") and the English under it, ending in a `TrailMilestone`. A Starter Unit's Daily Sets are titled by their first Tip, as before.
 - **"Słuchaj"**: the chapter's class recordings, under "Część A", "Część B" … (with the section's heading once the chapter has it; "Nagrania" in chapter 0, whose recordings have no letter), a `RecordingRow` each, and "3 of 3 recordings on this phone". With none on the phone, a `Point`, "Add the class recordings", and a `TonalButton`, "Add them", which opens Class audio.
 - **"Powtórzenie"**: the three `ToolTile`s, Słownik, Fiszki and Test, open whatever has been completed.
+- **Komentarze gramatyczne**: under them, when the chapter has a grammar table, a `LinkSetting`, "1 of 2 grammar tables of this chapter", to the chapter's own Grammar shelf.
 - A chapter still being written has, in place of its sections and Powtórzenie, a `Point`: "This lesson is on its way", and then its Słuchaj, since the recordings are there before the sections are.
 
 ## A recording
@@ -324,13 +335,17 @@ Settings is quiet: five `SettingsCard`s, 16 apart, and nothing that moves.
 - **The Reminder**: its switch, and when it is on, its time. If Android will not show notifications, a `SettingNotice` between them says so and opens Android's settings.
 - **Sound**: one switch.
 - **One new Daily Set a day**: one switch, off by default, with "Off: learn at your own pace, as many as you like. On: the next one opens tomorrow." It takes effect at once.
-- **Class audio**: a `LinkSetting`, "28 of 271 recordings of Polski krok po kroku 1 on this phone", to its screen.
+- **Class audio**: a `LinkSetting`, "28 of 271 recordings of Polski krok po kroku 1 on this phone", to its screen; under it, in the same card, *Komentarze gramatyczne*, to the whole Grammar shelf.
 - **Report a mistake**: a `LinkSetting` to the email app.
 - **The version**, 24 below the last card.
 
 ### Class audio
 
 Opened from Settings or from a chapter's "Add them", in a `DetailFrame`: "Class audio" and what the recordings are and that they stay on the phone in a `CardNote`; a `StatRow`, "28 of 271 · recordings on this phone" and "2.4 MB · of room they take"; what the last import did as a `RoundNote` ("Added 25 recordings.") and, if some files were not the book's, a `CardNote`; a `Point` on how to add them; and "Remove the recordings", a `QuietButton` that asks first. At the bottom, "Add the class zips" (`PrimaryButton`, Android's picker with several files at once) and "Add a folder" (`SecondaryButton`). While files are read the main button says "Adding the recordings…".
+
+### Komentarze gramatyczne
+
+The Grammar shelf, the book's grammar commentary (ADR-0013), in a `DetailFrame`. Opened from Settings: "Komentarze gramatyczne" as the `TopBar` with "The grammar tables of the sections you have done, by chapter.", then each chapter with a table so far under a `SectionHeading`, "Lekcja 0 · Dzień dobry!". Opened from a chapter: its `LessonBanner` with *Komentarze gramatyczne* as the title. Each table is its Tip again, in a `ContentCard`: the title, the `TipPoints` and the `GrammarTable`. A chapter with tables still to come says how many in a `CardNote`; with none yet, a `CardNote` says they come as sections are done.
 
 ## Practice
 
@@ -385,6 +400,8 @@ Motion says what just happened. It never makes the Learner wait: every tap is ac
 | Progress bar | A spring to the new value, with a little bounce |
 | The right option, a tick appearing | Scales from 0.8 to 1 with a little bounce, 200 ms |
 | The wrong option | One short side-to-side shake of 8 dp, 250 ms |
+| A wrong meaning on the `MatchBoard` | The same 8 dp shake, each time it is tapped |
+| A right pair on the `MatchBoard` | The line between the cards is drawn as they turn green |
 | The play button while a Clip plays | Its corners go from a circle to a rounded square in 200 ms, and back when the Clip ends |
 | Summary | The cheer stands for 500 ms, then confetti falls once for about 2 seconds |
 | The Streak going up, on the Summary and then once on Home | After the same 500 ms: the old number rolls up and out, the new one rolls in from below, 350 ms; on the Summary the flame scales once from 1.35 back to 1 |
@@ -404,6 +421,7 @@ Rules:
 
 - Felt once, as the feedback panel appears. Right answer, with or without an accent warning: `CONFIRM`. Wrong answer: `REJECT`. On Android versions without those (below 11): `KEYBOARD_TAP` for right and `LONG_PRESS` for wrong.
 - Placing a word tile: `CLOCK_TICK`.
+- Each pair on the `MatchBoard`: right or wrong, as for an answer, since the pairs answer one by one.
 - Finishing a Daily Set: `CONFIRM` once as the Summary appears (`KEYBOARD_TAP` below Android 11).
 - Nothing else vibrates.
 

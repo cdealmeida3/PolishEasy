@@ -18,6 +18,8 @@ import com.polisheasy.app.R
 import com.polisheasy.app.ui.components.ChipRow
 import com.polisheasy.app.ui.components.DetailFrame
 import com.polisheasy.app.ui.components.LessonBanner
+import com.polisheasy.app.ui.components.LinkSetting
+import com.polisheasy.app.ui.components.SettingsCard
 import com.polisheasy.app.ui.components.Point
 import com.polisheasy.app.ui.components.RecordingRow
 import com.polisheasy.app.ui.components.SectionHeading
@@ -73,6 +75,7 @@ internal fun LessonScreen(
     listen: ListenView? = null,
     onRecording: (Int) -> Unit = {},
     onClassAudio: () -> Unit = {},
+    onGrammar: () -> Unit = {},
 ) {
     // The section chosen while another Daily Set is in progress, waiting for the Learner to say it may replace it.
     var replacing by rememberSaveable { mutableStateOf<String?>(null) }
@@ -189,6 +192,18 @@ internal fun LessonScreen(
                 sealed = lesson.checkpoint.sealed,
                 sealedLabel = stringResource(R.string.lesson_sealed),
             )
+        }
+        // The book's Komentarze gramatyczne: the chapter's tables, kept once their section is done.
+        if (lesson.grammarTotal > 0) {
+            Spacer(Modifier.height(Space.s))
+            SettingsCard {
+                LinkSetting(
+                    icon = R.drawable.ic_edit_note,
+                    label = stringResource(R.string.grammar_title),
+                    note = stringResource(R.string.lesson_grammar_note, lesson.grammarDone, lesson.grammarTotal),
+                    onClick = onGrammar,
+                )
+            }
         }
     }
     replacing?.let { id ->

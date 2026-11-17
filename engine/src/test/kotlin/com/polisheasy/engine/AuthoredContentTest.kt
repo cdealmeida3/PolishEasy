@@ -26,6 +26,7 @@ class AuthoredContentTest {
                 Answer.Option(options.indexOf(exercise.text))
             }
             is ListenType -> Answer.Typed(exercise.acceptedAnswers.first())
+            else -> bookRight(exercise)
         }
 
     /**
@@ -226,12 +227,12 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(4) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
             listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7) + listOf(7, 7, 6, 7, 6, 6, 6, 6) +
-                listOf(8, 8, 8, 3),
+                listOf(8, 8, 8, 3, 0),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -254,7 +255,7 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `the book's Level has chapters 0 to 26 with their Polish titles, and chapter 0 has four sections`() {
+    fun `the book's Level has chapters 0 to 26 with their Polish titles, and chapter 0 has five sections`() {
         val shelves = CourseEngine(course, InMemoryLearnerProgress(), FakeClock()).shelves()
 
         assertEquals(listOf("a1", "kpk1"), shelves.map { it.id })
@@ -263,7 +264,7 @@ class AuthoredContentTest {
         assertEquals("Dzień dobry!", book[0].title)
         assertEquals("Pierwszy dzień w szkole", book[1].title)
         assertEquals("The first day at school", book[1].subtitle)
-        assertEquals(4, book[0].sections)
+        assertEquals(5, book[0].sections)
         assertTrue(book.drop(1).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
@@ -380,10 +381,12 @@ class AuthoredContentTest {
     fun `every word a Learner must read, hear or build comes from an Item its Exercise lists, and every listed Item is there in full`() {
         allExercises.forEach { exercise ->
             // What the Learner is shown, hears, or has to produce: for typing and tiles, the first Accepted Answer.
-            val shown = lowerCaseWords(spoken(exercise).first())
+            // A text or a dialogue is read whole, so every word of it counts, but it may hold words, such as names, that no Item has.
+            val text = exercise is TrueFalse || exercise is OrderLines
+            val shown = if (text || exercise is MatchPairs) spoken(exercise).flatMap(::lowerCaseWords).toSet() else lowerCaseWords(spoken(exercise).first())
             val listed = exercise.items.map { lowerCaseWords(course.itemsById.getValue(it).text) }
 
-            assertEquals(emptySet(), shown - listed.flatten().toSet(), "Words of Exercise ${exercise.id} that none of its Items has")
+            if (!text) assertEquals(emptySet(), shown - listed.flatten().toSet(), "Words of Exercise ${exercise.id} that none of its Items has")
             exercise.items.zip(listed).forEach { (id, itemWords) ->
                 assertEquals(emptySet(), itemWords - shown, "Words of Item $id that Exercise ${exercise.id} does not use")
             }
@@ -413,12 +416,12 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `every Daily Set mixes at least 4 types of Exercise, and the course uses all 6`() {
+    fun `every Daily Set mixes at least 4 types of Exercise, and the course uses all 10`() {
         course.path.forEach { dailySet ->
             val types = dailySet.exercises.map { it::class }.distinct()
             assertTrue(types.size >= 4, "Daily Set ${dailySet.id} has only ${types.size} types of Exercise")
         }
-        assertEquals(6, allExercises.map { it::class }.distinct().size)
+        assertEquals(10, allExercises.map { it::class }.distinct().size)
     }
 
     @Test

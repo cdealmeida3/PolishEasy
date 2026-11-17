@@ -153,6 +153,22 @@ enum class InstructionKind {
 
     @SerialName("choose_polish")
     CHOOSE_POLISH,
+
+    @SerialName("fill_gaps")
+    FILL_GAPS,
+
+    @SerialName("match_pairs")
+    MATCH_PAIRS,
+
+    @SerialName("true_false")
+    TRUE_FALSE,
+
+    /** A true-or-false Exercise whose text is heard. */
+    @SerialName("listen_true_false")
+    LISTEN_TRUE_FALSE,
+
+    @SerialName("order_lines")
+    ORDER_LINES,
 }
 
 /** Shown once, just before the Exercise whose id is [before]. */
@@ -162,8 +178,12 @@ data class Tip(
     val before: String,
     val title: Localized,
     val body: Localized,
-    /** Optional: a verb's forms, shown under the body. */
+    /** Optional: a verb's forms, shown under the body as a table. The Verb challenge reads them. */
     val conjugation: ConjugationTable? = null,
+    /** A plain note, or one of the book's callouts. */
+    val kind: TipKind = TipKind.NOTE,
+    /** Optional: a grammar table, shown under the body. A Tip with a table of either kind is kept on the Grammar shelf. */
+    val table: GrammarTable? = null,
 )
 
 @Serializable

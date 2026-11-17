@@ -41,6 +41,36 @@
       "meaning": {
         "en": "Choose the answer in Polish."
       }
+    },
+    "fill_gaps": {
+      "polish": "Proszę uzupełnić.",
+      "meaning": {
+        "en": "Fill in the gaps."
+      }
+    },
+    "match_pairs": {
+      "polish": "Proszę połączyć.",
+      "meaning": {
+        "en": "Match them up."
+      }
+    },
+    "true_false": {
+      "polish": "Prawda czy nieprawda?",
+      "meaning": {
+        "en": "True or false?"
+      }
+    },
+    "listen_true_false": {
+      "polish": "Proszę posłuchać. Prawda czy nieprawda?",
+      "meaning": {
+        "en": "Listen. True or false?"
+      }
+    },
+    "order_lines": {
+      "polish": "Proszę ułożyć dialog.",
+      "meaning": {
+        "en": "Put the dialogue in order."
+      }
     }
   }
 }

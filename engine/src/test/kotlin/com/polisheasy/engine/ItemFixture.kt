@@ -72,6 +72,10 @@ private val Step.ShowExercise.prompt: String
         is ExerciseView.ListenChoose -> view.audio.path
         is ExerciseView.ListenType -> view.audio.path
         is ExerciseView.ChoosePolish -> view.prompt
+        is ExerciseView.FillGaps -> view.meaning
+        is ExerciseView.MatchPairs -> view.left.joinToString()
+        is ExerciseView.TrueFalse -> view.meaning
+        is ExerciseView.OrderLines -> view.prompt
     }
 
 /** Whether this Step belongs to a Replay. */
@@ -165,6 +169,25 @@ class ItemLearner(
                 Answer.Option(options.indexOf(if (correct) exercise.text else exercise.distractors.first()))
             }
             is ListenType -> Answer.Typed(if (correct) exercise.acceptedAnswers.first() else "wrong")
+            else -> if (correct) bookRight(exercise) else bookWrong(bookRight(exercise))
         }
     }
+}
+
+/** The right answer to one of the book's Exercises: fill the gaps, match the pairs, true or false, order the lines. */
+fun bookRight(exercise: Exercise): Answer = when (exercise) {
+    is FillGaps -> Answer.Gaps(exercise.gaps.map { it.first() })
+    is MatchPairs -> Answer.Pairs(wrong = 0)
+    is TrueFalse -> Answer.Marks(exercise.statements.map { it.`true` })
+    is OrderLines -> Answer.Order(exercise.lines)
+    else -> error("${exercise.id} is not one of the book's Exercises")
+}
+
+/** A wrong answer of the same kind as [right], one of the book's Exercises. */
+fun bookWrong(right: Answer): Answer = when (right) {
+    is Answer.Gaps -> Answer.Gaps(right.words.map { "xyz" })
+    is Answer.Pairs -> Answer.Pairs(wrong = 1)
+    is Answer.Marks -> Answer.Marks(right.values.map { !it })
+    is Answer.Order -> Answer.Order(right.lines.reversed())
+    else -> error("$right is not an answer to one of the book's Exercises")
 }

@@ -13,6 +13,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.polisheasy.engine.ClassAudio
 import com.polisheasy.engine.ClassAudioView
+import com.polisheasy.engine.GrammarChapterView
 import com.polisheasy.engine.ImportResult
 import com.polisheasy.engine.ListenView
 import com.polisheasy.engine.ListeningAnswer
@@ -127,6 +128,13 @@ sealed interface Screen {
         val failed: Boolean = false,
         val from: String? = null,
     ) : Screen
+
+    /**
+     * The Grammar shelf, the book's *Komentarze gramatyczne*: the tables of the sections completed,
+     * by chapter. [from] is the chapter whose Lesson screen opened it, which it then shows alone;
+     * else Settings opened it, and it shows every chapter. [sound] is whether forms may be heard.
+     */
+    data class Grammar(val chapters: List<GrammarChapterView>, val from: String? = null, val sound: Boolean = true) : Screen
 
     /** A class recording in the player, from a chapter's Słuchaj, with its listening tasks and those already [answered]. */
     data class Listen(
@@ -350,6 +358,18 @@ class CourseViewModel(
         is Screen.Listen -> current.lesson.unitId
         is Screen.ClassAudio -> current.from
         else -> null
+    }
+
+    /** The Grammar shelf, of the chapter whose Lesson screen is showing, or of every chapter from Settings. */
+    fun openGrammar() {
+        val from = (screen as? Screen.Lesson)?.lesson?.unitId
+        screen = Screen.Grammar(engine.grammar(from), from = from, sound = soundOn)
+    }
+
+    /** Back from the Grammar shelf, to where it was opened from. */
+    fun leaveGrammar() {
+        val from = (screen as? Screen.Grammar)?.from
+        if (from != null) openLesson(from) else openSettings()
     }
 
     /** Class audio, from Settings or from a chapter's Słuchaj. */

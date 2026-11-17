@@ -5,6 +5,10 @@ import com.polisheasy.engine.ChooseTranslation
 import com.polisheasy.engine.Conjugation
 import com.polisheasy.engine.Course
 import com.polisheasy.engine.ExerciseView
+import com.polisheasy.engine.FillGaps
+import com.polisheasy.engine.MatchPairs
+import com.polisheasy.engine.OrderLines
+import com.polisheasy.engine.TrueFalse
 import com.polisheasy.engine.ListenChoose
 import com.polisheasy.engine.ListenType
 import com.polisheasy.engine.TypeAnswer
@@ -24,6 +28,10 @@ fun rightAnswer(course: Course, exerciseId: String, view: ExerciseView): Answer 
         }.indexOf(exercise.text),
     )
     is ListenType -> Answer.Typed(exercise.acceptedAnswers.first())
+    is FillGaps -> Answer.Gaps(exercise.gaps.map { it.first() })
+    is MatchPairs -> Answer.Pairs(wrong = 0)
+    is TrueFalse -> Answer.Marks(exercise.statements.map { it.`true` })
+    is OrderLines -> Answer.Order(exercise.lines)
 }
 
 /** An answer of the same kind as [right] that is wrong. */
@@ -31,4 +39,8 @@ fun wrongAnswer(right: Answer): Answer = when (right) {
     is Answer.Option -> Answer.Option(if (right.index == 0) 1 else 0)
     is Answer.Typed -> Answer.Typed("xyz")
     is Answer.Tiles -> Answer.Tiles(listOf("xyz"))
+    is Answer.Gaps -> Answer.Gaps(right.words.map { "xyz" })
+    is Answer.Pairs -> Answer.Pairs(wrong = 1)
+    is Answer.Marks -> Answer.Marks(right.values.map { !it })
+    is Answer.Order -> Answer.Order(right.lines.reversed())
 }
