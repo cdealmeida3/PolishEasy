@@ -31,6 +31,18 @@
     {
       "problem": "review: kpk1-l04-c4-t01",
       "reason": "False alarm. ZAPAMIETAJ is not in the Tip: the review text names the Tip's kind (a Zapamiętaj! callout) with the engine's enum name, which has no Polish letters. The Tip's own Polish had no finding."
+    },
+    {
+      "problem": "dictionary: dzieści",
+      "reason": "Not a word and not meant as one. Chapter 5's Tip on the tens names the endings -dzieści (trzydzieści, czterdzieści) and -dziesiąt (pięćdziesiąt and up); the dictionary pass reads each ending as a word."
+    },
+    {
+      "problem": "dictionary: dziesiąt",
+      "reason": "Not a word and not meant as one. Chapter 5's Tip on the tens names the endings -dzieści (trzydzieści, czterdzieści) and -dziesiąt (pięćdziesiąt and up); the dictionary pass reads each ending as a word."
+    },
+    {
+      "problem": "dictionary: ować",
+      "reason": "Not a word and not meant as one. Chapter 5's Tip on pracować says the verb drops -ować and adds -uj- before the endings; the dictionary pass reads the ending as a word."
     }
   ]
 }

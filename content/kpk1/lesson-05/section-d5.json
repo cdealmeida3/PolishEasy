@@ -1,0 +1,417 @@
+{
+  "id": "kpk1-l05-d5",
+  "section": {
+    "letter": "D",
+    "heading": "Kim ona jest?",
+    "meaning": {
+      "en": "Who is she? What does she do?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-d5-t01",
+      "before": "kpk1-l05-d5-e01",
+      "title": {
+        "en": "Co czytasz?"
+      },
+      "body": {
+        "en": "*Czytać* goes like *mieszkać*: *czytam*, *czytasz*, *czyta*. A noun in *-o* takes *-em* in the instrumental: *kino*, *kinem*; *malarstwo*, *malarstwem*. *Pisarz* and *malarz* are jobs, so after *jest* they add *-em*: *on jest pisarzem i malarzem*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d5-e01",
+      "prompt": "czytasz",
+      "options": [
+        {
+          "en": "you write (one friend)"
+        },
+        {
+          "en": "you read, you are reading (one friend)"
+        },
+        {
+          "en": "you have (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czytac-czytasz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-d5-e02",
+      "text": "co czytasz?",
+      "meaning": {
+        "en": "what are you reading? (one friend)"
+      },
+      "distractors": [
+        "co robisz?",
+        "co lubisz?"
+      ],
+      "items": [
+        "co",
+        "czytac-czytasz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d5-e03",
+      "prompt": "pisarz",
+      "options": [
+        {
+          "en": "a painter (a man)"
+        },
+        {
+          "en": "a journalist (a man)"
+        },
+        {
+          "en": "a writer (a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pisarz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d5-e04",
+      "prompt": "malarz",
+      "options": [
+        {
+          "en": "a painter (a man)"
+        },
+        {
+          "en": "a writer (a man)"
+        },
+        {
+          "en": "a photographer (a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "malarz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-d5-e05",
+      "prompt": {
+        "en": "he is a writer and a painter"
+      },
+      "acceptedAnswers": [
+        "on jest pisarzem i malarzem"
+      ],
+      "distractors": [
+        "pisarz",
+        "malarz"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "pisarz",
+        "i",
+        "malarz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d5-e06",
+      "prompt": "malarstwem",
+      "options": [
+        {
+          "en": "literature (after interesuję się: interesuję się literaturą)"
+        },
+        {
+          "en": "painting, art (after interesuję się: interesuję się malarstwem)"
+        },
+        {
+          "en": "photography (after interesuję się: interesuję się fotografią)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "malarstwem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d5-e07",
+      "prompt": "literaturą",
+      "options": [
+        {
+          "en": "painting, art (after interesuję się: interesuję się malarstwem)"
+        },
+        {
+          "en": "history (after interesuję się: interesuję się historią)"
+        },
+        {
+          "en": "literature (after interesuję się: interesuję się literaturą)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "literatura-instr"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-d5-e08",
+      "text": "Interesuję się ___ i literaturą.",
+      "meaning": {
+        "en": "I am interested in painting and literature."
+      },
+      "gaps": [
+        [
+          "malarstwem"
+        ]
+      ],
+      "distractors": [
+        "malarstwo",
+        "muzyka"
+      ],
+      "items": [
+        "interesowac-sie-interesuje",
+        "malarstwem",
+        "i",
+        "literatura-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d5-e09",
+      "prompt": "polityką",
+      "options": [
+        {
+          "en": "politics (after interesuję się: interesuję się polityką)"
+        },
+        {
+          "en": "history (after interesuję się: interesuję się historią)"
+        },
+        {
+          "en": "fashion (after interesuję się: interesuję się modą)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "polityka-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d5-e10",
+      "prompt": "kinem",
+      "options": [
+        {
+          "en": "music (after interesuję się: interesuję się muzyką)"
+        },
+        {
+          "en": "cinema, films (after interesuję się: interesuję się kinem)"
+        },
+        {
+          "en": "theatre (after interesuję się)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kinem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d5-e11",
+      "prompt": "modą",
+      "options": [
+        {
+          "en": "politics (after interesuję się: interesuję się polityką)"
+        },
+        {
+          "en": "sport (after interesuję się: interesuję się sportem)"
+        },
+        {
+          "en": "fashion (after interesuję się: interesuję się modą)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "moda-instr"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-d5-e12",
+      "acceptedAnswers": [
+        "ona interesuje się modą"
+      ],
+      "meaning": {
+        "en": "she is interested in fashion"
+      },
+      "items": [
+        "ona",
+        "interesowac-sie-interesuje-on",
+        "moda-instr"
+      ],
+      "readingAnswers": [
+        "interesuje się modą"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-d5-e13",
+      "prompt": {
+        "en": "he is interested in politics"
+      },
+      "acceptedAnswers": [
+        "on interesuje się polityką",
+        "interesuje się polityką"
+      ],
+      "items": [
+        "on",
+        "interesowac-sie-interesuje-on",
+        "polityka-instr"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-d5-e14",
+      "text": "interesujesz się kinem?",
+      "meaning": {
+        "en": "are you interested in cinema? (one friend)"
+      },
+      "distractors": [
+        "interesujesz się modą?",
+        "interesujesz się sportem?"
+      ],
+      "items": [
+        "interesowac-sie-interesujesz",
+        "kinem"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-d5-e15",
+      "pairs": [
+        {
+          "polish": "malarstwem",
+          "meaning": {
+            "en": "painting"
+          }
+        },
+        {
+          "polish": "literaturą",
+          "meaning": {
+            "en": "literature"
+          }
+        },
+        {
+          "polish": "polityką",
+          "meaning": {
+            "en": "politics"
+          }
+        },
+        {
+          "polish": "kinem",
+          "meaning": {
+            "en": "cinema"
+          }
+        },
+        {
+          "polish": "modą",
+          "meaning": {
+            "en": "fashion"
+          }
+        },
+        {
+          "polish": "pisarz",
+          "meaning": {
+            "en": "a writer"
+          }
+        }
+      ],
+      "items": [
+        "malarstwem",
+        "literatura-instr",
+        "polityka-instr",
+        "kinem",
+        "moda-instr",
+        "pisarz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l05-d5-e16",
+      "lines": [
+        "Ewa, co czytasz?",
+        "To ciekawa książka.",
+        "Interesuję się literaturą i malarstwem.",
+        "A ja interesuję się kinem."
+      ],
+      "meaning": {
+        "en": "Two friends at a café."
+      },
+      "statements": [
+        {
+          "text": "Ewa czyta książkę.",
+          "meaning": {
+            "en": "Ewa is reading a book."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa interesuje się malarstwem.",
+          "meaning": {
+            "en": "Ewa is interested in painting."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa interesuje się polityką.",
+          "meaning": {
+            "en": "Ewa is interested in politics."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "ewa",
+        "co",
+        "czytac-czytasz",
+        "to",
+        "ciekawy",
+        "ksiazka",
+        "interesowac-sie-interesuje",
+        "literatura-instr",
+        "i",
+        "malarstwem",
+        "a",
+        "ja",
+        "kinem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-d5-e17",
+      "text": "mój kolega jest malarzem",
+      "meaning": {
+        "en": "my friend (a man) is a painter"
+      },
+      "distractors": [
+        "mój kolega jest pisarzem",
+        "mój kolega jest muzykiem"
+      ],
+      "items": [
+        "moj",
+        "kolega",
+        "byc-jest",
+        "malarz"
+      ]
+    }
+  ]
+}

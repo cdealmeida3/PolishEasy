@@ -1,0 +1,487 @@
+{
+  "id": "kpk1-l05-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Zawody",
+    "meaning": {
+      "en": "Jobs"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-c3-t01",
+      "before": "kpk1-l05-c3-e01",
+      "title": {
+        "en": "Rodzaj żeński: + ka"
+      },
+      "body": {
+        "en": "Most jobs add *-ka* for a woman: *kelner*, *kelnerka*; *aktor*, *aktorka*. Some change before it: *rz* becomes *r* (*lekarz*, *lekarka*), *k* becomes *cz* (*urzędnik*, *urzędniczka*), and a final *-a* goes (*dentysta*, *dentystka*). *Pan* or *pani prezydent* and *premier* stay the same."
+      },
+      "table": {
+        "title": {
+          "en": "+ ka"
+        },
+        "columns": [
+          {
+            "gender": "m"
+          },
+          {
+            "gender": "f"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "kelner",
+              "kelner[ka]"
+            ]
+          },
+          {
+            "cells": [
+              "lekar[z]",
+              "lekar[ka]"
+            ]
+          },
+          {
+            "cells": [
+              "urzędni[k]",
+              "urzędni[czka]"
+            ]
+          },
+          {
+            "cells": [
+              "dentyst[a]",
+              "dentyst[ka]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c3-e01",
+      "prompt": "lekarka",
+      "options": [
+        {
+          "en": "a doctor (a woman)"
+        },
+        {
+          "en": "a doctor (a man)"
+        },
+        {
+          "en": "a teacher (a woman)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lekarka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c3-e02",
+      "prompt": "aktorka",
+      "options": [
+        {
+          "en": "an actor"
+        },
+        {
+          "en": "an actress"
+        },
+        {
+          "en": "a dancer (a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "aktorka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-c3-e03",
+      "text": "to jest aktorka",
+      "meaning": {
+        "en": "this is an actress"
+      },
+      "distractors": [
+        "to jest aktor",
+        "to jest lektorka"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "aktorka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c3-e04",
+      "prompt": "kelnerka",
+      "options": [
+        {
+          "en": "a waiter"
+        },
+        {
+          "en": "a cook (a woman)"
+        },
+        {
+          "en": "a waitress"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kelnerka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-c3-e05",
+      "text": "Adam to kelner, a Ewa to ___.",
+      "meaning": {
+        "en": "Adam is a waiter, and Ewa is a waitress."
+      },
+      "gaps": [
+        [
+          "kelnerka"
+        ]
+      ],
+      "distractors": [
+        "kelner",
+        "lekarka"
+      ],
+      "items": [
+        "adam",
+        "to",
+        "kelner",
+        "a",
+        "ewa",
+        "kelnerka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c3-e06",
+      "prompt": "dziennikarka",
+      "options": [
+        {
+          "en": "a journalist (a woman)"
+        },
+        {
+          "en": "a journalist (a man)"
+        },
+        {
+          "en": "an actress"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dziennikarka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c3-e07",
+      "prompt": "tancerka",
+      "options": [
+        {
+          "en": "a dancer (a man)"
+        },
+        {
+          "en": "a dancer (a woman)"
+        },
+        {
+          "en": "a waitress"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "tancerka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-c3-e08",
+      "prompt": {
+        "en": "my friend (a woman) is a dancer"
+      },
+      "acceptedAnswers": [
+        "moja koleżanka to tancerka"
+      ],
+      "distractors": [
+        "tancerz",
+        "mój"
+      ],
+      "items": [
+        "moja",
+        "kolezanka",
+        "to",
+        "tancerka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c3-e09",
+      "prompt": "urzędniczka",
+      "options": [
+        {
+          "en": "an office worker, a clerk (a man)"
+        },
+        {
+          "en": "a journalist (a woman)"
+        },
+        {
+          "en": "an office worker, a clerk (a woman)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "urzedniczka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c3-e10",
+      "prompt": "informatyczka",
+      "options": [
+        {
+          "en": "an IT specialist (a woman)"
+        },
+        {
+          "en": "an IT specialist (a man)"
+        },
+        {
+          "en": "a doctor (a woman)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "informatyczka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c3-e11",
+      "prompt": "dentystka",
+      "options": [
+        {
+          "en": "a dentist (a man)"
+        },
+        {
+          "en": "a dentist (a woman)"
+        },
+        {
+          "en": "an office worker, a clerk (a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dentystka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-c3-e12",
+      "pairs": [
+        {
+          "polish": "lekarka",
+          "meaning": {
+            "en": "a doctor (a woman)"
+          }
+        },
+        {
+          "polish": "aktorka",
+          "meaning": {
+            "en": "an actress"
+          }
+        },
+        {
+          "polish": "kelnerka",
+          "meaning": {
+            "en": "a waitress"
+          }
+        },
+        {
+          "polish": "dziennikarka",
+          "meaning": {
+            "en": "a journalist (a woman)"
+          }
+        },
+        {
+          "polish": "tancerka",
+          "meaning": {
+            "en": "a dancer (a woman)"
+          }
+        },
+        {
+          "polish": "urzędniczka",
+          "meaning": {
+            "en": "a clerk (a woman)"
+          }
+        }
+      ],
+      "items": [
+        "lekarka",
+        "aktorka",
+        "kelnerka",
+        "dziennikarka",
+        "tancerka",
+        "urzedniczka"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-c3-e13",
+      "acceptedAnswers": [
+        "to jest moja dentystka"
+      ],
+      "meaning": {
+        "en": "this is my dentist (a woman)"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "moja",
+        "dentystka"
+      ],
+      "readingAnswers": [
+        "to moja dentystka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-c3-e14",
+      "prompt": {
+        "en": "Ewa is an IT specialist, and Adam is a clerk"
+      },
+      "acceptedAnswers": [
+        "Ewa to informatyczka, a Adam to urzędnik"
+      ],
+      "items": [
+        "ewa",
+        "to",
+        "informatyczka",
+        "a",
+        "adam",
+        "urzednik"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-c3-e15",
+      "text": "to jest urzędniczka",
+      "meaning": {
+        "en": "this is a clerk (a woman)"
+      },
+      "distractors": [
+        "to jest urzędnik",
+        "to jest dziennikarka"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "urzedniczka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-c3-e16",
+      "text": "To nie jest dentysta, to jest ___.",
+      "meaning": {
+        "en": "It isn't a dentist (a man), it's a dentist (a woman)."
+      },
+      "gaps": [
+        [
+          "dentystka"
+        ]
+      ],
+      "distractors": [
+        "dentysta",
+        "informatyczka"
+      ],
+      "items": [
+        "to-nie-jest",
+        "dentysta",
+        "to",
+        "byc-jest",
+        "dentystka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-c3-e17",
+      "prompt": {
+        "en": "is it an IT specialist (a woman)?"
+      },
+      "acceptedAnswers": [
+        "czy to jest informatyczka?",
+        "czy to informatyczka?"
+      ],
+      "distractors": [
+        "informatyk",
+        "kto"
+      ],
+      "items": [
+        "czy",
+        "to",
+        "byc-jest",
+        "informatyczka"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l05-c3-e18",
+      "lines": [
+        "To jest Ewa, moja koleżanka.",
+        "Ewa to lekarka, a jej koleżanka to dziennikarka.",
+        "Ewa lubi tańczyć tango."
+      ],
+      "meaning": {
+        "en": "Ola shows a photo of her friend."
+      },
+      "statements": [
+        {
+          "text": "Ewa to lekarka.",
+          "meaning": {
+            "en": "Ewa is a doctor."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa to dziennikarka.",
+          "meaning": {
+            "en": "Ewa is a journalist."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa lubi tańczyć.",
+          "meaning": {
+            "en": "Ewa likes dancing."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "ewa",
+        "moja",
+        "kolezanka",
+        "lekarka",
+        "a",
+        "jej",
+        "dziennikarka",
+        "lubic-lubi",
+        "tanczyc",
+        "tango"
+      ]
+    }
+  ]
+}

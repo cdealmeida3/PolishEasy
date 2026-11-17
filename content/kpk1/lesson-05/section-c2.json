@@ -1,0 +1,438 @@
+{
+  "id": "kpk1-l05-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Zawody",
+    "meaning": {
+      "en": "Jobs"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-c2-t01",
+      "before": "kpk1-l05-c2-e01",
+      "title": {
+        "en": "More jobs"
+      },
+      "body": {
+        "en": "*Dentysta* ends in *-a*, but it is a man: *ten dentysta*, like *kolega*. An *emeryt* is a man who no longer works because of his age."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c2-e01",
+      "prompt": "rolnik",
+      "options": [
+        {
+          "en": "a police officer (a man)"
+        },
+        {
+          "en": "a farmer (a man)"
+        },
+        {
+          "en": "a cook, a chef (a man)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "rolnik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c2-e02",
+      "prompt": "dziennikarz",
+      "options": [
+        {
+          "en": "a photographer (a man)"
+        },
+        {
+          "en": "an office worker, a clerk (a man)"
+        },
+        {
+          "en": "a journalist (a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dziennikarz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-c2-e03",
+      "text": "to jest dziennikarz",
+      "meaning": {
+        "en": "this is a journalist (a man)"
+      },
+      "distractors": [
+        "to jest fotograf",
+        "to jest rolnik"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "dziennikarz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c2-e04",
+      "prompt": "urzędnik",
+      "options": [
+        {
+          "en": "an office worker, a clerk (a man)"
+        },
+        {
+          "en": "a journalist (a man)"
+        },
+        {
+          "en": "a farmer (a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "urzednik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c2-e05",
+      "prompt": "fotograf",
+      "options": [
+        {
+          "en": "a dancer (a man)"
+        },
+        {
+          "en": "a photographer (a man)"
+        },
+        {
+          "en": "a journalist (a man)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "fotograf"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-c2-e06",
+      "prompt": {
+        "en": "is it a photographer?"
+      },
+      "acceptedAnswers": [
+        "czy to jest fotograf?",
+        "czy to fotograf?"
+      ],
+      "distractors": [
+        "kto",
+        "urzędnik"
+      ],
+      "items": [
+        "czy",
+        "to",
+        "byc-jest",
+        "fotograf"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c2-e07",
+      "prompt": "tancerz",
+      "options": [
+        {
+          "en": "a musician (a man)"
+        },
+        {
+          "en": "an actor"
+        },
+        {
+          "en": "a dancer (a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tancerz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-c2-e08",
+      "text": "Adam to tancerz",
+      "meaning": {
+        "en": "Adam is a dancer"
+      },
+      "distractors": [
+        "Adam to dentysta",
+        "Adam to aktor"
+      ],
+      "items": [
+        "adam",
+        "to",
+        "tancerz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c2-e09",
+      "prompt": "dentysta",
+      "options": [
+        {
+          "en": "a dentist (a man)"
+        },
+        {
+          "en": "a doctor (a man)"
+        },
+        {
+          "en": "an engineer"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dentysta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c2-e10",
+      "prompt": "inżynier",
+      "options": [
+        {
+          "en": "an IT specialist (a man)"
+        },
+        {
+          "en": "an engineer"
+        },
+        {
+          "en": "a dentist (a man)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "inzynier"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-c2-e11",
+      "prompt": "emeryt",
+      "options": [
+        {
+          "en": "a farmer (a man)"
+        },
+        {
+          "en": "a student (a man)"
+        },
+        {
+          "en": "a pensioner (a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "emeryt"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-c2-e12",
+      "text": "Pan Adam to ___. Ma osiemdziesiąt lat.",
+      "meaning": {
+        "en": "Mr Adam is a pensioner. He is eighty."
+      },
+      "gaps": [
+        [
+          "emeryt"
+        ]
+      ],
+      "distractors": [
+        "inżynier",
+        "student"
+      ],
+      "items": [
+        "pan",
+        "adam",
+        "to",
+        "emeryt",
+        "miec-ma",
+        "osiemdziesiat",
+        "lat"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-c2-e13",
+      "pairs": [
+        {
+          "polish": "rolnik",
+          "meaning": {
+            "en": "a farmer (a man)"
+          }
+        },
+        {
+          "polish": "dziennikarz",
+          "meaning": {
+            "en": "a journalist (a man)"
+          }
+        },
+        {
+          "polish": "urzędnik",
+          "meaning": {
+            "en": "a clerk (a man)"
+          }
+        },
+        {
+          "polish": "fotograf",
+          "meaning": {
+            "en": "a photographer (a man)"
+          }
+        },
+        {
+          "polish": "tancerz",
+          "meaning": {
+            "en": "a dancer (a man)"
+          }
+        },
+        {
+          "polish": "dentysta",
+          "meaning": {
+            "en": "a dentist (a man)"
+          }
+        }
+      ],
+      "items": [
+        "rolnik",
+        "dziennikarz",
+        "urzednik",
+        "fotograf",
+        "tancerz",
+        "dentysta"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-c2-e14",
+      "acceptedAnswers": [
+        "ten inżynier to emeryt"
+      ],
+      "meaning": {
+        "en": "this engineer is a pensioner"
+      },
+      "items": [
+        "ten",
+        "inzynier",
+        "to",
+        "emeryt"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-c2-e15",
+      "prompt": {
+        "en": "my brother is a dentist"
+      },
+      "acceptedAnswers": [
+        "mój brat to dentysta"
+      ],
+      "items": [
+        "moj",
+        "brat",
+        "to",
+        "dentysta"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l05-c2-e16",
+      "lines": [
+        "Kto to jest?",
+        "To jest Ewa i jej brat, Adam.",
+        "Adam to rolnik?",
+        "Nie, Adam to inżynier."
+      ],
+      "meaning": {
+        "en": "Two friends look at a photo."
+      },
+      "statements": [
+        {
+          "text": "To jest Adam.",
+          "meaning": {
+            "en": "This is Adam."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam to rolnik.",
+          "meaning": {
+            "en": "Adam is a farmer."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam to inżynier.",
+          "meaning": {
+            "en": "Adam is an engineer."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "kto-to-jest",
+        "to",
+        "byc-jest",
+        "ewa",
+        "i",
+        "jej",
+        "brat",
+        "adam",
+        "rolnik",
+        "nie",
+        "inzynier"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-c2-e17",
+      "prompt": {
+        "en": "it isn't a journalist, it's a photographer"
+      },
+      "acceptedAnswers": [
+        "to nie jest dziennikarz, to jest fotograf"
+      ],
+      "distractors": [
+        "urzędnik",
+        "tancerz"
+      ],
+      "items": [
+        "to-nie-jest",
+        "dziennikarz",
+        "to",
+        "byc-jest",
+        "fotograf"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-c2-e18",
+      "text": "czy to jest urzędnik?",
+      "meaning": {
+        "en": "is it a clerk (a man)?"
+      },
+      "distractors": [
+        "czy to jest rolnik?",
+        "czy to jest lekarz?"
+      ],
+      "items": [
+        "czy",
+        "to",
+        "byc-jest",
+        "urzednik"
+      ]
+    }
+  ]
+}

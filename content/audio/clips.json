@@ -25,6 +25,14 @@
       "text": "A gdzie pan mieszka?"
     },
     {
+      "id": "a-gdzie-pracujesz",
+      "text": "A gdzie pracujesz?"
+    },
+    {
+      "id": "a-ja-interesuje-sie-kinem",
+      "text": "A ja interesuję się kinem."
+    },
+    {
       "id": "a-to-czy-to-jest-dlugopis",
       "text": "A to? Czy to jest długopis?"
     },
@@ -47,6 +55,10 @@
     {
       "id": "a-ty-jak-masz-na-imie",
       "text": "a ty jak masz na imię?"
+    },
+    {
+      "id": "a-ty-kim-jestes-z-zawodu",
+      "text": "A ty? Kim jesteś z zawodu?"
     },
     {
       "id": "a-ty-lubisz-sport",
@@ -85,12 +97,24 @@
       "text": "Adam i Ewa tutaj są"
     },
     {
+      "id": "adam-jest-lekarzem",
+      "text": "Adam jest lekarzem."
+    },
+    {
       "id": "adam-jest-polakiem-a-ewa-jest-angielka",
       "text": "Adam jest Polakiem, a Ewa jest Angielką"
     },
     {
       "id": "adam-jest-studentem",
       "text": "Adam jest studentem"
+    },
+    {
+      "id": "adam-jest-z-polski-jest-polakiem-a-ewa-jest-z-an",
+      "text": "Adam jest z Polski, jest Polakiem, a Ewa jest z Anglii, jest Angielką."
+    },
+    {
+      "id": "adam-ma-dwadziescia-lat",
+      "text": "Adam ma dwadzieścia lat."
     },
     {
       "id": "adam-ma-syna",
@@ -105,16 +129,44 @@
       "text": "Adam ma trzynaście lat."
     },
     {
+      "id": "adam-tez-interesuje-sie-sportem",
+      "text": "Adam też interesuje się sportem!"
+    },
+    {
       "id": "adam-tez-mowi-po-angielsku",
       "text": "Adam też mówi po angielsku"
+    },
+    {
+      "id": "adam-to-biznesmen",
+      "text": "Adam to biznesmen"
+    },
+    {
+      "id": "adam-to-biznesmen-ma-dwadziescia-lat",
+      "text": "Adam to biznesmen. Ma dwadzieścia lat."
+    },
+    {
+      "id": "adam-to-kelner-a-ewa-to-kelnerka",
+      "text": "Adam to kelner, a Ewa to kelnerka."
+    },
+    {
+      "id": "adam-to-kucharz",
+      "text": "Adam to kucharz"
     },
     {
       "id": "adam-to-nauczyciel-ewa-to-nauczycielka",
       "text": "Adam to nauczyciel. Ewa to nauczycielka."
     },
     {
+      "id": "adam-to-rolnik",
+      "text": "Adam to rolnik?"
+    },
+    {
       "id": "adam-to-student",
       "text": "Adam to student"
+    },
+    {
+      "id": "adam-to-tancerz",
+      "text": "Adam to tancerz"
     },
     {
       "id": "adam-uczy-sie-polskiego-bo-ewa-jest-z-polski",
@@ -123,6 +175,18 @@
     {
       "id": "adres",
       "text": "adres"
+    },
+    {
+      "id": "aktor",
+      "text": "aktor"
+    },
+    {
+      "id": "aktor-pracuje-w-teatrze",
+      "text": "Aktor pracuje w teatrze."
+    },
+    {
+      "id": "aktorka",
+      "text": "aktorka"
     },
     {
       "id": "aktywny",
@@ -169,6 +233,10 @@
       "text": "bardzo"
     },
     {
+      "id": "bardzo-dobrym",
+      "text": "Bardzo dobrym!"
+    },
+    {
       "id": "bardzo-dziekuje",
       "text": "bardzo dziękuję"
     },
@@ -191,6 +259,10 @@
     {
       "id": "bialy",
       "text": "biały"
+    },
+    {
+      "id": "biznesmen",
+      "text": "biznesmen"
     },
     {
       "id": "bo",
@@ -325,6 +397,14 @@
       "text": "co"
     },
     {
+      "id": "co-czytasz",
+      "text": "co czytasz?"
+    },
+    {
+      "id": "co-lubisz-robic",
+      "text": "co lubisz robić?"
+    },
+    {
       "id": "co-nowego",
       "text": "co nowego?"
     },
@@ -395,6 +475,18 @@
     {
       "id": "corke",
       "text": "córkę"
+    },
+    {
+      "id": "cwicze",
+      "text": "ćwiczę"
+    },
+    {
+      "id": "cwicze-liczebniki",
+      "text": "Ćwiczę liczebniki."
+    },
+    {
+      "id": "cwicze-liczebniki-2",
+      "text": "ćwiczę liczebniki"
     },
     {
       "id": "cwiczenie",
@@ -497,6 +589,10 @@
       "text": "cześć, jestem Ewa"
     },
     {
+      "id": "czesc-jestem-ewa-2",
+      "text": "Cześć! Jestem Ewa."
+    },
+    {
       "id": "czesc-jestem-ewa-a-ty",
       "text": "cześć, jestem Ewa, a ty?"
     },
@@ -537,8 +633,24 @@
       "text": "Cześć! Po staremu. A u ciebie?"
     },
     {
+      "id": "czesc-umiesz-tanczyc-tango",
+      "text": "Cześć! Umiesz tańczyć tango?"
+    },
+    {
       "id": "czesc-wszystko-dobrze-a-u-ciebie",
       "text": "Cześć! Wszystko dobrze. A u ciebie?"
+    },
+    {
+      "id": "czterdziesci",
+      "text": "czterdzieści"
+    },
+    {
+      "id": "czterdziesci-cztery",
+      "text": "czterdzieści cztery"
+    },
+    {
+      "id": "czterdziesci-dwa-lata",
+      "text": "czterdzieści dwa lata"
     },
     {
       "id": "czternascie",
@@ -595,6 +707,10 @@
     {
       "id": "czy",
       "text": "czy"
+    },
+    {
+      "id": "czy-adam-to-lekarz",
+      "text": "Czy Adam to lekarz?"
     },
     {
       "id": "czy-chodzisz-do-szkoly",
@@ -661,8 +777,28 @@
       "text": "Czy pani mówi po polsku?"
     },
     {
+      "id": "czy-to-fotograf",
+      "text": "czy to fotograf?"
+    },
+    {
+      "id": "czy-to-informatyczka",
+      "text": "czy to informatyczka?"
+    },
+    {
       "id": "czy-to-jest",
       "text": "czy to jest…?"
+    },
+    {
+      "id": "czy-to-jest-fotograf",
+      "text": "czy to jest fotograf?"
+    },
+    {
+      "id": "czy-to-jest-informatyczka",
+      "text": "czy to jest informatyczka?"
+    },
+    {
+      "id": "czy-to-jest-kelner",
+      "text": "czy to jest kelner?"
     },
     {
       "id": "czy-to-jest-klucz",
@@ -705,8 +841,16 @@
       "text": "czy to jest twoje dziecko?"
     },
     {
+      "id": "czy-to-jest-urzednik",
+      "text": "czy to jest urzędnik?"
+    },
+    {
       "id": "czy-to-jest-zeszyt-tak-to-jest-zeszyt",
       "text": "czy to jest zeszyt? Tak, to jest zeszyt."
+    },
+    {
+      "id": "czy-to-kelner",
+      "text": "czy to kelner?"
     },
     {
       "id": "czy-to-twoj-brat",
@@ -729,6 +873,10 @@
       "text": "Czy ty grasz w tenisa?"
     },
     {
+      "id": "czy-ty-interesujesz-sie-sportem",
+      "text": "Czy ty interesujesz się sportem?"
+    },
+    {
       "id": "czy-ty-myslisz-ze-to-jest-zart",
       "text": "Czy ty myślisz, że to jest żart?"
     },
@@ -737,12 +885,28 @@
       "text": "Czy ty też kończysz kurs?"
     },
     {
+      "id": "czy-umiesz-tanczyc",
+      "text": "czy umiesz tańczyć?"
+    },
+    {
       "id": "czy-wiesz-kto-to-jest",
       "text": "czy wiesz, kto to jest?"
     },
     {
       "id": "czy-wy-mieszkacie-w-warszawie",
       "text": "czy wy mieszkacie w Warszawie?"
+    },
+    {
+      "id": "czym",
+      "text": "czym"
+    },
+    {
+      "id": "czym-interesujesz-sie",
+      "text": "czym interesujesz się?"
+    },
+    {
+      "id": "czym-sie-interesujesz",
+      "text": "czym się interesujesz?"
     },
     {
       "id": "czysty",
@@ -765,8 +929,20 @@
       "text": "czytam tekst"
     },
     {
+      "id": "czytasz",
+      "text": "czytasz"
+    },
+    {
       "id": "de",
       "text": "de"
+    },
+    {
+      "id": "dentysta",
+      "text": "dentysta"
+    },
+    {
+      "id": "dentystka",
+      "text": "dentystka"
     },
     {
       "id": "dialog",
@@ -779,6 +955,10 @@
     {
       "id": "dlaczego-ona-uczy-sie-polskiego",
       "text": "dlaczego ona uczy się polskiego?"
+    },
+    {
+      "id": "dlaczego-pytasz",
+      "text": "Dlaczego pytasz?"
     },
     {
       "id": "dlaczego-uczysz-sie-polskiego",
@@ -835,6 +1015,10 @@
     {
       "id": "dobry-wieczor-milo-mi",
       "text": "dobry wieczór, miło mi"
+    },
+    {
+      "id": "dobrym",
+      "text": "dobrym"
     },
     {
       "id": "dobrze",
@@ -909,6 +1093,10 @@
       "text": "dwa plus trzy to pięć"
     },
     {
+      "id": "dwa-razy-trzydziesci-rowna-sie-szescdziesiat",
+      "text": "dwa razy trzydzieści równa się sześćdziesiąt"
+    },
+    {
       "id": "dwadziescia",
       "text": "dwadzieścia"
     },
@@ -923,6 +1111,10 @@
     {
       "id": "dwadziescia-piec",
       "text": "dwadzieścia pięć"
+    },
+    {
+      "id": "dwadziescia-plus-dwadziescia-rowna-sie-czterdzie",
+      "text": "Dwadzieścia plus dwadzieścia równa się czterdzieści."
     },
     {
       "id": "dwanascie",
@@ -1121,6 +1313,14 @@
       "text": "Dzień dobry! Wszystko dobrze, a u pani?"
     },
     {
+      "id": "dziennikarka",
+      "text": "dziennikarka"
+    },
+    {
+      "id": "dziennikarz",
+      "text": "dziennikarz"
+    },
+    {
       "id": "dziesiec",
       "text": "dziesięć"
     },
@@ -1153,8 +1353,24 @@
       "text": "dziewczyna"
     },
     {
+      "id": "dziewczyna-2",
+      "text": "dziewczyną"
+    },
+    {
       "id": "dziewiec",
       "text": "dziewięć"
+    },
+    {
+      "id": "dziewiecdziesiat",
+      "text": "dziewięćdziesiąt"
+    },
+    {
+      "id": "dziewiecdziesiat-dziewiec",
+      "text": "dziewięćdziesiąt dziewięć"
+    },
+    {
+      "id": "dziewiecdziesiat-szesc-minus-dwanascie-rowna-sie",
+      "text": "dziewięćdziesiąt sześć minus dwanaście równa się osiemdziesiąt cztery"
     },
     {
       "id": "dziewietnascie",
@@ -1197,6 +1413,10 @@
       "text": "em"
     },
     {
+      "id": "emeryt",
+      "text": "emeryt"
+    },
+    {
       "id": "en",
       "text": "en"
     },
@@ -1225,8 +1445,36 @@
       "text": "Ewa"
     },
     {
+      "id": "ewa-co-czytasz",
+      "text": "Ewa, co czytasz?"
+    },
+    {
       "id": "ewa-gdzie-ty-jestes",
       "text": "Ewa, gdzie ty jesteś?"
+    },
+    {
+      "id": "ewa-interesuje-sie-muzyka",
+      "text": "Ewa interesuje się muzyką."
+    },
+    {
+      "id": "ewa-jest-aktorka-jest-bardzo-popularna",
+      "text": "Ewa jest aktorką. Jest bardzo popularna."
+    },
+    {
+      "id": "ewa-jest-dobra-dziennikarka",
+      "text": "Ewa jest dobrą dziennikarką"
+    },
+    {
+      "id": "ewa-jest-mila-dziewczyna",
+      "text": "Ewa jest miłą dziewczyną."
+    },
+    {
+      "id": "ewa-jest-mila-dziewczyna-2",
+      "text": "Ewa jest miłą dziewczyną"
+    },
+    {
+      "id": "ewa-jest-niemka",
+      "text": "Ewa jest Niemką"
     },
     {
       "id": "ewa-jest-sredniego-wzrostu-jest-mloda-i-wesola",
@@ -1237,12 +1485,36 @@
       "text": "Ewa jest z Anglii, ale mówi po polsku."
     },
     {
+      "id": "ewa-lubi-tanczyc-tango",
+      "text": "Ewa lubi tańczyć tango."
+    },
+    {
       "id": "ewa-ma-trzy-lata",
       "text": "Ewa ma trzy lata"
     },
     {
       "id": "ewa-nowak",
       "text": "Ewa Nowak."
+    },
+    {
+      "id": "ewa-tez-pracuje-w-biurze",
+      "text": "Ewa też pracuje w biurze!"
+    },
+    {
+      "id": "ewa-to-informatyczka-a-adam-to-urzednik",
+      "text": "Ewa to informatyczka, a Adam to urzędnik"
+    },
+    {
+      "id": "ewa-to-lekarka-a-jej-kolezanka-to-dziennikarka",
+      "text": "Ewa to lekarka, a jej koleżanka to dziennikarka."
+    },
+    {
+      "id": "ewa-to-lektorka",
+      "text": "Ewa to lektorka"
+    },
+    {
+      "id": "ewa-to-nauczycielka-a-adam-to-aktor",
+      "text": "Ewa to nauczycielka, a Adam to aktor"
     },
     {
       "id": "fajny",
@@ -1259,6 +1531,14 @@
     {
       "id": "fioletowy",
       "text": "fioletowy"
+    },
+    {
+      "id": "fotograf",
+      "text": "fotograf"
+    },
+    {
+      "id": "fotografia",
+      "text": "fotografią"
     },
     {
       "id": "gdzie",
@@ -1305,6 +1585,10 @@
       "text": "gdzie państwo są?"
     },
     {
+      "id": "gdzie-pracujesz",
+      "text": "gdzie pracujesz?"
+    },
+    {
       "id": "gdzie-sa-panowie",
       "text": "gdzie są panowie?"
     },
@@ -1315,6 +1599,10 @@
     {
       "id": "gdzie-ty-mieszkasz",
       "text": "Gdzie ty mieszkasz?"
+    },
+    {
+      "id": "gdzie-ty-pracujesz",
+      "text": "Gdzie ty pracujesz?"
     },
     {
       "id": "gdzie-wy-jestescie",
@@ -1331,6 +1619,10 @@
     {
       "id": "gram",
       "text": "gram"
+    },
+    {
+      "id": "gram-na-gitarze",
+      "text": "gram na gitarze"
     },
     {
       "id": "gram-w-tenisa",
@@ -1381,6 +1673,10 @@
       "text": "halo, słucham"
     },
     {
+      "id": "historia",
+      "text": "historią"
+    },
+    {
       "id": "hobby",
       "text": "hobby"
     },
@@ -1405,6 +1701,10 @@
       "text": "ile lat ma twój syn?"
     },
     {
+      "id": "ile-ma-lat",
+      "text": "ile ma lat?"
+    },
+    {
       "id": "ile-ma-lat-twoj-syn",
       "text": "ile ma lat twój syn?"
     },
@@ -1419,6 +1719,10 @@
     {
       "id": "ile-masz-lat",
       "text": "Ile masz lat?"
+    },
+    {
+      "id": "ile-on-ma-lat",
+      "text": "ile on ma lat?"
     },
     {
       "id": "ile-pan-ma-lat",
@@ -1453,12 +1757,84 @@
       "text": "imię, nazwisko, narodowość"
     },
     {
+      "id": "informatyczka",
+      "text": "informatyczka"
+    },
+    {
+      "id": "informatyk",
+      "text": "informatyk"
+    },
+    {
+      "id": "instruktor",
+      "text": "instruktor"
+    },
+    {
       "id": "inteligentny",
       "text": "inteligentny"
     },
     {
       "id": "interesujacy",
       "text": "interesujący"
+    },
+    {
+      "id": "interesuje-sie",
+      "text": "interesuję się"
+    },
+    {
+      "id": "interesuje-sie-2",
+      "text": "interesuje się"
+    },
+    {
+      "id": "interesuje-sie-fotografia",
+      "text": "interesuję się fotografią"
+    },
+    {
+      "id": "interesuje-sie-fotografia-a-ty",
+      "text": "Interesuję się fotografią. A ty?"
+    },
+    {
+      "id": "interesuje-sie-fotografia-i-sportem",
+      "text": "Interesuje się fotografią i sportem."
+    },
+    {
+      "id": "interesuje-sie-historia-i-muzyka",
+      "text": "interesuję się historią i muzyką"
+    },
+    {
+      "id": "interesuje-sie-kinem-i-muzyka",
+      "text": "Interesuję się kinem i muzyką."
+    },
+    {
+      "id": "interesuje-sie-literatura-i-malarstwem",
+      "text": "Interesuję się literaturą i malarstwem."
+    },
+    {
+      "id": "interesuje-sie-malarstwem-i-literatura",
+      "text": "Interesuję się malarstwem i literaturą."
+    },
+    {
+      "id": "interesuje-sie-muzyka-i-historia",
+      "text": "interesuję się muzyką i historią"
+    },
+    {
+      "id": "interesuje-sie-muzyka-i-sportem",
+      "text": "Interesuję się muzyką i sportem."
+    },
+    {
+      "id": "interesuje-sie-polityka",
+      "text": "interesuje się polityką"
+    },
+    {
+      "id": "interesujesz-sie",
+      "text": "interesujesz się"
+    },
+    {
+      "id": "interesujesz-sie-kinem",
+      "text": "interesujesz się kinem?"
+    },
+    {
+      "id": "inzynier",
+      "text": "inżynier"
     },
     {
       "id": "ja",
@@ -1475,6 +1851,10 @@
     {
       "id": "ja-czytam-tekst",
       "text": "ja czytam tekst"
+    },
+    {
+      "id": "ja-interesuje-sie-sportem",
+      "text": "Ja interesuję się sportem."
     },
     {
       "id": "ja-jestem-adam",
@@ -1525,8 +1905,24 @@
       "text": "ja pamiętam"
     },
     {
+      "id": "ja-pracuje-w-biurze",
+      "text": "Ja pracuję w biurze."
+    },
+    {
+      "id": "ja-pracuje-w-restauracji",
+      "text": "Ja pracuję w restauracji."
+    },
+    {
+      "id": "ja-pracuje-w-szpitalu",
+      "text": "Ja pracuję w szpitalu."
+    },
+    {
       "id": "ja-robie-test",
       "text": "Ja robię test."
+    },
+    {
+      "id": "ja-tez-czym-sie-interesujesz",
+      "text": "Ja też! Czym się interesujesz?"
     },
     {
       "id": "ja-tez-grasz-w-tenisa",
@@ -1539,6 +1935,10 @@
     {
       "id": "ja-tez-mysle-ze-on-tez-jest-wysportowany",
       "text": "Ja też! Myślę, że on też jest wysportowany."
+    },
+    {
+      "id": "ja-tez-troche-kim-jestes-z-zawodu",
+      "text": "Ja też trochę. Kim jesteś z zawodu?"
     },
     {
       "id": "ja-ucze-sie-polskiego-bo-moj-chlopak-jest-z-pols",
@@ -1627,6 +2027,14 @@
     {
       "id": "jaka",
       "text": "jaka"
+    },
+    {
+      "id": "jaka-2",
+      "text": "jaką"
+    },
+    {
+      "id": "jaka-dziewczyna-jest-ewa",
+      "text": "jaką dziewczyną jest Ewa?"
     },
     {
       "id": "jaka-jest-ona",
@@ -1729,6 +2137,34 @@
       "text": "Jakie jest to auto? To auto jest małe."
     },
     {
+      "id": "jakim",
+      "text": "jakim"
+    },
+    {
+      "id": "jakim-lekarzem",
+      "text": "Jakim lekarzem?"
+    },
+    {
+      "id": "jakim-lekarzem-jest-on",
+      "text": "jakim lekarzem jest on?"
+    },
+    {
+      "id": "jakim-lekarzem-on-jest",
+      "text": "jakim lekarzem on jest?"
+    },
+    {
+      "id": "jakim-on-jest-lekarzem",
+      "text": "jakim on jest lekarzem?"
+    },
+    {
+      "id": "japonczykiem",
+      "text": "Japończykiem"
+    },
+    {
+      "id": "japonka",
+      "text": "Japonką"
+    },
+    {
       "id": "jeden",
       "text": "jeden"
     },
@@ -1789,6 +2225,10 @@
       "text": "Jest sympatyczny i interesujący."
     },
     {
+      "id": "jest-wysoka-wysportowana-i-wesola",
+      "text": "Jest wysoka, wysportowana i wesoła."
+    },
+    {
       "id": "jest-wysoki-i-przystojny",
       "text": "Jest wysoki i przystojny."
     },
@@ -1803,6 +2243,30 @@
     {
       "id": "jestem-adam",
       "text": "jestem Adam"
+    },
+    {
+      "id": "jestem-angielka-ale-mieszkam-w-krakowie",
+      "text": "Jestem Angielką, ale mieszkam w Krakowie."
+    },
+    {
+      "id": "jestem-dziennikarka-a-ty",
+      "text": "Jestem dziennikarką. A ty?"
+    },
+    {
+      "id": "jestem-fotografem-czym-sie-interesujesz",
+      "text": "Jestem fotografem. Czym się interesujesz?"
+    },
+    {
+      "id": "jestem-informatykiem",
+      "text": "Jestem informatykiem."
+    },
+    {
+      "id": "jestem-instruktorem",
+      "text": "jestem instruktorem"
+    },
+    {
+      "id": "jestem-muzykiem-i-instruktorem",
+      "text": "Jestem muzykiem i instruktorem."
     },
     {
       "id": "jestem-pewna-ze-on-jest-ambitny",
@@ -1905,6 +2369,10 @@
       "text": "jesteś"
     },
     {
+      "id": "jestes-lekarka-to-ciekawe",
+      "text": "Jesteś lekarką? To ciekawe!"
+    },
+    {
       "id": "jestes-tutaj",
       "text": "jesteś tutaj?"
     },
@@ -1975,6 +2443,38 @@
     {
       "id": "kawa-jest-tutaj",
       "text": "kawa jest tutaj"
+    },
+    {
+      "id": "kelner",
+      "text": "kelner"
+    },
+    {
+      "id": "kelner-pracuje-w-restauracji",
+      "text": "Kelner pracuje w restauracji."
+    },
+    {
+      "id": "kelnerka",
+      "text": "kelnerka"
+    },
+    {
+      "id": "kim",
+      "text": "kim"
+    },
+    {
+      "id": "kim-jest-adam",
+      "text": "Kim jest Adam?"
+    },
+    {
+      "id": "kim-jestes-z-zawodu",
+      "text": "kim jesteś z zawodu?"
+    },
+    {
+      "id": "kim-ty-jestes-z-zawodu",
+      "text": "kim ty jesteś z zawodu?"
+    },
+    {
+      "id": "kinem",
+      "text": "kinem"
     },
     {
       "id": "klucz",
@@ -2077,6 +2577,14 @@
       "text": "kto to jest?"
     },
     {
+      "id": "kto-to-jest-muzyk",
+      "text": "kto to jest? muzyk"
+    },
+    {
+      "id": "kto-to-jest-to-jest-muzyk",
+      "text": "kto to jest? to jest muzyk"
+    },
+    {
       "id": "kto-to-jest-to-jest-nowy-student",
       "text": "kto to jest? To jest nowy student."
     },
@@ -2085,8 +2593,16 @@
       "text": "kto to jest? To jest student."
     },
     {
+      "id": "kto-to-jest-to-muzyk",
+      "text": "kto to jest? to muzyk"
+    },
+    {
       "id": "kubek",
       "text": "kubek"
+    },
+    {
+      "id": "kucharz",
+      "text": "kucharz"
     },
     {
       "id": "kurs",
@@ -2117,6 +2633,18 @@
       "text": "lata"
     },
     {
+      "id": "lekarka",
+      "text": "lekarka"
+    },
+    {
+      "id": "lekarz",
+      "text": "lekarz"
+    },
+    {
+      "id": "lekarz-pracuje-w-szpitalu",
+      "text": "lekarz pracuje w szpitalu"
+    },
+    {
       "id": "lekcja",
       "text": "lekcja"
     },
@@ -2129,8 +2657,28 @@
       "text": "lekcja numer jeden"
     },
     {
+      "id": "lektorka",
+      "text": "lektorka"
+    },
+    {
       "id": "leniwy",
       "text": "leniwy"
+    },
+    {
+      "id": "liczebnik",
+      "text": "liczebnik"
+    },
+    {
+      "id": "literatura",
+      "text": "literaturą"
+    },
+    {
+      "id": "lubi",
+      "text": "lubi"
+    },
+    {
+      "id": "lubi-pracowac",
+      "text": "Lubi pracować."
     },
     {
       "id": "lubie",
@@ -2141,12 +2689,32 @@
       "text": "lubię sport"
     },
     {
+      "id": "lubie-tanczyc-tango",
+      "text": "lubię tańczyć tango"
+    },
+    {
+      "id": "lubie-tanczyc-tango-2",
+      "text": "Lubię tańczyć tango."
+    },
+    {
       "id": "lubisz",
       "text": "lubisz"
     },
     {
       "id": "ma",
       "text": "ma"
+    },
+    {
+      "id": "ma-czterdziesci-piec-lat",
+      "text": "ma czterdzieści pięć lat"
+    },
+    {
+      "id": "ma-dwadziescia-dwa-lata",
+      "text": "ma dwadzieścia dwa lata"
+    },
+    {
+      "id": "ma-prawie-dwadziescia-lat",
+      "text": "ma prawie dwadzieścia lat"
     },
     {
       "id": "macie",
@@ -2161,6 +2729,14 @@
       "text": "mają"
     },
     {
+      "id": "malarstwem",
+      "text": "malarstwem"
+    },
+    {
+      "id": "malarz",
+      "text": "malarz"
+    },
+    {
       "id": "maly",
       "text": "mały"
     },
@@ -2173,6 +2749,14 @@
       "text": "mam brata i siostrę"
     },
     {
+      "id": "mam-czterdziesci-trzy-lata-a-moj-maz-ma-czterdzi",
+      "text": "Mam czterdzieści trzy lata, a mój mąż ma czterdzieści pięć lat."
+    },
+    {
+      "id": "mam-dwadziescia-jeden-lat",
+      "text": "Mam dwadzieścia jeden lat."
+    },
+    {
       "id": "mam-dwadziescia-lat",
       "text": "mam dwadzieścia lat"
     },
@@ -2181,12 +2765,24 @@
       "text": "Mam dwadzieścia lat."
     },
     {
+      "id": "mam-dwadziescia-osiem-lat",
+      "text": "Mam dwadzieścia osiem lat."
+    },
+    {
       "id": "mam-dwanascie-lat",
       "text": "mam dwanaście lat"
     },
     {
       "id": "mam-dziesiec-lat",
       "text": "mam dziesięć lat"
+    },
+    {
+      "id": "mam-dziewiecdziesiat-lat",
+      "text": "Mam dziewięćdziesiąt lat!"
+    },
+    {
+      "id": "mam-dziewietnascie-lat-co-lubisz-robic",
+      "text": "Mam dziewiętnaście lat. Co lubisz robić?"
     },
     {
       "id": "mam-jedenascie-lat-a-ty",
@@ -2207,6 +2803,18 @@
     {
       "id": "mam-osiemnascie-lat",
       "text": "mam osiemnaście lat."
+    },
+    {
+      "id": "mam-prawie-dwadziescia-lat",
+      "text": "mam prawie dwadzieścia lat"
+    },
+    {
+      "id": "mam-prawie-dwadziescia-lat-2",
+      "text": "Mam prawie dwadzieścia lat."
+    },
+    {
+      "id": "mam-prawie-dwadziescia-lat-a-ty",
+      "text": "Mam prawie dwadzieścia lat. A ty?"
     },
     {
       "id": "mam-pytanie-co-to-znaczy",
@@ -2297,8 +2905,24 @@
       "text": "mąż"
     },
     {
+      "id": "mezczyzna",
+      "text": "mężczyzna"
+    },
+    {
+      "id": "mezczyzna-2",
+      "text": "mężczyzną"
+    },
+    {
       "id": "mieszka",
       "text": "mieszka"
+    },
+    {
+      "id": "mieszka-w-krakowie-jest-wysoki-i-przystojny",
+      "text": "Mieszka w Krakowie. Jest wysoki i przystojny."
+    },
+    {
+      "id": "mieszka-w-warszawie-i-ma-dwadziescia-trzy-lata",
+      "text": "Mieszka w Warszawie i ma dwadzieścia trzy lata."
     },
     {
       "id": "mieszkacie",
@@ -2405,6 +3029,10 @@
       "text": "miły"
     },
     {
+      "id": "milym",
+      "text": "miłym"
+    },
+    {
       "id": "minus",
       "text": "minus"
     },
@@ -2425,6 +3053,10 @@
       "text": "Mnie również!"
     },
     {
+      "id": "moda",
+      "text": "modą"
+    },
+    {
       "id": "modny",
       "text": "modny"
     },
@@ -2441,6 +3073,14 @@
       "text": "Mój brat ma na imię Adam i ma szesnaście lat."
     },
     {
+      "id": "moj-brat-to-dentysta",
+      "text": "mój brat to dentysta"
+    },
+    {
+      "id": "moj-brat-to-informatyk",
+      "text": "mój brat to informatyk"
+    },
+    {
       "id": "moj-dziadek",
       "text": "mój dziadek"
     },
@@ -2449,8 +3089,24 @@
       "text": "mój dziadek i moja babcia"
     },
     {
+      "id": "moj-kolega-jest-anglikiem",
+      "text": "mój kolega jest Anglikiem"
+    },
+    {
+      "id": "moj-kolega-jest-malarzem",
+      "text": "mój kolega jest malarzem"
+    },
+    {
+      "id": "moj-kolega-jest-niemcem-a-kolezanka-jest-japonka",
+      "text": "Mój kolega jest Niemcem, a koleżanka jest Japonką."
+    },
+    {
       "id": "moj-maz",
       "text": "mój mąż"
+    },
+    {
+      "id": "moj-maz-ma-siedemdziesiat-dwa-lata",
+      "text": "mój mąż ma siedemdziesiąt dwa lata"
     },
     {
       "id": "moj-numer-telefonu-to-dwadziescia-cztery-osiemna",
@@ -2527,6 +3183,10 @@
     {
       "id": "moja-corka-ma-trzy-lata",
       "text": "moja córka ma trzy lata"
+    },
+    {
+      "id": "moja-kolezanka-to-tancerka",
+      "text": "moja koleżanka to tancerka"
     },
     {
       "id": "moja-mama",
@@ -2629,6 +3289,14 @@
       "text": "muzeum"
     },
     {
+      "id": "muzyk",
+      "text": "muzyk"
+    },
+    {
+      "id": "muzyka",
+      "text": "muzyką"
+    },
+    {
       "id": "my",
       "text": "my"
     },
@@ -2709,6 +3377,10 @@
       "text": "myślisz, że to żart?"
     },
     {
+      "id": "na-gitarze",
+      "text": "na gitarze"
+    },
+    {
       "id": "na-imie",
       "text": "na imię"
     },
@@ -2777,6 +3449,10 @@
       "text": "nauczycielka i nauczyciel"
     },
     {
+      "id": "nauczycielka-pracuje-w-szkole",
+      "text": "nauczycielka pracuje w szkole"
+    },
+    {
       "id": "nawzajem",
       "text": "nawzajem"
     },
@@ -2827,6 +3503,14 @@
     {
       "id": "nie",
       "text": "nie"
+    },
+    {
+      "id": "nie-adam-to-inzynier",
+      "text": "Nie, Adam to inżynier."
+    },
+    {
+      "id": "nie-adam-to-policjant",
+      "text": "Nie, Adam to policjant."
     },
     {
       "id": "nie-dziekuje",
@@ -2933,6 +3617,14 @@
       "text": "niebieski"
     },
     {
+      "id": "niemcem",
+      "text": "Niemcem"
+    },
+    {
+      "id": "niemka",
+      "text": "Niemką"
+    },
+    {
       "id": "niestety",
       "text": "niestety"
     },
@@ -3013,6 +3705,14 @@
       "text": "on chodzi do szkoły"
     },
     {
+      "id": "on-interesuje-sie-historia",
+      "text": "on interesuje się historią"
+    },
+    {
+      "id": "on-interesuje-sie-polityka",
+      "text": "on interesuje się polityką"
+    },
+    {
       "id": "on-jest-aktywny-i-energiczny",
       "text": "on jest aktywny i energiczny"
     },
@@ -3029,6 +3729,14 @@
       "text": "On jest chory, ale ona jest zdrowa."
     },
     {
+      "id": "on-jest-dobry-on-jest-dobrym-lekarzem",
+      "text": "On jest dobry. On jest dobrym lekarzem."
+    },
+    {
+      "id": "on-jest-dobrym-lekarzem",
+      "text": "on jest dobrym lekarzem"
+    },
+    {
       "id": "on-jest-energiczny-i-aktywny",
       "text": "on jest energiczny i aktywny"
     },
@@ -3037,12 +3745,24 @@
       "text": "On jest gruby, ale zdrowy, bo jest bardzo aktywny."
     },
     {
+      "id": "on-jest-japonczykiem",
+      "text": "on jest Japończykiem"
+    },
+    {
       "id": "on-jest-leniwy",
       "text": "on jest leniwy"
     },
     {
+      "id": "on-jest-milym-mezczyzna",
+      "text": "on jest miłym mężczyzną"
+    },
+    {
       "id": "on-jest-na-pewno-ambitny",
       "text": "on jest na pewno ambitny"
+    },
+    {
+      "id": "on-jest-pisarzem-i-malarzem",
+      "text": "on jest pisarzem i malarzem"
     },
     {
       "id": "on-jest-pracowity",
@@ -3069,8 +3789,16 @@
       "text": "on jest wysoki i przystojny"
     },
     {
+      "id": "on-jest-wysokim-mezczyzna",
+      "text": "on jest wysokim mężczyzną"
+    },
+    {
       "id": "on-jest-z-anglii",
       "text": "on jest z Anglii"
+    },
+    {
+      "id": "on-jest-z-niemiec-jest-niemcem",
+      "text": "On jest z Niemiec. Jest Niemcem."
     },
     {
       "id": "on-jest-z-ukrainy-i-mowi-po-ukrainsku",
@@ -3081,12 +3809,28 @@
       "text": "On jest z Ukrainy i mówi po ukraińsku, a ona jest z Japonii i mówi po japońsku."
     },
     {
+      "id": "on-lubi-pracowac",
+      "text": "on lubi pracować"
+    },
+    {
+      "id": "on-ma-czterdziesci-piec-lat",
+      "text": "on ma czterdzieści pięć lat"
+    },
+    {
       "id": "on-ma-jeden-rok",
       "text": "on ma jeden rok"
     },
     {
+      "id": "on-ma-prawie-dwadziescia-lat",
+      "text": "on ma prawie dwadzieścia lat"
+    },
+    {
       "id": "on-ma-rok",
       "text": "on ma rok"
+    },
+    {
+      "id": "on-ma-trzy-lata",
+      "text": "on ma trzy lata"
     },
     {
       "id": "on-mieszka-w-berlinie",
@@ -3105,8 +3849,16 @@
       "text": "ona"
     },
     {
+      "id": "ona-interesuje-sie-moda",
+      "text": "ona interesuje się modą"
+    },
+    {
       "id": "ona-jest-chora",
       "text": "ona jest chora"
+    },
+    {
+      "id": "ona-jest-dobra-aktorka",
+      "text": "ona jest dobrą aktorką"
     },
     {
       "id": "ona-jest-inteligentna-i-kreatywna",
@@ -3145,6 +3897,10 @@
       "text": "Ona jest z Japonii i mówi po japońsku."
     },
     {
+      "id": "ona-jest-z-japonii-jest-japonka",
+      "text": "ona jest z Japonii, jest Japonką"
+    },
+    {
       "id": "ona-jest-z-polski",
       "text": "Ona jest z Polski."
     },
@@ -3161,8 +3917,16 @@
       "text": "ona kończy kurs"
     },
     {
+      "id": "ona-lubi-pracowac",
+      "text": "ona lubi pracować"
+    },
+    {
       "id": "ona-ma-cztery-lata",
       "text": "ona ma cztery lata"
+    },
+    {
+      "id": "ona-ma-dwadziescia-dwa-lata",
+      "text": "ona ma dwadzieścia dwa lata"
     },
     {
       "id": "ona-ma-dziewietnascie-lat",
@@ -3171,6 +3935,10 @@
     {
       "id": "ona-ma-na-imie-ewa",
       "text": "Ona ma na imię Ewa."
+    },
+    {
+      "id": "ona-ma-rok",
+      "text": "ona ma rok"
     },
     {
       "id": "ona-mieszka-w-londynie",
@@ -3183,6 +3951,10 @@
     {
       "id": "ona-mysli-ze-on-jest-sympatyczny",
       "text": "Ona myśli, że on jest sympatyczny."
+    },
+    {
+      "id": "ona-pracuje-w-restauracji-jest-kelnerka",
+      "text": "Ona pracuje w restauracji, jest kelnerką."
     },
     {
       "id": "ona-uczy-sie-polskiego-bo-jej-chlopak-jest-z-pol",
@@ -3265,6 +4037,10 @@
       "text": "ono jest tutaj"
     },
     {
+      "id": "ono-ma-pol-roku",
+      "text": "ono ma pół roku"
+    },
+    {
       "id": "osiem",
       "text": "osiem"
     },
@@ -3275,6 +4051,14 @@
     {
       "id": "osiem-minus-dwa-rowna-sie-szesc",
       "text": "osiem minus dwa równa się sześć"
+    },
+    {
+      "id": "osiemdziesiat",
+      "text": "osiemdziesiąt"
+    },
+    {
+      "id": "osiemdziesiat-osiem",
+      "text": "osiemdziesiąt osiem"
     },
     {
       "id": "osiemnascie",
@@ -3329,6 +4113,10 @@
       "text": "Pan Adam mieszka tutaj."
     },
     {
+      "id": "pan-adam-to-emeryt-ma-osiemdziesiat-lat",
+      "text": "Pan Adam to emeryt. Ma osiemdziesiąt lat."
+    },
+    {
       "id": "pani",
       "text": "pani"
     },
@@ -3381,12 +4169,28 @@
       "text": "pięć minus jeden to jest cztery"
     },
     {
+      "id": "piecdziesiat",
+      "text": "pięćdziesiąt"
+    },
+    {
+      "id": "piecdziesiat-piec",
+      "text": "pięćdziesiąt pięć"
+    },
+    {
+      "id": "piecdziesiat-plus-piecdziesiat-rowna-sie-sto",
+      "text": "Pięćdziesiąt plus pięćdziesiąt równa się sto."
+    },
+    {
       "id": "pietnascie",
       "text": "piętnaście"
     },
     {
       "id": "pietnascie-lat",
       "text": "piętnaście lat"
+    },
+    {
+      "id": "pisarz",
+      "text": "pisarz"
     },
     {
       "id": "plecak",
@@ -3441,12 +4245,24 @@
       "text": "podkreślić"
     },
     {
+      "id": "pol-roku",
+      "text": "pół roku"
+    },
+    {
       "id": "polakiem",
       "text": "Polakiem"
     },
     {
       "id": "polecenie",
       "text": "polecenie"
+    },
+    {
+      "id": "policjant",
+      "text": "policjant"
+    },
+    {
+      "id": "polityka",
+      "text": "polityką"
     },
     {
       "id": "polka",
@@ -3463,6 +4279,10 @@
     {
       "id": "ponumerowac",
       "text": "ponumerować"
+    },
+    {
+      "id": "popularny",
+      "text": "popularny"
     },
     {
       "id": "posluchac",
@@ -3489,12 +4309,40 @@
       "text": "pracowity"
     },
     {
+      "id": "pracuje",
+      "text": "pracuję"
+    },
+    {
+      "id": "pracuje-2",
+      "text": "pracuje"
+    },
+    {
+      "id": "pracuje-w-biurze",
+      "text": "pracuję w biurze"
+    },
+    {
+      "id": "pracuje-w-biurze-2",
+      "text": "Pracuję w biurze."
+    },
+    {
+      "id": "pracuje-w-szpitalu-a-ty",
+      "text": "Pracuję w szpitalu. A ty?"
+    },
+    {
+      "id": "pracujesz",
+      "text": "pracujesz"
+    },
+    {
       "id": "praktyczny",
       "text": "praktyczny"
     },
     {
       "id": "prawda-czy-nieprawda",
       "text": "Prawda czy nieprawda?"
+    },
+    {
+      "id": "prawie",
+      "text": "prawie"
     },
     {
       "id": "problem",
@@ -3705,8 +4553,20 @@
       "text": "pytanie"
     },
     {
+      "id": "pytasz",
+      "text": "pytasz"
+    },
+    {
+      "id": "razy",
+      "text": "razy"
+    },
+    {
       "id": "restauracja",
       "text": "restauracja"
+    },
+    {
+      "id": "robic",
+      "text": "robić"
     },
     {
       "id": "robie",
@@ -3727,6 +4587,10 @@
     {
       "id": "rok",
       "text": "rok"
+    },
+    {
+      "id": "rolnik",
+      "text": "rolnik"
     },
     {
       "id": "romantyczny",
@@ -3783,6 +4647,10 @@
     {
       "id": "siedem",
       "text": "siedem"
+    },
+    {
+      "id": "siedemdziesiat",
+      "text": "siedemdziesiąt"
     },
     {
       "id": "siedemnascie",
@@ -3869,6 +4737,10 @@
       "text": "sport"
     },
     {
+      "id": "sportem",
+      "text": "sportem"
+    },
+    {
       "id": "sredniego-wzrostu",
       "text": "średniego wzrostu"
     },
@@ -3883,6 +4755,14 @@
     {
       "id": "stary-ale-dobry-2",
       "text": "Stary, ale dobry."
+    },
+    {
+      "id": "sto",
+      "text": "sto"
+    },
+    {
+      "id": "sto-lat",
+      "text": "sto lat"
     },
     {
       "id": "stol",
@@ -3935,6 +4815,10 @@
     {
       "id": "swietnie-dziekuje-to-wszystko-do-widzenia",
       "text": "Świetnie! Dziękuję, to wszystko. Do widzenia!"
+    },
+    {
+      "id": "swietnie-ja-jestem-lekarka-i-interesuje-sie-foto",
+      "text": "Świetnie! Ja jestem lekarką i interesuję się fotografią."
     },
     {
       "id": "swietnie-na-razie-do-jutra",
@@ -4001,6 +4885,14 @@
       "text": "sześć, siedem, osiem"
     },
     {
+      "id": "szescdziesiat",
+      "text": "sześćdziesiąt"
+    },
+    {
+      "id": "szescdziesiat-minus-dziesiec-rowna-sie-piecdzies",
+      "text": "sześćdziesiąt minus dziesięć równa się pięćdziesiąt"
+    },
+    {
       "id": "szesnascie",
       "text": "szesnaście"
     },
@@ -4015,6 +4907,10 @@
     {
       "id": "ta",
       "text": "ta"
+    },
+    {
+      "id": "ta-aktorka-jest-popularna",
+      "text": "ta aktorka jest popularna"
     },
     {
       "id": "ta-gumka-jest-rozowa",
@@ -4077,6 +4973,10 @@
       "text": "Tak, ale tylko trochę."
     },
     {
+      "id": "tak-ale-tylko-troche-a-ty",
+      "text": "Tak, ale tylko trochę. A ty?"
+    },
+    {
       "id": "tak-gram-w-tenisa-to-moje-hobby",
       "text": "Tak, gram w tenisa. To moje hobby."
     },
@@ -4095,6 +4995,10 @@
     {
       "id": "tak-pamietam",
       "text": "tak, pamiętam"
+    },
+    {
+      "id": "tak-pracuje-w-szpitalu-pa-do-jutra",
+      "text": "Tak, pracuję w szpitalu. Pa, do jutra!"
     },
     {
       "id": "tak-prosze",
@@ -4141,6 +5045,22 @@
       "text": "tam"
     },
     {
+      "id": "tancerka",
+      "text": "tancerka"
+    },
+    {
+      "id": "tancerz",
+      "text": "tancerz"
+    },
+    {
+      "id": "tanczyc",
+      "text": "tańczyć"
+    },
+    {
+      "id": "tango",
+      "text": "tango"
+    },
+    {
       "id": "tata",
       "text": "tata"
     },
@@ -4173,6 +5093,10 @@
       "text": "ten film jest ciekawy"
     },
     {
+      "id": "ten-inzynier-to-emeryt",
+      "text": "ten inżynier to emeryt"
+    },
+    {
       "id": "ten-klucz",
       "text": "ten klucz"
     },
@@ -4203,6 +5127,10 @@
     {
       "id": "ten-laptop-jest-fajny",
       "text": "ten laptop jest fajny"
+    },
+    {
+      "id": "ten-mezczyzna-pracuje-w-szpitalu-jest-lekarzem",
+      "text": "Ten mężczyzna pracuje w szpitalu, jest lekarzem."
     },
     {
       "id": "ten-olowek-jest-zolty-a-to-okno-jest-duze",
@@ -4321,12 +5249,20 @@
       "text": "To chyba nowy student. Ciekawe, czy jest z Polski."
     },
     {
+      "id": "to-ciekawa-ksiazka",
+      "text": "To ciekawa książka."
+    },
+    {
       "id": "to-dziecko-jest-aktywne",
       "text": "to dziecko jest aktywne"
     },
     {
       "id": "to-dziecko-jest-zdrowe",
       "text": "to dziecko jest zdrowe"
+    },
+    {
+      "id": "to-dziecko-ma-pol-roku",
+      "text": "To dziecko ma pół roku."
     },
     {
       "id": "to-jest-adam",
@@ -4341,12 +5277,24 @@
       "text": "to jest Adam, jest z Polski"
     },
     {
+      "id": "to-jest-adam-moj-kolega",
+      "text": "To jest Adam, mój kolega."
+    },
+    {
       "id": "to-jest-adam-on-jest-z-polski",
       "text": "to jest Adam, on jest z Polski"
     },
     {
+      "id": "to-jest-adam-on-jest-z-polski-2",
+      "text": "To jest Adam. On jest z Polski."
+    },
+    {
       "id": "to-jest-adam-student",
       "text": "To jest Adam, student."
+    },
+    {
+      "id": "to-jest-aktorka",
+      "text": "to jest aktorka"
     },
     {
       "id": "to-jest-alfabet",
@@ -4361,8 +5309,24 @@
       "text": "to jest duże okno"
     },
     {
+      "id": "to-jest-dziennikarz",
+      "text": "to jest dziennikarz"
+    },
+    {
       "id": "to-jest-dziewczyna",
       "text": "to jest dziewczyna"
+    },
+    {
+      "id": "to-jest-ewa-i-jej-brat-adam",
+      "text": "To jest Ewa i jej brat, Adam."
+    },
+    {
+      "id": "to-jest-ewa-jest-polka",
+      "text": "To jest Ewa. Jest Polką."
+    },
+    {
+      "id": "to-jest-ewa-moja-kolezanka",
+      "text": "To jest Ewa, moja koleżanka."
     },
     {
       "id": "to-jest-ewa-nauczycielka",
@@ -4379,6 +5343,10 @@
     {
       "id": "to-jest-gumka",
       "text": "to jest gumka"
+    },
+    {
+      "id": "to-jest-informatyk",
+      "text": "to jest informatyk"
     },
     {
       "id": "to-jest-jego-hobby",
@@ -4409,6 +5377,10 @@
       "text": "to jest laptop"
     },
     {
+      "id": "to-jest-lekarz",
+      "text": "to jest lekarz"
+    },
+    {
       "id": "to-jest-lekcja",
       "text": "to jest lekcja"
     },
@@ -4435,6 +5407,10 @@
     {
       "id": "to-jest-moj-plecak",
       "text": "To jest mój plecak."
+    },
+    {
+      "id": "to-jest-moja-dentystka",
+      "text": "to jest moja dentystka"
     },
     {
       "id": "to-jest-moja-rodzina",
@@ -4537,6 +5513,10 @@
       "text": "to jest twoje dziecko?"
     },
     {
+      "id": "to-jest-urzedniczka",
+      "text": "to jest urzędniczka"
+    },
+    {
       "id": "to-jest-zart",
       "text": "to jest żart"
     },
@@ -4573,6 +5553,10 @@
       "text": "to moja rodzina, a twoja?"
     },
     {
+      "id": "to-moja-rodzina-zona-ewa-i-syn-adam",
+      "text": "To moja rodzina: żona Ewa i syn Adam."
+    },
+    {
       "id": "to-moja-siostra",
       "text": "to moja siostra"
     },
@@ -4607,6 +5591,18 @@
     {
       "id": "to-nie-jest",
       "text": "to nie jest"
+    },
+    {
+      "id": "to-nie-jest-aktor-to-jest-policjant",
+      "text": "To nie jest aktor, to jest policjant."
+    },
+    {
+      "id": "to-nie-jest-dentysta-to-jest-dentystka",
+      "text": "To nie jest dentysta, to jest dentystka."
+    },
+    {
+      "id": "to-nie-jest-dziennikarz-to-jest-fotograf",
+      "text": "to nie jest dziennikarz, to jest fotograf"
     },
     {
       "id": "to-nie-jest-twoj-problem",
@@ -4727,6 +5723,34 @@
     {
       "id": "trzy-plus-siedem-to-jest-dziesiec",
       "text": "trzy plus siedem to jest dziesięć"
+    },
+    {
+      "id": "trzy-razy-dwadziescia-rowna-sie-szescdziesiat",
+      "text": "Trzy razy dwadzieścia równa się sześćdziesiąt."
+    },
+    {
+      "id": "trzydziesci",
+      "text": "trzydzieści"
+    },
+    {
+      "id": "trzydziesci-jeden-plus-dwadziescia-trzy-rowna-si",
+      "text": "Trzydzieści jeden plus dwadzieścia trzy równa się pięćdziesiąt cztery."
+    },
+    {
+      "id": "trzydziesci-plus-dwadziescia-rowna-sie-piecdzies",
+      "text": "trzydzieści plus dwadzieścia równa się pięćdziesiąt"
+    },
+    {
+      "id": "trzydziesci-plus-trzydziesci-rowna-sie-szescdzie",
+      "text": "trzydzieści plus trzydzieści równa się sześćdziesiąt"
+    },
+    {
+      "id": "trzydziesci-razy-trzy-rowna-sie-dziewiecdziesiat",
+      "text": "trzydzieści razy trzy równa się dziewięćdziesiąt"
+    },
+    {
+      "id": "trzydziesci-trzy",
+      "text": "trzydzieści trzy"
     },
     {
       "id": "trzynascie",
@@ -4897,12 +5921,36 @@
       "text": "ulica"
     },
     {
+      "id": "umiesz",
+      "text": "umiesz"
+    },
+    {
+      "id": "umiesz-tanczyc",
+      "text": "umiesz tańczyć?"
+    },
+    {
+      "id": "umiesz-tanczyc-tango",
+      "text": "umiesz tańczyć tango?"
+    },
+    {
+      "id": "urzedniczka",
+      "text": "urzędniczka"
+    },
+    {
+      "id": "urzednik",
+      "text": "urzędnik"
+    },
+    {
       "id": "uzupelnic",
       "text": "uzupełnić"
     },
     {
       "id": "w-berlinie",
       "text": "w Berlinie"
+    },
+    {
+      "id": "w-biurze",
+      "text": "w biurze"
     },
     {
       "id": "w-krakowie",
@@ -4927,6 +5975,22 @@
     {
       "id": "w-porzadku",
       "text": "w porządku"
+    },
+    {
+      "id": "w-restauracji",
+      "text": "w restauracji"
+    },
+    {
+      "id": "w-szkole",
+      "text": "w szkole"
+    },
+    {
+      "id": "w-szpitalu",
+      "text": "w szpitalu"
+    },
+    {
+      "id": "w-teatrze",
+      "text": "w teatrze"
     },
     {
       "id": "w-tenisa",
@@ -5017,6 +6081,10 @@
       "text": "wysoki"
     },
     {
+      "id": "wysokim",
+      "text": "wysokim"
+    },
+    {
       "id": "wysportowany",
       "text": "wysportowany"
     },
@@ -5051,6 +6119,14 @@
     {
       "id": "z-wloch",
       "text": "z Włoch"
+    },
+    {
+      "id": "z-zawodu",
+      "text": "z zawodu"
+    },
+    {
+      "id": "z-zawodu-jestem-muzykiem",
+      "text": "Z zawodu jestem muzykiem."
     },
     {
       "id": "zart",

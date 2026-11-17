@@ -1,0 +1,433 @@
+{
+  "id": "kpk1-l05-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Kto to jest? Jaki on jest?",
+    "meaning": {
+      "en": "Who is it? What is he like?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-a1-t01",
+      "before": "kpk1-l05-a1-e01",
+      "title": {
+        "en": "Presenting someone"
+      },
+      "body": {
+        "en": "To present someone, say who it is, where they are from and live, what they are like and what they do: *to jest Adam, on jest z Polski, mieszka w Krakowie, jest wysoki. Adam to biznesmen.* To ask someone's age, say *ile on ma lat?* or, to a friend, *ile masz lat?* After 2, 3 and 4 it is *lata*: *ma dwa lata*; after 5 to 20 it is *lat*: *ma dwadzieścia lat*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a1-e01",
+      "prompt": "biznesmen",
+      "options": [
+        {
+          "en": "a businessman"
+        },
+        {
+          "en": "a student (a man)"
+        },
+        {
+          "en": "a teacher (a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "biznesmen"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-a1-e02",
+      "text": "Adam to biznesmen",
+      "meaning": {
+        "en": "Adam is a businessman"
+      },
+      "distractors": [
+        "Adam to student",
+        "Adam to nauczyciel"
+      ],
+      "items": [
+        "adam",
+        "to",
+        "biznesmen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a1-e03",
+      "prompt": "lektorka",
+      "options": [
+        {
+          "en": "a student (a woman)"
+        },
+        {
+          "en": "a language teacher (a woman)"
+        },
+        {
+          "en": "a businessman"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "lektorka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-a1-e04",
+      "prompt": {
+        "en": "Ewa is a language teacher"
+      },
+      "acceptedAnswers": [
+        "Ewa to lektorka"
+      ],
+      "distractors": [
+        "studentka",
+        "jest"
+      ],
+      "items": [
+        "ewa",
+        "to",
+        "lektorka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a1-e05",
+      "prompt": "ile",
+      "options": [
+        {
+          "en": "where"
+        },
+        {
+          "en": "why"
+        },
+        {
+          "en": "how many; how much"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ile"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a1-e06",
+      "prompt": "ma",
+      "options": [
+        {
+          "en": "he has; she has; it has"
+        },
+        {
+          "en": "he is; she is; it is"
+        },
+        {
+          "en": "he lives; she lives"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "miec-ma"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a1-e07",
+      "prompt": "lat",
+      "options": [
+        {
+          "en": "years (after 2, 3 and 4: dwa lata)"
+        },
+        {
+          "en": "years (after 5 to 20: pięć lat)"
+        },
+        {
+          "en": "a year; one year"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "lat"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-a1-e08",
+      "prompt": {
+        "en": "how old is he?"
+      },
+      "acceptedAnswers": [
+        "ile on ma lat?",
+        "ile ma lat?"
+      ],
+      "distractors": [
+        "lata",
+        "masz"
+      ],
+      "items": [
+        "ile",
+        "on",
+        "miec-ma",
+        "lat"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-a1-e09",
+      "text": "Adam ma dwadzieścia ___.",
+      "meaning": {
+        "en": "Adam is twenty."
+      },
+      "gaps": [
+        [
+          "lat"
+        ]
+      ],
+      "distractors": [
+        "lata",
+        "rok"
+      ],
+      "items": [
+        "adam",
+        "miec-ma",
+        "dwadziescia",
+        "lat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a1-e10",
+      "prompt": "lata",
+      "options": [
+        {
+          "en": "years (after 5 to 20: pięć lat)"
+        },
+        {
+          "en": "a year; one year"
+        },
+        {
+          "en": "years (after 2, 3 and 4: dwa lata)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "lata"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-a1-e11",
+      "acceptedAnswers": [
+        "on ma trzy lata"
+      ],
+      "meaning": {
+        "en": "he is three"
+      },
+      "items": [
+        "on",
+        "miec-ma",
+        "trzy",
+        "lata"
+      ],
+      "readingAnswers": [
+        "ma trzy lata"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a1-e12",
+      "prompt": "lubi",
+      "options": [
+        {
+          "en": "he likes, she likes"
+        },
+        {
+          "en": "he lives, she lives"
+        },
+        {
+          "en": "he thinks, she thinks"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lubic-lubi"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-a1-e13",
+      "text": "on lubi pracować",
+      "meaning": {
+        "en": "he likes working"
+      },
+      "distractors": [
+        "on lubi sport",
+        "ona lubi pracować"
+      ],
+      "items": [
+        "on",
+        "lubic-lubi",
+        "pracowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-a1-e14",
+      "prompt": "masz",
+      "options": [
+        {
+          "en": "you are (one friend)"
+        },
+        {
+          "en": "you have (one friend)"
+        },
+        {
+          "en": "you speak (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "miec-masz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-a1-e15",
+      "text": "ile masz lat?",
+      "meaning": {
+        "en": "how old are you? (one friend)"
+      },
+      "distractors": [
+        "ile ma lat?",
+        "ile mam lat?"
+      ],
+      "items": [
+        "ile",
+        "miec-masz",
+        "lat"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-a1-e16",
+      "prompt": {
+        "en": "she likes working"
+      },
+      "acceptedAnswers": [
+        "ona lubi pracować"
+      ],
+      "items": [
+        "ona",
+        "lubic-lubi",
+        "pracowac"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l05-a1-e17",
+      "lines": [
+        "To jest Adam. On jest z Polski.",
+        "Mieszka w Krakowie. Jest wysoki i przystojny.",
+        "Adam to biznesmen. Ma dwadzieścia lat.",
+        "Lubi pracować."
+      ],
+      "meaning": {
+        "en": "Ewa presents Adam."
+      },
+      "statements": [
+        {
+          "text": "Adam jest z Niemiec.",
+          "meaning": {
+            "en": "Adam is from Germany."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam to biznesmen.",
+          "meaning": {
+            "en": "Adam is a businessman."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam ma dwadzieścia lat.",
+          "meaning": {
+            "en": "Adam is twenty."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "adam",
+        "on",
+        "z-polski",
+        "mieszkac-mieszka",
+        "w-krakowie",
+        "wysoki",
+        "i",
+        "przystojny",
+        "biznesmen",
+        "miec-ma",
+        "dwadziescia",
+        "lat",
+        "lubic-lubi",
+        "pracowac"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-a1-e18",
+      "pairs": [
+        {
+          "polish": "biznesmen",
+          "meaning": {
+            "en": "a businessman"
+          }
+        },
+        {
+          "polish": "lektorka",
+          "meaning": {
+            "en": "a language teacher (a woman)"
+          }
+        },
+        {
+          "polish": "lata",
+          "meaning": {
+            "en": "years (after 2, 3 and 4)"
+          }
+        },
+        {
+          "polish": "lubi",
+          "meaning": {
+            "en": "he likes, she likes"
+          }
+        },
+        {
+          "polish": "masz",
+          "meaning": {
+            "en": "you have (one friend)"
+          }
+        }
+      ],
+      "items": [
+        "biznesmen",
+        "lektorka",
+        "lata",
+        "lubic-lubi",
+        "miec-masz"
+      ]
+    }
+  ]
+}

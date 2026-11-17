@@ -1,0 +1,295 @@
+{
+  "id": "chat-tango-class",
+  "person": "Ola",
+  "title": {
+    "en": "At the tango class"
+  },
+  "scene": {
+    "en": "In the break of a tango class, Ola, another student, talks to you. You dance only a little. You are an IT specialist and work in an office, you are twenty-eight, and you are interested in music and sport. Ola is your age, so talk to her as to a friend."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "umiec-umiesz",
+    "tanczyc",
+    "tango",
+    "tak",
+    "ale",
+    "tylko",
+    "troche",
+    "a-ty",
+    "ja",
+    "tez",
+    "kim",
+    "byc-jestes",
+    "z-zawodu",
+    "byc-jestem",
+    "informatyk",
+    "informatyczka",
+    "to",
+    "byc-jest",
+    "gdzie",
+    "pracowac-pracujesz",
+    "pracowac-pracuje",
+    "w-biurze",
+    "ile",
+    "miec-masz",
+    "lat",
+    "miec-mam",
+    "dwadziescia",
+    "osiem",
+    "on",
+    "miec-ma",
+    "czym",
+    "interesowac-sie-interesujesz",
+    "interesowac-sie-interesuje",
+    "muzyka-instr",
+    "i",
+    "sportem",
+    "swietnie",
+    "lekarka",
+    "fotografia-instr",
+    "ciekawy",
+    "lekarz",
+    "w-szpitalu",
+    "pa",
+    "do-jutra",
+    "do-widzenia",
+    "pani"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Umiesz tańczyć tango?",
+      "meaning": {
+        "en": "Hi! Can you dance the tango?"
+      },
+      "replies": [
+        {
+          "text": "Tak, ale tylko trochę. A ty?",
+          "meaning": {
+            "en": "Yes, but only a little. And you?"
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Tak, ale tylko trochę. A ty?",
+            "Tak, ale tylko trochę.",
+            "Tylko trochę. A ty?",
+            "Tylko trochę.",
+            "Trochę."
+          ]
+        },
+        {
+          "text": "Tak, ale tylko trochę. A pani?",
+          "meaning": {
+            "en": "Yes, but only a little. And you, madam?"
+          },
+          "register": "formal",
+          "note": {
+            "en": "Ola is a friend, so *pani* is too formal. Ask her *a ty?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Ja też trochę. Kim jesteś z zawodu?",
+      "meaning": {
+        "en": "Me too, a little. What do you do?"
+      },
+      "replies": [
+        {
+          "text": "Jestem informatykiem.",
+          "meaning": {
+            "en": "I am an IT specialist."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Jestem informatykiem.",
+            "Jestem informatyczką.",
+            "Z zawodu jestem informatykiem.",
+            "Z zawodu jestem informatyczką.",
+            "Informatykiem.",
+            "Informatyczką."
+          ]
+        },
+        {
+          "text": "To jest informatyk.",
+          "meaning": {
+            "en": "This is an IT specialist."
+          },
+          "note": {
+            "en": "*To jest* presents someone. About yourself say *jestem* and the job in the instrumental: *jestem informatykiem*, or *informatyczką*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "A gdzie pracujesz?",
+      "meaning": {
+        "en": "And where do you work?"
+      },
+      "replies": [
+        {
+          "text": "Pracuję w biurze.",
+          "meaning": {
+            "en": "I work in an office."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Pracuję w biurze.",
+            "W biurze."
+          ]
+        },
+        {
+          "text": "Pracujesz w biurze.",
+          "meaning": {
+            "en": "You work in an office."
+          },
+          "note": {
+            "en": "*Pracujesz* is \"you work\". About yourself say *pracuję*: *pracuję w biurze*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Ile masz lat?",
+      "meaning": {
+        "en": "How old are you?"
+      },
+      "replies": [
+        {
+          "text": "Mam dwadzieścia osiem lat.",
+          "meaning": {
+            "en": "I'm twenty-eight."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Mam dwadzieścia osiem lat.",
+            "Dwadzieścia osiem.",
+            "Dwadzieścia osiem lat."
+          ]
+        },
+        {
+          "text": "On ma dwadzieścia osiem lat.",
+          "meaning": {
+            "en": "He is twenty-eight."
+          },
+          "note": {
+            "en": "Ola asks about you, so it is *mam*: *mam dwadzieścia osiem lat*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Ja też! Czym się interesujesz?",
+      "meaning": {
+        "en": "Me too! What are you interested in?"
+      },
+      "replies": [
+        {
+          "text": "Interesuję się muzyką i sportem.",
+          "meaning": {
+            "en": "I am interested in music and sport."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Interesuję się muzyką i sportem.",
+            "Interesuję się sportem i muzyką.",
+            "Muzyką i sportem.",
+            "Interesuję się muzyką.",
+            "Interesuję się sportem."
+          ]
+        },
+        {
+          "text": "Interesujesz się muzyką i sportem.",
+          "meaning": {
+            "en": "You are interested in music and sport."
+          },
+          "note": {
+            "en": "*Interesujesz się* is \"you are interested\". About yourself say *interesuję się*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Świetnie! Ja jestem lekarką i interesuję się fotografią.",
+      "meaning": {
+        "en": "Great! I'm a doctor and I'm interested in photography."
+      },
+      "replies": [
+        {
+          "text": "Jesteś lekarką? To ciekawe!",
+          "meaning": {
+            "en": "You're a doctor? That's interesting!"
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Jesteś lekarką? To ciekawe!",
+            "To ciekawe!",
+            "Jesteś lekarką?"
+          ]
+        },
+        {
+          "text": "Jesteś lekarzem? To ciekawe!",
+          "meaning": {
+            "en": "You're a doctor (a man)? That's interesting!"
+          },
+          "note": {
+            "en": "Ola is a woman, so she is *lekarką*, not *lekarzem*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Tak, pracuję w szpitalu. Pa, do jutra!",
+      "meaning": {
+        "en": "Yes, I work in a hospital. Bye, see you tomorrow!"
+      },
+      "replies": [
+        {
+          "text": "Pa! Do jutra!",
+          "meaning": {
+            "en": "Bye! See you tomorrow!"
+          },
+          "right": true,
+          "next": "t8",
+          "acceptedAnswers": [
+            "Pa! Do jutra!",
+            "Pa!",
+            "Do jutra!",
+            "Cześć! Do jutra!"
+          ]
+        },
+        {
+          "text": "Do widzenia, pani!",
+          "meaning": {
+            "en": "Goodbye, madam!"
+          },
+          "register": "formal",
+          "note": {
+            "en": "Ola is a friend, so *pani* is too formal. To her say *pa* or *do jutra*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t8",
+      "says": "Pa!",
+      "meaning": {
+        "en": "Bye!"
+      }
+    }
+  ]
+}

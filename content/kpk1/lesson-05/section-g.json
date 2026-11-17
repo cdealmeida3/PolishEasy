@@ -1,0 +1,437 @@
+{
+  "id": "kpk1-l05-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-g-t01",
+      "before": "kpk1-l05-g-e01",
+      "title": {
+        "en": "Chapter 5 in the book's exercises"
+      },
+      "body": {
+        "en": "Now the chapter in the book's own exercises: sums written in words, who works where, how old people are, and who is who."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-g-e01",
+      "text": "Trzydzieści jeden plus dwadzieścia trzy równa się ___.",
+      "meaning": {
+        "en": "31 + 23 = 54"
+      },
+      "gaps": [
+        [
+          "pięćdziesiąt cztery"
+        ]
+      ],
+      "distractors": [
+        "czterdzieści cztery",
+        "pięćdziesiąt trzy"
+      ],
+      "items": [
+        "trzydziesci",
+        "jeden",
+        "plus",
+        "dwadziescia",
+        "trzy",
+        "rowna-sie",
+        "piecdziesiat",
+        "cztery"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-g-e02",
+      "acceptedAnswers": [
+        "dziewięćdziesiąt sześć minus dwanaście równa się osiemdziesiąt cztery"
+      ],
+      "meaning": {
+        "en": "96 − 12 = 84"
+      },
+      "items": [
+        "dziewiecdziesiat",
+        "szesc",
+        "minus",
+        "dwanascie",
+        "rowna-sie",
+        "osiemdziesiat",
+        "cztery"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-g-e03",
+      "text": "Ten mężczyzna pracuje w szpitalu, jest ___.",
+      "meaning": {
+        "en": "This man works in a hospital, he is a doctor."
+      },
+      "gaps": [
+        [
+          "lekarzem"
+        ]
+      ],
+      "distractors": [
+        "lekarz",
+        "lekarką"
+      ],
+      "items": [
+        "ten",
+        "mezczyzna",
+        "pracowac-pracuje-on",
+        "w-szpitalu",
+        "byc-jest",
+        "lekarz"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-g-e04",
+      "text": "Ona pracuje w restauracji, jest ___.",
+      "meaning": {
+        "en": "She works in a restaurant, she is a waitress."
+      },
+      "gaps": [
+        [
+          "kelnerką"
+        ]
+      ],
+      "distractors": [
+        "kelnerka",
+        "kelnerem"
+      ],
+      "items": [
+        "ona",
+        "pracowac-pracuje-on",
+        "w-restauracji",
+        "byc-jest",
+        "kelnerka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-g-e05",
+      "pairs": [
+        {
+          "polish": "rolnik",
+          "meaning": {
+            "en": "a farmer (a man)"
+          }
+        },
+        {
+          "polish": "urzędniczka",
+          "meaning": {
+            "en": "a clerk (a woman)"
+          }
+        },
+        {
+          "polish": "tancerz",
+          "meaning": {
+            "en": "a dancer (a man)"
+          }
+        },
+        {
+          "polish": "informatyk",
+          "meaning": {
+            "en": "an IT specialist (a man)"
+          }
+        },
+        {
+          "polish": "emeryt",
+          "meaning": {
+            "en": "a pensioner (a man)"
+          }
+        }
+      ],
+      "items": [
+        "rolnik",
+        "urzedniczka",
+        "tancerz",
+        "informatyk",
+        "emeryt"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-g-e06",
+      "text": "ono ma pół roku",
+      "meaning": {
+        "en": "it is six months old"
+      },
+      "distractors": [
+        "ono ma rok",
+        "ono ma dwa lata"
+      ],
+      "items": [
+        "ono",
+        "miec-ma",
+        "pol-roku"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-g-e07",
+      "prompt": {
+        "en": "she is twenty-two"
+      },
+      "acceptedAnswers": [
+        "ona ma dwadzieścia dwa lata",
+        "ma dwadzieścia dwa lata"
+      ],
+      "items": [
+        "ona",
+        "miec-ma",
+        "dwadziescia",
+        "dwa",
+        "lata"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-g-e08",
+      "prompt": {
+        "en": "he is forty-five"
+      },
+      "acceptedAnswers": [
+        "on ma czterdzieści pięć lat",
+        "ma czterdzieści pięć lat"
+      ],
+      "items": [
+        "on",
+        "miec-ma",
+        "czterdziesci",
+        "piec",
+        "lat"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l05-g-e09",
+      "lines": [
+        "Kim jesteś z zawodu?",
+        "Jestem dziennikarką. A ty?",
+        "Jestem fotografem. Czym się interesujesz?",
+        "Interesuję się kinem i muzyką."
+      ],
+      "meaning": {
+        "en": "Two people meet at a party."
+      },
+      "items": [
+        "kim",
+        "byc-jestes",
+        "z-zawodu",
+        "byc-jestem",
+        "dziennikarka",
+        "a-ty",
+        "fotograf",
+        "czym",
+        "interesowac-sie-interesujesz",
+        "interesowac-sie-interesuje",
+        "kinem",
+        "i",
+        "muzyka-instr"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l05-g-e10",
+      "lines": [
+        "To jest Ewa. Jest Polką.",
+        "Mieszka w Warszawie i ma dwadzieścia trzy lata.",
+        "Jest wysoka, wysportowana i wesoła.",
+        "Interesuje się fotografią i sportem."
+      ],
+      "meaning": {
+        "en": "Ola talks about her friend Ewa."
+      },
+      "statements": [
+        {
+          "text": "Ewa ma trzydzieści trzy lata.",
+          "meaning": {
+            "en": "Ewa is thirty-three."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa interesuje się fotografią.",
+          "meaning": {
+            "en": "Ewa is interested in photography."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa jest Polką.",
+          "meaning": {
+            "en": "Ewa is Polish."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "to",
+        "byc-jest",
+        "ewa",
+        "polka-instr",
+        "mieszkac-mieszka",
+        "w-warszawie",
+        "i",
+        "miec-ma",
+        "dwadziescia",
+        "trzy",
+        "lata",
+        "wysoki",
+        "wysportowany",
+        "wesoly",
+        "interesowac-sie-interesuje-on",
+        "fotografia-instr",
+        "sportem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-g-e11",
+      "prompt": {
+        "en": "Ewa is a good journalist"
+      },
+      "acceptedAnswers": [
+        "Ewa jest dobrą dziennikarką"
+      ],
+      "distractors": [
+        "dobra",
+        "dziennikarka"
+      ],
+      "items": [
+        "ewa",
+        "byc-jest",
+        "dobrym",
+        "dziennikarka"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l05-g-e12",
+      "verb": "pracować",
+      "meaning": {
+        "en": "to work"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ w restauracji.",
+      "sentenceMeaning": {
+        "en": "I work in a restaurant."
+      },
+      "acceptedAnswers": [
+        "pracuję"
+      ],
+      "items": [
+        "ja",
+        "pracowac-pracuje",
+        "w-restauracji"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-g-e13",
+      "text": "czterdzieści dwa lata",
+      "meaning": {
+        "en": "forty-two years"
+      },
+      "distractors": [
+        "dwadzieścia dwa lata",
+        "czterdzieści trzy lata"
+      ],
+      "items": [
+        "czterdziesci",
+        "dwa",
+        "lata"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-g-e14",
+      "text": "Mam dwadzieścia jeden ___.",
+      "meaning": {
+        "en": "I'm twenty-one."
+      },
+      "gaps": [
+        [
+          "lat"
+        ]
+      ],
+      "distractors": [
+        "lata",
+        "rok"
+      ],
+      "items": [
+        "miec-mam",
+        "dwadziescia",
+        "jeden",
+        "lat"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-g-e15",
+      "acceptedAnswers": [
+        "on jest wysokim mężczyzną"
+      ],
+      "meaning": {
+        "en": "he is a tall man"
+      },
+      "items": [
+        "on",
+        "byc-jest",
+        "wysokim",
+        "mezczyzna"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-g-e16",
+      "prompt": {
+        "en": "what do you do? (one friend)"
+      },
+      "acceptedAnswers": [
+        "kim jesteś z zawodu?",
+        "kim ty jesteś z zawodu?"
+      ],
+      "items": [
+        "kim",
+        "byc-jestes",
+        "z-zawodu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-g-e17",
+      "prompt": {
+        "en": "30 × 3 = 90"
+      },
+      "acceptedAnswers": [
+        "trzydzieści razy trzy równa się dziewięćdziesiąt"
+      ],
+      "distractors": [
+        "dziewiętnaście",
+        "plus"
+      ],
+      "items": [
+        "trzydziesci",
+        "razy",
+        "trzy",
+        "rowna-sie",
+        "dziewiecdziesiat"
+      ]
+    }
+  ]
+}

@@ -601,6 +601,43 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 5 of the book over the real course in the light theme`() = chapter5Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 5 of the book over the real course in the dark theme`() = chapter5Tour("dark")
+
+    @Test
+    fun `chapter 5 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter5Tour("large") }
+
+    /**
+     * Chapter 5 over the real course: its Lesson screen at the top and its sections, then section
+     * B's Tip on lat and lata, section C's table of jobs for a man and a woman, and section D's
+     * table of the instrumental.
+     */
+    private fun chapter5Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l05") }
+        screen.waitForIdle()
+        shot("189-chapter-5")
+        screen.onAllNodes(hasText("Kim ona jest?", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("189-chapter-5-sections")
+        listOf("kpk1-l05-b2" to "190-chapter-5-lat-lata", "kpk1-l05-c3" to "191-chapter-5-jobs", "kpk1-l05-d2" to "192-chapter-5-narzednik")
+            .forEach { (section, name) ->
+                screen.runOnUiThread {
+                    model.openLesson("kpk1-l05")
+                    model.openSection(section)
+                }
+                screen.waitForIdle()
+                shot(name)
+            }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test

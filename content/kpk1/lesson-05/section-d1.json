@@ -1,0 +1,446 @@
+{
+  "id": "kpk1-l05-d1",
+  "section": {
+    "letter": "D",
+    "heading": "Kim ona jest?",
+    "meaning": {
+      "en": "Who is she? What does she do?"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-d1-t01",
+      "before": "kpk1-l05-d1-e01",
+      "title": {
+        "en": "Kim jesteś z zawodu?"
+      },
+      "body": {
+        "en": "*Kto to jest?* is answered with *to jest* and the plain word: *to jest instruktor*. *Kim on jest?* and *kim jesteś z zawodu?* are answered with a form of *być* and the word in the instrumental, *narzędnik*: *jestem instruktorem*, *on jest instruktorem*, *ona jest aktorką*. A man's job adds *-em*, or *-iem* after *k* and *g*: *aktorem*, *muzykiem*. A job in *-a* changes it to *-ą*: *aktorką*, *dentystą*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d1-e01",
+      "prompt": "kim",
+      "options": [
+        {
+          "en": "what"
+        },
+        {
+          "en": "who (kim jesteś?: who are you, what do you do?)"
+        },
+        {
+          "en": "how"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kim"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d1-e02",
+      "prompt": "z zawodu",
+      "options": [
+        {
+          "en": "from Germany"
+        },
+        {
+          "en": "at school, in a school"
+        },
+        {
+          "en": "by profession"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-zawodu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-d1-e03",
+      "text": "kim jesteś z zawodu?",
+      "meaning": {
+        "en": "what do you do? (one friend)"
+      },
+      "distractors": [
+        "skąd jesteś?",
+        "jak masz na imię?"
+      ],
+      "items": [
+        "kim",
+        "byc-jestes",
+        "z-zawodu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d1-e04",
+      "prompt": "instruktor",
+      "options": [
+        {
+          "en": "an instructor (a man)"
+        },
+        {
+          "en": "an engineer"
+        },
+        {
+          "en": "a dancer (a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "instruktor"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-d1-e05",
+      "prompt": {
+        "en": "I am an instructor (a man)"
+      },
+      "acceptedAnswers": [
+        "jestem instruktorem"
+      ],
+      "distractors": [
+        "instruktor",
+        "jest"
+      ],
+      "items": [
+        "byc-jestem",
+        "instruktor"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-d1-e06",
+      "text": "Z zawodu jestem ___.",
+      "meaning": {
+        "en": "By profession I am a musician (a man)."
+      },
+      "gaps": [
+        [
+          "muzykiem"
+        ]
+      ],
+      "distractors": [
+        "muzyk",
+        "muzyką"
+      ],
+      "items": [
+        "z-zawodu",
+        "byc-jestem",
+        "muzyk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d1-e07",
+      "prompt": "rodzina",
+      "options": [
+        {
+          "en": "a photo"
+        },
+        {
+          "en": "a family"
+        },
+        {
+          "en": "a child"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "rodzina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d1-e08",
+      "prompt": "syn",
+      "options": [
+        {
+          "en": "a husband"
+        },
+        {
+          "en": "a brother"
+        },
+        {
+          "en": "a son"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "syn"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-d1-e09",
+      "text": "to jest moja rodzina",
+      "meaning": {
+        "en": "this is my family"
+      },
+      "distractors": [
+        "to jest moja żona",
+        "to jest mój syn"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "moja",
+        "rodzina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d1-e10",
+      "prompt": "popularny",
+      "options": [
+        {
+          "en": "popular (popularny, popularna, popularne)"
+        },
+        {
+          "en": "pretty (ładny, ładna, ładne)"
+        },
+        {
+          "en": "nice, kind (miły, miła, miłe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "popularny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-d1-e11",
+      "prompt": {
+        "en": "this actress is popular"
+      },
+      "acceptedAnswers": [
+        "ta aktorka jest popularna"
+      ],
+      "items": [
+        "ta",
+        "aktorka",
+        "byc-jest",
+        "popularny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d1-e12",
+      "prompt": "na gitarze",
+      "options": [
+        {
+          "en": "tennis (after grać: gram w tenisa)"
+        },
+        {
+          "en": "the guitar (after grać: gram na gitarze)"
+        },
+        {
+          "en": "the piano (after grać)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-gitarze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-d1-e13",
+      "prompt": {
+        "en": "I play the guitar"
+      },
+      "acceptedAnswers": [
+        "gram na gitarze"
+      ],
+      "distractors": [
+        "grasz",
+        "tenisa"
+      ],
+      "items": [
+        "grac-gram",
+        "na-gitarze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d1-e14",
+      "prompt": "umiesz",
+      "options": [
+        {
+          "en": "you like (one friend)"
+        },
+        {
+          "en": "you have (one friend)"
+        },
+        {
+          "en": "you can, you know how to (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "umiec-umiesz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-d1-e15",
+      "acceptedAnswers": [
+        "umiesz tańczyć tango?"
+      ],
+      "meaning": {
+        "en": "can you dance the tango? (one friend)"
+      },
+      "items": [
+        "umiec-umiesz",
+        "tanczyc",
+        "tango"
+      ],
+      "readingAnswers": [
+        "czy umiesz tańczyć tango?",
+        "ty umiesz tańczyć tango?",
+        "czy ty umiesz tańczyć tango?"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l05-d1-e16",
+      "lines": [
+        "Co to jest?",
+        "To moja rodzina: żona Ewa i syn Adam.",
+        "Ewa jest aktorką. Jest bardzo popularna.",
+        "A ty? Kim jesteś z zawodu?",
+        "Jestem muzykiem i instruktorem."
+      ],
+      "meaning": {
+        "en": "Two colleagues look at a photo during a break."
+      },
+      "statements": [
+        {
+          "text": "Ewa jest aktorką.",
+          "meaning": {
+            "en": "Ewa is an actress."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa jest bardzo popularna.",
+          "meaning": {
+            "en": "Ewa is very popular."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam jest muzykiem.",
+          "meaning": {
+            "en": "Adam is a musician."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "co",
+        "to",
+        "moja",
+        "rodzina",
+        "zona",
+        "ewa",
+        "i",
+        "syn",
+        "adam",
+        "byc-jest",
+        "aktorka",
+        "bardzo",
+        "popularny",
+        "a-ty",
+        "kim",
+        "byc-jestes",
+        "z-zawodu",
+        "byc-jestem",
+        "muzyk",
+        "instruktor"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-d1-e17",
+      "pairs": [
+        {
+          "polish": "kim",
+          "meaning": {
+            "en": "who (kim jesteś?)"
+          }
+        },
+        {
+          "polish": "z zawodu",
+          "meaning": {
+            "en": "by profession"
+          }
+        },
+        {
+          "polish": "instruktor",
+          "meaning": {
+            "en": "an instructor"
+          }
+        },
+        {
+          "polish": "rodzina",
+          "meaning": {
+            "en": "a family"
+          }
+        },
+        {
+          "polish": "syn",
+          "meaning": {
+            "en": "a son"
+          }
+        },
+        {
+          "polish": "na gitarze",
+          "meaning": {
+            "en": "the guitar (gram na gitarze)"
+          }
+        }
+      ],
+      "items": [
+        "kim",
+        "z-zawodu",
+        "instruktor",
+        "rodzina",
+        "syn",
+        "na-gitarze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-d1-e18",
+      "prompt": {
+        "en": "can you dance? (one friend)"
+      },
+      "acceptedAnswers": [
+        "czy umiesz tańczyć?",
+        "umiesz tańczyć?"
+      ],
+      "distractors": [
+        "lubisz",
+        "tango"
+      ],
+      "items": [
+        "czy",
+        "umiec-umiesz",
+        "tanczyc"
+      ]
+    }
+  ]
+}

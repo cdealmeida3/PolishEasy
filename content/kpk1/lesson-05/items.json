@@ -1,0 +1,691 @@
+{
+  "items": [
+    {
+      "id": "biznesmen",
+      "text": "biznesmen",
+      "meaning": {
+        "en": "a businessman"
+      },
+      "forms": [
+        "biznesmenem"
+      ]
+    },
+    {
+      "id": "lektorka",
+      "text": "lektorka",
+      "meaning": {
+        "en": "a language teacher (a woman)"
+      },
+      "forms": [
+        "lektorką"
+      ]
+    },
+    {
+      "id": "lubic-lubi",
+      "text": "lubi",
+      "meaning": {
+        "en": "he likes, she likes"
+      }
+    },
+    {
+      "id": "robic",
+      "text": "robić",
+      "meaning": {
+        "en": "do, make (to do, to make)"
+      }
+    },
+    {
+      "id": "prawie",
+      "text": "prawie",
+      "meaning": {
+        "en": "almost"
+      }
+    },
+    {
+      "id": "pol-roku",
+      "text": "pół roku",
+      "meaning": {
+        "en": "half a year (ono ma pół roku: it is six months old)"
+      }
+    },
+    {
+      "id": "tanczyc",
+      "text": "tańczyć",
+      "meaning": {
+        "en": "dance (to dance)"
+      }
+    },
+    {
+      "id": "tango",
+      "text": "tango",
+      "meaning": {
+        "en": "the tango"
+      }
+    },
+    {
+      "id": "trzydziesci",
+      "text": "trzydzieści",
+      "meaning": {
+        "en": "thirty"
+      }
+    },
+    {
+      "id": "czterdziesci",
+      "text": "czterdzieści",
+      "meaning": {
+        "en": "forty"
+      }
+    },
+    {
+      "id": "piecdziesiat",
+      "text": "pięćdziesiąt",
+      "meaning": {
+        "en": "fifty"
+      }
+    },
+    {
+      "id": "szescdziesiat",
+      "text": "sześćdziesiąt",
+      "meaning": {
+        "en": "sixty"
+      }
+    },
+    {
+      "id": "razy",
+      "text": "razy",
+      "meaning": {
+        "en": "times (in sums: dwa razy dwa)"
+      }
+    },
+    {
+      "id": "siedemdziesiat",
+      "text": "siedemdziesiąt",
+      "meaning": {
+        "en": "seventy"
+      }
+    },
+    {
+      "id": "osiemdziesiat",
+      "text": "osiemdziesiąt",
+      "meaning": {
+        "en": "eighty"
+      }
+    },
+    {
+      "id": "dziewiecdziesiat",
+      "text": "dziewięćdziesiąt",
+      "meaning": {
+        "en": "ninety"
+      }
+    },
+    {
+      "id": "sto",
+      "text": "sto",
+      "meaning": {
+        "en": "a hundred"
+      }
+    },
+    {
+      "id": "pytac-pytasz",
+      "text": "pytasz",
+      "meaning": {
+        "en": "you ask (one friend)"
+      }
+    },
+    {
+      "id": "cwiczyc-cwicze",
+      "text": "ćwiczę",
+      "meaning": {
+        "en": "I practise"
+      }
+    },
+    {
+      "id": "liczebnik",
+      "text": "liczebnik",
+      "meaning": {
+        "en": "a numeral (liczebniki: numerals)"
+      },
+      "forms": [
+        "liczebniki"
+      ]
+    },
+    {
+      "id": "lekarz",
+      "text": "lekarz",
+      "meaning": {
+        "en": "a doctor (a man)"
+      },
+      "forms": [
+        "lekarzem"
+      ]
+    },
+    {
+      "id": "aktor",
+      "text": "aktor",
+      "meaning": {
+        "en": "an actor"
+      },
+      "forms": [
+        "aktorem"
+      ]
+    },
+    {
+      "id": "muzyk",
+      "text": "muzyk",
+      "meaning": {
+        "en": "a musician (a man)"
+      },
+      "forms": [
+        "muzykiem"
+      ]
+    },
+    {
+      "id": "kelner",
+      "text": "kelner",
+      "meaning": {
+        "en": "a waiter"
+      },
+      "forms": [
+        "kelnerem"
+      ]
+    },
+    {
+      "id": "kucharz",
+      "text": "kucharz",
+      "meaning": {
+        "en": "a cook, a chef (a man)"
+      },
+      "forms": [
+        "kucharzem"
+      ]
+    },
+    {
+      "id": "informatyk",
+      "text": "informatyk",
+      "meaning": {
+        "en": "an IT specialist (a man)"
+      },
+      "forms": [
+        "informatykiem"
+      ]
+    },
+    {
+      "id": "policjant",
+      "text": "policjant",
+      "meaning": {
+        "en": "a police officer (a man)"
+      },
+      "forms": [
+        "policjantem"
+      ]
+    },
+    {
+      "id": "rolnik",
+      "text": "rolnik",
+      "meaning": {
+        "en": "a farmer (a man)"
+      },
+      "forms": [
+        "rolnikiem"
+      ]
+    },
+    {
+      "id": "dziennikarz",
+      "text": "dziennikarz",
+      "meaning": {
+        "en": "a journalist (a man)"
+      },
+      "forms": [
+        "dziennikarzem"
+      ]
+    },
+    {
+      "id": "urzednik",
+      "text": "urzędnik",
+      "meaning": {
+        "en": "an office worker, a clerk (a man)"
+      },
+      "forms": [
+        "urzędnikiem"
+      ]
+    },
+    {
+      "id": "fotograf",
+      "text": "fotograf",
+      "meaning": {
+        "en": "a photographer (a man)"
+      },
+      "forms": [
+        "fotografem"
+      ]
+    },
+    {
+      "id": "tancerz",
+      "text": "tancerz",
+      "meaning": {
+        "en": "a dancer (a man)"
+      },
+      "forms": [
+        "tancerzem"
+      ]
+    },
+    {
+      "id": "dentysta",
+      "text": "dentysta",
+      "meaning": {
+        "en": "a dentist (a man)"
+      },
+      "forms": [
+        "dentystą"
+      ]
+    },
+    {
+      "id": "inzynier",
+      "text": "inżynier",
+      "meaning": {
+        "en": "an engineer"
+      },
+      "forms": [
+        "inżynierem"
+      ]
+    },
+    {
+      "id": "emeryt",
+      "text": "emeryt",
+      "meaning": {
+        "en": "a pensioner (a man)"
+      },
+      "forms": [
+        "emerytem"
+      ]
+    },
+    {
+      "id": "lekarka",
+      "text": "lekarka",
+      "meaning": {
+        "en": "a doctor (a woman)"
+      },
+      "forms": [
+        "lekarką"
+      ]
+    },
+    {
+      "id": "aktorka",
+      "text": "aktorka",
+      "meaning": {
+        "en": "an actress"
+      },
+      "forms": [
+        "aktorką"
+      ]
+    },
+    {
+      "id": "kelnerka",
+      "text": "kelnerka",
+      "meaning": {
+        "en": "a waitress"
+      },
+      "forms": [
+        "kelnerką"
+      ]
+    },
+    {
+      "id": "dziennikarka",
+      "text": "dziennikarka",
+      "meaning": {
+        "en": "a journalist (a woman)"
+      },
+      "forms": [
+        "dziennikarką"
+      ]
+    },
+    {
+      "id": "tancerka",
+      "text": "tancerka",
+      "meaning": {
+        "en": "a dancer (a woman)"
+      },
+      "forms": [
+        "tancerką"
+      ]
+    },
+    {
+      "id": "urzedniczka",
+      "text": "urzędniczka",
+      "meaning": {
+        "en": "an office worker, a clerk (a woman)"
+      },
+      "forms": [
+        "urzędniczką"
+      ]
+    },
+    {
+      "id": "informatyczka",
+      "text": "informatyczka",
+      "meaning": {
+        "en": "an IT specialist (a woman)"
+      },
+      "forms": [
+        "informatyczką"
+      ]
+    },
+    {
+      "id": "dentystka",
+      "text": "dentystka",
+      "meaning": {
+        "en": "a dentist (a woman)"
+      },
+      "forms": [
+        "dentystką"
+      ]
+    },
+    {
+      "id": "pracowac-pracuje",
+      "text": "pracuję",
+      "meaning": {
+        "en": "I work"
+      }
+    },
+    {
+      "id": "pracowac-pracujesz",
+      "text": "pracujesz",
+      "meaning": {
+        "en": "you work (one friend)"
+      }
+    },
+    {
+      "id": "pracowac-pracuje-on",
+      "text": "pracuje",
+      "meaning": {
+        "en": "he works, she works"
+      }
+    },
+    {
+      "id": "w-biurze",
+      "text": "w biurze",
+      "meaning": {
+        "en": "in an office"
+      }
+    },
+    {
+      "id": "w-szpitalu",
+      "text": "w szpitalu",
+      "meaning": {
+        "en": "in a hospital"
+      }
+    },
+    {
+      "id": "w-teatrze",
+      "text": "w teatrze",
+      "meaning": {
+        "en": "in a theatre"
+      }
+    },
+    {
+      "id": "w-restauracji",
+      "text": "w restauracji",
+      "meaning": {
+        "en": "in a restaurant"
+      }
+    },
+    {
+      "id": "w-szkole",
+      "text": "w szkole",
+      "meaning": {
+        "en": "at school, in a school"
+      }
+    },
+    {
+      "id": "kim",
+      "text": "kim",
+      "meaning": {
+        "en": "who (kim jesteś?: who are you, what do you do?)"
+      }
+    },
+    {
+      "id": "z-zawodu",
+      "text": "z zawodu",
+      "meaning": {
+        "en": "by profession"
+      }
+    },
+    {
+      "id": "instruktor",
+      "text": "instruktor",
+      "meaning": {
+        "en": "an instructor (a man)"
+      },
+      "forms": [
+        "instruktorem"
+      ]
+    },
+    {
+      "id": "na-gitarze",
+      "text": "na gitarze",
+      "meaning": {
+        "en": "the guitar (after grać: gram na gitarze)"
+      }
+    },
+    {
+      "id": "umiec-umiesz",
+      "text": "umiesz",
+      "meaning": {
+        "en": "you can, you know how to (one friend)"
+      }
+    },
+    {
+      "id": "popularny",
+      "text": "popularny",
+      "meaning": {
+        "en": "popular (popularny, popularna, popularne)"
+      },
+      "forms": [
+        "popularna",
+        "popularne"
+      ]
+    },
+    {
+      "id": "dobrym",
+      "text": "dobrym",
+      "meaning": {
+        "en": "good (dobrym, dobrą: after jest, with a noun)"
+      },
+      "forms": [
+        "dobrą"
+      ]
+    },
+    {
+      "id": "milym",
+      "text": "miłym",
+      "meaning": {
+        "en": "nice, kind (miłym, miłą: after jest, with a noun)"
+      },
+      "forms": [
+        "miłą"
+      ]
+    },
+    {
+      "id": "wysokim",
+      "text": "wysokim",
+      "meaning": {
+        "en": "tall (wysokim, wysoką: after jest, with a noun)"
+      },
+      "forms": [
+        "wysoką"
+      ]
+    },
+    {
+      "id": "jakim",
+      "text": "jakim",
+      "meaning": {
+        "en": "what kind of (jakim, jaką: after jest, with a noun)"
+      },
+      "forms": [
+        "jaką"
+      ]
+    },
+    {
+      "id": "mezczyzna",
+      "text": "mężczyzna",
+      "meaning": {
+        "en": "a man (mężczyzną: after jest)"
+      },
+      "forms": [
+        "mężczyzną"
+      ]
+    },
+    {
+      "id": "dziewczyna-instr",
+      "text": "dziewczyną",
+      "meaning": {
+        "en": "a girl (after jest, with an adjective: jest miłą dziewczyną)"
+      }
+    },
+    {
+      "id": "niemcem",
+      "text": "Niemcem",
+      "meaning": {
+        "en": "German (a man, after jestem, jesteś, jest…)"
+      }
+    },
+    {
+      "id": "niemka-instr",
+      "text": "Niemką",
+      "meaning": {
+        "en": "German (a woman, after jestem, jesteś, jest…)"
+      }
+    },
+    {
+      "id": "japonczykiem",
+      "text": "Japończykiem",
+      "meaning": {
+        "en": "Japanese (a man, after jestem, jesteś, jest…)"
+      }
+    },
+    {
+      "id": "japonka-instr",
+      "text": "Japonką",
+      "meaning": {
+        "en": "Japanese (a woman, after jestem, jesteś, jest…)"
+      }
+    },
+    {
+      "id": "interesowac-sie-interesuje",
+      "text": "interesuję się",
+      "meaning": {
+        "en": "I am interested in"
+      }
+    },
+    {
+      "id": "interesowac-sie-interesujesz",
+      "text": "interesujesz się",
+      "meaning": {
+        "en": "you are interested in (one friend)"
+      }
+    },
+    {
+      "id": "interesowac-sie-interesuje-on",
+      "text": "interesuje się",
+      "meaning": {
+        "en": "he is interested in, she is interested in"
+      }
+    },
+    {
+      "id": "czym",
+      "text": "czym",
+      "meaning": {
+        "en": "what (czym się interesujesz?: what are you interested in?)"
+      }
+    },
+    {
+      "id": "sportem",
+      "text": "sportem",
+      "meaning": {
+        "en": "sport (after interesuję się: interesuję się sportem)"
+      }
+    },
+    {
+      "id": "muzyka-instr",
+      "text": "muzyką",
+      "meaning": {
+        "en": "music (after interesuję się: interesuję się muzyką)"
+      }
+    },
+    {
+      "id": "historia-instr",
+      "text": "historią",
+      "meaning": {
+        "en": "history (after interesuję się: interesuję się historią)"
+      }
+    },
+    {
+      "id": "fotografia-instr",
+      "text": "fotografią",
+      "meaning": {
+        "en": "photography (after interesuję się: interesuję się fotografią)"
+      }
+    },
+    {
+      "id": "czytac-czytasz",
+      "text": "czytasz",
+      "meaning": {
+        "en": "you read, you are reading (one friend)"
+      }
+    },
+    {
+      "id": "pisarz",
+      "text": "pisarz",
+      "meaning": {
+        "en": "a writer (a man)"
+      },
+      "forms": [
+        "pisarzem"
+      ]
+    },
+    {
+      "id": "malarz",
+      "text": "malarz",
+      "meaning": {
+        "en": "a painter (a man)"
+      },
+      "forms": [
+        "malarzem"
+      ]
+    },
+    {
+      "id": "malarstwem",
+      "text": "malarstwem",
+      "meaning": {
+        "en": "painting, art (after interesuję się: interesuję się malarstwem)"
+      }
+    },
+    {
+      "id": "literatura-instr",
+      "text": "literaturą",
+      "meaning": {
+        "en": "literature (after interesuję się: interesuję się literaturą)"
+      }
+    },
+    {
+      "id": "polityka-instr",
+      "text": "polityką",
+      "meaning": {
+        "en": "politics (after interesuję się: interesuję się polityką)"
+      }
+    },
+    {
+      "id": "kinem",
+      "text": "kinem",
+      "meaning": {
+        "en": "cinema, films (after interesuję się: interesuję się kinem)"
+      }
+    },
+    {
+      "id": "moda-instr",
+      "text": "modą",
+      "meaning": {
+        "en": "fashion (after interesuję się: interesuję się modą)"
+      }
+    }
+  ]
+}

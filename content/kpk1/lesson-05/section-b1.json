@@ -1,0 +1,351 @@
+{
+  "id": "kpk1-l05-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Liczebniki 20–100",
+    "meaning": {
+      "en": "Numbers from 20 to 100"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-b1-t01",
+      "before": "kpk1-l05-b1-e01",
+      "title": {
+        "en": "Thirty, forty, fifty"
+      },
+      "body": {
+        "en": "The tens from 30 to 40 end in *-dzieści*: *trzydzieści*, *czterdzieści*. From 50 they end in *-dziesiąt*: *pięćdziesiąt*, *sześćdziesiąt*. The units come after the ten: *trzydzieści dwa*, *czterdzieści cztery*. In sums, *razy* is \"times\": *dwa razy dziesięć równa się dwadzieścia*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b1-e01",
+      "prompt": "trzydzieści",
+      "options": [
+        {
+          "en": "thirteen"
+        },
+        {
+          "en": "forty"
+        },
+        {
+          "en": "thirty"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "trzydziesci"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-b1-e02",
+      "text": "trzydzieści",
+      "meaning": {
+        "en": "thirty"
+      },
+      "distractors": [
+        "trzynaście",
+        "trzy"
+      ],
+      "items": [
+        "trzydziesci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b1-e03",
+      "prompt": "czterdzieści",
+      "options": [
+        {
+          "en": "forty"
+        },
+        {
+          "en": "fourteen"
+        },
+        {
+          "en": "thirty"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czterdziesci"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-b1-e04",
+      "text": "Dwadzieścia plus dwadzieścia równa się ___.",
+      "meaning": {
+        "en": "20 + 20 = 40"
+      },
+      "gaps": [
+        [
+          "czterdzieści"
+        ]
+      ],
+      "distractors": [
+        "czternaście",
+        "trzydzieści"
+      ],
+      "items": [
+        "dwadziescia",
+        "plus",
+        "rowna-sie",
+        "czterdziesci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b1-e05",
+      "prompt": "pięćdziesiąt",
+      "options": [
+        {
+          "en": "fifteen"
+        },
+        {
+          "en": "fifty"
+        },
+        {
+          "en": "forty"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "piecdziesiat"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-b1-e06",
+      "prompt": {
+        "en": "30 + 20 = 50"
+      },
+      "acceptedAnswers": [
+        "trzydzieści plus dwadzieścia równa się pięćdziesiąt"
+      ],
+      "distractors": [
+        "minus",
+        "czterdzieści"
+      ],
+      "items": [
+        "trzydziesci",
+        "plus",
+        "dwadziescia",
+        "rowna-sie",
+        "piecdziesiat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b1-e07",
+      "prompt": "sześćdziesiąt",
+      "options": [
+        {
+          "en": "sixteen"
+        },
+        {
+          "en": "fifty"
+        },
+        {
+          "en": "sixty"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szescdziesiat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-b1-e08",
+      "prompt": "razy",
+      "options": [
+        {
+          "en": "times (in sums: dwa razy dwa)"
+        },
+        {
+          "en": "plus"
+        },
+        {
+          "en": "minus"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "razy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-b1-e09",
+      "text": "Trzy razy dwadzieścia równa się ___.",
+      "meaning": {
+        "en": "3 × 20 = 60"
+      },
+      "gaps": [
+        [
+          "sześćdziesiąt"
+        ]
+      ],
+      "distractors": [
+        "szesnaście",
+        "pięćdziesiąt"
+      ],
+      "items": [
+        "trzy",
+        "razy",
+        "dwadziescia",
+        "rowna-sie",
+        "szescdziesiat"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-b1-e10",
+      "acceptedAnswers": [
+        "czterdzieści cztery"
+      ],
+      "meaning": {
+        "en": "forty-four"
+      },
+      "items": [
+        "czterdziesci",
+        "cztery"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-b1-e11",
+      "text": "pięćdziesiąt pięć",
+      "meaning": {
+        "en": "fifty-five"
+      },
+      "distractors": [
+        "piętnaście",
+        "sześćdziesiąt pięć"
+      ],
+      "items": [
+        "piecdziesiat",
+        "piec"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-b1-e12",
+      "prompt": {
+        "en": "thirty plus thirty equals sixty"
+      },
+      "acceptedAnswers": [
+        "trzydzieści plus trzydzieści równa się sześćdziesiąt"
+      ],
+      "items": [
+        "trzydziesci",
+        "plus",
+        "rowna-sie",
+        "szescdziesiat"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-b1-e13",
+      "pairs": [
+        {
+          "polish": "trzydzieści",
+          "meaning": {
+            "en": "30"
+          }
+        },
+        {
+          "polish": "czterdzieści",
+          "meaning": {
+            "en": "40"
+          }
+        },
+        {
+          "polish": "pięćdziesiąt",
+          "meaning": {
+            "en": "50"
+          }
+        },
+        {
+          "polish": "sześćdziesiąt",
+          "meaning": {
+            "en": "60"
+          }
+        },
+        {
+          "polish": "razy",
+          "meaning": {
+            "en": "×, times"
+          }
+        }
+      ],
+      "items": [
+        "trzydziesci",
+        "czterdziesci",
+        "piecdziesiat",
+        "szescdziesiat",
+        "razy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-b1-e14",
+      "prompt": {
+        "en": "two times thirty equals sixty"
+      },
+      "acceptedAnswers": [
+        "dwa razy trzydzieści równa się sześćdziesiąt"
+      ],
+      "items": [
+        "dwa",
+        "razy",
+        "trzydziesci",
+        "rowna-sie",
+        "szescdziesiat"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-b1-e15",
+      "acceptedAnswers": [
+        "sześćdziesiąt minus dziesięć równa się pięćdziesiąt"
+      ],
+      "meaning": {
+        "en": "60 − 10 = 50"
+      },
+      "items": [
+        "szescdziesiat",
+        "minus",
+        "dziesiec",
+        "rowna-sie",
+        "piecdziesiat"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-b1-e16",
+      "prompt": {
+        "en": "thirty-three"
+      },
+      "acceptedAnswers": [
+        "trzydzieści trzy"
+      ],
+      "distractors": [
+        "trzynaście",
+        "czterdzieści"
+      ],
+      "items": [
+        "trzydziesci",
+        "trzy"
+      ]
+    }
+  ]
+}

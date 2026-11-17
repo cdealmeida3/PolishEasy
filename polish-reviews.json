@@ -113,6 +113,13 @@
             "meaning": "And where do you live?"
         },
         {
+            "text": "A gdzie pracujesz?",
+            "meaning": "And where do you work?"
+        },
+        {
+            "text": "A ja interesuję się kinem."
+        },
+        {
             "text": "A to jest Anna, studentka."
         },
         {
@@ -132,6 +139,9 @@
         {
             "text": "A ty?",
             "meaning": "And you?"
+        },
+        {
+            "text": "A ty? Kim jesteś z zawodu?"
         },
         {
             "text": "A ty? Lubisz sport?",
@@ -173,6 +183,13 @@
             "text": "Adam jest chory."
         },
         {
+            "text": "Adam jest lekarzem."
+        },
+        {
+            "text": "Adam jest muzykiem.",
+            "meaning": "Adam is a musician."
+        },
+        {
             "text": "Adam jest niski.",
             "meaning": "Adam is short."
         },
@@ -183,6 +200,18 @@
         {
             "text": "Adam jest wysportowany.",
             "meaning": "Adam is sporty."
+        },
+        {
+            "text": "Adam jest z Niemiec.",
+            "meaning": "Adam is from Germany."
+        },
+        {
+            "text": "Adam jest z Polski, jest Polakiem, a Ewa jest z Anglii, jest Angielką.",
+            "meaning": "Adam is from Poland, he is Polish, and Ewa is from England, she is English."
+        },
+        {
+            "text": "Adam ma dwadzieścia lat.",
+            "meaning": "Adam is twenty."
         },
         {
             "text": "Adam ma dziewczynę."
@@ -211,8 +240,57 @@
             "text": "Adam nie mówi po polsku."
         },
         {
+            "text": "Adam też interesuje się sportem!"
+        },
+        {
             "text": "Adam też mówi po angielsku",
             "meaning": "Adam speaks English too"
+        },
+        {
+            "text": "Adam to aktor"
+        },
+        {
+            "text": "Adam to biznesmen",
+            "meaning": "Adam is a businessman"
+        },
+        {
+            "text": "Adam to biznesmen.",
+            "meaning": "Adam is a businessman."
+        },
+        {
+            "text": "Adam to biznesmen. Ma dwadzieścia lat."
+        },
+        {
+            "text": "Adam to dentysta"
+        },
+        {
+            "text": "Adam to inżynier.",
+            "meaning": "Adam is an engineer."
+        },
+        {
+            "text": "Adam to kelner"
+        },
+        {
+            "text": "Adam to kelner, a Ewa to kelnerka.",
+            "meaning": "Adam is a waiter, and Ewa is a waitress."
+        },
+        {
+            "text": "Adam to kolega.",
+            "meaning": "Adam is a friend."
+        },
+        {
+            "text": "Adam to kucharz",
+            "meaning": "Adam is a cook"
+        },
+        {
+            "text": "Adam to lekarz"
+        },
+        {
+            "text": "Adam to lekarz.",
+            "meaning": "Adam is a doctor."
+        },
+        {
+            "text": "Adam to nauczyciel"
         },
         {
             "text": "Adam to nauczyciel.",
@@ -223,12 +301,27 @@
             "meaning": "Adam is a teacher. Ewa is a teacher."
         },
         {
+            "text": "Adam to policjant.",
+            "meaning": "Adam is a police officer."
+        },
+        {
+            "text": "Adam to rolnik.",
+            "meaning": "Adam is a farmer."
+        },
+        {
+            "text": "Adam to rolnik?"
+        },
+        {
             "text": "Adam to student",
             "meaning": "Adam is a student (a man)."
         },
         {
             "text": "Adam to student.",
             "meaning": "Adam is a student."
+        },
+        {
+            "text": "Adam to tancerz",
+            "meaning": "Adam is a dancer"
         },
         {
             "text": "Adam uczy się polskiego, bo Ewa jest z Polski",
@@ -244,6 +337,16 @@
         },
         {
             "text": "Adres."
+        },
+        {
+            "text": "Aktor pracuje w teatrze.",
+            "meaning": "An actor works in a theatre."
+        },
+        {
+            "text": "Aktorem."
+        },
+        {
+            "text": "Aktorką."
         },
         {
             "text": "Alfabet",
@@ -275,6 +378,9 @@
             "meaning": "Anna is a student."
         },
         {
+            "text": "Bardzo dobrym!"
+        },
+        {
             "text": "Bardzo mała."
         },
         {
@@ -292,6 +398,9 @@
         },
         {
             "text": "Berlinie"
+        },
+        {
+            "text": "Biznesmenem."
         },
         {
             "text": "Bo jego dziewczyna jest z Polski."
@@ -377,6 +486,10 @@
             "meaning": "Probably from Spain. He speaks Spanish."
         },
         {
+            "text": "Chłopak ma prawie osiemnaście lat.",
+            "meaning": "The boy is almost eighteen."
+        },
+        {
             "text": "Ciekawe, skąd on jest.",
             "meaning": "I wonder where he is from."
         },
@@ -386,6 +499,10 @@
         {
             "text": "Co jest na fotografii z wakacji?",
             "meaning": "What is in the holiday photo?"
+        },
+        {
+            "text": "Co jest na fotografii?",
+            "meaning": "What is in the photo?"
         },
         {
             "text": "Co jest pod numerem trzy?",
@@ -502,6 +619,9 @@
             "meaning": "Hi! My name is Adam."
         },
         {
+            "text": "Cześć! Jestem Ewa."
+        },
+        {
             "text": "Cześć! Jestem Ewa. A ty?",
             "meaning": "Hi! I'm Ewa. And you?"
         },
@@ -534,6 +654,10 @@
             "meaning": "Hi! Where are you from?"
         },
         {
+            "text": "Cześć! Umiesz tańczyć tango?",
+            "meaning": "Hi! Can you dance the tango?"
+        },
+        {
             "text": "Cześć! Wszystko dobrze, a u ciebie?",
             "meaning": "Hi! Everything is fine, and with you?"
         },
@@ -554,7 +678,25 @@
             "text": "Cześć."
         },
         {
+            "text": "Czterdzieści cztery lata."
+        },
+        {
+            "text": "Czterdzieści lat."
+        },
+        {
+            "text": "Czterdzieści pięć."
+        },
+        {
+            "text": "Czterdzieści trzy."
+        },
+        {
+            "text": "Czternaście lat."
+        },
+        {
             "text": "Czy"
+        },
+        {
+            "text": "Czy Adam to lekarz?"
         },
         {
             "text": "Czy dobrze słyszysz?",
@@ -611,6 +753,10 @@
             "meaning": "Do you play tennis? (one friend)"
         },
         {
+            "text": "Czy ty interesujesz się sportem?",
+            "meaning": "Are you interested in sport?"
+        },
+        {
             "text": "Czy ty myślisz, że to jest żart?",
             "meaning": "Do you think that it is a joke?"
         },
@@ -620,6 +766,9 @@
         },
         {
             "text": "Czy wiesz, kto to jest?"
+        },
+        {
+            "text": "Czym się interesujesz?"
         },
         {
             "text": "Czy…?",
@@ -647,6 +796,9 @@
         {
             "text": "Dlaczego ona uczy się polskiego?",
             "meaning": "Why is she learning Polish?"
+        },
+        {
+            "text": "Dlaczego pytasz?"
         },
         {
             "text": "Dlaczego ta torba jest dobra?",
@@ -747,6 +899,18 @@
             "meaning": "I'm twenty years old."
         },
         {
+            "text": "Dwadzieścia osiem lat.",
+            "meaning": "I'm twenty-eight."
+        },
+        {
+            "text": "Dwadzieścia osiem.",
+            "meaning": "I'm twenty-eight."
+        },
+        {
+            "text": "Dwadzieścia plus dwadzieścia równa się czterdzieści.",
+            "meaning": "20 + 20 = 40"
+        },
+        {
             "text": "Dwadzieścia.",
             "meaning": "I'm twenty years old."
         },
@@ -773,6 +937,10 @@
         {
             "text": "Dziewczyna jest z Japonii i mówi po japońsku.",
             "meaning": "The girl is from Japan and speaks Japanese."
+        },
+        {
+            "text": "Dziewczyna ćwiczy liczebniki.",
+            "meaning": "The girl is practising numerals."
         },
         {
             "text": "Dzień dobry!",
@@ -924,6 +1092,63 @@
             "text": "Ewa Nowak."
         },
         {
+            "text": "Ewa czyta książkę.",
+            "meaning": "Ewa is reading a book."
+        },
+        {
+            "text": "Ewa interesuje się fotografią.",
+            "meaning": "Ewa is interested in photography."
+        },
+        {
+            "text": "Ewa interesuje się malarstwem.",
+            "meaning": "Ewa is interested in painting."
+        },
+        {
+            "text": "Ewa interesuje się muzyką.",
+            "meaning": "Ewa is interested in music."
+        },
+        {
+            "text": "Ewa interesuje się polityką.",
+            "meaning": "Ewa is interested in politics."
+        },
+        {
+            "text": "Ewa jest Angielką"
+        },
+        {
+            "text": "Ewa jest Niemką",
+            "meaning": "Ewa is German"
+        },
+        {
+            "text": "Ewa jest Polką"
+        },
+        {
+            "text": "Ewa jest Polką.",
+            "meaning": "Ewa is Polish."
+        },
+        {
+            "text": "Ewa jest aktorką.",
+            "meaning": "Ewa is an actress."
+        },
+        {
+            "text": "Ewa jest aktorką. Jest bardzo popularna."
+        },
+        {
+            "text": "Ewa jest bardzo popularna.",
+            "meaning": "Ewa is very popular."
+        },
+        {
+            "text": "Ewa jest dobrą dziennikarką",
+            "meaning": "Ewa is a good journalist"
+        },
+        {
+            "text": "Ewa jest miłą dziewczyną",
+            "meaning": "Ewa is a nice girl"
+        },
+        {
+            "text": "Ewa jest miłą dziewczyną.",
+            "meaning": "Ewa is a nice girl."
+        },
+        {
             "text": "Ewa jest smutna.",
             "meaning": "Ewa is sad."
         },
@@ -947,8 +1172,23 @@
             "text": "Ewa jest średniego wzrostu. Jest młoda i wesoła."
         },
         {
+            "text": "Ewa lubi tańczyć tango."
+        },
+        {
+            "text": "Ewa lubi tańczyć.",
+            "meaning": "Ewa likes dancing."
+        },
+        {
+            "text": "Ewa ma dwadzieścia pięć lat.",
+            "meaning": "Ewa is twenty-five."
+        },
+        {
             "text": "Ewa ma trzy lata",
             "meaning": "Ewa is three years old"
+        },
+        {
+            "text": "Ewa ma trzydzieści trzy lata.",
+            "meaning": "Ewa is thirty-three."
         },
         {
             "text": "Ewa mieszka w Krakowie.",
@@ -959,12 +1199,41 @@
             "meaning": "Ewa lives in London."
         },
         {
+            "text": "Ewa też pracuje w biurze!"
+        },
+        {
+            "text": "Ewa to dziennikarka.",
+            "meaning": "Ewa is a journalist."
+        },
+        {
+            "text": "Ewa to informatyczka, a Adam to urzędnik",
+            "meaning": "Ewa is an IT specialist, and Adam is a clerk"
+        },
+        {
+            "text": "Ewa to lekarka, a jej koleżanka to dziennikarka."
+        },
+        {
+            "text": "Ewa to lekarka.",
+            "meaning": "Ewa is a doctor."
+        },
+        {
+            "text": "Ewa to lektorka",
+            "meaning": "Ewa is a language teacher"
+        },
+        {
+            "text": "Ewa to nauczycielka, a Adam to aktor",
+            "meaning": "Ewa is a teacher, and Adam is an actor"
+        },
+        {
             "text": "Ewa to nauczycielka.",
             "meaning": "Ewa is a teacher."
         },
         {
             "text": "Ewa to nowa studentka.",
             "meaning": "Ewa is a new student."
+        },
+        {
+            "text": "Ewa, co czytasz?"
         },
         {
             "text": "Ewa, gdzie ty jesteś?",
@@ -1020,6 +1289,10 @@
             "meaning": "Where does this person live?"
         },
         {
+            "text": "Gdzie on mieszka?",
+            "meaning": "Where does he live?"
+        },
+        {
             "text": "Gdzie ona jest?",
             "meaning": "Where is she?"
         },
@@ -1032,8 +1305,15 @@
             "meaning": "Where do they live now?"
         },
         {
+            "text": "Gdzie pracujesz?"
+        },
+        {
             "text": "Gdzie ty mieszkasz?",
             "meaning": "Where do you live? (one friend)"
+        },
+        {
+            "text": "Gdzie ty pracujesz?",
+            "meaning": "Where do you work?"
         },
         {
             "text": "Gdzie wy jesteście?",
@@ -1056,12 +1336,24 @@
             "text": "Hiszpański i polski."
         },
         {
+            "text": "Ile lat ma dziewczyna?",
+            "meaning": "How old is the girl?"
+        },
+        {
+            "text": "Ile lat ma jej mąż?",
+            "meaning": "How old is her husband?"
+        },
+        {
             "text": "Ile ma pan lat?",
             "meaning": "How old are you? (to a man)"
         },
         {
             "text": "Ile macie lat? Mamy siedemnaście lat.",
             "meaning": "How old are you? (several people) We are seventeen."
+        },
+        {
+            "text": "Ile masz lat?",
+            "meaning": "How old are you?"
         },
         {
             "text": "Ile masz lat?",
@@ -1072,6 +1364,10 @@
             "meaning": "How old are you? (to a friend)"
         },
         {
+            "text": "Ile on ma lat?",
+            "meaning": "How old is he?"
+        },
+        {
             "text": "Imię",
             "meaning": "First name"
         },
@@ -1079,11 +1375,59 @@
             "text": "Imię i nazwisko."
         },
         {
+            "text": "Informatyczką.",
+            "meaning": "I am an IT specialist."
+        },
+        {
+            "text": "Informatykiem.",
+            "meaning": "I am an IT specialist."
+        },
+        {
+            "text": "Interesuje się fotografią i sportem."
+        },
+        {
+            "text": "Interesujesz się muzyką i sportem.",
+            "meaning": "You are interested in music and sport."
+        },
+        {
+            "text": "Interesuję się fotografią. A ty?"
+        },
+        {
+            "text": "Interesuję się kinem i muzyką."
+        },
+        {
+            "text": "Interesuję się literaturą i malarstwem."
+        },
+        {
+            "text": "Interesuję się malarstwem i literaturą.",
+            "meaning": "I am interested in painting and literature."
+        },
+        {
+            "text": "Interesuję się muzyką i sportem.",
+            "meaning": "I am interested in music and sport."
+        },
+        {
+            "text": "Interesuję się muzyką.",
+            "meaning": "I am interested in music and sport."
+        },
+        {
+            "text": "Interesuję się sportem i muzyką.",
+            "meaning": "I am interested in music and sport."
+        },
+        {
+            "text": "Interesuję się sportem.",
+            "meaning": "I am interested in music and sport."
+        },
+        {
             "text": "Ja chodzę do szkoły.",
             "meaning": "I go to school."
         },
         {
             "text": "Ja chodzę do szkoły. Lubisz sport?"
+        },
+        {
+            "text": "Ja interesuję się sportem.",
+            "meaning": "I am interested in sport."
         },
         {
             "text": "Ja jestem w Krakowie.",
@@ -1110,8 +1454,27 @@
             "meaning": "I live in Warsaw, and where do you live? (one friend)"
         },
         {
+            "text": "Ja pracuję w biurze."
+        },
+        {
+            "text": "Ja pracuję w restauracji.",
+            "meaning": "I work in a restaurant."
+        },
+        {
+            "text": "Ja pracuję w szpitalu.",
+            "meaning": "I work in a hospital."
+        },
+        {
             "text": "Ja robię test.",
             "meaning": "I am doing a test."
+        },
+        {
+            "text": "Ja też trochę. Kim jesteś z zawodu?",
+            "meaning": "Me too, a little. What do you do?"
+        },
+        {
+            "text": "Ja też! Czym się interesujesz?",
+            "meaning": "Me too! What are you interested in?"
         },
         {
             "text": "Ja też! Grasz w tenisa?",
@@ -1176,8 +1539,16 @@
             "meaning": "What is the last colour?"
         },
         {
+            "text": "Jaki jest ostatni liczebnik?",
+            "meaning": "What is the last numeral?"
+        },
+        {
             "text": "Jaki jest pierwszy kolor?",
             "meaning": "What is the first colour?"
+        },
+        {
+            "text": "Jaki jest pierwszy liczebnik?",
+            "meaning": "What is the first numeral?"
         },
         {
             "text": "Jaki jest problem?",
@@ -1242,11 +1613,39 @@
             "meaning": "Which word has to be spelled?"
         },
         {
+            "text": "Jakim lekarzem?"
+        },
+        {
+            "text": "Japonką",
+            "meaning": "Japanese (a woman)"
+        },
+        {
+            "text": "Japonką",
+            "meaning": "Japanese (a woman, after jestem, jesteś, jest…)"
+        },
+        {
+            "text": "Japończykiem",
+            "meaning": "Japanese (a man)"
+        },
+        {
+            "text": "Japończykiem",
+            "meaning": "Japanese (a man, after jestem, jesteś, jest…)"
+        },
+        {
             "text": "Japoński i francuski."
         },
         {
             "text": "Jedna osoba nie wie, czy lektorka jest miła.",
             "meaning": "One person does not know if the teacher is nice."
+        },
+        {
+            "text": "Jego kolega."
+        },
+        {
+            "text": "Jego rodzina."
+        },
+        {
+            "text": "Jego szkoła."
         },
         {
             "text": "Jego żona jest z Polski.",
@@ -1259,6 +1658,10 @@
             "text": "Jest młoda, miła i bardzo inteligentna."
         },
         {
+            "text": "Jest przerwa.",
+            "meaning": "It is a break."
+        },
+        {
             "text": "Jest stary, ale dobry.",
             "meaning": "Old, but good."
         },
@@ -1268,6 +1671,9 @@
         {
             "text": "Jest tam, na lewo.",
             "meaning": "Your pen is over there, on the left."
+        },
+        {
+            "text": "Jest wysoka, wysportowana i wesoła."
         },
         {
             "text": "Jest wysoki i przystojny."
@@ -1283,6 +1689,26 @@
         {
             "text": "Jestem Adam.",
             "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Jestem Angielką, ale mieszkam w Krakowie."
+        },
+        {
+            "text": "Jestem dziennikarką. A ty?"
+        },
+        {
+            "text": "Jestem fotografem. Czym się interesujesz?"
+        },
+        {
+            "text": "Jestem informatyczką.",
+            "meaning": "I am an IT specialist."
+        },
+        {
+            "text": "Jestem informatykiem.",
+            "meaning": "I am an IT specialist."
+        },
+        {
+            "text": "Jestem muzykiem i instruktorem."
         },
         {
             "text": "Jestem pewna, że on jest ambitny.",
@@ -1347,6 +1773,18 @@
             "text": "Jesteś"
         },
         {
+            "text": "Jesteś lekarką?",
+            "meaning": "You're a doctor? That's interesting!"
+        },
+        {
+            "text": "Jesteś lekarką? To ciekawe!",
+            "meaning": "You're a doctor? That's interesting!"
+        },
+        {
+            "text": "Jesteś lekarzem? To ciekawe!",
+            "meaning": "You're a doctor (a man)? That's interesting!"
+        },
+        {
             "text": "Jesteś w Krakowie.",
             "meaning": "You are in Kraków."
         },
@@ -1373,8 +1811,42 @@
             "text": "Kawa, herbata."
         },
         {
+            "text": "Kelner pracuje w restauracji.",
+            "meaning": "A waiter works in a restaurant."
+        },
+        {
+            "text": "Kim jest Adam?"
+        },
+        {
+            "text": "Kim jest jego żona?",
+            "meaning": "What does his wife do?"
+        },
+        {
+            "text": "Kim jest z zawodu jego kolega?",
+            "meaning": "What does his friend do?"
+        },
+        {
+            "text": "Kim jesteś z zawodu?"
+        },
+        {
+            "text": "Kim on jest z zawodu?",
+            "meaning": "What does he do?"
+        },
+        {
+            "text": "Kim ona jest?",
+            "meaning": "Who is she? What does she do?"
+        },
+        {
             "text": "Klasa, prezentacja",
             "meaning": "In class: introducing yourself"
+        },
+        {
+            "text": "Kolega gra tylko na gitarze.",
+            "meaning": "The friend only plays the guitar."
+        },
+        {
+            "text": "Kolega jest też instruktorem tanga.",
+            "meaning": "The friend is also a tango instructor."
         },
         {
             "text": "Kolega mówi: „Miło mi cię poznać”.",
@@ -1382,6 +1854,10 @@
         },
         {
             "text": "Kolega z pracy."
+        },
+        {
+            "text": "Koleżanka jest Japonką.",
+            "meaning": "The friend (a woman) is Japanese."
         },
         {
             "text": "Koleżanka z grupy."
@@ -1409,6 +1885,10 @@
             "meaning": "Who is it?"
         },
         {
+            "text": "Kto to jest? Jaki on jest?",
+            "meaning": "Who is it? What is he like?"
+        },
+        {
             "text": "Kto to jest? To jest nowy student.",
             "meaning": "Who is it? It is a new student."
         },
@@ -1421,11 +1901,20 @@
             "meaning": "Who…? What…?"
         },
         {
+            "text": "Lekarką."
+        },
+        {
+            "text": "Lekarzem."
+        },
+        {
             "text": "Lektorka jest z Hiszpanii.",
             "meaning": "The teacher is from Spain."
         },
         {
             "text": "Lektorka języka hiszpańskiego."
+        },
+        {
+            "text": "Lektorką."
         },
         {
             "text": "Leon"
@@ -1451,15 +1940,33 @@
             "meaning": "Numbers 11 to 29"
         },
         {
+            "text": "Liczebniki 20–100",
+            "meaning": "Numbers from 20 to 100"
+        },
+        {
             "text": "Login i hasło."
+        },
+        {
+            "text": "Lubi pracować."
         },
         {
             "text": "Lubię sport.",
             "meaning": "Yes, I like sport."
         },
         {
+            "text": "Lubię tańczyć tango."
+        },
+        {
+            "text": "Mam czterdzieści trzy lata, a mój mąż ma czterdzieści pięć lat.",
+            "meaning": "I'm forty-three, and my husband is forty-five."
+        },
+        {
             "text": "Mam dwa lata.",
             "meaning": "I'm two years old."
+        },
+        {
+            "text": "Mam dwadzieścia jeden lat.",
+            "meaning": "I'm twenty-one."
         },
         {
             "text": "Mam dwadzieścia lat.",
@@ -1468,6 +1975,16 @@
         {
             "text": "Mam dwadzieścia lat.",
             "meaning": "I'm twenty."
+        },
+        {
+            "text": "Mam dwadzieścia osiem lat.",
+            "meaning": "I'm twenty-eight."
+        },
+        {
+            "text": "Mam dziewiętnaście lat. Co lubisz robić?"
+        },
+        {
+            "text": "Mam dziewięćdziesiąt lat!"
         },
         {
             "text": "Mam na imię Adam.",
@@ -1480,6 +1997,12 @@
         {
             "text": "Mam na imię Adam.",
             "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Mam prawie dwadzieścia lat."
+        },
+        {
+            "text": "Mam prawie dwadzieścia lat. A ty?"
         },
         {
             "text": "Mam tu komórkę, klucz i paszport."
@@ -1520,6 +2043,12 @@
         {
             "text": "Mianownik",
             "meaning": "The nominative"
+        },
+        {
+            "text": "Mieszka w Krakowie. Jest wysoki i przystojny."
+        },
+        {
+            "text": "Mieszka w Warszawie i ma dwadzieścia trzy lata."
         },
         {
             "text": "Mieszkam w Krakowie.",
@@ -1583,6 +2112,13 @@
             "meaning": "My sister is twelve years old."
         },
         {
+            "text": "Muzykiem."
+        },
+        {
+            "text": "Muzyką i sportem.",
+            "meaning": "I am interested in music and sport."
+        },
+        {
             "text": "My jesteśmy tutaj.",
             "meaning": "We are here."
         },
@@ -1628,6 +2164,9 @@
         {
             "text": "Mój długopis jest tam, na lewo.",
             "meaning": "My pen is over there, on the left."
+        },
+        {
+            "text": "Mój kolega jest Niemcem, a koleżanka jest Japonką."
         },
         {
             "text": "Mój numer telefonu to dwadzieścia cztery, osiemnaście, dwadzieścia dziewięć.",
@@ -1792,6 +2331,12 @@
             "meaning": "I don't know."
         },
         {
+            "text": "Nie, Adam to inżynier."
+        },
+        {
+            "text": "Nie, Adam to policjant."
+        },
+        {
             "text": "Nie, jest bardzo pracowity!"
         },
         {
@@ -1854,7 +2399,23 @@
             "meaning": "No, green."
         },
         {
+            "text": "Niemcem",
+            "meaning": "German (a man)"
+        },
+        {
+            "text": "Niemcem",
+            "meaning": "German (a man, after jestem, jesteś, jest…)"
+        },
+        {
             "text": "Niemcy"
+        },
+        {
+            "text": "Niemką",
+            "meaning": "German (a woman)"
+        },
+        {
+            "text": "Niemką",
+            "meaning": "German (a woman, after jestem, jesteś, jest…)"
         },
         {
             "text": "Niski i leniwy."
@@ -1887,16 +2448,36 @@
             "meaning": "He is ill, but she is healthy."
         },
         {
+            "text": "On jest dobry. On jest dobrym lekarzem.",
+            "meaning": "He is good. He is a good doctor."
+        },
+        {
             "text": "On jest gruby, ale zdrowy, bo jest bardzo aktywny.",
             "meaning": "He is fat, but healthy, because he is very active."
+        },
+        {
+            "text": "On jest niski i gruby.",
+            "meaning": "He is short and fat."
         },
         {
             "text": "On jest wysoki, a ona jest niska.",
             "meaning": "He is tall, and she is short."
         },
         {
+            "text": "On jest z Niemiec. Jest Niemcem.",
+            "meaning": "He is from Germany. He is German."
+        },
+        {
             "text": "On jest z Ukrainy i mówi po ukraińsku, a ona jest z Japonii i mówi po japońsku.",
             "meaning": "He is from Ukraine and speaks Ukrainian, and she is from Japan and speaks Japanese."
+        },
+        {
+            "text": "On lubi pracować.",
+            "meaning": "He likes working."
+        },
+        {
+            "text": "On ma dwadzieścia osiem lat.",
+            "meaning": "He is twenty-eight."
         },
         {
             "text": "On mieszka w Berlinie.",
@@ -1927,6 +2508,14 @@
             "meaning": "She thinks that he is nice."
         },
         {
+            "text": "Ona pracuje w restauracji, jest kelnerką.",
+            "meaning": "She works in a restaurant, she is a waitress."
+        },
+        {
+            "text": "Ona pracuje w teatrze w Berlinie.",
+            "meaning": "She works in a theatre in Berlin."
+        },
+        {
             "text": "Oni chodzą do szkoły.",
             "meaning": "They go to school."
         },
@@ -1949,6 +2538,9 @@
         {
             "text": "Oni uczą się w Warszawie.",
             "meaning": "They study in Warsaw."
+        },
+        {
+            "text": "Osiemnaście."
         },
         {
             "text": "Ołówek jest tam."
@@ -1985,6 +2577,10 @@
             "meaning": "Mr Adam lives here."
         },
         {
+            "text": "Pan Adam to emeryt. Ma osiemdziesiąt lat.",
+            "meaning": "Mr Adam is a pensioner. He is eighty."
+        },
+        {
             "text": "Pan jest z Argentyny.",
             "meaning": "He is from Argentina."
         },
@@ -2007,6 +2603,10 @@
         {
             "text": "Pani jest z Anglii.",
             "meaning": "The woman is from England."
+        },
+        {
+            "text": "Pani ma czterdzieści trzy lata.",
+            "meaning": "The lady is forty-three."
         },
         {
             "text": "Paszport."
@@ -2032,6 +2632,13 @@
             "meaning": "Two plus three equals five."
         },
         {
+            "text": "Pięćdziesiąt cztery."
+        },
+        {
+            "text": "Pięćdziesiąt plus pięćdziesiąt równa się sto.",
+            "meaning": "50 + 50 = 100"
+        },
+        {
             "text": "Plac Mariacki: jaki numer?",
             "meaning": "Mariacki Square: what number?"
         },
@@ -2052,11 +2659,19 @@
         },
         {
             "text": "Polakiem",
+            "meaning": "Polish (a man)"
+        },
+        {
+            "text": "Polakiem",
             "meaning": "Polish (a man, after jestem, jesteś, jest)"
         },
         {
             "text": "Polecenia",
             "meaning": "Instructions"
+        },
+        {
+            "text": "Polką",
+            "meaning": "Polish (a woman)"
         },
         {
             "text": "Polką",
@@ -2071,6 +2686,17 @@
         {
             "text": "Powitania i pożegnania",
             "meaning": "Hello and goodbye"
+        },
+        {
+            "text": "Pracujesz w biurze.",
+            "meaning": "You work in an office."
+        },
+        {
+            "text": "Pracuję w biurze.",
+            "meaning": "I work in an office."
+        },
+        {
+            "text": "Pracuję w szpitalu. A ty?"
         },
         {
             "text": "Prawda czy nieprawda?",
@@ -2188,6 +2814,9 @@
             "meaning": "At the school office: introducing yourself"
         },
         {
+            "text": "Siedemnaście."
+        },
+        {
             "text": "Skąd jest kobieta?",
             "meaning": "Where is the woman from?"
         },
@@ -2206,6 +2835,10 @@
         {
             "text": "Skąd jesteś? Gdzie mieszkasz?",
             "meaning": "Where are you from? Where do you live?"
+        },
+        {
+            "text": "Skąd on jest?",
+            "meaning": "Where is he from?"
         },
         {
             "text": "Skąd pan jest?",
@@ -2267,6 +2900,18 @@
         {
             "text": "Tak, ale tylko trochę.",
             "meaning": "Yes, but only a little."
+        },
+        {
+            "text": "Tak, ale tylko trochę.",
+            "meaning": "Yes, but only a little. And you?"
+        },
+        {
+            "text": "Tak, ale tylko trochę. A pani?",
+            "meaning": "Yes, but only a little. And you, madam?"
+        },
+        {
+            "text": "Tak, ale tylko trochę. A ty?",
+            "meaning": "Yes, but only a little. And you?"
         },
         {
             "text": "Tak, bardzo sympatyczny.",
@@ -2345,6 +2990,10 @@
             "meaning": "Yes, this backpack is new."
         },
         {
+            "text": "Tak, pracuję w szpitalu. Pa, do jutra!",
+            "meaning": "Yes, I work in a hospital. Bye, see you tomorrow!"
+        },
+        {
             "text": "Tak, ten plecak jest nowa.",
             "meaning": "Yes, this backpack is new."
         },
@@ -2417,6 +3066,10 @@
             "meaning": "This classmate (a man) is nice, and this classmate (a woman) is interesting."
         },
         {
+            "text": "Ten mężczyzna pracuje w szpitalu, jest lekarzem.",
+            "meaning": "This man works in a hospital, he is a doctor."
+        },
+        {
             "text": "Ten ołówek jest żółty, a to okno jest duże.",
             "meaning": "This pencil is yellow, and this window is big."
         },
@@ -2459,13 +3112,43 @@
             "meaning": "It's probably a new student. I wonder if he is from Poland."
         },
         {
+            "text": "To ciekawa książka."
+        },
+        {
+            "text": "To ciekawe!",
+            "meaning": "You're a doctor? That's interesting!"
+        },
+        {
+            "text": "To dziecko ma pół roku.",
+            "meaning": "This child is six months old."
+        },
+        {
+            "text": "To jest Adam, mój kolega."
+        },
+        {
             "text": "To jest Adam, student."
+        },
+        {
+            "text": "To jest Adam.",
+            "meaning": "This is Adam."
         },
         {
             "text": "To jest Adam. Jest wysoki, przystojny i wysportowany."
         },
         {
+            "text": "To jest Adam. On jest z Polski."
+        },
+        {
+            "text": "To jest Ewa i jej brat, Adam."
+        },
+        {
+            "text": "To jest Ewa, moja koleżanka."
+        },
+        {
             "text": "To jest Ewa, nauczycielka."
+        },
+        {
+            "text": "To jest Ewa. Jest Polką."
         },
         {
             "text": "To jest Leon. Jest z Włoch."
@@ -2473,6 +3156,10 @@
         {
             "text": "To jest dialog oficjalny.",
             "meaning": "This is a formal dialogue."
+        },
+        {
+            "text": "To jest informatyk.",
+            "meaning": "This is an IT specialist."
         },
         {
             "text": "To jest moja torba. Jest duża i czerwona."
@@ -2524,8 +3211,19 @@
             "meaning": "Ten minus four equals six."
         },
         {
+            "text": "To moja rodzina: żona Ewa i syn Adam."
+        },
+        {
             "text": "To mój plecak.",
             "meaning": "It is my backpack."
+        },
+        {
+            "text": "To nie jest aktor, to jest policjant.",
+            "meaning": "This isn't an actor, it's a police officer."
+        },
+        {
+            "text": "To nie jest dentysta, to jest dentystka.",
+            "meaning": "It isn't a dentist (a man), it's a dentist (a woman)."
         },
         {
             "text": "To okno jest duże.",
@@ -2578,12 +3276,24 @@
             "meaning": "Yes, a little."
         },
         {
+            "text": "Trochę.",
+            "meaning": "Yes, but only a little. And you?"
+        },
+        {
             "text": "Trochę. A ty mówisz po angielsku?",
             "meaning": "A little. And do you speak English?"
         },
         {
             "text": "Trochę. Mówisz po angielsku?",
             "meaning": "A little. And do you speak English?"
+        },
+        {
+            "text": "Trzy razy dwadzieścia równa się sześćdziesiąt.",
+            "meaning": "3 × 20 = 60"
+        },
+        {
+            "text": "Trzydzieści jeden plus dwadzieścia trzy równa się pięćdziesiąt cztery.",
+            "meaning": "31 + 23 = 54"
         },
         {
             "text": "Tu."
@@ -2619,6 +3329,14 @@
         {
             "text": "Tylko trochę.",
             "meaning": "Yes, but only a little."
+        },
+        {
+            "text": "Tylko trochę.",
+            "meaning": "Yes, but only a little. And you?"
+        },
+        {
+            "text": "Tylko trochę. A ty?",
+            "meaning": "Yes, but only a little. And you?"
         },
         {
             "text": "Uczę się polskiego, bo moja dziewczyna jest z Polski.",
@@ -2688,6 +3406,10 @@
         },
         {
             "text": "W Warszawie."
+        },
+        {
+            "text": "W biurze.",
+            "meaning": "I work in an office."
         },
         {
             "text": "W domu."
@@ -2807,6 +3529,22 @@
             "text": "Z Włoch."
         },
         {
+            "text": "Z zawodu jestem informatyczką.",
+            "meaning": "I am an IT specialist."
+        },
+        {
+            "text": "Z zawodu jestem informatykiem.",
+            "meaning": "I am an IT specialist."
+        },
+        {
+            "text": "Z zawodu jestem muzykiem.",
+            "meaning": "By profession I am a musician (a man)."
+        },
+        {
+            "text": "Zawody",
+            "meaning": "Jobs"
+        },
+        {
             "text": "Zeszyt."
         },
         {
@@ -2847,6 +3585,22 @@
         },
         {
             "text": "agresywny"
+        },
+        {
+            "text": "aktor",
+            "meaning": "an actor"
+        },
+        {
+            "text": "aktorem",
+            "meaning": "an actor"
+        },
+        {
+            "text": "aktorka",
+            "meaning": "an actress"
+        },
+        {
+            "text": "aktorką",
+            "meaning": "an actress"
         },
         {
             "text": "aktywna",
@@ -2961,6 +3715,17 @@
         {
             "text": "biały",
             "meaning": "white (biały, biała, białe)"
+        },
+        {
+            "text": "biurze"
+        },
+        {
+            "text": "biznesmen",
+            "meaning": "a businessman"
+        },
+        {
+            "text": "biznesmenem",
+            "meaning": "a businessman"
         },
         {
             "text": "bo",
@@ -3152,8 +3917,22 @@
             "meaning": "what"
         },
         {
+            "text": "co czytasz?",
+            "meaning": "what are you reading? (one friend)"
+        },
+        {
+            "text": "co lubisz robić?",
+            "meaning": "what do you like doing? (one friend)"
+        },
+        {
+            "text": "co lubisz?"
+        },
+        {
             "text": "co nowego?",
             "meaning": "what's new?"
+        },
+        {
+            "text": "co robisz?"
         },
         {
             "text": "co słychać u ciebie?",
@@ -3212,6 +3991,10 @@
         {
             "text": "co to?",
             "meaning": "what is it? what is this?"
+        },
+        {
+            "text": "co ty lubisz robić?",
+            "meaning": "what do you like doing? (one friend)"
         },
         {
             "text": "co u ciebie słychać?",
@@ -3327,6 +4110,25 @@
         {
             "text": "cześć, mam na imię Ewa i mam dwadzieścia lat",
             "meaning": "hi, my first name is Ewa and I am twenty years old"
+        },
+        {
+            "text": "czterdzieści",
+            "meaning": "40"
+        },
+        {
+            "text": "czterdzieści",
+            "meaning": "forty"
+        },
+        {
+            "text": "czterdzieści cztery",
+            "meaning": "forty-four"
+        },
+        {
+            "text": "czterdzieści dwa lata",
+            "meaning": "forty-two years"
+        },
+        {
+            "text": "czterdzieści trzy lata"
         },
         {
             "text": "czternaście",
@@ -3449,8 +4251,31 @@
             "meaning": "can you hear? (one friend)"
         },
         {
+            "text": "czy to fotograf?",
+            "meaning": "is it a photographer?"
+        },
+        {
+            "text": "czy to informatyczka?",
+            "meaning": "is it an IT specialist (a woman)?"
+        },
+        {
+            "text": "czy to jest fotograf?",
+            "meaning": "is it a photographer?"
+        },
+        {
+            "text": "czy to jest informatyczka?",
+            "meaning": "is it an IT specialist (a woman)?"
+        },
+        {
+            "text": "czy to jest kelner?",
+            "meaning": "is it a waiter?"
+        },
+        {
             "text": "czy to jest klucz?",
             "meaning": "is it a key?"
+        },
+        {
+            "text": "czy to jest lekarz?"
         },
         {
             "text": "czy to jest mapa?",
@@ -3465,6 +4290,9 @@
             "meaning": "is it a passport?"
         },
         {
+            "text": "czy to jest rolnik?"
+        },
+        {
             "text": "czy to jest twoje dziecko?",
             "meaning": "is this your child? (to one friend)"
         },
@@ -3473,12 +4301,20 @@
             "meaning": "is this your brother? (to one friend)"
         },
         {
+            "text": "czy to jest urzędnik?",
+            "meaning": "is it a clerk (a man)?"
+        },
+        {
             "text": "czy to jest zeszyt? Tak, to jest zeszyt.",
             "meaning": "is it a notebook? Yes, it is a notebook."
         },
         {
             "text": "czy to jest…?",
             "meaning": "is it…? is this…? (czy to jest książka?)"
+        },
+        {
+            "text": "czy to kelner?",
+            "meaning": "is it a waiter?"
         },
         {
             "text": "czy to twoje dziecko?",
@@ -3513,6 +4349,18 @@
             "meaning": "can you hear? (one friend)"
         },
         {
+            "text": "czy ty umiesz tańczyć tango?",
+            "meaning": "can you dance the tango? (one friend)"
+        },
+        {
+            "text": "czy umiesz tańczyć tango?",
+            "meaning": "can you dance the tango? (one friend)"
+        },
+        {
+            "text": "czy umiesz tańczyć?",
+            "meaning": "can you dance? (one friend)"
+        },
+        {
             "text": "czy wiesz, co to jest?"
         },
         {
@@ -3522,6 +4370,22 @@
         {
             "text": "czy wy mieszkacie w Warszawie?",
             "meaning": "do you live in Warsaw? (several people)"
+        },
+        {
+            "text": "czym",
+            "meaning": "what (czym się interesujesz?)"
+        },
+        {
+            "text": "czym",
+            "meaning": "what (czym się interesujesz?: what are you interested in?)"
+        },
+        {
+            "text": "czym interesujesz się?",
+            "meaning": "what are you interested in? (one friend)"
+        },
+        {
+            "text": "czym się interesujesz?",
+            "meaning": "what are you interested in? (one friend)"
         },
         {
             "text": "czysta",
@@ -3556,7 +4420,8 @@
             "meaning": "I read a text"
         },
         {
-            "text": "czytasz"
+            "text": "czytasz",
+            "meaning": "you read, you are reading (one friend)"
         },
         {
             "text": "córka",
@@ -3565,6 +4430,22 @@
         {
             "text": "córkę",
             "meaning": "a daughter (after mam, masz, ma…)"
+        },
+        {
+            "text": "dentysta",
+            "meaning": "a dentist (a man)"
+        },
+        {
+            "text": "dentystka",
+            "meaning": "a dentist (a woman)"
+        },
+        {
+            "text": "dentystką",
+            "meaning": "a dentist (a woman)"
+        },
+        {
+            "text": "dentystą",
+            "meaning": "a dentist (a man)"
         },
         {
             "text": "dialog",
@@ -3577,6 +4458,10 @@
         {
             "text": "dlaczego ona uczy się polskiego?",
             "meaning": "why is she learning Polish?"
+        },
+        {
+            "text": "dlaczego pytasz?",
+            "meaning": "why do you ask? (one friend)"
         },
         {
             "text": "dlaczego ty uczysz się polskiego?",
@@ -3658,6 +4543,10 @@
             "text": "dobry wybór"
         },
         {
+            "text": "dobrym",
+            "meaning": "good (dobrym, dobrą: after jest, with a noun)"
+        },
+        {
             "text": "dobrze",
             "meaning": "well (how something is going)"
         },
@@ -3672,6 +4561,10 @@
         {
             "text": "dobrze, dziękuję, a pani?",
             "meaning": "fine, thank you, and you? (to a woman, formal)"
+        },
+        {
+            "text": "dobrą",
+            "meaning": "good (dobrym, dobrą: after jest, with a noun)"
         },
         {
             "text": "dopasować",
@@ -3747,11 +4640,18 @@
             "meaning": "two plus three is five"
         },
         {
+            "text": "dwa razy trzydzieści równa się sześćdziesiąt",
+            "meaning": "two times thirty equals sixty"
+        },
+        {
             "text": "dwa, trzy, jeden"
         },
         {
             "text": "dwadzieścia",
             "meaning": "twenty"
+        },
+        {
+            "text": "dwadzieścia dwa lata"
         },
         {
             "text": "dwadzieścia dziewięć"
@@ -3770,6 +4670,9 @@
         },
         {
             "text": "dwadzieścia siedem"
+        },
+        {
+            "text": "dwadzieścia sześć"
         },
         {
             "text": "dwanaście",
@@ -3804,8 +4707,27 @@
             "meaning": "children"
         },
         {
+            "text": "dzieckiem"
+        },
+        {
             "text": "dziecko",
             "meaning": "a child"
+        },
+        {
+            "text": "dziennikarka",
+            "meaning": "a journalist (a woman)"
+        },
+        {
+            "text": "dziennikarką",
+            "meaning": "a journalist (a woman)"
+        },
+        {
+            "text": "dziennikarz",
+            "meaning": "a journalist (a man)"
+        },
+        {
+            "text": "dziennikarzem",
+            "meaning": "a journalist (a man)"
         },
         {
             "text": "dziesięć",
@@ -3850,6 +4772,14 @@
             "meaning": "a girlfriend"
         },
         {
+            "text": "dziewczyną",
+            "meaning": "a girl (after jest)"
+        },
+        {
+            "text": "dziewczyną",
+            "meaning": "a girl (after jest, with an adjective: jest miłą dziewczyną)"
+        },
+        {
             "text": "dziewiętnaście",
             "meaning": "nineteen"
         },
@@ -3863,6 +4793,25 @@
         {
             "text": "dziewięć",
             "meaning": "nine"
+        },
+        {
+            "text": "dziewięćdziesiąt",
+            "meaning": "90"
+        },
+        {
+            "text": "dziewięćdziesiąt",
+            "meaning": "ninety"
+        },
+        {
+            "text": "dziewięćdziesiąt dziewięć",
+            "meaning": "ninety-nine"
+        },
+        {
+            "text": "dziewięćdziesiąt lat"
+        },
+        {
+            "text": "dziewięćdziesiąt sześć minus dwanaście równa się osiemdziesiąt cztery",
+            "meaning": "96 − 12 = 84"
         },
         {
             "text": "dzień"
@@ -3984,6 +4933,14 @@
             "text": "dźwięki"
         },
         {
+            "text": "emeryt",
+            "meaning": "a pensioner (a man)"
+        },
+        {
+            "text": "emerytem",
+            "meaning": "a pensioner (a man)"
+        },
+        {
             "text": "energiczna",
             "meaning": "energetic (energiczny, energiczna, energiczne)"
         },
@@ -4036,6 +4993,22 @@
             "meaning": "purple (fioletowy, fioletowa, fioletowe)"
         },
         {
+            "text": "fotograf",
+            "meaning": "a photographer (a man)"
+        },
+        {
+            "text": "fotografem",
+            "meaning": "a photographer (a man)"
+        },
+        {
+            "text": "fotografią",
+            "meaning": "photography"
+        },
+        {
+            "text": "fotografią",
+            "meaning": "photography (after interesuję się: interesuję się fotografią)"
+        },
+        {
             "text": "gdzie",
             "meaning": "where"
         },
@@ -4078,6 +5051,10 @@
             "meaning": "where are you? (to a man and a woman, formal)"
         },
         {
+            "text": "gdzie pracujesz?",
+            "meaning": "where do you work? (one friend)"
+        },
+        {
             "text": "gdzie są panie?"
         },
         {
@@ -4090,6 +5067,10 @@
         },
         {
             "text": "gdzie to jest?"
+        },
+        {
+            "text": "gdzie ty pracujesz?",
+            "meaning": "where do you work? (one friend)"
         },
         {
             "text": "gdzie wy mieszkacie?",
@@ -4107,6 +5088,10 @@
         {
             "text": "gram",
             "meaning": "I play"
+        },
+        {
+            "text": "gram na gitarze",
+            "meaning": "I play the guitar"
         },
         {
             "text": "gram w tenisa",
@@ -4174,6 +5159,14 @@
             "meaning": "hello? (answering the phone)"
         },
         {
+            "text": "historią",
+            "meaning": "history"
+        },
+        {
+            "text": "historią",
+            "meaning": "history (after interesuję się: interesuję się historią)"
+        },
+        {
             "text": "hobby",
             "meaning": "a hobby"
         },
@@ -4206,7 +5199,8 @@
             "meaning": "how old is your son? (to one friend)"
         },
         {
-            "text": "ile ma lat?"
+            "text": "ile ma lat?",
+            "meaning": "how old is he?"
         },
         {
             "text": "ile ma pan lat?",
@@ -4218,6 +5212,10 @@
         {
             "text": "ile masz lat?",
             "meaning": "how old are you? (one friend)"
+        },
+        {
+            "text": "ile on ma lat?",
+            "meaning": "how old is he?"
         },
         {
             "text": "ile pan ma lat?",
@@ -4262,6 +5260,34 @@
             "meaning": "first name, surname, nationality"
         },
         {
+            "text": "informatyczka",
+            "meaning": "an IT specialist (a woman)"
+        },
+        {
+            "text": "informatyczką",
+            "meaning": "an IT specialist (a woman)"
+        },
+        {
+            "text": "informatyk",
+            "meaning": "an IT specialist (a man)"
+        },
+        {
+            "text": "informatykiem",
+            "meaning": "an IT specialist (a man)"
+        },
+        {
+            "text": "instruktor",
+            "meaning": "an instructor"
+        },
+        {
+            "text": "instruktor",
+            "meaning": "an instructor (a man)"
+        },
+        {
+            "text": "instruktorem",
+            "meaning": "an instructor (a man)"
+        },
+        {
             "text": "inteligentna",
             "meaning": "intelligent (inteligentny, inteligentna, inteligentne)"
         },
@@ -4278,6 +5304,51 @@
             "meaning": "intelligent (inteligentny, inteligentna, inteligentne)"
         },
         {
+            "text": "interesuje"
+        },
+        {
+            "text": "interesuje się",
+            "meaning": "he is interested in, she is interested in"
+        },
+        {
+            "text": "interesuje się historią",
+            "meaning": "he is interested in history"
+        },
+        {
+            "text": "interesuje się modą",
+            "meaning": "she is interested in fashion"
+        },
+        {
+            "text": "interesuje się polityką",
+            "meaning": "he is interested in politics"
+        },
+        {
+            "text": "interesujecie się"
+        },
+        {
+            "text": "interesujemy się"
+        },
+        {
+            "text": "interesujesz się",
+            "meaning": "you are interested in (one friend)"
+        },
+        {
+            "text": "interesujesz się fotografią"
+        },
+        {
+            "text": "interesujesz się kinem?",
+            "meaning": "are you interested in cinema? (one friend)"
+        },
+        {
+            "text": "interesujesz się modą?"
+        },
+        {
+            "text": "interesujesz się sportem?"
+        },
+        {
+            "text": "interesują się"
+        },
+        {
             "text": "interesująca",
             "meaning": "interesting (interesujący, interesująca, interesujące)"
         },
@@ -4292,6 +5363,33 @@
         {
             "text": "interesujący",
             "meaning": "interesting (interesujący, interesująca, interesujące)"
+        },
+        {
+            "text": "interesuję się",
+            "meaning": "I am interested in"
+        },
+        {
+            "text": "interesuję się fotografią",
+            "meaning": "I am interested in photography"
+        },
+        {
+            "text": "interesuję się historią"
+        },
+        {
+            "text": "interesuję się historią i muzyką",
+            "meaning": "I am interested in music and history"
+        },
+        {
+            "text": "interesuję się muzyką i historią",
+            "meaning": "I am interested in music and history"
+        },
+        {
+            "text": "inżynier",
+            "meaning": "an engineer"
+        },
+        {
+            "text": "inżynierem",
+            "meaning": "an engineer"
         },
         {
             "text": "ja",
@@ -4593,6 +5691,34 @@
             "meaning": "what is this car like? It is small."
         },
         {
+            "text": "jakim",
+            "meaning": "what kind of (jakim, jaką: after jest, with a noun)"
+        },
+        {
+            "text": "jakim lekarzem jest on?",
+            "meaning": "what kind of doctor is he?"
+        },
+        {
+            "text": "jakim lekarzem on jest?",
+            "meaning": "what kind of doctor is he?"
+        },
+        {
+            "text": "jakim on jest lekarzem?",
+            "meaning": "what kind of doctor is he?"
+        },
+        {
+            "text": "jaką",
+            "meaning": "what kind of (jakim, jaką: after jest, with a noun)"
+        },
+        {
+            "text": "jaką",
+            "meaning": "what kind of (jaką dziewczyną?)"
+        },
+        {
+            "text": "jaką dziewczyną jest Ewa?",
+            "meaning": "what kind of girl is Ewa?"
+        },
+        {
             "text": "jeden",
             "meaning": "one"
         },
@@ -4661,12 +5787,19 @@
             "meaning": "she is from England"
         },
         {
+            "text": "jest z Japonii, jest Japonką",
+            "meaning": "she is from Japan, she is Japanese"
+        },
+        {
             "text": "jestem",
             "meaning": "I am"
         },
         {
             "text": "jestem Adam",
             "meaning": "I am Adam"
+        },
+        {
+            "text": "jestem Angielką"
         },
         {
             "text": "jestem Ewa",
@@ -4681,8 +5814,16 @@
             "meaning": "I am Polish"
         },
         {
+            "text": "jestem Polką",
+            "meaning": "I am Polish (a woman)"
+        },
+        {
             "text": "jestem dziś zestresowany",
             "meaning": "I am stressed today (a man speaking)"
+        },
+        {
+            "text": "jestem instruktorem",
+            "meaning": "I am an instructor (a man)"
         },
         {
             "text": "jestem pewna, że to jest żart",
@@ -4795,6 +5936,46 @@
         {
             "text": "kawa jest tutaj",
             "meaning": "the coffee is here"
+        },
+        {
+            "text": "kelner",
+            "meaning": "a waiter"
+        },
+        {
+            "text": "kelnerem",
+            "meaning": "a waiter"
+        },
+        {
+            "text": "kelnerka",
+            "meaning": "a waitress"
+        },
+        {
+            "text": "kelnerką",
+            "meaning": "a waitress"
+        },
+        {
+            "text": "kim",
+            "meaning": "who (kim jesteś?)"
+        },
+        {
+            "text": "kim",
+            "meaning": "who (kim jesteś?: who are you, what do you do?)"
+        },
+        {
+            "text": "kim jesteś z zawodu?",
+            "meaning": "what do you do? (one friend)"
+        },
+        {
+            "text": "kim ty jesteś z zawodu?",
+            "meaning": "what do you do? (one friend)"
+        },
+        {
+            "text": "kinem",
+            "meaning": "cinema"
+        },
+        {
+            "text": "kinem",
+            "meaning": "cinema, films (after interesuję się: interesuję się kinem)"
         },
         {
             "text": "klucz",
@@ -4922,6 +6103,18 @@
             "meaning": "who is it? It is a student."
         },
         {
+            "text": "kto to jest? muzyk",
+            "meaning": "who is it? a musician"
+        },
+        {
+            "text": "kto to jest? to jest muzyk",
+            "meaning": "who is it? a musician"
+        },
+        {
+            "text": "kto to jest? to muzyk",
+            "meaning": "who is it? a musician"
+        },
+        {
             "text": "kto to?",
             "meaning": "who is it?"
         },
@@ -4932,6 +6125,18 @@
         {
             "text": "kubek",
             "meaning": "a mug"
+        },
+        {
+            "text": "kucharz",
+            "meaning": "a cook (a man)"
+        },
+        {
+            "text": "kucharz",
+            "meaning": "a cook, a chef (a man)"
+        },
+        {
+            "text": "kucharzem",
+            "meaning": "a cook, a chef (a man)"
         },
         {
             "text": "kurs",
@@ -4947,7 +6152,31 @@
         },
         {
             "text": "lata",
+            "meaning": "years (after 2, 3 and 4)"
+        },
+        {
+            "text": "lata",
             "meaning": "years (after 2, 3 and 4: dwa lata)"
+        },
+        {
+            "text": "lekarka",
+            "meaning": "a doctor (a woman)"
+        },
+        {
+            "text": "lekarką",
+            "meaning": "a doctor (a woman)"
+        },
+        {
+            "text": "lekarz",
+            "meaning": "a doctor (a man)"
+        },
+        {
+            "text": "lekarz pracuje w szpitalu",
+            "meaning": "the doctor (a man) works in a hospital"
+        },
+        {
+            "text": "lekarzem",
+            "meaning": "a doctor (a man)"
         },
         {
             "text": "lekcja",
@@ -4960,6 +6189,14 @@
         {
             "text": "lekcja numer jeden",
             "meaning": "lesson number one"
+        },
+        {
+            "text": "lektorka",
+            "meaning": "a language teacher (a woman)"
+        },
+        {
+            "text": "lektorką",
+            "meaning": "a language teacher (a woman)"
         },
         {
             "text": "leniwa",
@@ -4978,12 +6215,35 @@
             "meaning": "lazy (leniwy, leniwa, leniwe)"
         },
         {
+            "text": "liczebnik",
+            "meaning": "a numeral (liczebniki: numerals)"
+        },
+        {
+            "text": "liczebniki",
+            "meaning": "a numeral (liczebniki: numerals)"
+        },
+        {
+            "text": "literaturą",
+            "meaning": "literature"
+        },
+        {
+            "text": "literaturą",
+            "meaning": "literature (after interesuję się: interesuję się literaturą)"
+        },
+        {
+            "text": "lubi",
+            "meaning": "he likes, she likes"
+        },
+        {
             "text": "lubisz",
             "meaning": "you like (one friend)"
         },
         {
             "text": "lubisz sport?",
             "meaning": "do you like sport? (one friend)"
+        },
+        {
+            "text": "lubisz tańczyć tango"
         },
         {
             "text": "lubię",
@@ -4994,11 +6254,35 @@
             "meaning": "I like sport"
         },
         {
+            "text": "lubię tańczyć tango",
+            "meaning": "I like dancing the tango"
+        },
+        {
             "text": "ma",
             "meaning": "he has; she has; it has"
         },
         {
             "text": "ma czas?"
+        },
+        {
+            "text": "ma czterdzieści pięć lat",
+            "meaning": "he is forty-five"
+        },
+        {
+            "text": "ma dwadzieścia dwa lata",
+            "meaning": "she is twenty-two"
+        },
+        {
+            "text": "ma prawie dwadzieścia lat",
+            "meaning": "he is almost twenty"
+        },
+        {
+            "text": "ma rok",
+            "meaning": "she is one (year old)"
+        },
+        {
+            "text": "ma trzy lata",
+            "meaning": "he is three"
         },
         {
             "text": "macie",
@@ -5014,6 +6298,25 @@
         },
         {
             "text": "mają problem?"
+        },
+        {
+            "text": "malarstwem",
+            "meaning": "painting"
+        },
+        {
+            "text": "malarstwem",
+            "meaning": "painting, art (after interesuję się: interesuję się malarstwem)"
+        },
+        {
+            "text": "malarstwo"
+        },
+        {
+            "text": "malarz",
+            "meaning": "a painter (a man)"
+        },
+        {
+            "text": "malarzem",
+            "meaning": "a painter (a man)"
         },
         {
             "text": "mam",
@@ -5053,6 +6356,10 @@
         {
             "text": "mam osiemnaście lat.",
             "meaning": "I am eighteen years old."
+        },
+        {
+            "text": "mam prawie dwadzieścia lat",
+            "meaning": "I'm almost twenty"
         },
         {
             "text": "mam pytanie, gdzie jest szkoła?",
@@ -5281,6 +6588,18 @@
             "meaning": "nice, kind (miły, miła, miłe)"
         },
         {
+            "text": "miłym",
+            "meaning": "nice (miłym lekarzem)"
+        },
+        {
+            "text": "miłym",
+            "meaning": "nice, kind (miłym, miłą: after jest, with a noun)"
+        },
+        {
+            "text": "miłą",
+            "meaning": "nice, kind (miłym, miłą: after jest, with a noun)"
+        },
+        {
             "text": "mnie"
         },
         {
@@ -5304,6 +6623,14 @@
             "meaning": "fashionable (modny, modna, modne)"
         },
         {
+            "text": "modą",
+            "meaning": "fashion"
+        },
+        {
+            "text": "modą",
+            "meaning": "fashion (after interesuję się: interesuję się modą)"
+        },
+        {
             "text": "moja",
             "meaning": "my (with a feminine noun)"
         },
@@ -5324,6 +6651,10 @@
         {
             "text": "moja córka ma trzy lata",
             "meaning": "my daughter is three years old"
+        },
+        {
+            "text": "moja koleżanka to tancerka",
+            "meaning": "my friend (a woman) is a dancer"
         },
         {
             "text": "moja mama",
@@ -5359,6 +6690,25 @@
         {
             "text": "muzeum",
             "meaning": "a museum"
+        },
+        {
+            "text": "muzyk",
+            "meaning": "a musician (a man)"
+        },
+        {
+            "text": "muzyka"
+        },
+        {
+            "text": "muzykiem",
+            "meaning": "a musician (a man)"
+        },
+        {
+            "text": "muzyką",
+            "meaning": "music"
+        },
+        {
+            "text": "muzyką",
+            "meaning": "music (after interesuję się: interesuję się muzyką)"
         },
         {
             "text": "my",
@@ -5444,6 +6794,20 @@
             "text": "mój brat"
         },
         {
+            "text": "mój brat to dentysta",
+            "meaning": "my brother is a dentist"
+        },
+        {
+            "text": "mój brat to informatyk",
+            "meaning": "my brother is an IT specialist"
+        },
+        {
+            "text": "mój brat to lekarz"
+        },
+        {
+            "text": "mój brat to muzyk"
+        },
+        {
             "text": "mój dziadek",
             "meaning": "my grandpa"
         },
@@ -5452,8 +6816,26 @@
             "meaning": "my grandma and my grandpa"
         },
         {
+            "text": "mój kolega jest Anglikiem",
+            "meaning": "my friend (a man) is English"
+        },
+        {
+            "text": "mój kolega jest malarzem",
+            "meaning": "my friend (a man) is a painter"
+        },
+        {
+            "text": "mój kolega jest muzykiem"
+        },
+        {
+            "text": "mój kolega jest pisarzem"
+        },
+        {
             "text": "mój mąż",
             "meaning": "my husband"
+        },
+        {
+            "text": "mój mąż ma siedemdziesiąt dwa lata",
+            "meaning": "my husband is seventy-two"
         },
         {
             "text": "mój numer telefonu to dwanaście, dwadzieścia, piętnaście",
@@ -5548,6 +6930,18 @@
             "meaning": "a husband"
         },
         {
+            "text": "mężczyzna",
+            "meaning": "a man (mężczyzną: after jest)"
+        },
+        {
+            "text": "mężczyzną",
+            "meaning": "a man (after jest)"
+        },
+        {
+            "text": "mężczyzną",
+            "meaning": "a man (mężczyzną: after jest)"
+        },
+        {
             "text": "młoda",
             "meaning": "young (młody, młoda, młode)"
         },
@@ -5565,6 +6959,14 @@
         },
         {
             "text": "na drodze"
+        },
+        {
+            "text": "na gitarze",
+            "meaning": "the guitar (after grać: gram na gitarze)"
+        },
+        {
+            "text": "na gitarze",
+            "meaning": "the guitar (gram na gitarze)"
         },
         {
             "text": "na imię",
@@ -5637,6 +7039,10 @@
         {
             "text": "nauczycielka i nauczyciel",
             "meaning": "a teacher (a man) and a teacher (a woman)"
+        },
+        {
+            "text": "nauczycielka pracuje w szkole",
+            "meaning": "the teacher (a woman) works at a school"
         },
         {
             "text": "nawzajem",
@@ -5903,12 +7309,24 @@
             "meaning": "he goes to school"
         },
         {
+            "text": "on interesuje się historią",
+            "meaning": "he is interested in history"
+        },
+        {
+            "text": "on interesuje się polityką",
+            "meaning": "he is interested in politics"
+        },
+        {
             "text": "on jest Anglikiem, a ona Polką",
             "meaning": "he is English, and she is Polish"
         },
         {
             "text": "on jest Anglikiem, a ona jest Polką",
             "meaning": "he is English, and she is Polish"
+        },
+        {
+            "text": "on jest Japończykiem",
+            "meaning": "he is Japanese"
         },
         {
             "text": "on jest aktywny i energiczny",
@@ -5922,6 +7340,13 @@
             "text": "on jest chory"
         },
         {
+            "text": "on jest dobrym aktorem"
+        },
+        {
+            "text": "on jest dobrym lekarzem",
+            "meaning": "he is a good doctor"
+        },
+        {
             "text": "on jest energiczny i aktywny",
             "meaning": "he is energetic and active"
         },
@@ -5930,11 +7355,19 @@
             "meaning": "he is lazy"
         },
         {
+            "text": "on jest miłym mężczyzną",
+            "meaning": "he is a nice man"
+        },
+        {
             "text": "on jest na pewno ambitny",
             "meaning": "he is certainly ambitious"
         },
         {
             "text": "on jest niski i przystojny"
+        },
+        {
+            "text": "on jest pisarzem i malarzem",
+            "meaning": "he is a writer and a painter"
         },
         {
             "text": "on jest pracowity",
@@ -5959,6 +7392,10 @@
             "meaning": "he is tall, but he isn't sporty"
         },
         {
+            "text": "on jest wysokim mężczyzną",
+            "meaning": "he is a tall man"
+        },
+        {
             "text": "on jest z Anglii",
             "meaning": "he is from England"
         },
@@ -5974,15 +7411,44 @@
             "meaning": "he is of medium height"
         },
         {
+            "text": "on lubi pracować",
+            "meaning": "he likes working"
+        },
+        {
+            "text": "on lubi sport"
+        },
+        {
+            "text": "on ma czterdzieści pięć lat",
+            "meaning": "he is forty-five"
+        },
+        {
             "text": "on ma cztery lata"
+        },
+        {
+            "text": "on ma dwa lata"
         },
         {
             "text": "on ma jeden rok",
             "meaning": "he is one year old"
         },
         {
+            "text": "on ma pięć lat"
+        },
+        {
+            "text": "on ma prawie dwadzieścia lat",
+            "meaning": "he is almost twenty"
+        },
+        {
+            "text": "on ma rok",
+            "meaning": "he is one (year old)"
+        },
+        {
             "text": "on ma rok",
             "meaning": "he is one year old"
+        },
+        {
+            "text": "on ma trzy lata",
+            "meaning": "he is three"
         },
         {
             "text": "on mieszka w Berlinie",
@@ -6004,8 +7470,19 @@
             "text": "ona + ona"
         },
         {
+            "text": "ona interesuje się modą",
+            "meaning": "she is interested in fashion"
+        },
+        {
             "text": "ona jest chora",
             "meaning": "she is ill"
+        },
+        {
+            "text": "ona jest dobrą aktorką",
+            "meaning": "she is a good actress"
+        },
+        {
+            "text": "ona jest dobrą lekarką"
         },
         {
             "text": "ona jest inteligentna i kreatywna",
@@ -6014,6 +7491,9 @@
         {
             "text": "ona jest kreatywna i inteligentna",
             "meaning": "she is intelligent and creative"
+        },
+        {
+            "text": "ona jest miłą dziewczyną"
         },
         {
             "text": "ona jest młoda"
@@ -6051,6 +7531,14 @@
             "text": "ona jest z Japonii"
         },
         {
+            "text": "ona jest z Japonii, jest Japonką",
+            "meaning": "she is from Japan, she is Japanese"
+        },
+        {
+            "text": "ona jest z Japonii, ona jest Japonką",
+            "meaning": "she is from Japan, she is Japanese"
+        },
+        {
             "text": "ona jest z Polski"
         },
         {
@@ -6070,8 +7558,16 @@
             "meaning": "she is finishing the course"
         },
         {
+            "text": "ona lubi pracować",
+            "meaning": "she likes working"
+        },
+        {
             "text": "ona ma cztery lata",
             "meaning": "she is four years old"
+        },
+        {
+            "text": "ona ma dwadzieścia dwa lata",
+            "meaning": "she is twenty-two"
         },
         {
             "text": "ona ma dziewiętnaście lat",
@@ -6079,6 +7575,10 @@
         },
         {
             "text": "ona ma kurs"
+        },
+        {
+            "text": "ona ma rok",
+            "meaning": "she is one (year old)"
         },
         {
             "text": "ona ma trzy lata"
@@ -6178,6 +7678,16 @@
             "meaning": "it is here"
         },
         {
+            "text": "ono ma dwa lata"
+        },
+        {
+            "text": "ono ma pół roku",
+            "meaning": "it is six months old"
+        },
+        {
+            "text": "ono ma rok"
+        },
+        {
             "text": "osiem",
             "meaning": "8"
         },
@@ -6195,6 +7705,18 @@
         {
             "text": "osiem, dziewięć, dziesięć",
             "meaning": "eight, nine, ten"
+        },
+        {
+            "text": "osiemdziesiąt",
+            "meaning": "80"
+        },
+        {
+            "text": "osiemdziesiąt",
+            "meaning": "eighty"
+        },
+        {
+            "text": "osiemdziesiąt osiem",
+            "meaning": "eighty-eight"
         },
         {
             "text": "osiemnaście",
@@ -6299,6 +7821,18 @@
             "meaning": "sure, certain (pewny, pewna, pewne)"
         },
         {
+            "text": "pisarz",
+            "meaning": "a writer"
+        },
+        {
+            "text": "pisarz",
+            "meaning": "a writer (a man)"
+        },
+        {
+            "text": "pisarzem",
+            "meaning": "a writer (a man)"
+        },
+        {
             "text": "piętnaście",
             "meaning": "fifteen"
         },
@@ -6328,6 +7862,21 @@
         {
             "text": "pięć, cztery, trzy, dwa, jeden, zero",
             "meaning": "five, four, three, two, one, zero"
+        },
+        {
+            "text": "pięćdziesiąt",
+            "meaning": "50"
+        },
+        {
+            "text": "pięćdziesiąt",
+            "meaning": "fifty"
+        },
+        {
+            "text": "pięćdziesiąt pięć",
+            "meaning": "fifty-five"
+        },
+        {
+            "text": "pięćdziesiąt trzy"
         },
         {
             "text": "plecak",
@@ -6394,6 +7943,22 @@
             "meaning": "an instruction (in a book)"
         },
         {
+            "text": "policjant",
+            "meaning": "a police officer (a man)"
+        },
+        {
+            "text": "policjantem",
+            "meaning": "a police officer (a man)"
+        },
+        {
+            "text": "polityką",
+            "meaning": "politics"
+        },
+        {
+            "text": "polityką",
+            "meaning": "politics (after interesuję się: interesuję się polityką)"
+        },
+        {
             "text": "polska",
             "meaning": "Polish (polski, polska, polskie)"
         },
@@ -6432,6 +7997,18 @@
         {
             "text": "ponumerować",
             "meaning": "to number"
+        },
+        {
+            "text": "popularna",
+            "meaning": "popular (popularny, popularna, popularne)"
+        },
+        {
+            "text": "popularne",
+            "meaning": "popular (popularny, popularna, popularne)"
+        },
+        {
+            "text": "popularny",
+            "meaning": "popular (popularny, popularna, popularne)"
         },
         {
             "text": "porządek"
@@ -6480,6 +8057,37 @@
             "meaning": "hard-working (pracowity, pracowita, pracowite)"
         },
         {
+            "text": "pracuje",
+            "meaning": "he works, she works"
+        },
+        {
+            "text": "pracujecie"
+        },
+        {
+            "text": "pracujemy"
+        },
+        {
+            "text": "pracujesz",
+            "meaning": "you work (one friend)"
+        },
+        {
+            "text": "pracujesz w biurze"
+        },
+        {
+            "text": "pracują"
+        },
+        {
+            "text": "pracuję",
+            "meaning": "I work"
+        },
+        {
+            "text": "pracuję w biurze",
+            "meaning": "I work in an office"
+        },
+        {
+            "text": "pracuję w szkole"
+        },
+        {
             "text": "praktyczna",
             "meaning": "practical (praktyczny, praktyczna, praktyczne)"
         },
@@ -6494,6 +8102,10 @@
         {
             "text": "praktyczny",
             "meaning": "practical (praktyczny, praktyczna, praktyczne)"
+        },
+        {
+            "text": "prawie",
+            "meaning": "almost"
         },
         {
             "text": "prawo"
@@ -6673,7 +8285,27 @@
             "meaning": "a question"
         },
         {
+            "text": "pytasz",
+            "meaning": "you ask (one friend)"
+        },
+        {
+            "text": "pół roku",
+            "meaning": "half a year"
+        },
+        {
+            "text": "pół roku",
+            "meaning": "half a year (ono ma pół roku: it is six months old)"
+        },
+        {
             "text": "raz"
+        },
+        {
+            "text": "razy",
+            "meaning": "times (in sums: dwa razy dwa)"
+        },
+        {
+            "text": "razy",
+            "meaning": "×, times"
         },
         {
             "text": "restauracja",
@@ -6696,6 +8328,14 @@
             "text": "robią"
         },
         {
+            "text": "robić",
+            "meaning": "do, make (to do, to make)"
+        },
+        {
+            "text": "robić",
+            "meaning": "to do"
+        },
+        {
             "text": "robię",
             "meaning": "I do"
         },
@@ -6713,7 +8353,19 @@
         },
         {
             "text": "rok",
+            "meaning": "a year"
+        },
+        {
+            "text": "rok",
             "meaning": "a year; one year"
+        },
+        {
+            "text": "rolnik",
+            "meaning": "a farmer (a man)"
+        },
+        {
+            "text": "rolnikiem",
+            "meaning": "a farmer (a man)"
         },
         {
             "text": "romantyczna",
@@ -6777,6 +8429,23 @@
         },
         {
             "text": "siedem minus dwa równa się pięć"
+        },
+        {
+            "text": "siedemdziesiąt",
+            "meaning": "70"
+        },
+        {
+            "text": "siedemdziesiąt",
+            "meaning": "seventy"
+        },
+        {
+            "text": "siedemdziesiąt dwa"
+        },
+        {
+            "text": "siedemdziesiąt lat"
+        },
+        {
+            "text": "siedemdziesiąt osiem"
         },
         {
             "text": "siedemnaście",
@@ -6871,6 +8540,14 @@
             "meaning": "sport"
         },
         {
+            "text": "sportem",
+            "meaning": "sport (after interesuję się)"
+        },
+        {
+            "text": "sportem",
+            "meaning": "sport (after interesuję się: interesuję się sportem)"
+        },
+        {
             "text": "stara",
             "meaning": "old (stary, stara, stare)"
         },
@@ -6889,6 +8566,18 @@
         {
             "text": "stary, ale dobry",
             "meaning": "old, but good"
+        },
+        {
+            "text": "sto",
+            "meaning": "100"
+        },
+        {
+            "text": "sto",
+            "meaning": "a hundred"
+        },
+        {
+            "text": "sto lat",
+            "meaning": "a hundred years"
         },
         {
             "text": "strona",
@@ -7029,6 +8718,21 @@
             "meaning": "six, seven, eight"
         },
         {
+            "text": "sześćdziesiąt",
+            "meaning": "60"
+        },
+        {
+            "text": "sześćdziesiąt",
+            "meaning": "sixty"
+        },
+        {
+            "text": "sześćdziesiąt minus dziesięć równa się pięćdziesiąt",
+            "meaning": "60 − 10 = 50"
+        },
+        {
+            "text": "sześćdziesiąt pięć"
+        },
+        {
             "text": "szkoła",
             "meaning": "a school"
         },
@@ -7112,6 +8816,10 @@
         {
             "text": "ta",
             "meaning": "this; that (with a feminine noun: ta torba)"
+        },
+        {
+            "text": "ta aktorka jest popularna",
+            "meaning": "this actress is popular"
         },
         {
             "text": "ta auto"
@@ -7220,8 +8928,36 @@
             "meaning": "there"
         },
         {
+            "text": "tancerka",
+            "meaning": "a dancer (a woman)"
+        },
+        {
+            "text": "tancerką",
+            "meaning": "a dancer (a woman)"
+        },
+        {
+            "text": "tancerz",
+            "meaning": "a dancer (a man)"
+        },
+        {
+            "text": "tancerzem",
+            "meaning": "a dancer (a man)"
+        },
+        {
+            "text": "tango",
+            "meaning": "the tango"
+        },
+        {
             "text": "tata",
             "meaning": "dad"
+        },
+        {
+            "text": "tańczyć",
+            "meaning": "dance (to dance)"
+        },
+        {
+            "text": "tańczyć",
+            "meaning": "to dance"
         },
         {
             "text": "tekst",
@@ -7249,6 +8985,10 @@
         {
             "text": "ten film jest ciekawy",
             "meaning": "this film is interesting"
+        },
+        {
+            "text": "ten inżynier to emeryt",
+            "meaning": "this engineer is a pensioner"
         },
         {
             "text": "ten klucz",
@@ -7311,6 +9051,9 @@
         {
             "text": "ten zeszyt jest niebieski",
             "meaning": "this notebook is blue"
+        },
+        {
+            "text": "tenisa"
         },
         {
             "text": "test",
@@ -7403,6 +9146,10 @@
             "meaning": "this is a girl"
         },
         {
+            "text": "to informatyk",
+            "meaning": "this is an IT specialist (a man)"
+        },
+        {
             "text": "to interesujące słowo",
             "meaning": "it is an interesting word"
         },
@@ -7423,6 +9170,13 @@
             "meaning": "this is Ewa, a teacher"
         },
         {
+            "text": "to jest aktor"
+        },
+        {
+            "text": "to jest aktorka",
+            "meaning": "this is an actress"
+        },
+        {
             "text": "to jest alfabet",
             "meaning": "this is the alphabet"
         },
@@ -7433,6 +9187,13 @@
         {
             "text": "to jest duże okno",
             "meaning": "this is a big window"
+        },
+        {
+            "text": "to jest dziennikarka"
+        },
+        {
+            "text": "to jest dziennikarz",
+            "meaning": "this is a journalist (a man)"
         },
         {
             "text": "to jest dziewczyna",
@@ -7446,8 +9207,15 @@
             "text": "to jest fioletowy torba"
         },
         {
+            "text": "to jest fotograf"
+        },
+        {
             "text": "to jest gumka",
             "meaning": "it is a rubber"
+        },
+        {
+            "text": "to jest informatyk",
+            "meaning": "this is an IT specialist (a man)"
         },
         {
             "text": "to jest interesujące słowo",
@@ -7459,6 +9227,9 @@
         },
         {
             "text": "to jest jej hobby"
+        },
+        {
+            "text": "to jest kelner"
         },
         {
             "text": "to jest klucz",
@@ -7487,12 +9258,23 @@
             "meaning": "it is a laptop"
         },
         {
+            "text": "to jest lekarz",
+            "meaning": "this is a doctor (a man)"
+        },
+        {
             "text": "to jest lekcja",
             "meaning": "this is a lesson"
         },
         {
+            "text": "to jest lektorka"
+        },
+        {
             "text": "to jest mapa",
             "meaning": "it is a map"
+        },
+        {
+            "text": "to jest moja dentystka",
+            "meaning": "this is my dentist (a woman)"
         },
         {
             "text": "to jest moja rodzina",
@@ -7570,6 +9352,9 @@
             "text": "to jest pytanie"
         },
         {
+            "text": "to jest rolnik"
+        },
+        {
             "text": "to jest różowa gumka",
             "meaning": "it is a pink rubber"
         },
@@ -7616,6 +9401,13 @@
             "meaning": "is this your brother? (to one friend)"
         },
         {
+            "text": "to jest urzędniczka",
+            "meaning": "this is a clerk (a woman)"
+        },
+        {
+            "text": "to jest urzędnik"
+        },
+        {
             "text": "to jest zeszyt",
             "meaning": "it is a notebook"
         },
@@ -7652,6 +9444,10 @@
         {
             "text": "to lekcja",
             "meaning": "this is a lesson"
+        },
+        {
+            "text": "to moja dentystka",
+            "meaning": "this is my dentist (a woman)"
         },
         {
             "text": "to moja rodzina",
@@ -7700,6 +9496,10 @@
         {
             "text": "to nie jest",
             "meaning": "it isn't; this isn't (to nie jest ołówek)"
+        },
+        {
+            "text": "to nie jest dziennikarz, to jest fotograf",
+            "meaning": "it isn't a journalist, it's a photographer"
         },
         {
             "text": "to nie jest książka"
@@ -7838,6 +9638,30 @@
             "text": "trzy, dwa, jeden"
         },
         {
+            "text": "trzydzieści",
+            "meaning": "30"
+        },
+        {
+            "text": "trzydzieści",
+            "meaning": "thirty"
+        },
+        {
+            "text": "trzydzieści plus dwadzieścia równa się pięćdziesiąt",
+            "meaning": "30 + 20 = 50"
+        },
+        {
+            "text": "trzydzieści plus trzydzieści równa się sześćdziesiąt",
+            "meaning": "thirty plus thirty equals sixty"
+        },
+        {
+            "text": "trzydzieści razy trzy równa się dziewięćdziesiąt",
+            "meaning": "30 × 3 = 90"
+        },
+        {
+            "text": "trzydzieści trzy",
+            "meaning": "thirty-three"
+        },
+        {
             "text": "trzynaście",
             "meaning": "thirteen"
         },
@@ -7933,6 +9757,10 @@
             "meaning": "can you hear? (one friend)"
         },
         {
+            "text": "ty umiesz tańczyć tango?",
+            "meaning": "can you dance the tango? (one friend)"
+        },
+        {
             "text": "tylko",
             "meaning": "only"
         },
@@ -8007,7 +9835,43 @@
             "meaning": "a street"
         },
         {
+            "text": "umiesz",
+            "meaning": "you can, you know how to (one friend)"
+        },
+        {
+            "text": "umiesz tańczyć tango?",
+            "meaning": "can you dance the tango? (one friend)"
+        },
+        {
+            "text": "umiesz tańczyć?",
+            "meaning": "can you dance? (one friend)"
+        },
+        {
             "text": "uniwersalnie"
+        },
+        {
+            "text": "urzędniczka",
+            "meaning": "a clerk (a woman)"
+        },
+        {
+            "text": "urzędniczka",
+            "meaning": "an office worker, a clerk (a woman)"
+        },
+        {
+            "text": "urzędniczką",
+            "meaning": "an office worker, a clerk (a woman)"
+        },
+        {
+            "text": "urzędnik",
+            "meaning": "a clerk (a man)"
+        },
+        {
+            "text": "urzędnik",
+            "meaning": "an office worker, a clerk (a man)"
+        },
+        {
+            "text": "urzędnikiem",
+            "meaning": "an office worker, a clerk (a man)"
         },
         {
             "text": "uzupełnić",
@@ -8050,11 +9914,35 @@
             "meaning": "in Warsaw"
         },
         {
+            "text": "w biurze",
+            "meaning": "in an office"
+        },
+        {
             "text": "w poniedziałek"
         },
         {
             "text": "w porządku",
             "meaning": "all right; fine"
+        },
+        {
+            "text": "w restauracji",
+            "meaning": "in a restaurant"
+        },
+        {
+            "text": "w szkole",
+            "meaning": "at school"
+        },
+        {
+            "text": "w szkole",
+            "meaning": "at school, in a school"
+        },
+        {
+            "text": "w szpitalu",
+            "meaning": "in a hospital"
+        },
+        {
+            "text": "w teatrze",
+            "meaning": "in a theatre"
         },
         {
             "text": "w tenisa",
@@ -8167,6 +10055,18 @@
             "meaning": "tall (wysoki, wysoka, wysokie)"
         },
         {
+            "text": "wysokim",
+            "meaning": "tall (wysokim mężczyzną)"
+        },
+        {
+            "text": "wysokim",
+            "meaning": "tall (wysokim, wysoką: after jest, with a noun)"
+        },
+        {
+            "text": "wysoką",
+            "meaning": "tall (wysokim, wysoką: after jest, with a noun)"
+        },
+        {
             "text": "wysportowana",
             "meaning": "sporty, athletic (wysportowany, wysportowana, wysportowane)"
         },
@@ -8212,6 +10112,10 @@
         {
             "text": "z Włoch",
             "meaning": "from Italy"
+        },
+        {
+            "text": "z zawodu",
+            "meaning": "by profession"
         },
         {
             "text": "zapraszam"
@@ -8308,6 +10212,9 @@
             "meaning": "Exercises"
         },
         {
+            "text": "Ćwiczę liczebniki."
+        },
+        {
             "text": "ćwiczenie",
             "meaning": "an exercise"
         },
@@ -8318,6 +10225,17 @@
         {
             "text": "ćwiczenie numer dwa",
             "meaning": "exercise number two"
+        },
+        {
+            "text": "ćwiczy"
+        },
+        {
+            "text": "ćwiczę",
+            "meaning": "I practise"
+        },
+        {
+            "text": "ćwiczę liczebniki",
+            "meaning": "I practise numerals"
         },
         {
             "text": "ładna",
@@ -8354,6 +10272,10 @@
         {
             "text": "Świetnie! Dziękuję, to wszystko. Do widzenia!",
             "meaning": "Great! Thank you, that's all. Goodbye!"
+        },
+        {
+            "text": "Świetnie! Ja jestem lekarką i interesuję się fotografią.",
+            "meaning": "Great! I'm a doctor and I'm interested in photography."
         },
         {
             "text": "Świetnie! Na razie, do jutra!",
@@ -8894,6 +10816,34 @@
             "hash": "ac3691643ef3"
         },
         {
+            "id": "chat-tango-class/t1/2",
+            "hash": "f2ce7371f83a"
+        },
+        {
+            "id": "chat-tango-class/t2/2",
+            "hash": "251dd18df836"
+        },
+        {
+            "id": "chat-tango-class/t3/2",
+            "hash": "40e68ee2da51"
+        },
+        {
+            "id": "chat-tango-class/t4/2",
+            "hash": "52b61149554a"
+        },
+        {
+            "id": "chat-tango-class/t5/2",
+            "hash": "600412b4d830"
+        },
+        {
+            "id": "chat-tango-class/t6/2",
+            "hash": "c6e988a0a80c"
+        },
+        {
+            "id": "chat-tango-class/t7/2",
+            "hash": "a1d11e49e343"
+        },
+        {
             "id": "chat-your-details/t1/2",
             "hash": "38f3180e9686"
         },
@@ -9162,6 +11112,62 @@
         {
             "id": "kpk1-l04-g-t01",
             "hash": "722b83b83e0e"
+        },
+        {
+            "id": "kpk1-l05-a1-t01",
+            "hash": "b7eaff09dd24"
+        },
+        {
+            "id": "kpk1-l05-a2-t01",
+            "hash": "d8729ba1fea2"
+        },
+        {
+            "id": "kpk1-l05-b1-t01",
+            "hash": "4aabeb4b577a"
+        },
+        {
+            "id": "kpk1-l05-b2-t01",
+            "hash": "5cd6a9e8bb1b"
+        },
+        {
+            "id": "kpk1-l05-c1-t01",
+            "hash": "fa1c6d7980bf"
+        },
+        {
+            "id": "kpk1-l05-c2-t01",
+            "hash": "cf9a29c385fa"
+        },
+        {
+            "id": "kpk1-l05-c3-t01",
+            "hash": "d07bda7dd4c2"
+        },
+        {
+            "id": "kpk1-l05-c4-t01",
+            "hash": "f4f5bde19f45"
+        },
+        {
+            "id": "kpk1-l05-d1-t01",
+            "hash": "0410b6676c96"
+        },
+        {
+            "id": "kpk1-l05-d2-t01",
+            "hash": "c4143333e822"
+        },
+        {
+            "id": "kpk1-l05-d3-t01",
+            "hash": "346b9766e154"
+        },
+        {
+            "id": "kpk1-l05-d4-t01",
+            "hash": "ad13c7d3dd73"
+        },
+        {
+            "id": "kpk1-l05-d5-t01",
+            "hash": "9117c1674b7b"
+        },
+        {
+            "id": "kpk1-l05-g-t01",
+            "hash": "4f972d377fc5"
         }
     ]
 }

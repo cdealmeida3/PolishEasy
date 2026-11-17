@@ -1,0 +1,451 @@
+{
+  "id": "kpk1-l05-d3",
+  "section": {
+    "letter": "D",
+    "heading": "Kim ona jest?",
+    "meaning": {
+      "en": "Who is she? What does she do?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l05-d3-t01",
+      "before": "kpk1-l05-d3-e01",
+      "title": {
+        "en": "Kim oni są? Nationalities"
+      },
+      "body": {
+        "en": "A nationality after *jest* is in the instrumental too: *on jest Polakiem*, *ona jest Polką*; *Anglikiem*, *Angielką*; *Niemcem*, *Niemką*; *Japończykiem*, *Japonką*. In Polish a nationality has a capital letter, but a language does not: *on jest Niemcem i mówi po niemiecku*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d3-e01",
+      "prompt": "Polakiem",
+      "options": [
+        {
+          "en": "Polish (a man, after jestem, jesteś, jest)"
+        },
+        {
+          "en": "English (a man, after jestem, jesteś, jest)"
+        },
+        {
+          "en": "Polish (a woman, after jestem, jesteś, jest)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "polakiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d3-e02",
+      "prompt": "Polką",
+      "options": [
+        {
+          "en": "Polish (a man, after jestem, jesteś, jest)"
+        },
+        {
+          "en": "Polish (a woman, after jestem, jesteś, jest)"
+        },
+        {
+          "en": "English (a woman, after jestem, jesteś, jest)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "polka-instr"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-d3-e03",
+      "text": "jestem Polką",
+      "meaning": {
+        "en": "I am Polish (a woman)"
+      },
+      "distractors": [
+        "jestem Polakiem",
+        "jestem Angielką"
+      ],
+      "items": [
+        "byc-jestem",
+        "polka-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d3-e04",
+      "prompt": "Anglikiem",
+      "options": [
+        {
+          "en": "Polish (a man, after jestem, jesteś, jest)"
+        },
+        {
+          "en": "German (a man, after jestem, jesteś, jest…)"
+        },
+        {
+          "en": "English (a man, after jestem, jesteś, jest)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "anglikiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d3-e05",
+      "prompt": "Angielką",
+      "options": [
+        {
+          "en": "English (a woman, after jestem, jesteś, jest)"
+        },
+        {
+          "en": "Polish (a woman, after jestem, jesteś, jest)"
+        },
+        {
+          "en": "English (a man, after jestem, jesteś, jest)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "angielka-instr"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-d3-e06",
+      "prompt": {
+        "en": "he is English, and she is Polish"
+      },
+      "acceptedAnswers": [
+        "on jest Anglikiem, a ona jest Polką"
+      ],
+      "distractors": [
+        "Polakiem",
+        "Angielką"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "anglikiem",
+        "a",
+        "ona",
+        "polka-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d3-e07",
+      "prompt": "Niemcem",
+      "options": [
+        {
+          "en": "Polish (a man, after jestem, jesteś, jest)"
+        },
+        {
+          "en": "German (a man, after jestem, jesteś, jest…)"
+        },
+        {
+          "en": "German (a woman, after jestem, jesteś, jest…)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "niemcem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d3-e08",
+      "prompt": "Niemką",
+      "options": [
+        {
+          "en": "German (a man, after jestem, jesteś, jest…)"
+        },
+        {
+          "en": "English (a woman, after jestem, jesteś, jest)"
+        },
+        {
+          "en": "German (a woman, after jestem, jesteś, jest…)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "niemka-instr"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-d3-e09",
+      "text": "On jest z Niemiec. Jest ___.",
+      "meaning": {
+        "en": "He is from Germany. He is German."
+      },
+      "gaps": [
+        [
+          "Niemcem"
+        ]
+      ],
+      "distractors": [
+        "Niemką",
+        "Polakiem"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "z-niemiec",
+        "niemcem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d3-e10",
+      "prompt": "Japończykiem",
+      "options": [
+        {
+          "en": "Japanese (a man, after jestem, jesteś, jest…)"
+        },
+        {
+          "en": "Japanese (a woman, after jestem, jesteś, jest…)"
+        },
+        {
+          "en": "German (a man, after jestem, jesteś, jest…)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "japonczykiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l05-d3-e11",
+      "prompt": "Japonką",
+      "options": [
+        {
+          "en": "Japanese (a man, after jestem, jesteś, jest…)"
+        },
+        {
+          "en": "Japanese (a woman, after jestem, jesteś, jest…)"
+        },
+        {
+          "en": "Polish (a woman, after jestem, jesteś, jest)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "japonka-instr"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l05-d3-e12",
+      "acceptedAnswers": [
+        "ona jest z Japonii, jest Japonką"
+      ],
+      "meaning": {
+        "en": "she is from Japan, she is Japanese"
+      },
+      "items": [
+        "ona",
+        "byc-jest",
+        "z-japonii",
+        "japonka-instr"
+      ],
+      "readingAnswers": [
+        "ona jest z Japonii, ona jest Japonką",
+        "jest z Japonii, jest Japonką"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l05-d3-e13",
+      "prompt": {
+        "en": "my friend (a man) is English"
+      },
+      "acceptedAnswers": [
+        "mój kolega jest Anglikiem"
+      ],
+      "items": [
+        "moj",
+        "kolega",
+        "byc-jest",
+        "anglikiem"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l05-d3-e14",
+      "pairs": [
+        {
+          "polish": "Polakiem",
+          "meaning": {
+            "en": "Polish (a man)"
+          }
+        },
+        {
+          "polish": "Polką",
+          "meaning": {
+            "en": "Polish (a woman)"
+          }
+        },
+        {
+          "polish": "Niemcem",
+          "meaning": {
+            "en": "German (a man)"
+          }
+        },
+        {
+          "polish": "Niemką",
+          "meaning": {
+            "en": "German (a woman)"
+          }
+        },
+        {
+          "polish": "Japończykiem",
+          "meaning": {
+            "en": "Japanese (a man)"
+          }
+        },
+        {
+          "polish": "Japonką",
+          "meaning": {
+            "en": "Japanese (a woman)"
+          }
+        }
+      ],
+      "items": [
+        "polakiem",
+        "polka-instr",
+        "niemcem",
+        "niemka-instr",
+        "japonczykiem",
+        "japonka-instr"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l05-d3-e15",
+      "text": "Ewa jest Niemką",
+      "meaning": {
+        "en": "Ewa is German"
+      },
+      "distractors": [
+        "Ewa jest Polką",
+        "Ewa jest Angielką"
+      ],
+      "items": [
+        "ewa",
+        "byc-jest",
+        "niemka-instr"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l05-d3-e16",
+      "lines": [
+        "Cześć! Jestem Ewa.",
+        "Jestem Angielką, ale mieszkam w Krakowie.",
+        "Mój kolega jest Niemcem, a koleżanka jest Japonką."
+      ],
+      "meaning": {
+        "en": "Ewa presents herself and her friends."
+      },
+      "statements": [
+        {
+          "text": "Ewa jest Polką.",
+          "meaning": {
+            "en": "Ewa is Polish."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa mieszka w Krakowie.",
+          "meaning": {
+            "en": "Ewa lives in Kraków."
+          },
+          "true": true
+        },
+        {
+          "text": "Koleżanka jest Japonką.",
+          "meaning": {
+            "en": "The friend (a woman) is Japanese."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "czesc",
+        "byc-jestem",
+        "ewa",
+        "angielka-instr",
+        "ale",
+        "mieszkac-mieszkam",
+        "w-krakowie",
+        "moj",
+        "kolega",
+        "byc-jest",
+        "niemcem",
+        "a",
+        "kolezanka",
+        "japonka-instr"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l05-d3-e17",
+      "prompt": {
+        "en": "he is Japanese"
+      },
+      "acceptedAnswers": [
+        "on jest Japończykiem"
+      ],
+      "distractors": [
+        "Japonką",
+        "jestem"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "japonczykiem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l05-d3-e18",
+      "text": "Adam jest z Polski, jest ___, a Ewa jest z Anglii, jest ___.",
+      "meaning": {
+        "en": "Adam is from Poland, he is Polish, and Ewa is from England, she is English."
+      },
+      "gaps": [
+        [
+          "Polakiem"
+        ],
+        [
+          "Angielką"
+        ]
+      ],
+      "distractors": [
+        "Polką"
+      ],
+      "items": [
+        "adam",
+        "byc-jest",
+        "z-polski",
+        "polakiem",
+        "a",
+        "ewa",
+        "z-anglii",
+        "angielka-instr"
+      ]
+    }
+  ]
+}
