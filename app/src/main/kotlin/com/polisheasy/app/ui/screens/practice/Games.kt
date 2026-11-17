@@ -27,6 +27,8 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_picture_cards, R.string.game_picture_cards_note, R.string.game_picture_cards_needs, R.drawable.game_picture_cards)
     Game.MEMORY_PAIRS ->
         GameWords(R.string.game_memory_pairs, R.string.game_memory_pairs_note, R.string.game_memory_pairs_needs, R.drawable.game_memory_pairs)
+    Game.CHAT ->
+        GameWords(R.string.game_chat, R.string.game_chat_note, R.string.game_chat_needs, R.drawable.game_chat)
     Game.PHRASE_CHAINS ->
         GameWords(R.string.game_phrase_chains, R.string.game_phrase_chains_note, R.string.game_phrase_chains_needs, R.drawable.game_phrase_chains)
     Game.LISTEN_AND_TAP ->
@@ -57,7 +59,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.CHAT -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
@@ -82,6 +84,8 @@ internal fun choiceLabel(id: String): String = stringResource(
         "match" -> R.string.choice_match
         "time" -> R.string.choice_time
         "noun" -> R.string.choice_noun
+        "chat" -> R.string.choice_chat
+        "way" -> R.string.choice_way
         else -> error("No name for the choice $id")
     },
 )
@@ -111,6 +115,7 @@ internal fun optionLabel(option: OptionView): String = option.label
         "tricky" -> R.string.option_tricky
         "choose" -> R.string.option_choose
         "type" -> R.string.option_type
+        "say" -> R.string.option_say
         "word" -> R.string.option_word
         "to-10" -> R.string.option_to_10
         "to-20" -> R.string.option_to_20

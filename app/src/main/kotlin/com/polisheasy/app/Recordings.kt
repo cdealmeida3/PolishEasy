@@ -68,6 +68,9 @@ interface Recordings {
 
     fun step(on: Boolean)
 
+    /** In step mode's turn, waits for the Learner instead of going on by itself: they are saying the line into the microphone. Play goes on. */
+    fun hold()
+
     /** Stops and forgets the recording, as leaving its screen does. */
     fun close()
 
@@ -195,6 +198,10 @@ class RecordingPlayer(context: Context) : Recordings {
         handler.removeCallbacks(resume)
         state = state.copy(yourTurn = false)
         playFrom(line.startMs, index)
+    }
+
+    override fun hold() {
+        if (state.yourTurn) handler.removeCallbacks(resume)
     }
 
     override fun speed(value: Float) {

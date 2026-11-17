@@ -40,9 +40,17 @@ internal fun spoken(exercise: Exercise): List<String> = when (exercise) {
     is OrderLines -> exercise.lines
 }
 
-/** Every Polish text the course can speak, once each, in Path order, then the instructions. Each needs a Clip. */
+/** What a conversation of the Chat Game can say: each line of the person, and each right reply, said as the chat goes on with it. */
+internal fun spoken(script: ChatScript): List<String> =
+    script.turns.flatMap { turn -> listOf(turn.says) + turn.replies.filter { it.right }.map { it.text } }
+
+/** Every Polish text the course can speak, once each, in Path order, then the instructions and the chats. Each needs a Clip. */
 fun Course.spokenTexts(): List<String> =
-    (path.flatMap { it.exercises }.flatMap(::spoken) + InstructionKind.entries.mapNotNull { instructions[it]?.polish })
+    (
+        path.flatMap { it.exercises }.flatMap(::spoken) +
+            InstructionKind.entries.mapNotNull { instructions[it]?.polish } +
+            chats.flatMap(::spoken)
+        )
         .distinctBy(::audioKey)
 
 /**

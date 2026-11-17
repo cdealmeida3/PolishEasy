@@ -1,0 +1,263 @@
+{
+  "id": "chat-new-classmate",
+  "person": "Ewa",
+  "title": {
+    "en": "A new classmate"
+  },
+  "scene": {
+    "en": "You are Adam, from England. On your first day at the language school Ewa sits down next to you. Talk to her as to a friend."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "byc-jestem",
+    "ewa",
+    "a-ty",
+    "adam",
+    "milo-mi",
+    "byc-jestes",
+    "z-polski",
+    "nie",
+    "z-anglii",
+    "mowic-mowisz",
+    "po-polsku",
+    "tak",
+    "troche",
+    "a",
+    "ty",
+    "po-angielsku",
+    "swietnie",
+    "na-razie",
+    "do-jutra",
+    "ale",
+    "tutaj",
+    "mowic-mowimy",
+    "dobrze",
+    "pa"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Jestem Ewa. A ty?",
+      "meaning": {
+        "en": "Hi! I'm Ewa. And you?"
+      },
+      "replies": [
+        {
+          "text": "Cześć! Jestem Adam.",
+          "meaning": {
+            "en": "Hi! I'm Adam."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Cześć! Jestem Adam.",
+            "Jestem Adam.",
+            "Cześć! Mam na imię Adam.",
+            "Mam na imię Adam."
+          ]
+        },
+        {
+          "text": "Dzień dobry! Nazywam się Adam.",
+          "meaning": {
+            "en": "Good morning! My name is Adam."
+          },
+          "register": "formal",
+          "note": {
+            "en": "*Dzień dobry* is for a teacher or an office. Ewa is a classmate, so say *cześć*."
+          }
+        },
+        {
+          "text": "Do widzenia!",
+          "meaning": {
+            "en": "Goodbye!"
+          },
+          "note": {
+            "en": "That says goodbye, and Ewa has only just said hello."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Miło mi! Jesteś z Polski?",
+      "meaning": {
+        "en": "Nice to meet you! Are you from Poland?"
+      },
+      "replies": [
+        {
+          "text": "Nie, jestem z Anglii. A ty?",
+          "meaning": {
+            "en": "No, I'm from England. And you?"
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Nie, jestem z Anglii. A ty?",
+            "Nie, jestem z Anglii.",
+            "Nie, z Anglii. A ty?",
+            "Nie, z Anglii."
+          ]
+        },
+        {
+          "text": "Tak, jestem z Anglii.",
+          "meaning": {
+            "en": "Yes, I'm from England."
+          },
+          "note": {
+            "en": "*Tak* is yes. You are from England, not from Poland, so the answer is *nie*."
+          }
+        },
+        {
+          "text": "Dobrze, dziękuję.",
+          "meaning": {
+            "en": "Fine, thank you."
+          },
+          "note": {
+            "en": "That answers *jak się masz?* Ewa asked where you are from."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Jestem z Polski. Mówisz po polsku?",
+      "meaning": {
+        "en": "I'm from Poland. Do you speak Polish?"
+      },
+      "replies": [
+        {
+          "text": "Tak, trochę.",
+          "meaning": {
+            "en": "Yes, a little."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Tak, trochę.",
+            "Trochę.",
+            "Tak, mówię trochę po polsku.",
+            "Mówię trochę po polsku.",
+            "Trochę mówię po polsku."
+          ]
+        },
+        {
+          "text": "Trochę. A ty mówisz po angielsku?",
+          "meaning": {
+            "en": "A little. And do you speak English?"
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Trochę. A ty mówisz po angielsku?",
+            "A ty mówisz po angielsku?",
+            "Trochę. Mówisz po angielsku?"
+          ]
+        },
+        {
+          "text": "Tak, jestem z Polski.",
+          "meaning": {
+            "en": "Yes, I'm from Poland."
+          },
+          "note": {
+            "en": "Ewa asked whether you speak Polish: *mówisz po polsku?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Świetnie! Na razie, do jutra!",
+      "meaning": {
+        "en": "Great! Bye for now, see you tomorrow!"
+      },
+      "replies": [
+        {
+          "text": "Cześć! Do jutra!",
+          "meaning": {
+            "en": "Bye! See you tomorrow!"
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Cześć! Do jutra!",
+            "Do jutra!",
+            "Na razie!",
+            "Pa! Do jutra!",
+            "Do zobaczenia!",
+            "Cześć!",
+            "Pa!"
+          ]
+        },
+        {
+          "text": "Do widzenia!",
+          "meaning": {
+            "en": "Goodbye!"
+          },
+          "register": "formal",
+          "note": {
+            "en": "*Do widzenia* is polite but formal. To a friend say *cześć*, *pa* or *na razie*."
+          }
+        },
+        {
+          "text": "Dzień dobry!",
+          "meaning": {
+            "en": "Good morning!"
+          },
+          "note": {
+            "en": "That says hello. Ewa is saying goodbye."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Tak, trochę, ale tutaj mówimy po polsku!",
+      "meaning": {
+        "en": "Yes, a little, but here we speak Polish!"
+      },
+      "replies": [
+        {
+          "text": "Dobrze! Na razie!",
+          "meaning": {
+            "en": "All right! See you!"
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Dobrze! Na razie!",
+            "Dobrze!",
+            "W porządku! Na razie!",
+            "W porządku!",
+            "Dobrze, na razie!"
+          ]
+        },
+        {
+          "text": "Dziękuję, nawzajem.",
+          "meaning": {
+            "en": "Thank you, likewise."
+          },
+          "note": {
+            "en": "*Nawzajem* answers a wish, such as *miłego dnia*. Here, agree with her: *dobrze*."
+          }
+        },
+        {
+          "text": "Nie, jestem z Anglii.",
+          "meaning": {
+            "en": "No, I'm from England."
+          },
+          "note": {
+            "en": "Ewa knows that. She says that here you both speak Polish, so agree: *dobrze*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Pa! Do jutra!",
+      "meaning": {
+        "en": "Bye! See you tomorrow!"
+      }
+    }
+  ]
+}

@@ -45,6 +45,44 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `every chat opens once its Items are learned, says only their words, and plays to its end every way`() {
+        assertTrue(course.chats.size >= 2)
+        val itemsById = course.itemsById
+        course.chats.forEach { script ->
+            val words = script.items.flatMap { words(itemsById.getValue(it).text) }.map { it.lowercase() }.toSet()
+            script.turns.forEach { turn ->
+                val said = listOf(turn.says) + listOfNotNull(turn.replies.firstOrNull { it.right }?.text)
+                said.forEach { line ->
+                    assertEquals(emptySet(), words(line).map { it.lowercase() }.toSet() - words, "Words of \"$line\" in ${script.id} that none of its Items has")
+                }
+            }
+        }
+        val all = practiceAfter(course.path.size)
+        val chats = all.setup(Game.CHAT).choices[0].options.map { it.id }
+        assertEquals(course.chats.map { it.id }, chats)
+        chats.forEach { chat ->
+            listOf("choose", "type", "say").forEach { way ->
+                var round = all.start(all.setup(Game.CHAT, listOf(chat, way), speech = true), speech = true) as ChatRound
+                while (!round.finished) {
+                    val turn = course.chats.single { it.id == chat }.turnsById.getValue(checkNotNull(round.turnId))
+                    val right = round.options.indexOfFirst { option -> turn.replies.any { it.right && it.text == option.text } }
+                    round = when (way) {
+                        "type" -> round.type(round.options[right].text)
+                        "say" -> round.say(listOf(round.options[right].text.lowercase()))
+                        else -> round.choose(right)
+                    }
+                    assertEquals(true, round.given?.correct, "$chat $way")
+                    round = round.next()
+                }
+                assertEquals(round.done, round.score.value)
+                assertTrue(round.done >= 4, "$chat is too short")
+            }
+        }
+        // Before any Daily Set, nothing to talk about.
+        assertEquals(GameState.NEEDS_MORE, practiceAfter(1).view().games.single { it.game == Game.CHAT }.state)
+    }
+
+    @Test
     fun `at every point on the Path a Round asks only what has been learned`() {
         (1..course.path.size).forEach { days ->
             val learned = course.path.take(days)

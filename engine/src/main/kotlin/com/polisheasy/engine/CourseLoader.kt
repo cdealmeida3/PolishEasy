@@ -22,6 +22,8 @@ internal data class CourseFile(
     val segments: String? = null,
     /** Optional: the path of the file with the listening tasks on the class recordings. */
     val listening: String? = null,
+    /** The paths of the conversations of the Chat Game, one file each. */
+    val chats: List<String> = emptyList(),
 )
 
 /** The Polish instruction of each kind of Exercise, as the book words it. */
@@ -122,6 +124,9 @@ internal class ReadContent(
     val segmentsFile: String? = null,
     val listening: List<ListeningTask> = emptyList(),
     val listeningFile: String? = null,
+    /** The conversations of the Chat Game, each with its file. */
+    val chats: List<Filed<ChatScript>> = emptyList(),
+    val chatFiles: List<String> = emptyList(),
 ) {
     /** Where the pictures' files are: the directory of the file that lists them. */
     val pictureDir: String = picturesFile?.substringBeforeLast('/', "").orEmpty()
@@ -130,7 +135,7 @@ internal class ReadContent(
 
     /** Every path `course.json` names. */
     val listed: Set<String> =
-        (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile, practiceFile, instructionsFile, tracksFile, segmentsFile, listeningFile)).toSet()
+        (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile, practiceFile, instructionsFile, tracksFile, segmentsFile, listeningFile) + chatFiles).toSet()
 
     private val unreadableFiles = unreadable.map { it.file }.toSet()
 
@@ -177,6 +182,7 @@ internal class ReadContent(
                 number.toIntOrNull()?.let { it to lines.filter { line -> line.size == 2 }.map { (start, end) -> TrackLine(start, end) } }
             }.toMap(),
             listening = listening,
+            chats = chats.map { it.value },
         )
     }
 
@@ -234,6 +240,8 @@ internal fun readContent(readFile: (path: String) -> String): ReadContent {
         segmentsFile = index.segments,
         listening = index.listening?.let { path -> read(path) { contentJson.decodeFromString<ListeningFile>(it) }?.tasks }.orEmpty(),
         listeningFile = index.listening,
+        chats = index.chats.distinct().mapNotNull { path -> read(path) { contentJson.decodeFromString<ChatScript>(it) }?.let { Filed(path, it) } },
+        chatFiles = index.chats,
         unreadable = unreadable,
     )
 }
@@ -341,6 +349,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         }
     }
     problems += classAudioProblems(content)
+    problems += chatProblems(content)
     content.pictures.map { it.value.item }.repeated().forEach { item ->
         problems += ContentProblem(content.picturesFile.orEmpty(), item, "Item $item has more than one picture")
     }
@@ -581,6 +590,36 @@ private fun classAudioProblems(content: ReadContent): List<ContentProblem> {
                 task.options.map(::normalizeAnswer).repeated().isNotEmpty() -> problem("has two options that read the same")
             }
             is DictationTask -> if (task.question.isBlank()) problem("has no question") else typedAnswersProblem(task.acceptedAnswers)?.let(::problem)
+        }
+    }
+    return problems
+}
+
+/**
+ * What the Chat Game could not play in the conversations: repeated ids, a turn led to that is not
+ * there, a turn to reply to with no right reply, a reply that cannot be typed, an Item not defined.
+ */
+private fun chatProblems(content: ReadContent): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    problems += repeatedIds("chat", content.chats.map { Filed(it.file, it.value.id) })
+    content.chats.forEach { (file, script) ->
+        fun problem(message: String) {
+            problems += ContentProblem(file, script.id, "Chat ${script.id} $message")
+        }
+        if (script.turns.isEmpty()) problem("has no turns")
+        script.turns.map { it.id }.repeated().forEach { problem("has more than one turn $it") }
+        script.items.filter { content.itemsComplete && it !in content.course().itemsById }.forEach { problem("lists Item $it, which is not defined") }
+        val turns = script.turns.map { it.id }.toSet()
+        script.turns.forEach { turn ->
+            if (turn.says.isBlank()) problem("turn ${turn.id} says nothing")
+            if (turn.replies.isNotEmpty() && turn.replies.none { it.right }) problem("turn ${turn.id} has no right reply")
+            turn.replies.map { normalizeAnswer(it.text) }.repeated().forEach { problem("turn ${turn.id} has two replies that read \"$it\"") }
+            turn.replies.forEach { reply ->
+                if (normalizeAnswer(reply.text).isEmpty()) problem("turn ${turn.id} has a blank reply")
+                reply.next?.let { next -> if (next !in turns) problem("turn ${turn.id} leads to turn $next, which is not there") }
+                if (!reply.right && reply.next != null) problem("turn ${turn.id} has a wrong reply that leads on")
+                if (reply.right) typedAnswersProblem(reply.answers)?.let { problem("turn ${turn.id}: the reply \"${reply.text}\" $it") }
+            }
         }
     }
     return problems

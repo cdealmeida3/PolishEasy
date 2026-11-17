@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberUpdatedState
@@ -19,6 +20,9 @@ import com.polisheasy.app.ClipPlayer
 import com.polisheasy.app.RecordingPlayer
 import com.polisheasy.app.RecordingTitle
 import com.polisheasy.app.Recordings
+import com.polisheasy.app.LocalSpeech
+import com.polisheasy.app.Speech
+import com.polisheasy.app.rememberSpeech
 import androidx.compose.runtime.LaunchedEffect
 import com.polisheasy.app.ui.screens.ClassAudioScreen
 import com.polisheasy.app.ui.screens.GrammarScreen
@@ -62,14 +66,23 @@ fun PolishEasyApp(
     viewModel: CourseViewModel = viewModel(),
     player: Clips = rememberClipPlayer(),
     recordings: Recordings = rememberRecordings(),
+    speech: Speech = rememberSpeech(),
 ) {
-    val context = LocalContext.current
     DisposableEffect(Unit) {
         onDispose {
             player.release()
             recordings.release()
+            speech.release()
         }
     }
+    // A Game offers saying an answer only where the phone can hear it.
+    LaunchedEffect(speech.available) { viewModel.speaking = speech.available }
+    CompositionLocalProvider(LocalSpeech provides speech) { Screens(viewModel, player, recordings) }
+}
+
+@Composable
+private fun Screens(viewModel: CourseViewModel, player: Clips, recordings: Recordings) {
+    val context = LocalContext.current
     // The app is silent once it leaves the screen.
     LifecycleStartEffect(Unit) { onStopOrDispose { player.stop() } }
     Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
@@ -255,6 +268,7 @@ private fun Listen(screen: Screen.Listen, viewModel: CourseViewModel, player: Cl
         onSpeed = recordings::speed,
         onRepeat = recordings::repeat,
         onStep = recordings::step,
+        onHold = recordings::hold,
         onAnswer = viewModel::answerListening,
         onRecording = viewModel::openRecording,
         onBack = viewModel::backToLesson,

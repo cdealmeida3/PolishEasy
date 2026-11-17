@@ -177,12 +177,24 @@
       "text": "cześć, do jutra"
     },
     {
+      "id": "czesc-do-jutra-2",
+      "text": "Cześć! Do jutra!"
+    },
+    {
       "id": "czesc-jak-sie-nazywasz",
       "text": "cześć, jak się nazywasz?"
     },
     {
+      "id": "czesc-jestem-adam",
+      "text": "Cześć! Jestem Adam."
+    },
+    {
       "id": "czesc-jestem-ewa-a-ty",
       "text": "cześć, jestem Ewa, a ty?"
+    },
+    {
+      "id": "czesc-jestem-ewa-a-ty-2",
+      "text": "Cześć! Jestem Ewa. A ty?"
     },
     {
       "id": "czesc-mam-na-imie-ewa",
@@ -321,6 +333,10 @@
       "text": "dobrze, dziękuję, a pani?"
     },
     {
+      "id": "dobrze-na-razie",
+      "text": "Dobrze! Na razie!"
+    },
+    {
       "id": "dwa",
       "text": "dwa"
     },
@@ -389,6 +405,10 @@
       "text": "dziękuję bardzo"
     },
     {
+      "id": "dziekuje-do-widzenia",
+      "text": "Dziękuję! Do widzenia!"
+    },
+    {
       "id": "dziekuje-dobrze-a-pani",
       "text": "dziękuję, dobrze, a pani?"
     },
@@ -403,6 +423,10 @@
     {
       "id": "dziekuje-swietnie",
       "text": "dziękuję, świetnie"
+    },
+    {
+      "id": "dziekuje-wszystko-w-porzadku-do-widzenia",
+      "text": "Dziękuję. Wszystko w porządku. Do widzenia!"
     },
     {
       "id": "dziekujemy",
@@ -427,6 +451,10 @@
     {
       "id": "dzien-dobry-prosze-imie-i-nazwisko",
       "text": "Dzień dobry! Proszę imię i nazwisko."
+    },
+    {
+      "id": "dzien-dobry-slucham",
+      "text": "Dzień dobry! Słucham."
     },
     {
       "id": "dzien-dobry-witamy",
@@ -499,6 +527,10 @@
     {
       "id": "ile-ma-lat-twoj-syn",
       "text": "ile ma lat twój syn?"
+    },
+    {
+      "id": "ile-ma-pan-lat",
+      "text": "Ile ma pan lat?"
     },
     {
       "id": "ile-macie-lat-mamy-siedemnascie-lat",
@@ -673,8 +705,16 @@
       "text": "jestem tutaj"
     },
     {
+      "id": "jestem-z-anglii",
+      "text": "Jestem z Anglii."
+    },
+    {
       "id": "jestem-z-anglii-jestem-angielka",
       "text": "jestem z Anglii, jestem Angielką"
+    },
+    {
+      "id": "jestem-z-polski-mowisz-po-polsku",
+      "text": "Jestem z Polski. Mówisz po polsku?"
     },
     {
       "id": "jestes",
@@ -773,6 +813,10 @@
       "text": "mam dwadzieścia lat"
     },
     {
+      "id": "mam-dwadziescia-lat-2",
+      "text": "Mam dwadzieścia lat."
+    },
+    {
       "id": "mam-dwanascie-lat",
       "text": "mam dwanaście lat"
     },
@@ -783,6 +827,10 @@
     {
       "id": "mam-jedenascie-lat-a-ty",
       "text": "mam jedenaście lat, a ty?"
+    },
+    {
+      "id": "mam-na-imie-adam",
+      "text": "Mam na imię Adam."
     },
     {
       "id": "mam-na-imie-ewa",
@@ -853,6 +901,10 @@
       "text": "miłego dnia"
     },
     {
+      "id": "milego-dnia-2",
+      "text": "Miłego dnia!"
+    },
+    {
       "id": "milo-cie-poznac",
       "text": "miło cię poznać"
     },
@@ -867,6 +919,10 @@
     {
       "id": "milo-mi-jestem-adam",
       "text": "Miło mi, jestem Adam."
+    },
+    {
+      "id": "milo-mi-jestes-z-polski",
+      "text": "Miło mi! Jesteś z Polski?"
     },
     {
       "id": "moj",
@@ -1105,6 +1161,10 @@
       "text": "nie jestem Polakiem, jestem Anglikiem"
     },
     {
+      "id": "nie-jestem-z-anglii-a-ty",
+      "text": "Nie, jestem z Anglii. A ty?"
+    },
+    {
       "id": "nie-ma-sprawy",
       "text": "nie ma sprawy"
     },
@@ -1243,6 +1303,10 @@
     {
       "id": "pa-do-jutra",
       "text": "pa, do jutra"
+    },
+    {
+      "id": "pa-do-jutra-2",
+      "text": "Pa! Do jutra!"
     },
     {
       "id": "pa-dobranoc",
@@ -1573,6 +1637,10 @@
       "text": "świetnie, dziękuję"
     },
     {
+      "id": "swietnie-na-razie-do-jutra",
+      "text": "Świetnie! Na razie, do jutra!"
+    },
+    {
       "id": "syn",
       "text": "syn"
     },
@@ -1623,6 +1691,14 @@
     {
       "id": "tak-sobie-a-ty",
       "text": "tak sobie, a ty?"
+    },
+    {
+      "id": "tak-troche",
+      "text": "Tak, trochę."
+    },
+    {
+      "id": "tak-troche-ale-tutaj-mowimy-po-polsku",
+      "text": "Tak, trochę, ale tutaj mówimy po polsku!"
     },
     {
       "id": "tata",
@@ -1827,6 +1903,10 @@
     {
       "id": "troche",
       "text": "trochę"
+    },
+    {
+      "id": "troche-a-ty-mowisz-po-angielsku",
+      "text": "Trochę. A ty mówisz po angielsku?"
     },
     {
       "id": "troche-mowie-po-polsku",

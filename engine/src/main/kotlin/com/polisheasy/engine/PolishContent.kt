@@ -89,6 +89,18 @@ fun polishContent(files: ContentFiles): PolishContent {
         }
     }
 
+    // A chat's lines and replies, each with what it means; a right reply's other answers mean the same.
+    content.chats.forEach { (file, script) ->
+        script.turns.forEach { turn ->
+            val use = { role: PolishRole -> PolishUse(file, "${script.id}/${turn.id}", role) }
+            sentence(turn.says, turn.meaning, use(PolishRole.PROMPT))
+            turn.replies.forEach { reply ->
+                sentence(reply.text, reply.meaning, use(if (reply.right) PolishRole.ANSWER else PolishRole.DISTRACTOR))
+                if (reply.right) reply.answers.forEach { sentence(it, reply.meaning, use(PolishRole.ANSWER)) }
+            }
+        }
+    }
+
     content.dailySets.forEach { (file, dailySet) ->
         dailySet.section?.let { section ->
             sentence(section.heading, section.meaning, PolishUse(file, dailySet.id, PolishRole.HEADING))
@@ -188,6 +200,16 @@ fun polishContent(files: ContentFiles): PolishContent {
                     tip.table?.let { tableLines(it, language) }.orEmpty() +
                     listOfNotNull(tip.kind.takeIf { it != TipKind.NOTE }?.name)
                 TipText(file, tip.id, lines.joinToString("\n") { it.trim() }, polish = body.polish.map { body.text.substring(it) })
+            }
+        } + content.chats.flatMap { (file, script) ->
+            // A wrong reply's note is read like a Tip: English, with its Polish marked.
+            script.turns.flatMap { turn ->
+                turn.replies.mapIndexedNotNull { index, reply ->
+                    reply.note?.get(language)?.let { note ->
+                        val body = readPolishMarks(note)
+                        TipText(file, "${script.id}/${turn.id}/${index + 1}", body.text.trim(), polish = body.polish.map { body.text.substring(it) })
+                    }
+                }
             }
         },
         unreadable = content.unreadable,

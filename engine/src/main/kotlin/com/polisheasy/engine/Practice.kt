@@ -16,6 +16,8 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     /** Nothing is asked: the cards are looked at and listened to. It has no Rounds and no Best. */
     PICTURE_CARDS("picture-cards", GameGroup.WORDS, rounds = false),
     MEMORY_PAIRS("memory-pairs", GameGroup.WORDS, fewestWins = true),
+    /** A conversation with a person, replied to by choosing, typing or saying. */
+    CHAT("chat", GameGroup.PHRASES),
     PHRASE_CHAINS("phrase-chains", GameGroup.PHRASES, fewestWins = true),
     VERB_CHALLENGE("verb-challenge", GameGroup.VERBS),
     LISTEN_AND_TAP("listen-and-tap", GameGroup.SOUNDS),
@@ -139,7 +141,7 @@ data class Run<Q>(
 internal class Learned(
     val course: Course,
     progress: LearnerProgress,
-    private val language: String,
+    val language: String,
 ) {
     private val completed: Set<String> = progress.completedDailySets().keys
 
@@ -187,12 +189,19 @@ internal interface GameRules {
      */
     fun choices(learned: Learned, wanted: List<String>, sound: Boolean): List<ChoiceView> = emptyList()
 
+    /** As [choices], where [speech] says whether the Learner can be heard: a way to play that is only speaking is offered only with it. */
+    fun choices(learned: Learned, wanted: List<String>, sound: Boolean, speech: Boolean): List<ChoiceView> = choices(learned, wanted, sound)
+
     /**
      * A new Round played the [selected] way. [seen] is what this Game has already asked today, to
      * ask something else where it can, and [avoidFirst] what the last Round opened with.
      */
     fun start(learned: Learned, selected: List<String>, sound: Boolean, random: Random, seen: Set<String>, avoidFirst: String?): Round =
         error("$game has no Rounds")
+
+    /** As [start], where [speech] says whether the Learner can be heard. */
+    fun start(learned: Learned, selected: List<String>, sound: Boolean, speech: Boolean, random: Random, seen: Set<String>, avoidFirst: String?): Round =
+        start(learned, selected, sound, random, seen, avoidFirst)
 }
 
 /** A choice with the option [wanted] selected if it is among [options], or else the first. */
@@ -222,15 +231,18 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(PictureCards, MemoryPairs, PhraseChains, VerbChallenge, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, Numbers).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, VerbChallenge, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, Numbers).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null
     private val seen = mutableMapOf<Game, MutableSet<String>>()
     private val lastFirst = mutableMapOf<Game, String>()
 
-    /** Practice as its screen shows it. With [sound] false, a Game that is only listening cannot be played. */
-    fun view(sound: Boolean = true): PracticeView {
+    /**
+     * Practice as its screen shows it. With [sound] false, a Game that is only listening cannot be
+     * played. [speech] is whether the Learner can be heard, for the ways to play that are speaking.
+     */
+    fun view(sound: Boolean = true, speech: Boolean = false): PracticeView {
         val learned = learned()
         return PracticeView(
             open = isOpen(),
@@ -243,7 +255,7 @@ class Practice internal constructor(
                     GameView(game, state)
                 } else {
                     // The way it was last played, if that can still be played; its Best is the one to beat.
-                    val choices = of.choices(learned, last, sound)
+                    val choices = of.choices(learned, last, sound, speech)
                     val played = choices.map { it.selected }
                     GameView(
                         game,
@@ -260,14 +272,15 @@ class Practice internal constructor(
      * [game] before a Round, with [wanted] selected: the id of an option for each choice, in
      * order. Without it, the way the Game was last played. An option that is not offered, or no
      * longer is, gives way to the first of its choice. Without [sound], a way to play that is only
-     * listening is not offered. Fails unless the Game has enough to play with.
+     * listening is not offered, and without [speech] one that is speaking. Fails unless the Game
+     * has enough to play with.
      */
-    fun setup(game: Game, wanted: List<String>? = null, sound: Boolean = true): GameSetup {
+    fun setup(game: Game, wanted: List<String>? = null, sound: Boolean = true, speech: Boolean = false): GameSetup {
         check(game.rounds) { "$game has no Rounds" }
         val of = rules.getValue(game)
         val learned = learned()
         check(of.state(learned, sound = true) != GameState.NEEDS_MORE) { "$game has nothing to play with yet" }
-        val choices = of.choices(learned, wanted ?: bests.lastPlayed(game.id).orEmpty(), sound)
+        val choices = of.choices(learned, wanted ?: bests.lastPlayed(game.id).orEmpty(), sound, speech)
         return GameSetup(game, choices, bests.best(key(game, choices.map { it.selected })))
     }
 
@@ -275,7 +288,7 @@ class Practice internal constructor(
      * Starts a Round of [setup]'s Game, played the way it selects. Fails unless Practice is open
      * and the Game can be played. Nothing is saved until the Round is finished.
      */
-    fun start(setup: GameSetup, sound: Boolean = true): Round {
+    fun start(setup: GameSetup, sound: Boolean = true, speech: Boolean = false): Round {
         check(isOpen()) { "Practice is locked until today's Daily Set is completed" }
         val of = rules.getValue(setup.game)
         val learned = learned()
@@ -285,8 +298,8 @@ class Practice internal constructor(
             seenOn = today()
         }
         val asked = seen.getOrPut(setup.game) { mutableSetOf() }
-        val selected = of.choices(learned, setup.selected, sound).map { it.selected }
-        return of.start(learned, selected, sound, random, asked.toSet(), lastFirst[setup.game]).also { round ->
+        val selected = of.choices(learned, setup.selected, sound, speech).map { it.selected }
+        return of.start(learned, selected, sound, speech, random, asked.toSet(), lastFirst[setup.game]).also { round ->
             asked += round.asked
             round.asked.firstOrNull()?.let { lastFirst[setup.game] = it }
         }

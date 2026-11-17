@@ -4,6 +4,14 @@
             "text": "A to jest Anna, studentka."
         },
         {
+            "text": "A ty mówisz po angielsku?",
+            "meaning": "A little. And do you speak English?"
+        },
+        {
+            "text": "A ty?",
+            "meaning": "And you?"
+        },
+        {
             "text": "Adam",
             "meaning": "Adam (a man's name)"
         },
@@ -70,6 +78,10 @@
             "meaning": "Adam is a student."
         },
         {
+            "text": "Adam.",
+            "meaning": "My first name is Adam."
+        },
+        {
             "text": "Angielką",
             "meaning": "English (a woman, after jestem, jesteś, jest)"
         },
@@ -84,6 +96,30 @@
         {
             "text": "Bardzo przepraszamy.",
             "meaning": "We are very sorry."
+        },
+        {
+            "text": "Cześć!",
+            "meaning": "Bye! See you tomorrow!"
+        },
+        {
+            "text": "Cześć!",
+            "meaning": "Hi!"
+        },
+        {
+            "text": "Cześć! Do jutra!",
+            "meaning": "Bye! See you tomorrow!"
+        },
+        {
+            "text": "Cześć! Jestem Adam.",
+            "meaning": "Hi! I'm Adam."
+        },
+        {
+            "text": "Cześć! Jestem Ewa. A ty?",
+            "meaning": "Hi! I'm Ewa. And you?"
+        },
+        {
+            "text": "Cześć! Mam na imię Adam.",
+            "meaning": "Hi! I'm Adam."
         },
         {
             "text": "Czy macie czas?",
@@ -114,13 +150,86 @@
             "meaning": "Do you speak Polish? (to a woman, formal)"
         },
         {
-            "text": "Dzień dobry!"
+            "text": "Do jutra!",
+            "meaning": "Bye! See you tomorrow!"
+        },
+        {
+            "text": "Do widzenia!",
+            "meaning": "Goodbye!"
+        },
+        {
+            "text": "Do widzenia!",
+            "meaning": "Thank you! Goodbye!"
+        },
+        {
+            "text": "Do zobaczenia!",
+            "meaning": "Bye! See you tomorrow!"
+        },
+        {
+            "text": "Dobranoc!",
+            "meaning": "Good night!"
+        },
+        {
+            "text": "Dobrze!",
+            "meaning": "All right! See you!"
+        },
+        {
+            "text": "Dobrze! Na razie!",
+            "meaning": "All right! See you!"
+        },
+        {
+            "text": "Dobrze, dziękuję.",
+            "meaning": "Fine, thank you."
+        },
+        {
+            "text": "Dobrze, na razie!",
+            "meaning": "All right! See you!"
+        },
+        {
+            "text": "Dwadzieścia lat.",
+            "meaning": "I'm twenty years old."
+        },
+        {
+            "text": "Dwadzieścia.",
+            "meaning": "I'm twenty years old."
+        },
+        {
+            "text": "Dzień dobry!",
+            "meaning": "Good morning!"
+        },
+        {
+            "text": "Dzień dobry! Nazywam się Adam.",
+            "meaning": "Good morning! My name is Adam."
         },
         {
             "text": "Dzień dobry! Proszę imię i nazwisko."
         },
         {
+            "text": "Dzień dobry! Słucham.",
+            "meaning": "Good morning! How can I help?"
+        },
+        {
+            "text": "Dziękuję bardzo! Do widzenia!",
+            "meaning": "Thank you! Goodbye!"
+        },
+        {
+            "text": "Dziękuję! Do widzenia!",
+            "meaning": "Thank you! Goodbye!"
+        },
+        {
+            "text": "Dziękuję, do widzenia!",
+            "meaning": "Thank you! Goodbye!"
+        },
+        {
+            "text": "Dziękuję, nawzajem.",
+            "meaning": "Thank you, likewise."
+        },
+        {
             "text": "Dziękuję."
+        },
+        {
+            "text": "Dziękuję. Wszystko w porządku. Do widzenia!",
+            "meaning": "Thank you. Everything is in order. Goodbye!"
         },
         {
             "text": "Ewa",
@@ -142,6 +251,10 @@
             "meaning": "Ewa is a teacher."
         },
         {
+            "text": "Ile ma pan lat?",
+            "meaning": "How old are you? (to a man)"
+        },
+        {
             "text": "Ile macie lat? Mamy siedemnaście lat.",
             "meaning": "How old are you? (several people) We are seventeen."
         },
@@ -150,8 +263,64 @@
             "meaning": "How old are you? (one friend)"
         },
         {
+            "text": "Ile masz lat?",
+            "meaning": "How old are you? (to a friend)"
+        },
+        {
+            "text": "Ja jestem z Anglii.",
+            "meaning": "I'm from England."
+        },
+        {
             "text": "Jak ma na imię twoja żona?",
             "meaning": "What is your wife's first name? (to one friend)"
+        },
+        {
+            "text": "Jak pan ma na imię?",
+            "meaning": "What is your first name? (to a man)"
+        },
+        {
+            "text": "Jestem Adam.",
+            "meaning": "Hi! I'm Adam."
+        },
+        {
+            "text": "Jestem Adam.",
+            "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Jestem tutaj.",
+            "meaning": "I'm here."
+        },
+        {
+            "text": "Jestem z Anglii.",
+            "meaning": "I'm from England."
+        },
+        {
+            "text": "Jestem z Polski. Mówisz po polsku?",
+            "meaning": "I'm from Poland. Do you speak Polish?"
+        },
+        {
+            "text": "Mam dwa lata.",
+            "meaning": "I'm two years old."
+        },
+        {
+            "text": "Mam dwadzieścia lat.",
+            "meaning": "I'm twenty years old."
+        },
+        {
+            "text": "Mam na imię Adam.",
+            "meaning": "Hi! I'm Adam."
+        },
+        {
+            "text": "Mam na imię Adam.",
+            "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Miłego dnia!",
+            "meaning": "Have a nice day!"
+        },
+        {
+            "text": "Miło mi! Jesteś z Polski?",
+            "meaning": "Nice to meet you! Are you from Poland?"
         },
         {
             "text": "Miło mi, jestem Adam.",
@@ -190,12 +359,56 @@
             "meaning": "My dad is from Poland, and my mum is from England."
         },
         {
+            "text": "Mówię trochę po polsku.",
+            "meaning": "Yes, a little."
+        },
+        {
+            "text": "Na razie!",
+            "meaning": "Bye! See you tomorrow!"
+        },
+        {
+            "text": "Nazywam się Adam.",
+            "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Nie, jestem z Anglii.",
+            "meaning": "No, I'm from England."
+        },
+        {
+            "text": "Nie, jestem z Anglii.",
+            "meaning": "No, I'm from England. And you?"
+        },
+        {
+            "text": "Nie, jestem z Anglii. A ty?",
+            "meaning": "No, I'm from England. And you?"
+        },
+        {
+            "text": "Nie, z Anglii.",
+            "meaning": "No, I'm from England. And you?"
+        },
+        {
+            "text": "Nie, z Anglii. A ty?",
+            "meaning": "No, I'm from England. And you?"
+        },
+        {
             "text": "Ona jest z Polski.",
             "meaning": "She is from Poland."
         },
         {
             "text": "Ona ma na imię Ewa.",
             "meaning": "Her name is Ewa."
+        },
+        {
+            "text": "Pa!",
+            "meaning": "Bye!"
+        },
+        {
+            "text": "Pa!",
+            "meaning": "Bye! See you tomorrow!"
+        },
+        {
+            "text": "Pa! Do jutra!",
+            "meaning": "Bye! See you tomorrow!"
         },
         {
             "text": "Polakiem",
@@ -273,10 +486,54 @@
             "meaning": "Please, thank you, sorry"
         },
         {
+            "text": "Skąd pan jest?",
+            "meaning": "Where are you from? (to a man)"
+        },
+        {
+            "text": "Smacznego!",
+            "meaning": "Enjoy your meal!"
+        },
+        {
+            "text": "Tak, jestem z Anglii.",
+            "meaning": "Yes, I'm from England."
+        },
+        {
+            "text": "Tak, jestem z Polski.",
+            "meaning": "Yes, I'm from Poland."
+        },
+        {
+            "text": "Tak, mówię trochę po polsku.",
+            "meaning": "Yes, a little."
+        },
+        {
+            "text": "Tak, trochę, ale tutaj mówimy po polsku!",
+            "meaning": "Yes, a little, but here we speak Polish!"
+        },
+        {
+            "text": "Tak, trochę.",
+            "meaning": "Yes, a little."
+        },
+        {
             "text": "To jest Adam, student."
         },
         {
             "text": "To jest Ewa, nauczycielka."
+        },
+        {
+            "text": "Trochę mówię po polsku.",
+            "meaning": "Yes, a little."
+        },
+        {
+            "text": "Trochę.",
+            "meaning": "Yes, a little."
+        },
+        {
+            "text": "Trochę. A ty mówisz po angielsku?",
+            "meaning": "A little. And do you speak English?"
+        },
+        {
+            "text": "Trochę. Mówisz po angielsku?",
+            "meaning": "A little. And do you speak English?"
         },
         {
             "text": "Twoja córka jest tutaj.",
@@ -299,6 +556,14 @@
             "meaning": "In the classroom"
         },
         {
+            "text": "W porządku!",
+            "meaning": "All right! See you!"
+        },
+        {
+            "text": "W porządku! Na razie!",
+            "meaning": "All right! See you!"
+        },
+        {
             "text": "W szkole",
             "meaning": "At school"
         },
@@ -309,6 +574,10 @@
         {
             "text": "Wy mówicie po polsku, a one mówią po angielsku.",
             "meaning": "You (several people) speak Polish, and they (women) speak English."
+        },
+        {
+            "text": "Z Anglii.",
+            "meaning": "I'm from England."
         },
         {
             "text": "a",
@@ -2394,6 +2663,10 @@
             "meaning": "exercise number two"
         },
         {
+            "text": "Świetnie! Na razie, do jutra!",
+            "meaning": "Great! Bye for now, see you tomorrow!"
+        },
+        {
             "text": "śmiesznie"
         },
         {
@@ -2611,6 +2884,82 @@
         {
             "id": "a1-u03-d08-t02",
             "hash": "8f34a020d202"
+        },
+        {
+            "id": "chat-new-classmate/t1/2",
+            "hash": "53e1b4068538"
+        },
+        {
+            "id": "chat-new-classmate/t1/3",
+            "hash": "7dd41ccfa5e0"
+        },
+        {
+            "id": "chat-new-classmate/t2/2",
+            "hash": "fade84340e16"
+        },
+        {
+            "id": "chat-new-classmate/t2/3",
+            "hash": "a01ee8ff5742"
+        },
+        {
+            "id": "chat-new-classmate/t3/3",
+            "hash": "884e564a5eb0"
+        },
+        {
+            "id": "chat-new-classmate/t4/2",
+            "hash": "044d0d2f9cc1"
+        },
+        {
+            "id": "chat-new-classmate/t4/3",
+            "hash": "3a2165698207"
+        },
+        {
+            "id": "chat-new-classmate/t5/2",
+            "hash": "27ab73e10117"
+        },
+        {
+            "id": "chat-new-classmate/t5/3",
+            "hash": "4f934b2caf84"
+        },
+        {
+            "id": "chat-school-office/t1/2",
+            "hash": "9c2abf918e96"
+        },
+        {
+            "id": "chat-school-office/t1/3",
+            "hash": "5aa1466f6b9f"
+        },
+        {
+            "id": "chat-school-office/t2/2",
+            "hash": "069e4c21ba5d"
+        },
+        {
+            "id": "chat-school-office/t2/3",
+            "hash": "28aebee31fa1"
+        },
+        {
+            "id": "chat-school-office/t3/2",
+            "hash": "d6b4e4fb685c"
+        },
+        {
+            "id": "chat-school-office/t3/3",
+            "hash": "2cdfaa2bb171"
+        },
+        {
+            "id": "chat-school-office/t4/2",
+            "hash": "cbc2c479ce90"
+        },
+        {
+            "id": "chat-school-office/t4/3",
+            "hash": "b5045cb77b72"
+        },
+        {
+            "id": "chat-school-office/t5/2",
+            "hash": "f82fb3ae96c3"
+        },
+        {
+            "id": "chat-school-office/t5/3",
+            "hash": "ac3691643ef3"
         },
         {
             "id": "kpk1-l00-a-t01",

@@ -29,6 +29,8 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 | Spell it | `engine/.../SpellIt.kt` |
 | Quick round | `engine/.../QuickRound.kt` |
 | Listen and tap | `engine/.../ListenAndTap.kt` |
+| Chat, and its scripts | `engine/.../Chat.kt` |
+| Hearing Polish said (`saidAs`) | `engine/.../Speaking.kt` |
 
 A Round is an immutable value. Each move returns the next Round and never fails: a move that makes no sense now returns the Round unchanged. `Run<Q>` is the shared shape for a Game that is a list of questions.
 
@@ -38,9 +40,17 @@ A Round is an immutable value. Each move returns the next Round and never fails:
 
 `ui/screens/practice/` holds the Practice screen, the screen before a Round (`GameSetupScreen`), `RoundScreen`, which shows the step of whichever Game is being played, and `RoundResultScreen`. `Games.kt` is the one place that gives a Game its name, its line, its icon and the words for its result.
 
-The view model holds the Round. A screen makes a move by calling the engine's pure function and handing the Round it returns to `CourseViewModel.move`, which ends the Round when it is finished. A board is the exception: its last move should be seen, so the finished Round stays on screen and the screen calls `CourseViewModel.endRound` a moment later.
+The view model holds the Round. A screen makes a move by calling the engine's pure function and handing the Round it returns to `CourseViewModel.move`, which ends the Round when it is finished. A board and a chat are the exceptions: their last move should be seen, so the finished Round stays on screen and the screen calls `CourseViewModel.endRound` a moment later.
 
-What a Game offers can depend on sound: `Practice.setup` and `Practice.start` are told whether sound is on, and a way to play that is only listening is not offered without it.
+What a Game offers can depend on sound: `Practice.setup` and `Practice.start` are told whether sound is on, and a way to play that is only listening is not offered without it. They are told the same way whether the phone can hear Polish said (`speech`), and a way to play by speaking is not offered without it.
+
+## Speaking
+
+*Powtórz na głos* is the Learner saying Polish aloud into the microphone. `Speech` (`app/.../Speech.kt`) is the one way the screens hear: Android's `SpeechRecognizer` in pl-PL, offline where the phone has it, with five guesses. It is provided through `LocalSpeech`, and the tests provide `FakeSpeech`, which they speak into. `MicButton` is the microphone; it shows nothing where speech is not `available`, which is when the phone has no recognizer or the Learner refused the microphone. The microphone is asked for on its first tap only.
+
+What was heard is matched by the engine's `saidAs`: case, punctuation and Polish marks do not count, the words must come in the same number and order, and one word may be a little off (two letters, and less than half the word). Speaking never blocks: wherever the microphone is the answer, choosing instead is there too, and hearing nothing changes nothing.
+
+It is in three places: the Chat's "say" way; step mode of a Class recording, where the turn holds while the Learner speaks and what was heard is shown, without a verdict since a recording's lines have no text; and after a listen-and-choose Exercise is answered, where the Learner may say the answer and see whether it was understood. Nothing about it is saved.
 
 ## Adding a Game
 
@@ -98,6 +108,8 @@ A Game that shows Items side by side uses `Learned.unalike` to leave out any tha
 
 **Spell it** (Words). Opens with four learned Items that can be spelled: one word of small letters, three to nine of them. Ways to play: from the word's Picture or from its meaning; a deck. A Round is up to six words. The word's letters lie mixed as tiles, Polish letters included, never already in order; tapped in order they fill the word's slots. A wrong tile stays and is a slip; where a letter is written twice, either tile of it will do. Whole, the word is said. The result is the words spelled with no slip.
 
+**Chat** (Phrases). A messenger conversation with someone, from a script in `content/kpk1/chats/`. Opens with a script whose every Item is learned. Ways to play: the script; reply by choosing from the replies, by typing, or by saying it (only where the phone can hear). The person's lines arrive one at a time, typing first, and are said. Each reply is answered once. A wrong one, often in the wrong register, shows the right one and a gentle note on why, and the chat goes on with the right one. Typed replies are checked like a typed answer against the Accepted Answers of each right reply; a typed or said wrong reply that is in the script gets its note. A right reply may lead to its own next turn, so a chat can branch. The last line stands a moment before the result, which is the replies right first time.
+
 **Quick round** (Words). Opens with six learned Items. A Polish word is shown beside a Picture or a meaning, its own or another word's, and the Learner says "match" or "no match", for 60 seconds or 120. A right answer brings the next card at once. A wrong one shows what the word means and waits for "Continue", while the clock runs, which is also what makes guessing slow. Every word comes round before any comes again. The result is the right answers, and the most is the Best of that time.
 
 The clock is the only one in the app. The engine does not read the time: the screen calls `QuickRound.tick()` once a second, and the Round is finished when no seconds are left. The bar at the top of the Round shows the time left and empties; it moves once a second and nothing loops. When the time runs out the Round ends, even with a wrong answer still showing.
@@ -111,3 +123,9 @@ The clock is the only one in the app. The engine does not read the time: the scr
 - `my`: the Item that says "my" for each gender, `{ "m": "moj", "f": "moja", "n": "moje" }`.
 
 A new Unit adds its nouns to `genders`.
+
+## Chat scripts
+
+`course.json` lists the scripts under `"chats"`. A script has an `id`, the `person`, a `title` and a `scene` in each Base Language (who the Learner is and where, and how to address the person), the `register` the chat is held in, the `items` it uses, and its `turns`. Each turn has an `id`, what the person `says` and its `meaning`, and two to four `replies`. A reply has its `text` and `meaning`; a right one is marked `right` and names the turn it leads to with `next` (none ends the chat), and may list `acceptedAnswers` for typing and saying. A wrong one may name its `register` and a `note` in each Base Language, its Polish marked with `*` as in a Tip. The last turn has no replies.
+
+Write it fresh, with only the Items listed, and list every Item it uses: `PracticeOverAuthoredContentTest` checks that its words come from them. `./gradlew :engine:checkContent` checks the rest: every turn reachable from the first, an end, a right reply in every turn that has replies, no wrong reply that leads on. Its Polish goes through the Polish check and review like a Daily Set's, and its lines and right replies need Clips (`./gradlew :audio:makeClips`).

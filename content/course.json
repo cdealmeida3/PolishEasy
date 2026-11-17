@@ -12,6 +12,10 @@
   "tracks": "kpk1/tracks.json",
   "segments": "kpk1/segments.json",
   "listening": "kpk1/listening.json",
+  "chats": [
+    "kpk1/chats/school-office.json",
+    "kpk1/chats/new-classmate.json"
+  ],
   "levels": [
     {
       "id": "a1",

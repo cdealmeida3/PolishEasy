@@ -42,7 +42,16 @@ class Settings(context: Context) {
         get() = preferences.getBoolean(REMINDER_OFFERED, false)
         set(value) = preferences.edit().putBoolean(REMINDER_OFFERED, value).apply()
 
+    /**
+     * Whether the Learner refused the microphone when it was first asked for. Then no microphone
+     * is offered, until Android's settings give the app the permission after all.
+     */
+    var microphoneRefused: Boolean
+        get() = preferences.getBoolean(MICROPHONE_REFUSED, false)
+        set(value) = preferences.edit().putBoolean(MICROPHONE_REFUSED, value).apply()
+
     private companion object {
+        const val MICROPHONE_REFUSED = "microphone_refused"
         const val WELCOMED = "welcomed"
         const val REMINDER_OFFERED = "reminder_offered"
         const val SOUND_ON = "sound_on"

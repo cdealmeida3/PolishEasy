@@ -183,10 +183,11 @@ private fun PlayerIcon(@DrawableRes icon: Int, label: String, onClick: () -> Uni
 
 /**
  * Step mode's turn, the book's *Proszę powtórzyć*: shown while the player waits for the Learner
- * to say the line aloud. A screen reader hears it as it appears.
+ * to say the line aloud, with [action] beside it, the microphone where the phone can hear. A
+ * screen reader hears it as it appears.
  */
 @Composable
-fun YourTurn(visible: Boolean, title: String, note: String, accent: Int, modifier: Modifier = Modifier) {
+fun YourTurn(visible: Boolean, title: String, note: String, accent: Int, modifier: Modifier = Modifier, action: (@Composable () -> Unit)? = null) {
     val colors = accentColors(accent)
     AnimatedVisibility(visible, modifier = modifier) {
         Row(
@@ -204,9 +205,13 @@ fun YourTurn(visible: Boolean, title: String, note: String, accent: Int, modifie
                 modifier = Modifier.size(Scaled.icon()),
             )
             Spacer(Modifier.width(Space.s))
-            Column {
+            Column(modifier = Modifier.weight(1f)) {
                 Text(title, style = MaterialTheme.typography.titleMedium.inPolish(), color = colors.onContainer)
                 Text(note, style = MaterialTheme.typography.labelMedium, color = colors.onContainer)
+            }
+            action?.let {
+                Spacer(Modifier.width(Space.s))
+                it()
             }
         }
     }

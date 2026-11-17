@@ -13,6 +13,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import com.polisheasy.app.R
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.width
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.semantics.LiveRegionMode
+import androidx.compose.ui.semantics.liveRegion
+import androidx.compose.ui.semantics.semantics
+import com.polisheasy.app.LocalSpeech
+import com.polisheasy.app.ui.PolishEasyTheme
+import com.polisheasy.app.ui.components.MicButton
+import com.polisheasy.engine.saidAs
 import com.polisheasy.app.ui.components.AnswerField
 import com.polisheasy.app.ui.components.BasePrompt
 import com.polisheasy.app.ui.components.Instruction
@@ -238,4 +248,41 @@ internal fun WordTilesAnswer(
         onTakeBack = { tile -> onPlacedChange(selection.takeBack(tile).placed) },
         answerDescription = stringResource(R.string.word_tiles_answer_description),
     )
+}
+
+/**
+ * *Powtórz na głos* once a listen-and-choose Exercise is answered: the Learner may say [text]
+ * into the microphone and see whether it was understood, leniently. Nothing waits on it, and
+ * where the phone cannot hear nothing is shown.
+ */
+@Composable
+internal fun SayItBack(text: String?) {
+    if (text == null || !LocalSpeech.current.available) return
+    // Null until something is tried; then what was heard, "" for nothing.
+    var heard by rememberSaveable(text) { mutableStateOf<String?>(null) }
+    var right by rememberSaveable(text) { mutableStateOf(false) }
+    Spacer(Modifier.height(Space.s))
+    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
+        MicButton(
+            stringResource(R.string.speak_mic),
+            stringResource(R.string.speak_listening),
+            onHeard = { guesses ->
+                right = saidAs(guesses, listOf(text)) != null
+                heard = guesses.firstOrNull { it.isNotBlank() }.orEmpty()
+            },
+        )
+        Spacer(Modifier.width(Space.s))
+        val said = heard
+        Text(
+            when {
+                said == null -> stringResource(R.string.speak_say_it)
+                right -> stringResource(R.string.speak_right)
+                said.isEmpty() -> stringResource(R.string.speak_heard_nothing)
+                else -> stringResource(R.string.speak_heard, said) + " " + stringResource(R.string.speak_again)
+            },
+            style = MaterialTheme.typography.bodyMedium,
+            color = if (right) PolishEasyTheme.colors.success else MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.weight(1f).semantics { liveRegion = LiveRegionMode.Polite },
+        )
+    }
 }

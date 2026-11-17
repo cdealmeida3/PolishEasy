@@ -102,4 +102,7 @@ object Size {
 
     /** Content is never wider than this, and is centred beyond it. */
     val contentMax: Dp = 480.dp
+
+    /** The widest a chat bubble grows, so the two sides of a conversation stay apart. */
+    val bubbleMax: Dp = 300.dp
 }

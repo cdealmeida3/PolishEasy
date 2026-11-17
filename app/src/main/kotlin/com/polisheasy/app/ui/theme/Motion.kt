@@ -73,6 +73,15 @@ object Motion {
     /** How long a finished board of Memory pairs stands before the result. */
     const val BOARD_DONE_MILLIS = 900L
 
+    /** How long the person in a chat is "typing" before their words arrive. */
+    const val TYPING_MILLIS = 650L
+
+    /** The dots of a chat bubble giving way to its words. */
+    const val BUBBLE_MILLIS = 150
+
+    /** How long a finished chat stands, its last line read, before the result. */
+    const val CHAT_DONE_MILLIS = 1600L
+
     /** How long a right answer in a Game stands before the Round moves on by itself. A tap on "Continue" skips it. */
     const val MOVE_ON_MILLIS = 700L
 

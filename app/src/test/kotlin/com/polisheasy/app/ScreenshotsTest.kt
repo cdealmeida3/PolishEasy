@@ -62,6 +62,7 @@ import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.SpellRound
 import com.polisheasy.engine.ListenRound
+import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.VerbRound
@@ -118,6 +119,7 @@ class ScreenshotsTest {
     private val clock = SettableClock()
     private val clips = RecordingClips()
     private val recordings = RecordingRecordings()
+    private val speech = FakeSpeech()
     private var viewModel: CourseViewModel? by mutableStateOf(null)
 
     /** How much larger than usual the text is. Set before anything is shown. */
@@ -1065,6 +1067,92 @@ class ScreenshotsTest {
         shot("92-gaps-result")
     }
 
+    @Test
+    fun `Chat over the real course in the light theme`() = chat("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Chat over the real course in the dark theme`() = chat("dark")
+
+    @Test
+    fun `Chat over the real course at the largest font size`() = atTheLargestFontSize { chat("large") }
+
+    /** Chat: before a Round, the person typing, a line with replies, a wrong reply put right, typing a reply, saying one, and the result. */
+    private fun chat(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as ChatRound
+
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+
+        fun right(): String = course.chats.first { it.person == round().person }.turns.first { it.says == round().lines.last().text }.replies.first { it.right }.text
+
+        fun arrive() {
+            screen.mainClock.advanceTimeBy(Motion.TYPING_MILLIS + 100)
+            screen.waitForIdle()
+        }
+
+        fun choose(text: String) {
+            screen.onNode(hasText(text) and hasClickAction()).performScrollTo().performClick()
+            screen.mainClock.advanceTimeBy(300)
+        }
+
+        openRealPractice()
+        openGame(R.string.game_chat)
+        shot("136-chat-setup")
+        tap("At the school office")
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+        shot("137-chat-typing")
+        arrive()
+        shot("138-chat-replies")
+        choose("Cześć!")
+        shot("139-chat-wrong")
+        tap(R.string.action_continue)
+        arrive()
+        choose(right())
+        tap(R.string.action_continue)
+        arrive()
+        shot("140-chat-going")
+        while (viewModel?.screen is Screen.Round && round().replying) {
+            choose(right())
+            tap(R.string.action_continue)
+            arrive()
+        }
+        screen.mainClock.advanceTimeBy(Motion.CHAT_DONE_MILLIS + 100)
+        screen.waitForIdle()
+        shot("141-chat-result")
+        tap(R.string.result_done)
+
+        // Typing, and saying.
+        openGame(R.string.game_chat)
+        tap("A new classmate")
+        tap(R.string.option_type)
+        tap(R.string.setup_play)
+        arrive()
+        type("Cześć! Jestem Adam.")
+        shot("142-chat-type")
+        leaveRound()
+        openGame(R.string.game_chat)
+        tap(R.string.option_say)
+        tap(R.string.setup_play)
+        arrive()
+        shot("143-chat-say")
+        screen.onNodeWithContentDescription(app.getString(R.string.speak_mic)).performClick()
+        screen.waitForIdle()
+        shot("144-chat-listening")
+        screen.runOnIdle { speech.hear("czesc") }
+        screen.mainClock.advanceTimeBy(300)
+        shot("145-chat-misheard")
+        tap(R.string.action_continue)
+        arrive()
+        screen.onNodeWithContentDescription(app.getString(R.string.speak_mic)).performClick()
+        screen.runOnIdle { speech.hear("mam na imie adam") }
+        screen.mainClock.advanceTimeBy(300)
+        shot("146-chat-said")
+        leaveRound()
+    }
+
     /** Practice over the real course, for a Learner who has completed all of it, the last Daily Set today. */
     private fun openRealPractice() {
         val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
@@ -1508,7 +1596,7 @@ class ScreenshotsTest {
         viewModel = over
         screen.setContent {
             Shown {
-                viewModel?.let { key(it) { PolishEasyApp(it, clips, recordings) } }
+                viewModel?.let { key(it) { PolishEasyApp(it, clips, recordings, speech) } }
             }
         }
     }

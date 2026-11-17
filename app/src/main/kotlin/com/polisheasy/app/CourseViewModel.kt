@@ -45,6 +45,7 @@ import com.polisheasy.engine.StepProgress
 import com.polisheasy.engine.UnitCompletedView
 import com.polisheasy.engine.FilePracticeProgress
 import com.polisheasy.engine.MemoryRound
+import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.Game
 import com.polisheasy.engine.GameState
 import com.polisheasy.engine.PracticeView
@@ -300,6 +301,14 @@ class CourseViewModel(
     private var stepsShown = 0
 
     private var roundsStarted = 0
+
+    /** Whether the phone can hear Polish spoken, so a Game can offer saying an answer. Set by the screen once it knows. */
+    var speaking = false
+        set(value) {
+            if (field == value) return
+            field = value
+            (screen as? Screen.GameSetup)?.let { screen = Screen.GameSetup(practice.setup(it.setup.game, it.setup.selected, settings.soundOn, value)) }
+        }
 
     /** Set by the answer that completed today's Daily Set, for its Summary. */
     private var streakRaised: StreakRaised? = null
@@ -606,13 +615,13 @@ class CourseViewModel(
         screen = practiceScreen()
     }
 
-    private fun practiceScreen() = Screen.Practice(practice.view(sound = settings.soundOn), engine.today())
+    private fun practiceScreen() = Screen.Practice(practice.view(sound = settings.soundOn, speech = speaking), engine.today())
 
     /** A Game tapped on the Practice screen: its cards, or what there is to choose before a Round, as it was last played. */
     fun openGame(game: Game) {
         screen = when (game) {
             Game.PICTURE_CARDS -> Screen.PictureCards(practice.pictureCards(), sound = settings.soundOn)
-            else -> Screen.GameSetup(practice.setup(game, sound = settings.soundOn))
+            else -> Screen.GameSetup(practice.setup(game, sound = settings.soundOn, speech = speaking))
         }
     }
 
@@ -632,7 +641,7 @@ class CourseViewModel(
     fun choose(choice: Int, option: String) {
         val setup = (screen as? Screen.GameSetup)?.setup ?: return
         val wanted = setup.selected.toMutableList().also { it[choice] = option }
-        screen = Screen.GameSetup(practice.setup(setup.game, wanted, settings.soundOn))
+        screen = Screen.GameSetup(practice.setup(setup.game, wanted, settings.soundOn, speaking))
     }
 
     /** "Play" before a Round, and "Play again" after one: a new Round, played the same way. */
@@ -644,21 +653,21 @@ class CourseViewModel(
         }
         // Midnight may have passed, or sound been turned off, since the Game was opened.
         val sound = settings.soundOn
-        if (practice.view(sound).games.none { it.game == setup.game && it.state == GameState.READY } || !engine.practiceOpen()) {
+        if (practice.view(sound, speaking).games.none { it.game == setup.game && it.state == GameState.READY } || !engine.practiceOpen()) {
             openPractice()
             return
         }
-        screen = Screen.Round(practice.start(setup, sound), setup, number = ++roundsStarted, sound = sound)
+        screen = Screen.Round(practice.start(setup, sound, speaking), setup, number = ++roundsStarted, sound = sound)
     }
 
     /**
      * A move in the Round being played, as the Round it leaves. The last one ends the Round and
-     * saves its result, except on a board, which is shown finished until [endRound].
+     * saves its result, except on a board or in a chat, which are shown finished until [endRound].
      */
     fun move(round: PracticeRound) {
         val playing = screen as? Screen.Round ?: return
         screen = playing.copy(round = round)
-        if (round !is MemoryRound) endRound()
+        if (round !is MemoryRound && round !is ChatRound) endRound()
     }
 
     /** Ends the Round being played, if it is finished, and saves its result. */
