@@ -26,3 +26,26 @@ It gives the later chapters:
 - *proszę*, *dziękuję*, *przepraszam* and the greetings of Starter, with their register.
 
 It leaves for later: every verb in a conjugated form, every case but the nominative, plurals and adjectives. Chapter 1 takes up greetings and introducing oneself, the alphabet and the numbers 0 to 10, as its contents list them.
+
+## Chapter 1: Pierwszy dzień w szkole
+
+Book pages 10 to 17, recordings 004 to 028. Nine parts, 150 Exercises and 36 new Items, with 62 words in its Słownik (the Starter greetings, names and numbers it introduces again count):
+
+- **A** *Sekretariat, prezentacja* (18): *miło mi*, *bardzo mi miło*, *mnie również* and *miło mi cię / pana / panią poznać*, with the chapter's table of what is formal, informal and universal (O, N, U, as the book marks them). **A** again, *Powitania i pożegnania* (17): the Starter greetings and goodbyes sorted the same way.
+- **B** *Alfabet* (18): the alphabet and how a word is spelt aloud (*proszę przeliterować*), over *szkoła, książka, język, długopis, komputer, restauracja* and *alfabet*, with two Tips: the letters and their names, and spelling a word.
+- **C** *Klasa, prezentacja* (17): *przedstawić się* and asking a name in each register (*jak pan / pani ma na imię?*, *jak masz na imię?*, *jak się pan / pani nazywa?*), with a table.
+- **D** *Gdzie jest…?* (18): *gdzie, tu, tam, na lewo, na prawo*, and *toaleta, woda, kawa* to ask after.
+- **E** *Nie rozumiem! Proszę powtórzyć!* (18): *nie rozumiem, nie wiem, nie pamiętam, co to znaczy?, jak się mówi…*, and the book's instructions *dopasować, podkreślić, ponumerować*, with a *Zapamiętaj!* callout.
+- **F** *Liczebniki 0–10*, in two (14 each): the numbers again, now in sums with *plus*, *minus* and *równa się*.
+- *Ćwiczenia* (16): the book's kinds again (pairs, gaps, dialogues in order, a heard text true or false) over the whole chapter. It introduces nothing.
+
+There are 18 listening tasks on the chapter's 12 dialogue recordings (004, 005, 013, 015 to 018, 020 to 023, and 027 from *Powtórzenie*), and two Chats: *At the front desk* (Pan Jan, formal: where the toilet and the coffee are, and asking him to repeat) and *In class* (Kasia, informal: names, *twój* and *mój*, sums).
+
+It gives the later chapters:
+
+- the three registers, which every later phrase is marked with (O, N, U on a table; the register chip in a Chat);
+- *pan* and *pani* in the accusative only inside *miło mi pana / panią poznać*, learnt as a phrase;
+- the classroom phrases for not understanding, which later Chats use as replies;
+- *minus* and *równa się* after a number, which the Numbers rules in `docs/authoring.md` now allow.
+
+It leaves for later: *jak się mówi* only with *po polsku*, no verb but *być*, *mieć* and *nazywać się* in the forms Starter taught, places only as *tu*, *tam*, *na lewo* and *na prawo* (no locative), and no plural nouns.

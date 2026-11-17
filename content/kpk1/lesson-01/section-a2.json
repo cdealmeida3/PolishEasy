@@ -1,0 +1,362 @@
+{
+  "id": "kpk1-l01-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Powitania i pożegnania",
+    "meaning": {
+      "en": "Hello and goodbye"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l01-a2-t01",
+      "before": "kpk1-l01-a2-e01",
+      "title": {
+        "en": "Hello and goodbye"
+      },
+      "body": {
+        "en": "*Dzień dobry* is hello all day, and *dobry wieczór* in the evening; both are formal. To a friend it is *cześć*, hello and goodbye. Goodbye is *do widzenia* (formal), *dobranoc* at night, and to a friend *pa*, *na razie*, *do jutra* or *do zobaczenia*."
+      },
+      "table": {
+        "title": {
+          "en": "Hello and goodbye"
+        },
+        "columns": [
+          {
+            "header": "powitania"
+          },
+          {
+            "header": "pożegnania"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "dzień dobry",
+              "do widzenia"
+            ]
+          },
+          {
+            "cells": [
+              "dobry wieczór",
+              "dobranoc"
+            ]
+          },
+          {
+            "cells": [
+              "cześć",
+              "na razie"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a2-e01",
+      "prompt": "dzień dobry",
+      "options": [
+        {
+          "en": "hello (polite); good morning"
+        },
+        {
+          "en": "good night"
+        },
+        {
+          "en": "see you tomorrow"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dzien-dobry"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a2-e02",
+      "prompt": "dobry wieczór",
+      "options": [
+        {
+          "en": "hello (polite); good morning"
+        },
+        {
+          "en": "good night"
+        },
+        {
+          "en": "good evening"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dobry-wieczor"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-a2-e03",
+      "text": "dobry wieczór",
+      "meaning": {
+        "en": "good evening"
+      },
+      "distractors": [
+        "dzień dobry",
+        "dobranoc"
+      ],
+      "items": [
+        "dobry-wieczor"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a2-e04",
+      "prompt": "do widzenia",
+      "options": [
+        {
+          "en": "good evening"
+        },
+        {
+          "en": "goodbye"
+        },
+        {
+          "en": "see you tomorrow"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-widzenia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a2-e05",
+      "prompt": "dobranoc",
+      "options": [
+        {
+          "en": "good night"
+        },
+        {
+          "en": "good evening"
+        },
+        {
+          "en": "goodbye"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dobranoc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a2-e06",
+      "prompt": "cześć",
+      "options": [
+        {
+          "en": "goodbye"
+        },
+        {
+          "en": "hi; bye (to friends)"
+        },
+        {
+          "en": "good night"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czesc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a2-e07",
+      "prompt": "pa",
+      "options": [
+        {
+          "en": "good morning"
+        },
+        {
+          "en": "thank you"
+        },
+        {
+          "en": "bye-bye (to friends and family)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a2-e08",
+      "prompt": "na razie",
+      "options": [
+        {
+          "en": "see you; bye for now"
+        },
+        {
+          "en": "good night"
+        },
+        {
+          "en": "nice to meet you"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-razie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a2-e09",
+      "prompt": "do jutra",
+      "options": [
+        {
+          "en": "goodbye"
+        },
+        {
+          "en": "see you tomorrow"
+        },
+        {
+          "en": "good evening"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-jutra"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a2-e10",
+      "prompt": "do zobaczenia",
+      "options": [
+        {
+          "en": "good night"
+        },
+        {
+          "en": "hello (polite); good morning"
+        },
+        {
+          "en": "see you"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-zobaczenia"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-a2-e11",
+      "text": "do zobaczenia",
+      "meaning": {
+        "en": "see you"
+      },
+      "distractors": [
+        "dzień dobry",
+        "dobranoc"
+      ],
+      "items": [
+        "do-zobaczenia"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-a2-e12",
+      "prompt": {
+        "en": "hi, I am Ewa"
+      },
+      "acceptedAnswers": [
+        "cześć, jestem Ewa",
+        "cześć, ja jestem Ewa"
+      ],
+      "distractors": [
+        "dobry",
+        "ja"
+      ],
+      "items": [
+        "czesc",
+        "byc-jestem",
+        "ewa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-a2-e13",
+      "prompt": {
+        "en": "bye-bye, see you tomorrow"
+      },
+      "acceptedAnswers": [
+        "pa, do jutra"
+      ],
+      "distractors": [
+        "widzenia",
+        "dobry"
+      ],
+      "items": [
+        "pa",
+        "do-jutra"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-a2-e14",
+      "prompt": {
+        "en": "good night"
+      },
+      "acceptedAnswers": [
+        "dobranoc"
+      ],
+      "items": [
+        "dobranoc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-a2-e15",
+      "prompt": {
+        "en": "goodbye (formal)"
+      },
+      "acceptedAnswers": [
+        "do widzenia"
+      ],
+      "items": [
+        "do-widzenia"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-a2-e16",
+      "text": "na razie",
+      "meaning": {
+        "en": "see you; bye for now"
+      },
+      "distractors": [
+        "do widzenia",
+        "dobranoc"
+      ],
+      "items": [
+        "na-razie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l01-a2-e17",
+      "acceptedAnswers": [
+        "dobry wieczór"
+      ],
+      "meaning": {
+        "en": "good evening"
+      },
+      "items": [
+        "dobry-wieczor"
+      ]
+    }
+  ]
+}

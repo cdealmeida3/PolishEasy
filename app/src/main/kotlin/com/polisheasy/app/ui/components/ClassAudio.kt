@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -79,11 +80,12 @@ fun RecordingRow(
         Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier
-                .size(Size.touch)
+                // At least a touch target square, and wider when large text needs it, so "025" is never cut.
+                .sizeIn(minWidth = Size.touch, minHeight = Size.touch)
                 .alpha(if (onClick == null) NOT_ADDED_ALPHA else 1f)
                 .background(colors.container, RoundedCornerShape(Corner.small)),
         ) {
-            Text(number, style = MaterialTheme.typography.labelLarge, color = colors.onContainer)
+            Text(number, style = MaterialTheme.typography.labelLarge, color = colors.onContainer, maxLines = 1, softWrap = false, modifier = Modifier.padding(horizontal = Space.xxs))
         }
         Spacer(Modifier.width(Space.s))
         Column(modifier = Modifier.weight(1f)) {

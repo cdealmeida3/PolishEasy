@@ -1,0 +1,371 @@
+{
+  "id": "kpk1-l01-c",
+  "section": {
+    "letter": "C",
+    "heading": "Klasa, prezentacja",
+    "meaning": {
+      "en": "In class: introducing yourself"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l01-c-t01",
+      "before": "kpk1-l01-c-e01",
+      "title": {
+        "en": "Asking a name"
+      },
+      "body": {
+        "en": "To a friend: *jak masz na imię?* or *jak się nazywasz?* To a man you call *pan*: *jak pan ma na imię?*, *jak się pan nazywa?*; to a woman, the same with *pani*. *Pan* and *pani* take the verb of *on* and *ona*: *pan ma*, not *pan masz*."
+      },
+      "table": {
+        "title": {
+          "en": "What is your name?"
+        },
+        "columns": [
+          {
+            "header": "oficjalnie"
+          },
+          {
+            "header": "nieoficjalnie"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "jak pan ma na imię?",
+              "jak masz na imię?"
+            ]
+          },
+          {
+            "cells": [
+              "jak pani ma na imię?",
+              "jak masz na imię?"
+            ]
+          },
+          {
+            "cells": [
+              "jak się pan nazywa?",
+              "jak się nazywasz?"
+            ]
+          },
+          {
+            "cells": [
+              "jak się pani nazywa?",
+              "jak się nazywasz?"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-c-e01",
+      "prompt": "jak masz na imię?",
+      "options": [
+        {
+          "en": "what is your first name? (one friend)"
+        },
+        {
+          "en": "what is your name? (to a man, formal)"
+        },
+        {
+          "en": "nice to meet you (to a friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jak-masz-na-imie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-c-e02",
+      "prompt": "jak pan ma na imię?",
+      "options": [
+        {
+          "en": "what is your first name? (one friend)"
+        },
+        {
+          "en": "what is your first name? (to a woman, formal)"
+        },
+        {
+          "en": "what is your first name? (to a man, formal)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jak-pan-ma-na-imie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-c-e03",
+      "prompt": "jak pani ma na imię?",
+      "options": [
+        {
+          "en": "what is your first name? (to a man, formal)"
+        },
+        {
+          "en": "what is your first name? (to a woman, formal)"
+        },
+        {
+          "en": "what is your name? (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jak-pani-ma-na-imie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-c-e04",
+      "text": "jak pani ma na imię?",
+      "meaning": {
+        "en": "what is your first name? (to a woman, formal)"
+      },
+      "distractors": [
+        "jak pan ma na imię?",
+        "jak masz na imię?"
+      ],
+      "items": [
+        "jak-pani-ma-na-imie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-c-e05",
+      "prompt": "jak się nazywasz?",
+      "options": [
+        {
+          "en": "what is your name? (one friend)"
+        },
+        {
+          "en": "what is your name? (to a man, formal)"
+        },
+        {
+          "en": "how are you? (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jak-sie-nazywasz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-c-e06",
+      "prompt": "jak się pan nazywa?",
+      "options": [
+        {
+          "en": "what is your name? (one friend)"
+        },
+        {
+          "en": "what is your name? (to a man, formal)"
+        },
+        {
+          "en": "what is your first name? (to a woman, formal)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jak-sie-pan-nazywa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-c-e07",
+      "prompt": "jak się pani nazywa?",
+      "options": [
+        {
+          "en": "what is your name? (to a man, formal)"
+        },
+        {
+          "en": "nice to meet you (to a woman, formal)"
+        },
+        {
+          "en": "what is your name? (to a woman, formal)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jak-sie-pani-nazywa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-c-e08",
+      "text": "jak się pan nazywa?",
+      "meaning": {
+        "en": "what is your name? (to a man, formal)"
+      },
+      "distractors": [
+        "jak się pani nazywa?",
+        "jak się nazywasz?"
+      ],
+      "items": [
+        "jak-sie-pan-nazywa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-c-e09",
+      "prompt": {
+        "en": "what is your name? (to a woman, formal)"
+      },
+      "acceptedAnswers": [
+        "jak się pani nazywa?",
+        "jak pani się nazywa?"
+      ],
+      "distractors": [
+        "pan",
+        "masz"
+      ],
+      "items": [
+        "jak-sie-pani-nazywa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-c-e10",
+      "prompt": {
+        "en": "what is your first name? (one friend)"
+      },
+      "acceptedAnswers": [
+        "jak masz na imię?"
+      ],
+      "distractors": [
+        "ma",
+        "pan"
+      ],
+      "items": [
+        "jak-masz-na-imie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-c-e11",
+      "prompt": "przedstawić się",
+      "options": [
+        {
+          "en": "introduce yourself (proszę się przedstawić: please introduce yourself)"
+        },
+        {
+          "en": "nice to meet you"
+        },
+        {
+          "en": "spell (letter by letter)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przedstawic-sie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-c-e12",
+      "prompt": {
+        "en": "introduce yourself, please"
+      },
+      "acceptedAnswers": [
+        "proszę się przedstawić"
+      ],
+      "distractors": [
+        "przeczytać",
+        "pan"
+      ],
+      "items": [
+        "prosze",
+        "przedstawic-sie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-c-e13",
+      "prompt": {
+        "en": "what is your first name? (to a man, formal)"
+      },
+      "acceptedAnswers": [
+        "jak pan ma na imię?",
+        "jak ma pan na imię?"
+      ],
+      "items": [
+        "jak-pan-ma-na-imie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-c-e14",
+      "text": "proszę się przedstawić",
+      "meaning": {
+        "en": "introduce yourself, please"
+      },
+      "distractors": [
+        "proszę przeczytać",
+        "proszę powtórzyć"
+      ],
+      "items": [
+        "prosze",
+        "przedstawic-sie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-c-e15",
+      "prompt": {
+        "en": "my name is Adam, nice to meet you"
+      },
+      "acceptedAnswers": [
+        "nazywam się Adam, miło mi"
+      ],
+      "distractors": [
+        "pan",
+        "masz"
+      ],
+      "items": [
+        "nazywam-sie",
+        "adam",
+        "milo-mi"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l01-c-e16",
+      "acceptedAnswers": [
+        "jak masz na imię?"
+      ],
+      "meaning": {
+        "en": "what is your first name? (one friend)"
+      },
+      "items": [
+        "jak-masz-na-imie"
+      ],
+      "readingAnswers": [
+        "jak się nazywasz?",
+        "jak ty masz na imię?"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-c-e17",
+      "prompt": {
+        "en": "what is your name? (to a woman, formal)"
+      },
+      "acceptedAnswers": [
+        "jak się pani nazywa?",
+        "jak pani ma na imię?",
+        "jak pani się nazywa?"
+      ],
+      "items": [
+        "jak-sie-pani-nazywa"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "id": "chat-front-desk",
+  "person": "Pan Jan",
+  "title": {
+    "en": "At the front desk"
+  },
+  "scene": {
+    "en": "You are Adam. On your first morning at the language school you stop at the front desk, where Pan Jan works. You want the toilet and a coffee. He is pan to you, so be polite."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "slucham",
+    "przepraszam",
+    "gdzie",
+    "byc-jest",
+    "toaleta",
+    "tam",
+    "na-lewo",
+    "dziekuje",
+    "a",
+    "kawa",
+    "i",
+    "woda",
+    "byc-sa",
+    "na-prawo",
+    "nie-rozumiem",
+    "prosze",
+    "powtorzyc",
+    "tu",
+    "rozumiem",
+    "bardzo",
+    "nie-ma-za-co",
+    "milego-dnia",
+    "nawzajem",
+    "do-widzenia"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry! Słucham.",
+      "meaning": {
+        "en": "Good morning! How can I help?"
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry! Przepraszam, gdzie jest toaleta?",
+          "meaning": {
+            "en": "Good morning! Excuse me, where is the toilet?"
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Dzień dobry! Przepraszam, gdzie jest toaleta?",
+            "Przepraszam, gdzie jest toaleta?",
+            "Dzień dobry! Gdzie jest toaleta?",
+            "Gdzie jest toaleta?"
+          ]
+        },
+        {
+          "text": "Cześć! Gdzie jest toaleta?",
+          "meaning": {
+            "en": "Hi! Where is the toilet?"
+          },
+          "register": "informal",
+          "note": {
+            "en": "*Cześć* is for friends and family. To Pan Jan say *dzień dobry*."
+          }
+        },
+        {
+          "text": "Dobranoc! Gdzie jest toaleta?",
+          "meaning": {
+            "en": "Good night! Where is the toilet?"
+          },
+          "note": {
+            "en": "*Dobranoc* is for bedtime. In the morning it is *dzień dobry*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Toaleta jest tam, na lewo.",
+      "meaning": {
+        "en": "The toilet is over there, on the left."
+      },
+      "replies": [
+        {
+          "text": "Dziękuję! A gdzie jest kawa?",
+          "meaning": {
+            "en": "Thank you! And where is the coffee?"
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Dziękuję! A gdzie jest kawa?",
+            "Dziękuję. A gdzie jest kawa?",
+            "A gdzie jest kawa?",
+            "Dziękuję! Gdzie jest kawa?"
+          ]
+        },
+        {
+          "text": "Dzięki! A gdzie jest kawa?",
+          "meaning": {
+            "en": "Thanks! And where is the coffee?"
+          },
+          "register": "informal",
+          "note": {
+            "en": "*Dzięki* is casual, for friends. To Pan Jan say *dziękuję*."
+          }
+        },
+        {
+          "text": "Nie ma za co. A gdzie jest kawa?",
+          "meaning": {
+            "en": "You're welcome. And where is the coffee?"
+          },
+          "note": {
+            "en": "*Nie ma za co* answers a thank-you. Here you are the one to thank him: *dziękuję*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Kawa i woda są tam, na prawo.",
+      "meaning": {
+        "en": "The coffee and the water are over there, on the right."
+      },
+      "replies": [
+        {
+          "text": "Przepraszam, nie rozumiem. Proszę powtórzyć.",
+          "meaning": {
+            "en": "Sorry, I don't understand. Please repeat."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Przepraszam, nie rozumiem. Proszę powtórzyć.",
+            "Nie rozumiem. Proszę powtórzyć.",
+            "Przepraszam, nie rozumiem.",
+            "Nie rozumiem."
+          ]
+        },
+        {
+          "text": "Nie wiem.",
+          "meaning": {
+            "en": "I don't know."
+          },
+          "note": {
+            "en": "*Nie wiem* is for a question you can't answer. When you don't follow, say *nie rozumiem* and ask him to repeat: *proszę powtórzyć*."
+          }
+        },
+        {
+          "text": "Nie pamiętam.",
+          "meaning": {
+            "en": "I don't remember."
+          },
+          "note": {
+            "en": "*Nie pamiętam* is for something you have forgotten. When you don't follow, say *nie rozumiem* and ask him to repeat: *proszę powtórzyć*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Kawa jest tam, na prawo.",
+      "meaning": {
+        "en": "The coffee is over there, on the right."
+      },
+      "replies": [
+        {
+          "text": "Rozumiem! Dziękuję bardzo.",
+          "meaning": {
+            "en": "I understand! Thank you very much."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Rozumiem! Dziękuję bardzo.",
+            "Rozumiem. Dziękuję bardzo.",
+            "Dziękuję bardzo.",
+            "Rozumiem, dziękuję."
+          ]
+        },
+        {
+          "text": "Na lewo?",
+          "meaning": {
+            "en": "On the left?"
+          },
+          "note": {
+            "en": "He said *na prawo*, on the right. *Na lewo* is on the left."
+          }
+        },
+        {
+          "text": "Proszę bardzo.",
+          "meaning": {
+            "en": "Here you are."
+          },
+          "note": {
+            "en": "*Proszę bardzo* is what you say when you give something, or answer a thank-you. Here you thank him: *dziękuję bardzo*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Nie ma za co. Miłego dnia!",
+      "meaning": {
+        "en": "You're welcome. Have a nice day!"
+      },
+      "replies": [
+        {
+          "text": "Dziękuję, nawzajem! Do widzenia.",
+          "meaning": {
+            "en": "Thank you, same to you! Goodbye."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Dziękuję, nawzajem! Do widzenia.",
+            "Nawzajem! Do widzenia.",
+            "Dziękuję, nawzajem.",
+            "Do widzenia."
+          ]
+        },
+        {
+          "text": "Pa!",
+          "meaning": {
+            "en": "Bye!"
+          },
+          "register": "informal",
+          "note": {
+            "en": "*Pa* is for friends and family. To Pan Jan say *do widzenia*."
+          }
+        },
+        {
+          "text": "Dzień dobry!",
+          "meaning": {
+            "en": "Good morning!"
+          },
+          "note": {
+            "en": "That says hello. Pan Jan is saying goodbye, so wish him the same: *nawzajem*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Do widzenia!",
+      "meaning": {
+        "en": "Goodbye!"
+      }
+    }
+  ]
+}

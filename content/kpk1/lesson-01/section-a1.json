@@ -1,0 +1,397 @@
+{
+  "id": "kpk1-l01-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Sekretariat, prezentacja",
+    "meaning": {
+      "en": "At the school office: introducing yourself"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l01-a1-t01",
+      "before": "kpk1-l01-a1-e01",
+      "title": {
+        "en": "Nice to meet you"
+      },
+      "body": {
+        "en": "Meeting someone, you say *miło mi* or *bardzo mi miło*, and they answer *mnie również*. The book marks each phrase *O* (formal: to *pan* or *pani*), *N* (informal: to a friend) or *U* (universal: to anyone). *Miło mi cię poznać* is for a friend, *miło mi pana poznać* for a man you call *pan*."
+      },
+      "table": {
+        "title": {
+          "en": "Nice to meet you"
+        },
+        "columns": [
+          {
+            "header": "zwrot"
+          }
+        ],
+        "rows": [
+          {
+            "header": "oficjalnie",
+            "cells": [
+              "miło mi pana poznać"
+            ]
+          },
+          {
+            "header": "oficjalnie",
+            "cells": [
+              "miło mi panią poznać"
+            ]
+          },
+          {
+            "header": "nieoficjalnie",
+            "cells": [
+              "miło mi cię poznać"
+            ]
+          },
+          {
+            "header": "uniwersalnie",
+            "cells": [
+              "miło mi"
+            ]
+          },
+          {
+            "header": "uniwersalnie",
+            "cells": [
+              "bardzo mi miło"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a1-e01",
+      "prompt": "miło mi",
+      "options": [
+        {
+          "en": "nice to meet you"
+        },
+        {
+          "en": "see you tomorrow"
+        },
+        {
+          "en": "thank you very much"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "milo-mi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a1-e02",
+      "prompt": "bardzo mi miło",
+      "options": [
+        {
+          "en": "thank you very much"
+        },
+        {
+          "en": "very nice to meet you"
+        },
+        {
+          "en": "good evening"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bardzo-mi-milo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-a1-e03",
+      "text": "bardzo mi miło",
+      "meaning": {
+        "en": "very nice to meet you"
+      },
+      "distractors": [
+        "dziękuję bardzo",
+        "dobry wieczór"
+      ],
+      "items": [
+        "bardzo-mi-milo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a1-e04",
+      "prompt": "mnie również",
+      "options": [
+        {
+          "en": "I don't know"
+        },
+        {
+          "en": "see you"
+        },
+        {
+          "en": "me too (said back to \"nice to meet you\")"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "mnie-rowniez"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-a1-e05",
+      "prompt": {
+        "en": "very nice to meet you"
+      },
+      "acceptedAnswers": [
+        "bardzo mi miło"
+      ],
+      "distractors": [
+        "mnie",
+        "dobry"
+      ],
+      "items": [
+        "bardzo-mi-milo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a1-e06",
+      "prompt": "miło mi cię poznać",
+      "options": [
+        {
+          "en": "nice to meet you (to a friend)"
+        },
+        {
+          "en": "nice to meet you (to a man, formal)"
+        },
+        {
+          "en": "see you tomorrow"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "milo-mi-cie-poznac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a1-e07",
+      "prompt": "miło mi pana poznać",
+      "options": [
+        {
+          "en": "nice to meet you (to a friend)"
+        },
+        {
+          "en": "nice to meet you (to a man, formal)"
+        },
+        {
+          "en": "what is your name? (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "milo-mi-pana-poznac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a1-e08",
+      "prompt": "miło mi panią poznać",
+      "options": [
+        {
+          "en": "nice to meet you (to a man, formal)"
+        },
+        {
+          "en": "nice to meet you (to a friend)"
+        },
+        {
+          "en": "nice to meet you (to a woman, formal)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "milo-mi-pania-poznac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-a1-e09",
+      "text": "miło mi panią poznać",
+      "meaning": {
+        "en": "nice to meet you (to a woman, formal)"
+      },
+      "distractors": [
+        "miło mi pana poznać",
+        "miło mi cię poznać"
+      ],
+      "items": [
+        "milo-mi-pania-poznac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-a1-e10",
+      "prompt": {
+        "en": "nice to meet you (to a friend)"
+      },
+      "acceptedAnswers": [
+        "miło mi cię poznać"
+      ],
+      "distractors": [
+        "pana",
+        "panią"
+      ],
+      "items": [
+        "milo-mi-cie-poznac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a1-e11",
+      "prompt": "nazywam się",
+      "options": [
+        {
+          "en": "my name is; I am called"
+        },
+        {
+          "en": "what is your name? (one friend)"
+        },
+        {
+          "en": "nice to meet you"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nazywam-sie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-a1-e12",
+      "prompt": {
+        "en": "hi, I am Adam, and you?"
+      },
+      "acceptedAnswers": [
+        "cześć, jestem Adam, a ty?",
+        "cześć, ja jestem Adam, a ty?"
+      ],
+      "distractors": [
+        "pan",
+        "ja"
+      ],
+      "items": [
+        "czesc",
+        "byc-jestem",
+        "adam",
+        "a-ty"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-a1-e13",
+      "prompt": {
+        "en": "nice to meet you (to a man, formal)"
+      },
+      "acceptedAnswers": [
+        "miło mi pana poznać",
+        "miło mi",
+        "bardzo mi miło"
+      ],
+      "items": [
+        "milo-mi-pana-poznac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-a1-e14",
+      "text": "mnie również",
+      "meaning": {
+        "en": "me too (said back to \"nice to meet you\")"
+      },
+      "distractors": [
+        "miło mi",
+        "dziękuję"
+      ],
+      "items": [
+        "mnie-rowniez"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-a1-e15",
+      "prompt": "na imię",
+      "options": [
+        {
+          "en": "a surname"
+        },
+        {
+          "en": "as a first name (mam na imię: my name is)"
+        },
+        {
+          "en": "nice to meet you"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-imie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-a1-e16",
+      "prompt": {
+        "en": "my first name is Ewa"
+      },
+      "acceptedAnswers": [
+        "mam na imię Ewa",
+        "na imię mam Ewa"
+      ],
+      "distractors": [
+        "nazywam",
+        "jestem"
+      ],
+      "items": [
+        "miec-mam",
+        "na-imie",
+        "ewa"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l01-a1-e17",
+      "acceptedAnswers": [
+        "miło mi cię poznać"
+      ],
+      "meaning": {
+        "en": "nice to meet you (to a friend)"
+      },
+      "items": [
+        "milo-mi-cie-poznac"
+      ],
+      "readingAnswers": [
+        "miło mi",
+        "bardzo mi miło"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-a1-e18",
+      "text": "miło mi pana poznać",
+      "meaning": {
+        "en": "nice to meet you (to a man, formal)"
+      },
+      "distractors": [
+        "miło mi panią poznać",
+        "miło mi cię poznać"
+      ],
+      "items": [
+        "milo-mi-pana-poznac"
+      ]
+    }
+  ]
+}

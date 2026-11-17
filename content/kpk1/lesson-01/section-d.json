@@ -1,0 +1,367 @@
+{
+  "id": "kpk1-l01-d",
+  "section": {
+    "letter": "D",
+    "heading": "Gdzie jest…?",
+    "meaning": {
+      "en": "Where is…?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l01-d-t01",
+      "before": "kpk1-l01-d-e01",
+      "title": {
+        "en": "Where is it?"
+      },
+      "body": {
+        "en": "*Gdzie jest…?* asks where something is. The answer: *tutaj* or *tu* (here), *tam* (there), *na lewo* (on the left), *na prawo* (on the right). Start with *przepraszam* to stop someone politely: *przepraszam, gdzie jest toaleta?*"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-d-e01",
+      "prompt": "gdzie",
+      "options": [
+        {
+          "en": "how"
+        },
+        {
+          "en": "where"
+        },
+        {
+          "en": "how many; how much"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gdzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-d-e02",
+      "prompt": "toaleta",
+      "options": [
+        {
+          "en": "a toilet"
+        },
+        {
+          "en": "water"
+        },
+        {
+          "en": "a school"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "toaleta"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-d-e03",
+      "prompt": {
+        "en": "where is the toilet?"
+      },
+      "acceptedAnswers": [
+        "gdzie jest toaleta?"
+      ],
+      "distractors": [
+        "tam",
+        "jak"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "toaleta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-d-e04",
+      "prompt": "tam",
+      "options": [
+        {
+          "en": "here"
+        },
+        {
+          "en": "there"
+        },
+        {
+          "en": "where"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "tam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-d-e05",
+      "prompt": "na lewo",
+      "options": [
+        {
+          "en": "on the left; to the left"
+        },
+        {
+          "en": "on the right; to the right"
+        },
+        {
+          "en": "there"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-lewo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-d-e06",
+      "prompt": "na prawo",
+      "options": [
+        {
+          "en": "on the left; to the left"
+        },
+        {
+          "en": "on the right; to the right"
+        },
+        {
+          "en": "there"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-prawo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-d-e07",
+      "text": "na prawo",
+      "meaning": {
+        "en": "on the right; to the right"
+      },
+      "distractors": [
+        "na lewo",
+        "tam"
+      ],
+      "items": [
+        "na-prawo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-d-e08",
+      "prompt": {
+        "en": "the toilet is there, on the left"
+      },
+      "acceptedAnswers": [
+        "toaleta jest tam, na lewo"
+      ],
+      "distractors": [
+        "prawo",
+        "tutaj"
+      ],
+      "items": [
+        "toaleta",
+        "byc-jest",
+        "tam",
+        "na-lewo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-d-e09",
+      "prompt": "tu",
+      "options": [
+        {
+          "en": "here (short for tutaj)"
+        },
+        {
+          "en": "there"
+        },
+        {
+          "en": "where"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-d-e10",
+      "prompt": "woda",
+      "options": [
+        {
+          "en": "coffee"
+        },
+        {
+          "en": "a toilet"
+        },
+        {
+          "en": "water"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "woda"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-d-e11",
+      "prompt": "kawa",
+      "options": [
+        {
+          "en": "water"
+        },
+        {
+          "en": "coffee"
+        },
+        {
+          "en": "a book"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kawa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-d-e12",
+      "text": "kawa",
+      "meaning": {
+        "en": "coffee"
+      },
+      "distractors": [
+        "woda",
+        "tam"
+      ],
+      "items": [
+        "kawa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-d-e13",
+      "prompt": {
+        "en": "excuse me, where is the water?"
+      },
+      "acceptedAnswers": [
+        "przepraszam, gdzie jest woda?"
+      ],
+      "distractors": [
+        "kawa",
+        "tu"
+      ],
+      "items": [
+        "przepraszam",
+        "gdzie",
+        "byc-jest",
+        "woda"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-d-e14",
+      "prompt": {
+        "en": "the coffee is here"
+      },
+      "acceptedAnswers": [
+        "kawa jest tu",
+        "kawa jest tutaj",
+        "tu jest kawa",
+        "tutaj jest kawa"
+      ],
+      "items": [
+        "kawa",
+        "byc-jest",
+        "tu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-d-e15",
+      "prompt": "pytanie",
+      "options": [
+        {
+          "en": "a problem"
+        },
+        {
+          "en": "a question"
+        },
+        {
+          "en": "a page"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pytanie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-d-e16",
+      "prompt": {
+        "en": "I have a question, where is the school?"
+      },
+      "acceptedAnswers": [
+        "mam pytanie, gdzie jest szkoła?"
+      ],
+      "distractors": [
+        "tam",
+        "kawa"
+      ],
+      "items": [
+        "miec-mam",
+        "pytanie",
+        "gdzie",
+        "byc-jest",
+        "szkola"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l01-d-e17",
+      "acceptedAnswers": [
+        "gdzie jest woda?"
+      ],
+      "meaning": {
+        "en": "where is the water?"
+      },
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "woda"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-d-e18",
+      "prompt": {
+        "en": "where is the toilet?"
+      },
+      "acceptedAnswers": [
+        "gdzie jest toaleta?",
+        "przepraszam, gdzie jest toaleta?"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "toaleta"
+      ]
+    }
+  ]
+}

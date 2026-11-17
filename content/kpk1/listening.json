@@ -1,3 +1,271 @@
 {
-  "tasks": []
+  "tasks": [
+    {
+      "type": "true_false",
+      "id": "l01-004-1",
+      "track": 4,
+      "statement": "To jest rozmowa formalna.",
+      "meaning": {
+        "en": "This is a formal conversation."
+      },
+      "answer": true
+    },
+    {
+      "type": "choose",
+      "id": "l01-004-2",
+      "track": 4,
+      "question": "Co mówi pani na początku?",
+      "meaning": {
+        "en": "What does the woman say first?"
+      },
+      "options": [
+        "Dzień dobry.",
+        "Cześć.",
+        "Dobranoc."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l01-005-1",
+      "track": 5,
+      "statement": "Tom mówi: „Dzień dobry”.",
+      "meaning": {
+        "en": "Tom says “dzień dobry”."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l01-005-2",
+      "track": 5,
+      "question": "Co mówi Mami na „miło mi”?",
+      "meaning": {
+        "en": "What does Mami say to “miło mi”?"
+      },
+      "options": [
+        "Mnie również.",
+        "Dziękuję.",
+        "Do widzenia."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l01-013-1",
+      "track": 13,
+      "question": "Jak ma na imię kolega Angeli?",
+      "meaning": {
+        "en": "What is Angela's classmate called?"
+      },
+      "options": [
+        "Tom",
+        "Adam",
+        "Ewa"
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l01-013-2",
+      "track": 13,
+      "statement": "Kolega mówi: „Miło mi cię poznać”.",
+      "meaning": {
+        "en": "The classmate says “miło mi cię poznać”."
+      },
+      "answer": true,
+      "lines": [
+        6,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l01-015-1",
+      "track": 15,
+      "statement": "Toaleta jest na lewo.",
+      "meaning": {
+        "en": "The toilet is on the left."
+      },
+      "answer": false
+    },
+    {
+      "type": "true_false",
+      "id": "l01-016-1",
+      "track": 16,
+      "statement": "Tutaj jest internet.",
+      "meaning": {
+        "en": "There is internet here."
+      },
+      "answer": true
+    },
+    {
+      "type": "choose",
+      "id": "l01-017-1",
+      "track": 17,
+      "question": "Gdzie jest woda?",
+      "meaning": {
+        "en": "Where is the water?"
+      },
+      "options": [
+        "Tu.",
+        "Tam.",
+        "Na lewo."
+      ],
+      "correctOption": 0
+    },
+    {
+      "type": "true_false",
+      "id": "l01-017-2",
+      "track": 17,
+      "statement": "Kawa jest tu.",
+      "meaning": {
+        "en": "The coffee is here."
+      },
+      "answer": false
+    },
+    {
+      "type": "choose",
+      "id": "l01-018-1",
+      "track": 18,
+      "question": "Co to jest program kulturalny?",
+      "meaning": {
+        "en": "What is a cultural programme?"
+      },
+      "options": [
+        "Film, spotkanie.",
+        "Kawa, herbata.",
+        "Login i hasło."
+      ],
+      "correctOption": 0
+    },
+    {
+      "type": "choose",
+      "id": "l01-020-1",
+      "track": 20,
+      "question": "Co trzeba przeliterować?",
+      "meaning": {
+        "en": "What has to be spelled?"
+      },
+      "options": [
+        "Imię i nazwisko.",
+        "Adres.",
+        "Numer telefonu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l01-020-2",
+      "track": 20,
+      "question": "Jak on się nazywa?",
+      "meaning": {
+        "en": "What is his surname?"
+      },
+      "acceptedAnswers": [
+        "Stein"
+      ],
+      "lines": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l01-021-1",
+      "track": 21,
+      "question": "Jakie słowo trzeba przeliterować?",
+      "meaning": {
+        "en": "Which word has to be spelled?"
+      },
+      "options": [
+        "Szkoła.",
+        "Książka.",
+        "Toaleta."
+      ],
+      "correctOption": 0
+    },
+    {
+      "type": "choose",
+      "id": "l01-022-1",
+      "track": 22,
+      "question": "O co pyta student?",
+      "meaning": {
+        "en": "What does the student ask?"
+      },
+      "options": [
+        "Co to znaczy „ćwiczenie”?",
+        "Gdzie jest toaleta?",
+        "Jak się pan nazywa?"
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l01-023-1",
+      "track": 23,
+      "question": "Jak to jest po polsku?",
+      "meaning": {
+        "en": "What is that word in Polish?"
+      },
+      "acceptedAnswers": [
+        "zmęczony"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l01-027-1",
+      "track": 27,
+      "statement": "Ona jest Japonką.",
+      "meaning": {
+        "en": "She is Japanese."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l01-027-2",
+      "track": 27,
+      "question": "Ulica Spacerowa: jaki numer?",
+      "meaning": {
+        "en": "Spacerowa Street: what number?"
+      },
+      "acceptedAnswers": [
+        "9",
+        "dziewięć"
+      ],
+      "lines": [
+        8,
+        8
+      ]
+    }
+  ]
 }

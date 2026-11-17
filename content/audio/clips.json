@@ -69,6 +69,10 @@
       "text": "ale"
     },
     {
+      "id": "alfabet",
+      "text": "alfabet"
+    },
+    {
       "id": "angielka",
       "text": "Angielką"
     },
@@ -91,6 +95,10 @@
     {
       "id": "bardzo-mi-milo",
       "text": "bardzo mi miło"
+    },
+    {
+      "id": "bardzo-mi-milo-2",
+      "text": "Bardzo mi miło."
     },
     {
       "id": "bardzo-przepraszamy",
@@ -137,6 +145,10 @@
       "text": "co tam?"
     },
     {
+      "id": "co-to-znaczy",
+      "text": "co to znaczy?"
+    },
+    {
       "id": "co-u-ciebie",
       "text": "co u ciebie?"
     },
@@ -181,6 +193,18 @@
       "text": "Cześć! Do jutra!"
     },
     {
+      "id": "czesc-ja-jestem-adam-a-ty",
+      "text": "cześć, ja jestem Adam, a ty?"
+    },
+    {
+      "id": "czesc-ja-jestem-ewa",
+      "text": "cześć, ja jestem Ewa"
+    },
+    {
+      "id": "czesc-jak-masz-na-imie",
+      "text": "Cześć! Jak masz na imię?"
+    },
+    {
       "id": "czesc-jak-sie-nazywasz",
       "text": "cześć, jak się nazywasz?"
     },
@@ -189,12 +213,28 @@
       "text": "Cześć! Jestem Adam."
     },
     {
+      "id": "czesc-jestem-adam-2",
+      "text": "Cześć, jestem Adam."
+    },
+    {
+      "id": "czesc-jestem-adam-a-ty",
+      "text": "cześć, jestem Adam, a ty?"
+    },
+    {
+      "id": "czesc-jestem-ewa",
+      "text": "cześć, jestem Ewa"
+    },
+    {
       "id": "czesc-jestem-ewa-a-ty",
       "text": "cześć, jestem Ewa, a ty?"
     },
     {
       "id": "czesc-jestem-ewa-a-ty-2",
       "text": "Cześć! Jestem Ewa. A ty?"
+    },
+    {
+      "id": "czesc-mam-na-imie-adam",
+      "text": "Cześć! Mam na imię Adam."
     },
     {
       "id": "czesc-mam-na-imie-ewa",
@@ -217,8 +257,44 @@
       "text": "cztery"
     },
     {
+      "id": "cztery-minus-cztery-jest-zero",
+      "text": "cztery minus cztery jest zero"
+    },
+    {
+      "id": "cztery-minus-cztery-rowna-sie-zero",
+      "text": "cztery minus cztery równa się zero"
+    },
+    {
+      "id": "cztery-minus-cztery-to-jest-zero",
+      "text": "cztery minus cztery to jest zero"
+    },
+    {
+      "id": "cztery-minus-cztery-to-zero",
+      "text": "cztery minus cztery to zero"
+    },
+    {
+      "id": "cztery-minus-dwa-to-dwa",
+      "text": "cztery minus dwa to dwa"
+    },
+    {
       "id": "cztery-piec-szesc-siedem",
       "text": "cztery, pięć, sześć, siedem"
+    },
+    {
+      "id": "cztery-plus-piec-jest-dziewiec",
+      "text": "cztery plus pięć jest dziewięć"
+    },
+    {
+      "id": "cztery-plus-piec-rowna-sie-dziewiec",
+      "text": "cztery plus pięć równa się dziewięć"
+    },
+    {
+      "id": "cztery-plus-piec-to-dziewiec",
+      "text": "cztery plus pięć to dziewięć"
+    },
+    {
+      "id": "cztery-plus-piec-to-jest-dziewiec",
+      "text": "cztery plus pięć to jest dziewięć"
     },
     {
       "id": "czy",
@@ -289,12 +365,24 @@
       "text": "dialog"
     },
     {
+      "id": "dlugopis",
+      "text": "długopis"
+    },
+    {
+      "id": "dlugopis-i-ksiazka",
+      "text": "długopis i książka"
+    },
+    {
       "id": "do-jutra",
       "text": "do jutra"
     },
     {
       "id": "do-widzenia",
       "text": "do widzenia"
+    },
+    {
+      "id": "do-widzenia-2",
+      "text": "Do widzenia!"
     },
     {
       "id": "do-zobaczenia",
@@ -337,6 +425,14 @@
       "text": "Dobrze! Na razie!"
     },
     {
+      "id": "dobrze-na-razie-do-jutra",
+      "text": "Dobrze! Na razie, do jutra!"
+    },
+    {
+      "id": "dopasowac",
+      "text": "dopasować"
+    },
+    {
       "id": "dwa",
       "text": "dwa"
     },
@@ -359,6 +455,22 @@
     {
       "id": "dwa-plus-szesc-to-jest-ile",
       "text": "dwa plus sześć to jest ile?"
+    },
+    {
+      "id": "dwa-plus-trzy-jest-piec",
+      "text": "dwa plus trzy jest pięć"
+    },
+    {
+      "id": "dwa-plus-trzy-rowna-sie-piec",
+      "text": "dwa plus trzy równa się pięć"
+    },
+    {
+      "id": "dwa-plus-trzy-rowna-sie-piec-2",
+      "text": "Dwa plus trzy równa się pięć."
+    },
+    {
+      "id": "dwa-plus-trzy-to-jest-piec",
+      "text": "dwa plus trzy to jest pięć"
     },
     {
       "id": "dwa-plus-trzy-to-piec",
@@ -389,6 +501,10 @@
       "text": "dzięki"
     },
     {
+      "id": "dzieki-ile-to-jest-dwa-plus-trzy",
+      "text": "Dzięki! Ile to jest: dwa plus trzy?"
+    },
+    {
       "id": "dzieki-milego-dnia",
       "text": "dzięki, miłego dnia"
     },
@@ -401,8 +517,16 @@
       "text": "Dziękuję."
     },
     {
+      "id": "dziekuje-a-gdzie-jest-kawa",
+      "text": "Dziękuję! A gdzie jest kawa?"
+    },
+    {
       "id": "dziekuje-bardzo",
       "text": "dziękuję bardzo"
+    },
+    {
+      "id": "dziekuje-bardzo-2",
+      "text": "Dziękuję bardzo."
     },
     {
       "id": "dziekuje-do-widzenia",
@@ -415,6 +539,10 @@
     {
       "id": "dziekuje-nawzajem",
       "text": "dziękuję, nawzajem"
+    },
+    {
+      "id": "dziekuje-nawzajem-do-widzenia",
+      "text": "Dziękuję, nawzajem! Do widzenia."
     },
     {
       "id": "dziekuje-nie",
@@ -445,12 +573,24 @@
       "text": "Dzień dobry!"
     },
     {
+      "id": "dzien-dobry-jak-sie-pan-nazywa",
+      "text": "Dzień dobry! Jak się pan nazywa?"
+    },
+    {
       "id": "dzien-dobry-jak-sie-pani-ma",
       "text": "dzień dobry, jak się pani ma?"
     },
     {
+      "id": "dzien-dobry-nazywam-sie-adam",
+      "text": "Dzień dobry. Nazywam się Adam."
+    },
+    {
       "id": "dzien-dobry-prosze-imie-i-nazwisko",
       "text": "Dzień dobry! Proszę imię i nazwisko."
+    },
+    {
+      "id": "dzien-dobry-przepraszam-gdzie-jest-toaleta",
+      "text": "Dzień dobry! Przepraszam, gdzie jest toaleta?"
     },
     {
       "id": "dzien-dobry-slucham",
@@ -463,6 +603,26 @@
     {
       "id": "dziesiec",
       "text": "dziesięć"
+    },
+    {
+      "id": "dziesiec-minus-cztery-rowna-sie-szesc",
+      "text": "Dziesięć minus cztery równa się sześć."
+    },
+    {
+      "id": "dziesiec-minus-trzy-jest-siedem",
+      "text": "dziesięć minus trzy jest siedem"
+    },
+    {
+      "id": "dziesiec-minus-trzy-rowna-sie-siedem",
+      "text": "dziesięć minus trzy równa się siedem"
+    },
+    {
+      "id": "dziesiec-minus-trzy-to-jest-siedem",
+      "text": "dziesięć minus trzy to jest siedem"
+    },
+    {
+      "id": "dziesiec-minus-trzy-to-siedem",
+      "text": "dziesięć minus trzy to siedem"
     },
     {
       "id": "dziewczyna",
@@ -491,6 +651,22 @@
     {
       "id": "ewa-nowak",
       "text": "Ewa Nowak."
+    },
+    {
+      "id": "gdzie",
+      "text": "gdzie"
+    },
+    {
+      "id": "gdzie-jest-moj-dlugopis",
+      "text": "Gdzie jest mój długopis?"
+    },
+    {
+      "id": "gdzie-jest-toaleta",
+      "text": "gdzie jest toaleta?"
+    },
+    {
+      "id": "gdzie-jest-woda",
+      "text": "gdzie jest woda?"
     },
     {
       "id": "gratulacje",
@@ -633,8 +809,28 @@
       "text": "jak pan ma na imię?"
     },
     {
+      "id": "jak-pan-sie-nazywa",
+      "text": "jak pan się nazywa?"
+    },
+    {
+      "id": "jak-pani-ma-na-imie",
+      "text": "jak pani ma na imię?"
+    },
+    {
+      "id": "jak-pani-sie-nazywa",
+      "text": "jak pani się nazywa?"
+    },
+    {
       "id": "jak-sie-masz",
       "text": "jak się masz?"
+    },
+    {
+      "id": "jak-sie-mowi",
+      "text": "jak się mówi"
+    },
+    {
+      "id": "jak-sie-mowi-po-polsku",
+      "text": "jak się mówi po polsku?"
     },
     {
       "id": "jak-sie-nazywasz",
@@ -645,8 +841,24 @@
       "text": "jak się pan ma?"
     },
     {
+      "id": "jak-sie-pan-nazywa",
+      "text": "jak się pan nazywa?"
+    },
+    {
       "id": "jak-sie-pani-ma",
       "text": "jak się pani ma?"
+    },
+    {
+      "id": "jak-sie-pani-nazywa",
+      "text": "jak się pani nazywa?"
+    },
+    {
+      "id": "jak-sie-to-mowi-po-polsku",
+      "text": "jak się to mówi po polsku?"
+    },
+    {
+      "id": "jak-to-sie-mowi-po-polsku",
+      "text": "jak to się mówi po polsku?"
     },
     {
       "id": "jeden",
@@ -749,6 +961,34 @@
       "text": "jeszcze raz, proszę"
     },
     {
+      "id": "jezyk",
+      "text": "język"
+    },
+    {
+      "id": "kawa",
+      "text": "kawa"
+    },
+    {
+      "id": "kawa-i-woda-sa-tam-na-prawo",
+      "text": "Kawa i woda są tam, na prawo."
+    },
+    {
+      "id": "kawa-jest-tam-na-prawo",
+      "text": "Kawa jest tam, na prawo."
+    },
+    {
+      "id": "kawa-jest-tu",
+      "text": "kawa jest tu"
+    },
+    {
+      "id": "kawa-jest-tu-2",
+      "text": "Kawa jest tu."
+    },
+    {
+      "id": "kawa-jest-tutaj",
+      "text": "kawa jest tutaj"
+    },
+    {
       "id": "kolega",
       "text": "kolega"
     },
@@ -763,6 +1003,18 @@
     {
       "id": "kolezanka-i-kolega",
       "text": "koleżanka i kolega"
+    },
+    {
+      "id": "komputer",
+      "text": "komputer"
+    },
+    {
+      "id": "ksiazka",
+      "text": "książka"
+    },
+    {
+      "id": "ksiazka-i-dlugopis",
+      "text": "książka i długopis"
     },
     {
       "id": "lat",
@@ -829,6 +1081,10 @@
       "text": "mam jedenaście lat, a ty?"
     },
     {
+      "id": "mam-na-imie",
+      "text": "mam na imię"
+    },
+    {
       "id": "mam-na-imie-adam",
       "text": "Mam na imię Adam."
     },
@@ -839,6 +1095,14 @@
     {
       "id": "mam-osiemnascie-lat",
       "text": "mam osiemnaście lat."
+    },
+    {
+      "id": "mam-pytanie-co-to-znaczy",
+      "text": "mam pytanie: co to znaczy?"
+    },
+    {
+      "id": "mam-pytanie-gdzie-jest-szkola",
+      "text": "mam pytanie, gdzie jest szkoła?"
     },
     {
       "id": "mam-rodzenstwo-brata-i-siostre",
@@ -917,12 +1181,44 @@
       "text": "miło mi cię poznać"
     },
     {
+      "id": "milo-mi-cie-poznac-2",
+      "text": "Miło mi cię poznać."
+    },
+    {
+      "id": "milo-mi-cie-poznac-adam",
+      "text": "Miło mi cię poznać, Adam!"
+    },
+    {
       "id": "milo-mi-jestem-adam",
       "text": "Miło mi, jestem Adam."
     },
     {
       "id": "milo-mi-jestes-z-polski",
       "text": "Miło mi! Jesteś z Polski?"
+    },
+    {
+      "id": "milo-mi-pana-poznac",
+      "text": "miło mi pana poznać"
+    },
+    {
+      "id": "milo-mi-pania-poznac",
+      "text": "miło mi panią poznać"
+    },
+    {
+      "id": "minus",
+      "text": "minus"
+    },
+    {
+      "id": "mnie-rowniez",
+      "text": "mnie również"
+    },
+    {
+      "id": "mnie-rowniez-2",
+      "text": "Mnie również."
+    },
+    {
+      "id": "mnie-rowniez-3",
+      "text": "Mnie również!"
     },
     {
       "id": "moj",
@@ -1085,6 +1381,18 @@
       "text": "na imię"
     },
     {
+      "id": "na-imie-mam-ewa",
+      "text": "na imię mam Ewa"
+    },
+    {
+      "id": "na-lewo",
+      "text": "na lewo"
+    },
+    {
+      "id": "na-prawo",
+      "text": "na prawo"
+    },
+    {
       "id": "na-razie",
       "text": "na razie"
     },
@@ -1141,6 +1449,14 @@
       "text": "nazywam się Adam"
     },
     {
+      "id": "nazywam-sie-adam-2",
+      "text": "Nazywam się Adam."
+    },
+    {
+      "id": "nazywam-sie-adam-milo-mi",
+      "text": "nazywam się Adam, miło mi"
+    },
+    {
       "id": "nazywam-sie-ewa-a-pan",
       "text": "nazywam się Ewa, a pan?"
     },
@@ -1173,8 +1489,24 @@
       "text": "nie ma za co"
     },
     {
+      "id": "nie-ma-za-co-milego-dnia",
+      "text": "Nie ma za co. Miłego dnia!"
+    },
+    {
       "id": "nie-nie-jestem-z-polski",
       "text": "nie, nie jestem z Polski"
+    },
+    {
+      "id": "nie-pamietam",
+      "text": "nie pamiętam"
+    },
+    {
+      "id": "nie-rozumiem",
+      "text": "nie rozumiem"
+    },
+    {
+      "id": "nie-rozumiem-prosze-powtorzyc",
+      "text": "nie rozumiem, proszę powtórzyć"
     },
     {
       "id": "nie-szkodzi",
@@ -1293,12 +1625,20 @@
       "text": "osiem, dziewięć, dziesięć"
     },
     {
+      "id": "osiem-minus-dwa-rowna-sie-szesc",
+      "text": "osiem minus dwa równa się sześć"
+    },
+    {
       "id": "osiemnascie",
       "text": "osiemnaście"
     },
     {
       "id": "pa",
       "text": "pa"
+    },
+    {
+      "id": "pa-2",
+      "text": "Pa!"
     },
     {
       "id": "pa-do-jutra",
@@ -1329,6 +1669,18 @@
       "text": "pięć, cztery, trzy, dwa, jeden, zero"
     },
     {
+      "id": "piec-minus-jeden-jest-cztery",
+      "text": "pięć minus jeden jest cztery"
+    },
+    {
+      "id": "piec-minus-jeden-to-cztery",
+      "text": "pięć minus jeden to cztery"
+    },
+    {
+      "id": "piec-minus-jeden-to-jest-cztery",
+      "text": "pięć minus jeden to jest cztery"
+    },
+    {
       "id": "pietnascie",
       "text": "piętnaście"
     },
@@ -1349,6 +1701,10 @@
       "text": "po polsku"
     },
     {
+      "id": "podkreslic",
+      "text": "podkreślić"
+    },
+    {
       "id": "polakiem",
       "text": "Polakiem"
     },
@@ -1359,6 +1715,10 @@
     {
       "id": "polka",
       "text": "Polką"
+    },
+    {
+      "id": "ponumerowac",
+      "text": "ponumerować"
     },
     {
       "id": "posluchac",
@@ -1397,6 +1757,10 @@
       "text": "proszę chwileczkę"
     },
     {
+      "id": "prosze-dopasowac",
+      "text": "proszę dopasować"
+    },
+    {
       "id": "prosze-jeszcze-raz",
       "text": "proszę jeszcze raz"
     },
@@ -1409,8 +1773,16 @@
       "text": "Proszę napisać po polsku."
     },
     {
+      "id": "prosze-podkreslic",
+      "text": "proszę podkreślić"
+    },
+    {
       "id": "prosze-polaczyc",
       "text": "Proszę połączyć."
+    },
+    {
+      "id": "prosze-ponumerowac",
+      "text": "proszę ponumerować"
     },
     {
       "id": "prosze-posluchac-i-napisac",
@@ -1457,12 +1829,20 @@
       "text": "proszę przeliterować"
     },
     {
+      "id": "prosze-przeliterowac-ksiazka",
+      "text": "Proszę przeliterować „książka”."
+    },
+    {
       "id": "prosze-przeliterowac-nazwisko",
       "text": "proszę przeliterować nazwisko"
     },
     {
       "id": "prosze-przeliterowac-nazwisko-2",
       "text": "Proszę przeliterować nazwisko."
+    },
+    {
+      "id": "prosze-przeliterowac-szkola",
+      "text": "proszę przeliterować „szkoła”"
     },
     {
       "id": "prosze-przetlumaczyc",
@@ -1475,6 +1855,10 @@
     {
       "id": "prosze-przetlumaczyc-dialog",
       "text": "proszę przetłumaczyć dialog"
+    },
+    {
+      "id": "prosze-sie-przedstawic",
+      "text": "proszę się przedstawić"
     },
     {
       "id": "prosze-ulozyc-dialog",
@@ -1505,6 +1889,10 @@
       "text": "przeczytać"
     },
     {
+      "id": "przedstawic-sie",
+      "text": "przedstawić się"
+    },
+    {
       "id": "przeliterowac",
       "text": "przeliterować"
     },
@@ -1513,12 +1901,24 @@
       "text": "przepraszam"
     },
     {
+      "id": "przepraszam-gdzie-jest-toaleta",
+      "text": "przepraszam, gdzie jest toaleta?"
+    },
+    {
+      "id": "przepraszam-gdzie-jest-woda",
+      "text": "przepraszam, gdzie jest woda?"
+    },
+    {
       "id": "przepraszam-mam-pytanie",
       "text": "przepraszam, mam pytanie"
     },
     {
       "id": "przepraszam-nie-rozumiem",
       "text": "przepraszam, nie rozumiem"
+    },
+    {
+      "id": "przepraszam-nie-rozumiem-prosze-powtorzyc",
+      "text": "Przepraszam, nie rozumiem. Proszę powtórzyć."
     },
     {
       "id": "przepraszamy",
@@ -1537,6 +1937,10 @@
       "text": "pytanie"
     },
     {
+      "id": "restauracja",
+      "text": "restauracja"
+    },
+    {
       "id": "rodzenstwo",
       "text": "rodzeństwo"
     },
@@ -1549,8 +1953,16 @@
       "text": "rok"
     },
     {
+      "id": "rowna-sie",
+      "text": "równa się"
+    },
+    {
       "id": "rozumiem",
       "text": "rozumiem"
+    },
+    {
+      "id": "rozumiem-dziekuje-bardzo",
+      "text": "Rozumiem! Dziękuję bardzo."
     },
     {
       "id": "sa",
@@ -1633,6 +2045,10 @@
       "text": "świetnie"
     },
     {
+      "id": "swietnie-a-dziesiec-minus-cztery",
+      "text": "Świetnie! A dziesięć minus cztery?"
+    },
+    {
       "id": "swietnie-dziekuje",
       "text": "świetnie, dziękuję"
     },
@@ -1665,12 +2081,32 @@
       "text": "sześć plus czternaście to jest dwadzieścia"
     },
     {
+      "id": "szesc-plus-trzy-jest-dziewiec",
+      "text": "sześć plus trzy jest dziewięć"
+    },
+    {
+      "id": "szesc-plus-trzy-rowna-sie-dziewiec",
+      "text": "sześć plus trzy równa się dziewięć"
+    },
+    {
+      "id": "szesc-plus-trzy-to-dziewiec",
+      "text": "sześć plus trzy to dziewięć"
+    },
+    {
+      "id": "szesc-plus-trzy-to-jest-dziewiec",
+      "text": "sześć plus trzy to jest dziewięć"
+    },
+    {
       "id": "szesc-siedem-osiem",
       "text": "sześć, siedem, osiem"
     },
     {
       "id": "szesnascie",
       "text": "szesnaście"
+    },
+    {
+      "id": "szkola",
+      "text": "szkoła"
     },
     {
       "id": "tak",
@@ -1699,6 +2135,10 @@
     {
       "id": "tak-troche-ale-tutaj-mowimy-po-polsku",
       "text": "Tak, trochę, ale tutaj mówimy po polsku!"
+    },
+    {
+      "id": "tam",
+      "text": "tam"
     },
     {
       "id": "tata",
@@ -1745,6 +2185,10 @@
       "text": "to Adam, on jest z Polski"
     },
     {
+      "id": "to-alfabet",
+      "text": "to alfabet"
+    },
+    {
       "id": "to-jest-adam",
       "text": "to jest Adam"
     },
@@ -1761,6 +2205,10 @@
       "text": "To jest Adam, student."
     },
     {
+      "id": "to-jest-alfabet",
+      "text": "to jest alfabet"
+    },
+    {
       "id": "to-jest-dziewczyna",
       "text": "to jest dziewczyna"
     },
@@ -1771,6 +2219,10 @@
     {
       "id": "to-jest-ewa-nauczycielka-2",
       "text": "to jest Ewa, nauczycielka"
+    },
+    {
+      "id": "to-jest-komputer",
+      "text": "to jest komputer"
     },
     {
       "id": "to-jest-lekcja",
@@ -1827,6 +2279,10 @@
     {
       "id": "to-jest-studentka",
       "text": "to jest studentka"
+    },
+    {
+      "id": "to-jest-szkola",
+      "text": "to jest szkoła"
     },
     {
       "id": "to-jest-twoj-brat",
@@ -1893,12 +2349,28 @@
       "text": "to studentka"
     },
     {
+      "id": "to-szkola",
+      "text": "to szkoła"
+    },
+    {
       "id": "to-twoj-brat",
       "text": "to twój brat?"
     },
     {
       "id": "to-twoje-dziecko",
       "text": "to twoje dziecko?"
+    },
+    {
+      "id": "toaleta",
+      "text": "toaleta"
+    },
+    {
+      "id": "toaleta-jest-tam-na-lewo",
+      "text": "toaleta jest tam, na lewo"
+    },
+    {
+      "id": "toaleta-jest-tam-na-lewo-2",
+      "text": "Toaleta jest tam, na lewo."
     },
     {
       "id": "troche",
@@ -1921,6 +2393,18 @@
       "text": "trzy, cztery, pięć"
     },
     {
+      "id": "trzy-plus-jeden-jest-cztery",
+      "text": "trzy plus jeden jest cztery"
+    },
+    {
+      "id": "trzy-plus-jeden-to-cztery",
+      "text": "trzy plus jeden to cztery"
+    },
+    {
+      "id": "trzy-plus-jeden-to-jest-cztery",
+      "text": "trzy plus jeden to jest cztery"
+    },
+    {
       "id": "trzy-plus-siedem-jest-dziesiec",
       "text": "trzy plus siedem jest dziesięć"
     },
@@ -1937,12 +2421,24 @@
       "text": "trzynaście"
     },
     {
+      "id": "tu",
+      "text": "tu"
+    },
+    {
+      "id": "tu-jest-kawa",
+      "text": "tu jest kawa"
+    },
+    {
       "id": "tu-sa",
       "text": "tu są"
     },
     {
       "id": "tutaj",
       "text": "tutaj"
+    },
+    {
+      "id": "tutaj-jest-kawa",
+      "text": "tutaj jest kawa"
     },
     {
       "id": "tutaj-jest-mama",
@@ -1959,6 +2455,10 @@
     {
       "id": "twoj",
       "text": "twój"
+    },
+    {
+      "id": "twoj-dlugopis-jest-tam-na-lewo",
+      "text": "Twój długopis jest tam, na lewo."
     },
     {
       "id": "twoja",
@@ -2019,6 +2519,14 @@
     {
       "id": "witamy",
       "text": "witamy"
+    },
+    {
+      "id": "woda",
+      "text": "woda"
+    },
+    {
+      "id": "woda-jest-tam-na-prawo",
+      "text": "Woda jest tam, na prawo."
     },
     {
       "id": "wszystko",

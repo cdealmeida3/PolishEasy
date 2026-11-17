@@ -1,0 +1,361 @@
+{
+  "id": "kpk1-l01-e",
+  "section": {
+    "letter": "E",
+    "heading": "Nie rozumiem! Proszę powtórzyć!",
+    "meaning": {
+      "en": "I don't understand! Repeat, please!"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l01-e-t01",
+      "before": "kpk1-l01-e-e01",
+      "title": {
+        "en": "When you don't understand"
+      },
+      "body": {
+        "en": "*Nie* before a verb makes it no: *rozumiem* (I understand), *nie rozumiem* (I don't understand); *wiem*, *nie wiem*. Ask *co to znaczy?* for a word you don't know, and *jak się mówi po polsku…?* for a word you need. *Proszę powtórzyć* asks the teacher to say it again."
+      }
+    },
+    {
+      "id": "kpk1-l01-e-t02",
+      "before": "kpk1-l01-e-e11",
+      "title": {
+        "en": "The book's instructions"
+      },
+      "body": {
+        "en": "The book's tasks ask you to *dopasować* (match), *podkreślić* (underline) or *ponumerować* (number). Like every instruction they come after *proszę*: *proszę dopasować*."
+      },
+      "kind": "zapamietaj"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-e-e01",
+      "prompt": "nie rozumiem",
+      "options": [
+        {
+          "en": "I don't understand"
+        },
+        {
+          "en": "I don't know"
+        },
+        {
+          "en": "I don't remember"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nie-rozumiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-e-e02",
+      "prompt": "nie wiem",
+      "options": [
+        {
+          "en": "I don't understand"
+        },
+        {
+          "en": "I don't know"
+        },
+        {
+          "en": "I know"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nie-wiem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-e-e03",
+      "text": "nie wiem",
+      "meaning": {
+        "en": "I don't know"
+      },
+      "distractors": [
+        "nie rozumiem",
+        "nie pamiętam"
+      ],
+      "items": [
+        "nie-wiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-e-e04",
+      "prompt": "nie pamiętam",
+      "options": [
+        {
+          "en": "I don't know"
+        },
+        {
+          "en": "I don't understand"
+        },
+        {
+          "en": "I don't remember"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nie-pamietam"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-e-e05",
+      "prompt": {
+        "en": "I don't understand, repeat, please"
+      },
+      "acceptedAnswers": [
+        "nie rozumiem, proszę powtórzyć"
+      ],
+      "distractors": [
+        "wiem",
+        "przeczytać"
+      ],
+      "items": [
+        "nie-rozumiem",
+        "prosze",
+        "powtorzyc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-e-e06",
+      "prompt": "co to znaczy?",
+      "options": [
+        {
+          "en": "what does it mean?"
+        },
+        {
+          "en": "how are you? (one friend)"
+        },
+        {
+          "en": "where is it?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "co-to-znaczy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-e-e07",
+      "text": "co to znaczy?",
+      "meaning": {
+        "en": "what does it mean?"
+      },
+      "distractors": [
+        "co słychać?",
+        "jak się masz?"
+      ],
+      "items": [
+        "co-to-znaczy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-e-e08",
+      "prompt": "jak się mówi",
+      "options": [
+        {
+          "en": "how are you? (one friend)"
+        },
+        {
+          "en": "how do you say (jak się mówi po polsku…?: how do you say … in Polish?)"
+        },
+        {
+          "en": "what does it mean?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jak-sie-mowi"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-e-e09",
+      "prompt": {
+        "en": "how do you say it in Polish?"
+      },
+      "acceptedAnswers": [
+        "jak to się mówi po polsku?",
+        "jak się to mówi po polsku?",
+        "jak się mówi po polsku?"
+      ],
+      "distractors": [
+        "znaczy",
+        "wiem"
+      ],
+      "items": [
+        "jak-sie-mowi",
+        "to",
+        "po-polsku"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-e-e10",
+      "prompt": {
+        "en": "I don't remember"
+      },
+      "acceptedAnswers": [
+        "nie pamiętam"
+      ],
+      "items": [
+        "nie-pamietam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-e-e11",
+      "prompt": "dopasować",
+      "options": [
+        {
+          "en": "match"
+        },
+        {
+          "en": "underline"
+        },
+        {
+          "en": "translate"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dopasowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-e-e12",
+      "prompt": "podkreślić",
+      "options": [
+        {
+          "en": "match"
+        },
+        {
+          "en": "underline"
+        },
+        {
+          "en": "repeat"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "podkreslic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-e-e13",
+      "prompt": "ponumerować",
+      "options": [
+        {
+          "en": "underline"
+        },
+        {
+          "en": "match"
+        },
+        {
+          "en": "number (put numbers on)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ponumerowac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-e-e14",
+      "text": "proszę podkreślić",
+      "meaning": {
+        "en": "underline, please"
+      },
+      "distractors": [
+        "proszę dopasować",
+        "proszę powtórzyć"
+      ],
+      "items": [
+        "prosze",
+        "podkreslic"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-e-e15",
+      "prompt": {
+        "en": "I have a question: what does it mean?"
+      },
+      "acceptedAnswers": [
+        "mam pytanie: co to znaczy?"
+      ],
+      "distractors": [
+        "wiem",
+        "jak"
+      ],
+      "items": [
+        "miec-mam",
+        "pytanie",
+        "co-to-znaczy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l01-e-e16",
+      "acceptedAnswers": [
+        "nie rozumiem"
+      ],
+      "meaning": {
+        "en": "I don't understand"
+      },
+      "items": [
+        "nie-rozumiem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-e-e17",
+      "prompt": {
+        "en": "match, please"
+      },
+      "acceptedAnswers": [
+        "proszę dopasować"
+      ],
+      "items": [
+        "prosze",
+        "dopasowac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-e-e18",
+      "prompt": {
+        "en": "number, please"
+      },
+      "acceptedAnswers": [
+        "proszę ponumerować"
+      ],
+      "distractors": [
+        "podkreślić",
+        "wiem"
+      ],
+      "items": [
+        "prosze",
+        "ponumerowac"
+      ]
+    }
+  ]
+}

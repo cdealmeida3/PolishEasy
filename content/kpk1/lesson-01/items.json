@@ -1,0 +1,265 @@
+{
+  "items": [
+    {
+      "id": "bardzo-mi-milo",
+      "text": "bardzo mi miło",
+      "meaning": {
+        "en": "very nice to meet you"
+      },
+      "register": "universal"
+    },
+    {
+      "id": "mnie-rowniez",
+      "text": "mnie również",
+      "meaning": {
+        "en": "me too (said back to \"nice to meet you\")"
+      }
+    },
+    {
+      "id": "milo-mi-cie-poznac",
+      "text": "miło mi cię poznać",
+      "meaning": {
+        "en": "nice to meet you (to a friend)"
+      },
+      "register": "informal"
+    },
+    {
+      "id": "milo-mi-pana-poznac",
+      "text": "miło mi pana poznać",
+      "meaning": {
+        "en": "nice to meet you (to a man, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "milo-mi-pania-poznac",
+      "text": "miło mi panią poznać",
+      "meaning": {
+        "en": "nice to meet you (to a woman, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "alfabet",
+      "text": "alfabet",
+      "meaning": {
+        "en": "the alphabet"
+      }
+    },
+    {
+      "id": "szkola",
+      "text": "szkoła",
+      "meaning": {
+        "en": "a school"
+      }
+    },
+    {
+      "id": "ksiazka",
+      "text": "książka",
+      "meaning": {
+        "en": "a book"
+      }
+    },
+    {
+      "id": "jezyk",
+      "text": "język",
+      "meaning": {
+        "en": "a language"
+      }
+    },
+    {
+      "id": "dlugopis",
+      "text": "długopis",
+      "meaning": {
+        "en": "a pen"
+      }
+    },
+    {
+      "id": "komputer",
+      "text": "komputer",
+      "meaning": {
+        "en": "a computer"
+      }
+    },
+    {
+      "id": "restauracja",
+      "text": "restauracja",
+      "meaning": {
+        "en": "a restaurant"
+      }
+    },
+    {
+      "id": "przedstawic-sie",
+      "text": "przedstawić się",
+      "meaning": {
+        "en": "introduce yourself (proszę się przedstawić: please introduce yourself)"
+      }
+    },
+    {
+      "id": "jak-pan-ma-na-imie",
+      "text": "jak pan ma na imię?",
+      "meaning": {
+        "en": "what is your first name? (to a man, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "jak-pani-ma-na-imie",
+      "text": "jak pani ma na imię?",
+      "meaning": {
+        "en": "what is your first name? (to a woman, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "jak-masz-na-imie",
+      "text": "jak masz na imię?",
+      "meaning": {
+        "en": "what is your first name? (one friend)"
+      },
+      "register": "informal"
+    },
+    {
+      "id": "jak-sie-pan-nazywa",
+      "text": "jak się pan nazywa?",
+      "meaning": {
+        "en": "what is your name? (to a man, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "jak-sie-pani-nazywa",
+      "text": "jak się pani nazywa?",
+      "meaning": {
+        "en": "what is your name? (to a woman, formal)"
+      },
+      "register": "formal"
+    },
+    {
+      "id": "gdzie",
+      "text": "gdzie",
+      "meaning": {
+        "en": "where"
+      }
+    },
+    {
+      "id": "na-lewo",
+      "text": "na lewo",
+      "meaning": {
+        "en": "on the left; to the left"
+      }
+    },
+    {
+      "id": "na-prawo",
+      "text": "na prawo",
+      "meaning": {
+        "en": "on the right; to the right"
+      }
+    },
+    {
+      "id": "tam",
+      "text": "tam",
+      "meaning": {
+        "en": "there"
+      }
+    },
+    {
+      "id": "tu",
+      "text": "tu",
+      "meaning": {
+        "en": "here (short for tutaj)"
+      }
+    },
+    {
+      "id": "toaleta",
+      "text": "toaleta",
+      "meaning": {
+        "en": "a toilet"
+      }
+    },
+    {
+      "id": "woda",
+      "text": "woda",
+      "meaning": {
+        "en": "water"
+      }
+    },
+    {
+      "id": "kawa",
+      "text": "kawa",
+      "meaning": {
+        "en": "coffee"
+      }
+    },
+    {
+      "id": "nie-rozumiem",
+      "text": "nie rozumiem",
+      "meaning": {
+        "en": "I don't understand"
+      }
+    },
+    {
+      "id": "nie-wiem",
+      "text": "nie wiem",
+      "meaning": {
+        "en": "I don't know"
+      }
+    },
+    {
+      "id": "nie-pamietam",
+      "text": "nie pamiętam",
+      "meaning": {
+        "en": "I don't remember"
+      }
+    },
+    {
+      "id": "co-to-znaczy",
+      "text": "co to znaczy?",
+      "meaning": {
+        "en": "what does it mean?"
+      }
+    },
+    {
+      "id": "jak-sie-mowi",
+      "text": "jak się mówi",
+      "meaning": {
+        "en": "how do you say (jak się mówi po polsku…?: how do you say … in Polish?)"
+      }
+    },
+    {
+      "id": "dopasowac",
+      "text": "dopasować",
+      "meaning": {
+        "en": "match"
+      }
+    },
+    {
+      "id": "podkreslic",
+      "text": "podkreślić",
+      "meaning": {
+        "en": "underline"
+      }
+    },
+    {
+      "id": "ponumerowac",
+      "text": "ponumerować",
+      "meaning": {
+        "en": "number (put numbers on)"
+      }
+    },
+    {
+      "id": "minus",
+      "text": "minus",
+      "meaning": {
+        "en": "minus"
+      }
+    },
+    {
+      "id": "rowna-sie",
+      "text": "równa się",
+      "meaning": {
+        "en": "equals"
+      }
+    }
+  ]
+}

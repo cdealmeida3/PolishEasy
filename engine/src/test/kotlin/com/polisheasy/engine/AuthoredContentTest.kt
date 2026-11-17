@@ -227,12 +227,12 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
             listOf(8, 7, 6, 7, 6, 6, 6) + listOf(7, 7, 8, 7, 7, 6, 7, 7) + listOf(7, 7, 6, 7, 6, 6, 6, 6) +
-                listOf(8, 8, 8, 3, 0),
+                listOf(8, 8, 8, 3, 0) + listOf(5, 0, 7, 6, 8, 8, 1, 1, 0),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -255,7 +255,7 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `the book's Level has chapters 0 to 26 with their Polish titles, and chapter 0 has five sections`() {
+    fun `the book's Level has chapters 0 to 26 with their Polish titles, chapter 0 has five sections and chapter 1 nine`() {
         val shelves = CourseEngine(course, InMemoryLearnerProgress(), FakeClock()).shelves()
 
         assertEquals(listOf("a1", "kpk1"), shelves.map { it.id })
@@ -265,7 +265,9 @@ class AuthoredContentTest {
         assertEquals("Pierwszy dzień w szkole", book[1].title)
         assertEquals("The first day at school", book[1].subtitle)
         assertEquals(5, book[0].sections)
-        assertTrue(book.drop(1).all { it.coming })
+        assertEquals(9, book[1].sections)
+        assertTrue(book.take(2).none { it.coming })
+        assertTrue(book.drop(2).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -585,7 +587,7 @@ class AuthoredContentTest {
 
     @Test
     fun `a number is never used to count anything but years`() {
-        val allowed = numbers + yearWords + listOf("plus", "to", "jest")
+        val allowed = numbers + yearWords + listOf("plus", "minus", "równa", "to", "jest")
         spokenSentences.forEach { sentence ->
             sentence.zipWithNext().filter { (number, _) -> number in numbers }.forEach { (number, next) ->
                 assertTrue(next in allowed, "\"${sentence.joinToString(" ")}\" has $next after $number")

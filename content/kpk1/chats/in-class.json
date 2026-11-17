@@ -1,0 +1,302 @@
+{
+  "id": "chat-in-class",
+  "person": "Kasia",
+  "title": {
+    "en": "In class"
+  },
+  "scene": {
+    "en": "You are Adam. In your first Polish class Kasia sits down next to you. She is a classmate, so talk to her as to a friend."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "jak-masz-na-imie",
+    "miec-mam",
+    "na-imie",
+    "adam",
+    "milo-mi-cie-poznac",
+    "mnie-rowniez",
+    "gdzie",
+    "byc-jest",
+    "moj",
+    "twoj",
+    "dlugopis",
+    "tam",
+    "na-lewo",
+    "dzieki",
+    "a",
+    "ile",
+    "to",
+    "dwa",
+    "plus",
+    "trzy",
+    "rowna-sie",
+    "piec",
+    "swietnie",
+    "dziesiec",
+    "minus",
+    "cztery",
+    "szesc",
+    "dobrze",
+    "na-razie",
+    "do-jutra",
+    "pa"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Jak masz na imię?",
+      "meaning": {
+        "en": "Hi! What's your name?"
+      },
+      "replies": [
+        {
+          "text": "Cześć! Mam na imię Adam.",
+          "meaning": {
+            "en": "Hi! My name is Adam."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Cześć! Mam na imię Adam.",
+            "Mam na imię Adam.",
+            "Cześć! Jestem Adam.",
+            "Jestem Adam."
+          ]
+        },
+        {
+          "text": "Dzień dobry! Jak się pani nazywa?",
+          "meaning": {
+            "en": "Good morning! What is your name, madam?"
+          },
+          "register": "formal",
+          "note": {
+            "en": "*Pani* is for a woman you don't know well, and Kasia is a classmate. She asked your name, so answer: *mam na imię Adam*."
+          }
+        },
+        {
+          "text": "Mam dwadzieścia lat.",
+          "meaning": {
+            "en": "I'm twenty."
+          },
+          "note": {
+            "en": "That is your age. She asked your first name, *na imię*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Miło mi cię poznać, Adam!",
+      "meaning": {
+        "en": "Nice to meet you, Adam!"
+      },
+      "replies": [
+        {
+          "text": "Mnie również!",
+          "meaning": {
+            "en": "Me too!"
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Mnie również!",
+            "Mnie również. Miło mi.",
+            "Miło mi."
+          ]
+        },
+        {
+          "text": "Miło mi panią poznać.",
+          "meaning": {
+            "en": "Nice to meet you, madam."
+          },
+          "register": "formal",
+          "note": {
+            "en": "*Panią* is formal, for a woman you don't know well. To a friend say *mnie również*."
+          }
+        },
+        {
+          "text": "Nie ma za co.",
+          "meaning": {
+            "en": "You're welcome."
+          },
+          "note": {
+            "en": "*Nie ma za co* answers a thank-you. To *miło mi cię poznać* say *mnie również*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Gdzie jest mój długopis?",
+      "meaning": {
+        "en": "Where is my pen?"
+      },
+      "replies": [
+        {
+          "text": "Twój długopis jest tam, na lewo.",
+          "meaning": {
+            "en": "Your pen is over there, on the left."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Twój długopis jest tam, na lewo.",
+            "Jest tam, na lewo.",
+            "Tam, na lewo.",
+            "Na lewo."
+          ]
+        },
+        {
+          "text": "Mój długopis jest tam, na lewo.",
+          "meaning": {
+            "en": "My pen is over there, on the left."
+          },
+          "note": {
+            "en": "*Mój* is my. The pen is Kasia's, so to her it is *twój długopis*."
+          }
+        },
+        {
+          "text": "Twoja książka jest tam.",
+          "meaning": {
+            "en": "Your book is over there."
+          },
+          "note": {
+            "en": "Kasia asked about her pen, *długopis*, not her book, *książka*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Dzięki! Ile to jest: dwa plus trzy?",
+      "meaning": {
+        "en": "Thanks! How much is two plus three?"
+      },
+      "replies": [
+        {
+          "text": "Dwa plus trzy równa się pięć.",
+          "meaning": {
+            "en": "Two plus three equals five."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Dwa plus trzy równa się pięć.",
+            "Równa się pięć.",
+            "Pięć.",
+            "To jest pięć."
+          ]
+        },
+        {
+          "text": "Dwa plus trzy równa się sześć.",
+          "meaning": {
+            "en": "Two plus three equals six."
+          },
+          "note": {
+            "en": "Count again: two plus three is five, *pięć*. *Sześć* is six."
+          }
+        },
+        {
+          "text": "Dwa plus trzy równa się cztery.",
+          "meaning": {
+            "en": "Two plus three equals four."
+          },
+          "note": {
+            "en": "Count again: two plus three is five, *pięć*. *Cztery* is four."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Świetnie! A dziesięć minus cztery?",
+      "meaning": {
+        "en": "Great! And ten minus four?"
+      },
+      "replies": [
+        {
+          "text": "Dziesięć minus cztery równa się sześć.",
+          "meaning": {
+            "en": "Ten minus four equals six."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Dziesięć minus cztery równa się sześć.",
+            "Równa się sześć.",
+            "Sześć.",
+            "To jest sześć."
+          ]
+        },
+        {
+          "text": "Dziesięć minus cztery równa się pięć.",
+          "meaning": {
+            "en": "Ten minus four equals five."
+          },
+          "note": {
+            "en": "Ten minus four is six, *sześć*. *Pięć* is five."
+          }
+        },
+        {
+          "text": "Dziesięć plus cztery równa się sześć.",
+          "meaning": {
+            "en": "Ten plus four equals six."
+          },
+          "note": {
+            "en": "Kasia said *minus*, not *plus*. Ten minus four is six, *sześć*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Dobrze! Na razie, do jutra!",
+      "meaning": {
+        "en": "Good! See you tomorrow!"
+      },
+      "replies": [
+        {
+          "text": "Cześć! Do jutra!",
+          "meaning": {
+            "en": "Bye! See you tomorrow!"
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Cześć! Do jutra!",
+            "Na razie! Do jutra!",
+            "Pa! Do jutra!",
+            "Do jutra!"
+          ]
+        },
+        {
+          "text": "Do widzenia!",
+          "meaning": {
+            "en": "Goodbye!"
+          },
+          "register": "formal",
+          "note": {
+            "en": "*Do widzenia* is polite but formal. To a friend say *cześć*, *pa* or *na razie*."
+          }
+        },
+        {
+          "text": "Dzień dobry!",
+          "meaning": {
+            "en": "Good morning!"
+          },
+          "note": {
+            "en": "That says hello. Kasia is saying goodbye."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Pa!",
+      "meaning": {
+        "en": "Bye!"
+      }
+    }
+  ]
+}

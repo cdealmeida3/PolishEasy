@@ -1,0 +1,507 @@
+{
+  "id": "kpk1-l01-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l01-g-t01",
+      "before": "kpk1-l01-g-e01",
+      "title": {
+        "en": "The chapter in the book's exercises"
+      },
+      "body": {
+        "en": "Now the chapter in the book's own exercises: join each word to its meaning, fill the gaps from the sticky notes, put a dialogue in order, and say what is *prawda*, true, or *nieprawda*, false."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l01-g-e01",
+      "pairs": [
+        {
+          "polish": "dzień dobry",
+          "meaning": {
+            "en": "hello (formal)"
+          }
+        },
+        {
+          "polish": "dobranoc",
+          "meaning": {
+            "en": "good night"
+          }
+        },
+        {
+          "polish": "do widzenia",
+          "meaning": {
+            "en": "goodbye (formal)"
+          }
+        },
+        {
+          "polish": "na razie",
+          "meaning": {
+            "en": "bye for now"
+          }
+        },
+        {
+          "polish": "dobry wieczór",
+          "meaning": {
+            "en": "good evening"
+          }
+        }
+      ],
+      "items": [
+        "dzien-dobry",
+        "dobranoc",
+        "do-widzenia",
+        "na-razie",
+        "dobry-wieczor"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l01-g-e02",
+      "text": "Dzień ___. Nazywam ___ Adam.",
+      "meaning": {
+        "en": "Good morning. My name is Adam."
+      },
+      "gaps": [
+        [
+          "dobry"
+        ],
+        [
+          "się"
+        ]
+      ],
+      "distractors": [
+        "mam"
+      ],
+      "items": [
+        "dzien-dobry",
+        "nazywam-sie",
+        "adam"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l01-g-e03",
+      "lines": [
+        "Dzień dobry!",
+        "Dzień dobry! Jak się pan nazywa?",
+        "Nazywam się Adam.",
+        "Bardzo mi miło."
+      ],
+      "meaning": {
+        "en": "A man gives his name at the school office."
+      },
+      "items": [
+        "dzien-dobry",
+        "jak-sie-pan-nazywa",
+        "nazywam-sie",
+        "adam",
+        "bardzo-mi-milo"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l01-g-e04",
+      "pairs": [
+        {
+          "polish": "nie rozumiem",
+          "meaning": {
+            "en": "I don't understand"
+          }
+        },
+        {
+          "polish": "nie wiem",
+          "meaning": {
+            "en": "I don't know"
+          }
+        },
+        {
+          "polish": "nie pamiętam",
+          "meaning": {
+            "en": "I don't remember"
+          }
+        },
+        {
+          "polish": "co to znaczy?",
+          "meaning": {
+            "en": "what does it mean?"
+          }
+        }
+      ],
+      "items": [
+        "nie-rozumiem",
+        "nie-wiem",
+        "nie-pamietam",
+        "co-to-znaczy"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l01-g-e05",
+      "lines": [
+        "Cześć, jestem Ewa, a ty?",
+        "Cześć, jestem Adam.",
+        "Miło mi cię poznać.",
+        "Mnie również."
+      ],
+      "meaning": {
+        "en": "Two students meet on the first day."
+      },
+      "items": [
+        "czesc",
+        "byc-jestem",
+        "ewa",
+        "a-ty",
+        "adam",
+        "milo-mi-cie-poznac",
+        "mnie-rowniez"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l01-g-e06",
+      "lines": [
+        "Przepraszam, gdzie jest toaleta?",
+        "Toaleta jest tam, na lewo.",
+        "Dziękuję bardzo."
+      ],
+      "meaning": {
+        "en": "Asking the way in the school."
+      },
+      "statements": [
+        {
+          "text": "Toaleta jest na lewo.",
+          "meaning": {
+            "en": "The toilet is on the left."
+          },
+          "true": true
+        },
+        {
+          "text": "Toaleta jest na prawo.",
+          "meaning": {
+            "en": "The toilet is on the right."
+          },
+          "true": false
+        },
+        {
+          "text": "Toaleta jest tutaj.",
+          "meaning": {
+            "en": "The toilet is here."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "przepraszam",
+        "gdzie",
+        "byc-jest",
+        "toaleta",
+        "tam",
+        "na-lewo",
+        "dziekuje",
+        "bardzo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l01-g-e07",
+      "text": "Dwa plus ___ równa się pięć.",
+      "meaning": {
+        "en": "Two plus three equals five."
+      },
+      "gaps": [
+        [
+          "trzy"
+        ]
+      ],
+      "distractors": [
+        "cztery",
+        "sześć"
+      ],
+      "items": [
+        "dwa",
+        "plus",
+        "trzy",
+        "rowna-sie",
+        "piec"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l01-g-e08",
+      "pairs": [
+        {
+          "polish": "sześć",
+          "meaning": {
+            "en": "6"
+          }
+        },
+        {
+          "polish": "siedem",
+          "meaning": {
+            "en": "7"
+          }
+        },
+        {
+          "polish": "osiem",
+          "meaning": {
+            "en": "8"
+          }
+        },
+        {
+          "polish": "dziewięć",
+          "meaning": {
+            "en": "9"
+          }
+        },
+        {
+          "polish": "dziesięć",
+          "meaning": {
+            "en": "10"
+          }
+        }
+      ],
+      "items": [
+        "szesc",
+        "siedem",
+        "osiem",
+        "dziewiec",
+        "dziesiec"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l01-g-e09",
+      "text": "Proszę ___ „książka”.",
+      "meaning": {
+        "en": "Spell \"książka\", please."
+      },
+      "gaps": [
+        [
+          "przeliterować"
+        ]
+      ],
+      "distractors": [
+        "dopasować",
+        "ponumerować"
+      ],
+      "items": [
+        "prosze",
+        "przeliterowac",
+        "ksiazka"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l01-g-e10",
+      "lines": [
+        "Kawa jest tu.",
+        "Woda jest tam, na prawo."
+      ],
+      "meaning": {
+        "en": "Coffee and water at the break."
+      },
+      "statements": [
+        {
+          "text": "Kawa jest tu.",
+          "meaning": {
+            "en": "The coffee is here."
+          },
+          "true": true
+        },
+        {
+          "text": "Woda jest tu.",
+          "meaning": {
+            "en": "The water is here."
+          },
+          "true": false
+        },
+        {
+          "text": "Woda jest na prawo.",
+          "meaning": {
+            "en": "The water is on the right."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "kawa",
+        "byc-jest",
+        "tu",
+        "woda",
+        "tam",
+        "na-prawo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-g-e11",
+      "prompt": {
+        "en": "nice to meet you (to a woman, formal)"
+      },
+      "acceptedAnswers": [
+        "miło mi panią poznać"
+      ],
+      "distractors": [
+        "pana",
+        "dobry"
+      ],
+      "items": [
+        "milo-mi-pania-poznac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-g-e12",
+      "prompt": {
+        "en": "what is your name? (to a man, formal)"
+      },
+      "acceptedAnswers": [
+        "jak się pan nazywa?",
+        "jak pan ma na imię?",
+        "jak pan się nazywa?"
+      ],
+      "items": [
+        "jak-sie-pan-nazywa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-g-e13",
+      "text": "jak się mówi po polsku?",
+      "meaning": {
+        "en": "how do you say it in Polish?"
+      },
+      "distractors": [
+        "co to znaczy?",
+        "jak się nazywasz?"
+      ],
+      "items": [
+        "jak-sie-mowi",
+        "po-polsku"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l01-g-e14",
+      "pairs": [
+        {
+          "polish": "język",
+          "meaning": {
+            "en": "a language"
+          }
+        },
+        {
+          "polish": "komputer",
+          "meaning": {
+            "en": "a computer"
+          }
+        },
+        {
+          "polish": "restauracja",
+          "meaning": {
+            "en": "a restaurant"
+          }
+        },
+        {
+          "polish": "książka",
+          "meaning": {
+            "en": "a book"
+          }
+        }
+      ],
+      "items": [
+        "jezyk",
+        "komputer",
+        "restauracja",
+        "ksiazka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l01-g-e15",
+      "pairs": [
+        {
+          "polish": "jak pan ma na imię?",
+          "meaning": {
+            "en": "what is your first name? (to a man)"
+          }
+        },
+        {
+          "polish": "jak pani ma na imię?",
+          "meaning": {
+            "en": "what is your first name? (to a woman)"
+          }
+        },
+        {
+          "polish": "jak masz na imię?",
+          "meaning": {
+            "en": "what is your first name? (to a friend)"
+          }
+        },
+        {
+          "polish": "mam na imię",
+          "meaning": {
+            "en": "my first name is"
+          }
+        }
+      ],
+      "items": [
+        "jak-pan-ma-na-imie",
+        "jak-pani-ma-na-imie",
+        "jak-masz-na-imie",
+        "miec-mam",
+        "na-imie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l01-g-e16",
+      "pairs": [
+        {
+          "polish": "dopasować",
+          "meaning": {
+            "en": "to match"
+          }
+        },
+        {
+          "polish": "podkreślić",
+          "meaning": {
+            "en": "to underline"
+          }
+        },
+        {
+          "polish": "ponumerować",
+          "meaning": {
+            "en": "to number"
+          }
+        },
+        {
+          "polish": "przeliterować",
+          "meaning": {
+            "en": "to spell"
+          }
+        }
+      ],
+      "items": [
+        "dopasowac",
+        "podkreslic",
+        "ponumerowac",
+        "przeliterowac"
+      ]
+    }
+  ]
+}

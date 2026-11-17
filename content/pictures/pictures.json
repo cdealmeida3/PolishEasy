@@ -57,6 +57,19 @@
     { "item": "dziecko", "image": "baby.webp" },
     { "item": "dzieci", "image": "children.webp" },
     { "item": "babcia", "image": "old-woman.webp" },
-    { "item": "dziadek", "image": "old-man.webp" }
+    { "item": "dziadek", "image": "old-man.webp" },
+    { "item": "szkola", "image": "school.webp" },
+    { "item": "ksiazka", "image": "closed-book.webp" },
+    { "item": "dlugopis", "image": "pen.webp" },
+    { "item": "komputer", "image": "laptop.webp" },
+    { "item": "kawa", "image": "hot-beverage.webp" },
+    { "item": "woda", "image": "droplet.webp" },
+    { "item": "toaleta", "image": "toilet.webp" },
+    { "item": "restauracja", "image": "fork-and-knife.webp" },
+    { "item": "na-lewo", "image": "left-arrow.webp" },
+    { "item": "na-prawo", "image": "right-arrow.webp" },
+    { "item": "alfabet", "image": "latin-uppercase.webp" },
+    { "item": "minus", "glyph": "−" },
+    { "item": "rowna-sie", "glyph": "=" }
   ]
 }
