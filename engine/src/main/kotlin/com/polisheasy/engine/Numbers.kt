@@ -95,6 +95,7 @@ internal object Numbers : GameRules {
     const val LEVEL = "level"
     const val TO_10 = "to-10"
     const val TO_20 = "to-20"
+    const val TO_100 = "to-100"
     const val RUNS = "runs"
     const val SUMS = "sums"
 
@@ -127,10 +128,21 @@ internal object Numbers : GameRules {
         }
         // A run is made when the Round starts: here, one question for each digit there is to make runs of.
         val digits = numbers.keys.filter { it <= 9 }
+        // From 21 to 99 a number is its ten and its unit, said one after the other: czterdzieści dwa.
+        val tens = numbers.keys.filter { it in 20..90 && it % 10 == 0 }
+        val units = numbers.keys.filter { it in 1..9 }
+        val composed = tens.flatMap { ten ->
+            units.map { unit ->
+                val number = ten + unit
+                NumberQuestion(NumberKind.SINGLE, listOf(numbers.getValue(ten).text, numbers.getValue(unit).text), "$number", "$number", key = "$number")
+            }
+        }
         return listOf(
             TO_10 to small.map(::single),
             // Offered once there is a number above ten to tell it from the level below.
-            TO_20 to if (numbers.keys.any { it > 10 }) numbers.keys.map(::single) else emptyList(),
+            TO_20 to if (numbers.keys.any { it in 11..20 }) numbers.keys.filter { it <= 20 }.map(::single) else emptyList(),
+            // Offered once there is a ten above twenty.
+            TO_100 to if (numbers.keys.any { it > 20 }) numbers.keys.filter { it >= 20 }.map(::single) + composed else emptyList(),
             RUNS to digits.map(::single),
             SUMS to sums,
         ).filter { it.second.size >= LEAST }

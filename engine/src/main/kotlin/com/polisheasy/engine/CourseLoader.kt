@@ -49,7 +49,13 @@ internal data class PracticeFile(
     val letters: Map<String, String> = emptyMap(),
     /** Pairs of adjectives that are opposites, each two Item ids, for Opposites snap. */
     val opposites: List<List<String>> = emptyList(),
+    /** The jobs of Who's who, and the Item it waits for. */
+    val jobs: JobsFile? = null,
 )
+
+/** The jobs of Who's who: the Item it waits for, [after], and the jobs' Item ids, [items]. */
+@Serializable
+internal data class JobsFile(val after: String, val items: List<String>)
 
 @Serializable
 internal data class ClipsFile(val clips: List<Clip>)
@@ -199,6 +205,8 @@ internal class ReadContent(
             letterNames = practice?.letters.orEmpty(),
             demonstratives = practice?.demonstratives.orEmpty().mapNotNull { (gender, item) -> Gender.of(gender)?.let { it to item } }.toMap(),
             opposites = practice?.opposites.orEmpty().filter { it.size == 2 && it[0] != it[1] }.map { it[0] to it[1] }.distinct(),
+            jobs = practice?.jobs?.items.orEmpty().distinct(),
+            jobsAfter = practice?.jobs?.after,
         )
     }
 
@@ -391,6 +399,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         practice.opposites.map { it.sorted().joinToString(" and ") }.repeated().forEach { pair ->
             problems += ContentProblem(file, null, "The opposites $pair are given more than once")
         }
+        practice.jobs?.let { jobs -> problems += jobProblems(file, jobs, practice, course, content.itemsComplete) }
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -414,6 +423,26 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
 }
 
 /** One problem for each id after the first that repeats an earlier one, naming the file of the first. */
+/** What is wrong with the jobs of Who's who: each must be a defined noun for a man or a woman, with its instrumental as its first form. */
+private fun jobProblems(file: String, jobs: JobsFile, practice: PracticeFile, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    if (itemsComplete && jobs.after !in course.itemsById) {
+        problems += ContentProblem(file, jobs.after, "Who's who waits for Item ${jobs.after}, which is not defined")
+    }
+    jobs.items.forEach { id ->
+        val item = course.itemsById[id]
+        when {
+            item == null -> if (itemsComplete) problems += ContentProblem(file, id, "The job $id is not a defined Item")
+            item.forms.isEmpty() -> problems += ContentProblem(file, id, "The job $id has no forms; its first form must be its instrumental")
+        }
+        if (Gender.of(practice.genders[id].orEmpty()) !in setOf(Gender.MASCULINE, Gender.FEMININE)) {
+            problems += ContentProblem(file, id, "The job $id must be given the gender \"m\" or \"f\" under genders")
+        }
+    }
+    jobs.items.repeated().forEach { id -> problems += ContentProblem(file, id, "The job $id is listed more than once") }
+    return problems
+}
+
 internal fun repeatedIds(kind: String, ids: List<Filed<String>>): List<ContentProblem> {
     val first = mutableMapOf<String, String>()
     return ids.mapNotNull { (file, id) ->

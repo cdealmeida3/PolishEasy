@@ -257,7 +257,7 @@ class PracticeOverAuthoredContentTest {
                 }
             }
         }
-        assertEquals(setOf(Numbers.TO_10, Numbers.TO_20, Numbers.RUNS, Numbers.SUMS), offered)
+        assertEquals(setOf(Numbers.TO_10, Numbers.TO_20, Numbers.TO_100, Numbers.RUNS, Numbers.SUMS), offered)
         assertEquals((0..20).toSet() + (30..100 step 10), course.pictures.values.mapNotNull { (it as? Picture.Glyph)?.text?.toIntOrNull() }.toSet())
     }
 
@@ -473,6 +473,30 @@ class PracticeOverAuthoredContentTest {
             }
         }
         assertTrue(opened)
+    }
+
+    @Test
+    fun `Who's who opens after kim with four learned jobs, and asks each job's instrumental among learned jobs`() {
+        val afterKim = course.path.indexOfFirst { dailySet -> "kim" in dailySet.itemIds() } + 1
+        assertTrue(afterKim > 0)
+        assertEquals(GameState.NEEDS_MORE, practiceAfter(afterKim - 1).view().games.single { it.game == Game.WHOS_WHO }.state)
+        (afterKim..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            assertEquals(GameState.READY, practice.view().games.single { it.game == Game.WHOS_WHO }.state, "After $days Daily Sets")
+            practice.setup(Game.WHOS_WHO).choices.single().options.forEach { clue ->
+                val round = practice.start(practice.setup(Game.WHOS_WHO, listOf(clue.id))) as WhoRound
+                round.run.questions.forEach { question ->
+                    val about = "After $days Daily Sets, ${clue.id}: $question"
+                    val job = course.itemsById.getValue(question.itemId)
+                    assertTrue(job.id in learned, about)
+                    assertEquals(job.forms.first(), question.answer, about)
+                    assertEquals(WhosWho.OPTIONS, question.options.size, about)
+                    question.options.forEach { option -> assertTrue(course.items.any { it.id in learned && option in it.spellings }, about) }
+                    if (clue.id == WhosWho.PICTURE) assertTrue(question.picture != null, about)
+                }
+            }
+        }
     }
 
     @Test

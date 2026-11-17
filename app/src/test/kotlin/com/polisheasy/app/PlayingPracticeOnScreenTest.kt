@@ -34,10 +34,12 @@ import com.polisheasy.engine.FilePracticeProgress
 import com.polisheasy.engine.AnkietaRound
 import com.polisheasy.engine.ChainRound
 import com.polisheasy.engine.GapRound
+import com.polisheasy.engine.Gender
 import com.polisheasy.engine.GenderRound
 import com.polisheasy.engine.LabelRound
 import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.OppositesRound
+import com.polisheasy.engine.WhoRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.Register
 import com.polisheasy.engine.RegisterRound
@@ -516,6 +518,56 @@ class PlayingPracticeOnScreenTest {
         typeTheRest()
         showsScore(9, 10)
         showsFirstBest()
+    }
+
+    @Test
+    fun `Numbers from 20 to 100 says a ten and its unit one after the other`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_numbers)
+        tap(R.string.option_listen)
+        screen.onNodeWithText(text(R.string.option_to_100)).performScrollTo().performClick()
+        clips.asked.clear()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val round = numbers()
+        assertTrue(round.run.questions.all { it.answer.toInt() in 20..100 })
+        val first = checkNotNull(round.question)
+        assertEquals(first.words.map { Played(checkNotNull(viewModel?.practiceClipOf(it)).path, slow = false) }, clips.played)
+        typeTheRest()
+        showsScore(10, 10)
+    }
+
+    @Test
+    fun `Who's who shows a job, and the Learner finishes on jest with its instrumental`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_whos_who)
+        tap(R.string.option_word)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val total = whosWho().total
+        val first = checkNotNull(whosWho().question)
+        shows(R.string.whos_who_instruction)
+        // The word is written above, and is one of the options too.
+        screen.onAllNodesWithText(first.word).assertCountEquals(2)
+        shows(first.meaning)
+        shows(text(if (first.gender == Gender.MASCULINE) R.string.whos_who_he else R.string.whos_who_she))
+        first.options.forEach { option -> screen.onNode(hasText(option) and hasClickAction()).assertExists() }
+
+        // The word as it is written alone is wrong after jest: the instrumental is marked, and why.
+        screen.onNode(hasText(first.word) and hasClickAction()).performClick()
+        val sentence = text(if (first.gender == Gender.MASCULINE) R.string.whos_who_he_is else R.string.whos_who_she_is, first.answer)
+        shows(sentence)
+        shows(text(R.string.whos_who_after_jest, first.answer, first.word))
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            val asked = checkNotNull(whosWho().question)
+            screen.onNode(hasText(asked.answer) and hasClickAction()).performClick()
+            tap(R.string.action_continue)
+        }
+        showsScore(total - 1, total)
     }
 
     @Test
@@ -1116,6 +1168,8 @@ class PlayingPracticeOnScreenTest {
     private fun quick(): QuickRound = (viewModel?.screen as Screen.Round).round as QuickRound
 
     private fun opposites(): OppositesRound = (viewModel?.screen as Screen.Round).round as OppositesRound
+
+    private fun whosWho(): WhoRound = (viewModel?.screen as Screen.Round).round as WhoRound
 
     private fun ankieta(): AnkietaRound = (viewModel?.screen as Screen.Round).round as AnkietaRound
 
