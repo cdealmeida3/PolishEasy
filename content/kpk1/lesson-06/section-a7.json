@@ -1,0 +1,443 @@
+{
+  "id": "kpk1-l06-a7",
+  "section": {
+    "letter": "A",
+    "heading": "Koniugacje",
+    "meaning": {
+      "en": "Conjugations"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-a7-t01",
+      "before": "kpk1-l06-a7-e01",
+      "title": {
+        "en": "Verbs in -ę, -esz"
+      },
+      "body": {
+        "en": "Verbs like *pisać* end in *-ę* for *ja* and *-esz* for *ty*, and in *pisać* the *s* becomes *sz* in every form: *piszę, piszesz, pisze*. Only *oni* ends in *-ą*: *piszą*."
+      },
+      "conjugation": {
+        "verb": "pisać",
+        "meaning": {
+          "en": "to write"
+        },
+        "forms": {
+          "ja": "piszę",
+          "ty": "piszesz",
+          "on": "pisze",
+          "my": "piszemy",
+          "wy": "piszecie",
+          "oni": "piszą"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l06-a7-t02",
+      "before": "kpk1-l06-a7-e09",
+      "title": {
+        "en": "Verbs in -ować"
+      },
+      "body": {
+        "en": "Almost every verb in *-ować* goes like *gotować*: *-ować* becomes *-uj-*, then come the endings of *-ę, -esz*: *gotuję, gotujesz … gotują*. *Pracować*, *studiować* and *interesować się* do the same."
+      },
+      "conjugation": {
+        "verb": "gotować",
+        "meaning": {
+          "en": "to cook"
+        },
+        "forms": {
+          "ja": "gotuję",
+          "ty": "gotujesz",
+          "on": "gotuje",
+          "my": "gotujemy",
+          "wy": "gotujecie",
+          "oni": "gotują"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a7-e01",
+      "prompt": "pisać",
+      "options": [
+        {
+          "en": "read (to read)"
+        },
+        {
+          "en": "write (to write: piszę, piszesz)"
+        },
+        {
+          "en": "cook (to cook)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pisac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a7-e02",
+      "prompt": "piszesz",
+      "options": [
+        {
+          "en": "I write, I am writing"
+        },
+        {
+          "en": "you read, you are reading (one friend)"
+        },
+        {
+          "en": "you write (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pisac-piszesz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a7-e03",
+      "verb": "pisać",
+      "meaning": {
+        "en": "to write"
+      },
+      "person": "ty",
+      "sentence": "Co ___?",
+      "sentenceMeaning": {
+        "en": "What are you writing?"
+      },
+      "acceptedAnswers": [
+        "piszesz"
+      ],
+      "items": [
+        "co",
+        "pisac-piszesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a7-e04",
+      "prompt": "SMS",
+      "options": [
+        {
+          "en": "a text message"
+        },
+        {
+          "en": "an e-mail (e-maile: e-mails)"
+        },
+        {
+          "en": "a letter"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sms"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-a7-e05",
+      "prompt": {
+        "en": "I'm writing a text message"
+      },
+      "acceptedAnswers": [
+        "piszę SMS"
+      ],
+      "distractors": [
+        "piszesz",
+        "pisze"
+      ],
+      "items": [
+        "pisac-pisze",
+        "sms"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a7-e06",
+      "prompt": "pisze",
+      "options": [
+        {
+          "en": "you write (one friend)"
+        },
+        {
+          "en": "he writes, she writes"
+        },
+        {
+          "en": "he reads, she reads"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pisac-pisze-on"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a7-e07",
+      "verb": "pisać",
+      "meaning": {
+        "en": "to write"
+      },
+      "person": "on",
+      "sentence": "Tata ___ e-mail.",
+      "sentenceMeaning": {
+        "en": "Dad is writing an e-mail."
+      },
+      "acceptedAnswers": [
+        "pisze"
+      ],
+      "items": [
+        "tata",
+        "pisac-pisze-on",
+        "e-mail"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a7-e08",
+      "text": "lubisz pisać?",
+      "meaning": {
+        "en": "do you like writing?"
+      },
+      "distractors": [
+        "lubisz czytać?",
+        "lubię pisać"
+      ],
+      "items": [
+        "lubic-lubisz",
+        "pisac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a7-e09",
+      "prompt": "gotujesz",
+      "options": [
+        {
+          "en": "I cook, I am cooking"
+        },
+        {
+          "en": "you work (one friend)"
+        },
+        {
+          "en": "you cook (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "gotowac-gotujesz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a7-e10",
+      "verb": "gotować",
+      "meaning": {
+        "en": "to cook"
+      },
+      "person": "ty",
+      "sentence": "Co dzisiaj ___?",
+      "sentenceMeaning": {
+        "en": "What are you cooking today?"
+      },
+      "acceptedAnswers": [
+        "gotujesz"
+      ],
+      "items": [
+        "co",
+        "dzisiaj",
+        "gotowac-gotujesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a7-e11",
+      "prompt": "makaron",
+      "options": [
+        {
+          "en": "pasta"
+        },
+        {
+          "en": "rice"
+        },
+        {
+          "en": "pierogi (Polish dumplings)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "makaron"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a7-e12",
+      "prompt": "gotujemy",
+      "options": [
+        {
+          "en": "they cook"
+        },
+        {
+          "en": "we cook"
+        },
+        {
+          "en": "we eat"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gotowac-gotujemy"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a7-e13",
+      "verb": "gotować",
+      "meaning": {
+        "en": "to cook"
+      },
+      "person": "my",
+      "sentence": "Dzisiaj ___ makaron.",
+      "sentenceMeaning": {
+        "en": "Today we are cooking pasta."
+      },
+      "acceptedAnswers": [
+        "gotujemy"
+      ],
+      "items": [
+        "dzisiaj",
+        "gotowac-gotujemy",
+        "makaron"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a7-e14",
+      "prompt": "gotują",
+      "options": [
+        {
+          "en": "we cook"
+        },
+        {
+          "en": "they learn, they study"
+        },
+        {
+          "en": "they cook"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "gotowac-gotuja"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-a7-e15",
+      "acceptedAnswers": [
+        "oni gotują pierogi"
+      ],
+      "meaning": {
+        "en": "they are cooking pierogi"
+      },
+      "items": [
+        "oni",
+        "gotowac-gotuja",
+        "pierogi"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-a7-e16",
+      "prompt": {
+        "en": "what are we cooking?"
+      },
+      "acceptedAnswers": [
+        "co gotujemy?"
+      ],
+      "items": [
+        "co",
+        "gotowac-gotujemy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-a7-e17",
+      "pairs": [
+        {
+          "polish": "pisać",
+          "meaning": {
+            "en": "to write"
+          }
+        },
+        {
+          "polish": "piszesz",
+          "meaning": {
+            "en": "you write"
+          }
+        },
+        {
+          "polish": "pisze",
+          "meaning": {
+            "en": "he writes, she writes"
+          }
+        },
+        {
+          "polish": "gotujesz",
+          "meaning": {
+            "en": "you cook"
+          }
+        },
+        {
+          "polish": "gotują",
+          "meaning": {
+            "en": "they cook"
+          }
+        },
+        {
+          "polish": "makaron",
+          "meaning": {
+            "en": "pasta"
+          }
+        }
+      ],
+      "items": [
+        "pisac",
+        "pisac-piszesz",
+        "pisac-pisze-on",
+        "gotowac-gotujesz",
+        "gotowac-gotuja",
+        "makaron"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-a7-e18",
+      "text": "Ewa ___ SMS.",
+      "meaning": {
+        "en": "Ewa is writing a text message."
+      },
+      "gaps": [
+        [
+          "pisze"
+        ]
+      ],
+      "distractors": [
+        "piszę",
+        "piszesz"
+      ],
+      "items": [
+        "ewa",
+        "pisac-pisze-on",
+        "sms"
+      ]
+    }
+  ]
+}

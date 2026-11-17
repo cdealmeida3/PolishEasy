@@ -1,0 +1,438 @@
+{
+  "id": "kpk1-l06-b6",
+  "section": {
+    "letter": "B",
+    "heading": "Chcę, ale nie mogę",
+    "meaning": {
+      "en": "I want to, but I can't"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-b6-t01",
+      "before": "kpk1-l06-b6-e01",
+      "title": {
+        "en": "Want, can, must"
+      },
+      "body": {
+        "en": "*Chcieć* (want), *móc* (can, be free to), *musieć* (must) and *umieć* (know how to) are followed by a verb's dictionary form: *chcę grać*, *nie mogę grać*, *muszę iść*. *Umiem* is a skill: *umiem grać w tenisa*. *Mogę* is being free or allowed to: *dzisiaj nie mogę*."
+      },
+      "conjugation": {
+        "verb": "chcieć",
+        "meaning": {
+          "en": "to want"
+        },
+        "forms": {
+          "ja": "chcę",
+          "ty": "chcesz",
+          "on": "chce",
+          "my": "chcemy",
+          "wy": "chcecie",
+          "oni": "chcą"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l06-b6-t02",
+      "before": "kpk1-l06-b6-e05",
+      "title": {
+        "en": "Móc"
+      },
+      "body": {
+        "en": "*Móc* changes its letters: *mogę*, *mogą*, but *możesz*, *może*, *możemy*, *możecie*. *Może* is also \"maybe\"."
+      },
+      "conjugation": {
+        "verb": "móc",
+        "meaning": {
+          "en": "can, to be able to"
+        },
+        "forms": {
+          "ja": "mogę",
+          "ty": "możesz",
+          "on": "może",
+          "my": "możemy",
+          "wy": "możecie",
+          "oni": "mogą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b6-e01",
+      "prompt": "chcę",
+      "options": [
+        {
+          "en": "I like"
+        },
+        {
+          "en": "I can (I am free to, I may)"
+        },
+        {
+          "en": "I want"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chciec-chce"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-b6-e02",
+      "text": "chcę grać w tenisa",
+      "meaning": {
+        "en": "I want to play tennis"
+      },
+      "distractors": [
+        "lubię grać w tenisa",
+        "umiem grać w tenisa"
+      ],
+      "items": [
+        "chciec-chce",
+        "grac",
+        "w-tenisa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b6-e03",
+      "prompt": "chcesz",
+      "options": [
+        {
+          "en": "you want (one friend)"
+        },
+        {
+          "en": "I want"
+        },
+        {
+          "en": "you like (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chciec-chcesz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-b6-e04",
+      "verb": "chcieć",
+      "meaning": {
+        "en": "to want"
+      },
+      "person": "ty",
+      "sentence": "Czy ___ dzisiaj grać?",
+      "sentenceMeaning": {
+        "en": "Do you want to play today?"
+      },
+      "acceptedAnswers": [
+        "chcesz"
+      ],
+      "items": [
+        "czy",
+        "chciec-chcesz",
+        "dzisiaj",
+        "grac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b6-e05",
+      "prompt": "mogę",
+      "options": [
+        {
+          "en": "I can, I know how to"
+        },
+        {
+          "en": "I can (I am free to, I may)"
+        },
+        {
+          "en": "I want"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "moc-moge"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-b6-e06",
+      "prompt": {
+        "en": "I want to, but I can't"
+      },
+      "acceptedAnswers": [
+        "chcę, ale nie mogę"
+      ],
+      "distractors": [
+        "możesz",
+        "chcesz"
+      ],
+      "items": [
+        "chciec-chce",
+        "ale",
+        "nie",
+        "moc-moge"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b6-e07",
+      "prompt": "możesz",
+      "options": [
+        {
+          "en": "I can (I am free to, I may)"
+        },
+        {
+          "en": "you can, you know how to (one friend)"
+        },
+        {
+          "en": "you can (one friend; you are free to, you may)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "moc-mozesz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-b6-e08",
+      "verb": "móc",
+      "meaning": {
+        "en": "can, to be able to"
+      },
+      "person": "ty",
+      "sentence": "Dlaczego nie ___?",
+      "sentenceMeaning": {
+        "en": "Why can't you?"
+      },
+      "acceptedAnswers": [
+        "możesz"
+      ],
+      "items": [
+        "dlaczego",
+        "nie",
+        "moc-mozesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b6-e09",
+      "prompt": "muszę",
+      "options": [
+        {
+          "en": "I must, I have to"
+        },
+        {
+          "en": "I want"
+        },
+        {
+          "en": "I can (I am free to, I may)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "musiec-musze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b6-e10",
+      "prompt": "iść",
+      "options": [
+        {
+          "en": "go (to go on foot, or regularly)"
+        },
+        {
+          "en": "go (to go on foot, now)"
+        },
+        {
+          "en": "ride (to ride, to go by bike, on skis…)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "isc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b6-e11",
+      "prompt": "do lekarza",
+      "options": [
+        {
+          "en": "to the dentist"
+        },
+        {
+          "en": "to the cinema"
+        },
+        {
+          "en": "to the doctor"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-lekarza"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-b6-e12",
+      "text": "Muszę ___ do lekarza.",
+      "meaning": {
+        "en": "I have to go to the doctor."
+      },
+      "gaps": [
+        [
+          "iść"
+        ]
+      ],
+      "distractors": [
+        "idę",
+        "chodzi"
+      ],
+      "items": [
+        "musiec-musze",
+        "isc",
+        "do-lekarza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b6-e13",
+      "prompt": "kontuzję",
+      "options": [
+        {
+          "en": "an injury (after mam: mam kontuzję)"
+        },
+        {
+          "en": "a cold"
+        },
+        {
+          "en": "a headache"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kontuzja-acc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-b6-e14",
+      "acceptedAnswers": [
+        "mam kontuzję i muszę iść do lekarza"
+      ],
+      "meaning": {
+        "en": "I have an injury and I have to go to the doctor"
+      },
+      "items": [
+        "miec-mam",
+        "kontuzja-acc",
+        "i",
+        "musiec-musze",
+        "isc",
+        "do-lekarza"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l06-b6-e15",
+      "lines": [
+        "Grasz dzisiaj w tenisa?",
+        "Nie mogę. Muszę iść do lekarza.",
+        "Dlaczego?",
+        "Mam kontuzję."
+      ],
+      "meaning": {
+        "en": "Two friends talk about tennis."
+      },
+      "items": [
+        "grac-grasz",
+        "dzisiaj",
+        "w-tenisa",
+        "nie",
+        "moc-moge",
+        "musiec-musze",
+        "isc",
+        "do-lekarza",
+        "dlaczego",
+        "miec-mam",
+        "kontuzja-acc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-b6-e16",
+      "prompt": {
+        "en": "I can't today"
+      },
+      "acceptedAnswers": [
+        "dzisiaj nie mogę",
+        "nie mogę dzisiaj"
+      ],
+      "items": [
+        "dzisiaj",
+        "nie",
+        "moc-moge"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-b6-e17",
+      "pairs": [
+        {
+          "polish": "chcę",
+          "meaning": {
+            "en": "I want"
+          }
+        },
+        {
+          "polish": "chcesz",
+          "meaning": {
+            "en": "you want"
+          }
+        },
+        {
+          "polish": "mogę",
+          "meaning": {
+            "en": "I can"
+          }
+        },
+        {
+          "polish": "możesz",
+          "meaning": {
+            "en": "you can"
+          }
+        },
+        {
+          "polish": "muszę",
+          "meaning": {
+            "en": "I must"
+          }
+        },
+        {
+          "polish": "iść",
+          "meaning": {
+            "en": "to go"
+          }
+        }
+      ],
+      "items": [
+        "chciec-chce",
+        "chciec-chcesz",
+        "moc-moge",
+        "moc-mozesz",
+        "musiec-musze",
+        "isc"
+      ]
+    }
+  ]
+}

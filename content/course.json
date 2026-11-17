@@ -8,7 +8,8 @@
     "kpk1/lesson-02/items.json",
     "kpk1/lesson-03/items.json",
     "kpk1/lesson-04/items.json",
-    "kpk1/lesson-05/items.json"
+    "kpk1/lesson-05/items.json",
+    "kpk1/lesson-06/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -26,7 +27,8 @@
     "kpk1/chats/catching-up.json",
     "kpk1/chats/on-the-desk.json",
     "kpk1/chats/new-student.json",
-    "kpk1/chats/tango-class.json"
+    "kpk1/chats/tango-class.json",
+    "kpk1/chats/weekend-plans.json"
   ],
   "levels": [
     {
@@ -377,7 +379,39 @@
               "czasowniki modalne móc, chcieć, musieć"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-06/section-a1.json",
+            "kpk1/lesson-06/section-a2.json",
+            "kpk1/lesson-06/section-a3.json",
+            "kpk1/lesson-06/section-a4.json",
+            "kpk1/lesson-06/section-a5.json",
+            "kpk1/lesson-06/section-a6.json",
+            "kpk1/lesson-06/section-a7.json",
+            "kpk1/lesson-06/section-a8.json",
+            "kpk1/lesson-06/section-a9.json",
+            "kpk1/lesson-06/section-b1.json",
+            "kpk1/lesson-06/section-b2.json",
+            "kpk1/lesson-06/section-b3.json",
+            "kpk1/lesson-06/section-b4.json",
+            "kpk1/lesson-06/section-b5.json",
+            "kpk1/lesson-06/section-b6.json",
+            "kpk1/lesson-06/section-b7.json",
+            "kpk1/lesson-06/section-g.json"
+          ],
+          "lookUp": [
+            "gospodarz",
+            "gospodyni",
+            "mama",
+            "tata",
+            "corka",
+            "syn",
+            "brat",
+            "siostra",
+            "szukac-szukam",
+            "nudzic-sie-nudze",
+            "moc",
+            "umiec-umiem"
+          ]
         },
         {
           "id": "kpk1-l07",

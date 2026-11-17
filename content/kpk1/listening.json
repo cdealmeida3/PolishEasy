@@ -1913,6 +1913,550 @@
         12,
         12
       ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-071-1",
+      "track": 71,
+      "question": "Co robi pani w pierwszym dialogu?",
+      "meaning": {
+        "en": "What is the lady doing in the first dialogue?"
+      },
+      "options": [
+        "Gotuje pierogi.",
+        "Czyta książkę.",
+        "Pisze e-maile."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-072-1",
+      "track": 72,
+      "question": "Co gotuje pani?",
+      "meaning": {
+        "en": "What is the lady cooking?"
+      },
+      "options": [
+        "Pierogi.",
+        "Ryż.",
+        "Makaron."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-072-2",
+      "track": 72,
+      "statement": "Dziewczyna umie dobrze gotować.",
+      "meaning": {
+        "en": "The girl can cook well."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-072-3",
+      "track": 72,
+      "statement": "Jej mama gotuje bardzo dobrze.",
+      "meaning": {
+        "en": "Her mum cooks very well."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-073-1",
+      "track": 73,
+      "question": "Co robi chłopak?",
+      "meaning": {
+        "en": "What is the boy doing?"
+      },
+      "options": [
+        "Czyta książkę.",
+        "Gra na komputerze.",
+        "Pracuje."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-073-2",
+      "track": 73,
+      "statement": "Dziewczyna woli grać na komputerze.",
+      "meaning": {
+        "en": "The girl prefers playing computer games."
+      },
+      "answer": true,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-073-3",
+      "track": 73,
+      "statement": "Chłopak myśli, że jego tata pracuje.",
+      "meaning": {
+        "en": "The boy thinks that his dad is working."
+      },
+      "answer": true,
+      "lines": [
+        8,
+        9
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-074-1",
+      "track": 74,
+      "statement": "Pan mówi, że pracuje.",
+      "meaning": {
+        "en": "The man says that he is working."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-074-2",
+      "track": 74,
+      "question": "Czego on szuka?",
+      "meaning": {
+        "en": "What is he looking for?"
+      },
+      "options": [
+        "Informacji.",
+        "Zdjęć.",
+        "Książki."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-074-3",
+      "track": 74,
+      "statement": "Pan teraz naprawdę pracuje.",
+      "meaning": {
+        "en": "The man is really working now."
+      },
+      "answer": false,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-074-4",
+      "track": 74,
+      "question": "Co robi jego córka?",
+      "meaning": {
+        "en": "What is his daughter doing?"
+      },
+      "options": [
+        "Ogląda stare zdjęcia.",
+        "Czyta książkę.",
+        "Gotuje pierogi."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-075-1",
+      "track": 75,
+      "question": "Co ogląda dziewczyna?",
+      "meaning": {
+        "en": "What is the girl looking at?"
+      },
+      "options": [
+        "Stare zdjęcia.",
+        "Film.",
+        "Serial."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-075-2",
+      "track": 75,
+      "statement": "Na zdjęciu brat jest na wakacjach.",
+      "meaning": {
+        "en": "In the photo her brother is on holiday."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-075-3",
+      "track": 75,
+      "statement": "Druga dziewczyna dzisiaj się nudzi.",
+      "meaning": {
+        "en": "The other girl is bored today."
+      },
+      "answer": true,
+      "lines": [
+        6,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-075-4",
+      "track": 75,
+      "question": "Gdzie jest jej rodzina?",
+      "meaning": {
+        "en": "Where is her family?"
+      },
+      "options": [
+        "W Japonii.",
+        "W Polsce.",
+        "W Krakowie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        12
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-076-1",
+      "track": 76,
+      "statement": "Dziewczyna nudzi się po lekcji.",
+      "meaning": {
+        "en": "The girl is bored after the lesson."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-076-2",
+      "track": 76,
+      "question": "Co gotuje gospodyni?",
+      "meaning": {
+        "en": "What is the landlady cooking?"
+      },
+      "options": [
+        "Pierogi.",
+        "Ryż.",
+        "Makaron."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-076-3",
+      "track": 76,
+      "question": "Jak mówimy po polsku?",
+      "meaning": {
+        "en": "What do we say in Polish?"
+      },
+      "options": [
+        "Gospodyni i gospodarz.",
+        "Polska mama i polski tata.",
+        "Mama i tata."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-076-4",
+      "track": 76,
+      "statement": "Ona lubi słuchać muzyki rockowej.",
+      "meaning": {
+        "en": "She likes listening to rock music."
+      },
+      "answer": true,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-076-5",
+      "track": 76,
+      "statement": "Wszyscy umieją tańczyć.",
+      "meaning": {
+        "en": "Everyone can dance."
+      },
+      "answer": false,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-076-6",
+      "track": 76,
+      "question": "Co oni robią w weekend?",
+      "meaning": {
+        "en": "What are they doing at the weekend?"
+      },
+      "options": [
+        "Idą tańczyć.",
+        "Idą na zakupy.",
+        "Grają w tenisa."
+      ],
+      "correctOption": 0,
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-077-1",
+      "track": 77,
+      "question": "Jakie jest pierwsze hobby?",
+      "meaning": {
+        "en": "What is the first hobby?"
+      },
+      "options": [
+        "chodzić na spacery",
+        "chodzić na siłownię",
+        "chodzić do kina"
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l06-077-2",
+      "track": 77,
+      "question": "Jakie jest ostatnie hobby?",
+      "meaning": {
+        "en": "What is the last hobby?"
+      },
+      "acceptedAnswers": [
+        "jeździć konno"
+      ],
+      "lines": [
+        30,
+        30
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-078-1",
+      "track": 78,
+      "statement": "On lubi aktywnie spędzać czas.",
+      "meaning": {
+        "en": "He likes spending his time actively."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-078-2",
+      "track": 78,
+      "question": "Co on robi w weekendy?",
+      "meaning": {
+        "en": "What does he do at weekends?"
+      },
+      "options": [
+        "Gra w piłkę.",
+        "Jeździ konno.",
+        "Pływa."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-078-3",
+      "track": 78,
+      "question": "Co lubi robić jego dziewczyna?",
+      "meaning": {
+        "en": "What does his girlfriend like doing?"
+      },
+      "options": [
+        "Jeździć na rolkach.",
+        "Pływać.",
+        "Śpiewać."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-078-4",
+      "track": 78,
+      "statement": "On umie śpiewać.",
+      "meaning": {
+        "en": "He can sing."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-079-1",
+      "track": 79,
+      "question": "Kto jest w weekend w Krakowie?",
+      "meaning": {
+        "en": "Who is in Kraków at the weekend?"
+      },
+      "options": [
+        "Koleżanki z Londynu.",
+        "Koledzy z Berlina.",
+        "Rodzina z Japonii."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-079-2",
+      "track": 79,
+      "statement": "Najpierw chcą zrobić zakupy.",
+      "meaning": {
+        "en": "First they want to do some shopping."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-079-3",
+      "track": 79,
+      "question": "Dlaczego koleżanki chcą iść do klubu?",
+      "meaning": {
+        "en": "Why do the friends want to go to a club?"
+      },
+      "options": [
+        "Bo jest koncert.",
+        "Bo jest impreza.",
+        "Bo lubią tańczyć."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-080-1",
+      "track": 80,
+      "statement": "On chce oglądać filmy po hiszpańsku.",
+      "meaning": {
+        "en": "He wants to watch films in Spanish."
+      },
+      "answer": true,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l06-080-2",
+      "track": 80,
+      "statement": "W weekendy on zwykle ma czas.",
+      "meaning": {
+        "en": "At weekends he usually has time."
+      },
+      "answer": false,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l06-080-3",
+      "track": 80,
+      "question": "Gdzie on chce iść?",
+      "meaning": {
+        "en": "Where does he want to go?"
+      },
+      "options": [
+        "Na masaż.",
+        "Na zakupy.",
+        "Na kawę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        10
+      ]
     }
   ]
 }

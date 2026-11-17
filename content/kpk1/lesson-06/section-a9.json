@@ -1,0 +1,427 @@
+{
+  "id": "kpk1-l06-a9",
+  "section": {
+    "letter": "A",
+    "heading": "Koniugacje",
+    "meaning": {
+      "en": "Conjugations"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-a9-t01",
+      "before": "kpk1-l06-a9-e01",
+      "title": {
+        "en": "Verbs in -ę, -isz / -ysz"
+      },
+      "body": {
+        "en": "Verbs like *robić* end in *-ę* for *ja* and *-isz* for *ty*: *robię, robisz, robi*. After *cz*, *sz*, *rz* and *ż* the *i* is written *y*: *tańczę, tańczysz, tańczy*. *Mówić*, *myśleć* and *uczyć się* go the same way."
+      },
+      "conjugation": {
+        "verb": "tańczyć",
+        "meaning": {
+          "en": "to dance"
+        },
+        "forms": {
+          "ja": "tańczę",
+          "ty": "tańczysz",
+          "on": "tańczy",
+          "my": "tańczymy",
+          "wy": "tańczycie",
+          "oni": "tańczą"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l06-a9-t02",
+      "before": "kpk1-l06-a9-e11",
+      "title": {
+        "en": "Nudzić się"
+      },
+      "body": {
+        "en": "*Nudzić się* goes like *robić*, with *się*: *nudzę się, nudzisz się … nudzą się*. In a question the verb usually comes first: *nudzisz się?*"
+      },
+      "conjugation": {
+        "verb": "nudzić się",
+        "meaning": {
+          "en": "to be bored"
+        },
+        "forms": {
+          "ja": "nudzę się",
+          "ty": "nudzisz się",
+          "on": "nudzi się",
+          "my": "nudzimy się",
+          "wy": "nudzicie się",
+          "oni": "nudzą się"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a9-e01",
+      "prompt": "tańczę",
+      "options": [
+        {
+          "en": "dance (to dance)"
+        },
+        {
+          "en": "I cook, I am cooking"
+        },
+        {
+          "en": "I dance"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tanczyc-tancze"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a9-e02",
+      "text": "tańczę tango",
+      "meaning": {
+        "en": "I dance the tango"
+      },
+      "distractors": [
+        "tańczysz tango",
+        "lubię tango"
+      ],
+      "items": [
+        "tanczyc-tancze",
+        "tango"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a9-e03",
+      "prompt": "tańczysz",
+      "options": [
+        {
+          "en": "you dance (one friend)"
+        },
+        {
+          "en": "I dance"
+        },
+        {
+          "en": "you play (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tanczyc-tanczysz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a9-e04",
+      "verb": "tańczyć",
+      "meaning": {
+        "en": "to dance"
+      },
+      "person": "ty",
+      "sentence": "Czy ty ___ tango?",
+      "sentenceMeaning": {
+        "en": "Do you dance the tango?"
+      },
+      "acceptedAnswers": [
+        "tańczysz"
+      ],
+      "items": [
+        "czy",
+        "ty",
+        "tanczyc-tanczysz",
+        "tango"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a9-e05",
+      "prompt": "tańczy",
+      "options": [
+        {
+          "en": "you dance (one friend)"
+        },
+        {
+          "en": "he dances, she dances"
+        },
+        {
+          "en": "he likes, she likes"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "tanczyc-tanczy"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a9-e06",
+      "verb": "tańczyć",
+      "meaning": {
+        "en": "to dance"
+      },
+      "person": "on",
+      "sentence": "Ewa bardzo dobrze ___.",
+      "sentenceMeaning": {
+        "en": "Ewa dances very well."
+      },
+      "acceptedAnswers": [
+        "tańczy"
+      ],
+      "items": [
+        "ewa",
+        "bardzo",
+        "dobrze",
+        "tanczyc-tanczy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a9-e07",
+      "prompt": "robimy",
+      "options": [
+        {
+          "en": "you do, you make (several people)"
+        },
+        {
+          "en": "we speak"
+        },
+        {
+          "en": "we do, we make"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "robic-robimy"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a9-e08",
+      "verb": "robić",
+      "meaning": {
+        "en": "to do, to make"
+      },
+      "person": "my",
+      "sentence": "Co dzisiaj ___?",
+      "sentenceMeaning": {
+        "en": "What are we doing today?"
+      },
+      "acceptedAnswers": [
+        "robimy"
+      ],
+      "items": [
+        "co",
+        "dzisiaj",
+        "robic-robimy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a9-e09",
+      "prompt": "robicie",
+      "options": [
+        {
+          "en": "you do, you make (several people)"
+        },
+        {
+          "en": "we do, we make"
+        },
+        {
+          "en": "you speak (several people)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "robic-robicie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a9-e10",
+      "text": "co robicie?",
+      "meaning": {
+        "en": "what are you doing? (several people)"
+      },
+      "distractors": [
+        "co robimy?",
+        "co robisz?"
+      ],
+      "items": [
+        "co",
+        "robic-robicie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a9-e11",
+      "prompt": "nudzisz się",
+      "options": [
+        {
+          "en": "I am bored"
+        },
+        {
+          "en": "you are bored (one friend)"
+        },
+        {
+          "en": "you are tired (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nudzic-sie-nudzisz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a9-e12",
+      "verb": "nudzić się",
+      "meaning": {
+        "en": "to be bored"
+      },
+      "person": "ty",
+      "sentence": "___? Ja też.",
+      "sentenceMeaning": {
+        "en": "Are you bored? Me too."
+      },
+      "acceptedAnswers": [
+        "nudzisz się"
+      ],
+      "items": [
+        "nudzic-sie-nudzisz",
+        "ja",
+        "tez"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a9-e13",
+      "prompt": "uczycie się",
+      "options": [
+        {
+          "en": "we learn, we study"
+        },
+        {
+          "en": "you speak (several people)"
+        },
+        {
+          "en": "you learn, you study (several people)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "uczyc-sie-uczycie"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-a9-e14",
+      "verb": "uczyć się",
+      "meaning": {
+        "en": "to learn, to study"
+      },
+      "person": "wy",
+      "sentence": "___ w Krakowie?",
+      "sentenceMeaning": {
+        "en": "Do you study in Kraków? (several people)"
+      },
+      "acceptedAnswers": [
+        "uczycie się"
+      ],
+      "items": [
+        "uczyc-sie-uczycie",
+        "w-krakowie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-a9-e15",
+      "prompt": {
+        "en": "we are doing nothing"
+      },
+      "acceptedAnswers": [
+        "nic nie robimy",
+        "my nic nie robimy"
+      ],
+      "items": [
+        "nic",
+        "nie",
+        "robic-robimy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-a9-e16",
+      "acceptedAnswers": [
+        "czy ty się nudzisz?"
+      ],
+      "meaning": {
+        "en": "are you bored? (one friend)"
+      },
+      "items": [
+        "czy",
+        "ty",
+        "nudzic-sie-nudzisz"
+      ],
+      "readingAnswers": [
+        "nudzisz się?"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-a9-e17",
+      "pairs": [
+        {
+          "polish": "tańczę",
+          "meaning": {
+            "en": "I dance"
+          }
+        },
+        {
+          "polish": "tańczysz",
+          "meaning": {
+            "en": "you dance"
+          }
+        },
+        {
+          "polish": "tańczy",
+          "meaning": {
+            "en": "he dances, she dances"
+          }
+        },
+        {
+          "polish": "robimy",
+          "meaning": {
+            "en": "we do"
+          }
+        },
+        {
+          "polish": "robicie",
+          "meaning": {
+            "en": "you do (several people)"
+          }
+        },
+        {
+          "polish": "uczycie się",
+          "meaning": {
+            "en": "you study (several people)"
+          }
+        }
+      ],
+      "items": [
+        "tanczyc-tancze",
+        "tanczyc-tanczysz",
+        "tanczyc-tanczy",
+        "robic-robimy",
+        "robic-robicie",
+        "uczyc-sie-uczycie"
+      ]
+    }
+  ]
+}

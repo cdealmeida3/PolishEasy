@@ -43,6 +43,18 @@
     {
       "problem": "dictionary: ować",
       "reason": "Not a word and not meant as one. Chapter 5's Tip on pracować says the verb drops -ować and adds -uj- before the endings; the dictionary pass reads the ending as a word."
+    },
+    {
+      "problem": "grammar: ZDANIA_ZLOZONE: Lubię jeżdżę na rowerze i pływać.",
+      "reason": "Wrong on purpose. It is a wrong reply in the Plans for the weekend chat, there to teach that lubię is followed by a verb in its dictionary form; its note says so and gives the right lubię jeździć."
+    },
+    {
+      "problem": "dictionary: ździ",
+      "reason": "Not a word and not meant as one. The Tip on jeździć names the letters that change in jeżdżę and jeżdżą: ździ becomes żdż."
+    },
+    {
+      "problem": "dictionary: żdż",
+      "reason": "Not a word and not meant as one. The Tip on jeździć names the letters that change in jeżdżę and jeżdżą: ździ becomes żdż."
     }
   ]
 }

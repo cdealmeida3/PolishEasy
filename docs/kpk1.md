@@ -131,3 +131,25 @@ It gives the later chapters:
 - *pracować* and *interesować się*, two verbs of the *-ę, -esz* conjugation (*pracuję, pracujesz*) for the Verb challenge.
 
 It leaves for later: no plural in the instrumental (*interesuję się książkami*), *umieć* only as *umiesz*, and of *grać na…* only *na gitarze*.
+
+## Chapter 6: Co robisz? Nudzę się!
+
+Book pages 50 to 57 (pages 50 and 51 are missing from the spreads; a frame of them is `teacher-course/pages-extra/lesson-06-pages-50-51.jpg` in the project files), recordings 071 to 080 (079 and 080 are the same recording). Seventeen parts, 283 Exercises and 116 new Items, and 6 Starter Items introduced again (*pani*, *pan*, *tata*, *córka*, *siostra*, *twoje*).
+
+- **A** *W domu: co robisz?*, in four (16, 17, 16 and 18): *co pani robi?*, cooking (*gotuję pierogi*, *umiem gotować tylko ryż*); reading and preferring (*czytam książkę*, *wolę grać na komputerze*); *co pan robi?*, *szukam informacji*, *piszę e-maile*, *ogląda zdjęcia*; and being bored (*nudzę się*, *nic nie robię*, *na wakacjach*, *na uniwersytecie*, *w Japonii*).
+- **A** *Mój, twój* (16, a three-gender table), with *gospodarz*, *gospodyni* and *w domu*.
+- **A** *Koniugacje*, in four, each with its verb tables for the Verb challenge: *-m, -sz* (15: *znać*, *umieć*); *-ę, -esz* (18: *pisać*, and *gotować* as the model of every *-ować* verb); more *-ować* verbs (16: *organizuję imprezę*, *planuję*, *rezerwuję bilety*, *trenuję w klubie*, *podróżować*, with *organizować*'s table); *-ę, -isz / -ysz* (17: *tańczyć* and *nudzić się*, with *robimy*, *robicie*, *uczycie się*).
+- **B** *Co lubicie robić?*, in two (15 and 14): *lubicie*, *lubią*, *słuchać muzyki*, *malować*, *chodzić do klubu*; then *spotykać się ze znajomymi*, *robić zakupy*, *w weekend idziemy*.
+- **B** *Hobby*, in three: *chodzić na spacery, na siłownię, do kina*, *oglądać telewizję*, *śpiewać*, *biegać*, *pływać* (17); *grać w piłkę, w szachy, w karty* against *grać na pianinie*, and *jeździć na rowerze, na nartach, konno* (18); *jeździć*'s table (*jeżdżę, jeżdżą*), *na rolkach*, *uprawiać sport*, *na basen* (18).
+- **B** *Chcę, ale nie mogę*, in two: *chcieć*, *móc* and *musieć* with a verb's dictionary form, *iść do lekarza*, *mam kontuzję* (17, tables of *chcieć* and *móc*); and going out (17, *musieć*'s table: *na kawę*, *na zakupy*, *na koncert*, *uczyć się do egzaminu*).
+- *Ćwiczenia* (18): dictionary forms (*idę* from *iść*, *mogę* from *móc*), *grać na / w*, *chodzić na / do*, and *na masaż*.
+
+Verb forms are Items of their own (*gotuję*, *gotuje*, *gotujesz*); what follows a verb in another case is too (*książkę*, *informacji*, *muzyki*, *telewizję*, *imprezę*, *kontuzję*), as is each "where" or "what" after *grać*, *jeździć*, *chodzić* and *iść* (*w piłkę*, *na rowerze*, *na siłownię*, *do kina*, *na kawę*). There are 33 listening tasks on all 10 recordings (077 is a word list: the first and the last hobby), and one Chat: *Plans for the weekend* (Ola, informal: being bored, what you like doing, *umiem* against *mogę*, *chcę, ale muszę…*). The new nouns are in Practice's `genders`; 33 Items have pictures (the hobbies, sports and places).
+
+It gives the later chapters:
+
+- the three conjugations by their *ja* and *ty* forms, with 13 new verb tables;
+- *chcieć*, *móc*, *musieć* and *umieć* with a verb's dictionary form;
+- *mój* and *twój* in all three genders.
+
+It leaves for later: the accusative as a rule (chapter 7 teaches it; here *książkę*, *imprezę* and *telewizję* are learned one by one), the genitive after *nie* (*nie oglądam telewizji*), and the plural of nouns after numbers (*pięć zdjęć*).

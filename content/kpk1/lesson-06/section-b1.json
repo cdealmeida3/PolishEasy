@@ -1,0 +1,392 @@
+{
+  "id": "kpk1-l06-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Co lubicie robić?",
+    "meaning": {
+      "en": "What do you like doing?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-b1-t01",
+      "before": "kpk1-l06-b1-e01",
+      "title": {
+        "en": "Free time"
+      },
+      "body": {
+        "en": "To ask several people, say *co lubicie robić?*. *Lubić* is followed by a verb's dictionary form: *lubię malować*, *lubią tańczyć*. After *słuchać* the noun changes: *słucham muzyki* (*muzyka*). *Chodzić* is to go somewhere regularly: *lubię chodzić do klubu*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b1-e01",
+      "prompt": "lubicie",
+      "options": [
+        {
+          "en": "you like (several people)"
+        },
+        {
+          "en": "you like (one friend)"
+        },
+        {
+          "en": "you do, you make (several people)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lubic-lubicie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-b1-e02",
+      "text": "co lubicie robić?",
+      "meaning": {
+        "en": "what do you like doing? (several people)"
+      },
+      "distractors": [
+        "co lubisz robić?",
+        "co robicie?"
+      ],
+      "items": [
+        "co",
+        "lubic-lubicie",
+        "robic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b1-e03",
+      "prompt": "słuchać",
+      "options": [
+        {
+          "en": "hear (to hear)"
+        },
+        {
+          "en": "listen to (to listen to)"
+        },
+        {
+          "en": "sing (to sing)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sluchac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b1-e04",
+      "prompt": "muzyki",
+      "options": [
+        {
+          "en": "a film"
+        },
+        {
+          "en": "a song"
+        },
+        {
+          "en": "music (after słuchać: słuchać muzyki)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "muzyka-gen"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-b1-e05",
+      "prompt": {
+        "en": "I like listening to music"
+      },
+      "acceptedAnswers": [
+        "lubię słuchać muzyki"
+      ],
+      "distractors": [
+        "muzyką",
+        "słucham"
+      ],
+      "items": [
+        "lubic-lubie",
+        "sluchac",
+        "muzyka-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b1-e06",
+      "prompt": "malować",
+      "options": [
+        {
+          "en": "paint (to paint)"
+        },
+        {
+          "en": "write (to write: piszę, piszesz)"
+        },
+        {
+          "en": "cook (to cook)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "malowac"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-b1-e07",
+      "text": "Lubię ___ i słuchać muzyki.",
+      "meaning": {
+        "en": "I like painting and listening to music."
+      },
+      "gaps": [
+        [
+          "malować"
+        ]
+      ],
+      "distractors": [
+        "maluję",
+        "malarz"
+      ],
+      "items": [
+        "lubic-lubie",
+        "malowac",
+        "i",
+        "sluchac",
+        "muzyka-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b1-e08",
+      "prompt": "chodzić",
+      "options": [
+        {
+          "en": "I go (on foot, or regularly)"
+        },
+        {
+          "en": "go (to go on foot, or regularly)"
+        },
+        {
+          "en": "travel (to travel)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chodzic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b1-e09",
+      "prompt": "do klubu",
+      "options": [
+        {
+          "en": "to school"
+        },
+        {
+          "en": "at a club"
+        },
+        {
+          "en": "to a club"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-klubu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-b1-e10",
+      "acceptedAnswers": [
+        "lubię chodzić do klubu"
+      ],
+      "meaning": {
+        "en": "I like going to a club"
+      },
+      "items": [
+        "lubic-lubie",
+        "chodzic",
+        "do-klubu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b1-e11",
+      "prompt": "lubią",
+      "options": [
+        {
+          "en": "they like"
+        },
+        {
+          "en": "you like (several people)"
+        },
+        {
+          "en": "he likes, she likes"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lubic-lubia"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-b1-e12",
+      "prompt": {
+        "en": "they like dancing"
+      },
+      "acceptedAnswers": [
+        "oni lubią tańczyć",
+        "lubią tańczyć"
+      ],
+      "items": [
+        "oni",
+        "lubic-lubia",
+        "tanczyc"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-b1-e13",
+      "lines": [
+        "Ewa lubi malować i słuchać muzyki.",
+        "Adam lubi tańczyć i chodzić do klubu.",
+        "Ewa nie umie tańczyć.",
+        "Adam umie, bo jest tancerzem."
+      ],
+      "meaning": {
+        "en": "Ewa and Adam in their free time."
+      },
+      "statements": [
+        {
+          "text": "Ewa lubi malować.",
+          "meaning": {
+            "en": "Ewa likes painting."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam lubi słuchać muzyki.",
+          "meaning": {
+            "en": "Adam likes listening to music."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa umie tańczyć.",
+          "meaning": {
+            "en": "Ewa can dance."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "ewa",
+        "lubic-lubi",
+        "malowac",
+        "i",
+        "sluchac",
+        "muzyka-gen",
+        "adam",
+        "tanczyc",
+        "chodzic",
+        "do-klubu",
+        "nie",
+        "umiec-umie",
+        "bo",
+        "byc-jest",
+        "tancerz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-b1-e14",
+      "pairs": [
+        {
+          "polish": "lubicie",
+          "meaning": {
+            "en": "you like (several people)"
+          }
+        },
+        {
+          "polish": "lubią",
+          "meaning": {
+            "en": "they like"
+          }
+        },
+        {
+          "polish": "słuchać",
+          "meaning": {
+            "en": "to listen to"
+          }
+        },
+        {
+          "polish": "malować",
+          "meaning": {
+            "en": "to paint"
+          }
+        },
+        {
+          "polish": "chodzić",
+          "meaning": {
+            "en": "to go (regularly)"
+          }
+        },
+        {
+          "polish": "do klubu",
+          "meaning": {
+            "en": "to a club"
+          }
+        }
+      ],
+      "items": [
+        "lubic-lubicie",
+        "lubic-lubia",
+        "sluchac",
+        "malowac",
+        "chodzic",
+        "do-klubu"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l06-b1-e15",
+      "lines": [
+        "Co lubicie robić?",
+        "Ja lubię malować.",
+        "A ja chodzić do klubu. Lubisz tańczyć?",
+        "Tak, ale nie umiem."
+      ],
+      "meaning": {
+        "en": "Friends talk about their free time."
+      },
+      "items": [
+        "co",
+        "lubic-lubicie",
+        "robic",
+        "ja",
+        "lubic-lubie",
+        "malowac",
+        "a",
+        "chodzic",
+        "do-klubu",
+        "lubic-lubisz",
+        "tanczyc",
+        "tak",
+        "ale",
+        "nie",
+        "umiec-umiem"
+      ]
+    }
+  ]
+}

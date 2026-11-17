@@ -1,0 +1,407 @@
+{
+  "id": "kpk1-l06-b4",
+  "section": {
+    "letter": "B",
+    "heading": "Hobby",
+    "meaning": {
+      "en": "Hobbies"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-b4-t01",
+      "before": "kpk1-l06-b4-e01",
+      "title": {
+        "en": "Grać w or grać na?"
+      },
+      "body": {
+        "en": "*Grać w* is for games and sports: *grać w piłkę*, *w tenisa*, *w szachy*, *w karty*. *Grać na* is for instruments: *grać na gitarze*, *na pianinie*. *Jeździć na* is for riding: *jeździć na rowerze*, *na nartach*; on a horse it is *jeździć konno*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b4-e01",
+      "prompt": "w piłkę",
+      "options": [
+        {
+          "en": "tennis (after grać: gram w tenisa)"
+        },
+        {
+          "en": "chess (after grać)"
+        },
+        {
+          "en": "football (after grać: gram w piłkę)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-pilke"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-b4-e02",
+      "text": "gram w piłkę",
+      "meaning": {
+        "en": "I play football"
+      },
+      "distractors": [
+        "gram w tenisa",
+        "grasz w piłkę"
+      ],
+      "items": [
+        "grac-gram",
+        "w-pilke"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b4-e03",
+      "prompt": "w szachy",
+      "options": [
+        {
+          "en": "chess (after grać: gram w szachy)"
+        },
+        {
+          "en": "cards (after grać)"
+        },
+        {
+          "en": "football (after grać: gram w piłkę)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-szachy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b4-e04",
+      "prompt": "w karty",
+      "options": [
+        {
+          "en": "chess (after grać: gram w szachy)"
+        },
+        {
+          "en": "cards (after grać: gram w karty)"
+        },
+        {
+          "en": "the piano (after grać)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-karty"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-b4-e05",
+      "prompt": {
+        "en": "I play chess and cards"
+      },
+      "acceptedAnswers": [
+        "gram w szachy i w karty",
+        "gram w karty i w szachy"
+      ],
+      "distractors": [
+        "na",
+        "grać"
+      ],
+      "items": [
+        "grac-gram",
+        "w-szachy",
+        "i",
+        "w-karty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b4-e06",
+      "prompt": "na pianinie",
+      "options": [
+        {
+          "en": "the guitar (after grać: gram na gitarze)"
+        },
+        {
+          "en": "cards (after grać: gram w karty)"
+        },
+        {
+          "en": "the piano (after grać: gram na pianinie)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-pianinie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-b4-e07",
+      "text": "Umiesz grać ___ pianinie?",
+      "meaning": {
+        "en": "Can you play the piano?"
+      },
+      "gaps": [
+        [
+          "na"
+        ]
+      ],
+      "distractors": [
+        "w",
+        "do"
+      ],
+      "items": [
+        "umiec-umiesz",
+        "grac",
+        "na-pianinie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-b4-e08",
+      "text": "Lubisz grać ___ piłkę?",
+      "meaning": {
+        "en": "Do you like playing football?"
+      },
+      "gaps": [
+        [
+          "w"
+        ]
+      ],
+      "distractors": [
+        "na",
+        "do"
+      ],
+      "items": [
+        "lubic-lubisz",
+        "grac",
+        "w-pilke"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b4-e09",
+      "prompt": "jeździć",
+      "options": [
+        {
+          "en": "ride (to ride, to go by bike, on skis…)"
+        },
+        {
+          "en": "go (to go on foot, or regularly)"
+        },
+        {
+          "en": "run (to run, to jog)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jezdzic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b4-e10",
+      "prompt": "na rowerze",
+      "options": [
+        {
+          "en": "skis (after jeździć)"
+        },
+        {
+          "en": "a bike (after jeździć: jeżdżę na rowerze)"
+        },
+        {
+          "en": "a car (after jeździć)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-rowerze"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-b4-e11",
+      "acceptedAnswers": [
+        "lubię jeździć na rowerze"
+      ],
+      "meaning": {
+        "en": "I like riding a bike"
+      },
+      "items": [
+        "lubic-lubie",
+        "jezdzic",
+        "na-rowerze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b4-e12",
+      "prompt": "na nartach",
+      "options": [
+        {
+          "en": "a bike (after jeździć: jeżdżę na rowerze)"
+        },
+        {
+          "en": "on horseback (jeździć konno: to ride a horse)"
+        },
+        {
+          "en": "skis (after jeździć: jeździć na nartach, to ski)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-nartach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b4-e13",
+      "prompt": "konno",
+      "options": [
+        {
+          "en": "on horseback (jeździć konno: to ride a horse)"
+        },
+        {
+          "en": "skis (after jeździć: jeździć na nartach, to ski)"
+        },
+        {
+          "en": "by car"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "konno"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-b4-e14",
+      "prompt": {
+        "en": "can you ski? (one friend)"
+      },
+      "acceptedAnswers": [
+        "umiesz jeździć na nartach?",
+        "czy umiesz jeździć na nartach?"
+      ],
+      "items": [
+        "umiec-umiesz",
+        "jezdzic",
+        "na-nartach"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-b4-e15",
+      "text": "umiem jeździć konno",
+      "meaning": {
+        "en": "I can ride a horse"
+      },
+      "distractors": [
+        "umiem jeździć na nartach",
+        "lubię jeździć konno"
+      ],
+      "items": [
+        "umiec-umiem",
+        "jezdzic",
+        "konno"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-b4-e16",
+      "pairs": [
+        {
+          "polish": "w piłkę",
+          "meaning": {
+            "en": "football"
+          }
+        },
+        {
+          "polish": "w szachy",
+          "meaning": {
+            "en": "chess"
+          }
+        },
+        {
+          "polish": "w karty",
+          "meaning": {
+            "en": "cards"
+          }
+        },
+        {
+          "polish": "na pianinie",
+          "meaning": {
+            "en": "the piano"
+          }
+        },
+        {
+          "polish": "na rowerze",
+          "meaning": {
+            "en": "a bike"
+          }
+        },
+        {
+          "polish": "konno",
+          "meaning": {
+            "en": "on horseback"
+          }
+        }
+      ],
+      "items": [
+        "w-pilke",
+        "w-szachy",
+        "w-karty",
+        "na-pianinie",
+        "na-rowerze",
+        "konno"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-b4-e17",
+      "prompt": {
+        "en": "I play the piano"
+      },
+      "acceptedAnswers": [
+        "gram na pianinie"
+      ],
+      "distractors": [
+        "w",
+        "grasz"
+      ],
+      "items": [
+        "grac-gram",
+        "na-pianinie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-b4-e18",
+      "text": "Lubisz jeździć ___ nartach?",
+      "meaning": {
+        "en": "Do you like skiing?"
+      },
+      "gaps": [
+        [
+          "na"
+        ]
+      ],
+      "distractors": [
+        "w",
+        "do"
+      ],
+      "items": [
+        "lubic-lubisz",
+        "jezdzic",
+        "na-nartach"
+      ]
+    }
+  ]
+}

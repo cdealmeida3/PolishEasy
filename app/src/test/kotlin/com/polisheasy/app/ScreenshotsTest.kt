@@ -639,6 +639,49 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 6 of the book over the real course in the light theme`() = chapter6Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 6 of the book over the real course in the dark theme`() = chapter6Tour("dark")
+
+    @Test
+    fun `chapter 6 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter6Tour("large") }
+
+    /**
+     * Chapter 6 over the real course: its Lesson screen at the top and its sections, then section
+     * A's table of mój and twój, its three conjugations (-m, -sz; -ę, -esz; -ę, -isz), section B's
+     * Tip on grać w and grać na, and the table of chcieć.
+     */
+    private fun chapter6Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l06") }
+        screen.waitForIdle()
+        shot("200-chapter-6")
+        screen.onAllNodes(hasText("Chcę, ale nie mogę", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("200-chapter-6-sections")
+        listOf(
+            "kpk1-l06-a5" to "201-chapter-6-moj-twoj",
+            "kpk1-l06-a6" to "202-chapter-6-m-sz",
+            "kpk1-l06-a7" to "203-chapter-6-e-esz",
+            "kpk1-l06-a9" to "204-chapter-6-e-isz",
+            "kpk1-l06-b4" to "205-chapter-6-grac-w-na",
+            "kpk1-l06-b6" to "206-chapter-6-chciec",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l06")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test

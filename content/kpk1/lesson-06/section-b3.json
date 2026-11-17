@@ -1,0 +1,417 @@
+{
+  "id": "kpk1-l06-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Hobby",
+    "meaning": {
+      "en": "Hobbies"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-b3-t01",
+      "before": "kpk1-l06-b3-e01",
+      "title": {
+        "en": "Hobbies"
+      },
+      "body": {
+        "en": "Say what you like doing or can do with *lubię* or *umiem* and a verb's dictionary form: *lubię pływać*, *umiem śpiewać*. With *chodzić* say where you go: *chodzić na spacery*, *na siłownię*, *do kina*. After *oglądać* a word like *telewizja* ends in *-ę*: *oglądać telewizję*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b3-e01",
+      "prompt": "na spacery",
+      "options": [
+        {
+          "en": "for walks (chodzić na spacery: to go for walks)"
+        },
+        {
+          "en": "to the gym"
+        },
+        {
+          "en": "to the cinema"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-spacery"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-b3-e02",
+      "text": "lubię chodzić na spacery",
+      "meaning": {
+        "en": "I like going for walks"
+      },
+      "distractors": [
+        "lubię chodzić do kina",
+        "lubisz chodzić na spacery"
+      ],
+      "items": [
+        "lubic-lubie",
+        "chodzic",
+        "na-spacery"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b3-e03",
+      "prompt": "na siłownię",
+      "options": [
+        {
+          "en": "to the swimming pool"
+        },
+        {
+          "en": "to the gym"
+        },
+        {
+          "en": "to a club"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-silownie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-b3-e04",
+      "prompt": {
+        "en": "I go to the gym"
+      },
+      "acceptedAnswers": [
+        "chodzę na siłownię"
+      ],
+      "distractors": [
+        "chodzić",
+        "do"
+      ],
+      "items": [
+        "chodzic-chodze",
+        "na-silownie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b3-e05",
+      "prompt": "do kina",
+      "options": [
+        {
+          "en": "to a club"
+        },
+        {
+          "en": "to school"
+        },
+        {
+          "en": "to the cinema"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-kina"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-b3-e06",
+      "text": "W weekend chodzimy ___.",
+      "meaning": {
+        "en": "At the weekend we go to the cinema."
+      },
+      "gaps": [
+        [
+          "do kina"
+        ]
+      ],
+      "distractors": [
+        "do klubu",
+        "na spacery"
+      ],
+      "items": [
+        "w-weekend",
+        "chodzic-chodzimy",
+        "do-kina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b3-e07",
+      "prompt": "oglądać",
+      "options": [
+        {
+          "en": "watch (to watch)"
+        },
+        {
+          "en": "listen to (to listen to)"
+        },
+        {
+          "en": "read (to read)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ogladac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b3-e08",
+      "prompt": "telewizję",
+      "options": [
+        {
+          "en": "a TV series"
+        },
+        {
+          "en": "TV, television (after oglądać: oglądać telewizję)"
+        },
+        {
+          "en": "the radio"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "telewizja-acc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-b3-e09",
+      "prompt": {
+        "en": "I like watching TV"
+      },
+      "acceptedAnswers": [
+        "lubię oglądać telewizję",
+        "ja lubię oglądać telewizję"
+      ],
+      "items": [
+        "lubic-lubie",
+        "ogladac",
+        "telewizja-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b3-e10",
+      "prompt": "śpiewać",
+      "options": [
+        {
+          "en": "dance (to dance)"
+        },
+        {
+          "en": "listen to (to listen to)"
+        },
+        {
+          "en": "sing (to sing)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "spiewac"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-b3-e11",
+      "acceptedAnswers": [
+        "nie umiem śpiewać"
+      ],
+      "meaning": {
+        "en": "I can't sing"
+      },
+      "items": [
+        "nie",
+        "umiec-umiem",
+        "spiewac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b3-e12",
+      "prompt": "biegać",
+      "options": [
+        {
+          "en": "run (to run, to jog)"
+        },
+        {
+          "en": "go (to go on foot, or regularly)"
+        },
+        {
+          "en": "swim (to swim)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "biegac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b3-e13",
+      "prompt": "pływać",
+      "options": [
+        {
+          "en": "run (to run, to jog)"
+        },
+        {
+          "en": "swim (to swim)"
+        },
+        {
+          "en": "ski (to ski)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "plywac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-b3-e14",
+      "text": "lubię pływać i biegać",
+      "meaning": {
+        "en": "I like swimming and running"
+      },
+      "distractors": [
+        "lubię pływać i tańczyć",
+        "lubię biegać i śpiewać"
+      ],
+      "items": [
+        "lubic-lubie",
+        "plywac",
+        "i",
+        "biegac"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-b3-e15",
+      "pairs": [
+        {
+          "polish": "na spacery",
+          "meaning": {
+            "en": "for walks"
+          }
+        },
+        {
+          "polish": "na siłownię",
+          "meaning": {
+            "en": "to the gym"
+          }
+        },
+        {
+          "polish": "do kina",
+          "meaning": {
+            "en": "to the cinema"
+          }
+        },
+        {
+          "polish": "śpiewać",
+          "meaning": {
+            "en": "to sing"
+          }
+        },
+        {
+          "polish": "biegać",
+          "meaning": {
+            "en": "to run"
+          }
+        },
+        {
+          "polish": "pływać",
+          "meaning": {
+            "en": "to swim"
+          }
+        }
+      ],
+      "items": [
+        "na-spacery",
+        "na-silownie",
+        "do-kina",
+        "spiewac",
+        "biegac",
+        "plywac"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-b3-e16",
+      "lines": [
+        "Lubię biegać i pływać.",
+        "Chodzę też na siłownię.",
+        "Wieczorem oglądam telewizję.",
+        "Nie umiem śpiewać, ale lubię tańczyć."
+      ],
+      "meaning": {
+        "en": "Ewa talks about her hobbies."
+      },
+      "statements": [
+        {
+          "text": "Ewa lubi pływać.",
+          "meaning": {
+            "en": "Ewa likes swimming."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa nie chodzi na siłownię.",
+          "meaning": {
+            "en": "Ewa doesn't go to the gym."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa umie śpiewać.",
+          "meaning": {
+            "en": "Ewa can sing."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "lubic-lubie",
+        "biegac",
+        "i",
+        "plywac",
+        "chodzic-chodze",
+        "tez",
+        "na-silownie",
+        "ogladac-ogladam",
+        "telewizja-acc",
+        "nie",
+        "umiec-umiem",
+        "spiewac",
+        "ale",
+        "tanczyc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-b3-e17",
+      "prompt": {
+        "en": "he likes watching TV"
+      },
+      "acceptedAnswers": [
+        "on lubi oglądać telewizję",
+        "lubi oglądać telewizję"
+      ],
+      "distractors": [
+        "oglądam",
+        "telewizja"
+      ],
+      "items": [
+        "on",
+        "lubic-lubi",
+        "ogladac",
+        "telewizja-acc"
+      ]
+    }
+  ]
+}

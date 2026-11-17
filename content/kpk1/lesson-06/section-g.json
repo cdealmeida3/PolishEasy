@@ -1,0 +1,445 @@
+{
+  "id": "kpk1-l06-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-g-t01",
+      "before": "kpk1-l06-g-e01",
+      "title": {
+        "en": "Dictionary forms"
+      },
+      "body": {
+        "en": "A dictionary lists a verb in its dictionary form: *idę* is from *iść*, *mam* from *mieć*, *chcę* from *chcieć*, *mogę* from *móc*, *muszę* from *musieć*, *piszę* from *pisać*, *trenuję* from *trenować*. Its *ja* and *ty* forms show its conjugation: *znam, znasz* (*-m, -sz*); *piszę, piszesz* (*-ę, -esz*); *robię, robisz* (*-ę, -isz*)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-g-e01",
+      "prompt": "idę",
+      "options": [
+        {
+          "en": "I am going (on foot)"
+        },
+        {
+          "en": "we are going (on foot)"
+        },
+        {
+          "en": "I go (on foot, or regularly)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "isc-ide"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-g-e02",
+      "text": "idę na kawę",
+      "meaning": {
+        "en": "I'm going for a coffee"
+      },
+      "distractors": [
+        "idziemy na kawę",
+        "idę na zakupy"
+      ],
+      "items": [
+        "isc-ide",
+        "na-kawe"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-g-e03",
+      "prompt": "chcieć",
+      "options": [
+        {
+          "en": "like (to like)"
+        },
+        {
+          "en": "want (to want)"
+        },
+        {
+          "en": "must, have to (to have to)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chciec"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-g-e04",
+      "prompt": {
+        "en": "to want (the dictionary form of chcę)"
+      },
+      "acceptedAnswers": [
+        "chcieć"
+      ],
+      "items": [
+        "chciec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-g-e05",
+      "prompt": "móc",
+      "options": [
+        {
+          "en": "know how to (to know how to)"
+        },
+        {
+          "en": "want (to want)"
+        },
+        {
+          "en": "can, be able to (to be able to)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "moc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-g-e06",
+      "acceptedAnswers": [
+        "móc"
+      ],
+      "meaning": {
+        "en": "can, to be able to (the dictionary form of mogę)"
+      },
+      "items": [
+        "moc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-g-e07",
+      "prompt": "musieć",
+      "options": [
+        {
+          "en": "must, have to (to have to)"
+        },
+        {
+          "en": "can, be able to (to be able to)"
+        },
+        {
+          "en": "want (to want)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "musiec"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-g-e08",
+      "pairs": [
+        {
+          "polish": "idę",
+          "meaning": {
+            "en": "I am going"
+          }
+        },
+        {
+          "polish": "chcieć",
+          "meaning": {
+            "en": "to want"
+          }
+        },
+        {
+          "polish": "móc",
+          "meaning": {
+            "en": "to be able to"
+          }
+        },
+        {
+          "polish": "musieć",
+          "meaning": {
+            "en": "to have to"
+          }
+        },
+        {
+          "polish": "pisać",
+          "meaning": {
+            "en": "to write"
+          }
+        },
+        {
+          "polish": "tańczyć",
+          "meaning": {
+            "en": "to dance"
+          }
+        }
+      ],
+      "items": [
+        "isc-ide",
+        "chciec",
+        "moc",
+        "musiec",
+        "pisac",
+        "tanczyc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-g-e09",
+      "prompt": "na masaż",
+      "options": [
+        {
+          "en": "to a concert"
+        },
+        {
+          "en": "for a massage (iść na masaż)"
+        },
+        {
+          "en": "shopping (iść na zakupy: to go shopping)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-masaz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-g-e10",
+      "prompt": {
+        "en": "I want to go for a massage"
+      },
+      "acceptedAnswers": [
+        "chcę iść na masaż"
+      ],
+      "distractors": [
+        "muszę",
+        "do"
+      ],
+      "items": [
+        "chciec-chce",
+        "isc",
+        "na-masaz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-g-e11",
+      "verb": "gotować",
+      "meaning": {
+        "en": "to cook"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ ryż, a ty?",
+      "sentenceMeaning": {
+        "en": "I am cooking rice, and you?"
+      },
+      "acceptedAnswers": [
+        "gotuję"
+      ],
+      "items": [
+        "ja",
+        "gotowac-gotuje",
+        "ryz",
+        "a-ty"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-g-e12",
+      "verb": "umieć",
+      "meaning": {
+        "en": "to know how to, can"
+      },
+      "person": "ja",
+      "sentence": "Nie ___ śpiewać.",
+      "sentenceMeaning": {
+        "en": "I can't sing."
+      },
+      "acceptedAnswers": [
+        "umiem"
+      ],
+      "items": [
+        "nie",
+        "umiec-umiem",
+        "spiewac"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-g-e13",
+      "text": "Lubię grać ___ gitarze i ___ szachy.",
+      "meaning": {
+        "en": "I like playing the guitar and chess."
+      },
+      "gaps": [
+        [
+          "na"
+        ],
+        [
+          "w"
+        ]
+      ],
+      "distractors": [
+        "do"
+      ],
+      "items": [
+        "lubic-lubie",
+        "grac",
+        "na-gitarze",
+        "i",
+        "w-szachy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-g-e14",
+      "text": "Chodzę ___ siłownię, a w weekend idę ___ kina.",
+      "meaning": {
+        "en": "I go to the gym, and at the weekend I go to the cinema."
+      },
+      "gaps": [
+        [
+          "na"
+        ],
+        [
+          "do"
+        ]
+      ],
+      "distractors": [
+        "w"
+      ],
+      "items": [
+        "chodzic-chodze",
+        "na-silownie",
+        "a",
+        "w-weekend",
+        "isc-ide",
+        "do-kina"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-g-e15",
+      "lines": [
+        "Dzisiaj nie mogę iść do kina.",
+        "Muszę uczyć się do egzaminu.",
+        "W weekend idę na masaż.",
+        "A potem idę na kawę ze znajomymi."
+      ],
+      "meaning": {
+        "en": "Ewa explains her plans."
+      },
+      "statements": [
+        {
+          "text": "Ewa dzisiaj idzie do kina.",
+          "meaning": {
+            "en": "Ewa is going to the cinema today."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa musi się uczyć.",
+          "meaning": {
+            "en": "Ewa has to study."
+          },
+          "true": true
+        },
+        {
+          "text": "W weekend Ewa idzie na masaż.",
+          "meaning": {
+            "en": "At the weekend Ewa is going for a massage."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "dzisiaj",
+        "nie",
+        "moc-moge",
+        "isc",
+        "do-kina",
+        "musiec-musze",
+        "uczyc-sie",
+        "do-egzaminu",
+        "w-weekend",
+        "isc-ide",
+        "na-masaz",
+        "a",
+        "na-kawe",
+        "ze-znajomymi"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-g-e16",
+      "prompt": {
+        "en": "to have to (the dictionary form of muszę)"
+      },
+      "acceptedAnswers": [
+        "musieć"
+      ],
+      "items": [
+        "musiec"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-g-e17",
+      "acceptedAnswers": [
+        "nudzę się, bo nic nie robię"
+      ],
+      "meaning": {
+        "en": "I'm bored because I'm doing nothing"
+      },
+      "items": [
+        "nudzic-sie-nudze",
+        "bo",
+        "nic",
+        "nie",
+        "robic-robie"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l06-g-e18",
+      "lines": [
+        "Co robisz w weekend?",
+        "Idę na koncert. Chcesz iść?",
+        "Chcę, ale muszę pracować.",
+        "Szkoda!"
+      ],
+      "meaning": {
+        "en": "Two friends plan the weekend."
+      },
+      "items": [
+        "co",
+        "robic-robisz",
+        "w-weekend",
+        "isc-ide",
+        "na-koncert",
+        "chciec-chcesz",
+        "isc",
+        "chciec-chce",
+        "ale",
+        "musiec-musze",
+        "pracowac",
+        "szkoda"
+      ]
+    }
+  ]
+}

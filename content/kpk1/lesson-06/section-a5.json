@@ -1,0 +1,449 @@
+{
+  "id": "kpk1-l06-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Mój, twój",
+    "meaning": {
+      "en": "My, your"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-a5-t01",
+      "before": "kpk1-l06-a5-e01",
+      "title": {
+        "en": "Mój, twój"
+      },
+      "body": {
+        "en": "*Mój* (my) and *twój* (your, to a friend) change with the noun's gender, like adjectives: *mój tata*, *moja mama*, *moje dziecko*; *twój brat*, *twoja siostra*, *twoje dziecko*. A student living with a Polish family calls the man of the house *gospodarz* and the woman *gospodyni*."
+      },
+      "table": {
+        "title": {
+          "en": "Mój, twój"
+        },
+        "columns": [
+          {
+            "gender": "m"
+          },
+          {
+            "gender": "f"
+          },
+          {
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "mój",
+              "moja",
+              "moje"
+            ]
+          },
+          {
+            "cells": [
+              "twój",
+              "twoja",
+              "twoje"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a5-e01",
+      "prompt": "twoje",
+      "options": [
+        {
+          "en": "my (with a neuter noun)"
+        },
+        {
+          "en": "your (one friend, with a feminine noun)"
+        },
+        {
+          "en": "your (one friend, with a neuter noun)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "twoje"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-a5-e02",
+      "text": "To jest ___ dziecko?",
+      "meaning": {
+        "en": "Is this your child?"
+      },
+      "gaps": [
+        [
+          "twoje"
+        ]
+      ],
+      "distractors": [
+        "twój",
+        "twoja"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "twoje",
+        "dziecko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a5-e03",
+      "prompt": "siostra",
+      "options": [
+        {
+          "en": "a sister"
+        },
+        {
+          "en": "a daughter"
+        },
+        {
+          "en": "a brother"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "siostra"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a5-e04",
+      "text": "to jest moja siostra",
+      "meaning": {
+        "en": "this is my sister"
+      },
+      "distractors": [
+        "to jest moja córka",
+        "to jest mój brat"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "moja",
+        "siostra"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a5-e05",
+      "prompt": "gospodyni",
+      "options": [
+        {
+          "en": "a teacher (a woman)"
+        },
+        {
+          "en": "a host, a landlady (the woman of the house a student lives in)"
+        },
+        {
+          "en": "a neighbour (a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gospodyni"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a5-e06",
+      "prompt": "gospodarz",
+      "options": [
+        {
+          "en": "a teacher (a man)"
+        },
+        {
+          "en": "a host, a landlady (the woman of the house a student lives in)"
+        },
+        {
+          "en": "a host, a landlord (the man of the house a student lives in)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "gospodarz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-a5-e07",
+      "prompt": "w domu",
+      "options": [
+        {
+          "en": "at home"
+        },
+        {
+          "en": "at school, in a school"
+        },
+        {
+          "en": "in an office"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-domu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-a5-e08",
+      "prompt": {
+        "en": "my landlady is at home"
+      },
+      "acceptedAnswers": [
+        "moja gospodyni jest w domu"
+      ],
+      "distractors": [
+        "mój",
+        "twoje"
+      ],
+      "items": [
+        "moja",
+        "gospodyni",
+        "byc-jest",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l06-a5-e09",
+      "text": "Gdzie jest ___ gospodarz?",
+      "meaning": {
+        "en": "Where is your host?"
+      },
+      "gaps": [
+        [
+          "twój"
+        ]
+      ],
+      "distractors": [
+        "twoja",
+        "twoje"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "twoj",
+        "gospodarz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-a5-e10",
+      "pairs": [
+        {
+          "polish": "mój tata",
+          "meaning": {
+            "en": "my dad"
+          }
+        },
+        {
+          "polish": "moja mama",
+          "meaning": {
+            "en": "my mum"
+          }
+        },
+        {
+          "polish": "moje dziecko",
+          "meaning": {
+            "en": "my child"
+          }
+        },
+        {
+          "polish": "twój brat",
+          "meaning": {
+            "en": "your brother"
+          }
+        },
+        {
+          "polish": "twoja siostra",
+          "meaning": {
+            "en": "your sister"
+          }
+        },
+        {
+          "polish": "twoje dziecko",
+          "meaning": {
+            "en": "your child"
+          }
+        }
+      ],
+      "items": [
+        "moj",
+        "tata",
+        "moja",
+        "mama",
+        "moje",
+        "dziecko",
+        "twoj",
+        "brat",
+        "twoja",
+        "siostra",
+        "twoje"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-a5-e11",
+      "acceptedAnswers": [
+        "twoja gospodyni gotuje"
+      ],
+      "meaning": {
+        "en": "your landlady is cooking"
+      },
+      "items": [
+        "twoja",
+        "gospodyni",
+        "gotowac-gotuje-on"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-a5-e12",
+      "prompt": {
+        "en": "my host is working at home"
+      },
+      "acceptedAnswers": [
+        "mój gospodarz pracuje w domu"
+      ],
+      "items": [
+        "moj",
+        "gospodarz",
+        "pracowac-pracuje-on",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-a5-e13",
+      "lines": [
+        "Mieszkam w Krakowie.",
+        "Mój gospodarz pracuje w domu.",
+        "Moja gospodyni gotuje pierogi.",
+        "A ich syn czyta książkę."
+      ],
+      "meaning": {
+        "en": "A student talks about the family she lives with."
+      },
+      "statements": [
+        {
+          "text": "Gospodarz pracuje w biurze.",
+          "meaning": {
+            "en": "The host works in an office."
+          },
+          "true": false
+        },
+        {
+          "text": "Gospodyni gotuje.",
+          "meaning": {
+            "en": "The landlady is cooking."
+          },
+          "true": true
+        },
+        {
+          "text": "Syn czyta.",
+          "meaning": {
+            "en": "The son is reading."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "w-krakowie",
+        "moj",
+        "gospodarz",
+        "pracowac-pracuje-on",
+        "w-domu",
+        "moja",
+        "gospodyni",
+        "gotowac-gotuje-on",
+        "pierogi",
+        "a",
+        "syn",
+        "czytac-czyta",
+        "ksiazka-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-a5-e14",
+      "text": "to jest twoja rodzina?",
+      "meaning": {
+        "en": "is this your family?"
+      },
+      "distractors": [
+        "to jest moja rodzina?",
+        "to jest twoja córka?"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "twoja",
+        "rodzina"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-a5-e15",
+      "prompt": {
+        "en": "is that your brother?"
+      },
+      "acceptedAnswers": [
+        "czy to jest twój brat?",
+        "to jest twój brat?",
+        "to twój brat?"
+      ],
+      "distractors": [
+        "twoja",
+        "mój"
+      ],
+      "items": [
+        "czy",
+        "to",
+        "byc-jest",
+        "twoj",
+        "brat"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l06-a5-e16",
+      "lines": [
+        "Kto to jest?",
+        "To jest moja gospodyni, pani Ewa.",
+        "A to?",
+        "To jest jej syn, Adam."
+      ],
+      "meaning": {
+        "en": "A student shows a photo."
+      },
+      "items": [
+        "kto",
+        "to",
+        "byc-jest",
+        "moja",
+        "gospodyni",
+        "pani",
+        "ewa",
+        "a",
+        "jej",
+        "syn",
+        "adam"
+      ]
+    }
+  ]
+}

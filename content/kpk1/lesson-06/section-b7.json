@@ -1,0 +1,438 @@
+{
+  "id": "kpk1-l06-b7",
+  "section": {
+    "letter": "B",
+    "heading": "Chcę, ale nie mogę",
+    "meaning": {
+      "en": "I want to, but I can't"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l06-b7-t01",
+      "before": "kpk1-l06-b7-e01",
+      "title": {
+        "en": "Going out"
+      },
+      "body": {
+        "en": "*Musieć* goes *muszę, musisz, musi … muszą*. To say where you are going, use *iść* with *na* or *do*: *iść na zakupy*, *na kawę*, *na koncert*; *iść do kina*, *do lekarza*. *Ewa chce iść na kawę* is \"Ewa wants to go for a coffee\", and *Adam musi uczyć się do egzaminu* is \"Adam has to study for an exam\"."
+      },
+      "conjugation": {
+        "verb": "musieć",
+        "meaning": {
+          "en": "must, to have to"
+        },
+        "forms": {
+          "ja": "muszę",
+          "ty": "musisz",
+          "on": "musi",
+          "my": "musimy",
+          "wy": "musicie",
+          "oni": "muszą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b7-e01",
+      "prompt": "na kawę",
+      "options": [
+        {
+          "en": "for lunch"
+        },
+        {
+          "en": "for a coffee (iść na kawę)"
+        },
+        {
+          "en": "shopping (iść na zakupy: to go shopping)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-kawe"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b7-e02",
+      "prompt": "chce",
+      "options": [
+        {
+          "en": "I want"
+        },
+        {
+          "en": "he likes, she likes"
+        },
+        {
+          "en": "he wants, she wants"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chciec-chce-on"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-b7-e03",
+      "verb": "chcieć",
+      "meaning": {
+        "en": "to want"
+      },
+      "person": "on",
+      "sentence": "Ewa ___ iść na kawę.",
+      "sentenceMeaning": {
+        "en": "Ewa wants to go for a coffee."
+      },
+      "acceptedAnswers": [
+        "chce"
+      ],
+      "items": [
+        "ewa",
+        "chciec-chce-on",
+        "isc",
+        "na-kawe"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b7-e04",
+      "prompt": "na zakupy",
+      "options": [
+        {
+          "en": "shopping (iść na zakupy: to go shopping)"
+        },
+        {
+          "en": "for a coffee (iść na kawę)"
+        },
+        {
+          "en": "to the cinema"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-zakupy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l06-b7-e05",
+      "text": "idziemy na zakupy",
+      "meaning": {
+        "en": "we're going shopping"
+      },
+      "distractors": [
+        "idziemy na kawę",
+        "idziemy do kina"
+      ],
+      "items": [
+        "isc-idziemy",
+        "na-zakupy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b7-e06",
+      "prompt": "na koncert",
+      "options": [
+        {
+          "en": "to the cinema"
+        },
+        {
+          "en": "to a concert"
+        },
+        {
+          "en": "for a coffee (iść na kawę)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-koncert"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l06-b7-e07",
+      "prompt": {
+        "en": "I want to go to a concert"
+      },
+      "acceptedAnswers": [
+        "chcę iść na koncert"
+      ],
+      "distractors": [
+        "chce",
+        "do"
+      ],
+      "items": [
+        "chciec-chce",
+        "isc",
+        "na-koncert"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b7-e08",
+      "prompt": "musisz",
+      "options": [
+        {
+          "en": "I must, I have to"
+        },
+        {
+          "en": "you can (one friend; you are free to, you may)"
+        },
+        {
+          "en": "you must, you have to (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "musiec-musisz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-b7-e09",
+      "verb": "musieć",
+      "meaning": {
+        "en": "must, to have to"
+      },
+      "person": "ty",
+      "sentence": "Dlaczego ___ pracować?",
+      "sentenceMeaning": {
+        "en": "Why do you have to work?"
+      },
+      "acceptedAnswers": [
+        "musisz"
+      ],
+      "items": [
+        "dlaczego",
+        "musiec-musisz",
+        "pracowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b7-e10",
+      "prompt": "uczyć się",
+      "options": [
+        {
+          "en": "learn, study (to learn, to study)"
+        },
+        {
+          "en": "we learn, we study"
+        },
+        {
+          "en": "work (to work)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "uczyc-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b7-e11",
+      "prompt": "do egzaminu",
+      "options": [
+        {
+          "en": "for a lesson"
+        },
+        {
+          "en": "for an exam (uczyć się do egzaminu)"
+        },
+        {
+          "en": "for the weekend"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-egzaminu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l06-b7-e12",
+      "prompt": "musi",
+      "options": [
+        {
+          "en": "you must, you have to (one friend)"
+        },
+        {
+          "en": "he wants, she wants"
+        },
+        {
+          "en": "he must, she must; he has to, she has to"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "musiec-musi"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l06-b7-e13",
+      "verb": "musieć",
+      "meaning": {
+        "en": "must, to have to"
+      },
+      "person": "on",
+      "sentence": "Adam ___ uczyć się do egzaminu.",
+      "sentenceMeaning": {
+        "en": "Adam has to study for an exam."
+      },
+      "acceptedAnswers": [
+        "musi"
+      ],
+      "items": [
+        "adam",
+        "musiec-musi",
+        "uczyc-sie",
+        "do-egzaminu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l06-b7-e14",
+      "acceptedAnswers": [
+        "muszę uczyć się do egzaminu"
+      ],
+      "meaning": {
+        "en": "I have to study for an exam"
+      },
+      "items": [
+        "musiec-musze",
+        "uczyc-sie",
+        "do-egzaminu"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l06-b7-e15",
+      "lines": [
+        "Co robimy w weekend?",
+        "Ewa chce iść na zakupy.",
+        "Adam musi uczyć się do egzaminu.",
+        "A ja chcę iść na koncert!"
+      ],
+      "meaning": {
+        "en": "Friends plan the weekend."
+      },
+      "statements": [
+        {
+          "text": "Ewa chce iść na zakupy.",
+          "meaning": {
+            "en": "Ewa wants to go shopping."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam idzie na koncert.",
+          "meaning": {
+            "en": "Adam is going to a concert."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam musi się uczyć.",
+          "meaning": {
+            "en": "Adam has to study."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "co",
+        "robic-robimy",
+        "w-weekend",
+        "ewa",
+        "chciec-chce-on",
+        "isc",
+        "na-zakupy",
+        "adam",
+        "musiec-musi",
+        "uczyc-sie",
+        "do-egzaminu",
+        "a",
+        "ja",
+        "chciec-chce",
+        "na-koncert"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l06-b7-e16",
+      "prompt": {
+        "en": "she wants to go shopping"
+      },
+      "acceptedAnswers": [
+        "ona chce iść na zakupy",
+        "chce iść na zakupy"
+      ],
+      "items": [
+        "ona",
+        "chciec-chce-on",
+        "isc",
+        "na-zakupy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l06-b7-e17",
+      "pairs": [
+        {
+          "polish": "chce",
+          "meaning": {
+            "en": "he wants, she wants"
+          }
+        },
+        {
+          "polish": "musisz",
+          "meaning": {
+            "en": "you must"
+          }
+        },
+        {
+          "polish": "musi",
+          "meaning": {
+            "en": "he must, she must"
+          }
+        },
+        {
+          "polish": "uczyć się",
+          "meaning": {
+            "en": "to study"
+          }
+        },
+        {
+          "polish": "na kawę",
+          "meaning": {
+            "en": "for a coffee"
+          }
+        },
+        {
+          "polish": "na koncert",
+          "meaning": {
+            "en": "to a concert"
+          }
+        }
+      ],
+      "items": [
+        "chciec-chce-on",
+        "musiec-musisz",
+        "musiec-musi",
+        "uczyc-sie",
+        "na-kawe",
+        "na-koncert"
+      ]
+    }
+  ]
+}
