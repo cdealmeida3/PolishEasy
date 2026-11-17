@@ -24,6 +24,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.semantics.getOrNull
+import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.hasSetTextAction
@@ -371,7 +372,7 @@ class ScreenshotsTest {
     /**
      * The class recordings over the real course: chapter 0's Słuchaj before any recording is on the
      * phone, Class audio empty and after the zips of chapters 0 and 1 are added, the Słuchaj of
-     * chapter 0 and of chapter 1 (still coming, by the book's sections), and the player of a
+     * chapter 0 and of chapter 1 (by the book's sections), and the player of a
      * recording: at rest, playing in step mode with the Learner's turn, and its listening tasks
      * before and after they are answered.
      */
@@ -413,7 +414,7 @@ class ScreenshotsTest {
         shot("123-listen-chapter-0")
         back()
         screen.onNode(hasText("Pierwszy dzień w szkole") and hasClickAction()).performScrollTo().performClick()
-        screen.onNodeWithText(app.getString(R.string.listen_section, "A")).performScrollTo()
+        screen.onAllNodes(hasText(app.getString(R.string.listen_section, "A"), substring = true))[0].performScrollTo()
         shot("123-listen-chapter-1")
         screen.onNode(hasText("004") and hasClickAction()).performScrollTo().performClick()
         shot("124-player")
@@ -432,6 +433,40 @@ class ScreenshotsTest {
         tap(R.string.nav_settings)
         screen.onNodeWithText(app.getString(R.string.settings_class_audio)).performScrollTo()
         shot("126-settings-class-audio")
+    }
+
+    @Test
+    fun `chapter 1 of the book over the real course in the light theme`() = chapter1Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 1 of the book over the real course in the dark theme`() = chapter1Tour("dark")
+
+    @Test
+    fun `chapter 1 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter1Tour("large") }
+
+    /**
+     * Chapter 1 over the real course: its Lesson screen at the top with its Słownik, its sections
+     * and Test, then section A's register table Tip and its first Exercise.
+     */
+    private fun chapter1Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l01") }
+        screen.waitForIdle()
+        shot("147-chapter-1")
+        screen.onAllNodes(hasText("Liczebniki 0–10", substring = true), useUnmergedTree = true)[1].performScrollTo()
+        shot("147-chapter-1-sections")
+        screen.onNodeWithText(app.getString(R.string.lesson_test)).performScrollTo()
+        shot("147-chapter-1-test")
+        screen.runOnUiThread { model.openSection("kpk1-l01-a1") }
+        screen.waitForIdle()
+        shot("148-chapter-1-tip")
+        tap(R.string.action_continue)
+        shot("148-chapter-1-first")
     }
 
     @Test
@@ -811,7 +846,15 @@ class ScreenshotsTest {
 
         /** Taps the tile at [tile], which is face down, and lets it turn. */
         fun turn(tile: Int) {
-            screen.onNodeWithContentDescription(app.getString(R.string.memory_tile, tile + 1)).performScrollTo().performClick()
+            val node = screen.onNodeWithContentDescription(app.getString(R.string.memory_tile, tile + 1))
+            // A scroll is animated, so with the clock held it would never end: let the clock run for it alone.
+            if (runCatching { node.assertIsDisplayed() }.isFailure) {
+                val held = !screen.mainClock.autoAdvance
+                screen.mainClock.autoAdvance = true
+                node.performScrollTo()
+                screen.mainClock.autoAdvance = !held
+            }
+            node.performClick()
             screen.mainClock.advanceTimeBy(400)
         }
 

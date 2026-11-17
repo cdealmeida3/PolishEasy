@@ -690,7 +690,7 @@ class PlayingPracticeOnScreenTest {
         shows(sentence.meaning)
         shows(R.string.chain_hint)
         shows(slips(0))
-        val order = sentence.polish.split(" ").map { word -> word.trim(',', '.', '?', '!') }
+        val order = sentence.polish.split(" ").map { word -> word.trim(',', '.', '?', '!', ':', '„', '”') }
 
         // A word that does not belong is a slip, and the card stays.
         tapCard(sentence.cards.first { it !in order })
@@ -728,7 +728,7 @@ class PlayingPracticeOnScreenTest {
         assertEquals(listOf(said), clips.played)
         screen.onNodeWithText(sentence.meaning).assertDoesNotExist()
 
-        sentence.polish.split(" ").map { word -> word.trim(',', '.', '?', '!') }.forEach(::tapCard)
+        sentence.polish.split(" ").map { word -> word.trim(',', '.', '?', '!', ':', '„', '”') }.forEach(::tapCard)
 
         shows(sentence.meaning)
         // It was heard already: it is not said again.
@@ -839,7 +839,7 @@ class PlayingPracticeOnScreenTest {
     /** Chains every sentence left in the Round the way it is written, moving on after each. */
     private fun chainTheRest() {
         while (viewModel?.screen is Screen.Round) {
-            checkNotNull(chaining().sentence).polish.split(" ").map { word -> word.trim(',', '.', '?', '!') }.forEach(::tapCard)
+            checkNotNull(chaining().sentence).polish.split(" ").map { word -> word.trim(',', '.', '?', '!', ':', '„', '”') }.forEach(::tapCard)
             tap(R.string.action_continue)
         }
     }

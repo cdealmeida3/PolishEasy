@@ -339,11 +339,11 @@ class PracticeOverAuthoredContentTest {
 
     @Test
     fun `every picture is of a word that can be pictured without knowing Polish, once`() {
-        // A numeral stands for its number and nothing else.
+        // A numeral stands for its number and nothing else, and a sign for its sum: plus, minus, equals.
         val numerals = course.pictures.filterValues { it is Picture.Glyph }
         numerals.forEach { (item, picture) ->
             val text = (picture as Picture.Glyph).text
-            assertTrue(text == "+" || text.toIntOrNull() != null, "$item is drawn as \"$text\"")
+            assertTrue(text in setOf("+", "−", "=") || text.toIntOrNull() != null, "$item is drawn as \"$text\"")
         }
         assertEquals(numerals.size, numerals.values.toSet().size)
     }

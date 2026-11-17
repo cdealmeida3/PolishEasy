@@ -3,7 +3,8 @@
     "a1/unit-01/items.json",
     "a1/unit-02/items.json",
     "a1/unit-03/items.json",
-    "kpk1/lesson-00/items.json"
+    "kpk1/lesson-00/items.json",
+    "kpk1/lesson-01/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -14,7 +15,9 @@
   "listening": "kpk1/listening.json",
   "chats": [
     "kpk1/chats/school-office.json",
-    "kpk1/chats/new-classmate.json"
+    "kpk1/chats/new-classmate.json",
+    "kpk1/chats/front-desk.json",
+    "kpk1/chats/in-class.json"
   ],
   "levels": [
     {
@@ -131,7 +134,25 @@
               "liczebniki 0–10"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-01/section-a1.json",
+            "kpk1/lesson-01/section-a2.json",
+            "kpk1/lesson-01/section-b.json",
+            "kpk1/lesson-01/section-c.json",
+            "kpk1/lesson-01/section-d.json",
+            "kpk1/lesson-01/section-e.json",
+            "kpk1/lesson-01/section-f1.json",
+            "kpk1/lesson-01/section-f2.json",
+            "kpk1/lesson-01/section-g.json"
+          ],
+          "lookUp": [
+            "milo-mi",
+            "mnie-rowniez",
+            "nie-rozumiem",
+            "nie-pamietam",
+            "nie-wiem",
+            "co-to-znaczy"
+          ]
         },
         {
           "id": "kpk1-l02",

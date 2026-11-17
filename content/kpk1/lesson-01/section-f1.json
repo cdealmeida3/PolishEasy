@@ -1,0 +1,300 @@
+{
+  "id": "kpk1-l01-f1",
+  "section": {
+    "letter": "F",
+    "heading": "Liczebniki 0–10",
+    "meaning": {
+      "en": "Numbers 0 to 10"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l01-f1-t01",
+      "before": "kpk1-l01-f1-e01",
+      "title": {
+        "en": "Zero to five"
+      },
+      "body": {
+        "en": "*Zero, jeden, dwa, trzy, cztery, pięć*. *Cz* in *cztery* is like English ch in church, and *rz* in *trzy* is like sh after the t. *Plus* and *minus* are as in English, and *to* or *jest* gives the answer: *dwa plus trzy to pięć*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f1-e01",
+      "prompt": "zero",
+      "options": [
+        {
+          "en": "zero"
+        },
+        {
+          "en": "two"
+        },
+        {
+          "en": "ten"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zero"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f1-e02",
+      "prompt": "jeden",
+      "options": [
+        {
+          "en": "four"
+        },
+        {
+          "en": "three"
+        },
+        {
+          "en": "one"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jeden"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f1-e03",
+      "prompt": "dwa",
+      "options": [
+        {
+          "en": "two"
+        },
+        {
+          "en": "three"
+        },
+        {
+          "en": "ten"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dwa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f1-e04",
+      "prompt": "trzy",
+      "options": [
+        {
+          "en": "four"
+        },
+        {
+          "en": "three"
+        },
+        {
+          "en": "five"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "trzy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-f1-e05",
+      "text": "trzy",
+      "meaning": {
+        "en": "three"
+      },
+      "distractors": [
+        "cztery",
+        "pięć"
+      ],
+      "items": [
+        "trzy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f1-e06",
+      "prompt": "cztery",
+      "options": [
+        {
+          "en": "four"
+        },
+        {
+          "en": "one"
+        },
+        {
+          "en": "five"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cztery"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f1-e07",
+      "prompt": "pięć",
+      "options": [
+        {
+          "en": "six"
+        },
+        {
+          "en": "four"
+        },
+        {
+          "en": "five"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "piec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f1-e08",
+      "prompt": "minus",
+      "options": [
+        {
+          "en": "minus"
+        },
+        {
+          "en": "plus"
+        },
+        {
+          "en": "equals"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "minus"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-f1-e09",
+      "prompt": {
+        "en": "two plus three is five"
+      },
+      "acceptedAnswers": [
+        "dwa plus trzy to pięć",
+        "dwa plus trzy jest pięć",
+        "dwa plus trzy to jest pięć",
+        "dwa plus trzy równa się pięć"
+      ],
+      "items": [
+        "dwa",
+        "plus",
+        "trzy",
+        "to",
+        "piec"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-f1-e10",
+      "prompt": {
+        "en": "five minus one is four"
+      },
+      "acceptedAnswers": [
+        "pięć minus jeden to cztery",
+        "pięć minus jeden jest cztery",
+        "pięć minus jeden to jest cztery"
+      ],
+      "distractors": [
+        "jest",
+        "plus"
+      ],
+      "items": [
+        "piec",
+        "minus",
+        "jeden",
+        "to",
+        "cztery"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-f1-e11",
+      "text": "cztery minus dwa to dwa",
+      "meaning": {
+        "en": "four minus two is two"
+      },
+      "distractors": [
+        "cztery plus dwa to sześć",
+        "trzy minus dwa to jeden"
+      ],
+      "items": [
+        "cztery",
+        "minus",
+        "dwa",
+        "to"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l01-f1-e12",
+      "acceptedAnswers": [
+        "zero, jeden, dwa"
+      ],
+      "meaning": {
+        "en": "zero, one, two"
+      },
+      "items": [
+        "zero",
+        "jeden",
+        "dwa"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-f1-e13",
+      "prompt": {
+        "en": "four minus four is zero"
+      },
+      "acceptedAnswers": [
+        "cztery minus cztery to zero",
+        "cztery minus cztery jest zero",
+        "cztery minus cztery to jest zero",
+        "cztery minus cztery równa się zero"
+      ],
+      "items": [
+        "cztery",
+        "minus",
+        "to",
+        "zero"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-f1-e14",
+      "prompt": {
+        "en": "three plus one is four"
+      },
+      "acceptedAnswers": [
+        "trzy plus jeden to cztery",
+        "trzy plus jeden jest cztery",
+        "trzy plus jeden to jest cztery"
+      ],
+      "distractors": [
+        "jest",
+        "minus"
+      ],
+      "items": [
+        "trzy",
+        "plus",
+        "jeden",
+        "to",
+        "cztery"
+      ]
+    }
+  ]
+}

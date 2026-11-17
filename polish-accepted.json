@@ -7,6 +7,10 @@
     {
       "problem": "dictionary: dzi",
       "reason": "Not a word and not meant as one. The Tip on ź and dź marks \"zi\" and \"dzi\" as the Polish spellings of those sounds before a vowel; \"dzi\" is three letters long, so the dictionary pass takes it for a word."
+    },
+    {
+      "problem": "review: kpk1-l01-e-t02",
+      "reason": "False alarm. ZAPAMIETAJ is not in the Tip: the review text names the Tip's kind (a Zapamiętaj! callout) with the engine's enum name, which has no Polish letters. The Tip's own Polish had no finding."
     }
   ]
 }

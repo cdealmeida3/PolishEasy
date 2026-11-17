@@ -1,0 +1,363 @@
+{
+  "id": "kpk1-l01-b",
+  "section": {
+    "letter": "B",
+    "heading": "Alfabet",
+    "meaning": {
+      "en": "The alphabet"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l01-b-t01",
+      "before": "kpk1-l01-b-e01",
+      "title": {
+        "en": "The Polish alphabet"
+      },
+      "body": {
+        "en": "The *alfabet* has 32 letters. Nine of them carry a mark: *ą ć ę ł ń ó ś ź ż*. There is no *q*, *v* or *x* in Polish words. Two letters can make one sound: *sz*, *cz*, *rz*, *ch*, *dz*, *dź*, *dż*."
+      }
+    },
+    {
+      "id": "kpk1-l01-b-t02",
+      "before": "kpk1-l01-b-e09",
+      "title": {
+        "en": "Spelling a word"
+      },
+      "body": {
+        "en": "Asked *proszę przeliterować*, say each letter of the word: *dom* is d, o, m. Letters with a mark are said with their mark: *ł* is not *l*, and *ó* sounds the same as *u*. *Rz* and *ż* sound the same too, so a word is often spelled to be sure."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-b-e01",
+      "prompt": "alfabet",
+      "options": [
+        {
+          "en": "the alphabet"
+        },
+        {
+          "en": "a language"
+        },
+        {
+          "en": "a book"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "alfabet"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-b-e02",
+      "prompt": "szkoła",
+      "options": [
+        {
+          "en": "a restaurant"
+        },
+        {
+          "en": "a school"
+        },
+        {
+          "en": "a book"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szkola"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-b-e03",
+      "prompt": {
+        "en": "this is a school"
+      },
+      "acceptedAnswers": [
+        "to jest szkoła",
+        "to szkoła"
+      ],
+      "distractors": [
+        "nie",
+        "pan"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "szkola"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-b-e04",
+      "prompt": "książka",
+      "options": [
+        {
+          "en": "a pen"
+        },
+        {
+          "en": "a school"
+        },
+        {
+          "en": "a book"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ksiazka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-b-e05",
+      "text": "książka",
+      "meaning": {
+        "en": "a book"
+      },
+      "distractors": [
+        "szkoła",
+        "język"
+      ],
+      "items": [
+        "ksiazka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-b-e06",
+      "prompt": "długopis",
+      "options": [
+        {
+          "en": "a pen"
+        },
+        {
+          "en": "a computer"
+        },
+        {
+          "en": "a book"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dlugopis"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-b-e07",
+      "prompt": {
+        "en": "a book and a pen"
+      },
+      "acceptedAnswers": [
+        "książka i długopis",
+        "długopis i książka"
+      ],
+      "distractors": [
+        "szkoła",
+        "tak"
+      ],
+      "items": [
+        "ksiazka",
+        "i",
+        "dlugopis"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-b-e08",
+      "prompt": "język",
+      "options": [
+        {
+          "en": "the alphabet"
+        },
+        {
+          "en": "a language"
+        },
+        {
+          "en": "a school"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jezyk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-b-e09",
+      "prompt": "przeliterować",
+      "options": [
+        {
+          "en": "repeat"
+        },
+        {
+          "en": "translate"
+        },
+        {
+          "en": "spell (letter by letter)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przeliterowac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-b-e10",
+      "prompt": {
+        "en": "a pen"
+      },
+      "acceptedAnswers": [
+        "długopis"
+      ],
+      "items": [
+        "dlugopis"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-b-e11",
+      "prompt": "komputer",
+      "options": [
+        {
+          "en": "a restaurant"
+        },
+        {
+          "en": "a computer"
+        },
+        {
+          "en": "a pen"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "komputer"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l01-b-e12",
+      "acceptedAnswers": [
+        "to jest komputer"
+      ],
+      "meaning": {
+        "en": "this is a computer"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "komputer"
+      ],
+      "readingAnswers": [
+        "to komputer"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-b-e13",
+      "prompt": "restauracja",
+      "options": [
+        {
+          "en": "a restaurant"
+        },
+        {
+          "en": "a school"
+        },
+        {
+          "en": "a language"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "restauracja"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-b-e14",
+      "text": "restauracja",
+      "meaning": {
+        "en": "a restaurant"
+      },
+      "distractors": [
+        "lekcja",
+        "szkoła"
+      ],
+      "items": [
+        "restauracja"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-b-e15",
+      "prompt": {
+        "en": "spell \"szkoła\", please"
+      },
+      "acceptedAnswers": [
+        "proszę przeliterować „szkoła”"
+      ],
+      "distractors": [
+        "przeczytać",
+        "język"
+      ],
+      "items": [
+        "prosze",
+        "przeliterowac",
+        "szkola"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-b-e16",
+      "prompt": {
+        "en": "this is the alphabet"
+      },
+      "acceptedAnswers": [
+        "to jest alfabet",
+        "to alfabet"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "alfabet"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-b-e17",
+      "text": "język",
+      "meaning": {
+        "en": "a language"
+      },
+      "distractors": [
+        "książka",
+        "szkoła"
+      ],
+      "items": [
+        "jezyk"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-b-e18",
+      "text": "alfabet",
+      "meaning": {
+        "en": "the alphabet"
+      },
+      "distractors": [
+        "restauracja",
+        "komputer"
+      ],
+      "items": [
+        "alfabet"
+      ]
+    }
+  ]
+}

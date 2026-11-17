@@ -1,0 +1,292 @@
+{
+  "id": "kpk1-l01-f2",
+  "section": {
+    "letter": "F",
+    "heading": "Liczebniki 0–10",
+    "meaning": {
+      "en": "Numbers 0 to 10"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l01-f2-t01",
+      "before": "kpk1-l01-f2-e01",
+      "title": {
+        "en": "Six to ten"
+      },
+      "body": {
+        "en": "*Sześć, siedem, osiem, dziewięć, dziesięć*. *Ś* and *ć* are soft, like *s* and *ch* said with a smile. In maths, *równa się* means equals: *cztery plus pięć równa się dziewięć*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f2-e01",
+      "prompt": "sześć",
+      "options": [
+        {
+          "en": "six"
+        },
+        {
+          "en": "seven"
+        },
+        {
+          "en": "eight"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "szesc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f2-e02",
+      "prompt": "siedem",
+      "options": [
+        {
+          "en": "six"
+        },
+        {
+          "en": "seven"
+        },
+        {
+          "en": "eight"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "siedem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f2-e03",
+      "prompt": "osiem",
+      "options": [
+        {
+          "en": "nine"
+        },
+        {
+          "en": "eight"
+        },
+        {
+          "en": "seven"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "osiem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-f2-e04",
+      "text": "osiem",
+      "meaning": {
+        "en": "eight"
+      },
+      "distractors": [
+        "siedem",
+        "sześć"
+      ],
+      "items": [
+        "osiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f2-e05",
+      "prompt": "dziewięć",
+      "options": [
+        {
+          "en": "nine"
+        },
+        {
+          "en": "ten"
+        },
+        {
+          "en": "six"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dziewiec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f2-e06",
+      "prompt": "dziesięć",
+      "options": [
+        {
+          "en": "nine"
+        },
+        {
+          "en": "six"
+        },
+        {
+          "en": "ten"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dziesiec"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-f2-e07",
+      "text": "dziesięć",
+      "meaning": {
+        "en": "ten"
+      },
+      "distractors": [
+        "dziewięć",
+        "sześć"
+      ],
+      "items": [
+        "dziesiec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l01-f2-e08",
+      "prompt": "równa się",
+      "options": [
+        {
+          "en": "equals"
+        },
+        {
+          "en": "minus"
+        },
+        {
+          "en": "plus"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rowna-sie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-f2-e09",
+      "prompt": {
+        "en": "four plus five equals nine"
+      },
+      "acceptedAnswers": [
+        "cztery plus pięć równa się dziewięć",
+        "cztery plus pięć to dziewięć",
+        "cztery plus pięć jest dziewięć",
+        "cztery plus pięć to jest dziewięć"
+      ],
+      "distractors": [
+        "to",
+        "jest"
+      ],
+      "items": [
+        "cztery",
+        "plus",
+        "piec",
+        "rowna-sie",
+        "dziewiec"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-f2-e10",
+      "prompt": {
+        "en": "ten minus three equals seven"
+      },
+      "acceptedAnswers": [
+        "dziesięć minus trzy równa się siedem",
+        "dziesięć minus trzy to siedem",
+        "dziesięć minus trzy jest siedem",
+        "dziesięć minus trzy to jest siedem"
+      ],
+      "items": [
+        "dziesiec",
+        "minus",
+        "trzy",
+        "rowna-sie",
+        "siedem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l01-f2-e11",
+      "text": "osiem minus dwa równa się sześć",
+      "meaning": {
+        "en": "eight minus two equals six"
+      },
+      "distractors": [
+        "osiem plus dwa równa się dziesięć",
+        "siedem minus dwa równa się pięć"
+      ],
+      "items": [
+        "osiem",
+        "minus",
+        "dwa",
+        "rowna-sie",
+        "szesc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l01-f2-e12",
+      "acceptedAnswers": [
+        "sześć, siedem, osiem"
+      ],
+      "meaning": {
+        "en": "six, seven, eight"
+      },
+      "items": [
+        "szesc",
+        "siedem",
+        "osiem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l01-f2-e13",
+      "prompt": {
+        "en": "six plus three equals nine"
+      },
+      "acceptedAnswers": [
+        "sześć plus trzy równa się dziewięć",
+        "sześć plus trzy to dziewięć",
+        "sześć plus trzy jest dziewięć",
+        "sześć plus trzy to jest dziewięć"
+      ],
+      "distractors": [
+        "to",
+        "jest"
+      ],
+      "items": [
+        "szesc",
+        "plus",
+        "trzy",
+        "rowna-sie",
+        "dziewiec"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l01-f2-e14",
+      "prompt": {
+        "en": "ten"
+      },
+      "acceptedAnswers": [
+        "dziesięć"
+      ],
+      "items": [
+        "dziesiec"
+      ]
+    }
+  ]
+}

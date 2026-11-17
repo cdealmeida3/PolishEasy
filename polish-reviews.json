@@ -1,6 +1,13 @@
 {
     "sentences": [
         {
+            "text": "9"
+        },
+        {
+            "text": "A gdzie jest kawa?",
+            "meaning": "Thank you! And where is the coffee?"
+        },
+        {
             "text": "A to jest Anna, studentka."
         },
         {
@@ -82,6 +89,13 @@
             "meaning": "My first name is Adam."
         },
         {
+            "text": "Adres."
+        },
+        {
+            "text": "Alfabet",
+            "meaning": "The alphabet"
+        },
+        {
             "text": "Angielką",
             "meaning": "English (a woman, after jestem, jesteś, jest)"
         },
@@ -94,8 +108,30 @@
             "meaning": "Anna is a student."
         },
         {
+            "text": "Bardzo mi miło."
+        },
+        {
             "text": "Bardzo przepraszamy.",
             "meaning": "We are very sorry."
+        },
+        {
+            "text": "Co mówi Mami na „miło mi”?",
+            "meaning": "What does Mami say to “miło mi”?"
+        },
+        {
+            "text": "Co mówi pani na początku?",
+            "meaning": "What does the woman say first?"
+        },
+        {
+            "text": "Co to jest program kulturalny?",
+            "meaning": "What is a cultural programme?"
+        },
+        {
+            "text": "Co to znaczy „ćwiczenie”?"
+        },
+        {
+            "text": "Co trzeba przeliterować?",
+            "meaning": "What has to be spelled?"
         },
         {
             "text": "Cześć!",
@@ -110,8 +146,20 @@
             "meaning": "Bye! See you tomorrow!"
         },
         {
+            "text": "Cześć! Gdzie jest toaleta?",
+            "meaning": "Hi! Where is the toilet?"
+        },
+        {
+            "text": "Cześć! Jak masz na imię?",
+            "meaning": "Hi! What's your name?"
+        },
+        {
             "text": "Cześć! Jestem Adam.",
             "meaning": "Hi! I'm Adam."
+        },
+        {
+            "text": "Cześć! Jestem Adam.",
+            "meaning": "Hi! My name is Adam."
         },
         {
             "text": "Cześć! Jestem Ewa. A ty?",
@@ -120,6 +168,19 @@
         {
             "text": "Cześć! Mam na imię Adam.",
             "meaning": "Hi! I'm Adam."
+        },
+        {
+            "text": "Cześć! Mam na imię Adam.",
+            "meaning": "Hi! My name is Adam."
+        },
+        {
+            "text": "Cześć, jestem Adam."
+        },
+        {
+            "text": "Cześć, jestem Ewa, a ty?"
+        },
+        {
+            "text": "Cześć."
         },
         {
             "text": "Czy macie czas?",
@@ -162,12 +223,23 @@
             "meaning": "Thank you! Goodbye!"
         },
         {
+            "text": "Do widzenia.",
+            "meaning": "Thank you, same to you! Goodbye."
+        },
+        {
             "text": "Do zobaczenia!",
             "meaning": "Bye! See you tomorrow!"
         },
         {
             "text": "Dobranoc!",
             "meaning": "Good night!"
+        },
+        {
+            "text": "Dobranoc! Gdzie jest toaleta?",
+            "meaning": "Good night! Where is the toilet?"
+        },
+        {
+            "text": "Dobranoc."
         },
         {
             "text": "Dobrze!",
@@ -178,12 +250,28 @@
             "meaning": "All right! See you!"
         },
         {
+            "text": "Dobrze! Na razie, do jutra!",
+            "meaning": "Good! See you tomorrow!"
+        },
+        {
             "text": "Dobrze, dziękuję.",
             "meaning": "Fine, thank you."
         },
         {
             "text": "Dobrze, na razie!",
             "meaning": "All right! See you!"
+        },
+        {
+            "text": "Dwa plus trzy równa się cztery.",
+            "meaning": "Two plus three equals four."
+        },
+        {
+            "text": "Dwa plus trzy równa się pięć.",
+            "meaning": "Two plus three equals five."
+        },
+        {
+            "text": "Dwa plus trzy równa się sześć.",
+            "meaning": "Two plus three equals six."
         },
         {
             "text": "Dwadzieścia lat.",
@@ -194,8 +282,31 @@
             "meaning": "I'm twenty years old."
         },
         {
+            "text": "Dziesięć minus cztery równa się pięć.",
+            "meaning": "Ten minus four equals five."
+        },
+        {
+            "text": "Dziesięć minus cztery równa się sześć.",
+            "meaning": "Ten minus four equals six."
+        },
+        {
+            "text": "Dziesięć plus cztery równa się sześć.",
+            "meaning": "Ten plus four equals six."
+        },
+        {
             "text": "Dzień dobry!",
             "meaning": "Good morning!"
+        },
+        {
+            "text": "Dzień dobry! Gdzie jest toaleta?",
+            "meaning": "Good morning! Excuse me, where is the toilet?"
+        },
+        {
+            "text": "Dzień dobry! Jak się pan nazywa?"
+        },
+        {
+            "text": "Dzień dobry! Jak się pani nazywa?",
+            "meaning": "Good morning! What is your name, madam?"
         },
         {
             "text": "Dzień dobry! Nazywam się Adam.",
@@ -205,27 +316,70 @@
             "text": "Dzień dobry! Proszę imię i nazwisko."
         },
         {
+            "text": "Dzień dobry! Przepraszam, gdzie jest toaleta?",
+            "meaning": "Good morning! Excuse me, where is the toilet?"
+        },
+        {
             "text": "Dzień dobry! Słucham.",
             "meaning": "Good morning! How can I help?"
+        },
+        {
+            "text": "Dzień dobry."
+        },
+        {
+            "text": "Dzień dobry. Nazywam się Adam.",
+            "meaning": "Good morning. My name is Adam."
+        },
+        {
+            "text": "Dzięki! A gdzie jest kawa?",
+            "meaning": "Thanks! And where is the coffee?"
+        },
+        {
+            "text": "Dzięki! Ile to jest: dwa plus trzy?",
+            "meaning": "Thanks! How much is two plus three?"
         },
         {
             "text": "Dziękuję bardzo! Do widzenia!",
             "meaning": "Thank you! Goodbye!"
         },
         {
+            "text": "Dziękuję bardzo.",
+            "meaning": "I understand! Thank you very much."
+        },
+        {
+            "text": "Dziękuję! A gdzie jest kawa?",
+            "meaning": "Thank you! And where is the coffee?"
+        },
+        {
             "text": "Dziękuję! Do widzenia!",
             "meaning": "Thank you! Goodbye!"
+        },
+        {
+            "text": "Dziękuję! Gdzie jest kawa?",
+            "meaning": "Thank you! And where is the coffee?"
         },
         {
             "text": "Dziękuję, do widzenia!",
             "meaning": "Thank you! Goodbye!"
         },
         {
+            "text": "Dziękuję, nawzajem! Do widzenia.",
+            "meaning": "Thank you, same to you! Goodbye."
+        },
+        {
             "text": "Dziękuję, nawzajem.",
             "meaning": "Thank you, likewise."
         },
         {
+            "text": "Dziękuję, nawzajem.",
+            "meaning": "Thank you, same to you! Goodbye."
+        },
+        {
             "text": "Dziękuję."
+        },
+        {
+            "text": "Dziękuję. A gdzie jest kawa?",
+            "meaning": "Thank you! And where is the coffee?"
         },
         {
             "text": "Dziękuję. Wszystko w porządku. Do widzenia!",
@@ -251,6 +405,25 @@
             "meaning": "Ewa is a teacher."
         },
         {
+            "text": "Film, spotkanie."
+        },
+        {
+            "text": "Gdzie jest mój długopis?",
+            "meaning": "Where is my pen?"
+        },
+        {
+            "text": "Gdzie jest toaleta?",
+            "meaning": "Good morning! Excuse me, where is the toilet?"
+        },
+        {
+            "text": "Gdzie jest woda?",
+            "meaning": "Where is the water?"
+        },
+        {
+            "text": "Gdzie jest…?",
+            "meaning": "Where is…?"
+        },
+        {
             "text": "Ile ma pan lat?",
             "meaning": "How old are you? (to a man)"
         },
@@ -267,20 +440,50 @@
             "meaning": "How old are you? (to a friend)"
         },
         {
+            "text": "Imię i nazwisko."
+        },
+        {
             "text": "Ja jestem z Anglii.",
             "meaning": "I'm from England."
+        },
+        {
+            "text": "Jak ma na imię kolega Angeli?",
+            "meaning": "What is Angela's classmate called?"
         },
         {
             "text": "Jak ma na imię twoja żona?",
             "meaning": "What is your wife's first name? (to one friend)"
         },
         {
+            "text": "Jak on się nazywa?",
+            "meaning": "What is his surname?"
+        },
+        {
             "text": "Jak pan ma na imię?",
             "meaning": "What is your first name? (to a man)"
         },
         {
+            "text": "Jak się pan nazywa?"
+        },
+        {
+            "text": "Jak to jest po polsku?",
+            "meaning": "What is that word in Polish?"
+        },
+        {
+            "text": "Jakie słowo trzeba przeliterować?",
+            "meaning": "Which word has to be spelled?"
+        },
+        {
+            "text": "Jest tam, na lewo.",
+            "meaning": "Your pen is over there, on the left."
+        },
+        {
             "text": "Jestem Adam.",
             "meaning": "Hi! I'm Adam."
+        },
+        {
+            "text": "Jestem Adam.",
+            "meaning": "Hi! My name is Adam."
         },
         {
             "text": "Jestem Adam.",
@@ -299,6 +502,39 @@
             "meaning": "I'm from Poland. Do you speak Polish?"
         },
         {
+            "text": "Kawa i woda są tam, na prawo.",
+            "meaning": "The coffee and the water are over there, on the right."
+        },
+        {
+            "text": "Kawa jest tam, na prawo.",
+            "meaning": "The coffee is over there, on the right."
+        },
+        {
+            "text": "Kawa jest tu.",
+            "meaning": "The coffee is here."
+        },
+        {
+            "text": "Kawa, herbata."
+        },
+        {
+            "text": "Klasa, prezentacja",
+            "meaning": "In class: introducing yourself"
+        },
+        {
+            "text": "Kolega mówi: „Miło mi cię poznać”.",
+            "meaning": "The classmate says “miło mi cię poznać”."
+        },
+        {
+            "text": "Książka."
+        },
+        {
+            "text": "Liczebniki 0–10",
+            "meaning": "Numbers 0 to 10"
+        },
+        {
+            "text": "Login i hasło."
+        },
+        {
             "text": "Mam dwa lata.",
             "meaning": "I'm two years old."
         },
@@ -307,8 +543,16 @@
             "meaning": "I'm twenty years old."
         },
         {
+            "text": "Mam dwadzieścia lat.",
+            "meaning": "I'm twenty."
+        },
+        {
             "text": "Mam na imię Adam.",
             "meaning": "Hi! I'm Adam."
+        },
+        {
+            "text": "Mam na imię Adam.",
+            "meaning": "Hi! My name is Adam."
         },
         {
             "text": "Mam na imię Adam.",
@@ -319,12 +563,38 @@
             "meaning": "Have a nice day!"
         },
         {
+            "text": "Miło mi cię poznać, Adam!",
+            "meaning": "Nice to meet you, Adam!"
+        },
+        {
+            "text": "Miło mi cię poznać."
+        },
+        {
+            "text": "Miło mi panią poznać.",
+            "meaning": "Nice to meet you, madam."
+        },
+        {
             "text": "Miło mi! Jesteś z Polski?",
             "meaning": "Nice to meet you! Are you from Poland?"
         },
         {
             "text": "Miło mi, jestem Adam.",
             "meaning": "Nice to meet you, I am Adam."
+        },
+        {
+            "text": "Miło mi.",
+            "meaning": "Me too!"
+        },
+        {
+            "text": "Mnie również!",
+            "meaning": "Me too!"
+        },
+        {
+            "text": "Mnie również."
+        },
+        {
+            "text": "Mnie również. Miło mi.",
+            "meaning": "Me too!"
         },
         {
             "text": "Moja babcia ma na imię Ewa.",
@@ -351,6 +621,10 @@
             "meaning": "My brother's first name is Adam."
         },
         {
+            "text": "Mój długopis jest tam, na lewo.",
+            "meaning": "My pen is over there, on the left."
+        },
+        {
             "text": "Mój syn ma rok.",
             "meaning": "My son is one year old."
         },
@@ -363,12 +637,60 @@
             "meaning": "Yes, a little."
         },
         {
+            "text": "Na lewo.",
+            "meaning": "Your pen is over there, on the left."
+        },
+        {
+            "text": "Na lewo?",
+            "meaning": "On the left?"
+        },
+        {
             "text": "Na razie!",
             "meaning": "Bye! See you tomorrow!"
         },
         {
+            "text": "Na razie! Do jutra!",
+            "meaning": "Bye! See you tomorrow!"
+        },
+        {
+            "text": "Nawzajem! Do widzenia.",
+            "meaning": "Thank you, same to you! Goodbye."
+        },
+        {
             "text": "Nazywam się Adam.",
             "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Nie ma za co.",
+            "meaning": "You're welcome."
+        },
+        {
+            "text": "Nie ma za co. A gdzie jest kawa?",
+            "meaning": "You're welcome. And where is the coffee?"
+        },
+        {
+            "text": "Nie ma za co. Miłego dnia!",
+            "meaning": "You're welcome. Have a nice day!"
+        },
+        {
+            "text": "Nie pamiętam.",
+            "meaning": "I don't remember."
+        },
+        {
+            "text": "Nie rozumiem! Proszę powtórzyć!",
+            "meaning": "I don't understand! Repeat, please!"
+        },
+        {
+            "text": "Nie rozumiem.",
+            "meaning": "Sorry, I don't understand. Please repeat."
+        },
+        {
+            "text": "Nie rozumiem. Proszę powtórzyć.",
+            "meaning": "Sorry, I don't understand. Please repeat."
+        },
+        {
+            "text": "Nie wiem.",
+            "meaning": "I don't know."
         },
         {
             "text": "Nie, jestem z Anglii.",
@@ -391,6 +713,17 @@
             "meaning": "No, I'm from England. And you?"
         },
         {
+            "text": "Numer telefonu."
+        },
+        {
+            "text": "O co pyta student?",
+            "meaning": "What does the student ask?"
+        },
+        {
+            "text": "Ona jest Japonką.",
+            "meaning": "She is Japanese."
+        },
+        {
             "text": "Ona jest z Polski.",
             "meaning": "She is from Poland."
         },
@@ -411,6 +744,10 @@
             "meaning": "Bye! See you tomorrow!"
         },
         {
+            "text": "Pięć.",
+            "meaning": "Two plus three equals five."
+        },
+        {
             "text": "Polakiem",
             "meaning": "Polish (a man, after jestem, jesteś, jest)"
         },
@@ -426,8 +763,16 @@
             "text": "Polski"
         },
         {
+            "text": "Powitania i pożegnania",
+            "meaning": "Hello and goodbye"
+        },
+        {
             "text": "Prawda czy nieprawda?",
             "meaning": "True or false?"
+        },
+        {
+            "text": "Proszę bardzo.",
+            "meaning": "Here you are."
         },
         {
             "text": "Proszę napisać po polsku.",
@@ -458,6 +803,10 @@
             "meaning": "Spell the surname, please."
         },
         {
+            "text": "Proszę przeliterować „książka”.",
+            "meaning": "Spell \"książka\", please."
+        },
+        {
             "text": "Proszę przetłumaczyć.",
             "meaning": "Translate."
         },
@@ -486,12 +835,58 @@
             "meaning": "Please, thank you, sorry"
         },
         {
+            "text": "Przepraszam, gdzie jest toaleta?",
+            "meaning": "Good morning! Excuse me, where is the toilet?"
+        },
+        {
+            "text": "Przepraszam, nie rozumiem.",
+            "meaning": "Sorry, I don't understand. Please repeat."
+        },
+        {
+            "text": "Przepraszam, nie rozumiem. Proszę powtórzyć.",
+            "meaning": "Sorry, I don't understand. Please repeat."
+        },
+        {
+            "text": "Rozumiem! Dziękuję bardzo.",
+            "meaning": "I understand! Thank you very much."
+        },
+        {
+            "text": "Rozumiem, dziękuję.",
+            "meaning": "I understand! Thank you very much."
+        },
+        {
+            "text": "Rozumiem. Dziękuję bardzo.",
+            "meaning": "I understand! Thank you very much."
+        },
+        {
+            "text": "Równa się pięć.",
+            "meaning": "Two plus three equals five."
+        },
+        {
+            "text": "Równa się sześć.",
+            "meaning": "Ten minus four equals six."
+        },
+        {
+            "text": "Sekretariat, prezentacja",
+            "meaning": "At the school office: introducing yourself"
+        },
+        {
             "text": "Skąd pan jest?",
             "meaning": "Where are you from? (to a man)"
         },
         {
             "text": "Smacznego!",
             "meaning": "Enjoy your meal!"
+        },
+        {
+            "text": "Stein"
+        },
+        {
+            "text": "Sześć.",
+            "meaning": "Ten minus four equals six."
+        },
+        {
+            "text": "Szkoła."
         },
         {
             "text": "Tak, jestem z Anglii.",
@@ -514,10 +909,55 @@
             "meaning": "Yes, a little."
         },
         {
+            "text": "Tam, na lewo.",
+            "meaning": "Your pen is over there, on the left."
+        },
+        {
+            "text": "Tam."
+        },
+        {
             "text": "To jest Adam, student."
         },
         {
             "text": "To jest Ewa, nauczycielka."
+        },
+        {
+            "text": "To jest pięć.",
+            "meaning": "Two plus three equals five."
+        },
+        {
+            "text": "To jest rozmowa formalna.",
+            "meaning": "This is a formal conversation."
+        },
+        {
+            "text": "To jest sześć.",
+            "meaning": "Ten minus four equals six."
+        },
+        {
+            "text": "Toaleta jest na lewo.",
+            "meaning": "The toilet is on the left."
+        },
+        {
+            "text": "Toaleta jest na prawo.",
+            "meaning": "The toilet is on the right."
+        },
+        {
+            "text": "Toaleta jest tam, na lewo.",
+            "meaning": "The toilet is over there, on the left."
+        },
+        {
+            "text": "Toaleta jest tutaj.",
+            "meaning": "The toilet is here."
+        },
+        {
+            "text": "Toaleta."
+        },
+        {
+            "text": "Tom"
+        },
+        {
+            "text": "Tom mówi: „Dzień dobry”.",
+            "meaning": "Tom says “dzień dobry”."
         },
         {
             "text": "Trochę mówię po polsku.",
@@ -536,12 +976,27 @@
             "meaning": "A little. And do you speak English?"
         },
         {
+            "text": "Tu."
+        },
+        {
+            "text": "Tutaj jest internet.",
+            "meaning": "There is internet here."
+        },
+        {
             "text": "Twoja córka jest tutaj.",
             "meaning": "Your daughter is here. (to one friend)"
         },
         {
+            "text": "Twoja książka jest tam.",
+            "meaning": "Your book is over there."
+        },
+        {
             "text": "Twoje dziecko ma pytanie.",
             "meaning": "Your child has a question. (to one friend)"
+        },
+        {
+            "text": "Twój długopis jest tam, na lewo.",
+            "meaning": "Your pen is over there, on the left."
         },
         {
             "text": "Ty jesteś Ewa?",
@@ -550,6 +1005,10 @@
         {
             "text": "Ty jesteś z Anglii?",
             "meaning": "Are you from England? (one friend)"
+        },
+        {
+            "text": "Ulica Spacerowa: jaki numer?",
+            "meaning": "Spacerowa Street: what number?"
         },
         {
             "text": "W klasie",
@@ -566,6 +1025,17 @@
         {
             "text": "W szkole",
             "meaning": "At school"
+        },
+        {
+            "text": "Woda jest na prawo.",
+            "meaning": "The water is on the right."
+        },
+        {
+            "text": "Woda jest tam, na prawo."
+        },
+        {
+            "text": "Woda jest tu.",
+            "meaning": "The water is here."
         },
         {
             "text": "Wy jesteście z Polski?",
@@ -596,6 +1066,10 @@
             "meaning": "but"
         },
         {
+            "text": "alfabet",
+            "meaning": "the alphabet"
+        },
+        {
             "text": "babcia",
             "meaning": "grandma"
         },
@@ -613,6 +1087,18 @@
         {
             "text": "bardzo mi miło",
             "meaning": "nice to meet you"
+        },
+        {
+            "text": "bardzo mi miło",
+            "meaning": "nice to meet you (to a friend)"
+        },
+        {
+            "text": "bardzo mi miło",
+            "meaning": "nice to meet you (to a man, formal)"
+        },
+        {
+            "text": "bardzo mi miło",
+            "meaning": "very nice to meet you"
         },
         {
             "text": "barszcz"
@@ -671,6 +1157,10 @@
             "meaning": "how are you?"
         },
         {
+            "text": "co to znaczy?",
+            "meaning": "what does it mean?"
+        },
+        {
             "text": "co u ciebie?",
             "meaning": "how are you?"
         },
@@ -694,8 +1184,24 @@
             "meaning": "bye, see you tomorrow"
         },
         {
+            "text": "cześć, ja jestem Adam, a ty?",
+            "meaning": "hi, I am Adam, and you?"
+        },
+        {
+            "text": "cześć, ja jestem Ewa",
+            "meaning": "hi, I am Ewa"
+        },
+        {
             "text": "cześć, jak się nazywasz?",
             "meaning": "hi, what is your name? (one friend)"
+        },
+        {
+            "text": "cześć, jestem Adam, a ty?",
+            "meaning": "hi, I am Adam, and you?"
+        },
+        {
+            "text": "cześć, jestem Ewa",
+            "meaning": "hi, I am Ewa"
         },
         {
             "text": "cześć, jestem Ewa, a ty?",
@@ -720,6 +1226,45 @@
         {
             "text": "cztery",
             "meaning": "four"
+        },
+        {
+            "text": "cztery minus cztery jest zero",
+            "meaning": "four minus four is zero"
+        },
+        {
+            "text": "cztery minus cztery równa się zero",
+            "meaning": "four minus four is zero"
+        },
+        {
+            "text": "cztery minus cztery to jest zero",
+            "meaning": "four minus four is zero"
+        },
+        {
+            "text": "cztery minus cztery to zero",
+            "meaning": "four minus four is zero"
+        },
+        {
+            "text": "cztery minus dwa to dwa",
+            "meaning": "four minus two is two"
+        },
+        {
+            "text": "cztery plus dwa to sześć"
+        },
+        {
+            "text": "cztery plus pięć jest dziewięć",
+            "meaning": "four plus five equals nine"
+        },
+        {
+            "text": "cztery plus pięć równa się dziewięć",
+            "meaning": "four plus five equals nine"
+        },
+        {
+            "text": "cztery plus pięć to dziewięć",
+            "meaning": "four plus five equals nine"
+        },
+        {
+            "text": "cztery plus pięć to jest dziewięć",
+            "meaning": "four plus five equals nine"
         },
         {
             "text": "cztery, pięć, sześć, siedem",
@@ -797,6 +1342,10 @@
             "meaning": "goodbye"
         },
         {
+            "text": "do widzenia",
+            "meaning": "goodbye (formal)"
+        },
+        {
             "text": "do zobaczenia",
             "meaning": "see you"
         },
@@ -849,6 +1398,14 @@
             "meaning": "fine, thank you, and you? (to a woman, formal)"
         },
         {
+            "text": "dopasować",
+            "meaning": "match"
+        },
+        {
+            "text": "dopasować",
+            "meaning": "to match"
+        },
+        {
             "text": "dwa",
             "meaning": "two"
         },
@@ -871,6 +1428,18 @@
         {
             "text": "dwa plus sześć to jest ile?",
             "meaning": "how much is two plus six?"
+        },
+        {
+            "text": "dwa plus trzy jest pięć",
+            "meaning": "two plus three is five"
+        },
+        {
+            "text": "dwa plus trzy równa się pięć",
+            "meaning": "two plus three is five"
+        },
+        {
+            "text": "dwa plus trzy to jest pięć",
+            "meaning": "two plus three is five"
         },
         {
             "text": "dwa plus trzy to pięć",
@@ -901,7 +1470,27 @@
         },
         {
             "text": "dziesięć",
+            "meaning": "10"
+        },
+        {
+            "text": "dziesięć",
             "meaning": "ten"
+        },
+        {
+            "text": "dziesięć minus trzy jest siedem",
+            "meaning": "ten minus three equals seven"
+        },
+        {
+            "text": "dziesięć minus trzy równa się siedem",
+            "meaning": "ten minus three equals seven"
+        },
+        {
+            "text": "dziesięć minus trzy to jest siedem",
+            "meaning": "ten minus three equals seven"
+        },
+        {
+            "text": "dziesięć minus trzy to siedem",
+            "meaning": "ten minus three equals seven"
         },
         {
             "text": "dziewczyna",
@@ -916,10 +1505,18 @@
         },
         {
             "text": "dziewięć",
+            "meaning": "9"
+        },
+        {
+            "text": "dziewięć",
             "meaning": "nine"
         },
         {
             "text": "dzień"
+        },
+        {
+            "text": "dzień dobry",
+            "meaning": "hello (formal)"
         },
         {
             "text": "dzień dobry",
@@ -993,7 +1590,27 @@
             "meaning": "great, thank you"
         },
         {
+            "text": "długopis",
+            "meaning": "a pen"
+        },
+        {
+            "text": "długopis i książka",
+            "meaning": "a book and a pen"
+        },
+        {
             "text": "dźwięki"
+        },
+        {
+            "text": "gdzie",
+            "meaning": "where"
+        },
+        {
+            "text": "gdzie jest toaleta?",
+            "meaning": "where is the toilet?"
+        },
+        {
+            "text": "gdzie jest woda?",
+            "meaning": "where is the water?"
         },
         {
             "text": "gratulacje",
@@ -1163,8 +1780,40 @@
             "meaning": "what is your first name? (one friend)"
         },
         {
+            "text": "jak masz na imię?",
+            "meaning": "what is your first name? (to a friend)"
+        },
+        {
+            "text": "jak pan ma na imię?",
+            "meaning": "what is your first name? (to a man)"
+        },
+        {
             "text": "jak pan ma na imię?",
             "meaning": "what is your first name? (to a man, formal)"
+        },
+        {
+            "text": "jak pan ma na imię?",
+            "meaning": "what is your name? (to a man, formal)"
+        },
+        {
+            "text": "jak pan się nazywa?",
+            "meaning": "what is your name? (to a man, formal)"
+        },
+        {
+            "text": "jak pani ma na imię?",
+            "meaning": "what is your first name? (to a woman)"
+        },
+        {
+            "text": "jak pani ma na imię?",
+            "meaning": "what is your first name? (to a woman, formal)"
+        },
+        {
+            "text": "jak pani ma na imię?",
+            "meaning": "what is your name? (to a woman, formal)"
+        },
+        {
+            "text": "jak pani się nazywa?",
+            "meaning": "what is your name? (to a woman, formal)"
         },
         {
             "text": "jak się ma?"
@@ -1181,11 +1830,23 @@
             "meaning": "how are you? (one friend)"
         },
         {
+            "text": "jak się mówi",
+            "meaning": "how do you say (jak się mówi po polsku…?: how do you say … in Polish?)"
+        },
+        {
+            "text": "jak się mówi po polsku?",
+            "meaning": "how do you say it in Polish?"
+        },
+        {
             "text": "jak się nazywam?"
         },
         {
             "text": "jak się nazywasz?",
             "meaning": "what are you called? (one friend)"
+        },
+        {
+            "text": "jak się nazywasz?",
+            "meaning": "what is your first name? (one friend)"
         },
         {
             "text": "jak się nazywasz?",
@@ -1196,8 +1857,28 @@
             "meaning": "how are you? (to a man, formal)"
         },
         {
+            "text": "jak się pan nazywa?",
+            "meaning": "what is your name? (to a man, formal)"
+        },
+        {
             "text": "jak się pani ma?",
             "meaning": "how are you? (to a woman, formal)"
+        },
+        {
+            "text": "jak się pani nazywa?",
+            "meaning": "what is your name? (to a woman, formal)"
+        },
+        {
+            "text": "jak się to mówi po polsku?",
+            "meaning": "how do you say it in Polish?"
+        },
+        {
+            "text": "jak to się mówi po polsku?",
+            "meaning": "how do you say it in Polish?"
+        },
+        {
+            "text": "jak ty masz na imię?",
+            "meaning": "what is your first name? (one friend)"
         },
         {
             "text": "jeden",
@@ -1315,6 +1996,22 @@
             "text": "jutra"
         },
         {
+            "text": "język",
+            "meaning": "a language"
+        },
+        {
+            "text": "kawa",
+            "meaning": "coffee"
+        },
+        {
+            "text": "kawa jest tu",
+            "meaning": "the coffee is here"
+        },
+        {
+            "text": "kawa jest tutaj",
+            "meaning": "the coffee is here"
+        },
+        {
             "text": "kolega",
             "meaning": "a classmate (a man)"
         },
@@ -1337,6 +2034,18 @@
         {
             "text": "koleżanka i kolega",
             "meaning": "a classmate (a man) and a classmate (a woman)"
+        },
+        {
+            "text": "komputer",
+            "meaning": "a computer"
+        },
+        {
+            "text": "książka",
+            "meaning": "a book"
+        },
+        {
+            "text": "książka i długopis",
+            "meaning": "a book and a pen"
         },
         {
             "text": "lat",
@@ -1408,12 +2117,24 @@
             "meaning": "I am eleven years old, and you? (one friend)"
         },
         {
+            "text": "mam na imię",
+            "meaning": "my first name is"
+        },
+        {
             "text": "mam na imię Ewa",
             "meaning": "my first name is Ewa"
         },
         {
             "text": "mam osiemnaście lat.",
             "meaning": "I am eighteen years old."
+        },
+        {
+            "text": "mam pytanie, gdzie jest szkoła?",
+            "meaning": "I have a question, where is the school?"
+        },
+        {
+            "text": "mam pytanie: co to znaczy?",
+            "meaning": "I have a question: what does it mean?"
         },
         {
             "text": "mam rodzeństwo, brata i siostrę",
@@ -1474,6 +2195,10 @@
             "meaning": "do you have brothers and sisters? (one friend)"
         },
         {
+            "text": "minus",
+            "meaning": "minus"
+        },
+        {
             "text": "miłego dnia",
             "meaning": "have a nice day"
         },
@@ -1489,8 +2214,35 @@
             "meaning": "nice to meet you"
         },
         {
+            "text": "miło mi",
+            "meaning": "nice to meet you (to a friend)"
+        },
+        {
+            "text": "miło mi",
+            "meaning": "nice to meet you (to a man, formal)"
+        },
+        {
             "text": "miło mi cię poznać",
             "meaning": "nice to meet you"
+        },
+        {
+            "text": "miło mi cię poznać",
+            "meaning": "nice to meet you (to a friend)"
+        },
+        {
+            "text": "miło mi pana poznać",
+            "meaning": "nice to meet you (to a man, formal)"
+        },
+        {
+            "text": "miło mi panią poznać",
+            "meaning": "nice to meet you (to a woman, formal)"
+        },
+        {
+            "text": "mnie"
+        },
+        {
+            "text": "mnie również",
+            "meaning": "me too (said back to \"nice to meet you\")"
         },
         {
             "text": "moja",
@@ -1643,6 +2395,22 @@
             "meaning": "as a first name (mam na imię: my name is)"
         },
         {
+            "text": "na imię mam Ewa",
+            "meaning": "my first name is Ewa"
+        },
+        {
+            "text": "na lewo",
+            "meaning": "on the left; to the left"
+        },
+        {
+            "text": "na prawo",
+            "meaning": "on the right; to the right"
+        },
+        {
+            "text": "na razie",
+            "meaning": "bye for now"
+        },
+        {
             "text": "na razie",
             "meaning": "see you; bye for now"
         },
@@ -1691,12 +2459,19 @@
             "meaning": "a surname"
         },
         {
+            "text": "nazywam"
+        },
+        {
             "text": "nazywam się",
             "meaning": "my name is; I am called"
         },
         {
             "text": "nazywam się Adam",
             "meaning": "I am called Adam"
+        },
+        {
+            "text": "nazywam się Adam, miło mi",
+            "meaning": "my name is Adam, nice to meet you"
         },
         {
             "text": "nazywam się Ewa, a pan?",
@@ -1735,6 +2510,18 @@
             "meaning": "you're welcome; don't mention it"
         },
         {
+            "text": "nie pamiętam",
+            "meaning": "I don't remember"
+        },
+        {
+            "text": "nie rozumiem",
+            "meaning": "I don't understand"
+        },
+        {
+            "text": "nie rozumiem, proszę powtórzyć",
+            "meaning": "I don't understand, repeat, please"
+        },
+        {
             "text": "nie szkodzi",
             "meaning": "no problem"
         },
@@ -1758,6 +2545,9 @@
             "text": "niedziela"
         },
         {
+            "text": "nieoficjalnie"
+        },
+        {
             "text": "nieźle",
             "meaning": "not bad"
         },
@@ -1779,6 +2569,9 @@
         {
             "text": "oczywiście",
             "meaning": "of course"
+        },
+        {
+            "text": "oficjalnie"
         },
         {
             "text": "on",
@@ -1876,7 +2669,18 @@
         },
         {
             "text": "osiem",
+            "meaning": "8"
+        },
+        {
+            "text": "osiem",
             "meaning": "eight"
+        },
+        {
+            "text": "osiem minus dwa równa się sześć",
+            "meaning": "eight minus two equals six"
+        },
+        {
+            "text": "osiem plus dwa równa się dziesięć"
         },
         {
             "text": "osiem, dziewięć, dziesięć",
@@ -1895,6 +2699,10 @@
             "meaning": "bye, see you tomorrow"
         },
         {
+            "text": "pa, do jutra",
+            "meaning": "bye-bye, see you tomorrow"
+        },
+        {
             "text": "pa, dobranoc",
             "meaning": "bye-bye, good night"
         },
@@ -1903,8 +2711,14 @@
             "meaning": "you (to a man, formal); Mr"
         },
         {
+            "text": "pana"
+        },
+        {
             "text": "pani",
             "meaning": "you (to a woman, formal); Mrs, Ms"
+        },
+        {
+            "text": "panią"
         },
         {
             "text": "piętnaście",
@@ -1920,6 +2734,18 @@
         },
         {
             "text": "pięć lat"
+        },
+        {
+            "text": "pięć minus jeden jest cztery",
+            "meaning": "five minus one is four"
+        },
+        {
+            "text": "pięć minus jeden to cztery",
+            "meaning": "five minus one is four"
+        },
+        {
+            "text": "pięć minus jeden to jest cztery",
+            "meaning": "five minus one is four"
         },
         {
             "text": "pięć, cztery, trzy, dwa, jeden, zero",
@@ -1938,12 +2764,28 @@
             "meaning": "(in) Polish"
         },
         {
+            "text": "podkreślić",
+            "meaning": "to underline"
+        },
+        {
+            "text": "podkreślić",
+            "meaning": "underline"
+        },
+        {
             "text": "polecenie",
             "meaning": "an instruction"
         },
         {
             "text": "polecenie",
             "meaning": "an instruction (in a book)"
+        },
+        {
+            "text": "ponumerować",
+            "meaning": "number (put numbers on)"
+        },
+        {
+            "text": "ponumerować",
+            "meaning": "to number"
         },
         {
             "text": "porządek"
@@ -1972,6 +2814,9 @@
             "text": "pozdrowienia"
         },
         {
+            "text": "prawo"
+        },
+        {
             "text": "problem",
             "meaning": "a problem"
         },
@@ -1992,12 +2837,24 @@
             "meaning": "just a moment, please"
         },
         {
+            "text": "proszę dopasować",
+            "meaning": "match, please"
+        },
+        {
             "text": "proszę jeszcze raz",
             "meaning": "once more, please"
         },
         {
             "text": "proszę napisać",
             "meaning": "write, please (an instruction)"
+        },
+        {
+            "text": "proszę podkreślić",
+            "meaning": "underline, please"
+        },
+        {
+            "text": "proszę ponumerować",
+            "meaning": "number, please"
         },
         {
             "text": "proszę posłuchać i napisać",
@@ -2010,6 +2867,9 @@
         {
             "text": "proszę posłuchać i wybrać",
             "meaning": "listen and choose, please"
+        },
+        {
+            "text": "proszę powtórzyć"
         },
         {
             "text": "proszę przeczytać"
@@ -2035,12 +2895,20 @@
             "meaning": "spell the surname, please"
         },
         {
+            "text": "proszę przeliterować „szkoła”",
+            "meaning": "spell \"szkoła\", please"
+        },
+        {
             "text": "proszę przetłumaczyć",
             "meaning": "translate, please (an instruction)"
         },
         {
             "text": "proszę przetłumaczyć dialog",
             "meaning": "translate the dialogue, please"
+        },
+        {
+            "text": "proszę się przedstawić",
+            "meaning": "introduce yourself, please"
         },
         {
             "text": "proszę uzupełnić ćwiczenie",
@@ -2055,8 +2923,16 @@
             "meaning": "read"
         },
         {
+            "text": "przedstawić się",
+            "meaning": "introduce yourself (proszę się przedstawić: please introduce yourself)"
+        },
+        {
             "text": "przeliterować",
             "meaning": "spell (letter by letter)"
+        },
+        {
+            "text": "przeliterować",
+            "meaning": "to spell"
         },
         {
             "text": "przepraszam",
@@ -2065,6 +2941,14 @@
         {
             "text": "przepraszam",
             "meaning": "sorry; excuse me (one person speaking)"
+        },
+        {
+            "text": "przepraszam, gdzie jest toaleta?",
+            "meaning": "where is the toilet?"
+        },
+        {
+            "text": "przepraszam, gdzie jest woda?",
+            "meaning": "excuse me, where is the water?"
         },
         {
             "text": "przepraszam, mam pytanie",
@@ -2094,6 +2978,10 @@
             "text": "raz"
         },
         {
+            "text": "restauracja",
+            "meaning": "a restaurant"
+        },
+        {
             "text": "rodzeństwo",
             "meaning": "brothers and sisters; siblings"
         },
@@ -2110,8 +2998,19 @@
             "meaning": "I understand"
         },
         {
+            "text": "równa się",
+            "meaning": "equals"
+        },
+        {
+            "text": "siedem",
+            "meaning": "7"
+        },
+        {
             "text": "siedem",
             "meaning": "seven"
+        },
+        {
+            "text": "siedem minus dwa równa się pięć"
         },
         {
             "text": "siedemnaście",
@@ -2199,6 +3098,10 @@
         },
         {
             "text": "sześć",
+            "meaning": "6"
+        },
+        {
+            "text": "sześć",
             "meaning": "six"
         },
         {
@@ -2214,8 +3117,28 @@
             "meaning": "six plus fourteen is twenty"
         },
         {
+            "text": "sześć plus trzy jest dziewięć",
+            "meaning": "six plus three equals nine"
+        },
+        {
+            "text": "sześć plus trzy równa się dziewięć",
+            "meaning": "six plus three equals nine"
+        },
+        {
+            "text": "sześć plus trzy to dziewięć",
+            "meaning": "six plus three equals nine"
+        },
+        {
+            "text": "sześć plus trzy to jest dziewięć",
+            "meaning": "six plus three equals nine"
+        },
+        {
             "text": "sześć, siedem, osiem",
             "meaning": "six, seven, eight"
+        },
+        {
+            "text": "szkoła",
+            "meaning": "a school"
         },
         {
             "text": "szukam"
@@ -2273,6 +3196,10 @@
             "meaning": "yes, please"
         },
         {
+            "text": "tam",
+            "meaning": "there"
+        },
+        {
             "text": "tata",
             "meaning": "dad"
         },
@@ -2317,6 +3244,10 @@
             "meaning": "this is Adam, he is from Poland"
         },
         {
+            "text": "to alfabet",
+            "meaning": "this is the alphabet"
+        },
+        {
             "text": "to dziewczyna",
             "meaning": "this is a girl"
         },
@@ -2337,8 +3268,16 @@
             "meaning": "this is Ewa, a teacher"
         },
         {
+            "text": "to jest alfabet",
+            "meaning": "this is the alphabet"
+        },
+        {
             "text": "to jest dziewczyna",
             "meaning": "this is a girl"
+        },
+        {
+            "text": "to jest komputer",
+            "meaning": "this is a computer"
         },
         {
             "text": "to jest lekcja",
@@ -2400,12 +3339,20 @@
             "meaning": "this is a student (a woman)"
         },
         {
+            "text": "to jest szkoła",
+            "meaning": "this is a school"
+        },
+        {
             "text": "to jest twoje dziecko?",
             "meaning": "is this your child? (to one friend)"
         },
         {
             "text": "to jest twój brat?",
             "meaning": "is this your brother? (to one friend)"
+        },
+        {
+            "text": "to komputer",
+            "meaning": "this is a computer"
         },
         {
             "text": "to lekcja",
@@ -2468,12 +3415,24 @@
             "meaning": "this is a student (a woman)"
         },
         {
+            "text": "to szkoła",
+            "meaning": "this is a school"
+        },
+        {
             "text": "to twoje dziecko?",
             "meaning": "is this your child? (to one friend)"
         },
         {
             "text": "to twój brat?",
             "meaning": "is this your brother? (to one friend)"
+        },
+        {
+            "text": "toaleta",
+            "meaning": "a toilet"
+        },
+        {
+            "text": "toaleta jest tam, na lewo",
+            "meaning": "the toilet is there, on the left"
         },
         {
             "text": "trochę",
@@ -2489,6 +3448,21 @@
         {
             "text": "trzy",
             "meaning": "three"
+        },
+        {
+            "text": "trzy minus dwa to jeden"
+        },
+        {
+            "text": "trzy plus jeden jest cztery",
+            "meaning": "three plus one is four"
+        },
+        {
+            "text": "trzy plus jeden to cztery",
+            "meaning": "three plus one is four"
+        },
+        {
+            "text": "trzy plus jeden to jest cztery",
+            "meaning": "three plus one is four"
         },
         {
             "text": "trzy plus siedem jest dziesięć",
@@ -2514,12 +3488,24 @@
             "meaning": "thirteen"
         },
         {
+            "text": "tu",
+            "meaning": "here (short for tutaj)"
+        },
+        {
+            "text": "tu jest kawa",
+            "meaning": "the coffee is here"
+        },
+        {
             "text": "tu są",
             "meaning": "they (women) are here"
         },
         {
             "text": "tutaj",
             "meaning": "here"
+        },
+        {
+            "text": "tutaj jest kawa",
+            "meaning": "the coffee is here"
         },
         {
             "text": "tutaj jest mama",
@@ -2569,6 +3555,9 @@
             "meaning": "you are (one friend)"
         },
         {
+            "text": "uniwersalnie"
+        },
+        {
             "text": "uzupełnić",
             "meaning": "fill in"
         },
@@ -2582,6 +3571,9 @@
         {
             "text": "w porządku",
             "meaning": "all right; fine"
+        },
+        {
+            "text": "widzenia"
         },
         {
             "text": "wiem",
@@ -2604,6 +3596,10 @@
         {
             "text": "witamy",
             "meaning": "welcome (said by several people: \"we welcome you\")"
+        },
+        {
+            "text": "woda",
+            "meaning": "water"
         },
         {
             "text": "wszystko",
@@ -2647,6 +3643,12 @@
             "meaning": "zero, one, two"
         },
         {
+            "text": "zmęczony"
+        },
+        {
+            "text": "znaczy"
+        },
+        {
             "text": "Ćwiczenia",
             "meaning": "Exercises"
         },
@@ -2661,6 +3663,10 @@
         {
             "text": "ćwiczenie numer dwa",
             "meaning": "exercise number two"
+        },
+        {
+            "text": "Świetnie! A dziesięć minus cztery?",
+            "meaning": "Great! And ten minus four?"
         },
         {
             "text": "Świetnie! Na razie, do jutra!",
@@ -2886,6 +3892,94 @@
             "hash": "8f34a020d202"
         },
         {
+            "id": "chat-front-desk/t1/2",
+            "hash": "927ff816a73c"
+        },
+        {
+            "id": "chat-front-desk/t1/3",
+            "hash": "e9e7e5f6fb40"
+        },
+        {
+            "id": "chat-front-desk/t2/2",
+            "hash": "ab4996832ad3"
+        },
+        {
+            "id": "chat-front-desk/t2/3",
+            "hash": "19b596029c65"
+        },
+        {
+            "id": "chat-front-desk/t3/2",
+            "hash": "7aa66b05297a"
+        },
+        {
+            "id": "chat-front-desk/t3/3",
+            "hash": "bd9ae634b3f3"
+        },
+        {
+            "id": "chat-front-desk/t4/2",
+            "hash": "e3eb99f53e8d"
+        },
+        {
+            "id": "chat-front-desk/t4/3",
+            "hash": "e1ef5f2fb888"
+        },
+        {
+            "id": "chat-front-desk/t5/2",
+            "hash": "aacf540de574"
+        },
+        {
+            "id": "chat-front-desk/t5/3",
+            "hash": "e775b0687280"
+        },
+        {
+            "id": "chat-in-class/t1/2",
+            "hash": "71023718ccf4"
+        },
+        {
+            "id": "chat-in-class/t1/3",
+            "hash": "28aebee31fa1"
+        },
+        {
+            "id": "chat-in-class/t2/2",
+            "hash": "35cfb5bb66c9"
+        },
+        {
+            "id": "chat-in-class/t2/3",
+            "hash": "1423aa85b01a"
+        },
+        {
+            "id": "chat-in-class/t3/2",
+            "hash": "f56d6e424d52"
+        },
+        {
+            "id": "chat-in-class/t3/3",
+            "hash": "e44819a8fb29"
+        },
+        {
+            "id": "chat-in-class/t4/2",
+            "hash": "e99d17c8e1f0"
+        },
+        {
+            "id": "chat-in-class/t4/3",
+            "hash": "b30288c1459a"
+        },
+        {
+            "id": "chat-in-class/t5/2",
+            "hash": "970a5d5766f7"
+        },
+        {
+            "id": "chat-in-class/t5/3",
+            "hash": "3d90b0285d6f"
+        },
+        {
+            "id": "chat-in-class/t6/2",
+            "hash": "044d0d2f9cc1"
+        },
+        {
+            "id": "chat-in-class/t6/3",
+            "hash": "99ca12f2a087"
+        },
+        {
             "id": "chat-new-classmate/t1/2",
             "hash": "53e1b4068538"
         },
@@ -2984,6 +4078,51 @@
         {
             "id": "kpk1-l00-e-t02",
             "hash": "5b48a5469f48"
+        },
+        {
+            "id": "kpk1-l01-a1-t01",
+            "hash": "3f5716d944ff"
+        },
+        {
+            "id": "kpk1-l01-a2-t01",
+            "hash": "2b7363c51ffe"
+        },
+        {
+            "id": "kpk1-l01-b-t01",
+            "hash": "d2e8f0328f3b"
+        },
+        {
+            "id": "kpk1-l01-b-t02",
+            "hash": "69ed9cd9add1"
+        },
+        {
+            "id": "kpk1-l01-c-t01",
+            "hash": "cf900f0274d8"
+        },
+        {
+            "id": "kpk1-l01-d-t01",
+            "hash": "21987522e325"
+        },
+        {
+            "id": "kpk1-l01-e-t01",
+            "hash": "292ecd955d9e"
+        },
+        {
+            "id": "kpk1-l01-e-t02",
+            "hash": "f9079843e3eb",
+            "finding": "The stray word ZAPAMIETAJ is misspelt: it should be ZAPAMIĘTAJ, with ę."
+        },
+        {
+            "id": "kpk1-l01-f1-t01",
+            "hash": "fdb989b8cda2"
+        },
+        {
+            "id": "kpk1-l01-f2-t01",
+            "hash": "232b859e16c6"
+        },
+        {
+            "id": "kpk1-l01-g-t01",
+            "hash": "0121dbda5c74"
         }
     ]
 }
