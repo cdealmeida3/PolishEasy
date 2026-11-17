@@ -35,6 +35,7 @@ class LessonsTest {
             }.indexOf(exercise.text),
         )
         is ListenType -> Answer.Typed(exercise.acceptedAnswers.first())
+        else -> bookRight(exercise)
     }
 
     /** A wrong answer of the same kind. */
@@ -42,6 +43,7 @@ class LessonsTest {
         is Answer.Option -> Answer.Option(if (answer.index == 0) 1 else 0)
         is Answer.Typed -> Answer.Typed("xyz")
         is Answer.Tiles -> Answer.Tiles(listOf("xyz"))
+        else -> bookWrong(answer)
     }
 
     /** Plays from [first] to the Summary, answering wrongly where [wrongly] says so. Returns every Step. */
@@ -59,22 +61,23 @@ class LessonsTest {
     }
 
     @Test
-    fun `chapter 0's Lesson screen has its banner, its L strand and four sections, none done`() {
+    fun `chapter 0's Lesson screen has its banner, its L strand and five sections, none done`() {
         val lesson = engine().lesson(chapter0)
 
         assertEquals(0, lesson.number)
         assertEquals("Dzień dobry!", lesson.title)
         assertEquals("Hello!", lesson.subtitle)
         assertEquals(listOf(Strand.VOCABULARY), lesson.strands.map { it.strand })
-        assertEquals(StrandView(Strand.VOCABULARY, listOf("podstawowe słowa i zwroty", "polecenia"), 0, 4), lesson.strands.single())
-        assertEquals(listOf("Polecenia", "W klasie", "W szkole", "Proszę, dziękuję, przepraszam"), lesson.sections.map { it.heading })
-        assertEquals(listOf("1", "2", "3", "4"), lesson.sections.map { it.letter })
-        assertEquals(listOf(8, 8, 8, 3), lesson.sections.map { it.newWords })
+        assertEquals(StrandView(Strand.VOCABULARY, listOf("podstawowe słowa i zwroty", "polecenia"), 0, 5), lesson.strands.single())
+        assertEquals(listOf("Polecenia", "W klasie", "W szkole", "Proszę, dziękuję, przepraszam", "Ćwiczenia"), lesson.sections.map { it.heading })
+        assertEquals(listOf("1", "2", "3", "4", "5"), lesson.sections.map { it.letter })
+        assertEquals(listOf(8, 8, 8, 3, 0), lesson.sections.map { it.newWords })
         assertTrue(lesson.sections.none { it.state == DailySetState.COMPLETED || it.inProgress })
         assertEquals(listOf("posłuchać", "przeczytać", "lekcja", "nauczyciel"), lesson.lookUp.map { it.text })
         assertTrue(lesson.lookUp.all { it.audio != null }, "Every look-up word can be heard")
         assertEquals(CheckpointView(best = null, questions = 20, sealed = false), lesson.checkpoint)
         assertEquals(false, lesson.coming)
+        assertEquals(0 to 1, lesson.grammarDone to lesson.grammarTotal, "The table of men and women in W szkole")
     }
 
     @Test
@@ -206,16 +209,16 @@ class LessonsTest {
             listOf(chapter0, "a1-u02").forEach { unit ->
                 engine.play(engine.startCheckpoint(unit, sound = sound, random = Random(4))).filterIsInstance<Step.ShowExercise>().forEach { step ->
                     val instruction = assertNotNull(step.instruction, step.exerciseId)
-                    assertTrue(instruction.polish.startsWith("Proszę "), instruction.polish)
+                    assertTrue(instruction.polish.startsWith("Proszę ") || instruction.polish == "Prawda czy nieprawda?", instruction.polish)
                     assertTrue(instruction.meaning.isNotBlank())
                     assertEquals(sound, instruction.audio != null, step.exerciseId)
                     shown += step.exercise::class.simpleName!!
                 }
             }
         }
-        assertEquals(
-            setOf("ChooseTranslation", "TypeAnswer", "WordTiles", "Conjugation", "ListenChoose", "ListenType", "ChoosePolish"),
-            shown,
+        assertTrue(
+            shown.containsAll(setOf("ChooseTranslation", "TypeAnswer", "WordTiles", "Conjugation", "ListenChoose", "ListenType", "ChoosePolish")),
+            "$shown",
         )
     }
 

@@ -5,6 +5,10 @@
       "text": "a"
     },
     {
+      "id": "a-to-jest-anna-studentka",
+      "text": "A to jest Anna, studentka."
+    },
+    {
       "id": "a-ty",
       "text": "a ty?"
     },
@@ -33,6 +37,10 @@
       "text": "Adam jest Polakiem, a Ewa jest Angielką"
     },
     {
+      "id": "adam-jest-studentem",
+      "text": "Adam jest studentem"
+    },
+    {
       "id": "adam-ma-syna",
       "text": "Adam ma syna"
     },
@@ -47,6 +55,14 @@
     {
       "id": "adam-tez-mowi-po-angielsku",
       "text": "Adam też mówi po angielsku"
+    },
+    {
+      "id": "adam-to-nauczyciel-ewa-to-nauczycielka",
+      "text": "Adam to nauczyciel. Ewa to nauczycielka."
+    },
+    {
+      "id": "adam-to-student",
+      "text": "Adam to student"
     },
     {
       "id": "ale",
@@ -365,6 +381,10 @@
       "text": "dziękuję"
     },
     {
+      "id": "dziekuje-2",
+      "text": "Dziękuję."
+    },
+    {
       "id": "dziekuje-bardzo",
       "text": "dziękuję bardzo"
     },
@@ -397,8 +417,16 @@
       "text": "dzień dobry"
     },
     {
+      "id": "dzien-dobry-2",
+      "text": "Dzień dobry!"
+    },
+    {
       "id": "dzien-dobry-jak-sie-pani-ma",
       "text": "dzień dobry, jak się pani ma?"
+    },
+    {
+      "id": "dzien-dobry-prosze-imie-i-nazwisko",
+      "text": "Dzień dobry! Proszę imię i nazwisko."
     },
     {
       "id": "dzien-dobry-witamy",
@@ -431,6 +459,10 @@
     {
       "id": "ewa-ma-trzy-lata",
       "text": "Ewa ma trzy lata"
+    },
+    {
+      "id": "ewa-nowak",
+      "text": "Ewa Nowak."
     },
     {
       "id": "gratulacje",
@@ -1281,6 +1313,10 @@
       "text": "powtórzyć"
     },
     {
+      "id": "prawda-czy-nieprawda",
+      "text": "Prawda czy nieprawda?"
+    },
+    {
       "id": "problem",
       "text": "problem"
     },
@@ -1309,6 +1345,10 @@
       "text": "Proszę napisać po polsku."
     },
     {
+      "id": "prosze-polaczyc",
+      "text": "Proszę połączyć."
+    },
+    {
       "id": "prosze-posluchac-i-napisac",
       "text": "proszę posłuchać i napisać"
     },
@@ -1321,12 +1361,20 @@
       "text": "proszę posłuchać i powtórzyć"
     },
     {
+      "id": "prosze-posluchac-i-powtorzyc-2",
+      "text": "Proszę posłuchać i powtórzyć."
+    },
+    {
       "id": "prosze-posluchac-i-wybrac",
       "text": "proszę posłuchać i wybrać"
     },
     {
       "id": "prosze-posluchac-i-wybrac-2",
       "text": "Proszę posłuchać i wybrać."
+    },
+    {
+      "id": "prosze-posluchac-prawda-czy-nieprawda",
+      "text": "Proszę posłuchać. Prawda czy nieprawda?"
     },
     {
       "id": "prosze-przeczytac-i-uzupelnic",
@@ -1349,6 +1397,10 @@
       "text": "proszę przeliterować nazwisko"
     },
     {
+      "id": "prosze-przeliterowac-nazwisko-2",
+      "text": "Proszę przeliterować nazwisko."
+    },
+    {
       "id": "prosze-przetlumaczyc",
       "text": "proszę przetłumaczyć"
     },
@@ -1359,6 +1411,10 @@
     {
       "id": "prosze-przetlumaczyc-dialog",
       "text": "proszę przetłumaczyć dialog"
+    },
+    {
+      "id": "prosze-ulozyc-dialog",
+      "text": "Proszę ułożyć dialog."
     },
     {
       "id": "prosze-ulozyc-zdanie",
@@ -1625,8 +1681,20 @@
       "text": "to jest Adam, on jest z Polski"
     },
     {
+      "id": "to-jest-adam-student",
+      "text": "To jest Adam, student."
+    },
+    {
       "id": "to-jest-dziewczyna",
       "text": "to jest dziewczyna"
+    },
+    {
+      "id": "to-jest-ewa-nauczycielka",
+      "text": "To jest Ewa, nauczycielka."
+    },
+    {
+      "id": "to-jest-ewa-nauczycielka-2",
+      "text": "to jest Ewa, nauczycielka"
     },
     {
       "id": "to-jest-lekcja",

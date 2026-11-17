@@ -21,6 +21,7 @@ import com.polisheasy.app.RecordingTitle
 import com.polisheasy.app.Recordings
 import androidx.compose.runtime.LaunchedEffect
 import com.polisheasy.app.ui.screens.ClassAudioScreen
+import com.polisheasy.app.ui.screens.GrammarScreen
 import com.polisheasy.app.ui.screens.lesson.ListenScreen
 import com.polisheasy.app.Clips
 import com.polisheasy.engine.QuickRound
@@ -127,6 +128,7 @@ fun PolishEasyApp(
                     listen = screen.listen,
                     onRecording = viewModel::openRecording,
                     onClassAudio = viewModel::openClassAudio,
+                    onGrammar = viewModel::openGrammar,
                 )
             }
             is Screen.ClassAudio -> {
@@ -143,6 +145,17 @@ fun PolishEasyApp(
                 )
             }
             is Screen.Listen -> Listen(screen, viewModel, player, recordings)
+            is Screen.Grammar -> {
+                BackHandler(onBack = viewModel::leaveGrammar)
+                DisposableEffect(Unit) { onDispose { player.stop() } }
+                GrammarScreen(
+                    screen.chapters,
+                    one = screen.from != null,
+                    clipOf = { polish -> if (screen.sound) viewModel.practiceClipOf(polish) else null },
+                    onPlay = { clip -> player.play(clip.path) },
+                    onBack = viewModel::leaveGrammar,
+                )
+            }
             is Screen.Dictionary -> {
                 BackHandler(onBack = viewModel::backToLesson)
                 DisposableEffect(Unit) { onDispose { player.stop() } }
@@ -298,6 +311,7 @@ private fun DailySet(screen: Screen, shown: Int, progress: StepProgress, viewMod
                 onAnswer = { answer -> live { viewModel.answer(answer) } },
                 onContinue = moveOn,
                 onPlay = { clip, slow -> live { player.play(clip.path, slow) } },
+                onPlayAll = { clips -> live { player.playAll(clips.map { it.path }) } },
                 onCantListen = {
                     live {
                         player.stop()
@@ -426,6 +440,7 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
                     onOneADay = viewModel::setOneADay,
                     classAudio = showing.classAudio,
                     onClassAudio = viewModel::openClassAudio,
+                    onGrammar = viewModel::openGrammar,
                 )
             }
             else -> Unit

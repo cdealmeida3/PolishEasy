@@ -40,6 +40,15 @@ const val MIN_EXERCISES_PER_ITEM = 2
 /** How many Exercises a Daily Set may have. */
 val DAILY_SET_EXERCISES = 12..18
 
+/** How many pairs a match_pairs Exercise has: the book's rows. */
+val MATCH_PAIRS = 4..6
+
+/** How many statements a true_false Exercise has. */
+val TRUE_FALSE_STATEMENTS = 3..5
+
+/** How many lines an order_lines dialogue has. */
+val ORDER_LINES = 3..6
+
 /** The most Items one Daily Set may introduce. */
 const val MAX_NEW_ITEMS = 8
 
@@ -169,6 +178,18 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
                 report(file, tip.id, "The body of $name $problem")
             }
             tip.conjugation?.let { needsText(file, tip.id, "The meaning in the conjugation table of $name", it.meaning) }
+            tip.table?.let { table ->
+                needsText(file, tip.id, "The title of the grammar table of $name", table.title)
+                if (table.columns.any { it.header == null && it.gender == null }) {
+                    report(file, tip.id, "A column of the grammar table of $name has neither a header nor a gender")
+                }
+                if (table.rows.any { it.case == null && it.header == null } && table.rows.any { it.case != null || it.header != null }) {
+                    report(file, tip.id, "Some rows of the grammar table of $name have a head and some do not")
+                }
+            }
+            if (tip.kind != TipKind.NOTE && tip.table != null) {
+                report(file, tip.id, "$name is an ${tip.kind.name.lowercase(Locale.ROOT)} callout with a table; a callout is a short warning or rule, its table goes in a Tip of its own")
+            }
         }
         dailySet.exercises.forEach { exercise ->
             val name = "Exercise ${exercise.id}"
@@ -202,9 +223,38 @@ private fun authoringProblems(content: ReadContent, paths: Set<String>): List<Co
                 }
                 is ListenChoose -> needsText(file, exercise.id, "The meaning of $name", exercise.meaning)
                 is ListenType -> needsText(file, exercise.id, "The meaning of $name", exercise.meaning)
+                is FillGaps -> needsText(file, exercise.id, "The meaning of $name", exercise.meaning)
+                is MatchPairs -> {
+                    if (exercise.pairs.size !in MATCH_PAIRS) {
+                        report(file, exercise.id, "$name has ${exercise.pairs.size} pairs; it must have ${MATCH_PAIRS.first} to ${MATCH_PAIRS.last}")
+                    }
+                    exercise.pairs.forEachIndexed { index, pair -> needsText(file, exercise.id, "The meaning of pair ${index + 1} of $name", pair.meaning) }
+                    BASE_LANGUAGES.forEach { language ->
+                        exercise.pairs.mapNotNull { it.meaning[language] }.filter { it.isNotBlank() }
+                            .map { it.trim().lowercase(Locale.ROOT) }.repeated()
+                            .forEach { same -> report(file, exercise.id, "$name has more than one meaning that would read the same: $same") }
+                    }
+                }
+                is TrueFalse -> {
+                    needsText(file, exercise.id, "The meaning of $name", exercise.meaning)
+                    if (exercise.statements.size !in TRUE_FALSE_STATEMENTS) {
+                        report(file, exercise.id, "$name has ${exercise.statements.size} statements; it must have ${TRUE_FALSE_STATEMENTS.first} to ${TRUE_FALSE_STATEMENTS.last}")
+                    } else if (exercise.statements.all { it.`true` } || exercise.statements.none { it.`true` }) {
+                        report(file, exercise.id, "$name has every statement ${if (exercise.statements.first().`true`) "true" else "false"}; give both kinds")
+                    }
+                    exercise.statements.forEachIndexed { index, statement ->
+                        needsText(file, exercise.id, "The meaning of statement ${index + 1} of $name", statement.meaning)
+                    }
+                }
+                is OrderLines -> {
+                    needsText(file, exercise.id, "The meaning of $name", exercise.meaning)
+                    if (exercise.lines.size !in ORDER_LINES) {
+                        report(file, exercise.id, "$name has ${exercise.lines.size} lines; it must have ${ORDER_LINES.first} to ${ORDER_LINES.last}")
+                    }
+                }
             }
             // A listening Exercise with no Clip cannot run at all, which the loading rules report.
-            if (content.clipsComplete && exercise !is ListenChoose && exercise !is ListenType) {
+            if (content.clipsComplete && exercise !is ListenChoose && exercise !is ListenType && !(exercise is TrueFalse && exercise.listen)) {
                 spoken(exercise).filter { it.isNotBlank() && course.clipFor(it) == null }.forEach { text ->
                     report(file, exercise.id, "$name has no Clip for \"$text\", so its speaker icon would be missing")
                 }

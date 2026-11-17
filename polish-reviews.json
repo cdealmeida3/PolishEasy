@@ -1,6 +1,9 @@
 {
     "sentences": [
         {
+            "text": "A to jest Anna, studentka."
+        },
+        {
             "text": "Adam",
             "meaning": "Adam (a man's name)"
         },
@@ -27,6 +30,10 @@
             "text": "Adam jest Polakiem, a Ewa jest Polką"
         },
         {
+            "text": "Adam jest studentem",
+            "meaning": "Adam is a student (a man)."
+        },
+        {
             "text": "Adam ma syna",
             "meaning": "Adam has a son"
         },
@@ -47,12 +54,32 @@
             "meaning": "Adam speaks English too"
         },
         {
+            "text": "Adam to nauczyciel.",
+            "meaning": "Adam is a teacher."
+        },
+        {
+            "text": "Adam to nauczyciel. Ewa to nauczycielka.",
+            "meaning": "Adam is a teacher. Ewa is a teacher."
+        },
+        {
+            "text": "Adam to student",
+            "meaning": "Adam is a student (a man)."
+        },
+        {
+            "text": "Adam to student.",
+            "meaning": "Adam is a student."
+        },
+        {
             "text": "Angielką",
             "meaning": "English (a woman, after jestem, jesteś, jest)"
         },
         {
             "text": "Anglikiem",
             "meaning": "English (a man, after jestem, jesteś, jest)"
+        },
+        {
+            "text": "Anna to studentka.",
+            "meaning": "Anna is a student."
         },
         {
             "text": "Bardzo przepraszamy.",
@@ -87,8 +114,20 @@
             "meaning": "Do you speak Polish? (to a woman, formal)"
         },
         {
+            "text": "Dzień dobry!"
+        },
+        {
+            "text": "Dzień dobry! Proszę imię i nazwisko."
+        },
+        {
+            "text": "Dziękuję."
+        },
+        {
             "text": "Ewa",
             "meaning": "Ewa (a woman's name)"
+        },
+        {
+            "text": "Ewa Nowak."
         },
         {
             "text": "Ewa jest z Anglii, ale mówi po polsku.",
@@ -97,6 +136,10 @@
         {
             "text": "Ewa ma trzy lata",
             "meaning": "Ewa is three years old"
+        },
+        {
+            "text": "Ewa to nauczycielka.",
+            "meaning": "Ewa is a teacher."
         },
         {
             "text": "Ile macie lat? Mamy siedemnaście lat.",
@@ -170,6 +213,10 @@
             "text": "Polski"
         },
         {
+            "text": "Prawda czy nieprawda?",
+            "meaning": "True or false?"
+        },
+        {
             "text": "Proszę napisać po polsku.",
             "meaning": "Write it in Polish."
         },
@@ -178,8 +225,24 @@
             "meaning": "Listen and write."
         },
         {
+            "text": "Proszę posłuchać i powtórzyć.",
+            "meaning": "Listen and repeat, please."
+        },
+        {
             "text": "Proszę posłuchać i wybrać.",
             "meaning": "Listen and choose."
+        },
+        {
+            "text": "Proszę posłuchać. Prawda czy nieprawda?",
+            "meaning": "Listen. True or false?"
+        },
+        {
+            "text": "Proszę połączyć.",
+            "meaning": "Match them up."
+        },
+        {
+            "text": "Proszę przeliterować nazwisko.",
+            "meaning": "Spell the surname, please."
         },
         {
             "text": "Proszę przetłumaczyć.",
@@ -188,6 +251,14 @@
         {
             "text": "Proszę uzupełnić.",
             "meaning": "Fill in the gap."
+        },
+        {
+            "text": "Proszę uzupełnić.",
+            "meaning": "Fill in the gaps."
+        },
+        {
+            "text": "Proszę ułożyć dialog.",
+            "meaning": "Put the dialogue in order."
         },
         {
             "text": "Proszę ułożyć zdanie.",
@@ -200,6 +271,12 @@
         {
             "text": "Proszę, dziękuję, przepraszam",
             "meaning": "Please, thank you, sorry"
+        },
+        {
+            "text": "To jest Adam, student."
+        },
+        {
+            "text": "To jest Ewa, nauczycielka."
         },
         {
             "text": "Twoja córka jest tutaj.",
@@ -970,6 +1047,10 @@
         },
         {
             "text": "kolega",
+            "meaning": "a classmate (a man)"
+        },
+        {
+            "text": "kolega",
             "meaning": "a classmate; a friend (a man)"
         },
         {
@@ -1589,10 +1670,18 @@
         },
         {
             "text": "polecenie",
+            "meaning": "an instruction"
+        },
+        {
+            "text": "polecenie",
             "meaning": "an instruction (in a book)"
         },
         {
             "text": "porządek"
+        },
+        {
+            "text": "posłuchać",
+            "meaning": "listen"
         },
         {
             "text": "posłuchać",
@@ -1975,6 +2064,10 @@
             "meaning": "this is Adam, he is from Poland"
         },
         {
+            "text": "to jest Ewa, nauczycielka",
+            "meaning": "this is Ewa, a teacher"
+        },
+        {
             "text": "to jest dziewczyna",
             "meaning": "this is a girl"
         },
@@ -2208,6 +2301,10 @@
         },
         {
             "text": "uzupełnić",
+            "meaning": "fill in"
+        },
+        {
+            "text": "uzupełnić",
             "meaning": "fill in; complete"
         },
         {
@@ -2279,6 +2376,10 @@
         {
             "text": "zero, jeden, dwa",
             "meaning": "zero, one, two"
+        },
+        {
+            "text": "Ćwiczenia",
+            "meaning": "Exercises"
         },
         {
             "text": "ćwiczenie",
@@ -2521,11 +2622,19 @@
         },
         {
             "id": "kpk1-l00-c-t01",
-            "hash": "32af3ffa563c"
+            "hash": "4ec7d87dafd6"
         },
         {
             "id": "kpk1-l00-d-t01",
             "hash": "18bbd0eef3c7"
+        },
+        {
+            "id": "kpk1-l00-e-t01",
+            "hash": "48da3a1f1cc4"
+        },
+        {
+            "id": "kpk1-l00-e-t02",
+            "hash": "5b48a5469f48"
         }
     ]
 }

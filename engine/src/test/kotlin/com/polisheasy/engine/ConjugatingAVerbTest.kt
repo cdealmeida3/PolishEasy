@@ -147,18 +147,20 @@ class ConjugatingAVerbTest {
                     title = "The verb być",
                     body = "Być is irregular.",
                     polish = listOf(0..2),
-                    conjugation = ConjugationTableView(
-                        verb = "być",
-                        meaning = "to be",
+                    table = GrammarTableView(
+                        title = "być · to be",
+                        columns = emptyList(),
                         rows = listOf(
-                            ConjugationRow(Person.I, "jestem"),
-                            ConjugationRow(Person.YOU, "jesteś"),
-                            ConjugationRow(Person.HE_SHE_IT, "jest"),
-                            ConjugationRow(Person.WE, "jesteśmy"),
-                            ConjugationRow(Person.YOU_PLURAL, "jesteście"),
-                            ConjugationRow(Person.THEY, "są"),
-                        ),
+                            "ja" to "jestem",
+                            "ty" to "jesteś",
+                            "on / ona / ono" to "jest",
+                            "my" to "jesteśmy",
+                            "wy" to "jesteście",
+                            "oni / one" to "są",
+                        ).map { (who, form) -> TableRowView(who, null, null, listOf(TableCellView(form))) },
+                        verb = "być",
                     ),
+                    id = "a1-u01-d01-t01",
                 ),
                 oneOfOne,
             ),
@@ -170,7 +172,7 @@ class ConjugatingAVerbTest {
     fun `a Tip without a conjugation table is shown without one`() {
         val step = CourseEngine(FixtureCourse.load(), InMemoryLearnerProgress(), FakeClock(), oneADay = { true }).startDailySet()
 
-        assertEquals(null, (step as Step.ShowTip).tip.conjugation)
+        assertEquals(null, (step as Step.ShowTip).tip.table)
     }
 
     private fun correct(answer: String) = Feedback(correct = true, correctAnswer = answer)

@@ -89,6 +89,18 @@ _Avoid_: Pacing mode, daily limit
 A short explanation of new grammar or words shown before the Exercises that rely on it.
 _Avoid_: Lesson, hint, note
 
+**Grammar table**:
+A table in a Tip, drawn as the book's *Komentarze gramatyczne* draw one: columns by gender or person, rows by case or form, endings in red boxes. A verb's conjugation in a Tip is one too.
+_Avoid_: Chart, grid
+
+**Callout**:
+A Tip set apart as the book sets apart an *Uwaga!* (a trap to watch for) or a *Zapamiętaj!* (a thing to learn by heart).
+_Avoid_: Warning, alert, note
+
+**Grammar shelf**:
+Every grammar table of the Daily Sets the Learner has completed, by Unit, called *Komentarze gramatyczne* on screen. Opened from Settings, or from a Lesson screen for its own Unit.
+_Avoid_: Grammar reference, cheat sheet
+
 **Replay**:
 Doing an already completed Daily Set again, started from the Path screen. It has the Daily Set's Tips and New Material but no Review. It does not advance the Path, does not count toward the Streak and does not affect Review, and one left unfinished is not kept.
 _Avoid_: Redo, practice mode, Practice (which is the Games)
@@ -122,6 +134,7 @@ _Avoid_: Alert, alarm, push notification
 
 **Exercise**:
 A single task inside a Daily Set that the Learner answers and the app checks. A Daily Set is complete once every Exercise has been answered correctly.
+The book's own kinds of Exercise (fill the gaps, match the pairs, true or false, put a dialogue in order) are answered in several parts, and are right only when every part is.
 _Avoid_: Question, activity, task
 
 **Accepted Answer**:

@@ -6,6 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
@@ -57,12 +58,28 @@ internal fun PlayerScreen(
     onReport: () -> Unit,
     instruction: InstructionView? = null,
     checkpoint: Boolean = false,
+    onPlayAll: (List<ClipView>) -> Unit = {},
 ) {
     var typed by rememberSaveable(stateSaver = TextFieldValue.Saver) { mutableStateOf(TextFieldValue("")) }
     // The bank positions of the tiles in the answer, in order. The engine's TileSelection holds the rule.
     var placed by rememberSaveable { mutableStateOf(listOf<Int>()) }
     // The option the Learner tapped, so it can be marked once the answer is known.
     var tapped by rememberSaveable { mutableStateOf<Int?>(null) }
+    // Fill the gaps: what is in each gap ("" for none), the note it came from (-1 when typed or empty), and the gap a note goes to next.
+    val gapCount = (exercise as? ExerciseView.FillGaps)?.gaps ?: 0
+    var gapWords by rememberSaveable { mutableStateOf(List(gapCount) { "" }) }
+    var gapNotes by rememberSaveable { mutableStateOf(List(gapCount) { -1 }) }
+    var gapSelected by rememberSaveable { mutableStateOf(0) }
+    var gapTyping by rememberSaveable { mutableStateOf(false) }
+    // Match the pairs: the meaning each word is joined to (-1 for none), the word tapped, and the wrong lines so far.
+    val pairCount = (exercise as? ExerciseView.MatchPairs)?.left?.size ?: 0
+    var joined by rememberSaveable { mutableStateOf(List(pairCount) { -1 }) }
+    var pairSelected by rememberSaveable { mutableStateOf(-1) }
+    var wrongPairs by rememberSaveable { mutableStateOf(0) }
+    var shaken by remember { mutableStateOf<Pair<Int, Int>?>(null) }
+    // True or false: 1 for P, 0 for N, -1 not yet marked.
+    val statementCount = (exercise as? ExerciseView.TrueFalse)?.statements?.size ?: 0
+    var marks by rememberSaveable { mutableStateOf(List(statementCount) { -1 }) }
     val keyboard = LocalSoftwareKeyboardController.current
     // Felt once, when the answer is checked, and not again if the screen is rebuilt.
     var felt by rememberSaveable { mutableStateOf(feedback != null) }
@@ -72,15 +89,35 @@ internal fun PlayerScreen(
             felt = true
             if (feedback.correct) haptics.right() else haptics.wrong()
             // The answer is heard as the feedback appears, unless it is what the Learner has just listened to.
-            val listened = exercise is ExerciseView.ListenChoose || exercise is ExerciseView.ListenType
-            if (canListen && !listened) feedback.audio?.let { onPlay(it, false) }
+            val listened = exercise is ExerciseView.ListenChoose || exercise is ExerciseView.ListenType ||
+                (exercise is ExerciseView.TrueFalse && exercise.heard)
+            if (canListen && !listened) {
+                // The finished dialogue plays as a whole; anything else is heard once.
+                if (feedback.clips.isNotEmpty()) onPlayAll(feedback.clips) else feedback.audio?.let { onPlay(it, false) }
+            }
         }
     }
     val answering = feedback == null
     val typing = exercise is ExerciseView.TypeAnswer || exercise is ExerciseView.Conjugation ||
-        exercise is ExerciseView.ListenType
+        exercise is ExerciseView.ListenType || (exercise is ExerciseView.FillGaps && gapTyping && answering)
+    val firstEmpty = { words: List<String> -> words.indexOfFirst { it.isEmpty() }.takeIf { it >= 0 } }
+    val putInGap = { word: String, note: Int ->
+        val gap = gapSelected.takeIf { gapWords.getOrNull(it)?.isEmpty() == true } ?: firstEmpty(gapWords)
+        if (gap != null) {
+            gapWords = gapWords.toMutableList().also { it[gap] = word }
+            gapNotes = gapNotes.toMutableList().also { it[gap] = note }
+            gapSelected = firstEmpty(gapWords) ?: gap
+        }
+    }
     val submitTyped = {
-        if (answering && typed.text.isNotBlank()) {
+        if (exercise is ExerciseView.FillGaps) {
+            if (typed.text.isNotBlank()) {
+                putInGap(typed.text.trim(), -1)
+                typed = TextFieldValue("")
+                gapTyping = false
+                keyboard?.hide()
+            }
+        } else if (answering && typed.text.isNotBlank()) {
             // Hidden so the feedback and "Continue" are not behind the keyboard.
             keyboard?.hide()
             onAnswer(Answer.Typed(typed.text))
@@ -100,6 +137,33 @@ internal fun PlayerScreen(
                     stringResource(R.string.action_check),
                     onClick = { onAnswer(TileSelection(exercise.tiles, placed).answer) },
                     enabled = placed.isNotEmpty(),
+                )
+            }
+        }
+        exercise is ExerciseView.FillGaps -> {
+            {
+                PrimaryButton(
+                    stringResource(R.string.action_check),
+                    onClick = { if (gapWords.none { it.isEmpty() }) onAnswer(Answer.Gaps(gapWords)) },
+                    enabled = gapWords.none { it.isEmpty() },
+                )
+            }
+        }
+        exercise is ExerciseView.TrueFalse -> {
+            {
+                PrimaryButton(
+                    stringResource(R.string.action_check),
+                    onClick = { if (marks.none { it < 0 }) onAnswer(Answer.Marks(marks.map { it == 1 })) },
+                    enabled = marks.none { it < 0 },
+                )
+            }
+        }
+        exercise is ExerciseView.OrderLines -> {
+            {
+                PrimaryButton(
+                    stringResource(R.string.action_check),
+                    onClick = { if (placed.size == exercise.lines.size) onAnswer(Answer.Order(placed.map(exercise.lines::get))) },
+                    enabled = placed.size == exercise.lines.size,
                 )
             }
         }
@@ -149,6 +213,74 @@ internal fun PlayerScreen(
             } else {
                 null
             }
+            is ExerciseView.FillGaps -> {
+                {
+                    FillGapsAnswer(
+                        exercise,
+                        used = gapNotes.filter { it >= 0 }.toSet(),
+                        answering = answering,
+                        onNote = { note -> putInGap(exercise.notes[note], note) },
+                        typing = gapTyping,
+                        onTyping = { gapTyping = it },
+                        typed = typed,
+                        onTypedChange = { typed = it },
+                        selected = gapSelected.takeIf { gapWords.getOrNull(it)?.isEmpty() == true } ?: firstEmpty(gapWords),
+                        onTyped = submitTyped,
+                    )
+                }
+            }
+            is ExerciseView.MatchPairs -> {
+                {
+                    MatchPairsAnswer(
+                        exercise,
+                        joined = joined.withIndex().filter { it.value >= 0 }.associate { it.index to it.value },
+                        selected = pairSelected.takeIf { it >= 0 },
+                        shaken = shaken,
+                        answering = answering,
+                        onLeft = { word ->
+                            pairSelected = word
+                            clipOf(exercise.left[word])?.let { onPlay(it, false) }
+                        },
+                        onRight = { meaning ->
+                            val word = pairSelected
+                            if (word >= 0) {
+                                if (exercise.match[word] == meaning) {
+                                    haptics.right()
+                                    joined = joined.toMutableList().also { it[word] = meaning }
+                                    pairSelected = -1
+                                    if (joined.none { it < 0 }) onAnswer(Answer.Pairs(wrongPairs))
+                                } else {
+                                    haptics.wrong()
+                                    wrongPairs++
+                                    shaken = meaning to wrongPairs
+                                }
+                            }
+                        },
+                    )
+                }
+            }
+            is ExerciseView.TrueFalse -> {
+                {
+                    TrueFalseAnswer(
+                        exercise,
+                        marks = marks.map { if (it < 0) null else it == 1 },
+                        feedback = feedback,
+                        onMark = { index, value -> marks = marks.toMutableList().also { it[index] = if (value) 1 else 0 } },
+                    )
+                    if (exercise.heard) CantListen(answering, onCantListen)
+                }
+            }
+            is ExerciseView.OrderLines -> {
+                {
+                    OrderLinesAnswer(
+                        exercise,
+                        placed = placed,
+                        feedback = feedback,
+                        onPlace = { line -> if (line !in placed) placed = placed + line },
+                        onTakeBack = { line -> placed = placed - line },
+                    )
+                }
+            }
         },
     ) {
         // A Replay and a Test have no Review, so the labels never meet.
@@ -172,6 +304,27 @@ internal fun PlayerScreen(
             is ExerciseView.ListenType ->
                 ListenPrompt(stringResource(R.string.listen_type_instruction), exercise.audio, playing, answering, onPlay, instruction)
             is ExerciseView.ChoosePolish -> BasePromptCard(stringResource(R.string.choose_polish_instruction), exercise.prompt, instruction, onPlay)
+            is ExerciseView.FillGaps -> FillGapsPrompt(
+                exercise,
+                filled = gapWords.map { it.ifEmpty { null } },
+                selected = gapSelected.takeIf { gapWords.getOrNull(it)?.isEmpty() == true } ?: firstEmpty(gapWords),
+                feedback = feedback,
+                onGap = { gap ->
+                    if (gapWords[gap].isEmpty()) {
+                        gapSelected = gap
+                    } else {
+                        // A filled gap gives its word back: the note to the bank, or the typed word away.
+                        gapWords = gapWords.toMutableList().also { it[gap] = "" }
+                        gapNotes = gapNotes.toMutableList().also { it[gap] = -1 }
+                        gapSelected = gap
+                    }
+                },
+                instruction = instruction,
+                onPlay = onPlay,
+            )
+            is ExerciseView.MatchPairs -> MatchPairsPrompt(instruction, onPlay)
+            is ExerciseView.TrueFalse -> TrueFalsePrompt(exercise, answering, playing, instruction, onPlay, onPlayAll)
+            is ExerciseView.OrderLines -> OrderLinesPrompt(exercise, instruction, onPlay)
         }
     }
 }

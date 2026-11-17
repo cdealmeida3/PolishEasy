@@ -90,14 +90,12 @@ data class UnitCompletedView(val number: Int, val title: String)
 data class TipView(
     val title: String,
     val body: String,
-    val conjugation: ConjugationTableView? = null,
+    /** A grammar table, or a verb's forms as one, under the body. */
+    val table: GrammarTableView? = null,
     val polish: List<IntRange> = emptyList(),
+    val kind: TipKind = TipKind.NOTE,
+    val id: String = "",
 )
-
-/** A verb's forms for every person, in the usual order. */
-data class ConjugationTableView(val verb: String, val meaning: String, val rows: List<ConjugationRow>)
-
-data class ConjugationRow(val person: Person, val form: String)
 
 /** A sentence with one gap where the verb form belongs. [meaning] is the whole sentence in the Base Language. */
 data class GapSentence(val before: String, val after: String, val meaning: String)
@@ -141,6 +139,36 @@ sealed interface ExerciseView {
      * the Base Language, and picks the Polish for it from [options].
      */
     data class ChoosePolish(val prompt: String, val options: List<String>) : ExerciseView
+
+    /**
+     * The Learner fills the gaps between [parts] (one more than the gaps) from the sticky [notes],
+     * each used once, or types a word. [meaning] is the whole text in the Base Language.
+     */
+    data class FillGaps(val parts: List<String>, val notes: List<String>, val meaning: String) : ExerciseView {
+        val gaps: Int get() = parts.size - 1
+    }
+
+    /**
+     * The Learner joins each Polish word on the [left] to its meaning on the [right]. [match] gives,
+     * for each word on the left, the place of its meaning on the right: a wrong line is shaken off
+     * at once, so the screen knows the pairs, and the answer says how many lines were wrong.
+     */
+    data class MatchPairs(val left: List<String>, val right: List<String>, val match: List<Int>) : ExerciseView
+
+    /**
+     * The Learner marks each of the [statements] P or N, after reading the [lines], or hearing them
+     * when [heard], a Clip a line in [clips]. [meaning] says what the text is.
+     */
+    data class TrueFalse(
+        val lines: List<String>,
+        val meaning: String,
+        val statements: List<StatementView>,
+        val heard: Boolean = false,
+        val clips: List<ClipView> = emptyList(),
+    ) : ExerciseView
+
+    /** The Learner puts the [lines] of a dialogue, given mixed, in order. [prompt] is the situation. */
+    data class OrderLines(val prompt: String, val lines: List<String>) : ExerciseView
 }
 
 /** The Learner's response to an Exercise. */
@@ -151,6 +179,18 @@ sealed interface Answer {
 
     /** The words of the tiles the Learner placed, in order. */
     data class Tiles(val words: List<String>) : Answer
+
+    /** What is in each gap, in order, from a note or typed. */
+    data class Gaps(val words: List<String>) : Answer
+
+    /** All pairs joined, after [wrong] lines that did not match. */
+    data class Pairs(val wrong: Int) : Answer
+
+    /** P (true) or N (false) for each statement, in order. */
+    data class Marks(val values: List<Boolean>) : Answer
+
+    /** The lines in the order the Learner put them. */
+    data class Order(val lines: List<String>) : Answer
 }
 
 /**
@@ -163,6 +203,10 @@ data class Feedback(
     val correctAnswer: String,
     val accentWarning: Boolean = false,
     val audio: ClipView? = null,
+    /** For an Exercise of several parts (gaps, statements, lines), whether each was right. */
+    val parts: List<Boolean> = emptyList(),
+    /** Clips to play one after another once answered, such as the finished dialogue. */
+    val clips: List<ClipView> = emptyList(),
 )
 
 /**
@@ -507,7 +551,7 @@ class CourseEngine(
         check(state.remaining.isNotEmpty()) { "Every Exercise of Daily Set ${set.id} has already been answered" }
         val exercise = course.exercises.getValue(state.remaining.first())
         val feedback = check(exercise, answer, playing.reading)
-            .let { it.copy(audio = if (playing.sound) audioFor(exercise, it) else null) }
+            .let { it.copy(audio = if (playing.sound) audioFor(exercise, it) else null, clips = if (playing.sound) clipsFor(exercise) else emptyList()) }
         val items = if (playing.replay || exercise.id in state.missed) emptyMap() else itemsAfter(exercise, feedback.correct)
         val rest = state.remaining.drop(1)
         playing.state = if (feedback.correct) {
@@ -602,6 +646,10 @@ class CourseEngine(
             is ExerciseView.ListenChoose -> InstructionKind.LISTEN_CHOOSE
             is ExerciseView.ListenType -> InstructionKind.LISTEN_TYPE
             is ExerciseView.ChoosePolish -> InstructionKind.CHOOSE_POLISH
+            is ExerciseView.FillGaps -> InstructionKind.FILL_GAPS
+            is ExerciseView.MatchPairs -> InstructionKind.MATCH_PAIRS
+            is ExerciseView.TrueFalse -> if (view.heard) InstructionKind.LISTEN_TRUE_FALSE else InstructionKind.TRUE_FALSE
+            is ExerciseView.OrderLines -> InstructionKind.ORDER_LINES
         }
         val instruction = course.instructions[kind] ?: return null
         return InstructionView(
@@ -778,6 +826,34 @@ class CourseEngine(
             } else {
                 ExerciseView.ListenType(clipOf(exercise, exercise.acceptedAnswers.first()))
             }
+        is FillGaps -> ExerciseView.FillGaps(
+            parts = checkNotNull(gapParts(exercise.text)) { "Exercise ${exercise.id} has a gap that is not $GAP" },
+            notes = notesOf(exercise),
+            meaning = localize(exercise.meaning),
+        )
+        is MatchPairs -> {
+            val order = meaningOrder(exercise)
+            ExerciseView.MatchPairs(
+                left = exercise.pairs.map { it.polish },
+                right = order.map { localize(exercise.pairs[it].meaning) },
+                match = exercise.pairs.indices.map(order::indexOf),
+            )
+        }
+        is TrueFalse -> {
+            val heard = exercise.listen && !playing.reading
+            ExerciseView.TrueFalse(
+                lines = exercise.lines,
+                meaning = localize(exercise.meaning),
+                statements = exercise.statements.map { StatementView(it.text, localize(it.meaning)) },
+                heard = heard,
+                clips = when {
+                    heard -> exercise.lines.map { clipOf(exercise, it) }
+                    playing.sound -> exercise.lines.mapNotNull(course::clipFor)
+                    else -> emptyList()
+                },
+            )
+        }
+        is OrderLines -> ExerciseView.OrderLines(localize(exercise.meaning), mixedLines(exercise))
     }
 
     /** The Clip a listening Exercise plays. The loader guarantees there is one. */
@@ -789,15 +865,28 @@ class CourseEngine(
         return TipView(
             title = localize(tip.title),
             body = body.text,
-            conjugation = tip.conjugation?.let { table ->
-                ConjugationTableView(
-                    verb = table.verb,
-                    meaning = localize(table.meaning),
-                    rows = Person.entries.map { ConjugationRow(it, table.forms.getValue(it)) },
-                )
-            },
+            table = tip.table?.let { viewOf(it, it.title[baseLanguage]) }
+                ?: tip.conjugation?.let { viewOf(it, localize(it.meaning)) },
             polish = body.polish,
+            kind = tip.kind,
+            id = tip.id,
         )
+    }
+
+    /**
+     * The Grammar shelf, the book's *Komentarze gramatyczne*: by chapter, every Tip with a table
+     * from the sections the Learner has completed, in the book's order. With [unitId], that chapter
+     * only. A chapter with none yet is left out unless asked for.
+     */
+    fun grammar(unitId: String? = null): List<GrammarChapterView> {
+        val completed = progress.completedDailySets().keys
+        return course.levels.flatMap { it.units }.filter { unitId == null || it.id == unitId }.mapNotNull { unit ->
+            val tabled = unit.dailySets.map { set -> set to set.tips.filter { it.table != null || it.conjugation != null } }
+            val done = tabled.filter { it.first.id in completed }.flatMap { it.second }
+            val all = tabled.sumOf { it.second.size }
+            if (all == 0 || (done.isEmpty() && unitId == null)) return@mapNotNull null
+            GrammarChapterView(unit.id, unit.number, lessons.titleOf(unit), unit.accent, done.map(::view), toCome = all - done.size)
+        }
     }
 
     /** [reading] when a listening Exercise was shown in its reading form, where a listen-and-type one also takes its reading answers. */
@@ -820,6 +909,19 @@ class CourseEngine(
             (answer as Answer.Typed).text,
             if (reading) exercise.acceptedAnswers + exercise.readingAnswers else exercise.acceptedAnswers,
         )
+        is FillGaps -> checkGaps(exercise, (answer as Answer.Gaps).words)
+        is MatchPairs -> Feedback(
+            correct = (answer as Answer.Pairs).wrong == 0,
+            correctAnswer = exercise.pairs.joinToString("\n") { "${it.polish}: ${localize(it.meaning)}" },
+        )
+        is TrueFalse -> checkMarks(exercise, (answer as Answer.Marks).values)
+        is OrderLines -> checkOrder(exercise, (answer as Answer.Order).lines)
+    }
+
+    /** The Clips to play one after another once [exercise] is answered: the finished dialogue. */
+    private fun clipsFor(exercise: Exercise): List<ClipView> = when (exercise) {
+        is OrderLines -> exercise.lines.mapNotNull(course::clipFor).takeIf { it.size == exercise.lines.size }.orEmpty()
+        else -> emptyList()
     }
 
     /** The Clip of the Polish that [feedback] on [exercise] is about, if it has one. */
@@ -832,6 +934,9 @@ class CourseEngine(
         // What was spoken, whichever spelling was matched.
         is ListenChoose -> course.clipFor(exercise.text)
         is ListenType -> course.clipFor(exercise.acceptedAnswers.first())
+        is FillGaps -> course.clipFor(filledGaps(exercise.text, exercise.gaps.map { it.first() }))
+        // The pairs were heard as they were joined, the text before it was marked, and the dialogue plays as a whole.
+        is MatchPairs, is TrueFalse, is OrderLines -> null
     }
 
     /**
@@ -866,6 +971,9 @@ class CourseEngine(
         is Conjugation -> exercise.sentenceMeaning?.let(::localize)
         is ListenChoose -> localize(exercise.meaning)
         is ListenType -> localize(exercise.meaning)
+        is FillGaps -> localize(exercise.meaning)
+        // Their meaning was in sight all along.
+        is MatchPairs, is TrueFalse, is OrderLines -> null
     }
 
     private fun localize(text: Localized): String = text.getValue(baseLanguage)

@@ -432,6 +432,139 @@ class ScreenshotsTest {
         shot("126-settings-class-audio")
     }
 
+    @Test
+    fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `the book's Exercises, a table Tip and the Grammar shelf in the dark theme`() = bookExercisesTour("dark")
+
+    @Test
+    fun `the book's Exercises, a table Tip and the Grammar shelf at the largest font size`() = atTheLargestFontSize { bookExercisesTour("large") }
+
+    /**
+     * Chapter 0's section Ćwiczenia over the real course: pairs matched (one wrong, shaken off, then
+     * the lines drawn), gaps filled from sticky notes and typed, a dialogue put in order, a text
+     * heard and read to mark true or false, an Uwaga callout; then section W szkole's Tip with its
+     * gender table, and the Grammar shelf from the Lesson screen and from Settings.
+     */
+    private fun bookExercisesTour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun press(text: String) {
+            val node = screen.onNode(hasText(text) and hasClickAction())
+            runCatching { node.performScrollTo() }
+            node.performClick()
+            screen.waitForIdle()
+        }
+
+        fun player() = viewModel?.screen as Screen.Player
+
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread {
+            model.openLesson("kpk1-l00")
+            model.openSection("kpk1-l00-e")
+        }
+        screen.waitForIdle()
+        tap(R.string.action_continue)
+
+        // Match the pairs.
+        shot("127-match-pairs")
+        screen.mainClock.autoAdvance = false
+        press("posłuchać")
+        press("repeat")
+        screen.mainClock.advanceTimeBy(120)
+        shot("127-match-pairs-wrong")
+        screen.mainClock.autoAdvance = true
+        listOf("posłuchać" to "listen", "powtórzyć" to "repeat", "przeczytać" to "read").forEach { (word, meaning) ->
+            press(word)
+            press(meaning)
+        }
+        shot("127-match-pairs-joined")
+        listOf("napisać" to "write", "uzupełnić" to "fill in").forEach { (word, meaning) ->
+            press(word)
+            press(meaning)
+        }
+        shot("127-match-pairs-answered")
+        tap(R.string.action_continue)
+
+        // Fill the gaps from the sticky notes.
+        shot("128-fill-gaps")
+        press("posłuchać")
+        shot("128-fill-gaps-one")
+        press("powtórzyć")
+        press(app.getString(R.string.action_check))
+        shot("128-fill-gaps-right")
+        tap(R.string.action_continue)
+        screen.runOnUiThread { model.answer(rightAnswer(course, player().exerciseId, player().exercise)) }
+        tap(R.string.action_continue)
+
+        // Put the dialogue in order.
+        listOf("Dzień dobry!", "Dzień dobry! Proszę imię i nazwisko.").forEach(::press)
+        shot("129-order-lines")
+        listOf("Ewa Nowak.", "Dziękuję.").forEach(::press)
+        press(app.getString(R.string.action_check))
+        shot("129-order-lines-right")
+        tap(R.string.action_continue)
+
+        // A text heard, then read, to mark true or false.
+        shot("130-true-false-heard")
+        screen.runOnUiThread { model.cantListenNow() }
+        screen.waitForIdle()
+        shot("130-true-false-read")
+        listOf(true, false, true, false).forEachIndexed { index, value ->
+            val label = if (value) R.string.true_false_true else R.string.true_false_false
+            screen.onNodeWithContentDescription(app.getString(label, index + 1)).performScrollTo().performClick()
+        }
+        press(app.getString(R.string.action_check))
+        shot("130-true-false-answered")
+        tap(R.string.action_continue)
+
+        // A gap typed instead.
+        press(app.getString(R.string.fill_gaps_type))
+        type("nauczyciel")
+        shot("131-fill-gaps-typing")
+        screen.runOnUiThread { model.answer(rightAnswer(course, player().exerciseId, player().exercise)) }
+        tap(R.string.action_continue)
+
+        // The Uwaga callout before the people words.
+        shot("132-tip-uwaga")
+
+        // The table Tip of W szkole, and the Grammar shelf once it is done.
+        screen.runOnUiThread {
+            model.openLesson("kpk1-l00")
+            model.openSection("kpk1-l00-c")
+        }
+        screen.waitForIdle()
+        shot("133-tip-table")
+        while (true) {
+            when (val showing = model.screen) {
+                is Screen.Tip -> screen.runOnUiThread { model.continueToNext() }
+                is Screen.Player -> screen.runOnUiThread {
+                    if (showing.feedback == null) model.answer(rightAnswer(course, showing.exerciseId, showing.exercise)) else model.continueToNext()
+                }
+                else -> break
+            }
+            screen.waitForIdle()
+        }
+        screen.runOnUiThread { model.openLesson("kpk1-l00") }
+        screen.waitForIdle()
+        screen.onNodeWithText(app.getString(R.string.lesson_grammar_note, 1, 1)).performScrollTo()
+        shot("134-lesson-grammar")
+        screen.onNodeWithText(app.getString(R.string.lesson_grammar_note, 1, 1)).performClick()
+        shot("134-grammar-chapter")
+        back()
+        back()
+        tap(R.string.nav_settings)
+        screen.onNodeWithText(app.getString(R.string.grammar_title)).performScrollTo()
+        shot("135-settings-grammar")
+        screen.onNodeWithText(app.getString(R.string.grammar_title)).performClick()
+        shot("135-grammar-shelf")
+    }
+
     /** Plays the Test showing to its end, answering the first [wrongly] questions wrongly and the rest rightly. */
     private fun playTest(model: CourseViewModel, course: com.polisheasy.engine.Course, wrongly: Int) {
         var asked = 0

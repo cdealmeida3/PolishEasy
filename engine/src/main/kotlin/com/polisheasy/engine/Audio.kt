@@ -34,6 +34,10 @@ internal fun spoken(exercise: Exercise): List<String> = when (exercise) {
     is Conjugation -> exercise.acceptedAnswers.map { form -> exercise.sentence?.let { filled(it, form) } ?: form }
     is ListenChoose -> listOf(exercise.text)
     is ListenType -> exercise.acceptedAnswers.take(1)
+    is FillGaps -> listOf(filledGaps(exercise.text, exercise.gaps.map { it.first() }))
+    is MatchPairs -> exercise.pairs.map { it.polish }
+    is TrueFalse -> exercise.lines
+    is OrderLines -> exercise.lines
 }
 
 /** Every Polish text the course can speak, once each, in Path order, then the instructions. Each needs a Clip. */

@@ -1,0 +1,394 @@
+{
+  "id": "kpk1-l00-e",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l00-e-t01",
+      "before": "kpk1-l00-e-e01",
+      "title": {
+        "en": "Exercises as the book sets them"
+      },
+      "body": {
+        "en": "Now the chapter's words in the book's own exercises. Join each word to its meaning, fill the gaps from the sticky notes, put a dialogue in order, and say what is *prawda*, true, or *nieprawda*, false."
+      }
+    },
+    {
+      "id": "kpk1-l00-e-t02",
+      "before": "kpk1-l00-e-e07",
+      "kind": "uwaga",
+      "title": {
+        "en": "A man's word in -a"
+      },
+      "body": {
+        "en": "*Kolega* ends in *-a*, and it is masculine. Most words in *-a* are feminine, but a word for a man is masculine whatever its ending. So it is *kolega* for a man and *koleżanka* for a woman."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l00-e-e01",
+      "pairs": [
+        {
+          "polish": "posłuchać",
+          "meaning": {
+            "en": "listen"
+          }
+        },
+        {
+          "polish": "powtórzyć",
+          "meaning": {
+            "en": "repeat"
+          }
+        },
+        {
+          "polish": "przeczytać",
+          "meaning": {
+            "en": "read"
+          }
+        },
+        {
+          "polish": "napisać",
+          "meaning": {
+            "en": "write"
+          }
+        },
+        {
+          "polish": "uzupełnić",
+          "meaning": {
+            "en": "fill in"
+          }
+        }
+      ],
+      "items": [
+        "posluchac",
+        "powtorzyc",
+        "przeczytac",
+        "napisac",
+        "uzupelnic"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l00-e-e02",
+      "text": "Proszę ___ i ___.",
+      "meaning": {
+        "en": "Listen and repeat, please."
+      },
+      "gaps": [
+        [
+          "posłuchać"
+        ],
+        [
+          "powtórzyć"
+        ]
+      ],
+      "distractors": [
+        "napisać"
+      ],
+      "items": [
+        "prosze",
+        "posluchac",
+        "i",
+        "powtorzyc"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l00-e-e03",
+      "pairs": [
+        {
+          "polish": "lekcja",
+          "meaning": {
+            "en": "a lesson"
+          }
+        },
+        {
+          "polish": "dialog",
+          "meaning": {
+            "en": "a dialogue"
+          }
+        },
+        {
+          "polish": "tekst",
+          "meaning": {
+            "en": "a text"
+          }
+        },
+        {
+          "polish": "ćwiczenie",
+          "meaning": {
+            "en": "an exercise"
+          }
+        },
+        {
+          "polish": "strona",
+          "meaning": {
+            "en": "a page"
+          }
+        },
+        {
+          "polish": "polecenie",
+          "meaning": {
+            "en": "an instruction"
+          }
+        }
+      ],
+      "items": [
+        "lekcja",
+        "dialog",
+        "tekst",
+        "cwiczenie",
+        "strona",
+        "polecenie"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l00-e-e04",
+      "lines": [
+        "Dzień dobry!",
+        "Dzień dobry! Proszę imię i nazwisko.",
+        "Ewa Nowak.",
+        "Dziękuję."
+      ],
+      "meaning": {
+        "en": "A student gives her name to the teacher on the first day."
+      },
+      "items": [
+        "dzien-dobry",
+        "prosze",
+        "imie",
+        "nazwisko",
+        "dziekuje"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l00-e-e05",
+      "lines": [
+        "To jest Ewa, nauczycielka.",
+        "To jest Adam, student.",
+        "A to jest Anna, studentka."
+      ],
+      "meaning": {
+        "en": "Who is who in the class."
+      },
+      "statements": [
+        {
+          "text": "Ewa to nauczycielka.",
+          "meaning": {
+            "en": "Ewa is a teacher."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam to nauczyciel.",
+          "meaning": {
+            "en": "Adam is a teacher."
+          },
+          "true": false
+        },
+        {
+          "text": "Anna to studentka.",
+          "meaning": {
+            "en": "Anna is a student."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam to student.",
+          "meaning": {
+            "en": "Adam is a student."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "nauczycielka",
+        "student",
+        "studentka",
+        "to",
+        "byc-jest"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l00-e-e06",
+      "text": "Adam to ___. Ewa to ___.",
+      "meaning": {
+        "en": "Adam is a teacher. Ewa is a teacher."
+      },
+      "gaps": [
+        [
+          "nauczyciel"
+        ],
+        [
+          "nauczycielka"
+        ]
+      ],
+      "distractors": [
+        "studentka"
+      ],
+      "items": [
+        "adam",
+        "nauczyciel",
+        "ewa",
+        "nauczycielka",
+        "to"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l00-e-e07",
+      "pairs": [
+        {
+          "polish": "nauczyciel",
+          "meaning": {
+            "en": "a teacher (a man)"
+          }
+        },
+        {
+          "polish": "nauczycielka",
+          "meaning": {
+            "en": "a teacher (a woman)"
+          }
+        },
+        {
+          "polish": "kolega",
+          "meaning": {
+            "en": "a classmate (a man)"
+          }
+        },
+        {
+          "polish": "koleżanka",
+          "meaning": {
+            "en": "a classmate (a woman)"
+          }
+        },
+        {
+          "polish": "chłopak",
+          "meaning": {
+            "en": "a boy; a boyfriend"
+          }
+        },
+        {
+          "polish": "dziewczyna",
+          "meaning": {
+            "en": "a girl; a girlfriend"
+          }
+        }
+      ],
+      "items": [
+        "nauczyciel",
+        "nauczycielka",
+        "kolega",
+        "kolezanka",
+        "chlopak",
+        "dziewczyna"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l00-e-e08",
+      "text": "Proszę ___ nazwisko.",
+      "meaning": {
+        "en": "Spell the surname, please."
+      },
+      "gaps": [
+        [
+          "przeliterować"
+        ]
+      ],
+      "distractors": [
+        "przeczytać",
+        "wybrać"
+      ],
+      "items": [
+        "prosze",
+        "przeliterowac",
+        "nazwisko"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-e-e09",
+      "prompt": {
+        "en": "this is Ewa, a teacher"
+      },
+      "acceptedAnswers": [
+        "to jest Ewa, nauczycielka"
+      ],
+      "distractors": [
+        "nauczyciel",
+        "nie"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "ewa",
+        "nauczycielka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l00-e-e10",
+      "prompt": {
+        "en": "Adam is a student (a man)."
+      },
+      "acceptedAnswers": [
+        "Adam to student",
+        "Adam jest studentem"
+      ],
+      "items": [
+        "adam",
+        "to",
+        "student"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l00-e-e11",
+      "text": "koleżanka",
+      "meaning": {
+        "en": "a classmate; a friend (a woman)"
+      },
+      "distractors": [
+        "kolega",
+        "nauczycielka"
+      ],
+      "items": [
+        "kolezanka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l00-e-e12",
+      "prompt": {
+        "en": "a classmate (a man) and a classmate (a woman)"
+      },
+      "acceptedAnswers": [
+        "kolega i koleżanka",
+        "koleżanka i kolega"
+      ],
+      "distractors": [
+        "studentka",
+        "tak"
+      ],
+      "items": [
+        "kolega",
+        "i",
+        "kolezanka"
+      ]
+    }
+  ]
+}

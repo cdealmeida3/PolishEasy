@@ -73,6 +73,9 @@ data class LessonView(
     val words: Int,
     val checkpoint: CheckpointView,
     val coming: Boolean,
+    /** How many of its grammar tables are on the Grammar shelf (from completed sections), and how many it has. */
+    val grammarDone: Int = 0,
+    val grammarTotal: Int = 0,
 )
 
 /**
@@ -166,8 +169,12 @@ internal class Lessons(
                 sealed = sealed(unit.id),
             ),
             coming = unit.coming || unit.dailySets.isEmpty(),
+            grammarDone = unit.dailySets.filter { it.id in completed }.sumOf { set -> set.tips.count(::tabled) },
+            grammarTotal = unit.dailySets.sumOf { set -> set.tips.count(::tabled) },
         )
     }
+
+    private fun tabled(tip: Tip): Boolean = tip.table != null || tip.conjugation != null
 
     /** The chapter's Słownik: every word it introduces, in the order it does. */
     fun dictionary(unitId: String): List<WordView> = wordsOf(unit(unitId)).map(::word)

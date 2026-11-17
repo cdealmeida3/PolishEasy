@@ -126,9 +126,33 @@ fun polishContent(files: ContentFiles): PolishContent {
                 is ListenType -> (exercise.acceptedAnswers + exercise.readingAnswers).forEach {
                     sentence(it, exercise.meaning, use(PolishRole.ANSWER))
                 }
+                is FillGaps -> {
+                    // Every answer of a gap in the text, the other gaps filled with their first.
+                    val firsts = exercise.gaps.map { it.first() }
+                    sentence(filledGaps(exercise.text, firsts), exercise.meaning, use(PolishRole.ANSWER))
+                    exercise.gaps.forEachIndexed { index, accepted ->
+                        accepted.drop(1).forEach { other ->
+                            sentence(filledGaps(exercise.text, firsts.toMutableList().also { it[index] = other }), exercise.meaning, use(PolishRole.ANSWER))
+                        }
+                    }
+                    exercise.distractors.forEach { sentence(it, null, use(PolishRole.DISTRACTOR)) }
+                }
+                is MatchPairs -> exercise.pairs.forEach { sentence(it.polish, it.meaning, use(PolishRole.PROMPT)) }
+                is TrueFalse -> {
+                    exercise.lines.forEach { sentence(it, null, use(PolishRole.PROMPT)) }
+                    exercise.statements.forEach { sentence(it.text, it.meaning, use(PolishRole.PROMPT)) }
+                }
+                is OrderLines -> exercise.lines.forEach { sentence(it, null, use(PolishRole.ANSWER)) }
             }
         }
         dailySet.tips.forEach { tip ->
+            tip.table?.let { table ->
+                val use = PolishUse(file, tip.id, PolishRole.TABLE)
+                table.rows.forEach { row ->
+                    row.header?.let { sentence(it, null, use) }
+                    row.cells.forEach { sentence(cellText(it), null, use) }
+                }
+            }
             tip.conjugation?.let { table ->
                 val use = PolishUse(file, tip.id, PolishRole.TABLE)
                 Person.entries.forEach { person ->
@@ -160,7 +184,9 @@ fun polishContent(files: ContentFiles): PolishContent {
                 // The marks are not part of what is read, so marking a Tip does not send it back to review.
                 val body = readPolishMarks(tip.body[language].orEmpty())
                 val lines = listOf(tip.title[language].orEmpty(), body.text) +
-                    tip.conjugation?.let { table -> Person.entries.mapNotNull { table.forms[it] } }.orEmpty()
+                    tip.conjugation?.let { table -> Person.entries.mapNotNull { table.forms[it] } }.orEmpty() +
+                    tip.table?.let { tableLines(it, language) }.orEmpty() +
+                    listOfNotNull(tip.kind.takeIf { it != TipKind.NOTE }?.name)
                 TipText(file, tip.id, lines.joinToString("\n") { it.trim() }, polish = body.polish.map { body.text.substring(it) })
             }
         },
@@ -172,5 +198,10 @@ fun polishContent(files: ContentFiles): PolishContent {
         possessives = content.course().let { course -> course.possessives.mapNotNull { (gender, id) -> course.itemsById[id]?.let { GenderedWord(id, it.text, gender) } } },
     )
 }
+
+/** A grammar table as a reviewer reads it: its title, the column heads, then a line a row, the head first. */
+private fun tableLines(table: GrammarTable, language: String): List<String> =
+    listOf(table.title[language].orEmpty(), table.columns.joinToString(" | ") { listOfNotNull(it.gender?.mark, it.header).joinToString(" ") }) +
+        table.rows.map { row -> (listOfNotNull(row.case?.let { "${it.mark} (${it.question})" } ?: row.header) + row.cells.map(::cellText)).joinToString(" | ") }
 
 private fun normalizeForm(text: String): String = text.trim().lowercase(java.util.Locale.ROOT)
