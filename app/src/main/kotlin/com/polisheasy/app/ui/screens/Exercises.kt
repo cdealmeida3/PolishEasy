@@ -151,7 +151,7 @@ internal fun ConjugationPrompt(
 
 /** The person in the Base Language, as the Learner is asked for it. */
 @Composable
-private fun personLabel(person: Person): String = stringResource(
+internal fun personLabel(person: Person): String = stringResource(
     when (person) {
         Person.I -> R.string.person_i
         Person.YOU -> R.string.person_you

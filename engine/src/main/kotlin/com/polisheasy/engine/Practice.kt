@@ -1,0 +1,286 @@
+package com.polisheasy.engine
+
+import java.time.Clock
+import java.time.LocalDate
+import kotlin.random.Random
+
+/** The kinds of Game, as the Practice screen groups them. */
+enum class GameGroup { WORDS, PHRASES, VERBS, SOUNDS, NUMBERS }
+
+/**
+ * A Game of Practice. [id] is stable: Bests are saved under it. With [fewestWins] the Best is the
+ * lowest result, such as the fewest turns; otherwise the highest, such as the most right.
+ */
+enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = false) {
+    VERB_CHALLENGE("verb-challenge", GameGroup.VERBS),
+}
+
+/** Whether a Game can be played now. */
+enum class GameState {
+    READY,
+
+    /** The Learner has not yet learned enough for it. */
+    NEEDS_MORE,
+
+    /** It is only listening, and sound is off. */
+    NEEDS_SOUND,
+}
+
+/**
+ * Practice as its screen shows it. [open] once today's Daily Set is completed. [roundsToday] is
+ * how many Rounds were finished today; it resets each day and nothing is bought with it.
+ */
+data class PracticeView(val open: Boolean, val roundsToday: Int, val games: List<GameView>)
+
+/** A Game on the Practice screen: whether it can be played, and the Best of the way it was [lastPlayed]. */
+data class GameView(
+    val game: Game,
+    val state: GameState,
+    val best: Int? = null,
+    val lastPlayed: List<OptionView> = emptyList(),
+)
+
+/**
+ * One way to play, such as a verb or a level. [id] is stable. [label] is set when the name comes
+ * from the content, such as a verb or a Unit's title; otherwise the app names it.
+ */
+data class OptionView(val id: String, val label: String? = null)
+
+/** One thing to choose before a Round, such as the verb: its [options] and the one [selected]. */
+data class ChoiceView(val id: String, val options: List<OptionView>, val selected: String)
+
+/** A Game before a Round: what there is to choose, and the Best of what is chosen now. */
+data class GameSetup(val game: Game, val choices: List<ChoiceView>, val best: Int? = null) {
+    /** The id of the option selected for each choice, in order: the way the Round will be played. */
+    val selected: List<String> get() = choices.map { it.selected }
+}
+
+/** What a Round came to: [value] is what the Best is kept of, out of [of] where that means something. */
+data class Score(val value: Int, val of: Int? = null)
+
+/**
+ * One play of a Game from start to result. Each Game has its own, an immutable state with moves
+ * that return the next state. [played] is the way it is being played, as option ids.
+ */
+interface Round {
+    val game: Game
+    val played: List<String>
+
+    /** How far through the Round the Learner is: [done] of [total]. */
+    val done: Int
+    val total: Int
+    val finished: Boolean
+
+    /**
+     * Which of its steps the Round is showing. It changes when what is shown is replaced, which the
+     * screen slides; it stays the same while the Learner answers, and while one thing is filled in bit by bit.
+     */
+    val step: Int
+
+    /** What the Round came to. Read it once the Round is [finished]. */
+    val score: Score
+
+    /** What this Round asks, by stable keys, so the next Round can ask something else first. */
+    val asked: List<String>
+}
+
+/**
+ * A finished Round with the Best it leaves. [newBest] when it beat the Best there was;
+ * [first] when there was none, so this result is now the Best.
+ */
+data class RoundResult(
+    val game: Game,
+    val played: List<String>,
+    val score: Score,
+    val best: Int,
+    val newBest: Boolean = false,
+    val first: Boolean = false,
+)
+
+/** What was answered to a question: [text] as given, and whether it was right. */
+data class Given(val text: String, val correct: Boolean)
+
+/**
+ * A run of questions, each answered once. A right answer and a wrong one both move on; only the
+ * first try counts.
+ */
+data class Run<Q>(
+    val questions: List<Q>,
+    val index: Int = 0,
+    /** Whether each question answered so far was right. */
+    val results: List<Boolean> = emptyList(),
+    /** The answer to the question being shown, until the Learner moves on. */
+    val given: Given? = null,
+) {
+    val current: Q? get() = questions.getOrNull(index)
+    val finished: Boolean get() = index >= questions.size
+    val firstTry: Int get() = results.count { it }
+
+    /** Answers the question being shown. No change if it is already answered or none is left. */
+    fun answer(text: String, correct: Boolean): Run<Q> =
+        if (given != null || finished) this else copy(given = Given(text, correct), results = results + correct)
+
+    /** Moves on from an answered question. No change while it is unanswered. */
+    fun next(): Run<Q> = if (given == null) this else copy(index = index + 1, given = null)
+}
+
+/** What the Learner has learned: the completed Daily Sets in Path order, and what they hold. */
+internal class Learned(
+    val course: Course,
+    progress: LearnerProgress,
+    private val language: String,
+) {
+    val dailySets: List<DailySet> = progress.completedDailySets().keys.let { completed ->
+        course.path.filter { it.id in completed }
+    }
+
+    /** The Items of completed Daily Sets, once each, in Path order. */
+    val items: List<Item> = dailySets.flatMap { it.itemIds() }.distinct().mapNotNull(course.itemsById::get)
+
+    val itemProgress: Map<String, ItemProgress> = progress.itemProgress()
+
+    fun localize(text: Localized): String = text.getValue(language)
+}
+
+/** The rules of one Game: when it can be played, the ways to play it, and how a Round is made. */
+internal interface GameRules {
+    val game: Game
+
+    fun state(learned: Learned, sound: Boolean): GameState
+
+    /** What there is to choose, each choice with [wanted]'s option selected where it is offered, or else its first. */
+    fun choices(learned: Learned, wanted: List<String>): List<ChoiceView>
+
+    /**
+     * A new Round played the [selected] way. [seen] is what this Game has already asked today, to
+     * ask something else where it can, and [avoidFirst] what the last Round opened with.
+     */
+    fun start(learned: Learned, selected: List<String>, sound: Boolean, random: Random, seen: Set<String>, avoidFirst: String?): Round
+}
+
+/** A choice with the option [wanted] selected if it is among [options], or else the first. */
+internal fun choice(id: String, options: List<OptionView>, wanted: String?): ChoiceView =
+    ChoiceView(id, options, options.firstOrNull { it.id == wanted }?.id ?: options.first().id)
+
+/**
+ * [count] of [from], in a random order, taking first those whose [key] is not in [seen]. The
+ * first is never the one whose key is [avoidFirst] when there is another to put there.
+ */
+internal fun <T> Random.draw(from: List<T>, count: Int, seen: Set<String>, avoidFirst: String?, key: (T) -> String): List<T> {
+    val picked = from.shuffled(this).sortedBy { key(it) in seen }.take(count).shuffled(this)
+    return if (picked.size > 1 && key(picked.first()) == avoidFirst) picked.drop(1) + picked.first() else picked
+}
+
+/**
+ * Practice: the Games outside the Path, open each day once today's Daily Set is completed. It
+ * reads what the Learner has learned and never changes it: a Round saves only the Game's Best, in
+ * [bests], so it cannot advance the Path, raise the Streak or reschedule an Item.
+ */
+class Practice internal constructor(
+    private val course: Course,
+    private val progress: LearnerProgress,
+    private val bests: PracticeProgress,
+    private val clock: Clock,
+    private val baseLanguage: String,
+    private val random: Random,
+    private val isOpen: () -> Boolean,
+) {
+    private val rules: Map<Game, GameRules> = listOf<GameRules>(VerbChallenge).associateBy { it.game }
+
+    /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
+    private var seenOn: LocalDate? = null
+    private val seen = mutableMapOf<Game, MutableSet<String>>()
+    private val lastFirst = mutableMapOf<Game, String>()
+
+    /** Practice as its screen shows it. With [sound] false, a Game that is only listening cannot be played. */
+    fun view(sound: Boolean = true): PracticeView {
+        val learned = learned()
+        return PracticeView(
+            open = isOpen(),
+            roundsToday = bests.roundsOn(today()),
+            games = Game.entries.map { game ->
+                val of = rules.getValue(game)
+                val state = of.state(learned, sound)
+                val last = bests.lastPlayed(game.id)
+                if (state == GameState.NEEDS_MORE || last == null) {
+                    GameView(game, state)
+                } else {
+                    // The way it was last played, if that can still be played; its Best is the one to beat.
+                    val choices = of.choices(learned, last)
+                    val played = choices.map { it.selected }
+                    GameView(
+                        game,
+                        state,
+                        best = bests.best(key(game, played)),
+                        lastPlayed = choices.map { choice -> choice.options.first { it.id == choice.selected } },
+                    )
+                }
+            },
+        )
+    }
+
+    /**
+     * [game] before a Round, with [wanted] selected: the id of an option for each choice, in
+     * order. Without it, the way the Game was last played. An option that is not offered, or no
+     * longer is, gives way to the first of its choice. Fails unless the Game has enough to play with.
+     */
+    fun setup(game: Game, wanted: List<String>? = null): GameSetup {
+        val of = rules.getValue(game)
+        val learned = learned()
+        check(of.state(learned, sound = true) != GameState.NEEDS_MORE) { "$game has nothing to play with yet" }
+        val choices = of.choices(learned, wanted ?: bests.lastPlayed(game.id).orEmpty())
+        return GameSetup(game, choices, bests.best(key(game, choices.map { it.selected })))
+    }
+
+    /**
+     * Starts a Round of [setup]'s Game, played the way it selects. Fails unless Practice is open
+     * and the Game can be played. Nothing is saved until the Round is finished.
+     */
+    fun start(setup: GameSetup, sound: Boolean = true): Round {
+        check(isOpen()) { "Practice is locked until today's Daily Set is completed" }
+        val of = rules.getValue(setup.game)
+        val learned = learned()
+        check(of.state(learned, sound) == GameState.READY) { "${setup.game} cannot be played now" }
+        if (seenOn != today()) {
+            seen.clear()
+            seenOn = today()
+        }
+        val asked = seen.getOrPut(setup.game) { mutableSetOf() }
+        val selected = of.choices(learned, setup.selected).map { it.selected }
+        return of.start(learned, selected, sound, random, asked.toSet(), lastFirst[setup.game]).also { round ->
+            asked += round.asked
+            round.asked.firstOrNull()?.let { lastFirst[setup.game] = it }
+        }
+    }
+
+    /**
+     * Ends a finished [round]: it counts as one of today's Rounds, and its result becomes the Best
+     * of the way it was played if it is the first or beats the one there was. Nothing else is saved.
+     */
+    fun finish(round: Round): RoundResult {
+        check(round.finished) { "The Round of ${round.game} is not finished" }
+        val key = key(round.game, round.played)
+        val previous = bests.best(key)
+        val value = round.score.value
+        val better = previous == null || if (round.game.fewestWins) value < previous else value > previous
+        bests.recordRound(round.game.id, round.played, key, best = value.takeIf { better }, on = today())
+        return RoundResult(
+            round.game,
+            round.played,
+            round.score,
+            best = if (better) value else checkNotNull(previous),
+            newBest = better && previous != null,
+            first = previous == null,
+        )
+    }
+
+    /** The Clip that says [polish], whatever its capitals and spacing, or null if there is none. */
+    fun clipOf(polish: String): ClipView? = course.clipFor(polish)
+
+    private fun learned() = Learned(course, progress, baseLanguage)
+
+    private fun today(): LocalDate = LocalDate.now(clock)
+
+    /** What a Best is saved under: the Game and the way it was played. */
+    private fun key(game: Game, played: List<String>): String = (listOf(game.id) + played).joinToString(":")
+}

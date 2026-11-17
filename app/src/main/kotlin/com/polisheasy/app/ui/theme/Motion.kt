@@ -61,6 +61,9 @@ object Motion {
     /** The size something starts from as it arrives on a screen, such as Home's card when today is done. */
     const val ARRIVE_FROM_SCALE = 0.92f
 
+    /** How long a right answer in a Game stands before the Round moves on by itself. A tap on "Continue" skips it. */
+    const val MOVE_ON_MILLIS = 700L
+
     /** The confetti falling, once. */
     const val CONFETTI_MILLIS = 2200
 

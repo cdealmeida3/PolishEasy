@@ -28,6 +28,14 @@ import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.SoFarView
 import com.polisheasy.engine.StepProgress
 import com.polisheasy.engine.UnitCompletedView
+import com.polisheasy.engine.FilePracticeProgress
+import com.polisheasy.engine.Game
+import com.polisheasy.engine.GameState
+import com.polisheasy.engine.PracticeView
+import com.polisheasy.engine.GameSetup as GameSetupView
+import com.polisheasy.engine.Practice as PracticeGames
+import com.polisheasy.engine.Round as PracticeRound
+import com.polisheasy.engine.RoundResult as RoundResultView
 
 /** What the app is showing. Every rule behind it lives in the course engine. */
 sealed interface Screen {
@@ -95,6 +103,18 @@ sealed interface Screen {
         val steps: StepProgress = StepProgress(0, 0),
     ) : Screen
 
+    /** Practice. [today] is today's Daily Set, which the screen starts or continues while Practice is locked. */
+    data class Practice(val view: PracticeView, val today: Today) : Screen
+
+    /** A Game before a Round, with the ways to play it. */
+    data class GameSetup(val setup: GameSetupView) : Screen
+
+    /** A Round being played. [number] is different for each Round started; [sound] is whether Polish may be said aloud. */
+    data class Round(val round: PracticeRound, val setup: GameSetupView, val number: Int, val sound: Boolean) : Screen
+
+    /** The end of a Round. [setup] is the way it was played, for "Play again". */
+    data class RoundResult(val result: RoundResultView, val setup: GameSetupView) : Screen
+
     data class Summary(
         val correctAnswers: Int,
         val exercises: Int,
@@ -132,7 +152,12 @@ fun courseEngine(context: Context): CourseEngine = CourseEngine(
     clock = Clock.systemDefaultZone(),
 )
 
-class CourseViewModel(application: Application, private val engine: CourseEngine) : AndroidViewModel(application) {
+class CourseViewModel(
+    application: Application,
+    private val engine: CourseEngine,
+    /** The Games, over the same course and progress, with the Bests kept in a file of their own. */
+    private val practice: PracticeGames = engine.practice(FilePracticeProgress(File(application.filesDir, "practice.json"))),
+) : AndroidViewModel(application) {
     /** The one Android builds the view model with: the packaged course and the Learner's saved progress. */
     constructor(application: Application) : this(application, courseEngine(application))
 
@@ -145,6 +170,8 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
     private var replayFromHome = false
 
     private var stepsShown = 0
+
+    private var roundsStarted = 0
 
     /** Set by the answer that completed today's Daily Set, for its Summary. */
     private var streakRaised: StreakRaised? = null
@@ -206,6 +233,52 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
         screen = settingsScreen()
     }
 
+    fun openPractice() {
+        screen = practiceScreen()
+    }
+
+    private fun practiceScreen() = Screen.Practice(practice.view(sound = settings.soundOn), engine.today())
+
+    /** A Game tapped on the Practice screen: what there is to choose before a Round, as it was last played. */
+    fun openGame(game: Game) {
+        screen = Screen.GameSetup(practice.setup(game))
+    }
+
+    /** One of the ways to play chosen: the option [option] for the choice at [choice]. */
+    fun choose(choice: Int, option: String) {
+        val setup = (screen as? Screen.GameSetup)?.setup ?: return
+        val wanted = setup.selected.toMutableList().also { it[choice] = option }
+        screen = Screen.GameSetup(practice.setup(setup.game, wanted))
+    }
+
+    /** "Play" before a Round, and "Play again" after one: a new Round, played the same way. */
+    fun play() {
+        val setup = when (val current = screen) {
+            is Screen.GameSetup -> current.setup
+            is Screen.RoundResult -> current.setup
+            else -> return
+        }
+        // Midnight may have passed, or sound been turned off, since the Game was opened.
+        val sound = settings.soundOn
+        if (practice.view(sound).games.none { it.game == setup.game && it.state == GameState.READY } || !engine.practiceOpen()) {
+            openPractice()
+            return
+        }
+        screen = Screen.Round(practice.start(setup, sound), setup, number = ++roundsStarted, sound = sound)
+    }
+
+    /** A move in the Round being played, as the Round it leaves. The last one ends the Round and saves its result. */
+    fun move(round: PracticeRound) {
+        val playing = screen as? Screen.Round ?: return
+        screen = if (round.finished) Screen.RoundResult(practice.finish(round), playing.setup) else playing.copy(round = round)
+    }
+
+    /** Leaves a Game for the Practice screen. A Round left unfinished is not kept. */
+    fun leaveGame() = openPractice()
+
+    /** The Clip that says [polish] in a Game, if there is one. */
+    fun practiceClipOf(polish: String): ClipView? = practice.clipOf(polish)
+
     /** Turns the Reminder on or off and sets or removes its alarm. */
     fun setReminderEnabled(enabled: Boolean) {
         settings.reminderEnabled = enabled
@@ -244,6 +317,7 @@ class CourseViewModel(application: Application, private val engine: CourseEngine
             is Screen.Home -> screen = home().copy(streakRaisedFrom = current.streakRaisedFrom)
             is Screen.Path -> screen = path()
             is Screen.Settings -> screen = settingsScreen()
+            is Screen.Practice -> screen = practiceScreen()
             else -> Unit
         }
     }

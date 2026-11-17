@@ -64,6 +64,11 @@ class ContrastTest {
             shape("a text field's border", scheme.outline, "background", scheme.background)
             shape("a switch that is off", scheme.outline, "a card", scheme.surfaceContainerLowest)
             shape("the tick on a completed day", scheme.onTertiary, "streak", colors.streak)
+            // A verb's table being filled in a Game.
+            text("the pronouns of a table", scheme.onSurfaceVariant, "secondaryContainer", scheme.secondaryContainer)
+            shape("the tick of a row", colors.success, "secondaryContainer", scheme.secondaryContainer)
+            shape("the cross of a row", colors.caution, "secondaryContainer", scheme.secondaryContainer)
+            shape("the outline of the row asked for", scheme.primary, "secondaryContainer", scheme.secondaryContainer)
             listOf("background" to scheme.background, "a card" to scheme.surfaceContainerLowest).forEach { (name, surface) ->
                 shape("brand", colors.brand, name, surface)
                 shape("success", colors.success, name, surface)

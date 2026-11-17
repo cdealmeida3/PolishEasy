@@ -33,6 +33,11 @@ import com.polisheasy.app.ui.screens.description
 import com.polisheasy.app.ui.screens.fraction
 import com.polisheasy.engine.StepProgress
 import com.polisheasy.app.ui.screens.WelcomeScreen
+import com.polisheasy.app.ui.components.RoundFrame
+import com.polisheasy.app.ui.screens.practice.GameSetupScreen
+import com.polisheasy.app.ui.screens.practice.PracticeScreen
+import com.polisheasy.app.ui.screens.practice.RoundResultScreen
+import com.polisheasy.app.ui.screens.practice.RoundScreen
 
 /** [player] plays the Clips, and is released when the app's screens go. */
 @Composable
@@ -44,7 +49,20 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
     Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         when (val screen = viewModel.screen) {
             Screen.Welcome -> WelcomeScreen(onStart = viewModel::startFromWelcome)
-            is Screen.Home, is Screen.Path, is Screen.Settings -> Tabs(screen, viewModel)
+            is Screen.Home, is Screen.Path, is Screen.Practice, is Screen.Settings -> Tabs(screen, viewModel)
+            is Screen.GameSetup -> {
+                BackHandler(onBack = viewModel::leaveGame)
+                GameSetupScreen(screen.setup, onChoose = viewModel::choose, onPlay = viewModel::play, onBack = viewModel::leaveGame)
+            }
+            is Screen.Round -> Round(screen, viewModel, player)
+            is Screen.RoundResult -> RoundResultScreen(
+                screen.result,
+                onPlayAgain = viewModel::play,
+                onDone = {
+                    player.stop()
+                    viewModel.leaveGame()
+                },
+            )
             is Screen.Tip -> DailySet(screen, screen.shown, screen.steps, viewModel, player)
             is Screen.Player -> DailySet(screen, screen.shown, screen.steps, viewModel, player)
             is Screen.Summary -> {
@@ -133,11 +151,42 @@ private fun DailySet(screen: Screen, shown: Int, progress: StepProgress, viewMod
     }
 }
 
-/** Home, the Path or Settings, with the navigation bar that moves between them. Back goes to Home. */
+/**
+ * The Round being played. Its steps slide as a Daily Set's do, and only the one showing answers
+ * taps. Closing leaves at once: a Round left unfinished is not kept.
+ */
+@Composable
+private fun Round(screen: Screen.Round, viewModel: CourseViewModel, player: Clips) {
+    val shown = screen.number to screen.round.step
+    val current by rememberUpdatedState(shown)
+    BackHandler(onBack = viewModel::leaveGame)
+    DisposableEffect(Unit) { onDispose { player.stop() } }
+    RoundFrame(
+        progress = screen.round.done.toFloat() / screen.round.total.coerceAtLeast(1),
+        progressDescription = stringResource(R.string.round_progress, screen.round.done, screen.round.total),
+        closeLabel = stringResource(R.string.round_close),
+        onClose = viewModel::leaveGame,
+        step = shown,
+    ) { step ->
+        // A step on its way out keeps what it last showed.
+        val held = remember { arrayOf(screen) }
+        if (step == shown) held[0] = screen
+        val showing = held[0]
+        RoundScreen(
+            showing.round,
+            sound = showing.sound,
+            clipOf = viewModel::practiceClipOf,
+            onPlay = { clip -> if (step == current) player.play(clip.path) },
+            onMove = { round -> if (step == current) viewModel.move(round) },
+        )
+    }
+}
+
+/** Home, the Path, Practice or Settings, with the navigation bar that moves between them. Back goes to Home. */
 @Composable
 private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
     val context = LocalContext.current
-    // Whichever of the three is showing, coming back to the app asks again what it shows: midnight
+    // Whichever of them is showing, coming back to the app asks again what it shows: midnight
     // may have unlocked the next Daily Set, and Android's settings may have changed notifications.
     LifecycleResumeEffect(Unit) {
         viewModel.refresh()
@@ -145,21 +194,24 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
     }
     val selected = when (screen) {
         is Screen.Path -> 1
-        is Screen.Settings -> 2
+        is Screen.Practice -> 2
+        is Screen.Settings -> 3
         else -> 0
     }
-    val held = remember { arrayOfNulls<Screen>(3) }
+    val held = remember { arrayOfNulls<Screen>(4) }
     NavigationFrame(
         tabs = listOf(
             NavigationTab(stringResource(R.string.nav_home), R.drawable.ic_home),
             NavigationTab(stringResource(R.string.nav_path), R.drawable.ic_route),
+            NavigationTab(stringResource(R.string.nav_practice), R.drawable.ic_stadia_controller),
             NavigationTab(stringResource(R.string.nav_settings), R.drawable.ic_settings),
         ),
         selected = selected,
         onSelect = { tab ->
             when (tab) {
                 1 -> viewModel.openPath()
-                2 -> viewModel.openSettings()
+                2 -> viewModel.openPractice()
+                3 -> viewModel.openSettings()
                 else -> viewModel.backToHome()
             }
         },
@@ -181,6 +233,16 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
             is Screen.Path -> {
                 BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)
                 PathScreen(showing.path, onReplay = viewModel::replay, onOpenTodays = viewModel::openTodays, today = showing.today, started = showing.started)
+            }
+            is Screen.Practice -> {
+                BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)
+                PracticeScreen(
+                    showing.view,
+                    showing.today,
+                    onOpen = viewModel::openGame,
+                    onStart = viewModel::startDailySet,
+                    onContinue = viewModel::resumeDailySet,
+                )
             }
             is Screen.Settings -> {
                 BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)

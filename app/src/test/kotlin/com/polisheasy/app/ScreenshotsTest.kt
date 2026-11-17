@@ -25,6 +25,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.semantics.getOrNull
 import androidx.compose.ui.test.hasClickAction
+import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
@@ -52,6 +53,10 @@ import com.polisheasy.engine.SetProgress
 import com.polisheasy.engine.Today
 import com.polisheasy.engine.UnitView
 import java.io.File
+import kotlin.random.Random
+import com.polisheasy.engine.FilePracticeProgress
+import com.polisheasy.engine.VerbRound
+import com.polisheasy.engine.VerbStage
 import java.time.LocalTime
 import kotlin.test.assertTrue
 import org.junit.Rule
@@ -226,7 +231,9 @@ class ScreenshotsTest {
                             tabs = listOf(
                                 NavigationTab(app.getString(R.string.nav_home), R.drawable.ic_home),
                                 NavigationTab(app.getString(R.string.nav_path), R.drawable.ic_route),
-                                NavigationTab(app.getString(R.string.nav_settings), R.drawable.ic_settings),
+                                NavigationTab(app.getString(R.string.nav_practice), R.drawable.ic_stadia_controller),
+                                NavigationTab(app.getString(R.string.nav_practice), R.drawable.ic_stadia_controller),
+                            NavigationTab(app.getString(R.string.nav_settings), R.drawable.ic_settings),
                             ),
                             selected = 0,
                             onSelect = {},
@@ -318,7 +325,9 @@ class ScreenshotsTest {
                             tabs = listOf(
                                 NavigationTab(app.getString(R.string.nav_home), R.drawable.ic_home),
                                 NavigationTab(app.getString(R.string.nav_path), R.drawable.ic_route),
-                                NavigationTab(app.getString(R.string.nav_settings), R.drawable.ic_settings),
+                                NavigationTab(app.getString(R.string.nav_practice), R.drawable.ic_stadia_controller),
+                                NavigationTab(app.getString(R.string.nav_practice), R.drawable.ic_stadia_controller),
+                            NavigationTab(app.getString(R.string.nav_settings), R.drawable.ic_settings),
                             ),
                             selected = 1,
                             onSelect = {},
@@ -367,9 +376,10 @@ class ScreenshotsTest {
                         tabs = listOf(
                             NavigationTab(app.getString(R.string.nav_home), R.drawable.ic_home),
                             NavigationTab(app.getString(R.string.nav_path), R.drawable.ic_route),
+                            NavigationTab(app.getString(R.string.nav_practice), R.drawable.ic_stadia_controller),
                             NavigationTab(app.getString(R.string.nav_settings), R.drawable.ic_settings),
                         ),
-                        selected = 2,
+                        selected = 3,
                         onSelect = {},
                     ) {
                         SettingsScreen(
@@ -460,6 +470,158 @@ class ScreenshotsTest {
         shot("16-home-done")
         tap(R.string.nav_path)
         shot("17-path")
+    }
+
+    @Test
+    fun `Practice and a Round of the Verb challenge in the light theme`() = practiceTour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Practice and a Round of the Verb challenge in the dark theme`() = practiceTour("dark")
+
+    @Test
+    fun `Practice and a Round of the Verb challenge at the largest font size`() = atTheLargestFontSize { practiceTour("large") }
+
+    /**
+     * Practice locked and open, a Game before a Round, each stage of the Verb challenge chosen and
+     * typed, right and wrong, and the result as a first Best and as a new one.
+     */
+    private fun practiceTour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as VerbRound
+
+        fun right() = checkNotNull(round().question).answers.first()
+
+        fun wrong() = checkNotNull(round().question).options.first { it != right() }
+
+        /** Answers with [form] and stays on the answered question, for its picture. */
+        fun answer(form: String) {
+            if (round().typing) {
+                type(form)
+                tap(R.string.action_check)
+            } else {
+                screen.onNode(hasText(form) and hasClickAction()).performClick()
+            }
+        }
+
+        fun moveOn() {
+            screen.waitForIdle()
+            if (((viewModel?.screen as? Screen.Round)?.round as? VerbRound)?.given != null) tap(R.string.action_continue)
+            screen.waitForIdle()
+        }
+
+        fun playOut() {
+            while (viewModel?.screen is Screen.Round) {
+                answer(right())
+                moveOn()
+            }
+        }
+
+        val engine = CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock)
+        open(CourseViewModel(app, engine, engine.practice(FilePracticeProgress(File(folder.root, "practice.json")), Random(7))))
+        tap(R.string.nav_practice)
+        shot("40-practice-locked")
+
+        // The card that says what opens Practice starts today's Daily Set; it is played through.
+        tap(R.string.home_start)
+        tap(R.string.action_continue)
+        tap("hello (polite); good morning")
+        tap(R.string.action_continue)
+        listOf("to", "jest", "Adam").forEach(::tap)
+        tap(R.string.action_check)
+        tap(R.string.action_continue)
+        listOf("dziękuję", null, "nie", "jestem").forEach { typed ->
+            if (typed == null) tap("do widzenia") else {
+                type(typed)
+                tap(R.string.action_check)
+            }
+            tap(R.string.action_continue)
+        }
+        tap(R.string.summary_back_home)
+        screen.mainClock.advanceTimeBy(2_000)
+        tap(R.string.nav_practice)
+        shot("41-practice-open")
+
+        tap(R.string.game_verb_challenge)
+        shot("42-game-setup")
+        tap(R.string.setup_play)
+
+        // The clock is held while an answered question is pictured, so a right answer does not move on by itself.
+        shot("43-verb-pick")
+        screen.mainClock.autoAdvance = false
+        answer(wrong())
+        screen.mainClock.advanceTimeBy(600)
+        shot("44-verb-pick-wrong")
+        screen.mainClock.autoAdvance = true
+        moveOn()
+        screen.mainClock.autoAdvance = false
+        answer(right())
+        screen.mainClock.advanceTimeBy(600)
+        shot("45-verb-pick-right")
+        screen.mainClock.autoAdvance = true
+        moveOn()
+        repeat(4) {
+            answer(right())
+            moveOn()
+        }
+
+        shot("46-verb-table")
+        repeat(2) {
+            answer(right())
+            moveOn()
+        }
+        screen.mainClock.autoAdvance = false
+        answer(wrong())
+        screen.mainClock.advanceTimeBy(600)
+        shot("47-verb-table-missed")
+        screen.mainClock.autoAdvance = true
+        moveOn()
+        repeat(3) {
+            answer(right())
+            moveOn()
+        }
+
+        shot("48-verb-sentence")
+        screen.mainClock.autoAdvance = false
+        answer(right())
+        screen.mainClock.advanceTimeBy(600)
+        shot("49-verb-sentence-right")
+        screen.mainClock.autoAdvance = true
+        moveOn()
+        shot("50-result-first-best")
+
+        tap(R.string.result_play_again)
+        playOut()
+        shot("51-result-new-best")
+        tap(R.string.result_done)
+        shot("52-practice-played")
+
+        // The same Game, typed: its own Best.
+        tap(R.string.game_verb_challenge)
+        tap(R.string.option_type)
+        shot("53-game-setup-type")
+        tap(R.string.setup_play)
+        type(right().dropLast(1))
+        shot("54-verb-type")
+        screen.mainClock.autoAdvance = false
+        tap(R.string.action_check)
+        screen.mainClock.advanceTimeBy(600)
+        shot("55-verb-type-wrong")
+        screen.mainClock.autoAdvance = true
+        moveOn()
+        screen.mainClock.autoAdvance = false
+        answer(right())
+        screen.mainClock.advanceTimeBy(600)
+        shot("56-verb-type-right")
+        screen.mainClock.autoAdvance = true
+        moveOn()
+        while (round().question?.stage != VerbStage.SENTENCE) {
+            answer(right())
+            moveOn()
+        }
+        type(right())
+        shot("57-verb-sentence-typing")
     }
 
     private fun open(over: CourseViewModel) {

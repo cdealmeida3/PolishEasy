@@ -3,6 +3,7 @@ package com.polisheasy.engine
 import java.time.Clock
 import java.time.LocalDate
 import java.time.ZonedDateTime
+import kotlin.random.Random
 
 /** What the Learner can do today. Home shows exactly one of these. */
 sealed interface Today {
@@ -275,6 +276,23 @@ class CourseEngine(
         Today.DailySetAvailable, Today.ReviewOnlyAvailable, is Today.InProgress -> true
         is Today.DoneForToday, Today.AllCompleted -> false
     }
+
+    /**
+     * Whether Practice is open: today's new or Review-only Daily Set is completed, or nothing is
+     * left to do. It locks again at midnight with everything else. A Replay never changes [today],
+     * so it never opens Practice.
+     */
+    fun practiceOpen(): Boolean = when (today()) {
+        is Today.DoneForToday, Today.AllCompleted -> true
+        Today.DailySetAvailable, Today.ReviewOnlyAvailable, is Today.InProgress -> false
+    }
+
+    /**
+     * Practice over this course and this Learner's progress, which it only reads. A Round saves
+     * its Game's Best in [bests] and nothing else. [random] decides what a Round asks.
+     */
+    fun practice(bests: PracticeProgress, random: Random = Random.Default): Practice =
+        Practice(course, progress, bests, clock, baseLanguage, random, ::practiceOpen)
 
     /**
      * The Path: every Level opened so far, with its Units and their Daily Sets. A Level opens when

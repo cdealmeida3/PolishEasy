@@ -209,4 +209,57 @@
         <item quantity="one">Completed on %1$d day this week.</item>
         <item quantity="other">Completed on %1$d days this week.</item>
     </plurals>
+    <!-- Practice -->
+    <string name="nav_practice">Practice</string>
+    <string name="practice_greeting" translatable="false">Poćwiczmy</string>
+    <string name="practice_open_note">Games with the words you know.</string>
+    <string name="practice_locked_note">Games with the words you know, once today\'s Daily Set is done.</string>
+    <string name="practice_locked_title">Finish today\'s Daily Set to open Practice</string>
+    <string name="practice_locked_title_review">Finish today\'s Review to open Practice</string>
+    <string name="practice_locked_body">Practice opens every day once your Daily Set is done, and stays open until midnight.</string>
+    <plurals name="practice_rounds_today">
+        <item quantity="one">Played today · %d Round</item>
+        <item quantity="other">Played today · %d Rounds</item>
+    </plurals>
+    <string name="practice_group_words">Words</string>
+    <string name="practice_group_phrases">Phrases</string>
+    <string name="practice_group_verbs">Verbs</string>
+    <string name="practice_group_sounds">Sounds</string>
+    <string name="practice_group_numbers">Numbers</string>
+    <string name="practice_needs_sound">Turn sound on in Settings to play.</string>
+    <string name="practice_best">Best · %1$s</string>
+    <string name="practice_best_played">Best · %1$s · %2$s</string>
+    <plurals name="practice_right">
+        <item quantity="one">%d right</item>
+        <item quantity="other">%d right</item>
+    </plurals>
+    <string name="game_verb_challenge">Verb challenge</string>
+    <string name="game_verb_challenge_note">Pick the form, fill the table, finish the sentence.</string>
+    <string name="game_verb_challenge_needs">Opens when you learn your first verb table.</string>
+    <string name="action_back">Back</string>
+    <string name="setup_play">Play</string>
+    <string name="setup_no_best">No Best yet. Your first Round sets it.</string>
+    <string name="choice_verb">Verb</string>
+    <string name="choice_level">Level</string>
+    <string name="option_mixed">Mixed</string>
+    <string name="option_choose">Choose</string>
+    <string name="option_type">Type</string>
+    <string name="round_progress">%1$d of %2$d answered</string>
+    <string name="round_close">Leave the Round</string>
+    <string name="verb_pick_instruction">Pick the form</string>
+    <string name="verb_type_instruction">Type the form</string>
+    <string name="verb_table_instruction">Fill the table</string>
+    <string name="verb_sentence_instruction">Complete the sentence</string>
+    <string name="verb_title">%1$s · %2$s</string>
+    <string name="verb_row_filled">%1$s: %2$s</string>
+    <string name="verb_row_missed">%1$s: %2$s, missed</string>
+    <string name="verb_row_asked">%1$s: which form goes here?</string>
+    <string name="verb_row_empty">%1$s: empty</string>
+    <string name="result_title">Round complete</string>
+    <string name="result_new_best">New best</string>
+    <string name="result_best">Best</string>
+    <string name="result_first_best">your first Best</string>
+    <string name="result_best_sentence">Your Best is %1$s</string>
+    <string name="result_play_again">Play again</string>
+    <string name="result_done">Done</string>
 </resources>

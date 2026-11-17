@@ -55,6 +55,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.Dp
 
 /**
  * What every Tip and Exercise of a Daily Set sits in: a close button and the progress bar at the
@@ -113,7 +114,8 @@ fun <K> DailySetFrame(
  *
  * The bottom holds [action] with [keyRow] below it, on top of the keyboard while it is open.
  * [feedback] rises over that place when there is some. The room it needs is kept from the start,
- * so nothing moves when it appears.
+ * so nothing moves when it appears. [reserve] is that room; a Round's step, which has no feedback
+ * panel, keeps only the room of its main action.
  */
 @Composable
 fun DailySetStep(
@@ -122,12 +124,13 @@ fun DailySetStep(
     action: (@Composable () -> Unit)? = null,
     keyRow: (@Composable () -> Unit)? = null,
     answer: (@Composable ColumnScope.() -> Unit)? = null,
+    reserve: Dp = Size.feedbackRoom,
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val density = LocalDensity.current
     // A panel taller than the room kept for it, at a large font size, pushes the answers up to stay clear.
     var panel by remember { mutableStateOf(0.dp) }
-    val room = if (answer == null) 0.dp else maxOf(Size.feedbackRoom, if (feedback != null) panel else 0.dp)
+    val room = if (answer == null) 0.dp else maxOf(reserve, if (feedback != null) panel else 0.dp)
     Box(modifier = modifier.fillMaxSize()) {
         Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.fillMaxSize()) {
             BoxWithConstraints(modifier = Modifier.weight(1f)) {
