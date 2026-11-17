@@ -27,14 +27,15 @@ import com.polisheasy.app.ui.components.RoundStep
 import com.polisheasy.app.ui.theme.Size
 import com.polisheasy.app.ui.theme.Space
 import com.polisheasy.app.ui.theme.inPolish
+import com.polisheasy.engine.Game
 import com.polisheasy.engine.GenderRound
 import com.polisheasy.engine.NounClue
 import com.polisheasy.engine.Round
 
 /**
- * One question of Mój, moja, moje. A noun is shown, with its picture when it has one: written,
- * said, or given only by what it means. Below are the words for "my", each counting the nouns
- * that belong under it so far. The one tapped is marked and the right one with it, and the two
+ * One question of Mój, moja, moje, or of Ten, ta, to. A noun is shown, with its picture when it
+ * has one: written, said, or given only by what it means. Below are the words for "my", or for
+ * "this", each counting the nouns that belong under it so far. The one tapped is marked and the right one with it, and the two
  * words are written and said together.
  */
 @Composable
@@ -67,7 +68,7 @@ internal fun MojMojaMojeStep(round: GenderRound, say: (String) -> Unit, sayFirst
             )
         },
     ) {
-        Instruction(stringResource(R.string.moj_instruction))
+        Instruction(stringResource(if (round.game == Game.TEN_TA_TO) R.string.ten_instruction else R.string.moj_instruction))
         Spacer(Modifier.height(Space.l))
         question.picture?.let { picture ->
             artOf(picture)?.let { art ->

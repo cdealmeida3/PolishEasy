@@ -25,7 +25,8 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 | Phrase chains | `engine/.../PhraseChains.kt` |
 | Sound gaps | `engine/.../SoundGaps.kt` |
 | Numbers (shown as "Number pad") | `engine/.../Numbers.kt` |
-| Mój, moja, moje | `engine/.../MojMojaMoje.kt` |
+| Mój, moja, moje and Ten, ta, to (`GenderSort`) | `engine/.../MojMojaMoje.kt` |
+| Label the picture | `engine/.../LabelIt.kt` |
 | Spell it | `engine/.../SpellIt.kt` |
 | Quick round | `engine/.../QuickRound.kt` |
 | Register sort | `engine/.../RegisterSort.kt` |
@@ -106,7 +107,11 @@ A Game that shows Items side by side uses `Learned.unalike` to leave out any tha
 
 **Numbers** (Numbers; its card says "Number pad", so the group's heading is not repeated). Opens with four learned numbers. A number is an Item whose Picture is a numeral, and "plus" is the Item whose Picture is the sign, so the Game needs no content of its own. Ways to play: the number heard (with sound on) or read as its Polish words; 0 to 10; 0 to 20, once a number above ten is learned; runs of three digits, said as three Clips one after the other; sums of two learned numbers that come to a learned number, once "plus" is learned. The Learner types on a keypad of up to three digits, whose last key checks. A run is typed digit for digit; a number may have a zero in front. A Round is up to ten numbers, six runs or eight sums. The result is the answers right first try.
 
-**Mój, moja, moje** (Words). Opens with two of the words for "my" and four nouns that go with them. A noun is shown, with its Picture when it has one, and the Learner taps the word for "my" that goes with it. A noun is asked only once its own word is learned, so *dziecko* waits for *moje*. Ways to play: the noun written with its meaning, heard (with sound on), or given by its meaning alone. Each word counts the nouns that belong under it so far. Answered, the two words are written together and said, where there is a Clip of them, and if not the noun is. A Round is up to ten nouns. The result is the answers right first try. When a Unit teaches *ten, ta, to*, the same rules can sort under those.
+**Mój, moja, moje** (Words). Opens with two of the words for "my" and four nouns that go with them. A noun is shown, with its Picture when it has one, and the Learner taps the word for "my" that goes with it. A noun is asked only once its own word is learned, so *dziecko* waits for *moje*. Ways to play: the noun written with its meaning, heard (with sound on), or given by its meaning alone. Each word counts the nouns that belong under it so far. Answered, the two words are written together and said, where there is a Clip of them, and if not the noun is. A Round is up to ten nouns. The result is the answers right first try.
+
+**Ten, ta, to** (Words). Chapter 3's Game: Mój, moja, moje's rules, sorting under the words for "this" (`this` in `practice.json`). It opens with two of *ten, ta, to* and four nouns, and its Best is its own.
+
+**Label the picture** (Words). Chapter 3's Game, after the book's labelled pictures of a classroom. Opens with six learned Items that have an image (a numeral is no picture to label). Ways to play: tap the labels or type them; a deck. A Round is one board of six pictures that look and read unalike, each with an empty label under it, asked one at a time in the board's order; the meaning of the one asked is written under the board. Tapping, the six labels lie mixed below as word tiles: a right one sticks in green and is said, and a wrong one puts the right label on in amber and stays below, waiting for "Continue". Typed, the word is checked as a typed answer is, Polish marks forgiven. The result is the labels right first try.
 
 **Spell it** (Words). Opens with four learned Items that can be spelled: one word of small letters, three to nine of them. Ways to play: from the word's Picture or from its meaning; a deck. A Round is up to six words. The word's letters lie mixed as tiles, Polish letters included, never already in order; tapped in order they fill the word's slots. A wrong tile stays and is a slip; where a letter is written twice, either tile of it will do. Whole, the word is said. The result is the words spelled with no slip.
 
@@ -129,6 +134,7 @@ The clock is the only kind in the app. The engine does not read the time: the sc
 - `realWords`, for Sound gaps. After adding or changing Items, run `./gradlew :polishcheck:checkPolish`: it names any new wrong spelling that is a real word, to add to the list.
 - `genders`, for Mój, moja, moje: the id of each noun Item to sort and `"m"`, `"f"` or `"n"`. List a noun in the form a dictionary gives (*siostra*, not *siostrę*), one word, and only where "my" with it makes sense. The Polish check confirms each gender against the dictionary.
 - `my`: the Item that says "my" for each gender, `{ "m": "moj", "f": "moja", "n": "moje" }`.
+- `this`: the Item that says "this" for each gender, `{ "m": "ten", "f": "ta", "n": "to" }`, for Ten, ta, to. The Polish check confirms each against the dictionary as it does `my`.
 - `letters`: each small letter of the alphabet and its Polish name, `{ "a": "a", "b": "be", "ą": "a z ogonkiem" }`, for Spell it aloud. Each name is a spoken text, so `./gradlew :audio:makeClips` records it; the content check fails on a key that is not one small letter or on a blank name.
 
 A new Unit adds its nouns to `genders`.

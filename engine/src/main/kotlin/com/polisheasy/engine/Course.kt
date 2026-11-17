@@ -35,6 +35,8 @@ data class Course(
     val ankieta: AnkietaFile = AnkietaFile(),
     /** What each small letter is called when a word is spelled aloud (*b* is *be*), for Spell it. */
     val letterNames: Map<String, String> = emptyMap(),
+    /** The Item that says "this" with a noun of each gender, by its id, for Ten, ta, to. */
+    val demonstratives: Map<Gender, String> = emptyMap(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

@@ -18,9 +18,9 @@ enum class Gender(val id: String) {
 data class GenderBucket(val gender: Gender, val word: String)
 
 /**
- * One question of Mój, moja, moje: a noun, by its [polish], its [meaning] and its [picture] when
- * it has one, and the [gender] that says which word goes with it. [phrase] is the two together,
- * such as "moja siostra", shown once the question is answered.
+ * One question of Mój, moja, moje or Ten, ta, to: a noun, by its [polish], its [meaning] and its
+ * [picture] when it has one, and the [gender] that says which word goes with it. [phrase] is the
+ * two together, such as "moja siostra" or "ta torba", shown once the question is answered.
  */
 data class GenderQuestion(
     val itemId: String,
@@ -31,7 +31,7 @@ data class GenderQuestion(
     val phrase: String,
 )
 
-/** How a noun is given in a Round of Mój, moja, moje. */
+/** How a noun is given in a Round of Mój, moja, moje or Ten, ta, to. */
 enum class NounClue {
     /** The Polish word is written. */
     WORD,
@@ -44,16 +44,17 @@ enum class NounClue {
 }
 
 /**
- * A Round of Mój, moja, moje: a noun is shown and the Learner taps the word for "my" that goes
- * with it, one of the [buckets]. The result is the answers right first try.
+ * A Round of Mój, moja, moje or of Ten, ta, to, its [game]: a noun is shown and the Learner taps
+ * the word for "my", or for "this", that goes with it, one of the [buckets]. The result is the
+ * answers right first try.
  */
 data class GenderRound(
+    override val game: Game,
     override val played: List<String>,
     val clue: NounClue,
     val buckets: List<GenderBucket>,
     val run: Run<GenderQuestion>,
 ) : Round {
-    override val game: Game get() = Game.MOJ_MOJA_MOJE
     override val done: Int get() = run.results.size
     override val total: Int get() = run.questions.size
     override val finished: Boolean get() = run.finished
@@ -81,22 +82,33 @@ data class GenderRound(
     fun next(): GenderRound = copy(run = run.next())
 }
 
-internal object MojMojaMoje : GameRules {
-    const val CLUE = "noun"
-    const val WORD = "word"
-    const val LISTEN = "listen"
-    const val MEANING = "meaning"
+/** Mój, moja, moje: nouns sorted under the word for "my" that goes with them. */
+internal val MojMojaMoje = GenderSort(Game.MOJ_MOJA_MOJE) { it.possessives }
 
-    /** The fewest nouns the Game opens with, and the most a Round asks. */
-    const val LEAST = 4
-    const val QUESTIONS = 10
+/** Ten, ta, to: chapter 3's Game, nouns sorted under the word for "this" that goes with them. */
+internal val TenTaTo = GenderSort(Game.TEN_TA_TO) { it.demonstratives }
 
-    override val game = Game.MOJ_MOJA_MOJE
+/**
+ * The rules of a Game that sorts nouns by gender under the [words] the content gives for each
+ * gender, such as *mój, moja, moje*. A noun waits until its own word is learned.
+ */
+internal class GenderSort(override val game: Game, private val words: (Course) -> Map<Gender, String>) : GameRules {
+    companion object {
+        const val CLUE = "noun"
+        const val WORD = "word"
+        const val LISTEN = "listen"
+        const val MEANING = "meaning"
 
-    /** The words for "my" the Learner has learned, in the order masculine, feminine, neuter. */
+        /** The fewest nouns the Game opens with, and the most a Round asks. */
+        const val LEAST = 4
+        const val QUESTIONS = 10
+    }
+
+    /** The words the Learner has learned, in the order masculine, feminine, neuter. */
     private fun buckets(learned: Learned): List<GenderBucket> {
         val known = learned.items.associateBy { it.id }
-        return Gender.entries.mapNotNull { gender -> known[learned.course.possessives[gender]]?.let { GenderBucket(gender, it.text) } }
+        val words = words(learned.course)
+        return Gender.entries.mapNotNull { gender -> known[words[gender]]?.let { GenderBucket(gender, it.text) } }
     }
 
     /** The learned nouns whose gender is known and has a bucket, and which can be told apart as they are given. */
@@ -135,6 +147,6 @@ internal object MojMojaMoje : GameRules {
             MEANING -> NounClue.MEANING
             else -> NounClue.WORD
         }
-        return GenderRound(selected, clue, buckets, Run(questions))
+        return GenderRound(game, selected, clue, buckets, Run(questions))
     }
 }

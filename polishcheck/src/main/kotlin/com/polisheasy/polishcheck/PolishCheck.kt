@@ -209,6 +209,7 @@ fun checkPolish(content: PolishContent, reference: PolishReference, reviews: Rev
     }
     content.nouns.forEach { confirm(it, "subst", "a noun in the form a dictionary lists") }
     content.possessives.forEach { confirm(it, "adj", "a word that goes with a noun") }
+    content.demonstratives.forEach { confirm(it, "adj", "a word that goes with a noun") }
 
     // Review
     val sentencesToReview = mutableListOf<SentenceReview>()
@@ -272,7 +273,7 @@ fun checkPolish(content: PolishContent, reference: PolishReference, reviews: Rev
             Pass.GRAMMAR to content.sentences.size,
             Pass.REVIEW to content.sentences.size + content.tips.size,
             Pass.SOUND_GAPS to offered.size,
-            Pass.GENDERS to content.nouns.size + content.possessives.size,
+            Pass.GENDERS to content.nouns.size + content.possessives.size + content.demonstratives.size,
         ),
         toReview = Reviews(sentencesToReview, tipsToReview),
         sentences = content.sentences.size,

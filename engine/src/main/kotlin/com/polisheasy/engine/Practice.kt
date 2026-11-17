@@ -29,6 +29,10 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     SPELL_IT("spell-it", GameGroup.WORDS),
     QUICK_ROUND("quick-round", GameGroup.WORDS),
     MOJ_MOJA_MOJE("moj-moja-moje", GameGroup.WORDS),
+    /** Chapter 3's Game: nouns sorted under ten, ta or to. */
+    TEN_TA_TO("ten-ta-to", GameGroup.WORDS),
+    /** Chapter 3's Game: a board of pictures labelled one at a time, by choosing or typing. */
+    LABEL_IT("label-the-picture", GameGroup.WORDS),
     NUMBERS("numbers", GameGroup.NUMBERS),
 }
 
@@ -235,7 +239,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, Numbers).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, Numbers).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

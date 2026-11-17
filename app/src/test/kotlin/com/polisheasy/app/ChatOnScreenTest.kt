@@ -95,7 +95,9 @@ class ChatOnScreenTest {
         shows(R.string.result_title)
         shows(text(R.string.summary_accuracy, 4, 5), byDescription = true)
         tap(R.string.result_done)
-        shows(text(R.string.practice_best_played, right(4), "At the school office, ${text(R.string.option_choose)}"))
+        // The Chat's card is below the Words Games, further down than the screen is high.
+        screen.onNodeWithText(text(R.string.practice_best_played, right(4), "At the school office, ${text(R.string.option_choose)}"))
+            .performScrollTo().assertIsDisplayed()
     }
 
     @Test

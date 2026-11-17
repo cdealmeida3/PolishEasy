@@ -35,6 +35,8 @@ class PolishContent(
     val nouns: List<GenderedWord> = emptyList(),
     /** Each word for "my" and the gender the content gives it. */
     val possessives: List<GenderedWord> = emptyList(),
+    /** Each word for "this" and the gender the content gives it. */
+    val demonstratives: List<GenderedWord> = emptyList(),
 )
 
 /** A word of Item [itemId] and the gender the practice file gives it. */
@@ -228,6 +230,7 @@ fun polishContent(files: ContentFiles): PolishContent {
         practiceFile = content.practiceFile,
         nouns = content.course().let { course -> course.genders.mapNotNull { (id, gender) -> course.itemsById[id]?.let { GenderedWord(id, it.text, gender) } } },
         possessives = content.course().let { course -> course.possessives.mapNotNull { (gender, id) -> course.itemsById[id]?.let { GenderedWord(id, it.text, gender) } } },
+        demonstratives = content.course().let { course -> course.demonstratives.mapNotNull { (gender, id) -> course.itemsById[id]?.let { GenderedWord(id, it.text, gender) } } },
     )
 }
 
