@@ -1,0 +1,260 @@
+{
+  "id": "kpk1-l02-d3",
+  "section": {
+    "letter": "D",
+    "heading": "Skąd jesteś? Gdzie mieszkasz?",
+    "meaning": {
+      "en": "Where are you from? Where do you live?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-d3-t01",
+      "before": "kpk1-l02-d3-e01",
+      "title": {
+        "en": "In the city"
+      },
+      "body": {
+        "en": "Where you live is *w* with the city, whose name takes a new ending: *Kraków*, *w Krakowie*; *Warszawa*, *w Warszawie*; *Londyn*, *w Londynie*; *Berlin*, *w Berlinie*. Ask a friend *gdzie mieszkasz?*, a man you call *pan* *gdzie pan mieszka?*, and a woman you call *pani* *gdzie pani mieszka?*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d3-e01",
+      "prompt": "w Krakowie",
+      "options": [
+        {
+          "en": "in Kraków"
+        },
+        {
+          "en": "in Warsaw"
+        },
+        {
+          "en": "in London"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-krakowie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d3-e02",
+      "prompt": "w Warszawie",
+      "options": [
+        {
+          "en": "in Berlin"
+        },
+        {
+          "en": "in Warsaw"
+        },
+        {
+          "en": "in Kraków"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-warszawie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d3-e03",
+      "prompt": "w Londynie",
+      "options": [
+        {
+          "en": "in Kraków"
+        },
+        {
+          "en": "in Berlin"
+        },
+        {
+          "en": "in London"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-londynie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d3-e04",
+      "prompt": "w Berlinie",
+      "options": [
+        {
+          "en": "in Berlin"
+        },
+        {
+          "en": "in London"
+        },
+        {
+          "en": "in Warsaw"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-berlinie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-d3-e05",
+      "text": "mieszkam w Warszawie",
+      "meaning": {
+        "en": "I live in Warsaw"
+      },
+      "distractors": [
+        "mieszkam w Krakowie",
+        "mieszkam w Berlinie"
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "w-warszawie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-d3-e06",
+      "prompt": {
+        "en": "we live in Kraków"
+      },
+      "acceptedAnswers": [
+        "mieszkamy w Krakowie",
+        "w Krakowie mieszkamy"
+      ],
+      "distractors": [
+        "mieszkają",
+        "Berlinie"
+      ],
+      "items": [
+        "mieszkac-mieszkamy",
+        "w-krakowie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-d3-e07",
+      "acceptedAnswers": [
+        "ona mieszka w Londynie"
+      ],
+      "meaning": {
+        "en": "she lives in London"
+      },
+      "items": [
+        "ona",
+        "mieszkac-mieszka",
+        "w-londynie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-d3-e08",
+      "text": "oni mieszkają w Berlinie",
+      "meaning": {
+        "en": "they live in Berlin (men, or men and women)"
+      },
+      "distractors": [
+        "one mieszkają w Berlinie",
+        "oni mieszkają w Londynie"
+      ],
+      "items": [
+        "oni",
+        "mieszkac-mieszkaja",
+        "w-berlinie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-d3-e09",
+      "prompt": {
+        "en": "do you live in Warsaw? (several people)"
+      },
+      "acceptedAnswers": [
+        "czy mieszkacie w Warszawie?",
+        "mieszkacie w Warszawie?",
+        "czy wy mieszkacie w Warszawie?",
+        "wy mieszkacie w Warszawie?"
+      ],
+      "items": [
+        "czy",
+        "mieszkac-mieszkacie",
+        "w-warszawie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-d3-e10",
+      "prompt": {
+        "en": "I live in London"
+      },
+      "acceptedAnswers": [
+        "mieszkam w Londynie",
+        "w Londynie mieszkam"
+      ],
+      "distractors": [
+        "Berlinie",
+        "mieszka"
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "w-londynie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-d3-e11",
+      "prompt": {
+        "en": "he lives in Berlin"
+      },
+      "acceptedAnswers": [
+        "on mieszka w Berlinie"
+      ],
+      "items": [
+        "on",
+        "mieszkac-mieszka",
+        "w-berlinie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-d3-e12",
+      "text": "mieszkamy w Krakowie",
+      "meaning": {
+        "en": "we live in Kraków"
+      },
+      "distractors": [
+        "mieszkamy w Warszawie",
+        "mieszkają w Krakowie"
+      ],
+      "items": [
+        "mieszkac-mieszkamy",
+        "w-krakowie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-d3-e13",
+      "acceptedAnswers": [
+        "mieszkam w Krakowie"
+      ],
+      "meaning": {
+        "en": "I live in Kraków"
+      },
+      "items": [
+        "mieszkac-mieszkam",
+        "w-krakowie"
+      ],
+      "readingAnswers": [
+        "ja mieszkam w Krakowie",
+        "w Krakowie mieszkam"
+      ]
+    }
+  ]
+}

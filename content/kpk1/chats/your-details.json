@@ -1,0 +1,303 @@
+{
+  "id": "chat-your-details",
+  "person": "Pani Anna",
+  "title": {
+    "en": "Your details"
+  },
+  "scene": {
+    "en": "You are Adam, from England, and you live in Kraków. Your phone number is 12 23 17, and you are learning Polish because your girlfriend is from Poland. At the school office Pani Anna fills in a form with your details. Be polite: to her you are pan, and she is pani."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "co-u-pana-slychac",
+    "wszystko-dobrze",
+    "a-u-pani",
+    "czesc",
+    "a-u-ciebie",
+    "nic-nowego",
+    "a-ty",
+    "dziekuje",
+    "po-staremu",
+    "skad-pan-jest",
+    "byc-jestem",
+    "z-anglii",
+    "z-polski",
+    "mieszkac-mieszkam",
+    "w-krakowie",
+    "a",
+    "gdzie",
+    "pan",
+    "mieszkac-mieszka",
+    "mieszkac-mieszkasz",
+    "jaki",
+    "miec-ma",
+    "numer-telefonu",
+    "moj",
+    "to",
+    "dwanascie",
+    "dwadziescia",
+    "trzy",
+    "siedemnascie",
+    "nie-wiem",
+    "twoj",
+    "byc-jest",
+    "dlaczego",
+    "uczy-sie-polskiego",
+    "ucze-sie-polskiego",
+    "bo",
+    "moja",
+    "dziewczyna",
+    "mama",
+    "swietnie",
+    "wszystko",
+    "do-widzenia",
+    "pa",
+    "do-jutra"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry! Co u pana słychać?",
+      "meaning": {
+        "en": "Good morning! How are things with you?"
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry! Wszystko dobrze, a u pani?",
+          "meaning": {
+            "en": "Good morning! Everything is fine, and with you?"
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Dzień dobry! Wszystko dobrze, a u pani?",
+            "Wszystko dobrze, a u pani?",
+            "Dzień dobry! Wszystko dobrze.",
+            "Wszystko dobrze."
+          ]
+        },
+        {
+          "text": "Cześć! Wszystko dobrze, a u ciebie?",
+          "meaning": {
+            "en": "Hi! Everything is fine, and with you?"
+          },
+          "register": "informal",
+          "note": {
+            "en": "*Cześć* and *a u ciebie?* are for friends. To Pani Anna say *dzień dobry* and *a u pani?*."
+          }
+        },
+        {
+          "text": "Nic nowego. A ty?",
+          "meaning": {
+            "en": "Nothing new. And you?"
+          },
+          "register": "informal",
+          "note": {
+            "en": "*A ty?* is for a friend. To Pani Anna turn the question back with *a u pani?*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Dziękuję, po staremu. Skąd pan jest?",
+      "meaning": {
+        "en": "Thank you, same as ever. Where are you from?"
+      },
+      "replies": [
+        {
+          "text": "Jestem z Anglii.",
+          "meaning": {
+            "en": "I am from England."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Jestem z Anglii.",
+            "Ja jestem z Anglii.",
+            "Z Anglii."
+          ]
+        },
+        {
+          "text": "Mieszkam w Krakowie.",
+          "meaning": {
+            "en": "I live in Kraków."
+          },
+          "note": {
+            "en": "*Skąd?* asks where you are from, not where you live: *jestem z Anglii*."
+          }
+        },
+        {
+          "text": "Jestem z Polski.",
+          "meaning": {
+            "en": "I am from Poland."
+          },
+          "note": {
+            "en": "Your girlfriend is from Poland, but you are from England: *jestem z Anglii*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "A gdzie pan mieszka?",
+      "meaning": {
+        "en": "And where do you live?"
+      },
+      "replies": [
+        {
+          "text": "Mieszkam w Krakowie.",
+          "meaning": {
+            "en": "I live in Kraków."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Mieszkam w Krakowie.",
+            "Ja mieszkam w Krakowie.",
+            "W Krakowie."
+          ]
+        },
+        {
+          "text": "Jestem z Anglii.",
+          "meaning": {
+            "en": "I am from England."
+          },
+          "note": {
+            "en": "*Gdzie?* asks where you live now: *mieszkam w Krakowie*."
+          }
+        },
+        {
+          "text": "Mieszkasz w Krakowie.",
+          "meaning": {
+            "en": "You live in Kraków."
+          },
+          "note": {
+            "en": "*Mieszkasz* is \"you live\". About yourself it is *mieszkam*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Jaki ma pan numer telefonu?",
+      "meaning": {
+        "en": "What is your phone number?"
+      },
+      "replies": [
+        {
+          "text": "Mój numer telefonu to dwanaście, dwadzieścia trzy, siedemnaście.",
+          "meaning": {
+            "en": "My phone number is 12 23 17."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Mój numer telefonu to dwanaście, dwadzieścia trzy, siedemnaście.",
+            "Dwanaście, dwadzieścia trzy, siedemnaście.",
+            "Mój numer to dwanaście, dwadzieścia trzy, siedemnaście."
+          ]
+        },
+        {
+          "text": "Jaki jest twój numer telefonu?",
+          "meaning": {
+            "en": "What is your phone number? (one friend)"
+          },
+          "register": "informal",
+          "note": {
+            "en": "Pani Anna asked for your number. Give it: *dwanaście, dwadzieścia trzy, siedemnaście*. And *twój* is for a friend."
+          }
+        },
+        {
+          "text": "Mój numer telefonu to dwanaście, trzy, siedemnaście.",
+          "meaning": {
+            "en": "My phone number is 12 3 17."
+          },
+          "note": {
+            "en": "The middle pair is 23, *dwadzieścia trzy*, not *trzy*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "A dlaczego pan uczy się polskiego?",
+      "meaning": {
+        "en": "And why are you learning Polish?"
+      },
+      "replies": [
+        {
+          "text": "Uczę się polskiego, bo moja dziewczyna jest z Polski.",
+          "meaning": {
+            "en": "I am learning Polish because my girlfriend is from Poland."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Uczę się polskiego, bo moja dziewczyna jest z Polski.",
+            "Bo moja dziewczyna jest z Polski.",
+            "Ja uczę się polskiego, bo moja dziewczyna jest z Polski."
+          ]
+        },
+        {
+          "text": "Uczę się polskiego, bo moja mama jest z Polski.",
+          "meaning": {
+            "en": "I am learning Polish because my mum is from Poland."
+          },
+          "note": {
+            "en": "It is your girlfriend who is from Poland: *bo moja dziewczyna jest z Polski*."
+          }
+        },
+        {
+          "text": "Nie wiem.",
+          "meaning": {
+            "en": "I don't know."
+          },
+          "note": {
+            "en": "You do know: your girlfriend is from Poland. Say *bo moja dziewczyna jest z Polski*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Świetnie! Dziękuję, to wszystko. Do widzenia!",
+      "meaning": {
+        "en": "Great! Thank you, that's all. Goodbye!"
+      },
+      "replies": [
+        {
+          "text": "Dziękuję! Do widzenia!",
+          "meaning": {
+            "en": "Thank you! Goodbye!"
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Dziękuję! Do widzenia!",
+            "Dziękuję. Do widzenia!",
+            "Do widzenia!"
+          ]
+        },
+        {
+          "text": "Pa! Do jutra!",
+          "meaning": {
+            "en": "Bye-bye! See you tomorrow!"
+          },
+          "register": "informal",
+          "note": {
+            "en": "*Pa* and *do jutra* are for friends. To Pani Anna say *do widzenia*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Do widzenia!",
+      "meaning": {
+        "en": "Goodbye!"
+      }
+    }
+  ]
+}

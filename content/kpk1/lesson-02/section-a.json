@@ -1,0 +1,371 @@
+{
+  "id": "kpk1-l02-a",
+  "section": {
+    "letter": "A",
+    "heading": "Dane personalne",
+    "meaning": {
+      "en": "Personal details"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-a-t01",
+      "before": "kpk1-l02-a-e01",
+      "title": {
+        "en": "Personal details"
+      },
+      "body": {
+        "en": "A form asks for your *dane personalne*: *imię*, *nazwisko*, *adres* and *numer telefonu*. An address gives the *ulica* (street, written *ul.*) and the house number; *przez* joins it to the number of the *mieszkanie* (flat), so 10/3 is *dziesięć przez trzy*. *Jaki jest twój adres?* asks a friend for theirs."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-a-e01",
+      "prompt": "imię",
+      "options": [
+        {
+          "en": "a first name"
+        },
+        {
+          "en": "a surname"
+        },
+        {
+          "en": "an address"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "imie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-a-e02",
+      "prompt": "nazwisko",
+      "options": [
+        {
+          "en": "a first name"
+        },
+        {
+          "en": "a surname"
+        },
+        {
+          "en": "a street"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nazwisko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-a-e03",
+      "prompt": "adres",
+      "options": [
+        {
+          "en": "a flat"
+        },
+        {
+          "en": "a phone number"
+        },
+        {
+          "en": "an address"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "adres"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-a-e04",
+      "prompt": "ulica",
+      "options": [
+        {
+          "en": "a street"
+        },
+        {
+          "en": "a school"
+        },
+        {
+          "en": "an address"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ulica"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-a-e05",
+      "text": "adres",
+      "meaning": {
+        "en": "an address"
+      },
+      "distractors": [
+        "ulica",
+        "numer"
+      ],
+      "items": [
+        "adres"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-a-e06",
+      "prompt": {
+        "en": "a first name and a surname"
+      },
+      "acceptedAnswers": [
+        "imię i nazwisko",
+        "nazwisko i imię"
+      ],
+      "distractors": [
+        "adres",
+        "ulica"
+      ],
+      "items": [
+        "imie",
+        "i",
+        "nazwisko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-a-e07",
+      "prompt": "numer telefonu",
+      "options": [
+        {
+          "en": "an address"
+        },
+        {
+          "en": "a phone number"
+        },
+        {
+          "en": "a first name"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "numer-telefonu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-a-e08",
+      "prompt": "jaki",
+      "options": [
+        {
+          "en": "where"
+        },
+        {
+          "en": "why"
+        },
+        {
+          "en": "what (asking about a masculine noun: jaki jest twój adres?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jaki"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-a-e09",
+      "prompt": {
+        "en": "what is your phone number? (one friend)"
+      },
+      "acceptedAnswers": [
+        "jaki jest twój numer telefonu?",
+        "jaki jest numer telefonu?"
+      ],
+      "distractors": [
+        "twoja",
+        "gdzie"
+      ],
+      "items": [
+        "jaki",
+        "byc-jest",
+        "twoj",
+        "numer-telefonu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-a-e10",
+      "prompt": "mieszkanie",
+      "options": [
+        {
+          "en": "a flat"
+        },
+        {
+          "en": "a street"
+        },
+        {
+          "en": "a school"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mieszkanie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-a-e11",
+      "prompt": "przez",
+      "options": [
+        {
+          "en": "plus"
+        },
+        {
+          "en": "slash, in a house number (dziesięć przez trzy: 10/3)"
+        },
+        {
+          "en": "minus"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przez"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-a-e12",
+      "text": "dziesięć przez trzy",
+      "meaning": {
+        "en": "10/3, in an address"
+      },
+      "distractors": [
+        "dziesięć plus trzy",
+        "dziesięć minus trzy"
+      ],
+      "items": [
+        "dziesiec",
+        "przez",
+        "trzy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-a-e13",
+      "prompt": {
+        "en": "flat number five"
+      },
+      "acceptedAnswers": [
+        "mieszkanie numer pięć"
+      ],
+      "items": [
+        "mieszkanie",
+        "numer",
+        "piec"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-a-e14",
+      "text": "ulica",
+      "meaning": {
+        "en": "a street"
+      },
+      "distractors": [
+        "lekcja",
+        "szkoła"
+      ],
+      "items": [
+        "ulica"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-a-e15",
+      "prompt": {
+        "en": "what is your address? (one friend)"
+      },
+      "acceptedAnswers": [
+        "jaki jest twój adres?",
+        "jaki jest adres?"
+      ],
+      "distractors": [
+        "twoja",
+        "numer"
+      ],
+      "items": [
+        "jaki",
+        "byc-jest",
+        "twoj",
+        "adres"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-a-e16",
+      "prompt": {
+        "en": "what is your phone number? (one friend)"
+      },
+      "acceptedAnswers": [
+        "jaki jest twój numer telefonu?",
+        "jaki masz numer telefonu?",
+        "jaki jest twój numer?"
+      ],
+      "items": [
+        "jaki",
+        "byc-jest",
+        "twoj",
+        "numer-telefonu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-a-e17",
+      "prompt": {
+        "en": "my phone number is twelve, twenty, fifteen"
+      },
+      "acceptedAnswers": [
+        "mój numer telefonu to dwanaście, dwadzieścia, piętnaście"
+      ],
+      "distractors": [
+        "twój",
+        "trzy"
+      ],
+      "items": [
+        "moj",
+        "numer-telefonu",
+        "to",
+        "dwanascie",
+        "dwadziescia",
+        "pietnascie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-a-e18",
+      "acceptedAnswers": [
+        "jaki jest twój adres?"
+      ],
+      "meaning": {
+        "en": "what is your address? (one friend)"
+      },
+      "items": [
+        "jaki",
+        "byc-jest",
+        "twoj",
+        "adres"
+      ],
+      "readingAnswers": [
+        "jaki masz adres?"
+      ]
+    }
+  ]
+}

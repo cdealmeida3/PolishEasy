@@ -1,0 +1,439 @@
+{
+  "id": "kpk1-l02-c",
+  "section": {
+    "letter": "C",
+    "heading": "Gdzie ona jest?",
+    "meaning": {
+      "en": "Where is she?"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-c-t01",
+      "before": "kpk1-l02-c-e01",
+      "title": {
+        "en": "Być: where are you?"
+      },
+      "body": {
+        "en": "*Być* is irregular, and you met it in Starter: *jestem*, *jesteś*, *jest*, *jesteśmy*, *jesteście*, *są*. *Gdzie jesteś?* asks a friend where they are, and *jestem tutaj* answers \"I am here\". *Pan* and *pani* take *jest*: *gdzie pani jest?*"
+      },
+      "conjugation": {
+        "verb": "być",
+        "meaning": {
+          "en": "to be"
+        },
+        "forms": {
+          "ja": "jestem",
+          "ty": "jesteś",
+          "on": "jest",
+          "my": "jesteśmy",
+          "wy": "jesteście",
+          "oni": "są"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l02-c-t02",
+      "before": "kpk1-l02-c-e10",
+      "title": {
+        "en": "He, she, it and they"
+      },
+      "body": {
+        "en": "*On* is he, *ona* she and *ono* it, for a child or a neuter noun. In the plural *oni* is for a group with at least one man in it, and *one* for any other group: women, children or things. Formal \"you\" to several people is *panowie* (men), *panie* (women) or *państwo* (men and women), and takes *są*: *gdzie są państwo?*"
+      },
+      "table": {
+        "title": {
+          "en": "Pan, pani, państwo"
+        },
+        "columns": [
+          {
+            "header": "kto?"
+          },
+          {
+            "header": "oficjalnie"
+          }
+        ],
+        "rows": [
+          {
+            "header": "on + on",
+            "cells": [
+              "oni",
+              "panowie"
+            ]
+          },
+          {
+            "header": "ona + ona",
+            "cells": [
+              "one",
+              "panie"
+            ]
+          },
+          {
+            "header": "on + ona",
+            "cells": [
+              "oni",
+              "państwo"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-c-e01",
+      "prompt": "jestem",
+      "options": [
+        {
+          "en": "you are (one friend)"
+        },
+        {
+          "en": "he is; she is; it is"
+        },
+        {
+          "en": "I am"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "byc-jestem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-c-e02",
+      "prompt": "jesteś",
+      "options": [
+        {
+          "en": "you are (one friend)"
+        },
+        {
+          "en": "I am"
+        },
+        {
+          "en": "we are"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "byc-jestes"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l02-c-e03",
+      "verb": "być",
+      "meaning": {
+        "en": "to be"
+      },
+      "person": "ty",
+      "sentence": "Ewa, gdzie ty ___?",
+      "sentenceMeaning": {
+        "en": "Ewa, where are you?"
+      },
+      "acceptedAnswers": [
+        "jesteś"
+      ],
+      "items": [
+        "ewa",
+        "gdzie",
+        "ty",
+        "byc-jestes"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-c-e04",
+      "prompt": "jest",
+      "options": [
+        {
+          "en": "they are"
+        },
+        {
+          "en": "he is; she is; it is"
+        },
+        {
+          "en": "I am"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "byc-jest"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-c-e05",
+      "prompt": "są",
+      "options": [
+        {
+          "en": "we are"
+        },
+        {
+          "en": "he is; she is; it is"
+        },
+        {
+          "en": "they are"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "byc-sa"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l02-c-e06",
+      "verb": "być",
+      "meaning": {
+        "en": "to be"
+      },
+      "person": "oni",
+      "sentence": "Gdzie oni ___?",
+      "sentenceMeaning": {
+        "en": "Where are they?"
+      },
+      "acceptedAnswers": [
+        "są"
+      ],
+      "items": [
+        "gdzie",
+        "oni",
+        "byc-sa"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l02-c-e07",
+      "verb": "być",
+      "meaning": {
+        "en": "to be"
+      },
+      "person": "my",
+      "sentence": "My ___ tutaj.",
+      "sentenceMeaning": {
+        "en": "We are here."
+      },
+      "acceptedAnswers": [
+        "jesteśmy"
+      ],
+      "items": [
+        "my",
+        "byc-jestesmy",
+        "tutaj"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l02-c-e08",
+      "verb": "być",
+      "meaning": {
+        "en": "to be"
+      },
+      "person": "wy",
+      "sentence": "Gdzie wy ___?",
+      "sentenceMeaning": {
+        "en": "Where are you? (several people)"
+      },
+      "acceptedAnswers": [
+        "jesteście"
+      ],
+      "items": [
+        "gdzie",
+        "wy",
+        "byc-jestescie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-c-e09",
+      "text": "gdzie jesteś?",
+      "meaning": {
+        "en": "where are you? (one friend)"
+      },
+      "distractors": [
+        "gdzie jest?",
+        "skąd jesteś?"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jestes"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-c-e10",
+      "prompt": "ono",
+      "options": [
+        {
+          "en": "it (a child, or a neuter noun)"
+        },
+        {
+          "en": "he"
+        },
+        {
+          "en": "she"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ono"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-c-e11",
+      "prompt": "panowie",
+      "options": [
+        {
+          "en": "ladies; you (to women, formal)"
+        },
+        {
+          "en": "gentlemen; you (to men, formal)"
+        },
+        {
+          "en": "Mr and Mrs; you (to a man and a woman, formal)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "panowie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-c-e12",
+      "prompt": "panie",
+      "options": [
+        {
+          "en": "gentlemen; you (to men, formal)"
+        },
+        {
+          "en": "they (women)"
+        },
+        {
+          "en": "ladies; you (to women, formal)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "panie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-c-e13",
+      "prompt": "państwo",
+      "options": [
+        {
+          "en": "Mr and Mrs; you (to a man and a woman, formal)"
+        },
+        {
+          "en": "ladies; you (to women, formal)"
+        },
+        {
+          "en": "gentlemen; you (to men, formal)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "panstwo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-c-e14",
+      "text": "ono jest tutaj",
+      "meaning": {
+        "en": "it is here"
+      },
+      "distractors": [
+        "on jest tutaj",
+        "ona jest tutaj"
+      ],
+      "items": [
+        "ono",
+        "byc-jest",
+        "tutaj"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-c-e15",
+      "text": "gdzie są panowie?",
+      "meaning": {
+        "en": "where are the gentlemen?"
+      },
+      "distractors": [
+        "gdzie są panie?",
+        "gdzie jest pan?"
+      ],
+      "items": [
+        "gdzie",
+        "byc-sa",
+        "panowie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-c-e16",
+      "prompt": {
+        "en": "they are there (women)"
+      },
+      "acceptedAnswers": [
+        "one są tam",
+        "one tam są",
+        "są tam"
+      ],
+      "distractors": [
+        "oni",
+        "jest"
+      ],
+      "items": [
+        "one",
+        "byc-sa",
+        "tam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-c-e17",
+      "prompt": {
+        "en": "where are you? (to a man and a woman, formal)"
+      },
+      "acceptedAnswers": [
+        "gdzie są państwo?",
+        "gdzie państwo są?"
+      ],
+      "items": [
+        "gdzie",
+        "byc-sa",
+        "panstwo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-c-e18",
+      "prompt": {
+        "en": "the ladies are here"
+      },
+      "acceptedAnswers": [
+        "panie są tutaj",
+        "tutaj są panie"
+      ],
+      "distractors": [
+        "panowie",
+        "jest"
+      ],
+      "items": [
+        "panie",
+        "byc-sa",
+        "tutaj"
+      ]
+    }
+  ]
+}

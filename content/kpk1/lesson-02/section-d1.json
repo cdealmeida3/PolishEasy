@@ -1,0 +1,384 @@
+{
+  "id": "kpk1-l02-d1",
+  "section": {
+    "letter": "D",
+    "heading": "Skąd jesteś? Gdzie mieszkasz?",
+    "meaning": {
+      "en": "Where are you from? Where do you live?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-d1-t01",
+      "before": "kpk1-l02-d1-e01",
+      "title": {
+        "en": "Where are you from?"
+      },
+      "body": {
+        "en": "*Skąd jesteś?* asks a friend where they are from; to *pan* or *pani* it is *skąd pan jest?*, *skąd pani jest?*. The answer is *jestem z…*, and after *z* the country's name changes its ending: *Polska*, *z Polski*."
+      },
+      "table": {
+        "title": {
+          "en": "From which country?"
+        },
+        "columns": [
+          {
+            "header": "kraj"
+          },
+          {
+            "header": "skąd?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Polska",
+              "z Polski"
+            ]
+          },
+          {
+            "cells": [
+              "Anglia",
+              "z Anglii"
+            ]
+          },
+          {
+            "cells": [
+              "Niemcy",
+              "z Niemiec"
+            ]
+          },
+          {
+            "cells": [
+              "Hiszpania",
+              "z Hiszpanii"
+            ]
+          },
+          {
+            "cells": [
+              "Francja",
+              "z Francji"
+            ]
+          },
+          {
+            "cells": [
+              "Włochy",
+              "z Włoch"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d1-e01",
+      "prompt": "skąd jesteś?",
+      "options": [
+        {
+          "en": "where are you from? (to a man, formal)"
+        },
+        {
+          "en": "where are you from? (one friend)"
+        },
+        {
+          "en": "where are you? (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "skad-jestes"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d1-e02",
+      "prompt": "skąd pan jest?",
+      "options": [
+        {
+          "en": "where are you from? (one friend)"
+        },
+        {
+          "en": "where are you from? (to a woman, formal)"
+        },
+        {
+          "en": "where are you from? (to a man, formal)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "skad-pan-jest"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d1-e03",
+      "prompt": "skąd pani jest?",
+      "options": [
+        {
+          "en": "where are you from? (to a woman, formal)"
+        },
+        {
+          "en": "where are you from? (to a man, formal)"
+        },
+        {
+          "en": "how are things with you? (to a woman, formal)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "skad-pani-jest"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-d1-e04",
+      "text": "skąd pani jest?",
+      "meaning": {
+        "en": "where are you from? (to a woman, formal)"
+      },
+      "distractors": [
+        "skąd pan jest?",
+        "skąd jesteś?"
+      ],
+      "items": [
+        "skad-pani-jest"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d1-e05",
+      "prompt": "z Polski",
+      "options": [
+        {
+          "en": "from England"
+        },
+        {
+          "en": "from Poland"
+        },
+        {
+          "en": "from Germany"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-polski"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d1-e06",
+      "prompt": "z Niemiec",
+      "options": [
+        {
+          "en": "from France"
+        },
+        {
+          "en": "from Italy"
+        },
+        {
+          "en": "from Germany"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-niemiec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d1-e07",
+      "prompt": "z Hiszpanii",
+      "options": [
+        {
+          "en": "from Spain"
+        },
+        {
+          "en": "from Germany"
+        },
+        {
+          "en": "from England"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-hiszpanii"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d1-e08",
+      "prompt": "z Francji",
+      "options": [
+        {
+          "en": "from Spain"
+        },
+        {
+          "en": "from France"
+        },
+        {
+          "en": "from Poland"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-francji"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-d1-e09",
+      "prompt": "z Włoch",
+      "options": [
+        {
+          "en": "from France"
+        },
+        {
+          "en": "from Germany"
+        },
+        {
+          "en": "from Italy"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-wloch"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-d1-e10",
+      "text": "jestem z Hiszpanii",
+      "meaning": {
+        "en": "I am from Spain"
+      },
+      "distractors": [
+        "jestem z Francji",
+        "jestem z Niemiec"
+      ],
+      "items": [
+        "byc-jestem",
+        "z-hiszpanii"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-d1-e11",
+      "prompt": {
+        "en": "where are you from? (one friend)"
+      },
+      "acceptedAnswers": [
+        "skąd jesteś?"
+      ],
+      "distractors": [
+        "pan",
+        "gdzie"
+      ],
+      "items": [
+        "skad-jestes"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-d1-e12",
+      "prompt": {
+        "en": "I am from Germany, and you? (one friend)"
+      },
+      "acceptedAnswers": [
+        "jestem z Niemiec, a ty?"
+      ],
+      "distractors": [
+        "Włoch",
+        "pan"
+      ],
+      "items": [
+        "byc-jestem",
+        "z-niemiec",
+        "a-ty"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-d1-e13",
+      "prompt": {
+        "en": "I am from Italy"
+      },
+      "acceptedAnswers": [
+        "jestem z Włoch",
+        "ja jestem z Włoch"
+      ],
+      "items": [
+        "byc-jestem",
+        "z-wloch"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-d1-e14",
+      "acceptedAnswers": [
+        "jestem z Francji"
+      ],
+      "meaning": {
+        "en": "I am from France"
+      },
+      "items": [
+        "byc-jestem",
+        "z-francji"
+      ],
+      "readingAnswers": [
+        "ja jestem z Francji"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-d1-e15",
+      "prompt": {
+        "en": "where are you from? (to a man, formal)"
+      },
+      "acceptedAnswers": [
+        "skąd pan jest?"
+      ],
+      "distractors": [
+        "pani",
+        "jesteś"
+      ],
+      "items": [
+        "skad-pan-jest"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-d1-e16",
+      "prompt": {
+        "en": "where are you from? (to a woman, formal)"
+      },
+      "acceptedAnswers": [
+        "skąd pani jest?"
+      ],
+      "items": [
+        "skad-pani-jest"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-d1-e17",
+      "text": "ona jest z Włoch",
+      "meaning": {
+        "en": "she is from Italy"
+      },
+      "distractors": [
+        "ona jest z Polski",
+        "on jest z Włoch"
+      ],
+      "items": [
+        "ona",
+        "byc-jest",
+        "z-wloch"
+      ]
+    }
+  ]
+}

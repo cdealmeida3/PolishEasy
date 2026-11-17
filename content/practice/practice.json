@@ -1,5 +1,9 @@
 {
-  "my": { "m": "moj", "f": "moja", "n": "moje" },
+  "my": {
+    "m": "moj",
+    "f": "moja",
+    "n": "moje"
+  },
   "genders": {
     "czas": "m",
     "pytanie": "n",
@@ -44,7 +48,12 @@
     "dlugopis": "m",
     "komputer": "m",
     "kawa": "f",
-    "woda": "f"
+    "woda": "f",
+    "adres": "m",
+    "ulica": "f",
+    "mieszkanie": "n",
+    "serial": "m",
+    "hobby": "n"
   },
   "realWords": [
     "alę",
@@ -58,6 +67,7 @@
     "dziękuje",
     "ewą",
     "gratulację",
+    "graś",
     "jeszce",
     "ją",
     "kawą",
@@ -71,12 +81,21 @@
     "mas",
     "maż",
     "milo",
+    "mięszka",
+    "mięszkacie",
+    "mięszkają",
+    "mięszkam",
+    "mięszkamy",
+    "mięszkanie",
+    "mięszkasz",
     "moją",
     "mą",
     "mącie",
     "nauczycielką",
+    "niemieć",
     "nić",
     "oną",
+    "panię",
     "pań",
     "plusz",
     "pluś",
@@ -101,6 +120,7 @@
     "toaletą",
     "twoją",
     "tęż",
+    "ulicą",
     "wodą",
     "zona",
     "łat",

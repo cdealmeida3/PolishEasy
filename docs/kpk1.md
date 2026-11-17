@@ -49,3 +49,26 @@ It gives the later chapters:
 - *minus* and *równa się* after a number, which the Numbers rules in `docs/authoring.md` now allow.
 
 It leaves for later: *jak się mówi* only with *po polsku*, no verb but *być*, *mieć* and *nazywać się* in the forms Starter taught, places only as *tu*, *tam*, *na lewo* and *na prawo* (no locative), and no plural nouns.
+
+## Chapter 2: Cześć, skąd jesteś?
+
+Book pages 18 to 27, recordings 029 to 046. Twelve parts, 193 Exercises and 58 new Items. Pages 20–21 and 26–27 are missing from the saved spreads; frames of them are in `teacher-course/pages-extra/`.
+
+- **A** *Dane personalne* (18): *imię, nazwisko, adres, ulica, numer telefonu, mieszkanie*, *przez* in a house number (*dziesięć przez trzy*), and *jaki jest twój…?*.
+- **B** *Co słychać?*, in two (15 and 13): the questions by register (*co u ciebie?*, *co u pana słychać?*, *co u pani słychać?*, *co słychać?*, *co nowego?*), with a table marked O, N and U, and the answers *wszystko dobrze, wszystko w porządku, po staremu, nic nowego* and *a u ciebie / pana / pani?*.
+- **C** *Gdzie ona jest?* (18): *być* again with its table, *ono*, and *panowie, panie, państwo*, with a table of who is *oni* and who *one*.
+- **D** *Skąd jesteś? Gdzie mieszkasz?*, in four: where from (17: *skąd jesteś? / pan jest? / pani jest?*, *z Polski, z Anglii, z Niemiec, z Hiszpanii, z Francji, z Włoch*, with a table of the countries); *mieszkać* with its table (15); *w Krakowie, w Warszawie, w Londynie, w Berlinie* (13); and the -m, -sz verbs with the table of *grać* (18: *gram, grasz, czytam, oglądam, kocham*, *w tenisa*, *serial*, *Kraków*).
+- **E** *Liczebniki 11–29* (18): 11 to 20 again and 21 to 29 built from them, phone numbers in pairs.
+- **F** *Dlaczego uczysz się polskiego?*, in two (14 and 15): *dlaczego* and *bo*; then *żeby* with a verb's basic form (*pracować, studiować w Polsce*), *hobby*, and an *Uwaga!* on *jego* and *jej*, which never change.
+- *Ćwiczenia* (18): the book's kinds again over the whole chapter.
+
+There are 35 listening tasks on all 18 recordings, and two Chats: *Your details* (Pani Anna at the school office, formal: how are things, where you are from and live, your phone number, why you learn Polish) and *Catching up* (Ewa on the phone, informal: how are things, where you are, tennis, why Polish). The Ankieta Game, the chapter's signature, follows in its own step.
+
+It gives the later chapters:
+
+- *mieszkać* and the -m, -sz pattern, which the Verb challenge can grow into;
+- *w* with a city in the locative and *z* with a country in the genitive, each learnt as a phrase;
+- 11 to 29, and *przez* after a house number, which the number rule in `AuthoredContentTest` now allows;
+- *jego* and *jej*, and *chłopak*, *dziewczyna*, *adres* and *hobby* in the possessive test's lists.
+
+It leaves for later: no other verb forms of the -m, -sz verbs than those listed, *uczyć się* only as the three phrases with *polskiego*, cities and countries only as the phrases above, no *pana* or *pani* as "your" (*jaki ma pan numer telefonu?* instead), and no counting with 21 to 29 (*dwadzieścia jeden lat* waits for its rule).

@@ -29,6 +29,7 @@ import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.performClick
@@ -469,6 +470,44 @@ class ScreenshotsTest {
         shot("148-chapter-1-tip")
         tap(R.string.action_continue)
         shot("148-chapter-1-first")
+    }
+
+    @Test
+    fun `chapter 2 of the book over the real course in the light theme`() = chapter2Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 2 of the book over the real course in the dark theme`() = chapter2Tour("dark")
+
+    @Test
+    fun `chapter 2 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter2Tour("large") }
+
+    /**
+     * Chapter 2 over the real course: its Lesson screen at the top and its sections, then section
+     * C's Tip on być with its table and its first Exercise, and section F's Tip on żeby.
+     */
+    private fun chapter2Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l02") }
+        screen.waitForIdle()
+        shot("157-chapter-2")
+        screen.onAllNodes(hasText("Liczebniki 11–29", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("157-chapter-2-sections")
+        screen.runOnUiThread { model.openSection("kpk1-l02-c") }
+        screen.waitForIdle()
+        shot("158-chapter-2-byc")
+        tap(R.string.action_continue)
+        shot("158-chapter-2-first")
+        screen.runOnUiThread {
+            model.openLesson("kpk1-l02")
+            model.openSection("kpk1-l02-f2")
+        }
+        screen.waitForIdle()
+        shot("159-chapter-2-zeby")
     }
 
     @Test

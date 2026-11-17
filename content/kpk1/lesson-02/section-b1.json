@@ -1,0 +1,360 @@
+{
+  "id": "kpk1-l02-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Co słychać?",
+    "meaning": {
+      "en": "How are things?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l02-b1-t01",
+      "before": "kpk1-l02-b1-e01",
+      "title": {
+        "en": "How are things?"
+      },
+      "body": {
+        "en": "To ask how someone is doing, say *co słychać?* or *co nowego?* to anyone. To a friend it is *co u ciebie?*; to a man you call *pan*, *co u pana słychać?*, and to a woman, *co u pani słychać?*. Turn the question back with *a u ciebie?*, *a u pana?* or *a u pani?*."
+      },
+      "table": {
+        "title": {
+          "en": "How are things?"
+        },
+        "columns": [
+          {
+            "header": "zwrot"
+          }
+        ],
+        "rows": [
+          {
+            "header": "oficjalnie",
+            "cells": [
+              "co u pana słychać?"
+            ]
+          },
+          {
+            "header": "oficjalnie",
+            "cells": [
+              "co u pani słychać?"
+            ]
+          },
+          {
+            "header": "nieoficjalnie",
+            "cells": [
+              "co u ciebie?"
+            ]
+          },
+          {
+            "header": "uniwersalnie",
+            "cells": [
+              "co słychać?"
+            ]
+          },
+          {
+            "header": "uniwersalnie",
+            "cells": [
+              "co nowego?"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b1-e01",
+      "prompt": "co słychać?",
+      "options": [
+        {
+          "en": "see you tomorrow"
+        },
+        {
+          "en": "what does it mean?"
+        },
+        {
+          "en": "how are things?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "co-slychac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b1-e02",
+      "prompt": "co u ciebie?",
+      "options": [
+        {
+          "en": "how are things with you? (one friend)"
+        },
+        {
+          "en": "how are things with you? (to a man, formal)"
+        },
+        {
+          "en": "where are you from? (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "co-u-ciebie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b1-e03",
+      "prompt": "co u pana słychać?",
+      "options": [
+        {
+          "en": "how are things with you? (one friend)"
+        },
+        {
+          "en": "how are things with you? (to a man, formal)"
+        },
+        {
+          "en": "how are things with you? (to a woman, formal)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "co-u-pana-slychac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b1-e04",
+      "prompt": "co u pani słychać?",
+      "options": [
+        {
+          "en": "how are things with you? (to a man, formal)"
+        },
+        {
+          "en": "what is your name? (to a woman, formal)"
+        },
+        {
+          "en": "how are things with you? (to a woman, formal)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "co-u-pani-slychac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-b1-e05",
+      "text": "co u pani słychać?",
+      "meaning": {
+        "en": "how are things with you? (to a woman, formal)"
+      },
+      "distractors": [
+        "co u pana słychać?",
+        "co u ciebie?"
+      ],
+      "items": [
+        "co-u-pani-slychac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b1-e06",
+      "prompt": "co nowego?",
+      "options": [
+        {
+          "en": "what's new?"
+        },
+        {
+          "en": "what does it mean?"
+        },
+        {
+          "en": "how are you? (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "co-nowego"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-b1-e07",
+      "prompt": {
+        "en": "hi, how are things with you? (one friend)"
+      },
+      "acceptedAnswers": [
+        "cześć, co u ciebie?",
+        "cześć, co słychać?",
+        "cześć, co u ciebie słychać?"
+      ],
+      "distractors": [
+        "pana",
+        "słychać"
+      ],
+      "items": [
+        "czesc",
+        "co-u-ciebie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b1-e08",
+      "prompt": "a u ciebie?",
+      "options": [
+        {
+          "en": "and with you? (to a woman, formal)"
+        },
+        {
+          "en": "and with you? (one friend)"
+        },
+        {
+          "en": "how are things with you? (to a man, formal)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "a-u-ciebie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b1-e09",
+      "prompt": "a u pana?",
+      "options": [
+        {
+          "en": "and with you? (one friend)"
+        },
+        {
+          "en": "and with you? (to a woman, formal)"
+        },
+        {
+          "en": "and with you? (to a man, formal)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "a-u-pana"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l02-b1-e10",
+      "prompt": "a u pani?",
+      "options": [
+        {
+          "en": "and with you? (to a woman, formal)"
+        },
+        {
+          "en": "and with you? (to a man, formal)"
+        },
+        {
+          "en": "and you? (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "a-u-pani"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-b1-e11",
+      "text": "a u pani?",
+      "meaning": {
+        "en": "and with you? (to a woman, formal)"
+      },
+      "distractors": [
+        "a u pana?",
+        "a u ciebie?"
+      ],
+      "items": [
+        "a-u-pani"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l02-b1-e12",
+      "prompt": {
+        "en": "how are things with you? (to a man, formal)"
+      },
+      "acceptedAnswers": [
+        "co u pana słychać?",
+        "co słychać u pana?",
+        "co słychać?"
+      ],
+      "distractors": [
+        "pani",
+        "ciebie"
+      ],
+      "items": [
+        "co-u-pana-slychac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-b1-e13",
+      "text": "a u pana?",
+      "meaning": {
+        "en": "and with you? (to a man, formal)"
+      },
+      "distractors": [
+        "a u pani?",
+        "a u ciebie?"
+      ],
+      "items": [
+        "a-u-pana"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l02-b1-e14",
+      "text": "co nowego?",
+      "meaning": {
+        "en": "what's new?"
+      },
+      "distractors": [
+        "co to znaczy?",
+        "jak się masz?"
+      ],
+      "items": [
+        "co-nowego"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l02-b1-e15",
+      "prompt": {
+        "en": "how are things with you? (one friend)"
+      },
+      "acceptedAnswers": [
+        "co u ciebie?",
+        "co słychać?",
+        "co u ciebie słychać?",
+        "co słychać u ciebie?"
+      ],
+      "items": [
+        "co-u-ciebie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l02-b1-e16",
+      "acceptedAnswers": [
+        "a u ciebie?"
+      ],
+      "meaning": {
+        "en": "and with you? (one friend)"
+      },
+      "items": [
+        "a-u-ciebie"
+      ],
+      "readingAnswers": [
+        "a ty?"
+      ]
+    }
+  ]
+}
