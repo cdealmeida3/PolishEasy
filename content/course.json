@@ -9,6 +9,9 @@
   "pictures": "pictures/pictures.json",
   "practice": "practice/practice.json",
   "instructions": "kpk1/instructions.json",
+  "tracks": "kpk1/tracks.json",
+  "segments": "kpk1/segments.json",
+  "listening": "kpk1/listening.json",
   "levels": [
     {
       "id": "a1",

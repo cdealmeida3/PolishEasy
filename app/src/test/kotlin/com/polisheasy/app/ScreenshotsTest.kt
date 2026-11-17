@@ -117,6 +117,7 @@ class ScreenshotsTest {
     private val app: Application get() = RuntimeEnvironment.getApplication()
     private val clock = SettableClock()
     private val clips = RecordingClips()
+    private val recordings = RecordingRecordings()
     private var viewModel: CourseViewModel? by mutableStateOf(null)
 
     /** How much larger than usual the text is. Set before anything is shown. */
@@ -353,6 +354,82 @@ class ScreenshotsTest {
         shot("38-path-sealed")
         screen.onNode(hasText("Jesteś instruktorem tanga?") and hasClickAction()).performScrollTo().performClick()
         shot("39-lesson-coming")
+    }
+
+    @Test
+    fun `Class audio, a chapter's Słuchaj and the player in the light theme`() = classAudioTour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Class audio, a chapter's Słuchaj and the player in the dark theme`() = classAudioTour("dark")
+
+    @Test
+    fun `Class audio, a chapter's Słuchaj and the player at the largest font size`() = atTheLargestFontSize { classAudioTour("large") }
+
+    /**
+     * The class recordings over the real course: chapter 0's Słuchaj before any recording is on the
+     * phone, Class audio empty and after the zips of chapters 0 and 1 are added, the Słuchaj of
+     * chapter 0 and of chapter 1 (still coming, by the book's sections), and the player of a
+     * recording: at rest, playing in step mode with the Learner's turn, and its listening tasks
+     * before and after they are answered.
+     */
+    private fun classAudioTour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val real = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val course = real.copy(
+            listening = listOf(
+                com.polisheasy.engine.TrueFalseTask("t1", 4, "Pani ma na imię Anna.", mapOf("en" to "Her name is Anna."), answer = true),
+                com.polisheasy.engine.ChooseTask("t2", 4, "Skąd jest pan?", mapOf("en" to "Where is he from?"), listOf("z Polski", "z Hiszpanii", "z Niemiec"), 1, lines = listOf(2, 4)),
+                com.polisheasy.engine.DictationTask("t3", 4, "Jaki to numer pokoju?", mapOf("en" to "Which room number is it?"), listOf("siedem", "7")),
+            ),
+        )
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(
+            app,
+            engine,
+            engine.practice(InMemoryPracticeProgress(), Random(7)),
+            classAudioDir = folder.newFolder("class-audio-$theme"),
+        )
+        open(model)
+        tap(R.string.nav_path)
+        screen.onNode(hasText("Dzień dobry!") and hasClickAction()).performScrollTo().performClick()
+        screen.onNodeWithText(app.getString(R.string.listen_title)).performScrollTo()
+        screen.onNodeWithText(app.getString(R.string.listen_add)).performScrollTo()
+        shot("121-listen-none")
+        screen.onNodeWithText(app.getString(R.string.listen_add)).performClick()
+        shot("122-class-audio-empty")
+        val zips = classZips(real, 0..1, folder.newFolder("zips-$theme"))
+        screen.runOnUiThread { model.importClassAudio(files = zips.map(android.net.Uri::fromFile)) }
+        var waited = 0
+        while ((model.screen as? Screen.ClassAudio)?.importing != false && waited++ < 400) {
+            shadowOf(android.os.Looper.getMainLooper()).idle()
+            Thread.sleep(25)
+        }
+        shot("122-class-audio-added")
+        back()
+        screen.onNodeWithText(app.getString(R.string.listen_recordings)).performScrollTo()
+        shot("123-listen-chapter-0")
+        back()
+        screen.onNode(hasText("Pierwszy dzień w szkole") and hasClickAction()).performScrollTo().performClick()
+        screen.onNodeWithText(app.getString(R.string.listen_section, "A")).performScrollTo()
+        shot("123-listen-chapter-1")
+        screen.onNode(hasText("004") and hasClickAction()).performScrollTo().performClick()
+        shot("124-player")
+        recordings.state = recordings.state.copy(playing = true, positionMs = 6_400, durationMs = 13_000, step = true, line = 2, yourTurn = true, speed = 0.75f)
+        shot("124-player-your-turn")
+        recordings.state = recordings.state.copy(yourTurn = false, step = false, positionMs = 9_000)
+        screen.onNodeWithText(app.getString(R.string.listen_tasks_title)).performScrollTo()
+        shot("125-listen-tasks")
+        screen.onNodeWithText(app.getString(R.string.listen_true)).performScrollTo().performClick()
+        screen.onNodeWithText("z Polski").performScrollTo().performClick()
+        screen.onNode(hasSetTextAction()).performScrollTo().performTextInput("siedem")
+        screen.onNodeWithText(app.getString(R.string.listen_check)).performScrollTo().performClick()
+        shot("125-listen-tasks-answered")
+        back()
+        back()
+        tap(R.string.nav_settings)
+        screen.onNodeWithText(app.getString(R.string.settings_class_audio)).performScrollTo()
+        shot("126-settings-class-audio")
     }
 
     /** Plays the Test showing to its end, answering the first [wrongly] questions wrongly and the rest rightly. */
@@ -1298,7 +1375,7 @@ class ScreenshotsTest {
         viewModel = over
         screen.setContent {
             Shown {
-                viewModel?.let { key(it) { PolishEasyApp(it, clips) } }
+                viewModel?.let { key(it) { PolishEasyApp(it, clips, recordings) } }
             }
         }
     }

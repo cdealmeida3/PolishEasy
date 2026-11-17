@@ -237,6 +237,10 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`Flashcard`**: a card at least 260 high with `extraLarge` corners and a 2 dp border in the chapter's fill. Face up, the Polish in `displaySmall` on the chapter's container; tapped, it turns over (`Motion.flip`) to the Polish small and the meaning in `headlineSmall`. Its register and speaker sit at its foot.
 - **`DictionaryRow`**: a word in the Słownik, its Polish in `titleMedium`, its meaning in `bodyMedium`, its register and speaker at the end; rows are divided by `outlineVariant` lines in one `ContentCard`. **`SearchField`** above them is outlined, with the search icon, and does not open the keyboard by itself.
 - **`Seal`**: a Test's score, a 128 disc with the percent in `headlineLarge`: in the chapter's fill with the seal's mark when passed, `surfaceContainerHighest` until then.
+- **`RecordingRow`**: a class recording in a chapter's Słuchaj: its number ("064") in `labelLarge` on a 48 rounded square of the chapter's container, its title in `titleSmall` and "0:32 · ćwiczenie 1" in `labelMedium`, and the play arrow at the end. One not on the phone yet is faint, has no arrow and cannot be tapped; a screen reader hears "Not on this phone yet."
+- **`AudioPlayerBar`**: the player of a recording on a `large` card: the `ProgressBar`, "0:06 / 0:13" (with "Line 3 of 9" in step mode) in `labelMedium`, then 5 s back, the line before, play or pause in a 72 circle of the chapter's fill, the next line and 5 s on, each at least 48.
+- **`YourTurn`**: step mode's pause, "Twoja kolej! Powtórz." in `titleMedium` and its English in `labelMedium`, with the voice icon, on the chapter's container; it appears and goes with the pause, and a screen reader hears it.
+- **`ListeningTaskCard`**: a listening task on a `large` outlined card: its kind as the book asks it ("Prawda czy nieprawda?") in `labelMedium`, the Polish question in `titleMedium`, its English under it, then `OptionCard`s ("P · prawda", "N · nieprawda", or the choices) or an `AnswerField` with "Check". Answered, the options are marked as an Exercise's are and a `RoundNote` says "Dobrze!" or "It was: …".
 - **`TrailStop`**: one Daily Set on a Unit's trail. Its node, then its title in `titleMedium` and under it a `bodyMedium` line with its number in its Unit and its state in words ("4 of 8 · Completed"). The stop the Learner is at has a `titleSmall` label above its title: "Today" in `primary`, or "Up next" in `onSurfaceVariant` when it unlocks tomorrow. A completed stop ends with the replay icon in `primary`. The whole stop is tapped as one, with no ripple: its node goes down. A locked stop's title is `onSurfaceVariant` and it is not tappable.
 - **Path node**: a 56 circle. Completed: `completed` fill with a tick in `onSuccess`, on the bottom edge in `completedEdge`. Today: `brand` fill with a play icon in `onBrand`, on the bottom edge in `brandEdge`, inside a 2 dp `brand` ring 72 across. Open: `surfaceContainerHighest` with a play icon in `onSurfaceVariant`, on the bottom edge in `outlineVariant`. Locked: `surfaceContainerHighest` with a lock icon in `onSurfaceVariant`, flat. Today's node sits on the card, never on a container colour.
 - **The trail**: a 4 dp line joining a Unit's nodes. It is `completed` as far as the Learner has come, up to today's node, and `outlineVariant` beyond.
@@ -290,8 +294,13 @@ A chapter, laid out like its opening page in the book, from the top:
 - **The `LessonBanner`**, then a **`StrandChip`** for each of K, L and G the chapter teaches.
 - **"Sprawdź w słowniku"**, with the look-up words of the book's page as `WordChip`s.
 - **"Sections"**: the chapter's sections as the trail of `TrailStop`s, each titled with its letter and the book's heading ("B · Liczebniki 20–100") and the English under it, ending in a `TrailMilestone`. A Starter Unit's Daily Sets are titled by their first Tip, as before.
+- **"Słuchaj"**: the chapter's class recordings, under "Część A", "Część B" … (with the section's heading once the chapter has it; "Nagrania" in chapter 0, whose recordings have no letter), a `RecordingRow` each, and "3 of 3 recordings on this phone". With none on the phone, a `Point`, "Add the class recordings", and a `TonalButton`, "Add them", which opens Class audio.
 - **"Powtórzenie"**: the three `ToolTile`s, Słownik, Fiszki and Test, open whatever has been completed.
-- A chapter still being written has, in place of its sections and Powtórzenie, a `Point`: "This lesson is on its way".
+- A chapter still being written has, in place of its sections and Powtórzenie, a `Point`: "This lesson is on its way", and then its Słuchaj, since the recordings are there before the sections are.
+
+## A recording
+
+Tapping a recording in Słuchaj opens it in the player (ADR-0014). From the top: the `LessonBanner` in the chapter's colour with "Nagranie 064", its title, "Lekcja 5 · część A" and the number large; the `AudioPlayerBar`; `YourTurn` while step mode waits; "Speed" as `ChoiceChips`, 0.75×, 1× and 1.25×; a `SettingsCard` with two `SwitchSetting`s, "Posłuchaj i powtórz" (step mode) and "Repeat"; "Zadania" with a `ListeningTaskCard` for each listening task, when it has any; and `QuietButton`s to the recordings before and after it in the chapter. The recording goes on in the background with Android's media notification; leaving its screen stops it. Nothing on it is saved.
 
 The rules of the trail are the Path's own, unchanged by being on a chapter's screen:
 
@@ -310,13 +319,18 @@ The rules of the trail are the Path's own, unchanged by being on a chapter's scr
 
 ## Settings
 
-Settings is quiet: four `SettingsCard`s, 16 apart, and nothing that moves.
+Settings is quiet: five `SettingsCard`s, 16 apart, and nothing that moves.
 
 - **The Reminder**: its switch, and when it is on, its time. If Android will not show notifications, a `SettingNotice` between them says so and opens Android's settings.
 - **Sound**: one switch.
 - **One new Daily Set a day**: one switch, off by default, with "Off: learn at your own pace, as many as you like. On: the next one opens tomorrow." It takes effect at once.
+- **Class audio**: a `LinkSetting`, "28 of 271 recordings of Polski krok po kroku 1 on this phone", to its screen.
 - **Report a mistake**: a `LinkSetting` to the email app.
 - **The version**, 24 below the last card.
+
+### Class audio
+
+Opened from Settings or from a chapter's "Add them", in a `DetailFrame`: "Class audio" and what the recordings are and that they stay on the phone in a `CardNote`; a `StatRow`, "28 of 271 · recordings on this phone" and "2.4 MB · of room they take"; what the last import did as a `RoundNote` ("Added 25 recordings.") and, if some files were not the book's, a `CardNote`; a `Point` on how to add them; and "Remove the recordings", a `QuietButton` that asks first. At the bottom, "Add the class zips" (`PrimaryButton`, Android's picker with several files at once) and "Add a folder" (`SecondaryButton`). While files are read the main button says "Adding the recordings…".
 
 ## Practice
 

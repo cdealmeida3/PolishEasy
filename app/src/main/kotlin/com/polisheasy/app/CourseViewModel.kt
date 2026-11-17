@@ -3,10 +3,23 @@ package com.polisheasy.app
 import android.app.Application
 import android.app.NotificationManager
 import android.content.Context
+import android.net.Uri
+import android.provider.DocumentsContract
+import android.provider.OpenableColumns
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.viewModelScope
+import com.polisheasy.engine.ClassAudio
+import com.polisheasy.engine.ClassAudioView
+import com.polisheasy.engine.ImportResult
+import com.polisheasy.engine.ListenView
+import com.polisheasy.engine.ListeningAnswer
+import com.polisheasy.engine.RecordingPlayView
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import com.polisheasy.engine.Answer
 import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.DayView
@@ -98,6 +111,28 @@ sealed interface Screen {
         val started: Boolean = false,
         val oneADay: Boolean = true,
         val inProgress: String? = null,
+        /** The chapter's class recordings, for its Słuchaj, or null for a Starter Unit, which has none. */
+        val listen: ListenView? = null,
+    ) : Screen
+
+    /**
+     * Class audio: how many of the book's recordings are on the phone, and adding or removing them.
+     * [importing] while files are being read; [result] what the last import did, or [failed] when
+     * it could not read them. [from] is the chapter whose Lesson screen opened it, else Settings did.
+     */
+    data class ClassAudio(
+        val view: ClassAudioView,
+        val importing: Boolean = false,
+        val result: ImportResult? = null,
+        val failed: Boolean = false,
+        val from: String? = null,
+    ) : Screen
+
+    /** A class recording in the player, from a chapter's Słuchaj, with its listening tasks and those already [answered]. */
+    data class Listen(
+        val lesson: LessonView,
+        val play: RecordingPlayView,
+        val answered: Map<String, ListenedAnswer> = emptyMap(),
     ) : Screen
 
     /** A chapter's Słownik: its words, each with its meaning and Clip. [sound] is whether they may be heard. */
@@ -126,6 +161,8 @@ sealed interface Screen {
         val notificationsAllowed: Boolean,
         val soundOn: Boolean,
         val oneADay: Boolean = false,
+        /** How many class recordings are on the phone. */
+        val classAudio: ClassAudioView = ClassAudioView(0, 0, 0),
     ) : Screen
 
     /** [shown] is different for each step shown. [replay] when the Tip belongs to a Replay. */
@@ -202,6 +239,9 @@ sealed interface Screen {
     ) : Screen
 }
 
+/** A listening task answered: what the Learner gave, and whether it was right. */
+data class ListenedAnswer(val answer: ListeningAnswer, val feedback: Feedback)
+
 /** The Reminder offered on a Summary: the [time] it would come at, and whether the Learner has taken it [on]. */
 data class ReminderOffer(val time: LocalTime, val on: Boolean = false)
 
@@ -227,11 +267,15 @@ class CourseViewModel(
     private val engine: CourseEngine,
     /** The Games, over the same course and progress, with the Bests kept in a file of their own. */
     private val practice: PracticeGames = engine.practice(FilePracticeProgress(File(application.filesDir, "practice.json"))),
+    /** Where the imported class recordings are kept: never backed up (ADR-0014). */
+    classAudioDir: File = File(application.noBackupFilesDir, "class-audio"),
 ) : AndroidViewModel(application) {
     /** The one Android builds the view model with: the packaged course and the Learner's saved progress. */
     constructor(application: Application) : this(application, courseEngine(application))
 
     private val settings = Settings(application)
+
+    private val classAudio: ClassAudio = engine.classAudio(classAudioDir)
 
     var screen: Screen by mutableStateOf(firstScreen())
         private set
@@ -295,7 +339,7 @@ class CourseViewModel(
             started = today is Today.InProgress,
             oneADay = settings.oneADay,
             inProgress = engine.dailySetInProgress(),
-        )
+        ).let { lesson -> lesson.copy(listen = lesson.lesson.number?.let(classAudio::listen)) }
     }
 
     /** The unit of the Lesson screen showing, or of the Słownik or Fiszki opened from it. */
@@ -303,7 +347,105 @@ class CourseViewModel(
         is Screen.Lesson -> current.lesson.unitId
         is Screen.Dictionary -> current.lesson.unitId
         is Screen.Flashcards -> current.lesson.unitId
+        is Screen.Listen -> current.lesson.unitId
+        is Screen.ClassAudio -> current.from
         else -> null
+    }
+
+    /** Class audio, from Settings or from a chapter's Słuchaj. */
+    fun openClassAudio() {
+        screen = Screen.ClassAudio(classAudio.view(), from = lessonShowing())
+    }
+
+    /** Back from Class audio, to where it was opened from. */
+    fun leaveClassAudio() {
+        val from = (screen as? Screen.ClassAudio)?.from
+        if (from != null) openLesson(from) else openSettings()
+    }
+
+    /**
+     * Imports the class recordings in the files the Learner picked ([files], zips or MP3s), or in
+     * the [folder] they picked and the folders in it. Each recording replaces any copy already there.
+     */
+    fun importClassAudio(files: List<Uri> = emptyList(), folder: Uri? = null) {
+        val showing = screen as? Screen.ClassAudio ?: return
+        if (showing.importing) return
+        screen = showing.copy(importing = true, result = null, failed = false)
+        val resolver = getApplication<Application>().contentResolver
+        viewModelScope.launch {
+            val result = withContext(Dispatchers.IO) {
+                runCatching {
+                    val picked = files.map { it to nameOf(it) } + folder?.let(::filesIn).orEmpty()
+                    picked.fold(ImportResult.NONE) { sum, (uri, name) ->
+                        sum + (resolver.openInputStream(uri)?.use { classAudio.importFile(name, it) } ?: ImportResult.NONE)
+                    }
+                }.getOrNull()
+            }
+            val now = screen as? Screen.ClassAudio ?: return@launch
+            screen = now.copy(view = classAudio.view(), importing = false, result = result, failed = result == null)
+        }
+    }
+
+    /** "Remove" on Class audio: every imported recording is deleted from the phone. */
+    fun removeClassAudio() {
+        val showing = screen as? Screen.ClassAudio ?: return
+        if (showing.importing) return
+        classAudio.removeAll()
+        screen = showing.copy(view = classAudio.view(), result = null, failed = false)
+    }
+
+    /** A recording tapped in a chapter's Słuchaj, or skipped to in the player: it opens in the player. */
+    fun openRecording(number: Int) {
+        val unitId = lessonShowing() ?: return
+        if (number !in classAudio.imported()) return
+        screen = Screen.Listen(engine.lesson(unitId), classAudio.play(number))
+    }
+
+    /** The file of recording [number] on the phone. */
+    fun recordingFile(number: Int): File = classAudio.fileOf(number)
+
+    /** A listening task answered. It is checked, and the answer kept while the recording is open; nothing is saved. */
+    fun answerListening(taskId: String, answer: ListeningAnswer) {
+        val listen = screen as? Screen.Listen ?: return
+        if (taskId in listen.answered) return
+        screen = listen.copy(answered = listen.answered + (taskId to ListenedAnswer(answer, classAudio.check(taskId, answer))))
+    }
+
+    private fun nameOf(uri: Uri): String {
+        val resolver = getApplication<Application>().contentResolver
+        val named = runCatching {
+            resolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use { cursor ->
+                if (cursor.moveToFirst()) cursor.getString(0) else null
+            }
+        }.getOrNull()
+        return named ?: uri.lastPathSegment.orEmpty().substringAfterLast('/')
+    }
+
+    /** Every file in the folder [tree] and in the folders in it, with its name. */
+    private fun filesIn(tree: Uri): List<Pair<Uri, String>> {
+        val resolver = getApplication<Application>().contentResolver
+        val found = mutableListOf<Pair<Uri, String>>()
+        fun walk(documentId: String) {
+            val children = DocumentsContract.buildChildDocumentsUriUsingTree(tree, documentId)
+            val columns = arrayOf(
+                DocumentsContract.Document.COLUMN_DOCUMENT_ID,
+                DocumentsContract.Document.COLUMN_DISPLAY_NAME,
+                DocumentsContract.Document.COLUMN_MIME_TYPE,
+            )
+            resolver.query(children, columns, null, null, null)?.use { cursor ->
+                while (cursor.moveToNext()) {
+                    val id = cursor.getString(0)
+                    val name = cursor.getString(1).orEmpty()
+                    if (cursor.getString(2) == DocumentsContract.Document.MIME_TYPE_DIR) {
+                        walk(id)
+                    } else {
+                        found += DocumentsContract.buildDocumentUriUsingTree(tree, id) to name
+                    }
+                }
+            }
+        }
+        walk(DocumentsContract.getTreeDocumentId(tree))
+        return found
     }
 
     /** A section on a Lesson screen: today's started or continued, a completed one replayed, an open one started. */
@@ -364,7 +506,7 @@ class CourseViewModel(
         show(engine.startCheckpoint(unitId, sound = settings.soundOn))
     }
 
-    /** Back from the Słownik or the Fiszki, to the Lesson screen they were opened from. */
+    /** Back from the Słownik, the Fiszki or a recording, to the Lesson screen they were opened from. */
     fun backToLesson() {
         val unitId = lessonShowing() ?: return openPath()
         openLesson(unitId)
@@ -559,6 +701,7 @@ class CourseViewModel(
             is Screen.Path -> screen = path()
             is Screen.Lesson -> screen = lessonScreen(current.lesson.unitId)
             is Screen.Settings -> screen = settingsScreen()
+            is Screen.ClassAudio -> if (!current.importing) screen = current.copy(view = classAudio.view())
             is Screen.Practice -> screen = practiceScreen()
             else -> Unit
         }
@@ -628,6 +771,7 @@ class CourseViewModel(
             .areNotificationsEnabled(),
         soundOn = settings.soundOn,
         oneADay = settings.oneADay,
+        classAudio = classAudio.view(),
     )
 
     private fun show(step: Step) {

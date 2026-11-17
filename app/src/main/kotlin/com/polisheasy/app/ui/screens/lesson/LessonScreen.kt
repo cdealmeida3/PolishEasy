@@ -19,6 +19,9 @@ import com.polisheasy.app.ui.components.ChipRow
 import com.polisheasy.app.ui.components.DetailFrame
 import com.polisheasy.app.ui.components.LessonBanner
 import com.polisheasy.app.ui.components.Point
+import com.polisheasy.app.ui.components.RecordingRow
+import com.polisheasy.app.ui.components.SectionHeading
+import com.polisheasy.app.ui.components.TonalButton
 import com.polisheasy.app.ui.components.PrimaryButton
 import com.polisheasy.app.ui.components.QuietButton
 import com.polisheasy.app.ui.components.StopState
@@ -33,6 +36,7 @@ import com.polisheasy.app.ui.theme.Space
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.DailySetState
 import com.polisheasy.engine.LessonView
+import com.polisheasy.engine.ListenView
 import com.polisheasy.engine.NextDailySetView
 import com.polisheasy.engine.PathView
 import com.polisheasy.engine.SectionView
@@ -66,6 +70,9 @@ internal fun LessonScreen(
     oneADay: Boolean = true,
     inProgress: String? = null,
     sound: Boolean = true,
+    listen: ListenView? = null,
+    onRecording: (Int) -> Unit = {},
+    onClassAudio: () -> Unit = {},
 ) {
     // The section chosen while another Daily Set is in progress, waiting for the Learner to say it may replace it.
     var replacing by rememberSaveable { mutableStateOf<String?>(null) }
@@ -127,6 +134,8 @@ internal fun LessonScreen(
         Spacer(Modifier.height(Space.l))
         if (lesson.coming) {
             Point(R.drawable.ic_menu_book, stringResource(R.string.lesson_coming_title), stringResource(R.string.lesson_coming_note))
+            // The class recordings are there before the chapter's sections are.
+            listen?.let { Listen(it, lesson.accent, onRecording, onClassAudio) }
             return@DetailFrame
         }
         TopBar(stringResource(R.string.lesson_sections))
@@ -142,6 +151,7 @@ internal fun LessonScreen(
             },
             reached = completed == lesson.sections.size,
         )
+        listen?.let { Listen(it, lesson.accent, onRecording, onClassAudio) }
         Spacer(Modifier.height(Space.l))
         TopBar(stringResource(R.string.lesson_review), note = stringResource(R.string.lesson_review_note))
         Row(horizontalArrangement = Arrangement.spacedBy(Space.xs)) {
@@ -291,6 +301,50 @@ private fun SectionStop(
             null
         },
     )
+}
+
+/**
+ * The chapter's Słuchaj: its class recordings by section, with the book's numbers, each opening in
+ * the player once it is on the phone. With none on the phone it says how to add them.
+ */
+@Composable
+private fun Listen(listen: ListenView, accent: Int, onRecording: (Int) -> Unit, onClassAudio: () -> Unit) {
+    Spacer(Modifier.height(Space.l))
+    TopBar(
+        stringResource(R.string.listen_title),
+        note = if (listen.imported == 0) stringResource(R.string.listen_note) else stringResource(R.string.listen_some, listen.imported, listen.total),
+    )
+    if (listen.imported == 0) {
+        Point(R.drawable.ic_headphones, stringResource(R.string.listen_none_title), stringResource(R.string.listen_none_note))
+        Spacer(Modifier.height(Space.xs))
+        TonalButton(stringResource(R.string.listen_add), R.drawable.ic_library_add, onClassAudio)
+        Spacer(Modifier.height(Space.s))
+    }
+    listen.sections.forEach { section ->
+        Spacer(Modifier.height(Space.xs))
+        val letter = section.letter
+        val heading = section.heading
+        SectionHeading(
+            when {
+                letter == null -> stringResource(R.string.listen_recordings)
+                heading != null -> stringResource(R.string.listen_section_heading, letter, heading)
+                else -> stringResource(R.string.listen_section, letter)
+            },
+        )
+        section.recordings.forEach { recording ->
+            val length = clock(recording.lengthMs)
+            val note = recording.exercise?.let { stringResource(R.string.listen_exercise_note, length, it) } ?: length
+            RecordingRow(
+                number = stringResource(R.string.listen_number, recording.number),
+                title = recording.title,
+                note = if (recording.tasks > 0) pluralStringResource(R.plurals.listen_tasks, recording.tasks, note, recording.tasks) else note,
+                accent = accent,
+                onClick = if (recording.imported) ({ onRecording(recording.number) }) else null,
+                onClickLabel = stringResource(R.string.listen_open),
+                said = if (recording.imported) null else stringResource(R.string.listen_not_added),
+            )
+        }
+    }
 }
 
 /** What the book's register mark means, for a screen reader and beside a phrase. */

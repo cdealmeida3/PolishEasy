@@ -16,6 +16,12 @@ internal data class CourseFile(
     val practice: String? = null,
     /** Optional: the path of the file with the Polish instruction of each kind of Exercise. */
     val instructions: String? = null,
+    /** Optional: the path of the file that lists the book's class recordings. */
+    val tracks: String? = null,
+    /** Optional: the path of the file with each class recording's lines, for step mode. */
+    val segments: String? = null,
+    /** Optional: the path of the file with the listening tasks on the class recordings. */
+    val listening: String? = null,
 )
 
 /** The Polish instruction of each kind of Exercise, as the book words it. */
@@ -109,6 +115,13 @@ internal class ReadContent(
     val instructions: Map<InstructionKind, Instruction> = emptyMap(),
     /** The file with the instructions, if the course has one. */
     val instructionsFile: String? = null,
+    val tracks: List<ClassTrack> = emptyList(),
+    val tracksFile: String? = null,
+    /** Each class recording's lines as the segments file writes them, by track number as text. */
+    val segments: Map<String, List<List<Long>>> = emptyMap(),
+    val segmentsFile: String? = null,
+    val listening: List<ListeningTask> = emptyList(),
+    val listeningFile: String? = null,
 ) {
     /** Where the pictures' files are: the directory of the file that lists them. */
     val pictureDir: String = picturesFile?.substringBeforeLast('/', "").orEmpty()
@@ -117,7 +130,7 @@ internal class ReadContent(
 
     /** Every path `course.json` names. */
     val listed: Set<String> =
-        (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile, practiceFile, instructionsFile)).toSet()
+        (dailySetListings() + itemFiles + listOfNotNull(clipsFile, picturesFile, practiceFile, instructionsFile, tracksFile, segmentsFile, listeningFile)).toSet()
 
     private val unreadableFiles = unreadable.map { it.file }.toSet()
 
@@ -159,6 +172,11 @@ internal class ReadContent(
             practice?.genders.orEmpty().mapNotNull { (item, gender) -> Gender.of(gender)?.let { item to it } }.toMap(),
             practice?.my.orEmpty().mapNotNull { (gender, item) -> Gender.of(gender)?.let { it to item } }.toMap(),
             instructions,
+            tracks = tracks,
+            trackLines = segments.mapNotNull { (number, lines) ->
+                number.toIntOrNull()?.let { it to lines.filter { line -> line.size == 2 }.map { (start, end) -> TrackLine(start, end) } }
+            }.toMap(),
+            listening = listening,
         )
     }
 
@@ -210,6 +228,12 @@ internal fun readContent(readFile: (path: String) -> String): ReadContent {
             read(path) { contentJson.decodeFromString<InstructionsFile>(it) }?.instructions
         }.orEmpty(),
         instructionsFile = index.instructions,
+        tracks = index.tracks?.let { path -> read(path) { contentJson.decodeFromString<TracksFile>(it) }?.tracks }.orEmpty(),
+        tracksFile = index.tracks,
+        segments = index.segments?.let { path -> read(path) { contentJson.decodeFromString<SegmentsFile>(it) }?.lines }.orEmpty(),
+        segmentsFile = index.segments,
+        listening = index.listening?.let { path -> read(path) { contentJson.decodeFromString<ListeningFile>(it) }?.tasks }.orEmpty(),
+        listeningFile = index.listening,
         unreadable = unreadable,
     )
 }
@@ -316,6 +340,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
             problems += ContentProblem(file, null, "Nouns are given the gender \"$gender\", and no word for \"my\" is given for it")
         }
     }
+    problems += classAudioProblems(content)
     content.pictures.map { it.value.item }.repeated().forEach { item ->
         problems += ContentProblem(content.picturesFile.orEmpty(), item, "Item $item has more than one picture")
     }
@@ -463,3 +488,58 @@ private fun tableProblem(table: ConjugationTable): String? =
 
 /** How many times each word is in this list, letter case ignored. */
 private fun List<String>.wordCounts(): Map<String, Int> = groupingBy { it.lowercase(Locale.ROOT) }.eachCount()
+
+/** What the course engine could not run in the class recordings' list, their lines and their listening tasks. */
+private fun classAudioProblems(content: ReadContent): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    val tracksFile = content.tracksFile.orEmpty()
+    val tracks = content.tracks.associateBy { it.number }
+    problems += repeatedIds("class recording", content.tracks.map { Filed(tracksFile, it.number.toString()) })
+    content.tracks.forEach { track ->
+        val id = track.number.toString()
+        if (track.number !in 1..999) problems += ContentProblem(tracksFile, id, "Class recording ${track.number} is not numbered 1 to 999")
+        if (track.title.isBlank()) problems += ContentProblem(tracksFile, id, "Class recording ${track.number} has no title")
+        if (track.lengthMs <= 0) problems += ContentProblem(tracksFile, id, "Class recording ${track.number} has no length")
+    }
+    val segmentsFile = content.segmentsFile.orEmpty()
+    content.segments.forEach { (number, lines) ->
+        val track = number.toIntOrNull()?.let(tracks::get)
+        if (track == null) {
+            problems += ContentProblem(segmentsFile, number, "Lines are given for class recording $number, which is not listed")
+            return@forEach
+        }
+        val broken = lines.indexOfFirst { it.size != 2 || it[0] < 0 || it[1] <= it[0] || it[1] > track.lengthMs + 1_000 }
+        val unordered = lines.zipWithNext().indexOfFirst { (a, b) -> a.size == 2 && b.size == 2 && b[0] < a[1] }
+        when {
+            broken >= 0 -> problems += ContentProblem(segmentsFile, number, "Line ${broken + 1} of class recording $number is not a start and an end within the recording")
+            unordered >= 0 -> problems += ContentProblem(segmentsFile, number, "Line ${unordered + 2} of class recording $number starts before the line before it ends")
+        }
+    }
+    val listeningFile = content.listeningFile.orEmpty()
+    problems += repeatedIds("listening task", content.listening.map { Filed(listeningFile, it.id) })
+    content.listening.forEach { task ->
+        fun problem(message: String) {
+            problems += ContentProblem(listeningFile, task.id, "Listening task ${task.id} $message")
+        }
+        if (content.tracks.isNotEmpty() && task.track !in tracks) problem("is about class recording ${task.track}, which is not listed")
+        task.lines?.let { lines ->
+            val count = content.segments[task.track.toString()]?.size ?: 0
+            if (lines.size != 2 || lines[0] < 1 || lines[1] < lines[0] || lines[1] > count) {
+                problem("gives the lines $lines, which are not a first and a last of the recording's $count lines")
+            }
+        }
+        when (task) {
+            is TrueFalseTask -> if (task.statement.isBlank()) problem("has no statement")
+            is ChooseTask -> when {
+                task.question.isBlank() -> problem("has no question")
+                task.options.size < 2 -> problem("has fewer than two options")
+                task.options.any { normalizeAnswer(it).isEmpty() } -> problem("has a blank option")
+                task.correctOption !in task.options.indices ->
+                    problem("has correctOption ${task.correctOption}, which is not one of its ${task.options.size} options")
+                task.options.map(::normalizeAnswer).repeated().isNotEmpty() -> problem("has two options that read the same")
+            }
+            is DictationTask -> if (task.question.isBlank()) problem("has no question") else typedAnswersProblem(task.acceptedAnswers)?.let(::problem)
+        }
+    }
+    return problems
+}

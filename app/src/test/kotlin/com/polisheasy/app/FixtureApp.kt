@@ -1,5 +1,7 @@
 package com.polisheasy.app
 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import com.polisheasy.engine.Course
 import com.polisheasy.engine.loadCourse
 import java.time.Clock
@@ -67,4 +69,88 @@ class RecordingClips : Clips {
     override val playing = false
 
     override fun release() = Unit
+}
+
+/**
+ * Stands in for the player of the class recordings: nothing is heard, what the screens asked for
+ * is kept in order, and a test sets what it is doing through [state].
+ */
+class RecordingRecordings : Recordings {
+    override var state by androidx.compose.runtime.mutableStateOf(PlayerState())
+
+    val asked = mutableListOf<String>()
+
+    /** The recordings opened, in order. */
+    val opened = mutableListOf<Int>()
+
+    override fun open(number: Int, file: java.io.File, title: RecordingTitle, lines: List<com.polisheasy.engine.TrackLine>) {
+        opened += number
+        asked += "open $number"
+        state = state.copy(number = number, playing = false, positionMs = 0, durationMs = 0, line = null, yourTurn = false)
+    }
+
+    override fun playPause() {
+        asked += "playPause"
+        state = state.copy(playing = !state.playing)
+    }
+
+    override fun skip(ms: Long) {
+        asked += "skip $ms"
+    }
+
+    override fun line(index: Int) {
+        asked += "line $index"
+        state = state.copy(line = index)
+    }
+
+    override fun speed(value: Float) {
+        asked += "speed $value"
+        state = state.copy(speed = value)
+    }
+
+    override fun repeat(on: Boolean) {
+        asked += "repeat $on"
+        state = state.copy(repeat = on)
+    }
+
+    override fun step(on: Boolean) {
+        asked += "step $on"
+        state = state.copy(step = on)
+    }
+
+    override fun close() {
+        asked += "close"
+        state = state.copy(number = null, playing = false)
+    }
+
+    override fun release() = Unit
+}
+
+/**
+ * The publisher's zip of each chapter in [lessons], as on the class's discs, written into [dir]:
+ * a folder "Lekcja NN" of recordings, stood in for by tiny MP3s that carry only the same title tag.
+ */
+fun classZips(course: Course, lessons: IntRange, dir: java.io.File): List<java.io.File> =
+    course.tracks.filter { it.lesson in lessons }.groupBy { it.lesson }.map { (lesson, tracks) ->
+        java.io.File(dir, "lekcja_%02d.zip".format(lesson)).also { file ->
+            java.util.zip.ZipOutputStream(file.outputStream()).use { zip ->
+                tracks.forEach { track ->
+                    zip.putNextEntry(java.util.zip.ZipEntry("Lekcja %02d/%03d.mp3".format(lesson, track.number)))
+                    zip.write(taggedMp3("%03d Lekcja %02d%s, %s".format(track.number, lesson, track.section.orEmpty(), track.title)))
+                    zip.closeEntry()
+                }
+            }
+        }
+    }
+
+/** A tiny MP3: an ID3v2.3 tag with [title] in UTF-16, then one frame header of sound. */
+fun taggedMp3(title: String): ByteArray {
+    val text = byteArrayOf(1, 0xFF.toByte(), 0xFE.toByte()) + title.toByteArray(Charsets.UTF_16LE) + byteArrayOf(0, 0)
+    val size = text.size
+    val frame = "TIT2".toByteArray(Charsets.ISO_8859_1) +
+        byteArrayOf((size shr 24).toByte(), (size shr 16).toByte(), (size shr 8).toByte(), size.toByte(), 0, 0) + text
+    val tag = frame.size
+    val header = byteArrayOf('I'.code.toByte(), 'D'.code.toByte(), '3'.code.toByte(), 3, 0, 0) +
+        byteArrayOf((tag shr 21 and 0x7f).toByte(), (tag shr 14 and 0x7f).toByte(), (tag shr 7 and 0x7f).toByte(), (tag and 0x7f).toByte())
+    return header + frame + byteArrayOf(0xFF.toByte(), 0xFB.toByte(), 0x90.toByte(), 0x00)
 }

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- What Android 12 and later back up and move to a new phone: the Learner's progress, their Bests in Practice and settings, nothing else. -->
+<!-- What Android 12 and later back up and move to a new phone: the Learner's progress, their Bests in Practice and in the Tests, and settings, nothing else: never the class recordings. -->
 <data-extraction-rules>
     <cloud-backup>
         <include domain="file" path="progress.json" />
         <include domain="file" path="practice.json" />
+        <include domain="file" path="checkpoints.json" />
         <include domain="sharedpref" path="settings.xml" />
     </cloud-backup>
     <device-transfer>
         <include domain="file" path="progress.json" />
         <include domain="file" path="practice.json" />
+        <include domain="file" path="checkpoints.json" />
         <include domain="sharedpref" path="settings.xml" />
     </device-transfer>
 </data-extraction-rules>
