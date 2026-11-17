@@ -22,6 +22,10 @@ How the app's screens are written. `docs/design.md` says how they look; this say
 
 The fix is never to silence the check. Name a role (`MaterialTheme.colorScheme.primary`, `PolishEasyTheme.colors.success`) or a style (`MaterialTheme.typography.titleMedium`). If the role or style does not exist, add it to `ui/theme` and to `docs/design.md` in the same pull request.
 
+## Before merging
+
+Run `./gradlew checkBeforeMerge` and merge only when it passes: every test (engine, Polish check, audio, screens), the Polish check itself, and the debug and release builds. GitHub does not run any of it on a pull request, and after a merge it only checks the Polish and builds the app (ADR-0015). Say in the pull request that it passed.
+
 ## Judgement calls
 
 - **A screen adds no styling.** It arranges components and passes them words and callbacks. If a screen needs a shape, a border or a background of its own, that is a component missing: add it to `ui/components`.
