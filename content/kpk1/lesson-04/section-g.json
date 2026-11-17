@@ -1,0 +1,479 @@
+{
+  "id": "kpk1-l04-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l04-g-t01",
+      "before": "kpk1-l04-g-e01",
+      "title": {
+        "en": "Chapter 4 in the book's exercises"
+      },
+      "body": {
+        "en": "Now the chapter in the book's own exercises: opposites to join, sticky notes for *i*, *ale* and *bo*, dialogues to put in order, and what is *prawda* or *nieprawda*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l04-g-e01",
+      "pairs": [
+        {
+          "polish": "wesoły",
+          "meaning": {
+            "en": "cheerful"
+          }
+        },
+        {
+          "polish": "smutny",
+          "meaning": {
+            "en": "sad"
+          }
+        },
+        {
+          "polish": "gruby",
+          "meaning": {
+            "en": "fat"
+          }
+        },
+        {
+          "polish": "szczupły",
+          "meaning": {
+            "en": "slim"
+          }
+        },
+        {
+          "polish": "czysty",
+          "meaning": {
+            "en": "clean"
+          }
+        },
+        {
+          "polish": "brudny",
+          "meaning": {
+            "en": "dirty"
+          }
+        }
+      ],
+      "items": [
+        "wesoly",
+        "smutny",
+        "gruby",
+        "szczuply",
+        "czysty",
+        "brudny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-g-e02",
+      "text": "On jest gruby, ___ zdrowy, ___ jest bardzo aktywny.",
+      "meaning": {
+        "en": "He is fat, but healthy, because he is very active."
+      },
+      "gaps": [
+        [
+          "ale"
+        ],
+        [
+          "bo"
+        ]
+      ],
+      "distractors": [
+        "i"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "gruby",
+        "ale",
+        "zdrowy",
+        "bo",
+        "bardzo",
+        "aktywny"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l04-g-e03",
+      "lines": [
+        "Cześć! Co robisz?",
+        "Kończę kurs. A ty?",
+        "Ja chodzę do szkoły. Lubisz sport?",
+        "Tak, lubię sport."
+      ],
+      "meaning": {
+        "en": "Two friends meet after class."
+      },
+      "items": [
+        "czesc",
+        "co",
+        "robic-robisz",
+        "konczyc-koncze",
+        "kurs",
+        "a-ty",
+        "ja",
+        "chodzic-chodze",
+        "do-szkoly",
+        "lubic-lubisz",
+        "tak",
+        "lubic-lubie",
+        "sport"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-g-e04",
+      "text": "On jest z Ukrainy i mówi ___, a ona jest z Japonii i mówi ___.",
+      "meaning": {
+        "en": "He is from Ukraine and speaks Ukrainian, and she is from Japan and speaks Japanese."
+      },
+      "gaps": [
+        [
+          "po ukraińsku"
+        ],
+        [
+          "po japońsku"
+        ]
+      ],
+      "distractors": [
+        "po włosku"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "z-ukrainy",
+        "i",
+        "mowic-mowi",
+        "po-ukrainsku",
+        "a",
+        "ona",
+        "z-japonii",
+        "po-japonsku"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l04-g-e05",
+      "lines": [
+        "To jest mój brat. Jest wysoki i szczupły.",
+        "Chodzi do szkoły. Myśli, że szkoła jest fajna.",
+        "Dziś kończy kurs i jest zmęczony."
+      ],
+      "meaning": {
+        "en": "Ola talks about her brother."
+      },
+      "statements": [
+        {
+          "text": "Brat jest niski.",
+          "meaning": {
+            "en": "The brother is short."
+          },
+          "true": false
+        },
+        {
+          "text": "Brat chodzi do szkoły.",
+          "meaning": {
+            "en": "The brother goes to school."
+          },
+          "true": true
+        },
+        {
+          "text": "Brat jest dziś zmęczony.",
+          "meaning": {
+            "en": "The brother is tired today."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "to",
+        "byc-jest",
+        "moj",
+        "brat",
+        "wysoki",
+        "i",
+        "szczuply",
+        "chodzic-chodzi",
+        "do-szkoly",
+        "myslec-mysli",
+        "ze",
+        "szkola",
+        "fajny",
+        "dzis",
+        "konczyc-konczy",
+        "kurs",
+        "zmeczony"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-g-e06",
+      "verb": "chodzić",
+      "meaning": {
+        "en": "to go (on foot, or regularly)"
+      },
+      "person": "ty",
+      "sentence": "Czy ty ___ do szkoły?",
+      "sentenceMeaning": {
+        "en": "Do you go to school?"
+      },
+      "acceptedAnswers": [
+        "chodzisz"
+      ],
+      "items": [
+        "czy",
+        "ty",
+        "chodzic-chodzisz",
+        "do-szkoly"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l04-g-e07",
+      "lines": [
+        "Jaki jest twój kolega?",
+        "Jest wysoki i przystojny.",
+        "A twoja koleżanka?",
+        "Jest młoda, miła i bardzo inteligentna."
+      ],
+      "meaning": {
+        "en": "Two friends talk about their classmates."
+      },
+      "items": [
+        "jaki",
+        "byc-jest",
+        "twoj",
+        "kolega",
+        "wysoki",
+        "i",
+        "przystojny",
+        "a",
+        "twoja",
+        "kolezanka",
+        "mlody",
+        "mily",
+        "bardzo",
+        "inteligentny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-g-e08",
+      "acceptedAnswers": [
+        "to auto jest czyste"
+      ],
+      "meaning": {
+        "en": "this car is clean"
+      },
+      "items": [
+        "to",
+        "auto",
+        "byc-jest",
+        "czysty"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-g-e09",
+      "text": "on jest wysoki i przystojny",
+      "meaning": {
+        "en": "he is tall and handsome"
+      },
+      "distractors": [
+        "on jest niski i przystojny",
+        "on jest wysoki i leniwy"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "wysoki",
+        "i",
+        "przystojny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-g-e10",
+      "prompt": {
+        "en": "I think so"
+      },
+      "acceptedAnswers": [
+        "myślę, że tak"
+      ],
+      "distractors": [
+        "nie",
+        "wiem"
+      ],
+      "items": [
+        "myslec-mysle",
+        "ze",
+        "tak"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l04-g-e11",
+      "lines": [
+        "Czy wiesz, kto to jest?",
+        "Tak, to Marek. Jest z Francji.",
+        "Mówi po francusku i trochę po polsku.",
+        "Jest leniwy?",
+        "Nie, jest bardzo pracowity!"
+      ],
+      "meaning": {
+        "en": "Two students talk about a classmate."
+      },
+      "statements": [
+        {
+          "text": "Marek jest z Francji.",
+          "meaning": {
+            "en": "Marek is from France."
+          },
+          "true": true
+        },
+        {
+          "text": "Marek mówi po niemiecku.",
+          "meaning": {
+            "en": "Marek speaks German."
+          },
+          "true": false
+        },
+        {
+          "text": "Marek jest leniwy.",
+          "meaning": {
+            "en": "Marek is lazy."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "czy",
+        "wiedziec-wiesz",
+        "kto-to-jest",
+        "tak",
+        "to",
+        "byc-jest",
+        "z-francji",
+        "mowic-mowi",
+        "po-francusku",
+        "i",
+        "troche",
+        "nie",
+        "bardzo",
+        "pracowity",
+        "leniwy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l04-g-e12",
+      "prompt": {
+        "en": "he is tall, but he isn't sporty"
+      },
+      "acceptedAnswers": [
+        "on jest wysoki, ale nie jest wysportowany"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "wysoki",
+        "ale",
+        "nie",
+        "wysportowany"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-g-e13",
+      "acceptedAnswers": [
+        "jestem pewna, że to żart"
+      ],
+      "meaning": {
+        "en": "I am sure that it is a joke (a woman speaking)"
+      },
+      "items": [
+        "byc-jestem",
+        "pewny",
+        "ze",
+        "to",
+        "zart"
+      ],
+      "readingAnswers": [
+        "jestem pewna, że to jest żart",
+        "ja jestem pewna, że to żart",
+        "ja jestem pewna, że to jest żart"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-g-e14",
+      "text": "Ten student nie jest ___, jest bardzo pracowity.",
+      "meaning": {
+        "en": "This student isn't lazy, he is very hard-working."
+      },
+      "gaps": [
+        [
+          "leniwy"
+        ]
+      ],
+      "distractors": [
+        "leniwa",
+        "gruba"
+      ],
+      "items": [
+        "ten",
+        "student",
+        "nie",
+        "byc-jest",
+        "leniwy",
+        "bardzo",
+        "pracowity"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l04-g-e15",
+      "prompt": {
+        "en": "what is she like?"
+      },
+      "acceptedAnswers": [
+        "jaka ona jest?",
+        "jaka jest ona?"
+      ],
+      "items": [
+        "jaka",
+        "ona",
+        "byc-jest"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-g-e16",
+      "text": "mówię trochę po niemiecku",
+      "meaning": {
+        "en": "I speak a little German"
+      },
+      "distractors": [
+        "mówię trochę po polsku",
+        "mówię tylko po niemiecku"
+      ],
+      "items": [
+        "mowic-mowie",
+        "troche",
+        "po-niemiecku"
+      ]
+    }
+  ]
+}

@@ -92,3 +92,22 @@ It gives the later chapters:
 - *plecak*, *słownik* and *torba* in the possessive test's lists.
 
 It leaves for later: no plural but *słuchawki* (*to są słuchawki*), no adjective before a noun in a case other than the nominative, and *zły* only of things (said of a person it reads as "angry").
+
+## Chapter 4: Jaki jesteś?
+
+Book pages 36 to 41, recordings 058 to 063. Ten parts, 172 Exercises and 71 new Items. The saved spreads skip pages 40 and 41; a frame of them is in project files `teacher-course/pages-extra/lesson-04-pages-40-41.jpg`.
+
+- **A** *Kto to jest? To nowy student*, in two (18 and 18): *mówić po…* with six languages (*po francusku, po hiszpańsku, po niemiecku, po włosku, po japońsku, po ukraińsku*) and *z Japonii*, *z Ukrainy*; then *myślę, że…*, *czy wiesz, kto to jest?*, *ciekawy*, *chyba*, *żart*, *słowo* and *masz rację*.
+- **B** *Koniugacja -ę, -isz/-ysz*, in three (18, 17 and 18), each with two verb tables: *chodzić* and *myśleć* (*-ę, -isz*); *uczyć się* and *kończyć* (*-ę, -ysz* after *cz*, *sz*, *rz*, *ż*); *słyszeć* and *robić* (the extra *i* after *b, p, w, f, m, n*, with *lubić*). Also *do szkoły*, *kurs*, *film*, *sport* and *cieszę się*.
+- **C** *Jaki on jest?*, in four: describing a person (17, with a table: *smutny, wesoły, wysoki, niski, przystojny, średniego wzrostu, wysportowany, młody*); opposites (17: *pracowity, leniwy, gruby, szczupły, ładny, brzydki, zdrowy, chory*); *czysty, brudny, zmęczony* and the international adjectives (17: *aktywny, energiczny, inteligentny, romantyczny, kreatywny*); giving an opinion (16, a Zapamiętaj callout: *myślę, że tak*, *nie wiem, czy…*, *jestem pewny, że…*, *na pewno*, *miły*, *dziś*, *atrakcyjny, spontaniczny, ambitny, zestresowany*).
+- *Ćwiczenia* (16): the book's kinds again, with *i*, *ale* and *bo* and the opposites.
+
+Only the verb forms the Exercises use are Items; a table's other forms are shown in its Tip and asked in the Verb challenge. *Uczyć się* is the first verb with *się* in a table: the Polish check conjugates it without *się* and puts *się* after each form. There are 20 listening tasks on all 6 recordings (061 and 062 are word lists: the first and last word), and one Chat: *The new student* (Kasia, informal: who the new student is, where he is from and what he is like, and whether you like sport). The new nouns are in Practice's `genders`, and 16 Items have pictures (faces for the moods, a sloth for *leniwy*, a bee for *pracowity*).
+
+It gives the later chapters:
+
+- the *-ę, -isz/-ysz* conjugation and six verb tables for the Verb challenge;
+- describing a person with adjectives in all three genders, and *myślę, że…* for an opinion;
+- *kolega* and *koleżanka* in the possessive test's lists.
+
+It leaves for later: no adjective in the plural (*oni są zmęczeni*), no *lubić* table of its own (its Tip is *robić*'s), and the languages only after *mówić po…* (*znam polski* and *uczę się polskiego* wait).

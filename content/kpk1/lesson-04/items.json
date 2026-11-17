@@ -1,0 +1,621 @@
+{
+  "items": [
+    {
+      "id": "po-francusku",
+      "text": "po francusku",
+      "meaning": {
+        "en": "in French"
+      }
+    },
+    {
+      "id": "po-hiszpansku",
+      "text": "po hiszpańsku",
+      "meaning": {
+        "en": "in Spanish"
+      }
+    },
+    {
+      "id": "po-niemiecku",
+      "text": "po niemiecku",
+      "meaning": {
+        "en": "in German"
+      }
+    },
+    {
+      "id": "po-wlosku",
+      "text": "po włosku",
+      "meaning": {
+        "en": "in Italian"
+      }
+    },
+    {
+      "id": "po-japonsku",
+      "text": "po japońsku",
+      "meaning": {
+        "en": "in Japanese"
+      }
+    },
+    {
+      "id": "z-japonii",
+      "text": "z Japonii",
+      "meaning": {
+        "en": "from Japan"
+      }
+    },
+    {
+      "id": "po-ukrainsku",
+      "text": "po ukraińsku",
+      "meaning": {
+        "en": "in Ukrainian"
+      }
+    },
+    {
+      "id": "z-ukrainy",
+      "text": "z Ukrainy",
+      "meaning": {
+        "en": "from Ukraine"
+      }
+    },
+    {
+      "id": "myslec-mysle",
+      "text": "myślę",
+      "meaning": {
+        "en": "I think"
+      }
+    },
+    {
+      "id": "ze",
+      "text": "że",
+      "meaning": {
+        "en": "that (myślę, że…)"
+      }
+    },
+    {
+      "id": "wiedziec-wiesz",
+      "text": "wiesz",
+      "meaning": {
+        "en": "you know (one friend)"
+      }
+    },
+    {
+      "id": "ciekawy",
+      "text": "ciekawy",
+      "meaning": {
+        "en": "interesting, curious (ciekawy, ciekawa, ciekawe)"
+      },
+      "forms": [
+        "ciekawa",
+        "ciekawe"
+      ]
+    },
+    {
+      "id": "chyba",
+      "text": "chyba",
+      "meaning": {
+        "en": "probably, I guess"
+      }
+    },
+    {
+      "id": "zart",
+      "text": "żart",
+      "meaning": {
+        "en": "a joke"
+      }
+    },
+    {
+      "id": "slowo",
+      "text": "słowo",
+      "meaning": {
+        "en": "a word"
+      }
+    },
+    {
+      "id": "masz-racje",
+      "text": "masz rację",
+      "meaning": {
+        "en": "you're right (one friend)"
+      }
+    },
+    {
+      "id": "chodzic-chodze",
+      "text": "chodzę",
+      "meaning": {
+        "en": "I go (on foot, or regularly)"
+      }
+    },
+    {
+      "id": "chodzic-chodzisz",
+      "text": "chodzisz",
+      "meaning": {
+        "en": "you go (one friend; on foot, or regularly)"
+      }
+    },
+    {
+      "id": "do-szkoly",
+      "text": "do szkoły",
+      "meaning": {
+        "en": "to school"
+      }
+    },
+    {
+      "id": "chodzic-chodzi",
+      "text": "chodzi",
+      "meaning": {
+        "en": "he goes, she goes (on foot, or regularly)"
+      }
+    },
+    {
+      "id": "chodzic-chodzimy",
+      "text": "chodzimy",
+      "meaning": {
+        "en": "we go (on foot, or regularly)"
+      }
+    },
+    {
+      "id": "chodzic-chodza",
+      "text": "chodzą",
+      "meaning": {
+        "en": "they go (on foot, or regularly)"
+      }
+    },
+    {
+      "id": "myslec-myslisz",
+      "text": "myślisz",
+      "meaning": {
+        "en": "you think (one friend)"
+      }
+    },
+    {
+      "id": "myslec-mysli",
+      "text": "myśli",
+      "meaning": {
+        "en": "he thinks, she thinks"
+      }
+    },
+    {
+      "id": "uczyc-sie-uczymy",
+      "text": "uczymy się",
+      "meaning": {
+        "en": "we learn, we study"
+      }
+    },
+    {
+      "id": "uczyc-sie-ucza",
+      "text": "uczą się",
+      "meaning": {
+        "en": "they learn, they study"
+      }
+    },
+    {
+      "id": "konczyc-koncze",
+      "text": "kończę",
+      "meaning": {
+        "en": "I finish, I am finishing"
+      }
+    },
+    {
+      "id": "konczyc-konczysz",
+      "text": "kończysz",
+      "meaning": {
+        "en": "you finish, you are finishing (one friend)"
+      }
+    },
+    {
+      "id": "konczyc-konczy",
+      "text": "kończy",
+      "meaning": {
+        "en": "he finishes, she finishes"
+      }
+    },
+    {
+      "id": "kurs",
+      "text": "kurs",
+      "meaning": {
+        "en": "a course"
+      }
+    },
+    {
+      "id": "film",
+      "text": "film",
+      "meaning": {
+        "en": "a film"
+      }
+    },
+    {
+      "id": "slyszec-slysze",
+      "text": "słyszę",
+      "meaning": {
+        "en": "I hear, I can hear"
+      }
+    },
+    {
+      "id": "slyszec-slyszysz",
+      "text": "słyszysz",
+      "meaning": {
+        "en": "you hear, you can hear (one friend)"
+      }
+    },
+    {
+      "id": "robic-robie",
+      "text": "robię",
+      "meaning": {
+        "en": "I do, I make"
+      }
+    },
+    {
+      "id": "robic-robisz",
+      "text": "robisz",
+      "meaning": {
+        "en": "you do, you make (one friend)"
+      }
+    },
+    {
+      "id": "lubic-lubie",
+      "text": "lubię",
+      "meaning": {
+        "en": "I like"
+      }
+    },
+    {
+      "id": "lubic-lubisz",
+      "text": "lubisz",
+      "meaning": {
+        "en": "you like (one friend)"
+      }
+    },
+    {
+      "id": "sport",
+      "text": "sport",
+      "meaning": {
+        "en": "sport"
+      }
+    },
+    {
+      "id": "ciesze-sie",
+      "text": "cieszę się",
+      "meaning": {
+        "en": "I am glad"
+      }
+    },
+    {
+      "id": "smutny",
+      "text": "smutny",
+      "meaning": {
+        "en": "sad (smutny, smutna, smutne)"
+      },
+      "forms": [
+        "smutna",
+        "smutne"
+      ]
+    },
+    {
+      "id": "wesoly",
+      "text": "wesoły",
+      "meaning": {
+        "en": "cheerful (wesoły, wesoła, wesołe)"
+      },
+      "forms": [
+        "wesoła",
+        "wesołe"
+      ]
+    },
+    {
+      "id": "wysoki",
+      "text": "wysoki",
+      "meaning": {
+        "en": "tall (wysoki, wysoka, wysokie)"
+      },
+      "forms": [
+        "wysoka",
+        "wysokie"
+      ]
+    },
+    {
+      "id": "niski",
+      "text": "niski",
+      "meaning": {
+        "en": "short (not tall) (niski, niska, niskie)"
+      },
+      "forms": [
+        "niska",
+        "niskie"
+      ]
+    },
+    {
+      "id": "przystojny",
+      "text": "przystojny",
+      "meaning": {
+        "en": "handsome (przystojny, przystojna, przystojne)"
+      },
+      "forms": [
+        "przystojna",
+        "przystojne"
+      ]
+    },
+    {
+      "id": "sredniego-wzrostu",
+      "text": "średniego wzrostu",
+      "meaning": {
+        "en": "of medium height"
+      }
+    },
+    {
+      "id": "wysportowany",
+      "text": "wysportowany",
+      "meaning": {
+        "en": "sporty, athletic (wysportowany, wysportowana, wysportowane)"
+      },
+      "forms": [
+        "wysportowana",
+        "wysportowane"
+      ]
+    },
+    {
+      "id": "mlody",
+      "text": "młody",
+      "meaning": {
+        "en": "young (młody, młoda, młode)"
+      },
+      "forms": [
+        "młoda",
+        "młode"
+      ]
+    },
+    {
+      "id": "pracowity",
+      "text": "pracowity",
+      "meaning": {
+        "en": "hard-working (pracowity, pracowita, pracowite)"
+      },
+      "forms": [
+        "pracowita",
+        "pracowite"
+      ]
+    },
+    {
+      "id": "leniwy",
+      "text": "leniwy",
+      "meaning": {
+        "en": "lazy (leniwy, leniwa, leniwe)"
+      },
+      "forms": [
+        "leniwa",
+        "leniwe"
+      ]
+    },
+    {
+      "id": "gruby",
+      "text": "gruby",
+      "meaning": {
+        "en": "fat (gruby, gruba, grube)"
+      },
+      "forms": [
+        "gruba",
+        "grube"
+      ]
+    },
+    {
+      "id": "szczuply",
+      "text": "szczupły",
+      "meaning": {
+        "en": "slim (szczupły, szczupła, szczupłe)"
+      },
+      "forms": [
+        "szczupła",
+        "szczupłe"
+      ]
+    },
+    {
+      "id": "ladny",
+      "text": "ładny",
+      "meaning": {
+        "en": "pretty (ładny, ładna, ładne)"
+      },
+      "forms": [
+        "ładna",
+        "ładne"
+      ]
+    },
+    {
+      "id": "brzydki",
+      "text": "brzydki",
+      "meaning": {
+        "en": "ugly (brzydki, brzydka, brzydkie)"
+      },
+      "forms": [
+        "brzydka",
+        "brzydkie"
+      ]
+    },
+    {
+      "id": "zdrowy",
+      "text": "zdrowy",
+      "meaning": {
+        "en": "healthy (zdrowy, zdrowa, zdrowe)"
+      },
+      "forms": [
+        "zdrowa",
+        "zdrowe"
+      ]
+    },
+    {
+      "id": "chory",
+      "text": "chory",
+      "meaning": {
+        "en": "ill (chory, chora, chore)"
+      },
+      "forms": [
+        "chora",
+        "chore"
+      ]
+    },
+    {
+      "id": "czysty",
+      "text": "czysty",
+      "meaning": {
+        "en": "clean (czysty, czysta, czyste)"
+      },
+      "forms": [
+        "czysta",
+        "czyste"
+      ]
+    },
+    {
+      "id": "brudny",
+      "text": "brudny",
+      "meaning": {
+        "en": "dirty (brudny, brudna, brudne)"
+      },
+      "forms": [
+        "brudna",
+        "brudne"
+      ]
+    },
+    {
+      "id": "zmeczony",
+      "text": "zmęczony",
+      "meaning": {
+        "en": "tired (zmęczony, zmęczona, zmęczone)"
+      },
+      "forms": [
+        "zmęczona",
+        "zmęczone"
+      ]
+    },
+    {
+      "id": "aktywny",
+      "text": "aktywny",
+      "meaning": {
+        "en": "active (aktywny, aktywna, aktywne)"
+      },
+      "forms": [
+        "aktywna",
+        "aktywne"
+      ]
+    },
+    {
+      "id": "energiczny",
+      "text": "energiczny",
+      "meaning": {
+        "en": "energetic (energiczny, energiczna, energiczne)"
+      },
+      "forms": [
+        "energiczna",
+        "energiczne"
+      ]
+    },
+    {
+      "id": "inteligentny",
+      "text": "inteligentny",
+      "meaning": {
+        "en": "intelligent (inteligentny, inteligentna, inteligentne)"
+      },
+      "forms": [
+        "inteligentna",
+        "inteligentne"
+      ]
+    },
+    {
+      "id": "romantyczny",
+      "text": "romantyczny",
+      "meaning": {
+        "en": "romantic (romantyczny, romantyczna, romantyczne)"
+      },
+      "forms": [
+        "romantyczna",
+        "romantyczne"
+      ]
+    },
+    {
+      "id": "kreatywny",
+      "text": "kreatywny",
+      "meaning": {
+        "en": "creative (kreatywny, kreatywna, kreatywne)"
+      },
+      "forms": [
+        "kreatywna",
+        "kreatywne"
+      ]
+    },
+    {
+      "id": "mily",
+      "text": "miły",
+      "meaning": {
+        "en": "nice, kind (miły, miła, miłe)"
+      },
+      "forms": [
+        "miła",
+        "miłe"
+      ]
+    },
+    {
+      "id": "pewny",
+      "text": "pewny",
+      "meaning": {
+        "en": "sure, certain (pewny, pewna, pewne)"
+      },
+      "forms": [
+        "pewna",
+        "pewne"
+      ]
+    },
+    {
+      "id": "na-pewno",
+      "text": "na pewno",
+      "meaning": {
+        "en": "certainly, for sure"
+      }
+    },
+    {
+      "id": "dzis",
+      "text": "dziś",
+      "meaning": {
+        "en": "today"
+      }
+    },
+    {
+      "id": "atrakcyjny",
+      "text": "atrakcyjny",
+      "meaning": {
+        "en": "attractive (atrakcyjny, atrakcyjna, atrakcyjne)"
+      },
+      "forms": [
+        "atrakcyjna",
+        "atrakcyjne"
+      ]
+    },
+    {
+      "id": "spontaniczny",
+      "text": "spontaniczny",
+      "meaning": {
+        "en": "spontaneous (spontaniczny, spontaniczna, spontaniczne)"
+      },
+      "forms": [
+        "spontaniczna",
+        "spontaniczne"
+      ]
+    },
+    {
+      "id": "ambitny",
+      "text": "ambitny",
+      "meaning": {
+        "en": "ambitious (ambitny, ambitna, ambitne)"
+      },
+      "forms": [
+        "ambitna",
+        "ambitne"
+      ]
+    },
+    {
+      "id": "zestresowany",
+      "text": "zestresowany",
+      "meaning": {
+        "en": "stressed (zestresowany, zestresowana, zestresowane)"
+      },
+      "forms": [
+        "zestresowana",
+        "zestresowane"
+      ]
+    }
+  ]
+}

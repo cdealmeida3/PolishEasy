@@ -15,6 +15,22 @@
     {
       "problem": "review: Uczę się polskiego, bo pracować w Polsce.",
       "reason": "Wrong on purpose. It is a wrong reply in the Catching up chat, there to teach that bo needs a whole sentence after it and żeby goes before a verb's basic form; its note says so and gives the right żeby pracować. The reviewer confirmed the right form."
+    },
+    {
+      "problem": "dictionary: ę",
+      "reason": "Not a word and not meant as one. Chapter 4's section B has the book's heading \"Koniugacja -ę, -isz/-ysz\", which names the verb endings -ę, -isz and -ysz; the dictionary pass reads each ending as a word."
+    },
+    {
+      "problem": "dictionary: isz",
+      "reason": "Not a word and not meant as one. Chapter 4's section B has the book's heading \"Koniugacja -ę, -isz/-ysz\", which names the verb endings -ę, -isz and -ysz; the dictionary pass reads each ending as a word."
+    },
+    {
+      "problem": "dictionary: ysz",
+      "reason": "Not a word and not meant as one. Chapter 4's section B has the book's heading \"Koniugacja -ę, -isz/-ysz\", which names the verb endings -ę, -isz and -ysz; the dictionary pass reads each ending as a word."
+    },
+    {
+      "problem": "review: kpk1-l04-c4-t01",
+      "reason": "False alarm. ZAPAMIETAJ is not in the Tip: the review text names the Tip's kind (a Zapamiętaj! callout) with the engine's enum name, which has no Polish letters. The Tip's own Polish had no finding."
     }
   ]
 }

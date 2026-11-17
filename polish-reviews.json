@@ -91,6 +91,9 @@
             "text": "9"
         },
         {
+            "text": "A Ewa?"
+        },
+        {
             "text": "A czy to jest twój słownik?",
             "meaning": "And is this your dictionary?"
         },
@@ -120,12 +123,19 @@
             "meaning": "And this? Is it a pencil?"
         },
         {
+            "text": "A twoja koleżanka?"
+        },
+        {
             "text": "A ty mówisz po angielsku?",
             "meaning": "A little. And do you speak English?"
         },
         {
             "text": "A ty?",
             "meaning": "And you?"
+        },
+        {
+            "text": "A ty? Lubisz sport?",
+            "meaning": "And you? Do you like sport?"
         },
         {
             "text": "A u ciebie?"
@@ -160,8 +170,22 @@
             "text": "Adam jest Polakiem, a Ewa jest Polką"
         },
         {
+            "text": "Adam jest chory."
+        },
+        {
+            "text": "Adam jest niski.",
+            "meaning": "Adam is short."
+        },
+        {
             "text": "Adam jest studentem",
             "meaning": "Adam is a student (a man)."
+        },
+        {
+            "text": "Adam jest wysportowany.",
+            "meaning": "Adam is sporty."
+        },
+        {
+            "text": "Adam ma dziewczynę."
         },
         {
             "text": "Adam ma syna",
@@ -178,6 +202,13 @@
         {
             "text": "Adam mówi też po angielsku",
             "meaning": "Adam speaks English too"
+        },
+        {
+            "text": "Adam mówi trochę po japońsku.",
+            "meaning": "Adam speaks a little Japanese."
+        },
+        {
+            "text": "Adam nie mówi po polsku."
         },
         {
             "text": "Adam też mówi po angielsku",
@@ -313,6 +344,43 @@
             "text": "Bo moja żona jest z Polski."
         },
         {
+            "text": "Brat chodzi do szkoły.",
+            "meaning": "The brother goes to school."
+        },
+        {
+            "text": "Brat jest dziś zmęczony.",
+            "meaning": "The brother is tired today."
+        },
+        {
+            "text": "Brat jest niski.",
+            "meaning": "The brother is short."
+        },
+        {
+            "text": "Chodzi do szkoły. Myśli, że szkoła jest fajna."
+        },
+        {
+            "text": "Chyba Anna."
+        },
+        {
+            "text": "Chyba Maria."
+        },
+        {
+            "text": "Chyba nowy student.",
+            "meaning": "I don't know, but I think it's a new student."
+        },
+        {
+            "text": "Chyba z Hiszpanii.",
+            "meaning": "Probably from Spain. He speaks Spanish."
+        },
+        {
+            "text": "Chyba z Hiszpanii. Mówi po hiszpańsku.",
+            "meaning": "Probably from Spain. He speaks Spanish."
+        },
+        {
+            "text": "Ciekawe, skąd on jest.",
+            "meaning": "I wonder where he is from."
+        },
+        {
             "text": "Co"
         },
         {
@@ -377,6 +445,10 @@
             "meaning": "What has to be spelled?"
         },
         {
+            "text": "Co ty robisz?",
+            "meaning": "What are you doing?"
+        },
+        {
             "text": "Co u ciebie?"
         },
         {
@@ -388,12 +460,22 @@
             "meaning": "Hi!"
         },
         {
+            "text": "Cześć! Co robisz?"
+        },
+        {
+            "text": "Cześć! Co słychać?"
+        },
+        {
             "text": "Cześć! Co to jest?",
             "meaning": "Hi! What is this?"
         },
         {
             "text": "Cześć! Co u ciebie?",
             "meaning": "Hi! How are things with you?"
+        },
+        {
+            "text": "Cześć! Czy wiesz, kto to jest?",
+            "meaning": "Hi! Do you know who that is?"
         },
         {
             "text": "Cześć! Do jutra!",
@@ -475,6 +557,10 @@
             "text": "Czy"
         },
         {
+            "text": "Czy dobrze słyszysz?",
+            "meaning": "Can you hear well?"
+        },
+        {
             "text": "Czy macie czas?",
             "meaning": "Do you have time? (several people)"
         },
@@ -517,8 +603,23 @@
             "meaning": "Is it a board? Yes, it is a board."
         },
         {
+            "text": "Czy ty chodzisz do szkoły?",
+            "meaning": "Do you go to school?"
+        },
+        {
             "text": "Czy ty grasz w tenisa?",
             "meaning": "Do you play tennis? (one friend)"
+        },
+        {
+            "text": "Czy ty myślisz, że to jest żart?",
+            "meaning": "Do you think that it is a joke?"
+        },
+        {
+            "text": "Czy ty też kończysz kurs?",
+            "meaning": "Are you finishing the course too?"
+        },
+        {
+            "text": "Czy wiesz, kto to jest?"
         },
         {
             "text": "Czy…?",
@@ -666,6 +767,14 @@
             "meaning": "Ten plus four equals six."
         },
         {
+            "text": "Dziewczyna jest dziś smutna.",
+            "meaning": "The girl is sad today."
+        },
+        {
+            "text": "Dziewczyna jest z Japonii i mówi po japońsku.",
+            "meaning": "The girl is from Japan and speaks Japanese."
+        },
+        {
             "text": "Dzień dobry!",
             "meaning": "Good morning!"
         },
@@ -805,11 +914,26 @@
             "meaning": "Thank you. Everything is in order. Goodbye!"
         },
         {
+            "text": "Dziś kończy kurs i jest zmęczony."
+        },
+        {
             "text": "Ewa",
             "meaning": "Ewa (a woman's name)"
         },
         {
             "text": "Ewa Nowak."
+        },
+        {
+            "text": "Ewa jest smutna.",
+            "meaning": "Ewa is sad."
+        },
+        {
+            "text": "Ewa jest spontaniczna.",
+            "meaning": "Ewa is spontaneous."
+        },
+        {
+            "text": "Ewa jest stara.",
+            "meaning": "Ewa is old."
         },
         {
             "text": "Ewa jest z Anglii, ale mówi po polsku.",
@@ -818,6 +942,9 @@
         {
             "text": "Ewa jest z Polski.",
             "meaning": "Ewa is from Poland."
+        },
+        {
+            "text": "Ewa jest średniego wzrostu. Jest młoda i wesoła."
         },
         {
             "text": "Ewa ma trzy lata",
@@ -836,6 +963,10 @@
             "meaning": "Ewa is a teacher."
         },
         {
+            "text": "Ewa to nowa studentka.",
+            "meaning": "Ewa is a new student."
+        },
+        {
             "text": "Ewa, gdzie ty jesteś?",
             "meaning": "Ewa, where are you?"
         },
@@ -852,6 +983,9 @@
         },
         {
             "text": "Francja"
+        },
+        {
+            "text": "Francuski i trochę polski."
         },
         {
             "text": "Gdzie jest mój długopis?",
@@ -894,6 +1028,10 @@
             "meaning": "Where are they?"
         },
         {
+            "text": "Gdzie oni teraz mieszkają?",
+            "meaning": "Where do they live now?"
+        },
+        {
             "text": "Gdzie ty mieszkasz?",
             "meaning": "Where do you live? (one friend)"
         },
@@ -909,7 +1047,13 @@
             "text": "Gram w tenisa. To moje hobby."
         },
         {
+            "text": "Gruby i smutny."
+        },
+        {
             "text": "Hiszpania"
+        },
+        {
+            "text": "Hiszpański i polski."
         },
         {
             "text": "Ile ma pan lat?",
@@ -935,6 +1079,13 @@
             "text": "Imię i nazwisko."
         },
         {
+            "text": "Ja chodzę do szkoły.",
+            "meaning": "I go to school."
+        },
+        {
+            "text": "Ja chodzę do szkoły. Lubisz sport?"
+        },
+        {
             "text": "Ja jestem w Krakowie.",
             "meaning": "I am in Kraków."
         },
@@ -947,6 +1098,10 @@
             "meaning": "I'm from England."
         },
         {
+            "text": "Ja kończę kurs.",
+            "meaning": "I am finishing the course."
+        },
+        {
             "text": "Ja mieszkam w Krakowie.",
             "meaning": "I live in Kraków."
         },
@@ -955,8 +1110,16 @@
             "meaning": "I live in Warsaw, and where do you live? (one friend)"
         },
         {
+            "text": "Ja robię test.",
+            "meaning": "I am doing a test."
+        },
+        {
             "text": "Ja też! Grasz w tenisa?",
             "meaning": "Me too! Do you play tennis?"
+        },
+        {
+            "text": "Ja też! Myślę, że on też jest wysportowany.",
+            "meaning": "Me too! I think he is sporty too."
         },
         {
             "text": "Ja uczę się polskiego, bo moja dziewczyna jest z Polski.",
@@ -973,6 +1136,10 @@
         {
             "text": "Jak on się nazywa?",
             "meaning": "What is his surname?"
+        },
+        {
+            "text": "Jak ona ma na imię?",
+            "meaning": "What is her name?"
         },
         {
             "text": "Jak pan ma na imię?",
@@ -994,6 +1161,10 @@
             "meaning": "What is the bag like?"
         },
         {
+            "text": "Jaki jest Adam?",
+            "meaning": "What is Adam like?"
+        },
+        {
             "text": "Jaki jest Leon?"
         },
         {
@@ -1009,6 +1180,10 @@
             "meaning": "What is the first colour?"
         },
         {
+            "text": "Jaki jest problem?",
+            "meaning": "What is the problem?"
+        },
+        {
             "text": "Jaki jest ten plecak? Nowy?",
             "meaning": "What is this backpack like? New?"
         },
@@ -1020,12 +1195,23 @@
             "meaning": "What is this dictionary like?"
         },
         {
+            "text": "Jaki jest twój kolega?"
+        },
+        {
             "text": "Jaki jest twój numer telefonu?",
             "meaning": "What is your phone number? (one friend)"
         },
         {
             "text": "Jaki ma pan numer telefonu?",
             "meaning": "What is your phone number?"
+        },
+        {
+            "text": "Jaki on jest?",
+            "meaning": "What is he like?"
+        },
+        {
+            "text": "Jaki on jest? Sympatyczny?",
+            "meaning": "What is he like? Nice?"
         },
         {
             "text": "Jaki? Jaka? Jakie?",
@@ -1044,6 +1230,10 @@
             "meaning": "What is this car like? This car is small."
         },
         {
+            "text": "Jakie języki zna student z Francji?",
+            "meaning": "What languages does the student from France know?"
+        },
+        {
             "text": "Jakie są trzy rodzaje?",
             "meaning": "What are the three genders?"
         },
@@ -1052,8 +1242,21 @@
             "meaning": "Which word has to be spelled?"
         },
         {
+            "text": "Japoński i francuski."
+        },
+        {
+            "text": "Jedna osoba nie wie, czy lektorka jest miła.",
+            "meaning": "One person does not know if the teacher is nice."
+        },
+        {
             "text": "Jego żona jest z Polski.",
             "meaning": "His wife is from Poland."
+        },
+        {
+            "text": "Jest leniwy?"
+        },
+        {
+            "text": "Jest młoda, miła i bardzo inteligentna."
         },
         {
             "text": "Jest stary, ale dobry.",
@@ -1067,6 +1270,9 @@
             "meaning": "Your pen is over there, on the left."
         },
         {
+            "text": "Jest wysoki i przystojny."
+        },
+        {
             "text": "Jestem Adam.",
             "meaning": "Hi! I'm Adam."
         },
@@ -1077,6 +1283,10 @@
         {
             "text": "Jestem Adam.",
             "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Jestem pewna, że on jest ambitny.",
+            "meaning": "I am sure (a woman speaking) that he is ambitious."
         },
         {
             "text": "Jestem tutaj.",
@@ -1105,6 +1315,10 @@
         {
             "text": "Jestem z Hiszpanii i mieszkam w Krakowie.",
             "meaning": "I am from Spain and I live in Kraków."
+        },
+        {
+            "text": "Jestem z Hiszpanii.",
+            "meaning": "I am from Spain."
         },
         {
             "text": "Jestem z Niemiec i mieszkam w Berlinie.",
@@ -1137,6 +1351,10 @@
             "meaning": "You are in Kraków."
         },
         {
+            "text": "Jesteś z Francji? Tak, mówię po francusku.",
+            "meaning": "Are you from France? Yes, I speak French."
+        },
+        {
             "text": "Julia"
         },
         {
@@ -1163,8 +1381,21 @@
             "meaning": "The classmate says “miło mi cię poznać”."
         },
         {
+            "text": "Kolega z pracy."
+        },
+        {
+            "text": "Koleżanka z grupy."
+        },
+        {
             "text": "Kolory",
             "meaning": "Colours"
+        },
+        {
+            "text": "Koniugacja -ę, -isz/-ysz",
+            "meaning": "Verbs in -ę, -isz and -ysz"
+        },
+        {
+            "text": "Kończę kurs. A ty?"
         },
         {
             "text": "Kraków",
@@ -1182,8 +1413,19 @@
             "meaning": "Who is it? It is a new student."
         },
         {
+            "text": "Kto to jest? To nowy student",
+            "meaning": "Who is it? A new student"
+        },
+        {
             "text": "Kto…? Co…?",
             "meaning": "Who…? What…?"
+        },
+        {
+            "text": "Lektorka jest z Hiszpanii.",
+            "meaning": "The teacher is from Spain."
+        },
+        {
+            "text": "Lektorka języka hiszpańskiego."
         },
         {
             "text": "Leon"
@@ -1210,6 +1452,10 @@
         },
         {
             "text": "Login i hasło."
+        },
+        {
+            "text": "Lubię sport.",
+            "meaning": "Yes, I like sport."
         },
         {
             "text": "Mam dwa lata.",
@@ -1246,7 +1492,27 @@
             "text": "Mapa."
         },
         {
+            "text": "Marek jest leniwy.",
+            "meaning": "Marek is lazy."
+        },
+        {
+            "text": "Marek jest z Francji.",
+            "meaning": "Marek is from France."
+        },
+        {
+            "text": "Marek mówi po niemiecku.",
+            "meaning": "Marek speaks German."
+        },
+        {
             "text": "Maria"
+        },
+        {
+            "text": "Masz rację, jest wysoki i szczupły.",
+            "meaning": "Certainly. He is tall and slim."
+        },
+        {
+            "text": "Masz rację.",
+            "meaning": "Certainly. He is tall and slim."
         },
         {
             "text": "Mały i nowy."
@@ -1333,6 +1599,25 @@
             "meaning": "We speak English, and they speak Polish."
         },
         {
+            "text": "My też chodzimy do szkoły.",
+            "meaning": "We go to school too."
+        },
+        {
+            "text": "My uczymy się w Krakowie.",
+            "meaning": "We study in Kraków."
+        },
+        {
+            "text": "Myślę, że ona jest bardzo miła."
+        },
+        {
+            "text": "Myślę, że to nowy student.",
+            "meaning": "I don't know, but I think it's a new student."
+        },
+        {
+            "text": "Myślę, że z Hiszpanii.",
+            "meaning": "Probably from Spain. He speaks Spanish."
+        },
+        {
             "text": "Mój brat ma na imię Adam i ma szesnaście lat.",
             "meaning": "My brother's first name is Adam and he is sixteen years old."
         },
@@ -1389,6 +1674,13 @@
             "meaning": "My dad is from Poland, and my mum is from England."
         },
         {
+            "text": "Mówi po francusku i trochę po polsku."
+        },
+        {
+            "text": "Mówi też po polsku?",
+            "meaning": "Does he speak Polish too?"
+        },
+        {
             "text": "Mówię trochę po polsku.",
             "meaning": "Yes, a little."
         },
@@ -1402,6 +1694,21 @@
         {
             "text": "Na lewo?",
             "meaning": "On the left?"
+        },
+        {
+            "text": "Na pewno Ewa."
+        },
+        {
+            "text": "Na pewno.",
+            "meaning": "Certainly. He is tall and slim."
+        },
+        {
+            "text": "Na pewno. Jest wysoka i szczupła.",
+            "meaning": "Certainly. She is tall and slim."
+        },
+        {
+            "text": "Na pewno. Jest wysoki i szczupły.",
+            "meaning": "Certainly. He is tall and slim."
         },
         {
             "text": "Na razie!",
@@ -1466,8 +1773,26 @@
             "meaning": "Sorry, I don't understand. Please repeat."
         },
         {
+            "text": "Nie wiem, ale myślę, że to jest nowy student.",
+            "meaning": "I don't know, but I think it's a new student."
+        },
+        {
+            "text": "Nie wiem, ale myślę, że to nowy student.",
+            "meaning": "I don't know, but I think it's a new student."
+        },
+        {
+            "text": "Nie wiem, co to jest.",
+            "meaning": "I don't know what it is."
+        },
+        {
+            "text": "Nie wiem, czy jest miła, ale na pewno jest atrakcyjna i spontaniczna."
+        },
+        {
             "text": "Nie wiem.",
             "meaning": "I don't know."
+        },
+        {
+            "text": "Nie, jest bardzo pracowity!"
         },
         {
             "text": "Nie, jest zielony.",
@@ -1532,6 +1857,15 @@
             "text": "Niemcy"
         },
         {
+            "text": "Niski i leniwy."
+        },
+        {
+            "text": "Nowa studentka z Polski."
+        },
+        {
+            "text": "Nowy lektor."
+        },
+        {
             "text": "Nowy, ale zły."
         },
         {
@@ -1549,12 +1883,32 @@
             "meaning": "What does the student ask?"
         },
         {
+            "text": "On jest chory, ale ona jest zdrowa.",
+            "meaning": "He is ill, but she is healthy."
+        },
+        {
+            "text": "On jest gruby, ale zdrowy, bo jest bardzo aktywny.",
+            "meaning": "He is fat, but healthy, because he is very active."
+        },
+        {
+            "text": "On jest wysoki, a ona jest niska.",
+            "meaning": "He is tall, and she is short."
+        },
+        {
+            "text": "On jest z Ukrainy i mówi po ukraińsku, a ona jest z Japonii i mówi po japońsku.",
+            "meaning": "He is from Ukraine and speaks Ukrainian, and she is from Japan and speaks Japanese."
+        },
+        {
             "text": "On mieszka w Berlinie.",
             "meaning": "He lives in Berlin."
         },
         {
             "text": "Ona jest Japonką.",
             "meaning": "She is Japanese."
+        },
+        {
+            "text": "Ona jest z Japonii i mówi po japońsku.",
+            "meaning": "She is from Japan and speaks Japanese."
         },
         {
             "text": "Ona jest z Polski.",
@@ -1569,12 +1923,32 @@
             "meaning": "She lives in Rome."
         },
         {
+            "text": "Ona myśli, że on jest sympatyczny.",
+            "meaning": "She thinks that he is nice."
+        },
+        {
+            "text": "Oni chodzą do szkoły.",
+            "meaning": "They go to school."
+        },
+        {
             "text": "Oni mieszkają tam.",
             "meaning": "They live there."
         },
         {
             "text": "Oni mieszkają w Europie.",
             "meaning": "They live in Europe."
+        },
+        {
+            "text": "Oni są w jednej grupie.",
+            "meaning": "They are in one group."
+        },
+        {
+            "text": "Oni uczą się w Krakowie, a my uczymy się w Warszawie.",
+            "meaning": "They study in Kraków, and we study in Warsaw."
+        },
+        {
+            "text": "Oni uczą się w Warszawie.",
+            "meaning": "They study in Warsaw."
         },
         {
             "text": "Ołówek jest tam."
@@ -1648,6 +2022,10 @@
         {
             "text": "Pierwsza rzecz to zeszyt.",
             "meaning": "The first thing is a notebook."
+        },
+        {
+            "text": "Pierwsze słowo jest po hiszpańsku.",
+            "meaning": "The first word is in Spanish."
         },
         {
             "text": "Pięć.",
@@ -1775,6 +2153,10 @@
             "meaning": "Sorry, I don't understand. Please repeat."
         },
         {
+            "text": "Przepraszam, nie słyszę.",
+            "meaning": "Sorry, I can't hear."
+        },
+        {
             "text": "Robert"
         },
         {
@@ -1883,6 +2265,14 @@
             "text": "Ta torba jest modna, ale nie jest praktyczna."
         },
         {
+            "text": "Tak, ale tylko trochę.",
+            "meaning": "Yes, but only a little."
+        },
+        {
+            "text": "Tak, bardzo sympatyczny.",
+            "meaning": "Yes, he is very nice and cheerful."
+        },
+        {
             "text": "Tak, czerwony.",
             "meaning": "Yes, red."
         },
@@ -1903,6 +2293,22 @@
             "meaning": "Yes, you play tennis."
         },
         {
+            "text": "Tak, jest bardzo miła i wesoła.",
+            "meaning": "Yes, she is very nice and cheerful."
+        },
+        {
+            "text": "Tak, jest bardzo miły i wesoły.",
+            "meaning": "Yes, he is very nice and cheerful."
+        },
+        {
+            "text": "Tak, jest bardzo miły.",
+            "meaning": "Yes, he is very nice and cheerful."
+        },
+        {
+            "text": "Tak, jest miły i wesoły.",
+            "meaning": "Yes, he is very nice and cheerful."
+        },
+        {
             "text": "Tak, jest nowy.",
             "meaning": "Yes, this backpack is new."
         },
@@ -1913,6 +2319,22 @@
         {
             "text": "Tak, jestem z Polski.",
             "meaning": "Yes, I'm from Poland."
+        },
+        {
+            "text": "Tak, lubisz sport.",
+            "meaning": "Yes, you like sport."
+        },
+        {
+            "text": "Tak, lubię sport.",
+            "meaning": "Yes, I like sport."
+        },
+        {
+            "text": "Tak, lubię.",
+            "meaning": "Yes, I like sport."
+        },
+        {
+            "text": "Tak, mówię po polsku.",
+            "meaning": "Yes, I speak Polish."
         },
         {
             "text": "Tak, mówię trochę po polsku.",
@@ -1929,6 +2351,12 @@
         {
             "text": "Tak, ten plecak jest nowy.",
             "meaning": "Yes, this backpack is new."
+        },
+        {
+            "text": "Tak, to Marek. Jest z Francji."
+        },
+        {
+            "text": "Tak, to jest Ewa, nowa studentka."
         },
         {
             "text": "Tak, to jest długopis."
@@ -1954,8 +2382,20 @@
             "meaning": "Yes, a little."
         },
         {
+            "text": "Tak, trochę.",
+            "meaning": "Yes, but only a little."
+        },
+        {
+            "text": "Tak.",
+            "meaning": "Yes, I like sport."
+        },
+        {
             "text": "Tak.",
             "meaning": "Yes, I play tennis. It's my hobby."
+        },
+        {
+            "text": "Tak.",
+            "meaning": "Yes, he is very nice and cheerful."
         },
         {
             "text": "Tak.",
@@ -1985,7 +2425,15 @@
             "meaning": "This backpack is brown, and this mobile phone is black."
         },
         {
+            "text": "Ten plecak jest czysty, a ta torba jest brudna.",
+            "meaning": "This backpack is clean, and this bag is dirty."
+        },
+        {
             "text": "Ten segregator jest praktyczny."
+        },
+        {
+            "text": "Ten student nie jest leniwy, jest bardzo pracowity.",
+            "meaning": "This student isn't lazy, he is very hard-working."
         },
         {
             "text": "Ten słownik jest stary, ale dobry.",
@@ -1996,11 +2444,25 @@
             "meaning": "This dictionary is bad."
         },
         {
+            "text": "Też dobrze. Czy wiesz, kto to jest?"
+        },
+        {
             "text": "To auto jest duże.",
             "meaning": "This car is big."
         },
         {
+            "text": "To chyba nowy student.",
+            "meaning": "I don't know, but I think it's a new student."
+        },
+        {
+            "text": "To chyba nowy student. Ciekawe, czy jest z Polski.",
+            "meaning": "It's probably a new student. I wonder if he is from Poland."
+        },
+        {
             "text": "To jest Adam, student."
+        },
+        {
+            "text": "To jest Adam. Jest wysoki, przystojny i wysportowany."
         },
         {
             "text": "To jest Ewa, nauczycielka."
@@ -2014,6 +2476,9 @@
         },
         {
             "text": "To jest moja torba. Jest duża i czerwona."
+        },
+        {
+            "text": "To jest mój brat. Jest wysoki i szczupły."
         },
         {
             "text": "To jest mój plecak.",
@@ -2034,6 +2499,10 @@
         {
             "text": "To jest polski słownik, a to jest polska szkoła.",
             "meaning": "This is a Polish dictionary, and this is a Polish school."
+        },
+        {
+            "text": "To jest przerwa.",
+            "meaning": "It is a break."
         },
         {
             "text": "To jest rozmowa formalna.",
@@ -2148,6 +2617,10 @@
             "meaning": "Are you from England? (one friend)"
         },
         {
+            "text": "Tylko trochę.",
+            "meaning": "Yes, but only a little."
+        },
+        {
             "text": "Uczę się polskiego, bo moja dziewczyna jest z Polski.",
             "meaning": "Because my girlfriend is from Poland."
         },
@@ -2211,6 +2684,9 @@
             "text": "W Londynie."
         },
         {
+            "text": "W Paryżu."
+        },
+        {
             "text": "W Warszawie."
         },
         {
@@ -2248,6 +2724,9 @@
             "meaning": "There is a map of Kraków in the bag."
         },
         {
+            "text": "Wiesz, kto to jest?"
+        },
+        {
             "text": "Woda jest na prawo.",
             "meaning": "The water is on the right."
         },
@@ -2271,6 +2750,10 @@
             "meaning": "Hi! Same as ever. And with you?"
         },
         {
+            "text": "Wszystko jest w porządku.",
+            "meaning": "Everything is all right."
+        },
+        {
             "text": "Wszystko w porządku."
         },
         {
@@ -2283,6 +2766,9 @@
         {
             "text": "Wy mówicie po polsku, a one mówią po angielsku.",
             "meaning": "You (several people) speak Polish, and they (women) speak English."
+        },
+        {
+            "text": "Wysoki i wysportowany."
         },
         {
             "text": "Włoch"
@@ -2305,7 +2791,8 @@
             "text": "Z Francji."
         },
         {
-            "text": "Z Hiszpanii."
+            "text": "Z Hiszpanii.",
+            "meaning": "Probably from Spain. He speaks Spanish."
         },
         {
             "text": "Z Japonii."
@@ -2359,6 +2846,25 @@
             "meaning": "an address"
         },
         {
+            "text": "agresywny"
+        },
+        {
+            "text": "aktywna",
+            "meaning": "active (aktywny, aktywna, aktywne)"
+        },
+        {
+            "text": "aktywne",
+            "meaning": "active (aktywny, aktywna, aktywne)"
+        },
+        {
+            "text": "aktywny",
+            "meaning": "active"
+        },
+        {
+            "text": "aktywny",
+            "meaning": "active (aktywny, aktywna, aktywne)"
+        },
+        {
             "text": "akwarium",
             "meaning": "an aquarium"
         },
@@ -2369,6 +2875,38 @@
         {
             "text": "alfabet",
             "meaning": "the alphabet"
+        },
+        {
+            "text": "ambitna",
+            "meaning": "ambitious (ambitny, ambitna, ambitne)"
+        },
+        {
+            "text": "ambitne",
+            "meaning": "ambitious (ambitny, ambitna, ambitne)"
+        },
+        {
+            "text": "ambitny",
+            "meaning": "ambitious"
+        },
+        {
+            "text": "ambitny",
+            "meaning": "ambitious (ambitny, ambitna, ambitne)"
+        },
+        {
+            "text": "atrakcyjna",
+            "meaning": "attractive (atrakcyjny, atrakcyjna, atrakcyjne)"
+        },
+        {
+            "text": "atrakcyjne",
+            "meaning": "attractive (atrakcyjny, atrakcyjna, atrakcyjne)"
+        },
+        {
+            "text": "atrakcyjny",
+            "meaning": "attractive"
+        },
+        {
+            "text": "atrakcyjny",
+            "meaning": "attractive (atrakcyjny, atrakcyjna, atrakcyjne)"
         },
         {
             "text": "auto",
@@ -2453,6 +2991,38 @@
             "meaning": "a brother (after mam, masz, ma…)"
         },
         {
+            "text": "brudna",
+            "meaning": "dirty (brudny, brudna, brudne)"
+        },
+        {
+            "text": "brudne",
+            "meaning": "dirty (brudny, brudna, brudne)"
+        },
+        {
+            "text": "brudny",
+            "meaning": "dirty"
+        },
+        {
+            "text": "brudny",
+            "meaning": "dirty (brudny, brudna, brudne)"
+        },
+        {
+            "text": "brzydka",
+            "meaning": "ugly (brzydki, brzydka, brzydkie)"
+        },
+        {
+            "text": "brzydki",
+            "meaning": "ugly"
+        },
+        {
+            "text": "brzydki",
+            "meaning": "ugly (brzydki, brzydka, brzydkie)"
+        },
+        {
+            "text": "brzydkie",
+            "meaning": "ugly (brzydki, brzydka, brzydkie)"
+        },
+        {
             "text": "brązowa",
             "meaning": "brown (brązowy, brązowa, brązowe)"
         },
@@ -2476,6 +3046,53 @@
             "text": "cel"
         },
         {
+            "text": "chodzi",
+            "meaning": "he goes, she goes (on foot, or regularly)"
+        },
+        {
+            "text": "chodzicie"
+        },
+        {
+            "text": "chodzimy",
+            "meaning": "we go"
+        },
+        {
+            "text": "chodzimy",
+            "meaning": "we go (on foot, or regularly)"
+        },
+        {
+            "text": "chodzimy do szkoły",
+            "meaning": "we go to school"
+        },
+        {
+            "text": "chodzisz",
+            "meaning": "you go (one friend; on foot, or regularly)"
+        },
+        {
+            "text": "chodzisz do szkoły?",
+            "meaning": "do you go to school? (one friend)"
+        },
+        {
+            "text": "chodzą",
+            "meaning": "they go (on foot, or regularly)"
+        },
+        {
+            "text": "chodzę",
+            "meaning": "I go (on foot, or regularly)"
+        },
+        {
+            "text": "chora",
+            "meaning": "ill (chory, chora, chore)"
+        },
+        {
+            "text": "chore",
+            "meaning": "ill (chory, chora, chore)"
+        },
+        {
+            "text": "chory",
+            "meaning": "ill (chory, chora, chore)"
+        },
+        {
             "text": "chwileczkę",
             "meaning": "just a moment"
         },
@@ -2484,7 +3101,12 @@
             "meaning": "just a moment, please"
         },
         {
-            "text": "chyba"
+            "text": "chyba",
+            "meaning": "probably"
+        },
+        {
+            "text": "chyba",
+            "meaning": "probably, I guess"
         },
         {
             "text": "chłopak",
@@ -2500,6 +3122,30 @@
         },
         {
             "text": "ciebie"
+        },
+        {
+            "text": "ciekawa",
+            "meaning": "interesting, curious (ciekawy, ciekawa, ciekawe)"
+        },
+        {
+            "text": "ciekawe",
+            "meaning": "interesting, curious (ciekawy, ciekawa, ciekawe)"
+        },
+        {
+            "text": "ciekawy",
+            "meaning": "interesting, curious (ciekawy, ciekawa, ciekawe)"
+        },
+        {
+            "text": "cieszę się",
+            "meaning": "I am glad"
+        },
+        {
+            "text": "cieszę się, że jesteś tutaj",
+            "meaning": "I am glad that you are here (one friend)"
+        },
+        {
+            "text": "cieszę się, że tutaj jesteś",
+            "meaning": "I am glad that you are here (one friend)"
         },
         {
             "text": "co",
@@ -2742,12 +3388,28 @@
             "meaning": "(starts a yes-or-no question)"
         },
         {
+            "text": "czy chodzisz do szkoły?",
+            "meaning": "do you go to school? (one friend)"
+        },
+        {
             "text": "czy grasz w tenisa?",
             "meaning": "do you play tennis? (one friend)"
         },
         {
             "text": "czy jesteś z Polski?",
             "meaning": "are you from Poland? (one friend)"
+        },
+        {
+            "text": "czy jesteś zmęczona?",
+            "meaning": "are you tired? (one friend, a woman)"
+        },
+        {
+            "text": "czy kończysz kurs?",
+            "meaning": "are you finishing the course? (one friend)"
+        },
+        {
+            "text": "czy lubisz sport?",
+            "meaning": "do you like sport? (one friend)"
         },
         {
             "text": "czy masz rodzeństwo?",
@@ -2758,6 +3420,14 @@
             "meaning": "do you live in Warsaw? (several people)"
         },
         {
+            "text": "czy myślisz, że to jest żart?",
+            "meaning": "do you think it is a joke? (one friend)"
+        },
+        {
+            "text": "czy myślisz, że to żart?",
+            "meaning": "do you think it is a joke? (one friend)"
+        },
+        {
             "text": "czy mówi po angielsku?"
         },
         {
@@ -2765,7 +3435,18 @@
             "meaning": "do you speak English? (one friend)"
         },
         {
+            "text": "czy mówisz po niemiecku?",
+            "meaning": "do you speak German? (one friend)"
+        },
+        {
             "text": "czy mówisz po polsku?"
+        },
+        {
+            "text": "czy pamiętasz, kto to jest?"
+        },
+        {
+            "text": "czy słyszysz?",
+            "meaning": "can you hear? (one friend)"
         },
         {
             "text": "czy to jest klucz?",
@@ -2812,8 +3493,51 @@
             "meaning": "is your husband from Poland? (to one friend)"
         },
         {
+            "text": "czy ty jesteś zmęczona?",
+            "meaning": "are you tired? (one friend, a woman)"
+        },
+        {
+            "text": "czy ty kończysz kurs?",
+            "meaning": "are you finishing the course? (one friend)"
+        },
+        {
+            "text": "czy ty lubisz sport?",
+            "meaning": "do you like sport? (one friend)"
+        },
+        {
+            "text": "czy ty myślisz, że to żart?",
+            "meaning": "do you think it is a joke? (one friend)"
+        },
+        {
+            "text": "czy ty słyszysz?",
+            "meaning": "can you hear? (one friend)"
+        },
+        {
+            "text": "czy wiesz, co to jest?"
+        },
+        {
+            "text": "czy wiesz, kto to jest?",
+            "meaning": "do you know who it is? (one friend)"
+        },
+        {
             "text": "czy wy mieszkacie w Warszawie?",
             "meaning": "do you live in Warsaw? (several people)"
+        },
+        {
+            "text": "czysta",
+            "meaning": "clean (czysty, czysta, czyste)"
+        },
+        {
+            "text": "czyste",
+            "meaning": "clean (czysty, czysta, czyste)"
+        },
+        {
+            "text": "czysty",
+            "meaning": "clean"
+        },
+        {
+            "text": "czysty",
+            "meaning": "clean (czysty, czysta, czyste)"
         },
         {
             "text": "czytam",
@@ -2871,6 +3595,10 @@
         {
             "text": "do jutra",
             "meaning": "see you tomorrow"
+        },
+        {
+            "text": "do szkoły",
+            "meaning": "to school"
         },
         {
             "text": "do usłyszenia"
@@ -3237,6 +3965,14 @@
             "meaning": "great, thank you"
         },
         {
+            "text": "dziś",
+            "meaning": "today"
+        },
+        {
+            "text": "dziś jestem zestresowany",
+            "meaning": "I am stressed today (a man speaking)"
+        },
+        {
             "text": "długopis",
             "meaning": "a pen"
         },
@@ -3246,6 +3982,22 @@
         },
         {
             "text": "dźwięki"
+        },
+        {
+            "text": "energiczna",
+            "meaning": "energetic (energiczny, energiczna, energiczne)"
+        },
+        {
+            "text": "energiczne",
+            "meaning": "energetic (energiczny, energiczna, energiczne)"
+        },
+        {
+            "text": "energiczny",
+            "meaning": "energetic"
+        },
+        {
+            "text": "energiczny",
+            "meaning": "energetic (energiczny, energiczna, energiczne)"
         },
         {
             "text": "fajna",
@@ -3262,6 +4014,10 @@
         {
             "text": "fajny",
             "meaning": "cool, nice (fajny, fajna, fajne)"
+        },
+        {
+            "text": "film",
+            "meaning": "a film"
         },
         {
             "text": "fioletowa",
@@ -3383,6 +4139,22 @@
             "meaning": "congratulations, cheers (a toast)"
         },
         {
+            "text": "gruba",
+            "meaning": "fat (gruby, gruba, grube)"
+        },
+        {
+            "text": "grube",
+            "meaning": "fat (gruby, gruba, grube)"
+        },
+        {
+            "text": "gruby",
+            "meaning": "fat"
+        },
+        {
+            "text": "gruby",
+            "meaning": "fat (gruby, gruba, grube)"
+        },
+        {
             "text": "gumka",
             "meaning": "a rubber, for rubbing out"
         },
@@ -3490,6 +4262,22 @@
             "meaning": "first name, surname, nationality"
         },
         {
+            "text": "inteligentna",
+            "meaning": "intelligent (inteligentny, inteligentna, inteligentne)"
+        },
+        {
+            "text": "inteligentne",
+            "meaning": "intelligent (inteligentny, inteligentna, inteligentne)"
+        },
+        {
+            "text": "inteligentny",
+            "meaning": "intelligent"
+        },
+        {
+            "text": "inteligentny",
+            "meaning": "intelligent (inteligentny, inteligentna, inteligentne)"
+        },
+        {
             "text": "interesująca",
             "meaning": "interesting (interesujący, interesująca, interesujące)"
         },
@@ -3528,6 +4316,22 @@
         {
             "text": "ja jestem Polką",
             "meaning": "I am Polish"
+        },
+        {
+            "text": "ja jestem dziś zestresowany",
+            "meaning": "I am stressed today (a man speaking)"
+        },
+        {
+            "text": "ja jestem pewna, że to jest żart",
+            "meaning": "I am sure that it is a joke (a woman speaking)"
+        },
+        {
+            "text": "ja jestem pewna, że to żart",
+            "meaning": "I am sure that it is a joke (a woman speaking)"
+        },
+        {
+            "text": "ja jestem smutny",
+            "meaning": "I am sad (a man speaking)"
         },
         {
             "text": "ja jestem z Francji",
@@ -3711,12 +4515,20 @@
             "meaning": "what… like (with a feminine noun: jaka jest ta torba?)"
         },
         {
+            "text": "jaka jest ona?",
+            "meaning": "what is she like?"
+        },
+        {
             "text": "jaka jest ta szkoła?",
             "meaning": "what is this school like?"
         },
         {
             "text": "jaka jest ta torba? Jest czerwona.",
             "meaning": "what is this bag like? It is red."
+        },
+        {
+            "text": "jaka ona jest?",
+            "meaning": "what is she like?"
         },
         {
             "text": "jaki",
@@ -3752,6 +4564,14 @@
         {
             "text": "jaki masz numer telefonu?",
             "meaning": "what is your phone number? (one friend)"
+        },
+        {
+            "text": "jaki on jest? Jest wesoły.",
+            "meaning": "what is he like? He is cheerful."
+        },
+        {
+            "text": "jaki on jest? On jest wesoły.",
+            "meaning": "what is he like? He is cheerful."
         },
         {
             "text": "jaki to kolor?",
@@ -3861,6 +4681,26 @@
             "meaning": "I am Polish"
         },
         {
+            "text": "jestem dziś zestresowany",
+            "meaning": "I am stressed today (a man speaking)"
+        },
+        {
+            "text": "jestem pewna, że to jest żart",
+            "meaning": "I am sure that it is a joke (a woman speaking)"
+        },
+        {
+            "text": "jestem pewna, że to żart",
+            "meaning": "I am sure that it is a joke (a woman speaking)"
+        },
+        {
+            "text": "jestem pewny, że ona jest miła",
+            "meaning": "I am sure that she is nice (a man speaking)"
+        },
+        {
+            "text": "jestem smutny",
+            "meaning": "I am sad (a man speaking)"
+        },
+        {
             "text": "jestem tutaj",
             "meaning": "I am here"
         },
@@ -3891,6 +4731,14 @@
             "meaning": "I am from Italy"
         },
         {
+            "text": "jestem zmęczona",
+            "meaning": "I am tired"
+        },
+        {
+            "text": "jestem zmęczony",
+            "meaning": "I am tired"
+        },
+        {
             "text": "jesteś",
             "meaning": "you are (one friend)"
         },
@@ -3901,6 +4749,10 @@
         {
             "text": "jesteś z Polski?",
             "meaning": "are you from Poland? (one friend)"
+        },
+        {
+            "text": "jesteś zmęczona?",
+            "meaning": "are you tired? (one friend, a woman)"
         },
         {
             "text": "jesteście",
@@ -3997,6 +4849,51 @@
             "meaning": "a mobile phone and a charger"
         },
         {
+            "text": "kończy",
+            "meaning": "he finishes, she finishes"
+        },
+        {
+            "text": "kończycie"
+        },
+        {
+            "text": "kończymy"
+        },
+        {
+            "text": "kończysz",
+            "meaning": "you finish, you are finishing (one friend)"
+        },
+        {
+            "text": "kończysz kurs?",
+            "meaning": "are you finishing the course? (one friend)"
+        },
+        {
+            "text": "kończą"
+        },
+        {
+            "text": "kończę",
+            "meaning": "I finish"
+        },
+        {
+            "text": "kończę",
+            "meaning": "I finish, I am finishing"
+        },
+        {
+            "text": "kreatywna",
+            "meaning": "creative (kreatywny, kreatywna, kreatywne)"
+        },
+        {
+            "text": "kreatywne",
+            "meaning": "creative (kreatywny, kreatywna, kreatywne)"
+        },
+        {
+            "text": "kreatywny",
+            "meaning": "creative"
+        },
+        {
+            "text": "kreatywny",
+            "meaning": "creative (kreatywny, kreatywna, kreatywne)"
+        },
+        {
             "text": "krzesło",
             "meaning": "a chair"
         },
@@ -4037,6 +4934,10 @@
             "meaning": "a mug"
         },
         {
+            "text": "kurs",
+            "meaning": "a course"
+        },
+        {
             "text": "laptop",
             "meaning": "a laptop"
         },
@@ -4059,6 +4960,38 @@
         {
             "text": "lekcja numer jeden",
             "meaning": "lesson number one"
+        },
+        {
+            "text": "leniwa",
+            "meaning": "lazy (leniwy, leniwa, leniwe)"
+        },
+        {
+            "text": "leniwe",
+            "meaning": "lazy (leniwy, leniwa, leniwe)"
+        },
+        {
+            "text": "leniwy",
+            "meaning": "lazy"
+        },
+        {
+            "text": "leniwy",
+            "meaning": "lazy (leniwy, leniwa, leniwe)"
+        },
+        {
+            "text": "lubisz",
+            "meaning": "you like (one friend)"
+        },
+        {
+            "text": "lubisz sport?",
+            "meaning": "do you like sport? (one friend)"
+        },
+        {
+            "text": "lubię",
+            "meaning": "I like"
+        },
+        {
+            "text": "lubię sport",
+            "meaning": "I like sport"
         },
         {
             "text": "ma",
@@ -4192,6 +5125,22 @@
             "meaning": "do you have time? (one friend)"
         },
         {
+            "text": "masz rację",
+            "meaning": "you're right"
+        },
+        {
+            "text": "masz rację",
+            "meaning": "you're right (one friend)"
+        },
+        {
+            "text": "masz rację, to jest żart",
+            "meaning": "you're right, it is a joke"
+        },
+        {
+            "text": "masz rację, to żart",
+            "meaning": "you're right, it is a joke"
+        },
+        {
             "text": "masz rodzeństwo?",
             "meaning": "do you have brothers and sisters? (one friend)"
         },
@@ -4277,6 +5226,14 @@
             "meaning": "minus"
         },
         {
+            "text": "miła",
+            "meaning": "nice, kind (miły, miła, miłe)"
+        },
+        {
+            "text": "miłe",
+            "meaning": "nice, kind (miły, miła, miłe)"
+        },
+        {
             "text": "miłego dnia",
             "meaning": "have a nice day"
         },
@@ -4314,6 +5271,14 @@
         {
             "text": "miło mi panią poznać",
             "meaning": "nice to meet you (to a woman, formal)"
+        },
+        {
+            "text": "miły",
+            "meaning": "kind"
+        },
+        {
+            "text": "miły",
+            "meaning": "nice, kind (miły, miła, miłe)"
         },
         {
             "text": "mnie"
@@ -4400,12 +5365,76 @@
             "meaning": "we"
         },
         {
+            "text": "my chodzimy do szkoły",
+            "meaning": "we go to school"
+        },
+        {
             "text": "my jesteśmy z Anglii",
             "meaning": "we are from England"
         },
         {
             "text": "my mamy czas",
             "meaning": "we have time"
+        },
+        {
+            "text": "my mówimy po hiszpańsku",
+            "meaning": "we speak Spanish"
+        },
+        {
+            "text": "my uczymy się w Warszawie",
+            "meaning": "we study in Warsaw"
+        },
+        {
+            "text": "myśli",
+            "meaning": "he thinks, she thinks"
+        },
+        {
+            "text": "myślicie"
+        },
+        {
+            "text": "myślimy"
+        },
+        {
+            "text": "myślisz",
+            "meaning": "you think (one friend)"
+        },
+        {
+            "text": "myślisz, że to jest żart?",
+            "meaning": "do you think it is a joke? (one friend)"
+        },
+        {
+            "text": "myślisz, że to żart?",
+            "meaning": "do you think it is a joke? (one friend)"
+        },
+        {
+            "text": "myślą"
+        },
+        {
+            "text": "myślę",
+            "meaning": "I think"
+        },
+        {
+            "text": "myślę, że nie"
+        },
+        {
+            "text": "myślę, że tak",
+            "meaning": "I think so"
+        },
+        {
+            "text": "myślę, że to jest nowy student",
+            "meaning": "I think that it is a new student"
+        },
+        {
+            "text": "myślę, że to jest żart",
+            "meaning": "I think that it is a joke"
+        },
+        {
+            "text": "myślę, że to nowy student",
+            "meaning": "I think that it is a new student"
+        },
+        {
+            "text": "myślę, że to żart",
+            "meaning": "I think that it is a joke"
         },
         {
             "text": "mój",
@@ -4462,8 +5491,16 @@
             "meaning": "we speak"
         },
         {
+            "text": "mówimy po hiszpańsku",
+            "meaning": "we speak Spanish"
+        },
+        {
             "text": "mówisz",
             "meaning": "you speak (one friend)"
+        },
+        {
+            "text": "mówisz po niemiecku?",
+            "meaning": "do you speak German? (one friend)"
         },
         {
             "text": "mówią",
@@ -4474,6 +5511,9 @@
             "meaning": "I speak"
         },
         {
+            "text": "mówię po angielsku"
+        },
+        {
             "text": "mówię po angielsku i trochę po polsku",
             "meaning": "I speak English and a little Polish"
         },
@@ -4482,16 +5522,46 @@
             "meaning": "I speak English, but I do not speak Polish"
         },
         {
+            "text": "mówię po francusku",
+            "meaning": "I speak French"
+        },
+        {
+            "text": "mówię po niemiecku"
+        },
+        {
             "text": "mówię po polsku",
             "meaning": "I speak Polish"
+        },
+        {
+            "text": "mówię trochę po niemiecku",
+            "meaning": "I speak a little German"
         },
         {
             "text": "mówię trochę po polsku",
             "meaning": "I speak a little Polish"
         },
         {
+            "text": "mówię tylko po niemiecku"
+        },
+        {
             "text": "mąż",
             "meaning": "a husband"
+        },
+        {
+            "text": "młoda",
+            "meaning": "young (młody, młoda, młode)"
+        },
+        {
+            "text": "młode",
+            "meaning": "young (młody, młoda, młode)"
+        },
+        {
+            "text": "młody",
+            "meaning": "young"
+        },
+        {
+            "text": "młody",
+            "meaning": "young (młody, młoda, młode)"
         },
         {
             "text": "na drodze"
@@ -4507,6 +5577,18 @@
         {
             "text": "na lewo",
             "meaning": "on the left; to the left"
+        },
+        {
+            "text": "na pewno",
+            "meaning": "certainly"
+        },
+        {
+            "text": "na pewno",
+            "meaning": "certainly, for sure"
+        },
+        {
+            "text": "na pewno on jest ambitny",
+            "meaning": "he is certainly ambitious"
         },
         {
             "text": "na prawo",
@@ -4647,12 +5729,34 @@
             "meaning": "no problem (answer to \"sorry\")"
         },
         {
+            "text": "nie słyszę, proszę powtórzyć",
+            "meaning": "I can't hear, please say it again"
+        },
+        {
             "text": "nie wiem",
             "meaning": "I don't know"
         },
         {
+            "text": "nie wiem, ale chyba tak",
+            "meaning": "I don't know, but I guess so"
+        },
+        {
+            "text": "nie wiem, chyba tak",
+            "meaning": "I don't know, but I guess so"
+        },
+        {
+            "text": "nie wiem, czy on jest miły",
+            "meaning": "I don't know if he is nice"
+        },
+        {
+            "text": "nie wiem, kto to jest"
+        },
+        {
             "text": "nie wiem, niestety",
             "meaning": "unfortunately, I don't know"
+        },
+        {
+            "text": "nie wiem, proszę powtórzyć"
         },
         {
             "text": "nie, dziękuję",
@@ -4713,6 +5817,22 @@
         },
         {
             "text": "nigdzie"
+        },
+        {
+            "text": "niska",
+            "meaning": "short (not tall) (niski, niska, niskie)"
+        },
+        {
+            "text": "niski",
+            "meaning": "short"
+        },
+        {
+            "text": "niski",
+            "meaning": "short (not tall) (niski, niska, niskie)"
+        },
+        {
+            "text": "niskie",
+            "meaning": "short (not tall) (niski, niska, niskie)"
         },
         {
             "text": "nowa",
@@ -4779,6 +5899,10 @@
             "text": "on + ona"
         },
         {
+            "text": "on chodzi do szkoły",
+            "meaning": "he goes to school"
+        },
+        {
             "text": "on jest Anglikiem, a ona Polką",
             "meaning": "he is English, and she is Polish"
         },
@@ -4787,14 +5911,67 @@
             "meaning": "he is English, and she is Polish"
         },
         {
+            "text": "on jest aktywny i energiczny",
+            "meaning": "he is energetic and active"
+        },
+        {
+            "text": "on jest bardzo romantyczny",
+            "meaning": "he is very romantic"
+        },
+        {
+            "text": "on jest chory"
+        },
+        {
+            "text": "on jest energiczny i aktywny",
+            "meaning": "he is energetic and active"
+        },
+        {
+            "text": "on jest leniwy",
+            "meaning": "he is lazy"
+        },
+        {
+            "text": "on jest na pewno ambitny",
+            "meaning": "he is certainly ambitious"
+        },
+        {
+            "text": "on jest niski i przystojny"
+        },
+        {
+            "text": "on jest pracowity",
+            "meaning": "he is hard-working"
+        },
+        {
+            "text": "on jest przystojny i wysoki",
+            "meaning": "he is tall and handsome"
+        },
+        {
             "text": "on jest tutaj"
+        },
+        {
+            "text": "on jest wysoki i leniwy"
+        },
+        {
+            "text": "on jest wysoki i przystojny",
+            "meaning": "he is tall and handsome"
+        },
+        {
+            "text": "on jest wysoki, ale nie jest wysportowany",
+            "meaning": "he is tall, but he isn't sporty"
         },
         {
             "text": "on jest z Anglii",
             "meaning": "he is from England"
         },
         {
+            "text": "on jest z Ukrainy i mówi po ukraińsku",
+            "meaning": "he is from Ukraine and speaks Ukrainian"
+        },
+        {
             "text": "on jest z Włoch"
+        },
+        {
+            "text": "on jest średniego wzrostu",
+            "meaning": "he is of medium height"
         },
         {
             "text": "on ma cztery lata"
@@ -4812,6 +5989,14 @@
             "meaning": "he lives in Berlin"
         },
         {
+            "text": "on mówi po włosku",
+            "meaning": "he speaks Italian"
+        },
+        {
+            "text": "on na pewno jest ambitny",
+            "meaning": "he is certainly ambitious"
+        },
+        {
             "text": "ona",
             "meaning": "she"
         },
@@ -4819,18 +6004,70 @@
             "text": "ona + ona"
         },
         {
+            "text": "ona jest chora",
+            "meaning": "she is ill"
+        },
+        {
+            "text": "ona jest inteligentna i kreatywna",
+            "meaning": "she is intelligent and creative"
+        },
+        {
+            "text": "ona jest kreatywna i inteligentna",
+            "meaning": "she is intelligent and creative"
+        },
+        {
+            "text": "ona jest młoda"
+        },
+        {
+            "text": "ona jest młoda i wysportowana",
+            "meaning": "she is young and sporty"
+        },
+        {
+            "text": "ona jest smutna",
+            "meaning": "she is sad"
+        },
+        {
+            "text": "ona jest szczupła i ładna",
+            "meaning": "she is pretty and slim"
+        },
+        {
             "text": "ona jest tutaj"
+        },
+        {
+            "text": "ona jest wesoła"
+        },
+        {
+            "text": "ona jest wysportowana i młoda",
+            "meaning": "she is young and sporty"
         },
         {
             "text": "ona jest z Anglii",
             "meaning": "she is from England"
         },
         {
+            "text": "ona jest z Hiszpanii"
+        },
+        {
+            "text": "ona jest z Japonii"
+        },
+        {
             "text": "ona jest z Polski"
+        },
+        {
+            "text": "ona jest z Ukrainy",
+            "meaning": "she is from Ukraine"
         },
         {
             "text": "ona jest z Włoch",
             "meaning": "she is from Italy"
+        },
+        {
+            "text": "ona jest ładna i szczupła",
+            "meaning": "she is pretty and slim"
+        },
+        {
+            "text": "ona kończy kurs",
+            "meaning": "she is finishing the course"
         },
         {
             "text": "ona ma cztery lata",
@@ -4841,11 +6078,21 @@
             "meaning": "she is nineteen years old"
         },
         {
+            "text": "ona ma kurs"
+        },
+        {
             "text": "ona ma trzy lata"
         },
         {
             "text": "ona mieszka w Londynie",
             "meaning": "she lives in London"
+        },
+        {
+            "text": "ona mówi po japońsku",
+            "meaning": "she speaks Japanese"
+        },
+        {
+            "text": "ona mówi po polsku"
         },
         {
             "text": "ona uczy się polskiego, bo jej chłopak jest z Polski",
@@ -4854,6 +6101,9 @@
         {
             "text": "one",
             "meaning": "they (women)"
+        },
+        {
+            "text": "one kończą kurs"
         },
         {
             "text": "one mają córkę"
@@ -4888,6 +6138,10 @@
         {
             "text": "oni",
             "meaning": "they (men, or men and women)"
+        },
+        {
+            "text": "oni chodzą do szkoły",
+            "meaning": "they (men, or men and women) go to school"
         },
         {
             "text": "oni mają córkę",
@@ -5033,6 +6287,18 @@
             "meaning": "Mr and Mrs; you (to a man and a woman, formal)"
         },
         {
+            "text": "pewna",
+            "meaning": "sure, certain (pewny, pewna, pewne)"
+        },
+        {
+            "text": "pewne",
+            "meaning": "sure, certain (pewny, pewna, pewne)"
+        },
+        {
+            "text": "pewny",
+            "meaning": "sure, certain (pewny, pewna, pewne)"
+        },
+        {
             "text": "piętnaście",
             "meaning": "fifteen"
         },
@@ -5076,6 +6342,22 @@
             "meaning": "(in) English"
         },
         {
+            "text": "po francusku",
+            "meaning": "in French"
+        },
+        {
+            "text": "po hiszpańsku",
+            "meaning": "in Spanish"
+        },
+        {
+            "text": "po japońsku",
+            "meaning": "in Japanese"
+        },
+        {
+            "text": "po niemiecku",
+            "meaning": "in German"
+        },
+        {
             "text": "po polsku",
             "meaning": "(in) Polish"
         },
@@ -5086,6 +6368,14 @@
         {
             "text": "po staremu, a u ciebie?",
             "meaning": "same as ever, and with you? (one friend)"
+        },
+        {
+            "text": "po ukraińsku",
+            "meaning": "in Ukrainian"
+        },
+        {
+            "text": "po włosku",
+            "meaning": "in Italian"
         },
         {
             "text": "podkreślić",
@@ -5172,6 +6462,22 @@
         {
             "text": "pracować",
             "meaning": "work (to work)"
+        },
+        {
+            "text": "pracowita",
+            "meaning": "hard-working (pracowity, pracowita, pracowite)"
+        },
+        {
+            "text": "pracowite",
+            "meaning": "hard-working (pracowity, pracowita, pracowite)"
+        },
+        {
+            "text": "pracowity",
+            "meaning": "hard-working"
+        },
+        {
+            "text": "pracowity",
+            "meaning": "hard-working (pracowity, pracowita, pracowite)"
         },
         {
             "text": "praktyczna",
@@ -5351,6 +6657,18 @@
             "meaning": "an example"
         },
         {
+            "text": "przystojna",
+            "meaning": "handsome (przystojny, przystojna, przystojne)"
+        },
+        {
+            "text": "przystojne",
+            "meaning": "handsome (przystojny, przystojna, przystojne)"
+        },
+        {
+            "text": "przystojny",
+            "meaning": "handsome (przystojny, przystojna, przystojne)"
+        },
+        {
             "text": "pytanie",
             "meaning": "a question"
         },
@@ -5360,6 +6678,30 @@
         {
             "text": "restauracja",
             "meaning": "a restaurant"
+        },
+        {
+            "text": "robi"
+        },
+        {
+            "text": "robicie"
+        },
+        {
+            "text": "robimy"
+        },
+        {
+            "text": "robisz",
+            "meaning": "you do, you make (one friend)"
+        },
+        {
+            "text": "robią"
+        },
+        {
+            "text": "robię",
+            "meaning": "I do"
+        },
+        {
+            "text": "robię",
+            "meaning": "I do, I make"
         },
         {
             "text": "rodzeństwo",
@@ -5372,6 +6714,22 @@
         {
             "text": "rok",
             "meaning": "a year; one year"
+        },
+        {
+            "text": "romantyczna",
+            "meaning": "romantic (romantyczny, romantyczna, romantyczne)"
+        },
+        {
+            "text": "romantyczne",
+            "meaning": "romantic (romantyczny, romantyczna, romantyczne)"
+        },
+        {
+            "text": "romantyczny",
+            "meaning": "romantic"
+        },
+        {
+            "text": "romantyczny",
+            "meaning": "romantic (romantyczny, romantyczna, romantyczne)"
         },
         {
             "text": "rozumiem",
@@ -5474,7 +6832,43 @@
             "text": "smaczny"
         },
         {
+            "text": "smutna",
+            "meaning": "sad (smutny, smutna, smutne)"
+        },
+        {
+            "text": "smutne",
+            "meaning": "sad (smutny, smutna, smutne)"
+        },
+        {
+            "text": "smutny",
+            "meaning": "sad"
+        },
+        {
+            "text": "smutny",
+            "meaning": "sad (smutny, smutna, smutne)"
+        },
+        {
             "text": "sobie"
+        },
+        {
+            "text": "spontaniczna",
+            "meaning": "spontaneous (spontaniczny, spontaniczna, spontaniczne)"
+        },
+        {
+            "text": "spontaniczne",
+            "meaning": "spontaneous (spontaniczny, spontaniczna, spontaniczne)"
+        },
+        {
+            "text": "spontaniczny",
+            "meaning": "spontaneous"
+        },
+        {
+            "text": "spontaniczny",
+            "meaning": "spontaneous (spontaniczny, spontaniczna, spontaniczne)"
+        },
+        {
+            "text": "sport",
+            "meaning": "sport"
         },
         {
             "text": "stara",
@@ -5565,6 +6959,22 @@
             "meaning": "grey (szary, szara, szare)"
         },
         {
+            "text": "szczupła",
+            "meaning": "slim (szczupły, szczupła, szczupłe)"
+        },
+        {
+            "text": "szczupłe",
+            "meaning": "slim (szczupły, szczupła, szczupłe)"
+        },
+        {
+            "text": "szczupły",
+            "meaning": "slim"
+        },
+        {
+            "text": "szczupły",
+            "meaning": "slim (szczupły, szczupła, szczupłe)"
+        },
+        {
             "text": "szesnaście",
             "meaning": "sixteen"
         },
@@ -5646,6 +7056,10 @@
             "meaning": "a dictionary"
         },
         {
+            "text": "słowo",
+            "meaning": "a word"
+        },
+        {
             "text": "słońce",
             "meaning": "the sun"
         },
@@ -5666,6 +7080,34 @@
         },
         {
             "text": "słychać"
+        },
+        {
+            "text": "słyszy"
+        },
+        {
+            "text": "słyszycie"
+        },
+        {
+            "text": "słyszymy"
+        },
+        {
+            "text": "słyszysz",
+            "meaning": "you hear, you can hear (one friend)"
+        },
+        {
+            "text": "słyszysz?",
+            "meaning": "can you hear? (one friend)"
+        },
+        {
+            "text": "słyszą"
+        },
+        {
+            "text": "słyszę",
+            "meaning": "I hear"
+        },
+        {
+            "text": "słyszę",
+            "meaning": "I hear, I can hear"
         },
         {
             "text": "ta",
@@ -5690,11 +7132,18 @@
             "meaning": "this bag"
         },
         {
+            "text": "ta torba jest brzydka",
+            "meaning": "this bag is ugly"
+        },
+        {
             "text": "ta torba jest czerwona",
             "meaning": "this bag is red"
         },
         {
             "text": "ta torba jest czerwony"
+        },
+        {
+            "text": "ta torba jest duża"
         },
         {
             "text": "ta torba jest fioletowa",
@@ -5722,6 +7171,9 @@
         },
         {
             "text": "ta torba jest zielona"
+        },
+        {
+            "text": "ta torba jest ładna"
         },
         {
             "text": "tablica",
@@ -5795,6 +7247,10 @@
             "meaning": "this pen is good"
         },
         {
+            "text": "ten film jest ciekawy",
+            "meaning": "this film is interesting"
+        },
+        {
             "text": "ten klucz",
             "meaning": "this key"
         },
@@ -5805,6 +7261,16 @@
         {
             "text": "ten kubek jest biały",
             "meaning": "this mug is white"
+        },
+        {
+            "text": "ten kubek jest brudny",
+            "meaning": "this mug is dirty"
+        },
+        {
+            "text": "ten kubek jest czysty"
+        },
+        {
+            "text": "ten kubek jest duży"
         },
         {
             "text": "ten kubek jest pomarańczowy",
@@ -5821,6 +7287,10 @@
         {
             "text": "ten segregator",
             "meaning": "this ring binder"
+        },
+        {
+            "text": "ten student jest leniwy, ale sympatyczny",
+            "meaning": "this student is lazy, but nice"
         },
         {
             "text": "ten stół",
@@ -5897,6 +7367,10 @@
             "meaning": "this car"
         },
         {
+            "text": "to auto jest czyste",
+            "meaning": "this car is clean"
+        },
+        {
             "text": "to auto jest fioletowe"
         },
         {
@@ -5907,8 +7381,30 @@
             "text": "to auto jest różowy"
         },
         {
+            "text": "to ciekawe słowo",
+            "meaning": "it is an interesting word"
+        },
+        {
+            "text": "to dziecko jest aktywne",
+            "meaning": "this child is active"
+        },
+        {
+            "text": "to dziecko jest chore"
+        },
+        {
+            "text": "to dziecko jest zdrowe",
+            "meaning": "this child is healthy"
+        },
+        {
+            "text": "to dziecko jest zmęczone"
+        },
+        {
             "text": "to dziewczyna",
             "meaning": "this is a girl"
+        },
+        {
+            "text": "to interesujące słowo",
+            "meaning": "it is an interesting word"
         },
         {
             "text": "to jest Adam",
@@ -5931,6 +7427,10 @@
             "meaning": "this is the alphabet"
         },
         {
+            "text": "to jest ciekawe słowo",
+            "meaning": "it is an interesting word"
+        },
+        {
             "text": "to jest duże okno",
             "meaning": "this is a big window"
         },
@@ -5948,6 +7448,10 @@
         {
             "text": "to jest gumka",
             "meaning": "it is a rubber"
+        },
+        {
+            "text": "to jest interesujące słowo",
+            "meaning": "it is an interesting word"
         },
         {
             "text": "to jest jego hobby",
@@ -6063,6 +7567,9 @@
             "meaning": "it is an orange mug"
         },
         {
+            "text": "to jest pytanie"
+        },
+        {
             "text": "to jest różowa gumka",
             "meaning": "it is a pink rubber"
         },
@@ -6090,6 +7597,9 @@
             "meaning": "this is a school"
         },
         {
+            "text": "to jest słowo"
+        },
+        {
             "text": "to jest tablica",
             "meaning": "it is a board"
         },
@@ -6112,6 +7622,10 @@
         {
             "text": "to jest ładowarka",
             "meaning": "it is a charger"
+        },
+        {
+            "text": "to jest żart",
+            "meaning": "it's a joke"
         },
         {
             "text": "to komputer",
@@ -6399,6 +7913,26 @@
             "meaning": "you are (one friend)"
         },
         {
+            "text": "ty jesteś zmęczona?",
+            "meaning": "are you tired? (one friend, a woman)"
+        },
+        {
+            "text": "ty kończysz kurs?",
+            "meaning": "are you finishing the course? (one friend)"
+        },
+        {
+            "text": "ty lubisz sport?",
+            "meaning": "do you like sport? (one friend)"
+        },
+        {
+            "text": "ty myślisz, że to żart?",
+            "meaning": "do you think it is a joke? (one friend)"
+        },
+        {
+            "text": "ty słyszysz?",
+            "meaning": "can you hear? (one friend)"
+        },
+        {
             "text": "tylko",
             "meaning": "only"
         },
@@ -6407,15 +7941,43 @@
             "meaning": "only a pen"
         },
         {
+            "text": "uczy się"
+        },
+        {
             "text": "uczy się polskiego",
             "meaning": "he is learning Polish; she is learning Polish"
+        },
+        {
+            "text": "uczycie się"
+        },
+        {
+            "text": "uczymy się",
+            "meaning": "we learn, we study"
+        },
+        {
+            "text": "uczymy się",
+            "meaning": "we study"
+        },
+        {
+            "text": "uczymy się w Warszawie",
+            "meaning": "we study in Warsaw"
+        },
+        {
+            "text": "uczysz się"
         },
         {
             "text": "uczysz się polskiego",
             "meaning": "you are learning Polish (one friend)"
         },
         {
+            "text": "uczą się",
+            "meaning": "they learn, they study"
+        },
+        {
             "text": "uczę"
+        },
+        {
+            "text": "uczę się"
         },
         {
             "text": "uczę się polskiego",
@@ -6499,6 +8061,22 @@
             "meaning": "tennis (after grać: gram w tenisa)"
         },
         {
+            "text": "wesoła",
+            "meaning": "cheerful (wesoły, wesoła, wesołe)"
+        },
+        {
+            "text": "wesołe",
+            "meaning": "cheerful (wesoły, wesoła, wesołe)"
+        },
+        {
+            "text": "wesoły",
+            "meaning": "cheerful"
+        },
+        {
+            "text": "wesoły",
+            "meaning": "cheerful (wesoły, wesoła, wesołe)"
+        },
+        {
             "text": "widzenia"
         },
         {
@@ -6508,6 +8086,16 @@
         {
             "text": "wiem, rozumiem",
             "meaning": "I know, I understand"
+        },
+        {
+            "text": "wiem, że on jest miły"
+        },
+        {
+            "text": "wiem, że tak"
+        },
+        {
+            "text": "wiesz",
+            "meaning": "you know (one friend)"
         },
         {
             "text": "witaj"
@@ -6563,6 +8151,37 @@
             "text": "wycieczkę"
         },
         {
+            "text": "wysoka",
+            "meaning": "tall (wysoki, wysoka, wysokie)"
+        },
+        {
+            "text": "wysoki",
+            "meaning": "tall"
+        },
+        {
+            "text": "wysoki",
+            "meaning": "tall (wysoki, wysoka, wysokie)"
+        },
+        {
+            "text": "wysokie",
+            "meaning": "tall (wysoki, wysoka, wysokie)"
+        },
+        {
+            "text": "wysportowana",
+            "meaning": "sporty, athletic (wysportowany, wysportowana, wysportowane)"
+        },
+        {
+            "text": "wysportowane",
+            "meaning": "sporty, athletic (wysportowany, wysportowana, wysportowane)"
+        },
+        {
+            "text": "wysportowany",
+            "meaning": "sporty, athletic (wysportowany, wysportowana, wysportowane)"
+        },
+        {
+            "text": "włosku"
+        },
+        {
             "text": "z Anglii",
             "meaning": "from England"
         },
@@ -6575,12 +8194,20 @@
             "meaning": "from Spain"
         },
         {
+            "text": "z Japonii",
+            "meaning": "from Japan"
+        },
+        {
             "text": "z Niemiec",
             "meaning": "from Germany"
         },
         {
             "text": "z Polski",
             "meaning": "from Poland"
+        },
+        {
+            "text": "z Ukrainy",
+            "meaning": "from Ukraine"
         },
         {
             "text": "z Włoch",
@@ -6590,7 +8217,16 @@
             "text": "zapraszam"
         },
         {
-            "text": "zdrowy"
+            "text": "zdrowa",
+            "meaning": "healthy (zdrowy, zdrowa, zdrowe)"
+        },
+        {
+            "text": "zdrowe",
+            "meaning": "healthy (zdrowy, zdrowa, zdrowe)"
+        },
+        {
+            "text": "zdrowy",
+            "meaning": "healthy (zdrowy, zdrowa, zdrowe)"
         },
         {
             "text": "zero",
@@ -6599,6 +8235,22 @@
         {
             "text": "zero, jeden, dwa",
             "meaning": "zero, one, two"
+        },
+        {
+            "text": "zestresowana",
+            "meaning": "stressed (zestresowany, zestresowana, zestresowane)"
+        },
+        {
+            "text": "zestresowane",
+            "meaning": "stressed (zestresowany, zestresowana, zestresowane)"
+        },
+        {
+            "text": "zestresowany",
+            "meaning": "stressed"
+        },
+        {
+            "text": "zestresowany",
+            "meaning": "stressed (zestresowany, zestresowana, zestresowane)"
         },
         {
             "text": "zeszyt",
@@ -6621,7 +8273,16 @@
             "meaning": "green (zielony, zielona, zielone)"
         },
         {
-            "text": "zmęczony"
+            "text": "zmęczona",
+            "meaning": "tired (zmęczony, zmęczona, zmęczone)"
+        },
+        {
+            "text": "zmęczone",
+            "meaning": "tired (zmęczony, zmęczona, zmęczone)"
+        },
+        {
+            "text": "zmęczony",
+            "meaning": "tired (zmęczony, zmęczona, zmęczone)"
         },
         {
             "text": "znaczy"
@@ -6659,6 +8320,22 @@
             "meaning": "exercise number two"
         },
         {
+            "text": "ładna",
+            "meaning": "pretty (ładny, ładna, ładne)"
+        },
+        {
+            "text": "ładne",
+            "meaning": "pretty (ładny, ładna, ładne)"
+        },
+        {
+            "text": "ładny",
+            "meaning": "pretty"
+        },
+        {
+            "text": "ładny",
+            "meaning": "pretty (ładny, ładna, ładne)"
+        },
+        {
             "text": "ładowarka",
             "meaning": "a charger"
         },
@@ -6683,7 +8360,15 @@
             "meaning": "Great! Bye for now, see you tomorrow!"
         },
         {
+            "text": "Świetnie! Pa, do jutra!",
+            "meaning": "Great! Bye, see you tomorrow!"
+        },
+        {
             "text": "śmiesznie"
+        },
+        {
+            "text": "średniego wzrostu",
+            "meaning": "of medium height"
         },
         {
             "text": "świetnie",
@@ -6720,6 +8405,14 @@
         },
         {
             "text": "Żeby studiować w Polsce."
+        },
+        {
+            "text": "żart",
+            "meaning": "a joke"
+        },
+        {
+            "text": "że",
+            "meaning": "that (myślę, że…)"
         },
         {
             "text": "żeby",
@@ -7093,6 +8786,34 @@
             "hash": "4f934b2caf84"
         },
         {
+            "id": "chat-new-student/t1/2",
+            "hash": "ab0764d8960a"
+        },
+        {
+            "id": "chat-new-student/t2/2",
+            "hash": "18be694d94f4"
+        },
+        {
+            "id": "chat-new-student/t3/2",
+            "hash": "95d599be2e3c"
+        },
+        {
+            "id": "chat-new-student/t4/2",
+            "hash": "860727e61908"
+        },
+        {
+            "id": "chat-new-student/t5/2",
+            "hash": "dff00f3a3602"
+        },
+        {
+            "id": "chat-new-student/t6/2",
+            "hash": "6f78e71703f2"
+        },
+        {
+            "id": "chat-new-student/t7/2",
+            "hash": "f3a481426795"
+        },
+        {
             "id": "chat-on-the-desk/t1/2",
             "hash": "02df0bac9221"
         },
@@ -7388,6 +9109,59 @@
         {
             "id": "kpk1-l03-g-t01",
             "hash": "720a41a4d39a"
+        },
+        {
+            "id": "kpk1-l04-a1-t01",
+            "hash": "35e4071acf57"
+        },
+        {
+            "id": "kpk1-l04-a2-t01",
+            "hash": "f283c1dc33fb"
+        },
+        {
+            "id": "kpk1-l04-b1-t01",
+            "hash": "947dbf3d7ed2"
+        },
+        {
+            "id": "kpk1-l04-b1-t02",
+            "hash": "79626365bde6"
+        },
+        {
+            "id": "kpk1-l04-b2-t01",
+            "hash": "d97a16e99114"
+        },
+        {
+            "id": "kpk1-l04-b2-t02",
+            "hash": "048070161f53"
+        },
+        {
+            "id": "kpk1-l04-b3-t01",
+            "hash": "09a29536958b"
+        },
+        {
+            "id": "kpk1-l04-b3-t02",
+            "hash": "e5be74ba4b30"
+        },
+        {
+            "id": "kpk1-l04-c1-t01",
+            "hash": "abe3073c06a6"
+        },
+        {
+            "id": "kpk1-l04-c2-t01",
+            "hash": "be6945ab50a3"
+        },
+        {
+            "id": "kpk1-l04-c3-t01",
+            "hash": "a8f051b280eb"
+        },
+        {
+            "id": "kpk1-l04-c4-t01",
+            "hash": "9889ac3ff892",
+            "finding": "The label 'ZAPAMIETAJ' is missing its Polish letter: it should be 'ZAPAMIĘTAJ' ('remember'). Fix the spelling, or drop the label if it is a stray heading from the book."
+        },
+        {
+            "id": "kpk1-l04-g-t01",
+            "hash": "722b83b83e0e"
         }
     ]
 }

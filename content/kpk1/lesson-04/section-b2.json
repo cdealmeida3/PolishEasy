@@ -1,0 +1,433 @@
+{
+  "id": "kpk1-l04-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Koniugacja -ę, -isz/-ysz",
+    "meaning": {
+      "en": "Verbs in -ę, -isz and -ysz"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l04-b2-t01",
+      "before": "kpk1-l04-b2-e01",
+      "title": {
+        "en": "Uczyć się: -ę, -ysz"
+      },
+      "body": {
+        "en": "After *cz*, *sz*, *rz* and *ż* the endings are *-ę*, *-ysz* and *-y*, with *y* for *i*: *uczę się*, *uczysz się*, *uczy się*, *uczymy się*, *uczycie się*, *uczą się*. *Się* stays the same for every person."
+      },
+      "conjugation": {
+        "verb": "uczyć się",
+        "meaning": {
+          "en": "to learn, to study"
+        },
+        "forms": {
+          "ja": "uczę się",
+          "ty": "uczysz się",
+          "on": "uczy się",
+          "my": "uczymy się",
+          "wy": "uczycie się",
+          "oni": "uczą się"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l04-b2-t02",
+      "before": "kpk1-l04-b2-e05",
+      "title": {
+        "en": "Kończyć: to finish"
+      },
+      "body": {
+        "en": "*Kończyć* has *cz* before its ending, so it goes like *uczyć się*: *kończę*, *kończysz*, *kończy*, *kończymy*, *kończycie*, *kończą*. *Kończę kurs* is \"I am finishing the course\"."
+      },
+      "conjugation": {
+        "verb": "kończyć",
+        "meaning": {
+          "en": "to finish"
+        },
+        "forms": {
+          "ja": "kończę",
+          "ty": "kończysz",
+          "on": "kończy",
+          "my": "kończymy",
+          "wy": "kończycie",
+          "oni": "kończą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b2-e01",
+      "prompt": "uczymy się",
+      "options": [
+        {
+          "en": "we learn, we study"
+        },
+        {
+          "en": "we speak"
+        },
+        {
+          "en": "we live"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "uczyc-sie-uczymy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b2-e02",
+      "prompt": "uczą się",
+      "options": [
+        {
+          "en": "they speak"
+        },
+        {
+          "en": "they learn, they study"
+        },
+        {
+          "en": "they go (on foot, or regularly)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "uczyc-sie-ucza"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b2-e03",
+      "verb": "uczyć się",
+      "meaning": {
+        "en": "to learn, to study"
+      },
+      "person": "my",
+      "sentence": "My ___ w Krakowie.",
+      "sentenceMeaning": {
+        "en": "We study in Kraków."
+      },
+      "acceptedAnswers": [
+        "uczymy się"
+      ],
+      "items": [
+        "my",
+        "uczyc-sie-uczymy",
+        "w-krakowie"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b2-e04",
+      "verb": "uczyć się",
+      "meaning": {
+        "en": "to learn, to study"
+      },
+      "person": "oni",
+      "sentence": "Oni ___ w Warszawie.",
+      "sentenceMeaning": {
+        "en": "They study in Warsaw."
+      },
+      "acceptedAnswers": [
+        "uczą się"
+      ],
+      "items": [
+        "oni",
+        "uczyc-sie-ucza",
+        "w-warszawie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b2-e05",
+      "prompt": "kończę",
+      "options": [
+        {
+          "en": "I go (on foot, or regularly)"
+        },
+        {
+          "en": "I think"
+        },
+        {
+          "en": "I finish, I am finishing"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "konczyc-koncze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b2-e06",
+      "prompt": "kończysz",
+      "options": [
+        {
+          "en": "you finish, you are finishing (one friend)"
+        },
+        {
+          "en": "you think (one friend)"
+        },
+        {
+          "en": "you know (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "konczyc-konczysz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b2-e07",
+      "prompt": "kończy",
+      "options": [
+        {
+          "en": "he thinks, she thinks"
+        },
+        {
+          "en": "he finishes, she finishes"
+        },
+        {
+          "en": "he goes, she goes (on foot, or regularly)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "konczyc-konczy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b2-e08",
+      "prompt": "kurs",
+      "options": [
+        {
+          "en": "a lesson"
+        },
+        {
+          "en": "a test"
+        },
+        {
+          "en": "a course"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kurs"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b2-e09",
+      "verb": "kończyć",
+      "meaning": {
+        "en": "to finish"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ kurs.",
+      "sentenceMeaning": {
+        "en": "I am finishing the course."
+      },
+      "acceptedAnswers": [
+        "kończę"
+      ],
+      "items": [
+        "ja",
+        "konczyc-koncze",
+        "kurs"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-b2-e10",
+      "text": "ona kończy kurs",
+      "meaning": {
+        "en": "she is finishing the course"
+      },
+      "distractors": [
+        "one kończą kurs",
+        "ona ma kurs"
+      ],
+      "items": [
+        "ona",
+        "konczyc-konczy",
+        "kurs"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-b2-e11",
+      "prompt": "film",
+      "options": [
+        {
+          "en": "a film"
+        },
+        {
+          "en": "a photo"
+        },
+        {
+          "en": "a word"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "film"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l04-b2-e12",
+      "verb": "kończyć",
+      "meaning": {
+        "en": "to finish"
+      },
+      "person": "ty",
+      "sentence": "Czy ty też ___ kurs?",
+      "sentenceMeaning": {
+        "en": "Are you finishing the course too?"
+      },
+      "acceptedAnswers": [
+        "kończysz"
+      ],
+      "items": [
+        "czy",
+        "ty",
+        "tez",
+        "konczyc-konczysz",
+        "kurs"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-b2-e13",
+      "prompt": {
+        "en": "this film is interesting"
+      },
+      "acceptedAnswers": [
+        "ten film jest ciekawy"
+      ],
+      "distractors": [
+        "ta",
+        "ciekawa"
+      ],
+      "items": [
+        "ten",
+        "film",
+        "byc-jest",
+        "ciekawy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l04-b2-e14",
+      "prompt": {
+        "en": "we study in Warsaw"
+      },
+      "acceptedAnswers": [
+        "uczymy się w Warszawie",
+        "my uczymy się w Warszawie"
+      ],
+      "items": [
+        "uczyc-sie-uczymy",
+        "w-warszawie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-b2-e15",
+      "acceptedAnswers": [
+        "kończysz kurs?"
+      ],
+      "meaning": {
+        "en": "are you finishing the course? (one friend)"
+      },
+      "items": [
+        "konczyc-konczysz",
+        "kurs"
+      ],
+      "readingAnswers": [
+        "czy kończysz kurs?",
+        "czy ty kończysz kurs?",
+        "ty kończysz kurs?"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l04-b2-e16",
+      "pairs": [
+        {
+          "polish": "uczymy się",
+          "meaning": {
+            "en": "we study"
+          }
+        },
+        {
+          "polish": "kończę",
+          "meaning": {
+            "en": "I finish"
+          }
+        },
+        {
+          "polish": "kurs",
+          "meaning": {
+            "en": "a course"
+          }
+        },
+        {
+          "polish": "film",
+          "meaning": {
+            "en": "a film"
+          }
+        },
+        {
+          "polish": "chodzimy",
+          "meaning": {
+            "en": "we go"
+          }
+        }
+      ],
+      "items": [
+        "uczyc-sie-uczymy",
+        "konczyc-koncze",
+        "kurs",
+        "film",
+        "chodzic-chodzimy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-b2-e17",
+      "text": "Oni ___ w Krakowie, a my ___ w Warszawie.",
+      "meaning": {
+        "en": "They study in Kraków, and we study in Warsaw."
+      },
+      "gaps": [
+        [
+          "uczą się"
+        ],
+        [
+          "uczymy się"
+        ]
+      ],
+      "distractors": [
+        "uczy się"
+      ],
+      "items": [
+        "oni",
+        "uczyc-sie-ucza",
+        "w-krakowie",
+        "a",
+        "my",
+        "uczyc-sie-uczymy",
+        "w-warszawie"
+      ]
+    }
+  ]
+}

@@ -56,9 +56,15 @@ class PolishReference {
             .mapNotNull { tag -> tag.firstOrNull()?.toString()?.takeIf { it in setOf("m", "f", "n") } }
             .toSet()
 
-    /** The reference forms of [verb] for [person]; empty when the reference does not know the verb. */
-    fun conjugation(verb: String, person: Person): Set<String> =
-        synthesizer.synthesize(AnalyzedToken(verb, null, verb), "verb:fin:${person.tag}:.*", true).toSet()
+    /**
+     * The reference forms of [verb] for [person]; empty when the reference does not know the verb.
+     * A verb with *się* (*uczyć się*) is looked up without it, and *się* follows each form (*uczę się*).
+     */
+    fun conjugation(verb: String, person: Person): Set<String> {
+        val base = verb.removeSuffix(REFLEXIVE)
+        val forms = synthesizer.synthesize(AnalyzedToken(base, null, base), "verb:fin:${person.tag}:.*", true).toSet()
+        return if (base == verb) forms else forms.map { it + REFLEXIVE }.toSet()
+    }
 
     /**
      * What the reference's grammar rules find in [text]. Many rules stay silent about the last
@@ -75,5 +81,6 @@ class PolishReference {
     private companion object {
         val tags = Regex("</?suggestion>")
         const val SENTENCE_ENDS = ".?!…"
+        const val REFLEXIVE = " się"
     }
 }

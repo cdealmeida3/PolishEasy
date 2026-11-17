@@ -1,0 +1,426 @@
+{
+  "id": "kpk1-l04-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Kto to jest? To nowy student",
+    "meaning": {
+      "en": "Who is it? A new student"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l04-a2-t01",
+      "before": "kpk1-l04-a2-e01",
+      "title": {
+        "en": "I think it is a new student"
+      },
+      "body": {
+        "en": "*Myślę, że…* is \"I think that…\": *myślę, że to jest nowy student*. *Chyba* is softer, \"probably\": *to chyba nowy student*. *Czy wiesz, kto to jest?* asks a friend \"do you know who it is?\", and *ciekawe, czy…* is \"I wonder if…\"."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a2-e01",
+      "prompt": "myślę",
+      "options": [
+        {
+          "en": "I know"
+        },
+        {
+          "en": "I remember"
+        },
+        {
+          "en": "I think"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "myslec-mysle"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a2-e02",
+      "prompt": "że",
+      "options": [
+        {
+          "en": "that (myślę, że…)"
+        },
+        {
+          "en": "or"
+        },
+        {
+          "en": "because"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-a2-e03",
+      "prompt": {
+        "en": "I think that it is a new student"
+      },
+      "acceptedAnswers": [
+        "myślę, że to jest nowy student",
+        "myślę, że to nowy student"
+      ],
+      "distractors": [
+        "wiem",
+        "stary"
+      ],
+      "items": [
+        "myslec-mysle",
+        "ze",
+        "to",
+        "byc-jest",
+        "nowy",
+        "student"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a2-e04",
+      "prompt": "wiesz",
+      "options": [
+        {
+          "en": "you have (one friend)"
+        },
+        {
+          "en": "you know (one friend)"
+        },
+        {
+          "en": "you speak (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wiedziec-wiesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a2-e05",
+      "prompt": "ciekawy",
+      "options": [
+        {
+          "en": "nice, friendly (about a person) (sympatyczny, sympatyczna, sympatyczne)"
+        },
+        {
+          "en": "old (stary, stara, stare)"
+        },
+        {
+          "en": "interesting, curious (ciekawy, ciekawa, ciekawe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ciekawy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-a2-e06",
+      "text": "czy wiesz, kto to jest?",
+      "meaning": {
+        "en": "do you know who it is? (one friend)"
+      },
+      "distractors": [
+        "czy wiesz, co to jest?",
+        "czy pamiętasz, kto to jest?"
+      ],
+      "items": [
+        "czy",
+        "wiedziec-wiesz",
+        "kto-to-jest"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a2-e07",
+      "prompt": "chyba",
+      "options": [
+        {
+          "en": "probably, I guess"
+        },
+        {
+          "en": "of course"
+        },
+        {
+          "en": "unfortunately"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chyba"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a2-e08",
+      "prompt": "żart",
+      "options": [
+        {
+          "en": "a word"
+        },
+        {
+          "en": "a joke"
+        },
+        {
+          "en": "a question"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zart"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a2-e09",
+      "prompt": "słowo",
+      "options": [
+        {
+          "en": "a joke"
+        },
+        {
+          "en": "a noun"
+        },
+        {
+          "en": "a word"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "slowo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-a2-e10",
+      "text": "to jest żart",
+      "meaning": {
+        "en": "it's a joke"
+      },
+      "distractors": [
+        "to jest słowo",
+        "to jest pytanie"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "zart"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-a2-e11",
+      "prompt": "masz rację",
+      "options": [
+        {
+          "en": "you're right (one friend)"
+        },
+        {
+          "en": "you have time (one friend)"
+        },
+        {
+          "en": "you're welcome"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "masz-racje"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-a2-e12",
+      "prompt": {
+        "en": "you're right, it is a joke"
+      },
+      "acceptedAnswers": [
+        "masz rację, to jest żart",
+        "masz rację, to żart"
+      ],
+      "distractors": [
+        "słowo",
+        "mam"
+      ],
+      "items": [
+        "masz-racje",
+        "to",
+        "byc-jest",
+        "zart"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-a2-e13",
+      "text": "To ___ nowy student. Ciekawe, czy jest z Polski.",
+      "meaning": {
+        "en": "It's probably a new student. I wonder if he is from Poland."
+      },
+      "gaps": [
+        [
+          "chyba"
+        ]
+      ],
+      "distractors": [
+        "tylko",
+        "bardzo"
+      ],
+      "items": [
+        "to",
+        "chyba",
+        "nowy",
+        "student",
+        "ciekawy",
+        "czy",
+        "byc-jest",
+        "z-polski"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l04-a2-e14",
+      "prompt": {
+        "en": "I think that it is a joke"
+      },
+      "acceptedAnswers": [
+        "myślę, że to jest żart",
+        "myślę, że to żart"
+      ],
+      "items": [
+        "myslec-mysle",
+        "ze",
+        "to",
+        "byc-jest",
+        "zart"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-a2-e15",
+      "acceptedAnswers": [
+        "to jest ciekawe słowo"
+      ],
+      "meaning": {
+        "en": "it is an interesting word"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "ciekawy",
+        "slowo"
+      ],
+      "readingAnswers": [
+        "to ciekawe słowo",
+        "to jest interesujące słowo",
+        "to interesujące słowo"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l04-a2-e16",
+      "pairs": [
+        {
+          "polish": "myślę",
+          "meaning": {
+            "en": "I think"
+          }
+        },
+        {
+          "polish": "chyba",
+          "meaning": {
+            "en": "probably"
+          }
+        },
+        {
+          "polish": "żart",
+          "meaning": {
+            "en": "a joke"
+          }
+        },
+        {
+          "polish": "słowo",
+          "meaning": {
+            "en": "a word"
+          }
+        },
+        {
+          "polish": "masz rację",
+          "meaning": {
+            "en": "you're right"
+          }
+        }
+      ],
+      "items": [
+        "myslec-mysle",
+        "chyba",
+        "zart",
+        "slowo",
+        "masz-racje"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-a2-e17",
+      "acceptedAnswers": [
+        "nie wiem, ale chyba tak"
+      ],
+      "meaning": {
+        "en": "I don't know, but I guess so"
+      },
+      "items": [
+        "nie-wiem",
+        "ale",
+        "chyba",
+        "tak"
+      ],
+      "readingAnswers": [
+        "nie wiem, chyba tak"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l04-a2-e18",
+      "lines": [
+        "Cześć! Co słychać?",
+        "Wszystko dobrze. A u ciebie?",
+        "Też dobrze. Czy wiesz, kto to jest?",
+        "Nie wiem, ale myślę, że to jest nowy student."
+      ],
+      "meaning": {
+        "en": "Two classmates meet in the corridor."
+      },
+      "items": [
+        "czesc",
+        "co-slychac",
+        "wszystko-dobrze",
+        "a-u-ciebie",
+        "tez",
+        "dobrze",
+        "czy",
+        "wiedziec-wiesz",
+        "kto-to-jest",
+        "nie-wiem",
+        "ale",
+        "myslec-mysle",
+        "ze",
+        "to",
+        "byc-jest",
+        "nowy",
+        "student"
+      ]
+    }
+  ]
+}

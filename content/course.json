@@ -6,7 +6,8 @@
     "kpk1/lesson-00/items.json",
     "kpk1/lesson-01/items.json",
     "kpk1/lesson-02/items.json",
-    "kpk1/lesson-03/items.json"
+    "kpk1/lesson-03/items.json",
+    "kpk1/lesson-04/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -22,7 +23,8 @@
     "kpk1/chats/in-class.json",
     "kpk1/chats/your-details.json",
     "kpk1/chats/catching-up.json",
-    "kpk1/chats/on-the-desk.json"
+    "kpk1/chats/on-the-desk.json",
+    "kpk1/chats/new-student.json"
   ],
   "levels": [
     {
@@ -275,7 +277,28 @@
               "koniugacja -ę, -isz/-ysz"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-04/section-a1.json",
+            "kpk1/lesson-04/section-a2.json",
+            "kpk1/lesson-04/section-b1.json",
+            "kpk1/lesson-04/section-b2.json",
+            "kpk1/lesson-04/section-b3.json",
+            "kpk1/lesson-04/section-c1.json",
+            "kpk1/lesson-04/section-c2.json",
+            "kpk1/lesson-04/section-c3.json",
+            "kpk1/lesson-04/section-c4.json",
+            "kpk1/lesson-04/section-g.json"
+          ],
+          "lookUp": [
+            "myslec-mysle",
+            "ciekawy",
+            "chyba",
+            "zart",
+            "slowo",
+            "masz-racje",
+            "konczyc-koncze",
+            "slyszec-slysze"
+          ]
         },
         {
           "id": "kpk1-l05",

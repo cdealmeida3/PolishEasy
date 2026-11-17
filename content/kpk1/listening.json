@@ -1198,6 +1198,335 @@
         11,
         11
       ]
+    },
+    {
+      "type": "true_false",
+      "id": "l04-058-1",
+      "track": 58,
+      "statement": "Wszystko jest w porządku.",
+      "meaning": {
+        "en": "Everything is all right."
+      },
+      "answer": true,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l04-058-2",
+      "track": 58,
+      "question": "Kto to jest?",
+      "meaning": {
+        "en": "Who is it?"
+      },
+      "options": [
+        "Chyba nowy student.",
+        "Nowy lektor.",
+        "Kolega z pracy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l04-059-1",
+      "track": 59,
+      "statement": "Pierwsze słowo jest po hiszpańsku.",
+      "meaning": {
+        "en": "The first word is in Spanish."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l04-059-2",
+      "track": 59,
+      "question": "Jakie języki zna student z Francji?",
+      "meaning": {
+        "en": "What languages does the student from France know?"
+      },
+      "options": [
+        "Francuski i trochę polski.",
+        "Hiszpański i polski.",
+        "Japoński i francuski."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l04-059-3",
+      "track": 59,
+      "statement": "Dziewczyna jest z Japonii i mówi po japońsku.",
+      "meaning": {
+        "en": "The girl is from Japan and speaks Japanese."
+      },
+      "answer": true,
+      "lines": [
+        8,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l04-059-4",
+      "track": 59,
+      "question": "Gdzie oni teraz mieszkają?",
+      "meaning": {
+        "en": "Where do they live now?"
+      },
+      "options": [
+        "W Krakowie.",
+        "W Paryżu.",
+        "W Warszawie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        11,
+        15
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l04-059-5",
+      "track": 59,
+      "statement": "Oni są w jednej grupie.",
+      "meaning": {
+        "en": "They are in one group."
+      },
+      "answer": true,
+      "lines": [
+        16,
+        19
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l04-060-1",
+      "track": 60,
+      "statement": "Dziewczyna jest dziś smutna.",
+      "meaning": {
+        "en": "The girl is sad today."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l04-060-2",
+      "track": 60,
+      "question": "Jaki jest Adam?",
+      "meaning": {
+        "en": "What is Adam like?"
+      },
+      "options": [
+        "Wysoki i wysportowany.",
+        "Niski i leniwy.",
+        "Gruby i smutny."
+      ],
+      "correctOption": 0,
+      "lines": [
+        11,
+        13
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l04-060-3",
+      "track": 60,
+      "statement": "Adam mówi trochę po japońsku.",
+      "meaning": {
+        "en": "Adam speaks a little Japanese."
+      },
+      "answer": true,
+      "lines": [
+        14,
+        15
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l04-060-4",
+      "track": 60,
+      "question": "Jaki jest problem?",
+      "meaning": {
+        "en": "What is the problem?"
+      },
+      "options": [
+        "Adam ma dziewczynę.",
+        "Adam jest chory.",
+        "Adam nie mówi po polsku."
+      ],
+      "correctOption": 0,
+      "lines": [
+        16,
+        17
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l04-061-1",
+      "track": 61,
+      "question": "Jakie jest pierwsze słowo?",
+      "meaning": {
+        "en": "What is the first word?"
+      },
+      "options": [
+        "pracowity",
+        "leniwy",
+        "wesoły"
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l04-061-2",
+      "track": 61,
+      "question": "Jakie jest ostatnie słowo?",
+      "meaning": {
+        "en": "What is the last word?"
+      },
+      "acceptedAnswers": [
+        "wysportowany"
+      ],
+      "lines": [
+        17,
+        17
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l04-062-1",
+      "track": 62,
+      "question": "Jakie jest pierwsze słowo?",
+      "meaning": {
+        "en": "What is the first word?"
+      },
+      "options": [
+        "agresywny",
+        "aktywny",
+        "ambitny"
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l04-062-2",
+      "track": 62,
+      "question": "Jakie jest ostatnie słowo?",
+      "meaning": {
+        "en": "What is the last word?"
+      },
+      "acceptedAnswers": [
+        "kreatywny"
+      ],
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l04-063-1",
+      "track": 63,
+      "statement": "To jest przerwa.",
+      "meaning": {
+        "en": "It is a break."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l04-063-2",
+      "track": 63,
+      "question": "Kto to jest?",
+      "meaning": {
+        "en": "Who is it?"
+      },
+      "options": [
+        "Lektorka języka hiszpańskiego.",
+        "Nowa studentka z Polski.",
+        "Koleżanka z grupy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l04-063-3",
+      "track": 63,
+      "statement": "Jedna osoba nie wie, czy lektorka jest miła.",
+      "meaning": {
+        "en": "One person does not know if the teacher is nice."
+      },
+      "answer": true,
+      "lines": [
+        6,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l04-063-4",
+      "track": 63,
+      "question": "Jak ona ma na imię?",
+      "meaning": {
+        "en": "What is her name?"
+      },
+      "options": [
+        "Chyba Maria.",
+        "Na pewno Ewa.",
+        "Chyba Anna."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l04-063-5",
+      "track": 63,
+      "statement": "Lektorka jest z Hiszpanii.",
+      "meaning": {
+        "en": "The teacher is from Spain."
+      },
+      "answer": true,
+      "lines": [
+        11,
+        13
+      ]
     }
   ]
 }

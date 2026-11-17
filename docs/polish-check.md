@@ -27,7 +27,7 @@ The engine lists the Polish (`polishContent` in `PolishContent.kt`): each Item's
 ## The passes
 
 1. **Dictionary.** Every word of every sentence must be a form in the reference dictionary. In a Tip, which is written in English, every word of more than two letters that has a Polish letter (*ą ć ę ł ń ó ś ź ż*) must be.
-2. **Verb forms.** Wherever the content says a form is the form of a verb for a person, the form is compared with the reference conjugation of that verb. The content says so in three places: an Accepted Answer of a conjugation Exercise, a form in a Tip's table, and an Item that a conjugation Exercise practises and accepts as its answer.
+2. **Verb forms.** Wherever the content says a form is the form of a verb for a person, the form is compared with the reference conjugation of that verb. The content says so in three places: an Accepted Answer of a conjugation Exercise, a form in a Tip's table, and an Item that a conjugation Exercise practises and accepts as its answer. A verb with *się* (*uczyć się*) is looked up without it, and its forms are compared with *się* after them (*uczę się*).
 3. **Grammar rules.** Every sentence goes through the reference's grammar rules, and one rule written here, `PRONOUN_VERB`: a pronoun directly followed by a word that can only be a verb of another person (*my jestem tutaj*).
 4. **Review.** Every sentence, with its English, and every Tip must have a recorded verdict from a reviewer who did not draft it. A sentence with no verdict is a problem. A verdict with a finding is a problem.
 

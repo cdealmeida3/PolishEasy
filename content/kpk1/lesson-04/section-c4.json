@@ -1,0 +1,420 @@
+{
+  "id": "kpk1-l04-c4",
+  "section": {
+    "letter": "C",
+    "heading": "Jaki on jest?",
+    "meaning": {
+      "en": "What is he like?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l04-c4-t01",
+      "before": "kpk1-l04-c4-e01",
+      "title": {
+        "en": "I think so, I am sure"
+      },
+      "body": {
+        "en": "*Myślę, że tak* is \"I think so\", and *myślę, że nie* is \"I don't think so\". *Nie wiem, czy…* is \"I don't know if…\". *Jestem pewny, że…* is \"I am sure that…\", and a woman says *jestem pewna*. *Na pewno* is \"certainly\"."
+      },
+      "kind": "zapamietaj"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c4-e01",
+      "prompt": "pewny",
+      "options": [
+        {
+          "en": "sure, certain (pewny, pewna, pewne)"
+        },
+        {
+          "en": "nice, kind (miły, miła, miłe)"
+        },
+        {
+          "en": "tired (zmęczony, zmęczona, zmęczone)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pewny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c4-e02",
+      "prompt": "na pewno",
+      "options": [
+        {
+          "en": "probably, I guess"
+        },
+        {
+          "en": "certainly, for sure"
+        },
+        {
+          "en": "unfortunately"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-pewno"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c4-e03",
+      "prompt": "miły",
+      "options": [
+        {
+          "en": "sure, certain (pewny, pewna, pewne)"
+        },
+        {
+          "en": "attractive (atrakcyjny, atrakcyjna, atrakcyjne)"
+        },
+        {
+          "en": "nice, kind (miły, miła, miłe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "mily"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-c4-e04",
+      "prompt": {
+        "en": "I am sure that she is nice (a man speaking)"
+      },
+      "acceptedAnswers": [
+        "jestem pewny, że ona jest miła"
+      ],
+      "distractors": [
+        "pewna",
+        "miły"
+      ],
+      "items": [
+        "byc-jestem",
+        "pewny",
+        "ze",
+        "ona",
+        "byc-jest",
+        "mily"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-c4-e05",
+      "text": "myślę, że tak",
+      "meaning": {
+        "en": "I think so"
+      },
+      "distractors": [
+        "myślę, że nie",
+        "wiem, że tak"
+      ],
+      "items": [
+        "myslec-mysle",
+        "ze",
+        "tak"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-c4-e06",
+      "text": "nie wiem, czy on jest miły",
+      "meaning": {
+        "en": "I don't know if he is nice"
+      },
+      "distractors": [
+        "wiem, że on jest miły",
+        "nie wiem, kto to jest"
+      ],
+      "items": [
+        "nie-wiem",
+        "czy",
+        "on",
+        "byc-jest",
+        "mily"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c4-e07",
+      "prompt": "dziś",
+      "options": [
+        {
+          "en": "today"
+        },
+        {
+          "en": "tomorrow"
+        },
+        {
+          "en": "here"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dzis"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c4-e08",
+      "prompt": "atrakcyjny",
+      "options": [
+        {
+          "en": "spontaneous (spontaniczny, spontaniczna, spontaniczne)"
+        },
+        {
+          "en": "attractive (atrakcyjny, atrakcyjna, atrakcyjne)"
+        },
+        {
+          "en": "ambitious (ambitny, ambitna, ambitne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "atrakcyjny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c4-e09",
+      "prompt": "spontaniczny",
+      "options": [
+        {
+          "en": "attractive (atrakcyjny, atrakcyjna, atrakcyjne)"
+        },
+        {
+          "en": "stressed (zestresowany, zestresowana, zestresowane)"
+        },
+        {
+          "en": "spontaneous (spontaniczny, spontaniczna, spontaniczne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "spontaniczny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c4-e10",
+      "prompt": "ambitny",
+      "options": [
+        {
+          "en": "ambitious (ambitny, ambitna, ambitne)"
+        },
+        {
+          "en": "active (aktywny, aktywna, aktywne)"
+        },
+        {
+          "en": "stressed (zestresowany, zestresowana, zestresowane)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ambitny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c4-e11",
+      "prompt": "zestresowany",
+      "options": [
+        {
+          "en": "tired (zmęczony, zmęczona, zmęczone)"
+        },
+        {
+          "en": "stressed (zestresowany, zestresowana, zestresowane)"
+        },
+        {
+          "en": "ambitious (ambitny, ambitna, ambitne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zestresowany"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-c4-e12",
+      "text": "Jestem ___, że on jest ___.",
+      "meaning": {
+        "en": "I am sure (a woman speaking) that he is ambitious."
+      },
+      "gaps": [
+        [
+          "pewna"
+        ],
+        [
+          "ambitny"
+        ]
+      ],
+      "distractors": [
+        "pewny",
+        "ambitna"
+      ],
+      "items": [
+        "byc-jestem",
+        "pewny",
+        "ze",
+        "on",
+        "byc-jest",
+        "ambitny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l04-c4-e13",
+      "prompt": {
+        "en": "he is certainly ambitious"
+      },
+      "acceptedAnswers": [
+        "on jest na pewno ambitny",
+        "on na pewno jest ambitny",
+        "na pewno on jest ambitny"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "na-pewno",
+        "ambitny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-c4-e14",
+      "acceptedAnswers": [
+        "dziś jestem zestresowany"
+      ],
+      "meaning": {
+        "en": "I am stressed today (a man speaking)"
+      },
+      "items": [
+        "dzis",
+        "byc-jestem",
+        "zestresowany"
+      ],
+      "readingAnswers": [
+        "jestem dziś zestresowany",
+        "ja jestem dziś zestresowany"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l04-c4-e15",
+      "pairs": [
+        {
+          "polish": "atrakcyjny",
+          "meaning": {
+            "en": "attractive"
+          }
+        },
+        {
+          "polish": "spontaniczny",
+          "meaning": {
+            "en": "spontaneous"
+          }
+        },
+        {
+          "polish": "ambitny",
+          "meaning": {
+            "en": "ambitious"
+          }
+        },
+        {
+          "polish": "zestresowany",
+          "meaning": {
+            "en": "stressed"
+          }
+        },
+        {
+          "polish": "miły",
+          "meaning": {
+            "en": "kind"
+          }
+        },
+        {
+          "polish": "na pewno",
+          "meaning": {
+            "en": "certainly"
+          }
+        }
+      ],
+      "items": [
+        "atrakcyjny",
+        "spontaniczny",
+        "ambitny",
+        "zestresowany",
+        "mily",
+        "na-pewno"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l04-c4-e16",
+      "lines": [
+        "Wiesz, kto to jest?",
+        "Tak, to jest Ewa, nowa studentka.",
+        "Myślę, że ona jest bardzo miła.",
+        "Nie wiem, czy jest miła, ale na pewno jest atrakcyjna i spontaniczna."
+      ],
+      "meaning": {
+        "en": "Two classmates talk about a new student."
+      },
+      "statements": [
+        {
+          "text": "Ewa to nowa studentka.",
+          "meaning": {
+            "en": "Ewa is a new student."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa jest stara.",
+          "meaning": {
+            "en": "Ewa is old."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa jest spontaniczna.",
+          "meaning": {
+            "en": "Ewa is spontaneous."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "wiedziec-wiesz",
+        "kto-to-jest",
+        "tak",
+        "to",
+        "byc-jest",
+        "ewa",
+        "nowy",
+        "studentka",
+        "myslec-mysle",
+        "ze",
+        "ona",
+        "bardzo",
+        "mily",
+        "nie-wiem",
+        "czy",
+        "ale",
+        "na-pewno",
+        "atrakcyjny",
+        "i",
+        "spontaniczny"
+      ]
+    }
+  ]
+}

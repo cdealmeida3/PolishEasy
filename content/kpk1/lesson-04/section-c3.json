@@ -1,0 +1,390 @@
+{
+  "id": "kpk1-l04-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Jaki on jest?",
+    "meaning": {
+      "en": "What is he like?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l04-c3-t01",
+      "before": "kpk1-l04-c3-e01",
+      "title": {
+        "en": "International words"
+      },
+      "body": {
+        "en": "Many Polish adjectives are international: *aktywny*, *energiczny*, *inteligentny*, *romantyczny*, *kreatywny*. They end in *-y*, so they go like *nowy*: *ona jest inteligentna*, *to dziecko jest aktywne*. *Zmęczony* is tired."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c3-e01",
+      "prompt": "czysty",
+      "options": [
+        {
+          "en": "dirty (brudny, brudna, brudne)"
+        },
+        {
+          "en": "clean (czysty, czysta, czyste)"
+        },
+        {
+          "en": "healthy (zdrowy, zdrowa, zdrowe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czysty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c3-e02",
+      "prompt": "brudny",
+      "options": [
+        {
+          "en": "clean (czysty, czysta, czyste)"
+        },
+        {
+          "en": "ugly (brzydki, brzydka, brzydkie)"
+        },
+        {
+          "en": "dirty (brudny, brudna, brudne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "brudny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-c3-e03",
+      "text": "ten kubek jest brudny",
+      "meaning": {
+        "en": "this mug is dirty"
+      },
+      "distractors": [
+        "ten kubek jest czysty",
+        "ten kubek jest duży"
+      ],
+      "items": [
+        "ten",
+        "kubek",
+        "byc-jest",
+        "brudny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c3-e04",
+      "prompt": "zmęczony",
+      "options": [
+        {
+          "en": "tired (zmęczony, zmęczona, zmęczone)"
+        },
+        {
+          "en": "ill (chory, chora, chore)"
+        },
+        {
+          "en": "sad (smutny, smutna, smutne)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zmeczony"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-c3-e05",
+      "prompt": {
+        "en": "I am tired"
+      },
+      "acceptedAnswers": [
+        "jestem zmęczony",
+        "jestem zmęczona"
+      ],
+      "distractors": [
+        "zmęczona",
+        "jest"
+      ],
+      "items": [
+        "byc-jestem",
+        "zmeczony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c3-e06",
+      "prompt": "aktywny",
+      "options": [
+        {
+          "en": "ambitious (ambitny, ambitna, ambitne)"
+        },
+        {
+          "en": "active (aktywny, aktywna, aktywne)"
+        },
+        {
+          "en": "energetic (energiczny, energiczna, energiczne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "aktywny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c3-e07",
+      "prompt": "energiczny",
+      "options": [
+        {
+          "en": "active (aktywny, aktywna, aktywne)"
+        },
+        {
+          "en": "intelligent (inteligentny, inteligentna, inteligentne)"
+        },
+        {
+          "en": "energetic (energiczny, energiczna, energiczne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "energiczny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c3-e08",
+      "prompt": "inteligentny",
+      "options": [
+        {
+          "en": "intelligent (inteligentny, inteligentna, inteligentne)"
+        },
+        {
+          "en": "creative (kreatywny, kreatywna, kreatywne)"
+        },
+        {
+          "en": "romantic (romantyczny, romantyczna, romantyczne)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "inteligentny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c3-e09",
+      "prompt": "romantyczny",
+      "options": [
+        {
+          "en": "intelligent (inteligentny, inteligentna, inteligentne)"
+        },
+        {
+          "en": "romantic (romantyczny, romantyczna, romantyczne)"
+        },
+        {
+          "en": "nice, friendly (about a person) (sympatyczny, sympatyczna, sympatyczne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "romantyczny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l04-c3-e10",
+      "prompt": "kreatywny",
+      "options": [
+        {
+          "en": "romantic (romantyczny, romantyczna, romantyczne)"
+        },
+        {
+          "en": "active (aktywny, aktywna, aktywne)"
+        },
+        {
+          "en": "creative (kreatywny, kreatywna, kreatywne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kreatywny"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l04-c3-e11",
+      "pairs": [
+        {
+          "polish": "aktywny",
+          "meaning": {
+            "en": "active"
+          }
+        },
+        {
+          "polish": "energiczny",
+          "meaning": {
+            "en": "energetic"
+          }
+        },
+        {
+          "polish": "inteligentny",
+          "meaning": {
+            "en": "intelligent"
+          }
+        },
+        {
+          "polish": "romantyczny",
+          "meaning": {
+            "en": "romantic"
+          }
+        },
+        {
+          "polish": "kreatywny",
+          "meaning": {
+            "en": "creative"
+          }
+        }
+      ],
+      "items": [
+        "aktywny",
+        "energiczny",
+        "inteligentny",
+        "romantyczny",
+        "kreatywny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l04-c3-e12",
+      "text": "Ten plecak jest ___, a ta torba jest ___.",
+      "meaning": {
+        "en": "This backpack is clean, and this bag is dirty."
+      },
+      "gaps": [
+        [
+          "czysty"
+        ],
+        [
+          "brudna"
+        ]
+      ],
+      "distractors": [
+        "czysta",
+        "brudny"
+      ],
+      "items": [
+        "ten",
+        "plecak",
+        "byc-jest",
+        "czysty",
+        "a",
+        "ta",
+        "torba",
+        "brudny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l04-c3-e13",
+      "prompt": {
+        "en": "she is intelligent and creative"
+      },
+      "acceptedAnswers": [
+        "ona jest inteligentna i kreatywna",
+        "ona jest kreatywna i inteligentna"
+      ],
+      "items": [
+        "ona",
+        "byc-jest",
+        "inteligentny",
+        "i",
+        "kreatywny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-c3-e14",
+      "acceptedAnswers": [
+        "on jest bardzo romantyczny"
+      ],
+      "meaning": {
+        "en": "he is very romantic"
+      },
+      "items": [
+        "on",
+        "byc-jest",
+        "bardzo",
+        "romantyczny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l04-c3-e15",
+      "text": "to dziecko jest aktywne",
+      "meaning": {
+        "en": "this child is active"
+      },
+      "distractors": [
+        "to dziecko jest zmęczone",
+        "to dziecko jest chore"
+      ],
+      "items": [
+        "to",
+        "dziecko",
+        "byc-jest",
+        "aktywny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l04-c3-e16",
+      "acceptedAnswers": [
+        "jesteś zmęczona?"
+      ],
+      "meaning": {
+        "en": "are you tired? (one friend, a woman)"
+      },
+      "items": [
+        "byc-jestes",
+        "zmeczony"
+      ],
+      "readingAnswers": [
+        "czy jesteś zmęczona?",
+        "czy ty jesteś zmęczona?",
+        "ty jesteś zmęczona?"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l04-c3-e17",
+      "prompt": {
+        "en": "he is energetic and active"
+      },
+      "acceptedAnswers": [
+        "on jest energiczny i aktywny",
+        "on jest aktywny i energiczny"
+      ],
+      "distractors": [
+        "energiczna",
+        "ale"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "energiczny",
+        "i",
+        "aktywny"
+      ]
+    }
+  ]
+}
