@@ -39,6 +39,8 @@ internal data class PracticeFile(
     val genders: Map<String, String> = emptyMap(),
     /** The Item that says "my" with a noun of each gender: "m", "f" or "n", and its id. */
     val my: Map<String, String> = emptyMap(),
+    /** What each small letter is called when a word is spelled aloud: the letter, and its name. */
+    val letters: Map<String, String> = emptyMap(),
 )
 
 @Serializable
@@ -183,6 +185,7 @@ internal class ReadContent(
             }.toMap(),
             listening = listening,
             chats = chats.map { it.value },
+            letterNames = practice?.letters.orEmpty(),
         )
     }
 
@@ -346,6 +349,12 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         }
         practice.genders.values.toSet().filter { Gender.of(it) != null && it !in practice.my }.forEach { gender ->
             problems += ContentProblem(file, null, "Nouns are given the gender \"$gender\", and no word for \"my\" is given for it")
+        }
+        practice.letters.forEach { (letter, name) ->
+            if (letter.length != 1 || !letter[0].isLetter() || letter != letter.lowercase(Locale.ROOT)) {
+                problems += ContentProblem(file, null, "\"$letter\" is given a name to spell it by, and it is not one small letter")
+            }
+            if (name.isBlank()) problems += ContentProblem(file, null, "The letter \"$letter\" is given a blank name")
         }
     }
     problems += classAudioProblems(content)

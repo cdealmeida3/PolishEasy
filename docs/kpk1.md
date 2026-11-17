@@ -39,7 +39,7 @@ Book pages 10 to 17, recordings 004 to 028. Nine parts, 150 Exercises and 36 new
 - **F** *Liczebniki 0–10*, in two (14 each): the numbers again, now in sums with *plus*, *minus* and *równa się*.
 - *Ćwiczenia* (16): the book's kinds again (pairs, gaps, dialogues in order, a heard text true or false) over the whole chapter. It introduces nothing.
 
-There are 18 listening tasks on the chapter's 12 dialogue recordings (004, 005, 013, 015 to 018, 020 to 023, and 027 from *Powtórzenie*), and two Chats: *At the front desk* (Pan Jan, formal: where the toilet and the coffee are, and asking him to repeat) and *In class* (Kasia, informal: names, *twój* and *mój*, sums).
+There are 18 listening tasks on the chapter's 12 dialogue recordings (004, 005, 013, 015 to 018, 020 to 023, and 027 from *Powtórzenie*), two Games, **Register sort** (sort the learned phrases into O, N and U against the clock) and the **Spelled aloud** way of Spell it (hear the letters' names, as section B spells a word, and spell it with tiles), and two Chats: *At the front desk* (Pan Jan, formal: where the toilet and the coffee are, and asking him to repeat) and *In class* (Kasia, informal: names, *twój* and *mój*, sums).
 
 It gives the later chapters:
 

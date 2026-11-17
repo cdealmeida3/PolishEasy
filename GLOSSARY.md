@@ -121,6 +121,10 @@ _Avoid_: Mini-game, activity, Exercise (which belongs to a Daily Set)
 The Game of a messenger conversation with one person, from a script written for the app. The Learner replies by choosing, typing or saying it; a reply in the wrong register is put right with a note.
 _Avoid_: Dialogue (the book's printed dialogues), conversation Exercise
 
+**Register sort**:
+The Game of sorting learned phrases by Register, against the clock: to *pan* or *pani* (O), to a friend (N) or to anyone (U).
+_Avoid_: Formality quiz
+
 **Round**:
 One play of a Game from start to result. A Round left unfinished is not kept.
 _Avoid_: Match, session, level

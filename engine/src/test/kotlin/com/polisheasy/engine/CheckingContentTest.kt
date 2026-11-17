@@ -317,6 +317,25 @@ internal class CheckingContentTest {
         assertOnlyProblem(withGenders(mapOf(item to "n"), mapOf("m" to item)), "practice/practice.json", null, "\"n\"")
     }
 
+    private fun withLetters(letters: Map<String, String>) = valid
+        .withIndex { it.copy(practice = "practice/practice.json") }
+        .withFile("practice/practice.json", contentJson.encodeToString(PracticeFile(letters = letters)))
+
+    @Test
+    fun `a course that names its letters for spelling aloud passes, and the names are loaded`() {
+        val named = withLetters(mapOf("b" to "be", "ż" to "żet"))
+
+        assertEquals(emptyList(), problems(named))
+        assertEquals(mapOf("b" to "be", "ż" to "żet"), loadCourse(named.files()::read).letterNames)
+    }
+
+    @Test
+    fun `a letter name given to what is not one small letter, or blank, is reported`() {
+        assertOnlyProblem(withLetters(mapOf("B" to "be")), "practice/practice.json", null, "\"B\"")
+        assertOnlyProblem(withLetters(mapOf("sz" to "es zet")), "practice/practice.json", null, "\"sz\"")
+        assertOnlyProblem(withLetters(mapOf("b" to " ")), "practice/practice.json", null, "blank")
+    }
+
     // Pictures
 
     private val pictured = valid.withPictures(PictureEntry("tak", image = "yes.webp"), PictureEntry("nie", glyph = "✗"))

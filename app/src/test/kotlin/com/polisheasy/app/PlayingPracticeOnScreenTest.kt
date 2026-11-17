@@ -11,6 +11,7 @@ import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.hasClickAction
+import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
@@ -34,6 +35,8 @@ import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
 import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.QuickRound
+import com.polisheasy.engine.Register
+import com.polisheasy.engine.RegisterRound
 import com.polisheasy.engine.SpellRound
 import com.polisheasy.engine.InMemoryLearnerProgress
 import com.polisheasy.engine.InMemoryPracticeProgress
@@ -634,6 +637,79 @@ class PlayingPracticeOnScreenTest {
     }
 
     @Test
+    fun `spelled aloud, a word's letters are said by name, and only its meaning is shown once it is whole`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_spell_it)
+        tap(R.string.option_aloud)
+        clips.asked.clear()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        // The letters' names are said in order, and nothing of the word is written.
+        val first = checkNotNull(spelling().word)
+        assertTrue(spelling().aloud)
+        val names = first.spelled.map { name -> Played(checkNotNull(viewModel?.practiceClipOf(name)).path, slow = false) }
+        assertEquals(names, clips.played)
+        screen.onNodeWithText(first.meaning).assertDoesNotExist()
+        shows(R.string.spell_aloud_instruction)
+
+        // Again on the button.
+        clips.asked.clear()
+        screen.onNodeWithContentDescription(text(R.string.spell_aloud_again)).performClick()
+        assertEquals(names, clips.played)
+
+        // Whole, the word is said and its meaning written.
+        clips.asked.clear()
+        first.letters.forEach(::tapLetter)
+        screen.onNodeWithContentDescription(text(R.string.spell_whole, first.polish)).assertIsDisplayed()
+        shows(first.meaning)
+        assertEquals(Played(checkNotNull(viewModel?.practiceClipOf(first.polish)).path, slow = false), clips.played.first())
+    }
+
+    @Test
+    fun `Register sort shows a phrase alone, and a wrong register shows the right one and what it means`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_register_sort)
+        tap(R.string.setup_play)
+
+        // A phrase, with a minute on the clock and a button for each register.
+        val first = checkNotNull(registers().card)
+        shows(first.polish)
+        screen.onNodeWithText(first.meaning).assertDoesNotExist()
+        shows(text(R.string.quick_time, 1, 0))
+        screen.onNodeWithContentDescription(quantity(R.plurals.quick_left, 60)).assertIsDisplayed()
+
+        // Right: the next phrase is there at once, counted under its register.
+        sortInto(first.register)
+        shows(right(1))
+        assertEquals(1, registers().sorted[first.register])
+
+        // Wrong: the register it has and what it means are shown, and nothing more is answered until the Learner moves on.
+        val second = checkNotNull(registers().card)
+        clips.asked.clear()
+        sortInto(registers().registers.first { it != second.register })
+        shows(second.meaning)
+        val said = when (second.register) {
+            Register.FORMAL -> R.string.register_sort_missed_formal
+            Register.INFORMAL -> R.string.register_sort_missed_informal
+            Register.UNIVERSAL -> R.string.register_sort_missed_universal
+        }
+        shows(text(said, second.polish))
+        screen.onNode(hasContentDescription(text(R.string.register_sort_button, second.register.mark, registerButtonWords(second.register), registers().sorted[second.register] ?: 0)) and hasClickAction())
+            .assertIsNotEnabled()
+        assertEquals(listOfNotNull(viewModel?.practiceClipOf(second.polish)?.let { Played(it.path, slow = false) }), clips.played)
+        screen.mainClock.advanceTimeBy(2_000)
+        shows(text(R.string.quick_time, 0, 58))
+        tap(R.string.action_continue)
+
+        // The time runs out: the result is the right answers.
+        screen.mainClock.advanceTimeBy(58_000)
+        screen.waitForIdle()
+        screen.onNodeWithContentDescription(quantity(R.plurals.result_right_sentence, 1)).assertIsDisplayed()
+        showsFirstBest()
+    }
+
+    @Test
     fun `the Quick round runs against a clock, and a wrong answer waits while it runs`() {
         openPracticeOverTheRealCourse()
         openGame(R.string.game_quick_round)
@@ -849,6 +925,23 @@ class PlayingPracticeOnScreenTest {
     private fun spelling(): SpellRound = (viewModel?.screen as Screen.Round).round as SpellRound
 
     private fun quick(): QuickRound = (viewModel?.screen as Screen.Round).round as QuickRound
+
+    private fun registers(): RegisterRound = (viewModel?.screen as Screen.Round).round as RegisterRound
+
+    /** Taps the button of [register], whatever it counts. */
+    private fun sortInto(register: Register) {
+        val count = registers().sorted[register] ?: 0
+        screen.onNode(hasContentDescription(text(R.string.register_sort_button, register.mark, registerButtonWords(register), count)) and hasClickAction())
+            .performClick()
+    }
+
+    private fun registerButtonWords(register: Register): String = text(
+        when (register) {
+            Register.FORMAL -> R.string.register_sort_formal
+            Register.INFORMAL -> R.string.register_sort_informal
+            Register.UNIVERSAL -> R.string.register_sort_universal
+        },
+    )
 
     /** Taps a tile that says [letter] and is not yet in the word. */
     private fun tapLetter(letter: String) = screen.onAllNodes(hasText(letter) and hasClickAction())[0].performScrollTo().performClick()

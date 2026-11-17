@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.key
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -19,6 +20,7 @@ import com.polisheasy.app.ui.components.EmptyTileSlot
 import com.polisheasy.app.ui.components.Instruction
 import com.polisheasy.app.ui.components.Mark
 import com.polisheasy.app.ui.components.PictureFace
+import com.polisheasy.app.ui.components.PlayButton
 import com.polisheasy.app.ui.components.PromptCard
 import com.polisheasy.app.ui.components.RoundStep
 import com.polisheasy.app.ui.components.SpelledWord
@@ -32,14 +34,17 @@ import com.polisheasy.engine.Round
 import com.polisheasy.engine.SpellRound
 
 /**
- * One word of Spell it. Its picture or its meaning is at the top, and under it a slot for each
- * letter. The letters lie mixed as tiles at the bottom; tapped in order they fill the slots. A
- * wrong tile shakes and stays, and is a slip. Whole, the word is said.
+ * One word of Spell it. Its picture or its meaning is at the top, or, spelled aloud, a button that
+ * says its letters' names again; under it a slot for each letter. The letters lie mixed as tiles
+ * at the bottom; tapped in order they fill the slots. A wrong tile shakes and stays, and is a
+ * slip. Whole, the word is said, and its meaning written where it was not shown.
  */
 @Composable
-internal fun SpellItStep(round: SpellRound, say: (String) -> Unit, onMove: (Round) -> Unit) {
+internal fun SpellItStep(round: SpellRound, say: (String) -> Unit, sayAll: (List<String>) -> Unit, onMove: (Round) -> Unit) {
     val word = round.word ?: return
     val given = round.given
+    // Spelled aloud, each word's letters are said as it comes, and again on the button.
+    LaunchedEffect(word.itemId) { if (round.aloud) sayAll(word.spelled) }
     val haptics = rememberAnswerHaptics()
     val next = { onMove(round.next()) }
     Answered(given, next) { say(word.polish) }
@@ -73,10 +78,14 @@ internal fun SpellItStep(round: SpellRound, say: (String) -> Unit, onMove: (Roun
             }
         },
     ) {
-        Instruction(stringResource(R.string.spell_instruction))
+        Instruction(stringResource(if (round.aloud) R.string.spell_aloud_instruction else R.string.spell_instruction))
         Spacer(Modifier.height(Space.l))
         val art = word.picture?.let { artOf(it) }
-        if (art != null) {
+        if (round.aloud) {
+            Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxWidth()) {
+                PlayButton(stringResource(R.string.spell_aloud_again), onClick = { sayAll(word.spelled) })
+            }
+        } else if (art != null) {
             Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxWidth()) {
                 PictureFace(art, Modifier.size(Size.pictureOption), description = word.meaning)
             }
@@ -97,8 +106,8 @@ internal fun SpellItStep(round: SpellRound, say: (String) -> Unit, onMove: (Roun
             },
             mark = given?.let { if (it.correct) Mark.Right else Mark.Missed },
         )
-        // A picture says what the word means only to someone who knows it: the meaning is written once the word is whole.
-        if (art != null && given != null) {
+        // A picture says what the word means only to someone who knows it, and spelled aloud nothing does: the meaning is written once the word is whole.
+        if ((art != null || round.aloud) && given != null) {
             Spacer(Modifier.height(Space.xs))
             Text(
                 word.meaning,

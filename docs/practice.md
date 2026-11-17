@@ -10,7 +10,7 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 - A Round saves nothing but the Best of the way it was played, the way the Game was last played, and one more Round for today. All of it goes to `practice.json` through `PracticeProgress`. Nothing is written to `progress.json`.
 - A Round left unfinished is not kept. There is nothing to resume.
 - The Sound setting is obeyed. A Game that is only listening says it needs sound; the others play without it.
-- Each question is answered once. A right answer moves on by itself after a moment; a wrong one shows the right answer and waits for "Continue". The Quick round is the one Game with a clock: there a right answer brings the next card at once.
+- Each question is answered once. A right answer moves on by itself after a moment; a wrong one shows the right answer and waits for "Continue". The Quick round and Register sort are the Games with a clock: there a right answer brings the next card at once.
 - The Best is kept for each way of playing: its key is the Game's id and the ids of the options chosen, such as `verb-challenge:być:type`. Ids are stable; renaming one loses the Bests saved under it.
 
 ## In the engine
@@ -28,6 +28,7 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 | Mój, moja, moje | `engine/.../MojMojaMoje.kt` |
 | Spell it | `engine/.../SpellIt.kt` |
 | Quick round | `engine/.../QuickRound.kt` |
+| Register sort | `engine/.../RegisterSort.kt` |
 | Listen and tap | `engine/.../ListenAndTap.kt` |
 | Chat, and its scripts | `engine/.../Chat.kt` |
 | Hearing Polish said (`saidAs`) | `engine/.../Speaking.kt` |
@@ -108,11 +109,15 @@ A Game that shows Items side by side uses `Learned.unalike` to leave out any tha
 
 **Spell it** (Words). Opens with four learned Items that can be spelled: one word of small letters, three to nine of them. Ways to play: from the word's Picture or from its meaning; a deck. A Round is up to six words. The word's letters lie mixed as tiles, Polish letters included, never already in order; tapped in order they fill the word's slots. A wrong tile stays and is a slip; where a letter is written twice, either tile of it will do. Whole, the word is said. The result is the words spelled with no slip.
 
+Spelled aloud, a third way to play with sound on, nothing of the word shows: the names of its letters are said one after another, as the book's chapter 1 spells a word (*ka, o, te*), and a button says them again. The Learner spells with the same tiles, and the meaning is written once the word is whole. Only words whose every letter has a named Clip are offered. The names are `letters` in `practice.json`.
+
 **Chat** (Phrases). A messenger conversation with someone, from a script in `content/kpk1/chats/`. Opens with a script whose every Item is learned. Ways to play: the script; reply by choosing from the replies, by typing, or by saying it (only where the phone can hear). The person's lines arrive one at a time, typing first, and are said. Each reply is answered once. A wrong one, often in the wrong register, shows the right one and a gentle note on why, and the chat goes on with the right one. Typed replies are checked like a typed answer against the Accepted Answers of each right reply; a typed or said wrong reply that is in the script gets its note. A right reply may lead to its own next turn, so a chat can branch. The last line stands a moment before the result, which is the replies right first time.
 
 **Quick round** (Words). Opens with six learned Items. A Polish word is shown beside a Picture or a meaning, its own or another word's, and the Learner says "match" or "no match", for 60 seconds or 120. A right answer brings the next card at once. A wrong one shows what the word means and waits for "Continue", while the clock runs, which is also what makes guessing slow. Every word comes round before any comes again. The result is the right answers, and the most is the Best of that time.
 
-The clock is the only one in the app. The engine does not read the time: the screen calls `QuickRound.tick()` once a second, and the Round is finished when no seconds are left. The bar at the top of the Round shows the time left and empties; it moves once a second and nothing loops. When the time runs out the Round ends, even with a wrong answer still showing.
+The clock is the only kind in the app. The engine does not read the time: the screen calls `QuickRound.tick()` (or `RegisterRound.tick()`) once a second, and the Round is finished when no seconds are left. The bar at the top of the Round shows the time left and empties; it moves once a second and nothing loops. When the time runs out the Round ends, even with a wrong answer still showing.
+
+**Register sort** (Phrases). Chapter 1's Game. Opens with six learned Items the content marks with a register, of two registers at least. A phrase is shown alone and the Learner sorts it by who it is said to: "Pan or pani" (O), "A friend" (N) or "Anyone" (U), the last only once a universal phrase is learned. Each button counts what it holds. The meaning is not shown at first, because it often gives the register away. A right answer brings the next phrase at once; a wrong one shows the phrase's register chip and meaning, says it, and waits for "Continue", while the clock runs. It keeps the Quick round's clock, 60 seconds or 120, and every phrase comes round before any comes again. The result is the right answers, and the most is the Best of that time.
 
 ## What Practice needs from the content
 
@@ -121,6 +126,7 @@ The clock is the only one in the app. The engine does not read the time: the scr
 - `realWords`, for Sound gaps. After adding or changing Items, run `./gradlew :polishcheck:checkPolish`: it names any new wrong spelling that is a real word, to add to the list.
 - `genders`, for Mój, moja, moje: the id of each noun Item to sort and `"m"`, `"f"` or `"n"`. List a noun in the form a dictionary gives (*siostra*, not *siostrę*), one word, and only where "my" with it makes sense. The Polish check confirms each gender against the dictionary.
 - `my`: the Item that says "my" for each gender, `{ "m": "moj", "f": "moja", "n": "moje" }`.
+- `letters`: each small letter of the alphabet and its Polish name, `{ "a": "a", "b": "be", "ą": "a z ogonkiem" }`, for Spell it aloud. Each name is a spoken text, so `./gradlew :audio:makeClips` records it; the content check fails on a key that is not one small letter or on a blank name.
 
 A new Unit adds its nouns to `genders`.
 

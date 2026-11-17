@@ -31,6 +31,8 @@ data class Course(
     val listening: List<ListeningTask> = emptyList(),
     /** The conversations of the Chat Game, in the content's order. */
     val chats: List<ChatScript> = emptyList(),
+    /** What each small letter is called when a word is spelled aloud (*b* is *be*), for Spell it. */
+    val letterNames: Map<String, String> = emptyMap(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

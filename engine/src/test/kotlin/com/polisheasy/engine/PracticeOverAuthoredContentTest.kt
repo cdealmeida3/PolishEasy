@@ -306,6 +306,11 @@ class PracticeOverAuthoredContentTest {
                         assertEquals(word.letters.sorted(), word.tiles.sorted(), about)
                         assertTrue(word.polish.length in SpellIt.SHORTEST..SpellIt.LONGEST && ' ' !in word.polish, "$about: ${word.polish}")
                         assertEquals(round.pictures, word.picture != null, "$about: ${word.polish}")
+                        // Spelled aloud, every letter is named, and every name has a Clip.
+                        if (round.aloud) {
+                            assertEquals(word.letters.map { course.letterNames.getValue(it) }, word.spelled, about)
+                            word.spelled.forEach { name -> assertTrue(course.clipFor(name) != null, "$about: no Clip of $name") }
+                        }
                     }
                     // No two words of a Round are given the same way.
                     val given = round.words.map { it.picture ?: it.meaning }
@@ -314,6 +319,27 @@ class PracticeOverAuthoredContentTest {
             }
         }
         assertEquals(GameState.READY, practiceAfter(course.path.size).view().games.single { it.game == Game.SPELL_IT }.state)
+        // Every letter of Polish has a name to be spelled by, so the whole Path can be spelled aloud.
+        assertEquals("aąbcćdeęfghijklłmnńoóprsśtuwyzźż".map { it.toString() }.toSet(), course.letterNames.keys)
+        assertTrue("aloud" in practiceAfter(course.path.size).setup(Game.SPELL_IT).choices[0].options.map { it.id })
+    }
+
+    @Test
+    fun `Register sort sorts only learned phrases the book marks, by the register it marks them with`() {
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            if (practice.view().games.single { it.game == Game.REGISTER_SORT }.state != GameState.READY) return@forEach
+            val round = practice.start(practice.setup(Game.REGISTER_SORT, listOf("seconds-60"))) as RegisterRound
+            val about = "After $days Daily Sets"
+            round.cards.forEach { card ->
+                assertTrue(card.itemId in learned, about)
+                assertEquals(course.itemsById.getValue(card.itemId).register, card.register, about)
+                assertTrue(card.register in round.registers, about)
+            }
+        }
+        val all = practiceAfter(course.path.size).start(practiceAfter(course.path.size).setup(Game.REGISTER_SORT, listOf("seconds-60"))) as RegisterRound
+        assertEquals(Register.entries, all.registers)
     }
 
     @Test

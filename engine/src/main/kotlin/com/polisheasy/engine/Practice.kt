@@ -19,6 +19,8 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     /** A conversation with a person, replied to by choosing, typing or saying. */
     CHAT("chat", GameGroup.PHRASES),
     PHRASE_CHAINS("phrase-chains", GameGroup.PHRASES, fewestWins = true),
+    /** Phrases sorted against the clock by who they are said to: formal, informal or to anyone. */
+    REGISTER_SORT("register-sort", GameGroup.PHRASES),
     VERB_CHALLENGE("verb-challenge", GameGroup.VERBS),
     LISTEN_AND_TAP("listen-and-tap", GameGroup.SOUNDS),
     SOUND_GAPS("sound-gaps", GameGroup.SOUNDS),
@@ -231,7 +233,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, VerbChallenge, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, Numbers).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, VerbChallenge, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, Numbers).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

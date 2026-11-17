@@ -170,4 +170,44 @@ class SpellItTest {
         assertEquals(5, player.practice().setup(Game.SPELL_IT, listOf("meaning")).best)
         assertEquals(null, player.practice().setup(Game.SPELL_IT, listOf("picture")).best)
     }
+
+    /** [wordsCourse] with a name for every letter of its words, each with a Clip, except those in [unsaid]. */
+    private fun spelledCourse(unsaid: Set<String> = emptySet()): Course {
+        val names = "abdeikmoprstyz".toSet().associate { it.toString() to "$it-name" }
+        return wordsCourse.copy(letterNames = names, clips = names.filterKeys { it !in unsaid }.values.map { clip(it) })
+    }
+
+    @Test
+    fun `a word can be spelled aloud, letter by letter, only with sound on and every letter's name said`() {
+        val practice = Player(course = spelledCourse()).completed("w1").practice()
+
+        assertEquals(listOf("picture", "meaning", "aloud"), practice.setup(Game.SPELL_IT).choices[0].options.map { it.id })
+        assertEquals(listOf("picture", "meaning"), practice.setup(Game.SPELL_IT, sound = false).choices[0].options.map { it.id })
+        // With no names for the letters there is nothing to say.
+        assertEquals(listOf("picture", "meaning"), player().completed("w1").practice().setup(Game.SPELL_IT).choices[0].options.map { it.id })
+    }
+
+    @Test
+    fun `spelled aloud, a word shows nothing of itself, and its letters' names are said in order`() {
+        val round = Player(course = spelledCourse()).completed("w1").practice().spell("aloud")
+
+        assertTrue(round.aloud)
+        round.words.forEach { word ->
+            assertEquals(null, word.picture)
+            assertEquals(word.letters.map { "$it-name" }, word.spelled)
+        }
+        // It is played like any other: the right tiles in order make the word whole, and right.
+        assertEquals(true, round.spellWord().given?.correct)
+        assertEquals(false, Player(course = spelledCourse()).completed("w1").practice().spell("meaning").aloud)
+    }
+
+    @Test
+    fun `a word with a letter whose name has no Clip is not spelled aloud`() {
+        // With no Clip for k, w1 leaves pies, dom and bardzo: too few to spell aloud.
+        val few = Player(course = spelledCourse(unsaid = setOf("k"))).completed("w1").practice()
+        assertEquals(listOf("picture", "meaning"), few.setup(Game.SPELL_IT).choices[0].options.map { it.id })
+        // w2 adds ryba (and ptak, which has a k): four words, none of them with a k.
+        val round = Player(course = spelledCourse(unsaid = setOf("k"))).completed("w1", "w2").practice().spell("aloud")
+        assertEquals(setOf("pies", "dom", "bardzo", "ryba"), round.words.map { it.polish }.toSet())
+    }
 }

@@ -61,6 +61,8 @@ import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
 import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.QuickRound
+import com.polisheasy.engine.RegisterRound
+import com.polisheasy.engine.Register
 import com.polisheasy.engine.SpellRound
 import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.ChatRound
@@ -1467,6 +1469,88 @@ class ScreenshotsTest {
         shot("119-quick-meaning")
         screen.mainClock.advanceTimeBy(15_000)
         shot("120-quick-result")
+    }
+
+    @Test
+    fun `Register sort over the real course in the light theme`() = registerSort("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Register sort over the real course in the dark theme`() = registerSort("dark")
+
+    @Test
+    fun `Register sort over the real course at the largest font size`() = atTheLargestFontSize { registerSort("large") }
+
+    /** Register sort: before a Round, a phrase, part of the way through, a wrong answer, and the result. */
+    private fun registerSort(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as RegisterRound
+
+        fun words(register: Register) = app.getString(
+            when (register) {
+                Register.FORMAL -> R.string.register_sort_formal
+                Register.INFORMAL -> R.string.register_sort_informal
+                Register.UNIVERSAL -> R.string.register_sort_universal
+            },
+        )
+
+        fun answer(correctly: Boolean) {
+            val right = checkNotNull(round().card).register
+            val register = if (correctly) right else round().registers.first { it != right }
+            val count = round().sorted[register] ?: 0
+            screen.onNodeWithContentDescription(app.getString(R.string.register_sort_button, register.mark, words(register), count)).performClick()
+        }
+
+        openRealPractice()
+        openGame(R.string.game_register_sort)
+        shot("149-register-setup")
+        tap(R.string.setup_play)
+        shot("150-register-phrase")
+        repeat(5) { answer(correctly = true) }
+        screen.mainClock.advanceTimeBy(18_000)
+        shot("151-register-under-way")
+        answer(correctly = false)
+        shot("152-register-wrong")
+        tap(R.string.action_continue)
+        repeat(3) { answer(correctly = true) }
+        screen.mainClock.advanceTimeBy(45_000)
+        shot("153-register-result")
+    }
+
+    @Test
+    fun `Spell it aloud over the real course in the light theme`() = spellAloud("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Spell it aloud over the real course in the dark theme`() = spellAloud("dark")
+
+    @Test
+    fun `Spell it aloud over the real course at the largest font size`() = atTheLargestFontSize { spellAloud("large") }
+
+    /** Spell it, spelled aloud: the choice before a Round, a word heard and part spelled, and the word whole with its meaning. */
+    private fun spellAloud(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as SpellRound
+
+        fun tapLetter(letter: String) = screen.onAllNodes(hasText(letter) and hasClickAction())[0].performScrollTo().performClick()
+
+        openRealPractice()
+        openGame(R.string.game_spell_it)
+        tap(R.string.option_aloud)
+        shot("154-spell-aloud-setup")
+        tap(R.string.setup_play)
+        val word = checkNotNull(round().word)
+        word.letters.take(2).forEach(::tapLetter)
+        shot("155-spell-aloud-part")
+        word.letters.drop(2).dropLast(1).forEach(::tapLetter)
+        screen.waitForIdle()
+        screen.mainClock.autoAdvance = false
+        tapLetter(word.letters.last())
+        screen.mainClock.advanceTimeBy(500)
+        shot("156-spell-aloud-whole")
+        screen.mainClock.autoAdvance = true
     }
 
     @Test
