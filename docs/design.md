@@ -302,6 +302,9 @@ Practice is the fourth tab, between the Path and Settings, with a game controlle
 - **Phrase chains**: the instruction and the slips so far on one line; the play button when the sentence is heard, or its meaning in a `PromptCard` when it is read; the chain; and at the bottom the cards as `WordTile`s in a `TileBank`. A card that joins the chain leaves an `EmptyTileSlot`, so the others do not move. A wrong card shakes once.
 - **`PictureOption`**: a picture to choose, in the states of an `OptionCard`: plain, right (`successContainer`, a tick in the corner), wrong (`cautionContainer`, a cross and one shake) and faded. At least 120 high.
 - **Listen and tap**: the instruction, the play button, and at the bottom four `PictureOption`s two across or four `OptionCard`s. Once answered, a `RoundNote` writes the word that was said.
+- **`GapWordText`**: a word or phrase at `headlineLarge` with a small slot inside a word, centred. The slot is `secondaryContainer` with an `outline` border while empty, and takes the colours of a right or a missed answer once filled. The word is never broken at the gap.
+- **`LetterOption`**: letters to choose, at `headlineMedium`, centred on a card at least 88 high, two or three side by side, in the states of an `OptionCard` with a small tick or cross in the corner.
+- **Sound gaps**: the instruction, the play button, the word with its gap and its meaning under it, and at the bottom the `LetterOption`s in one row.
 - **Picture cards**: a `DetailFrame` with the Game's name, chips for what the cards show and which words, then the cards two across under each Unit's title.
 - **The result**: the Game's icon, a cheer in Polish with its meaning, "Round complete", and two `StatTile`s: the result and the Best. A beaten Best is announced by `BestLine` with a star that bounces in once. "Play again" is the main action and "Done" the quiet one. There is no confetti: that is for a Daily Set.
 

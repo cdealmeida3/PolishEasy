@@ -80,6 +80,9 @@ object Size {
     /** The least height of a Picture card, so the picture has room and a turned card holds its words. */
     val pictureTile: Dp = 168.dp
 
+    /** The least height of letters to choose for a gap. */
+    val letterOption: Dp = 88.dp
+
     /** The least height of a picture to choose as an answer. */
     val pictureOption: Dp = 120.dp
 

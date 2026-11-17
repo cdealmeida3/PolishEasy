@@ -22,6 +22,7 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 | Pictures, decks and Picture cards | `engine/.../Pictures.kt`, `Decks.kt`, `PictureCards.kt` |
 | Memory pairs | `engine/.../MemoryPairs.kt` |
 | Phrase chains | `engine/.../PhraseChains.kt` |
+| Sound gaps | `engine/.../SoundGaps.kt` |
 | Listen and tap | `engine/.../ListenAndTap.kt` |
 
 A Round is an immutable value. Each move returns the next Round and never fails: a move that makes no sense now returns the Round unchanged. `Run<Q>` is the shared shape for a Game that is a list of questions.
@@ -83,3 +84,9 @@ A Game that shows Items side by side uses `Learned.unalike` to leave out any tha
 **Phrase chains** (Phrases). Opens with three sentences built in completed word tile Exercises. Ways to play: the sentence heard (with sound on, where it has a Clip) or read as its meaning; short (up to three words), medium (up to five), long, or mixed, each offered with three sentences or more. A Round is up to five sentences. The words of a sentence lie mixed as cards with the Exercise's distractors; tapped in order they join the chain. A card is right if the chain with it starts a sentence the cards can make: heard, only the sentence that was said; read, any Accepted Answer. A wrong card stays and is a slip. The result is the slips, and the fewest is the Best.
 
 **Listen and tap** (Sounds). Opens with four learned Items that have a Clip, and only with sound on: without it the card says to turn sound on. Ways to play: tap the picture or tap the meaning; a deck. A Round says up to ten words, each once, with four options from the same deck. Nothing of the word is written until it is answered. The result is the answers right first try.
+
+**Sound gaps** (Sounds). Opens with four learned Items that have a Clip and a hard sound, and only with sound on. A word is said and written with a gap where one of a set of spellings that sound alike is written; the Learner chooses the letters. The sets: sz · ś · s, cz · ć · c, ż · ź · z, dz · dź · dż, l · ł, e · ę, a · ą, n · ń. Ways to play: one set, offered with four Items or more, or mixed. A Round is up to ten words. The gap is derived from the Item's text: two letters written for one sound are one piece, a capital is never a gap, and neither is a spelling softened by the i after it (the *s* of *siedem* is said as ś). Only the right letters are ever written into the word, so no invented spelling is shown as one. A gap whose wrong option would spell a real word is never asked: those words are listed in `content/practice/practice.json`, and the [Polish check](polish-check.md) fails until every one is. The result is the answers right first try.
+
+## What Practice needs from the content
+
+`course.json` may name one file, `"practice": "practice/practice.json"`, for what the Games need to know that no Item says. Today it holds `realWords`, for Sound gaps. After adding or changing Items, run `./gradlew :polishcheck:checkPolish`: it names any new wrong spelling that is a real word, to add to the list.

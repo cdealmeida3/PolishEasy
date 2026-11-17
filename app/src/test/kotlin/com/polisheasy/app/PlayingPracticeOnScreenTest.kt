@@ -7,11 +7,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
@@ -27,6 +29,7 @@ import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.FileLearnerProgress
 import com.polisheasy.engine.FilePracticeProgress
 import com.polisheasy.engine.ChainRound
+import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.InMemoryLearnerProgress
 import com.polisheasy.engine.InMemoryPracticeProgress
 import com.polisheasy.engine.ListenRound
@@ -434,10 +437,42 @@ class PlayingPracticeOnScreenTest {
         tap(R.string.settings_sound)
         tap(R.string.nav_practice)
 
-        shows(R.string.practice_needs_sound)
+        // Both Games that are only listening say so.
+        screen.onAllNodesWithText(text(R.string.practice_needs_sound)).assertCountEquals(2)
         tap(R.string.game_listen_and_tap)
         shows(R.string.practice_open_note)
         absent(R.string.setup_play)
+        tap(R.string.game_sound_gaps)
+        absent(R.string.setup_play)
+    }
+
+    @Test
+    fun `Sound gaps says a word and shows it with a gap, and the letters chosen fill it or are marked wrong`() {
+        openPracticeAfterTodaysDailySet()
+        clips.asked.clear()
+        tap(R.string.game_sound_gaps)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        // The word is said, and written with a gap in place of the letters asked for.
+        val first = checkNotNull(gapped().question)
+        val said = Played(checkNotNull(viewModel?.practiceClipOf(first.gap.polish)).path, slow = false)
+        assertEquals(listOf(said), clips.played)
+        screen.onNodeWithContentDescription(text(R.string.gaps_word, first.gap.before, first.gap.after)).assertIsDisplayed()
+        shows(first.meaning)
+
+        // Wrong letters: the gap is filled with the right ones, the word is said again, and the Round waits.
+        tapLetters(first.options.first { it != first.gap.answer })
+        screen.onNodeWithContentDescription(first.gap.polish).assertIsDisplayed()
+        assertEquals(listOf(said, said), clips.played)
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            tapLetters(checkNotNull(gapped().question).gap.answer)
+            tap(R.string.action_continue)
+        }
+        showsScore(3, 4)
+        showsFirstBest()
     }
 
     @Test
@@ -616,6 +651,10 @@ class PlayingPracticeOnScreenTest {
     }
 
     private fun slips(count: Int): String = quantity(R.plurals.practice_slips, count)
+
+    private fun gapped(): GapRound = (viewModel?.screen as Screen.Round).round as GapRound
+
+    private fun tapLetters(letters: String) = screen.onNode(hasText(letters) and hasClickAction()).performClick()
 
     private fun board(): MemoryRound = (viewModel?.screen as Screen.Round).round as MemoryRound
 

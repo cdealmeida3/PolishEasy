@@ -39,6 +39,7 @@ fun reportMarkdown(report: PolishReport, sources: String, toReviewPath: String):
         Pass.VERB_FORMS to "claimed forms",
         Pass.GRAMMAR to "texts",
         Pass.REVIEW to "sentences and Tips",
+        Pass.SOUND_GAPS to "wrong spellings",
     )
     units.forEach { (pass, unit) ->
         val problems = report.problems.count { it.pass == pass }

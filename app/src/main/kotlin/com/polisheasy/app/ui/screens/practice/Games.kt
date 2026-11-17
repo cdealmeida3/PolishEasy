@@ -30,6 +30,8 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_phrase_chains, R.string.game_phrase_chains_note, R.string.game_phrase_chains_needs, R.drawable.game_phrase_chains)
     Game.LISTEN_AND_TAP ->
         GameWords(R.string.game_listen_and_tap, R.string.game_listen_and_tap_note, R.string.game_listen_and_tap_needs, R.drawable.game_listen_and_tap)
+    Game.SOUND_GAPS ->
+        GameWords(R.string.game_sound_gaps, R.string.game_sound_gaps_note, R.string.game_sound_gaps_needs, R.drawable.game_sound_gaps)
     Game.VERB_CHALLENGE ->
         GameWords(R.string.game_verb_challenge, R.string.game_verb_challenge_note, R.string.game_verb_challenge_needs, R.drawable.game_verb_challenge)
 }
@@ -46,7 +48,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
@@ -61,6 +63,7 @@ internal fun choiceLabel(id: String): String = stringResource(
         "deck" -> R.string.choice_deck
         "cards" -> R.string.choice_cards
         "pairs" -> R.string.choice_pairs
+        "sounds" -> R.string.choice_sounds
         "clue" -> R.string.choice_clue
         "length" -> R.string.choice_length
         "tap" -> R.string.choice_tap

@@ -15,6 +15,8 @@ data class Course(
     val clipDir: String = "audio",
     /** The picture of each Item that has one, by Item id. Only the Games of Practice show them. */
     val pictures: Map<String, Picture> = emptyMap(),
+    /** Real Polish words, in lower case, that a wrong option of Sound gaps would spell. Such a gap is never asked. */
+    val soundGapRealWords: Set<String> = emptySet(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

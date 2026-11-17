@@ -24,12 +24,14 @@ The report, `polishcheck/build/polish-check/report.md`, has a table of what each
 
 The engine lists the Polish (`polishContent` in `PolishContent.kt`): each Item's text; the prompt of a `choose_translation`; every Accepted Answer of `type_answer`, `word_tiles` and `listen_type`, and every reading answer; the sentence of a `conjugation` Exercise filled with each Accepted Answer; the text of a `listen_choose`; every distractor; every form in a Tip's conjugation table. Each comes with the English it stands for, where it stands for any. The same text with the same English is one **sentence**, however many places write it; *Ile masz lat?* and *ile masz lat?* are two, because the capital is part of what is checked.
 
-## The four passes
+## The passes
 
 1. **Dictionary.** Every word of every sentence must be a form in the reference dictionary. In a Tip, which is written in English, every word of more than two letters that has a Polish letter (*ą ć ę ł ń ó ś ź ż*) must be.
 2. **Verb forms.** Wherever the content says a form is the form of a verb for a person, the form is compared with the reference conjugation of that verb. The content says so in three places: an Accepted Answer of a conjugation Exercise, a form in a Tip's table, and an Item that a conjugation Exercise practises and accepts as its answer.
 3. **Grammar rules.** Every sentence goes through the reference's grammar rules, and one rule written here, `PRONOUN_VERB`: a pronoun directly followed by a word that can only be a verb of another person (*my jestem tutaj*).
 4. **Review.** Every sentence, with its English, and every Tip must have a recorded verdict from a reviewer who did not draft it. A sentence with no verdict is a problem. A verdict with a finding is a problem.
+
+There is a fifth, smaller pass, **Sound gaps**. The Game of that name shows a learned word with a gap and offers spellings that sound alike (*sz*, *ś*, *s*). The engine lists every wrong spelling it would offer (`Course.soundGaps()`), and none may be a form in the dictionary: asking for the *sz* of *kasza* would call *kasa* wrong. Such a word is a problem until it is listed under `realWords` in `content/practice/practice.json`, and then that gap is never asked. A word listed there that the dictionary does not know is a problem too. The dictionary is generous (*sześc* and *jeszce* are in it), so a few gaps are left out that need not be; none is asked that should not be.
 
 ## What the machine cannot see
 

@@ -14,6 +14,7 @@ import com.polisheasy.app.ui.components.rememberAnswerHaptics
 import com.polisheasy.app.ui.theme.Motion
 import com.polisheasy.engine.ClipView
 import com.polisheasy.engine.ChainRound
+import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.Given
 import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.MemoryRound
@@ -38,6 +39,7 @@ internal fun RoundScreen(
 ) {
     val say: (String) -> Unit = { polish -> if (sound) clipOf(polish)?.let(onPlay) }
     when (round) {
+        is GapRound -> SoundGapsStep(round, say, onMove)
         is ChainRound -> PhraseChainsStep(round, say, onMove)
         is ListenRound -> ListenAndTapStep(round, say, onMove)
         is MemoryRound -> MemoryPairsBoard(round, sound, say, onMove, onFinish)

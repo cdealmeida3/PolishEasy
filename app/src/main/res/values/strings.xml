@@ -312,6 +312,12 @@
     <string name="option_meaning">Meaning</string>
     <string name="listen_picture_instruction">Tap the picture you hear</string>
     <string name="listen_meaning_instruction">Tap what you hear</string>
+    <string name="game_sound_gaps">Sound gaps</string>
+    <string name="game_sound_gaps_note">Hear a word and choose the letters that are missing.</string>
+    <string name="game_sound_gaps_needs">Opens when you learn four words with a sound to tell apart.</string>
+    <string name="choice_sounds">Sounds</string>
+    <string name="gaps_instruction">Choose the letters you hear</string>
+    <string name="gaps_word">%1$s, gap, %2$s</string>
     <string name="game_verb_challenge">Verb challenge</string>
     <string name="game_verb_challenge_note">Pick the form, fill the table, finish the sentence.</string>
     <string name="game_verb_challenge_needs">Opens when you learn your first verb table.</string>

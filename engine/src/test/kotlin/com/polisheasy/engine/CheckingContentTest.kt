@@ -7,6 +7,7 @@ import com.polisheasy.engine.CheckerFixture.Companion.DAY_2
 import com.polisheasy.engine.CheckerFixture.Companion.DAY_3
 import com.polisheasy.engine.CheckerFixture.Companion.ITEMS
 import kotlin.test.Test
+import kotlinx.serialization.encodeToString
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
@@ -255,6 +256,31 @@ internal class CheckingContentTest {
     @Test
     fun `a stray file beside the Clip manifest is reported`() {
         assertOnlyProblem(valid.withFile("audio/notes.txt", "to do"), CLIPS, null, "audio/notes.txt")
+    }
+
+    // What Practice needs
+
+    private fun withRealWords(vararg words: String) = valid
+        .withIndex { it.copy(practice = "practice/practice.json") }
+        .withFile("practice/practice.json", contentJson.encodeToString(PracticeFile(words.toList())))
+
+    @Test
+    fun `a course that lists real words for Sound gaps passes, and they are loaded in lower case`() {
+        val listed = withRealWords("kasa", "Polka")
+
+        assertEquals(emptyList(), problems(listed))
+        assertEquals(setOf("kasa", "polka"), loadCourse(listed.files()::read).soundGapRealWords)
+    }
+
+    @Test
+    fun `a real word that is not one word, or is listed twice, is reported`() {
+        assertOnlyProblem(withRealWords("kasa", "do jutra"), "practice/practice.json", null, "do jutra")
+        assertOnlyProblem(withRealWords("kasa", "Kasa"), "practice/practice.json", null, "more than once")
+    }
+
+    @Test
+    fun `a practice file that is listed and missing is reported`() {
+        assertOnlyProblem(withRealWords("kasa").without("practice/practice.json"), "practice/practice.json", null, "")
     }
 
     // Pictures
