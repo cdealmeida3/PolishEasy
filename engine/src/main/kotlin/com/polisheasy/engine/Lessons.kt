@@ -40,14 +40,15 @@ data class StrandView(val strand: Strand, val topics: List<String>, val done: In
 
 /**
  * A section of a lesson, which is a Daily Set: its [letter] (or its number in a Starter Unit), its
- * [heading] in Polish when it has one, else its title, the English [meaning] of the heading, how
+ * [heading] in Polish when it has one, else its title, or null when it has neither (a Daily Set
+ * with no Tip), the English [meaning] of the heading, how
  * many [newWords] it introduces, and its [state] on the Path. [inProgress] when it is the one being
  * played and not finished.
  */
 data class SectionView(
     val dailySetId: String,
     val letter: String,
-    val heading: String,
+    val heading: String?,
     val meaning: String?,
     val newWords: Int,
     val state: DailySetState,
@@ -151,7 +152,7 @@ internal class Lessons(
                 SectionView(
                     dailySetId = set.id,
                     letter = section?.letter ?: (index + 1).toString(),
-                    heading = section?.heading ?: set.tips.firstOrNull()?.let { localize(it.title) } ?: (index + 1).toString(),
+                    heading = section?.heading ?: set.tips.firstOrNull()?.let { localize(it.title) },
                     meaning = section?.meaning?.takeIf { it.isNotEmpty() }?.let(localize),
                     newWords = course.introducedIn(set).size,
                     state = pathStates[set.id] ?: if (set.id in completed) DailySetState.COMPLETED else DailySetState.LOCKED,
@@ -224,3 +225,17 @@ internal class Lessons(
 
     private fun word(item: Item) = WordView(item.id, item.text, localize(item.meaning), item.register, course.clipFor(item.text))
 }
+
+/**
+ * The words of a Słownik that [query] finds: those whose Polish or meaning contains it, ignoring
+ * case and Polish letters' marks, so "dziekuje" finds "dziękuję". A blank query finds every word.
+ */
+fun List<WordView>.matching(query: String): List<WordView> {
+    val wanted = folded(query.trim())
+    if (wanted.isEmpty()) return this
+    return filter { folded(it.text).contains(wanted) || folded(it.meaning).contains(wanted) }
+}
+
+private fun folded(text: String): String =
+    java.text.Normalizer.normalize(text.lowercase().replace('ł', 'l'), java.text.Normalizer.Form.NFD)
+        .replace(Regex("\\p{M}"), "")

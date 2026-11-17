@@ -1,5 +1,7 @@
 # The A1 Path
 
+> **Superseded for Units 4 and on** by the class book: see [ADR-0013](adr/0013-the-book-is-the-path.md) and [kpk1.md](kpk1.md). Units 1 to 3 are the Starter shelf; the table below is kept for what they cover.
+
 An outline of the Units of the A1 Path, so that each Unit fits what follows it. It is a guide, not a commitment: a Unit's contents are settled when it is authored. About 92 Daily Sets in all. The scope follows the A1 standard of the Polish state certificate. Units 1 to 3 are v1.
 
 | # | Unit | Daily Sets | Main grammar and words |

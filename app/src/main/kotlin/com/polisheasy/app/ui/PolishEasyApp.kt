@@ -34,6 +34,10 @@ import com.polisheasy.app.ui.screens.description
 import com.polisheasy.app.ui.screens.fraction
 import com.polisheasy.engine.StepProgress
 import com.polisheasy.app.ui.screens.WelcomeScreen
+import com.polisheasy.app.ui.screens.lesson.CheckpointResultScreen
+import com.polisheasy.app.ui.screens.lesson.DictionaryScreen
+import com.polisheasy.app.ui.screens.lesson.FlashcardsScreen
+import com.polisheasy.app.ui.screens.lesson.LessonScreen
 import com.polisheasy.app.ui.components.RoundFrame
 import com.polisheasy.app.ui.screens.practice.GameSetupScreen
 import com.polisheasy.app.ui.screens.practice.PracticeScreen
@@ -81,7 +85,67 @@ fun PolishEasyApp(viewModel: CourseViewModel = viewModel(), player: Clips = reme
             )
             is Screen.Tip -> DailySet(screen, screen.shown, screen.steps, viewModel, player)
             is Screen.Player -> DailySet(screen, screen.shown, screen.steps, viewModel, player)
-            is Screen.Summary -> {
+            is Screen.Lesson -> {
+                BackHandler(onBack = viewModel::openPath)
+                DisposableEffect(Unit) { onDispose { player.stop() } }
+                LifecycleResumeEffect(Unit) {
+                    viewModel.refresh()
+                    onPauseOrDispose { }
+                }
+                LessonScreen(
+                    screen.lesson,
+                    screen.path,
+                    onSection = viewModel::openSection,
+                    onDictionary = viewModel::openDictionary,
+                    onFlashcards = viewModel::openFlashcards,
+                    onTest = viewModel::startCheckpoint,
+                    onBack = viewModel::openPath,
+                    onPlay = { clip -> player.play(clip.path) },
+                    today = screen.today,
+                    started = screen.started,
+                    oneADay = screen.oneADay,
+                    inProgress = screen.inProgress,
+                    sound = viewModel.soundOn,
+                )
+            }
+            is Screen.Dictionary -> {
+                BackHandler(onBack = viewModel::backToLesson)
+                DisposableEffect(Unit) { onDispose { player.stop() } }
+                DictionaryScreen(
+                    screen.lesson,
+                    screen.words,
+                    sound = screen.sound,
+                    onPlay = { clip -> player.play(clip.path) },
+                    onBack = viewModel::backToLesson,
+                )
+            }
+            is Screen.Flashcards -> {
+                BackHandler(onBack = viewModel::backToLesson)
+                DisposableEffect(Unit) { onDispose { player.stop() } }
+                FlashcardsScreen(
+                    screen.lesson,
+                    screen.cards,
+                    screen.index,
+                    screen.knew,
+                    screen.shown,
+                    sound = screen.sound,
+                    onAnswer = { knew ->
+                        player.stop()
+                        viewModel.answerFlashcard(knew)
+                    },
+                    onAgain = viewModel::flashcardsAgain,
+                    onPlay = { clip -> player.play(clip.path) },
+                    onBack = viewModel::backToLesson,
+                )
+            }
+            is Screen.Summary -> if (screen.checkpoint != null) {
+                CheckpointResultScreen(
+                    screen.checkpoint,
+                    accent = screen.accent,
+                    onAgain = viewModel::checkpointAgain,
+                    onDone = viewModel::leaveDailySet,
+                )
+            } else {
                 BackHandler(onBack = viewModel::leaveDailySet)
                 SummaryScreen(
                     screen.correctAnswers,
@@ -155,6 +219,8 @@ private fun DailySet(screen: Screen, shown: Int, progress: StepProgress, viewMod
                 showing.replay,
                 showing.feedback,
                 showing.gloss,
+                instruction = showing.instruction,
+                checkpoint = showing.checkpoint,
                 playing = player.playing,
                 praise = showing.progress.correct,
                 canListen = showing.canListen,
@@ -263,15 +329,7 @@ private fun Tabs(screen: Screen, viewModel: CourseViewModel) {
             )
             is Screen.Path -> {
                 BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)
-                PathScreen(
-                    showing.path,
-                    onReplay = viewModel::replay,
-                    onOpenTodays = viewModel::openTodays,
-                    today = showing.today,
-                    started = showing.started,
-                    onStartChosen = viewModel::startChosen,
-                    oneADay = showing.oneADay,
-                )
+                PathScreen(showing.shelves, onOpen = viewModel::openLesson)
             }
             is Screen.Practice -> {
                 BackHandler(enabled = tab == selected, onBack = viewModel::backToHome)

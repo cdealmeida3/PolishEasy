@@ -269,6 +269,9 @@ class CourseEngine(
      * Whether a new or Review-only Daily Set was completed today, so today counts toward the
      * Streak already. A Replay records no completion, so it never makes this true.
      */
+    /** The id of the Daily Set of the Path in progress, or null when none is, or when it is a Review-only one. */
+    fun dailySetInProgress(): String? = progress.dailySetInProgress()?.dailySetId?.takeUnless { it == REVIEW_ONLY_ID }
+
     fun doneToday(): Boolean {
         val today = LocalDate.now(clock)
         return today in progress.completedDailySets().values || today in progress.reviewOnlyDays()

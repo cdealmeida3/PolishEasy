@@ -73,7 +73,8 @@ class ContrastTest {
             colors.accents.forEachIndexed { index, accent ->
                 text("onFill of accent $index", accent.onFill, "its fill", accent.fill)
                 text("onContainer of accent $index", accent.onContainer, "its container", accent.container)
-                shape("the fill of accent $index", accent.fill, "a card", scheme.surfaceContainerLowest)
+                // The fill never carries meaning alone: its number or letter does. The seal on a card is drawn in onContainer.
+                text("the seal of accent $index", accent.onContainer, "a card", scheme.surfaceContainerLowest)
             }
             assertTrue(colors.accents.size == 8, "$theme has ${colors.accents.size} lesson colours, not 8")
             listOf("background" to scheme.background, "a card" to scheme.surfaceContainerLowest).forEach { (name, surface) ->

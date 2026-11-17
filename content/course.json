@@ -18,6 +18,7 @@
       "units": [
         {
           "id": "a1-u01",
+          "accent": 1,
           "title": {
             "en": "Sounds and greetings"
           },
@@ -33,6 +34,7 @@
         },
         {
           "id": "a1-u02",
+          "accent": 2,
           "title": {
             "en": "About me"
           },
@@ -49,6 +51,7 @@
         },
         {
           "id": "a1-u03",
+          "accent": 3,
           "title": {
             "en": "Numbers and family"
           },

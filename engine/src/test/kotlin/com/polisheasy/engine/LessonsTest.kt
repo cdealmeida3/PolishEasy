@@ -246,4 +246,15 @@ class LessonsTest {
         assertTrue(shelves[0].lessons.all { it.sectionsDone == it.sections && !it.current })
         assertEquals(chapter0, shelves[1].lessons.single { it.current }.unitId)
     }
+
+    @Test
+    fun `the Słownik finds a word by its Polish without its marks, or by its meaning`() {
+        val words = engine().dictionary(chapter0)
+
+        assertEquals(listOf("przetłumaczyć"), words.matching("przetlumacz").map { it.text })
+        assertEquals(listOf("koleżanka"), words.matching("KOLEZANKA").map { it.text })
+        assertTrue(words.matching("teacher").map { it.text }.containsAll(listOf("nauczyciel", "nauczycielka")))
+        assertEquals(words, words.matching("  "))
+        assertEquals(emptyList(), words.matching("xyz"))
+    }
 }

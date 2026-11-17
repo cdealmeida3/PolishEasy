@@ -2,7 +2,7 @@
 
 The rules the Authored Content is written to. The [content checker](content-checks.md) decides whether content can ship; these rules are about whether it teaches. `AuthoredContentTest` holds the content to rules 1, 2, 3 and 8, and to part of rules 10 and 11: every reading form plays, every reading answer is accepted read and refused heard, and a `listen_type` that is read looks like no `type_answer` with other answers. Whether the Polish itself is right is the job of the [Polish check](polish-check.md). The rest need a person.
 
-Before writing a Unit, read [a1-path.md](a1-path.md) for what it covers and what the Units around it cover.
+Before writing a chapter of the book, read [kpk1.md](kpk1.md) for what it covers, how its files are laid out and what the chapters before it give. [a1-path.md](a1-path.md) covers the Starter Units.
 
 ## Rules
 
@@ -64,6 +64,17 @@ A Daily Set has 15 to 18 Exercises and 6 to 8 new Items. With up to 8 Review Exe
 - **A possessive agrees with the noun after it**, and a test checks each one against the gender of its noun, so a new family noun has to be added to the lists in that test.
 - **No possessive before *brata*, *siostrę*, *syna*, *córkę*** (*mam mojego brata* needs a form that is not taught), and they stand only after a form of *mieć*, after *i*, or after *rodzeństwo*.
 - **Listening:** no `listen_type` on a bare one-syllable number or noun (*dwa*, *lat*, *brat*): use a run of three numbers or a sentence. *czy* is still never against *trzy*.
+
+## The book's chapters
+
+The rules above hold for every section of the book. On top of them ([ADR-0013](adr/0013-the-book-is-the-path.md)):
+
+- **Nothing is copied from the book** but its titles, the K, L and G lists of its contents, its word lists and its section headings. Dialogues, readings, exercises and illustrations are not: a section's Exercises are written fresh on the chapter's words and grammar.
+- **A section is a Daily Set** with a `section` (its `letter`, the book's `heading` in Polish, its English `meaning`, and the `strands` it teaches). The headings are in the Polish check like any sentence.
+- **Every word a section uses is introduced in its chapter**, even one Starter or an earlier chapter introduced, under the same Item id (rule 1). Then the chapter's Słownik and Fiszki have every word it uses.
+- **Register.** An Item the book marks O, N or U carries `"register": "formal"`, `"informal"` or `"universal"`. It is shown beside the phrase when it is introduced and in the Słownik.
+- **Instructions are the book's.** Every Exercise shows its kind's Polish instruction from `content/kpk1/instructions.json` ("Proszę przetłumaczyć."), with its English one tap away. A new kind of Exercise adds its instruction there; the content check fails while one is missing.
+- **The chapter's Test is made, not written**: up to 20 of its Exercises, every kind mixed. A chapter of fewer than 20 Exercises has a shorter Test.
 
 ## How the Polish is checked
 
