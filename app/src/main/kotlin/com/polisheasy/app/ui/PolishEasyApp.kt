@@ -28,8 +28,6 @@ import com.polisheasy.app.ui.screens.ClassAudioScreen
 import com.polisheasy.app.ui.screens.GrammarScreen
 import com.polisheasy.app.ui.screens.lesson.ListenScreen
 import com.polisheasy.app.Clips
-import com.polisheasy.engine.QuickRound
-import com.polisheasy.engine.RegisterRound
 import com.polisheasy.app.CourseViewModel
 import com.polisheasy.app.R
 import com.polisheasy.app.Screen
@@ -45,6 +43,7 @@ import com.polisheasy.app.ui.screens.TipScreen
 import com.polisheasy.app.ui.screens.description
 import com.polisheasy.app.ui.screens.fraction
 import com.polisheasy.engine.StepProgress
+import com.polisheasy.engine.TimedRound
 import com.polisheasy.app.ui.screens.WelcomeScreen
 import com.polisheasy.app.ui.screens.lesson.CheckpointResultScreen
 import com.polisheasy.app.ui.screens.lesson.DictionaryScreen
@@ -351,9 +350,8 @@ private fun Round(screen: Screen.Round, viewModel: CourseViewModel, player: Clip
     BackHandler(onBack = viewModel::leaveGame)
     DisposableEffect(Unit) { onDispose { player.stop() } }
     RoundFrame(
-        // The bar of a Round against the clock (the Quick round, Register sort) is its clock, and empties; every other Round's fills as it is answered.
-        progress = (screen.round as? QuickRound)?.let { it.left.toFloat() / it.seconds }
-            ?: (screen.round as? RegisterRound)?.let { it.left.toFloat() / it.seconds }
+        // The bar of a Round against the clock (the Quick round, Register sort, Opposites snap) is its clock, and empties; every other Round's fills as it is answered.
+        progress = (screen.round as? TimedRound)?.let { it.left.toFloat() / it.seconds }
             ?: (screen.round.done.toFloat() / screen.round.total.coerceAtLeast(1)),
         progressDescription = progressWords(screen.round),
         closeLabel = stringResource(R.string.round_close),

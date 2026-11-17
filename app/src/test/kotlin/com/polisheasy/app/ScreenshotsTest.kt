@@ -68,6 +68,7 @@ import com.polisheasy.engine.SpellRound
 import com.polisheasy.engine.ListenRound
 import com.polisheasy.engine.AnkietaRound
 import com.polisheasy.engine.LabelRound
+import com.polisheasy.engine.OppositesRound
 import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
@@ -1736,6 +1737,52 @@ class ScreenshotsTest {
         screen.onNode(hasText(sorting.buckets.first { it.gender == noun.gender }.word) and hasClickAction()).performScrollTo().performClick()
         screen.waitForIdle()
         shot("177-ten-ta-to-sorted")
+    }
+
+    @Test
+    fun `Opposites snap and the verb groups over the real course in the light theme`() = chapter4Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Opposites snap and the verb groups over the real course in the dark theme`() = chapter4Games("dark")
+
+    @Test
+    fun `Opposites snap and the verb groups over the real course at the largest font size`() = atTheLargestFontSize { chapter4Games("large") }
+
+    /**
+     * Chapter 4's Games. Opposites snap: before a Round, a pair, part of the way through, a wrong
+     * answer and the result. The Verb challenge: a conjugation chosen, and a question of its Round.
+     */
+    private fun chapter4Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun round() = (viewModel?.screen as Screen.Round).round as OppositesRound
+
+        fun answer(correctly: Boolean) {
+            val opposites = checkNotNull(round().card).opposites
+            tap(if (opposites == correctly) R.string.opposites_yes else R.string.opposites_no)
+        }
+
+        openRealPractice()
+        openGame(R.string.game_opposites_snap)
+        shot("182-opposites-setup")
+        tap(R.string.setup_play)
+        shot("183-opposites-pair")
+        repeat(5) { answer(correctly = true) }
+        screen.mainClock.advanceTimeBy(24_000)
+        shot("184-opposites-under-way")
+        answer(correctly = false)
+        shot("185-opposites-wrong")
+        tap(R.string.action_continue)
+        screen.mainClock.advanceTimeBy(40_000)
+        shot("186-opposites-result")
+        tap(R.string.result_done)
+
+        openGame(R.string.game_verb_challenge)
+        screen.onNodeWithText("-ę, -isz/-ysz").performScrollTo().performClick()
+        shot("187-verb-group-setup")
+        tap(R.string.setup_play)
+        shot("188-verb-group-round")
     }
 
     private fun registerSort(theme: String) {

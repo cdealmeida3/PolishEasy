@@ -16,7 +16,29 @@ enum class Person(/** The Polish pronouns, as shown to the Learner. */ val prono
 
 /** A verb's form for every person, shown with a Tip. [verb] is the dictionary form. */
 @Serializable
-data class ConjugationTable(val verb: String, val meaning: Localized, val forms: Map<Person, String>)
+data class ConjugationTable(val verb: String, val meaning: Localized, val forms: Map<Person, String>) {
+    /**
+     * The book's conjugation the verb follows, named by its endings for *ja* and *ty*, as the book
+     * heads its tables: "-ę, -isz/-ysz" (*mówić*, *uczyć się*), "-am, -asz" (*mieszkać*), "-ę, -esz"
+     * (*dziękować*), "-em, -esz" (*jeść*). Null for a verb that follows none, such as *być*.
+     */
+    val group: String?
+        get() {
+            val ja = forms[Person.I]?.removeSuffix(REFLEXIVE) ?: return null
+            val ty = forms[Person.YOU]?.removeSuffix(REFLEXIVE) ?: return null
+            return when {
+                ja.endsWith("ę") && (ty.endsWith("isz") || ty.endsWith("ysz")) -> "-ę, -isz/-ysz"
+                ja.endsWith("ę") && ty.endsWith("esz") -> "-ę, -esz"
+                ja.endsWith("am") && ty.endsWith("asz") -> "-am, -asz"
+                ja.endsWith("em") && ty.endsWith("esz") -> "-em, -esz"
+                else -> null
+            }
+        }
+
+    private companion object {
+        const val REFLEXIVE = " się"
+    }
+}
 
 /** What marks the gap in the sentence of a conjugation Exercise. */
 internal const val GAP = "___"

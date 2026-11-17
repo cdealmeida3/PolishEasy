@@ -20,19 +20,19 @@ data class RegisterCard(
  */
 data class RegisterRound(
     override val played: List<String>,
-    val seconds: Int,
+    override val seconds: Int,
     val cards: List<RegisterCard>,
     /** What can be sorted into, in the book's order: O and N, and U once a universal phrase is learned. */
     val registers: List<Register>,
     val index: Int = 0,
     val right: Int = 0,
     /** How many seconds are left. */
-    val left: Int = seconds,
+    override val left: Int = seconds,
     /** The register given for the phrase being shown, set while that answer is wrong. */
     val missed: Register? = null,
     /** How many phrases have been sorted right into each register, for the heads of the buttons. */
     val sorted: Map<Register, Int> = emptyMap(),
-) : Round {
+) : TimedRound {
     override val game: Game get() = Game.REGISTER_SORT
 
     /** The clock, for the bar: the seconds gone of all there are. */
@@ -63,7 +63,7 @@ data class RegisterRound(
     fun next(): RegisterRound = if (missed != null) copy(index = index + 1, missed = null) else this
 
     /** One second passes. At none left the Round is finished. */
-    fun tick(): RegisterRound = if (finished) this else copy(left = left - 1)
+    override fun tick(): RegisterRound = if (finished) this else copy(left = left - 1)
 }
 
 internal object RegisterSort : GameRules {

@@ -216,5 +216,19 @@
     "z": "zet",
     "ź": "ziet",
     "ż": "żet"
-  }
+  },
+  "opposites": [
+    ["nowy", "stary"],
+    ["dobry", "zly"],
+    ["duzy", "maly"],
+    ["czarny", "bialy"],
+    ["wesoly", "smutny"],
+    ["wysoki", "niski"],
+    ["mlody", "stary"],
+    ["pracowity", "leniwy"],
+    ["gruby", "szczuply"],
+    ["ladny", "brzydki"],
+    ["zdrowy", "chory"],
+    ["czysty", "brudny"]
+  ]
 }

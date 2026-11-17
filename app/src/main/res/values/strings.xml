@@ -333,6 +333,9 @@
     <string name="game_label_it">Label the picture</string>
     <string name="game_label_it_note">Stick the right Polish word under each picture on the board.</string>
     <string name="game_label_it_needs">Opens when you learn six words that have a picture.</string>
+    <string name="game_opposites_snap">Opposites snap</string>
+    <string name="game_opposites_snap_note">Two words side by side: opposites or not? As many as you can before the time runs out.</string>
+    <string name="game_opposites_snap_needs">Opens when you learn three pairs of opposites, such as nowy and stary.</string>
     <string name="choice_label">Label by</string>
     <string name="label_choose_instruction">Tap the word for the marked picture</string>
     <string name="label_type_instruction">Type the word for the marked picture</string>
@@ -408,6 +411,12 @@
     <string name="quick_no_match">No match</string>
     <string name="quick_time">%1$d:%2$02d</string>
     <string name="quick_missed">%1$s · %2$s</string>
+    <string name="opposites_instruction">Are they opposites?</string>
+    <string name="opposites_yes">Opposites!</string>
+    <string name="opposites_no">Not opposites</string>
+    <string name="opposites_versus">↔</string>
+    <!-- After a wrong answer: the word, what it means, its opposite in the same form, and what that means. -->
+    <string name="opposites_missed">The opposite of %1$s is %3$s: %2$s ↔ %4$s.</string>
     <plurals name="quick_left">
         <item quantity="one">%d second left</item>
         <item quantity="other">%d seconds left</item>

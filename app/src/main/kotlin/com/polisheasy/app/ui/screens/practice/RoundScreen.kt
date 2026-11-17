@@ -20,6 +20,7 @@ import com.polisheasy.engine.GapRound
 import com.polisheasy.engine.GenderRound
 import com.polisheasy.engine.LabelRound
 import com.polisheasy.engine.NumberRound
+import com.polisheasy.engine.OppositesRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.RegisterRound
 import com.polisheasy.engine.SpellRound
@@ -59,6 +60,7 @@ internal fun RoundScreen(
         is SpellRound -> SpellItStep(round, say, sayAll, onMove)
         is QuickRound -> QuickRoundStep(round, onMove)
         is RegisterRound -> RegisterSortStep(round, say, onMove)
+        is OppositesRound -> OppositesSnapStep(round, onMove)
         is GenderRound -> MojMojaMojeStep(round, say, sayFirst, onMove)
         is GapRound -> SoundGapsStep(round, say, onMove)
         is ChainRound -> PhraseChainsStep(round, say, onMove)

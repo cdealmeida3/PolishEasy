@@ -47,6 +47,8 @@ internal data class PracticeFile(
     val demonstratives: Map<String, String> = emptyMap(),
     /** What each small letter is called when a word is spelled aloud: the letter, and its name. */
     val letters: Map<String, String> = emptyMap(),
+    /** Pairs of adjectives that are opposites, each two Item ids, for Opposites snap. */
+    val opposites: List<List<String>> = emptyList(),
 )
 
 @Serializable
@@ -196,6 +198,7 @@ internal class ReadContent(
             ankieta = ankieta,
             letterNames = practice?.letters.orEmpty(),
             demonstratives = practice?.demonstratives.orEmpty().mapNotNull { (gender, item) -> Gender.of(gender)?.let { it to item } }.toMap(),
+            opposites = practice?.opposites.orEmpty().filter { it.size == 2 && it[0] != it[1] }.map { it[0] to it[1] }.distinct(),
         )
     }
 
@@ -376,6 +379,17 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
                 problems += ContentProblem(file, null, "\"$letter\" is given a name to spell it by, and it is not one small letter")
             }
             if (name.isBlank()) problems += ContentProblem(file, null, "The letter \"$letter\" is given a blank name")
+        }
+        practice.opposites.forEach { pair ->
+            if (pair.size != 2 || pair[0] == pair[1]) {
+                problems += ContentProblem(file, null, "A pair of opposites must be two different Items, and $pair is not")
+            }
+            pair.filter { content.itemsComplete && it !in course.itemsById }.forEach { item ->
+                problems += ContentProblem(file, item, "A pair of opposites names Item $item, which is not defined")
+            }
+        }
+        practice.opposites.map { it.sorted().joinToString(" and ") }.repeated().forEach { pair ->
+            problems += ContentProblem(file, null, "The opposites $pair are given more than once")
         }
     }
     problems += classAudioProblems(content)

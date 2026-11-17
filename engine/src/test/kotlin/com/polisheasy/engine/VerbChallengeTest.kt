@@ -31,6 +31,43 @@ class VerbChallengeTest {
     }
 
     @Test
+    fun `a table knows the conjugation its forms follow`() {
+        assertEquals("-ę, -isz/-ysz", mowic.group)
+        assertEquals("-ę, -isz/-ysz", table("uczyć się", "to learn", "uczę się", "uczysz się", "uczy się", "uczymy się", "uczycie się", "uczą się").group)
+        assertEquals("-am, -asz", miec.group)
+        assertEquals("-ę, -esz", table("pisać", "to write", "piszę", "piszesz", "pisze", "piszemy", "piszecie", "piszą").group)
+        assertEquals("-em, -esz", table("jeść", "to eat", "jem", "jesz", "je", "jemy", "jecie", "jedzą").group)
+        // być follows none of them.
+        assertEquals(null, byc.group)
+    }
+
+    @Test
+    fun `a conjugation can be chosen once two of its verbs are learned, and its Round asks only those verbs`() {
+        val robic = table("robić", "to do", "robię", "robisz", "robi", "robimy", "robicie", "robią")
+        val course = Course(
+            listOf(
+                levelOf(
+                    "a1",
+                    dayWithTable("d1", byc, gap("d1-e1", byc, Person.I, "___ Adam.", "jestem")),
+                    dayWithTable("d2", mowic, gap("d2-e1", mowic, Person.I, "___ po polsku.", "mówię")),
+                    dayWithTable("d3", robic, gap("d3-e1", robic, Person.WE, "Co ___?")),
+                ),
+            ),
+            practiceItems,
+        )
+        fun verbs(player: Player) = player.practice().setup(Game.VERB_CHALLENGE).choices.first().options.map { it.id }
+
+        assertEquals(listOf("być", "mówić", "mixed"), verbs(Player(course).completed("d1", "d2")))
+        val all = Player(course).completed("d1", "d2", "d3")
+        assertEquals(listOf("być", "mówić", "robić", "group:-ę, -isz/-ysz", "mixed"), verbs(all))
+        assertEquals("-ę, -isz/-ysz", all.practice().setup(Game.VERB_CHALLENGE).choices.first().options[3].label)
+        repeat(10) { seed ->
+            val round = Player(course, all.progress, seed = seed).practice().verbRound("group:-ę, -isz/-ysz")
+            assertEquals(setOf("mówić", "robić"), round.run.questions.map { it.verb }.toSet())
+        }
+    }
+
+    @Test
     fun `a Round has six forms to pick, the table to fill and four sentences`() {
         val round = Player().completed("d1").practice().verbRound("być")
 

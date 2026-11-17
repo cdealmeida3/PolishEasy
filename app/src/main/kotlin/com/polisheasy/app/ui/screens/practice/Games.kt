@@ -10,9 +10,8 @@ import com.polisheasy.engine.Game
 import com.polisheasy.engine.GameGroup
 import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.OptionView
-import com.polisheasy.engine.QuickRound
-import com.polisheasy.engine.RegisterRound
 import com.polisheasy.engine.Round
+import com.polisheasy.engine.TimedRound
 
 /** What the screens call a Game: its name, one line of what it is, what opens it, and its icon. */
 internal class GameWords(
@@ -50,6 +49,8 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_ten_ta_to, R.string.game_ten_ta_to_note, R.string.game_ten_ta_to_needs, R.drawable.game_ten_ta_to)
     Game.LABEL_IT ->
         GameWords(R.string.game_label_it, R.string.game_label_it_note, R.string.game_label_it_needs, R.drawable.game_label_it)
+    Game.OPPOSITES_SNAP ->
+        GameWords(R.string.game_opposites_snap, R.string.game_opposites_snap_note, R.string.game_opposites_snap_needs, R.drawable.game_opposites_snap)
     Game.NUMBERS ->
         GameWords(R.string.game_numbers, R.string.game_numbers_note, R.string.game_numbers_needs, R.drawable.game_numbers)
     Game.VERB_CHALLENGE ->
@@ -68,7 +69,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.CHAT, Game.ANKIETA -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.CHAT, Game.ANKIETA -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
@@ -146,8 +147,7 @@ private const val SECONDS = "seconds-"
 /** How far a Round has come, for a screen reader: "3 of 14 answered", on a board "2 of 6 pairs found", against the clock "42 seconds left". */
 @Composable
 internal fun progressWords(round: Round): String = when (round) {
-    is QuickRound -> pluralStringResource(R.plurals.quick_left, round.left, round.left)
-    is RegisterRound -> pluralStringResource(R.plurals.quick_left, round.left, round.left)
+    is TimedRound -> pluralStringResource(R.plurals.quick_left, round.left, round.left)
     is MemoryRound -> stringResource(R.string.memory_progress, round.done, round.total)
     else -> stringResource(R.string.round_progress, round.done, round.total)
 }
