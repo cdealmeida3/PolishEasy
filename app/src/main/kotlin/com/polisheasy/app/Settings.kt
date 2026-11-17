@@ -24,6 +24,14 @@ class Settings(context: Context) {
         get() = preferences.getBoolean(SOUND_ON, true)
         set(value) = preferences.edit().putBoolean(SOUND_ON, value).apply()
 
+    /**
+     * One a day: whether at most one new Daily Set opens per calendar day. Off until the Learner
+     * turns it on, so they go at their own pace.
+     */
+    var oneADay: Boolean
+        get() = preferences.getBoolean(ONE_A_DAY, false)
+        set(value) = preferences.edit().putBoolean(ONE_A_DAY, value).apply()
+
     /** Whether the Learner has been through the welcome, which is shown once, before the first Daily Set. */
     var welcomed: Boolean
         get() = preferences.getBoolean(WELCOMED, false)
@@ -38,6 +46,7 @@ class Settings(context: Context) {
         const val WELCOMED = "welcomed"
         const val REMINDER_OFFERED = "reminder_offered"
         const val SOUND_ON = "sound_on"
+        const val ONE_A_DAY = "one_a_day"
         const val REMINDER_ENABLED = "reminder_enabled"
         const val REMINDER_MINUTES = "reminder_minutes"
         const val DEFAULT_REMINDER_MINUTES = 19 * 60

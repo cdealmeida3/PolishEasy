@@ -18,8 +18,11 @@ enum class DailySetState {
     /** Done, and can be replayed. */
     COMPLETED,
 
-    /** The one the Learner can start or continue today. */
+    /** The one the Learner can start or continue today: at their own pace, the one they are at. */
     TODAY,
+
+    /** Not completed, and can be started now. Only at the Learner's own pace. */
+    OPEN,
 
     /** Not reachable yet. */
     LOCKED,

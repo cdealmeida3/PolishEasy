@@ -297,8 +297,12 @@ class ScreenshotsTest {
             ),
         )
 
-        /** The Path with the first [completed] Daily Sets done, and the one after them today's if [ready]. */
-        fun path(completed: Int, ready: Boolean): PathView {
+        /**
+         * The Path with the first [completed] Daily Sets done, and the one after them today's if [ready].
+         * At the Learner's own pace, with [ownPace], the rest are open rather than locked, and [also]
+         * are completed out of order.
+         */
+        fun path(completed: Int, ready: Boolean, ownPace: Boolean = false, also: Set<Int> = emptySet()): PathView {
             var number = 0
             return PathView(
                 listOf(
@@ -312,8 +316,9 @@ class ScreenshotsTest {
                                 title,
                                 dailySets.map { name ->
                                     val state = when {
-                                        number < completed -> DailySetState.COMPLETED
+                                        number < completed || number in also -> DailySetState.COMPLETED
                                         number == completed && ready -> DailySetState.TODAY
+                                        ownPace -> DailySetState.OPEN
                                         else -> DailySetState.LOCKED
                                     }
                                     DailySetView("d${number + 1}", ++number, state, name)
@@ -329,6 +334,7 @@ class ScreenshotsTest {
             "28-path-done-for-today" to path(completed = 11, ready = false),
             "29-path-unit-starts" to path(completed = 15, ready = true),
             "30-path-all-completed" to path(completed = 23, ready = false),
+            "33-path-own-pace" to path(completed = 10, ready = true, ownPace = true, also = setOf(12)),
         )
         var showing by mutableStateOf(0)
         screen.setContent {
@@ -350,7 +356,9 @@ class ScreenshotsTest {
                                 states[showing].second,
                                 onReplay = {},
                                 onOpenTodays = {},
-                                today = NextDailySetView(2, "About me", 4, 8, teaches = listOf("Czy and nie", "Pan and pani")).takeIf { showing == 0 },
+                                today = NextDailySetView(2, "About me", 4, 8, teaches = listOf("Czy and nie", "Pan and pani"))
+                                    .takeIf { showing == 0 || states[showing].first.endsWith("own-pace") },
+                                oneADay = !states[showing].first.endsWith("own-pace"),
                             )
                         }
                     }
@@ -415,11 +423,69 @@ class ScreenshotsTest {
         shot("$theme-32-settings-notifications-off")
     }
 
+    @Test
+    fun `the fixture course at the Learner's own pace in the light theme`() = ownPaceTour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `the fixture course at the Learner's own pace in the dark theme`() = ownPaceTour("dark")
+
+    @Test
+    fun `the fixture course at the Learner's own pace at the largest font size`() = atTheLargestFontSize { ownPaceTour("large") }
+
+    /**
+     * One a day off: the Path with nothing locked, then with a Daily Set in progress, the Summary
+     * that offers the next one, and Home once today counts already.
+     */
+    private fun ownPaceTour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        open(CourseViewModel(app, CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock, oneADay = { false })))
+        tap(R.string.nav_path)
+        shot("70-own-pace-path")
+        back()
+
+        tap(R.string.home_start)
+        tap(R.string.action_continue)
+        tap("hello (polite); good morning")
+        tap(R.string.action_continue)
+        back()
+        tap(R.string.nav_path)
+        // The one in progress is where the Learner is; the question before replacing it is a dialog, which a picture of the screen leaves out.
+        shot("71-own-pace-path-in-progress")
+        back()
+
+        tap(R.string.home_continue)
+        listOf("to", "jest", "Adam").forEach(::tap)
+        tap(R.string.action_check)
+        tap(R.string.action_continue)
+        type("dziękuję")
+        tap(R.string.action_check)
+        tap(R.string.action_continue)
+        tap("do widzenia")
+        tap(R.string.action_continue)
+        type("nie")
+        tap(R.string.action_check)
+        tap(R.string.action_continue)
+        type("jestem")
+        tap(R.string.action_check)
+        tap(R.string.action_continue)
+        // The Summary at rest, after its celebration.
+        screen.mainClock.autoAdvance = false
+        screen.mainClock.advanceTimeBy(3_000)
+        screen.mainClock.autoAdvance = true
+        shot("72-own-pace-summary")
+        tap(R.string.summary_back_home)
+        // Home shows the Streak go up once more; the picture is of it at rest.
+        screen.mainClock.advanceTimeBy(2_000)
+        shot("73-own-pace-home-keep-going")
+    }
+
     /** Daily Set 1 of the fixture course, with one wrong answer so the Exercise comes back at the end. */
     private fun fixtureCourseTour(theme: String) {
         fun shot(name: String) = this.shot("$theme-$name")
 
-        fun fixture() = CourseViewModel(app, CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock))
+        fun fixture() = CourseViewModel(app, CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock, oneADay = { true }))
         Settings(app).welcomed = false
         open(fixture())
         shot("00-welcome")
@@ -503,7 +569,7 @@ class ScreenshotsTest {
         course.path.forEachIndexed { index, dailySet ->
             progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
         }
-        val engine = CourseEngine(course, progress, clock)
+        val engine = CourseEngine(course, progress, clock, oneADay = { true })
         open(CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7))))
         tap(R.string.nav_practice)
         shot("$theme-60-practice-real")
@@ -546,7 +612,7 @@ class ScreenshotsTest {
         course.path.forEachIndexed { index, dailySet ->
             progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
         }
-        val engine = CourseEngine(course, progress, clock)
+        val engine = CourseEngine(course, progress, clock, oneADay = { true })
         open(CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7))))
         tap(R.string.nav_practice)
         tap(R.string.game_memory_pairs)
@@ -652,7 +718,7 @@ class ScreenshotsTest {
         course.path.forEachIndexed { index, dailySet ->
             progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
         }
-        val engine = CourseEngine(course, progress, clock)
+        val engine = CourseEngine(course, progress, clock, oneADay = { true })
         open(CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7))))
         tap(R.string.nav_practice)
 
@@ -756,7 +822,7 @@ class ScreenshotsTest {
         course.path.forEachIndexed { index, dailySet ->
             progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
         }
-        val engine = CourseEngine(course, progress, clock)
+        val engine = CourseEngine(course, progress, clock, oneADay = { true })
         open(CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7))))
         tap(R.string.nav_practice)
 
@@ -800,7 +866,7 @@ class ScreenshotsTest {
         course.path.forEachIndexed { index, dailySet ->
             progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
         }
-        val engine = CourseEngine(course, progress, clock)
+        val engine = CourseEngine(course, progress, clock, oneADay = { true })
         open(CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7))))
         tap(R.string.nav_practice)
     }
@@ -1112,7 +1178,7 @@ class ScreenshotsTest {
             }
         }
 
-        val engine = CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock)
+        val engine = CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock, oneADay = { true })
         open(CourseViewModel(app, engine, engine.practice(FilePracticeProgress(File(folder.root, "practice.json")), Random(7))))
         tap(R.string.nav_practice)
         shot("40-practice-locked")

@@ -295,7 +295,7 @@ class SavedProgressTest {
     @Test
     fun `a Daily Set can be played across closing and reopening the app`() {
         val clock = FakeClock()
-        fun openApp() = CourseEngine(FixtureCourse.load(), reopened(), clock)
+        fun openApp() = CourseEngine(FixtureCourse.load(), reopened(), clock, oneADay = { true })
 
         val first = openApp()
         first.play(first.startDailySet(), listOf(wrongHello, right.getValue("do widzenia")))

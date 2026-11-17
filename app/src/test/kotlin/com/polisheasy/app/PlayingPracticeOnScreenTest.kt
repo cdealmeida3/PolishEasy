@@ -752,7 +752,7 @@ class PlayingPracticeOnScreenTest {
     }
 
     private fun fixtureViewModel(): CourseViewModel {
-        val engine = CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock)
+        val engine = CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock, oneADay = { true })
         return CourseViewModel(app, engine, engine.practice(FilePracticeProgress(File(folder.root, "practice.json")), Random(7)))
     }
 
@@ -763,7 +763,7 @@ class PlayingPracticeOnScreenTest {
         course.path.forEachIndexed { index, dailySet ->
             progress.recordCompleted(dailySet.id, clock.today.minusDays((course.path.size - 1 - index).toLong()))
         }
-        val engine = CourseEngine(course, progress, clock)
+        val engine = CourseEngine(course, progress, clock, oneADay = { true })
         viewModel = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
         screen.setContent {
             PolishEasyTheme {

@@ -155,7 +155,7 @@ class Learner(
     val clock: FakeClock = FakeClock(),
 ) {
     /** Opening the app, or reopening it after it was closed: a new engine over what was saved. */
-    fun openApp(): CourseEngine = CourseEngine(FixtureCourse.load(), progress, clock)
+    fun openApp(): CourseEngine = CourseEngine(FixtureCourse.load(), progress, clock, oneADay = { true })
 }
 
 fun newLearnerEngine(): CourseEngine = Learner().openApp()

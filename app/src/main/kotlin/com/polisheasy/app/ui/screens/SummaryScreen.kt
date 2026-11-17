@@ -26,6 +26,7 @@ import com.polisheasy.app.ui.components.Confetti
 import com.polisheasy.app.ui.components.Instruction
 import com.polisheasy.app.ui.components.ItemCard
 import com.polisheasy.app.ui.components.PrimaryButton
+import com.polisheasy.app.ui.components.SecondaryButton
 import com.polisheasy.app.ui.components.ScreenFrame
 import com.polisheasy.app.ui.components.SpeakerButton
 import com.polisheasy.app.ui.components.StatRow
@@ -66,7 +67,8 @@ private val MILESTONES = mapOf(
  * raised as the hero with [week]'s days, then the score and the new words as small facts, and what
  * was learned, each word with its speaker when [clipOf] has a Clip for it. A Replay raises no
  * Streak, lists no Items and gets no confetti. With [reminder] the Summary offers the Reminder,
- * here where the Learner has a reason to want one; [onRemind] takes it.
+ * here where the Learner has a reason to want one; [onRemind] takes it. With [onStartNext], at the
+ * Learner's own pace, its main action starts the next Daily Set and Done, under it, goes back Home.
  */
 @Composable
 internal fun SummaryScreen(
@@ -83,6 +85,7 @@ internal fun SummaryScreen(
     reminder: ReminderOffer? = null,
     onRemind: () -> Unit = {},
     unitCompleted: UnitCompletedView? = null,
+    onStartNext: (() -> Unit)? = null,
 ) {
     val context = LocalContext.current
     // Whether the Learner refused the permission here, so the offer can say where to turn it on later.
@@ -239,6 +242,13 @@ internal fun SummaryScreen(
             if (!replay) Confetti(Modifier.matchParentSize(), plenty = milestone != null || unitCompleted != null)
         }
         Spacer(Modifier.height(Space.m))
-        PrimaryButton(stringResource(if (replay) R.string.summary_back_path else R.string.summary_back_home), onDone)
+        if (onStartNext != null) {
+            // At the Learner's own pace the next one can follow at once; Done still goes Home.
+            PrimaryButton(stringResource(R.string.summary_start_next), onStartNext)
+            Spacer(Modifier.height(Space.xs))
+            SecondaryButton(stringResource(R.string.summary_back_home), onDone)
+        } else {
+            PrimaryButton(stringResource(if (replay) R.string.summary_back_path else R.string.summary_back_home), onDone)
+        }
     }
 }

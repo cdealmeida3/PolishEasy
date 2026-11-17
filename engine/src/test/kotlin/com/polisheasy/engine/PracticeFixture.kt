@@ -69,7 +69,7 @@ class Player(
     val clock: FakeClock = FakeClock(),
     private val seed: Int = 1,
 ) {
-    val engine: CourseEngine get() = CourseEngine(course, progress, clock)
+    val engine: CourseEngine get() = CourseEngine(course, progress, clock, oneADay = { true })
 
     /** Opening the app: a new engine and a new Practice over what was saved. */
     fun practice(): Practice = engine.practice(bests, Random(seed))

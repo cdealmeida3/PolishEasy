@@ -47,6 +47,10 @@ import com.polisheasy.app.ui.components.Instruction
  * from that number, and Home shows it happen: the number rolls, today's dot fills in.
  * Under the cards is [soFar], what the Learner has built up, once there is something to count; and
  * with [onReplayToday] the done state offers today's Daily Set again.
+ *
+ * At the Learner's own pace there is no done-for-today state: with [doneToday] Home says today
+ * counts already, above the card that starts or continues the next one. "Play a Game" is there
+ * whenever [practiceOpen] and something has been completed.
  */
 @Composable
 internal fun HomeScreen(
@@ -60,8 +64,13 @@ internal fun HomeScreen(
     streakRaisedFrom: Int? = null,
     onReplayToday: (() -> Unit)? = null,
     onPractice: (() -> Unit)? = null,
+    doneToday: Boolean = false,
+    practiceOpen: Boolean = false,
 ) {
     val done = today is Today.DoneForToday
+    // At the Learner's own pace something was completed today and more can be done now.
+    val keepGoing = doneToday && !done && today !is Today.AllCompleted
+    val practice = onPractice.takeIf { practiceOpen && soFar.dailySetsCompleted > 0 }
     ScreenFrame {
         // Scrolls at a large font size; at the usual one everything fits.
         Column(
@@ -78,12 +87,9 @@ internal fun HomeScreen(
             )
             Text(
                 stringResource(
-                    when (today) {
-                        Today.DailySetAvailable -> R.string.home_ready
-                        Today.ReviewOnlyAvailable -> R.string.home_review_only_ready
-                        is Today.InProgress -> R.string.home_in_progress_headline
-                        is Today.DoneForToday -> R.string.home_done_headline
-                        Today.AllCompleted -> R.string.home_all_completed_headline
+                    when {
+                        keepGoing -> R.string.home_keep_going_headline
+                        else -> headlineOf(today)
                     },
                 ),
                 style = MaterialTheme.typography.bodyLarge,
@@ -94,24 +100,43 @@ internal fun HomeScreen(
                 // Day one: nothing to count yet, so nothing is counted. No zero, no empty week.
                 StreakStartCard(stringResource(R.string.home_streak_start_title), stringResource(R.string.home_streak_start_note))
             } else {
-                Streak(streak, week, today, streakRaisedFrom)
+                Streak(streak, week, today, streakRaisedFrom, doneToday)
             }
             Spacer(Modifier.height(Space.m))
+            if (keepGoing) {
+                // Coming back from the Daily Set that did it, the card arrives; otherwise it is simply there.
+                Arriving(play = streakRaisedFrom != null) {
+                    TodayCard(stringResource(R.string.home_keep_going_title), done = true) {
+                        CardNote(
+                            stringResource(
+                                if (today == Today.ReviewOnlyAvailable) R.string.home_keep_going_review_only else R.string.home_keep_going,
+                            ),
+                        )
+                        if (onReplayToday != null) {
+                            Spacer(Modifier.height(Space.xs))
+                            QuietButton(stringResource(R.string.home_replay_today), onReplayToday)
+                        }
+                    }
+                }
+                Spacer(Modifier.height(Space.m))
+            }
+            // The card for what can be done now: "Up next" once today counts already.
+            val label = if (keepGoing) R.string.home_up_next else R.string.home_today
             when (today) {
-                Today.DailySetAvailable -> NextDailySet(next, R.string.home_today, highlighted = true) {
+                Today.DailySetAvailable -> NextDailySet(next, label, highlighted = true) {
                     Spacer(Modifier.height(Space.l))
                     PrimaryButton(stringResource(R.string.home_start), onStart)
                 }
                 is Today.InProgress -> {
                     val progress = today.progress
                     if (today.reviewOnly) {
-                        ReviewOnly {
+                        ReviewOnly(label) {
                             CardNote(stringResource(R.string.home_review_only_in_progress, progress.correct, progress.total))
                             Spacer(Modifier.height(Space.l))
                             PrimaryButton(stringResource(R.string.home_continue), onContinue)
                         }
                     } else {
-                        NextDailySet(next, R.string.home_today, highlighted = true) {
+                        NextDailySet(next, label, highlighted = true) {
                             Spacer(Modifier.height(Space.xs))
                             CardNote(stringResource(R.string.home_in_progress, progress.correct, progress.total))
                             Spacer(Modifier.height(Space.l))
@@ -119,7 +144,7 @@ internal fun HomeScreen(
                         }
                     }
                 }
-                Today.ReviewOnlyAvailable -> ReviewOnly {
+                Today.ReviewOnlyAvailable -> ReviewOnly(label) {
                     CardNote(stringResource(R.string.home_review_only_note))
                     Spacer(Modifier.height(Space.l))
                     PrimaryButton(stringResource(R.string.home_start), onStart)
@@ -150,6 +175,11 @@ internal fun HomeScreen(
                     CardNote(stringResource(R.string.home_all_completed))
                 }
             }
+            // At the Learner's own pace Practice is always open, so it has a way in of its own under the card.
+            if (practice != null && today !is Today.DoneForToday) {
+                Spacer(Modifier.height(Space.m))
+                SecondaryButton(stringResource(R.string.home_practice), practice)
+            }
             if (soFar.dailySetsCompleted > 0) {
                 Spacer(Modifier.height(Space.l))
                 SoFar(soFar)
@@ -157,6 +187,15 @@ internal fun HomeScreen(
             Spacer(Modifier.height(Space.m))
         }
     }
+}
+
+/** The line under the greeting for each thing [today] can be. */
+private fun headlineOf(today: Today): Int = when (today) {
+    Today.DailySetAvailable -> R.string.home_ready
+    Today.ReviewOnlyAvailable -> R.string.home_review_only_ready
+    is Today.InProgress -> R.string.home_in_progress_headline
+    is Today.DoneForToday -> R.string.home_done_headline
+    Today.AllCompleted -> R.string.home_all_completed_headline
 }
 
 /** What the Learner has built up: the words, the Daily Sets and the longest Streak. They only ever go up. */
@@ -196,12 +235,18 @@ internal fun weekDays(week: List<DayView>): List<WeekDay> = week.map { day ->
     )
 }
 
-/** The Streak and its week. The note says what today's Daily Set would do for it. */
+/**
+ * The Streak and its week. The note says what today's Daily Set would do for it, or with
+ * [doneToday], at the Learner's own pace, that today counts already.
+ */
 @Composable
-private fun Streak(streak: Int, week: List<DayView>, today: Today, raisedFrom: Int?) {
+private fun Streak(streak: Int, week: List<DayView>, today: Today, raisedFrom: Int?, doneToday: Boolean) {
     val note = when (today) {
-        Today.DailySetAvailable, Today.ReviewOnlyAvailable, is Today.InProgress ->
-            if (streak == 0) R.string.home_streak_note_start else R.string.home_streak_note_keep
+        Today.DailySetAvailable, Today.ReviewOnlyAvailable, is Today.InProgress -> when {
+            doneToday -> R.string.home_streak_note_safe
+            streak == 0 -> R.string.home_streak_note_start
+            else -> R.string.home_streak_note_keep
+        }
         is Today.DoneForToday -> R.string.home_streak_note_done
         Today.AllCompleted -> null
     }
@@ -254,10 +299,10 @@ private fun NextDailySet(
 }
 
 @Composable
-private fun ReviewOnly(content: @Composable () -> Unit) {
+private fun ReviewOnly(label: Int, content: @Composable () -> Unit) {
     TodayCard(
         title = stringResource(R.string.home_review_only_title),
-        label = stringResource(R.string.home_today),
+        label = stringResource(label),
         highlighted = true,
     ) { content() }
 }

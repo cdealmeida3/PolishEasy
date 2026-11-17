@@ -157,6 +157,12 @@ data class Feedback(
 /**
  * All course rules. Screens ask it what to show and send it the Learner's answers;
  * it knows nothing about Android.
+ *
+ * [oneADay] is the Learner's One a day setting, asked afresh each time it matters so that a change
+ * takes effect at once. Off, the default, the Learner goes at their own pace: any Daily Set not yet
+ * completed can be started at any time and Practice is always open. On, at most one new or
+ * Review-only Daily Set can be completed per calendar day, the next one only, and Practice opens
+ * once it is done.
  */
 class CourseEngine(
     private val course: Course,
@@ -164,6 +170,7 @@ class CourseEngine(
     private val clock: Clock,
     private val baseLanguage: String = "en",
     private val scheduler: ReviewScheduler = LeitnerScheduler(),
+    private val oneADay: () -> Boolean = { false },
 ) {
     /** The Daily Set being played, with how far the Learner is through it. */
     private var playing: Playing? = null
@@ -195,7 +202,7 @@ class CourseEngine(
         val today = LocalDate.now(clock)
         val pathCompleted = course.path.all { it.id in completed }
         if (pathCompleted && !reviewable) return Today.AllCompleted
-        if (today in completed.values || today in progress.reviewOnlyDays()) {
+        if (oneADay() && doneToday()) {
             return Today.DoneForToday(
                 nextUnlock = today.plusDays(1).atStartOfDay(clock.zone),
                 reviewOnlyNext = pathCompleted,
@@ -240,19 +247,29 @@ class CourseEngine(
         return course.path.lastOrNull { completed[it.id] == today }?.id
     }
 
+    /**
+     * Whether a new or Review-only Daily Set was completed today, so today counts toward the
+     * Streak already. A Replay records no completion, so it never makes this true.
+     */
+    fun doneToday(): Boolean {
+        val today = LocalDate.now(clock)
+        return today in progress.completedDailySets().values || today in progress.reviewOnlyDays()
+    }
+
     /** Every calendar day on which a new or Review-only Daily Set was completed. */
     private fun completionDays(): Set<LocalDate> = progress.completedDailySets().values.toSet() + progress.reviewOnlyDays()
 
     /**
-     * The first Daily Set on the Path not yet completed, with its place in its Unit, or null once
-     * every Daily Set released so far is completed. It is the same one whether it can be started
-     * today, is in progress, or unlocks tomorrow; [today] says which.
+     * The Daily Set the Learner is at, with its place in its Unit, or null once every Daily Set
+     * released so far is completed: the one in progress, or else the first on the Path not yet
+     * completed. It is the same one whether it can be started today, is in progress, or unlocks
+     * tomorrow; [today] says which. Only at their own pace can the one in progress be a later one.
      */
     fun nextDailySet(): NextDailySetView? {
-        val completed = progress.completedDailySets().keys
+        val at = atDailySet() ?: return null
         for (level in course.levels) {
             level.units.forEachIndexed { unitIndex, unit ->
-                val index = unit.dailySets.indexOfFirst { it.id !in completed }
+                val index = unit.dailySets.indexOfFirst { it.id == at }
                 if (index >= 0) {
                     return NextDailySetView(
                         unitNumber = unitIndex + 1,
@@ -267,22 +284,25 @@ class CourseEngine(
         return null
     }
 
-    /**
-     * Whether the Learner should be reminded now: today's Daily Set, new or Review-only, can be
-     * started or is in progress. Not once it is completed, and not when nothing is left to do.
-     * A Replay never changes [today], so it never changes this.
-     */
-    fun reminderDue(): Boolean = when (today()) {
-        Today.DailySetAvailable, Today.ReviewOnlyAvailable, is Today.InProgress -> true
-        is Today.DoneForToday, Today.AllCompleted -> false
+    /** The id of the Daily Set on the Path the Learner is at: the one in progress, or else the first not yet completed. */
+    private fun atDailySet(): String? {
+        val completed = progress.completedDailySets().keys
+        val first = course.path.firstOrNull { it.id !in completed }?.id ?: return null
+        return savedDailySet()?.takeUnless { it.reviewOnly }?.dailySet?.id ?: first
     }
 
     /**
-     * Whether Practice is open: today's new or Review-only Daily Set is completed, or nothing is
-     * left to do. It locks again at midnight with everything else. A Replay never changes [today],
-     * so it never opens Practice.
+     * Whether the Learner should be reminded now: nothing, new or Review-only, has been completed
+     * today and something is left to do. A Replay records no completion, so it never changes this.
      */
-    fun practiceOpen(): Boolean = when (today()) {
+    fun reminderDue(): Boolean = !doneToday() && today() != Today.AllCompleted
+
+    /**
+     * Whether Practice is open. At the Learner's own pace it always is. With [oneADay] it opens once
+     * today's new or Review-only Daily Set is completed, or when nothing is left to do, and locks
+     * again at midnight with everything else. A Replay never changes [today], so it never opens it.
+     */
+    fun practiceOpen(): Boolean = !oneADay() || when (today()) {
         is Today.DoneForToday, Today.AllCompleted -> true
         Today.DailySetAvailable, Today.ReviewOnlyAvailable, is Today.InProgress -> false
     }
@@ -295,16 +315,28 @@ class CourseEngine(
         Practice(course, progress, bests, clock, baseLanguage, random, ::practiceOpen)
 
     /**
-     * The Path: every Level opened so far, with its Units and their Daily Sets. A Level opens when
-     * every Daily Set of the Levels before it is completed. A Review-only Daily Set is not on it.
+     * The Path: every Level opened so far, with its Units and their Daily Sets. A Review-only Daily
+     * Set is not on it. At the Learner's own pace every Level is open, the Daily Set they are at is
+     * [DailySetState.TODAY] and every other one not yet completed is [DailySetState.OPEN]. With
+     * [oneADay] a Level opens when every Daily Set of the Levels before it is completed, today's
+     * Daily Set, if it can be started or continued, is [DailySetState.TODAY], and the rest are locked.
      */
     fun path(): PathView {
         val completed = progress.completedDailySets().keys
-        val offered = today()
-        val startable = offered == Today.DailySetAvailable || (offered is Today.InProgress && !offered.reviewOnly)
-        val todays = if (startable) course.path.firstOrNull { it.id !in completed }?.id else null
-        val opened = course.levels.filterIndexed { index, _ ->
-            course.levels.take(index).all { earlier -> earlier.units.all { unit -> unit.dailySets.all { it.id in completed } } }
+        val ownPace = !oneADay()
+        val todays = if (ownPace) {
+            atDailySet()
+        } else {
+            val offered = today()
+            val startable = offered == Today.DailySetAvailable || (offered is Today.InProgress && !offered.reviewOnly)
+            if (startable) atDailySet() else null
+        }
+        val opened = if (ownPace) {
+            course.levels
+        } else {
+            course.levels.filterIndexed { index, _ ->
+                course.levels.take(index).all { earlier -> earlier.units.all { unit -> unit.dailySets.all { it.id in completed } } }
+            }
         }
         return PathView(
             opened.map { level ->
@@ -321,7 +353,7 @@ class CourseEngine(
                                 val state = when (set.id) {
                                     in completed -> DailySetState.COMPLETED
                                     todays -> DailySetState.TODAY
-                                    else -> DailySetState.LOCKED
+                                    else -> if (ownPace) DailySetState.OPEN else DailySetState.LOCKED
                                 }
                                 DailySetView(set.id, ++number, state, title = set.tips.firstOrNull()?.let { localize(it.title) })
                             },
@@ -339,8 +371,14 @@ class CourseEngine(
      * Fails unless [today] is [Today.DailySetAvailable] or [Today.ReviewOnlyAvailable].
      * With [sound] false nothing is given to play: listening Exercises come in their reading form
      * and no Exercise or Feedback carries a Clip. It is not saved.
+     *
+     * With [dailySetId], at the Learner's own pace only, starts that Daily Set instead: any on the
+     * Path not yet completed, in any order. A different Daily Set in progress is forgotten, since
+     * one is kept in progress at a time; the one in progress itself is picked up where it was left.
+     * Fails with [oneADay], or for a Daily Set that is completed or not on the Path.
      */
-    fun startDailySet(sound: Boolean = true): Step {
+    fun startDailySet(sound: Boolean = true, dailySetId: String? = null): Step {
+        if (dailySetId != null) return startChosen(dailySetId, sound)
         val offered = today()
         check(offered == Today.DailySetAvailable || offered == Today.ReviewOnlyAvailable) {
             "No Daily Set is available to start: $offered"
@@ -353,7 +391,26 @@ class CourseEngine(
             playing = reviewOnly(state, sound)
             return next()
         }
-        val set = course.path.first { it.id !in completed }
+        return start(course.path.first { it.id !in completed }, sound)
+    }
+
+    private fun startChosen(dailySetId: String, sound: Boolean): Step {
+        check(!oneADay()) { "Only the next Daily Set can be started with One a day on" }
+        val set = course.path.firstOrNull { it.id == dailySetId }
+        check(set != null && dailySetId !in progress.completedDailySets()) {
+            "Daily Set $dailySetId is completed or not on the Path, so it cannot be started"
+        }
+        val saved = savedDailySet(sound)
+        if (saved != null && !saved.reviewOnly && saved.dailySet.id == dailySetId) {
+            playing = saved
+            return next()
+        }
+        return start(set, sound)
+    }
+
+    /** Starts [set] afresh, with its Review chosen now, in place of anything saved in progress. */
+    private fun start(set: DailySet, sound: Boolean): Step {
+        val completed = progress.completedDailySets()
         val review = chooseReview(course, completed, progress.itemProgress(), set, LocalDate.now(clock))
         val state = DailySetInProgress(
             dailySetId = set.id,
@@ -550,15 +607,19 @@ class CourseEngine(
     }
 
     /**
-     * The Unit the Daily Set just played completed, or null: when it was not the last of its Unit,
-     * is not finished, or was a Replay or a Review-only Daily Set.
+     * The Unit the Daily Set just played completed, or null: when it left a Daily Set of its Unit
+     * still to do, is not finished, or was a Replay or a Review-only Daily Set. Daily Sets done out
+     * of order complete their Unit with whichever of them is completed last.
      */
     fun unitCompleted(): UnitCompletedView? {
         val playing = playing ?: return null
         if (playing.replay || playing.reviewOnly || playing.state.remaining.isNotEmpty()) return null
+        val completed = progress.completedDailySets()
         for (level in course.levels) {
             level.units.forEachIndexed { index, unit ->
-                if (unit.dailySets.lastOrNull()?.id == playing.dailySet.id) return UnitCompletedView(index + 1, localize(unit.title))
+                if (unit.dailySets.any { it.id == playing.dailySet.id }) {
+                    return if (unit.dailySets.all { it.id in completed }) UnitCompletedView(index + 1, localize(unit.title)) else null
+                }
             }
         }
         return null

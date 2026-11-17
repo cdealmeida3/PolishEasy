@@ -14,6 +14,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.test.assert
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsOff
+import androidx.compose.ui.test.assertIsOn
+import androidx.compose.ui.test.hasAnyAncestor
+import androidx.compose.ui.test.isDialog
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
@@ -61,6 +64,8 @@ class PlayingADailySetOnScreenTest {
             shadowOf(app.packageManager).addActivityIfNotPresent(ComponentName(app, ComponentActivity::class.java))
             // The welcome is shown once; these tests start after it, except the one about it.
             Settings(app).welcomed = true
+            // Most of these tests are about One a day's rules; the ones about the Learner's own pace turn it off.
+            Settings(app).oneADay = true
         }
     }
 
@@ -443,6 +448,75 @@ class PlayingADailySetOnScreenTest {
     }
 
     @Test
+    fun `One a day is a switch in Settings, and turning it on is saved`() {
+        Settings(app).oneADay = false
+        openApp()
+        tap(R.string.nav_settings)
+        val oneADay = screen.onNodeWithText(text(R.string.settings_one_a_day))
+        oneADay.performScrollTo().assertIsOff()
+
+        oneADay.performClick()
+
+        oneADay.assertIsOn()
+        assertTrue(Settings(app).oneADay)
+    }
+
+    @Test
+    fun `at the Learner's own pace the next Daily Set can be started from Home straight after one is completed`() {
+        Settings(app).oneADay = false
+        openApp()
+        tap(R.string.home_start)
+        playDailySetOne()
+        shows(R.string.summary_start_next)
+        tap(R.string.summary_back_home)
+
+        shows(R.string.home_keep_going_headline)
+        shows(R.string.home_keep_going_title)
+        // The Streak card is heard as one sentence, so its note is looked for inside it.
+        screen.onNodeWithText(text(R.string.home_streak_note_safe), useUnmergedTree = true).assertExists()
+        absent(R.string.home_done)
+        tap(R.string.home_start)
+
+        shows(R.string.choose_translation_instruction)
+        shows("tak")
+    }
+
+    @Test
+    fun `at the Learner's own pace the Summary starts the next Daily Set`() {
+        Settings(app).oneADay = false
+        openApp()
+        tap(R.string.home_start)
+        playDailySetOne()
+
+        tap(R.string.summary_start_next)
+
+        shows("tak")
+    }
+
+    @Test
+    fun `at the Learner's own pace a Daily Set ahead is started from the Path, after asking when another is in progress`() {
+        Settings(app).oneADay = false
+        openApp()
+        tap(R.string.home_start)
+        tap(R.string.action_continue)
+        chooseHello()
+        back()
+        shows(text(R.string.home_in_progress, 1, 6))
+
+        tap(R.string.nav_path)
+        absent(R.string.path_unlocks_tomorrow)
+        screen.onNode(hasText(text(R.string.path_daily_set, 2)) and hasClickAction()).performClick()
+        shows(R.string.path_replace_title)
+        shows(text(R.string.path_replace_note, "The verb być"))
+        screen.onNode(hasText(text(R.string.path_replace_start)) and hasAnyAncestor(isDialog())).performClick()
+
+        shows("tak")
+        back()
+        // Daily Set 1's progress is gone: Home offers Daily Set 2, in progress.
+        shows(text(R.string.home_in_progress, 0, 2))
+    }
+
+    @Test
     fun `the packaged course opens`() {
         // The real course from the app's assets. Nothing here depends on what it teaches.
         openApp(CourseViewModel(app))
@@ -480,7 +554,7 @@ class PlayingADailySetOnScreenTest {
 
     private fun fixtureViewModel() = CourseViewModel(
         app,
-        CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock),
+        CourseEngine(fixtureCourse(), FileLearnerProgress(File(folder.root, "progress.json")), clock, oneADay = { Settings(app).oneADay }),
     )
 
     private fun back() = screen.runOnUiThread { screen.activity.onBackPressedDispatcher.onBackPressed() }

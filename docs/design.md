@@ -221,11 +221,11 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
   - **`SettingNotice`**: something in the way of a setting, such as notifications turned off in Android: `cautionContainer` with `medium` corners inside the card, a sentence in `bodyLarge` and the one `SecondaryButton` that fixes it. It is a caution, not an `error`: nothing broke.
   - **`SettingsFootnote`**: the version, centred in `labelSmall` under the cards.
 - **`Confetti`**: see Motion and touch. It is laid over the Summary's content, above the main button. A Replay gets none.
-- **The Summary** from the top: a cheer in Polish in `displaySmall` ("Brawo!", "Świetnie!", "Dobra robota!", taken in turn) with its meaning under it in `bodyMedium`, then what was finished in `titleLarge` ("Daily Set complete"), the `StreakHero` when the Streak went up, the `StatRow`, and "You learned" with an `ItemCard` for each Item. The list scrolls and fades out above the main button, which says "Done".
+- **The Summary** from the top: a cheer in Polish in `displaySmall` ("Brawo!", "Świetnie!", "Dobra robota!", taken in turn) with its meaning under it in `bodyMedium`, then what was finished in `titleLarge` ("Daily Set complete"), the `StreakHero` when the Streak went up, the `StatRow`, and "You learned" with an `ItemCard` for each Item. The list scrolls and fades out above the main button, which says "Done". At the Learner's own pace, after a new Daily Set with another one to start, the main button is "Start the next one" and "Done" is a `SecondaryButton` under it.
 - **Streak flame**: the flame icon in `streak` beside the number. With a Streak of zero the flame and the number are `outline`, not hidden.
 - **`UnitCard`**: a Unit on the Path. A `ContentCard` with "Unit N" in `titleSmall` in `primary`, the Unit's title in `titleLarge`, "4 of 7 completed" in `bodyMedium`, `ProgressSegments` with today's Daily Set outlined, and under them the Unit's stops. A Unit that is all completed has the `success` tick beside its title.
 - **`TrailStop`**: one Daily Set on a Unit's trail. Its node, then its title in `titleMedium` and under it a `bodyMedium` line with its number in its Unit and its state in words ("4 of 8 · Completed"). The stop the Learner is at has a `titleSmall` label above its title: "Today" in `primary`, or "Up next" in `onSurfaceVariant` when it unlocks tomorrow. A completed stop ends with the replay icon in `primary`. The whole stop is tapped as one, with no ripple: its node goes down. A locked stop's title is `onSurfaceVariant` and it is not tappable.
-- **Path node**: a 56 circle. Completed: `completed` fill with a tick in `onSuccess`, on the bottom edge in `completedEdge`. Today: `brand` fill with a play icon in `onBrand`, on the bottom edge in `brandEdge`, inside a 2 dp `brand` ring 72 across. Locked: `surfaceContainerHighest` with a lock icon in `onSurfaceVariant`, flat. Today's node sits on the card, never on a container colour.
+- **Path node**: a 56 circle. Completed: `completed` fill with a tick in `onSuccess`, on the bottom edge in `completedEdge`. Today: `brand` fill with a play icon in `onBrand`, on the bottom edge in `brandEdge`, inside a 2 dp `brand` ring 72 across. Open: `surfaceContainerHighest` with a play icon in `onSurfaceVariant`, on the bottom edge in `outlineVariant`. Locked: `surfaceContainerHighest` with a lock icon in `onSurfaceVariant`, flat. Today's node sits on the card, never on a container colour.
 - **The trail**: a 4 dp line joining a Unit's nodes. It is `completed` as far as the Learner has come, up to today's node, and `outlineVariant` beyond.
 - **`Journey`**: the Path's scrolling column. It opens already in place, with no visible jump (see The Path).
 
@@ -243,10 +243,13 @@ Home answers four things from the top down: hello, how the Streak stands, what t
 | --- | --- |
 | A Daily Set is ready | "Today", the Daily Set's topic as on the Path ("Czy and nie"), then "Unit 2 · About me · 4 of 8" over `UnitProgress`, `Teaches`, Start |
 | In progress | The same, with "N of M Exercises done" and Continue |
-| Done for today | The tick, "Done for today", "Your next Daily Set unlocks tomorrow.", a `SecondaryButton`, "Play a Game", which opens Practice, and a `QuietButton`, "Replay today's Daily Set", which counts for nothing and comes back to Home. Then an "Up next" card for the next Daily Set, with no button |
+| Done for today (One a day) | The tick, "Done for today", "Your next Daily Set unlocks tomorrow.", a `SecondaryButton`, "Play a Game", which opens Practice, and a `QuietButton`, "Replay today's Daily Set", which counts for nothing and comes back to Home. Then an "Up next" card for the next Daily Set, with no button |
+| Today's done, keep going (own pace) | The line under the greeting is "Today's done. Keep going?". The tick, "Today's done", a note that today counts for the Streak, and "Replay today's Daily Set". Then the card of the next Daily Set, or the Review, labelled "Up next", with its Start or Continue. The Streak's note is "Your Streak is safe for today." |
 | Review-only, ready or in progress | "Today", "Review", a note, Start or Continue |
 | Review-only, done | The tick, "Done for today", "All caught up. Your next Review unlocks tomorrow." and "Play a Game" |
 | Nothing left and nothing to review | The tick and "Every Daily Set completed" |
+
+At the Learner's own pace Practice is always open, so "Play a Game", a `SecondaryButton`, sits under the card whenever something has been completed. With One a day it is only on the done card.
 
 A Daily Set has one name and one number on every screen: its topic, the title of its first Tip, and its number in its Unit. The course-wide number is never shown. On screen a Review-only Daily Set is called a Review; the Glossary's term stays in the docs and the code.
 
@@ -254,7 +257,7 @@ A Daily Set has one name and one number on every screen: its topic, the title of
 
 ## The welcome
 
-A new Learner sees it once, before Home: "Cześć!" in `displayLarge` in `primary` with "hello" under it, "Polish, a little every day" in `headlineSmall`, three `Point`s (one Daily Set a day, about five minutes, the next one unlocks tomorrow) and one `PrimaryButton`, "Start my first Daily Set", which goes straight into it. There is nothing to choose and nothing to skip.
+A new Learner sees it once, before Home: "Cześć!" in `displayLarge` in `primary` with "hello" under it, "Polish, a little every day" in `headlineSmall`, three `Point`s (short Daily Sets, about five minutes, go at your own pace) and one `PrimaryButton`, "Start my first Daily Set", which goes straight into it. There is nothing to choose and nothing to skip.
 
 Home scrolls if the font size makes it too tall. Nothing on it moves at rest. Coming back from the Summary of the Daily Set that raised the Streak, Home shows it happen once: the number rolls, today's dot fills in and the "Done for today" card arrives.
 
@@ -266,20 +269,22 @@ The Path answers where the Learner is and how far they have come.
 - **A `UnitCard` for each Unit**, 16 apart, each holding its Daily Sets as `TrailStop`s and ending in a `TrailMilestone`.
 - **The road ahead is told a little at a time.** A Unit the Learner has not reached is only its heading, "Unit 3", its title and "8 Daily Sets · Locked", with an arrow; tapping the heading opens it and tapping again closes it.
 - **Completed stops are compact**, with a 40 node. **Today's stop has the room**: its ring, "Today", its title, what else it teaches ("Also today") and a `PrimaryButton`, Start or Continue, right there. The whole stop can still be tapped.
-- **A locked stop does not say "Locked"**: its padlock does, and a screen reader is still told. The next stop says "Unlocks tomorrow".
+- **A locked stop does not say "Locked"**: its padlock does, and a screen reader is still told. The next stop says "Unlocks tomorrow". Padlocks and "Unlocks tomorrow" appear only with One a day.
+- **At the Learner's own pace nothing is locked.** The stop they are at is labelled "Up next" until it is started, then "Today". Every other stop not completed is open: the plain node with a play arrow, which a screen reader hears as "Open", and tapping it starts that Daily Set. If another Daily Set is in progress a dialog asks first: "Start this one instead? Your progress in … will be lost." A Unit with nothing completed and not the one the Learner is at is only its heading, "8 Daily Sets", until it is tapped open.
 - **`TrailMilestone`**: the end of a Unit's trail, a 40 circle with a star. Grey with "End of Unit 2" until every Daily Set of the Unit is completed, then `streak` with "Unit 2 complete". The Summary of the Daily Set that completes a Unit says "Unit 2 complete" with the Unit's title in place of "Daily Set complete", and its confetti is doubled, once.
 - **A Daily Set's title is the title of its first Tip** (`docs/authoring.md`). A Daily Set with no Tip shows "Daily Set N" in its place, numbered within its Unit.
-- **Three states, each with its own icon**: a tick (completed), a play arrow in a ring (today), a lock (locked).
+- **Four states, each with its own node**: a tick (completed), a play arrow in a ring (today), a plain play arrow (open, own pace only), a lock (locked, One a day only).
 - **It opens at the stop the Learner is at**: the first Daily Set not yet completed. If that stop is within the top 60% of the screen when its Unit's card is at the top, the Path opens at the top of the card; otherwise the stop sits a third of the way down. With every Daily Set completed it opens at the top.
-- **Tapping** a completed stop starts a Replay, today's opens today's Daily Set, a locked one does nothing.
+- **Tapping** a completed stop starts a Replay, today's opens today's Daily Set, an open one starts it, a locked one does nothing.
 - With every Daily Set completed, a line after the last Unit says more Units are on the way.
 
 ## Settings
 
-Settings is quiet: three `SettingsCard`s, 16 apart, and nothing that moves.
+Settings is quiet: four `SettingsCard`s, 16 apart, and nothing that moves.
 
 - **The Reminder**: its switch, and when it is on, its time. If Android will not show notifications, a `SettingNotice` between them says so and opens Android's settings.
 - **Sound**: one switch.
+- **One new Daily Set a day**: one switch, off by default, with "Off: learn at your own pace, as many as you like. On: the next one opens tomorrow." It takes effect at once.
 - **Report a mistake**: a `LinkSetting` to the email app.
 - **The version**, 24 below the last card.
 
