@@ -23,6 +23,8 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 | Memory pairs | `engine/.../MemoryPairs.kt` |
 | Phrase chains | `engine/.../PhraseChains.kt` |
 | Sound gaps | `engine/.../SoundGaps.kt` |
+| Numbers (shown as "Number pad") | `engine/.../Numbers.kt` |
+| Mój, moja, moje | `engine/.../MojMojaMoje.kt` |
 | Listen and tap | `engine/.../ListenAndTap.kt` |
 
 A Round is an immutable value. Each move returns the next Round and never fails: a move that makes no sense now returns the Round unchanged. `Run<Q>` is the shared shape for a Game that is a list of questions.
@@ -87,6 +89,16 @@ A Game that shows Items side by side uses `Learned.unalike` to leave out any tha
 
 **Sound gaps** (Sounds). Opens with four learned Items that have a Clip and a hard sound, and only with sound on. A word is said and written with a gap where one of a set of spellings that sound alike is written; the Learner chooses the letters. The sets: sz · ś · s, cz · ć · c, ż · ź · z, dz · dź · dż, l · ł, e · ę, a · ą, n · ń. Ways to play: one set, offered with four Items or more, or mixed. A Round is up to ten words. The gap is derived from the Item's text: two letters written for one sound are one piece, a capital is never a gap, and neither is a spelling softened by the i after it (the *s* of *siedem* is said as ś). Only the right letters are ever written into the word, so no invented spelling is shown as one. A gap whose wrong option would spell a real word is never asked: those words are listed in `content/practice/practice.json`, and the [Polish check](polish-check.md) fails until every one is. The result is the answers right first try.
 
+**Numbers** (Numbers; its card says "Number pad", so the group's heading is not repeated). Opens with four learned numbers. A number is an Item whose Picture is a numeral, and "plus" is the Item whose Picture is the sign, so the Game needs no content of its own. Ways to play: the number heard (with sound on) or read as its Polish words; 0 to 10; 0 to 20, once a number above ten is learned; runs of three digits, said as three Clips one after the other; sums of two learned numbers that come to a learned number, once "plus" is learned. The Learner types on a keypad of up to three digits, whose last key checks. A run is typed digit for digit; a number may have a zero in front. A Round is up to ten numbers, six runs or eight sums. The result is the answers right first try.
+
+**Mój, moja, moje** (Words). Opens with two of the words for "my" and four nouns that go with them. A noun is shown, with its Picture when it has one, and the Learner taps the word for "my" that goes with it. A noun is asked only once its own word is learned, so *dziecko* waits for *moje*. Ways to play: the noun written with its meaning, heard (with sound on), or given by its meaning alone. Each word counts the nouns that belong under it so far. Answered, the two words are written together and said, where there is a Clip of them, and if not the noun is. A Round is up to ten nouns. The result is the answers right first try. When a Unit teaches *ten, ta, to*, the same rules can sort under those.
+
 ## What Practice needs from the content
 
-`course.json` may name one file, `"practice": "practice/practice.json"`, for what the Games need to know that no Item says. Today it holds `realWords`, for Sound gaps. After adding or changing Items, run `./gradlew :polishcheck:checkPolish`: it names any new wrong spelling that is a real word, to add to the list.
+`course.json` may name one file, `"practice": "practice/practice.json"`, for what the Games need to know that no Item says. It holds:
+
+- `realWords`, for Sound gaps. After adding or changing Items, run `./gradlew :polishcheck:checkPolish`: it names any new wrong spelling that is a real word, to add to the list.
+- `genders`, for Mój, moja, moje: the id of each noun Item to sort and `"m"`, `"f"` or `"n"`. List a noun in the form a dictionary gives (*siostra*, not *siostrę*), one word, and only where "my" with it makes sense. The Polish check confirms each gender against the dictionary.
+- `my`: the Item that says "my" for each gender, `{ "m": "moj", "f": "moja", "n": "moje" }`.
+
+A new Unit adds its nouns to `genders`.

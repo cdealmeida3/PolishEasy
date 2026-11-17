@@ -192,6 +192,7 @@ private fun Round(screen: Screen.Round, viewModel: CourseViewModel, player: Clip
             sound = showing.sound,
             clipOf = viewModel::practiceClipOf,
             onPlay = { clip -> if (step == current) player.play(clip.path) },
+            onPlayAll = { clips -> if (step == current) player.playAll(clips.map { it.path }) },
             onMove = { round -> if (step == current) viewModel.move(round) },
             onFinish = { if (step == current) viewModel.endRound() },
         )

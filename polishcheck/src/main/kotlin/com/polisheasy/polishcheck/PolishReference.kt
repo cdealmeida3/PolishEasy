@@ -44,6 +44,18 @@ class PolishReference {
     /** Whether [word] is a form in the dictionary. Capitals are ignored: "polski" and "Polski" are both known. */
     fun knows(word: String): Boolean = readings(word).isNotEmpty()
 
+    /**
+     * The genders ("m", "f", "n") the reference gives [word] read as a singular nominative of the
+     * part of speech [kind], "subst" for a noun or "adj" for a word that agrees with one. Empty
+     * when it has no such reading.
+     */
+    fun genders(word: String, kind: String): Set<String> =
+        readings(word).flatMap { it.split('+') }.map { it.split(':') }
+            .filter { it.size >= 4 && it[0] == kind && "sg" in it[1].split('.') && "nom" in it[2].split('.') }
+            .flatMap { it[3].split('.') }
+            .mapNotNull { tag -> tag.firstOrNull()?.toString()?.takeIf { it in setOf("m", "f", "n") } }
+            .toSet()
+
     /** The reference forms of [verb] for [person]; empty when the reference does not know the verb. */
     fun conjugation(verb: String, person: Person): Set<String> =
         synthesizer.synthesize(AnalyzedToken(verb, null, verb), "verb:fin:${person.tag}:.*", true).toSet()

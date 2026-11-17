@@ -18,6 +18,9 @@ interface Clips {
     /** Plays the Clip at [path] in the app's assets from its start, in place of whatever is playing. */
     fun play(path: String, slow: Boolean = false)
 
+    /** Plays the Clips at [paths] one after the other, in place of whatever is playing. */
+    fun playAll(paths: List<String>)
+
     fun stop()
 
     /** Whether a Clip is being heard right now. The screens watch it. */
@@ -50,6 +53,13 @@ class ClipPlayer(context: Context) : Clips {
         player.setMediaItem(MediaItem.fromUri("asset:///$path"))
         // Slowed in software with the pitch kept, so it sounds the same on every phone.
         player.setPlaybackParameters(PlaybackParameters(if (slow) SLOW_SPEED else 1f))
+        player.prepare()
+        player.play()
+    }
+
+    override fun playAll(paths: List<String>) {
+        player.setMediaItems(paths.map { MediaItem.fromUri("asset:///$it") })
+        player.setPlaybackParameters(PlaybackParameters(1f))
         player.prepare()
         player.play()
     }

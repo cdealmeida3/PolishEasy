@@ -56,6 +56,10 @@ class RecordingClips : Clips {
         asked += Played(path, slow)
     }
 
+    override fun playAll(paths: List<String>) {
+        asked += paths.map { Played(it, slow = false) }
+    }
+
     override fun stop() {
         asked += Stopped
     }

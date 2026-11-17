@@ -21,6 +21,10 @@ internal data class CourseFile(
 internal data class PracticeFile(
     /** Real Polish words that a wrong option of Sound gaps would spell: a gap that would offer one is never asked. */
     val realWords: List<String> = emptyList(),
+    /** The gender of each noun Item that Mój, moja, moje asks: its id, and "m", "f" or "n". */
+    val genders: Map<String, String> = emptyMap(),
+    /** The Item that says "my" with a noun of each gender: "m", "f" or "n", and its id. */
+    val my: Map<String, String> = emptyMap(),
 )
 
 @Serializable
@@ -117,6 +121,8 @@ internal class ReadContent(
             // The first picture of an Item is the one used; a second is reported, not loaded.
             pictures.reversed().mapNotNull { (_, entry) -> pictureOf(entry, pictureDir)?.let { entry.item to it } }.toMap(),
             practice?.realWords.orEmpty().map { it.lowercase(Locale.ROOT) }.toSet(),
+            practice?.genders.orEmpty().mapNotNull { (item, gender) -> Gender.of(gender)?.let { item to it } }.toMap(),
+            practice?.my.orEmpty().mapNotNull { (gender, item) -> Gender.of(gender)?.let { it to item } }.toMap(),
         )
     }
 
@@ -241,6 +247,28 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         }
         words.map { it.lowercase(Locale.ROOT) }.repeated().forEach { word ->
             problems += ContentProblem(file, null, "The real word \"$word\" is listed more than once")
+        }
+    }
+    content.practice?.let { practice ->
+        val file = content.practiceFile.orEmpty()
+        val known = Gender.entries.joinToString(", ") { "\"${it.id}\"" }
+        practice.genders.forEach { (item, gender) ->
+            val defined = course.itemsById[item]
+            if (content.itemsComplete && defined == null) {
+                problems += ContentProblem(file, item, "A gender is given for Item $item, which is not defined")
+            } else if (defined != null && defined.text.any(Char::isWhitespace)) {
+                problems += ContentProblem(file, item, "A gender is given for Item $item, which is not one word: \"${defined.text}\"")
+            }
+            if (Gender.of(gender) == null) problems += ContentProblem(file, item, "The gender of Item $item is \"$gender\"; it must be one of $known")
+        }
+        practice.my.forEach { (gender, item) ->
+            if (Gender.of(gender) == null) problems += ContentProblem(file, item, "\"$gender\" is not a gender to give a word for \"my\"; it must be one of $known")
+            if (content.itemsComplete && item !in course.itemsById) {
+                problems += ContentProblem(file, item, "The word for \"my\" is given as Item $item, which is not defined")
+            }
+        }
+        practice.genders.values.toSet().filter { Gender.of(it) != null && it !in practice.my }.forEach { gender ->
+            problems += ContentProblem(file, null, "Nouns are given the gender \"$gender\", and no word for \"my\" is given for it")
         }
     }
     content.pictures.map { it.value.item }.repeated().forEach { item ->

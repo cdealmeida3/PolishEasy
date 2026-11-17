@@ -15,6 +15,9 @@ enum class Pass(val title: String) {
     /** The wrong spellings Sound gaps offers: none may be a real word. */
     SOUND_GAPS("Sound gaps"),
 
+    /** The gender the practice file gives each noun and each word for "my": the dictionary must agree. */
+    GENDERS("Genders"),
+
     /** Not a pass over the content: what is wrong with `polish-accepted.json` itself. */
     ACCEPTANCES("Accepted problems"),
 }
@@ -194,6 +197,19 @@ fun checkPolish(content: PolishContent, reference: PolishReference, reviews: Rev
         )
     }
 
+    // Genders: a noun sorted under the wrong word would teach the wrong word.
+    fun confirm(word: com.polisheasy.engine.GenderedWord, kind: String, what: String) {
+        val genders = reference.genders(word.text, kind)
+        val message = when {
+            genders.isEmpty() -> "${word.text} is given the gender \"${word.gender.id}\", and the dictionary does not know it as $what"
+            word.gender.id !in genders -> "${word.text} is given the gender \"${word.gender.id}\", and the dictionary says ${genders.joinToString(" or ") { "\"$it\"" }}"
+            else -> return
+        }
+        found += PolishProblem(Pass.GENDERS, "gender: ${word.text}", message, listOf(Place(practiceFile, word.itemId)))
+    }
+    content.nouns.forEach { confirm(it, "subst", "a noun in the form a dictionary lists") }
+    content.possessives.forEach { confirm(it, "adj", "a word that goes with a noun") }
+
     // Review
     val sentencesToReview = mutableListOf<SentenceReview>()
     val tipsToReview = mutableListOf<TipReview>()
@@ -256,6 +272,7 @@ fun checkPolish(content: PolishContent, reference: PolishReference, reviews: Rev
             Pass.GRAMMAR to content.sentences.size,
             Pass.REVIEW to content.sentences.size + content.tips.size,
             Pass.SOUND_GAPS to offered.size,
+            Pass.GENDERS to content.nouns.size + content.possessives.size,
         ),
         toReview = Reviews(sentencesToReview, tipsToReview),
         sentences = content.sentences.size,

@@ -4,6 +4,8 @@ import com.polisheasy.engine.Person
 import com.polisheasy.engine.PolishContent
 import com.polisheasy.engine.PolishRole
 import com.polisheasy.engine.PolishSentence
+import com.polisheasy.engine.Gender
+import com.polisheasy.engine.GenderedWord
 import com.polisheasy.engine.PolishUse
 import com.polisheasy.engine.SoundGap
 import com.polisheasy.engine.SoundGroup
@@ -93,6 +95,56 @@ internal class CheckingPolishTest {
 
         assertEquals("real-word: śukam", problem.key)
         assertEquals(listOf(Place("practice/practice.json", null)), problem.places)
+    }
+
+    // Genders
+
+    private fun gendered(nouns: List<GenderedWord>, my: List<GenderedWord> = emptyList()) =
+        PolishContent(emptyList(), emptyList(), emptyList(), emptyList(), practiceFile = "practice/practice.json", nouns = nouns, possessives = my)
+
+    @Test
+    fun `nouns and words for my with the gender the dictionary gives them pass`() {
+        val content = gendered(
+            // "tata" ends like a feminine noun and is masculine.
+            listOf(
+                GenderedWord("tata", "tata", Gender.MASCULINE),
+                GenderedWord("siostra", "siostra", Gender.FEMININE),
+                GenderedWord("dziecko", "dziecko", Gender.NEUTER),
+                GenderedWord("maz", "mąż", Gender.MASCULINE),
+            ),
+            listOf(GenderedWord("moj", "mój", Gender.MASCULINE), GenderedWord("moja", "moja", Gender.FEMININE), GenderedWord("moje", "moje", Gender.NEUTER)),
+        )
+
+        val report = check(content)
+
+        assertEquals(emptyList(), report.problems)
+        assertEquals(7, report.looked[Pass.GENDERS])
+    }
+
+    @Test
+    fun `a noun given the wrong gender is a problem that names the gender the dictionary gives`() {
+        val problem = check(gendered(listOf(GenderedWord("tata", "tata", Gender.FEMININE)))).problems.single()
+
+        assertEquals(Pass.GENDERS, problem.pass)
+        assertEquals("gender: tata", problem.key)
+        assertTrue("\"m\"" in problem.message, problem.message)
+        assertEquals(listOf(Place("practice/practice.json", "tata")), problem.places)
+    }
+
+    @Test
+    fun `a noun in another form than the dictionary lists, and a word that is no noun, are problems`() {
+        // "siostrę" is the form after "mam"; "bardzo" is not a noun at all.
+        val problems = check(gendered(listOf(GenderedWord("siostra-acc", "siostrę", Gender.FEMININE), GenderedWord("bardzo", "bardzo", Gender.NEUTER)))).problems
+
+        assertEquals(listOf("gender: siostrę", "gender: bardzo"), problems.map { it.key })
+    }
+
+    @Test
+    fun `a word for my given the wrong gender is a problem`() {
+        val problem = check(gendered(emptyList(), listOf(GenderedWord("moja", "moja", Gender.MASCULINE)))).problems.single()
+
+        assertEquals("gender: moja", problem.key)
+        assertTrue("\"f\"" in problem.message, problem.message)
     }
 
     // Dictionary

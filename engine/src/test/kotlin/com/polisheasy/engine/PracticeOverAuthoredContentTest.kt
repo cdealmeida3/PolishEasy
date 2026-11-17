@@ -199,6 +199,59 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Numbers asks only numbers that have been learned, at every level it offers`() {
+        val offered = mutableSetOf<String>()
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.mapNotNull(course.itemsById::get).map { it.text }.toSet()
+            val practice = practiceAfter(days)
+            if (practice.view().games.single { it.game == Game.NUMBERS }.state != GameState.READY) return@forEach
+            practice.setup(Game.NUMBERS).choices[0].options.forEach { clue ->
+                practice.setup(Game.NUMBERS, listOf(clue.id)).choices[1].options.forEach { level ->
+                    offered += level.id
+                    val round = practice.start(practice.setup(Game.NUMBERS, listOf(clue.id, level.id))) as NumberRound
+                    val about = "After $days Daily Sets, ${clue.id} ${level.id}"
+                    assertTrue(round.total >= Numbers.LEAST, about)
+                    round.run.questions.forEach { question ->
+                        assertTrue(learned.containsAll(question.words), "$about: $question")
+                        if (round.listen) question.words.forEach { assertTrue(practice.clipOf(it) != null, "$about: no Clip for $it") }
+                        assertTrue(question.answer.length <= Numbers.MOST_DIGITS && question.answer.all(Char::isDigit), "$about: $question")
+                    }
+                }
+            }
+        }
+        assertEquals(setOf(Numbers.TO_10, Numbers.TO_20, Numbers.RUNS, Numbers.SUMS), offered)
+        assertEquals((0..20).toSet(), course.pictures.values.mapNotNull { (it as? Picture.Glyph)?.text?.toIntOrNull() }.toSet())
+    }
+
+    @Test
+    fun `Mój, moja, moje asks only nouns that have been learned, under words for my that have been`() {
+        var opened = false
+        (1..course.path.size).forEach { days ->
+            val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()
+            val practice = practiceAfter(days)
+            if (practice.view().games.single { it.game == Game.MOJ_MOJA_MOJE }.state != GameState.READY) return@forEach
+            opened = true
+            practice.setup(Game.MOJ_MOJA_MOJE).choices.single().options.forEach { clue ->
+                val round = practice.start(practice.setup(Game.MOJ_MOJA_MOJE, listOf(clue.id))) as GenderRound
+                val about = "After $days Daily Sets, ${clue.id}"
+                assertTrue(round.buckets.size >= 2, about)
+                assertTrue(round.buckets.all { bucket -> course.possessives.getValue(bucket.gender) in learned }, about)
+                round.run.questions.forEach { question ->
+                    assertTrue(question.itemId in learned, about)
+                    assertEquals(course.genders[question.itemId], question.gender, about)
+                    assertTrue(round.buckets.any { it.gender == question.gender }, "$about: $question")
+                    if (round.clue == NounClue.LISTEN) assertTrue(practice.clipOf(question.polish) != null, "$about: no Clip for ${question.polish}")
+                }
+            }
+        }
+        assertTrue(opened)
+        // By the end all three words for "my" are there to sort under.
+        val last = practiceAfter(course.path.size)
+        assertEquals(3, (last.start(last.setup(Game.MOJ_MOJA_MOJE)) as GenderRound).buckets.size)
+        assertEquals(Gender.entries.toSet(), course.genders.values.toSet())
+    }
+
+    @Test
     fun `every picture is of a word that can be pictured without knowing Polish, once`() {
         // A numeral stands for its number and nothing else.
         val numerals = course.pictures.filterValues { it is Picture.Glyph }
