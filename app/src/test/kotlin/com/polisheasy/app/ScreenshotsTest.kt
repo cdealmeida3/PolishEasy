@@ -89,6 +89,8 @@ import com.polisheasy.engine.DirectionsRound
 import com.polisheasy.engine.SwapRound
 import com.polisheasy.engine.PackagingRound
 import com.polisheasy.engine.HowManyRound
+import com.polisheasy.engine.ForecasterRound
+import com.polisheasy.engine.WordSearchRound
 import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.SaidTime
 import com.polisheasy.engine.TreeRound
@@ -2739,6 +2741,81 @@ class ScreenshotsTest {
         tap(R.string.action_continue)
         screen.mainClock.advanceTimeBy(60_000)
         shot("277-times-result")
+    }
+
+    @Test
+    fun `Forecaster and Word search over the real course in the light theme`() = chapter16Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Forecaster and Word search over the real course in the dark theme`() = chapter16Games("dark")
+
+    @Test
+    fun `Forecaster and Word search over the real course at the largest font size`() = atTheLargestFontSize { chapter16Games("large") }
+
+    /**
+     * Chapter 16's Games: Forecaster's setup, a forecast, its card being made, a wrong card, a right
+     * one, and the result; then Word search's setup, the grid, a first letter picked, words found and
+     * a wrong mark, and the result.
+     */
+    private fun chapter16Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun forecaster() = (viewModel?.screen as Screen.Round).round as ForecasterRound
+
+        fun wordSearch() = (viewModel?.screen as Screen.Round).round as WordSearchRound
+
+        fun move(round: com.polisheasy.engine.Round) {
+            screen.runOnUiThread { checkNotNull(viewModel).move(round) }
+            screen.waitForIdle()
+        }
+
+        fun fill(right: Boolean) {
+            var round = forecaster()
+            val question = checkNotNull(round.question)
+            question.wanted.forEach { round = round.place(it) }
+            if (!right) round = round.place(question.board.first { it.id !in question.wanted }.id)
+            move(round.pick(question.degrees))
+        }
+
+        openRealPractice()
+        openGame(R.string.game_forecaster)
+        shot("340-forecaster-setup")
+        tap(R.string.setup_play)
+        shot("341-forecaster-forecast")
+        fill(right = false)
+        shot("342-forecaster-card")
+        tap(R.string.forecaster_send)
+        shot("343-forecaster-wrong")
+        tap(R.string.action_continue)
+        fill(right = true)
+        tap(R.string.forecaster_send)
+        shot("344-forecaster-right")
+        tap(R.string.action_continue)
+        while (viewModel?.screen is Screen.Round) {
+            fill(right = true)
+            tap(R.string.forecaster_send)
+            tap(R.string.action_continue)
+        }
+        shot("345-forecaster-result")
+        tap(R.string.result_done)
+
+        openGame(R.string.game_word_search)
+        shot("346-word-search-setup")
+        tap(R.string.setup_play)
+        shot("347-word-search-grid")
+        val words = wordSearch().words
+        move(wordSearch().tap(words[0].letters.first()))
+        shot("348-word-search-picked")
+        move(wordSearch().tap(words[0].letters.last()).tap(words[1].letters.first()).tap(words[1].letters.last()))
+        move(wordSearch().tap(com.polisheasy.engine.Cell(0, 0)).tap(com.polisheasy.engine.Cell(1, 1)))
+        shot("349-word-search-found")
+        screen.mainClock.autoAdvance = false
+        move(words.drop(2).fold(wordSearch()) { round, word -> round.tap(word.letters.first()).tap(word.letters.last()) })
+        screen.mainClock.advanceTimeBy(2_000)
+        screen.mainClock.autoAdvance = true
+        screen.waitForIdle()
+        shot("350-word-search-result")
     }
 
     @Test

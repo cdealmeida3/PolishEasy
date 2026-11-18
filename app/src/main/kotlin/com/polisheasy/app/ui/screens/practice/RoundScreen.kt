@@ -43,6 +43,8 @@ import com.polisheasy.engine.DirectionsRound
 import com.polisheasy.engine.SwapRound
 import com.polisheasy.engine.PackagingRound
 import com.polisheasy.engine.HowManyRound
+import com.polisheasy.engine.ForecasterRound
+import com.polisheasy.engine.WordSearchRound
 import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.FlipRound
 import com.polisheasy.engine.TimeRound
@@ -110,6 +112,8 @@ internal fun RoundScreen(
         is SwapRound -> PronounSwapStep(round, say, onMove)
         is PackagingRound -> PackagingStep(round, say, onMove)
         is HowManyRound -> HowManyStep(round, say, onMove)
+        is ForecasterRound -> ForecasterStep(round, say, onMove)
+        is WordSearchRound -> WordSearchStep(round, say, onMove, onFinish)
         else -> error("No screen for a Round of ${round.game}")
     }
 }

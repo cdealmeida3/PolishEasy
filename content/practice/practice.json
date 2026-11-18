@@ -3326,5 +3326,152 @@
         "koperta"
       ]
     }
-  ]
+  ],
+  "forecasts": [
+    {
+      "text": "Jutro będzie świecić słońce. Będzie dwadzieścia stopni.",
+      "meaning": {
+        "en": "Tomorrow the sun will shine. It will be twenty degrees."
+      },
+      "weather": ["swieci-slonce"],
+      "degrees": 20,
+      "items": ["jutro", "bedzie-swiecic-slonce", "bedzie", "dwadziescia", "stopien"]
+    },
+    {
+      "text": "Jutro będzie padać deszcz i będzie wiać wiatr. Będzie dziesięć stopni.",
+      "meaning": {
+        "en": "Tomorrow it will rain and it will be windy. It will be ten degrees."
+      },
+      "weather": ["pada-deszcz", "wieje-wiatr"],
+      "degrees": 10,
+      "items": ["jutro", "bedzie-padac", "pada-deszcz", "i", "bedzie-wiac-wiatr", "bedzie", "dziesiec", "stopien"]
+    },
+    {
+      "text": "W nocy będzie mróz. Będzie pięć stopni poniżej zera.",
+      "meaning": {
+        "en": "At night there will be frost. It will be five degrees below zero."
+      },
+      "weather": ["mroz"],
+      "degrees": -5,
+      "items": ["w-nocy", "bedzie", "mroz", "piec", "stopien", "ponizej-zera"]
+    },
+    {
+      "text": "Jutro będzie padać śnieg. Będą dwa stopnie poniżej zera.",
+      "meaning": {
+        "en": "Tomorrow it will snow. It will be two degrees below zero."
+      },
+      "weather": ["pada-snieg"],
+      "degrees": -2,
+      "items": ["jutro", "bedzie-padac", "pada-snieg", "beda", "dwa", "stopien", "ponizej-zera"]
+    },
+    {
+      "text": "Rano będzie mgła, a potem będzie pochmurno. Będzie osiem stopni.",
+      "meaning": {
+        "en": "In the morning there will be fog, and then it will be cloudy. It will be eight degrees."
+      },
+      "weather": ["mgla", "pochmurno"],
+      "degrees": 8,
+      "items": ["rano", "bedzie", "mgla", "a", "potem", "pochmurno", "osiem", "stopien"]
+    },
+    {
+      "text": "Wieczorem będzie burza. Będzie dwadzieścia pięć stopni.",
+      "meaning": {
+        "en": "In the evening there will be a storm. It will be twenty-five degrees."
+      },
+      "weather": ["burza"],
+      "degrees": 25,
+      "items": ["wieczorem", "bedzie", "burza", "dwadziescia", "piec", "stopien"]
+    },
+    {
+      "text": "W sobotę będzie pochmurno i będzie wiać wiatr. Będzie dwanaście stopni.",
+      "meaning": {
+        "en": "On Saturday it will be cloudy and windy. It will be twelve degrees."
+      },
+      "weather": ["pochmurno", "wieje-wiatr"],
+      "degrees": 12,
+      "items": ["sobota", "bedzie", "pochmurno", "i", "bedzie-wiac-wiatr", "dwanascie", "stopien"]
+    },
+    {
+      "text": "W niedzielę będzie świecić słońce, ale będzie zimno. Będą trzy stopnie poniżej zera.",
+      "meaning": {
+        "en": "On Sunday the sun will shine, but it will be cold. It will be three degrees below zero."
+      },
+      "weather": ["swieci-slonce"],
+      "degrees": -3,
+      "items": ["niedziela", "bedzie-swiecic-slonce", "ale", "bedzie", "zimno", "beda", "trzy", "stopien", "ponizej-zera"]
+    },
+    {
+      "text": "Jutro będzie padać deszcz. Będzie piętnaście stopni.",
+      "meaning": {
+        "en": "Tomorrow it will rain. It will be fifteen degrees."
+      },
+      "weather": ["pada-deszcz"],
+      "degrees": 15,
+      "items": ["jutro", "bedzie-padac", "pada-deszcz", "bedzie", "pietnascie", "stopien"]
+    },
+    {
+      "text": "Jutro będzie pochmurno, ale nie będzie padać. Będą cztery stopnie.",
+      "meaning": {
+        "en": "Tomorrow it will be cloudy, but it will not rain. It will be four degrees."
+      },
+      "weather": ["pochmurno"],
+      "degrees": 4,
+      "items": ["jutro", "bedzie", "pochmurno", "ale", "nie", "bedzie-padac", "beda", "cztery", "stopien"]
+    },
+    {
+      "text": "Rano będzie mgła. Będzie zero stopni.",
+      "meaning": {
+        "en": "In the morning there will be fog. It will be zero degrees."
+      },
+      "weather": ["mgla"],
+      "degrees": 0,
+      "items": ["rano", "bedzie", "mgla", "zero", "stopien"]
+    },
+    {
+      "text": "W górach będzie padać śnieg i będzie wiać wiatr. Będzie dziesięć stopni poniżej zera.",
+      "meaning": {
+        "en": "In the mountains it will snow and it will be windy. It will be ten degrees below zero."
+      },
+      "weather": ["pada-snieg", "wieje-wiatr"],
+      "degrees": -10,
+      "items": ["w-gorach", "bedzie-padac", "pada-snieg", "i", "bedzie-wiac-wiatr", "bedzie", "dziesiec", "stopien", "ponizej-zera"]
+    },
+    {
+      "text": "Na plaży będzie świecić słońce. Będzie trzydzieści stopni.",
+      "meaning": {
+        "en": "On the beach the sun will shine. It will be thirty degrees."
+      },
+      "weather": ["swieci-slonce"],
+      "degrees": 30,
+      "items": ["na-plazy", "bedzie-swiecic-slonce", "bedzie", "trzydziesci", "stopien"]
+    },
+    {
+      "text": "Po południu będzie burza i będzie padać deszcz. Będzie osiemnaście stopni.",
+      "meaning": {
+        "en": "In the afternoon there will be a storm and it will rain. It will be eighteen degrees."
+      },
+      "weather": ["burza", "pada-deszcz"],
+      "degrees": 18,
+      "items": ["po-poludniu", "bedzie", "burza", "i", "bedzie-padac", "pada-deszcz", "osiemnascie", "stopien"]
+    },
+    {
+      "text": "W nocy będzie mróz i mgła. Będzie siedem stopni poniżej zera.",
+      "meaning": {
+        "en": "At night there will be frost and fog. It will be seven degrees below zero."
+      },
+      "weather": ["mroz", "mgla"],
+      "degrees": -7,
+      "items": ["w-nocy", "bedzie", "mroz", "i", "mgla", "siedem", "stopien", "ponizej-zera"]
+    },
+    {
+      "text": "Jutro będzie wiać wiatr, ale będzie świecić słońce. Będzie sześć stopni.",
+      "meaning": {
+        "en": "Tomorrow it will be windy, but the sun will shine. It will be six degrees."
+      },
+      "weather": ["wieje-wiatr", "swieci-slonce"],
+      "degrees": 6,
+      "items": ["jutro", "bedzie-wiac-wiatr", "ale", "bedzie-swiecic-slonce", "bedzie", "szesc", "stopien"]
+    }
+  ],
+  "wordSearch": ["styczen", "luty", "marzec", "kwiecien", "maj", "czerwiec", "lipiec", "sierpien", "wrzesien", "pazdziernik", "listopad", "grudzien", "wiosna", "lato", "jesien", "zima"]
 }

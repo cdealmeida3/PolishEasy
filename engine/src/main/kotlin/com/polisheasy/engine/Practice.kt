@@ -76,6 +76,10 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     PACKAGING("packaging", GameGroup.WORDS),
     /** Chapter 15's Game: a picture shown two to ten times and the phrase that counts them: pięć butelek, not pięć butelki. */
     HOW_MANY("how-many", GameGroup.WORDS),
+    /** Chapter 16's Game: tomorrow's forecast heard or read, and its card made: the weather signs it names and its temperature. */
+    FORECASTER("forecaster", GameGroup.PHRASES),
+    /** Chapter 16's Game: learned words hidden in a grid of letters, found by what they mean. */
+    WORD_SEARCH("word-search", GameGroup.WORDS),
 }
 
 /** Whether a Game can be played now. */
@@ -281,7 +285,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt, Directions, PronounSwap, PackagingMatch, HowMany).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt, Directions, PronounSwap, PackagingMatch, HowMany, Forecaster, WordSearch).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

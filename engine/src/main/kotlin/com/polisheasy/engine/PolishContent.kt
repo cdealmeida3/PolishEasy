@@ -152,6 +152,10 @@ fun polishContent(files: ContentFiles): PolishContent {
         content.practice?.counting.orEmpty().forEachIndexed { index, phrase ->
             sentence(phrase.text, phrase.meaning, PolishUse(file, "counting/${index + 1}", PolishRole.ANSWER))
         }
+        // Forecaster's forecasts.
+        content.practice?.forecasts.orEmpty().forEachIndexed { index, forecast ->
+            sentence(forecast.text, forecast.meaning, PolishUse(file, "forecasts/${index + 1}", PolishRole.ANSWER))
+        }
         content.course().allClockTimes().forEach { time ->
             sentence(time.polish, mapOf(language to "${time.hour}:${time.minute.toString().padStart(2, '0')}"), PolishUse(file, "clock", PolishRole.ANSWER))
         }

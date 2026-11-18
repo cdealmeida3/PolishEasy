@@ -82,6 +82,10 @@ data class Course(
     val packaging: List<PackagePhrase> = emptyList(),
     /** The phrases of How many?, in the content's order. */
     val counting: List<CountPhrase> = emptyList(),
+    /** The forecasts of Forecaster, in the content's order. */
+    val forecasts: List<Forecast> = emptyList(),
+    /** The Items Word search hides, in the content's order. */
+    val wordSearch: List<String> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

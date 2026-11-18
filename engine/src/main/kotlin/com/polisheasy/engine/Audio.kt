@@ -70,7 +70,8 @@ fun Course.spokenTexts(): List<String> =
             routes.map { it.text } +
             swaps.flatMap { listOf(it.text, it.short) } +
             packaging.map { it.text } +
-            counting.map { it.text }
+            counting.map { it.text } +
+            forecasts.map { it.text }
         )
         .distinctBy(::audioKey)
 
