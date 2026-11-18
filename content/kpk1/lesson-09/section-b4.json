@@ -1,0 +1,411 @@
+{
+  "id": "kpk1-l09-b4",
+  "section": {
+    "letter": "B",
+    "heading": "Na targu",
+    "meaning": {
+      "en": "At the market"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-b4-t01",
+      "before": "kpk1-l09-b4-e01",
+      "title": {
+        "en": "Natka i korzeń"
+      },
+      "body": {
+        "en": "*Pietruszka* is two things in Polish: *natka* (the green leaves, for the top of a soup or potatoes) and *korzeń* (the white root, for the soup itself). The seller asks *Natka czy korzeń?*"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b4-e01",
+      "prompt": "natka",
+      "options": [
+        {
+          "en": "a root"
+        },
+        {
+          "en": "basil"
+        },
+        {
+          "en": "the green leaves of parsley"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "natka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b4-e02",
+      "prompt": "korzeń",
+      "options": [
+        {
+          "en": "a root"
+        },
+        {
+          "en": "the green leaves of parsley"
+        },
+        {
+          "en": "a fruit (owoce: fruit, several)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "korzen"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-b4-e03",
+      "text": "natka czy korzeń?",
+      "meaning": {
+        "en": "the leaves or the root?"
+      },
+      "distractors": [
+        "natka czy pietruszka?",
+        "korzeń czy seler?"
+      ],
+      "items": [
+        "natka",
+        "czy",
+        "korzen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b4-e04",
+      "prompt": "kilogram",
+      "options": [
+        {
+          "en": "half a kilo"
+        },
+        {
+          "en": "a kilogram"
+        },
+        {
+          "en": "a product, an ingredient (produkty: products)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kilogram"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-b4-e05",
+      "text": "Kilo to ___.",
+      "meaning": {
+        "en": "A kilo is a kilogram."
+      },
+      "gaps": [
+        [
+          "kilogram"
+        ]
+      ],
+      "distractors": [
+        "pół kilo",
+        "kilka"
+      ],
+      "items": [
+        "kilo",
+        "to",
+        "kilogram"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b4-e06",
+      "prompt": "sprzedawca",
+      "options": [
+        {
+          "en": "a shop assistant, a seller (a woman)"
+        },
+        {
+          "en": "a cook, a chef (a man)"
+        },
+        {
+          "en": "a shop assistant, a seller (a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sprzedawca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b4-e07",
+      "prompt": "sprzedawczyni",
+      "options": [
+        {
+          "en": "a shop assistant, a seller (a woman)"
+        },
+        {
+          "en": "a shop assistant, a seller (a man)"
+        },
+        {
+          "en": "a waitress"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sprzedawczyni"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-b4-e08",
+      "prompt": {
+        "en": "the seller is nice (a woman)"
+      },
+      "acceptedAnswers": [
+        "sprzedawczyni jest miła"
+      ],
+      "distractors": [
+        "miły",
+        "sprzedawca"
+      ],
+      "items": [
+        "sprzedawczyni",
+        "byc-jest",
+        "mily"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b4-e09",
+      "prompt": "jak to się nazywa?",
+      "options": [
+        {
+          "en": "what does it mean?"
+        },
+        {
+          "en": "what's it called?"
+        },
+        {
+          "en": "what is your name? (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jak-to-sie-nazywa"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-b4-e10",
+      "acceptedAnswers": [
+        "nie pamiętam, jak to się nazywa"
+      ],
+      "meaning": {
+        "en": "I don't remember what it's called"
+      },
+      "items": [
+        "nie-pamietam",
+        "jak-to-sie-nazywa"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-b4-e11",
+      "prompt": {
+        "en": "half a kilo, please"
+      },
+      "acceptedAnswers": [
+        "pół kilo, proszę",
+        "proszę pół kilo",
+        "poproszę pół kilo"
+      ],
+      "items": [
+        "pol-kilo",
+        "prosze"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-b4-e12",
+      "pairs": [
+        {
+          "polish": "natka",
+          "meaning": {
+            "en": "parsley leaves"
+          }
+        },
+        {
+          "polish": "korzeń",
+          "meaning": {
+            "en": "a root"
+          }
+        },
+        {
+          "polish": "kilogram",
+          "meaning": {
+            "en": "a kilogram"
+          }
+        },
+        {
+          "polish": "sprzedawca",
+          "meaning": {
+            "en": "a seller (a man)"
+          }
+        },
+        {
+          "polish": "sprzedawczyni",
+          "meaning": {
+            "en": "a seller (a woman)"
+          }
+        },
+        {
+          "polish": "jak to się nazywa?",
+          "meaning": {
+            "en": "what's it called?"
+          }
+        }
+      ],
+      "items": [
+        "natka",
+        "korzen",
+        "kilogram",
+        "sprzedawca",
+        "sprzedawczyni",
+        "jak-to-sie-nazywa"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l09-b4-e13",
+      "lines": [
+        "Poproszę pietruszkę.",
+        "Natka czy korzeń?",
+        "Nie rozumiem.",
+        "Natka jest zielona, a korzeń biały."
+      ],
+      "meaning": {
+        "en": "Buying parsley."
+      },
+      "items": [
+        "poprosze",
+        "natka",
+        "czy",
+        "korzen",
+        "nie-rozumiem",
+        "byc-jest",
+        "zielony",
+        "a",
+        "bialy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-b4-e14",
+      "lines": [
+        "Mama kupuje marchewkę i natkę.",
+        "Kupuje też maliny.",
+        "Płaci dziewiętnaście złotych."
+      ],
+      "meaning": {
+        "en": "Mum at the market."
+      },
+      "statements": [
+        {
+          "text": "Mama kupuje korzeń.",
+          "meaning": {
+            "en": "Mum is buying a root."
+          },
+          "true": false
+        },
+        {
+          "text": "Mama kupuje maliny.",
+          "meaning": {
+            "en": "Mum is buying raspberries."
+          },
+          "true": true
+        },
+        {
+          "text": "Mama płaci dziewiętnaście złotych.",
+          "meaning": {
+            "en": "Mum pays nineteen złoty."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "mama",
+        "kupowac-kupuje-on",
+        "marchewka-acc",
+        "i",
+        "tez",
+        "malina",
+        "placic-placi",
+        "dziewietnascie",
+        "zloty"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-b4-e15",
+      "prompt": {
+        "en": "what does it mean?"
+      },
+      "acceptedAnswers": [
+        "co to znaczy?"
+      ],
+      "distractors": [
+        "jak",
+        "się"
+      ],
+      "items": [
+        "co-to-znaczy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-b4-e16",
+      "prompt": {
+        "en": "the seller is nice (a man)"
+      },
+      "acceptedAnswers": [
+        "sprzedawca jest miły"
+      ],
+      "items": [
+        "sprzedawca",
+        "byc-jest",
+        "mily"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-b4-e17",
+      "text": "Pietruszka: ___ czy korzeń?",
+      "meaning": {
+        "en": "Parsley: the leaves or the root?"
+      },
+      "gaps": [
+        [
+          "natka"
+        ]
+      ],
+      "distractors": [
+        "natkę",
+        "seler"
+      ],
+      "items": [
+        "pietruszka",
+        "natka",
+        "czy",
+        "korzen"
+      ]
+    }
+  ]
+}

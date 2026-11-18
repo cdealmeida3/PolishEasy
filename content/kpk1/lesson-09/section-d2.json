@@ -1,0 +1,435 @@
+{
+  "id": "kpk1-l09-d2",
+  "section": {
+    "letter": "D",
+    "heading": "Gotowanie",
+    "meaning": {
+      "en": "Cooking"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-d2-t01",
+      "before": "kpk1-l09-d2-e01",
+      "title": {
+        "en": "Uwielbiać"
+      },
+      "body": {
+        "en": "*Uwielbiać* is to love, to adore: *uwielbiam, uwielbiasz, uwielbia, uwielbiamy, uwielbiacie, uwielbiają*. Like *lubię*, it takes the accusative: *uwielbiam duszoną cebulę*. *Zdrowszy* (healthier) compares, with *niż*: *gotowane mięso jest zdrowsze niż smażone*."
+      },
+      "conjugation": {
+        "verb": "uwielbiać",
+        "meaning": {
+          "en": "to love, to adore"
+        },
+        "forms": {
+          "ja": "uwielbiam",
+          "ty": "uwielbiasz",
+          "on": "uwielbia",
+          "my": "uwielbiamy",
+          "wy": "uwielbiacie",
+          "oni": "uwielbiają"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d2-e01",
+      "prompt": "uwielbiam",
+      "options": [
+        {
+          "en": "I love (uwielbiam pizzę: I love pizza)"
+        },
+        {
+          "en": "I like"
+        },
+        {
+          "en": "I prefer"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "uwielbiac-uwielbiam"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l09-d2-e02",
+      "verb": "uwielbiać",
+      "meaning": {
+        "en": "to love, to adore"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ spaghetti.",
+      "sentenceMeaning": {
+        "en": "I love spaghetti."
+      },
+      "acceptedAnswers": [
+        "uwielbiam"
+      ],
+      "items": [
+        "ja",
+        "uwielbiac-uwielbiam",
+        "spaghetti"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d2-e03",
+      "prompt": "pachnie",
+      "options": [
+        {
+          "en": "tasty (smaczny, smaczna, smaczne)"
+        },
+        {
+          "en": "it smells nice (to pachnie!: that smells good!)"
+        },
+        {
+          "en": "delicious (pyszny, pyszna, pyszne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pachniec-pachnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d2-e04",
+      "prompt": "pięknie",
+      "options": [
+        {
+          "en": "well; OK"
+        },
+        {
+          "en": "very; very much"
+        },
+        {
+          "en": "beautifully, lovely (pięknie pachnie: it smells lovely)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pieknie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-d2-e05",
+      "text": "ten sos pięknie pachnie",
+      "meaning": {
+        "en": "this sauce smells lovely"
+      },
+      "distractors": [
+        "ta zupa pięknie pachnie",
+        "ten sos jest pyszny"
+      ],
+      "items": [
+        "ten",
+        "sos",
+        "pieknie",
+        "pachniec-pachnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d2-e06",
+      "prompt": "przyprawy",
+      "options": [
+        {
+          "en": "spices, seasoning"
+        },
+        {
+          "en": "salt"
+        },
+        {
+          "en": "vegetables"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przyprawy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-d2-e07",
+      "prompt": {
+        "en": "garlic and spices"
+      },
+      "acceptedAnswers": [
+        "czosnek i przyprawy"
+      ],
+      "distractors": [
+        "przyprawa",
+        "cebula"
+      ],
+      "items": [
+        "czosnek",
+        "i",
+        "przyprawy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d2-e08",
+      "prompt": "zdrowszy",
+      "options": [
+        {
+          "en": "healthy (zdrowy, zdrowa, zdrowe)"
+        },
+        {
+          "en": "healthier (zdrowszy, zdrowsza, zdrowsze)"
+        },
+        {
+          "en": "tasty (smaczny, smaczna, smaczne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zdrowszy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-d2-e09",
+      "text": "Gotowane mięso jest ___ niż smażone.",
+      "meaning": {
+        "en": "Boiled meat is healthier than fried."
+      },
+      "gaps": [
+        [
+          "zdrowsze"
+        ]
+      ],
+      "distractors": [
+        "zdrowy",
+        "zdrowsza"
+      ],
+      "items": [
+        "gotowany",
+        "mieso",
+        "byc-jest",
+        "zdrowszy",
+        "niz",
+        "smazony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d2-e10",
+      "prompt": "zupa rybna",
+      "options": [
+        {
+          "en": "vegetable soup"
+        },
+        {
+          "en": "a fish; fish, the food (ryby: fish, several)"
+        },
+        {
+          "en": "fish soup"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zupa-rybna"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-d2-e11",
+      "acceptedAnswers": [
+        "zupa rybna jest pyszna"
+      ],
+      "meaning": {
+        "en": "the fish soup is delicious"
+      },
+      "items": [
+        "zupa-rybna",
+        "byc-jest",
+        "pyszny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d2-e12",
+      "prompt": "najpierw",
+      "options": [
+        {
+          "en": "first, first of all"
+        },
+        {
+          "en": "then, afterwards"
+        },
+        {
+          "en": "now"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "najpierw"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d2-e13",
+      "prompt": "potem",
+      "options": [
+        {
+          "en": "first, first of all"
+        },
+        {
+          "en": "then, afterwards"
+        },
+        {
+          "en": "tomorrow"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "potem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-d2-e14",
+      "prompt": {
+        "en": "first soup, then fish"
+      },
+      "acceptedAnswers": [
+        "najpierw zupa, potem ryba"
+      ],
+      "items": [
+        "najpierw",
+        "zupa",
+        "potem",
+        "ryba"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-d2-e15",
+      "pairs": [
+        {
+          "polish": "uwielbiam",
+          "meaning": {
+            "en": "I love"
+          }
+        },
+        {
+          "polish": "pachnie",
+          "meaning": {
+            "en": "it smells nice"
+          }
+        },
+        {
+          "polish": "przyprawy",
+          "meaning": {
+            "en": "spices"
+          }
+        },
+        {
+          "polish": "zdrowszy",
+          "meaning": {
+            "en": "healthier"
+          }
+        },
+        {
+          "polish": "najpierw",
+          "meaning": {
+            "en": "first"
+          }
+        },
+        {
+          "polish": "potem",
+          "meaning": {
+            "en": "then"
+          }
+        }
+      ],
+      "items": [
+        "uwielbiac-uwielbiam",
+        "pachniec-pachnie",
+        "przyprawy",
+        "zdrowszy",
+        "najpierw",
+        "potem"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l09-d2-e16",
+      "lines": [
+        "Co to jest?",
+        "Zupa rybna.",
+        "Och, pięknie pachnie!",
+        "Uwielbiam rybę."
+      ],
+      "meaning": {
+        "en": "Two friends in the kitchen."
+      },
+      "items": [
+        "co",
+        "to",
+        "byc-jest",
+        "zupa-rybna",
+        "pieknie",
+        "pachniec-pachnie",
+        "uwielbiac-uwielbiam"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-d2-e17",
+      "lines": [
+        "Mama gotuje zupę jarzynową.",
+        "Najpierw cebula jest smażona na oliwie.",
+        "Potem mama dodaje warzywa i przyprawy."
+      ],
+      "meaning": {
+        "en": "Mum cooks soup."
+      },
+      "statements": [
+        {
+          "text": "Mama gotuje zupę rybną.",
+          "meaning": {
+            "en": "Mum is cooking fish soup."
+          },
+          "true": false
+        },
+        {
+          "text": "Najpierw cebula jest smażona.",
+          "meaning": {
+            "en": "First the onion is fried."
+          },
+          "true": true
+        },
+        {
+          "text": "Mama dodaje przyprawy.",
+          "meaning": {
+            "en": "Mum adds spices."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "mama",
+        "gotowac-gotuje-on",
+        "najpierw",
+        "cebula",
+        "byc-jest",
+        "smazony",
+        "potem",
+        "warzywa",
+        "i",
+        "przyprawy"
+      ]
+    }
+  ]
+}

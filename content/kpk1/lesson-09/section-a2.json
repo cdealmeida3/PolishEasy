@@ -1,0 +1,368 @@
+{
+  "id": "kpk1-l09-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Owoce i warzywa",
+    "meaning": {
+      "en": "Fruit and vegetables"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-a2-t01",
+      "before": "kpk1-l09-a2-e01",
+      "title": {
+        "en": "Lubisz marchewkę?"
+      },
+      "body": {
+        "en": "After *lubię*, *kupuję* and *proszę* a feminine noun ends in *-ę*: *lubię marchewkę*, *proszę cebulę*. A masculine thing does not change: *lubię czosnek*, *kupuję kalafior*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a2-e01",
+      "prompt": "marchewka",
+      "options": [
+        {
+          "en": "a beetroot (buraki: beetroots)"
+        },
+        {
+          "en": "an onion (cebule: onions)"
+        },
+        {
+          "en": "a carrot (marchewki: carrots)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "marchewka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a2-e02",
+      "prompt": "marchewkę",
+      "options": [
+        {
+          "en": "a carrot (after lubię, kupuję…: lubisz marchewkę?)"
+        },
+        {
+          "en": "a carrot (marchewki: carrots)"
+        },
+        {
+          "en": "a cabbage; cabbage"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "marchewka-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-a2-e03",
+      "text": "lubisz marchewkę?",
+      "meaning": {
+        "en": "do you like carrots? (one friend)"
+      },
+      "distractors": [
+        "lubię marchewkę",
+        "lubisz kapustę?"
+      ],
+      "items": [
+        "lubic-lubisz",
+        "marchewka-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a2-e04",
+      "prompt": "cebula",
+      "options": [
+        {
+          "en": "garlic"
+        },
+        {
+          "en": "an onion (cebule: onions)"
+        },
+        {
+          "en": "a carrot (marchewki: carrots)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "cebula"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a2-e05",
+      "prompt": "czosnek",
+      "options": [
+        {
+          "en": "an onion (cebule: onions)"
+        },
+        {
+          "en": "a pepper, the vegetable (papryki: peppers)"
+        },
+        {
+          "en": "garlic"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czosnek"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-a2-e06",
+      "prompt": {
+        "en": "an onion and garlic"
+      },
+      "acceptedAnswers": [
+        "cebula i czosnek"
+      ],
+      "distractors": [
+        "cebulę",
+        "papryka"
+      ],
+      "items": [
+        "cebula",
+        "i",
+        "czosnek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a2-e07",
+      "prompt": "papryka",
+      "options": [
+        {
+          "en": "a pepper, the vegetable (papryki: peppers)"
+        },
+        {
+          "en": "a tomato (pomidory: tomatoes)"
+        },
+        {
+          "en": "a beetroot (buraki: beetroots)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "papryka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-a2-e08",
+      "text": "Papryka jest ___.",
+      "meaning": {
+        "en": "The pepper is yellow."
+      },
+      "gaps": [
+        [
+          "żółta"
+        ]
+      ],
+      "distractors": [
+        "żółty",
+        "żółte"
+      ],
+      "items": [
+        "papryka",
+        "byc-jest",
+        "zolty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a2-e09",
+      "prompt": "kapusta",
+      "options": [
+        {
+          "en": "a cauliflower; cauliflower"
+        },
+        {
+          "en": "a cabbage; cabbage"
+        },
+        {
+          "en": "lettuce"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kapusta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a2-e10",
+      "prompt": "kalafior",
+      "options": [
+        {
+          "en": "a cabbage; cabbage"
+        },
+        {
+          "en": "broccoli"
+        },
+        {
+          "en": "a cauliflower; cauliflower"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kalafior"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-a2-e11",
+      "acceptedAnswers": [
+        "kalafior jest biały"
+      ],
+      "meaning": {
+        "en": "the cauliflower is white"
+      },
+      "items": [
+        "kalafior",
+        "byc-jest",
+        "bialy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a2-e12",
+      "prompt": "burak",
+      "options": [
+        {
+          "en": "a beetroot (buraki: beetroots)"
+        },
+        {
+          "en": "a carrot (marchewki: carrots)"
+        },
+        {
+          "en": "a pepper, the vegetable (papryki: peppers)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "burak"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-a2-e13",
+      "prompt": {
+        "en": "I like carrots"
+      },
+      "acceptedAnswers": [
+        "lubię marchewkę",
+        "ja lubię marchewkę",
+        "lubię marchewki"
+      ],
+      "items": [
+        "lubic-lubie",
+        "marchewka-acc"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-a2-e14",
+      "pairs": [
+        {
+          "polish": "marchewka",
+          "meaning": {
+            "en": "a carrot"
+          }
+        },
+        {
+          "polish": "cebula",
+          "meaning": {
+            "en": "an onion"
+          }
+        },
+        {
+          "polish": "czosnek",
+          "meaning": {
+            "en": "garlic"
+          }
+        },
+        {
+          "polish": "papryka",
+          "meaning": {
+            "en": "a pepper"
+          }
+        },
+        {
+          "polish": "kapusta",
+          "meaning": {
+            "en": "a cabbage"
+          }
+        },
+        {
+          "polish": "burak",
+          "meaning": {
+            "en": "a beetroot"
+          }
+        }
+      ],
+      "items": [
+        "marchewka",
+        "cebula",
+        "czosnek",
+        "papryka",
+        "kapusta",
+        "burak"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l09-a2-e15",
+      "lines": [
+        "Lubisz marchewkę?",
+        "Tak, bardzo.",
+        "A kalafior?",
+        "Nie, nie lubię."
+      ],
+      "meaning": {
+        "en": "Two friends talk about vegetables."
+      },
+      "items": [
+        "lubic-lubisz",
+        "marchewka-acc",
+        "tak",
+        "bardzo",
+        "a",
+        "kalafior",
+        "nie",
+        "lubic-lubie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-a2-e16",
+      "prompt": {
+        "en": "a cabbage and a beetroot"
+      },
+      "acceptedAnswers": [
+        "kapusta i burak"
+      ],
+      "distractors": [
+        "kapustę",
+        "buraki"
+      ],
+      "items": [
+        "kapusta",
+        "i",
+        "burak"
+      ]
+    }
+  ]
+}

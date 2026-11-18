@@ -3711,6 +3711,618 @@
         1,
         1
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "l09-103-1",
+      "track": 103,
+      "question": "Jakie jest ostatnie słowo?",
+      "meaning": {
+        "en": "What is the last word?"
+      },
+      "acceptedAnswers": [
+        "burak"
+      ],
+      "lines": [
+        32,
+        32
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-103-2",
+      "track": 103,
+      "question": "Co słyszysz po słowie „gruszka”?",
+      "meaning": {
+        "en": "Which word comes after gruszka?"
+      },
+      "options": [
+        "śliwka",
+        "wiśnia",
+        "cytryna"
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-103-3",
+      "track": 103,
+      "question": "Jakie słowo słyszysz?",
+      "meaning": {
+        "en": "Which word do you hear?"
+      },
+      "options": [
+        "kalafior",
+        "kapusta",
+        "kukurydza"
+      ],
+      "correctOption": 0,
+      "lines": [
+        25,
+        25
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-104-1",
+      "track": 104,
+      "statement": "Dziewczyny kupują coś na kolację.",
+      "meaning": {
+        "en": "The girls are buying something for supper."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-104-2",
+      "track": 104,
+      "question": "Na co ma ochotę pierwsza dziewczyna?",
+      "meaning": {
+        "en": "What does the first girl feel like?"
+      },
+      "options": [
+        "Na spaghetti i sałatkę owocową.",
+        "Na zupę jarzynową.",
+        "Na rybę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-104-3",
+      "track": 104,
+      "question": "Kiedy one jedzą rybę?",
+      "meaning": {
+        "en": "When do they eat fish?"
+      },
+      "options": [
+        "Jutro.",
+        "Dziś.",
+        "Teraz."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-104-4",
+      "track": 104,
+      "statement": "Dziś one kupują rybę.",
+      "meaning": {
+        "en": "Today they are buying fish."
+      },
+      "answer": false,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-104-5",
+      "track": 104,
+      "question": "Co dziewczyna może kupić do picia?",
+      "meaning": {
+        "en": "What can the girl buy to drink?"
+      },
+      "options": [
+        "Jedno czerwone wino.",
+        "Dwa piwa.",
+        "Sok."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-105-1",
+      "track": 105,
+      "question": "Ile pomidorów chce klientka?",
+      "meaning": {
+        "en": "How many tomatoes does the customer want?"
+      },
+      "options": [
+        "Cztery.",
+        "Dwa.",
+        "Trzy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-105-2",
+      "track": 105,
+      "question": "Jakie papryki kupuje klientka?",
+      "meaning": {
+        "en": "Which peppers does the customer buy?"
+      },
+      "options": [
+        "Żółte i czerwone.",
+        "Tylko żółte.",
+        "Zielone."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-105-3",
+      "track": 105,
+      "statement": "Bazylia jest suszona.",
+      "meaning": {
+        "en": "The basil is dried."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-105-4",
+      "track": 105,
+      "statement": "Klientka chce zielone banany.",
+      "meaning": {
+        "en": "The customer wants green bananas."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-105-5",
+      "track": 105,
+      "question": "Jakie winogrona są bardzo słodkie?",
+      "meaning": {
+        "en": "Which grapes are very sweet?"
+      },
+      "options": [
+        "Fioletowe.",
+        "Różowe.",
+        "Zielone."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-105-6",
+      "track": 105,
+      "statement": "Teraz pomarańcze nie są bardzo dobre.",
+      "meaning": {
+        "en": "The oranges are not very good now."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l09-105-7",
+      "track": 105,
+      "question": "Klientka płaci … złote, siedemdziesiąt groszy. Ile złotych?",
+      "meaning": {
+        "en": "The customer pays … złoty 70 groszy. How many złoty?"
+      },
+      "acceptedAnswers": [
+        "42",
+        "czterdzieści dwa"
+      ],
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-106-1",
+      "track": 106,
+      "question": "Ile marchewek kupuje klientka?",
+      "meaning": {
+        "en": "How many carrots does the customer buy?"
+      },
+      "options": [
+        "Cztery.",
+        "Trzy.",
+        "Dwie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-106-2",
+      "track": 106,
+      "statement": "Natka jest zielona, a korzeń biały.",
+      "meaning": {
+        "en": "The leaves are green and the root white."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-106-3",
+      "track": 106,
+      "question": "Co to jest? Klientka nie pamięta.",
+      "meaning": {
+        "en": "What is it? The customer can't remember."
+      },
+      "options": [
+        "Fasolka.",
+        "Kalafior.",
+        "Seler."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-106-4",
+      "track": 106,
+      "statement": "Klientka nie chce malin.",
+      "meaning": {
+        "en": "The customer doesn't want raspberries."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l09-106-5",
+      "track": 106,
+      "question": "Klientka płaci … złotych, trzydzieści dwa grosze. Ile złotych?",
+      "meaning": {
+        "en": "The customer pays … złoty 32 grosze. How many złoty?"
+      },
+      "acceptedAnswers": [
+        "19",
+        "dziewiętnaście"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l09-107-1",
+      "track": 107,
+      "question": "Co kupujemy? Owoce i…",
+      "meaning": {
+        "en": "What are we buying? Fruit and…"
+      },
+      "acceptedAnswers": [
+        "warzywa"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-107-2",
+      "track": 107,
+      "statement": "Dziewczyna może kupić dwa wina.",
+      "meaning": {
+        "en": "The girl can buy two wines."
+      },
+      "answer": false,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l09-108-1",
+      "track": 108,
+      "question": "Jaką bazylię chce klientka? Chce … bazylię.",
+      "meaning": {
+        "en": "Which basil does the customer want? (fresh)"
+      },
+      "acceptedAnswers": [
+        "świeżą"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l09-109-1",
+      "track": 109,
+      "question": "Jaki kalafior? Ten…",
+      "meaning": {
+        "en": "Which cauliflower? The … one (medium-sized)"
+      },
+      "acceptedAnswers": [
+        "średni"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-109-2",
+      "track": 109,
+      "statement": "Klientka kupuje kilogram ziemniaków.",
+      "meaning": {
+        "en": "The customer buys a kilogram of potatoes."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-110-1",
+      "track": 110,
+      "question": "Jaka zupa jest dziś?",
+      "meaning": {
+        "en": "What soup is there today?"
+      },
+      "options": [
+        "Jarzynowa.",
+        "Rybna.",
+        "Grzybowa."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-110-2",
+      "track": 110,
+      "statement": "Sos jest z bazylią i czosnkiem.",
+      "meaning": {
+        "en": "The sauce has basil and garlic in it."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-110-3",
+      "track": 110,
+      "question": "Jaka cebula jest w sosie?",
+      "meaning": {
+        "en": "What onion is in the sauce?"
+      },
+      "options": [
+        "Duszona.",
+        "Surowa.",
+        "Pieczona."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-110-4",
+      "track": 110,
+      "statement": "Duszone mięso jest zdrowsze niż smażone.",
+      "meaning": {
+        "en": "Stewed meat is healthier than fried."
+      },
+      "answer": true,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-110-5",
+      "track": 110,
+      "statement": "Pieczony kurczak jest zdrowszy niż gotowany.",
+      "meaning": {
+        "en": "Roast chicken is healthier than boiled."
+      },
+      "answer": false,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-110-6",
+      "track": 110,
+      "question": "Jakie ryby woli jedna dziewczyna?",
+      "meaning": {
+        "en": "What fish does one girl prefer?"
+      },
+      "options": [
+        "Wędzone albo pieczone.",
+        "Smażone.",
+        "Surowe."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-111-1",
+      "track": 111,
+      "statement": "Jajka są tam, gdzie jest nabiał.",
+      "meaning": {
+        "en": "The eggs are where the dairy is."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-111-2",
+      "track": 111,
+      "question": "Co to jest makaron?",
+      "meaning": {
+        "en": "What is pasta?"
+      },
+      "options": [
+        "Produkty zbożowe.",
+        "Nabiał.",
+        "Pieczywo."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-111-3",
+      "track": 111,
+      "statement": "Dziewczyna chce jeszcze ciemny chleb.",
+      "meaning": {
+        "en": "The girl also wants brown bread."
+      },
+      "answer": true,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-111-4",
+      "track": 111,
+      "question": "Gdzie są chipsy?",
+      "meaning": {
+        "en": "Where are the crisps?"
+      },
+      "options": [
+        "Tam, gdzie słodycze.",
+        "Tam, gdzie nabiał.",
+        "Tam, gdzie napoje."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l09-111-5",
+      "track": 111,
+      "statement": "Chipsy są słodkie.",
+      "meaning": {
+        "en": "Crisps are sweet."
+      },
+      "answer": false,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l09-111-6",
+      "track": 111,
+      "question": "Co jest polską specjalnością?",
+      "meaning": {
+        "en": "What is a Polish speciality?"
+      },
+      "options": [
+        "Słone paluszki.",
+        "Chipsy.",
+        "Czerwone wino."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        9
+      ]
     }
   ]
 }

@@ -1,0 +1,401 @@
+{
+  "id": "kpk1-l09-d1",
+  "section": {
+    "letter": "D",
+    "heading": "Gotowanie",
+    "meaning": {
+      "en": "Cooking"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-d1-t01",
+      "before": "kpk1-l09-d1-e01",
+      "title": {
+        "en": "Gotowane czy smażone?"
+      },
+      "body": {
+        "en": "Food can be *gotowane* (boiled), *pieczone* (roast, baked), *duszone* (stewed), *smażone* (fried, on a *patelnia*) or *wędzone* (smoked). *Surowy* (raw) is the opposite of *gotowany*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d1-e01",
+      "prompt": "gotowany",
+      "options": [
+        {
+          "en": "roast, baked (pieczony, pieczona, pieczone)"
+        },
+        {
+          "en": "raw (surowy, surowa, surowe)"
+        },
+        {
+          "en": "boiled, cooked (gotowany, gotowana, gotowane)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "gotowany"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d1-e02",
+      "prompt": "pieczony",
+      "options": [
+        {
+          "en": "roast, baked (pieczony, pieczona, pieczone)"
+        },
+        {
+          "en": "fried (smażony, smażona, smażone)"
+        },
+        {
+          "en": "boiled, cooked (gotowany, gotowana, gotowane)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pieczony"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-d1-e03",
+      "text": "pieczony kurczak",
+      "meaning": {
+        "en": "roast chicken"
+      },
+      "distractors": [
+        "gotowany kurczak",
+        "pieczona ryba"
+      ],
+      "items": [
+        "pieczony",
+        "kurczak"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d1-e04",
+      "prompt": "duszony",
+      "options": [
+        {
+          "en": "smoked (wędzony, wędzona, wędzone)"
+        },
+        {
+          "en": "stewed, braised (duszony, duszona, duszone)"
+        },
+        {
+          "en": "roast, baked (pieczony, pieczona, pieczone)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "duszony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d1-e05",
+      "prompt": "smażony",
+      "options": [
+        {
+          "en": "stewed, braised (duszony, duszona, duszone)"
+        },
+        {
+          "en": "boiled, cooked (gotowany, gotowana, gotowane)"
+        },
+        {
+          "en": "fried (smażony, smażona, smażone)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "smazony"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-d1-e06",
+      "prompt": {
+        "en": "fried fish"
+      },
+      "acceptedAnswers": [
+        "smażona ryba"
+      ],
+      "distractors": [
+        "smażony",
+        "gotowana"
+      ],
+      "items": [
+        "smazony",
+        "ryba"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d1-e07",
+      "prompt": "wędzony",
+      "options": [
+        {
+          "en": "smoked (wędzony, wędzona, wędzone)"
+        },
+        {
+          "en": "fried (smażony, smażona, smażone)"
+        },
+        {
+          "en": "raw (surowy, surowa, surowe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wedzony"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-d1-e08",
+      "text": "Lubię ___ ser.",
+      "meaning": {
+        "en": "I like smoked cheese."
+      },
+      "gaps": [
+        [
+          "wędzony"
+        ]
+      ],
+      "distractors": [
+        "wędzona",
+        "wędzone"
+      ],
+      "items": [
+        "lubic-lubie",
+        "wedzony",
+        "ser"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d1-e09",
+      "prompt": "surowy",
+      "options": [
+        {
+          "en": "boiled, cooked (gotowany, gotowana, gotowane)"
+        },
+        {
+          "en": "raw (surowy, surowa, surowe)"
+        },
+        {
+          "en": "fresh (świeży, świeża, świeże)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "surowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d1-e10",
+      "prompt": "patelnia",
+      "options": [
+        {
+          "en": "a plate"
+        },
+        {
+          "en": "a spoon"
+        },
+        {
+          "en": "a frying pan"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "patelnia"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-d1-e11",
+      "acceptedAnswers": [
+        "gotowane ziemniaki"
+      ],
+      "meaning": {
+        "en": "boiled potatoes"
+      },
+      "items": [
+        "gotowany",
+        "ziemniaki"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-d1-e12",
+      "prompt": {
+        "en": "raw carrots"
+      },
+      "acceptedAnswers": [
+        "surowe marchewki"
+      ],
+      "items": [
+        "surowy",
+        "marchewka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-d1-e13",
+      "pairs": [
+        {
+          "polish": "gotowany",
+          "meaning": {
+            "en": "boiled"
+          }
+        },
+        {
+          "polish": "pieczony",
+          "meaning": {
+            "en": "roast"
+          }
+        },
+        {
+          "polish": "duszony",
+          "meaning": {
+            "en": "stewed"
+          }
+        },
+        {
+          "polish": "smażony",
+          "meaning": {
+            "en": "fried"
+          }
+        },
+        {
+          "polish": "wędzony",
+          "meaning": {
+            "en": "smoked"
+          }
+        },
+        {
+          "polish": "surowy",
+          "meaning": {
+            "en": "raw"
+          }
+        }
+      ],
+      "items": [
+        "gotowany",
+        "pieczony",
+        "duszony",
+        "smazony",
+        "wedzony",
+        "surowy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-d1-e14",
+      "prompt": {
+        "en": "the frying pan is big"
+      },
+      "acceptedAnswers": [
+        "patelnia jest duża"
+      ],
+      "distractors": [
+        "duży",
+        "talerz"
+      ],
+      "items": [
+        "patelnia",
+        "byc-jest",
+        "duzy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-d1-e15",
+      "lines": [
+        "Na obiad jest pieczony kurczak.",
+        "Są też gotowane ziemniaki.",
+        "I surowe warzywa."
+      ],
+      "meaning": {
+        "en": "Sunday dinner."
+      },
+      "statements": [
+        {
+          "text": "Kurczak jest smażony.",
+          "meaning": {
+            "en": "The chicken is fried."
+          },
+          "true": false
+        },
+        {
+          "text": "Ziemniaki są gotowane.",
+          "meaning": {
+            "en": "The potatoes are boiled."
+          },
+          "true": true
+        },
+        {
+          "text": "Warzywa są surowe.",
+          "meaning": {
+            "en": "The vegetables are raw."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "na-obiad",
+        "byc-jest",
+        "pieczony",
+        "kurczak",
+        "byc-sa",
+        "tez",
+        "gotowany",
+        "ziemniaki",
+        "i",
+        "surowy",
+        "warzywa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-d1-e16",
+      "prompt": {
+        "en": "stewed onion"
+      },
+      "acceptedAnswers": [
+        "duszona cebula"
+      ],
+      "distractors": [
+        "duszony",
+        "smażona"
+      ],
+      "items": [
+        "duszony",
+        "cebula"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-d1-e17",
+      "acceptedAnswers": [
+        "to jest patelnia"
+      ],
+      "meaning": {
+        "en": "this is a frying pan"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "patelnia"
+      ]
+    }
+  ]
+}

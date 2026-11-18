@@ -1,0 +1,350 @@
+{
+  "id": "kpk1-l09-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Owoce i warzywa",
+    "meaning": {
+      "en": "Fruit and vegetables"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-a5-t01",
+      "before": "kpk1-l09-a5-e01",
+      "title": {
+        "en": "Zapamiętaj!"
+      },
+      "body": {
+        "en": "*Słodki jak cukier* (sweet as sugar), *kwaśny jak cytryna*, *słony jak sól*, *ostry jak chili*, *gorzki jak kawa bez cukru*. *Jak* here means like, as."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a5-e01",
+      "prompt": "smak",
+      "options": [
+        {
+          "en": "a shape"
+        },
+        {
+          "en": "food"
+        },
+        {
+          "en": "a taste, a flavour"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "smak"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a5-e02",
+      "prompt": "kwaśny",
+      "options": [
+        {
+          "en": "sour (kwaśny, kwaśna, kwaśne)"
+        },
+        {
+          "en": "sweet (słodki, słodka, słodkie)"
+        },
+        {
+          "en": "salty (słony, słona, słone)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kwasny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-a5-e03",
+      "text": "kwaśny jak cytryna",
+      "meaning": {
+        "en": "as sour as a lemon"
+      },
+      "distractors": [
+        "słodki jak cukier",
+        "kwaśny jak jabłko"
+      ],
+      "items": [
+        "kwasny",
+        "jak",
+        "cytryna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a5-e04",
+      "prompt": "słony",
+      "options": [
+        {
+          "en": "sour (kwaśny, kwaśna, kwaśne)"
+        },
+        {
+          "en": "salty (słony, słona, słone)"
+        },
+        {
+          "en": "bitter (gorzki, gorzka, gorzkie)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "slony"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-a5-e05",
+      "prompt": {
+        "en": "salty as salt"
+      },
+      "acceptedAnswers": [
+        "słony jak sól"
+      ],
+      "distractors": [
+        "słona",
+        "cukier"
+      ],
+      "items": [
+        "slony",
+        "jak",
+        "sol"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a5-e06",
+      "prompt": "gorzki",
+      "options": [
+        {
+          "en": "salty (słony, słona, słone)"
+        },
+        {
+          "en": "hot, spicy; sharp (ostry, ostra, ostre)"
+        },
+        {
+          "en": "bitter (gorzki, gorzka, gorzkie)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "gorzki"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-a5-e07",
+      "text": "Kawa bez cukru jest ___.",
+      "meaning": {
+        "en": "Coffee without sugar is bitter."
+      },
+      "gaps": [
+        [
+          "gorzka"
+        ]
+      ],
+      "distractors": [
+        "gorzki",
+        "słodka"
+      ],
+      "items": [
+        "kawa",
+        "bez-cukru",
+        "byc-jest",
+        "gorzki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a5-e08",
+      "prompt": "ostry",
+      "options": [
+        {
+          "en": "hot, spicy; sharp (ostry, ostra, ostre)"
+        },
+        {
+          "en": "bitter (gorzki, gorzka, gorzkie)"
+        },
+        {
+          "en": "mild, delicate (delikatny, delikatna, delikatne)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ostry"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-a5-e09",
+      "acceptedAnswers": [
+        "ten sos jest ostry"
+      ],
+      "meaning": {
+        "en": "this sauce is spicy"
+      },
+      "items": [
+        "ten",
+        "sos",
+        "byc-jest",
+        "ostry"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a5-e10",
+      "prompt": "delikatny",
+      "options": [
+        {
+          "en": "hot, spicy; sharp (ostry, ostra, ostre)"
+        },
+        {
+          "en": "mild, delicate (delikatny, delikatna, delikatne)"
+        },
+        {
+          "en": "sweet (słodki, słodka, słodkie)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "delikatny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-a5-e11",
+      "prompt": {
+        "en": "the cheese is mild"
+      },
+      "acceptedAnswers": [
+        "ser jest delikatny",
+        "ten ser jest delikatny"
+      ],
+      "items": [
+        "ser",
+        "byc-jest",
+        "delikatny"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-a5-e12",
+      "pairs": [
+        {
+          "polish": "słodki",
+          "meaning": {
+            "en": "sweet"
+          }
+        },
+        {
+          "polish": "kwaśny",
+          "meaning": {
+            "en": "sour"
+          }
+        },
+        {
+          "polish": "słony",
+          "meaning": {
+            "en": "salty"
+          }
+        },
+        {
+          "polish": "gorzki",
+          "meaning": {
+            "en": "bitter"
+          }
+        },
+        {
+          "polish": "ostry",
+          "meaning": {
+            "en": "spicy"
+          }
+        },
+        {
+          "polish": "delikatny",
+          "meaning": {
+            "en": "mild"
+          }
+        }
+      ],
+      "items": [
+        "slodki",
+        "kwasny",
+        "slony",
+        "gorzki",
+        "ostry",
+        "delikatny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-a5-e13",
+      "prompt": {
+        "en": "the lemon is sour"
+      },
+      "acceptedAnswers": [
+        "cytryna jest kwaśna"
+      ],
+      "distractors": [
+        "kwaśny",
+        "słodka"
+      ],
+      "items": [
+        "cytryna",
+        "byc-jest",
+        "kwasny"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l09-a5-e14",
+      "lines": [
+        "Jaki smak ma ta zupa?",
+        "Jest ostra.",
+        "Bardzo?",
+        "Nie, trochę."
+      ],
+      "meaning": {
+        "en": "Tasting soup."
+      },
+      "items": [
+        "jaki",
+        "smak",
+        "miec-ma",
+        "ta",
+        "zupa",
+        "byc-jest",
+        "ostry",
+        "bardzo",
+        "nie",
+        "troche"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-a5-e15",
+      "acceptedAnswers": [
+        "ta zupa ma dobry smak"
+      ],
+      "meaning": {
+        "en": "this soup tastes good"
+      },
+      "items": [
+        "ta",
+        "zupa",
+        "miec-ma",
+        "dobry",
+        "smak"
+      ]
+    }
+  ]
+}

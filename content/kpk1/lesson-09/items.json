@@ -1,0 +1,926 @@
+{
+  "items": [
+    {
+      "id": "gruszka",
+      "text": "gruszka",
+      "meaning": {
+        "en": "a pear (gruszki: pears)"
+      },
+      "forms": [
+        "gruszki"
+      ]
+    },
+    {
+      "id": "sliwka",
+      "text": "śliwka",
+      "meaning": {
+        "en": "a plum (śliwki: plums)"
+      },
+      "forms": [
+        "śliwki"
+      ]
+    },
+    {
+      "id": "brzoskwinia",
+      "text": "brzoskwinia",
+      "meaning": {
+        "en": "a peach (brzoskwinie: peaches)"
+      },
+      "forms": [
+        "brzoskwinie"
+      ]
+    },
+    {
+      "id": "kiwi",
+      "text": "kiwi",
+      "meaning": {
+        "en": "a kiwi fruit, kiwi fruit (it never changes)"
+      }
+    },
+    {
+      "id": "winogrona",
+      "text": "winogrona",
+      "meaning": {
+        "en": "grapes"
+      }
+    },
+    {
+      "id": "wisnia",
+      "text": "wiśnia",
+      "meaning": {
+        "en": "a sour cherry (wiśnie: sour cherries)"
+      },
+      "forms": [
+        "wiśnie"
+      ]
+    },
+    {
+      "id": "ananas",
+      "text": "ananas",
+      "meaning": {
+        "en": "a pineapple (ananasy: pineapples)"
+      },
+      "forms": [
+        "ananasy"
+      ]
+    },
+    {
+      "id": "arbuz",
+      "text": "arbuz",
+      "meaning": {
+        "en": "a watermelon (arbuzy: watermelons)"
+      },
+      "forms": [
+        "arbuzy"
+      ]
+    },
+    {
+      "id": "marchewka",
+      "text": "marchewka",
+      "meaning": {
+        "en": "a carrot (marchewki: carrots)"
+      },
+      "forms": [
+        "marchewki"
+      ]
+    },
+    {
+      "id": "marchewka-acc",
+      "text": "marchewkę",
+      "meaning": {
+        "en": "a carrot (after lubię, kupuję…: lubisz marchewkę?)"
+      }
+    },
+    {
+      "id": "cebula",
+      "text": "cebula",
+      "meaning": {
+        "en": "an onion (cebule: onions)"
+      },
+      "forms": [
+        "cebule"
+      ]
+    },
+    {
+      "id": "czosnek",
+      "text": "czosnek",
+      "meaning": {
+        "en": "garlic"
+      }
+    },
+    {
+      "id": "papryka",
+      "text": "papryka",
+      "meaning": {
+        "en": "a pepper, the vegetable (papryki: peppers)"
+      },
+      "forms": [
+        "papryki"
+      ]
+    },
+    {
+      "id": "kapusta",
+      "text": "kapusta",
+      "meaning": {
+        "en": "a cabbage; cabbage"
+      }
+    },
+    {
+      "id": "kalafior",
+      "text": "kalafior",
+      "meaning": {
+        "en": "a cauliflower; cauliflower"
+      }
+    },
+    {
+      "id": "burak",
+      "text": "burak",
+      "meaning": {
+        "en": "a beetroot (buraki: beetroots)"
+      },
+      "forms": [
+        "buraki"
+      ]
+    },
+    {
+      "id": "por",
+      "text": "por",
+      "meaning": {
+        "en": "a leek"
+      }
+    },
+    {
+      "id": "seler",
+      "text": "seler",
+      "meaning": {
+        "en": "celery, celeriac"
+      }
+    },
+    {
+      "id": "pietruszka",
+      "text": "pietruszka",
+      "meaning": {
+        "en": "parsley; parsley root"
+      }
+    },
+    {
+      "id": "rzodkiewka",
+      "text": "rzodkiewka",
+      "meaning": {
+        "en": "a radish (rzodkiewki: radishes)"
+      },
+      "forms": [
+        "rzodkiewki"
+      ]
+    },
+    {
+      "id": "fasola",
+      "text": "fasola",
+      "meaning": {
+        "en": "beans"
+      }
+    },
+    {
+      "id": "groszek",
+      "text": "groszek",
+      "meaning": {
+        "en": "peas"
+      }
+    },
+    {
+      "id": "kukurydza",
+      "text": "kukurydza",
+      "meaning": {
+        "en": "sweetcorn, maize"
+      }
+    },
+    {
+      "id": "dynia",
+      "text": "dynia",
+      "meaning": {
+        "en": "a pumpkin"
+      }
+    },
+    {
+      "id": "smietana",
+      "text": "śmietana",
+      "meaning": {
+        "en": "sour cream, cream"
+      }
+    },
+    {
+      "id": "oliwa",
+      "text": "oliwa",
+      "meaning": {
+        "en": "olive oil"
+      }
+    },
+    {
+      "id": "orzechy",
+      "text": "orzechy",
+      "meaning": {
+        "en": "nuts"
+      }
+    },
+    {
+      "id": "rodzynki",
+      "text": "rodzynki",
+      "meaning": {
+        "en": "raisins"
+      }
+    },
+    {
+      "id": "ze-smietana",
+      "text": "ze śmietaną",
+      "meaning": {
+        "en": "with sour cream"
+      }
+    },
+    {
+      "id": "z-orzechami",
+      "text": "z orzechami",
+      "meaning": {
+        "en": "with nuts"
+      }
+    },
+    {
+      "id": "z-rodzynkami",
+      "text": "z rodzynkami",
+      "meaning": {
+        "en": "with raisins"
+      }
+    },
+    {
+      "id": "jagody",
+      "text": "jagody",
+      "meaning": {
+        "en": "blueberries"
+      }
+    },
+    {
+      "id": "smak",
+      "text": "smak",
+      "meaning": {
+        "en": "a taste, a flavour"
+      }
+    },
+    {
+      "id": "kwasny",
+      "text": "kwaśny",
+      "meaning": {
+        "en": "sour (kwaśny, kwaśna, kwaśne)"
+      },
+      "forms": [
+        "kwaśna",
+        "kwaśne"
+      ]
+    },
+    {
+      "id": "slony",
+      "text": "słony",
+      "meaning": {
+        "en": "salty (słony, słona, słone)"
+      },
+      "forms": [
+        "słona",
+        "słone"
+      ]
+    },
+    {
+      "id": "gorzki",
+      "text": "gorzki",
+      "meaning": {
+        "en": "bitter (gorzki, gorzka, gorzkie)"
+      },
+      "forms": [
+        "gorzka",
+        "gorzkie"
+      ]
+    },
+    {
+      "id": "ostry",
+      "text": "ostry",
+      "meaning": {
+        "en": "hot, spicy; sharp (ostry, ostra, ostre)"
+      },
+      "forms": [
+        "ostra",
+        "ostre"
+      ]
+    },
+    {
+      "id": "delikatny",
+      "text": "delikatny",
+      "meaning": {
+        "en": "mild, delicate (delikatny, delikatna, delikatne)"
+      },
+      "forms": [
+        "delikatna",
+        "delikatne"
+      ]
+    },
+    {
+      "id": "ksztalt",
+      "text": "kształt",
+      "meaning": {
+        "en": "a shape"
+      }
+    },
+    {
+      "id": "okragly",
+      "text": "okrągły",
+      "meaning": {
+        "en": "round (okrągły, okrągła, okrągłe)"
+      },
+      "forms": [
+        "okrągła",
+        "okrągłe"
+      ]
+    },
+    {
+      "id": "owalny",
+      "text": "owalny",
+      "meaning": {
+        "en": "oval (owalny, owalna, owalne)"
+      },
+      "forms": [
+        "owalna",
+        "owalne"
+      ]
+    },
+    {
+      "id": "podluzny",
+      "text": "podłużny",
+      "meaning": {
+        "en": "long, oblong (podłużny, podłużna, podłużne)"
+      },
+      "forms": [
+        "podłużna",
+        "podłużne"
+      ]
+    },
+    {
+      "id": "miekki",
+      "text": "miękki",
+      "meaning": {
+        "en": "soft (miękki, miękka, miękkie)"
+      },
+      "forms": [
+        "miękka",
+        "miękkie"
+      ]
+    },
+    {
+      "id": "twardy",
+      "text": "twardy",
+      "meaning": {
+        "en": "hard (twardy, twarda, twarde)"
+      },
+      "forms": [
+        "twarda",
+        "twarde"
+      ]
+    },
+    {
+      "id": "targ",
+      "text": "targ",
+      "meaning": {
+        "en": "a market"
+      }
+    },
+    {
+      "id": "na-targu",
+      "text": "na targu",
+      "meaning": {
+        "en": "at the market"
+      }
+    },
+    {
+      "id": "kupowac-kupujemy",
+      "text": "kupujemy",
+      "meaning": {
+        "en": "we buy, we are buying"
+      }
+    },
+    {
+      "id": "kupowac-kupuje-on",
+      "text": "kupuje",
+      "meaning": {
+        "en": "he buys, she buys"
+      }
+    },
+    {
+      "id": "kupowac-kupujesz",
+      "text": "kupujesz",
+      "meaning": {
+        "en": "you buy, you are buying (one friend)"
+      }
+    },
+    {
+      "id": "zupa-jarzynowa",
+      "text": "zupa jarzynowa",
+      "meaning": {
+        "en": "vegetable soup"
+      }
+    },
+    {
+      "id": "jarzyna",
+      "text": "jarzyna",
+      "meaning": {
+        "en": "a vegetable, another word for warzywo (jarzyny: vegetables)"
+      },
+      "forms": [
+        "jarzyny"
+      ]
+    },
+    {
+      "id": "spaghetti",
+      "text": "spaghetti",
+      "meaning": {
+        "en": "spaghetti"
+      }
+    },
+    {
+      "id": "poprosze",
+      "text": "poproszę",
+      "meaning": {
+        "en": "I'd like…, please (poproszę kilo jabłek)"
+      }
+    },
+    {
+      "id": "kilo",
+      "text": "kilo",
+      "meaning": {
+        "en": "a kilo"
+      }
+    },
+    {
+      "id": "pol-kilo",
+      "text": "pół kilo",
+      "meaning": {
+        "en": "half a kilo"
+      }
+    },
+    {
+      "id": "dwie",
+      "text": "dwie",
+      "meaning": {
+        "en": "two (with a feminine noun: dwie papryki)"
+      }
+    },
+    {
+      "id": "produkt",
+      "text": "produkt",
+      "meaning": {
+        "en": "a product, an ingredient (produkty: products)"
+      },
+      "forms": [
+        "produkty"
+      ]
+    },
+    {
+      "id": "do-picia",
+      "text": "do picia",
+      "meaning": {
+        "en": "to drink (co do picia?: what about drinks?)"
+      }
+    },
+    {
+      "id": "piwo",
+      "text": "piwo",
+      "meaning": {
+        "en": "beer, a beer (piwa: beers)"
+      },
+      "forms": [
+        "piwa"
+      ]
+    },
+    {
+      "id": "w-takim-razie",
+      "text": "w takim razie",
+      "meaning": {
+        "en": "in that case"
+      }
+    },
+    {
+      "id": "dojrzaly",
+      "text": "dojrzały",
+      "meaning": {
+        "en": "ripe (dojrzały, dojrzała, dojrzałe)"
+      },
+      "forms": [
+        "dojrzała",
+        "dojrzałe"
+      ]
+    },
+    {
+      "id": "swiezy",
+      "text": "świeży",
+      "meaning": {
+        "en": "fresh (świeży, świeża, świeże)"
+      },
+      "forms": [
+        "świeża",
+        "świeże"
+      ]
+    },
+    {
+      "id": "suszony",
+      "text": "suszony",
+      "meaning": {
+        "en": "dried (suszony, suszona, suszone)"
+      },
+      "forms": [
+        "suszona",
+        "suszone"
+      ]
+    },
+    {
+      "id": "bazylia",
+      "text": "bazylia",
+      "meaning": {
+        "en": "basil"
+      }
+    },
+    {
+      "id": "w-doniczce",
+      "text": "w doniczce",
+      "meaning": {
+        "en": "in a pot (a plant in a pot)"
+      }
+    },
+    {
+      "id": "mniej",
+      "text": "mniej",
+      "meaning": {
+        "en": "less"
+      }
+    },
+    {
+      "id": "sezon",
+      "text": "sezon",
+      "meaning": {
+        "en": "a season (to nie jest sezon: they are out of season)"
+      }
+    },
+    {
+      "id": "te",
+      "text": "te",
+      "meaning": {
+        "en": "these, those (with a plural noun: te jabłka)"
+      }
+    },
+    {
+      "id": "natka",
+      "text": "natka",
+      "meaning": {
+        "en": "the green leaves of parsley"
+      }
+    },
+    {
+      "id": "korzen",
+      "text": "korzeń",
+      "meaning": {
+        "en": "a root"
+      }
+    },
+    {
+      "id": "kilogram",
+      "text": "kilogram",
+      "meaning": {
+        "en": "a kilogram"
+      }
+    },
+    {
+      "id": "sprzedawca",
+      "text": "sprzedawca",
+      "meaning": {
+        "en": "a shop assistant, a seller (a man)"
+      }
+    },
+    {
+      "id": "sprzedawczyni",
+      "text": "sprzedawczyni",
+      "meaning": {
+        "en": "a shop assistant, a seller (a woman)"
+      }
+    },
+    {
+      "id": "jak-to-sie-nazywa",
+      "text": "jak to się nazywa?",
+      "meaning": {
+        "en": "what's it called?"
+      }
+    },
+    {
+      "id": "liczba-mnoga",
+      "text": "liczba mnoga",
+      "meaning": {
+        "en": "the plural"
+      }
+    },
+    {
+      "id": "to-sa",
+      "text": "to są",
+      "meaning": {
+        "en": "these are, they are (to są jabłka)"
+      }
+    },
+    {
+      "id": "jedna",
+      "text": "jedna",
+      "meaning": {
+        "en": "one (with a feminine noun: jedna gruszka)"
+      }
+    },
+    {
+      "id": "jedno",
+      "text": "jedno",
+      "meaning": {
+        "en": "one (with a neuter noun: jedno jabłko)"
+      }
+    },
+    {
+      "id": "sredni",
+      "text": "średni",
+      "meaning": {
+        "en": "medium, medium-sized (średni, średnia, średnie)"
+      },
+      "forms": [
+        "średnia",
+        "średnie"
+      ]
+    },
+    {
+      "id": "gotowany",
+      "text": "gotowany",
+      "meaning": {
+        "en": "boiled, cooked (gotowany, gotowana, gotowane)"
+      },
+      "forms": [
+        "gotowana",
+        "gotowane"
+      ]
+    },
+    {
+      "id": "pieczony",
+      "text": "pieczony",
+      "meaning": {
+        "en": "roast, baked (pieczony, pieczona, pieczone)"
+      },
+      "forms": [
+        "pieczona",
+        "pieczone"
+      ]
+    },
+    {
+      "id": "duszony",
+      "text": "duszony",
+      "meaning": {
+        "en": "stewed, braised (duszony, duszona, duszone)"
+      },
+      "forms": [
+        "duszona",
+        "duszone"
+      ]
+    },
+    {
+      "id": "smazony",
+      "text": "smażony",
+      "meaning": {
+        "en": "fried (smażony, smażona, smażone)"
+      },
+      "forms": [
+        "smażona",
+        "smażone"
+      ]
+    },
+    {
+      "id": "wedzony",
+      "text": "wędzony",
+      "meaning": {
+        "en": "smoked (wędzony, wędzona, wędzone)"
+      },
+      "forms": [
+        "wędzona",
+        "wędzone"
+      ]
+    },
+    {
+      "id": "surowy",
+      "text": "surowy",
+      "meaning": {
+        "en": "raw (surowy, surowa, surowe)"
+      },
+      "forms": [
+        "surowa",
+        "surowe"
+      ]
+    },
+    {
+      "id": "patelnia",
+      "text": "patelnia",
+      "meaning": {
+        "en": "a frying pan"
+      }
+    },
+    {
+      "id": "pachniec-pachnie",
+      "text": "pachnie",
+      "meaning": {
+        "en": "it smells nice (to pachnie!: that smells good!)"
+      }
+    },
+    {
+      "id": "przyprawy",
+      "text": "przyprawy",
+      "meaning": {
+        "en": "spices, seasoning"
+      }
+    },
+    {
+      "id": "zdrowszy",
+      "text": "zdrowszy",
+      "meaning": {
+        "en": "healthier (zdrowszy, zdrowsza, zdrowsze)"
+      },
+      "forms": [
+        "zdrowsza",
+        "zdrowsze"
+      ]
+    },
+    {
+      "id": "uwielbiac-uwielbiam",
+      "text": "uwielbiam",
+      "meaning": {
+        "en": "I love (uwielbiam pizzę: I love pizza)"
+      }
+    },
+    {
+      "id": "zupa-rybna",
+      "text": "zupa rybna",
+      "meaning": {
+        "en": "fish soup"
+      }
+    },
+    {
+      "id": "pieknie",
+      "text": "pięknie",
+      "meaning": {
+        "en": "beautifully, lovely (pięknie pachnie: it smells lovely)"
+      }
+    },
+    {
+      "id": "najpierw",
+      "text": "najpierw",
+      "meaning": {
+        "en": "first, first of all"
+      }
+    },
+    {
+      "id": "potem",
+      "text": "potem",
+      "meaning": {
+        "en": "then, afterwards"
+      }
+    },
+    {
+      "id": "nabial",
+      "text": "nabiał",
+      "meaning": {
+        "en": "dairy (milk, cheese, yoghurt)"
+      }
+    },
+    {
+      "id": "pieczywo",
+      "text": "pieczywo",
+      "meaning": {
+        "en": "bread and rolls; the bread aisle"
+      }
+    },
+    {
+      "id": "mrozonki",
+      "text": "mrożonki",
+      "meaning": {
+        "en": "frozen food"
+      }
+    },
+    {
+      "id": "slodycze",
+      "text": "słodycze",
+      "meaning": {
+        "en": "sweets, confectionery"
+      }
+    },
+    {
+      "id": "napoje",
+      "text": "napoje",
+      "meaning": {
+        "en": "drinks"
+      }
+    },
+    {
+      "id": "alkohole",
+      "text": "alkohole",
+      "meaning": {
+        "en": "alcoholic drinks"
+      }
+    },
+    {
+      "id": "czekolada",
+      "text": "czekolada",
+      "meaning": {
+        "en": "chocolate"
+      }
+    },
+    {
+      "id": "cukierki",
+      "text": "cukierki",
+      "meaning": {
+        "en": "sweets, candy"
+      }
+    },
+    {
+      "id": "drozdzowka",
+      "text": "drożdżówka",
+      "meaning": {
+        "en": "a sweet bun"
+      }
+    },
+    {
+      "id": "pstrag",
+      "text": "pstrąg",
+      "meaning": {
+        "en": "a trout"
+      }
+    },
+    {
+      "id": "dorsz",
+      "text": "dorsz",
+      "meaning": {
+        "en": "cod"
+      }
+    },
+    {
+      "id": "sledz",
+      "text": "śledź",
+      "meaning": {
+        "en": "a herring"
+      }
+    },
+    {
+      "id": "losos",
+      "text": "łosoś",
+      "meaning": {
+        "en": "salmon"
+      }
+    },
+    {
+      "id": "produkty-zbozowe",
+      "text": "produkty zbożowe",
+      "meaning": {
+        "en": "grains: rice, pasta, groats"
+      }
+    },
+    {
+      "id": "grzybowy",
+      "text": "grzybowy",
+      "meaning": {
+        "en": "mushroom, made with mushrooms (grzybowy, grzybowa, grzybowe)"
+      },
+      "forms": [
+        "grzybowa",
+        "grzybowe"
+      ]
+    },
+    {
+      "id": "cebulowy",
+      "text": "cebulowy",
+      "meaning": {
+        "en": "onion, made with onions (cebulowy, cebulowa, cebulowe)"
+      },
+      "forms": [
+        "cebulowa",
+        "cebulowe"
+      ]
+    },
+    {
+      "id": "kalafiorowy",
+      "text": "kalafiorowy",
+      "meaning": {
+        "en": "cauliflower, made with cauliflower (kalafiorowy, kalafiorowa, kalafiorowe)"
+      },
+      "forms": [
+        "kalafiorowa",
+        "kalafiorowe"
+      ]
+    },
+    {
+      "id": "zwykle",
+      "text": "zwykle",
+      "meaning": {
+        "en": "usually"
+      }
+    }
+  ]
+}

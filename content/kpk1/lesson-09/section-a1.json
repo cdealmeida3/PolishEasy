@@ -1,0 +1,371 @@
+{
+  "id": "kpk1-l09-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Owoce i warzywa",
+    "meaning": {
+      "en": "Fruit and vegetables"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-a1-t01",
+      "before": "kpk1-l09-a1-e01",
+      "title": {
+        "en": "Owoce"
+      },
+      "body": {
+        "en": "Most fruit are feminine: *gruszka*, *śliwka*, *brzoskwinia*, *wiśnia*, like *truskawka* and *malina*. *Ananas* and *arbuz* are masculine, like *banan*. *Kiwi* is neuter and never changes. *Winogrona* (grapes) are plural: one grape is *winogrono*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a1-e01",
+      "prompt": "gruszka",
+      "options": [
+        {
+          "en": "a pear (gruszki: pears)"
+        },
+        {
+          "en": "an apple (jabłka: apples)"
+        },
+        {
+          "en": "a plum (śliwki: plums)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "gruszka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a1-e02",
+      "prompt": "śliwka",
+      "options": [
+        {
+          "en": "a sour cherry (wiśnie: sour cherries)"
+        },
+        {
+          "en": "a plum (śliwki: plums)"
+        },
+        {
+          "en": "a pear (gruszki: pears)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sliwka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-a1-e03",
+      "text": "gruszka i śliwka",
+      "meaning": {
+        "en": "a pear and a plum"
+      },
+      "distractors": [
+        "gruszka i jabłko",
+        "banan i śliwka"
+      ],
+      "items": [
+        "gruszka",
+        "i",
+        "sliwka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a1-e04",
+      "prompt": "brzoskwinia",
+      "options": [
+        {
+          "en": "an orange, the fruit (pomarańcze: oranges)"
+        },
+        {
+          "en": "a plum (śliwki: plums)"
+        },
+        {
+          "en": "a peach (brzoskwinie: peaches)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "brzoskwinia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a1-e05",
+      "prompt": "kiwi",
+      "options": [
+        {
+          "en": "a kiwi fruit, kiwi fruit (it never changes)"
+        },
+        {
+          "en": "a lemon (cytryny: lemons)"
+        },
+        {
+          "en": "a peach (brzoskwinie: peaches)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kiwi"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-a1-e06",
+      "prompt": {
+        "en": "the kiwi fruit is green"
+      },
+      "acceptedAnswers": [
+        "kiwi jest zielone"
+      ],
+      "distractors": [
+        "zielony",
+        "żółte"
+      ],
+      "items": [
+        "kiwi",
+        "byc-jest",
+        "zielony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a1-e07",
+      "prompt": "winogrona",
+      "options": [
+        {
+          "en": "a sour cherry (wiśnie: sour cherries)"
+        },
+        {
+          "en": "grapes"
+        },
+        {
+          "en": "a raspberry (maliny: raspberries)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "winogrona"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a1-e08",
+      "prompt": "wiśnia",
+      "options": [
+        {
+          "en": "a strawberry (truskawki: strawberries)"
+        },
+        {
+          "en": "a plum (śliwki: plums)"
+        },
+        {
+          "en": "a sour cherry (wiśnie: sour cherries)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wisnia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-a1-e09",
+      "text": "Wiśnia jest ___.",
+      "meaning": {
+        "en": "The sour cherry is red."
+      },
+      "gaps": [
+        [
+          "czerwona"
+        ]
+      ],
+      "distractors": [
+        "czerwony",
+        "zielona"
+      ],
+      "items": [
+        "wisnia",
+        "byc-jest",
+        "czerwony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a1-e10",
+      "prompt": "ananas",
+      "options": [
+        {
+          "en": "a pineapple (ananasy: pineapples)"
+        },
+        {
+          "en": "a watermelon (arbuzy: watermelons)"
+        },
+        {
+          "en": "a banana (banany: bananas)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ananas"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a1-e11",
+      "prompt": "arbuz",
+      "options": [
+        {
+          "en": "a pineapple (ananasy: pineapples)"
+        },
+        {
+          "en": "a watermelon (arbuzy: watermelons)"
+        },
+        {
+          "en": "a kiwi fruit, kiwi fruit (it never changes)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "arbuz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-a1-e12",
+      "acceptedAnswers": [
+        "arbuz jest duży"
+      ],
+      "meaning": {
+        "en": "the watermelon is big"
+      },
+      "items": [
+        "arbuz",
+        "byc-jest",
+        "duzy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-a1-e13",
+      "prompt": {
+        "en": "I like pears"
+      },
+      "acceptedAnswers": [
+        "lubię gruszki",
+        "ja lubię gruszki"
+      ],
+      "items": [
+        "lubic-lubie",
+        "gruszka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-a1-e14",
+      "pairs": [
+        {
+          "polish": "gruszka",
+          "meaning": {
+            "en": "a pear"
+          }
+        },
+        {
+          "polish": "śliwka",
+          "meaning": {
+            "en": "a plum"
+          }
+        },
+        {
+          "polish": "brzoskwinia",
+          "meaning": {
+            "en": "a peach"
+          }
+        },
+        {
+          "polish": "wiśnia",
+          "meaning": {
+            "en": "a sour cherry"
+          }
+        },
+        {
+          "polish": "ananas",
+          "meaning": {
+            "en": "a pineapple"
+          }
+        },
+        {
+          "polish": "arbuz",
+          "meaning": {
+            "en": "a watermelon"
+          }
+        }
+      ],
+      "items": [
+        "gruszka",
+        "sliwka",
+        "brzoskwinia",
+        "wisnia",
+        "ananas",
+        "arbuz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-a1-e15",
+      "lines": [
+        "Ewa lubi owoce.",
+        "Lubi gruszki, ananasy i winogrona.",
+        "Nie lubi kiwi."
+      ],
+      "meaning": {
+        "en": "Ewa's favourite fruit."
+      },
+      "statements": [
+        {
+          "text": "Ewa lubi winogrona.",
+          "meaning": {
+            "en": "Ewa likes grapes."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa lubi kiwi.",
+          "meaning": {
+            "en": "Ewa likes kiwi fruit."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa lubi gruszki.",
+          "meaning": {
+            "en": "Ewa likes pears."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "lubic-lubi",
+        "owoc",
+        "gruszka",
+        "ananas",
+        "i",
+        "winogrona",
+        "nie",
+        "kiwi"
+      ]
+    }
+  ]
+}

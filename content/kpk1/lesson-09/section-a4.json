@@ -1,0 +1,386 @@
+{
+  "id": "kpk1-l09-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Owoce i warzywa",
+    "meaning": {
+      "en": "Fruit and vegetables"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-a4-t01",
+      "before": "kpk1-l09-a4-e01",
+      "title": {
+        "en": "Ze śmietaną"
+      },
+      "body": {
+        "en": "A salad comes *z* something, with the instrumental: *z orzechami*, *z rodzynkami*, *z oliwą*. Before a word that starts with *s*, *z*, *ś*, *sz*, *ż* or *rz* and then another consonant, *z* becomes *ze*: *ze śmietaną*, but *z sokiem*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a4-e01",
+      "prompt": "śmietana",
+      "options": [
+        {
+          "en": "sour cream, cream"
+        },
+        {
+          "en": "milk"
+        },
+        {
+          "en": "olive oil"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "smietana"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a4-e02",
+      "prompt": "oliwa",
+      "options": [
+        {
+          "en": "sour cream, cream"
+        },
+        {
+          "en": "olive oil"
+        },
+        {
+          "en": "a sauce"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "oliwa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a4-e03",
+      "prompt": "orzechy",
+      "options": [
+        {
+          "en": "raisins"
+        },
+        {
+          "en": "olives"
+        },
+        {
+          "en": "nuts"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "orzechy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a4-e04",
+      "prompt": "rodzynki",
+      "options": [
+        {
+          "en": "raisins"
+        },
+        {
+          "en": "nuts"
+        },
+        {
+          "en": "grapes"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rodzynki"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-a4-e05",
+      "text": "orzechy i rodzynki",
+      "meaning": {
+        "en": "nuts and raisins"
+      },
+      "distractors": [
+        "orzechy i oliwki",
+        "jagody i rodzynki"
+      ],
+      "items": [
+        "orzechy",
+        "i",
+        "rodzynki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a4-e06",
+      "prompt": "ze śmietaną",
+      "options": [
+        {
+          "en": "with nuts"
+        },
+        {
+          "en": "with sour cream"
+        },
+        {
+          "en": "sour cream, cream"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ze-smietana"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-a4-e07",
+      "text": "Sałatka ___ śmietaną.",
+      "meaning": {
+        "en": "A salad with sour cream."
+      },
+      "gaps": [
+        [
+          "ze"
+        ]
+      ],
+      "distractors": [
+        "z",
+        "i"
+      ],
+      "items": [
+        "salatka",
+        "ze-smietana"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a4-e08",
+      "prompt": "z orzechami",
+      "options": [
+        {
+          "en": "nuts"
+        },
+        {
+          "en": "with raisins"
+        },
+        {
+          "en": "with nuts"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-orzechami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a4-e09",
+      "prompt": "z rodzynkami",
+      "options": [
+        {
+          "en": "with raisins"
+        },
+        {
+          "en": "with sour cream"
+        },
+        {
+          "en": "raisins"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-rodzynkami"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-a4-e10",
+      "prompt": {
+        "en": "a fruit salad with nuts"
+      },
+      "acceptedAnswers": [
+        "sałatka owocowa z orzechami"
+      ],
+      "distractors": [
+        "orzechy",
+        "owocowy"
+      ],
+      "items": [
+        "salatka",
+        "owocowy",
+        "z-orzechami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a4-e11",
+      "prompt": "jagody",
+      "options": [
+        {
+          "en": "grapes"
+        },
+        {
+          "en": "blueberries"
+        },
+        {
+          "en": "a sour cherry (wiśnie: sour cherries)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jagody"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-a4-e12",
+      "acceptedAnswers": [
+        "jagody ze śmietaną"
+      ],
+      "meaning": {
+        "en": "blueberries with sour cream"
+      },
+      "items": [
+        "jagody",
+        "ze-smietana"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-a4-e13",
+      "prompt": {
+        "en": "a salad with raisins"
+      },
+      "acceptedAnswers": [
+        "sałatka z rodzynkami"
+      ],
+      "items": [
+        "salatka",
+        "z-rodzynkami"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-a4-e14",
+      "pairs": [
+        {
+          "polish": "śmietana",
+          "meaning": {
+            "en": "sour cream"
+          }
+        },
+        {
+          "polish": "oliwa",
+          "meaning": {
+            "en": "olive oil"
+          }
+        },
+        {
+          "polish": "orzechy",
+          "meaning": {
+            "en": "nuts"
+          }
+        },
+        {
+          "polish": "rodzynki",
+          "meaning": {
+            "en": "raisins"
+          }
+        },
+        {
+          "polish": "jagody",
+          "meaning": {
+            "en": "blueberries"
+          }
+        },
+        {
+          "polish": "ze śmietaną",
+          "meaning": {
+            "en": "with sour cream"
+          }
+        }
+      ],
+      "items": [
+        "smietana",
+        "oliwa",
+        "orzechy",
+        "rodzynki",
+        "jagody",
+        "ze-smietana"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-a4-e15",
+      "lines": [
+        "To jest sałatka z jabłkiem.",
+        "Jest z orzechami i z rodzynkami.",
+        "I ze śmietaną."
+      ],
+      "meaning": {
+        "en": "A salad on the table."
+      },
+      "statements": [
+        {
+          "text": "Sałatka jest z orzechami.",
+          "meaning": {
+            "en": "The salad has nuts in it."
+          },
+          "true": true
+        },
+        {
+          "text": "Sałatka jest z oliwą.",
+          "meaning": {
+            "en": "The salad has olive oil in it."
+          },
+          "true": false
+        },
+        {
+          "text": "Sałatka jest ze śmietaną.",
+          "meaning": {
+            "en": "The salad has sour cream in it."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "salatka",
+        "z-orzechami",
+        "i",
+        "z-rodzynkami",
+        "ze-smietana"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-a4-e16",
+      "prompt": {
+        "en": "sour cream and olive oil"
+      },
+      "acceptedAnswers": [
+        "śmietana i oliwa"
+      ],
+      "distractors": [
+        "śmietaną",
+        "oliwą"
+      ],
+      "items": [
+        "smietana",
+        "i",
+        "oliwa"
+      ]
+    }
+  ]
+}

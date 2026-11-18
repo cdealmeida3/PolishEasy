@@ -1,0 +1,431 @@
+{
+  "id": "kpk1-l09-d4",
+  "section": {
+    "letter": "D",
+    "heading": "Supermarket",
+    "meaning": {
+      "en": "The supermarket"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-d4-t01",
+      "before": "kpk1-l09-d4-e01",
+      "title": {
+        "en": "Ryby"
+      },
+      "body": {
+        "en": "Fish is a must at Christmas: *śledź* (herring) and *karp* (carp). Other fish in the shop are *łosoś* (salmon), *dorsz* (cod) and *pstrąg* (trout). For breakfast with coffee there is often a *drożdżówka*, a sweet bun."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d4-e01",
+      "prompt": "drożdżówka",
+      "options": [
+        {
+          "en": "a bread roll"
+        },
+        {
+          "en": "a sweet bun"
+        },
+        {
+          "en": "a biscuit, a small cake (ciastka: biscuits)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "drozdzowka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d4-e02",
+      "prompt": "pstrąg",
+      "options": [
+        {
+          "en": "cod"
+        },
+        {
+          "en": "salmon"
+        },
+        {
+          "en": "a trout"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pstrag"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d4-e03",
+      "prompt": "dorsz",
+      "options": [
+        {
+          "en": "cod"
+        },
+        {
+          "en": "a trout"
+        },
+        {
+          "en": "a herring"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dorsz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-d4-e04",
+      "text": "pstrąg i dorsz",
+      "meaning": {
+        "en": "trout and cod"
+      },
+      "distractors": [
+        "pstrąg i łosoś",
+        "śledź i dorsz"
+      ],
+      "items": [
+        "pstrag",
+        "i",
+        "dorsz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d4-e05",
+      "prompt": "śledź",
+      "options": [
+        {
+          "en": "salmon"
+        },
+        {
+          "en": "a herring"
+        },
+        {
+          "en": "cod"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sledz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d4-e06",
+      "prompt": "łosoś",
+      "options": [
+        {
+          "en": "a herring"
+        },
+        {
+          "en": "a trout"
+        },
+        {
+          "en": "salmon"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "losos"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-d4-e07",
+      "prompt": {
+        "en": "smoked salmon"
+      },
+      "acceptedAnswers": [
+        "wędzony łosoś"
+      ],
+      "distractors": [
+        "wędzona",
+        "śledź"
+      ],
+      "items": [
+        "wedzony",
+        "losos"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d4-e08",
+      "prompt": "woda mineralna",
+      "options": [
+        {
+          "en": "mineral water"
+        },
+        {
+          "en": "juice"
+        },
+        {
+          "en": "drinks"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "woda-mineralna"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-d4-e09",
+      "text": "Woda ___ jest zimna.",
+      "meaning": {
+        "en": "The mineral water is cold."
+      },
+      "gaps": [
+        [
+          "mineralna"
+        ]
+      ],
+      "distractors": [
+        "mineralną",
+        "mineralny"
+      ],
+      "items": [
+        "woda-mineralna",
+        "byc-jest",
+        "zimny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d4-e10",
+      "prompt": "produkty zbożowe",
+      "options": [
+        {
+          "en": "bread and rolls; the bread aisle"
+        },
+        {
+          "en": "grains: rice, pasta, groats"
+        },
+        {
+          "en": "dairy (milk, cheese, yoghurt)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "produkty-zbozowe"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-d4-e11",
+      "acceptedAnswers": [
+        "ryż i kasza to produkty zbożowe"
+      ],
+      "meaning": {
+        "en": "rice and groats are grains"
+      },
+      "items": [
+        "ryz",
+        "i",
+        "kasza",
+        "to",
+        "produkty-zbozowe"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-d4-e12",
+      "prompt": {
+        "en": "a sweet bun and coffee"
+      },
+      "acceptedAnswers": [
+        "drożdżówka i kawa",
+        "kawa i drożdżówka"
+      ],
+      "items": [
+        "drozdzowka",
+        "i",
+        "kawa"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-d4-e13",
+      "pairs": [
+        {
+          "polish": "drożdżówka",
+          "meaning": {
+            "en": "a sweet bun"
+          }
+        },
+        {
+          "polish": "pstrąg",
+          "meaning": {
+            "en": "a trout"
+          }
+        },
+        {
+          "polish": "dorsz",
+          "meaning": {
+            "en": "cod"
+          }
+        },
+        {
+          "polish": "śledź",
+          "meaning": {
+            "en": "a herring"
+          }
+        },
+        {
+          "polish": "łosoś",
+          "meaning": {
+            "en": "salmon"
+          }
+        },
+        {
+          "polish": "woda mineralna",
+          "meaning": {
+            "en": "mineral water"
+          }
+        }
+      ],
+      "items": [
+        "drozdzowka",
+        "pstrag",
+        "dorsz",
+        "sledz",
+        "losos",
+        "woda-mineralna"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-d4-e14",
+      "prompt": {
+        "en": "salmon or trout?"
+      },
+      "acceptedAnswers": [
+        "łosoś czy pstrąg?"
+      ],
+      "distractors": [
+        "śledź",
+        "i"
+      ],
+      "items": [
+        "losos",
+        "czy",
+        "pstrag"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l09-d4-e15",
+      "lines": [
+        "Gdzie są ryby?",
+        "Tam.",
+        "A woda mineralna?",
+        "Napoje są tutaj."
+      ],
+      "meaning": {
+        "en": "Asking in the supermarket."
+      },
+      "items": [
+        "gdzie",
+        "byc-sa",
+        "ryba",
+        "tam",
+        "a",
+        "woda-mineralna",
+        "napoje",
+        "tutaj"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-d4-e16",
+      "lines": [
+        "W koszyku jest łosoś i dorsz.",
+        "Jest też woda mineralna.",
+        "I drożdżówka na śniadanie."
+      ],
+      "meaning": {
+        "en": "What's in Adam's basket."
+      },
+      "statements": [
+        {
+          "text": "W koszyku jest śledź.",
+          "meaning": {
+            "en": "There is a herring in the basket."
+          },
+          "true": false
+        },
+        {
+          "text": "W koszyku jest woda mineralna.",
+          "meaning": {
+            "en": "There is mineral water in the basket."
+          },
+          "true": true
+        },
+        {
+          "text": "Drożdżówka jest na obiad.",
+          "meaning": {
+            "en": "The sweet bun is for dinner."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "byc-jest",
+        "losos",
+        "i",
+        "dorsz",
+        "tez",
+        "woda-mineralna",
+        "drozdzowka",
+        "na-sniadanie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-d4-e17",
+      "prompt": {
+        "en": "a herring and salmon"
+      },
+      "acceptedAnswers": [
+        "śledź i łosoś"
+      ],
+      "distractors": [
+        "śledzie",
+        "łososia"
+      ],
+      "items": [
+        "sledz",
+        "i",
+        "losos"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-d4-e18",
+      "prompt": {
+        "en": "pasta and rice are grains"
+      },
+      "acceptedAnswers": [
+        "makaron i ryż to produkty zbożowe"
+      ],
+      "items": [
+        "makaron",
+        "i",
+        "ryz",
+        "to",
+        "produkty-zbozowe"
+      ]
+    }
+  ]
+}

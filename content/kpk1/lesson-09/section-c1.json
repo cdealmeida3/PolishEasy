@@ -1,0 +1,435 @@
+{
+  "id": "kpk1-l09-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Liczba mnoga",
+    "meaning": {
+      "en": "The plural"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-c1-t01",
+      "before": "kpk1-l09-c1-e01",
+      "title": {
+        "en": "Mianownik: liczba mnoga"
+      },
+      "body": {
+        "en": "In the plural most masculine and feminine things end in *-y*: *banany*, *pomidory*, *cytryny*. After *k*, *g* they end in *-i*: *gruszki*, *śliwki*. After *l*, *j*, a soft sound or *c*, *cz*, *sz*, *ż*, *rz* they end in *-e*: *brzoskwinie*, *pomarańcze*, *cebule*. Neuter things end in *-a*: *jabłka*, *jajka*, *piwa*. The accusative plural is the same: *to są jabłka*, *kupuję jabłka*."
+      },
+      "table": {
+        "title": {
+          "en": "Liczba mnoga: kto? co?"
+        },
+        "columns": [
+          {
+            "gender": "m"
+          },
+          {
+            "gender": "f"
+          },
+          {
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "header": "pojedyncza",
+            "cells": [
+              "banan",
+              "gruszka",
+              "jabłko"
+            ]
+          },
+          {
+            "header": "mnoga",
+            "cells": [
+              "banan[y]",
+              "gruszk[i]",
+              "jabłk[a]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-c1-e01",
+      "prompt": "liczba mnoga",
+      "options": [
+        {
+          "en": "the singular"
+        },
+        {
+          "en": "a list"
+        },
+        {
+          "en": "the plural"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "liczba-mnoga"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-c1-e02",
+      "prompt": "to są",
+      "options": [
+        {
+          "en": "these are, they are (to są jabłka)"
+        },
+        {
+          "en": "it isn't; this isn't (to nie jest ołówek)"
+        },
+        {
+          "en": "they are"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "to-sa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-c1-e03",
+      "prompt": "jedna",
+      "options": [
+        {
+          "en": "one"
+        },
+        {
+          "en": "one (with a feminine noun: jedna gruszka)"
+        },
+        {
+          "en": "two (with a feminine noun: dwie papryki)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jedna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-c1-e04",
+      "prompt": "jedno",
+      "options": [
+        {
+          "en": "one (with a feminine noun: jedna gruszka)"
+        },
+        {
+          "en": "two"
+        },
+        {
+          "en": "one (with a neuter noun: jedno jabłko)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jedno"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-c1-e05",
+      "text": "to są banany",
+      "meaning": {
+        "en": "these are bananas"
+      },
+      "distractors": [
+        "to są ananasy",
+        "to jest banan"
+      ],
+      "items": [
+        "to-sa",
+        "banan"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-c1-e06",
+      "text": "Jeden pomidor, dwa ___.",
+      "meaning": {
+        "en": "One tomato, two tomatoes."
+      },
+      "gaps": [
+        [
+          "pomidory"
+        ]
+      ],
+      "distractors": [
+        "pomidor",
+        "pomidorów"
+      ],
+      "items": [
+        "jeden",
+        "pomidor",
+        "dwa"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-c1-e07",
+      "text": "Jedna gruszka, dwie ___.",
+      "meaning": {
+        "en": "One pear, two pears."
+      },
+      "gaps": [
+        [
+          "gruszki"
+        ]
+      ],
+      "distractors": [
+        "gruszka",
+        "gruszkę"
+      ],
+      "items": [
+        "jedna",
+        "gruszka",
+        "dwie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-c1-e08",
+      "text": "Jedno jabłko, dwa ___.",
+      "meaning": {
+        "en": "One apple, two apples."
+      },
+      "gaps": [
+        [
+          "jabłka"
+        ]
+      ],
+      "distractors": [
+        "jabłko",
+        "jabłek"
+      ],
+      "items": [
+        "jedno",
+        "jablko",
+        "dwa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-c1-e09",
+      "prompt": {
+        "en": "these are cucumbers"
+      },
+      "acceptedAnswers": [
+        "to są ogórki"
+      ],
+      "distractors": [
+        "ogórek",
+        "jest"
+      ],
+      "items": [
+        "to-sa",
+        "ogorek"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-c1-e10",
+      "acceptedAnswers": [
+        "to są pomarańcze"
+      ],
+      "meaning": {
+        "en": "these are oranges"
+      },
+      "items": [
+        "to-sa",
+        "pomarancza"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-c1-e11",
+      "prompt": {
+        "en": "these are lemons"
+      },
+      "acceptedAnswers": [
+        "to są cytryny"
+      ],
+      "items": [
+        "to-sa",
+        "cytryna"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-c1-e12",
+      "pairs": [
+        {
+          "polish": "banany",
+          "meaning": {
+            "en": "bananas"
+          }
+        },
+        {
+          "polish": "gruszki",
+          "meaning": {
+            "en": "pears"
+          }
+        },
+        {
+          "polish": "jabłka",
+          "meaning": {
+            "en": "apples"
+          }
+        },
+        {
+          "polish": "cebule",
+          "meaning": {
+            "en": "onions"
+          }
+        },
+        {
+          "polish": "śliwki",
+          "meaning": {
+            "en": "plums"
+          }
+        },
+        {
+          "polish": "liczba mnoga",
+          "meaning": {
+            "en": "the plural"
+          }
+        }
+      ],
+      "items": [
+        "banan",
+        "gruszka",
+        "jablko",
+        "cebula",
+        "sliwka",
+        "liczba-mnoga"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-c1-e13",
+      "prompt": {
+        "en": "I am buying raspberries"
+      },
+      "acceptedAnswers": [
+        "kupuję maliny"
+      ],
+      "distractors": [
+        "malina",
+        "malinę"
+      ],
+      "items": [
+        "kupowac-kupuje",
+        "malina"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-c1-e14",
+      "prompt": {
+        "en": "I like strawberries"
+      },
+      "acceptedAnswers": [
+        "lubię truskawki",
+        "ja lubię truskawki"
+      ],
+      "items": [
+        "lubic-lubie",
+        "truskawka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-c1-e15",
+      "text": "kupujemy brzoskwinie",
+      "meaning": {
+        "en": "we are buying peaches"
+      },
+      "distractors": [
+        "kupujemy brzoskwinię",
+        "kupuję brzoskwinie"
+      ],
+      "items": [
+        "kupowac-kupujemy",
+        "brzoskwinia"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l09-c1-e16",
+      "lines": [
+        "Co to jest?",
+        "To są ryby.",
+        "Świeże?",
+        "Tak, bardzo świeże!"
+      ],
+      "meaning": {
+        "en": "At the fish stall."
+      },
+      "items": [
+        "co",
+        "to",
+        "byc-jest",
+        "to-sa",
+        "ryba",
+        "swiezy",
+        "tak",
+        "bardzo"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-c1-e17",
+      "lines": [
+        "Na stole są owoce.",
+        "Są jabłka, gruszki i śliwki.",
+        "Nie ma bananów."
+      ],
+      "meaning": {
+        "en": "A bowl of fruit on the table."
+      },
+      "statements": [
+        {
+          "text": "Na stole są jabłka.",
+          "meaning": {
+            "en": "There are apples on the table."
+          },
+          "true": true
+        },
+        {
+          "text": "Na stole są banany.",
+          "meaning": {
+            "en": "There are bananas on the table."
+          },
+          "true": false
+        },
+        {
+          "text": "Na stole są śliwki.",
+          "meaning": {
+            "en": "There are plums on the table."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "byc-sa",
+        "owoc",
+        "jablko",
+        "gruszka",
+        "i",
+        "sliwka",
+        "nie"
+      ]
+    }
+  ]
+}

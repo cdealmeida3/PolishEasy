@@ -192,3 +192,23 @@ It gives the later chapters:
 - the meals, *na śniadanie / obiad / kolację*, and the times of day *rano*, *po południu*, *wieczorem*.
 
 It leaves for later: the genitive after *bez* as a rule (*bez cukru* and *bez mleka* are Items), the accusative of masculine animate food (*jem kurczaka*), and adjectives in the instrumental (*z czarnymi oliwkami* is only in a Tip).
+
+## Chapter 9: Lubisz marchewkę?
+
+Book pages 74 to 79 (pages 78 and 79 are missing from the spreads; a frame of them is `teacher-course/pages-extra/lesson-09-pages-78-79.jpg` in the project files), recordings 103 to 111. Seventeen parts, 282 Exercises and 112 new Items.
+
+- **A** *Owoce i warzywa*, in six: fruit (15: *gruszka*, *śliwka*, *brzoskwinia*, *kiwi*, *winogrona*, *wiśnia*, *ananas*, *arbuz*); vegetables (16: *marchewka*, *marchewkę*, *cebula*, *czosnek*, *papryka*, *kapusta*, *kalafior*, *burak*); more vegetables (16: *por*, *seler*, *pietruszka*, *rzodkiewka*, *fasola*, *groszek*, *kukurydza*, *dynia*); salads, with a Tip on *ze* (16: *śmietana*, *oliwa*, *orzechy*, *rodzynki*, *ze śmietaną*, *z orzechami*, *z rodzynkami*, *jagody*); taste, with the *Zapamiętaj!* of *słodki jak cukier* (15: *smak*, *kwaśny*, *słony*, *gorzki*, *ostry*, *delikatny*); and shape (15: *kształt*, *okrągły*, *owalny*, *podłużny*, *miękki*, *twardy*).
+- **B** *Na targu*, in four: buying (17, *kupować*'s table: *targ*, *na targu*, *kupujemy*, *kupujesz*, *kupuje*, *zupa jarzynowa*, *jarzyna*, *spaghetti*); how much (17, a Tip on *dwa* and *dwie*: *poproszę*, *kilo*, *pół kilo*, *dwie*, *produkt*, *do picia*, *piwo*, *w takim razie*); fresh and ripe (18, a Tip on *te*: *dojrzały*, *świeży*, *suszony*, *bazylia*, *w doniczce*, *mniej*, *sezon*, *te*); and parsley at the stall (17: *natka*, *korzeń*, *kilogram*, *sprzedawca*, *sprzedawczyni*, *jak to się nazywa?*).
+- **C** *Liczba mnoga*, in two: the nominative and accusative plural of things (17, a table of *-y*, *-i*, *-a*: *liczba mnoga*, *to są*, *jedna*, *jedno*); and adjectives in the plural, with the shopping list (17, a table of *-e*: *średni*).
+- **D** *Gotowanie* and the supermarket, in four: ways of cooking (17: *gotowany*, *pieczony*, *duszony*, *smażony*, *wędzony*, *surowy*, *patelnia*); the kitchen (17, *uwielbiać*'s table and *zdrowszy … niż*: *uwielbiam*, *pachnie*, *pięknie*, *przyprawy*, *zdrowszy*, *zupa rybna*, *najpierw*, *potem*); the aisles (17: *nabiał*, *pieczywo*, *mrożonki*, *słodycze*, *napoje*, *alkohole*, *czekolada*, *cukierki*); and fish and more (18: *drożdżówka*, *pstrąg*, *dorsz*, *śledź*, *łosoś*, *produkty zbożowe*).
+- *Ćwiczenia* (17): soups and juices named by adjectives (*grzybowy*, *cebulowy*, *kalafiorowy*, *zwykle*), the plural after numbers, *kupować*.
+
+A noun's plural is its form (*gruszka*, *gruszki*), so the Items of chapter 8 that this chapter puts in the plural gained theirs (*banany*, *jabłka*, *pomarańcze*, *truskawki*, *maliny*, *cytryny*, *pomidory*, *ogórki*, *ryby*). There are 37 listening tasks on all 9 recordings (103 is a word list; 107 to 109 repeat 104 to 106 to fill in), and one Chat: *At the market* (Pani Ewa, formal: four tomatoes, two yellow peppers, fresh basil in a pot, ripe bananas). The new nouns are in Practice's `genders`, *miękki / twardy*, *świeży / suszony* and *surowy / gotowany* are in `opposites`, and 29 Items have pictures (the fruit and vegetables, the aisles, a pan and scales).
+
+It gives the later chapters:
+
+- the nominative and accusative plural of things, and adjectives in the plural in *-e*;
+- *dwa / dwie*, *jeden / jedna / jedno*, *kilo* and *pół kilo*, *poproszę*;
+- *kupować* and *uwielbiać*, and the cooked adjectives (*gotowany*, *pieczony*, *smażony*).
+
+It leaves for later: the genitive plural after five and after *kilo* (*pięć jabłek*, *kilo pomidorów*, only in the Tip and the recordings), the plural of people (*oni*, *studenci*), and the comparative as a rule (*zdrowszy* is an Item).

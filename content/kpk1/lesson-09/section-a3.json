@@ -1,0 +1,387 @@
+{
+  "id": "kpk1-l09-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Owoce i warzywa",
+    "meaning": {
+      "en": "Fruit and vegetables"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-a3-t01",
+      "before": "kpk1-l09-a3-e01",
+      "title": {
+        "en": "Warzywa"
+      },
+      "body": {
+        "en": "For a Polish soup you need *włoszczyzna*: *marchewka*, *pietruszka* (the root), *seler* and *por*. *Fasola* (beans) and *groszek* (peas) are singular in Polish, though we eat many: *groszek jest zielony*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a3-e01",
+      "prompt": "por",
+      "options": [
+        {
+          "en": "celery, celeriac"
+        },
+        {
+          "en": "a leek"
+        },
+        {
+          "en": "an onion (cebule: onions)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "por"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a3-e02",
+      "prompt": "seler",
+      "options": [
+        {
+          "en": "parsley; parsley root"
+        },
+        {
+          "en": "a leek"
+        },
+        {
+          "en": "celery, celeriac"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "seler"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a3-e03",
+      "prompt": "pietruszka",
+      "options": [
+        {
+          "en": "parsley; parsley root"
+        },
+        {
+          "en": "celery, celeriac"
+        },
+        {
+          "en": "a carrot (marchewki: carrots)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pietruszka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-a3-e04",
+      "text": "marchewka i pietruszka",
+      "meaning": {
+        "en": "a carrot and parsley"
+      },
+      "distractors": [
+        "marchewka i seler",
+        "por i pietruszka"
+      ],
+      "items": [
+        "marchewka",
+        "i",
+        "pietruszka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a3-e05",
+      "prompt": "rzodkiewka",
+      "options": [
+        {
+          "en": "a beetroot (buraki: beetroots)"
+        },
+        {
+          "en": "a radish (rzodkiewki: radishes)"
+        },
+        {
+          "en": "a tomato (pomidory: tomatoes)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "rzodkiewka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-a3-e06",
+      "prompt": {
+        "en": "the radish is red"
+      },
+      "acceptedAnswers": [
+        "rzodkiewka jest czerwona"
+      ],
+      "distractors": [
+        "czerwony",
+        "zielona"
+      ],
+      "items": [
+        "rzodkiewka",
+        "byc-jest",
+        "czerwony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a3-e07",
+      "prompt": "fasola",
+      "options": [
+        {
+          "en": "peas"
+        },
+        {
+          "en": "sweetcorn, maize"
+        },
+        {
+          "en": "beans"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "fasola"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a3-e08",
+      "prompt": "groszek",
+      "options": [
+        {
+          "en": "peas"
+        },
+        {
+          "en": "beans"
+        },
+        {
+          "en": "a cabbage; cabbage"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "groszek"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-a3-e09",
+      "text": "Groszek jest ___.",
+      "meaning": {
+        "en": "The peas are green."
+      },
+      "gaps": [
+        [
+          "zielony"
+        ]
+      ],
+      "distractors": [
+        "zielona",
+        "zielone"
+      ],
+      "items": [
+        "groszek",
+        "byc-jest",
+        "zielony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a3-e10",
+      "prompt": "kukurydza",
+      "options": [
+        {
+          "en": "peas"
+        },
+        {
+          "en": "sweetcorn, maize"
+        },
+        {
+          "en": "a pumpkin"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kukurydza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a3-e11",
+      "prompt": "dynia",
+      "options": [
+        {
+          "en": "a watermelon (arbuzy: watermelons)"
+        },
+        {
+          "en": "sweetcorn, maize"
+        },
+        {
+          "en": "a pumpkin"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dynia"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-a3-e12",
+      "acceptedAnswers": [
+        "kukurydza jest żółta"
+      ],
+      "meaning": {
+        "en": "the sweetcorn is yellow"
+      },
+      "items": [
+        "kukurydza",
+        "byc-jest",
+        "zolty"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-a3-e13",
+      "prompt": {
+        "en": "the pumpkin is big"
+      },
+      "acceptedAnswers": [
+        "dynia jest duża"
+      ],
+      "items": [
+        "dynia",
+        "byc-jest",
+        "duzy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-a3-e14",
+      "pairs": [
+        {
+          "polish": "por",
+          "meaning": {
+            "en": "a leek"
+          }
+        },
+        {
+          "polish": "seler",
+          "meaning": {
+            "en": "celery"
+          }
+        },
+        {
+          "polish": "rzodkiewka",
+          "meaning": {
+            "en": "a radish"
+          }
+        },
+        {
+          "polish": "fasola",
+          "meaning": {
+            "en": "beans"
+          }
+        },
+        {
+          "polish": "groszek",
+          "meaning": {
+            "en": "peas"
+          }
+        },
+        {
+          "polish": "kukurydza",
+          "meaning": {
+            "en": "sweetcorn"
+          }
+        }
+      ],
+      "items": [
+        "por",
+        "seler",
+        "rzodkiewka",
+        "fasola",
+        "groszek",
+        "kukurydza"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-a3-e15",
+      "lines": [
+        "Tata robi zupę.",
+        "Ma marchewkę, pietruszkę, seler i por.",
+        "Nie ma fasoli."
+      ],
+      "meaning": {
+        "en": "Dad is making soup."
+      },
+      "statements": [
+        {
+          "text": "Tata robi zupę.",
+          "meaning": {
+            "en": "Dad is making soup."
+          },
+          "true": true
+        },
+        {
+          "text": "Tata ma seler.",
+          "meaning": {
+            "en": "Dad has celery."
+          },
+          "true": true
+        },
+        {
+          "text": "Tata ma fasolę.",
+          "meaning": {
+            "en": "Dad has beans."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "tata",
+        "robic-robi",
+        "zupa-acc",
+        "miec-ma",
+        "marchewka-acc",
+        "seler",
+        "i",
+        "por",
+        "nie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-a3-e16",
+      "prompt": {
+        "en": "beans and a pumpkin"
+      },
+      "acceptedAnswers": [
+        "fasola i dynia",
+        "dynia i fasola"
+      ],
+      "items": [
+        "fasola",
+        "i",
+        "dynia"
+      ]
+    }
+  ]
+}
