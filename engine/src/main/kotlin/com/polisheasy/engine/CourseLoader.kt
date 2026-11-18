@@ -93,7 +93,17 @@ internal data class PracticeFile(
     val wordSearch: List<String> = emptyList(),
     /** The table of Pronoun grid. */
     val pronounGrid: PronounGridFile? = null,
+    /** The room of Room scene and Stoi, leży czy wisi?. */
+    val room: RoomFile? = null,
 )
+
+/** The room of chapter 18's Games: its [places] (Items), its [positions] (rows of verb Items: stoi, leży, wisi) and its [scenes]. */
+@Serializable
+internal data class RoomFile(val places: List<String>, val positions: List<List<String>>, val scenes: List<RoomSceneFile>)
+
+/** One sentence of the room: its [text], *Lampa stoi na biurku.*, what it means, the [thing], [place] and [verb] Items it names, and the Items it uses. */
+@Serializable
+internal data class RoomSceneFile(val text: String, val meaning: Localized, val thing: String, val place: String, val verb: String, val items: List<String>)
 
 /** Pronoun grid's table: the [persons] down its side, as Items, and its [columns]. */
 @Serializable
@@ -392,6 +402,16 @@ internal class ReadContent(
                         .map { PronounColumn(it.id, it.question, it.meaning, it.cells) },
                 )
             },
+            room = practice?.room?.let { room ->
+                val places = room.places.distinct()
+                val positions = room.positions.filter { it.isNotEmpty() }
+                Room(
+                    places,
+                    positions,
+                    room.scenes.filter { scene -> scene.place in places && positions.any { scene.verb in it } }
+                        .map { RoomSceneLine(it.text, it.meaning, it.thing, it.place, it.verb, it.items.distinct()) }.distinctBy { it.text },
+                )
+            },
         )
     }
 
@@ -605,6 +625,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         problems += forecastProblems(file, practice.forecasts, course, content.itemsComplete)
         problems += wordSearchProblems(file, practice.wordSearch, course, content.itemsComplete)
         practice.pronounGrid?.let { grid -> problems += pronounGridProblems(file, grid, course, content.itemsComplete) }
+        practice.room?.let { room -> problems += roomProblems(file, room, course, content.itemsComplete) }
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -1330,5 +1351,48 @@ private fun wordSearchProblems(file: String, words: List<String>, course: Course
         }
     }
     words.repeated().forEach { id -> problems += ContentProblem(file, id, "Word search lists Item $id more than once") }
+    return problems
+}
+
+/**
+ * What is wrong with the room of Room scene and Stoi, leży czy wisi?: each place a defined Item, enough
+ * for the board; each row of positions defined Items, none in two rows; each sentence naming its
+ * thing, its place and its verb, all among its Items, the place one of the room's and said in the
+ * sentence, the verb one of its positions and written in the sentence, the thing its first word; nothing twice.
+ */
+private fun roomProblems(file: String, room: RoomFile, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    room.places.forEach { id -> if (itemsComplete && id !in course.itemsById) problems += ContentProblem(file, id, "The room's place $id is not a defined Item") }
+    room.places.repeated().forEach { id -> problems += ContentProblem(file, id, "The room's place $id is listed more than once") }
+    if (room.places.distinct().size < RoomScene.BOARD) problems += ContentProblem(file, null, "The room has ${room.places.distinct().size} places, fewer than the ${RoomScene.BOARD} of Room scene's board")
+    room.positions.flatten().forEach { id -> if (itemsComplete && id !in course.itemsById) problems += ContentProblem(file, id, "The room's position $id is not a defined Item") }
+    room.positions.flatten().repeated().forEach { id -> problems += ContentProblem(file, id, "The position $id is in more than one row") }
+    room.positions.filter { it.size < 2 }.forEach { problems += ContentProblem(file, null, "A row of the room's positions has fewer than two verbs: $it") }
+    fun words(text: String) = text.lowercase().split(Regex("[^\\p{L}]+")).filter { it.isNotEmpty() }
+    room.scenes.forEach { scene ->
+        val said = words(scene.text)
+        if (scene.place !in room.places) problems += ContentProblem(file, scene.place, "The sentence \"${scene.text}\" puts its thing on ${scene.place}, which is not a place of the room")
+        if (room.positions.none { scene.verb in it }) problems += ContentProblem(file, scene.verb, "The sentence \"${scene.text}\" names the verb ${scene.verb}, which is not a position of the room")
+        listOf(scene.thing, scene.place, scene.verb).filter { it !in scene.items }.forEach { id ->
+            problems += ContentProblem(file, id, "The sentence \"${scene.text}\" does not list $id among its Items")
+        }
+        scene.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "The sentence \"${scene.text}\" names Item $id, which is not defined")
+        }
+        if (itemsComplete) {
+            course.itemsById[scene.verb]?.let { verb -> if (verb.text.lowercase() !in said) problems += ContentProblem(file, scene.verb, "The sentence \"${scene.text}\" does not say its verb ${verb.text}") }
+            course.itemsById[scene.place]?.let { place ->
+                val spellings = (listOf(place.text) + place.forms).map(::words)
+                if (spellings.none { said.windowed(it.size).contains(it) }) problems += ContentProblem(file, scene.place, "The sentence \"${scene.text}\" does not say its place ${place.text}")
+            }
+            course.itemsById[scene.thing]?.let { thing ->
+                // Room scene puts the thing on its place as the sentence says it, by its first word.
+                if (said.firstOrNull() !in (listOf(thing.text) + thing.forms).map { it.lowercase() }) {
+                    problems += ContentProblem(file, scene.thing, "The sentence \"${scene.text}\" does not start with its thing ${thing.text} or a form of it")
+                }
+            }
+        }
+    }
+    room.scenes.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The room's sentence \"$text\" is listed more than once") }
     return problems
 }

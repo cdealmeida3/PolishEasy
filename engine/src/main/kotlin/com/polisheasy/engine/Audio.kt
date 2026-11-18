@@ -71,7 +71,8 @@ fun Course.spokenTexts(): List<String> =
             swaps.flatMap { listOf(it.text, it.short) } +
             packaging.map { it.text } +
             counting.map { it.text } +
-            forecasts.map { it.text }
+            forecasts.map { it.text } +
+            room?.scenes.orEmpty().map { it.text }
         )
         .distinctBy(::audioKey)
 

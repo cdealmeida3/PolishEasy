@@ -160,6 +160,10 @@ fun polishContent(files: ContentFiles): PolishContent {
         content.practice?.pronounGrid?.columns.orEmpty().forEach { column ->
             sentence(column.question, column.meaning, PolishUse(file, "pronounGrid/${column.id}", PolishRole.PROMPT))
         }
+        // The room's sentences, of Room scene and Stoi, leży czy wisi?.
+        content.practice?.room?.scenes.orEmpty().forEachIndexed { index, scene ->
+            sentence(scene.text, scene.meaning, PolishUse(file, "room/${index + 1}", PolishRole.PROMPT))
+        }
         content.course().allClockTimes().forEach { time ->
             sentence(time.polish, mapOf(language to "${time.hour}:${time.minute.toString().padStart(2, '0')}"), PolishUse(file, "clock", PolishRole.ANSWER))
         }

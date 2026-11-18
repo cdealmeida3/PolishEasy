@@ -92,6 +92,8 @@ import com.polisheasy.engine.HowManyRound
 import com.polisheasy.engine.ForecasterRound
 import com.polisheasy.engine.WordSearchRound
 import com.polisheasy.engine.PronounGridRound
+import com.polisheasy.engine.RoomSceneRound
+import com.polisheasy.engine.PositionsRound
 import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.SaidTime
 import com.polisheasy.engine.TreeRound
@@ -1223,6 +1225,63 @@ class ScreenshotsTest {
             screen.waitForIdle()
             shot(name)
         }
+    }
+
+    @Test
+    fun `Room scene and Stoi, lezy czy wisi over the real course in the light theme`() = chapter18Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Room scene and Stoi, lezy czy wisi over the real course in the dark theme`() = chapter18Games("dark")
+
+    @Test
+    fun `Room scene and Stoi, lezy czy wisi over the real course at the largest font size`() = atTheLargestFontSize { chapter18Games("large") }
+
+    /**
+     * Chapter 18's Games: Room scene's setup, a sentence read over the empty room, the room with
+     * two things put, a wrong place, and Stoi, leży czy wisi?'s gapped sentence, a wrong verb and the result.
+     */
+    private fun chapter18Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun room() = (viewModel?.screen as Screen.Round).round as RoomSceneRound
+
+        fun positions() = (viewModel?.screen as Screen.Round).round as PositionsRound
+
+        fun move(round: com.polisheasy.engine.Round) {
+            screen.runOnUiThread { checkNotNull(viewModel).move(round) }
+            screen.waitForIdle()
+        }
+
+        fun RoomSceneRound.right(): RoomSceneRound = choose(checkNotNull(question).place).next()
+
+        openRealPractice()
+        openGame(R.string.game_room_scene)
+        shot("366-room-scene-setup")
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        shot("367-room-scene-read")
+        move(room().right().right())
+        val asked = checkNotNull(room().question)
+        move(room().choose((asked.place + 1) % room().board.size))
+        shot("368-room-scene-wrong")
+        leaveRound()
+
+        openGame(R.string.game_stoi_lezy_wisi)
+        tap(R.string.setup_play)
+        shot("369-stoi-lezy-wisi-gap")
+        val first = checkNotNull(positions().question)
+        move(positions().choose((first.right + 1) % first.offered.size))
+        shot("370-stoi-lezy-wisi-wrong")
+        tap(R.string.action_continue)
+        screen.mainClock.autoAdvance = false
+        var round = positions()
+        while (round.question != null) round = round.choose(checkNotNull(round.question).right).next()
+        move(round)
+        screen.mainClock.advanceTimeBy(2_000)
+        screen.mainClock.autoAdvance = true
+        screen.waitForIdle()
+        shot("371-stoi-lezy-wisi-result")
     }
 
     @Test

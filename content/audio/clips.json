@@ -5621,6 +5621,10 @@
       "text": "Gazeta kosztuje cztery złote."
     },
     {
+      "id": "gazeta-lezy-na-biurku",
+      "text": "Gazeta leży na biurku."
+    },
+    {
       "id": "gazete",
       "text": "gazetę"
     },
@@ -8885,6 +8889,10 @@
       "text": "komputer"
     },
     {
+      "id": "komputer-stoi-na-biurku",
+      "text": "Komputer stoi na biurku."
+    },
+    {
       "id": "koncze",
       "text": "kończę"
     },
@@ -8977,12 +8985,24 @@
       "text": "koszulka"
     },
     {
+      "id": "koszulka-lezy-na-lozku",
+      "text": "Koszulka leży na łóżku."
+    },
+    {
       "id": "kot",
       "text": "kot"
     },
     {
       "id": "kot-jest-na-kanapie-a-ewa-w-fotelu",
       "text": "Kot jest na kanapie, a Ewa w fotelu."
+    },
+    {
+      "id": "kot-lezy-na-kanapie",
+      "text": "Kot leży na kanapie."
+    },
+    {
+      "id": "kot-lezy-w-fotelu",
+      "text": "Kot leży w fotelu."
     },
     {
       "id": "kota",
@@ -9079,6 +9099,14 @@
     {
       "id": "ksiazka-jest-na-podlodze",
       "text": "Książka jest na podłodze."
+    },
+    {
+      "id": "ksiazka-lezy-na-lozku",
+      "text": "Książka leży na łóżku."
+    },
+    {
+      "id": "ksiazka-lezy-na-polce",
+      "text": "Książka leży na półce."
     },
     {
       "id": "ksiazke",
@@ -9393,8 +9421,16 @@
       "text": "kwiatek"
     },
     {
+      "id": "kwiatek-stoi-na-polce",
+      "text": "Kwiatek stoi na półce."
+    },
+    {
       "id": "kwiatek-stoi-na-polce-obok-biurka",
       "text": "Kwiatek stoi na półce, obok biurka."
+    },
+    {
+      "id": "kwiatki-stoja-na-podlodze",
+      "text": "Kwiatki stoją na podłodze."
     },
     {
       "id": "kwiatki-stoja-na-polce",
@@ -9461,6 +9497,10 @@
       "text": "lampa"
     },
     {
+      "id": "lampa-stoi-na-biurku",
+      "text": "Lampa stoi na biurku."
+    },
+    {
       "id": "lampa-stoi-na-podlodze-przy-lozku",
       "text": "Lampa stoi na podłodze, przy łóżku."
     },
@@ -9471,6 +9511,10 @@
     {
       "id": "lampa-stoi-przy-lozku",
       "text": "lampa stoi przy łóżku"
+    },
+    {
+      "id": "lampa-wisi-na-suficie",
+      "text": "Lampa wisi na suficie."
     },
     {
       "id": "laptop",
@@ -9975,6 +10019,10 @@
     {
       "id": "lustro",
       "text": "lustro"
+    },
+    {
+      "id": "lustro-wisi-na-scianie",
+      "text": "Lustro wisi na ścianie."
     },
     {
       "id": "luty",
@@ -10629,6 +10677,10 @@
       "text": "masło jest w lodówce"
     },
     {
+      "id": "maslo-lezy-w-lodowce",
+      "text": "Masło leży w lodówce."
+    },
+    {
       "id": "masz",
       "text": "masz"
     },
@@ -11035,6 +11087,10 @@
     {
       "id": "mleko-jest-w-lodowce",
       "text": "mleko jest w lodówce"
+    },
+    {
+      "id": "mleko-stoi-w-lodowce",
+      "text": "Mleko stoi w lodówce."
     },
     {
       "id": "mleko-to-nabial",
@@ -13909,6 +13965,10 @@
       "text": "obraz wisi na ścianie"
     },
     {
+      "id": "obraz-wisi-na-scianie-2",
+      "text": "Obraz wisi na ścianie."
+    },
+    {
       "id": "obwarzanek",
       "text": "obwarzanek"
     },
@@ -15641,8 +15701,16 @@
       "text": "poduszka"
     },
     {
+      "id": "poduszka-lezy-w-fotelu",
+      "text": "Poduszka leży w fotelu."
+    },
+    {
       "id": "poduszki",
       "text": "poduszki"
+    },
+    {
+      "id": "poduszki-leza-na-kanapie",
+      "text": "Poduszki leżą na kanapie."
     },
     {
       "id": "poeta",
@@ -18113,6 +18181,10 @@
       "text": "sweter"
     },
     {
+      "id": "sweter-lezy-w-szafie",
+      "text": "Sweter leży w szafie."
+    },
+    {
       "id": "swiatla",
       "text": "światła"
     },
@@ -19007,6 +19079,10 @@
     {
       "id": "telewizor",
       "text": "telewizor"
+    },
+    {
+      "id": "telewizor-stoi-na-regale",
+      "text": "Telewizor stoi na regale."
     },
     {
       "id": "telewizor-stoi-przy-drzwiach",
@@ -20201,6 +20277,10 @@
       "text": "Torba i sweter leżą na łóżku, a obrazy wiszą na ścianie."
     },
     {
+      "id": "torba-lezy-na-podlodze",
+      "text": "Torba leży na podłodze."
+    },
+    {
       "id": "torba-to-rzeczownik",
       "text": "torba to rzeczownik"
     },
@@ -20619,6 +20699,10 @@
     {
       "id": "ubrania-sa-w-szafie",
       "text": "ubrania są w szafie"
+    },
+    {
+      "id": "ubrania-wisza-w-szafie",
+      "text": "Ubrania wiszą w szafie."
     },
     {
       "id": "ubranie",
@@ -23287,6 +23371,14 @@
     {
       "id": "zdjecia-sa-na-regale",
       "text": "Zdjęcia są na regale."
+    },
+    {
+      "id": "zdjecia-stoja-na-regale",
+      "text": "Zdjęcia stoją na regale."
+    },
+    {
+      "id": "zdjecia-wisza-na-scianie",
+      "text": "Zdjęcia wiszą na ścianie."
     },
     {
       "id": "zdjecie",

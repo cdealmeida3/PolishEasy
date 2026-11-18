@@ -89,6 +89,12 @@ object Size {
     /** The least height of a picture to choose as an answer. */
     val pictureOption: Dp = 120.dp
 
+    /** The least height of a place of the room in Room scene: its word and a row of the things put there. */
+    val roomSpot: Dp = 104.dp
+
+    /** One thing put on a place of the room: two fit across a place when the room is three across. */
+    val roomThing: Dp = 44.dp
+
     /** One of the pictures How many? counts: five fit across a phone, so ten make two rows. */
     val countPicture: Dp = 60.dp
 

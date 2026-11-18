@@ -929,4 +929,28 @@ class PracticeOverAuthoredContentTest {
             }
         }
     }
+
+    @Test
+    fun `Room scene and Stoi, lezy czy wisi open in chapter 18, and every sentence of the room is said and gapped`() {
+        listOf(Game.ROOM_SCENE, Game.STOI_LEZY_WISI).forEach { game ->
+            val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == game }.state == GameState.READY }
+            assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l18-a"), "$game: ${course.path[firstReady - 1].id}")
+        }
+        val room = course.room!!
+        room.scenes.forEach { scene ->
+            assertTrue(course.clipFor(scene.text) != null, "No Clip for ${scene.text}")
+            val verb = course.itemsById.getValue(scene.verb).text
+            assertTrue(StoiLezyWisi.GAP in StoiLezyWisi.gap(scene.text, verb), scene.text)
+        }
+        val practice = practiceAfter(course.path.size)
+        assertEquals(listOf(RoomScene.LISTEN, RoomScene.READ), practice.setup(Game.ROOM_SCENE, emptyList(), sound = true).choices.single().options.map { it.id })
+        repeat(5) {
+            val scene = practice.start(practice.setup(Game.ROOM_SCENE, listOf(RoomScene.LISTEN), sound = true), sound = true) as RoomSceneRound
+            assertEquals(RoomScene.BOARD, scene.board.size)
+            assertEquals(RoomScene.QUESTIONS, scene.total)
+            val positions = practice.start(practice.setup(Game.STOI_LEZY_WISI, emptyList())) as PositionsRound
+            assertEquals(StoiLezyWisi.QUESTIONS, positions.total)
+            positions.run.questions.forEach { assertEquals(3, it.offered.size, it.text) }
+        }
+    }
 }

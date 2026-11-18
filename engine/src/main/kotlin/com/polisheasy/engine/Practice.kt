@@ -86,6 +86,8 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     WORD_SEARCH("word-search", GameGroup.WORDS, chapter = 16),
     /** Chapter 17's Game: the table of the pronouns filled a square at a time, *ze mną*, *o nim*, *komu? jej*. */
     PRONOUN_GRID("pronoun-grid", GameGroup.WORDS, chapter = 17),
+    ROOM_SCENE("room-scene", GameGroup.PHRASES, chapter = 18),
+    STOI_LEZY_WISI("stoi-lezy-wisi", GameGroup.VERBS, chapter = 18),
 }
 
 /** Whether a Game can be played now. */
@@ -293,7 +295,7 @@ class Practice internal constructor(
     /** Whether every Game is open with the whole book, as if every Daily Set were completed. */
     private val everything: () -> Boolean = { false },
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt, Directions, PronounSwap, PackagingMatch, HowMany, Forecaster, WordSearch, PronounGrid).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt, Directions, PronounSwap, PackagingMatch, HowMany, Forecaster, WordSearch, PronounGrid, RoomScene, StoiLezyWisi).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

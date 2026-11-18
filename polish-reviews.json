@@ -5080,6 +5080,10 @@
             "meaning": "The newspaper costs four złoty."
         },
         {
+            "text": "Gazeta leży na biurku.",
+            "meaning": "The newspaper is lying on the desk."
+        },
+        {
             "text": "Gazety o sporcie."
         },
         {
@@ -7618,6 +7622,10 @@
             "meaning": "A compote, please."
         },
         {
+            "text": "Komputer stoi na biurku.",
+            "meaning": "The computer is on the desk."
+        },
+        {
             "text": "Koncert jest w piątek.",
             "meaning": "The concert is on Friday."
         },
@@ -7643,6 +7651,10 @@
             "text": "Kostka."
         },
         {
+            "text": "Koszulka leży na łóżku.",
+            "meaning": "The T-shirt is lying on the bed."
+        },
+        {
             "text": "Koszulka."
         },
         {
@@ -7652,6 +7664,14 @@
         {
             "text": "Kot jest na kanapie, a Ewa w fotelu.",
             "meaning": "The cat is on the sofa, and Ewa is in the armchair."
+        },
+        {
+            "text": "Kot leży na kanapie.",
+            "meaning": "The cat is lying on the sofa."
+        },
+        {
+            "text": "Kot leży w fotelu.",
+            "meaning": "The cat is lying in the armchair."
         },
         {
             "text": "Kotlet mielony z frytkami, proszę.",
@@ -7718,6 +7738,14 @@
         {
             "text": "Książka jest na podłodze.",
             "meaning": "The book is on the floor."
+        },
+        {
+            "text": "Książka leży na półce.",
+            "meaning": "The book is lying on the shelf."
+        },
+        {
+            "text": "Książka leży na łóżku.",
+            "meaning": "The book is lying on the bed."
         },
         {
             "text": "Książka."
@@ -7899,7 +7927,15 @@
             "meaning": "The pot plant is on the shelf, next to the desk."
         },
         {
+            "text": "Kwiatek stoi na półce.",
+            "meaning": "The pot plant is on the shelf."
+        },
+        {
             "text": "Kwiatek."
+        },
+        {
+            "text": "Kwiatki stoją na podłodze.",
+            "meaning": "The pot plants stand on the floor."
         },
         {
             "text": "Kwiatki stoją na półce.",
@@ -7918,6 +7954,10 @@
         },
         {
             "text": "Lampa stoi na podłodze, przy łóżku."
+        },
+        {
+            "text": "Lampa wisi na suficie.",
+            "meaning": "The lamp hangs from the ceiling."
         },
         {
             "text": "Lampa."
@@ -8214,6 +8254,10 @@
         },
         {
             "text": "Ludzie śmiali się głośno. Ale wstyd!"
+        },
+        {
+            "text": "Lustro wisi na ścianie.",
+            "meaning": "The mirror hangs on the wall."
         },
         {
             "text": "Lustro."
@@ -8638,6 +8682,10 @@
             "text": "Masz wolny czas?"
         },
         {
+            "text": "Masło leży w lodówce.",
+            "meaning": "The butter is in the fridge."
+        },
+        {
             "text": "Mazury"
         },
         {
@@ -8790,6 +8838,10 @@
         },
         {
             "text": "Mleko jest dobre."
+        },
+        {
+            "text": "Mleko stoi w lodówce.",
+            "meaning": "The milk is in the fridge."
         },
         {
             "text": "Mnie również!",
@@ -10606,6 +10658,10 @@
             "meaning": "The picture stands by the window."
         },
         {
+            "text": "Obraz wisi na ścianie.",
+            "meaning": "The picture hangs on the wall."
+        },
+        {
             "text": "Obraz."
         },
         {
@@ -11517,7 +11573,15 @@
             "text": "Podróżami."
         },
         {
+            "text": "Poduszka leży w fotelu.",
+            "meaning": "The cushion is in the armchair."
+        },
+        {
             "text": "Poduszki i czasem książki."
+        },
+        {
+            "text": "Poduszki leżą na kanapie.",
+            "meaning": "The cushions are on the sofa."
         },
         {
             "text": "Pogoda była świetna."
@@ -12772,6 +12836,10 @@
             "meaning": "Dried, please."
         },
         {
+            "text": "Sweter leży w szafie.",
+            "meaning": "The jumper is in the wardrobe, lying flat."
+        },
+        {
             "text": "Sweter."
         },
         {
@@ -13382,6 +13450,10 @@
             "text": "Telefonu."
         },
         {
+            "text": "Telewizor stoi na regale.",
+            "meaning": "The television is on the bookcase."
+        },
+        {
             "text": "Telewizor stoi przy drzwiach.",
             "meaning": "The television is by the door."
         },
@@ -13951,6 +14023,10 @@
             "meaning": "The bag is practical."
         },
         {
+            "text": "Torba leży na podłodze.",
+            "meaning": "The bag is lying on the floor."
+        },
+        {
             "text": "Torby."
         },
         {
@@ -14136,6 +14212,10 @@
         },
         {
             "text": "Ubierać się."
+        },
+        {
+            "text": "Ubrania wiszą w szafie.",
+            "meaning": "The clothes hang in the wardrobe."
         },
         {
             "text": "Ubrania."
@@ -15649,8 +15729,16 @@
             "meaning": "The photos are lying on the wall."
         },
         {
+            "text": "Zdjęcia stoją na regale.",
+            "meaning": "The photos stand on the bookcase."
+        },
+        {
             "text": "Zdjęcia są na regale.",
             "meaning": "The photos are on the bookcase."
+        },
+        {
+            "text": "Zdjęcia wiszą na ścianie.",
+            "meaning": "The photos hang on the wall."
         },
         {
             "text": "Zdjęcia."
