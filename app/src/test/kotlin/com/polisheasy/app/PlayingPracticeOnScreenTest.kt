@@ -47,6 +47,8 @@ import com.polisheasy.engine.LottoRound
 import com.polisheasy.engine.PlateRound
 import com.polisheasy.engine.MarketRound
 import com.polisheasy.engine.AisleRound
+import com.polisheasy.engine.FlipRound
+import com.polisheasy.engine.TableRound
 import com.polisheasy.engine.TillRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.Register
@@ -829,6 +831,76 @@ class PlayingPracticeOnScreenTest {
     }
 
     @Test
+    fun `Take the order writes what a table says, and the Learner writes each guest's dish on the pad and serves`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_take_the_order)
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val total = table().total
+        val first = checkNotNull(table().question)
+        shows(R.string.order_read_instruction)
+        first.polish.forEach { showsFurtherDown(it) }
+        assertEquals(2, first.dishes.size)
+        screen.onAllNodesWithText(text(R.string.order_blank)).assertCountEquals(2)
+
+        // A dish written and rubbed out again, from the pad.
+        val other = first.menu.first { it.id !in first.dishes }
+        writeOnPad(other.polish)
+        assertEquals(listOf(other.id), table().pad)
+        screen.onAllNodes(hasText(other.polish) and hasClickAction()).onFirst().performScrollTo().performClick()
+        assertEquals(emptyList(), table().pad)
+
+        // Served with the wrong dish for the first guest: wrong, and what each guest wanted is written below.
+        writeOnPad(other.polish)
+        writeOnPad(first.menu.single { it.id == first.dishes[1] }.polish)
+        tap(R.string.order_serve)
+        assertEquals(false, table().given?.correct)
+        showsFurtherDown(first.dishes.mapIndexed { guest, id -> "${guest + 1}. ${first.menu.single { it.id == id }.polish}" }.joinToString(" · "))
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            val question = checkNotNull(table().question)
+            question.dishes.forEach { id -> writeOnPad(question.menu.single { it.id == id }.polish) }
+            tap(R.string.order_serve)
+            tap(R.string.action_continue)
+        }
+        showsScore(total - 1, total)
+    }
+
+    @Test
+    fun `Negation flip shows a sentence, and a wrong negation marks the right one and says what it means`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_negation_flip)
+        tap(R.string.setup_play)
+
+        val first = checkNotNull(flip().card)
+        shows(R.string.flip_instruction)
+        shows(first.yes)
+        shows(text(R.string.quick_time, 1, 0))
+        screen.onNodeWithText(first.meaning).assertDoesNotExist()
+
+        // Right: the next sentence is there at once.
+        showsFurtherDown(first.no)
+        tap(first.no)
+        shows(right(1))
+
+        // Wrong: what the negation means is shown, and it is said.
+        val second = checkNotNull(flip().card)
+        clips.asked.clear()
+        screen.onNodeWithText(second.options[1 - second.right]).performScrollTo().performClick()
+        showsFurtherDown(text(R.string.flip_missed, second.no, second.meaning))
+        assertEquals(listOfNotNull(viewModel?.practiceClipOf(second.no)?.let { Played(it.path, slow = false) }), clips.played)
+        tap(R.string.action_continue)
+
+        screen.mainClock.advanceTimeBy(60_000)
+        screen.waitForIdle()
+        screen.onNodeWithContentDescription(quantity(R.plurals.result_right_sentence, 1)).assertIsDisplayed()
+        showsFirstBest()
+    }
+
+    @Test
     fun `Numbers read shows the words and says nothing, and a run is three numbers in a row`() {
         openPracticeOverTheRealCourse()
         openGame(R.string.game_numbers)
@@ -1442,6 +1514,15 @@ class PlayingPracticeOnScreenTest {
     private fun market(): MarketRound = (viewModel?.screen as Screen.Round).round as MarketRound
 
     private fun aisles(): AisleRound = (viewModel?.screen as Screen.Round).round as AisleRound
+
+    private fun table(): TableRound = (viewModel?.screen as Screen.Round).round as TableRound
+
+    private fun flip(): FlipRound = (viewModel?.screen as Screen.Round).round as FlipRound
+
+    /** Taps the dish on Take the order's menu, which comes after the pad. */
+    private fun writeOnPad(polish: String) {
+        screen.onAllNodes(hasText(polish) and hasClickAction()).onLast().performScrollTo().performClick()
+    }
 
     /** Taps the good [id] on Market list's stall, which comes after the basket, and says how many are in it. */
     private fun putInBasket(id: String) {

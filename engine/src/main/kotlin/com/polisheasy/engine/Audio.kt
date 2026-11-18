@@ -46,8 +46,9 @@ internal fun spoken(script: ChatScript): List<String> =
 
 /**
  * Every Polish text the course can speak, once each, in Path order, then the instructions, the
- * chats, what Ankieta's people say, the letters' names, and Market list's goods, alone and in the
- * plural (*gruszka*, *gruszki*). Each needs a Clip.
+ * chats, what Ankieta's people say, the letters' names, Market list's goods, alone and in the
+ * plural (*gruszka*, *gruszki*), Take the order's words and dishes, and Negation flip's negations.
+ * Each needs a Clip.
  */
 fun Course.spokenTexts(): List<String> =
     (
@@ -56,7 +57,9 @@ fun Course.spokenTexts(): List<String> =
             chats.flatMap(::spoken) +
             ankieta.people.flatMap { person -> person.says.map { it.text } } +
             letterNames.values +
-            market?.goods.orEmpty().mapNotNull { itemsById[it] }.flatMap { listOf(it.text) + it.forms }
+            market?.goods.orEmpty().mapNotNull { itemsById[it] }.flatMap { listOf(it.text) + it.forms } +
+            restaurant?.let { listOf(it.forMe, it.same, it.and) + it.dishes }.orEmpty().mapNotNull { itemsById[it]?.text } +
+            negations.map { it.no }
         )
         .distinctBy(::audioKey)
 

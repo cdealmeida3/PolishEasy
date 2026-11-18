@@ -71,6 +71,10 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_market_list, R.string.game_market_list_note, R.string.game_market_list_needs, R.drawable.game_market_list)
     Game.AISLE_SORT ->
         GameWords(R.string.game_aisle_sort, R.string.game_aisle_sort_note, R.string.game_aisle_sort_needs, R.drawable.game_aisle_sort)
+    Game.TAKE_THE_ORDER ->
+        GameWords(R.string.game_take_the_order, R.string.game_take_the_order_note, R.string.game_take_the_order_needs, R.drawable.game_take_the_order)
+    Game.NEGATION_FLIP ->
+        GameWords(R.string.game_negation_flip, R.string.game_negation_flip_note, R.string.game_negation_flip_needs, R.drawable.game_negation_flip)
 }
 
 @StringRes
@@ -85,7 +89,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.MARKET_LIST, Game.AISLE_SORT, Game.CHAT, Game.ANKIETA -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.MARKET_LIST, Game.AISLE_SORT, Game.TAKE_THE_ORDER, Game.NEGATION_FLIP, Game.CHAT, Game.ANKIETA -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
@@ -120,6 +124,7 @@ internal fun choiceLabel(id: String): String = stringResource(
         "price" -> R.string.choice_price
         "order" -> R.string.choice_order
         "list" -> R.string.choice_list
+        "table" -> R.string.choice_table
         else -> error("No name for the choice $id")
     },
 )
@@ -167,6 +172,8 @@ internal fun optionLabel(option: OptionView): String = option.label
         "two-dishes" -> R.string.option_two_dishes
         "one-good" -> R.string.option_one_good
         "two-goods" -> R.string.option_two_goods
+        "two-guests" -> R.string.option_two_guests
+        "three-guests" -> R.string.option_three_guests
         else -> error("No name for the option ${option.id}")
     },
 )

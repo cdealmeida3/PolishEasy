@@ -403,6 +403,10 @@
             "meaning": "Adam buys water."
         },
         {
+            "text": "Adam lubi czerwone wino.",
+            "meaning": "Adam likes red wine."
+        },
+        {
             "text": "Adam lubi kawę z mlekiem.",
             "meaning": "Adam likes coffee with milk."
         },
@@ -481,6 +485,10 @@
         {
             "text": "Adam mówi trochę po japońsku.",
             "meaning": "Adam speaks a little Japanese."
+        },
+        {
+            "text": "Adam nie lubi czerwonego wina.",
+            "meaning": "Adam doesn't like red wine."
         },
         {
             "text": "Adam nie lubi podróżować.",
@@ -2600,6 +2608,10 @@
             "text": "Ewa nie ma pieniędzy."
         },
         {
+            "text": "Ewa nie pije mleka.",
+            "meaning": "Ewa doesn't drink milk."
+        },
+        {
             "text": "Ewa nie umie tańczyć."
         },
         {
@@ -2616,6 +2628,10 @@
         {
             "text": "Ewa pije herbatę z cytryną.",
             "meaning": "Ewa drinks tea with lemon."
+        },
+        {
+            "text": "Ewa pije mleko.",
+            "meaning": "Ewa drinks milk."
         },
         {
             "text": "Ewa pije wino czerwone."
@@ -3627,8 +3643,16 @@
             "meaning": "Her favourite dish is fish and chips."
         },
         {
+            "text": "Jem chleb.",
+            "meaning": "I eat bread."
+        },
+        {
             "text": "Jem kanapkę z szynką.",
             "meaning": "I am eating a ham sandwich."
+        },
+        {
+            "text": "Jem ser.",
+            "meaning": "I eat cheese."
         },
         {
             "text": "Jest czynna."
@@ -3830,6 +3854,10 @@
         {
             "text": "Jesteś z Francji? Tak, mówię po francusku.",
             "meaning": "Are you from France? Yes, I speak French."
+        },
+        {
+            "text": "Jesz ser.",
+            "meaning": "You eat cheese."
         },
         {
             "text": "Jeździ konno."
@@ -4314,6 +4342,10 @@
             "meaning": "Do you like coffee or tea?"
         },
         {
+            "text": "Lubisz kawę.",
+            "meaning": "You like coffee."
+        },
+        {
             "text": "Lubisz marchewkę?"
         },
         {
@@ -4350,12 +4382,20 @@
             "meaning": "I like I ride a bike and swimming."
         },
         {
+            "text": "Lubię kawę.",
+            "meaning": "I like coffee."
+        },
+        {
             "text": "Lubię malować i słuchać muzyki.",
             "meaning": "I like painting and listening to music."
         },
         {
             "text": "Lubię mleko, ale nie lubię zimnego mleka.",
             "meaning": "I like milk, but I don't like cold milk."
+        },
+        {
+            "text": "Lubię mleko.",
+            "meaning": "I like milk."
         },
         {
             "text": "Lubię pływać i jeździć na rowerze.",
@@ -4382,6 +4422,14 @@
         {
             "text": "Lubię wędzony ser.",
             "meaning": "I like smoked cheese."
+        },
+        {
+            "text": "Lubię zimne mleko.",
+            "meaning": "I like cold milk."
+        },
+        {
+            "text": "Lubię zimny sok.",
+            "meaning": "I like cold juice."
         },
         {
             "text": "Ma dobry aparat, ale chce kupić też tani aparat."
@@ -4472,10 +4520,18 @@
             "meaning": "My first name is Adam."
         },
         {
+            "text": "Mam piwo.",
+            "meaning": "I have beer."
+        },
+        {
             "text": "Mam prawie dwadzieścia lat."
         },
         {
             "text": "Mam prawie dwadzieścia lat. A ty?"
+        },
+        {
+            "text": "Mam sok.",
+            "meaning": "I have juice."
         },
         {
             "text": "Mam sportowe auto.",
@@ -4486,6 +4542,10 @@
         },
         {
             "text": "Mam tu komórkę, klucz i paszport."
+        },
+        {
+            "text": "Mam wodę.",
+            "meaning": "I have water."
         },
         {
             "text": "Mam, ale tylko euro."
@@ -4569,6 +4629,10 @@
         },
         {
             "text": "Maria"
+        },
+        {
+            "text": "Masz chleb.",
+            "meaning": "You have bread."
         },
         {
             "text": "Masz ochotę na coś słodkiego?"
@@ -5167,8 +5231,16 @@
             "text": "Nie bardzo."
         },
         {
+            "text": "Nie jem chleba.",
+            "meaning": "I don't eat bread."
+        },
+        {
             "text": "Nie jem sera.",
             "meaning": "I don't eat cheese."
+        },
+        {
+            "text": "Nie jesz sera.",
+            "meaning": "You don't eat cheese."
         },
         {
             "text": "Nie lubi kiwi."
@@ -5177,8 +5249,28 @@
             "text": "Nie lubi zimnego mleka."
         },
         {
+            "text": "Nie lubisz kawy.",
+            "meaning": "You don't like coffee."
+        },
+        {
             "text": "Nie lubię czytać, wolę grać na komputerze.",
             "meaning": "I don't like reading, I prefer playing computer games."
+        },
+        {
+            "text": "Nie lubię kawy.",
+            "meaning": "I don't like coffee."
+        },
+        {
+            "text": "Nie lubię mleka.",
+            "meaning": "I don't like milk."
+        },
+        {
+            "text": "Nie lubię zimnego mleka.",
+            "meaning": "I don't like cold milk."
+        },
+        {
+            "text": "Nie lubię zimnego soku.",
+            "meaning": "I don't like cold juice."
         },
         {
             "text": "Nie ma bananów."
@@ -5215,6 +5307,22 @@
             "meaning": "I don't have any money, but there is a cash machine there."
         },
         {
+            "text": "Nie mam piwa.",
+            "meaning": "I don't have any beer."
+        },
+        {
+            "text": "Nie mam soku.",
+            "meaning": "I don't have any juice."
+        },
+        {
+            "text": "Nie mam wody.",
+            "meaning": "I don't have any water."
+        },
+        {
+            "text": "Nie masz chleba.",
+            "meaning": "You don't have any bread."
+        },
+        {
             "text": "Nie mogę. Muszę iść do lekarza."
         },
         {
@@ -5225,7 +5333,31 @@
             "text": "Nie pije czerwonego wina, ale lubi piwo."
         },
         {
+            "text": "Nie pijesz herbaty.",
+            "meaning": "You don't drink tea."
+        },
+        {
+            "text": "Nie piję białej kawy.",
+            "meaning": "I don't drink white coffee."
+        },
+        {
+            "text": "Nie piję czerwonego wina.",
+            "meaning": "I don't drink red wine."
+        },
+        {
+            "text": "Nie piję herbaty.",
+            "meaning": "I don't drink tea."
+        },
+        {
             "text": "Nie piję kawy."
+        },
+        {
+            "text": "Nie piję kompotu.",
+            "meaning": "I don't drink compote."
+        },
+        {
+            "text": "Nie piję wina.",
+            "meaning": "I don't drink wine."
         },
         {
             "text": "Nie rozumiem! Proszę powtórzyć!",
@@ -5834,12 +5966,36 @@
             "text": "Pije kawę z mlekiem, bez cukru."
         },
         {
+            "text": "Pijesz herbatę.",
+            "meaning": "You drink tea."
+        },
+        {
             "text": "Pijesz kawę z mlekiem czy bez mleka?",
             "meaning": "Do you drink coffee with milk or without milk?"
         },
         {
+            "text": "Piję białą kawę.",
+            "meaning": "I drink white coffee."
+        },
+        {
+            "text": "Piję czerwone wino.",
+            "meaning": "I drink red wine."
+        },
+        {
             "text": "Piję herbatę z cytryną.",
             "meaning": "I drink tea with lemon."
+        },
+        {
+            "text": "Piję herbatę.",
+            "meaning": "I drink tea."
+        },
+        {
+            "text": "Piję kompot.",
+            "meaning": "I drink compote."
+        },
+        {
+            "text": "Piję wino.",
+            "meaning": "I drink wine."
         },
         {
             "text": "Pisze e-maile."

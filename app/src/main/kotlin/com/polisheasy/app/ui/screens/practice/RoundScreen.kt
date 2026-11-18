@@ -36,6 +36,8 @@ import com.polisheasy.engine.LottoRound
 import com.polisheasy.engine.PlateRound
 import com.polisheasy.engine.MarketRound
 import com.polisheasy.engine.AisleRound
+import com.polisheasy.engine.FlipRound
+import com.polisheasy.engine.TableRound
 import com.polisheasy.engine.TillRound
 import kotlinx.coroutines.delay
 
@@ -86,6 +88,8 @@ internal fun RoundScreen(
         is PlateRound -> PlateBuilderStep(round, sayAll, onMove)
         is MarketRound -> MarketListStep(round, sayAll, onMove)
         is AisleRound -> AisleSortStep(round, say, onMove)
+        is TableRound -> TakeTheOrderStep(round, sayAll, onMove)
+        is FlipRound -> NegationFlipStep(round, say, onMove)
         else -> error("No screen for a Round of ${round.game}")
     }
 }
