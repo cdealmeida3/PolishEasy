@@ -156,6 +156,10 @@ fun polishContent(files: ContentFiles): PolishContent {
         content.practice?.forecasts.orEmpty().forEachIndexed { index, forecast ->
             sentence(forecast.text, forecast.meaning, PolishUse(file, "forecasts/${index + 1}", PolishRole.ANSWER))
         }
+        // Pronoun grid's questions, at the head of its columns.
+        content.practice?.pronounGrid?.columns.orEmpty().forEach { column ->
+            sentence(column.question, column.meaning, PolishUse(file, "pronounGrid/${column.id}", PolishRole.PROMPT))
+        }
         content.course().allClockTimes().forEach { time ->
             sentence(time.polish, mapOf(language to "${time.hour}:${time.minute.toString().padStart(2, '0')}"), PolishUse(file, "clock", PolishRole.ANSWER))
         }

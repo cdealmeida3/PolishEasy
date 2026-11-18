@@ -530,6 +530,7 @@
     <string name="game_pronoun_swap_needs">Opens when you learn go, ją, je and ich, the words for him, her and them, in chapter 14.</string>
     <string name="choice_sentences">The sentences</string>
     <string name="choice_forecast">The forecast</string>
+    <string name="choice_pronouns">The pronouns</string>
     <string name="swap_instruction">Which word takes the place of the marked one?</string>
     <string name="swap_note">%1$s · %2$s · %3$s</string>
     <string name="game_packaging">Packaging match</string>
@@ -560,6 +561,14 @@
     <string name="word_search_show">Show me a word</string>
     <string name="word_search_found_letter">in a word found</string>
     <string name="word_search_picked_letter">first letter picked</string>
+    <string name="game_pronoun_grid">Pronoun grid</string>
+    <string name="game_pronoun_grid_note">Fill in the table of the pronouns: komu? mi, z kim? ze mną, o kim? o nim.</string>
+    <string name="game_pronoun_grid_needs">Opens when you learn four of ze mną, z tobą, z nim and the rest, in chapter 10. Chapter 17 adds komu?, o kim? and dla kogo?</string>
+    <string name="pronoun_grid_instruction">Tap the word for the empty square.</string>
+    <string name="pronoun_grid_title">The pronouns</string>
+    <string name="pronoun_grid_asked">this one</string>
+    <string name="pronoun_grid_empty">empty</string>
+    <string name="pronoun_grid_note">%1$s · %2$s %3$s (%4$s)</string>
     <plurals name="how_many_pictures">
         <item quantity="one">%d picture</item>
         <item quantity="other">%d pictures</item>

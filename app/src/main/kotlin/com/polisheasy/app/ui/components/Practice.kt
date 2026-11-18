@@ -432,7 +432,7 @@ fun VerbTable(title: String, rows: List<VerbTableRowView>, modifier: Modifier = 
 
 /** Where a form will go. The one being asked for is outlined in the brand's colour and says "?". */
 @Composable
-private fun TableSlot(asked: Boolean) {
+internal fun TableSlot(asked: Boolean) {
     val scheme = MaterialTheme.colorScheme
     val shape = MaterialTheme.shapes.small
     Box(
