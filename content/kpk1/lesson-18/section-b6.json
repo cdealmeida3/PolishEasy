@@ -1,0 +1,399 @@
+{
+  "id": "kpk1-l18-b6",
+  "section": {
+    "letter": "B",
+    "heading": "Gdzie on jest?",
+    "meaning": {
+      "en": "Where is it?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-b6-t01",
+      "before": "kpk1-l18-b6-e01",
+      "title": {
+        "en": "W sam raz"
+      },
+      "body": {
+        "en": "A room that is neither big nor small is *w sam raz* (just right). In it: *poduszki* (cushions) on the bed, *ubrania* (clothes) in the wardrobe, a *beżowy* (beige) rug, and *plastikowe gwiazdki* (little plastic stars) on the ceiling that *świecą się* (glow) at night. Where things are: *po lewej stronie*, *po prawej stronie*, *na wprost* (straight ahead), *w rogu*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b6-e01",
+      "prompt": "w sam raz",
+      "options": [
+        {
+          "en": "too small"
+        },
+        {
+          "en": "just right"
+        },
+        {
+          "en": "very big"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-sam-raz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b6-e02",
+      "prompt": "poduszka",
+      "options": [
+        {
+          "en": "a blanket"
+        },
+        {
+          "en": "a rug"
+        },
+        {
+          "en": "a cushion, a pillow (poduszki: cushions)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "poduszka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-b6-e03",
+      "text": "pokój jest w sam raz",
+      "meaning": {
+        "en": "the room is just right"
+      },
+      "distractors": [
+        "pokój jest za mały",
+        "pokój jest bardzo duży"
+      ],
+      "items": [
+        "pokoj",
+        "byc-jest",
+        "w-sam-raz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b6-e04",
+      "prompt": "ubranie",
+      "options": [
+        {
+          "en": "a piece of clothing (ubrania: clothes)"
+        },
+        {
+          "en": "a shoe"
+        },
+        {
+          "en": "a towel"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ubranie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b6-e05",
+      "prompt": "gwiazdka",
+      "options": [
+        {
+          "en": "a little light"
+        },
+        {
+          "en": "a little star (gwiazdki: little stars)"
+        },
+        {
+          "en": "a little flower"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gwiazdka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b6-e06",
+      "text": "Na łóżku leżą ___.",
+      "meaning": {
+        "en": "There are cushions on the bed."
+      },
+      "gaps": [
+        [
+          "poduszki"
+        ]
+      ],
+      "distractors": [
+        "poduszka",
+        "poduszkę"
+      ],
+      "items": [
+        "lozko",
+        "lezec-leza",
+        "poduszka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b6-e07",
+      "prompt": "świecą się",
+      "options": [
+        {
+          "en": "they hang"
+        },
+        {
+          "en": "they lie"
+        },
+        {
+          "en": "they shine, they glow (świecić się)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "swieca-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b6-e08",
+      "prompt": "beżowy",
+      "options": [
+        {
+          "en": "beige (beżowy, beżowa, beżowe)"
+        },
+        {
+          "en": "brown"
+        },
+        {
+          "en": "grey"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bezowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b6-e09",
+      "prompt": "plastikowy",
+      "options": [
+        {
+          "en": "wooden"
+        },
+        {
+          "en": "plastic (plastikowy, plastikowa, plastikowe)"
+        },
+        {
+          "en": "metal"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "plastikowy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-b6-e10",
+      "prompt": {
+        "en": "the clothes are in the wardrobe"
+      },
+      "acceptedAnswers": [
+        "ubrania są w szafie"
+      ],
+      "distractors": [
+        "ubranie",
+        "na"
+      ],
+      "items": [
+        "ubranie",
+        "byc-sa",
+        "szafa"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-b6-e11",
+      "acceptedAnswers": [
+        "beżowy dywan"
+      ],
+      "meaning": {
+        "en": "a beige rug"
+      },
+      "items": [
+        "bezowy",
+        "dywan"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-b6-e12",
+      "prompt": {
+        "en": "just right"
+      },
+      "acceptedAnswers": [
+        "w sam raz"
+      ],
+      "items": [
+        "w-sam-raz"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b6-e13",
+      "text": "Na suficie są plastikowe gwiazdki. ___ w nocy.",
+      "meaning": {
+        "en": "On the ceiling there are little plastic stars. They glow at night."
+      },
+      "gaps": [
+        [
+          "Świecą się"
+        ]
+      ],
+      "distractors": [
+        "Wiszą",
+        "Leżą"
+      ],
+      "items": [
+        "sufit",
+        "byc-sa",
+        "plastikowy",
+        "gwiazdka",
+        "swieca-sie",
+        "w-nocy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-b6-e14",
+      "pairs": [
+        {
+          "polish": "w sam raz",
+          "meaning": {
+            "en": "just right"
+          }
+        },
+        {
+          "polish": "poduszki",
+          "meaning": {
+            "en": "cushions"
+          }
+        },
+        {
+          "polish": "ubrania",
+          "meaning": {
+            "en": "clothes"
+          }
+        },
+        {
+          "polish": "gwiazdki",
+          "meaning": {
+            "en": "little stars"
+          }
+        },
+        {
+          "polish": "beżowy",
+          "meaning": {
+            "en": "beige"
+          }
+        }
+      ],
+      "items": [
+        "w-sam-raz",
+        "poduszka",
+        "ubranie",
+        "gwiazdka",
+        "bezowy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-b6-e15",
+      "lines": [
+        "Mój pokój nie jest duży ani mały, jest w sam raz.",
+        "Po lewej stronie, w rogu, stoi biurko, a po prawej szafa.",
+        "Na środku leży beżowy dywan."
+      ],
+      "meaning": {
+        "en": "Mami's room."
+      },
+      "statements": [
+        {
+          "text": "Pokój jest bardzo duży.",
+          "meaning": {
+            "en": "The room is very big."
+          },
+          "true": false
+        },
+        {
+          "text": "Biurko stoi w rogu.",
+          "meaning": {
+            "en": "The desk is in the corner."
+          },
+          "true": true
+        },
+        {
+          "text": "Na środku leży beżowy dywan.",
+          "meaning": {
+            "en": "In the middle there is a beige rug."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "moj",
+        "pokoj",
+        "nie",
+        "byc-jest",
+        "duzy",
+        "maly",
+        "w-sam-raz",
+        "po-lewej-stronie",
+        "w-rogu",
+        "stac-stoi",
+        "biurko",
+        "a",
+        "szafa",
+        "na-srodku",
+        "lezec-lezy",
+        "bezowy",
+        "dywan"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l18-b6-e16",
+      "lines": [
+        "Lampa stoi na podłodze, przy łóżku.",
+        "Na łóżku leżą poduszki.",
+        "A na regale stoją książki i zdjęcia."
+      ],
+      "meaning": {
+        "en": "In the room."
+      },
+      "items": [
+        "lampa",
+        "stac-stoi",
+        "podloga",
+        "przy-loc",
+        "lozko",
+        "lezec-leza",
+        "poduszka",
+        "a",
+        "regal",
+        "stac-stoja",
+        "zdjecie"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "id": "kpk1-l18-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Marzę o dalekich podróżach",
+    "meaning": {
+      "en": "I dream of faraway travels"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-c3-t01",
+      "before": "kpk1-l18-c3-e01",
+      "title": {
+        "en": "Marzę o dalekich podróżach"
+      },
+      "body": {
+        "en": "To say you are fed up: *mam dość!* (I've had enough), and with what: *mam dość pracy*. To dream big: *marzę o dalekich podróżach* (I dream of far-off travels). A Polish saying goes *podróże kształcą*: travel broadens the mind. *Niedługo* is soon: *niedługo jadę do rodziców* (soon I'm going to see my parents). *W weekendy* is at weekends, every weekend."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c3-e01",
+      "prompt": "mam dość",
+      "options": [
+        {
+          "en": "I've had enough, I'm fed up (mam dość pracy: I'm fed up with work)"
+        },
+        {
+          "en": "I have time"
+        },
+        {
+          "en": "I'm hungry"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mam-dosc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c3-e02",
+      "prompt": "niedługo",
+      "options": [
+        {
+          "en": "for a long time"
+        },
+        {
+          "en": "soon"
+        },
+        {
+          "en": "yesterday"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "niedlugo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-c3-e03",
+      "text": "mam dość!",
+      "meaning": {
+        "en": "I've had enough!"
+      },
+      "distractors": [
+        "mam czas!",
+        "nie mam!"
+      ],
+      "items": [
+        "mam-dosc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c3-e04",
+      "prompt": "daleki",
+      "options": [
+        {
+          "en": "near"
+        },
+        {
+          "en": "short"
+        },
+        {
+          "en": "far, far-off (daleki, daleka, dalekie)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "daleki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c3-e05",
+      "prompt": "podróż",
+      "options": [
+        {
+          "en": "a journey, travel (podróże: travels; o podróżach: about travels)"
+        },
+        {
+          "en": "a holiday"
+        },
+        {
+          "en": "a map"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "podroz"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-c3-e06",
+      "text": "Marzę o ___ podróżach.",
+      "meaning": {
+        "en": "I dream of far-off travels."
+      },
+      "gaps": [
+        [
+          "dalekich"
+        ]
+      ],
+      "distractors": [
+        "daleki",
+        "dalekie"
+      ],
+      "items": [
+        "marzyc-marze",
+        "o-about",
+        "daleki",
+        "podroz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c3-e07",
+      "prompt": "kształcą",
+      "options": [
+        {
+          "en": "they learn"
+        },
+        {
+          "en": "they educate (podróże kształcą: travel broadens the mind, a saying)"
+        },
+        {
+          "en": "they travel"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ksztalca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c3-e08",
+      "prompt": "w weekendy",
+      "options": [
+        {
+          "en": "on Monday"
+        },
+        {
+          "en": "every evening"
+        },
+        {
+          "en": "at weekends"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-weekendy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c3-e09",
+      "prompt": "dla wszystkich",
+      "options": [
+        {
+          "en": "for everyone"
+        },
+        {
+          "en": "for me"
+        },
+        {
+          "en": "with everyone"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dla-wszystkich"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c3-e10",
+      "prompt": "do rodziców",
+      "options": [
+        {
+          "en": "with my parents"
+        },
+        {
+          "en": "to my parents, to see my parents"
+        },
+        {
+          "en": "about my parents"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-rodzicow"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-c3-e11",
+      "prompt": {
+        "en": "soon I am going to see my parents"
+      },
+      "acceptedAnswers": [
+        "niedługo jadę do rodziców"
+      ],
+      "distractors": [
+        "rodzice",
+        "z"
+      ],
+      "items": [
+        "niedlugo",
+        "jechac-jade",
+        "do-rodzicow"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-c3-e12",
+      "acceptedAnswers": [
+        "podróże kształcą"
+      ],
+      "meaning": {
+        "en": "travel broadens the mind"
+      },
+      "items": [
+        "podroz",
+        "ksztalca"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-c3-e13",
+      "prompt": {
+        "en": "at weekends"
+      },
+      "acceptedAnswers": [
+        "w weekendy"
+      ],
+      "items": [
+        "w-weekendy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-c3-e14",
+      "text": "Muszę kupić prezenty dla ___.",
+      "meaning": {
+        "en": "I must buy presents for everyone."
+      },
+      "gaps": [
+        [
+          "wszystkich"
+        ]
+      ],
+      "distractors": [
+        "wszyscy",
+        "wszystkim"
+      ],
+      "items": [
+        "musiec-musze",
+        "kupic",
+        "prezent",
+        "dla-wszystkich"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-c3-e15",
+      "pairs": [
+        {
+          "polish": "mam dość",
+          "meaning": {
+            "en": "I've had enough"
+          }
+        },
+        {
+          "polish": "niedługo",
+          "meaning": {
+            "en": "soon"
+          }
+        },
+        {
+          "polish": "w weekendy",
+          "meaning": {
+            "en": "at weekends"
+          }
+        },
+        {
+          "polish": "dla wszystkich",
+          "meaning": {
+            "en": "for everyone"
+          }
+        },
+        {
+          "polish": "do rodziców",
+          "meaning": {
+            "en": "to my parents"
+          }
+        }
+      ],
+      "items": [
+        "mam-dosc",
+        "niedlugo",
+        "w-weekendy",
+        "dla-wszystkich",
+        "do-rodzicow"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-c3-e16",
+      "lines": [
+        "Co robisz w weekend?",
+        "Jadę do rodziców, mama ma urodziny.",
+        "Muszę jeszcze kupić prezent."
+      ],
+      "meaning": {
+        "en": "At the weekend."
+      },
+      "statements": [
+        {
+          "text": "W weekend jedzie do rodziców.",
+          "meaning": {
+            "en": "At the weekend she is going to see her parents."
+          },
+          "true": true
+        },
+        {
+          "text": "Tata ma urodziny.",
+          "meaning": {
+            "en": "Dad has his birthday."
+          },
+          "true": false
+        },
+        {
+          "text": "Ma już prezent.",
+          "meaning": {
+            "en": "She already has a present."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "co",
+        "robic-robisz",
+        "w-weekend",
+        "jechac-jade",
+        "do-rodzicow",
+        "mama",
+        "miec-ma",
+        "urodziny",
+        "musiec-musze",
+        "jeszcze",
+        "kupic",
+        "prezent"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l18-c3-e17",
+      "lines": [
+        "Mam dość!",
+        "Dlaczego?",
+        "Bo pracuję w weekendy.",
+        "To może wakacje w górach?"
+      ],
+      "meaning": {
+        "en": "I've had enough."
+      },
+      "items": [
+        "mam-dosc",
+        "dlaczego",
+        "bo",
+        "pracowac-pracuje",
+        "w-weekendy",
+        "to",
+        "moze",
+        "wakacje",
+        "w-gorach"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-c3-e18",
+      "prompt": {
+        "en": "in the weekends we travel around Poland"
+      },
+      "acceptedAnswers": [
+        "w weekendy jeździmy po Polsce"
+      ],
+      "distractors": [
+        "weekend",
+        "Polska"
+      ],
+      "items": [
+        "w-weekendy",
+        "jezdzic-jezdzimy",
+        "po-polsce"
+      ]
+    }
+  ]
+}

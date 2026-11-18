@@ -1,0 +1,416 @@
+{
+  "id": "kpk1-l18-a4",
+  "section": {
+    "letter": "A",
+    "heading": "„Ciasne, ale własne!”",
+    "meaning": {
+      "en": "Small, but my own!"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-a4-t01",
+      "before": "kpk1-l18-a4-e01",
+      "title": {
+        "en": "W kuchni i w łazience"
+      },
+      "body": {
+        "en": "In the kitchen: *lodówka* (a fridge), *kuchenka* (a cooker), *zmywarka* (a dishwasher) and *półka* (a shelf). In the bathroom: *wanna* (a bath), *prysznic*, *umywalka* (a washbasin), *lustro* (a mirror) and often *pralka* (a washing machine). *Mleko jest w lodówce*: the milk is in the fridge."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a4-e01",
+      "prompt": "lodówka",
+      "options": [
+        {
+          "en": "a fridge (w lodówce: in the fridge)"
+        },
+        {
+          "en": "a cooker"
+        },
+        {
+          "en": "a cupboard"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lodowka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a4-e02",
+      "prompt": "kuchenka",
+      "options": [
+        {
+          "en": "a fridge"
+        },
+        {
+          "en": "a cooker, a stove (na kuchence: on the cooker)"
+        },
+        {
+          "en": "a dishwasher"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kuchenka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-a4-e03",
+      "text": "mleko jest w lodówce",
+      "meaning": {
+        "en": "the milk is in the fridge"
+      },
+      "distractors": [
+        "mleko jest na stole",
+        "masło jest w lodówce"
+      ],
+      "items": [
+        "mleko",
+        "byc-jest",
+        "lodowka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a4-e04",
+      "prompt": "zmywarka",
+      "options": [
+        {
+          "en": "a washing machine"
+        },
+        {
+          "en": "a washbasin"
+        },
+        {
+          "en": "a dishwasher (nie ma zmywarki: there is no dishwasher)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zmywarka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a4-e05",
+      "prompt": "pralka",
+      "options": [
+        {
+          "en": "a washing machine (w pralce: in the washing machine)"
+        },
+        {
+          "en": "a dishwasher"
+        },
+        {
+          "en": "a bath"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pralka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a4-e06",
+      "text": "Mój sweter jest w ___.",
+      "meaning": {
+        "en": "My jumper is in the washing machine."
+      },
+      "gaps": [
+        [
+          "pralce"
+        ]
+      ],
+      "distractors": [
+        "pralka",
+        "lodówce"
+      ],
+      "items": [
+        "moj",
+        "sweter",
+        "byc-jest",
+        "pralka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a4-e07",
+      "prompt": "wanna",
+      "options": [
+        {
+          "en": "a shower"
+        },
+        {
+          "en": "a bath (w wannie: in the bath)"
+        },
+        {
+          "en": "a washbasin"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wanna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a4-e08",
+      "prompt": "umywalka",
+      "options": [
+        {
+          "en": "a bath"
+        },
+        {
+          "en": "a mirror"
+        },
+        {
+          "en": "a washbasin"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "umywalka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a4-e09",
+      "prompt": "lustro",
+      "options": [
+        {
+          "en": "a mirror (w lustrze: in the mirror)"
+        },
+        {
+          "en": "a window"
+        },
+        {
+          "en": "a lamp"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lustro"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a4-e10",
+      "prompt": "półka",
+      "options": [
+        {
+          "en": "a shelf unit, a bookcase"
+        },
+        {
+          "en": "a shelf (na półce: on the shelf)"
+        },
+        {
+          "en": "a drawer"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "polka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-a4-e11",
+      "prompt": {
+        "en": "the butter is in the fridge"
+      },
+      "acceptedAnswers": [
+        "masło jest w lodówce"
+      ],
+      "distractors": [
+        "lodówka",
+        "na"
+      ],
+      "items": [
+        "maslo",
+        "byc-jest",
+        "lodowka"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-a4-e12",
+      "acceptedAnswers": [
+        "w wannie"
+      ],
+      "meaning": {
+        "en": "in the bath"
+      },
+      "items": [
+        "wanna"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-a4-e13",
+      "prompt": {
+        "en": "on the shelf"
+      },
+      "acceptedAnswers": [
+        "na półce"
+      ],
+      "items": [
+        "polka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-a4-e14",
+      "prompt": {
+        "en": "the washing machine is upstairs"
+      },
+      "acceptedAnswers": [
+        "pralka jest na piętrze"
+      ],
+      "distractors": [
+        "piętro",
+        "w"
+      ],
+      "items": [
+        "pralka",
+        "byc-jest",
+        "pietro"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-a4-e15",
+      "pairs": [
+        {
+          "polish": "lodówka",
+          "meaning": {
+            "en": "a fridge"
+          }
+        },
+        {
+          "polish": "kuchenka",
+          "meaning": {
+            "en": "a cooker"
+          }
+        },
+        {
+          "polish": "zmywarka",
+          "meaning": {
+            "en": "a dishwasher"
+          }
+        },
+        {
+          "polish": "pralka",
+          "meaning": {
+            "en": "a washing machine"
+          }
+        },
+        {
+          "polish": "wanna",
+          "meaning": {
+            "en": "a bath"
+          }
+        },
+        {
+          "polish": "lustro",
+          "meaning": {
+            "en": "a mirror"
+          }
+        }
+      ],
+      "items": [
+        "lodowka",
+        "kuchenka",
+        "zmywarka",
+        "pralka",
+        "wanna",
+        "lustro"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a4-e16",
+      "text": "W łazience jest wanna, umywalka i ___.",
+      "meaning": {
+        "en": "In the bathroom there is a bath, a washbasin and a mirror."
+      },
+      "gaps": [
+        [
+          "lustro"
+        ]
+      ],
+      "distractors": [
+        "lustrze",
+        "lampa"
+      ],
+      "items": [
+        "lazienka",
+        "byc-jest",
+        "wanna",
+        "umywalka",
+        "i",
+        "lustro"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-a4-e17",
+      "lines": [
+        "Moja kuchnia jest mała.",
+        "Jest w niej lodówka i kuchenka, ale nie ma zmywarki.",
+        "Pralka jest w łazience."
+      ],
+      "meaning": {
+        "en": "My kitchen."
+      },
+      "statements": [
+        {
+          "text": "Kuchnia jest duża.",
+          "meaning": {
+            "en": "The kitchen is big."
+          },
+          "true": false
+        },
+        {
+          "text": "W kuchni jest lodówka.",
+          "meaning": {
+            "en": "There is a fridge in the kitchen."
+          },
+          "true": true
+        },
+        {
+          "text": "Pralka jest w kuchni.",
+          "meaning": {
+            "en": "The washing machine is in the kitchen."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "moja",
+        "kuchnia",
+        "byc-jest",
+        "maly",
+        "w-niej",
+        "lodowka",
+        "i",
+        "kuchenka",
+        "ale",
+        "nie-ma",
+        "zmywarka",
+        "pralka",
+        "lazienka"
+      ]
+    }
+  ]
+}

@@ -379,3 +379,23 @@ It gives the later chapters:
 - presents and souvenirs, and *co ty na to?*.
 
 It leaves for later: the dative of nouns (*Adamowi*, *mamie*), the long dative forms as a rule (*jemu*, *tobie* are met as words), and the instrumental and locative of nouns beyond the phrases above.
+
+## Chapter 18: Pokaż mi swoje mieszkanie…
+
+Book pages 138 to 145, recordings 191 to 196. Seventeen parts, 293 Exercises and 130 new Items: the rooms and furniture of a flat, *stoi*, *leży*, *wisi*, the locative singular and plural after *w*, *na*, *przy*, *o* and *po*, *w* or *na*, dreams and travels, and a family's new flat.
+
+- **A** *„Ciasne, ale własne!”*, in six: the rooms (17: *pokój*, *kuchnia*, *łazienka*, *sypialnia*, *salon*, *przedpokój*, *balkon*, *na*); walls, floors and storeys (17: *ściana*, *podłoga*, *sufit*, *drzwi*, *piętro*, *parter*, *blok*, *przy*); furniture (17: *łóżko*, *szafa*, *biurko*, *lampa*, *fotel*, *dywan*, *regał*, *kanapa*); the kitchen and the bathroom (17: *lodówka*, *kuchenka*, *zmywarka*, *pralka*, *wanna*, *umywalka*, *lustro*, *półka*); *stoi*, *leży*, *wisi* and their plurals (17: *telewizor*, *kwiatek*); and what a flat is like (17: *ciasny*, *własny*, *wygodny*, *cichy*, *z widokiem na park*, *w rogu*, *na środku*, *obok*).
+- **B** *Gdzie on jest?*, in six: the locative singular, with a table Tip (17: *w banku*, *w sklepie*, *w hotelu*, *w kawiarni*, *na ulicy*, *w firmie*, *w mieszkaniu*, *w centrum*); the sounds that change, with a table Tip (18: *w mieście*, *w lesie*, *na świecie*, *po obiedzie*, *w kościele*, *o sąsiedzie*, *o panu*, *o synu*); describing words, with a table Tip (17: *w jakim?*, *w jakiej?*, *w dużym mieście*, *w małym mieście*, *w nowym bloku*, *w starej kamienicy*, *na czwartym piętrze*, *w dobrej szkole*); *w* or *na*, with a table Tip (17: *na poczcie*, *na policji*, *na dworcu*, *na basenie*, *na lotnisku*, *na koncercie*, *na filmie*, *w pracy*); the plural *-ach*, *-ych*, with a table Tip (17: *w różnych miejscach*, *w hotelach*, *w restauracjach*, *na Mazurach*, *w Stanach Zjednoczonych*, *na łyżwach*, *w spodniach*, *w rękawiczkach*); and a room that is *w sam raz* (16: *poduszka*, *ubranie*, *gwiazdka*, *świecą się*, *beżowy*, *plastikowy*).
+- **C** *Marzę o dalekich podróżach*, in three: *o* and the locative after *myśleć*, *marzyć*, *rozmawiać*, *pamiętać*, with a table Tip (17: *marzę*, *marzysz*, *marzy*, *rozmawiamy*, *pamiętam*, *o czym?*, *o wakacjach*, *o pracy*); *po* as around (18: *po świecie*, *po Polsce*, *po mieście*, *po parku*, *po Europie*, *po górach*, *spaceruję*, *podróżuję*); and far-off travels (18: *niedługo*, *mam dość*, *daleki*, *podróż*, *kształcą*, *w weekendy*, *dla wszystkich*, *do rodziców*).
+- *Powtórzenie*, in two: a family's new flat (18: *dom*, *w Śródmieściu*, *gabinet*, *na wsi*, *kominek*, *strych*, *piwnica*, *kredyt*), and where everything is (18: *meble*, *spiżarnia*, *garaż*), with the chapter's words again.
+
+The locative is taught as phrase Items (*w banku*, *na poczcie*, *po świecie*), as the instrumental was, and the nouns of the flat carry theirs as forms (*pokój* carries *w pokoju*, *łóżko* carries *na łóżku*), so *w* is never an Item on its own; *na* and *przy* are, with their meaning of where. The verbs of place are taught as forms (*stoi*, *stoją*, *leży*, *leżą*, *wisi*, *wiszą*). *Piętro*, *meble*, *parter*, *w starej kamienicy*, *kominek*, *spiżarnia*, *strych*, *piwnica*, *garaż* and *w rękawiczkach*, the words the book sends to the dictionary, are under Look up. There are 50 listening tasks on all 6 recordings, and one Chat: *A new flat* (Ewa, a friend, informal: she shows you round her first flat of her own, you ask where the rooms are, the photos hang on the wall, and *ciasne, ale własne*). Nineteen Items have pictures (a sofa, a door, a mirror, a bath, a pot plant, a bed, a star, a hotel, a station, a forest, a globe, gloves, ice skates, luggage and others).
+
+It gives the later chapters:
+
+- the rooms and furniture of a home, and *stoi*, *leży*, *wisi*;
+- the locative after *w*, *na*, *przy*, *o* and *po*, singular and plural, with describing words;
+- *w* or *na* with places, events and countries;
+- *marzyć o*, *myśleć o*, *rozmawiać o*, and *po* as around.
+
+It leaves for later: *pod*, *nad* and *za* for where things are, and the locative of the months and years (*w maju*, *w 2020 roku*).

@@ -1,0 +1,482 @@
+{
+  "id": "kpk1-l18-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Gdzie on jest?",
+    "meaning": {
+      "en": "Where is it?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-b1-t01",
+      "before": "kpk1-l18-b1-e01",
+      "title": {
+        "en": "Gdzie? W banku, w szkole"
+      },
+      "body": {
+        "en": "After *w* (in) and *na* (on, at), asked *gdzie?* (where?), a word takes the locative, *miejscownik*. Most he and it words end in *-e*: *teatr*, *w teatrze*; *sklep*, *w sklepie*; *kino*, *w kinie*. After *k*, *g*, *ch* and soft sounds they end in *-u*: *w banku*, *w hotelu*, *w mieszkaniu*. She words end in *-e* (*w szkole*, *w firmie*), or *-i* and *-y* after soft sounds: *w kawiarni*, *na ulicy*. *Centrum* does not change: *w centrum*."
+      },
+      "table": {
+        "title": {
+          "en": "Gdzie? Miejscownik"
+        },
+        "columns": [
+          {
+            "header": "kto? co?"
+          },
+          {
+            "header": "gdzie?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "teatr",
+              "w teatrze"
+            ]
+          },
+          {
+            "cells": [
+              "sklep",
+              "w sklepie"
+            ]
+          },
+          {
+            "cells": [
+              "bank",
+              "w banku"
+            ]
+          },
+          {
+            "cells": [
+              "hotel",
+              "w hotelu"
+            ]
+          },
+          {
+            "cells": [
+              "szkoła",
+              "w szkole"
+            ]
+          },
+          {
+            "cells": [
+              "firma",
+              "w firmie"
+            ]
+          },
+          {
+            "cells": [
+              "kawiarnia",
+              "w kawiarni"
+            ]
+          },
+          {
+            "cells": [
+              "ulica",
+              "na ulicy"
+            ]
+          },
+          {
+            "cells": [
+              "mieszkanie",
+              "w mieszkaniu"
+            ]
+          },
+          {
+            "cells": [
+              "kino",
+              "w kinie"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b1-e01",
+      "prompt": "w banku",
+      "options": [
+        {
+          "en": "in a bank, at the bank"
+        },
+        {
+          "en": "in a shop"
+        },
+        {
+          "en": "to the bank"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-banku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b1-e02",
+      "prompt": "w sklepie",
+      "options": [
+        {
+          "en": "in a bank"
+        },
+        {
+          "en": "in a shop"
+        },
+        {
+          "en": "to the shop"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-sklepie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-b1-e03",
+      "text": "pracuję w banku",
+      "meaning": {
+        "en": "I work in a bank"
+      },
+      "distractors": [
+        "pracuję w sklepie",
+        "pracujesz w banku"
+      ],
+      "items": [
+        "pracowac-pracuje",
+        "w-banku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b1-e04",
+      "prompt": "w hotelu",
+      "options": [
+        {
+          "en": "in a restaurant"
+        },
+        {
+          "en": "in a flat"
+        },
+        {
+          "en": "in a hotel"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-hotelu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b1-e05",
+      "prompt": "w kawiarni",
+      "options": [
+        {
+          "en": "in a café"
+        },
+        {
+          "en": "in a cinema"
+        },
+        {
+          "en": "in a shop"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-kawiarni"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b1-e06",
+      "text": "Ewa pracuje w ___, a Adam w szkole.",
+      "meaning": {
+        "en": "Ewa works in a shop, and Adam at a school."
+      },
+      "gaps": [
+        [
+          "sklepie"
+        ]
+      ],
+      "distractors": [
+        "sklep",
+        "banku"
+      ],
+      "items": [
+        "ewa",
+        "pracowac-pracuje-on",
+        "w-sklepie",
+        "a",
+        "adam",
+        "w-szkole"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b1-e07",
+      "prompt": "na ulicy",
+      "options": [
+        {
+          "en": "in the park"
+        },
+        {
+          "en": "in the street, on the street"
+        },
+        {
+          "en": "in the shop"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-ulicy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b1-e08",
+      "prompt": "w firmie",
+      "options": [
+        {
+          "en": "at home"
+        },
+        {
+          "en": "at school"
+        },
+        {
+          "en": "at a company, at the firm"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-firmie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b1-e09",
+      "prompt": "w mieszkaniu",
+      "options": [
+        {
+          "en": "in the flat"
+        },
+        {
+          "en": "in the house"
+        },
+        {
+          "en": "in the room"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-mieszkaniu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b1-e10",
+      "prompt": "w centrum",
+      "options": [
+        {
+          "en": "in the park"
+        },
+        {
+          "en": "in the centre, in town (centrum does not change)"
+        },
+        {
+          "en": "in the country"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-centrum"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-b1-e11",
+      "prompt": {
+        "en": "we live in the centre"
+      },
+      "acceptedAnswers": [
+        "mieszkamy w centrum"
+      ],
+      "distractors": [
+        "centra",
+        "na"
+      ],
+      "items": [
+        "mieszkac-mieszkamy",
+        "w-centrum"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-b1-e12",
+      "acceptedAnswers": [
+        "w kawiarni"
+      ],
+      "meaning": {
+        "en": "in a café"
+      },
+      "items": [
+        "w-kawiarni"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-b1-e13",
+      "prompt": {
+        "en": "in a hotel"
+      },
+      "acceptedAnswers": [
+        "w hotelu"
+      ],
+      "items": [
+        "w-hotelu"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-b1-e14",
+      "pairs": [
+        {
+          "polish": "w banku",
+          "meaning": {
+            "en": "in a bank"
+          }
+        },
+        {
+          "polish": "w sklepie",
+          "meaning": {
+            "en": "in a shop"
+          }
+        },
+        {
+          "polish": "w hotelu",
+          "meaning": {
+            "en": "in a hotel"
+          }
+        },
+        {
+          "polish": "w kawiarni",
+          "meaning": {
+            "en": "in a café"
+          }
+        },
+        {
+          "polish": "na ulicy",
+          "meaning": {
+            "en": "in the street"
+          }
+        }
+      ],
+      "items": [
+        "w-banku",
+        "w-sklepie",
+        "w-hotelu",
+        "w-kawiarni",
+        "na-ulicy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b1-e15",
+      "text": "Gdzie jesteś? Jestem w ___, piję kawę.",
+      "meaning": {
+        "en": "Where are you? I'm in a café, having a coffee."
+      },
+      "gaps": [
+        [
+          "kawiarni"
+        ]
+      ],
+      "distractors": [
+        "kawiarnia",
+        "kawiarnie"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jestes",
+        "byc-jestem",
+        "w-kawiarni",
+        "pic-pije",
+        "kawa-acc"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-b1-e16",
+      "lines": [
+        "Mój brat pracuje w firmie.",
+        "Mieszka w mieszkaniu w centrum.",
+        "Jego żona pracuje w hotelu."
+      ],
+      "meaning": {
+        "en": "My brother."
+      },
+      "statements": [
+        {
+          "text": "Brat pracuje w banku.",
+          "meaning": {
+            "en": "My brother works in a bank."
+          },
+          "true": false
+        },
+        {
+          "text": "Brat mieszka w centrum.",
+          "meaning": {
+            "en": "My brother lives in the centre."
+          },
+          "true": true
+        },
+        {
+          "text": "Jego żona pracuje w hotelu.",
+          "meaning": {
+            "en": "His wife works in a hotel."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "moj",
+        "brat",
+        "pracowac-pracuje-on",
+        "w-firmie",
+        "mieszkac-mieszka",
+        "w-mieszkaniu",
+        "w-centrum",
+        "jego",
+        "zona",
+        "w-hotelu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-b1-e17",
+      "prompt": {
+        "en": "the children are in the street"
+      },
+      "acceptedAnswers": [
+        "dzieci są na ulicy"
+      ],
+      "distractors": [
+        "ulica",
+        "w"
+      ],
+      "items": [
+        "dzieci",
+        "byc-sa",
+        "na-ulicy"
+      ]
+    }
+  ]
+}

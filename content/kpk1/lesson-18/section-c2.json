@@ -1,0 +1,431 @@
+{
+  "id": "kpk1-l18-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Marzę o dalekich podróżach",
+    "meaning": {
+      "en": "I dream of faraway travels"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-c2-t01",
+      "before": "kpk1-l18-c2-e01",
+      "title": {
+        "en": "Po świecie, po mieście"
+      },
+      "body": {
+        "en": "*Po* with the locative is around, all over a place: *podróżować po świecie* (to travel around the world), *jeździć po Polsce*, *spacerować po parku*, *chodzić po mieście*. *Chodzić po górach* is to go hiking. You met *po* with the locative before as after: *po obiedzie*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c2-e01",
+      "prompt": "po świecie",
+      "options": [
+        {
+          "en": "in the world"
+        },
+        {
+          "en": "around the world"
+        },
+        {
+          "en": "to the world"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "po-swiecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c2-e02",
+      "prompt": "podróżuję",
+      "options": [
+        {
+          "en": "I work"
+        },
+        {
+          "en": "I walk"
+        },
+        {
+          "en": "I travel"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "podrozowac-podrozuje"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-c2-e03",
+      "text": "podróżuję po świecie",
+      "meaning": {
+        "en": "I travel around the world"
+      },
+      "distractors": [
+        "podróżuję po Polsce",
+        "spaceruję po świecie"
+      ],
+      "items": [
+        "podrozowac-podrozuje",
+        "po-swiecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c2-e04",
+      "prompt": "po Polsce",
+      "options": [
+        {
+          "en": "around Poland"
+        },
+        {
+          "en": "in Poland"
+        },
+        {
+          "en": "to Poland"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "po-polsce"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c2-e05",
+      "prompt": "spaceruję",
+      "options": [
+        {
+          "en": "I travel"
+        },
+        {
+          "en": "I walk, I go for a walk"
+        },
+        {
+          "en": "I run"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spacerowac-spaceruje"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-c2-e06",
+      "text": "Latem jeżdżę po ___ na rowerze.",
+      "meaning": {
+        "en": "In summer I cycle around Poland."
+      },
+      "gaps": [
+        [
+          "Polsce"
+        ]
+      ],
+      "distractors": [
+        "Polska",
+        "Polskę"
+      ],
+      "items": [
+        "latem",
+        "jezdzic-jezdze",
+        "po-polsce",
+        "na-rowerze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c2-e07",
+      "prompt": "po mieście",
+      "options": [
+        {
+          "en": "in the forest"
+        },
+        {
+          "en": "out of town"
+        },
+        {
+          "en": "around town"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "po-miescie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c2-e08",
+      "prompt": "po parku",
+      "options": [
+        {
+          "en": "around the park, in the park"
+        },
+        {
+          "en": "to the park"
+        },
+        {
+          "en": "after the park"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "po-parku"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-c2-e09",
+      "text": "Wieczorem spaceruję po ___.",
+      "meaning": {
+        "en": "In the evening I walk in the park."
+      },
+      "gaps": [
+        [
+          "parku"
+        ]
+      ],
+      "distractors": [
+        "park",
+        "parkach"
+      ],
+      "items": [
+        "wieczorem",
+        "spacerowac-spaceruje",
+        "po-parku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c2-e10",
+      "prompt": "po Europie",
+      "options": [
+        {
+          "en": "to Europe"
+        },
+        {
+          "en": "around Europe"
+        },
+        {
+          "en": "from Europe"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "po-europie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c2-e11",
+      "prompt": "po górach",
+      "options": [
+        {
+          "en": "to the mountains"
+        },
+        {
+          "en": "at the seaside"
+        },
+        {
+          "en": "in the mountains (chodzić po górach: to go hiking)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "po-gorach"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-c2-e12",
+      "prompt": {
+        "en": "in the weekend I walk around town"
+      },
+      "acceptedAnswers": [
+        "w weekend spaceruję po mieście"
+      ],
+      "distractors": [
+        "miasto",
+        "w"
+      ],
+      "items": [
+        "w-weekend",
+        "spacerowac-spaceruje",
+        "po-miescie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-c2-e13",
+      "acceptedAnswers": [
+        "po Europie"
+      ],
+      "meaning": {
+        "en": "around Europe"
+      },
+      "items": [
+        "po-europie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-c2-e14",
+      "prompt": {
+        "en": "around Poland"
+      },
+      "acceptedAnswers": [
+        "po Polsce"
+      ],
+      "items": [
+        "po-polsce"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-c2-e15",
+      "pairs": [
+        {
+          "polish": "po świecie",
+          "meaning": {
+            "en": "around the world"
+          }
+        },
+        {
+          "polish": "po Polsce",
+          "meaning": {
+            "en": "around Poland"
+          }
+        },
+        {
+          "polish": "po mieście",
+          "meaning": {
+            "en": "around town"
+          }
+        },
+        {
+          "polish": "po parku",
+          "meaning": {
+            "en": "around the park"
+          }
+        },
+        {
+          "polish": "po górach",
+          "meaning": {
+            "en": "in the mountains"
+          }
+        }
+      ],
+      "items": [
+        "po-swiecie",
+        "po-polsce",
+        "po-miescie",
+        "po-parku",
+        "po-gorach"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-c2-e16",
+      "text": "Latem chodzimy po ___, a zimą jeździmy na nartach.",
+      "meaning": {
+        "en": "In summer we go hiking in the mountains, and in winter we ski."
+      },
+      "gaps": [
+        [
+          "górach"
+        ]
+      ],
+      "distractors": [
+        "góry",
+        "górze"
+      ],
+      "items": [
+        "latem",
+        "chodzic-chodzimy",
+        "po-gorach",
+        "a",
+        "zima-kiedy",
+        "jezdzic-jezdzimy",
+        "na-nartach"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-c2-e17",
+      "lines": [
+        "Marzę o wakacjach.",
+        "Chcę podróżować po świecie, ale teraz nie mam czasu.",
+        "W weekend jeżdżę po Polsce."
+      ],
+      "meaning": {
+        "en": "I dream of travelling."
+      },
+      "statements": [
+        {
+          "text": "Ona nie lubi podróżować.",
+          "meaning": {
+            "en": "She does not like travelling."
+          },
+          "true": false
+        },
+        {
+          "text": "Teraz nie ma czasu.",
+          "meaning": {
+            "en": "She has no time now."
+          },
+          "true": true
+        },
+        {
+          "text": "W weekend jeździ po Polsce.",
+          "meaning": {
+            "en": "At the weekend she travels around Poland."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "marzyc-marze",
+        "o-wakacjach",
+        "chciec-chce",
+        "podrozowac",
+        "po-swiecie",
+        "ale",
+        "teraz",
+        "nie",
+        "miec-mam",
+        "czasu",
+        "w-weekend",
+        "jezdzic-jezdze",
+        "po-polsce"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-c2-e18",
+      "prompt": {
+        "en": "I travel around Europe"
+      },
+      "acceptedAnswers": [
+        "podróżuję po Europie"
+      ],
+      "distractors": [
+        "Europa",
+        "w"
+      ],
+      "items": [
+        "podrozowac-podrozuje",
+        "po-europie"
+      ]
+    }
+  ]
+}

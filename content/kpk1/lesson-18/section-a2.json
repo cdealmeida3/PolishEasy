@@ -1,0 +1,375 @@
+{
+  "id": "kpk1-l18-a2",
+  "section": {
+    "letter": "A",
+    "heading": "„Ciasne, ale własne!”",
+    "meaning": {
+      "en": "Small, but my own!"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-a2-t01",
+      "before": "kpk1-l18-a2-e01",
+      "title": {
+        "en": "Na ścianie, na podłodze"
+      },
+      "body": {
+        "en": "A room has *ściana* (a wall), *podłoga* (a floor), *sufit* (a ceiling), *okno* and *drzwi* (a door: *drzwi* is always plural). On a wall or a floor is *na*: *na ścianie*, *na podłodze*, *na suficie*. *Przy* is by: *przy oknie*, *przy drzwiach*. A flat in *blok* (a block of flats) is *na parterze* (on the ground floor) or *na piętrze* (upstairs, on a floor)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a2-e01",
+      "prompt": "ściana",
+      "options": [
+        {
+          "en": "a floor"
+        },
+        {
+          "en": "a door"
+        },
+        {
+          "en": "a wall (na ścianie: on the wall)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sciana"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a2-e02",
+      "prompt": "podłoga",
+      "options": [
+        {
+          "en": "a floor (na podłodze: on the floor)"
+        },
+        {
+          "en": "a wall"
+        },
+        {
+          "en": "a ceiling"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "podloga"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-a2-e03",
+      "text": "na ścianie",
+      "meaning": {
+        "en": "on the wall"
+      },
+      "distractors": [
+        "na podłodze",
+        "na suficie"
+      ],
+      "items": [
+        "sciana"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a2-e04",
+      "prompt": "sufit",
+      "options": [
+        {
+          "en": "a floor"
+        },
+        {
+          "en": "a ceiling (na suficie: on the ceiling)"
+        },
+        {
+          "en": "a window"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sufit"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a2-e05",
+      "prompt": "drzwi",
+      "options": [
+        {
+          "en": "a window"
+        },
+        {
+          "en": "a wall"
+        },
+        {
+          "en": "a door (drzwi is plural: przy drzwiach: by the door)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "drzwi"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a2-e06",
+      "text": "Książka jest na ___.",
+      "meaning": {
+        "en": "The book is on the floor."
+      },
+      "gaps": [
+        [
+          "podłodze"
+        ]
+      ],
+      "distractors": [
+        "podłoga",
+        "suficie"
+      ],
+      "items": [
+        "ksiazka",
+        "byc-jest",
+        "podloga"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a2-e07",
+      "prompt": "przy",
+      "options": [
+        {
+          "en": "by, at (przy oknie: by the window)"
+        },
+        {
+          "en": "under"
+        },
+        {
+          "en": "behind"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przy-loc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a2-e08",
+      "prompt": "blok",
+      "options": [
+        {
+          "en": "a house"
+        },
+        {
+          "en": "a block of flats (w bloku: in a block of flats)"
+        },
+        {
+          "en": "a street"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "blok"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a2-e09",
+      "prompt": "parter",
+      "options": [
+        {
+          "en": "the top floor"
+        },
+        {
+          "en": "the cellar"
+        },
+        {
+          "en": "the ground floor (na parterze: on the ground floor)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "parter"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a2-e10",
+      "prompt": "piętro",
+      "options": [
+        {
+          "en": "a floor, a storey (na piętrze: upstairs, on a floor)"
+        },
+        {
+          "en": "a step"
+        },
+        {
+          "en": "a flat"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pietro"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-a2-e11",
+      "prompt": {
+        "en": "I live in a block of flats"
+      },
+      "acceptedAnswers": [
+        "mieszkam w bloku"
+      ],
+      "distractors": [
+        "blok",
+        "na"
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "blok"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-a2-e12",
+      "acceptedAnswers": [
+        "na parterze"
+      ],
+      "meaning": {
+        "en": "on the ground floor"
+      },
+      "items": [
+        "parter"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-a2-e13",
+      "prompt": {
+        "en": "by the door"
+      },
+      "acceptedAnswers": [
+        "przy drzwiach"
+      ],
+      "items": [
+        "drzwi"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a2-e14",
+      "text": "Mieszkamy w bloku na ___.",
+      "meaning": {
+        "en": "We live in a block of flats, on the ground floor."
+      },
+      "gaps": [
+        [
+          "parterze"
+        ]
+      ],
+      "distractors": [
+        "parter",
+        "piętrze"
+      ],
+      "items": [
+        "mieszkac-mieszkamy",
+        "blok",
+        "parter"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-a2-e15",
+      "pairs": [
+        {
+          "polish": "ściana",
+          "meaning": {
+            "en": "a wall"
+          }
+        },
+        {
+          "polish": "podłoga",
+          "meaning": {
+            "en": "a floor"
+          }
+        },
+        {
+          "polish": "sufit",
+          "meaning": {
+            "en": "a ceiling"
+          }
+        },
+        {
+          "polish": "drzwi",
+          "meaning": {
+            "en": "a door"
+          }
+        },
+        {
+          "polish": "okno",
+          "meaning": {
+            "en": "a window"
+          }
+        }
+      ],
+      "items": [
+        "sciana",
+        "podloga",
+        "sufit",
+        "drzwi",
+        "okno"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-a2-e16",
+      "prompt": {
+        "en": "the table is by the door"
+      },
+      "acceptedAnswers": [
+        "stół jest przy drzwiach"
+      ],
+      "distractors": [
+        "drzwi",
+        "na"
+      ],
+      "items": [
+        "stol",
+        "byc-jest",
+        "przy-loc",
+        "drzwi"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l18-a2-e17",
+      "lines": [
+        "Gdzie mieszkasz?",
+        "W bloku, na piętrze.",
+        "A ja mieszkam na parterze."
+      ],
+      "meaning": {
+        "en": "Where do you live?"
+      },
+      "items": [
+        "gdzie",
+        "mieszkac-mieszkasz",
+        "blok",
+        "pietro",
+        "a",
+        "ja",
+        "mieszkac-mieszkam",
+        "parter"
+      ]
+    }
+  ]
+}

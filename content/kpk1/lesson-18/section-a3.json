@@ -1,0 +1,420 @@
+{
+  "id": "kpk1-l18-a3",
+  "section": {
+    "letter": "A",
+    "heading": "„Ciasne, ale własne!”",
+    "meaning": {
+      "en": "Small, but my own!"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-a3-t01",
+      "before": "kpk1-l18-a3-e01",
+      "title": {
+        "en": "Meble"
+      },
+      "body": {
+        "en": "Furniture: *łóżko* (a bed), *szafa* (a wardrobe), *biurko* (a desk), *lampa*, *fotel* (an armchair), *dywan* (a rug), *regał* (a bookcase) and *kanapa* (a sofa). Where something is: *na łóżku*, *w szafie*, *przy biurku*, *w fotelu*, *na dywanie*, *na regale*, *na kanapie*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a3-e01",
+      "prompt": "łóżko",
+      "options": [
+        {
+          "en": "a chair"
+        },
+        {
+          "en": "a bed (na łóżku: on the bed)"
+        },
+        {
+          "en": "a table"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "lozko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a3-e02",
+      "prompt": "szafa",
+      "options": [
+        {
+          "en": "a shelf"
+        },
+        {
+          "en": "a desk"
+        },
+        {
+          "en": "a wardrobe (w szafie: in the wardrobe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szafa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-a3-e03",
+      "text": "książka jest na łóżku",
+      "meaning": {
+        "en": "the book is on the bed"
+      },
+      "distractors": [
+        "książka jest w szafie",
+        "książka jest na stole"
+      ],
+      "items": [
+        "ksiazka",
+        "byc-jest",
+        "lozko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a3-e04",
+      "prompt": "biurko",
+      "options": [
+        {
+          "en": "a desk (przy biurku: at the desk; na biurku: on the desk)"
+        },
+        {
+          "en": "a bookcase"
+        },
+        {
+          "en": "a bed"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "biurko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a3-e05",
+      "prompt": "lampa",
+      "options": [
+        {
+          "en": "a mirror"
+        },
+        {
+          "en": "a lamp"
+        },
+        {
+          "en": "a picture"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "lampa"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a3-e06",
+      "text": "Mój sweter jest w ___.",
+      "meaning": {
+        "en": "My jumper is in the wardrobe."
+      },
+      "gaps": [
+        [
+          "szafie"
+        ]
+      ],
+      "distractors": [
+        "szafa",
+        "biurku"
+      ],
+      "items": [
+        "moj",
+        "sweter",
+        "byc-jest",
+        "szafa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a3-e07",
+      "prompt": "fotel",
+      "options": [
+        {
+          "en": "a sofa"
+        },
+        {
+          "en": "a bed"
+        },
+        {
+          "en": "an armchair (w fotelu: in the armchair)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "fotel"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a3-e08",
+      "prompt": "dywan",
+      "options": [
+        {
+          "en": "a rug, a carpet (na dywanie: on the rug)"
+        },
+        {
+          "en": "a curtain"
+        },
+        {
+          "en": "a floor"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dywan"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a3-e09",
+      "prompt": "regał",
+      "options": [
+        {
+          "en": "a wardrobe"
+        },
+        {
+          "en": "a bookcase, shelves (na regale: on the shelves)"
+        },
+        {
+          "en": "a lamp"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "regal"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a3-e10",
+      "prompt": "kanapa",
+      "options": [
+        {
+          "en": "an armchair"
+        },
+        {
+          "en": "a desk"
+        },
+        {
+          "en": "a sofa (na kanapie: on the sofa)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kanapa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-a3-e11",
+      "prompt": {
+        "en": "Adam works at the desk"
+      },
+      "acceptedAnswers": [
+        "Adam pracuje przy biurku"
+      ],
+      "distractors": [
+        "biurko",
+        "na"
+      ],
+      "items": [
+        "adam",
+        "pracowac-pracuje-on",
+        "przy-loc",
+        "biurko"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a3-e12",
+      "text": "Zdjęcia są na ___.",
+      "meaning": {
+        "en": "The photos are on the bookcase."
+      },
+      "gaps": [
+        [
+          "regale"
+        ]
+      ],
+      "distractors": [
+        "regał",
+        "kanapie"
+      ],
+      "items": [
+        "zdjecie",
+        "byc-sa",
+        "regal"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-a3-e13",
+      "acceptedAnswers": [
+        "na kanapie"
+      ],
+      "meaning": {
+        "en": "on the sofa"
+      },
+      "items": [
+        "kanapa"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-a3-e14",
+      "prompt": {
+        "en": "in the armchair"
+      },
+      "acceptedAnswers": [
+        "w fotelu"
+      ],
+      "items": [
+        "fotel"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-a3-e15",
+      "pairs": [
+        {
+          "polish": "łóżko",
+          "meaning": {
+            "en": "a bed"
+          }
+        },
+        {
+          "polish": "szafa",
+          "meaning": {
+            "en": "a wardrobe"
+          }
+        },
+        {
+          "polish": "biurko",
+          "meaning": {
+            "en": "a desk"
+          }
+        },
+        {
+          "polish": "fotel",
+          "meaning": {
+            "en": "an armchair"
+          }
+        },
+        {
+          "polish": "kanapa",
+          "meaning": {
+            "en": "a sofa"
+          }
+        },
+        {
+          "polish": "dywan",
+          "meaning": {
+            "en": "a rug"
+          }
+        }
+      ],
+      "items": [
+        "lozko",
+        "szafa",
+        "biurko",
+        "fotel",
+        "kanapa",
+        "dywan"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a3-e16",
+      "text": "Kot jest na ___, a Ewa w fotelu.",
+      "meaning": {
+        "en": "The cat is on the sofa, and Ewa is in the armchair."
+      },
+      "gaps": [
+        [
+          "kanapie"
+        ]
+      ],
+      "distractors": [
+        "kanapa",
+        "fotelu"
+      ],
+      "items": [
+        "kot",
+        "byc-jest",
+        "kanapa",
+        "a",
+        "ewa",
+        "fotel"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-a3-e17",
+      "lines": [
+        "Mam mały pokój.",
+        "Jest w nim łóżko, biurko i szafa.",
+        "Na biurku jest lampa.",
+        "Jest też kanapa i fotel."
+      ],
+      "meaning": {
+        "en": "My room."
+      },
+      "statements": [
+        {
+          "text": "W pokoju jest biurko.",
+          "meaning": {
+            "en": "There is a desk in the room."
+          },
+          "true": true
+        },
+        {
+          "text": "Lampa jest na szafie.",
+          "meaning": {
+            "en": "The lamp is on the wardrobe."
+          },
+          "true": false
+        },
+        {
+          "text": "W pokoju jest kanapa.",
+          "meaning": {
+            "en": "There is a sofa in the room."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "miec-mam",
+        "maly",
+        "w-nim",
+        "byc-jest",
+        "lozko",
+        "biurko",
+        "i",
+        "szafa",
+        "lampa",
+        "tez",
+        "kanapa",
+        "fotel"
+      ]
+    }
+  ]
+}
