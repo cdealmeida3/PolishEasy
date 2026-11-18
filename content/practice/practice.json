@@ -832,5 +832,130 @@
         "ser"
       ]
     ]
-  }
+  },
+  "market": {
+    "and": "i",
+    "numbers": [
+      {
+        "m": "jeden",
+        "f": "jedna",
+        "n": "jedno"
+      },
+      {
+        "m": "dwa",
+        "f": "dwie",
+        "n": "dwa"
+      },
+      {
+        "m": "trzy",
+        "f": "trzy",
+        "n": "trzy"
+      },
+      {
+        "m": "cztery",
+        "f": "cztery",
+        "n": "cztery"
+      }
+    ],
+    "goods": [
+      "gruszka",
+      "brzoskwinia",
+      "wisnia",
+      "ananas",
+      "arbuz",
+      "marchewka",
+      "cebula",
+      "papryka",
+      "pomidor",
+      "ogorek",
+      "cytryna",
+      "banan",
+      "jablko",
+      "pomarancza",
+      "truskawka",
+      "jajko",
+      "ciastko"
+    ]
+  },
+  "aisles": [
+    {
+      "aisle": "nabial",
+      "products": [
+        "mleko",
+        "ser",
+        "maslo",
+        "jogurt",
+        "smietana"
+      ]
+    },
+    {
+      "aisle": "pieczywo",
+      "products": [
+        "chleb",
+        "bulka",
+        "drozdzowka"
+      ]
+    },
+    {
+      "aisle": "mieso",
+      "products": [
+        "kurczak",
+        "szynka",
+        "kielbasa"
+      ]
+    },
+    {
+      "aisle": "warzywa",
+      "products": [
+        "pomidor",
+        "ogorek",
+        "marchewka",
+        "cebula",
+        "czosnek",
+        "papryka",
+        "kapusta",
+        "kalafior",
+        "burak",
+        "ziemniaki"
+      ]
+    },
+    {
+      "aisle": "produkty-zbozowe",
+      "products": [
+        "makaron",
+        "ryz",
+        "kasza",
+        "platki-sniadaniowe"
+      ]
+    },
+    {
+      "aisle": "przyprawy",
+      "products": [
+        "sol",
+        "pieprz"
+      ]
+    },
+    {
+      "aisle": "slodycze",
+      "products": [
+        "czekolada",
+        "cukierki",
+        "ciastko"
+      ]
+    },
+    {
+      "aisle": "napoje",
+      "products": [
+        "sok",
+        "woda-mineralna"
+      ]
+    },
+    {
+      "aisle": "alkohole",
+      "products": [
+        "piwo",
+        "wino"
+      ]
+    }
+  ]
 }

@@ -48,6 +48,10 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     LOTTO("lotto", GameGroup.NUMBERS),
     /** Chapter 8's Game: a dish is ordered, chleb z masłem, and the Learner puts its foods on a plate. */
     PLATE_BUILDER("plate-builder", GameGroup.WORDS),
+    /** Chapter 9's Game: a shopping list is said, dwie gruszki i trzy banany, and the Learner fills the basket. */
+    MARKET_LIST("market-list", GameGroup.NUMBERS),
+    /** Chapter 9's Game: products sorted into the supermarket's aisles against the clock: nabiał, pieczywo, słodycze. */
+    AISLE_SORT("aisle-sort", GameGroup.WORDS),
 }
 
 /** Whether a Game can be played now. */
@@ -253,7 +257,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

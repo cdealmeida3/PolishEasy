@@ -620,6 +620,44 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Market list opens in chapter 9 and asks for learned goods, the number agreeing, every one on the stall`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.MARKET_LIST }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l09-"), course.path[firstReady - 1].id)
+        val market = checkNotNull(course.market)
+        val all = practiceAfter(course.path.size)
+        listOf(MarketList.LISTEN, MarketList.READ).forEach { clue ->
+            assertEquals(listOf(MarketList.ONE, MarketList.TWO), all.setup(Game.MARKET_LIST, listOf(clue)).choices[1].options.map { it.id })
+            listOf(MarketList.ONE, MarketList.TWO).forEach { level ->
+                val round = all.start(all.setup(Game.MARKET_LIST, listOf(clue, level))) as MarketRound
+                assertEquals(MarketList.QUESTIONS, round.total)
+                round.run.questions.forEach { question ->
+                    if (round.listen) question.words.forEach { assertTrue(all.clipOf(it) != null, "No Clip for $it") }
+                    question.wanted.forEach { (id, count) ->
+                        val good = course.itemsById.getValue(id)
+                        val number = course.itemsById.getValue(market.numbers[count - 1].getValue(course.genders.getValue(id))).text
+                        val noun = if (count == 1) good.text else good.forms.single()
+                        assertTrue(question.polish.lowercase().contains("$number $noun"), question.polish)
+                    }
+                    assertTrue(question.stall.map { it.id }.containsAll(question.wanted.keys), question.polish)
+                    assertEquals(question.stall.size, question.stall.map { it.picture }.toSet().size, question.polish)
+                }
+            }
+        }
+    }
+
+    @Test
+    fun `Sort the aisles opens in chapter 9 and deals products into their aisles`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.AISLE_SORT }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l09-"), course.path[firstReady - 1].id)
+        val all = practiceAfter(course.path.size)
+        repeat(5) {
+            val round = all.start(all.setup(Game.AISLE_SORT, listOf("${AisleSort.SECONDS_PREFIX}60"))) as AisleRound
+            assertEquals(AisleSort.AISLES, round.aisles.size)
+            round.cards.forEach { card -> assertTrue(card.itemId in course.aisles.single { it.names == card.aisle }.products, card.polish) }
+        }
+    }
+
+    @Test
     fun `the Verb challenge offers chapter 4's conjugation once its verbs are learned`() {
         val afterB = course.path.indexOfFirst { it.id == "kpk1-l04-b3" } + 1
         assertTrue(afterB > 0)

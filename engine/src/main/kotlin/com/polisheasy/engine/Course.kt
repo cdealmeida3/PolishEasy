@@ -52,6 +52,10 @@ data class Course(
     val till: Till? = null,
     /** The dishes of Plate builder and the Item that joins two, or null if the content has none. */
     val plates: Plates? = null,
+    /** The numbers, goods and Item that joins two of Market list, or null if the content has none. */
+    val market: Market? = null,
+    /** The supermarket aisles of Sort the aisles, each named by an Item and stocked with products, in the content's order. */
+    val aisles: List<Aisle> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

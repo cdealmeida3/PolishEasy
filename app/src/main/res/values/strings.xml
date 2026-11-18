@@ -429,6 +429,30 @@
     <string name="plate_empty">Tap the foods below to put them on the plate</string>
     <string name="plate_take_off">take it off</string>
     <string name="plate_serve">Serve</string>
+    <string name="game_market_list">Market list</string>
+    <string name="game_market_list_note">Hear a shopping list and fill the basket: dwie gruszki, trzy banany.</string>
+    <string name="game_market_list_needs">Opens when you learn jedna, dwie and four things to buy, in chapter 9.</string>
+    <string name="choice_list">The list is</string>
+    <string name="option_one_good">One thing</string>
+    <string name="option_two_goods">Two things</string>
+    <string name="market_listen_instruction">Listen to the list and fill the basket</string>
+    <string name="market_read_instruction">Put this in the basket</string>
+    <string name="market_empty">Tap the stall below to put things in the basket</string>
+    <string name="market_take_out">take one out</string>
+    <string name="market_pay">That\'s all</string>
+    <plurals name="market_in_basket">
+        <item quantity="one">%1$s, %2$d in the basket</item>
+        <item quantity="other">%1$s, %2$d in the basket</item>
+    </plurals>
+    <string name="game_aisle_sort">Sort the aisles</string>
+    <string name="game_aisle_sort_note">Nabiał, pieczywo or słodycze? Put each product in its supermarket aisle, before the time runs out.</string>
+    <string name="game_aisle_sort_needs">Opens when you learn three supermarket aisles and six products for them, in chapter 9.</string>
+    <string name="aisle_instruction">Which aisle is it in?</string>
+    <string name="aisle_missed">%1$s is in %2$s (%3$s)</string>
+    <plurals name="aisle_holds">
+        <item quantity="one">%d product so far</item>
+        <item quantity="other">%d products so far</item>
+    </plurals>
     <string name="game_spell_it">Spell it</string>
     <string name="game_spell_it_note">Tap the letters in order to spell the word.</string>
     <string name="game_spell_it_needs">Opens when you learn four words to spell.</string>

@@ -57,7 +57,22 @@ internal data class PracticeFile(
     val till: TillFile? = null,
     /** The dishes of Plate builder. */
     val plates: PlatesFile? = null,
+    /** The numbers and goods of Market list. */
+    val market: MarketFile? = null,
+    /** The supermarket aisles of Sort the aisles. */
+    val aisles: List<AisleFile> = emptyList(),
 )
+
+/**
+ * The Item ids of Market list: [and] (*i*), the [numbers] one to four, each its word before a thing
+ * of each gender, "m", "f" and "n" (*jedna* for "f"), and the [goods] on the stall.
+ */
+@Serializable
+internal data class MarketFile(val and: String, val numbers: List<Map<String, String>>, val goods: List<String>)
+
+/** One aisle of Sort the aisles: the Item that names it, [aisle] (*nabial*), and the Item ids of its [products]. */
+@Serializable
+internal data class AisleFile(val aisle: String, val products: List<String>)
 
 /** The Item ids of Plate builder: [and] (*i*), and each dish as its base, its phrase with *z* and its topping: ["chleb", "z-maslem", "maslo"]. */
 @Serializable
@@ -226,6 +241,14 @@ internal class ReadContent(
             plates = practice?.plates?.let { plates ->
                 Plates(plates.and, plates.dishes.filter { it.size == 3 }.map { (base, with, topping) -> Dish(base, with, topping) }.distinct())
             },
+            market = practice?.market?.let { market ->
+                Market(
+                    market.and,
+                    market.numbers.map { words -> words.mapNotNull { (gender, item) -> Gender.of(gender)?.let { it to item } }.toMap() },
+                    market.goods.distinct(),
+                )
+            },
+            aisles = practice?.aisles.orEmpty().map { Aisle(it.aisle, it.products.distinct()) }.distinctBy { it.names },
         )
     }
 
@@ -422,6 +445,8 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         problems += hobbyProblems(file, practice.hobbies, course, content.itemsComplete)
         practice.till?.let { till -> problems += tillProblems(file, till, course, content.itemsComplete) }
         practice.plates?.let { plates -> problems += plateProblems(file, plates, course, content.itemsComplete) }
+        practice.market?.let { market -> problems += marketProblems(file, market, practice, course, content.itemsComplete) }
+        problems += aisleProblems(file, practice.aisles, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -520,6 +545,46 @@ private fun plateProblems(file: String, plates: PlatesFile, course: Course, item
         }
     }
     plates.dishes.map { it.joinToString(" ") }.repeated().forEach { name -> problems += ContentProblem(file, null, "The dish $name is listed more than once") }
+    return problems
+}
+
+/**
+ * What is wrong with Market list: every Item defined, each number a word for "m", "f" and "n",
+ * and every good with a gender, a Picture and its plural as its only form, once.
+ */
+private fun marketProblems(file: String, market: MarketFile, practice: PracticeFile, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    (listOf(market.and) + market.numbers.flatMap { it.values } + market.goods).distinct().filter { itemsComplete && it !in course.itemsById }.forEach { id ->
+        problems += ContentProblem(file, id, "Market list names Item $id, which is not defined")
+    }
+    if (market.numbers.isEmpty()) problems += ContentProblem(file, null, "Market list has no numbers")
+    market.numbers.forEachIndexed { index, words ->
+        if (words.keys != Gender.entries.map { it.id }.toSet()) {
+            problems += ContentProblem(file, null, "Market list's number ${index + 1} must give its word for m, f and n")
+        }
+    }
+    if (market.goods.isEmpty()) problems += ContentProblem(file, null, "Market list has no goods")
+    market.goods.forEach { id ->
+        if (Gender.of(practice.genders[id].orEmpty()) == null) problems += ContentProblem(file, id, "The good $id has no gender under genders")
+        if (id !in course.pictures) problems += ContentProblem(file, id, "The good $id has no picture")
+        val item = course.itemsById[id]
+        if (item != null && item.forms.size != 1) problems += ContentProblem(file, id, "The good $id needs its plural as its only form")
+    }
+    market.goods.repeated().forEach { id -> problems += ContentProblem(file, id, "The good $id is listed more than once") }
+    return problems
+}
+
+/** What is wrong with Sort the aisles: every Item defined, every aisle with products, and no aisle or product listed twice. */
+private fun aisleProblems(file: String, aisles: List<AisleFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    aisles.forEach { aisle ->
+        (listOf(aisle.aisle) + aisle.products).filter { itemsComplete && it !in course.itemsById }.forEach { id ->
+            problems += ContentProblem(file, id, "The aisle ${aisle.aisle} names Item $id, which is not defined")
+        }
+        if (aisle.products.isEmpty()) problems += ContentProblem(file, aisle.aisle, "The aisle ${aisle.aisle} has no products")
+    }
+    aisles.map { it.aisle }.repeated().forEach { id -> problems += ContentProblem(file, id, "The aisle $id is listed more than once") }
+    aisles.flatMap { it.products }.repeated().forEach { id -> problems += ContentProblem(file, id, "The product $id is in more than one aisle, or listed twice") }
     return problems
 }
 
