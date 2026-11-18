@@ -1,0 +1,462 @@
+{
+  "id": "kpk1-l13-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Co robiliście w weekend?",
+    "meaning": {
+      "en": "What did you do at the weekend?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-a2-t01",
+      "before": "kpk1-l13-a2-e01",
+      "title": {
+        "en": "Był, była, było"
+      },
+      "body": {
+        "en": "About someone else: *on był*, *ona była*, and for a neuter noun *ono było*. *Było* also says what it was like: *było ładnie* (it was nice), *było świetnie*. For a group, *oni byli* when there is a man in it, and *one były* for women only, or for things."
+      },
+      "table": {
+        "title": {
+          "en": "być · to be · the past, one person"
+        },
+        "columns": [
+          {
+            "header": "rodzaj męski",
+            "gender": "m"
+          },
+          {
+            "header": "rodzaj żeński",
+            "gender": "f"
+          }
+        ],
+        "rows": [
+          {
+            "header": "ja",
+            "cells": [
+              "był[em]",
+              "był[am]"
+            ]
+          },
+          {
+            "header": "ty",
+            "cells": [
+              "był[eś]",
+              "był[aś]"
+            ]
+          },
+          {
+            "header": "on / ona",
+            "cells": [
+              "był",
+              "był[a]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a2-e01",
+      "prompt": "był",
+      "options": [
+        {
+          "en": "he is; she is; it is"
+        },
+        {
+          "en": "I was (a man says it)"
+        },
+        {
+          "en": "he was; it was (with a masculine noun)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "byc-byl"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a2-e02",
+      "prompt": "była",
+      "options": [
+        {
+          "en": "she was; it was (with a feminine noun)"
+        },
+        {
+          "en": "he was; it was (with a masculine noun)"
+        },
+        {
+          "en": "I was (a woman says it)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "byc-byla"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a2-e03",
+      "text": "ona była w kinie",
+      "meaning": {
+        "en": "she was at the cinema"
+      },
+      "distractors": [
+        "on był w kinie",
+        "ona jest w kinie"
+      ],
+      "items": [
+        "ona",
+        "byc-byla",
+        "w-kinie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a2-e04",
+      "prompt": "było",
+      "options": [
+        {
+          "en": "he is; she is; it is"
+        },
+        {
+          "en": "it was (było ładnie: it was nice)"
+        },
+        {
+          "en": "she was; it was (with a feminine noun)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "byc-bylo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a2-e05",
+      "prompt": "ładnie",
+      "options": [
+        {
+          "en": "well; OK"
+        },
+        {
+          "en": "great"
+        },
+        {
+          "en": "nicely; nice (było ładnie: the weather was nice)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ladnie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-a2-e06",
+      "text": "Wczoraj ___ tak ładnie!",
+      "meaning": {
+        "en": "Yesterday it was so nice!"
+      },
+      "gaps": [
+        [
+          "było"
+        ]
+      ],
+      "distractors": [
+        "był",
+        "jest"
+      ],
+      "items": [
+        "wczoraj",
+        "byc-bylo",
+        "tak",
+        "ladnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a2-e07",
+      "prompt": "pogoda",
+      "options": [
+        {
+          "en": "the weather (świetna pogoda: great weather)"
+        },
+        {
+          "en": "a week"
+        },
+        {
+          "en": "time"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pogoda"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-a2-e08",
+      "prompt": {
+        "en": "the weather was great"
+      },
+      "acceptedAnswers": [
+        "pogoda była świetna"
+      ],
+      "distractors": [
+        "był",
+        "świetny"
+      ],
+      "items": [
+        "pogoda",
+        "byc-byla",
+        "swietny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a2-e09",
+      "prompt": "byli",
+      "options": [
+        {
+          "en": "they are"
+        },
+        {
+          "en": "they were (men, or men and women)"
+        },
+        {
+          "en": "I was (a woman says it)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "byc-byli"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a2-e10",
+      "prompt": "były",
+      "options": [
+        {
+          "en": "they were (men, or men and women)"
+        },
+        {
+          "en": "it was (było ładnie: it was nice)"
+        },
+        {
+          "en": "they were (women only, or things)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "byc-byly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a2-e11",
+      "prompt": "na meczu",
+      "options": [
+        {
+          "en": "at a match"
+        },
+        {
+          "en": "to a match (a football match)"
+        },
+        {
+          "en": "at the cinema"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-meczu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-a2-e12",
+      "acceptedAnswers": [
+        "czy one były na meczu?"
+      ],
+      "meaning": {
+        "en": "were they at the match? (women)"
+      },
+      "items": [
+        "czy",
+        "one",
+        "byc-byly",
+        "na-meczu"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-a2-e13",
+      "prompt": {
+        "en": "they were at the match (men)"
+      },
+      "acceptedAnswers": [
+        "oni byli na meczu",
+        "byli na meczu"
+      ],
+      "items": [
+        "oni",
+        "byc-byli",
+        "na-meczu"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-a2-e14",
+      "pairs": [
+        {
+          "polish": "on był",
+          "meaning": {
+            "en": "he was"
+          }
+        },
+        {
+          "polish": "ona była",
+          "meaning": {
+            "en": "she was"
+          }
+        },
+        {
+          "polish": "było ładnie",
+          "meaning": {
+            "en": "it was nice"
+          }
+        },
+        {
+          "polish": "oni byli",
+          "meaning": {
+            "en": "they were (men)"
+          }
+        },
+        {
+          "polish": "one były",
+          "meaning": {
+            "en": "they were (women)"
+          }
+        },
+        {
+          "polish": "pogoda",
+          "meaning": {
+            "en": "the weather"
+          }
+        }
+      ],
+      "items": [
+        "on",
+        "byc-byl",
+        "ona",
+        "byc-byla",
+        "byc-bylo",
+        "ladnie",
+        "oni",
+        "byc-byli",
+        "one",
+        "byc-byly",
+        "pogoda"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-a2-e15",
+      "lines": [
+        "Adam był wczoraj na meczu.",
+        "Ewa była w domu.",
+        "Pogoda była świetna.",
+        "Było bardzo ładnie."
+      ],
+      "meaning": {
+        "en": "Saturday."
+      },
+      "statements": [
+        {
+          "text": "Adam był w domu.",
+          "meaning": {
+            "en": "Adam was at home."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa nie była na meczu.",
+          "meaning": {
+            "en": "Ewa wasn't at the match."
+          },
+          "true": true
+        },
+        {
+          "text": "Było ładnie.",
+          "meaning": {
+            "en": "It was nice."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "adam",
+        "byc-byl",
+        "wczoraj",
+        "na-meczu",
+        "ewa",
+        "byc-byla",
+        "w-domu",
+        "pogoda",
+        "swietny",
+        "byc-bylo",
+        "bardzo",
+        "ladnie"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-a2-e16",
+      "lines": [
+        "Gdzie był Adam?",
+        "Był na meczu.",
+        "A Ewa?",
+        "Była w kinie."
+      ],
+      "meaning": {
+        "en": "Where were they?"
+      },
+      "items": [
+        "gdzie",
+        "byc-byl",
+        "adam",
+        "na-meczu",
+        "a",
+        "ewa",
+        "byc-byla",
+        "w-kinie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a2-e17",
+      "text": "było ładnie",
+      "meaning": {
+        "en": "it was nice"
+      },
+      "distractors": [
+        "było źle",
+        "jest ładnie"
+      ],
+      "items": [
+        "byc-bylo",
+        "ladnie"
+      ]
+    }
+  ]
+}

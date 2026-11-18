@@ -1,0 +1,524 @@
+{
+  "id": "kpk1-l13-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Jadłaś już obiad?",
+    "meaning": {
+      "en": "Have you had dinner yet?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-c1-t01",
+      "before": "kpk1-l13-c1-e01",
+      "title": {
+        "en": "Jadłem, jadłam"
+      },
+      "body": {
+        "en": "*Jeść* has a past of its own: *jadłem*, *jadłam*, *jadłeś?*, *jadłaś?*, *on jadł*, *ona jadła*. Like *mieć*, it has *e* only with a man in the group: *jedliśmy*, *jedliście*, *jedli*, but *jadłyśmy*, *jadłyście*, *jadły*. *Jadłaś już obiad?* asks whether a friend has had dinner yet."
+      },
+      "table": {
+        "title": {
+          "en": "jeść · to eat · the past, one person"
+        },
+        "columns": [
+          {
+            "header": "rodzaj męski",
+            "gender": "m"
+          },
+          {
+            "header": "rodzaj żeński",
+            "gender": "f"
+          }
+        ],
+        "rows": [
+          {
+            "header": "ja",
+            "cells": [
+              "jadł[em]",
+              "jadł[am]"
+            ]
+          },
+          {
+            "header": "ty",
+            "cells": [
+              "jadł[eś]",
+              "jadł[aś]"
+            ]
+          },
+          {
+            "header": "on / ona",
+            "cells": [
+              "jadł",
+              "jadł[a]"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "kpk1-l13-c1-t02",
+      "before": "kpk1-l13-c1-e07",
+      "title": {
+        "en": "Jedliśmy czy jadłyśmy?"
+      },
+      "body": {
+        "en": "The plural of *jeść* follows the group, as *mieć* does."
+      },
+      "table": {
+        "title": {
+          "en": "jeść · to eat · the past, several people"
+        },
+        "columns": [
+          {
+            "header": "męskoosobowy",
+            "gender": "mo"
+          },
+          {
+            "header": "niemęskoosobowy",
+            "gender": "nmo"
+          }
+        ],
+        "rows": [
+          {
+            "header": "my",
+            "cells": [
+              "jedli[śmy]",
+              "jadły[śmy]"
+            ]
+          },
+          {
+            "header": "wy",
+            "cells": [
+              "jedli[ście]",
+              "jadły[ście]"
+            ]
+          },
+          {
+            "header": "oni / one",
+            "cells": [
+              "jedli",
+              "jadły"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c1-e01",
+      "prompt": "jadłem",
+      "options": [
+        {
+          "en": "I ate (jadłem: a man says it; jadłam: a woman)"
+        },
+        {
+          "en": "I eat, I am eating"
+        },
+        {
+          "en": "I was (a man says it)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jesc-jadlem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c1-e02",
+      "prompt": "jadłeś",
+      "options": [
+        {
+          "en": "you eat, you are eating (one friend)"
+        },
+        {
+          "en": "you ate (jadłeś: to a man friend; jadłaś: to a woman)"
+        },
+        {
+          "en": "I ate (jadłem: a man says it; jadłam: a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jesc-jadles"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-c1-e03",
+      "text": "___ już obiad?",
+      "meaning": {
+        "en": "Have you had dinner yet? (to a woman friend)"
+      },
+      "gaps": [
+        [
+          "Jadłaś"
+        ]
+      ],
+      "distractors": [
+        "Jadłeś",
+        "Jesz"
+      ],
+      "items": [
+        "jesc-jadles",
+        "juz",
+        "obiad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c1-e04",
+      "prompt": "jadł",
+      "options": [
+        {
+          "en": "he eats, she eats"
+        },
+        {
+          "en": "you ate (jadłeś: to a man friend; jadłaś: to a woman)"
+        },
+        {
+          "en": "he ate, she ate (jadł: he ate; jadła: she ate)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jesc-jadl"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c1-e05",
+      "prompt": "sushi",
+      "options": [
+        {
+          "en": "sushi"
+        },
+        {
+          "en": "a pizza (after robię, lubię…: robię pizzę)"
+        },
+        {
+          "en": "soup"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sushi"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-c1-e06",
+      "prompt": {
+        "en": "she ate sushi"
+      },
+      "acceptedAnswers": [
+        "ona jadła sushi"
+      ],
+      "distractors": [
+        "jadł",
+        "je"
+      ],
+      "items": [
+        "ona",
+        "jesc-jadl",
+        "sushi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c1-e07",
+      "prompt": "jedliśmy",
+      "options": [
+        {
+          "en": "he ate, she ate (jadł: he ate; jadła: she ate)"
+        },
+        {
+          "en": "we ate (jedliśmy: with a man among us; jadłyśmy: women only)"
+        },
+        {
+          "en": "we were (men, or men and women)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jesc-jedlismy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c1-e08",
+      "prompt": "jedliście",
+      "options": [
+        {
+          "en": "we ate (jedliśmy: with a man among us; jadłyśmy: women only)"
+        },
+        {
+          "en": "you wanted (chcieliście: several people, with a man among them; chciałyście: several women)"
+        },
+        {
+          "en": "you ate (jedliście: several people, with a man among them; jadłyście: several women)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jesc-jedliscie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-c1-e09",
+      "acceptedAnswers": [
+        "co jedliście?"
+      ],
+      "meaning": {
+        "en": "what did you eat? (several people)"
+      },
+      "items": [
+        "co",
+        "jesc-jedliscie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c1-e10",
+      "prompt": "jedli",
+      "options": [
+        {
+          "en": "they ate (jedli: men, or men and women; jadły: women only)"
+        },
+        {
+          "en": "you ate (jedliście: several people, with a man among them; jadłyście: several women)"
+        },
+        {
+          "en": "they were (men, or men and women)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jesc-jedli"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-c1-e11",
+      "prompt": {
+        "en": "we ate pizza (with a man among us)"
+      },
+      "acceptedAnswers": [
+        "jedliśmy pizzę"
+      ],
+      "items": [
+        "jesc-jedlismy",
+        "pizza-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c1-e12",
+      "prompt": "marzenie",
+      "options": [
+        {
+          "en": "an idea (świetny pomysł!: a great idea!)"
+        },
+        {
+          "en": "a dream, a wish (to moje marzenie: it is my dream)"
+        },
+        {
+          "en": "a photo (zdjęcia: photos)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "marzenie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-c1-e13",
+      "prompt": {
+        "en": "it is my dream"
+      },
+      "acceptedAnswers": [
+        "to moje marzenie"
+      ],
+      "distractors": [
+        "mój",
+        "moja"
+      ],
+      "items": [
+        "to",
+        "moje",
+        "marzenie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-c1-e14",
+      "pairs": [
+        {
+          "polish": "jadłem",
+          "meaning": {
+            "en": "I ate"
+          }
+        },
+        {
+          "polish": "jadłeś",
+          "meaning": {
+            "en": "you ate"
+          }
+        },
+        {
+          "polish": "jadł",
+          "meaning": {
+            "en": "he ate"
+          }
+        },
+        {
+          "polish": "jedliśmy",
+          "meaning": {
+            "en": "we ate"
+          }
+        },
+        {
+          "polish": "jedliście",
+          "meaning": {
+            "en": "you ate (several people)"
+          }
+        },
+        {
+          "polish": "jedli",
+          "meaning": {
+            "en": "they ate"
+          }
+        }
+      ],
+      "items": [
+        "jesc-jadlem",
+        "jesc-jadles",
+        "jesc-jadl",
+        "jesc-jedlismy",
+        "jesc-jedliscie",
+        "jesc-jedli"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-c1-e15",
+      "lines": [
+        "Jadłaś już obiad?",
+        "Tak, godzinę temu.",
+        "A co jadłaś?",
+        "Sushi! Byłam w restauracji z Adamem."
+      ],
+      "meaning": {
+        "en": "Dinner."
+      },
+      "statements": [
+        {
+          "text": "Ona nie jadła obiadu.",
+          "meaning": {
+            "en": "She hasn't had dinner."
+          },
+          "true": false
+        },
+        {
+          "text": "Ona jadła sushi.",
+          "meaning": {
+            "en": "She ate sushi."
+          },
+          "true": true
+        },
+        {
+          "text": "Ona była w restauracji sama.",
+          "meaning": {
+            "en": "She was at the restaurant alone."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "jesc-jadles",
+        "juz",
+        "obiad",
+        "tak",
+        "godzina",
+        "temu",
+        "a",
+        "co",
+        "sushi",
+        "byc-bylam",
+        "w-restauracji"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-c1-e16",
+      "lines": [
+        "Jesteś głodny?",
+        "Nie, jadłem godzinę temu.",
+        "A co jadłeś?",
+        "Zupę i pizzę."
+      ],
+      "meaning": {
+        "en": "Hungry?"
+      },
+      "items": [
+        "byc-jestes",
+        "glodny",
+        "nie",
+        "jesc-jadlem",
+        "godzina",
+        "temu",
+        "a",
+        "co",
+        "jesc-jadles",
+        "zupa-acc",
+        "i",
+        "pizza-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-c1-e17",
+      "text": "oni jedli lody",
+      "meaning": {
+        "en": "they ate ice cream (men)"
+      },
+      "distractors": [
+        "one jadły lody",
+        "oni jedzą lody"
+      ],
+      "items": [
+        "oni",
+        "jesc-jedli",
+        "lody"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-c1-e18",
+      "text": "sushi to moje marzenie",
+      "meaning": {
+        "en": "sushi is my dream"
+      },
+      "distractors": [
+        "pizza to moje marzenie",
+        "sushi to moje zdjęcie"
+      ],
+      "items": [
+        "sushi",
+        "to",
+        "moje",
+        "marzenie"
+      ]
+    }
+  ]
+}

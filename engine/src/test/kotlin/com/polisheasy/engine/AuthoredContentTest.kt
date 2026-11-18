@@ -227,7 +227,7 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 } + List(17) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 } + List(17) { 8 } + List(14) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
@@ -241,7 +241,8 @@ class AuthoredContentTest {
                 listOf(8, 8, 8, 8, 6, 6, 8, 8, 8, 6, 4, 1, 7, 8, 8, 6, 4) +
                 listOf(8, 8, 8, 8, 7, 8, 8, 8, 8, 7, 8, 8, 8, 8) +
                 listOf(8, 8, 8, 8, 8, 7, 5, 8, 7, 8, 8, 8, 3) +
-                listOf(8, 8, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 3),
+                listOf(8, 8, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 3) +
+                listOf(8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 8, 7, 7, 8),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -295,8 +296,8 @@ class AuthoredContentTest {
         assertEquals(14, book[10].sections)
         assertEquals("Rodzina", book[11].title)
         assertEquals(13, book[11].sections)
-        assertTrue(book.take(13).none { it.coming })
-        assertTrue(book.drop(13).all { it.coming })
+        assertTrue(book.take(14).none { it.coming })
+        assertTrue(book.drop(14).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -376,7 +377,8 @@ class AuthoredContentTest {
                 "byc-jestem" to "jestem", "byc-jestes" to "jesteś", "byc-jest" to "jest",
                 "byc-jestesmy" to "jesteśmy", "byc-jestescie" to "jesteście", "byc-sa" to "są",
             ),
-            course.items.filter { it.id.startsWith("byc-") }.associate { it.id to it.text },
+            // Chapter 13 adds the past of być: byc-bylem, byc-bylam and the rest.
+            course.items.filter { it.id.startsWith("byc-") && !it.id.startsWith("byc-byl") }.associate { it.id to it.text },
         )
     }
 
@@ -650,12 +652,13 @@ class AuthoredContentTest {
     fun `a number counts only years, money, lottery tickets and, since chapter 9, things in the plural, dwie a feminine one`() {
         // A house number is joined to its flat's with przez: dziesięć przez trzy is 10/3.
         // Chapter 12 tells the time: pięć po ósmej, za pięć ósma, osiem godzin.
+        // Chapter 13 says how long ago: dwa dni temu.
         val hourIds = listOf("pierwsza", "druga", "trzecia", "czwarta", "piata", "szosta", "siodma", "osma", "dziewiata", "dziesiata", "jedenasta", "dwunasta")
         val hours = course.items.filter { item -> hourIds.any { item.id == it || item.id.startsWith("${it}-") } || item.id.endsWith("nasta") || item.id.startsWith("dwudziesta") }
             .flatMap { listOf(it.text) + it.forms }.toSet()
         assertTrue("ósmej" in hours, "The hours are not Items")
         val allowed = allNumbers + yearWords + moneyWords.values.flatten() + hours +
-            listOf("plus", "minus", "razy", "równa", "to", "jest", "przez", "kupon", "po", "godzin", "minut", "minuty", "minuta")
+            listOf("plus", "minus", "razy", "równa", "to", "jest", "przez", "kupon", "po", "dni", "godzin", "minut", "minuty", "minuta")
         // Chapter 9 counts things: jeden pomidor, dwa banany, dwie papryki, trzy słodkie pomarańcze, dwa kilo. The thing is the
         // plural form of an Item with a gender, perhaps after an adjective; dwie goes with a feminine one, dwa with the others.
         val plurals = course.items.filter { it.id in course.genders && it.forms.size == 1 }.associate { it.forms.single() to course.genders.getValue(it.id) }
@@ -685,7 +688,7 @@ class AuthoredContentTest {
     fun `mój, moja, moje, twój, twoja and twoje agree with the gender of the noun after them`() {
         val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres", "plecak", "słownik", "kolega", "gospodarz", "kot", "owoc", "wnuk", "ojciec", "wujek", "kuzyn", "teść", "portfel", "urlop", "samochód", "dom")
         val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna", "torba", "koleżanka", "dentystka", "gospodyni", "potrawa", "matka", "wnuczka", "ciocia", "kuzynka", "teściowa", "synowa", "przerwa", "kawa", "książka")
-        val neuter = setOf("dziecko", "pytanie", "rodzeństwo", "hobby", "małżeństwo", "zdjęcie", "drzewo", "auto", "mieszkanie", "miasto")
+        val neuter = setOf("dziecko", "marzenie", "pytanie", "rodzeństwo", "hobby", "małżeństwo", "zdjęcie", "drzewo", "auto", "mieszkanie", "miasto")
         val possessives = mapOf(
             "mój" to masculine, "twój" to masculine, "moja" to feminine, "twoja" to feminine, "moje" to neuter, "twoje" to neuter,
         )

@@ -1,0 +1,455 @@
+{
+  "id": "kpk1-l13-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-g-t01",
+      "before": "kpk1-l13-g-e01",
+      "title": {
+        "en": "Najpierw, potem, następnie"
+      },
+      "body": {
+        "en": "To tell a day in order: *najpierw* (first), *potem* (then), *następnie* (next), *później* (later). *Najpierw wstałam, potem umyłam zęby, następnie zjadłam śniadanie, a później poszłam do szkoły.* *Zjeść* is to eat something up, once: *zjadłam śniadanie*."
+      }
+    },
+    {
+      "id": "kpk1-l13-g-t02",
+      "before": "kpk1-l13-g-e08",
+      "title": {
+        "en": "Właśnie"
+      },
+      "body": {
+        "en": "*Właśnie* is just, or exactly: *właśnie wróciłam* (I've just come back), and *właśnie!* (exactly!). *Jednocześnie* is at the same time. *Szczęście* is happiness and luck, and *odwiedzić* is to visit, once: *chcę odwiedzić Kraków*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-g-e01",
+      "prompt": "wstałam",
+      "options": [
+        {
+          "en": "get up (to get up)"
+        },
+        {
+          "en": "I got up (wstałam: a woman says it; wstałem: a man)"
+        },
+        {
+          "en": "I slept (spałam: a woman says it; spałem: a man)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wstac-wstalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-g-e02",
+      "prompt": "umyłam",
+      "options": [
+        {
+          "en": "wash (to wash yourself)"
+        },
+        {
+          "en": "I got up (wstałam: a woman says it; wstałem: a man)"
+        },
+        {
+          "en": "I washed (umyłam: a woman says it; umyłem: a man; umyłam zęby: I brushed my teeth)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "umyc-umylam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-g-e03",
+      "prompt": "zjadłam",
+      "options": [
+        {
+          "en": "I ate up, I had (zjadłam: a woman says it; zjadłem: a man)"
+        },
+        {
+          "en": "I ate (jadłem: a man says it; jadłam: a woman)"
+        },
+        {
+          "en": "I washed (umyłam: a woman says it; umyłem: a man; umyłam zęby: I brushed my teeth)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zjesc-zjadlam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-g-e04",
+      "prompt": "następnie",
+      "options": [
+        {
+          "en": "first, first of all"
+        },
+        {
+          "en": "next, then"
+        },
+        {
+          "en": "never (nigdy nie…)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nastepnie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-g-e05",
+      "text": "Najpierw wstałam, ___ zjadłam śniadanie.",
+      "meaning": {
+        "en": "First I got up, next I had breakfast (a woman)."
+      },
+      "gaps": [
+        [
+          "następnie",
+          "potem"
+        ]
+      ],
+      "distractors": [
+        "nigdy",
+        "zawsze"
+      ],
+      "items": [
+        "najpierw",
+        "wstac-wstalam",
+        "nastepnie",
+        "zjesc-zjadlam",
+        "sniadanie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-g-e06",
+      "prompt": {
+        "en": "first I got up, then I brushed my teeth (a man)"
+      },
+      "acceptedAnswers": [
+        "najpierw wstałem, potem umyłem zęby",
+        "najpierw wstałem, następnie umyłem zęby"
+      ],
+      "distractors": [
+        "wstałam",
+        "następnie"
+      ],
+      "items": [
+        "najpierw",
+        "wstac-wstalam",
+        "potem",
+        "umyc-umylam",
+        "zeby-teeth"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-g-e07",
+      "lines": [
+        "Najpierw wstałam.",
+        "Potem umyłam zęby.",
+        "Następnie zjadłam śniadanie.",
+        "Później poszłam do szkoły."
+      ],
+      "meaning": {
+        "en": "My morning."
+      },
+      "items": [
+        "najpierw",
+        "wstac-wstalam",
+        "potem",
+        "umyc-umylam",
+        "zeby-teeth",
+        "nastepnie",
+        "zjesc-zjadlam",
+        "sniadanie",
+        "pozniej",
+        "pojsc-poszedlem",
+        "do-szkoly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-g-e08",
+      "prompt": "odwiedzić",
+      "options": [
+        {
+          "en": "buy (to buy, once)"
+        },
+        {
+          "en": "call, phone, once (zadzwonić na policję: to call the police)"
+        },
+        {
+          "en": "visit (to visit, once)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "odwiedzic"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-g-e09",
+      "prompt": {
+        "en": "I want to visit Kraków"
+      },
+      "acceptedAnswers": [
+        "chcę odwiedzić Kraków"
+      ],
+      "items": [
+        "chciec-chce",
+        "odwiedzic",
+        "krakow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-g-e10",
+      "prompt": "szczęście",
+      "options": [
+        {
+          "en": "happiness; luck (na szczęście: luckily)"
+        },
+        {
+          "en": "a dream, a wish (to moje marzenie: it is my dream)"
+        },
+        {
+          "en": "shame (ale wstyd!: how embarrassing!)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "szczescie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-g-e11",
+      "prompt": "właśnie",
+      "options": [
+        {
+          "en": "at last, finally"
+        },
+        {
+          "en": "just, exactly (no właśnie!: exactly!)"
+        },
+        {
+          "en": "already; (with nie) not any more"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wlasnie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-g-e12",
+      "acceptedAnswers": [
+        "właśnie wróciłam"
+      ],
+      "meaning": {
+        "en": "I've just come back (a woman)"
+      },
+      "items": [
+        "wlasnie",
+        "wrocic-wrocilam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-g-e13",
+      "prompt": "jednocześnie",
+      "options": [
+        {
+          "en": "together"
+        },
+        {
+          "en": "then, afterwards"
+        },
+        {
+          "en": "at the same time"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jednoczesnie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-g-e14",
+      "pairs": [
+        {
+          "polish": "najpierw",
+          "meaning": {
+            "en": "first"
+          }
+        },
+        {
+          "polish": "potem",
+          "meaning": {
+            "en": "then"
+          }
+        },
+        {
+          "polish": "następnie",
+          "meaning": {
+            "en": "next"
+          }
+        },
+        {
+          "polish": "później",
+          "meaning": {
+            "en": "later"
+          }
+        },
+        {
+          "polish": "jednocześnie",
+          "meaning": {
+            "en": "at the same time"
+          }
+        },
+        {
+          "polish": "właśnie",
+          "meaning": {
+            "en": "just, exactly"
+          }
+        }
+      ],
+      "items": [
+        "najpierw",
+        "potem",
+        "nastepnie",
+        "pozniej",
+        "jednoczesnie",
+        "wlasnie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-g-e15",
+      "lines": [
+        "W zeszłym tygodniu Adam był bardzo zajęty.",
+        "W poniedziałek rano miał kurs, a wieczorem poszedł do kina.",
+        "W środę chciał odwiedzić babcię, ale nie miał czasu.",
+        "W sobotę jednocześnie sprzątał i słuchał muzyki."
+      ],
+      "meaning": {
+        "en": "Adam's week."
+      },
+      "statements": [
+        {
+          "text": "W poniedziałek Adam poszedł do kina.",
+          "meaning": {
+            "en": "On Monday Adam went to the cinema."
+          },
+          "true": true
+        },
+        {
+          "text": "W środę odwiedził babcię.",
+          "meaning": {
+            "en": "On Wednesday he visited his grandma."
+          },
+          "true": false
+        },
+        {
+          "text": "W zeszłym tygodniu Adam miał dużo czasu.",
+          "meaning": {
+            "en": "Last week Adam had a lot of time."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "w-zeszlym-tygodniu",
+        "adam",
+        "byc-byl",
+        "bardzo",
+        "zajety",
+        "poniedzialek",
+        "rano",
+        "miec-mial",
+        "kurs",
+        "a",
+        "wieczorem",
+        "pojsc-poszedl",
+        "do-kina",
+        "sroda",
+        "odwiedzic",
+        "ale",
+        "nie",
+        "sobota",
+        "jednoczesnie",
+        "i",
+        "muzyka-gen"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-g-e16",
+      "text": "to jest szczęście!",
+      "meaning": {
+        "en": "that is happiness!"
+      },
+      "distractors": [
+        "to jest marzenie!",
+        "to jest wstyd!"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "szczescie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-g-e17",
+      "prompt": {
+        "en": "where did you go? (several people)"
+      },
+      "acceptedAnswers": [
+        "gdzie poszliście?",
+        "dokąd poszliście?"
+      ],
+      "items": [
+        "gdzie",
+        "pojsc-poszliscie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-g-e18",
+      "prompt": {
+        "en": "happiness"
+      },
+      "acceptedAnswers": [
+        "szczęście"
+      ],
+      "items": [
+        "szczescie"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "id": "kpk1-l13-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Co robiliście w weekend?",
+    "meaning": {
+      "en": "What did you do at the weekend?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-a5-t01",
+      "before": "kpk1-l13-a5-e01",
+      "title": {
+        "en": "Czytałem, czytałam"
+      },
+      "body": {
+        "en": "*Czytać* shows the past of most verbs: *czyta-* and the endings. A man says *czytałem*, a woman *czytałam*; to a friend *czytałeś?* or *czytałaś?*; *on czytał*, *ona czytała*. *Co robiłaś w weekend?* asks a woman friend what she did, *co robiłeś?* a man."
+      },
+      "table": {
+        "title": {
+          "en": "czytać · to read · the past, one person"
+        },
+        "columns": [
+          {
+            "header": "rodzaj męski",
+            "gender": "m"
+          },
+          {
+            "header": "rodzaj żeński",
+            "gender": "f"
+          }
+        ],
+        "rows": [
+          {
+            "header": "ja",
+            "cells": [
+              "czytał[em]",
+              "czytał[am]"
+            ]
+          },
+          {
+            "header": "ty",
+            "cells": [
+              "czytał[eś]",
+              "czytał[aś]"
+            ]
+          },
+          {
+            "header": "on / ona",
+            "cells": [
+              "czytał",
+              "czytał[a]"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "kpk1-l13-a5-t02",
+      "before": "kpk1-l13-a5-e13",
+      "title": {
+        "en": "Spokojny weekend"
+      },
+      "body": {
+        "en": "*Spokojny* is calm and quiet: *to był spokojny weekend*. The verbs in *-ować* keep their *-owa-* in the past: *pracować*, *pracowałem*; *kupować*, *kupowałam*."
+      },
+      "table": {
+        "title": {
+          "en": "czytać · to read · the past, several people"
+        },
+        "columns": [
+          {
+            "header": "męskoosobowy",
+            "gender": "mo"
+          },
+          {
+            "header": "niemęskoosobowy",
+            "gender": "nmo"
+          }
+        ],
+        "rows": [
+          {
+            "header": "my",
+            "cells": [
+              "czytali[śmy]",
+              "czytały[śmy]"
+            ]
+          },
+          {
+            "header": "wy",
+            "cells": [
+              "czytali[ście]",
+              "czytały[ście]"
+            ]
+          },
+          {
+            "header": "oni / one",
+            "cells": [
+              "czytali",
+              "czytały"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a5-e01",
+      "prompt": "robiłaś",
+      "options": [
+        {
+          "en": "you do, you make (one friend)"
+        },
+        {
+          "en": "you were (to a woman, one friend)"
+        },
+        {
+          "en": "you did (robiłaś: to a woman friend; robiłeś: to a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "robic-robilas"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a5-e02",
+      "text": "co robiłaś w weekend?",
+      "meaning": {
+        "en": "what did you do at the weekend? (to a woman)"
+      },
+      "distractors": [
+        "co robiłeś w weekend?",
+        "co robisz w weekend?"
+      ],
+      "items": [
+        "co",
+        "robic-robilas",
+        "w-weekend"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a5-e03",
+      "prompt": "czytałem",
+      "options": [
+        {
+          "en": "I read, I was reading (czytałem: a man says it; czytałam: a woman)"
+        },
+        {
+          "en": "I read"
+        },
+        {
+          "en": "I was (a man says it)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czytac-czytalem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-a5-e04",
+      "text": "Wczoraj ___ książkę.",
+      "meaning": {
+        "en": "Yesterday I was reading a book (a woman)."
+      },
+      "gaps": [
+        [
+          "czytałam"
+        ]
+      ],
+      "distractors": [
+        "czytałem",
+        "czytam"
+      ],
+      "items": [
+        "wczoraj",
+        "czytac-czytalem",
+        "ksiazka-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a5-e05",
+      "prompt": "oglądałam",
+      "options": [
+        {
+          "en": "I watch"
+        },
+        {
+          "en": "I watched (oglądałam: a woman says it; oglądałem: a man)"
+        },
+        {
+          "en": "I read, I was reading (czytałem: a man says it; czytałam: a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ogladac-ogladalam"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-a5-e06",
+      "prompt": {
+        "en": "I watched a Polish film (a woman)"
+      },
+      "acceptedAnswers": [
+        "oglądałam polski film"
+      ],
+      "distractors": [
+        "oglądałem",
+        "polska"
+      ],
+      "items": [
+        "ogladac-ogladalam",
+        "polski",
+        "film"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a5-e07",
+      "prompt": "spałam",
+      "options": [
+        {
+          "en": "I sleep, I am asleep"
+        },
+        {
+          "en": "I played (a woman)"
+        },
+        {
+          "en": "I slept (spałam: a woman says it; spałem: a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "spac-spalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a5-e08",
+      "prompt": "grałam",
+      "options": [
+        {
+          "en": "I played (grałam: a woman says it; grałem: a man)"
+        },
+        {
+          "en": "I play"
+        },
+        {
+          "en": "I slept (spałam: a woman says it; spałem: a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "grac-gralam"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-a5-e09",
+      "acceptedAnswers": [
+        "grałem w karty"
+      ],
+      "meaning": {
+        "en": "I played cards (a man)"
+      },
+      "items": [
+        "grac-gralam",
+        "w-karty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a5-e10",
+      "prompt": "pomagałam",
+      "options": [
+        {
+          "en": "I cooked (a woman)"
+        },
+        {
+          "en": "I helped (pomagałam: a woman says it; pomagałem: a man)"
+        },
+        {
+          "en": "I played (grałam: a woman says it; grałem: a man)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pomagac-pomagalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a5-e11",
+      "prompt": "pracowałem",
+      "options": [
+        {
+          "en": "I work"
+        },
+        {
+          "en": "I helped (pomagałam: a woman says it; pomagałem: a man)"
+        },
+        {
+          "en": "I worked (pracowałem: a man says it; pracowałam: a woman)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pracowac-pracowalem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-a5-e12",
+      "prompt": {
+        "en": "on Saturday I worked (a man)"
+      },
+      "acceptedAnswers": [
+        "w sobotę pracowałem",
+        "pracowałem w sobotę"
+      ],
+      "items": [
+        "sobota",
+        "pracowac-pracowalem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a5-e13",
+      "prompt": "spokojny",
+      "options": [
+        {
+          "en": "calm, quiet (spokojny, spokojna, spokojne)"
+        },
+        {
+          "en": "great, excellent (świetny, świetna, świetne)"
+        },
+        {
+          "en": "tired (zmęczony, zmęczona, zmęczone)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "spokojny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-a5-e14",
+      "prompt": {
+        "en": "it was a quiet weekend"
+      },
+      "acceptedAnswers": [
+        "to był spokojny weekend"
+      ],
+      "distractors": [
+        "była",
+        "spokojna"
+      ],
+      "items": [
+        "to",
+        "byc-byl",
+        "spokojny",
+        "weekend"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-a5-e15",
+      "pairs": [
+        {
+          "polish": "czytałem",
+          "meaning": {
+            "en": "I read (a man)"
+          }
+        },
+        {
+          "polish": "spałam",
+          "meaning": {
+            "en": "I slept"
+          }
+        },
+        {
+          "polish": "grałam",
+          "meaning": {
+            "en": "I played"
+          }
+        },
+        {
+          "polish": "pomagałam",
+          "meaning": {
+            "en": "I helped"
+          }
+        },
+        {
+          "polish": "pracowałem",
+          "meaning": {
+            "en": "I worked"
+          }
+        },
+        {
+          "polish": "oglądałam",
+          "meaning": {
+            "en": "I watched"
+          }
+        }
+      ],
+      "items": [
+        "czytac-czytalem",
+        "spac-spalam",
+        "grac-gralam",
+        "pomagac-pomagalam",
+        "pracowac-pracowalem",
+        "ogladac-ogladalam"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-a5-e16",
+      "lines": [
+        "A ty, co robiłaś w weekend?",
+        "W sobotę oglądałam film w kinie.",
+        "A w niedzielę spałam, czytałam i pomagałam mamie.",
+        "To był spokojny weekend."
+      ],
+      "meaning": {
+        "en": "A quiet weekend."
+      },
+      "statements": [
+        {
+          "text": "W niedzielę ona pracowała.",
+          "meaning": {
+            "en": "On Sunday she worked."
+          },
+          "true": false
+        },
+        {
+          "text": "W sobotę ona była w kinie.",
+          "meaning": {
+            "en": "On Saturday she was at the cinema."
+          },
+          "true": true
+        },
+        {
+          "text": "Weekend był spokojny.",
+          "meaning": {
+            "en": "The weekend was quiet."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "a",
+        "ty",
+        "co",
+        "robic-robilas",
+        "w-weekend",
+        "sobota",
+        "ogladac-ogladalam",
+        "film",
+        "w-kinie",
+        "niedziela",
+        "spac-spalam",
+        "czytac-czytalem",
+        "pomagac-pomagalam",
+        "to",
+        "byc-byl",
+        "spokojny",
+        "weekend"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-a5-e17",
+      "lines": [
+        "Co robiłeś w niedzielę?",
+        "Grałem w tenisa, a potem czytałem.",
+        "A ty?",
+        "Ja spałam!"
+      ],
+      "meaning": {
+        "en": "Sunday."
+      },
+      "items": [
+        "co",
+        "robic-robilas",
+        "niedziela",
+        "grac-gralam",
+        "w-tenisa",
+        "a",
+        "potem",
+        "czytac-czytalem",
+        "ty",
+        "ja",
+        "spac-spalam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a5-e18",
+      "text": "pracowałam w sobotę",
+      "meaning": {
+        "en": "I worked on Saturday (a woman)"
+      },
+      "distractors": [
+        "pracowałem w sobotę",
+        "pracuję w sobotę"
+      ],
+      "items": [
+        "pracowac-pracowalem",
+        "sobota"
+      ]
+    }
+  ]
+}

@@ -272,3 +272,23 @@ It gives the later chapters:
 - the daily routine in *ja* and *ty*, with *wstawać* and *brać*.
 
 It leaves for later: the ordinals as adjectives beyond the hours (*pierwszy dzień tygodnia* is heard in the crossword, not taught), the third person of the routine verbs (*budzi się* is only in statements), and the genitive of the days (*do soboty*).
+
+## Chapter 13: Co robiliście w weekend?
+
+Book pages 102 to 107, recordings 144 to 150. Fourteen parts, 248 Exercises and 109 new Items: the past tense.
+
+- **A** *Co robiliście w weekend?*, in six: *być* in the past, *ja* and *ty* (17: *byłem*, *byłam*, *wczoraj*, *w kinie*, *byłeś*, *byłaś*, *kiedyś*, *pierwszy raz*); *on*, *ona*, *ono* and *oni*, *one* (17: *był*, *była*, *było*, *ładnie*, *pogoda*, *byli*, *były*, *na meczu*); *my* and *wy*, with a Tip on a group with a man in it (17: *byliśmy*, *byłyśmy*, *byliście*, *byłyście*, *na treningu*, *na imprezie*, *weekend*, *jak było?*); a woman's weekend, with a Tip on the endings (18: *kupiłam*, *sweter*, *spędziłam*, *kilka godzin*, *tańczyłam*, *poznałam*, *wróciłam*, *wspaniale*); a quiet weekend, with a Tip on *-ować* (18: *robiłaś*, *czytałem*, *oglądałam*, *spałam*, *grałam*, *pomagałam*, *pracowałem*, *spokojny*); and *kiedy?* (18: *przedwczoraj*, *temu*, *miesiąc*, *dni*, *w zeszłym tygodniu*, *w zeszłym roku*, *w zeszłą sobotę*, *ostatnio*).
+- **B** *Chciałem dobrze!*, in three: verbs in *-eć*, *e* to *a* (18: *chciałem*, *w muzeum*, *obraz*, *widziałem*, *musiałem*, *myślałam*, *piękny*); *mieć* and the *e* kept for a group with a man in it (18: *miałem*, *miał*, *mieliśmy*, *chcieliście*, *woleli*, *wiedziałem*, *rozumiałaś*, *zupełnie nic*); and the museum story (18: *zrobić*, *ochrona*, *prosiłem*, *zadzwonić*, *na policję*, *śmiali się*, *głośno*, *wstyd*).
+- **C** *Jadłaś już obiad?*, in four: *jeść*, with Tips on *jadł* and *jedli* (18: *jadłem*, *jadłeś*, *jadł*, *sushi*, *jedliśmy*, *jedliście*, *jedli*, *marzenie*); *pójść*, with Tips on *poszedł* and *poszli* (18: *poszedłem*, *poszedłeś*, *poszedł*, *poszliśmy*, *poszliście*, *poszli*, *ugotowała*, *kartka*); *chodziłem*, *szedłem* and *poszedłem* (17: *chodziłem*, *szedłem*, *padał deszcz*, *na premierę*, *na piechotę*, *siedziałem*, *przed komputerem*); and no signal in the mountains, with the genitive after *nie miałem* (18: *w górach*, *zasięg*, *telefonu*, *odbierałeś*, *odpisywałeś*, *martwiliśmy się*, *szczęśliwy*).
+- *Ćwiczenia* (18): a morning told in order, with Tips on *najpierw*, *potem*, *następnie* and on *właśnie* (*wstałam*, *umyłam*, *zjadłam*, *następnie*, *odwiedzić*, *szczęście*, *właśnie*, *jednocześnie*).
+
+A past form is one Item for each person, its other gender as its form, and its meaning names both (*kupiłam*: a woman says it; *kupiłem*: a man). The tables of *być*, *czytać*, *mieć*, *jeść* and *pójść* are grammar Tips in two halves, *ja*, *ty*, *on* / *ona* with a man's and a woman's column, and *my*, *wy*, *oni* / *one* with a column for a group with a man in it and one for women only. They are not conjugation tables, so the Verb challenge stays in the present. *Wstyd*, *zasięg*, *marzenie*, *szczęście*, *szczęśliwy*, *randka*, *właśnie* and *jednocześnie*, the words the book sends to the dictionary, are under Look up. There are 45 listening tasks on all 7 recordings, and one Chat: *How was your weekend?* (Kasia, a friend, informal: Saturday at the cinema and a Polish film, Sunday at home, and no dinner yet, so she invites you; you are a man, so you say *byłem*). Seventeen Items have pictures (a cinema, a museum, a football, a party popper, a framed picture, a computer, a coat, sushi, mountains, rain, a cloud with the sun, a memo, a guard, a police light, signal bars, footprints, a smiling face).
+
+It gives the later chapters:
+
+- the past tense of every verb so far, in all persons and both genders, with *być*, *mieć*, *jeść*, *pójść* and *iść* as they are;
+- *kiedy?* in the past: *wczoraj*, *przedwczoraj*, *… temu*, *w zeszłym tygodniu*, *w zeszłą sobotę*, *ostatnio*;
+- telling what happened in order: *najpierw*, *potem*, *następnie*, *a później*;
+- the genitive after a negated *mieć* in the past: *nie miałem zasięgu*, *telefonu*.
+
+It leaves for later: aspect as a rule (*zrobić* and *zadzwonić* are met as done once, *robić* and *dzwonić* as often, without the word), and the past of the verbs the book has not met yet.

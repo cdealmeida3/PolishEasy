@@ -15,7 +15,8 @@
     "kpk1/lesson-09/items.json",
     "kpk1/lesson-10/items.json",
     "kpk1/lesson-11/items.json",
-    "kpk1/lesson-12/items.json"
+    "kpk1/lesson-12/items.json",
+    "kpk1/lesson-13/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -40,7 +41,8 @@
     "kpk1/chats/at-the-market.json",
     "kpk1/chats/at-the-restaurant.json",
     "kpk1/chats/family-photo.json",
-    "kpk1/chats/invitation.json"
+    "kpk1/chats/invitation.json",
+    "kpk1/chats/weekend.json"
   ],
   "levels": [
     {
@@ -763,7 +765,32 @@
               "czasowniki jeść, pójść oraz zakończone na -eć"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-13/section-a1.json",
+            "kpk1/lesson-13/section-a2.json",
+            "kpk1/lesson-13/section-a3.json",
+            "kpk1/lesson-13/section-a4.json",
+            "kpk1/lesson-13/section-a5.json",
+            "kpk1/lesson-13/section-a6.json",
+            "kpk1/lesson-13/section-b1.json",
+            "kpk1/lesson-13/section-b2.json",
+            "kpk1/lesson-13/section-b3.json",
+            "kpk1/lesson-13/section-c1.json",
+            "kpk1/lesson-13/section-c2.json",
+            "kpk1/lesson-13/section-c3.json",
+            "kpk1/lesson-13/section-c4.json",
+            "kpk1/lesson-13/section-g.json"
+          ],
+          "lookUp": [
+            "wstyd",
+            "zasieg",
+            "marzenie",
+            "szczescie",
+            "szczesliwy",
+            "randka",
+            "wlasnie",
+            "jednoczesnie"
+          ]
         },
         {
           "id": "kpk1-l14",

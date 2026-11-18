@@ -13,6 +13,14 @@
       "text": "a co do picia?"
     },
     {
+      "id": "a-co-jadlas",
+      "text": "A co jadłaś?"
+    },
+    {
+      "id": "a-co-jadles",
+      "text": "A co jadłeś?"
+    },
+    {
       "id": "a-co-lubisz-pic",
       "text": "A co lubisz pić?"
     },
@@ -61,8 +69,24 @@
       "text": "A drób?"
     },
     {
+      "id": "a-dziewczyny",
+      "text": "A dziewczyny?"
+    },
+    {
       "id": "a-ewa",
       "text": "A Ewa?"
+    },
+    {
+      "id": "a-ewa-poszla-do-kina",
+      "text": "A Ewa poszła do kina."
+    },
+    {
+      "id": "a-gdzie-byles",
+      "text": "A gdzie byłeś?"
+    },
+    {
+      "id": "a-gdzie-byliscie-w-weekend",
+      "text": "A gdzie byliście w weekend?"
     },
     {
       "id": "a-gdzie-jest-drogeria",
@@ -85,6 +109,14 @@
       "text": "A ich syn czyta książkę."
     },
     {
+      "id": "a-ja-bylam-w-gorach-nie-mialam-zasiegu",
+      "text": "A ja byłam w górach! Nie miałam zasięgu."
+    },
+    {
+      "id": "a-ja-bylem-tu-wczoraj",
+      "text": "A ja byłem tu wczoraj!"
+    },
+    {
       "id": "a-ja-chce-isc-na-koncert",
       "text": "A ja chcę iść na koncert!"
     },
@@ -101,6 +133,10 @@
       "text": "A ja na gofr."
     },
     {
+      "id": "a-jaki-to-byl-film",
+      "text": "A jaki to był film?"
+    },
+    {
       "id": "a-jutro",
       "text": "A jutro?"
     },
@@ -115,6 +151,10 @@
     {
       "id": "a-kto-to-jest",
       "text": "A kto to jest?"
+    },
+    {
+      "id": "a-ktory-obraz-byl-najpiekniejszy",
+      "text": "A który obraz był najpiękniejszy?"
     },
     {
       "id": "a-o-ktorej-wychodzisz-z-domu",
@@ -193,6 +233,10 @@
       "text": "a ty?"
     },
     {
+      "id": "a-ty-co-robilas-w-weekend",
+      "text": "A ty, co robiłaś w weekend?"
+    },
+    {
       "id": "a-ty-jak-masz-na-imie",
       "text": "a ty jak masz na imię?"
     },
@@ -221,12 +265,28 @@
       "text": "a u pani?"
     },
     {
+      "id": "a-w-niedziele",
+      "text": "A w niedzielę?"
+    },
+    {
+      "id": "a-w-niedziele-byles-na-meczu",
+      "text": "A w niedzielę? Byłeś na meczu?"
+    },
+    {
+      "id": "a-w-niedziele-spalam-czytalam-i-pomagalam-mamie",
+      "text": "A w niedzielę spałam, czytałam i pomagałam mamie."
+    },
+    {
       "id": "a-w-nocy",
       "text": "A w nocy?"
     },
     {
       "id": "a-w-piatek",
       "text": "A w piątek?"
+    },
+    {
+      "id": "a-w-zeszlym-tygodniu",
+      "text": "A w zeszłym tygodniu?"
     },
     {
       "id": "a-woda-mineralna",
@@ -239,6 +299,10 @@
     {
       "id": "adam",
       "text": "Adam"
+    },
+    {
+      "id": "adam-byl-wczoraj-na-meczu",
+      "text": "Adam był wczoraj na meczu."
     },
     {
       "id": "adam-chce-pizze-z-pieczarkami",
@@ -325,6 +389,10 @@
       "text": "Adam ma trzynaście lat."
     },
     {
+      "id": "adam-mial-wczoraj-test",
+      "text": "Adam miał wczoraj test."
+    },
+    {
       "id": "adam-musi-uczyc-sie-do-egzaminu",
       "text": "Adam musi uczyć się do egzaminu."
     },
@@ -351,6 +419,14 @@
     {
       "id": "adam-pije-wode",
       "text": "Adam pije wodę."
+    },
+    {
+      "id": "adam-poszedl-na-mecz",
+      "text": "Adam poszedł na mecz"
+    },
+    {
+      "id": "adam-poszedl-z-tata-na-mecz",
+      "text": "Adam poszedł z tatą na mecz."
     },
     {
       "id": "adam-robi-sniadanie",
@@ -447,6 +523,10 @@
     {
       "id": "ale",
       "text": "ale"
+    },
+    {
+      "id": "ale-wstyd",
+      "text": "ale wstyd!"
     },
     {
       "id": "alfabet",
@@ -611,6 +691,10 @@
     {
       "id": "bardzo-rzadko-chodze-do-kina",
       "text": "Bardzo rzadko chodzę do kina."
+    },
+    {
+      "id": "bardzo-sie-martwilismy",
+      "text": "bardzo się martwiliśmy"
     },
     {
       "id": "barszcz",
@@ -865,6 +949,138 @@
       "text": "być może"
     },
     {
+      "id": "byl",
+      "text": "był"
+    },
+    {
+      "id": "byl-na-meczu",
+      "text": "Był na meczu."
+    },
+    {
+      "id": "byla",
+      "text": "była"
+    },
+    {
+      "id": "byla-w-kinie",
+      "text": "Była w kinie."
+    },
+    {
+      "id": "bylam",
+      "text": "byłam"
+    },
+    {
+      "id": "bylam-bardzo-szczesliwa",
+      "text": "byłam bardzo szczęśliwa"
+    },
+    {
+      "id": "bylam-na-imprezie-w-zeszla-sobote",
+      "text": "byłam na imprezie w zeszłą sobotę"
+    },
+    {
+      "id": "bylam-w-domu",
+      "text": "byłam w domu"
+    },
+    {
+      "id": "bylam-w-gorach-nie-mialam-zasiegu",
+      "text": "Byłam w górach. Nie miałam zasięgu."
+    },
+    {
+      "id": "bylas",
+      "text": "byłaś"
+    },
+    {
+      "id": "bylas-tu-kiedys",
+      "text": "Byłaś tu kiedyś?"
+    },
+    {
+      "id": "bylas-w-gorach-jak-bylo",
+      "text": "Byłaś w górach? Jak było?"
+    },
+    {
+      "id": "bylem",
+      "text": "byłem"
+    },
+    {
+      "id": "bylem-w-domu-dwa-dni-temu",
+      "text": "byłem w domu dwa dni temu"
+    },
+    {
+      "id": "bylem-w-kinie",
+      "text": "Byłem w kinie."
+    },
+    {
+      "id": "byles",
+      "text": "byłeś"
+    },
+    {
+      "id": "byles-tu-kiedys",
+      "text": "byłeś tu kiedyś?"
+    },
+    {
+      "id": "byles-tutaj-kiedys",
+      "text": "byłeś tutaj kiedyś?"
+    },
+    {
+      "id": "byli",
+      "text": "byli"
+    },
+    {
+      "id": "byli-na-meczu",
+      "text": "byli na meczu"
+    },
+    {
+      "id": "byliscie",
+      "text": "byliście"
+    },
+    {
+      "id": "bylismy",
+      "text": "byliśmy"
+    },
+    {
+      "id": "bylismy-na-imprezie",
+      "text": "byliśmy na imprezie"
+    },
+    {
+      "id": "bylismy-pierwszy-raz-na-meczu",
+      "text": "Byliśmy pierwszy raz na meczu."
+    },
+    {
+      "id": "bylo",
+      "text": "było"
+    },
+    {
+      "id": "bylo-bardzo-ladnie",
+      "text": "Było bardzo ładnie."
+    },
+    {
+      "id": "bylo-ladnie",
+      "text": "było ładnie"
+    },
+    {
+      "id": "bylo-wspaniale",
+      "text": "było wspaniale!"
+    },
+    {
+      "id": "byly",
+      "text": "były"
+    },
+    {
+      "id": "bylyscie",
+      "text": "byłyście"
+    },
+    {
+      "id": "bylysmy",
+      "text": "byłyśmy"
+    },
+    {
+      "id": "bylysmy-w-kinie",
+      "text": "byłyśmy w kinie"
+    },
+    {
+      "id": "caly-dzien",
+      "text": "Cały dzień?"
+    },
+    {
       "id": "ce",
       "text": "ce"
     },
@@ -921,6 +1137,10 @@
       "text": "chce iść na zakupy"
     },
     {
+      "id": "chce-odwiedzic-krakow",
+      "text": "chcę odwiedzić Kraków"
+    },
+    {
       "id": "chce-pizze-z-pieczarkami",
       "text": "Chcę pizzę z pieczarkami."
     },
@@ -937,8 +1157,32 @@
       "text": "Chcesz pójść do kawiarni?"
     },
     {
+      "id": "chcialem",
+      "text": "chciałem"
+    },
+    {
+      "id": "chcialem-dobrze",
+      "text": "chciałem dobrze!"
+    },
+    {
+      "id": "chcialem-zrobic-zdjecie",
+      "text": "Chciałem zrobić zdjęcie."
+    },
+    {
       "id": "chciec",
       "text": "chcieć"
+    },
+    {
+      "id": "chcieliscie",
+      "text": "chcieliście"
+    },
+    {
+      "id": "chcieliscie-isc-do-kina",
+      "text": "chcieliście iść do kina?"
+    },
+    {
+      "id": "chcieliscie-pizze-czy-zupe",
+      "text": "Chcieliście pizzę czy zupę?"
     },
     {
       "id": "chetnie",
@@ -1027,6 +1271,10 @@
     {
       "id": "chodzic",
       "text": "chodzić"
+    },
+    {
+      "id": "chodzilem",
+      "text": "chodziłem"
     },
     {
       "id": "chodzimy",
@@ -1173,6 +1421,10 @@
       "text": "co gotujemy?"
     },
     {
+      "id": "co-jedliscie",
+      "text": "co jedliście?"
+    },
+    {
       "id": "co-jest-dzis-na-obiad",
       "text": "Co jest dziś na obiad?"
     },
@@ -1289,6 +1541,14 @@
       "text": "Co robicie w weekend?"
     },
     {
+      "id": "co-robilas-w-weekend",
+      "text": "co robiłaś w weekend?"
+    },
+    {
+      "id": "co-robiles-w-niedziele",
+      "text": "Co robiłeś w niedzielę?"
+    },
+    {
       "id": "co-robimy-w-weekend",
       "text": "Co robimy w weekend?"
     },
@@ -1311,6 +1571,10 @@
     {
       "id": "co-robisz-w-weekend",
       "text": "Co robisz w weekend?"
+    },
+    {
+      "id": "co-sie-stalo-w-muzeum",
+      "text": "Co się stało w muzeum?"
     },
     {
       "id": "co-slychac",
@@ -1601,12 +1865,20 @@
       "text": "cześć, ja jestem Ewa"
     },
     {
+      "id": "czesc-jak-bylo-w-weekend",
+      "text": "Cześć! Jak było w weekend?"
+    },
+    {
       "id": "czesc-jak-masz-na-imie",
       "text": "Cześć! Jak masz na imię?"
     },
     {
       "id": "czesc-jak-sie-nazywasz",
       "text": "cześć, jak się nazywasz?"
+    },
+    {
+      "id": "czesc-jak-weekend",
+      "text": "Cześć! Jak weekend?"
     },
     {
       "id": "czesc-jestem-adam",
@@ -1687,6 +1959,10 @@
     {
       "id": "czesto",
       "text": "często"
+    },
+    {
+      "id": "czesto-chodzilam-do-kina",
+      "text": "często chodziłam do kina"
     },
     {
       "id": "czesto-gotuje",
@@ -1805,6 +2081,10 @@
       "text": "Czy Adam to lekarz?"
     },
     {
+      "id": "czy-byles-tu-kiedys",
+      "text": "czy byłeś tu kiedyś?"
+    },
+    {
       "id": "czy-chcesz-dzisiaj-grac",
       "text": "Czy chcesz dzisiaj grać?"
     },
@@ -1907,6 +2187,10 @@
     {
       "id": "czy-mowisz-po-niemiecku",
       "text": "czy mówisz po niemiecku?"
+    },
+    {
+      "id": "czy-one-byly-na-meczu",
+      "text": "czy one były na meczu?"
     },
     {
       "id": "czy-oni-sa-tutaj",
@@ -2189,6 +2473,10 @@
       "text": "czytać"
     },
     {
+      "id": "czytalem",
+      "text": "czytałem"
+    },
+    {
       "id": "czytam",
       "text": "czytam"
     },
@@ -2337,6 +2625,10 @@
       "text": "Dlaczego nie możesz?"
     },
     {
+      "id": "dlaczego-nie-odpisywales",
+      "text": "Dlaczego nie odpisywałeś?"
+    },
+    {
       "id": "dlaczego-ona-uczy-sie-polskiego",
       "text": "dlaczego ona uczy się polskiego?"
     },
@@ -2371,6 +2663,10 @@
     {
       "id": "dlugopis-i-ksiazka",
       "text": "długopis i książka"
+    },
+    {
+      "id": "dni",
+      "text": "dni"
     },
     {
       "id": "dni-tygodnia",
@@ -2577,6 +2873,10 @@
       "text": "Dokąd idziesz? Do teatru."
     },
     {
+      "id": "dokad-poszliscie",
+      "text": "dokąd poszliście?"
+    },
+    {
       "id": "dopasowac",
       "text": "dopasować"
     },
@@ -2659,6 +2959,10 @@
     {
       "id": "dwa",
       "text": "dwa"
+    },
+    {
+      "id": "dwa-dni-temu-bylem-w-domu",
+      "text": "dwa dni temu byłem w domu"
     },
     {
       "id": "dwa-kilo-ziemniakow",
@@ -3421,6 +3725,10 @@
       "text": "Ewa bardzo dobrze tańczy."
     },
     {
+      "id": "ewa-byla-w-domu",
+      "text": "Ewa była w domu."
+    },
+    {
       "id": "ewa-chce-isc-na-kawe",
       "text": "Ewa chce iść na kawę."
     },
@@ -3431,6 +3739,10 @@
     {
       "id": "ewa-chce-pizze-z-oliwkami",
       "text": "Ewa chce pizzę z oliwkami."
+    },
+    {
+      "id": "ewa-chciala-zupe-ale-chlopcy-woleli-pizze",
+      "text": "Ewa chciała zupę, ale chłopcy woleli pizzę."
     },
     {
       "id": "ewa-co-czytasz",
@@ -3657,6 +3969,10 @@
       "text": "film"
     },
     {
+      "id": "film-byl-swietny",
+      "text": "Film był świetny!"
+    },
+    {
       "id": "fioletowy",
       "text": "fioletowy"
     },
@@ -3699,6 +4015,34 @@
     {
       "id": "gdzie",
       "text": "gdzie"
+    },
+    {
+      "id": "gdzie-byl-adam",
+      "text": "Gdzie był Adam?"
+    },
+    {
+      "id": "gdzie-bylas",
+      "text": "gdzie byłaś?"
+    },
+    {
+      "id": "gdzie-byles-w-zeszla-sobote",
+      "text": "Gdzie byłeś w zeszłą sobotę?"
+    },
+    {
+      "id": "gdzie-byles-w-zeszlym-tygodniu",
+      "text": "gdzie byłeś w zeszłym tygodniu?"
+    },
+    {
+      "id": "gdzie-byles-wczoraj",
+      "text": "Gdzie byłeś wczoraj?"
+    },
+    {
+      "id": "gdzie-byliscie-bylismy-na-treningu",
+      "text": "Gdzie byliście? Byliśmy na treningu."
+    },
+    {
+      "id": "gdzie-bylyscie",
+      "text": "gdzie byłyście?"
     },
     {
       "id": "gdzie-jest-bankomat",
@@ -3785,6 +4129,18 @@
       "text": "gdzie państwo są?"
     },
     {
+      "id": "gdzie-poszlas-wczoraj",
+      "text": "Gdzie poszłaś wczoraj?"
+    },
+    {
+      "id": "gdzie-poszliscie",
+      "text": "gdzie poszliście?"
+    },
+    {
+      "id": "gdzie-poszliscie-wczoraj",
+      "text": "Gdzie poszliście wczoraj?"
+    },
+    {
       "id": "gdzie-pracujesz",
       "text": "gdzie pracujesz?"
     },
@@ -3831,6 +4187,10 @@
     {
       "id": "glodny",
       "text": "głodny"
+    },
+    {
+      "id": "glosno",
+      "text": "głośno"
     },
     {
       "id": "godzina",
@@ -3947,6 +4307,18 @@
     {
       "id": "grac",
       "text": "grać"
+    },
+    {
+      "id": "gralam",
+      "text": "grałam"
+    },
+    {
+      "id": "gralem-w-karty",
+      "text": "grałem w karty"
+    },
+    {
+      "id": "gralem-w-tenisa-a-potem-czytalem",
+      "text": "Grałem w tenisa, a potem czytałem."
     },
     {
       "id": "gram",
@@ -4123,6 +4495,10 @@
     {
       "id": "i",
       "text": "i"
+    },
+    {
+      "id": "i-co",
+      "text": "I co?"
     },
     {
       "id": "i-drozdzowka-na-sniadanie",
@@ -4441,6 +4817,10 @@
       "text": "ja"
     },
     {
+      "id": "ja-bylam-w-domu",
+      "text": "Ja byłam w domu."
+    },
+    {
       "id": "ja-chodze-do-szkoly",
       "text": "Ja chodzę do szkoły."
     },
@@ -4569,6 +4949,10 @@
       "text": "Ja nie lubię czytać."
     },
     {
+      "id": "ja-nie-mialem-czasu-na-obiad",
+      "text": "Ja nie miałem czasu na obiad."
+    },
+    {
       "id": "ja-nie-pije-ani-soku-ani-kompotu",
       "text": "ja nie piję ani soku, ani kompotu"
     },
@@ -4613,6 +4997,10 @@
       "text": "Ja robię test."
     },
     {
+      "id": "ja-spalam",
+      "text": "Ja spałam!"
+    },
+    {
       "id": "ja-szukam-informacji",
       "text": "ja szukam informacji"
     },
@@ -4639,6 +5027,10 @@
     {
       "id": "ja-tez-mysle-ze-on-tez-jest-wysportowany",
       "text": "Ja też! Myślę, że on też jest wysportowany."
+    },
+    {
+      "id": "ja-tez-nie-ale-byl-ciekawy",
+      "text": "Ja też nie, ale był ciekawy!"
     },
     {
       "id": "ja-tez-troche-kim-jestes-z-zawodu",
@@ -4685,6 +5077,22 @@
       "text": "jabłkowy"
     },
     {
+      "id": "jadl",
+      "text": "jadł"
+    },
+    {
+      "id": "jadlas-juz-obiad",
+      "text": "Jadłaś już obiad?"
+    },
+    {
+      "id": "jadlem",
+      "text": "jadłem"
+    },
+    {
+      "id": "jadles",
+      "text": "jadłeś"
+    },
+    {
       "id": "jagody",
       "text": "jagody"
     },
@@ -4723,6 +5131,22 @@
     {
       "id": "jak",
       "text": "jak"
+    },
+    {
+      "id": "jak-bylo",
+      "text": "jak było?"
+    },
+    {
+      "id": "jak-bylo-na-imprezie",
+      "text": "jak było na imprezie?"
+    },
+    {
+      "id": "jak-bylo-na-treningu",
+      "text": "Jak było na treningu?"
+    },
+    {
+      "id": "jak-bylo-w-galerii",
+      "text": "Jak było w galerii?"
     },
     {
       "id": "jak-czesto",
@@ -5085,6 +5509,22 @@
       "text": "jedenasta"
     },
     {
+      "id": "jedli",
+      "text": "jedli"
+    },
+    {
+      "id": "jedliscie",
+      "text": "jedliście"
+    },
+    {
+      "id": "jedlismy",
+      "text": "jedliśmy"
+    },
+    {
+      "id": "jedlismy-pizze",
+      "text": "jedliśmy pizzę"
+    },
+    {
       "id": "jedna",
       "text": "jedna"
     },
@@ -5107,6 +5547,10 @@
     {
       "id": "jedno-piwo-dwa-piwa",
       "text": "Jedno piwo, dwa piwa."
+    },
+    {
+      "id": "jednoczesnie",
+      "text": "jednocześnie"
     },
     {
       "id": "jedzenie",
@@ -5397,6 +5841,10 @@
       "text": "jestem stuprocentową Polką"
     },
     {
+      "id": "jestem-tu-pierwszy-raz",
+      "text": "jestem tu pierwszy raz"
+    },
+    {
       "id": "jestem-tutaj",
       "text": "jestem tutaj"
     },
@@ -5485,8 +5933,16 @@
       "text": "jesteś głodna?"
     },
     {
+      "id": "jestes-glodny",
+      "text": "Jesteś głodny?"
+    },
+    {
       "id": "jestes-lekarka-to-ciekawe",
       "text": "Jesteś lekarką? To ciekawe!"
+    },
+    {
+      "id": "jestes-nareszcie",
+      "text": "jesteś nareszcie!"
     },
     {
       "id": "jestes-tutaj",
@@ -5689,6 +6145,10 @@
       "text": "karta pamięci"
     },
     {
+      "id": "kartka",
+      "text": "kartka"
+    },
+    {
       "id": "kasa",
       "text": "kasa"
     },
@@ -5833,6 +6293,18 @@
       "text": "kiedy"
     },
     {
+      "id": "kiedy-bylam-mala-rzadko-chodzilam-do-kina",
+      "text": "Kiedy byłam mała, rzadko chodziłam do kina."
+    },
+    {
+      "id": "kiedy-bylas-na-treningu",
+      "text": "Kiedy byłaś na treningu?"
+    },
+    {
+      "id": "kiedy-bylem-maly-czesto-chodzilem-do-kina",
+      "text": "kiedy byłem mały, często chodziłem do kina"
+    },
+    {
       "id": "kiedy-jest-film",
       "text": "Kiedy jest film?"
     },
@@ -5849,8 +6321,24 @@
       "text": "Kiedy masz czas?"
     },
     {
+      "id": "kiedy-ostatnio-byles-w-kinie",
+      "text": "Kiedy ostatnio byłeś w kinie?"
+    },
+    {
       "id": "kiedy-pracujesz",
       "text": "Kiedy pracujesz?"
+    },
+    {
+      "id": "kiedy-szedlem-do-domu-padal-deszcz",
+      "text": "Kiedy szedłem do domu, padał deszcz."
+    },
+    {
+      "id": "kiedy-szlam-do-kina-padal-deszcz",
+      "text": "Kiedy szłam do kina, padał deszcz."
+    },
+    {
+      "id": "kiedys",
+      "text": "kiedyś"
     },
     {
       "id": "kielbasa",
@@ -5867,6 +6355,10 @@
     {
       "id": "kielbasa-jest-tlusta",
       "text": "kiełbasa jest tłusta"
+    },
+    {
+      "id": "kilka-godzin",
+      "text": "kilka godzin"
     },
     {
       "id": "kilo",
@@ -6213,6 +6705,14 @@
       "text": "kupić"
     },
     {
+      "id": "kupilam",
+      "text": "kupiłam"
+    },
+    {
+      "id": "kupilam-sweter",
+      "text": "kupiłam sweter"
+    },
+    {
       "id": "kupon",
       "text": "kupon"
     },
@@ -6367,6 +6867,14 @@
     {
       "id": "ladne-zdjecie-i-ladna-rodzina",
       "text": "Ładne zdjęcie i ładna rodzina!"
+    },
+    {
+      "id": "ladnie",
+      "text": "ładnie"
+    },
+    {
+      "id": "ladnie-prosilam",
+      "text": "ładnie prosiłam"
     },
     {
       "id": "ladny",
@@ -6723,6 +7231,10 @@
     {
       "id": "lubisz-wolowine",
       "text": "Lubisz wołowinę?"
+    },
+    {
+      "id": "ludzie-smiali-sie-glosno-ale-wstyd",
+      "text": "Ludzie śmiali się głośno. Ale wstyd!"
     },
     {
       "id": "lyzeczka",
@@ -7133,6 +7645,14 @@
       "text": "mama tutaj jest"
     },
     {
+      "id": "mama-ugotowala-obiad",
+      "text": "mama ugotowała obiad"
+    },
+    {
+      "id": "mama-ugotowala-obiad-2",
+      "text": "Mama ugotowała obiad."
+    },
+    {
       "id": "mamy",
       "text": "mamy"
     },
@@ -7175,6 +7695,18 @@
     {
       "id": "marta-jest-panna",
       "text": "Marta jest panną?"
+    },
+    {
+      "id": "martwilismy-sie",
+      "text": "martwiliśmy się"
+    },
+    {
+      "id": "martwilismy-sie-nie-odbieralas-telefonu",
+      "text": "Martwiliśmy się! Nie odbierałaś telefonu."
+    },
+    {
+      "id": "marzenie",
+      "text": "marzenie"
     },
     {
       "id": "maslo",
@@ -7305,8 +7837,32 @@
       "text": "mężem"
     },
     {
+      "id": "mial",
+      "text": "miał"
+    },
+    {
+      "id": "mialem",
+      "text": "miałem"
+    },
+    {
+      "id": "mialysmy-test",
+      "text": "miałyśmy test"
+    },
+    {
       "id": "miekki",
       "text": "miękki"
+    },
+    {
+      "id": "mielismy",
+      "text": "mieliśmy"
+    },
+    {
+      "id": "miesiac",
+      "text": "miesiąc"
+    },
+    {
+      "id": "miesiac-temu-bylam-na-meczu",
+      "text": "Miesiąc temu byłam na meczu."
     },
     {
       "id": "mieso",
@@ -7957,6 +8513,18 @@
       "text": "Musi też kupić album."
     },
     {
+      "id": "musialam-isc-do-domu",
+      "text": "musiałam iść do domu"
+    },
+    {
+      "id": "musialam-wczoraj-pracowac",
+      "text": "musiałam wczoraj pracować"
+    },
+    {
+      "id": "musialem",
+      "text": "musiałem"
+    },
+    {
       "id": "musiec",
       "text": "musieć"
     },
@@ -8077,6 +8645,18 @@
       "text": "myjesz zęby"
     },
     {
+      "id": "myslalam",
+      "text": "myślałam"
+    },
+    {
+      "id": "myslalam-ze-byles-w-domu",
+      "text": "myślałam, że byłeś w domu"
+    },
+    {
+      "id": "myslalam-ze-byles-w-domu-2",
+      "text": "Myślałam, że byłeś w domu."
+    },
+    {
       "id": "mysle",
       "text": "myślę"
     },
@@ -8161,6 +8741,10 @@
       "text": "na imię mam Ewa"
     },
     {
+      "id": "na-imprezie",
+      "text": "na imprezie"
+    },
+    {
       "id": "na-jakie-nazwisko",
       "text": "Na jakie nazwisko?"
     },
@@ -8199,6 +8783,10 @@
     {
       "id": "na-mecz",
       "text": "na mecz"
+    },
+    {
+      "id": "na-meczu",
+      "text": "na meczu"
     },
     {
       "id": "na-miekko",
@@ -8261,8 +8849,20 @@
       "text": "na pianinie"
     },
     {
+      "id": "na-piechote",
+      "text": "na piechotę"
+    },
+    {
+      "id": "na-policje",
+      "text": "na policję"
+    },
+    {
       "id": "na-prawo",
       "text": "na prawo"
+    },
+    {
+      "id": "na-premiere",
+      "text": "na premierę"
     },
     {
       "id": "na-przedstawienie",
@@ -8333,12 +8933,20 @@
       "text": "na spacery"
     },
     {
+      "id": "na-stole-jest-tylko-kartka",
+      "text": "Na stole jest tylko kartka."
+    },
+    {
       "id": "na-stole-sa-owoce",
       "text": "Na stole są owoce."
     },
     {
       "id": "na-targu",
       "text": "na targu"
+    },
+    {
+      "id": "na-treningu",
+      "text": "na treningu"
     },
     {
       "id": "na-twardo",
@@ -8389,6 +8997,22 @@
       "text": "Najpierw się budzę."
     },
     {
+      "id": "najpierw-wstalam",
+      "text": "Najpierw wstałam."
+    },
+    {
+      "id": "najpierw-wstalam-nastepnie-zjadlam-sniadanie",
+      "text": "Najpierw wstałam, następnie zjadłam śniadanie."
+    },
+    {
+      "id": "najpierw-wstalem-nastepnie-umylem-zeby",
+      "text": "najpierw wstałem, następnie umyłem zęby"
+    },
+    {
+      "id": "najpierw-wstalem-potem-umylem-zeby",
+      "text": "najpierw wstałem, potem umyłem zęby"
+    },
+    {
       "id": "najpierw-zupa-potem-ryba",
       "text": "najpierw zupa, potem ryba"
     },
@@ -8425,8 +9049,32 @@
       "text": "Napoje są tutaj."
     },
     {
+      "id": "naprawde",
+      "text": "Naprawdę?"
+    },
+    {
       "id": "nareszcie",
       "text": "nareszcie"
+    },
+    {
+      "id": "nareszcie-jestes",
+      "text": "nareszcie jesteś!"
+    },
+    {
+      "id": "nareszcie-jestes-gdzie-bylas",
+      "text": "Nareszcie jesteś! Gdzie byłaś?"
+    },
+    {
+      "id": "nareszcie-jestes-tu",
+      "text": "nareszcie jesteś tu!"
+    },
+    {
+      "id": "nareszcie-martwilysmy-sie",
+      "text": "nareszcie! martwiłyśmy się"
+    },
+    {
+      "id": "nareszcie-tu-jestes",
+      "text": "nareszcie tu jesteś!"
     },
     {
       "id": "nareszcie-weekend",
@@ -8435,6 +9083,14 @@
     {
       "id": "narodowosc",
       "text": "narodowość"
+    },
+    {
+      "id": "nastepnie",
+      "text": "następnie"
+    },
+    {
+      "id": "nastepnie-zjadlam-sniadanie",
+      "text": "Następnie zjadłam śniadanie."
     },
     {
       "id": "nasz",
@@ -8589,6 +9245,14 @@
       "text": "Nie, bez cukru."
     },
     {
+      "id": "nie-bylem-w-domu-spalem-i-czytalem",
+      "text": "Nie, byłem w domu. Spałem i czytałem."
+    },
+    {
+      "id": "nie-chcialem-zobaczyc-obrazy",
+      "text": "Nie, chciałem zobaczyć obrazy."
+    },
+    {
       "id": "nie-dam-rady",
       "text": "nie dam rady"
     },
@@ -8607,6 +9271,14 @@
     {
       "id": "nie-dziekuje-poprosze-rachunek",
       "text": "Nie, dziękuję. Poproszę rachunek."
+    },
+    {
+      "id": "nie-jadlem-godzine-temu",
+      "text": "Nie, jadłem godzinę temu."
+    },
+    {
+      "id": "nie-jadlem-i-jestem-glodny",
+      "text": "Nie jadłem i jestem głodny!"
     },
     {
       "id": "nie-jem-chleba",
@@ -8635,6 +9307,10 @@
     {
       "id": "nie-jestem-polakiem-jestem-anglikiem",
       "text": "nie jestem Polakiem, jestem Anglikiem"
+    },
+    {
+      "id": "nie-jestem-tu-pierwszy-raz",
+      "text": "Nie, jestem tu pierwszy raz."
     },
     {
       "id": "nie-jestem-z-anglii-a-ty",
@@ -8785,6 +9461,10 @@
       "text": "Nie masz chleba."
     },
     {
+      "id": "nie-mialem-zasiegu",
+      "text": "Nie miałem zasięgu."
+    },
+    {
       "id": "nie-moge-dzisiaj",
       "text": "nie mogę dzisiaj"
     },
@@ -8813,8 +9493,20 @@
       "text": "Nie, nie umiem śpiewać."
     },
     {
+      "id": "nie-odbierales-telefonu",
+      "text": "Nie odbierałeś telefonu!"
+    },
+    {
+      "id": "nie-odpisywalas",
+      "text": "nie odpisywałaś!"
+    },
+    {
       "id": "nie-pamietam",
       "text": "nie pamiętam"
+    },
+    {
+      "id": "nie-pamietam-2",
+      "text": "Nie pamiętam!"
     },
     {
       "id": "nie-pamietam-jak-to-sie-nazywa",
@@ -8883,6 +9575,10 @@
     {
       "id": "nie-place-gotowka",
       "text": "Nie, płacę gotówką."
+    },
+    {
+      "id": "nie-rozumiales-zupelnie-nic",
+      "text": "nie rozumiałeś zupełnie nic?"
     },
     {
       "id": "nie-rozumiem",
@@ -8961,6 +9657,10 @@
       "text": "Nie umiem śpiewać, ale lubię tańczyć."
     },
     {
+      "id": "nie-wiedzialem",
+      "text": "nie wiedziałem"
+    },
+    {
       "id": "nie-wiem",
       "text": "nie wiem"
     },
@@ -9007,6 +9707,10 @@
     {
       "id": "nie-zielony",
       "text": "Nie, zielony."
+    },
+    {
+      "id": "nie-zupelnie-nic",
+      "text": "Nie, zupełnie nic!"
     },
     {
       "id": "nie-zyje",
@@ -9353,8 +10057,24 @@
       "text": "Obiad jest o pierwszej."
     },
     {
+      "id": "obraz",
+      "text": "obraz"
+    },
+    {
       "id": "och-pieknie-pachnie",
       "text": "Och, pięknie pachnie!"
+    },
+    {
+      "id": "ochrona",
+      "text": "ochrona"
+    },
+    {
+      "id": "ochrona-chce-zadzwonic-na-policje",
+      "text": "ochrona chce zadzwonić na policję"
+    },
+    {
+      "id": "ochrona-chciala-zadzwonic-na-policje",
+      "text": "Ochrona chciała zadzwonić na policję!"
     },
     {
       "id": "oczywiscie",
@@ -9397,6 +10117,14 @@
       "text": "od siódmej do siedemnastej"
     },
     {
+      "id": "odbierales",
+      "text": "odbierałeś"
+    },
+    {
+      "id": "odpisywales",
+      "text": "odpisywałeś"
+    },
+    {
       "id": "odpoczac",
       "text": "odpocząć"
     },
@@ -9409,6 +10137,10 @@
       "text": "odpoczywam wieczorem"
     },
     {
+      "id": "odwiedzic",
+      "text": "odwiedzić"
+    },
+    {
       "id": "oglada",
       "text": "ogląda"
     },
@@ -9419,6 +10151,14 @@
     {
       "id": "ogladac",
       "text": "oglądać"
+    },
+    {
+      "id": "ogladalam",
+      "text": "oglądałam"
+    },
+    {
+      "id": "ogladalam-polski-film",
+      "text": "oglądałam polski film"
     },
     {
       "id": "ogladam",
@@ -9503,6 +10243,10 @@
     {
       "id": "on-bardzo-lubi-czytac",
       "text": "On bardzo lubi czytać."
+    },
+    {
+      "id": "on-byl",
+      "text": "on był"
     },
     {
       "id": "on-chodzi-do-szkoly",
@@ -9681,6 +10425,14 @@
       "text": "ona"
     },
     {
+      "id": "ona-byla",
+      "text": "ona była"
+    },
+    {
+      "id": "ona-byla-w-kinie",
+      "text": "ona była w kinie"
+    },
+    {
       "id": "ona-chce-isc-na-zakupy",
       "text": "ona chce iść na zakupy"
     },
@@ -9691,6 +10443,10 @@
     {
       "id": "ona-interesuje-sie-moda",
       "text": "ona interesuje się modą"
+    },
+    {
+      "id": "ona-jadla-sushi",
+      "text": "ona jadła sushi"
     },
     {
       "id": "ona-jest-chora",
@@ -9801,6 +10557,10 @@
       "text": "Ona myśli, że on jest sympatyczny."
     },
     {
+      "id": "ona-poszla-spac",
+      "text": "ona poszła spać"
+    },
+    {
       "id": "ona-pracuje-w-restauracji-jest-kelnerka",
       "text": "Ona pracuje w restauracji, jest kelnerką."
     },
@@ -9825,6 +10585,10 @@
       "text": "one"
     },
     {
+      "id": "one-byly",
+      "text": "one były"
+    },
+    {
       "id": "one-sa-tam",
       "text": "one są tam"
     },
@@ -9835,6 +10599,10 @@
     {
       "id": "one-sa-tutaj",
       "text": "one są tutaj"
+    },
+    {
+      "id": "one-smialy-sie-glosno",
+      "text": "one śmiały się głośno"
     },
     {
       "id": "one-tam-sa",
@@ -9853,6 +10621,14 @@
       "text": "oni"
     },
     {
+      "id": "oni-byli",
+      "text": "oni byli"
+    },
+    {
+      "id": "oni-byli-na-meczu",
+      "text": "oni byli na meczu"
+    },
+    {
       "id": "oni-chodza-do-szkoly",
       "text": "Oni chodzą do szkoły."
     },
@@ -9863,6 +10639,10 @@
     {
       "id": "oni-gotuja-pierogi",
       "text": "oni gotują pierogi"
+    },
+    {
+      "id": "oni-jedli-lody",
+      "text": "oni jedli lody"
     },
     {
       "id": "oni-jezdza-konno",
@@ -9885,6 +10665,10 @@
       "text": "oni mieszkają w Berlinie"
     },
     {
+      "id": "oni-poszli-na-spacer",
+      "text": "oni poszli na spacer"
+    },
+    {
       "id": "oni-sa-tutaj",
       "text": "oni są tutaj"
     },
@@ -9903,6 +10687,10 @@
     {
       "id": "oni-umieja-gotowac",
       "text": "oni umieją gotować"
+    },
+    {
+      "id": "oni-woleli-kawe",
+      "text": "oni woleli kawę"
     },
     {
       "id": "ono",
@@ -9993,6 +10781,14 @@
       "text": "ósma"
     },
     {
+      "id": "ostatnio",
+      "text": "ostatnio"
+    },
+    {
+      "id": "ostatnio-rok-temu",
+      "text": "Ostatnio? Rok temu!"
+    },
+    {
       "id": "ostry",
       "text": "ostry"
     },
@@ -10047,6 +10843,10 @@
     {
       "id": "pachnie",
       "text": "pachnie"
+    },
+    {
+      "id": "padal-deszcz",
+      "text": "padał deszcz"
     },
     {
       "id": "pamietam",
@@ -10147,6 +10947,10 @@
     {
       "id": "piec-cztery-trzy-dwa-jeden-zero",
       "text": "pięć, cztery, trzy, dwa, jeden, zero"
+    },
+    {
+      "id": "piec-lat-temu",
+      "text": "pięć lat temu"
     },
     {
       "id": "piec-minus-jeden-jest-cztery",
@@ -10257,6 +11061,10 @@
       "text": "pięknie"
     },
     {
+      "id": "piekny",
+      "text": "piękny"
+    },
+    {
       "id": "pieniadze",
       "text": "pieniądze"
     },
@@ -10295,6 +11103,10 @@
     {
       "id": "pierwsze-danie-to-zupa-2",
       "text": "pierwsze danie to zupa"
+    },
+    {
+      "id": "pierwszy-raz",
+      "text": "pierwszy raz"
     },
     {
       "id": "pietnascie",
@@ -10537,6 +11349,18 @@
       "text": "podróżować"
     },
     {
+      "id": "pogoda",
+      "text": "pogoda"
+    },
+    {
+      "id": "pogoda-byla-swietna",
+      "text": "pogoda była świetna"
+    },
+    {
+      "id": "pogoda-byla-swietna-2",
+      "text": "Pogoda była świetna."
+    },
+    {
       "id": "pojsc",
       "text": "pójść"
     },
@@ -10597,8 +11421,16 @@
       "text": "polski"
     },
     {
+      "id": "polski-film-byl-bardzo-ciekawy",
+      "text": "Polski film. Był bardzo ciekawy!"
+    },
+    {
       "id": "polskiego",
       "text": "polskiego"
+    },
+    {
+      "id": "pomagalam",
+      "text": "pomagałam"
     },
     {
       "id": "pomarancza",
@@ -10713,6 +11545,54 @@
       "text": "posłuchać"
     },
     {
+      "id": "poszedl",
+      "text": "poszedł"
+    },
+    {
+      "id": "poszedlem",
+      "text": "poszedłem"
+    },
+    {
+      "id": "poszedles",
+      "text": "poszedłeś"
+    },
+    {
+      "id": "poszlam-do-kina",
+      "text": "poszłam do kina"
+    },
+    {
+      "id": "poszlam-wczoraj-na-premiere",
+      "text": "poszłam wczoraj na premierę"
+    },
+    {
+      "id": "poszli",
+      "text": "poszli"
+    },
+    {
+      "id": "poszli-na-spacer",
+      "text": "poszli na spacer"
+    },
+    {
+      "id": "poszliscie",
+      "text": "poszliście"
+    },
+    {
+      "id": "poszlismy",
+      "text": "poszliśmy"
+    },
+    {
+      "id": "poszlismy-na-mecz",
+      "text": "Poszliśmy na mecz."
+    },
+    {
+      "id": "poszly-do-kina",
+      "text": "Poszły do kina."
+    },
+    {
+      "id": "poszlysmy-na-zakupy",
+      "text": "poszłyśmy na zakupy"
+    },
+    {
       "id": "potanczyc",
       "text": "potańczyć"
     },
@@ -10737,6 +11617,10 @@
       "text": "Potem sprawdzam coś w telefonie i piję kawę."
     },
     {
+      "id": "potem-umylam-zeby",
+      "text": "Potem umyłam zęby."
+    },
+    {
       "id": "potem-wstaje-i-biore-prysznic",
       "text": "Potem wstaję i biorę prysznic."
     },
@@ -10757,12 +11641,20 @@
       "text": "powtórzyć"
     },
     {
+      "id": "poznalam",
+      "text": "poznałam"
+    },
+    {
       "id": "pozniej",
       "text": "później"
     },
     {
       "id": "pozniej-jest-przerwa",
       "text": "później jest przerwa"
+    },
+    {
+      "id": "pozniej-poszlam-do-szkoly",
+      "text": "Później poszłam do szkoły."
     },
     {
       "id": "pozniej-pracuje-zdalnie",
@@ -10783,6 +11675,18 @@
     {
       "id": "pracowac",
       "text": "pracować"
+    },
+    {
+      "id": "pracowalam-w-sobote",
+      "text": "pracowałam w sobotę"
+    },
+    {
+      "id": "pracowalem",
+      "text": "pracowałem"
+    },
+    {
+      "id": "pracowalem-w-sobote",
+      "text": "pracowałem w sobotę"
     },
     {
       "id": "pracowity",
@@ -10871,6 +11775,18 @@
     {
       "id": "promocja",
       "text": "promocja"
+    },
+    {
+      "id": "prosilam-ladnie",
+      "text": "prosiłam ładnie"
+    },
+    {
+      "id": "prosilem",
+      "text": "prosiłem"
+    },
+    {
+      "id": "prosilem-ladnie-ale-ochrona-chciala-zadzwonic-na",
+      "text": "Prosiłem ładnie, ale ochrona chciała zadzwonić na policję."
     },
     {
       "id": "prosze",
@@ -11141,6 +12057,10 @@
       "text": "przeczytać"
     },
     {
+      "id": "przed-komputerem",
+      "text": "przed komputerem"
+    },
+    {
       "id": "przed-poludniem",
       "text": "przed południem"
     },
@@ -11159,6 +12079,14 @@
     {
       "id": "przedstawic-sie",
       "text": "przedstawić się"
+    },
+    {
+      "id": "przedwczoraj",
+      "text": "przedwczoraj"
+    },
+    {
+      "id": "przedwczoraj-2",
+      "text": "Przedwczoraj."
     },
     {
       "id": "przeliterowac",
@@ -11203,6 +12131,10 @@
     {
       "id": "przepraszam-tylko-gotowka",
       "text": "Przepraszam, tylko gotówką!"
+    },
+    {
+      "id": "przepraszam-w-gorach-bylo-wspaniale",
+      "text": "Przepraszam! W górach było wspaniale."
     },
     {
       "id": "przepraszamy",
@@ -11393,6 +12325,10 @@
       "text": "Robię zakupy i spotykam się ze znajomymi."
     },
     {
+      "id": "robilas",
+      "text": "robiłaś"
+    },
+    {
       "id": "robimy",
       "text": "robimy"
     },
@@ -11463,6 +12399,14 @@
     {
       "id": "rozowy",
       "text": "różowy"
+    },
+    {
+      "id": "rozumialas",
+      "text": "rozumiałaś"
+    },
+    {
+      "id": "rozumialas-ten-film",
+      "text": "Rozumiałaś ten film?"
     },
     {
       "id": "rozumiem",
@@ -11685,6 +12629,18 @@
       "text": "siedemset"
     },
     {
+      "id": "siedzialam-przed-komputerem",
+      "text": "siedziałam przed komputerem"
+    },
+    {
+      "id": "siedzialem",
+      "text": "siedziałem"
+    },
+    {
+      "id": "siedzialem-przed-komputerem",
+      "text": "Siedziałem przed komputerem."
+    },
+    {
       "id": "siodma",
       "text": "siódma"
     },
@@ -11849,6 +12805,10 @@
       "text": "smażony"
     },
     {
+      "id": "smiali-sie",
+      "text": "śmiali się"
+    },
+    {
       "id": "smietana",
       "text": "śmietana"
     },
@@ -11929,6 +12889,14 @@
       "text": "spaghetti"
     },
     {
+      "id": "spalam",
+      "text": "spałam"
+    },
+    {
+      "id": "spedzilam",
+      "text": "spędziłam"
+    },
+    {
       "id": "spektakl",
       "text": "spektakl"
     },
@@ -11947,6 +12915,10 @@
     {
       "id": "spisz",
       "text": "śpisz"
+    },
+    {
+      "id": "spokojny",
+      "text": "spokojny"
     },
     {
       "id": "spontaniczny",
@@ -12149,12 +13121,28 @@
       "text": "surowy"
     },
     {
+      "id": "sushi",
+      "text": "sushi"
+    },
+    {
+      "id": "sushi-bylam-w-restauracji-z-adamem",
+      "text": "Sushi! Byłam w restauracji z Adamem."
+    },
+    {
+      "id": "sushi-to-moje-marzenie",
+      "text": "sushi to moje marzenie"
+    },
+    {
       "id": "suszona-bazylia",
       "text": "suszona bazylia"
     },
     {
       "id": "suszony",
       "text": "suszony"
+    },
+    {
+      "id": "sweter",
+      "text": "sweter"
     },
     {
       "id": "swietnie",
@@ -12171,6 +13159,10 @@
     {
       "id": "swietnie-a-dziesiec-minus-cztery",
       "text": "Świetnie! A dziesięć minus cztery?"
+    },
+    {
+      "id": "swietnie-ale-jestesmy-zmeczone",
+      "text": "Świetnie, ale jesteśmy zmęczone."
     },
     {
       "id": "swietnie-dziekuje",
@@ -12193,12 +13185,24 @@
       "text": "Świetnie! Ja jestem lekarką i interesuję się fotografią."
     },
     {
+      "id": "swietnie-kupilam-sweter",
+      "text": "Świetnie! Kupiłam sweter."
+    },
+    {
       "id": "swietnie-na-razie-do-jutra",
       "text": "Świetnie! Na razie, do jutra!"
     },
     {
       "id": "swietnie-pa-do-jutra",
       "text": "Świetnie! Pa, do jutra!"
+    },
+    {
+      "id": "swietnie-w-sobote-bylem-w-kinie",
+      "text": "Świetnie! W sobotę byłem w kinie."
+    },
+    {
+      "id": "swietnie-w-sobote-bylysmy-na-imprezie",
+      "text": "Świetnie! W sobotę byłyśmy na imprezie."
     },
     {
       "id": "swietny",
@@ -12285,8 +13289,20 @@
       "text": "szary"
     },
     {
+      "id": "szczescie",
+      "text": "szczęście"
+    },
+    {
+      "id": "szczesliwy",
+      "text": "szczęśliwy"
+    },
+    {
       "id": "szczuply",
       "text": "szczupły"
+    },
+    {
+      "id": "szedlem",
+      "text": "szedłem"
     },
     {
       "id": "szef",
@@ -12371,6 +13387,10 @@
     {
       "id": "szkola",
       "text": "szkoła"
+    },
+    {
+      "id": "szlam-na-piechote",
+      "text": "szłam na piechotę"
     },
     {
       "id": "szosta",
@@ -12485,6 +13505,10 @@
       "text": "Tak, ale nie umiem."
     },
     {
+      "id": "tak-ale-spedzilam-tam-kilka-godzin",
+      "text": "Tak, ale spędziłam tam kilka godzin!"
+    },
+    {
       "id": "tak-ale-tylko-troche",
       "text": "Tak, ale tylko trochę."
     },
@@ -12509,6 +13533,10 @@
       "text": "Tak, bardzo świeże!"
     },
     {
+      "id": "tak-bo-padal-deszcz",
+      "text": "Tak, bo padał deszcz."
+    },
+    {
       "id": "tak-chetnie",
       "text": "Tak, chętnie."
     },
@@ -12523,6 +13551,10 @@
     {
       "id": "tak-dzisiaj-moge",
       "text": "Tak, dzisiaj mogę!"
+    },
+    {
+      "id": "tak-godzine-temu",
+      "text": "Tak, godzinę temu."
     },
     {
       "id": "tak-gram-w-tenisa-to-moje-hobby",
@@ -12645,6 +13677,10 @@
       "text": "Tak, trochę, ale tutaj mówimy po polsku!"
     },
     {
+      "id": "tak-w-zeszlym-roku-bylem-w-kinie-tylko-raz",
+      "text": "Tak. W zeszłym roku byłem w kinie tylko raz."
+    },
+    {
       "id": "taksowka",
       "text": "taksówką"
     },
@@ -12715,6 +13751,18 @@
     {
       "id": "tanczyc",
       "text": "tańczyć"
+    },
+    {
+      "id": "tanczylam",
+      "text": "tańczyłam"
+    },
+    {
+      "id": "tanczylam-i-poznalam-adama",
+      "text": "Tańczyłam i poznałam Adama."
+    },
+    {
+      "id": "tanczylem-w-klubie-w-sobote",
+      "text": "tańczyłem w klubie w sobotę"
     },
     {
       "id": "tanczysz",
@@ -12801,8 +13849,16 @@
       "text": "tekst i test"
     },
     {
+      "id": "telefonu",
+      "text": "telefonu"
+    },
+    {
       "id": "telewizje",
       "text": "telewizję"
+    },
+    {
+      "id": "temu",
+      "text": "temu"
     },
     {
       "id": "ten",
@@ -13047,6 +14103,14 @@
     {
       "id": "to-bardzo-stary-teatr",
       "text": "to bardzo stary teatr"
+    },
+    {
+      "id": "to-byl-spokojny-weekend",
+      "text": "to był spokojny weekend"
+    },
+    {
+      "id": "to-byl-spokojny-weekend-2",
+      "text": "To był spokojny weekend."
     },
     {
       "id": "to-chyba-nowy-student-ciekawe-czy-jest-z-polski",
@@ -13421,6 +14485,10 @@
       "text": "to jest studentka"
     },
     {
+      "id": "to-jest-szczescie",
+      "text": "to jest szczęście!"
+    },
+    {
       "id": "to-jest-szkola",
       "text": "to jest szkoła"
     },
@@ -13539,6 +14607,10 @@
     {
       "id": "to-moje-hobby",
       "text": "to moje hobby"
+    },
+    {
+      "id": "to-moje-marzenie",
+      "text": "to moje marzenie"
     },
     {
       "id": "to-moje-pytanie",
@@ -13723,6 +14795,10 @@
     {
       "id": "to-zamawiam-pierogi",
       "text": "To zamawiam pierogi."
+    },
+    {
+      "id": "to-zapraszam-cie-na-obiad",
+      "text": "To zapraszam cię na obiad!"
     },
     {
       "id": "toaleta",
@@ -14037,12 +15113,20 @@
       "text": "tydzień"
     },
     {
+      "id": "tydzien-temu",
+      "text": "tydzień temu"
+    },
+    {
       "id": "tylko",
       "text": "tylko"
     },
     {
       "id": "tylko-dlugopis",
       "text": "tylko długopis"
+    },
+    {
+      "id": "tylko-sweter",
+      "text": "Tylko sweter?"
     },
     {
       "id": "tysiac",
@@ -14157,6 +15241,10 @@
       "text": "uczysz się polskiego"
     },
     {
+      "id": "ugotowala",
+      "text": "ugotowała"
+    },
+    {
       "id": "ulgowy",
       "text": "ulgowy"
     },
@@ -14231,6 +15319,10 @@
     {
       "id": "umiesz-tanczyc-tango",
       "text": "umiesz tańczyć tango?"
+    },
+    {
+      "id": "umylam",
+      "text": "umyłam"
     },
     {
       "id": "uprawiac",
@@ -14337,12 +15429,32 @@
       "text": "W galerii jest bankomat i kantor."
     },
     {
+      "id": "w-galerii-spedzilam-kilka-godzin",
+      "text": "W galerii spędziłam kilka godzin."
+    },
+    {
+      "id": "w-gorach",
+      "text": "w górach"
+    },
+    {
+      "id": "w-gorach-2",
+      "text": "W górach!"
+    },
+    {
+      "id": "w-gorach-nie-mialam-zasiegu",
+      "text": "w górach nie miałam zasięgu"
+    },
+    {
       "id": "w-japonii",
       "text": "w Japonii"
     },
     {
       "id": "w-karty",
       "text": "w karty"
+    },
+    {
+      "id": "w-kinie",
+      "text": "w kinie"
     },
     {
       "id": "w-klubie",
@@ -14381,6 +15493,30 @@
       "text": "w Londynie mieszkam"
     },
     {
+      "id": "w-muzeum",
+      "text": "w muzeum"
+    },
+    {
+      "id": "w-muzeum-2",
+      "text": "W muzeum."
+    },
+    {
+      "id": "w-muzeum-chcialem-zrobic-zdjecie-obrazu",
+      "text": "W muzeum chciałem zrobić zdjęcie obrazu."
+    },
+    {
+      "id": "w-muzeum-nie-mozna-robic-zdjec",
+      "text": "W muzeum nie można robić zdjęć!"
+    },
+    {
+      "id": "w-muzeum-widzialem-obrazy",
+      "text": "W muzeum widziałem obrazy."
+    },
+    {
+      "id": "w-niedziele-bylysmy-na-treningu",
+      "text": "W niedzielę byłyśmy na treningu."
+    },
+    {
       "id": "w-niedziele-jem-obiad-u-babci",
       "text": "W niedzielę jem obiad u babci."
     },
@@ -14405,6 +15541,10 @@
       "text": "W niedzielę odpoczywam i spotykam się ze znajomymi."
     },
     {
+      "id": "w-niedziele-wrocilem-do-domu",
+      "text": "w niedzielę wróciłem do domu"
+    },
+    {
       "id": "w-nocy",
       "text": "w nocy"
     },
@@ -14415,6 +15555,10 @@
     {
       "id": "w-piatek-albo-w-sobote-kiedy-masz-czas",
       "text": "W piątek albo w sobotę. Kiedy masz czas?"
+    },
+    {
+      "id": "w-piatek-bylam-w-galerii-i-kupilam-sweter",
+      "text": "W piątek byłam w galerii i kupiłam sweter."
     },
     {
       "id": "w-piatek-ide-do-kina",
@@ -14481,6 +15625,10 @@
       "text": "W poniedziałek o siedemnastej: zakupy."
     },
     {
+      "id": "w-poniedzialek-rano-mial-kurs-a-wieczorem-poszed",
+      "text": "W poniedziałek rano miał kurs, a wieczorem poszedł do kina."
+    },
+    {
       "id": "w-porzadku",
       "text": "w porządku"
     },
@@ -14497,12 +15645,24 @@
       "text": "w sobotę i w niedzielę"
     },
     {
+      "id": "w-sobote-jednoczesnie-sprzatal-i-sluchal-muzyki",
+      "text": "W sobotę jednocześnie sprzątał i słuchał muzyki."
+    },
+    {
       "id": "w-sobote-o-jedenastej-sniadanie",
       "text": "W sobotę o jedenastej: śniadanie."
     },
     {
       "id": "w-sobote-o-osiemnastej-randka",
       "text": "W sobotę o osiemnastej: randka."
+    },
+    {
+      "id": "w-sobote-ogladalam-film-w-kinie",
+      "text": "W sobotę oglądałam film w kinie."
+    },
+    {
+      "id": "w-sobote-pracowalem",
+      "text": "w sobotę pracowałem"
     },
     {
       "id": "w-sobote-spie-do-dziesiatej",
@@ -14513,12 +15673,24 @@
       "text": "w sobotę sprzątam"
     },
     {
+      "id": "w-sobote-tanczylem-w-klubie",
+      "text": "w sobotę tańczyłem w klubie"
+    },
+    {
       "id": "w-sobote-w-galerii",
       "text": "w sobotę w galerii"
     },
     {
+      "id": "w-sobote-wieczorem-bylam-w-klubie-ze-znajomymi",
+      "text": "W sobotę wieczorem byłam w klubie ze znajomymi."
+    },
+    {
       "id": "w-srode",
       "text": "w środę"
+    },
+    {
+      "id": "w-srode-chcial-odwiedzic-babcie-ale-nie-mial-cza",
+      "text": "W środę chciał odwiedzić babcię, ale nie miał czasu."
     },
     {
       "id": "w-srode-o-dziewietnastej-teatr",
@@ -14621,6 +15793,34 @@
       "text": "w weekend robię zakupy"
     },
     {
+      "id": "w-zeszla-sobote",
+      "text": "w zeszłą sobotę"
+    },
+    {
+      "id": "w-zeszla-sobote-bylam-na-imprezie",
+      "text": "w zeszłą sobotę byłam na imprezie"
+    },
+    {
+      "id": "w-zeszlym-roku",
+      "text": "w zeszłym roku"
+    },
+    {
+      "id": "w-zeszlym-roku-bylam-w-polsce",
+      "text": "w zeszłym roku byłam w Polsce"
+    },
+    {
+      "id": "w-zeszlym-tygodniu",
+      "text": "w zeszłym tygodniu"
+    },
+    {
+      "id": "w-zeszlym-tygodniu-adam-byl-bardzo-zajety",
+      "text": "W zeszłym tygodniu Adam był bardzo zajęty."
+    },
+    {
+      "id": "w-zeszlym-tygodniu-nie-bylam",
+      "text": "W zeszłym tygodniu nie byłam."
+    },
+    {
       "id": "warzywa",
       "text": "warzywa"
     },
@@ -14651,6 +15851,46 @@
     {
       "id": "wczesnie",
       "text": "wcześnie"
+    },
+    {
+      "id": "wczoraj",
+      "text": "wczoraj"
+    },
+    {
+      "id": "wczoraj-bylam-w-kinie",
+      "text": "wczoraj byłam w kinie"
+    },
+    {
+      "id": "wczoraj-bylem-w-domu",
+      "text": "Wczoraj byłem w domu."
+    },
+    {
+      "id": "wczoraj-bylem-w-muzeum",
+      "text": "Wczoraj byłem w muzeum."
+    },
+    {
+      "id": "wczoraj-bylo-tak-ladnie",
+      "text": "Wczoraj było tak ładnie!"
+    },
+    {
+      "id": "wczoraj-czytalam-ksiazke",
+      "text": "Wczoraj czytałam książkę."
+    },
+    {
+      "id": "wczoraj-mialam-test",
+      "text": "wczoraj miałam test"
+    },
+    {
+      "id": "wczoraj-musialam-pracowac",
+      "text": "wczoraj musiałam pracować"
+    },
+    {
+      "id": "wczoraj-poszlam-na-premiere",
+      "text": "wczoraj poszłam na premierę"
+    },
+    {
+      "id": "wczoraj-poszlam-na-premiere-2",
+      "text": "Wczoraj poszłam na premierę."
     },
     {
       "id": "we-wtorek-i-w-czwartek-pracuje",
@@ -14693,6 +15933,10 @@
       "text": "wędzony łosoś"
     },
     {
+      "id": "weekend",
+      "text": "weekend"
+    },
+    {
       "id": "wegetarianski",
       "text": "wegetariański"
     },
@@ -14711,6 +15955,18 @@
     {
       "id": "widelec-i-noz",
       "text": "widelec i nóż"
+    },
+    {
+      "id": "widzialem",
+      "text": "widziałem"
+    },
+    {
+      "id": "widzialem-piekny-obraz",
+      "text": "widziałem piękny obraz"
+    },
+    {
+      "id": "widzialem-tam-piekne-obrazy",
+      "text": "Widziałem tam piękne obrazy."
     },
     {
       "id": "wieczorem",
@@ -14767,6 +16023,10 @@
     {
       "id": "wieczorem-wszyscy-wracaja-do-domu",
       "text": "Wieczorem wszyscy wracają do domu."
+    },
+    {
+      "id": "wiedzialem",
+      "text": "wiedziałem"
     },
     {
       "id": "wiem",
@@ -14835,6 +16095,14 @@
     {
       "id": "wizyta",
       "text": "wizyta"
+    },
+    {
+      "id": "wlasnie",
+      "text": "właśnie"
+    },
+    {
+      "id": "wlasnie-wrocilam",
+      "text": "właśnie wróciłam"
     },
     {
       "id": "wnuczka",
@@ -14945,6 +16213,10 @@
       "text": "wolę zimny sok"
     },
     {
+      "id": "woleli",
+      "text": "woleli"
+    },
+    {
       "id": "wolisz",
       "text": "wolisz"
     },
@@ -15025,6 +16297,38 @@
       "text": "wracam"
     },
     {
+      "id": "wrocilam",
+      "text": "wróciłam"
+    },
+    {
+      "id": "wrocilam-do-domu-rano",
+      "text": "wróciłam do domu rano"
+    },
+    {
+      "id": "wrocilam-do-domu-w-niedziele-rano",
+      "text": "Wróciłam do domu w niedzielę rano."
+    },
+    {
+      "id": "wrocilem-do-domu-na-piechote",
+      "text": "wróciłem do domu na piechotę"
+    },
+    {
+      "id": "wrocilem-do-domu-w-niedziele",
+      "text": "wróciłem do domu w niedzielę"
+    },
+    {
+      "id": "wrocilem-w-niedziele-rano",
+      "text": "wróciłem w niedzielę rano"
+    },
+    {
+      "id": "wspaniale",
+      "text": "wspaniale"
+    },
+    {
+      "id": "wspaniale-a-ty-jadles-juz-obiad",
+      "text": "Wspaniale! A ty jadłeś już obiad?"
+    },
+    {
       "id": "wstaje",
       "text": "wstaję"
     },
@@ -15049,12 +16353,20 @@
       "text": "Wstajesz wcześnie?"
     },
     {
+      "id": "wstalam",
+      "text": "wstałam"
+    },
+    {
       "id": "wstawac",
       "text": "wstawać"
     },
     {
       "id": "wstawac-wczesnie",
       "text": "wstawać wcześnie"
+    },
+    {
+      "id": "wstyd",
+      "text": "wstyd"
     },
     {
       "id": "wszedzie",
@@ -15065,8 +16377,20 @@
       "text": "wszyscy"
     },
     {
+      "id": "wszyscy-glosno-sie-smiali",
+      "text": "wszyscy głośno się śmiali"
+    },
+    {
       "id": "wszyscy-sa-w-domu",
       "text": "wszyscy są w domu"
+    },
+    {
+      "id": "wszyscy-sie-glosno-smiali",
+      "text": "wszyscy się głośno śmiali"
+    },
+    {
+      "id": "wszyscy-smiali-sie-glosno",
+      "text": "wszyscy śmiali się głośno"
     },
     {
       "id": "wszystko",
@@ -15557,6 +16881,10 @@
       "text": "zaczynam"
     },
     {
+      "id": "zadzwonic",
+      "text": "zadzwonić"
+    },
+    {
       "id": "zajecia",
       "text": "zajęcia"
     },
@@ -15647,6 +16975,10 @@
     {
       "id": "zart",
       "text": "żart"
+    },
+    {
+      "id": "zasieg",
+      "text": "zasięg"
     },
     {
       "id": "zawsze",
@@ -15765,6 +17097,10 @@
       "text": "zimny"
     },
     {
+      "id": "zjadlam",
+      "text": "zjadłam"
+    },
+    {
       "id": "zle",
       "text": "źle"
     },
@@ -15849,6 +17185,14 @@
       "text": "żonę"
     },
     {
+      "id": "zrobic",
+      "text": "zrobić"
+    },
+    {
+      "id": "zrobic-zdjecie",
+      "text": "zrobić zdjęcie"
+    },
+    {
       "id": "zupa",
       "text": "zupa"
     },
@@ -15903,6 +17247,14 @@
     {
       "id": "zupe",
       "text": "zupę"
+    },
+    {
+      "id": "zupe-i-pizze",
+      "text": "Zupę i pizzę."
+    },
+    {
+      "id": "zupelnie-nic",
+      "text": "zupełnie nic"
     },
     {
       "id": "zurek",

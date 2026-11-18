@@ -1,0 +1,439 @@
+{
+  "id": "kpk1-l13-a6",
+  "section": {
+    "letter": "A",
+    "heading": "Co robiliście w weekend?",
+    "meaning": {
+      "en": "What did you do at the weekend?"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-a6-t01",
+      "before": "kpk1-l13-a6-e01",
+      "title": {
+        "en": "Kiedy?"
+      },
+      "body": {
+        "en": "*Wczoraj*, and the day before, *przedwczoraj*. *Temu* comes after the time: *tydzień temu* (a week ago), *miesiąc temu*, *rok temu*, *dwa dni temu*, *pięć lat temu*. *W zeszłym tygodniu* is last week, *w zeszłym roku* last year; with a day, *zeszły* changes to fit the day: *w zeszły piątek*, *w zeszłą sobotę*. *Ostatnio* is lately."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a6-e01",
+      "prompt": "przedwczoraj",
+      "options": [
+        {
+          "en": "yesterday"
+        },
+        {
+          "en": "the day before yesterday"
+        },
+        {
+          "en": "the day after tomorrow"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przedwczoraj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a6-e02",
+      "prompt": "temu",
+      "options": [
+        {
+          "en": "in (a week), from now"
+        },
+        {
+          "en": "ever; once, some time (byłeś tu kiedyś?: have you ever been here?)"
+        },
+        {
+          "en": "ago (tydzień temu: a week ago)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "temu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a6-e03",
+      "text": "tydzień temu",
+      "meaning": {
+        "en": "a week ago"
+      },
+      "distractors": [
+        "rok temu",
+        "dwa dni temu"
+      ],
+      "items": [
+        "tydzien",
+        "temu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a6-e04",
+      "prompt": "miesiąc",
+      "options": [
+        {
+          "en": "a month (miesiące: months)"
+        },
+        {
+          "en": "a week"
+        },
+        {
+          "en": "a year; one year"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "miesiac"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-a6-e05",
+      "text": "Miesiąc ___ byłam na meczu.",
+      "meaning": {
+        "en": "A month ago I was at a match (a woman)."
+      },
+      "gaps": [
+        [
+          "temu"
+        ]
+      ],
+      "distractors": [
+        "później",
+        "kiedyś"
+      ],
+      "items": [
+        "miesiac",
+        "temu",
+        "byc-bylam",
+        "na-meczu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a6-e06",
+      "prompt": "dni",
+      "options": [
+        {
+          "en": "a week"
+        },
+        {
+          "en": "days (dwa dni temu: two days ago)"
+        },
+        {
+          "en": "a month (miesiące: months)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dni"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-a6-e07",
+      "prompt": {
+        "en": "two days ago I was at home (a man)"
+      },
+      "acceptedAnswers": [
+        "dwa dni temu byłem w domu",
+        "byłem w domu dwa dni temu"
+      ],
+      "distractors": [
+        "trzy",
+        "byłam"
+      ],
+      "items": [
+        "dwa",
+        "dni",
+        "temu",
+        "byc-bylem",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a6-e08",
+      "prompt": "w zeszłym tygodniu",
+      "options": [
+        {
+          "en": "at the weekend"
+        },
+        {
+          "en": "next week"
+        },
+        {
+          "en": "last week"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-zeszlym-tygodniu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a6-e09",
+      "prompt": "w zeszłym roku",
+      "options": [
+        {
+          "en": "last year"
+        },
+        {
+          "en": "last week"
+        },
+        {
+          "en": "next year"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-zeszlym-roku"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-a6-e10",
+      "acceptedAnswers": [
+        "w zeszłym roku byłam w Polsce"
+      ],
+      "meaning": {
+        "en": "last year I was in Poland (a woman)"
+      },
+      "items": [
+        "w-zeszlym-roku",
+        "byc-bylam",
+        "w-polsce"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a6-e11",
+      "prompt": "w zeszłą sobotę",
+      "options": [
+        {
+          "en": "Saturday (w sobotę: on Saturday)"
+        },
+        {
+          "en": "last Saturday"
+        },
+        {
+          "en": "last week"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-zeszla-sobote"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a6-e12",
+      "prompt": "ostatnio",
+      "options": [
+        {
+          "en": "ever; once, some time (byłeś tu kiedyś?: have you ever been here?)"
+        },
+        {
+          "en": "always"
+        },
+        {
+          "en": "lately, recently"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ostatnio"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-a6-e13",
+      "prompt": {
+        "en": "last Saturday I was at a party (a woman)"
+      },
+      "acceptedAnswers": [
+        "w zeszłą sobotę byłam na imprezie",
+        "byłam na imprezie w zeszłą sobotę"
+      ],
+      "items": [
+        "w-zeszla-sobote",
+        "byc-bylam",
+        "na-imprezie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-a6-e14",
+      "pairs": [
+        {
+          "polish": "przedwczoraj",
+          "meaning": {
+            "en": "the day before yesterday"
+          }
+        },
+        {
+          "polish": "tydzień temu",
+          "meaning": {
+            "en": "a week ago"
+          }
+        },
+        {
+          "polish": "miesiąc",
+          "meaning": {
+            "en": "a month"
+          }
+        },
+        {
+          "polish": "w zeszłym roku",
+          "meaning": {
+            "en": "last year"
+          }
+        },
+        {
+          "polish": "ostatnio",
+          "meaning": {
+            "en": "lately"
+          }
+        },
+        {
+          "polish": "dni",
+          "meaning": {
+            "en": "days"
+          }
+        }
+      ],
+      "items": [
+        "przedwczoraj",
+        "tydzien",
+        "temu",
+        "miesiac",
+        "w-zeszlym-roku",
+        "ostatnio",
+        "dni"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-a6-e15",
+      "lines": [
+        "Kiedy ostatnio byłeś w kinie?",
+        "Ostatnio? Rok temu!",
+        "Naprawdę?",
+        "Tak. W zeszłym roku byłem w kinie tylko raz."
+      ],
+      "meaning": {
+        "en": "The last time at the cinema."
+      },
+      "statements": [
+        {
+          "text": "On był w kinie tydzień temu.",
+          "meaning": {
+            "en": "He was at the cinema a week ago."
+          },
+          "true": false
+        },
+        {
+          "text": "On był w kinie rok temu.",
+          "meaning": {
+            "en": "He was at the cinema a year ago."
+          },
+          "true": true
+        },
+        {
+          "text": "On często chodzi do kina.",
+          "meaning": {
+            "en": "He often goes to the cinema."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "kiedy",
+        "ostatnio",
+        "byc-byles",
+        "w-kinie",
+        "rok",
+        "temu",
+        "tak",
+        "w-zeszlym-roku",
+        "byc-bylem",
+        "tylko"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-a6-e16",
+      "lines": [
+        "Kiedy byłaś na treningu?",
+        "Przedwczoraj.",
+        "A w zeszłym tygodniu?",
+        "W zeszłym tygodniu nie byłam."
+      ],
+      "meaning": {
+        "en": "Training."
+      },
+      "items": [
+        "kiedy",
+        "byc-bylas",
+        "na-treningu",
+        "przedwczoraj",
+        "a",
+        "w-zeszlym-tygodniu",
+        "nie",
+        "byc-bylam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a6-e17",
+      "text": "pięć lat temu",
+      "meaning": {
+        "en": "five years ago"
+      },
+      "distractors": [
+        "pięć dni temu",
+        "trzy lata temu"
+      ],
+      "items": [
+        "piec",
+        "lat",
+        "temu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-a6-e18",
+      "prompt": {
+        "en": "where were you last week? (to a man friend)"
+      },
+      "acceptedAnswers": [
+        "gdzie byłeś w zeszłym tygodniu?"
+      ],
+      "distractors": [
+        "byłaś",
+        "roku"
+      ],
+      "items": [
+        "gdzie",
+        "byc-byles",
+        "w-zeszlym-tygodniu"
+      ]
+    }
+  ]
+}

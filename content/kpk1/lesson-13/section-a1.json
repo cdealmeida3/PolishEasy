@@ -1,0 +1,417 @@
+{
+  "id": "kpk1-l13-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Co robiliście w weekend?",
+    "meaning": {
+      "en": "What did you do at the weekend?"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-a1-t01",
+      "before": "kpk1-l13-a1-e01",
+      "title": {
+        "en": "Byłem, byłam"
+      },
+      "body": {
+        "en": "In the past, *być* (to be) shows who is speaking. A man says *byłem*, a woman *byłam*: *wczoraj byłem w kinie*, *wczoraj byłam w kinie*. To a friend, *gdzie byłeś?* asks a man and *gdzie byłaś?* a woman. In the singular every form starts with *był-*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a1-e01",
+      "prompt": "byłem",
+      "options": [
+        {
+          "en": "I was (a man says it)"
+        },
+        {
+          "en": "I am"
+        },
+        {
+          "en": "I will be"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "byc-bylem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a1-e02",
+      "prompt": "byłam",
+      "options": [
+        {
+          "en": "I was (a man says it)"
+        },
+        {
+          "en": "I was (a woman says it)"
+        },
+        {
+          "en": "I am"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "byc-bylam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a1-e03",
+      "text": "byłam w domu",
+      "meaning": {
+        "en": "I was at home (a woman)"
+      },
+      "distractors": [
+        "byłem w domu",
+        "jestem w domu"
+      ],
+      "items": [
+        "byc-bylam",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a1-e04",
+      "prompt": "wczoraj",
+      "options": [
+        {
+          "en": "tomorrow"
+        },
+        {
+          "en": "today"
+        },
+        {
+          "en": "yesterday"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wczoraj"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-a1-e05",
+      "text": "Wczoraj ___ w domu.",
+      "meaning": {
+        "en": "Yesterday I was at home (a man)."
+      },
+      "gaps": [
+        [
+          "byłem"
+        ]
+      ],
+      "distractors": [
+        "byłam",
+        "jestem"
+      ],
+      "items": [
+        "wczoraj",
+        "byc-bylem",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a1-e06",
+      "prompt": "w kinie",
+      "options": [
+        {
+          "en": "at the cinema"
+        },
+        {
+          "en": "to the cinema"
+        },
+        {
+          "en": "in a theatre"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-kinie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-a1-e07",
+      "prompt": {
+        "en": "yesterday I was at the cinema (a woman)"
+      },
+      "acceptedAnswers": [
+        "wczoraj byłam w kinie"
+      ],
+      "distractors": [
+        "byłem",
+        "jutro"
+      ],
+      "items": [
+        "wczoraj",
+        "byc-bylam",
+        "w-kinie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a1-e08",
+      "prompt": "byłeś",
+      "options": [
+        {
+          "en": "you are (one friend)"
+        },
+        {
+          "en": "you were (to a man, one friend)"
+        },
+        {
+          "en": "I was (a man says it)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "byc-byles"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a1-e09",
+      "prompt": "byłaś",
+      "options": [
+        {
+          "en": "you were (to a man, one friend)"
+        },
+        {
+          "en": "you are (one friend)"
+        },
+        {
+          "en": "you were (to a woman, one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "byc-bylas"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-a1-e10",
+      "acceptedAnswers": [
+        "gdzie byłaś?"
+      ],
+      "meaning": {
+        "en": "where were you? (to a woman friend)"
+      },
+      "items": [
+        "gdzie",
+        "byc-bylas"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a1-e11",
+      "prompt": "kiedyś",
+      "options": [
+        {
+          "en": "ever; once, some time (byłeś tu kiedyś?: have you ever been here?)"
+        },
+        {
+          "en": "never (nigdy nie…)"
+        },
+        {
+          "en": "always"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kiedys"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a1-e12",
+      "prompt": "pierwszy raz",
+      "options": [
+        {
+          "en": "once more"
+        },
+        {
+          "en": "for the first time (jestem tu pierwszy raz)"
+        },
+        {
+          "en": "once a year"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pierwszy-raz"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-a1-e13",
+      "prompt": {
+        "en": "have you ever been here? (to a man friend)"
+      },
+      "acceptedAnswers": [
+        "byłeś tu kiedyś?",
+        "czy byłeś tu kiedyś?",
+        "byłeś tutaj kiedyś?"
+      ],
+      "items": [
+        "byc-byles",
+        "tu",
+        "kiedys"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-a1-e14",
+      "pairs": [
+        {
+          "polish": "byłem",
+          "meaning": {
+            "en": "I was (a man)"
+          }
+        },
+        {
+          "polish": "byłam",
+          "meaning": {
+            "en": "I was (a woman)"
+          }
+        },
+        {
+          "polish": "byłeś",
+          "meaning": {
+            "en": "you were (to a man)"
+          }
+        },
+        {
+          "polish": "byłaś",
+          "meaning": {
+            "en": "you were (to a woman)"
+          }
+        },
+        {
+          "polish": "wczoraj",
+          "meaning": {
+            "en": "yesterday"
+          }
+        },
+        {
+          "polish": "kiedyś",
+          "meaning": {
+            "en": "ever"
+          }
+        }
+      ],
+      "items": [
+        "byc-bylem",
+        "byc-bylam",
+        "byc-byles",
+        "byc-bylas",
+        "wczoraj",
+        "kiedys"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-a1-e15",
+      "lines": [
+        "Byłaś tu kiedyś?",
+        "Nie, jestem tu pierwszy raz.",
+        "A ja byłem tu wczoraj!"
+      ],
+      "meaning": {
+        "en": "Here before?"
+      },
+      "statements": [
+        {
+          "text": "Ona jest tu pierwszy raz.",
+          "meaning": {
+            "en": "She is here for the first time."
+          },
+          "true": true
+        },
+        {
+          "text": "On jest tu pierwszy raz.",
+          "meaning": {
+            "en": "He is here for the first time."
+          },
+          "true": false
+        },
+        {
+          "text": "Ona nie była tu wczoraj.",
+          "meaning": {
+            "en": "She wasn't here yesterday."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "byc-bylas",
+        "tu",
+        "kiedys",
+        "nie",
+        "byc-jestem",
+        "pierwszy-raz",
+        "a",
+        "ja",
+        "byc-bylem",
+        "wczoraj"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-a1-e16",
+      "lines": [
+        "Gdzie byłeś wczoraj?",
+        "Byłem w kinie.",
+        "A ty?",
+        "Ja byłam w domu."
+      ],
+      "meaning": {
+        "en": "Yesterday."
+      },
+      "items": [
+        "gdzie",
+        "byc-byles",
+        "wczoraj",
+        "byc-bylem",
+        "w-kinie",
+        "a",
+        "ty",
+        "ja",
+        "byc-bylam",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-a1-e17",
+      "prompt": {
+        "en": "I'm here for the first time"
+      },
+      "acceptedAnswers": [
+        "jestem tu pierwszy raz"
+      ],
+      "distractors": [
+        "byłem",
+        "kiedyś"
+      ],
+      "items": [
+        "byc-jestem",
+        "tu",
+        "pierwszy-raz"
+      ]
+    }
+  ]
+}

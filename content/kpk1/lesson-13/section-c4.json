@@ -1,0 +1,441 @@
+{
+  "id": "kpk1-l13-c4",
+  "section": {
+    "letter": "C",
+    "heading": "Jadłaś już obiad?",
+    "meaning": {
+      "en": "Have you had dinner yet?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-c4-t01",
+      "before": "kpk1-l13-c4-e01",
+      "title": {
+        "en": "Nie miałam zasięgu"
+      },
+      "body": {
+        "en": "*Zasięg* is a phone signal: *w górach nie miałam zasięgu*. To a friend who went quiet: *nie odbierałeś telefonu!* (you didn't answer the phone!), *nie odpisywałaś!* (you didn't write back!). After *nie*, *telefon* becomes *telefonu* and *zasięg* becomes *zasięgu*. *Martwiliśmy się* is we were worried, and *nareszcie!* is at last!"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c4-e01",
+      "prompt": "w górach",
+      "options": [
+        {
+          "en": "at home"
+        },
+        {
+          "en": "at the seaside"
+        },
+        {
+          "en": "in the mountains"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-gorach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c4-e02",
+      "prompt": "zasięg",
+      "options": [
+        {
+          "en": "signal, phone coverage (nie miałem zasięgu: I had no signal)"
+        },
+        {
+          "en": "a battery"
+        },
+        {
+          "en": "a phone number"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zasieg"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-c4-e03",
+      "text": "w górach nie miałam zasięgu",
+      "meaning": {
+        "en": "in the mountains I had no signal (a woman)"
+      },
+      "distractors": [
+        "w górach nie miałem zasięgu",
+        "w górach nie mam zasięgu"
+      ],
+      "items": [
+        "w-gorach",
+        "nie",
+        "miec-mialem",
+        "zasieg"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c4-e04",
+      "prompt": "telefonu",
+      "options": [
+        {
+          "en": "a phone number"
+        },
+        {
+          "en": "the phone (after nie odbierałeś: nie odbierałeś telefonu)"
+        },
+        {
+          "en": "signal, phone coverage (nie miałem zasięgu: I had no signal)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "telefonu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c4-e05",
+      "prompt": "odbierałeś",
+      "options": [
+        {
+          "en": "you called (to a man friend)"
+        },
+        {
+          "en": "you were (to a man, one friend)"
+        },
+        {
+          "en": "you answered the phone (odbierałeś: to a man friend; odbierałaś: to a woman)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "odbierac-odbierales"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-c4-e06",
+      "text": "Nie ___ telefonu!",
+      "meaning": {
+        "en": "You didn't answer the phone! (to a man friend)"
+      },
+      "gaps": [
+        [
+          "odbierałeś"
+        ]
+      ],
+      "distractors": [
+        "odbierałaś",
+        "dzwonisz"
+      ],
+      "items": [
+        "nie",
+        "odbierac-odbierales",
+        "telefonu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c4-e07",
+      "prompt": "odpisywałeś",
+      "options": [
+        {
+          "en": "you wrote back, you replied (odpisywałeś: to a man friend; odpisywałaś: to a woman)"
+        },
+        {
+          "en": "you answered the phone (odbierałeś: to a man friend; odbierałaś: to a woman)"
+        },
+        {
+          "en": "you write (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "odpisywac-odpisywales"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-c4-e08",
+      "prompt": {
+        "en": "you didn't write back! (to a woman friend)"
+      },
+      "acceptedAnswers": [
+        "nie odpisywałaś!"
+      ],
+      "distractors": [
+        "odpisywałeś",
+        "piszesz"
+      ],
+      "items": [
+        "nie",
+        "odpisywac-odpisywales"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c4-e09",
+      "prompt": "martwiliśmy się",
+      "options": [
+        {
+          "en": "we were (men, or men and women)"
+        },
+        {
+          "en": "we were worried (martwiliśmy się: with a man among us; martwiłyśmy się: women only)"
+        },
+        {
+          "en": "we were happy"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "martwic-sie-martwilismy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-c4-e10",
+      "acceptedAnswers": [
+        "bardzo się martwiliśmy",
+        "martwiliśmy się bardzo"
+      ],
+      "meaning": {
+        "en": "we were very worried (with a man among us)"
+      },
+      "items": [
+        "bardzo",
+        "martwic-sie-martwilismy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c4-e11",
+      "prompt": "nareszcie",
+      "options": [
+        {
+          "en": "already; (with nie) not any more"
+        },
+        {
+          "en": "lately, recently"
+        },
+        {
+          "en": "at last, finally"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nareszcie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-c4-e12",
+      "prompt": {
+        "en": "at last you are here! (to a friend)"
+      },
+      "acceptedAnswers": [
+        "nareszcie jesteś!",
+        "jesteś nareszcie!",
+        "nareszcie jesteś tu!",
+        "nareszcie tu jesteś!"
+      ],
+      "items": [
+        "nareszcie",
+        "byc-jestes"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c4-e13",
+      "prompt": "szczęśliwy",
+      "options": [
+        {
+          "en": "happy (szczęśliwy, szczęśliwa, szczęśliwe)"
+        },
+        {
+          "en": "sad (smutny, smutna, smutne)"
+        },
+        {
+          "en": "tired (zmęczony, zmęczona, zmęczone)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "szczesliwy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-c4-e14",
+      "prompt": {
+        "en": "I was very happy (a woman)"
+      },
+      "acceptedAnswers": [
+        "byłam bardzo szczęśliwa"
+      ],
+      "distractors": [
+        "szczęśliwy",
+        "byłem"
+      ],
+      "items": [
+        "byc-bylam",
+        "bardzo",
+        "szczesliwy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-c4-e15",
+      "pairs": [
+        {
+          "polish": "w górach",
+          "meaning": {
+            "en": "in the mountains"
+          }
+        },
+        {
+          "polish": "zasięg",
+          "meaning": {
+            "en": "phone signal"
+          }
+        },
+        {
+          "polish": "odbierałeś",
+          "meaning": {
+            "en": "you answered"
+          }
+        },
+        {
+          "polish": "odpisywałeś",
+          "meaning": {
+            "en": "you wrote back"
+          }
+        },
+        {
+          "polish": "nareszcie",
+          "meaning": {
+            "en": "at last"
+          }
+        },
+        {
+          "polish": "szczęśliwy",
+          "meaning": {
+            "en": "happy"
+          }
+        }
+      ],
+      "items": [
+        "w-gorach",
+        "zasieg",
+        "odbierac-odbierales",
+        "odpisywac-odpisywales",
+        "nareszcie",
+        "szczesliwy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-c4-e16",
+      "lines": [
+        "Nareszcie jesteś! Gdzie byłaś?",
+        "Byłam w górach. Nie miałam zasięgu.",
+        "Martwiliśmy się! Nie odbierałaś telefonu.",
+        "Przepraszam! W górach było wspaniale."
+      ],
+      "meaning": {
+        "en": "Back from the mountains."
+      },
+      "statements": [
+        {
+          "text": "Ona była w górach.",
+          "meaning": {
+            "en": "She was in the mountains."
+          },
+          "true": true
+        },
+        {
+          "text": "W górach miała zasięg.",
+          "meaning": {
+            "en": "In the mountains she had a signal."
+          },
+          "true": false
+        },
+        {
+          "text": "Przyjaciele się martwili.",
+          "meaning": {
+            "en": "Her friends were worried."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "nareszcie",
+        "byc-jestes",
+        "gdzie",
+        "byc-bylas",
+        "byc-bylam",
+        "w-gorach",
+        "nie",
+        "miec-mialem",
+        "zasieg",
+        "martwic-sie-martwilismy",
+        "odbierac-odbierales",
+        "telefonu",
+        "przepraszam",
+        "byc-bylo",
+        "wspaniale"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-c4-e17",
+      "lines": [
+        "Dlaczego nie odpisywałeś?",
+        "Nie miałem zasięgu.",
+        "A gdzie byłeś?",
+        "W górach!"
+      ],
+      "meaning": {
+        "en": "No answer."
+      },
+      "items": [
+        "dlaczego",
+        "nie",
+        "odpisywac-odpisywales",
+        "miec-mialem",
+        "zasieg",
+        "a",
+        "gdzie",
+        "byc-byles",
+        "w-gorach"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-c4-e18",
+      "text": "nareszcie! martwiłyśmy się",
+      "meaning": {
+        "en": "at last! we were worried (women only)"
+      },
+      "distractors": [
+        "nareszcie! martwiliśmy się",
+        "nareszcie! martwimy się"
+      ],
+      "items": [
+        "nareszcie",
+        "martwic-sie-martwilismy"
+      ]
+    }
+  ]
+}

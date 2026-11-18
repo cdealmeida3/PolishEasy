@@ -1,0 +1,452 @@
+{
+  "id": "kpk1-l13-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Co robiliście w weekend?",
+    "meaning": {
+      "en": "What did you do at the weekend?"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-a3-t01",
+      "before": "kpk1-l13-a3-e01",
+      "title": {
+        "en": "Byliśmy czy byłyśmy?"
+      },
+      "body": {
+        "en": "For *my* and *wy*, Polish asks who is in the group. With a man among them: *byliśmy*, *byliście*, *byli*. Women only, or animals and things: *byłyśmy*, *byłyście*, *były*. So Ewa and Adam say *byliśmy w kinie*, and Ewa and her sister say *byłyśmy w kinie*."
+      },
+      "table": {
+        "title": {
+          "en": "być · to be · the past, several people"
+        },
+        "columns": [
+          {
+            "header": "męskoosobowy",
+            "gender": "mo"
+          },
+          {
+            "header": "niemęskoosobowy",
+            "gender": "nmo"
+          }
+        ],
+        "rows": [
+          {
+            "header": "my",
+            "cells": [
+              "byli[śmy]",
+              "były[śmy]"
+            ]
+          },
+          {
+            "header": "wy",
+            "cells": [
+              "byli[ście]",
+              "były[ście]"
+            ]
+          },
+          {
+            "header": "oni / one",
+            "cells": [
+              "byli",
+              "były"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a3-e01",
+      "prompt": "byliśmy",
+      "options": [
+        {
+          "en": "we are"
+        },
+        {
+          "en": "we were (men, or men and women)"
+        },
+        {
+          "en": "they were (men, or men and women)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "byc-bylismy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a3-e02",
+      "prompt": "byłyśmy",
+      "options": [
+        {
+          "en": "we were (men, or men and women)"
+        },
+        {
+          "en": "they were (women only, or things)"
+        },
+        {
+          "en": "we were (women only)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "byc-bylysmy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a3-e03",
+      "text": "byłyśmy w kinie",
+      "meaning": {
+        "en": "we were at the cinema (women only)"
+      },
+      "distractors": [
+        "byliśmy w kinie",
+        "były w kinie"
+      ],
+      "items": [
+        "byc-bylysmy",
+        "w-kinie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a3-e04",
+      "prompt": "byliście",
+      "options": [
+        {
+          "en": "you were (several people, with a man among them)"
+        },
+        {
+          "en": "you are (several people)"
+        },
+        {
+          "en": "we were (men, or men and women)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "byc-byliscie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a3-e05",
+      "prompt": "byłyście",
+      "options": [
+        {
+          "en": "you were (several people, with a man among them)"
+        },
+        {
+          "en": "you were (several women)"
+        },
+        {
+          "en": "we were (women only)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "byc-bylyscie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a3-e06",
+      "prompt": "na treningu",
+      "options": [
+        {
+          "en": "at a match"
+        },
+        {
+          "en": "at the cinema"
+        },
+        {
+          "en": "at training, at a workout"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-treningu"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-a3-e07",
+      "text": "Gdzie ___? Byliśmy na treningu.",
+      "meaning": {
+        "en": "Where were you (several people)? We were at training."
+      },
+      "gaps": [
+        [
+          "byliście"
+        ]
+      ],
+      "distractors": [
+        "byłyście",
+        "byliśmy"
+      ],
+      "items": [
+        "gdzie",
+        "byc-byliscie",
+        "byc-bylismy",
+        "na-treningu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a3-e08",
+      "prompt": "na imprezie",
+      "options": [
+        {
+          "en": "at a party"
+        },
+        {
+          "en": "at a match"
+        },
+        {
+          "en": "at home"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-imprezie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-a3-e09",
+      "prompt": {
+        "en": "we were at a party (with a man among us)"
+      },
+      "acceptedAnswers": [
+        "byliśmy na imprezie"
+      ],
+      "distractors": [
+        "byłyśmy",
+        "impreza"
+      ],
+      "items": [
+        "byc-bylismy",
+        "na-imprezie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a3-e10",
+      "prompt": "weekend",
+      "options": [
+        {
+          "en": "a week"
+        },
+        {
+          "en": "a weekend"
+        },
+        {
+          "en": "yesterday"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "weekend"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a3-e11",
+      "prompt": "jak było?",
+      "options": [
+        {
+          "en": "how are things?"
+        },
+        {
+          "en": "how are you?"
+        },
+        {
+          "en": "how was it?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jak-bylo"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-a3-e12",
+      "acceptedAnswers": [
+        "jak było na imprezie?"
+      ],
+      "meaning": {
+        "en": "how was it at the party?"
+      },
+      "items": [
+        "jak-bylo",
+        "na-imprezie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-a3-e13",
+      "prompt": {
+        "en": "where were you? (to two women friends)"
+      },
+      "acceptedAnswers": [
+        "gdzie byłyście?"
+      ],
+      "items": [
+        "gdzie",
+        "byc-bylyscie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-a3-e14",
+      "pairs": [
+        {
+          "polish": "byliśmy",
+          "meaning": {
+            "en": "we were (men and women)"
+          }
+        },
+        {
+          "polish": "byłyśmy",
+          "meaning": {
+            "en": "we were (women only)"
+          }
+        },
+        {
+          "polish": "byliście",
+          "meaning": {
+            "en": "you were (men and women)"
+          }
+        },
+        {
+          "polish": "byłyście",
+          "meaning": {
+            "en": "you were (women only)"
+          }
+        },
+        {
+          "polish": "na treningu",
+          "meaning": {
+            "en": "at training"
+          }
+        },
+        {
+          "polish": "weekend",
+          "meaning": {
+            "en": "a weekend"
+          }
+        }
+      ],
+      "items": [
+        "byc-bylismy",
+        "byc-bylysmy",
+        "byc-byliscie",
+        "byc-bylyscie",
+        "na-treningu",
+        "weekend"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-a3-e15",
+      "lines": [
+        "Cześć! Jak weekend?",
+        "Świetnie! W sobotę byłyśmy na imprezie.",
+        "A w niedzielę?",
+        "W niedzielę byłyśmy na treningu."
+      ],
+      "meaning": {
+        "en": "A weekend of two friends."
+      },
+      "statements": [
+        {
+          "text": "W sobotę one były na imprezie.",
+          "meaning": {
+            "en": "On Saturday they were at a party."
+          },
+          "true": true
+        },
+        {
+          "text": "W niedzielę one były na imprezie.",
+          "meaning": {
+            "en": "On Sunday they were at a party."
+          },
+          "true": false
+        },
+        {
+          "text": "Weekend był dobry.",
+          "meaning": {
+            "en": "The weekend was good."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "czesc",
+        "jak",
+        "weekend",
+        "swietnie",
+        "sobota",
+        "byc-bylysmy",
+        "na-imprezie",
+        "a",
+        "niedziela",
+        "na-treningu"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-a3-e16",
+      "lines": [
+        "Jak było na treningu?",
+        "Świetnie, ale jesteśmy zmęczone.",
+        "A gdzie byliście w weekend?",
+        "Byliśmy pierwszy raz na meczu."
+      ],
+      "meaning": {
+        "en": "After training."
+      },
+      "items": [
+        "jak-bylo",
+        "na-treningu",
+        "swietnie",
+        "ale",
+        "byc-jestesmy",
+        "zmeczony",
+        "a",
+        "gdzie",
+        "byc-byliscie",
+        "w-weekend",
+        "byc-bylismy",
+        "pierwszy-raz",
+        "na-meczu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a3-e17",
+      "text": "jak było?",
+      "meaning": {
+        "en": "how was it?"
+      },
+      "distractors": [
+        "jak jest?",
+        "jaki był?"
+      ],
+      "items": [
+        "jak-bylo"
+      ]
+    }
+  ]
+}

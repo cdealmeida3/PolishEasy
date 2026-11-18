@@ -1,0 +1,453 @@
+{
+  "id": "kpk1-l13-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Co robiliście w weekend?",
+    "meaning": {
+      "en": "What did you do at the weekend?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-a4-t01",
+      "before": "kpk1-l13-a4-e01",
+      "title": {
+        "en": "Kupiłem, kupiłam"
+      },
+      "body": {
+        "en": "Most verbs make the past from the infinitive: take off *-ć* and add *-łem* for a man or *-łam* for a woman. *Kupić* gives *kupiłem*, *kupiłam*; *tańczyć* gives *tańczyłem*, *tańczyłam*; *wrócić* gives *wróciłem*, *wróciłam*. *Spędzić* is to spend time: *spędziłam tam kilka godzin*."
+      }
+    },
+    {
+      "id": "kpk1-l13-a4-t02",
+      "before": "kpk1-l13-a4-e12",
+      "title": {
+        "en": "Było wspaniale!"
+      },
+      "body": {
+        "en": "To say how it was: *było wspaniale!* (it was wonderful!), *było świetnie*, *było ładnie*. *Jak było?* asks how it was."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a4-e01",
+      "prompt": "kupiłam",
+      "options": [
+        {
+          "en": "I bought (kupiłam: a woman says it; kupiłem: a man)"
+        },
+        {
+          "en": "I buy, I am buying"
+        },
+        {
+          "en": "I was (a woman says it)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kupic-kupilam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a4-e02",
+      "prompt": "sweter",
+      "options": [
+        {
+          "en": "a photo (zdjęcia: photos)"
+        },
+        {
+          "en": "a jumper, a sweater"
+        },
+        {
+          "en": "a book"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sweter"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a4-e03",
+      "text": "kupiłam sweter",
+      "meaning": {
+        "en": "I bought a jumper (a woman)"
+      },
+      "distractors": [
+        "kupiłem sweter",
+        "kupuję sweter"
+      ],
+      "items": [
+        "kupic-kupilam",
+        "sweter"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a4-e04",
+      "prompt": "spędziłam",
+      "options": [
+        {
+          "en": "I slept (a woman)"
+        },
+        {
+          "en": "I bought (kupiłam: a woman says it; kupiłem: a man)"
+        },
+        {
+          "en": "I spent time (spędziłam: a woman says it; spędziłem: a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "spedzic-spedzilam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a4-e05",
+      "prompt": "kilka godzin",
+      "options": [
+        {
+          "en": "a few hours"
+        },
+        {
+          "en": "an hour; the time (która godzina?: what time is it?)"
+        },
+        {
+          "en": "a few days"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kilka-godzin"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-a4-e06",
+      "text": "W galerii ___ kilka godzin.",
+      "meaning": {
+        "en": "I spent a few hours at the mall (a woman)."
+      },
+      "gaps": [
+        [
+          "spędziłam"
+        ]
+      ],
+      "distractors": [
+        "spędziłem",
+        "kupiłam"
+      ],
+      "items": [
+        "w-galerii",
+        "spedzic-spedzilam",
+        "kilka-godzin"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a4-e07",
+      "prompt": "tańczyłam",
+      "options": [
+        {
+          "en": "I dance"
+        },
+        {
+          "en": "I danced (tańczyłam: a woman says it; tańczyłem: a man)"
+        },
+        {
+          "en": "I spent time (spędziłam: a woman says it; spędziłem: a man)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "tanczyc-tanczylam"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-a4-e08",
+      "prompt": {
+        "en": "on Saturday I danced at a club (a man)"
+      },
+      "acceptedAnswers": [
+        "w sobotę tańczyłem w klubie",
+        "tańczyłem w klubie w sobotę"
+      ],
+      "distractors": [
+        "tańczyłam",
+        "tańczę"
+      ],
+      "items": [
+        "sobota",
+        "tanczyc-tanczylam",
+        "w-klubie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a4-e09",
+      "prompt": "poznałam",
+      "options": [
+        {
+          "en": "I bought (kupiłam: a woman says it; kupiłem: a man)"
+        },
+        {
+          "en": "I was (a woman says it)"
+        },
+        {
+          "en": "I met, I got to know (poznałam: a woman says it; poznałem: a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "poznac-poznalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a4-e10",
+      "prompt": "wróciłam",
+      "options": [
+        {
+          "en": "I came back (wróciłam: a woman says it; wróciłem: a man)"
+        },
+        {
+          "en": "I come back, I go back"
+        },
+        {
+          "en": "I met, I got to know (poznałam: a woman says it; poznałem: a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wrocic-wrocilam"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-a4-e11",
+      "acceptedAnswers": [
+        "wróciłam do domu rano"
+      ],
+      "meaning": {
+        "en": "I came back home in the morning (a woman)"
+      },
+      "items": [
+        "wrocic-wrocilam",
+        "do-domu",
+        "rano"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-a4-e12",
+      "prompt": "wspaniale",
+      "options": [
+        {
+          "en": "nicely; nice (było ładnie: the weather was nice)"
+        },
+        {
+          "en": "wonderful, wonderfully (było wspaniale!: it was wonderful!)"
+        },
+        {
+          "en": "badly; bad"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wspaniale"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-a4-e13",
+      "prompt": {
+        "en": "it was wonderful!"
+      },
+      "acceptedAnswers": [
+        "było wspaniale!"
+      ],
+      "items": [
+        "byc-bylo",
+        "wspaniale"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-a4-e14",
+      "pairs": [
+        {
+          "polish": "kupiłam",
+          "meaning": {
+            "en": "I bought"
+          }
+        },
+        {
+          "polish": "spędziłam",
+          "meaning": {
+            "en": "I spent"
+          }
+        },
+        {
+          "polish": "tańczyłam",
+          "meaning": {
+            "en": "I danced"
+          }
+        },
+        {
+          "polish": "poznałam",
+          "meaning": {
+            "en": "I met"
+          }
+        },
+        {
+          "polish": "wróciłam",
+          "meaning": {
+            "en": "I came back"
+          }
+        },
+        {
+          "polish": "sweter",
+          "meaning": {
+            "en": "a jumper"
+          }
+        }
+      ],
+      "items": [
+        "kupic-kupilam",
+        "spedzic-spedzilam",
+        "tanczyc-tanczylam",
+        "poznac-poznalam",
+        "wrocic-wrocilam",
+        "sweter"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-a4-e15",
+      "lines": [
+        "W piątek byłam w galerii i kupiłam sweter.",
+        "W sobotę wieczorem byłam w klubie ze znajomymi.",
+        "Tańczyłam i poznałam Adama.",
+        "Wróciłam do domu w niedzielę rano."
+      ],
+      "meaning": {
+        "en": "Ewa's weekend."
+      },
+      "statements": [
+        {
+          "text": "Ewa kupiła sweter.",
+          "meaning": {
+            "en": "Ewa bought a jumper."
+          },
+          "true": true
+        },
+        {
+          "text": "W piątek Ewa była w klubie.",
+          "meaning": {
+            "en": "On Friday Ewa was at a club."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa wróciła do domu w niedzielę.",
+          "meaning": {
+            "en": "Ewa came back home on Sunday."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "piatek",
+        "byc-bylam",
+        "w-galerii",
+        "i",
+        "kupic-kupilam",
+        "sweter",
+        "sobota",
+        "wieczorem",
+        "w-klubie",
+        "ze-znajomymi",
+        "tanczyc-tanczylam",
+        "poznac-poznalam",
+        "wrocic-wrocilam",
+        "do-domu",
+        "niedziela",
+        "rano"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-a4-e16",
+      "lines": [
+        "Jak było w galerii?",
+        "Świetnie! Kupiłam sweter.",
+        "Tylko sweter?",
+        "Tak, ale spędziłam tam kilka godzin!"
+      ],
+      "meaning": {
+        "en": "At the mall."
+      },
+      "items": [
+        "jak-bylo",
+        "w-galerii",
+        "swietnie",
+        "kupic-kupilam",
+        "sweter",
+        "tylko",
+        "tak",
+        "ale",
+        "spedzic-spedzilam",
+        "tam",
+        "kilka-godzin"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-a4-e17",
+      "prompt": {
+        "en": "I came back home on Sunday (a man)"
+      },
+      "acceptedAnswers": [
+        "w niedzielę wróciłem do domu",
+        "wróciłem do domu w niedzielę"
+      ],
+      "distractors": [
+        "wróciłam",
+        "dom"
+      ],
+      "items": [
+        "niedziela",
+        "wrocic-wrocilam",
+        "do-domu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-a4-e18",
+      "text": "wróciłem w niedzielę rano",
+      "meaning": {
+        "en": "I came back on Sunday morning (a man)"
+      },
+      "distractors": [
+        "wróciłam w niedzielę rano",
+        "wracam w niedzielę rano"
+      ],
+      "items": [
+        "wrocic-wrocilam",
+        "niedziela",
+        "rano"
+      ]
+    }
+  ]
+}

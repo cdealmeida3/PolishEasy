@@ -1,0 +1,929 @@
+{
+  "items": [
+    {
+      "id": "byc-bylem",
+      "text": "byłem",
+      "meaning": {
+        "en": "I was (a man says it)"
+      }
+    },
+    {
+      "id": "byc-bylam",
+      "text": "byłam",
+      "meaning": {
+        "en": "I was (a woman says it)"
+      }
+    },
+    {
+      "id": "byc-byles",
+      "text": "byłeś",
+      "meaning": {
+        "en": "you were (to a man, one friend)"
+      }
+    },
+    {
+      "id": "byc-bylas",
+      "text": "byłaś",
+      "meaning": {
+        "en": "you were (to a woman, one friend)"
+      }
+    },
+    {
+      "id": "wczoraj",
+      "text": "wczoraj",
+      "meaning": {
+        "en": "yesterday"
+      }
+    },
+    {
+      "id": "w-kinie",
+      "text": "w kinie",
+      "meaning": {
+        "en": "at the cinema"
+      }
+    },
+    {
+      "id": "kiedys",
+      "text": "kiedyś",
+      "meaning": {
+        "en": "ever; once, some time (byłeś tu kiedyś?: have you ever been here?)"
+      }
+    },
+    {
+      "id": "pierwszy-raz",
+      "text": "pierwszy raz",
+      "meaning": {
+        "en": "for the first time (jestem tu pierwszy raz)"
+      }
+    },
+    {
+      "id": "byc-byl",
+      "text": "był",
+      "meaning": {
+        "en": "he was; it was (with a masculine noun)"
+      }
+    },
+    {
+      "id": "byc-byla",
+      "text": "była",
+      "meaning": {
+        "en": "she was; it was (with a feminine noun)"
+      }
+    },
+    {
+      "id": "byc-bylo",
+      "text": "było",
+      "meaning": {
+        "en": "it was (było ładnie: it was nice)"
+      }
+    },
+    {
+      "id": "byc-byli",
+      "text": "byli",
+      "meaning": {
+        "en": "they were (men, or men and women)"
+      }
+    },
+    {
+      "id": "byc-byly",
+      "text": "były",
+      "meaning": {
+        "en": "they were (women only, or things)"
+      }
+    },
+    {
+      "id": "na-meczu",
+      "text": "na meczu",
+      "meaning": {
+        "en": "at a match"
+      }
+    },
+    {
+      "id": "ladnie",
+      "text": "ładnie",
+      "meaning": {
+        "en": "nicely; nice (było ładnie: the weather was nice)"
+      }
+    },
+    {
+      "id": "pogoda",
+      "text": "pogoda",
+      "meaning": {
+        "en": "the weather (świetna pogoda: great weather)"
+      }
+    },
+    {
+      "id": "byc-bylismy",
+      "text": "byliśmy",
+      "meaning": {
+        "en": "we were (men, or men and women)"
+      }
+    },
+    {
+      "id": "byc-bylysmy",
+      "text": "byłyśmy",
+      "meaning": {
+        "en": "we were (women only)"
+      }
+    },
+    {
+      "id": "byc-byliscie",
+      "text": "byliście",
+      "meaning": {
+        "en": "you were (several people, with a man among them)"
+      }
+    },
+    {
+      "id": "byc-bylyscie",
+      "text": "byłyście",
+      "meaning": {
+        "en": "you were (several women)"
+      }
+    },
+    {
+      "id": "na-treningu",
+      "text": "na treningu",
+      "meaning": {
+        "en": "at training, at a workout"
+      }
+    },
+    {
+      "id": "na-imprezie",
+      "text": "na imprezie",
+      "meaning": {
+        "en": "at a party"
+      }
+    },
+    {
+      "id": "weekend",
+      "text": "weekend",
+      "meaning": {
+        "en": "a weekend"
+      }
+    },
+    {
+      "id": "jak-bylo",
+      "text": "jak było?",
+      "meaning": {
+        "en": "how was it?"
+      }
+    },
+    {
+      "id": "spedzic-spedzilam",
+      "text": "spędziłam",
+      "meaning": {
+        "en": "I spent time (spędziłam: a woman says it; spędziłem: a man)"
+      },
+      "forms": [
+        "spędziłem"
+      ]
+    },
+    {
+      "id": "kupic-kupilam",
+      "text": "kupiłam",
+      "meaning": {
+        "en": "I bought (kupiłam: a woman says it; kupiłem: a man)"
+      },
+      "forms": [
+        "kupiłem"
+      ]
+    },
+    {
+      "id": "sweter",
+      "text": "sweter",
+      "meaning": {
+        "en": "a jumper, a sweater"
+      }
+    },
+    {
+      "id": "tanczyc-tanczylam",
+      "text": "tańczyłam",
+      "meaning": {
+        "en": "I danced (tańczyłam: a woman says it; tańczyłem: a man)"
+      },
+      "forms": [
+        "tańczyłem"
+      ]
+    },
+    {
+      "id": "poznac-poznalam",
+      "text": "poznałam",
+      "meaning": {
+        "en": "I met, I got to know (poznałam: a woman says it; poznałem: a man)"
+      },
+      "forms": [
+        "poznałem"
+      ]
+    },
+    {
+      "id": "wrocic-wrocilam",
+      "text": "wróciłam",
+      "meaning": {
+        "en": "I came back (wróciłam: a woman says it; wróciłem: a man)"
+      },
+      "forms": [
+        "wróciłem"
+      ]
+    },
+    {
+      "id": "wspaniale",
+      "text": "wspaniale",
+      "meaning": {
+        "en": "wonderful, wonderfully (było wspaniale!: it was wonderful!)"
+      }
+    },
+    {
+      "id": "kilka-godzin",
+      "text": "kilka godzin",
+      "meaning": {
+        "en": "a few hours"
+      }
+    },
+    {
+      "id": "robic-robilas",
+      "text": "robiłaś",
+      "meaning": {
+        "en": "you did (robiłaś: to a woman friend; robiłeś: to a man)"
+      },
+      "forms": [
+        "robiłeś"
+      ]
+    },
+    {
+      "id": "czytac-czytalem",
+      "text": "czytałem",
+      "meaning": {
+        "en": "I read, I was reading (czytałem: a man says it; czytałam: a woman)"
+      },
+      "forms": [
+        "czytałam"
+      ]
+    },
+    {
+      "id": "ogladac-ogladalam",
+      "text": "oglądałam",
+      "meaning": {
+        "en": "I watched (oglądałam: a woman says it; oglądałem: a man)"
+      },
+      "forms": [
+        "oglądałem"
+      ]
+    },
+    {
+      "id": "spac-spalam",
+      "text": "spałam",
+      "meaning": {
+        "en": "I slept (spałam: a woman says it; spałem: a man)"
+      },
+      "forms": [
+        "spałem"
+      ]
+    },
+    {
+      "id": "grac-gralam",
+      "text": "grałam",
+      "meaning": {
+        "en": "I played (grałam: a woman says it; grałem: a man)"
+      },
+      "forms": [
+        "grałem"
+      ]
+    },
+    {
+      "id": "pomagac-pomagalam",
+      "text": "pomagałam",
+      "meaning": {
+        "en": "I helped (pomagałam: a woman says it; pomagałem: a man)"
+      },
+      "forms": [
+        "pomagałem"
+      ]
+    },
+    {
+      "id": "pracowac-pracowalem",
+      "text": "pracowałem",
+      "meaning": {
+        "en": "I worked (pracowałem: a man says it; pracowałam: a woman)"
+      },
+      "forms": [
+        "pracowałam"
+      ]
+    },
+    {
+      "id": "spokojny",
+      "text": "spokojny",
+      "meaning": {
+        "en": "calm, quiet (spokojny, spokojna, spokojne)"
+      },
+      "forms": [
+        "spokojna",
+        "spokojne"
+      ]
+    },
+    {
+      "id": "przedwczoraj",
+      "text": "przedwczoraj",
+      "meaning": {
+        "en": "the day before yesterday"
+      }
+    },
+    {
+      "id": "temu",
+      "text": "temu",
+      "meaning": {
+        "en": "ago (tydzień temu: a week ago)"
+      }
+    },
+    {
+      "id": "miesiac",
+      "text": "miesiąc",
+      "meaning": {
+        "en": "a month (miesiące: months)"
+      },
+      "forms": [
+        "miesiące"
+      ]
+    },
+    {
+      "id": "w-zeszlym-tygodniu",
+      "text": "w zeszłym tygodniu",
+      "meaning": {
+        "en": "last week"
+      }
+    },
+    {
+      "id": "w-zeszlym-roku",
+      "text": "w zeszłym roku",
+      "meaning": {
+        "en": "last year"
+      }
+    },
+    {
+      "id": "w-zeszla-sobote",
+      "text": "w zeszłą sobotę",
+      "meaning": {
+        "en": "last Saturday"
+      }
+    },
+    {
+      "id": "ostatnio",
+      "text": "ostatnio",
+      "meaning": {
+        "en": "lately, recently"
+      }
+    },
+    {
+      "id": "dni",
+      "text": "dni",
+      "meaning": {
+        "en": "days (dwa dni temu: two days ago)"
+      }
+    },
+    {
+      "id": "chciec-chcialem",
+      "text": "chciałem",
+      "meaning": {
+        "en": "I wanted (chciałem: a man says it; chciałam: a woman)"
+      },
+      "forms": [
+        "chciałam"
+      ]
+    },
+    {
+      "id": "musiec-musialem",
+      "text": "musiałem",
+      "meaning": {
+        "en": "I had to (musiałem: a man says it; musiałam: a woman)"
+      },
+      "forms": [
+        "musiałam"
+      ]
+    },
+    {
+      "id": "widziec-widzialem",
+      "text": "widziałem",
+      "meaning": {
+        "en": "I saw (widziałem: a man says it; widziałam: a woman)"
+      },
+      "forms": [
+        "widziałam"
+      ]
+    },
+    {
+      "id": "myslec-myslalam",
+      "text": "myślałam",
+      "meaning": {
+        "en": "I thought (myślałam: a woman says it; myślałem: a man)"
+      },
+      "forms": [
+        "myślałem"
+      ]
+    },
+    {
+      "id": "obraz",
+      "text": "obraz",
+      "meaning": {
+        "en": "a painting, a picture (obrazy: paintings)"
+      },
+      "forms": [
+        "obrazy"
+      ]
+    },
+    {
+      "id": "w-muzeum",
+      "text": "w muzeum",
+      "meaning": {
+        "en": "at the museum, in the museum"
+      }
+    },
+    {
+      "id": "piekny",
+      "text": "piękny",
+      "meaning": {
+        "en": "beautiful (piękny, piękna, piękne)"
+      },
+      "forms": [
+        "piękna",
+        "piękne"
+      ]
+    },
+    {
+      "id": "miec-mialem",
+      "text": "miałem",
+      "meaning": {
+        "en": "I had (miałem: a man says it; miałam: a woman)"
+      },
+      "forms": [
+        "miałam"
+      ]
+    },
+    {
+      "id": "miec-mial",
+      "text": "miał",
+      "meaning": {
+        "en": "he had, she had (miał: he had; miała: she had)"
+      },
+      "forms": [
+        "miała"
+      ]
+    },
+    {
+      "id": "miec-mielismy",
+      "text": "mieliśmy",
+      "meaning": {
+        "en": "we had (mieliśmy: with a man among us; miałyśmy: women only)"
+      },
+      "forms": [
+        "miałyśmy"
+      ]
+    },
+    {
+      "id": "chciec-chcieliscie",
+      "text": "chcieliście",
+      "meaning": {
+        "en": "you wanted (chcieliście: several people, with a man among them; chciałyście: several women)"
+      },
+      "forms": [
+        "chciałyście"
+      ]
+    },
+    {
+      "id": "wolec-woleli",
+      "text": "woleli",
+      "meaning": {
+        "en": "they preferred (woleli: men, or men and women; wolały: women only)"
+      },
+      "forms": [
+        "wolały"
+      ]
+    },
+    {
+      "id": "wiedziec-wiedzialem",
+      "text": "wiedziałem",
+      "meaning": {
+        "en": "I knew (wiedziałem: a man says it; wiedziałam: a woman)"
+      },
+      "forms": [
+        "wiedziałam"
+      ]
+    },
+    {
+      "id": "rozumiec-rozumialas",
+      "text": "rozumiałaś",
+      "meaning": {
+        "en": "you understood (rozumiałaś: to a woman friend; rozumiałeś: to a man)"
+      },
+      "forms": [
+        "rozumiałeś"
+      ]
+    },
+    {
+      "id": "zupelnie-nic",
+      "text": "zupełnie nic",
+      "meaning": {
+        "en": "nothing at all"
+      }
+    },
+    {
+      "id": "zrobic",
+      "text": "zrobić",
+      "meaning": {
+        "en": "do, make (once; zrobić zdjęcie: to take a photo)"
+      }
+    },
+    {
+      "id": "zadzwonic",
+      "text": "zadzwonić",
+      "meaning": {
+        "en": "call, phone, once (zadzwonić na policję: to call the police)"
+      }
+    },
+    {
+      "id": "prosic-prosilem",
+      "text": "prosiłem",
+      "meaning": {
+        "en": "I asked for something (prosiłem: a man says it; prosiłam: a woman)"
+      },
+      "forms": [
+        "prosiłam"
+      ]
+    },
+    {
+      "id": "ochrona",
+      "text": "ochrona",
+      "meaning": {
+        "en": "security (the guards)"
+      }
+    },
+    {
+      "id": "na-policje",
+      "text": "na policję",
+      "meaning": {
+        "en": "the police (zadzwonić na policję: to call the police)"
+      }
+    },
+    {
+      "id": "smiac-sie-smiali",
+      "text": "śmiali się",
+      "meaning": {
+        "en": "they laughed (śmiali się: men, or men and women; śmiały się: women only)"
+      },
+      "forms": [
+        "śmiały się"
+      ]
+    },
+    {
+      "id": "glosno",
+      "text": "głośno",
+      "meaning": {
+        "en": "loudly, loud"
+      }
+    },
+    {
+      "id": "wstyd",
+      "text": "wstyd",
+      "meaning": {
+        "en": "shame (ale wstyd!: how embarrassing!)"
+      }
+    },
+    {
+      "id": "jesc-jadlem",
+      "text": "jadłem",
+      "meaning": {
+        "en": "I ate (jadłem: a man says it; jadłam: a woman)"
+      },
+      "forms": [
+        "jadłam"
+      ]
+    },
+    {
+      "id": "jesc-jadles",
+      "text": "jadłeś",
+      "meaning": {
+        "en": "you ate (jadłeś: to a man friend; jadłaś: to a woman)"
+      },
+      "forms": [
+        "jadłaś"
+      ]
+    },
+    {
+      "id": "jesc-jadl",
+      "text": "jadł",
+      "meaning": {
+        "en": "he ate, she ate (jadł: he ate; jadła: she ate)"
+      },
+      "forms": [
+        "jadła"
+      ]
+    },
+    {
+      "id": "jesc-jedlismy",
+      "text": "jedliśmy",
+      "meaning": {
+        "en": "we ate (jedliśmy: with a man among us; jadłyśmy: women only)"
+      },
+      "forms": [
+        "jadłyśmy"
+      ]
+    },
+    {
+      "id": "jesc-jedliscie",
+      "text": "jedliście",
+      "meaning": {
+        "en": "you ate (jedliście: several people, with a man among them; jadłyście: several women)"
+      },
+      "forms": [
+        "jadłyście"
+      ]
+    },
+    {
+      "id": "jesc-jedli",
+      "text": "jedli",
+      "meaning": {
+        "en": "they ate (jedli: men, or men and women; jadły: women only)"
+      },
+      "forms": [
+        "jadły"
+      ]
+    },
+    {
+      "id": "sushi",
+      "text": "sushi",
+      "meaning": {
+        "en": "sushi"
+      }
+    },
+    {
+      "id": "marzenie",
+      "text": "marzenie",
+      "meaning": {
+        "en": "a dream, a wish (to moje marzenie: it is my dream)"
+      }
+    },
+    {
+      "id": "pojsc-poszedlem",
+      "text": "poszedłem",
+      "meaning": {
+        "en": "I went (poszedłem: a man says it; poszłam: a woman)"
+      },
+      "forms": [
+        "poszłam"
+      ]
+    },
+    {
+      "id": "pojsc-poszedles",
+      "text": "poszedłeś",
+      "meaning": {
+        "en": "you went (poszedłeś: to a man friend; poszłaś: to a woman)"
+      },
+      "forms": [
+        "poszłaś"
+      ]
+    },
+    {
+      "id": "pojsc-poszedl",
+      "text": "poszedł",
+      "meaning": {
+        "en": "he went, she went (poszedł: he went; poszła: she went)"
+      },
+      "forms": [
+        "poszła"
+      ]
+    },
+    {
+      "id": "pojsc-poszlismy",
+      "text": "poszliśmy",
+      "meaning": {
+        "en": "we went (poszliśmy: with a man among us; poszłyśmy: women only)"
+      },
+      "forms": [
+        "poszłyśmy"
+      ]
+    },
+    {
+      "id": "pojsc-poszliscie",
+      "text": "poszliście",
+      "meaning": {
+        "en": "you went (poszliście: several people, with a man among them; poszłyście: several women)"
+      },
+      "forms": [
+        "poszłyście"
+      ]
+    },
+    {
+      "id": "pojsc-poszli",
+      "text": "poszli",
+      "meaning": {
+        "en": "they went (poszli: men, or men and women; poszły: women only)"
+      },
+      "forms": [
+        "poszły"
+      ]
+    },
+    {
+      "id": "ugotowac-ugotowala",
+      "text": "ugotowała",
+      "meaning": {
+        "en": "she cooked, he cooked (ugotowała: she cooked; ugotował: he cooked)"
+      },
+      "forms": [
+        "ugotował"
+      ]
+    },
+    {
+      "id": "kartka",
+      "text": "kartka",
+      "meaning": {
+        "en": "a note, a piece of paper"
+      }
+    },
+    {
+      "id": "chodzic-chodzilem",
+      "text": "chodziłem",
+      "meaning": {
+        "en": "I used to go, I went often (chodziłem: a man says it; chodziłam: a woman)"
+      },
+      "forms": [
+        "chodziłam"
+      ]
+    },
+    {
+      "id": "isc-szedlem",
+      "text": "szedłem",
+      "meaning": {
+        "en": "I was going, I was walking (szedłem: a man says it; szłam: a woman)"
+      },
+      "forms": [
+        "szłam"
+      ]
+    },
+    {
+      "id": "padal-deszcz",
+      "text": "padał deszcz",
+      "meaning": {
+        "en": "it was raining"
+      }
+    },
+    {
+      "id": "na-premiere",
+      "text": "na premierę",
+      "meaning": {
+        "en": "to a premiere, to a first night"
+      }
+    },
+    {
+      "id": "na-piechote",
+      "text": "na piechotę",
+      "meaning": {
+        "en": "on foot"
+      }
+    },
+    {
+      "id": "siedziec-siedzialem",
+      "text": "siedziałem",
+      "meaning": {
+        "en": "I sat, I was sitting (siedziałem: a man says it; siedziałam: a woman)"
+      },
+      "forms": [
+        "siedziałam"
+      ]
+    },
+    {
+      "id": "przed-komputerem",
+      "text": "przed komputerem",
+      "meaning": {
+        "en": "at the computer, in front of the computer"
+      }
+    },
+    {
+      "id": "w-gorach",
+      "text": "w górach",
+      "meaning": {
+        "en": "in the mountains"
+      }
+    },
+    {
+      "id": "zasieg",
+      "text": "zasięg",
+      "meaning": {
+        "en": "signal, phone coverage (nie miałem zasięgu: I had no signal)"
+      },
+      "forms": [
+        "zasięgu"
+      ]
+    },
+    {
+      "id": "odbierac-odbierales",
+      "text": "odbierałeś",
+      "meaning": {
+        "en": "you answered the phone (odbierałeś: to a man friend; odbierałaś: to a woman)"
+      },
+      "forms": [
+        "odbierałaś"
+      ]
+    },
+    {
+      "id": "odpisywac-odpisywales",
+      "text": "odpisywałeś",
+      "meaning": {
+        "en": "you wrote back, you replied (odpisywałeś: to a man friend; odpisywałaś: to a woman)"
+      },
+      "forms": [
+        "odpisywałaś"
+      ]
+    },
+    {
+      "id": "martwic-sie-martwilismy",
+      "text": "martwiliśmy się",
+      "meaning": {
+        "en": "we were worried (martwiliśmy się: with a man among us; martwiłyśmy się: women only)"
+      },
+      "forms": [
+        "martwiłyśmy się"
+      ]
+    },
+    {
+      "id": "szczesliwy",
+      "text": "szczęśliwy",
+      "meaning": {
+        "en": "happy (szczęśliwy, szczęśliwa, szczęśliwe)"
+      },
+      "forms": [
+        "szczęśliwa",
+        "szczęśliwe"
+      ]
+    },
+    {
+      "id": "telefonu",
+      "text": "telefonu",
+      "meaning": {
+        "en": "the phone (after nie odbierałeś: nie odbierałeś telefonu)"
+      }
+    },
+    {
+      "id": "nastepnie",
+      "text": "następnie",
+      "meaning": {
+        "en": "next, then"
+      }
+    },
+    {
+      "id": "wstac-wstalam",
+      "text": "wstałam",
+      "meaning": {
+        "en": "I got up (wstałam: a woman says it; wstałem: a man)"
+      },
+      "forms": [
+        "wstałem"
+      ]
+    },
+    {
+      "id": "zjesc-zjadlam",
+      "text": "zjadłam",
+      "meaning": {
+        "en": "I ate up, I had (zjadłam: a woman says it; zjadłem: a man)"
+      },
+      "forms": [
+        "zjadłem"
+      ]
+    },
+    {
+      "id": "umyc-umylam",
+      "text": "umyłam",
+      "meaning": {
+        "en": "I washed (umyłam: a woman says it; umyłem: a man; umyłam zęby: I brushed my teeth)"
+      },
+      "forms": [
+        "umyłem"
+      ]
+    },
+    {
+      "id": "odwiedzic",
+      "text": "odwiedzić",
+      "meaning": {
+        "en": "visit (to visit, once)"
+      }
+    },
+    {
+      "id": "szczescie",
+      "text": "szczęście",
+      "meaning": {
+        "en": "happiness; luck (na szczęście: luckily)"
+      }
+    },
+    {
+      "id": "wlasnie",
+      "text": "właśnie",
+      "meaning": {
+        "en": "just, exactly (no właśnie!: exactly!)"
+      }
+    },
+    {
+      "id": "jednoczesnie",
+      "text": "jednocześnie",
+      "meaning": {
+        "en": "at the same time"
+      }
+    }
+  ]
+}

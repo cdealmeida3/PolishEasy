@@ -941,6 +941,45 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 13 of the book over the real course in the light theme`() = chapter13Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 13 of the book over the real course in the dark theme`() = chapter13Tour("dark")
+
+    @Test
+    fun `chapter 13 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter13Tour("large") }
+
+    /**
+     * Chapter 13 over the real course: its Lesson screen at the top and its sections, then the past
+     * of być by gender in section A, mieć with its e and a in section B, and pójść in section C.
+     */
+    private fun chapter13Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l13") }
+        screen.waitForIdle()
+        shot("294-chapter-13")
+        screen.onAllNodes(hasText("Jadłaś już obiad?", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("294-chapter-13-sections")
+        listOf(
+            "kpk1-l13-a2" to "295-chapter-13-byl-byla",
+            "kpk1-l13-b2" to "296-chapter-13-mialem",
+            "kpk1-l13-c2" to "297-chapter-13-poszedlem",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l13")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test
