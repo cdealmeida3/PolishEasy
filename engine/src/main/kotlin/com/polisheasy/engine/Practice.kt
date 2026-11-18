@@ -64,6 +64,10 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     TELL_THE_TIME("tell-the-time", GameGroup.NUMBERS),
     /** Chapter 12's Game: a week's plans heard or read, W piątek o dwudziestej: impreza, and put in the diary at their day and time. */
     WEEK_PLANNER("week-planner", GameGroup.PHRASES),
+    /** Chapter 13's Game: a short story in the past heard or read, Najpierw wstałam o siódmej. Potem umyłam zęby., and its pictures put in order. */
+    STORY_STRIP("story-strip", GameGroup.PHRASES),
+    /** Chapter 13's Game: a sentence in the past heard or read, and who said it, from the verb's ending: byłem, byłam, byliśmy, byłyśmy. */
+    WHO_SAID_IT("who-said-it", GameGroup.VERBS),
 }
 
 /** Whether a Game can be played now. */
@@ -269,7 +273,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

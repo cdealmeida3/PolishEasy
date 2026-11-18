@@ -1045,6 +1045,10 @@
       "text": "Byliśmy pierwszy raz na meczu."
     },
     {
+      "id": "bylismy-w-muzeum",
+      "text": "Byliśmy w muzeum."
+    },
+    {
       "id": "bylo",
       "text": "było"
     },
@@ -1071,6 +1075,10 @@
     {
       "id": "bylysmy",
       "text": "byłyśmy"
+    },
+    {
+      "id": "bylysmy-na-treningu",
+      "text": "Byłyśmy na treningu."
     },
     {
       "id": "bylysmy-w-kinie",
@@ -5093,6 +5101,10 @@
       "text": "jadłeś"
     },
     {
+      "id": "jadlysmy-lody",
+      "text": "Jadłyśmy lody."
+    },
+    {
       "id": "jagody",
       "text": "jagody"
     },
@@ -5519,6 +5531,10 @@
     {
       "id": "jedlismy",
       "text": "jedliśmy"
+    },
+    {
+      "id": "jedlismy-lody",
+      "text": "Jedliśmy lody."
     },
     {
       "id": "jedlismy-pizze",
@@ -6711,6 +6727,10 @@
     {
       "id": "kupilam-sweter",
       "text": "kupiłam sweter"
+    },
+    {
+      "id": "kupilem-nowy-sweter",
+      "text": "Kupiłem nowy sweter."
     },
     {
       "id": "kupon",
@@ -8985,8 +9005,24 @@
       "text": "najpierw"
     },
     {
+      "id": "najpierw-bylam-na-treningu-potem-jadlam-sushi-na",
+      "text": "Najpierw byłam na treningu. Potem jadłam sushi. Następnie poszłam na zakupy. A później kupiłam sweter."
+    },
+    {
+      "id": "najpierw-bylem-w-gorach-potem-padal-deszcz-naste",
+      "text": "Najpierw byłem w górach. Potem padał deszcz. Następnie nie miałem zasięgu. A później wróciłem do domu na piechotę."
+    },
+    {
+      "id": "najpierw-bylem-w-muzeum-potem-widzialem-piekne-o",
+      "text": "Najpierw byłem w muzeum. Potem widziałem piękne obrazy. Następnie chciałem zrobić zdjęcie. A później wszyscy śmiali się głośno."
+    },
+    {
       "id": "najpierw-cebula-jest-smazona-na-oliwie",
       "text": "Najpierw cebula jest smażona na oliwie."
+    },
+    {
+      "id": "najpierw-gralem-w-tenisa-potem-jadlem-lody-naste",
+      "text": "Najpierw grałem w tenisa. Potem jadłem lody. Następnie byłem w kinie. A później wróciłem do domu."
     },
     {
       "id": "najpierw-otwieram-komputer",
@@ -9003,6 +9039,10 @@
     {
       "id": "najpierw-wstalam-nastepnie-zjadlam-sniadanie",
       "text": "Najpierw wstałam, następnie zjadłam śniadanie."
+    },
+    {
+      "id": "najpierw-wstalam-o-siodmej-potem-umylam-zeby-nas",
+      "text": "Najpierw wstałam o siódmej. Potem umyłam zęby. Następnie zjadłam śniadanie. A później poszłam do szkoły."
     },
     {
       "id": "najpierw-wstalem-nastepnie-umylem-zeby",
@@ -10159,6 +10199,10 @@
     {
       "id": "ogladalam-polski-film",
       "text": "oglądałam polski film"
+    },
+    {
+      "id": "ogladalam-polski-film-2",
+      "text": "Oglądałam polski film."
     },
     {
       "id": "ogladam",
@@ -11561,6 +11605,10 @@
       "text": "poszłam do kina"
     },
     {
+      "id": "poszlam-na-zakupy",
+      "text": "Poszłam na zakupy."
+    },
+    {
       "id": "poszlam-wczoraj-na-premiere",
       "text": "poszłam wczoraj na premierę"
     },
@@ -11581,12 +11629,20 @@
       "text": "poszliśmy"
     },
     {
+      "id": "poszlismy-do-kina",
+      "text": "Poszliśmy do kina."
+    },
+    {
       "id": "poszlismy-na-mecz",
       "text": "Poszliśmy na mecz."
     },
     {
       "id": "poszly-do-kina",
       "text": "Poszły do kina."
+    },
+    {
+      "id": "poszlysmy-do-kina",
+      "text": "Poszłyśmy do kina."
     },
     {
       "id": "poszlysmy-na-zakupy",
@@ -15541,6 +15597,10 @@
       "text": "W niedzielę odpoczywam i spotykam się ze znajomymi."
     },
     {
+      "id": "w-niedziele-spalam-i-czytalam",
+      "text": "W niedzielę spałam i czytałam."
+    },
+    {
       "id": "w-niedziele-wrocilem-do-domu",
       "text": "w niedzielę wróciłem do domu"
     },
@@ -15641,12 +15701,20 @@
       "text": "W sobotę Ewa spotyka się ze znajomymi w galerii."
     },
     {
+      "id": "w-sobote-gralem-w-tenisa",
+      "text": "W sobotę grałem w tenisa."
+    },
+    {
       "id": "w-sobote-i-w-niedziele",
       "text": "w sobotę i w niedzielę"
     },
     {
       "id": "w-sobote-jednoczesnie-sprzatal-i-sluchal-muzyki",
       "text": "W sobotę jednocześnie sprzątał i słuchał muzyki."
+    },
+    {
+      "id": "w-sobote-mialysmy-impreze",
+      "text": "W sobotę miałyśmy imprezę."
     },
     {
       "id": "w-sobote-o-jedenastej-sniadanie",
@@ -15857,12 +15925,20 @@
       "text": "wczoraj"
     },
     {
+      "id": "wczoraj-bylam-na-imprezie",
+      "text": "Wczoraj byłam na imprezie."
+    },
+    {
       "id": "wczoraj-bylam-w-kinie",
       "text": "wczoraj byłam w kinie"
     },
     {
       "id": "wczoraj-bylem-w-domu",
       "text": "Wczoraj byłem w domu."
+    },
+    {
+      "id": "wczoraj-bylem-w-kinie",
+      "text": "Wczoraj byłem w kinie."
     },
     {
       "id": "wczoraj-bylem-w-muzeum",
@@ -15879,6 +15955,10 @@
     {
       "id": "wczoraj-mialam-test",
       "text": "wczoraj miałam test"
+    },
+    {
+      "id": "wczoraj-mielismy-test",
+      "text": "Wczoraj mieliśmy test."
     },
     {
       "id": "wczoraj-musialam-pracowac",
@@ -16355,6 +16435,10 @@
     {
       "id": "wstalam",
       "text": "wstałam"
+    },
+    {
+      "id": "wstalam-o-siodmej",
+      "text": "Wstałam o siódmej."
     },
     {
       "id": "wstawac",

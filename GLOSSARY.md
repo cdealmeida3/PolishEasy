@@ -137,6 +137,10 @@ _Avoid_: Gender quiz, demonstratives game
 The Game of saying, against the clock, whether two learned adjectives shown in the same gender are opposites, as *wesoły* and *smutny* are. Chapter 4's Game.
 _Avoid_: Antonym quiz, opposites match
 
+**Who said it?**:
+The Game of telling who said a sentence in the past from its verb's ending: a man (*byłem*), a woman (*byłam*), a group with a man in it (*byliśmy*) or women only (*byłyśmy*). Chapter 13's second Game.
+_Avoid_: Gender quiz, Speaker game
+
 **Who's who**:
 The Game of saying who someone is by their job, *on jest lekarzem*, by choosing the job's instrumental after *jest*. Chapter 5's Game.
 _Avoid_: Jobs quiz, profession game
@@ -180,6 +184,10 @@ _Avoid_: Supermarket game, aisle quiz
 **Take the order**:
 The Game of writing each guest's dish on a waiter's pad as a table orders in Polish: *Dla mnie żurek. A dla mnie to samo.* Chapter 10's Game.
 _Avoid_: Restaurant game, waiter quiz
+
+**Story strip**:
+The Game of putting a short story's pictures in order as it is heard or read in the past: *Najpierw wstałam o siódmej. Potem umyłam zęby.* Chapter 13's Game.
+_Avoid_: Comic game, Picture order
 
 **Tell the time**:
 The Game of saying a time on a clock face as the book says it, *pięć po ósmej*, *wpół do dziewiątej*, *za kwadrans dziewiąta*, or finding the face for a time said. Chapter 12's Game.

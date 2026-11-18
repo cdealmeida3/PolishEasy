@@ -125,6 +125,18 @@ fun polishContent(files: ContentFiles): PolishContent {
         content.practice?.week?.plans.orEmpty().forEachIndexed { index, plan ->
             sentence(plan.text, plan.meaning, PolishUse(file, "week/plans/${index + 1}", PolishRole.PROMPT))
         }
+        // Story strip's sentences, each with what it means, and each story told whole; Who said it?'s lines.
+        content.practice?.stories.orEmpty().forEachIndexed { index, story ->
+            story.panels.forEachIndexed { panel, it -> sentence(it.text, it.meaning, PolishUse(file, "stories/${index + 1}/${panel + 1}", PolishRole.PROMPT)) }
+            sentence(
+                story.panels.joinToString(" ") { it.text },
+                mapOf(language to story.panels.joinToString(" ") { it.meaning[language].orEmpty() }),
+                PolishUse(file, "stories/${index + 1}", PolishRole.PROMPT),
+            )
+        }
+        content.practice?.speakers.orEmpty().forEachIndexed { index, line ->
+            sentence(line.text, line.meaning, PolishUse(file, "speakers/${index + 1}", PolishRole.PROMPT))
+        }
         content.course().allClockTimes().forEach { time ->
             sentence(time.polish, mapOf(language to "${time.hour}:${time.minute.toString().padStart(2, '0')}"), PolishUse(file, "clock", PolishRole.ANSWER))
         }

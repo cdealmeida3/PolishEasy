@@ -49,7 +49,7 @@ internal fun spoken(script: ChatScript): List<String> =
  * chats, what Ankieta's people say, the letters' names, Market list's goods, alone and in the
  * plural (*gruszka*, *gruszki*), Take the order's words and dishes, Negation flip's negations,
  * Family tree's people with "my" (*mój wujek*), the times Tell the time says (*wpół do dziewiątej*)
- * and Week planner's plans.
+ * Week planner's plans, Story strip's stories, each told whole, and Who said it?'s lines.
  * Each needs a Clip.
  */
 fun Course.spokenTexts(): List<String> =
@@ -64,7 +64,9 @@ fun Course.spokenTexts(): List<String> =
             negations.map { it.no } +
             familyPhrases() +
             clockPhrases() +
-            week?.plans.orEmpty().map { it.text }
+            week?.plans.orEmpty().map { it.text } +
+            stories.map { it.text } +
+            speakers.map { it.text }
         )
         .distinctBy(::audioKey)
 

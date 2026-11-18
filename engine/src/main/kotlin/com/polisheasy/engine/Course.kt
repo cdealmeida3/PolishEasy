@@ -68,6 +68,10 @@ data class Course(
     val clock: ClockWords? = null,
     /** The diary of Week planner, or null if the content has none. */
     val week: Week? = null,
+    /** The stories of Story strip, in the content's order. */
+    val stories: List<Story> = emptyList(),
+    /** The lines of Who said it?, in the content's order. */
+    val speakers: List<SpeakerLine> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }
