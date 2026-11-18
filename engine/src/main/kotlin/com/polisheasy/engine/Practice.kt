@@ -68,6 +68,10 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     STORY_STRIP("story-strip", GameGroup.PHRASES),
     /** Chapter 13's Game: a sentence in the past heard or read, and who said it, from the verb's ending: byłem, byłam, byliśmy, byłyśmy. */
     WHO_SAID_IT("who-said-it", GameGroup.VERBS),
+    /** Chapter 14's Game: a route heard or read, Proszę iść prosto, potem skręcić w lewo., and the place on a small map it leads to. */
+    DIRECTIONS("directions", GameGroup.PHRASES),
+    /** Chapter 14's Game: a sentence with its noun marked, Kocham tatę., and the pronoun that says it shorter: go, ją, je, ich, or after na, niego, nią, nich. */
+    PRONOUN_SWAP("pronoun-swap", GameGroup.WORDS),
 }
 
 /** Whether a Game can be played now. */
@@ -273,7 +277,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt, Directions, PronounSwap).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

@@ -11,6 +11,9 @@ import com.polisheasy.app.R
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.graphics.Color
 
 /** Bundled, so the app stays offline. Its licence text is `res/raw/nunito_ofl.txt`. */
 private val Nunito = FontFamily(
@@ -55,6 +58,16 @@ private val Polish = LocaleList("pl")
 
 /** Polish standing inside a sentence of the Base Language: Nunito at its heaviest, and said with a Polish voice. */
 private val PolishInProse = SpanStyle(fontFamily = Nunito, fontWeight = FontWeight.ExtraBold, localeList = Polish)
+
+/**
+ * A sentence with one word marked, the word a Game asks about: [word] between [before] and
+ * [after], at its heaviest, underlined and in [color].
+ */
+fun withMarked(before: String, word: String, after: String, color: Color): AnnotatedString = buildAnnotatedString {
+    append(before)
+    withStyle(SpanStyle(color = color, fontWeight = FontWeight.ExtraBold, textDecoration = TextDecoration.Underline)) { append(word) }
+    append(after)
+}
 
 /**
  * [text] with the stretches at [polish] set apart as Polish, so the eye finds the words being

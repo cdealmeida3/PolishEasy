@@ -1889,8 +1889,52 @@
             "text": "Czekam na SMS."
         },
         {
+            "text": "Czekam na autobus.",
+            "meaning": "I'm waiting for the bus."
+        },
+        {
             "text": "Czekam na ciebie (ty). Lubisz nas (my)? Znam ich (oni).",
             "meaning": "I am waiting for you. Do you like us? I know them."
+        },
+        {
+            "text": "Czekam na ciocię.",
+            "meaning": "I'm waiting for my aunt."
+        },
+        {
+            "text": "Czekam na niego.",
+            "meaning": "I'm waiting for him."
+        },
+        {
+            "text": "Czekam na niego.",
+            "meaning": "I'm waiting for it."
+        },
+        {
+            "text": "Czekam na nią.",
+            "meaning": "I'm waiting for her."
+        },
+        {
+            "text": "Czekam na tatę.",
+            "meaning": "I'm waiting for dad."
+        },
+        {
+            "text": "Czekam na żonę.",
+            "meaning": "I'm waiting for my wife."
+        },
+        {
+            "text": "Czekamy na brata.",
+            "meaning": "We're waiting for my brother."
+        },
+        {
+            "text": "Czekamy na nich.",
+            "meaning": "We're waiting for them."
+        },
+        {
+            "text": "Czekamy na niego.",
+            "meaning": "We're waiting for him."
+        },
+        {
+            "text": "Czekamy na rodziców.",
+            "meaning": "We're waiting for the parents."
         },
         {
             "text": "Czekolada była…",
@@ -2255,6 +2299,18 @@
         },
         {
             "text": "Czyta książkę."
+        },
+        {
+            "text": "Czytam gazetę.",
+            "meaning": "I'm reading the newspaper."
+        },
+        {
+            "text": "Czytam ją.",
+            "meaning": "I'm reading it."
+        },
+        {
+            "text": "Czytam książkę.",
+            "meaning": "I'm reading a book."
         },
         {
             "text": "Czytam książkę. Lubisz czytać?"
@@ -5040,12 +5096,20 @@
             "meaning": "I eat bread."
         },
         {
+            "text": "Jem ją.",
+            "meaning": "I'm eating it."
+        },
+        {
             "text": "Jem kanapkę z szynką.",
             "meaning": "I am eating a ham sandwich."
         },
         {
             "text": "Jem ser.",
             "meaning": "I eat cheese."
+        },
+        {
+            "text": "Jem zupę.",
+            "meaning": "I'm eating soup."
         },
         {
             "text": "Jest chora."
@@ -5668,6 +5732,34 @@
             "text": "Klub, piwo, a potem tańce."
         },
         {
+            "text": "Kocham go.",
+            "meaning": "I love him."
+        },
+        {
+            "text": "Kocham ich.",
+            "meaning": "I love them."
+        },
+        {
+            "text": "Kocham ją.",
+            "meaning": "I love her."
+        },
+        {
+            "text": "Kocham męża.",
+            "meaning": "I love my husband."
+        },
+        {
+            "text": "Kocham rodziców.",
+            "meaning": "I love my parents."
+        },
+        {
+            "text": "Kocham tatę.",
+            "meaning": "I love dad."
+        },
+        {
+            "text": "Kocham żonę.",
+            "meaning": "I love my wife."
+        },
+        {
             "text": "Kogo ma ta kobieta?",
             "meaning": "Who does this woman have?"
         },
@@ -5894,6 +5986,14 @@
             "text": "Kupuje też maliny."
         },
         {
+            "text": "Kupuję bilety.",
+            "meaning": "I'm buying the tickets."
+        },
+        {
+            "text": "Kupuję je.",
+            "meaning": "I'm buying them."
+        },
+        {
             "text": "Kurczak jest smażony.",
             "meaning": "The chicken is fried."
         },
@@ -6045,12 +6145,20 @@
             "text": "Lubię biegać i pływać."
         },
         {
+            "text": "Lubię go.",
+            "meaning": "I like it."
+        },
+        {
             "text": "Lubię grać na gitarze i w szachy.",
             "meaning": "I like playing the guitar and chess."
         },
         {
             "text": "Lubię herbatę, ale nie lubię kawy.",
             "meaning": "I like tea, but I don't like coffee."
+        },
+        {
+            "text": "Lubię je.",
+            "meaning": "I like them."
         },
         {
             "text": "Lubię jeździć na rowerze i pływać.",
@@ -6065,8 +6173,16 @@
             "meaning": "I like I ride a bike and swimming."
         },
         {
+            "text": "Lubię ją.",
+            "meaning": "I like it."
+        },
+        {
             "text": "Lubię kawę.",
             "meaning": "I like coffee."
+        },
+        {
+            "text": "Lubię kota.",
+            "meaning": "I like the cat."
         },
         {
             "text": "Lubię malować i słuchać muzyki.",
@@ -6105,6 +6221,10 @@
         {
             "text": "Lubię wędzony ser.",
             "meaning": "I like smoked cheese."
+        },
+        {
+            "text": "Lubię zdjęcia.",
+            "meaning": "I like photos."
         },
         {
             "text": "Lubię zimne mleko.",
@@ -8028,6 +8148,14 @@
             "text": "Ogląda zdjęcia."
         },
         {
+            "text": "Oglądam film.",
+            "meaning": "I'm watching a film."
+        },
+        {
+            "text": "Oglądam go.",
+            "meaning": "I'm watching it."
+        },
+        {
             "text": "Oglądałam polski film.",
             "meaning": "I watched a Polish film."
         },
@@ -8929,6 +9057,14 @@
             "meaning": "Tea with lemon, please."
         },
         {
+            "text": "Proszę iść prosto i skręcić w lewo.",
+            "meaning": "Go straight on and turn left, please."
+        },
+        {
+            "text": "Proszę iść prosto i skręcić w prawo.",
+            "meaning": "Go straight on and turn right, please."
+        },
+        {
             "text": "Proszę iść prosto!",
             "meaning": "Go straight on!"
         },
@@ -8940,7 +9076,44 @@
             "text": "Proszę iść prosto, a potem skręcić w prawo."
         },
         {
-            "text": "Proszę iść prosto, potem skręcić w lewo, a następnie w prawo."
+            "text": "Proszę iść prosto, potem skręcić w lewo, a następnie w prawo.",
+            "meaning": "Go straight on, then turn left, and next right, please."
+        },
+        {
+            "text": "Proszę iść prosto, potem skręcić w lewo.",
+            "meaning": "Go straight on, then turn left, please."
+        },
+        {
+            "text": "Proszę iść prosto, potem skręcić w prawo, a następnie w lewo.",
+            "meaning": "Go straight on, then turn right, and next left, please."
+        },
+        {
+            "text": "Proszę iść prosto, potem skręcić w prawo.",
+            "meaning": "Go straight on, then turn right, please."
+        },
+        {
+            "text": "Proszę iść prosto, potem w lewo, w prawo i jeszcze raz w prawo.",
+            "meaning": "Go straight on, then left, right, and right once more, please."
+        },
+        {
+            "text": "Proszę iść prosto, w lewo, a potem w prawo.",
+            "meaning": "Go straight on, left, and then right, please."
+        },
+        {
+            "text": "Proszę iść prosto, w prawo, a potem w lewo.",
+            "meaning": "Go straight on, right, and then left, please."
+        },
+        {
+            "text": "Proszę iść prosto.",
+            "meaning": "Go straight on, please."
+        },
+        {
+            "text": "Proszę jechać prosto i skręcić w lewo.",
+            "meaning": "Drive straight on and turn left, please."
+        },
+        {
+            "text": "Proszę jechać prosto, potem skręcić w prawo.",
+            "meaning": "Drive straight on, then turn right, please."
         },
         {
             "text": "Proszę małą wodę.",
@@ -10152,6 +10325,10 @@
         {
             "text": "To auto jest duże.",
             "meaning": "This car is big."
+        },
+        {
+            "text": "To blisko. Proszę iść prosto.",
+            "meaning": "It's near. Go straight on, please."
         },
         {
             "text": "To był spokojny weekend."
@@ -11806,7 +11983,31 @@
             "meaning": "The potatoes are boiled."
         },
         {
+            "text": "Znam ciocię.",
+            "meaning": "I know my aunt."
+        },
+        {
+            "text": "Znam go.",
+            "meaning": "I know him."
+        },
+        {
+            "text": "Znam ich.",
+            "meaning": "I know them."
+        },
+        {
+            "text": "Znam ją.",
+            "meaning": "I know her."
+        },
+        {
+            "text": "Znam rodziców.",
+            "meaning": "I know the parents."
+        },
+        {
             "text": "Znam twojego brata."
+        },
+        {
+            "text": "Znam wujka.",
+            "meaning": "I know my uncle."
         },
         {
             "text": "Znanym poetą."

@@ -39,6 +39,8 @@ import com.polisheasy.engine.AisleRound
 import com.polisheasy.engine.ClockRound
 import com.polisheasy.engine.PlannerRound
 import com.polisheasy.engine.SpeakerRound
+import com.polisheasy.engine.DirectionsRound
+import com.polisheasy.engine.SwapRound
 import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.FlipRound
 import com.polisheasy.engine.TimeRound
@@ -102,6 +104,8 @@ internal fun RoundScreen(
         is PlannerRound -> WeekPlannerStep(round, say, onMove)
         is StoryRound -> StoryStripStep(round, say, onMove)
         is SpeakerRound -> WhoSaidItStep(round, say, onMove)
+        is DirectionsRound -> DirectionsStep(round, say, onMove)
+        is SwapRound -> PronounSwapStep(round, say, onMove)
         else -> error("No screen for a Round of ${round.game}")
     }
 }
