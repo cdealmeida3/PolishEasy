@@ -1,0 +1,478 @@
+{
+  "id": "kpk1-l15-e1",
+  "section": {
+    "letter": "E",
+    "heading": "Zaimki",
+    "meaning": {
+      "en": "Pronouns"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-e1-t01",
+      "before": "kpk1-l15-e1-e01",
+      "title": {
+        "en": "Dzwonię do ciebie"
+      },
+      "body": {
+        "en": "After *do* a pronoun is in the genitive: *dzwonię do ciebie* (I'm calling you), *do niego* (him), *do niej* (her), *do nich* (them), *do mnie* (me), *do nas*, *do was*. *Dzwonić do* is to phone someone. After *do* the pronoun of *on*, *ona* and *oni* begins with *n*."
+      },
+      "table": {
+        "title": {
+          "en": "ja, ty, on… · whom? (the genitive)"
+        },
+        "columns": [
+          {
+            "header": "szukam…"
+          },
+          {
+            "header": "dzwonię…"
+          }
+        ],
+        "rows": [
+          {
+            "header": "ja",
+            "cells": [
+              "mnie",
+              "do mnie"
+            ]
+          },
+          {
+            "header": "ty",
+            "cells": [
+              "ciebie, cię",
+              "do ciebie"
+            ]
+          },
+          {
+            "header": "on",
+            "cells": [
+              "jego, go",
+              "do niego"
+            ]
+          },
+          {
+            "header": "ona",
+            "cells": [
+              "jej",
+              "do niej"
+            ]
+          },
+          {
+            "header": "my",
+            "cells": [
+              "nas",
+              "do nas"
+            ]
+          },
+          {
+            "header": "wy",
+            "cells": [
+              "was",
+              "do was"
+            ]
+          },
+          {
+            "header": "oni, one",
+            "cells": [
+              "ich",
+              "do nich"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e1-e01",
+      "prompt": "dzwonię",
+      "options": [
+        {
+          "en": "I'm waiting"
+        },
+        {
+          "en": "I'm writing"
+        },
+        {
+          "en": "I'm calling, I phone"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dzwonic-dzwonie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e1-e02",
+      "prompt": "do ciebie",
+      "options": [
+        {
+          "en": "to you (one friend: dzwonię do ciebie)"
+        },
+        {
+          "en": "to me"
+        },
+        {
+          "en": "to him"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-ciebie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-e1-e03",
+      "text": "dzwonię do ciebie",
+      "meaning": {
+        "en": "I'm calling you"
+      },
+      "distractors": [
+        "dzwonię do niego",
+        "dzwonisz do mnie"
+      ],
+      "items": [
+        "dzwonic-dzwonie",
+        "do-ciebie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e1-e04",
+      "prompt": "do niego",
+      "options": [
+        {
+          "en": "to her"
+        },
+        {
+          "en": "to him (dzwonię do niego)"
+        },
+        {
+          "en": "to them"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-niego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e1-e05",
+      "prompt": "do niej",
+      "options": [
+        {
+          "en": "to him"
+        },
+        {
+          "en": "to us"
+        },
+        {
+          "en": "to her (dzwonię do niej)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-niej"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l15-e1-e06",
+      "verb": "dzwonić",
+      "meaning": {
+        "en": "to call, to phone"
+      },
+      "person": "ja",
+      "sentence": "Często ___ do niej.",
+      "sentenceMeaning": {
+        "en": "I often call her."
+      },
+      "acceptedAnswers": [
+        "dzwonię"
+      ],
+      "items": [
+        "czesto",
+        "dzwonic-dzwonie",
+        "do-niej"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e1-e07",
+      "prompt": "do nich",
+      "options": [
+        {
+          "en": "to them (dzwonię do nich)"
+        },
+        {
+          "en": "to her"
+        },
+        {
+          "en": "to you (several people)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-nich"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e1-e08",
+      "prompt": "do mnie",
+      "options": [
+        {
+          "en": "to you (one friend)"
+        },
+        {
+          "en": "to me (dzwonisz do mnie?)"
+        },
+        {
+          "en": "to us"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-mnie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-e1-e09",
+      "prompt": {
+        "en": "are you calling me?"
+      },
+      "acceptedAnswers": [
+        "dzwonisz do mnie?"
+      ],
+      "distractors": [
+        "ciebie",
+        "niego"
+      ],
+      "items": [
+        "dzwonic-dzwonisz",
+        "do-mnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e1-e10",
+      "prompt": "do nas",
+      "options": [
+        {
+          "en": "to them"
+        },
+        {
+          "en": "to me"
+        },
+        {
+          "en": "to us (dzwonisz do nas?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-nas"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e1-e11",
+      "prompt": "do was",
+      "options": [
+        {
+          "en": "to you (several people: dzwonię do was)"
+        },
+        {
+          "en": "to us"
+        },
+        {
+          "en": "to them"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-was"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l15-e1-e12",
+      "verb": "dzwonić",
+      "meaning": {
+        "en": "to call, to phone"
+      },
+      "person": "ty",
+      "sentence": "Dlaczego nie ___ do nas?",
+      "sentenceMeaning": {
+        "en": "Why don't you call us?"
+      },
+      "acceptedAnswers": [
+        "dzwonisz"
+      ],
+      "items": [
+        "dlaczego",
+        "nie",
+        "dzwonic-dzwonisz",
+        "do-nas"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-e1-e13",
+      "text": "Gdzie jest Adam? Dzwonię do ___. A Ewa? Dzwonię też do ___.",
+      "meaning": {
+        "en": "Where is Adam? I am calling him. And Ewa? I am calling her too."
+      },
+      "gaps": [
+        [
+          "niego"
+        ],
+        [
+          "niej"
+        ]
+      ],
+      "distractors": [
+        "nich",
+        "mnie"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "adam",
+        "dzwonic-dzwonie",
+        "do-niego",
+        "a",
+        "ewa",
+        "tez",
+        "do-niej"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-e1-e14",
+      "acceptedAnswers": [
+        "dzwonię do was"
+      ],
+      "meaning": {
+        "en": "I'm calling you (several people)"
+      },
+      "items": [
+        "dzwonic-dzwonie",
+        "do-was"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-e1-e15",
+      "prompt": {
+        "en": "I'm calling them"
+      },
+      "acceptedAnswers": [
+        "dzwonię do nich"
+      ],
+      "items": [
+        "dzwonic-dzwonie",
+        "do-nich"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-e1-e16",
+      "pairs": [
+        {
+          "polish": "do mnie",
+          "meaning": {
+            "en": "to me"
+          }
+        },
+        {
+          "polish": "do ciebie",
+          "meaning": {
+            "en": "to you"
+          }
+        },
+        {
+          "polish": "do niego",
+          "meaning": {
+            "en": "to him"
+          }
+        },
+        {
+          "polish": "do niej",
+          "meaning": {
+            "en": "to her"
+          }
+        },
+        {
+          "polish": "do nas",
+          "meaning": {
+            "en": "to us"
+          }
+        },
+        {
+          "polish": "do nich",
+          "meaning": {
+            "en": "to them"
+          }
+        }
+      ],
+      "items": [
+        "do-mnie",
+        "do-ciebie",
+        "do-niego",
+        "do-niej",
+        "do-nas",
+        "do-nich"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-e1-e17",
+      "lines": [
+        "Adam dzwoni do Ewy, ale ona nie odbiera.",
+        "Potem dzwoni do niej jeszcze raz.",
+        "Ewa nie słyszała telefonu.",
+        "Wieczorem pyta Adama: czy dzwoniłeś do mnie?"
+      ],
+      "meaning": {
+        "en": "A missed call."
+      },
+      "statements": [
+        {
+          "text": "Adam dzwoni do Ewy.",
+          "meaning": {
+            "en": "Adam calls Ewa."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa dzwoni do Adama.",
+          "meaning": {
+            "en": "Ewa calls Adam."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa nie słyszała telefonu.",
+          "meaning": {
+            "en": "Ewa did not hear the phone."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "do-niej",
+        "jeszcze-raz",
+        "do-mnie"
+      ]
+    }
+  ]
+}

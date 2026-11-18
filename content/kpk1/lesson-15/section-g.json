@@ -1,0 +1,446 @@
+{
+  "id": "kpk1-l15-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-g-t01",
+      "before": "kpk1-l15-g-e01",
+      "title": {
+        "en": "Co masz w torbie?"
+      },
+      "body": {
+        "en": "*Co masz w torbie?* is what have you got in your bag? A *paczka chusteczek* is a packet of tissues, *guma do żucia* is chewing gum, and *sałatka jarzynowa* is the Polish vegetable salad with mayonnaise. *Za dużo* is too much, or too many."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-g-e01",
+      "prompt": "w torbie",
+      "options": [
+        {
+          "en": "in the bag"
+        },
+        {
+          "en": "at home"
+        },
+        {
+          "en": "in the car"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-torbie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-g-e02",
+      "text": "co masz w torbie?",
+      "meaning": {
+        "en": "what have you got in your bag?"
+      },
+      "distractors": [
+        "co masz w domu?",
+        "co mam w torbie?"
+      ],
+      "items": [
+        "co",
+        "miec-masz",
+        "w-torbie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-g-e03",
+      "prompt": "chusteczki",
+      "options": [
+        {
+          "en": "matches"
+        },
+        {
+          "en": "tissues (paczka chusteczek: a packet of tissues)"
+        },
+        {
+          "en": "sweets"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chusteczki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-g-e04",
+      "prompt": "guma do żucia",
+      "options": [
+        {
+          "en": "a sweet"
+        },
+        {
+          "en": "chocolate"
+        },
+        {
+          "en": "chewing gum"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "guma-do-zucia"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-g-e05",
+      "prompt": {
+        "en": "a packet of tissues and chewing gum"
+      },
+      "acceptedAnswers": [
+        "paczka chusteczek i guma do żucia"
+      ],
+      "distractors": [
+        "pudełko",
+        "chusteczki"
+      ],
+      "items": [
+        "paczka",
+        "chusteczki",
+        "i",
+        "guma-do-zucia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-g-e06",
+      "prompt": "sałatka jarzynowa",
+      "options": [
+        {
+          "en": "a vegetable salad with mayonnaise"
+        },
+        {
+          "en": "vegetable soup"
+        },
+        {
+          "en": "a fruit salad"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "salatka-jarzynowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-g-e07",
+      "prompt": "za dużo",
+      "options": [
+        {
+          "en": "too little, not enough"
+        },
+        {
+          "en": "too much, too many"
+        },
+        {
+          "en": "a lot"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "za-duzo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-g-e08",
+      "text": "Co masz ___? Paczkę ___.",
+      "meaning": {
+        "en": "What have you got in your bag? A packet of tissues."
+      },
+      "gaps": [
+        [
+          "w torbie"
+        ],
+        [
+          "chusteczek"
+        ]
+      ],
+      "distractors": [
+        "w domu",
+        "chusteczki"
+      ],
+      "items": [
+        "co",
+        "miec-masz",
+        "w-torbie",
+        "paczka",
+        "chusteczki"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-g-e09",
+      "acceptedAnswers": [
+        "jeszcze poproszę kawałek ciasta"
+      ],
+      "meaning": {
+        "en": "and I'd also like a piece of cake, please"
+      },
+      "items": [
+        "jeszcze-poprosze",
+        "kawalek",
+        "ciasto-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-g-e10",
+      "prompt": {
+        "en": "a jar of mustard"
+      },
+      "acceptedAnswers": [
+        "słoik musztardy"
+      ],
+      "items": [
+        "sloik",
+        "musztarda-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-g-e11",
+      "prompt": {
+        "en": "a picnic"
+      },
+      "acceptedAnswers": [
+        "piknik"
+      ],
+      "items": [
+        "piknik"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-g-e12",
+      "text": "na piknik idzie dużo osób",
+      "meaning": {
+        "en": "a lot of people are going to the picnic"
+      },
+      "distractors": [
+        "na piknik idzie mało osób",
+        "na piknik idzie kilka osób"
+      ],
+      "items": [
+        "na-piknik",
+        "isc-idzie",
+        "duzo",
+        "osoba"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-g-e13",
+      "pairs": [
+        {
+          "polish": "puszka coli",
+          "meaning": {
+            "en": "a can of cola"
+          }
+        },
+        {
+          "polish": "pięć butelek",
+          "meaning": {
+            "en": "five bottles"
+          }
+        },
+        {
+          "polish": "dużo osób",
+          "meaning": {
+            "en": "a lot of people"
+          }
+        },
+        {
+          "polish": "do niej",
+          "meaning": {
+            "en": "to her"
+          }
+        },
+        {
+          "polish": "znaczek",
+          "meaning": {
+            "en": "a stamp"
+          }
+        },
+        {
+          "polish": "nie ma sprawy",
+          "meaning": {
+            "en": "no problem"
+          }
+        }
+      ],
+      "items": [
+        "puszka",
+        "cola",
+        "piec",
+        "butelka",
+        "duzo",
+        "osoba",
+        "do-niej",
+        "znaczek",
+        "nie-ma-sprawy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-g-e14",
+      "lines": [
+        "W torbie jest paczka chusteczek, butelka wody i guma do żucia.",
+        "Jest też sałatka jarzynowa, ale nie ma jabłek.",
+        "To dużo, ale nie za dużo!"
+      ],
+      "meaning": {
+        "en": "What is in the bag?"
+      },
+      "statements": [
+        {
+          "text": "W torbie jest guma do żucia.",
+          "meaning": {
+            "en": "There is chewing gum in the bag."
+          },
+          "true": true
+        },
+        {
+          "text": "W torbie są jabłka.",
+          "meaning": {
+            "en": "There are apples in the bag."
+          },
+          "true": false
+        },
+        {
+          "text": "W torbie jest sałatka jarzynowa.",
+          "meaning": {
+            "en": "There is a vegetable salad in the bag."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "w-torbie",
+        "paczka",
+        "chusteczki",
+        "butelka",
+        "woda-gen",
+        "guma-do-zucia",
+        "salatka-jarzynowa",
+        "jablek",
+        "za-duzo"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-g-e15",
+      "lines": [
+        "Ile butelek wody kupujemy?",
+        "Dziesięć butelek?",
+        "To za dużo!",
+        "To cztery butelki."
+      ],
+      "meaning": {
+        "en": "How much water?"
+      },
+      "items": [
+        "ile",
+        "butelka",
+        "woda-gen",
+        "kupowac-kupujemy",
+        "dziesiec",
+        "to",
+        "za-duzo",
+        "cztery"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-g-e16",
+      "pairs": [
+        {
+          "polish": "poczta",
+          "meaning": {
+            "en": "a post office"
+          }
+        },
+        {
+          "polish": "paczkomat",
+          "meaning": {
+            "en": "a parcel locker"
+          }
+        },
+        {
+          "polish": "awizo",
+          "meaning": {
+            "en": "a delivery notice"
+          }
+        },
+        {
+          "polish": "nie ma problemu",
+          "meaning": {
+            "en": "no problem"
+          }
+        },
+        {
+          "polish": "do was",
+          "meaning": {
+            "en": "to you (several people)"
+          }
+        },
+        {
+          "polish": "jego",
+          "meaning": {
+            "en": "him (stressed)"
+          }
+        }
+      ],
+      "items": [
+        "poczta",
+        "paczkomat",
+        "awizo",
+        "nie-ma-problemu",
+        "do-was",
+        "jego-gen"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l15-g-e17",
+      "verb": "potrzebować",
+      "meaning": {
+        "en": "to need"
+      },
+      "person": "ja",
+      "sentence": "Na piknik ___ dużo wody.",
+      "sentenceMeaning": {
+        "en": "For the picnic I need a lot of water."
+      },
+      "acceptedAnswers": [
+        "potrzebuję"
+      ],
+      "items": [
+        "na-piknik",
+        "potrzebowac-potrzebuje",
+        "duzo",
+        "woda-gen"
+      ]
+    }
+  ]
+}

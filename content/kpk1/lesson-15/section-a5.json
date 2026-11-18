@@ -1,0 +1,443 @@
+{
+  "id": "kpk1-l15-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Puszki, paczki i pudełka",
+    "meaning": {
+      "en": "Cans, packets and boxes"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-a5-t01",
+      "before": "kpk1-l15-a5-e01",
+      "title": {
+        "en": "Ćwierć kilo białego sera"
+      },
+      "body": {
+        "en": "At the counter the seller says *słucham?* (yes, please?). An adjective after a container is in the genitive too: *słoik dżemu malinowego* (a jar of raspberry jam), *kawałek żółtego sera* (a piece of hard cheese), *ćwierć kilo białego sera* (a quarter of a kilo of curd cheese), *paczka czarnej herbaty*. *Jeszcze poproszę…* asks for one more thing."
+      }
+    },
+    {
+      "id": "kpk1-l15-a5-t02",
+      "before": "kpk1-l15-a5-e08",
+      "title": {
+        "en": "Gram, gramy, gramów"
+      },
+      "body": {
+        "en": "*Ćwierć kilo* is 250 grams. One *gram*; after *dwa*, *trzy* and *cztery*, *gramy*; from *pięć* to *dwadzieścia jeden*, *gramów*: *dwadzieścia gramów*. Part B shows that most words count this way."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a5-e01",
+      "prompt": "malinowego",
+      "options": [
+        {
+          "en": "strawberry (after słoik, nie mam…)"
+        },
+        {
+          "en": "apple (after karton, nie mam…)"
+        },
+        {
+          "en": "raspberry (malinowego for a masculine noun, malinowej for a feminine one, after słoik, nie mam…: słoik dżemu malinowego)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "malinowy-gen"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-a5-e02",
+      "text": "słoik dżemu malinowego",
+      "meaning": {
+        "en": "a jar of raspberry jam"
+      },
+      "distractors": [
+        "słoik miodu",
+        "dwa słoiki dżemu"
+      ],
+      "items": [
+        "sloik",
+        "dzem-gen",
+        "malinowy-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a5-e03",
+      "prompt": "żółtego",
+      "options": [
+        {
+          "en": "yellow (żółtego for a masculine noun, żółtej for a feminine one, after kawałek, nie mam…: kawałek żółtego sera)"
+        },
+        {
+          "en": "white (after kawałek, nie mam…: kawałek białego sera)"
+        },
+        {
+          "en": "green (after paczka, nie mam…)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zolty-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a5-e04",
+      "prompt": "chudego",
+      "options": [
+        {
+          "en": "smoked (after plasterek, nie mam…)"
+        },
+        {
+          "en": "lean (chudego for a masculine noun, chudej for a feminine one, after plasterek, nie mam…: plasterek chudej szynki)"
+        },
+        {
+          "en": "cheap (after kawałek, nie mam…)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chudy-gen"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-a5-e05",
+      "prompt": {
+        "en": "a piece of hard (yellow) cheese"
+      },
+      "acceptedAnswers": [
+        "kawałek żółtego sera"
+      ],
+      "distractors": [
+        "białego",
+        "plasterek"
+      ],
+      "items": [
+        "kawalek",
+        "zolty-gen",
+        "ser-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a5-e06",
+      "prompt": "ćwierć kilo",
+      "options": [
+        {
+          "en": "half a kilo"
+        },
+        {
+          "en": "a kilo"
+        },
+        {
+          "en": "a quarter of a kilo (250 grams)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "cwierc-kilo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a5-e07",
+      "prompt": "gram",
+      "options": [
+        {
+          "en": "a gram (dwa gramy, pięć gramów)"
+        },
+        {
+          "en": "a kilo"
+        },
+        {
+          "en": "a litre"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "gram-g"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-a5-e08",
+      "text": "Ćwierć kilo to dwieście pięćdziesiąt ___.",
+      "meaning": {
+        "en": "A quarter of a kilo is two hundred and fifty grams."
+      },
+      "gaps": [
+        [
+          "gramów"
+        ]
+      ],
+      "distractors": [
+        "gramy",
+        "gram"
+      ],
+      "items": [
+        "cwierc-kilo",
+        "to",
+        "dwiescie",
+        "piecdziesiat",
+        "gram-g"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a5-e09",
+      "prompt": "czarnego",
+      "options": [
+        {
+          "en": "green (after paczka, nie mam…)"
+        },
+        {
+          "en": "black (czarnego for a masculine noun, czarnej for a feminine one, after paczka, nie mam…: paczka czarnej herbaty)"
+        },
+        {
+          "en": "white (białego, białej: after nie, nie piję białej kawy)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czarny-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a5-e10",
+      "prompt": "pomarańczowego",
+      "options": [
+        {
+          "en": "apple (after karton, nie mam…)"
+        },
+        {
+          "en": "raspberry (malinowego for a masculine noun, malinowej for a feminine one, after słoik, nie mam…: słoik dżemu malinowego)"
+        },
+        {
+          "en": "orange (pomarańczowego for a masculine noun, pomarańczowej for a feminine one, after karton, nie mam…: karton soku pomarańczowego)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pomaranczowy-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a5-e11",
+      "prompt": "jeszcze poproszę",
+      "options": [
+        {
+          "en": "and I'd also like…, please (jeszcze poproszę masło)"
+        },
+        {
+          "en": "that's all"
+        },
+        {
+          "en": "anything else?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jeszcze-poprosze"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-a5-e12",
+      "text": "karton soku pomarańczowego",
+      "meaning": {
+        "en": "a carton of orange juice"
+      },
+      "distractors": [
+        "karton soku jabłkowego",
+        "butelka soku pomarańczowego"
+      ],
+      "items": [
+        "karton",
+        "sok-gen",
+        "pomaranczowy-gen"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-a5-e13",
+      "acceptedAnswers": [
+        "paczkę czarnej herbaty"
+      ],
+      "meaning": {
+        "en": "a packet of black tea"
+      },
+      "items": [
+        "paczka",
+        "czarny-gen",
+        "herbata-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-a5-e14",
+      "prompt": {
+        "en": "a quarter of a kilo"
+      },
+      "acceptedAnswers": [
+        "ćwierć kilo"
+      ],
+      "items": [
+        "cwierc-kilo"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-a5-e15",
+      "prompt": {
+        "en": "twenty slices of lean ham"
+      },
+      "acceptedAnswers": [
+        "dwadzieścia plasterków chudej szynki"
+      ],
+      "items": [
+        "dwadziescia",
+        "plasterek",
+        "chudy-gen",
+        "szynka-gen"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-a5-e16",
+      "lines": [
+        "Słucham?",
+        "Poproszę słoik dżemu malinowego.",
+        "Coś jeszcze?",
+        "Jeszcze poproszę kostkę masła.",
+        "To wszystko?",
+        "Tak, dziękuję."
+      ],
+      "meaning": {
+        "en": "At the counter."
+      },
+      "items": [
+        "slucham",
+        "poprosze",
+        "sloik",
+        "dzem-gen",
+        "malinowy-gen",
+        "cos-jeszcze",
+        "jeszcze-poprosze",
+        "kostka",
+        "maslo-gen",
+        "to-wszystko",
+        "tak",
+        "dziekuje"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-a5-e17",
+      "pairs": [
+        {
+          "polish": "ćwierć kilo",
+          "meaning": {
+            "en": "a quarter of a kilo"
+          }
+        },
+        {
+          "polish": "gram",
+          "meaning": {
+            "en": "a gram"
+          }
+        },
+        {
+          "polish": "malinowego",
+          "meaning": {
+            "en": "raspberry"
+          }
+        },
+        {
+          "polish": "żółtego",
+          "meaning": {
+            "en": "yellow"
+          }
+        },
+        {
+          "polish": "chudej",
+          "meaning": {
+            "en": "lean"
+          }
+        },
+        {
+          "polish": "czarnej",
+          "meaning": {
+            "en": "black"
+          }
+        }
+      ],
+      "items": [
+        "cwierc-kilo",
+        "gram-g",
+        "malinowy-gen",
+        "zolty-gen",
+        "chudy-gen",
+        "czarny-gen"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-a5-e18",
+      "lines": [
+        "Ewa jest w sklepie.",
+        "Kupuje ćwierć kilo białego sera i kawałek żółtego sera.",
+        "Kupuje jeszcze paczkę czarnej herbaty i karton soku pomarańczowego."
+      ],
+      "meaning": {
+        "en": "Ewa at the shop."
+      },
+      "statements": [
+        {
+          "text": "Ewa kupuje biały i żółty ser.",
+          "meaning": {
+            "en": "Ewa buys curd cheese and hard cheese."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa kupuje zieloną herbatę.",
+          "meaning": {
+            "en": "Ewa buys green tea."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa kupuje sok pomarańczowy.",
+          "meaning": {
+            "en": "Ewa buys orange juice."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "cwierc-kilo",
+        "bialy-gen",
+        "zolty-gen",
+        "czarny-gen",
+        "pomaranczowy-gen",
+        "kawalek",
+        "paczka",
+        "karton"
+      ]
+    }
+  ]
+}

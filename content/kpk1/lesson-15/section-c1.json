@@ -1,0 +1,422 @@
+{
+  "id": "kpk1-l15-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Poczta, kurier, paczkomat",
+    "meaning": {
+      "en": "The post office, a courier, a parcel locker"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-c1-t01",
+      "before": "kpk1-l15-c1-e01",
+      "title": {
+        "en": "Na poczcie"
+      },
+      "body": {
+        "en": "At the post office: a *list* (a letter) goes in a *koperta* (an envelope) with a *znaczek* (a stamp), and a *pocztówka* is a postcard. The *listonosz* (the postman) brings letters, a *kurier* brings a *paczka* (a parcel), and a *paczkomat* is a parcel locker. *Idę na pocztę* is I'm going to the post office."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c1-e01",
+      "prompt": "poczta",
+      "options": [
+        {
+          "en": "a shop"
+        },
+        {
+          "en": "a post office; the post"
+        },
+        {
+          "en": "a bank"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "poczta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c1-e02",
+      "prompt": "na pocztę",
+      "options": [
+        {
+          "en": "to the bank"
+        },
+        {
+          "en": "to the shop"
+        },
+        {
+          "en": "to the post office (idę na pocztę)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-poczte"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-c1-e03",
+      "text": "idę na pocztę",
+      "meaning": {
+        "en": "I'm going to the post office"
+      },
+      "distractors": [
+        "idę do banku",
+        "jadę na pocztę"
+      ],
+      "items": [
+        "isc-ide",
+        "na-poczte"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c1-e04",
+      "prompt": "znaczek",
+      "options": [
+        {
+          "en": "a stamp (dwa znaczki, pięć znaczków)"
+        },
+        {
+          "en": "an envelope"
+        },
+        {
+          "en": "a postcard"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "znaczek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c1-e05",
+      "prompt": "koperta",
+      "options": [
+        {
+          "en": "a stamp"
+        },
+        {
+          "en": "an envelope (dwie koperty, pięć kopert; poproszę kopertę)"
+        },
+        {
+          "en": "a letter"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "koperta"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-c1-e06",
+      "prompt": {
+        "en": "a letter, an envelope and a stamp"
+      },
+      "acceptedAnswers": [
+        "list, koperta i znaczek"
+      ],
+      "distractors": [
+        "paczka",
+        "pocztówka"
+      ],
+      "items": [
+        "list",
+        "koperta",
+        "i",
+        "znaczek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c1-e07",
+      "prompt": "pocztówka",
+      "options": [
+        {
+          "en": "a letter"
+        },
+        {
+          "en": "a parcel"
+        },
+        {
+          "en": "a postcard (dwie pocztówki, pięć pocztówek; znaczek na pocztówkę: a stamp for a postcard)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pocztowka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c1-e08",
+      "prompt": "listonosz",
+      "options": [
+        {
+          "en": "a postman"
+        },
+        {
+          "en": "a courier"
+        },
+        {
+          "en": "a shop assistant"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "listonosz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c1-e09",
+      "prompt": "kurier",
+      "options": [
+        {
+          "en": "a postman"
+        },
+        {
+          "en": "a courier"
+        },
+        {
+          "en": "a driver"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kurier"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-c1-e10",
+      "text": "Listonosz ma list, a ___ ma paczkę.",
+      "meaning": {
+        "en": "The postman has a letter, and the courier has a parcel."
+      },
+      "gaps": [
+        [
+          "kurier"
+        ]
+      ],
+      "distractors": [
+        "znaczek",
+        "koperta"
+      ],
+      "items": [
+        "listonosz",
+        "miec-ma",
+        "list",
+        "a",
+        "kurier",
+        "paczka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c1-e11",
+      "prompt": "paczkomat",
+      "options": [
+        {
+          "en": "a post office; the post"
+        },
+        {
+          "en": "a cash machine"
+        },
+        {
+          "en": "a parcel locker"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "paczkomat"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-c1-e12",
+      "acceptedAnswers": [
+        "to jest paczkomat"
+      ],
+      "meaning": {
+        "en": "this is a parcel locker"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "paczkomat"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-c1-e13",
+      "prompt": {
+        "en": "a stamp"
+      },
+      "acceptedAnswers": [
+        "znaczek"
+      ],
+      "items": [
+        "znaczek"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-c1-e14",
+      "prompt": {
+        "en": "a postcard"
+      },
+      "acceptedAnswers": [
+        "pocztówka"
+      ],
+      "items": [
+        "pocztowka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-c1-e15",
+      "pairs": [
+        {
+          "polish": "poczta",
+          "meaning": {
+            "en": "a post office"
+          }
+        },
+        {
+          "polish": "znaczek",
+          "meaning": {
+            "en": "a stamp"
+          }
+        },
+        {
+          "polish": "koperta",
+          "meaning": {
+            "en": "an envelope"
+          }
+        },
+        {
+          "polish": "pocztówka",
+          "meaning": {
+            "en": "a postcard"
+          }
+        },
+        {
+          "polish": "listonosz",
+          "meaning": {
+            "en": "a postman"
+          }
+        },
+        {
+          "polish": "kurier",
+          "meaning": {
+            "en": "a courier"
+          }
+        }
+      ],
+      "items": [
+        "poczta",
+        "znaczek",
+        "koperta",
+        "pocztowka",
+        "listonosz",
+        "kurier"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-c1-e16",
+      "lines": [
+        "Ewa idzie na pocztę.",
+        "Ma list i pocztówkę, ale nie ma znaczków.",
+        "Na poczcie kupuje dwa znaczki i kopertę."
+      ],
+      "meaning": {
+        "en": "Ewa at the post office."
+      },
+      "statements": [
+        {
+          "text": "Ewa ma znaczki.",
+          "meaning": {
+            "en": "Ewa has stamps."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa ma pocztówkę.",
+          "meaning": {
+            "en": "Ewa has a postcard."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa kupuje dwa znaczki.",
+          "meaning": {
+            "en": "Ewa buys two stamps."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "na-poczte",
+        "list",
+        "pocztowka",
+        "znaczek",
+        "dwa",
+        "koperta"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-c1-e17",
+      "lines": [
+        "Dzień dobry, proszę znaczek na pocztówkę.",
+        "Proszę bardzo.",
+        "I jeszcze kopertę.",
+        "Proszę. To wszystko?"
+      ],
+      "meaning": {
+        "en": "At the counter."
+      },
+      "items": [
+        "dzien-dobry",
+        "prosze",
+        "znaczek",
+        "pocztowka",
+        "bardzo",
+        "i",
+        "jeszcze",
+        "koperta",
+        "to-wszystko"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-c1-e18",
+      "text": "dwa znaczki",
+      "meaning": {
+        "en": "two stamps"
+      },
+      "distractors": [
+        "pięć znaczków",
+        "dwie koperty"
+      ],
+      "items": [
+        "dwa",
+        "znaczek"
+      ]
+    }
+  ]
+}

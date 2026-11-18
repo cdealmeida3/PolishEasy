@@ -1,0 +1,414 @@
+{
+  "id": "kpk1-l15-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Zakupy na piknik",
+    "meaning": {
+      "en": "Shopping for a picnic"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-b2-t01",
+      "before": "kpk1-l15-b2-e01",
+      "title": {
+        "en": "Ile? Dużo, mało, kilka"
+      },
+      "body": {
+        "en": "*Ile?* asks how many or how much. *Dużo* (a lot), *mało* (few, little), *kilka* (a few), *trochę* (a little), *wiele* (many) and *niewiele* (not many) all take the genitive: *dużo studentów*, *mało nauczycieli*, *trochę wody*, *wiele osób* (many people)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b2-e01",
+      "prompt": "dużo",
+      "options": [
+        {
+          "en": "a lot, much, many (dużo studentów: a lot of students)"
+        },
+        {
+          "en": "a little"
+        },
+        {
+          "en": "few"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "duzo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b2-e02",
+      "prompt": "mało",
+      "options": [
+        {
+          "en": "a lot"
+        },
+        {
+          "en": "few, little, not much (mało czasu: not much time)"
+        },
+        {
+          "en": "many"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "malo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b2-e03",
+      "prompt": "studentów",
+      "options": [
+        {
+          "en": "teachers (men, or men and women; after dużo, mało…: mało nauczycieli)"
+        },
+        {
+          "en": "students (women, after dużo, mało…: dużo studentek)"
+        },
+        {
+          "en": "students (men, or men and women; after dużo, mało…: dużo studentów)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "studentow"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-b2-e04",
+      "text": "na piknik idzie dużo studentów",
+      "meaning": {
+        "en": "a lot of students are going to the picnic"
+      },
+      "distractors": [
+        "na piknik idzie mało studentów",
+        "na piknik idzie dużo nauczycieli"
+      ],
+      "items": [
+        "na-piknik",
+        "isc-idzie",
+        "duzo",
+        "studentow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b2-e05",
+      "prompt": "nauczycieli",
+      "options": [
+        {
+          "en": "teachers (men, or men and women; after dużo, mało…: mało nauczycieli)"
+        },
+        {
+          "en": "students (men, or men and women; after dużo, mało…: dużo studentów)"
+        },
+        {
+          "en": "parents (after dużo, mało…)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nauczycieli"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-b2-e06",
+      "prompt": {
+        "en": "few teachers"
+      },
+      "acceptedAnswers": [
+        "mało nauczycieli"
+      ],
+      "distractors": [
+        "dużo",
+        "studentów"
+      ],
+      "items": [
+        "malo",
+        "nauczycieli"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b2-e07",
+      "prompt": "kilka",
+      "options": [
+        {
+          "en": "many"
+        },
+        {
+          "en": "a few, several (kilka osób: a few people)"
+        },
+        {
+          "en": "a lot"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kilka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b2-e08",
+      "prompt": "wiele",
+      "options": [
+        {
+          "en": "few"
+        },
+        {
+          "en": "a little"
+        },
+        {
+          "en": "many, a lot of (wiele osób: many people)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wiele"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b2-e09",
+      "prompt": "niewiele",
+      "options": [
+        {
+          "en": "not many, not much (niewiele osób: not many people)"
+        },
+        {
+          "en": "many"
+        },
+        {
+          "en": "nothing"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "niewiele"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b2-e10",
+      "prompt": "osoba",
+      "options": [
+        {
+          "en": "a student"
+        },
+        {
+          "en": "a person (dwie osoby; pięć osób; wiele osób: many people)"
+        },
+        {
+          "en": "a teacher"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "osoba"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-b2-e11",
+      "text": "Na piknik idzie ___ osób, ale ___ nauczycieli.",
+      "meaning": {
+        "en": "Many people are going to the picnic, but not many teachers."
+      },
+      "gaps": [
+        [
+          "wiele"
+        ],
+        [
+          "niewiele"
+        ]
+      ],
+      "distractors": [
+        "jeden",
+        "dwa"
+      ],
+      "items": [
+        "na-piknik",
+        "isc-idzie",
+        "wiele",
+        "osoba",
+        "ale",
+        "niewiele",
+        "nauczycieli"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-b2-e12",
+      "acceptedAnswers": [
+        "kilka osób"
+      ],
+      "meaning": {
+        "en": "a few people"
+      },
+      "items": [
+        "kilka",
+        "osoba"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-b2-e13",
+      "prompt": {
+        "en": "a lot of students"
+      },
+      "acceptedAnswers": [
+        "dużo studentów"
+      ],
+      "items": [
+        "duzo",
+        "studentow"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-b2-e14",
+      "text": "trochę wody",
+      "meaning": {
+        "en": "a little water"
+      },
+      "distractors": [
+        "dużo wody",
+        "trochę wina"
+      ],
+      "items": [
+        "troche",
+        "woda-gen"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-b2-e15",
+      "pairs": [
+        {
+          "polish": "dużo",
+          "meaning": {
+            "en": "a lot"
+          }
+        },
+        {
+          "polish": "mało",
+          "meaning": {
+            "en": "few, little"
+          }
+        },
+        {
+          "polish": "kilka",
+          "meaning": {
+            "en": "a few"
+          }
+        },
+        {
+          "polish": "trochę",
+          "meaning": {
+            "en": "a little"
+          }
+        },
+        {
+          "polish": "wiele",
+          "meaning": {
+            "en": "many"
+          }
+        },
+        {
+          "polish": "niewiele",
+          "meaning": {
+            "en": "not many"
+          }
+        }
+      ],
+      "items": [
+        "duzo",
+        "malo",
+        "kilka",
+        "troche",
+        "wiele",
+        "niewiele"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-b2-e16",
+      "lines": [
+        "Ile osób idzie na piknik?",
+        "Idzie dużo studentów i kilka nauczycielek.",
+        "Nauczycieli idzie mało, bo są bardzo zajęci."
+      ],
+      "meaning": {
+        "en": "Who is going to the picnic?"
+      },
+      "statements": [
+        {
+          "text": "Na piknik idzie dużo studentów.",
+          "meaning": {
+            "en": "A lot of students are going to the picnic."
+          },
+          "true": true
+        },
+        {
+          "text": "Na piknik idzie dużo nauczycieli.",
+          "meaning": {
+            "en": "A lot of (men) teachers are going to the picnic."
+          },
+          "true": false
+        },
+        {
+          "text": "Idzie kilka nauczycielek.",
+          "meaning": {
+            "en": "A few (women) teachers are going."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ile",
+        "osoba",
+        "duzo",
+        "studentow",
+        "kilka",
+        "nauczycieli",
+        "malo"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-b2-e17",
+      "lines": [
+        "Ile osób idzie na piknik?",
+        "Wiele osób.",
+        "A nauczycieli?",
+        "Niewiele."
+      ],
+      "meaning": {
+        "en": "How many people?"
+      },
+      "items": [
+        "ile",
+        "osoba",
+        "isc-idzie",
+        "na-piknik",
+        "wiele",
+        "a",
+        "nauczycieli",
+        "niewiele"
+      ]
+    }
+  ]
+}

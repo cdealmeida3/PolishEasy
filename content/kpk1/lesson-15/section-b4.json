@@ -1,0 +1,434 @@
+{
+  "id": "kpk1-l15-b4",
+  "section": {
+    "letter": "B",
+    "heading": "Zakupy na piknik",
+    "meaning": {
+      "en": "Shopping for a picnic"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-b4-t01",
+      "before": "kpk1-l15-b4-e01",
+      "title": {
+        "en": "Kotów, książek, jabłek"
+      },
+      "body": {
+        "en": "In the genitive plural most masculine nouns that end in a hard sound take *-ów* (*kot*, *kotów*; *owoc*, *owoców*), and most feminine nouns in *-a* and neuter nouns in *-o* lose their ending, often with an *-e-* put in (*książka*, *książek*; *jabłko*, *jabłek*; *koleżanka*, *koleżanek*). Many nouns ending in *-l* take *-i*: *nauczyciel*, *nauczycieli*; *serial*, *seriali*. There are other endings too, met word by word. An adjective takes *-ych*: *nowych książek*, *fajnych koleżanek*; after *k* or *g* it is *-ich*: *polskich*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b4-e01",
+      "prompt": "owoców",
+      "options": [
+        {
+          "en": "vegetables (after dużo, nie jem…)"
+        },
+        {
+          "en": "fruit (after dużo, nie jem…: nie jem owoców)"
+        },
+        {
+          "en": "apples (after dużo, kilo…: kilo jabłek)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "owocow"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-b4-e02",
+      "text": "nie jem owoców",
+      "meaning": {
+        "en": "I don't eat fruit"
+      },
+      "distractors": [
+        "nie jem warzyw",
+        "jem owoce"
+      ],
+      "items": [
+        "nie",
+        "jesc-jem",
+        "owocow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b4-e03",
+      "prompt": "kotów",
+      "options": [
+        {
+          "en": "dogs (after boję się, dużo…)"
+        },
+        {
+          "en": "drivers (after boję się, dużo…: boję się kierowców)"
+        },
+        {
+          "en": "cats (after boję się, dużo…: boję się kotów)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kotow"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-b4-e04",
+      "prompt": {
+        "en": "I'm afraid of cats"
+      },
+      "acceptedAnswers": [
+        "boję się kotów"
+      ],
+      "distractors": [
+        "koty",
+        "lubię"
+      ],
+      "items": [
+        "bac-sie-boje",
+        "kotow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b4-e05",
+      "prompt": "koleżanek",
+      "options": [
+        {
+          "en": "friends, women (after dużo, nie mam…: mam dużo koleżanek)"
+        },
+        {
+          "en": "students (men, or men and women; after dużo, mało…: dużo studentów)"
+        },
+        {
+          "en": "books (after dużo, nie mam…: mam dużo książek)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kolezanek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b4-e06",
+      "prompt": "nowych",
+      "options": [
+        {
+          "en": "old (with a plural noun…)"
+        },
+        {
+          "en": "new (with a plural noun, after dużo, nie mam…: nie mam nowych książek)"
+        },
+        {
+          "en": "nice, cool (with a plural noun, after dużo, nie mam…: mam dużo fajnych koleżanek)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nowych"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b4-e07",
+      "prompt": "fajnych",
+      "options": [
+        {
+          "en": "new (with a plural noun, after dużo, nie mam…: nie mam nowych książek)"
+        },
+        {
+          "en": "big (with a plural noun…)"
+        },
+        {
+          "en": "nice, cool (with a plural noun, after dużo, nie mam…: mam dużo fajnych koleżanek)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "fajnych"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-b4-e08",
+      "text": "Mam dużo ___ ___.",
+      "meaning": {
+        "en": "I have a lot of nice friends (women)."
+      },
+      "gaps": [
+        [
+          "fajnych"
+        ],
+        [
+          "koleżanek"
+        ]
+      ],
+      "distractors": [
+        "fajne",
+        "koleżanki"
+      ],
+      "items": [
+        "miec-mam",
+        "duzo",
+        "fajnych",
+        "kolezanek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b4-e09",
+      "prompt": "książek",
+      "options": [
+        {
+          "en": "books (after dużo, nie mam…: mam dużo książek)"
+        },
+        {
+          "en": "friends, women (after dużo, nie mam…: mam dużo koleżanek)"
+        },
+        {
+          "en": "films (after dużo, nie oglądam…)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ksiazek"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-b4-e10",
+      "acceptedAnswers": [
+        "nie mam nowych książek"
+      ],
+      "meaning": {
+        "en": "I haven't got any new books"
+      },
+      "items": [
+        "nie",
+        "miec-mam",
+        "nowych",
+        "ksiazek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b4-e11",
+      "prompt": "jabłek",
+      "options": [
+        {
+          "en": "fruit (after dużo, nie jem…: nie jem owoców)"
+        },
+        {
+          "en": "apples (after dużo, kilo…: kilo jabłek)"
+        },
+        {
+          "en": "pears (after dużo, kilo…)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jablek"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-b4-e12",
+      "prompt": {
+        "en": "a lot of apples"
+      },
+      "acceptedAnswers": [
+        "dużo jabłek"
+      ],
+      "items": [
+        "duzo",
+        "jablek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b4-e13",
+      "prompt": "seriali",
+      "options": [
+        {
+          "en": "films (after dużo, nie oglądam…)"
+        },
+        {
+          "en": "books (after dużo, nie mam…: mam dużo książek)"
+        },
+        {
+          "en": "TV series (after dużo, nie oglądam…: nie oglądam seriali)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "seriali"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-b4-e14",
+      "text": "oglądam dużo seriali",
+      "meaning": {
+        "en": "I watch a lot of TV series"
+      },
+      "distractors": [
+        "oglądam mało seriali",
+        "oglądam dużo filmów"
+      ],
+      "items": [
+        "ogladac-ogladam",
+        "duzo",
+        "seriali"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-b4-e15",
+      "pairs": [
+        {
+          "polish": "owoców",
+          "meaning": {
+            "en": "fruit"
+          }
+        },
+        {
+          "polish": "kotów",
+          "meaning": {
+            "en": "cats"
+          }
+        },
+        {
+          "polish": "koleżanek",
+          "meaning": {
+            "en": "friends (women)"
+          }
+        },
+        {
+          "polish": "książek",
+          "meaning": {
+            "en": "books"
+          }
+        },
+        {
+          "polish": "jabłek",
+          "meaning": {
+            "en": "apples"
+          }
+        },
+        {
+          "polish": "seriali",
+          "meaning": {
+            "en": "TV series"
+          }
+        }
+      ],
+      "items": [
+        "owocow",
+        "kotow",
+        "kolezanek",
+        "ksiazek",
+        "jablek",
+        "seriali"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-b4-e16",
+      "lines": [
+        "Ewa nie lubi kotów, ale ma dużo książek.",
+        "Nie ogląda seriali, bo nie ma czasu.",
+        "Je dużo jabłek i owoców."
+      ],
+      "meaning": {
+        "en": "What Ewa likes."
+      },
+      "statements": [
+        {
+          "text": "Ewa lubi koty.",
+          "meaning": {
+            "en": "Ewa likes cats."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa ma dużo książek.",
+          "meaning": {
+            "en": "Ewa has a lot of books."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa je dużo owoców.",
+          "meaning": {
+            "en": "Ewa eats a lot of fruit."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "kotow",
+        "duzo",
+        "ksiazek",
+        "seriali",
+        "jablek",
+        "owocow"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-b4-e17",
+      "lines": [
+        "Masz dużo koleżanek?",
+        "Tak, mam dużo fajnych koleżanek.",
+        "A nowych książek?",
+        "Niewiele."
+      ],
+      "meaning": {
+        "en": "A lot or not many?"
+      },
+      "items": [
+        "miec-masz",
+        "duzo",
+        "kolezanek",
+        "tak",
+        "miec-mam",
+        "fajnych",
+        "a",
+        "nowych",
+        "ksiazek",
+        "niewiele"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l15-b4-e18",
+      "verb": "bać się",
+      "meaning": {
+        "en": "to be afraid (of)"
+      },
+      "person": "ja",
+      "sentence": "Bardzo ___ kotów.",
+      "sentenceMeaning": {
+        "en": "I am very afraid of cats."
+      },
+      "acceptedAnswers": [
+        "boję się"
+      ],
+      "items": [
+        "bardzo",
+        "bac-sie-boje",
+        "kotow"
+      ]
+    }
+  ]
+}

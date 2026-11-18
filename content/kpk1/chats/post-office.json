@@ -1,0 +1,167 @@
+{
+  "id": "chat-post-office",
+  "person": "Pani Ola",
+  "title": {
+    "en": "At the post office"
+  },
+  "scene": {
+    "en": "You are at the post office counter, and Pani Ola works there. You want to send a parcel to Kraków, and you need stamps for five postcards. Be polite: she is pani, and you say dzień dobry, not cześć. You are a man, so you say chciałem."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "slucham",
+    "chciec-chcialem",
+    "nadac-paczke",
+    "czesc",
+    "chciec-chce",
+    "paczka",
+    "prosze",
+    "bardzo",
+    "dokad",
+    "do-krakowa",
+    "na-poczte",
+    "dobrze",
+    "cos-jeszcze",
+    "tak",
+    "poprosze",
+    "piec",
+    "znaczek",
+    "koperta",
+    "razem",
+    "trzydziesci",
+    "zloty",
+    "dziekuje",
+    "dzieki",
+    "do-widzenia"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry, słucham?",
+      "meaning": {
+        "en": "Hello, how can I help?"
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry! Chciałem nadać paczkę.",
+          "meaning": {
+            "en": "Hello! I would like to send a parcel."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Dzień dobry! Chciałem nadać paczkę.",
+            "Dzień dobry, chciałem nadać paczkę."
+          ]
+        },
+        {
+          "text": "Cześć! Chcę nadać paczkę.",
+          "meaning": {
+            "en": "Hi! I want to send a parcel."
+          },
+          "register": "informal",
+          "note": {
+            "en": "Pani Ola is someone you do not know: to her you say *dzień dobry*, and *chciałem* is more polite than *chcę*. *Cześć* is for friends."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Proszę bardzo. Dokąd?",
+      "meaning": {
+        "en": "Certainly. Where to?"
+      },
+      "replies": [
+        {
+          "text": "Do Krakowa.",
+          "meaning": {
+            "en": "To Kraków."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Do Krakowa."
+          ]
+        },
+        {
+          "text": "Na pocztę.",
+          "meaning": {
+            "en": "To the post office."
+          },
+          "note": {
+            "en": "You are at the post office already. She asks where the parcel is going: *do Krakowa*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Dobrze. Coś jeszcze?",
+      "meaning": {
+        "en": "All right. Anything else?"
+      },
+      "replies": [
+        {
+          "text": "Tak, poproszę pięć znaczków.",
+          "meaning": {
+            "en": "Yes, I'd like five stamps, please."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Tak, poproszę pięć znaczków."
+          ]
+        },
+        {
+          "text": "Tak, poproszę pięć kopert.",
+          "meaning": {
+            "en": "Yes, I'd like five envelopes, please."
+          },
+          "note": {
+            "en": "Your postcards need stamps, *znaczki*. A *koperta* is an envelope."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Proszę. Razem trzydzieści złotych.",
+      "meaning": {
+        "en": "Here you are. That's thirty złoty altogether."
+      },
+      "replies": [
+        {
+          "text": "Proszę bardzo. Dziękuję!",
+          "meaning": {
+            "en": "Here you are. Thank you!"
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Proszę bardzo. Dziękuję!",
+            "Proszę. Dziękuję bardzo!"
+          ]
+        },
+        {
+          "text": "Dzięki! Cześć!",
+          "meaning": {
+            "en": "Thanks! Bye!"
+          },
+          "register": "informal",
+          "note": {
+            "en": "To Pani Ola you say *dziękuję*, and goodbye is *do widzenia*. *Dzięki* and *cześć* are for friends."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Dziękuję, do widzenia!",
+      "meaning": {
+        "en": "Thank you, goodbye!"
+      }
+    }
+  ]
+}

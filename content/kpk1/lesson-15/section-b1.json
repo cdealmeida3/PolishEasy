@@ -1,0 +1,388 @@
+{
+  "id": "kpk1-l15-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Zakupy na piknik",
+    "meaning": {
+      "en": "Shopping for a picnic"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-b1-t01",
+      "before": "kpk1-l15-b1-e01",
+      "title": {
+        "en": "Dwa kartony, pięć kartonów"
+      },
+      "body": {
+        "en": "After *dwa*, *trzy* and *cztery* a word takes its plural: *dwa kartony*, *dwie butelki*, *trzy pudełka*. From *pięć* on it takes the genitive plural: *pięć kartonów*, *pięć butelek*, *pięć pudełek*. A masculine word ends in *-ów* (*słoików*), and a feminine or a neuter one loses its ending (*puszek*, *paczek*, *pudełek*)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b1-e01",
+      "prompt": "piknik",
+      "options": [
+        {
+          "en": "a party"
+        },
+        {
+          "en": "a picnic"
+        },
+        {
+          "en": "a trip"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "piknik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b1-e02",
+      "prompt": "na piknik",
+      "options": [
+        {
+          "en": "on a trip"
+        },
+        {
+          "en": "to a party"
+        },
+        {
+          "en": "to a picnic; for a picnic (zakupy na piknik: shopping for a picnic)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-piknik"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-b1-e03",
+      "text": "dwa kartony soku",
+      "meaning": {
+        "en": "two cartons of juice"
+      },
+      "distractors": [
+        "pięć kartonów soku",
+        "dwa kartony mleka"
+      ],
+      "items": [
+        "dwa",
+        "karton",
+        "sok-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b1-e04",
+      "prompt": "za mało",
+      "options": [
+        {
+          "en": "too little, not enough"
+        },
+        {
+          "en": "too much"
+        },
+        {
+          "en": "a lot"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "za-malo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-b1-e05",
+      "prompt": {
+        "en": "five cartons of juice!"
+      },
+      "acceptedAnswers": [
+        "pięć kartonów soku!"
+      ],
+      "distractors": [
+        "kartony",
+        "dwa"
+      ],
+      "items": [
+        "piec",
+        "karton",
+        "sok-gen"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-b1-e06",
+      "text": "Kupujemy dwie ___ wody? Za mało! Pięć ___ wody!",
+      "meaning": {
+        "en": "Shall we buy two bottles of water? Not enough! Five bottles of water!"
+      },
+      "gaps": [
+        [
+          "butelki"
+        ],
+        [
+          "butelek"
+        ]
+      ],
+      "distractors": [
+        "butelka",
+        "butelkę"
+      ],
+      "items": [
+        "kupowac-kupujemy",
+        "dwie",
+        "butelka",
+        "woda-gen",
+        "za-malo",
+        "piec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b1-e07",
+      "prompt": "musztardy",
+      "options": [
+        {
+          "en": "mayonnaise (after słoik, nie mam…)"
+        },
+        {
+          "en": "mustard (after słoik, nie mam…: słoik musztardy)"
+        },
+        {
+          "en": "jam (after słoik, nie mam…: słoik dżemu)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "musztarda-gen"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-b1-e08",
+      "text": "pięć słoików musztardy",
+      "meaning": {
+        "en": "five jars of mustard"
+      },
+      "distractors": [
+        "dwa słoiki musztardy",
+        "pięć słoików dżemu"
+      ],
+      "items": [
+        "piec",
+        "sloik",
+        "musztarda-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b1-e09",
+      "prompt": "chipsów",
+      "options": [
+        {
+          "en": "matches (after pudełko, dużo, pięć…: pięć pudełek zapałek)"
+        },
+        {
+          "en": "biscuits (after paczka, dużo, pięć…)"
+        },
+        {
+          "en": "crisps (after paczka, dużo, pięć…: pięć paczek chipsów)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chipsy-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-b1-e10",
+      "prompt": {
+        "en": "two cans of cola"
+      },
+      "acceptedAnswers": [
+        "dwie puszki coli"
+      ],
+      "items": [
+        "dwie",
+        "puszka",
+        "cola"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-b1-e11",
+      "prompt": {
+        "en": "five cans of cola"
+      },
+      "acceptedAnswers": [
+        "pięć puszek coli"
+      ],
+      "items": [
+        "piec",
+        "puszka",
+        "cola"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-b1-e12",
+      "acceptedAnswers": [
+        "dwa pudełka czekoladek"
+      ],
+      "meaning": {
+        "en": "two boxes of chocolates"
+      },
+      "items": [
+        "dwa",
+        "pudelko",
+        "czekoladki"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-b1-e13",
+      "acceptedAnswers": [
+        "pięć paczek chipsów"
+      ],
+      "meaning": {
+        "en": "five packets of crisps"
+      },
+      "items": [
+        "piec",
+        "paczka",
+        "chipsy-gen"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-b1-e14",
+      "pairs": [
+        {
+          "polish": "dwa kartony",
+          "meaning": {
+            "en": "two cartons"
+          }
+        },
+        {
+          "polish": "pięć kartonów",
+          "meaning": {
+            "en": "five cartons"
+          }
+        },
+        {
+          "polish": "dwie butelki",
+          "meaning": {
+            "en": "two bottles"
+          }
+        },
+        {
+          "polish": "pięć butelek",
+          "meaning": {
+            "en": "five bottles"
+          }
+        },
+        {
+          "polish": "dwa słoiki",
+          "meaning": {
+            "en": "two jars"
+          }
+        },
+        {
+          "polish": "pięć słoików",
+          "meaning": {
+            "en": "five jars"
+          }
+        }
+      ],
+      "items": [
+        "dwa",
+        "karton",
+        "piec",
+        "dwie",
+        "butelka",
+        "sloik"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-b1-e15",
+      "lines": [
+        "Szkoła organizuje piknik.",
+        "Ewa i Kasia robią zakupy na piknik.",
+        "Ewa pyta: kupujemy dwa kartony soku? Kasia mówi: za mało! Pięć kartonów!"
+      ],
+      "meaning": {
+        "en": "Shopping for the school picnic."
+      },
+      "statements": [
+        {
+          "text": "Ewa i Kasia robią zakupy na piknik.",
+          "meaning": {
+            "en": "Ewa and Kasia are shopping for the picnic."
+          },
+          "true": true
+        },
+        {
+          "text": "Kasia chce dwa kartony soku.",
+          "meaning": {
+            "en": "Kasia wants two cartons of juice."
+          },
+          "true": false
+        },
+        {
+          "text": "Kasia chce pięć kartonów soku.",
+          "meaning": {
+            "en": "Kasia wants five cartons of juice."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "piknik",
+        "na-piknik",
+        "za-malo",
+        "karton",
+        "sok-gen",
+        "dwa",
+        "piec"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-b1-e16",
+      "lines": [
+        "Co kupujemy na piknik?",
+        "Może trzy paczki chipsów?",
+        "Za mało!",
+        "To pięć paczek chipsów."
+      ],
+      "meaning": {
+        "en": "What shall we buy?"
+      },
+      "items": [
+        "co",
+        "kupowac-kupujemy",
+        "na-piknik",
+        "moze",
+        "trzy",
+        "paczka",
+        "chipsy-gen",
+        "za-malo",
+        "to",
+        "piec"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,455 @@
+{
+  "id": "kpk1-l15-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Zakupy na piknik",
+    "meaning": {
+      "en": "Shopping for a picnic"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-b3-t01",
+      "before": "kpk1-l15-b3-e01",
+      "title": {
+        "en": "Potrzebuję samochodu"
+      },
+      "body": {
+        "en": "*Potrzebować* (to need) takes the genitive: *potrzebuję samochodu* (I need a car). So do *szukać* (to look for: *szukają osoby*, they are looking for a person), *słuchać* (to listen to: *lubię słuchać muzyki*) and *uczyć się* (to learn: *muszę uczyć się historii*). Its forms go like those of *kupować*."
+      },
+      "conjugation": {
+        "verb": "potrzebować",
+        "meaning": {
+          "en": "to need"
+        },
+        "forms": {
+          "ja": "potrzebuję",
+          "ty": "potrzebujesz",
+          "on": "potrzebuje",
+          "my": "potrzebujemy",
+          "wy": "potrzebujecie",
+          "oni": "potrzebują"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l15-b3-t02",
+      "before": "kpk1-l15-b3-e08",
+      "title": {
+        "en": "Boję się"
+      },
+      "body": {
+        "en": "*Bać się* is to be afraid. What you are afraid of is in the genitive: *boję się kierowców* (I am afraid of drivers), *boją się kotów*. Its forms: *boję się*, *boisz się*, *boi się*, *boimy się*, *boicie się*, *boją się*."
+      },
+      "conjugation": {
+        "verb": "bać się",
+        "meaning": {
+          "en": "to be afraid (of)"
+        },
+        "forms": {
+          "ja": "boję się",
+          "ty": "boisz się",
+          "on": "boi się",
+          "my": "boimy się",
+          "wy": "boicie się",
+          "oni": "boją się"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b3-e01",
+      "prompt": "potrzebuję",
+      "options": [
+        {
+          "en": "I want"
+        },
+        {
+          "en": "I am looking for"
+        },
+        {
+          "en": "I need (potrzebuję samochodu: I need a car)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "potrzebowac-potrzebuje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b3-e02",
+      "prompt": "samochodu",
+      "options": [
+        {
+          "en": "a car (after potrzebuję, nie mam…: potrzebuję samochodu)"
+        },
+        {
+          "en": "a bike (after potrzebuję, nie mam…)"
+        },
+        {
+          "en": "a taxi (after potrzebuję, nie mam…)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "samochodu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-b3-e03",
+      "text": "potrzebuję samochodu",
+      "meaning": {
+        "en": "I need a car"
+      },
+      "distractors": [
+        "potrzebuję roweru",
+        "szukam samochodu"
+      ],
+      "items": [
+        "potrzebowac-potrzebuje",
+        "samochodu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b3-e04",
+      "prompt": "potrzebują",
+      "options": [
+        {
+          "en": "they want"
+        },
+        {
+          "en": "they need"
+        },
+        {
+          "en": "they are looking for"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "potrzebowac-potrzebuja"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l15-b3-e05",
+      "verb": "potrzebować",
+      "meaning": {
+        "en": "to need"
+      },
+      "person": "oni",
+      "sentence": "Adam i Ewa ___ samochodu.",
+      "sentenceMeaning": {
+        "en": "Adam and Ewa need a car."
+      },
+      "acceptedAnswers": [
+        "potrzebują"
+      ],
+      "items": [
+        "adam",
+        "i",
+        "ewa",
+        "potrzebowac-potrzebuja",
+        "samochodu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b3-e06",
+      "prompt": "szukają",
+      "options": [
+        {
+          "en": "they need"
+        },
+        {
+          "en": "they are listening to"
+        },
+        {
+          "en": "they are looking for"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szukac-szukaja"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-b3-e07",
+      "prompt": {
+        "en": "they are looking for a person"
+      },
+      "acceptedAnswers": [
+        "szukają osoby"
+      ],
+      "distractors": [
+        "osób",
+        "potrzebują"
+      ],
+      "items": [
+        "szukac-szukaja",
+        "osoba"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b3-e08",
+      "prompt": "boję się",
+      "options": [
+        {
+          "en": "I'm afraid (boję się psów: I'm afraid of dogs)"
+        },
+        {
+          "en": "I like"
+        },
+        {
+          "en": "I need (potrzebuję samochodu: I need a car)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bac-sie-boje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b3-e09",
+      "prompt": "boją się",
+      "options": [
+        {
+          "en": "they like"
+        },
+        {
+          "en": "they are afraid"
+        },
+        {
+          "en": "they need"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bac-sie-boja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b3-e10",
+      "prompt": "kierowców",
+      "options": [
+        {
+          "en": "teachers (men, or men and women; after dużo, mało…: mało nauczycieli)"
+        },
+        {
+          "en": "students (men, or men and women; after dużo, mało…: dużo studentów)"
+        },
+        {
+          "en": "drivers (after boję się, dużo…: boję się kierowców)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kierowcow"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l15-b3-e11",
+      "verb": "bać się",
+      "meaning": {
+        "en": "to be afraid (of)"
+      },
+      "person": "oni",
+      "sentence": "Ewa i Adam ___ kierowców.",
+      "sentenceMeaning": {
+        "en": "Ewa and Adam are afraid of drivers."
+      },
+      "acceptedAnswers": [
+        "boją się"
+      ],
+      "items": [
+        "ewa",
+        "i",
+        "adam",
+        "bac-sie-boja",
+        "kierowcow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b3-e12",
+      "prompt": "historii",
+      "options": [
+        {
+          "en": "history (after uczę się, nie lubię…: uczę się historii)"
+        },
+        {
+          "en": "music (after słuchać: słuchać muzyki)"
+        },
+        {
+          "en": "politics (after interesuję się: interesuję się polityką)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "historii"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-b3-e13",
+      "text": "Muszę uczyć się ___. Lubię słuchać ___.",
+      "meaning": {
+        "en": "I must study history. I like listening to music."
+      },
+      "gaps": [
+        [
+          "historii"
+        ],
+        [
+          "muzyki"
+        ]
+      ],
+      "distractors": [
+        "historia",
+        "muzyka"
+      ],
+      "items": [
+        "musiec-musze",
+        "uczyc-sie",
+        "historii",
+        "lubic-lubie",
+        "sluchac",
+        "muzyka-gen"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-b3-e14",
+      "acceptedAnswers": [
+        "boję się"
+      ],
+      "meaning": {
+        "en": "I'm afraid"
+      },
+      "items": [
+        "bac-sie-boje"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-b3-e15",
+      "prompt": {
+        "en": "I need a car"
+      },
+      "acceptedAnswers": [
+        "potrzebuję samochodu"
+      ],
+      "items": [
+        "potrzebowac-potrzebuje",
+        "samochodu"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-b3-e16",
+      "pairs": [
+        {
+          "polish": "potrzebuję",
+          "meaning": {
+            "en": "I need"
+          }
+        },
+        {
+          "polish": "potrzebują",
+          "meaning": {
+            "en": "they need"
+          }
+        },
+        {
+          "polish": "szukają",
+          "meaning": {
+            "en": "they are looking for"
+          }
+        },
+        {
+          "polish": "boję się",
+          "meaning": {
+            "en": "I'm afraid"
+          }
+        },
+        {
+          "polish": "boją się",
+          "meaning": {
+            "en": "they are afraid"
+          }
+        },
+        {
+          "polish": "kierowców",
+          "meaning": {
+            "en": "drivers"
+          }
+        }
+      ],
+      "items": [
+        "potrzebowac-potrzebuje",
+        "potrzebowac-potrzebuja",
+        "szukac-szukaja",
+        "bac-sie-boje",
+        "bac-sie-boja",
+        "kierowcow"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-b3-e17",
+      "lines": [
+        "Studenci mają dużo zakupów na piknik i potrzebują samochodu.",
+        "Ewa i Kasia nie jeżdżą samochodem, bo boją się kierowców.",
+        "Adam musi uczyć się historii, a Tom słucha muzyki i nie słyszy pytania.",
+        "Więc sekretarka zamawia taksówkę."
+      ],
+      "meaning": {
+        "en": "Who will drive?"
+      },
+      "statements": [
+        {
+          "text": "Studenci potrzebują samochodu.",
+          "meaning": {
+            "en": "The students need a car."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa i Kasia jeżdżą samochodem.",
+          "meaning": {
+            "en": "Ewa and Kasia drive."
+          },
+          "true": false
+        },
+        {
+          "text": "Sekretarka zamawia taksówkę.",
+          "meaning": {
+            "en": "The secretary orders a taxi."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "duzo",
+        "potrzebowac-potrzebuja",
+        "samochodu",
+        "bac-sie-boja",
+        "kierowcow",
+        "historii",
+        "muzyka-gen"
+      ]
+    }
+  ]
+}
