@@ -1,0 +1,475 @@
+{
+  "id": "kpk1-l17-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Co o nim myślisz?",
+    "meaning": {
+      "en": "What do you think of him?"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-c2-t01",
+      "before": "kpk1-l17-c2-e01",
+      "title": {
+        "en": "O mnie, o tobie"
+      },
+      "body": {
+        "en": "After *o* (about), *ja* becomes *mnie*: *mówi o mnie* (she talks about me). The others: *o tobie*, *o nim* (him, or a masculine thing), *o niej*, *o nas*, *o was*, *o nich*. *Nie chcę o nich mówić* is I don't want to talk about them."
+      },
+      "table": {
+        "title": {
+          "en": "Kto? · o kim? · z kim?"
+        },
+        "columns": [
+          {
+            "header": "kto?"
+          },
+          {
+            "header": "o kim?"
+          },
+          {
+            "header": "z kim?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "ja",
+              "o mnie",
+              "ze mną"
+            ]
+          },
+          {
+            "cells": [
+              "ty",
+              "o tobie",
+              "z tobą"
+            ]
+          },
+          {
+            "cells": [
+              "on, ono",
+              "o nim",
+              "z nim"
+            ]
+          },
+          {
+            "cells": [
+              "ona",
+              "o niej",
+              "z nią"
+            ]
+          },
+          {
+            "cells": [
+              "my",
+              "o nas",
+              "z nami"
+            ]
+          },
+          {
+            "cells": [
+              "wy",
+              "o was",
+              "z wami"
+            ]
+          },
+          {
+            "cells": [
+              "oni, one",
+              "o nich",
+              "z nimi"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c2-e01",
+      "prompt": "o mnie",
+      "options": [
+        {
+          "en": "about me"
+        },
+        {
+          "en": "with me"
+        },
+        {
+          "en": "for me"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "o-mnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c2-e02",
+      "prompt": "o tobie",
+      "options": [
+        {
+          "en": "with you"
+        },
+        {
+          "en": "about you (one friend)"
+        },
+        {
+          "en": "for you"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "o-tobie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-c2-e03",
+      "text": "mówimy o tobie",
+      "meaning": {
+        "en": "we're talking about you"
+      },
+      "distractors": [
+        "mówimy o nim",
+        "mówię o tobie"
+      ],
+      "items": [
+        "mowic-mowimy",
+        "o-tobie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c2-e04",
+      "prompt": "o nim",
+      "options": [
+        {
+          "en": "about her"
+        },
+        {
+          "en": "with him"
+        },
+        {
+          "en": "about him; about it (for a masculine noun)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "o-nim"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c2-e05",
+      "prompt": "o niej",
+      "options": [
+        {
+          "en": "about her; about it (for a feminine noun)"
+        },
+        {
+          "en": "about him"
+        },
+        {
+          "en": "with her"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "o-niej"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-c2-e06",
+      "text": "Ewa jest bardzo miła. Często myślę o ___.",
+      "meaning": {
+        "en": "Ewa is very nice. I often think about her."
+      },
+      "gaps": [
+        [
+          "niej"
+        ]
+      ],
+      "distractors": [
+        "nią",
+        "jej"
+      ],
+      "items": [
+        "ewa",
+        "byc-jest",
+        "bardzo",
+        "mily",
+        "czesto",
+        "myslec-mysle",
+        "o-niej"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c2-e07",
+      "prompt": "o nas",
+      "options": [
+        {
+          "en": "with us"
+        },
+        {
+          "en": "about us"
+        },
+        {
+          "en": "about you (several people)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "o-nas"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c2-e08",
+      "prompt": "o was",
+      "options": [
+        {
+          "en": "about us"
+        },
+        {
+          "en": "with you (several people)"
+        },
+        {
+          "en": "about you (several people)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "o-was"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c2-e09",
+      "prompt": "o nich",
+      "options": [
+        {
+          "en": "about them"
+        },
+        {
+          "en": "about us"
+        },
+        {
+          "en": "with them"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "o-nich"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-c2-e10",
+      "prompt": {
+        "en": "we're talking about them"
+      },
+      "acceptedAnswers": [
+        "mówimy o nich",
+        "o nich mówimy"
+      ],
+      "distractors": [
+        "ich",
+        "mówię"
+      ],
+      "items": [
+        "mowic-mowimy",
+        "o-nich"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c2-e11",
+      "prompt": "zaprosić",
+      "options": [
+        {
+          "en": "invite them"
+        },
+        {
+          "en": "invite (to invite, once: chce je zaprosić: he wants to invite them)"
+        },
+        {
+          "en": "meet (to meet)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zaprosic"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-c2-e12",
+      "text": "Adam jest sympatyczny. Ewa chce go ___.",
+      "meaning": {
+        "en": "Adam is nice. Ewa wants to invite him."
+      },
+      "gaps": [
+        [
+          "zaprosić"
+        ]
+      ],
+      "distractors": [
+        "zapraszam",
+        "zaprosi"
+      ],
+      "items": [
+        "adam",
+        "byc-jest",
+        "sympatyczny",
+        "ewa",
+        "chciec-chce-on",
+        "go",
+        "zaprosic"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-c2-e13",
+      "pairs": [
+        {
+          "polish": "o mnie",
+          "meaning": {
+            "en": "about me"
+          }
+        },
+        {
+          "polish": "o tobie",
+          "meaning": {
+            "en": "about you"
+          }
+        },
+        {
+          "polish": "o nim",
+          "meaning": {
+            "en": "about him"
+          }
+        },
+        {
+          "polish": "o niej",
+          "meaning": {
+            "en": "about her"
+          }
+        },
+        {
+          "polish": "o nas",
+          "meaning": {
+            "en": "about us"
+          }
+        },
+        {
+          "polish": "o nich",
+          "meaning": {
+            "en": "about them"
+          }
+        }
+      ],
+      "items": [
+        "o-mnie",
+        "o-tobie",
+        "o-nim",
+        "o-niej",
+        "o-nas",
+        "o-nich"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-c2-e14",
+      "acceptedAnswers": [
+        "o mnie"
+      ],
+      "meaning": {
+        "en": "about me"
+      },
+      "items": [
+        "o-mnie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-c2-e15",
+      "prompt": {
+        "en": "about you (several people)"
+      },
+      "acceptedAnswers": [
+        "o was"
+      ],
+      "items": [
+        "o-was"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-c2-e16",
+      "text": "wszyscy mówią o nas",
+      "meaning": {
+        "en": "everyone is talking about us"
+      },
+      "distractors": [
+        "wszyscy mówią o was",
+        "wszyscy mówią z nami"
+      ],
+      "items": [
+        "wszyscy",
+        "mowic-mowia",
+        "o-nas"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-c2-e17",
+      "lines": [
+        "Ewa i Kasia plotkują o Adamie.",
+        "Kasia mówi, że Adam kocha Ewę.",
+        "Ewa mówi: „Nie chcę o nim mówić!”"
+      ],
+      "meaning": {
+        "en": "Talking about Adam."
+      },
+      "statements": [
+        {
+          "text": "Kasia i Ewa mówią o Adamie.",
+          "meaning": {
+            "en": "Kasia and Ewa are talking about Adam."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa chce mówić o Adamie.",
+          "meaning": {
+            "en": "Ewa wants to talk about Adam."
+          },
+          "true": false
+        },
+        {
+          "text": "Kasia mówi, że Adam kocha Ewę.",
+          "meaning": {
+            "en": "Kasia says Adam loves Ewa."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "adam",
+        "kochac-kocha",
+        "o-nim"
+      ]
+    }
+  ]
+}

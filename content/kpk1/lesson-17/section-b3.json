@@ -1,0 +1,431 @@
+{
+  "id": "kpk1-l17-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Podoba ci się?",
+    "meaning": {
+      "en": "Do you like it?"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-b3-t01",
+      "before": "kpk1-l17-b3-e01",
+      "title": {
+        "en": "Mi, ci, mu, jej"
+      },
+      "body": {
+        "en": "*Podoba się* changes with the person who likes it: *podoba mi się* (I like it), *podoba ci się?*, *podoba mu się* (he likes it), *podoba jej się*, *podoba nam się*, *podoba wam się?*, *podoba im się*. These little words also say how someone feels: *smutno mu* (he feels sad), *zimno nam*."
+      },
+      "table": {
+        "title": {
+          "en": "Komu? (to whom?)"
+        },
+        "columns": [
+          {
+            "header": "kto?"
+          },
+          {
+            "header": "komu?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "ja",
+              "mi"
+            ]
+          },
+          {
+            "cells": [
+              "ty",
+              "ci"
+            ]
+          },
+          {
+            "cells": [
+              "on, ono",
+              "mu"
+            ]
+          },
+          {
+            "cells": [
+              "ona",
+              "jej"
+            ]
+          },
+          {
+            "cells": [
+              "my",
+              "nam"
+            ]
+          },
+          {
+            "cells": [
+              "wy",
+              "wam"
+            ]
+          },
+          {
+            "cells": [
+              "oni, one",
+              "im"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b3-e01",
+      "prompt": "podoba się",
+      "options": [
+        {
+          "en": "is made"
+        },
+        {
+          "en": "is sold"
+        },
+        {
+          "en": "is liked, appeals to (podoba mu się: he likes it; podobają się: for more than one)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "podoba-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b3-e02",
+      "prompt": "mi",
+      "options": [
+        {
+          "en": "to me, me (podoba mi się: I like it)"
+        },
+        {
+          "en": "me (kocham mnie)"
+        },
+        {
+          "en": "my"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b3-e03",
+      "prompt": "ci",
+      "options": [
+        {
+          "en": "your"
+        },
+        {
+          "en": "to you, you (one friend: podoba ci się?: do you like it?)"
+        },
+        {
+          "en": "you (several people)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b3-e04",
+      "prompt": "mu",
+      "options": [
+        {
+          "en": "to her"
+        },
+        {
+          "en": "to us"
+        },
+        {
+          "en": "to him, him (podoba mu się: he likes it)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "mu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b3-e05",
+      "prompt": "jej",
+      "options": [
+        {
+          "en": "to her, her (podoba jej się: she likes it)"
+        },
+        {
+          "en": "to him"
+        },
+        {
+          "en": "to them"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jej-dat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b3-e06",
+      "prompt": "nam",
+      "options": [
+        {
+          "en": "to you (several people)"
+        },
+        {
+          "en": "to us, us (podoba nam się: we like it)"
+        },
+        {
+          "en": "to them"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b3-e07",
+      "prompt": "wam",
+      "options": [
+        {
+          "en": "to us"
+        },
+        {
+          "en": "to me"
+        },
+        {
+          "en": "to you, you (several people: podoba wam się?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b3-e08",
+      "prompt": "im",
+      "options": [
+        {
+          "en": "to them, them (podoba im się: they like it)"
+        },
+        {
+          "en": "to him"
+        },
+        {
+          "en": "to us"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "im"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-b3-e09",
+      "text": "podoba mu się ten film",
+      "meaning": {
+        "en": "he likes this film"
+      },
+      "distractors": [
+        "podoba jej się ten film",
+        "podoba mi się ten film"
+      ],
+      "items": [
+        "podoba-sie",
+        "mu",
+        "ten",
+        "film"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-b3-e10",
+      "text": "Jestem zmęczony i nic ___ się nie chce.",
+      "meaning": {
+        "en": "I'm tired and I don't feel like doing anything."
+      },
+      "gaps": [
+        [
+          "mi"
+        ]
+      ],
+      "distractors": [
+        "mnie",
+        "ja"
+      ],
+      "items": [
+        "byc-jestem",
+        "zmeczony",
+        "i",
+        "nic",
+        "nie",
+        "chce-mi-sie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-b3-e11",
+      "prompt": {
+        "en": "she likes Kraków"
+      },
+      "acceptedAnswers": [
+        "Kraków jej się podoba",
+        "podoba jej się Kraków"
+      ],
+      "distractors": [
+        "mu",
+        "lubi"
+      ],
+      "items": [
+        "krakow",
+        "jej-dat",
+        "podoba-sie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-b3-e12",
+      "text": "podoba wam się?",
+      "meaning": {
+        "en": "do you like it? (several people)"
+      },
+      "distractors": [
+        "podoba ci się?",
+        "podoba im się?"
+      ],
+      "items": [
+        "podoba-sie",
+        "wam"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-b3-e13",
+      "pairs": [
+        {
+          "polish": "mi",
+          "meaning": {
+            "en": "to me"
+          }
+        },
+        {
+          "polish": "ci",
+          "meaning": {
+            "en": "to you"
+          }
+        },
+        {
+          "polish": "mu",
+          "meaning": {
+            "en": "to him"
+          }
+        },
+        {
+          "polish": "jej",
+          "meaning": {
+            "en": "to her"
+          }
+        },
+        {
+          "polish": "nam",
+          "meaning": {
+            "en": "to us"
+          }
+        },
+        {
+          "polish": "im",
+          "meaning": {
+            "en": "to them"
+          }
+        }
+      ],
+      "items": [
+        "mi",
+        "ci",
+        "mu",
+        "jej-dat",
+        "nam",
+        "im"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-b3-e14",
+      "prompt": {
+        "en": "they like it"
+      },
+      "acceptedAnswers": [
+        "podoba im się",
+        "im się podoba"
+      ],
+      "items": [
+        "podoba-sie",
+        "im"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-b3-e15",
+      "lines": [
+        "To koniec kursu i Adam wraca do Niemiec.",
+        "Kurs bardzo mu się podobał.",
+        "Teraz jest mu smutno."
+      ],
+      "meaning": {
+        "en": "The end of the course."
+      },
+      "statements": [
+        {
+          "text": "Kurs podobał się Adamowi.",
+          "meaning": {
+            "en": "Adam liked the course."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam jest wesoły.",
+          "meaning": {
+            "en": "Adam is cheerful."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam wraca do Niemiec.",
+          "meaning": {
+            "en": "Adam is going back to Germany."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "adam",
+        "kurs",
+        "bardzo",
+        "mu",
+        "teraz",
+        "byc-jest"
+      ]
+    }
+  ]
+}

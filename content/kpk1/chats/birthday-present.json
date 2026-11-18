@@ -1,0 +1,182 @@
+{
+  "id": "chat-birthday-present",
+  "person": "Kasia",
+  "title": {
+    "en": "A birthday present"
+  },
+  "scene": {
+    "en": "Your friend Kasia and you are going to Adam's birthday party on Saturday, and you have no present yet. She is a friend, so you say ty. Help her choose something Adam will like, and say what you think of her ideas."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "sobota",
+    "miec-ma",
+    "urodziny",
+    "adam",
+    "co-mu-kupic",
+    "nie-wiem",
+    "on",
+    "interesowac-sie-interesuje-on",
+    "muzyka-instr",
+    "moze",
+    "plyta",
+    "podoba-mi-sie",
+    "czy-ja-wiem",
+    "a",
+    "slownik",
+    "co-ty-na-to",
+    "to-bez-sensu",
+    "bardzo",
+    "dobrze",
+    "mowic-mowi",
+    "po-polsku",
+    "idealnie",
+    "wszystko-jedno",
+    "masz-racje",
+    "to",
+    "lepiej",
+    "cos-specjalnego",
+    "oscypek",
+    "kupimy",
+    "mu",
+    "i",
+    "nie",
+    "dobry",
+    "pomysl",
+    "tez",
+    "koszulka",
+    "do-zobaczenia",
+    "sto-lat"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Adam ma w sobotę urodziny. Co mu kupić?",
+      "meaning": {
+        "en": "Hi! Adam has his birthday on Saturday. What shall we buy him?"
+      },
+      "replies": [
+        {
+          "text": "Nie wiem. On interesuje się muzyką. Może płytę?",
+          "meaning": {
+            "en": "I don't know. He's into music. Maybe a record?"
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Nie wiem. On interesuje się muzyką. Może płytę?",
+            "Nie wiem, on interesuje się muzyką. Może płytę?"
+          ]
+        },
+        {
+          "text": "Podoba mi się.",
+          "meaning": {
+            "en": "I like it."
+          },
+          "note": {
+            "en": "Kasia asks what to buy, *co mu kupić?*, so name a present: *może płytę?* *Podoba mi się* says what you think of something already in front of you, and there is no present yet."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Płytę? Czy ja wiem? A może słownik? Co ty na to?",
+      "meaning": {
+        "en": "A record? I'm not sure. Or maybe a dictionary? What do you say?"
+      },
+      "replies": [
+        {
+          "text": "To bez sensu. On bardzo dobrze mówi po polsku.",
+          "meaning": {
+            "en": "That makes no sense. He speaks Polish very well."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "To bez sensu. On bardzo dobrze mówi po polsku.",
+            "To bez sensu, on bardzo dobrze mówi po polsku."
+          ]
+        },
+        {
+          "text": "Idealnie! Wszystko jedno.",
+          "meaning": {
+            "en": "Perfect! I don't mind."
+          },
+          "note": {
+            "en": "*Idealnie!* says yes and *wszystko jedno* says you do not care: pick one. If you think a dictionary is a bad present, say *to bez sensu* and why."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Masz rację. To lepiej coś specjalnego. Może oscypek?",
+      "meaning": {
+        "en": "You're right. Then something special is better. Maybe an oscypek?"
+      },
+      "replies": [
+        {
+          "text": "Idealnie! Kupimy mu oscypek i płytę.",
+          "meaning": {
+            "en": "Perfect! We'll buy him an oscypek and a record."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Idealnie! Kupimy mu oscypek i płytę.",
+            "Idealnie, kupimy mu oscypek i płytę.",
+            "Idealnie! Kupimy mu płytę i oscypek."
+          ]
+        },
+        {
+          "text": "Nie, to dobry pomysł.",
+          "meaning": {
+            "en": "No, that's a good idea."
+          },
+          "note": {
+            "en": "*Nie* and *dobry pomysł* pull against each other. If you like the idea, say yes: *idealnie!* or *dobry pomysł!*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "A może też koszulkę?",
+      "meaning": {
+        "en": "And maybe a T-shirt too?"
+      },
+      "replies": [
+        {
+          "text": "Dobry pomysł! Do zobaczenia w sobotę!",
+          "meaning": {
+            "en": "Good idea! See you on Saturday!"
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Dobry pomysł! Do zobaczenia w sobotę!",
+            "Dobry pomysł, do zobaczenia w sobotę!"
+          ]
+        },
+        {
+          "text": "Sto lat!",
+          "meaning": {
+            "en": "Happy birthday!"
+          },
+          "note": {
+            "en": "*Sto lat!* is sung to Adam at his party, not said to Kasia now. Say what you think of her idea, and *do zobaczenia w sobotę*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Cześć!",
+      "meaning": {
+        "en": "Bye!"
+      }
+    }
+  ]
+}

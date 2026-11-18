@@ -1,0 +1,410 @@
+{
+  "id": "kpk1-l17-d2",
+  "section": {
+    "letter": "D",
+    "heading": "Co mu kupić?",
+    "meaning": {
+      "en": "What shall we buy him?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-d2-t01",
+      "before": "kpk1-l17-d2-e01",
+      "title": {
+        "en": "Co mu kupić?"
+      },
+      "body": {
+        "en": "Before a birthday, *co mu kupić?* (what shall we buy him?) or *co jej kupić?* The present goes *dla* someone: *dla niego*, *dla niej*, *dla mamy*. A record is *płyta*, a T-shirt *koszulka*, a fridge magnet *magnes*, and an audiobook *książka do słuchania*. For someone who loves folk art, *haftowana bluzka*, a traditional embroidered top."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d2-e01",
+      "prompt": "co mu kupić?",
+      "options": [
+        {
+          "en": "what shall we buy her?"
+        },
+        {
+          "en": "what did he buy?"
+        },
+        {
+          "en": "what shall we buy him?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "co-mu-kupic"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-d2-e02",
+      "prompt": {
+        "en": "what shall we buy her?"
+      },
+      "acceptedAnswers": [
+        "co jej kupić?"
+      ],
+      "distractors": [
+        "mu",
+        "kupimy"
+      ],
+      "items": [
+        "co",
+        "jej-dat",
+        "kupic"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-d2-e03",
+      "text": "co mu kupić?",
+      "meaning": {
+        "en": "what shall we buy him?"
+      },
+      "distractors": [
+        "co jej kupić?",
+        "co mu się podoba?"
+      ],
+      "items": [
+        "co-mu-kupic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d2-e04",
+      "prompt": "płyta",
+      "options": [
+        {
+          "en": "a record, a CD (kupić płytę: to buy a record)"
+        },
+        {
+          "en": "a book"
+        },
+        {
+          "en": "a poster"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "plyta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d2-e05",
+      "prompt": "koszulka",
+      "options": [
+        {
+          "en": "a jumper"
+        },
+        {
+          "en": "a T-shirt (kupić koszulkę: to buy a T-shirt)"
+        },
+        {
+          "en": "a top"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "koszulka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-d2-e06",
+      "text": "On interesuje się muzyką. Może kupimy mu ___?",
+      "meaning": {
+        "en": "He is interested in music. Shall we buy him a record?"
+      },
+      "gaps": [
+        [
+          "płytę"
+        ]
+      ],
+      "distractors": [
+        "płyta",
+        "książka"
+      ],
+      "items": [
+        "on",
+        "interesowac-sie-interesuje-on",
+        "muzyka-instr",
+        "moze",
+        "kupimy",
+        "mu",
+        "plyta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d2-e07",
+      "prompt": "magnes",
+      "options": [
+        {
+          "en": "a mug"
+        },
+        {
+          "en": "a photo"
+        },
+        {
+          "en": "a fridge magnet, a magnet"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "magnes"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d2-e08",
+      "prompt": "książka do słuchania",
+      "options": [
+        {
+          "en": "an audiobook (książki do słuchania: audiobooks)"
+        },
+        {
+          "en": "a dictionary"
+        },
+        {
+          "en": "a magazine"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ksiazka-do-sluchania"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-d2-e09",
+      "prompt": {
+        "en": "an audiobook for her"
+      },
+      "acceptedAnswers": [
+        "książka do słuchania dla niej"
+      ],
+      "distractors": [
+        "słuchać",
+        "jej"
+      ],
+      "items": [
+        "ksiazka-do-sluchania",
+        "dla-niej"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d2-e10",
+      "prompt": "haftowany",
+      "options": [
+        {
+          "en": "colourful"
+        },
+        {
+          "en": "embroidered (haftowany, haftowana, haftowane)"
+        },
+        {
+          "en": "silver"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "haftowany"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d2-e11",
+      "prompt": "tradycyjny",
+      "options": [
+        {
+          "en": "modern"
+        },
+        {
+          "en": "practical"
+        },
+        {
+          "en": "traditional (tradycyjny, tradycyjna, tradycyjne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tradycyjny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-d2-e12",
+      "acceptedAnswers": [
+        "magnes"
+      ],
+      "meaning": {
+        "en": "a fridge magnet"
+      },
+      "items": [
+        "magnes"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-d2-e13",
+      "prompt": {
+        "en": "a T-shirt"
+      },
+      "acceptedAnswers": [
+        "koszulka"
+      ],
+      "items": [
+        "koszulka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-d2-e14",
+      "prompt": {
+        "en": "what shall we buy him?"
+      },
+      "acceptedAnswers": [
+        "co mu kupić?"
+      ],
+      "items": [
+        "co-mu-kupic"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-d2-e15",
+      "pairs": [
+        {
+          "polish": "płyta",
+          "meaning": {
+            "en": "a record"
+          }
+        },
+        {
+          "polish": "koszulka",
+          "meaning": {
+            "en": "a T-shirt"
+          }
+        },
+        {
+          "polish": "magnes",
+          "meaning": {
+            "en": "a fridge magnet"
+          }
+        },
+        {
+          "polish": "kubek",
+          "meaning": {
+            "en": "a mug"
+          }
+        },
+        {
+          "polish": "książka do słuchania",
+          "meaning": {
+            "en": "an audiobook"
+          }
+        }
+      ],
+      "items": [
+        "plyta",
+        "koszulka",
+        "magnes",
+        "kubek",
+        "ksiazka-do-sluchania"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-d2-e16",
+      "text": "to jest tradycyjna haftowana bluzka",
+      "meaning": {
+        "en": "this is a traditional embroidered top"
+      },
+      "distractors": [
+        "to jest tradycyjna srebrna bluzka",
+        "to nie jest tradycyjna bluzka"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "tradycyjny",
+        "haftowany",
+        "bluzka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-d2-e17",
+      "prompt": {
+        "en": "a traditional embroidered top"
+      },
+      "acceptedAnswers": [
+        "tradycyjna haftowana bluzka"
+      ],
+      "distractors": [
+        "tradycyjny",
+        "sweter"
+      ],
+      "items": [
+        "tradycyjny",
+        "haftowany",
+        "bluzka"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-d2-e18",
+      "lines": [
+        "Kasia lubi folklor, więc kupimy jej tradycyjną haftowaną bluzkę.",
+        "Adam lubi muzykę, więc kupimy mu płytę.",
+        "A dla dziadka kupimy miód."
+      ],
+      "meaning": {
+        "en": "Presents for everyone."
+      },
+      "statements": [
+        {
+          "text": "Dla Kasi kupimy płytę.",
+          "meaning": {
+            "en": "We'll buy a record for Kasia."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam lubi muzykę.",
+          "meaning": {
+            "en": "Adam likes music."
+          },
+          "true": true
+        },
+        {
+          "text": "Dla dziadka kupimy miód.",
+          "meaning": {
+            "en": "We'll buy honey for grandad."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "kupimy",
+        "jej-dat",
+        "bluzka",
+        "adam",
+        "mu",
+        "plyta",
+        "miod"
+      ]
+    }
+  ]
+}

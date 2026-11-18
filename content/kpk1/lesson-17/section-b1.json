@@ -1,0 +1,431 @@
+{
+  "id": "kpk1-l17-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Podoba ci się?",
+    "meaning": {
+      "en": "Do you like it?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-b1-t01",
+      "before": "kpk1-l17-b1-e01",
+      "title": {
+        "en": "Fuj! Jak tu pięknie!"
+      },
+      "body": {
+        "en": "Feelings come out in the voice. *Fuj!* is yuck, *jak tu pięknie!* is how lovely it is here, *ale upał!* is it's so hot. *Strasznie* makes things stronger: *strasznie mi zimno* (I'm awfully cold). *To skandal!* is it's outrageous, and *chodźmy* is let's go."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b1-e01",
+      "prompt": "fuj!",
+      "options": [
+        {
+          "en": "yuck!"
+        },
+        {
+          "en": "great!"
+        },
+        {
+          "en": "wait!"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "fuj"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-b1-e02",
+      "text": "fuj! co to jest?",
+      "meaning": {
+        "en": "yuck! what is it?"
+      },
+      "distractors": [
+        "super! co to jest?",
+        "fuj! kto to jest?"
+      ],
+      "items": [
+        "fuj",
+        "co",
+        "to",
+        "byc-jest"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b1-e03",
+      "prompt": "strasznie",
+      "options": [
+        {
+          "en": "a little"
+        },
+        {
+          "en": "terribly, awfully (strasznie mi zimno: I am awfully cold)"
+        },
+        {
+          "en": "nicely"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "strasznie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-b1-e04",
+      "text": "strasznie mi zimno",
+      "meaning": {
+        "en": "I'm awfully cold"
+      },
+      "distractors": [
+        "strasznie mi gorąco",
+        "trochę mi zimno"
+      ],
+      "items": [
+        "strasznie",
+        "zimno-mi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b1-e05",
+      "prompt": "upał",
+      "options": [
+        {
+          "en": "frost"
+        },
+        {
+          "en": "a storm"
+        },
+        {
+          "en": "scorching heat, a heatwave (ale upał!: it is so hot!)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "upal"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-b1-e06",
+      "text": "Ale dziś ___! Gorąco mi.",
+      "meaning": {
+        "en": "It's so hot today! I'm hot."
+      },
+      "gaps": [
+        [
+          "upał"
+        ]
+      ],
+      "distractors": [
+        "mróz",
+        "zimno"
+      ],
+      "items": [
+        "ale",
+        "dzis",
+        "upal",
+        "goraco-mi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b1-e07",
+      "prompt": "czekać",
+      "options": [
+        {
+          "en": "wait (to wait: nie lubię czekać: I do not like waiting)"
+        },
+        {
+          "en": "drive (to drive)"
+        },
+        {
+          "en": "work (to work)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czekac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b1-e08",
+      "prompt": "w korku",
+      "options": [
+        {
+          "en": "at the bus stop"
+        },
+        {
+          "en": "in a traffic jam"
+        },
+        {
+          "en": "in the car"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-korku"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-b1-e09",
+      "prompt": {
+        "en": "I don't like waiting in a traffic jam"
+      },
+      "acceptedAnswers": [
+        "nie lubię czekać w korku"
+      ],
+      "distractors": [
+        "czekam",
+        "lubi"
+      ],
+      "items": [
+        "nie",
+        "lubic-lubie",
+        "czekac",
+        "w-korku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b1-e10",
+      "prompt": "skandal",
+      "options": [
+        {
+          "en": "a party"
+        },
+        {
+          "en": "a problem"
+        },
+        {
+          "en": "a scandal (to skandal!: it is outrageous!)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "skandal"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b1-e11",
+      "prompt": "brudno",
+      "options": [
+        {
+          "en": "dirty (jak tu brudno!: how dirty it is here!)"
+        },
+        {
+          "en": "nicely"
+        },
+        {
+          "en": "cold"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "brudno"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-b1-e12",
+      "text": "To ___, jak tu brudno!",
+      "meaning": {
+        "en": "It is outrageous how dirty it is here!"
+      },
+      "gaps": [
+        [
+          "skandal"
+        ]
+      ],
+      "distractors": [
+        "ładnie",
+        "pomysł"
+      ],
+      "items": [
+        "to",
+        "skandal",
+        "jak",
+        "tu",
+        "brudno"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b1-e13",
+      "prompt": "chodźmy",
+      "options": [
+        {
+          "en": "let's wait"
+        },
+        {
+          "en": "let's go (chodźmy na obiad: let's go and eat)"
+        },
+        {
+          "en": "we're going"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chodzmy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-b1-e14",
+      "acceptedAnswers": [
+        "chodźmy na obiad"
+      ],
+      "meaning": {
+        "en": "let's go and eat"
+      },
+      "items": [
+        "chodzmy",
+        "na-obiad"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-b1-e15",
+      "prompt": {
+        "en": "how lovely it is here!"
+      },
+      "acceptedAnswers": [
+        "jak tu pięknie"
+      ],
+      "items": [
+        "jak",
+        "tu",
+        "pieknie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-b1-e16",
+      "pairs": [
+        {
+          "polish": "fuj!",
+          "meaning": {
+            "en": "yuck!"
+          }
+        },
+        {
+          "polish": "upał",
+          "meaning": {
+            "en": "scorching heat"
+          }
+        },
+        {
+          "polish": "w korku",
+          "meaning": {
+            "en": "in a traffic jam"
+          }
+        },
+        {
+          "polish": "skandal",
+          "meaning": {
+            "en": "a scandal"
+          }
+        },
+        {
+          "polish": "brudno",
+          "meaning": {
+            "en": "dirty"
+          }
+        },
+        {
+          "polish": "chodźmy",
+          "meaning": {
+            "en": "let's go"
+          }
+        }
+      ],
+      "items": [
+        "fuj",
+        "upal",
+        "w-korku",
+        "skandal",
+        "brudno",
+        "chodzmy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-b1-e17",
+      "text": "chce mi się jeść, chodźmy na obiad",
+      "meaning": {
+        "en": "I'm hungry, let's go and eat"
+      },
+      "distractors": [
+        "chce mi się pić, chodźmy na kawę",
+        "chce mi się spać, chodźmy do domu"
+      ],
+      "items": [
+        "chce-mi-sie",
+        "jesc",
+        "chodzmy",
+        "na-obiad"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-b1-e18",
+      "lines": [
+        "Ewa i Adam stoją w korku i jest upał.",
+        "Ewa mówi: „Strasznie mi gorąco. Nie lubię czekać!”",
+        "Adam mówi: „Chodźmy na lody!”"
+      ],
+      "meaning": {
+        "en": "In a traffic jam."
+      },
+      "statements": [
+        {
+          "text": "Jest zimno.",
+          "meaning": {
+            "en": "It is cold."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa nie lubi czekać.",
+          "meaning": {
+            "en": "Ewa doesn't like waiting."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam chce iść na lody.",
+          "meaning": {
+            "en": "Adam wants to go for ice cream."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "adam",
+        "w-korku",
+        "upal",
+        "strasznie",
+        "czekac",
+        "chodzmy",
+        "lody"
+      ]
+    }
+  ]
+}

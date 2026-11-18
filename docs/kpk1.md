@@ -357,3 +357,24 @@ It gives the later chapters:
 - adverbs from adjectives, *szybko*, *tanio*.
 
 It leaves for later: the future of perfective verbs (*zrobię*, *pójdę*), dates as ordinals with the month in the genitive (*dwudziestego dziewiątego listopada*), and *będę robił* (the future with the past form) beyond *musiał*, *mógł* and *chciał*.
+
+## Chapter 17: Plotki, plotki. Kto z kim i o czym?
+
+Book pages 132 to 137, recordings 184 to 190. Fifteen parts, 265 Exercises and 108 new Items: opinions and moods, *lubię* and *podoba mi się*, the dative pronouns, gossip and the pronouns after a preposition, presents, and souvenirs from Poland.
+
+- **A** *Co o tym myślisz?*, in four: opinions (18: *co o tym myślisz?*, *podoba mi się*, *czy ja wiem?*, *nie mam zdania*, *wszystko jedno*, *nie mogę się zdecydować*); clothes for a party (18: *bluzka*, *w tej bluzce*, *w niej*, *spodnie*, *ładnie ci w tym kolorze*, *na imprezę*, *wyglądać*); how you look, with a Tip on *ładnie*, *grubo* (18: *wyglądam*, *wyglądasz*, *w nim*, *coś ty!*, *chciałabym*); and moods, with a Tip on *smutno mi*, *zimno mi* (18: *gorąco mi*, *chce mi się*, *zły dzień*, *co się dzieje?*, *beznadziejny*, *marudny*).
+- **B** *Podoba ci się?*, in three: complaints said with feeling (18: *fuj!*, *strasznie*, *upał*, *czekać w korku*, *skandal*, *brudno*, *chodźmy*); *lubię* and *podoba mi się*, with a table Tip (18: *podoba ci się?*, *podobają mi się*, *nie bardzo*, *śliczny*, *denerwuje mnie to*, *irytuje mnie to*); and the dative, with a table Tip (15: *mi*, *ci*, *mu*, *jej*, *nam*, *wam*, *im*).
+- **C** *Co o nim myślisz?*, in four: gossip (18: *plotki*, *zakochany*, *kochać*, *sprawy rodzinne*, *o czymś innym*, *spokojnie*, *nieprawda!*); *o mnie* to *o nich*, with the big table of the pronouns (17: *zaprosić*); *ze mną* to *z nimi* and the past of *podobać się* (17: *poznać*, *rozmawiałam*, *podobał się*, *podobała się*); and *dla ciebie*, *dla niego*, *jemu*, *tobie* (18: *prezent*, *dam*).
+- **D** *Co mu kupić?*, in three: souvenirs (18: *pamiątka*, *bursztyn*, *z bursztynu*, *biżuteria*, *srebrny*, *oscypek*, *obwarzanek*, *grzaniec*, *kupimy*); presents (18: *co mu kupić?*, *płyta*, *koszulka*, *magnes*, *książka do słuchania*, *haftowany*, *tradycyjny*); and saying yes or no to an idea (18: *co ty na to?*, *idealnie!*, *to bez sensu*, *banalny*, *coś specjalnego*, *coś praktycznego*, *lepiej*, *nie znam się na tym*).
+- *Powtórzenie* (18): a birthday, *sto lat!*, *moi drodzy*, *przyjaciel*, *przyjaciele*, *dziękuję za*, with the chapter's words again.
+
+The pronouns after a preposition are phrase Items (*o niej*, *z nim*, *dla niej*), not the bare form, so a learner never meets *niej* on its own; the full table of the personal pronouns is a Tip. *Podobać się* is taught as *podoba się* with the dative Items, and *podobał się* carries its forms (*podobała się*, *podobało się*, *podobały się*). *Bluzka* carries *bluzkę* and *bluzce*, *spodnie* its genitive, *przyjaciel* its plurals. *Modny*, *marudny*, *wyglądać*, *plotki*, *strasznie*, *biżuteria*, *bluzka* and *spodnie*, the words the book sends to the dictionary, are under Look up. There are 34 listening tasks on all 7 recordings (185 repeats 184, 188 repeats 187, 190 repeats 189), and one Chat: *A birthday present* (Kasia, a friend, informal: what to buy Adam, a record or a dictionary, *to bez sensu* because he speaks Polish well, then an oscypek, a record and a T-shirt). Fifteen Items have pictures (moods as faces, a present, a T-shirt, jeans, a CD, a magnet, a gem, an OK hand).
+
+It gives the later chapters:
+
+- opinions and how to answer one: *podoba mi się*, *czy ja wiem?*, *wszystko jedno*;
+- the dative pronouns with *podoba się*, *smutno*, *zimno* and *chce się*;
+- the personal pronouns after *o*, *z* and *dla*;
+- presents and souvenirs, and *co ty na to?*.
+
+It leaves for later: the dative of nouns (*Adamowi*, *mamie*), the long dative forms as a rule (*jemu*, *tobie* are met as words), and the instrumental and locative of nouns beyond the phrases above.
