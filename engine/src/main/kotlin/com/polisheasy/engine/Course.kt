@@ -43,6 +43,11 @@ data class Course(
     val jobs: List<String> = emptyList(),
     /** The Item Who's who waits for, which brings the instrumental (*kim*), or null if the content has no jobs. */
     val jobsAfter: String? = null,
+    /**
+     * The hobbies of Hobby charades, each the Item ids of its words in order (*jeździć*,
+     * *na rowerze*); its Picture is that of its last Item with one.
+     */
+    val hobbies: List<List<String>> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

@@ -51,6 +51,8 @@ internal data class PracticeFile(
     val opposites: List<List<String>> = emptyList(),
     /** The jobs of Who's who, and the Item it waits for. */
     val jobs: JobsFile? = null,
+    /** The hobbies of Hobby charades, each the Item ids of its words in order: ["jezdzic", "na-rowerze"]. */
+    val hobbies: List<List<String>> = emptyList(),
 )
 
 /** The jobs of Who's who: the Item it waits for, [after], and the jobs' Item ids, [items]. */
@@ -207,6 +209,7 @@ internal class ReadContent(
             opposites = practice?.opposites.orEmpty().filter { it.size == 2 && it[0] != it[1] }.map { it[0] to it[1] }.distinct(),
             jobs = practice?.jobs?.items.orEmpty().distinct(),
             jobsAfter = practice?.jobs?.after,
+            hobbies = practice?.hobbies.orEmpty().filter { it.isNotEmpty() }.distinct(),
         )
     }
 
@@ -400,6 +403,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
             problems += ContentProblem(file, null, "The opposites $pair are given more than once")
         }
         practice.jobs?.let { jobs -> problems += jobProblems(file, jobs, practice, course, content.itemsComplete) }
+        problems += hobbyProblems(file, practice.hobbies, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -440,6 +444,23 @@ private fun jobProblems(file: String, jobs: JobsFile, practice: PracticeFile, co
         }
     }
     jobs.items.repeated().forEach { id -> problems += ContentProblem(file, id, "The job $id is listed more than once") }
+    return problems
+}
+
+/** What is wrong with the hobbies of Hobby charades: each is defined Items, one of them with a Picture, and is listed once. */
+private fun hobbyProblems(file: String, hobbies: List<List<String>>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    hobbies.forEach { hobby ->
+        val name = hobby.joinToString(" ")
+        if (hobby.isEmpty()) problems += ContentProblem(file, null, "A hobby must name at least one Item")
+        hobby.filter { itemsComplete && it !in course.itemsById }.forEach { id ->
+            problems += ContentProblem(file, id, "The hobby $name names Item $id, which is not defined")
+        }
+        if (hobby.isNotEmpty() && hobby.none { it in course.pictures }) {
+            problems += ContentProblem(file, hobby.last(), "The hobby $name has no Item with a picture")
+        }
+    }
+    hobbies.map { it.joinToString(" ") }.repeated().forEach { name -> problems += ContentProblem(file, null, "The hobby $name is listed more than once") }
     return problems
 }
 

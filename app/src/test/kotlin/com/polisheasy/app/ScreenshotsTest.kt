@@ -70,6 +70,8 @@ import com.polisheasy.engine.AnkietaRound
 import com.polisheasy.engine.LabelRound
 import com.polisheasy.engine.OppositesRound
 import com.polisheasy.engine.WhoRound
+import com.polisheasy.engine.VerbGroupRound
+import com.polisheasy.engine.HobbyRound
 import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
@@ -1909,6 +1911,56 @@ class ScreenshotsTest {
         tap(R.string.option_read)
         tap(R.string.setup_play)
         shot("199-numbers-to-100")
+    }
+
+    @Test
+    fun `Three groups and Hobby charades over the real course in the light theme`() = chapter6Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Three groups and Hobby charades over the real course in the dark theme`() = chapter6Games("dark")
+
+    @Test
+    fun `Three groups and Hobby charades over the real course at the largest font size`() = atTheLargestFontSize { chapter6Games("large") }
+
+    /** Chapter 6's Games: Three groups with the ja form, a right and a wrong answer; Hobby charades chosen, wrong, and typed. */
+    private fun chapter6Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun groups() = (viewModel?.screen as Screen.Round).round as VerbGroupRound
+
+        fun hobby() = checkNotNull(((viewModel?.screen as Screen.Round).round as HobbyRound).question)
+
+        openRealPractice()
+        openGame(R.string.game_verb_groups)
+        shot("207-verb-groups-setup")
+        tap(R.string.option_with_ja)
+        tap(R.string.setup_play)
+        shot("208-verb-groups-verb")
+        screen.onNode(hasText(checkNotNull(groups().question).group.endings) and hasClickAction()).performClick()
+        screen.mainClock.autoAdvance = false
+        screen.mainClock.advanceTimeBy(100)
+        shot("209-verb-groups-right")
+        screen.mainClock.autoAdvance = true
+        tap(R.string.action_continue)
+        val asked = checkNotNull(groups().question)
+        screen.onNode(hasText(groups().groups.first { it != asked.group }.endings) and hasClickAction()).performClick()
+        shot("210-verb-groups-wrong")
+        leaveRound()
+
+        openGame(R.string.game_hobby_charades)
+        shot("211-hobby-setup")
+        tap(R.string.setup_play)
+        shot("212-hobby-picture")
+        screen.onNode(hasText(hobby().options.first { it != hobby().answer }) and hasClickAction()).performClick()
+        shot("213-hobby-wrong")
+        leaveRound()
+
+        openGame(R.string.game_hobby_charades)
+        tap(R.string.option_type)
+        tap(R.string.setup_play)
+        screen.onNode(hasSetTextAction()).performScrollTo().performTextInput(hobby().answer.dropLast(2))
+        shot("214-hobby-typing")
     }
 
     private fun registerSort(theme: String) {

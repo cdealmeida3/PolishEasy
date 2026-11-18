@@ -28,6 +28,8 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 | Mój, moja, moje and Ten, ta, to (`GenderSort`) | `engine/.../MojMojaMoje.kt` |
 | Label the picture | `engine/.../LabelIt.kt` |
 | Who's who | `engine/.../WhosWho.kt` |
+| Three groups | `engine/.../VerbGroups.kt` |
+| Hobby charades | `engine/.../HobbyCharades.kt` |
 | Spell it | `engine/.../SpellIt.kt` |
 | Quick round | `engine/.../QuickRound.kt` |
 | Register sort | `engine/.../RegisterSort.kt` |
@@ -130,6 +132,10 @@ The clock is the only kind in the app. The engine does not read the time: the sc
 
 **Who's who** (Words). Chapter 5's Game, after the book's *Kim ona jest?*. Opens once the Item `jobs.after` names (*kim*, which brings the instrumental) is learned, with four learned jobs listed under `jobs.items` in `practice.json`. A job is a noun Item for a man or a woman (its gender under `genders`) whose first form is its instrumental: *lekarz*, *lekarzem*. Ways to play: the job by its Picture (once four learned jobs have one) or written with its meaning. Under *Kim on jest?* or *Kim ona jest?* the Learner finishes *On jest …* with one of four: the instrumental, the job as it is written alone, and two other jobs in the instrumental, of the same gender first. Once answered, the whole sentence is written (*On jest lekarzem.*) and said where there is a Clip of it; choosing the word as it is written alone adds that after *jest* a job takes the instrumental. A right answer moves on by itself; a wrong one waits for "Continue". A Round is up to ten jobs. The result is the answers right first try.
 
+**Three groups** (Verbs). Chapter 6's Game, after the book's three conjugations. Opens with four learned verbs, of two conjugations at least: a verb counts once a completed Daily Set has shown its table, the table's `group` is one of the three (`-am, -asz` and `-em, -esz` are both *-m, -sz*; `-ę, -esz`; `-ę, -isz/-ysz`) and it has *ja* and *ty* forms. Ways to play: the verb alone, or with its *ja* form. The verb is written with its meaning, and the Learner taps one of the conjugations learned so far, named by their endings: *-m, -sz*, *-ę, -esz* or *-ę, -isz / -ysz*. Once answered, *ja* and *ty* are written (*ja piszę, ty piszesz*) and the *ja* form is said where there is a Clip of it. A right answer moves on by itself; a wrong one waits for "Continue". A Round is up to ten verbs. The result is the answers right first try.
+
+**Hobby charades** (Words). Chapter 6's Game, after the book's hobbies. Opens with four learned hobbies, listed under `hobbies` in `practice.json`: a hobby counts once all its Items are learned, and is shown by the Picture of its last Item that has one. Two hobbies with the same Polish or the same Picture count once. Ways to play: choose among four, or type. The hobby's Picture is shown and the Learner names it: *jeździć na rowerze*. The options are other hobbies, those with the same verb first, so the verb alone does not give it away. Typed, an answer right apart from its accents is taken as right, as in an Exercise. Once answered, *Lubię …* is written with the hobby, and the hobby is said where there is a Clip of it. A right answer moves on by itself; a wrong one waits for "Continue". A Round is up to ten hobbies. The result is the answers right first try.
+
 **Ankieta** (Phrases). Chapter 2's Game, after the book's *dane personalne*. Opens once three people of `content/kpk1/ankieta.json` can be met: every Item a person lists is learned. Ways to play: their introductions heard (with sound on, where every line has a Clip) or read. A Round meets three people, those not met today first. Each introduces themselves in a few lines, and the Learner fills in a form for them a field at a time: *Imię*, *Skąd jest?*, *Gdzie mieszka?*, *Numer telefonu*, *Dlaczego uczy się polskiego?*. Each field offers the right answer among those of the other people who can be met and the wrong ones written for it, at most four, two across. Heard, all a person says is played when they appear and again from the play button, and is written only once the form is filled in; read, it is one chat bubble from the start. Once the form is filled in, what was said is shown with its meaning. A right answer fills the field and moves on by itself; a wrong one fills it with the right answer in amber and waits for "Continue". The result is the fields right first try.
 
 ## What Practice needs from the content
@@ -146,7 +152,9 @@ The clock is the only kind in the app. The engine does not read the time: the sc
 
 - `jobs`: for Who's who, `{ "after": "kim", "items": ["lekarz", "lekarka"] }`: the Item the Game waits for, and the job Items, each with its instrumental as its first form and its gender, `"m"` or `"f"`, under `genders`. The content check fails on an Item that is not defined, a job with no forms or no such gender, or a job listed twice.
 
-A new Unit adds its nouns to `genders`, its opposite adjectives to `opposites`, and its jobs to `jobs`.
+- `hobbies`: for Hobby charades, each hobby as the Item ids that say it, in order, `[["gotowac"], ["jezdzic", "na-rowerze"]]`. The hobby reads as their texts joined by a space, and at least one of its Items must have a Picture. The content check fails on an empty hobby, an Item that is not defined, a hobby with no Picture, or one listed twice.
+
+A new Unit adds its nouns to `genders`, its opposite adjectives to `opposites`, its jobs to `jobs`, and its hobbies to `hobbies`.
 
 ## Chat scripts
 

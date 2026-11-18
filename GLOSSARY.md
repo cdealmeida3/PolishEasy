@@ -141,6 +141,14 @@ _Avoid_: Antonym quiz, opposites match
 The Game of saying who someone is by their job, *on jest lekarzem*, by choosing the job's instrumental after *jest*. Chapter 5's Game.
 _Avoid_: Jobs quiz, profession game
 
+**Three groups**:
+The Game of sorting a learned verb into the book's three conjugations by how its *ja* and *ty* forms end: *-m, -sz*; *-ę, -esz*; *-ę, -isz / -ysz*. Chapter 6's Game.
+_Avoid_: Conjugation quiz, verb sort
+
+**Hobby charades**:
+The Game of naming a learned hobby, *jeździć na rowerze*, from its Picture, by choosing or typing. Chapter 6's Game.
+_Avoid_: Hobby quiz, activities game
+
 **Register sort**:
 The Game of sorting learned phrases by Register, against the clock: to *pan* or *pani* (O), to a friend (N) or to anyone (U).
 _Avoid_: Formality quiz
