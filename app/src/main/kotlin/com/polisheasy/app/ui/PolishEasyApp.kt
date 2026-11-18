@@ -142,6 +142,9 @@ private fun Screens(viewModel: CourseViewModel, player: Clips, recordings: Recor
                     onRecording = viewModel::openRecording,
                     onClassAudio = viewModel::openClassAudio,
                     onGrammar = viewModel::openGrammar,
+                    games = screen.games,
+                    onGame = viewModel::openChapterGame,
+                    onChat = viewModel::openChapterChat,
                 )
             }
             is Screen.ClassAudio -> {
@@ -292,6 +295,14 @@ private fun DailySet(screen: Screen, shown: Int, progress: StepProgress, viewMod
         closeLabel = stringResource(R.string.daily_set_close),
         onClose = viewModel::leaveDailySet,
         step = shown,
+        // Any question may be skipped before it is answered.
+        onSkip = (screen as? Screen.Player)?.takeIf { it.feedback == null }?.let {
+            {
+                player.stop()
+                viewModel.skip()
+            }
+        },
+        skipLabel = stringResource(R.string.exercise_skip),
     ) { step ->
         // A step on its way out keeps what it last showed.
         val held = remember { arrayOf(screen) }

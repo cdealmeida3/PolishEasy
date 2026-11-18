@@ -12,7 +12,11 @@ enum class GameGroup { WORDS, PHRASES, VERBS, SOUNDS, NUMBERS }
  * lowest result, such as the fewest turns; otherwise the highest, such as the most right. A Game
  * without [rounds] is opened and looked at, not played to a result.
  */
-enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = false, val rounds: Boolean = true) {
+/**
+ * A Game. [chapter] is the book's chapter whose own Game it is, listed on that chapter's Lesson
+ * screen; null for the Games of every chapter.
+ */
+enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = false, val rounds: Boolean = true, val chapter: Int? = null) {
     /** Nothing is asked: the cards are looked at and listened to. It has no Rounds and no Best. */
     PICTURE_CARDS("picture-cards", GameGroup.WORDS, rounds = false),
     MEMORY_PAIRS("memory-pairs", GameGroup.WORDS, fewestWins = true),
@@ -20,68 +24,68 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     CHAT("chat", GameGroup.PHRASES),
     PHRASE_CHAINS("phrase-chains", GameGroup.PHRASES, fewestWins = true),
     /** Phrases sorted against the clock by who they are said to: formal, informal or to anyone. */
-    REGISTER_SORT("register-sort", GameGroup.PHRASES),
+    REGISTER_SORT("register-sort", GameGroup.PHRASES, chapter = 1),
     /** People introduce themselves, heard or read, and the Learner fills in a form for each. */
-    ANKIETA("ankieta", GameGroup.PHRASES),
+    ANKIETA("ankieta", GameGroup.PHRASES, chapter = 2),
     VERB_CHALLENGE("verb-challenge", GameGroup.VERBS),
     /** Chapter 6's Game: a verb is sorted into its conjugation: -m, -sz; -ę, -esz; or -ę, -isz / -ysz. */
-    VERB_GROUPS("verb-groups", GameGroup.VERBS),
+    VERB_GROUPS("verb-groups", GameGroup.VERBS, chapter = 6),
     LISTEN_AND_TAP("listen-and-tap", GameGroup.SOUNDS),
     SOUND_GAPS("sound-gaps", GameGroup.SOUNDS),
     SPELL_IT("spell-it", GameGroup.WORDS),
     QUICK_ROUND("quick-round", GameGroup.WORDS),
     MOJ_MOJA_MOJE("moj-moja-moje", GameGroup.WORDS),
     /** Chapter 3's Game: nouns sorted under ten, ta or to. */
-    TEN_TA_TO("ten-ta-to", GameGroup.WORDS),
+    TEN_TA_TO("ten-ta-to", GameGroup.WORDS, chapter = 3),
     /** Chapter 3's Game: a board of pictures labelled one at a time, by choosing or typing. */
-    LABEL_IT("label-the-picture", GameGroup.WORDS),
+    LABEL_IT("label-the-picture", GameGroup.WORDS, chapter = 3),
     /** Chapter 4's Game: two adjectives side by side, against the clock: opposites or not? */
-    OPPOSITES_SNAP("opposites-snap", GameGroup.WORDS),
+    OPPOSITES_SNAP("opposites-snap", GameGroup.WORDS, chapter = 4),
     /** Chapter 5's Game: a job is shown, and the Learner says who the person is: on jest lekarzem. */
-    WHOS_WHO("whos-who", GameGroup.WORDS),
+    WHOS_WHO("whos-who", GameGroup.WORDS, chapter = 5),
     /** Chapter 6's Game: a hobby is acted out in a picture, and the Learner names it: jeździć na rowerze. */
-    HOBBY_CHARADES("hobby-charades", GameGroup.WORDS),
+    HOBBY_CHARADES("hobby-charades", GameGroup.WORDS, chapter = 6),
     NUMBERS("numbers", GameGroup.NUMBERS),
     /** Chapter 7's Game: a price is said, and the Learner pays it exactly with coins and notes. */
-    KIOSK_TILL("kiosk-till", GameGroup.NUMBERS),
+    KIOSK_TILL("kiosk-till", GameGroup.NUMBERS, chapter = 7),
     /** Chapter 7's Game: numbers up to a thousand are called, and the Learner ticks them on a card. */
-    LOTTO("lotto", GameGroup.NUMBERS),
+    LOTTO("lotto", GameGroup.NUMBERS, chapter = 7),
     /** Chapter 8's Game: a dish is ordered, chleb z masłem, and the Learner puts its foods on a plate. */
-    PLATE_BUILDER("plate-builder", GameGroup.WORDS),
+    PLATE_BUILDER("plate-builder", GameGroup.WORDS, chapter = 8),
     /** Chapter 9's Game: a shopping list is said, dwie gruszki i trzy banany, and the Learner fills the basket. */
-    MARKET_LIST("market-list", GameGroup.NUMBERS),
+    MARKET_LIST("market-list", GameGroup.NUMBERS, chapter = 9),
     /** Chapter 9's Game: products sorted into the supermarket's aisles against the clock: nabiał, pieczywo, słodycze. */
-    AISLE_SORT("aisle-sort", GameGroup.WORDS),
+    AISLE_SORT("aisle-sort", GameGroup.WORDS, chapter = 9),
     /** Chapter 10's Game: a table orders, dla mnie żurek, a dla mnie to samo, and the Learner, the waiter, writes each guest's dish. */
-    TAKE_THE_ORDER("take-the-order", GameGroup.PHRASES),
+    TAKE_THE_ORDER("take-the-order", GameGroup.PHRASES, chapter = 10),
     /** Chapter 10's Game: a sentence negated against the clock, the object in the genitive: Lubię kawę, Nie lubię kawy. */
-    NEGATION_FLIP("negation-flip", GameGroup.PHRASES),
+    NEGATION_FLIP("negation-flip", GameGroup.PHRASES, chapter = 10),
     /** Chapter 11's Game: a family tree seen from the Learner, each relative named or found: mój wujek, moja ciocia. */
-    FAMILY_TREE("family-tree", GameGroup.WORDS),
+    FAMILY_TREE("family-tree", GameGroup.WORDS, chapter = 11),
     /** Chapter 11's Game: a time on the clock, and when in the day it is, against the clock: 7:30 is rano, 23:00 wieczorem. */
-    TIMES_OF_DAY("times-of-day", GameGroup.WORDS),
+    TIMES_OF_DAY("times-of-day", GameGroup.WORDS, chapter = 11),
     /** Chapter 12's Game: a time on a clock face said in Polish, or found from it: pięć po ósmej, wpół do dziewiątej. */
-    TELL_THE_TIME("tell-the-time", GameGroup.NUMBERS),
+    TELL_THE_TIME("tell-the-time", GameGroup.NUMBERS, chapter = 12),
     /** Chapter 12's Game: a week's plans heard or read, W piątek o dwudziestej: impreza, and put in the diary at their day and time. */
-    WEEK_PLANNER("week-planner", GameGroup.PHRASES),
+    WEEK_PLANNER("week-planner", GameGroup.PHRASES, chapter = 12),
     /** Chapter 13's Game: a short story in the past heard or read, Najpierw wstałam o siódmej. Potem umyłam zęby., and its pictures put in order. */
-    STORY_STRIP("story-strip", GameGroup.PHRASES),
+    STORY_STRIP("story-strip", GameGroup.PHRASES, chapter = 13),
     /** Chapter 13's Game: a sentence in the past heard or read, and who said it, from the verb's ending: byłem, byłam, byliśmy, byłyśmy. */
-    WHO_SAID_IT("who-said-it", GameGroup.VERBS),
+    WHO_SAID_IT("who-said-it", GameGroup.VERBS, chapter = 13),
     /** Chapter 14's Game: a route heard or read, Proszę iść prosto, potem skręcić w lewo., and the place on a small map it leads to. */
-    DIRECTIONS("directions", GameGroup.PHRASES),
+    DIRECTIONS("directions", GameGroup.PHRASES, chapter = 14),
     /** Chapter 14's Game: a sentence with its noun marked, Kocham tatę., and the pronoun that says it shorter: go, ją, je, ich, or after na, niego, nią, nich. */
-    PRONOUN_SWAP("pronoun-swap", GameGroup.WORDS),
+    PRONOUN_SWAP("pronoun-swap", GameGroup.WORDS, chapter = 14),
     /** Chapter 15's Game: what is in a container, ___ coli, and the container it comes in: puszka, słoik, kostka. */
-    PACKAGING("packaging", GameGroup.WORDS),
+    PACKAGING("packaging", GameGroup.WORDS, chapter = 15),
     /** Chapter 15's Game: a picture shown two to ten times and the phrase that counts them: pięć butelek, not pięć butelki. */
-    HOW_MANY("how-many", GameGroup.WORDS),
+    HOW_MANY("how-many", GameGroup.WORDS, chapter = 15),
     /** Chapter 16's Game: tomorrow's forecast heard or read, and its card made: the weather signs it names and its temperature. */
-    FORECASTER("forecaster", GameGroup.PHRASES),
+    FORECASTER("forecaster", GameGroup.PHRASES, chapter = 16),
     /** Chapter 16's Game: learned words hidden in a grid of letters, found by what they mean. */
-    WORD_SEARCH("word-search", GameGroup.WORDS),
+    WORD_SEARCH("word-search", GameGroup.WORDS, chapter = 16),
     /** Chapter 17's Game: the table of the pronouns filled a square at a time, *ze mną*, *o nim*, *komu? jej*. */
-    PRONOUN_GRID("pronoun-grid", GameGroup.WORDS),
+    PRONOUN_GRID("pronoun-grid", GameGroup.WORDS, chapter = 17),
 }
 
 /** Whether a Game can be played now. */
@@ -286,6 +290,8 @@ class Practice internal constructor(
     private val baseLanguage: String,
     private val random: Random,
     private val isOpen: () -> Boolean,
+    /** Whether every Game is open with the whole book, as if every Daily Set were completed. */
+    private val everything: () -> Boolean = { false },
 ) {
     private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt, Directions, PronounSwap, PackagingMatch, HowMany, Forecaster, WordSearch, PronounGrid).associateBy { it.game }
 
@@ -303,24 +309,23 @@ class Practice internal constructor(
         return PracticeView(
             open = isOpen(),
             roundsToday = bests.roundsOn(today()),
-            games = Game.entries.map { game ->
-                val of = rules.getValue(game)
-                val state = of.state(learned, sound)
-                val last = bests.lastPlayed(game.id)
-                if (state == GameState.NEEDS_MORE || last == null || !game.rounds) {
-                    GameView(game, state)
-                } else {
-                    // The way it was last played, if that can still be played; its Best is the one to beat.
-                    val choices = of.choices(learned, last, sound, speech)
-                    val played = choices.map { it.selected }
-                    GameView(
-                        game,
-                        state,
-                        best = bests.best(key(game, played)),
-                        lastPlayed = choices.map { choice -> choice.options.first { it.id == choice.selected } },
-                    )
-                }
-            },
+            games = Game.entries.map { game -> gameView(game, learned, sound, speech) },
+        )
+    }
+
+    private fun gameView(game: Game, learned: Learned, sound: Boolean, speech: Boolean): GameView {
+        val of = rules.getValue(game)
+        val state = of.state(learned, sound)
+        val last = bests.lastPlayed(game.id)
+        if (state == GameState.NEEDS_MORE || last == null || !game.rounds) return GameView(game, state)
+        // The way it was last played, if that can still be played; its Best is the one to beat.
+        val choices = of.choices(learned, last, sound, speech)
+        val played = choices.map { it.selected }
+        return GameView(
+            game,
+            state,
+            best = bests.best(key(game, played)),
+            lastPlayed = choices.map { choice -> choice.options.first { it.id == choice.selected } },
         )
     }
 
@@ -397,10 +402,54 @@ class Practice internal constructor(
     /** The Clip that says [polish], whatever its capitals and spacing, or null if there is none. */
     fun clipOf(polish: String): ClipView? = course.clipFor(polish)
 
-    private fun learned() = Learned(course, progress, baseLanguage)
+    /**
+     * The Games of the chapter of Unit [unitId], as its Lesson screen lists them: its own Games,
+     * then each conversation of the Chat it brings: the first chapter of the book by which every
+     * Item of the conversation is taught, or for one the book does not teach, the first Unit.
+     */
+    fun chapter(unitId: String, sound: Boolean = true, speech: Boolean = false): ChapterGamesView {
+        val units = course.levels.flatMap { it.units }
+        val unit = units.firstOrNull { it.id == unitId } ?: return ChapterGamesView(emptyList(), emptyList())
+        val learned = learned()
+        val games = if (unit.number == null) emptyList() else Game.entries.filter { it.chapter == unit.number }.map { gameView(it, learned, sound, speech) }
+        val known = learned.items.map { it.id }.toSet()
+        val chapterOf = mutableMapOf<String, String>()
+        listOf(units.filter { it.number != null }, units).forEach { among ->
+            val taught = mutableSetOf<String>()
+            among.forEach { book ->
+                taught += book.dailySets.flatMap { it.itemIds() }
+                course.chats.forEach { script -> if (script.id !in chapterOf && taught.containsAll(script.items)) chapterOf[script.id] = book.id }
+            }
+        }
+        val chats = course.chats
+            .filter { it.turns.isNotEmpty() && chapterOf[it.id] == unitId }
+            .map { ChapterChatView(it.id, localize(it.title), ready = known.containsAll(it.items)) }
+        return ChapterGamesView(games, chats)
+    }
+
+    /** The Chat before a Round, with the conversation [scriptId] chosen and the way it was last replied. Fails unless it can be played. */
+    fun chatSetup(scriptId: String, sound: Boolean = true, speech: Boolean = false): GameSetup =
+        setup(Game.CHAT, listOf(scriptId) + bests.lastPlayed(Game.CHAT.id).orEmpty().drop(1), sound, speech)
+
+    private fun localize(text: Localized): String = text[baseLanguage] ?: text.values.first()
+
+    private fun learned() = Learned(course, if (everything()) EverythingCompleted(course, progress) else progress, baseLanguage)
 
     private fun today(): LocalDate = LocalDate.now(clock)
 
     /** What a Best is saved under: the Game and the way it was played. */
     private fun key(game: Game, played: List<String>): String = (listOf(game.id) + played).joinToString(":")
+}
+
+/** A chapter's Games on its Lesson screen: its own [games] and the conversations of the Chat it brings. */
+data class ChapterGamesView(val games: List<GameView>, val chats: List<ChapterChatView>)
+
+/** A conversation of the Chat, [ready] once every Item of it is learned. */
+data class ChapterChatView(val id: String, val title: String, val ready: Boolean)
+
+/** [progress] as Practice reads it when every Game is open: every Daily Set on the Path counts as completed. */
+private class EverythingCompleted(course: Course, private val progress: LearnerProgress) : LearnerProgress by progress {
+    private val all: Map<String, LocalDate> = course.path.associate { it.id to LocalDate.MIN }
+
+    override fun completedDailySets(): Map<String, LocalDate> = all + progress.completedDailySets()
 }

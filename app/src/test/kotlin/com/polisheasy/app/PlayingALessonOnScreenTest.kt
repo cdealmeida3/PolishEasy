@@ -151,6 +151,52 @@ class PlayingALessonOnScreenTest {
         screen.onNodeWithContentDescription(text(R.string.lesson_sealed)).performScrollTo().assertIsDisplayed()
     }
 
+    @Test
+    fun `a chapter's own Games and Chats are at the bottom of its Lesson screen, open from the start, and lead back to it`() {
+        openApp(everything = true)
+        tap(R.string.nav_path)
+        lesson("Pierwszy dzień w szkole")
+        scrollTo(text(R.string.lesson_games))
+
+        screen.onNode(hasText(text(R.string.game_register_sort)) and hasClickAction()).performScrollTo().performClick()
+        screen.waitForIdle()
+        assertEquals(true, viewModel?.screen is Screen.GameSetup, "Register sort opens before any section is done")
+        back()
+        shows(text(R.string.lesson_label, 1))
+
+        screen.onNode(hasText("At the front desk") and hasClickAction()).performScrollTo().performClick()
+        screen.waitForIdle()
+        val chat = viewModel?.screen as? Screen.GameSetup
+        assertEquals("chat-front-desk", chat?.setup?.selected?.first())
+        back()
+        shows(text(R.string.lesson_label, 1))
+    }
+
+    @Test
+    fun `any question can be skipped, and is not asked again`() {
+        openApp()
+        tap(R.string.nav_path)
+        lesson("Dzień dobry!")
+        scrollTo("Polecenia")
+        screen.onNode(hasText("Polecenia") and hasClickAction()).performClick()
+        tap(R.string.action_continue)
+        val skipped = (viewModel?.screen as Screen.Player).exerciseId
+        tap(R.string.exercise_skip)
+        screen.waitForIdle()
+        val next = viewModel?.screen as Screen.Player
+        assertTrue(next.exerciseId != skipped, "The next question shows")
+        assertEquals(null, next.feedback)
+        // Skipping every question still finishes the section.
+        var guard = 0
+        while (viewModel?.screen is Screen.Player && guard++ < 200) {
+            screen.runOnUiThread { viewModel?.skip() }
+            screen.waitForIdle()
+            if (viewModel?.screen is Screen.Tip) screen.runOnUiThread { viewModel?.continueToNext() }
+        }
+        screen.mainClock.advanceTimeBy(3_000)
+        assertEquals(true, viewModel?.screen is Screen.Summary)
+    }
+
     /** Answers every Exercise showing rightly, until the Daily Set or the Test ends. */
     private fun playToTheEnd() {
         var guard = 0
@@ -169,8 +215,8 @@ class PlayingALessonOnScreenTest {
         assertEquals(true, viewModel?.screen is Screen.Summary, "The Daily Set or Test should have ended")
     }
 
-    private fun openApp() {
-        viewModel = fixtureless()
+    private fun openApp(everything: Boolean = false) {
+        viewModel = fixtureless(everything)
         screen.setContent {
             PolishEasyTheme {
                 viewModel?.let { key(it) { PolishEasyApp(it, clips) } }
@@ -179,13 +225,14 @@ class PlayingALessonOnScreenTest {
     }
 
     /** The real course over progress and Bests kept in files, as the app keeps them. */
-    private fun fixtureless(): CourseViewModel {
+    private fun fixtureless(everything: Boolean = false): CourseViewModel {
         val engine = CourseEngine(
             course,
             FileLearnerProgress(File(folder.root, "progress.json")),
             clock,
             oneADay = { Settings(app).oneADay },
             checkpoints = FileCheckpointBests(File(folder.root, "checkpoints.json")),
+            everythingOpen = { everything },
         )
         return CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
     }

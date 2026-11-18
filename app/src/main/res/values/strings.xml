@@ -228,6 +228,7 @@
     <string name="practice_group_verbs">Verbs</string>
     <string name="practice_group_sounds">Sounds</string>
     <string name="practice_group_numbers">Numbers</string>
+    <string name="exercise_skip">Skip</string>
     <string name="practice_needs_sound">Turn sound on in Settings to play.</string>
     <string name="practice_best">Best · %1$s</string>
     <string name="practice_best_played">Best · %1$s · %2$s</string>
@@ -688,6 +689,9 @@
     <string name="lesson_section_title">%1$s · %2$s</string>
     <string name="lesson_review">Powtórzenie</string>
     <string name="lesson_review_note">Go over the lesson whenever you like. Nothing here is locked.</string>
+    <string name="lesson_games">Gry</string>
+    <string name="lesson_games_note">This chapter\'s own Games and Chats. Every Game is on the Practice tab too.</string>
+    <string name="lesson_chat_note">Chat: text back and forth with someone, in the right register.</string>
     <string name="lesson_dictionary">Słownik</string>
     <plurals name="lesson_dictionary_note">
         <item quantity="one">%d word</item>
