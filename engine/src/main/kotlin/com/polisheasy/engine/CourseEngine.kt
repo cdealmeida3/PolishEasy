@@ -228,6 +228,8 @@ class CourseEngine(
     private val oneADay: () -> Boolean = { false },
     /** Where the Best of each chapter's Checkpoint is kept. */
     private val checkpoints: CheckpointBests = InMemoryCheckpointBests(),
+    /** Whether every Game is open from the start, with the words of the whole book (ADR-0016). */
+    private val everythingOpen: () -> Boolean = { false },
 ) {
     /** The Daily Set being played, with how far the Learner is through it. */
     private var playing: Playing? = null
@@ -377,7 +379,7 @@ class CourseEngine(
      * its Game's Best in [bests] and nothing else. [random] decides what a Round asks.
      */
     fun practice(bests: PracticeProgress, random: Random = Random.Default): Practice =
-        Practice(course, progress, bests, clock, baseLanguage, random, ::practiceOpen)
+        Practice(course, progress, bests, clock, baseLanguage, random, ::practiceOpen, everythingOpen)
 
     /**
      * The Path: every Level opened so far, with its Units and their Daily Sets. A Review-only Daily
@@ -537,6 +539,32 @@ class CourseEngine(
     }
 
     /**
+     * "Skip" on the Exercise being shown, before it is answered: it leaves this Daily Set, Replay or
+     * Test without an answer and is not asked again. No Item is rescheduled and it is not a miss,
+     * but it is not counted right either. Skipping the last one completes the Daily Set, as an
+     * answer would. Returns what comes next.
+     */
+    fun skip(): Step {
+        val playing = current()
+        val set = playing.dailySet
+        val state = playing.state
+        val exerciseId = state.remaining.firstOrNull()
+        check(exerciseId != null) { "Every Exercise of Daily Set ${set.id} has already been answered" }
+        // A Tip shown before it has been seen; it is not shown again.
+        val tips = set.tips.filter { it.before == exerciseId }.map { it.id }
+        playing.state = state.copy(remaining = state.remaining.drop(1), skipped = state.skipped + exerciseId, shownTips = state.shownTips + tips)
+        if (!playing.replay) {
+            if (playing.state.remaining.isEmpty()) {
+                val today = LocalDate.now(clock)
+                if (playing.reviewOnly) progress.recordReviewOnlyCompleted(on = today, emptyMap()) else progress.recordCompleted(set.id, on = today, emptyMap())
+            } else {
+                progress.saveInProgress(playing.state)
+            }
+        }
+        return next()
+    }
+
+    /**
      * Checks the Learner's answer to the Exercise currently shown and saves where the Learner is.
      * A wrongly answered Exercise goes to the end of the queue and returns until it is answered
      * correctly. The Daily Set, new or Review-only, is completed, on the day of this answer, when
@@ -599,15 +627,15 @@ class CourseEngine(
         val exerciseId = state.remaining.firstOrNull()
             ?: playing.checkpoint?.let { unitId ->
                 return Step.ShowSummary(
-                    correctAnswers = total - state.missed.size,
+                    correctAnswers = total - (state.missed + state.skipped).size,
                     exercises = total,
                     replay = true,
-                    checkpoint = checkpointResult(playing, unitId, correct = total - state.missed.size, questions = total),
+                    checkpoint = checkpointResult(playing, unitId, correct = total - (state.missed + state.skipped).size, questions = total),
                 )
             }
             // First-attempt correct: every Exercise that was never answered wrongly.
             ?: return Step.ShowSummary(
-                correctAnswers = total - state.missed.size,
+                correctAnswers = total - (state.missed + state.skipped).size,
                 exercises = total,
                 itemsLearned = if (playing.replay) {
                     emptyList()

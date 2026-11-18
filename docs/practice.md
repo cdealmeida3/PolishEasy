@@ -5,6 +5,7 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 ## The rules every Game keeps
 
 - Practice is open when `CourseEngine.practiceOpen()` says so: always at the Learner's own pace, and with One a day once today's new or Review-only Daily Set is completed, locking again at midnight (ADR-0012).
+- **Everything open** (ADR-0016): the app builds its engine with `everythingOpen`, true at the Learner's own pace. Then `Learned` counts every Daily Set on the Path as completed, so every Game and every Chat can be played from the start, with the words of the whole book; the decks still offer each chapter's words on their own. Only Practice reads it so: the Path, Review and the Learner's progress are unchanged. With One a day on, a Game uses only what completed Daily Sets taught, as below. The engine's tests build it without, unless they are about it.
 - At the Learner's own pace Daily Sets can be completed out of order. An Item belongs to the first Daily Set on the Path that has it (`Learned.introduced`), so a Game grouped by Unit leaves out an Item whose first Daily Set was skipped until that one is done. A Game's pool of Items is every Item of every completed Daily Set, so the Item is still played.
 - A Game uses only what completed Daily Sets taught: their Items, their Tips' tables and the sentences of their Exercises. `Learned` is the one place that works this out.
 - A Round saves nothing but the Best of the way it was played, the way the Game was last played, and one more Round for today. All of it goes to `practice.json` through `PracticeProgress`. Nothing is written to `progress.json`.
@@ -47,6 +48,8 @@ A Round is an immutable value. Each move returns the next Round and never fails:
 
 ## In the app
 
+A chapter's Lesson screen lists its own Games and the conversations of the Chat it brings under "Gry", from `Practice.chapter`. A conversation belongs to the first chapter of the book by which all its Items are taught (or, for one the book does not teach, the first Unit that does), so a new chat script needs nothing more than its line in `course.json`. Opened from there, a Game goes back to the chapter when it is left, and the Chat opens on that conversation (`Practice.chatSetup`).
+
 `ui/screens/practice/` holds the Practice screen, the screen before a Round (`GameSetupScreen`), `RoundScreen`, which shows the step of whichever Game is being played, and `RoundResultScreen`. `Games.kt` is the one place that gives a Game its name, its line, its icon and the words for its result.
 
 The view model holds the Round. A screen makes a move by calling the engine's pure function and handing the Round it returns to `CourseViewModel.move`, which ends the Round when it is finished. A board and a chat are the exceptions: their last move should be seen, so the finished Round stays on screen and the screen calls `CourseViewModel.endRound` a moment later.
@@ -63,7 +66,7 @@ It is in three places: the Chat's "say" way; step mode of a Class recording, whe
 
 ## Adding a Game
 
-1. Add it to `Game` with a stable id and its group.
+1. Add it to `Game` with a stable id and its group, and `chapter` the number of the book's chapter it belongs to: it is then listed in that chapter's Gry on its Lesson screen. A Game for every chapter has none.
 2. Write its `GameRules` and its `Round` in a file of their own, and add the rules to the list in `Practice`.
 3. Test it by behaviour in the engine, over the fixture in `PracticeFixture.kt`, and add it to `PracticeOverAuthoredContentTest`, which plays every Game at every point on the real Path.
 4. Give it words and an icon in `Games.kt`, a step in `RoundScreen`, and pictures of every state in `ScreenshotsTest`.

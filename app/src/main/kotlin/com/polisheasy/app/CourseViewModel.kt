@@ -59,6 +59,7 @@ import com.polisheasy.engine.LessonView
 import com.polisheasy.engine.ShelfView
 import com.polisheasy.engine.WordView
 import com.polisheasy.engine.GameSetup as GameSetupView
+import com.polisheasy.engine.ChapterGamesView
 import com.polisheasy.engine.Practice as PracticeGames
 import com.polisheasy.engine.Round as PracticeRound
 import com.polisheasy.engine.RoundResult as RoundResultView
@@ -116,6 +117,8 @@ sealed interface Screen {
         val inProgress: String? = null,
         /** The chapter's class recordings, for its Słuchaj, or null for a Starter Unit, which has none. */
         val listen: ListenView? = null,
+        /** The chapter's own Games and its Chats, at the bottom of its Lesson screen. */
+        val games: ChapterGamesView? = null,
     ) : Screen
 
     /**
@@ -270,6 +273,8 @@ fun courseEngine(context: Context): CourseEngine = CourseEngine(
     clock = Clock.systemDefaultZone(),
     oneADay = Settings(context).let { settings -> { settings.oneADay } },
     checkpoints = FileCheckpointBests(File(context.filesDir, "checkpoints.json")),
+    // At the Learner's own pace every Game is open from the start (ADR-0016).
+    everythingOpen = Settings(context).let { settings -> { !settings.oneADay } },
 )
 
 class CourseViewModel(
@@ -298,6 +303,9 @@ class CourseViewModel(
 
     /** The chapter whose Lesson screen started what is being played, where leaving it goes back to; null for Home and the Path. */
     private var fromLesson: String? = null
+
+    /** The chapter whose Lesson screen opened the Game being played, where leaving it goes back to; null for Practice. */
+    private var gameFromLesson: String? = null
 
     private var stepsShown = 0
 
@@ -357,7 +365,12 @@ class CourseViewModel(
             started = today is Today.InProgress,
             oneADay = settings.oneADay,
             inProgress = engine.dailySetInProgress(),
-        ).let { lesson -> lesson.copy(listen = lesson.lesson.number?.let(classAudio::listen)) }
+        ).let { lesson ->
+            lesson.copy(
+                listen = lesson.lesson.number?.let(classAudio::listen),
+                games = practice.chapter(unitId, settings.soundOn, speaking),
+            )
+        }
     }
 
     /** The unit of the Lesson screen showing, or of the Słownik or Fiszki opened from it. */
@@ -613,13 +626,29 @@ class CourseViewModel(
     }
 
     fun openPractice() {
+        gameFromLesson = null
         screen = practiceScreen()
     }
 
     private fun practiceScreen() = Screen.Practice(practice.view(sound = settings.soundOn, speech = speaking), engine.today())
 
+    /** A Game tapped on a Lesson screen: as from Practice, but leaving it goes back to the chapter. */
+    fun openChapterGame(game: Game) {
+        val unitId = lessonShowing() ?: return
+        openGame(game)
+        gameFromLesson = unitId
+    }
+
+    /** A Chat tapped on a Lesson screen: its conversation chosen before a Round, and leaving it goes back to the chapter. */
+    fun openChapterChat(scriptId: String) {
+        val unitId = lessonShowing() ?: return
+        screen = Screen.GameSetup(practice.chatSetup(scriptId, settings.soundOn, speaking))
+        gameFromLesson = unitId
+    }
+
     /** A Game tapped on the Practice screen: its cards, or what there is to choose before a Round, as it was last played. */
     fun openGame(game: Game) {
+        gameFromLesson = null
         screen = when (game) {
             Game.PICTURE_CARDS -> Screen.PictureCards(practice.pictureCards(), sound = settings.soundOn)
             else -> Screen.GameSetup(practice.setup(game, sound = settings.soundOn, speech = speaking))
@@ -677,8 +706,16 @@ class CourseViewModel(
         if (playing.round.finished) screen = Screen.RoundResult(practice.finish(playing.round), playing.setup)
     }
 
-    /** Leaves a Game for the Practice screen. A Round left unfinished is not kept. */
-    fun leaveGame() = openPractice()
+    /** Leaves a Game for the Practice screen, or the Lesson screen it was opened from. A Round left unfinished is not kept. */
+    fun leaveGame() {
+        val lesson = gameFromLesson
+        if (lesson != null) {
+            gameFromLesson = null
+            openLesson(lesson)
+        } else {
+            openPractice()
+        }
+    }
 
     /** The Clip that says [polish] in a Game, if there is one. */
     fun practiceClipOf(polish: String): ClipView? = practice.clipOf(polish)
@@ -757,6 +794,20 @@ class CourseViewModel(
         val player = screen as? Screen.Player ?: return
         if (player.feedback != null) return
         show(engine.cantListenNow())
+    }
+
+    /**
+     * "Skip" on an Exercise not yet answered: it is left out without an answer and what comes
+     * next is shown. Skipping the last one completes the Daily Set, as an answer would.
+     */
+    fun skip() {
+        val player = screen as? Screen.Player ?: return
+        if (player.feedback != null) return
+        val streakBefore = engine.streak()
+        val step = engine.skip()
+        val streakNow = engine.streak()
+        if (streakNow > streakBefore) streakRaised = StreakRaised(streakBefore, streakNow)
+        show(step)
     }
 
     /** The Clip that says [polish], if there is one and the Learner can listen now. */

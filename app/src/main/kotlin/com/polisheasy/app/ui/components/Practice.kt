@@ -309,7 +309,7 @@ fun <K> RoundFrame(
     modifier: Modifier = Modifier,
     content: @Composable (step: K) -> Unit,
 ) {
-    DailySetFrame(progress, progressDescription, closeLabel, onClose, step, modifier, content)
+    DailySetFrame(progress, progressDescription, closeLabel, onClose, step, modifier, content = content)
 }
 
 /**

@@ -505,6 +505,36 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `a chapter's Games and a skippable question in the light theme`() = chapterGamesTour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `a chapter's Games and a skippable question in the dark theme`() = chapterGamesTour("dark")
+
+    @Test
+    fun `a chapter's Games and a skippable question at the largest font size`() = atTheLargestFontSize { chapterGamesTour("large") }
+
+    /**
+     * Chapter 7 over the real course with every Game open: the Gry at the bottom of its Lesson
+     * screen, then the first Exercise of a section with its Skip.
+     */
+    private fun chapterGamesTour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests(), everythingOpen = { true })
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l07") }
+        screen.waitForIdle()
+        screen.onNode(hasText("At the kiosk", substring = true) and hasText(app.getString(R.string.lesson_chat_note), substring = true)).performScrollTo()
+        shot("401-chapter-games")
+        screen.runOnUiThread { model.openSection("kpk1-l07-a1") }
+        screen.waitForIdle()
+        if (model.screen is Screen.Tip) tap(R.string.action_continue)
+        shot("402-exercise-skip")
+    }
+
+    @Test
     fun `chapter 2 of the book over the real course in the light theme`() = chapter2Tour("light")
 
     @Test

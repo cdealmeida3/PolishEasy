@@ -1,6 +1,7 @@
 package com.polisheasy.app.ui.screens.lesson
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -17,6 +18,8 @@ import androidx.compose.ui.res.stringResource
 import com.polisheasy.app.R
 import com.polisheasy.app.ui.components.ChipRow
 import com.polisheasy.app.ui.components.DetailFrame
+import com.polisheasy.app.ui.components.GameCard
+import com.polisheasy.app.ui.screens.practice.words
 import com.polisheasy.app.ui.components.LessonBanner
 import com.polisheasy.app.ui.components.LinkSetting
 import com.polisheasy.app.ui.components.SettingsCard
@@ -35,7 +38,11 @@ import com.polisheasy.app.ui.components.TrailMilestone
 import com.polisheasy.app.ui.components.TrailStop
 import com.polisheasy.app.ui.components.WordChip
 import com.polisheasy.app.ui.theme.Space
+import com.polisheasy.engine.ChapterGamesView
 import com.polisheasy.engine.ClipView
+import com.polisheasy.engine.Game
+import com.polisheasy.engine.GameState
+import com.polisheasy.engine.GameView
 import com.polisheasy.engine.DailySetState
 import com.polisheasy.engine.LessonView
 import com.polisheasy.engine.ListenView
@@ -49,7 +56,8 @@ import com.polisheasy.engine.Register
  * A chapter's Lesson screen, laid out like the book's opening page: the banner in the chapter's
  * colour with its number and title, what it teaches as K, L and G (each filling as its sections
  * are completed), "Sprawdź w słowniku" with its look-up words, its sections as a trail, and its
- * Powtórzenie: the Słownik, the Fiszki and the Test. A chapter still being written shows what it
+ * Powtórzenie: the Słownik, the Fiszki and the Test, then its Gry: the chapter's own Games and
+ * Chats, each opened from here and left back to here. A chapter still being written shows what it
  * will teach and says it is on its way.
  *
  * The sections follow the same rules as on Home: today's is started or continued, a completed one
@@ -76,6 +84,9 @@ internal fun LessonScreen(
     onRecording: (Int) -> Unit = {},
     onClassAudio: () -> Unit = {},
     onGrammar: () -> Unit = {},
+    games: ChapterGamesView? = null,
+    onGame: (Game) -> Unit = {},
+    onChat: (String) -> Unit = {},
 ) {
     // The section chosen while another Daily Set is in progress, waiting for the Learner to say it may replace it.
     var replacing by rememberSaveable { mutableStateOf<String?>(null) }
@@ -203,6 +214,24 @@ internal fun LessonScreen(
                     note = stringResource(R.string.lesson_grammar_note, lesson.grammarDone, lesson.grammarTotal),
                     onClick = onGrammar,
                 )
+            }
+        }
+        if (games != null && (games.games.isNotEmpty() || games.chats.isNotEmpty())) {
+            Spacer(Modifier.height(Space.l))
+            TopBar(stringResource(R.string.lesson_games), note = stringResource(R.string.lesson_games_note))
+            Column(verticalArrangement = Arrangement.spacedBy(Space.xs)) {
+                games.games.forEach { game -> ChapterGame(game, onGame) }
+                games.chats.forEach { chat ->
+                    GameCard(
+                        name = chat.title,
+                        description = stringResource(R.string.lesson_chat_note),
+                        icon = Game.CHAT.words().icon,
+                        onClick = { onChat(chat.id) },
+                        locked = !chat.ready,
+                        lockedLabel = stringResource(R.string.path_locked),
+                        reason = if (chat.ready) null else stringResource(Game.CHAT.words().needs),
+                    )
+                }
             }
         }
     }
@@ -376,3 +405,22 @@ internal fun registerWords(register: Register): String = stringResource(
 @Composable
 internal fun lessonName(lesson: LessonView): String =
     lesson.number?.let { stringResource(R.string.lesson_label, it) } ?: stringResource(R.string.path_unit_number, lesson.place)
+
+/** One of the chapter's own Games, as the Practice screen shows it, without its Best. */
+@Composable
+private fun ChapterGame(view: GameView, onGame: (Game) -> Unit) {
+    val words = view.game.words()
+    GameCard(
+        name = stringResource(words.name),
+        description = stringResource(words.note),
+        icon = words.icon,
+        onClick = { onGame(view.game) },
+        locked = view.state != GameState.READY,
+        lockedLabel = stringResource(R.string.path_locked),
+        reason = when (view.state) {
+            GameState.NEEDS_MORE -> stringResource(words.needs)
+            GameState.NEEDS_SOUND -> stringResource(R.string.practice_needs_sound)
+            GameState.READY -> null
+        },
+    )
+}
