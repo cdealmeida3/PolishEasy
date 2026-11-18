@@ -45,6 +45,8 @@ import com.polisheasy.engine.VerbGroupRound
 import com.polisheasy.engine.HobbyRound
 import com.polisheasy.engine.LottoRound
 import com.polisheasy.engine.PlateRound
+import com.polisheasy.engine.MarketRound
+import com.polisheasy.engine.AisleRound
 import com.polisheasy.engine.TillRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.Register
@@ -752,6 +754,81 @@ class PlayingPracticeOnScreenTest {
     }
 
     @Test
+    fun `Market list writes a shopping list, and the Learner fills the basket from the stall and pays`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_market_list)
+        tap(R.string.option_read)
+        screen.onNodeWithText(text(R.string.option_two_goods)).performScrollTo().performClick()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val total = market().total
+        val first = checkNotNull(market().question)
+        shows(R.string.market_read_instruction)
+        shows(first.polish)
+        shows(R.string.market_empty)
+        assertEquals(2, first.wanted.size)
+
+        // A good put in and taken out again, from the basket.
+        val other = first.stall.first { it.id !in first.wanted }
+        putInBasket(other.id)
+        putInBasket(other.id)
+        assertEquals(listOf(other.id, other.id), market().basket)
+        screen.onNodeWithContentDescription(app.resources.getQuantityString(R.plurals.market_in_basket, 2, other.means, 2)).assertExists()
+        screen.onAllNodes(hasContentDescription(other.means) and hasClickAction()).onFirst().performScrollTo().performClick()
+        assertEquals(listOf(other.id), market().basket)
+
+        // Paid with one good too many: wrong, and the list is written below.
+        first.wanted.forEach { (id, count) -> repeat(count) { putInBasket(id) } }
+        tap(R.string.market_pay)
+        assertEquals(false, market().given?.correct)
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            checkNotNull(market().question).wanted.forEach { (id, count) -> repeat(count) { putInBasket(id) } }
+            tap(R.string.market_pay)
+            tap(R.string.action_continue)
+        }
+        showsScore(total - 1, total)
+    }
+
+    @Test
+    fun `Sort the aisles shows a product, and a wrong aisle marks the right one and says what it means`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_aisle_sort)
+        tap(R.string.setup_play)
+
+        // A product, with a minute on the clock and a sign for each aisle of the Round.
+        val first = checkNotNull(aisles().card)
+        shows(R.string.aisle_instruction)
+        showsFurtherDown(first.polish)
+        screen.onNodeWithText(first.meaning).assertDoesNotExist()
+        shows(text(R.string.quick_time, 1, 0))
+        assertEquals(4, aisles().aisles.size)
+
+        // Right: the next product is there at once, counted under its aisle.
+        tapBucket(checkNotNull(aisles().rightAisle).polish)
+        shows(right(1))
+        assertEquals(1, aisles().sorted[first.aisle])
+
+        // Wrong: the right aisle and what the product means are shown, and it is said.
+        val second = checkNotNull(aisles().card)
+        val right = checkNotNull(aisles().rightAisle)
+        clips.asked.clear()
+        tapBucket(aisles().aisles.first { it.id != second.aisle }.polish)
+        showsFurtherDown(second.meaning)
+        showsFurtherDown(text(R.string.aisle_missed, second.polish, right.polish, right.meaning))
+        assertEquals(listOfNotNull(viewModel?.practiceClipOf(second.polish)?.let { Played(it.path, slow = false) }), clips.played)
+        tap(R.string.action_continue)
+
+        // The time runs out: the result is the right answers.
+        screen.mainClock.advanceTimeBy(60_000)
+        screen.waitForIdle()
+        screen.onNodeWithContentDescription(quantity(R.plurals.result_right_sentence, 1)).assertIsDisplayed()
+        showsFirstBest()
+    }
+
+    @Test
     fun `Numbers read shows the words and says nothing, and a run is three numbers in a row`() {
         openPracticeOverTheRealCourse()
         openGame(R.string.game_numbers)
@@ -1361,6 +1438,18 @@ class PlayingPracticeOnScreenTest {
     private fun lotto(): LottoRound = (viewModel?.screen as Screen.Round).round as LottoRound
 
     private fun plate(): PlateRound = (viewModel?.screen as Screen.Round).round as PlateRound
+
+    private fun market(): MarketRound = (viewModel?.screen as Screen.Round).round as MarketRound
+
+    private fun aisles(): AisleRound = (viewModel?.screen as Screen.Round).round as AisleRound
+
+    /** Taps the good [id] on Market list's stall, which comes after the basket, and says how many are in it. */
+    private fun putInBasket(id: String) {
+        val good = checkNotNull(market().question).stall.single { it.id == id }
+        val count = market().counts[id] ?: 0
+        val description = if (count == 0) good.means else app.resources.getQuantityString(R.plurals.market_in_basket, count, good.means, count)
+        screen.onAllNodes(hasContentDescription(description) and hasClickAction()).onLast().performScrollTo().performClick()
+    }
 
     /** Taps the food [id] on Plate builder's tray, which comes after the plate. */
     private fun putOnPlate(id: String) {

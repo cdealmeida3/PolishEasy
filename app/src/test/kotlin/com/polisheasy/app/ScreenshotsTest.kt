@@ -76,6 +76,8 @@ import com.polisheasy.engine.VerbGroupRound
 import com.polisheasy.engine.HobbyRound
 import com.polisheasy.engine.LottoRound
 import com.polisheasy.engine.PlateRound
+import com.polisheasy.engine.MarketRound
+import com.polisheasy.engine.AisleRound
 import com.polisheasy.engine.TillRound
 import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.MemoryFace
@@ -764,6 +766,46 @@ class ScreenshotsTest {
         ).forEach { (section, name) ->
             screen.runOnUiThread {
                 model.openLesson("kpk1-l08")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
+    fun `chapter 9 of the book over the real course in the light theme`() = chapter9Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 9 of the book over the real course in the dark theme`() = chapter9Tour("dark")
+
+    @Test
+    fun `chapter 9 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter9Tour("large") }
+
+    /**
+     * Chapter 9 over the real course: its Lesson screen at the top and its sections, then section
+     * B's table of kupować and its Tip on dwa and dwie, and section C's tables of the plural.
+     */
+    private fun chapter9Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l09") }
+        screen.waitForIdle()
+        shot("239-chapter-9")
+        screen.onAllNodes(hasText("Supermarket", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("239-chapter-9-sections")
+        listOf(
+            "kpk1-l09-b1" to "240-chapter-9-kupowac",
+            "kpk1-l09-b2" to "241-chapter-9-dwa-dwie",
+            "kpk1-l09-c1" to "242-chapter-9-plural",
+            "kpk1-l09-c2" to "243-chapter-9-jakie",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l09")
                 model.openSection(section)
             }
             screen.waitForIdle()
@@ -2172,6 +2214,86 @@ class ScreenshotsTest {
         tap(R.string.setup_play)
         checkNotNull(plate().question).wanted.take(3).forEach { put(it) }
         shot("238-plate-two-dishes")
+    }
+
+    @Test
+    fun `Market list and Sort the aisles over the real course in the light theme`() = chapter9Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Market list and Sort the aisles over the real course in the dark theme`() = chapter9Games("dark")
+
+    @Test
+    fun `Market list and Sort the aisles over the real course at the largest font size`() = atTheLargestFontSize { chapter9Games("large") }
+
+    /**
+     * Chapter 9's Games: Market list's setup, a list read with one good in the basket, paid right
+     * and wrong, and two goods heard; then Sort the aisles' product, a wrong aisle, and its result.
+     */
+    private fun chapter9Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun market() = (viewModel?.screen as Screen.Round).round as MarketRound
+
+        fun aisles() = (viewModel?.screen as Screen.Round).round as AisleRound
+
+        fun put(id: String) {
+            val good = checkNotNull(market().question).stall.single { it.id == id }
+            val count = market().counts[id] ?: 0
+            val description = if (count == 0) good.means else app.resources.getQuantityString(R.plurals.market_in_basket, count, good.means, count)
+            screen.onAllNodes(hasContentDescription(description) and hasClickAction()).onLast().performScrollTo().performClick()
+        }
+
+        fun sortInto(aisle: String) = screen.onNode(hasText(aisle) and hasClickAction()).performScrollTo().performClick()
+
+        openRealPractice()
+        openGame(R.string.game_market_list)
+        shot("244-market-setup")
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        // The first list that asks for more than one, so the basket shows them side by side.
+        while (checkNotNull(market().question).wanted.values.single() < 2) {
+            checkNotNull(market().question).wanted.forEach { (id, count) -> repeat(count) { put(id) } }
+            tap(R.string.market_pay)
+            tap(R.string.action_continue)
+        }
+        val (good, count) = checkNotNull(market().question).wanted.entries.single()
+        put(good)
+        shot("245-market-one-in")
+        repeat(count - 1) { put(good) }
+        screen.mainClock.autoAdvance = false
+        tap(R.string.market_pay)
+        screen.mainClock.advanceTimeBy(100)
+        shot("246-market-right")
+        screen.mainClock.autoAdvance = true
+        tap(R.string.action_continue)
+        val next = checkNotNull(market().question)
+        put(next.wanted.keys.single())
+        put(next.stall.first { it.id !in next.wanted }.id)
+        tap(R.string.market_pay)
+        shot("247-market-wrong")
+        leaveRound()
+
+        openGame(R.string.game_market_list)
+        tap(R.string.option_listen)
+        screen.onNodeWithText(app.getString(R.string.option_two_goods)).performScrollTo().performClick()
+        tap(R.string.setup_play)
+        checkNotNull(market().question).wanted.forEach { (id, n) -> repeat(n) { put(id) } }
+        shot("248-market-two-goods")
+        leaveRound()
+
+        openGame(R.string.game_aisle_sort)
+        tap(R.string.setup_play)
+        repeat(4) { sortInto(checkNotNull(aisles().rightAisle).polish) }
+        screen.mainClock.advanceTimeBy(14_000)
+        shot("249-aisles-product")
+        val card = checkNotNull(aisles().card)
+        sortInto(aisles().aisles.first { it.id != card.aisle }.polish)
+        shot("250-aisles-wrong")
+        tap(R.string.action_continue)
+        repeat(3) { sortInto(checkNotNull(aisles().rightAisle).polish) }
+        screen.mainClock.advanceTimeBy(46_000)
+        shot("251-aisles-result")
     }
 
     private fun registerSort(theme: String) {

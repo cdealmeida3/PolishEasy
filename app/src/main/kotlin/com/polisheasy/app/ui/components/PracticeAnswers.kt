@@ -7,8 +7,11 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -186,6 +189,27 @@ fun BucketRow(buckets: List<BucketView>, onClick: (Int) -> Unit, modifier: Modif
     } else {
         Row(horizontalArrangement = Arrangement.spacedBy(Space.xs), modifier = modifier.fillMaxWidth()) {
             buckets.forEachIndexed { index, bucket -> Bucket(bucket, { onClick(index) }, Modifier.weight(1f), tall = true) }
+        }
+    }
+}
+
+/**
+ * More words to sort under than fit side by side, such as Sort the aisles' four: [across] in a row,
+ * as many rows as it takes, every card in a row as tall as the tallest. One under the other when
+ * the text is large, as [BucketRow].
+ */
+@Composable
+fun BucketGrid(buckets: List<BucketView>, onClick: (Int) -> Unit, modifier: Modifier = Modifier, across: Int = 2) {
+    if (Scaled.roomy()) {
+        BucketRow(buckets, onClick, modifier)
+        return
+    }
+    Column(verticalArrangement = Arrangement.spacedBy(Space.xs), modifier = modifier.fillMaxWidth()) {
+        buckets.withIndex().chunked(across).forEach { row ->
+            Row(horizontalArrangement = Arrangement.spacedBy(Space.xs), modifier = Modifier.fillMaxWidth().height(IntrinsicSize.Min)) {
+                row.forEach { (index, bucket) -> Bucket(bucket, { onClick(index) }, Modifier.weight(1f).fillMaxHeight(), tall = true) }
+                repeat(across - row.size) { Box(Modifier.weight(1f)) }
+            }
         }
     }
 }
