@@ -531,6 +531,20 @@
     <string name="choice_sentences">The sentences</string>
     <string name="swap_instruction">Which word takes the place of the marked one?</string>
     <string name="swap_note">%1$s · %2$s · %3$s</string>
+    <string name="game_packaging">Packaging match</string>
+    <string name="game_packaging_note">What is in it, ___ coli. Find what it comes in: puszka coli, a can of cola.</string>
+    <string name="game_packaging_needs">Opens when you learn puszka, butelka, słoik and karton and what goes in them, in chapter 15.</string>
+    <string name="packaging_instruction">What does it come in?</string>
+    <string name="packaging_note">%1$s · %2$s</string>
+    <string name="game_how_many">How many?</string>
+    <string name="game_how_many_note">Count the pictures and pick the words: dwie butelki, but pięć butelek.</string>
+    <string name="game_how_many_needs">Opens when you learn to count containers, dwa kartony and pięć kartonów, in chapter 15.</string>
+    <string name="how_many_instruction">How do you say how many there are?</string>
+    <string name="how_many_note">%1$s · %2$s</string>
+    <plurals name="how_many_pictures">
+        <item quantity="one">%d picture</item>
+        <item quantity="other">%d pictures</item>
+    </plurals>
     <string name="game_spell_it">Spell it</string>
     <string name="game_spell_it_note">Tap the letters in order to spell the word.</string>
     <string name="game_spell_it_needs">Opens when you learn four words to spell.</string>

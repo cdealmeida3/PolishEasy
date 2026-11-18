@@ -78,6 +78,10 @@ data class Course(
     val places: List<String> = emptyList(),
     /** The sentences of Pronoun swap, in the content's order. */
     val swaps: List<SwapSentence> = emptyList(),
+    /** The phrases of Packaging match, in the content's order. */
+    val packaging: List<PackagePhrase> = emptyList(),
+    /** The phrases of How many?, in the content's order. */
+    val counting: List<CountPhrase> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }
