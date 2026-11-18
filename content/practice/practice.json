@@ -1571,5 +1571,504 @@
       {"text": "W sobotę o jedenastej: śniadanie.", "meaning": {"en": "Saturday at eleven: breakfast."}, "day": "sobota", "time": "11:00", "items": ["sobota", "o-godz", "jedenasta", "sniadanie"]},
       {"text": "W niedzielę o dziewiętnastej: spektakl.", "meaning": {"en": "Sunday at seven in the evening: a show."}, "day": "niedziela", "time": "19:00", "items": ["niedziela", "o-godz", "dziewietnasta", "spektakl"]}
     ]
-  }
+  },
+  "stories": [
+    {
+      "title": {
+        "en": "Ewa's morning"
+      },
+      "panels": [
+        {
+          "text": "Najpierw wstałam o siódmej.",
+          "meaning": {
+            "en": "First I got up at seven."
+          },
+          "picture": "budzik",
+          "items": [
+            "najpierw",
+            "wstac-wstalam",
+            "o-godz",
+            "siodma"
+          ]
+        },
+        {
+          "text": "Potem umyłam zęby.",
+          "meaning": {
+            "en": "Then I brushed my teeth."
+          },
+          "picture": "zeby-teeth",
+          "items": [
+            "potem",
+            "umyc-umylam",
+            "zeby-teeth"
+          ]
+        },
+        {
+          "text": "Następnie zjadłam śniadanie.",
+          "meaning": {
+            "en": "Next I had breakfast."
+          },
+          "picture": "platki-sniadaniowe",
+          "items": [
+            "nastepnie",
+            "zjesc-zjadlam",
+            "sniadanie"
+          ]
+        },
+        {
+          "text": "A później poszłam do szkoły.",
+          "meaning": {
+            "en": "And later I went to school."
+          },
+          "picture": "szkola",
+          "items": [
+            "a",
+            "pozniej",
+            "pojsc-poszedlem",
+            "do-szkoly"
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Adam's Saturday"
+      },
+      "panels": [
+        {
+          "text": "Najpierw grałem w tenisa.",
+          "meaning": {
+            "en": "First I played tennis."
+          },
+          "picture": "w-tenisa",
+          "items": [
+            "najpierw",
+            "grac-gralam",
+            "w-tenisa"
+          ]
+        },
+        {
+          "text": "Potem jadłem lody.",
+          "meaning": {
+            "en": "Then I ate ice cream."
+          },
+          "picture": "lody",
+          "items": [
+            "potem",
+            "jesc-jadlem",
+            "lody"
+          ]
+        },
+        {
+          "text": "Następnie byłem w kinie.",
+          "meaning": {
+            "en": "Next I was at the cinema."
+          },
+          "picture": "w-kinie",
+          "items": [
+            "nastepnie",
+            "byc-bylem",
+            "w-kinie"
+          ]
+        },
+        {
+          "text": "A później wróciłem do domu.",
+          "meaning": {
+            "en": "And later I came back home."
+          },
+          "picture": "w-domu",
+          "items": [
+            "a",
+            "pozniej",
+            "wrocic-wrocilam",
+            "do-domu"
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "At the museum"
+      },
+      "panels": [
+        {
+          "text": "Najpierw byłem w muzeum.",
+          "meaning": {
+            "en": "First I was at the museum."
+          },
+          "picture": "w-muzeum",
+          "items": [
+            "najpierw",
+            "byc-bylem",
+            "w-muzeum"
+          ]
+        },
+        {
+          "text": "Potem widziałem piękne obrazy.",
+          "meaning": {
+            "en": "Then I saw beautiful paintings."
+          },
+          "picture": "obraz",
+          "items": [
+            "potem",
+            "widziec-widzialem",
+            "piekny",
+            "obraz"
+          ]
+        },
+        {
+          "text": "Następnie chciałem zrobić zdjęcie.",
+          "meaning": {
+            "en": "Next I wanted to take a photo."
+          },
+          "picture": "aparat",
+          "items": [
+            "nastepnie",
+            "chciec-chcialem",
+            "zrobic",
+            "zdjecie"
+          ]
+        },
+        {
+          "text": "A później wszyscy śmiali się głośno.",
+          "meaning": {
+            "en": "And later everybody laughed out loud."
+          },
+          "picture": "zart",
+          "items": [
+            "a",
+            "pozniej",
+            "wszyscy",
+            "smiac-sie-smiali",
+            "glosno"
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Kasia's Sunday"
+      },
+      "panels": [
+        {
+          "text": "Najpierw byłam na treningu.",
+          "meaning": {
+            "en": "First I was at training."
+          },
+          "picture": "wysportowany",
+          "items": [
+            "najpierw",
+            "byc-bylam",
+            "na-treningu"
+          ]
+        },
+        {
+          "text": "Potem jadłam sushi.",
+          "meaning": {
+            "en": "Then I ate sushi."
+          },
+          "picture": "sushi",
+          "items": [
+            "potem",
+            "jesc-jadlem",
+            "sushi"
+          ]
+        },
+        {
+          "text": "Następnie poszłam na zakupy.",
+          "meaning": {
+            "en": "Next I went shopping."
+          },
+          "picture": "na-zakupy",
+          "items": [
+            "nastepnie",
+            "pojsc-poszedlem",
+            "na-zakupy"
+          ]
+        },
+        {
+          "text": "A później kupiłam sweter.",
+          "meaning": {
+            "en": "And later I bought a jumper."
+          },
+          "picture": "sweter",
+          "items": [
+            "a",
+            "pozniej",
+            "kupic-kupilam",
+            "sweter"
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "In the mountains"
+      },
+      "panels": [
+        {
+          "text": "Najpierw byłem w górach.",
+          "meaning": {
+            "en": "First I was in the mountains."
+          },
+          "picture": "w-gorach",
+          "items": [
+            "najpierw",
+            "byc-bylem",
+            "w-gorach"
+          ]
+        },
+        {
+          "text": "Potem padał deszcz.",
+          "meaning": {
+            "en": "Then it rained."
+          },
+          "picture": "padal-deszcz",
+          "items": [
+            "potem",
+            "padal-deszcz"
+          ]
+        },
+        {
+          "text": "Następnie nie miałem zasięgu.",
+          "meaning": {
+            "en": "Next I had no signal."
+          },
+          "picture": "zasieg",
+          "items": [
+            "nastepnie",
+            "nie",
+            "miec-mialem",
+            "zasieg"
+          ]
+        },
+        {
+          "text": "A później wróciłem do domu na piechotę.",
+          "meaning": {
+            "en": "And later I walked back home."
+          },
+          "picture": "na-piechote",
+          "items": [
+            "a",
+            "pozniej",
+            "wrocic-wrocilam",
+            "do-domu",
+            "na-piechote"
+          ]
+        }
+      ]
+    }
+  ],
+  "speakers": [
+    {
+      "text": "Wczoraj byłem w kinie.",
+      "meaning": {
+        "en": "Yesterday I was at the cinema."
+      },
+      "who": "man",
+      "items": [
+        "wczoraj",
+        "byc-bylem",
+        "w-kinie"
+      ]
+    },
+    {
+      "text": "W sobotę grałem w tenisa.",
+      "meaning": {
+        "en": "On Saturday I played tennis."
+      },
+      "who": "man",
+      "items": [
+        "sobota",
+        "grac-gralam",
+        "w-tenisa"
+      ]
+    },
+    {
+      "text": "Kupiłem nowy sweter.",
+      "meaning": {
+        "en": "I bought a new jumper."
+      },
+      "who": "man",
+      "items": [
+        "kupic-kupilam",
+        "nowy",
+        "sweter"
+      ]
+    },
+    {
+      "text": "Nie miałem zasięgu.",
+      "meaning": {
+        "en": "I had no signal."
+      },
+      "who": "man",
+      "items": [
+        "nie",
+        "miec-mialem",
+        "zasieg"
+      ]
+    },
+    {
+      "text": "Chciałem zrobić zdjęcie.",
+      "meaning": {
+        "en": "I wanted to take a photo."
+      },
+      "who": "man",
+      "items": [
+        "chciec-chcialem",
+        "zrobic",
+        "zdjecie"
+      ]
+    },
+    {
+      "text": "Wczoraj byłam na imprezie.",
+      "meaning": {
+        "en": "Yesterday I was at a party."
+      },
+      "who": "woman",
+      "items": [
+        "wczoraj",
+        "byc-bylam",
+        "na-imprezie"
+      ]
+    },
+    {
+      "text": "W niedzielę spałam i czytałam.",
+      "meaning": {
+        "en": "On Sunday I slept and read."
+      },
+      "who": "woman",
+      "items": [
+        "niedziela",
+        "spac-spalam",
+        "i",
+        "czytac-czytalem"
+      ]
+    },
+    {
+      "text": "Oglądałam polski film.",
+      "meaning": {
+        "en": "I watched a Polish film."
+      },
+      "who": "woman",
+      "items": [
+        "ogladac-ogladalam",
+        "polski",
+        "film"
+      ]
+    },
+    {
+      "text": "Poszłam na zakupy.",
+      "meaning": {
+        "en": "I went shopping."
+      },
+      "who": "woman",
+      "items": [
+        "pojsc-poszedlem",
+        "na-zakupy"
+      ]
+    },
+    {
+      "text": "Wstałam o siódmej.",
+      "meaning": {
+        "en": "I got up at seven."
+      },
+      "who": "woman",
+      "items": [
+        "wstac-wstalam",
+        "o-godz",
+        "siodma"
+      ]
+    },
+    {
+      "text": "Byliśmy w muzeum.",
+      "meaning": {
+        "en": "We were at the museum."
+      },
+      "who": "men",
+      "items": [
+        "byc-bylismy",
+        "w-muzeum"
+      ]
+    },
+    {
+      "text": "Wczoraj mieliśmy test.",
+      "meaning": {
+        "en": "Yesterday we had a test."
+      },
+      "who": "men",
+      "items": [
+        "wczoraj",
+        "miec-mielismy",
+        "test"
+      ]
+    },
+    {
+      "text": "Poszliśmy do kina.",
+      "meaning": {
+        "en": "We went to the cinema."
+      },
+      "who": "men",
+      "items": [
+        "pojsc-poszlismy",
+        "do-kina"
+      ]
+    },
+    {
+      "text": "Jedliśmy lody.",
+      "meaning": {
+        "en": "We ate ice cream."
+      },
+      "who": "men",
+      "items": [
+        "jesc-jedlismy",
+        "lody"
+      ]
+    },
+    {
+      "text": "Byłyśmy na treningu.",
+      "meaning": {
+        "en": "We were at training."
+      },
+      "who": "women",
+      "items": [
+        "byc-bylysmy",
+        "na-treningu"
+      ]
+    },
+    {
+      "text": "W sobotę miałyśmy imprezę.",
+      "meaning": {
+        "en": "On Saturday we had a party."
+      },
+      "who": "women",
+      "items": [
+        "sobota",
+        "miec-mielismy",
+        "impreza-acc"
+      ]
+    },
+    {
+      "text": "Poszłyśmy do kina.",
+      "meaning": {
+        "en": "We went to the cinema."
+      },
+      "who": "women",
+      "items": [
+        "pojsc-poszlismy",
+        "do-kina"
+      ]
+    },
+    {
+      "text": "Jadłyśmy lody.",
+      "meaning": {
+        "en": "We ate ice cream."
+      },
+      "who": "women",
+      "items": [
+        "jesc-jedlismy",
+        "lody"
+      ]
+    }
+  ]
 }

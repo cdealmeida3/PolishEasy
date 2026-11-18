@@ -73,7 +73,23 @@ internal data class PracticeFile(
     val clock: ClockFile? = null,
     /** The days and plans of Week planner. */
     val week: WeekFile? = null,
+    /** The stories of Story strip. */
+    val stories: List<StoryFile> = emptyList(),
+    /** The lines of Who said it?. */
+    val speakers: List<SpeakerFile> = emptyList(),
 )
+
+/** One story of Story strip: its [title] and its [panels] in the order they happen. */
+@Serializable
+internal data class StoryFile(val title: Localized, val panels: List<PanelFile>)
+
+/** One picture of a story: the sentence it shows, what it means, the Item whose Picture it is, and the Items the sentence uses. */
+@Serializable
+internal data class PanelFile(val text: String, val meaning: Localized, val picture: String, val items: List<String>)
+
+/** One line of Who said it?: its [text] in the past, what it means, [who] says it (man, woman, men or women), and the Items it uses. */
+@Serializable
+internal data class SpeakerFile(val text: String, val meaning: Localized, val who: String, val items: List<String>)
 
 /** The Item ids of Tell the time: the [hours] one to twelve in order, and the words for past, to, half to and a quarter. */
 @Serializable
@@ -309,6 +325,11 @@ internal class ReadContent(
                         .distinctBy { it.text },
                 )
             },
+            stories = practice?.stories.orEmpty().map { story ->
+                Story(story.title, story.panels.map { StoryPanel(it.text, it.meaning, it.picture, it.items.distinct()) })
+            }.filter { it.panels.size >= STORY_PANELS.first }.distinctBy { it.text },
+            speakers = practice?.speakers.orEmpty().mapNotNull { line -> Speaker.of(line.who)?.let { SpeakerLine(line.text, line.meaning, it, line.items.distinct()) } }
+                .distinctBy { it.text },
         )
     }
 
@@ -513,6 +534,8 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         problems += timeOfDayProblems(file, practice.timesOfDay, course, content.itemsComplete)
         practice.clock?.let { clock -> problems += clockProblems(file, clock, course, content.itemsComplete) }
         practice.week?.let { week -> problems += weekProblems(file, week, course, content.itemsComplete) }
+        problems += storyProblems(file, practice.stories, course, content.itemsComplete)
+        problems += speakerProblems(file, practice.speakers, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -757,6 +780,50 @@ internal fun repeatedIds(kind: String, ids: List<Filed<String>>): List<ContentPr
         val earlier = first.putIfAbsent(id, file) ?: return@mapNotNull null
         ContentProblem(file, id, "More than one $kind has the id $id. The first is in $earlier")
     }
+}
+
+/** How many pictures a story of Story strip has: enough to put in order, and few enough to fit across the screen. */
+internal val STORY_PANELS = 3..5
+
+/** What is wrong with Story strip: each story of three to five pictures, each a defined Item's Picture once in its story, with a sentence and Items, and no story twice. */
+private fun storyProblems(file: String, stories: List<StoryFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    stories.forEach { story ->
+        val title = story.title.values.firstOrNull().orEmpty()
+        if (story.panels.size !in STORY_PANELS) problems += ContentProblem(file, null, "The story \"$title\" has ${story.panels.size} pictures, not ${STORY_PANELS.first} to ${STORY_PANELS.last}")
+        story.panels.forEach { panel ->
+            if (panel.text.isBlank()) problems += ContentProblem(file, null, "A picture of the story \"$title\" has no sentence")
+            if (panel.items.isEmpty()) problems += ContentProblem(file, null, "The sentence \"${panel.text}\" lists no Items")
+            panel.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+                problems += ContentProblem(file, id, "The sentence \"${panel.text}\" names Item $id, which is not defined")
+            }
+            if (itemsComplete && panel.picture !in course.pictures) {
+                problems += ContentProblem(file, panel.picture, "The sentence \"${panel.text}\" shows the Picture of ${panel.picture}, which has none")
+            }
+        }
+        story.panels.map { it.picture }.repeated().forEach { id -> problems += ContentProblem(file, id, "The story \"$title\" shows the Picture of $id more than once") }
+    }
+    stories.map { story -> story.panels.joinToString(" ") { it.text } }.repeated().forEach { text -> problems += ContentProblem(file, null, "The story \"$text\" is listed more than once") }
+    return problems
+}
+
+/** What is wrong with Who said it?: each line said by a man, a woman, men or women, heard in its verbs' endings and only theirs, with Items, and no line twice. */
+private fun speakerProblems(file: String, lines: List<SpeakerFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    lines.forEach { line ->
+        val who = Speaker.of(line.who)
+        if (who == null) {
+            problems += ContentProblem(file, null, "The line \"${line.text}\" is said by ${line.who}, not by man, woman, men or women")
+        } else if (Speaker.heardIn(line.text) != setOf(who)) {
+            problems += ContentProblem(file, null, "The line \"${line.text}\" is said by ${line.who}, but its verbs end ${Speaker.heardIn(line.text).joinToString { "-${it.ending}" }.ifEmpty { "in none of -łem, -łam, -liśmy, -łyśmy" }}")
+        }
+        if (line.items.isEmpty()) problems += ContentProblem(file, null, "The line \"${line.text}\" lists no Items")
+        line.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "The line \"${line.text}\" names Item $id, which is not defined")
+        }
+    }
+    lines.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The line \"$text\" is listed more than once") }
+    return problems
 }
 
 internal fun List<String>.repeated(): Set<String> = groupingBy { it }.eachCount().filterValues { it > 1 }.keys

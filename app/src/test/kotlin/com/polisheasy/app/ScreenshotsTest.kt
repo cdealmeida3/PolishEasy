@@ -47,6 +47,7 @@ import com.polisheasy.app.ui.components.NavigationTab
 import com.polisheasy.app.ui.screens.HomeScreen
 import com.polisheasy.app.ui.screens.SettingsScreen
 import com.polisheasy.app.ui.screens.SummaryScreen
+import com.polisheasy.app.ui.screens.practice.label
 import com.polisheasy.engine.CourseEngine
 import com.polisheasy.engine.DayView
 import com.polisheasy.engine.FileLearnerProgress
@@ -83,6 +84,8 @@ import com.polisheasy.engine.ClockRound
 import com.polisheasy.engine.FlipRound
 import com.polisheasy.engine.TimeRound
 import com.polisheasy.engine.PlannerRound
+import com.polisheasy.engine.SpeakerRound
+import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.SaidTime
 import com.polisheasy.engine.TreeRound
 import com.polisheasy.app.ui.components.TREE_SPOT_TAG
@@ -2614,6 +2617,80 @@ class ScreenshotsTest {
         tap(R.string.action_continue)
         screen.mainClock.advanceTimeBy(60_000)
         shot("277-times-result")
+    }
+
+    @Test
+    fun `Story strip and Who said it over the real course in the light theme`() = chapter13Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Story strip and Who said it over the real course in the dark theme`() = chapter13Games("dark")
+
+    @Test
+    fun `Story strip and Who said it over the real course at the largest font size`() = atTheLargestFontSize { chapter13Games("large") }
+
+    /**
+     * Chapter 13's Games: Story strip's setup, a story heard, a story read, a wrong picture, the
+     * strip half filled, and the result; then Who said it?'s setup, a line heard, a wrong speaker,
+     * and the result.
+     */
+    private fun chapter13Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun story() = (viewModel?.screen as Screen.Round).round as StoryRound
+
+        fun who() = (viewModel?.screen as Screen.Round).round as SpeakerRound
+
+        fun tapTile(index: Int) =
+            screen.onNode(hasContentDescription(checkNotNull(story().story).tiles[index].meaning) and hasClickAction()).performScrollTo().performClick()
+
+        fun tapSpeaker(index: Int) = screen.onNode(hasText(app.getString(who().speakers[index].label())) and hasClickAction()).performScrollTo().performClick()
+
+        openRealPractice()
+        openGame(R.string.game_story_strip)
+        shot("298-story-setup")
+        tap(R.string.setup_play)
+        shot("299-story-heard")
+        leaveRound()
+
+        openGame(R.string.game_story_strip)
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        shot("300-story-read")
+        val first = checkNotNull(story().question)
+        tapTile(first.tile)
+        tap(R.string.action_continue)
+        val second = checkNotNull(story().question)
+        val view = checkNotNull(story().story)
+        tapTile(view.tiles.indices.first { it != second.tile && it !in story().placed })
+        shot("301-story-wrong")
+        tap(R.string.action_continue)
+        shot("302-story-strip")
+        while (viewModel?.screen is Screen.Round) {
+            tapTile(checkNotNull(story().question).tile)
+            tap(R.string.action_continue)
+        }
+        shot("303-story-result")
+        tap(R.string.result_done)
+
+        openGame(R.string.game_who_said_it)
+        shot("304-who-setup")
+        tap(R.string.setup_play)
+        shot("305-who-heard")
+        leaveRound()
+
+        openGame(R.string.game_who_said_it)
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        val line = checkNotNull(who().question)
+        tapSpeaker(who().speakers.indexOfFirst { it != line.who })
+        shot("306-who-wrong")
+        tap(R.string.action_continue)
+        while (viewModel?.screen is Screen.Round) {
+            tapSpeaker(who().speakers.indexOf(checkNotNull(who().question).who))
+            tap(R.string.action_continue)
+        }
+        shot("307-who-result")
     }
 
     @Test

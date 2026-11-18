@@ -751,6 +751,49 @@ class PracticeOverAuthoredContentTest {
         assertEquals(WeekPlanner.PLANS, round.total)
     }
 
+    /** The words of [text], lower case, without its punctuation. */
+    private fun wordsOf(text: String): List<String> = text.lowercase().split(Regex("[^\\p{L}]+")).filter { it.isNotEmpty() }
+
+    /** Every word the Items [ids] can say, in their text or a form. */
+    private fun wordsOfItems(ids: List<String>): Set<String> =
+        ids.mapNotNull(course.itemsById::get).flatMap { listOf(it.text) + it.forms }.flatMap(::wordsOf).toSet()
+
+    @Test
+    fun `Story strip opens in chapter 13, every sentence's words are its Items', and every story is told with a Clip`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.STORY_STRIP }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l13-"), course.path[firstReady - 1].id)
+        assertTrue(course.stories.size >= StoryStrip.STORIES)
+        course.stories.forEach { story ->
+            story.panels.forEach { panel ->
+                val words = wordsOfItems(panel.items)
+                wordsOf(panel.text).forEach { word -> assertTrue(word in words, "${panel.text}: $word is not one of its Items") }
+                assertTrue(panel.picture in course.pictures, "${panel.text} has no Picture")
+            }
+            assertTrue(course.clipFor(story.text) != null, "No Clip for ${story.text}")
+        }
+        val all = practiceAfter(course.path.size)
+        assertEquals(listOf(StoryStrip.LISTEN, StoryStrip.READ), all.setup(Game.STORY_STRIP).choices[0].options.map { it.id })
+        val round = all.start(all.setup(Game.STORY_STRIP, listOf(StoryStrip.LISTEN))) as StoryRound
+        assertEquals(StoryStrip.STORIES, round.stories.size)
+    }
+
+    @Test
+    fun `Who said it opens in chapter 13, with every speaker, every line's words its Items' and a Clip`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.WHO_SAID_IT }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l13-"), course.path[firstReady - 1].id)
+        assertEquals(Speaker.entries.toSet(), course.speakers.map { it.who }.toSet())
+        course.speakers.forEach { line ->
+            val words = wordsOfItems(line.items)
+            wordsOf(line.text).forEach { word -> assertTrue(word in words, "${line.text}: $word is not one of its Items") }
+            assertEquals(setOf(line.who), Speaker.heardIn(line.text), line.text)
+            assertTrue(course.clipFor(line.text) != null, "No Clip for ${line.text}")
+        }
+        val all = practiceAfter(course.path.size)
+        val round = all.start(all.setup(Game.WHO_SAID_IT, listOf(WhoSaidIt.LISTEN))) as SpeakerRound
+        assertEquals(WhoSaidIt.QUESTIONS, round.total)
+        assertEquals(Speaker.entries, round.speakers)
+    }
+
     @Test
     fun `the Verb challenge offers chapter 4's conjugation once its verbs are learned`() {
         val afterB = course.path.indexOfFirst { it.id == "kpk1-l04-b3" } + 1
