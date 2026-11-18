@@ -1,0 +1,442 @@
+{
+  "id": "kpk1-l10-b2",
+  "section": {
+    "letter": "B",
+    "heading": "A może rurka z kremem?",
+    "meaning": {
+      "en": "How about a cream horn?"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-b2-t01",
+      "before": "kpk1-l10-b2-e01",
+      "title": {
+        "en": "Nie lubię kawy"
+      },
+      "body": {
+        "en": "After *nie*, the thing you like, have, drink or eat goes into the genitive (*dopełniacz*): *lubię kawę*, but *nie lubię kawy*; *piję mleko*, but *nie piję mleka*. A feminine word ends in *-y*, or *-i* after *k*, *g*, *l*, *j*; a neuter one in *-a*."
+      },
+      "table": {
+        "title": {
+          "en": "Biernik i dopełniacz"
+        },
+        "columns": [
+          {
+            "gender": "m"
+          },
+          {
+            "gender": "f"
+          },
+          {
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "case": "B",
+            "cells": [
+              "sok",
+              "kaw[ę]",
+              "mlek[o]"
+            ]
+          },
+          {
+            "case": "D",
+            "cells": [
+              "sok[u]",
+              "kaw[y]",
+              "mlek[a]"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "kpk1-l10-b2-t02",
+      "before": "kpk1-l10-b2-e13",
+      "title": {
+        "en": "Ani… ani…"
+      },
+      "body": {
+        "en": "*Ani… ani…* is neither… nor…: *nie piję ani kawy, ani herbaty*. *Nie* stays before the verb."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b2-e01",
+      "prompt": "dopełniacz",
+      "options": [
+        {
+          "en": "the plural"
+        },
+        {
+          "en": "the genitive (kogo? czego?)"
+        },
+        {
+          "en": "a question"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dopelniacz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-b2-e02",
+      "text": "to jest dopełniacz",
+      "meaning": {
+        "en": "this is the genitive"
+      },
+      "distractors": [
+        "to jest biernik",
+        "to jest mianownik"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "dopelniacz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b2-e03",
+      "prompt": "kawy",
+      "options": [
+        {
+          "en": "coffee (after lubię, kupuję…: lubię kawę)"
+        },
+        {
+          "en": "tea (after nie: nie piję herbaty)"
+        },
+        {
+          "en": "coffee (after nie: nie piję kawy)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kawa-gen"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-b2-e04",
+      "text": "nie piję kawy",
+      "meaning": {
+        "en": "I don't drink coffee"
+      },
+      "distractors": [
+        "nie piję herbaty",
+        "piję kawę"
+      ],
+      "items": [
+        "nie",
+        "pic-pije",
+        "kawa-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b2-e05",
+      "prompt": "herbaty",
+      "options": [
+        {
+          "en": "tea (after nie: nie piję herbaty)"
+        },
+        {
+          "en": "tea (after lubię, mam…: lubię herbatę)"
+        },
+        {
+          "en": "coffee (after nie: nie piję kawy)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "herbata-gen"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-b2-e06",
+      "text": "Lubię herbatę, ale nie lubię ___.",
+      "meaning": {
+        "en": "I like tea, but I don't like coffee."
+      },
+      "gaps": [
+        [
+          "kawy"
+        ]
+      ],
+      "distractors": [
+        "kawę",
+        "kawa"
+      ],
+      "items": [
+        "lubic-lubie",
+        "herbata-acc",
+        "ale",
+        "nie",
+        "kawa-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b2-e07",
+      "prompt": "wody",
+      "options": [
+        {
+          "en": "water (after proszę, mam…: proszę wodę)"
+        },
+        {
+          "en": "water (after nie: nie mam wody)"
+        },
+        {
+          "en": "tea (after nie: nie piję herbaty)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "woda-gen"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-b2-e08",
+      "prompt": {
+        "en": "I don't have any water"
+      },
+      "acceptedAnswers": [
+        "nie mam wody"
+      ],
+      "distractors": [
+        "wodę",
+        "woda"
+      ],
+      "items": [
+        "nie",
+        "miec-mam",
+        "woda-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b2-e09",
+      "prompt": "mleka",
+      "options": [
+        {
+          "en": "milk"
+        },
+        {
+          "en": "water (after nie: nie mam wody)"
+        },
+        {
+          "en": "milk (after nie: nie lubię mleka)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "mleko-gen"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-b2-e10",
+      "acceptedAnswers": [
+        "nie lubię mleka"
+      ],
+      "meaning": {
+        "en": "I don't like milk"
+      },
+      "items": [
+        "nie",
+        "lubic-lubie",
+        "mleko-gen"
+      ],
+      "readingAnswers": [
+        "ja nie lubię mleka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b2-e11",
+      "prompt": "wina",
+      "options": [
+        {
+          "en": "wine (after nie: nie piję wina)"
+        },
+        {
+          "en": "wine"
+        },
+        {
+          "en": "milk (after nie: nie lubię mleka)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wino-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-b2-e12",
+      "prompt": {
+        "en": "I don't drink wine"
+      },
+      "acceptedAnswers": [
+        "nie piję wina",
+        "ja nie piję wina"
+      ],
+      "items": [
+        "nie",
+        "pic-pije",
+        "wino-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b2-e13",
+      "prompt": "ani",
+      "options": [
+        {
+          "en": "or"
+        },
+        {
+          "en": "nor, not even (ani… ani…: neither… nor…)"
+        },
+        {
+          "en": "and"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ani"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-b2-e14",
+      "prompt": {
+        "en": "I drink neither coffee nor tea"
+      },
+      "acceptedAnswers": [
+        "nie piję ani kawy, ani herbaty"
+      ],
+      "distractors": [
+        "kawę",
+        "herbatę"
+      ],
+      "items": [
+        "nie",
+        "pic-pije",
+        "ani",
+        "kawa-gen",
+        "herbata-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b2-e15",
+      "prompt": "to dobrze brzmi",
+      "options": [
+        {
+          "en": "everything is fine"
+        },
+        {
+          "en": "that's all"
+        },
+        {
+          "en": "that sounds good"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "to-dobrze-brzmi"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-b2-e16",
+      "pairs": [
+        {
+          "polish": "nie piję kawy",
+          "meaning": {
+            "en": "I don't drink coffee"
+          }
+        },
+        {
+          "polish": "nie lubię mleka",
+          "meaning": {
+            "en": "I don't like milk"
+          }
+        },
+        {
+          "polish": "nie mam wody",
+          "meaning": {
+            "en": "I have no water"
+          }
+        },
+        {
+          "polish": "nie piję wina",
+          "meaning": {
+            "en": "I don't drink wine"
+          }
+        },
+        {
+          "polish": "nie piję herbaty",
+          "meaning": {
+            "en": "I don't drink tea"
+          }
+        },
+        {
+          "polish": "to dobrze brzmi",
+          "meaning": {
+            "en": "that sounds good"
+          }
+        }
+      ],
+      "items": [
+        "nie",
+        "pic-pije",
+        "kawa-gen",
+        "lubic-lubie",
+        "mleko-gen",
+        "miec-mam",
+        "woda-gen",
+        "wino-gen",
+        "herbata-gen",
+        "to-dobrze-brzmi"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-b2-e17",
+      "lines": [
+        "Kawa czy herbata?",
+        "Nie piję kawy.",
+        "To może herbata?",
+        "To dobrze brzmi."
+      ],
+      "meaning": {
+        "en": "Coffee or tea?"
+      },
+      "items": [
+        "kawa",
+        "czy",
+        "herbata",
+        "nie",
+        "pic-pije",
+        "kawa-gen",
+        "to",
+        "moze",
+        "to-dobrze-brzmi"
+      ]
+    }
+  ]
+}

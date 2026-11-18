@@ -1442,9 +1442,11 @@ class ScreenshotsTest {
         openGame(R.string.game_sound_gaps)
         tap(R.string.option_mixed)
         tap(R.string.setup_play)
+        // Phrases are a few among many words: a Round may end before one comes, and then another is played.
         while (' ' !in checkNotNull(gapped().question).gap.polish) {
             answer(correctly = true)
             moveOn()
+            if (viewModel?.screen !is Screen.Round) tap(R.string.result_play_again)
         }
         shot("91-gaps-phrase")
         while (viewModel?.screen is Screen.Round) {

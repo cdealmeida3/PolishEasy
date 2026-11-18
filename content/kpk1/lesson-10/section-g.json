@@ -1,0 +1,427 @@
+{
+  "id": "kpk1-l10-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-g-t01",
+      "before": "kpk1-l10-g-e01",
+      "title": {
+        "en": "Zapiekanka"
+      },
+      "body": {
+        "en": "A *zapiekanka* is half a baguette baked with mushrooms and cheese, a favourite street food. You choose what goes on it, *z szynką*, *z boczkiem*, *ze szpinakiem*, and a sauce: *keczup*, *majonez* or *sos czosnkowy*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-g-e01",
+      "prompt": "zapiekanka",
+      "options": [
+        {
+          "en": "a sandwich"
+        },
+        {
+          "en": "a zapiekanka (half a baguette baked with mushrooms and cheese)"
+        },
+        {
+          "en": "a salad"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zapiekanka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-g-e02",
+      "prompt": "z podwójnym serem",
+      "options": [
+        {
+          "en": "with cheese"
+        },
+        {
+          "en": "with bacon"
+        },
+        {
+          "en": "with double cheese"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-podwojnym-serem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-g-e03",
+      "text": "zapiekanka z szynką",
+      "meaning": {
+        "en": "a zapiekanka with ham"
+      },
+      "distractors": [
+        "zapiekanka z boczkiem",
+        "zapiekanka z serem"
+      ],
+      "items": [
+        "zapiekanka",
+        "z-szynka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-g-e04",
+      "prompt": "z boczkiem",
+      "options": [
+        {
+          "en": "with bacon"
+        },
+        {
+          "en": "with ham"
+        },
+        {
+          "en": "with chicken"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-boczkiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-g-e05",
+      "prompt": "ze szpinakiem",
+      "options": [
+        {
+          "en": "with vegetables"
+        },
+        {
+          "en": "with spinach"
+        },
+        {
+          "en": "with bacon"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ze-szpinakiem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-g-e06",
+      "text": "Naleśniki ___ szpinakiem.",
+      "meaning": {
+        "en": "Pancakes with spinach."
+      },
+      "gaps": [
+        [
+          "ze"
+        ]
+      ],
+      "distractors": [
+        "z",
+        "i"
+      ],
+      "items": [
+        "nalesniki",
+        "ze-szpinakiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-g-e07",
+      "prompt": "z kurczakiem",
+      "options": [
+        {
+          "en": "a chicken; chicken (the meat)"
+        },
+        {
+          "en": "with bacon"
+        },
+        {
+          "en": "with chicken"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-kurczakiem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-g-e08",
+      "prompt": {
+        "en": "a zapiekanka with chicken"
+      },
+      "acceptedAnswers": [
+        "zapiekanka z kurczakiem"
+      ],
+      "distractors": [
+        "kurczak",
+        "boczkiem"
+      ],
+      "items": [
+        "zapiekanka",
+        "z-kurczakiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-g-e09",
+      "prompt": "keczup",
+      "options": [
+        {
+          "en": "ketchup"
+        },
+        {
+          "en": "mayonnaise"
+        },
+        {
+          "en": "a sauce"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "keczup"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-g-e10",
+      "prompt": "majonez",
+      "options": [
+        {
+          "en": "ketchup"
+        },
+        {
+          "en": "mayonnaise"
+        },
+        {
+          "en": "sour cream, cream"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "majonez"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-g-e11",
+      "prompt": "sos czosnkowy",
+      "options": [
+        {
+          "en": "garlic"
+        },
+        {
+          "en": "ketchup"
+        },
+        {
+          "en": "garlic sauce"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sos-czosnkowy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-g-e12",
+      "acceptedAnswers": [
+        "poproszę sos czosnkowy"
+      ],
+      "meaning": {
+        "en": "I'd like garlic sauce, please"
+      },
+      "items": [
+        "poprosze",
+        "sos-czosnkowy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-g-e13",
+      "prompt": {
+        "en": "a zapiekanka with double cheese"
+      },
+      "acceptedAnswers": [
+        "zapiekanka z podwójnym serem"
+      ],
+      "items": [
+        "zapiekanka",
+        "z-podwojnym-serem"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l10-g-e14",
+      "verb": "zamawiać",
+      "meaning": {
+        "en": "to order"
+      },
+      "person": "ja",
+      "sentence": "Dziś ___ żurek i kompot.",
+      "sentenceMeaning": {
+        "en": "Today I am ordering sour rye soup and compote."
+      },
+      "acceptedAnswers": [
+        "zamawiam"
+      ],
+      "items": [
+        "dzis",
+        "zamawiac-zamawiam",
+        "zurek",
+        "i",
+        "kompot"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-g-e15",
+      "pairs": [
+        {
+          "polish": "keczup",
+          "meaning": {
+            "en": "ketchup"
+          }
+        },
+        {
+          "polish": "majonez",
+          "meaning": {
+            "en": "mayonnaise"
+          }
+        },
+        {
+          "polish": "sos czosnkowy",
+          "meaning": {
+            "en": "garlic sauce"
+          }
+        },
+        {
+          "polish": "z boczkiem",
+          "meaning": {
+            "en": "with bacon"
+          }
+        },
+        {
+          "polish": "ze szpinakiem",
+          "meaning": {
+            "en": "with spinach"
+          }
+        },
+        {
+          "polish": "z kurczakiem",
+          "meaning": {
+            "en": "with chicken"
+          }
+        }
+      ],
+      "items": [
+        "keczup",
+        "majonez",
+        "sos-czosnkowy",
+        "z-boczkiem",
+        "ze-szpinakiem",
+        "z-kurczakiem"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-g-e16",
+      "lines": [
+        "Kelner pyta: co podać?",
+        "Ewa zamawia żurek z jajkiem.",
+        "Do picia jest kompot."
+      ],
+      "meaning": {
+        "en": "At the restaurant."
+      },
+      "statements": [
+        {
+          "text": "Ewa zamawia barszcz.",
+          "meaning": {
+            "en": "Ewa orders beetroot soup."
+          },
+          "true": false
+        },
+        {
+          "text": "Żurek jest z jajkiem.",
+          "meaning": {
+            "en": "The sour rye soup comes with an egg."
+          },
+          "true": true
+        },
+        {
+          "text": "Do picia jest piwo.",
+          "meaning": {
+            "en": "There is beer to drink."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "kelner",
+        "co-podac",
+        "ewa",
+        "zurek",
+        "z-jajkiem",
+        "do-picia",
+        "byc-jest",
+        "kompot"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-g-e17",
+      "lines": [
+        "Jaka zapiekanka?",
+        "Z podwójnym serem i z boczkiem.",
+        "A sos?",
+        "Keczup i majonez."
+      ],
+      "meaning": {
+        "en": "Ordering street food."
+      },
+      "items": [
+        "zapiekanka",
+        "z-podwojnym-serem",
+        "i",
+        "z-boczkiem",
+        "a",
+        "sos",
+        "keczup",
+        "majonez"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-g-e18",
+      "prompt": {
+        "en": "I'd like the same, please"
+      },
+      "acceptedAnswers": [
+        "poproszę to samo"
+      ],
+      "items": [
+        "poprosze",
+        "to-samo"
+      ]
+    }
+  ]
+}

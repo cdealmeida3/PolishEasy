@@ -246,7 +246,33 @@
     "pstrag": "m",
     "dorsz": "m",
     "sledz": "m",
-    "losos": "m"
+    "losos": "m",
+    "stolik": "m",
+    "rezerwacja": "f",
+    "barszcz": "m",
+    "zurek": "m",
+    "rosol": "m",
+    "krupnik": "m",
+    "danie": "n",
+    "bigos": "m",
+    "wieprzowina": "f",
+    "wolowina": "f",
+    "cielecina": "f",
+    "drob": "m",
+    "kaczka": "f",
+    "indyk": "m",
+    "kompot": "m",
+    "rachunek": "m",
+    "napiwek": "m",
+    "deser": "m",
+    "gofr": "m",
+    "sernik": "m",
+    "szarlotka": "f",
+    "makowiec": "m",
+    "koktajl": "m",
+    "zapiekanka": "f",
+    "keczup": "m",
+    "majonez": "m"
   },
   "realWords": [
     "aktorką",
@@ -529,7 +555,28 @@
     "napoję",
     "czekoladą",
     "drożdżówką",
-    "zwykłe"
+    "zwykłe",
+    "rezerwacją",
+    "rezerwacje",
+    "zaraź",
+    "pomidorową",
+    "wieprzowiną",
+    "wołowiną",
+    "cielęciną",
+    "kaczką",
+    "szamo",
+    "smakuję",
+    "rurką",
+    "szarlotką",
+    "dopełniać",
+    "winą",
+    "szoku",
+    "bita",
+    "owocową",
+    "czarną",
+    "gorącą",
+    "zapiekanką",
+    "boćkiem"
   ],
   "letters": {
     "a": "a",
@@ -641,6 +688,18 @@
     [
       "surowy",
       "gotowany"
+    ],
+    [
+      "cieply",
+      "chlodny"
+    ],
+    [
+      "ostry",
+      "lagodny"
+    ],
+    [
+      "czynny",
+      "nieczynny"
     ]
   ],
   "jobs": {

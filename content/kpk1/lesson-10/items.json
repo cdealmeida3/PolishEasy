@@ -1,0 +1,826 @@
+{
+  "items": [
+    {
+      "id": "zapraszac-zapraszam",
+      "text": "zapraszam",
+      "meaning": {
+        "en": "I invite (zapraszam na obiad: come for dinner)"
+      }
+    },
+    {
+      "id": "urodziny",
+      "text": "urodziny",
+      "meaning": {
+        "en": "a birthday, a birthday party"
+      }
+    },
+    {
+      "id": "rezerwacja",
+      "text": "rezerwacja",
+      "meaning": {
+        "en": "a booking, a reservation"
+      }
+    },
+    {
+      "id": "mam-rezerwacje",
+      "text": "mam rezerwację",
+      "meaning": {
+        "en": "I have a booking"
+      }
+    },
+    {
+      "id": "stolik",
+      "text": "stolik",
+      "meaning": {
+        "en": "a table (in a restaurant or a café)"
+      }
+    },
+    {
+      "id": "dla-czterech-osob",
+      "text": "dla czterech osób",
+      "meaning": {
+        "en": "for four people"
+      }
+    },
+    {
+      "id": "menu",
+      "text": "menu",
+      "meaning": {
+        "en": "a menu (it never changes)"
+      }
+    },
+    {
+      "id": "zaraz",
+      "text": "zaraz",
+      "meaning": {
+        "en": "in a moment, right away"
+      }
+    },
+    {
+      "id": "barszcz",
+      "text": "barszcz",
+      "meaning": {
+        "en": "beetroot soup, borscht"
+      }
+    },
+    {
+      "id": "z-uszkami",
+      "text": "z uszkami",
+      "meaning": {
+        "en": "with little dumplings (barszcz z uszkami)"
+      }
+    },
+    {
+      "id": "zurek",
+      "text": "żurek",
+      "meaning": {
+        "en": "sour rye soup"
+      }
+    },
+    {
+      "id": "z-jajkiem",
+      "text": "z jajkiem",
+      "meaning": {
+        "en": "with an egg"
+      }
+    },
+    {
+      "id": "rosol",
+      "text": "rosół",
+      "meaning": {
+        "en": "clear chicken soup, broth"
+      }
+    },
+    {
+      "id": "z-makaronem",
+      "text": "z makaronem",
+      "meaning": {
+        "en": "with noodles, with pasta"
+      }
+    },
+    {
+      "id": "krupnik",
+      "text": "krupnik",
+      "meaning": {
+        "en": "barley soup"
+      }
+    },
+    {
+      "id": "zupa-pomidorowa",
+      "text": "zupa pomidorowa",
+      "meaning": {
+        "en": "tomato soup"
+      }
+    },
+    {
+      "id": "danie",
+      "text": "danie",
+      "meaning": {
+        "en": "a dish, a course (dania: dishes)"
+      },
+      "forms": [
+        "dania"
+      ]
+    },
+    {
+      "id": "kotlet-schabowy",
+      "text": "kotlet schabowy",
+      "meaning": {
+        "en": "a breaded pork chop"
+      }
+    },
+    {
+      "id": "kotlet-mielony",
+      "text": "kotlet mielony",
+      "meaning": {
+        "en": "a minced meat patty"
+      }
+    },
+    {
+      "id": "bigos",
+      "text": "bigos",
+      "meaning": {
+        "en": "hunter's stew (cabbage and meat)"
+      }
+    },
+    {
+      "id": "golabki",
+      "text": "gołąbki",
+      "meaning": {
+        "en": "cabbage rolls (with meat and rice)"
+      }
+    },
+    {
+      "id": "pierogi-ruskie",
+      "text": "pierogi ruskie",
+      "meaning": {
+        "en": "pierogi with potato and cheese"
+      }
+    },
+    {
+      "id": "nalesniki",
+      "text": "naleśniki",
+      "meaning": {
+        "en": "pancakes, crêpes"
+      }
+    },
+    {
+      "id": "placki-ziemniaczane",
+      "text": "placki ziemniaczane",
+      "meaning": {
+        "en": "potato pancakes"
+      }
+    },
+    {
+      "id": "wieprzowina",
+      "text": "wieprzowina",
+      "meaning": {
+        "en": "pork"
+      }
+    },
+    {
+      "id": "wolowina",
+      "text": "wołowina",
+      "meaning": {
+        "en": "beef"
+      }
+    },
+    {
+      "id": "cielecina",
+      "text": "cielęcina",
+      "meaning": {
+        "en": "veal"
+      }
+    },
+    {
+      "id": "drob",
+      "text": "drób",
+      "meaning": {
+        "en": "poultry"
+      }
+    },
+    {
+      "id": "kaczka",
+      "text": "kaczka",
+      "meaning": {
+        "en": "a duck; duck (the meat)"
+      }
+    },
+    {
+      "id": "indyk",
+      "text": "indyk",
+      "meaning": {
+        "en": "a turkey; turkey (the meat)"
+      }
+    },
+    {
+      "id": "z-grilla",
+      "text": "z grilla",
+      "meaning": {
+        "en": "grilled, from the grill"
+      }
+    },
+    {
+      "id": "wegetarianski",
+      "text": "wegetariański",
+      "meaning": {
+        "en": "vegetarian (wegetariański, wegetariańska, wegetariańskie)"
+      },
+      "forms": [
+        "wegetariańska",
+        "wegetariańskie"
+      ]
+    },
+    {
+      "id": "co-podac",
+      "text": "co podać?",
+      "meaning": {
+        "en": "what can I get you? (a waiter asks)"
+      }
+    },
+    {
+      "id": "polecac-polecam",
+      "text": "polecam",
+      "meaning": {
+        "en": "I recommend"
+      }
+    },
+    {
+      "id": "dla-mnie",
+      "text": "dla mnie",
+      "meaning": {
+        "en": "for me (dla mnie żurek: the sour rye soup for me)"
+      }
+    },
+    {
+      "id": "to-samo",
+      "text": "to samo",
+      "meaning": {
+        "en": "the same (dla mnie to samo: the same for me)"
+      }
+    },
+    {
+      "id": "kompot",
+      "text": "kompot",
+      "meaning": {
+        "en": "compote, a drink of stewed fruit"
+      }
+    },
+    {
+      "id": "danie-glowne",
+      "text": "danie główne",
+      "meaning": {
+        "en": "a main course (on a menu: dania główne)"
+      }
+    },
+    {
+      "id": "rachunek",
+      "text": "rachunek",
+      "meaning": {
+        "en": "the bill (poproszę rachunek)"
+      }
+    },
+    {
+      "id": "smakuje-ci",
+      "text": "smakuje ci?",
+      "meaning": {
+        "en": "do you like it? (of food; one friend)"
+      }
+    },
+    {
+      "id": "smakuje-mi",
+      "text": "smakuje mi",
+      "meaning": {
+        "en": "I like it (of food)"
+      }
+    },
+    {
+      "id": "nie-smakuje-mi",
+      "text": "nie smakuje mi",
+      "meaning": {
+        "en": "I don't like it (of food)"
+      }
+    },
+    {
+      "id": "niezly",
+      "text": "niezły",
+      "meaning": {
+        "en": "not bad, quite good (niezły, niezła, niezłe)"
+      },
+      "forms": [
+        "niezła",
+        "niezłe"
+      ]
+    },
+    {
+      "id": "okropny",
+      "text": "okropny",
+      "meaning": {
+        "en": "awful, horrible (okropny, okropna, okropne)"
+      },
+      "forms": [
+        "okropna",
+        "okropne"
+      ]
+    },
+    {
+      "id": "niedobry",
+      "text": "niedobry",
+      "meaning": {
+        "en": "not good, not tasty (niedobry, niedobra, niedobre)"
+      },
+      "forms": [
+        "niedobra",
+        "niedobre"
+      ]
+    },
+    {
+      "id": "bez-smaku",
+      "text": "bez smaku",
+      "meaning": {
+        "en": "tasteless, with no taste"
+      }
+    },
+    {
+      "id": "za",
+      "text": "za",
+      "meaning": {
+        "en": "too (za słony: too salty)"
+      }
+    },
+    {
+      "id": "cieply",
+      "text": "ciepły",
+      "meaning": {
+        "en": "warm (ciepły, ciepła, ciepłe)"
+      },
+      "forms": [
+        "ciepła",
+        "ciepłe"
+      ]
+    },
+    {
+      "id": "chlodny",
+      "text": "chłodny",
+      "meaning": {
+        "en": "cool, chilly (chłodny, chłodna, chłodne)"
+      },
+      "forms": [
+        "chłodna",
+        "chłodne"
+      ]
+    },
+    {
+      "id": "lagodny",
+      "text": "łagodny",
+      "meaning": {
+        "en": "mild, not spicy (łagodny sos) (łagodny, łagodna, łagodne)"
+      },
+      "forms": [
+        "łagodna",
+        "łagodne"
+      ]
+    },
+    {
+      "id": "czynny",
+      "text": "czynny",
+      "meaning": {
+        "en": "open (of a shop or a café) (czynny, czynna, czynne)"
+      },
+      "forms": [
+        "czynna",
+        "czynne"
+      ]
+    },
+    {
+      "id": "nieczynny",
+      "text": "nieczynny",
+      "meaning": {
+        "en": "not open (of a shop or a café) (nieczynny, nieczynna, nieczynne)"
+      },
+      "forms": [
+        "nieczynna",
+        "nieczynne"
+      ]
+    },
+    {
+      "id": "zamkniety",
+      "text": "zamknięty",
+      "meaning": {
+        "en": "closed, shut (zamknięty, zamknięta, zamknięte)"
+      },
+      "forms": [
+        "zamknięta",
+        "zamknięte"
+      ]
+    },
+    {
+      "id": "danie-dnia",
+      "text": "danie dnia",
+      "meaning": {
+        "en": "the dish of the day"
+      }
+    },
+    {
+      "id": "napiwek",
+      "text": "napiwek",
+      "meaning": {
+        "en": "a tip (for a waiter)"
+      }
+    },
+    {
+      "id": "cos-slodkiego",
+      "text": "coś słodkiego",
+      "meaning": {
+        "en": "something sweet (mam ochotę na coś słodkiego)"
+      }
+    },
+    {
+      "id": "deser",
+      "text": "deser",
+      "meaning": {
+        "en": "a dessert"
+      }
+    },
+    {
+      "id": "rurka-z-kremem",
+      "text": "rurka z kremem",
+      "meaning": {
+        "en": "a cream horn (a pastry tube with cream)"
+      }
+    },
+    {
+      "id": "gofr",
+      "text": "gofr",
+      "meaning": {
+        "en": "a waffle"
+      }
+    },
+    {
+      "id": "lody",
+      "text": "lody",
+      "meaning": {
+        "en": "ice cream"
+      }
+    },
+    {
+      "id": "sernik",
+      "text": "sernik",
+      "meaning": {
+        "en": "cheesecake"
+      }
+    },
+    {
+      "id": "szarlotka",
+      "text": "szarlotka",
+      "meaning": {
+        "en": "apple pie, apple cake"
+      }
+    },
+    {
+      "id": "makowiec",
+      "text": "makowiec",
+      "meaning": {
+        "en": "poppy-seed cake"
+      }
+    },
+    {
+      "id": "dopelniacz",
+      "text": "dopełniacz",
+      "meaning": {
+        "en": "the genitive (kogo? czego?)"
+      }
+    },
+    {
+      "id": "kawa-gen",
+      "text": "kawy",
+      "meaning": {
+        "en": "coffee (after nie: nie piję kawy)"
+      }
+    },
+    {
+      "id": "herbata-gen",
+      "text": "herbaty",
+      "meaning": {
+        "en": "tea (after nie: nie piję herbaty)"
+      }
+    },
+    {
+      "id": "woda-gen",
+      "text": "wody",
+      "meaning": {
+        "en": "water (after nie: nie mam wody)"
+      }
+    },
+    {
+      "id": "mleko-gen",
+      "text": "mleka",
+      "meaning": {
+        "en": "milk (after nie: nie lubię mleka)"
+      }
+    },
+    {
+      "id": "wino-gen",
+      "text": "wina",
+      "meaning": {
+        "en": "wine (after nie: nie piję wina)"
+      }
+    },
+    {
+      "id": "ani",
+      "text": "ani",
+      "meaning": {
+        "en": "nor, not even (ani… ani…: neither… nor…)"
+      }
+    },
+    {
+      "id": "to-dobrze-brzmi",
+      "text": "to dobrze brzmi",
+      "meaning": {
+        "en": "that sounds good"
+      }
+    },
+    {
+      "id": "sok-gen",
+      "text": "soku",
+      "meaning": {
+        "en": "juice (after nie: nie mam soku)"
+      }
+    },
+    {
+      "id": "kompot-gen",
+      "text": "kompotu",
+      "meaning": {
+        "en": "compote (after nie: nie ma kompotu)"
+      }
+    },
+    {
+      "id": "chleb-gen",
+      "text": "chleba",
+      "meaning": {
+        "en": "bread (after nie: nie mam chleba)"
+      }
+    },
+    {
+      "id": "ser-gen",
+      "text": "sera",
+      "meaning": {
+        "en": "cheese (after nie: nie jem sera)"
+      }
+    },
+    {
+      "id": "zimny-gen",
+      "text": "zimnego",
+      "meaning": {
+        "en": "cold (zimnego, zimnej: after nie, nie lubię zimnego mleka)"
+      },
+      "forms": [
+        "zimnej"
+      ]
+    },
+    {
+      "id": "czerwony-gen",
+      "text": "czerwonego",
+      "meaning": {
+        "en": "red (czerwonego, czerwonej: after nie, nie piję czerwonego wina)"
+      },
+      "forms": [
+        "czerwonej"
+      ]
+    },
+    {
+      "id": "bialy-gen",
+      "text": "białego",
+      "meaning": {
+        "en": "white (białego, białej: after nie, nie piję białej kawy)"
+      },
+      "forms": [
+        "białej"
+      ]
+    },
+    {
+      "id": "koktajl",
+      "text": "koktajl",
+      "meaning": {
+        "en": "a smoothie, a milkshake"
+      }
+    },
+    {
+      "id": "z-bita-smietana",
+      "text": "z bitą śmietaną",
+      "meaning": {
+        "en": "with whipped cream"
+      }
+    },
+    {
+      "id": "z-lodami",
+      "text": "z lodami",
+      "meaning": {
+        "en": "with ice cream"
+      }
+    },
+    {
+      "id": "na-cieplo",
+      "text": "na ciepło",
+      "meaning": {
+        "en": "served warm (szarlotka na ciepło)"
+      }
+    },
+    {
+      "id": "kawalek-sernika",
+      "text": "kawałek sernika",
+      "meaning": {
+        "en": "a piece of cheesecake"
+      }
+    },
+    {
+      "id": "herbata-owocowa",
+      "text": "herbata owocowa",
+      "meaning": {
+        "en": "fruit tea"
+      }
+    },
+    {
+      "id": "czarna-kawa",
+      "text": "czarna kawa",
+      "meaning": {
+        "en": "black coffee"
+      }
+    },
+    {
+      "id": "goraca-czekolada",
+      "text": "gorąca czekolada",
+      "meaning": {
+        "en": "hot chocolate"
+      }
+    },
+    {
+      "id": "nareszcie",
+      "text": "nareszcie",
+      "meaning": {
+        "en": "at last, finally"
+      }
+    },
+    {
+      "id": "isc-idziesz",
+      "text": "idziesz",
+      "meaning": {
+        "en": "you are going (on foot; one friend)"
+      }
+    },
+    {
+      "id": "do-pubu",
+      "text": "do pubu",
+      "meaning": {
+        "en": "to the pub"
+      }
+    },
+    {
+      "id": "z-kim",
+      "text": "z kim?",
+      "meaning": {
+        "en": "who with? with whom?"
+      }
+    },
+    {
+      "id": "ze-mna",
+      "text": "ze mną",
+      "meaning": {
+        "en": "with me"
+      }
+    },
+    {
+      "id": "z-toba",
+      "text": "z tobą",
+      "meaning": {
+        "en": "with you (one friend)"
+      }
+    },
+    {
+      "id": "z-nim",
+      "text": "z nim",
+      "meaning": {
+        "en": "with him; with it"
+      }
+    },
+    {
+      "id": "z-nia",
+      "text": "z nią",
+      "meaning": {
+        "en": "with her"
+      }
+    },
+    {
+      "id": "z-nami",
+      "text": "z nami",
+      "meaning": {
+        "en": "with us"
+      }
+    },
+    {
+      "id": "isc-idziecie",
+      "text": "idziecie",
+      "meaning": {
+        "en": "you are going (on foot; several people)"
+      }
+    },
+    {
+      "id": "z-wami",
+      "text": "z wami",
+      "meaning": {
+        "en": "with you (several people)"
+      }
+    },
+    {
+      "id": "z-nimi",
+      "text": "z nimi",
+      "meaning": {
+        "en": "with them"
+      }
+    },
+    {
+      "id": "wszedzie",
+      "text": "wszędzie",
+      "meaning": {
+        "en": "everywhere, anywhere"
+      }
+    },
+    {
+      "id": "co-z-nim",
+      "text": "co z nim?",
+      "meaning": {
+        "en": "what about him?"
+      }
+    },
+    {
+      "id": "czekac-czekam",
+      "text": "czekam",
+      "meaning": {
+        "en": "I am waiting, I wait"
+      }
+    },
+    {
+      "id": "razem",
+      "text": "razem",
+      "meaning": {
+        "en": "together"
+      }
+    },
+    {
+      "id": "zapiekanka",
+      "text": "zapiekanka",
+      "meaning": {
+        "en": "a zapiekanka (half a baguette baked with mushrooms and cheese)"
+      }
+    },
+    {
+      "id": "z-podwojnym-serem",
+      "text": "z podwójnym serem",
+      "meaning": {
+        "en": "with double cheese"
+      }
+    },
+    {
+      "id": "z-boczkiem",
+      "text": "z boczkiem",
+      "meaning": {
+        "en": "with bacon"
+      }
+    },
+    {
+      "id": "ze-szpinakiem",
+      "text": "ze szpinakiem",
+      "meaning": {
+        "en": "with spinach"
+      }
+    },
+    {
+      "id": "z-kurczakiem",
+      "text": "z kurczakiem",
+      "meaning": {
+        "en": "with chicken"
+      }
+    },
+    {
+      "id": "keczup",
+      "text": "keczup",
+      "meaning": {
+        "en": "ketchup"
+      }
+    },
+    {
+      "id": "majonez",
+      "text": "majonez",
+      "meaning": {
+        "en": "mayonnaise"
+      }
+    },
+    {
+      "id": "sos-czosnkowy",
+      "text": "sos czosnkowy",
+      "meaning": {
+        "en": "garlic sauce"
+      }
+    }
+  ]
+}

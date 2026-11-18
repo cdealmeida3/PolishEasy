@@ -21,6 +21,10 @@
       "text": "A co robi pana córka?"
     },
     {
+      "id": "a-co-z-nim",
+      "text": "A co z nim?"
+    },
+    {
       "id": "a-cukier",
       "text": "A cukier?"
     },
@@ -29,8 +33,28 @@
       "text": "A czy to jest twój słownik?"
     },
     {
+      "id": "a-danie-glowne",
+      "text": "A danie główne?"
+    },
+    {
+      "id": "a-deser",
+      "text": "A deser?"
+    },
+    {
+      "id": "a-dla-mnie-to-samo",
+      "text": "A dla mnie to samo."
+    },
+    {
       "id": "a-dlaczego-pan-uczy-sie-polskiego",
       "text": "A dlaczego pan uczy się polskiego?"
+    },
+    {
+      "id": "a-do-picia",
+      "text": "A do picia?"
+    },
+    {
+      "id": "a-drob",
+      "text": "A drób?"
     },
     {
       "id": "a-ewa",
@@ -69,12 +93,24 @@
       "text": "A ja interesuję się kinem."
     },
     {
+      "id": "a-ja-na-gofr",
+      "text": "A ja na gofr."
+    },
+    {
       "id": "a-kalafior",
       "text": "A kalafior?"
     },
     {
       "id": "a-potem-ide-na-kawe-ze-znajomymi",
       "text": "A potem idę na kawę ze znajomymi."
+    },
+    {
+      "id": "a-restauracja",
+      "text": "A restauracja?"
+    },
+    {
+      "id": "a-sos",
+      "text": "A sos?"
     },
     {
       "id": "a-szampon",
@@ -193,6 +229,10 @@
       "text": "Adam jest zajęty."
     },
     {
+      "id": "adam-lubi-kawe-z-mlekiem",
+      "text": "Adam lubi kawę z mlekiem."
+    },
+    {
       "id": "adam-lubi-tanczyc-i-chodzic-do-klubu",
       "text": "Adam lubi tańczyć i chodzić do klubu."
     },
@@ -219,6 +259,10 @@
     {
       "id": "adam-musi-uczyc-sie-do-egzaminu",
       "text": "Adam musi uczyć się do egzaminu."
+    },
+    {
+      "id": "adam-mysli-ze-jest-niedobra",
+      "text": "Adam myśli, że jest niedobra."
     },
     {
       "id": "adam-pije-kawe-bez-cukru",
@@ -285,6 +329,10 @@
       "text": "Adam umie grać na gitarze."
     },
     {
+      "id": "adam-zamawia-koktajl-i-gofr-z-bita-smietana",
+      "text": "Adam zamawia koktajl i gofr z bitą śmietaną."
+    },
+    {
       "id": "adres",
       "text": "adres"
     },
@@ -347,6 +395,10 @@
     {
       "id": "anglikiem",
       "text": "Anglikiem"
+    },
+    {
+      "id": "ani",
+      "text": "ani"
     },
     {
       "id": "aparat",
@@ -457,8 +509,28 @@
       "text": "Bardzo mi miło."
     },
     {
+      "id": "bardzo-mi-smakuje",
+      "text": "bardzo mi smakuje"
+    },
+    {
       "id": "bardzo-przepraszamy",
       "text": "Bardzo przepraszamy."
+    },
+    {
+      "id": "barszcz",
+      "text": "barszcz"
+    },
+    {
+      "id": "barszcz-czy-zupa-pomidorowa",
+      "text": "barszcz czy zupa pomidorowa?"
+    },
+    {
+      "id": "barszcz-jest-jutro",
+      "text": "Barszcz jest jutro."
+    },
+    {
+      "id": "barszcz-z-uszkami",
+      "text": "barszcz z uszkami"
     },
     {
       "id": "bazylia",
@@ -489,6 +561,14 @@
       "text": "bez mleka"
     },
     {
+      "id": "bez-smaku",
+      "text": "bez smaku"
+    },
+    {
+      "id": "bialego",
+      "text": "białego"
+    },
+    {
       "id": "bialy",
       "text": "biały"
     },
@@ -503,6 +583,14 @@
     {
       "id": "biegac",
       "text": "biegać"
+    },
+    {
+      "id": "bigos",
+      "text": "bigos"
+    },
+    {
+      "id": "bigos-to-polskie-danie",
+      "text": "bigos to polskie danie"
     },
     {
       "id": "bilet",
@@ -721,6 +809,14 @@
       "text": "chleb z masłem"
     },
     {
+      "id": "chleba",
+      "text": "chleba"
+    },
+    {
+      "id": "chlodny",
+      "text": "chłodny"
+    },
+    {
       "id": "chlopak",
       "text": "chłopak"
     },
@@ -837,8 +933,20 @@
       "text": "ciekawy"
     },
     {
+      "id": "cielecina",
+      "text": "cielęcina"
+    },
+    {
       "id": "ciemny",
       "text": "ciemny"
+    },
+    {
+      "id": "cieple-mleko",
+      "text": "ciepłe mleko"
+    },
+    {
+      "id": "cieply",
+      "text": "ciepły"
     },
     {
       "id": "ciesze-sie",
@@ -871,6 +979,10 @@
     {
       "id": "co-gotujemy",
       "text": "co gotujemy?"
+    },
+    {
+      "id": "co-jest-dzis-na-obiad",
+      "text": "Co jest dziś na obiad?"
     },
     {
       "id": "co-jest-na-kolacje",
@@ -925,6 +1037,10 @@
       "text": "co pan robi?"
     },
     {
+      "id": "co-pani-poleca",
+      "text": "Co pani poleca?"
+    },
+    {
       "id": "co-pani-robi",
       "text": "co pani robi?"
     },
@@ -939,6 +1055,10 @@
     {
       "id": "co-piszesz",
       "text": "Co piszesz?"
+    },
+    {
+      "id": "co-podac",
+      "text": "co podać?"
     },
     {
       "id": "co-robi-twoj-tata",
@@ -1045,6 +1165,10 @@
       "text": "co u pani słychać?"
     },
     {
+      "id": "co-z-nim",
+      "text": "co z nim?"
+    },
+    {
       "id": "co-zwykle-kupujesz-na-targu",
       "text": "co zwykle kupujesz na targu?"
     },
@@ -1059,6 +1183,10 @@
     {
       "id": "cos-jeszcze",
       "text": "coś jeszcze?"
+    },
+    {
+      "id": "cos-slodkiego",
+      "text": "coś słodkiego"
     },
     {
       "id": "cukier",
@@ -1113,12 +1241,32 @@
       "text": "cytryny"
     },
     {
+      "id": "czarna-kawa",
+      "text": "czarna kawa"
+    },
+    {
+      "id": "czarna-kawa-i-herbata-owocowa",
+      "text": "czarna kawa i herbata owocowa"
+    },
+    {
       "id": "czarny",
       "text": "czarny"
     },
     {
       "id": "czas",
       "text": "czas"
+    },
+    {
+      "id": "czekam",
+      "text": "czekam"
+    },
+    {
+      "id": "czekam-na-sms",
+      "text": "Czekam na SMS."
+    },
+    {
+      "id": "czekam-tutaj",
+      "text": "czekam tutaj"
     },
     {
       "id": "czekolada",
@@ -1131,6 +1279,10 @@
     {
       "id": "czekolada-i-cukierki-to-slodycze",
       "text": "czekolada i cukierki to słodycze"
+    },
+    {
+      "id": "czerwonego",
+      "text": "czerwonego"
     },
     {
       "id": "czerwony",
@@ -1565,6 +1717,10 @@
       "text": "czy to twoje dziecko?"
     },
     {
+      "id": "czy-to-wszystko",
+      "text": "Czy to wszystko?"
+    },
+    {
       "id": "czy-tu-jest-fryzjer",
       "text": "czy tu jest fryzjer?"
     },
@@ -1649,6 +1805,10 @@
       "text": "czym się interesujesz?"
     },
     {
+      "id": "czynny",
+      "text": "czynny"
+    },
+    {
       "id": "czysty",
       "text": "czysty"
     },
@@ -1693,6 +1853,38 @@
       "text": "czytasz"
     },
     {
+      "id": "dania-sa-smaczne",
+      "text": "dania są smaczne"
+    },
+    {
+      "id": "danie",
+      "text": "danie"
+    },
+    {
+      "id": "danie-dnia",
+      "text": "danie dnia"
+    },
+    {
+      "id": "danie-dnia-to-zupa",
+      "text": "danie dnia to zupa"
+    },
+    {
+      "id": "danie-dnia-to-zupa-pomidorowa",
+      "text": "Danie dnia to zupa pomidorowa."
+    },
+    {
+      "id": "danie-glowne",
+      "text": "danie główne"
+    },
+    {
+      "id": "danie-glowne-to-cielecina-z-grilla",
+      "text": "Danie główne to cielęcina z grilla."
+    },
+    {
+      "id": "danie-wegetarianskie",
+      "text": "danie wegetariańskie"
+    },
+    {
       "id": "de",
       "text": "de"
     },
@@ -1709,12 +1901,52 @@
       "text": "dentystka"
     },
     {
+      "id": "deser",
+      "text": "deser"
+    },
+    {
+      "id": "deser-to-rurka-z-kremem-a-do-picia-chlodny-kompo",
+      "text": "Deser to rurka z kremem, a do picia chłodny kompot."
+    },
+    {
       "id": "dezodorant",
       "text": "dezodorant"
     },
     {
       "id": "dialog",
       "text": "dialog"
+    },
+    {
+      "id": "dla-czterech-osob",
+      "text": "dla czterech osób"
+    },
+    {
+      "id": "dla-mnie",
+      "text": "dla mnie"
+    },
+    {
+      "id": "dla-mnie-barszcz-z-uszkami",
+      "text": "Dla mnie barszcz z uszkami."
+    },
+    {
+      "id": "dla-mnie-kawalek-sernika",
+      "text": "Dla mnie kawałek sernika."
+    },
+    {
+      "id": "dla-mnie-kompot",
+      "text": "dla mnie kompot"
+    },
+    {
+      "id": "dla-mnie-to-samo",
+      "text": "dla mnie to samo"
+    },
+    {
+      "id": "dla-mnie-zurek",
+      "text": "Dla mnie żurek."
+    },
+    {
+      "id": "dla-mnie-zurek-z-jajkiem",
+      "text": "Dla mnie żurek z jajkiem."
     },
     {
       "id": "dlaczego",
@@ -1789,8 +2021,20 @@
       "text": "do picia"
     },
     {
+      "id": "do-picia-jest-kompot",
+      "text": "Do picia jest kompot."
+    },
+    {
       "id": "do-picia-kupuje-dwa-piwa",
       "text": "Do picia kupuje dwa piwa."
+    },
+    {
+      "id": "do-picia-ma-czarna-kawe",
+      "text": "Do picia ma czarną kawę."
+    },
+    {
+      "id": "do-pubu",
+      "text": "do pubu"
     },
     {
       "id": "do-szkoly",
@@ -1861,6 +2105,10 @@
       "text": "dobrze, dziękuję, a pani?"
     },
     {
+      "id": "dobrze-idziemy",
+      "text": "Dobrze, idziemy."
+    },
+    {
       "id": "dobrze-na-razie",
       "text": "Dobrze! Na razie!"
     },
@@ -1901,8 +2149,16 @@
       "text": "dopasować"
     },
     {
+      "id": "dopelniacz",
+      "text": "dopełniacz"
+    },
+    {
       "id": "dorsz",
       "text": "dorsz"
+    },
+    {
+      "id": "drob",
+      "text": "drób"
     },
     {
       "id": "drobne",
@@ -2003,6 +2259,10 @@
     {
       "id": "dwa-plus-trzy-to-piec",
       "text": "dwa plus trzy to pięć"
+    },
+    {
+      "id": "dwa-razy-kompot",
+      "text": "Dwa razy kompot."
     },
     {
       "id": "dwa-razy-trzydziesci-rowna-sie-szescdziesiat",
@@ -2273,6 +2533,14 @@
       "text": "Dzień dobry! Mam na imię Robert."
     },
     {
+      "id": "dzien-dobry-mam-rezerwacje",
+      "text": "Dzień dobry, mam rezerwację."
+    },
+    {
+      "id": "dzien-dobry-mam-rezerwacje-2",
+      "text": "Dzień dobry. Mam rezerwację."
+    },
+    {
       "id": "dzien-dobry-nazywam-sie-adam",
       "text": "Dzień dobry. Nazywam się Adam."
     },
@@ -2319,6 +2587,10 @@
     {
       "id": "dzien-dobry-wszystko-dobrze-a-u-pani",
       "text": "Dzień dobry! Wszystko dobrze, a u pani?"
+    },
+    {
+      "id": "dzien-dobry-zapraszam",
+      "text": "Dzień dobry! Zapraszam."
     },
     {
       "id": "dziennikarka",
@@ -2401,12 +2673,28 @@
       "text": "dziś jestem zestresowany"
     },
     {
+      "id": "dzis-kawiarnia-jest-nieczynna",
+      "text": "dziś kawiarnia jest nieczynna"
+    },
+    {
       "id": "dzis-konczy-kurs-i-jest-zmeczony",
       "text": "Dziś kończy kurs i jest zmęczony."
     },
     {
       "id": "dzis-mama-robi-kolacje",
       "text": "Dziś mama robi kolację."
+    },
+    {
+      "id": "dzis-na-obiad-jest-indyk-z-grilla",
+      "text": "Dziś na obiad jest indyk z grilla."
+    },
+    {
+      "id": "dzis-na-obiad-jest-zupa",
+      "text": "Dziś na obiad jest zupa."
+    },
+    {
+      "id": "dzis-zamawiam-zurek-i-kompot",
+      "text": "Dziś zamawiam żurek i kompot."
     },
     {
       "id": "dzisiaj",
@@ -2517,6 +2805,10 @@
       "text": "Ewa, co czytasz?"
     },
     {
+      "id": "ewa-daje-napiwek",
+      "text": "Ewa daje napiwek."
+    },
+    {
       "id": "ewa-dobrze-zna-krakow",
       "text": "Ewa dobrze zna Kraków."
     },
@@ -2527,6 +2819,10 @@
     {
       "id": "ewa-gotuje-polska-zupe",
       "text": "Ewa gotuje polską zupę."
+    },
+    {
+      "id": "ewa-i-adam-ida-do-pubu",
+      "text": "Ewa i Adam idą do pubu."
     },
     {
       "id": "ewa-i-adam-sa-w-supermarkecie",
@@ -2597,6 +2893,10 @@
       "text": "Ewa kupuje tani aparat i kolorowy magazyn."
     },
     {
+      "id": "ewa-lubi-drob",
+      "text": "Ewa lubi drób."
+    },
+    {
       "id": "ewa-lubi-malowac-i-sluchac-muzyki",
       "text": "Ewa lubi malować i słuchać muzyki."
     },
@@ -2611,6 +2911,10 @@
     {
       "id": "ewa-ma-ciemny-chleb-i-maslo",
       "text": "Ewa ma ciemny chleb i masło."
+    },
+    {
+      "id": "ewa-ma-jutro-urodziny",
+      "text": "Ewa ma jutro urodziny."
     },
     {
       "id": "ewa-ma-trzy-lata",
@@ -2667,6 +2971,14 @@
     {
       "id": "ewa-to-nauczycielka-a-adam-to-aktor",
       "text": "Ewa to nauczycielka, a Adam to aktor"
+    },
+    {
+      "id": "ewa-zamawia-szarlotke-na-cieplo-z-lodami",
+      "text": "Ewa zamawia szarlotkę na ciepło z lodami."
+    },
+    {
+      "id": "ewa-zamawia-zurek-z-jajkiem",
+      "text": "Ewa zamawia żurek z jajkiem."
     },
     {
       "id": "fajny",
@@ -2847,6 +3159,38 @@
     {
       "id": "glodny",
       "text": "głodny"
+    },
+    {
+      "id": "gofr",
+      "text": "gofr"
+    },
+    {
+      "id": "gofr-czy-rurka-z-kremem",
+      "text": "gofr czy rurka z kremem?"
+    },
+    {
+      "id": "gofr-z-bita-smietana",
+      "text": "gofr z bitą śmietaną"
+    },
+    {
+      "id": "golabki",
+      "text": "gołąbki"
+    },
+    {
+      "id": "golabki-albo-pierogi-ruskie",
+      "text": "Gołąbki albo pierogi ruskie."
+    },
+    {
+      "id": "golabki-i-bigos",
+      "text": "gołąbki i bigos"
+    },
+    {
+      "id": "goraca-czekolada",
+      "text": "gorąca czekolada"
+    },
+    {
+      "id": "goraca-czekolada-z-bita-smietana",
+      "text": "gorąca czekolada z bitą śmietaną"
     },
     {
       "id": "goracy",
@@ -3065,12 +3409,28 @@
       "text": "herbata jest gorąca"
     },
     {
+      "id": "herbata-owocowa",
+      "text": "herbata owocowa"
+    },
+    {
+      "id": "herbata-owocowa-i-czarna-kawa",
+      "text": "herbata owocowa i czarna kawa"
+    },
+    {
+      "id": "herbata-owocowa-prosze",
+      "text": "Herbata owocowa, proszę."
+    },
+    {
       "id": "herbate",
       "text": "herbatę"
     },
     {
       "id": "herbate-z-cytryna-prosze",
       "text": "Herbatę z cytryną, proszę."
+    },
+    {
+      "id": "herbaty",
+      "text": "herbaty"
     },
     {
       "id": "historia",
@@ -3101,12 +3461,36 @@
       "text": "idę"
     },
     {
+      "id": "ide-do-kina-z-nimi",
+      "text": "Idę do kina z nimi."
+    },
+    {
       "id": "ide-na-kawe",
       "text": "idę na kawę"
     },
     {
       "id": "ide-na-koncert-chcesz-isc",
       "text": "Idę na koncert. Chcesz iść?"
+    },
+    {
+      "id": "ide-z-nia",
+      "text": "idę z nią"
+    },
+    {
+      "id": "ide-z-toba",
+      "text": "idę z tobą"
+    },
+    {
+      "id": "idziecie",
+      "text": "idziecie"
+    },
+    {
+      "id": "idziecie-z-nami",
+      "text": "idziecie z nami?"
+    },
+    {
+      "id": "idziecie-z-nami-do-pubu",
+      "text": "Idziecie z nami do pubu?"
     },
     {
       "id": "idziemy",
@@ -3117,8 +3501,32 @@
       "text": "idziemy na zakupy"
     },
     {
+      "id": "idziemy-razem",
+      "text": "idziemy razem"
+    },
+    {
       "id": "idziemy-tanczyc-a-ty",
       "text": "Idziemy tańczyć. A ty?"
+    },
+    {
+      "id": "idziemy-z-wami",
+      "text": "idziemy z wami"
+    },
+    {
+      "id": "idziesz",
+      "text": "idziesz"
+    },
+    {
+      "id": "idziesz-do-pubu",
+      "text": "idziesz do pubu?"
+    },
+    {
+      "id": "idziesz-z-nim",
+      "text": "idziesz z nim?"
+    },
+    {
+      "id": "idziesz-ze-mna",
+      "text": "Idziesz ze mną?"
     },
     {
       "id": "igrek",
@@ -3215,6 +3623,10 @@
     {
       "id": "impreze",
       "text": "imprezę"
+    },
+    {
+      "id": "indyk",
+      "text": "indyk"
     },
     {
       "id": "informacji",
@@ -3325,12 +3737,20 @@
       "text": "Ja chodzę na basen."
     },
     {
+      "id": "ja-czekam-tutaj",
+      "text": "ja czekam tutaj"
+    },
+    {
       "id": "ja-czytam-tekst",
       "text": "ja czytam tekst"
     },
     {
       "id": "ja-gotuje-ryz-a-ty",
       "text": "Ja gotuję ryż, a ty?"
+    },
+    {
+      "id": "ja-ide-z-nia",
+      "text": "ja idę z nią"
     },
     {
       "id": "ja-interesuje-sie-sportem",
@@ -3413,12 +3833,28 @@
       "text": "ja mam dziesięć lat"
     },
     {
+      "id": "ja-mam-rezerwacje",
+      "text": "ja mam rezerwację"
+    },
+    {
       "id": "ja-mieszkam-w-warszawie-a-ty-gdzie-mieszkasz",
       "text": "Ja mieszkam w Warszawie, a ty gdzie mieszkasz?"
     },
     {
       "id": "ja-nie-lubie-czytac",
       "text": "Ja nie lubię czytać."
+    },
+    {
+      "id": "ja-nie-pije-ani-soku-ani-kompotu",
+      "text": "ja nie piję ani soku, ani kompotu"
+    },
+    {
+      "id": "ja-nie-pije-czerwonego-wina",
+      "text": "ja nie piję czerwonego wina"
+    },
+    {
+      "id": "ja-nie-pije-wina",
+      "text": "ja nie piję wina"
     },
     {
       "id": "ja-ogladam-polska-telewizje",
@@ -3455,6 +3891,10 @@
     {
       "id": "ja-szukam-informacji",
       "text": "ja szukam informacji"
+    },
+    {
+      "id": "ja-tez",
+      "text": "Ja też."
     },
     {
       "id": "ja-tez-czym-sie-interesujesz",
@@ -3675,6 +4115,10 @@
     {
       "id": "jaka-ona-jest",
       "text": "jaka ona jest?"
+    },
+    {
+      "id": "jaka-zapiekanka",
+      "text": "Jaka zapiekanka?"
     },
     {
       "id": "jaki",
@@ -3941,6 +4385,10 @@
       "text": "jest"
     },
     {
+      "id": "jest-czynna",
+      "text": "Jest czynna."
+    },
+    {
       "id": "jest-juz-pozno",
       "text": "jest już późno"
     },
@@ -4019,6 +4467,10 @@
     {
       "id": "jest-z-orzechami-i-z-rodzynkami",
       "text": "Jest z orzechami i z rodzynkami."
+    },
+    {
+      "id": "jest-zurek-z-jajkiem-albo-rosol",
+      "text": "Jest żurek z jajkiem albo rosół."
     },
     {
       "id": "jestem",
@@ -4281,8 +4733,16 @@
       "text": "jutro"
     },
     {
+      "id": "jutro-jest-kaczka",
+      "text": "Jutro jest kaczka."
+    },
+    {
       "id": "jutro-jestem-zajety",
       "text": "jutro jestem zajęty"
+    },
+    {
+      "id": "jutro-mam-urodziny",
+      "text": "jutro mam urodziny"
     },
     {
       "id": "juz",
@@ -4295,6 +4755,10 @@
     {
       "id": "ka",
       "text": "ka"
+    },
+    {
+      "id": "kaczka",
+      "text": "kaczka"
     },
     {
       "id": "kakao",
@@ -4369,12 +4833,20 @@
       "text": "Kawa bez cukru jest gorzka."
     },
     {
+      "id": "kawa-czy-herbata",
+      "text": "Kawa czy herbata?"
+    },
+    {
       "id": "kawa-i-drozdzowka",
       "text": "kawa i drożdżówka"
     },
     {
       "id": "kawa-i-woda-sa-tam-na-prawo",
       "text": "Kawa i woda są tam, na prawo."
+    },
+    {
+      "id": "kawa-jest-goraca-a-sok-zimny",
+      "text": "Kawa jest gorąca, a sok zimny."
     },
     {
       "id": "kawa-jest-mocna",
@@ -4413,6 +4885,10 @@
       "text": "kawa z mlekiem i bez cukru"
     },
     {
+      "id": "kawalek-sernika",
+      "text": "kawałek sernika"
+    },
+    {
       "id": "kawe",
       "text": "kawę"
     },
@@ -4429,12 +4905,44 @@
       "text": "kawiarnia"
     },
     {
+      "id": "kawiarnia-jest-czynna",
+      "text": "Kawiarnia jest czynna."
+    },
+    {
+      "id": "kawiarnia-jest-dzis-nieczynna",
+      "text": "kawiarnia jest dziś nieczynna"
+    },
+    {
+      "id": "kawiarnia-jest-nieczynna",
+      "text": "Kawiarnia jest nieczynna?"
+    },
+    {
+      "id": "kawy",
+      "text": "kawy"
+    },
+    {
+      "id": "keczup",
+      "text": "keczup"
+    },
+    {
+      "id": "keczup-i-majonez",
+      "text": "Keczup i majonez."
+    },
+    {
       "id": "kelner",
       "text": "kelner"
     },
     {
+      "id": "kelner-mowi-zaraz-podam-menu",
+      "text": "Kelner mówi: zaraz podam menu."
+    },
+    {
       "id": "kelner-pracuje-w-restauracji",
       "text": "Kelner pracuje w restauracji."
+    },
+    {
+      "id": "kelner-pyta-co-podac",
+      "text": "Kelner pyta: co podać?"
     },
     {
       "id": "kelnerka",
@@ -4541,6 +5049,10 @@
       "text": "Kogo znasz w Krakowie?"
     },
     {
+      "id": "koktajl",
+      "text": "koktajl"
+    },
+    {
       "id": "kolacja",
       "text": "kolacja"
     },
@@ -4569,6 +5081,10 @@
       "text": "koleżanka i kolega"
     },
     {
+      "id": "kolezanka-idzie-z-nimi",
+      "text": "Koleżanka idzie z nimi."
+    },
+    {
       "id": "kolor",
       "text": "kolor"
     },
@@ -4587,6 +5103,18 @@
     {
       "id": "komorka-i-ladowarka",
       "text": "komórka i ładowarka"
+    },
+    {
+      "id": "kompot",
+      "text": "kompot"
+    },
+    {
+      "id": "kompot-prosze",
+      "text": "Kompot, proszę."
+    },
+    {
+      "id": "kompotu",
+      "text": "kompotu"
     },
     {
       "id": "komputer",
@@ -4657,6 +5185,26 @@
       "text": "kotlet"
     },
     {
+      "id": "kotlet-mielony",
+      "text": "kotlet mielony"
+    },
+    {
+      "id": "kotlet-schabowy",
+      "text": "kotlet schabowy"
+    },
+    {
+      "id": "kotlet-schabowy-i-surowka",
+      "text": "kotlet schabowy i surówka"
+    },
+    {
+      "id": "kotlet-schabowy-to-wieprzowina",
+      "text": "Kotlet schabowy to wieprzowina."
+    },
+    {
+      "id": "kotlet-schabowy-z-frytkami-prosze",
+      "text": "Kotlet schabowy z frytkami, proszę."
+    },
+    {
       "id": "krakow",
       "text": "Kraków"
     },
@@ -4667,6 +5215,10 @@
     {
       "id": "krotki",
       "text": "krótki"
+    },
+    {
+      "id": "krupnik",
+      "text": "krupnik"
     },
     {
       "id": "krzeslo",
@@ -4809,6 +5361,10 @@
       "text": "kurczak i ziemniaki"
     },
     {
+      "id": "kurczak-z-grilla",
+      "text": "kurczak z grilla"
+    },
+    {
       "id": "kurczak-z-warzywami",
       "text": "kurczak z warzywami"
     },
@@ -4839,6 +5395,14 @@
     {
       "id": "ladowarka-i-komorka",
       "text": "ładowarka i komórka"
+    },
+    {
+      "id": "lagodny",
+      "text": "łagodny"
+    },
+    {
+      "id": "lagodny-sos",
+      "text": "łagodny sos"
     },
     {
       "id": "laptop",
@@ -4925,6 +5489,14 @@
       "text": "literaturą"
     },
     {
+      "id": "lody",
+      "text": "lody"
+    },
+    {
+      "id": "lody-sa-zimne",
+      "text": "Lody są zimne."
+    },
+    {
       "id": "losos",
       "text": "łosoś"
     },
@@ -4993,6 +5565,10 @@
       "text": "lubię herbatę"
     },
     {
+      "id": "lubie-herbate-ale-nie-lubie-kawy",
+      "text": "Lubię herbatę, ale nie lubię kawy."
+    },
+    {
       "id": "lubie-jesc",
       "text": "lubię jeść"
     },
@@ -5027,6 +5603,10 @@
     {
       "id": "lubie-mleko",
       "text": "lubię mleko"
+    },
+    {
+      "id": "lubie-mleko-ale-nie-lubie-zimnego-mleka",
+      "text": "Lubię mleko, ale nie lubię zimnego mleka."
     },
     {
       "id": "lubie-ogladac-telewizje",
@@ -5137,6 +5717,10 @@
       "text": "lubisz spotykać się ze znajomymi?"
     },
     {
+      "id": "lubisz-wolowine",
+      "text": "Lubisz wołowinę?"
+    },
+    {
       "id": "lyzeczka",
       "text": "łyżeczka"
     },
@@ -5181,6 +5765,10 @@
       "text": "ma prawie dwadzieścia lat"
     },
     {
+      "id": "ma-rezerwacje-w-restauracji",
+      "text": "Ma rezerwację w restauracji."
+    },
+    {
       "id": "macie",
       "text": "macie"
     },
@@ -5201,12 +5789,24 @@
       "text": "Mają też wodę mineralną."
     },
     {
+      "id": "majonez",
+      "text": "majonez"
+    },
+    {
       "id": "makaron",
       "text": "makaron"
     },
     {
       "id": "makaron-i-ryz-to-produkty-zbozowe",
       "text": "makaron i ryż to produkty zbożowe"
+    },
+    {
+      "id": "makowiec",
+      "text": "makowiec"
+    },
+    {
+      "id": "makowiec-jest-slodki",
+      "text": "makowiec jest słodki"
     },
     {
       "id": "mala-kosztuje-dwadziescia-dwa-zlote-a-duza-dwadz",
@@ -5357,6 +5957,10 @@
       "text": "mam ochotę na"
     },
     {
+      "id": "mam-ochote-na-cos-slodkiego",
+      "text": "mam ochotę na coś słodkiego"
+    },
+    {
       "id": "mam-ochote-na-jajecznice",
       "text": "mam ochotę na jajecznicę"
     },
@@ -5391,6 +5995,10 @@
     {
       "id": "mam-pytanie-gdzie-jest-szkola",
       "text": "mam pytanie, gdzie jest szkoła?"
+    },
+    {
+      "id": "mam-rezerwacje",
+      "text": "mam rezerwację"
     },
     {
       "id": "mam-rodzenstwo-brata-i-siostre",
@@ -5521,6 +6129,10 @@
       "text": "masz ochotę na ciasto?"
     },
     {
+      "id": "masz-ochote-na-cos-slodkiego",
+      "text": "Masz ochotę na coś słodkiego?"
+    },
+    {
       "id": "masz-ochote-na-jajko",
       "text": "Masz ochotę na jajko?"
     },
@@ -5563,6 +6175,10 @@
     {
       "id": "maz",
       "text": "mąż"
+    },
+    {
+      "id": "menu",
+      "text": "menu"
     },
     {
       "id": "mezczyzna",
@@ -5721,6 +6337,10 @@
       "text": "miód"
     },
     {
+      "id": "mleka",
+      "text": "mleka"
+    },
+    {
       "id": "mleko",
       "text": "mleko"
     },
@@ -5759,6 +6379,10 @@
     {
       "id": "moc",
       "text": "móc"
+    },
+    {
+      "id": "mocna-kawa-i-slaba-herbata",
+      "text": "mocna kawa i słaba herbata"
     },
     {
       "id": "mocny",
@@ -6009,6 +6633,10 @@
       "text": "mówi"
     },
     {
+      "id": "mowi-nie-smakuje-mi",
+      "text": "Mówi: nie smakuje mi."
+    },
+    {
       "id": "mowi-po-francusku-i-troche-po-polsku",
       "text": "Mówi po francusku i trochę po polsku."
     },
@@ -6201,6 +6829,10 @@
       "text": "myślę"
     },
     {
+      "id": "mysle-ze-jest-za-kwasny",
+      "text": "Myślę, że jest za kwaśny."
+    },
+    {
       "id": "mysle-ze-ona-jest-bardzo-mila",
       "text": "Myślę, że ona jest bardzo miła."
     },
@@ -6245,6 +6877,10 @@
       "text": "na basen"
     },
     {
+      "id": "na-cieplo",
+      "text": "na ciepło"
+    },
+    {
       "id": "na-gitarze",
       "text": "na gitarze"
     },
@@ -6255,6 +6891,10 @@
     {
       "id": "na-imie-mam-ewa",
       "text": "na imię mam Ewa"
+    },
+    {
+      "id": "na-jakie-nazwisko",
+      "text": "Na jakie nazwisko?"
     },
     {
       "id": "na-kawe",
@@ -6311,6 +6951,10 @@
     {
       "id": "na-obiad-jest-kotlet-z-frytkami",
       "text": "Na obiad jest kotlet z frytkami."
+    },
+    {
+      "id": "na-obiad-jest-krupnik-i-kotlet-mielony",
+      "text": "Na obiad jest krupnik i kotlet mielony."
     },
     {
       "id": "na-obiad-jest-pieczony-kurczak",
@@ -6445,8 +7089,28 @@
       "text": "najpierw zupa, potem ryba"
     },
     {
+      "id": "nalesniki",
+      "text": "naleśniki"
+    },
+    {
+      "id": "nalesniki-sa-niezle",
+      "text": "naleśniki są niezłe"
+    },
+    {
+      "id": "nalesniki-sa-z-serem",
+      "text": "Naleśniki są z serem."
+    },
+    {
+      "id": "nalesniki-ze-szpinakiem",
+      "text": "Naleśniki ze szpinakiem."
+    },
+    {
       "id": "napisac",
       "text": "napisać"
+    },
+    {
+      "id": "napiwek",
+      "text": "napiwek"
     },
     {
       "id": "napoje",
@@ -6455,6 +7119,14 @@
     {
       "id": "napoje-sa-tutaj",
       "text": "Napoje są tutaj."
+    },
+    {
+      "id": "nareszcie",
+      "text": "nareszcie"
+    },
+    {
+      "id": "nareszcie-weekend",
+      "text": "Nareszcie weekend!"
     },
     {
       "id": "narodowosc",
@@ -6573,6 +7245,10 @@
       "text": "Nie, Adam to policjant."
     },
     {
+      "id": "nie-bardzo",
+      "text": "Nie bardzo."
+    },
+    {
       "id": "nie-bez-cukru",
       "text": "Nie, bez cukru."
     },
@@ -6583,6 +7259,18 @@
     {
       "id": "nie-dziekuje-2",
       "text": "Nie, dziękuję."
+    },
+    {
+      "id": "nie-dziekuje-poprosze-rachunek",
+      "text": "Nie, dziękuję. Poproszę rachunek."
+    },
+    {
+      "id": "nie-jem-sera",
+      "text": "Nie jem sera."
+    },
+    {
+      "id": "nie-jem-sera-2",
+      "text": "nie jem sera"
     },
     {
       "id": "nie-jest-bardzo-pracowity",
@@ -6605,8 +7293,20 @@
       "text": "Nie lubi kiwi."
     },
     {
+      "id": "nie-lubi-zimnego-mleka",
+      "text": "Nie lubi zimnego mleka."
+    },
+    {
       "id": "nie-lubie-czytac-wole-grac-na-komputerze",
       "text": "Nie lubię czytać, wolę grać na komputerze."
+    },
+    {
+      "id": "nie-lubie-mleka",
+      "text": "nie lubię mleka"
+    },
+    {
+      "id": "nie-lubie-zimnego-mleka",
+      "text": "nie lubię zimnego mleka"
     },
     {
       "id": "nie-ma",
@@ -6623,6 +7323,10 @@
     {
       "id": "nie-ma-fasoli",
       "text": "Nie ma fasoli."
+    },
+    {
+      "id": "nie-ma-kompotu",
+      "text": "nie ma kompotu"
     },
     {
       "id": "nie-ma-kwiaciarni",
@@ -6649,8 +7353,20 @@
       "text": "Nie ma za co. Miłego dnia!"
     },
     {
+      "id": "nie-mam-chleba",
+      "text": "nie mam chleba"
+    },
+    {
       "id": "nie-mam-pieniedzy-ale-tam-jest-bankomat",
       "text": "Nie mam pieniędzy, ale tam jest bankomat."
+    },
+    {
+      "id": "nie-mam-soku",
+      "text": "nie mam soku"
+    },
+    {
+      "id": "nie-mam-wody",
+      "text": "nie mam wody"
     },
     {
       "id": "nie-moge-dzisiaj",
@@ -6685,6 +7401,42 @@
       "text": "nie pamiętam, jak to się nazywa"
     },
     {
+      "id": "nie-pije-ani-kawy-ani-herbaty",
+      "text": "nie piję ani kawy, ani herbaty"
+    },
+    {
+      "id": "nie-pije-ani-soku-ani-kompotu",
+      "text": "nie piję ani soku, ani kompotu"
+    },
+    {
+      "id": "nie-pije-bialej-kawy",
+      "text": "nie piję białej kawy"
+    },
+    {
+      "id": "nie-pije-czerwonego-wina",
+      "text": "nie piję czerwonego wina"
+    },
+    {
+      "id": "nie-pije-czerwonego-wina-ale-lubi-piwo",
+      "text": "Nie pije czerwonego wina, ale lubi piwo."
+    },
+    {
+      "id": "nie-pije-herbaty",
+      "text": "nie piję herbaty"
+    },
+    {
+      "id": "nie-pije-kawy",
+      "text": "nie piję kawy"
+    },
+    {
+      "id": "nie-pije-kawy-2",
+      "text": "Nie piję kawy."
+    },
+    {
+      "id": "nie-pije-wina",
+      "text": "nie piję wina"
+    },
+    {
       "id": "nie-place-gotowka",
       "text": "Nie, płacę gotówką."
     },
@@ -6703,6 +7455,14 @@
     {
       "id": "nie-slysze-prosze-powtorzyc",
       "text": "nie słyszę, proszę powtórzyć"
+    },
+    {
+      "id": "nie-smakuje-mi",
+      "text": "nie smakuje mi"
+    },
+    {
+      "id": "nie-smakuje-mi-ta-zupa",
+      "text": "nie smakuje mi ta zupa"
     },
     {
       "id": "nie-szkodzi",
@@ -6789,12 +7549,24 @@
       "text": "Nie, wolę grać na komputerze."
     },
     {
+      "id": "nie-wole-wieprzowine",
+      "text": "Nie, wolę wieprzowinę."
+    },
+    {
       "id": "nie-zielony",
       "text": "Nie, zielony."
     },
     {
       "id": "niebieski",
       "text": "niebieski"
+    },
+    {
+      "id": "nieczynny",
+      "text": "nieczynny"
+    },
+    {
+      "id": "niedobry",
+      "text": "niedobry"
     },
     {
       "id": "niemcem",
@@ -6821,6 +7593,10 @@
       "text": "nieźle, a ty?"
     },
     {
+      "id": "niezly",
+      "text": "niezły"
+    },
+    {
       "id": "niski",
       "text": "niski"
     },
@@ -6835,6 +7611,10 @@
     {
       "id": "normalny-czy-ulgowy",
       "text": "Normalny czy ulgowy?"
+    },
+    {
+      "id": "nowak",
+      "text": "Nowak."
     },
     {
       "id": "nowy",
@@ -6955,6 +7735,10 @@
     {
       "id": "okragly",
       "text": "okrągły"
+    },
+    {
+      "id": "okropny",
+      "text": "okropny"
     },
     {
       "id": "oliwa",
@@ -7641,6 +8425,14 @@
       "text": "Pierogi i zupa."
     },
     {
+      "id": "pierogi-ruskie",
+      "text": "pierogi ruskie"
+    },
+    {
+      "id": "pierogi-ruskie-sa-wegetarianskie",
+      "text": "pierogi ruskie są wegetariańskie"
+    },
+    {
       "id": "pierwsze-danie",
       "text": "pierwsze danie"
     },
@@ -7781,6 +8573,14 @@
       "text": "płacić"
     },
     {
+      "id": "placki-ziemniaczane",
+      "text": "placki ziemniaczane"
+    },
+    {
+      "id": "placki-ziemniaczane-ze-smietana",
+      "text": "placki ziemniaczane ze śmietaną"
+    },
+    {
       "id": "planuje",
       "text": "planuję"
     },
@@ -7893,6 +8693,18 @@
       "text": "polecać"
     },
     {
+      "id": "polecam",
+      "text": "polecam"
+    },
+    {
+      "id": "polecam-zurek",
+      "text": "polecam żurek"
+    },
+    {
+      "id": "polecam-zurek-z-jajkiem-i-bigos",
+      "text": "Polecam żurek z jajkiem i bigos."
+    },
+    {
       "id": "polecenie",
       "text": "polecenie"
     },
@@ -7977,12 +8789,28 @@
       "text": "Poproszę dwie papryki i dwa banany."
     },
     {
+      "id": "poprosze-kawalek-sernika",
+      "text": "poproszę kawałek sernika"
+    },
+    {
       "id": "poprosze-pietruszke",
       "text": "Poproszę pietruszkę."
     },
     {
       "id": "poprosze-pol-kilo",
       "text": "poproszę pół kilo"
+    },
+    {
+      "id": "poprosze-rachunek",
+      "text": "poproszę rachunek"
+    },
+    {
+      "id": "poprosze-sos-czosnkowy",
+      "text": "poproszę sos czosnkowy"
+    },
+    {
+      "id": "poprosze-to-samo",
+      "text": "poproszę to samo"
     },
     {
       "id": "popularny",
@@ -8277,6 +9105,14 @@
       "text": "proszę przetłumaczyć dialog"
     },
     {
+      "id": "prosze-rachunek",
+      "text": "proszę rachunek"
+    },
+    {
+      "id": "prosze-rachunek-dziekuje",
+      "text": "Proszę, rachunek. Dziękuję!"
+    },
+    {
       "id": "prosze-sie-przedstawic",
       "text": "proszę się przedstawić"
     },
@@ -8299,6 +9135,18 @@
     {
       "id": "prosze-te-dojrzale-banany",
       "text": "Proszę te dojrzałe banany."
+    },
+    {
+      "id": "prosze-to-jest-menu",
+      "text": "proszę, to jest menu"
+    },
+    {
+      "id": "prosze-tutaj-jest-stolik",
+      "text": "Proszę, tutaj jest stolik."
+    },
+    {
+      "id": "prosze-tutaj-jest-stolik-co-podac",
+      "text": "Proszę, tutaj jest stolik. Co podać?"
     },
     {
       "id": "prosze-ulozyc-dialog",
@@ -8425,6 +9273,10 @@
       "text": "pytasz"
     },
     {
+      "id": "rachunek",
+      "text": "rachunek"
+    },
+    {
       "id": "rano",
       "text": "rano"
     },
@@ -8445,12 +9297,28 @@
       "text": "Rano piję sok pomarańczowy."
     },
     {
+      "id": "razem",
+      "text": "razem"
+    },
+    {
       "id": "razy",
       "text": "razy"
     },
     {
       "id": "restauracja",
       "text": "restauracja"
+    },
+    {
+      "id": "restauracja-jest-zamknieta",
+      "text": "restauracja jest zamknięta"
+    },
+    {
+      "id": "rezerwacja",
+      "text": "rezerwacja"
+    },
+    {
+      "id": "rezerwacja-jest-dla-czterech-osob",
+      "text": "Rezerwacja jest dla czterech osób."
     },
     {
       "id": "rezerwuje",
@@ -8521,6 +9389,18 @@
       "text": "romantyczny"
     },
     {
+      "id": "rosol",
+      "text": "rosół"
+    },
+    {
+      "id": "rosol-jest-z-makaronem",
+      "text": "Rosół jest z makaronem."
+    },
+    {
+      "id": "rosol-z-makaronem",
+      "text": "rosół z makaronem"
+    },
+    {
       "id": "rowna-sie",
       "text": "równa się"
     },
@@ -8539,6 +9419,10 @@
     {
       "id": "rozumiem-na-razie-do-jutra",
       "text": "Rozumiem! Na razie, do jutra!"
+    },
+    {
+      "id": "rurka-z-kremem",
+      "text": "rurka z kremem"
     },
     {
       "id": "ryba",
@@ -8677,8 +9561,24 @@
       "text": "ser jest żółty"
     },
     {
+      "id": "sera",
+      "text": "sera"
+    },
+    {
       "id": "serial",
       "text": "serial"
+    },
+    {
+      "id": "sernik",
+      "text": "sernik"
+    },
+    {
+      "id": "sernik-i-szarlotka",
+      "text": "sernik i szarlotka"
+    },
+    {
+      "id": "sernik-jest-pyszny",
+      "text": "sernik jest pyszny"
     },
     {
       "id": "sezon",
@@ -8833,6 +9733,26 @@
       "text": "smak"
     },
     {
+      "id": "smakuje",
+      "text": "Smakuje?"
+    },
+    {
+      "id": "smakuje-ci",
+      "text": "smakuje ci?"
+    },
+    {
+      "id": "smakuje-ci-sernik",
+      "text": "smakuje ci sernik?"
+    },
+    {
+      "id": "smakuje-ci-zurek",
+      "text": "Smakuje ci żurek?"
+    },
+    {
+      "id": "smakuje-mi",
+      "text": "smakuje mi"
+    },
+    {
       "id": "smazona-ryba",
       "text": "smażona ryba"
     },
@@ -8885,6 +9805,10 @@
       "text": "sok pomarańczowy"
     },
     {
+      "id": "soku",
+      "text": "soku"
+    },
+    {
       "id": "sol",
       "text": "sól"
     },
@@ -8895,6 +9819,10 @@
     {
       "id": "sos",
       "text": "sos"
+    },
+    {
+      "id": "sos-czosnkowy",
+      "text": "sos czosnkowy"
     },
     {
       "id": "sos-jest-dobry",
@@ -8999,6 +9927,18 @@
     {
       "id": "stol",
       "text": "stół"
+    },
+    {
+      "id": "stolik",
+      "text": "stolik"
+    },
+    {
+      "id": "stolik-dla-czterech-osob",
+      "text": "stolik dla czterech osób"
+    },
+    {
+      "id": "stolik-jest-dla-czterech-osob",
+      "text": "Stolik jest dla czterech osób."
     },
     {
       "id": "strona",
@@ -9147,6 +10087,22 @@
     {
       "id": "szampon-i-dezodorant-sa-w-drogerii",
       "text": "szampon i dezodorant są w drogerii"
+    },
+    {
+      "id": "szarlotka",
+      "text": "szarlotka"
+    },
+    {
+      "id": "szarlotka-i-sernik",
+      "text": "szarlotka i sernik"
+    },
+    {
+      "id": "szarlotka-na-cieplo-z-lodami",
+      "text": "Szarlotka na ciepło z lodami."
+    },
+    {
+      "id": "szarlotka-z-lodami",
+      "text": "szarlotka z lodami"
     },
     {
       "id": "szary",
@@ -9309,8 +10265,20 @@
       "text": "Ta torba kosztuje siedemset złotych."
     },
     {
+      "id": "ta-zupa-jest-okropna",
+      "text": "Ta zupa jest okropna!"
+    },
+    {
+      "id": "ta-zupa-jest-za-slona",
+      "text": "ta zupa jest za słona"
+    },
+    {
       "id": "ta-zupa-ma-dobry-smak",
       "text": "ta zupa ma dobry smak"
+    },
+    {
+      "id": "ta-zupa-mi-nie-smakuje",
+      "text": "ta zupa mi nie smakuje"
     },
     {
       "id": "tablica",
@@ -9341,8 +10309,20 @@
       "text": "Tak, bardzo."
     },
     {
+      "id": "tak-bardzo-mi-smakuje",
+      "text": "Tak, bardzo mi smakuje."
+    },
+    {
       "id": "tak-bardzo-swieze",
       "text": "Tak, bardzo świeże!"
+    },
+    {
+      "id": "tak-chetnie",
+      "text": "Tak, chętnie."
+    },
+    {
+      "id": "tak-dzis-jest-zamknieta",
+      "text": "Tak, dziś jest zamknięta."
     },
     {
       "id": "tak-dzisiaj-moge",
@@ -9357,6 +10337,10 @@
       "text": "Tak, i na zupę jarzynową."
     },
     {
+      "id": "tak-idziesz-ze-mna",
+      "text": "Tak. Idziesz ze mną?"
+    },
+    {
       "id": "tak-jest",
       "text": "Tak, jest."
     },
@@ -9367,6 +10351,10 @@
     {
       "id": "tak-lubie-sport",
       "text": "Tak, lubię sport."
+    },
+    {
+      "id": "tak-na-lody",
+      "text": "Tak, na lody."
     },
     {
       "id": "tak-na-zupe",
@@ -9427,6 +10415,10 @@
     {
       "id": "tak-to-marek-jest-z-francji",
       "text": "Tak, to Marek. Jest z Francji."
+    },
+    {
+      "id": "tak-to-wszystko-dziekuje",
+      "text": "Tak, to wszystko. Dziękuję."
     },
     {
       "id": "tak-to-wszystko-ile-place",
@@ -9693,6 +10685,10 @@
       "text": "ten słownik jest stary"
     },
     {
+      "id": "ten-sos-jest-bez-smaku",
+      "text": "ten sos jest bez smaku"
+    },
+    {
       "id": "ten-sos-jest-ostry",
       "text": "ten sos jest ostry"
     },
@@ -9751,6 +10747,10 @@
     {
       "id": "tez",
       "text": "też"
+    },
+    {
+      "id": "tez-2",
+      "text": "Też."
     },
     {
       "id": "tez-dobrze-czy-wiesz-kto-to-jest",
@@ -9817,6 +10817,14 @@
       "text": "To ciekawa książka."
     },
     {
+      "id": "to-dobrze-brzmi",
+      "text": "to dobrze brzmi"
+    },
+    {
+      "id": "to-dobrze-brzmi-2",
+      "text": "To dobrze brzmi."
+    },
+    {
       "id": "to-dziecko-jest-aktywne",
       "text": "to dziecko jest aktywne"
     },
@@ -9871,6 +10879,10 @@
     {
       "id": "to-jest-dobry-bar",
       "text": "To jest dobry bar."
+    },
+    {
+      "id": "to-jest-dopelniacz",
+      "text": "to jest dopełniacz"
     },
     {
       "id": "to-jest-duze-okno",
@@ -10221,6 +11233,10 @@
       "text": "to moje pytanie"
     },
     {
+      "id": "to-moze-herbata",
+      "text": "To może herbata?"
+    },
+    {
       "id": "to-muzeum",
       "text": "to muzeum"
     },
@@ -10307,6 +11323,10 @@
     {
       "id": "to-sa-stare-zdjecia",
       "text": "To są stare zdjęcia."
+    },
+    {
+      "id": "to-samo",
+      "text": "to samo"
     },
     {
       "id": "to-slonce-jest-zolte",
@@ -10543,6 +11563,10 @@
     {
       "id": "tutaj",
       "text": "tutaj"
+    },
+    {
+      "id": "tutaj-czekam",
+      "text": "tutaj czekam"
     },
     {
       "id": "tutaj-jest-kawa",
@@ -10805,6 +11829,10 @@
       "text": "uprawiać"
     },
     {
+      "id": "urodziny",
+      "text": "urodziny"
+    },
+    {
       "id": "urzedniczka",
       "text": "urzędniczka"
     },
@@ -11013,6 +12041,14 @@
       "text": "wędzony łosoś"
     },
     {
+      "id": "wegetarianski",
+      "text": "wegetariański"
+    },
+    {
+      "id": "wegetarianskie-danie",
+      "text": "wegetariańskie danie"
+    },
+    {
       "id": "wesoly",
       "text": "wesoły"
     },
@@ -11057,12 +12093,24 @@
       "text": "wiem, rozumiem"
     },
     {
+      "id": "wieprzowina",
+      "text": "wieprzowina"
+    },
+    {
+      "id": "wieprzowina-czy-wolowina",
+      "text": "wieprzowina czy wołowina?"
+    },
+    {
       "id": "wiesz",
       "text": "wiesz"
     },
     {
       "id": "wiesz-kto-to-jest",
       "text": "Wiesz, kto to jest?"
+    },
+    {
+      "id": "wina",
+      "text": "wina"
     },
     {
       "id": "wino",
@@ -11125,12 +12173,20 @@
       "text": "wodę"
     },
     {
+      "id": "wody",
+      "text": "wody"
+    },
+    {
       "id": "wole",
       "text": "wolę"
     },
     {
       "id": "wole-ciemny-chleb",
       "text": "Wolę ciemny chleb."
+    },
+    {
+      "id": "wole-drob",
+      "text": "wolę drób"
     },
     {
       "id": "wole-grac-na-komputerze",
@@ -11159,6 +12215,10 @@
     {
       "id": "wole-kakao-niz-kawe",
       "text": "Wolę kakao niż kawę."
+    },
+    {
+      "id": "wole-pierogi",
+      "text": "Wolę pierogi."
     },
     {
       "id": "wole-ryz-niz-ziemniaki",
@@ -11195,6 +12255,14 @@
     {
       "id": "wolny",
       "text": "wolny"
+    },
+    {
+      "id": "wolowina",
+      "text": "wołowina"
+    },
+    {
+      "id": "wszedzie",
+      "text": "wszędzie"
     },
     {
       "id": "wszystko",
@@ -11269,6 +12337,14 @@
       "text": "z Anglii"
     },
     {
+      "id": "z-bita-smietana",
+      "text": "z bitą śmietaną"
+    },
+    {
+      "id": "z-boczkiem",
+      "text": "z boczkiem"
+    },
+    {
       "id": "z-cukrem",
       "text": "z cukrem"
     },
@@ -11301,12 +12377,40 @@
       "text": "z frytkami"
     },
     {
+      "id": "z-grilla",
+      "text": "z grilla"
+    },
+    {
       "id": "z-hiszpanii",
       "text": "z Hiszpanii"
     },
     {
+      "id": "z-jajkiem",
+      "text": "z jajkiem"
+    },
+    {
       "id": "z-japonii",
       "text": "z Japonii"
+    },
+    {
+      "id": "z-kim",
+      "text": "z kim?"
+    },
+    {
+      "id": "z-kim-idziesz",
+      "text": "z kim idziesz?"
+    },
+    {
+      "id": "z-kurczakiem",
+      "text": "z kurczakiem"
+    },
+    {
+      "id": "z-lodami",
+      "text": "z lodami"
+    },
+    {
+      "id": "z-makaronem",
+      "text": "z makaronem"
     },
     {
       "id": "z-maslem",
@@ -11321,8 +12425,24 @@
       "text": "z mlekiem"
     },
     {
+      "id": "z-nami",
+      "text": "z nami"
+    },
+    {
+      "id": "z-nia",
+      "text": "z nią"
+    },
+    {
       "id": "z-niemiec",
       "text": "z Niemiec"
+    },
+    {
+      "id": "z-nim",
+      "text": "z nim"
+    },
+    {
+      "id": "z-nimi",
+      "text": "z nimi"
     },
     {
       "id": "z-oliwkami",
@@ -11335,6 +12455,14 @@
     {
       "id": "z-pieczarkami",
       "text": "z pieczarkami"
+    },
+    {
+      "id": "z-podwojnym-serem",
+      "text": "z podwójnym serem"
+    },
+    {
+      "id": "z-podwojnym-serem-i-z-boczkiem",
+      "text": "Z podwójnym serem i z boczkiem."
     },
     {
       "id": "z-polski",
@@ -11353,8 +12481,24 @@
       "text": "z szynką"
     },
     {
+      "id": "z-toba",
+      "text": "z tobą"
+    },
+    {
+      "id": "z-toba-wszedzie",
+      "text": "z tobą wszędzie"
+    },
+    {
       "id": "z-ukrainy",
       "text": "z Ukrainy"
+    },
+    {
+      "id": "z-uszkami",
+      "text": "z uszkami"
+    },
+    {
+      "id": "z-wami",
+      "text": "z wami"
     },
     {
       "id": "z-warzywami",
@@ -11373,6 +12517,10 @@
       "text": "Z zawodu jestem muzykiem."
     },
     {
+      "id": "za",
+      "text": "za"
+    },
+    {
       "id": "zajety",
       "text": "zajęty"
     },
@@ -11389,12 +12537,48 @@
       "text": "zamawiam"
     },
     {
+      "id": "zamawiam-danie-glowne",
+      "text": "zamawiam danie główne"
+    },
+    {
+      "id": "zamkniety",
+      "text": "zamknięty"
+    },
+    {
+      "id": "zapiekanka",
+      "text": "zapiekanka"
+    },
+    {
+      "id": "zapiekanka-z-kurczakiem",
+      "text": "zapiekanka z kurczakiem"
+    },
+    {
+      "id": "zapiekanka-z-podwojnym-serem",
+      "text": "zapiekanka z podwójnym serem"
+    },
+    {
+      "id": "zapiekanka-z-szynka",
+      "text": "zapiekanka z szynką"
+    },
+    {
+      "id": "zapraszam",
+      "text": "zapraszam"
+    },
+    {
+      "id": "zapraszam-na-obiad",
+      "text": "zapraszam na obiad"
+    },
+    {
       "id": "zapraszamy",
       "text": "zapraszamy"
     },
     {
       "id": "zapraszamy-na-kolacje",
       "text": "zapraszamy na kolację!"
+    },
+    {
+      "id": "zaraz",
+      "text": "zaraz"
     },
     {
       "id": "zart",
@@ -11417,8 +12601,16 @@
       "text": "że"
     },
     {
+      "id": "ze-mna",
+      "text": "ze mną"
+    },
+    {
       "id": "ze-smietana",
       "text": "ze śmietaną"
+    },
+    {
+      "id": "ze-szpinakiem",
+      "text": "ze szpinakiem"
     },
     {
       "id": "ze-znajomymi",
@@ -11479,6 +12671,10 @@
     {
       "id": "ziet",
       "text": "ziet"
+    },
+    {
+      "id": "zimnego",
+      "text": "zimnego"
     },
     {
       "id": "zimny",
@@ -11569,12 +12765,24 @@
       "text": "zupa jest gorąca"
     },
     {
+      "id": "zupa-jest-za-slona",
+      "text": "zupa jest za słona"
+    },
+    {
       "id": "zupa-kalafiorowa",
       "text": "zupa kalafiorowa"
     },
     {
       "id": "zupa-kalafiorowa-jest-dobra",
       "text": "Zupa kalafiorowa jest dobra."
+    },
+    {
+      "id": "zupa-pomidorowa",
+      "text": "zupa pomidorowa"
+    },
+    {
+      "id": "zupa-pomidorowa-jest-dobra",
+      "text": "zupa pomidorowa jest dobra"
     },
     {
       "id": "zupa-rybna",
@@ -11591,6 +12799,14 @@
     {
       "id": "zupe",
       "text": "zupę"
+    },
+    {
+      "id": "zurek",
+      "text": "żurek"
+    },
+    {
+      "id": "zurek-z-jajkiem",
+      "text": "żurek z jajkiem"
     },
     {
       "id": "zwykle",

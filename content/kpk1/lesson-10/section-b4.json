@@ -1,0 +1,411 @@
+{
+  "id": "kpk1-l10-b4",
+  "section": {
+    "letter": "B",
+    "heading": "A może rurka z kremem?",
+    "meaning": {
+      "en": "How about a cream horn?"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-b4-t01",
+      "before": "kpk1-l10-b4-e01",
+      "title": {
+        "en": "Kawałek sernika"
+      },
+      "body": {
+        "en": "After *kawałek* (a piece) comes the genitive too: *kawałek sernika*, *kawałek szarlotki*. A dessert comes *z bitą śmietaną* or *z lodami*, and *szarlotka na ciepło* is served warm."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b4-e01",
+      "prompt": "koktajl",
+      "options": [
+        {
+          "en": "compote, a drink of stewed fruit"
+        },
+        {
+          "en": "a smoothie, a milkshake"
+        },
+        {
+          "en": "juice"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "koktajl"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b4-e02",
+      "prompt": "z bitą śmietaną",
+      "options": [
+        {
+          "en": "with sour cream"
+        },
+        {
+          "en": "with ice cream"
+        },
+        {
+          "en": "with whipped cream"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-bita-smietana"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-b4-e03",
+      "text": "gofr z bitą śmietaną",
+      "meaning": {
+        "en": "a waffle with whipped cream"
+      },
+      "distractors": [
+        "gofr z lodami",
+        "lody z bitą śmietaną"
+      ],
+      "items": [
+        "gofr",
+        "z-bita-smietana"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b4-e04",
+      "prompt": "z lodami",
+      "options": [
+        {
+          "en": "with ice cream"
+        },
+        {
+          "en": "ice cream"
+        },
+        {
+          "en": "with whipped cream"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-lodami"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-b4-e05",
+      "prompt": {
+        "en": "apple pie with ice cream"
+      },
+      "acceptedAnswers": [
+        "szarlotka z lodami"
+      ],
+      "distractors": [
+        "lody",
+        "śmietaną"
+      ],
+      "items": [
+        "szarlotka",
+        "z-lodami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b4-e06",
+      "prompt": "na ciepło",
+      "options": [
+        {
+          "en": "warm (ciepły, ciepła, ciepłe)"
+        },
+        {
+          "en": "served warm (szarlotka na ciepło)"
+        },
+        {
+          "en": "hot (gorący, gorąca, gorące)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-cieplo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-b4-e07",
+      "text": "Szarlotka na ___ z lodami.",
+      "meaning": {
+        "en": "Warm apple pie with ice cream."
+      },
+      "gaps": [
+        [
+          "ciepło"
+        ]
+      ],
+      "distractors": [
+        "ciepła",
+        "zimno"
+      ],
+      "items": [
+        "szarlotka",
+        "na-cieplo",
+        "z-lodami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b4-e08",
+      "prompt": "kawałek sernika",
+      "options": [
+        {
+          "en": "cheesecake"
+        },
+        {
+          "en": "a biscuit, a small cake (ciastka: biscuits)"
+        },
+        {
+          "en": "a piece of cheesecake"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kawalek-sernika"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-b4-e09",
+      "acceptedAnswers": [
+        "poproszę kawałek sernika"
+      ],
+      "meaning": {
+        "en": "a piece of cheesecake, please"
+      },
+      "items": [
+        "poprosze",
+        "kawalek-sernika"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b4-e10",
+      "prompt": "herbata owocowa",
+      "options": [
+        {
+          "en": "fruit tea"
+        },
+        {
+          "en": "tea"
+        },
+        {
+          "en": "orange juice"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "herbata-owocowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b4-e11",
+      "prompt": "czarna kawa",
+      "options": [
+        {
+          "en": "coffee"
+        },
+        {
+          "en": "black coffee"
+        },
+        {
+          "en": "fruit tea"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czarna-kawa"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-b4-e12",
+      "prompt": {
+        "en": "black coffee and fruit tea"
+      },
+      "acceptedAnswers": [
+        "czarna kawa i herbata owocowa",
+        "herbata owocowa i czarna kawa"
+      ],
+      "items": [
+        "czarna-kawa",
+        "i",
+        "herbata-owocowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b4-e13",
+      "prompt": "gorąca czekolada",
+      "options": [
+        {
+          "en": "chocolate"
+        },
+        {
+          "en": "black coffee"
+        },
+        {
+          "en": "hot chocolate"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "goraca-czekolada"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-b4-e14",
+      "prompt": {
+        "en": "hot chocolate with whipped cream"
+      },
+      "acceptedAnswers": [
+        "gorąca czekolada z bitą śmietaną"
+      ],
+      "distractors": [
+        "gorący",
+        "lodami"
+      ],
+      "items": [
+        "goraca-czekolada",
+        "z-bita-smietana"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-b4-e15",
+      "pairs": [
+        {
+          "polish": "koktajl",
+          "meaning": {
+            "en": "a smoothie"
+          }
+        },
+        {
+          "polish": "z bitą śmietaną",
+          "meaning": {
+            "en": "with whipped cream"
+          }
+        },
+        {
+          "polish": "z lodami",
+          "meaning": {
+            "en": "with ice cream"
+          }
+        },
+        {
+          "polish": "na ciepło",
+          "meaning": {
+            "en": "served warm"
+          }
+        },
+        {
+          "polish": "czarna kawa",
+          "meaning": {
+            "en": "black coffee"
+          }
+        },
+        {
+          "polish": "gorąca czekolada",
+          "meaning": {
+            "en": "hot chocolate"
+          }
+        }
+      ],
+      "items": [
+        "koktajl",
+        "z-bita-smietana",
+        "z-lodami",
+        "na-cieplo",
+        "czarna-kawa",
+        "goraca-czekolada"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-b4-e16",
+      "lines": [
+        "Co podać?",
+        "Dla mnie kawałek sernika.",
+        "A do picia?",
+        "Herbata owocowa, proszę."
+      ],
+      "meaning": {
+        "en": "At the café."
+      },
+      "items": [
+        "co-podac",
+        "dla-mnie",
+        "kawalek-sernika",
+        "a",
+        "do-picia",
+        "herbata-owocowa",
+        "prosze"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-b4-e17",
+      "lines": [
+        "Ewa zamawia szarlotkę na ciepło z lodami.",
+        "Do picia ma czarną kawę.",
+        "Adam zamawia koktajl i gofr z bitą śmietaną."
+      ],
+      "meaning": {
+        "en": "Two orders at the café."
+      },
+      "statements": [
+        {
+          "text": "Szarlotka jest z lodami.",
+          "meaning": {
+            "en": "The apple pie comes with ice cream."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa pije herbatę owocową.",
+          "meaning": {
+            "en": "Ewa is drinking fruit tea."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam zamawia gofr.",
+          "meaning": {
+            "en": "Adam orders a waffle."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "ewa",
+        "na-cieplo",
+        "z-lodami",
+        "do-picia",
+        "adam",
+        "koktajl",
+        "i",
+        "gofr",
+        "z-bita-smietana"
+      ]
+    }
+  ]
+}

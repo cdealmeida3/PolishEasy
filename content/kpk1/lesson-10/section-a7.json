@@ -1,0 +1,448 @@
+{
+  "id": "kpk1-l10-a7",
+  "section": {
+    "letter": "A",
+    "heading": "Zapraszam was na obiad",
+    "meaning": {
+      "en": "Come for dinner"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-a7-t01",
+      "before": "kpk1-l10-a7-e01",
+      "title": {
+        "en": "Zapamiętaj!"
+      },
+      "body": {
+        "en": "Opposites for food and drink: *zimny* and *gorący*, *ciepły* and *chłodny*, *tłusty* and *chudy*, *ostry* and *łagodny*, *mocny* and *słaby*: *mocna kawa*, *słaba herbata*."
+      }
+    },
+    {
+      "id": "kpk1-l10-a7-t02",
+      "before": "kpk1-l10-a7-e07",
+      "title": {
+        "en": "Czynne"
+      },
+      "body": {
+        "en": "On a café door: *czynne* (open), *nieczynne* or *zamknięte* (closed). *Danie dnia* is the dish of the day. A *napiwek* (tip) of about ten per cent is usual."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a7-e01",
+      "prompt": "ciepły",
+      "options": [
+        {
+          "en": "warm (ciepły, ciepła, ciepłe)"
+        },
+        {
+          "en": "cold (zimny, zimna, zimne)"
+        },
+        {
+          "en": "sweet (słodki, słodka, słodkie)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cieply"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a7-e02",
+      "prompt": "chłodny",
+      "options": [
+        {
+          "en": "hot (gorący, gorąca, gorące)"
+        },
+        {
+          "en": "cool, chilly (chłodny, chłodna, chłodne)"
+        },
+        {
+          "en": "warm (ciepły, ciepła, ciepłe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chlodny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-a7-e03",
+      "text": "ciepłe mleko",
+      "meaning": {
+        "en": "warm milk"
+      },
+      "distractors": [
+        "zimne mleko",
+        "ciepła woda"
+      ],
+      "items": [
+        "cieply",
+        "mleko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a7-e04",
+      "prompt": "łagodny",
+      "options": [
+        {
+          "en": "hot, spicy; sharp (ostry, ostra, ostre)"
+        },
+        {
+          "en": "strong (mocny, mocna, mocne)"
+        },
+        {
+          "en": "mild, not spicy (łagodny sos) (łagodny, łagodna, łagodne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "lagodny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a7-e05",
+      "prompt": {
+        "en": "a mild sauce"
+      },
+      "acceptedAnswers": [
+        "łagodny sos"
+      ],
+      "distractors": [
+        "ostry",
+        "łagodna"
+      ],
+      "items": [
+        "lagodny",
+        "sos"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a7-e06",
+      "prompt": {
+        "en": "strong coffee and weak tea"
+      },
+      "acceptedAnswers": [
+        "mocna kawa i słaba herbata"
+      ],
+      "distractors": [
+        "mocny",
+        "słaby"
+      ],
+      "items": [
+        "mocny",
+        "kawa",
+        "i",
+        "slaby",
+        "herbata"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a7-e07",
+      "prompt": "czynny",
+      "options": [
+        {
+          "en": "open (of a shop or a café) (czynny, czynna, czynne)"
+        },
+        {
+          "en": "closed, shut (zamknięty, zamknięta, zamknięte)"
+        },
+        {
+          "en": "warm (ciepły, ciepła, ciepłe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czynny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a7-e08",
+      "prompt": "nieczynny",
+      "options": [
+        {
+          "en": "open (of a shop or a café) (czynny, czynna, czynne)"
+        },
+        {
+          "en": "not open (of a shop or a café) (nieczynny, nieczynna, nieczynne)"
+        },
+        {
+          "en": "cool, chilly (chłodny, chłodna, chłodne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nieczynny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-a7-e09",
+      "text": "Kawiarnia jest ___.",
+      "meaning": {
+        "en": "The café is open."
+      },
+      "gaps": [
+        [
+          "czynna"
+        ]
+      ],
+      "distractors": [
+        "czynny",
+        "czynne"
+      ],
+      "items": [
+        "kawiarnia",
+        "byc-jest",
+        "czynny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a7-e10",
+      "prompt": "zamknięty",
+      "options": [
+        {
+          "en": "open (of a shop or a café) (czynny, czynna, czynne)"
+        },
+        {
+          "en": "mild, not spicy (łagodny sos) (łagodny, łagodna, łagodne)"
+        },
+        {
+          "en": "closed, shut (zamknięty, zamknięta, zamknięte)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zamkniety"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-a7-e11",
+      "acceptedAnswers": [
+        "restauracja jest zamknięta"
+      ],
+      "meaning": {
+        "en": "the restaurant is closed"
+      },
+      "items": [
+        "restauracja",
+        "byc-jest",
+        "zamkniety"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a7-e12",
+      "prompt": "danie dnia",
+      "options": [
+        {
+          "en": "the dish of the day"
+        },
+        {
+          "en": "a main course (on a menu: dania główne)"
+        },
+        {
+          "en": "for dinner"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "danie-dnia"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-a7-e13",
+      "prompt": {
+        "en": "the dish of the day is soup"
+      },
+      "acceptedAnswers": [
+        "danie dnia to zupa"
+      ],
+      "items": [
+        "danie-dnia",
+        "to",
+        "zupa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a7-e14",
+      "prompt": "napiwek",
+      "options": [
+        {
+          "en": "the bill (poproszę rachunek)"
+        },
+        {
+          "en": "a tip (for a waiter)"
+        },
+        {
+          "en": "a menu (it never changes)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "napiwek"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-a7-e15",
+      "pairs": [
+        {
+          "polish": "ciepły",
+          "meaning": {
+            "en": "warm"
+          }
+        },
+        {
+          "polish": "chłodny",
+          "meaning": {
+            "en": "cool"
+          }
+        },
+        {
+          "polish": "łagodny",
+          "meaning": {
+            "en": "mild"
+          }
+        },
+        {
+          "polish": "czynny",
+          "meaning": {
+            "en": "open"
+          }
+        },
+        {
+          "polish": "zamknięty",
+          "meaning": {
+            "en": "closed"
+          }
+        },
+        {
+          "polish": "napiwek",
+          "meaning": {
+            "en": "a tip"
+          }
+        }
+      ],
+      "items": [
+        "cieply",
+        "chlodny",
+        "lagodny",
+        "czynny",
+        "zamkniety",
+        "napiwek"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-a7-e16",
+      "lines": [
+        "Kawiarnia jest czynna.",
+        "Danie dnia to zupa pomidorowa.",
+        "Kawa jest gorąca, a sok zimny."
+      ],
+      "meaning": {
+        "en": "At the café."
+      },
+      "statements": [
+        {
+          "text": "Kawiarnia jest zamknięta.",
+          "meaning": {
+            "en": "The café is closed."
+          },
+          "true": false
+        },
+        {
+          "text": "Danie dnia to zupa.",
+          "meaning": {
+            "en": "The dish of the day is soup."
+          },
+          "true": true
+        },
+        {
+          "text": "Sok jest ciepły.",
+          "meaning": {
+            "en": "The juice is warm."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "kawiarnia",
+        "byc-jest",
+        "czynny",
+        "danie-dnia",
+        "to",
+        "zupa-pomidorowa",
+        "kawa",
+        "goracy",
+        "a",
+        "sok",
+        "zimny"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-a7-e17",
+      "lines": [
+        "Kawiarnia jest nieczynna?",
+        "Tak, dziś jest zamknięta.",
+        "A restauracja?",
+        "Jest czynna."
+      ],
+      "meaning": {
+        "en": "Where can we eat today?"
+      },
+      "items": [
+        "kawiarnia",
+        "byc-jest",
+        "nieczynny",
+        "tak",
+        "dzis",
+        "zamkniety",
+        "a",
+        "restauracja",
+        "czynny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a7-e18",
+      "prompt": {
+        "en": "the café is not open today"
+      },
+      "acceptedAnswers": [
+        "dziś kawiarnia jest nieczynna",
+        "kawiarnia jest dziś nieczynna"
+      ],
+      "distractors": [
+        "czynna",
+        "nieczynny"
+      ],
+      "items": [
+        "dzis",
+        "kawiarnia",
+        "byc-jest",
+        "nieczynny"
+      ]
+    }
+  ]
+}

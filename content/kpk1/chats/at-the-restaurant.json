@@ -1,0 +1,302 @@
+{
+  "id": "chat-at-the-restaurant",
+  "person": "Kelnerka",
+  "title": {
+    "en": "At the restaurant"
+  },
+  "scene": {
+    "en": "You are Adam, at a restaurant where you have a booking. You want the soup the waitress recommends, then a breaded pork chop with chips, and, as you are driving, a compote to drink. You love the food, but you have no room for dessert. The waitress is a woman you don't know: to her you are pan."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "zapraszac-zapraszam",
+    "mam-rezerwacje",
+    "prosze",
+    "tutaj",
+    "byc-jest",
+    "stolik",
+    "co-podac",
+    "co",
+    "pani",
+    "polecac-poleca",
+    "polecac-polecam",
+    "zurek",
+    "z-jajkiem",
+    "i",
+    "bigos",
+    "dla-mnie",
+    "a",
+    "danie-glowne",
+    "kotlet-schabowy",
+    "z-frytkami",
+    "do-picia",
+    "kompot",
+    "czy",
+    "to-wszystko",
+    "tak",
+    "dziekuje",
+    "bardzo",
+    "smakuje-mi",
+    "nie",
+    "deser",
+    "poprosze",
+    "rachunek",
+    "to-samo",
+    "barszcz",
+    "z-uszkami",
+    "kotlet-mielony",
+    "piwo",
+    "za",
+    "tlusty",
+    "sernik"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry! Zapraszam.",
+      "meaning": {
+        "en": "Hello! Come in."
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry. Mam rezerwację.",
+          "meaning": {
+            "en": "Hello. I have a booking."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Dzień dobry. Mam rezerwację.",
+            "Dzień dobry, mam rezerwację."
+          ]
+        },
+        {
+          "text": "Dzień dobry. Poproszę rachunek.",
+          "meaning": {
+            "en": "Hello. I'd like the bill, please."
+          },
+          "note": {
+            "en": "You have only just come in: say *mam rezerwację*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Proszę, tutaj jest stolik. Co podać?",
+      "meaning": {
+        "en": "Here is your table. What can I get you?"
+      },
+      "replies": [
+        {
+          "text": "Co pani poleca?",
+          "meaning": {
+            "en": "What do you recommend?"
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Co pani poleca?"
+          ]
+        },
+        {
+          "text": "Dla mnie to samo.",
+          "meaning": {
+            "en": "The same for me."
+          },
+          "note": {
+            "en": "Nobody has ordered yet: ask her what she recommends, *co pani poleca?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Polecam żurek z jajkiem i bigos.",
+      "meaning": {
+        "en": "I recommend the sour rye soup with an egg, and the bigos."
+      },
+      "replies": [
+        {
+          "text": "Dla mnie żurek z jajkiem.",
+          "meaning": {
+            "en": "The sour rye soup with an egg for me."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Dla mnie żurek z jajkiem.",
+            "Poproszę żurek z jajkiem."
+          ]
+        },
+        {
+          "text": "Dla mnie barszcz z uszkami.",
+          "meaning": {
+            "en": "The beetroot soup with little dumplings for me."
+          },
+          "note": {
+            "en": "You want the soup she recommends: *dla mnie żurek z jajkiem*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "A danie główne?",
+      "meaning": {
+        "en": "And the main course?"
+      },
+      "replies": [
+        {
+          "text": "Kotlet schabowy z frytkami, proszę.",
+          "meaning": {
+            "en": "A breaded pork chop with chips, please."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Kotlet schabowy z frytkami, proszę.",
+            "Poproszę kotlet schabowy z frytkami."
+          ]
+        },
+        {
+          "text": "Kotlet mielony z frytkami, proszę.",
+          "meaning": {
+            "en": "A minced meat patty with chips, please."
+          },
+          "note": {
+            "en": "You want the breaded pork chop: *kotlet schabowy*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "A do picia?",
+      "meaning": {
+        "en": "And to drink?"
+      },
+      "replies": [
+        {
+          "text": "Kompot, proszę.",
+          "meaning": {
+            "en": "A compote, please."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Kompot, proszę.",
+            "Poproszę kompot."
+          ]
+        },
+        {
+          "text": "Piwo, proszę.",
+          "meaning": {
+            "en": "A beer, please."
+          },
+          "note": {
+            "en": "You are driving: ask for *kompot*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Czy to wszystko?",
+      "meaning": {
+        "en": "Is that all?"
+      },
+      "replies": [
+        {
+          "text": "Tak, to wszystko. Dziękuję.",
+          "meaning": {
+            "en": "Yes, that's all. Thank you."
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Tak, to wszystko. Dziękuję.",
+            "Tak, to wszystko, dziękuję."
+          ]
+        },
+        {
+          "text": "Nie, poproszę rachunek.",
+          "meaning": {
+            "en": "No, I'd like the bill, please."
+          },
+          "note": {
+            "en": "You have not eaten yet: say *tak, to wszystko*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Smakuje?",
+      "meaning": {
+        "en": "Do you like it?"
+      },
+      "replies": [
+        {
+          "text": "Tak, bardzo mi smakuje.",
+          "meaning": {
+            "en": "Yes, I like it very much."
+          },
+          "right": true,
+          "next": "t8",
+          "acceptedAnswers": [
+            "Tak, bardzo mi smakuje.",
+            "Tak, smakuje mi bardzo."
+          ]
+        },
+        {
+          "text": "Nie bardzo, jest za tłusty.",
+          "meaning": {
+            "en": "Not really, it's too fatty."
+          },
+          "note": {
+            "en": "You love the food: *bardzo mi smakuje*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t8",
+      "says": "A deser?",
+      "meaning": {
+        "en": "And dessert?"
+      },
+      "replies": [
+        {
+          "text": "Nie, dziękuję. Poproszę rachunek.",
+          "meaning": {
+            "en": "No, thank you. I'd like the bill, please."
+          },
+          "right": true,
+          "next": "t9",
+          "acceptedAnswers": [
+            "Nie, dziękuję. Poproszę rachunek.",
+            "Nie, dziękuję, poproszę rachunek."
+          ]
+        },
+        {
+          "text": "Tak, poproszę sernik.",
+          "meaning": {
+            "en": "Yes, I'd like cheesecake, please."
+          },
+          "note": {
+            "en": "You have no room for dessert: ask for *rachunek*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t9",
+      "says": "Proszę, rachunek. Dziękuję!",
+      "meaning": {
+        "en": "Here is the bill. Thank you!"
+      }
+    }
+  ]
+}

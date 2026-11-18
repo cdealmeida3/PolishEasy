@@ -12,7 +12,8 @@
     "kpk1/lesson-06/items.json",
     "kpk1/lesson-07/items.json",
     "kpk1/lesson-08/items.json",
-    "kpk1/lesson-09/items.json"
+    "kpk1/lesson-09/items.json",
+    "kpk1/lesson-10/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -34,7 +35,8 @@
     "kpk1/chats/weekend-plans.json",
     "kpk1/chats/at-the-kiosk.json",
     "kpk1/chats/breakfast-with-a-friend.json",
-    "kpk1/chats/at-the-market.json"
+    "kpk1/chats/at-the-market.json",
+    "kpk1/chats/at-the-restaurant.json"
   ],
   "levels": [
     {
@@ -611,7 +613,31 @@
               "zaimki osobowe w narzędniku"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-10/section-a1.json",
+            "kpk1/lesson-10/section-a2.json",
+            "kpk1/lesson-10/section-a3.json",
+            "kpk1/lesson-10/section-a4.json",
+            "kpk1/lesson-10/section-a5.json",
+            "kpk1/lesson-10/section-a6.json",
+            "kpk1/lesson-10/section-a7.json",
+            "kpk1/lesson-10/section-b1.json",
+            "kpk1/lesson-10/section-b2.json",
+            "kpk1/lesson-10/section-b3.json",
+            "kpk1/lesson-10/section-b4.json",
+            "kpk1/lesson-10/section-c1.json",
+            "kpk1/lesson-10/section-c2.json",
+            "kpk1/lesson-10/section-g.json"
+          ],
+          "lookUp": [
+            "uwielbiac-uwielbiam",
+            "zamawiac-zamawiam",
+            "zapiekanka",
+            "kompot",
+            "to-dobrze-brzmi",
+            "urodziny",
+            "zapraszac-zapraszam"
+          ]
         },
         {
           "id": "kpk1-l11",

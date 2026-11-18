@@ -1,0 +1,408 @@
+{
+  "id": "kpk1-l10-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Zapraszam was na obiad",
+    "meaning": {
+      "en": "Come for dinner"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-a1-t01",
+      "before": "kpk1-l10-a1-e01",
+      "title": {
+        "en": "Mam rezerwację"
+      },
+      "body": {
+        "en": "In a restaurant you say *mam rezerwację* (I have a booking). The waiter asks *na jakie nazwisko?* (under what name?) and shows you to your *stolik*, a table for guests: a table at home is *stół*. *Menu* never changes: *to jest menu*, *proszę menu*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a1-e01",
+      "prompt": "zapraszam",
+      "options": [
+        {
+          "en": "I invite (zapraszam na obiad: come for dinner)"
+        },
+        {
+          "en": "we invite you (zapraszamy na kolację: come for supper)"
+        },
+        {
+          "en": "he recommends, she recommends (jaki pan poleca?: which one do you recommend?)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zapraszac-zapraszam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a1-e02",
+      "prompt": "urodziny",
+      "options": [
+        {
+          "en": "dinner, the main meal of the day"
+        },
+        {
+          "en": "a birthday, a birthday party"
+        },
+        {
+          "en": "supper, the evening meal"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "urodziny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-a1-e03",
+      "text": "zapraszam na obiad",
+      "meaning": {
+        "en": "come for dinner"
+      },
+      "distractors": [
+        "zapraszamy na obiad",
+        "zapraszam na kolację"
+      ],
+      "items": [
+        "zapraszac-zapraszam",
+        "na-obiad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a1-e04",
+      "prompt": "rezerwacja",
+      "options": [
+        {
+          "en": "a restaurant"
+        },
+        {
+          "en": "a surname"
+        },
+        {
+          "en": "a booking, a reservation"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "rezerwacja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a1-e05",
+      "prompt": "mam rezerwację",
+      "options": [
+        {
+          "en": "I have a booking"
+        },
+        {
+          "en": "a booking, a reservation"
+        },
+        {
+          "en": "I have a table"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mam-rezerwacje"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-a1-e06",
+      "text": "Dzień dobry, mam ___.",
+      "meaning": {
+        "en": "Hello, I have a booking."
+      },
+      "gaps": [
+        [
+          "rezerwację"
+        ]
+      ],
+      "distractors": [
+        "rezerwacja",
+        "restauracja"
+      ],
+      "items": [
+        "dzien-dobry",
+        "mam-rezerwacje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a1-e07",
+      "prompt": "stolik",
+      "options": [
+        {
+          "en": "a restaurant"
+        },
+        {
+          "en": "a table (in a restaurant or a café)"
+        },
+        {
+          "en": "a waiter"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "stolik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a1-e08",
+      "prompt": "dla czterech osób",
+      "options": [
+        {
+          "en": "four"
+        },
+        {
+          "en": "for two people"
+        },
+        {
+          "en": "for four people"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dla-czterech-osob"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a1-e09",
+      "prompt": {
+        "en": "a table for four people"
+      },
+      "acceptedAnswers": [
+        "stolik dla czterech osób"
+      ],
+      "distractors": [
+        "cztery",
+        "osoby"
+      ],
+      "items": [
+        "stolik",
+        "dla-czterech-osob"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a1-e10",
+      "prompt": "menu",
+      "options": [
+        {
+          "en": "a menu (it never changes)"
+        },
+        {
+          "en": "a table (in a restaurant or a café)"
+        },
+        {
+          "en": "food"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "menu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a1-e11",
+      "prompt": "zaraz",
+      "options": [
+        {
+          "en": "now"
+        },
+        {
+          "en": "in a moment, right away"
+        },
+        {
+          "en": "tomorrow"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zaraz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-a1-e12",
+      "acceptedAnswers": [
+        "proszę, to jest menu"
+      ],
+      "meaning": {
+        "en": "here you are, this is the menu"
+      },
+      "items": [
+        "prosze",
+        "to",
+        "byc-jest",
+        "menu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-a1-e13",
+      "acceptedAnswers": [
+        "jutro mam urodziny"
+      ],
+      "meaning": {
+        "en": "it's my birthday tomorrow"
+      },
+      "items": [
+        "jutro",
+        "miec-mam",
+        "urodziny"
+      ],
+      "readingAnswers": [
+        "mam jutro urodziny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-a1-e14",
+      "prompt": {
+        "en": "I have a booking"
+      },
+      "acceptedAnswers": [
+        "mam rezerwację",
+        "ja mam rezerwację"
+      ],
+      "items": [
+        "mam-rezerwacje"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-a1-e15",
+      "pairs": [
+        {
+          "polish": "rezerwacja",
+          "meaning": {
+            "en": "a booking"
+          }
+        },
+        {
+          "polish": "stolik",
+          "meaning": {
+            "en": "a table"
+          }
+        },
+        {
+          "polish": "menu",
+          "meaning": {
+            "en": "a menu"
+          }
+        },
+        {
+          "polish": "zaraz",
+          "meaning": {
+            "en": "in a moment"
+          }
+        },
+        {
+          "polish": "urodziny",
+          "meaning": {
+            "en": "a birthday"
+          }
+        },
+        {
+          "polish": "zapraszam",
+          "meaning": {
+            "en": "I invite"
+          }
+        }
+      ],
+      "items": [
+        "rezerwacja",
+        "stolik",
+        "menu",
+        "zaraz",
+        "urodziny",
+        "zapraszac-zapraszam"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-a1-e16",
+      "lines": [
+        "Dzień dobry, mam rezerwację.",
+        "Na jakie nazwisko?",
+        "Nowak.",
+        "Proszę, tutaj jest stolik."
+      ],
+      "meaning": {
+        "en": "Arriving at the restaurant."
+      },
+      "items": [
+        "dzien-dobry",
+        "mam-rezerwacje",
+        "nazwisko",
+        "prosze",
+        "tutaj",
+        "byc-jest",
+        "stolik"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-a1-e17",
+      "lines": [
+        "Ewa ma jutro urodziny.",
+        "Ma rezerwację w restauracji.",
+        "Stolik jest dla czterech osób."
+      ],
+      "meaning": {
+        "en": "Ewa's birthday dinner."
+      },
+      "statements": [
+        {
+          "text": "Ewa ma jutro urodziny.",
+          "meaning": {
+            "en": "It's Ewa's birthday tomorrow."
+          },
+          "true": true
+        },
+        {
+          "text": "Stolik jest dla dwóch osób.",
+          "meaning": {
+            "en": "The table is for two people."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa ma rezerwację.",
+          "meaning": {
+            "en": "Ewa has a booking."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "miec-ma",
+        "jutro",
+        "urodziny",
+        "w-restauracji",
+        "stolik",
+        "byc-jest",
+        "dla-czterech-osob"
+      ]
+    }
+  ]
+}

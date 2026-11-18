@@ -227,7 +227,7 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
@@ -238,7 +238,8 @@ class AuthoredContentTest {
                 listOf(7, 7, 6, 8, 3, 6, 8, 8, 7, 7, 5, 8, 8, 7, 8, 8, 5) +
                 listOf(8, 8, 8, 8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 8, 0) +
                 listOf(8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 0) +
-                listOf(8, 8, 8, 8, 6, 6, 8, 8, 8, 6, 4, 1, 7, 8, 8, 6, 4),
+                listOf(8, 8, 8, 8, 6, 6, 8, 8, 8, 6, 4, 1, 7, 8, 8, 6, 4) +
+                listOf(8, 8, 8, 8, 7, 8, 8, 8, 8, 7, 8, 8, 8, 8),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -288,8 +289,10 @@ class AuthoredContentTest {
         assertEquals(17, book[8].sections)
         assertEquals("Lubisz marchewkę?", book[9].title)
         assertEquals(17, book[9].sections)
-        assertTrue(book.take(10).none { it.coming })
-        assertTrue(book.drop(10).all { it.coming })
+        assertEquals("Uwielbiam polskie jedzenie!", book[10].title)
+        assertEquals(14, book[10].sections)
+        assertTrue(book.take(11).none { it.coming })
+        assertTrue(book.drop(11).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -700,7 +703,7 @@ class AuthoredContentTest {
         val had = setOf("brata", "siostrę", "syna", "córkę")
         had.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
         val fixedPhrases = listOf(listOf("nie", "ma", "za", "co"), listOf("nie", "ma", "sprawy"))
-        val negatedObjects = setOf("aparatu", "bananów", "brata", "drobnych", "fasoli", "kantoru", "kwiaciarni", "pieniędzy", "piwa", "problemu")
+        val negatedObjects = setOf("ani", "aparatu", "bananów", "brata", "chleba", "drobnych", "fasoli", "kantoru", "kompotu", "kwiaciarni", "pieniędzy", "piwa", "problemu", "soku", "wody")
 
         spokenSentences.forEach { sentence ->
             val text = sentence.joinToString(" ")
