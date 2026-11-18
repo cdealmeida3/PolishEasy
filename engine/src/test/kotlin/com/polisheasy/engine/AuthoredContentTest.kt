@@ -227,7 +227,7 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
@@ -235,7 +235,8 @@ class AuthoredContentTest {
                 listOf(8, 8, 8, 3, 0) + listOf(5, 0, 7, 6, 8, 8, 1, 1, 0) +
                 listOf(6, 7, 4, 4, 7, 6, 4, 8, 0, 5, 7, 0) + listOf(8, 8, 7, 4, 8, 8, 6, 8, 4, 0) +
                 listOf(8, 8, 8, 7, 8, 8, 8, 8, 8, 0) + listOf(3, 5, 5, 7, 7, 8, 8, 8, 6, 6, 4, 8, 8, 0) +
-                listOf(7, 7, 6, 8, 3, 6, 8, 8, 7, 7, 5, 8, 8, 7, 8, 8, 5),
+                listOf(7, 7, 6, 8, 3, 6, 8, 8, 7, 7, 5, 8, 8, 7, 8, 8, 5) +
+                listOf(8, 8, 8, 8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 8, 0),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -279,8 +280,10 @@ class AuthoredContentTest {
         assertEquals(14, book[5].sections)
         assertEquals("Co robisz? Nudzę się!", book[6].title)
         assertEquals(17, book[6].sections)
-        assertTrue(book.take(7).none { it.coming })
-        assertTrue(book.drop(7).all { it.coming })
+        assertEquals("Małe zakupy", book[7].title)
+        assertEquals(15, book[7].sections)
+        assertTrue(book.take(8).none { it.coming })
+        assertTrue(book.drop(8).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -550,6 +553,8 @@ class AuthoredContentTest {
      */
     private val spokenSentences: List<List<String>> =
         allExercises.flatMap { spoken(it) + (it as? ListenType)?.readingAnswers.orEmpty() }
+            // One sentence at a time, so that "Nie, nie ma. Jest kanapka." ends its nie ma.
+            .flatMap { text -> text.split(Regex("(?<=[.!?])\\s+")) }
             .distinct().map { text -> words(text).map { it.lowercase(Locale.ROOT) } }
 
     private val numbers = listOf(
@@ -560,8 +565,10 @@ class AuthoredContentTest {
     private val tens = listOf(
         "dwadzieścia", "trzydzieści", "czterdzieści", "pięćdziesiąt", "sześćdziesiąt", "siedemdziesiąt", "osiemdziesiąt", "dziewięćdziesiąt", "sto",
     )
-    private val allNumbers = numbers + tens
+    private val hundreds = listOf("dwieście", "trzysta", "czterysta", "pięćset", "sześćset", "siedemset", "osiemset", "dziewięćset", "tysiąc")
+    private val allNumbers = numbers + tens + hundreds
     private val yearWords = setOf("rok", "lata", "lat")
+    private val moneyWords = mapOf("złoty" to listOf("złoty", "złote", "złotych"), "grosz" to listOf("grosz", "grosze", "groszy"))
     private val formsOfMiec = setOf("mam", "masz", "ma", "mamy", "macie", "mają")
 
     private fun dailySetIntroducing(text: String): DailySet {
@@ -579,6 +586,25 @@ class AuthoredContentTest {
             assertTrue(practice.any { it is ListenChoose || it is ListenType }, "$number is never heard")
             assertTrue(practice.any { it is TypeAnswer || it is ListenType }, "$number is never typed")
         }
+    }
+
+    @Test
+    fun `a number before złoty or grosz takes the form that goes with it`() {
+        moneyWords.forEach { (word, forms) -> assertTrue(course.items.any { it.text == word && it.forms == forms.drop(1) }, "$word is not an Item with $forms") }
+        val counted = spokenSentences.flatMap { sentence ->
+            sentence.indices.drop(1).filter { index -> sentence[index - 1] in allNumbers && moneyWords.values.any { sentence[index] in it } }.map { index ->
+                val forms = moneyWords.values.single { sentence[index] in it }
+                val one = sentence[index - 1] == "jeden" && sentence.getOrNull(index - 2) !in allNumbers
+                val right = when {
+                    one -> forms[0]
+                    sentence[index - 1] in setOf("dwa", "trzy", "cztery") -> forms[1]
+                    else -> forms[2]
+                }
+                assertEquals(right, sentence[index], "\"${sentence.joinToString(" ")}\"")
+                sentence[index]
+            }
+        }
+        assertTrue(counted.containsAll(setOf("złote", "złotych", "groszy")))
     }
 
     @Test
@@ -608,9 +634,9 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `a number is never used to count anything but years`() {
+    fun `a number is never used to count anything but years, money and lottery tickets`() {
         // A house number is joined to its flat's with przez: dziesięć przez trzy is 10/3.
-        val allowed = allNumbers + yearWords + listOf("plus", "minus", "razy", "równa", "to", "jest", "przez")
+        val allowed = allNumbers + yearWords + moneyWords.values.flatten() + listOf("plus", "minus", "razy", "równa", "to", "jest", "przez", "kupon")
         spokenSentences.forEach { sentence ->
             sentence.zipWithNext().filter { (number, _) -> number in allNumbers }.forEach { (number, next) ->
                 assertTrue(next in allowed, "\"${sentence.joinToString(" ")}\" has $next after $number")
@@ -620,7 +646,7 @@ class AuthoredContentTest {
 
     @Test
     fun `mój, moja, moje, twój, twoja and twoje agree with the gender of the noun after them`() {
-        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres", "plecak", "słownik", "kolega", "gospodarz")
+        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres", "plecak", "słownik", "kolega", "gospodarz", "kot")
         val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna", "torba", "koleżanka", "dentystka", "gospodyni")
         val neuter = setOf("dziecko", "pytanie", "rodzeństwo", "hobby")
         val possessives = mapOf(
@@ -645,22 +671,26 @@ class AuthoredContentTest {
     }
 
     @Test
-    fun `brata, siostrę, syna and córkę are only what someone has, and mieć is never negated with an object`() {
+    fun `brata, siostrę, syna and córkę are only what someone has or knows, and a negated mieć takes the genitive`() {
         val had = setOf("brata", "siostrę", "syna", "córkę")
         had.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
         val fixedPhrases = listOf(listOf("nie", "ma", "za", "co"), listOf("nie", "ma", "sprawy"))
+        val negatedObjects = setOf("aparatu", "brata", "drobnych", "kantoru", "kwiaciarni", "pieniędzy", "problemu")
 
         spokenSentences.forEach { sentence ->
             val text = sentence.joinToString(" ")
             sentence.forEachIndexed { index, word ->
                 if (word in had && sentence.size > 1) {
                     val before = sentence.getOrNull(index - 1)
-                    assertTrue(before in formsOfMiec + listOf("i", "rodzeństwo"), "\"$text\" has $word after $before")
+                    // Since chapter 7 an adjective in the accusative can come between: mam inteligentnego brata, znam twojego brata.
+                    val agrees = before != null && (before.endsWith("ego") || before.endsWith("ą"))
+                    assertTrue(agrees || before in formsOfMiec + listOf("i", "rodzeństwo"), "\"$text\" has $word after $before")
                 }
                 // "nie ma za co" and "nie ma sprawy" are fixed phrases of Unit 1, not someone who has nothing.
                 val fixedPhrase = fixedPhrases.any { phrase -> sentence.drop(index).take(phrase.size) == phrase }
                 if (word == "nie" && sentence.getOrNull(index + 1) in formsOfMiec && !fixedPhrase) {
-                    assertTrue(index + 2 >= sentence.size, "\"$text\" negates mieć with an object")
+                    // Chapter 7 brings nie ma with the genitive: each one is checked by hand and listed here.
+                    assertTrue(index + 2 >= sentence.size || sentence[index + 2] in negatedObjects, "\"$text\" negates mieć with an object not known to be genitive")
                 }
             }
         }

@@ -1,0 +1,883 @@
+{
+  "items": [
+    {
+      "id": "wolny",
+      "text": "wolny",
+      "meaning": {
+        "en": "free (wolny, wolna, wolne)"
+      },
+      "forms": [
+        "wolna",
+        "wolne"
+      ]
+    },
+    {
+      "id": "zajety",
+      "text": "zajęty",
+      "meaning": {
+        "en": "busy (zajęty, zajęta, zajęte)"
+      },
+      "forms": [
+        "zajęta",
+        "zajęte"
+      ]
+    },
+    {
+      "id": "galeria-handlowa",
+      "text": "galeria handlowa",
+      "meaning": {
+        "en": "a shopping centre, a mall"
+      }
+    },
+    {
+      "id": "lista",
+      "text": "lista",
+      "meaning": {
+        "en": "a list"
+      }
+    },
+    {
+      "id": "lista-zakupow",
+      "text": "lista zakupów",
+      "meaning": {
+        "en": "a shopping list"
+      }
+    },
+    {
+      "id": "krotki",
+      "text": "krótki",
+      "meaning": {
+        "en": "short (krótki, krótka, krótkie)"
+      },
+      "forms": [
+        "krótka",
+        "krótkie"
+      ]
+    },
+    {
+      "id": "dlugi",
+      "text": "długi",
+      "meaning": {
+        "en": "long (długi, długa, długie)"
+      },
+      "forms": [
+        "długa",
+        "długie"
+      ]
+    },
+    {
+      "id": "jutro",
+      "text": "jutro",
+      "meaning": {
+        "en": "tomorrow"
+      }
+    },
+    {
+      "id": "lista-acc",
+      "text": "listę",
+      "meaning": {
+        "en": "a list (after mam, piszę…: mam listę)"
+      }
+    },
+    {
+      "id": "dlugiego",
+      "text": "długiego",
+      "meaning": {
+        "en": "long (długiego for a man or an animal, długą for a feminine noun: after mam, piszę…)"
+      },
+      "forms": [
+        "długą"
+      ]
+    },
+    {
+      "id": "sportowy",
+      "text": "sportowy",
+      "meaning": {
+        "en": "sports, sporty (sportowy, sportowa, sportowe)"
+      },
+      "forms": [
+        "sportowa",
+        "sportowe"
+      ]
+    },
+    {
+      "id": "herbata",
+      "text": "herbata",
+      "meaning": {
+        "en": "tea"
+      }
+    },
+    {
+      "id": "herbata-acc",
+      "text": "herbatę",
+      "meaning": {
+        "en": "tea (after lubię, mam…: lubię herbatę)"
+      }
+    },
+    {
+      "id": "zielonego",
+      "text": "zielonego",
+      "meaning": {
+        "en": "green (zielonego for a man or an animal, zieloną for a feminine noun: after lubię, mam…)"
+      },
+      "forms": [
+        "zieloną"
+      ]
+    },
+    {
+      "id": "zupa-acc",
+      "text": "zupę",
+      "meaning": {
+        "en": "soup (after gotuję, lubię…: gotuję zupę)"
+      }
+    },
+    {
+      "id": "polskiego",
+      "text": "polskiego",
+      "meaning": {
+        "en": "Polish (polskiego for a man or an animal, polską for a feminine noun: after lubię, oglądam…)"
+      },
+      "forms": [
+        "polską"
+      ]
+    },
+    {
+      "id": "inteligentnego",
+      "text": "inteligentnego",
+      "meaning": {
+        "en": "intelligent (inteligentnego for a man or an animal, inteligentną for a feminine noun: after mam, znam…)"
+      },
+      "forms": [
+        "inteligentną"
+      ]
+    },
+    {
+      "id": "dobrego",
+      "text": "dobrego",
+      "meaning": {
+        "en": "good (dobrego for a man or an animal, dobrą for a feminine noun: after mam, znam…)"
+      },
+      "forms": [
+        "dobrą"
+      ]
+    },
+    {
+      "id": "mojego",
+      "text": "mojego",
+      "meaning": {
+        "en": "my (mojego for a man or an animal, moją for a feminine noun: after mam, znam…)"
+      },
+      "forms": [
+        "moją"
+      ]
+    },
+    {
+      "id": "twojego",
+      "text": "twojego",
+      "meaning": {
+        "en": "your, to one friend (twojego for a man or an animal, twoją for a feminine noun: after mam, znam…)"
+      },
+      "forms": [
+        "twoją"
+      ]
+    },
+    {
+      "id": "kogo",
+      "text": "kogo",
+      "meaning": {
+        "en": "whom, who (after znam, mam…: kogo znasz?)"
+      }
+    },
+    {
+      "id": "tata-acc",
+      "text": "tatę",
+      "meaning": {
+        "en": "dad (after mam, znam…: mam tatę)"
+      }
+    },
+    {
+      "id": "kot",
+      "text": "kot",
+      "meaning": {
+        "en": "a cat"
+      }
+    },
+    {
+      "id": "kot-acc",
+      "text": "kota",
+      "meaning": {
+        "en": "a cat (after mam, lubię…: mam kota)"
+      }
+    },
+    {
+      "id": "gazeta",
+      "text": "gazeta",
+      "meaning": {
+        "en": "a newspaper"
+      }
+    },
+    {
+      "id": "gazeta-acc",
+      "text": "gazetę",
+      "meaning": {
+        "en": "a newspaper (after czytam, kupuję…: czytam gazetę)"
+      }
+    },
+    {
+      "id": "list",
+      "text": "list",
+      "meaning": {
+        "en": "a letter"
+      }
+    },
+    {
+      "id": "kupowac",
+      "text": "kupować",
+      "meaning": {
+        "en": "buy (to buy, often)"
+      }
+    },
+    {
+      "id": "kupowac-kupuje",
+      "text": "kupuję",
+      "meaning": {
+        "en": "I buy, I am buying"
+      }
+    },
+    {
+      "id": "kawa-acc",
+      "text": "kawę",
+      "meaning": {
+        "en": "coffee (after lubię, kupuję…: lubię kawę)"
+      }
+    },
+    {
+      "id": "pizza-acc",
+      "text": "pizzę",
+      "meaning": {
+        "en": "a pizza (after robię, lubię…: robię pizzę)"
+      }
+    },
+    {
+      "id": "jakiego",
+      "text": "jakiego",
+      "meaning": {
+        "en": "what kind of, what (jakiego for a man or an animal, jaką for a feminine noun: after masz, lubisz…)"
+      },
+      "forms": [
+        "jaką"
+      ]
+    },
+    {
+      "id": "kiosk",
+      "text": "kiosk",
+      "meaning": {
+        "en": "a kiosk, a newsagent"
+      }
+    },
+    {
+      "id": "kanapka",
+      "text": "kanapka",
+      "meaning": {
+        "en": "a sandwich"
+      }
+    },
+    {
+      "id": "kanapka-acc",
+      "text": "kanapkę",
+      "meaning": {
+        "en": "a sandwich (after proszę, kupuję…: proszę kanapkę)"
+      }
+    },
+    {
+      "id": "chipsy",
+      "text": "chipsy",
+      "meaning": {
+        "en": "crisps, chips"
+      }
+    },
+    {
+      "id": "sok",
+      "text": "sok",
+      "meaning": {
+        "en": "juice"
+      }
+    },
+    {
+      "id": "woda-acc",
+      "text": "wodę",
+      "meaning": {
+        "en": "water (after proszę, mam…: proszę wodę)"
+      }
+    },
+    {
+      "id": "woda-mineralna",
+      "text": "woda mineralna",
+      "meaning": {
+        "en": "mineral water"
+      }
+    },
+    {
+      "id": "nie-ma",
+      "text": "nie ma",
+      "meaning": {
+        "en": "there isn't, there aren't (czy jest sok? nie, nie ma)"
+      }
+    },
+    {
+      "id": "kosztowac",
+      "text": "kosztować",
+      "meaning": {
+        "en": "cost (to cost)"
+      }
+    },
+    {
+      "id": "kosztowac-kosztuje",
+      "text": "kosztuje",
+      "meaning": {
+        "en": "it costs (ile kosztuje?: how much is it?)"
+      }
+    },
+    {
+      "id": "kosztowac-kosztuja",
+      "text": "kosztują",
+      "meaning": {
+        "en": "they cost (ile kosztują?: how much are they?)"
+      }
+    },
+    {
+      "id": "zloty",
+      "text": "złoty",
+      "meaning": {
+        "en": "a złoty, the Polish currency (dwa złote, pięć złotych)"
+      },
+      "forms": [
+        "złote",
+        "złotych"
+      ]
+    },
+    {
+      "id": "grosz",
+      "text": "grosz",
+      "meaning": {
+        "en": "a grosz, a hundredth of a złoty (dwa grosze, pięć groszy)"
+      },
+      "forms": [
+        "grosze",
+        "groszy"
+      ]
+    },
+    {
+      "id": "z-serem",
+      "text": "z serem",
+      "meaning": {
+        "en": "with cheese"
+      }
+    },
+    {
+      "id": "duzego",
+      "text": "dużego",
+      "meaning": {
+        "en": "big (dużego for a man or an animal, dużą for a feminine noun: after proszę, mam…)"
+      },
+      "forms": [
+        "dużą"
+      ]
+    },
+    {
+      "id": "malego",
+      "text": "małego",
+      "meaning": {
+        "en": "small (małego for a man or an animal, małą for a feminine noun: after proszę, mam…)"
+      },
+      "forms": [
+        "małą"
+      ]
+    },
+    {
+      "id": "placic",
+      "text": "płacić",
+      "meaning": {
+        "en": "pay (to pay)"
+      }
+    },
+    {
+      "id": "placic-place",
+      "text": "płacę",
+      "meaning": {
+        "en": "I pay, I am paying"
+      }
+    },
+    {
+      "id": "karta-instr",
+      "text": "kartą",
+      "meaning": {
+        "en": "by card (płacę kartą)"
+      }
+    },
+    {
+      "id": "gotowka-instr",
+      "text": "gotówką",
+      "meaning": {
+        "en": "in cash (płacę gotówką)"
+      }
+    },
+    {
+      "id": "cos-jeszcze",
+      "text": "coś jeszcze?",
+      "meaning": {
+        "en": "anything else?"
+      }
+    },
+    {
+      "id": "to-wszystko",
+      "text": "to wszystko",
+      "meaning": {
+        "en": "that's all"
+      }
+    },
+    {
+      "id": "placic-placi",
+      "text": "płaci",
+      "meaning": {
+        "en": "he pays, she pays (płaci pan…?: are you paying…? to a man)"
+      }
+    },
+    {
+      "id": "ciastko",
+      "text": "ciastko",
+      "meaning": {
+        "en": "a biscuit, a small cake (ciastka: biscuits)"
+      },
+      "forms": [
+        "ciastka"
+      ]
+    },
+    {
+      "id": "magazyn",
+      "text": "magazyn",
+      "meaning": {
+        "en": "a magazine"
+      }
+    },
+    {
+      "id": "normalny",
+      "text": "normalny",
+      "meaning": {
+        "en": "normal; full-price (bilet normalny: a full-price ticket) (normalny, normalna, normalne)"
+      },
+      "forms": [
+        "normalna",
+        "normalne"
+      ]
+    },
+    {
+      "id": "ulgowy",
+      "text": "ulgowy",
+      "meaning": {
+        "en": "reduced, concession (bilet ulgowy: a reduced ticket) (ulgowy, ulgowa, ulgowe)"
+      },
+      "forms": [
+        "ulgowa",
+        "ulgowe"
+      ]
+    },
+    {
+      "id": "na-autobus",
+      "text": "na autobus",
+      "meaning": {
+        "en": "for the bus (bilet na autobus: a bus ticket)"
+      }
+    },
+    {
+      "id": "drobne",
+      "text": "drobne",
+      "meaning": {
+        "en": "small change"
+      }
+    },
+    {
+      "id": "moneta",
+      "text": "moneta",
+      "meaning": {
+        "en": "a coin (monety: coins)"
+      },
+      "forms": [
+        "monety"
+      ]
+    },
+    {
+      "id": "banknot",
+      "text": "banknot",
+      "meaning": {
+        "en": "a banknote (banknoty: banknotes)"
+      },
+      "forms": [
+        "banknoty"
+      ]
+    },
+    {
+      "id": "kupic",
+      "text": "kupić",
+      "meaning": {
+        "en": "buy (to buy, once)"
+      }
+    },
+    {
+      "id": "dwiescie",
+      "text": "dwieście",
+      "meaning": {
+        "en": "two hundred"
+      }
+    },
+    {
+      "id": "trzysta",
+      "text": "trzysta",
+      "meaning": {
+        "en": "three hundred"
+      }
+    },
+    {
+      "id": "czterysta",
+      "text": "czterysta",
+      "meaning": {
+        "en": "four hundred"
+      }
+    },
+    {
+      "id": "piecset",
+      "text": "pięćset",
+      "meaning": {
+        "en": "five hundred"
+      }
+    },
+    {
+      "id": "szescset",
+      "text": "sześćset",
+      "meaning": {
+        "en": "six hundred"
+      }
+    },
+    {
+      "id": "siedemset",
+      "text": "siedemset",
+      "meaning": {
+        "en": "seven hundred"
+      }
+    },
+    {
+      "id": "osiemset",
+      "text": "osiemset",
+      "meaning": {
+        "en": "eight hundred"
+      }
+    },
+    {
+      "id": "dziewiecset",
+      "text": "dziewięćset",
+      "meaning": {
+        "en": "nine hundred"
+      }
+    },
+    {
+      "id": "tysiac",
+      "text": "tysiąc",
+      "meaning": {
+        "en": "a thousand"
+      }
+    },
+    {
+      "id": "loteria",
+      "text": "loteria",
+      "meaning": {
+        "en": "a lottery"
+      }
+    },
+    {
+      "id": "kupon",
+      "text": "kupon",
+      "meaning": {
+        "en": "a coupon, a lottery ticket"
+      }
+    },
+    {
+      "id": "wygrac",
+      "text": "wygrać",
+      "meaning": {
+        "en": "win (to win)"
+      }
+    },
+    {
+      "id": "kiedy",
+      "text": "kiedy",
+      "meaning": {
+        "en": "when"
+      }
+    },
+    {
+      "id": "promocja",
+      "text": "promocja",
+      "meaning": {
+        "en": "a special offer, a sale"
+      }
+    },
+    {
+      "id": "albo",
+      "text": "albo",
+      "meaning": {
+        "en": "or"
+      }
+    },
+    {
+      "id": "sklep",
+      "text": "sklep",
+      "meaning": {
+        "en": "a shop"
+      }
+    },
+    {
+      "id": "apteka",
+      "text": "apteka",
+      "meaning": {
+        "en": "a chemist, a pharmacy"
+      }
+    },
+    {
+      "id": "piekarnia",
+      "text": "piekarnia",
+      "meaning": {
+        "en": "a bakery"
+      }
+    },
+    {
+      "id": "drogeria",
+      "text": "drogeria",
+      "meaning": {
+        "en": "a drugstore (cosmetics, shampoo…)"
+      }
+    },
+    {
+      "id": "kwiaciarnia",
+      "text": "kwiaciarnia",
+      "meaning": {
+        "en": "a florist's"
+      }
+    },
+    {
+      "id": "cukiernia",
+      "text": "cukiernia",
+      "meaning": {
+        "en": "a cake shop"
+      }
+    },
+    {
+      "id": "optyk",
+      "text": "optyk",
+      "meaning": {
+        "en": "an optician's"
+      }
+    },
+    {
+      "id": "fryzjer",
+      "text": "fryzjer",
+      "meaning": {
+        "en": "a hairdresser's; a hairdresser"
+      }
+    },
+    {
+      "id": "supermarket",
+      "text": "supermarket",
+      "meaning": {
+        "en": "a supermarket"
+      }
+    },
+    {
+      "id": "kawiarnia",
+      "text": "kawiarnia",
+      "meaning": {
+        "en": "a café"
+      }
+    },
+    {
+      "id": "bank",
+      "text": "bank",
+      "meaning": {
+        "en": "a bank"
+      }
+    },
+    {
+      "id": "kosmetyki",
+      "text": "kosmetyki",
+      "meaning": {
+        "en": "cosmetics"
+      }
+    },
+    {
+      "id": "szampon",
+      "text": "szampon",
+      "meaning": {
+        "en": "shampoo"
+      }
+    },
+    {
+      "id": "dezodorant",
+      "text": "dezodorant",
+      "meaning": {
+        "en": "a deodorant"
+      }
+    },
+    {
+      "id": "w-drogerii",
+      "text": "w drogerii",
+      "meaning": {
+        "en": "at a drugstore"
+      }
+    },
+    {
+      "id": "w-supermarkecie",
+      "text": "w supermarkecie",
+      "meaning": {
+        "en": "at a supermarket"
+      }
+    },
+    {
+      "id": "aparat",
+      "text": "aparat",
+      "meaning": {
+        "en": "a camera"
+      }
+    },
+    {
+      "id": "karta-pamieci",
+      "text": "karta pamięci",
+      "meaning": {
+        "en": "a memory card"
+      }
+    },
+    {
+      "id": "album",
+      "text": "album",
+      "meaning": {
+        "en": "an album (album na zdjęcia: a photo album)"
+      }
+    },
+    {
+      "id": "tani",
+      "text": "tani",
+      "meaning": {
+        "en": "cheap (tani, tania, tanie)"
+      },
+      "forms": [
+        "tania",
+        "tanie"
+      ]
+    },
+    {
+      "id": "drogi",
+      "text": "drogi",
+      "meaning": {
+        "en": "expensive (drogi, droga, drogie)"
+      },
+      "forms": [
+        "droga",
+        "drogie"
+      ]
+    },
+    {
+      "id": "kolorowy",
+      "text": "kolorowy",
+      "meaning": {
+        "en": "colourful (kolorowy, kolorowa, kolorowe)"
+      },
+      "forms": [
+        "kolorowa",
+        "kolorowe"
+      ]
+    },
+    {
+      "id": "bogaty",
+      "text": "bogaty",
+      "meaning": {
+        "en": "rich (bogaty, bogata, bogate)"
+      },
+      "forms": [
+        "bogata",
+        "bogate"
+      ]
+    },
+    {
+      "id": "biedny",
+      "text": "biedny",
+      "meaning": {
+        "en": "poor (biedny, biedna, biedne)"
+      },
+      "forms": [
+        "biedna",
+        "biedne"
+      ]
+    },
+    {
+      "id": "samoobslugowy",
+      "text": "samoobsługowy",
+      "meaning": {
+        "en": "self-service (samoobsługowy, samoobsługowa, samoobsługowe)"
+      },
+      "forms": [
+        "samoobsługowa",
+        "samoobsługowe"
+      ]
+    },
+    {
+      "id": "kasa",
+      "text": "kasa",
+      "meaning": {
+        "en": "a till, a checkout"
+      }
+    },
+    {
+      "id": "polecac",
+      "text": "polecać",
+      "meaning": {
+        "en": "recommend (to recommend)"
+      }
+    },
+    {
+      "id": "polecac-poleca",
+      "text": "poleca",
+      "meaning": {
+        "en": "he recommends, she recommends (jaki pan poleca?: which one do you recommend?)"
+      }
+    },
+    {
+      "id": "brac-biore",
+      "text": "biorę",
+      "meaning": {
+        "en": "I take, I'll take (in a shop)"
+      }
+    },
+    {
+      "id": "pieniadze",
+      "text": "pieniądze",
+      "meaning": {
+        "en": "money (nie mam pieniędzy: I have no money)"
+      },
+      "forms": [
+        "pieniędzy"
+      ]
+    },
+    {
+      "id": "bankomat",
+      "text": "bankomat",
+      "meaning": {
+        "en": "a cash machine"
+      }
+    },
+    {
+      "id": "kantor",
+      "text": "kantor",
+      "meaning": {
+        "en": "a bureau de change"
+      }
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "id": "kpk1-l07-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Galeria handlowa",
+    "meaning": {
+      "en": "The shopping centre"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-c3-t01",
+      "before": "kpk1-l07-c3-e01",
+      "title": {
+        "en": "Cheap or expensive?"
+      },
+      "body": {
+        "en": "*Tani* is cheap and *drogi* expensive; *bogaty* is rich and *biedny* poor. As always, the adjective agrees: *tani aparat*, *droga torba*, *kolorowe zdjęcie*, and after *chcę*, *mam*, *kupuję* a feminine one takes *-ą*: *chcę kupić kolorową torbę*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c3-e01",
+      "prompt": "aparat",
+      "options": [
+        {
+          "en": "a phone"
+        },
+        {
+          "en": "a computer"
+        },
+        {
+          "en": "a camera"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "aparat"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-c3-e02",
+      "text": "mam aparat",
+      "meaning": {
+        "en": "I have a camera"
+      },
+      "distractors": [
+        "mam komputer",
+        "masz aparat?"
+      ],
+      "items": [
+        "miec-mam",
+        "aparat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c3-e03",
+      "prompt": "karta pamięci",
+      "options": [
+        {
+          "en": "a memory card"
+        },
+        {
+          "en": "by card (płacę kartą)"
+        },
+        {
+          "en": "a credit card"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "karta-pamieci"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-c3-e04",
+      "prompt": {
+        "en": "this is a memory card"
+      },
+      "acceptedAnswers": [
+        "to jest karta pamięci"
+      ],
+      "distractors": [
+        "kartę",
+        "są"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "karta-pamieci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c3-e05",
+      "prompt": "album",
+      "options": [
+        {
+          "en": "a magazine"
+        },
+        {
+          "en": "an album (album na zdjęcia: a photo album)"
+        },
+        {
+          "en": "a photo (zdjęcia: photos)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "album"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-c3-e06",
+      "acceptedAnswers": [
+        "to jest nowy album"
+      ],
+      "meaning": {
+        "en": "this is a new album"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "nowy",
+        "album"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c3-e07",
+      "prompt": "tani",
+      "options": [
+        {
+          "en": "expensive (drogi, droga, drogie)"
+        },
+        {
+          "en": "small (mały, mała, małe)"
+        },
+        {
+          "en": "cheap (tani, tania, tanie)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tani"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c3-e08",
+      "prompt": "drogi",
+      "options": [
+        {
+          "en": "expensive (drogi, droga, drogie)"
+        },
+        {
+          "en": "cheap (tani, tania, tanie)"
+        },
+        {
+          "en": "good (dobry, dobra, dobre)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "drogi"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-c3-e09",
+      "text": "Ten aparat jest ___, a ten jest drogi.",
+      "meaning": {
+        "en": "This camera is cheap, and this one is expensive."
+      },
+      "gaps": [
+        [
+          "tani"
+        ]
+      ],
+      "distractors": [
+        "tania",
+        "tanie"
+      ],
+      "items": [
+        "ten",
+        "aparat",
+        "byc-jest",
+        "tani",
+        "a",
+        "drogi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c3-e10",
+      "prompt": "kolorowy",
+      "options": [
+        {
+          "en": "red (czerwony, czerwona, czerwone)"
+        },
+        {
+          "en": "colourful (kolorowy, kolorowa, kolorowe)"
+        },
+        {
+          "en": "sports, sporty (sportowy, sportowa, sportowe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kolorowy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-c3-e11",
+      "prompt": {
+        "en": "a colourful magazine"
+      },
+      "acceptedAnswers": [
+        "kolorowy magazyn"
+      ],
+      "items": [
+        "kolorowy",
+        "magazyn"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c3-e12",
+      "prompt": "bogaty",
+      "options": [
+        {
+          "en": "poor (biedny, biedna, biedne)"
+        },
+        {
+          "en": "happy"
+        },
+        {
+          "en": "rich (bogaty, bogata, bogate)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bogaty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c3-e13",
+      "prompt": "biedny",
+      "options": [
+        {
+          "en": "poor (biedny, biedna, biedne)"
+        },
+        {
+          "en": "rich (bogaty, bogata, bogate)"
+        },
+        {
+          "en": "sad (smutny, smutna, smutne)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "biedny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-c3-e14",
+      "text": "jesteś bardzo bogata!",
+      "meaning": {
+        "en": "you're very rich! (to a woman)"
+      },
+      "distractors": [
+        "jesteś bardzo biedna!",
+        "jesteś bardzo bogaty!"
+      ],
+      "items": [
+        "byc-jestes",
+        "bardzo",
+        "bogaty"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-c3-e15",
+      "pairs": [
+        {
+          "polish": "aparat",
+          "meaning": {
+            "en": "a camera"
+          }
+        },
+        {
+          "polish": "karta pamięci",
+          "meaning": {
+            "en": "a memory card"
+          }
+        },
+        {
+          "polish": "album",
+          "meaning": {
+            "en": "an album"
+          }
+        },
+        {
+          "polish": "tani",
+          "meaning": {
+            "en": "cheap"
+          }
+        },
+        {
+          "polish": "drogi",
+          "meaning": {
+            "en": "expensive"
+          }
+        },
+        {
+          "polish": "biedny",
+          "meaning": {
+            "en": "poor"
+          }
+        }
+      ],
+      "items": [
+        "aparat",
+        "karta-pamieci",
+        "album",
+        "tani",
+        "drogi",
+        "biedny"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-c3-e16",
+      "lines": [
+        "Ewa interesuje się fotografią.",
+        "Ma dobry aparat, ale chce kupić też tani aparat.",
+        "Musi też kupić album."
+      ],
+      "meaning": {
+        "en": "Ewa's shopping list."
+      },
+      "statements": [
+        {
+          "text": "Ewa nie ma aparatu.",
+          "meaning": {
+            "en": "Ewa doesn't have a camera."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa chce kupić tani aparat.",
+          "meaning": {
+            "en": "Ewa wants to buy a cheap camera."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa musi kupić album.",
+          "meaning": {
+            "en": "Ewa has to buy an album."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "ewa",
+        "interesowac-sie-interesuje-on",
+        "fotografia-instr",
+        "miec-ma",
+        "dobry",
+        "aparat",
+        "ale",
+        "chciec-chce-on",
+        "kupic",
+        "tani",
+        "musiec-musi",
+        "tez",
+        "album"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-c3-e17",
+      "prompt": {
+        "en": "I like buying cosmetics"
+      },
+      "acceptedAnswers": [
+        "lubię kupować kosmetyki"
+      ],
+      "distractors": [
+        "kupuję",
+        "kosmetyków"
+      ],
+      "items": [
+        "lubic-lubie",
+        "kupowac",
+        "kosmetyki"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-c3-e18",
+      "prompt": {
+        "en": "the camera is expensive"
+      },
+      "acceptedAnswers": [
+        "aparat jest drogi"
+      ],
+      "distractors": [
+        "droga",
+        "tani"
+      ],
+      "items": [
+        "aparat",
+        "byc-jest",
+        "drogi"
+      ]
+    }
+  ]
+}

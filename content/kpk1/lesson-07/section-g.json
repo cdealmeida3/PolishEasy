@@ -1,0 +1,584 @@
+{
+  "id": "kpk1-l07-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-g-t01",
+      "before": "kpk1-l07-g-e01",
+      "title": {
+        "en": "W sklepie"
+      },
+      "body": {
+        "en": "In a shop the seller says *słucham?*, *coś jeszcze?*, *czy to wszystko?* and *płaci pan kartą czy gotówką?*. You say *proszę* with the accusative (*proszę dużą kanapkę i małą wodę*), ask *ile kosztuje…?*, and end with *to wszystko*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-g-e01",
+      "text": "Mam ___ i ___ kota.",
+      "meaning": {
+        "en": "I have a brother and a small cat."
+      },
+      "gaps": [
+        [
+          "brata"
+        ],
+        [
+          "małego"
+        ]
+      ],
+      "distractors": [
+        "brat",
+        "mały"
+      ],
+      "items": [
+        "miec-mam",
+        "brat-acc",
+        "i",
+        "malego",
+        "kot-acc"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-g-e02",
+      "pairs": [
+        {
+          "polish": "optyk",
+          "meaning": {
+            "en": "for glasses"
+          }
+        },
+        {
+          "polish": "kiosk",
+          "meaning": {
+            "en": "for newspapers"
+          }
+        },
+        {
+          "polish": "drogeria",
+          "meaning": {
+            "en": "for shampoo"
+          }
+        },
+        {
+          "polish": "piekarnia",
+          "meaning": {
+            "en": "for bread"
+          }
+        },
+        {
+          "polish": "apteka",
+          "meaning": {
+            "en": "for medicine"
+          }
+        },
+        {
+          "polish": "kwiaciarnia",
+          "meaning": {
+            "en": "for flowers"
+          }
+        }
+      ],
+      "items": [
+        "optyk",
+        "kiosk",
+        "drogeria",
+        "piekarnia",
+        "apteka",
+        "kwiaciarnia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-g-e03",
+      "text": "___ herbatę lubisz? Zieloną.",
+      "meaning": {
+        "en": "What kind of tea do you like? Green."
+      },
+      "gaps": [
+        [
+          "Jaką"
+        ]
+      ],
+      "distractors": [
+        "Jaka",
+        "Jaki"
+      ],
+      "items": [
+        "jakiego",
+        "herbata-acc",
+        "lubic-lubisz",
+        "zielonego"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-g-e04",
+      "text": "___ masz brata? Inteligentnego.",
+      "meaning": {
+        "en": "What kind of brother do you have? An intelligent one."
+      },
+      "gaps": [
+        [
+          "Jakiego"
+        ]
+      ],
+      "distractors": [
+        "Jaki",
+        "Jaką"
+      ],
+      "items": [
+        "jakiego",
+        "miec-masz",
+        "brat-acc",
+        "inteligentnego"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-g-e05",
+      "lines": [
+        "Dzień dobry, słucham?",
+        "Proszę dużą kanapkę i małą wodę.",
+        "Coś jeszcze?",
+        "Nie, to wszystko. Płacę kartą."
+      ],
+      "meaning": {
+        "en": "At a kiosk."
+      },
+      "statements": [
+        {
+          "text": "Klient kupuje małą kanapkę.",
+          "meaning": {
+            "en": "The customer buys a small sandwich."
+          },
+          "true": false
+        },
+        {
+          "text": "Klient kupuje wodę.",
+          "meaning": {
+            "en": "The customer buys water."
+          },
+          "true": true
+        },
+        {
+          "text": "Klient płaci gotówką.",
+          "meaning": {
+            "en": "The customer pays in cash."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "dzien-dobry",
+        "slucham",
+        "prosze",
+        "duzego",
+        "kanapka-acc",
+        "i",
+        "malego",
+        "woda-acc",
+        "cos-jeszcze",
+        "nie",
+        "to-wszystko",
+        "placic-place",
+        "karta-instr"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-g-e06",
+      "pairs": [
+        {
+          "polish": "sto",
+          "meaning": {
+            "en": "100"
+          }
+        },
+        {
+          "polish": "dwieście",
+          "meaning": {
+            "en": "200"
+          }
+        },
+        {
+          "polish": "trzysta",
+          "meaning": {
+            "en": "300"
+          }
+        },
+        {
+          "polish": "pięćset",
+          "meaning": {
+            "en": "500"
+          }
+        },
+        {
+          "polish": "sześćset",
+          "meaning": {
+            "en": "600"
+          }
+        },
+        {
+          "polish": "tysiąc",
+          "meaning": {
+            "en": "1000"
+          }
+        }
+      ],
+      "items": [
+        "sto",
+        "dwiescie",
+        "trzysta",
+        "piecset",
+        "szescset",
+        "tysiac"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l07-g-e07",
+      "lines": [
+        "Dzień dobry. Ile kosztuje sok?",
+        "Cztery złote.",
+        "Proszę sok i gazetę.",
+        "Płaci pan kartą czy gotówką?",
+        "Gotówką."
+      ],
+      "meaning": {
+        "en": "At a kiosk."
+      },
+      "items": [
+        "dzien-dobry",
+        "ile",
+        "kosztowac-kosztuje",
+        "sok",
+        "cztery",
+        "zloty",
+        "prosze",
+        "gazeta-acc",
+        "placic-placi",
+        "pan",
+        "karta-instr",
+        "czy",
+        "gotowka-instr"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-g-e08",
+      "text": "Gotuję ___, a mama robi ___.",
+      "meaning": {
+        "en": "I am cooking soup, and Mum is making a pizza."
+      },
+      "gaps": [
+        [
+          "zupę"
+        ],
+        [
+          "pizzę"
+        ]
+      ],
+      "distractors": [
+        "zupa",
+        "pizza"
+      ],
+      "items": [
+        "gotowac-gotuje",
+        "zupa-acc",
+        "a",
+        "mama",
+        "robic-robi",
+        "pizza-acc"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-g-e09",
+      "lines": [
+        "Ewa nie ma pieniędzy.",
+        "W galerii jest bankomat i kantor.",
+        "Ewa kupuje tani aparat i kolorowy magazyn."
+      ],
+      "meaning": {
+        "en": "Ewa in the shopping centre."
+      },
+      "statements": [
+        {
+          "text": "Ewa ma dużo pieniędzy.",
+          "meaning": {
+            "en": "Ewa has a lot of money."
+          },
+          "true": false
+        },
+        {
+          "text": "W galerii jest bankomat.",
+          "meaning": {
+            "en": "There is a cash machine in the shopping centre."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa kupuje magazyn.",
+          "meaning": {
+            "en": "Ewa buys a magazine."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "ewa",
+        "nie",
+        "miec-ma",
+        "pieniadze",
+        "byc-jest",
+        "bankomat",
+        "i",
+        "kantor",
+        "tani",
+        "aparat",
+        "kolorowy",
+        "magazyn"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-g-e10",
+      "text": "Bilet kosztuje trzy ___ i czterdzieści ___.",
+      "meaning": {
+        "en": "The ticket costs three złoty forty grosz."
+      },
+      "gaps": [
+        [
+          "złote"
+        ],
+        [
+          "groszy"
+        ]
+      ],
+      "distractors": [
+        "złotych",
+        "grosze"
+      ],
+      "items": [
+        "bilet",
+        "kosztowac-kosztuje",
+        "trzy",
+        "zloty",
+        "i",
+        "czterdziesci",
+        "grosz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-g-e11",
+      "pairs": [
+        {
+          "polish": "wolny",
+          "meaning": {
+            "en": "free"
+          }
+        },
+        {
+          "polish": "zajęty",
+          "meaning": {
+            "en": "busy"
+          }
+        },
+        {
+          "polish": "tani",
+          "meaning": {
+            "en": "cheap"
+          }
+        },
+        {
+          "polish": "drogi",
+          "meaning": {
+            "en": "expensive"
+          }
+        },
+        {
+          "polish": "bogaty",
+          "meaning": {
+            "en": "rich"
+          }
+        },
+        {
+          "polish": "biedny",
+          "meaning": {
+            "en": "poor"
+          }
+        }
+      ],
+      "items": [
+        "wolny",
+        "zajety",
+        "tani",
+        "drogi",
+        "bogaty",
+        "biedny"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l07-g-e12",
+      "lines": [
+        "Gdzie mogę kupić gazetę?",
+        "Tam jest kiosk.",
+        "A szampon?",
+        "W drogerii albo w supermarkecie."
+      ],
+      "meaning": {
+        "en": "Two friends in a shopping centre."
+      },
+      "items": [
+        "gdzie",
+        "moc-moge",
+        "kupic",
+        "gazeta-acc",
+        "tam",
+        "byc-jest",
+        "kiosk",
+        "a",
+        "szampon",
+        "w-drogerii",
+        "albo",
+        "w-supermarkecie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-g-e13",
+      "text": "Lubię ___ siostrę i ___ brata.",
+      "meaning": {
+        "en": "I like your sister and your brother. (one friend)"
+      },
+      "gaps": [
+        [
+          "twoją"
+        ],
+        [
+          "twojego"
+        ]
+      ],
+      "distractors": [
+        "twoja",
+        "twój"
+      ],
+      "items": [
+        "lubic-lubie",
+        "twojego",
+        "siostra-acc",
+        "i",
+        "brat-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-g-e14",
+      "text": "to jest mój kot",
+      "meaning": {
+        "en": "this is my cat"
+      },
+      "distractors": [
+        "to jest mój brat",
+        "to jest twój kot"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "moj",
+        "kot"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-g-e15",
+      "text": "Dobry aparat może ___ tysiąc złotych.",
+      "meaning": {
+        "en": "A good camera can cost a thousand złoty."
+      },
+      "gaps": [
+        [
+          "kosztować"
+        ]
+      ],
+      "distractors": [
+        "kosztuje",
+        "kosztują"
+      ],
+      "items": [
+        "dobry",
+        "aparat",
+        "moze",
+        "kosztowac",
+        "tysiac",
+        "zloty"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-g-e16",
+      "text": "mam tylko monety",
+      "meaning": {
+        "en": "I only have coins"
+      },
+      "distractors": [
+        "mam tylko banknoty",
+        "masz monety?"
+      ],
+      "items": [
+        "miec-mam",
+        "tylko",
+        "moneta"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-g-e17",
+      "prompt": {
+        "en": "the supermarket is self-service"
+      },
+      "acceptedAnswers": [
+        "supermarket jest samoobsługowy"
+      ],
+      "distractors": [
+        "samoobsługowa",
+        "sklep"
+      ],
+      "items": [
+        "supermarket",
+        "byc-jest",
+        "samoobslugowy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-g-e18",
+      "prompt": {
+        "en": "to recommend (the dictionary form of poleca)"
+      },
+      "acceptedAnswers": [
+        "polecać"
+      ],
+      "items": [
+        "polecac"
+      ]
+    }
+  ]
+}

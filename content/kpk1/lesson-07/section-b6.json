@@ -1,0 +1,403 @@
+{
+  "id": "kpk1-l07-b6",
+  "section": {
+    "letter": "B",
+    "heading": "Liczebniki 100–1000",
+    "meaning": {
+      "en": "Numbers from 100 to 1000"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-b6-t01",
+      "before": "kpk1-l07-b6-e01",
+      "title": {
+        "en": "Lotto"
+      },
+      "body": {
+        "en": "*Lotto* is Poland's best-known lottery. A *kupon* (a ticket) is cheap, and you pick six numbers out of 49. *Kiedy* is \"when\": *kiedy masz trzy numery, wygrywasz*. *Wygrać* is to win: *chcę wygrać tysiąc złotych!*"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b6-e01",
+      "prompt": "tysiąc",
+      "options": [
+        {
+          "en": "a thousand"
+        },
+        {
+          "en": "a hundred"
+        },
+        {
+          "en": "nine hundred"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tysiac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b6-e02",
+      "text": "tysiąc złotych",
+      "meaning": {
+        "en": "a thousand złoty"
+      },
+      "distractors": [
+        "sto złotych",
+        "tysiąc groszy"
+      ],
+      "items": [
+        "tysiac",
+        "zloty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b6-e03",
+      "prompt": "loteria",
+      "options": [
+        {
+          "en": "a special offer, a sale"
+        },
+        {
+          "en": "a lottery"
+        },
+        {
+          "en": "a game"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "loteria"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-b6-e04",
+      "prompt": {
+        "en": "this is a lottery"
+      },
+      "acceptedAnswers": [
+        "to jest loteria"
+      ],
+      "distractors": [
+        "loterię",
+        "są"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "loteria"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b6-e05",
+      "prompt": "kupon",
+      "options": [
+        {
+          "en": "a ticket (bilety: tickets)"
+        },
+        {
+          "en": "a banknote (banknoty: banknotes)"
+        },
+        {
+          "en": "a coupon, a lottery ticket"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kupon"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-b6-e06",
+      "text": "Jeden ___ kosztuje dwa złote.",
+      "meaning": {
+        "en": "One lottery ticket costs two złoty."
+      },
+      "gaps": [
+        [
+          "kupon"
+        ]
+      ],
+      "distractors": [
+        "kupony",
+        "bilety"
+      ],
+      "items": [
+        "jeden",
+        "kupon",
+        "kosztowac-kosztuje",
+        "dwa",
+        "zloty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b6-e07",
+      "prompt": "wygrać",
+      "options": [
+        {
+          "en": "win (to win)"
+        },
+        {
+          "en": "play (to play)"
+        },
+        {
+          "en": "buy (to buy, once)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wygrac"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-b6-e08",
+      "acceptedAnswers": [
+        "chcę wygrać tysiąc złotych"
+      ],
+      "meaning": {
+        "en": "I want to win a thousand złoty"
+      },
+      "items": [
+        "chciec-chce",
+        "wygrac",
+        "tysiac",
+        "zloty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b6-e09",
+      "prompt": "kiedy",
+      "options": [
+        {
+          "en": "where"
+        },
+        {
+          "en": "when"
+        },
+        {
+          "en": "how many; how much"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kiedy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b6-e10",
+      "text": "kiedy jesteś wolny?",
+      "meaning": {
+        "en": "when are you free? (to a man)"
+      },
+      "distractors": [
+        "gdzie jesteś?",
+        "kiedy jesteś zajęty?"
+      ],
+      "items": [
+        "kiedy",
+        "byc-jestes",
+        "wolny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-b6-e11",
+      "prompt": {
+        "en": "a thousand"
+      },
+      "acceptedAnswers": [
+        "tysiąc"
+      ],
+      "items": [
+        "tysiac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b6-e12",
+      "prompt": "promocja",
+      "options": [
+        {
+          "en": "a price"
+        },
+        {
+          "en": "a problem"
+        },
+        {
+          "en": "a special offer, a sale"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "promocja"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-b6-e13",
+      "acceptedAnswers": [
+        "dzisiaj jest promocja"
+      ],
+      "meaning": {
+        "en": "today there is a special offer"
+      },
+      "items": [
+        "dzisiaj",
+        "byc-jest",
+        "promocja"
+      ],
+      "readingAnswers": [
+        "dziś jest promocja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b6-e14",
+      "prompt": "albo",
+      "options": [
+        {
+          "en": "or"
+        },
+        {
+          "en": "and"
+        },
+        {
+          "en": "but"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "albo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b6-e15",
+      "text": "kupuję kawę albo herbatę",
+      "meaning": {
+        "en": "I buy coffee or tea"
+      },
+      "distractors": [
+        "kupuję kawę i herbatę",
+        "kupuję kawę albo zupę"
+      ],
+      "items": [
+        "kupowac-kupuje",
+        "kawa-acc",
+        "albo",
+        "herbata-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b6-e16",
+      "text": "osiemset czterdzieści siedem",
+      "meaning": {
+        "en": "eight hundred and forty-seven"
+      },
+      "distractors": [
+        "osiemset siedemdziesiąt cztery",
+        "siedemset czterdzieści siedem"
+      ],
+      "items": [
+        "osiemset",
+        "czterdziesci",
+        "siedem"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l07-b6-e17",
+      "lines": [
+        "To jest loteria. Grasz?",
+        "Ile kosztuje kupon?",
+        "Dwa złote.",
+        "Dobrze! Chcę wygrać!"
+      ],
+      "meaning": {
+        "en": "Two friends see a lottery stand."
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "loteria",
+        "grac-grasz",
+        "ile",
+        "kosztowac-kosztuje",
+        "kupon",
+        "dwa",
+        "zloty",
+        "dobrze",
+        "chciec-chce",
+        "wygrac"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-b6-e18",
+      "pairs": [
+        {
+          "polish": "tysiąc",
+          "meaning": {
+            "en": "1000"
+          }
+        },
+        {
+          "polish": "loteria",
+          "meaning": {
+            "en": "a lottery"
+          }
+        },
+        {
+          "polish": "kupon",
+          "meaning": {
+            "en": "a lottery ticket"
+          }
+        },
+        {
+          "polish": "wygrać",
+          "meaning": {
+            "en": "to win"
+          }
+        },
+        {
+          "polish": "kiedy",
+          "meaning": {
+            "en": "when"
+          }
+        },
+        {
+          "polish": "promocja",
+          "meaning": {
+            "en": "a special offer"
+          }
+        }
+      ],
+      "items": [
+        "tysiac",
+        "loteria",
+        "kupon",
+        "wygrac",
+        "kiedy",
+        "promocja"
+      ]
+    }
+  ]
+}

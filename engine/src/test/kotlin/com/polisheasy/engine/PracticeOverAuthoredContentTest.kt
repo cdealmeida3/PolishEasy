@@ -258,7 +258,7 @@ class PracticeOverAuthoredContentTest {
             }
         }
         assertEquals(setOf(Numbers.TO_10, Numbers.TO_20, Numbers.TO_100, Numbers.RUNS, Numbers.SUMS), offered)
-        assertEquals((0..20).toSet() + (30..100 step 10), course.pictures.values.mapNotNull { (it as? Picture.Glyph)?.text?.toIntOrNull() }.toSet())
+        assertEquals((0..20).toSet() + (30..100 step 10) + (200..1000 step 100), course.pictures.values.mapNotNull { (it as? Picture.Glyph)?.text?.toIntOrNull() }.toSet())
     }
 
     @Test

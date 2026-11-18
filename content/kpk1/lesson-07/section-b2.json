@@ -1,0 +1,475 @@
+{
+  "id": "kpk1-l07-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Kiosk",
+    "meaning": {
+      "en": "At the kiosk"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-b2-t01",
+      "before": "kpk1-l07-b2-e01",
+      "title": {
+        "en": "Złoty, złote, złotych"
+      },
+      "body": {
+        "en": "Ask a price with *ile kosztuje?* for one thing and *ile kosztują?* for several. The word after a number changes: *1 złoty*; *2, 3, 4 złote* (and 22, 23, 24…); *5, 6, 7… złotych* (and 12, 13, 14, and 25…). *Grosz* goes the same way: *grosz*, *grosze*, *groszy*."
+      },
+      "table": {
+        "title": {
+          "en": "Złoty, grosz"
+        },
+        "columns": [
+          {
+            "header": "1"
+          },
+          {
+            "header": "2–4"
+          },
+          {
+            "header": "5–21"
+          }
+        ],
+        "rows": [
+          {
+            "header": "zł",
+            "cells": [
+              "złot[y]",
+              "złot[e]",
+              "złot[ych]"
+            ]
+          },
+          {
+            "header": "gr",
+            "cells": [
+              "grosz",
+              "grosz[e]",
+              "grosz[y]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b2-e01",
+      "prompt": "kosztować",
+      "options": [
+        {
+          "en": "pay (to pay)"
+        },
+        {
+          "en": "cost (to cost)"
+        },
+        {
+          "en": "buy (to buy, often)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kosztowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b2-e02",
+      "prompt": "kosztuje",
+      "options": [
+        {
+          "en": "they cost (ile kosztują?: how much are they?)"
+        },
+        {
+          "en": "I pay, I am paying"
+        },
+        {
+          "en": "it costs (ile kosztuje?: how much is it?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kosztowac-kosztuje"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b2-e03",
+      "text": "ile kosztuje kanapka?",
+      "meaning": {
+        "en": "how much is a sandwich?"
+      },
+      "distractors": [
+        "ile kosztuje sok?",
+        "ile kosztują kanapki?"
+      ],
+      "items": [
+        "ile",
+        "kosztowac-kosztuje",
+        "kanapka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b2-e04",
+      "prompt": "kosztują",
+      "options": [
+        {
+          "en": "they cost (ile kosztują?: how much are they?)"
+        },
+        {
+          "en": "it costs (ile kosztuje?: how much is it?)"
+        },
+        {
+          "en": "they have"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kosztowac-kosztuja"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-b2-e05",
+      "prompt": {
+        "en": "how much are the crisps?"
+      },
+      "acceptedAnswers": [
+        "ile kosztują chipsy?"
+      ],
+      "distractors": [
+        "kosztuje",
+        "co"
+      ],
+      "items": [
+        "ile",
+        "kosztowac-kosztuja",
+        "chipsy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b2-e06",
+      "prompt": "złoty",
+      "options": [
+        {
+          "en": "a grosz, a hundredth of a złoty (dwa grosze, pięć groszy)"
+        },
+        {
+          "en": "a złoty, the Polish currency (dwa złote, pięć złotych)"
+        },
+        {
+          "en": "a euro"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zloty"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-b2-e07",
+      "text": "Gazeta kosztuje cztery ___.",
+      "meaning": {
+        "en": "The newspaper costs four złoty."
+      },
+      "gaps": [
+        [
+          "złote"
+        ]
+      ],
+      "distractors": [
+        "złotych",
+        "złoty"
+      ],
+      "items": [
+        "gazeta",
+        "kosztowac-kosztuje",
+        "cztery",
+        "zloty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b2-e08",
+      "prompt": "grosz",
+      "options": [
+        {
+          "en": "a złoty, the Polish currency (dwa złote, pięć złotych)"
+        },
+        {
+          "en": "a cent"
+        },
+        {
+          "en": "a grosz, a hundredth of a złoty (dwa grosze, pięć groszy)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "grosz"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-b2-e09",
+      "text": "Sok kosztuje pięć złotych i pięćdziesiąt ___.",
+      "meaning": {
+        "en": "The juice costs five złoty fifty grosz."
+      },
+      "gaps": [
+        [
+          "groszy"
+        ]
+      ],
+      "distractors": [
+        "grosze",
+        "grosz"
+      ],
+      "items": [
+        "sok",
+        "kosztowac-kosztuje",
+        "piec",
+        "zloty",
+        "i",
+        "piecdziesiat",
+        "grosz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b2-e10",
+      "prompt": "z serem",
+      "options": [
+        {
+          "en": "with cheese"
+        },
+        {
+          "en": "with ham"
+        },
+        {
+          "en": "with butter"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-serem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-b2-e11",
+      "acceptedAnswers": [
+        "kanapka z serem"
+      ],
+      "meaning": {
+        "en": "a cheese sandwich"
+      },
+      "items": [
+        "kanapka",
+        "z-serem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b2-e12",
+      "prompt": "dużego",
+      "options": [
+        {
+          "en": "big (duży, duża, duże)"
+        },
+        {
+          "en": "big (dużego for a man or an animal, dużą for a feminine noun: after proszę, mam…)"
+        },
+        {
+          "en": "good (dobrego for a man or an animal, dobrą for a feminine noun: after mam, znam…)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "duzego"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-b2-e13",
+      "prompt": {
+        "en": "a big sandwich, please"
+      },
+      "acceptedAnswers": [
+        "proszę dużą kanapkę"
+      ],
+      "distractors": [
+        "duża",
+        "kanapka"
+      ],
+      "items": [
+        "prosze",
+        "duzego",
+        "kanapka-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b2-e14",
+      "prompt": "małego",
+      "options": [
+        {
+          "en": "small (mały, mała, małe)"
+        },
+        {
+          "en": "big (dużego for a man or an animal, dużą for a feminine noun: after proszę, mam…)"
+        },
+        {
+          "en": "small (małego for a man or an animal, małą for a feminine noun: after proszę, mam…)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "malego"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-b2-e15",
+      "prompt": {
+        "en": "a small water, please"
+      },
+      "acceptedAnswers": [
+        "proszę małą wodę",
+        "proszę małą wodę mineralną"
+      ],
+      "items": [
+        "prosze",
+        "malego",
+        "woda-acc"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-b2-e16",
+      "lines": [
+        "Ile kosztuje kanapka z serem?",
+        "Mała kosztuje dwadzieścia dwa złote, a duża dwadzieścia pięć złotych.",
+        "Proszę dużą kanapkę."
+      ],
+      "meaning": {
+        "en": "At a kiosk."
+      },
+      "statements": [
+        {
+          "text": "Mała kanapka kosztuje dwadzieścia dwa złote.",
+          "meaning": {
+            "en": "A small sandwich costs 22 złoty."
+          },
+          "true": true
+        },
+        {
+          "text": "Duża kanapka kosztuje dwadzieścia dwa złote.",
+          "meaning": {
+            "en": "A big sandwich costs 22 złoty."
+          },
+          "true": false
+        },
+        {
+          "text": "Klient kupuje dużą kanapkę.",
+          "meaning": {
+            "en": "The customer buys a big sandwich."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ile",
+        "kosztowac-kosztuje",
+        "kanapka",
+        "z-serem",
+        "maly",
+        "dwadziescia",
+        "dwa",
+        "zloty",
+        "a",
+        "duzy",
+        "piec",
+        "prosze",
+        "duzego",
+        "kanapka-acc"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-b2-e17",
+      "pairs": [
+        {
+          "polish": "kosztuje",
+          "meaning": {
+            "en": "it costs"
+          }
+        },
+        {
+          "polish": "kosztują",
+          "meaning": {
+            "en": "they cost"
+          }
+        },
+        {
+          "polish": "złote",
+          "meaning": {
+            "en": "złoty (after 2, 3, 4)"
+          }
+        },
+        {
+          "polish": "złotych",
+          "meaning": {
+            "en": "złoty (after 5, 6, 7…)"
+          }
+        },
+        {
+          "polish": "groszy",
+          "meaning": {
+            "en": "grosz (after 5, 6, 7…)"
+          }
+        },
+        {
+          "polish": "kosztować",
+          "meaning": {
+            "en": "to cost"
+          }
+        }
+      ],
+      "items": [
+        "kosztowac-kosztuje",
+        "kosztowac-kosztuja",
+        "zloty",
+        "grosz",
+        "kosztowac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b2-e18",
+      "text": "to kosztuje dwadzieścia pięć złotych",
+      "meaning": {
+        "en": "it costs twenty-five złoty"
+      },
+      "distractors": [
+        "to kosztuje dwadzieścia dwa złote",
+        "to kosztuje pięć złotych"
+      ],
+      "items": [
+        "to",
+        "kosztowac-kosztuje",
+        "dwadziescia",
+        "piec",
+        "zloty"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "id": "kpk1-l07-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Biernik",
+    "meaning": {
+      "en": "The accusative"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-a3-t01",
+      "before": "kpk1-l07-a3-e01",
+      "title": {
+        "en": "Biernik of people and animals"
+      },
+      "body": {
+        "en": "For a man, a boy or an animal, a masculine noun takes *-a* in the accusative, and its adjective *-ego*: *mam inteligentnego brata*, *mam małego kota*. A man's word in *-a* changes like a feminine one: *mam dobrego tatę*. Ask *kogo?* for a person or an animal and *co?* for a thing."
+      },
+      "table": {
+        "title": {
+          "en": "Biernik: kogo?"
+        },
+        "columns": [
+          {
+            "header": "brat"
+          },
+          {
+            "header": "tata"
+          },
+          {
+            "header": "kot"
+          }
+        ],
+        "rows": [
+          {
+            "case": "M",
+            "cells": [
+              "brat",
+              "tat[a]",
+              "kot"
+            ]
+          },
+          {
+            "case": "B",
+            "cells": [
+              "brat[a]",
+              "tat[ę]",
+              "kot[a]"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "kpk1-l07-a3-t02",
+      "before": "kpk1-l07-a3-e09",
+      "title": {
+        "en": "Mój, twój"
+      },
+      "body": {
+        "en": "*Mój* and *twój* change like adjectives: *mojego*, *twojego* for a man or an animal, *moją*, *twoją* for a woman. *Znam twojego brata*, *lubię twoją siostrę*."
+      },
+      "kind": "uwaga"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a3-e01",
+      "prompt": "inteligentnego",
+      "options": [
+        {
+          "en": "intelligent (inteligentny, inteligentna, inteligentne)"
+        },
+        {
+          "en": "intelligent (inteligentnego for a man or an animal, inteligentną for a feminine noun: after mam, znam…)"
+        },
+        {
+          "en": "good (dobrym, dobrą: after jest, with a noun)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "inteligentnego"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-a3-e02",
+      "text": "mam inteligentnego brata",
+      "meaning": {
+        "en": "I have an intelligent brother"
+      },
+      "distractors": [
+        "masz inteligentnego brata",
+        "mam inteligentną siostrę"
+      ],
+      "items": [
+        "miec-mam",
+        "inteligentnego",
+        "brat-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a3-e03",
+      "prompt": "dobrego",
+      "options": [
+        {
+          "en": "good (dobry, dobra, dobre)"
+        },
+        {
+          "en": "intelligent (inteligentnego for a man or an animal, inteligentną for a feminine noun: after mam, znam…)"
+        },
+        {
+          "en": "good (dobrego for a man or an animal, dobrą for a feminine noun: after mam, znam…)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dobrego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a3-e04",
+      "prompt": "tatę",
+      "options": [
+        {
+          "en": "dad (after mam, znam…: mam tatę)"
+        },
+        {
+          "en": "a brother (after mam, masz, ma…)"
+        },
+        {
+          "en": "dad"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tata-acc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-a3-e05",
+      "prompt": {
+        "en": "I have a good dad"
+      },
+      "acceptedAnswers": [
+        "mam dobrego tatę"
+      ],
+      "distractors": [
+        "dobry",
+        "tata"
+      ],
+      "items": [
+        "miec-mam",
+        "dobrego",
+        "tata-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a3-e06",
+      "prompt": "kot",
+      "options": [
+        {
+          "en": "a dog"
+        },
+        {
+          "en": "a cat"
+        },
+        {
+          "en": "a mug"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kot"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a3-e07",
+      "prompt": "kota",
+      "options": [
+        {
+          "en": "a cat"
+        },
+        {
+          "en": "a brother (after mam, masz, ma…)"
+        },
+        {
+          "en": "a cat (after mam, lubię…: mam kota)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kot-acc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-a3-e08",
+      "acceptedAnswers": [
+        "mam kota"
+      ],
+      "meaning": {
+        "en": "I have a cat"
+      },
+      "items": [
+        "miec-mam",
+        "kot-acc"
+      ],
+      "readingAnswers": [
+        "ja mam kota"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a3-e09",
+      "prompt": "mojego",
+      "options": [
+        {
+          "en": "my (mojego for a man or an animal, moją for a feminine noun: after mam, znam…)"
+        },
+        {
+          "en": "my (with a masculine noun)"
+        },
+        {
+          "en": "your (one friend, with a masculine noun)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mojego"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-a3-e10",
+      "text": "Znasz ___ brata?",
+      "meaning": {
+        "en": "Do you know my brother?"
+      },
+      "gaps": [
+        [
+          "mojego"
+        ]
+      ],
+      "distractors": [
+        "mój",
+        "moja"
+      ],
+      "items": [
+        "znac-znasz",
+        "mojego",
+        "brat-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a3-e11",
+      "prompt": "twojego",
+      "options": [
+        {
+          "en": "my (mojego for a man or an animal, moją for a feminine noun: after mam, znam…)"
+        },
+        {
+          "en": "your, to one friend (twojego for a man or an animal, twoją for a feminine noun: after mam, znam…)"
+        },
+        {
+          "en": "your (one friend, with a masculine noun)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "twojego"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-a3-e12",
+      "prompt": {
+        "en": "I know your brother (one friend)"
+      },
+      "acceptedAnswers": [
+        "znam twojego brata",
+        "ja znam twojego brata"
+      ],
+      "items": [
+        "znac-znam",
+        "twojego",
+        "brat-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a3-e13",
+      "prompt": "kogo",
+      "options": [
+        {
+          "en": "who"
+        },
+        {
+          "en": "what"
+        },
+        {
+          "en": "whom, who (after znam, mam…: kogo znasz?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kogo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-a3-e14",
+      "text": "kogo znasz?",
+      "meaning": {
+        "en": "who do you know?"
+      },
+      "distractors": [
+        "kto to jest?",
+        "co znasz?"
+      ],
+      "items": [
+        "kogo",
+        "znac-znasz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-a3-e15",
+      "pairs": [
+        {
+          "polish": "kogo?",
+          "meaning": {
+            "en": "whom? (after znam, mam)"
+          }
+        },
+        {
+          "polish": "mojego",
+          "meaning": {
+            "en": "my (with brata)"
+          }
+        },
+        {
+          "polish": "twojego",
+          "meaning": {
+            "en": "your (with brata)"
+          }
+        },
+        {
+          "polish": "tatę",
+          "meaning": {
+            "en": "dad (after mam)"
+          }
+        },
+        {
+          "polish": "kota",
+          "meaning": {
+            "en": "a cat (after mam)"
+          }
+        },
+        {
+          "polish": "dobrego",
+          "meaning": {
+            "en": "good (with tatę)"
+          }
+        }
+      ],
+      "items": [
+        "kogo",
+        "mojego",
+        "twojego",
+        "tata-acc",
+        "kot-acc",
+        "dobrego"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l07-a3-e16",
+      "lines": [
+        "Kogo znasz w Krakowie?",
+        "Znam twojego brata.",
+        "Mam inteligentnego brata, tak?",
+        "Tak, bardzo!"
+      ],
+      "meaning": {
+        "en": "Two friends talk about who they know."
+      },
+      "items": [
+        "kogo",
+        "znac-znasz",
+        "w-krakowie",
+        "znac-znam",
+        "twojego",
+        "brat-acc",
+        "miec-mam",
+        "inteligentnego",
+        "tak",
+        "bardzo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-a3-e17",
+      "prompt": {
+        "en": "I like your sister (one friend)"
+      },
+      "acceptedAnswers": [
+        "lubię twoją siostrę"
+      ],
+      "distractors": [
+        "twoja",
+        "siostra"
+      ],
+      "items": [
+        "lubic-lubie",
+        "twojego",
+        "siostra-acc"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-a3-e18",
+      "lines": [
+        "To jest mój kot.",
+        "Mam też dobrego tatę.",
+        "Mój tata ma sportowe auto.",
+        "Znasz mojego brata?"
+      ],
+      "meaning": {
+        "en": "Ewa talks about her family."
+      },
+      "statements": [
+        {
+          "text": "Ewa ma kota.",
+          "meaning": {
+            "en": "Ewa has a cat."
+          },
+          "true": true
+        },
+        {
+          "text": "Tata Ewy ma sportowe auto.",
+          "meaning": {
+            "en": "Ewa's dad has a sports car."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa nie ma brata.",
+          "meaning": {
+            "en": "Ewa doesn't have a brother."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "to",
+        "byc-jest",
+        "moj",
+        "kot",
+        "miec-mam",
+        "tez",
+        "dobrego",
+        "tata-acc",
+        "tata",
+        "miec-ma",
+        "sportowy",
+        "auto",
+        "znac-znasz",
+        "mojego",
+        "brat-acc"
+      ]
+    }
+  ]
+}
