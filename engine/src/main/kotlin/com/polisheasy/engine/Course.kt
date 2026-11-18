@@ -72,6 +72,12 @@ data class Course(
     val stories: List<Story> = emptyList(),
     /** The lines of Who said it?, in the content's order. */
     val speakers: List<SpeakerLine> = emptyList(),
+    /** The routes of Directions, in the content's order. */
+    val routes: List<Route> = emptyList(),
+    /** The Items Directions puts on its map, in the content's order. */
+    val places: List<String> = emptyList(),
+    /** The sentences of Pronoun swap, in the content's order. */
+    val swaps: List<SwapSentence> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

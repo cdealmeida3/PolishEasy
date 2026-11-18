@@ -77,7 +77,21 @@ internal data class PracticeFile(
     val stories: List<StoryFile> = emptyList(),
     /** The lines of Who said it?. */
     val speakers: List<SpeakerFile> = emptyList(),
+    /** The routes of Directions. */
+    val routes: List<RouteFile> = emptyList(),
+    /** The Items Directions puts on its map, each with a Picture. */
+    val places: List<String> = emptyList(),
+    /** The sentences of Pronoun swap. */
+    val swaps: List<SwapFile> = emptyList(),
 )
+
+/** One route of Directions: its [text], *Proszę iść prosto, potem skręcić w lewo.*, what it means, and the Items it uses. */
+@Serializable
+internal data class RouteFile(val text: String, val meaning: Localized, val items: List<String>)
+
+/** One sentence of Pronoun swap: its [text], what it means, the [noun] it names, the [pronoun] said in its place, what the shorter sentence means, and the Items both use. */
+@Serializable
+internal data class SwapFile(val text: String, val meaning: Localized, val noun: String, val pronoun: String, val shortMeaning: Localized, val items: List<String>)
 
 /** One story of Story strip: its [title] and its [panels] in the order they happen. */
 @Serializable
@@ -330,6 +344,10 @@ internal class ReadContent(
             }.filter { it.panels.size >= STORY_PANELS.first }.distinctBy { it.text },
             speakers = practice?.speakers.orEmpty().mapNotNull { line -> Speaker.of(line.who)?.let { SpeakerLine(line.text, line.meaning, it, line.items.distinct()) } }
                 .distinctBy { it.text },
+            routes = practice?.routes.orEmpty().map { Route(it.text, it.meaning, it.items.distinct()) }.filter { it.end != null }.distinctBy { it.text },
+            places = practice?.places.orEmpty().distinct(),
+            swaps = practice?.swaps.orEmpty().map { SwapSentence(it.text, it.meaning, it.noun, it.pronoun, it.shortMeaning, it.items.distinct()) }
+                .filter { it.noun in it.text && it.pronoun in it.offered }.distinctBy { it.text },
         )
     }
 
@@ -536,6 +554,8 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         practice.week?.let { week -> problems += weekProblems(file, week, course, content.itemsComplete) }
         problems += storyProblems(file, practice.stories, course, content.itemsComplete)
         problems += speakerProblems(file, practice.speakers, course, content.itemsComplete)
+        problems += routeProblems(file, practice.routes, practice.places, course, content.itemsComplete)
+        problems += swapProblems(file, practice.swaps, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -784,6 +804,49 @@ internal fun repeatedIds(kind: String, ids: List<Filed<String>>): List<ContentPr
 
 /** How many pictures a story of Story strip has: enough to put in order, and few enough to fit across the screen. */
 internal val STORY_PANELS = 3..5
+
+/** What is wrong with Directions: each route naming steps that stay on the map, with Items; each place a defined Item with a Picture, enough for every block; nothing twice. */
+private fun routeProblems(file: String, routes: List<RouteFile>, places: List<String>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    routes.forEach { route ->
+        val moves = Move.heardIn(route.text)
+        when {
+            moves.isEmpty() -> problems += ContentProblem(file, null, "The route \"${route.text}\" names no step: prosto, w lewo or w prawo")
+            CityMap.walk(moves) == null -> problems += ContentProblem(file, null, "The route \"${route.text}\" leaves the map of ${CityMap.COLUMNS} by ${CityMap.ROWS} blocks")
+        }
+        if (route.items.isEmpty()) problems += ContentProblem(file, null, "The route \"${route.text}\" lists no Items")
+        route.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "The route \"${route.text}\" names Item $id, which is not defined")
+        }
+    }
+    routes.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The route \"$text\" is listed more than once") }
+    places.forEach { id ->
+        if (itemsComplete && id !in course.itemsById) problems += ContentProblem(file, id, "The place $id is not a defined Item")
+        if (itemsComplete && id !in course.pictures) problems += ContentProblem(file, id, "The place $id has no Picture")
+    }
+    places.repeated().forEach { id -> problems += ContentProblem(file, id, "The place $id is listed more than once") }
+    if (routes.isNotEmpty() && places.distinct().size < CityMap.blocks.size) {
+        problems += ContentProblem(file, null, "Directions has ${places.distinct().size} places, fewer than the ${CityMap.blocks.size} blocks of its map")
+    }
+    return problems
+}
+
+/** What is wrong with Pronoun swap: each sentence naming its noun once, a pronoun offered for it, and Items; no sentence twice. */
+private fun swapProblems(file: String, swaps: List<SwapFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    swaps.forEach { swap ->
+        val times = Regex("(?<!\\p{L})" + Regex.escape(swap.noun) + "(?!\\p{L})").findAll(swap.text).count()
+        if (times != 1) problems += ContentProblem(file, null, "The sentence \"${swap.text}\" names \"${swap.noun}\" $times times, not once")
+        val offered = Pronouns.offeredFor(swap.text, swap.noun)
+        if (swap.pronoun !in offered) problems += ContentProblem(file, null, "The sentence \"${swap.text}\" swaps in \"${swap.pronoun}\", which is not one of ${offered.joinToString()}")
+        if (swap.items.isEmpty()) problems += ContentProblem(file, null, "The sentence \"${swap.text}\" lists no Items")
+        swap.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "The sentence \"${swap.text}\" names Item $id, which is not defined")
+        }
+    }
+    swaps.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The sentence \"$text\" is listed more than once") }
+    return problems
+}
 
 /** What is wrong with Story strip: each story of three to five pictures, each a defined Item's Picture once in its story, with a sentence and Items, and no story twice. */
 private fun storyProblems(file: String, stories: List<StoryFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {

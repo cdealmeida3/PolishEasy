@@ -2113,5 +2113,547 @@
         "lody"
       ]
     }
+  ],
+  "routes": [
+    {
+      "text": "Proszę iść prosto.",
+      "meaning": {
+        "en": "Go straight on, please."
+      },
+      "items": [
+        "prosze",
+        "isc",
+        "prosto"
+      ]
+    },
+    {
+      "text": "To blisko. Proszę iść prosto.",
+      "meaning": {
+        "en": "It's near. Go straight on, please."
+      },
+      "items": [
+        "to",
+        "blisko",
+        "prosze",
+        "isc",
+        "prosto"
+      ]
+    },
+    {
+      "text": "Proszę iść prosto, potem skręcić w lewo.",
+      "meaning": {
+        "en": "Go straight on, then turn left, please."
+      },
+      "items": [
+        "prosze",
+        "isc",
+        "prosto",
+        "potem",
+        "skrecic",
+        "w-lewo"
+      ]
+    },
+    {
+      "text": "Proszę iść prosto i skręcić w lewo.",
+      "meaning": {
+        "en": "Go straight on and turn left, please."
+      },
+      "items": [
+        "prosze",
+        "isc",
+        "prosto",
+        "i",
+        "skrecic",
+        "w-lewo"
+      ]
+    },
+    {
+      "text": "Proszę iść prosto, potem skręcić w prawo.",
+      "meaning": {
+        "en": "Go straight on, then turn right, please."
+      },
+      "items": [
+        "prosze",
+        "isc",
+        "prosto",
+        "potem",
+        "skrecic",
+        "w-prawo"
+      ]
+    },
+    {
+      "text": "Proszę iść prosto i skręcić w prawo.",
+      "meaning": {
+        "en": "Go straight on and turn right, please."
+      },
+      "items": [
+        "prosze",
+        "isc",
+        "prosto",
+        "i",
+        "skrecic",
+        "w-prawo"
+      ]
+    },
+    {
+      "text": "Proszę iść prosto, potem skręcić w lewo, a następnie w prawo.",
+      "meaning": {
+        "en": "Go straight on, then turn left, and next right, please."
+      },
+      "items": [
+        "prosze",
+        "isc",
+        "prosto",
+        "potem",
+        "skrecic",
+        "w-lewo",
+        "a",
+        "nastepnie",
+        "w-prawo"
+      ]
+    },
+    {
+      "text": "Proszę iść prosto, w lewo, a potem w prawo.",
+      "meaning": {
+        "en": "Go straight on, left, and then right, please."
+      },
+      "items": [
+        "prosze",
+        "isc",
+        "prosto",
+        "w-lewo",
+        "a",
+        "potem",
+        "w-prawo"
+      ]
+    },
+    {
+      "text": "Proszę iść prosto, potem skręcić w prawo, a następnie w lewo.",
+      "meaning": {
+        "en": "Go straight on, then turn right, and next left, please."
+      },
+      "items": [
+        "prosze",
+        "isc",
+        "prosto",
+        "potem",
+        "skrecic",
+        "w-prawo",
+        "a",
+        "nastepnie",
+        "w-lewo"
+      ]
+    },
+    {
+      "text": "Proszę iść prosto, w prawo, a potem w lewo.",
+      "meaning": {
+        "en": "Go straight on, right, and then left, please."
+      },
+      "items": [
+        "prosze",
+        "isc",
+        "prosto",
+        "w-prawo",
+        "a",
+        "potem",
+        "w-lewo"
+      ]
+    },
+    {
+      "text": "Proszę iść prosto, potem w lewo, w prawo i jeszcze raz w prawo.",
+      "meaning": {
+        "en": "Go straight on, then left, right, and right once more, please."
+      },
+      "items": [
+        "prosze",
+        "isc",
+        "prosto",
+        "potem",
+        "w-lewo",
+        "w-prawo",
+        "i",
+        "jeszcze-raz"
+      ]
+    },
+    {
+      "text": "Proszę jechać prosto, potem skręcić w prawo.",
+      "meaning": {
+        "en": "Drive straight on, then turn right, please."
+      },
+      "items": [
+        "prosze",
+        "jechac",
+        "prosto",
+        "potem",
+        "skrecic",
+        "w-prawo"
+      ]
+    },
+    {
+      "text": "Proszę jechać prosto i skręcić w lewo.",
+      "meaning": {
+        "en": "Drive straight on and turn left, please."
+      },
+      "items": [
+        "prosze",
+        "jechac",
+        "prosto",
+        "i",
+        "skrecic",
+        "w-lewo"
+      ]
+    }
+  ],
+  "places": [
+    "kosciol",
+    "zamek",
+    "przystanek",
+    "most",
+    "sklep",
+    "teatr",
+    "muzeum",
+    "apteka",
+    "szkola",
+    "bank",
+    "restauracja",
+    "kantor"
+  ],
+  "swaps": [
+    {
+      "text": "Kocham tatę.",
+      "meaning": {
+        "en": "I love dad."
+      },
+      "noun": "tatę",
+      "pronoun": "go",
+      "shortMeaning": {
+        "en": "I love him."
+      },
+      "items": [
+        "kochac-kocham",
+        "tata-acc",
+        "go"
+      ]
+    },
+    {
+      "text": "Znam wujka.",
+      "meaning": {
+        "en": "I know my uncle."
+      },
+      "noun": "wujka",
+      "pronoun": "go",
+      "shortMeaning": {
+        "en": "I know him."
+      },
+      "items": [
+        "znac-znam",
+        "wujek-acc",
+        "go"
+      ]
+    },
+    {
+      "text": "Lubię kota.",
+      "meaning": {
+        "en": "I like the cat."
+      },
+      "noun": "kota",
+      "pronoun": "go",
+      "shortMeaning": {
+        "en": "I like it."
+      },
+      "items": [
+        "lubic-lubie",
+        "kot-acc",
+        "go"
+      ]
+    },
+    {
+      "text": "Oglądam film.",
+      "meaning": {
+        "en": "I'm watching a film."
+      },
+      "noun": "film",
+      "pronoun": "go",
+      "shortMeaning": {
+        "en": "I'm watching it."
+      },
+      "items": [
+        "ogladac-ogladam",
+        "film",
+        "go"
+      ]
+    },
+    {
+      "text": "Kocham męża.",
+      "meaning": {
+        "en": "I love my husband."
+      },
+      "noun": "męża",
+      "pronoun": "go",
+      "shortMeaning": {
+        "en": "I love him."
+      },
+      "items": [
+        "kochac-kocham",
+        "maz-acc",
+        "go"
+      ]
+    },
+    {
+      "text": "Lubię kawę.",
+      "meaning": {
+        "en": "I like coffee."
+      },
+      "noun": "kawę",
+      "pronoun": "ją",
+      "shortMeaning": {
+        "en": "I like it."
+      },
+      "items": [
+        "lubic-lubie",
+        "kawa-acc",
+        "ja-acc"
+      ]
+    },
+    {
+      "text": "Czytam książkę.",
+      "meaning": {
+        "en": "I'm reading a book."
+      },
+      "noun": "książkę",
+      "pronoun": "ją",
+      "shortMeaning": {
+        "en": "I'm reading it."
+      },
+      "items": [
+        "czytac-czytam",
+        "ksiazka-acc",
+        "ja-acc"
+      ]
+    },
+    {
+      "text": "Czytam gazetę.",
+      "meaning": {
+        "en": "I'm reading the newspaper."
+      },
+      "noun": "gazetę",
+      "pronoun": "ją",
+      "shortMeaning": {
+        "en": "I'm reading it."
+      },
+      "items": [
+        "czytac-czytam",
+        "gazeta-acc",
+        "ja-acc"
+      ]
+    },
+    {
+      "text": "Kocham żonę.",
+      "meaning": {
+        "en": "I love my wife."
+      },
+      "noun": "żonę",
+      "pronoun": "ją",
+      "shortMeaning": {
+        "en": "I love her."
+      },
+      "items": [
+        "kochac-kocham",
+        "zona-acc",
+        "ja-acc"
+      ]
+    },
+    {
+      "text": "Znam ciocię.",
+      "meaning": {
+        "en": "I know my aunt."
+      },
+      "noun": "ciocię",
+      "pronoun": "ją",
+      "shortMeaning": {
+        "en": "I know her."
+      },
+      "items": [
+        "znac-znam",
+        "ciocia-acc",
+        "ja-acc"
+      ]
+    },
+    {
+      "text": "Jem zupę.",
+      "meaning": {
+        "en": "I'm eating soup."
+      },
+      "noun": "zupę",
+      "pronoun": "ją",
+      "shortMeaning": {
+        "en": "I'm eating it."
+      },
+      "items": [
+        "jesc-jem",
+        "zupa-acc",
+        "ja-acc"
+      ]
+    },
+    {
+      "text": "Lubię zdjęcia.",
+      "meaning": {
+        "en": "I like photos."
+      },
+      "noun": "zdjęcia",
+      "pronoun": "je",
+      "shortMeaning": {
+        "en": "I like them."
+      },
+      "items": [
+        "lubic-lubie",
+        "zdjecie",
+        "je-acc"
+      ]
+    },
+    {
+      "text": "Kupuję bilety.",
+      "meaning": {
+        "en": "I'm buying the tickets."
+      },
+      "noun": "bilety",
+      "pronoun": "je",
+      "shortMeaning": {
+        "en": "I'm buying them."
+      },
+      "items": [
+        "kupowac-kupuje",
+        "bilet",
+        "je-acc"
+      ]
+    },
+    {
+      "text": "Znam rodziców.",
+      "meaning": {
+        "en": "I know the parents."
+      },
+      "noun": "rodziców",
+      "pronoun": "ich",
+      "shortMeaning": {
+        "en": "I know them."
+      },
+      "items": [
+        "znac-znam",
+        "rodzice-acc",
+        "ich-acc"
+      ]
+    },
+    {
+      "text": "Kocham rodziców.",
+      "meaning": {
+        "en": "I love my parents."
+      },
+      "noun": "rodziców",
+      "pronoun": "ich",
+      "shortMeaning": {
+        "en": "I love them."
+      },
+      "items": [
+        "kochac-kocham",
+        "rodzice-acc",
+        "ich-acc"
+      ]
+    },
+    {
+      "text": "Czekam na tatę.",
+      "meaning": {
+        "en": "I'm waiting for dad."
+      },
+      "noun": "tatę",
+      "pronoun": "niego",
+      "shortMeaning": {
+        "en": "I'm waiting for him."
+      },
+      "items": [
+        "czekac-czekam",
+        "tata-acc",
+        "na-niego"
+      ]
+    },
+    {
+      "text": "Czekamy na brata.",
+      "meaning": {
+        "en": "We're waiting for my brother."
+      },
+      "noun": "brata",
+      "pronoun": "niego",
+      "shortMeaning": {
+        "en": "We're waiting for him."
+      },
+      "items": [
+        "czekac-czekamy",
+        "brat-acc",
+        "na-niego"
+      ]
+    },
+    {
+      "text": "Czekam na autobus.",
+      "meaning": {
+        "en": "I'm waiting for the bus."
+      },
+      "noun": "autobus",
+      "pronoun": "niego",
+      "shortMeaning": {
+        "en": "I'm waiting for it."
+      },
+      "items": [
+        "czekac-czekam",
+        "na-autobus",
+        "na-niego"
+      ]
+    },
+    {
+      "text": "Czekam na ciocię.",
+      "meaning": {
+        "en": "I'm waiting for my aunt."
+      },
+      "noun": "ciocię",
+      "pronoun": "nią",
+      "shortMeaning": {
+        "en": "I'm waiting for her."
+      },
+      "items": [
+        "czekac-czekam",
+        "ciocia-acc",
+        "na-nia"
+      ]
+    },
+    {
+      "text": "Czekam na żonę.",
+      "meaning": {
+        "en": "I'm waiting for my wife."
+      },
+      "noun": "żonę",
+      "pronoun": "nią",
+      "shortMeaning": {
+        "en": "I'm waiting for her."
+      },
+      "items": [
+        "czekac-czekam",
+        "zona-acc",
+        "na-nia"
+      ]
+    },
+    {
+      "text": "Czekamy na rodziców.",
+      "meaning": {
+        "en": "We're waiting for the parents."
+      },
+      "noun": "rodziców",
+      "pronoun": "nich",
+      "shortMeaning": {
+        "en": "We're waiting for them."
+      },
+      "items": [
+        "czekac-czekamy",
+        "rodzice-acc",
+        "na-nich"
+      ]
+    }
   ]
 }

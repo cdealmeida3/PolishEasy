@@ -66,7 +66,9 @@ fun Course.spokenTexts(): List<String> =
             clockPhrases() +
             week?.plans.orEmpty().map { it.text } +
             stories.map { it.text } +
-            speakers.map { it.text }
+            speakers.map { it.text } +
+            routes.map { it.text } +
+            swaps.flatMap { listOf(it.text, it.short) }
         )
         .distinctBy(::audioKey)
 

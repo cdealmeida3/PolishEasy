@@ -778,6 +778,39 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Directions opens in chapter 14, every route leads to a block of the map, its words its Items', with a Clip`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.DIRECTIONS }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l14-"), course.path[firstReady - 1].id)
+        assertEquals(CityMap.blocks.toSet(), course.routes.mapNotNull { it.end }.toSet())
+        course.routes.forEach { route ->
+            val words = wordsOfItems(route.items)
+            wordsOf(route.text).forEach { word -> assertTrue(word in words, "${route.text}: $word is not one of its Items") }
+            assertTrue(course.clipFor(route.text) != null, "No Clip for ${route.text}")
+        }
+        course.places.forEach { assertTrue(it in course.pictures, "The place $it has no Picture") }
+        val all = practiceAfter(course.path.size)
+        val round = all.start(all.setup(Game.DIRECTIONS, listOf(Directions.LISTEN))) as DirectionsRound
+        assertEquals(Directions.QUESTIONS, round.total)
+        assertEquals(CityMap.blocks, round.map.map { it.block })
+    }
+
+    @Test
+    fun `Pronoun swap opens in chapter 14, every sentence's words and its shorter one's are its Items', each with a Clip`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.PRONOUN_SWAP }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l14-"), course.path[firstReady - 1].id)
+        assertEquals((Pronouns.ALONE + Pronouns.AFTER_NA).toSet(), course.swaps.map { it.pronoun }.toSet())
+        course.swaps.forEach { swap ->
+            val words = wordsOfItems(swap.items)
+            (wordsOf(swap.text) + wordsOf(swap.short)).forEach { word -> assertTrue(word in words, "${swap.text}: $word is not one of its Items") }
+            assertTrue(course.clipFor(swap.text) != null, "No Clip for ${swap.text}")
+            assertTrue(course.clipFor(swap.short) != null, "No Clip for ${swap.short}")
+        }
+        val all = practiceAfter(course.path.size)
+        val round = all.start(all.setup(Game.PRONOUN_SWAP, listOf(PronounSwap.LISTEN))) as SwapRound
+        assertEquals(PronounSwap.QUESTIONS, round.total)
+    }
+
+    @Test
     fun `Who said it opens in chapter 13, with every speaker, every line's words its Items' and a Clip`() {
         val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.WHO_SAID_IT }.state == GameState.READY }
         assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l13-"), course.path[firstReady - 1].id)

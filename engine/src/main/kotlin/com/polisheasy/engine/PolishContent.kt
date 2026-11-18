@@ -137,6 +137,14 @@ fun polishContent(files: ContentFiles): PolishContent {
         content.practice?.speakers.orEmpty().forEachIndexed { index, line ->
             sentence(line.text, line.meaning, PolishUse(file, "speakers/${index + 1}", PolishRole.PROMPT))
         }
+        // Directions' routes; Pronoun swap's sentences, each also with its noun swapped for the pronoun.
+        content.practice?.routes.orEmpty().forEachIndexed { index, route ->
+            sentence(route.text, route.meaning, PolishUse(file, "routes/${index + 1}", PolishRole.PROMPT))
+        }
+        content.practice?.swaps.orEmpty().forEachIndexed { index, swap ->
+            sentence(swap.text, swap.meaning, PolishUse(file, "swaps/${index + 1}", PolishRole.PROMPT))
+            sentence(swap.text.replaceFirst(swap.noun, swap.pronoun), swap.shortMeaning, PolishUse(file, "swaps/${index + 1}", PolishRole.ANSWER))
+        }
         content.course().allClockTimes().forEach { time ->
             sentence(time.polish, mapOf(language to "${time.hour}:${time.minute.toString().padStart(2, '0')}"), PolishUse(file, "clock", PolishRole.ANSWER))
         }

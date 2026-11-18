@@ -1861,6 +1861,10 @@
       "text": "czekam"
     },
     {
+      "id": "czekam-na-autobus",
+      "text": "Czekam na autobus."
+    },
+    {
       "id": "czekam-na-ciebie",
       "text": "czekam na ciebie"
     },
@@ -1869,16 +1873,36 @@
       "text": "Czekam na ciebie (ty). Lubisz nas (my)? Znam ich (oni)."
     },
     {
+      "id": "czekam-na-ciocie",
+      "text": "Czekam na ciocię."
+    },
+    {
+      "id": "czekam-na-nia",
+      "text": "Czekam na nią."
+    },
+    {
       "id": "czekam-na-niego",
       "text": "czekam na niego"
+    },
+    {
+      "id": "czekam-na-niego-2",
+      "text": "Czekam na niego."
     },
     {
       "id": "czekam-na-sms",
       "text": "Czekam na SMS."
     },
     {
+      "id": "czekam-na-tate",
+      "text": "Czekam na tatę."
+    },
+    {
       "id": "czekam-na-was-w-pubie",
       "text": "czekam na was w pubie"
+    },
+    {
+      "id": "czekam-na-zone",
+      "text": "Czekam na żonę."
     },
     {
       "id": "czekam-tutaj",
@@ -1889,8 +1913,24 @@
       "text": "czekamy"
     },
     {
+      "id": "czekamy-na-brata",
+      "text": "Czekamy na brata."
+    },
+    {
+      "id": "czekamy-na-nich",
+      "text": "Czekamy na nich."
+    },
+    {
       "id": "czekamy-na-nich-piec-minut",
       "text": "czekamy na nich pięć minut"
+    },
+    {
+      "id": "czekamy-na-niego",
+      "text": "Czekamy na niego."
+    },
+    {
+      "id": "czekamy-na-rodzicow",
+      "text": "Czekamy na rodziców."
     },
     {
       "id": "czekamy-w-pubie",
@@ -2625,12 +2665,24 @@
       "text": "czytam gazetę"
     },
     {
+      "id": "czytam-gazete-2",
+      "text": "Czytam gazetę."
+    },
+    {
       "id": "czytam-i-ogladam-serial",
       "text": "czytam i oglądam serial"
     },
     {
+      "id": "czytam-ja",
+      "text": "Czytam ją."
+    },
+    {
       "id": "czytam-ksiazke",
       "text": "czytam książkę"
+    },
+    {
+      "id": "czytam-ksiazke-2",
+      "text": "Czytam książkę."
     },
     {
       "id": "czytam-ksiazke-lubisz-czytac",
@@ -5981,8 +6033,16 @@
       "text": "jem bułkę"
     },
     {
+      "id": "jem-ja",
+      "text": "Jem ją."
+    },
+    {
       "id": "jem-kanapke-z-szynka",
       "text": "Jem kanapkę z szynką."
+    },
+    {
+      "id": "jem-zupe",
+      "text": "Jem zupę."
     },
     {
       "id": "jesc",
@@ -6861,8 +6921,36 @@
       "text": "kocham cię"
     },
     {
+      "id": "kocham-go",
+      "text": "Kocham go."
+    },
+    {
+      "id": "kocham-ich",
+      "text": "Kocham ich."
+    },
+    {
+      "id": "kocham-ja",
+      "text": "Kocham ją."
+    },
+    {
       "id": "kocham-krakow",
       "text": "kocham Kraków"
+    },
+    {
+      "id": "kocham-meza",
+      "text": "Kocham męża."
+    },
+    {
+      "id": "kocham-rodzicow",
+      "text": "Kocham rodziców."
+    },
+    {
+      "id": "kocham-tate",
+      "text": "Kocham tatę."
+    },
+    {
+      "id": "kocham-zone",
+      "text": "Kocham żonę."
     },
     {
       "id": "kogo",
@@ -7191,6 +7279,14 @@
     {
       "id": "kupuje-2",
       "text": "kupuje"
+    },
+    {
+      "id": "kupuje-bilety",
+      "text": "Kupuję bilety."
+    },
+    {
+      "id": "kupuje-je",
+      "text": "Kupuję je."
     },
     {
       "id": "kupuje-kawe-albo-herbate",
@@ -7533,6 +7629,10 @@
       "text": "lubię go"
     },
     {
+      "id": "lubie-go-2",
+      "text": "Lubię go."
+    },
+    {
       "id": "lubie-grac-na-gitarze-i-w-szachy",
       "text": "Lubię grać na gitarze i w szachy."
     },
@@ -7549,8 +7649,16 @@
       "text": "Lubię herbatę, ale nie lubię kawy."
     },
     {
+      "id": "lubie-ja",
+      "text": "Lubię ją."
+    },
+    {
       "id": "lubie-je",
       "text": "lubię je"
+    },
+    {
+      "id": "lubie-je-2",
+      "text": "Lubię je."
     },
     {
       "id": "lubie-jesc",
@@ -7563,6 +7671,14 @@
     {
       "id": "lubie-jezdzic-na-rowerze-i-plywac",
       "text": "Lubię jeździć na rowerze i pływać."
+    },
+    {
+      "id": "lubie-kawe",
+      "text": "Lubię kawę."
+    },
+    {
+      "id": "lubie-kota",
+      "text": "Lubię kota."
     },
     {
       "id": "lubie-krakow-rzeka-most-stare-ulice",
@@ -7663,6 +7779,10 @@
     {
       "id": "lubie-wedzony-ser",
       "text": "Lubię wędzony ser."
+    },
+    {
+      "id": "lubie-zdjecia",
+      "text": "Lubię zdjęcia."
     },
     {
       "id": "lubie-zielona-herbate",
@@ -10841,6 +10961,14 @@
       "text": "oglądam"
     },
     {
+      "id": "ogladam-film",
+      "text": "Oglądam film."
+    },
+    {
+      "id": "ogladam-go",
+      "text": "Oglądam go."
+    },
+    {
       "id": "ogladam-polska-telewizje",
       "text": "oglądam polską telewizję"
     },
@@ -12605,6 +12733,10 @@
       "text": "Proszę. Dziękuję, do widzenia!"
     },
     {
+      "id": "prosze-isc-prosto",
+      "text": "Proszę iść prosto."
+    },
+    {
       "id": "prosze-isc-prosto-a-potem-skrecic-w-lewo",
       "text": "Proszę iść prosto, a potem skręcić w lewo."
     },
@@ -12613,12 +12745,52 @@
       "text": "Proszę iść prosto, a potem skręcić w prawo."
     },
     {
+      "id": "prosze-isc-prosto-i-skrecic-w-lewo",
+      "text": "Proszę iść prosto i skręcić w lewo."
+    },
+    {
+      "id": "prosze-isc-prosto-i-skrecic-w-prawo",
+      "text": "Proszę iść prosto i skręcić w prawo."
+    },
+    {
+      "id": "prosze-isc-prosto-potem-skrecic-w-lewo",
+      "text": "Proszę iść prosto, potem skręcić w lewo."
+    },
+    {
       "id": "prosze-isc-prosto-potem-skrecic-w-lewo-a-nastepn",
       "text": "Proszę iść prosto, potem skręcić w lewo, a następnie w prawo."
     },
     {
       "id": "prosze-isc-prosto-potem-skrecic-w-prawo",
       "text": "proszę iść prosto, potem skręcić w prawo"
+    },
+    {
+      "id": "prosze-isc-prosto-potem-skrecic-w-prawo-2",
+      "text": "Proszę iść prosto, potem skręcić w prawo."
+    },
+    {
+      "id": "prosze-isc-prosto-potem-skrecic-w-prawo-a-nastep",
+      "text": "Proszę iść prosto, potem skręcić w prawo, a następnie w lewo."
+    },
+    {
+      "id": "prosze-isc-prosto-potem-w-lewo-w-prawo-i-jeszcze",
+      "text": "Proszę iść prosto, potem w lewo, w prawo i jeszcze raz w prawo."
+    },
+    {
+      "id": "prosze-isc-prosto-w-lewo-a-potem-w-prawo",
+      "text": "Proszę iść prosto, w lewo, a potem w prawo."
+    },
+    {
+      "id": "prosze-isc-prosto-w-prawo-a-potem-w-lewo",
+      "text": "Proszę iść prosto, w prawo, a potem w lewo."
+    },
+    {
+      "id": "prosze-jechac-prosto-i-skrecic-w-lewo",
+      "text": "Proszę jechać prosto i skręcić w lewo."
+    },
+    {
+      "id": "prosze-jechac-prosto-potem-skrecic-w-prawo",
+      "text": "Proszę jechać prosto, potem skręcić w prawo."
     },
     {
       "id": "prosze-jeszcze-raz",
@@ -14979,6 +15151,10 @@
     {
       "id": "to-bardzo-stary-teatr",
       "text": "to bardzo stary teatr"
+    },
+    {
+      "id": "to-blisko-prosze-isc-prosto",
+      "text": "To blisko. Proszę iść prosto."
     },
     {
       "id": "to-byl-spokojny-weekend",
@@ -18209,8 +18385,20 @@
       "text": "znam"
     },
     {
+      "id": "znam-ciocie",
+      "text": "Znam ciocię."
+    },
+    {
+      "id": "znam-go",
+      "text": "Znam go."
+    },
+    {
       "id": "znam-ich",
       "text": "znam ich"
+    },
+    {
+      "id": "znam-ich-2",
+      "text": "Znam ich."
     },
     {
       "id": "znam-ich-rodzicow",
@@ -18221,12 +18409,20 @@
       "text": "znam ją"
     },
     {
+      "id": "znam-ja-2",
+      "text": "Znam ją."
+    },
+    {
       "id": "znam-jej-rodzicow",
       "text": "znam jej rodziców"
     },
     {
       "id": "znam-krakow",
       "text": "znam Kraków"
+    },
+    {
+      "id": "znam-rodzicow",
+      "text": "Znam rodziców."
     },
     {
       "id": "znam-twojego-brata",
@@ -18239,6 +18435,10 @@
     {
       "id": "znam-was",
       "text": "znam was"
+    },
+    {
+      "id": "znam-wujka",
+      "text": "Znam wujka."
     },
     {
       "id": "znany",

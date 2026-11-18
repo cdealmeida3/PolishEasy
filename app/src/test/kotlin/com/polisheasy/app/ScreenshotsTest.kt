@@ -85,6 +85,8 @@ import com.polisheasy.engine.FlipRound
 import com.polisheasy.engine.TimeRound
 import com.polisheasy.engine.PlannerRound
 import com.polisheasy.engine.SpeakerRound
+import com.polisheasy.engine.DirectionsRound
+import com.polisheasy.engine.SwapRound
 import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.SaidTime
 import com.polisheasy.engine.TreeRound
@@ -2656,6 +2658,75 @@ class ScreenshotsTest {
         tap(R.string.action_continue)
         screen.mainClock.advanceTimeBy(60_000)
         shot("277-times-result")
+    }
+
+    @Test
+    fun `Directions and Pronoun swap over the real course in the light theme`() = chapter14Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Directions and Pronoun swap over the real course in the dark theme`() = chapter14Games("dark")
+
+    @Test
+    fun `Directions and Pronoun swap over the real course at the largest font size`() = atTheLargestFontSize { chapter14Games("large") }
+
+    /**
+     * Chapter 14's Games: Directions' setup, a route heard, a route read, a wrong place, and the
+     * result; then Pronoun swap's setup, a sentence, a wrong pronoun, a right one, and the result.
+     */
+    private fun chapter14Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun directions() = (viewModel?.screen as Screen.Round).round as DirectionsRound
+
+        fun swap() = (viewModel?.screen as Screen.Round).round as SwapRound
+
+        fun tapPlace(index: Int) =
+            screen.onNode(hasContentDescription(directions().map[index].text) and hasClickAction()).performScrollTo().performClick()
+
+        fun tapPronoun(index: Int) = screen.onNode(hasText(checkNotNull(swap().question).offered[index]) and hasClickAction()).performScrollTo().performClick()
+
+        openRealPractice()
+        openGame(R.string.game_directions)
+        shot("312-directions-setup")
+        tap(R.string.setup_play)
+        shot("313-directions-heard")
+        leaveRound()
+
+        openGame(R.string.game_directions)
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        shot("314-directions-read")
+        val route = checkNotNull(directions().question)
+        tapPlace((route.place + 1) % directions().map.size)
+        shot("315-directions-wrong")
+        tap(R.string.action_continue)
+        while (viewModel?.screen is Screen.Round) {
+            tapPlace(checkNotNull(directions().question).place)
+            tap(R.string.action_continue)
+        }
+        shot("316-directions-result")
+        tap(R.string.result_done)
+
+        openGame(R.string.game_pronoun_swap)
+        shot("317-swap-setup")
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        shot("318-swap-sentence")
+        val first = checkNotNull(swap().question)
+        tapPronoun(first.offered.indexOfFirst { it != first.pronoun })
+        shot("319-swap-wrong")
+        tap(R.string.action_continue)
+        val second = checkNotNull(swap().question)
+        tapPronoun(second.offered.indexOf(second.pronoun))
+        shot("320-swap-right")
+        tap(R.string.action_continue)
+        while (viewModel?.screen is Screen.Round) {
+            val question = checkNotNull(swap().question)
+            tapPronoun(question.offered.indexOf(question.pronoun))
+            tap(R.string.action_continue)
+        }
+        shot("321-swap-result")
     }
 
     @Test
