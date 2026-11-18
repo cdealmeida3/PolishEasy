@@ -1,0 +1,774 @@
+{
+  "items": [
+    {
+      "id": "na-quiz",
+      "text": "na quiz",
+      "meaning": {
+        "en": "to a quiz (idziesz na quiz?: are you going to the quiz?)"
+      }
+    },
+    {
+      "id": "na-wyklady",
+      "text": "na wykłady",
+      "meaning": {
+        "en": "to lectures (chodzę na wykłady: I go to lectures)"
+      }
+    },
+    {
+      "id": "warsztaty",
+      "text": "warsztaty",
+      "meaning": {
+        "en": "workshops"
+      }
+    },
+    {
+      "id": "cos-nowego",
+      "text": "coś nowego",
+      "meaning": {
+        "en": "something new"
+      }
+    },
+    {
+      "id": "zobaczymy",
+      "text": "zobaczymy",
+      "meaning": {
+        "en": "we'll see, let's see"
+      }
+    },
+    {
+      "id": "nagroda",
+      "text": "nagroda",
+      "meaning": {
+        "en": "a prize"
+      }
+    },
+    {
+      "id": "przewodnik",
+      "text": "przewodnik",
+      "meaning": {
+        "en": "a guide; a guidebook (przewodnik po Krakowie: a guide to Kraków; jestem przewodnikiem: I am a guide)"
+      },
+      "forms": [
+        "przewodnikiem"
+      ]
+    },
+    {
+      "id": "po-krakowie",
+      "text": "po Krakowie",
+      "meaning": {
+        "en": "around Kraków (chodzić po Krakowie: to walk around Kraków)"
+      }
+    },
+    {
+      "id": "isc-idzie",
+      "text": "idzie",
+      "meaning": {
+        "en": "he is going, she is going (on foot)"
+      }
+    },
+    {
+      "id": "isc-ida",
+      "text": "idą",
+      "meaning": {
+        "en": "they are going (on foot)"
+      }
+    },
+    {
+      "id": "raz",
+      "text": "raz",
+      "meaning": {
+        "en": "once (raz w tygodniu: once a week)"
+      }
+    },
+    {
+      "id": "na-legendy",
+      "text": "na legendy",
+      "meaning": {
+        "en": "to the legends tour (legenda: a legend; idę na legendy)"
+      }
+    },
+    {
+      "id": "hura",
+      "text": "hura!",
+      "meaning": {
+        "en": "hooray!"
+      }
+    },
+    {
+      "id": "serio",
+      "text": "serio?",
+      "meaning": {
+        "en": "really? seriously?"
+      }
+    },
+    {
+      "id": "chodzic-chodzicie",
+      "text": "chodzicie",
+      "meaning": {
+        "en": "you go (on foot, or regularly; several people)"
+      }
+    },
+    {
+      "id": "fotografujemy",
+      "text": "fotografujemy",
+      "meaning": {
+        "en": "we take photos"
+      }
+    },
+    {
+      "id": "w-internecie",
+      "text": "w internecie",
+      "meaning": {
+        "en": "on the internet"
+      }
+    },
+    {
+      "id": "dzielnica",
+      "text": "dzielnica",
+      "meaning": {
+        "en": "a district, a part of a city (Nowa Huta to dzielnica Krakowa)"
+      }
+    },
+    {
+      "id": "pieszo",
+      "text": "pieszo",
+      "meaning": {
+        "en": "on foot (chodzę pieszo do pracy: I walk to work)"
+      }
+    },
+    {
+      "id": "do-pracy",
+      "text": "do pracy",
+      "meaning": {
+        "en": "to work (chodzę do pracy)"
+      }
+    },
+    {
+      "id": "jechac-jade",
+      "text": "jadę",
+      "meaning": {
+        "en": "I am going (by car, bus or train; I'm driving, I'm riding)"
+      }
+    },
+    {
+      "id": "jechac-jedziesz",
+      "text": "jedziesz",
+      "meaning": {
+        "en": "you are going (by car, bus or train; one friend)"
+      }
+    },
+    {
+      "id": "jechac-jedzie",
+      "text": "jedzie",
+      "meaning": {
+        "en": "he is going, she is going (by car, bus or train, by bike)"
+      }
+    },
+    {
+      "id": "jechac-jedziemy",
+      "text": "jedziemy",
+      "meaning": {
+        "en": "we are going (by car, bus or train)"
+      }
+    },
+    {
+      "id": "jechac-jedziecie",
+      "text": "jedziecie",
+      "meaning": {
+        "en": "you are going (by car, bus or train; several people)"
+      }
+    },
+    {
+      "id": "jechac-jada",
+      "text": "jadą",
+      "meaning": {
+        "en": "they are going (by car, bus or train)"
+      }
+    },
+    {
+      "id": "jezdzic-jezdzimy",
+      "text": "jeździmy",
+      "meaning": {
+        "en": "we go, we ride (by car, bus, bike…, regularly)"
+      }
+    },
+    {
+      "id": "jezdzic-jezdzicie",
+      "text": "jeździcie",
+      "meaning": {
+        "en": "you go, you ride (regularly; several people)"
+      }
+    },
+    {
+      "id": "czym-jedziesz",
+      "text": "czym jedziesz?",
+      "meaning": {
+        "en": "how are you going? by what? (czym: by what)"
+      }
+    },
+    {
+      "id": "rowerem",
+      "text": "rowerem",
+      "meaning": {
+        "en": "by bike (rower: a bike)"
+      }
+    },
+    {
+      "id": "autobusem",
+      "text": "autobusem",
+      "meaning": {
+        "en": "by bus (autobus: a bus)"
+      }
+    },
+    {
+      "id": "tramwajem",
+      "text": "tramwajem",
+      "meaning": {
+        "en": "by tram (tramwaj: a tram)"
+      }
+    },
+    {
+      "id": "pociagiem",
+      "text": "pociągiem",
+      "meaning": {
+        "en": "by train (pociąg: a train)"
+      }
+    },
+    {
+      "id": "metrem",
+      "text": "metrem",
+      "meaning": {
+        "en": "by underground, by metro (metro)"
+      }
+    },
+    {
+      "id": "motocyklem",
+      "text": "motocyklem",
+      "meaning": {
+        "en": "by motorbike (motocykl)"
+      }
+    },
+    {
+      "id": "skuterem",
+      "text": "skuterem",
+      "meaning": {
+        "en": "by scooter (skuter: a motor scooter)"
+      }
+    },
+    {
+      "id": "hulajnoga",
+      "text": "hulajnogą",
+      "meaning": {
+        "en": "by kick scooter (hulajnoga)"
+      }
+    },
+    {
+      "id": "winda",
+      "text": "windą",
+      "meaning": {
+        "en": "by lift (winda: a lift)"
+      }
+    },
+    {
+      "id": "dorozka",
+      "text": "dorożką",
+      "meaning": {
+        "en": "by horse-drawn carriage (dorożka)"
+      }
+    },
+    {
+      "id": "do-krakowa",
+      "text": "do Krakowa",
+      "meaning": {
+        "en": "to Kraków (jadę do Krakowa)"
+      }
+    },
+    {
+      "id": "do-warszawy",
+      "text": "do Warszawy",
+      "meaning": {
+        "en": "to Warsaw (jedziemy do Warszawy)"
+      }
+    },
+    {
+      "id": "na-wakacje",
+      "text": "na wakacje",
+      "meaning": {
+        "en": "on holiday (jechać na wakacje: to go on holiday)"
+      }
+    },
+    {
+      "id": "miasto",
+      "text": "miasto",
+      "meaning": {
+        "en": "a town, a city"
+      }
+    },
+    {
+      "id": "stolica",
+      "text": "stolica",
+      "meaning": {
+        "en": "a capital (Warszawa to stolica Polski)"
+      }
+    },
+    {
+      "id": "skrzyzowanie",
+      "text": "skrzyżowanie",
+      "meaning": {
+        "en": "a crossroads, a junction (do skrzyżowania: to the crossroads)"
+      }
+    },
+    {
+      "id": "przystanek",
+      "text": "przystanek",
+      "meaning": {
+        "en": "a stop (for a bus or a tram)"
+      }
+    },
+    {
+      "id": "swiatla",
+      "text": "światła",
+      "meaning": {
+        "en": "traffic lights; lights"
+      }
+    },
+    {
+      "id": "rzeka",
+      "text": "rzeka",
+      "meaning": {
+        "en": "a river"
+      }
+    },
+    {
+      "id": "most",
+      "text": "most",
+      "meaning": {
+        "en": "a bridge"
+      }
+    },
+    {
+      "id": "warszawa",
+      "text": "Warszawa",
+      "meaning": {
+        "en": "Warsaw"
+      }
+    },
+    {
+      "id": "kosciol",
+      "text": "kościół",
+      "meaning": {
+        "en": "a church"
+      }
+    },
+    {
+      "id": "katedra",
+      "text": "katedra",
+      "meaning": {
+        "en": "a cathedral"
+      }
+    },
+    {
+      "id": "ratusz",
+      "text": "ratusz",
+      "meaning": {
+        "en": "a town hall"
+      }
+    },
+    {
+      "id": "zamek",
+      "text": "zamek",
+      "meaning": {
+        "en": "a castle"
+      }
+    },
+    {
+      "id": "pomnik",
+      "text": "pomnik",
+      "meaning": {
+        "en": "a monument, a statue"
+      }
+    },
+    {
+      "id": "wieza",
+      "text": "wieża",
+      "meaning": {
+        "en": "a tower (dwie wieże: two towers)"
+      },
+      "forms": [
+        "wieże"
+      ]
+    },
+    {
+      "id": "na-wawelu",
+      "text": "na Wawelu",
+      "meaning": {
+        "en": "on Wawel (the hill with the castle in Kraków)"
+      }
+    },
+    {
+      "id": "znany",
+      "text": "znany",
+      "meaning": {
+        "en": "famous, well-known (znany, znana, znane)"
+      },
+      "forms": [
+        "znana",
+        "znane"
+      ]
+    },
+    {
+      "id": "na-wprost",
+      "text": "na wprost",
+      "meaning": {
+        "en": "straight ahead, in front of you"
+      }
+    },
+    {
+      "id": "po-prawej-stronie",
+      "text": "po prawej stronie",
+      "meaning": {
+        "en": "on the right"
+      }
+    },
+    {
+      "id": "po-lewej-stronie",
+      "text": "po lewej stronie",
+      "meaning": {
+        "en": "on the left"
+      }
+    },
+    {
+      "id": "za-pomnikiem",
+      "text": "za pomnikiem",
+      "meaning": {
+        "en": "behind the monument"
+      }
+    },
+    {
+      "id": "poeta",
+      "text": "poeta",
+      "meaning": {
+        "en": "a poet"
+      }
+    },
+    {
+      "id": "z-pamiatkami",
+      "text": "z pamiątkami",
+      "meaning": {
+        "en": "with souvenirs (sklepy z pamiątkami: souvenir shops)"
+      }
+    },
+    {
+      "id": "hejnal",
+      "text": "hejnał",
+      "meaning": {
+        "en": "the bugle call (played from the tower of Kościół Mariacki)"
+      }
+    },
+    {
+      "id": "prosto",
+      "text": "prosto",
+      "meaning": {
+        "en": "straight on (proszę iść prosto: go straight on)"
+      }
+    },
+    {
+      "id": "skrecic",
+      "text": "skręcić",
+      "meaning": {
+        "en": "turn (to turn: proszę skręcić w lewo)"
+      }
+    },
+    {
+      "id": "w-lewo",
+      "text": "w lewo",
+      "meaning": {
+        "en": "left (skręcić w lewo: to turn left)"
+      }
+    },
+    {
+      "id": "w-prawo",
+      "text": "w prawo",
+      "meaning": {
+        "en": "right (skręcić w prawo: to turn right)"
+      }
+    },
+    {
+      "id": "na-rogu",
+      "text": "na rogu",
+      "meaning": {
+        "en": "on the corner"
+      }
+    },
+    {
+      "id": "naprzeciwko",
+      "text": "naprzeciwko",
+      "meaning": {
+        "en": "opposite (naprzeciwko jest wieża: opposite is a tower)"
+      }
+    },
+    {
+      "id": "na-gorze",
+      "text": "na górze",
+      "meaning": {
+        "en": "at the top, upstairs"
+      }
+    },
+    {
+      "id": "na-dole",
+      "text": "na dole",
+      "meaning": {
+        "en": "at the bottom, downstairs"
+      }
+    },
+    {
+      "id": "w-srodku",
+      "text": "w środku",
+      "meaning": {
+        "en": "inside; in the middle"
+      }
+    },
+    {
+      "id": "na-zewnatrz",
+      "text": "na zewnątrz",
+      "meaning": {
+        "en": "outside"
+      }
+    },
+    {
+      "id": "schody",
+      "text": "schody",
+      "meaning": {
+        "en": "stairs, steps"
+      }
+    },
+    {
+      "id": "dlugo",
+      "text": "długo",
+      "meaning": {
+        "en": "long, for a long time (jak długo?: how long?)"
+      }
+    },
+    {
+      "id": "idealny",
+      "text": "idealny",
+      "meaning": {
+        "en": "perfect, ideal (idealny, idealna, idealne)"
+      },
+      "forms": [
+        "idealna",
+        "idealne"
+      ]
+    },
+    {
+      "id": "miejsce",
+      "text": "miejsce",
+      "meaning": {
+        "en": "a place"
+      }
+    },
+    {
+      "id": "zwiedzac",
+      "text": "zwiedzać",
+      "meaning": {
+        "en": "go sightseeing, visit (to visit a city or a museum)"
+      }
+    },
+    {
+      "id": "jak-dojsc",
+      "text": "jak dojść…?",
+      "meaning": {
+        "en": "how do I get to…? (on foot: jak dojść do kościoła?)"
+      }
+    },
+    {
+      "id": "dojsc",
+      "text": "dojść",
+      "meaning": {
+        "en": "get to, reach (on foot: dojść do skrzyżowania)"
+      }
+    },
+    {
+      "id": "przejsc",
+      "text": "przejść",
+      "meaning": {
+        "en": "cross, go across (przejść przez park: to go across the park)"
+      }
+    },
+    {
+      "id": "przez-park",
+      "text": "przez park",
+      "meaning": {
+        "en": "across the park, through the park"
+      }
+    },
+    {
+      "id": "daleko",
+      "text": "daleko",
+      "meaning": {
+        "en": "far, far away"
+      }
+    },
+    {
+      "id": "blisko",
+      "text": "blisko",
+      "meaning": {
+        "en": "near, close by"
+      }
+    },
+    {
+      "id": "w-pubie",
+      "text": "w pubie",
+      "meaning": {
+        "en": "in the pub"
+      }
+    },
+    {
+      "id": "czekac-czekamy",
+      "text": "czekamy",
+      "meaning": {
+        "en": "we are waiting, we wait"
+      }
+    },
+    {
+      "id": "mnie",
+      "text": "mnie",
+      "meaning": {
+        "en": "me (kochasz mnie?: do you love me?)"
+      }
+    },
+    {
+      "id": "cie",
+      "text": "cię",
+      "meaning": {
+        "en": "you (one friend: kocham cię: I love you)"
+      }
+    },
+    {
+      "id": "go",
+      "text": "go",
+      "meaning": {
+        "en": "him; it (for a masculine or neuter noun: lubię go)"
+      }
+    },
+    {
+      "id": "ja-acc",
+      "text": "ją",
+      "meaning": {
+        "en": "her; it (for a feminine noun: znam ją)"
+      }
+    },
+    {
+      "id": "nas",
+      "text": "nas",
+      "meaning": {
+        "en": "us (zapraszasz nas?: are you inviting us?)"
+      }
+    },
+    {
+      "id": "was",
+      "text": "was",
+      "meaning": {
+        "en": "you (several people: zapraszam was)"
+      }
+    },
+    {
+      "id": "ich-acc",
+      "text": "ich",
+      "meaning": {
+        "en": "them (men, or men and women: znam ich)"
+      }
+    },
+    {
+      "id": "je-acc",
+      "text": "je",
+      "meaning": {
+        "en": "them (women, children or things: lubię je)"
+      }
+    },
+    {
+      "id": "na-ciebie",
+      "text": "na ciebie",
+      "meaning": {
+        "en": "for you (one friend: czekam na ciebie)"
+      }
+    },
+    {
+      "id": "na-niego",
+      "text": "na niego",
+      "meaning": {
+        "en": "for him (czekam na niego)"
+      }
+    },
+    {
+      "id": "na-nia",
+      "text": "na nią",
+      "meaning": {
+        "en": "for her (czekam na nią)"
+      }
+    },
+    {
+      "id": "na-nich",
+      "text": "na nich",
+      "meaning": {
+        "en": "for them (men, or men and women: czekam na nich)"
+      }
+    },
+    {
+      "id": "na-nas",
+      "text": "na nas",
+      "meaning": {
+        "en": "for us (czekasz na nas?)"
+      }
+    },
+    {
+      "id": "na-was",
+      "text": "na was",
+      "meaning": {
+        "en": "for you (several people: czekam na was)"
+      }
+    },
+    {
+      "id": "czekaj",
+      "text": "czekaj!",
+      "meaning": {
+        "en": "wait! (to one friend)"
+      }
+    },
+    {
+      "id": "juz-idziemy",
+      "text": "już idziemy!",
+      "meaning": {
+        "en": "we're coming!"
+      }
+    },
+    {
+      "id": "w-duzych-miastach",
+      "text": "w dużych miastach",
+      "meaning": {
+        "en": "in big cities"
+      }
+    },
+    {
+      "id": "na-targ",
+      "text": "na targ",
+      "meaning": {
+        "en": "to the market"
+      }
+    },
+    {
+      "id": "w-gory",
+      "text": "w góry",
+      "meaning": {
+        "en": "to the mountains (jeżdżę w góry)"
+      }
+    },
+    {
+      "id": "z-kolega",
+      "text": "z kolegą",
+      "meaning": {
+        "en": "with a friend (a man: jadę z kolegą)"
+      }
+    }
+  ]
+}

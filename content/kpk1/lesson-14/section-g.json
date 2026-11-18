@@ -1,0 +1,404 @@
+{
+  "id": "kpk1-l14-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-g-t01",
+      "before": "kpk1-l14-g-e01",
+      "title": {
+        "en": "Czym jeździmy?"
+      },
+      "body": {
+        "en": "Talking about getting around: *w dużych miastach* (in big cities) people go *metrem* or *tramwajem*; *w sobotę zwykle jeździmy na targ* (on Saturdays we usually go to the market); *często jeżdżę w góry* (I often go to the mountains). *Dziś jadę z kolegą* is today I am going with a friend."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-g-e01",
+      "prompt": "w dużych miastach",
+      "options": [
+        {
+          "en": "in small towns"
+        },
+        {
+          "en": "in the mountains"
+        },
+        {
+          "en": "in big cities"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-duzych-miastach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-g-e02",
+      "prompt": "na targ",
+      "options": [
+        {
+          "en": "to the market"
+        },
+        {
+          "en": "to the shop"
+        },
+        {
+          "en": "to the market square"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-targ"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-g-e03",
+      "prompt": "w góry",
+      "options": [
+        {
+          "en": "to the sea"
+        },
+        {
+          "en": "to the mountains (jeżdżę w góry)"
+        },
+        {
+          "en": "in the mountains"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-gory"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-g-e04",
+      "prompt": "z kolegą",
+      "options": [
+        {
+          "en": "with a girlfriend"
+        },
+        {
+          "en": "to a friend"
+        },
+        {
+          "en": "with a friend (a man: jadę z kolegą)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-kolega"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-g-e05",
+      "verb": "jeździć",
+      "meaning": {
+        "en": "to go (by car, bus, bike…, regularly)"
+      },
+      "person": "my",
+      "sentence": "W sobotę zwykle ___ na targ.",
+      "sentenceMeaning": {
+        "en": "On Saturdays we usually go to the market."
+      },
+      "acceptedAnswers": [
+        "jeździmy"
+      ],
+      "items": [
+        "sobota",
+        "zwykle",
+        "jezdzic-jezdzimy",
+        "na-targ"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-g-e06",
+      "verb": "jechać",
+      "meaning": {
+        "en": "to go (by car, bus or train, now or once)"
+      },
+      "person": "my",
+      "sentence": "Dziś też ___ na targ.",
+      "sentenceMeaning": {
+        "en": "Today we are going to the market too."
+      },
+      "acceptedAnswers": [
+        "jedziemy"
+      ],
+      "items": [
+        "dzis",
+        "tez",
+        "jechac-jedziemy",
+        "na-targ"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-g-e07",
+      "verb": "jechać",
+      "meaning": {
+        "en": "to go (by car, bus or train, now or once)"
+      },
+      "person": "ja",
+      "sentence": "Często jeżdżę w góry i jutro też ___.",
+      "sentenceMeaning": {
+        "en": "I often go to the mountains and tomorrow I am going too."
+      },
+      "acceptedAnswers": [
+        "jadę"
+      ],
+      "items": [
+        "czesto",
+        "jezdzic-jezdze",
+        "w-gory",
+        "i",
+        "jutro",
+        "tez",
+        "jechac-jade"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-g-e08",
+      "verb": "iść",
+      "meaning": {
+        "en": "to go (on foot, now or once)"
+      },
+      "person": "ja",
+      "sentence": "Zwykle chodzę pieszo do pracy, ale dziś nie ___, bo jadę z kolegą.",
+      "sentenceMeaning": {
+        "en": "I usually walk to work, but today I am not walking, because I am going with a friend."
+      },
+      "acceptedAnswers": [
+        "idę"
+      ],
+      "items": [
+        "zwykle",
+        "chodzic-chodze",
+        "pieszo",
+        "do-pracy",
+        "ale",
+        "dzis",
+        "nie",
+        "isc-ide",
+        "bo",
+        "jechac-jade",
+        "z-kolega"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-g-e09",
+      "verb": "chodzić",
+      "meaning": {
+        "en": "to go (on foot, regularly)"
+      },
+      "person": "oni",
+      "sentence": "W weekend ___ do teatru.",
+      "sentenceMeaning": {
+        "en": "At the weekend they go to the theatre."
+      },
+      "acceptedAnswers": [
+        "chodzą"
+      ],
+      "items": [
+        "w-weekend",
+        "chodzic-chodza",
+        "do-teatru"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-g-e10",
+      "text": "w dużych miastach jeździmy metrem",
+      "meaning": {
+        "en": "in big cities we go by underground"
+      },
+      "distractors": [
+        "w dużych miastach jeździmy tramwajem",
+        "w dużych miastach jedziemy metrem"
+      ],
+      "items": [
+        "w-duzych-miastach",
+        "jezdzic-jezdzimy",
+        "metrem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-g-e11",
+      "prompt": {
+        "en": "I often go to the mountains"
+      },
+      "acceptedAnswers": [
+        "często jeżdżę w góry"
+      ],
+      "distractors": [
+        "idę",
+        "jadę"
+      ],
+      "items": [
+        "czesto",
+        "jezdzic-jezdze",
+        "w-gory"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-g-e12",
+      "text": "Czekam na ___ (ty). Lubisz ___ (my)? Znam ___ (oni).",
+      "meaning": {
+        "en": "I am waiting for you. Do you like us? I know them."
+      },
+      "gaps": [
+        [
+          "ciebie"
+        ],
+        [
+          "nas"
+        ],
+        [
+          "ich"
+        ]
+      ],
+      "distractors": [
+        "cię",
+        "nich"
+      ],
+      "items": [
+        "czekac-czekam",
+        "na-ciebie",
+        "ty",
+        "lubic-lubisz",
+        "nas",
+        "my",
+        "znac-znam",
+        "ich-acc",
+        "oni"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-g-e13",
+      "text": "lubię je",
+      "meaning": {
+        "en": "I like them (women, children or things)"
+      },
+      "distractors": [
+        "lubię ich",
+        "lubię ją"
+      ],
+      "items": [
+        "lubic-lubie",
+        "je-acc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-g-e14",
+      "acceptedAnswers": [
+        "jadę z kolegą"
+      ],
+      "meaning": {
+        "en": "I am going with a friend (a man)"
+      },
+      "items": [
+        "jechac-jade",
+        "z-kolega"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-g-e15",
+      "prompt": {
+        "en": "to the mountains"
+      },
+      "acceptedAnswers": [
+        "w góry"
+      ],
+      "items": [
+        "w-gory"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-g-e16",
+      "pairs": [
+        {
+          "polish": "w dużych miastach",
+          "meaning": {
+            "en": "in big cities"
+          }
+        },
+        {
+          "polish": "na targ",
+          "meaning": {
+            "en": "to the market"
+          }
+        },
+        {
+          "polish": "w góry",
+          "meaning": {
+            "en": "to the mountains"
+          }
+        },
+        {
+          "polish": "z kolegą",
+          "meaning": {
+            "en": "with a friend"
+          }
+        },
+        {
+          "polish": "pieszo",
+          "meaning": {
+            "en": "on foot"
+          }
+        },
+        {
+          "polish": "metrem",
+          "meaning": {
+            "en": "by underground"
+          }
+        }
+      ],
+      "items": [
+        "w-duzych-miastach",
+        "na-targ",
+        "w-gory",
+        "z-kolega",
+        "pieszo",
+        "metrem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-g-e17",
+      "prompt": {
+        "en": "where are you going? (on foot; one friend)"
+      },
+      "acceptedAnswers": [
+        "dokąd idziesz?"
+      ],
+      "items": [
+        "dokad",
+        "isc-idziesz"
+      ]
+    }
+  ]
+}

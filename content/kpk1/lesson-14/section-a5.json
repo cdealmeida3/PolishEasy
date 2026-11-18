@@ -1,0 +1,400 @@
+{
+  "id": "kpk1-l14-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Uczymy się o Krakowie",
+    "meaning": {
+      "en": "We are learning about Kraków"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-a5-t01",
+      "before": "kpk1-l14-a5-e01",
+      "title": {
+        "en": "Jadę czy jeżdżę?"
+      },
+      "body": {
+        "en": "*Jechać* is now, or once: *teraz jadę autobusem*. *Jeździć* is often, or as a habit: *zwykle jeżdżę tramwajem*. *Jeździć* has *żdż* for *ja* and *oni*: *jeżdżę*, *jeździsz*, *jeździ*, *jeździmy*, *jeździcie*, *jeżdżą*."
+      },
+      "conjugation": {
+        "verb": "jeździć",
+        "meaning": {
+          "en": "to go (by car, bus, bike…, regularly)"
+        },
+        "forms": {
+          "ja": "jeżdżę",
+          "ty": "jeździsz",
+          "on": "jeździ",
+          "my": "jeździmy",
+          "wy": "jeździcie",
+          "oni": "jeżdżą"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l14-a5-t02",
+      "before": "kpk1-l14-a5-e04",
+      "title": {
+        "en": "Czym? Autobusem!"
+      },
+      "body": {
+        "en": "*Czym jedziesz?* asks how, by what. The answer is in the instrumental, with *-em* for a masculine word and *-ą* for a feminine one: *samochód*, *samochodem*; *taksówka*, *taksówką*. So *jadę autobusem*, *jeżdżę rowerem*. On foot is *pieszo*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a5-e01",
+      "prompt": "jeździmy",
+      "options": [
+        {
+          "en": "we are going (by car, bus or train)"
+        },
+        {
+          "en": "we go, we ride (by car, bus, bike…, regularly)"
+        },
+        {
+          "en": "we walk regularly"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jezdzic-jezdzimy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a5-e02",
+      "prompt": "jeździcie",
+      "options": [
+        {
+          "en": "you are going (by car, bus or train; several people)"
+        },
+        {
+          "en": "you walk regularly (several people)"
+        },
+        {
+          "en": "you go, you ride (regularly; several people)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jezdzic-jezdzicie"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a5-e03",
+      "verb": "jeździć",
+      "meaning": {
+        "en": "to go (by car, bus, bike…, regularly)"
+      },
+      "person": "wy",
+      "sentence": "Jak często ___ na basen?",
+      "sentenceMeaning": {
+        "en": "How often do you go to the swimming pool? (several people)"
+      },
+      "acceptedAnswers": [
+        "jeździcie"
+      ],
+      "items": [
+        "jak",
+        "czesto",
+        "jezdzic-jezdzicie",
+        "na-basen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a5-e04",
+      "prompt": "czym jedziesz?",
+      "options": [
+        {
+          "en": "how are you going? by what? (czym: by what)"
+        },
+        {
+          "en": "where are you going?"
+        },
+        {
+          "en": "when are you going?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czym-jedziesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a5-e05",
+      "prompt": "rowerem",
+      "options": [
+        {
+          "en": "by car"
+        },
+        {
+          "en": "by bike (rower: a bike)"
+        },
+        {
+          "en": "by train"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "rowerem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a5-e06",
+      "prompt": "autobusem",
+      "options": [
+        {
+          "en": "by tram"
+        },
+        {
+          "en": "by taxi"
+        },
+        {
+          "en": "by bus (autobus: a bus)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "autobusem"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a5-e07",
+      "verb": "jeździć",
+      "meaning": {
+        "en": "to go (by car, bus, bike…, regularly)"
+      },
+      "person": "ja",
+      "sentence": "Zwykle ___ autobusem.",
+      "sentenceMeaning": {
+        "en": "I usually go by bus."
+      },
+      "acceptedAnswers": [
+        "jeżdżę"
+      ],
+      "items": [
+        "zwykle",
+        "jezdzic-jezdze",
+        "autobusem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a5-e08",
+      "prompt": "tramwajem",
+      "options": [
+        {
+          "en": "by tram (tramwaj: a tram)"
+        },
+        {
+          "en": "by bus"
+        },
+        {
+          "en": "by bike"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tramwajem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a5-e09",
+      "prompt": "pociągiem",
+      "options": [
+        {
+          "en": "by tram"
+        },
+        {
+          "en": "by train (pociąg: a train)"
+        },
+        {
+          "en": "by car"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pociagiem"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a5-e10",
+      "verb": "jeździć",
+      "meaning": {
+        "en": "to go (by car, bus, bike…, regularly)"
+      },
+      "person": "my",
+      "sentence": "Do Warszawy zawsze ___ pociągiem.",
+      "sentenceMeaning": {
+        "en": "We always go to Warsaw by train."
+      },
+      "acceptedAnswers": [
+        "jeździmy"
+      ],
+      "items": [
+        "do-warszawy",
+        "zawsze",
+        "jezdzic-jezdzimy",
+        "pociagiem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-a5-e11",
+      "text": "czym jedziesz?",
+      "meaning": {
+        "en": "how are you going, by what?"
+      },
+      "distractors": [
+        "czym jeździsz?",
+        "dokąd jedziesz?"
+      ],
+      "items": [
+        "czym-jedziesz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-a5-e12",
+      "prompt": {
+        "en": "Adam is going by bike"
+      },
+      "acceptedAnswers": [
+        "Adam jedzie rowerem"
+      ],
+      "distractors": [
+        "jeździ",
+        "autobusem"
+      ],
+      "items": [
+        "adam",
+        "jechac-jedzie",
+        "rowerem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-a5-e13",
+      "text": "Czym jedziesz do pracy? Dzisiaj jadę ___, a zwykle jeżdżę ___.",
+      "meaning": {
+        "en": "How are you going to work? Today I am going by tram, and usually I go by bus."
+      },
+      "gaps": [
+        [
+          "tramwajem"
+        ],
+        [
+          "autobusem"
+        ]
+      ],
+      "distractors": [
+        "pociąg",
+        "rower"
+      ],
+      "items": [
+        "czym",
+        "jechac-jedziesz",
+        "do-pracy",
+        "dzisiaj",
+        "jechac-jade",
+        "tramwajem",
+        "a",
+        "zwykle",
+        "jezdzic-jezdze",
+        "autobusem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-a5-e14",
+      "acceptedAnswers": [
+        "jadę pociągiem"
+      ],
+      "meaning": {
+        "en": "I am going by train"
+      },
+      "items": [
+        "jechac-jade",
+        "pociagiem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-a5-e15",
+      "prompt": {
+        "en": "by bike"
+      },
+      "acceptedAnswers": [
+        "rowerem"
+      ],
+      "items": [
+        "rowerem"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-a5-e16",
+      "pairs": [
+        {
+          "polish": "czym jedziesz?",
+          "meaning": {
+            "en": "how are you going?"
+          }
+        },
+        {
+          "polish": "rowerem",
+          "meaning": {
+            "en": "by bike"
+          }
+        },
+        {
+          "polish": "autobusem",
+          "meaning": {
+            "en": "by bus"
+          }
+        },
+        {
+          "polish": "tramwajem",
+          "meaning": {
+            "en": "by tram"
+          }
+        },
+        {
+          "polish": "pociągiem",
+          "meaning": {
+            "en": "by train"
+          }
+        },
+        {
+          "polish": "jeździmy",
+          "meaning": {
+            "en": "we go (regularly)"
+          }
+        }
+      ],
+      "items": [
+        "czym-jedziesz",
+        "rowerem",
+        "autobusem",
+        "tramwajem",
+        "pociagiem",
+        "jezdzic-jezdzimy"
+      ]
+    }
+  ]
+}

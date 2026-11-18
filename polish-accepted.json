@@ -79,6 +79,14 @@
     {
       "problem": "grammar: BOWIEM_ZAS: Ludzie śmiali się głośno. Ale wstyd!",
       "reason": "False alarm. \"Ale wstyd!\" is an exclamation (how embarrassing!) in which ale is the intensifying particle that always stands first, not the conjunction \"but\"."
+    },
+    {
+      "problem": "grammar: ZAIMKI_KROTKIE: cię",
+      "reason": "False alarm. The rule wants the long form (ciebie) at the start of a sentence, but \"cię\" is never a sentence here: it is the Item on its own, a gap answer or a cell of a table, and in every sentence that uses it it stands after the verb (kocham cię, lubię go, znam go), where the short form is right."
+    },
+    {
+      "problem": "grammar: ZAIMKI_KROTKIE: go",
+      "reason": "False alarm. The rule wants the long form (jego) at the start of a sentence, but \"go\" is never a sentence here: it is the Item on its own, a gap answer or a cell of a table, and in every sentence that uses it it stands after the verb (kocham cię, lubię go, znam go), where the short form is right."
     }
   ]
 }

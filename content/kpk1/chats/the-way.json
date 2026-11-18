@@ -1,0 +1,173 @@
+{
+  "id": "chat-the-way",
+  "person": "Pani Zofia",
+  "title": {
+    "en": "The way to the pub"
+  },
+  "scene": {
+    "en": "You are in the Rynek in Kraków, and your friends are waiting for you in a pub you don't know. You stop a woman you don't know, Pani Zofia, and ask her the way. Listen to her directions: straight on, then left, then across the park. Be polite: she is pani, and you say dzień dobry, not cześć."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "przepraszam",
+    "jak-dojsc",
+    "do-pubu",
+    "czesc",
+    "prosze",
+    "isc",
+    "prosto",
+    "a",
+    "potem",
+    "skrecic",
+    "w-lewo",
+    "w-prawo",
+    "tak",
+    "przejsc",
+    "przez-park",
+    "to",
+    "daleko",
+    "nie",
+    "blisko",
+    "piec",
+    "minuta",
+    "pieszo",
+    "dziekuje",
+    "bardzo",
+    "dzieki",
+    "jechac-jade",
+    "tramwajem",
+    "nie-ma-za-co",
+    "do-widzenia"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry!",
+      "meaning": {
+        "en": "Hello!"
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry! Przepraszam, jak dojść do pubu?",
+          "meaning": {
+            "en": "Hello! Excuse me, how do I get to the pub?"
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Dzień dobry! Przepraszam, jak dojść do pubu?",
+            "Dzień dobry, przepraszam, jak dojść do pubu?"
+          ]
+        },
+        {
+          "text": "Cześć! Jak dojść do pubu?",
+          "meaning": {
+            "en": "Hi! How do I get to the pub?"
+          },
+          "register": "informal",
+          "note": {
+            "en": "Pani Zofia is a stranger: to her you say *dzień dobry* and *przepraszam*. *Cześć* is for friends."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Proszę iść prosto, a potem skręcić w lewo.",
+      "meaning": {
+        "en": "Go straight on, and then turn left."
+      },
+      "replies": [
+        {
+          "text": "Prosto, a potem w lewo?",
+          "meaning": {
+            "en": "Straight on, and then left?"
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Prosto, a potem w lewo?"
+          ]
+        },
+        {
+          "text": "Prosto, a potem w prawo?",
+          "meaning": {
+            "en": "Straight on, and then right?"
+          },
+          "note": {
+            "en": "She said *w lewo*: left. *W prawo* is right."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Tak, a potem proszę przejść przez park.",
+      "meaning": {
+        "en": "Yes, and then go across the park."
+      },
+      "replies": [
+        {
+          "text": "Przez park? To daleko?",
+          "meaning": {
+            "en": "Across the park? Is it far?"
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Przez park? To daleko?",
+            "Przez park? Czy to daleko?"
+          ]
+        },
+        {
+          "text": "Proszę iść prosto!",
+          "meaning": {
+            "en": "Go straight on!"
+          },
+          "note": {
+            "en": "That is what she tells you. You want to know if it is far: *to daleko?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Nie, to blisko. Pięć minut pieszo.",
+      "meaning": {
+        "en": "No, it's near. Five minutes on foot."
+      },
+      "replies": [
+        {
+          "text": "Dziękuję bardzo!",
+          "meaning": {
+            "en": "Thank you very much!"
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Dziękuję bardzo!",
+            "Bardzo dziękuję!"
+          ]
+        },
+        {
+          "text": "Dzięki! Jadę tramwajem.",
+          "meaning": {
+            "en": "Thanks! I'm going by tram."
+          },
+          "register": "informal",
+          "note": {
+            "en": "It is five minutes on foot, and to a stranger you say *dziękuję bardzo*. *Dzięki* is for friends."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Nie ma za co! Do widzenia!",
+      "meaning": {
+        "en": "You're welcome! Goodbye!"
+      }
+    }
+  ]
+}

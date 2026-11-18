@@ -1,0 +1,425 @@
+{
+  "id": "kpk1-l14-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Uczymy się o Krakowie",
+    "meaning": {
+      "en": "We are learning about Kraków"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-a4-t01",
+      "before": "kpk1-l14-a4-e01",
+      "title": {
+        "en": "Jadę, jedziesz"
+      },
+      "body": {
+        "en": "*Jechać* is to go by car, bus, train or bike, now or once: *jutro jadę do Nowej Huty*. Its *a* becomes *e* after *ja* until *oni*: *jadę*, *jedziesz*, *jedzie*, *jedziemy*, *jedziecie*, *jadą*."
+      },
+      "conjugation": {
+        "verb": "jechać",
+        "meaning": {
+          "en": "to go (by car, bus or train, now or once)"
+        },
+        "forms": {
+          "ja": "jadę",
+          "ty": "jedziesz",
+          "on": "jedzie",
+          "my": "jedziemy",
+          "wy": "jedziecie",
+          "oni": "jadą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a4-e01",
+      "prompt": "do Warszawy",
+      "options": [
+        {
+          "en": "to Kraków"
+        },
+        {
+          "en": "in Warsaw"
+        },
+        {
+          "en": "to Warsaw (jedziemy do Warszawy)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-warszawy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a4-e02",
+      "prompt": "do Krakowa",
+      "options": [
+        {
+          "en": "to Kraków (jadę do Krakowa)"
+        },
+        {
+          "en": "to Warsaw"
+        },
+        {
+          "en": "in Kraków"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-krakowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a4-e03",
+      "prompt": "jadę",
+      "options": [
+        {
+          "en": "I am going (on foot)"
+        },
+        {
+          "en": "I am going (by car, bus or train; I'm driving, I'm riding)"
+        },
+        {
+          "en": "I ride regularly"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jechac-jade"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a4-e04",
+      "verb": "jechać",
+      "meaning": {
+        "en": "to go (by car, bus or train, now or once)"
+      },
+      "person": "ja",
+      "sentence": "Jutro ___ do Warszawy.",
+      "sentenceMeaning": {
+        "en": "Tomorrow I'm going to Warsaw."
+      },
+      "acceptedAnswers": [
+        "jadę"
+      ],
+      "items": [
+        "jutro",
+        "jechac-jade",
+        "do-warszawy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a4-e05",
+      "prompt": "jedziesz",
+      "options": [
+        {
+          "en": "you are going (on foot; one friend)"
+        },
+        {
+          "en": "you ride regularly"
+        },
+        {
+          "en": "you are going (by car, bus or train; one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jechac-jedziesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a4-e06",
+      "prompt": "jedzie",
+      "options": [
+        {
+          "en": "he is going, she is going (by car, bus or train, by bike)"
+        },
+        {
+          "en": "he is going, she is going (on foot)"
+        },
+        {
+          "en": "he rides regularly"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jechac-jedzie"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a4-e07",
+      "verb": "jechać",
+      "meaning": {
+        "en": "to go (by car, bus or train, now or once)"
+      },
+      "person": "on",
+      "sentence": "Adam ___ do Krakowa.",
+      "sentenceMeaning": {
+        "en": "Adam is going to Kraków."
+      },
+      "acceptedAnswers": [
+        "jedzie"
+      ],
+      "items": [
+        "adam",
+        "jechac-jedzie",
+        "do-krakowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a4-e08",
+      "prompt": "jedziemy",
+      "options": [
+        {
+          "en": "we are going (on foot)"
+        },
+        {
+          "en": "we are going (by car, bus or train)"
+        },
+        {
+          "en": "we ride regularly"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jechac-jedziemy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a4-e09",
+      "prompt": "jedziecie",
+      "options": [
+        {
+          "en": "you are going (on foot; several people)"
+        },
+        {
+          "en": "you ride regularly (several people)"
+        },
+        {
+          "en": "you are going (by car, bus or train; several people)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jechac-jedziecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a4-e10",
+      "prompt": "jadą",
+      "options": [
+        {
+          "en": "they are going (by car, bus or train)"
+        },
+        {
+          "en": "they are going (on foot)"
+        },
+        {
+          "en": "they ride regularly"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jechac-jada"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a4-e11",
+      "verb": "jechać",
+      "meaning": {
+        "en": "to go (by car, bus or train, now or once)"
+      },
+      "person": "ty",
+      "sentence": "Dokąd ___?",
+      "sentenceMeaning": {
+        "en": "Where are you going? (by car, bus or train; one friend)"
+      },
+      "acceptedAnswers": [
+        "jedziesz"
+      ],
+      "items": [
+        "dokad",
+        "jechac-jedziesz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a4-e12",
+      "verb": "jechać",
+      "meaning": {
+        "en": "to go (by car, bus or train, now or once)"
+      },
+      "person": "my",
+      "sentence": "Jutro ___ do Krakowa.",
+      "sentenceMeaning": {
+        "en": "Tomorrow we're going to Kraków."
+      },
+      "acceptedAnswers": [
+        "jedziemy"
+      ],
+      "items": [
+        "jutro",
+        "jechac-jedziemy",
+        "do-krakowa"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a4-e13",
+      "verb": "jechać",
+      "meaning": {
+        "en": "to go (by car, bus or train, now or once)"
+      },
+      "person": "wy",
+      "sentence": "Czy ___ na wycieczkę?",
+      "sentenceMeaning": {
+        "en": "Are you going on a trip? (several people)"
+      },
+      "acceptedAnswers": [
+        "jedziecie"
+      ],
+      "items": [
+        "czy",
+        "jechac-jedziecie",
+        "na-wycieczke"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a4-e14",
+      "verb": "jechać",
+      "meaning": {
+        "en": "to go (by car, bus or train, now or once)"
+      },
+      "person": "oni",
+      "sentence": "W sobotę ___ na wycieczkę.",
+      "sentenceMeaning": {
+        "en": "On Saturday they are going on a trip."
+      },
+      "acceptedAnswers": [
+        "jadą"
+      ],
+      "items": [
+        "sobota",
+        "jechac-jada",
+        "na-wycieczke"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-a4-e15",
+      "text": "jutro jadę do Krakowa",
+      "meaning": {
+        "en": "tomorrow I'm going to Kraków"
+      },
+      "distractors": [
+        "jutro idę do Krakowa",
+        "jutro jedzie do Krakowa"
+      ],
+      "items": [
+        "jutro",
+        "jechac-jade",
+        "do-krakowa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-a4-e16",
+      "prompt": {
+        "en": "we're going on a trip (by car, bus or train)"
+      },
+      "acceptedAnswers": [
+        "jedziemy na wycieczkę"
+      ],
+      "distractors": [
+        "idziemy",
+        "jadą"
+      ],
+      "items": [
+        "jechac-jedziemy",
+        "na-wycieczke"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-a4-e17",
+      "prompt": {
+        "en": "where are you going? (by car; one friend)"
+      },
+      "acceptedAnswers": [
+        "dokąd jedziesz?"
+      ],
+      "items": [
+        "dokad",
+        "jechac-jedziesz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-a4-e18",
+      "pairs": [
+        {
+          "polish": "jadę",
+          "meaning": {
+            "en": "I am going (by car)"
+          }
+        },
+        {
+          "polish": "jedziesz",
+          "meaning": {
+            "en": "you are going (by car)"
+          }
+        },
+        {
+          "polish": "jedzie",
+          "meaning": {
+            "en": "he is going (by car)"
+          }
+        },
+        {
+          "polish": "jedziemy",
+          "meaning": {
+            "en": "we are going (by car)"
+          }
+        },
+        {
+          "polish": "jedziecie",
+          "meaning": {
+            "en": "you are going (several, by car)"
+          }
+        },
+        {
+          "polish": "jadą",
+          "meaning": {
+            "en": "they are going (by car)"
+          }
+        }
+      ],
+      "items": [
+        "jechac-jade",
+        "jechac-jedziesz",
+        "jechac-jedzie",
+        "jechac-jedziemy",
+        "jechac-jedziecie",
+        "jechac-jada"
+      ]
+    }
+  ]
+}

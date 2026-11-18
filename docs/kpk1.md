@@ -292,3 +292,23 @@ It gives the later chapters:
 - the genitive after a negated *mieć* in the past: *nie miałem zasięgu*, *telefonu*.
 
 It leaves for later: aspect as a rule (*zrobić* and *zadzwonić* are met as done once, *robić* and *dzwonić* as often, without the word), and the past of the verbs the book has not met yet.
+
+## Chapter 14: Z przewodnikiem po Krakowie
+
+Book pages 110 to 115, recordings 151 to 156. Fourteen parts, 245 Exercises and 108 new Items: getting around a city and asking the way.
+
+- **A** *Uczymy się o Krakowie*, in six: a quiz about Kraków (16: *na quiz*, *na wykłady*, *warsztaty*, *coś nowego*, *zobaczymy*, *nagroda*, *przewodnik*, *po Krakowie*); *iść* (17: *idzie*, *idą*, *raz*, *na legendy*, *hura!*, *serio?*); *chodzić*, with a Tip on *idę* or *chodzę* (16: *chodzicie*, *pieszo*, *do pracy*, *fotografujemy*, *w internecie*, *dzielnica*); *jechać*, *a* to *e* (18: *jadę* … *jadą*, *do Krakowa*, *do Warszawy*); *jeździć* and *czym?*, with a Tip on the instrumental (16: *jeździmy*, *jeździcie*, *czym jedziesz?*, *rowerem*, *autobusem*, *tramwajem*, *pociągiem*); and more ways to go (15: *metrem*, *motocyklem*, *skuterem*, *hulajnogą*, *windą*, *dorożką*, *na wakacje*).
+- **B** *Zwiedzamy*, in five: the city (16: *miasto*, *stolica*, *Warszawa*, *skrzyżowanie*, *przystanek*, *światła*, *rzeka*, *most*); sights (16: *kościół*, *katedra*, *ratusz*, *zamek*, *pomnik*, *wieża*, *na Wawelu*, *znany*); the guide's tour (16: *na wprost*, *po prawej stronie*, *po lewej stronie*, *za pomnikiem*, *poeta*, *z pamiątkami*, *hejnał*); which way (15: *prosto*, *skręcić*, *w lewo*, *w prawo*, *na rogu*, *naprzeciwko*, *na górze*, *na dole*); and a group photo (16: *w środku*, *na zewnątrz*, *schody*, *długo*, *idealny*, *miejsce*, *zwiedzać*).
+- **C** *Idziemy do pubu*, in three: the way to the pub (16: *jak dojść…?*, *dojść*, *przejść*, *przez park*, *daleko*, *blisko*, *w pubie*, *czekamy*); the accusative pronouns, with a table Tip (18: *mnie*, *cię*, *go*, *ją*, *nas*, *was*, *ich*, *je*); and after *na*, with a table Tip of both forms (17: *na ciebie*, *na niego*, *na nią*, *na nich*, *na nas*, *na was*, *czekaj!*, *już idziemy!*).
+- *Ćwiczenia* (17): getting around, with *iść* or *chodzić*, *jechać* or *jeździć* in one sentence (*w dużych miastach*, *na targ*, *w góry*, *z kolegą*).
+
+*Iść*, *chodzić*, *jechać* and *jeździć* are conjugation tables, so the Verb challenge asks all four; each Tip says which is now or once and which is often. A way of going is one Item in the instrumental (*rowerem*, *windą*), with its noun in the meaning. A pronoun after *na* is one phrase Item (*na niego*), because the book teaches *na* with each; *ich* (them) and *je* (them) share their spelling with *ich* (their) and *je* (he eats) and are separate Items. *Przewodnik*, *światła*, *schody*, *skrzyżowanie*, *zwiedzać*, *wygrać*, *nagroda*, *daleko* and *blisko*, the words the book sends to the dictionary, are under Look up. There are 39 listening tasks on all 6 recordings, and one Chat: *The way to the pub* (Pani Zofia, a stranger on the Rynek, formal: straight on, left, across the park, five minutes on foot; *dzień dobry* and *dziękuję bardzo*, not *cześć* and *dzięki*). Twenty-four Items have pictures (a city, a bridge, a church, a castle, traffic lights, a stop, a bike, a bus, a tram, a train, the underground, a motorbike, a scooter, a kick scooter, a lift, a horse, a walker, a trophy, a trumpet, three arrows, a beer, a mountain).
+
+It gives the later chapters:
+
+- *iść*, *chodzić*, *jechać* and *jeździć* in every person, and which to use;
+- *czym?* and the instrumental of vehicles;
+- the city and its sights, and directions: *prosto*, *w lewo*, *w prawo*, *na rogu*, *naprzeciwko*, *po prawej stronie*;
+- the accusative pronouns, and their forms after *na*.
+
+It leaves for later: the instrumental and the locative as rules (*rowerem*, *na Wawelu*, *w pubie* are met as phrases), the past of the verbs of motion beyond chapter 13's *szedłem* and *chodziłem*, and the pronouns after other prepositions (*z nim* was met in chapter 10).

@@ -1,0 +1,379 @@
+{
+  "id": "kpk1-l14-b4",
+  "section": {
+    "letter": "B",
+    "heading": "Zwiedzamy",
+    "meaning": {
+      "en": "We are sightseeing"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-b4-t01",
+      "before": "kpk1-l14-b4-e01",
+      "title": {
+        "en": "Prosto, w lewo, w prawo"
+      },
+      "body": {
+        "en": "*Proszę iść prosto* is go straight on. *Proszę skręcić w lewo* is turn left, and *w prawo* is right. Where something is: *na rogu* (on the corner), *naprzeciwko* (opposite), *na górze* (at the top) and *na dole* (at the bottom)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b4-e01",
+      "prompt": "prosto",
+      "options": [
+        {
+          "en": "left"
+        },
+        {
+          "en": "back"
+        },
+        {
+          "en": "straight on (proszę iść prosto: go straight on)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "prosto"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b4-e02",
+      "prompt": "skręcić",
+      "options": [
+        {
+          "en": "turn (to turn: proszę skręcić w lewo)"
+        },
+        {
+          "en": "cross"
+        },
+        {
+          "en": "stop"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "skrecic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b4-e03",
+      "prompt": "w lewo",
+      "options": [
+        {
+          "en": "right"
+        },
+        {
+          "en": "left (skręcić w lewo: to turn left)"
+        },
+        {
+          "en": "straight on"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-lewo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b4-e04",
+      "prompt": "w prawo",
+      "options": [
+        {
+          "en": "left"
+        },
+        {
+          "en": "straight on"
+        },
+        {
+          "en": "right (skręcić w prawo: to turn right)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-prawo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-b4-e05",
+      "text": "proszę skręcić w lewo",
+      "meaning": {
+        "en": "turn left, please"
+      },
+      "distractors": [
+        "proszę skręcić w prawo",
+        "proszę iść prosto"
+      ],
+      "items": [
+        "prosze",
+        "skrecic",
+        "w-lewo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-b4-e06",
+      "prompt": {
+        "en": "go straight on, then turn right"
+      },
+      "acceptedAnswers": [
+        "proszę iść prosto, potem skręcić w prawo"
+      ],
+      "distractors": [
+        "lewo",
+        "jechać"
+      ],
+      "items": [
+        "prosze",
+        "isc",
+        "prosto",
+        "potem",
+        "skrecic",
+        "w-prawo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b4-e07",
+      "prompt": "na rogu",
+      "options": [
+        {
+          "en": "on the corner"
+        },
+        {
+          "en": "in the middle"
+        },
+        {
+          "en": "opposite"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-rogu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b4-e08",
+      "prompt": "naprzeciwko",
+      "options": [
+        {
+          "en": "on the corner"
+        },
+        {
+          "en": "opposite (naprzeciwko jest wieża: opposite is a tower)"
+        },
+        {
+          "en": "behind"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "naprzeciwko"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-b4-e09",
+      "acceptedAnswers": [
+        "tu na rogu jest kawiarnia"
+      ],
+      "meaning": {
+        "en": "here on the corner there is a café"
+      },
+      "items": [
+        "tu",
+        "na-rogu",
+        "byc-jest",
+        "kawiarnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b4-e10",
+      "prompt": "na górze",
+      "options": [
+        {
+          "en": "at the bottom"
+        },
+        {
+          "en": "outside"
+        },
+        {
+          "en": "at the top, upstairs"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-gorze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b4-e11",
+      "prompt": "na dole",
+      "options": [
+        {
+          "en": "at the bottom, downstairs"
+        },
+        {
+          "en": "at the top"
+        },
+        {
+          "en": "inside"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-dole"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-b4-e12",
+      "text": "Kawiarnia jest ___, a sklep ___.",
+      "meaning": {
+        "en": "The café is upstairs, and the shop downstairs."
+      },
+      "gaps": [
+        [
+          "na górze"
+        ],
+        [
+          "na dole"
+        ]
+      ],
+      "distractors": [
+        "na rogu",
+        "prosto"
+      ],
+      "items": [
+        "kawiarnia",
+        "byc-jest",
+        "na-gorze",
+        "a",
+        "sklep",
+        "na-dole"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-b4-e13",
+      "prompt": {
+        "en": "turn left, please"
+      },
+      "acceptedAnswers": [
+        "proszę skręcić w lewo"
+      ],
+      "items": [
+        "prosze",
+        "skrecic",
+        "w-lewo"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-b4-e14",
+      "pairs": [
+        {
+          "polish": "prosto",
+          "meaning": {
+            "en": "straight on"
+          }
+        },
+        {
+          "polish": "w lewo",
+          "meaning": {
+            "en": "left"
+          }
+        },
+        {
+          "polish": "w prawo",
+          "meaning": {
+            "en": "right"
+          }
+        },
+        {
+          "polish": "na rogu",
+          "meaning": {
+            "en": "on the corner"
+          }
+        },
+        {
+          "polish": "naprzeciwko",
+          "meaning": {
+            "en": "opposite"
+          }
+        },
+        {
+          "polish": "na górze",
+          "meaning": {
+            "en": "at the top"
+          }
+        }
+      ],
+      "items": [
+        "prosto",
+        "w-lewo",
+        "w-prawo",
+        "na-rogu",
+        "naprzeciwko",
+        "na-gorze"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-b4-e15",
+      "lines": [
+        "Proszę iść prosto, potem skręcić w lewo, a następnie w prawo.",
+        "Na rogu jest kawiarnia.",
+        "Naprzeciwko jest wieża."
+      ],
+      "meaning": {
+        "en": "Directions."
+      },
+      "statements": [
+        {
+          "text": "Najpierw skręcamy w prawo.",
+          "meaning": {
+            "en": "First we turn right."
+          },
+          "true": false
+        },
+        {
+          "text": "Kawiarnia jest na rogu.",
+          "meaning": {
+            "en": "The café is on the corner."
+          },
+          "true": true
+        },
+        {
+          "text": "Naprzeciwko jest wieża.",
+          "meaning": {
+            "en": "Opposite there is a tower."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "prosto",
+        "skrecic",
+        "w-lewo",
+        "w-prawo",
+        "na-rogu",
+        "naprzeciwko"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "id": "kpk1-l14-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Zwiedzamy",
+    "meaning": {
+      "en": "We are sightseeing"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-b2-t01",
+      "before": "kpk1-l14-b2-e01",
+      "title": {
+        "en": "Co to jest?"
+      },
+      "body": {
+        "en": "What you visit: *kościół* (a church) and *katedra* (a cathedral), *ratusz* (the town hall, where the mayor works), *zamek* (a castle, such as the *Zamek Królewski* on Wawel), *pomnik* (a monument) and *wieża* (a tower: *dwie wieże*, two towers)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b2-e01",
+      "prompt": "kościół",
+      "options": [
+        {
+          "en": "a castle"
+        },
+        {
+          "en": "a tower"
+        },
+        {
+          "en": "a church"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kosciol"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b2-e02",
+      "prompt": "katedra",
+      "options": [
+        {
+          "en": "a cathedral"
+        },
+        {
+          "en": "a town hall"
+        },
+        {
+          "en": "a museum"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "katedra"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b2-e03",
+      "prompt": "ratusz",
+      "options": [
+        {
+          "en": "a castle"
+        },
+        {
+          "en": "a town hall"
+        },
+        {
+          "en": "a church"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ratusz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-b2-e04",
+      "text": "to jest ratusz",
+      "meaning": {
+        "en": "this is the town hall"
+      },
+      "distractors": [
+        "to jest zamek",
+        "to nie jest ratusz"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "ratusz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b2-e05",
+      "prompt": "zamek",
+      "options": [
+        {
+          "en": "a cathedral"
+        },
+        {
+          "en": "a monument"
+        },
+        {
+          "en": "a castle"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zamek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b2-e06",
+      "prompt": "pomnik",
+      "options": [
+        {
+          "en": "a monument, a statue"
+        },
+        {
+          "en": "a tower"
+        },
+        {
+          "en": "a bridge"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pomnik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b2-e07",
+      "prompt": "wieża",
+      "options": [
+        {
+          "en": "a monument"
+        },
+        {
+          "en": "a tower (dwie wieże: two towers)"
+        },
+        {
+          "en": "a stop"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wieza"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-b2-e08",
+      "prompt": {
+        "en": "the church has two towers"
+      },
+      "acceptedAnswers": [
+        "kościół ma dwie wieże"
+      ],
+      "distractors": [
+        "zamek",
+        "most"
+      ],
+      "items": [
+        "kosciol",
+        "miec-ma",
+        "dwie",
+        "wieza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b2-e09",
+      "prompt": "znany",
+      "options": [
+        {
+          "en": "beautiful"
+        },
+        {
+          "en": "old"
+        },
+        {
+          "en": "famous, well-known (znany, znana, znane)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "znany"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b2-e10",
+      "prompt": "na Wawelu",
+      "options": [
+        {
+          "en": "on Wawel (the hill with the castle in Kraków)"
+        },
+        {
+          "en": "on the market square"
+        },
+        {
+          "en": "by the river"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-wawelu"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-b2-e11",
+      "text": "Na Wawelu jest ___ i ___.",
+      "meaning": {
+        "en": "On Wawel there is a cathedral and a castle."
+      },
+      "gaps": [
+        [
+          "katedra"
+        ],
+        [
+          "zamek"
+        ]
+      ],
+      "distractors": [
+        "ratusz",
+        "pomnik"
+      ],
+      "items": [
+        "na-wawelu",
+        "byc-jest",
+        "katedra",
+        "i",
+        "zamek"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-b2-e12",
+      "acceptedAnswers": [
+        "to znany pomnik"
+      ],
+      "meaning": {
+        "en": "this is a famous monument"
+      },
+      "items": [
+        "to",
+        "znany",
+        "pomnik"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-b2-e13",
+      "prompt": {
+        "en": "a church"
+      },
+      "acceptedAnswers": [
+        "kościół"
+      ],
+      "items": [
+        "kosciol"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-b2-e14",
+      "pairs": [
+        {
+          "polish": "kościół",
+          "meaning": {
+            "en": "a church"
+          }
+        },
+        {
+          "polish": "katedra",
+          "meaning": {
+            "en": "a cathedral"
+          }
+        },
+        {
+          "polish": "ratusz",
+          "meaning": {
+            "en": "a town hall"
+          }
+        },
+        {
+          "polish": "zamek",
+          "meaning": {
+            "en": "a castle"
+          }
+        },
+        {
+          "polish": "pomnik",
+          "meaning": {
+            "en": "a monument"
+          }
+        },
+        {
+          "polish": "wieża",
+          "meaning": {
+            "en": "a tower"
+          }
+        }
+      ],
+      "items": [
+        "kosciol",
+        "katedra",
+        "ratusz",
+        "zamek",
+        "pomnik",
+        "wieza"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-b2-e15",
+      "lines": [
+        "Na Rynku w Krakowie jest wieża ratuszowa i znany pomnik.",
+        "Kościół Mariacki ma dwie wieże.",
+        "Na Wawelu jest katedra i zamek."
+      ],
+      "meaning": {
+        "en": "What there is to see in Kraków."
+      },
+      "statements": [
+        {
+          "text": "Kościół Mariacki ma jedną wieżę.",
+          "meaning": {
+            "en": "Kościół Mariacki has one tower."
+          },
+          "true": false
+        },
+        {
+          "text": "Na Wawelu jest zamek.",
+          "meaning": {
+            "en": "There is a castle on Wawel."
+          },
+          "true": true
+        },
+        {
+          "text": "Na Rynku jest znany pomnik.",
+          "meaning": {
+            "en": "There is a famous monument on the Rynek."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "wieza",
+        "znany",
+        "pomnik",
+        "kosciol",
+        "katedra",
+        "zamek",
+        "na-wawelu"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l14-b2-e16",
+      "lines": [
+        "Przepraszam, co to jest?",
+        "To jest ratusz.",
+        "A to?",
+        "To znany pomnik."
+      ],
+      "meaning": {
+        "en": "What is this?"
+      },
+      "items": [
+        "przepraszam",
+        "co",
+        "to",
+        "byc-jest",
+        "ratusz",
+        "a",
+        "znany",
+        "pomnik"
+      ]
+    }
+  ]
+}

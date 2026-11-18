@@ -7449,6 +7449,651 @@
         11,
         12
       ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-151-1",
+      "track": 151,
+      "statement": "Quiz jest za kwadrans.",
+      "meaning": {
+        "en": "The quiz is in a quarter of an hour."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-151-2",
+      "track": 151,
+      "question": "Dokąd ona zwykle chodzi?",
+      "meaning": {
+        "en": "Where does she usually go?"
+      },
+      "options": [
+        "Na wykłady albo warsztaty.",
+        "Na quiz.",
+        "Na basen."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-151-3",
+      "track": 151,
+      "statement": "Ona nie chce wygrać.",
+      "meaning": {
+        "en": "She does not want to win."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l14-151-4",
+      "track": 151,
+      "question": "Jaka jest nagroda? „… po Krakowie”",
+      "meaning": {
+        "en": "What is the prize? \"A … to Kraków\" (a guidebook)"
+      },
+      "acceptedAnswers": [
+        "przewodnik"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-152-1",
+      "track": 152,
+      "statement": "Quiz wygrała kobieta.",
+      "meaning": {
+        "en": "A woman won the quiz."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-152-2",
+      "track": 152,
+      "statement": "Ona była już w Krakowie.",
+      "meaning": {
+        "en": "She had already been to Kraków."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-152-3",
+      "track": 152,
+      "question": "Skąd ona to wszystko wiedziała?",
+      "meaning": {
+        "en": "How did she know all that?"
+      },
+      "options": [
+        "Dużo czytała w internecie.",
+        "Była już w Krakowie.",
+        "Miała przewodnik."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-152-4",
+      "track": 152,
+      "question": "Czym ona interesuje się ostatnio?",
+      "meaning": {
+        "en": "What has she been interested in lately?"
+      },
+      "options": [
+        "Sportem i muzyką.",
+        "Architekturą i historią.",
+        "Kuchnią."
+      ],
+      "correctOption": 1,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-152-5",
+      "track": 152,
+      "statement": "Ona i Karolina często chodzą po Krakowie i fotografują.",
+      "meaning": {
+        "en": "She and Karolina often walk around Kraków and take photos."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l14-152-6",
+      "track": 152,
+      "question": "Dokąd ona jedzie jutro? „Do Nowej …”",
+      "meaning": {
+        "en": "Where is she going tomorrow? \"To Nowa …\""
+      },
+      "acceptedAnswers": [
+        "Huty"
+      ],
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-152-7",
+      "track": 152,
+      "question": "Dokąd zaraz idzie druga dziewczyna?",
+      "meaning": {
+        "en": "Where is the other girl going in a moment?"
+      },
+      "options": [
+        "Na legendy.",
+        "Na basen.",
+        "Do Nowej Huty."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-152-8",
+      "track": 152,
+      "statement": "Po południu Javier zwykle jeździ na basen.",
+      "meaning": {
+        "en": "In the afternoon Javier usually goes to the swimming pool."
+      },
+      "answer": true,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-152-9",
+      "track": 152,
+      "question": "Czym jedzie Javier?",
+      "meaning": {
+        "en": "How is Javier travelling?"
+      },
+      "options": [
+        "Autobusem.",
+        "Rowerem.",
+        "Tramwajem."
+      ],
+      "correctOption": 1,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l14-152-10",
+      "track": 152,
+      "question": "O której Javier ma być na rynku? „O …”",
+      "meaning": {
+        "en": "At what time does Javier have to be at the market square? (a number)"
+      },
+      "acceptedAnswers": [
+        "16",
+        "szesnastej"
+      ],
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-153-1",
+      "track": 153,
+      "question": "Jakie jest pierwsze słowo?",
+      "meaning": {
+        "en": "What is the first word?"
+      },
+      "options": [
+        "Miasto.",
+        "Stolica.",
+        "Rzeka."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l14-153-2",
+      "track": 153,
+      "question": "Jakie jest słowo numer cztery?",
+      "meaning": {
+        "en": "What is word number four? (a crossroads)"
+      },
+      "acceptedAnswers": [
+        "skrzyżowanie"
+      ],
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-153-3",
+      "track": 153,
+      "question": "Jakie jest słowo numer dziewięć?",
+      "meaning": {
+        "en": "What is word number nine?"
+      },
+      "options": [
+        "Most.",
+        "Rzeka.",
+        "Ratusz."
+      ],
+      "correctOption": 1,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l14-153-4",
+      "track": 153,
+      "question": "Jakie jest słowo numer dwanaście?",
+      "meaning": {
+        "en": "What is word number twelve? (a tower)"
+      },
+      "acceptedAnswers": [
+        "wieża"
+      ],
+      "lines": [
+        17,
+        18
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-154-1",
+      "track": 154,
+      "question": "Gdzie są turyści na początku?",
+      "meaning": {
+        "en": "Where are the tourists at the start?"
+      },
+      "options": [
+        "Na Rynku.",
+        "Na Wawelu.",
+        "Na uniwersytecie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-154-2",
+      "track": 154,
+      "statement": "Na wprost jest pomnik Adama Mickiewicza.",
+      "meaning": {
+        "en": "Straight ahead is Adam Mickiewicz's monument."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-154-3",
+      "track": 154,
+      "question": "Kim był Adam Mickiewicz?",
+      "meaning": {
+        "en": "Who was Adam Mickiewicz?"
+      },
+      "options": [
+        "Znanym poetą.",
+        "Przewodnikiem.",
+        "Trębaczem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-154-4",
+      "track": 154,
+      "statement": "Kościół Mariacki jest po lewej stronie.",
+      "meaning": {
+        "en": "Kościół Mariacki is on the left."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l14-154-5",
+      "track": 154,
+      "question": "Ile wież ma kościół Mariacki?",
+      "meaning": {
+        "en": "How many towers does Kościół Mariacki have? (a number)"
+      },
+      "acceptedAnswers": [
+        "dwie",
+        "2"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-154-6",
+      "track": 154,
+      "question": "Co gra trębacz?",
+      "meaning": {
+        "en": "What does the trumpeter play?"
+      },
+      "options": [
+        "Hejnał.",
+        "Jazz.",
+        "Legendę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-154-7",
+      "track": 154,
+      "statement": "Hejnał jest zawsze o pełnej godzinie.",
+      "meaning": {
+        "en": "The bugle call is always on the hour."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-154-8",
+      "track": 154,
+      "question": "Co jest na Wawelu?",
+      "meaning": {
+        "en": "What is on Wawel?"
+      },
+      "options": [
+        "Ratusz i muzeum.",
+        "Katedra i Zamek Królewski.",
+        "Sklepy z pamiątkami."
+      ],
+      "correctOption": 1,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-154-9",
+      "track": 154,
+      "question": "Jak dojść na uniwersytet?",
+      "meaning": {
+        "en": "How do you get to the university?"
+      },
+      "options": [
+        "Prosto, potem w lewo, a następnie w prawo.",
+        "Prosto, potem w prawo, a następnie w lewo.",
+        "W lewo, a następnie prosto."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-154-10",
+      "track": 154,
+      "statement": "Przewodnik też idzie na uniwersytet.",
+      "meaning": {
+        "en": "The guide is going to the university too."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-155-1",
+      "track": 155,
+      "question": "Co można kupić na rogu?",
+      "meaning": {
+        "en": "What can you buy on the corner?"
+      },
+      "options": [
+        "Precle.",
+        "Pamiątki.",
+        "Kawę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l14-155-2",
+      "track": 155,
+      "question": "Dokąd idą wieczorem? „Do …”",
+      "meaning": {
+        "en": "Where are they going in the evening? \"To the …\""
+      },
+      "acceptedAnswers": [
+        "pubu"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-155-3",
+      "track": 155,
+      "statement": "Najpierw jest zdjęcie grupowe w środku.",
+      "meaning": {
+        "en": "First there is a group photo inside."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-155-4",
+      "track": 155,
+      "question": "Gdzie jest idealne miejsce na zdjęcie?",
+      "meaning": {
+        "en": "Where is the perfect place for the photo?"
+      },
+      "options": [
+        "Na schodach naprzeciwko.",
+        "W pubie.",
+        "Na Wawelu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-155-5",
+      "track": 155,
+      "statement": "Ktoś chce stać w środku.",
+      "meaning": {
+        "en": "Someone wants to stand in the middle."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-156-1",
+      "track": 156,
+      "statement": "Ona czekała na górze.",
+      "meaning": {
+        "en": "She was waiting upstairs."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-156-2",
+      "track": 156,
+      "question": "Dlaczego nie ma Karoliny?",
+      "meaning": {
+        "en": "Why is Karolina not here?"
+      },
+      "options": [
+        "Musi się uczyć.",
+        "Jest chora.",
+        "Jest w pubie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-156-3",
+      "track": 156,
+      "statement": "Oni wiedzą, gdzie jest Javier.",
+      "meaning": {
+        "en": "They know where Javier is."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l14-156-4",
+      "track": 156,
+      "question": "Ile minut czekają na kolegów?",
+      "meaning": {
+        "en": "How many minutes do they wait for their friends? (a number)"
+      },
+      "acceptedAnswers": [
+        "5",
+        "pięć"
+      ],
+      "lines": [
+        8,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l14-156-5",
+      "track": 156,
+      "question": "Gdzie jest osoba przy telefonie?",
+      "meaning": {
+        "en": "Where is the person on the phone?"
+      },
+      "options": [
+        "W środku.",
+        "Na zewnątrz.",
+        "W domu."
+      ],
+      "correctOption": 1,
+      "lines": [
+        10,
+        12
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l14-156-6",
+      "track": 156,
+      "statement": "Oni są w środku.",
+      "meaning": {
+        "en": "They are inside."
+      },
+      "answer": true,
+      "lines": [
+        13,
+        14
+      ]
     }
   ]
 }

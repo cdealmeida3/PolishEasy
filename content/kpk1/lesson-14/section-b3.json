@@ -1,0 +1,394 @@
+{
+  "id": "kpk1-l14-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Zwiedzamy",
+    "meaning": {
+      "en": "We are sightseeing"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-b3-t01",
+      "before": "kpk1-l14-b3-e01",
+      "title": {
+        "en": "Na wprost, po prawej stronie"
+      },
+      "body": {
+        "en": "A guide shows the way: *na wprost jest pomnik* (straight ahead there is a monument), *po prawej stronie jest kościół* (on the right), *po lewej stronie jest ulica* (on the left), and *za pomnikiem* is behind the monument. *Sklepy z pamiątkami* are souvenir shops."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b3-e01",
+      "prompt": "na wprost",
+      "options": [
+        {
+          "en": "on the left"
+        },
+        {
+          "en": "straight ahead, in front of you"
+        },
+        {
+          "en": "behind"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-wprost"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b3-e02",
+      "prompt": "po prawej stronie",
+      "options": [
+        {
+          "en": "on the left"
+        },
+        {
+          "en": "straight ahead"
+        },
+        {
+          "en": "on the right"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "po-prawej-stronie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b3-e03",
+      "prompt": "po lewej stronie",
+      "options": [
+        {
+          "en": "on the left"
+        },
+        {
+          "en": "on the right"
+        },
+        {
+          "en": "behind the monument"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "po-lewej-stronie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-b3-e04",
+      "text": "po prawej stronie jest kościół",
+      "meaning": {
+        "en": "on the right there is a church"
+      },
+      "distractors": [
+        "po lewej stronie jest kościół",
+        "po prawej stronie jest zamek"
+      ],
+      "items": [
+        "po-prawej-stronie",
+        "byc-jest",
+        "kosciol"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b3-e05",
+      "prompt": "za pomnikiem",
+      "options": [
+        {
+          "en": "in front of the monument"
+        },
+        {
+          "en": "behind the monument"
+        },
+        {
+          "en": "by the river"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "za-pomnikiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b3-e06",
+      "prompt": "poeta",
+      "options": [
+        {
+          "en": "a painter"
+        },
+        {
+          "en": "a guide"
+        },
+        {
+          "en": "a poet"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "poeta"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-b3-e07",
+      "prompt": {
+        "en": "straight ahead there is a monument"
+      },
+      "acceptedAnswers": [
+        "na wprost jest pomnik"
+      ],
+      "distractors": [
+        "lewej",
+        "zamek"
+      ],
+      "items": [
+        "na-wprost",
+        "byc-jest",
+        "pomnik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b3-e08",
+      "prompt": "z pamiątkami",
+      "options": [
+        {
+          "en": "with souvenirs (sklepy z pamiątkami: souvenir shops)"
+        },
+        {
+          "en": "with sweets"
+        },
+        {
+          "en": "with books"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-pamiatkami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b3-e09",
+      "prompt": "hejnał",
+      "options": [
+        {
+          "en": "a legend"
+        },
+        {
+          "en": "the bugle call (played from the tower of Kościół Mariacki)"
+        },
+        {
+          "en": "a tower"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "hejnal"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-b3-e10",
+      "text": "To ___ poeta romantyczny. ___ jest muzeum.",
+      "meaning": {
+        "en": "He is a famous romantic poet. Behind the monument there is a museum."
+      },
+      "gaps": [
+        [
+          "znany"
+        ],
+        [
+          "Za pomnikiem"
+        ]
+      ],
+      "distractors": [
+        "piękny",
+        "Na wprost"
+      ],
+      "items": [
+        "to",
+        "znany",
+        "poeta",
+        "romantyczny",
+        "za-pomnikiem",
+        "byc-jest",
+        "muzeum"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-b3-e11",
+      "acceptedAnswers": [
+        "po lewej stronie jest ulica"
+      ],
+      "meaning": {
+        "en": "on the left there is a street"
+      },
+      "items": [
+        "po-lewej-stronie",
+        "byc-jest",
+        "ulica"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-b3-e12",
+      "prompt": {
+        "en": "on the right"
+      },
+      "acceptedAnswers": [
+        "po prawej stronie"
+      ],
+      "items": [
+        "po-prawej-stronie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-b3-e13",
+      "prompt": {
+        "en": "with souvenirs"
+      },
+      "acceptedAnswers": [
+        "z pamiątkami"
+      ],
+      "items": [
+        "z-pamiatkami"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-b3-e14",
+      "pairs": [
+        {
+          "polish": "na wprost",
+          "meaning": {
+            "en": "straight ahead"
+          }
+        },
+        {
+          "polish": "po prawej stronie",
+          "meaning": {
+            "en": "on the right"
+          }
+        },
+        {
+          "polish": "po lewej stronie",
+          "meaning": {
+            "en": "on the left"
+          }
+        },
+        {
+          "polish": "za pomnikiem",
+          "meaning": {
+            "en": "behind the monument"
+          }
+        },
+        {
+          "polish": "poeta",
+          "meaning": {
+            "en": "a poet"
+          }
+        },
+        {
+          "polish": "hejnał",
+          "meaning": {
+            "en": "the bugle call"
+          }
+        }
+      ],
+      "items": [
+        "na-wprost",
+        "po-prawej-stronie",
+        "po-lewej-stronie",
+        "za-pomnikiem",
+        "poeta",
+        "hejnal"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-b3-e15",
+      "lines": [
+        "Jesteśmy na Rynku. Na wprost jest pomnik. To znany poeta.",
+        "Za pomnikiem jest muzeum, kawiarnia i sklepy z pamiątkami.",
+        "Po prawej stronie jest kościół. Słyszycie? To hejnał."
+      ],
+      "meaning": {
+        "en": "The guide's tour."
+      },
+      "statements": [
+        {
+          "text": "Muzeum jest za pomnikiem.",
+          "meaning": {
+            "en": "The museum is behind the monument."
+          },
+          "true": true
+        },
+        {
+          "text": "Kościół jest po lewej stronie.",
+          "meaning": {
+            "en": "The church is on the left."
+          },
+          "true": false
+        },
+        {
+          "text": "Na wprost jest pomnik.",
+          "meaning": {
+            "en": "Straight ahead there is a monument."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "na-wprost",
+        "pomnik",
+        "za-pomnikiem",
+        "z-pamiatkami",
+        "po-prawej-stronie",
+        "kosciol",
+        "hejnal"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l14-b3-e16",
+      "lines": [
+        "Dzień dobry państwu! Jestem przewodnikiem.",
+        "Na wprost jest pomnik.",
+        "Po prawej stronie jest kościół.",
+        "A po lewej stronie jest muzeum."
+      ],
+      "meaning": {
+        "en": "A guide starts the tour."
+      },
+      "items": [
+        "dzien-dobry",
+        "byc-jestem",
+        "przewodnik",
+        "na-wprost",
+        "byc-jest",
+        "pomnik",
+        "po-prawej-stronie",
+        "kosciol",
+        "po-lewej-stronie",
+        "muzeum"
+      ]
+    }
+  ]
+}

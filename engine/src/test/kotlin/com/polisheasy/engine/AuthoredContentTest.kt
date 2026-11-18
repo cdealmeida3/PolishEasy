@@ -227,7 +227,7 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 } + List(17) { 8 } + List(14) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 } + List(17) { 8 } + List(14) { 8 } + List(15) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
@@ -242,7 +242,8 @@ class AuthoredContentTest {
                 listOf(8, 8, 8, 8, 7, 8, 8, 8, 8, 7, 8, 8, 8, 8) +
                 listOf(8, 8, 8, 8, 8, 7, 5, 8, 7, 8, 8, 8, 3) +
                 listOf(8, 8, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 3) +
-                listOf(8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 8, 7, 7, 8),
+                listOf(8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 8, 7, 7, 8) +
+                listOf(8, 6, 6, 8, 7, 7, 8, 8, 7, 8, 7, 8, 8, 8, 4),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -296,8 +297,8 @@ class AuthoredContentTest {
         assertEquals(14, book[10].sections)
         assertEquals("Rodzina", book[11].title)
         assertEquals(13, book[11].sections)
-        assertTrue(book.take(14).none { it.coming })
-        assertTrue(book.drop(14).all { it.coming })
+        assertTrue(book.take(15).none { it.coming })
+        assertTrue(book.drop(15).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 

@@ -1,0 +1,379 @@
+{
+  "id": "kpk1-l14-a6",
+  "section": {
+    "letter": "A",
+    "heading": "Uczymy się o Krakowie",
+    "meaning": {
+      "en": "We are learning about Kraków"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-a6-t01",
+      "before": "kpk1-l14-a6-e01",
+      "title": {
+        "en": "Metrem, windą"
+      },
+      "body": {
+        "en": "More ways to go, all after *jechać* or *jeździć*: *metrem* (by underground), *motocyklem*, *skuterem*, and with *-ą*, *hulajnogą* (by kick scooter), *windą* (by lift), *dorożką* (by horse-drawn carriage, as tourists do in the old town)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a6-e01",
+      "prompt": "metrem",
+      "options": [
+        {
+          "en": "by tram"
+        },
+        {
+          "en": "by train"
+        },
+        {
+          "en": "by underground, by metro (metro)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "metrem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a6-e02",
+      "prompt": "motocyklem",
+      "options": [
+        {
+          "en": "by motorbike (motocykl)"
+        },
+        {
+          "en": "by bike"
+        },
+        {
+          "en": "by car"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "motocyklem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a6-e03",
+      "prompt": "skuterem",
+      "options": [
+        {
+          "en": "by kick scooter"
+        },
+        {
+          "en": "by scooter (skuter: a motor scooter)"
+        },
+        {
+          "en": "by motorbike"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "skuterem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-a6-e04",
+      "text": "w Warszawie jeżdżę metrem",
+      "meaning": {
+        "en": "in Warsaw I go by underground"
+      },
+      "distractors": [
+        "w Warszawie jeżdżę tramwajem",
+        "w Warszawie jadę metrem"
+      ],
+      "items": [
+        "w-warszawie",
+        "jezdzic-jezdze",
+        "metrem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a6-e05",
+      "prompt": "hulajnogą",
+      "options": [
+        {
+          "en": "by scooter (with an engine)"
+        },
+        {
+          "en": "by bike"
+        },
+        {
+          "en": "by kick scooter (hulajnoga)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "hulajnoga"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a6-e06",
+      "prompt": "windą",
+      "options": [
+        {
+          "en": "by lift (winda: a lift)"
+        },
+        {
+          "en": "by stairs"
+        },
+        {
+          "en": "by taxi"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "winda"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-a6-e07",
+      "prompt": {
+        "en": "I go to school by kick scooter"
+      },
+      "acceptedAnswers": [
+        "jeżdżę do szkoły hulajnogą",
+        "do szkoły jeżdżę hulajnogą"
+      ],
+      "distractors": [
+        "idę",
+        "windą"
+      ],
+      "items": [
+        "jezdzic-jezdze",
+        "do-szkoly",
+        "hulajnoga"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a6-e08",
+      "prompt": "dorożką",
+      "options": [
+        {
+          "en": "by horse"
+        },
+        {
+          "en": "by horse-drawn carriage (dorożka)"
+        },
+        {
+          "en": "by tram"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dorozka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a6-e09",
+      "prompt": "na wakacje",
+      "options": [
+        {
+          "en": "to work"
+        },
+        {
+          "en": "on a trip"
+        },
+        {
+          "en": "on holiday (jechać na wakacje: to go on holiday)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-wakacje"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-a6-e10",
+      "text": "Czym jeździcie na wakacje? Zwykle ___, a w Krakowie ___.",
+      "meaning": {
+        "en": "How do you go on holiday? Usually by car, and in Kraków by horse-drawn carriage."
+      },
+      "gaps": [
+        [
+          "samochodem"
+        ],
+        [
+          "dorożką"
+        ]
+      ],
+      "distractors": [
+        "pieszo",
+        "windą"
+      ],
+      "items": [
+        "czym",
+        "jezdzic-jezdzicie",
+        "na-wakacje",
+        "zwykle",
+        "samochodem",
+        "a",
+        "w-krakowie",
+        "dorozka"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-a6-e11",
+      "acceptedAnswers": [
+        "jedziemy windą"
+      ],
+      "meaning": {
+        "en": "we are going by lift"
+      },
+      "items": [
+        "jechac-jedziemy",
+        "winda"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-a6-e12",
+      "prompt": {
+        "en": "by motorbike"
+      },
+      "acceptedAnswers": [
+        "motocyklem"
+      ],
+      "items": [
+        "motocyklem"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a6-e13",
+      "verb": "jeździć",
+      "meaning": {
+        "en": "to go (by car, bus, bike…, regularly)"
+      },
+      "person": "oni",
+      "sentence": "W Krakowie często ___ dorożką.",
+      "sentenceMeaning": {
+        "en": "In Kraków they often go by horse-drawn carriage."
+      },
+      "acceptedAnswers": [
+        "jeżdżą"
+      ],
+      "items": [
+        "w-krakowie",
+        "czesto",
+        "jezdzic-jezdza",
+        "dorozka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-a6-e14",
+      "pairs": [
+        {
+          "polish": "metrem",
+          "meaning": {
+            "en": "by underground"
+          }
+        },
+        {
+          "polish": "motocyklem",
+          "meaning": {
+            "en": "by motorbike"
+          }
+        },
+        {
+          "polish": "skuterem",
+          "meaning": {
+            "en": "by scooter"
+          }
+        },
+        {
+          "polish": "hulajnogą",
+          "meaning": {
+            "en": "by kick scooter"
+          }
+        },
+        {
+          "polish": "windą",
+          "meaning": {
+            "en": "by lift"
+          }
+        },
+        {
+          "polish": "dorożką",
+          "meaning": {
+            "en": "by carriage"
+          }
+        }
+      ],
+      "items": [
+        "metrem",
+        "motocyklem",
+        "skuterem",
+        "hulajnoga",
+        "winda",
+        "dorozka"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-a6-e15",
+      "lines": [
+        "Mój tata jeździ motocyklem, a mój kolega skuterem.",
+        "W dużych miastach często jeździmy metrem.",
+        "A w nocy jeździmy taksówką. Na wakacje jeździmy samochodem."
+      ],
+      "meaning": {
+        "en": "How people get around."
+      },
+      "statements": [
+        {
+          "text": "W nocy jeździmy tramwajem.",
+          "meaning": {
+            "en": "At night we go by tram."
+          },
+          "true": false
+        },
+        {
+          "text": "W dużych miastach jeździmy metrem.",
+          "meaning": {
+            "en": "In big cities we go by underground."
+          },
+          "true": true
+        },
+        {
+          "text": "W nocy jeździmy taksówką.",
+          "meaning": {
+            "en": "At night we go by taxi."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "motocyklem",
+        "skuterem",
+        "metrem",
+        "w-nocy",
+        "taksowka-instr",
+        "jezdzic-jezdzimy",
+        "na-wakacje",
+        "samochodem"
+      ]
+    }
+  ]
+}
