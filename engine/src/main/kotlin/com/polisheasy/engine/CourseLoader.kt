@@ -87,7 +87,15 @@ internal data class PracticeFile(
     val packaging: List<PackageFile> = emptyList(),
     /** The phrases of How many?. */
     val counting: List<CountFile> = emptyList(),
+    /** The forecasts of Forecaster. */
+    val forecasts: List<ForecastFile> = emptyList(),
+    /** The Items Word search hides, each one word. */
+    val wordSearch: List<String> = emptyList(),
 )
+
+/** One forecast of Forecaster: its [text], what it means, the [weather] signs it names (Items with a Picture), its temperature in [degrees] Celsius, and the Items it uses. */
+@Serializable
+internal data class ForecastFile(val text: String, val meaning: Localized, val weather: List<String>, val degrees: Int, val items: List<String>)
 
 /** One phrase of Packaging match: its [text], *puszka coli*, what it means, the [container] Item it starts with, the other containers that [also] go with it, and the Items it uses. */
 @Serializable
@@ -364,6 +372,9 @@ internal class ReadContent(
                 .filter { ' ' in it.text }.distinctBy { it.text },
             counting = practice?.counting.orEmpty().map { CountPhrase(it.text, it.meaning, it.item, it.count, it.items.distinct()) }
                 .filter { ' ' in it.text && it.count in Counting.COUNTS }.distinctBy { it.text },
+            forecasts = practice?.forecasts.orEmpty().map { Forecast(it.text, it.meaning, it.weather.distinct(), it.degrees, it.items.distinct()) }
+                .filter { it.weather.isNotEmpty() }.distinctBy { it.text },
+            wordSearch = practice?.wordSearch.orEmpty().distinct(),
         )
     }
 
@@ -574,6 +585,8 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         problems += swapProblems(file, practice.swaps, course, content.itemsComplete)
         problems += packagingProblems(file, practice.packaging, course, content.itemsComplete)
         problems += countingProblems(file, practice.counting, course, content.itemsComplete)
+        problems += forecastProblems(file, practice.forecasts, course, content.itemsComplete)
+        problems += wordSearchProblems(file, practice.wordSearch, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -1236,5 +1249,45 @@ private fun ankietaProblems(content: ReadContent): List<ContentProblem> {
             if (wrong.any { it.equals(person.answers[field], ignoreCase = true) }) problem("gives the right answer to $field as a wrong one")
         }
     }
+    return problems
+}
+
+/** What is wrong with Forecaster: each forecast naming weather signs that are defined Items with a Picture and among its Items, a temperature a forecast can have, Items; nothing twice; enough signs for the board. */
+private fun forecastProblems(file: String, forecasts: List<ForecastFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    forecasts.forEach { forecast ->
+        if (forecast.weather.isEmpty()) problems += ContentProblem(file, null, "The forecast \"${forecast.text}\" names no weather")
+        forecast.weather.forEach { id ->
+            when {
+                itemsComplete && id !in course.itemsById -> problems += ContentProblem(file, id, "The forecast \"${forecast.text}\" names weather $id, which is not defined")
+                itemsComplete && id !in course.pictures -> problems += ContentProblem(file, id, "The forecast \"${forecast.text}\" names weather $id, which has no Picture")
+            }
+        }
+        if (forecast.degrees !in -40..45) problems += ContentProblem(file, null, "The forecast \"${forecast.text}\" gives ${forecast.degrees} degrees, not -40 to 45")
+        if (forecast.items.isEmpty()) problems += ContentProblem(file, null, "The forecast \"${forecast.text}\" lists no Items")
+        forecast.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "The forecast \"${forecast.text}\" names Item $id, which is not defined")
+        }
+    }
+    val signs = forecasts.flatMap { it.weather }.distinct()
+    if (forecasts.isNotEmpty() && signs.size < Forecaster.BOARD) {
+        problems += ContentProblem(file, null, "The forecasts name ${signs.size} weather signs, fewer than the ${Forecaster.BOARD} on the board")
+    }
+    forecasts.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The forecast \"$text\" is listed more than once") }
+    return problems
+}
+
+/** What is wrong with Word search: each Item defined and one word of letters, short enough for a phone's grid; nothing twice. */
+private fun wordSearchProblems(file: String, words: List<String>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    words.forEach { id ->
+        val item = course.itemsById[id]
+        when {
+            itemsComplete && item == null -> problems += ContentProblem(file, id, "Word search hides Item $id, which is not defined")
+            item != null && !item.text.all(Char::isLetter) -> problems += ContentProblem(file, id, "Word search hides \"${item.text}\", which is not one word of letters")
+            item != null && item.text.length > WordSearch.LONGEST -> problems += ContentProblem(file, id, "Word search hides \"${item.text}\", longer than ${WordSearch.LONGEST} letters")
+        }
+    }
+    words.repeated().forEach { id -> problems += ContentProblem(file, id, "Word search lists Item $id more than once") }
     return problems
 }

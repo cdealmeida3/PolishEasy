@@ -46,6 +46,7 @@ import com.polisheasy.engine.UnitCompletedView
 import com.polisheasy.engine.FilePracticeProgress
 import com.polisheasy.engine.MemoryRound
 import com.polisheasy.engine.ChatRound
+import com.polisheasy.engine.WordSearchRound
 import com.polisheasy.engine.Game
 import com.polisheasy.engine.GameState
 import com.polisheasy.engine.PracticeView
@@ -662,12 +663,12 @@ class CourseViewModel(
 
     /**
      * A move in the Round being played, as the Round it leaves. The last one ends the Round and
-     * saves its result, except on a board or in a chat, which are shown finished until [endRound].
+     * saves its result, except on a board, a grid or in a chat, which are shown finished until [endRound].
      */
     fun move(round: PracticeRound) {
         val playing = screen as? Screen.Round ?: return
         screen = playing.copy(round = round)
-        if (round !is MemoryRound && round !is ChatRound) endRound()
+        if (round !is MemoryRound && round !is ChatRound && round !is WordSearchRound) endRound()
     }
 
     /** Ends the Round being played, if it is finished, and saves its result. */

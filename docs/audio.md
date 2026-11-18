@@ -80,6 +80,8 @@ So `audio-voice.json` has a `saidAs` list: a text the course speaks, and the spe
 
 The Clip still belongs to the text as the course writes it, and is found the same way. Adding, changing or removing an entry makes that one Clip again on the next run and no other. Keep the list short: a capital or a full stop is a small nudge, and a respelling that changes the words would teach the wrong thing.
 
+The voice also says a soft *zi* hard now and then: *zima*, *zielona herbata* and the letter name *ziet* came out as "zyma", "zyelona" and "zet", which a learner hears as "sima". New takes kept the hard sound, so these are sent with *ź* (*źima*, *źielona herbata*, *źet*), which sounds the same as a soft *zi* and which the voice says soft. Run `python3 tools/soft-onsets.py` after adding Clips: it measures the first sound of every Clip that starts with *si*, *zi*, *ś* or *ź* and lists any that sound hard. A respelt take can still go wrong (one *źima* take began with a stray "i"), so run the recogniser on it too.
+
 If a Clip only sounded wrong once, there is no need for an entry: delete its `.ogg` and run the command for another take.
 
 Nothing in the command catches a wrong sound. When nobody can listen, a speech recogniser run on the file (Whisper, set to Polish) is a rough check: two sizes of it disagreed on single takes of *do jutra*, and agreed only on the capitalised ones. It mishears short words often, so what it flags is something to listen to, not a verdict.

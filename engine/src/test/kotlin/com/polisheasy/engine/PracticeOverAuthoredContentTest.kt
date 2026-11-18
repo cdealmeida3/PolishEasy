@@ -880,4 +880,35 @@ class PracticeOverAuthoredContentTest {
         }
         assertEquals(numerals.size, numerals.values.toSet().size)
     }
+
+    @Test
+    fun `Forecaster opens in chapter 16, every forecast's words its Items', naming pictured weather, with a Clip`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.FORECASTER }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l16-"), course.path[firstReady - 1].id)
+        course.forecasts.forEach { forecast ->
+            val words = wordsOfItems(forecast.items)
+            wordsOf(forecast.text).forEach { word -> assertTrue(word in words, "${forecast.text}: $word is not one of its Items") }
+            forecast.weather.forEach { assertTrue(it in course.pictures, "${forecast.text}: $it has no Picture") }
+            assertTrue(course.clipFor(forecast.text) != null, "No Clip for ${forecast.text}")
+        }
+        val all = practiceAfter(course.path.size)
+        val round = all.start(all.setup(Game.FORECASTER, listOf(Forecaster.READ))) as ForecasterRound
+        assertEquals(Forecaster.QUESTIONS, round.total)
+        round.run.questions.forEach { assertEquals(Forecaster.BOARD, it.board.size, it.text) }
+    }
+
+    @Test
+    fun `Word search opens in chapter 16 and hides its words in every Round`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.WORD_SEARCH }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l16-"), course.path[firstReady - 1].id)
+        val all = practiceAfter(course.path.size)
+        repeat(5) {
+            val round = all.start(all.setup(Game.WORD_SEARCH, emptyList())) as WordSearchRound
+            assertEquals(WordSearch.WORDS, round.total)
+            round.words.forEach { word ->
+                assertEquals(word.word.uppercase(), word.letters.joinToString("") { round.grid[it.row][it.column].toString() })
+                assertTrue(course.clipFor(word.word) != null, "No Clip for ${word.word}")
+            }
+        }
+    }
 }
