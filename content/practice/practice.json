@@ -462,5 +462,12 @@
     ["malowac"],
     ["sluchac", "muzyka-gen"],
     ["robic", "zakupy"]
-  ]
+  ],
+  "till": {
+    "zloty": "zloty",
+    "grosz": "grosz",
+    "and": "i",
+    "costs": "kosztowac-kosztuje",
+    "goods": ["gazeta", "bilet", "woda", "kanapka", "sok", "kawa", "herbata", "ciastko", "kupon"]
+  }
 }

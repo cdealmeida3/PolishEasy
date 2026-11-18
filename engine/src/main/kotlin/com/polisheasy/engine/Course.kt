@@ -48,6 +48,8 @@ data class Course(
      * *na rowerze*); its Picture is that of its last Item with one.
      */
     val hobbies: List<List<String>> = emptyList(),
+    /** The money, words and goods of Kiosk till, or null if the content has none. */
+    val till: Till? = null,
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

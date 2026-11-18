@@ -30,6 +30,7 @@ import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onFirst
+import androidx.compose.ui.test.onLast
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.performClick
@@ -72,6 +73,8 @@ import com.polisheasy.engine.OppositesRound
 import com.polisheasy.engine.WhoRound
 import com.polisheasy.engine.VerbGroupRound
 import com.polisheasy.engine.HobbyRound
+import com.polisheasy.engine.LottoRound
+import com.polisheasy.engine.TillRound
 import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.MemoryFace
 import com.polisheasy.engine.MemoryRound
@@ -2003,6 +2006,78 @@ class ScreenshotsTest {
         tap(R.string.setup_play)
         screen.onNode(hasSetTextAction()).performScrollTo().performTextInput(hobby().answer.dropLast(2))
         shot("214-hobby-typing")
+    }
+
+    @Test
+    fun `Kiosk till and Lotto over the real course in the light theme`() = chapter7Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Kiosk till and Lotto over the real course in the dark theme`() = chapter7Games("dark")
+
+    @Test
+    fun `Kiosk till and Lotto over the real course at the largest font size`() = atTheLargestFontSize { chapter7Games("large") }
+
+    /** Chapter 7's Games: Kiosk till read with coins on the counter, paid right and wrong, and heard with notes; Lotto's card, ticked and wrong. */
+    private fun chapter7Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun till() = (viewModel?.screen as Screen.Round).round as TillRound
+
+        fun lotto() = (viewModel?.screen as Screen.Round).round as LottoRound
+
+        fun label(grosze: Int) = if (grosze < 100) app.getString(R.string.till_grosze, grosze) else app.getString(R.string.till_zloty, grosze / 100)
+
+        fun pay(grosze: Int) {
+            var left = grosze
+            till().money.sortedDescending().forEach { coin ->
+                while (left >= coin) {
+                    screen.onAllNodes(hasText(label(coin)) and hasClickAction()).onLast().performScrollTo().performClick()
+                    left -= coin
+                }
+            }
+        }
+
+        openRealPractice()
+        openGame(R.string.game_kiosk_till)
+        shot("221-till-setup")
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        pay(checkNotNull(till().question).price / 100 * 100)
+        shot("222-till-counter")
+        pay(checkNotNull(till().question).price % 100)
+        screen.mainClock.autoAdvance = false
+        tap(R.string.till_pay)
+        screen.mainClock.advanceTimeBy(100)
+        shot("223-till-right")
+        screen.mainClock.autoAdvance = true
+        tap(R.string.action_continue)
+        pay(checkNotNull(till().question).price + 50)
+        tap(R.string.till_pay)
+        shot("224-till-wrong")
+        leaveRound()
+
+        openGame(R.string.game_kiosk_till)
+        tap(R.string.option_listen)
+        screen.onNodeWithText(app.getString(R.string.option_notes)).performScrollTo().performClick()
+        tap(R.string.setup_play)
+        pay(checkNotNull(till().question).price / 1000 * 1000)
+        shot("225-till-notes")
+        leaveRound()
+
+        openGame(R.string.game_lotto)
+        shot("226-lotto-setup")
+        tap(R.string.option_read)
+        screen.onNodeWithText(app.getString(R.string.option_to_1000)).performScrollTo().performClick()
+        tap(R.string.setup_play)
+        repeat(2) {
+            screen.onNode(hasText("${checkNotNull(lotto().question).number}") and hasClickAction()).performScrollTo().performClick()
+            tap(R.string.action_continue)
+        }
+        shot("227-lotto-card")
+        val called = checkNotNull(lotto().question).number
+        screen.onNode(hasText("${lotto().card.first { it != called && it !in lotto().ticked }}") and hasClickAction()).performScrollTo().performClick()
+        shot("228-lotto-wrong")
     }
 
     private fun registerSort(theme: String) {

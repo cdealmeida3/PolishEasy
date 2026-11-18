@@ -53,7 +53,13 @@ internal data class PracticeFile(
     val jobs: JobsFile? = null,
     /** The hobbies of Hobby charades, each the Item ids of its words in order: ["jezdzic", "na-rowerze"]. */
     val hobbies: List<List<String>> = emptyList(),
+    /** The money, words and goods of Kiosk till. */
+    val till: TillFile? = null,
 )
+
+/** The Item ids of Kiosk till: the money, [and] (*i*), [costs] (*kosztuje*) and the [goods] on the counter. */
+@Serializable
+internal data class TillFile(val zloty: String, val grosz: String, val and: String, val costs: String, val goods: List<String>)
 
 /** The jobs of Who's who: the Item it waits for, [after], and the jobs' Item ids, [items]. */
 @Serializable
@@ -210,6 +216,7 @@ internal class ReadContent(
             jobs = practice?.jobs?.items.orEmpty().distinct(),
             jobsAfter = practice?.jobs?.after,
             hobbies = practice?.hobbies.orEmpty().filter { it.isNotEmpty() }.distinct(),
+            till = practice?.till?.let { Till(it.zloty, it.grosz, it.and, it.costs, it.goods.distinct()) },
         )
     }
 
@@ -404,6 +411,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         }
         practice.jobs?.let { jobs -> problems += jobProblems(file, jobs, practice, course, content.itemsComplete) }
         problems += hobbyProblems(file, practice.hobbies, course, content.itemsComplete)
+        practice.till?.let { till -> problems += tillProblems(file, till, course, content.itemsComplete) }
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -461,6 +469,24 @@ private fun hobbyProblems(file: String, hobbies: List<List<String>>, course: Cou
         }
     }
     hobbies.map { it.joinToString(" ") }.repeated().forEach { name -> problems += ContentProblem(file, null, "The hobby $name is listed more than once") }
+    return problems
+}
+
+/** What is wrong with Kiosk till: every Item defined, the money with both its counted forms, and every good with a Picture, once. */
+private fun tillProblems(file: String, till: TillFile, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    (listOf(till.zloty, till.grosz, till.and, till.costs) + till.goods).filter { itemsComplete && it !in course.itemsById }.forEach { id ->
+        problems += ContentProblem(file, id, "Kiosk till names Item $id, which is not defined")
+    }
+    listOf(till.zloty, till.grosz).forEach { id ->
+        val item = course.itemsById[id]
+        if (item != null && item.forms.size < 2) {
+            problems += ContentProblem(file, id, "The money $id needs two forms: the one after 2 and the one after 5")
+        }
+    }
+    if (till.goods.isEmpty()) problems += ContentProblem(file, null, "Kiosk till has no goods")
+    till.goods.filter { it !in course.pictures }.forEach { id -> problems += ContentProblem(file, id, "The good $id has no picture") }
+    till.goods.repeated().forEach { id -> problems += ContentProblem(file, id, "The good $id is listed more than once") }
     return problems
 }
 

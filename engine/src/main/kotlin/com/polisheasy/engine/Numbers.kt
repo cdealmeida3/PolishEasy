@@ -186,3 +186,36 @@ internal object Numbers : GameRules {
         return runs
     }
 }
+
+/**
+ * The learned words that say [number], up to a thousand, or null if one of them is not learned. A
+ * number that is an Item is that word; up to a hundred, its ten and its unit (*czterdzieści dwa*);
+ * above, its hundred and the rest (*trzysta czterdzieści dwa*).
+ */
+internal fun wordsOf(number: Int, numbers: Map<Int, Item>): List<String>? {
+    numbers[number]?.let { return listOf(it.text) }
+    return when (number) {
+        in 21..99 -> {
+            val ten = numbers[number / 10 * 10] ?: return null
+            val unit = numbers[number % 10] ?: return null
+            listOf(ten.text, unit.text)
+        }
+        in 101..999 -> {
+            val hundred = numbers[number / 100 * 100] ?: return null
+            wordsOf(number % 100, numbers)?.let { listOf(hundred.text) + it }
+        }
+        else -> null
+    }
+}
+
+/**
+ * The form of a counted noun that goes after [count]: the Item's own text after 1 (*złoty*), its
+ * first form after 2, 3 and 4 and after 22, 23, 24… but not 12, 13, 14 (*złote*), and its second
+ * form after the rest (*złotych*). Null if the Item has not both forms.
+ */
+internal fun Item.countedBy(count: Int): String? = when {
+    forms.size < 2 -> null
+    count == 1 -> text
+    count % 10 in 2..4 && count % 100 !in 12..14 -> forms[0]
+    else -> forms[1]
+}
