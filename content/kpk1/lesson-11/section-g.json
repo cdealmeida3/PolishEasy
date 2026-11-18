@@ -1,0 +1,436 @@
+{
+  "id": "kpk1-l11-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-g-t01",
+      "before": "kpk1-l11-g-e01",
+      "title": {
+        "en": "Czy to prawda, że…?"
+      },
+      "body": {
+        "en": "*Czy to prawda, że…?* asks whether something is true: *czy to prawda, że jesteś kawalerem?*. *Prawie nigdy* is hardly ever. You go by car, *samochodem*, or by taxi, *taksówką*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-g-e01",
+      "prompt": "prawie nigdy",
+      "options": [
+        {
+          "en": "never (nigdy nie…)"
+        },
+        {
+          "en": "always"
+        },
+        {
+          "en": "hardly ever, almost never"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "prawie-nigdy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-g-e02",
+      "prompt": "taksówką",
+      "options": [
+        {
+          "en": "by taxi"
+        },
+        {
+          "en": "by car"
+        },
+        {
+          "en": "by bus"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "taksowka-instr"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-g-e03",
+      "text": "od czasu do czasu jeżdżę taksówką",
+      "meaning": {
+        "en": "from time to time I go by taxi"
+      },
+      "distractors": [
+        "zawsze jeżdżę taksówką",
+        "od czasu do czasu jeżdżę samochodem"
+      ],
+      "items": [
+        "od-czasu-do-czasu",
+        "jezdzic-jezdze",
+        "taksowka-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-g-e04",
+      "prompt": "czy to prawda, że…?",
+      "options": [
+        {
+          "en": "what is it? what is this?"
+        },
+        {
+          "en": "is it true that…?"
+        },
+        {
+          "en": "why"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czy-to-prawda-ze"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-g-e05",
+      "text": "Czy to prawda, ___ masz brata?",
+      "meaning": {
+        "en": "Is it true that you have a brother?"
+      },
+      "gaps": [
+        [
+          "że"
+        ]
+      ],
+      "distractors": [
+        "czy",
+        "bo"
+      ],
+      "items": [
+        "czy-to-prawda-ze",
+        "miec-masz",
+        "brat-acc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-g-e06",
+      "prompt": {
+        "en": "I hardly ever cook"
+      },
+      "acceptedAnswers": [
+        "prawie nigdy nie gotuję"
+      ],
+      "distractors": [
+        "zawsze",
+        "gotujesz"
+      ],
+      "items": [
+        "prawie-nigdy",
+        "nie",
+        "gotowac-gotuje"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-g-e07",
+      "pairs": [
+        {
+          "polish": "wnuk",
+          "meaning": {
+            "en": "a grandson"
+          }
+        },
+        {
+          "polish": "teściowa",
+          "meaning": {
+            "en": "a mother-in-law"
+          }
+        },
+        {
+          "polish": "kuzynka",
+          "meaning": {
+            "en": "a cousin (a woman)"
+          }
+        },
+        {
+          "polish": "mężatka",
+          "meaning": {
+            "en": "a married woman"
+          }
+        },
+        {
+          "polish": "rodzeństwo",
+          "meaning": {
+            "en": "brothers and sisters"
+          }
+        },
+        {
+          "polish": "ciocia",
+          "meaning": {
+            "en": "an aunt"
+          }
+        }
+      ],
+      "items": [
+        "wnuk",
+        "tesciowa",
+        "kuzynka",
+        "mezatka",
+        "rodzenstwo",
+        "ciocia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-g-e08",
+      "text": "___ to brat?",
+      "meaning": {
+        "en": "Whose brother is it?"
+      },
+      "gaps": [
+        [
+          "Czyj"
+        ]
+      ],
+      "distractors": [
+        "Czyja",
+        "Czyje"
+      ],
+      "items": [
+        "czyj",
+        "to",
+        "brat"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-g-e09",
+      "text": "To jest ___ babcia.",
+      "meaning": {
+        "en": "This is my grandma."
+      },
+      "gaps": [
+        [
+          "moja"
+        ]
+      ],
+      "distractors": [
+        "mój",
+        "moje"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "moja",
+        "babcia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-g-e10",
+      "text": "To ___ dziadek.",
+      "meaning": {
+        "en": "This is your grandpa (several people)."
+      },
+      "gaps": [
+        [
+          "wasz"
+        ]
+      ],
+      "distractors": [
+        "wasza",
+        "wasze"
+      ],
+      "items": [
+        "to",
+        "wasz",
+        "dziadek"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-g-e11",
+      "acceptedAnswers": [
+        "czy to prawda, że jesteś kawalerem?"
+      ],
+      "meaning": {
+        "en": "is it true that you're a bachelor?"
+      },
+      "items": [
+        "czy-to-prawda-ze",
+        "byc-jestes",
+        "kawaler-instr"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-g-e12",
+      "prompt": {
+        "en": "by taxi"
+      },
+      "acceptedAnswers": [
+        "taksówką"
+      ],
+      "items": [
+        "taksowka-instr"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-g-e13",
+      "lines": [
+        "Mój dziadek prawie nigdy nie jeździ taksówką.",
+        "Zwykle jeździ samochodem.",
+        "Codziennie rano dzwoni do babci."
+      ],
+      "meaning": {
+        "en": "Grandpa's habits."
+      },
+      "statements": [
+        {
+          "text": "Dziadek zwykle jeździ samochodem.",
+          "meaning": {
+            "en": "Grandpa usually goes by car."
+          },
+          "true": true
+        },
+        {
+          "text": "Dziadek często jeździ taksówką.",
+          "meaning": {
+            "en": "Grandpa often goes by taxi."
+          },
+          "true": false
+        },
+        {
+          "text": "Dziadek codziennie dzwoni do babci.",
+          "meaning": {
+            "en": "Grandpa calls grandma every day."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "moj",
+        "dziadek",
+        "prawie-nigdy",
+        "nie",
+        "jezdzic-jezdzi",
+        "taksowka-instr",
+        "zwykle",
+        "samochodem",
+        "codziennie",
+        "rano"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-g-e14",
+      "lines": [
+        "To jest moje drzewo genealogiczne.",
+        "To moi rodzice.",
+        "A to moja ciocia i mój wujek.",
+        "Nie mam rodzeństwa."
+      ],
+      "meaning": {
+        "en": "My family tree."
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "moje",
+        "drzewo-genealogiczne",
+        "moi",
+        "rodzice",
+        "a",
+        "moja",
+        "ciocia",
+        "i",
+        "moj",
+        "wujek",
+        "nie",
+        "miec-mam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-g-e15",
+      "text": "czyja to wnuczka?",
+      "meaning": {
+        "en": "whose granddaughter is she?"
+      },
+      "distractors": [
+        "czyj to wnuk?",
+        "czyje to dziecko?"
+      ],
+      "items": [
+        "czyja",
+        "to",
+        "wnuczka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-g-e16",
+      "prompt": {
+        "en": "grandparents and grandchildren"
+      },
+      "acceptedAnswers": [
+        "dziadkowie i wnuki"
+      ],
+      "distractors": [
+        "wnuk",
+        "rodzice"
+      ],
+      "items": [
+        "dziadkowie",
+        "i",
+        "wnuki"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-g-e17",
+      "prompt": {
+        "en": "for the second time"
+      },
+      "acceptedAnswers": [
+        "drugi raz"
+      ],
+      "items": [
+        "drugi-raz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-g-e18",
+      "prompt": {
+        "en": "whose children are these?"
+      },
+      "acceptedAnswers": [
+        "czyje to dzieci?"
+      ],
+      "distractors": [
+        "czyja",
+        "są"
+      ],
+      "items": [
+        "czyje",
+        "to",
+        "dzieci"
+      ]
+    }
+  ]
+}

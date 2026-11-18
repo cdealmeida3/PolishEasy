@@ -1,0 +1,488 @@
+{
+  "id": "kpk1-l11-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Czyj? Czyja? Czyje?",
+    "meaning": {
+      "en": "Whose?"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-b1-t01",
+      "before": "kpk1-l11-b1-e01",
+      "title": {
+        "en": "Czyj? Czyja? Czyje?"
+      },
+      "body": {
+        "en": "*Czyj?* asks whose, and agrees with the thing, like *mój*: *czyj portfel?*, *czyja kawa?*, *czyje zdjęcie?*. With more than one thing it is *czyje*: *czyje to dzieci?*. “Our” is *nasz, nasza, nasze* and “your”, to several people, is *wasz, wasza, wasze*. *Jego*, *jej* and *ich* never change: *jego brat*, *jego siostra*, *jego dziecko*."
+      },
+      "table": {
+        "title": {
+          "en": "Zaimki dzierżawcze: czyj? czyja? czyje?"
+        },
+        "columns": [
+          {
+            "header": "czyj?",
+            "gender": "m"
+          },
+          {
+            "header": "czyja?",
+            "gender": "f"
+          },
+          {
+            "header": "czyje?",
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "header": "ja",
+            "cells": [
+              "mój",
+              "moja",
+              "moje"
+            ]
+          },
+          {
+            "header": "ty",
+            "cells": [
+              "twój",
+              "twoja",
+              "twoje"
+            ]
+          },
+          {
+            "header": "on, ono",
+            "cells": [
+              "jego",
+              "jego",
+              "jego"
+            ]
+          },
+          {
+            "header": "ona",
+            "cells": [
+              "jej",
+              "jej",
+              "jej"
+            ]
+          },
+          {
+            "header": "my",
+            "cells": [
+              "nasz",
+              "nasza",
+              "nasze"
+            ]
+          },
+          {
+            "header": "wy",
+            "cells": [
+              "wasz",
+              "wasza",
+              "wasze"
+            ]
+          },
+          {
+            "header": "oni, one",
+            "cells": [
+              "ich",
+              "ich",
+              "ich"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b1-e01",
+      "prompt": "czyj",
+      "options": [
+        {
+          "en": "who"
+        },
+        {
+          "en": "whose (with a masculine noun)"
+        },
+        {
+          "en": "what"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czyj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b1-e02",
+      "prompt": "czyja",
+      "options": [
+        {
+          "en": "whose (with a masculine noun)"
+        },
+        {
+          "en": "my (with a feminine noun)"
+        },
+        {
+          "en": "whose (with a feminine noun)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czyja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b1-e03",
+      "prompt": "czyje",
+      "options": [
+        {
+          "en": "whose (with a neuter noun)"
+        },
+        {
+          "en": "whose (with a feminine noun)"
+        },
+        {
+          "en": "my (with a neuter noun)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czyje"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-b1-e04",
+      "text": "czyje to zdjęcie?",
+      "meaning": {
+        "en": "whose photo is this?"
+      },
+      "distractors": [
+        "czyja to kawa?",
+        "czyj to portfel?"
+      ],
+      "items": [
+        "czyje",
+        "to",
+        "zdjecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b1-e05",
+      "prompt": "nasz",
+      "options": [
+        {
+          "en": "my (with a masculine noun)"
+        },
+        {
+          "en": "our (with a masculine noun)"
+        },
+        {
+          "en": "your (one friend, with a masculine noun)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nasz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b1-e06",
+      "prompt": "nasza",
+      "options": [
+        {
+          "en": "our (with a masculine noun)"
+        },
+        {
+          "en": "my (with a feminine noun)"
+        },
+        {
+          "en": "our (with a feminine noun)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nasza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b1-e07",
+      "prompt": "nasze",
+      "options": [
+        {
+          "en": "our (with a neuter noun)"
+        },
+        {
+          "en": "our (with a feminine noun)"
+        },
+        {
+          "en": "my (with a neuter noun)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nasze"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-b1-e08",
+      "text": "To nie jest ___ auto.",
+      "meaning": {
+        "en": "It is not our car."
+      },
+      "gaps": [
+        [
+          "nasze"
+        ]
+      ],
+      "distractors": [
+        "nasz",
+        "nasza"
+      ],
+      "items": [
+        "to-nie-jest",
+        "nasze",
+        "auto"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b1-e09",
+      "prompt": "portfel",
+      "options": [
+        {
+          "en": "a photo (zdjęcia: photos)"
+        },
+        {
+          "en": "a wallet"
+        },
+        {
+          "en": "a book"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "portfel"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-b1-e10",
+      "prompt": {
+        "en": "whose wallet is this?"
+      },
+      "acceptedAnswers": [
+        "czyj to portfel?"
+      ],
+      "distractors": [
+        "czyja",
+        "czyje"
+      ],
+      "items": [
+        "czyj",
+        "to",
+        "portfel"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-b1-e11",
+      "acceptedAnswers": [
+        "czyja to książka?"
+      ],
+      "meaning": {
+        "en": "whose book is this?"
+      },
+      "items": [
+        "czyja",
+        "to",
+        "ksiazka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-b1-e12",
+      "prompt": {
+        "en": "our family"
+      },
+      "acceptedAnswers": [
+        "nasza rodzina"
+      ],
+      "items": [
+        "nasza",
+        "rodzina"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-b1-e13",
+      "pairs": [
+        {
+          "polish": "czyj",
+          "meaning": {
+            "en": "whose (masculine)"
+          }
+        },
+        {
+          "polish": "czyja",
+          "meaning": {
+            "en": "whose (feminine)"
+          }
+        },
+        {
+          "polish": "czyje",
+          "meaning": {
+            "en": "whose (neuter)"
+          }
+        },
+        {
+          "polish": "nasz",
+          "meaning": {
+            "en": "our (masculine)"
+          }
+        },
+        {
+          "polish": "nasza",
+          "meaning": {
+            "en": "our (feminine)"
+          }
+        },
+        {
+          "polish": "nasze",
+          "meaning": {
+            "en": "our (neuter)"
+          }
+        }
+      ],
+      "items": [
+        "czyj",
+        "czyja",
+        "czyje",
+        "nasz",
+        "nasza",
+        "nasze"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-b1-e14",
+      "lines": [
+        "Czyja to kawa?",
+        "Nie wiem.",
+        "Twoja?",
+        "Nie, na pewno nie moja."
+      ],
+      "meaning": {
+        "en": "Whose coffee?"
+      },
+      "items": [
+        "czyja",
+        "to",
+        "kawa",
+        "nie-wiem",
+        "twoja",
+        "nie",
+        "na-pewno",
+        "moja"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-b1-e15",
+      "lines": [
+        "To jest nasze mieszkanie.",
+        "Nasz kot jest mały.",
+        "Nasza rodzina jest duża."
+      ],
+      "meaning": {
+        "en": "Our home."
+      },
+      "statements": [
+        {
+          "text": "Mieszkanie jest nasze.",
+          "meaning": {
+            "en": "The flat is ours."
+          },
+          "true": true
+        },
+        {
+          "text": "Kot jest duży.",
+          "meaning": {
+            "en": "The cat is big."
+          },
+          "true": false
+        },
+        {
+          "text": "Rodzina jest duża.",
+          "meaning": {
+            "en": "The family is big."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "nasze",
+        "mieszkanie",
+        "nasz",
+        "kot",
+        "maly",
+        "nasza",
+        "rodzina",
+        "duzy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-b1-e16",
+      "text": "nasza córka",
+      "meaning": {
+        "en": "our daughter"
+      },
+      "distractors": [
+        "nasz syn",
+        "moja córka"
+      ],
+      "items": [
+        "nasza",
+        "corka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-b1-e17",
+      "prompt": {
+        "en": "this is our wallet"
+      },
+      "acceptedAnswers": [
+        "to jest nasz portfel"
+      ],
+      "distractors": [
+        "nasza",
+        "nasze"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "nasz",
+        "portfel"
+      ]
+    }
+  ]
+}

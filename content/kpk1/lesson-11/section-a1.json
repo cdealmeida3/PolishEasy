@@ -1,0 +1,434 @@
+{
+  "id": "kpk1-l11-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Czyja to rodzina?",
+    "meaning": {
+      "en": "Whose family is it?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-a1-t01",
+      "before": "kpk1-l11-a1-e01",
+      "title": {
+        "en": "Rodzice i dziadkowie"
+      },
+      "body": {
+        "en": "*Mama* and *tata* are what you call them; *matka* and *ojciec* are the words for mother and father. Together they are *rodzice*. Their parents are *dziadkowie*, *babcia* and *dziadek*, and you are their *wnuk* or *wnuczka*: all the grandchildren are *wnuki*. A husband and a wife are a *małżeństwo*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a1-e01",
+      "prompt": "matka",
+      "options": [
+        {
+          "en": "a mother"
+        },
+        {
+          "en": "mum"
+        },
+        {
+          "en": "a daughter"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "matka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a1-e02",
+      "prompt": "ojciec",
+      "options": [
+        {
+          "en": "dad"
+        },
+        {
+          "en": "a father"
+        },
+        {
+          "en": "a son"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ojciec"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-a1-e03",
+      "text": "matka i ojciec",
+      "meaning": {
+        "en": "a mother and a father"
+      },
+      "distractors": [
+        "matka i córka",
+        "ojciec i syn"
+      ],
+      "items": [
+        "matka",
+        "i",
+        "ojciec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a1-e04",
+      "prompt": "rodzice",
+      "options": [
+        {
+          "en": "a family"
+        },
+        {
+          "en": "brothers and sisters; siblings"
+        },
+        {
+          "en": "parents"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "rodzice"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a1-e05",
+      "prompt": "dziadkowie",
+      "options": [
+        {
+          "en": "grandparents"
+        },
+        {
+          "en": "parents"
+        },
+        {
+          "en": "grandpa"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dziadkowie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-a1-e06",
+      "text": "Babcia i dziadek to ___.",
+      "meaning": {
+        "en": "Grandma and grandpa are the grandparents."
+      },
+      "gaps": [
+        [
+          "dziadkowie"
+        ]
+      ],
+      "distractors": [
+        "rodzice",
+        "rodzeństwo"
+      ],
+      "items": [
+        "babcia",
+        "i",
+        "dziadek",
+        "to",
+        "dziadkowie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a1-e07",
+      "prompt": "wnuk",
+      "options": [
+        {
+          "en": "a son"
+        },
+        {
+          "en": "a grandson"
+        },
+        {
+          "en": "a brother"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wnuk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a1-e08",
+      "prompt": "wnuczka",
+      "options": [
+        {
+          "en": "a daughter"
+        },
+        {
+          "en": "a sister"
+        },
+        {
+          "en": "a granddaughter"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wnuczka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a1-e09",
+      "prompt": {
+        "en": "a grandson and a granddaughter"
+      },
+      "acceptedAnswers": [
+        "wnuk i wnuczka"
+      ],
+      "distractors": [
+        "syn",
+        "córka"
+      ],
+      "items": [
+        "wnuk",
+        "i",
+        "wnuczka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a1-e10",
+      "prompt": "wnuki",
+      "options": [
+        {
+          "en": "grandchildren"
+        },
+        {
+          "en": "children"
+        },
+        {
+          "en": "brothers and sisters; siblings"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wnuki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a1-e11",
+      "prompt": "małżeństwo",
+      "options": [
+        {
+          "en": "a family"
+        },
+        {
+          "en": "a married couple; a marriage"
+        },
+        {
+          "en": "parents"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "malzenstwo"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-a1-e12",
+      "acceptedAnswers": [
+        "to są dziadkowie"
+      ],
+      "meaning": {
+        "en": "these are the grandparents"
+      },
+      "items": [
+        "to",
+        "byc-sa",
+        "dziadkowie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-a1-e13",
+      "prompt": {
+        "en": "a mother and a father"
+      },
+      "acceptedAnswers": [
+        "matka i ojciec"
+      ],
+      "items": [
+        "matka",
+        "i",
+        "ojciec"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-a1-e14",
+      "pairs": [
+        {
+          "polish": "matka",
+          "meaning": {
+            "en": "a mother"
+          }
+        },
+        {
+          "polish": "ojciec",
+          "meaning": {
+            "en": "a father"
+          }
+        },
+        {
+          "polish": "rodzice",
+          "meaning": {
+            "en": "parents"
+          }
+        },
+        {
+          "polish": "dziadkowie",
+          "meaning": {
+            "en": "grandparents"
+          }
+        },
+        {
+          "polish": "wnuczka",
+          "meaning": {
+            "en": "a granddaughter"
+          }
+        },
+        {
+          "polish": "małżeństwo",
+          "meaning": {
+            "en": "a married couple"
+          }
+        }
+      ],
+      "items": [
+        "matka",
+        "ojciec",
+        "rodzice",
+        "dziadkowie",
+        "wnuczka",
+        "malzenstwo"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-a1-e15",
+      "lines": [
+        "Ewa i Adam to małżeństwo.",
+        "Mają syna i córkę.",
+        "Babcia i dziadek mają wnuki."
+      ],
+      "meaning": {
+        "en": "Ewa and Adam's family."
+      },
+      "statements": [
+        {
+          "text": "Ewa i Adam to rodzice.",
+          "meaning": {
+            "en": "Ewa and Adam are parents."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa i Adam to rodzeństwo.",
+          "meaning": {
+            "en": "Ewa and Adam are brother and sister."
+          },
+          "true": false
+        },
+        {
+          "text": "Babcia i dziadek mają wnuki.",
+          "meaning": {
+            "en": "Grandma and grandpa have grandchildren."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "i",
+        "adam",
+        "to",
+        "malzenstwo",
+        "miec-maja",
+        "syn-acc",
+        "corka-acc",
+        "babcia",
+        "dziadek",
+        "wnuki"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-a1-e16",
+      "lines": [
+        "Kto to jest?",
+        "To jest mój wnuk.",
+        "A to?",
+        "To moja wnuczka."
+      ],
+      "meaning": {
+        "en": "A grandma shows a photo."
+      },
+      "items": [
+        "kto-to-jest",
+        "to",
+        "byc-jest",
+        "moj",
+        "wnuk",
+        "a",
+        "moja",
+        "wnuczka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-a1-e17",
+      "text": "wnuczka i dziadek",
+      "meaning": {
+        "en": "a granddaughter and her grandpa"
+      },
+      "distractors": [
+        "wnuczka i babcia",
+        "wnuk i dziadek"
+      ],
+      "items": [
+        "wnuczka",
+        "i",
+        "dziadek"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a1-e18",
+      "prompt": {
+        "en": "the parents are a married couple"
+      },
+      "acceptedAnswers": [
+        "rodzice to małżeństwo"
+      ],
+      "distractors": [
+        "rodzina",
+        "są"
+      ],
+      "items": [
+        "rodzice",
+        "to",
+        "malzenstwo"
+      ]
+    }
+  ]
+}

@@ -231,3 +231,23 @@ It gives the later chapters:
 - the menu: soups, main dishes, meat, desserts and the café's drinks; *smakuje mi*, *za* before an adjective.
 
 It leaves for later: the genitive after *kawałek* as a rule (*kawałek sernika* is an Item), the genitive of people (*nie znam tego profesora*), and the plural genitive (*nie mam pieniędzy* stays an Item).
+
+## Chapter 11: Rodzina
+
+Book pages 86 to 93, recordings 121 to 131. Thirteen parts, 230 Exercises and 94 new Items.
+
+- **A** *Czyja to rodzina?*, in five: the family (18: *matka*, *ojciec*, *rodzice*, *dziadkowie*, *wnuk*, *wnuczka*, *wnuki*, *małżeństwo*); the *Zapamiętaj!* of *panna*, *kawaler*, *mężatka*, *żonaty*, *rozwiedziony* (18: with *kawalerem*, *nie żyje*, *drugi raz*); the wider family (18: *ciocia*, *wujek*, *kuzyn*, *kuzynka*, *teść*, *teściowa*, *synowa*, *bliźniaki*); people in the accusative, with a Tip on *kogo? co?* (18: *rodziców*, *męża*, *żonę*, *ciocię*, *wujka*, *młodszy*, *starszy*, *dwoje*); and talking about a family (18: *drzewo genealogiczne*, *lub*, *czyli*, *rozmawiam*, *spotykamy się*, *stuprocentowy*, *co powiedzieć*, *moi*).
+- **B** *Czyj? Czyja? Czyje?*, in three: *czyj*, *nasz* and the table of possessives (17: *czyj*, *czyja*, *czyje*, *nasz*, *nasza*, *nasze*, *portfel*); *wasz* and *ich* (17: *wasz*, *wasza*, *wasze*, *ich*, *to musi być*); and who someone is to someone, in the instrumental, with a Tip on *kim jest?* (17: *dziadkiem*, *babcią*, *ojcem*, *matką*, *mężem*, *żoną*, *synem*, *córką*).
+- **C** *Rano czy wieczorem?*, in two: the times of day (18: *pory dnia*, *przed południem*, *w południe*, *o północy*, *w nocy*, *w dzień*, *doba*); and a family's day, with a Tip on *wracać* (18: *wracam*, *do domu*, *odpocząć*, *sjesta*, *przerwa*, *później*, *zdalnie*, *wszyscy*).
+- **D** *Jak często?*, in two: the scale from *zawsze* to *nigdy* (17: *jak często?*, *zawsze*, *często*, *czasem*, *rzadko*, *nigdy*, *codziennie*, *od czasu do czasu*); and Uwe the workaholic (18: *pracoholik*, *od rana do wieczora*, *dzwonisz*, *urlop*, *na dyskotekę*, *raz w roku*, *w tygodniu*, *samochodem*).
+- *Ćwiczenia* (18): the pairs and the corrections of *Powtórzenie*, the quiz *czy to prawda, że…?*, *prawie nigdy*, *taksówką*.
+
+A person in the accusative or the instrumental is its own Item (*męża*, *mężem*), as a thing after *nie* is. *Zwykle*, *rodzeństwo*, *rozwiedziony* and the other words the book sends to the dictionary are under Look up. There are 44 listening tasks on all 11 recordings (131 repeats 130), and one Chat: *A family photo* (a friend, informal: whose photo it is, your sister and her husband, their daughter, how often you meet, your grandparents, and that you are a bachelor). Nine Items have pictures (a sunrise, a city at dusk, a night sky, twelve o'clock, a family tree, a ring, an island, an older person, two people for the family).
+
+It gives the later chapters:
+
+- the possessives in each gender (*mój … ich*) and *czyj?*, *czyja?*, *czyje?*;
+- the family, its people in the accusative and the instrumental;
+- the times of day and the adverbs of frequency, from *zawsze* to *nigdy*.
+
+It leaves for later: the plural of the possessives with men (*moi* is an Item), the genitive of people (*siostra mojego taty* is heard, not taught), and the past tense of *żyć*.

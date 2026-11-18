@@ -1,0 +1,437 @@
+{
+  "id": "kpk1-l11-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Czyja to rodzina?",
+    "meaning": {
+      "en": "Whose family is it?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-a3-t01",
+      "before": "kpk1-l11-a3-e01",
+      "title": {
+        "en": "Ciocia, wujek, kuzyn"
+      },
+      "body": {
+        "en": "Your mother's or father's sister is your *ciocia*, and their brother is your *wujek*. Their children are your *kuzyn* (a boy) and your *kuzynka* (a girl). Your wife's or husband's parents are your *teść* and *teściowa*, and your son's wife is your *synowa*. Two children born together are *bliźniaki*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a3-e01",
+      "prompt": "ciocia",
+      "options": [
+        {
+          "en": "grandma"
+        },
+        {
+          "en": "an aunt"
+        },
+        {
+          "en": "a sister"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ciocia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a3-e02",
+      "prompt": "wujek",
+      "options": [
+        {
+          "en": "grandpa"
+        },
+        {
+          "en": "a brother"
+        },
+        {
+          "en": "an uncle"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wujek"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-a3-e03",
+      "text": "ciocia i wujek",
+      "meaning": {
+        "en": "an aunt and an uncle"
+      },
+      "distractors": [
+        "ciocia i kuzyn",
+        "babcia i wujek"
+      ],
+      "items": [
+        "ciocia",
+        "i",
+        "wujek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a3-e04",
+      "prompt": "kuzyn",
+      "options": [
+        {
+          "en": "a cousin (a man)"
+        },
+        {
+          "en": "a brother"
+        },
+        {
+          "en": "a classmate; a friend (a man)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kuzyn"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a3-e05",
+      "prompt": "kuzynka",
+      "options": [
+        {
+          "en": "a sister"
+        },
+        {
+          "en": "a cousin (a woman)"
+        },
+        {
+          "en": "a classmate; a friend (a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kuzynka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a3-e06",
+      "prompt": {
+        "en": "my cousin (a girl)"
+      },
+      "acceptedAnswers": [
+        "moja kuzynka"
+      ],
+      "distractors": [
+        "mój",
+        "kuzyn"
+      ],
+      "items": [
+        "moja",
+        "kuzynka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a3-e07",
+      "prompt": "teść",
+      "options": [
+        {
+          "en": "a father"
+        },
+        {
+          "en": "grandpa"
+        },
+        {
+          "en": "a father-in-law"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tesc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a3-e08",
+      "prompt": "teściowa",
+      "options": [
+        {
+          "en": "a mother-in-law"
+        },
+        {
+          "en": "a mother"
+        },
+        {
+          "en": "grandma"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tesciowa"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-a3-e09",
+      "text": "Mój ___ i moja teściowa mieszkają w Krakowie.",
+      "meaning": {
+        "en": "My father-in-law and my mother-in-law live in Kraków."
+      },
+      "gaps": [
+        [
+          "teść"
+        ]
+      ],
+      "distractors": [
+        "wujek",
+        "ciocia"
+      ],
+      "items": [
+        "moj",
+        "tesc",
+        "i",
+        "moja",
+        "tesciowa",
+        "mieszkac-mieszkaja",
+        "w-krakowie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a3-e10",
+      "prompt": "synowa",
+      "options": [
+        {
+          "en": "a daughter"
+        },
+        {
+          "en": "a daughter-in-law"
+        },
+        {
+          "en": "a mother-in-law"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "synowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a3-e11",
+      "prompt": "bliźniaki",
+      "options": [
+        {
+          "en": "brothers and sisters; siblings"
+        },
+        {
+          "en": "children"
+        },
+        {
+          "en": "twins"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "blizniaki"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-a3-e12",
+      "acceptedAnswers": [
+        "to jest moja ciocia"
+      ],
+      "meaning": {
+        "en": "this is my aunt"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "moja",
+        "ciocia"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-a3-e13",
+      "prompt": {
+        "en": "my uncle"
+      },
+      "acceptedAnswers": [
+        "mój wujek"
+      ],
+      "items": [
+        "moj",
+        "wujek"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-a3-e14",
+      "pairs": [
+        {
+          "polish": "ciocia",
+          "meaning": {
+            "en": "an aunt"
+          }
+        },
+        {
+          "polish": "wujek",
+          "meaning": {
+            "en": "an uncle"
+          }
+        },
+        {
+          "polish": "kuzyn",
+          "meaning": {
+            "en": "a cousin (a man)"
+          }
+        },
+        {
+          "polish": "teść",
+          "meaning": {
+            "en": "a father-in-law"
+          }
+        },
+        {
+          "polish": "synowa",
+          "meaning": {
+            "en": "a daughter-in-law"
+          }
+        },
+        {
+          "polish": "bliźniaki",
+          "meaning": {
+            "en": "twins"
+          }
+        }
+      ],
+      "items": [
+        "ciocia",
+        "wujek",
+        "kuzyn",
+        "tesc",
+        "synowa",
+        "blizniaki"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-a3-e15",
+      "lines": [
+        "Moja ciocia ma bliźniaki.",
+        "To mój kuzyn i moja kuzynka.",
+        "Mają dziesięć lat."
+      ],
+      "meaning": {
+        "en": "An aunt's twins."
+      },
+      "statements": [
+        {
+          "text": "Ciocia ma bliźniaki.",
+          "meaning": {
+            "en": "The aunt has twins."
+          },
+          "true": true
+        },
+        {
+          "text": "Wujek ma bliźniaki.",
+          "meaning": {
+            "en": "The uncle has twins."
+          },
+          "true": false
+        },
+        {
+          "text": "Bliźniaki mają dziesięć lat.",
+          "meaning": {
+            "en": "The twins are ten."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "moja",
+        "ciocia",
+        "miec-ma",
+        "blizniaki",
+        "to",
+        "moj",
+        "kuzyn",
+        "i",
+        "kuzynka",
+        "miec-maja",
+        "dziesiec",
+        "lat"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-a3-e16",
+      "lines": [
+        "Kto to jest?",
+        "To mój wujek.",
+        "A to?",
+        "To jego synowa."
+      ],
+      "meaning": {
+        "en": "Looking at a wedding photo."
+      },
+      "items": [
+        "kto-to-jest",
+        "to",
+        "moj",
+        "wujek",
+        "a",
+        "jego",
+        "synowa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a3-e17",
+      "prompt": {
+        "en": "the mother-in-law and the daughter-in-law"
+      },
+      "acceptedAnswers": [
+        "teściowa i synowa"
+      ],
+      "distractors": [
+        "teść",
+        "córka"
+      ],
+      "items": [
+        "tesciowa",
+        "i",
+        "synowa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-a3-e18",
+      "text": "mój kuzyn i moja kuzynka",
+      "meaning": {
+        "en": "my cousins, a boy and a girl"
+      },
+      "distractors": [
+        "mój brat i moja siostra",
+        "mój kuzyn i moja ciocia"
+      ],
+      "items": [
+        "moj",
+        "kuzyn",
+        "i",
+        "moja",
+        "kuzynka"
+      ]
+    }
+  ]
+}

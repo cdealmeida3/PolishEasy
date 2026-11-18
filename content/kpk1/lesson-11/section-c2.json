@@ -1,0 +1,454 @@
+{
+  "id": "kpk1-l11-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Rano czy wieczorem?",
+    "meaning": {
+      "en": "In the morning or in the evening?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-c2-t01",
+      "before": "kpk1-l11-c2-e01",
+      "title": {
+        "en": "Wracam do domu"
+      },
+      "body": {
+        "en": "*Wracać* is to come back or to go back: *wracam do domu* is I go home (*do domu*, while *w domu* is at home). After lunch some people need to *odpocząć* (to rest), and a nap after lunch is a *sjesta*. *Później* is later, and *wszyscy* is everybody."
+      },
+      "conjugation": {
+        "verb": "wracać",
+        "meaning": {
+          "en": "to come back, to go back"
+        },
+        "forms": {
+          "ja": "wracam",
+          "ty": "wracasz",
+          "on": "wraca",
+          "my": "wracamy",
+          "wy": "wracacie",
+          "oni": "wracają"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c2-e01",
+      "prompt": "wracam",
+      "options": [
+        {
+          "en": "I am going (on foot)"
+        },
+        {
+          "en": "I am waiting, I wait"
+        },
+        {
+          "en": "I come back, I go back"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wracac-wracam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c2-e02",
+      "prompt": "do domu",
+      "options": [
+        {
+          "en": "home (wracam do domu: I go home)"
+        },
+        {
+          "en": "at home"
+        },
+        {
+          "en": "to the cinema"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-domu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-c2-e03",
+      "text": "o północy wracam do domu",
+      "meaning": {
+        "en": "I come home at midnight"
+      },
+      "distractors": [
+        "wieczorem wracam do domu",
+        "o północy idę do domu"
+      ],
+      "items": [
+        "o-polnocy",
+        "wracac-wracam",
+        "do-domu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c2-e04",
+      "prompt": "odpocząć",
+      "options": [
+        {
+          "en": "I sleep, I am asleep"
+        },
+        {
+          "en": "rest (to rest, to have a rest)"
+        },
+        {
+          "en": "work (to work)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "odpoczac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c2-e05",
+      "prompt": "sjesta",
+      "options": [
+        {
+          "en": "supper, the evening meal"
+        },
+        {
+          "en": "a break"
+        },
+        {
+          "en": "a siesta, an afternoon nap"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sjesta"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-c2-e06",
+      "text": "Po południu muszę ___.",
+      "meaning": {
+        "en": "In the afternoon I have to rest."
+      },
+      "gaps": [
+        [
+          "odpocząć"
+        ]
+      ],
+      "distractors": [
+        "odpoczywam",
+        "śpię"
+      ],
+      "items": [
+        "po-poludniu",
+        "musiec-musze",
+        "odpoczac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c2-e07",
+      "prompt": "przerwa",
+      "options": [
+        {
+          "en": "a break"
+        },
+        {
+          "en": "a lesson"
+        },
+        {
+          "en": "dinner, the main meal of the day"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przerwa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c2-e08",
+      "prompt": "później",
+      "options": [
+        {
+          "en": "now"
+        },
+        {
+          "en": "later"
+        },
+        {
+          "en": "in the morning"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pozniej"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c2-e09",
+      "prompt": "wszyscy",
+      "options": [
+        {
+          "en": "everything"
+        },
+        {
+          "en": "together"
+        },
+        {
+          "en": "everybody, all (of people)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wszyscy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-c2-e10",
+      "prompt": {
+        "en": "everybody is at home"
+      },
+      "acceptedAnswers": [
+        "wszyscy są w domu"
+      ],
+      "distractors": [
+        "wszystko",
+        "jest"
+      ],
+      "items": [
+        "wszyscy",
+        "byc-sa",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c2-e11",
+      "prompt": "zdalnie",
+      "options": [
+        {
+          "en": "remotely (pracuję zdalnie: I work from home)"
+        },
+        {
+          "en": "at home"
+        },
+        {
+          "en": "in an office"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zdalnie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-c2-e12",
+      "acceptedAnswers": [
+        "później pracuję zdalnie"
+      ],
+      "meaning": {
+        "en": "later I work remotely"
+      },
+      "items": [
+        "pozniej",
+        "pracowac-pracuje",
+        "zdalnie"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l11-c2-e13",
+      "verb": "wracać",
+      "meaning": {
+        "en": "to come back, to go back"
+      },
+      "person": "ja",
+      "sentence": "Wieczorem ___ do domu.",
+      "sentenceMeaning": {
+        "en": "In the evening I go home."
+      },
+      "acceptedAnswers": [
+        "wracam"
+      ],
+      "items": [
+        "wieczorem",
+        "wracac-wracam",
+        "do-domu"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-c2-e14",
+      "prompt": {
+        "en": "there is a break later"
+      },
+      "acceptedAnswers": [
+        "później jest przerwa",
+        "przerwa jest później"
+      ],
+      "items": [
+        "pozniej",
+        "byc-jest",
+        "przerwa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-c2-e15",
+      "prompt": {
+        "en": "this is a siesta"
+      },
+      "acceptedAnswers": [
+        "to jest sjesta"
+      ],
+      "distractors": [
+        "są",
+        "przerwa"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "sjesta"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-c2-e16",
+      "pairs": [
+        {
+          "polish": "wracam",
+          "meaning": {
+            "en": "I come back"
+          }
+        },
+        {
+          "polish": "zdalnie",
+          "meaning": {
+            "en": "remotely"
+          }
+        },
+        {
+          "polish": "odpocząć",
+          "meaning": {
+            "en": "to rest"
+          }
+        },
+        {
+          "polish": "sjesta",
+          "meaning": {
+            "en": "a siesta"
+          }
+        },
+        {
+          "polish": "przerwa",
+          "meaning": {
+            "en": "a break"
+          }
+        },
+        {
+          "polish": "później",
+          "meaning": {
+            "en": "later"
+          }
+        }
+      ],
+      "items": [
+        "wracac-wracam",
+        "zdalnie",
+        "odpoczac",
+        "sjesta",
+        "przerwa",
+        "pozniej"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-c2-e17",
+      "lines": [
+        "Przed południem jestem w szkole.",
+        "Po południu muszę odpocząć.",
+        "O północy wracam do domu."
+      ],
+      "meaning": {
+        "en": "A student's day."
+      },
+      "statements": [
+        {
+          "text": "Przed południem jest w szkole.",
+          "meaning": {
+            "en": "Before noon she is at school."
+          },
+          "true": true
+        },
+        {
+          "text": "O północy jest w szkole.",
+          "meaning": {
+            "en": "At midnight she is at school."
+          },
+          "true": false
+        },
+        {
+          "text": "Po południu odpoczywa.",
+          "meaning": {
+            "en": "In the afternoon she rests."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "przed-poludniem",
+        "byc-jestem",
+        "w-szkole",
+        "po-poludniu",
+        "musiec-musze",
+        "odpoczac",
+        "o-polnocy",
+        "wracac-wracam",
+        "do-domu"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-c2-e18",
+      "lines": [
+        "Rano wszyscy są w domu.",
+        "Przed południem dzieci są w szkole.",
+        "W południe mają przerwę.",
+        "Wieczorem wszyscy wracają do domu."
+      ],
+      "meaning": {
+        "en": "The family's day."
+      },
+      "items": [
+        "rano",
+        "wszyscy",
+        "byc-sa",
+        "w-domu",
+        "przed-poludniem",
+        "dzieci",
+        "w-szkole",
+        "w-poludnie",
+        "miec-maja",
+        "wieczorem",
+        "do-domu"
+      ]
+    }
+  ]
+}

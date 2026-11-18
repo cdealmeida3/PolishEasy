@@ -1,0 +1,437 @@
+{
+  "id": "kpk1-l11-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Czyja to rodzina?",
+    "meaning": {
+      "en": "Whose family is it?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-a5-t01",
+      "before": "kpk1-l11-a5-e01",
+      "title": {
+        "en": "Moi rodzice"
+      },
+      "body": {
+        "en": "With men, or a group with a man in it, *my* is *moi*: *moi rodzice*, *moi dziadkowie*. *Czyli* says the same thing in other words: *brat mamy, czyli wujek*. *Lub* is another word for *albo* (or). A *drzewo genealogiczne* is a family tree, and a *stuprocentowa Polka* is Polish through and through."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a5-e01",
+      "prompt": "moi",
+      "options": [
+        {
+          "en": "my (with a neuter noun)"
+        },
+        {
+          "en": "my (with a feminine noun)"
+        },
+        {
+          "en": "my (with men, or a group with a man in it: moi rodzice)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "moi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a5-e02",
+      "prompt": "drzewo genealogiczne",
+      "options": [
+        {
+          "en": "a family tree"
+        },
+        {
+          "en": "a family"
+        },
+        {
+          "en": "a photo (zdjęcia: photos)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "drzewo-genealogiczne"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a5-e03",
+      "prompt": "lub",
+      "options": [
+        {
+          "en": "and"
+        },
+        {
+          "en": "or"
+        },
+        {
+          "en": "but"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "lub"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a5-e04",
+      "prompt": "czyli",
+      "options": [
+        {
+          "en": "because"
+        },
+        {
+          "en": "but"
+        },
+        {
+          "en": "that is, in other words"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czyli"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-a5-e05",
+      "text": "Moi dziadkowie, ___ babcia i dziadek.",
+      "meaning": {
+        "en": "My grandparents, that is, grandma and grandpa."
+      },
+      "gaps": [
+        [
+          "czyli"
+        ]
+      ],
+      "distractors": [
+        "lub",
+        "ale"
+      ],
+      "items": [
+        "moi",
+        "dziadkowie",
+        "czyli",
+        "babcia",
+        "i",
+        "dziadek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a5-e06",
+      "prompt": "rozmawiam",
+      "options": [
+        {
+          "en": "I talk, I have a chat"
+        },
+        {
+          "en": "I speak"
+        },
+        {
+          "en": "you ask (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rozmawiac-rozmawiam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a5-e07",
+      "prompt": "spotykamy się",
+      "options": [
+        {
+          "en": "meet up (to meet up)"
+        },
+        {
+          "en": "we meet, we see each other"
+        },
+        {
+          "en": "we are going (on foot)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spotykac-sie-spotykamy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a5-e08",
+      "prompt": {
+        "en": "we meet at home"
+      },
+      "acceptedAnswers": [
+        "spotykamy się w domu"
+      ],
+      "distractors": [
+        "spotykać",
+        "idziemy"
+      ],
+      "items": [
+        "spotykac-sie-spotykamy",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a5-e09",
+      "prompt": "stuprocentowy",
+      "options": [
+        {
+          "en": "Polish (polski, polska, polskie)"
+        },
+        {
+          "en": "big (duży, duża, duże)"
+        },
+        {
+          "en": "one hundred per cent, through and through (stuprocentowy, stuprocentowa, stuprocentowe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "stuprocentowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a5-e10",
+      "prompt": "co powiedzieć",
+      "options": [
+        {
+          "en": "what to say (nie wiem, co powiedzieć)"
+        },
+        {
+          "en": "what is it? what is this?"
+        },
+        {
+          "en": "I don't know"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "co-powiedziec"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-a5-e11",
+      "acceptedAnswers": [
+        "nie wiem, co powiedzieć"
+      ],
+      "meaning": {
+        "en": "I don't know what to say"
+      },
+      "items": [
+        "nie-wiem",
+        "co-powiedziec"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-a5-e12",
+      "prompt": {
+        "en": "I don't know what to say"
+      },
+      "acceptedAnswers": [
+        "nie wiem, co powiedzieć"
+      ],
+      "items": [
+        "nie-wiem",
+        "co-powiedziec"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-a5-e13",
+      "pairs": [
+        {
+          "polish": "drzewo genealogiczne",
+          "meaning": {
+            "en": "a family tree"
+          }
+        },
+        {
+          "polish": "lub",
+          "meaning": {
+            "en": "or"
+          }
+        },
+        {
+          "polish": "czyli",
+          "meaning": {
+            "en": "that is"
+          }
+        },
+        {
+          "polish": "rozmawiam",
+          "meaning": {
+            "en": "I talk"
+          }
+        },
+        {
+          "polish": "spotykamy się",
+          "meaning": {
+            "en": "we meet"
+          }
+        },
+        {
+          "polish": "moi",
+          "meaning": {
+            "en": "my (people, a group with a man in it)"
+          }
+        }
+      ],
+      "items": [
+        "drzewo-genealogiczne",
+        "lub",
+        "czyli",
+        "rozmawiac-rozmawiam",
+        "spotykac-sie-spotykamy",
+        "moi"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l11-a5-e14",
+      "verb": "rozmawiać",
+      "meaning": {
+        "en": "to talk"
+      },
+      "person": "ja",
+      "sentence": "Teraz ___ po polsku.",
+      "sentenceMeaning": {
+        "en": "Now I am talking in Polish."
+      },
+      "acceptedAnswers": [
+        "rozmawiam"
+      ],
+      "items": [
+        "teraz",
+        "rozmawiac-rozmawiam",
+        "po-polsku"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-a5-e15",
+      "lines": [
+        "Moja mama jest stuprocentową Polką.",
+        "Moi rodzice mieszkają w Krakowie.",
+        "Dziadkowie też mieszkają w Krakowie."
+      ],
+      "meaning": {
+        "en": "A family in Kraków."
+      },
+      "statements": [
+        {
+          "text": "Mama jest Polką.",
+          "meaning": {
+            "en": "Mum is Polish."
+          },
+          "true": true
+        },
+        {
+          "text": "Dziadkowie mieszkają w Warszawie.",
+          "meaning": {
+            "en": "The grandparents live in Warsaw."
+          },
+          "true": false
+        },
+        {
+          "text": "Rodzice mieszkają w Krakowie.",
+          "meaning": {
+            "en": "The parents live in Kraków."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "moja",
+        "mama",
+        "byc-jest",
+        "stuprocentowy",
+        "polka-instr",
+        "moi",
+        "rodzice",
+        "mieszkac-mieszkaja",
+        "w-krakowie",
+        "dziadkowie",
+        "tez"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-a5-e16",
+      "lines": [
+        "Gdzie mieszka twoja rodzina?",
+        "W Krakowie.",
+        "A ty?",
+        "Ja mieszkam w Warszawie."
+      ],
+      "meaning": {
+        "en": "Where does the family live?"
+      },
+      "items": [
+        "gdzie",
+        "mieszkac-mieszka",
+        "twoja",
+        "rodzina",
+        "w-krakowie",
+        "a",
+        "ty",
+        "ja",
+        "mieszkac-mieszkam",
+        "w-warszawie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a5-e17",
+      "prompt": {
+        "en": "mum or dad"
+      },
+      "acceptedAnswers": [
+        "mama lub tata"
+      ],
+      "distractors": [
+        "albo",
+        "i"
+      ],
+      "items": [
+        "mama",
+        "lub",
+        "tata"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-a5-e18",
+      "prompt": {
+        "en": "I'm a hundred per cent Polish (a woman)"
+      },
+      "acceptedAnswers": [
+        "jestem stuprocentową Polką"
+      ],
+      "items": [
+        "byc-jestem",
+        "stuprocentowy",
+        "polka-instr"
+      ]
+    }
+  ]
+}

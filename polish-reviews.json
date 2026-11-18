@@ -139,6 +139,9 @@
             "text": "A Ewa?"
         },
         {
+            "text": "A Tomek?"
+        },
+        {
             "text": "A banany? Te zielone?",
             "meaning": "And bananas? These green ones?"
         },
@@ -160,6 +163,9 @@
         {
             "text": "A czy to jest twój słownik?",
             "meaning": "And is this your dictionary?"
+        },
+        {
+            "text": "A czyja to kawa?"
         },
         {
             "text": "A danie główne?",
@@ -224,6 +230,10 @@
             "text": "A kalafior?"
         },
         {
+            "text": "A kto to jest?",
+            "meaning": "And who is this?"
+        },
+        {
             "text": "A może rurka z kremem?",
             "meaning": "How about a cream horn?"
         },
@@ -240,7 +250,17 @@
             "text": "A szampon?"
         },
         {
+            "text": "A ten pan?"
+        },
+        {
+            "text": "A to dziecko? Czyje to dziecko?",
+            "meaning": "And this child? Whose child is it?"
+        },
+        {
             "text": "A to jest Anna, studentka."
+        },
+        {
+            "text": "A to moja ciocia i mój wujek."
         },
         {
             "text": "A to?"
@@ -259,12 +279,19 @@
             "text": "A twoja koleżanka?"
         },
         {
+            "text": "A twój brat?"
+        },
+        {
             "text": "A ty mówisz po angielsku?",
             "meaning": "A little. And do you speak English?"
         },
         {
             "text": "A ty?",
             "meaning": "And you?"
+        },
+        {
+            "text": "A ty? Jesteś żonaty?",
+            "meaning": "And you? Are you married?"
         },
         {
             "text": "A ty? Kim jesteś z zawodu?"
@@ -278,6 +305,9 @@
         },
         {
             "text": "A u pana?"
+        },
+        {
+            "text": "A w nocy?"
         },
         {
             "text": "A woda mineralna?"
@@ -296,6 +326,13 @@
         {
             "text": "Adam chodzi na basen.",
             "meaning": "Adam goes to the swimming pool."
+        },
+        {
+            "text": "Adam i Ewa mają dwoje dzieci."
+        },
+        {
+            "text": "Adam i Ewa mają dzieci.",
+            "meaning": "Adam and Ewa have children."
         },
         {
             "text": "Adam i Ewa mają pytanie.",
@@ -349,6 +386,10 @@
             "text": "Adam jest chory."
         },
         {
+            "text": "Adam jest dziadkiem.",
+            "meaning": "Adam is a grandpa."
+        },
+        {
             "text": "Adam jest głodny.",
             "meaning": "Adam is hungry."
         },
@@ -360,8 +401,20 @@
             "meaning": "Adam is a musician."
         },
         {
+            "text": "Adam jest mężem i ojcem",
+            "meaning": "Adam is a husband and a father"
+        },
+        {
+            "text": "Adam jest mężem.",
+            "meaning": "Adam is a husband."
+        },
+        {
             "text": "Adam jest niski.",
             "meaning": "Adam is short."
+        },
+        {
+            "text": "Adam jest ojcem.",
+            "meaning": "Adam is a father."
         },
         {
             "text": "Adam jest studentem",
@@ -485,6 +538,10 @@
         {
             "text": "Adam mówi trochę po japońsku.",
             "meaning": "Adam speaks a little Japanese."
+        },
+        {
+            "text": "Adam nie jest kawalerem, jest żonaty.",
+            "meaning": "Adam is not a bachelor, he is married."
         },
         {
             "text": "Adam nie lubi czerwonego wina.",
@@ -667,6 +724,9 @@
             "meaning": "English (a woman, after jestem, jesteś, jest)"
         },
         {
+            "text": "Angielką."
+        },
+        {
             "text": "Anglia"
         },
         {
@@ -682,6 +742,20 @@
         {
             "text": "Anna to studentka.",
             "meaning": "Anna is a student."
+        },
+        {
+            "text": "Autobusem."
+        },
+        {
+            "text": "Babcia i dziadek mają wnuki.",
+            "meaning": "Grandma and grandpa have grandchildren."
+        },
+        {
+            "text": "Babcia i dziadek to dziadkowie.",
+            "meaning": "Grandma and grandpa are the grandparents."
+        },
+        {
+            "text": "Babcia, dziadek."
         },
         {
             "text": "Bank i apteka."
@@ -707,6 +781,10 @@
         {
             "text": "Bardzo przepraszamy.",
             "meaning": "We are very sorry."
+        },
+        {
+            "text": "Bardzo rzadko chodzę do kina.",
+            "meaning": "I very rarely go to the cinema."
         },
         {
             "text": "Bardzo stara."
@@ -768,6 +846,10 @@
             "meaning": "There is a good snack bar nearby."
         },
         {
+            "text": "Bliźniaki mają dziesięć lat.",
+            "meaning": "The twins are ten."
+        },
+        {
             "text": "Bo chce być szczupła."
         },
         {
@@ -810,6 +892,9 @@
             "text": "Bo jest mały."
         },
         {
+            "text": "Bo jest nauczycielką."
+        },
+        {
             "text": "Bo jest nowa."
         },
         {
@@ -817,6 +902,9 @@
         },
         {
             "text": "Bo jest stary."
+        },
+        {
+            "text": "Bo lubi wszystko wiedzieć."
         },
         {
             "text": "Bo lubią tańczyć."
@@ -834,6 +922,9 @@
         },
         {
             "text": "Bo nie lubi masła."
+        },
+        {
+            "text": "Bo pisze artykuł."
         },
         {
             "text": "Brat chodzi do szkoły.",
@@ -899,6 +990,9 @@
             "text": "Chodzi do szkoły. Myśli, że szkoła jest fajna."
         },
         {
+            "text": "Chodzi na basen lub na kurs tańca."
+        },
+        {
             "text": "Chodzę na siłownię, a w weekend idę do kina.",
             "meaning": "I go to the gym, and at the weekend I go to the cinema."
         },
@@ -910,6 +1004,9 @@
         },
         {
             "text": "Chyba Maria."
+        },
+        {
+            "text": "Chyba jej."
         },
         {
             "text": "Chyba nowy student.",
@@ -966,6 +1063,13 @@
             "text": "Ciemny chleb z margaryną."
         },
         {
+            "text": "Ciocia ma bliźniaki.",
+            "meaning": "The aunt has twins."
+        },
+        {
+            "text": "Ciocia, wujek, kuzyn."
+        },
+        {
             "text": "Co"
         },
         {
@@ -975,6 +1079,10 @@
         {
             "text": "Co bardzo lubi druga dziewczyna?",
             "meaning": "What does the other girl like very much?"
+        },
+        {
+            "text": "Co blokuje garaż?",
+            "meaning": "What is blocking the garage?"
         },
         {
             "text": "Co chce zjeść dziewczyna?",
@@ -1085,6 +1193,9 @@
             "text": "Co lubisz jeść?"
         },
         {
+            "text": "Co miesiąc."
+        },
+        {
             "text": "Co mówi Mami na „miło mi”?",
             "meaning": "What does Mami say to “miło mi”?"
         },
@@ -1177,6 +1288,10 @@
             "meaning": "What does the waitress recommend?"
         },
         {
+            "text": "Co robi Karol na śniadanie?",
+            "meaning": "What does Karol make for breakfast?"
+        },
+        {
             "text": "Co robi chłopak?",
             "meaning": "What is the boy doing?"
         },
@@ -1187,6 +1302,14 @@
         {
             "text": "Co robi pani w pierwszym dialogu?",
             "meaning": "What is the lady doing in the first dialogue?"
+        },
+        {
+            "text": "Co robi rodzeństwo po południu?",
+            "meaning": "What do the brother and sister do in the afternoon?"
+        },
+        {
+            "text": "Co robi syn wieczorem?",
+            "meaning": "What does the son do in the evening?"
         },
         {
             "text": "Co robicie w weekend?"
@@ -1214,6 +1337,14 @@
         {
             "text": "Co słychać?",
             "meaning": "How are things?"
+        },
+        {
+            "text": "Co słyszysz na końcu?",
+            "meaning": "What do you hear at the end?"
+        },
+        {
+            "text": "Co słyszysz po słowie „dziadkowie”?",
+            "meaning": "What do you hear after the word \"dziadkowie\"?"
         },
         {
             "text": "Co słyszysz po słowie „gruszka”?",
@@ -1268,12 +1399,25 @@
             "text": "Co u ciebie?"
         },
         {
+            "text": "Co wie o pierwszej żonie?",
+            "meaning": "What does he know about his first wife?"
+        },
+        {
             "text": "Co zamawia drugi klient?",
             "meaning": "What does the second customer order?"
         },
         {
             "text": "Co zamawiają do picia?",
             "meaning": "What do they order to drink?"
+        },
+        {
+            "text": "Co? Codziennie?"
+        },
+        {
+            "text": "Codziennie rano dzwoni do babci."
+        },
+        {
+            "text": "Codziennie."
         },
         {
             "text": "Coś jeszcze?"
@@ -1519,6 +1663,10 @@
             "meaning": "Is it a board? Yes, it is a board."
         },
         {
+            "text": "Czy to prawda, że masz brata?",
+            "meaning": "Is it true that you have a brother?"
+        },
+        {
             "text": "Czy to wszystko?",
             "meaning": "Is that all?"
         },
@@ -1562,6 +1710,42 @@
             "meaning": "Do you know this film?"
         },
         {
+            "text": "Czyj to brat?",
+            "meaning": "Whose brother is it?"
+        },
+        {
+            "text": "Czyj? Czyja? Czyje?",
+            "meaning": "Whose?"
+        },
+        {
+            "text": "Czyja"
+        },
+        {
+            "text": "Czyja jest książka, według studentki?",
+            "meaning": "Whose book is it, according to the student?"
+        },
+        {
+            "text": "Czyja to kawa?"
+        },
+        {
+            "text": "Czyja to rodzina?",
+            "meaning": "Whose family is it?"
+        },
+        {
+            "text": "Czyje"
+        },
+        {
+            "text": "Czyje to dzieci?"
+        },
+        {
+            "text": "Czyje to zdjęcie?",
+            "meaning": "Whose photo is this?"
+        },
+        {
+            "text": "Czym Uwe zwykle jeździ do pracy?",
+            "meaning": "How does Uwe usually get to work?"
+        },
+        {
             "text": "Czym się interesujesz?"
         },
         {
@@ -1573,6 +1757,9 @@
         {
             "text": "Czy…?",
             "meaning": "Is it…?"
+        },
+        {
+            "text": "Często gotuje."
         },
         {
             "text": "Dane personalne",
@@ -1665,6 +1852,10 @@
             "meaning": "Why is he learning Polish?"
         },
         {
+            "text": "Dlaczego ona tak dużo pyta?",
+            "meaning": "Why does she ask so many questions?"
+        },
+        {
             "text": "Dlaczego ona uczy się polskiego?",
             "meaning": "Why is she learning Polish?"
         },
@@ -1716,6 +1907,9 @@
         },
         {
             "text": "Do picia ma czarną kawę."
+        },
+        {
+            "text": "Do pracy jeździ samochodem."
         },
         {
             "text": "Do pubu."
@@ -1897,6 +2091,9 @@
             "text": "Dwa razy kompot."
         },
         {
+            "text": "Dwa razy w roku."
+        },
+        {
             "text": "Dwa złote."
         },
         {
@@ -1947,6 +2144,25 @@
         },
         {
             "text": "Dwie."
+        },
+        {
+            "text": "Dziadek codziennie dzwoni do babci.",
+            "meaning": "Grandpa calls grandma every day."
+        },
+        {
+            "text": "Dziadek często jeździ taksówką.",
+            "meaning": "Grandpa often goes by taxi."
+        },
+        {
+            "text": "Dziadek zwykle jeździ samochodem.",
+            "meaning": "Grandpa usually goes by car."
+        },
+        {
+            "text": "Dziadkowie mieszkają w Warszawie.",
+            "meaning": "The grandparents live in Warsaw."
+        },
+        {
+            "text": "Dziadkowie też mieszkają w Krakowie."
         },
         {
             "text": "Dziesięć minus cztery równa się pięć.",
@@ -2317,6 +2533,14 @@
             "meaning": "Ewa is reading a book."
         },
         {
+            "text": "Ewa często gotuje.",
+            "meaning": "Ewa often cooks."
+        },
+        {
+            "text": "Ewa często pije herbatę.",
+            "meaning": "Ewa often drinks tea."
+        },
+        {
             "text": "Ewa daje napiwek."
         },
         {
@@ -2344,6 +2568,17 @@
         },
         {
             "text": "Ewa i Adam są w supermarkecie."
+        },
+        {
+            "text": "Ewa i Adam to małżeństwo."
+        },
+        {
+            "text": "Ewa i Adam to rodzeństwo.",
+            "meaning": "Ewa and Adam are brother and sister."
+        },
+        {
+            "text": "Ewa i Adam to rodzice.",
+            "meaning": "Ewa and Adam are parents."
         },
         {
             "text": "Ewa interesuje się fotografią.",
@@ -2418,12 +2653,20 @@
             "meaning": "Ewa is a good journalist"
         },
         {
+            "text": "Ewa jest matką i babcią.",
+            "meaning": "Ewa is a mother and a grandma."
+        },
+        {
             "text": "Ewa jest miłą dziewczyną",
             "meaning": "Ewa is a nice girl"
         },
         {
             "text": "Ewa jest miłą dziewczyną.",
             "meaning": "Ewa is a nice girl."
+        },
+        {
+            "text": "Ewa jest rozwiedziona",
+            "meaning": "Ewa is divorced"
         },
         {
             "text": "Ewa jest smutna.",
@@ -2630,6 +2873,10 @@
             "meaning": "Ewa drinks tea with lemon."
         },
         {
+            "text": "Ewa pije kawę rano.",
+            "meaning": "Ewa drinks coffee in the morning."
+        },
+        {
             "text": "Ewa pije mleko.",
             "meaning": "Ewa drinks milk."
         },
@@ -2691,6 +2938,9 @@
         },
         {
             "text": "Ewa zamawia żurek z jajkiem."
+        },
+        {
+            "text": "Ewa zawsze pije kawę rano."
         },
         {
             "text": "Ewa, co czytasz?"
@@ -2783,8 +3033,15 @@
             "meaning": "Where does the woman live?"
         },
         {
+            "text": "Gdzie mieszka twoja rodzina?"
+        },
+        {
             "text": "Gdzie mieszka?",
             "meaning": "Where does this person live?"
+        },
+        {
+            "text": "Gdzie mieszkają?",
+            "meaning": "Where do they live?"
         },
         {
             "text": "Gdzie mogę kupić dezodorant?"
@@ -2814,6 +3071,10 @@
         },
         {
             "text": "Gdzie pracujesz?"
+        },
+        {
+            "text": "Gdzie rodzina spotyka się rano?",
+            "meaning": "Where does the family meet in the morning?"
         },
         {
             "text": "Gdzie są chipsy?",
@@ -2900,6 +3161,9 @@
             "meaning": "The guest prefers brown bread."
         },
         {
+            "text": "Gra na komputerze z kolegami."
+        },
+        {
             "text": "Gra na komputerze."
         },
         {
@@ -2965,6 +3229,20 @@
             "text": "I ze śmietaną."
         },
         {
+            "text": "Ich córka ma pięć lat.",
+            "meaning": "Their daughter is five."
+        },
+        {
+            "text": "Ich córka ma trzy lata."
+        },
+        {
+            "text": "Ich syn ma pięć lat.",
+            "meaning": "Their son is five."
+        },
+        {
+            "text": "Idzie do kina."
+        },
+        {
             "text": "Idziecie z nami do pubu?"
         },
         {
@@ -3023,6 +3301,10 @@
         {
             "text": "Ile lat ma jej mąż?",
             "meaning": "How old is her husband?"
+        },
+        {
+            "text": "Ile ma dzieci?",
+            "meaning": "How many children does he have?"
         },
         {
             "text": "Ile ma pan lat?",
@@ -3188,6 +3470,9 @@
             "meaning": "I live in Warsaw, and where do you live? (one friend)"
         },
         {
+            "text": "Ja mieszkam w Warszawie."
+        },
+        {
             "text": "Ja nie lubię czytać."
         },
         {
@@ -3264,6 +3549,28 @@
         {
             "text": "Jajko na miękko czy na twardo?",
             "meaning": "A soft-boiled or a hard-boiled egg?"
+        },
+        {
+            "text": "Jak często Uwe dzwoni do żony?",
+            "meaning": "How often does Uwe call his wife?"
+        },
+        {
+            "text": "Jak często Uwe ma urlop?",
+            "meaning": "How often does Uwe have a holiday?"
+        },
+        {
+            "text": "Jak często dzwonisz do mamy?"
+        },
+        {
+            "text": "Jak często grasz w piłkę?"
+        },
+        {
+            "text": "Jak często spotyka się z dziadkami?",
+            "meaning": "How often does she see her grandparents?"
+        },
+        {
+            "text": "Jak często?",
+            "meaning": "How often?"
         },
         {
             "text": "Jak ma na imię kolega Angeli?",
@@ -3505,6 +3812,10 @@
             "meaning": "What are the three genders?"
         },
         {
+            "text": "Jakie słowa słyszysz na początku?",
+            "meaning": "Which words do you hear at the start?"
+        },
+        {
             "text": "Jakie słowo słyszysz?",
             "meaning": "Which word do you hear?"
         },
@@ -3583,6 +3894,9 @@
             "text": "Jasny i ciemny."
         },
         {
+            "text": "Javiera."
+        },
+        {
             "text": "Jeden klient nie chce zupy.",
             "meaning": "One customer does not want soup."
         },
@@ -3622,10 +3936,20 @@
             "meaning": "His girlfriend skis."
         },
         {
+            "text": "Jego dziewczyną."
+        },
+        {
             "text": "Jego kolega."
         },
         {
+            "text": "Jego rodzina mieszka w różnych miastach.",
+            "meaning": "His family lives in different cities."
+        },
+        {
             "text": "Jego rodzina."
+        },
+        {
+            "text": "Jego siostrą."
         },
         {
             "text": "Jego szkoła."
@@ -3635,12 +3959,34 @@
             "meaning": "His wife is from Poland."
         },
         {
+            "text": "Jego żoną."
+        },
+        {
+            "text": "Jej babcia jeszcze żyje.",
+            "meaning": "Her grandmother is still alive."
+        },
+        {
             "text": "Jej mama gotuje bardzo dobrze.",
             "meaning": "Her mum cooks very well."
         },
         {
+            "text": "Jej mama jest Polką.",
+            "meaning": "Her mother is Polish."
+        },
+        {
+            "text": "Jej mama ma dużo rodzeństwa.",
+            "meaning": "Her mother has lots of brothers and sisters."
+        },
+        {
+            "text": "Jej ojciec jest Anglikiem.",
+            "meaning": "Her father is English."
+        },
+        {
             "text": "Jej ulubiona potrawa to ryba i frytki.",
             "meaning": "Her favourite dish is fish and chips."
+        },
+        {
+            "text": "Jej."
         },
         {
             "text": "Jem chleb.",
@@ -3658,11 +4004,17 @@
             "text": "Jest czynna."
         },
         {
+            "text": "Jest jej mężem."
+        },
+        {
             "text": "Jest już późno, ale Adam jeszcze je śniadanie."
         },
         {
             "text": "Jest już późno.",
             "meaning": "It's already late."
+        },
+        {
+            "text": "Jest kawalerem."
         },
         {
             "text": "Jest leniwy?"
@@ -3671,7 +4023,13 @@
             "text": "Jest mała, czerwona i słodka."
         },
         {
+            "text": "Jest mężem i ojcem."
+        },
+        {
             "text": "Jest młoda, miła i bardzo inteligentna."
+        },
+        {
+            "text": "Jest młodszy czy starszy?"
         },
         {
             "text": "Jest ostra."
@@ -3709,6 +4067,9 @@
         },
         {
             "text": "Jest też piekarnia i fryzjer."
+        },
+        {
+            "text": "Jest też synem."
         },
         {
             "text": "Jest też woda mineralna."
@@ -3856,6 +4217,9 @@
             "meaning": "Are you from France? Yes, I speak French."
         },
         {
+            "text": "Jesteś żonaty?"
+        },
+        {
             "text": "Jesz ser.",
             "meaning": "You eat cheese."
         },
@@ -4001,6 +4365,9 @@
             "meaning": "When do they eat fish?"
         },
         {
+            "text": "Kiedy pracujesz?"
+        },
+        {
             "text": "Kiełbasa jest tłusta.",
             "meaning": "The sausage is fatty."
         },
@@ -4009,11 +4376,30 @@
             "meaning": "A kilo is a kilogram."
         },
         {
+            "text": "Kim był jej dziadek?",
+            "meaning": "Who was her grandfather?"
+        },
+        {
             "text": "Kim jest Adam?"
+        },
+        {
+            "text": "Kim jest Maria Elena?",
+            "meaning": "Who is Maria Elena?"
         },
         {
             "text": "Kim jest jego żona?",
             "meaning": "What does his wife do?"
+        },
+        {
+            "text": "Kim jest jej ciocia?",
+            "meaning": "Who is her aunt?"
+        },
+        {
+            "text": "Kim jest ta kobieta?",
+            "meaning": "Who is this woman?"
+        },
+        {
+            "text": "Kim jest ta pani?"
         },
         {
             "text": "Kim jest z zawodu jego kolega?",
@@ -4107,6 +4493,10 @@
             "meaning": "The customer pays … złoty 32 grosze. How many złoty?"
         },
         {
+            "text": "Kogo ma ta kobieta?",
+            "meaning": "Who does this woman have?"
+        },
+        {
             "text": "Kogo znasz w Krakowie?"
         },
         {
@@ -4183,6 +4573,10 @@
             "meaning": "The cosmetics are at the drugstore."
         },
         {
+            "text": "Kot jest duży.",
+            "meaning": "The cat is big."
+        },
+        {
             "text": "Kotlet mielony z frytkami, proszę.",
             "meaning": "A minced meat patty with chips, please."
         },
@@ -4225,6 +4619,10 @@
         {
             "text": "Kto to jest?",
             "meaning": "Who is it?"
+        },
+        {
+            "text": "Kto to jest?",
+            "meaning": "Who is this?"
         },
         {
             "text": "Kto to jest? Jaki on jest?",
@@ -4435,7 +4833,17 @@
             "text": "Ma dobry aparat, ale chce kupić też tani aparat."
         },
         {
+            "text": "Ma dobry kontakt z pierwszą żoną.",
+            "meaning": "He keeps in good touch with his first wife."
+        },
+        {
+            "text": "Ma drugiego męża."
+        },
+        {
             "text": "Ma dwie papryki i cztery pomidory."
+        },
+        {
+            "text": "Ma dwoje dzieci."
         },
         {
             "text": "Ma marchewkę, pietruszkę, seler i por."
@@ -4451,6 +4859,12 @@
         },
         {
             "text": "Majonez."
+        },
+        {
+            "text": "Mają dziesięć lat."
+        },
+        {
+            "text": "Mają syna i córkę."
         },
         {
             "text": "Mają też wodę mineralną."
@@ -4508,6 +4922,9 @@
             "text": "Mam kontuzję."
         },
         {
+            "text": "Mam męża i dwoje dzieci."
+        },
+        {
             "text": "Mam na imię Adam.",
             "meaning": "Hi! I'm Adam."
         },
@@ -4538,14 +4955,25 @@
             "meaning": "I have a sports car."
         },
         {
+            "text": "Mam też ciocię i wujka."
+        },
+        {
             "text": "Mam też dobrego tatę."
         },
         {
             "text": "Mam tu komórkę, klucz i paszport."
         },
         {
+            "text": "Mam urlop raz w roku.",
+            "meaning": "I have a holiday once a year."
+        },
+        {
             "text": "Mam wodę.",
             "meaning": "I have water."
+        },
+        {
+            "text": "Mam żonę i dwoje dzieci.",
+            "meaning": "I have a wife and two children."
         },
         {
             "text": "Mam, ale tylko euro."
@@ -4577,6 +5005,10 @@
             "text": "Mama i tata."
         },
         {
+            "text": "Mama jest Polką.",
+            "meaning": "Mum is Polish."
+        },
+        {
             "text": "Mama kupuje korzeń.",
             "meaning": "Mum is buying a root."
         },
@@ -4600,10 +5032,16 @@
             "meaning": "Mum is making dinner."
         },
         {
+            "text": "Mama, tata."
+        },
+        {
             "text": "Mama."
         },
         {
             "text": "Mami."
+        },
+        {
+            "text": "Mamę, tatę, siostrę i brata."
         },
         {
             "text": "Mapa i klucz to rzeczowniki.",
@@ -4631,6 +5069,13 @@
             "text": "Maria"
         },
         {
+            "text": "Marta jest panną?"
+        },
+        {
+            "text": "Marta jest rozwiedziona.",
+            "meaning": "Marta is divorced."
+        },
+        {
             "text": "Masz chleb.",
             "meaning": "You have bread."
         },
@@ -4650,6 +5095,9 @@
         {
             "text": "Masz rację.",
             "meaning": "Certainly. He is tall and slim."
+        },
+        {
+            "text": "Masz rodzeństwo?"
         },
         {
             "text": "Masz też ochotę na jajko?",
@@ -4684,6 +5132,9 @@
             "meaning": "The nominative"
         },
         {
+            "text": "Mieszka w Krakowie."
+        },
+        {
             "text": "Mieszka w Krakowie. Jest wysoki i przystojny."
         },
         {
@@ -4699,6 +5150,10 @@
         {
             "text": "Mieszkam w Londynie.",
             "meaning": "I live in London."
+        },
+        {
+            "text": "Mieszkanie jest nasze.",
+            "meaning": "The flat is ours."
         },
         {
             "text": "Mieszkasz w Krakowie.",
@@ -4764,8 +5219,18 @@
             "meaning": "Yes, today I can!"
         },
         {
+            "text": "Moi dziadkowie, czyli babcia i dziadek.",
+            "meaning": "My grandparents, that is, grandma and grandpa."
+        },
+        {
+            "text": "Moi rodzice mieszkają w Krakowie."
+        },
+        {
             "text": "Moja babcia ma na imię Ewa.",
             "meaning": "My grandma's first name is Ewa."
+        },
+        {
+            "text": "Moja ciocia ma bliźniaki."
         },
         {
             "text": "Moja dziewczyna jeździ na rolkach.",
@@ -4773,6 +5238,12 @@
         },
         {
             "text": "Moja gospodyni gotuje pierogi."
+        },
+        {
+            "text": "Moja mama jest stuprocentową Polką."
+        },
+        {
+            "text": "Moja rodzina jest duża."
         },
         {
             "text": "Moja rodzina jest w Japonii. Jestem trochę smutna."
@@ -4860,6 +5331,9 @@
             "meaning": "My brother's first name is Adam."
         },
         {
+            "text": "Mój dziadek prawie nigdy nie jeździ taksówką."
+        },
+        {
             "text": "Mój długopis jest tam, na lewo.",
             "meaning": "My pen is over there, on the left."
         },
@@ -4920,6 +5394,10 @@
             "text": "Mój tata ma sportowe auto."
         },
         {
+            "text": "Mój teść i moja teściowa mieszkają w Krakowie.",
+            "meaning": "My father-in-law and my mother-in-law live in Kraków."
+        },
+        {
             "text": "Mój ulubiony owoc to truskawka."
         },
         {
@@ -4941,7 +5419,14 @@
             "meaning": "Yes, a little."
         },
         {
+            "text": "Mąż i żona to…",
+            "meaning": "A husband and a wife are a… (one word)"
+        },
+        {
             "text": "Męski, żeński i nijaki."
+        },
+        {
+            "text": "Męża i dzieci."
         },
         {
             "text": "Na ciepło, z lodami."
@@ -4977,6 +5462,10 @@
         {
             "text": "Na końcu lektor mówi: płacę kartą.",
             "meaning": "At the end the speaker says: I pay by card."
+        },
+        {
+            "text": "Na końcu słyszysz: wnuczka, wnuk.",
+            "meaning": "At the end you hear: granddaughter, grandson."
         },
         {
             "text": "Na końcu: z … wszędzie. Z kim?",
@@ -5172,6 +5661,12 @@
             "meaning": "At last, the weekend!"
         },
         {
+            "text": "Nasz kot jest mały."
+        },
+        {
+            "text": "Nasza rodzina jest duża."
+        },
+        {
             "text": "Natka czy korzeń?"
         },
         {
@@ -5180,6 +5675,12 @@
         },
         {
             "text": "Naturalny."
+        },
+        {
+            "text": "Nauczycielem."
+        },
+        {
+            "text": "Nauczycielki."
         },
         {
             "text": "Nawzajem! Do widzenia.",
@@ -5311,6 +5812,9 @@
             "meaning": "I don't have any beer."
         },
         {
+            "text": "Nie mam rodzeństwa."
+        },
+        {
             "text": "Nie mam soku.",
             "meaning": "I don't have any juice."
         },
@@ -5430,8 +5934,15 @@
             "text": "Nie, jest bardzo pracowity!"
         },
         {
+            "text": "Nie, jest rozwiedziona."
+        },
+        {
             "text": "Nie, jest zielony.",
             "meaning": "No, green."
+        },
+        {
+            "text": "Nie, jestem kawalerem.",
+            "meaning": "No, I'm a bachelor."
         },
         {
             "text": "Nie, jestem z Anglii.",
@@ -5447,6 +5958,9 @@
         },
         {
             "text": "Nie, już nie śpię."
+        },
+        {
+            "text": "Nie, na pewno nie moja."
         },
         {
             "text": "Nie, nie lubię."
@@ -5544,6 +6058,10 @@
             "meaning": "No, green."
         },
         {
+            "text": "Nie. Jestem kawalerem.",
+            "meaning": "No, I'm a bachelor."
+        },
+        {
             "text": "Niemcem",
             "meaning": "German (a man)"
         },
@@ -5561,6 +6079,9 @@
         {
             "text": "Niemką",
             "meaning": "German (a woman, after jestem, jesteś, jest…)"
+        },
+        {
+            "text": "Nigdy nie pije herbaty."
         },
         {
             "text": "Niski i leniwy."
@@ -5617,6 +6138,13 @@
             "text": "O pizzę."
         },
         {
+            "text": "O północy jest w szkole.",
+            "meaning": "At midnight she is at school."
+        },
+        {
+            "text": "O północy wracam do domu."
+        },
+        {
             "text": "O rybę z frytkami."
         },
         {
@@ -5628,6 +6156,9 @@
         },
         {
             "text": "Och, pięknie pachnie!"
+        },
+        {
+            "text": "Od czasu do czasu."
         },
         {
             "text": "Ogląda stare zdjęcia."
@@ -5650,12 +6181,19 @@
             "meaning": "He wants to watch films in Spanish."
         },
         {
+            "text": "On gra codziennie."
+        },
+        {
             "text": "On jest chory, ale ona jest zdrowa.",
             "meaning": "He is ill, but she is healthy."
         },
         {
             "text": "On jest dobry. On jest dobrym lekarzem.",
             "meaning": "He is good. He is a good doctor."
+        },
+        {
+            "text": "On jest drugi raz żonaty.",
+            "meaning": "He is married for the second time."
         },
         {
             "text": "On jest gruby, ale zdrowy, bo jest bardzo aktywny.",
@@ -5678,12 +6216,19 @@
             "meaning": "He is from Ukraine and speaks Ukrainian, and she is from Japan and speaks Japanese."
         },
         {
+            "text": "On jest żonaty."
+        },
+        {
             "text": "On lubi aktywnie spędzać czas.",
             "meaning": "He likes spending his time actively."
         },
         {
             "text": "On lubi pracować.",
             "meaning": "He likes working."
+        },
+        {
+            "text": "On ma dużą rodzinę.",
+            "meaning": "He has a big family."
         },
         {
             "text": "On ma dwadzieścia osiem lat.",
@@ -5706,6 +6251,10 @@
             "meaning": "He can sing."
         },
         {
+            "text": "Ona i jej brat to bliźniaki.",
+            "meaning": "She and her brother are twins."
+        },
+        {
             "text": "Ona jest Japonką.",
             "meaning": "She is Japanese."
         },
@@ -5726,6 +6275,10 @@
             "meaning": "She likes seafood."
         },
         {
+            "text": "Ona lubi rozmawiać o rodzinie.",
+            "meaning": "She likes talking about her family."
+        },
+        {
             "text": "Ona lubi spaghetti i pizzę.",
             "meaning": "She likes spaghetti and pizza."
         },
@@ -5734,12 +6287,24 @@
             "meaning": "She likes listening to rock music."
         },
         {
+            "text": "Ona ma męża.",
+            "meaning": "She has a husband."
+        },
+        {
             "text": "Ona ma na imię Ewa.",
             "meaning": "Her name is Ewa."
         },
         {
             "text": "Ona ma tylko euro.",
             "meaning": "She only has euros."
+        },
+        {
+            "text": "Ona ma wujka.",
+            "meaning": "She has an uncle."
+        },
+        {
+            "text": "Ona ma żonę.",
+            "meaning": "She has a wife."
         },
         {
             "text": "Ona mieszka w Rzymie.",
@@ -5888,6 +6453,14 @@
             "meaning": "The man is really working now."
         },
         {
+            "text": "Pan wie, czyj to samochód.",
+            "meaning": "The man knows whose car it is."
+        },
+        {
+            "text": "Pani Joanna pracuje zdalnie albo w redakcji gazety.",
+            "meaning": "Mrs Joanna works from home or at the newspaper office."
+        },
+        {
             "text": "Pani jest z Anglii.",
             "meaning": "The woman is from England."
         },
@@ -5927,6 +6500,10 @@
             "text": "Pierogi."
         },
         {
+            "text": "Pierwsza odpowiedź na pytanie „Jak często?”",
+            "meaning": "The first answer to the question \"how often?\""
+        },
+        {
             "text": "Pierwsza pani pije gorącą czekoladę.",
             "meaning": "The first woman drinks hot chocolate."
         },
@@ -5945,6 +6522,10 @@
         {
             "text": "Pierwsze słowo jest po hiszpańsku.",
             "meaning": "The first word is in Spanish."
+        },
+        {
+            "text": "Pierwsze słowo to…",
+            "meaning": "The first word is… (a family)"
         },
         {
             "text": "Pierwszy aparat jest duży i drogi.",
@@ -5998,7 +6579,13 @@
             "meaning": "I drink wine."
         },
         {
+            "text": "Pilotem."
+        },
+        {
             "text": "Pisze e-maile."
+        },
+        {
+            "text": "Pisze maile."
         },
         {
             "text": "Piwa ani wina."
@@ -6031,6 +6618,14 @@
         {
             "text": "Plecak.",
             "meaning": "It is my backpack."
+        },
+        {
+            "text": "Po południu muszę odpocząć.",
+            "meaning": "In the afternoon I have to rest."
+        },
+        {
+            "text": "Po południu odpoczywa.",
+            "meaning": "In the afternoon she rests."
         },
         {
             "text": "Po staremu."
@@ -6299,6 +6894,16 @@
             "meaning": "Here you are. Thank you, goodbye!"
         },
         {
+            "text": "Przed południem dzieci są w szkole."
+        },
+        {
+            "text": "Przed południem jest w szkole.",
+            "meaning": "Before noon she is at school."
+        },
+        {
+            "text": "Przed południem jestem w szkole."
+        },
+        {
             "text": "Przepraszam, dzisiaj tylko gotówką!",
             "meaning": "Sorry, today only in cash!"
         },
@@ -6320,6 +6925,9 @@
         },
         {
             "text": "Przepraszam, tylko gotówką!"
+        },
+        {
+            "text": "Pół Polką, pół Angielką."
         },
         {
             "text": "Płaci dziewiętnaście złotych."
@@ -6349,11 +6957,31 @@
             "text": "Rano Adam jest głodny."
         },
         {
+            "text": "Rano czy wieczorem?",
+            "meaning": "In the morning or in the evening?"
+        },
+        {
+            "text": "Rano i przed południem."
+        },
+        {
             "text": "Rano je jabłko."
+        },
+        {
+            "text": "Rano jem śniadanie.",
+            "meaning": "I have breakfast in the morning."
         },
         {
             "text": "Rano piję sok pomarańczowy.",
             "meaning": "In the morning I drink orange juice."
+        },
+        {
+            "text": "Rano wszyscy są w domu."
+        },
+        {
+            "text": "Raz w roku."
+        },
+        {
+            "text": "Raz, dwa razy w roku."
         },
         {
             "text": "Rezerwacja jest dla czterech osób."
@@ -6373,7 +7001,21 @@
             "text": "Robert"
         },
         {
+            "text": "Robi zakupy."
+        },
+        {
             "text": "Robię zakupy i spotykam się ze znajomymi."
+        },
+        {
+            "text": "Rodzice mieszkają w Krakowie.",
+            "meaning": "The parents live in Kraków."
+        },
+        {
+            "text": "Rodzice, matka, ojciec."
+        },
+        {
+            "text": "Rodzina jest duża.",
+            "meaning": "The family is big."
         },
         {
             "text": "Rodzina z Japonii."
@@ -6391,6 +7033,9 @@
         },
         {
             "text": "Rosół."
+        },
+        {
+            "text": "Rower."
         },
         {
             "text": "Rozumiem! Dziękuję bardzo.",
@@ -6434,6 +7079,12 @@
         {
             "text": "SMS",
             "meaning": "a text message"
+        },
+        {
+            "text": "Samochodem."
+        },
+        {
+            "text": "Samochód."
         },
         {
             "text": "Samoobsługowy."
@@ -6482,6 +7133,15 @@
         },
         {
             "text": "Siedemnaście."
+        },
+        {
+            "text": "Siostra, brat."
+        },
+        {
+            "text": "Siostrą mamy."
+        },
+        {
+            "text": "Siostrą taty."
         },
         {
             "text": "Skąd jest kobieta?",
@@ -6548,11 +7208,17 @@
             "meaning": "The sauce has basil and garlic in it."
         },
         {
+            "text": "Spotyka się z dziewczyną."
+        },
+        {
             "text": "Stara, ale dobra.",
             "meaning": "Old, but good."
         },
         {
             "text": "Stare zdjęcia."
+        },
+        {
+            "text": "Starszy."
         },
         {
             "text": "Stary i zły.",
@@ -6575,6 +7241,9 @@
         {
             "text": "Stolik jest dla dwóch osób.",
             "meaning": "The table is for two people."
+        },
+        {
+            "text": "Stuprocentową Polką."
         },
         {
             "text": "Super! A gdzie jest kasa?"
@@ -6776,6 +7445,10 @@
             "meaning": "Yes, I'm from Poland."
         },
         {
+            "text": "Tak, jestem żonaty.",
+            "meaning": "Yes, I'm married."
+        },
+        {
             "text": "Tak, lubisz sport.",
             "meaning": "Yes, you like sport."
         },
@@ -6786,6 +7459,9 @@
         {
             "text": "Tak, lubię.",
             "meaning": "Yes, I like sport."
+        },
+        {
+            "text": "Tak, mam brata."
         },
         {
             "text": "Tak, mogę iść na kawę!",
@@ -6834,6 +7510,9 @@
         {
             "text": "Tak, proszę małą kanapkę.",
             "meaning": "Yes, a small sandwich, please."
+        },
+        {
+            "text": "Tak, siedem razy w tygodniu."
         },
         {
             "text": "Tak, smakuje mi bardzo.",
@@ -6918,6 +7597,12 @@
         },
         {
             "text": "Tak. Idziesz ze mną?"
+        },
+        {
+            "text": "Taksówka."
+        },
+        {
+            "text": "Taksówką."
         },
         {
             "text": "Talerz jest tam.",
@@ -7055,7 +7740,14 @@
             "meaning": "I'm booking the tickets now."
         },
         {
+            "text": "Teraz rozmawiam po polsku.",
+            "meaning": "Now I am talking in Polish."
+        },
+        {
             "text": "Teraz."
+        },
+        {
+            "text": "Teść i teściowa."
         },
         {
             "text": "Też dobrze. Czy wiesz, kto to jest?"
@@ -7091,6 +7783,20 @@
         {
             "text": "To dziecko ma pół roku.",
             "meaning": "This child is six months old."
+        },
+        {
+            "text": "To ich córka.",
+            "meaning": "It's their daughter."
+        },
+        {
+            "text": "To ich dzieci."
+        },
+        {
+            "text": "To ich syn.",
+            "meaning": "It's their son."
+        },
+        {
+            "text": "To jego synowa."
         },
         {
             "text": "To jest Adam, mój kolega."
@@ -7144,10 +7850,17 @@
             "text": "To jest loteria. Grasz?"
         },
         {
+            "text": "To jest moja babcia.",
+            "meaning": "This is my grandma."
+        },
+        {
             "text": "To jest moja gospodyni, pani Ewa."
         },
         {
             "text": "To jest moja torba. Jest duża i czerwona."
+        },
+        {
+            "text": "To jest moje drzewo genealogiczne."
         },
         {
             "text": "To jest mój brat. Jest wysoki i szczupły."
@@ -7158,6 +7871,12 @@
         {
             "text": "To jest mój plecak.",
             "meaning": "It is my backpack."
+        },
+        {
+            "text": "To jest mój wnuk."
+        },
+        {
+            "text": "To jest nasze mieszkanie."
         },
         {
             "text": "To jest nowy student.",
@@ -7213,18 +7932,55 @@
             "meaning": "Is this your child?"
         },
         {
+            "text": "To moi dziadkowie.",
+            "meaning": "These are my grandparents."
+        },
+        {
+            "text": "To moi rodzice.",
+            "meaning": "These are my parents."
+        },
+        {
             "text": "To moja rodzina: żona Ewa i syn Adam."
+        },
+        {
+            "text": "To moja siostra i jej mąż.",
+            "meaning": "This is my sister and her husband."
         },
         {
             "text": "To moja ulubiona potrawa.",
             "meaning": "This is my favourite dish."
         },
         {
+            "text": "To moja wnuczka."
+        },
+        {
+            "text": "To moje zdjęcie, to moja rodzina.",
+            "meaning": "It's my photo. It's my family."
+        },
+        {
+            "text": "To moje zdjęcie. To moja rodzina.",
+            "meaning": "It's my photo. It's my family."
+        },
+        {
             "text": "To może herbata?"
+        },
+        {
+            "text": "To mój brat i jego żona.",
+            "meaning": "This is my brother and his wife."
+        },
+        {
+            "text": "To mój kuzyn i moja kuzynka."
         },
         {
             "text": "To mój plecak.",
             "meaning": "It is my backpack."
+        },
+        {
+            "text": "To mój wujek."
+        },
+        {
+            "text": "To nasze zdjęcie. To moja rodzina.",
+            "meaning": "It's our photo. It's my family."
         },
         {
             "text": "To nie jest aktor, to jest policjant.",
@@ -7233,6 +7989,10 @@
         {
             "text": "To nie jest dentysta, to jest dentystka.",
             "meaning": "It isn't a dentist (a man), it's a dentist (a woman)."
+        },
+        {
+            "text": "To nie jest nasze auto.",
+            "meaning": "It is not our car."
         },
         {
             "text": "To nie jest sezon."
@@ -7245,6 +8005,10 @@
             "text": "To samo, tylko z frytkami."
         },
         {
+            "text": "To są ich dzieci.",
+            "meaning": "These are their children."
+        },
+        {
             "text": "To są owoce.",
             "meaning": "These are fruit."
         },
@@ -7253,6 +8017,10 @@
         },
         {
             "text": "To są stare zdjęcia."
+        },
+        {
+            "text": "To wasz dziadek.",
+            "meaning": "This is your grandpa (several people)."
         },
         {
             "text": "To wszystko? Płaci pan kartą?"
@@ -7287,6 +8055,14 @@
             "meaning": "Tom says “dzień dobry”."
         },
         {
+            "text": "Tomek jest kawalerem.",
+            "meaning": "Tomek is a bachelor."
+        },
+        {
+            "text": "Tomek jest żonaty.",
+            "meaning": "Tomek is married."
+        },
+        {
             "text": "Torba jest czerwona.",
             "meaning": "The bag is red."
         },
@@ -7304,6 +8080,9 @@
         },
         {
             "text": "Tosty i herbatę."
+        },
+        {
+            "text": "Tosty."
         },
         {
             "text": "Trenuję w klubie i lubię podróżować."
@@ -7392,6 +8171,9 @@
             "meaning": "Your book is over there."
         },
         {
+            "text": "Twoja?"
+        },
+        {
             "text": "Twoje dziecko ma pytanie.",
             "meaning": "Your child has a question. (to one friend)"
         },
@@ -7422,6 +8204,9 @@
         },
         {
             "text": "Tylko jasny."
+        },
+        {
+            "text": "Tylko mamę."
         },
         {
             "text": "Tylko trochę.",
@@ -7502,6 +8287,32 @@
             "meaning": "Can you play the piano?"
         },
         {
+            "text": "Urlop ma raz w roku."
+        },
+        {
+            "text": "Uwe czasem chodzi na dyskotekę.",
+            "meaning": "Uwe sometimes goes to a disco."
+        },
+        {
+            "text": "Uwe dużo pracuje.",
+            "meaning": "Uwe works a lot."
+        },
+        {
+            "text": "Uwe jeździ samochodem.",
+            "meaning": "Uwe goes by car."
+        },
+        {
+            "text": "Uwe ma urlop dwa razy w roku.",
+            "meaning": "Uwe has a holiday twice a year."
+        },
+        {
+            "text": "Uwe pracuje od rana do wieczora.",
+            "meaning": "Uwe works from morning till evening."
+        },
+        {
+            "text": "Uwe zawsze pracuje od rana do wieczora."
+        },
+        {
             "text": "Uwielbiam rybę."
         },
         {
@@ -7517,6 +8328,14 @@
         {
             "text": "W Krakowie.",
             "meaning": "I live in Kraków."
+        },
+        {
+            "text": "W Krakowie. Spotykamy się codziennie.",
+            "meaning": "In Kraków. We see each other every day."
+        },
+        {
+            "text": "W Krakowie. Spotykamy się rzadko, raz w roku.",
+            "meaning": "In Kraków. We see each other rarely, once a year."
         },
         {
             "text": "W Londynie."
@@ -7576,6 +8395,9 @@
             "meaning": "The café has chocolate to drink and to eat."
         },
         {
+            "text": "W każdy weekend."
+        },
+        {
             "text": "W kiosku są chipsy paprykowe.",
             "meaning": "The kiosk has paprika crisps."
         },
@@ -7614,6 +8436,13 @@
             "meaning": "There are sweets in the basket."
         },
         {
+            "text": "W kuchni."
+        },
+        {
+            "text": "W nocy śpię.",
+            "meaning": "At night I sleep."
+        },
+        {
             "text": "W pierwszym dialogu to jest książka.",
             "meaning": "In the first dialogue it is a book."
         },
@@ -7624,6 +8453,20 @@
         {
             "text": "W porządku! Na razie!",
             "meaning": "All right! See you!"
+        },
+        {
+            "text": "W południe jem obiad."
+        },
+        {
+            "text": "W południe jem śniadanie.",
+            "meaning": "I have breakfast at noon."
+        },
+        {
+            "text": "W południe mają przerwę."
+        },
+        {
+            "text": "W południe pan Grzegorz je obiad.",
+            "meaning": "At noon Mr Grzegorz has dinner."
         },
         {
             "text": "W pracy."
@@ -7682,11 +8525,22 @@
             "text": "Wieczorem idziemy tańczyć."
         },
         {
+            "text": "Wieczorem oglądam serial.",
+            "meaning": "I watch a series in the evening."
+        },
+        {
             "text": "Wieczorem oglądam telewizję."
         },
         {
             "text": "Wieczorem oni idą tańczyć.",
             "meaning": "In the evening they go dancing."
+        },
+        {
+            "text": "Wieczorem wracam do domu.",
+            "meaning": "In the evening I go home."
+        },
+        {
+            "text": "Wieczorem wszyscy wracają do domu."
         },
         {
             "text": "Wiesz, kto to jest?"
@@ -7789,6 +8643,10 @@
             "text": "Wszystko."
         },
         {
+            "text": "Wujek ma bliźniaki.",
+            "meaning": "The uncle has twins."
+        },
+        {
             "text": "Wy jesteście z Polski?",
             "meaning": "Are you from Poland? (several people)"
         },
@@ -7850,6 +8708,12 @@
             "text": "Z Włoch."
         },
         {
+            "text": "Z babcią i dziadkiem."
+        },
+        {
+            "text": "Z ciocią."
+        },
+        {
             "text": "Z cukrem czy bez cukru?",
             "meaning": "With sugar or without?"
         },
@@ -7863,6 +8727,10 @@
         {
             "text": "Z czym? Z serem czy z szynką?",
             "meaning": "With what? With cheese or with ham?"
+        },
+        {
+            "text": "Z kim mieszka ta dziewczyna?",
+            "meaning": "Who does the girl live with?"
         },
         {
             "text": "Z masłem i szynką.",
@@ -7890,6 +8758,9 @@
         },
         {
             "text": "Z podwójnym serem i z boczkiem."
+        },
+        {
+            "text": "Z rodzicami i bratem."
         },
         {
             "text": "Z szynką."
@@ -7928,6 +8799,10 @@
             "text": "Zdjęcia."
         },
         {
+            "text": "Zdjęcie koleżanki jest w portfelu.",
+            "meaning": "The friend's photo is in a wallet."
+        },
+        {
             "text": "Zdjęć."
         },
         {
@@ -7963,6 +8838,9 @@
         },
         {
             "text": "Zupa."
+        },
+        {
+            "text": "Zwykle jeździ samochodem."
         },
         {
             "text": "a",
@@ -8165,6 +9043,17 @@
         {
             "text": "babcia",
             "meaning": "grandma"
+        },
+        {
+            "text": "babcia i wujek"
+        },
+        {
+            "text": "babcią",
+            "meaning": "a grandma (after jest: jest babcią)"
+        },
+        {
+            "text": "babcią",
+            "meaning": "a grandma (jest…)"
         },
         {
             "text": "banan",
@@ -8416,6 +9305,10 @@
         {
             "text": "biznesmenem",
             "meaning": "a businessman"
+        },
+        {
+            "text": "bliźniaki",
+            "meaning": "twins"
         },
         {
             "text": "bo",
@@ -8808,6 +9701,10 @@
             "meaning": "probably, I guess"
         },
         {
+            "text": "chyba tak",
+            "meaning": "probably yes"
+        },
+        {
             "text": "chętnie",
             "meaning": "gladly"
         },
@@ -8936,6 +9833,25 @@
             "meaning": "I am glad that you are here (one friend)"
         },
         {
+            "text": "ciocia",
+            "meaning": "an aunt"
+        },
+        {
+            "text": "ciocia i kuzyn"
+        },
+        {
+            "text": "ciocia i wujek",
+            "meaning": "an aunt and an uncle"
+        },
+        {
+            "text": "ciocię",
+            "meaning": "an aunt (after mam, znam…: mam ciocię)"
+        },
+        {
+            "text": "ciocię",
+            "meaning": "an aunt (mam…)"
+        },
+        {
             "text": "co",
             "meaning": "what"
         },
@@ -9022,6 +9938,10 @@
         {
             "text": "co podać?",
             "meaning": "what can I get you? (a waiter asks)"
+        },
+        {
+            "text": "co powiedzieć",
+            "meaning": "what to say (nie wiem, co powiedzieć)"
         },
         {
             "text": "co robi twoja mama?"
@@ -9144,6 +10064,14 @@
             "meaning": "what do you usually buy at the market? (one friend)"
         },
         {
+            "text": "codziennie",
+            "meaning": "every day"
+        },
+        {
+            "text": "codziennie gotuję",
+            "meaning": "I cook every day"
+        },
+        {
             "text": "coś"
         },
         {
@@ -9228,6 +10156,18 @@
         {
             "text": "czas",
             "meaning": "time"
+        },
+        {
+            "text": "czasem",
+            "meaning": "sometimes"
+        },
+        {
+            "text": "czasem",
+            "meaning": "sometimes (czasem = czasami)"
+        },
+        {
+            "text": "czasem gotuję",
+            "meaning": "sometimes I cook"
         },
         {
             "text": "czekam",
@@ -9624,12 +10564,30 @@
             "meaning": "is it a waiter?"
         },
         {
+            "text": "czy to nasz kot?"
+        },
+        {
+            "text": "czy to prawda, że jesteś kawalerem?",
+            "meaning": "is it true that you're a bachelor?"
+        },
+        {
+            "text": "czy to prawda, że…?",
+            "meaning": "is it true that…?"
+        },
+        {
             "text": "czy to twoje dziecko?",
             "meaning": "is this your child? (to one friend)"
         },
         {
             "text": "czy to twój brat?",
             "meaning": "is this your brother? (to one friend)"
+        },
+        {
+            "text": "czy to wasz kot?",
+            "meaning": "is this your cat? (several people)"
+        },
+        {
+            "text": "czy to wasza kawa?"
         },
         {
             "text": "czy tu jest fryzjer?",
@@ -9697,6 +10655,67 @@
         {
             "text": "czy znasz ten serial?",
             "meaning": "do you know this TV series? (one friend)"
+        },
+        {
+            "text": "czyj",
+            "meaning": "whose (masculine)"
+        },
+        {
+            "text": "czyj",
+            "meaning": "whose (with a masculine noun)"
+        },
+        {
+            "text": "czyj to portfel?",
+            "meaning": "whose wallet is this?"
+        },
+        {
+            "text": "czyj to wnuk?"
+        },
+        {
+            "text": "czyja",
+            "meaning": "whose (feminine)"
+        },
+        {
+            "text": "czyja",
+            "meaning": "whose (with a feminine noun)"
+        },
+        {
+            "text": "czyja to kawa?"
+        },
+        {
+            "text": "czyja to książka?",
+            "meaning": "whose book is this?"
+        },
+        {
+            "text": "czyja to wnuczka?",
+            "meaning": "whose granddaughter is she?"
+        },
+        {
+            "text": "czyje",
+            "meaning": "whose (neuter)"
+        },
+        {
+            "text": "czyje",
+            "meaning": "whose (with a neuter noun)"
+        },
+        {
+            "text": "czyje to dzieci?",
+            "meaning": "whose children are these?"
+        },
+        {
+            "text": "czyje to dziecko?"
+        },
+        {
+            "text": "czyje to zdjęcie?",
+            "meaning": "whose photo is this?"
+        },
+        {
+            "text": "czyli",
+            "meaning": "that is"
+        },
+        {
+            "text": "czyli",
+            "meaning": "that is, in other words"
         },
         {
             "text": "czym",
@@ -9790,8 +10809,23 @@
             "meaning": "to read"
         },
         {
+            "text": "często",
+            "meaning": "often"
+        },
+        {
+            "text": "często piję kawę"
+        },
+        {
             "text": "córka",
             "meaning": "a daughter"
+        },
+        {
+            "text": "córką",
+            "meaning": "a daughter (after jest: jest córką)"
+        },
+        {
+            "text": "córką",
+            "meaning": "a daughter (jest…)"
         },
         {
             "text": "córkę",
@@ -9916,6 +10950,10 @@
             "text": "do"
         },
         {
+            "text": "do domu",
+            "meaning": "home (wracam do domu: I go home)"
+        },
+        {
             "text": "do egzaminu",
             "meaning": "for an exam (uczyć się do egzaminu)"
         },
@@ -9963,6 +11001,18 @@
             "meaning": "see you"
         },
         {
+            "text": "doba",
+            "meaning": "a day and a night, twenty-four hours"
+        },
+        {
+            "text": "doba",
+            "meaning": "twenty-four hours"
+        },
+        {
+            "text": "doba",
+            "meaning": "twenty-four hours, a day and a night"
+        },
+        {
             "text": "dobra",
             "meaning": "good (dobry, dobra, dobre)"
         },
@@ -9993,6 +11043,9 @@
         {
             "text": "dobry",
             "meaning": "good (dobry, dobra, dobre)"
+        },
+        {
+            "text": "dobry dzień"
         },
         {
             "text": "dobry humor"
@@ -10134,12 +11187,24 @@
             "meaning": "a sweet bun and coffee"
         },
         {
+            "text": "drugi raz",
+            "meaning": "for the second time"
+        },
+        {
+            "text": "drugi raz jestem żonaty",
+            "meaning": "I'm married for the second time"
+        },
+        {
             "text": "drugie danie",
             "meaning": "the main course"
         },
         {
             "text": "drugie danie to kurczak",
             "meaning": "the main course is chicken"
+        },
+        {
+            "text": "drzewo genealogiczne",
+            "meaning": "a family tree"
         },
         {
             "text": "drób",
@@ -10243,6 +11308,10 @@
             "meaning": "two times thirty equals sixty"
         },
         {
+            "text": "dwa razy w tygodniu",
+            "meaning": "twice a week"
+        },
+        {
             "text": "dwa zielone jabłka",
             "meaning": "two green apples"
         },
@@ -10327,6 +11396,10 @@
             "meaning": "two hundred"
         },
         {
+            "text": "dwoje",
+            "meaning": "two (of children: dwoje dzieci)"
+        },
+        {
             "text": "dynia",
             "meaning": "a pumpkin"
         },
@@ -10341,6 +11414,22 @@
         {
             "text": "dziadek",
             "meaning": "grandpa"
+        },
+        {
+            "text": "dziadkiem",
+            "meaning": "a grandpa (after jest: jest dziadkiem)"
+        },
+        {
+            "text": "dziadkiem",
+            "meaning": "a grandpa (jest…)"
+        },
+        {
+            "text": "dziadkowie",
+            "meaning": "grandparents"
+        },
+        {
+            "text": "dziadkowie i wnuki",
+            "meaning": "grandparents and grandchildren"
         },
         {
             "text": "dzieci",
@@ -10602,6 +11691,13 @@
         {
             "text": "dziś kawiarnia jest nieczynna",
             "meaning": "the café is not open today"
+        },
+        {
+            "text": "dzwonisz",
+            "meaning": "you call, you phone (one friend)"
+        },
+        {
+            "text": "dzwonię"
         },
         {
             "text": "długa",
@@ -11008,6 +12104,10 @@
             "meaning": "I cook, I am cooking"
         },
         {
+            "text": "gotuję czasem",
+            "meaning": "sometimes I cook"
+        },
+        {
             "text": "gotuję pierogi",
             "meaning": "I'm cooking pierogi"
         },
@@ -11296,6 +12396,10 @@
         {
             "text": "i",
             "meaning": "and"
+        },
+        {
+            "text": "ich",
+            "meaning": "their"
         },
         {
             "text": "idziecie",
@@ -11697,6 +12801,10 @@
             "meaning": "I am hungry (a woman says it)"
         },
         {
+            "text": "ja jestem kawalerem",
+            "meaning": "I'm a bachelor"
+        },
+        {
             "text": "ja jestem pewna, że to jest żart",
             "meaning": "I am sure that it is a joke (a woman speaking)"
         },
@@ -11947,6 +13055,14 @@
         {
             "text": "jak",
             "meaning": "how"
+        },
+        {
+            "text": "jak często dzwonisz?",
+            "meaning": "how often do you call? (one friend)"
+        },
+        {
+            "text": "jak często?",
+            "meaning": "how often?"
         },
         {
             "text": "jak leci?",
@@ -12312,6 +13428,10 @@
             "meaning": "his mum is from Poland"
         },
         {
+            "text": "jego siostra i jej brat",
+            "meaning": "his sister and her brother"
+        },
+        {
             "text": "jej",
             "meaning": "her (whose? jej mama: her mum)"
         },
@@ -12345,12 +13465,20 @@
             "meaning": "he is; she is; it is"
         },
         {
+            "text": "jest córką i żoną",
+            "meaning": "she is a daughter and a wife"
+        },
+        {
             "text": "jest już późno",
             "meaning": "it's late already"
         },
         {
             "text": "jest sok?",
             "meaning": "is there any juice?"
+        },
+        {
+            "text": "jest synem i mężem",
+            "meaning": "he is a son and a husband"
         },
         {
             "text": "jest tu supermarket?",
@@ -12403,6 +13531,10 @@
             "meaning": "I am Polish (a woman)"
         },
         {
+            "text": "jestem drugi raz żonaty",
+            "meaning": "I'm married for the second time"
+        },
+        {
             "text": "jestem dziś zestresowany",
             "meaning": "I am stressed today (a man speaking)"
         },
@@ -12413,6 +13545,14 @@
         {
             "text": "jestem instruktorem",
             "meaning": "I am an instructor (a man)"
+        },
+        {
+            "text": "jestem kawalerem",
+            "meaning": "I am a bachelor"
+        },
+        {
+            "text": "jestem kawalerem",
+            "meaning": "I'm a bachelor"
         },
         {
             "text": "jestem pewna, że to jest żart",
@@ -12429,6 +13569,10 @@
         {
             "text": "jestem smutny",
             "meaning": "I am sad (a man speaking)"
+        },
+        {
+            "text": "jestem stuprocentową Polką",
+            "meaning": "I'm a hundred per cent Polish (a woman)"
         },
         {
             "text": "jestem tutaj",
@@ -12467,6 +13611,9 @@
         {
             "text": "jestem zmęczony",
             "meaning": "I am tired"
+        },
+        {
+            "text": "jestem żonaty"
         },
         {
             "text": "jesteś",
@@ -12785,6 +13932,18 @@
         {
             "text": "kawa z mlekiem, bez cukru",
             "meaning": "coffee with milk and without sugar"
+        },
+        {
+            "text": "kawaler",
+            "meaning": "a bachelor"
+        },
+        {
+            "text": "kawaler",
+            "meaning": "a bachelor, a single man"
+        },
+        {
+            "text": "kawalerem",
+            "meaning": "a bachelor (after jestem: jestem kawalerem)"
         },
         {
             "text": "kawałek sernika",
@@ -13412,6 +14571,14 @@
             "meaning": "a course"
         },
         {
+            "text": "kuzyn",
+            "meaning": "a cousin (a man)"
+        },
+        {
+            "text": "kuzynka",
+            "meaning": "a cousin (a woman)"
+        },
+        {
             "text": "kwaśna",
             "meaning": "sour (kwaśny, kwaśna, kwaśne)"
         },
@@ -13577,6 +14744,10 @@
         },
         {
             "text": "loterię"
+        },
+        {
+            "text": "lub",
+            "meaning": "or"
         },
         {
             "text": "lubi",
@@ -13898,8 +15069,15 @@
             "meaning": "I have a camera"
         },
         {
+            "text": "mam brata"
+        },
+        {
             "text": "mam brata i siostrę",
             "meaning": "I have a brother and a sister"
+        },
+        {
+            "text": "mam ciocię i wujka",
+            "meaning": "I have an aunt and an uncle"
         },
         {
             "text": "mam czas?"
@@ -13922,6 +15100,10 @@
         {
             "text": "mam dwanaście lat",
             "meaning": "I am twelve years old"
+        },
+        {
+            "text": "mam dwoje dzieci",
+            "meaning": "I have two children"
         },
         {
             "text": "mam dziesięć lat",
@@ -13966,6 +15148,10 @@
         },
         {
             "text": "mam mapę"
+        },
+        {
+            "text": "mam męża",
+            "meaning": "I have a husband"
         },
         {
             "text": "mam na imię",
@@ -14048,6 +15234,9 @@
             "text": "mam wolny czas"
         },
         {
+            "text": "mam żonę"
+        },
+        {
             "text": "mama",
             "meaning": "mum"
         },
@@ -14058,6 +15247,10 @@
         {
             "text": "mama jest tutaj",
             "meaning": "mum is here"
+        },
+        {
+            "text": "mama lub tata",
+            "meaning": "mum or dad"
         },
         {
             "text": "mama lubi jasny chleb",
@@ -14194,6 +15387,25 @@
             "meaning": "butter"
         },
         {
+            "text": "matka",
+            "meaning": "a mother"
+        },
+        {
+            "text": "matka i córka"
+        },
+        {
+            "text": "matka i ojciec",
+            "meaning": "a mother and a father"
+        },
+        {
+            "text": "matką",
+            "meaning": "a mother (after jest: jest matką)"
+        },
+        {
+            "text": "matką",
+            "meaning": "a mother (jest…)"
+        },
+        {
             "text": "mała",
             "meaning": "small (mały, mała, małe)"
         },
@@ -14216,6 +15428,14 @@
         {
             "text": "małą",
             "meaning": "small (małego for a man or an animal, małą for a feminine noun: after proszę, mam…)"
+        },
+        {
+            "text": "małżeństwo",
+            "meaning": "a married couple"
+        },
+        {
+            "text": "małżeństwo",
+            "meaning": "a married couple; a marriage"
         },
         {
             "text": "menu",
@@ -14490,6 +15710,14 @@
             "meaning": "I can (I am free to, I may)"
         },
         {
+            "text": "moi",
+            "meaning": "my (people, a group with a man in it)"
+        },
+        {
+            "text": "moi",
+            "meaning": "my (with men, or a group with a man in it: moi rodzice)"
+        },
+        {
             "text": "moja",
             "meaning": "my (with a feminine noun)"
         },
@@ -14527,6 +15755,10 @@
             "meaning": "my friend (a woman) is a dancer"
         },
         {
+            "text": "moja kuzynka",
+            "meaning": "my cousin (a girl)"
+        },
+        {
             "text": "moja mama",
             "meaning": "my mum"
         },
@@ -14554,6 +15786,10 @@
         },
         {
             "text": "moja siostra"
+        },
+        {
+            "text": "moja starsza siostra",
+            "meaning": "my older sister"
         },
         {
             "text": "moje",
@@ -14807,6 +16043,9 @@
             "text": "mój brat"
         },
         {
+            "text": "mój brat i moja siostra"
+        },
+        {
             "text": "mój brat jest na uniwersytecie"
         },
         {
@@ -14836,6 +16075,10 @@
             "meaning": "my grandma and my grandpa"
         },
         {
+            "text": "mój dziadek nie żyje",
+            "meaning": "my grandpa is no longer alive"
+        },
+        {
             "text": "mój gospodarz pracuje w domu",
             "meaning": "my host is working at home"
         },
@@ -14854,12 +16097,23 @@
             "text": "mój kolega jest pisarzem"
         },
         {
+            "text": "mój kuzyn i moja ciocia"
+        },
+        {
+            "text": "mój kuzyn i moja kuzynka",
+            "meaning": "my cousins, a boy and a girl"
+        },
+        {
             "text": "mój mąż",
             "meaning": "my husband"
         },
         {
             "text": "mój mąż ma siedemdziesiąt dwa lata",
             "meaning": "my husband is seventy-two"
+        },
+        {
+            "text": "mój młodszy brat",
+            "meaning": "my younger brother"
         },
         {
             "text": "mój numer telefonu to dwanaście, dwadzieścia, piętnaście",
@@ -14897,6 +16151,10 @@
         {
             "text": "mój ulubiony owoc to brzoskwinia",
             "meaning": "my favourite fruit is the peach"
+        },
+        {
+            "text": "mój wujek",
+            "meaning": "my uncle"
         },
         {
             "text": "mówi",
@@ -14968,6 +16226,18 @@
             "meaning": "a husband"
         },
         {
+            "text": "męża",
+            "meaning": "a husband (after mam, znam…: mam męża)"
+        },
+        {
+            "text": "męża",
+            "meaning": "a husband (mam…)"
+        },
+        {
+            "text": "mężatka",
+            "meaning": "a married woman"
+        },
+        {
             "text": "mężczyzna",
             "meaning": "a man (mężczyzną: after jest)"
         },
@@ -14980,12 +16250,36 @@
             "meaning": "a man (mężczyzną: after jest)"
         },
         {
+            "text": "mężem",
+            "meaning": "a husband (after jest: jest mężem)"
+        },
+        {
+            "text": "mężem",
+            "meaning": "a husband (jest…)"
+        },
+        {
             "text": "młoda",
             "meaning": "young (młody, młoda, młode)"
         },
         {
             "text": "młode",
             "meaning": "young (młody, młoda, młode)"
+        },
+        {
+            "text": "młodsza",
+            "meaning": "younger (młodszy, młodsza, młodsze)"
+        },
+        {
+            "text": "młodsze",
+            "meaning": "younger (młodszy, młodsza, młodsze)"
+        },
+        {
+            "text": "młodszy",
+            "meaning": "younger"
+        },
+        {
+            "text": "młodszy",
+            "meaning": "younger (młodszy, młodsza, młodsze)"
         },
         {
             "text": "młody",
@@ -15020,6 +16314,10 @@
         },
         {
             "text": "na drodze"
+        },
+        {
+            "text": "na dyskotekę",
+            "meaning": "to a disco"
         },
         {
             "text": "na gitarze",
@@ -15251,6 +16549,41 @@
         {
             "text": "narodowość",
             "meaning": "a nationality"
+        },
+        {
+            "text": "nasz",
+            "meaning": "our (masculine)"
+        },
+        {
+            "text": "nasz",
+            "meaning": "our (with a masculine noun)"
+        },
+        {
+            "text": "nasz syn"
+        },
+        {
+            "text": "nasza",
+            "meaning": "our (feminine)"
+        },
+        {
+            "text": "nasza",
+            "meaning": "our (with a feminine noun)"
+        },
+        {
+            "text": "nasza córka",
+            "meaning": "our daughter"
+        },
+        {
+            "text": "nasza rodzina",
+            "meaning": "our family"
+        },
+        {
+            "text": "nasze",
+            "meaning": "our (neuter)"
+        },
+        {
+            "text": "nasze",
+            "meaning": "our (with a neuter noun)"
         },
         {
             "text": "natka",
@@ -15527,6 +16860,10 @@
             "meaning": "I don't know, but I guess so"
         },
         {
+            "text": "nie wiem, co powiedzieć",
+            "meaning": "I don't know what to say"
+        },
+        {
             "text": "nie wiem, czy on jest miły",
             "meaning": "I don't know if he is nice"
         },
@@ -15539,6 +16876,14 @@
         },
         {
             "text": "nie wiem, proszę powtórzyć"
+        },
+        {
+            "text": "nie żyje",
+            "meaning": "he or she is no longer alive"
+        },
+        {
+            "text": "nie żyje",
+            "meaning": "is no longer alive"
         },
         {
             "text": "nie, dziękuję",
@@ -15646,6 +16991,22 @@
             "meaning": "not bad, and you?"
         },
         {
+            "text": "nigdy",
+            "meaning": "never"
+        },
+        {
+            "text": "nigdy",
+            "meaning": "never (nigdy nie…)"
+        },
+        {
+            "text": "nigdy nie chodzę na dyskotekę",
+            "meaning": "I never go to a disco"
+        },
+        {
+            "text": "nigdy nie piję kawy",
+            "meaning": "I never drink coffee"
+        },
+        {
             "text": "nigdzie"
         },
         {
@@ -15674,6 +17035,9 @@
         {
             "text": "niż",
             "meaning": "than (wolę kawę niż herbatę)"
+        },
+        {
+            "text": "nocy"
         },
         {
             "text": "normalna",
@@ -15769,6 +17133,17 @@
             "text": "nóż i łyżeczka"
         },
         {
+            "text": "o północy",
+            "meaning": "at midnight"
+        },
+        {
+            "text": "o północy idę do domu"
+        },
+        {
+            "text": "o północy wracam do domu",
+            "meaning": "I come home at midnight"
+        },
+        {
             "text": "obiad",
             "meaning": "dinner"
         },
@@ -15783,6 +17158,32 @@
         {
             "text": "oczywiście",
             "meaning": "of course"
+        },
+        {
+            "text": "od czasu do czasu",
+            "meaning": "from time to time"
+        },
+        {
+            "text": "od czasu do czasu jeżdżę samochodem"
+        },
+        {
+            "text": "od czasu do czasu jeżdżę taksówką",
+            "meaning": "from time to time I go by taxi"
+        },
+        {
+            "text": "od rana do wieczora",
+            "meaning": "from morning till evening"
+        },
+        {
+            "text": "odpoczywam"
+        },
+        {
+            "text": "odpocząć",
+            "meaning": "rest (to rest, to have a rest)"
+        },
+        {
+            "text": "odpocząć",
+            "meaning": "to rest"
         },
         {
             "text": "oficjalnie"
@@ -15822,6 +17223,21 @@
         {
             "text": "ogórki",
             "meaning": "a cucumber (ogórki: cucumbers)"
+        },
+        {
+            "text": "ojcem",
+            "meaning": "a father (after jest: jest ojcem)"
+        },
+        {
+            "text": "ojcem",
+            "meaning": "a father (jest…)"
+        },
+        {
+            "text": "ojciec",
+            "meaning": "a father"
+        },
+        {
+            "text": "ojciec i syn"
         },
         {
             "text": "okno",
@@ -15930,8 +17346,15 @@
             "meaning": "he is a good doctor"
         },
         {
+            "text": "on jest dziadkiem",
+            "meaning": "he is a grandpa"
+        },
+        {
             "text": "on jest energiczny i aktywny",
             "meaning": "he is energetic and active"
+        },
+        {
+            "text": "on jest kawalerem"
         },
         {
             "text": "on jest leniwy",
@@ -15949,6 +17372,9 @@
             "text": "on jest niski i przystojny"
         },
         {
+            "text": "on jest ojcem"
+        },
+        {
             "text": "on jest pisarzem i malarzem",
             "meaning": "he is a writer and a painter"
         },
@@ -15959,6 +17385,10 @@
         {
             "text": "on jest przystojny i wysoki",
             "meaning": "he is tall and handsome"
+        },
+        {
+            "text": "on jest synem i mężem",
+            "meaning": "he is a son and a husband"
         },
         {
             "text": "on jest tutaj"
@@ -16079,8 +17509,15 @@
             "meaning": "she is interested in fashion"
         },
         {
+            "text": "ona jest babcią"
+        },
+        {
             "text": "ona jest chora",
             "meaning": "she is ill"
+        },
+        {
+            "text": "ona jest córką i żoną",
+            "meaning": "she is a daughter and a wife"
         },
         {
             "text": "ona jest dobrą aktorką",
@@ -16157,6 +17594,10 @@
         {
             "text": "ona jest ładna i szczupła",
             "meaning": "she is pretty and slim"
+        },
+        {
+            "text": "ona jest żoną i matką",
+            "meaning": "she is a wife and a mother"
         },
         {
             "text": "ona kończy kurs",
@@ -16553,6 +17994,18 @@
         },
         {
             "text": "panią"
+        },
+        {
+            "text": "panna",
+            "meaning": "a single woman"
+        },
+        {
+            "text": "panna",
+            "meaning": "a single woman (not married)"
+        },
+        {
+            "text": "panna i kawaler",
+            "meaning": "a single woman and a bachelor"
         },
         {
             "text": "panowie",
@@ -17230,6 +18683,17 @@
             "text": "por i pietruszka"
         },
         {
+            "text": "pora roku"
+        },
+        {
+            "text": "portfel",
+            "meaning": "a wallet"
+        },
+        {
+            "text": "pory dnia",
+            "meaning": "times of day"
+        },
+        {
             "text": "porządek"
         },
         {
@@ -17253,6 +18717,9 @@
             "meaning": "a dish"
         },
         {
+            "text": "powiedzieć"
+        },
+        {
             "text": "powodzenia",
             "meaning": "good luck"
         },
@@ -17266,6 +18733,10 @@
         },
         {
             "text": "pozdrowienia"
+        },
+        {
+            "text": "pracoholik",
+            "meaning": "a workaholic"
         },
         {
             "text": "pracować",
@@ -17302,6 +18773,9 @@
             "meaning": "you work (one friend)"
         },
         {
+            "text": "pracujesz od rana do wieczora"
+        },
+        {
             "text": "pracujesz w biurze"
         },
         {
@@ -17312,8 +18786,16 @@
             "meaning": "I work"
         },
         {
+            "text": "pracuję od rana do wieczora",
+            "meaning": "I work from morning till evening"
+        },
+        {
             "text": "pracuję w biurze",
             "meaning": "I work in an office"
+        },
+        {
+            "text": "pracuję w dzień",
+            "meaning": "I work by day"
         },
         {
             "text": "pracuję w szkole"
@@ -17337,6 +18819,14 @@
         {
             "text": "prawie",
             "meaning": "almost"
+        },
+        {
+            "text": "prawie nigdy",
+            "meaning": "hardly ever, almost never"
+        },
+        {
+            "text": "prawie nigdy nie gotuję",
+            "meaning": "I hardly ever cook"
         },
         {
             "text": "prawo"
@@ -17522,6 +19012,18 @@
             "meaning": "read"
         },
         {
+            "text": "przed południem",
+            "meaning": "before noon"
+        },
+        {
+            "text": "przed południem",
+            "meaning": "in the morning, before noon"
+        },
+        {
+            "text": "przed południem jestem w szkole",
+            "meaning": "before noon I am at school"
+        },
+        {
             "text": "przedstawić się",
             "meaning": "introduce yourself (proszę się przedstawić: please introduce yourself)"
         },
@@ -17560,6 +19062,14 @@
         {
             "text": "przepraszamy",
             "meaning": "we are sorry"
+        },
+        {
+            "text": "przerwa",
+            "meaning": "a break"
+        },
+        {
+            "text": "przerwa jest później",
+            "meaning": "there is a break later"
         },
         {
             "text": "przetłumaczyć",
@@ -17646,6 +19156,18 @@
         {
             "text": "pół roku",
             "meaning": "half a year (ono ma pół roku: it is six months old)"
+        },
+        {
+            "text": "później",
+            "meaning": "later"
+        },
+        {
+            "text": "później jest przerwa",
+            "meaning": "there is a break later"
+        },
+        {
+            "text": "później pracuję zdalnie",
+            "meaning": "later I work remotely"
         },
         {
             "text": "późno",
@@ -17736,11 +19258,19 @@
             "meaning": "in the morning"
         },
         {
+            "text": "rano czy wieczorem?",
+            "meaning": "in the morning or in the evening?"
+        },
+        {
             "text": "rano jestem głodny",
             "meaning": "in the morning I am hungry (a man says it)"
         },
         {
             "text": "raz"
+        },
+        {
+            "text": "raz w roku",
+            "meaning": "once a year"
         },
         {
             "text": "razem",
@@ -17844,7 +19374,23 @@
         },
         {
             "text": "rodzeństwo",
+            "meaning": "brothers and sisters"
+        },
+        {
+            "text": "rodzeństwo",
             "meaning": "brothers and sisters; siblings"
+        },
+        {
+            "text": "rodzice",
+            "meaning": "parents"
+        },
+        {
+            "text": "rodzice to małżeństwo",
+            "meaning": "the parents are a married couple"
+        },
+        {
+            "text": "rodziców",
+            "meaning": "parents (after mam, znam…: mam rodziców w Krakowie)"
         },
         {
             "text": "rodzina",
@@ -17861,6 +19407,9 @@
         {
             "text": "rok",
             "meaning": "a year; one year"
+        },
+        {
+            "text": "roku"
         },
         {
             "text": "rolnik",
@@ -17899,8 +19448,32 @@
             "meaning": "clear chicken soup with noodles"
         },
         {
+            "text": "rozmawiam",
+            "meaning": "I talk"
+        },
+        {
+            "text": "rozmawiam",
+            "meaning": "I talk, I have a chat"
+        },
+        {
             "text": "rozumiem",
             "meaning": "I understand"
+        },
+        {
+            "text": "rozwiedziona",
+            "meaning": "divorced (of a woman)"
+        },
+        {
+            "text": "rozwiedziona",
+            "meaning": "divorced (rozwiedziony, rozwiedziona, rozwiedzione)"
+        },
+        {
+            "text": "rozwiedzione",
+            "meaning": "divorced (rozwiedziony, rozwiedziona, rozwiedzione)"
+        },
+        {
+            "text": "rozwiedziony",
+            "meaning": "divorced (rozwiedziony, rozwiedziona, rozwiedzione)"
         },
         {
             "text": "rurka z kremem",
@@ -17941,6 +19514,14 @@
             "meaning": "rice and groats are grains"
         },
         {
+            "text": "rzadko",
+            "meaning": "rarely"
+        },
+        {
+            "text": "rzadko",
+            "meaning": "rarely, seldom"
+        },
+        {
             "text": "rzeczownik",
             "meaning": "a noun"
         },
@@ -17979,6 +19560,10 @@
         {
             "text": "różowy",
             "meaning": "pink (różowy, różowa, różowe)"
+        },
+        {
+            "text": "samochodem",
+            "meaning": "by car"
         },
         {
             "text": "samoobsługowa",
@@ -18173,6 +19758,14 @@
         },
         {
             "text": "się"
+        },
+        {
+            "text": "sjesta",
+            "meaning": "a siesta"
+        },
+        {
+            "text": "sjesta",
+            "meaning": "a siesta, an afternoon nap"
         },
         {
             "text": "sklep",
@@ -18370,6 +19963,21 @@
             "text": "spotykam"
         },
         {
+            "text": "spotykamy się",
+            "meaning": "we meet"
+        },
+        {
+            "text": "spotykamy się",
+            "meaning": "we meet, we see each other"
+        },
+        {
+            "text": "spotykamy się w domu",
+            "meaning": "we meet at home"
+        },
+        {
+            "text": "spotykać"
+        },
+        {
             "text": "spotykać się",
             "meaning": "meet up (to meet up)"
         },
@@ -18408,6 +20016,22 @@
         {
             "text": "stare",
             "meaning": "old (stary, stara, stare)"
+        },
+        {
+            "text": "starsza",
+            "meaning": "older (starszy, starsza, starsze)"
+        },
+        {
+            "text": "starsze",
+            "meaning": "older (starszy, starsza, starsze)"
+        },
+        {
+            "text": "starszy",
+            "meaning": "older"
+        },
+        {
+            "text": "starszy",
+            "meaning": "older (starszy, starsza, starsze)"
         },
         {
             "text": "stary",
@@ -18475,6 +20099,22 @@
         {
             "text": "studiować",
             "meaning": "study (at a university)"
+        },
+        {
+            "text": "stuprocentowa",
+            "meaning": "one hundred per cent, through and through (stuprocentowy, stuprocentowa, stuprocentowe)"
+        },
+        {
+            "text": "stuprocentowe",
+            "meaning": "one hundred per cent, through and through (stuprocentowy, stuprocentowa, stuprocentowe)"
+        },
+        {
+            "text": "stuprocentowy",
+            "meaning": "one hundred per cent, through and through (stuprocentowy, stuprocentowa, stuprocentowe)"
+        },
+        {
+            "text": "stuprocentową",
+            "meaning": "one hundred per cent, through and through (stuprocentowy, stuprocentowa, stuprocentowe)"
         },
         {
             "text": "stół",
@@ -18554,6 +20194,14 @@
         {
             "text": "syna",
             "meaning": "a son (after mam, masz, ma…)"
+        },
+        {
+            "text": "synem",
+            "meaning": "a son (after jest: jest synem)"
+        },
+        {
+            "text": "synowa",
+            "meaning": "a daughter-in-law"
         },
         {
             "text": "szampon",
@@ -19031,6 +20679,10 @@
             "text": "tak, to jest torba"
         },
         {
+            "text": "taksówką",
+            "meaning": "by taxi"
+        },
+        {
             "text": "talerz",
             "meaning": "a plate"
         },
@@ -19326,6 +20978,18 @@
             "meaning": "a test"
         },
         {
+            "text": "teściowa",
+            "meaning": "a mother-in-law"
+        },
+        {
+            "text": "teściowa i synowa",
+            "meaning": "the mother-in-law and the daughter-in-law"
+        },
+        {
+            "text": "teść",
+            "meaning": "a father-in-law"
+        },
+        {
             "text": "też",
             "meaning": "also; too"
         },
@@ -19414,6 +21078,9 @@
         {
             "text": "to dziewczyna",
             "meaning": "this is a girl"
+        },
+        {
+            "text": "to gospodarz"
         },
         {
             "text": "to informatyk",
@@ -19574,6 +21241,10 @@
             "text": "to jest mianownik"
         },
         {
+            "text": "to jest moja ciocia",
+            "meaning": "this is my aunt"
+        },
+        {
             "text": "to jest moja córka"
         },
         {
@@ -19625,6 +21296,10 @@
         },
         {
             "text": "to jest mój syn"
+        },
+        {
+            "text": "to jest nasz portfel",
+            "meaning": "this is our wallet"
         },
         {
             "text": "to jest nauczyciel",
@@ -19686,6 +21361,10 @@
         },
         {
             "text": "to jest różowa torba"
+        },
+        {
+            "text": "to jest sjesta",
+            "meaning": "this is a siesta"
         },
         {
             "text": "to jest sklep samoobsługowy",
@@ -19770,6 +21449,9 @@
             "meaning": "it's a joke"
         },
         {
+            "text": "to kolega"
+        },
+        {
             "text": "to komputer",
             "meaning": "this is a computer"
         },
@@ -19842,6 +21524,14 @@
             "meaning": "this is my question"
         },
         {
+            "text": "to musi być",
+            "meaning": "it must be"
+        },
+        {
+            "text": "to musi być jej zdjęcie",
+            "meaning": "it must be her photo"
+        },
+        {
             "text": "to muzeum",
             "meaning": "this museum"
         },
@@ -19892,6 +21582,10 @@
             "meaning": "this window, this map, this key"
         },
         {
+            "text": "to pracoholik",
+            "meaning": "he's a workaholic"
+        },
+        {
             "text": "to samo",
             "meaning": "the same"
         },
@@ -19932,6 +21626,10 @@
         {
             "text": "to są cytryny",
             "meaning": "these are lemons"
+        },
+        {
+            "text": "to są dziadkowie",
+            "meaning": "these are the grandparents"
         },
         {
             "text": "to są ogórki",
@@ -20534,6 +22232,14 @@
             "meaning": "do (a sport: uprawiać sport)"
         },
         {
+            "text": "urlop",
+            "meaning": "a holiday"
+        },
+        {
+            "text": "urlop",
+            "meaning": "a holiday, time off work"
+        },
+        {
             "text": "urodziny",
             "meaning": "a birthday"
         },
@@ -20660,6 +22366,18 @@
             "meaning": "shampoo and deodorant are at the drugstore"
         },
         {
+            "text": "w dzień",
+            "meaning": "by day"
+        },
+        {
+            "text": "w dzień",
+            "meaning": "in the daytime, by day"
+        },
+        {
+            "text": "w dzień pracuję",
+            "meaning": "I work by day"
+        },
+        {
             "text": "w karty",
             "meaning": "cards"
         },
@@ -20670,6 +22388,10 @@
         {
             "text": "w klubie",
             "meaning": "at a club"
+        },
+        {
+            "text": "w nocy",
+            "meaning": "at night"
         },
         {
             "text": "w piłkę",
@@ -20685,6 +22407,18 @@
         {
             "text": "w porządku",
             "meaning": "all right; fine"
+        },
+        {
+            "text": "w południe",
+            "meaning": "at noon"
+        },
+        {
+            "text": "w południe",
+            "meaning": "at noon, at midday"
+        },
+        {
+            "text": "w południe jem obiad",
+            "meaning": "at noon I have dinner"
         },
         {
             "text": "w restauracji",
@@ -20735,6 +22469,10 @@
             "meaning": "tennis (after grać: gram w tenisa)"
         },
         {
+            "text": "w tygodniu",
+            "meaning": "a week (dwa razy w tygodniu: twice a week)"
+        },
+        {
             "text": "w weekend",
             "meaning": "at the weekend"
         },
@@ -20763,6 +22501,41 @@
         {
             "text": "warzywa są zdrowe",
             "meaning": "vegetables are healthy"
+        },
+        {
+            "text": "wasz",
+            "meaning": "your (several people, masculine)"
+        },
+        {
+            "text": "wasz",
+            "meaning": "your (several people, with a masculine noun)"
+        },
+        {
+            "text": "wasz syn"
+        },
+        {
+            "text": "wasza",
+            "meaning": "your (several people, feminine)"
+        },
+        {
+            "text": "wasza",
+            "meaning": "your (several people, with a feminine noun)"
+        },
+        {
+            "text": "wasza córka",
+            "meaning": "your daughter (several people)"
+        },
+        {
+            "text": "wasze",
+            "meaning": "your (several people, neuter)"
+        },
+        {
+            "text": "wasze",
+            "meaning": "your (several people, with a neuter noun)"
+        },
+        {
+            "text": "wasze mieszkanie",
+            "meaning": "your flat (several people)"
         },
         {
             "text": "wegetariańska",
@@ -20816,8 +22589,14 @@
             "meaning": "in the evening I drink wine"
         },
         {
+            "text": "wieczorem jem obiad"
+        },
+        {
             "text": "wieczorem piję wino",
             "meaning": "in the evening I drink wine"
+        },
+        {
+            "text": "wieczorem wracam do domu"
         },
         {
             "text": "wiem",
@@ -20900,6 +22679,32 @@
         {
             "text": "wiśnie",
             "meaning": "a sour cherry (wiśnie: sour cherries)"
+        },
+        {
+            "text": "wnuczka",
+            "meaning": "a granddaughter"
+        },
+        {
+            "text": "wnuczka i babcia"
+        },
+        {
+            "text": "wnuczka i dziadek",
+            "meaning": "a granddaughter and her grandpa"
+        },
+        {
+            "text": "wnuk",
+            "meaning": "a grandson"
+        },
+        {
+            "text": "wnuk i dziadek"
+        },
+        {
+            "text": "wnuk i wnuczka",
+            "meaning": "a grandson and a granddaughter"
+        },
+        {
+            "text": "wnuki",
+            "meaning": "grandchildren"
         },
         {
             "text": "woda",
@@ -21004,6 +22809,37 @@
             "meaning": "beef"
         },
         {
+            "text": "wraca"
+        },
+        {
+            "text": "wracacie"
+        },
+        {
+            "text": "wracają"
+        },
+        {
+            "text": "wracam",
+            "meaning": "I come back"
+        },
+        {
+            "text": "wracam",
+            "meaning": "I come back, I go back"
+        },
+        {
+            "text": "wracamy"
+        },
+        {
+            "text": "wracasz"
+        },
+        {
+            "text": "wszyscy",
+            "meaning": "everybody, all (of people)"
+        },
+        {
+            "text": "wszyscy są w domu",
+            "meaning": "everybody is at home"
+        },
+        {
             "text": "wszystko",
             "meaning": "everything"
         },
@@ -21030,6 +22866,18 @@
         {
             "text": "wszędzie",
             "meaning": "everywhere, anywhere"
+        },
+        {
+            "text": "wujek",
+            "meaning": "an uncle"
+        },
+        {
+            "text": "wujka",
+            "meaning": "an uncle (after mam, znam…: mam wujka)"
+        },
+        {
+            "text": "wujka",
+            "meaning": "an uncle (mam…)"
         },
         {
             "text": "wy",
@@ -21461,6 +23309,28 @@
             "meaning": "in a moment, right away"
         },
         {
+            "text": "zawsze",
+            "meaning": "always"
+        },
+        {
+            "text": "zawsze jeżdżę taksówką"
+        },
+        {
+            "text": "zawsze piję kawę",
+            "meaning": "I always drink coffee"
+        },
+        {
+            "text": "zawsze pracuję wieczorem"
+        },
+        {
+            "text": "zdalnie",
+            "meaning": "remotely"
+        },
+        {
+            "text": "zdalnie",
+            "meaning": "remotely (pracuję zdalnie: I work from home)"
+        },
+        {
             "text": "zdjęcia",
             "meaning": "a photo (zdjęcia: photos)"
         },
@@ -21676,6 +23546,14 @@
             "meaning": "I know Kraków"
         },
         {
+            "text": "znam ich rodziców",
+            "meaning": "I know their parents"
+        },
+        {
+            "text": "znam jej rodziców",
+            "meaning": "I know her parents"
+        },
+        {
             "text": "znam twojego brata",
             "meaning": "I know your brother (one friend)"
         },
@@ -21831,6 +23709,10 @@
         {
             "text": "ćwiczę liczebniki",
             "meaning": "I practise numerals"
+        },
+        {
+            "text": "Ładne zdjęcie i ładna rodzina!",
+            "meaning": "A nice photo and a nice family!"
         },
         {
             "text": "ładna",
@@ -22140,6 +24022,9 @@
             "text": "Żeby studiować w Polsce."
         },
         {
+            "text": "Żoną wujka."
+        },
+        {
             "text": "Żurek jest z jajkiem i kiełbasą.",
             "meaning": "The sour rye soup comes with an egg and sausage."
         },
@@ -22179,6 +24064,22 @@
             "meaning": "a wife"
         },
         {
+            "text": "żonaty",
+            "meaning": "married (of a man)"
+        },
+        {
+            "text": "żoną",
+            "meaning": "a wife (after jest: jest żoną)"
+        },
+        {
+            "text": "żonę",
+            "meaning": "a wife (after mam, znam…: mam żonę)"
+        },
+        {
+            "text": "żonę",
+            "meaning": "a wife (mam…)"
+        },
+        {
             "text": "żurek",
             "meaning": "sour rye soup"
         },
@@ -22207,6 +24108,14 @@
         },
         {
             "text": "żółty ser"
+        },
+        {
+            "text": "„Nie mam żony, jestem …”",
+            "meaning": "\"I don't have a wife, I am a…\" (bachelor)"
+        },
+        {
+            "text": "„Nie wiem, co …”",
+            "meaning": "\"I don't know what to…\" (say)"
         }
     ],
     "tips": [
@@ -22525,6 +24434,30 @@
         {
             "id": "chat-catching-up/t5/2",
             "hash": "708709682061"
+        },
+        {
+            "id": "chat-family-photo/t1/2",
+            "hash": "734edc419926"
+        },
+        {
+            "id": "chat-family-photo/t2/2",
+            "hash": "21349c4d25f3"
+        },
+        {
+            "id": "chat-family-photo/t3/2",
+            "hash": "ff9240ea959c"
+        },
+        {
+            "id": "chat-family-photo/t4/2",
+            "hash": "b164a4e2c8f2"
+        },
+        {
+            "id": "chat-family-photo/t5/2",
+            "hash": "61b20cca19a8"
+        },
+        {
+            "id": "chat-family-photo/t6/2",
+            "hash": "dde0625f17b5"
         },
         {
             "id": "chat-front-desk/t1/2",
@@ -23507,6 +25440,58 @@
         {
             "id": "kpk1-l10-g-t01",
             "hash": "b75caaa31d22"
+        },
+        {
+            "id": "kpk1-l11-a1-t01",
+            "hash": "91e74704f71f"
+        },
+        {
+            "id": "kpk1-l11-a2-t01",
+            "hash": "d85902764791"
+        },
+        {
+            "id": "kpk1-l11-a3-t01",
+            "hash": "e2fbfe175db6"
+        },
+        {
+            "id": "kpk1-l11-a4-t01",
+            "hash": "d3aea713f367"
+        },
+        {
+            "id": "kpk1-l11-a5-t01",
+            "hash": "ac16ffdf964d"
+        },
+        {
+            "id": "kpk1-l11-b1-t01",
+            "hash": "8c4580b7d507"
+        },
+        {
+            "id": "kpk1-l11-b2-t01",
+            "hash": "0eeee9ca0523"
+        },
+        {
+            "id": "kpk1-l11-b3-t01",
+            "hash": "f561f1975e64"
+        },
+        {
+            "id": "kpk1-l11-c1-t01",
+            "hash": "2f026712cb71"
+        },
+        {
+            "id": "kpk1-l11-c2-t01",
+            "hash": "fcc2c9047c50"
+        },
+        {
+            "id": "kpk1-l11-d1-t01",
+            "hash": "63817cac145a"
+        },
+        {
+            "id": "kpk1-l11-d2-t01",
+            "hash": "d188d359133d"
+        },
+        {
+            "id": "kpk1-l11-g-t01",
+            "hash": "ccd1666c25c4"
         }
     ]
 }

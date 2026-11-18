@@ -4968,6 +4968,737 @@
         1,
         1
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "l11-121-1",
+      "track": 121,
+      "question": "Pierwsze słowo to…",
+      "meaning": {
+        "en": "The first word is… (a family)"
+      },
+      "acceptedAnswers": [
+        "rodzina"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-121-2",
+      "track": 121,
+      "question": "Jakie słowa słyszysz na początku?",
+      "meaning": {
+        "en": "Which words do you hear at the start?"
+      },
+      "options": [
+        "Rodzice, matka, ojciec.",
+        "Ciocia, wujek, kuzyn.",
+        "Teść i teściowa."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l11-121-3",
+      "track": 121,
+      "question": "Mąż i żona to…",
+      "meaning": {
+        "en": "A husband and a wife are a… (one word)"
+      },
+      "acceptedAnswers": [
+        "małżeństwo"
+      ],
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-121-4",
+      "track": 121,
+      "question": "Co słyszysz po słowie „dziadkowie”?",
+      "meaning": {
+        "en": "What do you hear after the word \"dziadkowie\"?"
+      },
+      "options": [
+        "Babcia, dziadek.",
+        "Mama, tata.",
+        "Siostra, brat."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        12
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-121-5",
+      "track": 121,
+      "statement": "Na końcu słyszysz: wnuczka, wnuk.",
+      "meaning": {
+        "en": "At the end you hear: granddaughter, grandson."
+      },
+      "answer": true,
+      "lines": [
+        14,
+        14
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-122-1",
+      "track": 122,
+      "statement": "On jest drugi raz żonaty.",
+      "meaning": {
+        "en": "He is married for the second time."
+      },
+      "answer": true,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l11-122-2",
+      "track": 122,
+      "question": "Ile ma dzieci?",
+      "meaning": {
+        "en": "How many children does he have?"
+      },
+      "acceptedAnswers": [
+        "dwoje",
+        "2"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-122-3",
+      "track": 122,
+      "statement": "Ma dobry kontakt z pierwszą żoną.",
+      "meaning": {
+        "en": "He keeps in good touch with his first wife."
+      },
+      "answer": false,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-122-4",
+      "track": 122,
+      "question": "Co wie o pierwszej żonie?",
+      "meaning": {
+        "en": "What does he know about his first wife?"
+      },
+      "options": [
+        "Ma drugiego męża.",
+        "Ma dwoje dzieci.",
+        "Mieszka w Krakowie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        5
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l11-123-1",
+      "track": 123,
+      "question": "„Nie wiem, co …”",
+      "meaning": {
+        "en": "\"I don't know what to…\" (say)"
+      },
+      "acceptedAnswers": [
+        "powiedzieć"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-123-2",
+      "track": 123,
+      "question": "Kogo ma ta kobieta?",
+      "meaning": {
+        "en": "Who does this woman have?"
+      },
+      "options": [
+        "Mamę, tatę, siostrę i brata.",
+        "Męża i dzieci.",
+        "Tylko mamę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-123-3",
+      "track": 123,
+      "statement": "Ona lubi rozmawiać o rodzinie.",
+      "meaning": {
+        "en": "She likes talking about her family."
+      },
+      "answer": false,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-124-1",
+      "track": 124,
+      "question": "Kim jest ta kobieta?",
+      "meaning": {
+        "en": "Who is this woman?"
+      },
+      "options": [
+        "Pół Polką, pół Angielką.",
+        "Stuprocentową Polką.",
+        "Angielką."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-124-2",
+      "track": 124,
+      "statement": "Jej mama jest Polką.",
+      "meaning": {
+        "en": "Her mother is Polish."
+      },
+      "answer": true,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-124-3",
+      "track": 124,
+      "question": "Kim był jej dziadek?",
+      "meaning": {
+        "en": "Who was her grandfather?"
+      },
+      "options": [
+        "Pilotem.",
+        "Lekarzem.",
+        "Nauczycielem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-124-4",
+      "track": 124,
+      "statement": "Jej babcia jeszcze żyje.",
+      "meaning": {
+        "en": "Her grandmother is still alive."
+      },
+      "answer": false,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-124-5",
+      "track": 124,
+      "statement": "Jej ojciec jest Anglikiem.",
+      "meaning": {
+        "en": "Her father is English."
+      },
+      "answer": true,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-125-1",
+      "track": 125,
+      "statement": "On ma dużą rodzinę.",
+      "meaning": {
+        "en": "He has a big family."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-125-2",
+      "track": 125,
+      "statement": "Jego rodzina mieszka w różnych miastach.",
+      "meaning": {
+        "en": "His family lives in different cities."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-125-3",
+      "track": 125,
+      "question": "Kim jest Maria Elena?",
+      "meaning": {
+        "en": "Who is Maria Elena?"
+      },
+      "options": [
+        "Jego dziewczyną.",
+        "Jego żoną.",
+        "Jego siostrą."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        12
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l11-125-4",
+      "track": 125,
+      "question": "„Nie mam żony, jestem …”",
+      "meaning": {
+        "en": "\"I don't have a wife, I am a…\" (bachelor)"
+      },
+      "acceptedAnswers": [
+        "kawalerem"
+      ],
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-126-1",
+      "track": 126,
+      "question": "Z kim mieszka ta dziewczyna?",
+      "meaning": {
+        "en": "Who does the girl live with?"
+      },
+      "options": [
+        "Z rodzicami i bratem.",
+        "Z babcią i dziadkiem.",
+        "Z ciocią."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-126-2",
+      "track": 126,
+      "statement": "Ona i jej brat to bliźniaki.",
+      "meaning": {
+        "en": "She and her brother are twins."
+      },
+      "answer": true,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-126-3",
+      "track": 126,
+      "question": "Kim jest jej ciocia?",
+      "meaning": {
+        "en": "Who is her aunt?"
+      },
+      "options": [
+        "Siostrą taty.",
+        "Siostrą mamy.",
+        "Żoną wujka."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-126-4",
+      "track": 126,
+      "statement": "Jej mama ma dużo rodzeństwa.",
+      "meaning": {
+        "en": "Her mother has lots of brothers and sisters."
+      },
+      "answer": false,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-126-5",
+      "track": 126,
+      "question": "Jak często spotyka się z dziadkami?",
+      "meaning": {
+        "en": "How often does she see her grandparents?"
+      },
+      "options": [
+        "Raz, dwa razy w roku.",
+        "Codziennie.",
+        "W każdy weekend."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-127-1",
+      "track": 127,
+      "question": "Co blokuje garaż?",
+      "meaning": {
+        "en": "What is blocking the garage?"
+      },
+      "options": [
+        "Samochód.",
+        "Rower.",
+        "Taksówka."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-127-2",
+      "track": 127,
+      "statement": "Pan wie, czyj to samochód.",
+      "meaning": {
+        "en": "The man knows whose car it is."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-127-3",
+      "track": 127,
+      "question": "Czyja jest książka, według studentki?",
+      "meaning": {
+        "en": "Whose book is it, according to the student?"
+      },
+      "options": [
+        "Javiera.",
+        "Jej.",
+        "Nauczycielki."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-127-4",
+      "track": 127,
+      "statement": "Zdjęcie koleżanki jest w portfelu.",
+      "meaning": {
+        "en": "The friend's photo is in a wallet."
+      },
+      "answer": true,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-128-1",
+      "track": 128,
+      "question": "Gdzie rodzina spotyka się rano?",
+      "meaning": {
+        "en": "Where does the family meet in the morning?"
+      },
+      "options": [
+        "W kuchni.",
+        "W biurze.",
+        "W szkole."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-128-2",
+      "track": 128,
+      "question": "Co robi Karol na śniadanie?",
+      "meaning": {
+        "en": "What does Karol make for breakfast?"
+      },
+      "options": [
+        "Jajecznicę.",
+        "Tosty.",
+        "Kawę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-128-3",
+      "track": 128,
+      "statement": "Pani Joanna pracuje zdalnie albo w redakcji gazety.",
+      "meaning": {
+        "en": "Mrs Joanna works from home or at the newspaper office."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-128-4",
+      "track": 128,
+      "statement": "W południe pan Grzegorz je obiad.",
+      "meaning": {
+        "en": "At noon Mr Grzegorz has dinner."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-128-5",
+      "track": 128,
+      "question": "Co robi rodzeństwo po południu?",
+      "meaning": {
+        "en": "What do the brother and sister do in the afternoon?"
+      },
+      "options": [
+        "Chodzi na basen lub na kurs tańca.",
+        "Robi zakupy.",
+        "Pisze maile."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-128-6",
+      "track": 128,
+      "question": "Co robi syn wieczorem?",
+      "meaning": {
+        "en": "What does the son do in the evening?"
+      },
+      "options": [
+        "Gra na komputerze z kolegami.",
+        "Spotyka się z dziewczyną.",
+        "Idzie do kina."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l11-129-1",
+      "track": 129,
+      "question": "Pierwsza odpowiedź na pytanie „Jak często?”",
+      "meaning": {
+        "en": "The first answer to the question \"how often?\""
+      },
+      "acceptedAnswers": [
+        "zawsze"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-129-2",
+      "track": 129,
+      "question": "Co słyszysz na końcu?",
+      "meaning": {
+        "en": "What do you hear at the end?"
+      },
+      "options": [
+        "Od czasu do czasu.",
+        "Raz w roku.",
+        "Codziennie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-130-1",
+      "track": 130,
+      "statement": "Uwe pracuje od rana do wieczora.",
+      "meaning": {
+        "en": "Uwe works from morning till evening."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l11-130-2",
+      "track": 130,
+      "question": "Jak często Uwe dzwoni do żony?",
+      "meaning": {
+        "en": "How often does Uwe call his wife?"
+      },
+      "acceptedAnswers": [
+        "codziennie"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-130-3",
+      "track": 130,
+      "question": "Czym Uwe zwykle jeździ do pracy?",
+      "meaning": {
+        "en": "How does Uwe usually get to work?"
+      },
+      "options": [
+        "Samochodem.",
+        "Taksówką.",
+        "Autobusem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-131-1",
+      "track": 131,
+      "question": "Jak często Uwe ma urlop?",
+      "meaning": {
+        "en": "How often does Uwe have a holiday?"
+      },
+      "options": [
+        "Raz w roku.",
+        "Dwa razy w roku.",
+        "Co miesiąc."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l11-131-2",
+      "track": 131,
+      "statement": "Uwe czasem chodzi na dyskotekę.",
+      "meaning": {
+        "en": "Uwe sometimes goes to a disco."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l11-131-3",
+      "track": 131,
+      "question": "Dlaczego ona tak dużo pyta?",
+      "meaning": {
+        "en": "Why does she ask so many questions?"
+      },
+      "options": [
+        "Bo lubi wszystko wiedzieć.",
+        "Bo pisze artykuł.",
+        "Bo jest nauczycielką."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
     }
   ]
 }

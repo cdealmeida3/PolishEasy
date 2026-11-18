@@ -1,0 +1,415 @@
+{
+  "id": "kpk1-l11-d1",
+  "section": {
+    "letter": "D",
+    "heading": "Jak często?",
+    "meaning": {
+      "en": "How often?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-d1-t01",
+      "before": "kpk1-l11-d1-e01",
+      "title": {
+        "en": "Jak często?"
+      },
+      "body": {
+        "en": "*Jak często?* From always to never: *zawsze*, *zwykle*, *często*, *czasem* (also *czasami* or *od czasu do czasu*), *rzadko*, *nigdy*. With *nigdy* the verb still takes *nie*, and after *nie* the thing goes into the genitive: *nigdy nie piję kawy*. *Codziennie* is every day."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d1-e01",
+      "prompt": "jak często?",
+      "options": [
+        {
+          "en": "how many; how much"
+        },
+        {
+          "en": "how often?"
+        },
+        {
+          "en": "when"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jak-czesto"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d1-e02",
+      "prompt": "zawsze",
+      "options": [
+        {
+          "en": "usually"
+        },
+        {
+          "en": "never (nigdy nie…)"
+        },
+        {
+          "en": "always"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zawsze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d1-e03",
+      "prompt": "często",
+      "options": [
+        {
+          "en": "often"
+        },
+        {
+          "en": "rarely, seldom"
+        },
+        {
+          "en": "always"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czesto"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-d1-e04",
+      "text": "zawsze piję kawę",
+      "meaning": {
+        "en": "I always drink coffee"
+      },
+      "distractors": [
+        "często piję kawę",
+        "nigdy nie piję kawy"
+      ],
+      "items": [
+        "zawsze",
+        "pic-pije",
+        "kawa-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d1-e05",
+      "prompt": "czasem",
+      "options": [
+        {
+          "en": "often"
+        },
+        {
+          "en": "sometimes (czasem = czasami)"
+        },
+        {
+          "en": "always"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czasem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d1-e06",
+      "prompt": "rzadko",
+      "options": [
+        {
+          "en": "often"
+        },
+        {
+          "en": "never (nigdy nie…)"
+        },
+        {
+          "en": "rarely, seldom"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "rzadko"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-d1-e07",
+      "text": "Bardzo ___ chodzę do kina.",
+      "meaning": {
+        "en": "I very rarely go to the cinema."
+      },
+      "gaps": [
+        [
+          "rzadko"
+        ]
+      ],
+      "distractors": [
+        "nigdy",
+        "zawsze"
+      ],
+      "items": [
+        "bardzo",
+        "rzadko",
+        "chodzic-chodze",
+        "do-kina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d1-e08",
+      "prompt": "nigdy",
+      "options": [
+        {
+          "en": "never (nigdy nie…)"
+        },
+        {
+          "en": "rarely, seldom"
+        },
+        {
+          "en": "no"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nigdy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-d1-e09",
+      "prompt": {
+        "en": "I never drink coffee"
+      },
+      "acceptedAnswers": [
+        "nigdy nie piję kawy"
+      ],
+      "distractors": [
+        "kawę",
+        "zawsze"
+      ],
+      "items": [
+        "nigdy",
+        "nie",
+        "pic-pije",
+        "kawa-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d1-e10",
+      "prompt": "codziennie",
+      "options": [
+        {
+          "en": "always"
+        },
+        {
+          "en": "every day"
+        },
+        {
+          "en": "today"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "codziennie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d1-e11",
+      "prompt": "od czasu do czasu",
+      "options": [
+        {
+          "en": "every day"
+        },
+        {
+          "en": "never (nigdy nie…)"
+        },
+        {
+          "en": "from time to time"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "od-czasu-do-czasu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-d1-e12",
+      "acceptedAnswers": [
+        "codziennie gotuję"
+      ],
+      "meaning": {
+        "en": "I cook every day"
+      },
+      "items": [
+        "codziennie",
+        "gotowac-gotuje"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-d1-e13",
+      "prompt": {
+        "en": "how often?"
+      },
+      "acceptedAnswers": [
+        "jak często?"
+      ],
+      "items": [
+        "jak-czesto"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-d1-e14",
+      "pairs": [
+        {
+          "polish": "zawsze",
+          "meaning": {
+            "en": "always"
+          }
+        },
+        {
+          "polish": "często",
+          "meaning": {
+            "en": "often"
+          }
+        },
+        {
+          "polish": "czasem",
+          "meaning": {
+            "en": "sometimes"
+          }
+        },
+        {
+          "polish": "rzadko",
+          "meaning": {
+            "en": "rarely"
+          }
+        },
+        {
+          "polish": "nigdy",
+          "meaning": {
+            "en": "never"
+          }
+        },
+        {
+          "polish": "codziennie",
+          "meaning": {
+            "en": "every day"
+          }
+        }
+      ],
+      "items": [
+        "zawsze",
+        "czesto",
+        "czasem",
+        "rzadko",
+        "nigdy",
+        "codziennie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-d1-e15",
+      "lines": [
+        "Ewa zawsze pije kawę rano.",
+        "Często gotuje.",
+        "Nigdy nie pije herbaty."
+      ],
+      "meaning": {
+        "en": "How often does Ewa…?"
+      },
+      "statements": [
+        {
+          "text": "Ewa często gotuje.",
+          "meaning": {
+            "en": "Ewa often cooks."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa często pije herbatę.",
+          "meaning": {
+            "en": "Ewa often drinks tea."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa pije kawę rano.",
+          "meaning": {
+            "en": "Ewa drinks coffee in the morning."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "zawsze",
+        "pic-pije-on",
+        "kawa-acc",
+        "rano",
+        "czesto",
+        "gotowac-gotuje-on",
+        "nigdy",
+        "nie",
+        "herbata-gen"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-d1-e16",
+      "lines": [
+        "Jak często grasz w piłkę?",
+        "Od czasu do czasu.",
+        "A twój brat?",
+        "On gra codziennie."
+      ],
+      "meaning": {
+        "en": "Playing football."
+      },
+      "items": [
+        "jak-czesto",
+        "grac-grasz",
+        "w-pilke",
+        "od-czasu-do-czasu",
+        "a",
+        "twoj",
+        "brat",
+        "on",
+        "codziennie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-d1-e17",
+      "prompt": {
+        "en": "sometimes I cook"
+      },
+      "acceptedAnswers": [
+        "czasem gotuję",
+        "gotuję czasem"
+      ],
+      "distractors": [
+        "często",
+        "gotujesz"
+      ],
+      "items": [
+        "czasem",
+        "gotowac-gotuje"
+      ]
+    }
+  ]
+}
