@@ -1,0 +1,398 @@
+{
+  "id": "kpk1-l16-d1",
+  "section": {
+    "letter": "D",
+    "heading": "Andrzejki",
+    "meaning": {
+      "en": "St Andrew's Eve"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-d1-t01",
+      "before": "kpk1-l16-d1-e01",
+      "title": {
+        "en": "Andrzejki"
+      },
+      "body": {
+        "en": "*Andrzejki* is the night of 29 November, St Andrew's Eve, when friends *wróżą* (tell fortunes). The best-known *wróżba*: you melt *wosk* (wax) from a *świeca* (a candle) in a *garnek* (a pot), pour it through a *klucz* (a key) into cold water, and read your future from its *cień* (its shadow) on the wall."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d1-e01",
+      "prompt": "andrzejki",
+      "options": [
+        {
+          "en": "Christmas"
+        },
+        {
+          "en": "New Year's Eve"
+        },
+        {
+          "en": "St Andrew's Eve (29 November, a night of fortune telling)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "andrzejki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d1-e02",
+      "prompt": "wróżyć",
+      "options": [
+        {
+          "en": "tell fortunes (to tell fortunes)"
+        },
+        {
+          "en": "pour (to pour)"
+        },
+        {
+          "en": "read (to read)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wrozyc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d1-e03",
+      "prompt": "wróżba",
+      "options": [
+        {
+          "en": "a key"
+        },
+        {
+          "en": "a fortune, a prophecy"
+        },
+        {
+          "en": "a party"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wrozba"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-d1-e04",
+      "text": "andrzejki są w listopadzie",
+      "meaning": {
+        "en": "St Andrew's Eve is in November"
+      },
+      "distractors": [
+        "andrzejki są w grudniu",
+        "walentynki są w listopadzie"
+      ],
+      "items": [
+        "andrzejki",
+        "byc-sa",
+        "listopad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d1-e05",
+      "prompt": "świeca",
+      "options": [
+        {
+          "en": "a key"
+        },
+        {
+          "en": "a pot, a saucepan"
+        },
+        {
+          "en": "a candle (mam świecę: I have a candle)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "swieca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d1-e06",
+      "prompt": "wosk",
+      "options": [
+        {
+          "en": "wax"
+        },
+        {
+          "en": "water"
+        },
+        {
+          "en": "a candle"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wosk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d1-e07",
+      "prompt": "klucz",
+      "options": [
+        {
+          "en": "a candle"
+        },
+        {
+          "en": "a key"
+        },
+        {
+          "en": "a shadow"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "klucz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-d1-e08",
+      "prompt": {
+        "en": "a candle and a key"
+      },
+      "acceptedAnswers": [
+        "świeca i klucz"
+      ],
+      "distractors": [
+        "wosk",
+        "cień"
+      ],
+      "items": [
+        "swieca",
+        "i",
+        "klucz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d1-e09",
+      "prompt": "cień",
+      "options": [
+        {
+          "en": "a key"
+        },
+        {
+          "en": "wax"
+        },
+        {
+          "en": "a shadow"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "cien"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d1-e10",
+      "prompt": "garnek",
+      "options": [
+        {
+          "en": "a pot, a saucepan (w garnku: in a pot)"
+        },
+        {
+          "en": "a candle"
+        },
+        {
+          "en": "a jar"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "garnek"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-d1-e11",
+      "text": "Wosk jest w ___, a klucz jest tu.",
+      "meaning": {
+        "en": "The wax is in the pot, and the key is here."
+      },
+      "gaps": [
+        [
+          "garnku"
+        ]
+      ],
+      "distractors": [
+        "garnek",
+        "świecy"
+      ],
+      "items": [
+        "wosk",
+        "byc-jest",
+        "garnek",
+        "a",
+        "klucz",
+        "tu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-d1-e12",
+      "acceptedAnswers": [
+        "świeca"
+      ],
+      "meaning": {
+        "en": "a candle"
+      },
+      "items": [
+        "swieca"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-d1-e13",
+      "prompt": {
+        "en": "a key"
+      },
+      "acceptedAnswers": [
+        "klucz"
+      ],
+      "items": [
+        "klucz"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-d1-e14",
+      "prompt": {
+        "en": "to tell fortunes"
+      },
+      "acceptedAnswers": [
+        "wróżyć"
+      ],
+      "items": [
+        "wrozyc"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-d1-e15",
+      "pairs": [
+        {
+          "polish": "świeca",
+          "meaning": {
+            "en": "a candle"
+          }
+        },
+        {
+          "polish": "wosk",
+          "meaning": {
+            "en": "wax"
+          }
+        },
+        {
+          "polish": "klucz",
+          "meaning": {
+            "en": "a key"
+          }
+        },
+        {
+          "polish": "cień",
+          "meaning": {
+            "en": "a shadow"
+          }
+        },
+        {
+          "polish": "garnek",
+          "meaning": {
+            "en": "a pot"
+          }
+        },
+        {
+          "polish": "wróżba",
+          "meaning": {
+            "en": "a fortune"
+          }
+        }
+      ],
+      "items": [
+        "swieca",
+        "wosk",
+        "klucz",
+        "cien",
+        "garnek",
+        "wrozba"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-d1-e16",
+      "text": "wszyscy lubią wróżyć",
+      "meaning": {
+        "en": "everyone likes telling fortunes"
+      },
+      "distractors": [
+        "wszyscy lubią tańczyć",
+        "oni lubią wróżyć"
+      ],
+      "items": [
+        "wszyscy",
+        "lubic-lubia",
+        "wrozyc"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-d1-e17",
+      "lines": [
+        "Andrzejki są w listopadzie.",
+        "Ewa ma świecę, wosk i klucz.",
+        "Potem patrzy na cień na ścianie."
+      ],
+      "meaning": {
+        "en": "St Andrew's Eve."
+      },
+      "statements": [
+        {
+          "text": "Andrzejki są w grudniu.",
+          "meaning": {
+            "en": "St Andrew's Eve is in December."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa ma klucz.",
+          "meaning": {
+            "en": "Ewa has a key."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa patrzy na cień.",
+          "meaning": {
+            "en": "Ewa looks at the shadow."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "andrzejki",
+        "listopad",
+        "ewa",
+        "swieca",
+        "wosk",
+        "klucz",
+        "cien"
+      ]
+    }
+  ]
+}

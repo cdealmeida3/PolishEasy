@@ -1,0 +1,179 @@
+{
+  "id": "chat-weekend-weather",
+  "person": "Marek",
+  "title": {
+    "en": "Weekend weather"
+  },
+  "scene": {
+    "en": "It is summer, and your friend Marek wants to make plans for the weekend. He is a friend, so you say cześć and ty. First find out what the weather will be, then plan Saturday and Sunday to fit it."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "co",
+    "bedziesz",
+    "robic",
+    "w-weekend",
+    "nie-wiem",
+    "to",
+    "zalezy",
+    "od-godz",
+    "pogoda",
+    "robic-robie",
+    "zakupy",
+    "prognoza-pogody",
+    "mowic-mowi",
+    "ze",
+    "sobota",
+    "bedzie-swiecic-slonce",
+    "swietnie",
+    "bedziemy",
+    "spacerowac",
+    "w-parku",
+    "szkoda",
+    "w-domu",
+    "a",
+    "niedziela",
+    "bedzie-padac",
+    "i",
+    "bedzie-wiac-wiatr",
+    "ogladac",
+    "film",
+    "opalac-sie",
+    "na-plazy",
+    "dobry",
+    "pomysl",
+    "do-zobaczenia",
+    "do-widzenia"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Co będziesz robić w weekend?",
+      "meaning": {
+        "en": "Hi! What will you do at the weekend?"
+      },
+      "replies": [
+        {
+          "text": "Nie wiem. To zależy od pogody.",
+          "meaning": {
+            "en": "I don't know. It depends on the weather."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Nie wiem. To zależy od pogody.",
+            "Nie wiem, to zależy od pogody."
+          ]
+        },
+        {
+          "text": "Robię zakupy.",
+          "meaning": {
+            "en": "I'm doing the shopping."
+          },
+          "note": {
+            "en": "Marek asks about the weekend to come, *będziesz robić*: answer in the future, or say you do not know yet, *nie wiem*. *Robię* is what you do now."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Prognoza pogody mówi, że w sobotę będzie świecić słońce.",
+      "meaning": {
+        "en": "The weather forecast says the sun will shine on Saturday."
+      },
+      "replies": [
+        {
+          "text": "Świetnie! To będziemy spacerować w parku.",
+          "meaning": {
+            "en": "Great! Then we'll go for a walk in the park."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Świetnie! To będziemy spacerować w parku.",
+            "Świetnie, to będziemy spacerować w parku."
+          ]
+        },
+        {
+          "text": "Szkoda. To będziemy w domu.",
+          "meaning": {
+            "en": "What a pity. Then we'll stay at home."
+          },
+          "note": {
+            "en": "Sunshine is good news, so say *świetnie!* *Szkoda* is for bad news."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "A w niedzielę będzie padać i będzie wiać wiatr.",
+      "meaning": {
+        "en": "And on Sunday it will rain and it will be windy."
+      },
+      "replies": [
+        {
+          "text": "To w niedzielę będziemy oglądać film w domu.",
+          "meaning": {
+            "en": "Then on Sunday we'll watch a film at home."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "To w niedzielę będziemy oglądać film w domu.",
+            "To w niedzielę będziemy w domu oglądać film."
+          ]
+        },
+        {
+          "text": "To w niedzielę będziemy opalać się na plaży.",
+          "meaning": {
+            "en": "Then on Sunday we'll sunbathe on the beach."
+          },
+          "note": {
+            "en": "Nobody sunbathes in the rain and wind. On a day like that you stay *w domu*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Dobry pomysł! Do zobaczenia w sobotę!",
+      "meaning": {
+        "en": "Good idea! See you on Saturday!"
+      },
+      "replies": [
+        {
+          "text": "Do zobaczenia! Cześć!",
+          "meaning": {
+            "en": "See you! Bye!"
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Do zobaczenia! Cześć!",
+            "Do zobaczenia, cześć!"
+          ]
+        },
+        {
+          "text": "Do widzenia!",
+          "meaning": {
+            "en": "Goodbye!"
+          },
+          "register": "formal",
+          "note": {
+            "en": "Marek is a friend: to him you say *do zobaczenia* or *cześć*. *Do widzenia* is for people you call pan or pani."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Cześć!",
+      "meaning": {
+        "en": "Bye!"
+      }
+    }
+  ]
+}

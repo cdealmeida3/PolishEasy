@@ -1,0 +1,428 @@
+{
+  "id": "kpk1-l16-c4",
+  "section": {
+    "letter": "C",
+    "heading": "Dzieci najmilsze, gdy śpią",
+    "meaning": {
+      "en": "Children are sweetest when asleep"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-c4-t01",
+      "before": "kpk1-l16-c4-e01",
+      "title": {
+        "en": "Będę musiał, będę mogła"
+      },
+      "body": {
+        "en": "*Musieć*, *móc* and *chcieć* make the future only one way: *będę* and the past tense form. A man says *będę musiał*, *będę mógł*, *będę chciał*; a woman *będę musiała*, *będę mogła*, *będę chciała*. *Będę musiała wstawać wcześnie rano* is I'll have to get up early."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c4-e01",
+      "prompt": "musiał",
+      "options": [
+        {
+          "en": "be able to, in the future (będę mógł: I will be able to, a man says it; będę mogła: a woman)"
+        },
+        {
+          "en": "want, in the future (będę chciał: I will want to, a man says it; będę chciała: a woman)"
+        },
+        {
+          "en": "have to, in the future (będę musiał: I will have to, a man says it; będę musiała: a woman)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "musial"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-c4-e02",
+      "text": "będę musiał pracować",
+      "meaning": {
+        "en": "I'll have to work"
+      },
+      "distractors": [
+        "będę musiała pracować",
+        "będę mógł pracować"
+      ],
+      "items": [
+        "bede",
+        "musial",
+        "pracowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c4-e03",
+      "prompt": "mógł",
+      "options": [
+        {
+          "en": "be able to, in the future (będę mógł: I will be able to, a man says it; będę mogła: a woman)"
+        },
+        {
+          "en": "have to, in the future (będę musiał: I will have to, a man says it; będę musiała: a woman)"
+        },
+        {
+          "en": "want, in the future (będę chciał: I will want to, a man says it; będę chciała: a woman)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mogl"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c4-e04",
+      "prompt": "chciał",
+      "options": [
+        {
+          "en": "be able to, in the future (będę mógł: I will be able to, a man says it; będę mogła: a woman)"
+        },
+        {
+          "en": "want, in the future (będę chciał: I will want to, a man says it; będę chciała: a woman)"
+        },
+        {
+          "en": "have to, in the future (będę musiał: I will have to, a man says it; będę musiała: a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chcial"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-c4-e05",
+      "text": "Jutro będę ___ pracować, ale pojutrze będę ___ długo spać.",
+      "meaning": {
+        "en": "Tomorrow I (a woman) will have to work, but the day after tomorrow I will be able to sleep late."
+      },
+      "gaps": [
+        [
+          "musiała"
+        ],
+        [
+          "mogła"
+        ]
+      ],
+      "distractors": [
+        "muszę",
+        "mogę"
+      ],
+      "items": [
+        "jutro",
+        "bede",
+        "musial",
+        "pracowac",
+        "ale",
+        "pojutrze",
+        "mogl",
+        "dlugo",
+        "spac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c4-e06",
+      "prompt": "wcześnie rano",
+      "options": [
+        {
+          "en": "late at night"
+        },
+        {
+          "en": "in the afternoon"
+        },
+        {
+          "en": "early in the morning"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wczesnie-rano"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c4-e07",
+      "prompt": "bawić się",
+      "options": [
+        {
+          "en": "play (to play, of children; bawić się z dzieckiem)"
+        },
+        {
+          "en": "sleep (to sleep)"
+        },
+        {
+          "en": "dance (to dance)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bawic-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c4-e08",
+      "prompt": "z dzieckiem",
+      "options": [
+        {
+          "en": "with a friend"
+        },
+        {
+          "en": "with a child, with the baby"
+        },
+        {
+          "en": "with a dog"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-dzieckiem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-c4-e09",
+      "prompt": {
+        "en": "I will have to get up early in the morning"
+      },
+      "acceptedAnswers": [
+        "będę musiała wstawać wcześnie rano"
+      ],
+      "distractors": [
+        "muszę",
+        "wieczorem"
+      ],
+      "items": [
+        "bede",
+        "musial",
+        "wstawac",
+        "wczesnie-rano"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-c4-e10",
+      "acceptedAnswers": [
+        "będę mogła spać"
+      ],
+      "meaning": {
+        "en": "I (a woman) will be able to sleep"
+      },
+      "items": [
+        "bede",
+        "mogl",
+        "spac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-c4-e11",
+      "prompt": {
+        "en": "I will want to (a man)"
+      },
+      "acceptedAnswers": [
+        "będę chciał"
+      ],
+      "items": [
+        "bede",
+        "chcial"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-c4-e12",
+      "pairs": [
+        {
+          "polish": "będę musiał",
+          "meaning": {
+            "en": "I will have to"
+          }
+        },
+        {
+          "polish": "będę mógł",
+          "meaning": {
+            "en": "I will be able to"
+          }
+        },
+        {
+          "polish": "będę chciał",
+          "meaning": {
+            "en": "I will want to"
+          }
+        },
+        {
+          "polish": "wcześnie rano",
+          "meaning": {
+            "en": "early in the morning"
+          }
+        },
+        {
+          "polish": "z dzieckiem",
+          "meaning": {
+            "en": "with the baby"
+          }
+        }
+      ],
+      "items": [
+        "bede",
+        "musial",
+        "mogl",
+        "chcial",
+        "wczesnie-rano",
+        "z-dzieckiem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-c4-e13",
+      "text": "będzie bawić się z dzieckiem",
+      "meaning": {
+        "en": "she will be playing with the baby"
+      },
+      "distractors": [
+        "będzie bawić się z kotem",
+        "będą bawić się z dzieckiem"
+      ],
+      "items": [
+        "bedzie",
+        "bawic-sie",
+        "z-dzieckiem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-c4-e14",
+      "text": "Z dzieckiem jest mało ___. Ewa będzie musiała wstawać ___ rano.",
+      "meaning": {
+        "en": "With a baby there is little time. Ewa will have to get up early in the morning."
+      },
+      "gaps": [
+        [
+          "czasu"
+        ],
+        [
+          "wcześnie"
+        ]
+      ],
+      "distractors": [
+        "czas",
+        "późno"
+      ],
+      "items": [
+        "z-dzieckiem",
+        "byc-jest",
+        "malo",
+        "czasu",
+        "ewa",
+        "bedzie",
+        "musial",
+        "wstawac",
+        "wczesnie-rano"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-c4-e15",
+      "text": "w przyszły poniedziałek będę musiała pracować",
+      "meaning": {
+        "en": "next Monday I (a woman) will have to work"
+      },
+      "distractors": [
+        "w przyszłą sobotę będę musiała pracować",
+        "w przyszły poniedziałek będę mogła pracować"
+      ],
+      "items": [
+        "w-przyszly-poniedzialek",
+        "bede",
+        "musial",
+        "pracowac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-c4-e16",
+      "prompt": {
+        "en": "to play (of children)"
+      },
+      "acceptedAnswers": [
+        "bawić się"
+      ],
+      "items": [
+        "bawic-sie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-c4-e17",
+      "lines": [
+        "Patrycja będzie miała dziecko.",
+        "Będzie musiała wstawać wcześnie rano i będzie miała mało czasu.",
+        "Nie będzie mogła chodzić na imprezy, ale będzie spacerować w parku."
+      ],
+      "meaning": {
+        "en": "Patrycja and the baby."
+      },
+      "statements": [
+        {
+          "text": "Patrycja będzie miała dziecko.",
+          "meaning": {
+            "en": "Patrycja will have a baby."
+          },
+          "true": true
+        },
+        {
+          "text": "Patrycja będzie długo spać.",
+          "meaning": {
+            "en": "Patrycja will sleep late."
+          },
+          "true": false
+        },
+        {
+          "text": "Będzie spacerować w parku.",
+          "meaning": {
+            "en": "She will walk in the park."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "dziecko",
+        "bedzie",
+        "musial",
+        "wstawac",
+        "wczesnie-rano",
+        "malo",
+        "czasu",
+        "mogl",
+        "spacerowac",
+        "w-parku"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-c4-e18",
+      "prompt": {
+        "en": "early in the morning"
+      },
+      "acceptedAnswers": [
+        "wcześnie rano"
+      ],
+      "items": [
+        "wczesnie-rano"
+      ]
+    }
+  ]
+}

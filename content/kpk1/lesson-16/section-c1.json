@@ -1,0 +1,453 @@
+{
+  "id": "kpk1-l16-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Dzieci najmilsze, gdy śpią",
+    "meaning": {
+      "en": "Children are sweetest when asleep"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-c1-t01",
+      "before": "kpk1-l16-c1-e01",
+      "title": {
+        "en": "Będę, będziesz, będzie"
+      },
+      "body": {
+        "en": "The future of *być*: *będę* (I will be), *będziesz*, *będzie*, *będziemy*, *będziecie*, *będą*. *Jutro będę w domu* is I'll be at home tomorrow. *Pojutrze* is the day after tomorrow."
+      },
+      "table": {
+        "title": {
+          "en": "być · czas przyszły (the future)"
+        },
+        "columns": [
+          {
+            "header": "być"
+          },
+          {
+            "header": "robić"
+          }
+        ],
+        "rows": [
+          {
+            "header": "ja",
+            "cells": [
+              "będę",
+              "będę robić"
+            ]
+          },
+          {
+            "header": "ty",
+            "cells": [
+              "będziesz",
+              "będziesz robić"
+            ]
+          },
+          {
+            "header": "on, ona, ono",
+            "cells": [
+              "będzie",
+              "będzie robić"
+            ]
+          },
+          {
+            "header": "my",
+            "cells": [
+              "będziemy",
+              "będziemy robić"
+            ]
+          },
+          {
+            "header": "wy",
+            "cells": [
+              "będziecie",
+              "będziecie robić"
+            ]
+          },
+          {
+            "header": "oni, one",
+            "cells": [
+              "będą",
+              "będą robić"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c1-e01",
+      "prompt": "będę",
+      "options": [
+        {
+          "en": "I will be (będę w domu: I'll be at home)"
+        },
+        {
+          "en": "I was"
+        },
+        {
+          "en": "I am"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bede"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c1-e02",
+      "prompt": "będziesz",
+      "options": [
+        {
+          "en": "you are (one friend)"
+        },
+        {
+          "en": "you will be (one friend)"
+        },
+        {
+          "en": "you will be (several people)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bedziesz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-c1-e03",
+      "text": "jutro będę w domu",
+      "meaning": {
+        "en": "tomorrow I'll be at home"
+      },
+      "distractors": [
+        "jutro będę w biurze",
+        "jutro będziesz w domu"
+      ],
+      "items": [
+        "jutro",
+        "bede",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c1-e04",
+      "prompt": "będziemy",
+      "options": [
+        {
+          "en": "we were"
+        },
+        {
+          "en": "they will be"
+        },
+        {
+          "en": "we will be"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bedziemy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c1-e05",
+      "prompt": "będziecie",
+      "options": [
+        {
+          "en": "you will be (several people)"
+        },
+        {
+          "en": "we will be"
+        },
+        {
+          "en": "you were (several people)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bedziecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c1-e06",
+      "prompt": "będą",
+      "options": [
+        {
+          "en": "they are"
+        },
+        {
+          "en": "they will be"
+        },
+        {
+          "en": "you will be (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "beda"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-c1-e07",
+      "text": "Jutro ___ w biurze, a ty ___ w domu?",
+      "meaning": {
+        "en": "Tomorrow I will be at the office, and will you be at home?"
+      },
+      "gaps": [
+        [
+          "będę"
+        ],
+        [
+          "będziesz"
+        ]
+      ],
+      "distractors": [
+        "jestem",
+        "będą"
+      ],
+      "items": [
+        "jutro",
+        "bede",
+        "w-biurze",
+        "a",
+        "ty",
+        "bedziesz",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c1-e08",
+      "prompt": "pojutrze",
+      "options": [
+        {
+          "en": "tomorrow"
+        },
+        {
+          "en": "yesterday"
+        },
+        {
+          "en": "the day after tomorrow"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pojutrze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-c1-e09",
+      "prompt": {
+        "en": "the day after tomorrow we will be in Kraków"
+      },
+      "acceptedAnswers": [
+        "pojutrze będziemy w Krakowie"
+      ],
+      "distractors": [
+        "jutro",
+        "będą"
+      ],
+      "items": [
+        "pojutrze",
+        "bedziemy",
+        "w-krakowie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-c1-e10",
+      "text": "Gdzie ___ w weekend? My ___ w górach.",
+      "meaning": {
+        "en": "Where will you be at the weekend? We will be in the mountains."
+      },
+      "gaps": [
+        [
+          "będziecie"
+        ],
+        [
+          "będziemy"
+        ]
+      ],
+      "distractors": [
+        "jesteście",
+        "będą"
+      ],
+      "items": [
+        "gdzie",
+        "bedziecie",
+        "w-weekend",
+        "my",
+        "bedziemy",
+        "w-gorach"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-c1-e11",
+      "acceptedAnswers": [
+        "oni będą w szkole"
+      ],
+      "meaning": {
+        "en": "they will be at school"
+      },
+      "items": [
+        "oni",
+        "beda",
+        "w-szkole"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-c1-e12",
+      "prompt": {
+        "en": "I will be"
+      },
+      "acceptedAnswers": [
+        "będę"
+      ],
+      "items": [
+        "bede"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-c1-e13",
+      "prompt": {
+        "en": "they will be"
+      },
+      "acceptedAnswers": [
+        "będą"
+      ],
+      "items": [
+        "beda"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-c1-e14",
+      "pairs": [
+        {
+          "polish": "będę",
+          "meaning": {
+            "en": "I will be"
+          }
+        },
+        {
+          "polish": "będziesz",
+          "meaning": {
+            "en": "you will be"
+          }
+        },
+        {
+          "polish": "będziemy",
+          "meaning": {
+            "en": "we will be"
+          }
+        },
+        {
+          "polish": "będziecie",
+          "meaning": {
+            "en": "you will be (several)"
+          }
+        },
+        {
+          "polish": "będą",
+          "meaning": {
+            "en": "they will be"
+          }
+        },
+        {
+          "polish": "pojutrze",
+          "meaning": {
+            "en": "the day after tomorrow"
+          }
+        }
+      ],
+      "items": [
+        "bede",
+        "bedziesz",
+        "bedziemy",
+        "bedziecie",
+        "beda",
+        "pojutrze"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-c1-e15",
+      "text": "czy będziesz jutro w biurze?",
+      "meaning": {
+        "en": "will you be at the office tomorrow?"
+      },
+      "distractors": [
+        "czy będziecie jutro w biurze?",
+        "czy jesteś dzisiaj w biurze?"
+      ],
+      "items": [
+        "czy",
+        "bedziesz",
+        "jutro",
+        "w-biurze"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-c1-e16",
+      "lines": [
+        "Jutro Ewa będzie w biurze.",
+        "Pojutrze Ewa i Adam będą w Krakowie.",
+        "W weekend będą w górach."
+      ],
+      "meaning": {
+        "en": "Ewa's plans."
+      },
+      "statements": [
+        {
+          "text": "Jutro Ewa będzie w domu.",
+          "meaning": {
+            "en": "Tomorrow Ewa will be at home."
+          },
+          "true": false
+        },
+        {
+          "text": "Pojutrze będą w Krakowie.",
+          "meaning": {
+            "en": "The day after tomorrow they will be in Kraków."
+          },
+          "true": true
+        },
+        {
+          "text": "W weekend będą w górach.",
+          "meaning": {
+            "en": "At the weekend they will be in the mountains."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "jutro",
+        "ewa",
+        "bedzie",
+        "w-biurze",
+        "pojutrze",
+        "adam",
+        "beda",
+        "w-krakowie",
+        "w-weekend",
+        "w-gorach"
+      ]
+    }
+  ]
+}

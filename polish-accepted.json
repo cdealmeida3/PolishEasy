@@ -1,6 +1,10 @@
 {
   "accepted": [
     {
+      "problem": "grammar: W_MIESIACU_LIPCU: Miesiąc styczeń – czas do życzeń",
+      "reason": "A proverb, used as the title of chapter 16's section B. The rule wants \"styczeń\" alone instead of \"miesiąc styczeń\", but the proverb is fixed in that form, and it rhymes."
+    },
+    {
       "problem": "grammar: PODMIOT_ORZECZENIE: to Adam, jest z Polski",
       "reason": "False alarm. The rule reads the comma as standing between a subject and its verb, but \"to Adam\" is a whole clause (\"this is Adam\") and \"jest z Polski\" is a second one with the pronoun left out, so the comma joins two clauses. The independent review had no finding on the sentence."
     },

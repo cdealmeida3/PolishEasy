@@ -1,0 +1,422 @@
+{
+  "id": "kpk1-l16-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Dzieci najmilsze, gdy śpią",
+    "meaning": {
+      "en": "Children are sweetest when asleep"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-c3-t01",
+      "before": "kpk1-l16-c3-e01",
+      "title": {
+        "en": "Za tydzień, w przyszłym roku"
+      },
+      "body": {
+        "en": "*Za* counts forward from today: *za tydzień* (in a week), *za miesiąc*, *za rok*, *za dwa dni*. *W przyszłym tygodniu* is next week, *w przyszłym roku* next year. A day of the week: *w przyszły poniedziałek*, but *w przyszłą sobotę* and *w przyszłą środę*, as their names are feminine."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c3-e01",
+      "prompt": "za tydzień",
+      "options": [
+        {
+          "en": "in a week, a week from now"
+        },
+        {
+          "en": "a week ago"
+        },
+        {
+          "en": "every week"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "za-tydzien"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c3-e02",
+      "prompt": "za miesiąc",
+      "options": [
+        {
+          "en": "in a week"
+        },
+        {
+          "en": "in a month"
+        },
+        {
+          "en": "in a year"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "za-miesiac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-c3-e03",
+      "text": "za miesiąc będą wakacje",
+      "meaning": {
+        "en": "in a month it will be the summer holidays"
+      },
+      "distractors": [
+        "za tydzień będą wakacje",
+        "za miesiąc będą święta"
+      ],
+      "items": [
+        "za-miesiac",
+        "beda",
+        "wakacje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c3-e04",
+      "prompt": "za rok",
+      "options": [
+        {
+          "en": "a year ago"
+        },
+        {
+          "en": "next week"
+        },
+        {
+          "en": "in a year"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "za-rok"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c3-e05",
+      "prompt": "za dwa dni",
+      "options": [
+        {
+          "en": "in two days"
+        },
+        {
+          "en": "two days ago"
+        },
+        {
+          "en": "in two weeks"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "za-dwa-dni"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c3-e06",
+      "prompt": "w przyszłym tygodniu",
+      "options": [
+        {
+          "en": "last week"
+        },
+        {
+          "en": "next week"
+        },
+        {
+          "en": "next year"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-przyszlym-tygodniu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-c3-e07",
+      "prompt": {
+        "en": "next week I will be in Warsaw"
+      },
+      "acceptedAnswers": [
+        "w przyszłym tygodniu będę w Warszawie"
+      ],
+      "distractors": [
+        "roku",
+        "będą"
+      ],
+      "items": [
+        "w-przyszlym-tygodniu",
+        "bede",
+        "w-warszawie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c3-e08",
+      "prompt": "w przyszłym roku",
+      "options": [
+        {
+          "en": "last year"
+        },
+        {
+          "en": "next month"
+        },
+        {
+          "en": "next year"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-przyszlym-roku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c3-e09",
+      "prompt": "w przyszły poniedziałek",
+      "options": [
+        {
+          "en": "next Monday"
+        },
+        {
+          "en": "next Saturday"
+        },
+        {
+          "en": "every Monday"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-przyszly-poniedzialek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c3-e10",
+      "prompt": "w przyszłą sobotę",
+      "options": [
+        {
+          "en": "next Monday"
+        },
+        {
+          "en": "next Saturday"
+        },
+        {
+          "en": "last Saturday"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-przyszla-sobote"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-c3-e11",
+      "text": "Test będzie w ___ poniedziałek, a impreza w ___ sobotę.",
+      "meaning": {
+        "en": "The test will be next Monday, and the party next Saturday."
+      },
+      "gaps": [
+        [
+          "przyszły"
+        ],
+        [
+          "przyszłą"
+        ]
+      ],
+      "distractors": [
+        "przyszłym",
+        "przyszła"
+      ],
+      "items": [
+        "test",
+        "bedzie",
+        "w-przyszly-poniedzialek",
+        "a",
+        "impreza",
+        "w-przyszla-sobote"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-c3-e12",
+      "acceptedAnswers": [
+        "za tydzień"
+      ],
+      "meaning": {
+        "en": "in a week"
+      },
+      "items": [
+        "za-tydzien"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-c3-e13",
+      "prompt": {
+        "en": "next year"
+      },
+      "acceptedAnswers": [
+        "w przyszłym roku"
+      ],
+      "items": [
+        "w-przyszlym-roku"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-c3-e14",
+      "pairs": [
+        {
+          "polish": "za tydzień",
+          "meaning": {
+            "en": "in a week"
+          }
+        },
+        {
+          "polish": "za miesiąc",
+          "meaning": {
+            "en": "in a month"
+          }
+        },
+        {
+          "polish": "za rok",
+          "meaning": {
+            "en": "in a year"
+          }
+        },
+        {
+          "polish": "w przyszłym tygodniu",
+          "meaning": {
+            "en": "next week"
+          }
+        },
+        {
+          "polish": "w przyszłą sobotę",
+          "meaning": {
+            "en": "next Saturday"
+          }
+        },
+        {
+          "polish": "pojutrze",
+          "meaning": {
+            "en": "the day after tomorrow"
+          }
+        }
+      ],
+      "items": [
+        "za-tydzien",
+        "za-miesiac",
+        "za-rok",
+        "w-przyszlym-tygodniu",
+        "w-przyszla-sobote",
+        "pojutrze"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-c3-e15",
+      "text": "za dwa dni będę w Krakowie",
+      "meaning": {
+        "en": "in two days I'll be in Kraków"
+      },
+      "distractors": [
+        "za dwa tygodnie będę w Krakowie",
+        "za dwa dni będziesz w Krakowie"
+      ],
+      "items": [
+        "za-dwa-dni",
+        "bede",
+        "w-krakowie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-c3-e16",
+      "lines": [
+        "Dzisiaj jest poniedziałek.",
+        "Za dwa dni Adam będzie w Warszawie.",
+        "W przyszłą sobotę będzie impreza, a za miesiąc wakacje."
+      ],
+      "meaning": {
+        "en": "Adam's calendar."
+      },
+      "statements": [
+        {
+          "text": "Za dwa dni Adam będzie w Warszawie.",
+          "meaning": {
+            "en": "In two days Adam will be in Warsaw."
+          },
+          "true": true
+        },
+        {
+          "text": "Impreza będzie w przyszły poniedziałek.",
+          "meaning": {
+            "en": "The party will be next Monday."
+          },
+          "true": false
+        },
+        {
+          "text": "Za miesiąc będą wakacje.",
+          "meaning": {
+            "en": "In a month it will be the holidays."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "za-dwa-dni",
+        "adam",
+        "bedzie",
+        "w-warszawie",
+        "w-przyszla-sobote",
+        "impreza",
+        "za-miesiac",
+        "wakacje"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-c3-e17",
+      "prompt": {
+        "en": "in a month"
+      },
+      "acceptedAnswers": [
+        "za miesiąc"
+      ],
+      "items": [
+        "za-miesiac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-c3-e18",
+      "prompt": {
+        "en": "in a year I will be in Warsaw"
+      },
+      "acceptedAnswers": [
+        "za rok będę w Warszawie"
+      ],
+      "distractors": [
+        "tydzień",
+        "będą"
+      ],
+      "items": [
+        "za-rok",
+        "bede",
+        "w-warszawie"
+      ]
+    }
+  ]
+}

@@ -9152,6 +9152,532 @@
         6,
         6
       ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-177-1",
+      "track": 177,
+      "question": "Czyjej muzyki ktoś słucha?",
+      "meaning": {
+        "en": "Whose music is someone listening to?"
+      },
+      "options": [
+        "Vivaldiego.",
+        "Chopina.",
+        "Mozarta."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-177-2",
+      "track": 177,
+      "statement": "Teraz jest zima.",
+      "meaning": {
+        "en": "It is winter now."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-177-3",
+      "track": 177,
+      "statement": "Jedna osoba lubi lato, a druga jesień.",
+      "meaning": {
+        "en": "One person likes summer, and the other autumn."
+      },
+      "answer": true,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-177-4",
+      "track": 177,
+      "statement": "Złota polska jesień jeszcze trwa.",
+      "meaning": {
+        "en": "The golden Polish autumn is still going on."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l16-177-5",
+      "track": 177,
+      "question": "Ile miesięcy jest do wiosny?",
+      "meaning": {
+        "en": "How many months is it until spring? (a number)"
+      },
+      "acceptedAnswers": [
+        "2",
+        "dwa"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-178-1",
+      "track": 178,
+      "statement": "Plan na weekend zależy od pogody.",
+      "meaning": {
+        "en": "The weekend plan depends on the weather."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-178-2",
+      "track": 178,
+      "question": "Co oni muszą sprawdzić?",
+      "meaning": {
+        "en": "What must they check?"
+      },
+      "options": [
+        "Prognozę pogody.",
+        "Rozkład jazdy.",
+        "Pocztę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-178-3",
+      "track": 178,
+      "statement": "Wszyscy sprawdzają prognozę w internecie.",
+      "meaning": {
+        "en": "They all check the forecast on the internet."
+      },
+      "answer": false,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-178-4",
+      "track": 178,
+      "question": "Kto dobrze organizuje pracę?",
+      "meaning": {
+        "en": "Who organises the work well?"
+      },
+      "options": [
+        "Uwe.",
+        "Javier.",
+        "Angela."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-179-1",
+      "track": 179,
+      "statement": "Pierwsza prognoza: będzie zimno, ale będzie świecić słońce.",
+      "meaning": {
+        "en": "The first forecast: it will be cold, but the sun will shine."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l16-179-2",
+      "track": 179,
+      "question": "Ile stopni poniżej zera będzie?",
+      "meaning": {
+        "en": "How many degrees below zero will it be? (a number)"
+      },
+      "acceptedAnswers": [
+        "10",
+        "dziesięć"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-179-3",
+      "track": 179,
+      "question": "Dokąd mogą pojechać?",
+      "meaning": {
+        "en": "Where can they go?"
+      },
+      "options": [
+        "Do Zakopanego.",
+        "Do Krakowa.",
+        "Do Gdańska."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-179-4",
+      "track": 179,
+      "statement": "W gazecie piszą, że będzie dużo słońca.",
+      "meaning": {
+        "en": "The newspaper says there will be a lot of sun."
+      },
+      "answer": false,
+      "lines": [
+        6,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-179-5",
+      "track": 179,
+      "question": "Co będzie rano?",
+      "meaning": {
+        "en": "What will there be in the morning?"
+      },
+      "options": [
+        "Mgła.",
+        "Śnieg.",
+        "Słońce."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-179-6",
+      "track": 179,
+      "question": "Co może być wieczorem?",
+      "meaning": {
+        "en": "What may there be in the evening?"
+      },
+      "options": [
+        "Burza.",
+        "Śnieg.",
+        "Mgła."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-179-7",
+      "track": 179,
+      "statement": "W telewizji mówili, że będzie bardzo ciepło.",
+      "meaning": {
+        "en": "On television they said it would be very warm."
+      },
+      "answer": false,
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-179-8",
+      "track": 179,
+      "statement": "Pan Maj codziennie rano sprawdza ciśnienie.",
+      "meaning": {
+        "en": "Pan Maj checks the pressure every morning."
+      },
+      "answer": true,
+      "lines": [
+        14,
+        14
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-179-9",
+      "track": 179,
+      "question": "Dlaczego pan Maj nie chce iść do pracy?",
+      "meaning": {
+        "en": "Why does Pan Maj not want to go to work?"
+      },
+      "options": [
+        "Bo ciśnienie jest za niskie.",
+        "Bo pada deszcz.",
+        "Bo jest zimno."
+      ],
+      "correctOption": 0,
+      "lines": [
+        15,
+        15
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-180-1",
+      "track": 180,
+      "question": "Jaka jest temperatura w Warszawie?",
+      "meaning": {
+        "en": "What is the temperature in Warsaw?"
+      },
+      "options": [
+        "Poniżej zera.",
+        "Powyżej zera.",
+        "Około dwudziestu stopni."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-180-2",
+      "track": 180,
+      "statement": "W Warszawie pada śnieg.",
+      "meaning": {
+        "en": "It is snowing in Warsaw."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-180-3",
+      "track": 180,
+      "statement": "W całej Polsce jest pochmurno i zimno.",
+      "meaning": {
+        "en": "It is cloudy and cold all over Poland."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-180-4",
+      "track": 180,
+      "question": "Gdzie jest silny wiatr?",
+      "meaning": {
+        "en": "Where is there a strong wind?"
+      },
+      "options": [
+        "W Tatrach.",
+        "W Warszawie.",
+        "W Krakowie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-181-1",
+      "track": 181,
+      "question": "Kiedy mogą być mgły?",
+      "meaning": {
+        "en": "When may there be fog?"
+      },
+      "options": [
+        "Rano.",
+        "Wieczorem.",
+        "W nocy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-181-2",
+      "track": 181,
+      "statement": "W Tatrach w nocy jest zimno.",
+      "meaning": {
+        "en": "In the Tatras it is cold at night."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-181-3",
+      "track": 181,
+      "statement": "Ciśnienie jest wysokie.",
+      "meaning": {
+        "en": "The pressure is high."
+      },
+      "answer": false,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-182-1",
+      "track": 182,
+      "question": "Jaki jest pierwszy miesiąc?",
+      "meaning": {
+        "en": "What is the first month?"
+      },
+      "options": [
+        "Styczeń.",
+        "Luty.",
+        "Grudzień."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l16-182-2",
+      "track": 182,
+      "question": "Jaki miesiąc jest po kwietniu?",
+      "meaning": {
+        "en": "Which month comes after April?"
+      },
+      "acceptedAnswers": [
+        "maj"
+      ],
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-182-3",
+      "track": 182,
+      "question": "Jaki miesiąc jest po sierpniu?",
+      "meaning": {
+        "en": "Which month comes after August?"
+      },
+      "options": [
+        "Wrzesień.",
+        "Październik.",
+        "Lipiec."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-183-1",
+      "track": 183,
+      "statement": "Za tydzień w szkole będzie remont.",
+      "meaning": {
+        "en": "In a week there will be renovation work at the school."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-183-2",
+      "track": 183,
+      "question": "Kogo ona musi zapytać?",
+      "meaning": {
+        "en": "Whom must she ask?"
+      },
+      "options": [
+        "Szefa.",
+        "Studentów.",
+        "Mamę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l16-183-3",
+      "track": 183,
+      "question": "Co ona jutro robi ze studentami?",
+      "meaning": {
+        "en": "What is she doing with the students tomorrow?"
+      },
+      "options": [
+        "Andrzejki.",
+        "Wycieczkę.",
+        "Test."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l16-183-4",
+      "track": 183,
+      "statement": "Koleżanka na pewno przyjdzie.",
+      "meaning": {
+        "en": "Her friend will definitely come."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
     }
   ]
 }

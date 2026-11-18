@@ -1,0 +1,432 @@
+{
+  "id": "kpk1-l16-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Parasol noś i przy pogodzie",
+    "meaning": {
+      "en": "Take an umbrella even when it is fine"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-a5-t01",
+      "before": "kpk1-l16-a5-e01",
+      "title": {
+        "en": "Prognoza pogody"
+      },
+      "body": {
+        "en": "Before the weekend you check *prognozę pogody* (the weather forecast): *w internecie*, *w radiu*, *w telewizji* or in a newspaper, *w gazecie*. *Mróz* is frost, below zero, and *pada grad* is it's hailing. On days of *niskie ciśnienie* (low pressure) some people get headaches."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a5-e01",
+      "prompt": "mróz",
+      "options": [
+        {
+          "en": "frost (below zero)"
+        },
+        {
+          "en": "fog"
+        },
+        {
+          "en": "a storm"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mroz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a5-e02",
+      "prompt": "pada grad",
+      "options": [
+        {
+          "en": "it's snowing"
+        },
+        {
+          "en": "it's hailing"
+        },
+        {
+          "en": "it's windy"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pada-grad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a5-e03",
+      "prompt": "prognoza pogody",
+      "options": [
+        {
+          "en": "the temperature"
+        },
+        {
+          "en": "a newspaper"
+        },
+        {
+          "en": "the weather forecast (sprawdzić prognozę pogody: to check the forecast)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "prognoza-pogody"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a5-e04",
+      "text": "sprawdzam prognozę pogody",
+      "meaning": {
+        "en": "I'm checking the weather forecast"
+      },
+      "distractors": [
+        "sprawdzam temperaturę",
+        "sprawdzam pogodę w radiu"
+      ],
+      "items": [
+        "sprawdzam",
+        "prognoza-pogody"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a5-e05",
+      "prompt": "temperatura",
+      "options": [
+        {
+          "en": "the temperature"
+        },
+        {
+          "en": "the weather"
+        },
+        {
+          "en": "the pressure"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "temperatura"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a5-e06",
+      "prompt": "w internecie",
+      "options": [
+        {
+          "en": "on the radio"
+        },
+        {
+          "en": "on the internet"
+        },
+        {
+          "en": "on TV"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-internecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a5-e07",
+      "prompt": "w radiu",
+      "options": [
+        {
+          "en": "on TV"
+        },
+        {
+          "en": "in a newspaper"
+        },
+        {
+          "en": "on the radio"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-radiu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a5-e08",
+      "prompt": "w telewizji",
+      "options": [
+        {
+          "en": "on TV"
+        },
+        {
+          "en": "on the internet"
+        },
+        {
+          "en": "on the radio"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-telewizji"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-a5-e09",
+      "prompt": {
+        "en": "I check the forecast on the internet"
+      },
+      "acceptedAnswers": [
+        "sprawdzam prognozę pogody w internecie"
+      ],
+      "distractors": [
+        "radiu",
+        "telewizji"
+      ],
+      "items": [
+        "sprawdzam",
+        "prognoza-pogody",
+        "w-internecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a5-e10",
+      "prompt": "niskie ciśnienie",
+      "options": [
+        {
+          "en": "a high temperature"
+        },
+        {
+          "en": "low pressure (of the air)"
+        },
+        {
+          "en": "cold weather"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "niskie-cisnienie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-a5-e11",
+      "text": "Sprawdzam prognozę pogody w ___, a Ewa w ___.",
+      "meaning": {
+        "en": "I check the weather forecast on the radio, and Ewa on TV."
+      },
+      "gaps": [
+        [
+          "radiu"
+        ],
+        [
+          "telewizji"
+        ]
+      ],
+      "distractors": [
+        "internet",
+        "gazeta"
+      ],
+      "items": [
+        "sprawdzam",
+        "prognoza-pogody",
+        "w-radiu",
+        "a",
+        "ewa",
+        "w-telewizji"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-a5-e12",
+      "acceptedAnswers": [
+        "pada grad"
+      ],
+      "meaning": {
+        "en": "it's hailing"
+      },
+      "items": [
+        "pada-grad"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a5-e13",
+      "prompt": {
+        "en": "the weather forecast"
+      },
+      "acceptedAnswers": [
+        "prognoza pogody"
+      ],
+      "items": [
+        "prognoza-pogody"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a5-e14",
+      "prompt": {
+        "en": "what's the weather like?"
+      },
+      "acceptedAnswers": [
+        "jaka jest pogoda?"
+      ],
+      "items": [
+        "jaka-jest-pogoda"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-a5-e15",
+      "prompt": {
+        "en": "low pressure and fog"
+      },
+      "acceptedAnswers": [
+        "niskie ciśnienie i mgła"
+      ],
+      "distractors": [
+        "wysokie",
+        "deszcz"
+      ],
+      "items": [
+        "niskie-cisnienie",
+        "i",
+        "mgla"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-a5-e16",
+      "pairs": [
+        {
+          "polish": "mróz",
+          "meaning": {
+            "en": "frost"
+          }
+        },
+        {
+          "polish": "pada grad",
+          "meaning": {
+            "en": "it's hailing"
+          }
+        },
+        {
+          "polish": "temperatura",
+          "meaning": {
+            "en": "the temperature"
+          }
+        },
+        {
+          "polish": "w radiu",
+          "meaning": {
+            "en": "on the radio"
+          }
+        },
+        {
+          "polish": "w telewizji",
+          "meaning": {
+            "en": "on TV"
+          }
+        },
+        {
+          "polish": "w internecie",
+          "meaning": {
+            "en": "on the internet"
+          }
+        }
+      ],
+      "items": [
+        "mroz",
+        "pada-grad",
+        "temperatura",
+        "w-radiu",
+        "w-telewizji",
+        "w-internecie"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l16-a5-e17",
+      "lines": [
+        "Co robimy w weekend?",
+        "To zależy od pogody.",
+        "A jaka będzie pogoda?",
+        "Nie wiem. Sprawdzam prognozę pogody."
+      ],
+      "meaning": {
+        "en": "A plan for the weekend."
+      },
+      "items": [
+        "co",
+        "robic-robimy",
+        "w-weekend",
+        "to",
+        "zalezy",
+        "od-godz",
+        "pogoda",
+        "a",
+        "jaka",
+        "bedzie",
+        "nie-wiem",
+        "sprawdzam",
+        "prognoza-pogody"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-a5-e18",
+      "lines": [
+        "W radiu mówią, że będzie mróz.",
+        "W telewizji mówią, że będzie pochmurno i niskie ciśnienie.",
+        "W internecie piszą, że w górach pada grad."
+      ],
+      "meaning": {
+        "en": "Three forecasts."
+      },
+      "statements": [
+        {
+          "text": "W radiu mówią, że będzie mróz.",
+          "meaning": {
+            "en": "On the radio they say there will be frost."
+          },
+          "true": true
+        },
+        {
+          "text": "W telewizji mówią, że będzie słońce.",
+          "meaning": {
+            "en": "On TV they say it will be sunny."
+          },
+          "true": false
+        },
+        {
+          "text": "W internecie piszą o gradzie.",
+          "meaning": {
+            "en": "On the internet they write about hail."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "w-radiu",
+        "mroz",
+        "w-telewizji",
+        "pochmurno",
+        "niskie-cisnienie",
+        "w-internecie",
+        "w-gorach",
+        "pada-grad"
+      ]
+    }
+  ]
+}
