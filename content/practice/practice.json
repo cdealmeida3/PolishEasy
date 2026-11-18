@@ -1518,5 +1518,31 @@
     {"item": "wieczorem", "hours": [19, 20, 21, 22]},
     {"item": "o-polnocy", "hours": [0], "onTheHour": true},
     {"item": "w-nocy", "hours": [1, 2, 3, 4]}
-  ]
+  ],
+  "clock": {
+    "hours": ["pierwsza", "druga", "trzecia", "czwarta", "piata", "szosta", "siodma", "osma", "dziewiata", "dziesiata", "jedenasta", "dwunasta"],
+    "past": "po-godz",
+    "to": "za-godz",
+    "half": "wpol-do",
+    "quarter": "kwadrans"
+  },
+  "week": {
+    "days": ["poniedzialek", "wtorek", "sroda", "czwartek", "piatek", "sobota", "niedziela"],
+    "plans": [
+      {"text": "W poniedziałek o ósmej: lekcja.", "meaning": {"en": "Monday at eight: a lesson."}, "day": "poniedzialek", "time": "8:00", "items": ["poniedzialek", "o-godz", "osma", "lekcja"]},
+      {"text": "We wtorek o dziesiątej: spotkanie.", "meaning": {"en": "Tuesday at ten: a meeting."}, "day": "wtorek", "time": "10:00", "items": ["wtorek", "o-godz", "dziesiata", "spotkanie"]},
+      {"text": "W środę o dziewiętnastej: teatr.", "meaning": {"en": "Wednesday at seven in the evening: the theatre."}, "day": "sroda", "time": "19:00", "items": ["sroda", "o-godz", "dziewietnasta", "teatr"]},
+      {"text": "W czwartek o wpół do dziewiątej: wizyta u dentysty.", "meaning": {"en": "Thursday at half past eight: a visit to the dentist."}, "day": "czwartek", "time": "8:30", "items": ["czwartek", "o-godz", "wpol-do", "dziewiata", "wizyta", "u-dentysty"]},
+      {"text": "W piątek o dwudziestej: impreza.", "meaning": {"en": "Friday at eight in the evening: a party."}, "day": "piatek", "time": "20:00", "items": ["piatek", "o-godz", "dwudziesta", "impreza"]},
+      {"text": "W sobotę o osiemnastej: randka.", "meaning": {"en": "Saturday at six in the evening: a date."}, "day": "sobota", "time": "18:00", "items": ["sobota", "o-godz", "osiemnasta", "randka"]},
+      {"text": "W niedzielę o czternastej: obiad u babci.", "meaning": {"en": "Sunday at two in the afternoon: lunch at Grandma's."}, "day": "niedziela", "time": "14:00", "items": ["niedziela", "o-godz", "czternasta", "obiad", "u-babci"]},
+      {"text": "W poniedziałek o siedemnastej: zakupy.", "meaning": {"en": "Monday at five in the afternoon: shopping."}, "day": "poniedzialek", "time": "17:00", "items": ["poniedzialek", "o-godz", "siedemnasta", "zakupy"]},
+      {"text": "We wtorek o osiemnastej: kolacja.", "meaning": {"en": "Tuesday at six in the evening: dinner."}, "day": "wtorek", "time": "18:00", "items": ["wtorek", "o-godz", "osiemnasta", "kolacja"]},
+      {"text": "W środę za kwadrans dziewiąta: lekcja.", "meaning": {"en": "Wednesday at a quarter to nine: a lesson."}, "day": "sroda", "time": "8:45", "items": ["sroda", "za-godz", "kwadrans", "dziewiata", "lekcja"]},
+      {"text": "W czwartek o dwudziestej: film.", "meaning": {"en": "Thursday at eight in the evening: a film."}, "day": "czwartek", "time": "20:00", "items": ["czwartek", "o-godz", "dwudziesta", "film"]},
+      {"text": "W piątek kwadrans po dziewiątej: spotkanie.", "meaning": {"en": "Friday at a quarter past nine: a meeting."}, "day": "piatek", "time": "9:15", "items": ["piatek", "kwadrans", "po-godz", "dziewiata", "spotkanie"]},
+      {"text": "W sobotę o jedenastej: śniadanie.", "meaning": {"en": "Saturday at eleven: breakfast."}, "day": "sobota", "time": "11:00", "items": ["sobota", "o-godz", "jedenasta", "sniadanie"]},
+      {"text": "W niedzielę o dziewiętnastej: spektakl.", "meaning": {"en": "Sunday at seven in the evening: a show."}, "day": "niedziela", "time": "19:00", "items": ["niedziela", "o-godz", "dziewietnasta", "spektakl"]}
+    ]
+  }
 }

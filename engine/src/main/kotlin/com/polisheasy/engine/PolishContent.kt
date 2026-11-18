@@ -121,6 +121,13 @@ fun polishContent(files: ContentFiles): PolishContent {
             sentence(negation.yes, negation.yesMeaning, use(PolishRole.PROMPT))
             sentence(negation.no, negation.noMeaning, use(PolishRole.ANSWER))
         }
+        // Week planner's plans, and every time Tell the time says, with the time in digits as what it means.
+        content.practice?.week?.plans.orEmpty().forEachIndexed { index, plan ->
+            sentence(plan.text, plan.meaning, PolishUse(file, "week/plans/${index + 1}", PolishRole.PROMPT))
+        }
+        content.course().allClockTimes().forEach { time ->
+            sentence(time.polish, mapOf(language to "${time.hour}:${time.minute.toString().padStart(2, '0')}"), PolishUse(file, "clock", PolishRole.ANSWER))
+        }
     }
 
     content.dailySets.forEach { (file, dailySet) ->

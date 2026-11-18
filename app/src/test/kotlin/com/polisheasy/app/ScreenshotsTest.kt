@@ -81,6 +81,9 @@ import com.polisheasy.engine.MarketRound
 import com.polisheasy.engine.AisleRound
 import com.polisheasy.engine.ClockRound
 import com.polisheasy.engine.FlipRound
+import com.polisheasy.engine.TimeRound
+import com.polisheasy.engine.PlannerRound
+import com.polisheasy.engine.SaidTime
 import com.polisheasy.engine.TreeRound
 import com.polisheasy.app.ui.components.TREE_SPOT_TAG
 import com.polisheasy.engine.TableRound
@@ -2572,6 +2575,91 @@ class ScreenshotsTest {
         tap(R.string.action_continue)
         screen.mainClock.advanceTimeBy(60_000)
         shot("277-times-result")
+    }
+
+    @Test
+    fun `Tell the time and Week planner over the real course in the light theme`() = chapter12Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Tell the time and Week planner over the real course in the dark theme`() = chapter12Games("dark")
+
+    @Test
+    fun `Tell the time and Week planner over the real course at the largest font size`() = atTheLargestFontSize { chapter12Games("large") }
+
+    /**
+     * Chapter 12's Games: Tell the time's setup, a clock face to tell, a wrong answer, then a time
+     * to find among four faces, a wrong face, and the result; then Week planner's setup, a plan
+     * heard, a plan read with its day tapped, a wrong time, a diary half filled, and the result.
+     */
+    private fun chapter12Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun time() = (viewModel?.screen as Screen.Round).round as TimeRound
+
+        fun planner() = (viewModel?.screen as Screen.Round).round as PlannerRound
+
+        fun digits(said: SaidTime) = app.getString(R.string.times_clock, said.hour, said.minute)
+
+        fun tapFace(said: SaidTime) = screen.onNode(hasContentDescription(digits(said)) and hasClickAction()).performScrollTo().performClick()
+
+        fun tapDay(index: Int) = screen.onNode(hasText(planner().days[index]) and hasClickAction()).performScrollTo().performClick()
+
+        fun tapTime(time: String) = screen.onNode(hasText(time) and hasClickAction()).performScrollTo().performClick()
+
+        openRealPractice()
+        openGame(R.string.game_tell_the_time)
+        shot("282-time-setup")
+        tap(R.string.setup_play)
+        shot("283-time-tell")
+        val told = checkNotNull(time().question)
+        screen.onNode(hasText(told.options.first { it != told.time }.polish) and hasClickAction()).performScrollTo().performClick()
+        shot("284-time-tell-wrong")
+        tap(R.string.action_continue)
+        leaveRound()
+
+        openGame(R.string.game_tell_the_time)
+        tap(R.string.option_find_clock)
+        tap(R.string.setup_play)
+        shot("285-time-find")
+        val found = checkNotNull(time().question)
+        tapFace(found.options.first { it != found.time })
+        shot("286-time-find-wrong")
+        tap(R.string.action_continue)
+        while (viewModel?.screen is Screen.Round) {
+            tapFace(checkNotNull(time().question).time)
+            tap(R.string.action_continue)
+        }
+        shot("287-time-result")
+        tap(R.string.result_done)
+
+        openGame(R.string.game_week_planner)
+        shot("288-planner-setup")
+        tap(R.string.setup_play)
+        shot("289-planner-heard")
+        leaveRound()
+
+        openGame(R.string.game_week_planner)
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        val first = checkNotNull(planner().question)
+        tapDay(first.day)
+        shot("290-planner-day")
+        tapTime(first.times.first { it != first.time })
+        shot("291-planner-wrong")
+        tap(R.string.action_continue)
+        repeat(2) {
+            val plan = checkNotNull(planner().question)
+            tapDay(plan.day)
+            tapTime(plan.time)
+            tap(R.string.action_continue)
+        }
+        shot("292-planner-diary")
+        val last = checkNotNull(planner().question)
+        tapDay(last.day)
+        tapTime(last.time)
+        tap(R.string.action_continue)
+        shot("293-planner-result")
     }
 
     private fun registerSort(theme: String) {

@@ -64,6 +64,10 @@ data class Course(
     val family: Family? = null,
     /** The times of day of Times of day, each with the hours it covers, in the content's order. */
     val timesOfDay: List<TimeOfDay> = emptyList(),
+    /** The hours and words of Tell the time, or null if the content has none. */
+    val clock: ClockWords? = null,
+    /** The diary of Week planner, or null if the content has none. */
+    val week: Week? = null,
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

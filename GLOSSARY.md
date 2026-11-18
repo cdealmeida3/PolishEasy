@@ -181,6 +181,10 @@ _Avoid_: Supermarket game, aisle quiz
 The Game of writing each guest's dish on a waiter's pad as a table orders in Polish: *Dla mnie żurek. A dla mnie to samo.* Chapter 10's Game.
 _Avoid_: Restaurant game, waiter quiz
 
+**Tell the time**:
+The Game of saying a time on a clock face as the book says it, *pięć po ósmej*, *wpół do dziewiątej*, *za kwadrans dziewiąta*, or finding the face for a time said. Chapter 12's Game.
+_Avoid_: Clock game, Clock quiz
+
 **Times of day**:
 The Game of saying, against the clock, when in the day a time on the clock is: 7:30 is *rano*, 21:00 *wieczorem*, 3:00 *w nocy*. Chapter 11's second Game.
 _Avoid_: Clock quiz, time drill

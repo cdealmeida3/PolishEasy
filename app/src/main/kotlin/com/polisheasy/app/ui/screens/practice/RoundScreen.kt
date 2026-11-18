@@ -37,7 +37,9 @@ import com.polisheasy.engine.PlateRound
 import com.polisheasy.engine.MarketRound
 import com.polisheasy.engine.AisleRound
 import com.polisheasy.engine.ClockRound
+import com.polisheasy.engine.PlannerRound
 import com.polisheasy.engine.FlipRound
+import com.polisheasy.engine.TimeRound
 import com.polisheasy.engine.TreeRound
 import com.polisheasy.engine.TableRound
 import com.polisheasy.engine.TillRound
@@ -94,6 +96,8 @@ internal fun RoundScreen(
         is FlipRound -> NegationFlipStep(round, say, onMove)
         is TreeRound -> FamilyTreeStep(round, sound, say, onMove)
         is ClockRound -> TimesOfDayStep(round, say, onMove)
+        is TimeRound -> TellTheTimeStep(round, sound, say, onMove)
+        is PlannerRound -> WeekPlannerStep(round, say, onMove)
         else -> error("No screen for a Round of ${round.game}")
     }
 }

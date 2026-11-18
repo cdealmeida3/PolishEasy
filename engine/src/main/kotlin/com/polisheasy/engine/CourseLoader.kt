@@ -69,7 +69,31 @@ internal data class PracticeFile(
     val family: Map<String, String>? = null,
     /** The times of day of Times of day. */
     val timesOfDay: List<TimeOfDayFile> = emptyList(),
+    /** The hours and words of Tell the time. */
+    val clock: ClockFile? = null,
+    /** The days and plans of Week planner. */
+    val week: WeekFile? = null,
 )
+
+/** The Item ids of Tell the time: the [hours] one to twelve in order, and the words for past, to, half to and a quarter. */
+@Serializable
+internal data class ClockFile(val hours: List<String>, val past: String, val to: String, val half: String, val quarter: String)
+
+/** Week planner's diary: the Item ids of the [days], Monday first, and the [plans]. */
+@Serializable
+internal data class WeekFile(val days: List<String>, val plans: List<PlanFile>)
+
+/** One plan of Week planner: its [text], what it means, its [day]'s Item id, its [time] as 20:00, and the Items it uses. */
+@Serializable
+internal data class PlanFile(val text: String, val meaning: Localized, val day: String, val time: String, val items: List<String>) {
+    /** The hour and minute of [time], or null if it is not a time of day. */
+    fun clock(): Pair<Int, Int>? {
+        val parts = time.split(":").takeIf { it.size == 2 && it[1].length == 2 } ?: return null
+        val hour = parts[0].toIntOrNull()?.takeIf { it in 0..23 } ?: return null
+        val minute = parts[1].toIntOrNull()?.takeIf { it in 0..59 } ?: return null
+        return hour to minute
+    }
+}
 
 /** One time of day of Times of day: its Item id, the hours of the clock it covers, and whether only on the hour. */
 @Serializable
@@ -277,6 +301,14 @@ internal class ReadContent(
                 family["me"]?.let { me -> Family(me, family.mapNotNull { (id, item) -> Relative.of(id)?.let { it to item } }.toMap()) }
             },
             timesOfDay = practice?.timesOfDay.orEmpty().map { TimeOfDay(it.item, it.hours.distinct(), it.onTheHour) }.distinctBy { it.item },
+            clock = practice?.clock?.let { ClockWords(it.hours, it.past, it.to, it.half, it.quarter) },
+            week = practice?.week?.let { week ->
+                Week(
+                    week.days,
+                    week.plans.mapNotNull { plan -> plan.clock()?.let { (hour, minute) -> WeekPlan(plan.text, plan.meaning, plan.day, hour, minute, plan.items.distinct()) } }
+                        .distinctBy { it.text },
+                )
+            },
         )
     }
 
@@ -479,6 +511,8 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         problems += negationProblems(file, practice.negations, course, content.itemsComplete)
         practice.family?.let { family -> problems += familyProblems(file, family, practice, course, content.itemsComplete) }
         problems += timeOfDayProblems(file, practice.timesOfDay, course, content.itemsComplete)
+        practice.clock?.let { clock -> problems += clockProblems(file, clock, course, content.itemsComplete) }
+        practice.week?.let { week -> problems += weekProblems(file, week, course, content.itemsComplete) }
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -650,6 +684,38 @@ private fun negationProblems(file: String, negations: List<NegationFile>, course
         }
     }
     negations.map { it.yes }.repeated().forEach { yes -> problems += ContentProblem(file, null, "The sentence \"$yes\" is listed more than once under negations") }
+    return problems
+}
+
+/** What is wrong with Tell the time: twelve hours, each Item defined, each hour with the form after po as its first form, and no Item twice. */
+private fun clockProblems(file: String, clock: ClockFile, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    if (clock.hours.size != 12) problems += ContentProblem(file, null, "Tell the time lists ${clock.hours.size} hours, not twelve")
+    val all = clock.hours + listOf(clock.past, clock.to, clock.half, clock.quarter)
+    all.distinct().filter { itemsComplete && it !in course.itemsById }.forEach { id -> problems += ContentProblem(file, id, "Tell the time names Item $id, which is not defined") }
+    clock.hours.filter { course.itemsById[it]?.forms?.isEmpty() == true }.forEach { id ->
+        problems += ContentProblem(file, id, "The hour $id has no form to go after po, such as ósmej")
+    }
+    all.repeated().forEach { id -> problems += ContentProblem(file, id, "Tell the time names $id more than once") }
+    return problems
+}
+
+/** What is wrong with Week planner: seven days, every Item defined, each plan on a listed day at a time of day with "what" after a colon, and no plan twice. */
+private fun weekProblems(file: String, week: WeekFile, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    if (week.days.size != 7) problems += ContentProblem(file, null, "Week planner lists ${week.days.size} days, not seven")
+    week.days.filter { itemsComplete && it !in course.itemsById }.forEach { id -> problems += ContentProblem(file, id, "Week planner names the day $id, which is not defined") }
+    week.days.repeated().forEach { id -> problems += ContentProblem(file, id, "Week planner names the day $id more than once") }
+    week.plans.forEach { plan ->
+        if (plan.day !in week.days) problems += ContentProblem(file, plan.day, "The plan \"${plan.text}\" is on ${plan.day}, which is not a day of the week")
+        if (plan.clock() == null) problems += ContentProblem(file, null, "The plan \"${plan.text}\" is at ${plan.time}, which is not a time such as 20:00")
+        if (": " !in plan.text) problems += ContentProblem(file, null, "The plan \"${plan.text}\" has no colon before what is planned")
+        if (plan.items.isEmpty()) problems += ContentProblem(file, null, "The plan \"${plan.text}\" lists no Items")
+        plan.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "The plan \"${plan.text}\" names Item $id, which is not defined")
+        }
+    }
+    week.plans.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The plan \"$text\" is listed more than once") }
     return problems
 }
 

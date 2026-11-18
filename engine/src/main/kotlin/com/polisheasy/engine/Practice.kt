@@ -60,6 +60,10 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     FAMILY_TREE("family-tree", GameGroup.WORDS),
     /** Chapter 11's Game: a time on the clock, and when in the day it is, against the clock: 7:30 is rano, 23:00 wieczorem. */
     TIMES_OF_DAY("times-of-day", GameGroup.WORDS),
+    /** Chapter 12's Game: a time on a clock face said in Polish, or found from it: pięć po ósmej, wpół do dziewiątej. */
+    TELL_THE_TIME("tell-the-time", GameGroup.NUMBERS),
+    /** Chapter 12's Game: a week's plans heard or read, W piątek o dwudziestej: impreza, and put in the diary at their day and time. */
+    WEEK_PLANNER("week-planner", GameGroup.PHRASES),
 }
 
 /** Whether a Game can be played now. */
@@ -265,7 +269,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null
