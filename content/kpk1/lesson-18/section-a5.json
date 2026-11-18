@@ -1,0 +1,424 @@
+{
+  "id": "kpk1-l18-a5",
+  "section": {
+    "letter": "A",
+    "heading": "„Ciasne, ale własne!”",
+    "meaning": {
+      "en": "Small, but my own!"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-a5-t01",
+      "before": "kpk1-l18-a5-e01",
+      "title": {
+        "en": "Stoi, leży, wisi"
+      },
+      "body": {
+        "en": "Polish says how a thing is where it is. What stands up *stoi*: *lodówka stoi w kuchni*. What lies flat *leży*: *dywan leży na podłodze*. What hangs *wisi*: *obraz wisi na ścianie*. For more than one: *stoją*, *leżą*, *wiszą*. *Kwiatek* is a flower in a pot, and *telewizor* a television set."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a5-e01",
+      "prompt": "stoi",
+      "options": [
+        {
+          "en": "it lies"
+        },
+        {
+          "en": "it hangs"
+        },
+        {
+          "en": "it stands, he stands (lampa stoi w rogu: the lamp is in the corner)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "stac-stoi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a5-e02",
+      "prompt": "leży",
+      "options": [
+        {
+          "en": "it lies, he lies (dywan leży na podłodze: the rug is on the floor)"
+        },
+        {
+          "en": "it stands"
+        },
+        {
+          "en": "it sleeps"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lezec-lezy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a5-e03",
+      "prompt": "wisi",
+      "options": [
+        {
+          "en": "it lies"
+        },
+        {
+          "en": "it hangs (obraz wisi na ścianie: the picture is on the wall)"
+        },
+        {
+          "en": "it stands"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wisiec-wisi"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-a5-e04",
+      "text": "obraz wisi na ścianie",
+      "meaning": {
+        "en": "the picture hangs on the wall"
+      },
+      "distractors": [
+        "obraz stoi na podłodze",
+        "lustro wisi na ścianie"
+      ],
+      "items": [
+        "obraz",
+        "wisiec-wisi",
+        "sciana"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a5-e05",
+      "prompt": "stoją",
+      "options": [
+        {
+          "en": "they lie"
+        },
+        {
+          "en": "they sit"
+        },
+        {
+          "en": "they stand (krzesła stoją przy stole: the chairs are at the table)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "stac-stoja"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a5-e06",
+      "text": "Dywan ___ na podłodze.",
+      "meaning": {
+        "en": "The rug is on the floor."
+      },
+      "gaps": [
+        [
+          "leży"
+        ]
+      ],
+      "distractors": [
+        "stoi",
+        "wisi"
+      ],
+      "items": [
+        "dywan",
+        "lezec-lezy",
+        "podloga"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a5-e07",
+      "prompt": "leżą",
+      "options": [
+        {
+          "en": "they lie (książki leżą na biurku: the books are on the desk)"
+        },
+        {
+          "en": "they stand"
+        },
+        {
+          "en": "they hang"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lezec-leza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a5-e08",
+      "prompt": "wiszą",
+      "options": [
+        {
+          "en": "they lie"
+        },
+        {
+          "en": "they hang (kurtki wiszą w szafie: the jackets hang in the wardrobe)"
+        },
+        {
+          "en": "they stand"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wisiec-wisza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a5-e09",
+      "prompt": "telewizor",
+      "options": [
+        {
+          "en": "a radio"
+        },
+        {
+          "en": "a computer"
+        },
+        {
+          "en": "a television set"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "telewizor"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a5-e10",
+      "prompt": "kwiatek",
+      "options": [
+        {
+          "en": "a flower, a pot plant (kwiatki: flowers)"
+        },
+        {
+          "en": "a tree"
+        },
+        {
+          "en": "a bird"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kwiatek"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a5-e11",
+      "text": "Torba i sweter ___ na łóżku, a obrazy ___ na ścianie.",
+      "meaning": {
+        "en": "The bag and the jumper are on the bed, and the pictures hang on the wall."
+      },
+      "gaps": [
+        [
+          "leżą"
+        ],
+        [
+          "wiszą"
+        ]
+      ],
+      "distractors": [
+        "stoją",
+        "leży"
+      ],
+      "items": [
+        "torba",
+        "i",
+        "sweter",
+        "lezec-leza",
+        "lozko",
+        "a",
+        "obraz",
+        "wisiec-wisza",
+        "sciana"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-a5-e12",
+      "prompt": {
+        "en": "the television is in the living room"
+      },
+      "acceptedAnswers": [
+        "telewizor stoi w salonie"
+      ],
+      "distractors": [
+        "leży",
+        "salon"
+      ],
+      "items": [
+        "telewizor",
+        "stac-stoi",
+        "salon"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-a5-e13",
+      "acceptedAnswers": [
+        "lampa stoi przy łóżku"
+      ],
+      "meaning": {
+        "en": "the lamp is by the bed"
+      },
+      "items": [
+        "lampa",
+        "stac-stoi",
+        "przy-loc",
+        "lozko"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-a5-e14",
+      "prompt": {
+        "en": "the television is by the door"
+      },
+      "acceptedAnswers": [
+        "telewizor stoi przy drzwiach"
+      ],
+      "items": [
+        "telewizor",
+        "stac-stoi",
+        "przy-loc",
+        "drzwi"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-a5-e15",
+      "pairs": [
+        {
+          "polish": "stoi",
+          "meaning": {
+            "en": "it stands"
+          }
+        },
+        {
+          "polish": "leży",
+          "meaning": {
+            "en": "it lies"
+          }
+        },
+        {
+          "polish": "wisi",
+          "meaning": {
+            "en": "it hangs"
+          }
+        },
+        {
+          "polish": "stoją",
+          "meaning": {
+            "en": "they stand"
+          }
+        },
+        {
+          "polish": "wiszą",
+          "meaning": {
+            "en": "they hang"
+          }
+        }
+      ],
+      "items": [
+        "stac-stoi",
+        "lezec-lezy",
+        "wisiec-wisi",
+        "stac-stoja",
+        "wisiec-wisza"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a5-e16",
+      "text": "Kwiatki ___ na półce.",
+      "meaning": {
+        "en": "The pot plants are on the shelf."
+      },
+      "gaps": [
+        [
+          "stoją"
+        ]
+      ],
+      "distractors": [
+        "wiszą",
+        "leży"
+      ],
+      "items": [
+        "kwiatek",
+        "stac-stoja",
+        "polka"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-a5-e17",
+      "lines": [
+        "W salonie na podłodze leży dywan.",
+        "Przy ścianie stoi kanapa, a nad nią wisi obraz.",
+        "Telewizor stoi przy drzwiach."
+      ],
+      "meaning": {
+        "en": "The living room."
+      },
+      "statements": [
+        {
+          "text": "Dywan leży na podłodze.",
+          "meaning": {
+            "en": "The rug is on the floor."
+          },
+          "true": true
+        },
+        {
+          "text": "Obraz stoi przy oknie.",
+          "meaning": {
+            "en": "The picture stands by the window."
+          },
+          "true": false
+        },
+        {
+          "text": "Telewizor stoi przy drzwiach.",
+          "meaning": {
+            "en": "The television is by the door."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "salon",
+        "podloga",
+        "lezec-lezy",
+        "dywan",
+        "przy-loc",
+        "sciana",
+        "stac-stoi",
+        "kanapa",
+        "a",
+        "wisiec-wisi",
+        "obraz",
+        "telewizor",
+        "drzwi"
+      ]
+    }
+  ]
+}

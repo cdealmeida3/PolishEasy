@@ -1,0 +1,442 @@
+{
+  "id": "kpk1-l18-p1",
+  "section": {
+    "letter": "P",
+    "heading": "Powtórzenie",
+    "meaning": {
+      "en": "Revision"
+    },
+    "strands": [
+      "K",
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-p1-t01",
+      "before": "kpk1-l18-p1-e01",
+      "title": {
+        "en": "Mieszkanie czy dom?"
+      },
+      "body": {
+        "en": "A family moves into a new flat *w Śródmieściu* (in the city centre district), *na czwartym piętrze*. To pay for it they took out *kredyt* (a loan). The old *gabinet* (a study) is now a child's room. But Mum dreams of *dom na wsi* (a house in the country) with *kominek* (a fireplace), *strych* (an attic) and *piwnica* (a cellar)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p1-e01",
+      "prompt": "dom",
+      "options": [
+        {
+          "en": "a flat"
+        },
+        {
+          "en": "a room"
+        },
+        {
+          "en": "a house, a home (o domu: about a house)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dom"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p1-e02",
+      "prompt": "w Śródmieściu",
+      "options": [
+        {
+          "en": "in Śródmieście (the city centre district)"
+        },
+        {
+          "en": "in the suburbs"
+        },
+        {
+          "en": "in the country"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-srodmiesciu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-p1-e03",
+      "text": "mieszkamy w Śródmieściu",
+      "meaning": {
+        "en": "we live in Śródmieście"
+      },
+      "distractors": [
+        "mieszkamy na wsi",
+        "mieszkam w Śródmieściu"
+      ],
+      "items": [
+        "mieszkac-mieszkamy",
+        "w-srodmiesciu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p1-e04",
+      "prompt": "gabinet",
+      "options": [
+        {
+          "en": "a kitchen"
+        },
+        {
+          "en": "a study (w gabinecie: in the study)"
+        },
+        {
+          "en": "a hall"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gabinet"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p1-e05",
+      "prompt": "na wsi",
+      "options": [
+        {
+          "en": "in town"
+        },
+        {
+          "en": "in the mountains"
+        },
+        {
+          "en": "in the country, in a village (wieś)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-wsi"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-p1-e06",
+      "text": "Marzę o ___ na wsi.",
+      "meaning": {
+        "en": "I dream of a house in the country."
+      },
+      "gaps": [
+        [
+          "domu"
+        ]
+      ],
+      "distractors": [
+        "dom",
+        "domem"
+      ],
+      "items": [
+        "marzyc-marze",
+        "o-about",
+        "dom",
+        "na-wsi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p1-e07",
+      "prompt": "kominek",
+      "options": [
+        {
+          "en": "a fireplace (z kominkiem: with a fireplace)"
+        },
+        {
+          "en": "a balcony"
+        },
+        {
+          "en": "a lamp"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kominek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p1-e08",
+      "prompt": "strych",
+      "options": [
+        {
+          "en": "a cellar"
+        },
+        {
+          "en": "an attic (na strychu: in the attic)"
+        },
+        {
+          "en": "a roof"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "strych"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p1-e09",
+      "prompt": "piwnica",
+      "options": [
+        {
+          "en": "an attic"
+        },
+        {
+          "en": "a garage"
+        },
+        {
+          "en": "a cellar (w piwnicy: in the cellar)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "piwnica"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p1-e10",
+      "prompt": "kredyt",
+      "options": [
+        {
+          "en": "a loan, a mortgage (wziąć kredyt: to take out a loan)"
+        },
+        {
+          "en": "a present"
+        },
+        {
+          "en": "a bill"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kredyt"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-p1-e11",
+      "prompt": {
+        "en": "the old wardrobe is in the cellar"
+      },
+      "acceptedAnswers": [
+        "stara szafa jest w piwnicy"
+      ],
+      "distractors": [
+        "piwnica",
+        "na"
+      ],
+      "items": [
+        "stary",
+        "szafa",
+        "byc-jest",
+        "piwnica"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-p1-e12",
+      "acceptedAnswers": [
+        "dom z kominkiem"
+      ],
+      "meaning": {
+        "en": "a house with a fireplace"
+      },
+      "items": [
+        "dom",
+        "kominek"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-p1-e13",
+      "prompt": {
+        "en": "a long journey"
+      },
+      "acceptedAnswers": [
+        "daleka podróż"
+      ],
+      "items": [
+        "daleki",
+        "podroz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-p1-e14",
+      "acceptedAnswers": [
+        "podróże kształcą"
+      ],
+      "meaning": {
+        "en": "travel broadens the mind"
+      },
+      "items": [
+        "podroz",
+        "ksztalca"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-p1-e15",
+      "text": "Mieszkamy w nowym bloku na ___ piętrze.",
+      "meaning": {
+        "en": "We live in a new block of flats, on the fourth floor."
+      },
+      "gaps": [
+        [
+          "czwartym"
+        ]
+      ],
+      "distractors": [
+        "czwarte",
+        "czwarty"
+      ],
+      "items": [
+        "mieszkac-mieszkamy",
+        "w-nowym-bloku",
+        "na-czwartym-pietrze"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-p1-e16",
+      "pairs": [
+        {
+          "polish": "dom",
+          "meaning": {
+            "en": "a house"
+          }
+        },
+        {
+          "polish": "gabinet",
+          "meaning": {
+            "en": "a study"
+          }
+        },
+        {
+          "polish": "kominek",
+          "meaning": {
+            "en": "a fireplace"
+          }
+        },
+        {
+          "polish": "strych",
+          "meaning": {
+            "en": "an attic"
+          }
+        },
+        {
+          "polish": "piwnica",
+          "meaning": {
+            "en": "a cellar"
+          }
+        },
+        {
+          "polish": "kredyt",
+          "meaning": {
+            "en": "a loan"
+          }
+        }
+      ],
+      "items": [
+        "dom",
+        "gabinet",
+        "kominek",
+        "strych",
+        "piwnica",
+        "kredyt"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-p1-e17",
+      "lines": [
+        "Mieszkamy w Śródmieściu, w nowym bloku.",
+        "Mamy trzy pokoje, a salon jest z widokiem na park.",
+        "A ja marzę o domu na wsi, z kominkiem."
+      ],
+      "meaning": {
+        "en": "Our new flat."
+      },
+      "statements": [
+        {
+          "text": "Mieszkają na wsi.",
+          "meaning": {
+            "en": "They live in the country."
+          },
+          "true": false
+        },
+        {
+          "text": "Salon jest z widokiem na park.",
+          "meaning": {
+            "en": "The living room has a view of the park."
+          },
+          "true": true
+        },
+        {
+          "text": "Ona marzy o domu z kominkiem.",
+          "meaning": {
+            "en": "She dreams of a house with a fireplace."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "mieszkac-mieszkamy",
+        "w-srodmiesciu",
+        "w-nowym-bloku",
+        "miec-mamy",
+        "trzy",
+        "pokoj",
+        "a",
+        "salon",
+        "byc-jest",
+        "z-widokiem-na-park",
+        "a",
+        "ja",
+        "marzyc-marze",
+        "dom",
+        "na-wsi",
+        "kominek"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l18-p1-e18",
+      "lines": [
+        "Gdzie jest mój sweter?",
+        "Chyba w szafie w przedpokoju.",
+        "Nie, tam go nie ma.",
+        "To może w pralce, w łazience?"
+      ],
+      "meaning": {
+        "en": "Where is my jumper?"
+      },
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "moj",
+        "sweter",
+        "chyba",
+        "szafa",
+        "przedpokoj",
+        "nie",
+        "tam",
+        "moze",
+        "pralka",
+        "lazienka"
+      ]
+    }
+  ]
+}

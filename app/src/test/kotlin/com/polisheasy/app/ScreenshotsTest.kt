@@ -1196,6 +1196,47 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 18 of the book over the real course in the light theme`() = chapter18Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 18 of the book over the real course in the dark theme`() = chapter18Tour("dark")
+
+    @Test
+    fun `chapter 18 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter18Tour("large") }
+
+    /**
+     * Chapter 18 over the real course: its Lesson screen at the top and its sections, then stoi, leży
+     * and wisi in section A, the locative table and w or na in section B, and what people dream of
+     * in section C.
+     */
+    private fun chapter18Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l18") }
+        screen.waitForIdle()
+        shot("361-chapter-18")
+        screen.onAllNodes(hasText("Powtórzenie", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("361-chapter-18-sections")
+        listOf(
+            "kpk1-l18-a5" to "362-chapter-18-stands-lies-hangs",
+            "kpk1-l18-b1" to "363-chapter-18-locative",
+            "kpk1-l18-b4" to "364-chapter-18-w-or-na",
+            "kpk1-l18-c1" to "365-chapter-18-dreams",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l18")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test

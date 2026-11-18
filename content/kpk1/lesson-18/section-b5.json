@@ -1,0 +1,463 @@
+{
+  "id": "kpk1-l18-b5",
+  "section": {
+    "letter": "B",
+    "heading": "Gdzie on jest?",
+    "meaning": {
+      "en": "Where is it?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-b5-t01",
+      "before": "kpk1-l18-b5-e01",
+      "title": {
+        "en": "W hotelach, w górach"
+      },
+      "body": {
+        "en": "For more than one, almost every noun takes *-ach* in the locative: *w hotelach*, *w restauracjach*, *w górach*, *na nartach*. A describing word takes *-ych*, or *-ich* after *k* and *g*: *w różnych miejscach* (in different places), *w dużych miastach*, *w Stanach Zjednoczonych*. Some words are always plural: *w spodniach* (in trousers), *na Mazurach* (in Masuria, the lakes in the north-east). Gloves are usually two: *w rękawiczkach* (in gloves)."
+      },
+      "table": {
+        "title": {
+          "en": "Gdzie? Liczba mnoga"
+        },
+        "columns": [
+          {
+            "header": "kto? co?"
+          },
+          {
+            "header": "gdzie?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "hotele",
+              "w hotelach"
+            ]
+          },
+          {
+            "cells": [
+              "restauracje",
+              "w restauracjach"
+            ]
+          },
+          {
+            "cells": [
+              "góry",
+              "w górach"
+            ]
+          },
+          {
+            "cells": [
+              "spodnie",
+              "w spodniach"
+            ]
+          },
+          {
+            "cells": [
+              "różne miejsca",
+              "w różnych miejscach"
+            ]
+          },
+          {
+            "cells": [
+              "duże miasta",
+              "w dużych miastach"
+            ]
+          },
+          {
+            "cells": [
+              "Stany Zjednoczone",
+              "w Stanach Zjednoczonych"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b5-e01",
+      "prompt": "w różnych miejscach",
+      "options": [
+        {
+          "en": "in the same place"
+        },
+        {
+          "en": "in many towns"
+        },
+        {
+          "en": "in different places"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-roznych-miejscach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b5-e02",
+      "prompt": "w hotelach",
+      "options": [
+        {
+          "en": "in hotels"
+        },
+        {
+          "en": "in a hotel"
+        },
+        {
+          "en": "in houses"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-hotelach"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-b5-e03",
+      "text": "pracowałem w hotelach",
+      "meaning": {
+        "en": "I worked in hotels"
+      },
+      "distractors": [
+        "pracowałem w restauracjach",
+        "pracowałem w hotelu"
+      ],
+      "items": [
+        "pracowac-pracowalem",
+        "w-hotelach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b5-e04",
+      "prompt": "w restauracjach",
+      "options": [
+        {
+          "en": "in shops"
+        },
+        {
+          "en": "in restaurants"
+        },
+        {
+          "en": "in a restaurant"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-restauracjach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b5-e05",
+      "prompt": "na Mazurach",
+      "options": [
+        {
+          "en": "in the mountains"
+        },
+        {
+          "en": "at the seaside"
+        },
+        {
+          "en": "in Masuria (the lake district in the north-east)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-mazurach"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b5-e06",
+      "text": "Pracowałem w ___ miejscach.",
+      "meaning": {
+        "en": "I worked in different places."
+      },
+      "gaps": [
+        [
+          "różnych"
+        ]
+      ],
+      "distractors": [
+        "różnym",
+        "różne"
+      ],
+      "items": [
+        "pracowac-pracowalem",
+        "w-roznych-miejscach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b5-e07",
+      "prompt": "w Stanach Zjednoczonych",
+      "options": [
+        {
+          "en": "in the United States"
+        },
+        {
+          "en": "in Great Britain"
+        },
+        {
+          "en": "in Germany"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-stanach-zjednoczonych"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b5-e08",
+      "prompt": "na łyżwach",
+      "options": [
+        {
+          "en": "on skis"
+        },
+        {
+          "en": "on ice skates (jeździć na łyżwach: to ice-skate)"
+        },
+        {
+          "en": "on a bike"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-lyzwach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b5-e09",
+      "prompt": "w spodniach",
+      "options": [
+        {
+          "en": "in a skirt"
+        },
+        {
+          "en": "in shoes"
+        },
+        {
+          "en": "in trousers, wearing trousers"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-spodniach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b5-e10",
+      "prompt": "w rękawiczkach",
+      "options": [
+        {
+          "en": "in gloves, wearing gloves"
+        },
+        {
+          "en": "in a hat"
+        },
+        {
+          "en": "in a jumper"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-rekawiczkach"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-b5-e11",
+      "prompt": {
+        "en": "in summer we are in Masuria"
+      },
+      "acceptedAnswers": [
+        "latem jesteśmy na Mazurach"
+      ],
+      "distractors": [
+        "Mazury",
+        "w"
+      ],
+      "items": [
+        "latem",
+        "byc-jestesmy",
+        "na-mazurach"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-b5-e12",
+      "acceptedAnswers": [
+        "na łyżwach"
+      ],
+      "meaning": {
+        "en": "on ice skates"
+      },
+      "items": [
+        "na-lyzwach"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-b5-e13",
+      "prompt": {
+        "en": "in the United States"
+      },
+      "acceptedAnswers": [
+        "w Stanach Zjednoczonych"
+      ],
+      "items": [
+        "w-stanach-zjednoczonych"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b5-e14",
+      "text": "Zimą jeżdżę na nartach i na ___.",
+      "meaning": {
+        "en": "In winter I ski and ice-skate."
+      },
+      "gaps": [
+        [
+          "łyżwach"
+        ]
+      ],
+      "distractors": [
+        "łyżwy",
+        "łyżwie"
+      ],
+      "items": [
+        "zima-kiedy",
+        "jezdzic-jezdze",
+        "na-nartach",
+        "i",
+        "na-lyzwach"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-b5-e15",
+      "pairs": [
+        {
+          "polish": "w hotelach",
+          "meaning": {
+            "en": "in hotels"
+          }
+        },
+        {
+          "polish": "w restauracjach",
+          "meaning": {
+            "en": "in restaurants"
+          }
+        },
+        {
+          "polish": "na Mazurach",
+          "meaning": {
+            "en": "in Masuria"
+          }
+        },
+        {
+          "polish": "w spodniach",
+          "meaning": {
+            "en": "in trousers"
+          }
+        },
+        {
+          "polish": "w rękawiczkach",
+          "meaning": {
+            "en": "in gloves"
+          }
+        }
+      ],
+      "items": [
+        "w-hotelach",
+        "w-restauracjach",
+        "na-mazurach",
+        "w-spodniach",
+        "w-rekawiczkach"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-b5-e16",
+      "lines": [
+        "Byłem w Stanach Zjednoczonych i pracowałem w różnych miejscach.",
+        "Najpierw w restauracjach, a potem w hotelach.",
+        "Teraz mieszkam w Polsce."
+      ],
+      "meaning": {
+        "en": "I worked here and there."
+      },
+      "statements": [
+        {
+          "text": "Pracowałem w jednym miejscu.",
+          "meaning": {
+            "en": "I worked in one place."
+          },
+          "true": false
+        },
+        {
+          "text": "Pracowałem w hotelach.",
+          "meaning": {
+            "en": "I worked in hotels."
+          },
+          "true": true
+        },
+        {
+          "text": "Teraz mieszkam w Stanach Zjednoczonych.",
+          "meaning": {
+            "en": "Now I live in the United States."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "byc-bylem",
+        "w-stanach-zjednoczonych",
+        "i",
+        "pracowac-pracowalem",
+        "w-roznych-miejscach",
+        "najpierw",
+        "w-restauracjach",
+        "a",
+        "potem",
+        "w-hotelach",
+        "teraz",
+        "mieszkac-mieszkam",
+        "w-polsce"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-b5-e17",
+      "prompt": {
+        "en": "in winter I walk in gloves"
+      },
+      "acceptedAnswers": [
+        "zimą chodzę w rękawiczkach"
+      ],
+      "distractors": [
+        "rękawiczki",
+        "na"
+      ],
+      "items": [
+        "zima-kiedy",
+        "chodzic-chodze",
+        "w-rekawiczkach"
+      ]
+    }
+  ]
+}

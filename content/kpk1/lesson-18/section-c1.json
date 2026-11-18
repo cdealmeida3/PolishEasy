@@ -1,0 +1,426 @@
+{
+  "id": "kpk1-l18-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Marzę o dalekich podróżach",
+    "meaning": {
+      "en": "I dream of faraway travels"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-c1-t01",
+      "before": "kpk1-l18-c1-e01",
+      "title": {
+        "en": "Marzę o wakacjach"
+      },
+      "body": {
+        "en": "*Myśleć* (to think), *marzyć* (to dream), *rozmawiać* (to talk), *dyskutować* (to discuss) and *pamiętać* (to remember) take *o* (about) and the locative: *marzę o wakacjach*, *rozmawiamy o pracy*, *myślę o tobie*. To ask: *o czym?* (about what?) and *o kim?* (about whom?). *Pamiętam o urodzinach* is I have not forgotten the birthday."
+      },
+      "table": {
+        "title": {
+          "en": "O kim? O czym?"
+        },
+        "columns": [
+          {
+            "header": ""
+          },
+          {
+            "header": "o + miejscownik"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "myśleć",
+              "myślę o rodzicach"
+            ]
+          },
+          {
+            "cells": [
+              "marzyć",
+              "marzę o wakacjach"
+            ]
+          },
+          {
+            "cells": [
+              "rozmawiać",
+              "rozmawiamy o pracy"
+            ]
+          },
+          {
+            "cells": [
+              "dyskutować",
+              "dyskutujemy o filmie"
+            ]
+          },
+          {
+            "cells": [
+              "pamiętać",
+              "pamiętam o urodzinach"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c1-e01",
+      "prompt": "marzę",
+      "options": [
+        {
+          "en": "I think"
+        },
+        {
+          "en": "I sleep"
+        },
+        {
+          "en": "I dream (marzę o wakacjach: I dream of a holiday)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "marzyc-marze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c1-e02",
+      "prompt": "o wakacjach",
+      "options": [
+        {
+          "en": "about the holidays, of a holiday"
+        },
+        {
+          "en": "about work"
+        },
+        {
+          "en": "on holiday"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "o-wakacjach"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-c1-e03",
+      "text": "marzę o wakacjach",
+      "meaning": {
+        "en": "I dream of a holiday"
+      },
+      "distractors": [
+        "marzę o podróżach",
+        "myślę o wakacjach"
+      ],
+      "items": [
+        "marzyc-marze",
+        "o-wakacjach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c1-e04",
+      "prompt": "marzysz",
+      "options": [
+        {
+          "en": "you think"
+        },
+        {
+          "en": "you dream (one friend: o czym marzysz?)"
+        },
+        {
+          "en": "you remember"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "marzyc-marzysz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c1-e05",
+      "prompt": "o czym?",
+      "options": [
+        {
+          "en": "about whom?"
+        },
+        {
+          "en": "with what?"
+        },
+        {
+          "en": "about what? (o czym myślisz?: what are you thinking about?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "o-czym"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-c1-e06",
+      "text": "O ___ marzysz?",
+      "meaning": {
+        "en": "What do you dream of?"
+      },
+      "gaps": [
+        [
+          "czym"
+        ]
+      ],
+      "distractors": [
+        "co",
+        "kim"
+      ],
+      "items": [
+        "o-czym",
+        "marzyc-marzysz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c1-e07",
+      "prompt": "rozmawiamy",
+      "options": [
+        {
+          "en": "we talk (rozmawiamy o pracy: we talk about work)"
+        },
+        {
+          "en": "we think"
+        },
+        {
+          "en": "we dream"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rozmawiac-rozmawiamy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c1-e08",
+      "prompt": "o pracy",
+      "options": [
+        {
+          "en": "at work"
+        },
+        {
+          "en": "about work"
+        },
+        {
+          "en": "about school"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "o-pracy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c1-e09",
+      "prompt": "marzy",
+      "options": [
+        {
+          "en": "he thinks"
+        },
+        {
+          "en": "he sleeps"
+        },
+        {
+          "en": "he dreams, she dreams"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "marzyc-marzy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-c1-e10",
+      "prompt": "pamiętam",
+      "options": [
+        {
+          "en": "I remember (pamiętam o tobie: I have not forgotten you)"
+        },
+        {
+          "en": "I forget"
+        },
+        {
+          "en": "I dream"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pamietac-pamietam"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-c1-e11",
+      "prompt": {
+        "en": "we talk about work"
+      },
+      "acceptedAnswers": [
+        "rozmawiamy o pracy"
+      ],
+      "distractors": [
+        "praca",
+        "w"
+      ],
+      "items": [
+        "rozmawiac-rozmawiamy",
+        "o-pracy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-c1-e12",
+      "acceptedAnswers": [
+        "o czym myślisz?"
+      ],
+      "meaning": {
+        "en": "what are you thinking about?"
+      },
+      "items": [
+        "o-czym",
+        "myslec-myslisz"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-c1-e13",
+      "prompt": {
+        "en": "I dream of a holiday"
+      },
+      "acceptedAnswers": [
+        "marzę o wakacjach"
+      ],
+      "items": [
+        "marzyc-marze",
+        "o-wakacjach"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-c1-e14",
+      "text": "Ewa ___ o wakacjach.",
+      "meaning": {
+        "en": "Ewa dreams of a holiday."
+      },
+      "gaps": [
+        [
+          "marzy"
+        ]
+      ],
+      "distractors": [
+        "marzę",
+        "marzysz"
+      ],
+      "items": [
+        "ewa",
+        "marzyc-marzy",
+        "o-wakacjach"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-c1-e15",
+      "pairs": [
+        {
+          "polish": "marzę",
+          "meaning": {
+            "en": "I dream"
+          }
+        },
+        {
+          "polish": "marzysz",
+          "meaning": {
+            "en": "you dream"
+          }
+        },
+        {
+          "polish": "rozmawiamy",
+          "meaning": {
+            "en": "we talk"
+          }
+        },
+        {
+          "polish": "pamiętam",
+          "meaning": {
+            "en": "I remember"
+          }
+        },
+        {
+          "polish": "o czym?",
+          "meaning": {
+            "en": "about what?"
+          }
+        }
+      ],
+      "items": [
+        "marzyc-marze",
+        "marzyc-marzysz",
+        "rozmawiac-rozmawiamy",
+        "pamietac-pamietam",
+        "o-czym"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-c1-e16",
+      "text": "Pamiętam o ___!",
+      "meaning": {
+        "en": "I haven't forgotten you!"
+      },
+      "gaps": [
+        [
+          "tobie"
+        ]
+      ],
+      "distractors": [
+        "ciebie",
+        "ty"
+      ],
+      "items": [
+        "pamietac-pamietam",
+        "o-tobie"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l18-c1-e17",
+      "lines": [
+        "O czym myślisz?",
+        "O pracy. Jak zawsze!",
+        "A ja myślę tylko o wakacjach!"
+      ],
+      "meaning": {
+        "en": "What are you thinking about?"
+      },
+      "items": [
+        "o-czym",
+        "myslec-myslisz",
+        "o-pracy",
+        "jak",
+        "zawsze",
+        "a",
+        "ja",
+        "myslec-mysle",
+        "tylko",
+        "o-wakacjach"
+      ]
+    }
+  ]
+}

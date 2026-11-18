@@ -1,0 +1,432 @@
+{
+  "id": "kpk1-l18-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Gdzie on jest?",
+    "meaning": {
+      "en": "Where is it?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-b3-t01",
+      "before": "kpk1-l18-b3-e01",
+      "title": {
+        "en": "W dużym banku, w dobrej szkole"
+      },
+      "body": {
+        "en": "A describing word changes too. For he and it words it ends in *-ym*, or *-im* after *k* and *g*: *w dużym banku*, *w wysokim bloku*, *w małym mieście*. For she words it ends in *-ej*: *w dobrej szkole*, *w starej kamienicy* (an old tenement house). To ask: *w jakim mieście?*, *w jakiej szkole?* Floors count like this too: *na czwartym piętrze*."
+      },
+      "table": {
+        "title": {
+          "en": "W jakim? W jakiej?"
+        },
+        "columns": [
+          {
+            "header": ""
+          },
+          {
+            "header": "jaki? jaka? jakie?"
+          },
+          {
+            "header": "w jakim? w jakiej?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "on",
+              "duży bank",
+              "w dużym banku"
+            ]
+          },
+          {
+            "cells": [
+              "on",
+              "wysoki blok",
+              "w wysokim bloku"
+            ]
+          },
+          {
+            "cells": [
+              "ono",
+              "małe miasto",
+              "w małym mieście"
+            ]
+          },
+          {
+            "cells": [
+              "ona",
+              "dobra szkoła",
+              "w dobrej szkole"
+            ]
+          },
+          {
+            "cells": [
+              "ona",
+              "stara kamienica",
+              "w starej kamienicy"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b3-e01",
+      "prompt": "w jakim?",
+      "options": [
+        {
+          "en": "which one?"
+        },
+        {
+          "en": "in what kind of…? (a he or it word: w jakim mieście?)"
+        },
+        {
+          "en": "how much?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-jakim"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b3-e02",
+      "prompt": "w dużym mieście",
+      "options": [
+        {
+          "en": "in a small town"
+        },
+        {
+          "en": "in the countryside"
+        },
+        {
+          "en": "in a big city"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-duzym-miescie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-b3-e03",
+      "text": "mieszkam w dużym mieście",
+      "meaning": {
+        "en": "I live in a big city"
+      },
+      "distractors": [
+        "mieszkam w małym mieście",
+        "pracuję w dużym mieście"
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "w-duzym-miescie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b3-e04",
+      "prompt": "w małym mieście",
+      "options": [
+        {
+          "en": "in a small town"
+        },
+        {
+          "en": "in a big city"
+        },
+        {
+          "en": "in the old town"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-malym-miescie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b3-e05",
+      "prompt": "w jakiej?",
+      "options": [
+        {
+          "en": "with whom?"
+        },
+        {
+          "en": "in what kind of…? (a she word: w jakiej szkole?)"
+        },
+        {
+          "en": "how many?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-jakiej"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b3-e06",
+      "text": "W ___ firmie pracujesz?",
+      "meaning": {
+        "en": "What kind of company do you work at?"
+      },
+      "gaps": [
+        [
+          "jakiej"
+        ]
+      ],
+      "distractors": [
+        "jakim",
+        "jaka"
+      ],
+      "items": [
+        "w-jakiej",
+        "w-firmie",
+        "pracowac-pracujesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b3-e07",
+      "prompt": "w nowym bloku",
+      "options": [
+        {
+          "en": "in an old house"
+        },
+        {
+          "en": "on a new street"
+        },
+        {
+          "en": "in a new block of flats"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-nowym-bloku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b3-e08",
+      "prompt": "w starej kamienicy",
+      "options": [
+        {
+          "en": "in an old tenement house"
+        },
+        {
+          "en": "in a new block of flats"
+        },
+        {
+          "en": "in an old church"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-starej-kamienicy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b3-e09",
+      "prompt": "na czwartym piętrze",
+      "options": [
+        {
+          "en": "on the ground floor"
+        },
+        {
+          "en": "on the fourth floor"
+        },
+        {
+          "en": "on the fourth street"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-czwartym-pietrze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b3-e10",
+      "prompt": "w dobrej szkole",
+      "options": [
+        {
+          "en": "in a good shop"
+        },
+        {
+          "en": "at a big school"
+        },
+        {
+          "en": "at a good school"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-dobrej-szkole"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-b3-e11",
+      "prompt": {
+        "en": "we live in a new block of flats"
+      },
+      "acceptedAnswers": [
+        "mieszkamy w nowym bloku"
+      ],
+      "distractors": [
+        "nowy",
+        "na"
+      ],
+      "items": [
+        "mieszkac-mieszkamy",
+        "w-nowym-bloku"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-b3-e12",
+      "acceptedAnswers": [
+        "na czwartym piętrze"
+      ],
+      "meaning": {
+        "en": "on the fourth floor"
+      },
+      "items": [
+        "na-czwartym-pietrze"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-b3-e13",
+      "prompt": {
+        "en": "in a small town"
+      },
+      "acceptedAnswers": [
+        "w małym mieście"
+      ],
+      "items": [
+        "w-malym-miescie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b3-e14",
+      "text": "Ewa mieszka w ___ kamienicy w centrum.",
+      "meaning": {
+        "en": "Ewa lives in an old tenement house in the centre."
+      },
+      "gaps": [
+        [
+          "starej"
+        ]
+      ],
+      "distractors": [
+        "starym",
+        "stara"
+      ],
+      "items": [
+        "ewa",
+        "mieszkac-mieszka",
+        "w-starej-kamienicy",
+        "w-centrum"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-b3-e15",
+      "pairs": [
+        {
+          "polish": "w dużym mieście",
+          "meaning": {
+            "en": "in a big city"
+          }
+        },
+        {
+          "polish": "w małym mieście",
+          "meaning": {
+            "en": "in a small town"
+          }
+        },
+        {
+          "polish": "w nowym bloku",
+          "meaning": {
+            "en": "in a new block of flats"
+          }
+        },
+        {
+          "polish": "w dobrej szkole",
+          "meaning": {
+            "en": "at a good school"
+          }
+        },
+        {
+          "polish": "na czwartym piętrze",
+          "meaning": {
+            "en": "on the fourth floor"
+          }
+        }
+      ],
+      "items": [
+        "w-duzym-miescie",
+        "w-malym-miescie",
+        "w-nowym-bloku",
+        "w-dobrej-szkole",
+        "na-czwartym-pietrze"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l18-b3-e16",
+      "lines": [
+        "W jakim mieście mieszkasz?",
+        "W małym mieście, w starej kamienicy.",
+        "A ja w dużym mieście, w nowym bloku na czwartym piętrze."
+      ],
+      "meaning": {
+        "en": "Where do you live?"
+      },
+      "items": [
+        "w-jakim",
+        "mieszkac-mieszkasz",
+        "w-malym-miescie",
+        "w-starej-kamienicy",
+        "a",
+        "ja",
+        "w-duzym-miescie",
+        "w-nowym-bloku",
+        "na-czwartym-pietrze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-b3-e17",
+      "prompt": {
+        "en": "my son is at a good school"
+      },
+      "acceptedAnswers": [
+        "mój syn jest w dobrej szkole"
+      ],
+      "distractors": [
+        "dobrym",
+        "szkoła"
+      ],
+      "items": [
+        "moj",
+        "syn",
+        "byc-jest",
+        "w-dobrej-szkole"
+      ]
+    }
+  ]
+}

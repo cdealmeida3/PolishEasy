@@ -1,0 +1,450 @@
+{
+  "id": "kpk1-l18-p2",
+  "section": {
+    "letter": "P",
+    "heading": "Powtórzenie",
+    "meaning": {
+      "en": "Revision"
+    },
+    "strands": [
+      "K",
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-p2-t01",
+      "before": "kpk1-l18-p2-e01",
+      "title": {
+        "en": "Gdzie to jest?"
+      },
+      "body": {
+        "en": "*Meble* (furniture) is plural; one piece of furniture is *mebel*: *nowe meble*. A house may have *garaż* (a garage, *w garażu*) and *spiżarnia* (a pantry, *w spiżarni*). Go over where things are: *stoi*, *leży*, *wisi*; *w*, *na*, *przy*, *obok*; and what people think and talk about: *o synu*, *o sąsiedzie*, *o pracy*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p2-e01",
+      "prompt": "meble",
+      "options": [
+        {
+          "en": "a room"
+        },
+        {
+          "en": "furniture (the plural of mebel, a piece of furniture: nowe meble: new furniture)"
+        },
+        {
+          "en": "a carpet"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "meble"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p2-e02",
+      "prompt": "garaż",
+      "options": [
+        {
+          "en": "a garden"
+        },
+        {
+          "en": "a cellar"
+        },
+        {
+          "en": "a garage (w garażu: in the garage)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "garaz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-p2-e03",
+      "text": "stare meble są w garażu",
+      "meaning": {
+        "en": "the old furniture is in the garage"
+      },
+      "distractors": [
+        "stare meble są na strychu",
+        "nowe meble są w garażu"
+      ],
+      "items": [
+        "stary",
+        "meble",
+        "byc-sa",
+        "garaz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-p2-e04",
+      "prompt": "spiżarnia",
+      "options": [
+        {
+          "en": "a pantry, a larder (w spiżarni: in the pantry)"
+        },
+        {
+          "en": "a bathroom"
+        },
+        {
+          "en": "a fridge"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "spizarnia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-p2-e05",
+      "text": "W ___ mieście mieszkasz?",
+      "meaning": {
+        "en": "What kind of town do you live in?"
+      },
+      "gaps": [
+        [
+          "jakim"
+        ]
+      ],
+      "distractors": [
+        "jakiej",
+        "jaki"
+      ],
+      "items": [
+        "w-jakim",
+        "w-miescie",
+        "mieszkac-mieszkasz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-p2-e06",
+      "prompt": {
+        "en": "we are talking about my son"
+      },
+      "acceptedAnswers": [
+        "rozmawiamy o synu"
+      ],
+      "distractors": [
+        "syn",
+        "z"
+      ],
+      "items": [
+        "rozmawiac-rozmawiamy",
+        "o-synu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-p2-e07",
+      "acceptedAnswers": [
+        "umywalka jest obok wanny"
+      ],
+      "meaning": {
+        "en": "the washbasin is next to the bath"
+      },
+      "items": [
+        "umywalka",
+        "byc-jest",
+        "obok",
+        "wanna"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-p2-e08",
+      "prompt": {
+        "en": "at a concert"
+      },
+      "acceptedAnswers": [
+        "na koncercie"
+      ],
+      "items": [
+        "na-koncercie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-p2-e09",
+      "text": "Kwiatek stoi na ___, obok biurka.",
+      "meaning": {
+        "en": "The pot plant is on the shelf, next to the desk."
+      },
+      "gaps": [
+        [
+          "półce"
+        ]
+      ],
+      "distractors": [
+        "półka",
+        "półkach"
+      ],
+      "items": [
+        "kwiatek",
+        "stac-stoi",
+        "polka",
+        "obok",
+        "biurko"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-p2-e10",
+      "pairs": [
+        {
+          "polish": "meble",
+          "meaning": {
+            "en": "furniture"
+          }
+        },
+        {
+          "polish": "garaż",
+          "meaning": {
+            "en": "a garage"
+          }
+        },
+        {
+          "polish": "spiżarnia",
+          "meaning": {
+            "en": "a pantry"
+          }
+        },
+        {
+          "polish": "gabinet",
+          "meaning": {
+            "en": "a study"
+          }
+        },
+        {
+          "polish": "strych",
+          "meaning": {
+            "en": "an attic"
+          }
+        },
+        {
+          "polish": "kredyt",
+          "meaning": {
+            "en": "a loan"
+          }
+        }
+      ],
+      "items": [
+        "meble",
+        "garaz",
+        "spizarnia",
+        "gabinet",
+        "strych",
+        "kredyt"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-p2-e11",
+      "text": "Byliśmy na ___ i w kościele.",
+      "meaning": {
+        "en": "We were at a film and in church."
+      },
+      "gaps": [
+        [
+          "filmie"
+        ]
+      ],
+      "distractors": [
+        "film",
+        "filmu"
+      ],
+      "items": [
+        "byc-bylismy",
+        "na-filmie",
+        "i",
+        "w-kosciele"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-p2-e12",
+      "prompt": {
+        "en": "he dreams of a house in the country"
+      },
+      "acceptedAnswers": [
+        "on marzy o domu na wsi"
+      ],
+      "distractors": [
+        "dom",
+        "w"
+      ],
+      "items": [
+        "on",
+        "marzyc-marzy",
+        "o-about",
+        "dom",
+        "na-wsi"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-p2-e13",
+      "lines": [
+        "Mieszkam w mieszkaniu z gabinetem.",
+        "Mamy kredyt, ale mieszkanie jest nasze.",
+        "Stare meble są na strychu."
+      ],
+      "meaning": {
+        "en": "Our flat."
+      },
+      "statements": [
+        {
+          "text": "Mają gabinet.",
+          "meaning": {
+            "en": "They have a study."
+          },
+          "true": true
+        },
+        {
+          "text": "Nie mają kredytu.",
+          "meaning": {
+            "en": "They have no loan."
+          },
+          "true": false
+        },
+        {
+          "text": "Stare meble są w piwnicy.",
+          "meaning": {
+            "en": "The old furniture is in the cellar."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "w-mieszkaniu",
+        "gabinet",
+        "miec-mamy",
+        "kredyt",
+        "ale",
+        "mieszkanie",
+        "byc-jest",
+        "nasze",
+        "stary",
+        "meble",
+        "byc-sa",
+        "strych"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-p2-e14",
+      "text": "W ___ firmie pracuje twój syn?",
+      "meaning": {
+        "en": "What kind of company does your son work at?"
+      },
+      "gaps": [
+        [
+          "jakiej"
+        ]
+      ],
+      "distractors": [
+        "jakim",
+        "jaka"
+      ],
+      "items": [
+        "w-jakiej",
+        "w-firmie",
+        "pracowac-pracuje-on",
+        "twoj",
+        "syn"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-p2-e15",
+      "prompt": {
+        "en": "there is milk in the pantry"
+      },
+      "acceptedAnswers": [
+        "w spiżarni jest mleko"
+      ],
+      "distractors": [
+        "spiżarnia",
+        "na"
+      ],
+      "items": [
+        "spizarnia",
+        "byc-jest",
+        "mleko"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l18-p2-e16",
+      "lines": [
+        "Co mówisz o sąsiedzie?",
+        "Że zawsze chodzi w spodniach i w rękawiczkach.",
+        "Latem też!"
+      ],
+      "meaning": {
+        "en": "The neighbour."
+      },
+      "items": [
+        "co",
+        "mowic-mowisz",
+        "o-sasiedzie",
+        "ze",
+        "zawsze",
+        "chodzic-chodzi",
+        "w-spodniach",
+        "i",
+        "w-rekawiczkach",
+        "latem",
+        "tez"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-p2-e17",
+      "acceptedAnswers": [
+        "gwiazdki świecą się w nocy"
+      ],
+      "meaning": {
+        "en": "the little stars glow at night"
+      },
+      "items": [
+        "gwiazdka",
+        "swieca-sie",
+        "w-nocy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-p2-e18",
+      "text": "Na suficie są ___ gwiazdki.",
+      "meaning": {
+        "en": "On the ceiling there are little plastic stars."
+      },
+      "gaps": [
+        [
+          "plastikowe"
+        ]
+      ],
+      "distractors": [
+        "plastikowy",
+        "plastikowa"
+      ],
+      "items": [
+        "sufit",
+        "byc-sa",
+        "plastikowy",
+        "gwiazdka"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "chat-new-flat",
+  "person": "Ewa",
+  "title": {
+    "en": "A new flat"
+  },
+  "scene": {
+    "en": "Your friend Ewa has just moved into a flat of her own, and you are visiting for the first time. She is a friend, so you say ty. Let her show you round, ask where the rooms are, and say what you think."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "to",
+    "byc-jest",
+    "moje",
+    "nowy",
+    "mieszkanie",
+    "ladny",
+    "i",
+    "bardzo",
+    "jasny",
+    "gdzie",
+    "salon",
+    "tutaj",
+    "na-wprost",
+    "z-widokiem-na-park",
+    "a",
+    "kuchnia",
+    "maly",
+    "po-lewej-stronie",
+    "lazienka",
+    "po-prawej-stronie",
+    "twoj",
+    "twoja",
+    "pokoj",
+    "lozko",
+    "stac-stoi",
+    "w-rogu",
+    "na-loc",
+    "sciana",
+    "wisiec-wisza",
+    "lezec-leza",
+    "zdjecie",
+    "w-sam-raz",
+    "podoba-mi-sie",
+    "dziekuje",
+    "ciasny",
+    "ale",
+    "wlasny",
+    "chciec-chcesz",
+    "kawa-acc",
+    "tak",
+    "chetnie",
+    "nie",
+    "mam-dosc",
+    "dobrze",
+    "kawa"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! To jest moje nowe mieszkanie.",
+      "meaning": {
+        "en": "Hi! This is my new flat."
+      },
+      "replies": [
+        {
+          "text": "Ładne i bardzo jasne! Gdzie jest salon?",
+          "meaning": {
+            "en": "Nice and very bright! Where is the living room?"
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Ładne i bardzo jasne! Gdzie jest salon?",
+            "Ładne i bardzo jasne. Gdzie jest salon?"
+          ]
+        },
+        {
+          "text": "Ciasne, ale własne!",
+          "meaning": {
+            "en": "Cramped, but your own!"
+          },
+          "note": {
+            "en": "*Ciasne, ale własne* is what you say of your own small flat. Said of Ewa's, it calls her flat cramped. Say something kind: *ładne i bardzo jasne!*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Salon jest tutaj, na wprost. Jest z widokiem na park.",
+      "meaning": {
+        "en": "The living room is here, straight ahead. It has a view of the park."
+      },
+      "replies": [
+        {
+          "text": "Bardzo ładny! A gdzie jest kuchnia?",
+          "meaning": {
+            "en": "Very nice! And where is the kitchen?"
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Bardzo ładny! A gdzie jest kuchnia?",
+            "Bardzo ładny. A gdzie jest kuchnia?"
+          ]
+        },
+        {
+          "text": "Bardzo ładny! A gdzie jest park?",
+          "meaning": {
+            "en": "Very nice! And where is the park?"
+          },
+          "note": {
+            "en": "The park is outside, in the view from the window. Ask about the rooms you have not seen yet: *a gdzie jest kuchnia?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Kuchnia jest mała, po lewej stronie. A łazienka po prawej.",
+      "meaning": {
+        "en": "The kitchen is small, on the left. And the bathroom is on the right."
+      },
+      "replies": [
+        {
+          "text": "A gdzie jest twój pokój?",
+          "meaning": {
+            "en": "And where is your room?"
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "A gdzie jest twój pokój?"
+          ]
+        },
+        {
+          "text": "A gdzie jest twoja kuchnia?",
+          "meaning": {
+            "en": "And where is your kitchen?"
+          },
+          "note": {
+            "en": "Ewa has just told you: the kitchen is on the left. Ask about what you have not seen yet: *a gdzie jest twój pokój?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Tutaj. Łóżko stoi w rogu, a na ścianie wiszą zdjęcia.",
+      "meaning": {
+        "en": "Here. The bed is in the corner, and there are photos on the wall."
+      },
+      "replies": [
+        {
+          "text": "Pokój jest w sam raz. Podoba mi się!",
+          "meaning": {
+            "en": "The room is just right. I like it!"
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Pokój jest w sam raz. Podoba mi się!",
+            "Pokój jest w sam raz, podoba mi się!"
+          ]
+        },
+        {
+          "text": "Zdjęcia leżą na ścianie.",
+          "meaning": {
+            "en": "The photos are lying on the wall."
+          },
+          "note": {
+            "en": "Photos on a wall hang: *zdjęcia wiszą na ścianie*. *Leżą* is for things lying flat, such as books on a desk."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Dziękuję! Ciasne, ale własne. Chcesz kawę?",
+      "meaning": {
+        "en": "Thank you! Small, but my own. Would you like a coffee?"
+      },
+      "replies": [
+        {
+          "text": "Tak, chętnie!",
+          "meaning": {
+            "en": "Yes, please!"
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Tak, chętnie!",
+            "Tak, chętnie."
+          ]
+        },
+        {
+          "text": "Nie, mam dość!",
+          "meaning": {
+            "en": "No, I've had enough!"
+          },
+          "note": {
+            "en": "*Mam dość!* says you are fed up, which is not kind to Ewa. Say yes with *tak, chętnie!*, or no with *nie, dziękuję*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Dobrze! Kawa jest w kuchni.",
+      "meaning": {
+        "en": "Good! The coffee is in the kitchen."
+      }
+    }
+  ]
+}

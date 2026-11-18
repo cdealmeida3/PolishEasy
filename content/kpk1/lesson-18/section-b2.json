@@ -1,0 +1,489 @@
+{
+  "id": "kpk1-l18-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Gdzie on jest?",
+    "meaning": {
+      "en": "Where is it?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-b2-t01",
+      "before": "kpk1-l18-b2-e01",
+      "title": {
+        "en": "Miasto, w mieście"
+      },
+      "body": {
+        "en": "Before the *-e* of the locative, some sounds change: *t* becomes *ci*, *d* becomes *dzi*, *s* becomes *si*, *ł* becomes *l*, and often *a* becomes *e* and *ó* becomes *o* as well. So *miasto* is *w mieście*, *las* is *w lesie*, *świat* is *na świecie*, *kościół* is *w kościele*, and *obiad* is *po obiedzie*. The locative also follows *o* (about) and *po* (after). Learn three apart: *dom*, *w domu*; *pan*, *o panu*; *syn*, *o synu*."
+      },
+      "table": {
+        "title": {
+          "en": "Uwaga!"
+        },
+        "columns": [
+          {
+            "header": "kto? co?"
+          },
+          {
+            "header": "gdzie? o kim? o czym?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "miasto",
+              "w mieście"
+            ]
+          },
+          {
+            "cells": [
+              "las",
+              "w lesie"
+            ]
+          },
+          {
+            "cells": [
+              "świat",
+              "na świecie"
+            ]
+          },
+          {
+            "cells": [
+              "kościół",
+              "w kościele"
+            ]
+          },
+          {
+            "cells": [
+              "obiad",
+              "po obiedzie"
+            ]
+          },
+          {
+            "cells": [
+              "sąsiad",
+              "o sąsiedzie"
+            ]
+          },
+          {
+            "cells": [
+              "dom",
+              "w domu"
+            ]
+          },
+          {
+            "cells": [
+              "pan",
+              "o panu"
+            ]
+          },
+          {
+            "cells": [
+              "syn",
+              "o synu"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b2-e01",
+      "prompt": "w mieście",
+      "options": [
+        {
+          "en": "in the country"
+        },
+        {
+          "en": "in the park"
+        },
+        {
+          "en": "in the city, in town (miasto)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-miescie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b2-e02",
+      "prompt": "w lesie",
+      "options": [
+        {
+          "en": "in the forest, in the woods (las)"
+        },
+        {
+          "en": "in the mountains"
+        },
+        {
+          "en": "in the garden"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-lesie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-b2-e03",
+      "text": "mieszkam w mieście",
+      "meaning": {
+        "en": "I live in town"
+      },
+      "distractors": [
+        "mieszkam w lesie",
+        "mieszkasz w mieście"
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "w-miescie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b2-e04",
+      "prompt": "na świecie",
+      "options": [
+        {
+          "en": "in the town"
+        },
+        {
+          "en": "in the world (świat)"
+        },
+        {
+          "en": "in the sky"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-swiecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b2-e05",
+      "prompt": "po obiedzie",
+      "options": [
+        {
+          "en": "before lunch"
+        },
+        {
+          "en": "for lunch"
+        },
+        {
+          "en": "after lunch (obiad)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "po-obiedzie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b2-e06",
+      "text": "Jestem w domu po ___.",
+      "meaning": {
+        "en": "I am at home after lunch."
+      },
+      "gaps": [
+        [
+          "obiedzie"
+        ]
+      ],
+      "distractors": [
+        "obiad",
+        "obiadu"
+      ],
+      "items": [
+        "byc-jestem",
+        "w-domu",
+        "po-obiedzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b2-e07",
+      "prompt": "w kościele",
+      "options": [
+        {
+          "en": "in church (kościół)"
+        },
+        {
+          "en": "in a castle"
+        },
+        {
+          "en": "at school"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-kosciele"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b2-e08",
+      "prompt": "o sąsiedzie",
+      "options": [
+        {
+          "en": "about the son"
+        },
+        {
+          "en": "about the neighbour (sąsiad)"
+        },
+        {
+          "en": "with the neighbour"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "o-sasiedzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b2-e09",
+      "prompt": "o panu",
+      "options": [
+        {
+          "en": "with you (to a man)"
+        },
+        {
+          "en": "for you (to a man)"
+        },
+        {
+          "en": "about you (to a man), about the gentleman (pan)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "o-panu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b2-e10",
+      "prompt": "o synu",
+      "options": [
+        {
+          "en": "about my son, about the son (syn)"
+        },
+        {
+          "en": "with my son"
+        },
+        {
+          "en": "about my daughter"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "o-synu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-b2-e11",
+      "prompt": {
+        "en": "the children are in the forest"
+      },
+      "acceptedAnswers": [
+        "dzieci są w lesie"
+      ],
+      "distractors": [
+        "las",
+        "na"
+      ],
+      "items": [
+        "dzieci",
+        "byc-sa",
+        "w-lesie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-b2-e12",
+      "acceptedAnswers": [
+        "na świecie"
+      ],
+      "meaning": {
+        "en": "in the world"
+      },
+      "items": [
+        "na-swiecie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-b2-e13",
+      "prompt": {
+        "en": "in church"
+      },
+      "acceptedAnswers": [
+        "w kościele"
+      ],
+      "items": [
+        "w-kosciele"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-b2-e14",
+      "acceptedAnswers": [
+        "o panu"
+      ],
+      "meaning": {
+        "en": "about you (to a man)"
+      },
+      "items": [
+        "o-panu"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-b2-e15",
+      "pairs": [
+        {
+          "polish": "w mieście",
+          "meaning": {
+            "en": "in town"
+          }
+        },
+        {
+          "polish": "w lesie",
+          "meaning": {
+            "en": "in the forest"
+          }
+        },
+        {
+          "polish": "na świecie",
+          "meaning": {
+            "en": "in the world"
+          }
+        },
+        {
+          "polish": "po obiedzie",
+          "meaning": {
+            "en": "after lunch"
+          }
+        },
+        {
+          "polish": "o panu",
+          "meaning": {
+            "en": "about you (to a man)"
+          }
+        }
+      ],
+      "items": [
+        "w-miescie",
+        "w-lesie",
+        "na-swiecie",
+        "po-obiedzie",
+        "o-panu"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b2-e16",
+      "text": "Mama dużo mówi o ___, bo on mieszka w Londynie.",
+      "meaning": {
+        "en": "Mum talks a lot about her son, because he lives in London."
+      },
+      "gaps": [
+        [
+          "synu"
+        ]
+      ],
+      "distractors": [
+        "synowi",
+        "syn"
+      ],
+      "items": [
+        "mama",
+        "duzo",
+        "mowic-mowi",
+        "o-synu",
+        "bo",
+        "on",
+        "mieszkac-mieszka",
+        "w-londynie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-b2-e17",
+      "lines": [
+        "Mieszkam w mieście.",
+        "Rano jestem w domu, a po obiedzie jestem w lesie.",
+        "W lesie jest bardzo spokojnie."
+      ],
+      "meaning": {
+        "en": "My town."
+      },
+      "statements": [
+        {
+          "text": "Mieszkam w lesie.",
+          "meaning": {
+            "en": "I live in the forest."
+          },
+          "true": false
+        },
+        {
+          "text": "Po obiedzie jestem w lesie.",
+          "meaning": {
+            "en": "After lunch I am in the forest."
+          },
+          "true": true
+        },
+        {
+          "text": "W lesie jest spokojnie.",
+          "meaning": {
+            "en": "It is peaceful in the forest."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "w-miescie",
+        "rano",
+        "byc-jestem",
+        "w-domu",
+        "a",
+        "po-obiedzie",
+        "w-lesie",
+        "byc-jest",
+        "bardzo",
+        "spokojnie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-b2-e18",
+      "prompt": {
+        "en": "I am talking about the neighbour"
+      },
+      "acceptedAnswers": [
+        "rozmawiam o sąsiedzie"
+      ],
+      "distractors": [
+        "sąsiad",
+        "z"
+      ],
+      "items": [
+        "rozmawiac-rozmawiam",
+        "o-sasiedzie"
+      ]
+    }
+  ]
+}

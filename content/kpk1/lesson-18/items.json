@@ -1,0 +1,1104 @@
+{
+  "items": [
+    {
+      "id": "pokoj",
+      "text": "pokój",
+      "meaning": {
+        "en": "a room (w pokoju: in the room)"
+      },
+      "forms": [
+        "w pokoju",
+        "pokoju",
+        "pokoje"
+      ]
+    },
+    {
+      "id": "kuchnia",
+      "text": "kuchnia",
+      "meaning": {
+        "en": "a kitchen (w kuchni: in the kitchen)"
+      },
+      "forms": [
+        "w kuchni",
+        "kuchni"
+      ]
+    },
+    {
+      "id": "lazienka",
+      "text": "łazienka",
+      "meaning": {
+        "en": "a bathroom (w łazience: in the bathroom)"
+      },
+      "forms": [
+        "w łazience",
+        "łazience"
+      ]
+    },
+    {
+      "id": "sypialnia",
+      "text": "sypialnia",
+      "meaning": {
+        "en": "a bedroom (w sypialni: in the bedroom)"
+      },
+      "forms": [
+        "w sypialni",
+        "sypialni"
+      ]
+    },
+    {
+      "id": "salon",
+      "text": "salon",
+      "meaning": {
+        "en": "a living room (w salonie: in the living room)"
+      },
+      "forms": [
+        "w salonie",
+        "salonie"
+      ]
+    },
+    {
+      "id": "przedpokoj",
+      "text": "przedpokój",
+      "meaning": {
+        "en": "a hall (w przedpokoju: in the hall)"
+      },
+      "forms": [
+        "w przedpokoju",
+        "przedpokoju"
+      ]
+    },
+    {
+      "id": "balkon",
+      "text": "balkon",
+      "meaning": {
+        "en": "a balcony (na balkonie: on the balcony)"
+      },
+      "forms": [
+        "na balkonie",
+        "balkonie"
+      ]
+    },
+    {
+      "id": "na-loc",
+      "text": "na",
+      "meaning": {
+        "en": "on, at (where: na stole: on the table; na balkonie: on the balcony)"
+      }
+    },
+    {
+      "id": "sciana",
+      "text": "ściana",
+      "meaning": {
+        "en": "a wall (na ścianie: on the wall)"
+      },
+      "forms": [
+        "na ścianie",
+        "ścianie"
+      ]
+    },
+    {
+      "id": "podloga",
+      "text": "podłoga",
+      "meaning": {
+        "en": "a floor (na podłodze: on the floor)"
+      },
+      "forms": [
+        "na podłodze",
+        "podłodze"
+      ]
+    },
+    {
+      "id": "sufit",
+      "text": "sufit",
+      "meaning": {
+        "en": "a ceiling (na suficie: on the ceiling)"
+      },
+      "forms": [
+        "na suficie",
+        "suficie"
+      ]
+    },
+    {
+      "id": "drzwi",
+      "text": "drzwi",
+      "meaning": {
+        "en": "a door (drzwi is plural: przy drzwiach: by the door)"
+      },
+      "forms": [
+        "przy drzwiach",
+        "drzwiach"
+      ]
+    },
+    {
+      "id": "pietro",
+      "text": "piętro",
+      "meaning": {
+        "en": "a floor, a storey (na piętrze: upstairs, on a floor)"
+      },
+      "forms": [
+        "na piętrze",
+        "piętrze"
+      ]
+    },
+    {
+      "id": "parter",
+      "text": "parter",
+      "meaning": {
+        "en": "the ground floor (na parterze: on the ground floor)"
+      },
+      "forms": [
+        "na parterze",
+        "parterze"
+      ]
+    },
+    {
+      "id": "blok",
+      "text": "blok",
+      "meaning": {
+        "en": "a block of flats (w bloku: in a block of flats)"
+      },
+      "forms": [
+        "w bloku",
+        "bloku"
+      ]
+    },
+    {
+      "id": "przy-loc",
+      "text": "przy",
+      "meaning": {
+        "en": "by, at (przy oknie: by the window)"
+      }
+    },
+    {
+      "id": "lozko",
+      "text": "łóżko",
+      "meaning": {
+        "en": "a bed (na łóżku: on the bed)"
+      },
+      "forms": [
+        "na łóżku",
+        "łóżku"
+      ]
+    },
+    {
+      "id": "szafa",
+      "text": "szafa",
+      "meaning": {
+        "en": "a wardrobe (w szafie: in the wardrobe)"
+      },
+      "forms": [
+        "w szafie",
+        "szafie"
+      ]
+    },
+    {
+      "id": "biurko",
+      "text": "biurko",
+      "meaning": {
+        "en": "a desk (przy biurku: at the desk; na biurku: on the desk)"
+      },
+      "forms": [
+        "przy biurku",
+        "biurku",
+        "na biurku",
+        "biurka"
+      ]
+    },
+    {
+      "id": "lampa",
+      "text": "lampa",
+      "meaning": {
+        "en": "a lamp"
+      }
+    },
+    {
+      "id": "fotel",
+      "text": "fotel",
+      "meaning": {
+        "en": "an armchair (w fotelu: in the armchair)"
+      },
+      "forms": [
+        "w fotelu",
+        "fotelu"
+      ]
+    },
+    {
+      "id": "dywan",
+      "text": "dywan",
+      "meaning": {
+        "en": "a rug, a carpet (na dywanie: on the rug)"
+      },
+      "forms": [
+        "na dywanie",
+        "dywanie"
+      ]
+    },
+    {
+      "id": "regal",
+      "text": "regał",
+      "meaning": {
+        "en": "a bookcase, shelves (na regale: on the shelves)"
+      },
+      "forms": [
+        "na regale",
+        "regale"
+      ]
+    },
+    {
+      "id": "kanapa",
+      "text": "kanapa",
+      "meaning": {
+        "en": "a sofa (na kanapie: on the sofa)"
+      },
+      "forms": [
+        "na kanapie",
+        "kanapie"
+      ]
+    },
+    {
+      "id": "lodowka",
+      "text": "lodówka",
+      "meaning": {
+        "en": "a fridge (w lodówce: in the fridge)"
+      },
+      "forms": [
+        "w lodówce",
+        "lodówce"
+      ]
+    },
+    {
+      "id": "kuchenka",
+      "text": "kuchenka",
+      "meaning": {
+        "en": "a cooker, a stove (na kuchence: on the cooker)"
+      }
+    },
+    {
+      "id": "zmywarka",
+      "text": "zmywarka",
+      "meaning": {
+        "en": "a dishwasher (nie ma zmywarki: there is no dishwasher)"
+      },
+      "forms": [
+        "zmywarki"
+      ]
+    },
+    {
+      "id": "pralka",
+      "text": "pralka",
+      "meaning": {
+        "en": "a washing machine (w pralce: in the washing machine)"
+      },
+      "forms": [
+        "w pralce",
+        "pralce"
+      ]
+    },
+    {
+      "id": "wanna",
+      "text": "wanna",
+      "meaning": {
+        "en": "a bath (w wannie: in the bath)"
+      },
+      "forms": [
+        "w wannie",
+        "wannie",
+        "wanny"
+      ]
+    },
+    {
+      "id": "umywalka",
+      "text": "umywalka",
+      "meaning": {
+        "en": "a washbasin"
+      }
+    },
+    {
+      "id": "lustro",
+      "text": "lustro",
+      "meaning": {
+        "en": "a mirror (w lustrze: in the mirror)"
+      },
+      "forms": [
+        "w lustrze",
+        "lustrze"
+      ]
+    },
+    {
+      "id": "polka",
+      "text": "półka",
+      "meaning": {
+        "en": "a shelf (na półce: on the shelf)"
+      },
+      "forms": [
+        "na półce",
+        "półce"
+      ]
+    },
+    {
+      "id": "stac-stoi",
+      "text": "stoi",
+      "meaning": {
+        "en": "it stands, he stands (lampa stoi w rogu: the lamp is in the corner)"
+      }
+    },
+    {
+      "id": "stac-stoja",
+      "text": "stoją",
+      "meaning": {
+        "en": "they stand (krzesła stoją przy stole: the chairs are at the table)"
+      }
+    },
+    {
+      "id": "lezec-lezy",
+      "text": "leży",
+      "meaning": {
+        "en": "it lies, he lies (dywan leży na podłodze: the rug is on the floor)"
+      }
+    },
+    {
+      "id": "lezec-leza",
+      "text": "leżą",
+      "meaning": {
+        "en": "they lie (książki leżą na biurku: the books are on the desk)"
+      }
+    },
+    {
+      "id": "wisiec-wisi",
+      "text": "wisi",
+      "meaning": {
+        "en": "it hangs (obraz wisi na ścianie: the picture is on the wall)"
+      }
+    },
+    {
+      "id": "wisiec-wisza",
+      "text": "wiszą",
+      "meaning": {
+        "en": "they hang (kurtki wiszą w szafie: the jackets hang in the wardrobe)"
+      }
+    },
+    {
+      "id": "telewizor",
+      "text": "telewizor",
+      "meaning": {
+        "en": "a television set"
+      }
+    },
+    {
+      "id": "kwiatek",
+      "text": "kwiatek",
+      "meaning": {
+        "en": "a flower, a pot plant (kwiatki: flowers)"
+      },
+      "forms": [
+        "kwiatki"
+      ]
+    },
+    {
+      "id": "ciasny",
+      "text": "ciasny",
+      "meaning": {
+        "en": "cramped, small (ciasny, ciasna, ciasne)"
+      },
+      "forms": [
+        "ciasna",
+        "ciasne"
+      ]
+    },
+    {
+      "id": "wlasny",
+      "text": "własny",
+      "meaning": {
+        "en": "own (własny dom: a house of your own) (własny, własna, własne)"
+      },
+      "forms": [
+        "własna",
+        "własne"
+      ]
+    },
+    {
+      "id": "wygodny",
+      "text": "wygodny",
+      "meaning": {
+        "en": "comfortable (wygodny, wygodna, wygodne)"
+      },
+      "forms": [
+        "wygodna",
+        "wygodne"
+      ]
+    },
+    {
+      "id": "cichy",
+      "text": "cichy",
+      "meaning": {
+        "en": "quiet (cichy, cicha, ciche)"
+      },
+      "forms": [
+        "cicha",
+        "ciche"
+      ]
+    },
+    {
+      "id": "z-widokiem-na-park",
+      "text": "z widokiem na park",
+      "meaning": {
+        "en": "with a view of the park"
+      }
+    },
+    {
+      "id": "w-rogu",
+      "text": "w rogu",
+      "meaning": {
+        "en": "in the corner"
+      }
+    },
+    {
+      "id": "na-srodku",
+      "text": "na środku",
+      "meaning": {
+        "en": "in the middle (na środku pokoju: in the middle of the room)"
+      }
+    },
+    {
+      "id": "obok",
+      "text": "obok",
+      "meaning": {
+        "en": "next to, beside (obok biurka: next to the desk)"
+      }
+    },
+    {
+      "id": "w-banku",
+      "text": "w banku",
+      "meaning": {
+        "en": "in a bank, at the bank"
+      }
+    },
+    {
+      "id": "w-sklepie",
+      "text": "w sklepie",
+      "meaning": {
+        "en": "in a shop"
+      }
+    },
+    {
+      "id": "w-hotelu",
+      "text": "w hotelu",
+      "meaning": {
+        "en": "in a hotel"
+      }
+    },
+    {
+      "id": "w-kawiarni",
+      "text": "w kawiarni",
+      "meaning": {
+        "en": "in a café"
+      }
+    },
+    {
+      "id": "na-ulicy",
+      "text": "na ulicy",
+      "meaning": {
+        "en": "in the street, on the street"
+      }
+    },
+    {
+      "id": "w-firmie",
+      "text": "w firmie",
+      "meaning": {
+        "en": "at a company, at the firm"
+      }
+    },
+    {
+      "id": "w-mieszkaniu",
+      "text": "w mieszkaniu",
+      "meaning": {
+        "en": "in the flat"
+      }
+    },
+    {
+      "id": "w-centrum",
+      "text": "w centrum",
+      "meaning": {
+        "en": "in the centre, in town (centrum does not change)"
+      }
+    },
+    {
+      "id": "w-miescie",
+      "text": "w mieście",
+      "meaning": {
+        "en": "in the city, in town (miasto)"
+      }
+    },
+    {
+      "id": "w-lesie",
+      "text": "w lesie",
+      "meaning": {
+        "en": "in the forest, in the woods (las)"
+      }
+    },
+    {
+      "id": "na-swiecie",
+      "text": "na świecie",
+      "meaning": {
+        "en": "in the world (świat)"
+      }
+    },
+    {
+      "id": "po-obiedzie",
+      "text": "po obiedzie",
+      "meaning": {
+        "en": "after lunch (obiad)"
+      }
+    },
+    {
+      "id": "w-kosciele",
+      "text": "w kościele",
+      "meaning": {
+        "en": "in church (kościół)"
+      }
+    },
+    {
+      "id": "o-sasiedzie",
+      "text": "o sąsiedzie",
+      "meaning": {
+        "en": "about the neighbour (sąsiad)"
+      }
+    },
+    {
+      "id": "o-panu",
+      "text": "o panu",
+      "meaning": {
+        "en": "about you (to a man), about the gentleman (pan)"
+      }
+    },
+    {
+      "id": "o-synu",
+      "text": "o synu",
+      "meaning": {
+        "en": "about my son, about the son (syn)"
+      }
+    },
+    {
+      "id": "w-jakim",
+      "text": "w jakim?",
+      "meaning": {
+        "en": "in what kind of…? (a he or it word: w jakim mieście?)"
+      }
+    },
+    {
+      "id": "w-jakiej",
+      "text": "w jakiej?",
+      "meaning": {
+        "en": "in what kind of…? (a she word: w jakiej szkole?)"
+      }
+    },
+    {
+      "id": "w-duzym-miescie",
+      "text": "w dużym mieście",
+      "meaning": {
+        "en": "in a big city"
+      }
+    },
+    {
+      "id": "w-malym-miescie",
+      "text": "w małym mieście",
+      "meaning": {
+        "en": "in a small town"
+      }
+    },
+    {
+      "id": "w-nowym-bloku",
+      "text": "w nowym bloku",
+      "meaning": {
+        "en": "in a new block of flats"
+      }
+    },
+    {
+      "id": "w-starej-kamienicy",
+      "text": "w starej kamienicy",
+      "meaning": {
+        "en": "in an old tenement house"
+      }
+    },
+    {
+      "id": "na-czwartym-pietrze",
+      "text": "na czwartym piętrze",
+      "meaning": {
+        "en": "on the fourth floor"
+      }
+    },
+    {
+      "id": "w-dobrej-szkole",
+      "text": "w dobrej szkole",
+      "meaning": {
+        "en": "at a good school"
+      }
+    },
+    {
+      "id": "na-poczcie",
+      "text": "na poczcie",
+      "meaning": {
+        "en": "at the post office"
+      }
+    },
+    {
+      "id": "na-policji",
+      "text": "na policji",
+      "meaning": {
+        "en": "at the police station"
+      }
+    },
+    {
+      "id": "na-dworcu",
+      "text": "na dworcu",
+      "meaning": {
+        "en": "at the station"
+      }
+    },
+    {
+      "id": "na-basenie",
+      "text": "na basenie",
+      "meaning": {
+        "en": "at the swimming pool"
+      }
+    },
+    {
+      "id": "na-lotnisku",
+      "text": "na lotnisku",
+      "meaning": {
+        "en": "at the airport"
+      }
+    },
+    {
+      "id": "na-koncercie",
+      "text": "na koncercie",
+      "meaning": {
+        "en": "at a concert"
+      }
+    },
+    {
+      "id": "na-filmie",
+      "text": "na filmie",
+      "meaning": {
+        "en": "at a film, at the cinema (watching a film)"
+      }
+    },
+    {
+      "id": "w-pracy",
+      "text": "w pracy",
+      "meaning": {
+        "en": "at work"
+      }
+    },
+    {
+      "id": "w-roznych-miejscach",
+      "text": "w różnych miejscach",
+      "meaning": {
+        "en": "in different places"
+      }
+    },
+    {
+      "id": "w-hotelach",
+      "text": "w hotelach",
+      "meaning": {
+        "en": "in hotels"
+      }
+    },
+    {
+      "id": "w-restauracjach",
+      "text": "w restauracjach",
+      "meaning": {
+        "en": "in restaurants"
+      }
+    },
+    {
+      "id": "na-mazurach",
+      "text": "na Mazurach",
+      "meaning": {
+        "en": "in Masuria (the lake district in the north-east)"
+      }
+    },
+    {
+      "id": "w-stanach-zjednoczonych",
+      "text": "w Stanach Zjednoczonych",
+      "meaning": {
+        "en": "in the United States"
+      }
+    },
+    {
+      "id": "na-lyzwach",
+      "text": "na łyżwach",
+      "meaning": {
+        "en": "on ice skates (jeździć na łyżwach: to ice-skate)"
+      }
+    },
+    {
+      "id": "w-spodniach",
+      "text": "w spodniach",
+      "meaning": {
+        "en": "in trousers, wearing trousers"
+      }
+    },
+    {
+      "id": "w-rekawiczkach",
+      "text": "w rękawiczkach",
+      "meaning": {
+        "en": "in gloves, wearing gloves"
+      }
+    },
+    {
+      "id": "w-sam-raz",
+      "text": "w sam raz",
+      "meaning": {
+        "en": "just right"
+      }
+    },
+    {
+      "id": "poduszka",
+      "text": "poduszka",
+      "meaning": {
+        "en": "a cushion, a pillow (poduszki: cushions)"
+      },
+      "forms": [
+        "poduszki",
+        "poduszek"
+      ]
+    },
+    {
+      "id": "ubranie",
+      "text": "ubranie",
+      "meaning": {
+        "en": "a piece of clothing (ubrania: clothes)"
+      },
+      "forms": [
+        "ubrania"
+      ]
+    },
+    {
+      "id": "gwiazdka",
+      "text": "gwiazdka",
+      "meaning": {
+        "en": "a little star (gwiazdki: little stars)"
+      },
+      "forms": [
+        "gwiazdki"
+      ]
+    },
+    {
+      "id": "swieca-sie",
+      "text": "świecą się",
+      "meaning": {
+        "en": "they shine, they glow (świecić się)"
+      }
+    },
+    {
+      "id": "bezowy",
+      "text": "beżowy",
+      "meaning": {
+        "en": "beige (beżowy, beżowa, beżowe)"
+      },
+      "forms": [
+        "beżowa",
+        "beżowe"
+      ]
+    },
+    {
+      "id": "plastikowy",
+      "text": "plastikowy",
+      "meaning": {
+        "en": "plastic (plastikowy, plastikowa, plastikowe)"
+      },
+      "forms": [
+        "plastikowa",
+        "plastikowe"
+      ]
+    },
+    {
+      "id": "marzyc-marze",
+      "text": "marzę",
+      "meaning": {
+        "en": "I dream (marzę o wakacjach: I dream of a holiday)"
+      }
+    },
+    {
+      "id": "marzyc-marzysz",
+      "text": "marzysz",
+      "meaning": {
+        "en": "you dream (one friend: o czym marzysz?)"
+      }
+    },
+    {
+      "id": "marzyc-marzy",
+      "text": "marzy",
+      "meaning": {
+        "en": "he dreams, she dreams"
+      }
+    },
+    {
+      "id": "rozmawiac-rozmawiamy",
+      "text": "rozmawiamy",
+      "meaning": {
+        "en": "we talk (rozmawiamy o pracy: we talk about work)"
+      }
+    },
+    {
+      "id": "pamietac-pamietam",
+      "text": "pamiętam",
+      "meaning": {
+        "en": "I remember (pamiętam o tobie: I have not forgotten you)"
+      }
+    },
+    {
+      "id": "o-czym",
+      "text": "o czym?",
+      "meaning": {
+        "en": "about what? (o czym myślisz?: what are you thinking about?)"
+      }
+    },
+    {
+      "id": "o-wakacjach",
+      "text": "o wakacjach",
+      "meaning": {
+        "en": "about the holidays, of a holiday"
+      }
+    },
+    {
+      "id": "o-pracy",
+      "text": "o pracy",
+      "meaning": {
+        "en": "about work"
+      }
+    },
+    {
+      "id": "po-swiecie",
+      "text": "po świecie",
+      "meaning": {
+        "en": "around the world"
+      }
+    },
+    {
+      "id": "po-polsce",
+      "text": "po Polsce",
+      "meaning": {
+        "en": "around Poland"
+      }
+    },
+    {
+      "id": "po-miescie",
+      "text": "po mieście",
+      "meaning": {
+        "en": "around town"
+      }
+    },
+    {
+      "id": "po-parku",
+      "text": "po parku",
+      "meaning": {
+        "en": "around the park, in the park"
+      }
+    },
+    {
+      "id": "po-europie",
+      "text": "po Europie",
+      "meaning": {
+        "en": "around Europe"
+      }
+    },
+    {
+      "id": "po-gorach",
+      "text": "po górach",
+      "meaning": {
+        "en": "in the mountains (chodzić po górach: to go hiking)"
+      }
+    },
+    {
+      "id": "spacerowac-spaceruje",
+      "text": "spaceruję",
+      "meaning": {
+        "en": "I walk, I go for a walk"
+      }
+    },
+    {
+      "id": "podrozowac-podrozuje",
+      "text": "podróżuję",
+      "meaning": {
+        "en": "I travel"
+      }
+    },
+    {
+      "id": "niedlugo",
+      "text": "niedługo",
+      "meaning": {
+        "en": "soon"
+      }
+    },
+    {
+      "id": "mam-dosc",
+      "text": "mam dość",
+      "meaning": {
+        "en": "I've had enough, I'm fed up (mam dość pracy: I'm fed up with work)"
+      }
+    },
+    {
+      "id": "daleki",
+      "text": "daleki",
+      "meaning": {
+        "en": "far, far-off (daleki, daleka, dalekie)"
+      },
+      "forms": [
+        "daleka",
+        "dalekie",
+        "dalekich"
+      ]
+    },
+    {
+      "id": "podroz",
+      "text": "podróż",
+      "meaning": {
+        "en": "a journey, travel (podróże: travels; o podróżach: about travels)"
+      },
+      "forms": [
+        "podróże",
+        "podróżach",
+        "podróży"
+      ]
+    },
+    {
+      "id": "ksztalca",
+      "text": "kształcą",
+      "meaning": {
+        "en": "they educate (podróże kształcą: travel broadens the mind, a saying)"
+      }
+    },
+    {
+      "id": "w-weekendy",
+      "text": "w weekendy",
+      "meaning": {
+        "en": "at weekends"
+      }
+    },
+    {
+      "id": "dla-wszystkich",
+      "text": "dla wszystkich",
+      "meaning": {
+        "en": "for everyone"
+      }
+    },
+    {
+      "id": "do-rodzicow",
+      "text": "do rodziców",
+      "meaning": {
+        "en": "to my parents, to see my parents"
+      }
+    },
+    {
+      "id": "dom",
+      "text": "dom",
+      "meaning": {
+        "en": "a house, a home (o domu: about a house)"
+      },
+      "forms": [
+        "domu"
+      ]
+    },
+    {
+      "id": "w-srodmiesciu",
+      "text": "w Śródmieściu",
+      "meaning": {
+        "en": "in Śródmieście (the city centre district)"
+      }
+    },
+    {
+      "id": "gabinet",
+      "text": "gabinet",
+      "meaning": {
+        "en": "a study (w gabinecie: in the study)"
+      },
+      "forms": [
+        "gabinetem",
+        "gabinecie"
+      ]
+    },
+    {
+      "id": "na-wsi",
+      "text": "na wsi",
+      "meaning": {
+        "en": "in the country, in a village (wieś)"
+      }
+    },
+    {
+      "id": "kominek",
+      "text": "kominek",
+      "meaning": {
+        "en": "a fireplace (z kominkiem: with a fireplace)"
+      },
+      "forms": [
+        "kominkiem",
+        "z kominkiem"
+      ]
+    },
+    {
+      "id": "strych",
+      "text": "strych",
+      "meaning": {
+        "en": "an attic (na strychu: in the attic)"
+      },
+      "forms": [
+        "strychu"
+      ]
+    },
+    {
+      "id": "piwnica",
+      "text": "piwnica",
+      "meaning": {
+        "en": "a cellar (w piwnicy: in the cellar)"
+      },
+      "forms": [
+        "piwnicy",
+        "w piwnicy"
+      ]
+    },
+    {
+      "id": "kredyt",
+      "text": "kredyt",
+      "meaning": {
+        "en": "a loan, a mortgage (wziąć kredyt: to take out a loan)"
+      },
+      "forms": [
+        "kredytu"
+      ]
+    },
+    {
+      "id": "meble",
+      "text": "meble",
+      "meaning": {
+        "en": "furniture (the plural of mebel, a piece of furniture: nowe meble: new furniture)"
+      },
+      "forms": [
+        "mebli"
+      ]
+    },
+    {
+      "id": "spizarnia",
+      "text": "spiżarnia",
+      "meaning": {
+        "en": "a pantry, a larder (w spiżarni: in the pantry)"
+      },
+      "forms": [
+        "spiżarni",
+        "w spiżarni"
+      ]
+    },
+    {
+      "id": "garaz",
+      "text": "garaż",
+      "meaning": {
+        "en": "a garage (w garażu: in the garage)"
+      },
+      "forms": [
+        "garażu",
+        "w garażu"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "id": "kpk1-l18-b4",
+  "section": {
+    "letter": "B",
+    "heading": "Gdzie on jest?",
+    "meaning": {
+      "en": "Where is it?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-b4-t01",
+      "before": "kpk1-l18-b4-e01",
+      "title": {
+        "en": "W czy na?"
+      },
+      "body": {
+        "en": "*W* is in: inside a building, a town or a country: *w kinie*, *w banku*, *w Krakowie*, *w Polsce*. *Na* is on, and also at an event or an open place: *na filmie*, *na koncercie*, *na ulicy*, *na stole*. Some places simply take *na*, so learn them together: *na poczcie*, *na policji*, *na dworcu*, *na lotnisku*, *na basenie*, *na uniwersytecie*. At work is *w pracy*."
+      },
+      "table": {
+        "title": {
+          "en": "W czy na?"
+        },
+        "columns": [
+          {
+            "header": "w"
+          },
+          {
+            "header": "na"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "w Polsce, w Krakowie",
+              "na Mazurach"
+            ]
+          },
+          {
+            "cells": [
+              "w kinie",
+              "na filmie, na koncercie"
+            ]
+          },
+          {
+            "cells": [
+              "w banku, w sklepie",
+              "na poczcie, na policji"
+            ]
+          },
+          {
+            "cells": [
+              "w szkole",
+              "na uniwersytecie"
+            ]
+          },
+          {
+            "cells": [
+              "w pracy",
+              "na dworcu, na lotnisku"
+            ]
+          },
+          {
+            "cells": [
+              "w parku",
+              "na basenie, na ulicy"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b4-e01",
+      "prompt": "na poczcie",
+      "options": [
+        {
+          "en": "at the post office"
+        },
+        {
+          "en": "at the bank"
+        },
+        {
+          "en": "to the post office"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-poczcie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b4-e02",
+      "prompt": "na policji",
+      "options": [
+        {
+          "en": "at the hospital"
+        },
+        {
+          "en": "at the police station"
+        },
+        {
+          "en": "to the police"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-policji"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-b4-e03",
+      "text": "jestem na poczcie",
+      "meaning": {
+        "en": "I'm at the post office"
+      },
+      "distractors": [
+        "jestem na policji",
+        "jestem w banku"
+      ],
+      "items": [
+        "byc-jestem",
+        "na-poczcie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b4-e04",
+      "prompt": "na dworcu",
+      "options": [
+        {
+          "en": "at the airport"
+        },
+        {
+          "en": "at the bus stop"
+        },
+        {
+          "en": "at the station"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-dworcu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b4-e05",
+      "prompt": "na lotnisku",
+      "options": [
+        {
+          "en": "at the airport"
+        },
+        {
+          "en": "at the station"
+        },
+        {
+          "en": "on the plane"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-lotnisku"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b4-e06",
+      "text": "Czekam na ciebie na ___.",
+      "meaning": {
+        "en": "I'm waiting for you at the station."
+      },
+      "gaps": [
+        [
+          "dworcu"
+        ]
+      ],
+      "distractors": [
+        "dworzec",
+        "dworca"
+      ],
+      "items": [
+        "czekac-czekam",
+        "na-ciebie",
+        "na-dworcu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b4-e07",
+      "prompt": "na basenie",
+      "options": [
+        {
+          "en": "in the bath"
+        },
+        {
+          "en": "at the swimming pool"
+        },
+        {
+          "en": "at the gym"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-basenie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b4-e08",
+      "prompt": "na koncercie",
+      "options": [
+        {
+          "en": "at the theatre"
+        },
+        {
+          "en": "to a concert"
+        },
+        {
+          "en": "at a concert"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-koncercie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b4-e09",
+      "prompt": "na filmie",
+      "options": [
+        {
+          "en": "at a film, at the cinema (watching a film)"
+        },
+        {
+          "en": "in the cinema building"
+        },
+        {
+          "en": "on television"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-filmie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-b4-e10",
+      "prompt": "w pracy",
+      "options": [
+        {
+          "en": "at school"
+        },
+        {
+          "en": "at work"
+        },
+        {
+          "en": "at home"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-pracy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-b4-e11",
+      "prompt": {
+        "en": "my husband is at work"
+      },
+      "acceptedAnswers": [
+        "mój mąż jest w pracy"
+      ],
+      "distractors": [
+        "na",
+        "praca"
+      ],
+      "items": [
+        "moj",
+        "maz",
+        "byc-jest",
+        "w-pracy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-b4-e12",
+      "acceptedAnswers": [
+        "na lotnisku"
+      ],
+      "meaning": {
+        "en": "at the airport"
+      },
+      "items": [
+        "na-lotnisku"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-b4-e13",
+      "prompt": {
+        "en": "at the swimming pool"
+      },
+      "acceptedAnswers": [
+        "na basenie"
+      ],
+      "items": [
+        "na-basenie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b4-e14",
+      "text": "Wczoraj byłam w kinie na ___, a potem na koncercie.",
+      "meaning": {
+        "en": "Yesterday I was at the cinema, watching a film, and then at a concert."
+      },
+      "gaps": [
+        [
+          "filmie"
+        ]
+      ],
+      "distractors": [
+        "film",
+        "filmu"
+      ],
+      "items": [
+        "wczoraj",
+        "byc-bylam",
+        "w-kinie",
+        "na-filmie",
+        "a",
+        "potem",
+        "na-koncercie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-b4-e15",
+      "pairs": [
+        {
+          "polish": "na poczcie",
+          "meaning": {
+            "en": "at the post office"
+          }
+        },
+        {
+          "polish": "na policji",
+          "meaning": {
+            "en": "at the police station"
+          }
+        },
+        {
+          "polish": "na dworcu",
+          "meaning": {
+            "en": "at the station"
+          }
+        },
+        {
+          "polish": "na basenie",
+          "meaning": {
+            "en": "at the swimming pool"
+          }
+        },
+        {
+          "polish": "w pracy",
+          "meaning": {
+            "en": "at work"
+          }
+        }
+      ],
+      "items": [
+        "na-poczcie",
+        "na-policji",
+        "na-dworcu",
+        "na-basenie",
+        "w-pracy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-b4-e16",
+      "text": "Mój tata jest w ___, a mama na policji.",
+      "meaning": {
+        "en": "My dad is at work, and Mum at the police station."
+      },
+      "gaps": [
+        [
+          "pracy"
+        ]
+      ],
+      "distractors": [
+        "praca",
+        "pracę"
+      ],
+      "items": [
+        "moj",
+        "tata",
+        "byc-jest",
+        "w-pracy",
+        "a",
+        "mama",
+        "na-policji"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-b4-e17",
+      "lines": [
+        "Gdzie jesteś?",
+        "Jestem na lotnisku i czekam na ciebie.",
+        "A ja jestem jeszcze w pracy."
+      ],
+      "meaning": {
+        "en": "Where are you?"
+      },
+      "statements": [
+        {
+          "text": "Ona jest na dworcu.",
+          "meaning": {
+            "en": "She is at the station."
+          },
+          "true": false
+        },
+        {
+          "text": "Ona jest na lotnisku.",
+          "meaning": {
+            "en": "She is at the airport."
+          },
+          "true": true
+        },
+        {
+          "text": "On jest jeszcze w pracy.",
+          "meaning": {
+            "en": "He is still at work."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "gdzie",
+        "byc-jestes",
+        "byc-jestem",
+        "na-lotnisku",
+        "i",
+        "czekac-czekam",
+        "na-ciebie",
+        "a",
+        "ja",
+        "jeszcze",
+        "w-pracy"
+      ]
+    }
+  ]
+}

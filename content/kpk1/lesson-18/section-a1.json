@@ -1,0 +1,466 @@
+{
+  "id": "kpk1-l18-a1",
+  "section": {
+    "letter": "A",
+    "heading": "„Ciasne, ale własne!”",
+    "meaning": {
+      "en": "Small, but my own!"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-a1-t01",
+      "before": "kpk1-l18-a1-e01",
+      "title": {
+        "en": "W kuchni, w salonie"
+      },
+      "body": {
+        "en": "A flat, *mieszkanie*, has rooms: *pokój* (a room), *kuchnia*, *łazienka*, *sypialnia* (a bedroom), *salon* (a living room) and *przedpokój* (the hall by the front door). Asked *gdzie?* (where?), the room changes its ending after *w* (in): *w kuchni*, *w salonie*, *w pokoju*. A balcony takes *na*: *na balkonie*."
+      },
+      "table": {
+        "title": {
+          "en": "Gdzie? W pokoju"
+        },
+        "columns": [
+          {
+            "header": "co?"
+          },
+          {
+            "header": "gdzie?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "pokój",
+              "w pokoju"
+            ]
+          },
+          {
+            "cells": [
+              "kuchnia",
+              "w kuchni"
+            ]
+          },
+          {
+            "cells": [
+              "łazienka",
+              "w łazience"
+            ]
+          },
+          {
+            "cells": [
+              "sypialnia",
+              "w sypialni"
+            ]
+          },
+          {
+            "cells": [
+              "salon",
+              "w salonie"
+            ]
+          },
+          {
+            "cells": [
+              "przedpokój",
+              "w przedpokoju"
+            ]
+          },
+          {
+            "cells": [
+              "balkon",
+              "na balkonie"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a1-e01",
+      "prompt": "pokój",
+      "options": [
+        {
+          "en": "a room (w pokoju: in the room)"
+        },
+        {
+          "en": "a flat"
+        },
+        {
+          "en": "a house"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pokoj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a1-e02",
+      "prompt": "kuchnia",
+      "options": [
+        {
+          "en": "a bathroom"
+        },
+        {
+          "en": "a kitchen (w kuchni: in the kitchen)"
+        },
+        {
+          "en": "a bedroom"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kuchnia"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-a1-e03",
+      "text": "jestem w kuchni",
+      "meaning": {
+        "en": "I'm in the kitchen"
+      },
+      "distractors": [
+        "jestem w łazience",
+        "jesteś w kuchni"
+      ],
+      "items": [
+        "byc-jestem",
+        "kuchnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a1-e04",
+      "prompt": "łazienka",
+      "options": [
+        {
+          "en": "a kitchen"
+        },
+        {
+          "en": "a hall"
+        },
+        {
+          "en": "a bathroom (w łazience: in the bathroom)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "lazienka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a1-e05",
+      "prompt": "sypialnia",
+      "options": [
+        {
+          "en": "a bedroom (w sypialni: in the bedroom)"
+        },
+        {
+          "en": "a living room"
+        },
+        {
+          "en": "a balcony"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sypialnia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a1-e06",
+      "text": "Mama jest w ___, gotuje obiad.",
+      "meaning": {
+        "en": "Mum is in the kitchen, cooking lunch."
+      },
+      "gaps": [
+        [
+          "kuchni"
+        ]
+      ],
+      "distractors": [
+        "kuchnia",
+        "łazience"
+      ],
+      "items": [
+        "mama",
+        "byc-jest",
+        "kuchnia",
+        "gotowac-gotuje-on",
+        "obiad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a1-e07",
+      "prompt": "salon",
+      "options": [
+        {
+          "en": "a bedroom"
+        },
+        {
+          "en": "a living room (w salonie: in the living room)"
+        },
+        {
+          "en": "a toilet"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "salon"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a1-e08",
+      "prompt": "przedpokój",
+      "options": [
+        {
+          "en": "a room"
+        },
+        {
+          "en": "a kitchen"
+        },
+        {
+          "en": "a hall (w przedpokoju: in the hall)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przedpokoj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a1-e09",
+      "prompt": "balkon",
+      "options": [
+        {
+          "en": "a balcony (na balkonie: on the balcony)"
+        },
+        {
+          "en": "a garden"
+        },
+        {
+          "en": "a window"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "balkon"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a1-e10",
+      "prompt": "na",
+      "options": [
+        {
+          "en": "in (w kuchni)"
+        },
+        {
+          "en": "on, at (where: na stole: on the table; na balkonie: on the balcony)"
+        },
+        {
+          "en": "with"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-loc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-a1-e11",
+      "prompt": {
+        "en": "Adam is on the balcony"
+      },
+      "acceptedAnswers": [
+        "Adam jest na balkonie"
+      ],
+      "distractors": [
+        "w",
+        "balkon"
+      ],
+      "items": [
+        "adam",
+        "byc-jest",
+        "na-loc",
+        "balkon"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-a1-e12",
+      "acceptedAnswers": [
+        "w łazience"
+      ],
+      "meaning": {
+        "en": "in the bathroom"
+      },
+      "items": [
+        "lazienka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-a1-e13",
+      "prompt": {
+        "en": "in the living room"
+      },
+      "acceptedAnswers": [
+        "w salonie"
+      ],
+      "items": [
+        "salon"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-a1-e14",
+      "pairs": [
+        {
+          "polish": "pokój",
+          "meaning": {
+            "en": "a room"
+          }
+        },
+        {
+          "polish": "kuchnia",
+          "meaning": {
+            "en": "a kitchen"
+          }
+        },
+        {
+          "polish": "łazienka",
+          "meaning": {
+            "en": "a bathroom"
+          }
+        },
+        {
+          "polish": "sypialnia",
+          "meaning": {
+            "en": "a bedroom"
+          }
+        },
+        {
+          "polish": "przedpokój",
+          "meaning": {
+            "en": "a hall"
+          }
+        }
+      ],
+      "items": [
+        "pokoj",
+        "kuchnia",
+        "lazienka",
+        "sypialnia",
+        "przedpokoj"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a1-e15",
+      "text": "Gdzie jest Ewa? Jest w ___.",
+      "meaning": {
+        "en": "Where is Ewa? She is in her room."
+      },
+      "gaps": [
+        [
+          "pokoju"
+        ]
+      ],
+      "distractors": [
+        "pokój",
+        "pokoje"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "ewa",
+        "pokoj"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l18-a1-e16",
+      "lines": [
+        "Mam małe mieszkanie.",
+        "Jest w nim kuchnia, łazienka, salon i sypialnia.",
+        "Na balkonie są kwiaty."
+      ],
+      "meaning": {
+        "en": "My flat."
+      },
+      "statements": [
+        {
+          "text": "Mieszkanie jest duże.",
+          "meaning": {
+            "en": "The flat is big."
+          },
+          "true": false
+        },
+        {
+          "text": "W mieszkaniu jest kuchnia.",
+          "meaning": {
+            "en": "There is a kitchen in the flat."
+          },
+          "true": true
+        },
+        {
+          "text": "Na balkonie są kwiaty.",
+          "meaning": {
+            "en": "There are flowers on the balcony."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "miec-mam",
+        "maly",
+        "mieszkanie",
+        "byc-jest",
+        "w-nim",
+        "kuchnia",
+        "lazienka",
+        "salon",
+        "i",
+        "sypialnia",
+        "na-loc",
+        "balkon",
+        "byc-sa",
+        "kwiaty"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-a1-e17",
+      "prompt": {
+        "en": "the children are in the bedroom"
+      },
+      "acceptedAnswers": [
+        "dzieci są w sypialni"
+      ],
+      "distractors": [
+        "jest",
+        "sypialnia"
+      ],
+      "items": [
+        "dzieci",
+        "byc-sa",
+        "sypialnia"
+      ]
+    }
+  ]
+}

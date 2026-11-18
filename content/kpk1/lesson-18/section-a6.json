@@ -1,0 +1,390 @@
+{
+  "id": "kpk1-l18-a6",
+  "section": {
+    "letter": "A",
+    "heading": "„Ciasne, ale własne!”",
+    "meaning": {
+      "en": "Small, but my own!"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l18-a6-t01",
+      "before": "kpk1-l18-a6-e01",
+      "title": {
+        "en": "Ciasne, ale własne"
+      },
+      "body": {
+        "en": "*Ciasne, ale własne* (cramped, but my own) is what Poles say of a small flat they love. To describe a flat: *wygodny* (comfortable), *cichy* (quiet), *jasny*, *z widokiem na park* (with a view of the park). Where in the room: *w rogu* (in the corner), *na środku* (in the middle), *obok* (next to): *obok biurka*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a6-e01",
+      "prompt": "ciasny",
+      "options": [
+        {
+          "en": "spacious"
+        },
+        {
+          "en": "cramped, small (ciasny, ciasna, ciasne)"
+        },
+        {
+          "en": "bright"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ciasny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a6-e02",
+      "prompt": "własny",
+      "options": [
+        {
+          "en": "rented"
+        },
+        {
+          "en": "new"
+        },
+        {
+          "en": "own (własny dom: a house of your own) (własny, własna, własne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wlasny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l18-a6-e03",
+      "text": "ciasne, ale własne",
+      "meaning": {
+        "en": "cramped, but my own"
+      },
+      "distractors": [
+        "duże, ale drogie",
+        "małe, ale ładne"
+      ],
+      "items": [
+        "ciasny",
+        "ale",
+        "wlasny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a6-e04",
+      "prompt": "wygodny",
+      "options": [
+        {
+          "en": "comfortable (wygodny, wygodna, wygodne)"
+        },
+        {
+          "en": "expensive"
+        },
+        {
+          "en": "modern"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wygodny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a6-e05",
+      "prompt": "cichy",
+      "options": [
+        {
+          "en": "noisy"
+        },
+        {
+          "en": "quiet (cichy, cicha, ciche)"
+        },
+        {
+          "en": "dark"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "cichy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a6-e06",
+      "text": "Mój pokój jest mały, ale bardzo ___.",
+      "meaning": {
+        "en": "My room is small, but very comfortable."
+      },
+      "gaps": [
+        [
+          "wygodny"
+        ]
+      ],
+      "distractors": [
+        "wygodna",
+        "wygodne"
+      ],
+      "items": [
+        "moj",
+        "pokoj",
+        "byc-jest",
+        "maly",
+        "ale",
+        "bardzo",
+        "wygodny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a6-e07",
+      "prompt": "z widokiem na park",
+      "options": [
+        {
+          "en": "with a garden"
+        },
+        {
+          "en": "near the park"
+        },
+        {
+          "en": "with a view of the park"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-widokiem-na-park"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a6-e08",
+      "prompt": "w rogu",
+      "options": [
+        {
+          "en": "in the corner"
+        },
+        {
+          "en": "in the middle"
+        },
+        {
+          "en": "on the corner of the street"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-rogu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a6-e09",
+      "prompt": "na środku",
+      "options": [
+        {
+          "en": "in the corner"
+        },
+        {
+          "en": "in the middle (na środku pokoju: in the middle of the room)"
+        },
+        {
+          "en": "on the left"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-srodku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l18-a6-e10",
+      "prompt": "obok",
+      "options": [
+        {
+          "en": "under"
+        },
+        {
+          "en": "opposite"
+        },
+        {
+          "en": "next to, beside (obok biurka: next to the desk)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "obok"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-a6-e11",
+      "prompt": {
+        "en": "a quiet flat with a view of the park"
+      },
+      "acceptedAnswers": [
+        "ciche mieszkanie z widokiem na park"
+      ],
+      "distractors": [
+        "cichy",
+        "parku"
+      ],
+      "items": [
+        "cichy",
+        "mieszkanie",
+        "z-widokiem-na-park"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l18-a6-e12",
+      "acceptedAnswers": [
+        "na środku pokoju"
+      ],
+      "meaning": {
+        "en": "in the middle of the room"
+      },
+      "items": [
+        "na-srodku",
+        "pokoj"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l18-a6-e13",
+      "prompt": {
+        "en": "in the corner"
+      },
+      "acceptedAnswers": [
+        "w rogu"
+      ],
+      "items": [
+        "w-rogu"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l18-a6-e14",
+      "text": "Szafa stoi w ___, a łóżko na środku.",
+      "meaning": {
+        "en": "The wardrobe is in the corner, and the bed in the middle."
+      },
+      "gaps": [
+        [
+          "rogu"
+        ]
+      ],
+      "distractors": [
+        "róg",
+        "środku"
+      ],
+      "items": [
+        "szafa",
+        "stac-stoi",
+        "w-rogu",
+        "a",
+        "lozko",
+        "na-srodku"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l18-a6-e15",
+      "pairs": [
+        {
+          "polish": "ciasny",
+          "meaning": {
+            "en": "cramped"
+          }
+        },
+        {
+          "polish": "własny",
+          "meaning": {
+            "en": "own"
+          }
+        },
+        {
+          "polish": "wygodny",
+          "meaning": {
+            "en": "comfortable"
+          }
+        },
+        {
+          "polish": "cichy",
+          "meaning": {
+            "en": "quiet"
+          }
+        },
+        {
+          "polish": "jasny",
+          "meaning": {
+            "en": "bright"
+          }
+        }
+      ],
+      "items": [
+        "ciasny",
+        "wlasny",
+        "wygodny",
+        "cichy",
+        "jasny"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l18-a6-e16",
+      "lines": [
+        "Jakie jest twoje mieszkanie?",
+        "Małe, ale ciche i jasne.",
+        "I z widokiem na park!",
+        "Ciasne, ale własne."
+      ],
+      "meaning": {
+        "en": "A small flat."
+      },
+      "items": [
+        "byc-jest",
+        "mieszkanie",
+        "maly",
+        "ale",
+        "cichy",
+        "i",
+        "jasny",
+        "z-widokiem-na-park",
+        "ciasny",
+        "wlasny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l18-a6-e17",
+      "prompt": {
+        "en": "the lamp is next to the desk"
+      },
+      "acceptedAnswers": [
+        "lampa stoi obok biurka"
+      ],
+      "distractors": [
+        "biurko",
+        "na"
+      ],
+      "items": [
+        "lampa",
+        "stac-stoi",
+        "obok",
+        "biurko"
+      ]
+    }
+  ]
+}
