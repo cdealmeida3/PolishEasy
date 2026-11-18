@@ -1426,5 +1426,27 @@
         "wino-gen"
       ]
     }
+  ],
+  "family": {
+    "me": "ja",
+    "grandfather": "dziadek",
+    "grandmother": "babcia",
+    "uncle": "wujek",
+    "aunt": "ciocia",
+    "father": "tata",
+    "mother": "mama",
+    "cousin": "kuzyn",
+    "cousin-girl": "kuzynka",
+    "brother": "brat",
+    "sister": "siostra"
+  },
+  "timesOfDay": [
+    {"item": "rano", "hours": [7, 8, 9]},
+    {"item": "przed-poludniem", "hours": [10, 11]},
+    {"item": "w-poludnie", "hours": [12], "onTheHour": true},
+    {"item": "po-poludniu", "hours": [13, 14, 15, 16]},
+    {"item": "wieczorem", "hours": [19, 20, 21, 22]},
+    {"item": "o-polnocy", "hours": [0], "onTheHour": true},
+    {"item": "w-nocy", "hours": [1, 2, 3, 4]}
   ]
 }

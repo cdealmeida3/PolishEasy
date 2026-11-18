@@ -32,6 +32,7 @@ import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onLast
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.performClick
@@ -78,7 +79,10 @@ import com.polisheasy.engine.LottoRound
 import com.polisheasy.engine.PlateRound
 import com.polisheasy.engine.MarketRound
 import com.polisheasy.engine.AisleRound
+import com.polisheasy.engine.ClockRound
 import com.polisheasy.engine.FlipRound
+import com.polisheasy.engine.TreeRound
+import com.polisheasy.app.ui.components.TREE_SPOT_TAG
 import com.polisheasy.engine.TableRound
 import com.polisheasy.engine.TillRound
 import com.polisheasy.engine.ChatRound
@@ -847,6 +851,46 @@ class ScreenshotsTest {
         ).forEach { (section, name) ->
             screen.runOnUiThread {
                 model.openLesson("kpk1-l10")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
+    fun `chapter 11 of the book over the real course in the light theme`() = chapter11Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 11 of the book over the real course in the dark theme`() = chapter11Tour("dark")
+
+    @Test
+    fun `chapter 11 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter11Tour("large") }
+
+    /**
+     * Chapter 11 over the real course: its Lesson screen at the top and its sections, then section
+     * A's table of people in the accusative, and section B's tables of the possessives and of the
+     * instrumental after jest.
+     */
+    private fun chapter11Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l11") }
+        screen.waitForIdle()
+        shot("264-chapter-11")
+        screen.onAllNodes(hasText("Jak często", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("264-chapter-11-sections")
+        listOf(
+            "kpk1-l11-a4" to "265-chapter-11-kogo",
+            "kpk1-l11-b1" to "266-chapter-11-czyj",
+            "kpk1-l11-b3" to "267-chapter-11-kim-jest",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l11")
                 model.openSection(section)
             }
             screen.waitForIdle()
@@ -2415,6 +2459,78 @@ class ScreenshotsTest {
         repeat(3) { tap(checkNotNull(flip().card).no) }
         screen.mainClock.advanceTimeBy(60_000)
         shot("263-flip-result")
+    }
+
+    @Test
+    fun `Family tree and Times of day over the real course in the light theme`() = chapter11Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Family tree and Times of day over the real course in the dark theme`() = chapter11Games("dark")
+
+    @Test
+    fun `Family tree and Times of day over the real course at the largest font size`() = atTheLargestFontSize { chapter11Games("large") }
+
+    /**
+     * Chapter 11's Games: Family tree's setup, a person marked to be named, a wrong name, a tree
+     * half named, then a person to find, a wrong person tapped, and the result; then Times of
+     * day's time, a wrong answer, and its result.
+     */
+    private fun chapter11Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun tree() = (viewModel?.screen as Screen.Round).round as TreeRound
+
+        fun clock() = (viewModel?.screen as Screen.Round).round as ClockRound
+
+        fun nameRight() {
+            screen.onNode(hasText(checkNotNull(tree().question).person.phrase) and hasClickAction()).performScrollTo().performClick()
+            tap(R.string.action_continue)
+        }
+
+        openRealPractice()
+        openGame(R.string.game_family_tree)
+        shot("268-tree-setup")
+        tap(R.string.option_name)
+        tap(R.string.setup_play)
+        shot("269-tree-name")
+        val first = checkNotNull(tree().question)
+        screen.onNode(hasText(first.options.first { it != first.person.phrase }) and hasClickAction()).performScrollTo().performClick()
+        shot("270-tree-name-wrong")
+        tap(R.string.action_continue)
+        repeat(4) { nameRight() }
+        shot("271-tree-half-named")
+        leaveRound()
+
+        openGame(R.string.game_family_tree)
+        tap(R.string.option_find)
+        tap(R.string.setup_play)
+        shot("272-tree-find")
+        val asked = checkNotNull(tree().question).person
+        val other = tree().people.first { it.relative != asked.relative }
+        screen.onNodeWithTag(TREE_SPOT_TAG + other.relative.id).performScrollTo().performClick()
+        shot("273-tree-find-wrong")
+        tap(R.string.action_continue)
+        while (viewModel?.screen is Screen.Round) {
+            screen.onNodeWithTag(TREE_SPOT_TAG + checkNotNull(tree().question).person.relative.id).performScrollTo().performClick()
+            tap(R.string.action_continue)
+        }
+        shot("274-tree-result")
+        tap(R.string.result_done)
+
+        openGame(R.string.game_times_of_day)
+        tap(R.string.setup_play)
+        shot("275-times-card")
+        repeat(2) {
+            val card = checkNotNull(clock().card)
+            screen.onNode(hasText(card.answer) and hasClickAction()).performScrollTo().performClick()
+        }
+        val card = checkNotNull(clock().card)
+        screen.onNode(hasText(card.options[(card.right + 1) % card.options.size]) and hasClickAction()).performScrollTo().performClick()
+        shot("276-times-wrong")
+        tap(R.string.action_continue)
+        screen.mainClock.advanceTimeBy(60_000)
+        shot("277-times-result")
     }
 
     private fun registerSort(theme: String) {

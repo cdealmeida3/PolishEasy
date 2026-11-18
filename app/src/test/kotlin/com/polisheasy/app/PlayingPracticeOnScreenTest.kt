@@ -19,6 +19,8 @@ import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onLast
 import androidx.compose.ui.test.onNodeWithContentDescription
+import androidx.compose.ui.test.assertContentDescriptionEquals
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
@@ -47,7 +49,10 @@ import com.polisheasy.engine.LottoRound
 import com.polisheasy.engine.PlateRound
 import com.polisheasy.engine.MarketRound
 import com.polisheasy.engine.AisleRound
+import com.polisheasy.engine.ClockRound
 import com.polisheasy.engine.FlipRound
+import com.polisheasy.engine.TreeRound
+import com.polisheasy.app.ui.components.TREE_SPOT_TAG
 import com.polisheasy.engine.TableRound
 import com.polisheasy.engine.TillRound
 import com.polisheasy.engine.QuickRound
@@ -901,6 +906,88 @@ class PlayingPracticeOnScreenTest {
     }
 
     @Test
+    fun `Family tree marks a person, the Learner says who it is, and found, taps the person named`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_family_tree)
+        tap(R.string.option_name)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val total = tree().total
+        val first = checkNotNull(tree().question)
+        shows(R.string.tree_name_instruction)
+        first.options.forEach { option -> screen.onNode(hasText(option) and hasClickAction()).assertExists() }
+        screen.onNodeWithTag(TREE_SPOT_TAG + "me").assertExists()
+
+        // A wrong answer: who it was is written, and the phrase said.
+        clips.asked.clear()
+        screen.onNode(hasText(first.options.first { it != first.person.phrase }) and hasClickAction()).performScrollTo().performClick()
+        showsFurtherDown(text(R.string.tree_note, first.person.phrase, first.person.meaning))
+        assertEquals(listOfNotNull(viewModel?.practiceClipOf(first.person.phrase)?.let { Played(it.path, slow = false) }), clips.played)
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            val asked = checkNotNull(tree().question)
+            screen.onNode(hasText(asked.person.phrase) and hasClickAction()).performScrollTo().performClick()
+            tap(R.string.action_continue)
+        }
+        showsScore(total - 1, total)
+    }
+
+    @Test
+    fun `Family tree found writes the phrase, and a wrong person tapped is marked with who it is`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_family_tree)
+        tap(R.string.option_find)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val first = checkNotNull(tree().question)
+        assertTrue(tree().find)
+        shows(R.string.tree_find_instruction)
+        shows(first.person.phrase)
+        val other = tree().people.first { it.relative != first.person.relative }
+        screen.onNodeWithTag(TREE_SPOT_TAG + other.relative.id).performScrollTo().performClick()
+        assertEquals(false, tree().given?.correct)
+        screen.onNodeWithTag(TREE_SPOT_TAG + other.relative.id).assertContentDescriptionEquals(other.word)
+        showsFurtherDown(text(R.string.tree_note, first.person.phrase, first.person.meaning))
+        tap(R.string.action_continue)
+        val second = checkNotNull(tree().question)
+        screen.onNodeWithTag(TREE_SPOT_TAG + second.person.relative.id).performScrollTo().performClick()
+        assertEquals(true, tree().given?.correct)
+    }
+
+    @Test
+    fun `Times of day shows a time, and a wrong answer marks the right one and says what it means`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_times_of_day)
+        tap(R.string.setup_play)
+
+        val first = checkNotNull(clock().card)
+        shows(R.string.times_instruction)
+        shows(text(R.string.times_clock, first.hour, first.minute))
+        shows(text(R.string.quick_time, 1, 0))
+
+        // Right: the next time is there at once.
+        showsFurtherDown(first.answer)
+        screen.onNode(hasText(first.answer) and hasClickAction()).performScrollTo().performClick()
+        shows(right(1))
+
+        // Wrong: what the right one means is shown, and it is said.
+        val second = checkNotNull(clock().card)
+        clips.asked.clear()
+        screen.onNode(hasText(second.options[(second.right + 1) % second.options.size]) and hasClickAction()).performScrollTo().performClick()
+        showsFurtherDown(text(R.string.times_missed, second.answer, second.meaning))
+        assertEquals(listOfNotNull(viewModel?.practiceClipOf(second.answer)?.let { Played(it.path, slow = false) }), clips.played)
+        tap(R.string.action_continue)
+
+        screen.mainClock.advanceTimeBy(60_000)
+        screen.waitForIdle()
+        screen.onNodeWithContentDescription(quantity(R.plurals.result_right_sentence, 1)).assertIsDisplayed()
+        showsFirstBest()
+    }
+
+    @Test
     fun `Numbers read shows the words and says nothing, and a run is three numbers in a row`() {
         openPracticeOverTheRealCourse()
         openGame(R.string.game_numbers)
@@ -1518,6 +1605,10 @@ class PlayingPracticeOnScreenTest {
     private fun table(): TableRound = (viewModel?.screen as Screen.Round).round as TableRound
 
     private fun flip(): FlipRound = (viewModel?.screen as Screen.Round).round as FlipRound
+
+    private fun tree(): TreeRound = (viewModel?.screen as Screen.Round).round as TreeRound
+
+    private fun clock(): ClockRound = (viewModel?.screen as Screen.Round).round as ClockRound
 
     /** Taps the dish on Take the order's menu, which comes after the pad. */
     private fun writeOnPad(polish: String) {

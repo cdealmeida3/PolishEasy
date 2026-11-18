@@ -65,7 +65,15 @@ internal data class PracticeFile(
     val restaurant: RestaurantFile? = null,
     /** The sentences of Negation flip. */
     val negations: List<NegationFile> = emptyList(),
+    /** The family of Family tree: the Item for "me" under `me`, and the Item for each relative under its id. */
+    val family: Map<String, String>? = null,
+    /** The times of day of Times of day. */
+    val timesOfDay: List<TimeOfDayFile> = emptyList(),
 )
+
+/** One time of day of Times of day: its Item id, the hours of the clock it covers, and whether only on the hour. */
+@Serializable
+internal data class TimeOfDayFile(val item: String, val hours: List<Int>, val onTheHour: Boolean = false)
 
 /** The Item ids of Take the order: [forMe] (*dla mnie*), [same] (*to samo*), [and] (*a*), and the [dishes] on the menu. */
 @Serializable
@@ -265,6 +273,10 @@ internal class ReadContent(
             aisles = practice?.aisles.orEmpty().map { Aisle(it.aisle, it.products.distinct()) }.distinctBy { it.names },
             restaurant = practice?.restaurant?.let { Restaurant(it.forMe, it.same, it.and, it.dishes.distinct()) },
             negations = practice?.negations.orEmpty().map { it.negation() }.distinctBy { it.yes },
+            family = practice?.family?.let { family ->
+                family["me"]?.let { me -> Family(me, family.mapNotNull { (id, item) -> Relative.of(id)?.let { it to item } }.toMap()) }
+            },
+            timesOfDay = practice?.timesOfDay.orEmpty().map { TimeOfDay(it.item, it.hours.distinct(), it.onTheHour) }.distinctBy { it.item },
         )
     }
 
@@ -465,6 +477,8 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         problems += aisleProblems(file, practice.aisles, course, content.itemsComplete)
         practice.restaurant?.let { restaurant -> problems += restaurantProblems(file, restaurant, course, content.itemsComplete) }
         problems += negationProblems(file, practice.negations, course, content.itemsComplete)
+        practice.family?.let { family -> problems += familyProblems(file, family, practice, course, content.itemsComplete) }
+        problems += timeOfDayProblems(file, practice.timesOfDay, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -636,6 +650,38 @@ private fun negationProblems(file: String, negations: List<NegationFile>, course
         }
     }
     negations.map { it.yes }.repeated().forEach { yes -> problems += ContentProblem(file, null, "The sentence \"$yes\" is listed more than once under negations") }
+    return problems
+}
+
+/**
+ * What is wrong with Family tree: "me" and every relative named, each an Item that is defined, no
+ * Item twice, and each relative's noun "m" or "f" under `genders`.
+ */
+private fun familyProblems(file: String, family: Map<String, String>, practice: PracticeFile, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    val known = setOf("me") + Relative.entries.map { it.id }
+    family.keys.filter { it !in known }.forEach { id -> problems += ContentProblem(file, null, "Family tree has no relative $id") }
+    known.filter { it !in family }.forEach { id -> problems += ContentProblem(file, null, "Family tree names no Item for $id") }
+    family.values.distinct().filter { itemsComplete && it !in course.itemsById }.forEach { id ->
+        problems += ContentProblem(file, id, "Family tree names Item $id, which is not defined")
+    }
+    family.values.toList().repeated().forEach { id -> problems += ContentProblem(file, id, "Family tree names $id more than once") }
+    family.filterKeys { it != "me" }.values.distinct().filter { practice.genders[it] !in setOf("m", "f") }.forEach { id ->
+        problems += ContentProblem(file, id, "The relative $id has no gender \"m\" or \"f\" under genders")
+    }
+    return problems
+}
+
+/** What is wrong with Times of day: every Item defined, its hours 0 to 23 and not empty, no hour in two times, and no time listed twice. */
+private fun timeOfDayProblems(file: String, times: List<TimeOfDayFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    times.forEach { time ->
+        if (itemsComplete && time.item !in course.itemsById) problems += ContentProblem(file, time.item, "Times of day names Item ${time.item}, which is not defined")
+        if (time.hours.isEmpty()) problems += ContentProblem(file, time.item, "The time of day ${time.item} has no hours")
+        time.hours.filter { it !in 0..23 }.forEach { hour -> problems += ContentProblem(file, time.item, "The time of day ${time.item} has the hour $hour, which is not 0 to 23") }
+    }
+    times.flatMap { it.hours.distinct().map(Int::toString) }.repeated().forEach { hour -> problems += ContentProblem(file, null, "The hour $hour is in more than one time of day") }
+    times.map { it.item }.repeated().forEach { id -> problems += ContentProblem(file, id, "The time of day $id is listed more than once") }
     return problems
 }
 

@@ -75,6 +75,10 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_take_the_order, R.string.game_take_the_order_note, R.string.game_take_the_order_needs, R.drawable.game_take_the_order)
     Game.NEGATION_FLIP ->
         GameWords(R.string.game_negation_flip, R.string.game_negation_flip_note, R.string.game_negation_flip_needs, R.drawable.game_negation_flip)
+    Game.FAMILY_TREE ->
+        GameWords(R.string.game_family_tree, R.string.game_family_tree_note, R.string.game_family_tree_needs, R.drawable.game_family_tree)
+    Game.TIMES_OF_DAY ->
+        GameWords(R.string.game_times_of_day, R.string.game_times_of_day_note, R.string.game_times_of_day_needs, R.drawable.game_times_of_day)
 }
 
 @StringRes
@@ -89,7 +93,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.MARKET_LIST, Game.AISLE_SORT, Game.TAKE_THE_ORDER, Game.NEGATION_FLIP, Game.CHAT, Game.ANKIETA -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.MARKET_LIST, Game.AISLE_SORT, Game.TAKE_THE_ORDER, Game.NEGATION_FLIP, Game.FAMILY_TREE, Game.TIMES_OF_DAY, Game.CHAT, Game.ANKIETA -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
@@ -174,6 +178,8 @@ internal fun optionLabel(option: OptionView): String = option.label
         "two-goods" -> R.string.option_two_goods
         "two-guests" -> R.string.option_two_guests
         "three-guests" -> R.string.option_three_guests
+        "name" -> R.string.option_name
+        "find" -> R.string.option_find
         else -> error("No name for the option ${option.id}")
     },
 )
