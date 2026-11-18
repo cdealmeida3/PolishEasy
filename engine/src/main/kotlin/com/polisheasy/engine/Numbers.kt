@@ -117,7 +117,8 @@ internal object Numbers : GameRules {
     /** The questions each level can ask, for each level with enough of them. Heard, only numbers that have a Clip. */
     private fun levels(learned: Learned, listen: Boolean): List<Pair<String, List<NumberQuestion>>> {
         fun heard(item: Item) = !listen || learned.course.clipFor(item.text) != null
-        val numbers = learned.numbers().filterValues(::heard)
+        // Numbers stops at a hundred, as the keypad holds three digits and a sum must fit it.
+        val numbers = learned.numbers().filterValues(::heard).filterKeys { it <= 100 }
         fun single(number: Int) = NumberQuestion(NumberKind.SINGLE, listOf(numbers.getValue(number).text), "$number", "$number", key = "$number")
         val small = numbers.keys.filter { it <= 10 }
         val plus = learned.plus()?.takeIf(::heard)

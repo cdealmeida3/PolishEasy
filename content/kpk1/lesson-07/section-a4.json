@@ -1,0 +1,417 @@
+{
+  "id": "kpk1-l07-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Biernik",
+    "meaning": {
+      "en": "The accusative"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-a4-t01",
+      "before": "kpk1-l07-a4-e01",
+      "title": {
+        "en": "Kupować"
+      },
+      "body": {
+        "en": "*Kupować* goes like every *-ować* verb: *kupuję, kupujesz, kupuje … kupują*. What you buy takes the accusative: *kupuję gazetę*, *kupuję kawę*. A masculine thing stays as it is: *piszę list*, *kupuję bilet*."
+      },
+      "conjugation": {
+        "verb": "kupować",
+        "meaning": {
+          "en": "to buy"
+        },
+        "forms": {
+          "ja": "kupuję",
+          "ty": "kupujesz",
+          "on": "kupuje",
+          "my": "kupujemy",
+          "wy": "kupujecie",
+          "oni": "kupują"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a4-e01",
+      "prompt": "gazeta",
+      "options": [
+        {
+          "en": "a newspaper"
+        },
+        {
+          "en": "a book"
+        },
+        {
+          "en": "a magazine"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "gazeta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a4-e02",
+      "prompt": "gazetę",
+      "options": [
+        {
+          "en": "a newspaper"
+        },
+        {
+          "en": "a newspaper (after czytam, kupuję…: czytam gazetę)"
+        },
+        {
+          "en": "a book (after czytam, czytasz…)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gazeta-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-a4-e03",
+      "text": "czytam gazetę",
+      "meaning": {
+        "en": "I am reading a newspaper"
+      },
+      "distractors": [
+        "czytam książkę",
+        "kupuję gazetę"
+      ],
+      "items": [
+        "czytac-czytam",
+        "gazeta-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a4-e04",
+      "prompt": "list",
+      "options": [
+        {
+          "en": "an e-mail (e-maile: e-mails)"
+        },
+        {
+          "en": "a list"
+        },
+        {
+          "en": "a letter"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "list"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-a4-e05",
+      "prompt": {
+        "en": "I'm writing a letter"
+      },
+      "acceptedAnswers": [
+        "piszę list"
+      ],
+      "distractors": [
+        "listę",
+        "pisze"
+      ],
+      "items": [
+        "pisac-pisze",
+        "list"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a4-e06",
+      "prompt": "kupować",
+      "options": [
+        {
+          "en": "buy (to buy, often)"
+        },
+        {
+          "en": "sell (to sell)"
+        },
+        {
+          "en": "pay (to pay)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kupowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a4-e07",
+      "prompt": "kupuję",
+      "options": [
+        {
+          "en": "buy (to buy, often)"
+        },
+        {
+          "en": "I buy, I am buying"
+        },
+        {
+          "en": "I read"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kupowac-kupuje"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l07-a4-e08",
+      "verb": "kupować",
+      "meaning": {
+        "en": "to buy"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ gazetę, a ty?",
+      "sentenceMeaning": {
+        "en": "I am buying a newspaper, and you?"
+      },
+      "acceptedAnswers": [
+        "kupuję"
+      ],
+      "items": [
+        "ja",
+        "kupowac-kupuje",
+        "gazeta-acc",
+        "a-ty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a4-e09",
+      "prompt": "kawę",
+      "options": [
+        {
+          "en": "coffee"
+        },
+        {
+          "en": "tea (after lubię, mam…: lubię herbatę)"
+        },
+        {
+          "en": "coffee (after lubię, kupuję…: lubię kawę)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kawa-acc"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-a4-e10",
+      "text": "Lubisz ___ czy herbatę?",
+      "meaning": {
+        "en": "Do you like coffee or tea?"
+      },
+      "gaps": [
+        [
+          "kawę"
+        ]
+      ],
+      "distractors": [
+        "kawa",
+        "herbata"
+      ],
+      "items": [
+        "lubic-lubisz",
+        "kawa-acc",
+        "czy",
+        "herbata-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a4-e11",
+      "prompt": "pizzę",
+      "options": [
+        {
+          "en": "a pizza (after robię, lubię…: robię pizzę)"
+        },
+        {
+          "en": "soup (after gotuję, lubię…: gotuję zupę)"
+        },
+        {
+          "en": "pasta (after robię, lubię…)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pizza-acc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-a4-e12",
+      "acceptedAnswers": [
+        "robię pizzę"
+      ],
+      "meaning": {
+        "en": "I'm making a pizza"
+      },
+      "items": [
+        "robic-robie",
+        "pizza-acc"
+      ],
+      "readingAnswers": [
+        "ja robię pizzę"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a4-e13",
+      "prompt": "jakiego",
+      "options": [
+        {
+          "en": "what (asking about a masculine noun: jaki jest twój adres?)"
+        },
+        {
+          "en": "what kind of, what (jakiego for a man or an animal, jaką for a feminine noun: after masz, lubisz…)"
+        },
+        {
+          "en": "whom, who (after znam, mam…: kogo znasz?)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jakiego"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-a4-e14",
+      "text": "jaką herbatę lubisz?",
+      "meaning": {
+        "en": "what kind of tea do you like?"
+      },
+      "distractors": [
+        "jaką kawę lubisz?",
+        "jaka herbata jest dobra?"
+      ],
+      "items": [
+        "jakiego",
+        "herbata-acc",
+        "lubic-lubisz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-a4-e15",
+      "pairs": [
+        {
+          "polish": "gazetę",
+          "meaning": {
+            "en": "a newspaper (after czytam)"
+          }
+        },
+        {
+          "polish": "list",
+          "meaning": {
+            "en": "a letter"
+          }
+        },
+        {
+          "polish": "kupuję",
+          "meaning": {
+            "en": "I buy"
+          }
+        },
+        {
+          "polish": "kawę",
+          "meaning": {
+            "en": "coffee (after lubię)"
+          }
+        },
+        {
+          "polish": "pizzę",
+          "meaning": {
+            "en": "a pizza (after robię)"
+          }
+        },
+        {
+          "polish": "jaką?",
+          "meaning": {
+            "en": "what kind of? (with herbatę)"
+          }
+        }
+      ],
+      "items": [
+        "gazeta-acc",
+        "list",
+        "kupowac-kupuje",
+        "kawa-acc",
+        "pizza-acc",
+        "jakiego"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-a4-e16",
+      "text": "gdzie jest gazeta?",
+      "meaning": {
+        "en": "where is the newspaper?"
+      },
+      "distractors": [
+        "gdzie jest kawa?",
+        "tu jest gazeta"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "gazeta"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-a4-e17",
+      "text": "zielona herbata",
+      "meaning": {
+        "en": "green tea"
+      },
+      "distractors": [
+        "czarna herbata",
+        "zielona kawa"
+      ],
+      "items": [
+        "zielony",
+        "herbata"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-a4-e18",
+      "prompt": {
+        "en": "I like buying coffee"
+      },
+      "acceptedAnswers": [
+        "lubię kupować kawę"
+      ],
+      "distractors": [
+        "kupuję",
+        "kawa"
+      ],
+      "items": [
+        "lubic-lubie",
+        "kupowac",
+        "kawa-acc"
+      ]
+    }
+  ]
+}

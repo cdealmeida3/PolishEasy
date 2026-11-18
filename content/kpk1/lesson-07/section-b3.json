@@ -1,0 +1,462 @@
+{
+  "id": "kpk1-l07-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Kiosk",
+    "meaning": {
+      "en": "At the kiosk"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-b3-t01",
+      "before": "kpk1-l07-b3-e01",
+      "title": {
+        "en": "Płacić"
+      },
+      "body": {
+        "en": "*Płacić* goes like *robić*: *płacę, płacisz, płaci … płacą*. You pay *kartą* (by card), *gotówką* (in cash), or in Poland often *BLIKIEM*, with a code from a bank's app. The seller asks *coś jeszcze?*, and you say what else or *to wszystko*."
+      },
+      "conjugation": {
+        "verb": "płacić",
+        "meaning": {
+          "en": "to pay"
+        },
+        "forms": {
+          "ja": "płacę",
+          "ty": "płacisz",
+          "on": "płaci",
+          "my": "płacimy",
+          "wy": "płacicie",
+          "oni": "płacą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b3-e01",
+      "prompt": "płacić",
+      "options": [
+        {
+          "en": "pay (to pay)"
+        },
+        {
+          "en": "cost (to cost)"
+        },
+        {
+          "en": "buy (to buy, often)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "placic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b3-e02",
+      "prompt": "płacę",
+      "options": [
+        {
+          "en": "I buy, I am buying"
+        },
+        {
+          "en": "I pay, I am paying"
+        },
+        {
+          "en": "it costs (ile kosztuje?: how much is it?)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "placic-place"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b3-e03",
+      "prompt": "kartą",
+      "options": [
+        {
+          "en": "in cash (płacę gotówką)"
+        },
+        {
+          "en": "by phone"
+        },
+        {
+          "en": "by card (płacę kartą)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "karta-instr"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b3-e04",
+      "text": "płacę kartą",
+      "meaning": {
+        "en": "I'll pay by card"
+      },
+      "distractors": [
+        "płacę gotówką",
+        "płacisz kartą?"
+      ],
+      "items": [
+        "placic-place",
+        "karta-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b3-e05",
+      "prompt": "gotówką",
+      "options": [
+        {
+          "en": "in cash (płacę gotówką)"
+        },
+        {
+          "en": "by card (płacę kartą)"
+        },
+        {
+          "en": "by cheque"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "gotowka-instr"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l07-b3-e06",
+      "verb": "płacić",
+      "meaning": {
+        "en": "to pay"
+      },
+      "person": "ja",
+      "sentence": "___ gotówką.",
+      "sentenceMeaning": {
+        "en": "I'll pay in cash."
+      },
+      "acceptedAnswers": [
+        "płacę"
+      ],
+      "items": [
+        "placic-place",
+        "gotowka-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b3-e07",
+      "prompt": "płaci",
+      "options": [
+        {
+          "en": "I pay, I am paying"
+        },
+        {
+          "en": "he pays, she pays (płaci pan…?: are you paying…? to a man)"
+        },
+        {
+          "en": "it costs (ile kosztuje?: how much is it?)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "placic-placi"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b3-e08",
+      "text": "płaci pan kartą czy gotówką?",
+      "meaning": {
+        "en": "are you paying by card or in cash? (to a man)"
+      },
+      "distractors": [
+        "płaci pani kartą czy gotówką?",
+        "płacę kartą czy gotówką?"
+      ],
+      "items": [
+        "placic-placi",
+        "pan",
+        "karta-instr",
+        "czy",
+        "gotowka-instr"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l07-b3-e09",
+      "verb": "płacić",
+      "meaning": {
+        "en": "to pay"
+      },
+      "person": "on",
+      "sentence": "Pan ___ kartą czy gotówką?",
+      "sentenceMeaning": {
+        "en": "Are you paying by card or in cash? (to a man)"
+      },
+      "acceptedAnswers": [
+        "płaci"
+      ],
+      "items": [
+        "pan",
+        "placic-placi",
+        "karta-instr",
+        "czy",
+        "gotowka-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b3-e10",
+      "prompt": "coś jeszcze?",
+      "options": [
+        {
+          "en": "that's all"
+        },
+        {
+          "en": "what's new?"
+        },
+        {
+          "en": "anything else?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "cos-jeszcze"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-b3-e11",
+      "prompt": {
+        "en": "anything else?"
+      },
+      "acceptedAnswers": [
+        "coś jeszcze?",
+        "czy coś jeszcze?"
+      ],
+      "items": [
+        "cos-jeszcze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b3-e12",
+      "prompt": "to wszystko",
+      "options": [
+        {
+          "en": "that's all"
+        },
+        {
+          "en": "once more"
+        },
+        {
+          "en": "anything else?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "to-wszystko"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-b3-e13",
+      "prompt": {
+        "en": "no, that's all"
+      },
+      "acceptedAnswers": [
+        "nie, to wszystko"
+      ],
+      "distractors": [
+        "coś",
+        "jeszcze"
+      ],
+      "items": [
+        "nie",
+        "to-wszystko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b3-e14",
+      "prompt": "ciastko",
+      "options": [
+        {
+          "en": "a sandwich"
+        },
+        {
+          "en": "a biscuit, a small cake (ciastka: biscuits)"
+        },
+        {
+          "en": "crisps, chips"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ciastko"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-b3-e15",
+      "text": "Czy są ___? Tak, są.",
+      "meaning": {
+        "en": "Are there any biscuits? Yes, there are."
+      },
+      "gaps": [
+        [
+          "ciastka"
+        ]
+      ],
+      "distractors": [
+        "ciastko",
+        "kanapka"
+      ],
+      "items": [
+        "czy",
+        "byc-sa",
+        "ciastko",
+        "tak"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l07-b3-e16",
+      "lines": [
+        "Proszę sok i ciastko.",
+        "Coś jeszcze?",
+        "Nie, to wszystko. Płacę kartą.",
+        "Przepraszam, tylko gotówką!"
+      ],
+      "meaning": {
+        "en": "At a kiosk."
+      },
+      "items": [
+        "prosze",
+        "sok",
+        "i",
+        "ciastko",
+        "cos-jeszcze",
+        "nie",
+        "to-wszystko",
+        "placic-place",
+        "karta-instr",
+        "przepraszam",
+        "tylko",
+        "gotowka-instr"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-b3-e17",
+      "pairs": [
+        {
+          "polish": "płacić",
+          "meaning": {
+            "en": "to pay"
+          }
+        },
+        {
+          "polish": "płacę",
+          "meaning": {
+            "en": "I pay"
+          }
+        },
+        {
+          "polish": "kartą",
+          "meaning": {
+            "en": "by card"
+          }
+        },
+        {
+          "polish": "gotówką",
+          "meaning": {
+            "en": "in cash"
+          }
+        },
+        {
+          "polish": "coś jeszcze?",
+          "meaning": {
+            "en": "anything else?"
+          }
+        },
+        {
+          "polish": "to wszystko",
+          "meaning": {
+            "en": "that's all"
+          }
+        }
+      ],
+      "items": [
+        "placic",
+        "placic-place",
+        "karta-instr",
+        "gotowka-instr",
+        "cos-jeszcze",
+        "to-wszystko"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-b3-e18",
+      "lines": [
+        "Czy coś jeszcze?",
+        "Tak, proszę jeszcze ciastko.",
+        "To wszystko? Płaci pan kartą?",
+        "Nie, płacę gotówką."
+      ],
+      "meaning": {
+        "en": "At a kiosk."
+      },
+      "statements": [
+        {
+          "text": "Klient kupuje ciastko.",
+          "meaning": {
+            "en": "The customer buys a biscuit."
+          },
+          "true": true
+        },
+        {
+          "text": "Klient kupuje sok.",
+          "meaning": {
+            "en": "The customer buys a juice."
+          },
+          "true": false
+        },
+        {
+          "text": "Klient płaci kartą.",
+          "meaning": {
+            "en": "The customer pays by card."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "cos-jeszcze",
+        "tak",
+        "prosze",
+        "ciastko",
+        "to-wszystko",
+        "placic-placi",
+        "pan",
+        "karta-instr",
+        "nie",
+        "placic-place",
+        "gotowka-instr"
+      ]
+    }
+  ]
+}

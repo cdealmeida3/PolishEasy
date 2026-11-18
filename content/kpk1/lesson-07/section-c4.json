@@ -1,0 +1,448 @@
+{
+  "id": "kpk1-l07-c4",
+  "section": {
+    "letter": "C",
+    "heading": "Galeria handlowa",
+    "meaning": {
+      "en": "The shopping centre"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-c4-t01",
+      "before": "kpk1-l07-c4-e01",
+      "title": {
+        "en": "Which one do you recommend?"
+      },
+      "body": {
+        "en": "In a shop, ask *jaki pan poleca?* or *jaki pani poleca?* (which one do you recommend?), and say *biorę ten* or *biorę tę* to take it. In a *sklep samoobsługowy* you choose yourself and pay at the *kasa*. Money is *pieniądze*: you get it from a *bankomat*, and change euro at a *kantor*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c4-e01",
+      "prompt": "samoobsługowy",
+      "options": [
+        {
+          "en": "normal; full-price (bilet normalny: a full-price ticket) (normalny, normalna, normalne)"
+        },
+        {
+          "en": "self-service (samoobsługowy, samoobsługowa, samoobsługowe)"
+        },
+        {
+          "en": "sports, sporty (sportowy, sportowa, sportowe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "samoobslugowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c4-e02",
+      "prompt": "kasa",
+      "options": [
+        {
+          "en": "a bureau de change"
+        },
+        {
+          "en": "a kiosk, a newsagent"
+        },
+        {
+          "en": "a till, a checkout"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kasa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-c4-e03",
+      "text": "to jest sklep samoobsługowy",
+      "meaning": {
+        "en": "this is a self-service shop"
+      },
+      "distractors": [
+        "to jest sklep sportowy",
+        "to jest kasa"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "sklep",
+        "samoobslugowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c4-e04",
+      "prompt": "polecać",
+      "options": [
+        {
+          "en": "recommend (to recommend)"
+        },
+        {
+          "en": "buy (to buy, often)"
+        },
+        {
+          "en": "pay (to pay)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "polecac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c4-e05",
+      "prompt": "poleca",
+      "options": [
+        {
+          "en": "recommend (to recommend)"
+        },
+        {
+          "en": "he recommends, she recommends (jaki pan poleca?: which one do you recommend?)"
+        },
+        {
+          "en": "it costs (ile kosztuje?: how much is it?)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "polecac-poleca"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-c4-e06",
+      "prompt": {
+        "en": "which camera do you recommend? (to a man)"
+      },
+      "acceptedAnswers": [
+        "jaki aparat pan poleca?"
+      ],
+      "distractors": [
+        "polecać",
+        "pani"
+      ],
+      "items": [
+        "jaki",
+        "aparat",
+        "pan",
+        "polecac-poleca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c4-e07",
+      "prompt": "biorę",
+      "options": [
+        {
+          "en": "I buy, I am buying"
+        },
+        {
+          "en": "I pay, I am paying"
+        },
+        {
+          "en": "I take, I'll take (in a shop)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "brac-biore"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-c4-e08",
+      "acceptedAnswers": [
+        "biorę ten"
+      ],
+      "meaning": {
+        "en": "I'll take this one"
+      },
+      "items": [
+        "brac-biore",
+        "ten"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c4-e09",
+      "prompt": "pieniądze",
+      "options": [
+        {
+          "en": "money (nie mam pieniędzy: I have no money)"
+        },
+        {
+          "en": "small change"
+        },
+        {
+          "en": "by card (płacę kartą)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pieniadze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c4-e10",
+      "prompt": "bankomat",
+      "options": [
+        {
+          "en": "a bank"
+        },
+        {
+          "en": "a cash machine"
+        },
+        {
+          "en": "a till, a checkout"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bankomat"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-c4-e11",
+      "text": "Nie mam pieniędzy, ale tam jest ___.",
+      "meaning": {
+        "en": "I don't have any money, but there is a cash machine there."
+      },
+      "gaps": [
+        [
+          "bankomat"
+        ]
+      ],
+      "distractors": [
+        "kantor",
+        "bank"
+      ],
+      "items": [
+        "nie",
+        "miec-mam",
+        "pieniadze",
+        "ale",
+        "tam",
+        "byc-jest",
+        "bankomat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c4-e12",
+      "prompt": "kantor",
+      "options": [
+        {
+          "en": "a cash machine"
+        },
+        {
+          "en": "a bank"
+        },
+        {
+          "en": "a bureau de change"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kantor"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-c4-e13",
+      "text": "co pan poleca?",
+      "meaning": {
+        "en": "what do you recommend? (to a man)"
+      },
+      "distractors": [
+        "co pani poleca?",
+        "co pan kupuje?"
+      ],
+      "items": [
+        "co",
+        "pan",
+        "polecac-poleca"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-c4-e14",
+      "prompt": {
+        "en": "where is the cash machine?"
+      },
+      "acceptedAnswers": [
+        "gdzie jest bankomat?"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "bankomat"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-c4-e15",
+      "text": "kantor też tu jest",
+      "meaning": {
+        "en": "there is a bureau de change here too"
+      },
+      "distractors": [
+        "bankomat też tu jest",
+        "kantor jest tam"
+      ],
+      "items": [
+        "kantor",
+        "tez",
+        "tu",
+        "byc-jest"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l07-c4-e16",
+      "lines": [
+        "Dzień dobry, słucham?",
+        "Czy jest dobry, ale tani aparat?",
+        "Ten jest bardzo dobry i kosztuje tylko trzysta złotych.",
+        "Super! Biorę ten."
+      ],
+      "meaning": {
+        "en": "In a camera shop."
+      },
+      "items": [
+        "dzien-dobry",
+        "slucham",
+        "czy",
+        "byc-jest",
+        "dobry",
+        "ale",
+        "tani",
+        "aparat",
+        "ten",
+        "bardzo",
+        "i",
+        "kosztowac-kosztuje",
+        "tylko",
+        "trzysta",
+        "zloty",
+        "brac-biore"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-c4-e17",
+      "pairs": [
+        {
+          "polish": "kasa",
+          "meaning": {
+            "en": "a till"
+          }
+        },
+        {
+          "polish": "polecać",
+          "meaning": {
+            "en": "to recommend"
+          }
+        },
+        {
+          "polish": "biorę",
+          "meaning": {
+            "en": "I'll take"
+          }
+        },
+        {
+          "polish": "pieniądze",
+          "meaning": {
+            "en": "money"
+          }
+        },
+        {
+          "polish": "bankomat",
+          "meaning": {
+            "en": "a cash machine"
+          }
+        },
+        {
+          "polish": "kantor",
+          "meaning": {
+            "en": "a bureau de change"
+          }
+        }
+      ],
+      "items": [
+        "kasa",
+        "polecac",
+        "brac-biore",
+        "pieniadze",
+        "bankomat",
+        "kantor"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-c4-e18",
+      "lines": [
+        "Masz pieniądze?",
+        "Mam, ale tylko euro.",
+        "Nie ma problemu, tu jest kantor.",
+        "Super! A gdzie jest kasa?"
+      ],
+      "meaning": {
+        "en": "Two friends in a shopping centre."
+      },
+      "statements": [
+        {
+          "text": "Ona ma tylko euro.",
+          "meaning": {
+            "en": "She only has euros."
+          },
+          "true": true
+        },
+        {
+          "text": "W galerii nie ma kantoru.",
+          "meaning": {
+            "en": "There isn't a bureau de change in the shopping centre."
+          },
+          "true": false
+        },
+        {
+          "text": "Oni szukają kasy.",
+          "meaning": {
+            "en": "They are looking for the till."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "miec-masz",
+        "pieniadze",
+        "miec-mam",
+        "ale",
+        "tylko",
+        "nie-ma",
+        "tu",
+        "byc-jest",
+        "kantor",
+        "a",
+        "gdzie",
+        "kasa"
+      ]
+    }
+  ]
+}

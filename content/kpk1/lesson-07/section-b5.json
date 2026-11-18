@@ -1,0 +1,390 @@
+{
+  "id": "kpk1-l07-b5",
+  "section": {
+    "letter": "B",
+    "heading": "Liczebniki 100–1000",
+    "meaning": {
+      "en": "Numbers from 100 to 1000"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-b5-t01",
+      "before": "kpk1-l07-b5-e01",
+      "title": {
+        "en": "Hundreds"
+      },
+      "body": {
+        "en": "The hundreds are *sto*, *dwieście*, *trzysta*, *czterysta*, then *-set*: *pięćset*, *sześćset*, *siedemset*, *osiemset*, *dziewięćset*, and *tysiąc*. Say a long number as it is written: 678 is *sześćset siedemdziesiąt osiem*. After a hundred, *złotych* follows: *trzysta złotych*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b5-e01",
+      "prompt": "dwieście",
+      "options": [
+        {
+          "en": "twenty"
+        },
+        {
+          "en": "two hundred"
+        },
+        {
+          "en": "three hundred"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dwiescie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b5-e02",
+      "prompt": "trzysta",
+      "options": [
+        {
+          "en": "thirty"
+        },
+        {
+          "en": "four hundred"
+        },
+        {
+          "en": "three hundred"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "trzysta"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b5-e03",
+      "text": "dwieście",
+      "meaning": {
+        "en": "two hundred"
+      },
+      "distractors": [
+        "dwadzieścia",
+        "trzysta"
+      ],
+      "items": [
+        "dwiescie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b5-e04",
+      "prompt": "czterysta",
+      "options": [
+        {
+          "en": "four hundred"
+        },
+        {
+          "en": "forty"
+        },
+        {
+          "en": "five hundred"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czterysta"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-b5-e05",
+      "prompt": {
+        "en": "three hundred"
+      },
+      "acceptedAnswers": [
+        "trzysta"
+      ],
+      "items": [
+        "trzysta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b5-e06",
+      "prompt": "pięćset",
+      "options": [
+        {
+          "en": "fifty"
+        },
+        {
+          "en": "five hundred"
+        },
+        {
+          "en": "six hundred"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "piecset"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-b5-e07",
+      "acceptedAnswers": [
+        "pięćset złotych"
+      ],
+      "meaning": {
+        "en": "five hundred złoty"
+      },
+      "items": [
+        "piecset",
+        "zloty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b5-e08",
+      "prompt": "sześćset",
+      "options": [
+        {
+          "en": "sixty"
+        },
+        {
+          "en": "seven hundred"
+        },
+        {
+          "en": "six hundred"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szescset"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b5-e09",
+      "prompt": "siedemset",
+      "options": [
+        {
+          "en": "seven hundred"
+        },
+        {
+          "en": "seventy"
+        },
+        {
+          "en": "eight hundred"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "siedemset"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-b5-e10",
+      "text": "Sto, dwieście, ___, czterysta.",
+      "meaning": {
+        "en": "One hundred, two hundred, three hundred, four hundred."
+      },
+      "gaps": [
+        [
+          "trzysta"
+        ]
+      ],
+      "distractors": [
+        "trzydzieści",
+        "trzynaście"
+      ],
+      "items": [
+        "sto",
+        "dwiescie",
+        "trzysta",
+        "czterysta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b5-e11",
+      "prompt": "osiemset",
+      "options": [
+        {
+          "en": "eighty"
+        },
+        {
+          "en": "eight hundred"
+        },
+        {
+          "en": "nine hundred"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "osiemset"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b5-e12",
+      "prompt": "dziewięćset",
+      "options": [
+        {
+          "en": "ninety"
+        },
+        {
+          "en": "eight hundred"
+        },
+        {
+          "en": "nine hundred"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dziewiecset"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b5-e13",
+      "text": "sześćset siedemdziesiąt osiem",
+      "meaning": {
+        "en": "six hundred and seventy-eight"
+      },
+      "distractors": [
+        "siedemset sześćdziesiąt osiem",
+        "sześćset osiemdziesiąt siedem"
+      ],
+      "items": [
+        "szescset",
+        "siedemdziesiat",
+        "osiem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-b5-e14",
+      "prompt": {
+        "en": "eight hundred"
+      },
+      "acceptedAnswers": [
+        "osiemset"
+      ],
+      "items": [
+        "osiemset"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-b5-e15",
+      "pairs": [
+        {
+          "polish": "dwieście",
+          "meaning": {
+            "en": "200"
+          }
+        },
+        {
+          "polish": "trzysta",
+          "meaning": {
+            "en": "300"
+          }
+        },
+        {
+          "polish": "czterysta",
+          "meaning": {
+            "en": "400"
+          }
+        },
+        {
+          "polish": "pięćset",
+          "meaning": {
+            "en": "500"
+          }
+        },
+        {
+          "polish": "siedemset",
+          "meaning": {
+            "en": "700"
+          }
+        },
+        {
+          "polish": "dziewięćset",
+          "meaning": {
+            "en": "900"
+          }
+        }
+      ],
+      "items": [
+        "dwiescie",
+        "trzysta",
+        "czterysta",
+        "piecset",
+        "siedemset",
+        "dziewiecset"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-b5-e16",
+      "prompt": {
+        "en": "four hundred and fifty-six"
+      },
+      "acceptedAnswers": [
+        "czterysta pięćdziesiąt sześć"
+      ],
+      "distractors": [
+        "czterdzieści",
+        "sześćset"
+      ],
+      "items": [
+        "czterysta",
+        "piecdziesiat",
+        "szesc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-b5-e17",
+      "acceptedAnswers": [
+        "dziewięćset pięćdziesiąt cztery"
+      ],
+      "meaning": {
+        "en": "nine hundred and fifty-four"
+      },
+      "items": [
+        "dziewiecset",
+        "piecdziesiat",
+        "cztery"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-b5-e18",
+      "text": "Ta torba kosztuje ___ złotych.",
+      "meaning": {
+        "en": "This bag costs seven hundred złoty."
+      },
+      "gaps": [
+        [
+          "siedemset"
+        ]
+      ],
+      "distractors": [
+        "siedemdziesiąt",
+        "siedem"
+      ],
+      "items": [
+        "ta",
+        "torba",
+        "kosztowac-kosztuje",
+        "siedemset",
+        "zloty"
+      ]
+    }
+  ]
+}

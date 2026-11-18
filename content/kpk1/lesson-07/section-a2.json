@@ -1,0 +1,437 @@
+{
+  "id": "kpk1-l07-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Biernik",
+    "meaning": {
+      "en": "The accusative"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-a2-t01",
+      "before": "kpk1-l07-a2-e01",
+      "title": {
+        "en": "Biernik: what you have, like, do"
+      },
+      "body": {
+        "en": "After verbs like *mam*, *lubię*, *czytam*, *gotuję* a noun takes the accusative (*biernik*: *kogo? co?*). A feminine noun in *-a* ends in *-ę*, and its adjective in *-ą*: *mam długą listę*. A masculine thing and a neuter noun stay as they are: *mam wolny czas*, *mam sportowe auto*."
+      },
+      "table": {
+        "title": {
+          "en": "Biernik"
+        },
+        "columns": [
+          {
+            "gender": "m"
+          },
+          {
+            "gender": "f"
+          },
+          {
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "case": "M",
+            "cells": [
+              "czas",
+              "list[a]",
+              "auto"
+            ]
+          },
+          {
+            "case": "B",
+            "cells": [
+              "czas",
+              "list[ę]",
+              "auto"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a2-e01",
+      "prompt": "listę",
+      "options": [
+        {
+          "en": "a list"
+        },
+        {
+          "en": "a book (after czytam, czytasz…)"
+        },
+        {
+          "en": "a list (after mam, piszę…: mam listę)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "lista-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-a2-e02",
+      "text": "mam listę",
+      "meaning": {
+        "en": "I have a list"
+      },
+      "distractors": [
+        "masz listę",
+        "mam mapę"
+      ],
+      "items": [
+        "miec-mam",
+        "lista-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a2-e03",
+      "prompt": "długiego",
+      "options": [
+        {
+          "en": "long (długiego for a man or an animal, długą for a feminine noun: after mam, piszę…)"
+        },
+        {
+          "en": "long (długi, długa, długie)"
+        },
+        {
+          "en": "short (krótkiego for a man or an animal, krótką for a feminine noun: after mam, piszę…)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dlugiego"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-a2-e04",
+      "prompt": {
+        "en": "I have a long list"
+      },
+      "acceptedAnswers": [
+        "mam długą listę"
+      ],
+      "distractors": [
+        "długa",
+        "lista"
+      ],
+      "items": [
+        "miec-mam",
+        "dlugiego",
+        "lista-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a2-e05",
+      "prompt": "sportowy",
+      "options": [
+        {
+          "en": "fashionable (modny, modna, modne)"
+        },
+        {
+          "en": "sports, sporty (sportowy, sportowa, sportowe)"
+        },
+        {
+          "en": "new (nowy, nowa, nowe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sportowy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-a2-e06",
+      "text": "Mam ___ auto.",
+      "meaning": {
+        "en": "I have a sports car."
+      },
+      "gaps": [
+        [
+          "sportowe"
+        ]
+      ],
+      "distractors": [
+        "sportową",
+        "sportowy"
+      ],
+      "items": [
+        "miec-mam",
+        "sportowy",
+        "auto"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a2-e07",
+      "prompt": "herbata",
+      "options": [
+        {
+          "en": "coffee"
+        },
+        {
+          "en": "water"
+        },
+        {
+          "en": "tea"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "herbata"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a2-e08",
+      "prompt": "herbatę",
+      "options": [
+        {
+          "en": "tea (after lubię, mam…: lubię herbatę)"
+        },
+        {
+          "en": "tea"
+        },
+        {
+          "en": "coffee (after lubię, kupuję…: lubię kawę)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "herbata-acc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-a2-e09",
+      "acceptedAnswers": [
+        "lubię herbatę"
+      ],
+      "meaning": {
+        "en": "I like tea"
+      },
+      "items": [
+        "lubic-lubie",
+        "herbata-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a2-e10",
+      "prompt": "zielonego",
+      "options": [
+        {
+          "en": "green (zielony, zielona, zielone)"
+        },
+        {
+          "en": "green (zielonego for a man or an animal, zieloną for a feminine noun: after lubię, mam…)"
+        },
+        {
+          "en": "black (czarnego for a man or an animal, czarną for a feminine noun: after lubię, mam…)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zielonego"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-a2-e11",
+      "prompt": {
+        "en": "I like green tea"
+      },
+      "acceptedAnswers": [
+        "lubię zieloną herbatę"
+      ],
+      "distractors": [
+        "zielona",
+        "herbata"
+      ],
+      "items": [
+        "lubic-lubie",
+        "zielonego",
+        "herbata-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a2-e12",
+      "prompt": "zupę",
+      "options": [
+        {
+          "en": "pierogi (Polish dumplings)"
+        },
+        {
+          "en": "pasta"
+        },
+        {
+          "en": "soup (after gotuję, lubię…: gotuję zupę)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zupa-acc"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-a2-e13",
+      "text": "Dzisiaj ___ zupę.",
+      "meaning": {
+        "en": "Today I am cooking soup."
+      },
+      "gaps": [
+        [
+          "gotuję"
+        ]
+      ],
+      "distractors": [
+        "gotuje",
+        "gotować"
+      ],
+      "items": [
+        "dzisiaj",
+        "gotowac-gotuje",
+        "zupa-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a2-e14",
+      "prompt": "polskiego",
+      "options": [
+        {
+          "en": "Polish (polskiego for a man or an animal, polską for a feminine noun: after lubię, oglądam…)"
+        },
+        {
+          "en": "Polish (polski, polska, polskie)"
+        },
+        {
+          "en": "English (angielskiego for a man or an animal, angielską for a feminine noun: after lubię, oglądam…)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "polskiego"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-a2-e15",
+      "prompt": {
+        "en": "I watch Polish TV"
+      },
+      "acceptedAnswers": [
+        "oglądam polską telewizję",
+        "ja oglądam polską telewizję"
+      ],
+      "items": [
+        "ogladac-ogladam",
+        "polskiego",
+        "telewizja-acc"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-a2-e16",
+      "pairs": [
+        {
+          "polish": "listę",
+          "meaning": {
+            "en": "a list (after mam)"
+          }
+        },
+        {
+          "polish": "długą",
+          "meaning": {
+            "en": "long (with listę)"
+          }
+        },
+        {
+          "polish": "herbatę",
+          "meaning": {
+            "en": "tea (after lubię)"
+          }
+        },
+        {
+          "polish": "zieloną",
+          "meaning": {
+            "en": "green (with herbatę)"
+          }
+        },
+        {
+          "polish": "zupę",
+          "meaning": {
+            "en": "soup (after gotuję)"
+          }
+        },
+        {
+          "polish": "sportowe",
+          "meaning": {
+            "en": "sports (with auto)"
+          }
+        }
+      ],
+      "items": [
+        "lista-acc",
+        "dlugiego",
+        "herbata-acc",
+        "zielonego",
+        "zupa-acc",
+        "sportowy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-a2-e17",
+      "prompt": {
+        "en": "the tea is good"
+      },
+      "acceptedAnswers": [
+        "herbata jest dobra"
+      ],
+      "items": [
+        "herbata",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-a2-e18",
+      "text": "Ewa gotuje ___ zupę.",
+      "meaning": {
+        "en": "Ewa is cooking a Polish soup."
+      },
+      "gaps": [
+        [
+          "polską"
+        ]
+      ],
+      "distractors": [
+        "polska",
+        "polski"
+      ],
+      "items": [
+        "ewa",
+        "gotowac-gotuje-on",
+        "polskiego",
+        "zupa-acc"
+      ]
+    }
+  ]
+}

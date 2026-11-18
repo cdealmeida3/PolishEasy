@@ -1,0 +1,452 @@
+{
+  "id": "kpk1-l07-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Kiosk",
+    "meaning": {
+      "en": "At the kiosk"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-b1-t01",
+      "before": "kpk1-l07-b1-e01",
+      "title": {
+        "en": "Proszę…"
+      },
+      "body": {
+        "en": "In a shop, ask for a thing with *proszę* and the accusative: *proszę gazetę*, *proszę kanapkę*, *proszę wodę*. A masculine thing stays as it is: *proszę sok*. In *woda mineralna*, mineral water, the adjective that says the kind comes after the noun."
+      }
+    },
+    {
+      "id": "kpk1-l07-b1-t02",
+      "before": "kpk1-l07-b1-e12",
+      "title": {
+        "en": "Czy jest…?"
+      },
+      "body": {
+        "en": "To ask if a shop has something, say *czy jest…?* for one thing and *czy są…?* for several: *czy jest sok?*, *czy są chipsy?*. The answer is *tak, jest*, *tak, są*, or for both *nie, nie ma*."
+      },
+      "kind": "uwaga"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b1-e01",
+      "prompt": "kiosk",
+      "options": [
+        {
+          "en": "a shop"
+        },
+        {
+          "en": "a café"
+        },
+        {
+          "en": "a kiosk, a newsagent"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kiosk"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b1-e02",
+      "text": "tu jest kiosk",
+      "meaning": {
+        "en": "here is a kiosk"
+      },
+      "distractors": [
+        "tu jest sklep",
+        "tam jest kiosk"
+      ],
+      "items": [
+        "tu",
+        "byc-jest",
+        "kiosk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b1-e03",
+      "prompt": "kanapka",
+      "options": [
+        {
+          "en": "a sandwich"
+        },
+        {
+          "en": "pierogi (Polish dumplings)"
+        },
+        {
+          "en": "a cake"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kanapka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b1-e04",
+      "prompt": "kanapkę",
+      "options": [
+        {
+          "en": "a sandwich"
+        },
+        {
+          "en": "a sandwich (after proszę, kupuję…: proszę kanapkę)"
+        },
+        {
+          "en": "a newspaper (after czytam, kupuję…: czytam gazetę)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kanapka-acc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-b1-e05",
+      "prompt": {
+        "en": "a sandwich, please"
+      },
+      "acceptedAnswers": [
+        "proszę kanapkę"
+      ],
+      "distractors": [
+        "kanapka",
+        "proszą"
+      ],
+      "items": [
+        "prosze",
+        "kanapka-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b1-e06",
+      "prompt": "chipsy",
+      "options": [
+        {
+          "en": "a biscuit, a small cake (ciastka: biscuits)"
+        },
+        {
+          "en": "sweets"
+        },
+        {
+          "en": "crisps, chips"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chipsy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b1-e07",
+      "prompt": "sok",
+      "options": [
+        {
+          "en": "juice"
+        },
+        {
+          "en": "water"
+        },
+        {
+          "en": "tea"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sok"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-b1-e08",
+      "prompt": {
+        "en": "a juice, please"
+      },
+      "acceptedAnswers": [
+        "proszę sok"
+      ],
+      "items": [
+        "prosze",
+        "sok"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b1-e09",
+      "prompt": "wodę",
+      "options": [
+        {
+          "en": "water"
+        },
+        {
+          "en": "water (after proszę, mam…: proszę wodę)"
+        },
+        {
+          "en": "coffee (after lubię, kupuję…: lubię kawę)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "woda-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b1-e10",
+      "prompt": "woda mineralna",
+      "options": [
+        {
+          "en": "sparkling water"
+        },
+        {
+          "en": "fruit juice"
+        },
+        {
+          "en": "mineral water"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "woda-mineralna"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-b1-e11",
+      "text": "Proszę ___ i sok.",
+      "meaning": {
+        "en": "Water and a juice, please."
+      },
+      "gaps": [
+        [
+          "wodę"
+        ]
+      ],
+      "distractors": [
+        "woda",
+        "wody"
+      ],
+      "items": [
+        "prosze",
+        "woda-acc",
+        "i",
+        "sok"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b1-e12",
+      "prompt": "nie ma",
+      "options": [
+        {
+          "en": "there isn't, there aren't (czy jest sok? nie, nie ma)"
+        },
+        {
+          "en": "there is"
+        },
+        {
+          "en": "I don't know"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nie-ma"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b1-e13",
+      "text": "czy są chipsy? nie, nie ma",
+      "meaning": {
+        "en": "are there any crisps? no, there aren't"
+      },
+      "distractors": [
+        "czy jest sok? nie, nie ma",
+        "czy są chipsy? tak, są"
+      ],
+      "items": [
+        "czy",
+        "byc-sa",
+        "chipsy",
+        "nie",
+        "nie-ma"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l07-b1-e14",
+      "lines": [
+        "Dzień dobry. Czy jest woda mineralna?",
+        "Tak, jest.",
+        "Proszę wodę i kanapkę.",
+        "Proszę bardzo."
+      ],
+      "meaning": {
+        "en": "At a kiosk."
+      },
+      "items": [
+        "dzien-dobry",
+        "czy",
+        "byc-jest",
+        "woda-mineralna",
+        "tak",
+        "prosze",
+        "woda-acc",
+        "i",
+        "kanapka-acc",
+        "bardzo"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-b1-e15",
+      "acceptedAnswers": [
+        "czy jest sok?"
+      ],
+      "meaning": {
+        "en": "is there any juice?"
+      },
+      "items": [
+        "czy",
+        "byc-jest",
+        "sok"
+      ],
+      "readingAnswers": [
+        "jest sok?"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-b1-e16",
+      "pairs": [
+        {
+          "polish": "kiosk",
+          "meaning": {
+            "en": "a kiosk"
+          }
+        },
+        {
+          "polish": "kanapkę",
+          "meaning": {
+            "en": "a sandwich (after proszę)"
+          }
+        },
+        {
+          "polish": "chipsy",
+          "meaning": {
+            "en": "crisps"
+          }
+        },
+        {
+          "polish": "sok",
+          "meaning": {
+            "en": "juice"
+          }
+        },
+        {
+          "polish": "wodę",
+          "meaning": {
+            "en": "water (after proszę)"
+          }
+        },
+        {
+          "polish": "nie ma",
+          "meaning": {
+            "en": "there isn't"
+          }
+        }
+      ],
+      "items": [
+        "kiosk",
+        "kanapka-acc",
+        "chipsy",
+        "sok",
+        "woda-acc",
+        "nie-ma"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-b1-e17",
+      "prompt": {
+        "en": "is there any mineral water? no, there isn't"
+      },
+      "acceptedAnswers": [
+        "czy jest woda mineralna? nie, nie ma",
+        "jest woda mineralna? nie, nie ma"
+      ],
+      "items": [
+        "czy",
+        "byc-jest",
+        "woda-mineralna",
+        "nie",
+        "nie-ma"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-b1-e18",
+      "lines": [
+        "Dzień dobry. Czy są chipsy?",
+        "Nie, nie ma. Jest kanapka.",
+        "Dobrze, proszę kanapkę i sok."
+      ],
+      "meaning": {
+        "en": "Adam at a kiosk."
+      },
+      "statements": [
+        {
+          "text": "W kiosku są chipsy.",
+          "meaning": {
+            "en": "The kiosk has crisps."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam kupuje kanapkę.",
+          "meaning": {
+            "en": "Adam buys a sandwich."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam kupuje wodę.",
+          "meaning": {
+            "en": "Adam buys water."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "dzien-dobry",
+        "czy",
+        "byc-sa",
+        "chipsy",
+        "nie",
+        "nie-ma",
+        "byc-jest",
+        "kanapka",
+        "dobrze",
+        "prosze",
+        "kanapka-acc",
+        "i",
+        "sok"
+      ]
+    }
+  ]
+}

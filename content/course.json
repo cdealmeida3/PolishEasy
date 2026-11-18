@@ -9,7 +9,8 @@
     "kpk1/lesson-03/items.json",
     "kpk1/lesson-04/items.json",
     "kpk1/lesson-05/items.json",
-    "kpk1/lesson-06/items.json"
+    "kpk1/lesson-06/items.json",
+    "kpk1/lesson-07/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -28,7 +29,8 @@
     "kpk1/chats/on-the-desk.json",
     "kpk1/chats/new-student.json",
     "kpk1/chats/tango-class.json",
-    "kpk1/chats/weekend-plans.json"
+    "kpk1/chats/weekend-plans.json",
+    "kpk1/chats/at-the-kiosk.json"
   ],
   "levels": [
     {
@@ -435,7 +437,39 @@
               "liczebniki 100–1000"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-07/section-a1.json",
+            "kpk1/lesson-07/section-a2.json",
+            "kpk1/lesson-07/section-a3.json",
+            "kpk1/lesson-07/section-a4.json",
+            "kpk1/lesson-07/section-b1.json",
+            "kpk1/lesson-07/section-b2.json",
+            "kpk1/lesson-07/section-b3.json",
+            "kpk1/lesson-07/section-b4.json",
+            "kpk1/lesson-07/section-b5.json",
+            "kpk1/lesson-07/section-b6.json",
+            "kpk1/lesson-07/section-c1.json",
+            "kpk1/lesson-07/section-c2.json",
+            "kpk1/lesson-07/section-c3.json",
+            "kpk1/lesson-07/section-c4.json",
+            "kpk1/lesson-07/section-g.json"
+          ],
+          "lookUp": [
+            "krotki",
+            "dlugi",
+            "wolny",
+            "zajety",
+            "drogi",
+            "tani",
+            "bogaty",
+            "biedny",
+            "kosztowac",
+            "placic",
+            "polecac",
+            "pieniadze",
+            "kantor",
+            "bankomat"
+          ]
         },
         {
           "id": "kpk1-l08",

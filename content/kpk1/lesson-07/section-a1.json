@@ -1,0 +1,446 @@
+{
+  "id": "kpk1-l07-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Biernik",
+    "meaning": {
+      "en": "The accusative"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-a1-t01",
+      "before": "kpk1-l07-a1-e01",
+      "title": {
+        "en": "Free or busy?"
+      },
+      "body": {
+        "en": "*Masz wolny czas?* asks if a friend is free. The answer can be *tak, mam wolny czas* or *nie, jestem zajęty* (a woman says *zajęta*). Adjectives change with the noun: *lista* is feminine, so it is *krótka lista* or *długa lista*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a1-e01",
+      "prompt": "wolny",
+      "options": [
+        {
+          "en": "free (wolny, wolna, wolne)"
+        },
+        {
+          "en": "busy (zajęty, zajęta, zajęte)"
+        },
+        {
+          "en": "new (nowy, nowa, nowe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wolny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-a1-e02",
+      "text": "masz wolny czas?",
+      "meaning": {
+        "en": "do you have free time? (one friend)"
+      },
+      "distractors": [
+        "masz dużo czasu?",
+        "mam wolny czas"
+      ],
+      "items": [
+        "miec-masz",
+        "wolny",
+        "czas"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a1-e03",
+      "prompt": "zajęty",
+      "options": [
+        {
+          "en": "free (wolny, wolna, wolne)"
+        },
+        {
+          "en": "busy (zajęty, zajęta, zajęte)"
+        },
+        {
+          "en": "tired (zmęczony, zmęczona, zmęczone)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zajety"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-a1-e04",
+      "text": "Masz wolny czas czy jesteś ___?",
+      "meaning": {
+        "en": "Do you have free time or are you busy? (to a woman)"
+      },
+      "gaps": [
+        [
+          "zajęta"
+        ]
+      ],
+      "distractors": [
+        "zajęty",
+        "wolna"
+      ],
+      "items": [
+        "miec-masz",
+        "wolny",
+        "czas",
+        "czy",
+        "byc-jestes",
+        "zajety"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a1-e05",
+      "prompt": "galeria handlowa",
+      "options": [
+        {
+          "en": "a museum"
+        },
+        {
+          "en": "a school"
+        },
+        {
+          "en": "a shopping centre, a mall"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "galeria-handlowa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-a1-e06",
+      "text": "może galeria handlowa?",
+      "meaning": {
+        "en": "maybe the shopping centre?"
+      },
+      "distractors": [
+        "może kino?",
+        "to jest galeria handlowa"
+      ],
+      "items": [
+        "moze",
+        "galeria-handlowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a1-e07",
+      "prompt": "lista",
+      "options": [
+        {
+          "en": "a list"
+        },
+        {
+          "en": "a map"
+        },
+        {
+          "en": "a book"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lista"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a1-e08",
+      "prompt": "lista zakupów",
+      "options": [
+        {
+          "en": "a price list"
+        },
+        {
+          "en": "a shopping list"
+        },
+        {
+          "en": "a to-do list"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "lista-zakupow"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-a1-e09",
+      "prompt": {
+        "en": "this is the shopping list"
+      },
+      "acceptedAnswers": [
+        "to jest lista zakupów",
+        "to lista zakupów",
+        "tu jest lista zakupów"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "lista-zakupow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a1-e10",
+      "prompt": "krótki",
+      "options": [
+        {
+          "en": "small (mały, mała, małe)"
+        },
+        {
+          "en": "long (długi, długa, długie)"
+        },
+        {
+          "en": "short (krótki, krótka, krótkie)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "krotki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a1-e11",
+      "prompt": "długi",
+      "options": [
+        {
+          "en": "long (długi, długa, długie)"
+        },
+        {
+          "en": "short (krótki, krótka, krótkie)"
+        },
+        {
+          "en": "big (duży, duża, duże)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dlugi"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-a1-e12",
+      "prompt": {
+        "en": "the list is short"
+      },
+      "acceptedAnswers": [
+        "lista jest krótka"
+      ],
+      "distractors": [
+        "krótki",
+        "długa"
+      ],
+      "items": [
+        "lista",
+        "byc-jest",
+        "krotki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-a1-e13",
+      "prompt": "jutro",
+      "options": [
+        {
+          "en": "today (the same as dziś)"
+        },
+        {
+          "en": "tomorrow"
+        },
+        {
+          "en": "now"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jutro"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-a1-e14",
+      "acceptedAnswers": [
+        "jutro jestem zajęty"
+      ],
+      "meaning": {
+        "en": "tomorrow I'm busy"
+      },
+      "items": [
+        "jutro",
+        "byc-jestem",
+        "zajety"
+      ],
+      "readingAnswers": [
+        "jutro jestem zajęta"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l07-a1-e15",
+      "lines": [
+        "Masz wolny czas?",
+        "Tak, nudzę się.",
+        "Może galeria handlowa?",
+        "Dobrze! Tu jest lista zakupów."
+      ],
+      "meaning": {
+        "en": "Two friends at home."
+      },
+      "items": [
+        "miec-masz",
+        "wolny",
+        "czas",
+        "tak",
+        "nudzic-sie-nudze",
+        "moze",
+        "galeria-handlowa",
+        "dobrze",
+        "tu",
+        "byc-jest",
+        "lista-zakupow"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-a1-e16",
+      "pairs": [
+        {
+          "polish": "wolny",
+          "meaning": {
+            "en": "free"
+          }
+        },
+        {
+          "polish": "zajęty",
+          "meaning": {
+            "en": "busy"
+          }
+        },
+        {
+          "polish": "krótki",
+          "meaning": {
+            "en": "short"
+          }
+        },
+        {
+          "polish": "długi",
+          "meaning": {
+            "en": "long"
+          }
+        },
+        {
+          "polish": "lista",
+          "meaning": {
+            "en": "a list"
+          }
+        },
+        {
+          "polish": "jutro",
+          "meaning": {
+            "en": "tomorrow"
+          }
+        }
+      ],
+      "items": [
+        "wolny",
+        "zajety",
+        "krotki",
+        "dlugi",
+        "lista",
+        "jutro"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-a1-e17",
+      "lines": [
+        "Ewa ma wolny czas i się nudzi.",
+        "Adam jest zajęty.",
+        "Lista zakupów jest długa, ale to nie problem."
+      ],
+      "meaning": {
+        "en": "Ewa has a free afternoon."
+      },
+      "statements": [
+        {
+          "text": "Ewa jest zajęta.",
+          "meaning": {
+            "en": "Ewa is busy."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam ma wolny czas.",
+          "meaning": {
+            "en": "Adam has free time."
+          },
+          "true": false
+        },
+        {
+          "text": "Lista zakupów jest długa.",
+          "meaning": {
+            "en": "The shopping list is long."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "miec-ma",
+        "wolny",
+        "czas",
+        "i",
+        "adam",
+        "byc-jest",
+        "zajety",
+        "lista-zakupow",
+        "dlugi",
+        "ale",
+        "to",
+        "nie",
+        "problem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-a1-e18",
+      "prompt": {
+        "en": "the shopping centre is big"
+      },
+      "acceptedAnswers": [
+        "galeria handlowa jest duża"
+      ],
+      "distractors": [
+        "duży",
+        "mała"
+      ],
+      "items": [
+        "galeria-handlowa",
+        "byc-jest",
+        "duzy"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "id": "kpk1-l07-b4",
+  "section": {
+    "letter": "B",
+    "heading": "Kiosk",
+    "meaning": {
+      "en": "At the kiosk"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-b4-t01",
+      "before": "kpk1-l07-b4-e01",
+      "title": {
+        "en": "A ticket for the bus"
+      },
+      "body": {
+        "en": "At a kiosk you can buy a ticket: *bilet na autobus*. A *bilet normalny* is the full price; a *bilet ulgowy* is cheaper, for school pupils and students. Coins are *monety*, notes are *banknoty*, and *drobne* is small change. *Kupić* is to buy once: *muszę kupić bilet*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b4-e01",
+      "prompt": "magazyn",
+      "options": [
+        {
+          "en": "a newspaper"
+        },
+        {
+          "en": "a book"
+        },
+        {
+          "en": "a magazine"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "magazyn"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b4-e02",
+      "text": "czy jest magazyn?",
+      "meaning": {
+        "en": "is there a magazine?"
+      },
+      "distractors": [
+        "czy jest gazeta?",
+        "czy są magazyny?"
+      ],
+      "items": [
+        "czy",
+        "byc-jest",
+        "magazyn"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b4-e03",
+      "prompt": "kupić",
+      "options": [
+        {
+          "en": "buy (to buy, once)"
+        },
+        {
+          "en": "I buy, I am buying"
+        },
+        {
+          "en": "pay (to pay)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kupic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b4-e04",
+      "prompt": "na autobus",
+      "options": [
+        {
+          "en": "to a concert"
+        },
+        {
+          "en": "for the bus (bilet na autobus: a bus ticket)"
+        },
+        {
+          "en": "for the train"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-autobus"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-b4-e05",
+      "prompt": {
+        "en": "I have to buy a bus ticket"
+      },
+      "acceptedAnswers": [
+        "muszę kupić bilet na autobus"
+      ],
+      "distractors": [
+        "kupuję",
+        "autobusie"
+      ],
+      "items": [
+        "musiec-musze",
+        "kupic",
+        "bilet",
+        "na-autobus"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b4-e06",
+      "prompt": "normalny",
+      "options": [
+        {
+          "en": "reduced, concession (bilet ulgowy: a reduced ticket) (ulgowy, ulgowa, ulgowe)"
+        },
+        {
+          "en": "good (dobry, dobra, dobre)"
+        },
+        {
+          "en": "normal; full-price (bilet normalny: a full-price ticket) (normalny, normalna, normalne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "normalny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b4-e07",
+      "prompt": "ulgowy",
+      "options": [
+        {
+          "en": "reduced, concession (bilet ulgowy: a reduced ticket) (ulgowy, ulgowa, ulgowe)"
+        },
+        {
+          "en": "normal; full-price (bilet normalny: a full-price ticket) (normalny, normalna, normalne)"
+        },
+        {
+          "en": "cheap (tani, tania, tanie)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ulgowy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-b4-e08",
+      "text": "Proszę bilet ___.",
+      "meaning": {
+        "en": "A reduced ticket, please."
+      },
+      "gaps": [
+        [
+          "ulgowy"
+        ]
+      ],
+      "distractors": [
+        "ulgowa",
+        "normalna"
+      ],
+      "items": [
+        "prosze",
+        "bilet",
+        "ulgowy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-b4-e09",
+      "prompt": {
+        "en": "a full-price ticket, please"
+      },
+      "acceptedAnswers": [
+        "proszę bilet normalny",
+        "bilet normalny, proszę"
+      ],
+      "items": [
+        "prosze",
+        "bilet",
+        "normalny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b4-e10",
+      "prompt": "drobne",
+      "options": [
+        {
+          "en": "money (nie mam pieniędzy: I have no money)"
+        },
+        {
+          "en": "small change"
+        },
+        {
+          "en": "a card"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "drobne"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b4-e11",
+      "prompt": "moneta",
+      "options": [
+        {
+          "en": "a banknote (banknoty: banknotes)"
+        },
+        {
+          "en": "a memory card"
+        },
+        {
+          "en": "a coin (monety: coins)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "moneta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-b4-e12",
+      "prompt": "banknot",
+      "options": [
+        {
+          "en": "a banknote (banknoty: banknotes)"
+        },
+        {
+          "en": "a coin (monety: coins)"
+        },
+        {
+          "en": "a ticket (bilety: tickets)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "banknot"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-b4-e13",
+      "acceptedAnswers": [
+        "mam tylko banknoty"
+      ],
+      "meaning": {
+        "en": "I only have banknotes"
+      },
+      "items": [
+        "miec-mam",
+        "tylko",
+        "banknot"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-b4-e14",
+      "text": "masz drobne?",
+      "meaning": {
+        "en": "do you have small change? (one friend)"
+      },
+      "distractors": [
+        "masz monety?",
+        "mam drobne"
+      ],
+      "items": [
+        "miec-masz",
+        "drobne"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-b4-e15",
+      "pairs": [
+        {
+          "polish": "magazyn",
+          "meaning": {
+            "en": "a magazine"
+          }
+        },
+        {
+          "polish": "kupić",
+          "meaning": {
+            "en": "to buy (once)"
+          }
+        },
+        {
+          "polish": "na autobus",
+          "meaning": {
+            "en": "for the bus"
+          }
+        },
+        {
+          "polish": "ulgowy",
+          "meaning": {
+            "en": "reduced"
+          }
+        },
+        {
+          "polish": "monety",
+          "meaning": {
+            "en": "coins"
+          }
+        },
+        {
+          "polish": "drobne",
+          "meaning": {
+            "en": "small change"
+          }
+        }
+      ],
+      "items": [
+        "magazyn",
+        "kupic",
+        "na-autobus",
+        "ulgowy",
+        "moneta",
+        "drobne"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-b4-e16",
+      "lines": [
+        "Ewa musi kupić bilet na autobus.",
+        "Jest studentką, więc kupuje bilet ulgowy.",
+        "Nie ma drobnych, ma tylko banknoty."
+      ],
+      "meaning": {
+        "en": "Ewa at a kiosk."
+      },
+      "statements": [
+        {
+          "text": "Ewa kupuje bilet na autobus.",
+          "meaning": {
+            "en": "Ewa buys a bus ticket."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa kupuje bilet normalny.",
+          "meaning": {
+            "en": "Ewa buys a full-price ticket."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa ma monety.",
+          "meaning": {
+            "en": "Ewa has coins."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "ewa",
+        "musiec-musi",
+        "kupic",
+        "bilet",
+        "na-autobus",
+        "byc-jest",
+        "ulgowy",
+        "miec-ma",
+        "tylko",
+        "banknot"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-b4-e17",
+      "prompt": {
+        "en": "I like paying by card"
+      },
+      "acceptedAnswers": [
+        "lubię płacić kartą"
+      ],
+      "distractors": [
+        "płacę",
+        "karta"
+      ],
+      "items": [
+        "lubic-lubie",
+        "placic",
+        "karta-instr"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l07-b4-e18",
+      "lines": [
+        "Dzień dobry. Proszę bilet na autobus.",
+        "Normalny czy ulgowy?",
+        "Ulgowy. Jestem studentem.",
+        "Proszę bardzo."
+      ],
+      "meaning": {
+        "en": "Buying a bus ticket."
+      },
+      "items": [
+        "dzien-dobry",
+        "prosze",
+        "bilet",
+        "na-autobus",
+        "normalny",
+        "czy",
+        "ulgowy",
+        "byc-jestem",
+        "bardzo"
+      ]
+    }
+  ]
+}

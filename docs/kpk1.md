@@ -153,3 +153,23 @@ It gives the later chapters:
 - *mój* and *twój* in all three genders.
 
 It leaves for later: the accusative as a rule (chapter 7 teaches it; here *książkę*, *imprezę* and *telewizję* are learned one by one), the genitive after *nie* (*nie oglądam telewizji*), and the plural of nouns after numbers (*pięć zdjęć*).
+
+## Chapter 7: Małe zakupy
+
+Book pages 58 to 65 (pages 58 and 59 are missing from the spreads; a frame of them is `teacher-course/pages-extra/lesson-07-pages-58-59.jpg` in the project files), recordings 081 to 092. Fifteen parts, 269 Exercises and 111 new Items.
+
+- **A** *Biernik*, in four: free or busy (18: *masz wolny czas?*, *jestem zajęta*, *galeria handlowa*, *lista zakupów*, *krótki*, *długi*, *jutro*); the accusative of a feminine, a neuter and a masculine thing (18, a table: *mam długą listę*, *lubię zieloną herbatę*, *gotuję zupę*, *oglądam polską telewizję*, *mam sportowe auto*); of a man or an animal (18, a table and an *Uwaga!* on *mojego*, *twojego*: *mam inteligentnego brata*, *mam dobrego tatę*, *kogo znasz?*, *mam kota*); and verbs with it (18, *kupować*'s table: *czytam gazetę*, *piszę list*, *lubię kawę*, *robię pizzę*, *jaką herbatę lubisz?*).
+- **B** *Kiosk*, in four: asking for things (18, an *Uwaga!* on *czy jest…? / czy są…? / nie, nie ma*: *proszę kanapkę*, *sok*, *wodę*, *chipsy*, *woda mineralna*); prices (18, a table of *złoty, złote, złotych* and *grosz, grosze, groszy*: *ile kosztuje?*, *ile kosztują?*, *kanapka z serem*, *proszę dużą kanapkę*, *małą wodę*); paying (18, *płacić*'s table: *płacę kartą*, *gotówką*, *płaci pan…?*, *coś jeszcze?*, *to wszystko*, *ciastko*); and a bus ticket (18: *bilet normalny*, *ulgowy*, *na autobus*, *drobne*, *monety*, *banknoty*, *kupić*, *magazyn*).
+- **B** *Liczebniki 100–1000*, in two: the hundreds (18: *dwieście* to *dziewięćset*, and long numbers such as *sześćset siedemdziesiąt osiem*); *tysiąc* and the lottery (18: *loteria*, *kupon*, *wygrać*, *kiedy*, *promocja*, *albo*).
+- **C** *Galeria handlowa*, in four: the shops (17: *sklep*, *apteka*, *piekarnia*, *drogeria*, *kwiaciarnia*, *cukiernia*, *optyk*, *fryzjer*); where to buy (18: *supermarket*, *kawiarnia*, *bank*, *kosmetyki*, *szampon*, *dezodorant*, *w drogerii*, *w supermarkecie*, *gdzie mogę kupić…?*); a camera and its price (18: *aparat*, *karta pamięci*, *album*, *tani*, *drogi*, *kolorowy*, *bogaty*, *biedny*); and the camera shop and money (18: *sklep samoobsługowy*, *kasa*, *jaki pan poleca?*, *biorę ten*, *pieniądze*, *bankomat*, *kantor*).
+- *Ćwiczenia* (18): the accusative with *jaki*, *jakiego*, *jaką*; *złote* or *groszy* after a number; which shop sells what; a dialogue at the kiosk.
+
+As in chapters 5 and 6, a case form is an Item of its own: each feminine noun in the accusative (*listę*, *herbatę*, *gazetę*, *kanapkę*, *wodę*), *brata*, *tatę*, *kota*, and each adjective in the accusative, by its form for a man with the feminine one as its form (*dobrego*, *dobrą*; *mojego*, *moją*; *jakiego*, *jaką*). *Złoty* and *grosz* carry their forms after numbers (*złote*, *złotych*; *grosze*, *groszy*), and the content tests check every number before them. There are 33 listening tasks on all 12 recordings (085 to 087 and 092 are numbers: the lottery numbers, the hundreds and long numbers; the questions ask one number each), and one Chat: *At the kiosk* (Pan Marek, formal: a newspaper, a big sandwich, a small water, paying by card when the kiosk only takes cash). The new nouns are in Practice's `genders`; 29 Items have pictures (the shops, the things at the kiosk, money) and the hundreds are glyphs.
+
+It gives the later chapters:
+
+- the accusative singular of nouns and adjectives, with *kogo? co?* and *jakiego? jaki? jaką? jakie?*;
+- prices, *ile kosztuje?*, and *złoty*, *grosz* after a number;
+- the numbers to 1000.
+
+It leaves for later: the genitive after *nie ma* (*nie ma kantoru*, *nie mam pieniędzy* are learned as phrases), the locative of shops (*w drogerii*, *w supermarkecie* are Items), and the accusative plural.

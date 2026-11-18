@@ -2457,6 +2457,553 @@
         10,
         10
       ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-081-1",
+      "track": 81,
+      "statement": "Dziewczyna się nudzi.",
+      "meaning": {
+        "en": "The girl is bored."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-081-2",
+      "track": 81,
+      "statement": "Lista zakupów jest długa.",
+      "meaning": {
+        "en": "The shopping list is long."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-081-3",
+      "track": 81,
+      "statement": "Druga dziewczyna ma długą listę.",
+      "meaning": {
+        "en": "The other girl has a long list."
+      },
+      "answer": true,
+      "lines": [
+        8,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-081-4",
+      "track": 81,
+      "question": "Co mówi dziewczyna na końcu?",
+      "meaning": {
+        "en": "What does the girl say at the end?"
+      },
+      "options": [
+        "Mam inteligentnego brata.",
+        "Mam sportowe auto.",
+        "Mam długą listę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-082-1",
+      "track": 82,
+      "question": "Jakiej gazety szuka klientka?",
+      "meaning": {
+        "en": "What newspaper is the customer looking for?"
+      },
+      "options": [
+        "Gazety z programem telewizyjnym.",
+        "Gazety o sporcie.",
+        "Kolorowego magazynu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-082-2",
+      "track": 82,
+      "statement": "W kiosku są chipsy paprykowe.",
+      "meaning": {
+        "en": "The kiosk has paprika crisps."
+      },
+      "answer": false,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l07-082-3",
+      "track": 82,
+      "question": "Ile kosztuje mała kanapka?",
+      "meaning": {
+        "en": "How much is a small sandwich? (in złoty)"
+      },
+      "acceptedAnswers": [
+        "22",
+        "dwadzieścia dwa",
+        "22 złote",
+        "dwadzieścia dwa złote"
+      ],
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-082-4",
+      "track": 82,
+      "statement": "Klientka kupuje dużą kanapkę.",
+      "meaning": {
+        "en": "The customer buys a big sandwich."
+      },
+      "answer": true,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-082-5",
+      "track": 82,
+      "question": "Jaki sok kupuje klientka?",
+      "meaning": {
+        "en": "What juice does the customer buy?"
+      },
+      "options": [
+        "Pomarańczowy.",
+        "Jabłkowy.",
+        "Pomidorowy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-082-6",
+      "track": 82,
+      "statement": "Klientka może płacić kartą.",
+      "meaning": {
+        "en": "The customer can pay by card."
+      },
+      "answer": false,
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-083-1",
+      "track": 83,
+      "question": "Co mówi lektor najpierw?",
+      "meaning": {
+        "en": "What does the speaker say first?"
+      },
+      "options": [
+        "Czy coś jeszcze?",
+        "Co jeszcze?",
+        "Czy to wszystko?"
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-083-2",
+      "track": 83,
+      "statement": "Na końcu lektor mówi: płacę kartą.",
+      "meaning": {
+        "en": "At the end the speaker says: I pay by card."
+      },
+      "answer": false,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-084-1",
+      "track": 84,
+      "statement": "Jeden kupon kosztuje dwa złote.",
+      "meaning": {
+        "en": "One lottery ticket costs two złoty."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-084-2",
+      "track": 84,
+      "question": "Ile numerów trzeba typować?",
+      "meaning": {
+        "en": "How many numbers do you have to pick?"
+      },
+      "options": [
+        "Sześć.",
+        "Trzy.",
+        "Czterdzieści dziewięć."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l07-084-3",
+      "track": 84,
+      "question": "Ile złotych masz, kiedy dobrze typujesz trzy numery?",
+      "meaning": {
+        "en": "How many złoty do you get when you pick three numbers right?"
+      },
+      "acceptedAnswers": [
+        "16",
+        "szesnaście",
+        "16 złotych",
+        "szesnaście złotych"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l07-085-1",
+      "track": 85,
+      "question": "Jaki jest ostatni numer na kuponie numer dwa?",
+      "meaning": {
+        "en": "What is the last number on coupon two?"
+      },
+      "acceptedAnswers": [
+        "49",
+        "czterdzieści dziewięć"
+      ],
+      "lines": [
+        6,
+        12
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l07-085-2",
+      "track": 85,
+      "question": "Jaki jest pierwszy numer na kuponie numer trzy?",
+      "meaning": {
+        "en": "What is the first number on coupon three?"
+      },
+      "acceptedAnswers": [
+        "9",
+        "dziewięć"
+      ],
+      "lines": [
+        13,
+        14
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-086-1",
+      "track": 86,
+      "question": "Jaki liczebnik słyszysz?",
+      "meaning": {
+        "en": "Which number do you hear?"
+      },
+      "options": [
+        "pięćset",
+        "pięćdziesiąt",
+        "piętnaście"
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l07-087-1",
+      "track": 87,
+      "question": "Co mówi lektor przy literze b?",
+      "meaning": {
+        "en": "What does the speaker say at letter b?"
+      },
+      "acceptedAnswers": [
+        "919",
+        "dziewięćset dziewiętnaście"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l07-087-2",
+      "track": 87,
+      "question": "Jaki jest szósty numer?",
+      "meaning": {
+        "en": "What is the sixth number?"
+      },
+      "acceptedAnswers": [
+        "710",
+        "siedemset dziesięć"
+      ],
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-088-1",
+      "track": 88,
+      "statement": "Karolina interesuje się fotografią.",
+      "meaning": {
+        "en": "Karolina is interested in photography."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-088-2",
+      "track": 88,
+      "statement": "Karolina nie ma aparatu.",
+      "meaning": {
+        "en": "Karolina doesn't have a camera."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-088-3",
+      "track": 88,
+      "question": "Gdzie tani aparat jest praktyczny?",
+      "meaning": {
+        "en": "Where is a cheap camera practical?"
+      },
+      "options": [
+        "Na wakacjach w Tatrach.",
+        "W Krakowie.",
+        "W szkole."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-088-4",
+      "track": 88,
+      "question": "Co kolekcjonuje tata Mami?",
+      "meaning": {
+        "en": "What does Mami's dad collect?"
+      },
+      "options": [
+        "Mapy.",
+        "Magazyny.",
+        "Zdjęcia."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-088-5",
+      "track": 88,
+      "statement": "Ona musi kupić długopis i ołówek.",
+      "meaning": {
+        "en": "She has to buy a pen and a pencil."
+      },
+      "answer": true,
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-089-1",
+      "track": 89,
+      "statement": "Kosmetyki są w drogerii.",
+      "meaning": {
+        "en": "The cosmetics are at the drugstore."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-089-2",
+      "track": 89,
+      "question": "Jaki to sklep?",
+      "meaning": {
+        "en": "What kind of shop is it?"
+      },
+      "options": [
+        "Samoobsługowy.",
+        "Drogi.",
+        "Mały."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l07-090-1",
+      "track": 90,
+      "question": "Ile kosztuje pierwszy aparat?",
+      "meaning": {
+        "en": "How much is the first camera? (in złoty)"
+      },
+      "acceptedAnswers": [
+        "300",
+        "trzysta",
+        "300 złotych",
+        "trzysta złotych"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-090-2",
+      "track": 90,
+      "statement": "Pierwszy aparat jest duży i drogi.",
+      "meaning": {
+        "en": "The first camera is big and expensive."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l07-091-1",
+      "track": 91,
+      "statement": "Karta do bankomatu jest w domu.",
+      "meaning": {
+        "en": "The cash card is at home."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l07-091-2",
+      "track": 91,
+      "question": "Ile ona ma euro?",
+      "meaning": {
+        "en": "How many euros does she have?"
+      },
+      "acceptedAnswers": [
+        "500",
+        "pięćset"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-091-3",
+      "track": 91,
+      "question": "Co jest w galerii?",
+      "meaning": {
+        "en": "What is there in the shopping centre?"
+      },
+      "options": [
+        "Bankomat i kantor.",
+        "Bank i apteka.",
+        "Tylko bankomat."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l07-092-1",
+      "track": 92,
+      "question": "Jaki jest ostatni liczebnik?",
+      "meaning": {
+        "en": "What is the last number?"
+      },
+      "options": [
+        "tysiąc",
+        "dziewięćset",
+        "sto"
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
     }
   ]
 }

@@ -1,0 +1,417 @@
+{
+  "id": "kpk1-l07-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Galeria handlowa",
+    "meaning": {
+      "en": "The shopping centre"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-c1-t01",
+      "before": "kpk1-l07-c1-e01",
+      "title": {
+        "en": "Shops"
+      },
+      "body": {
+        "en": "In a *galeria handlowa* there are many *sklepy*: a *piekarnia* sells bread, a *cukiernia* cakes, a *kwiaciarnia* flowers, an *apteka* medicine, and a *drogeria* cosmetics and shampoo. *Optyk* and *fryzjer* are both the shop and the person who works there."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c1-e01",
+      "prompt": "sklep",
+      "options": [
+        {
+          "en": "a kiosk, a newsagent"
+        },
+        {
+          "en": "a shop"
+        },
+        {
+          "en": "a bank"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sklep"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-c1-e02",
+      "text": "tu jest sklep",
+      "meaning": {
+        "en": "here is a shop"
+      },
+      "distractors": [
+        "tu jest kiosk",
+        "tam jest sklep"
+      ],
+      "items": [
+        "tu",
+        "byc-jest",
+        "sklep"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c1-e03",
+      "prompt": "apteka",
+      "options": [
+        {
+          "en": "a drugstore (cosmetics, shampoo…)"
+        },
+        {
+          "en": "a hospital"
+        },
+        {
+          "en": "a chemist, a pharmacy"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "apteka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c1-e04",
+      "prompt": "piekarnia",
+      "options": [
+        {
+          "en": "a bakery"
+        },
+        {
+          "en": "a cake shop"
+        },
+        {
+          "en": "a café"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "piekarnia"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-c1-e05",
+      "prompt": {
+        "en": "where is the bakery?"
+      },
+      "acceptedAnswers": [
+        "gdzie jest piekarnia?"
+      ],
+      "distractors": [
+        "apteka",
+        "są"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "piekarnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c1-e06",
+      "prompt": "drogeria",
+      "options": [
+        {
+          "en": "a chemist, a pharmacy"
+        },
+        {
+          "en": "a drugstore (cosmetics, shampoo…)"
+        },
+        {
+          "en": "a supermarket"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "drogeria"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-c1-e07",
+      "acceptedAnswers": [
+        "tam jest apteka"
+      ],
+      "meaning": {
+        "en": "the chemist is there"
+      },
+      "items": [
+        "tam",
+        "byc-jest",
+        "apteka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c1-e08",
+      "prompt": "kwiaciarnia",
+      "options": [
+        {
+          "en": "a café"
+        },
+        {
+          "en": "a bakery"
+        },
+        {
+          "en": "a florist's"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kwiaciarnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c1-e09",
+      "prompt": "cukiernia",
+      "options": [
+        {
+          "en": "a cake shop"
+        },
+        {
+          "en": "a bakery"
+        },
+        {
+          "en": "a café"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cukiernia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-c1-e10",
+      "text": "Tu jest ___, a tam piekarnia.",
+      "meaning": {
+        "en": "Here is the cake shop, and there the bakery."
+      },
+      "gaps": [
+        [
+          "cukiernia"
+        ]
+      ],
+      "distractors": [
+        "cukierni",
+        "cukiernię"
+      ],
+      "items": [
+        "tu",
+        "byc-jest",
+        "cukiernia",
+        "a",
+        "tam",
+        "piekarnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c1-e11",
+      "prompt": "optyk",
+      "options": [
+        {
+          "en": "a hairdresser's; a hairdresser"
+        },
+        {
+          "en": "an optician's"
+        },
+        {
+          "en": "a chemist, a pharmacy"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "optyk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c1-e12",
+      "prompt": "fryzjer",
+      "options": [
+        {
+          "en": "an optician's"
+        },
+        {
+          "en": "a doctor (a man)"
+        },
+        {
+          "en": "a hairdresser's; a hairdresser"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "fryzjer"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-c1-e13",
+      "pairs": [
+        {
+          "polish": "apteka",
+          "meaning": {
+            "en": "a chemist"
+          }
+        },
+        {
+          "polish": "piekarnia",
+          "meaning": {
+            "en": "a bakery"
+          }
+        },
+        {
+          "polish": "drogeria",
+          "meaning": {
+            "en": "a drugstore"
+          }
+        },
+        {
+          "polish": "kwiaciarnia",
+          "meaning": {
+            "en": "a florist's"
+          }
+        },
+        {
+          "polish": "cukiernia",
+          "meaning": {
+            "en": "a cake shop"
+          }
+        },
+        {
+          "polish": "optyk",
+          "meaning": {
+            "en": "an optician's"
+          }
+        }
+      ],
+      "items": [
+        "apteka",
+        "piekarnia",
+        "drogeria",
+        "kwiaciarnia",
+        "cukiernia",
+        "optyk"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-c1-e14",
+      "text": "gdzie jest kwiaciarnia?",
+      "meaning": {
+        "en": "where is the florist's?"
+      },
+      "distractors": [
+        "gdzie jest kawiarnia?",
+        "gdzie jest cukiernia?"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "kwiaciarnia"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-c1-e15",
+      "prompt": {
+        "en": "where is the drugstore?"
+      },
+      "acceptedAnswers": [
+        "gdzie jest drogeria?"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "drogeria"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l07-c1-e16",
+      "lines": [
+        "To jest galeria handlowa.",
+        "Tu jest apteka, a tam drogeria.",
+        "Jest też piekarnia i fryzjer.",
+        "Nie ma kwiaciarni."
+      ],
+      "meaning": {
+        "en": "A plan of a shopping centre."
+      },
+      "statements": [
+        {
+          "text": "W galerii jest apteka.",
+          "meaning": {
+            "en": "There is a chemist in the shopping centre."
+          },
+          "true": true
+        },
+        {
+          "text": "W galerii jest kwiaciarnia.",
+          "meaning": {
+            "en": "There is a florist's in the shopping centre."
+          },
+          "true": false
+        },
+        {
+          "text": "W galerii jest fryzjer.",
+          "meaning": {
+            "en": "There is a hairdresser's in the shopping centre."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "galeria-handlowa",
+        "tu",
+        "apteka",
+        "a",
+        "tam",
+        "drogeria",
+        "tez",
+        "piekarnia",
+        "i",
+        "fryzjer",
+        "nie-ma"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-c1-e17",
+      "prompt": {
+        "en": "is there a hairdresser here?"
+      },
+      "acceptedAnswers": [
+        "czy jest tu fryzjer?",
+        "czy tu jest fryzjer?"
+      ],
+      "distractors": [
+        "optyk",
+        "są"
+      ],
+      "items": [
+        "czy",
+        "byc-jest",
+        "tu",
+        "fryzjer"
+      ]
+    }
+  ]
+}

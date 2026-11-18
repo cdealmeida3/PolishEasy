@@ -1,0 +1,241 @@
+{
+  "id": "chat-at-the-kiosk",
+  "person": "Pan Marek",
+  "title": {
+    "en": "At the kiosk"
+  },
+  "scene": {
+    "en": "You are Adam. At a kiosk you want a newspaper, a big sandwich and a small bottle of water, and you would like to pay by card. Pan Marek sells there. Be polite: to him you are pan, and he is pan."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "slucham",
+    "prosze",
+    "gazeta-acc",
+    "bardzo",
+    "cos-jeszcze",
+    "tak",
+    "duzy",
+    "duzego",
+    "a",
+    "kanapka-acc",
+    "kanapka",
+    "ile",
+    "kosztowac-kosztuje",
+    "maly",
+    "woda",
+    "czy",
+    "malego",
+    "gazeta",
+    "woda-acc",
+    "trzy",
+    "zloty",
+    "dobrze",
+    "to-wszystko",
+    "placic-placi",
+    "pan",
+    "karta-instr",
+    "gotowka-instr",
+    "placic-place",
+    "przepraszam",
+    "dzisiaj",
+    "tylko",
+    "dziekuje",
+    "do-widzenia"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry! Słucham?",
+      "meaning": {
+        "en": "Good morning! Can I help you?"
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry! Proszę gazetę.",
+          "meaning": {
+            "en": "Good morning! A newspaper, please."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Dzień dobry! Proszę gazetę.",
+            "Dzień dobry, proszę gazetę.",
+            "Proszę gazetę."
+          ]
+        },
+        {
+          "text": "Do widzenia! Proszę gazetę.",
+          "meaning": {
+            "en": "Goodbye! A newspaper, please."
+          },
+          "note": {
+            "en": "*Do widzenia* is goodbye. To start, say *dzień dobry*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Proszę bardzo. Coś jeszcze?",
+      "meaning": {
+        "en": "Here you are. Anything else?"
+      },
+      "replies": [
+        {
+          "text": "Tak, proszę dużą kanapkę.",
+          "meaning": {
+            "en": "Yes, a big sandwich, please."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Tak, proszę dużą kanapkę.",
+            "Proszę dużą kanapkę.",
+            "Tak, dużą kanapkę, proszę."
+          ]
+        },
+        {
+          "text": "Tak, proszę małą kanapkę.",
+          "meaning": {
+            "en": "Yes, a small sandwich, please."
+          },
+          "note": {
+            "en": "You want a big sandwich: *dużą kanapkę*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Proszę, duża kanapka. Coś jeszcze?",
+      "meaning": {
+        "en": "Here you are, a big sandwich. Anything else?"
+      },
+      "replies": [
+        {
+          "text": "Ile kosztuje mała woda?",
+          "meaning": {
+            "en": "How much is a small water?"
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Ile kosztuje mała woda?",
+            "A ile kosztuje mała woda?"
+          ]
+        },
+        {
+          "text": "Ile kosztuje gazeta?",
+          "meaning": {
+            "en": "How much is the newspaper?"
+          },
+          "note": {
+            "en": "You want water too. Ask about it: *ile kosztuje mała woda?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Mała woda kosztuje trzy złote.",
+      "meaning": {
+        "en": "A small water costs three złoty."
+      },
+      "replies": [
+        {
+          "text": "Dobrze, proszę małą wodę. To wszystko.",
+          "meaning": {
+            "en": "Fine, a small water, please. That's all."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Dobrze, proszę małą wodę. To wszystko.",
+            "Proszę małą wodę. To wszystko.",
+            "Dobrze, proszę małą wodę.",
+            "Proszę małą wodę."
+          ]
+        },
+        {
+          "text": "Dobrze, proszę małą wodę. Coś jeszcze?",
+          "meaning": {
+            "en": "Fine, a small water, please. Anything else?"
+          },
+          "note": {
+            "en": "*Coś jeszcze?* is what the seller asks. To finish, say *to wszystko*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Płaci pan kartą czy gotówką?",
+      "meaning": {
+        "en": "Are you paying by card or in cash?"
+      },
+      "replies": [
+        {
+          "text": "Płacę kartą.",
+          "meaning": {
+            "en": "I'll pay by card."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Płacę kartą.",
+            "Kartą.",
+            "Kartą, proszę."
+          ]
+        },
+        {
+          "text": "Płaci kartą.",
+          "meaning": {
+            "en": "He pays by card."
+          },
+          "note": {
+            "en": "*Płaci* is \"he pays\", or \"you pay\" to a man. About yourself say *płacę*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Przepraszam, dzisiaj tylko gotówką!",
+      "meaning": {
+        "en": "Sorry, today only in cash!"
+      },
+      "replies": [
+        {
+          "text": "Dobrze. Płacę gotówką.",
+          "meaning": {
+            "en": "Fine. I'll pay in cash."
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Dobrze. Płacę gotówką.",
+            "Dobrze, płacę gotówką."
+          ]
+        },
+        {
+          "text": "Dobrze. Płacę kartą.",
+          "meaning": {
+            "en": "Fine. I'll pay by card."
+          },
+          "note": {
+            "en": "Today Pan Marek takes only cash: *płacę gotówką*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Dziękuję! Do widzenia!",
+      "meaning": {
+        "en": "Thank you! Goodbye!"
+      }
+    }
+  ]
+}

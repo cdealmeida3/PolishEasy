@@ -1,0 +1,411 @@
+{
+  "id": "kpk1-l07-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Galeria handlowa",
+    "meaning": {
+      "en": "The shopping centre"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l07-c2-t01",
+      "before": "kpk1-l07-c2-e01",
+      "title": {
+        "en": "Where can I buy it?"
+      },
+      "body": {
+        "en": "To ask where to buy something, say *gdzie mogę kupić…?* with the accusative: *gdzie mogę kupić szampon?* The answer says the shop with *w*, and the shop's name changes: *w drogerii*, *w supermarkecie*, *w aptece*, *w kawiarni*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c2-e01",
+      "prompt": "supermarket",
+      "options": [
+        {
+          "en": "a supermarket"
+        },
+        {
+          "en": "a shop"
+        },
+        {
+          "en": "a shopping centre, a mall"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "supermarket"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c2-e02",
+      "prompt": "kawiarnia",
+      "options": [
+        {
+          "en": "a florist's"
+        },
+        {
+          "en": "a café"
+        },
+        {
+          "en": "a restaurant"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kawiarnia"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-c2-e03",
+      "text": "tam jest kawiarnia",
+      "meaning": {
+        "en": "there is a café there"
+      },
+      "distractors": [
+        "tam jest kwiaciarnia",
+        "tu jest kawiarnia"
+      ],
+      "items": [
+        "tam",
+        "byc-jest",
+        "kawiarnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c2-e04",
+      "prompt": "bank",
+      "options": [
+        {
+          "en": "a cash machine"
+        },
+        {
+          "en": "a bureau de change"
+        },
+        {
+          "en": "a bank"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bank"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-c2-e05",
+      "prompt": {
+        "en": "the bank is there"
+      },
+      "acceptedAnswers": [
+        "bank jest tam",
+        "tam jest bank"
+      ],
+      "distractors": [
+        "tu",
+        "banku"
+      ],
+      "items": [
+        "bank",
+        "byc-jest",
+        "tam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c2-e06",
+      "prompt": "kosmetyki",
+      "options": [
+        {
+          "en": "cosmetics"
+        },
+        {
+          "en": "crisps, chips"
+        },
+        {
+          "en": "clothes"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kosmetyki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c2-e07",
+      "prompt": "szampon",
+      "options": [
+        {
+          "en": "a deodorant"
+        },
+        {
+          "en": "shampoo"
+        },
+        {
+          "en": "soap"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szampon"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c2-e08",
+      "prompt": "dezodorant",
+      "options": [
+        {
+          "en": "shampoo"
+        },
+        {
+          "en": "cosmetics"
+        },
+        {
+          "en": "a deodorant"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dezodorant"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c2-e09",
+      "prompt": "w drogerii",
+      "options": [
+        {
+          "en": "at a drugstore"
+        },
+        {
+          "en": "at a supermarket"
+        },
+        {
+          "en": "at a chemist"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-drogerii"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l07-c2-e10",
+      "text": "Kosmetyki są w ___.",
+      "meaning": {
+        "en": "The cosmetics are at the drugstore."
+      },
+      "gaps": [
+        [
+          "drogerii"
+        ]
+      ],
+      "distractors": [
+        "drogeria",
+        "kiosku"
+      ],
+      "items": [
+        "kosmetyki",
+        "byc-sa",
+        "w-drogerii"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l07-c2-e11",
+      "prompt": "w supermarkecie",
+      "options": [
+        {
+          "en": "at a drugstore"
+        },
+        {
+          "en": "at a supermarket"
+        },
+        {
+          "en": "at home"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-supermarkecie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l07-c2-e12",
+      "acceptedAnswers": [
+        "gdzie mogę kupić szampon?"
+      ],
+      "meaning": {
+        "en": "where can I buy shampoo?"
+      },
+      "items": [
+        "gdzie",
+        "moc-moge",
+        "kupic",
+        "szampon"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-c2-e13",
+      "prompt": {
+        "en": "shampoo and deodorant are at the drugstore"
+      },
+      "acceptedAnswers": [
+        "szampon i dezodorant są w drogerii",
+        "w drogerii są szampon i dezodorant"
+      ],
+      "items": [
+        "szampon",
+        "i",
+        "dezodorant",
+        "byc-sa",
+        "w-drogerii"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l07-c2-e14",
+      "text": "kupuję sok w supermarkecie",
+      "meaning": {
+        "en": "I buy juice at the supermarket"
+      },
+      "distractors": [
+        "kupuję szampon w supermarkecie",
+        "kupuję sok w kiosku"
+      ],
+      "items": [
+        "kupowac-kupuje",
+        "sok",
+        "w-supermarkecie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l07-c2-e15",
+      "pairs": [
+        {
+          "polish": "supermarket",
+          "meaning": {
+            "en": "a supermarket"
+          }
+        },
+        {
+          "polish": "kawiarnia",
+          "meaning": {
+            "en": "a café"
+          }
+        },
+        {
+          "polish": "bank",
+          "meaning": {
+            "en": "a bank"
+          }
+        },
+        {
+          "polish": "kosmetyki",
+          "meaning": {
+            "en": "cosmetics"
+          }
+        },
+        {
+          "polish": "szampon",
+          "meaning": {
+            "en": "shampoo"
+          }
+        },
+        {
+          "polish": "w drogerii",
+          "meaning": {
+            "en": "at a drugstore"
+          }
+        }
+      ],
+      "items": [
+        "supermarket",
+        "kawiarnia",
+        "bank",
+        "kosmetyki",
+        "szampon",
+        "w-drogerii"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l07-c2-e16",
+      "lines": [
+        "Gdzie mogę kupić dezodorant?",
+        "W drogerii albo w supermarkecie.",
+        "A gdzie jest drogeria?",
+        "Tam, na prawo."
+      ],
+      "meaning": {
+        "en": "In a shopping centre."
+      },
+      "items": [
+        "gdzie",
+        "moc-moge",
+        "kupic",
+        "dezodorant",
+        "w-drogerii",
+        "albo",
+        "w-supermarkecie",
+        "a",
+        "byc-jest",
+        "drogeria",
+        "tam",
+        "na-prawo"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l07-c2-e17",
+      "prompt": {
+        "en": "is there a supermarket here?"
+      },
+      "acceptedAnswers": [
+        "czy jest tu supermarket?",
+        "czy tu jest supermarket?",
+        "jest tu supermarket?"
+      ],
+      "items": [
+        "czy",
+        "byc-jest",
+        "tu",
+        "supermarket"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l07-c2-e18",
+      "prompt": {
+        "en": "I'm buying cosmetics"
+      },
+      "acceptedAnswers": [
+        "kupuję kosmetyki"
+      ],
+      "distractors": [
+        "kupić",
+        "drogerii"
+      ],
+      "items": [
+        "kupowac-kupuje",
+        "kosmetyki"
+      ]
+    }
+  ]
+}
