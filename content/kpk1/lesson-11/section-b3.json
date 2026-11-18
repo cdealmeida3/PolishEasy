@@ -1,0 +1,492 @@
+{
+  "id": "kpk1-l11-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Czyj? Czyja? Czyje?",
+    "meaning": {
+      "en": "Whose?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-b3-t01",
+      "before": "kpk1-l11-b3-e01",
+      "title": {
+        "en": "Kim jest Jan?"
+      },
+      "body": {
+        "en": "One person is many things in a family. Jan *jest dziadkiem, ojcem i mężem*; Ewa *jest babcią, matką i żoną*. After *jest*, a man's family word ends in *-em* and a woman's in *-ą*, as *lekarzem* and *lekarką* did. *Kim jest ta pani?* asks who she is."
+      },
+      "table": {
+        "title": {
+          "en": "Narzędnik: kim jest?"
+        },
+        "columns": [
+          {
+            "header": "kto?"
+          },
+          {
+            "header": "kim jest?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "dziadek",
+              "dziadk[iem]"
+            ]
+          },
+          {
+            "cells": [
+              "ojciec",
+              "ojc[em]"
+            ]
+          },
+          {
+            "cells": [
+              "mąż",
+              "męż[em]"
+            ]
+          },
+          {
+            "cells": [
+              "syn",
+              "syn[em]"
+            ]
+          },
+          {
+            "cells": [
+              "babcia",
+              "babci[ą]"
+            ]
+          },
+          {
+            "cells": [
+              "matka",
+              "matk[ą]"
+            ]
+          },
+          {
+            "cells": [
+              "żona",
+              "żon[ą]"
+            ]
+          },
+          {
+            "cells": [
+              "córka",
+              "córk[ą]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b3-e01",
+      "prompt": "dziadkiem",
+      "options": [
+        {
+          "en": "grandpa"
+        },
+        {
+          "en": "a father (after jest: jest ojcem)"
+        },
+        {
+          "en": "a grandpa (after jest: jest dziadkiem)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dziadek-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b3-e02",
+      "prompt": "babcią",
+      "options": [
+        {
+          "en": "a grandma (after jest: jest babcią)"
+        },
+        {
+          "en": "grandma"
+        },
+        {
+          "en": "a mother (after jest: jest matką)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "babcia-instr"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-b3-e03",
+      "text": "on jest dziadkiem",
+      "meaning": {
+        "en": "he is a grandpa"
+      },
+      "distractors": [
+        "on jest ojcem",
+        "ona jest babcią"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "dziadek-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b3-e04",
+      "prompt": "ojcem",
+      "options": [
+        {
+          "en": "a father"
+        },
+        {
+          "en": "a father (after jest: jest ojcem)"
+        },
+        {
+          "en": "a son (after jest: jest synem)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ojciec-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b3-e05",
+      "prompt": "matką",
+      "options": [
+        {
+          "en": "a mother"
+        },
+        {
+          "en": "a daughter (after jest: jest córką)"
+        },
+        {
+          "en": "a mother (after jest: jest matką)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "matka-instr"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-b3-e06",
+      "text": "Ewa jest ___ i babcią.",
+      "meaning": {
+        "en": "Ewa is a mother and a grandma."
+      },
+      "gaps": [
+        [
+          "matką"
+        ]
+      ],
+      "distractors": [
+        "matka",
+        "ojcem"
+      ],
+      "items": [
+        "ewa",
+        "byc-jest",
+        "matka-instr",
+        "i",
+        "babcia-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b3-e07",
+      "prompt": "mężem",
+      "options": [
+        {
+          "en": "a husband (after jest: jest mężem)"
+        },
+        {
+          "en": "a husband"
+        },
+        {
+          "en": "a father (after jest: jest ojcem)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "maz-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b3-e08",
+      "prompt": "żoną",
+      "options": [
+        {
+          "en": "a wife"
+        },
+        {
+          "en": "a wife (after jest: jest żoną)"
+        },
+        {
+          "en": "a mother (after jest: jest matką)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zona-instr"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-b3-e09",
+      "prompt": {
+        "en": "Adam is a husband and a father"
+      },
+      "acceptedAnswers": [
+        "Adam jest mężem i ojcem"
+      ],
+      "distractors": [
+        "mąż",
+        "ojciec"
+      ],
+      "items": [
+        "adam",
+        "byc-jest",
+        "maz-instr",
+        "i",
+        "ojciec-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b3-e10",
+      "prompt": "synem",
+      "options": [
+        {
+          "en": "a son"
+        },
+        {
+          "en": "a husband (after jest: jest mężem)"
+        },
+        {
+          "en": "a son (after jest: jest synem)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "syn-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b3-e11",
+      "prompt": "córką",
+      "options": [
+        {
+          "en": "a daughter (after jest: jest córką)"
+        },
+        {
+          "en": "a daughter"
+        },
+        {
+          "en": "a wife (after jest: jest żoną)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "corka-instr"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-b3-e12",
+      "acceptedAnswers": [
+        "ona jest żoną i matką"
+      ],
+      "meaning": {
+        "en": "she is a wife and a mother"
+      },
+      "items": [
+        "ona",
+        "byc-jest",
+        "zona-instr",
+        "i",
+        "matka-instr"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-b3-e13",
+      "prompt": {
+        "en": "he is a son and a husband"
+      },
+      "acceptedAnswers": [
+        "on jest synem i mężem",
+        "jest synem i mężem"
+      ],
+      "items": [
+        "on",
+        "byc-jest",
+        "syn-instr",
+        "i",
+        "maz-instr"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-b3-e14",
+      "pairs": [
+        {
+          "polish": "dziadkiem",
+          "meaning": {
+            "en": "a grandpa (jest…)"
+          }
+        },
+        {
+          "polish": "babcią",
+          "meaning": {
+            "en": "a grandma (jest…)"
+          }
+        },
+        {
+          "polish": "ojcem",
+          "meaning": {
+            "en": "a father (jest…)"
+          }
+        },
+        {
+          "polish": "matką",
+          "meaning": {
+            "en": "a mother (jest…)"
+          }
+        },
+        {
+          "polish": "mężem",
+          "meaning": {
+            "en": "a husband (jest…)"
+          }
+        },
+        {
+          "polish": "córką",
+          "meaning": {
+            "en": "a daughter (jest…)"
+          }
+        }
+      ],
+      "items": [
+        "dziadek-instr",
+        "babcia-instr",
+        "ojciec-instr",
+        "matka-instr",
+        "maz-instr",
+        "corka-instr"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-b3-e15",
+      "lines": [
+        "To jest Adam.",
+        "Jest mężem i ojcem.",
+        "Jest też synem."
+      ],
+      "meaning": {
+        "en": "Who is Adam?"
+      },
+      "statements": [
+        {
+          "text": "Adam jest ojcem.",
+          "meaning": {
+            "en": "Adam is a father."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam jest dziadkiem.",
+          "meaning": {
+            "en": "Adam is a grandpa."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam jest mężem.",
+          "meaning": {
+            "en": "Adam is a husband."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "adam",
+        "maz-instr",
+        "i",
+        "ojciec-instr",
+        "tez",
+        "syn-instr"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-b3-e16",
+      "lines": [
+        "Kim jest ta pani?",
+        "To jest moja babcia.",
+        "A ten pan?",
+        "Jest jej mężem."
+      ],
+      "meaning": {
+        "en": "Who is who in the photo?"
+      },
+      "items": [
+        "kim",
+        "byc-jest",
+        "ta",
+        "pani",
+        "to",
+        "moja",
+        "babcia",
+        "a",
+        "ten",
+        "pan",
+        "jej",
+        "maz-instr"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-b3-e17",
+      "prompt": {
+        "en": "she is a daughter and a wife"
+      },
+      "acceptedAnswers": [
+        "ona jest córką i żoną",
+        "jest córką i żoną"
+      ],
+      "distractors": [
+        "córka",
+        "synem"
+      ],
+      "items": [
+        "ona",
+        "byc-jest",
+        "corka-instr",
+        "i",
+        "zona-instr"
+      ]
+    }
+  ]
+}

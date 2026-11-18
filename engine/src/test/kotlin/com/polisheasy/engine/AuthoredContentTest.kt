@@ -227,7 +227,7 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
@@ -239,7 +239,8 @@ class AuthoredContentTest {
                 listOf(8, 8, 8, 8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 8, 0) +
                 listOf(8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 0) +
                 listOf(8, 8, 8, 8, 6, 6, 8, 8, 8, 6, 4, 1, 7, 8, 8, 6, 4) +
-                listOf(8, 8, 8, 8, 7, 8, 8, 8, 8, 7, 8, 8, 8, 8),
+                listOf(8, 8, 8, 8, 7, 8, 8, 8, 8, 7, 8, 8, 8, 8) +
+                listOf(8, 8, 8, 8, 8, 7, 5, 8, 7, 8, 8, 8, 3),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -291,8 +292,10 @@ class AuthoredContentTest {
         assertEquals(17, book[9].sections)
         assertEquals("Uwielbiam polskie jedzenie!", book[10].title)
         assertEquals(14, book[10].sections)
-        assertTrue(book.take(11).none { it.coming })
-        assertTrue(book.drop(11).all { it.coming })
+        assertEquals("Rodzina", book[11].title)
+        assertEquals(13, book[11].sections)
+        assertTrue(book.take(12).none { it.coming })
+        assertTrue(book.drop(12).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -670,9 +673,9 @@ class AuthoredContentTest {
 
     @Test
     fun `mój, moja, moje, twój, twoja and twoje agree with the gender of the noun after them`() {
-        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres", "plecak", "słownik", "kolega", "gospodarz", "kot", "owoc")
-        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna", "torba", "koleżanka", "dentystka", "gospodyni", "potrawa")
-        val neuter = setOf("dziecko", "pytanie", "rodzeństwo", "hobby")
+        val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres", "plecak", "słownik", "kolega", "gospodarz", "kot", "owoc", "wnuk", "ojciec", "wujek", "kuzyn", "teść", "portfel", "urlop", "samochód", "dom")
+        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna", "torba", "koleżanka", "dentystka", "gospodyni", "potrawa", "matka", "wnuczka", "ciocia", "kuzynka", "teściowa", "synowa", "przerwa", "kawa", "książka")
+        val neuter = setOf("dziecko", "pytanie", "rodzeństwo", "hobby", "małżeństwo", "zdjęcie", "drzewo", "auto", "mieszkanie", "miasto")
         val possessives = mapOf(
             "mój" to masculine, "twój" to masculine, "moja" to feminine, "twoja" to feminine, "moje" to neuter, "twoje" to neuter,
         )
@@ -703,7 +706,7 @@ class AuthoredContentTest {
         val had = setOf("brata", "siostrę", "syna", "córkę")
         had.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
         val fixedPhrases = listOf(listOf("nie", "ma", "za", "co"), listOf("nie", "ma", "sprawy"))
-        val negatedObjects = setOf("ani", "aparatu", "bananów", "brata", "chleba", "drobnych", "fasoli", "kantoru", "kompotu", "kwiaciarni", "pieniędzy", "piwa", "problemu", "soku", "wody")
+        val negatedObjects = setOf("ani", "aparatu", "bananów", "brata", "chleba", "drobnych", "fasoli", "kantoru", "kompotu", "kwiaciarni", "pieniędzy", "piwa", "problemu", "rodzeństwa", "soku", "wody")
 
         spokenSentences.forEach { sentence ->
             val text = sentence.joinToString(" ")

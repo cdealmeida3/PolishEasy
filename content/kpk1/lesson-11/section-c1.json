@@ -1,0 +1,454 @@
+{
+  "id": "kpk1-l11-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Rano czy wieczorem?",
+    "meaning": {
+      "en": "In the morning or in the evening?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-c1-t01",
+      "before": "kpk1-l11-c1-e01",
+      "title": {
+        "en": "Pory dnia"
+      },
+      "body": {
+        "en": "*Kiedy?* The times of day, *pory dnia*, go round the clock: *rano*, *przed południem*, *w południe* (at 12:00), *po południu*, *wieczorem*, *o północy* (at 24:00) and *w nocy*. *W dzień* is by day, the opposite of *w nocy*, and a *doba* is all twenty-four hours."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c1-e01",
+      "prompt": "pory dnia",
+      "options": [
+        {
+          "en": "days of the week"
+        },
+        {
+          "en": "times of day"
+        },
+        {
+          "en": "when"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pory-dnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c1-e02",
+      "prompt": "przed południem",
+      "options": [
+        {
+          "en": "in the afternoon"
+        },
+        {
+          "en": "in the evening"
+        },
+        {
+          "en": "in the morning, before noon"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przed-poludniem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c1-e03",
+      "prompt": "w południe",
+      "options": [
+        {
+          "en": "at noon, at midday"
+        },
+        {
+          "en": "in the afternoon"
+        },
+        {
+          "en": "at midnight"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-poludnie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-c1-e04",
+      "text": "w południe jem obiad",
+      "meaning": {
+        "en": "at noon I have dinner"
+      },
+      "distractors": [
+        "po południu jem obiad",
+        "wieczorem jem obiad"
+      ],
+      "items": [
+        "w-poludnie",
+        "jesc-jem",
+        "obiad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c1-e05",
+      "prompt": "o północy",
+      "options": [
+        {
+          "en": "at noon, at midday"
+        },
+        {
+          "en": "at midnight"
+        },
+        {
+          "en": "at night"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "o-polnocy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c1-e06",
+      "prompt": "w nocy",
+      "options": [
+        {
+          "en": "in the evening"
+        },
+        {
+          "en": "in the daytime, by day"
+        },
+        {
+          "en": "at night"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-nocy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-c1-e07",
+      "text": "W nocy ___.",
+      "meaning": {
+        "en": "At night I sleep."
+      },
+      "gaps": [
+        [
+          "śpię"
+        ]
+      ],
+      "distractors": [
+        "jem",
+        "pracuję"
+      ],
+      "items": [
+        "w-nocy",
+        "spac-spie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c1-e08",
+      "prompt": "w dzień",
+      "options": [
+        {
+          "en": "in the daytime, by day"
+        },
+        {
+          "en": "at night"
+        },
+        {
+          "en": "in the morning"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-dzien"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-c1-e09",
+      "prompt": {
+        "en": "in the morning or in the evening?"
+      },
+      "acceptedAnswers": [
+        "rano czy wieczorem?"
+      ],
+      "distractors": [
+        "nocy",
+        "albo"
+      ],
+      "items": [
+        "rano",
+        "czy",
+        "wieczorem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-c1-e10",
+      "prompt": "doba",
+      "options": [
+        {
+          "en": "a week"
+        },
+        {
+          "en": "a day and a night, twenty-four hours"
+        },
+        {
+          "en": "a year; one year"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "doba"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-c1-e11",
+      "acceptedAnswers": [
+        "przed południem jestem w szkole"
+      ],
+      "meaning": {
+        "en": "before noon I am at school"
+      },
+      "items": [
+        "przed-poludniem",
+        "byc-jestem",
+        "w-szkole"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-c1-e12",
+      "prompt": {
+        "en": "twenty-four hours, a day and a night"
+      },
+      "acceptedAnswers": [
+        "doba"
+      ],
+      "items": [
+        "doba"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-c1-e13",
+      "text": "pory dnia",
+      "meaning": {
+        "en": "times of day"
+      },
+      "distractors": [
+        "dobry dzień",
+        "pora roku"
+      ],
+      "items": [
+        "pory-dnia"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-c1-e14",
+      "pairs": [
+        {
+          "polish": "rano",
+          "meaning": {
+            "en": "in the morning"
+          }
+        },
+        {
+          "polish": "przed południem",
+          "meaning": {
+            "en": "before noon"
+          }
+        },
+        {
+          "polish": "w południe",
+          "meaning": {
+            "en": "at noon"
+          }
+        },
+        {
+          "polish": "po południu",
+          "meaning": {
+            "en": "in the afternoon"
+          }
+        },
+        {
+          "polish": "wieczorem",
+          "meaning": {
+            "en": "in the evening"
+          }
+        },
+        {
+          "polish": "w nocy",
+          "meaning": {
+            "en": "at night"
+          }
+        }
+      ],
+      "items": [
+        "rano",
+        "przed-poludniem",
+        "w-poludnie",
+        "po-poludniu",
+        "wieczorem",
+        "w-nocy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-c1-e15",
+      "lines": [
+        "Rano jem śniadanie.",
+        "W południe jem obiad.",
+        "Wieczorem oglądam serial."
+      ],
+      "meaning": {
+        "en": "A day."
+      },
+      "statements": [
+        {
+          "text": "Rano jem śniadanie.",
+          "meaning": {
+            "en": "I have breakfast in the morning."
+          },
+          "true": true
+        },
+        {
+          "text": "W południe jem śniadanie.",
+          "meaning": {
+            "en": "I have breakfast at noon."
+          },
+          "true": false
+        },
+        {
+          "text": "Wieczorem oglądam serial.",
+          "meaning": {
+            "en": "I watch a series in the evening."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "rano",
+        "jesc-jem",
+        "sniadanie",
+        "w-poludnie",
+        "obiad",
+        "wieczorem",
+        "ogladac-ogladam",
+        "serial"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-c1-e16",
+      "lines": [
+        "Kiedy pracujesz?",
+        "Rano i przed południem.",
+        "A w nocy?",
+        "W nocy śpię."
+      ],
+      "meaning": {
+        "en": "When do you work?"
+      },
+      "items": [
+        "kiedy",
+        "pracowac-pracujesz",
+        "rano",
+        "i",
+        "przed-poludniem",
+        "a",
+        "w-nocy",
+        "spac-spie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-c1-e17",
+      "pairs": [
+        {
+          "polish": "pory dnia",
+          "meaning": {
+            "en": "times of day"
+          }
+        },
+        {
+          "polish": "doba",
+          "meaning": {
+            "en": "twenty-four hours"
+          }
+        },
+        {
+          "polish": "w dzień",
+          "meaning": {
+            "en": "by day"
+          }
+        },
+        {
+          "polish": "o północy",
+          "meaning": {
+            "en": "at midnight"
+          }
+        },
+        {
+          "polish": "w nocy",
+          "meaning": {
+            "en": "at night"
+          }
+        },
+        {
+          "polish": "w południe",
+          "meaning": {
+            "en": "at noon"
+          }
+        }
+      ],
+      "items": [
+        "pory-dnia",
+        "doba",
+        "w-dzien",
+        "o-polnocy",
+        "w-nocy",
+        "w-poludnie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-c1-e18",
+      "prompt": {
+        "en": "I work by day"
+      },
+      "acceptedAnswers": [
+        "pracuję w dzień",
+        "w dzień pracuję"
+      ],
+      "distractors": [
+        "nocy",
+        "pracujesz"
+      ],
+      "items": [
+        "pracowac-pracuje",
+        "w-dzien"
+      ]
+    }
+  ]
+}

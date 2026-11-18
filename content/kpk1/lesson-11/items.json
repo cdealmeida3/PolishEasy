@@ -1,0 +1,679 @@
+{
+  "items": [
+    {
+      "id": "matka",
+      "text": "matka",
+      "meaning": {
+        "en": "a mother"
+      }
+    },
+    {
+      "id": "ojciec",
+      "text": "ojciec",
+      "meaning": {
+        "en": "a father"
+      }
+    },
+    {
+      "id": "rodzice",
+      "text": "rodzice",
+      "meaning": {
+        "en": "parents"
+      }
+    },
+    {
+      "id": "dziadkowie",
+      "text": "dziadkowie",
+      "meaning": {
+        "en": "grandparents"
+      }
+    },
+    {
+      "id": "wnuk",
+      "text": "wnuk",
+      "meaning": {
+        "en": "a grandson"
+      }
+    },
+    {
+      "id": "wnuczka",
+      "text": "wnuczka",
+      "meaning": {
+        "en": "a granddaughter"
+      }
+    },
+    {
+      "id": "wnuki",
+      "text": "wnuki",
+      "meaning": {
+        "en": "grandchildren"
+      }
+    },
+    {
+      "id": "malzenstwo",
+      "text": "małżeństwo",
+      "meaning": {
+        "en": "a married couple; a marriage"
+      }
+    },
+    {
+      "id": "panna",
+      "text": "panna",
+      "meaning": {
+        "en": "a single woman (not married)"
+      }
+    },
+    {
+      "id": "kawaler",
+      "text": "kawaler",
+      "meaning": {
+        "en": "a bachelor, a single man"
+      }
+    },
+    {
+      "id": "kawaler-instr",
+      "text": "kawalerem",
+      "meaning": {
+        "en": "a bachelor (after jestem: jestem kawalerem)"
+      }
+    },
+    {
+      "id": "mezatka",
+      "text": "mężatka",
+      "meaning": {
+        "en": "a married woman"
+      }
+    },
+    {
+      "id": "zonaty",
+      "text": "żonaty",
+      "meaning": {
+        "en": "married (of a man)"
+      }
+    },
+    {
+      "id": "rozwiedziony",
+      "text": "rozwiedziony",
+      "meaning": {
+        "en": "divorced (rozwiedziony, rozwiedziona, rozwiedzione)"
+      },
+      "forms": [
+        "rozwiedziona",
+        "rozwiedzione"
+      ]
+    },
+    {
+      "id": "nie-zyje",
+      "text": "nie żyje",
+      "meaning": {
+        "en": "he or she is no longer alive"
+      }
+    },
+    {
+      "id": "drugi-raz",
+      "text": "drugi raz",
+      "meaning": {
+        "en": "for the second time"
+      }
+    },
+    {
+      "id": "ciocia",
+      "text": "ciocia",
+      "meaning": {
+        "en": "an aunt"
+      }
+    },
+    {
+      "id": "wujek",
+      "text": "wujek",
+      "meaning": {
+        "en": "an uncle"
+      }
+    },
+    {
+      "id": "kuzyn",
+      "text": "kuzyn",
+      "meaning": {
+        "en": "a cousin (a man)"
+      }
+    },
+    {
+      "id": "kuzynka",
+      "text": "kuzynka",
+      "meaning": {
+        "en": "a cousin (a woman)"
+      }
+    },
+    {
+      "id": "tesc",
+      "text": "teść",
+      "meaning": {
+        "en": "a father-in-law"
+      }
+    },
+    {
+      "id": "tesciowa",
+      "text": "teściowa",
+      "meaning": {
+        "en": "a mother-in-law"
+      }
+    },
+    {
+      "id": "synowa",
+      "text": "synowa",
+      "meaning": {
+        "en": "a daughter-in-law"
+      }
+    },
+    {
+      "id": "blizniaki",
+      "text": "bliźniaki",
+      "meaning": {
+        "en": "twins"
+      }
+    },
+    {
+      "id": "rodzice-acc",
+      "text": "rodziców",
+      "meaning": {
+        "en": "parents (after mam, znam…: mam rodziców w Krakowie)"
+      }
+    },
+    {
+      "id": "maz-acc",
+      "text": "męża",
+      "meaning": {
+        "en": "a husband (after mam, znam…: mam męża)"
+      }
+    },
+    {
+      "id": "zona-acc",
+      "text": "żonę",
+      "meaning": {
+        "en": "a wife (after mam, znam…: mam żonę)"
+      }
+    },
+    {
+      "id": "ciocia-acc",
+      "text": "ciocię",
+      "meaning": {
+        "en": "an aunt (after mam, znam…: mam ciocię)"
+      }
+    },
+    {
+      "id": "wujek-acc",
+      "text": "wujka",
+      "meaning": {
+        "en": "an uncle (after mam, znam…: mam wujka)"
+      }
+    },
+    {
+      "id": "mlodszy",
+      "text": "młodszy",
+      "meaning": {
+        "en": "younger (młodszy, młodsza, młodsze)"
+      },
+      "forms": [
+        "młodsza",
+        "młodsze"
+      ]
+    },
+    {
+      "id": "starszy",
+      "text": "starszy",
+      "meaning": {
+        "en": "older (starszy, starsza, starsze)"
+      },
+      "forms": [
+        "starsza",
+        "starsze"
+      ]
+    },
+    {
+      "id": "dwoje",
+      "text": "dwoje",
+      "meaning": {
+        "en": "two (of children: dwoje dzieci)"
+      }
+    },
+    {
+      "id": "drzewo-genealogiczne",
+      "text": "drzewo genealogiczne",
+      "meaning": {
+        "en": "a family tree"
+      }
+    },
+    {
+      "id": "lub",
+      "text": "lub",
+      "meaning": {
+        "en": "or"
+      }
+    },
+    {
+      "id": "czyli",
+      "text": "czyli",
+      "meaning": {
+        "en": "that is, in other words"
+      }
+    },
+    {
+      "id": "rozmawiac-rozmawiam",
+      "text": "rozmawiam",
+      "meaning": {
+        "en": "I talk, I have a chat"
+      }
+    },
+    {
+      "id": "spotykac-sie-spotykamy",
+      "text": "spotykamy się",
+      "meaning": {
+        "en": "we meet, we see each other"
+      }
+    },
+    {
+      "id": "stuprocentowy",
+      "text": "stuprocentowy",
+      "meaning": {
+        "en": "one hundred per cent, through and through (stuprocentowy, stuprocentowa, stuprocentowe)"
+      },
+      "forms": [
+        "stuprocentowa",
+        "stuprocentowe",
+        "stuprocentową"
+      ]
+    },
+    {
+      "id": "co-powiedziec",
+      "text": "co powiedzieć",
+      "meaning": {
+        "en": "what to say (nie wiem, co powiedzieć)"
+      }
+    },
+    {
+      "id": "moi",
+      "text": "moi",
+      "meaning": {
+        "en": "my (with men, or a group with a man in it: moi rodzice)"
+      }
+    },
+    {
+      "id": "czyj",
+      "text": "czyj",
+      "meaning": {
+        "en": "whose (with a masculine noun)"
+      }
+    },
+    {
+      "id": "czyja",
+      "text": "czyja",
+      "meaning": {
+        "en": "whose (with a feminine noun)"
+      }
+    },
+    {
+      "id": "czyje",
+      "text": "czyje",
+      "meaning": {
+        "en": "whose (with a neuter noun)"
+      }
+    },
+    {
+      "id": "nasz",
+      "text": "nasz",
+      "meaning": {
+        "en": "our (with a masculine noun)"
+      }
+    },
+    {
+      "id": "nasza",
+      "text": "nasza",
+      "meaning": {
+        "en": "our (with a feminine noun)"
+      }
+    },
+    {
+      "id": "nasze",
+      "text": "nasze",
+      "meaning": {
+        "en": "our (with a neuter noun)"
+      }
+    },
+    {
+      "id": "portfel",
+      "text": "portfel",
+      "meaning": {
+        "en": "a wallet"
+      }
+    },
+    {
+      "id": "wasz",
+      "text": "wasz",
+      "meaning": {
+        "en": "your (several people, with a masculine noun)"
+      }
+    },
+    {
+      "id": "wasza",
+      "text": "wasza",
+      "meaning": {
+        "en": "your (several people, with a feminine noun)"
+      }
+    },
+    {
+      "id": "wasze",
+      "text": "wasze",
+      "meaning": {
+        "en": "your (several people, with a neuter noun)"
+      }
+    },
+    {
+      "id": "ich",
+      "text": "ich",
+      "meaning": {
+        "en": "their"
+      }
+    },
+    {
+      "id": "to-musi-byc",
+      "text": "to musi być",
+      "meaning": {
+        "en": "it must be"
+      }
+    },
+    {
+      "id": "dziadek-instr",
+      "text": "dziadkiem",
+      "meaning": {
+        "en": "a grandpa (after jest: jest dziadkiem)"
+      }
+    },
+    {
+      "id": "babcia-instr",
+      "text": "babcią",
+      "meaning": {
+        "en": "a grandma (after jest: jest babcią)"
+      }
+    },
+    {
+      "id": "ojciec-instr",
+      "text": "ojcem",
+      "meaning": {
+        "en": "a father (after jest: jest ojcem)"
+      }
+    },
+    {
+      "id": "matka-instr",
+      "text": "matką",
+      "meaning": {
+        "en": "a mother (after jest: jest matką)"
+      }
+    },
+    {
+      "id": "maz-instr",
+      "text": "mężem",
+      "meaning": {
+        "en": "a husband (after jest: jest mężem)"
+      }
+    },
+    {
+      "id": "zona-instr",
+      "text": "żoną",
+      "meaning": {
+        "en": "a wife (after jest: jest żoną)"
+      }
+    },
+    {
+      "id": "syn-instr",
+      "text": "synem",
+      "meaning": {
+        "en": "a son (after jest: jest synem)"
+      }
+    },
+    {
+      "id": "corka-instr",
+      "text": "córką",
+      "meaning": {
+        "en": "a daughter (after jest: jest córką)"
+      }
+    },
+    {
+      "id": "pory-dnia",
+      "text": "pory dnia",
+      "meaning": {
+        "en": "times of day"
+      }
+    },
+    {
+      "id": "przed-poludniem",
+      "text": "przed południem",
+      "meaning": {
+        "en": "in the morning, before noon"
+      }
+    },
+    {
+      "id": "w-poludnie",
+      "text": "w południe",
+      "meaning": {
+        "en": "at noon, at midday"
+      }
+    },
+    {
+      "id": "o-polnocy",
+      "text": "o północy",
+      "meaning": {
+        "en": "at midnight"
+      }
+    },
+    {
+      "id": "w-nocy",
+      "text": "w nocy",
+      "meaning": {
+        "en": "at night"
+      }
+    },
+    {
+      "id": "w-dzien",
+      "text": "w dzień",
+      "meaning": {
+        "en": "in the daytime, by day"
+      }
+    },
+    {
+      "id": "doba",
+      "text": "doba",
+      "meaning": {
+        "en": "a day and a night, twenty-four hours"
+      }
+    },
+    {
+      "id": "wracac-wracam",
+      "text": "wracam",
+      "meaning": {
+        "en": "I come back, I go back"
+      }
+    },
+    {
+      "id": "do-domu",
+      "text": "do domu",
+      "meaning": {
+        "en": "home (wracam do domu: I go home)"
+      }
+    },
+    {
+      "id": "odpoczac",
+      "text": "odpocząć",
+      "meaning": {
+        "en": "rest (to rest, to have a rest)"
+      }
+    },
+    {
+      "id": "sjesta",
+      "text": "sjesta",
+      "meaning": {
+        "en": "a siesta, an afternoon nap"
+      }
+    },
+    {
+      "id": "przerwa",
+      "text": "przerwa",
+      "meaning": {
+        "en": "a break"
+      }
+    },
+    {
+      "id": "pozniej",
+      "text": "później",
+      "meaning": {
+        "en": "later"
+      }
+    },
+    {
+      "id": "zdalnie",
+      "text": "zdalnie",
+      "meaning": {
+        "en": "remotely (pracuję zdalnie: I work from home)"
+      }
+    },
+    {
+      "id": "wszyscy",
+      "text": "wszyscy",
+      "meaning": {
+        "en": "everybody, all (of people)"
+      }
+    },
+    {
+      "id": "jak-czesto",
+      "text": "jak często?",
+      "meaning": {
+        "en": "how often?"
+      }
+    },
+    {
+      "id": "zawsze",
+      "text": "zawsze",
+      "meaning": {
+        "en": "always"
+      }
+    },
+    {
+      "id": "czesto",
+      "text": "często",
+      "meaning": {
+        "en": "often"
+      }
+    },
+    {
+      "id": "czasem",
+      "text": "czasem",
+      "meaning": {
+        "en": "sometimes (czasem = czasami)"
+      }
+    },
+    {
+      "id": "rzadko",
+      "text": "rzadko",
+      "meaning": {
+        "en": "rarely, seldom"
+      }
+    },
+    {
+      "id": "nigdy",
+      "text": "nigdy",
+      "meaning": {
+        "en": "never (nigdy nie…)"
+      }
+    },
+    {
+      "id": "codziennie",
+      "text": "codziennie",
+      "meaning": {
+        "en": "every day"
+      }
+    },
+    {
+      "id": "od-czasu-do-czasu",
+      "text": "od czasu do czasu",
+      "meaning": {
+        "en": "from time to time"
+      }
+    },
+    {
+      "id": "pracoholik",
+      "text": "pracoholik",
+      "meaning": {
+        "en": "a workaholic"
+      }
+    },
+    {
+      "id": "od-rana-do-wieczora",
+      "text": "od rana do wieczora",
+      "meaning": {
+        "en": "from morning till evening"
+      }
+    },
+    {
+      "id": "dzwonic-dzwonisz",
+      "text": "dzwonisz",
+      "meaning": {
+        "en": "you call, you phone (one friend)"
+      }
+    },
+    {
+      "id": "urlop",
+      "text": "urlop",
+      "meaning": {
+        "en": "a holiday, time off work"
+      }
+    },
+    {
+      "id": "na-dyskoteke",
+      "text": "na dyskotekę",
+      "meaning": {
+        "en": "to a disco"
+      }
+    },
+    {
+      "id": "raz-w-roku",
+      "text": "raz w roku",
+      "meaning": {
+        "en": "once a year"
+      }
+    },
+    {
+      "id": "w-tygodniu",
+      "text": "w tygodniu",
+      "meaning": {
+        "en": "a week (dwa razy w tygodniu: twice a week)"
+      }
+    },
+    {
+      "id": "samochodem",
+      "text": "samochodem",
+      "meaning": {
+        "en": "by car"
+      }
+    },
+    {
+      "id": "prawie-nigdy",
+      "text": "prawie nigdy",
+      "meaning": {
+        "en": "hardly ever, almost never"
+      }
+    },
+    {
+      "id": "taksowka-instr",
+      "text": "taksówką",
+      "meaning": {
+        "en": "by taxi"
+      }
+    },
+    {
+      "id": "czy-to-prawda-ze",
+      "text": "czy to prawda, że…?",
+      "meaning": {
+        "en": "is it true that…?"
+      }
+    }
+  ]
+}

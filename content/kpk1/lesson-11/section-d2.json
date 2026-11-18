@@ -1,0 +1,426 @@
+{
+  "id": "kpk1-l11-d2",
+  "section": {
+    "letter": "D",
+    "heading": "Jak często?",
+    "meaning": {
+      "en": "How often?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-d2-t01",
+      "before": "kpk1-l11-d2-e01",
+      "title": {
+        "en": "Raz w roku"
+      },
+      "body": {
+        "en": "*Raz w roku* is once a year and *siedem razy w tygodniu* is seven times a week. Someone who works *od rana do wieczora* is a *pracoholik*. To go somewhere by car is *jeździć samochodem*, and a holiday from work is a *urlop*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d2-e01",
+      "prompt": "pracoholik",
+      "options": [
+        {
+          "en": "a workaholic"
+        },
+        {
+          "en": "a classmate; a friend (a man)"
+        },
+        {
+          "en": "a host, a landlord (the man of the house a student lives in)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pracoholik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d2-e02",
+      "prompt": "od rana do wieczora",
+      "options": [
+        {
+          "en": "in the morning"
+        },
+        {
+          "en": "from morning till evening"
+        },
+        {
+          "en": "in the evening"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "od-rana-do-wieczora"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-d2-e03",
+      "text": "pracuję od rana do wieczora",
+      "meaning": {
+        "en": "I work from morning till evening"
+      },
+      "distractors": [
+        "pracujesz od rana do wieczora",
+        "zawsze pracuję wieczorem"
+      ],
+      "items": [
+        "pracowac-pracuje",
+        "od-rana-do-wieczora"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d2-e04",
+      "prompt": "dzwonisz",
+      "options": [
+        {
+          "en": "you ask (one friend)"
+        },
+        {
+          "en": "you write (one friend)"
+        },
+        {
+          "en": "you call, you phone (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dzwonic-dzwonisz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d2-e05",
+      "prompt": "urlop",
+      "options": [
+        {
+          "en": "a holiday, time off work"
+        },
+        {
+          "en": "a break"
+        },
+        {
+          "en": "a siesta, an afternoon nap"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "urlop"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d2-e06",
+      "prompt": "raz w roku",
+      "options": [
+        {
+          "en": "every day"
+        },
+        {
+          "en": "once a year"
+        },
+        {
+          "en": "a week (dwa razy w tygodniu: twice a week)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "raz-w-roku"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-d2-e07",
+      "text": "Mam ___ raz w roku.",
+      "meaning": {
+        "en": "I have a holiday once a year."
+      },
+      "gaps": [
+        [
+          "urlop"
+        ]
+      ],
+      "distractors": [
+        "przerwa",
+        "sjesta"
+      ],
+      "items": [
+        "miec-mam",
+        "urlop",
+        "raz-w-roku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d2-e08",
+      "prompt": "w tygodniu",
+      "options": [
+        {
+          "en": "at the weekend"
+        },
+        {
+          "en": "once a year"
+        },
+        {
+          "en": "a week (dwa razy w tygodniu: twice a week)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-tygodniu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-d2-e09",
+      "prompt": {
+        "en": "how often do you call? (one friend)"
+      },
+      "acceptedAnswers": [
+        "jak często dzwonisz?"
+      ],
+      "distractors": [
+        "dzwonię",
+        "kiedy"
+      ],
+      "items": [
+        "jak-czesto",
+        "dzwonic-dzwonisz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d2-e10",
+      "prompt": "na dyskotekę",
+      "options": [
+        {
+          "en": "to a disco"
+        },
+        {
+          "en": "to the cinema"
+        },
+        {
+          "en": "to the swimming pool"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-dyskoteke"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-d2-e11",
+      "prompt": "samochodem",
+      "options": [
+        {
+          "en": "a car"
+        },
+        {
+          "en": "by car"
+        },
+        {
+          "en": "by bus"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "samochodem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-d2-e12",
+      "acceptedAnswers": [
+        "nigdy nie chodzę na dyskotekę"
+      ],
+      "meaning": {
+        "en": "I never go to a disco"
+      },
+      "items": [
+        "nigdy",
+        "nie",
+        "chodzic-chodze",
+        "na-dyskoteke"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-d2-e13",
+      "prompt": {
+        "en": "once a year"
+      },
+      "acceptedAnswers": [
+        "raz w roku"
+      ],
+      "items": [
+        "raz-w-roku"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-d2-e14",
+      "text": "to pracoholik",
+      "meaning": {
+        "en": "he's a workaholic"
+      },
+      "distractors": [
+        "to kolega",
+        "to gospodarz"
+      ],
+      "items": [
+        "to",
+        "pracoholik"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-d2-e15",
+      "pairs": [
+        {
+          "polish": "pracoholik",
+          "meaning": {
+            "en": "a workaholic"
+          }
+        },
+        {
+          "polish": "od rana do wieczora",
+          "meaning": {
+            "en": "from morning till evening"
+          }
+        },
+        {
+          "polish": "urlop",
+          "meaning": {
+            "en": "a holiday"
+          }
+        },
+        {
+          "polish": "na dyskotekę",
+          "meaning": {
+            "en": "to a disco"
+          }
+        },
+        {
+          "polish": "raz w roku",
+          "meaning": {
+            "en": "once a year"
+          }
+        },
+        {
+          "polish": "samochodem",
+          "meaning": {
+            "en": "by car"
+          }
+        }
+      ],
+      "items": [
+        "pracoholik",
+        "od-rana-do-wieczora",
+        "urlop",
+        "na-dyskoteke",
+        "raz-w-roku",
+        "samochodem"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-d2-e16",
+      "lines": [
+        "Uwe zawsze pracuje od rana do wieczora.",
+        "Do pracy jeździ samochodem.",
+        "Urlop ma raz w roku."
+      ],
+      "meaning": {
+        "en": "Uwe, a workaholic."
+      },
+      "statements": [
+        {
+          "text": "Uwe dużo pracuje.",
+          "meaning": {
+            "en": "Uwe works a lot."
+          },
+          "true": true
+        },
+        {
+          "text": "Uwe ma urlop dwa razy w roku.",
+          "meaning": {
+            "en": "Uwe has a holiday twice a year."
+          },
+          "true": false
+        },
+        {
+          "text": "Uwe jeździ samochodem.",
+          "meaning": {
+            "en": "Uwe goes by car."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "zawsze",
+        "pracowac-pracuje-on",
+        "od-rana-do-wieczora",
+        "jezdzic-jezdzi",
+        "samochodem",
+        "urlop",
+        "miec-ma",
+        "raz-w-roku"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-d2-e17",
+      "lines": [
+        "Jak często dzwonisz do mamy?",
+        "Codziennie.",
+        "Co? Codziennie?",
+        "Tak, siedem razy w tygodniu."
+      ],
+      "meaning": {
+        "en": "Calling mum."
+      },
+      "items": [
+        "co",
+        "jak-czesto",
+        "dzwonic-dzwonisz",
+        "codziennie",
+        "tak",
+        "siedem",
+        "razy",
+        "w-tygodniu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-d2-e18",
+      "prompt": {
+        "en": "twice a week"
+      },
+      "acceptedAnswers": [
+        "dwa razy w tygodniu"
+      ],
+      "distractors": [
+        "dwie",
+        "roku"
+      ],
+      "items": [
+        "dwa",
+        "razy",
+        "w-tygodniu"
+      ]
+    }
+  ]
+}

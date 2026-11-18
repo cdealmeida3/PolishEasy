@@ -1,0 +1,238 @@
+{
+  "id": "chat-family-photo",
+  "person": "Kasia",
+  "title": {
+    "en": "A family photo"
+  },
+  "scene": {
+    "en": "You are Adam, showing your friend Kasia a photo of your family. In it are your sister, her husband and their daughter, and your grandparents. They all live in Kraków, so you see them rarely, once a year. You are not married. Kasia is your friend: to her you are ty."
+  },
+  "register": "informal",
+  "items": [
+    "czyje",
+    "to",
+    "zdjecie",
+    "moje",
+    "moja",
+    "moi",
+    "rodzina",
+    "kto",
+    "byc-jest",
+    "siostra",
+    "i",
+    "jej",
+    "maz",
+    "a",
+    "dziecko",
+    "ich",
+    "corka",
+    "gdzie",
+    "mieszkac-mieszkaja",
+    "w-krakowie",
+    "spotykac-sie-spotykamy",
+    "rzadko",
+    "raz-w-roku",
+    "codziennie",
+    "dziadkowie",
+    "rodzice",
+    "ty",
+    "byc-jestes",
+    "zonaty",
+    "nie",
+    "byc-jestem",
+    "kawaler-instr",
+    "tak",
+    "ladny",
+    "nasze",
+    "brat",
+    "syn",
+    "moj",
+    "jego",
+    "zona"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Czyje to zdjęcie?",
+      "meaning": {
+        "en": "Whose photo is this?"
+      },
+      "replies": [
+        {
+          "text": "To moje zdjęcie. To moja rodzina.",
+          "meaning": {
+            "en": "It's my photo. It's my family."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "To moje zdjęcie. To moja rodzina.",
+            "To moje zdjęcie, to moja rodzina."
+          ]
+        },
+        {
+          "text": "To nasze zdjęcie. To moja rodzina.",
+          "meaning": {
+            "en": "It's our photo. It's my family."
+          },
+          "note": {
+            "en": "The photo is yours alone: *to moje zdjęcie*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Kto to jest?",
+      "meaning": {
+        "en": "Who is this?"
+      },
+      "replies": [
+        {
+          "text": "To moja siostra i jej mąż.",
+          "meaning": {
+            "en": "This is my sister and her husband."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "To moja siostra i jej mąż."
+          ]
+        },
+        {
+          "text": "To mój brat i jego żona.",
+          "meaning": {
+            "en": "This is my brother and his wife."
+          },
+          "note": {
+            "en": "It is your sister and her husband: *moja siostra i jej mąż*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "A to dziecko? Czyje to dziecko?",
+      "meaning": {
+        "en": "And this child? Whose child is it?"
+      },
+      "replies": [
+        {
+          "text": "To ich córka.",
+          "meaning": {
+            "en": "It's their daughter."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "To ich córka."
+          ]
+        },
+        {
+          "text": "To ich syn.",
+          "meaning": {
+            "en": "It's their son."
+          },
+          "note": {
+            "en": "It is a girl, their daughter: *córka*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Gdzie mieszkają?",
+      "meaning": {
+        "en": "Where do they live?"
+      },
+      "replies": [
+        {
+          "text": "W Krakowie. Spotykamy się rzadko, raz w roku.",
+          "meaning": {
+            "en": "In Kraków. We see each other rarely, once a year."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "W Krakowie. Spotykamy się rzadko, raz w roku."
+          ]
+        },
+        {
+          "text": "W Krakowie. Spotykamy się codziennie.",
+          "meaning": {
+            "en": "In Kraków. We see each other every day."
+          },
+          "note": {
+            "en": "You see them only once a year: *rzadko, raz w roku*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "A kto to jest?",
+      "meaning": {
+        "en": "And who is this?"
+      },
+      "replies": [
+        {
+          "text": "To moi dziadkowie.",
+          "meaning": {
+            "en": "These are my grandparents."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "To moi dziadkowie."
+          ]
+        },
+        {
+          "text": "To moi rodzice.",
+          "meaning": {
+            "en": "These are my parents."
+          },
+          "note": {
+            "en": "They are your grandparents: *dziadkowie*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "A ty? Jesteś żonaty?",
+      "meaning": {
+        "en": "And you? Are you married?"
+      },
+      "replies": [
+        {
+          "text": "Nie, jestem kawalerem.",
+          "meaning": {
+            "en": "No, I'm a bachelor."
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Nie, jestem kawalerem.",
+            "Nie. Jestem kawalerem."
+          ]
+        },
+        {
+          "text": "Tak, jestem żonaty.",
+          "meaning": {
+            "en": "Yes, I'm married."
+          },
+          "note": {
+            "en": "You are not married: *jestem kawalerem*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Ładne zdjęcie i ładna rodzina!",
+      "meaning": {
+        "en": "A nice photo and a nice family!"
+      }
+    }
+  ]
+}

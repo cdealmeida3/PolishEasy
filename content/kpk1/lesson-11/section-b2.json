@@ -1,0 +1,412 @@
+{
+  "id": "kpk1-l11-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Czyj? Czyja? Czyje?",
+    "meaning": {
+      "en": "Whose?"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-b2-t01",
+      "before": "kpk1-l11-b2-e01",
+      "title": {
+        "en": "Wasz, ich"
+      },
+      "body": {
+        "en": "To several people, “your” is *wasz*: *wasz dom*, *wasza córka*, *wasze dziecko*. *Ich* (their) is the same for every word: *ich syn*, *ich córka*, *ich dzieci*. *Chyba* is probably: *chyba jej* (probably hers). *To musi być…* is it must be…"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b2-e01",
+      "prompt": "wasz",
+      "options": [
+        {
+          "en": "our (with a masculine noun)"
+        },
+        {
+          "en": "your (one friend, with a masculine noun)"
+        },
+        {
+          "en": "your (several people, with a masculine noun)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wasz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b2-e02",
+      "prompt": "wasza",
+      "options": [
+        {
+          "en": "your (several people, with a feminine noun)"
+        },
+        {
+          "en": "your (several people, with a masculine noun)"
+        },
+        {
+          "en": "our (with a feminine noun)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wasza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b2-e03",
+      "prompt": "wasze",
+      "options": [
+        {
+          "en": "your (several people, with a feminine noun)"
+        },
+        {
+          "en": "your (several people, with a neuter noun)"
+        },
+        {
+          "en": "our (with a neuter noun)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wasze"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-b2-e04",
+      "text": "czy to wasz kot?",
+      "meaning": {
+        "en": "is this your cat? (several people)"
+      },
+      "distractors": [
+        "czy to nasz kot?",
+        "czy to wasza kawa?"
+      ],
+      "items": [
+        "czy",
+        "to",
+        "wasz",
+        "kot"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b2-e05",
+      "prompt": "ich",
+      "options": [
+        {
+          "en": "his"
+        },
+        {
+          "en": "her (whose? jej mama: her mum)"
+        },
+        {
+          "en": "their"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ich"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-b2-e06",
+      "text": "To są ___ dzieci.",
+      "meaning": {
+        "en": "These are their children."
+      },
+      "gaps": [
+        [
+          "ich"
+        ]
+      ],
+      "distractors": [
+        "jego",
+        "jej"
+      ],
+      "items": [
+        "to-sa",
+        "ich",
+        "dzieci"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-b2-e07",
+      "prompt": {
+        "en": "his sister and her brother"
+      },
+      "acceptedAnswers": [
+        "jego siostra i jej brat"
+      ],
+      "distractors": [
+        "ich",
+        "moja"
+      ],
+      "items": [
+        "jego",
+        "siostra",
+        "i",
+        "jej",
+        "brat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b2-e08",
+      "prompt": "chyba",
+      "options": [
+        {
+          "en": "probably, I guess"
+        },
+        {
+          "en": "certainly, for sure"
+        },
+        {
+          "en": "also; too"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chyba"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-b2-e09",
+      "acceptedAnswers": [
+        "chyba tak"
+      ],
+      "meaning": {
+        "en": "probably yes"
+      },
+      "items": [
+        "chyba",
+        "tak"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-b2-e10",
+      "prompt": "to musi być",
+      "options": [
+        {
+          "en": "who is it? who is this?"
+        },
+        {
+          "en": "it must be"
+        },
+        {
+          "en": "it can be"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "to-musi-byc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-b2-e11",
+      "prompt": {
+        "en": "your flat (several people)"
+      },
+      "acceptedAnswers": [
+        "wasze mieszkanie"
+      ],
+      "items": [
+        "wasze",
+        "mieszkanie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-b2-e12",
+      "pairs": [
+        {
+          "polish": "wasz",
+          "meaning": {
+            "en": "your (several people, masculine)"
+          }
+        },
+        {
+          "polish": "wasza",
+          "meaning": {
+            "en": "your (several people, feminine)"
+          }
+        },
+        {
+          "polish": "wasze",
+          "meaning": {
+            "en": "your (several people, neuter)"
+          }
+        },
+        {
+          "polish": "ich",
+          "meaning": {
+            "en": "their"
+          }
+        },
+        {
+          "polish": "chyba",
+          "meaning": {
+            "en": "probably"
+          }
+        },
+        {
+          "polish": "to musi być",
+          "meaning": {
+            "en": "it must be"
+          }
+        }
+      ],
+      "items": [
+        "wasz",
+        "wasza",
+        "wasze",
+        "ich",
+        "chyba",
+        "to-musi-byc"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-b2-e13",
+      "lines": [
+        "Czyje to dzieci?",
+        "To ich dzieci.",
+        "A czyja to kawa?",
+        "Chyba jej."
+      ],
+      "meaning": {
+        "en": "In the student lounge."
+      },
+      "items": [
+        "czyje",
+        "to",
+        "dzieci",
+        "ich",
+        "a",
+        "czyja",
+        "kawa",
+        "chyba",
+        "jej"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-b2-e14",
+      "lines": [
+        "Adam i Ewa mają dwoje dzieci.",
+        "Ich syn ma pięć lat.",
+        "Ich córka ma trzy lata."
+      ],
+      "meaning": {
+        "en": "Adam and Ewa's children."
+      },
+      "statements": [
+        {
+          "text": "Ich syn ma pięć lat.",
+          "meaning": {
+            "en": "Their son is five."
+          },
+          "true": true
+        },
+        {
+          "text": "Ich córka ma pięć lat.",
+          "meaning": {
+            "en": "Their daughter is five."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam i Ewa mają dzieci.",
+          "meaning": {
+            "en": "Adam and Ewa have children."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "adam",
+        "i",
+        "ewa",
+        "miec-maja",
+        "dwoje",
+        "dzieci",
+        "ich",
+        "syn",
+        "miec-ma",
+        "piec",
+        "lat",
+        "corka",
+        "trzy",
+        "lata"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-b2-e15",
+      "acceptedAnswers": [
+        "znam ich rodziców"
+      ],
+      "meaning": {
+        "en": "I know their parents"
+      },
+      "items": [
+        "znac-znam",
+        "ich",
+        "rodzice-acc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-b2-e16",
+      "prompt": {
+        "en": "it must be her photo"
+      },
+      "acceptedAnswers": [
+        "to musi być jej zdjęcie"
+      ],
+      "distractors": [
+        "jego",
+        "są"
+      ],
+      "items": [
+        "to-musi-byc",
+        "jej",
+        "zdjecie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-b2-e17",
+      "text": "wasza córka",
+      "meaning": {
+        "en": "your daughter (several people)"
+      },
+      "distractors": [
+        "nasza córka",
+        "wasz syn"
+      ],
+      "items": [
+        "wasza",
+        "corka"
+      ]
+    }
+  ]
+}

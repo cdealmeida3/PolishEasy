@@ -1,0 +1,436 @@
+{
+  "id": "kpk1-l11-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Czyja to rodzina?",
+    "meaning": {
+      "en": "Whose family is it?"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-a2-t01",
+      "before": "kpk1-l11-a2-e01",
+      "title": {
+        "en": "Panna czy mężatka?"
+      },
+      "body": {
+        "en": "A woman who is not married is a *panna*, and a married woman is a *mężatka*. A man who is not married is a *kawaler*, and a married man is *żonaty*. After a divorce she is *rozwiedziona* and he is *rozwiedziony*. After *jestem* these nouns change: *jestem kawalerem*, *jestem panną*, *jestem mężatką*. *Żonaty*, *rozwiedziony* and *rozwiedziona* are adjectives and do not change: *jestem żonaty*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a2-e01",
+      "prompt": "panna",
+      "options": [
+        {
+          "en": "you (to a woman, formal); Mrs, Ms"
+        },
+        {
+          "en": "a girl; a girlfriend"
+        },
+        {
+          "en": "a single woman (not married)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "panna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a2-e02",
+      "prompt": "kawaler",
+      "options": [
+        {
+          "en": "a bachelor, a single man"
+        },
+        {
+          "en": "a boy; a boyfriend"
+        },
+        {
+          "en": "you (to a man, formal); Mr"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kawaler"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a2-e03",
+      "prompt": "kawalerem",
+      "options": [
+        {
+          "en": "a husband"
+        },
+        {
+          "en": "a bachelor (after jestem: jestem kawalerem)"
+        },
+        {
+          "en": "a boy; a boyfriend"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kawaler-instr"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-a2-e04",
+      "text": "jestem kawalerem",
+      "meaning": {
+        "en": "I am a bachelor"
+      },
+      "distractors": [
+        "jestem żonaty",
+        "on jest kawalerem"
+      ],
+      "items": [
+        "byc-jestem",
+        "kawaler-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a2-e05",
+      "prompt": "mężatka",
+      "options": [
+        {
+          "en": "a single woman (not married)"
+        },
+        {
+          "en": "a wife"
+        },
+        {
+          "en": "a married woman"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "mezatka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a2-e06",
+      "prompt": "żonaty",
+      "options": [
+        {
+          "en": "married (of a man)"
+        },
+        {
+          "en": "a married woman"
+        },
+        {
+          "en": "a bachelor, a single man"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zonaty"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-a2-e07",
+      "text": "Adam nie jest kawalerem, jest ___.",
+      "meaning": {
+        "en": "Adam is not a bachelor, he is married."
+      },
+      "gaps": [
+        [
+          "żonaty"
+        ]
+      ],
+      "distractors": [
+        "mężatka",
+        "panna"
+      ],
+      "items": [
+        "adam",
+        "nie",
+        "byc-jest",
+        "kawaler-instr",
+        "zonaty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a2-e08",
+      "prompt": "rozwiedziony",
+      "options": [
+        {
+          "en": "married (of a man)"
+        },
+        {
+          "en": "divorced (rozwiedziony, rozwiedziona, rozwiedzione)"
+        },
+        {
+          "en": "widowed"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "rozwiedziony"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a2-e09",
+      "prompt": {
+        "en": "Ewa is divorced"
+      },
+      "acceptedAnswers": [
+        "Ewa jest rozwiedziona"
+      ],
+      "distractors": [
+        "rozwiedziony",
+        "mężatka"
+      ],
+      "items": [
+        "ewa",
+        "byc-jest",
+        "rozwiedziony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a2-e10",
+      "prompt": "nie żyje",
+      "options": [
+        {
+          "en": "I don't know"
+        },
+        {
+          "en": "he or she is ill"
+        },
+        {
+          "en": "he or she is no longer alive"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nie-zyje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a2-e11",
+      "prompt": "drugi raz",
+      "options": [
+        {
+          "en": "for the second time"
+        },
+        {
+          "en": "once more"
+        },
+        {
+          "en": "for the first time"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "drugi-raz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-a2-e12",
+      "acceptedAnswers": [
+        "jestem drugi raz żonaty"
+      ],
+      "meaning": {
+        "en": "I'm married for the second time"
+      },
+      "items": [
+        "byc-jestem",
+        "drugi-raz",
+        "zonaty"
+      ],
+      "readingAnswers": [
+        "drugi raz jestem żonaty"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-a2-e13",
+      "prompt": {
+        "en": "I'm a bachelor"
+      },
+      "acceptedAnswers": [
+        "jestem kawalerem",
+        "ja jestem kawalerem"
+      ],
+      "items": [
+        "byc-jestem",
+        "kawaler-instr"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-a2-e14",
+      "pairs": [
+        {
+          "polish": "panna",
+          "meaning": {
+            "en": "a single woman"
+          }
+        },
+        {
+          "polish": "kawaler",
+          "meaning": {
+            "en": "a bachelor"
+          }
+        },
+        {
+          "polish": "mężatka",
+          "meaning": {
+            "en": "a married woman"
+          }
+        },
+        {
+          "polish": "żonaty",
+          "meaning": {
+            "en": "married (of a man)"
+          }
+        },
+        {
+          "polish": "rozwiedziona",
+          "meaning": {
+            "en": "divorced (of a woman)"
+          }
+        },
+        {
+          "polish": "nie żyje",
+          "meaning": {
+            "en": "is no longer alive"
+          }
+        }
+      ],
+      "items": [
+        "panna",
+        "kawaler",
+        "mezatka",
+        "zonaty",
+        "rozwiedziony",
+        "nie-zyje"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-a2-e15",
+      "lines": [
+        "Marta jest panną?",
+        "Nie, jest rozwiedziona.",
+        "A Tomek?",
+        "Jest kawalerem."
+      ],
+      "meaning": {
+        "en": "Who is married?"
+      },
+      "statements": [
+        {
+          "text": "Marta jest rozwiedziona.",
+          "meaning": {
+            "en": "Marta is divorced."
+          },
+          "true": true
+        },
+        {
+          "text": "Tomek jest żonaty.",
+          "meaning": {
+            "en": "Tomek is married."
+          },
+          "true": false
+        },
+        {
+          "text": "Tomek jest kawalerem.",
+          "meaning": {
+            "en": "Tomek is a bachelor."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "byc-jest",
+        "nie",
+        "rozwiedziony",
+        "a",
+        "kawaler-instr"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-a2-e16",
+      "lines": [
+        "Jesteś żonaty?",
+        "Nie, jestem kawalerem.",
+        "A twój brat?",
+        "On jest żonaty."
+      ],
+      "meaning": {
+        "en": "Married or not?"
+      },
+      "items": [
+        "byc-jestes",
+        "nie",
+        "byc-jestem",
+        "kawaler-instr",
+        "a",
+        "twoj",
+        "brat",
+        "on",
+        "byc-jest",
+        "zonaty"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a2-e17",
+      "prompt": {
+        "en": "my grandpa is no longer alive"
+      },
+      "acceptedAnswers": [
+        "mój dziadek nie żyje"
+      ],
+      "distractors": [
+        "moja",
+        "jest"
+      ],
+      "items": [
+        "moj",
+        "dziadek",
+        "nie-zyje"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a2-e18",
+      "prompt": {
+        "en": "a single woman and a bachelor"
+      },
+      "acceptedAnswers": [
+        "panna i kawaler"
+      ],
+      "distractors": [
+        "pani",
+        "pan"
+      ],
+      "items": [
+        "panna",
+        "i",
+        "kawaler"
+      ]
+    }
+  ]
+}

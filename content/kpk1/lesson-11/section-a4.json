@@ -1,0 +1,480 @@
+{
+  "id": "kpk1-l11-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Czyja to rodzina?",
+    "meaning": {
+      "en": "Whose family is it?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l11-a4-t01",
+      "before": "kpk1-l11-a4-e01",
+      "title": {
+        "en": "Mam męża, mam żonę"
+      },
+      "body": {
+        "en": "After *mam* and *znam* family words change, as *siostrę* and *brata* did: *mam żonę*, *mam męża*, *mam ciocię i wujka*, *znam twoich rodziców*. Children are counted with *dwoje*: *dwoje dzieci*. *Młodszy* (younger) and *starszy* (older) go before the word: *młodszy brat*, *starsza siostra*."
+      },
+      "table": {
+        "title": {
+          "en": "Biernik: kogo? co?"
+        },
+        "columns": [
+          {
+            "header": "kto? co?"
+          },
+          {
+            "header": "mam…"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "żona",
+              "żon[ę]"
+            ]
+          },
+          {
+            "cells": [
+              "ciocia",
+              "cioci[ę]"
+            ]
+          },
+          {
+            "cells": [
+              "mąż",
+              "męż[a]"
+            ]
+          },
+          {
+            "cells": [
+              "wujek",
+              "wujk[a]"
+            ]
+          },
+          {
+            "cells": [
+              "rodzice",
+              "rodzic[ów]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a4-e01",
+      "prompt": "męża",
+      "options": [
+        {
+          "en": "a husband (after mam, znam…: mam męża)"
+        },
+        {
+          "en": "a husband"
+        },
+        {
+          "en": "a wife (after mam, znam…)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "maz-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a4-e02",
+      "prompt": "żonę",
+      "options": [
+        {
+          "en": "a wife"
+        },
+        {
+          "en": "a wife (after mam, znam…: mam żonę)"
+        },
+        {
+          "en": "a husband (after mam, znam…: mam męża)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zona-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l11-a4-e03",
+      "text": "mam męża",
+      "meaning": {
+        "en": "I have a husband"
+      },
+      "distractors": [
+        "mam żonę",
+        "mam brata"
+      ],
+      "items": [
+        "miec-mam",
+        "maz-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a4-e04",
+      "prompt": "dwoje",
+      "options": [
+        {
+          "en": "two"
+        },
+        {
+          "en": "two (with a feminine noun: dwie papryki)"
+        },
+        {
+          "en": "two (of children: dwoje dzieci)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dwoje"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l11-a4-e05",
+      "text": "Mam ___ i dwoje dzieci.",
+      "meaning": {
+        "en": "I have a wife and two children."
+      },
+      "gaps": [
+        [
+          "żonę"
+        ]
+      ],
+      "distractors": [
+        "żona",
+        "męża"
+      ],
+      "items": [
+        "miec-mam",
+        "zona-acc",
+        "i",
+        "dwoje",
+        "dzieci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a4-e06",
+      "prompt": "rodziców",
+      "options": [
+        {
+          "en": "parents (after mam, znam…: mam rodziców w Krakowie)"
+        },
+        {
+          "en": "parents"
+        },
+        {
+          "en": "grandparents"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rodzice-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a4-e07",
+      "prompt": "ciocię",
+      "options": [
+        {
+          "en": "an aunt"
+        },
+        {
+          "en": "an aunt (after mam, znam…: mam ciocię)"
+        },
+        {
+          "en": "a cousin (a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ciocia-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a4-e08",
+      "prompt": "wujka",
+      "options": [
+        {
+          "en": "an uncle"
+        },
+        {
+          "en": "a cousin (a man)"
+        },
+        {
+          "en": "an uncle (after mam, znam…: mam wujka)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wujek-acc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a4-e09",
+      "prompt": {
+        "en": "I have an aunt and an uncle"
+      },
+      "acceptedAnswers": [
+        "mam ciocię i wujka"
+      ],
+      "distractors": [
+        "ciocia",
+        "wujek"
+      ],
+      "items": [
+        "miec-mam",
+        "ciocia-acc",
+        "i",
+        "wujek-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a4-e10",
+      "prompt": "młodszy",
+      "options": [
+        {
+          "en": "younger (młodszy, młodsza, młodsze)"
+        },
+        {
+          "en": "young (młody, młoda, młode)"
+        },
+        {
+          "en": "small (mały, mała, małe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mlodszy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l11-a4-e11",
+      "prompt": "starszy",
+      "options": [
+        {
+          "en": "old (stary, stara, stare)"
+        },
+        {
+          "en": "older (starszy, starsza, starsze)"
+        },
+        {
+          "en": "big (duży, duża, duże)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "starszy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-a4-e12",
+      "acceptedAnswers": [
+        "mój młodszy brat"
+      ],
+      "meaning": {
+        "en": "my younger brother"
+      },
+      "items": [
+        "moj",
+        "mlodszy",
+        "brat"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l11-a4-e13",
+      "prompt": {
+        "en": "my older sister"
+      },
+      "acceptedAnswers": [
+        "moja starsza siostra"
+      ],
+      "items": [
+        "moja",
+        "starszy",
+        "siostra"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l11-a4-e14",
+      "pairs": [
+        {
+          "polish": "męża",
+          "meaning": {
+            "en": "a husband (mam…)"
+          }
+        },
+        {
+          "polish": "żonę",
+          "meaning": {
+            "en": "a wife (mam…)"
+          }
+        },
+        {
+          "polish": "ciocię",
+          "meaning": {
+            "en": "an aunt (mam…)"
+          }
+        },
+        {
+          "polish": "wujka",
+          "meaning": {
+            "en": "an uncle (mam…)"
+          }
+        },
+        {
+          "polish": "młodszy",
+          "meaning": {
+            "en": "younger"
+          }
+        },
+        {
+          "polish": "starszy",
+          "meaning": {
+            "en": "older"
+          }
+        }
+      ],
+      "items": [
+        "maz-acc",
+        "zona-acc",
+        "ciocia-acc",
+        "wujek-acc",
+        "mlodszy",
+        "starszy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l11-a4-e15",
+      "lines": [
+        "Moja rodzina jest duża.",
+        "Mam męża i dwoje dzieci.",
+        "Mam też ciocię i wujka."
+      ],
+      "meaning": {
+        "en": "A big family."
+      },
+      "statements": [
+        {
+          "text": "Ona ma męża.",
+          "meaning": {
+            "en": "She has a husband."
+          },
+          "true": true
+        },
+        {
+          "text": "Ona ma żonę.",
+          "meaning": {
+            "en": "She has a wife."
+          },
+          "true": false
+        },
+        {
+          "text": "Ona ma wujka.",
+          "meaning": {
+            "en": "She has an uncle."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "moja",
+        "rodzina",
+        "byc-jest",
+        "duzy",
+        "miec-mam",
+        "maz-acc",
+        "i",
+        "dwoje",
+        "dzieci",
+        "tez",
+        "ciocia-acc",
+        "wujek-acc"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l11-a4-e16",
+      "lines": [
+        "Masz rodzeństwo?",
+        "Tak, mam brata.",
+        "Jest młodszy czy starszy?",
+        "Starszy."
+      ],
+      "meaning": {
+        "en": "Talking about a brother."
+      },
+      "items": [
+        "miec-masz",
+        "rodzenstwo",
+        "tak",
+        "miec-mam",
+        "brat-acc",
+        "byc-jest",
+        "mlodszy",
+        "czy",
+        "starszy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l11-a4-e17",
+      "prompt": {
+        "en": "I know her parents"
+      },
+      "acceptedAnswers": [
+        "znam jej rodziców"
+      ],
+      "distractors": [
+        "rodzice",
+        "jego"
+      ],
+      "items": [
+        "znac-znam",
+        "jej",
+        "rodzice-acc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l11-a4-e18",
+      "acceptedAnswers": [
+        "mam dwoje dzieci"
+      ],
+      "meaning": {
+        "en": "I have two children"
+      },
+      "items": [
+        "miec-mam",
+        "dwoje",
+        "dzieci"
+      ]
+    }
+  ]
+}
