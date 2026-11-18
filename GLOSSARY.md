@@ -149,6 +149,10 @@ _Avoid_: Conjugation quiz, verb sort
 The Game of naming a learned hobby, *jeździć na rowerze*, from its Picture, by choosing or typing. Chapter 6's Game.
 _Avoid_: Hobby quiz, activities game
 
+**Family tree**:
+The Game of a family tree seen from the Learner, *ja*, where each relative is named, *mój wujek*, *moja ciocia*, or found on the tree. Chapter 11's Game.
+_Avoid_: Relatives quiz, family game
+
 **Kiosk till**:
 The Game of paying a price said in Polish, *trzy złote i czterdzieści groszy*, exactly, with coins and notes. Chapter 7's Game.
 _Avoid_: Shop game, money quiz
@@ -176,6 +180,10 @@ _Avoid_: Supermarket game, aisle quiz
 **Take the order**:
 The Game of writing each guest's dish on a waiter's pad as a table orders in Polish: *Dla mnie żurek. A dla mnie to samo.* Chapter 10's Game.
 _Avoid_: Restaurant game, waiter quiz
+
+**Times of day**:
+The Game of saying, against the clock, when in the day a time on the clock is: 7:30 is *rano*, 21:00 *wieczorem*, 3:00 *w nocy*. Chapter 11's second Game.
+_Avoid_: Clock quiz, time drill
 
 **Register sort**:
 The Game of sorting learned phrases by Register, against the clock: to *pan* or *pani* (O), to a friend (N) or to anyone (U).

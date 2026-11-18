@@ -60,6 +60,10 @@ data class Course(
     val restaurant: Restaurant? = null,
     /** The sentences of Negation flip, each with its negation, in the content's order. */
     val negations: List<Negation> = emptyList(),
+    /** The family of Family tree, or null if the content has none. */
+    val family: Family? = null,
+    /** The times of day of Times of day, each with the hours it covers, in the content's order. */
+    val timesOfDay: List<TimeOfDay> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

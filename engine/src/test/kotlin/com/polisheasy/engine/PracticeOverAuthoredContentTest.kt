@@ -693,6 +693,32 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Family tree opens in chapter 11 with every relative, each with my in its gender and a Clip`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.FAMILY_TREE }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l11-"), course.path[firstReady - 1].id)
+        val all = practiceAfter(course.path.size)
+        listOf(FamilyTree.NAME, FamilyTree.FIND).forEach { way ->
+            val round = all.start(all.setup(Game.FAMILY_TREE, listOf(way))) as TreeRound
+            assertEquals(Relative.entries.size, round.total)
+            round.people.forEach { person -> assertTrue(all.clipOf(person.phrase) != null, "No Clip for ${person.phrase}") }
+        }
+        assertEquals(setOf("mój dziadek", "moja babcia", "mój wujek", "moja ciocia", "mój tata", "moja mama", "mój kuzyn", "moja kuzynka", "mój brat", "moja siostra"), course.familyPhrases().toSet())
+    }
+
+    @Test
+    fun `Times of day opens in chapter 11 and deals every learned time at its hours`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.TIMES_OF_DAY }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l11-"), course.path[firstReady - 1].id)
+        val all = practiceAfter(course.path.size)
+        val round = all.start(all.setup(Game.TIMES_OF_DAY, listOf("${TimesOfDay.SECONDS_PREFIX}60"))) as ClockRound
+        assertEquals(course.timesOfDay.map { it.item }.toSet(), round.cards.map { it.key }.toSet())
+        round.cards.forEach { card ->
+            assertTrue(card.hour in course.timesOfDay.single { it.item == card.key }.hours)
+            card.options.forEach { option -> assertTrue(all.clipOf(option) != null, "No Clip for $option") }
+        }
+    }
+
+    @Test
     fun `the Verb challenge offers chapter 4's conjugation once its verbs are learned`() {
         val afterB = course.path.indexOfFirst { it.id == "kpk1-l04-b3" } + 1
         assertTrue(afterB > 0)
