@@ -17,6 +17,7 @@ import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
+import androidx.compose.ui.test.onLast
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
@@ -42,6 +43,8 @@ import com.polisheasy.engine.OppositesRound
 import com.polisheasy.engine.WhoRound
 import com.polisheasy.engine.VerbGroupRound
 import com.polisheasy.engine.HobbyRound
+import com.polisheasy.engine.LottoRound
+import com.polisheasy.engine.TillRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.Register
 import com.polisheasy.engine.RegisterRound
@@ -639,6 +642,75 @@ class PlayingPracticeOnScreenTest {
         screen.onNodeWithText(text(R.string.action_check)).performClick()
         shows(text(R.string.hobby_lubie, typed.answer))
         assertEquals(true, hobbies().given?.correct)
+    }
+
+    @Test
+    fun `Kiosk till writes a price, and the Learner pays it exactly with coins, taking back one too many`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_kiosk_till)
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val total = till().total
+        val first = checkNotNull(till().question)
+        shows(R.string.till_read_instruction)
+        shows(first.polish)
+        shows(R.string.till_counter_empty)
+        assertEquals(listOf(10, 20, 50, 100, 200, 500), till().money)
+
+        // One coin too many, taken back from the counter, where it comes first.
+        payWith(first.price)
+        screen.onAllNodes(hasText(moneyLabel(10)) and hasClickAction()).onLast().performScrollTo().performClick()
+        assertEquals(first.price + 10, till().onCounter)
+        screen.onAllNodes(hasText(moneyLabel(10)) and hasClickAction()).onFirst().performScrollTo().performClick()
+        assertEquals(first.price, till().onCounter)
+        tap(R.string.till_pay)
+        assertEquals(true, till().given?.correct)
+        tap(R.string.action_continue)
+
+        // Too little is wrong.
+        val second = checkNotNull(till().question)
+        payWith(second.price - 10)
+        tap(R.string.till_pay)
+        assertEquals(false, till().given?.correct)
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            payWith(checkNotNull(till().question).price)
+            tap(R.string.till_pay)
+            tap(R.string.action_continue)
+        }
+        showsScore(total - 1, total)
+    }
+
+    @Test
+    fun `Lotto calls a number in words, and the Learner ticks it on the card`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_lotto)
+        tap(R.string.option_read)
+        screen.onNodeWithText(text(R.string.option_to_1000)).performScrollTo().performClick()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val total = lotto().total
+        val first = checkNotNull(lotto().question)
+        shows(R.string.lotto_read_instruction)
+        shows(first.polish)
+        lotto().card.forEach { number -> screen.onNode(hasText("$number") and hasClickAction()).assertExists() }
+
+        // A wrong number: the one called is marked, and stays ticked.
+        val wrong = lotto().card.first { it != first.number }
+        screen.onNode(hasText("$wrong") and hasClickAction()).performScrollTo().performClick()
+        assertEquals(false, lotto().given?.correct)
+        tap(R.string.action_continue)
+        assertEquals(setOf(first.number), lotto().ticked)
+
+        while (viewModel?.screen is Screen.Round) {
+            screen.onNode(hasText("${checkNotNull(lotto().question).number}") and hasClickAction()).performScrollTo().performClick()
+            tap(R.string.action_continue)
+        }
+        showsScore(total - 1, total)
     }
 
     @Test
@@ -1245,6 +1317,24 @@ class PlayingPracticeOnScreenTest {
     private fun verbGroups(): VerbGroupRound = (viewModel?.screen as Screen.Round).round as VerbGroupRound
 
     private fun hobbies(): HobbyRound = (viewModel?.screen as Screen.Round).round as HobbyRound
+
+    private fun till(): TillRound = (viewModel?.screen as Screen.Round).round as TillRound
+
+    private fun lotto(): LottoRound = (viewModel?.screen as Screen.Round).round as LottoRound
+
+    /** The label on a coin or note of [grosze]: "50 gr", "2 zł". */
+    private fun moneyLabel(grosze: Int): String = if (grosze < 100) text(R.string.till_grosze, grosze) else text(R.string.till_zloty, grosze / 100)
+
+    /** Puts [grosze] on the counter with the fewest coins and notes, tapping their keys, which come after the counter. */
+    private fun payWith(grosze: Int) {
+        var left = grosze
+        till().money.sortedDescending().forEach { coin ->
+            while (left >= coin) {
+                screen.onAllNodes(hasText(moneyLabel(coin)) and hasClickAction()).onLast().performScrollTo().performClick()
+                left -= coin
+            }
+        }
+    }
 
     private fun ankieta(): AnkietaRound = (viewModel?.screen as Screen.Round).round as AnkietaRound
 

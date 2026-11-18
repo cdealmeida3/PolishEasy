@@ -539,6 +539,65 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Kiosk till opens in chapter 7 and asks prices said in learned words, with the money in the form that goes after the number`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.KIOSK_TILL }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l07-"), course.path[firstReady - 1].id)
+        val learned = course.path.flatMap { it.itemIds() }.mapNotNull(course.itemsById::get).flatMap { listOf(it.text) + it.forms }.toSet()
+        val all = practiceAfter(course.path.size)
+        val offered = mutableSetOf<String>()
+        all.setup(Game.KIOSK_TILL).choices[0].options.forEach { clue ->
+            all.setup(Game.KIOSK_TILL, listOf(clue.id)).choices[1].options.forEach { level ->
+                offered += "${clue.id}:${level.id}"
+                val round = all.start(all.setup(Game.KIOSK_TILL, listOf(clue.id, level.id))) as TillRound
+                assertEquals(KioskTill.QUESTIONS, round.total)
+                round.run.questions.forEach { question ->
+                    assertTrue(learned.containsAll(question.words), "$question")
+                    if (round.listen) question.words.forEach { assertTrue(all.clipOf(it) != null, "No Clip for $it") }
+                    val zloty = question.price / 100
+                    assertTrue(if (level.id == KioskTill.COINS) zloty in 1..9 else zloty in 10..99, "$question")
+                    assertEquals(0, question.price % 10)
+                    val money = question.words.first { it.startsWith("złot") }
+                    assertEquals(
+                        when {
+                            zloty == 1 -> "złoty"
+                            zloty % 10 in 2..4 && zloty % 100 !in 12..14 -> "złote"
+                            else -> "złotych"
+                        },
+                        money,
+                        question.polish,
+                    )
+                    if (question.price % 100 != 0) assertEquals("groszy", question.words.last(), question.polish)
+                }
+            }
+        }
+        assertEquals(setOf("listen:coins", "listen:notes", "read:coins", "read:notes"), offered)
+    }
+
+    @Test
+    fun `Lotto opens in chapter 7 with the hundreds, and calls only learned numbers that are on its card`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.LOTTO }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l07-"), course.path[firstReady - 1].id)
+        val learned = course.path.flatMap { it.itemIds() }.mapNotNull(course.itemsById::get).map { it.text }.toSet()
+        val all = practiceAfter(course.path.size)
+        listOf(Lotto.LISTEN, Lotto.READ).forEach { clue ->
+            assertEquals(listOf(Lotto.HUNDREDS, Lotto.TO_1000), all.setup(Game.LOTTO, listOf(clue)).choices[1].options.map { it.id })
+            listOf(Lotto.HUNDREDS, Lotto.TO_1000).forEach { level ->
+                val round = all.start(all.setup(Game.LOTTO, listOf(clue, level))) as LottoRound
+                assertEquals(Lotto.CARD, round.card.size)
+                assertEquals(round.card.sorted(), round.card)
+                assertTrue(round.card.all { it in 100..1000 }, "${round.card}")
+                assertEquals(Lotto.CALLS, round.total)
+                round.run.questions.forEach { question ->
+                    assertTrue(question.number in round.card)
+                    assertTrue(learned.containsAll(question.words), "$question")
+                    if (round.listen) question.words.forEach { assertTrue(all.clipOf(it) != null, "No Clip for $it") }
+                    if (level == Lotto.HUNDREDS) assertEquals(0, question.number % 100)
+                }
+            }
+        }
+    }
+
+    @Test
     fun `the Verb challenge offers chapter 4's conjugation once its verbs are learned`() {
         val afterB = course.path.indexOfFirst { it.id == "kpk1-l04-b3" } + 1
         assertTrue(afterB > 0)

@@ -149,6 +149,14 @@ _Avoid_: Conjugation quiz, verb sort
 The Game of naming a learned hobby, *jeździć na rowerze*, from its Picture, by choosing or typing. Chapter 6's Game.
 _Avoid_: Hobby quiz, activities game
 
+**Kiosk till**:
+The Game of paying a price said in Polish, *trzy złote i czterdzieści groszy*, exactly, with coins and notes. Chapter 7's Game.
+_Avoid_: Shop game, money quiz
+
+**Lotto**:
+The Game of ticking numbers from a hundred to a thousand on a card as they are called in Polish. Chapter 7's Game.
+_Avoid_: Bingo, number card
+
 **Register sort**:
 The Game of sorting learned phrases by Register, against the clock: to *pan* or *pani* (O), to a friend (N) or to anyone (U).
 _Avoid_: Formality quiz
