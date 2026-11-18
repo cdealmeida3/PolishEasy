@@ -65,6 +65,8 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_kiosk_till, R.string.game_kiosk_till_note, R.string.game_kiosk_till_needs, R.drawable.game_kiosk_till)
     Game.LOTTO ->
         GameWords(R.string.game_lotto, R.string.game_lotto_note, R.string.game_lotto_needs, R.drawable.game_lotto)
+    Game.PLATE_BUILDER ->
+        GameWords(R.string.game_plate_builder, R.string.game_plate_builder_note, R.string.game_plate_builder_needs, R.drawable.game_plate_builder)
 }
 
 @StringRes
@@ -79,7 +81,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.CHAT, Game.ANKIETA -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.CHAT, Game.ANKIETA -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")
@@ -112,6 +114,7 @@ internal fun choiceLabel(id: String): String = stringResource(
         "show" -> R.string.choice_show
         "answer" -> R.string.choice_answer
         "price" -> R.string.choice_price
+        "order" -> R.string.choice_order
         else -> error("No name for the choice $id")
     },
 )
@@ -155,6 +158,8 @@ internal fun optionLabel(option: OptionView): String = option.label
         "notes" -> R.string.option_notes
         "hundreds" -> R.string.option_hundreds
         "to-1000" -> R.string.option_to_1000
+        "one-dish" -> R.string.option_one_dish
+        "two-dishes" -> R.string.option_two_dishes
         else -> error("No name for the option ${option.id}")
     },
 )

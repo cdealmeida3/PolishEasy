@@ -55,7 +55,13 @@ internal data class PracticeFile(
     val hobbies: List<List<String>> = emptyList(),
     /** The money, words and goods of Kiosk till. */
     val till: TillFile? = null,
+    /** The dishes of Plate builder. */
+    val plates: PlatesFile? = null,
 )
+
+/** The Item ids of Plate builder: [and] (*i*), and each dish as its base, its phrase with *z* and its topping: ["chleb", "z-maslem", "maslo"]. */
+@Serializable
+internal data class PlatesFile(val and: String, val dishes: List<List<String>>)
 
 /** The Item ids of Kiosk till: the money, [and] (*i*), [costs] (*kosztuje*) and the [goods] on the counter. */
 @Serializable
@@ -217,6 +223,9 @@ internal class ReadContent(
             jobsAfter = practice?.jobs?.after,
             hobbies = practice?.hobbies.orEmpty().filter { it.isNotEmpty() }.distinct(),
             till = practice?.till?.let { Till(it.zloty, it.grosz, it.and, it.costs, it.goods.distinct()) },
+            plates = practice?.plates?.let { plates ->
+                Plates(plates.and, plates.dishes.filter { it.size == 3 }.map { (base, with, topping) -> Dish(base, with, topping) }.distinct())
+            },
         )
     }
 
@@ -412,6 +421,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         practice.jobs?.let { jobs -> problems += jobProblems(file, jobs, practice, course, content.itemsComplete) }
         problems += hobbyProblems(file, practice.hobbies, course, content.itemsComplete)
         practice.till?.let { till -> problems += tillProblems(file, till, course, content.itemsComplete) }
+        practice.plates?.let { plates -> problems += plateProblems(file, plates, course, content.itemsComplete) }
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -487,6 +497,29 @@ private fun tillProblems(file: String, till: TillFile, course: Course, itemsComp
     if (till.goods.isEmpty()) problems += ContentProblem(file, null, "Kiosk till has no goods")
     till.goods.filter { it !in course.pictures }.forEach { id -> problems += ContentProblem(file, id, "The good $id has no picture") }
     till.goods.repeated().forEach { id -> problems += ContentProblem(file, id, "The good $id is listed more than once") }
+    return problems
+}
+
+/** What is wrong with Plate builder: every dish three defined Items, its base and topping with different Pictures, and listed once. */
+private fun plateProblems(file: String, plates: PlatesFile, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    if (itemsComplete && plates.and !in course.itemsById) problems += ContentProblem(file, plates.and, "Plate builder names Item ${plates.and}, which is not defined")
+    if (plates.dishes.isEmpty()) problems += ContentProblem(file, null, "Plate builder has no dishes")
+    plates.dishes.forEach { dish ->
+        val name = dish.joinToString(" ")
+        if (dish.size != 3) {
+            problems += ContentProblem(file, null, "A dish must be three Items, its base, its phrase with z and its topping, and $name is not")
+            return@forEach
+        }
+        dish.filter { itemsComplete && it !in course.itemsById }.forEach { id ->
+            problems += ContentProblem(file, id, "The dish $name names Item $id, which is not defined")
+        }
+        listOf(dish[0], dish[2]).filter { it !in course.pictures }.forEach { id -> problems += ContentProblem(file, id, "The dish $name needs a picture of $id") }
+        if (course.pictures[dish[0]] != null && course.pictures[dish[0]] == course.pictures[dish[2]]) {
+            problems += ContentProblem(file, dish[0], "The dish $name has the same picture for its base and its topping")
+        }
+    }
+    plates.dishes.map { it.joinToString(" ") }.repeated().forEach { name -> problems += ContentProblem(file, null, "The dish $name is listed more than once") }
     return problems
 }
 

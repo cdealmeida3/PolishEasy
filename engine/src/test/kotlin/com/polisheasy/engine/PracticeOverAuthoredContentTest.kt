@@ -598,6 +598,28 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Plate builder opens in chapter 8 and orders learned dishes whose foods are all on the tray`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.PLATE_BUILDER }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l08-"), course.path[firstReady - 1].id)
+        val learned = course.path.flatMap { it.itemIds() }.mapNotNull(course.itemsById::get).map { it.text }.toSet()
+        val all = practiceAfter(course.path.size)
+        listOf(PlateBuilder.LISTEN, PlateBuilder.READ).forEach { clue ->
+            assertEquals(listOf(PlateBuilder.ONE, PlateBuilder.TWO), all.setup(Game.PLATE_BUILDER, listOf(clue)).choices[1].options.map { it.id })
+            listOf(PlateBuilder.ONE, PlateBuilder.TWO).forEach { level ->
+                val round = all.start(all.setup(Game.PLATE_BUILDER, listOf(clue, level))) as PlateRound
+                assertEquals(PlateBuilder.QUESTIONS, round.total)
+                round.run.questions.forEach { question ->
+                    assertTrue(learned.containsAll(question.words), "$question")
+                    if (round.listen) question.words.forEach { assertTrue(all.clipOf(it) != null, "No Clip for $it") }
+                    assertEquals(if (level == PlateBuilder.ONE) 2 else 4, question.wanted.size, question.polish)
+                    assertTrue(question.tray.map { it.id }.containsAll(question.wanted), question.polish)
+                    assertEquals(question.tray.size, question.tray.map { it.picture }.toSet().size, question.polish)
+                }
+            }
+        }
+    }
+
+    @Test
     fun `the Verb challenge offers chapter 4's conjugation once its verbs are learned`() {
         val afterB = course.path.indexOfFirst { it.id == "kpk1-l04-b3" } + 1
         assertTrue(afterB > 0)

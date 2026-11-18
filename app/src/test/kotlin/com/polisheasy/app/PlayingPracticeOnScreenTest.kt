@@ -44,6 +44,7 @@ import com.polisheasy.engine.WhoRound
 import com.polisheasy.engine.VerbGroupRound
 import com.polisheasy.engine.HobbyRound
 import com.polisheasy.engine.LottoRound
+import com.polisheasy.engine.PlateRound
 import com.polisheasy.engine.TillRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.Register
@@ -714,6 +715,43 @@ class PlayingPracticeOnScreenTest {
     }
 
     @Test
+    fun `Plate builder writes an order, and the Learner puts its foods on the plate and serves it`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_plate_builder)
+        tap(R.string.option_read)
+        screen.onNodeWithText(text(R.string.option_two_dishes)).performScrollTo().performClick()
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val total = plate().total
+        val first = checkNotNull(plate().question)
+        shows(R.string.plate_read_instruction)
+        shows(first.polish)
+        shows(R.string.plate_empty)
+        assertEquals(4, first.wanted.size)
+
+        // A food put on and taken off again, from the plate.
+        val other = first.tray.first { it.id !in first.wanted }
+        putOnPlate(other.id)
+        assertEquals(listOf(other.id), plate().placed)
+        screen.onAllNodes(hasContentDescription(other.means) and hasClickAction()).onFirst().performScrollTo().performClick()
+        assertEquals(emptyList(), plate().placed)
+
+        // Served with one food missing: wrong, and the order is written below.
+        first.wanted.drop(1).forEach { putOnPlate(it) }
+        tap(R.string.plate_serve)
+        assertEquals(false, plate().given?.correct)
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            checkNotNull(plate().question).wanted.forEach { putOnPlate(it) }
+            tap(R.string.plate_serve)
+            tap(R.string.action_continue)
+        }
+        showsScore(total - 1, total)
+    }
+
+    @Test
     fun `Numbers read shows the words and says nothing, and a run is three numbers in a row`() {
         openPracticeOverTheRealCourse()
         openGame(R.string.game_numbers)
@@ -1321,6 +1359,14 @@ class PlayingPracticeOnScreenTest {
     private fun till(): TillRound = (viewModel?.screen as Screen.Round).round as TillRound
 
     private fun lotto(): LottoRound = (viewModel?.screen as Screen.Round).round as LottoRound
+
+    private fun plate(): PlateRound = (viewModel?.screen as Screen.Round).round as PlateRound
+
+    /** Taps the food [id] on Plate builder's tray, which comes after the plate. */
+    private fun putOnPlate(id: String) {
+        val food = checkNotNull(plate().question).tray.single { it.id == id }
+        screen.onAllNodes(hasContentDescription(food.means) and hasClickAction()).onLast().performScrollTo().performClick()
+    }
 
     /** The label on a coin or note of [grosze]: "50 gr", "2 zł". */
     private fun moneyLabel(grosze: Int): String = if (grosze < 100) text(R.string.till_grosze, grosze) else text(R.string.till_zloty, grosze / 100)

@@ -418,6 +418,17 @@
     <string name="lotto_listen_instruction">Tick the number you hear on your card</string>
     <string name="lotto_read_instruction">Tick this number on your card</string>
     <string name="lotto_ticked">ticked</string>
+    <string name="game_plate_builder">Plate builder</string>
+    <string name="game_plate_builder_note">A dish is ordered: put its foods on the plate.</string>
+    <string name="game_plate_builder_needs">Opens when you learn four dishes with z, in chapter 8.</string>
+    <string name="choice_order">The order is</string>
+    <string name="option_one_dish">One dish</string>
+    <string name="option_two_dishes">Two dishes</string>
+    <string name="plate_listen_instruction">Listen to the order and put it on the plate</string>
+    <string name="plate_read_instruction">Put this order on the plate</string>
+    <string name="plate_empty">Tap the foods below to put them on the plate</string>
+    <string name="plate_take_off">take it off</string>
+    <string name="plate_serve">Serve</string>
     <string name="game_spell_it">Spell it</string>
     <string name="game_spell_it_note">Tap the letters in order to spell the word.</string>
     <string name="game_spell_it_needs">Opens when you learn four words to spell.</string>

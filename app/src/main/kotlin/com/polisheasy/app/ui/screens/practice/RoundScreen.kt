@@ -33,6 +33,7 @@ import com.polisheasy.engine.WhoRound
 import com.polisheasy.engine.VerbGroupRound
 import com.polisheasy.engine.HobbyRound
 import com.polisheasy.engine.LottoRound
+import com.polisheasy.engine.PlateRound
 import com.polisheasy.engine.TillRound
 import kotlinx.coroutines.delay
 
@@ -80,6 +81,7 @@ internal fun RoundScreen(
         is HobbyRound -> HobbyCharadesStep(round, say, onMove)
         is TillRound -> KioskTillStep(round, sayAll, onMove)
         is LottoRound -> LottoStep(round, sayAll, onMove)
+        is PlateRound -> PlateBuilderStep(round, sayAll, onMove)
         else -> error("No screen for a Round of ${round.game}")
     }
 }
