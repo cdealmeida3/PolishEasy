@@ -1,0 +1,437 @@
+{
+  "id": "kpk1-l13-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Chciałem dobrze!",
+    "meaning": {
+      "en": "I meant well!"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-b3-t01",
+      "before": "kpk1-l13-b3-e01",
+      "title": {
+        "en": "Ale wstyd!"
+      },
+      "body": {
+        "en": "*Zrobić zdjęcie* is to take a photo, once. *Prosiłem* is I asked for something: *prosiłem ładnie* (I asked nicely). *Ochrona* is security in a museum or a shop, and it takes a singular verb: *ochrona chciała*; *zadzwonić na policję* is to call the police, and *ale wstyd!* is how embarrassing!"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b3-e01",
+      "prompt": "zrobić",
+      "options": [
+        {
+          "en": "do, make (to do, to make)"
+        },
+        {
+          "en": "do, make (once; zrobić zdjęcie: to take a photo)"
+        },
+        {
+          "en": "buy (to buy, once)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zrobic"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-b3-e02",
+      "text": "zrobić zdjęcie",
+      "meaning": {
+        "en": "to take a photo"
+      },
+      "distractors": [
+        "zrobić zakupy",
+        "robić zdjęcia"
+      ],
+      "items": [
+        "zrobic",
+        "zdjecie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-b3-e03",
+      "text": "Chciałem ___ zdjęcie.",
+      "meaning": {
+        "en": "I wanted to take a photo (a man)."
+      },
+      "gaps": [
+        [
+          "zrobić"
+        ]
+      ],
+      "distractors": [
+        "robię",
+        "kupić"
+      ],
+      "items": [
+        "chciec-chcialem",
+        "zrobic",
+        "zdjecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b3-e04",
+      "prompt": "ochrona",
+      "options": [
+        {
+          "en": "a guide"
+        },
+        {
+          "en": "a museum"
+        },
+        {
+          "en": "security (the guards)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ochrona"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b3-e05",
+      "prompt": "prosiłem",
+      "options": [
+        {
+          "en": "I asked for something (prosiłem: a man says it; prosiłam: a woman)"
+        },
+        {
+          "en": "I helped (pomagałam: a woman says it; pomagałem: a man)"
+        },
+        {
+          "en": "I wanted (chciałem: a man says it; chciałam: a woman)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "prosic-prosilem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-b3-e06",
+      "prompt": {
+        "en": "I asked nicely (a woman)"
+      },
+      "acceptedAnswers": [
+        "prosiłam ładnie",
+        "ładnie prosiłam"
+      ],
+      "items": [
+        "prosic-prosilem",
+        "ladnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b3-e07",
+      "prompt": "zadzwonić",
+      "options": [
+        {
+          "en": "write (to write: piszę, piszesz)"
+        },
+        {
+          "en": "call, phone, once (zadzwonić na policję: to call the police)"
+        },
+        {
+          "en": "wait (to wait)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zadzwonic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b3-e08",
+      "prompt": "na policję",
+      "options": [
+        {
+          "en": "to the cinema"
+        },
+        {
+          "en": "home (wracam do domu: I go home)"
+        },
+        {
+          "en": "the police (zadzwonić na policję: to call the police)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-policje"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-b3-e09",
+      "acceptedAnswers": [
+        "ochrona chce zadzwonić na policję"
+      ],
+      "meaning": {
+        "en": "security want to call the police"
+      },
+      "items": [
+        "ochrona",
+        "chciec-chce-on",
+        "zadzwonic",
+        "na-policje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b3-e10",
+      "prompt": "śmiali się",
+      "options": [
+        {
+          "en": "they laughed (śmiali się: men, or men and women; śmiały się: women only)"
+        },
+        {
+          "en": "he dances, she dances"
+        },
+        {
+          "en": "they were (men, or men and women)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "smiac-sie-smiali"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b3-e11",
+      "prompt": "głośno",
+      "options": [
+        {
+          "en": "nicely; nice (było ładnie: the weather was nice)"
+        },
+        {
+          "en": "loudly, loud"
+        },
+        {
+          "en": "early"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "glosno"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-b3-e12",
+      "prompt": {
+        "en": "everyone laughed loudly"
+      },
+      "acceptedAnswers": [
+        "wszyscy śmiali się głośno",
+        "wszyscy głośno się śmiali",
+        "wszyscy się głośno śmiali"
+      ],
+      "items": [
+        "wszyscy",
+        "smiac-sie-smiali",
+        "glosno"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b3-e13",
+      "prompt": "wstyd",
+      "options": [
+        {
+          "en": "a joke"
+        },
+        {
+          "en": "an idea (świetny pomysł!: a great idea!)"
+        },
+        {
+          "en": "shame (ale wstyd!: how embarrassing!)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wstyd"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-b3-e14",
+      "prompt": {
+        "en": "how embarrassing!"
+      },
+      "acceptedAnswers": [
+        "ale wstyd!"
+      ],
+      "distractors": [
+        "i",
+        "nie"
+      ],
+      "items": [
+        "ale",
+        "wstyd"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-b3-e15",
+      "pairs": [
+        {
+          "polish": "zrobić zdjęcie",
+          "meaning": {
+            "en": "to take a photo"
+          }
+        },
+        {
+          "polish": "prosiłem",
+          "meaning": {
+            "en": "I asked"
+          }
+        },
+        {
+          "polish": "ochrona",
+          "meaning": {
+            "en": "security"
+          }
+        },
+        {
+          "polish": "na policję",
+          "meaning": {
+            "en": "the police"
+          }
+        },
+        {
+          "polish": "głośno",
+          "meaning": {
+            "en": "loudly"
+          }
+        },
+        {
+          "polish": "wstyd",
+          "meaning": {
+            "en": "shame"
+          }
+        }
+      ],
+      "items": [
+        "zrobic",
+        "zdjecie",
+        "prosic-prosilem",
+        "ochrona",
+        "na-policje",
+        "glosno",
+        "wstyd"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-b3-e16",
+      "lines": [
+        "W muzeum chciałem zrobić zdjęcie obrazu.",
+        "W muzeum nie można robić zdjęć!",
+        "Prosiłem ładnie, ale ochrona chciała zadzwonić na policję.",
+        "Ludzie śmiali się głośno. Ale wstyd!"
+      ],
+      "meaning": {
+        "en": "Chciałem dobrze!"
+      },
+      "statements": [
+        {
+          "text": "On zrobił zdjęcie.",
+          "meaning": {
+            "en": "He took a photo."
+          },
+          "true": false
+        },
+        {
+          "text": "Ochrona chciała zadzwonić na policję.",
+          "meaning": {
+            "en": "Security wanted to call the police."
+          },
+          "true": true
+        },
+        {
+          "text": "Ludzie się śmiali.",
+          "meaning": {
+            "en": "People laughed."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "w-muzeum",
+        "chciec-chcialem",
+        "zrobic",
+        "zdjecie",
+        "ale",
+        "nie",
+        "prosic-prosilem",
+        "ladnie",
+        "ochrona",
+        "zadzwonic",
+        "na-policje",
+        "smiac-sie-smiali",
+        "glosno",
+        "wstyd"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-b3-e17",
+      "lines": [
+        "Co się stało w muzeum?",
+        "Chciałem zrobić zdjęcie.",
+        "I co?",
+        "Ochrona chciała zadzwonić na policję!"
+      ],
+      "meaning": {
+        "en": "What happened?"
+      },
+      "items": [
+        "co",
+        "w-muzeum",
+        "chciec-chcialem",
+        "zrobic",
+        "zdjecie",
+        "i",
+        "ochrona",
+        "zadzwonic",
+        "na-policje"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-b3-e18",
+      "text": "one śmiały się głośno",
+      "meaning": {
+        "en": "they laughed loudly (women)"
+      },
+      "distractors": [
+        "oni śmiali się głośno",
+        "one śmieją się głośno"
+      ],
+      "items": [
+        "one",
+        "smiac-sie-smiali",
+        "glosno"
+      ]
+    }
+  ]
+}

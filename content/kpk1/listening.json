@@ -6715,6 +6715,740 @@
         9,
         9
       ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-144-1",
+      "track": 144,
+      "statement": "W pierwszym dialogu chłopak jest tu pierwszy raz.",
+      "meaning": {
+        "en": "In the first dialogue the boy is here for the first time."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l13-144-2",
+      "track": 144,
+      "question": "„Cześć, Mami! Gdzie …?”",
+      "meaning": {
+        "en": "\"Hi, Mami! Where were you?\" (you were, to a woman)"
+      },
+      "acceptedAnswers": [
+        "byłaś"
+      ],
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-144-3",
+      "track": 144,
+      "statement": "W czwartym dialogu: wczoraj było brzydko.",
+      "meaning": {
+        "en": "In the fourth dialogue: yesterday the weather was bad."
+      },
+      "answer": false,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-144-4",
+      "track": 144,
+      "question": "Gdzie byli chłopcy w piątym dialogu?",
+      "meaning": {
+        "en": "Where were the boys in the fifth dialogue?"
+      },
+      "options": [
+        "Na meczu.",
+        "Na treningu.",
+        "Na imprezie."
+      ],
+      "correctOption": 1,
+      "lines": [
+        8,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-144-5",
+      "track": 144,
+      "question": "Gdzie on był w szóstym dialogu?",
+      "meaning": {
+        "en": "Where was he in the sixth dialogue?"
+      },
+      "options": [
+        "W kinie.",
+        "W domu.",
+        "Na dobrej imprezie."
+      ],
+      "correctOption": 2,
+      "lines": [
+        10,
+        11
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-145-1",
+      "track": 145,
+      "statement": "W piątek w nocy Angela była w galerii.",
+      "meaning": {
+        "en": "On Friday night Angela was at the mall."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-145-2",
+      "track": 145,
+      "question": "Co kupiła Angela?",
+      "meaning": {
+        "en": "What did Angela buy?"
+      },
+      "options": [
+        "Sweter.",
+        "Książkę.",
+        "Bilet."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l13-145-3",
+      "track": 145,
+      "question": "Ile godzin spędziła w galerii? „… godzin”",
+      "meaning": {
+        "en": "How many hours did she spend at the mall? \"… hours\" (a few)"
+      },
+      "acceptedAnswers": [
+        "kilka"
+      ],
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-145-4",
+      "track": 145,
+      "question": "Gdzie Angela była w sobotę wieczorem?",
+      "meaning": {
+        "en": "Where was Angela on Saturday evening?"
+      },
+      "options": [
+        "W kinie.",
+        "W klubie.",
+        "W pubie."
+      ],
+      "correctOption": 1,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-145-5",
+      "track": 145,
+      "statement": "Angela wróciła do domu w sobotę wieczorem.",
+      "meaning": {
+        "en": "Angela came back home on Saturday evening."
+      },
+      "answer": false,
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-145-6",
+      "track": 145,
+      "question": "Gdzie Mami była w weekend?",
+      "meaning": {
+        "en": "Where was Mami at the weekend?"
+      },
+      "options": [
+        "W klubie.",
+        "W Warszawie.",
+        "W kinie."
+      ],
+      "correctOption": 2,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-145-7",
+      "track": 145,
+      "statement": "Ona rozumiała cały film.",
+      "meaning": {
+        "en": "She understood the whole film."
+      },
+      "answer": false,
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-145-8",
+      "track": 145,
+      "question": "Gdzie był Uwe?",
+      "meaning": {
+        "en": "Where was Uwe?"
+      },
+      "options": [
+        "W Warszawie.",
+        "W Krakowie.",
+        "W Zakopanem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        19,
+        20
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l13-145-9",
+      "track": 145,
+      "question": "Czekolada była…",
+      "meaning": {
+        "en": "The chocolate was… (delicious)"
+      },
+      "acceptedAnswers": [
+        "pyszna"
+      ],
+      "lines": [
+        22,
+        22
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-145-10",
+      "track": 145,
+      "statement": "Oni wiedzą, gdzie był Javier.",
+      "meaning": {
+        "en": "They know where Javier was."
+      },
+      "answer": false,
+      "lines": [
+        23,
+        23
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-146-1",
+      "track": 146,
+      "statement": "Dziś jest piątek.",
+      "meaning": {
+        "en": "Today is Friday."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-146-2",
+      "track": 146,
+      "statement": "W galerii były duże rabaty.",
+      "meaning": {
+        "en": "There were big discounts at the mall."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-146-3",
+      "track": 146,
+      "statement": "W klubie Angela rozmawiała po angielsku.",
+      "meaning": {
+        "en": "At the club Angela spoke English."
+      },
+      "answer": false,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-146-4",
+      "track": 146,
+      "statement": "W sobotę była świetna pogoda.",
+      "meaning": {
+        "en": "On Saturday the weather was great."
+      },
+      "answer": true,
+      "lines": [
+        16,
+        16
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-146-5",
+      "track": 146,
+      "statement": "W niedzielę Mami była w domu.",
+      "meaning": {
+        "en": "On Sunday Mami was at home."
+      },
+      "answer": true,
+      "lines": [
+        17,
+        17
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-146-6",
+      "track": 146,
+      "statement": "Uwe uczył się polskiego w pociągu.",
+      "meaning": {
+        "en": "Uwe studied Polish on the train."
+      },
+      "answer": true,
+      "lines": [
+        20,
+        20
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-146-7",
+      "track": 146,
+      "statement": "W Warszawie Uwe pił wino.",
+      "meaning": {
+        "en": "In Warsaw Uwe drank wine."
+      },
+      "answer": false,
+      "lines": [
+        20,
+        20
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l13-147-1",
+      "track": 147,
+      "question": "W sobotę Mami spacerowała i robiła…",
+      "meaning": {
+        "en": "On Saturday Mami went for walks and took… (photos)"
+      },
+      "acceptedAnswers": [
+        "zdjęcia"
+      ],
+      "lines": [
+        16,
+        16
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-147-2",
+      "track": 147,
+      "question": "Co robiła Mami w niedzielę?",
+      "meaning": {
+        "en": "What did Mami do on Sunday?"
+      },
+      "options": [
+        "Pracowała.",
+        "Spała, rysowała i grała.",
+        "Była na meczu."
+      ],
+      "correctOption": 1,
+      "lines": [
+        17,
+        17
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l13-147-3",
+      "track": 147,
+      "question": "„To był … weekend”",
+      "meaning": {
+        "en": "\"It was a … weekend\" (quiet)"
+      },
+      "acceptedAnswers": [
+        "spokojny"
+      ],
+      "lines": [
+        18,
+        18
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-147-4",
+      "track": 147,
+      "question": "Co Uwe robił w Warszawie?",
+      "meaning": {
+        "en": "What did Uwe do in Warsaw?"
+      },
+      "options": [
+        "Pracował.",
+        "Spał.",
+        "Tańczył."
+      ],
+      "correctOption": 0,
+      "lines": [
+        20,
+        20
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-147-5",
+      "track": 147,
+      "question": "Z kim Uwe spotkał się w pubie?",
+      "meaning": {
+        "en": "Whom did Uwe meet at the pub?"
+      },
+      "options": [
+        "Z Javierem.",
+        "Ze znajomymi.",
+        "Z Mami."
+      ],
+      "correctOption": 1,
+      "lines": [
+        20,
+        20
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-148-1",
+      "track": 148,
+      "question": "Gdzie był Javier kilka dni temu?",
+      "meaning": {
+        "en": "Where was Javier a few days ago?"
+      },
+      "options": [
+        "W Muzeum Narodowym.",
+        "W kinie.",
+        "W Zakopanem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-148-2",
+      "track": 148,
+      "statement": "Javier pamięta obrazy.",
+      "meaning": {
+        "en": "Javier remembers the paintings."
+      },
+      "answer": false,
+      "lines": [
+        8,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-148-3",
+      "track": 148,
+      "question": "Kogo spotkał w muzeum?",
+      "meaning": {
+        "en": "Whom did he meet at the museum?"
+      },
+      "options": [
+        "Kolegę z klasy.",
+        "Piękną dziewczynę.",
+        "Mami."
+      ],
+      "correctOption": 1,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-148-4",
+      "track": 148,
+      "statement": "Dziewczyna chciała z nim rozmawiać.",
+      "meaning": {
+        "en": "The girl wanted to talk to him."
+      },
+      "answer": false,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l13-148-5",
+      "track": 148,
+      "question": "„Prosiłem o … telefonu”",
+      "meaning": {
+        "en": "\"I asked for her phone…\" (number)"
+      },
+      "acceptedAnswers": [
+        "numer"
+      ],
+      "lines": [
+        14,
+        14
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-148-6",
+      "track": 148,
+      "question": "Kto przyszedł na końcu?",
+      "meaning": {
+        "en": "Who came at the end?"
+      },
+      "options": [
+        "Policja.",
+        "Angela.",
+        "Ochrona."
+      ],
+      "correctOption": 2,
+      "lines": [
+        18,
+        18
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-149-1",
+      "track": 149,
+      "statement": "Mama ugotowała obiad.",
+      "meaning": {
+        "en": "Mum has cooked dinner."
+      },
+      "answer": true,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l13-149-2",
+      "track": 149,
+      "question": "Kiedy Mami jadła? „Godzinę …”",
+      "meaning": {
+        "en": "When did Mami eat? \"An hour…\" (ago)"
+      },
+      "acceptedAnswers": [
+        "temu"
+      ],
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-149-3",
+      "track": 149,
+      "question": "Dokąd poszły Mami i Angela?",
+      "meaning": {
+        "en": "Where did Mami and Angela go?"
+      },
+      "options": [
+        "Do japońskiej restauracji.",
+        "Do pizzerii.",
+        "Do kina."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-149-4",
+      "track": 149,
+      "question": "Co jadły?",
+      "meaning": {
+        "en": "What did they eat?"
+      },
+      "options": [
+        "Pizzę.",
+        "Zupę miso i sushi.",
+        "Pierogi."
+      ],
+      "correctOption": 1,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-149-5",
+      "track": 149,
+      "question": "Dokąd poszli tata i Karol?",
+      "meaning": {
+        "en": "Where did dad and Karol go?"
+      },
+      "options": [
+        "Na mecz.",
+        "Do kina.",
+        "Na zakupy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-149-6",
+      "track": 149,
+      "statement": "Tata i Karol jedli zupę.",
+      "meaning": {
+        "en": "Dad and Karol had soup."
+      },
+      "answer": false,
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-150-1",
+      "track": 150,
+      "statement": "Wszyscy czekali na Javiera.",
+      "meaning": {
+        "en": "Everyone was waiting for Javier."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l13-150-2",
+      "track": 150,
+      "question": "Co mówi Mami do Javiera?",
+      "meaning": {
+        "en": "What does Mami say to Javier? (at last you are here)"
+      },
+      "acceptedAnswers": [
+        "nareszcie jesteś",
+        "Javier, nareszcie jesteś"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l13-150-3",
+      "track": 150,
+      "statement": "W piątek Javier był w szkole.",
+      "meaning": {
+        "en": "On Friday Javier was at school."
+      },
+      "answer": false,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-150-4",
+      "track": 150,
+      "question": "Dlaczego Javier nie odbierał telefonu?",
+      "meaning": {
+        "en": "Why didn't Javier answer the phone?"
+      },
+      "options": [
+        "Spał.",
+        "Nie miał zasięgu.",
+        "Był na policji."
+      ],
+      "correctOption": 1,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l13-150-5",
+      "track": 150,
+      "question": "Gdzie był Javier? „W …”",
+      "meaning": {
+        "en": "Where was Javier? \"In the…\" (mountains)"
+      },
+      "acceptedAnswers": [
+        "górach"
+      ],
+      "lines": [
+        9,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l13-150-6",
+      "track": 150,
+      "question": "Co tam robił?",
+      "meaning": {
+        "en": "What did he do there?"
+      },
+      "options": [
+        "Nic.",
+        "Wszystko.",
+        "Pracował."
+      ],
+      "correctOption": 1,
+      "lines": [
+        11,
+        12
+      ]
     }
   ]
 }

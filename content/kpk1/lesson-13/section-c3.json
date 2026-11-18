@@ -1,0 +1,421 @@
+{
+  "id": "kpk1-l13-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Jadłaś już obiad?",
+    "meaning": {
+      "en": "Have you had dinner yet?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-c3-t01",
+      "before": "kpk1-l13-c3-e01",
+      "title": {
+        "en": "Chodziłem, szedłem, poszedłem"
+      },
+      "body": {
+        "en": "Three pasts of going on foot. *Chodzić* is going often: *kiedy byłem mały, często chodziłem do kina*. *Iść* is one trip under way: *kiedy szedłem do kina, padał deszcz* (*szłam* for a woman). *Pójść* is one trip done: *wczoraj poszedłem na premierę*. *Na piechotę* is on foot."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c3-e01",
+      "prompt": "chodziłem",
+      "options": [
+        {
+          "en": "I go (on foot, or regularly)"
+        },
+        {
+          "en": "I used to go, I went often (chodziłem: a man says it; chodziłam: a woman)"
+        },
+        {
+          "en": "I went (poszedłem: a man says it; poszłam: a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chodzic-chodzilem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-c3-e02",
+      "text": "często chodziłam do kina",
+      "meaning": {
+        "en": "I often went to the cinema (a woman)"
+      },
+      "distractors": [
+        "często chodzę do kina",
+        "często chodziłem do kina"
+      ],
+      "items": [
+        "czesto",
+        "chodzic-chodzilem",
+        "do-kina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c3-e03",
+      "prompt": "szedłem",
+      "options": [
+        {
+          "en": "I am going (on foot)"
+        },
+        {
+          "en": "I used to go, I went often (chodziłem: a man says it; chodziłam: a woman)"
+        },
+        {
+          "en": "I was going, I was walking (szedłem: a man says it; szłam: a woman)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "isc-szedlem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c3-e04",
+      "prompt": "padał deszcz",
+      "options": [
+        {
+          "en": "it was raining"
+        },
+        {
+          "en": "it was snowing"
+        },
+        {
+          "en": "it was sunny"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "padal-deszcz"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-c3-e05",
+      "text": "Kiedy ___ do domu, padał deszcz.",
+      "meaning": {
+        "en": "When I was walking home, it was raining (a man)."
+      },
+      "gaps": [
+        [
+          "szedłem"
+        ]
+      ],
+      "distractors": [
+        "chodziłem",
+        "poszedłem"
+      ],
+      "items": [
+        "kiedy",
+        "isc-szedlem",
+        "do-domu",
+        "padal-deszcz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c3-e06",
+      "prompt": "na premierę",
+      "options": [
+        {
+          "en": "to the cinema"
+        },
+        {
+          "en": "to a premiere, to a first night"
+        },
+        {
+          "en": "to a match (a football match)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-premiere"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-c3-e07",
+      "prompt": {
+        "en": "yesterday I went to a premiere (a woman)"
+      },
+      "acceptedAnswers": [
+        "wczoraj poszłam na premierę",
+        "poszłam wczoraj na premierę"
+      ],
+      "distractors": [
+        "poszedłem",
+        "szłam"
+      ],
+      "items": [
+        "wczoraj",
+        "pojsc-poszedlem",
+        "na-premiere"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c3-e08",
+      "prompt": "na piechotę",
+      "options": [
+        {
+          "en": "a bike (after jeździć: jeżdżę na rowerze)"
+        },
+        {
+          "en": "by bus"
+        },
+        {
+          "en": "on foot"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-piechote"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-c3-e09",
+      "acceptedAnswers": [
+        "wróciłem do domu na piechotę"
+      ],
+      "meaning": {
+        "en": "I came back home on foot (a man)"
+      },
+      "items": [
+        "wrocic-wrocilam",
+        "do-domu",
+        "na-piechote"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c3-e10",
+      "prompt": "siedziałem",
+      "options": [
+        {
+          "en": "I sat, I was sitting (siedziałem: a man says it; siedziałam: a woman)"
+        },
+        {
+          "en": "I slept (spałam: a woman says it; spałem: a man)"
+        },
+        {
+          "en": "I was going, I was walking (szedłem: a man says it; szłam: a woman)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "siedziec-siedzialem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c3-e11",
+      "prompt": "przed komputerem",
+      "options": [
+        {
+          "en": "on the computer (grać na komputerze: to play computer games)"
+        },
+        {
+          "en": "at the computer, in front of the computer"
+        },
+        {
+          "en": "at home"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przed-komputerem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-c3-e12",
+      "prompt": {
+        "en": "I was sitting at the computer (a woman)"
+      },
+      "acceptedAnswers": [
+        "siedziałam przed komputerem"
+      ],
+      "items": [
+        "siedziec-siedzialem",
+        "przed-komputerem"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-c3-e13",
+      "pairs": [
+        {
+          "polish": "chodziłem",
+          "meaning": {
+            "en": "I used to go"
+          }
+        },
+        {
+          "polish": "szedłem",
+          "meaning": {
+            "en": "I was walking"
+          }
+        },
+        {
+          "polish": "padał deszcz",
+          "meaning": {
+            "en": "it was raining"
+          }
+        },
+        {
+          "polish": "na piechotę",
+          "meaning": {
+            "en": "on foot"
+          }
+        },
+        {
+          "polish": "siedziałem",
+          "meaning": {
+            "en": "I was sitting"
+          }
+        },
+        {
+          "polish": "na premierę",
+          "meaning": {
+            "en": "to a premiere"
+          }
+        }
+      ],
+      "items": [
+        "chodzic-chodzilem",
+        "isc-szedlem",
+        "padal-deszcz",
+        "na-piechote",
+        "siedziec-siedzialem",
+        "na-premiere"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-c3-e14",
+      "lines": [
+        "Kiedy byłam mała, rzadko chodziłam do kina.",
+        "Wczoraj poszłam na premierę.",
+        "Kiedy szłam do kina, padał deszcz.",
+        "Film był świetny!"
+      ],
+      "meaning": {
+        "en": "A premiere."
+      },
+      "statements": [
+        {
+          "text": "Kiedy była mała, często chodziła do kina.",
+          "meaning": {
+            "en": "When she was small, she often went to the cinema."
+          },
+          "true": false
+        },
+        {
+          "text": "Wczoraj padał deszcz.",
+          "meaning": {
+            "en": "Yesterday it was raining."
+          },
+          "true": true
+        },
+        {
+          "text": "Film był dobry.",
+          "meaning": {
+            "en": "The film was good."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "kiedy",
+        "byc-bylam",
+        "maly",
+        "rzadko",
+        "chodzic-chodzilem",
+        "do-kina",
+        "wczoraj",
+        "pojsc-poszedlem",
+        "na-premiere",
+        "isc-szedlem",
+        "padal-deszcz",
+        "film",
+        "byc-byl",
+        "swietny"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-c3-e15",
+      "lines": [
+        "Gdzie byłeś w zeszłą sobotę?",
+        "Siedziałem przed komputerem.",
+        "Cały dzień?",
+        "Tak, bo padał deszcz."
+      ],
+      "meaning": {
+        "en": "A rainy day."
+      },
+      "items": [
+        "gdzie",
+        "byc-byles",
+        "w-zeszla-sobote",
+        "siedziec-siedzialem",
+        "przed-komputerem",
+        "tak",
+        "bo",
+        "padal-deszcz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-c3-e16",
+      "prompt": {
+        "en": "when I was small, I often went to the cinema (a man)"
+      },
+      "acceptedAnswers": [
+        "kiedy byłem mały, często chodziłem do kina"
+      ],
+      "distractors": [
+        "chodzę",
+        "mała"
+      ],
+      "items": [
+        "kiedy",
+        "byc-bylem",
+        "maly",
+        "czesto",
+        "chodzic-chodzilem",
+        "do-kina"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-c3-e17",
+      "text": "szłam na piechotę",
+      "meaning": {
+        "en": "I was walking, on foot (a woman)"
+      },
+      "distractors": [
+        "szedłem na piechotę",
+        "idę na piechotę"
+      ],
+      "items": [
+        "isc-szedlem",
+        "na-piechote"
+      ]
+    }
+  ]
+}

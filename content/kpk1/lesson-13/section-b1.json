@@ -1,0 +1,435 @@
+{
+  "id": "kpk1-l13-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Chciałem dobrze!",
+    "meaning": {
+      "en": "I meant well!"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-b1-t01",
+      "before": "kpk1-l13-b1-e01",
+      "title": {
+        "en": "Chciałem dobrze!"
+      },
+      "body": {
+        "en": "Verbs in *-eć* change *e* to *a* in the past, except in the plural for a group with a man in it (*chcieli*, *musieli*): *chcieć* gives *chciałem*, *chciałam* (I wanted); *musieć* gives *musiałem* (I had to); *widzieć* gives *widziałem* (I saw); *myśleć* gives *myślałam* (I thought). *Chciałem dobrze!* is what you say when it went wrong: I meant well!"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b1-e01",
+      "prompt": "chciałem",
+      "options": [
+        {
+          "en": "I wanted (chciałem: a man says it; chciałam: a woman)"
+        },
+        {
+          "en": "I want"
+        },
+        {
+          "en": "I was (a man says it)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chciec-chcialem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-b1-e02",
+      "text": "chciałem dobrze!",
+      "meaning": {
+        "en": "I meant well! (a man)"
+      },
+      "distractors": [
+        "chciałam dobrze!",
+        "chcę dobrze!"
+      ],
+      "items": [
+        "chciec-chcialem",
+        "dobrze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b1-e03",
+      "prompt": "w muzeum",
+      "options": [
+        {
+          "en": "at the cinema"
+        },
+        {
+          "en": "at the museum, in the museum"
+        },
+        {
+          "en": "in a theatre"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-muzeum"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b1-e04",
+      "prompt": "obraz",
+      "options": [
+        {
+          "en": "a photo (zdjęcia: photos)"
+        },
+        {
+          "en": "a film"
+        },
+        {
+          "en": "a painting, a picture (obrazy: paintings)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "obraz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b1-e05",
+      "prompt": "widziałem",
+      "options": [
+        {
+          "en": "I saw (widziałem: a man says it; widziałam: a woman)"
+        },
+        {
+          "en": "I wanted (chciałem: a man says it; chciałam: a woman)"
+        },
+        {
+          "en": "I was (a man says it)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "widziec-widzialem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-b1-e06",
+      "text": "W muzeum ___ obrazy.",
+      "meaning": {
+        "en": "At the museum I saw paintings (a man)."
+      },
+      "gaps": [
+        [
+          "widziałem"
+        ]
+      ],
+      "distractors": [
+        "widzę",
+        "widziałam"
+      ],
+      "items": [
+        "w-muzeum",
+        "widziec-widzialem",
+        "obraz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b1-e07",
+      "prompt": "musiałem",
+      "options": [
+        {
+          "en": "I must, I have to"
+        },
+        {
+          "en": "I had to (musiałem: a man says it; musiałam: a woman)"
+        },
+        {
+          "en": "I wanted (chciałem: a man says it; chciałam: a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "musiec-musialem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-b1-e08",
+      "prompt": {
+        "en": "yesterday I had to work (a woman)"
+      },
+      "acceptedAnswers": [
+        "wczoraj musiałam pracować",
+        "musiałam wczoraj pracować"
+      ],
+      "distractors": [
+        "muszę",
+        "pracowałam"
+      ],
+      "items": [
+        "wczoraj",
+        "musiec-musialem",
+        "pracowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b1-e09",
+      "prompt": "myślałam",
+      "options": [
+        {
+          "en": "I think"
+        },
+        {
+          "en": "I saw (widziałem: a man says it; widziałam: a woman)"
+        },
+        {
+          "en": "I thought (myślałam: a woman says it; myślałem: a man)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "myslec-myslalam"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-b1-e10",
+      "acceptedAnswers": [
+        "myślałam, że byłeś w domu"
+      ],
+      "meaning": {
+        "en": "I thought you were at home (a woman)"
+      },
+      "items": [
+        "myslec-myslalam",
+        "ze",
+        "byc-byles",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b1-e11",
+      "prompt": "pamiętam",
+      "options": [
+        {
+          "en": "I remember"
+        },
+        {
+          "en": "I know"
+        },
+        {
+          "en": "I understand"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pamietam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-b1-e12",
+      "prompt": {
+        "en": "I don't remember"
+      },
+      "acceptedAnswers": [
+        "nie pamiętam"
+      ],
+      "items": [
+        "nie",
+        "pamietam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-b1-e13",
+      "prompt": "piękny",
+      "options": [
+        {
+          "en": "interesting, curious (ciekawy, ciekawa, ciekawe)"
+        },
+        {
+          "en": "beautiful (piękny, piękna, piękne)"
+        },
+        {
+          "en": "new (nowy, nowa, nowe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "piekny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-b1-e14",
+      "prompt": {
+        "en": "I saw a beautiful painting (a man)"
+      },
+      "acceptedAnswers": [
+        "widziałem piękny obraz"
+      ],
+      "distractors": [
+        "widziałam",
+        "piękna"
+      ],
+      "items": [
+        "widziec-widzialem",
+        "piekny",
+        "obraz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-b1-e15",
+      "pairs": [
+        {
+          "polish": "chciałem",
+          "meaning": {
+            "en": "I wanted"
+          }
+        },
+        {
+          "polish": "musiałem",
+          "meaning": {
+            "en": "I had to"
+          }
+        },
+        {
+          "polish": "widziałem",
+          "meaning": {
+            "en": "I saw"
+          }
+        },
+        {
+          "polish": "myślałam",
+          "meaning": {
+            "en": "I thought"
+          }
+        },
+        {
+          "polish": "pamiętam",
+          "meaning": {
+            "en": "I remember"
+          }
+        },
+        {
+          "polish": "obraz",
+          "meaning": {
+            "en": "a painting"
+          }
+        }
+      ],
+      "items": [
+        "chciec-chcialem",
+        "musiec-musialem",
+        "widziec-widzialem",
+        "myslec-myslalam",
+        "pamietam",
+        "obraz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-b1-e16",
+      "lines": [
+        "Wczoraj byłem w muzeum.",
+        "Widziałem tam piękne obrazy.",
+        "A który obraz był najpiękniejszy?",
+        "Nie pamiętam!"
+      ],
+      "meaning": {
+        "en": "At the museum."
+      },
+      "statements": [
+        {
+          "text": "On był w muzeum wczoraj.",
+          "meaning": {
+            "en": "He was at the museum yesterday."
+          },
+          "true": true
+        },
+        {
+          "text": "On pamięta obrazy.",
+          "meaning": {
+            "en": "He remembers the paintings."
+          },
+          "true": false
+        },
+        {
+          "text": "Obrazy były piękne.",
+          "meaning": {
+            "en": "The paintings were beautiful."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "wczoraj",
+        "byc-bylem",
+        "w-muzeum",
+        "widziec-widzialem",
+        "tam",
+        "piekny",
+        "obraz",
+        "nie",
+        "pamietam"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-b1-e17",
+      "lines": [
+        "Gdzie byłeś wczoraj?",
+        "W muzeum.",
+        "Myślałam, że byłeś w domu.",
+        "Nie, chciałem zobaczyć obrazy."
+      ],
+      "meaning": {
+        "en": "Yesterday."
+      },
+      "items": [
+        "gdzie",
+        "byc-byles",
+        "wczoraj",
+        "w-muzeum",
+        "myslec-myslalam",
+        "ze",
+        "w-domu",
+        "nie",
+        "chciec-chcialem",
+        "obraz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-b1-e18",
+      "text": "musiałam iść do domu",
+      "meaning": {
+        "en": "I had to go home (a woman)"
+      },
+      "distractors": [
+        "musiałem iść do domu",
+        "muszę iść do domu"
+      ],
+      "items": [
+        "musiec-musialem",
+        "isc",
+        "do-domu"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "id": "chat-weekend",
+  "person": "Kasia",
+  "title": {
+    "en": "How was your weekend?"
+  },
+  "scene": {
+    "en": "It's Monday, and your friend Kasia asks about your weekend. On Saturday you were at the cinema and saw a Polish film, which was very interesting. On Sunday you stayed at home: you slept and read. You haven't had dinner yet and you are hungry. You are a man, so you say byłem, czytałem; Kasia is a woman, and to her you say byłaś. She is your friend: to her you are ty."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "ty",
+    "jak-bylo",
+    "w-weekend",
+    "swietnie",
+    "sobota",
+    "byc-bylem",
+    "byc-bylam",
+    "w-kinie",
+    "co",
+    "jaki",
+    "to",
+    "polski",
+    "film",
+    "byc-byl",
+    "byc-byla",
+    "bardzo",
+    "ciekawy",
+    "a",
+    "niedziela",
+    "byc-byles",
+    "na-meczu",
+    "nie",
+    "w-domu",
+    "spac-spalam",
+    "i",
+    "czytac-czytalem",
+    "tak",
+    "ja",
+    "w-gorach",
+    "miec-mialem",
+    "zasieg",
+    "byc-bylas",
+    "wspaniale",
+    "jesc-jadles",
+    "juz",
+    "obiad",
+    "jesc-jadlem",
+    "byc-jestem",
+    "glodny",
+    "godzina",
+    "temu",
+    "to",
+    "zapraszam-cie",
+    "na-obiad"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Jak było w weekend?",
+      "meaning": {
+        "en": "Hi! How was your weekend?"
+      },
+      "replies": [
+        {
+          "text": "Świetnie! W sobotę byłem w kinie.",
+          "meaning": {
+            "en": "Great! On Saturday I was at the cinema."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Świetnie! W sobotę byłem w kinie.",
+            "Świetnie, w sobotę byłem w kinie."
+          ]
+        },
+        {
+          "text": "Świetnie! W sobotę byłam w kinie.",
+          "meaning": {
+            "en": "Great! On Saturday I was at the cinema (a woman says it)."
+          },
+          "note": {
+            "en": "You are a man, so you say *byłem*. *Byłam* is what a woman says."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "A jaki to był film?",
+      "meaning": {
+        "en": "And what film was it?"
+      },
+      "replies": [
+        {
+          "text": "Polski film. Był bardzo ciekawy!",
+          "meaning": {
+            "en": "A Polish film. It was very interesting!"
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Polski film. Był bardzo ciekawy!"
+          ]
+        },
+        {
+          "text": "Polski film. Była bardzo ciekawa!",
+          "meaning": {
+            "en": "A Polish film. She was very interesting!"
+          },
+          "note": {
+            "en": "*Film* is masculine, so it is *film był ciekawy*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "A w niedzielę? Byłeś na meczu?",
+      "meaning": {
+        "en": "And on Sunday? Were you at the match?"
+      },
+      "replies": [
+        {
+          "text": "Nie, byłem w domu. Spałem i czytałem.",
+          "meaning": {
+            "en": "No, I was at home. I slept and read."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Nie, byłem w domu. Spałem i czytałem.",
+            "Nie, byłem w domu, spałem i czytałem."
+          ]
+        },
+        {
+          "text": "Tak, byłem na meczu.",
+          "meaning": {
+            "en": "Yes, I was at the match."
+          },
+          "note": {
+            "en": "On Sunday you stayed at home: *nie, byłem w domu*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "A ja byłam w górach! Nie miałam zasięgu.",
+      "meaning": {
+        "en": "And I was in the mountains! I had no signal."
+      },
+      "replies": [
+        {
+          "text": "Byłaś w górach? Jak było?",
+          "meaning": {
+            "en": "You were in the mountains? How was it?"
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Byłaś w górach? Jak było?",
+            "Byłaś w górach? I jak było?"
+          ]
+        },
+        {
+          "text": "Byłeś w górach? Jak było?",
+          "meaning": {
+            "en": "You were in the mountains? How was it? (to a man)"
+          },
+          "note": {
+            "en": "Kasia is a woman, so to her it is *byłaś*. *Byłeś* is for a man."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Wspaniale! A ty jadłeś już obiad?",
+      "meaning": {
+        "en": "Wonderful! And have you had dinner yet?"
+      },
+      "replies": [
+        {
+          "text": "Nie jadłem i jestem głodny!",
+          "meaning": {
+            "en": "I haven't eaten and I'm hungry!"
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Nie jadłem i jestem głodny!",
+            "Nie, nie jadłem i jestem głodny!"
+          ]
+        },
+        {
+          "text": "Tak, jadłem godzinę temu.",
+          "meaning": {
+            "en": "Yes, I ate an hour ago."
+          },
+          "note": {
+            "en": "You haven't eaten and you are hungry: *nie jadłem i jestem głodny!*"
+          }
+        },
+        {
+          "text": "Nie jadłam i jestem głodna!",
+          "meaning": {
+            "en": "I haven't eaten and I'm hungry! (a woman says it)"
+          },
+          "note": {
+            "en": "You are a man: *nie jadłem*, *jestem głodny*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "To zapraszam cię na obiad!",
+      "meaning": {
+        "en": "Then come and have dinner with me, it's on me!"
+      }
+    }
+  ]
+}

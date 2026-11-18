@@ -1,0 +1,520 @@
+{
+  "id": "kpk1-l13-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Jadłaś już obiad?",
+    "meaning": {
+      "en": "Have you had dinner yet?"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l13-c2-t01",
+      "before": "kpk1-l13-c2-e01",
+      "title": {
+        "en": "Poszedłem, poszłam"
+      },
+      "body": {
+        "en": "*Pójść* is to go somewhere once, and its past is its own: a man *poszedłem*, a woman *poszłam*; *on poszedł*, *ona poszła*. It says where someone went: *poszłam do kina*, *poszedł na mecz*."
+      },
+      "table": {
+        "title": {
+          "en": "pójść · to go, once · the past, one person"
+        },
+        "columns": [
+          {
+            "header": "rodzaj męski",
+            "gender": "m"
+          },
+          {
+            "header": "rodzaj żeński",
+            "gender": "f"
+          }
+        ],
+        "rows": [
+          {
+            "header": "ja",
+            "cells": [
+              "poszedł[em]",
+              "poszł[am]"
+            ]
+          },
+          {
+            "header": "ty",
+            "cells": [
+              "poszedł[eś]",
+              "poszł[aś]"
+            ]
+          },
+          {
+            "header": "on / ona",
+            "cells": [
+              "poszedł",
+              "poszł[a]"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "kpk1-l13-c2-t02",
+      "before": "kpk1-l13-c2-e07",
+      "title": {
+        "en": "Poszliśmy czy poszłyśmy?"
+      },
+      "body": {
+        "en": "With a man in the group: *poszliśmy*, *poszliście*, *poszli*. Women only: *poszłyśmy*, *poszłyście*, *poszły*."
+      },
+      "table": {
+        "title": {
+          "en": "pójść · to go, once · the past, several people"
+        },
+        "columns": [
+          {
+            "header": "męskoosobowy",
+            "gender": "mo"
+          },
+          {
+            "header": "niemęskoosobowy",
+            "gender": "nmo"
+          }
+        ],
+        "rows": [
+          {
+            "header": "my",
+            "cells": [
+              "poszli[śmy]",
+              "poszły[śmy]"
+            ]
+          },
+          {
+            "header": "wy",
+            "cells": [
+              "poszli[ście]",
+              "poszły[ście]"
+            ]
+          },
+          {
+            "header": "oni / one",
+            "cells": [
+              "poszli",
+              "poszły"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c2-e01",
+      "prompt": "poszedłem",
+      "options": [
+        {
+          "en": "I am going (on foot)"
+        },
+        {
+          "en": "I ate (jadłem: a man says it; jadłam: a woman)"
+        },
+        {
+          "en": "I went (poszedłem: a man says it; poszłam: a woman)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pojsc-poszedlem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-c2-e02",
+      "text": "poszłam do kina",
+      "meaning": {
+        "en": "I went to the cinema (a woman)"
+      },
+      "distractors": [
+        "poszedłem do kina",
+        "idę do kina"
+      ],
+      "items": [
+        "pojsc-poszedlem",
+        "do-kina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c2-e03",
+      "prompt": "poszedłeś",
+      "options": [
+        {
+          "en": "you went (poszedłeś: to a man friend; poszłaś: to a woman)"
+        },
+        {
+          "en": "you are going (on foot; one friend)"
+        },
+        {
+          "en": "I went (poszedłem: a man says it; poszłam: a woman)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pojsc-poszedles"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l13-c2-e04",
+      "text": "Gdzie ___ wczoraj?",
+      "meaning": {
+        "en": "Where did you go yesterday? (to a woman friend)"
+      },
+      "gaps": [
+        [
+          "poszłaś"
+        ]
+      ],
+      "distractors": [
+        "poszedłeś",
+        "idziesz"
+      ],
+      "items": [
+        "gdzie",
+        "pojsc-poszedles",
+        "wczoraj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c2-e05",
+      "prompt": "poszedł",
+      "options": [
+        {
+          "en": "go (to go on foot, now)"
+        },
+        {
+          "en": "he went, she went (poszedł: he went; poszła: she went)"
+        },
+        {
+          "en": "you went (poszedłeś: to a man friend; poszłaś: to a woman)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pojsc-poszedl"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-c2-e06",
+      "prompt": {
+        "en": "Adam went to a match"
+      },
+      "acceptedAnswers": [
+        "Adam poszedł na mecz"
+      ],
+      "distractors": [
+        "poszła",
+        "idzie"
+      ],
+      "items": [
+        "adam",
+        "pojsc-poszedl",
+        "na-mecz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c2-e07",
+      "prompt": "poszliśmy",
+      "options": [
+        {
+          "en": "we are going (on foot)"
+        },
+        {
+          "en": "we ate (jedliśmy: with a man among us; jadłyśmy: women only)"
+        },
+        {
+          "en": "we went (poszliśmy: with a man among us; poszłyśmy: women only)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pojsc-poszlismy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c2-e08",
+      "prompt": "poszliście",
+      "options": [
+        {
+          "en": "you went (poszliście: several people, with a man among them; poszłyście: several women)"
+        },
+        {
+          "en": "we went (poszliśmy: with a man among us; poszłyśmy: women only)"
+        },
+        {
+          "en": "you are going (on foot; several people)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pojsc-poszliscie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l13-c2-e09",
+      "acceptedAnswers": [
+        "poszłyśmy na zakupy"
+      ],
+      "meaning": {
+        "en": "we went shopping (women only)"
+      },
+      "items": [
+        "pojsc-poszlismy",
+        "na-zakupy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c2-e10",
+      "prompt": "poszli",
+      "options": [
+        {
+          "en": "you went (poszliście: several people, with a man among them; poszłyście: several women)"
+        },
+        {
+          "en": "they went (poszli: men, or men and women; poszły: women only)"
+        },
+        {
+          "en": "they ate (jedli: men, or men and women; jadły: women only)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pojsc-poszli"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l13-c2-e11",
+      "prompt": {
+        "en": "they went for a walk (men)"
+      },
+      "acceptedAnswers": [
+        "oni poszli na spacer",
+        "poszli na spacer"
+      ],
+      "items": [
+        "oni",
+        "pojsc-poszli",
+        "na-spacer"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c2-e12",
+      "prompt": "ugotowała",
+      "options": [
+        {
+          "en": "he cooks, she cooks"
+        },
+        {
+          "en": "he ate, she ate (jadł: he ate; jadła: she ate)"
+        },
+        {
+          "en": "she cooked, he cooked (ugotowała: she cooked; ugotował: he cooked)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ugotowac-ugotowala"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l13-c2-e13",
+      "prompt": "kartka",
+      "options": [
+        {
+          "en": "a note, a piece of paper"
+        },
+        {
+          "en": "a book"
+        },
+        {
+          "en": "a photo (zdjęcia: photos)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kartka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l13-c2-e14",
+      "prompt": {
+        "en": "mum has cooked dinner"
+      },
+      "acceptedAnswers": [
+        "mama ugotowała obiad"
+      ],
+      "distractors": [
+        "ugotował",
+        "gotuje"
+      ],
+      "items": [
+        "mama",
+        "ugotowac-ugotowala",
+        "obiad"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l13-c2-e15",
+      "pairs": [
+        {
+          "polish": "poszedłem",
+          "meaning": {
+            "en": "I went"
+          }
+        },
+        {
+          "polish": "poszedłeś",
+          "meaning": {
+            "en": "you went"
+          }
+        },
+        {
+          "polish": "poszedł",
+          "meaning": {
+            "en": "he went"
+          }
+        },
+        {
+          "polish": "poszliśmy",
+          "meaning": {
+            "en": "we went"
+          }
+        },
+        {
+          "polish": "poszli",
+          "meaning": {
+            "en": "they went"
+          }
+        },
+        {
+          "polish": "kartka",
+          "meaning": {
+            "en": "a note"
+          }
+        }
+      ],
+      "items": [
+        "pojsc-poszedlem",
+        "pojsc-poszedles",
+        "pojsc-poszedl",
+        "pojsc-poszlismy",
+        "pojsc-poszli",
+        "kartka"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l13-c2-e16",
+      "lines": [
+        "Mama ugotowała obiad.",
+        "Adam poszedł z tatą na mecz.",
+        "A Ewa poszła do kina.",
+        "Na stole jest tylko kartka."
+      ],
+      "meaning": {
+        "en": "Dinner for nobody."
+      },
+      "statements": [
+        {
+          "text": "Mama ugotowała obiad.",
+          "meaning": {
+            "en": "Mum has cooked dinner."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam i tata poszli na mecz.",
+          "meaning": {
+            "en": "Adam and dad went to a match."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa jadła obiad z mamą.",
+          "meaning": {
+            "en": "Ewa had dinner with mum."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "mama",
+        "ugotowac-ugotowala",
+        "obiad",
+        "adam",
+        "pojsc-poszedl",
+        "na-mecz",
+        "a",
+        "ewa",
+        "do-kina",
+        "tylko",
+        "kartka"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l13-c2-e17",
+      "lines": [
+        "Gdzie poszliście wczoraj?",
+        "Poszliśmy na mecz.",
+        "A dziewczyny?",
+        "Poszły do kina."
+      ],
+      "meaning": {
+        "en": "Yesterday."
+      },
+      "items": [
+        "gdzie",
+        "pojsc-poszliscie",
+        "wczoraj",
+        "pojsc-poszlismy",
+        "na-mecz",
+        "a",
+        "pojsc-poszli",
+        "do-kina"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l13-c2-e18",
+      "text": "ona poszła spać",
+      "meaning": {
+        "en": "she went to bed"
+      },
+      "distractors": [
+        "on poszedł spać",
+        "ona idzie spać"
+      ],
+      "items": [
+        "ona",
+        "pojsc-poszedl",
+        "spac"
+      ]
+    }
+  ]
+}

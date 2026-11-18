@@ -151,6 +151,9 @@
             "text": "919"
         },
         {
+            "text": "A Ewa poszła do kina."
+        },
+        {
             "text": "A Ewa?"
         },
         {
@@ -162,6 +165,12 @@
         },
         {
             "text": "A co do picia?"
+        },
+        {
+            "text": "A co jadłaś?"
+        },
+        {
+            "text": "A co jadłeś?"
         },
         {
             "text": "A co lubisz pić?"
@@ -205,6 +214,15 @@
             "text": "A drób?"
         },
         {
+            "text": "A dziewczyny?"
+        },
+        {
+            "text": "A gdzie byliście w weekend?"
+        },
+        {
+            "text": "A gdzie byłeś?"
+        },
+        {
             "text": "A gdzie jest drogeria?"
         },
         {
@@ -230,6 +248,13 @@
             "meaning": "How much is a small water?"
         },
         {
+            "text": "A ja byłam w górach! Nie miałam zasięgu.",
+            "meaning": "And I was in the mountains! I had no signal."
+        },
+        {
+            "text": "A ja byłem tu wczoraj!"
+        },
+        {
             "text": "A ja chcę iść na koncert!"
         },
         {
@@ -240,6 +265,10 @@
         },
         {
             "text": "A ja na gofr."
+        },
+        {
+            "text": "A jaki to był film?",
+            "meaning": "And what film was it?"
         },
         {
             "text": "A jutro?"
@@ -253,6 +282,9 @@
         {
             "text": "A kto to jest?",
             "meaning": "And who is this?"
+        },
+        {
+            "text": "A który obraz był najpiękniejszy?"
         },
         {
             "text": "A może rurka z kremem?",
@@ -316,6 +348,9 @@
             "meaning": "A little. And do you speak English?"
         },
         {
+            "text": "A ty, co robiłaś w weekend?"
+        },
+        {
             "text": "A ty?",
             "meaning": "And you?"
         },
@@ -337,10 +372,23 @@
             "text": "A u pana?"
         },
         {
+            "text": "A w niedzielę spałam, czytałam i pomagałam mamie."
+        },
+        {
+            "text": "A w niedzielę?"
+        },
+        {
+            "text": "A w niedzielę? Byłeś na meczu?",
+            "meaning": "And on Sunday? Were you at the match?"
+        },
+        {
             "text": "A w nocy?"
         },
         {
             "text": "A w piątek?"
+        },
+        {
+            "text": "A w zeszłym tygodniu?"
         },
         {
             "text": "A woda mineralna?"
@@ -348,6 +396,13 @@
         {
             "text": "Adam",
             "meaning": "Adam (a man's name)"
+        },
+        {
+            "text": "Adam był w domu.",
+            "meaning": "Adam was at home."
+        },
+        {
+            "text": "Adam był wczoraj na meczu."
         },
         {
             "text": "Adam chce pizzę z pieczarkami."
@@ -378,6 +433,10 @@
         {
             "text": "Adam i Ewa tutaj są",
             "meaning": "Adam and Ewa are here"
+        },
+        {
+            "text": "Adam i tata poszli na mecz.",
+            "meaning": "Adam and dad went to a match."
         },
         {
             "text": "Adam idzie na koncert.",
@@ -554,6 +613,10 @@
             "meaning": "Adam has free time."
         },
         {
+            "text": "Adam miał wczoraj test.",
+            "meaning": "Adam had a test yesterday."
+        },
+        {
             "text": "Adam musi się uczyć.",
             "meaning": "Adam has to study."
         },
@@ -611,6 +674,13 @@
         {
             "text": "Adam planuje imprezę.",
             "meaning": "Adam is planning a party."
+        },
+        {
+            "text": "Adam poszedł na mecz",
+            "meaning": "Adam went to a match"
+        },
+        {
+            "text": "Adam poszedł z tatą na mecz."
         },
         {
             "text": "Adam robi zakupy.",
@@ -760,6 +830,13 @@
             "meaning": "Angela is from England."
         },
         {
+            "text": "Angela wróciła do domu w sobotę wieczorem.",
+            "meaning": "Angela came back home on Saturday evening."
+        },
+        {
+            "text": "Angela."
+        },
+        {
             "text": "Angielką",
             "meaning": "English (a woman, after jestem, jesteś, jest)"
         },
@@ -881,6 +958,9 @@
         {
             "text": "Bilet kosztuje trzy złote i czterdzieści groszy.",
             "meaning": "The ticket costs three złoty forty grosz."
+        },
+        {
+            "text": "Bilet."
         },
         {
             "text": "Biznesmenem."
@@ -1014,11 +1094,68 @@
             "text": "Bułkę z masłem."
         },
         {
+            "text": "Byliśmy pierwszy raz na meczu."
+        },
+        {
+            "text": "Był na meczu."
+        },
+        {
+            "text": "Był na policji."
+        },
+        {
+            "text": "Była na meczu."
+        },
+        {
+            "text": "Była w kinie."
+        },
+        {
+            "text": "Byłam w górach. Nie miałam zasięgu."
+        },
+        {
+            "text": "Byłaś tu kiedyś?"
+        },
+        {
+            "text": "Byłaś w górach? I jak było?",
+            "meaning": "You were in the mountains? How was it?"
+        },
+        {
+            "text": "Byłaś w górach? Jak było?",
+            "meaning": "You were in the mountains? How was it?"
+        },
+        {
+            "text": "Byłem w kinie."
+        },
+        {
+            "text": "Byłeś w górach? Jak było?",
+            "meaning": "You were in the mountains? How was it? (to a man)"
+        },
+        {
+            "text": "Było bardzo ładnie."
+        },
+        {
+            "text": "Było ładnie.",
+            "meaning": "It was nice."
+        },
+        {
+            "text": "Cały dzień?"
+        },
+        {
             "text": "Chcesz pójść do kawiarni?"
         },
         {
             "text": "Chcesz, ale muszę uczyć się do egzaminu.",
             "meaning": "You want to, but I have to study for an exam."
+        },
+        {
+            "text": "Chciałem dobrze!",
+            "meaning": "I meant well!"
+        },
+        {
+            "text": "Chciałem zrobić zdjęcie.",
+            "meaning": "I wanted to take a photo (a man)."
+        },
+        {
+            "text": "Chcieliście pizzę czy zupę?"
         },
         {
             "text": "Chcę pizzę z pieczarkami.",
@@ -1120,6 +1257,10 @@
             "meaning": "The boy orders a pizza with button mushrooms."
         },
         {
+            "text": "Chłopcy woleli pizzę.",
+            "meaning": "The boys preferred pizza."
+        },
+        {
             "text": "Ciasto jabłkowe jest pyszne.",
             "meaning": "The apple cake is delicious."
         },
@@ -1147,6 +1288,10 @@
         {
             "text": "Co Karol w końcu woli?",
             "meaning": "What does Karol prefer in the end?"
+        },
+        {
+            "text": "Co Uwe robił w Warszawie?",
+            "meaning": "What did Uwe do in Warsaw?"
         },
         {
             "text": "Co bardzo lubi druga dziewczyna?",
@@ -1187,6 +1332,10 @@
         {
             "text": "Co gotuje pani?",
             "meaning": "What is the lady cooking?"
+        },
+        {
+            "text": "Co jadły?",
+            "meaning": "What did they eat?"
         },
         {
             "text": "Co je Karolina?",
@@ -1243,6 +1392,10 @@
             "meaning": "What does Mami's dad collect?"
         },
         {
+            "text": "Co kupiła Angela?",
+            "meaning": "What did Angela buy?"
+        },
+        {
             "text": "Co kupujemy?",
             "meaning": "What are we buying?"
         },
@@ -1270,6 +1423,10 @@
         },
         {
             "text": "Co miesiąc."
+        },
+        {
+            "text": "Co mówi Mami do Javiera?",
+            "meaning": "What does Mami say to Javier? (at last you are here)"
         },
         {
             "text": "Co mówi Mami na „miło mi”?",
@@ -1457,6 +1614,10 @@
             "text": "Co robicie w weekend?"
         },
         {
+            "text": "Co robiliście w weekend?",
+            "meaning": "What did you do at the weekend?"
+        },
+        {
             "text": "Co robimy w weekend?"
         },
         {
@@ -1478,6 +1639,16 @@
         {
             "text": "Co robią Karol i Karolina?",
             "meaning": "What are Karol and Karolina making?"
+        },
+        {
+            "text": "Co robiła Mami w niedzielę?",
+            "meaning": "What did Mami do on Sunday?"
+        },
+        {
+            "text": "Co robiłeś w niedzielę?"
+        },
+        {
+            "text": "Co się stało w muzeum?"
         },
         {
             "text": "Co słychać?",
@@ -1506,6 +1677,10 @@
         {
             "text": "Co słyszysz po „wstawać”?",
             "meaning": "What do you hear after \"wstawać\"?"
+        },
+        {
+            "text": "Co tam robił?",
+            "meaning": "What did he do there?"
         },
         {
             "text": "Co to jest makaron?",
@@ -1603,6 +1778,10 @@
             "text": "Czekam na SMS."
         },
         {
+            "text": "Czekolada była…",
+            "meaning": "The chocolate was… (delicious)"
+        },
+        {
             "text": "Czekoladowe."
         },
         {
@@ -1648,8 +1827,15 @@
             "meaning": "Hi! Where is the toilet?"
         },
         {
+            "text": "Cześć! Jak było w weekend?",
+            "meaning": "Hi! How was your weekend?"
+        },
+        {
             "text": "Cześć! Jak masz na imię?",
             "meaning": "Hi! What's your name?"
+        },
+        {
+            "text": "Cześć! Jak weekend?"
         },
         {
             "text": "Cześć! Jestem Adam.",
@@ -2004,6 +2190,10 @@
             "meaning": "Why is Angela learning Polish?"
         },
         {
+            "text": "Dlaczego Javier nie odbierał telefonu?",
+            "meaning": "Why didn't Javier answer the phone?"
+        },
+        {
             "text": "Dlaczego Karolina je margarynę?",
             "meaning": "Why does Karolina have margarine?"
         },
@@ -2026,6 +2216,9 @@
         {
             "text": "Dlaczego nie możesz?",
             "meaning": "Why can't you?"
+        },
+        {
+            "text": "Dlaczego nie odpisywałeś?"
         },
         {
             "text": "Dlaczego nie?"
@@ -2072,6 +2265,9 @@
             "meaning": "He goes home at eight in the evening."
         },
         {
+            "text": "Do japońskiej restauracji."
+        },
+        {
             "text": "Do jutra!",
             "meaning": "Bye! See you tomorrow!"
         },
@@ -2100,6 +2296,9 @@
         },
         {
             "text": "Do picia ma czarną kawę."
+        },
+        {
+            "text": "Do pizzerii."
         },
         {
             "text": "Do pracy jeździ samochodem."
@@ -2223,6 +2422,14 @@
         {
             "text": "Dokąd oni idą dzisiaj?",
             "meaning": "Where are they going today?"
+        },
+        {
+            "text": "Dokąd poszli tata i Karol?",
+            "meaning": "Where did dad and Karol go?"
+        },
+        {
+            "text": "Dokąd poszły Mami i Angela?",
+            "meaning": "Where did Mami and Angela go?"
         },
         {
             "text": "Drogi."
@@ -2405,6 +2612,10 @@
         {
             "text": "Dziewczyna chce jeszcze ciemny chleb.",
             "meaning": "The girl also wants brown bread."
+        },
+        {
+            "text": "Dziewczyna chciała z nim rozmawiać.",
+            "meaning": "The girl wanted to talk to him."
         },
         {
             "text": "Dziewczyna jest dziś smutna.",
@@ -2724,6 +2935,10 @@
             "meaning": "There is duck today."
         },
         {
+            "text": "Dziś jest piątek.",
+            "meaning": "Today is Friday."
+        },
+        {
             "text": "Dziś jest żurek.",
             "meaning": "There is sour rye soup today."
         },
@@ -2776,6 +2991,9 @@
             "meaning": "Ewa dances very well."
         },
         {
+            "text": "Ewa była w domu."
+        },
+        {
             "text": "Ewa chce iść na kawę.",
             "meaning": "Ewa wants to go for a coffee."
         },
@@ -2790,6 +3008,13 @@
         {
             "text": "Ewa chce pizzę z oliwkami.",
             "meaning": "Ewa wants a pizza with olives."
+        },
+        {
+            "text": "Ewa chciała pizzę.",
+            "meaning": "Ewa wanted pizza."
+        },
+        {
+            "text": "Ewa chciała zupę, ale chłopcy woleli pizzę."
         },
         {
             "text": "Ewa czyta książkę.",
@@ -2858,6 +3083,10 @@
         {
             "text": "Ewa interesuje się polityką.",
             "meaning": "Ewa is interested in politics."
+        },
+        {
+            "text": "Ewa jadła obiad z mamą.",
+            "meaning": "Ewa had dinner with mum."
         },
         {
             "text": "Ewa je ciasto.",
@@ -2957,6 +3186,10 @@
         },
         {
             "text": "Ewa jest średniego wzrostu. Jest młoda i wesoła."
+        },
+        {
+            "text": "Ewa kupiła sweter.",
+            "meaning": "Ewa bought a jumper."
         },
         {
             "text": "Ewa kupuje bilet na autobus.",
@@ -3106,6 +3339,10 @@
             "meaning": "Ewa has to study."
         },
         {
+            "text": "Ewa nie była na meczu.",
+            "meaning": "Ewa wasn't at the match."
+        },
+        {
             "text": "Ewa nie chodzi na siłownię.",
             "meaning": "Ewa doesn't go to the gym."
         },
@@ -3200,6 +3437,10 @@
             "meaning": "Ewa can sing."
         },
         {
+            "text": "Ewa wróciła do domu w niedzielę.",
+            "meaning": "Ewa came back home on Sunday."
+        },
+        {
             "text": "Ewa zamawia barszcz.",
             "meaning": "Ewa orders beetroot soup."
         },
@@ -3225,6 +3466,13 @@
         },
         {
             "text": "Fasolka."
+        },
+        {
+            "text": "Film był dobry.",
+            "meaning": "The film was good."
+        },
+        {
+            "text": "Film był świetny!"
         },
         {
             "text": "Film jest o dziewiątej.",
@@ -3268,6 +3516,43 @@
         },
         {
             "text": "Gdzie"
+        },
+        {
+            "text": "Gdzie Angela była w sobotę wieczorem?",
+            "meaning": "Where was Angela on Saturday evening?"
+        },
+        {
+            "text": "Gdzie Mami była w weekend?",
+            "meaning": "Where was Mami at the weekend?"
+        },
+        {
+            "text": "Gdzie byli chłopcy w piątym dialogu?",
+            "meaning": "Where were the boys in the fifth dialogue?"
+        },
+        {
+            "text": "Gdzie byliście? Byliśmy na treningu.",
+            "meaning": "Where were you (several people)? We were at training."
+        },
+        {
+            "text": "Gdzie był Adam?"
+        },
+        {
+            "text": "Gdzie był Javier kilka dni temu?",
+            "meaning": "Where was Javier a few days ago?"
+        },
+        {
+            "text": "Gdzie był Javier? „W …”",
+            "meaning": "Where was Javier? \"In the…\" (mountains)"
+        },
+        {
+            "text": "Gdzie był Uwe?",
+            "meaning": "Where was Uwe?"
+        },
+        {
+            "text": "Gdzie byłeś w zeszłą sobotę?"
+        },
+        {
+            "text": "Gdzie byłeś wczoraj?"
         },
         {
             "text": "Gdzie jest jej rodzina?",
@@ -3327,6 +3612,10 @@
             "text": "Gdzie mogę kupić gazetę?"
         },
         {
+            "text": "Gdzie on był w szóstym dialogu?",
+            "meaning": "Where was he in the sixth dialogue?"
+        },
+        {
             "text": "Gdzie on chce iść?",
             "meaning": "Where does he want to go?"
         },
@@ -3345,6 +3634,13 @@
         {
             "text": "Gdzie oni teraz mieszkają?",
             "meaning": "Where do they live now?"
+        },
+        {
+            "text": "Gdzie poszliście wczoraj?"
+        },
+        {
+            "text": "Gdzie poszłaś wczoraj?",
+            "meaning": "Where did you go yesterday? (to a woman friend)"
         },
         {
             "text": "Gdzie pracujesz?"
@@ -3464,6 +3760,9 @@
             "text": "Grasz dzisiaj w tenisa?"
         },
         {
+            "text": "Grałem w tenisa, a potem czytałem."
+        },
+        {
             "text": "Groszek jest zielony.",
             "meaning": "The peas are green."
         },
@@ -3503,6 +3802,9 @@
         {
             "text": "Hobby",
             "meaning": "Hobbies"
+        },
+        {
+            "text": "I co?"
         },
         {
             "text": "I drożdżówka na śniadanie."
@@ -3565,6 +3867,10 @@
         },
         {
             "text": "Idę na koncert. Chcesz iść?"
+        },
+        {
+            "text": "Ile godzin spędziła w galerii? „… godzin”",
+            "meaning": "How many hours did she spend at the mall? \"… hours\" (a few)"
         },
         {
             "text": "Ile koktajli truskawkowych zamawiają?",
@@ -3730,6 +4036,9 @@
             "text": "Iść spać."
         },
         {
+            "text": "Ja byłam w domu."
+        },
+        {
             "text": "Ja chodzę do szkoły.",
             "meaning": "I go to school."
         },
@@ -3785,6 +4094,9 @@
             "text": "Ja nie lubię czytać."
         },
         {
+            "text": "Ja nie miałem czasu na obiad."
+        },
+        {
             "text": "Ja organizuję imprezę w klubie.",
             "meaning": "I am organising a party at a club."
         },
@@ -3804,8 +4116,14 @@
             "meaning": "I am doing a test."
         },
         {
+            "text": "Ja spałam!"
+        },
+        {
             "text": "Ja też lubię pływać! A umiesz śpiewać?",
             "meaning": "I like swimming too! And can you sing?"
+        },
+        {
+            "text": "Ja też nie, ale był ciekawy!"
         },
         {
             "text": "Ja też trochę. Kim jesteś z zawodu?",
@@ -3846,6 +4164,17 @@
             "text": "Jabłkowy."
         },
         {
+            "text": "Jadłaś już obiad?",
+            "meaning": "Have you had dinner yet?"
+        },
+        {
+            "text": "Jadłaś już obiad?",
+            "meaning": "Have you had dinner yet? (to a woman friend)"
+        },
+        {
+            "text": "Jadłeś"
+        },
+        {
             "text": "Jajecznicę."
         },
         {
@@ -3861,6 +4190,12 @@
         },
         {
             "text": "Jak"
+        },
+        {
+            "text": "Jak było na treningu?"
+        },
+        {
+            "text": "Jak było w galerii?"
         },
         {
             "text": "Jak często Uwe dzwoni do żony?",
@@ -4228,6 +4563,13 @@
             "text": "Jasny i ciemny."
         },
         {
+            "text": "Javier pamięta obrazy.",
+            "meaning": "Javier remembers the paintings."
+        },
+        {
+            "text": "Javier, nareszcie jesteś"
+        },
+        {
             "text": "Javiera."
         },
         {
@@ -4568,6 +4910,9 @@
             "text": "Jesteś głodna?"
         },
         {
+            "text": "Jesteś głodny?"
+        },
+        {
             "text": "Jesteś lekarką?",
             "meaning": "You're a doctor? That's interesting!"
         },
@@ -4589,6 +4934,9 @@
         },
         {
             "text": "Jesteś żonaty?"
+        },
+        {
+            "text": "Jesz"
         },
         {
             "text": "Jesz ser.",
@@ -4749,6 +5097,20 @@
             "text": "Kiedy"
         },
         {
+            "text": "Kiedy Mami jadła? „Godzinę …”",
+            "meaning": "When did Mami eat? \"An hour…\" (ago)"
+        },
+        {
+            "text": "Kiedy była mała, często chodziła do kina.",
+            "meaning": "When she was small, she often went to the cinema."
+        },
+        {
+            "text": "Kiedy byłam mała, rzadko chodziłam do kina."
+        },
+        {
+            "text": "Kiedy byłaś na treningu?"
+        },
+        {
             "text": "Kiedy jest film?"
         },
         {
@@ -4762,7 +5124,17 @@
             "meaning": "When do they eat fish?"
         },
         {
+            "text": "Kiedy ostatnio byłeś w kinie?"
+        },
+        {
             "text": "Kiedy pracujesz?"
+        },
+        {
+            "text": "Kiedy szedłem do domu, padał deszcz.",
+            "meaning": "When I was walking home, it was raining (a man)."
+        },
+        {
+            "text": "Kiedy szłam do kina, padał deszcz."
         },
         {
             "text": "Kiełbasa jest tłusta.",
@@ -4900,6 +5272,10 @@
             "meaning": "Who does this woman have?"
         },
         {
+            "text": "Kogo spotkał w muzeum?",
+            "meaning": "Whom did he meet at the museum?"
+        },
+        {
             "text": "Kogo widzi w lustrze?",
             "meaning": "Whom does he see in the mirror?"
         },
@@ -4934,6 +5310,9 @@
         },
         {
             "text": "Kolega z pracy."
+        },
+        {
+            "text": "Kolegę z klasy."
         },
         {
             "text": "Koleżanka idzie z nimi.",
@@ -5023,12 +5402,19 @@
             "text": "Książki."
         },
         {
+            "text": "Książkę."
+        },
+        {
             "text": "Kto dziś robi śniadanie?",
             "meaning": "Who is making breakfast today?"
         },
         {
             "text": "Kto jest w weekend w Krakowie?",
             "meaning": "Who is in Kraków at the weekend?"
+        },
+        {
+            "text": "Kto przyszedł na końcu?",
+            "meaning": "Who came at the end?"
         },
         {
             "text": "Kto to jest?",
@@ -5280,6 +5666,13 @@
             "meaning": "I like cold juice."
         },
         {
+            "text": "Ludzie się śmiali.",
+            "meaning": "People laughed."
+        },
+        {
+            "text": "Ludzie śmiali się głośno. Ale wstyd!"
+        },
+        {
             "text": "Ma dobry aparat, ale chce kupić też tani aparat."
         },
         {
@@ -5493,6 +5886,10 @@
             "meaning": "Mum is making dinner."
         },
         {
+            "text": "Mama ugotowała obiad.",
+            "meaning": "Mum has cooked dinner."
+        },
+        {
             "text": "Mama, tata."
         },
         {
@@ -5535,6 +5932,9 @@
         {
             "text": "Marta jest rozwiedziona.",
             "meaning": "Marta is divorced."
+        },
+        {
+            "text": "Martwiliśmy się! Nie odbierałaś telefonu."
         },
         {
             "text": "Masz chleb.",
@@ -5604,6 +6004,10 @@
         {
             "text": "Mianownik",
             "meaning": "The nominative"
+        },
+        {
+            "text": "Miesiąc temu byłam na meczu.",
+            "meaning": "A month ago I was at a match (a woman)."
         },
         {
             "text": "Mieszka w Krakowie."
@@ -5797,6 +6201,9 @@
             "meaning": "We can dance the tango."
         },
         {
+            "text": "Myślałam, że byłeś w domu."
+        },
+        {
             "text": "Myślę, że jest za kwaśny."
         },
         {
@@ -5942,10 +6349,16 @@
             "meaning": "What does the first girl feel like?"
         },
         {
+            "text": "Na dobrej imprezie."
+        },
+        {
             "text": "Na film japoński."
         },
         {
             "text": "Na film psychologiczny."
+        },
+        {
+            "text": "Na imprezie."
         },
         {
             "text": "Na jaki film idzie chłopak?",
@@ -6006,6 +6419,12 @@
         },
         {
             "text": "Na masaż."
+        },
+        {
+            "text": "Na mecz."
+        },
+        {
+            "text": "Na meczu."
         },
         {
             "text": "Na miękko czy na twardo?"
@@ -6099,6 +6518,9 @@
             "text": "Na spaghetti i sałatkę owocową."
         },
         {
+            "text": "Na stole jest tylko kartka."
+        },
+        {
             "text": "Na stole są banany.",
             "meaning": "There are bananas on the table."
         },
@@ -6122,6 +6544,9 @@
         },
         {
             "text": "Na tramwaj."
+        },
+        {
+            "text": "Na treningu."
         },
         {
             "text": "Na twardo, proszę."
@@ -6176,6 +6601,17 @@
             "text": "Najpierw się budzę."
         },
         {
+            "text": "Najpierw wstałam, następnie zjadłam śniadanie.",
+            "meaning": "First I got up, next I had breakfast (a woman)."
+        },
+        {
+            "text": "Najpierw wstałam, potem zjadłam śniadanie.",
+            "meaning": "First I got up, next I had breakfast (a woman)."
+        },
+        {
+            "text": "Najpierw wstałam."
+        },
+        {
             "text": "Naleśniki są z serem.",
             "meaning": "The pancakes come with cheese."
         },
@@ -6187,8 +6623,17 @@
             "text": "Napoje są tutaj."
         },
         {
+            "text": "Naprawdę?"
+        },
+        {
+            "text": "Nareszcie jesteś! Gdzie byłaś?"
+        },
+        {
             "text": "Nareszcie weekend!",
             "meaning": "At last, the weekend!"
+        },
+        {
+            "text": "Następnie zjadłam śniadanie."
         },
         {
             "text": "Nasz kot jest mały."
@@ -6263,6 +6708,14 @@
         },
         {
             "text": "Nie bardzo."
+        },
+        {
+            "text": "Nie jadłam i jestem głodna!",
+            "meaning": "I haven't eaten and I'm hungry! (a woman says it)"
+        },
+        {
+            "text": "Nie jadłem i jestem głodny!",
+            "meaning": "I haven't eaten and I'm hungry!"
         },
         {
             "text": "Nie jem chleba.",
@@ -6367,7 +6820,20 @@
             "meaning": "You don't have any bread."
         },
         {
+            "text": "Nie miał zasięgu."
+        },
+        {
+            "text": "Nie miałem zasięgu."
+        },
+        {
             "text": "Nie mogę. Muszę iść do lekarza."
+        },
+        {
+            "text": "Nie odbierałeś telefonu!",
+            "meaning": "You didn't answer the phone! (to a man friend)"
+        },
+        {
+            "text": "Nie pamiętam!"
         },
         {
             "text": "Nie pamiętam.",
@@ -6459,6 +6925,17 @@
             "text": "Nie, bez cukru."
         },
         {
+            "text": "Nie, byłem w domu, spałem i czytałem.",
+            "meaning": "No, I was at home. I slept and read."
+        },
+        {
+            "text": "Nie, byłem w domu. Spałem i czytałem.",
+            "meaning": "No, I was at home. I slept and read."
+        },
+        {
+            "text": "Nie, chciałem zobaczyć obrazy."
+        },
+        {
             "text": "Nie, dziękuję, poproszę rachunek.",
             "meaning": "No, thank you. I'd like the bill, please."
         },
@@ -6469,6 +6946,9 @@
         {
             "text": "Nie, dziękuję. Poproszę rachunek.",
             "meaning": "No, thank you. I'd like the bill, please."
+        },
+        {
+            "text": "Nie, jadłem godzinę temu."
         },
         {
             "text": "Nie, jest bardzo pracowity!"
@@ -6483,6 +6963,9 @@
         {
             "text": "Nie, jestem kawalerem.",
             "meaning": "No, I'm a bachelor."
+        },
+        {
+            "text": "Nie, jestem tu pierwszy raz."
         },
         {
             "text": "Nie, jestem z Anglii.",
@@ -6501,6 +6984,10 @@
         },
         {
             "text": "Nie, na pewno nie moja."
+        },
+        {
+            "text": "Nie, nie jadłem i jestem głodny!",
+            "meaning": "I haven't eaten and I'm hungry!"
         },
         {
             "text": "Nie, nie lubię."
@@ -6596,6 +7083,9 @@
         {
             "text": "Nie, zielony.",
             "meaning": "No, green."
+        },
+        {
+            "text": "Nie, zupełnie nic!"
         },
         {
             "text": "Nie. Jestem kawalerem.",
@@ -6866,7 +7356,21 @@
             "meaning": "Dinner at grandma's is at two."
         },
         {
+            "text": "Obrazy były piękne.",
+            "meaning": "The paintings were beautiful."
+        },
+        {
             "text": "Och, pięknie pachnie!"
+        },
+        {
+            "text": "Ochrona chciała zadzwonić na policję!"
+        },
+        {
+            "text": "Ochrona chciała zadzwonić na policję.",
+            "meaning": "Security wanted to call the police."
+        },
+        {
+            "text": "Ochrona."
         },
         {
             "text": "Od czasu do czasu."
@@ -6897,8 +7401,24 @@
             "text": "On bardzo lubi czytać."
         },
         {
+            "text": "On był w kinie rok temu.",
+            "meaning": "He was at the cinema a year ago."
+        },
+        {
+            "text": "On był w kinie tydzień temu.",
+            "meaning": "He was at the cinema a week ago."
+        },
+        {
+            "text": "On był w muzeum wczoraj.",
+            "meaning": "He was at the museum yesterday."
+        },
+        {
             "text": "On chce oglądać filmy po hiszpańsku.",
             "meaning": "He wants to watch films in Spanish."
+        },
+        {
+            "text": "On często chodzi do kina.",
+            "meaning": "He often goes to the cinema."
         },
         {
             "text": "On gra codziennie."
@@ -6926,6 +7446,10 @@
         {
             "text": "On jest niski i gruby.",
             "meaning": "He is short and fat."
+        },
+        {
+            "text": "On jest tu pierwszy raz.",
+            "meaning": "He is here for the first time."
         },
         {
             "text": "On jest wysoki, a ona jest niska.",
@@ -6967,8 +7491,16 @@
             "meaning": "He lives in Berlin."
         },
         {
+            "text": "On nie miał czasu.",
+            "meaning": "He had no time."
+        },
+        {
             "text": "On ogląda zdjęcia.",
             "meaning": "He is looking at photos."
+        },
+        {
+            "text": "On pamięta obrazy.",
+            "meaning": "He remembers the paintings."
         },
         {
             "text": "On pisze e-maile.",
@@ -6977,6 +7509,18 @@
         {
             "text": "On umie śpiewać.",
             "meaning": "He can sing."
+        },
+        {
+            "text": "On zrobił zdjęcie.",
+            "meaning": "He took a photo."
+        },
+        {
+            "text": "Ona była w górach.",
+            "meaning": "She was in the mountains."
+        },
+        {
+            "text": "Ona była w restauracji sama.",
+            "meaning": "She was at the restaurant alone."
         },
         {
             "text": "Ona chce pójść do kawiarni.",
@@ -6995,8 +7539,16 @@
             "meaning": "She is going with them."
         },
         {
+            "text": "Ona jadła sushi.",
+            "meaning": "She ate sushi."
+        },
+        {
             "text": "Ona jest Japonką.",
             "meaning": "She is Japanese."
+        },
+        {
+            "text": "Ona jest tu pierwszy raz.",
+            "meaning": "She is here for the first time."
         },
         {
             "text": "Ona jest z Japonii i mówi po japońsku.",
@@ -7067,6 +7619,14 @@
             "meaning": "She thinks that he is nice."
         },
         {
+            "text": "Ona nie była tu wczoraj.",
+            "meaning": "She wasn't here yesterday."
+        },
+        {
+            "text": "Ona nie jadła obiadu.",
+            "meaning": "She hasn't had dinner."
+        },
+        {
             "text": "Ona nie ma czasu.",
             "meaning": "She has no time."
         },
@@ -7081,6 +7641,10 @@
         {
             "text": "Ona pyta, która jest godzina.",
             "meaning": "She asks what time it is."
+        },
+        {
+            "text": "Ona rozumiała cały film.",
+            "meaning": "She understood the whole film."
         },
         {
             "text": "Ona umie tańczyć.",
@@ -7123,6 +7687,10 @@
             "meaning": "They study in Warsaw."
         },
         {
+            "text": "Oni wiedzą, gdzie był Javier.",
+            "meaning": "They know where Javier was."
+        },
+        {
             "text": "Oni zamawiają pizzę.",
             "meaning": "They are ordering a pizza."
         },
@@ -7131,6 +7699,9 @@
         },
         {
             "text": "Osiemnaście."
+        },
+        {
+            "text": "Ostatnio? Rok temu!"
         },
         {
             "text": "Owoce i warzywa",
@@ -7375,6 +7946,9 @@
             "text": "Piąta."
         },
         {
+            "text": "Piękną dziewczynę."
+        },
+        {
             "text": "Piętnasta."
         },
         {
@@ -7427,6 +8001,9 @@
             "text": "Pod teatrem."
         },
         {
+            "text": "Pogoda była świetna."
+        },
+        {
             "text": "Polakiem",
             "meaning": "Polish (a man)"
         },
@@ -7441,6 +8018,9 @@
         {
             "text": "Polecenia",
             "meaning": "Instructions"
+        },
+        {
+            "text": "Policja."
         },
         {
             "text": "Polką",
@@ -7458,6 +8038,14 @@
         },
         {
             "text": "Polski"
+        },
+        {
+            "text": "Polski film. Był bardzo ciekawy!",
+            "meaning": "A Polish film. It was very interesting!"
+        },
+        {
+            "text": "Polski film. Była bardzo ciekawa!",
+            "meaning": "A Polish film. She was very interesting!"
         },
         {
             "text": "Pomarańcze są teraz dobre.",
@@ -7500,6 +8088,12 @@
             "meaning": "The sour rye soup with an egg for me."
         },
         {
+            "text": "Poszliśmy na mecz."
+        },
+        {
+            "text": "Poszły do kina."
+        },
+        {
             "text": "Potem mam zajęcia."
         },
         {
@@ -7512,11 +8106,20 @@
             "text": "Potem sprawdzam coś w telefonie i piję kawę."
         },
         {
+            "text": "Potem umyłam zęby."
+        },
+        {
             "text": "Potem wstaję i biorę prysznic."
         },
         {
             "text": "Powitania i pożegnania",
             "meaning": "Hello and goodbye"
+        },
+        {
+            "text": "Pracował."
+        },
+        {
+            "text": "Pracowała."
         },
         {
             "text": "Pracuje osiem godzin.",
@@ -7552,6 +8155,9 @@
         },
         {
             "text": "Produkty zbożowe."
+        },
+        {
+            "text": "Prosiłem ładnie, ale ochrona chciała zadzwonić na policję."
         },
         {
             "text": "Proszę bardzo.",
@@ -7714,6 +8320,12 @@
             "text": "Przed południem jestem w szkole."
         },
         {
+            "text": "Przedwczoraj."
+        },
+        {
+            "text": "Przepraszam! W górach było wspaniale."
+        },
+        {
             "text": "Przepraszam, dzisiaj tylko gotówką!",
             "meaning": "Sorry, today only in cash!"
         },
@@ -7751,6 +8363,10 @@
             "meaning": "The break is at 10:15."
         },
         {
+            "text": "Przyjaciele się martwili.",
+            "meaning": "Her friends were worried."
+        },
+        {
             "text": "Przykro mi, ale nie mam czasu."
         },
         {
@@ -7758,6 +8374,9 @@
         },
         {
             "text": "Pół Polką, pół Angielką."
+        },
+        {
+            "text": "Później poszłam do szkoły."
         },
         {
             "text": "Płaci dziewiętnaście złotych."
@@ -7879,6 +8498,9 @@
             "text": "Rower."
         },
         {
+            "text": "Rozumiałaś ten film?"
+        },
+        {
             "text": "Rozumiem! Dziękuję bardzo.",
             "meaning": "I understand! Thank you very much."
         },
@@ -7986,6 +8608,9 @@
             "text": "Siedemnaście."
         },
         {
+            "text": "Siedziałem przed komputerem."
+        },
+        {
             "text": "Siostra, brat."
         },
         {
@@ -8069,6 +8694,12 @@
             "text": "Spacer po parku."
         },
         {
+            "text": "Spał."
+        },
+        {
+            "text": "Spała, rysowała i grała."
+        },
+        {
             "text": "Spektakl jest jutro wieczorem.",
             "meaning": "The show is tomorrow evening."
         },
@@ -8145,8 +8776,14 @@
             "text": "Surowe."
         },
         {
+            "text": "Sushi! Byłam w restauracji z Adamem."
+        },
+        {
             "text": "Suszona, proszę.",
             "meaning": "Dried, please."
+        },
+        {
+            "text": "Sweter."
         },
         {
             "text": "Syn czyta.",
@@ -8227,6 +8864,9 @@
             "text": "Tak, ale nie umiem."
         },
         {
+            "text": "Tak, ale spędziłam tam kilka godzin!"
+        },
+        {
             "text": "Tak, ale tylko trochę.",
             "meaning": "Yes, but only a little."
         },
@@ -8262,6 +8902,13 @@
             "meaning": "Yes, very!"
         },
         {
+            "text": "Tak, bo padał deszcz."
+        },
+        {
+            "text": "Tak, byłem na meczu.",
+            "meaning": "Yes, I was at the match."
+        },
+        {
             "text": "Tak, chętnie."
         },
         {
@@ -8287,6 +8934,9 @@
             "text": "Tak, dziś jest zamknięta."
         },
         {
+            "text": "Tak, godzinę temu."
+        },
+        {
             "text": "Tak, gram w tenisa.",
             "meaning": "Yes, I play tennis. It's my hobby."
         },
@@ -8304,6 +8954,10 @@
         },
         {
             "text": "Tak, i na zupę jarzynową."
+        },
+        {
+            "text": "Tak, jadłem godzinę temu.",
+            "meaning": "Yes, I ate an hour ago."
         },
         {
             "text": "Tak, jest bardzo miła i wesoła.",
@@ -8497,6 +9151,9 @@
             "text": "Tak. Mamy jeszcze piętnaście minut."
         },
         {
+            "text": "Tak. W zeszłym roku byłem w kinie tylko raz."
+        },
+        {
             "text": "Taksówka."
         },
         {
@@ -8543,6 +9200,10 @@
             "meaning": "Dad is reading a book."
         },
         {
+            "text": "Tata i Karol jedli zupę.",
+            "meaning": "Dad and Karol had soup."
+        },
+        {
             "text": "Tata je kotlet z frytkami.",
             "meaning": "Dad is eating a cutlet with chips."
         },
@@ -8569,6 +9230,12 @@
         {
             "text": "Tata robi zupę.",
             "meaning": "Dad is making soup."
+        },
+        {
+            "text": "Tańczył."
+        },
+        {
+            "text": "Tańczyłam i poznałam Adama."
         },
         {
             "text": "Te ryby są świeże.",
@@ -8659,6 +9326,9 @@
         {
             "text": "To auto jest duże.",
             "meaning": "This car is big."
+        },
+        {
+            "text": "To był spokojny weekend."
         },
         {
             "text": "To chyba nowy student.",
@@ -8941,6 +9611,10 @@
             "text": "To zamawiam pierogi."
         },
         {
+            "text": "To zapraszam cię na obiad!",
+            "meaning": "Then come and have dinner with me, it's on me!"
+        },
+        {
             "text": "Toaleta jest na lewo.",
             "meaning": "The toilet is on the left."
         },
@@ -9130,6 +9804,9 @@
             "text": "Tylko mamę."
         },
         {
+            "text": "Tylko sweter?"
+        },
+        {
             "text": "Tylko trochę.",
             "meaning": "Yes, but only a little."
         },
@@ -9237,6 +9914,10 @@
             "meaning": "Uwe works from morning till evening."
         },
         {
+            "text": "Uwe uczył się polskiego w pociągu.",
+            "meaning": "Uwe studied Polish on the train."
+        },
+        {
             "text": "Uwe zawsze pracuje od rana do wieczora."
         },
         {
@@ -9271,13 +9952,23 @@
             "text": "W Londynie."
         },
         {
+            "text": "W Muzeum Narodowym."
+        },
+        {
             "text": "W Paryżu."
         },
         {
             "text": "W Polsce."
         },
         {
+            "text": "W Warszawie Uwe pił wino.",
+            "meaning": "In Warsaw Uwe drank wine."
+        },
+        {
             "text": "W Warszawie."
+        },
+        {
+            "text": "W Zakopanem."
         },
         {
             "text": "W biurze.",
@@ -9295,6 +9986,10 @@
             "text": "W czwartek."
         },
         {
+            "text": "W czwartym dialogu: wczoraj było brzydko.",
+            "meaning": "In the fourth dialogue: yesterday the weather was bad."
+        },
+        {
             "text": "W domu."
         },
         {
@@ -9307,6 +10002,10 @@
         {
             "text": "W drugim dialogu to jest ołówek.",
             "meaning": "In the second dialogue it is a pencil."
+        },
+        {
+            "text": "W galerii były duże rabaty.",
+            "meaning": "There were big discounts at the mall."
         },
         {
             "text": "W galerii jest apteka.",
@@ -9332,11 +10031,25 @@
             "meaning": "There isn't a bureau de change in the shopping centre."
         },
         {
+            "text": "W galerii spędziłam kilka godzin.",
+            "meaning": "I spent a few hours at the mall (a woman)."
+        },
+        {
+            "text": "W górach miała zasięg.",
+            "meaning": "In the mountains she had a signal."
+        },
+        {
+            "text": "W górach!"
+        },
+        {
             "text": "W kawiarni jest czekolada do picia i do jedzenia.",
             "meaning": "The café has chocolate to drink and to eat."
         },
         {
             "text": "W każdy weekend."
+        },
+        {
+            "text": "W kinie."
         },
         {
             "text": "W kiosku są chipsy paprykowe.",
@@ -9349,6 +10062,10 @@
         {
             "text": "W klasie",
             "meaning": "In the classroom"
+        },
+        {
+            "text": "W klubie Angela rozmawiała po angielsku.",
+            "meaning": "At the club Angela spoke English."
         },
         {
             "text": "W klubie."
@@ -9383,6 +10100,26 @@
             "text": "W kuchni."
         },
         {
+            "text": "W muzeum chciałem zrobić zdjęcie obrazu."
+        },
+        {
+            "text": "W muzeum nie można robić zdjęć!"
+        },
+        {
+            "text": "W muzeum widziałem obrazy.",
+            "meaning": "At the museum I saw paintings (a man)."
+        },
+        {
+            "text": "W muzeum."
+        },
+        {
+            "text": "W niedzielę Mami była w domu.",
+            "meaning": "On Sunday Mami was at home."
+        },
+        {
+            "text": "W niedzielę byłyśmy na treningu."
+        },
+        {
             "text": "W niedzielę jem obiad u babci.",
             "meaning": "On Sunday I have dinner at grandma's."
         },
@@ -9409,6 +10146,14 @@
             "meaning": "On Sunday he has time."
         },
         {
+            "text": "W niedzielę ona pracowała.",
+            "meaning": "On Sunday she worked."
+        },
+        {
+            "text": "W niedzielę one były na imprezie.",
+            "meaning": "On Sunday they were at a party."
+        },
+        {
             "text": "W niedzielę spotyka się ze znajomymi.",
             "meaning": "On Sunday he meets friends."
         },
@@ -9417,12 +10162,27 @@
             "meaning": "At night I sleep."
         },
         {
+            "text": "W pierwszym dialogu chłopak jest tu pierwszy raz.",
+            "meaning": "In the first dialogue the boy is here for the first time."
+        },
+        {
             "text": "W pierwszym dialogu to jest książka.",
             "meaning": "In the first dialogue it is a book."
         },
         {
+            "text": "W piątek Ewa była w klubie.",
+            "meaning": "On Friday Ewa was at a club."
+        },
+        {
+            "text": "W piątek Javier był w szkole.",
+            "meaning": "On Friday Javier was at school."
+        },
+        {
             "text": "W piątek albo w sobotę. Kiedy masz czas?",
             "meaning": "On Friday or on Saturday. When are you free?"
+        },
+        {
+            "text": "W piątek byłam w galerii i kupiłam sweter."
         },
         {
             "text": "W piątek kwadrans po dziewiątej: spotkanie.",
@@ -9444,10 +10204,18 @@
             "meaning": "Friday at eight in the evening: a party."
         },
         {
+            "text": "W piątek w nocy Angela była w galerii.",
+            "meaning": "On Friday night Angela was at the mall."
+        },
+        {
             "text": "W piątek wieczorem."
         },
         {
             "text": "W piątek."
+        },
+        {
+            "text": "W poniedziałek Adam poszedł do kina.",
+            "meaning": "On Monday Adam went to the cinema."
         },
         {
             "text": "W poniedziałek czy we wtorek?",
@@ -9467,6 +10235,9 @@
         {
             "text": "W poniedziałek o ósmej: lekcja.",
             "meaning": "Monday at eight: a lesson."
+        },
+        {
+            "text": "W poniedziałek rano miał kurs, a wieczorem poszedł do kina."
         },
         {
             "text": "W porządku!",
@@ -9494,11 +10265,25 @@
             "text": "W pracy."
         },
         {
+            "text": "W pubie."
+        },
+        {
             "text": "W restauracji można palić.",
             "meaning": "You can smoke inside the restaurant."
         },
         {
             "text": "W sobotę Ewa spotyka się ze znajomymi w galerii."
+        },
+        {
+            "text": "W sobotę Mami spacerowała i robiła…",
+            "meaning": "On Saturday Mami went for walks and took… (photos)"
+        },
+        {
+            "text": "W sobotę była świetna pogoda.",
+            "meaning": "On Saturday the weather was great."
+        },
+        {
+            "text": "W sobotę jednocześnie sprzątał i słuchał muzyki."
         },
         {
             "text": "W sobotę o jedenastej: śniadanie.",
@@ -9507,6 +10292,20 @@
         {
             "text": "W sobotę o osiemnastej: randka.",
             "meaning": "Saturday at six in the evening: a date."
+        },
+        {
+            "text": "W sobotę oglądałam film w kinie."
+        },
+        {
+            "text": "W sobotę ona była w kinie.",
+            "meaning": "On Saturday she was at the cinema."
+        },
+        {
+            "text": "W sobotę one były na imprezie.",
+            "meaning": "On Saturday they were at a party."
+        },
+        {
+            "text": "W sobotę wieczorem byłam w klubie ze znajomymi."
         },
         {
             "text": "W sobotę wstaje o szóstej.",
@@ -9562,8 +10361,25 @@
             "meaning": "At weekends he usually has time."
         },
         {
+            "text": "W zeszłym tygodniu Adam był bardzo zajęty."
+        },
+        {
+            "text": "W zeszłym tygodniu Adam miał dużo czasu.",
+            "meaning": "Last week Adam had a lot of time."
+        },
+        {
+            "text": "W zeszłym tygodniu nie byłam."
+        },
+        {
+            "text": "W środę chciał odwiedzić babcię, ale nie miał czasu."
+        },
+        {
             "text": "W środę o dziewiętnastej: teatr.",
             "meaning": "Wednesday at seven in the evening: the theatre."
+        },
+        {
+            "text": "W środę odwiedził babcię.",
+            "meaning": "On Wednesday he visited his grandma."
         },
         {
             "text": "W środę pracuje.",
@@ -9576,6 +10392,28 @@
         {
             "text": "Warzywa są surowe.",
             "meaning": "The vegetables are raw."
+        },
+        {
+            "text": "Wczoraj byłem w domu.",
+            "meaning": "Yesterday I was at home (a man)."
+        },
+        {
+            "text": "Wczoraj byłem w muzeum."
+        },
+        {
+            "text": "Wczoraj było tak ładnie!",
+            "meaning": "Yesterday it was so nice!"
+        },
+        {
+            "text": "Wczoraj czytałam książkę.",
+            "meaning": "Yesterday I was reading a book (a woman)."
+        },
+        {
+            "text": "Wczoraj padał deszcz.",
+            "meaning": "Yesterday it was raining."
+        },
+        {
+            "text": "Wczoraj poszłam na premierę."
         },
         {
             "text": "We wtorek i w czwartek pracuję."
@@ -9597,6 +10435,17 @@
         },
         {
             "text": "We wtorek."
+        },
+        {
+            "text": "Weekend był dobry.",
+            "meaning": "The weekend was good."
+        },
+        {
+            "text": "Weekend był spokojny.",
+            "meaning": "The weekend was quiet."
+        },
+        {
+            "text": "Widziałem tam piękne obrazy."
         },
         {
             "text": "Wieczorem Ewa i Adam zamawiają pizzę."
@@ -9722,6 +10571,13 @@
             "text": "Wracać do domu."
         },
         {
+            "text": "Wróciłam do domu w niedzielę rano."
+        },
+        {
+            "text": "Wspaniale! A ty jadłeś już obiad?",
+            "meaning": "Wonderful! And have you had dinner yet?"
+        },
+        {
             "text": "Wstaje o siódmej.",
             "meaning": "She gets up at seven."
         },
@@ -9730,6 +10586,10 @@
         },
         {
             "text": "Wstaję o wpół do siódmej."
+        },
+        {
+            "text": "Wszyscy czekali na Javiera.",
+            "meaning": "Everyone was waiting for Javier."
         },
         {
             "text": "Wszyscy umieją tańczyć.",
@@ -9824,6 +10684,12 @@
             "text": "Z Japonii."
         },
         {
+            "text": "Z Javierem."
+        },
+        {
+            "text": "Z Mami."
+        },
+        {
             "text": "Z Niemiec."
         },
         {
@@ -9855,6 +10721,10 @@
         {
             "text": "Z czym? Z serem czy z szynką?",
             "meaning": "With what? With cheese or with ham?"
+        },
+        {
+            "text": "Z kim Uwe spotkał się w pubie?",
+            "meaning": "Whom did Uwe meet at the pub?"
         },
         {
             "text": "Z kim mieszka ta dziewczyna?",
@@ -9961,6 +10831,9 @@
             "text": "Zdjęć."
         },
         {
+            "text": "Ze znajomymi."
+        },
+        {
             "text": "Zeszyt."
         },
         {
@@ -9993,6 +10866,12 @@
         },
         {
             "text": "Zupa."
+        },
+        {
+            "text": "Zupę i pizzę."
+        },
+        {
+            "text": "Zupę miso i sushi."
         },
         {
             "text": "Zwykle jeździ samochodem."
@@ -10091,6 +10970,10 @@
         {
             "text": "ale",
             "meaning": "but"
+        },
+        {
+            "text": "ale wstyd!",
+            "meaning": "how embarrassing!"
         },
         {
             "text": "alfabet",
@@ -10308,6 +11191,10 @@
         {
             "text": "bardzo mi smakuje",
             "meaning": "I like it very much (of food)"
+        },
+        {
+            "text": "bardzo się martwiliśmy",
+            "meaning": "we were very worried (with a man among us)"
         },
         {
             "text": "barszcz",
@@ -10713,8 +11600,144 @@
             "meaning": "a bread roll (after proszę, jem…: jem bułkę)"
         },
         {
+            "text": "byli",
+            "meaning": "they were (men, or men and women)"
+        },
+        {
+            "text": "byli na meczu",
+            "meaning": "they were at the match (men)"
+        },
+        {
+            "text": "byliście",
+            "meaning": "you were (men and women)"
+        },
+        {
+            "text": "byliście",
+            "meaning": "you were (several people, with a man among them)"
+        },
+        {
+            "text": "byliśmy",
+            "meaning": "we were (men and women)"
+        },
+        {
+            "text": "byliśmy",
+            "meaning": "we were (men, or men and women)"
+        },
+        {
+            "text": "byliśmy na imprezie",
+            "meaning": "we were at a party (with a man among us)"
+        },
+        {
+            "text": "byliśmy w kinie"
+        },
+        {
             "text": "być może",
             "meaning": "maybe"
+        },
+        {
+            "text": "był",
+            "meaning": "he was; it was (with a masculine noun)"
+        },
+        {
+            "text": "była",
+            "meaning": "she was; it was (with a feminine noun)"
+        },
+        {
+            "text": "byłam",
+            "meaning": "I was (a woman says it)"
+        },
+        {
+            "text": "byłam",
+            "meaning": "I was (a woman)"
+        },
+        {
+            "text": "byłam bardzo szczęśliwa",
+            "meaning": "I was very happy (a woman)"
+        },
+        {
+            "text": "byłam na imprezie w zeszłą sobotę",
+            "meaning": "last Saturday I was at a party (a woman)"
+        },
+        {
+            "text": "byłam w domu",
+            "meaning": "I was at home (a woman)"
+        },
+        {
+            "text": "byłaś",
+            "meaning": "you were (to a woman)"
+        },
+        {
+            "text": "byłaś",
+            "meaning": "you were (to a woman, one friend)"
+        },
+        {
+            "text": "byłem",
+            "meaning": "I was (a man says it)"
+        },
+        {
+            "text": "byłem",
+            "meaning": "I was (a man)"
+        },
+        {
+            "text": "byłem w domu"
+        },
+        {
+            "text": "byłem w domu dwa dni temu",
+            "meaning": "two days ago I was at home (a man)"
+        },
+        {
+            "text": "byłeś",
+            "meaning": "you were (to a man)"
+        },
+        {
+            "text": "byłeś",
+            "meaning": "you were (to a man, one friend)"
+        },
+        {
+            "text": "byłeś tu kiedyś?",
+            "meaning": "have you ever been here? (to a man friend)"
+        },
+        {
+            "text": "byłeś tutaj kiedyś?",
+            "meaning": "have you ever been here? (to a man friend)"
+        },
+        {
+            "text": "było",
+            "meaning": "it was (było ładnie: it was nice)"
+        },
+        {
+            "text": "było wspaniale!",
+            "meaning": "it was wonderful!"
+        },
+        {
+            "text": "było ładnie",
+            "meaning": "it was nice"
+        },
+        {
+            "text": "było źle"
+        },
+        {
+            "text": "były",
+            "meaning": "they were (women only, or things)"
+        },
+        {
+            "text": "były w kinie"
+        },
+        {
+            "text": "byłyście",
+            "meaning": "you were (several women)"
+        },
+        {
+            "text": "byłyście",
+            "meaning": "you were (women only)"
+        },
+        {
+            "text": "byłyśmy",
+            "meaning": "we were (women only)"
+        },
+        {
+            "text": "byłyśmy w kinie",
+            "meaning": "we were at the cinema (women only)"
         },
         {
             "text": "cebula",
@@ -10777,6 +11800,41 @@
             "meaning": "you want (one friend)"
         },
         {
+            "text": "chciałam",
+            "meaning": "I wanted (chciałem: a man says it; chciałam: a woman)"
+        },
+        {
+            "text": "chciałam dobrze!"
+        },
+        {
+            "text": "chciałem",
+            "meaning": "I wanted"
+        },
+        {
+            "text": "chciałem",
+            "meaning": "I wanted (chciałem: a man says it; chciałam: a woman)"
+        },
+        {
+            "text": "chciałem dobrze!",
+            "meaning": "I meant well! (a man)"
+        },
+        {
+            "text": "chciałyście",
+            "meaning": "you wanted (chcieliście: several people, with a man among them; chciałyście: several women)"
+        },
+        {
+            "text": "chcieliście",
+            "meaning": "you wanted"
+        },
+        {
+            "text": "chcieliście",
+            "meaning": "you wanted (chcieliście: several people, with a man among them; chciałyście: several women)"
+        },
+        {
+            "text": "chcieliście iść do kina?",
+            "meaning": "did you want to go to the cinema? (several people)"
+        },
+        {
             "text": "chcieć",
             "meaning": "to want"
         },
@@ -10796,6 +11854,9 @@
             "meaning": "I want"
         },
         {
+            "text": "chcę dobrze!"
+        },
+        {
             "text": "chcę grać w tenisa",
             "meaning": "I want to play tennis"
         },
@@ -10806,6 +11867,10 @@
         {
             "text": "chcę iść na masaż",
             "meaning": "I want to go for a massage"
+        },
+        {
+            "text": "chcę odwiedzić Kraków",
+            "meaning": "I want to visit Kraków"
         },
         {
             "text": "chcę wygrać tysiąc złotych",
@@ -10889,6 +11954,18 @@
         },
         {
             "text": "chodzić na spacery"
+        },
+        {
+            "text": "chodziłam",
+            "meaning": "I used to go, I went often (chodziłem: a man says it; chodziłam: a woman)"
+        },
+        {
+            "text": "chodziłem",
+            "meaning": "I used to go"
+        },
+        {
+            "text": "chodziłem",
+            "meaning": "I used to go, I went often (chodziłem: a man says it; chodziłam: a woman)"
         },
         {
             "text": "chodzą",
@@ -11114,6 +12191,10 @@
             "meaning": "what are we cooking?"
         },
         {
+            "text": "co jedliście?",
+            "meaning": "what did you eat? (several people)"
+        },
+        {
             "text": "co jest na kolację?",
             "meaning": "what's for supper?"
         },
@@ -11223,7 +12304,17 @@
             "text": "co robimy?"
         },
         {
+            "text": "co robisz w weekend?"
+        },
+        {
             "text": "co robisz?"
+        },
+        {
+            "text": "co robiłaś w weekend?",
+            "meaning": "what did you do at the weekend? (to a woman)"
+        },
+        {
+            "text": "co robiłeś w weekend?"
         },
         {
             "text": "co słychać u ciebie?",
@@ -11688,6 +12779,10 @@
             "meaning": "(starts a yes-or-no question)"
         },
         {
+            "text": "czy byłeś tu kiedyś?",
+            "meaning": "have you ever been here? (to a man friend)"
+        },
+        {
             "text": "czy chciałaby pani pójść do parku?",
             "meaning": "would you like to go to the park? (to a woman)"
         },
@@ -11790,6 +12885,10 @@
         },
         {
             "text": "czy mówisz po polsku?"
+        },
+        {
+            "text": "czy one były na meczu?",
+            "meaning": "were they at the match? (women)"
         },
         {
             "text": "czy pamiętasz, kto to jest?"
@@ -12085,6 +13184,15 @@
             "meaning": "he reads, she reads"
         },
         {
+            "text": "czytali"
+        },
+        {
+            "text": "czytaliście"
+        },
+        {
+            "text": "czytaliśmy"
+        },
+        {
             "text": "czytam",
             "meaning": "I read"
         },
@@ -12124,8 +13232,51 @@
             "meaning": "to read"
         },
         {
+            "text": "czytał"
+        },
+        {
+            "text": "czytała"
+        },
+        {
+            "text": "czytałam",
+            "meaning": "I read, I was reading (czytałem: a man says it; czytałam: a woman)"
+        },
+        {
+            "text": "czytałaś"
+        },
+        {
+            "text": "czytałem",
+            "meaning": "I read (a man)"
+        },
+        {
+            "text": "czytałem",
+            "meaning": "I read, I was reading (czytałem: a man says it; czytałam: a woman)"
+        },
+        {
+            "text": "czytałeś"
+        },
+        {
+            "text": "czytały"
+        },
+        {
+            "text": "czytałyście"
+        },
+        {
+            "text": "czytałyśmy"
+        },
+        {
             "text": "często",
             "meaning": "often"
+        },
+        {
+            "text": "często chodziłam do kina",
+            "meaning": "I often went to the cinema (a woman)"
+        },
+        {
+            "text": "często chodziłem do kina"
+        },
+        {
+            "text": "często chodzę do kina"
         },
         {
             "text": "często piję kawę"
@@ -12264,6 +13415,14 @@
         {
             "text": "dlaczego uczysz się polskiego?",
             "meaning": "why are you learning Polish? (one friend)"
+        },
+        {
+            "text": "dni",
+            "meaning": "days"
+        },
+        {
+            "text": "dni",
+            "meaning": "days (dwa dni temu: two days ago)"
         },
         {
             "text": "dni tygodnia",
@@ -12474,8 +13633,15 @@
             "text": "dokąd idziesz?"
         },
         {
+            "text": "dokąd poszliście?",
+            "meaning": "where did you go? (several people)"
+        },
+        {
             "text": "dokąd?",
             "meaning": "where to?"
+        },
+        {
+            "text": "dom"
         },
         {
             "text": "doniczka"
@@ -12638,6 +13804,13 @@
         {
             "text": "dwa",
             "meaning": "two"
+        },
+        {
+            "text": "dwa dni temu"
+        },
+        {
+            "text": "dwa dni temu byłem w domu",
+            "meaning": "two days ago I was at home (a man)"
         },
         {
             "text": "dwa plus dwa jest cztery",
@@ -13254,6 +14427,9 @@
             "meaning": "the café is not open today"
         },
         {
+            "text": "dziś mam test"
+        },
+        {
             "text": "dziś wieczorem nie mam planów"
         },
         {
@@ -13450,6 +14626,18 @@
             "meaning": "where"
         },
         {
+            "text": "gdzie byłaś?",
+            "meaning": "where were you? (to a woman friend)"
+        },
+        {
+            "text": "gdzie byłeś w zeszłym tygodniu?",
+            "meaning": "where were you last week? (to a man friend)"
+        },
+        {
+            "text": "gdzie byłyście?",
+            "meaning": "where were you? (to two women friends)"
+        },
+        {
             "text": "gdzie jest bankomat?",
             "meaning": "where is the cash machine?"
         },
@@ -13522,6 +14710,10 @@
         {
             "text": "gdzie państwo są?",
             "meaning": "where are you? (to a man and a woman, formal)"
+        },
+        {
+            "text": "gdzie poszliście?",
+            "meaning": "where did you go? (several people)"
         },
         {
             "text": "gdzie pracujesz?",
@@ -13799,6 +14991,22 @@
             "meaning": "to play"
         },
         {
+            "text": "grałam",
+            "meaning": "I played"
+        },
+        {
+            "text": "grałam",
+            "meaning": "I played (grałam: a woman says it; grałem: a man)"
+        },
+        {
+            "text": "grałem",
+            "meaning": "I played (grałam: a woman says it; grałem: a man)"
+        },
+        {
+            "text": "grałem w karty",
+            "meaning": "I played cards (a man)"
+        },
+        {
             "text": "grosz",
             "meaning": "a grosz, a hundredth of a złoty (dwa grosze, pięć groszy)"
         },
@@ -13906,6 +15114,9 @@
             "meaning": "a rubber, for rubbing out"
         },
         {
+            "text": "górach"
+        },
+        {
             "text": "głodna",
             "meaning": "hungry (głodny, głodna, głodne)"
         },
@@ -13920,6 +15131,14 @@
         {
             "text": "głodny",
             "meaning": "hungry (głodny, głodna, głodne)"
+        },
+        {
+            "text": "głośno",
+            "meaning": "loudly"
+        },
+        {
+            "text": "głośno",
+            "meaning": "loudly, loud"
         },
         {
             "text": "hala"
@@ -13987,6 +15206,9 @@
         {
             "text": "ich",
             "meaning": "their"
+        },
+        {
+            "text": "idzie"
         },
         {
             "text": "idziecie",
@@ -14059,8 +15281,14 @@
             "meaning": "I am going (on foot)"
         },
         {
+            "text": "idę do kina"
+        },
+        {
             "text": "idę na kawę",
             "meaning": "I'm going for a coffee"
+        },
+        {
+            "text": "idę na piechotę"
         },
         {
             "text": "idę na zakupy"
@@ -14624,6 +15852,54 @@
             "meaning": "apple, made with apples (jabłkowy, jabłkowa, jabłkowe)"
         },
         {
+            "text": "jadł",
+            "meaning": "he ate"
+        },
+        {
+            "text": "jadł",
+            "meaning": "he ate, she ate (jadł: he ate; jadła: she ate)"
+        },
+        {
+            "text": "jadła",
+            "meaning": "he ate, she ate (jadł: he ate; jadła: she ate)"
+        },
+        {
+            "text": "jadłam",
+            "meaning": "I ate (jadłem: a man says it; jadłam: a woman)"
+        },
+        {
+            "text": "jadłaś",
+            "meaning": "you ate (jadłeś: to a man friend; jadłaś: to a woman)"
+        },
+        {
+            "text": "jadłem",
+            "meaning": "I ate"
+        },
+        {
+            "text": "jadłem",
+            "meaning": "I ate (jadłem: a man says it; jadłam: a woman)"
+        },
+        {
+            "text": "jadłeś",
+            "meaning": "you ate"
+        },
+        {
+            "text": "jadłeś",
+            "meaning": "you ate (jadłeś: to a man friend; jadłaś: to a woman)"
+        },
+        {
+            "text": "jadły",
+            "meaning": "they ate (jedli: men, or men and women; jadły: women only)"
+        },
+        {
+            "text": "jadłyście",
+            "meaning": "you ate (jedliście: several people, with a man among them; jadłyście: several women)"
+        },
+        {
+            "text": "jadłyśmy",
+            "meaning": "we ate (jedliśmy: with a man among us; jadłyśmy: women only)"
+        },
+        {
             "text": "jagody",
             "meaning": "blueberries"
         },
@@ -14663,12 +15939,23 @@
             "meaning": "how"
         },
         {
+            "text": "jak było na imprezie?",
+            "meaning": "how was it at the party?"
+        },
+        {
+            "text": "jak było?",
+            "meaning": "how was it?"
+        },
+        {
             "text": "jak często dzwonisz?",
             "meaning": "how often do you call? (one friend)"
         },
         {
             "text": "jak często?",
             "meaning": "how often?"
+        },
+        {
+            "text": "jak jest?"
         },
         {
             "text": "jak leci?",
@@ -14817,6 +16104,9 @@
         {
             "text": "jaki aparat pan poleca?",
             "meaning": "which camera do you recommend? (to a man)"
+        },
+        {
+            "text": "jaki był?"
         },
         {
             "text": "jaki jest adres?",
@@ -15025,6 +16315,34 @@
             "meaning": "eleven, twelve, thirteen"
         },
         {
+            "text": "jedli",
+            "meaning": "they ate"
+        },
+        {
+            "text": "jedli",
+            "meaning": "they ate (jedli: men, or men and women; jadły: women only)"
+        },
+        {
+            "text": "jedliście",
+            "meaning": "you ate (jedliście: several people, with a man among them; jadłyście: several women)"
+        },
+        {
+            "text": "jedliście",
+            "meaning": "you ate (several people)"
+        },
+        {
+            "text": "jedliśmy",
+            "meaning": "we ate"
+        },
+        {
+            "text": "jedliśmy",
+            "meaning": "we ate (jedliśmy: with a man among us; jadłyśmy: women only)"
+        },
+        {
+            "text": "jedliśmy pizzę",
+            "meaning": "we ate pizza (with a man among us)"
+        },
+        {
             "text": "jedna",
             "meaning": "one (with a feminine noun: jedna gruszka)"
         },
@@ -15035,6 +16353,10 @@
         {
             "text": "jedno",
             "meaning": "one (with a neuter noun: jedno jabłko)"
+        },
+        {
+            "text": "jednocześnie",
+            "meaning": "at the same time"
         },
         {
             "text": "jedzenia"
@@ -15174,6 +16496,9 @@
             "meaning": "it's eight o'clock"
         },
         {
+            "text": "jest ładnie"
+        },
+        {
             "text": "jestem",
             "meaning": "I am"
         },
@@ -15245,11 +16570,18 @@
             "meaning": "I'm a hundred per cent Polish (a woman)"
         },
         {
+            "text": "jestem tu pierwszy raz",
+            "meaning": "I'm here for the first time"
+        },
+        {
             "text": "jestem tutaj",
             "meaning": "I am here"
         },
         {
             "text": "jestem tutaj?"
+        },
+        {
+            "text": "jestem w domu"
         },
         {
             "text": "jestem z Anglii, jestem Angielką",
@@ -15302,6 +16634,10 @@
         {
             "text": "jesteś głodna?",
             "meaning": "are you hungry? (to a woman)"
+        },
+        {
+            "text": "jesteś nareszcie!",
+            "meaning": "at last you are here! (to a friend)"
         },
         {
             "text": "jesteś tutaj?",
@@ -15560,6 +16896,14 @@
             "meaning": "a memory card"
         },
         {
+            "text": "kartka",
+            "meaning": "a note"
+        },
+        {
+            "text": "kartka",
+            "meaning": "a note, a piece of paper"
+        },
+        {
             "text": "kartą",
             "meaning": "by card"
         },
@@ -15675,6 +17019,10 @@
             "meaning": "when"
         },
         {
+            "text": "kiedy byłem mały, często chodziłem do kina",
+            "meaning": "when I was small, I often went to the cinema (a man)"
+        },
+        {
             "text": "kiedy jest lekcja?"
         },
         {
@@ -15683,6 +17031,14 @@
         },
         {
             "text": "kiedy jesteś zajęty?"
+        },
+        {
+            "text": "kiedyś",
+            "meaning": "ever"
+        },
+        {
+            "text": "kiedyś",
+            "meaning": "ever; once, some time (byłeś tu kiedyś?: have you ever been here?)"
         },
         {
             "text": "kiełbasa",
@@ -15702,6 +17058,10 @@
         },
         {
             "text": "kilka"
+        },
+        {
+            "text": "kilka godzin",
+            "meaning": "a few hours"
         },
         {
             "text": "kilo",
@@ -16154,6 +17514,25 @@
             "meaning": "to buy (once)"
         },
         {
+            "text": "kupiłam",
+            "meaning": "I bought"
+        },
+        {
+            "text": "kupiłam",
+            "meaning": "I bought (kupiłam: a woman says it; kupiłem: a man)"
+        },
+        {
+            "text": "kupiłam sweter",
+            "meaning": "I bought a jumper (a woman)"
+        },
+        {
+            "text": "kupiłem",
+            "meaning": "I bought (kupiłam: a woman says it; kupiłem: a man)"
+        },
+        {
+            "text": "kupiłem sweter"
+        },
+        {
             "text": "kupon",
             "meaning": "a coupon, a lottery ticket"
         },
@@ -16250,6 +17629,9 @@
         {
             "text": "kupuję sok w supermarkecie",
             "meaning": "I buy juice at the supermarket"
+        },
+        {
+            "text": "kupuję sweter"
         },
         {
             "text": "kupuję szampon w supermarkecie"
@@ -17063,6 +18445,10 @@
             "meaning": "mum is here"
         },
         {
+            "text": "mama ugotowała obiad",
+            "meaning": "mum has cooked dinner"
+        },
+        {
             "text": "mamy",
             "meaning": "we have"
         },
@@ -17114,6 +18500,22 @@
         {
             "text": "marchewkę",
             "meaning": "a carrot (after lubię, kupuję…: lubisz marchewkę?)"
+        },
+        {
+            "text": "martwiliśmy się",
+            "meaning": "we were worried (martwiliśmy się: with a man among us; martwiłyśmy się: women only)"
+        },
+        {
+            "text": "martwiliśmy się bardzo",
+            "meaning": "we were very worried (with a man among us)"
+        },
+        {
+            "text": "martwiłyśmy się",
+            "meaning": "we were worried (martwiliśmy się: with a man among us; martwiłyśmy się: women only)"
+        },
+        {
+            "text": "marzenie",
+            "meaning": "a dream, a wish (to moje marzenie: it is my dream)"
         },
         {
             "text": "masz",
@@ -17254,6 +18656,76 @@
         {
             "text": "menu",
             "meaning": "a menu (it never changes)"
+        },
+        {
+            "text": "miał",
+            "meaning": "he had"
+        },
+        {
+            "text": "miał",
+            "meaning": "he had, she had (miał: he had; miała: she had)"
+        },
+        {
+            "text": "miała",
+            "meaning": "he had, she had (miał: he had; miała: she had)"
+        },
+        {
+            "text": "miałam",
+            "meaning": "I had (miałem: a man says it; miałam: a woman)"
+        },
+        {
+            "text": "miałaś"
+        },
+        {
+            "text": "miałem",
+            "meaning": "I had"
+        },
+        {
+            "text": "miałem",
+            "meaning": "I had (miałem: a man says it; miałam: a woman)"
+        },
+        {
+            "text": "miałeś"
+        },
+        {
+            "text": "miały"
+        },
+        {
+            "text": "miałyście"
+        },
+        {
+            "text": "miałyśmy",
+            "meaning": "we had (mieliśmy: with a man among us; miałyśmy: women only)"
+        },
+        {
+            "text": "miałyśmy test",
+            "meaning": "we had a test (women only)"
+        },
+        {
+            "text": "mieli"
+        },
+        {
+            "text": "mieliście"
+        },
+        {
+            "text": "mieliśmy",
+            "meaning": "we had"
+        },
+        {
+            "text": "mieliśmy",
+            "meaning": "we had (mieliśmy: with a man among us; miałyśmy: women only)"
+        },
+        {
+            "text": "miesiąc",
+            "meaning": "a month"
+        },
+        {
+            "text": "miesiąc",
+            "meaning": "a month (miesiące: months)"
+        },
+        {
+            "text": "miesiące",
+            "meaning": "a month (miesiące: months)"
         },
         {
             "text": "mieszka",
@@ -17707,6 +19179,29 @@
             "meaning": "he must, she must; he has to, she has to"
         },
         {
+            "text": "musiałam",
+            "meaning": "I had to (musiałem: a man says it; musiałam: a woman)"
+        },
+        {
+            "text": "musiałam iść do domu",
+            "meaning": "I had to go home (a woman)"
+        },
+        {
+            "text": "musiałam wczoraj pracować",
+            "meaning": "yesterday I had to work (a woman)"
+        },
+        {
+            "text": "musiałem",
+            "meaning": "I had to"
+        },
+        {
+            "text": "musiałem",
+            "meaning": "I had to (musiałem: a man says it; musiałam: a woman)"
+        },
+        {
+            "text": "musiałem iść do domu"
+        },
+        {
             "text": "musicie"
         },
         {
@@ -17742,6 +19237,9 @@
         {
             "text": "muszę",
             "meaning": "I must, I have to"
+        },
+        {
+            "text": "muszę iść do domu"
         },
         {
             "text": "muszę kupić bilet na autobus",
@@ -17839,6 +19337,22 @@
         {
             "text": "myć się i ubierać się",
             "meaning": "to wash and to get dressed"
+        },
+        {
+            "text": "myślałam",
+            "meaning": "I thought"
+        },
+        {
+            "text": "myślałam",
+            "meaning": "I thought (myślałam: a woman says it; myślałem: a man)"
+        },
+        {
+            "text": "myślałam, że byłeś w domu",
+            "meaning": "I thought you were at home (a woman)"
+        },
+        {
+            "text": "myślałem",
+            "meaning": "I thought (myślałam: a woman says it; myślałem: a man)"
         },
         {
             "text": "myśli",
@@ -18228,6 +19742,10 @@
             "meaning": "my first name is Ewa"
         },
         {
+            "text": "na imprezie",
+            "meaning": "at a party"
+        },
+        {
             "text": "na kawę",
             "meaning": "for a coffee"
         },
@@ -18262,6 +19780,10 @@
         {
             "text": "na mecz",
             "meaning": "to a match (a football match)"
+        },
+        {
+            "text": "na meczu",
+            "meaning": "at a match"
         },
         {
             "text": "na miękko",
@@ -18304,8 +19826,28 @@
             "meaning": "the piano (after grać: gram na pianinie)"
         },
         {
+            "text": "na piechotę",
+            "meaning": "on foot"
+        },
+        {
+            "text": "na policję",
+            "meaning": "the police"
+        },
+        {
+            "text": "na policję",
+            "meaning": "the police (zadzwonić na policję: to call the police)"
+        },
+        {
             "text": "na prawo",
             "meaning": "on the right; to the right"
+        },
+        {
+            "text": "na premierę",
+            "meaning": "to a premiere"
+        },
+        {
+            "text": "na premierę",
+            "meaning": "to a premiere, to a first night"
         },
         {
             "text": "na przedstawienie",
@@ -18384,6 +19926,14 @@
             "meaning": "at the market"
         },
         {
+            "text": "na treningu",
+            "meaning": "at training"
+        },
+        {
+            "text": "na treningu",
+            "meaning": "at training, at a workout"
+        },
+        {
             "text": "na twardo",
             "meaning": "hard-boiled"
         },
@@ -18432,6 +19982,14 @@
             "meaning": "first, first of all"
         },
         {
+            "text": "najpierw wstałem, następnie umyłem zęby",
+            "meaning": "first I got up, then I brushed my teeth (a man)"
+        },
+        {
+            "text": "najpierw wstałem, potem umyłem zęby",
+            "meaning": "first I got up, then I brushed my teeth (a man)"
+        },
+        {
             "text": "najpierw zupa, potem ryba",
             "meaning": "first soup, then fish"
         },
@@ -18475,8 +20033,41 @@
             "meaning": "at last, finally"
         },
         {
+            "text": "nareszcie jesteś"
+        },
+        {
+            "text": "nareszcie jesteś tu!",
+            "meaning": "at last you are here! (to a friend)"
+        },
+        {
+            "text": "nareszcie jesteś!",
+            "meaning": "at last you are here! (to a friend)"
+        },
+        {
+            "text": "nareszcie tu jesteś!",
+            "meaning": "at last you are here! (to a friend)"
+        },
+        {
+            "text": "nareszcie! martwiliśmy się"
+        },
+        {
+            "text": "nareszcie! martwimy się"
+        },
+        {
+            "text": "nareszcie! martwiłyśmy się",
+            "meaning": "at last! we were worried (women only)"
+        },
+        {
             "text": "narodowość",
             "meaning": "a nationality"
+        },
+        {
+            "text": "następnie",
+            "meaning": "next"
+        },
+        {
+            "text": "następnie",
+            "meaning": "next, then"
         },
         {
             "text": "nasz",
@@ -18727,6 +20318,10 @@
             "meaning": "I can't today"
         },
         {
+            "text": "nie odpisywałaś!",
+            "meaning": "you didn't write back! (to a woman friend)"
+        },
+        {
             "text": "nie pamiętam",
             "meaning": "I don't remember"
         },
@@ -18763,6 +20358,10 @@
             "meaning": "I don't drink wine"
         },
         {
+            "text": "nie rozumiałeś zupełnie nic?",
+            "meaning": "didn't you understand anything at all? (to a man friend)"
+        },
+        {
             "text": "nie rozumiem",
             "meaning": "I don't understand"
         },
@@ -18793,6 +20392,10 @@
         {
             "text": "nie umiem śpiewać",
             "meaning": "I can't sing"
+        },
+        {
+            "text": "nie wiedziałem",
+            "meaning": "I didn't know (a man)"
         },
         {
             "text": "nie wiem",
@@ -19276,6 +20879,30 @@
             "meaning": "dinner is good"
         },
         {
+            "text": "obraz",
+            "meaning": "a painting"
+        },
+        {
+            "text": "obraz",
+            "meaning": "a painting, a picture (obrazy: paintings)"
+        },
+        {
+            "text": "obrazy",
+            "meaning": "a painting, a picture (obrazy: paintings)"
+        },
+        {
+            "text": "ochrona",
+            "meaning": "security"
+        },
+        {
+            "text": "ochrona",
+            "meaning": "security (the guards)"
+        },
+        {
+            "text": "ochrona chce zadzwonić na policję",
+            "meaning": "security want to call the police"
+        },
+        {
             "text": "oczywiście",
             "meaning": "of course"
         },
@@ -19317,6 +20944,30 @@
             "text": "od szóstej do siedemnastej"
         },
         {
+            "text": "odbierałaś",
+            "meaning": "you answered the phone (odbierałeś: to a man friend; odbierałaś: to a woman)"
+        },
+        {
+            "text": "odbierałeś",
+            "meaning": "you answered"
+        },
+        {
+            "text": "odbierałeś",
+            "meaning": "you answered the phone (odbierałeś: to a man friend; odbierałaś: to a woman)"
+        },
+        {
+            "text": "odpisywałaś",
+            "meaning": "you wrote back, you replied (odpisywałeś: to a man friend; odpisywałaś: to a woman)"
+        },
+        {
+            "text": "odpisywałeś",
+            "meaning": "you wrote back"
+        },
+        {
+            "text": "odpisywałeś",
+            "meaning": "you wrote back, you replied (odpisywałeś: to a man friend; odpisywałaś: to a woman)"
+        },
+        {
             "text": "odpoczywam",
             "meaning": "I rest, I relax"
         },
@@ -19331,6 +20982,10 @@
         {
             "text": "odpocząć",
             "meaning": "to rest"
+        },
+        {
+            "text": "odwiedzić",
+            "meaning": "visit (to visit, once)"
         },
         {
             "text": "oficjalnie"
@@ -19358,6 +21013,22 @@
         {
             "text": "oglądać",
             "meaning": "watch (to watch)"
+        },
+        {
+            "text": "oglądałam",
+            "meaning": "I watched"
+        },
+        {
+            "text": "oglądałam",
+            "meaning": "I watched (oglądałam: a woman says it; oglądałem: a man)"
+        },
+        {
+            "text": "oglądałam polski film",
+            "meaning": "I watched a Polish film (a woman)"
+        },
+        {
+            "text": "oglądałem",
+            "meaning": "I watched (oglądałam: a woman says it; oglądałem: a man)"
         },
         {
             "text": "ogórek",
@@ -19461,6 +21132,16 @@
         },
         {
             "text": "on + ona"
+        },
+        {
+            "text": "on / ona"
+        },
+        {
+            "text": "on był",
+            "meaning": "he was"
+        },
+        {
+            "text": "on był w kinie"
         },
         {
             "text": "on chodzi do szkoły",
@@ -19646,6 +21327,9 @@
             "meaning": "he is certainly ambitious"
         },
         {
+            "text": "on poszedł spać"
+        },
+        {
             "text": "on się teraz nudzi",
             "meaning": "he is bored now"
         },
@@ -19660,6 +21344,14 @@
             "text": "ona + ona"
         },
         {
+            "text": "ona była",
+            "meaning": "she was"
+        },
+        {
+            "text": "ona była w kinie",
+            "meaning": "she was at the cinema"
+        },
+        {
             "text": "ona chce iść na zakupy",
             "meaning": "she wants to go shopping"
         },
@@ -19668,8 +21360,15 @@
             "meaning": "she is cooking pierogi"
         },
         {
+            "text": "ona idzie spać"
+        },
+        {
             "text": "ona interesuje się modą",
             "meaning": "she is interested in fashion"
+        },
+        {
+            "text": "ona jadła sushi",
+            "meaning": "she ate sushi"
         },
         {
             "text": "ona jest babcią"
@@ -19717,6 +21416,9 @@
         },
         {
             "text": "ona jest tutaj"
+        },
+        {
+            "text": "ona jest w kinie"
         },
         {
             "text": "ona jest wesoła"
@@ -19804,6 +21506,10 @@
             "text": "ona mówi po polsku"
         },
         {
+            "text": "ona poszła spać",
+            "meaning": "she went to bed"
+        },
+        {
             "text": "ona się teraz nudzi",
             "meaning": "she is bored now"
         },
@@ -19825,6 +21531,13 @@
         {
             "text": "one",
             "meaning": "they (women)"
+        },
+        {
+            "text": "one były",
+            "meaning": "they were (women)"
+        },
+        {
+            "text": "one jadły lody"
         },
         {
             "text": "one kończą kurs"
@@ -19860,8 +21573,29 @@
             "meaning": "they (women) are here"
         },
         {
+            "text": "one wolały kawę"
+        },
+        {
+            "text": "one śmiały się głośno",
+            "meaning": "they laughed loudly (women)"
+        },
+        {
+            "text": "one śmieją się głośno"
+        },
+        {
             "text": "oni",
             "meaning": "they (men, or men and women)"
+        },
+        {
+            "text": "oni / one"
+        },
+        {
+            "text": "oni byli",
+            "meaning": "they were (men)"
+        },
+        {
+            "text": "oni byli na meczu",
+            "meaning": "they were at the match (men)"
         },
         {
             "text": "oni chodzą do szkoły",
@@ -19870,6 +21604,13 @@
         {
             "text": "oni gotują pierogi",
             "meaning": "they are cooking pierogi"
+        },
+        {
+            "text": "oni jedli lody",
+            "meaning": "they ate ice cream (men)"
+        },
+        {
+            "text": "oni jedzą lody"
         },
         {
             "text": "oni jeżdżą konno",
@@ -19900,6 +21641,10 @@
             "text": "oni mieszkają w Londynie"
         },
         {
+            "text": "oni poszli na spacer",
+            "meaning": "they went for a walk (men)"
+        },
+        {
             "text": "oni są tutaj",
             "meaning": "they (men, or men and women) are here"
         },
@@ -19910,6 +21655,16 @@
         {
             "text": "oni umieją gotować",
             "meaning": "they can cook"
+        },
+        {
+            "text": "oni woleli kawę",
+            "meaning": "they preferred coffee (men)"
+        },
+        {
+            "text": "oni wolą kawę"
+        },
+        {
+            "text": "oni śmiali się głośno"
         },
         {
             "text": "oni, one"
@@ -20056,6 +21811,14 @@
             "text": "osoby"
         },
         {
+            "text": "ostatnio",
+            "meaning": "lately"
+        },
+        {
+            "text": "ostatnio",
+            "meaning": "lately, recently"
+        },
+        {
             "text": "ostra",
             "meaning": "hot, spicy; sharp (ostry, ostra, ostre)"
         },
@@ -20154,6 +21917,10 @@
         {
             "text": "pachnie",
             "meaning": "it smells nice (to pachnie!: that smells good!)"
+        },
+        {
+            "text": "padał deszcz",
+            "meaning": "it was raining"
         },
         {
             "text": "pamiętam",
@@ -20368,6 +22135,10 @@
             "meaning": "one o'clock (jest pierwsza: it's one; o pierwszej: at one)"
         },
         {
+            "text": "pierwszy raz",
+            "meaning": "for the first time (jestem tu pierwszy raz)"
+        },
+        {
             "text": "pietruszka",
             "meaning": "parsley; parsley root"
         },
@@ -20499,6 +22270,9 @@
             "text": "pizza"
         },
         {
+            "text": "pizza to moje marzenie"
+        },
+        {
             "text": "pizzę",
             "meaning": "a pizza (after robię)"
         },
@@ -20531,8 +22305,20 @@
             "meaning": "drink (to drink)"
         },
         {
+            "text": "piękna",
+            "meaning": "beautiful (piękny, piękna, piękne)"
+        },
+        {
+            "text": "piękne",
+            "meaning": "beautiful (piękny, piękna, piękne)"
+        },
+        {
             "text": "pięknie",
             "meaning": "beautifully, lovely (pięknie pachnie: it smells lovely)"
+        },
+        {
+            "text": "piękny",
+            "meaning": "beautiful (piękny, piękna, piękne)"
         },
         {
             "text": "piętnasta",
@@ -20559,7 +22345,14 @@
             "meaning": "five"
         },
         {
+            "text": "pięć dni temu"
+        },
+        {
             "text": "pięć lat"
+        },
+        {
+            "text": "pięć lat temu",
+            "meaning": "five years ago"
         },
         {
             "text": "pięć minus jeden jest cztery",
@@ -20775,6 +22568,18 @@
             "meaning": "long, oblong (podłużny, podłużna, podłużne)"
         },
         {
+            "text": "pogoda",
+            "meaning": "the weather"
+        },
+        {
+            "text": "pogoda",
+            "meaning": "the weather (świetna pogoda: great weather)"
+        },
+        {
+            "text": "pogoda była świetna",
+            "meaning": "the weather was great"
+        },
+        {
             "text": "poleca",
             "meaning": "he recommends, she recommends (jaki pan poleca?: which one do you recommend?)"
         },
@@ -20848,6 +22653,18 @@
         {
             "text": "polską",
             "meaning": "Polish (polskiego for a man or an animal, polską for a feminine noun: after lubię, oglądam…)"
+        },
+        {
+            "text": "pomagałam",
+            "meaning": "I helped"
+        },
+        {
+            "text": "pomagałam",
+            "meaning": "I helped (pomagałam: a woman says it; pomagałem: a man)"
+        },
+        {
+            "text": "pomagałem",
+            "meaning": "I helped (pomagałam: a woman says it; pomagałem: a man)"
         },
         {
             "text": "pomarańcza",
@@ -21006,6 +22823,93 @@
             "text": "porządek"
         },
         {
+            "text": "poszedł",
+            "meaning": "he went"
+        },
+        {
+            "text": "poszedł",
+            "meaning": "he went, she went (poszedł: he went; poszła: she went)"
+        },
+        {
+            "text": "poszedłem",
+            "meaning": "I went"
+        },
+        {
+            "text": "poszedłem",
+            "meaning": "I went (poszedłem: a man says it; poszłam: a woman)"
+        },
+        {
+            "text": "poszedłem do kina"
+        },
+        {
+            "text": "poszedłeś",
+            "meaning": "you went"
+        },
+        {
+            "text": "poszedłeś",
+            "meaning": "you went (poszedłeś: to a man friend; poszłaś: to a woman)"
+        },
+        {
+            "text": "poszli",
+            "meaning": "they went"
+        },
+        {
+            "text": "poszli",
+            "meaning": "they went (poszli: men, or men and women; poszły: women only)"
+        },
+        {
+            "text": "poszli na spacer",
+            "meaning": "they went for a walk (men)"
+        },
+        {
+            "text": "poszliście",
+            "meaning": "you went (poszliście: several people, with a man among them; poszłyście: several women)"
+        },
+        {
+            "text": "poszliśmy",
+            "meaning": "we went"
+        },
+        {
+            "text": "poszliśmy",
+            "meaning": "we went (poszliśmy: with a man among us; poszłyśmy: women only)"
+        },
+        {
+            "text": "poszła",
+            "meaning": "he went, she went (poszedł: he went; poszła: she went)"
+        },
+        {
+            "text": "poszłam",
+            "meaning": "I went (poszedłem: a man says it; poszłam: a woman)"
+        },
+        {
+            "text": "poszłam do kina",
+            "meaning": "I went to the cinema (a woman)"
+        },
+        {
+            "text": "poszłam wczoraj na premierę",
+            "meaning": "yesterday I went to a premiere (a woman)"
+        },
+        {
+            "text": "poszłaś",
+            "meaning": "you went (poszedłeś: to a man friend; poszłaś: to a woman)"
+        },
+        {
+            "text": "poszły",
+            "meaning": "they went (poszli: men, or men and women; poszły: women only)"
+        },
+        {
+            "text": "poszłyście",
+            "meaning": "you went (poszliście: several people, with a man among them; poszłyście: several women)"
+        },
+        {
+            "text": "poszłyśmy",
+            "meaning": "we went (poszliśmy: with a man among us; poszłyśmy: women only)"
+        },
+        {
+            "text": "poszłyśmy na zakupy",
+            "meaning": "we went shopping (women only)"
+        },
+        {
             "text": "posłuchać",
             "meaning": "listen"
         },
@@ -21052,12 +22956,44 @@
             "text": "pozdrowienia"
         },
         {
+            "text": "poznałam",
+            "meaning": "I met"
+        },
+        {
+            "text": "poznałam",
+            "meaning": "I met, I got to know (poznałam: a woman says it; poznałem: a man)"
+        },
+        {
+            "text": "poznałem",
+            "meaning": "I met, I got to know (poznałam: a woman says it; poznałem: a man)"
+        },
+        {
             "text": "pracoholik",
             "meaning": "a workaholic"
         },
         {
             "text": "pracować",
             "meaning": "work (to work)"
+        },
+        {
+            "text": "pracowałam",
+            "meaning": "I worked (pracowałem: a man says it; pracowałam: a woman)"
+        },
+        {
+            "text": "pracowałam w sobotę",
+            "meaning": "I worked on Saturday (a woman)"
+        },
+        {
+            "text": "pracowałem",
+            "meaning": "I worked"
+        },
+        {
+            "text": "pracowałem",
+            "meaning": "I worked (pracowałem: a man says it; pracowałam: a woman)"
+        },
+        {
+            "text": "pracowałem w sobotę",
+            "meaning": "on Saturday I worked (a man)"
         },
         {
             "text": "pracowita",
@@ -21113,6 +23049,9 @@
         {
             "text": "pracuję w dzień",
             "meaning": "I work by day"
+        },
+        {
+            "text": "pracuję w sobotę"
         },
         {
             "text": "pracuję w szkole"
@@ -21183,6 +23122,22 @@
         {
             "text": "promocja",
             "meaning": "a special offer, a sale"
+        },
+        {
+            "text": "prosiłam",
+            "meaning": "I asked for something (prosiłem: a man says it; prosiłam: a woman)"
+        },
+        {
+            "text": "prosiłam ładnie",
+            "meaning": "I asked nicely (a woman)"
+        },
+        {
+            "text": "prosiłem",
+            "meaning": "I asked"
+        },
+        {
+            "text": "prosiłem",
+            "meaning": "I asked for something (prosiłem: a man says it; prosiłam: a woman)"
         },
         {
             "text": "proszą"
@@ -21344,6 +23299,10 @@
             "text": "przed"
         },
         {
+            "text": "przed komputerem",
+            "meaning": "at the computer, in front of the computer"
+        },
+        {
             "text": "przed południem",
             "meaning": "before noon"
         },
@@ -21358,6 +23317,10 @@
         {
             "text": "przedstawić się",
             "meaning": "introduce yourself (proszę się przedstawić: please introduce yourself)"
+        },
+        {
+            "text": "przedwczoraj",
+            "meaning": "the day before yesterday"
         },
         {
             "text": "przeliterować",
@@ -21741,6 +23704,9 @@
             "meaning": "to do"
         },
         {
+            "text": "robić zdjęcia"
+        },
+        {
             "text": "robię",
             "meaning": "I do"
         },
@@ -21751,6 +23717,14 @@
         {
             "text": "robię pizzę",
             "meaning": "I'm making a pizza"
+        },
+        {
+            "text": "robiłaś",
+            "meaning": "you did (robiłaś: to a woman friend; robiłeś: to a man)"
+        },
+        {
+            "text": "robiłeś",
+            "meaning": "you did (robiłaś: to a woman friend; robiłeś: to a man)"
         },
         {
             "text": "rodzeństwo",
@@ -21787,6 +23761,9 @@
         {
             "text": "rok",
             "meaning": "a year; one year"
+        },
+        {
+            "text": "rok temu"
         },
         {
             "text": "roku"
@@ -21834,6 +23811,14 @@
         {
             "text": "rozmawiam",
             "meaning": "I talk, I have a chat"
+        },
+        {
+            "text": "rozumiałaś",
+            "meaning": "you understood (rozumiałaś: to a woman friend; rozumiałeś: to a man)"
+        },
+        {
+            "text": "rozumiałeś",
+            "meaning": "you understood (rozumiałaś: to a woman friend; rozumiałeś: to a man)"
         },
         {
             "text": "rozumiem",
@@ -22148,6 +24133,22 @@
             "text": "siedemset sześćdziesiąt osiem"
         },
         {
+            "text": "siedziałam",
+            "meaning": "I sat, I was sitting (siedziałem: a man says it; siedziałam: a woman)"
+        },
+        {
+            "text": "siedziałam przed komputerem",
+            "meaning": "I was sitting at the computer (a woman)"
+        },
+        {
+            "text": "siedziałem",
+            "meaning": "I sat, I was sitting (siedziałem: a man says it; siedziałam: a woman)"
+        },
+        {
+            "text": "siedziałem",
+            "meaning": "I was sitting"
+        },
+        {
             "text": "siostra",
             "meaning": "a sister"
         },
@@ -22343,12 +24344,36 @@
             "meaning": "to sleep"
         },
         {
+            "text": "spałam",
+            "meaning": "I slept"
+        },
+        {
+            "text": "spałam",
+            "meaning": "I slept (spałam: a woman says it; spałem: a man)"
+        },
+        {
+            "text": "spałem",
+            "meaning": "I slept (spałam: a woman says it; spałem: a man)"
+        },
+        {
             "text": "spektakl",
             "meaning": "a show"
         },
         {
             "text": "spektakl",
             "meaning": "a show, a performance (in a theatre)"
+        },
+        {
+            "text": "spokojna",
+            "meaning": "calm, quiet (spokojny, spokojna, spokojne)"
+        },
+        {
+            "text": "spokojne",
+            "meaning": "calm, quiet (spokojny, spokojna, spokojne)"
+        },
+        {
+            "text": "spokojny",
+            "meaning": "calm, quiet (spokojny, spokojna, spokojne)"
         },
         {
             "text": "spontaniczna",
@@ -22489,6 +24514,18 @@
         {
             "text": "sprzątam",
             "meaning": "I clean, I tidy up"
+        },
+        {
+            "text": "spędziłam",
+            "meaning": "I spent"
+        },
+        {
+            "text": "spędziłam",
+            "meaning": "I spent time (spędziłam: a woman says it; spędziłem: a man)"
+        },
+        {
+            "text": "spędziłem",
+            "meaning": "I spent time (spędziłam: a woman says it; spędziłem: a man)"
         },
         {
             "text": "stara",
@@ -22637,6 +24674,17 @@
             "text": "surówkę"
         },
         {
+            "text": "sushi",
+            "meaning": "sushi"
+        },
+        {
+            "text": "sushi to moje marzenie",
+            "meaning": "sushi is my dream"
+        },
+        {
+            "text": "sushi to moje zdjęcie"
+        },
+        {
             "text": "suszona",
             "meaning": "dried (suszony, suszona, suszone)"
         },
@@ -22655,6 +24703,14 @@
         {
             "text": "suszony",
             "meaning": "dried (suszony, suszona, suszone)"
+        },
+        {
+            "text": "sweter",
+            "meaning": "a jumper"
+        },
+        {
+            "text": "sweter",
+            "meaning": "a jumper, a sweater"
         },
         {
             "text": "sympatyczna",
@@ -22739,6 +24795,41 @@
         {
             "text": "szczupły",
             "meaning": "slim (szczupły, szczupła, szczupłe)"
+        },
+        {
+            "text": "szczęście",
+            "meaning": "happiness"
+        },
+        {
+            "text": "szczęście",
+            "meaning": "happiness; luck (na szczęście: luckily)"
+        },
+        {
+            "text": "szczęśliwa",
+            "meaning": "happy (szczęśliwy, szczęśliwa, szczęśliwe)"
+        },
+        {
+            "text": "szczęśliwe",
+            "meaning": "happy (szczęśliwy, szczęśliwa, szczęśliwe)"
+        },
+        {
+            "text": "szczęśliwy",
+            "meaning": "happy"
+        },
+        {
+            "text": "szczęśliwy",
+            "meaning": "happy (szczęśliwy, szczęśliwa, szczęśliwe)"
+        },
+        {
+            "text": "szedłem",
+            "meaning": "I was going, I was walking (szedłem: a man says it; szłam: a woman)"
+        },
+        {
+            "text": "szedłem",
+            "meaning": "I was walking"
+        },
+        {
+            "text": "szedłem na piechotę"
         },
         {
             "text": "szef",
@@ -22902,6 +24993,14 @@
         {
             "text": "szóstej",
             "meaning": "six o'clock (jest szósta; o szóstej: at six)"
+        },
+        {
+            "text": "szłam",
+            "meaning": "I was going, I was walking (szedłem: a man says it; szłam: a woman)"
+        },
+        {
+            "text": "szłam na piechotę",
+            "meaning": "I was walking, on foot (a woman)"
         },
         {
             "text": "sól",
@@ -23319,6 +25418,22 @@
             "meaning": "to dance"
         },
         {
+            "text": "tańczyłam",
+            "meaning": "I danced"
+        },
+        {
+            "text": "tańczyłam",
+            "meaning": "I danced (tańczyłam: a woman says it; tańczyłem: a man)"
+        },
+        {
+            "text": "tańczyłem",
+            "meaning": "I danced (tańczyłam: a woman says it; tańczyłem: a man)"
+        },
+        {
+            "text": "tańczyłem w klubie w sobotę",
+            "meaning": "on Saturday I danced at a club (a man)"
+        },
+        {
             "text": "tańczą"
         },
         {
@@ -23362,11 +25477,19 @@
             "meaning": "a text and a test"
         },
         {
+            "text": "telefonu",
+            "meaning": "the phone (after nie odbierałeś: nie odbierałeś telefonu)"
+        },
+        {
             "text": "telewizja"
         },
         {
             "text": "telewizję",
             "meaning": "TV, television (after oglądać: oglądać telewizję)"
+        },
+        {
+            "text": "temu",
+            "meaning": "ago (tydzień temu: a week ago)"
         },
         {
             "text": "ten",
@@ -23582,6 +25705,10 @@
             "meaning": "it is a very old theatre"
         },
         {
+            "text": "to był spokojny weekend",
+            "meaning": "it was a quiet weekend"
+        },
+        {
             "text": "to ciekawe słowo",
             "meaning": "it is an interesting word"
         },
@@ -23766,6 +25893,9 @@
             "meaning": "it is a map"
         },
         {
+            "text": "to jest marzenie!"
+        },
+        {
             "text": "to jest mianownik"
         },
         {
@@ -23918,6 +26048,10 @@
             "meaning": "it is a table"
         },
         {
+            "text": "to jest szczęście!",
+            "meaning": "that is happiness!"
+        },
+        {
             "text": "to jest szkoła",
             "meaning": "this is a school"
         },
@@ -23963,6 +26097,9 @@
         },
         {
             "text": "to jest widelec, a to jest łyżka"
+        },
+        {
+            "text": "to jest wstyd!"
         },
         {
             "text": "to jest zeszyt",
@@ -24046,6 +26183,10 @@
         {
             "text": "to moje hobby",
             "meaning": "it's my hobby"
+        },
+        {
+            "text": "to moje marzenie",
+            "meaning": "it is my dream"
         },
         {
             "text": "to moje pytanie",
@@ -24323,6 +26464,9 @@
             "meaning": "three"
         },
         {
+            "text": "trzy lata temu"
+        },
+        {
             "text": "trzy minus dwa to jeden"
         },
         {
@@ -24588,6 +26732,10 @@
             "meaning": "a week"
         },
         {
+            "text": "tydzień temu",
+            "meaning": "a week ago"
+        },
+        {
             "text": "tylko",
             "meaning": "only"
         },
@@ -24747,6 +26895,14 @@
             "meaning": "I am learning Polish to study in Poland"
         },
         {
+            "text": "ugotował",
+            "meaning": "she cooked, he cooked (ugotowała: she cooked; ugotował: he cooked)"
+        },
+        {
+            "text": "ugotowała",
+            "meaning": "she cooked, he cooked (ugotowała: she cooked; ugotował: he cooked)"
+        },
+        {
             "text": "ulgowa",
             "meaning": "reduced, concession (bilet ulgowy: a reduced ticket) (ulgowy, ulgowa, ulgowe)"
         },
@@ -24861,6 +27017,14 @@
         {
             "text": "umiesz tańczyć?",
             "meaning": "can you dance? (one friend)"
+        },
+        {
+            "text": "umyłam",
+            "meaning": "I washed (umyłam: a woman says it; umyłem: a man; umyłam zęby: I brushed my teeth)"
+        },
+        {
+            "text": "umyłem",
+            "meaning": "I washed (umyłam: a woman says it; umyłem: a man; umyłam zęby: I brushed my teeth)"
         },
         {
             "text": "uniwersalnie"
@@ -25036,6 +27200,20 @@
             "meaning": "at the mall (w galerii handlowej)"
         },
         {
+            "text": "w górach",
+            "meaning": "in the mountains"
+        },
+        {
+            "text": "w górach nie mam zasięgu"
+        },
+        {
+            "text": "w górach nie miałam zasięgu",
+            "meaning": "in the mountains I had no signal (a woman)"
+        },
+        {
+            "text": "w górach nie miałem zasięgu"
+        },
+        {
             "text": "w karty",
             "meaning": "cards"
         },
@@ -25044,8 +27222,16 @@
             "meaning": "cards (after grać: gram w karty)"
         },
         {
+            "text": "w kinie",
+            "meaning": "at the cinema"
+        },
+        {
             "text": "w klubie",
             "meaning": "at a club"
+        },
+        {
+            "text": "w muzeum",
+            "meaning": "at the museum, in the museum"
         },
         {
             "text": "w niedzielę",
@@ -25054,6 +27240,10 @@
         {
             "text": "w niedzielę odpoczywam",
             "meaning": "on Sunday I rest"
+        },
+        {
+            "text": "w niedzielę wróciłem do domu",
+            "meaning": "I came back home on Sunday (a man)"
         },
         {
             "text": "w nocy",
@@ -25112,8 +27302,16 @@
             "meaning": "on Saturday and on Sunday"
         },
         {
+            "text": "w sobotę pracowałem",
+            "meaning": "on Saturday I worked (a man)"
+        },
+        {
             "text": "w sobotę sprzątam",
             "meaning": "on Saturday I tidy up"
+        },
+        {
+            "text": "w sobotę tańczyłem w klubie",
+            "meaning": "on Saturday I danced at a club (a man)"
         },
         {
             "text": "w sobotę w galerii",
@@ -25191,6 +27389,26 @@
             "meaning": "at the weekend I do the shopping"
         },
         {
+            "text": "w zeszłym roku",
+            "meaning": "last year"
+        },
+        {
+            "text": "w zeszłym roku byłam w Polsce",
+            "meaning": "last year I was in Poland (a woman)"
+        },
+        {
+            "text": "w zeszłym tygodniu",
+            "meaning": "last week"
+        },
+        {
+            "text": "w zeszłą sobotę",
+            "meaning": "last Saturday"
+        },
+        {
+            "text": "w zeszłą sobotę byłam na imprezie",
+            "meaning": "last Saturday I was at a party (a woman)"
+        },
+        {
             "text": "w środę",
             "meaning": "Wednesday (w środę: on Wednesday)"
         },
@@ -25256,11 +27474,38 @@
             "meaning": "early"
         },
         {
+            "text": "wczoraj",
+            "meaning": "yesterday"
+        },
+        {
+            "text": "wczoraj byłam w kinie",
+            "meaning": "yesterday I was at the cinema (a woman)"
+        },
+        {
+            "text": "wczoraj miałam test",
+            "meaning": "yesterday I had a test (a woman)"
+        },
+        {
+            "text": "wczoraj miałem test"
+        },
+        {
+            "text": "wczoraj musiałam pracować",
+            "meaning": "yesterday I had to work (a woman)"
+        },
+        {
+            "text": "wczoraj poszłam na premierę",
+            "meaning": "yesterday I went to a premiere (a woman)"
+        },
+        {
             "text": "we"
         },
         {
             "text": "we wtorek",
             "meaning": "Tuesday (we wtorek: on Tuesday)"
+        },
+        {
+            "text": "weekend",
+            "meaning": "a weekend"
         },
         {
             "text": "wegetariańska",
@@ -25306,6 +27551,25 @@
             "text": "widzenia"
         },
         {
+            "text": "widziałam",
+            "meaning": "I saw (widziałem: a man says it; widziałam: a woman)"
+        },
+        {
+            "text": "widziałem",
+            "meaning": "I saw"
+        },
+        {
+            "text": "widziałem",
+            "meaning": "I saw (widziałem: a man says it; widziałam: a woman)"
+        },
+        {
+            "text": "widziałem piękny obraz",
+            "meaning": "I saw a beautiful painting (a man)"
+        },
+        {
+            "text": "widzę"
+        },
+        {
             "text": "wieczorem",
             "meaning": "in the evening"
         },
@@ -25333,6 +27597,18 @@
         },
         {
             "text": "wieczorem wracam do domu"
+        },
+        {
+            "text": "wiedziałam",
+            "meaning": "I knew (wiedziałem: a man says it; wiedziałam: a woman)"
+        },
+        {
+            "text": "wiedziałem",
+            "meaning": "I knew"
+        },
+        {
+            "text": "wiedziałem",
+            "meaning": "I knew (wiedziałem: a man says it; wiedziałam: a woman)"
         },
         {
             "text": "wiem",
@@ -25473,6 +27749,18 @@
         {
             "text": "wodę",
             "meaning": "water (after proszę, mam…: proszę wodę)"
+        },
+        {
+            "text": "wolały",
+            "meaning": "they preferred (woleli: men, or men and women; wolały: women only)"
+        },
+        {
+            "text": "woleli",
+            "meaning": "they preferred"
+        },
+        {
+            "text": "woleli",
+            "meaning": "they preferred (woleli: men, or men and women; wolały: women only)"
         },
         {
             "text": "woli"
@@ -25630,6 +27918,9 @@
             "meaning": "I come back, I go back"
         },
         {
+            "text": "wracam w niedzielę rano"
+        },
+        {
             "text": "wracamy"
         },
         {
@@ -25637,6 +27928,41 @@
         },
         {
             "text": "wracać"
+        },
+        {
+            "text": "wróciłam",
+            "meaning": "I came back"
+        },
+        {
+            "text": "wróciłam",
+            "meaning": "I came back (wróciłam: a woman says it; wróciłem: a man)"
+        },
+        {
+            "text": "wróciłam do domu rano",
+            "meaning": "I came back home in the morning (a woman)"
+        },
+        {
+            "text": "wróciłam w niedzielę rano"
+        },
+        {
+            "text": "wróciłem",
+            "meaning": "I came back (wróciłam: a woman says it; wróciłem: a man)"
+        },
+        {
+            "text": "wróciłem do domu na piechotę",
+            "meaning": "I came back home on foot (a man)"
+        },
+        {
+            "text": "wróciłem do domu w niedzielę",
+            "meaning": "I came back home on Sunday (a man)"
+        },
+        {
+            "text": "wróciłem w niedzielę rano",
+            "meaning": "I came back on Sunday morning (a man)"
+        },
+        {
+            "text": "wspaniale",
+            "meaning": "wonderful, wonderfully (było wspaniale!: it was wonderful!)"
         },
         {
             "text": "wstaje"
@@ -25692,12 +28018,40 @@
             "meaning": "to get up early"
         },
         {
+            "text": "wstałam",
+            "meaning": "I got up (wstałam: a woman says it; wstałem: a man)"
+        },
+        {
+            "text": "wstałem",
+            "meaning": "I got up (wstałam: a woman says it; wstałem: a man)"
+        },
+        {
+            "text": "wstyd",
+            "meaning": "shame"
+        },
+        {
+            "text": "wstyd",
+            "meaning": "shame (ale wstyd!: how embarrassing!)"
+        },
+        {
             "text": "wszyscy",
             "meaning": "everybody, all (of people)"
         },
         {
+            "text": "wszyscy głośno się śmiali",
+            "meaning": "everyone laughed loudly"
+        },
+        {
+            "text": "wszyscy się głośno śmiali",
+            "meaning": "everyone laughed loudly"
+        },
+        {
             "text": "wszyscy są w domu",
             "meaning": "everybody is at home"
+        },
+        {
+            "text": "wszyscy śmiali się głośno",
+            "meaning": "everyone laughed loudly"
         },
         {
             "text": "wszystko",
@@ -25865,6 +28219,18 @@
         {
             "text": "wędzony łosoś",
             "meaning": "smoked salmon"
+        },
+        {
+            "text": "właśnie",
+            "meaning": "just, exactly"
+        },
+        {
+            "text": "właśnie",
+            "meaning": "just, exactly (no właśnie!: exactly!)"
+        },
+        {
+            "text": "właśnie wróciłam",
+            "meaning": "I've just come back (a woman)"
         },
         {
             "text": "włosku"
@@ -26285,6 +28651,10 @@
             "meaning": "I start, I begin (zaczynam pracę: I start work)"
         },
         {
+            "text": "zadzwonić",
+            "meaning": "call, phone, once (zadzwonić na policję: to call the police)"
+        },
+        {
             "text": "zajęcia",
             "meaning": "classes"
         },
@@ -26465,6 +28835,18 @@
         {
             "text": "zaraz",
             "meaning": "in a moment, right away"
+        },
+        {
+            "text": "zasięg",
+            "meaning": "phone signal"
+        },
+        {
+            "text": "zasięg",
+            "meaning": "signal, phone coverage (nie miałem zasięgu: I had no signal)"
+        },
+        {
+            "text": "zasięgu",
+            "meaning": "signal, phone coverage (nie miałem zasięgu: I had no signal)"
         },
         {
             "text": "zawsze",
@@ -26664,6 +29046,14 @@
             "text": "zimną kawę"
         },
         {
+            "text": "zjadłam",
+            "meaning": "I ate up, I had (zjadłam: a woman says it; zjadłem: a man)"
+        },
+        {
+            "text": "zjadłem",
+            "meaning": "I ate up, I had (zjadłam: a woman says it; zjadłem: a man)"
+        },
+        {
             "text": "zmęczona",
             "meaning": "tired (zmęczony, zmęczona, zmęczone)"
         },
@@ -26738,6 +29128,17 @@
             "meaning": "do you know this TV series? (one friend)"
         },
         {
+            "text": "zrobić",
+            "meaning": "do, make (once; zrobić zdjęcie: to take a photo)"
+        },
+        {
+            "text": "zrobić zakupy"
+        },
+        {
+            "text": "zrobić zdjęcie",
+            "meaning": "to take a photo"
+        },
+        {
             "text": "zupa",
             "meaning": "soup"
         },
@@ -26790,6 +29191,10 @@
         },
         {
             "text": "zupa z oliwkami"
+        },
+        {
+            "text": "zupełnie nic",
+            "meaning": "nothing at all"
         },
         {
             "text": "zupę",
@@ -26904,6 +29309,14 @@
             "meaning": "pretty (ładny, ładna, ładne)"
         },
         {
+            "text": "ładnie",
+            "meaning": "nicely; nice (było ładnie: the weather was nice)"
+        },
+        {
+            "text": "ładnie prosiłam",
+            "meaning": "I asked nicely (a woman)"
+        },
+        {
             "text": "ładny",
             "meaning": "pretty"
         },
@@ -27007,12 +29420,33 @@
             "meaning": "Great! I'm a doctor and I'm interested in photography."
         },
         {
+            "text": "Świetnie! Kupiłam sweter."
+        },
+        {
             "text": "Świetnie! Na razie, do jutra!",
             "meaning": "Great! Bye for now, see you tomorrow!"
         },
         {
             "text": "Świetnie! Pa, do jutra!",
             "meaning": "Great! Bye, see you tomorrow!"
+        },
+        {
+            "text": "Świetnie! W sobotę byłam w kinie.",
+            "meaning": "Great! On Saturday I was at the cinema (a woman says it)."
+        },
+        {
+            "text": "Świetnie! W sobotę byłem w kinie.",
+            "meaning": "Great! On Saturday I was at the cinema."
+        },
+        {
+            "text": "Świetnie! W sobotę byłyśmy na imprezie."
+        },
+        {
+            "text": "Świetnie, ale jesteśmy zmęczone."
+        },
+        {
+            "text": "Świetnie, w sobotę byłem w kinie.",
+            "meaning": "Great! On Saturday I was at the cinema."
         },
         {
             "text": "Świetny pomysł! Gdzie się spotkamy?"
@@ -27060,6 +29494,14 @@
         },
         {
             "text": "śliwkę"
+        },
+        {
+            "text": "śmiali się",
+            "meaning": "they laughed (śmiali się: men, or men and women; śmiały się: women only)"
+        },
+        {
+            "text": "śmiały się",
+            "meaning": "they laughed (śmiali się: men, or men and women; śmiały się: women only)"
         },
         {
             "text": "śmiesznie"
@@ -27322,6 +29764,10 @@
             "text": "żółty ser"
         },
         {
+            "text": "„Cześć, Mami! Gdzie …?”",
+            "meaning": "\"Hi, Mami! Where were you?\" (you were, to a woman)"
+        },
+        {
             "text": "„Dziękuję za …”",
             "meaning": "\"Thank you for the…\" (invitation)"
         },
@@ -27336,6 +29782,14 @@
         {
             "text": "„O … rano jeszcze śpię”.",
             "meaning": "\"At … in the morning I am still asleep.\" (a time)"
+        },
+        {
+            "text": "„Prosiłem o … telefonu”",
+            "meaning": "\"I asked for her phone…\" (number)"
+        },
+        {
+            "text": "„To był … weekend”",
+            "meaning": "\"It was a … weekend\" (quiet)"
         },
         {
             "text": "„To nie wasza …”",
@@ -27982,6 +30436,30 @@
         {
             "id": "chat-weekend-plans/t5/2",
             "hash": "7633a3deb7e7"
+        },
+        {
+            "id": "chat-weekend/t1/2",
+            "hash": "f20e63ca0139"
+        },
+        {
+            "id": "chat-weekend/t2/2",
+            "hash": "8dde0bbff16a"
+        },
+        {
+            "id": "chat-weekend/t3/2",
+            "hash": "0a3c3b428c53"
+        },
+        {
+            "id": "chat-weekend/t4/2",
+            "hash": "7718a85b9121"
+        },
+        {
+            "id": "chat-weekend/t5/2",
+            "hash": "8acc365b618b"
+        },
+        {
+            "id": "chat-weekend/t5/3",
+            "hash": "0c3a37a8230d"
         },
         {
             "id": "chat-your-details/t1/2",
@@ -28816,6 +31294,86 @@
         {
             "id": "kpk1-l12-g-t01",
             "hash": "6b37855b62da"
+        },
+        {
+            "id": "kpk1-l13-a1-t01",
+            "hash": "ba01acafb12a"
+        },
+        {
+            "id": "kpk1-l13-a2-t01",
+            "hash": "72fa210ca894"
+        },
+        {
+            "id": "kpk1-l13-a3-t01",
+            "hash": "6c68752cc22a"
+        },
+        {
+            "id": "kpk1-l13-a4-t01",
+            "hash": "244031cd2557"
+        },
+        {
+            "id": "kpk1-l13-a4-t02",
+            "hash": "dc1110fa69ca"
+        },
+        {
+            "id": "kpk1-l13-a5-t01",
+            "hash": "5b2088f54123"
+        },
+        {
+            "id": "kpk1-l13-a5-t02",
+            "hash": "d23b512dd702"
+        },
+        {
+            "id": "kpk1-l13-a6-t01",
+            "hash": "7d85cfbca39a"
+        },
+        {
+            "id": "kpk1-l13-b1-t01",
+            "hash": "f8ad4e4831da"
+        },
+        {
+            "id": "kpk1-l13-b2-t01",
+            "hash": "17a65d38db84"
+        },
+        {
+            "id": "kpk1-l13-b2-t02",
+            "hash": "a6d09224a3ab"
+        },
+        {
+            "id": "kpk1-l13-b3-t01",
+            "hash": "92471a72967c"
+        },
+        {
+            "id": "kpk1-l13-c1-t01",
+            "hash": "7ccedf45a991"
+        },
+        {
+            "id": "kpk1-l13-c1-t02",
+            "hash": "68567276279d"
+        },
+        {
+            "id": "kpk1-l13-c2-t01",
+            "hash": "aa9c7dfd79c7"
+        },
+        {
+            "id": "kpk1-l13-c2-t02",
+            "hash": "e2de630799b4"
+        },
+        {
+            "id": "kpk1-l13-c3-t01",
+            "hash": "af309779d0d3"
+        },
+        {
+            "id": "kpk1-l13-c4-t01",
+            "hash": "64d2fe37222b"
+        },
+        {
+            "id": "kpk1-l13-g-t01",
+            "hash": "6dfd91016a56"
+        },
+        {
+            "id": "kpk1-l13-g-t02",
+            "hash": "dda306146f8e"
         }
     ]
 }

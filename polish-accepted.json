@@ -67,6 +67,18 @@
     {
       "problem": "grammar: SIE_SENT_END: myć się i ubierać się",
       "reason": "False alarm. The rule is about a finite verb whose \"się\" is left at the very end of a sentence for no reason; this is a pair of infinitives listed as verbs to learn (\"to wash and to get dressed\"), and the reflexive infinitive \"ubierać się\" is its dictionary form."
+    },
+    {
+      "problem": "dictionary: łem",
+      "reason": "Not a word and not meant as one. Chapter 13's Tip on the past tense names the endings -łem (a man) and -łam (a woman) that are added after the infinitive loses its -ć; the dictionary pass reads the ending -łem as a word."
+    },
+    {
+      "problem": "grammar: BOWIEM_ZAS: ale wstyd!",
+      "reason": "False alarm. In the exclamation \"Ale wstyd!\" (how embarrassing!) ale is not the conjunction \"but\" but the intensifying particle of exclamations (ale zimno!, ale super!), which always stands first."
+    },
+    {
+      "problem": "grammar: BOWIEM_ZAS: Ludzie śmiali się głośno. Ale wstyd!",
+      "reason": "False alarm. \"Ale wstyd!\" is an exclamation (how embarrassing!) in which ale is the intensifying particle that always stands first, not the conjunction \"but\"."
     }
   ]
 }
