@@ -86,6 +86,8 @@ data class Course(
     val forecasts: List<Forecast> = emptyList(),
     /** The Items Word search hides, in the content's order. */
     val wordSearch: List<String> = emptyList(),
+    /** The table of Pronoun grid, or null where the content has none. */
+    val pronounGrid: PronounTable? = null,
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

@@ -91,6 +91,7 @@ import com.polisheasy.engine.PackagingRound
 import com.polisheasy.engine.HowManyRound
 import com.polisheasy.engine.ForecasterRound
 import com.polisheasy.engine.WordSearchRound
+import com.polisheasy.engine.PronounGridRound
 import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.SaidTime
 import com.polisheasy.engine.TreeRound
@@ -1104,6 +1105,53 @@ class ScreenshotsTest {
             screen.waitForIdle()
             shot(name)
         }
+    }
+
+    @Test
+    fun `Pronoun grid over the real course in the light theme`() = chapter17Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Pronoun grid over the real course in the dark theme`() = chapter17Games("dark")
+
+    @Test
+    fun `Pronoun grid over the real course at the largest font size`() = atTheLargestFontSize { chapter17Games("large") }
+
+    /**
+     * Chapter 17's Game: Pronoun grid's setup, the table with its first square asked, squares
+     * filled right, a wrong answer, and the result.
+     */
+    private fun chapter17Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun grid() = (viewModel?.screen as Screen.Round).round as PronounGridRound
+
+        fun move(round: com.polisheasy.engine.Round) {
+            screen.runOnUiThread { checkNotNull(viewModel).move(round) }
+            screen.waitForIdle()
+        }
+
+        fun PronounGridRound.right(): PronounGridRound = checkNotNull(question).let { choose(it.offered.indexOf(it.form)).next() }
+
+        openRealPractice()
+        openGame(R.string.game_pronoun_grid)
+        shot("356-pronoun-grid-setup")
+        tap(R.string.setup_play)
+        shot("357-pronoun-grid-asked")
+        move(grid().right().right().right())
+        shot("358-pronoun-grid-filled")
+        val question = checkNotNull(grid().question)
+        move(grid().choose(question.offered.indexOfFirst { it != question.form }))
+        shot("359-pronoun-grid-wrong")
+        tap(R.string.action_continue)
+        screen.mainClock.autoAdvance = false
+        var round = grid()
+        while (round.question != null) round = round.right()
+        move(round)
+        screen.mainClock.advanceTimeBy(2_000)
+        screen.mainClock.autoAdvance = true
+        screen.waitForIdle()
+        shot("360-pronoun-grid-result")
     }
 
     @Test

@@ -91,7 +91,17 @@ internal data class PracticeFile(
     val forecasts: List<ForecastFile> = emptyList(),
     /** The Items Word search hides, each one word. */
     val wordSearch: List<String> = emptyList(),
+    /** The table of Pronoun grid. */
+    val pronounGrid: PronounGridFile? = null,
 )
+
+/** Pronoun grid's table: the [persons] down its side, as Items, and its [columns]. */
+@Serializable
+internal data class PronounGridFile(val persons: List<String>, val columns: List<PronounColumnFile>)
+
+/** One column of Pronoun grid: its stable [id], the Polish [question] at its head, what that means, and the Item for each person, null where there is none. */
+@Serializable
+internal data class PronounColumnFile(val id: String, val question: String, val meaning: Localized, val cells: List<String?>)
 
 /** One forecast of Forecaster: its [text], what it means, the [weather] signs it names (Items with a Picture), its temperature in [degrees] Celsius, and the Items it uses. */
 @Serializable
@@ -375,6 +385,13 @@ internal class ReadContent(
             forecasts = practice?.forecasts.orEmpty().map { Forecast(it.text, it.meaning, it.weather.distinct(), it.degrees, it.items.distinct()) }
                 .filter { it.weather.isNotEmpty() }.distinctBy { it.text },
             wordSearch = practice?.wordSearch.orEmpty().distinct(),
+            pronounGrid = practice?.pronounGrid?.let { grid ->
+                PronounTable(
+                    grid.persons,
+                    grid.columns.filter { it.cells.size == grid.persons.size }.distinctBy { it.id }
+                        .map { PronounColumn(it.id, it.question, it.meaning, it.cells) },
+                )
+            },
         )
     }
 
@@ -587,6 +604,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         problems += countingProblems(file, practice.counting, course, content.itemsComplete)
         problems += forecastProblems(file, practice.forecasts, course, content.itemsComplete)
         problems += wordSearchProblems(file, practice.wordSearch, course, content.itemsComplete)
+        practice.pronounGrid?.let { grid -> problems += pronounGridProblems(file, grid, course, content.itemsComplete) }
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -1274,6 +1292,29 @@ private fun forecastProblems(file: String, forecasts: List<ForecastFile>, course
         problems += ContentProblem(file, null, "The forecasts name ${signs.size} weather signs, fewer than the ${Forecaster.BOARD} on the board")
     }
     forecasts.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The forecast \"$text\" is listed more than once") }
+    return problems
+}
+
+/** What is wrong with Pronoun grid: persons and forms that are defined Items, a square for each person in every column, a question; no column, person or form twice. */
+private fun pronounGridProblems(file: String, grid: PronounGridFile, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    if (grid.persons.isEmpty()) problems += ContentProblem(file, null, "Pronoun grid has no persons")
+    if (grid.columns.isEmpty()) problems += ContentProblem(file, null, "Pronoun grid has no columns")
+    grid.persons.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+        problems += ContentProblem(file, id, "Pronoun grid's person $id is not defined")
+    }
+    grid.persons.repeated().forEach { id -> problems += ContentProblem(file, id, "Pronoun grid lists person $id more than once") }
+    grid.columns.forEach { column ->
+        if (column.question.isBlank()) problems += ContentProblem(file, null, "Pronoun grid's column ${column.id} has no question")
+        if (column.cells.size != grid.persons.size) {
+            problems += ContentProblem(file, null, "Pronoun grid's column ${column.id} has ${column.cells.size} squares for ${grid.persons.size} persons")
+        }
+        column.cells.filterNotNull().filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "Pronoun grid's column ${column.id} names Item $id, which is not defined")
+        }
+    }
+    grid.columns.map { it.id }.repeated().forEach { id -> problems += ContentProblem(file, null, "Pronoun grid lists column $id more than once") }
+    grid.columns.flatMap { it.cells.filterNotNull() }.repeated().forEach { id -> problems += ContentProblem(file, id, "Pronoun grid lists Item $id more than once") }
     return problems
 }
 

@@ -3485,5 +3485,52 @@
       "items": ["jutro", "bedzie-wiac-wiatr", "ale", "bedzie-swiecic-slonce", "bedzie", "szesc", "stopien"]
     }
   ],
-  "wordSearch": ["styczen", "luty", "marzec", "kwiecien", "maj", "czerwiec", "lipiec", "sierpien", "wrzesien", "pazdziernik", "listopad", "grudzien", "wiosna", "lato", "jesien", "zima"]
+  "wordSearch": ["styczen", "luty", "marzec", "kwiecien", "maj", "czerwiec", "lipiec", "sierpien", "wrzesien", "pazdziernik", "listopad", "grudzien", "wiosna", "lato", "jesien", "zima"],
+  "pronounGrid": {
+    "persons": ["ja", "ty", "on", "ona", "my", "wy", "oni"],
+    "columns": [
+      {
+        "id": "komu",
+        "question": "komu?",
+        "meaning": { "en": "to whom? (podoba mi się: I like it)" },
+        "cells": ["mi", "ci", "mu", "jej-dat", "nam", "wam", "im"]
+      },
+      {
+        "id": "kogo",
+        "question": "kogo?",
+        "meaning": { "en": "whom? (kocham go: I love him)" },
+        "cells": ["mnie", "ciebie", "go", "ja-acc", "nas", "was", "ich-acc"]
+      },
+      {
+        "id": "o-kim",
+        "question": "o kim?",
+        "meaning": { "en": "about whom?" },
+        "cells": ["o-mnie", "o-tobie", "o-nim", "o-niej", "o-nas", "o-was", "o-nich"]
+      },
+      {
+        "id": "z-kim",
+        "question": "z kim?",
+        "meaning": { "en": "with whom?" },
+        "cells": ["ze-mna", "z-toba", "z-nim", "z-nia", "z-nami", "z-wami", "z-nimi"]
+      },
+      {
+        "id": "dla-kogo",
+        "question": "dla kogo?",
+        "meaning": { "en": "for whom? (a present for someone)" },
+        "cells": ["dla-mnie", "dla-ciebie", "dla-niego", "dla-niej", null, null, null]
+      },
+      {
+        "id": "do-kogo",
+        "question": "do kogo?",
+        "meaning": { "en": "to whom? (to someone's place: idę do niej)" },
+        "cells": ["do-mnie", "do-ciebie", "do-niego", "do-niej", "do-nas", "do-was", "do-nich"]
+      },
+      {
+        "id": "na-kogo",
+        "question": "na kogo?",
+        "meaning": { "en": "for whom? (czekam na niego: I am waiting for him)" },
+        "cells": [null, "na-ciebie", "na-niego", "na-nia", "na-nas", "na-was", "na-nich"]
+      }
+    ]
+  }
 }

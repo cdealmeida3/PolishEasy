@@ -898,6 +898,24 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Pronoun grid opens with z kim in chapter 10, and by the end of chapter 17 plays every column and mixed`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.PRONOUN_GRID }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l10-"), course.path[firstReady - 1].id)
+        val endOf17 = course.path.indexOfLast { it.id.startsWith("kpk1-l17-") } + 1
+        val practice = practiceAfter(endOf17)
+        val ways = practice.setup(Game.PRONOUN_GRID, emptyList()).choices.single().options.map { it.id }
+        assertEquals(course.pronounGrid!!.columns.map { it.id } + PronounGrid.MIXED, ways)
+        ways.forEach { way ->
+            val round = practice.start(practice.setup(Game.PRONOUN_GRID, listOf(way))) as PronounGridRound
+            assertTrue(round.total >= PronounGrid.FEWEST, way)
+            round.run.questions.forEach { question ->
+                assertEquals(PronounGrid.OFFERED, question.offered.size, question.key)
+                assertTrue(course.clipFor(question.form) != null, "No Clip for ${question.form}")
+            }
+        }
+    }
+
+    @Test
     fun `Word search opens in chapter 16 and hides its words in every Round`() {
         val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.WORD_SEARCH }.state == GameState.READY }
         assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l16-"), course.path[firstReady - 1].id)

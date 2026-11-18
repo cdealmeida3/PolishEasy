@@ -41,6 +41,7 @@ import com.polisheasy.engine.PlannerRound
 import com.polisheasy.engine.SpeakerRound
 import com.polisheasy.engine.DirectionsRound
 import com.polisheasy.engine.SwapRound
+import com.polisheasy.engine.PronounGridRound
 import com.polisheasy.engine.PackagingRound
 import com.polisheasy.engine.HowManyRound
 import com.polisheasy.engine.ForecasterRound
@@ -110,6 +111,7 @@ internal fun RoundScreen(
         is SpeakerRound -> WhoSaidItStep(round, say, onMove)
         is DirectionsRound -> DirectionsStep(round, say, onMove)
         is SwapRound -> PronounSwapStep(round, say, onMove)
+        is PronounGridRound -> PronounGridStep(round, say, onMove)
         is PackagingRound -> PackagingStep(round, say, onMove)
         is HowManyRound -> HowManyStep(round, say, onMove)
         is ForecasterRound -> ForecasterStep(round, say, onMove)
