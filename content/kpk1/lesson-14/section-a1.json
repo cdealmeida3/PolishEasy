@@ -1,0 +1,399 @@
+{
+  "id": "kpk1-l14-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Uczymy się o Krakowie",
+    "meaning": {
+      "en": "We are learning about Kraków"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-a1-t01",
+      "before": "kpk1-l14-a1-e01",
+      "title": {
+        "en": "Idziesz na quiz?"
+      },
+      "body": {
+        "en": "*Idziesz na quiz?* asks a friend whether they are going to the quiz. *Zwykle chodzę na wykłady* is I usually go to lectures. *Coś nowego* is something new, and *zobaczymy* is let's see. A *przewodnik po Krakowie* is a guidebook to the city, or a person who shows you around it."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a1-e01",
+      "prompt": "na quiz",
+      "options": [
+        {
+          "en": "to a quiz (idziesz na quiz?: are you going to the quiz?)"
+        },
+        {
+          "en": "to a lecture"
+        },
+        {
+          "en": "to a prize"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-quiz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a1-e02",
+      "prompt": "na wykłady",
+      "options": [
+        {
+          "en": "to workshops"
+        },
+        {
+          "en": "to lectures (chodzę na wykłady: I go to lectures)"
+        },
+        {
+          "en": "to lessons"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-wyklady"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a1-e03",
+      "prompt": "warsztaty",
+      "options": [
+        {
+          "en": "lectures"
+        },
+        {
+          "en": "a quiz"
+        },
+        {
+          "en": "workshops"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "warsztaty"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-a1-e04",
+      "text": "idziesz na quiz?",
+      "meaning": {
+        "en": "are you going to the quiz?"
+      },
+      "distractors": [
+        "idziesz na wykłady?",
+        "idziemy na quiz?"
+      ],
+      "items": [
+        "isc-idziesz",
+        "na-quiz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a1-e05",
+      "prompt": "coś nowego",
+      "options": [
+        {
+          "en": "something new"
+        },
+        {
+          "en": "something old"
+        },
+        {
+          "en": "nothing new"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cos-nowego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a1-e06",
+      "prompt": "zobaczymy",
+      "options": [
+        {
+          "en": "we know"
+        },
+        {
+          "en": "we'll see, let's see"
+        },
+        {
+          "en": "we are going"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zobaczymy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-a1-e07",
+      "prompt": {
+        "en": "usually I go to lectures or workshops"
+      },
+      "acceptedAnswers": [
+        "zwykle chodzę na wykłady albo warsztaty"
+      ],
+      "distractors": [
+        "idę",
+        "quiz"
+      ],
+      "items": [
+        "zwykle",
+        "chodzic-chodze",
+        "na-wyklady",
+        "albo",
+        "warsztaty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a1-e08",
+      "prompt": "nagroda",
+      "options": [
+        {
+          "en": "a quiz"
+        },
+        {
+          "en": "a ticket"
+        },
+        {
+          "en": "a prize"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nagroda"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a1-e09",
+      "prompt": "przewodnik",
+      "options": [
+        {
+          "en": "a guide; a guidebook (przewodnik po Krakowie: a guide to Kraków; jestem przewodnikiem: I am a guide)"
+        },
+        {
+          "en": "a map"
+        },
+        {
+          "en": "a teacher"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przewodnik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a1-e10",
+      "prompt": "po Krakowie",
+      "options": [
+        {
+          "en": "in Kraków"
+        },
+        {
+          "en": "around Kraków (chodzić po Krakowie: to walk around Kraków)"
+        },
+        {
+          "en": "to Kraków"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "po-krakowie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-a1-e11",
+      "text": "Jaka jest ___? ___ po Krakowie.",
+      "meaning": {
+        "en": "What is the prize? A guidebook to Kraków."
+      },
+      "gaps": [
+        [
+          "nagroda"
+        ],
+        [
+          "Przewodnik"
+        ]
+      ],
+      "distractors": [
+        "quiz",
+        "mapa"
+      ],
+      "items": [
+        "jaka",
+        "byc-jest",
+        "nagroda",
+        "przewodnik",
+        "po-krakowie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-a1-e12",
+      "prompt": {
+        "en": "something new"
+      },
+      "acceptedAnswers": [
+        "coś nowego"
+      ],
+      "items": [
+        "cos-nowego"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-a1-e13",
+      "acceptedAnswers": [
+        "jaka jest nagroda?"
+      ],
+      "meaning": {
+        "en": "what is the prize?"
+      },
+      "items": [
+        "jaka",
+        "byc-jest",
+        "nagroda"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-a1-e14",
+      "pairs": [
+        {
+          "polish": "na quiz",
+          "meaning": {
+            "en": "to a quiz"
+          }
+        },
+        {
+          "polish": "na wykłady",
+          "meaning": {
+            "en": "to lectures"
+          }
+        },
+        {
+          "polish": "warsztaty",
+          "meaning": {
+            "en": "workshops"
+          }
+        },
+        {
+          "polish": "nagroda",
+          "meaning": {
+            "en": "a prize"
+          }
+        },
+        {
+          "polish": "przewodnik",
+          "meaning": {
+            "en": "a guide"
+          }
+        },
+        {
+          "polish": "zobaczymy",
+          "meaning": {
+            "en": "let's see"
+          }
+        }
+      ],
+      "items": [
+        "na-quiz",
+        "na-wyklady",
+        "warsztaty",
+        "nagroda",
+        "przewodnik",
+        "zobaczymy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-a1-e15",
+      "lines": [
+        "Adam i Ewa mają wolne popołudnie.",
+        "Zwykle chodzą na wykłady albo warsztaty.",
+        "Dziś chcą coś nowego: idą na quiz o Krakowie. Nagroda to przewodnik po Krakowie."
+      ],
+      "meaning": {
+        "en": "An afternoon in Kraków."
+      },
+      "statements": [
+        {
+          "text": "Dziś idą na wykłady.",
+          "meaning": {
+            "en": "Today they are going to lectures."
+          },
+          "true": false
+        },
+        {
+          "text": "Nagroda to przewodnik.",
+          "meaning": {
+            "en": "The prize is a guidebook."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam i Ewa zwykle chodzą na wykłady.",
+          "meaning": {
+            "en": "Adam and Ewa usually go to lectures."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "nagroda",
+        "przewodnik",
+        "na-quiz",
+        "na-wyklady",
+        "warsztaty",
+        "po-krakowie",
+        "cos-nowego"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l14-a1-e16",
+      "lines": [
+        "Co robimy dzisiaj po południu?",
+        "Idziemy na quiz?",
+        "Jasne! Chcę wygrać!",
+        "Zobaczymy!"
+      ],
+      "meaning": {
+        "en": "Planning the afternoon."
+      },
+      "items": [
+        "co",
+        "robic-robimy",
+        "dzisiaj",
+        "po-poludniu",
+        "isc-idziemy",
+        "na-quiz",
+        "jasne",
+        "chciec-chce",
+        "wygrac",
+        "zobaczymy"
+      ]
+    }
+  ]
+}

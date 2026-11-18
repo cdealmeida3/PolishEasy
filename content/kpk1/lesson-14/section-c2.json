@@ -1,0 +1,466 @@
+{
+  "id": "kpk1-l14-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Idziemy do pubu",
+    "meaning": {
+      "en": "We are going to the pub"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-c2-t01",
+      "before": "kpk1-l14-c2-e01",
+      "title": {
+        "en": "Kocham cię"
+      },
+      "body": {
+        "en": "After *kocham*, *lubię*, *znam*, *zapraszam*, the person is in the accusative: *kocham cię* (I love you), *lubię go* (I like him), *znam ją* (I know her). For several people: *nas*, *was*, and *ich* for men or men and women, *je* for women, children or things."
+      },
+      "table": {
+        "title": {
+          "en": "ja, ty, on… · who? and whom?"
+        },
+        "columns": [
+          {
+            "header": "biernik (kocham…)"
+          }
+        ],
+        "rows": [
+          {
+            "header": "ja",
+            "cells": [
+              "mnie"
+            ]
+          },
+          {
+            "header": "ty",
+            "cells": [
+              "cię"
+            ]
+          },
+          {
+            "header": "on",
+            "cells": [
+              "go"
+            ]
+          },
+          {
+            "header": "ona",
+            "cells": [
+              "ją"
+            ]
+          },
+          {
+            "header": "ono",
+            "cells": [
+              "je"
+            ]
+          },
+          {
+            "header": "my",
+            "cells": [
+              "nas"
+            ]
+          },
+          {
+            "header": "wy",
+            "cells": [
+              "was"
+            ]
+          },
+          {
+            "header": "oni",
+            "cells": [
+              "ich"
+            ]
+          },
+          {
+            "header": "one",
+            "cells": [
+              "je"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c2-e01",
+      "prompt": "mnie",
+      "options": [
+        {
+          "en": "you"
+        },
+        {
+          "en": "me (kochasz mnie?: do you love me?)"
+        },
+        {
+          "en": "him"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "mnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c2-e02",
+      "prompt": "cię",
+      "options": [
+        {
+          "en": "me"
+        },
+        {
+          "en": "her"
+        },
+        {
+          "en": "you (one friend: kocham cię: I love you)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "cie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-c2-e03",
+      "text": "kocham cię",
+      "meaning": {
+        "en": "I love you"
+      },
+      "distractors": [
+        "kochasz mnie",
+        "kocham ją"
+      ],
+      "items": [
+        "kochac-kocham",
+        "cie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c2-e04",
+      "prompt": "go",
+      "options": [
+        {
+          "en": "him; it (for a masculine or neuter noun: lubię go)"
+        },
+        {
+          "en": "her"
+        },
+        {
+          "en": "them"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "go"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c2-e05",
+      "prompt": "ją",
+      "options": [
+        {
+          "en": "him"
+        },
+        {
+          "en": "her; it (for a feminine noun: znam ją)"
+        },
+        {
+          "en": "us"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ja-acc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-c2-e06",
+      "prompt": {
+        "en": "I know her"
+      },
+      "acceptedAnswers": [
+        "znam ją"
+      ],
+      "distractors": [
+        "go",
+        "cię"
+      ],
+      "items": [
+        "znac-znam",
+        "ja-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c2-e07",
+      "prompt": "nas",
+      "options": [
+        {
+          "en": "you (several people)"
+        },
+        {
+          "en": "them"
+        },
+        {
+          "en": "us (zapraszasz nas?: are you inviting us?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nas"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c2-e08",
+      "prompt": "was",
+      "options": [
+        {
+          "en": "you (several people: zapraszam was)"
+        },
+        {
+          "en": "us"
+        },
+        {
+          "en": "me"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "was"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-c2-e09",
+      "acceptedAnswers": [
+        "zapraszam was"
+      ],
+      "meaning": {
+        "en": "I invite you (several people)"
+      },
+      "items": [
+        "zapraszac-zapraszam",
+        "was"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c2-e10",
+      "prompt": "ich",
+      "options": [
+        {
+          "en": "their"
+        },
+        {
+          "en": "them (men, or men and women: znam ich)"
+        },
+        {
+          "en": "us"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ich-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c2-e11",
+      "prompt": "je",
+      "options": [
+        {
+          "en": "him"
+        },
+        {
+          "en": "us"
+        },
+        {
+          "en": "them (women, children or things: lubię je)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "je-acc"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-c2-e12",
+      "text": "Mam książkę. Mam ___. Lubię zdjęcia. Lubię ___.",
+      "meaning": {
+        "en": "I have a book. I have it. I like photos. I like them."
+      },
+      "gaps": [
+        [
+          "ją"
+        ],
+        [
+          "je"
+        ]
+      ],
+      "distractors": [
+        "go",
+        "ich"
+      ],
+      "items": [
+        "miec-mam",
+        "ksiazka-acc",
+        "ja-acc",
+        "lubic-lubie",
+        "zdjecie",
+        "je-acc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-c2-e13",
+      "prompt": {
+        "en": "I like him"
+      },
+      "acceptedAnswers": [
+        "lubię go"
+      ],
+      "items": [
+        "lubic-lubie",
+        "go"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-c2-e14",
+      "prompt": {
+        "en": "do you like me?"
+      },
+      "acceptedAnswers": [
+        "lubisz mnie?"
+      ],
+      "distractors": [
+        "cię",
+        "go"
+      ],
+      "items": [
+        "lubic-lubisz",
+        "mnie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-c2-e15",
+      "prompt": {
+        "en": "I know you (several people)"
+      },
+      "acceptedAnswers": [
+        "znam was"
+      ],
+      "items": [
+        "znac-znam",
+        "was"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-c2-e16",
+      "pairs": [
+        {
+          "polish": "mnie",
+          "meaning": {
+            "en": "me"
+          }
+        },
+        {
+          "polish": "cię",
+          "meaning": {
+            "en": "you"
+          }
+        },
+        {
+          "polish": "go",
+          "meaning": {
+            "en": "him"
+          }
+        },
+        {
+          "polish": "ją",
+          "meaning": {
+            "en": "her"
+          }
+        },
+        {
+          "polish": "nas",
+          "meaning": {
+            "en": "us"
+          }
+        },
+        {
+          "polish": "ich",
+          "meaning": {
+            "en": "them"
+          }
+        }
+      ],
+      "items": [
+        "mnie",
+        "cie",
+        "go",
+        "ja-acc",
+        "nas",
+        "ich-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-c2-e17",
+      "text": "znam ich",
+      "meaning": {
+        "en": "I know them"
+      },
+      "distractors": [
+        "znam je",
+        "znasz ich"
+      ],
+      "items": [
+        "znac-znam",
+        "ich-acc"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l14-c2-e18",
+      "lines": [
+        "Znasz ten film?",
+        "Tak, znam go.",
+        "A tę książkę?",
+        "Ją też znam."
+      ],
+      "meaning": {
+        "en": "Do you know them?"
+      },
+      "items": [
+        "znac-znasz",
+        "ten",
+        "film",
+        "tak",
+        "znac-znam",
+        "go",
+        "a",
+        "ksiazka-acc",
+        "ja-acc",
+        "tez"
+      ]
+    }
+  ]
+}

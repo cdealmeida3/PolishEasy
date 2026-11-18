@@ -1,0 +1,496 @@
+{
+  "id": "kpk1-l14-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Idziemy do pubu",
+    "meaning": {
+      "en": "We are going to the pub"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-c3-t01",
+      "before": "kpk1-l14-c3-e01",
+      "title": {
+        "en": "Czekam na niego"
+      },
+      "body": {
+        "en": "After a word like *na*, *on* is *niego*, *ona* is *nią* and *oni* is *nich*: *czekam na niego* (I am waiting for him), *czekam na nią*, *czekam na nich*. *Ty* is *ciebie*: *czekałam na ciebie*. *My* and *wy* stay *nas* and *was*: *czekasz na nas?*, *czekam na was*."
+      },
+      "table": {
+        "title": {
+          "en": "whom? · alone and after na"
+        },
+        "columns": [
+          {
+            "header": "kocham…"
+          },
+          {
+            "header": "czekam na…"
+          }
+        ],
+        "rows": [
+          {
+            "header": "ja",
+            "cells": [
+              "mnie",
+              "mnie"
+            ]
+          },
+          {
+            "header": "ty",
+            "cells": [
+              "cię",
+              "ciebie"
+            ]
+          },
+          {
+            "header": "on",
+            "cells": [
+              "go",
+              "niego"
+            ]
+          },
+          {
+            "header": "ona",
+            "cells": [
+              "ją",
+              "nią"
+            ]
+          },
+          {
+            "header": "ono",
+            "cells": [
+              "je",
+              "nie"
+            ]
+          },
+          {
+            "header": "my",
+            "cells": [
+              "nas",
+              "nas"
+            ]
+          },
+          {
+            "header": "wy",
+            "cells": [
+              "was",
+              "was"
+            ]
+          },
+          {
+            "header": "oni",
+            "cells": [
+              "ich",
+              "nich"
+            ]
+          },
+          {
+            "header": "one",
+            "cells": [
+              "je",
+              "nie"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c3-e01",
+      "prompt": "na ciebie",
+      "options": [
+        {
+          "en": "for you (one friend: czekam na ciebie)"
+        },
+        {
+          "en": "for me"
+        },
+        {
+          "en": "for him"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-ciebie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c3-e02",
+      "prompt": "na niego",
+      "options": [
+        {
+          "en": "for her"
+        },
+        {
+          "en": "for him (czekam na niego)"
+        },
+        {
+          "en": "for them"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-niego"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-c3-e03",
+      "text": "czekam na niego",
+      "meaning": {
+        "en": "I am waiting for him"
+      },
+      "distractors": [
+        "czekam na nią",
+        "czekam na nich"
+      ],
+      "items": [
+        "czekac-czekam",
+        "na-niego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c3-e04",
+      "prompt": "na nią",
+      "options": [
+        {
+          "en": "for him"
+        },
+        {
+          "en": "for them"
+        },
+        {
+          "en": "for her (czekam na nią)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-nia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c3-e05",
+      "prompt": "na nich",
+      "options": [
+        {
+          "en": "for them (men, or men and women: czekam na nich)"
+        },
+        {
+          "en": "for her"
+        },
+        {
+          "en": "for us"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-nich"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-c3-e06",
+      "prompt": {
+        "en": "we are waiting for them for five minutes"
+      },
+      "acceptedAnswers": [
+        "czekamy na nich pięć minut"
+      ],
+      "distractors": [
+        "niego",
+        "idziemy"
+      ],
+      "items": [
+        "czekac-czekamy",
+        "na-nich",
+        "piec",
+        "minuta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c3-e07",
+      "prompt": "na nas",
+      "options": [
+        {
+          "en": "for you (several people)"
+        },
+        {
+          "en": "for us (czekasz na nas?)"
+        },
+        {
+          "en": "for them"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-nas"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c3-e08",
+      "prompt": "na was",
+      "options": [
+        {
+          "en": "for us"
+        },
+        {
+          "en": "for him"
+        },
+        {
+          "en": "for you (several people: czekam na was)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-was"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c3-e09",
+      "prompt": "czekaj!",
+      "options": [
+        {
+          "en": "wait! (to one friend)"
+        },
+        {
+          "en": "come!"
+        },
+        {
+          "en": "look!"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czekaj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c3-e10",
+      "prompt": "już idziemy!",
+      "options": [
+        {
+          "en": "we're waiting!"
+        },
+        {
+          "en": "we're coming!"
+        },
+        {
+          "en": "we're going home!"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "juz-idziemy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-c3-e11",
+      "text": "Gdzie jest Ewa? Czekamy na ___? A Adam? Czekamy też na ___?",
+      "meaning": {
+        "en": "Where is Ewa? Are we waiting for her? And Adam? Are we waiting for him too?"
+      },
+      "gaps": [
+        [
+          "nią"
+        ],
+        [
+          "niego"
+        ]
+      ],
+      "distractors": [
+        "nich",
+        "ciebie"
+      ],
+      "items": [
+        "gdzie",
+        "byc-jest",
+        "ewa",
+        "czekac-czekamy",
+        "na-nia",
+        "a",
+        "adam",
+        "tez",
+        "na-niego"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-c3-e12",
+      "acceptedAnswers": [
+        "czekam na ciebie"
+      ],
+      "meaning": {
+        "en": "I am waiting for you (one friend)"
+      },
+      "items": [
+        "czekac-czekam",
+        "na-ciebie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-c3-e13",
+      "prompt": {
+        "en": "wait! (to one friend)"
+      },
+      "acceptedAnswers": [
+        "czekaj!"
+      ],
+      "items": [
+        "czekaj"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-c3-e14",
+      "pairs": [
+        {
+          "polish": "na ciebie",
+          "meaning": {
+            "en": "for you"
+          }
+        },
+        {
+          "polish": "na niego",
+          "meaning": {
+            "en": "for him"
+          }
+        },
+        {
+          "polish": "na nią",
+          "meaning": {
+            "en": "for her"
+          }
+        },
+        {
+          "polish": "na nich",
+          "meaning": {
+            "en": "for them"
+          }
+        },
+        {
+          "polish": "na nas",
+          "meaning": {
+            "en": "for us"
+          }
+        },
+        {
+          "polish": "na was",
+          "meaning": {
+            "en": "for you (several)"
+          }
+        }
+      ],
+      "items": [
+        "na-ciebie",
+        "na-niego",
+        "na-nia",
+        "na-nich",
+        "na-nas",
+        "na-was"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-c3-e15",
+      "lines": [
+        "Ewa czeka na Adama w pubie.",
+        "Adam i koledzy są na zewnątrz i czekają na nas.",
+        "Ewa jest w środku. Czekaj! Już idziemy!"
+      ],
+      "meaning": {
+        "en": "Waiting at the pub."
+      },
+      "statements": [
+        {
+          "text": "Ewa jest na zewnątrz.",
+          "meaning": {
+            "en": "Ewa is outside."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam jest na zewnątrz.",
+          "meaning": {
+            "en": "Adam is outside."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa jest w środku.",
+          "meaning": {
+            "en": "Ewa is inside."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "w-pubie",
+        "na-zewnatrz",
+        "na-nas",
+        "w-srodku",
+        "czekaj",
+        "juz-idziemy"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l14-c3-e16",
+      "lines": [
+        "Halo! Gdzie jesteś?",
+        "Na zewnątrz. A wy?",
+        "My w środku. Czekaj!",
+        "Już idziemy!"
+      ],
+      "meaning": {
+        "en": "On the phone outside the pub."
+      },
+      "items": [
+        "halo",
+        "gdzie",
+        "byc-jestes",
+        "na-zewnatrz",
+        "a",
+        "wy",
+        "my",
+        "w-srodku",
+        "czekaj",
+        "juz-idziemy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-c3-e17",
+      "text": "czekam na was w pubie",
+      "meaning": {
+        "en": "I am waiting for you in the pub (several people)"
+      },
+      "distractors": [
+        "czekam na nich w pubie",
+        "czekamy na was w pubie"
+      ],
+      "items": [
+        "czekac-czekam",
+        "na-was",
+        "w-pubie"
+      ]
+    }
+  ]
+}

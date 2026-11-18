@@ -1,0 +1,425 @@
+{
+  "id": "kpk1-l14-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Uczymy się o Krakowie",
+    "meaning": {
+      "en": "We are learning about Kraków"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-a2-t01",
+      "before": "kpk1-l14-a2-e01",
+      "title": {
+        "en": "Idę, idziesz"
+      },
+      "body": {
+        "en": "*Iść* is to go on foot, now or once: *idę na quiz* (I am going to the quiz). It is of the *-ę, -esz* kind: *idę*, *idziesz*, *idzie*, *idziemy*, *idziecie*, *idą*. *Zaraz idę* is I'm going in a moment."
+      },
+      "conjugation": {
+        "verb": "iść",
+        "meaning": {
+          "en": "to go (on foot, now or once)"
+        },
+        "forms": {
+          "ja": "idę",
+          "ty": "idziesz",
+          "on": "idzie",
+          "my": "idziemy",
+          "wy": "idziecie",
+          "oni": "idą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a2-e01",
+      "prompt": "idzie",
+      "options": [
+        {
+          "en": "you are going (on foot; one friend)"
+        },
+        {
+          "en": "he goes regularly"
+        },
+        {
+          "en": "he is going, she is going (on foot)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "isc-idzie"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a2-e02",
+      "verb": "iść",
+      "meaning": {
+        "en": "to go (on foot, now or once)"
+      },
+      "person": "on",
+      "sentence": "A Adam też ___?",
+      "sentenceMeaning": {
+        "en": "And is Adam going too?"
+      },
+      "acceptedAnswers": [
+        "idzie"
+      ],
+      "items": [
+        "a",
+        "adam",
+        "tez",
+        "isc-idzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a2-e03",
+      "prompt": "idą",
+      "options": [
+        {
+          "en": "they are going (on foot)"
+        },
+        {
+          "en": "we are going (on foot)"
+        },
+        {
+          "en": "they go regularly"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "isc-ida"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a2-e04",
+      "verb": "iść",
+      "meaning": {
+        "en": "to go (on foot, now or once)"
+      },
+      "person": "oni",
+      "sentence": "Adam i Ewa ___ na quiz.",
+      "sentenceMeaning": {
+        "en": "Adam and Ewa are going to the quiz."
+      },
+      "acceptedAnswers": [
+        "idą"
+      ],
+      "items": [
+        "adam",
+        "i",
+        "ewa",
+        "isc-ida",
+        "na-quiz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a2-e05",
+      "prompt": "na legendy",
+      "options": [
+        {
+          "en": "to the museum"
+        },
+        {
+          "en": "to the legends tour (legenda: a legend; idę na legendy)"
+        },
+        {
+          "en": "to the monument"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-legendy"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a2-e06",
+      "verb": "iść",
+      "meaning": {
+        "en": "to go (on foot, now or once)"
+      },
+      "person": "ja",
+      "sentence": "Zaraz ___ na legendy.",
+      "sentenceMeaning": {
+        "en": "I'm going to the legends tour in a moment."
+      },
+      "acceptedAnswers": [
+        "idę"
+      ],
+      "items": [
+        "zaraz",
+        "isc-ide",
+        "na-legendy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a2-e07",
+      "prompt": "raz",
+      "options": [
+        {
+          "en": "never"
+        },
+        {
+          "en": "always"
+        },
+        {
+          "en": "once (raz w tygodniu: once a week)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "raz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-a2-e08",
+      "text": "raz w tygodniu",
+      "meaning": {
+        "en": "once a week"
+      },
+      "distractors": [
+        "dwa razy w tygodniu",
+        "raz w roku"
+      ],
+      "items": [
+        "raz",
+        "w-tygodniu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a2-e09",
+      "prompt": "hura!",
+      "options": [
+        {
+          "en": "hooray!"
+        },
+        {
+          "en": "oh no!"
+        },
+        {
+          "en": "sorry!"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "hura"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a2-e10",
+      "prompt": "serio?",
+      "options": [
+        {
+          "en": "of course!"
+        },
+        {
+          "en": "really? seriously?"
+        },
+        {
+          "en": "sure!"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "serio"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a2-e11",
+      "verb": "iść",
+      "meaning": {
+        "en": "to go (on foot, now or once)"
+      },
+      "person": "wy",
+      "sentence": "Dokąd ___?",
+      "sentenceMeaning": {
+        "en": "Where are you going? (several people)"
+      },
+      "acceptedAnswers": [
+        "idziecie"
+      ],
+      "items": [
+        "dokad",
+        "isc-idziecie"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a2-e12",
+      "verb": "iść",
+      "meaning": {
+        "en": "to go (on foot, now or once)"
+      },
+      "person": "ty",
+      "sentence": "Czy ___ na quiz?",
+      "sentenceMeaning": {
+        "en": "Are you going to the quiz?"
+      },
+      "acceptedAnswers": [
+        "idziesz"
+      ],
+      "items": [
+        "czy",
+        "isc-idziesz",
+        "na-quiz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-a2-e13",
+      "prompt": {
+        "en": "they are going to the legends tour"
+      },
+      "acceptedAnswers": [
+        "idą na legendy"
+      ],
+      "distractors": [
+        "idzie",
+        "quiz"
+      ],
+      "items": [
+        "isc-ida",
+        "na-legendy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-a2-e14",
+      "acceptedAnswers": [
+        "idziemy na legendy"
+      ],
+      "meaning": {
+        "en": "we're going to the legends tour"
+      },
+      "items": [
+        "isc-idziemy",
+        "na-legendy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-a2-e15",
+      "prompt": {
+        "en": "he is going to the quiz"
+      },
+      "acceptedAnswers": [
+        "on idzie na quiz",
+        "idzie na quiz"
+      ],
+      "items": [
+        "on",
+        "isc-idzie",
+        "na-quiz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-a2-e16",
+      "pairs": [
+        {
+          "polish": "idę",
+          "meaning": {
+            "en": "I am going"
+          }
+        },
+        {
+          "polish": "idzie",
+          "meaning": {
+            "en": "he is going"
+          }
+        },
+        {
+          "polish": "idą",
+          "meaning": {
+            "en": "they are going"
+          }
+        },
+        {
+          "polish": "raz",
+          "meaning": {
+            "en": "once"
+          }
+        },
+        {
+          "polish": "hura!",
+          "meaning": {
+            "en": "hooray!"
+          }
+        },
+        {
+          "polish": "serio?",
+          "meaning": {
+            "en": "really?"
+          }
+        }
+      ],
+      "items": [
+        "isc-ide",
+        "isc-idzie",
+        "isc-ida",
+        "raz",
+        "hura",
+        "serio"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-a2-e17",
+      "lines": [
+        "Hura! Ewa wygrała quiz!",
+        "Adam zaraz idzie na legendy.",
+        "Serio? Ewa też idzie?"
+      ],
+      "meaning": {
+        "en": "After the quiz."
+      },
+      "statements": [
+        {
+          "text": "Adam wygrał quiz.",
+          "meaning": {
+            "en": "Adam won the quiz."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam idzie na legendy.",
+          "meaning": {
+            "en": "Adam is going to the legends tour."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa wygrała quiz.",
+          "meaning": {
+            "en": "Ewa won the quiz."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "hura",
+        "isc-idzie",
+        "na-legendy",
+        "zaraz",
+        "serio"
+      ]
+    }
+  ]
+}

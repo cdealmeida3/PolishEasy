@@ -1,0 +1,413 @@
+{
+  "id": "kpk1-l14-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Uczymy się o Krakowie",
+    "meaning": {
+      "en": "We are learning about Kraków"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-a3-t01",
+      "before": "kpk1-l14-a3-e01",
+      "title": {
+        "en": "Idę czy chodzę?"
+      },
+      "body": {
+        "en": "*Iść* is now, or once: *teraz idę do pracy*. *Chodzić* is often, or as a habit: *zwykle chodzę pieszo do pracy*. *Chodzić po Krakowie* is to walk around the city. *Chodzić* is of the *-ę, -isz* kind: *chodzę*, *chodzisz*, *chodzi*, *chodzimy*, *chodzicie*, *chodzą*."
+      },
+      "conjugation": {
+        "verb": "chodzić",
+        "meaning": {
+          "en": "to go (on foot, regularly)"
+        },
+        "forms": {
+          "ja": "chodzę",
+          "ty": "chodzisz",
+          "on": "chodzi",
+          "my": "chodzimy",
+          "wy": "chodzicie",
+          "oni": "chodzą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a3-e01",
+      "prompt": "chodzicie",
+      "options": [
+        {
+          "en": "you are going (on foot; several people)"
+        },
+        {
+          "en": "you are going now (several people)"
+        },
+        {
+          "en": "you go (on foot, or regularly; several people)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chodzic-chodzicie"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a3-e02",
+      "verb": "chodzić",
+      "meaning": {
+        "en": "to go (on foot, regularly)"
+      },
+      "person": "wy",
+      "sentence": "Jak często ___ do teatru?",
+      "sentenceMeaning": {
+        "en": "How often do you go to the theatre? (several people)"
+      },
+      "acceptedAnswers": [
+        "chodzicie"
+      ],
+      "items": [
+        "jak",
+        "czesto",
+        "chodzic-chodzicie",
+        "do-teatru"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a3-e03",
+      "prompt": "pieszo",
+      "options": [
+        {
+          "en": "on foot (chodzę pieszo do pracy: I walk to work)"
+        },
+        {
+          "en": "by car"
+        },
+        {
+          "en": "by bus"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pieszo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a3-e04",
+      "prompt": "do pracy",
+      "options": [
+        {
+          "en": "to school"
+        },
+        {
+          "en": "to work (chodzę do pracy)"
+        },
+        {
+          "en": "home"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-pracy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-a3-e05",
+      "prompt": {
+        "en": "I usually walk to work"
+      },
+      "acceptedAnswers": [
+        "zwykle chodzę pieszo do pracy",
+        "zwykle chodzę do pracy pieszo"
+      ],
+      "distractors": [
+        "idę",
+        "szkoły"
+      ],
+      "items": [
+        "zwykle",
+        "chodzic-chodze",
+        "pieszo",
+        "do-pracy"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a3-e06",
+      "verb": "chodzić",
+      "meaning": {
+        "en": "to go (on foot, regularly)"
+      },
+      "person": "my",
+      "sentence": "Często ___ po Krakowie.",
+      "sentenceMeaning": {
+        "en": "We often walk around Kraków."
+      },
+      "acceptedAnswers": [
+        "chodzimy"
+      ],
+      "items": [
+        "czesto",
+        "chodzic-chodzimy",
+        "po-krakowie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a3-e07",
+      "prompt": "fotografujemy",
+      "options": [
+        {
+          "en": "we are reading"
+        },
+        {
+          "en": "we are painting"
+        },
+        {
+          "en": "we take photos"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "fotografujemy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a3-e08",
+      "prompt": "w internecie",
+      "options": [
+        {
+          "en": "on the internet"
+        },
+        {
+          "en": "in the newspaper"
+        },
+        {
+          "en": "on the phone"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-internecie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-a3-e09",
+      "prompt": "dzielnica",
+      "options": [
+        {
+          "en": "a street"
+        },
+        {
+          "en": "a district, a part of a city (Nowa Huta to dzielnica Krakowa)"
+        },
+        {
+          "en": "a town hall"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dzielnica"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-a3-e10",
+      "text": "to piękna dzielnica",
+      "meaning": {
+        "en": "it is a beautiful district"
+      },
+      "distractors": [
+        "to piękna ulica",
+        "to stara dzielnica"
+      ],
+      "items": [
+        "to",
+        "piekny",
+        "dzielnica"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l14-a3-e11",
+      "verb": "iść",
+      "meaning": {
+        "en": "to go (on foot, now or once)"
+      },
+      "person": "ja",
+      "sentence": "Dzisiaj ___ pieszo do pracy.",
+      "sentenceMeaning": {
+        "en": "Today I am walking to work."
+      },
+      "acceptedAnswers": [
+        "idę"
+      ],
+      "items": [
+        "dzisiaj",
+        "isc-ide",
+        "pieszo",
+        "do-pracy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-a3-e12",
+      "text": "Czytam ___. Często chodzimy po Krakowie i ___.",
+      "meaning": {
+        "en": "I read on the internet. We often walk around Kraków and take photos."
+      },
+      "gaps": [
+        [
+          "w internecie"
+        ],
+        [
+          "fotografujemy"
+        ]
+      ],
+      "distractors": [
+        "w kinie",
+        "pracujemy"
+      ],
+      "items": [
+        "czytac-czytam",
+        "w-internecie",
+        "czesto",
+        "chodzic-chodzimy",
+        "po-krakowie",
+        "i",
+        "fotografujemy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-a3-e13",
+      "acceptedAnswers": [
+        "zwykle chodzę pieszo"
+      ],
+      "meaning": {
+        "en": "I usually walk"
+      },
+      "items": [
+        "zwykle",
+        "chodzic-chodze",
+        "pieszo"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-a3-e14",
+      "prompt": {
+        "en": "we take photos"
+      },
+      "acceptedAnswers": [
+        "fotografujemy"
+      ],
+      "items": [
+        "fotografujemy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-a3-e15",
+      "pairs": [
+        {
+          "polish": "chodzicie",
+          "meaning": {
+            "en": "you go (several people)"
+          }
+        },
+        {
+          "polish": "pieszo",
+          "meaning": {
+            "en": "on foot"
+          }
+        },
+        {
+          "polish": "do pracy",
+          "meaning": {
+            "en": "to work"
+          }
+        },
+        {
+          "polish": "w internecie",
+          "meaning": {
+            "en": "on the internet"
+          }
+        },
+        {
+          "polish": "dzielnica",
+          "meaning": {
+            "en": "a district"
+          }
+        },
+        {
+          "polish": "fotografujemy",
+          "meaning": {
+            "en": "we take photos"
+          }
+        }
+      ],
+      "items": [
+        "chodzic-chodzicie",
+        "pieszo",
+        "do-pracy",
+        "w-internecie",
+        "dzielnica",
+        "fotografujemy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-a3-e16",
+      "lines": [
+        "Ewa dużo czyta w internecie.",
+        "Ewa i Adam często chodzą po Krakowie i fotografują.",
+        "Jutro Ewa jedzie do Nowej Huty, to dzielnica Krakowa."
+      ],
+      "meaning": {
+        "en": "What Ewa does in Kraków."
+      },
+      "statements": [
+        {
+          "text": "Ewa i Adam rzadko chodzą po Krakowie.",
+          "meaning": {
+            "en": "Ewa and Adam rarely walk around Kraków."
+          },
+          "true": false
+        },
+        {
+          "text": "Nowa Huta to dzielnica Krakowa.",
+          "meaning": {
+            "en": "Nowa Huta is a district of Kraków."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa dużo czyta w internecie.",
+          "meaning": {
+            "en": "Ewa reads a lot on the internet."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "w-internecie",
+        "chodzic-chodza",
+        "po-krakowie",
+        "dzielnica"
+      ]
+    }
+  ]
+}

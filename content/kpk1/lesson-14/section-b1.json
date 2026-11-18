@@ -1,0 +1,387 @@
+{
+  "id": "kpk1-l14-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Zwiedzamy",
+    "meaning": {
+      "en": "We are sightseeing"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-b1-t01",
+      "before": "kpk1-l14-b1-e01",
+      "title": {
+        "en": "Miasto"
+      },
+      "body": {
+        "en": "Words of a city: *miasto* (a town, a city), *stolica* (a capital: *Warszawa to stolica Polski*), *dzielnica* (a district), *ulica* (a street), *skrzyżowanie* (a crossroads), *przystanek* (a bus or tram stop) and *światła* (traffic lights)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b1-e01",
+      "prompt": "miasto",
+      "options": [
+        {
+          "en": "a town, a city"
+        },
+        {
+          "en": "a district"
+        },
+        {
+          "en": "a country"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "miasto"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b1-e02",
+      "prompt": "stolica",
+      "options": [
+        {
+          "en": "a district"
+        },
+        {
+          "en": "a capital (Warszawa to stolica Polski)"
+        },
+        {
+          "en": "a town hall"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "stolica"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b1-e03",
+      "prompt": "Warszawa",
+      "options": [
+        {
+          "en": "Kraków"
+        },
+        {
+          "en": "Poland"
+        },
+        {
+          "en": "Warsaw"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "warszawa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-b1-e04",
+      "text": "Warszawa to stolica Polski",
+      "meaning": {
+        "en": "Warsaw is the capital of Poland"
+      },
+      "distractors": [
+        "Kraków to stolica Polski",
+        "Warszawa to miasto w Polsce"
+      ],
+      "items": [
+        "warszawa",
+        "to",
+        "stolica",
+        "polski"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b1-e05",
+      "prompt": "skrzyżowanie",
+      "options": [
+        {
+          "en": "a crossroads, a junction (do skrzyżowania: to the crossroads)"
+        },
+        {
+          "en": "a bridge"
+        },
+        {
+          "en": "a stop"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "skrzyzowanie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b1-e06",
+      "prompt": "przystanek",
+      "options": [
+        {
+          "en": "a crossroads"
+        },
+        {
+          "en": "a stop (for a bus or a tram)"
+        },
+        {
+          "en": "a station"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przystanek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b1-e07",
+      "prompt": "światła",
+      "options": [
+        {
+          "en": "stairs"
+        },
+        {
+          "en": "a bridge"
+        },
+        {
+          "en": "traffic lights; lights"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "swiatla"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-b1-e08",
+      "prompt": {
+        "en": "here there is a crossroads and traffic lights"
+      },
+      "acceptedAnswers": [
+        "tu jest skrzyżowanie i światła"
+      ],
+      "distractors": [
+        "most",
+        "rzeka"
+      ],
+      "items": [
+        "tu",
+        "byc-jest",
+        "skrzyzowanie",
+        "i",
+        "swiatla"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b1-e09",
+      "prompt": "rzeka",
+      "options": [
+        {
+          "en": "a river"
+        },
+        {
+          "en": "a bridge"
+        },
+        {
+          "en": "a street"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rzeka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b1-e10",
+      "prompt": "most",
+      "options": [
+        {
+          "en": "a river"
+        },
+        {
+          "en": "a bridge"
+        },
+        {
+          "en": "a tower"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "most"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-b1-e11",
+      "text": "To jest ___, a to jest ___.",
+      "meaning": {
+        "en": "This is a river, and this is a bridge."
+      },
+      "gaps": [
+        [
+          "rzeka"
+        ],
+        [
+          "most"
+        ]
+      ],
+      "distractors": [
+        "przystanek",
+        "miasto"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "rzeka",
+        "a",
+        "most"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-b1-e12",
+      "acceptedAnswers": [
+        "tu jest przystanek"
+      ],
+      "meaning": {
+        "en": "here is the stop"
+      },
+      "items": [
+        "tu",
+        "byc-jest",
+        "przystanek"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-b1-e13",
+      "prompt": {
+        "en": "a city"
+      },
+      "acceptedAnswers": [
+        "miasto"
+      ],
+      "items": [
+        "miasto"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-b1-e14",
+      "prompt": {
+        "en": "traffic lights"
+      },
+      "acceptedAnswers": [
+        "światła"
+      ],
+      "items": [
+        "swiatla"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-b1-e15",
+      "pairs": [
+        {
+          "polish": "miasto",
+          "meaning": {
+            "en": "a city"
+          }
+        },
+        {
+          "polish": "stolica",
+          "meaning": {
+            "en": "a capital"
+          }
+        },
+        {
+          "polish": "skrzyżowanie",
+          "meaning": {
+            "en": "a crossroads"
+          }
+        },
+        {
+          "polish": "przystanek",
+          "meaning": {
+            "en": "a stop"
+          }
+        },
+        {
+          "polish": "rzeka",
+          "meaning": {
+            "en": "a river"
+          }
+        },
+        {
+          "polish": "most",
+          "meaning": {
+            "en": "a bridge"
+          }
+        }
+      ],
+      "items": [
+        "miasto",
+        "stolica",
+        "skrzyzowanie",
+        "przystanek",
+        "rzeka",
+        "most"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-b1-e16",
+      "lines": [
+        "Kraków to piękne miasto.",
+        "Lubię Kraków: rzeka, most, stare ulice.",
+        "To nie jest stolica Polski. Stolica to Warszawa."
+      ],
+      "meaning": {
+        "en": "Kraków."
+      },
+      "statements": [
+        {
+          "text": "Kraków to stolica Polski.",
+          "meaning": {
+            "en": "Kraków is the capital of Poland."
+          },
+          "true": false
+        },
+        {
+          "text": "W Krakowie jest rzeka.",
+          "meaning": {
+            "en": "There is a river in Kraków."
+          },
+          "true": true
+        },
+        {
+          "text": "Lubię Kraków.",
+          "meaning": {
+            "en": "I like Kraków."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "miasto",
+        "rzeka",
+        "most",
+        "stolica",
+        "krakow",
+        "warszawa"
+      ]
+    }
+  ]
+}

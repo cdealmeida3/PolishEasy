@@ -1,0 +1,401 @@
+{
+  "id": "kpk1-l14-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Idziemy do pubu",
+    "meaning": {
+      "en": "We are going to the pub"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-c1-t01",
+      "before": "kpk1-l14-c1-e01",
+      "title": {
+        "en": "Jak dojść do pubu?"
+      },
+      "body": {
+        "en": "*Przepraszam, jak dojść do…?* is how you ask the way on foot: *jak dojść do kościoła?*. The answer: *proszę dojść do skrzyżowania* (go as far as the crossroads), *przejść przez park* (cross the park), *skręcić w lewo*. *Daleko* is far, *blisko* near."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c1-e01",
+      "prompt": "jak dojść…?",
+      "options": [
+        {
+          "en": "where is…?"
+        },
+        {
+          "en": "how far is it?"
+        },
+        {
+          "en": "how do I get to…? (on foot: jak dojść do kościoła?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jak-dojsc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c1-e02",
+      "prompt": "dojść",
+      "options": [
+        {
+          "en": "get to, reach (on foot: dojść do skrzyżowania)"
+        },
+        {
+          "en": "turn"
+        },
+        {
+          "en": "cross"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dojsc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-c1-e03",
+      "text": "przepraszam, jak dojść do teatru?",
+      "meaning": {
+        "en": "excuse me, how do I get to the theatre?"
+      },
+      "distractors": [
+        "przepraszam, jak dojść do kina?",
+        "przepraszam, gdzie jest teatr?"
+      ],
+      "items": [
+        "przepraszam",
+        "jak-dojsc",
+        "do-teatru"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c1-e04",
+      "prompt": "przejść",
+      "options": [
+        {
+          "en": "turn"
+        },
+        {
+          "en": "cross, go across (przejść przez park: to go across the park)"
+        },
+        {
+          "en": "get to"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przejsc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c1-e05",
+      "prompt": "przez park",
+      "options": [
+        {
+          "en": "to the park"
+        },
+        {
+          "en": "in the park"
+        },
+        {
+          "en": "across the park, through the park"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przez-park"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-c1-e06",
+      "prompt": {
+        "en": "go across the park, please"
+      },
+      "acceptedAnswers": [
+        "proszę przejść przez park"
+      ],
+      "distractors": [
+        "dojść",
+        "skręcić"
+      ],
+      "items": [
+        "prosze",
+        "przejsc",
+        "przez-park"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c1-e07",
+      "prompt": "daleko",
+      "options": [
+        {
+          "en": "far, far away"
+        },
+        {
+          "en": "near"
+        },
+        {
+          "en": "long"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "daleko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c1-e08",
+      "prompt": "blisko",
+      "options": [
+        {
+          "en": "far"
+        },
+        {
+          "en": "near, close by"
+        },
+        {
+          "en": "outside"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "blisko"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-c1-e09",
+      "text": "To ___? Nie, to ___!",
+      "meaning": {
+        "en": "Is it far? No, it is near!"
+      },
+      "gaps": [
+        [
+          "daleko"
+        ],
+        [
+          "blisko"
+        ]
+      ],
+      "distractors": [
+        "długo",
+        "prosto"
+      ],
+      "items": [
+        "to",
+        "daleko",
+        "nie",
+        "blisko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c1-e10",
+      "prompt": "w pubie",
+      "options": [
+        {
+          "en": "to the pub"
+        },
+        {
+          "en": "in the park"
+        },
+        {
+          "en": "in the pub"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-pubie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-c1-e11",
+      "prompt": "czekamy",
+      "options": [
+        {
+          "en": "we are waiting, we wait"
+        },
+        {
+          "en": "we are going"
+        },
+        {
+          "en": "we are looking for"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czekac-czekamy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-c1-e12",
+      "acceptedAnswers": [
+        "czekamy w pubie"
+      ],
+      "meaning": {
+        "en": "we are waiting in the pub"
+      },
+      "items": [
+        "czekac-czekamy",
+        "w-pubie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-c1-e13",
+      "prompt": {
+        "en": "how do I get to the café?"
+      },
+      "acceptedAnswers": [
+        "jak dojść do kawiarni?"
+      ],
+      "items": [
+        "jak-dojsc",
+        "do-kawiarni"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-c1-e14",
+      "lines": [
+        "Proszę skręcić w lewo i iść prosto.",
+        "Potem proszę dojść do skrzyżowania i przejść przez park.",
+        "Pub jest blisko, po lewej stronie."
+      ],
+      "meaning": {
+        "en": "The way to the pub."
+      },
+      "statements": [
+        {
+          "text": "Pub jest daleko.",
+          "meaning": {
+            "en": "The pub is far away."
+          },
+          "true": false
+        },
+        {
+          "text": "Trzeba przejść przez park.",
+          "meaning": {
+            "en": "You need to cross the park."
+          },
+          "true": true
+        },
+        {
+          "text": "Najpierw skręcamy w lewo.",
+          "meaning": {
+            "en": "First we turn left."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "skrecic",
+        "w-lewo",
+        "prosto",
+        "dojsc",
+        "przejsc",
+        "przez-park",
+        "blisko",
+        "po-lewej-stronie"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l14-c1-e15",
+      "lines": [
+        "Przepraszam, jak dojść do pubu?",
+        "Proszę iść prosto, a potem skręcić w prawo.",
+        "To daleko?",
+        "Nie, to blisko."
+      ],
+      "meaning": {
+        "en": "Asking the way to the pub."
+      },
+      "items": [
+        "przepraszam",
+        "jak-dojsc",
+        "do-pubu",
+        "prosze",
+        "isc",
+        "prosto",
+        "a",
+        "potem",
+        "skrecic",
+        "w-prawo",
+        "to",
+        "daleko",
+        "nie",
+        "blisko"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-c1-e16",
+      "pairs": [
+        {
+          "polish": "dojść",
+          "meaning": {
+            "en": "to get to"
+          }
+        },
+        {
+          "polish": "przejść",
+          "meaning": {
+            "en": "to cross"
+          }
+        },
+        {
+          "polish": "przez park",
+          "meaning": {
+            "en": "across the park"
+          }
+        },
+        {
+          "polish": "daleko",
+          "meaning": {
+            "en": "far"
+          }
+        },
+        {
+          "polish": "blisko",
+          "meaning": {
+            "en": "near"
+          }
+        },
+        {
+          "polish": "w pubie",
+          "meaning": {
+            "en": "in the pub"
+          }
+        }
+      ],
+      "items": [
+        "dojsc",
+        "przejsc",
+        "przez-park",
+        "daleko",
+        "blisko",
+        "w-pubie"
+      ]
+    }
+  ]
+}

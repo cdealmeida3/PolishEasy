@@ -1,0 +1,397 @@
+{
+  "id": "kpk1-l14-b5",
+  "section": {
+    "letter": "B",
+    "heading": "Zwiedzamy",
+    "meaning": {
+      "en": "We are sightseeing"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l14-b5-t01",
+      "before": "kpk1-l14-b5-e01",
+      "title": {
+        "en": "W środku, na zewnątrz"
+      },
+      "body": {
+        "en": "*W środku* is inside, or in the middle: *ja chcę stać w środku!* (I want to stand in the middle!). *Na zewnątrz* is outside. *Jak długo?* asks how long, and *idealne miejsce* is the perfect place."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b5-e01",
+      "prompt": "w środku",
+      "options": [
+        {
+          "en": "outside"
+        },
+        {
+          "en": "inside; in the middle"
+        },
+        {
+          "en": "at the top"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-srodku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b5-e02",
+      "prompt": "na zewnątrz",
+      "options": [
+        {
+          "en": "inside"
+        },
+        {
+          "en": "at the bottom"
+        },
+        {
+          "en": "outside"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-zewnatrz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-b5-e03",
+      "text": "zdjęcie na zewnątrz",
+      "meaning": {
+        "en": "a photo outside"
+      },
+      "distractors": [
+        "zdjęcie w środku",
+        "zdjęcie na górze"
+      ],
+      "items": [
+        "zdjecie",
+        "na-zewnatrz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b5-e04",
+      "prompt": "schody",
+      "options": [
+        {
+          "en": "stairs, steps"
+        },
+        {
+          "en": "a lift"
+        },
+        {
+          "en": "a bridge"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "schody"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b5-e05",
+      "prompt": "długo",
+      "options": [
+        {
+          "en": "far"
+        },
+        {
+          "en": "long, for a long time (jak długo?: how long?)"
+        },
+        {
+          "en": "often"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dlugo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b5-e06",
+      "prompt": "zwiedzać",
+      "options": [
+        {
+          "en": "to go shopping"
+        },
+        {
+          "en": "to take photos"
+        },
+        {
+          "en": "go sightseeing, visit (to visit a city or a museum)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zwiedzac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l14-b5-e07",
+      "text": "lubię zwiedzać",
+      "meaning": {
+        "en": "I like sightseeing"
+      },
+      "distractors": [
+        "lubię czytać",
+        "lubisz zwiedzać"
+      ],
+      "items": [
+        "lubic-lubie",
+        "zwiedzac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l14-b5-e08",
+      "prompt": {
+        "en": "how long do you want to go sightseeing?"
+      },
+      "acceptedAnswers": [
+        "jak długo chcesz zwiedzać?"
+      ],
+      "distractors": [
+        "daleko",
+        "chcemy"
+      ],
+      "items": [
+        "jak",
+        "dlugo",
+        "chciec-chcesz",
+        "zwiedzac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b5-e09",
+      "prompt": "idealny",
+      "options": [
+        {
+          "en": "perfect, ideal (idealny, idealna, idealne)"
+        },
+        {
+          "en": "expensive"
+        },
+        {
+          "en": "famous"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "idealny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l14-b5-e10",
+      "prompt": "miejsce",
+      "options": [
+        {
+          "en": "a street"
+        },
+        {
+          "en": "a place"
+        },
+        {
+          "en": "a photo"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "miejsce"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l14-b5-e11",
+      "acceptedAnswers": [
+        "to idealne miejsce"
+      ],
+      "meaning": {
+        "en": "it is the perfect place"
+      },
+      "items": [
+        "to",
+        "idealny",
+        "miejsce"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l14-b5-e12",
+      "text": "Tam są ___. To ___ miejsce!",
+      "meaning": {
+        "en": "There are steps there. It is the perfect place!"
+      },
+      "gaps": [
+        [
+          "schody"
+        ],
+        [
+          "idealne"
+        ]
+      ],
+      "distractors": [
+        "światła",
+        "znane"
+      ],
+      "items": [
+        "tam",
+        "byc-sa",
+        "schody",
+        "to",
+        "idealny",
+        "miejsce"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l14-b5-e13",
+      "prompt": {
+        "en": "outside"
+      },
+      "acceptedAnswers": [
+        "na zewnątrz"
+      ],
+      "items": [
+        "na-zewnatrz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l14-b5-e14",
+      "pairs": [
+        {
+          "polish": "w środku",
+          "meaning": {
+            "en": "in the middle"
+          }
+        },
+        {
+          "polish": "na zewnątrz",
+          "meaning": {
+            "en": "outside"
+          }
+        },
+        {
+          "polish": "schody",
+          "meaning": {
+            "en": "steps"
+          }
+        },
+        {
+          "polish": "długo",
+          "meaning": {
+            "en": "for a long time"
+          }
+        },
+        {
+          "polish": "miejsce",
+          "meaning": {
+            "en": "a place"
+          }
+        },
+        {
+          "polish": "na dole",
+          "meaning": {
+            "en": "at the bottom"
+          }
+        }
+      ],
+      "items": [
+        "w-srodku",
+        "na-zewnatrz",
+        "schody",
+        "dlugo",
+        "miejsce",
+        "na-dole"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l14-b5-e15",
+      "lines": [
+        "Najpierw zdjęcie na zewnątrz.",
+        "Naprzeciwko jest wieża ratuszowa. Tam są schody: idealne miejsce!",
+        "Kto stoi na górze, kto na dole? Adam chce stać w środku."
+      ],
+      "meaning": {
+        "en": "A group photo."
+      },
+      "statements": [
+        {
+          "text": "Zdjęcie jest w środku.",
+          "meaning": {
+            "en": "The photo is inside."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam chce stać w środku.",
+          "meaning": {
+            "en": "Adam wants to stand in the middle."
+          },
+          "true": true
+        },
+        {
+          "text": "Tam są schody.",
+          "meaning": {
+            "en": "There are steps there."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "na-zewnatrz",
+        "schody",
+        "idealny",
+        "miejsce",
+        "na-gorze",
+        "na-dole",
+        "w-srodku"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l14-b5-e16",
+      "lines": [
+        "Gdzie robimy zdjęcie?",
+        "Naprzeciwko są schody.",
+        "Idealne miejsce!",
+        "Ja chcę stać w środku!"
+      ],
+      "meaning": {
+        "en": "Where shall we take the photo?"
+      },
+      "items": [
+        "gdzie",
+        "robic-robimy",
+        "zdjecie",
+        "naprzeciwko",
+        "byc-sa",
+        "schody",
+        "idealny",
+        "miejsce",
+        "ja",
+        "chciec-chce",
+        "w-srodku"
+      ]
+    }
+  ]
+}
