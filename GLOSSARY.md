@@ -157,6 +157,10 @@ _Avoid_: Shop game, money quiz
 The Game of ticking numbers from a hundred to a thousand on a card as they are called in Polish. Chapter 7's Game.
 _Avoid_: Bingo, number card
 
+**Plate builder**:
+The Game of putting on a plate the foods of a dish ordered in Polish, *chleb z masłem*, or of two, *i herbata z cytryną*. Chapter 8's Game.
+_Avoid_: Breakfast game, food quiz
+
 **Register sort**:
 The Game of sorting learned phrases by Register, against the clock: to *pan* or *pani* (O), to a friend (N) or to anyone (U).
 _Avoid_: Formality quiz

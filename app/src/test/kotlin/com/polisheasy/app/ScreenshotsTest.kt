@@ -26,6 +26,7 @@ import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.semantics.getOrNull
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.hasClickAction
+import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
@@ -74,6 +75,7 @@ import com.polisheasy.engine.WhoRound
 import com.polisheasy.engine.VerbGroupRound
 import com.polisheasy.engine.HobbyRound
 import com.polisheasy.engine.LottoRound
+import com.polisheasy.engine.PlateRound
 import com.polisheasy.engine.TillRound
 import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.MemoryFace
@@ -721,6 +723,47 @@ class ScreenshotsTest {
         ).forEach { (section, name) ->
             screen.runOnUiThread {
                 model.openLesson("kpk1-l07")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
+    fun `chapter 8 of the book over the real course in the light theme`() = chapter8Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 8 of the book over the real course in the dark theme`() = chapter8Tour("dark")
+
+    @Test
+    fun `chapter 8 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter8Tour("large") }
+
+    /**
+     * Chapter 8 over the real course: its Lesson screen at the top and its sections, then section
+     * A's tables of woleć and of the instrumental after z, its adjectives made from food, and
+     * section B's table of -ami.
+     */
+    private fun chapter8Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l08") }
+        screen.waitForIdle()
+        shot("229-chapter-8")
+        screen.onAllNodes(hasText("Kolacja", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("229-chapter-8-sections")
+        listOf(
+            "kpk1-l08-a4" to "230-chapter-8-wolec",
+            "kpk1-l08-a6" to "231-chapter-8-z-czym",
+            "kpk1-l08-a10" to "232-chapter-8-adjectives",
+            "kpk1-l08-b4" to "233-chapter-8-ami",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l08")
                 model.openSection(section)
             }
             screen.waitForIdle()
@@ -2078,6 +2121,57 @@ class ScreenshotsTest {
         val called = checkNotNull(lotto().question).number
         screen.onNode(hasText("${lotto().card.first { it != called && it !in lotto().ticked }}") and hasClickAction()).performScrollTo().performClick()
         shot("228-lotto-wrong")
+    }
+
+    @Test
+    fun `Plate builder over the real course in the light theme`() = chapter8Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Plate builder over the real course in the dark theme`() = chapter8Games("dark")
+
+    @Test
+    fun `Plate builder over the real course at the largest font size`() = atTheLargestFontSize { chapter8Games("large") }
+
+    /** Chapter 8's Game: Plate builder's setup, an order read with one food on the plate, served right and wrong, and two dishes heard. */
+    private fun chapter8Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun plate() = (viewModel?.screen as Screen.Round).round as PlateRound
+
+        fun put(id: String) {
+            val food = checkNotNull(plate().question).tray.single { it.id == id }
+            screen.onAllNodes(hasContentDescription(food.means) and hasClickAction()).onLast().performScrollTo().performClick()
+        }
+
+        openRealPractice()
+        openGame(R.string.game_plate_builder)
+        shot("234-plate-setup")
+        tap(R.string.option_read)
+        tap(R.string.setup_play)
+        val first = checkNotNull(plate().question)
+        put(first.wanted.first())
+        shot("235-plate-one-on")
+        first.wanted.drop(1).forEach { put(it) }
+        screen.mainClock.autoAdvance = false
+        tap(R.string.plate_serve)
+        screen.mainClock.advanceTimeBy(100)
+        shot("236-plate-right")
+        screen.mainClock.autoAdvance = true
+        tap(R.string.action_continue)
+        val second = checkNotNull(plate().question)
+        put(second.wanted.first())
+        put(second.tray.first { it.id !in second.wanted }.id)
+        tap(R.string.plate_serve)
+        shot("237-plate-wrong")
+        leaveRound()
+
+        openGame(R.string.game_plate_builder)
+        tap(R.string.option_listen)
+        screen.onNodeWithText(app.getString(R.string.option_two_dishes)).performScrollTo().performClick()
+        tap(R.string.setup_play)
+        checkNotNull(plate().question).wanted.take(3).forEach { put(it) }
+        shot("238-plate-two-dishes")
     }
 
     private fun registerSort(theme: String) {

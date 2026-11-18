@@ -32,6 +32,7 @@ Practice is the Games a Learner plays after today's Daily Set. This is how it is
 | Hobby charades | `engine/.../HobbyCharades.kt` |
 | Kiosk till | `engine/.../KioskTill.kt` |
 | Lotto | `engine/.../Lotto.kt` |
+| Plate builder | `engine/.../PlateBuilder.kt` |
 | Spell it | `engine/.../SpellIt.kt` |
 | Quick round | `engine/.../QuickRound.kt` |
 | Register sort | `engine/.../RegisterSort.kt` |
@@ -142,6 +143,8 @@ The clock is the only kind in the app. The engine does not read the time: the sc
 
 **Lotto** (Numbers). Chapter 7's Game, after the book's lottery. Opens once a card of round hundreds can be said, *sto* to *dziewięćset* or *tysiąc*: a number is said in learned words, its hundred and then the rest, *trzysta czterdzieści dwa*. Ways to play: heard (with sound on, where every word has a Clip) or read; the round hundreds, or any number from 100 to 1000, offered once more than the hundreds can be said. A card is nine numbers, smallest first, three across: five are called, one at a time, and each brings one that sounds like it, the same rest under another hundred or the same hundred and unit with another ten. The Learner ticks the number called. A right answer moves on by itself; a wrong one marks the number called and waits for "Continue". A number called stays ticked. The result is the numbers ticked right first try.
 
+**Plate builder** (Words). Chapter 8's Game, after the book's breakfast. Opens once four dishes of `plates` in `practice.json` are learned: a dish is a base, its phrase with *z* and its topping (*chleb*, *z masłem*, *masło*), all learned, with different Pictures for the base and the topping. Ways to play: the order heard (with sound on, where the base and its phrase have Clips) or read; one dish, or two joined by *i* (*chleb z masłem i herbata z cytryną*), offered once *i* is learned and two dishes with different bases and four different Pictures can be ordered. The plate is empty and the tray below holds the foods wanted among others, six for one dish and eight for two, each Picture once: first the toppings that go on the same base and the bases the same topping goes on, so *herbata z mlekiem* has the lemon beside the milk. A tap puts a food on the plate or takes it off, from the tray or the plate, and "Serve" checks it: only exactly the foods wanted are right. Once served, the wanted foods are marked right, those put on wrongly a cross, and the order is written below. A right answer moves on by itself; a wrong one waits for "Continue". A Round is up to six orders. The result is the orders served right first try.
+
 **Ankieta** (Phrases). Chapter 2's Game, after the book's *dane personalne*. Opens once three people of `content/kpk1/ankieta.json` can be met: every Item a person lists is learned. Ways to play: their introductions heard (with sound on, where every line has a Clip) or read. A Round meets three people, those not met today first. Each introduces themselves in a few lines, and the Learner fills in a form for them a field at a time: *Imię*, *Skąd jest?*, *Gdzie mieszka?*, *Numer telefonu*, *Dlaczego uczy się polskiego?*. Each field offers the right answer among those of the other people who can be met and the wrong ones written for it, at most four, two across. Heard, all a person says is played when they appear and again from the play button, and is written only once the form is filled in; read, it is one chat bubble from the start. Once the form is filled in, what was said is shown with its meaning. A right answer fills the field and moves on by itself; a wrong one fills it with the right answer in amber and waits for "Continue". The result is the fields right first try.
 
 ## What Practice needs from the content
@@ -161,6 +164,8 @@ The clock is the only kind in the app. The engine does not read the time: the sc
 - `hobbies`: for Hobby charades, each hobby as the Item ids that say it, in order, `[["gotowac"], ["jezdzic", "na-rowerze"]]`. The hobby reads as their texts joined by a space, and at least one of its Items must have a Picture. The content check fails on an empty hobby, an Item that is not defined, a hobby with no Picture, or one listed twice.
 
 - `till`: for Kiosk till, `{ "zloty": "zloty", "grosz": "grosz", "and": "i", "costs": "kosztowac-kosztuje", "goods": ["gazeta", "bilet"] }`: the money, each with its forms after 2 and after 5 as its two forms; the Items that join złoty and grosze and say "costs"; and the goods on the counter. The content check fails on an Item that is not defined, money without both forms, or a good with no Picture or listed twice.
+
+- `plates`: for Plate builder, `{ "and": "i", "dishes": [["chleb", "z-maslem", "maslo"]] }`: the Item that joins two dishes, and each dish as its base, its phrase with *z* and its topping. The content check fails on an Item that is not defined, a dish that is not three Items, a base or topping with no Picture, a base and topping with the same Picture, or a dish listed twice.
 
 A new Unit adds its nouns to `genders`, its opposite adjectives to `opposites`, its jobs to `jobs`, and its hobbies to `hobbies`.
 

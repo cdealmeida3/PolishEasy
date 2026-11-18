@@ -50,6 +50,8 @@ data class Course(
     val hobbies: List<List<String>> = emptyList(),
     /** The money, words and goods of Kiosk till, or null if the content has none. */
     val till: Till? = null,
+    /** The dishes of Plate builder and the Item that joins two, or null if the content has none. */
+    val plates: Plates? = null,
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

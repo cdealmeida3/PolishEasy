@@ -570,5 +570,21 @@
     "and": "i",
     "costs": "kosztowac-kosztuje",
     "goods": ["gazeta", "bilet", "woda", "kanapka", "sok", "kawa", "herbata", "ciastko", "kupon"]
+  },
+  "plates": {
+    "and": "i",
+    "dishes": [
+      ["chleb", "z-maslem", "maslo"],
+      ["herbata", "z-cytryna", "cytryna"],
+      ["kawa", "z-mlekiem", "mleko"],
+      ["herbata", "z-mlekiem", "mleko"],
+      ["kanapka", "z-serem", "ser"],
+      ["chleb", "z-serem", "ser"],
+      ["ryba", "z-frytkami", "frytki"],
+      ["kurczak", "z-frytkami", "frytki"],
+      ["salatka", "z-oliwkami", "oliwki"],
+      ["salatka", "z-pieczarkami", "pieczarki"],
+      ["makaron", "z-serem", "ser"]
+    ]
   }
 }

@@ -46,6 +46,8 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     KIOSK_TILL("kiosk-till", GameGroup.NUMBERS),
     /** Chapter 7's Game: numbers up to a thousand are called, and the Learner ticks them on a card. */
     LOTTO("lotto", GameGroup.NUMBERS),
+    /** Chapter 8's Game: a dish is ordered, chleb z masłem, and the Learner puts its foods on a plate. */
+    PLATE_BUILDER("plate-builder", GameGroup.WORDS),
 }
 
 /** Whether a Game can be played now. */
@@ -251,7 +253,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null
