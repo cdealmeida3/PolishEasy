@@ -1,0 +1,434 @@
+{
+  "id": "kpk1-l12-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Macie ochotę pójść na spektakl?",
+    "meaning": {
+      "en": "Do you feel like going to a show?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-a1-t01",
+      "before": "kpk1-l12-a1-e01",
+      "title": {
+        "en": "Macie ochotę pójść?"
+      },
+      "body": {
+        "en": "*Masz ochotę pójść…?* asks a friend whether they feel like going somewhere; to several people it is *macie ochotę*. *Pójść* is to go, once: *chcesz pójść na spektakl?*. *Zaproszenie* is an invitation, and *mam trzy zaproszenia* is I have three of them."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a1-e01",
+      "prompt": "spektakl",
+      "options": [
+        {
+          "en": "a show, a performance (in a theatre)"
+        },
+        {
+          "en": "a film"
+        },
+        {
+          "en": "a museum"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "spektakl"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a1-e02",
+      "prompt": "teatr",
+      "options": [
+        {
+          "en": "a museum"
+        },
+        {
+          "en": "a theatre"
+        },
+        {
+          "en": "a restaurant"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "teatr"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-a1-e03",
+      "text": "to bardzo stary teatr",
+      "meaning": {
+        "en": "it is a very old theatre"
+      },
+      "distractors": [
+        "to bardzo ciekawy teatr",
+        "to bardzo stary film"
+      ],
+      "items": [
+        "to",
+        "bardzo",
+        "stary",
+        "teatr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a1-e04",
+      "prompt": "zaproszenie",
+      "options": [
+        {
+          "en": "a ticket (bilety: tickets)"
+        },
+        {
+          "en": "a booking, a reservation"
+        },
+        {
+          "en": "an invitation (zaproszenia: invitations)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zaproszenie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-a1-e05",
+      "text": "Mam trzy ___.",
+      "meaning": {
+        "en": "I have three invitations."
+      },
+      "gaps": [
+        [
+          "zaproszenia"
+        ]
+      ],
+      "distractors": [
+        "zaproszenie",
+        "bilet"
+      ],
+      "items": [
+        "miec-mam",
+        "trzy",
+        "zaproszenie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a1-e06",
+      "prompt": "pójść",
+      "options": [
+        {
+          "en": "go (to go, once: chcesz pójść?)"
+        },
+        {
+          "en": "I am going (on foot)"
+        },
+        {
+          "en": "go (to go on foot, or regularly)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pojsc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a1-e07",
+      "prompt": "masz ochotę",
+      "options": [
+        {
+          "en": "you want (one friend)"
+        },
+        {
+          "en": "do you feel like…? (one friend: masz ochotę pójść?; several people: macie ochotę)"
+        },
+        {
+          "en": "you have (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "masz-ochote"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-a1-e08",
+      "prompt": {
+        "en": "do you feel like going? (one friend)"
+      },
+      "acceptedAnswers": [
+        "masz ochotę pójść?"
+      ],
+      "distractors": [
+        "macie",
+        "iść"
+      ],
+      "items": [
+        "masz-ochote",
+        "pojsc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a1-e09",
+      "prompt": "randka",
+      "options": [
+        {
+          "en": "a party (after organizuję, planuję…)"
+        },
+        {
+          "en": "supper, the evening meal"
+        },
+        {
+          "en": "a date (ma randkę: he has a date)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "randka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a1-e10",
+      "prompt": "komedia romantyczna",
+      "options": [
+        {
+          "en": "a romantic comedy"
+        },
+        {
+          "en": "a film"
+        },
+        {
+          "en": "a TV series"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "komedia-romantyczna"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-a1-e11",
+      "acceptedAnswers": [
+        "on ma randkę"
+      ],
+      "meaning": {
+        "en": "he has a date"
+      },
+      "items": [
+        "on",
+        "miec-ma",
+        "randka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a1-e12",
+      "prompt": "to nie wasza sprawa",
+      "options": [
+        {
+          "en": "no problem (answer to \"sorry\")"
+        },
+        {
+          "en": "it's none of your business (to several people)"
+        },
+        {
+          "en": "all right; fine"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "to-nie-wasza-sprawa"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-a1-e13",
+      "prompt": {
+        "en": "it's none of your business (to several people)"
+      },
+      "acceptedAnswers": [
+        "to nie wasza sprawa"
+      ],
+      "items": [
+        "to-nie-wasza-sprawa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-a1-e14",
+      "text": "to nie wasza sprawa",
+      "meaning": {
+        "en": "it's none of your business"
+      },
+      "distractors": [
+        "to nie nasza sprawa",
+        "to nie wasza kawa"
+      ],
+      "items": [
+        "to-nie-wasza-sprawa"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-a1-e15",
+      "pairs": [
+        {
+          "polish": "spektakl",
+          "meaning": {
+            "en": "a show"
+          }
+        },
+        {
+          "polish": "teatr",
+          "meaning": {
+            "en": "a theatre"
+          }
+        },
+        {
+          "polish": "zaproszenie",
+          "meaning": {
+            "en": "an invitation"
+          }
+        },
+        {
+          "polish": "randka",
+          "meaning": {
+            "en": "a date"
+          }
+        },
+        {
+          "polish": "pójść",
+          "meaning": {
+            "en": "to go"
+          }
+        },
+        {
+          "polish": "komedia romantyczna",
+          "meaning": {
+            "en": "a romantic comedy"
+          }
+        }
+      ],
+      "items": [
+        "spektakl",
+        "teatr",
+        "zaproszenie",
+        "randka",
+        "pojsc",
+        "komedia-romantyczna"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-a1-e16",
+      "lines": [
+        "Dziś wieczorem jest spektakl w teatrze.",
+        "Ewa ma trzy zaproszenia.",
+        "Adam nie może, bo ma randkę: idzie na komedię romantyczną."
+      ],
+      "meaning": {
+        "en": "A show tonight."
+      },
+      "statements": [
+        {
+          "text": "Spektakl jest jutro.",
+          "meaning": {
+            "en": "The show is tomorrow."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa ma zaproszenia.",
+          "meaning": {
+            "en": "Ewa has invitations."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam idzie na spektakl.",
+          "meaning": {
+            "en": "Adam is going to the show."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "dzis",
+        "wieczorem",
+        "byc-jest",
+        "spektakl",
+        "w-teatrze",
+        "ewa",
+        "miec-ma",
+        "trzy",
+        "zaproszenie",
+        "adam",
+        "nie",
+        "bo",
+        "randka",
+        "komedia-romantyczna"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-a1-e17",
+      "lines": [
+        "Masz ochotę pójść na spektakl?",
+        "A kiedy?",
+        "Dziś wieczorem.",
+        "Dobrze, mam czas."
+      ],
+      "meaning": {
+        "en": "An invitation."
+      },
+      "items": [
+        "masz-ochote",
+        "pojsc",
+        "spektakl",
+        "a",
+        "kiedy",
+        "dzis",
+        "wieczorem",
+        "dobrze",
+        "miec-mam",
+        "czas"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-a1-e18",
+      "prompt": {
+        "en": "tonight I can't"
+      },
+      "acceptedAnswers": [
+        "dziś wieczorem nie mogę"
+      ],
+      "distractors": [
+        "możesz",
+        "jutro"
+      ],
+      "items": [
+        "dzis",
+        "wieczorem",
+        "nie",
+        "moc-moge"
+      ]
+    }
+  ]
+}

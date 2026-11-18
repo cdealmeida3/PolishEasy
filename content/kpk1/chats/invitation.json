@@ -1,0 +1,186 @@
+{
+  "id": "chat-invitation",
+  "person": "Ola",
+  "title": {
+    "en": "An invitation"
+  },
+  "scene": {
+    "en": "Your friend Ola has tickets for a concert this weekend. On Friday evening you have dinner at your grandma's, but on Saturday you are free, and you love concerts. Ola is your friend: to her you are ty."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "masz-ochote",
+    "pojsc",
+    "na-koncert",
+    "chetnie",
+    "a",
+    "kiedy",
+    "niestety",
+    "nie-mam-czasu",
+    "piatek",
+    "albo",
+    "sobota",
+    "miec-masz",
+    "czas",
+    "nie",
+    "moc-moge",
+    "ale",
+    "miec-mam",
+    "dobrze",
+    "zaczyna-sie",
+    "o-godz",
+    "dwudziesta",
+    "swietnie",
+    "gdzie-sie-spotkamy",
+    "przykro-mi",
+    "nie-dam-rady",
+    "moze",
+    "na-rynku",
+    "pod-pomnikiem",
+    "wpol-do",
+    "osma",
+    "dziewiata",
+    "jasne",
+    "dziekuje-za-zaproszenie",
+    "pani",
+    "nie-ma-za-co",
+    "to"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Masz ochotę pójść na koncert?",
+      "meaning": {
+        "en": "Hi! Do you feel like going to a concert?"
+      },
+      "replies": [
+        {
+          "text": "Chętnie! A kiedy?",
+          "meaning": {
+            "en": "Gladly! When?"
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Chętnie! A kiedy?",
+            "Chętnie, a kiedy?"
+          ]
+        },
+        {
+          "text": "Niestety, nie mam czasu.",
+          "meaning": {
+            "en": "Unfortunately, I have no time."
+          },
+          "note": {
+            "en": "You love concerts and you are free at the weekend: say yes, *chętnie!*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "W piątek albo w sobotę. Kiedy masz czas?",
+      "meaning": {
+        "en": "On Friday or on Saturday. When are you free?"
+      },
+      "replies": [
+        {
+          "text": "W piątek nie mogę, ale w sobotę mam czas.",
+          "meaning": {
+            "en": "I can't on Friday, but on Saturday I'm free."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "W piątek nie mogę, ale w sobotę mam czas."
+          ]
+        },
+        {
+          "text": "W piątek mam czas.",
+          "meaning": {
+            "en": "I'm free on Friday."
+          },
+          "note": {
+            "en": "On Friday you have dinner at your grandma's: *w piątek nie mogę, ale w sobotę mam czas*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Dobrze, w sobotę. Zaczyna się o dwudziestej.",
+      "meaning": {
+        "en": "All right, on Saturday. It starts at 8 p.m."
+      },
+      "replies": [
+        {
+          "text": "Świetnie! Gdzie się spotkamy?",
+          "meaning": {
+            "en": "Great! Where shall we meet?"
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Świetnie! Gdzie się spotkamy?"
+          ]
+        },
+        {
+          "text": "O dwudziestej? Przykro mi, nie dam rady.",
+          "meaning": {
+            "en": "At 8 p.m.? I'm sorry, I can't make it."
+          },
+          "note": {
+            "en": "Eight in the evening suits you: say so and ask where to meet, *gdzie się spotkamy?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Może na rynku, pod pomnikiem? O wpół do ósmej.",
+      "meaning": {
+        "en": "Maybe in the square, by the monument? At half past seven."
+      },
+      "replies": [
+        {
+          "text": "Jasne! Dziękuję za zaproszenie!",
+          "meaning": {
+            "en": "Sure! Thank you for the invitation!"
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Jasne! Dziękuję za zaproszenie!"
+          ]
+        },
+        {
+          "text": "Jasne! O wpół do dziewiątej.",
+          "meaning": {
+            "en": "Sure! At half past eight."
+          },
+          "note": {
+            "en": "*Wpół do ósmej* is 7:30, half an hour before the concert, and it suits you: just agree and thank Ola."
+          }
+        },
+        {
+          "text": "Dziękuję pani za zaproszenie.",
+          "meaning": {
+            "en": "Thank you for the invitation (to a woman, formal)."
+          },
+          "register": "formal",
+          "note": {
+            "en": "Ola is your friend: no *pani*, just *dziękuję za zaproszenie!*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Nie ma za co! To w sobotę, pod pomnikiem!",
+      "meaning": {
+        "en": "You're welcome! See you on Saturday, by the monument!"
+      }
+    }
+  ]
+}

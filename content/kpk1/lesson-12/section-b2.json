@@ -1,0 +1,457 @@
+{
+  "id": "kpk1-l12-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Która godzina? O której godzinie?",
+    "meaning": {
+      "en": "What time is it? At what time?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-b2-t01",
+      "before": "kpk1-l12-b2-e01",
+      "title": {
+        "en": "O której?"
+      },
+      "body": {
+        "en": "*O której (godzinie)?* asks at what time. The answer is *o* and the hour ending in *-ej*: *o pierwszej*, *o drugiej*, *o siódmej*, *o ósmej*, *o dwunastej*."
+      },
+      "table": {
+        "title": {
+          "en": "Która godzina? O której?"
+        },
+        "columns": [
+          {
+            "header": "jest…"
+          },
+          {
+            "header": "o…"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "pierwsz[a]",
+              "pierwsz[ej]"
+            ]
+          },
+          {
+            "cells": [
+              "drug[a]",
+              "drug[iej]"
+            ]
+          },
+          {
+            "cells": [
+              "trzeci[a]",
+              "trzeci[ej]"
+            ]
+          },
+          {
+            "cells": [
+              "ósm[a]",
+              "ósm[ej]"
+            ]
+          },
+          {
+            "cells": [
+              "dwunast[a]",
+              "dwunast[ej]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b2-e01",
+      "prompt": "siódma",
+      "options": [
+        {
+          "en": "eight o'clock"
+        },
+        {
+          "en": "seven"
+        },
+        {
+          "en": "seven o'clock (jest siódma; o siódmej: at seven)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "siodma"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b2-e02",
+      "prompt": "ósma",
+      "options": [
+        {
+          "en": "eight o'clock (jest ósma; o ósmej: at eight)"
+        },
+        {
+          "en": "eight"
+        },
+        {
+          "en": "nine o'clock"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "osma"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-b2-e03",
+      "text": "jest ósma",
+      "meaning": {
+        "en": "it's eight o'clock"
+      },
+      "distractors": [
+        "jest siódma",
+        "jest dziewiąta"
+      ],
+      "items": [
+        "byc-jest",
+        "osma"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b2-e04",
+      "prompt": "dziewiąta",
+      "options": [
+        {
+          "en": "ten o'clock"
+        },
+        {
+          "en": "nine o'clock (jest dziewiąta; o dziewiątej: at nine)"
+        },
+        {
+          "en": "nine"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dziewiata"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b2-e05",
+      "prompt": "dziesiąta",
+      "options": [
+        {
+          "en": "ten"
+        },
+        {
+          "en": "twelve o'clock"
+        },
+        {
+          "en": "ten o'clock (jest dziesiąta; o dziesiątej: at ten)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dziesiata"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b2-e06",
+      "prompt": "jedenasta",
+      "options": [
+        {
+          "en": "eleven o'clock (jest jedenasta; o jedenastej: at eleven)"
+        },
+        {
+          "en": "eleven"
+        },
+        {
+          "en": "one o'clock"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jedenasta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b2-e07",
+      "prompt": "dwunasta",
+      "options": [
+        {
+          "en": "twelve"
+        },
+        {
+          "en": "twelve o'clock (jest dwunasta; o dwunastej: at twelve)"
+        },
+        {
+          "en": "midnight"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dwunasta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b2-e08",
+      "prompt": "o",
+      "options": [
+        {
+          "en": "from"
+        },
+        {
+          "en": "till"
+        },
+        {
+          "en": "at (with the time: o ósmej, at eight)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "o-godz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b2-e09",
+      "prompt": "o której?",
+      "options": [
+        {
+          "en": "at what time? (o której godzinie?)"
+        },
+        {
+          "en": "what time is it?"
+        },
+        {
+          "en": "how often?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "o-ktorej"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-b2-e10",
+      "text": "O której jesz śniadanie? O ___.",
+      "meaning": {
+        "en": "What time do you have breakfast? At eight."
+      },
+      "gaps": [
+        [
+          "ósmej"
+        ]
+      ],
+      "distractors": [
+        "ósma",
+        "osiem"
+      ],
+      "items": [
+        "o-ktorej",
+        "jesc-jesz",
+        "sniadanie",
+        "o-godz",
+        "osma"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-b2-e11",
+      "prompt": {
+        "en": "at seven"
+      },
+      "acceptedAnswers": [
+        "o siódmej"
+      ],
+      "distractors": [
+        "siódma",
+        "w"
+      ],
+      "items": [
+        "o-godz",
+        "siodma"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-b2-e12",
+      "acceptedAnswers": [
+        "o dziesiątej jest lekcja"
+      ],
+      "meaning": {
+        "en": "at ten there is a lesson"
+      },
+      "items": [
+        "o-godz",
+        "dziesiata",
+        "byc-jest",
+        "lekcja"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-b2-e13",
+      "prompt": {
+        "en": "at what time?"
+      },
+      "acceptedAnswers": [
+        "o której?",
+        "o której godzinie?"
+      ],
+      "items": [
+        "o-ktorej"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-b2-e14",
+      "pairs": [
+        {
+          "polish": "siódma",
+          "meaning": {
+            "en": "7:00"
+          }
+        },
+        {
+          "polish": "ósma",
+          "meaning": {
+            "en": "8:00"
+          }
+        },
+        {
+          "polish": "dziewiąta",
+          "meaning": {
+            "en": "9:00"
+          }
+        },
+        {
+          "polish": "dziesiąta",
+          "meaning": {
+            "en": "10:00"
+          }
+        },
+        {
+          "polish": "jedenasta",
+          "meaning": {
+            "en": "11:00"
+          }
+        },
+        {
+          "polish": "dwunasta",
+          "meaning": {
+            "en": "12:00"
+          }
+        }
+      ],
+      "items": [
+        "siodma",
+        "osma",
+        "dziewiata",
+        "dziesiata",
+        "jedenasta",
+        "dwunasta"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-b2-e15",
+      "lines": [
+        "O której jest film?",
+        "O dziewiątej.",
+        "A obiad?",
+        "Obiad jest o pierwszej."
+      ],
+      "meaning": {
+        "en": "Film and dinner."
+      },
+      "statements": [
+        {
+          "text": "Film jest o dziewiątej.",
+          "meaning": {
+            "en": "The film is at nine."
+          },
+          "true": true
+        },
+        {
+          "text": "Obiad jest o drugiej.",
+          "meaning": {
+            "en": "Dinner is at two."
+          },
+          "true": false
+        },
+        {
+          "text": "Obiad jest o pierwszej.",
+          "meaning": {
+            "en": "Dinner is at one."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "o-ktorej",
+        "byc-jest",
+        "film",
+        "o-godz",
+        "dziewiata",
+        "a",
+        "obiad",
+        "pierwsza"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-b2-e16",
+      "lines": [
+        "O której godzinie jesz śniadanie?",
+        "O siódmej.",
+        "A obiad?",
+        "O dwunastej."
+      ],
+      "meaning": {
+        "en": "Meal times."
+      },
+      "items": [
+        "o-ktorej",
+        "jesc-jesz",
+        "sniadanie",
+        "o-godz",
+        "siodma",
+        "a",
+        "obiad",
+        "dwunasta"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-b2-e17",
+      "text": "o jedenastej",
+      "meaning": {
+        "en": "at eleven"
+      },
+      "distractors": [
+        "o dwunastej",
+        "jedenaście"
+      ],
+      "items": [
+        "o-godz",
+        "jedenasta"
+      ]
+    }
+  ]
+}

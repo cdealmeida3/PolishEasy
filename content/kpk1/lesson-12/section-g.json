@@ -1,0 +1,447 @@
+{
+  "id": "kpk1-l12-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-g-t01",
+      "before": "kpk1-l12-g-e01",
+      "title": {
+        "en": "Jechać na wycieczkę"
+      },
+      "body": {
+        "en": "*Jechać* is to go by car, bus or train, once: *jechać na wycieczkę* (to go on a trip). On foot it is *iść*: *iść na lunch*, *iść na zakupy*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-g-e01",
+      "prompt": "jechać",
+      "options": [
+        {
+          "en": "go (to go on foot, now)"
+        },
+        {
+          "en": "go (to go by car, bus or train, once)"
+        },
+        {
+          "en": "go (to go on foot, or regularly)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jechac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-g-e02",
+      "prompt": "na wycieczkę",
+      "options": [
+        {
+          "en": "shopping (iść na zakupy: to go shopping)"
+        },
+        {
+          "en": "for a walk (iść na spacer)"
+        },
+        {
+          "en": "on a trip (jechać na wycieczkę: to go on a trip)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-wycieczke"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-g-e03",
+      "prompt": "na lunch",
+      "options": [
+        {
+          "en": "for lunch (iść na lunch: to go for lunch)"
+        },
+        {
+          "en": "for dinner"
+        },
+        {
+          "en": "for a coffee (iść na kawę)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-lunch"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-g-e04",
+      "prompt": {
+        "en": "to go on a trip"
+      },
+      "acceptedAnswers": [
+        "jechać na wycieczkę"
+      ],
+      "distractors": [
+        "iść",
+        "zakupy"
+      ],
+      "items": [
+        "jechac",
+        "na-wycieczke"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-g-e05",
+      "text": "Może pójdziemy na lunch? Świetny ___!",
+      "meaning": {
+        "en": "Shall we go for lunch? A great idea!"
+      },
+      "gaps": [
+        [
+          "pomysł"
+        ]
+      ],
+      "distractors": [
+        "spacer",
+        "czas"
+      ],
+      "items": [
+        "moze-pojdziemy",
+        "na-lunch",
+        "swietny",
+        "pomysl"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-g-e06",
+      "pairs": [
+        {
+          "polish": "wstawać wcześnie",
+          "meaning": {
+            "en": "to get up early"
+          }
+        },
+        {
+          "polish": "brać prysznic",
+          "meaning": {
+            "en": "to have a shower"
+          }
+        },
+        {
+          "polish": "jeść śniadanie",
+          "meaning": {
+            "en": "to eat breakfast"
+          }
+        },
+        {
+          "polish": "iść na zakupy",
+          "meaning": {
+            "en": "to go shopping"
+          }
+        },
+        {
+          "polish": "budzić się wcześnie",
+          "meaning": {
+            "en": "to wake up early"
+          }
+        },
+        {
+          "polish": "jechać na wycieczkę",
+          "meaning": {
+            "en": "to go on a trip"
+          }
+        }
+      ],
+      "items": [
+        "wstawac",
+        "wczesnie",
+        "brac",
+        "prysznic",
+        "jesc",
+        "sniadanie",
+        "isc",
+        "na-zakupy",
+        "budzic-sie",
+        "jechac",
+        "na-wycieczke"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-g-e07",
+      "text": "o wpół do trzeciej",
+      "meaning": {
+        "en": "at half past two"
+      },
+      "distractors": [
+        "o wpół do drugiej",
+        "o trzeciej trzydzieści"
+      ],
+      "items": [
+        "o-godz",
+        "wpol-do",
+        "trzecia"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-g-e08",
+      "acceptedAnswers": [
+        "czy chciałby pan pójść na lunch?"
+      ],
+      "meaning": {
+        "en": "would you like to go for lunch? (to a man)"
+      },
+      "items": [
+        "czy-chcialby-pan",
+        "pojsc",
+        "na-lunch"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-g-e09",
+      "prompt": {
+        "en": "what time is it?"
+      },
+      "acceptedAnswers": [
+        "która jest godzina?",
+        "która godzina?"
+      ],
+      "items": [
+        "ktora-jest-godzina"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-g-e10",
+      "lines": [
+        "Masz ochotę pójść w sobotę na koncert?",
+        "Przykro mi, w sobotę jadę na wycieczkę.",
+        "To może w niedzielę?",
+        "Jasne, w niedzielę mogę."
+      ],
+      "meaning": {
+        "en": "A concert at the weekend."
+      },
+      "statements": [
+        {
+          "text": "On jedzie w sobotę na wycieczkę.",
+          "meaning": {
+            "en": "He is going on a trip on Saturday."
+          },
+          "true": true
+        },
+        {
+          "text": "Koncert jest w piątek.",
+          "meaning": {
+            "en": "The concert is on Friday."
+          },
+          "true": false
+        },
+        {
+          "text": "W niedzielę on ma czas.",
+          "meaning": {
+            "en": "On Sunday he has time."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "masz-ochote",
+        "pojsc",
+        "sobota",
+        "na-koncert",
+        "przykro-mi",
+        "na-wycieczke",
+        "to",
+        "niedziela",
+        "jasne",
+        "moc-moge"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-g-e11",
+      "lines": [
+        "O której jest przerwa?",
+        "Kwadrans po dwunastej.",
+        "Czyli o dwunastej piętnaście?",
+        "Tak, dokładnie."
+      ],
+      "meaning": {
+        "en": "A break."
+      },
+      "items": [
+        "o-ktorej",
+        "byc-jest",
+        "przerwa",
+        "kwadrans",
+        "po-godz",
+        "dwunasta",
+        "czyli",
+        "o-godz",
+        "pietnascie",
+        "tak"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-g-e12",
+      "text": "Zapraszam ___ na kawę.",
+      "meaning": {
+        "en": "I invite you (several people) for a coffee."
+      },
+      "gaps": [
+        [
+          "was"
+        ]
+      ],
+      "distractors": [
+        "wy",
+        "wam"
+      ],
+      "items": [
+        "zapraszam-cie",
+        "na-kawe"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-g-e13",
+      "prompt": {
+        "en": "on Wednesday at a quarter to eight"
+      },
+      "acceptedAnswers": [
+        "w środę za kwadrans ósma"
+      ],
+      "distractors": [
+        "ósmej",
+        "we"
+      ],
+      "items": [
+        "sroda",
+        "za-godz",
+        "kwadrans",
+        "osma"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-g-e14",
+      "text": "nie dam rady, jestem zajęta",
+      "meaning": {
+        "en": "I can't make it, I'm busy"
+      },
+      "distractors": [
+        "nie dam rady, jestem zmęczona",
+        "dam radę, nie jestem zajęta"
+      ],
+      "items": [
+        "nie-dam-rady",
+        "byc-jestem",
+        "zajety"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-g-e15",
+      "prompt": {
+        "en": "on Thursday at half past six I am going to the dentist's"
+      },
+      "acceptedAnswers": [
+        "w czwartek o wpół do siódmej idę do dentysty"
+      ],
+      "items": [
+        "czwartek",
+        "o-godz",
+        "wpol-do",
+        "siodma",
+        "isc-ide",
+        "do-dentysty"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-g-e16",
+      "pairs": [
+        {
+          "polish": "poniedziałek",
+          "meaning": {
+            "en": "Monday"
+          }
+        },
+        {
+          "polish": "niedziela",
+          "meaning": {
+            "en": "Sunday"
+          }
+        },
+        {
+          "polish": "kwadrans",
+          "meaning": {
+            "en": "fifteen minutes"
+          }
+        },
+        {
+          "polish": "wcześnie",
+          "meaning": {
+            "en": "early"
+          }
+        },
+        {
+          "polish": "dni tygodnia",
+          "meaning": {
+            "en": "the days of the week"
+          }
+        },
+        {
+          "polish": "tydzień",
+          "meaning": {
+            "en": "a week"
+          }
+        }
+      ],
+      "items": [
+        "poniedzialek",
+        "niedziela",
+        "kwadrans",
+        "wczesnie",
+        "dni-tygodnia",
+        "tydzien"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-g-e17",
+      "text": "za pięć dwunasta",
+      "meaning": {
+        "en": "five to twelve"
+      },
+      "distractors": [
+        "pięć po dwunastej",
+        "za pięć druga"
+      ],
+      "items": [
+        "za-godz",
+        "piec",
+        "dwunasta"
+      ]
+    }
+  ]
+}

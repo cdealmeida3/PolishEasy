@@ -899,6 +899,45 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 12 of the book over the real course in the light theme`() = chapter12Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 12 of the book over the real course in the dark theme`() = chapter12Tour("dark")
+
+    @Test
+    fun `chapter 12 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter12Tour("large") }
+
+    /**
+     * Chapter 12 over the real course: its Lesson screen at the top and its sections, then the hours
+     * of section B, the minutes past and to, and the days of the week of section C.
+     */
+    private fun chapter12Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l12") }
+        screen.waitForIdle()
+        shot("278-chapter-12")
+        screen.onAllNodes(hasText("Rutyna dnia", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("278-chapter-12-sections")
+        listOf(
+            "kpk1-l12-b1" to "279-chapter-12-godzina",
+            "kpk1-l12-b4" to "280-chapter-12-kwadrans",
+            "kpk1-l12-c1" to "281-chapter-12-dni",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l12")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test
@@ -1750,9 +1789,10 @@ class ScreenshotsTest {
             tap(R.string.action_continue)
         }
 
-        /** Answers rightly until the noun shown has a picture, or has none. */
+        /** Answers rightly until the noun shown has a picture, or has none, while one is still to come. */
         fun moveToANoun(pictured: Boolean) {
-            while ((checkNotNull(round().question).picture != null) != pictured) {
+            fun ahead() = round().run.let { run -> run.questions.drop(run.index + 1).any { (it.picture != null) == pictured } }
+            while ((checkNotNull(round().question).picture != null) != pictured && ahead()) {
                 answer(correctly = true)
                 moveOn()
             }
@@ -1762,14 +1802,15 @@ class ScreenshotsTest {
         openGame(R.string.game_moj_moja_moje)
         shot("101-moj-setup")
         tap(R.string.setup_play)
+        // Most nouns since chapter 12 have no picture, so the one without comes first and the pictured one may be the last.
+        moveToANoun(pictured = false)
+        answer(correctly = false)
+        shot("104-moj-wrong")
+        moveOn()
         moveToANoun(pictured = true)
         shot("102-moj-question")
         answer(correctly = true)
         shot("103-moj-right")
-        moveOn()
-        moveToANoun(pictured = false)
-        answer(correctly = false)
-        shot("104-moj-wrong")
         leaveRound()
 
         openGame(R.string.game_moj_moja_moje)

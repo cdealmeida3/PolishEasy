@@ -1,0 +1,451 @@
+{
+  "id": "kpk1-l12-d2",
+  "section": {
+    "letter": "D",
+    "heading": "Rutyna dnia",
+    "meaning": {
+      "en": "A daily routine"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-d2-t01",
+      "before": "kpk1-l12-d2-e01",
+      "title": {
+        "en": "Biorę, bierzesz"
+      },
+      "body": {
+        "en": "Asking a friend about their day: *o której się budzisz?*, *o której wstajesz?*, *bierzesz prysznic rano?*. *Brać* (to take) changes inside: *biorę*, *bierzesz*. In the evening *sprzątam* (I tidy up) and *idę spać* (I go to bed)."
+      },
+      "conjugation": {
+        "verb": "brać",
+        "meaning": {
+          "en": "to take"
+        },
+        "forms": {
+          "ja": "biorę",
+          "ty": "bierzesz",
+          "on": "bierze",
+          "my": "bierzemy",
+          "wy": "bierzecie",
+          "oni": "biorą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d2-e01",
+      "prompt": "budzisz się",
+      "options": [
+        {
+          "en": "I wake up"
+        },
+        {
+          "en": "you wake up (one friend)"
+        },
+        {
+          "en": "you get up (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "budzisz-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d2-e02",
+      "prompt": "wstajesz",
+      "options": [
+        {
+          "en": "I get up"
+        },
+        {
+          "en": "you go out, you leave (one friend)"
+        },
+        {
+          "en": "you get up (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wstajesz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-d2-e03",
+      "text": "o której wstajesz?",
+      "meaning": {
+        "en": "what time do you get up?"
+      },
+      "distractors": [
+        "o której wychodzisz?",
+        "o której się budzisz?"
+      ],
+      "items": [
+        "o-ktorej",
+        "wstajesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d2-e04",
+      "prompt": "bierzesz",
+      "options": [
+        {
+          "en": "you take (one friend; bierzesz prysznic: you have a shower)"
+        },
+        {
+          "en": "I take, I'll take (in a shop)"
+        },
+        {
+          "en": "you wash (one friend; myjesz zęby: you brush your teeth)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bierzesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d2-e05",
+      "prompt": "myjesz",
+      "options": [
+        {
+          "en": "I wash (myję zęby: I brush my teeth)"
+        },
+        {
+          "en": "you wash (one friend; myjesz zęby: you brush your teeth)"
+        },
+        {
+          "en": "you take (one friend; bierzesz prysznic: you have a shower)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "myjesz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l12-d2-e06",
+      "verb": "brać",
+      "meaning": {
+        "en": "to take"
+      },
+      "person": "ty",
+      "sentence": "Rano ___ prysznic?",
+      "sentenceMeaning": {
+        "en": "Do you have a shower in the morning?"
+      },
+      "acceptedAnswers": [
+        "bierzesz"
+      ],
+      "items": [
+        "rano",
+        "bierzesz",
+        "prysznic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d2-e07",
+      "prompt": "ubierasz się",
+      "options": [
+        {
+          "en": "I get dressed"
+        },
+        {
+          "en": "you wake up (one friend)"
+        },
+        {
+          "en": "you get dressed (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ubierasz-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d2-e08",
+      "prompt": "wychodzisz",
+      "options": [
+        {
+          "en": "you go out, you leave (one friend)"
+        },
+        {
+          "en": "I go out, I leave (wychodzę z domu: I leave home)"
+        },
+        {
+          "en": "you are going (on foot; one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wychodzisz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d2-e09",
+      "prompt": "sprzątam",
+      "options": [
+        {
+          "en": "I cook, I am cooking"
+        },
+        {
+          "en": "I clean, I tidy up"
+        },
+        {
+          "en": "I work"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sprzatam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d2-e10",
+      "prompt": "spać",
+      "options": [
+        {
+          "en": "I sleep, I am asleep"
+        },
+        {
+          "en": "eat (to eat)"
+        },
+        {
+          "en": "sleep (to sleep; idę spać: I go to bed)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "spac"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-d2-e11",
+      "text": "O jedenastej idę ___.",
+      "meaning": {
+        "en": "At eleven I go to bed."
+      },
+      "gaps": [
+        [
+          "spać"
+        ]
+      ],
+      "distractors": [
+        "śpię",
+        "jeść"
+      ],
+      "items": [
+        "o-godz",
+        "jedenasta",
+        "isc-ide",
+        "spac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-d2-e12",
+      "prompt": {
+        "en": "what time do you go to bed?"
+      },
+      "acceptedAnswers": [
+        "o której idziesz spać?"
+      ],
+      "distractors": [
+        "śpisz",
+        "idę"
+      ],
+      "items": [
+        "o-ktorej",
+        "isc-idziesz",
+        "spac"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-d2-e13",
+      "acceptedAnswers": [
+        "w sobotę sprzątam"
+      ],
+      "meaning": {
+        "en": "on Saturday I tidy up"
+      },
+      "items": [
+        "sobota",
+        "sprzatam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-d2-e14",
+      "prompt": {
+        "en": "you get dressed (one friend)"
+      },
+      "acceptedAnswers": [
+        "ubierasz się"
+      ],
+      "items": [
+        "ubierasz-sie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-d2-e15",
+      "pairs": [
+        {
+          "polish": "budzisz się",
+          "meaning": {
+            "en": "you wake up"
+          }
+        },
+        {
+          "polish": "wstajesz",
+          "meaning": {
+            "en": "you get up"
+          }
+        },
+        {
+          "polish": "bierzesz prysznic",
+          "meaning": {
+            "en": "you have a shower"
+          }
+        },
+        {
+          "polish": "myjesz zęby",
+          "meaning": {
+            "en": "you brush your teeth"
+          }
+        },
+        {
+          "polish": "ubierasz się",
+          "meaning": {
+            "en": "you get dressed"
+          }
+        },
+        {
+          "polish": "wychodzisz",
+          "meaning": {
+            "en": "you leave"
+          }
+        }
+      ],
+      "items": [
+        "budzisz-sie",
+        "wstajesz",
+        "bierzesz",
+        "prysznic",
+        "myjesz",
+        "zeby-teeth",
+        "ubierasz-sie",
+        "wychodzisz"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-d2-e16",
+      "lines": [
+        "O której się budzisz?",
+        "O szóstej, ale wstaję o siódmej.",
+        "A o której wychodzisz z domu?",
+        "O ósmej."
+      ],
+      "meaning": {
+        "en": "Your morning."
+      },
+      "items": [
+        "o-ktorej",
+        "budzisz-sie",
+        "o-godz",
+        "szosta",
+        "ale",
+        "wstaje",
+        "siodma",
+        "a",
+        "wychodzisz",
+        "z-domu",
+        "osma"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-d2-e17",
+      "lines": [
+        "Wieczorem sprzątam.",
+        "O dziesiątej biorę prysznic.",
+        "O jedenastej idę spać."
+      ],
+      "meaning": {
+        "en": "An evening."
+      },
+      "statements": [
+        {
+          "text": "Wieczorem sprząta.",
+          "meaning": {
+            "en": "In the evening he tidies up."
+          },
+          "true": true
+        },
+        {
+          "text": "Bierze prysznic rano.",
+          "meaning": {
+            "en": "He has a shower in the morning."
+          },
+          "true": false
+        },
+        {
+          "text": "Idzie spać o jedenastej.",
+          "meaning": {
+            "en": "He goes to bed at eleven."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "wieczorem",
+        "sprzatam",
+        "o-godz",
+        "dziesiata",
+        "brac-biore",
+        "prysznic",
+        "jedenasta",
+        "isc-ide",
+        "spac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-d2-e18",
+      "text": "ubierasz się czy myjesz zęby?",
+      "meaning": {
+        "en": "are you getting dressed or brushing your teeth?"
+      },
+      "distractors": [
+        "ubierasz się czy bierzesz prysznic?",
+        "ubieram się czy myję zęby?"
+      ],
+      "items": [
+        "ubierasz-sie",
+        "czy",
+        "myjesz",
+        "zeby-teeth"
+      ]
+    }
+  ]
+}

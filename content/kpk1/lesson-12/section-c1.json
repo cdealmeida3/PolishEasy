@@ -1,0 +1,407 @@
+{
+  "id": "kpk1-l12-c1",
+  "section": {
+    "letter": "C",
+    "heading": "W poniedziałek czy we wtorek?",
+    "meaning": {
+      "en": "On Monday or on Tuesday?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-c1-t01",
+      "before": "kpk1-l12-c1-e01",
+      "title": {
+        "en": "W poniedziałek"
+      },
+      "body": {
+        "en": "*Kiedy?* On a day is *w* and the day in the accusative: *w poniedziałek*, *we wtorek* (*we* before *wt*), *w środę*, *w czwartek*, *w piątek*, *w sobotę*, *w niedzielę*. Only the feminine days change their ending: *środa*, *sobota*, *niedziela*."
+      },
+      "kind": "uwaga"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c1-e01",
+      "prompt": "poniedziałek",
+      "options": [
+        {
+          "en": "Tuesday"
+        },
+        {
+          "en": "Monday (w poniedziałek: on Monday)"
+        },
+        {
+          "en": "Sunday"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "poniedzialek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c1-e02",
+      "prompt": "wtorek",
+      "options": [
+        {
+          "en": "Thursday"
+        },
+        {
+          "en": "Monday"
+        },
+        {
+          "en": "Tuesday (we wtorek: on Tuesday)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wtorek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c1-e03",
+      "prompt": "środa",
+      "options": [
+        {
+          "en": "Wednesday (w środę: on Wednesday)"
+        },
+        {
+          "en": "Friday"
+        },
+        {
+          "en": "Saturday"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sroda"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-c1-e04",
+      "text": "w środę",
+      "meaning": {
+        "en": "on Wednesday"
+      },
+      "distractors": [
+        "w sobotę",
+        "we wtorek"
+      ],
+      "items": [
+        "sroda"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c1-e05",
+      "prompt": "czwartek",
+      "options": [
+        {
+          "en": "Wednesday"
+        },
+        {
+          "en": "Thursday (w czwartek: on Thursday)"
+        },
+        {
+          "en": "Tuesday"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czwartek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c1-e06",
+      "prompt": "piątek",
+      "options": [
+        {
+          "en": "five o'clock (jest piąta; o piątej: at five)"
+        },
+        {
+          "en": "Thursday"
+        },
+        {
+          "en": "Friday (w piątek: on Friday)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "piatek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c1-e07",
+      "prompt": "sobota",
+      "options": [
+        {
+          "en": "Saturday (w sobotę: on Saturday)"
+        },
+        {
+          "en": "Sunday"
+        },
+        {
+          "en": "at the weekend"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sobota"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c1-e08",
+      "prompt": "niedziela",
+      "options": [
+        {
+          "en": "Saturday"
+        },
+        {
+          "en": "Sunday (w niedzielę: on Sunday)"
+        },
+        {
+          "en": "Monday"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "niedziela"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c1-e09",
+      "prompt": "dni tygodnia",
+      "options": [
+        {
+          "en": "times of day"
+        },
+        {
+          "en": "a week (dwa razy w tygodniu: twice a week)"
+        },
+        {
+          "en": "the days of the week"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dni-tygodnia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-c1-e10",
+      "text": "___ wtorek jest lekcja.",
+      "meaning": {
+        "en": "On Tuesday there is a lesson."
+      },
+      "gaps": [
+        [
+          "We"
+        ]
+      ],
+      "distractors": [
+        "W",
+        "Na"
+      ],
+      "items": [
+        "wtorek",
+        "byc-jest",
+        "lekcja"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-c1-e11",
+      "prompt": {
+        "en": "on Saturday and on Sunday"
+      },
+      "acceptedAnswers": [
+        "w sobotę i w niedzielę"
+      ],
+      "distractors": [
+        "sobota",
+        "niedziela"
+      ],
+      "items": [
+        "sobota",
+        "i",
+        "niedziela"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-c1-e12",
+      "acceptedAnswers": [
+        "w piątek idę do kina"
+      ],
+      "meaning": {
+        "en": "on Friday I am going to the cinema"
+      },
+      "items": [
+        "piatek",
+        "isc-ide",
+        "do-kina"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-c1-e13",
+      "prompt": {
+        "en": "on Monday"
+      },
+      "acceptedAnswers": [
+        "w poniedziałek"
+      ],
+      "items": [
+        "poniedzialek"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-c1-e14",
+      "pairs": [
+        {
+          "polish": "poniedziałek",
+          "meaning": {
+            "en": "Monday"
+          }
+        },
+        {
+          "polish": "wtorek",
+          "meaning": {
+            "en": "Tuesday"
+          }
+        },
+        {
+          "polish": "środa",
+          "meaning": {
+            "en": "Wednesday"
+          }
+        },
+        {
+          "polish": "czwartek",
+          "meaning": {
+            "en": "Thursday"
+          }
+        },
+        {
+          "polish": "piątek",
+          "meaning": {
+            "en": "Friday"
+          }
+        },
+        {
+          "polish": "sobota",
+          "meaning": {
+            "en": "Saturday"
+          }
+        }
+      ],
+      "items": [
+        "poniedzialek",
+        "wtorek",
+        "sroda",
+        "czwartek",
+        "piatek",
+        "sobota"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-c1-e15",
+      "lines": [
+        "W poniedziałek mam kurs.",
+        "We wtorek i w czwartek pracuję.",
+        "W niedzielę jestem w domu."
+      ],
+      "meaning": {
+        "en": "A week."
+      },
+      "statements": [
+        {
+          "text": "W poniedziałek ma kurs.",
+          "meaning": {
+            "en": "On Monday she has a course."
+          },
+          "true": true
+        },
+        {
+          "text": "W środę pracuje.",
+          "meaning": {
+            "en": "On Wednesday she works."
+          },
+          "true": false
+        },
+        {
+          "text": "W niedzielę jest w domu.",
+          "meaning": {
+            "en": "On Sunday she is at home."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "poniedzialek",
+        "miec-mam",
+        "kurs",
+        "wtorek",
+        "i",
+        "czwartek",
+        "pracowac-pracuje",
+        "niedziela",
+        "byc-jestem",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-c1-e16",
+      "lines": [
+        "Kiedy masz czas?",
+        "W czwartek.",
+        "A w piątek?",
+        "W piątek nie mogę."
+      ],
+      "meaning": {
+        "en": "Finding a day."
+      },
+      "items": [
+        "kiedy",
+        "miec-masz",
+        "czas",
+        "czwartek",
+        "a",
+        "piatek",
+        "nie",
+        "moc-moge"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-c1-e17",
+      "text": "dni tygodnia",
+      "meaning": {
+        "en": "the days of the week"
+      },
+      "distractors": [
+        "pory dnia",
+        "dzień dobry"
+      ],
+      "items": [
+        "dni-tygodnia"
+      ]
+    }
+  ]
+}

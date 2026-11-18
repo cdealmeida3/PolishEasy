@@ -19,6 +19,9 @@
             "text": "12 9 25"
         },
         {
+            "text": "12:45"
+        },
+        {
             "text": "13 16 15"
         },
         {
@@ -26,6 +29,9 @@
         },
         {
             "text": "13 26 5"
+        },
+        {
+            "text": "14"
         },
         {
             "text": "14 18 29"
@@ -59,6 +65,9 @@
         },
         {
             "text": "2"
+        },
+        {
+            "text": "20"
         },
         {
             "text": "20 19 25"
@@ -118,7 +127,13 @@
             "text": "500"
         },
         {
+            "text": "6"
+        },
+        {
             "text": "6 22 27"
+        },
+        {
+            "text": "7"
         },
         {
             "text": "7 11 23"
@@ -227,7 +242,13 @@
             "text": "A ja na gofr."
         },
         {
+            "text": "A jutro?"
+        },
+        {
             "text": "A kalafior?"
+        },
+        {
+            "text": "A kiedy?"
         },
         {
             "text": "A kto to jest?",
@@ -238,7 +259,16 @@
             "meaning": "How about a cream horn?"
         },
         {
+            "text": "A o której wychodzisz z domu?"
+        },
+        {
+            "text": "A obiad?"
+        },
+        {
             "text": "A potem idę na kawę ze znajomymi."
+        },
+        {
+            "text": "A potem?"
         },
         {
             "text": "A restauracja?"
@@ -310,6 +340,9 @@
             "text": "A w nocy?"
         },
         {
+            "text": "A w piątek?"
+        },
+        {
             "text": "A woda mineralna?"
         },
         {
@@ -349,6 +382,10 @@
         {
             "text": "Adam idzie na koncert.",
             "meaning": "Adam is going to a concert."
+        },
+        {
+            "text": "Adam idzie na spektakl.",
+            "meaning": "Adam is going to the show."
         },
         {
             "text": "Adam je bułkę z dżemem.",
@@ -550,6 +587,9 @@
         {
             "text": "Adam nie lubi podróżować.",
             "meaning": "Adam doesn't like travelling."
+        },
+        {
+            "text": "Adam nie może, bo ma randkę: idzie na komedię romantyczną."
         },
         {
             "text": "Adam nie mówi po polsku."
@@ -832,6 +872,10 @@
             "meaning": "The accusative"
         },
         {
+            "text": "Bierze prysznic rano.",
+            "meaning": "He has a shower in the morning."
+        },
+        {
             "text": "Bigos."
         },
         {
@@ -924,6 +968,9 @@
             "text": "Bo nie lubi masła."
         },
         {
+            "text": "Bo o siódmej wychodzę z domu."
+        },
+        {
             "text": "Bo pisze artykuł."
         },
         {
@@ -943,14 +990,31 @@
             "meaning": "The brother is short."
         },
         {
+            "text": "Brać prysznic."
+        },
+        {
             "text": "Brzoskwinia jest miękka, a jabłko jest twarde.",
             "meaning": "The peach is soft and the apple is hard."
+        },
+        {
+            "text": "Budzi się o szóstej.",
+            "meaning": "She wakes up at six."
+        },
+        {
+            "text": "Budzik dzwoni i on wstaje.",
+            "meaning": "The alarm rings and he gets up."
+        },
+        {
+            "text": "Budzik dzwoni o szóstej."
         },
         {
             "text": "Bułkę z dżemem."
         },
         {
             "text": "Bułkę z masłem."
+        },
+        {
+            "text": "Chcesz pójść do kawiarni?"
         },
         {
             "text": "Chcesz, ale muszę uczyć się do egzaminu.",
@@ -1024,12 +1088,20 @@
             "text": "Chętnie!"
         },
         {
+            "text": "Chętnie! A kiedy?",
+            "meaning": "Gladly! When?"
+        },
+        {
             "text": "Chętnie! Na miękko, proszę.",
             "meaning": "Gladly! Soft-boiled, please."
         },
         {
             "text": "Chętnie! Na twardo, proszę.",
             "meaning": "Gladly! Hard-boiled, please."
+        },
+        {
+            "text": "Chętnie, a kiedy?",
+            "meaning": "Gladly! When?"
         },
         {
             "text": "Chętnie, na twardo, proszę.",
@@ -1119,6 +1191,10 @@
         {
             "text": "Co je Karolina?",
             "meaning": "What does Karolina eat?"
+        },
+        {
+            "text": "Co je na śniadanie?",
+            "meaning": "What does he have for breakfast?"
         },
         {
             "text": "Co jest dziś na kolację?",
@@ -1220,6 +1296,50 @@
             "meaning": "What does the speaker say at letter b?"
         },
         {
+            "text": "Co mówi lektor w czwartym punkcie?",
+            "meaning": "What does the speaker say in the fourth item (d)?"
+        },
+        {
+            "text": "Co mówi lektor w drugim punkcie?",
+            "meaning": "What does the speaker say in the second item (b)?"
+        },
+        {
+            "text": "Co mówi lektor w pierwszym punkcie?",
+            "meaning": "What does the speaker say in the first item (a)?"
+        },
+        {
+            "text": "Co mówi lektor w piątym punkcie?",
+            "meaning": "What does the speaker say in the fifth item (e)?"
+        },
+        {
+            "text": "Co mówi lektor w piątym punkcie?",
+            "meaning": "What does the speaker say in the fifth item (e)? (a time)"
+        },
+        {
+            "text": "Co mówi lektor w siódmym punkcie?",
+            "meaning": "What does the speaker say in the seventh item (g)?"
+        },
+        {
+            "text": "Co mówi lektor w szóstym punkcie?",
+            "meaning": "What does the speaker say in the sixth item (f)?"
+        },
+        {
+            "text": "Co mówi lektor w szóstym punkcie?",
+            "meaning": "What does the speaker say in the sixth item (f)? (a time)"
+        },
+        {
+            "text": "Co mówi lektor w trzecim punkcie?",
+            "meaning": "What does the speaker say in the third item (c)?"
+        },
+        {
+            "text": "Co mówi lektor w trzecim punkcie?",
+            "meaning": "What does the speaker say in the third item (c)? (a time)"
+        },
+        {
+            "text": "Co mówi lektor w ósmym punkcie?",
+            "meaning": "What does the speaker say in the eighth item (h)? (a time)"
+        },
+        {
             "text": "Co mówi nauczycielka zamiast „a ty?”?",
             "meaning": "What does the teacher say instead of “a ty?”?"
         },
@@ -1241,6 +1361,10 @@
         {
             "text": "Co ogląda dziewczyna?",
             "meaning": "What is the girl looking at?"
+        },
+        {
+            "text": "Co ogląda o dwudziestej?",
+            "meaning": "What does the speaker watch at 8 p.m.?"
         },
         {
             "text": "Co on robi w weekendy?",
@@ -1288,6 +1412,17 @@
             "meaning": "What does the waitress recommend?"
         },
         {
+            "text": "Co powiesz na koncert?"
+        },
+        {
+            "text": "Co powiesz na spacer?",
+            "meaning": "How about a walk?"
+        },
+        {
+            "text": "Co proponuje chłopak?",
+            "meaning": "What does the boy suggest?"
+        },
+        {
             "text": "Co robi Karol na śniadanie?",
             "meaning": "What does Karol make for breakfast?"
         },
@@ -1312,6 +1447,13 @@
             "meaning": "What does the son do in the evening?"
         },
         {
+            "text": "Co robi w południe?",
+            "meaning": "What does the speaker do at noon?"
+        },
+        {
+            "text": "Co robicie jutro wieczorem?"
+        },
+        {
             "text": "Co robicie w weekend?"
         },
         {
@@ -1323,6 +1465,9 @@
         {
             "text": "Co robisz dzisiaj? Nic.",
             "meaning": "What are you doing today? Nothing."
+        },
+        {
+            "text": "Co robisz rano w pracy?"
         },
         {
             "text": "Co robisz w weekend?"
@@ -1353,6 +1498,14 @@
         {
             "text": "Co słyszysz po słowie „ryż”?",
             "meaning": "Which word comes after ryż?"
+        },
+        {
+            "text": "Co słyszysz po „w środę”?",
+            "meaning": "What do you hear after \"w środę\"?"
+        },
+        {
+            "text": "Co słyszysz po „wstawać”?",
+            "meaning": "What do you hear after \"wstawać\"?"
         },
         {
             "text": "Co to jest makaron?",
@@ -1414,7 +1567,14 @@
             "text": "Co? Codziennie?"
         },
         {
+            "text": "Co? Już piąta?"
+        },
+        {
             "text": "Codziennie rano dzwoni do babci."
+        },
+        {
+            "text": "Codziennie wstaję o siódmej.",
+            "meaning": "Every day I get up at seven."
         },
         {
             "text": "Codziennie."
@@ -1531,6 +1691,10 @@
             "meaning": "Hi! My name is Leon."
         },
         {
+            "text": "Cześć! Masz ochotę pójść na koncert?",
+            "meaning": "Hi! Do you feel like going to a concert?"
+        },
+        {
             "text": "Cześć! Po staremu. A u ciebie?",
             "meaning": "Hi! Same as ever. And with you?"
         },
@@ -1591,6 +1755,9 @@
         },
         {
             "text": "Cztery."
+        },
+        {
+            "text": "Czwarta."
         },
         {
             "text": "Czy"
@@ -1742,6 +1909,15 @@
             "meaning": "Whose photo is this?"
         },
         {
+            "text": "Czyli o dwunastej piętnaście?"
+        },
+        {
+            "text": "Czyli o siódmej trzydzieści?"
+        },
+        {
+            "text": "Czyli o siódmej wieczorem?"
+        },
+        {
             "text": "Czym Uwe zwykle jeździ do pracy?",
             "meaning": "How does Uwe usually get to work?"
         },
@@ -1832,6 +2008,10 @@
             "meaning": "Why does Karolina have margarine?"
         },
         {
+            "text": "Dlaczego chłopak dziś nie może?",
+            "meaning": "Why can't the boy go today?"
+        },
+        {
             "text": "Dlaczego drugi słownik jest zły?",
             "meaning": "Why is the second dictionary bad?"
         },
@@ -1846,6 +2026,9 @@
         {
             "text": "Dlaczego nie możesz?",
             "meaning": "Why can't you?"
+        },
+        {
+            "text": "Dlaczego nie?"
         },
         {
             "text": "Dlaczego on uczy się polskiego?",
@@ -1867,6 +2050,9 @@
             "meaning": "Why is this bag good?"
         },
         {
+            "text": "Dlaczego tak wcześnie?"
+        },
+        {
             "text": "Dlaczego to auto jest dobre?",
             "meaning": "Why is this car good?"
         },
@@ -1882,6 +2068,10 @@
             "text": "Dlaczego?"
         },
         {
+            "text": "Do domu wraca o ósmej wieczorem.",
+            "meaning": "He goes home at eight in the evening."
+        },
+        {
             "text": "Do jutra!",
             "meaning": "Bye! See you tomorrow!"
         },
@@ -1894,6 +2084,9 @@
         },
         {
             "text": "Do kina."
+        },
+        {
+            "text": "Do parku."
         },
         {
             "text": "Do picia jest kompot."
@@ -1913,6 +2106,9 @@
         },
         {
             "text": "Do pubu."
+        },
+        {
+            "text": "Do teatru."
         },
         {
             "text": "Do widzenia!",
@@ -1979,6 +2175,9 @@
             "text": "Dobrze, idziemy."
         },
         {
+            "text": "Dobrze, mam czas."
+        },
+        {
             "text": "Dobrze, na razie!",
             "meaning": "All right! See you!"
         },
@@ -2002,12 +2201,24 @@
             "meaning": "Fine. I'll pay in cash."
         },
         {
+            "text": "Dobrze, w sobotę. Zaczyna się o dwudziestej.",
+            "meaning": "All right, on Saturday. It starts at 8 p.m."
+        },
+        {
             "text": "Dobrze. Płacę gotówką.",
             "meaning": "Fine. I'll pay in cash."
         },
         {
             "text": "Dobrze. Płacę kartą.",
             "meaning": "Fine. I'll pay by card."
+        },
+        {
+            "text": "Dokąd idziesz? Do teatru.",
+            "meaning": "Where are you going? To the theatre."
+        },
+        {
+            "text": "Dokąd lektor zaprasza pana?",
+            "meaning": "Where does the speaker invite the man?"
         },
         {
             "text": "Dokąd oni idą dzisiaj?",
@@ -2043,6 +2254,9 @@
         {
             "text": "Druga zapiekanka jest z szynką.",
             "meaning": "The second zapiekanka has ham."
+        },
+        {
+            "text": "Druga."
         },
         {
             "text": "Drugie danie to kotlet, ziemniaki i surówka.",
@@ -2092,6 +2306,9 @@
         },
         {
             "text": "Dwa razy w roku."
+        },
+        {
+            "text": "Dwa tosty."
         },
         {
             "text": "Dwa złote."
@@ -2146,6 +2363,12 @@
             "text": "Dwie."
         },
         {
+            "text": "Dwudziesta."
+        },
+        {
+            "text": "Dwunasta."
+        },
+        {
             "text": "Dziadek codziennie dzwoni do babci.",
             "meaning": "Grandpa calls grandma every day."
         },
@@ -2163,6 +2386,9 @@
         },
         {
             "text": "Dziadkowie też mieszkają w Krakowie."
+        },
+        {
+            "text": "Dziesiąta."
         },
         {
             "text": "Dziesięć minus cztery równa się pięć.",
@@ -2227,6 +2453,16 @@
         {
             "text": "Dziewczyny kupują coś na kolację.",
             "meaning": "The girls are buying something for supper."
+        },
+        {
+            "text": "Dziewczyny mają plany na jutro.",
+            "meaning": "The girls have plans for tomorrow."
+        },
+        {
+            "text": "Dziewiąta."
+        },
+        {
+            "text": "Dziewiętnasta."
         },
         {
             "text": "Dzień dobry!",
@@ -2364,6 +2600,10 @@
             "text": "Dzień dobry. Proszę bilet na autobus."
         },
         {
+            "text": "Dzień kończy się serialem, winem i snem.",
+            "meaning": "The day ends with a series, wine and sleep."
+        },
+        {
             "text": "Dzisiaj gotujemy makaron.",
             "meaning": "Today we are cooking pasta."
         },
@@ -2394,6 +2634,9 @@
             "meaning": "Thanks! Bye, see you tomorrow!"
         },
         {
+            "text": "Dzięki, ale nie dam rady."
+        },
+        {
             "text": "Dziękuję bardzo!"
         },
         {
@@ -2403,6 +2646,13 @@
         {
             "text": "Dziękuję bardzo.",
             "meaning": "I understand! Thank you very much."
+        },
+        {
+            "text": "Dziękuję pani za zaproszenie.",
+            "meaning": "Thank you for the invitation (to a woman, formal)."
+        },
+        {
+            "text": "Dziękuję za zaproszenie!"
         },
         {
             "text": "Dziękuję! A gdzie jest kawa?",
@@ -2415,6 +2665,9 @@
         {
             "text": "Dziękuję! Gdzie jest kawa?",
             "meaning": "Thank you! And where is the coffee?"
+        },
+        {
+            "text": "Dziękuję, ale nie lubię kina."
         },
         {
             "text": "Dziękuję, do widzenia!",
@@ -2487,8 +2740,18 @@
             "text": "Dziś na obiad jest zupa."
         },
         {
+            "text": "Dziś nie ma czasu.",
+            "meaning": "Today he has no time."
+        },
+        {
             "text": "Dziś one kupują rybę.",
             "meaning": "Today they are buying fish."
+        },
+        {
+            "text": "Dziś wieczorem jest spektakl w teatrze."
+        },
+        {
+            "text": "Dziś wieczorem."
         },
         {
             "text": "Dziś zamawiam żurek i kompot.",
@@ -2810,11 +3073,18 @@
             "meaning": "Ewa has three tomatoes."
         },
         {
+            "text": "Ewa ma trzy zaproszenia."
+        },
+        {
             "text": "Ewa ma trzydzieści trzy lata.",
             "meaning": "Ewa is thirty-three."
         },
         {
             "text": "Ewa ma wolny czas i się nudzi."
+        },
+        {
+            "text": "Ewa ma zaproszenia.",
+            "meaning": "Ewa has invitations."
         },
         {
             "text": "Ewa mieszka w Krakowie.",
@@ -2957,6 +3227,10 @@
             "text": "Fasolka."
         },
         {
+            "text": "Film jest o dziewiątej.",
+            "meaning": "The film is at nine."
+        },
+        {
             "text": "Film, spotkanie."
         },
         {
@@ -2991,6 +3265,9 @@
         },
         {
             "text": "Gazety z programem telewizyjnym."
+        },
+        {
+            "text": "Gdzie"
         },
         {
             "text": "Gdzie jest jej rodzina?",
@@ -3075,6 +3352,14 @@
         {
             "text": "Gdzie rodzina spotyka się rano?",
             "meaning": "Where does the family meet in the morning?"
+        },
+        {
+            "text": "Gdzie się spotkają?",
+            "meaning": "Where will they meet?"
+        },
+        {
+            "text": "Gdzie się spotkamy? Na rynku, pod pomnikiem.",
+            "meaning": "Where shall we meet? In the square, by the monument."
         },
         {
             "text": "Gdzie są chipsy?",
@@ -3243,13 +3528,26 @@
             "text": "Idzie do kina."
         },
         {
+            "text": "Idzie na lunch."
+        },
+        {
+            "text": "Idzie spać o jedenastej.",
+            "meaning": "He goes to bed at eleven."
+        },
+        {
             "text": "Idziecie z nami do pubu?"
         },
         {
             "text": "Idziemy tańczyć. A ty?"
         },
         {
+            "text": "Idziemy wieczorem na mecz."
+        },
+        {
             "text": "Idziesz do pubu?"
+        },
+        {
+            "text": "Idziesz z nami?"
         },
         {
             "text": "Idziesz ze mną?",
@@ -3347,6 +3645,10 @@
             "meaning": "How many euros does she have?"
         },
         {
+            "text": "Ile ona ma zaproszeń?",
+            "meaning": "How many invitations does she have?"
+        },
+        {
             "text": "Ile piw zamawiają?",
             "meaning": "How many beers do they order? (they say: … razy piwo)"
         },
@@ -3368,6 +3670,10 @@
         },
         {
             "text": "Imię i nazwisko."
+        },
+        {
+            "text": "Impreza zaczyna się o ósmej rano.",
+            "meaning": "The party starts at eight in the morning."
         },
         {
             "text": "Indyk jest z grilla.",
@@ -3419,6 +3725,9 @@
         {
             "text": "Interesuję się sportem.",
             "meaning": "I am interested in music and sport."
+        },
+        {
+            "text": "Iść spać."
         },
         {
             "text": "Ja chodzę do szkoły.",
@@ -3551,6 +3860,9 @@
             "meaning": "A soft-boiled or a hard-boiled egg?"
         },
         {
+            "text": "Jak"
+        },
+        {
             "text": "Jak często Uwe dzwoni do żony?",
             "meaning": "How often does Uwe call his wife?"
         },
@@ -3678,6 +3990,10 @@
         {
             "text": "Jaki jest problem?",
             "meaning": "What is the problem?"
+        },
+        {
+            "text": "Jaki jest spektakl? Bardzo…",
+            "meaning": "What is the show like? Very… (interesting)"
         },
         {
             "text": "Jaki jest szósty numer?",
@@ -3828,6 +4144,10 @@
             "meaning": "Which grapes are very sweet?"
         },
         {
+            "text": "Jakie zaproszenie słyszysz najpierw?",
+            "meaning": "Which invitation do you hear first?"
+        },
+        {
             "text": "Jakiego masz brata? Inteligentnego.",
             "meaning": "What kind of brother do you have? An intelligent one."
         },
@@ -3888,6 +4208,20 @@
             "meaning": "Jarzyny are vegetables (warzywa)."
         },
         {
+            "text": "Jasne! Dziękuję za zaproszenie!",
+            "meaning": "Sure! Thank you for the invitation!"
+        },
+        {
+            "text": "Jasne! O wpół do dziewiątej.",
+            "meaning": "Sure! At half past eight."
+        },
+        {
+            "text": "Jasne! Świetny pomysł!"
+        },
+        {
+            "text": "Jasne, w niedzielę mogę."
+        },
+        {
             "text": "Jasny chleb z masłem."
         },
         {
@@ -3909,6 +4243,10 @@
             "meaning": "One tomato, two tomatoes."
         },
         {
+            "text": "Jedna dziewczyna nie pije piwa.",
+            "meaning": "One of the girls doesn't drink beer."
+        },
+        {
             "text": "Jedna gruszka, dwie gruszki.",
             "meaning": "One pear, two pears."
         },
@@ -3926,6 +4264,10 @@
         {
             "text": "Jedno piwo, dwa piwa.",
             "meaning": "One beer, two beers."
+        },
+        {
+            "text": "Jedno zaproszenie jest na koncert.",
+            "meaning": "One invitation is to a concert."
         },
         {
             "text": "Jego córka ogląda zdjęcia.",
@@ -3947,6 +4289,10 @@
         },
         {
             "text": "Jego rodzina."
+        },
+        {
+            "text": "Jego siostra ma czas i idzie na spektakl.",
+            "meaning": "His sister has time and goes to the show."
         },
         {
             "text": "Jego siostrą."
@@ -4001,7 +4347,14 @@
             "meaning": "I eat cheese."
         },
         {
+            "text": "Jest chory."
+        },
+        {
             "text": "Jest czynna."
+        },
+        {
+            "text": "Jest druga.",
+            "meaning": "It's two o'clock."
         },
         {
             "text": "Jest jej mężem."
@@ -4035,6 +4388,13 @@
             "text": "Jest ostra."
         },
         {
+            "text": "Jest pierwsza."
+        },
+        {
+            "text": "Jest piąta.",
+            "meaning": "It's five o'clock."
+        },
+        {
             "text": "Jest przerwa.",
             "meaning": "It is a break."
         },
@@ -4054,6 +4414,10 @@
         },
         {
             "text": "Jest sympatyczny i interesujący."
+        },
+        {
+            "text": "Jest szósta.",
+            "meaning": "It's six o'clock."
         },
         {
             "text": "Jest tam, na lewo.",
@@ -4080,6 +4444,10 @@
         {
             "text": "Jest weekend.",
             "meaning": "It's the weekend."
+        },
+        {
+            "text": "Jest wpół do drugiej.",
+            "meaning": "It's half past one."
         },
         {
             "text": "Jest wysoka, wysportowana i wesoła."
@@ -4191,6 +4559,9 @@
             "meaning": "I am from Italy and I live in Kraków."
         },
         {
+            "text": "Jestem zajęty."
+        },
+        {
             "text": "Jesteś"
         },
         {
@@ -4224,6 +4595,9 @@
             "meaning": "You eat cheese."
         },
         {
+            "text": "Jeść śniadanie."
+        },
+        {
             "text": "Jeździ konno."
         },
         {
@@ -4247,6 +4621,13 @@
         },
         {
             "text": "Jutro jest kaczka."
+        },
+        {
+            "text": "Jutro mogę."
+        },
+        {
+            "text": "Jutro też nie może.",
+            "meaning": "He can't tomorrow either."
         },
         {
             "text": "Jutro."
@@ -4310,6 +4691,10 @@
             "meaning": "The coffee is strong."
         },
         {
+            "text": "Kawa jest o piątej.",
+            "meaning": "Coffee is at five."
+        },
+        {
             "text": "Kawa jest słaba."
         },
         {
@@ -4359,6 +4744,18 @@
         },
         {
             "text": "Kelner pyta: co podać?"
+        },
+        {
+            "text": "Kiedy"
+        },
+        {
+            "text": "Kiedy jest film?"
+        },
+        {
+            "text": "Kiedy jest impreza?"
+        },
+        {
+            "text": "Kiedy masz czas?"
         },
         {
             "text": "Kiedy one jedzą rybę?",
@@ -4415,6 +4812,9 @@
         {
             "text": "Kim ona jest?",
             "meaning": "Who is she? What does she do?"
+        },
+        {
+            "text": "Kino i kolację."
         },
         {
             "text": "Kiosk",
@@ -4493,8 +4893,15 @@
             "meaning": "The customer pays … złoty 32 grosze. How many złoty?"
         },
         {
+            "text": "Klub, piwo, a potem tańce."
+        },
+        {
             "text": "Kogo ma ta kobieta?",
             "meaning": "Who does this woman have?"
+        },
+        {
+            "text": "Kogo widzi w lustrze?",
+            "meaning": "Whom does he see in the mirror?"
         },
         {
             "text": "Kogo znasz w Krakowie?"
@@ -4561,6 +4968,10 @@
             "meaning": "A compote, please."
         },
         {
+            "text": "Koncert jest w piątek.",
+            "meaning": "The concert is on Friday."
+        },
+        {
             "text": "Koniugacja -ę, -isz/-ysz",
             "meaning": "Verbs in -ę, -isz and -ysz"
         },
@@ -4594,6 +5005,9 @@
         },
         {
             "text": "Kotlet schabowy."
+        },
+        {
+            "text": "Kończy pracę."
         },
         {
             "text": "Kończę kurs. A ty?"
@@ -4641,6 +5055,17 @@
             "meaning": "Who…? What…?"
         },
         {
+            "text": "Która godzina? O której godzinie?",
+            "meaning": "What time is it? At what time?"
+        },
+        {
+            "text": "Która jest godzina w pierwszym dialogu?",
+            "meaning": "What time is it in the first dialogue?"
+        },
+        {
+            "text": "Która jest godzina?"
+        },
+        {
             "text": "Kupuje też maliny."
         },
         {
@@ -4648,10 +5073,35 @@
             "meaning": "The chicken is fried."
         },
         {
+            "text": "Kwadrans po dwunastej."
+        },
+        {
             "text": "Lekarką."
         },
         {
+            "text": "Lekarza."
+        },
+        {
             "text": "Lekarzem."
+        },
+        {
+            "text": "Lekcja jest o dziewiątej trzydzieści.",
+            "meaning": "The lesson is at 9:30."
+        },
+        {
+            "text": "Lekcja jest o siedemnastej.",
+            "meaning": "The lesson is at 5 p.m."
+        },
+        {
+            "text": "Lekcja jest o wpół do dziesiątej."
+        },
+        {
+            "text": "Lekcja trwa godzinę.",
+            "meaning": "The lesson lasts an hour."
+        },
+        {
+            "text": "Lektor mówi: „Przykro mi, ale jutro nie mogę”.",
+            "meaning": "The speaker says: \"I'm sorry, but I can't tomorrow.\""
         },
         {
             "text": "Lektorka jest z Hiszpanii.",
@@ -4855,6 +5305,10 @@
             "text": "Ma rezerwację w restauracji."
         },
         {
+            "text": "Macie ochotę pójść na spektakl?",
+            "meaning": "Do you feel like going to a show?"
+        },
+        {
             "text": "Magazyny."
         },
         {
@@ -4882,6 +5336,9 @@
         {
             "text": "Mam czterdzieści trzy lata, a mój mąż ma czterdzieści pięć lat.",
             "meaning": "I'm forty-three, and my husband is forty-five."
+        },
+        {
+            "text": "Mam dwa bilety na mecz."
         },
         {
             "text": "Mam dwa lata.",
@@ -4959,6 +5416,10 @@
         },
         {
             "text": "Mam też dobrego tatę."
+        },
+        {
+            "text": "Mam trzy zaproszenia.",
+            "meaning": "I have three invitations."
         },
         {
             "text": "Mam tu komórkę, klucz i paszport."
@@ -5084,6 +5545,19 @@
         },
         {
             "text": "Masz ochotę na jajko?"
+        },
+        {
+            "text": "Masz ochotę pójść do teatru?"
+        },
+        {
+            "text": "Masz ochotę pójść na mecz? Dlaczego nie?",
+            "meaning": "Do you feel like going to a match? Why not?"
+        },
+        {
+            "text": "Masz ochotę pójść na spektakl?"
+        },
+        {
+            "text": "Masz ochotę pójść w sobotę na koncert?"
         },
         {
             "text": "Masz pieniądze?"
@@ -5259,6 +5733,20 @@
             "text": "Może galeria handlowa?"
         },
         {
+            "text": "Może na rynku, pod pomnikiem? O wpół do ósmej.",
+            "meaning": "Maybe in the square, by the monument? At half past seven."
+        },
+        {
+            "text": "Może pójdziemy do klubu potańczyć?"
+        },
+        {
+            "text": "Może pójdziemy do parku?"
+        },
+        {
+            "text": "Może pójdziemy na lunch? Świetny pomysł!",
+            "meaning": "Shall we go for lunch? A great idea!"
+        },
+        {
             "text": "Musi też kupić album."
         },
         {
@@ -5429,11 +5917,21 @@
             "text": "Męża i dzieci."
         },
         {
+            "text": "Na"
+        },
+        {
+            "text": "Na autobus."
+        },
+        {
             "text": "Na ciepło, z lodami."
         },
         {
             "text": "Na co Karol ma ochotę?",
             "meaning": "What does Karol feel like?"
+        },
+        {
+            "text": "Na co czeka o ósmej?",
+            "meaning": "What is the speaker waiting for at eight?"
         },
         {
             "text": "Na co ma ochotę drugi chłopak?",
@@ -5442,6 +5940,16 @@
         {
             "text": "Na co ma ochotę pierwsza dziewczyna?",
             "meaning": "What does the first girl feel like?"
+        },
+        {
+            "text": "Na film japoński."
+        },
+        {
+            "text": "Na film psychologiczny."
+        },
+        {
+            "text": "Na jaki film idzie chłopak?",
+            "meaning": "What film is the boy going to?"
         },
         {
             "text": "Na jakie nazwisko?"
@@ -5460,8 +5968,18 @@
             "meaning": "There is toast for supper."
         },
         {
+            "text": "Na kolegę."
+        },
+        {
+            "text": "Na komedię romantyczną."
+        },
+        {
             "text": "Na końcu lektor mówi: płacę kartą.",
             "meaning": "At the end the speaker says: I pay by card."
+        },
+        {
+            "text": "Na końcu lektor mówi: w sobotę.",
+            "meaning": "At the end the speaker says: on Saturday."
         },
         {
             "text": "Na końcu słyszysz: wnuczka, wnuk.",
@@ -5569,6 +6087,9 @@
             "text": "Na rybę."
         },
         {
+            "text": "Na rynku, pod pomnikiem."
+        },
+        {
             "text": "Na rynku."
         },
         {
@@ -5598,6 +6119,9 @@
         },
         {
             "text": "Na targu."
+        },
+        {
+            "text": "Na tramwaj."
         },
         {
             "text": "Na twardo, proszę."
@@ -5644,6 +6168,12 @@
         {
             "text": "Najpierw chcą zrobić zakupy.",
             "meaning": "First they want to do some shopping."
+        },
+        {
+            "text": "Najpierw otwieram komputer."
+        },
+        {
+            "text": "Najpierw się budzę."
         },
         {
             "text": "Naleśniki są z serem.",
@@ -5697,6 +6227,9 @@
         {
             "text": "Nic nie robię. Nudzę się.",
             "meaning": "Nothing. I'm bored."
+        },
+        {
+            "text": "Nic nie szkodzi, możesz pić coś innego."
         },
         {
             "text": "Nic nowego."
@@ -5766,6 +6299,9 @@
             "meaning": "I don't like milk."
         },
         {
+            "text": "Nie lubię tańczyć i nie piję piwa."
+        },
+        {
             "text": "Nie lubię zimnego mleka.",
             "meaning": "I don't like cold milk."
         },
@@ -5790,6 +6326,10 @@
         },
         {
             "text": "Nie ma problemu, tu jest kantor."
+        },
+        {
+            "text": "Nie ma za co! To w sobotę, pod pomnikiem!",
+            "meaning": "You're welcome! See you on Saturday, by the monument!"
         },
         {
             "text": "Nie ma za co.",
@@ -6081,10 +6621,17 @@
             "meaning": "German (a woman, after jestem, jesteś, jest…)"
         },
         {
+            "text": "Niestety, nie mam czasu.",
+            "meaning": "Unfortunately, I have no time."
+        },
+        {
             "text": "Nigdy nie pije herbaty."
         },
         {
             "text": "Niski i leniwy."
+        },
+        {
+            "text": "No dobrze, idę z wami."
         },
         {
             "text": "Normalny czy ulgowy?"
@@ -6135,7 +6682,117 @@
             "meaning": "What does the student ask?"
         },
         {
+            "text": "O czternastej mam spotkanie z szefem."
+        },
+        {
+            "text": "O czternastej."
+        },
+        {
+            "text": "O czwartej."
+        },
+        {
+            "text": "O drugiej po południu ma spotkanie.",
+            "meaning": "At two in the afternoon he has a meeting."
+        },
+        {
+            "text": "O dwudziestej wracam do domu."
+        },
+        {
+            "text": "O dwudziestej."
+        },
+        {
+            "text": "O dwudziestej? Przykro mi, nie dam rady.",
+            "meaning": "At 8 p.m.? I'm sorry, I can't make it."
+        },
+        {
+            "text": "O dwunastej."
+        },
+        {
+            "text": "O dziesiątej biorę prysznic."
+        },
+        {
+            "text": "O dziesiątej."
+        },
+        {
+            "text": "O dziewiątej dwadzieścia."
+        },
+        {
+            "text": "O dziewiątej otwieram komputer."
+        },
+        {
+            "text": "O dziewiątej."
+        },
+        {
+            "text": "O dziewiętnastej."
+        },
+        {
+            "text": "O jedenastej idę spać.",
+            "meaning": "At eleven I go to bed."
+        },
+        {
+            "text": "O której godzinie jesz śniadanie?"
+        },
+        {
+            "text": "O której jest film?"
+        },
+        {
+            "text": "O której jest następna lekcja?",
+            "meaning": "What time is the next lesson?"
+        },
+        {
+            "text": "O której jest pociąg do Lublina?",
+            "meaning": "What time is the train to Lublin?"
+        },
+        {
+            "text": "O której jest przerwa?"
+        },
+        {
+            "text": "O której jest śniadanie?",
+            "meaning": "What time is breakfast?"
+        },
+        {
+            "text": "O której jesz śniadanie? O ósmej.",
+            "meaning": "What time do you have breakfast? At eight."
+        },
+        {
+            "text": "O której kończy pracę?",
+            "meaning": "What time does the speaker finish work?"
+        },
+        {
+            "text": "O której ona zwykle je obiad?",
+            "meaning": "What time does she usually have dinner?"
+        },
+        {
+            "text": "O której się budzisz?"
+        },
+        {
+            "text": "O której się zaczyna?"
+        },
+        {
+            "text": "O której zaczyna pracę?",
+            "meaning": "What time does the speaker start work?"
+        },
+        {
+            "text": "O osiemnastej wraca do domu.",
+            "meaning": "At 6 p.m. the speaker goes home."
+        },
+        {
+            "text": "O osiemnastej."
+        },
+        {
+            "text": "O pierwszej jest przerwa."
+        },
+        {
+            "text": "O pierwszej."
+        },
+        {
             "text": "O pizzę."
+        },
+        {
+            "text": "O piątej."
+        },
+        {
+            "text": "O piętnastej."
         },
         {
             "text": "O północy jest w szkole.",
@@ -6148,17 +6805,77 @@
             "text": "O rybę z frytkami."
         },
         {
+            "text": "O siedemnastej kończę pracę i wracam do domu."
+        },
+        {
+            "text": "O siódmej piętnaście wychodzę z domu."
+        },
+        {
+            "text": "O siódmej."
+        },
+        {
+            "text": "O szesnastej piję kawę."
+        },
+        {
+            "text": "O szesnastej."
+        },
+        {
+            "text": "O szóstej, ale wstaję o siódmej."
+        },
+        {
+            "text": "O szóstej."
+        },
+        {
+            "text": "O trzynastej jem obiad."
+        },
+        {
+            "text": "O wpół do szóstej mam wizytę u dentysty."
+        },
+        {
+            "text": "O wpół do ósmej."
+        },
+        {
             "text": "O zupę."
+        },
+        {
+            "text": "O ósmej dwadzieścia."
+        },
+        {
+            "text": "O ósmej dwanaście."
+        },
+        {
+            "text": "O ósmej wychodzę z domu."
+        },
+        {
+            "text": "O ósmej."
         },
         {
             "text": "Obiad",
             "meaning": "Dinner"
         },
         {
+            "text": "Obiad jest o drugiej.",
+            "meaning": "Dinner is at two."
+        },
+        {
+            "text": "Obiad jest o pierwszej.",
+            "meaning": "Dinner is at one."
+        },
+        {
+            "text": "Obiad u babci jest o drugiej.",
+            "meaning": "Dinner at grandma's is at two."
+        },
+        {
             "text": "Och, pięknie pachnie!"
         },
         {
             "text": "Od czasu do czasu."
+        },
+        {
+            "text": "Od której do której pracujesz?"
+        },
+        {
+            "text": "Od ósmej do szesnastej."
         },
         {
             "text": "Ogląda stare zdjęcia."
@@ -6169,6 +6886,9 @@
         {
             "text": "Ogórki są duże.",
             "meaning": "The cucumbers are big."
+        },
+        {
+            "text": "Około dwudziestej."
         },
         {
             "text": "Omlet."
@@ -6182,6 +6902,10 @@
         },
         {
             "text": "On gra codziennie."
+        },
+        {
+            "text": "On jedzie w sobotę na wycieczkę.",
+            "meaning": "He is going on a trip on Saturday."
         },
         {
             "text": "On jest chory, ale ona jest zdrowa.",
@@ -6227,6 +6951,10 @@
             "meaning": "He likes working."
         },
         {
+            "text": "On ma bilety na mecz.",
+            "meaning": "He has tickets for a match."
+        },
+        {
             "text": "On ma dużą rodzinę.",
             "meaning": "He has a big family."
         },
@@ -6251,8 +6979,20 @@
             "meaning": "He can sing."
         },
         {
+            "text": "Ona chce pójść do kawiarni.",
+            "meaning": "She wants to go to a café."
+        },
+        {
             "text": "Ona i jej brat to bliźniaki.",
             "meaning": "She and her brother are twins."
+        },
+        {
+            "text": "Ona idzie na mecz.",
+            "meaning": "She is going to the match."
+        },
+        {
+            "text": "Ona idzie z nimi.",
+            "meaning": "She is going with them."
         },
         {
             "text": "Ona jest Japonką.",
@@ -6287,6 +7027,10 @@
             "meaning": "She likes listening to rock music."
         },
         {
+            "text": "Ona lubi tańczyć.",
+            "meaning": "She likes dancing."
+        },
+        {
             "text": "Ona ma męża.",
             "meaning": "She has a husband."
         },
@@ -6311,6 +7055,10 @@
             "meaning": "She lives in Rome."
         },
         {
+            "text": "Ona może pić coś innego.",
+            "meaning": "She can drink something else."
+        },
+        {
             "text": "Ona musi kupić długopis i ołówek.",
             "meaning": "She has to buy a pen and a pencil."
         },
@@ -6319,12 +7067,24 @@
             "meaning": "She thinks that he is nice."
         },
         {
+            "text": "Ona nie ma czasu.",
+            "meaning": "She has no time."
+        },
+        {
             "text": "Ona pracuje w restauracji, jest kelnerką.",
             "meaning": "She works in a restaurant, she is a waitress."
         },
         {
             "text": "Ona pracuje w teatrze w Berlinie.",
             "meaning": "She works in a theatre in Berlin."
+        },
+        {
+            "text": "Ona pyta, która jest godzina.",
+            "meaning": "She asks what time it is."
+        },
+        {
+            "text": "Ona umie tańczyć.",
+            "meaning": "She can dance."
         },
         {
             "text": "Oni chodzą do szkoły.",
@@ -6365,6 +7125,9 @@
         {
             "text": "Oni zamawiają pizzę.",
             "meaning": "They are ordering a pizza."
+        },
+        {
+            "text": "Osiemnasta."
         },
         {
             "text": "Osiemnaście."
@@ -6536,6 +7299,14 @@
             "meaning": "The first boy is hungry."
         },
         {
+            "text": "Pierwszy czasownik to…",
+            "meaning": "The first verb is… (to wake up)"
+        },
+        {
+            "text": "Pierwszy dzień: „W …”",
+            "meaning": "The first day: \"On…\" (Monday)"
+        },
+        {
             "text": "Pierwszy klient zamawia rosół.",
             "meaning": "The first customer orders chicken soup."
         },
@@ -6601,6 +7372,12 @@
             "text": "Pizzę."
         },
         {
+            "text": "Piąta."
+        },
+        {
+            "text": "Piętnasta."
+        },
+        {
             "text": "Pięć.",
             "meaning": "Two plus three equals five."
         },
@@ -6628,6 +7405,14 @@
             "meaning": "In the afternoon she rests."
         },
         {
+            "text": "Po pracy idzie na basen.",
+            "meaning": "After work he goes to the swimming pool."
+        },
+        {
+            "text": "Po pracy wraca do domu.",
+            "meaning": "After work she goes home."
+        },
+        {
             "text": "Po staremu."
         },
         {
@@ -6637,6 +7422,9 @@
         {
             "text": "Pod numerem siedem jest „po staremu”.",
             "meaning": "Number seven is “po staremu”."
+        },
+        {
+            "text": "Pod teatrem."
         },
         {
             "text": "Polakiem",
@@ -6712,11 +7500,27 @@
             "meaning": "The sour rye soup with an egg for me."
         },
         {
+            "text": "Potem mam zajęcia."
+        },
+        {
             "text": "Potem mama dodaje warzywa i przyprawy."
+        },
+        {
+            "text": "Potem się ubieram."
+        },
+        {
+            "text": "Potem sprawdzam coś w telefonie i piję kawę."
+        },
+        {
+            "text": "Potem wstaję i biorę prysznic."
         },
         {
             "text": "Powitania i pożegnania",
             "meaning": "Hello and goodbye"
+        },
+        {
+            "text": "Pracuje osiem godzin.",
+            "meaning": "He works eight hours."
         },
         {
             "text": "Pracuje."
@@ -6724,6 +7528,9 @@
         {
             "text": "Pracujesz w biurze.",
             "meaning": "You work in an office."
+        },
+        {
+            "text": "Pracuję od dziewiątej do siedemnastej."
         },
         {
             "text": "Pracuję w biurze.",
@@ -6890,6 +7697,9 @@
             "meaning": "Here is your table. What can I get you?"
         },
         {
+            "text": "Proszę."
+        },
+        {
             "text": "Proszę. Dziękuję, do widzenia!",
             "meaning": "Here you are. Thank you, goodbye!"
         },
@@ -6912,6 +7722,9 @@
             "meaning": "Good morning! Excuse me, where is the toilet?"
         },
         {
+            "text": "Przepraszam, która jest godzina?"
+        },
+        {
             "text": "Przepraszam, nie rozumiem.",
             "meaning": "Sorry, I don't understand. Please repeat."
         },
@@ -6925,6 +7738,23 @@
         },
         {
             "text": "Przepraszam, tylko gotówką!"
+        },
+        {
+            "text": "Przerwa jest kwadrans po dziesiątej."
+        },
+        {
+            "text": "Przerwa jest o dwunastej.",
+            "meaning": "The break is at twelve."
+        },
+        {
+            "text": "Przerwa jest o dziesiątej piętnaście.",
+            "meaning": "The break is at 10:15."
+        },
+        {
+            "text": "Przykro mi, ale nie mam czasu."
+        },
+        {
+            "text": "Przykro mi, w sobotę jadę na wycieczkę."
         },
         {
             "text": "Pół Polką, pół Angielką."
@@ -6945,6 +7775,9 @@
             "meaning": "I'll pay by card."
         },
         {
+            "text": "Płatki."
+        },
+        {
             "text": "Pływa."
         },
         {
@@ -6955,6 +7788,10 @@
         },
         {
             "text": "Rano Adam jest głodny."
+        },
+        {
+            "text": "Rano bierzesz prysznic?",
+            "meaning": "Do you have a shower in the morning?"
         },
         {
             "text": "Rano czy wieczorem?",
@@ -6969,6 +7806,10 @@
         {
             "text": "Rano jem śniadanie.",
             "meaning": "I have breakfast in the morning."
+        },
+        {
+            "text": "Rano myję zęby.",
+            "meaning": "In the morning I brush my teeth."
         },
         {
             "text": "Rano piję sok pomarańczowy.",
@@ -7054,6 +7895,10 @@
             "meaning": "I understand! Thank you very much."
         },
         {
+            "text": "Rutyna dnia",
+            "meaning": "A daily routine"
+        },
+        {
             "text": "Rybna."
         },
         {
@@ -7132,6 +7977,12 @@
             "text": "Sernik."
         },
         {
+            "text": "Serwis informacyjny."
+        },
+        {
+            "text": "Siedemnasta."
+        },
+        {
             "text": "Siedemnaście."
         },
         {
@@ -7142,6 +7993,13 @@
         },
         {
             "text": "Siostrą taty."
+        },
+        {
+            "text": "Siódma."
+        },
+        {
+            "text": "Siódmy czasownik to „wychodzić z domu”.",
+            "meaning": "The seventh verb is \"to leave home\"."
         },
         {
             "text": "Skąd jest kobieta?",
@@ -7208,7 +8066,29 @@
             "meaning": "The sauce has basil and garlic in it."
         },
         {
+            "text": "Spacer po parku."
+        },
+        {
+            "text": "Spektakl jest jutro wieczorem.",
+            "meaning": "The show is tomorrow evening."
+        },
+        {
+            "text": "Spektakl jest jutro.",
+            "meaning": "The show is tomorrow."
+        },
+        {
+            "text": "Spektakl to bardzo stary teatr japoński.",
+            "meaning": "The show is a very old Japanese theatre."
+        },
+        {
+            "text": "Spotkanie jest we wtorek.",
+            "meaning": "The meeting is on Tuesday."
+        },
+        {
             "text": "Spotyka się z dziewczyną."
+        },
+        {
+            "text": "Sprzątać."
         },
         {
             "text": "Stara, ale dobra.",
@@ -7241,6 +8121,9 @@
         {
             "text": "Stolik jest dla dwóch osób.",
             "meaning": "The table is for two people."
+        },
+        {
+            "text": "Studenta."
         },
         {
             "text": "Stuprocentową Polką."
@@ -7281,6 +8164,9 @@
             "text": "Szarlotkę."
         },
         {
+            "text": "Szesnasta."
+        },
+        {
             "text": "Sześć.",
             "meaning": "Ten minus four equals six."
         },
@@ -7293,6 +8179,9 @@
         },
         {
             "text": "Szkoła."
+        },
+        {
+            "text": "Szósta."
         },
         {
             "text": "Są jabłka, gruszki i śliwki."
@@ -7378,6 +8267,9 @@
         {
             "text": "Tak, czerwony.",
             "meaning": "Yes, red."
+        },
+        {
+            "text": "Tak, dokładnie."
         },
         {
             "text": "Tak, dużą kanapkę, proszę.",
@@ -7493,6 +8385,9 @@
             "text": "Tak, nudzę się."
         },
         {
+            "text": "Tak, o szóstej."
+        },
+        {
             "text": "Tak, poproszę sernik.",
             "meaning": "Yes, I'd like cheesecake, please."
         },
@@ -7597,6 +8492,9 @@
         },
         {
             "text": "Tak. Idziesz ze mną?"
+        },
+        {
+            "text": "Tak. Mamy jeszcze piętnaście minut."
         },
         {
             "text": "Taksówka."
@@ -7778,6 +8676,9 @@
             "meaning": "You're a doctor? That's interesting!"
         },
         {
+            "text": "To co powiesz na spacer?"
+        },
+        {
             "text": "To dobrze brzmi."
         },
         {
@@ -7932,6 +8833,10 @@
             "meaning": "Is this your child?"
         },
         {
+            "text": "To jest zaproszenie na kawę.",
+            "meaning": "This is an invitation for a coffee."
+        },
+        {
             "text": "To moi dziadkowie.",
             "meaning": "These are my grandparents."
         },
@@ -7963,6 +8868,9 @@
         },
         {
             "text": "To może herbata?"
+        },
+        {
+            "text": "To może w niedzielę?"
         },
         {
             "text": "To mój brat i jego żona.",
@@ -8017,6 +8925,10 @@
         },
         {
             "text": "To są stare zdjęcia."
+        },
+        {
+            "text": "To są zaproszenia.",
+            "meaning": "These are invitations."
         },
         {
             "text": "To wasz dziadek.",
@@ -8124,8 +9036,14 @@
             "meaning": "The strawberry is hard."
         },
         {
+            "text": "Trwa czterdzieści pięć minut."
+        },
+        {
             "text": "Trzecia zapiekanka jest z kurczakiem i kukurydzą.",
             "meaning": "The third zapiekanka has chicken and sweetcorn."
+        },
+        {
+            "text": "Trzecia."
         },
         {
             "text": "Trzy razy dwadzieścia równa się sześćdziesiąt.",
@@ -8137,6 +9055,9 @@
         {
             "text": "Trzydzieści jeden plus dwadzieścia trzy równa się pięćdziesiąt cztery.",
             "meaning": "31 + 23 = 54"
+        },
+        {
+            "text": "Trzynasta."
         },
         {
             "text": "Tu jest apteka, a tam drogeria."
@@ -8222,6 +9143,12 @@
         },
         {
             "text": "Tylko żółte."
+        },
+        {
+            "text": "Typowego urzędnika."
+        },
+        {
+            "text": "Ubierać się."
         },
         {
             "text": "Uczę się polskiego, bo moja dziewczyna jest z Polski.",
@@ -8316,6 +9243,9 @@
             "text": "Uwielbiam rybę."
         },
         {
+            "text": "W"
+        },
+        {
             "text": "W Berlinie."
         },
         {
@@ -8352,6 +9282,9 @@
         {
             "text": "W biurze.",
             "meaning": "I work in an office."
+        },
+        {
+            "text": "W czwartek."
         },
         {
             "text": "W domu."
@@ -8410,6 +9343,9 @@
             "meaning": "In the classroom"
         },
         {
+            "text": "W klubie."
+        },
+        {
             "text": "W koszyku jest mleko i ser."
         },
         {
@@ -8439,12 +9375,72 @@
             "text": "W kuchni."
         },
         {
+            "text": "W niedzielę jem obiad u babci.",
+            "meaning": "On Sunday I have dinner at grandma's."
+        },
+        {
+            "text": "W niedzielę jest w domu.",
+            "meaning": "On Sunday she is at home."
+        },
+        {
+            "text": "W niedzielę jestem w domu."
+        },
+        {
+            "text": "W niedzielę o czternastej: obiad u babci."
+        },
+        {
+            "text": "W niedzielę odpoczywam i spotykam się ze znajomymi."
+        },
+        {
+            "text": "W niedzielę on ma czas.",
+            "meaning": "On Sunday he has time."
+        },
+        {
+            "text": "W niedzielę spotyka się ze znajomymi.",
+            "meaning": "On Sunday he meets friends."
+        },
+        {
             "text": "W nocy śpię.",
             "meaning": "At night I sleep."
         },
         {
             "text": "W pierwszym dialogu to jest książka.",
             "meaning": "In the first dialogue it is a book."
+        },
+        {
+            "text": "W piątek albo w sobotę. Kiedy masz czas?",
+            "meaning": "On Friday or on Saturday. When are you free?"
+        },
+        {
+            "text": "W piątek mam czas.",
+            "meaning": "I'm free on Friday."
+        },
+        {
+            "text": "W piątek nie mogę, ale w sobotę mam czas.",
+            "meaning": "I can't on Friday, but on Saturday I'm free."
+        },
+        {
+            "text": "W piątek nie mogę."
+        },
+        {
+            "text": "W piątek o dwudziestej: impreza."
+        },
+        {
+            "text": "W piątek wieczorem."
+        },
+        {
+            "text": "W piątek."
+        },
+        {
+            "text": "W poniedziałek czy we wtorek?",
+            "meaning": "On Monday or on Tuesday?"
+        },
+        {
+            "text": "W poniedziałek ma kurs.",
+            "meaning": "On Monday she has a course."
+        },
+        {
+            "text": "W poniedziałek mam kurs."
         },
         {
             "text": "W porządku!",
@@ -8476,6 +9472,16 @@
             "meaning": "You can smoke inside the restaurant."
         },
         {
+            "text": "W sobotę Ewa spotyka się ze znajomymi w galerii."
+        },
+        {
+            "text": "W sobotę wstaje o szóstej.",
+            "meaning": "On Saturday he gets up at six."
+        },
+        {
+            "text": "W sobotę śpię do dziesiątej."
+        },
+        {
             "text": "W supermarkecie."
         },
         {
@@ -8488,6 +9494,13 @@
         {
             "text": "W torbie jest mapa Krakowa.",
             "meaning": "There is a map of Kraków in the bag."
+        },
+        {
+            "text": "W tygodniu wstaje wcześnie.",
+            "meaning": "In the week he gets up early."
+        },
+        {
+            "text": "W tygodniu wstaję wcześnie."
         },
         {
             "text": "W weekend Ewa idzie na masaż.",
@@ -8515,8 +9528,25 @@
             "meaning": "At weekends he usually has time."
         },
         {
+            "text": "W środę pracuje.",
+            "meaning": "On Wednesday she works."
+        },
+        {
             "text": "Warzywa są surowe.",
             "meaning": "The vegetables are raw."
+        },
+        {
+            "text": "We wtorek i w czwartek pracuję."
+        },
+        {
+            "text": "We wtorek jest lekcja.",
+            "meaning": "On Tuesday there is a lesson."
+        },
+        {
+            "text": "We wtorek o dziesiątej: spotkanie z szefem."
+        },
+        {
+            "text": "We wtorek."
         },
         {
             "text": "Wieczorem Ewa i Adam zamawiają pizzę."
@@ -8529,11 +9559,26 @@
             "meaning": "I watch a series in the evening."
         },
         {
+            "text": "Wieczorem oglądam serwis informacyjny.",
+            "meaning": "In the evening I watch the news."
+        },
+        {
             "text": "Wieczorem oglądam telewizję."
         },
         {
             "text": "Wieczorem oni idą tańczyć.",
             "meaning": "In the evening they go dancing."
+        },
+        {
+            "text": "Wieczorem spotykam się ze znajomymi.",
+            "meaning": "In the evening I meet friends."
+        },
+        {
+            "text": "Wieczorem sprząta.",
+            "meaning": "In the evening he tidies up."
+        },
+        {
+            "text": "Wieczorem sprzątam."
         },
         {
             "text": "Wieczorem wracam do domu.",
@@ -8547,6 +9592,10 @@
         },
         {
             "text": "Wino."
+        },
+        {
+            "text": "Wizyta u dentysty jest o szóstej.",
+            "meaning": "The dentist appointment is at six."
         },
         {
             "text": "Wiśnia jest czerwona.",
@@ -8611,6 +9660,28 @@
             "text": "Wolę pierogi."
         },
         {
+            "text": "Wpół do dziesiątej."
+        },
+        {
+            "text": "Wpół do dziewiątej."
+        },
+        {
+            "text": "Wraca do domu."
+        },
+        {
+            "text": "Wracać do domu."
+        },
+        {
+            "text": "Wstaje o siódmej.",
+            "meaning": "She gets up at seven."
+        },
+        {
+            "text": "Wstajesz wcześnie?"
+        },
+        {
+            "text": "Wstaję o wpół do siódmej."
+        },
+        {
             "text": "Wszyscy umieją tańczyć.",
             "meaning": "Everyone can dance."
         },
@@ -8653,6 +9724,10 @@
         {
             "text": "Wy mówicie po polsku, a one mówią po angielsku.",
             "meaning": "You (several people) speak Polish, and they (women) speak English."
+        },
+        {
+            "text": "Wychodzi z domu po siódmej.",
+            "meaning": "She leaves home after seven."
         },
         {
             "text": "Wysoki i wysportowany."
@@ -8711,6 +9786,9 @@
             "text": "Z babcią i dziadkiem."
         },
         {
+            "text": "Z bratem i jego kolegami."
+        },
+        {
             "text": "Z ciocią."
         },
         {
@@ -8731,6 +9809,13 @@
         {
             "text": "Z kim mieszka ta dziewczyna?",
             "meaning": "Who does the girl live with?"
+        },
+        {
+            "text": "Z kim spotyka się wieczorem?",
+            "meaning": "Whom does he meet in the evening?"
+        },
+        {
+            "text": "Z mamą."
         },
         {
             "text": "Z masłem i szynką.",
@@ -8763,6 +9848,9 @@
             "text": "Z rodzicami i bratem."
         },
         {
+            "text": "Z szefem."
+        },
+        {
             "text": "Z szynką."
         },
         {
@@ -8782,11 +9870,28 @@
             "meaning": "By profession I am a musician (a man)."
         },
         {
+            "text": "Zaczyna pracę o dziewiątej.",
+            "meaning": "She starts work at nine."
+        },
+        {
             "text": "Zapiekankę."
+        },
+        {
+            "text": "Zapraszam cię na film."
+        },
+        {
+            "text": "Zapraszam cię na kawę."
+        },
+        {
+            "text": "Zapraszam was na kawę.",
+            "meaning": "I invite you (several people) for a coffee."
         },
         {
             "text": "Zapraszam was na obiad",
             "meaning": "Come for dinner"
+        },
+        {
+            "text": "Zapraszam was na obiad."
         },
         {
             "text": "Zapraszamy na kolację!"
@@ -9174,6 +10279,9 @@
             "meaning": "beetroot soup with little dumplings"
         },
         {
+            "text": "basen"
+        },
+        {
             "text": "bazylia",
             "meaning": "basil"
         },
@@ -9186,8 +10294,26 @@
             "meaning": "without sugar"
         },
         {
+            "text": "bez dyskusji",
+            "meaning": "no arguing"
+        },
+        {
+            "text": "bez dyskusji",
+            "meaning": "no arguing, and that's that"
+        },
+        {
+            "text": "bez dyskusji!",
+            "meaning": "no arguing!"
+        },
+        {
+            "text": "bez kawy!"
+        },
+        {
             "text": "bez mleka",
             "meaning": "without milk"
+        },
+        {
+            "text": "bez mleka!"
         },
         {
             "text": "bez smaku",
@@ -9256,6 +10382,23 @@
             "meaning": "to run"
         },
         {
+            "text": "bierze"
+        },
+        {
+            "text": "bierzecie"
+        },
+        {
+            "text": "bierzemy"
+        },
+        {
+            "text": "bierzesz",
+            "meaning": "you take (one friend; bierzesz prysznic: you have a shower)"
+        },
+        {
+            "text": "bierzesz prysznic",
+            "meaning": "you have a shower"
+        },
+        {
             "text": "bigos",
             "meaning": "hunter's stew"
         },
@@ -9284,12 +10427,19 @@
             "meaning": "tickets"
         },
         {
+            "text": "biorą"
+        },
+        {
             "text": "biorę",
             "meaning": "I take, I'll take (in a shop)"
         },
         {
             "text": "biorę",
             "meaning": "I'll take"
+        },
+        {
+            "text": "biorę prysznic",
+            "meaning": "I have a shower"
         },
         {
             "text": "biorę ten",
@@ -9356,6 +10506,18 @@
         {
             "text": "brata",
             "meaning": "a brother (after mam, masz, ma…)"
+        },
+        {
+            "text": "brać",
+            "meaning": "take (to take)"
+        },
+        {
+            "text": "brać",
+            "meaning": "to take"
+        },
+        {
+            "text": "brać prysznic",
+            "meaning": "to have a shower"
         },
         {
             "text": "brokuły",
@@ -9427,6 +10589,44 @@
         {
             "text": "brązowy",
             "meaning": "brown (brązowy, brązowa, brązowe)"
+        },
+        {
+            "text": "budzik",
+            "meaning": "an alarm clock"
+        },
+        {
+            "text": "budzisz się",
+            "meaning": "you wake up"
+        },
+        {
+            "text": "budzisz się",
+            "meaning": "you wake up (one friend)"
+        },
+        {
+            "text": "budzić się",
+            "meaning": "to wake up"
+        },
+        {
+            "text": "budzić się",
+            "meaning": "wake up (to wake up)"
+        },
+        {
+            "text": "budzić się wcześnie",
+            "meaning": "to wake up early"
+        },
+        {
+            "text": "budzę"
+        },
+        {
+            "text": "budzę się",
+            "meaning": "I wake up"
+        },
+        {
+            "text": "budzę się o siódmej",
+            "meaning": "I wake up at seven"
+        },
+        {
+            "text": "budzę się o szóstej"
         },
         {
             "text": "burak",
@@ -9944,6 +11144,18 @@
             "meaning": "what to say (nie wiem, co powiedzieć)"
         },
         {
+            "text": "co powiesz na koncert?",
+            "meaning": "how about a concert?"
+        },
+        {
+            "text": "co powiesz na…?",
+            "meaning": "how about…?"
+        },
+        {
+            "text": "co powiesz na…?",
+            "meaning": "how about…? (co powiesz na spacer?)"
+        },
+        {
             "text": "co robi twoja mama?"
         },
         {
@@ -10072,7 +11284,12 @@
             "meaning": "I cook every day"
         },
         {
-            "text": "coś"
+            "text": "coś",
+            "meaning": "something"
+        },
+        {
+            "text": "coś innego",
+            "meaning": "something else"
         },
         {
             "text": "coś jeszcze?",
@@ -10310,6 +11527,18 @@
             "text": "czterdzieści trzy lata"
         },
         {
+            "text": "czternasta",
+            "meaning": "14:00"
+        },
+        {
+            "text": "czternasta",
+            "meaning": "2 p.m., fourteen hundred (jest czternasta; o czternastej)"
+        },
+        {
+            "text": "czternastej",
+            "meaning": "2 p.m., fourteen hundred (jest czternasta; o czternastej)"
+        },
+        {
             "text": "czternaście",
             "meaning": "fourteen"
         },
@@ -10385,8 +11614,44 @@
             "meaning": "four hundred and fifty-six"
         },
         {
+            "text": "czwarta",
+            "meaning": "4:00"
+        },
+        {
+            "text": "czwarta",
+            "meaning": "four o'clock (jest czwarta; o czwartej: at four)"
+        },
+        {
+            "text": "czwartej",
+            "meaning": "four o'clock (jest czwarta; o czwartej: at four)"
+        },
+        {
+            "text": "czwartek",
+            "meaning": "Thursday"
+        },
+        {
+            "text": "czwartek",
+            "meaning": "Thursday (w czwartek: on Thursday)"
+        },
+        {
             "text": "czy",
             "meaning": "(starts a yes-or-no question)"
+        },
+        {
+            "text": "czy chciałaby pani pójść do parku?",
+            "meaning": "would you like to go to the park? (to a woman)"
+        },
+        {
+            "text": "czy chciałaby pani…?",
+            "meaning": "would you like…? (to a man; czy chciałaby pani…? to a woman)"
+        },
+        {
+            "text": "czy chciałby pan pójść na lunch?",
+            "meaning": "would you like to go for lunch? (to a man)"
+        },
+        {
+            "text": "czy chciałby pan…?",
+            "meaning": "would you like…? (to a man; czy chciałaby pani…? to a woman)"
         },
         {
             "text": "czy chodzisz do szkoły?",
@@ -10832,6 +12097,9 @@
             "meaning": "a daughter (after mam, masz, ma…)"
         },
         {
+            "text": "dam radę, nie jestem zajęta"
+        },
+        {
             "text": "dania",
             "meaning": "a dish, a course (dania: dishes)"
         },
@@ -10928,6 +12196,10 @@
             "meaning": "why"
         },
         {
+            "text": "dlaczego nie?",
+            "meaning": "why not?"
+        },
+        {
             "text": "dlaczego ona uczy się polskiego?",
             "meaning": "why is she learning Polish?"
         },
@@ -10944,10 +12216,19 @@
             "meaning": "why are you learning Polish? (one friend)"
         },
         {
+            "text": "dni tygodnia",
+            "meaning": "the days of the week"
+        },
+        {
             "text": "dnia"
         },
         {
-            "text": "do"
+            "text": "do",
+            "meaning": "till, until (with the time: do siedemnastej, till 5 p.m.)"
+        },
+        {
+            "text": "do dentysty",
+            "meaning": "to the dentist's"
         },
         {
             "text": "do domu",
@@ -10962,6 +12243,10 @@
             "meaning": "see you tomorrow"
         },
         {
+            "text": "do kawiarni",
+            "meaning": "to a café"
+        },
+        {
             "text": "do kina",
             "meaning": "to the cinema"
         },
@@ -10974,6 +12259,10 @@
             "meaning": "to the doctor"
         },
         {
+            "text": "do parku",
+            "meaning": "to the park"
+        },
+        {
             "text": "do picia",
             "meaning": "to drink (co do picia?: what about drinks?)"
         },
@@ -10984,6 +12273,14 @@
         {
             "text": "do szkoły",
             "meaning": "to school"
+        },
+        {
+            "text": "do teatru",
+            "meaning": "to the theatre"
+        },
+        {
+            "text": "do teatru, na przedstawienie",
+            "meaning": "to the theatre, to a play"
         },
         {
             "text": "do usłyszenia"
@@ -11049,6 +12346,9 @@
         },
         {
             "text": "dobry humor"
+        },
+        {
+            "text": "dobry pomysł!"
         },
         {
             "text": "dobry wieczór",
@@ -11121,6 +12421,13 @@
             "text": "dojrzały pomidor"
         },
         {
+            "text": "dokąd idziesz?"
+        },
+        {
+            "text": "dokąd?",
+            "meaning": "where to?"
+        },
+        {
             "text": "doniczka"
         },
         {
@@ -11187,6 +12494,17 @@
             "meaning": "a sweet bun and coffee"
         },
         {
+            "text": "druga",
+            "meaning": "2:00"
+        },
+        {
+            "text": "druga",
+            "meaning": "two o'clock (jest druga; o drugiej: at two)"
+        },
+        {
+            "text": "drugi"
+        },
+        {
             "text": "drugi raz",
             "meaning": "for the second time"
         },
@@ -11201,6 +12519,10 @@
         {
             "text": "drugie danie to kurczak",
             "meaning": "the main course is chicken"
+        },
+        {
+            "text": "drugiej",
+            "meaning": "two o'clock (jest druga; o drugiej: at two)"
         },
         {
             "text": "drzewo genealogiczne",
@@ -11400,6 +12722,49 @@
             "meaning": "two (of children: dwoje dzieci)"
         },
         {
+            "text": "dwudziesta",
+            "meaning": "20:00"
+        },
+        {
+            "text": "dwudziesta",
+            "meaning": "8 p.m., twenty hundred (o dwudziestej; dwudziesta pierwsza: 9 p.m.)"
+        },
+        {
+            "text": "dwudziesta czwarta",
+            "meaning": "24:00"
+        },
+        {
+            "text": "dwudziesta druga",
+            "meaning": "22:00"
+        },
+        {
+            "text": "dwudziesta pierwsza",
+            "meaning": "21:00"
+        },
+        {
+            "text": "dwudziesta trzecia",
+            "meaning": "23:00"
+        },
+        {
+            "text": "dwudziestej",
+            "meaning": "8 p.m., twenty hundred (o dwudziestej; dwudziesta pierwsza: 9 p.m.)"
+        },
+        {
+            "text": "dwunasta",
+            "meaning": "12:00"
+        },
+        {
+            "text": "dwunasta",
+            "meaning": "twelve o'clock (jest dwunasta; o dwunastej: at twelve)"
+        },
+        {
+            "text": "dwunasta czterdzieści pięć"
+        },
+        {
+            "text": "dwunastej",
+            "meaning": "twelve o'clock (jest dwunasta; o dwunastej: at twelve)"
+        },
+        {
             "text": "dynia",
             "meaning": "a pumpkin"
         },
@@ -11459,6 +12824,18 @@
             "meaning": "a journalist (a man)"
         },
         {
+            "text": "dziesiąta",
+            "meaning": "10:00"
+        },
+        {
+            "text": "dziesiąta",
+            "meaning": "ten o'clock (jest dziesiąta; o dziesiątej: at ten)"
+        },
+        {
+            "text": "dziesiątej",
+            "meaning": "ten o'clock (jest dziesiąta; o dziesiątej: at ten)"
+        },
+        {
             "text": "dziesięć",
             "meaning": "10"
         },
@@ -11507,6 +12884,30 @@
         {
             "text": "dziewczyną",
             "meaning": "a girl (after jest, with an adjective: jest miłą dziewczyną)"
+        },
+        {
+            "text": "dziewiąta",
+            "meaning": "9:00"
+        },
+        {
+            "text": "dziewiąta",
+            "meaning": "nine o'clock (jest dziewiąta; o dziewiątej: at nine)"
+        },
+        {
+            "text": "dziewiątej",
+            "meaning": "nine o'clock (jest dziewiąta; o dziewiątej: at nine)"
+        },
+        {
+            "text": "dziewiętnasta",
+            "meaning": "19:00"
+        },
+        {
+            "text": "dziewiętnasta",
+            "meaning": "7 p.m., nineteen hundred (jest dziewiętnasta; o dziewiętnastej)"
+        },
+        {
+            "text": "dziewiętnastej",
+            "meaning": "7 p.m., nineteen hundred (jest dziewiętnasta; o dziewiętnastej)"
         },
         {
             "text": "dziewiętnaście",
@@ -11600,6 +13001,10 @@
         },
         {
             "text": "dzięki",
+            "meaning": "thanks"
+        },
+        {
+            "text": "dzięki",
             "meaning": "thanks (to friends)"
         },
         {
@@ -11637,6 +13042,16 @@
         {
             "text": "dziękuję bardzo",
             "meaning": "thank you very much"
+        },
+        {
+            "text": "dziękuję za kawę"
+        },
+        {
+            "text": "dziękuję za obiad"
+        },
+        {
+            "text": "dziękuję za zaproszenie",
+            "meaning": "thank you for the invitation"
         },
         {
             "text": "dziękuję, dobrze, a pani?",
@@ -11691,6 +13106,13 @@
         {
             "text": "dziś kawiarnia jest nieczynna",
             "meaning": "the café is not open today"
+        },
+        {
+            "text": "dziś wieczorem nie mam planów"
+        },
+        {
+            "text": "dziś wieczorem nie mogę",
+            "meaning": "tonight I can't"
         },
         {
             "text": "dzwonisz",
@@ -11922,6 +13344,9 @@
             "meaning": "where is the water?"
         },
         {
+            "text": "gdzie jest zegarek?"
+        },
+        {
             "text": "gdzie jest?"
         },
         {
@@ -11957,6 +13382,10 @@
             "meaning": "where do you work? (one friend)"
         },
         {
+            "text": "gdzie się spotkamy?",
+            "meaning": "where shall we meet?"
+        },
+        {
             "text": "gdzie są panie?"
         },
         {
@@ -11977,6 +13406,18 @@
         {
             "text": "gdzie wy mieszkacie?",
             "meaning": "where do you live? (several people)"
+        },
+        {
+            "text": "godzina",
+            "meaning": "an hour; the time (która godzina?: what time is it?)"
+        },
+        {
+            "text": "godzinie",
+            "meaning": "an hour; the time (która godzina?: what time is it?)"
+        },
+        {
+            "text": "godzinę",
+            "meaning": "an hour; the time (która godzina?: what time is it?)"
         },
         {
             "text": "gofr",
@@ -12430,6 +13871,10 @@
             "text": "idziemy na kawę"
         },
         {
+            "text": "idziemy na mecz",
+            "meaning": "we are going to a match"
+        },
+        {
             "text": "idziemy na zakupy",
             "meaning": "we're going shopping"
         },
@@ -12582,7 +14027,15 @@
             "meaning": "first name, surname, nationality"
         },
         {
-            "text": "impreza"
+            "text": "impreza",
+            "meaning": "a party"
+        },
+        {
+            "text": "impreza jest w środę"
+        },
+        {
+            "text": "impreza zaczyna się o ósmej",
+            "meaning": "the party starts at eight"
         },
         {
             "text": "imprezę",
@@ -12755,6 +14208,10 @@
         {
             "text": "iść",
             "meaning": "to go"
+        },
+        {
+            "text": "iść na zakupy",
+            "meaning": "to go shopping"
         },
         {
             "text": "ja",
@@ -12939,6 +14396,9 @@
         {
             "text": "ja się nazywam Adam",
             "meaning": "I am called Adam"
+        },
+        {
+            "text": "ja spotykam się ze znajomymi"
         },
         {
             "text": "ja szukam informacji",
@@ -13338,6 +14798,14 @@
             "meaning": "light, pale; white (of bread) (jasny, jasna, jasne)"
         },
         {
+            "text": "jasne!",
+            "meaning": "sure!"
+        },
+        {
+            "text": "jasne!",
+            "meaning": "sure! of course!"
+        },
+        {
             "text": "jasny",
             "meaning": "light"
         },
@@ -13355,6 +14823,14 @@
         {
             "text": "je",
             "meaning": "he eats, she eats"
+        },
+        {
+            "text": "jechać",
+            "meaning": "go (to go by car, bus or train, once)"
+        },
+        {
+            "text": "jechać na wycieczkę",
+            "meaning": "to go on a trip"
         },
         {
             "text": "jecie"
@@ -13381,6 +14857,18 @@
         {
             "text": "jeden, dwa, trzy",
             "meaning": "one, two, three"
+        },
+        {
+            "text": "jedenasta",
+            "meaning": "11:00"
+        },
+        {
+            "text": "jedenasta",
+            "meaning": "eleven o'clock (jest jedenasta; o jedenastej: at eleven)"
+        },
+        {
+            "text": "jedenastej",
+            "meaning": "eleven o'clock (jest jedenasta; o jedenastej: at eleven)"
         },
         {
             "text": "jedenaście",
@@ -13458,6 +14946,9 @@
             "text": "jem chleb"
         },
         {
+            "text": "jem śniadanie"
+        },
+        {
             "text": "jemy"
         },
         {
@@ -13465,12 +14956,33 @@
             "meaning": "he is; she is; it is"
         },
         {
+            "text": "jest czwarta",
+            "meaning": "it's four o'clock"
+        },
+        {
             "text": "jest córką i żoną",
             "meaning": "she is a daughter and a wife"
         },
         {
+            "text": "jest druga",
+            "meaning": "it's two o'clock"
+        },
+        {
+            "text": "jest dwunasta"
+        },
+        {
+            "text": "jest dziewiąta"
+        },
+        {
             "text": "jest już późno",
             "meaning": "it's late already"
+        },
+        {
+            "text": "jest osiemnasta",
+            "meaning": "it's 6 p.m."
+        },
+        {
+            "text": "jest siódma"
         },
         {
             "text": "jest sok?",
@@ -13479,6 +14991,14 @@
         {
             "text": "jest synem i mężem",
             "meaning": "he is a son and a husband"
+        },
+        {
+            "text": "jest szósta",
+            "meaning": "it's six o'clock"
+        },
+        {
+            "text": "jest trzecia",
+            "meaning": "it's three o'clock"
         },
         {
             "text": "jest tu supermarket?",
@@ -13502,6 +15022,10 @@
         {
             "text": "jest z Japonii, jest Japonką",
             "meaning": "she is from Japan, she is Japanese"
+        },
+        {
+            "text": "jest ósma",
+            "meaning": "it's eight o'clock"
         },
         {
             "text": "jestem",
@@ -13689,6 +15213,10 @@
             "meaning": "eat (to eat)"
         },
         {
+            "text": "jeść śniadanie",
+            "meaning": "to eat breakfast"
+        },
+        {
             "text": "jeździ",
             "meaning": "he rides, she rides"
         },
@@ -13766,6 +15294,13 @@
         {
             "text": "jutro mam urodziny",
             "meaning": "it's my birthday tomorrow"
+        },
+        {
+            "text": "jutro wieczorem nie mam czasu"
+        },
+        {
+            "text": "jutro wieczorem nie mam planów",
+            "meaning": "tomorrow evening I have no plans"
         },
         {
             "text": "już",
@@ -13994,6 +15529,9 @@
             "meaning": "when"
         },
         {
+            "text": "kiedy jest lekcja?"
+        },
+        {
             "text": "kiedy jesteś wolny?",
             "meaning": "when are you free? (to a man)"
         },
@@ -14044,12 +15582,18 @@
             "meaning": "what do you do? (one friend)"
         },
         {
+            "text": "kina"
+        },
+        {
             "text": "kinem",
             "meaning": "cinema"
         },
         {
             "text": "kinem",
             "meaning": "cinema, films (after interesuję się: interesuję się kinem)"
+        },
+        {
+            "text": "kino"
         },
         {
             "text": "kiosk",
@@ -14165,6 +15709,14 @@
         {
             "text": "kolorowy magazyn",
             "meaning": "a colourful magazine"
+        },
+        {
+            "text": "komedia romantyczna",
+            "meaning": "a romantic comedy"
+        },
+        {
+            "text": "komedię romantyczną",
+            "meaning": "a romantic comedy"
         },
         {
             "text": "kompot",
@@ -14305,6 +15857,10 @@
         },
         {
             "text": "kończę",
+            "meaning": "I finish (kończę pracę: I finish work)"
+        },
+        {
+            "text": "kończę",
             "meaning": "I finish, I am finishing"
         },
         {
@@ -14372,6 +15928,10 @@
             "meaning": "who"
         },
         {
+            "text": "kto jeszcze?",
+            "meaning": "who else?"
+        },
+        {
             "text": "kto to jest?",
             "meaning": "who is it?"
         },
@@ -14402,6 +15962,14 @@
         {
             "text": "kto? co?",
             "meaning": "who? what?"
+        },
+        {
+            "text": "która godzina?",
+            "meaning": "what time is it?"
+        },
+        {
+            "text": "która jest godzina?",
+            "meaning": "what time is it?"
         },
         {
             "text": "kubek",
@@ -14579,6 +16147,22 @@
             "meaning": "a cousin (a woman)"
         },
         {
+            "text": "kwadrans",
+            "meaning": "a quarter of an hour, fifteen minutes"
+        },
+        {
+            "text": "kwadrans",
+            "meaning": "fifteen minutes"
+        },
+        {
+            "text": "kwadrans po pierwszej",
+            "meaning": "1:15"
+        },
+        {
+            "text": "kwadrans po pierwszej",
+            "meaning": "a quarter past one"
+        },
+        {
             "text": "kwaśna",
             "meaning": "sour (kwaśny, kwaśna, kwaśne)"
         },
@@ -14654,8 +16238,18 @@
             "meaning": "lesson number one"
         },
         {
+            "text": "lekcja jest o pierwszej"
+        },
+        {
             "text": "lekcja numer jeden",
             "meaning": "lesson number one"
+        },
+        {
+            "text": "lekcja trwa godzinę",
+            "meaning": "the lesson lasts an hour"
+        },
+        {
+            "text": "lekcja trwa minutę"
         },
         {
             "text": "lektorka",
@@ -14962,6 +16556,10 @@
             "meaning": "you have (several people)"
         },
         {
+            "text": "macie ochotę",
+            "meaning": "do you feel like…? (one friend: masz ochotę pójść?; several people: macie ochotę)"
+        },
+        {
             "text": "macie problem?",
             "meaning": "do you have a problem? (several people)"
         },
@@ -15162,6 +16760,16 @@
             "meaning": "my first name is Ewa"
         },
         {
+            "text": "mam nowy budzik"
+        },
+        {
+            "text": "mam nowy komputer"
+        },
+        {
+            "text": "mam nowy zegarek",
+            "meaning": "I have a new watch"
+        },
+        {
             "text": "mam ochotę na",
             "meaning": "feel like, fancy (mam ochotę na: I feel like; masz ochotę na?: do you feel like?; ma ochotę na: he or she feels like)"
         },
@@ -15229,6 +16837,10 @@
         {
             "text": "mam tylko monety",
             "meaning": "I only have coins"
+        },
+        {
+            "text": "mam wizytę u dentysty",
+            "meaning": "I have an appointment at the dentist's"
         },
         {
             "text": "mam wolny czas"
@@ -15341,6 +16953,10 @@
             "text": "masz monety?"
         },
         {
+            "text": "masz ochotę",
+            "meaning": "do you feel like…? (one friend: masz ochotę pójść?; several people: macie ochotę)"
+        },
+        {
             "text": "masz ochotę na",
             "meaning": "feel like, fancy (mam ochotę na: I feel like; masz ochotę na?: do you feel like?; ma ochotę na: he or she feels like)"
         },
@@ -15354,6 +16970,10 @@
         {
             "text": "masz ochotę na omlet?",
             "meaning": "do you feel like an omelette? (one friend)"
+        },
+        {
+            "text": "masz ochotę pójść?",
+            "meaning": "do you feel like going? (one friend)"
         },
         {
             "text": "masz rację",
@@ -15515,6 +17135,18 @@
         {
             "text": "minus",
             "meaning": "minus"
+        },
+        {
+            "text": "minut",
+            "meaning": "a minute (pięć minut: five minutes)"
+        },
+        {
+            "text": "minuta",
+            "meaning": "a minute"
+        },
+        {
+            "text": "minuta",
+            "meaning": "a minute (pięć minut: five minutes)"
         },
         {
             "text": "miód",
@@ -15710,6 +17342,10 @@
             "meaning": "I can (I am free to, I may)"
         },
         {
+            "text": "mogę pić coś innego",
+            "meaning": "I can drink something else"
+        },
+        {
             "text": "moi",
             "meaning": "my (people, a group with a man in it)"
         },
@@ -15833,6 +17469,18 @@
         },
         {
             "text": "może kino?"
+        },
+        {
+            "text": "może pójdziemy na spacer?",
+            "meaning": "shall we go for a walk?"
+        },
+        {
+            "text": "może pójdziemy…?",
+            "meaning": "shall we go…?"
+        },
+        {
+            "text": "może pójdziemy…?",
+            "meaning": "shall we go…? (może pójdziemy na koncert?)"
         },
         {
             "text": "może tak, może nie",
@@ -15970,6 +17618,37 @@
         },
         {
             "text": "my umiemy gotować"
+        },
+        {
+            "text": "myjesz",
+            "meaning": "you wash (one friend; myjesz zęby: you brush your teeth)"
+        },
+        {
+            "text": "myjesz zęby",
+            "meaning": "you brush your teeth"
+        },
+        {
+            "text": "myję",
+            "meaning": "I wash (myję zęby: I brush my teeth)"
+        },
+        {
+            "text": "myję się"
+        },
+        {
+            "text": "myję zęby",
+            "meaning": "I brush my teeth"
+        },
+        {
+            "text": "myć się",
+            "meaning": "to wash"
+        },
+        {
+            "text": "myć się",
+            "meaning": "wash (to wash yourself)"
+        },
+        {
+            "text": "myć się i ubierać się",
+            "meaning": "to wash and to get dressed"
         },
         {
             "text": "myśli",
@@ -16313,11 +17992,34 @@
             "meaning": "served warm (szarlotka na ciepło)"
         },
         {
+            "text": "na co idziecie?"
+        },
+        {
+            "text": "na co idziesz?",
+            "meaning": "what are you going to?"
+        },
+        {
+            "text": "na co?",
+            "meaning": "what to?"
+        },
+        {
+            "text": "na co?",
+            "meaning": "what to? (na co idziesz?: what are you going to?)"
+        },
+        {
             "text": "na drodze"
         },
         {
             "text": "na dyskotekę",
             "meaning": "to a disco"
+        },
+        {
+            "text": "na film",
+            "meaning": "to a film"
+        },
+        {
+            "text": "na film",
+            "meaning": "to a film (iść na film)"
         },
         {
             "text": "na gitarze",
@@ -16360,8 +18062,16 @@
             "meaning": "on the left; to the left"
         },
         {
+            "text": "na lunch",
+            "meaning": "for lunch (iść na lunch: to go for lunch)"
+        },
+        {
             "text": "na masaż",
             "meaning": "for a massage (iść na masaż)"
+        },
+        {
+            "text": "na mecz",
+            "meaning": "to a match (a football match)"
         },
         {
             "text": "na miękko",
@@ -16408,6 +18118,14 @@
             "meaning": "on the right; to the right"
         },
         {
+            "text": "na przedstawienie",
+            "meaning": "to a show"
+        },
+        {
+            "text": "na przedstawienie",
+            "meaning": "to a show, to a play"
+        },
+        {
             "text": "na przykład",
             "meaning": "for example"
         },
@@ -16444,8 +18162,24 @@
             "meaning": "a bike (after jeździć: jeżdżę na rowerze)"
         },
         {
+            "text": "na rynku",
+            "meaning": "in the market square"
+        },
+        {
+            "text": "na rynku",
+            "meaning": "in the square"
+        },
+        {
             "text": "na siłownię",
             "meaning": "to the gym"
+        },
+        {
+            "text": "na spacer",
+            "meaning": "for a walk"
+        },
+        {
+            "text": "na spacer",
+            "meaning": "for a walk (iść na spacer)"
         },
         {
             "text": "na spacery",
@@ -16474,6 +18208,10 @@
         {
             "text": "na wakacjach",
             "meaning": "on holiday"
+        },
+        {
+            "text": "na wycieczkę",
+            "meaning": "on a trip (jechać na wycieczkę: to go on a trip)"
         },
         {
             "text": "na zakupy",
@@ -16703,6 +18441,17 @@
             "meaning": "no"
         },
         {
+            "text": "nie dam rady",
+            "meaning": "I can't make it"
+        },
+        {
+            "text": "nie dam rady, jestem zajęta",
+            "meaning": "I can't make it, I'm busy"
+        },
+        {
+            "text": "nie dam rady, jestem zmęczona"
+        },
+        {
             "text": "nie jem sera",
             "meaning": "I don't eat cheese"
         },
@@ -16758,10 +18507,18 @@
             "meaning": "I have no bread"
         },
         {
+            "text": "nie mam czasu",
+            "meaning": "I have no time"
+        },
+        {
             "text": "nie mam kompotu"
         },
         {
             "text": "nie mam ochoty na jajecznicę"
+        },
+        {
+            "text": "nie mam planów",
+            "meaning": "I have no plans"
         },
         {
             "text": "nie mam soku",
@@ -16953,7 +18710,12 @@
             "meaning": "not good, not tasty (niedobry, niedobra, niedobre)"
         },
         {
-            "text": "niedziela"
+            "text": "niedziela",
+            "meaning": "Sunday"
+        },
+        {
+            "text": "niedziela",
+            "meaning": "Sunday (w niedzielę: on Sunday)"
         },
         {
             "text": "nieoficjalnie"
@@ -16961,6 +18723,10 @@
         {
             "text": "niestety",
             "meaning": "unfortunately"
+        },
+        {
+            "text": "niestety, nie mam czasu",
+            "meaning": "unfortunately, I have no time"
         },
         {
             "text": "niestety, nie wiem",
@@ -17133,6 +18899,126 @@
             "text": "nóż i łyżeczka"
         },
         {
+            "text": "o",
+            "meaning": "at (with the time: o ósmej, at eight)"
+        },
+        {
+            "text": "o 12:45"
+        },
+        {
+            "text": "o 14"
+        },
+        {
+            "text": "o 2"
+        },
+        {
+            "text": "o 20"
+        },
+        {
+            "text": "o 5"
+        },
+        {
+            "text": "o 6"
+        },
+        {
+            "text": "o 7"
+        },
+        {
+            "text": "o 9"
+        },
+        {
+            "text": "o czternastej",
+            "meaning": "at 2 p.m. (the 24-hour way)"
+        },
+        {
+            "text": "o drugiej"
+        },
+        {
+            "text": "o dwudziestej",
+            "meaning": "at 8 p.m."
+        },
+        {
+            "text": "o dwudziestej pierwszej",
+            "meaning": "at 9 p.m."
+        },
+        {
+            "text": "o dwunastej"
+        },
+        {
+            "text": "o dwunastej czterdzieści pięć"
+        },
+        {
+            "text": "o dziesiątej jest lekcja",
+            "meaning": "at ten there is a lesson"
+        },
+        {
+            "text": "o dziesiątej zaczynam pracę"
+        },
+        {
+            "text": "o dziewiątej"
+        },
+        {
+            "text": "o dziewiątej kończę pracę"
+        },
+        {
+            "text": "o dziewiątej zaczynam pracę",
+            "meaning": "at nine I start work"
+        },
+        {
+            "text": "o jedenastej",
+            "meaning": "at eleven"
+        },
+        {
+            "text": "o której godzinie?",
+            "meaning": "at what time?"
+        },
+        {
+            "text": "o której godzinie?",
+            "meaning": "at what time? (o której godzinie?)"
+        },
+        {
+            "text": "o której idziesz spać?",
+            "meaning": "what time do you go to bed?"
+        },
+        {
+            "text": "o której się budzisz?"
+        },
+        {
+            "text": "o której wstajesz?",
+            "meaning": "what time do you get up?"
+        },
+        {
+            "text": "o której wychodzisz?"
+        },
+        {
+            "text": "o której zaczyna się film?"
+        },
+        {
+            "text": "o której zaczyna się impreza?",
+            "meaning": "what time does the party start?"
+        },
+        {
+            "text": "o której zaczyna się lekcja?"
+        },
+        {
+            "text": "o której?",
+            "meaning": "at what time?"
+        },
+        {
+            "text": "o której?",
+            "meaning": "at what time? (o której godzinie?)"
+        },
+        {
+            "text": "o pierwszej"
+        },
+        {
+            "text": "o piątej"
+        },
+        {
+            "text": "o piętnastej",
+            "meaning": "at 3 p.m."
+        },
+        {
             "text": "o północy",
             "meaning": "at midnight"
         },
@@ -17142,6 +19028,50 @@
         {
             "text": "o północy wracam do domu",
             "meaning": "I come home at midnight"
+        },
+        {
+            "text": "o siedemnastej kończę pracę",
+            "meaning": "at 5 p.m. I finish work"
+        },
+        {
+            "text": "o siódmej",
+            "meaning": "at seven"
+        },
+        {
+            "text": "o szesnastej"
+        },
+        {
+            "text": "o szóstej"
+        },
+        {
+            "text": "o szóstej wstaję",
+            "meaning": "I get up at six"
+        },
+        {
+            "text": "o trzeciej trzydzieści"
+        },
+        {
+            "text": "o trzynastej"
+        },
+        {
+            "text": "o trzynastej czterdzieści pięć"
+        },
+        {
+            "text": "o trzynastej piętnaście"
+        },
+        {
+            "text": "o trzynastej trzydzieści"
+        },
+        {
+            "text": "o wpół do drugiej"
+        },
+        {
+            "text": "o wpół do trzeciej",
+            "meaning": "at half past two"
+        },
+        {
+            "text": "o ósmej wychodzę z domu",
+            "meaning": "at eight I leave home"
         },
         {
             "text": "obiad",
@@ -17160,6 +19090,10 @@
             "meaning": "of course"
         },
         {
+            "text": "od",
+            "meaning": "from (with the time: od siódmej, from seven)"
+        },
+        {
             "text": "od czasu do czasu",
             "meaning": "from time to time"
         },
@@ -17171,11 +19105,34 @@
             "meaning": "from time to time I go by taxi"
         },
         {
+            "text": "od której do której?",
+            "meaning": "from what time till what time?"
+        },
+        {
+            "text": "od której do której?",
+            "meaning": "from when till when?"
+        },
+        {
             "text": "od rana do wieczora",
             "meaning": "from morning till evening"
         },
         {
-            "text": "odpoczywam"
+            "text": "od siedemnastej do siódmej"
+        },
+        {
+            "text": "od siódmej do siedemnastej",
+            "meaning": "from seven till 5 p.m."
+        },
+        {
+            "text": "od szóstej do siedemnastej"
+        },
+        {
+            "text": "odpoczywam",
+            "meaning": "I rest, I relax"
+        },
+        {
+            "text": "odpoczywam wieczorem",
+            "meaning": "I rest in the evening"
         },
         {
             "text": "odpocząć",
@@ -17242,6 +19199,18 @@
         {
             "text": "okno",
             "meaning": "a window"
+        },
+        {
+            "text": "około",
+            "meaning": "about"
+        },
+        {
+            "text": "około",
+            "meaning": "about, around (około dwunastej: at about twelve)"
+        },
+        {
+            "text": "około dwunastej",
+            "meaning": "at about twelve"
         },
         {
             "text": "okropna",
@@ -17459,6 +19428,10 @@
             "meaning": "he is almost twenty"
         },
         {
+            "text": "on ma randkę",
+            "meaning": "he has a date"
+        },
+        {
             "text": "on ma rok",
             "meaning": "he is one (year old)"
         },
@@ -17643,6 +19616,13 @@
         {
             "text": "ona się teraz nudzi",
             "meaning": "she is bored now"
+        },
+        {
+            "text": "ona spotyka się z babcią"
+        },
+        {
+            "text": "ona spotyka się ze znajomymi",
+            "meaning": "she meets friends"
         },
         {
             "text": "ona uczy się polskiego, bo jej chłopak jest z Polski",
@@ -17840,6 +19820,18 @@
             "meaning": "eighty-eight"
         },
         {
+            "text": "osiemnasta",
+            "meaning": "18:00"
+        },
+        {
+            "text": "osiemnasta",
+            "meaning": "6 p.m., eighteen hundred (jest osiemnasta; o osiemnastej)"
+        },
+        {
+            "text": "osiemnastej",
+            "meaning": "6 p.m., eighteen hundred (jest osiemnasta; o osiemnastej)"
+        },
+        {
             "text": "osiemnaście",
             "meaning": "eighteen"
         },
@@ -17888,6 +19880,14 @@
         {
             "text": "ostry",
             "meaning": "spicy"
+        },
+        {
+            "text": "otwieram",
+            "meaning": "I open"
+        },
+        {
+            "text": "otwieram komputer",
+            "meaning": "I open the computer"
         },
         {
             "text": "owalna",
@@ -18028,6 +20028,9 @@
             "meaning": "a pepper, the vegetable (papryki: peppers)"
         },
         {
+            "text": "parku"
+        },
+        {
             "text": "paszport",
             "meaning": "a passport"
         },
@@ -18152,6 +20155,14 @@
             "meaning": "pierogi with potato and cheese are vegetarian"
         },
         {
+            "text": "pierwsza",
+            "meaning": "1:00"
+        },
+        {
+            "text": "pierwsza",
+            "meaning": "one o'clock (jest pierwsza: it's one; o pierwszej: at one)"
+        },
+        {
             "text": "pierwsze"
         },
         {
@@ -18161,6 +20172,10 @@
         {
             "text": "pierwsze danie to zupa",
             "meaning": "the first course is soup"
+        },
+        {
+            "text": "pierwszej",
+            "meaning": "one o'clock (jest pierwsza: it's one; o pierwszej: at one)"
         },
         {
             "text": "pietruszka",
@@ -18302,12 +20317,44 @@
             "meaning": "a pizza (after robię, lubię…: robię pizzę)"
         },
         {
+            "text": "piąta",
+            "meaning": "5:00"
+        },
+        {
+            "text": "piąta",
+            "meaning": "five o'clock (jest piąta; o piątej: at five)"
+        },
+        {
+            "text": "piątej",
+            "meaning": "five o'clock (jest piąta; o piątej: at five)"
+        },
+        {
+            "text": "piątek",
+            "meaning": "Friday"
+        },
+        {
+            "text": "piątek",
+            "meaning": "Friday (w piątek: on Friday)"
+        },
+        {
             "text": "pić",
             "meaning": "drink (to drink)"
         },
         {
             "text": "pięknie",
             "meaning": "beautifully, lovely (pięknie pachnie: it smells lovely)"
+        },
+        {
+            "text": "piętnasta",
+            "meaning": "15:00"
+        },
+        {
+            "text": "piętnasta",
+            "meaning": "3 p.m., fifteen hundred (jest piętnasta; o piętnastej)"
+        },
+        {
+            "text": "piętnastej",
+            "meaning": "3 p.m., fifteen hundred (jest piętnasta; o piętnastej)"
         },
         {
             "text": "piętnaście",
@@ -18335,6 +20382,20 @@
         {
             "text": "pięć minus jeden to jest cztery",
             "meaning": "five minus one is four"
+        },
+        {
+            "text": "pięć po dwunastej"
+        },
+        {
+            "text": "pięć po siódmej"
+        },
+        {
+            "text": "pięć po ósmej",
+            "meaning": "8:05"
+        },
+        {
+            "text": "pięć po ósmej",
+            "meaning": "five past eight"
         },
         {
             "text": "pięć, cztery, trzy, dwa, jeden, zero",
@@ -18398,6 +20459,10 @@
             "meaning": "plus"
         },
         {
+            "text": "po",
+            "meaning": "past (with the time: pięć po ósmej, five past eight)"
+        },
+        {
             "text": "po angielsku",
             "meaning": "(in) English"
         },
@@ -18444,6 +20509,10 @@
         {
             "text": "po włosku",
             "meaning": "in Italian"
+        },
+        {
+            "text": "pod pomnikiem",
+            "meaning": "by the monument (under the statue)"
         },
         {
             "text": "podkreślić",
@@ -18610,6 +20679,18 @@
             "text": "pomidorów"
         },
         {
+            "text": "pomysł",
+            "meaning": "an idea (świetny pomysł!: a great idea!)"
+        },
+        {
+            "text": "poniedziałek",
+            "meaning": "Monday"
+        },
+        {
+            "text": "poniedziałek",
+            "meaning": "Monday (w poniedziałek: on Monday)"
+        },
+        {
             "text": "ponumerować",
             "meaning": "number (put numbers on)"
         },
@@ -18703,6 +20784,14 @@
         {
             "text": "posłuchać",
             "meaning": "listen (proszę posłuchać: listen, please)"
+        },
+        {
+            "text": "potańczyć",
+            "meaning": "dance a bit (to have a dance)"
+        },
+        {
+            "text": "potańczyć",
+            "meaning": "to dance a bit"
         },
         {
             "text": "potem",
@@ -18799,6 +20888,14 @@
         },
         {
             "text": "pracuję w szkole"
+        },
+        {
+            "text": "pracę",
+            "meaning": "work"
+        },
+        {
+            "text": "pracę",
+            "meaning": "work (after zaczynam, kończę…: kończę pracę)"
         },
         {
             "text": "praktyczna",
@@ -19008,8 +21105,15 @@
             "meaning": "here you are, this is the menu"
         },
         {
+            "text": "prysznic",
+            "meaning": "a shower (biorę prysznic: I have a shower)"
+        },
+        {
             "text": "przeczytać",
             "meaning": "read"
+        },
+        {
+            "text": "przed"
         },
         {
             "text": "przed południem",
@@ -19080,6 +21184,28 @@
             "meaning": "slash, in a house number (dziesięć przez trzy: 10/3)"
         },
         {
+            "text": "przykro mi",
+            "meaning": "I'm sorry"
+        },
+        {
+            "text": "przykro mi",
+            "meaning": "I'm sorry (przykro mi, ale nie mogę)"
+        },
+        {
+            "text": "przykro mi, ale dziś mogę"
+        },
+        {
+            "text": "przykro mi, ale dziś nie mogę",
+            "meaning": "I'm sorry, but I can't today"
+        },
+        {
+            "text": "przykro mi, ale jutro nie mogę"
+        },
+        {
+            "text": "przykro mi, ale nie dam rady",
+            "meaning": "I'm sorry, but I can't make it"
+        },
+        {
             "text": "przykład",
             "meaning": "an example"
         },
@@ -19140,6 +21266,17 @@
         {
             "text": "pytasz",
             "meaning": "you ask (one friend)"
+        },
+        {
+            "text": "pójdziemy"
+        },
+        {
+            "text": "pójść",
+            "meaning": "go (to go, once: chcesz pójść?)"
+        },
+        {
+            "text": "pójść",
+            "meaning": "to go"
         },
         {
             "text": "pół kilo",
@@ -19254,6 +21391,18 @@
             "meaning": "the bill (poproszę rachunek)"
         },
         {
+            "text": "randka",
+            "meaning": "a date"
+        },
+        {
+            "text": "randka",
+            "meaning": "a date (ma randkę: he has a date)"
+        },
+        {
+            "text": "randkę",
+            "meaning": "a date (ma randkę: he has a date)"
+        },
+        {
             "text": "rano",
             "meaning": "in the morning"
         },
@@ -19264,6 +21413,9 @@
         {
             "text": "rano jestem głodny",
             "meaning": "in the morning I am hungry (a man says it)"
+        },
+        {
+            "text": "rano oglądam serwis informacyjny"
         },
         {
             "text": "raz"
@@ -19506,6 +21658,9 @@
             "meaning": "a fish; fish, the food (ryby: fish, several)"
         },
         {
+            "text": "rynku"
+        },
+        {
             "text": "ryż",
             "meaning": "rice"
         },
@@ -19688,6 +21843,10 @@
             "text": "sernika"
         },
         {
+            "text": "serwis informacyjny",
+            "meaning": "the news (on TV)"
+        },
+        {
             "text": "sezon",
             "meaning": "a season"
         },
@@ -19724,6 +21883,18 @@
             "text": "siedemdziesiąt osiem"
         },
         {
+            "text": "siedemnasta",
+            "meaning": "17:00"
+        },
+        {
+            "text": "siedemnasta",
+            "meaning": "5 p.m., seventeen hundred (jest siedemnasta; o siedemnastej)"
+        },
+        {
+            "text": "siedemnastej",
+            "meaning": "5 p.m., seventeen hundred (jest siedemnasta; o siedemnastej)"
+        },
+        {
             "text": "siedemnaście",
             "meaning": "seventeen"
         },
@@ -19755,6 +21926,18 @@
         {
             "text": "siostrę",
             "meaning": "a sister (after mam, masz, ma…)"
+        },
+        {
+            "text": "siódma",
+            "meaning": "7:00"
+        },
+        {
+            "text": "siódma",
+            "meaning": "seven o'clock (jest siódma; o siódmej: at seven)"
+        },
+        {
+            "text": "siódmej",
+            "meaning": "seven o'clock (jest siódma; o siódmej: at seven)"
         },
         {
             "text": "się"
@@ -19874,6 +22057,14 @@
             "text": "sobie"
         },
         {
+            "text": "sobota",
+            "meaning": "Saturday"
+        },
+        {
+            "text": "sobota",
+            "meaning": "Saturday (w sobotę: on Saturday)"
+        },
+        {
             "text": "sok",
             "meaning": "juice"
         },
@@ -19909,8 +22100,27 @@
             "meaning": "the sauce is good"
         },
         {
+            "text": "spacer"
+        },
+        {
             "text": "spaghetti",
             "meaning": "spaghetti"
+        },
+        {
+            "text": "spać",
+            "meaning": "sleep (to sleep; idę spać: I go to bed)"
+        },
+        {
+            "text": "spać",
+            "meaning": "to sleep"
+        },
+        {
+            "text": "spektakl",
+            "meaning": "a show"
+        },
+        {
+            "text": "spektakl",
+            "meaning": "a show, a performance (in a theatre)"
         },
         {
             "text": "spontaniczna",
@@ -19960,7 +22170,29 @@
             "text": "sportową"
         },
         {
+            "text": "spotkanie",
+            "meaning": "a meeting"
+        },
+        {
+            "text": "spotkanie jest w środę",
+            "meaning": "the meeting is on Wednesday"
+        },
+        {
+            "text": "spotkanie jest we wtorek"
+        },
+        {
+            "text": "spotyka"
+        },
+        {
+            "text": "spotyka się",
+            "meaning": "he meets, she meets (spotyka się z kolegą)"
+        },
+        {
             "text": "spotykam"
+        },
+        {
+            "text": "spotykam się",
+            "meaning": "I meet (spotykam się ze znajomymi: I meet friends)"
         },
         {
             "text": "spotykamy się",
@@ -19975,6 +22207,9 @@
             "meaning": "we meet at home"
         },
         {
+            "text": "spotykasz"
+        },
+        {
             "text": "spotykać"
         },
         {
@@ -19984,6 +22219,20 @@
         {
             "text": "spotykać się",
             "meaning": "to meet up"
+        },
+        {
+            "text": "sprawa"
+        },
+        {
+            "text": "sprawdzam",
+            "meaning": "I check"
+        },
+        {
+            "text": "sprawdzam coś w telefonie",
+            "meaning": "I check something on my phone"
+        },
+        {
+            "text": "sprawdzasz"
         },
         {
             "text": "sprzedawca",
@@ -20008,6 +22257,10 @@
         {
             "text": "sprzedawczyni jest miła",
             "meaning": "the seller is nice (a woman)"
+        },
+        {
+            "text": "sprzątam",
+            "meaning": "I clean, I tidy up"
         },
         {
             "text": "stara",
@@ -20260,7 +22513,28 @@
             "meaning": "slim (szczupły, szczupła, szczupłe)"
         },
         {
-            "text": "szesnasta"
+            "text": "szef",
+            "meaning": "a boss"
+        },
+        {
+            "text": "szef",
+            "meaning": "a boss (spotkanie z szefem: a meeting with the boss)"
+        },
+        {
+            "text": "szefem",
+            "meaning": "a boss (spotkanie z szefem: a meeting with the boss)"
+        },
+        {
+            "text": "szesnasta",
+            "meaning": "16:00"
+        },
+        {
+            "text": "szesnasta",
+            "meaning": "4 p.m., sixteen hundred (jest szesnasta; o szesnastej)"
+        },
+        {
+            "text": "szesnastej",
+            "meaning": "4 p.m., sixteen hundred (jest szesnasta; o szesnastej)"
         },
         {
             "text": "szesnastą"
@@ -20388,6 +22662,18 @@
         },
         {
             "text": "szynkę"
+        },
+        {
+            "text": "szósta",
+            "meaning": "6:00"
+        },
+        {
+            "text": "szósta",
+            "meaning": "six o'clock (jest szósta; o szóstej: at six)"
+        },
+        {
+            "text": "szóstej",
+            "meaning": "six o'clock (jest szósta; o szóstej: at six)"
         },
         {
             "text": "sól",
@@ -20836,6 +23122,10 @@
             "meaning": "these cherries are sour"
         },
         {
+            "text": "teatr",
+            "meaning": "a theatre"
+        },
+        {
             "text": "tekst",
             "meaning": "a text"
         },
@@ -21052,6 +23342,16 @@
         },
         {
             "text": "to auto jest różowy"
+        },
+        {
+            "text": "to bardzo ciekawy teatr"
+        },
+        {
+            "text": "to bardzo stary film"
+        },
+        {
+            "text": "to bardzo stary teatr",
+            "meaning": "it is a very old theatre"
         },
         {
             "text": "to ciekawe słowo",
@@ -21566,8 +23866,22 @@
             "meaning": "this is not your problem (to one friend)"
         },
         {
+            "text": "to nie nasza sprawa"
+        },
+        {
             "text": "to nie twój problem",
             "meaning": "this is not your problem (to one friend)"
+        },
+        {
+            "text": "to nie wasza kawa"
+        },
+        {
+            "text": "to nie wasza sprawa",
+            "meaning": "it's none of your business"
+        },
+        {
+            "text": "to nie wasza sprawa",
+            "meaning": "it's none of your business (to several people)"
         },
         {
             "text": "to numer dziewięć",
@@ -21753,6 +24067,30 @@
             "meaning": "strawberry, made with strawberries (truskawkowy, truskawkowa, truskawkowe)"
         },
         {
+            "text": "trwa",
+            "meaning": "it lasts"
+        },
+        {
+            "text": "trwa",
+            "meaning": "it lasts (lekcja trwa godzinę: the lesson lasts an hour)"
+        },
+        {
+            "text": "trzecia",
+            "meaning": "3:00"
+        },
+        {
+            "text": "trzecia",
+            "meaning": "it's three o'clock"
+        },
+        {
+            "text": "trzecia",
+            "meaning": "three o'clock (jest trzecia; o trzeciej: at three)"
+        },
+        {
+            "text": "trzeciej",
+            "meaning": "three o'clock (jest trzecia; o trzeciej: at three)"
+        },
+        {
             "text": "trzy",
             "meaning": "three"
         },
@@ -21821,6 +24159,18 @@
         {
             "text": "trzydzieści trzy",
             "meaning": "thirty-three"
+        },
+        {
+            "text": "trzynasta",
+            "meaning": "1 p.m., thirteen hundred (jest trzynasta; o trzynastej)"
+        },
+        {
+            "text": "trzynasta",
+            "meaning": "13:00"
+        },
+        {
+            "text": "trzynastej",
+            "meaning": "1 p.m., thirteen hundred (jest trzynasta; o trzynastej)"
         },
         {
             "text": "trzynaście",
@@ -22006,6 +24356,10 @@
             "meaning": "can you dance the tango? (one friend)"
         },
         {
+            "text": "tydzień",
+            "meaning": "a week"
+        },
+        {
             "text": "tylko",
             "meaning": "only"
         },
@@ -22043,6 +24397,47 @@
         {
             "text": "tłusty",
             "meaning": "fatty (tłusty, tłusta, tłuste)"
+        },
+        {
+            "text": "u babci",
+            "meaning": "at grandma's"
+        },
+        {
+            "text": "u dentysty",
+            "meaning": "at the dentist's"
+        },
+        {
+            "text": "ubieram"
+        },
+        {
+            "text": "ubieram się",
+            "meaning": "I get dressed"
+        },
+        {
+            "text": "ubieram się czy myję zęby?"
+        },
+        {
+            "text": "ubierasz się",
+            "meaning": "you get dressed"
+        },
+        {
+            "text": "ubierasz się",
+            "meaning": "you get dressed (one friend)"
+        },
+        {
+            "text": "ubierasz się czy bierzesz prysznic?"
+        },
+        {
+            "text": "ubierasz się czy myjesz zęby?",
+            "meaning": "are you getting dressed or brushing your teeth?"
+        },
+        {
+            "text": "ubierać się",
+            "meaning": "get dressed (to get dressed)"
+        },
+        {
+            "text": "ubierać się",
+            "meaning": "to get dressed"
         },
         {
             "text": "uczy się"
@@ -22158,6 +24553,21 @@
         {
             "text": "ulubiony",
             "meaning": "favourite (ulubiony, ulubiona, ulubione)"
+        },
+        {
+            "text": "umawiamy się",
+            "meaning": "we arrange to meet"
+        },
+        {
+            "text": "umawiamy się",
+            "meaning": "we arrange to meet, we make a date"
+        },
+        {
+            "text": "umawiamy się na film"
+        },
+        {
+            "text": "umawiamy się na kawę",
+            "meaning": "we arrange to meet for a coffee"
         },
         {
             "text": "umie",
@@ -22346,6 +24756,18 @@
             "meaning": "in an office"
         },
         {
+            "text": "w czwartek",
+            "meaning": "Thursday (w czwartek: on Thursday)"
+        },
+        {
+            "text": "w czwartek idę do dentysty",
+            "meaning": "on Thursday I am going to the dentist's"
+        },
+        {
+            "text": "w czwartek o wpół do siódmej idę do dentysty",
+            "meaning": "on Thursday at half past six I am going to the dentist's"
+        },
+        {
             "text": "w domu",
             "meaning": "at home"
         },
@@ -22378,6 +24800,14 @@
             "meaning": "I work by day"
         },
         {
+            "text": "w galerii",
+            "meaning": "at the mall"
+        },
+        {
+            "text": "w galerii",
+            "meaning": "at the mall (w galerii handlowej)"
+        },
+        {
             "text": "w karty",
             "meaning": "cards"
         },
@@ -22390,8 +24820,24 @@
             "meaning": "at a club"
         },
         {
+            "text": "w niedzielę",
+            "meaning": "Sunday (w niedzielę: on Sunday)"
+        },
+        {
+            "text": "w niedzielę odpoczywam",
+            "meaning": "on Sunday I rest"
+        },
+        {
             "text": "w nocy",
             "meaning": "at night"
+        },
+        {
+            "text": "w piątek",
+            "meaning": "Friday (w piątek: on Friday)"
+        },
+        {
+            "text": "w piątek idę do kina",
+            "meaning": "on Friday I am going to the cinema"
         },
         {
             "text": "w piłkę",
@@ -22402,7 +24848,12 @@
             "meaning": "football (after grać: gram w piłkę)"
         },
         {
-            "text": "w poniedziałek"
+            "text": "w poniedziałek",
+            "meaning": "Monday (w poniedziałek: on Monday)"
+        },
+        {
+            "text": "w poniedziałek",
+            "meaning": "on Monday"
         },
         {
             "text": "w porządku",
@@ -22423,6 +24874,22 @@
         {
             "text": "w restauracji",
             "meaning": "in a restaurant"
+        },
+        {
+            "text": "w sobotę",
+            "meaning": "Saturday (w sobotę: on Saturday)"
+        },
+        {
+            "text": "w sobotę i w niedzielę",
+            "meaning": "on Saturday and on Sunday"
+        },
+        {
+            "text": "w sobotę sprzątam",
+            "meaning": "on Saturday I tidy up"
+        },
+        {
+            "text": "w sobotę w galerii",
+            "meaning": "on Saturday at the mall"
         },
         {
             "text": "w supermarkecie",
@@ -22465,6 +24932,10 @@
             "meaning": "in a theatre"
         },
         {
+            "text": "w telefonie",
+            "meaning": "on the phone, in my phone (sprawdzam coś w telefonie)"
+        },
+        {
             "text": "w tenisa",
             "meaning": "tennis (after grać: gram w tenisa)"
         },
@@ -22490,6 +24961,21 @@
         {
             "text": "w weekend robię zakupy",
             "meaning": "at the weekend I do the shopping"
+        },
+        {
+            "text": "w środę",
+            "meaning": "Wednesday (w środę: on Wednesday)"
+        },
+        {
+            "text": "w środę",
+            "meaning": "on Wednesday"
+        },
+        {
+            "text": "w środę za kwadrans ósma",
+            "meaning": "on Wednesday at a quarter to eight"
+        },
+        {
+            "text": "wam"
         },
         {
             "text": "wami"
@@ -22536,6 +25022,17 @@
         {
             "text": "wasze mieszkanie",
             "meaning": "your flat (several people)"
+        },
+        {
+            "text": "wcześnie",
+            "meaning": "early"
+        },
+        {
+            "text": "we"
+        },
+        {
+            "text": "we wtorek",
+            "meaning": "Tuesday (we wtorek: on Tuesday)"
         },
         {
             "text": "wegetariańska",
@@ -22590,6 +25087,17 @@
         },
         {
             "text": "wieczorem jem obiad"
+        },
+        {
+            "text": "wieczorem odpoczywam",
+            "meaning": "I rest in the evening"
+        },
+        {
+            "text": "wieczorem oglądam serial"
+        },
+        {
+            "text": "wieczorem oglądam serwis informacyjny",
+            "meaning": "in the evening I watch the news"
         },
         {
             "text": "wieczorem piję wino",
@@ -22667,6 +25175,18 @@
         {
             "text": "witamy",
             "meaning": "welcome (said by several people: \"we welcome you\")"
+        },
+        {
+            "text": "wizyta",
+            "meaning": "an appointment"
+        },
+        {
+            "text": "wizyta",
+            "meaning": "an appointment, a visit (mam wizytę u dentysty)"
+        },
+        {
+            "text": "wizytę",
+            "meaning": "an appointment, a visit (mam wizytę u dentysty)"
         },
         {
             "text": "wiśnia",
@@ -22809,6 +25329,18 @@
             "meaning": "beef"
         },
         {
+            "text": "wpół do",
+            "meaning": "half past"
+        },
+        {
+            "text": "wpół do",
+            "meaning": "half past, half to the next hour (wpół do drugiej: half past one)"
+        },
+        {
+            "text": "wpół do drugiej",
+            "meaning": "1:30"
+        },
+        {
             "text": "wraca"
         },
         {
@@ -22830,6 +25362,62 @@
         },
         {
             "text": "wracasz"
+        },
+        {
+            "text": "wracać"
+        },
+        {
+            "text": "wstaje"
+        },
+        {
+            "text": "wstajecie"
+        },
+        {
+            "text": "wstajemy"
+        },
+        {
+            "text": "wstajesz",
+            "meaning": "you get up"
+        },
+        {
+            "text": "wstajesz",
+            "meaning": "you get up (one friend)"
+        },
+        {
+            "text": "wstajesz wcześnie"
+        },
+        {
+            "text": "wstają"
+        },
+        {
+            "text": "wstaję",
+            "meaning": "I get up"
+        },
+        {
+            "text": "wstaję o siódmej"
+        },
+        {
+            "text": "wstaję o szóstej",
+            "meaning": "I get up at six"
+        },
+        {
+            "text": "wstaję późno"
+        },
+        {
+            "text": "wstaję wcześnie",
+            "meaning": "I get up early"
+        },
+        {
+            "text": "wstawać",
+            "meaning": "get up (to get up)"
+        },
+        {
+            "text": "wstawać",
+            "meaning": "to get up"
+        },
+        {
+            "text": "wstawać wcześnie",
+            "meaning": "to get up early"
         },
         {
             "text": "wszyscy",
@@ -22868,6 +25456,14 @@
             "meaning": "everywhere, anywhere"
         },
         {
+            "text": "wtorek",
+            "meaning": "Tuesday"
+        },
+        {
+            "text": "wtorek",
+            "meaning": "Tuesday (we wtorek: on Tuesday)"
+        },
+        {
             "text": "wujek",
             "meaning": "an uncle"
         },
@@ -22890,6 +25486,22 @@
         {
             "text": "wybrać",
             "meaning": "choose"
+        },
+        {
+            "text": "wychodzisz",
+            "meaning": "you go out, you leave (one friend)"
+        },
+        {
+            "text": "wychodzisz",
+            "meaning": "you leave"
+        },
+        {
+            "text": "wychodzę",
+            "meaning": "I go out, I leave (wychodzę z domu: I leave home)"
+        },
+        {
+            "text": "wychodzę z domu",
+            "meaning": "I leave home"
         },
         {
             "text": "wycieczkę"
@@ -23037,6 +25649,10 @@
             "meaning": "with lemon"
         },
         {
+            "text": "z domu",
+            "meaning": "from home (wychodzę z domu: I leave home)"
+        },
+        {
             "text": "z dżemem",
             "meaning": "with jam"
         },
@@ -23121,6 +25737,10 @@
             "meaning": "with double cheese"
         },
         {
+            "text": "z przyjemnością",
+            "meaning": "with pleasure"
+        },
+        {
             "text": "z rodzynkami",
             "meaning": "with raisins"
         },
@@ -23166,11 +25786,65 @@
         },
         {
             "text": "za",
+            "meaning": "to (with the time: za pięć ósma, five to eight)"
+        },
+        {
+            "text": "za",
             "meaning": "too"
         },
         {
             "text": "za",
             "meaning": "too (za słony: too salty)"
+        },
+        {
+            "text": "za kwadrans druga",
+            "meaning": "1:45"
+        },
+        {
+            "text": "za kwadrans pierwsza"
+        },
+        {
+            "text": "za pięć druga"
+        },
+        {
+            "text": "za pięć dwunasta",
+            "meaning": "five to twelve"
+        },
+        {
+            "text": "za pięć ósma",
+            "meaning": "7:55"
+        },
+        {
+            "text": "za pięć ósma",
+            "meaning": "five to eight"
+        },
+        {
+            "text": "zaczyna się",
+            "meaning": "it starts"
+        },
+        {
+            "text": "zaczyna się",
+            "meaning": "it starts, it begins"
+        },
+        {
+            "text": "zaczynam",
+            "meaning": "I start"
+        },
+        {
+            "text": "zaczynam",
+            "meaning": "I start, I begin (zaczynam pracę: I start work)"
+        },
+        {
+            "text": "zajęcia",
+            "meaning": "classes"
+        },
+        {
+            "text": "zajęcia",
+            "meaning": "classes (zajęcia dodatkowe: extra classes)"
+        },
+        {
+            "text": "zajęcia są od dziesiątej do trzynastej",
+            "meaning": "classes are from ten till 1 p.m."
         },
         {
             "text": "zajęta",
@@ -23276,11 +25950,33 @@
             "meaning": "I invite (zapraszam na obiad: come for dinner)"
         },
         {
+            "text": "zapraszam cię",
+            "meaning": "I invite you"
+        },
+        {
+            "text": "zapraszam cię",
+            "meaning": "I invite you (zapraszam cię na film: come to a film with me; zapraszam was: several people)"
+        },
+        {
+            "text": "zapraszam cię na film",
+            "meaning": "come to a film with me"
+        },
+        {
+            "text": "zapraszam cię na kawę"
+        },
+        {
             "text": "zapraszam na kolację"
         },
         {
             "text": "zapraszam na obiad",
             "meaning": "come for dinner"
+        },
+        {
+            "text": "zapraszam was",
+            "meaning": "I invite you (zapraszam cię na film: come to a film with me; zapraszam was: several people)"
+        },
+        {
+            "text": "zapraszam was na film"
         },
         {
             "text": "zapraszamy",
@@ -23299,6 +25995,18 @@
         },
         {
             "text": "zapraszasz"
+        },
+        {
+            "text": "zaproszenia",
+            "meaning": "an invitation (zaproszenia: invitations)"
+        },
+        {
+            "text": "zaproszenie",
+            "meaning": "an invitation"
+        },
+        {
+            "text": "zaproszenie",
+            "meaning": "an invitation (zaproszenia: invitations)"
         },
         {
             "text": "zaraz",
@@ -23388,6 +26096,10 @@
         {
             "text": "ze śmietaną",
             "meaning": "with sour cream"
+        },
+        {
+            "text": "zegarek",
+            "meaning": "a watch"
         },
         {
             "text": "zero",
@@ -23642,6 +26354,10 @@
             "meaning": "usually"
         },
         {
+            "text": "zęby",
+            "meaning": "teeth"
+        },
+        {
             "text": "zł"
         },
         {
@@ -23679,6 +26395,21 @@
         {
             "text": "zły",
             "meaning": "bad (zły, zła, złe)"
+        },
+        {
+            "text": "Ósma."
+        },
+        {
+            "text": "ósma",
+            "meaning": "8:00"
+        },
+        {
+            "text": "ósma",
+            "meaning": "eight o'clock (jest ósma; o ósmej: at eight)"
+        },
+        {
+            "text": "ósmej",
+            "meaning": "eight o'clock (jest ósma; o ósmej: at eight)"
         },
         {
             "text": "Ćwiczenia",
@@ -23814,6 +26545,10 @@
             "meaning": "Great! Thank you, that's all. Goodbye!"
         },
         {
+            "text": "Świetnie! Gdzie się spotkamy?",
+            "meaning": "Great! Where shall we meet?"
+        },
+        {
             "text": "Świetnie! Idziemy!",
             "meaning": "Great! Let's go!"
         },
@@ -23828,6 +26563,9 @@
         {
             "text": "Świetnie! Pa, do jutra!",
             "meaning": "Great! Bye, see you tomorrow!"
+        },
+        {
+            "text": "Świetny pomysł! Gdzie się spotkamy?"
         },
         {
             "text": "Świeża w doniczce, proszę.",
@@ -23949,6 +26687,22 @@
             "meaning": "of medium height"
         },
         {
+            "text": "środa",
+            "meaning": "Wednesday"
+        },
+        {
+            "text": "środa",
+            "meaning": "Wednesday (w środę: on Wednesday)"
+        },
+        {
+            "text": "świetna",
+            "meaning": "great, excellent (świetny, świetna, świetne)"
+        },
+        {
+            "text": "świetne",
+            "meaning": "great, excellent (świetny, świetna, świetne)"
+        },
+        {
             "text": "świetnie",
             "meaning": "great"
         },
@@ -23961,7 +26715,15 @@
             "meaning": "great, thank you"
         },
         {
-            "text": "świetny"
+            "text": "świetny",
+            "meaning": "great, excellent (świetny, świetna, świetne)"
+        },
+        {
+            "text": "świetny film!"
+        },
+        {
+            "text": "świetny pomysł!",
+            "meaning": "a great idea!"
         },
         {
             "text": "świeża",
@@ -24110,12 +26872,24 @@
             "text": "żółty ser"
         },
         {
+            "text": "„Dziękuję za …”",
+            "meaning": "\"Thank you for the…\" (invitation)"
+        },
+        {
             "text": "„Nie mam żony, jestem …”",
             "meaning": "\"I don't have a wife, I am a…\" (bachelor)"
         },
         {
             "text": "„Nie wiem, co …”",
             "meaning": "\"I don't know what to…\" (say)"
+        },
+        {
+            "text": "„O … rano jeszcze śpię”.",
+            "meaning": "\"At … in the morning I am still asleep.\" (a time)"
+        },
+        {
+            "text": "„To nie wasza …”",
+            "meaning": "\"It's none of your…\" (business)"
         }
     ],
     "tips": [
@@ -24546,6 +27320,26 @@
         {
             "id": "chat-in-class/t6/3",
             "hash": "99ca12f2a087"
+        },
+        {
+            "id": "chat-invitation/t1/2",
+            "hash": "5220d1bf2dc4"
+        },
+        {
+            "id": "chat-invitation/t2/2",
+            "hash": "2a57198bfb55"
+        },
+        {
+            "id": "chat-invitation/t3/2",
+            "hash": "2cfb770f7f51"
+        },
+        {
+            "id": "chat-invitation/t4/2",
+            "hash": "9b0d1bf9ae6e"
+        },
+        {
+            "id": "chat-invitation/t4/3",
+            "hash": "a8a765ea8a7c"
         },
         {
             "id": "chat-new-classmate/t1/2",
@@ -25492,6 +28286,86 @@
         {
             "id": "kpk1-l11-g-t01",
             "hash": "ccd1666c25c4"
+        },
+        {
+            "id": "kpk1-l12-a1-t01",
+            "hash": "be44a5cbafd3"
+        },
+        {
+            "id": "kpk1-l12-a2-t01",
+            "hash": "dbb5a7b2706d"
+        },
+        {
+            "id": "kpk1-l12-a3-t01",
+            "hash": "b1f974509fb3"
+        },
+        {
+            "id": "kpk1-l12-a4-t01",
+            "hash": "535045bfbc5f"
+        },
+        {
+            "id": "kpk1-l12-a4-t02",
+            "hash": "60efbd3e51c1"
+        },
+        {
+            "id": "kpk1-l12-a5-t01",
+            "hash": "819073b6f12a"
+        },
+        {
+            "id": "kpk1-l12-b1-t01",
+            "hash": "77c5288c9027"
+        },
+        {
+            "id": "kpk1-l12-b2-t01",
+            "hash": "3c0fbd95d0df"
+        },
+        {
+            "id": "kpk1-l12-b3-t01",
+            "hash": "ceda5433bd94"
+        },
+        {
+            "id": "kpk1-l12-b4-t01",
+            "hash": "32ce36ee2f8c"
+        },
+        {
+            "id": "kpk1-l12-b4-t02",
+            "hash": "ed908fc5f646"
+        },
+        {
+            "id": "kpk1-l12-b5-t01",
+            "hash": "83fbd8574b70"
+        },
+        {
+            "id": "kpk1-l12-c1-t01",
+            "hash": "7f28d0199a10"
+        },
+        {
+            "id": "kpk1-l12-c2-t01",
+            "hash": "8700eeb20fa7"
+        },
+        {
+            "id": "kpk1-l12-d1-t01",
+            "hash": "4f8eb422a413"
+        },
+        {
+            "id": "kpk1-l12-d2-t01",
+            "hash": "ece4fac368d6"
+        },
+        {
+            "id": "kpk1-l12-d3-t01",
+            "hash": "810fdda68967"
+        },
+        {
+            "id": "kpk1-l12-d3-t02",
+            "hash": "859f15469105"
+        },
+        {
+            "id": "kpk1-l12-d4-t01",
+            "hash": "c7090c21698f"
+        },
+        {
+            "id": "kpk1-l12-g-t01",
+            "hash": "6b37855b62da"
         }
     ]
 }

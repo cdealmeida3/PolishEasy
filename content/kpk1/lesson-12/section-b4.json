@@ -1,0 +1,522 @@
+{
+  "id": "kpk1-l12-b4",
+  "section": {
+    "letter": "B",
+    "heading": "Która godzina? O której godzinie?",
+    "meaning": {
+      "en": "What time is it? At what time?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-b4-t01",
+      "before": "kpk1-l12-b4-e01",
+      "title": {
+        "en": "Kwadrans po pierwszej"
+      },
+      "body": {
+        "en": "Minutes past the hour take *po*: *pięć po ósmej* (8:05), *kwadrans po pierwszej* (1:15; a *kwadrans* is fifteen minutes). Minutes to the hour take *za*: *za pięć ósma* (7:55), *za kwadrans druga* (1:45). Half past counts towards the next hour: *wpół do drugiej* is 1:30."
+      },
+      "kind": "zapamietaj"
+    },
+    {
+      "id": "kpk1-l12-b4-t02",
+      "before": "kpk1-l12-b4-e08",
+      "title": {
+        "en": "Oficjalnie"
+      },
+      "body": {
+        "en": "Formally you read the numbers as they are: *o trzynastej piętnaście* (13:15), *o trzynastej trzydzieści*, *o trzynastej czterdzieści pięć*. *Około* is about: *około dwunastej*."
+      },
+      "table": {
+        "title": {
+          "en": "O której? Oficjalnie i nieoficjalnie"
+        },
+        "columns": [
+          {
+            "header": "oficjalnie"
+          },
+          {
+            "header": "nieoficjalnie"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "o trzynastej",
+              "o pierwszej"
+            ]
+          },
+          {
+            "cells": [
+              "o trzynastej piętnaście",
+              "kwadrans po pierwszej"
+            ]
+          },
+          {
+            "cells": [
+              "o trzynastej trzydzieści",
+              "o wpół do drugiej"
+            ]
+          },
+          {
+            "cells": [
+              "o trzynastej czterdzieści pięć",
+              "za kwadrans druga"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b4-e01",
+      "prompt": "kwadrans",
+      "options": [
+        {
+          "en": "a quarter of an hour, fifteen minutes"
+        },
+        {
+          "en": "an hour; the time (która godzina?: what time is it?)"
+        },
+        {
+          "en": "a break"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kwadrans"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b4-e02",
+      "prompt": "po",
+      "options": [
+        {
+          "en": "to (with the time: za pięć ósma, five to eight)"
+        },
+        {
+          "en": "past (with the time: pięć po ósmej, five past eight)"
+        },
+        {
+          "en": "at"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "po-godz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b4-e03",
+      "prompt": "za",
+      "options": [
+        {
+          "en": "past (with the time: pięć po ósmej, five past eight)"
+        },
+        {
+          "en": "at"
+        },
+        {
+          "en": "to (with the time: za pięć ósma, five to eight)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "za-godz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-b4-e04",
+      "text": "pięć po ósmej",
+      "meaning": {
+        "en": "five past eight"
+      },
+      "distractors": [
+        "za pięć ósma",
+        "pięć po siódmej"
+      ],
+      "items": [
+        "piec",
+        "po-godz",
+        "osma"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b4-e05",
+      "prompt": "wpół do",
+      "options": [
+        {
+          "en": "half past, half to the next hour (wpół do drugiej: half past one)"
+        },
+        {
+          "en": "a quarter of an hour, fifteen minutes"
+        },
+        {
+          "en": "a quarter to"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wpol-do"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-b4-e06",
+      "text": "Jest wpół do ___.",
+      "meaning": {
+        "en": "It's half past one."
+      },
+      "gaps": [
+        [
+          "drugiej"
+        ]
+      ],
+      "distractors": [
+        "pierwszej",
+        "druga"
+      ],
+      "items": [
+        "byc-jest",
+        "wpol-do",
+        "druga"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b4-e07",
+      "prompt": "minuta",
+      "options": [
+        {
+          "en": "an hour; the time (która godzina?: what time is it?)"
+        },
+        {
+          "en": "a minute (pięć minut: five minutes)"
+        },
+        {
+          "en": "a day and a night, twenty-four hours"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "minuta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b4-e08",
+      "prompt": "około",
+      "options": [
+        {
+          "en": "at (with the time: o ósmej, at eight)"
+        },
+        {
+          "en": "past (with the time: pięć po ósmej, five past eight)"
+        },
+        {
+          "en": "about, around (około dwunastej: at about twelve)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "okolo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b4-e09",
+      "prompt": "zegarek",
+      "options": [
+        {
+          "en": "a watch"
+        },
+        {
+          "en": "a computer"
+        },
+        {
+          "en": "a calendar"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zegarek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b4-e10",
+      "prompt": "budzik",
+      "options": [
+        {
+          "en": "a watch"
+        },
+        {
+          "en": "an alarm clock"
+        },
+        {
+          "en": "a computer"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "budzik"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-b4-e11",
+      "prompt": {
+        "en": "a quarter past one"
+      },
+      "acceptedAnswers": [
+        "kwadrans po pierwszej"
+      ],
+      "distractors": [
+        "przed",
+        "pierwsza"
+      ],
+      "items": [
+        "kwadrans",
+        "po-godz",
+        "pierwsza"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-b4-e12",
+      "acceptedAnswers": [
+        "za pięć ósma"
+      ],
+      "meaning": {
+        "en": "five to eight"
+      },
+      "items": [
+        "za-godz",
+        "piec",
+        "osma"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-b4-e13",
+      "prompt": {
+        "en": "at about twelve"
+      },
+      "acceptedAnswers": [
+        "około dwunastej"
+      ],
+      "items": [
+        "okolo",
+        "dwunasta"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-b4-e14",
+      "pairs": [
+        {
+          "polish": "kwadrans",
+          "meaning": {
+            "en": "fifteen minutes"
+          }
+        },
+        {
+          "polish": "wpół do drugiej",
+          "meaning": {
+            "en": "1:30"
+          }
+        },
+        {
+          "polish": "pięć po ósmej",
+          "meaning": {
+            "en": "8:05"
+          }
+        },
+        {
+          "polish": "za pięć ósma",
+          "meaning": {
+            "en": "7:55"
+          }
+        },
+        {
+          "polish": "kwadrans po pierwszej",
+          "meaning": {
+            "en": "1:15"
+          }
+        },
+        {
+          "polish": "za kwadrans druga",
+          "meaning": {
+            "en": "1:45"
+          }
+        }
+      ],
+      "items": [
+        "kwadrans",
+        "wpol-do",
+        "druga",
+        "piec",
+        "po-godz",
+        "osma",
+        "za-godz",
+        "pierwsza"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-b4-e15",
+      "lines": [
+        "Lekcja jest o wpół do dziesiątej.",
+        "Trwa czterdzieści pięć minut.",
+        "Przerwa jest kwadrans po dziesiątej."
+      ],
+      "meaning": {
+        "en": "A lesson and a break."
+      },
+      "statements": [
+        {
+          "text": "Lekcja jest o dziewiątej trzydzieści.",
+          "meaning": {
+            "en": "The lesson is at 9:30."
+          },
+          "true": true
+        },
+        {
+          "text": "Lekcja trwa godzinę.",
+          "meaning": {
+            "en": "The lesson lasts an hour."
+          },
+          "true": false
+        },
+        {
+          "text": "Przerwa jest o dziesiątej piętnaście.",
+          "meaning": {
+            "en": "The break is at 10:15."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "lekcja",
+        "byc-jest",
+        "o-godz",
+        "wpol-do",
+        "dziesiata",
+        "czterdziesci",
+        "piec",
+        "minuta",
+        "przerwa",
+        "kwadrans",
+        "po-godz"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-b4-e16",
+      "lines": [
+        "Kiedy jest film?",
+        "O wpół do ósmej.",
+        "Czyli o siódmej trzydzieści?",
+        "Tak. Mamy jeszcze piętnaście minut."
+      ],
+      "meaning": {
+        "en": "Before the film."
+      },
+      "items": [
+        "kiedy",
+        "byc-jest",
+        "film",
+        "o-godz",
+        "wpol-do",
+        "osma",
+        "czyli",
+        "siodma",
+        "trzydziesci",
+        "tak",
+        "miec-mamy",
+        "jeszcze",
+        "pietnascie",
+        "minuta"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-b4-e17",
+      "pairs": [
+        {
+          "polish": "zegarek",
+          "meaning": {
+            "en": "a watch"
+          }
+        },
+        {
+          "polish": "budzik",
+          "meaning": {
+            "en": "an alarm clock"
+          }
+        },
+        {
+          "polish": "kwadrans",
+          "meaning": {
+            "en": "fifteen minutes"
+          }
+        },
+        {
+          "polish": "minuta",
+          "meaning": {
+            "en": "a minute"
+          }
+        },
+        {
+          "polish": "około",
+          "meaning": {
+            "en": "about"
+          }
+        },
+        {
+          "polish": "wpół do",
+          "meaning": {
+            "en": "half past"
+          }
+        }
+      ],
+      "items": [
+        "zegarek",
+        "budzik",
+        "kwadrans",
+        "minuta",
+        "okolo",
+        "wpol-do"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-b4-e18",
+      "text": "mam nowy zegarek",
+      "meaning": {
+        "en": "I have a new watch"
+      },
+      "distractors": [
+        "mam nowy budzik",
+        "mam nowy komputer"
+      ],
+      "items": [
+        "miec-mam",
+        "nowy",
+        "zegarek"
+      ]
+    }
+  ]
+}

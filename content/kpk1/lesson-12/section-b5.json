@@ -1,0 +1,421 @@
+{
+  "id": "kpk1-l12-b5",
+  "section": {
+    "letter": "B",
+    "heading": "Która godzina? O której godzinie?",
+    "meaning": {
+      "en": "What time is it? At what time?"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-b5-t01",
+      "before": "kpk1-l12-b5-e01",
+      "title": {
+        "en": "Od której do której?"
+      },
+      "body": {
+        "en": "*Od której do której?* asks from when till when. *Od* and *do* both take the hour in *-ej*: *od siódmej do siedemnastej*, so a sign *czynne 7:00–17:00* reads *czynne od siódmej do siedemnastej*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b5-e01",
+      "prompt": "od której do której?",
+      "options": [
+        {
+          "en": "at what time? (o której godzinie?)"
+        },
+        {
+          "en": "how often?"
+        },
+        {
+          "en": "from what time till what time?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "od-ktorej-do-ktorej"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b5-e02",
+      "prompt": "od",
+      "options": [
+        {
+          "en": "from (with the time: od siódmej, from seven)"
+        },
+        {
+          "en": "till, until (with the time: do siedemnastej, till 5 p.m.)"
+        },
+        {
+          "en": "past (with the time: pięć po ósmej, five past eight)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "od-godz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b5-e03",
+      "prompt": "do",
+      "options": [
+        {
+          "en": "from (with the time: od siódmej, from seven)"
+        },
+        {
+          "en": "till, until (with the time: do siedemnastej, till 5 p.m.)"
+        },
+        {
+          "en": "to (with the time: za pięć ósma, five to eight)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-godz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-b5-e04",
+      "text": "od siódmej do siedemnastej",
+      "meaning": {
+        "en": "from seven till 5 p.m."
+      },
+      "distractors": [
+        "od szóstej do siedemnastej",
+        "od siedemnastej do siódmej"
+      ],
+      "items": [
+        "od-godz",
+        "siodma",
+        "do-godz",
+        "siedemnasta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b5-e05",
+      "prompt": "zajęcia",
+      "options": [
+        {
+          "en": "a break"
+        },
+        {
+          "en": "a meeting"
+        },
+        {
+          "en": "classes (zajęcia dodatkowe: extra classes)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zajecia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b5-e06",
+      "prompt": "trwa",
+      "options": [
+        {
+          "en": "it lasts (lekcja trwa godzinę: the lesson lasts an hour)"
+        },
+        {
+          "en": "he is; she is; it is"
+        },
+        {
+          "en": "he has; she has; it has"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "trwa"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-b5-e07",
+      "text": "Lekcja ___ godzinę.",
+      "meaning": {
+        "en": "The lesson lasts an hour."
+      },
+      "gaps": [
+        [
+          "trwa"
+        ]
+      ],
+      "distractors": [
+        "jest",
+        "ma"
+      ],
+      "items": [
+        "lekcja",
+        "trwa",
+        "godzina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b5-e08",
+      "prompt": "wizyta",
+      "options": [
+        {
+          "en": "a meeting"
+        },
+        {
+          "en": "an appointment, a visit (mam wizytę u dentysty)"
+        },
+        {
+          "en": "an invitation (zaproszenia: invitations)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wizyta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b5-e09",
+      "prompt": "u dentysty",
+      "options": [
+        {
+          "en": "to the doctor"
+        },
+        {
+          "en": "in a hospital"
+        },
+        {
+          "en": "at the dentist's"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "u-dentysty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b5-e10",
+      "prompt": "szef",
+      "options": [
+        {
+          "en": "a boss (spotkanie z szefem: a meeting with the boss)"
+        },
+        {
+          "en": "a classmate; a friend (a man)"
+        },
+        {
+          "en": "a host, a landlord (the man of the house a student lives in)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "szef"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-b5-e11",
+      "prompt": {
+        "en": "I have an appointment at the dentist's"
+      },
+      "acceptedAnswers": [
+        "mam wizytę u dentysty"
+      ],
+      "distractors": [
+        "wizyta",
+        "do"
+      ],
+      "items": [
+        "miec-mam",
+        "wizyta",
+        "u-dentysty"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-b5-e12",
+      "acceptedAnswers": [
+        "zajęcia są od dziesiątej do trzynastej"
+      ],
+      "meaning": {
+        "en": "classes are from ten till 1 p.m."
+      },
+      "items": [
+        "zajecia",
+        "byc-sa",
+        "od-godz",
+        "dziesiata",
+        "do-godz",
+        "trzynasta"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-b5-e13",
+      "prompt": {
+        "en": "from what time till what time?"
+      },
+      "acceptedAnswers": [
+        "od której do której?"
+      ],
+      "items": [
+        "od-ktorej-do-ktorej"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-b5-e14",
+      "pairs": [
+        {
+          "polish": "od której do której?",
+          "meaning": {
+            "en": "from when till when?"
+          }
+        },
+        {
+          "polish": "trwa",
+          "meaning": {
+            "en": "it lasts"
+          }
+        },
+        {
+          "polish": "zajęcia",
+          "meaning": {
+            "en": "classes"
+          }
+        },
+        {
+          "polish": "wizyta",
+          "meaning": {
+            "en": "an appointment"
+          }
+        },
+        {
+          "polish": "u dentysty",
+          "meaning": {
+            "en": "at the dentist's"
+          }
+        },
+        {
+          "polish": "szef",
+          "meaning": {
+            "en": "a boss"
+          }
+        }
+      ],
+      "items": [
+        "od-ktorej-do-ktorej",
+        "trwa",
+        "zajecia",
+        "wizyta",
+        "u-dentysty",
+        "szef"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-b5-e15",
+      "lines": [
+        "Pracuję od dziewiątej do siedemnastej.",
+        "O czternastej mam spotkanie z szefem.",
+        "O wpół do szóstej mam wizytę u dentysty."
+      ],
+      "meaning": {
+        "en": "A busy day."
+      },
+      "statements": [
+        {
+          "text": "Pracuje osiem godzin.",
+          "meaning": {
+            "en": "He works eight hours."
+          },
+          "true": true
+        },
+        {
+          "text": "Wizyta u dentysty jest o szóstej.",
+          "meaning": {
+            "en": "The dentist appointment is at six."
+          },
+          "true": false
+        },
+        {
+          "text": "O drugiej po południu ma spotkanie.",
+          "meaning": {
+            "en": "At two in the afternoon he has a meeting."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "pracowac-pracuje",
+        "od-godz",
+        "dziewiata",
+        "do-godz",
+        "siedemnasta",
+        "o-godz",
+        "czternasta",
+        "miec-mam",
+        "szef",
+        "wpol-do",
+        "szosta",
+        "wizyta",
+        "u-dentysty"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-b5-e16",
+      "lines": [
+        "Od której do której pracujesz?",
+        "Od ósmej do szesnastej.",
+        "A potem?",
+        "Potem mam zajęcia."
+      ],
+      "meaning": {
+        "en": "After work."
+      },
+      "items": [
+        "od-ktorej-do-ktorej",
+        "pracowac-pracujesz",
+        "od-godz",
+        "osma",
+        "do-godz",
+        "szesnasta",
+        "a",
+        "potem",
+        "miec-mam",
+        "zajecia"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-b5-e17",
+      "text": "lekcja trwa godzinę",
+      "meaning": {
+        "en": "the lesson lasts an hour"
+      },
+      "distractors": [
+        "lekcja trwa minutę",
+        "lekcja jest o pierwszej"
+      ],
+      "items": [
+        "lekcja",
+        "trwa",
+        "godzina"
+      ]
+    }
+  ]
+}
