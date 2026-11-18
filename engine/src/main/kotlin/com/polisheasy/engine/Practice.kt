@@ -24,6 +24,8 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     /** People introduce themselves, heard or read, and the Learner fills in a form for each. */
     ANKIETA("ankieta", GameGroup.PHRASES),
     VERB_CHALLENGE("verb-challenge", GameGroup.VERBS),
+    /** Chapter 6's Game: a verb is sorted into its conjugation: -m, -sz; -ę, -esz; or -ę, -isz / -ysz. */
+    VERB_GROUPS("verb-groups", GameGroup.VERBS),
     LISTEN_AND_TAP("listen-and-tap", GameGroup.SOUNDS),
     SOUND_GAPS("sound-gaps", GameGroup.SOUNDS),
     SPELL_IT("spell-it", GameGroup.WORDS),
@@ -37,6 +39,8 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     OPPOSITES_SNAP("opposites-snap", GameGroup.WORDS),
     /** Chapter 5's Game: a job is shown, and the Learner says who the person is: on jest lekarzem. */
     WHOS_WHO("whos-who", GameGroup.WORDS),
+    /** Chapter 6's Game: a hobby is acted out in a picture, and the Learner names it: jeździć na rowerze. */
+    HOBBY_CHARADES("hobby-charades", GameGroup.WORDS),
     NUMBERS("numbers", GameGroup.NUMBERS),
 }
 
@@ -243,7 +247,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, Numbers).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

@@ -40,6 +40,8 @@ import com.polisheasy.engine.LabelRound
 import com.polisheasy.engine.NumberRound
 import com.polisheasy.engine.OppositesRound
 import com.polisheasy.engine.WhoRound
+import com.polisheasy.engine.VerbGroupRound
+import com.polisheasy.engine.HobbyRound
 import com.polisheasy.engine.QuickRound
 import com.polisheasy.engine.Register
 import com.polisheasy.engine.RegisterRound
@@ -568,6 +570,75 @@ class PlayingPracticeOnScreenTest {
             tap(R.string.action_continue)
         }
         showsScore(total - 1, total)
+    }
+
+    @Test
+    fun `Three groups shows a verb, and the Learner sorts it by how ja and ty end`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_verb_groups)
+        tap(R.string.option_with_ja)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val round = verbGroups()
+        val total = round.total
+        val first = checkNotNull(round.question)
+        shows(R.string.verb_groups_instruction)
+        shows(first.verb)
+        shows(first.meaning)
+        shows(text(R.string.verb_groups_ja, first.ja))
+        round.groups.forEach { group -> screen.onNode(hasText(group.endings) and hasClickAction()).assertExists() }
+
+        // A wrong group: the right one is marked, and ja and ty are written.
+        val wrong = round.groups.first { it != first.group }
+        screen.onNode(hasText(wrong.endings) and hasClickAction()).performClick()
+        shows(text(R.string.verb_groups_forms, first.ja, first.ty))
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            val asked = checkNotNull(verbGroups().question)
+            screen.onNode(hasText(asked.group.endings) and hasClickAction()).performClick()
+            tap(R.string.action_continue)
+        }
+        showsScore(total - 1, total)
+    }
+
+    @Test
+    fun `Hobby charades shows a hobby's picture, and the Learner names it by choosing or typing`() {
+        openPracticeOverTheRealCourse()
+        openGame(R.string.game_hobby_charades)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+
+        val total = hobbies().total
+        val first = checkNotNull(hobbies().question)
+        shows(R.string.hobby_instruction)
+        assertEquals(4, first.options.size)
+        first.options.forEach { option -> screen.onNode(hasText(option) and hasClickAction()).assertExists() }
+
+        // A wrong hobby: the right one is marked, and said with Lubię.
+        screen.onNode(hasText(first.options.first { it != first.answer }) and hasClickAction()).performClick()
+        shows(text(R.string.hobby_lubie, first.answer))
+        tap(R.string.action_continue)
+
+        while (viewModel?.screen is Screen.Round) {
+            val asked = checkNotNull(hobbies().question)
+            screen.onNode(hasText(asked.answer) and hasClickAction()).performScrollTo().performClick()
+            tap(R.string.action_continue)
+        }
+        showsScore(total - 1, total)
+        back()
+
+        // Typed: the hobby is written in the field, accents and all.
+        openGame(R.string.game_hobby_charades)
+        tap(R.string.option_type)
+        tap(R.string.setup_play)
+        screen.waitForIdle()
+        val typed = checkNotNull(hobbies().question)
+        type(typed.answer)
+        screen.onNodeWithText(text(R.string.action_check)).performClick()
+        shows(text(R.string.hobby_lubie, typed.answer))
+        assertEquals(true, hobbies().given?.correct)
     }
 
     @Test
@@ -1170,6 +1241,10 @@ class PlayingPracticeOnScreenTest {
     private fun opposites(): OppositesRound = (viewModel?.screen as Screen.Round).round as OppositesRound
 
     private fun whosWho(): WhoRound = (viewModel?.screen as Screen.Round).round as WhoRound
+
+    private fun verbGroups(): VerbGroupRound = (viewModel?.screen as Screen.Round).round as VerbGroupRound
+
+    private fun hobbies(): HobbyRound = (viewModel?.screen as Screen.Round).round as HobbyRound
 
     private fun ankieta(): AnkietaRound = (viewModel?.screen as Screen.Round).round as AnkietaRound
 

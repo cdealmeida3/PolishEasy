@@ -500,6 +500,45 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Three groups sorts every learned verb with a table, and after chapter 6 offers all three groups`() {
+        val all = practiceAfter(course.path.size)
+        assertEquals(GameState.READY, all.view().games.single { it.game == Game.VERB_GROUPS }.state)
+        val round = all.start(all.setup(Game.VERB_GROUPS, listOf(VerbGroups.WITH_JA))) as VerbGroupRound
+        assertEquals(VerbGroup.entries, round.groups)
+        val tables = course.path.flatMap { it.tips }.mapNotNull { it.conjugation }.associateBy { it.verb }
+        round.run.questions.forEach { question ->
+            val table = tables.getValue(question.verb)
+            assertEquals(VerbGroup.of(table.group), question.group, "$question")
+            assertEquals(table.forms[Person.I], question.ja)
+        }
+        val sixth = course.path.filter { it.id.startsWith("kpk1-l06-") }.flatMap { it.tips }.mapNotNull { it.conjugation }
+            .associate { it.verb to VerbGroup.of(it.group) }
+        assertEquals(VerbGroup.M_SZ, sixth["znać"])
+        assertEquals(VerbGroup.M_SZ, sixth["umieć"])
+        assertEquals(VerbGroup.E_ESZ, sixth["pisać"])
+        assertEquals(VerbGroup.E_ESZ, sixth["gotować"])
+        assertEquals(VerbGroup.E_ISZ, sixth["tańczyć"])
+        assertEquals(VerbGroup.E_ISZ, sixth["jeździć"])
+    }
+
+    @Test
+    fun `Hobby charades opens in chapter 6 and asks learned hobbies by a picture, among learned hobbies`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.HOBBY_CHARADES }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l06-"), course.path[firstReady - 1].id)
+        val all = practiceAfter(course.path.size)
+        val hobbies = course.hobbies.map { hobby -> hobby.joinToString(" ") { course.itemsById.getValue(it).text } }.toSet()
+        listOf(HobbyCharades.CHOOSE, HobbyCharades.TYPE).forEach { answer ->
+            val round = all.start(all.setup(Game.HOBBY_CHARADES, listOf(answer))) as HobbyRound
+            assertEquals(HobbyCharades.QUESTIONS, round.total)
+            round.run.questions.forEach { question ->
+                assertTrue(question.answer in hobbies, "$question")
+                assertTrue(hobbies.containsAll(question.options), "$question")
+            }
+            assertEquals(round.total, round.run.questions.map { it.picture }.toSet().size)
+        }
+    }
+
+    @Test
     fun `the Verb challenge offers chapter 4's conjugation once its verbs are learned`() {
         val afterB = course.path.indexOfFirst { it.id == "kpk1-l04-b3" } + 1
         assertTrue(afterB > 0)

@@ -369,5 +369,28 @@
       "pisarz",
       "malarz"
     ]
-  }
+  },
+  "hobbies": [
+    ["gotowac"],
+    ["grac", "na-komputerze"],
+    ["podrozowac"],
+    ["jezdzic", "na-rowerze"],
+    ["jezdzic", "na-nartach"],
+    ["jezdzic", "konno"],
+    ["jezdzic", "na-rolkach"],
+    ["grac", "w-pilke"],
+    ["grac", "w-szachy"],
+    ["grac", "w-karty"],
+    ["grac", "w-tenisa"],
+    ["grac", "na-pianinie"],
+    ["grac", "na-gitarze"],
+    ["chodzic", "na-spacery"],
+    ["chodzic", "do-kina"],
+    ["spiewac"],
+    ["biegac"],
+    ["plywac"],
+    ["malowac"],
+    ["sluchac", "muzyka-gen"],
+    ["robic", "zakupy"]
+  ]
 }
