@@ -1,0 +1,438 @@
+{
+  "id": "kpk1-l08-a10",
+  "section": {
+    "letter": "A",
+    "heading": "Śniadanie",
+    "meaning": {
+      "en": "Breakfast"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-a10-t01",
+      "before": "kpk1-l08-a10-e01",
+      "title": {
+        "en": "Adjectives from food"
+      },
+      "body": {
+        "en": "Polish makes an adjective from a noun with *-owy, -owa, -owe*: *malina* gives *malinowy* (*jogurt malinowy*), *truskawka* gives *truskawkowy*, and *jabłko* gives *jabłkowy* (*sok jabłkowy*, *ciasto jabłkowe*). The ending agrees with the noun, like any adjective."
+      },
+      "table": {
+        "title": {
+          "en": "Jaki? Jaka? Jakie?"
+        },
+        "columns": [
+          {
+            "header": "sok"
+          },
+          {
+            "header": "herbata"
+          },
+          {
+            "header": "ciasto"
+          }
+        ],
+        "rows": [
+          {
+            "header": "malina",
+            "cells": [
+              "malin[owy]",
+              "malin[owa]",
+              "malin[owe]"
+            ]
+          },
+          {
+            "header": "jabłko",
+            "cells": [
+              "jabłk[owy]",
+              "jabłk[owa]",
+              "jabłk[owe]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a10-e01",
+      "prompt": "naturalny",
+      "options": [
+        {
+          "en": "natural; plain (of yoghurt) (naturalny, naturalna, naturalne)"
+        },
+        {
+          "en": "fruit, made with fruit (owocowy, owocowa, owocowe)"
+        },
+        {
+          "en": "normal; full-price (bilet normalny: a full-price ticket) (normalny, normalna, normalne)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "naturalny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a10-e02",
+      "prompt": "owocowy",
+      "options": [
+        {
+          "en": "natural; plain (of yoghurt) (naturalny, naturalna, naturalne)"
+        },
+        {
+          "en": "fruit, made with fruit (owocowy, owocowa, owocowe)"
+        },
+        {
+          "en": "colourful (kolorowy, kolorowa, kolorowe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "owocowy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a10-e03",
+      "text": "jogurt naturalny czy owocowy?",
+      "meaning": {
+        "en": "a plain or a fruit yoghurt?"
+      },
+      "distractors": [
+        "jogurt owocowy",
+        "sok naturalny czy owocowy?"
+      ],
+      "items": [
+        "jogurt",
+        "naturalny",
+        "czy",
+        "owocowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a10-e04",
+      "prompt": "truskawkowy",
+      "options": [
+        {
+          "en": "raspberry, made with raspberries (malinowy, malinowa, malinowe)"
+        },
+        {
+          "en": "fruit, made with fruit (owocowy, owocowa, owocowe)"
+        },
+        {
+          "en": "strawberry, made with strawberries (truskawkowy, truskawkowa, truskawkowe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "truskawkowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a10-e05",
+      "prompt": "malinowy",
+      "options": [
+        {
+          "en": "raspberry, made with raspberries (malinowy, malinowa, malinowe)"
+        },
+        {
+          "en": "strawberry, made with strawberries (truskawkowy, truskawkowa, truskawkowe)"
+        },
+        {
+          "en": "red (czerwony, czerwona, czerwone)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "malinowy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-a10-e06",
+      "text": "Wolę jogurt ___.",
+      "meaning": {
+        "en": "I prefer raspberry yoghurt."
+      },
+      "gaps": [
+        [
+          "malinowy"
+        ]
+      ],
+      "distractors": [
+        "malina",
+        "malinowa"
+      ],
+      "items": [
+        "wolec-wole",
+        "jogurt",
+        "malinowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a10-e07",
+      "prompt": "jabłkowy",
+      "options": [
+        {
+          "en": "orange (pomarańczowy, pomarańczowa, pomarańczowe)"
+        },
+        {
+          "en": "apple, made with apples (jabłkowy, jabłkowa, jabłkowe)"
+        },
+        {
+          "en": "an apple"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jablkowy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a10-e08",
+      "prompt": {
+        "en": "apple juice"
+      },
+      "acceptedAnswers": [
+        "sok jabłkowy"
+      ],
+      "distractors": [
+        "jabłko",
+        "jabłkowa"
+      ],
+      "items": [
+        "sok",
+        "jablkowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a10-e09",
+      "prompt": "ciasto",
+      "options": [
+        {
+          "en": "a biscuit, a small cake (ciastka: biscuits)"
+        },
+        {
+          "en": "bread"
+        },
+        {
+          "en": "a cake"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ciasto"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-a10-e10",
+      "acceptedAnswers": [
+        "ciasto truskawkowe"
+      ],
+      "meaning": {
+        "en": "strawberry cake"
+      },
+      "items": [
+        "ciasto",
+        "truskawkowy"
+      ],
+      "readingAnswers": [
+        "truskawkowe ciasto"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a10-e11",
+      "prompt": "mocny",
+      "options": [
+        {
+          "en": "strong (mocny, mocna, mocne)"
+        },
+        {
+          "en": "weak (słaby, słaba, słabe)"
+        },
+        {
+          "en": "big (duży, duża, duże)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mocny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a10-e12",
+      "prompt": "słaby",
+      "options": [
+        {
+          "en": "strong (mocny, mocna, mocne)"
+        },
+        {
+          "en": "weak (słaby, słaba, słabe)"
+        },
+        {
+          "en": "small (mały, mała, małe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "slaby"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a10-e13",
+      "prompt": {
+        "en": "the coffee is strong"
+      },
+      "acceptedAnswers": [
+        "kawa jest mocna"
+      ],
+      "items": [
+        "kawa",
+        "byc-jest",
+        "mocny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-a10-e14",
+      "text": "Kawa jest ___, a herbata jest ___.",
+      "meaning": {
+        "en": "The coffee is strong, and the tea is weak."
+      },
+      "gaps": [
+        [
+          "mocna"
+        ],
+        [
+          "słaba"
+        ]
+      ],
+      "distractors": [
+        "mocny",
+        "słaby"
+      ],
+      "items": [
+        "kawa",
+        "byc-jest",
+        "mocny",
+        "a",
+        "herbata",
+        "slaby"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-a10-e15",
+      "pairs": [
+        {
+          "polish": "naturalny",
+          "meaning": {
+            "en": "plain"
+          }
+        },
+        {
+          "polish": "owocowy",
+          "meaning": {
+            "en": "fruit (yoghurt)"
+          }
+        },
+        {
+          "polish": "truskawkowy",
+          "meaning": {
+            "en": "strawberry"
+          }
+        },
+        {
+          "polish": "malinowy",
+          "meaning": {
+            "en": "raspberry"
+          }
+        },
+        {
+          "polish": "jabłkowy",
+          "meaning": {
+            "en": "apple"
+          }
+        },
+        {
+          "polish": "słaby",
+          "meaning": {
+            "en": "weak"
+          }
+        }
+      ],
+      "items": [
+        "naturalny",
+        "owocowy",
+        "truskawkowy",
+        "malinowy",
+        "jablkowy",
+        "slaby"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-a10-e16",
+      "lines": [
+        "Adam je jogurt truskawkowy.",
+        "Ewa je jogurt naturalny i ciasto jabłkowe.",
+        "Kawa jest słaba."
+      ],
+      "meaning": {
+        "en": "Breakfast in a café."
+      },
+      "statements": [
+        {
+          "text": "Adam je jogurt malinowy.",
+          "meaning": {
+            "en": "Adam is eating a raspberry yoghurt."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa je ciasto.",
+          "meaning": {
+            "en": "Ewa is eating cake."
+          },
+          "true": true
+        },
+        {
+          "text": "Kawa jest mocna.",
+          "meaning": {
+            "en": "The coffee is strong."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "adam",
+        "jesc-je",
+        "jogurt",
+        "truskawkowy",
+        "ewa",
+        "naturalny",
+        "i",
+        "ciasto",
+        "jablkowy",
+        "kawa",
+        "byc-jest",
+        "slaby"
+      ]
+    }
+  ]
+}

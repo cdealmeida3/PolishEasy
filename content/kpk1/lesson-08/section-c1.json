@@ -1,0 +1,457 @@
+{
+  "id": "kpk1-l08-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Kolacja",
+    "meaning": {
+      "en": "Supper"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-c1-t01",
+      "before": "kpk1-l08-c1-e01",
+      "title": {
+        "en": "Zapraszać"
+      },
+      "body": {
+        "en": "*Zapraszać* is to invite: *zapraszam, zapraszasz, zaprasza, zapraszamy, zapraszacie, zapraszają*. *Zapraszamy na kolację!* (Come for supper!) uses *na* and the accusative, like *na śniadanie* and *na obiad*."
+      },
+      "conjugation": {
+        "verb": "zapraszać",
+        "meaning": {
+          "en": "to invite"
+        },
+        "forms": {
+          "ja": "zapraszam",
+          "ty": "zapraszasz",
+          "on": "zaprasza",
+          "my": "zapraszamy",
+          "wy": "zapraszacie",
+          "oni": "zapraszają"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l08-c1-t02",
+      "before": "kpk1-l08-c1-e06",
+      "title": {
+        "en": "Pyszne!"
+      },
+      "body": {
+        "en": "*Smaczny* is tasty and *pyszny* delicious (*pyszna* = *bardzo smaczna*). *Sałatka jarzynowa* is a Polish vegetable salad with mayonnaise, made for parties and holidays. A slice of toast is a *tost*, or a *grzanka*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c1-e01",
+      "prompt": "kolacja",
+      "options": [
+        {
+          "en": "dinner, the main meal of the day"
+        },
+        {
+          "en": "supper, the evening meal"
+        },
+        {
+          "en": "breakfast"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kolacja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c1-e02",
+      "prompt": "na kolację",
+      "options": [
+        {
+          "en": "for dinner"
+        },
+        {
+          "en": "supper, the evening meal"
+        },
+        {
+          "en": "for supper"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-kolacje"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-c1-e03",
+      "text": "co jest na kolację?",
+      "meaning": {
+        "en": "what's for supper?"
+      },
+      "distractors": [
+        "co jest na obiad?",
+        "co jesz na kolację?"
+      ],
+      "items": [
+        "co",
+        "byc-jest",
+        "na-kolacje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c1-e04",
+      "prompt": "zapraszamy",
+      "options": [
+        {
+          "en": "we invite you (zapraszamy na kolację: come for supper)"
+        },
+        {
+          "en": "thank you (from us)"
+        },
+        {
+          "en": "we do, we make"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zapraszac-zapraszamy"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-c1-e05",
+      "verb": "zapraszać",
+      "meaning": {
+        "en": "to invite"
+      },
+      "person": "my",
+      "sentence": "___ na kolację!",
+      "sentenceMeaning": {
+        "en": "Come for supper! (we invite you)"
+      },
+      "acceptedAnswers": [
+        "zapraszamy"
+      ],
+      "items": [
+        "zapraszac-zapraszamy",
+        "na-kolacje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c1-e06",
+      "prompt": "sałatka jarzynowa",
+      "options": [
+        {
+          "en": "a salad"
+        },
+        {
+          "en": "a vegetable salad with mayonnaise"
+        },
+        {
+          "en": "a salad of raw grated vegetables"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "salatka-jarzynowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c1-e07",
+      "prompt": "tost",
+      "options": [
+        {
+          "en": "bread"
+        },
+        {
+          "en": "a bread roll"
+        },
+        {
+          "en": "a slice of toast"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tost"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c1-e08",
+      "prompt": "grzanka",
+      "options": [
+        {
+          "en": "a slice of toast (another word for tost)"
+        },
+        {
+          "en": "a bread roll"
+        },
+        {
+          "en": "a biscuit, a small cake (ciastka: biscuits)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "grzanka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-c1-e09",
+      "text": "Tost to ___.",
+      "meaning": {
+        "en": "A tost is a grzanka (a slice of toast)."
+      },
+      "gaps": [
+        [
+          "grzanka"
+        ]
+      ],
+      "distractors": [
+        "grzankę",
+        "bułka"
+      ],
+      "items": [
+        "tost",
+        "to",
+        "grzanka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-c1-e10",
+      "text": "grzanka z masłem",
+      "meaning": {
+        "en": "toast with butter"
+      },
+      "distractors": [
+        "bułka z masłem",
+        "grzanka z dżemem"
+      ],
+      "items": [
+        "grzanka",
+        "z-maslem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c1-e11",
+      "prompt": "pyszny",
+      "options": [
+        {
+          "en": "tasty (smaczny, smaczna, smaczne)"
+        },
+        {
+          "en": "delicious (pyszny, pyszna, pyszne)"
+        },
+        {
+          "en": "healthy (zdrowy, zdrowa, zdrowe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pyszny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c1-e12",
+      "prompt": "smaczny",
+      "options": [
+        {
+          "en": "delicious (pyszny, pyszna, pyszne)"
+        },
+        {
+          "en": "sweet (słodki, słodka, słodkie)"
+        },
+        {
+          "en": "tasty (smaczny, smaczna, smaczne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "smaczny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-c1-e13",
+      "acceptedAnswers": [
+        "sałatka jest pyszna"
+      ],
+      "meaning": {
+        "en": "the salad is delicious"
+      },
+      "items": [
+        "salatka",
+        "byc-jest",
+        "pyszny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-c1-e14",
+      "prompt": {
+        "en": "the supper is tasty"
+      },
+      "acceptedAnswers": [
+        "kolacja jest smaczna"
+      ],
+      "distractors": [
+        "smaczny",
+        "obiad"
+      ],
+      "items": [
+        "kolacja",
+        "byc-jest",
+        "smaczny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-c1-e15",
+      "prompt": {
+        "en": "vegetable salad and toast"
+      },
+      "acceptedAnswers": [
+        "sałatka jarzynowa i tost",
+        "sałatka jarzynowa i grzanka"
+      ],
+      "items": [
+        "salatka-jarzynowa",
+        "i",
+        "tost"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-c1-e16",
+      "pairs": [
+        {
+          "polish": "kolacja",
+          "meaning": {
+            "en": "supper"
+          }
+        },
+        {
+          "polish": "na kolację",
+          "meaning": {
+            "en": "for supper"
+          }
+        },
+        {
+          "polish": "tost",
+          "meaning": {
+            "en": "toast"
+          }
+        },
+        {
+          "polish": "sałatka jarzynowa",
+          "meaning": {
+            "en": "vegetable salad"
+          }
+        },
+        {
+          "polish": "pyszny",
+          "meaning": {
+            "en": "delicious"
+          }
+        },
+        {
+          "polish": "zapraszamy",
+          "meaning": {
+            "en": "we invite you"
+          }
+        }
+      ],
+      "items": [
+        "kolacja",
+        "na-kolacje",
+        "tost",
+        "salatka-jarzynowa",
+        "pyszny",
+        "zapraszac-zapraszamy"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l08-c1-e17",
+      "lines": [
+        "Zapraszamy na kolację!",
+        "Dziękuję bardzo!",
+        "To jest sałatka jarzynowa.",
+        "Jest pyszna!"
+      ],
+      "meaning": {
+        "en": "Neighbours invite a friend."
+      },
+      "items": [
+        "zapraszac-zapraszamy",
+        "na-kolacje",
+        "dziekuje",
+        "bardzo",
+        "to",
+        "byc-jest",
+        "salatka-jarzynowa",
+        "pyszny"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-c1-e18",
+      "lines": [
+        "Dziś mama robi kolację.",
+        "Na kolację jest sałatka jarzynowa i tost.",
+        "Kolacja jest smaczna."
+      ],
+      "meaning": {
+        "en": "Supper at home."
+      },
+      "statements": [
+        {
+          "text": "Mama robi obiad.",
+          "meaning": {
+            "en": "Mum is making dinner."
+          },
+          "true": false
+        },
+        {
+          "text": "Na kolację jest tost.",
+          "meaning": {
+            "en": "There is toast for supper."
+          },
+          "true": true
+        },
+        {
+          "text": "Kolacja nie jest smaczna.",
+          "meaning": {
+            "en": "The supper is not tasty."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "dzis",
+        "mama",
+        "robic-robi",
+        "na-kolacje",
+        "byc-jest",
+        "salatka-jarzynowa",
+        "i",
+        "tost",
+        "kolacja",
+        "smaczny"
+      ]
+    }
+  ]
+}

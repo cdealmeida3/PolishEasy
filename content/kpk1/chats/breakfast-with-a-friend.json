@@ -1,0 +1,238 @@
+{
+  "id": "chat-breakfast-with-a-friend",
+  "person": "Karolina",
+  "title": {
+    "en": "Breakfast with a friend"
+  },
+  "scene": {
+    "en": "You are Adam, staying with your friend Karolina. It's Saturday morning and she is making breakfast. You are very hungry. You prefer brown bread, with butter and ham, and tea with lemon and without sugar. You'd also love a hard-boiled egg. Karolina is a friend: to her you are ty."
+  },
+  "register": "informal",
+  "items": [
+    "czesc",
+    "byc-jestes",
+    "glodny",
+    "tak",
+    "bardzo",
+    "nie",
+    "dziekuje",
+    "wolec-wolisz",
+    "jasny",
+    "czy",
+    "ciemny",
+    "chleb",
+    "wolec-wole",
+    "ja",
+    "czym",
+    "z-serem",
+    "z-szynka",
+    "z-maslem",
+    "i",
+    "co",
+    "pic-pijesz",
+    "kawa-acc",
+    "herbata-acc",
+    "z-cytryna",
+    "prosze",
+    "z-mlekiem",
+    "z-cukrem",
+    "bez-cukru",
+    "dzieki",
+    "mam-ochote-na",
+    "tez",
+    "jajko",
+    "chetnie",
+    "na-twardo",
+    "na-miekko",
+    "smacznego"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Cześć! Jesteś głodny?",
+      "meaning": {
+        "en": "Hi! Are you hungry?"
+      },
+      "replies": [
+        {
+          "text": "Tak, bardzo!",
+          "meaning": {
+            "en": "Yes, very!"
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Tak, bardzo!",
+            "Tak, bardzo."
+          ]
+        },
+        {
+          "text": "Nie, dziękuję.",
+          "meaning": {
+            "en": "No, thank you."
+          },
+          "note": {
+            "en": "You are very hungry, so say *tak, bardzo!*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Wolisz jasny czy ciemny chleb?",
+      "meaning": {
+        "en": "Do you prefer white or brown bread?"
+      },
+      "replies": [
+        {
+          "text": "Wolę ciemny chleb.",
+          "meaning": {
+            "en": "I prefer brown bread."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Wolę ciemny chleb.",
+            "Ja wolę ciemny chleb."
+          ]
+        },
+        {
+          "text": "Wolę jasny chleb.",
+          "meaning": {
+            "en": "I prefer white bread."
+          },
+          "note": {
+            "en": "You prefer brown bread: *ciemny chleb*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Z czym? Z serem czy z szynką?",
+      "meaning": {
+        "en": "With what? With cheese or with ham?"
+      },
+      "replies": [
+        {
+          "text": "Z masłem i z szynką.",
+          "meaning": {
+            "en": "With butter and ham."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Z masłem i z szynką.",
+            "Z masłem i szynką."
+          ]
+        },
+        {
+          "text": "Z masłem i z serem.",
+          "meaning": {
+            "en": "With butter and cheese."
+          },
+          "note": {
+            "en": "You want ham: *z szynką*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Co pijesz? Kawę czy herbatę?",
+      "meaning": {
+        "en": "What do you drink? Coffee or tea?"
+      },
+      "replies": [
+        {
+          "text": "Herbatę z cytryną, proszę.",
+          "meaning": {
+            "en": "Tea with lemon, please."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Herbatę z cytryną, proszę.",
+            "Proszę herbatę z cytryną."
+          ]
+        },
+        {
+          "text": "Kawę z mlekiem, proszę.",
+          "meaning": {
+            "en": "Coffee with milk, please."
+          },
+          "note": {
+            "en": "You want tea with lemon: *herbatę z cytryną*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Z cukrem czy bez cukru?",
+      "meaning": {
+        "en": "With sugar or without?"
+      },
+      "replies": [
+        {
+          "text": "Bez cukru, dziękuję.",
+          "meaning": {
+            "en": "Without sugar, thank you."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Bez cukru, dziękuję.",
+            "Bez cukru, dzięki."
+          ]
+        },
+        {
+          "text": "Z cukrem, proszę.",
+          "meaning": {
+            "en": "With sugar, please."
+          },
+          "note": {
+            "en": "You drink tea without sugar: *bez cukru*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Masz też ochotę na jajko?",
+      "meaning": {
+        "en": "Do you feel like an egg too?"
+      },
+      "replies": [
+        {
+          "text": "Chętnie! Na twardo, proszę.",
+          "meaning": {
+            "en": "Gladly! Hard-boiled, please."
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Chętnie! Na twardo, proszę.",
+            "Chętnie, na twardo, proszę."
+          ]
+        },
+        {
+          "text": "Chętnie! Na miękko, proszę.",
+          "meaning": {
+            "en": "Gladly! Soft-boiled, please."
+          },
+          "note": {
+            "en": "You want a hard-boiled egg: *na twardo*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Proszę bardzo. Smacznego!",
+      "meaning": {
+        "en": "Here you are. Enjoy your meal!"
+      }
+    }
+  ]
+}

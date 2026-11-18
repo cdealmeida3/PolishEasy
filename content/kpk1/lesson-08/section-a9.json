@@ -1,0 +1,395 @@
+{
+  "id": "kpk1-l08-a9",
+  "section": {
+    "letter": "A",
+    "heading": "Śniadanie",
+    "meaning": {
+      "en": "Breakfast"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-a9-t01",
+      "before": "kpk1-l08-a9-e01",
+      "title": {
+        "en": "Owoce"
+      },
+      "body": {
+        "en": "Fruit is *owoce* (one is an *owoc*): a *banan*, a *jabłko*, a *pomarańcza*, a *truskawka*, a *malina*. *Gorący* is hot and *zimny* cold: *gorąca herbata*, *zimny sok*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a9-e01",
+      "prompt": "owoc",
+      "options": [
+        {
+          "en": "a vegetable"
+        },
+        {
+          "en": "a fruit (owoce: fruit, several)"
+        },
+        {
+          "en": "an egg (jajka: eggs)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "owoc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a9-e02",
+      "prompt": "banan",
+      "options": [
+        {
+          "en": "an apple"
+        },
+        {
+          "en": "an orange (the fruit)"
+        },
+        {
+          "en": "a banana"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "banan"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a9-e03",
+      "prompt": "jabłko",
+      "options": [
+        {
+          "en": "an apple"
+        },
+        {
+          "en": "an orange (the fruit)"
+        },
+        {
+          "en": "a tomato"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jablko"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a9-e04",
+      "text": "banan i jabłko",
+      "meaning": {
+        "en": "a banana and an apple"
+      },
+      "distractors": [
+        "banan i pomarańcza",
+        "jabłko i cytryna"
+      ],
+      "items": [
+        "banan",
+        "i",
+        "jablko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a9-e05",
+      "prompt": "pomarańcza",
+      "options": [
+        {
+          "en": "a lemon"
+        },
+        {
+          "en": "an orange (the fruit)"
+        },
+        {
+          "en": "a banana"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pomarancza"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a9-e06",
+      "prompt": {
+        "en": "the orange is orange"
+      },
+      "acceptedAnswers": [
+        "pomarańcza jest pomarańczowa"
+      ],
+      "distractors": [
+        "pomarańczowy",
+        "cytryna"
+      ],
+      "items": [
+        "pomarancza",
+        "byc-jest",
+        "pomaranczowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a9-e07",
+      "prompt": "truskawka",
+      "options": [
+        {
+          "en": "a raspberry"
+        },
+        {
+          "en": "a tomato"
+        },
+        {
+          "en": "a strawberry"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "truskawka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a9-e08",
+      "prompt": "malina",
+      "options": [
+        {
+          "en": "a raspberry"
+        },
+        {
+          "en": "a strawberry"
+        },
+        {
+          "en": "an apple"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "malina"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-a9-e09",
+      "text": "Truskawka i malina to ___.",
+      "meaning": {
+        "en": "A strawberry and a raspberry are fruit."
+      },
+      "gaps": [
+        [
+          "owoce"
+        ]
+      ],
+      "distractors": [
+        "owoc",
+        "jajka"
+      ],
+      "items": [
+        "truskawka",
+        "i",
+        "malina",
+        "to",
+        "owoc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a9-e10",
+      "prompt": "gorący",
+      "options": [
+        {
+          "en": "cold (zimny, zimna, zimne)"
+        },
+        {
+          "en": "hot (gorący, gorąca, gorące)"
+        },
+        {
+          "en": "good (dobry, dobra, dobre)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "goracy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a9-e11",
+      "prompt": "zimny",
+      "options": [
+        {
+          "en": "hot (gorący, gorąca, gorące)"
+        },
+        {
+          "en": "new (nowy, nowa, nowe)"
+        },
+        {
+          "en": "cold (zimny, zimna, zimne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zimny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-a9-e12",
+      "acceptedAnswers": [
+        "herbata jest gorąca"
+      ],
+      "meaning": {
+        "en": "the tea is hot"
+      },
+      "items": [
+        "herbata",
+        "byc-jest",
+        "goracy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a9-e13",
+      "prompt": {
+        "en": "the juice is cold"
+      },
+      "acceptedAnswers": [
+        "sok jest zimny"
+      ],
+      "items": [
+        "sok",
+        "byc-jest",
+        "zimny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a9-e14",
+      "prompt": {
+        "en": "I prefer cold juice"
+      },
+      "acceptedAnswers": [
+        "wolę zimny sok"
+      ],
+      "distractors": [
+        "zimna",
+        "gorący"
+      ],
+      "items": [
+        "wolec-wole",
+        "zimny",
+        "sok"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-a9-e15",
+      "pairs": [
+        {
+          "polish": "owoc",
+          "meaning": {
+            "en": "a fruit"
+          }
+        },
+        {
+          "polish": "banan",
+          "meaning": {
+            "en": "a banana"
+          }
+        },
+        {
+          "polish": "jabłko",
+          "meaning": {
+            "en": "an apple"
+          }
+        },
+        {
+          "polish": "truskawka",
+          "meaning": {
+            "en": "a strawberry"
+          }
+        },
+        {
+          "polish": "malina",
+          "meaning": {
+            "en": "a raspberry"
+          }
+        },
+        {
+          "polish": "pomarańcza",
+          "meaning": {
+            "en": "an orange"
+          }
+        }
+      ],
+      "items": [
+        "owoc",
+        "banan",
+        "jablko",
+        "truskawka",
+        "malina",
+        "pomarancza"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-a9-e16",
+      "lines": [
+        "Ewa lubi owoce.",
+        "Rano je jabłko.",
+        "Sok jest zimny, a herbata gorąca."
+      ],
+      "meaning": {
+        "en": "Ewa in the morning."
+      },
+      "statements": [
+        {
+          "text": "Ewa lubi owoce.",
+          "meaning": {
+            "en": "Ewa likes fruit."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa je jabłko.",
+          "meaning": {
+            "en": "Ewa eats an apple."
+          },
+          "true": true
+        },
+        {
+          "text": "Herbata jest zimna.",
+          "meaning": {
+            "en": "The tea is cold."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "ewa",
+        "lubic-lubi",
+        "owoc",
+        "rano",
+        "jesc-je",
+        "jablko",
+        "sok",
+        "byc-jest",
+        "zimny",
+        "a",
+        "herbata",
+        "goracy"
+      ]
+    }
+  ]
+}

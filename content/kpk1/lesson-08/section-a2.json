@@ -1,0 +1,428 @@
+{
+  "id": "kpk1-l08-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Śniadanie",
+    "meaning": {
+      "en": "Breakfast"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-a2-t01",
+      "before": "kpk1-l08-a2-e01",
+      "title": {
+        "en": "Na śniadanie"
+      },
+      "body": {
+        "en": "A Polish *śniadanie* is often *chleb* or a *bułka* with *masło*, *ser* and *szynka*. *Jasny chleb* is white bread and *ciemny chleb* brown or rye bread. *Biały ser* is a soft white cheese, like quark, and *żółty ser* a hard yellow one."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a2-e01",
+      "prompt": "chleb",
+      "options": [
+        {
+          "en": "cheese"
+        },
+        {
+          "en": "a sandwich"
+        },
+        {
+          "en": "bread"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chleb"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a2-e02",
+      "prompt": "jasny",
+      "options": [
+        {
+          "en": "light, pale; white (of bread) (jasny, jasna, jasne)"
+        },
+        {
+          "en": "dark; brown (of bread)"
+        },
+        {
+          "en": "white (biały, biała, białe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jasny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a2-e03",
+      "prompt": "ciemny",
+      "options": [
+        {
+          "en": "light, pale; white (of bread) (jasny, jasna, jasne)"
+        },
+        {
+          "en": "dark; brown (of bread) (ciemny, ciemna, ciemne)"
+        },
+        {
+          "en": "black (czarny, czarna, czarne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ciemny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a2-e04",
+      "text": "jasny czy ciemny chleb?",
+      "meaning": {
+        "en": "white or brown bread?"
+      },
+      "distractors": [
+        "ciemny chleb",
+        "jasny czy ciemny ser?"
+      ],
+      "items": [
+        "jasny",
+        "czy",
+        "ciemny",
+        "chleb"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a2-e05",
+      "prompt": {
+        "en": "the bread is dark"
+      },
+      "acceptedAnswers": [
+        "chleb jest ciemny"
+      ],
+      "distractors": [
+        "ciemna",
+        "jasny"
+      ],
+      "items": [
+        "chleb",
+        "byc-jest",
+        "ciemny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a2-e06",
+      "prompt": "bułka",
+      "options": [
+        {
+          "en": "bread"
+        },
+        {
+          "en": "a sandwich"
+        },
+        {
+          "en": "a bread roll"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bulka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a2-e07",
+      "prompt": "bułkę",
+      "options": [
+        {
+          "en": "a bread roll (after proszę, jem…: jem bułkę)"
+        },
+        {
+          "en": "a bread roll"
+        },
+        {
+          "en": "a sandwich (after proszę, kupuję…: proszę kanapkę)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bulka-acc"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-a2-e08",
+      "text": "Proszę ___.",
+      "meaning": {
+        "en": "A bread roll, please."
+      },
+      "gaps": [
+        [
+          "bułkę"
+        ]
+      ],
+      "distractors": [
+        "bułka",
+        "chleba"
+      ],
+      "items": [
+        "prosze",
+        "bulka-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a2-e09",
+      "prompt": "ser",
+      "options": [
+        {
+          "en": "butter"
+        },
+        {
+          "en": "cheese"
+        },
+        {
+          "en": "bread"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ser"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a2-e10",
+      "text": "biały ser",
+      "meaning": {
+        "en": "white cheese (soft, like quark)"
+      },
+      "distractors": [
+        "żółty ser",
+        "biały chleb"
+      ],
+      "items": [
+        "bialy",
+        "ser"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a2-e11",
+      "prompt": "masło",
+      "options": [
+        {
+          "en": "cheese"
+        },
+        {
+          "en": "margarine"
+        },
+        {
+          "en": "butter"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "maslo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a2-e12",
+      "prompt": "mleko",
+      "options": [
+        {
+          "en": "milk"
+        },
+        {
+          "en": "water"
+        },
+        {
+          "en": "coffee"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mleko"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-a2-e13",
+      "acceptedAnswers": [
+        "lubię mleko"
+      ],
+      "meaning": {
+        "en": "I like milk"
+      },
+      "items": [
+        "lubic-lubie",
+        "mleko"
+      ],
+      "readingAnswers": [
+        "ja lubię mleko"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a2-e14",
+      "prompt": {
+        "en": "the cheese is yellow"
+      },
+      "acceptedAnswers": [
+        "ser jest żółty"
+      ],
+      "items": [
+        "ser",
+        "byc-jest",
+        "zolty"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a2-e15",
+      "prompt": {
+        "en": "a bread roll and butter"
+      },
+      "acceptedAnswers": [
+        "bułka i masło"
+      ],
+      "items": [
+        "bulka",
+        "i",
+        "maslo"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-a2-e16",
+      "pairs": [
+        {
+          "polish": "chleb",
+          "meaning": {
+            "en": "bread"
+          }
+        },
+        {
+          "polish": "bułka",
+          "meaning": {
+            "en": "a bread roll"
+          }
+        },
+        {
+          "polish": "ser",
+          "meaning": {
+            "en": "cheese"
+          }
+        },
+        {
+          "polish": "masło",
+          "meaning": {
+            "en": "butter"
+          }
+        },
+        {
+          "polish": "mleko",
+          "meaning": {
+            "en": "milk"
+          }
+        },
+        {
+          "polish": "ciemny",
+          "meaning": {
+            "en": "dark"
+          }
+        }
+      ],
+      "items": [
+        "chleb",
+        "bulka",
+        "ser",
+        "maslo",
+        "mleko",
+        "ciemny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a2-e17",
+      "prompt": {
+        "en": "Mum likes white bread"
+      },
+      "acceptedAnswers": [
+        "mama lubi jasny chleb"
+      ],
+      "distractors": [
+        "jasna",
+        "ciemny"
+      ],
+      "items": [
+        "mama",
+        "lubic-lubi",
+        "jasny",
+        "chleb"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-a2-e18",
+      "lines": [
+        "Ewa ma ciemny chleb i masło.",
+        "Adam ma bułkę i żółty ser.",
+        "Mleko jest dobre."
+      ],
+      "meaning": {
+        "en": "Breakfast for two."
+      },
+      "statements": [
+        {
+          "text": "Ewa ma jasny chleb.",
+          "meaning": {
+            "en": "Ewa has white bread."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam ma bułkę.",
+          "meaning": {
+            "en": "Adam has a bread roll."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam ma biały ser.",
+          "meaning": {
+            "en": "Adam has white cheese."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "ewa",
+        "miec-ma",
+        "ciemny",
+        "chleb",
+        "i",
+        "maslo",
+        "adam",
+        "bulka-acc",
+        "zolty",
+        "ser",
+        "mleko",
+        "byc-jest",
+        "dobry"
+      ]
+    }
+  ]
+}

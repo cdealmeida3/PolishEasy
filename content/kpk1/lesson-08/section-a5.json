@@ -1,0 +1,450 @@
+{
+  "id": "kpk1-l08-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Śniadanie",
+    "meaning": {
+      "en": "Breakfast"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-a5-t01",
+      "before": "kpk1-l08-a5-e01",
+      "title": {
+        "en": "Jeść"
+      },
+      "body": {
+        "en": "*Jeść* (to eat) is irregular: *jem, jesz, je, jemy, jecie, jedzą*. What you eat takes the accusative: *jem bułkę*, *jem chleb*."
+      },
+      "conjugation": {
+        "verb": "jeść",
+        "meaning": {
+          "en": "to eat"
+        },
+        "forms": {
+          "ja": "jem",
+          "ty": "jesz",
+          "on": "je",
+          "my": "jemy",
+          "wy": "jecie",
+          "oni": "jedzą"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l08-a5-t02",
+      "before": "kpk1-l08-a5-e08",
+      "title": {
+        "en": "Pić"
+      },
+      "body": {
+        "en": "*Pić* (to drink) goes *piję, pijesz, pije, pijemy, pijecie, piją*: *piję kawę*, *pijesz herbatę?*"
+      },
+      "conjugation": {
+        "verb": "pić",
+        "meaning": {
+          "en": "to drink"
+        },
+        "forms": {
+          "ja": "piję",
+          "ty": "pijesz",
+          "on": "pije",
+          "my": "pijemy",
+          "wy": "pijecie",
+          "oni": "piją"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a5-e01",
+      "prompt": "jeść",
+      "options": [
+        {
+          "en": "drink (to drink)"
+        },
+        {
+          "en": "cook (to cook)"
+        },
+        {
+          "en": "eat (to eat)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jesc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a5-e02",
+      "prompt": "jem",
+      "options": [
+        {
+          "en": "I eat, I am eating"
+        },
+        {
+          "en": "you eat, you are eating (one friend)"
+        },
+        {
+          "en": "I like"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jesc-jem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a5-e03",
+      "text": "jem bułkę",
+      "meaning": {
+        "en": "I am eating a bread roll"
+      },
+      "distractors": [
+        "jesz bułkę",
+        "jem chleb"
+      ],
+      "items": [
+        "jesc-jem",
+        "bulka-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a5-e04",
+      "prompt": "jesz",
+      "options": [
+        {
+          "en": "I eat, I am eating"
+        },
+        {
+          "en": "you eat, you are eating (one friend)"
+        },
+        {
+          "en": "he eats, she eats"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jesc-jesz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-a5-e05",
+      "verb": "jeść",
+      "meaning": {
+        "en": "to eat"
+      },
+      "person": "ty",
+      "sentence": "Co ty ___?",
+      "sentenceMeaning": {
+        "en": "What are you eating?"
+      },
+      "acceptedAnswers": [
+        "jesz"
+      ],
+      "items": [
+        "co",
+        "ty",
+        "jesc-jesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a5-e06",
+      "prompt": "je",
+      "options": [
+        {
+          "en": "I eat, I am eating"
+        },
+        {
+          "en": "he drinks, she drinks"
+        },
+        {
+          "en": "he eats, she eats"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jesc-je"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-a5-e07",
+      "verb": "jeść",
+      "meaning": {
+        "en": "to eat"
+      },
+      "person": "on",
+      "sentence": "Ewa ___ jogurt.",
+      "sentenceMeaning": {
+        "en": "Ewa is eating a yoghurt."
+      },
+      "acceptedAnswers": [
+        "je"
+      ],
+      "items": [
+        "ewa",
+        "jesc-je",
+        "jogurt"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a5-e08",
+      "prompt": "pić",
+      "options": [
+        {
+          "en": "drink (to drink)"
+        },
+        {
+          "en": "eat (to eat)"
+        },
+        {
+          "en": "cook (to cook)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a5-e09",
+      "prompt": "piję",
+      "options": [
+        {
+          "en": "you drink, you are drinking (one friend)"
+        },
+        {
+          "en": "I drink, I am drinking"
+        },
+        {
+          "en": "I eat, I am eating"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pic-pije"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a5-e10",
+      "prompt": "pijesz",
+      "options": [
+        {
+          "en": "I drink, I am drinking"
+        },
+        {
+          "en": "you eat, you are eating (one friend)"
+        },
+        {
+          "en": "you drink, you are drinking (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pic-pijesz"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-a5-e11",
+      "verb": "pić",
+      "meaning": {
+        "en": "to drink"
+      },
+      "person": "ty",
+      "sentence": "___ kawę czy herbatę?",
+      "sentenceMeaning": {
+        "en": "Are you drinking coffee or tea?"
+      },
+      "acceptedAnswers": [
+        "pijesz"
+      ],
+      "items": [
+        "pic-pijesz",
+        "kawa-acc",
+        "czy",
+        "herbata-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a5-e12",
+      "prompt": "pije",
+      "options": [
+        {
+          "en": "he drinks, she drinks"
+        },
+        {
+          "en": "I drink, I am drinking"
+        },
+        {
+          "en": "he eats, she eats"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pic-pije-on"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-a5-e13",
+      "verb": "pić",
+      "meaning": {
+        "en": "to drink"
+      },
+      "person": "on",
+      "sentence": "Tata ___ mleko.",
+      "sentenceMeaning": {
+        "en": "Dad is drinking milk."
+      },
+      "acceptedAnswers": [
+        "pije"
+      ],
+      "items": [
+        "tata",
+        "pic-pije-on",
+        "mleko"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-a5-e14",
+      "pairs": [
+        {
+          "polish": "jem",
+          "meaning": {
+            "en": "I eat"
+          }
+        },
+        {
+          "polish": "jesz",
+          "meaning": {
+            "en": "you eat"
+          }
+        },
+        {
+          "polish": "je",
+          "meaning": {
+            "en": "he eats, she eats"
+          }
+        },
+        {
+          "polish": "piję",
+          "meaning": {
+            "en": "I drink"
+          }
+        },
+        {
+          "polish": "pijesz",
+          "meaning": {
+            "en": "you drink"
+          }
+        },
+        {
+          "polish": "pije",
+          "meaning": {
+            "en": "he drinks, she drinks"
+          }
+        }
+      ],
+      "items": [
+        "jesc-jem",
+        "jesc-jesz",
+        "jesc-je",
+        "pic-pije",
+        "pic-pijesz",
+        "pic-pije-on"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a5-e15",
+      "prompt": {
+        "en": "Adam eats bread and drinks milk"
+      },
+      "acceptedAnswers": [
+        "Adam je chleb i pije mleko"
+      ],
+      "distractors": [
+        "jem",
+        "piję"
+      ],
+      "items": [
+        "adam",
+        "jesc-je",
+        "chleb",
+        "i",
+        "pic-pije-on",
+        "mleko"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a5-e16",
+      "prompt": {
+        "en": "I like to eat"
+      },
+      "acceptedAnswers": [
+        "lubię jeść",
+        "ja lubię jeść"
+      ],
+      "items": [
+        "lubic-lubie",
+        "jesc"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l08-a5-e17",
+      "lines": [
+        "Co lubisz jeść?",
+        "Wszystko!",
+        "A co lubisz pić?",
+        "Kawę."
+      ],
+      "meaning": {
+        "en": "Getting to know a guest."
+      },
+      "items": [
+        "co",
+        "lubic-lubisz",
+        "jesc",
+        "wszystko",
+        "a",
+        "pic",
+        "kawa-acc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a5-e18",
+      "prompt": {
+        "en": "what do you like to drink? (one friend)"
+      },
+      "acceptedAnswers": [
+        "co lubisz pić?"
+      ],
+      "items": [
+        "co",
+        "lubic-lubisz",
+        "pic"
+      ]
+    }
+  ]
+}

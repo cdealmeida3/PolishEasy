@@ -10,7 +10,8 @@
     "kpk1/lesson-04/items.json",
     "kpk1/lesson-05/items.json",
     "kpk1/lesson-06/items.json",
-    "kpk1/lesson-07/items.json"
+    "kpk1/lesson-07/items.json",
+    "kpk1/lesson-08/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -30,7 +31,8 @@
     "kpk1/chats/new-student.json",
     "kpk1/chats/tango-class.json",
     "kpk1/chats/weekend-plans.json",
-    "kpk1/chats/at-the-kiosk.json"
+    "kpk1/chats/at-the-kiosk.json",
+    "kpk1/chats/breakfast-with-a-friend.json"
   ],
   "levels": [
     {
@@ -495,7 +497,39 @@
               "przymiotniki odrzeczownikowe"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-08/section-a1.json",
+            "kpk1/lesson-08/section-a2.json",
+            "kpk1/lesson-08/section-a3.json",
+            "kpk1/lesson-08/section-a4.json",
+            "kpk1/lesson-08/section-a5.json",
+            "kpk1/lesson-08/section-a6.json",
+            "kpk1/lesson-08/section-a7.json",
+            "kpk1/lesson-08/section-a8.json",
+            "kpk1/lesson-08/section-a9.json",
+            "kpk1/lesson-08/section-a10.json",
+            "kpk1/lesson-08/section-b1.json",
+            "kpk1/lesson-08/section-b2.json",
+            "kpk1/lesson-08/section-b3.json",
+            "kpk1/lesson-08/section-b4.json",
+            "kpk1/lesson-08/section-c1.json",
+            "kpk1/lesson-08/section-c2.json",
+            "kpk1/lesson-08/section-g.json"
+          ],
+          "lookUp": [
+            "glodny",
+            "jeszcze",
+            "juz",
+            "chetnie",
+            "mam-ochote-na",
+            "jesc",
+            "pic",
+            "smaczny",
+            "pyszny",
+            "ulubiony",
+            "potrawa",
+            "wedlina"
+          ]
         },
         {
           "id": "kpk1-l09",

@@ -1,0 +1,467 @@
+{
+  "id": "kpk1-l08-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Kolacja",
+    "meaning": {
+      "en": "Supper"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-c2-t01",
+      "before": "kpk1-l08-c2-e01",
+      "title": {
+        "en": "Zamawiać"
+      },
+      "body": {
+        "en": "*Zamawiać* is to order: *zamawiam, zamawiasz, zamawia, zamawiamy, zamawiacie, zamawiają*. In a *bar* or a restaurant: *zamawiam pierogi*, *co zamawiasz?*"
+      },
+      "conjugation": {
+        "verb": "zamawiać",
+        "meaning": {
+          "en": "to order"
+        },
+        "forms": {
+          "ja": "zamawiam",
+          "ty": "zamawiasz",
+          "on": "zamawia",
+          "my": "zamawiamy",
+          "wy": "zamawiacie",
+          "oni": "zamawiają"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l08-c2-t02",
+      "before": "kpk1-l08-c2-e07",
+      "title": {
+        "en": "Wino"
+      },
+      "body": {
+        "en": "Wine (*wino*, neuter) is *białe* or *czerwone*, and *wytrawne* (dry) or *słodkie* (sweet). The day goes *rano* (in the morning), *po południu* (in the afternoon), *wieczorem* (in the evening)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c2-e01",
+      "prompt": "bar",
+      "options": [
+        {
+          "en": "a bar, a snack bar"
+        },
+        {
+          "en": "a restaurant"
+        },
+        {
+          "en": "a café"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bar"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c2-e02",
+      "prompt": "zamawiam",
+      "options": [
+        {
+          "en": "they order, they are ordering"
+        },
+        {
+          "en": "I order, I am ordering"
+        },
+        {
+          "en": "I pay, I am paying"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zamawiac-zamawiam"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-c2-e03",
+      "verb": "zamawiać",
+      "meaning": {
+        "en": "to order"
+      },
+      "person": "ja",
+      "sentence": "Ja ___ zupę.",
+      "sentenceMeaning": {
+        "en": "I'm ordering soup."
+      },
+      "acceptedAnswers": [
+        "zamawiam"
+      ],
+      "items": [
+        "ja",
+        "zamawiac-zamawiam",
+        "zupa-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c2-e04",
+      "prompt": "zamawiają",
+      "options": [
+        {
+          "en": "I order, I am ordering"
+        },
+        {
+          "en": "they like"
+        },
+        {
+          "en": "they order, they are ordering"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zamawiac-zamawiaja"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-c2-e05",
+      "verb": "zamawiać",
+      "meaning": {
+        "en": "to order"
+      },
+      "person": "oni",
+      "sentence": "Co oni ___?",
+      "sentenceMeaning": {
+        "en": "What are they ordering?"
+      },
+      "acceptedAnswers": [
+        "zamawiają"
+      ],
+      "items": [
+        "co",
+        "oni",
+        "zamawiac-zamawiaja"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l08-c2-e06",
+      "lines": [
+        "To jest dobry bar.",
+        "Co tu jest dobre?",
+        "Pierogi i zupa.",
+        "To zamawiam pierogi."
+      ],
+      "meaning": {
+        "en": "Two friends in a snack bar."
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "dobry",
+        "bar",
+        "co",
+        "tu",
+        "pierogi",
+        "i",
+        "zupa",
+        "zamawiac-zamawiam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c2-e07",
+      "prompt": "wino",
+      "options": [
+        {
+          "en": "wine"
+        },
+        {
+          "en": "water"
+        },
+        {
+          "en": "juice"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wino"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c2-e08",
+      "prompt": "wytrawny",
+      "options": [
+        {
+          "en": "sweet (słodki, słodka, słodkie)"
+        },
+        {
+          "en": "dry (of wine) (wytrawny, wytrawna, wytrawne)"
+        },
+        {
+          "en": "strong (mocny, mocna, mocne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wytrawny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c2-e09",
+      "prompt": "słodki",
+      "options": [
+        {
+          "en": "dry (of wine) (wytrawny, wytrawna, wytrawne)"
+        },
+        {
+          "en": "tasty (smaczny, smaczna, smaczne)"
+        },
+        {
+          "en": "sweet (słodki, słodka, słodkie)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "slodki"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-c2-e10",
+      "text": "wino białe wytrawne",
+      "meaning": {
+        "en": "dry white wine"
+      },
+      "distractors": [
+        "wino czerwone wytrawne",
+        "wino białe słodkie"
+      ],
+      "items": [
+        "wino",
+        "bialy",
+        "wytrawny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-c2-e11",
+      "text": "Wolisz wino białe czy ___?",
+      "meaning": {
+        "en": "Do you prefer white or red wine?"
+      },
+      "gaps": [
+        [
+          "czerwone"
+        ]
+      ],
+      "distractors": [
+        "czerwony",
+        "czerwona"
+      ],
+      "items": [
+        "wolec-wolisz",
+        "wino",
+        "bialy",
+        "czy",
+        "czerwony"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-c2-e12",
+      "prompt": {
+        "en": "the wine is sweet"
+      },
+      "acceptedAnswers": [
+        "wino jest słodkie"
+      ],
+      "distractors": [
+        "słodki",
+        "wytrawne"
+      ],
+      "items": [
+        "wino",
+        "byc-jest",
+        "slodki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c2-e13",
+      "prompt": "wieczorem",
+      "options": [
+        {
+          "en": "in the evening"
+        },
+        {
+          "en": "in the morning"
+        },
+        {
+          "en": "in the afternoon"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wieczorem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-c2-e14",
+      "prompt": "po południu",
+      "options": [
+        {
+          "en": "in the evening"
+        },
+        {
+          "en": "in the afternoon"
+        },
+        {
+          "en": "in the morning"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "po-poludniu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-c2-e15",
+      "acceptedAnswers": [
+        "po południu jem obiad"
+      ],
+      "meaning": {
+        "en": "in the afternoon I have dinner"
+      },
+      "items": [
+        "po-poludniu",
+        "jesc-jem",
+        "obiad"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-c2-e16",
+      "prompt": {
+        "en": "in the evening I drink wine"
+      },
+      "acceptedAnswers": [
+        "wieczorem piję wino",
+        "wieczorem ja piję wino"
+      ],
+      "items": [
+        "wieczorem",
+        "pic-pije",
+        "wino"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-c2-e17",
+      "pairs": [
+        {
+          "polish": "bar",
+          "meaning": {
+            "en": "a snack bar"
+          }
+        },
+        {
+          "polish": "wino",
+          "meaning": {
+            "en": "wine"
+          }
+        },
+        {
+          "polish": "wytrawny",
+          "meaning": {
+            "en": "dry (of wine)"
+          }
+        },
+        {
+          "polish": "słodki",
+          "meaning": {
+            "en": "sweet"
+          }
+        },
+        {
+          "polish": "wieczorem",
+          "meaning": {
+            "en": "in the evening"
+          }
+        },
+        {
+          "polish": "po południu",
+          "meaning": {
+            "en": "in the afternoon"
+          }
+        }
+      ],
+      "items": [
+        "bar",
+        "wino",
+        "wytrawny",
+        "slodki",
+        "wieczorem",
+        "po-poludniu"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-c2-e18",
+      "lines": [
+        "Wieczorem Ewa i Adam zamawiają pizzę.",
+        "Ewa pije wino czerwone.",
+        "Adam pije wodę."
+      ],
+      "meaning": {
+        "en": "An evening out."
+      },
+      "statements": [
+        {
+          "text": "Oni zamawiają pizzę.",
+          "meaning": {
+            "en": "They are ordering a pizza."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa pije białe wino.",
+          "meaning": {
+            "en": "Ewa is drinking white wine."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam pije wino.",
+          "meaning": {
+            "en": "Adam is drinking wine."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "wieczorem",
+        "ewa",
+        "i",
+        "adam",
+        "zamawiac-zamawiaja",
+        "pizza-acc",
+        "pic-pije-on",
+        "wino",
+        "czerwony",
+        "woda-acc"
+      ]
+    }
+  ]
+}

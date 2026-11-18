@@ -1,0 +1,396 @@
+{
+  "id": "kpk1-l08-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Obiad",
+    "meaning": {
+      "en": "Dinner"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-b2-t01",
+      "before": "kpk1-l08-b2-e01",
+      "title": {
+        "en": "Drugie danie"
+      },
+      "body": {
+        "en": "A Polish *drugie danie* is often *mięso* (meat), a *kotlet* or *ryba* (fish), with *ziemniaki*, *kasza* (buckwheat or barley groats) or *ryż*, and a *surówka*, a salad of raw grated vegetables. *Tłusty* is fatty and *chudy* lean: *chudy ser*, *tłusta kiełbasa*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b2-e01",
+      "prompt": "mięso",
+      "options": [
+        {
+          "en": "a fish; fish (the food)"
+        },
+        {
+          "en": "meat"
+        },
+        {
+          "en": "cheese"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "mieso"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b2-e02",
+      "prompt": "ryba",
+      "options": [
+        {
+          "en": "a chicken; chicken (the meat)"
+        },
+        {
+          "en": "meat"
+        },
+        {
+          "en": "a fish; fish (the food)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ryba"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-b2-e03",
+      "text": "mięso czy ryba?",
+      "meaning": {
+        "en": "meat or fish?"
+      },
+      "distractors": [
+        "mięso i ryba",
+        "ryba czy kurczak?"
+      ],
+      "items": [
+        "mieso",
+        "czy",
+        "ryba"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b2-e04",
+      "prompt": "kotlet",
+      "options": [
+        {
+          "en": "a cutlet, a chop"
+        },
+        {
+          "en": "a chicken; chicken (the meat)"
+        },
+        {
+          "en": "a sandwich"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kotlet"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b2-e05",
+      "prompt": "sos",
+      "options": [
+        {
+          "en": "soup"
+        },
+        {
+          "en": "a sauce"
+        },
+        {
+          "en": "sugar"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sos"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-b2-e06",
+      "prompt": {
+        "en": "the sauce is good"
+      },
+      "acceptedAnswers": [
+        "sos jest dobry"
+      ],
+      "distractors": [
+        "dobra",
+        "zupa"
+      ],
+      "items": [
+        "sos",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b2-e07",
+      "prompt": "kasza",
+      "options": [
+        {
+          "en": "rice"
+        },
+        {
+          "en": "pasta"
+        },
+        {
+          "en": "groats (buckwheat, barley…)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kasza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b2-e08",
+      "prompt": "surówka",
+      "options": [
+        {
+          "en": "a salad of raw grated vegetables"
+        },
+        {
+          "en": "a salad"
+        },
+        {
+          "en": "soup"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "surowka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-b2-e09",
+      "text": "Drugie danie to kotlet, ziemniaki i ___.",
+      "meaning": {
+        "en": "The main course is a cutlet, potatoes and a raw vegetable salad."
+      },
+      "gaps": [
+        [
+          "surówka"
+        ]
+      ],
+      "distractors": [
+        "surówkę",
+        "sos"
+      ],
+      "items": [
+        "drugie-danie",
+        "to",
+        "kotlet",
+        "ziemniaki",
+        "i",
+        "surowka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b2-e10",
+      "prompt": "tłusty",
+      "options": [
+        {
+          "en": "lean, low-fat (chudy, chuda, chude)"
+        },
+        {
+          "en": "fatty (tłusty, tłusta, tłuste)"
+        },
+        {
+          "en": "fat (gruby, gruba, grube)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "tlusty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b2-e11",
+      "prompt": "chudy",
+      "options": [
+        {
+          "en": "fatty (tłusty, tłusta, tłuste)"
+        },
+        {
+          "en": "slim (szczupły, szczupła, szczupłe)"
+        },
+        {
+          "en": "lean, low-fat (chudy, chuda, chude)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chudy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-b2-e12",
+      "acceptedAnswers": [
+        "ten ser jest chudy"
+      ],
+      "meaning": {
+        "en": "this cheese is low-fat"
+      },
+      "items": [
+        "ten",
+        "ser",
+        "byc-jest",
+        "chudy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-b2-e13",
+      "prompt": {
+        "en": "the sausage is fatty"
+      },
+      "acceptedAnswers": [
+        "kiełbasa jest tłusta"
+      ],
+      "items": [
+        "kielbasa",
+        "byc-jest",
+        "tlusty"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-b2-e14",
+      "prompt": {
+        "en": "meat and groats"
+      },
+      "acceptedAnswers": [
+        "mięso i kasza"
+      ],
+      "distractors": [
+        "ryż",
+        "mięsa"
+      ],
+      "items": [
+        "mieso",
+        "i",
+        "kasza"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-b2-e15",
+      "pairs": [
+        {
+          "polish": "mięso",
+          "meaning": {
+            "en": "meat"
+          }
+        },
+        {
+          "polish": "ryba",
+          "meaning": {
+            "en": "fish"
+          }
+        },
+        {
+          "polish": "kotlet",
+          "meaning": {
+            "en": "a cutlet"
+          }
+        },
+        {
+          "polish": "kasza",
+          "meaning": {
+            "en": "groats"
+          }
+        },
+        {
+          "polish": "sos",
+          "meaning": {
+            "en": "a sauce"
+          }
+        },
+        {
+          "polish": "chudy",
+          "meaning": {
+            "en": "lean"
+          }
+        }
+      ],
+      "items": [
+        "mieso",
+        "ryba",
+        "kotlet",
+        "kasza",
+        "sos",
+        "chudy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-b2-e16",
+      "lines": [
+        "Na obiad jest ryba.",
+        "Jest też kasza i surówka.",
+        "Mięso jest tłuste, ale dobre."
+      ],
+      "meaning": {
+        "en": "Dinner at a canteen."
+      },
+      "statements": [
+        {
+          "text": "Na obiad jest kotlet.",
+          "meaning": {
+            "en": "There is a cutlet for dinner."
+          },
+          "true": false
+        },
+        {
+          "text": "Jest surówka.",
+          "meaning": {
+            "en": "There is a raw vegetable salad."
+          },
+          "true": true
+        },
+        {
+          "text": "Mięso jest chude.",
+          "meaning": {
+            "en": "The meat is lean."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "na-obiad",
+        "byc-jest",
+        "ryba",
+        "tez",
+        "kasza",
+        "i",
+        "surowka",
+        "mieso",
+        "tlusty",
+        "ale",
+        "dobry"
+      ]
+    }
+  ]
+}

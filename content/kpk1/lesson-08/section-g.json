@@ -1,0 +1,436 @@
+{
+  "id": "kpk1-l08-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-g-t01",
+      "before": "kpk1-l08-g-e01",
+      "title": {
+        "en": "Jem, piję, wolę"
+      },
+      "body": {
+        "en": "*Jem*, *piję*, *wolę* and *mam ochotę na* take the accusative: *jem bułkę*, *piję kawę*. What comes with it takes *z* and the instrumental: *jem bułkę z masłem*, *piję kawę z mlekiem*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-g-e01",
+      "text": "Na śniadanie jem ___ z ___.",
+      "meaning": {
+        "en": "For breakfast I eat bread and butter."
+      },
+      "gaps": [
+        [
+          "chleb"
+        ],
+        [
+          "masłem"
+        ]
+      ],
+      "distractors": [
+        "masło",
+        "chleba"
+      ],
+      "items": [
+        "na-sniadanie",
+        "jesc-jem",
+        "chleb",
+        "z-maslem"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-g-e02",
+      "pairs": [
+        {
+          "polish": "jasny",
+          "meaning": {
+            "en": "light"
+          }
+        },
+        {
+          "polish": "ciemny",
+          "meaning": {
+            "en": "dark"
+          }
+        },
+        {
+          "polish": "mocny",
+          "meaning": {
+            "en": "strong"
+          }
+        },
+        {
+          "polish": "słaby",
+          "meaning": {
+            "en": "weak"
+          }
+        },
+        {
+          "polish": "tłusty",
+          "meaning": {
+            "en": "fatty"
+          }
+        },
+        {
+          "polish": "chudy",
+          "meaning": {
+            "en": "lean"
+          }
+        }
+      ],
+      "items": [
+        "jasny",
+        "ciemny",
+        "mocny",
+        "slaby",
+        "tlusty",
+        "chudy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-g-e03",
+      "text": "Piję ___ z ___.",
+      "meaning": {
+        "en": "I drink tea with lemon."
+      },
+      "gaps": [
+        [
+          "herbatę"
+        ],
+        [
+          "cytryną"
+        ]
+      ],
+      "distractors": [
+        "herbata",
+        "cytryna"
+      ],
+      "items": [
+        "pic-pije",
+        "herbata-acc",
+        "z-cytryna"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-g-e04",
+      "lines": [
+        "Na śniadanie Adam je bułkę z dżemem.",
+        "Pije kawę z mlekiem, bez cukru.",
+        "Na obiad jest kotlet z frytkami."
+      ],
+      "meaning": {
+        "en": "Adam's meals."
+      },
+      "statements": [
+        {
+          "text": "Adam je bułkę z dżemem.",
+          "meaning": {
+            "en": "Adam eats a bread roll with jam."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam pije kawę z cukrem.",
+          "meaning": {
+            "en": "Adam drinks coffee with sugar."
+          },
+          "true": false
+        },
+        {
+          "text": "Na obiad jest ryba.",
+          "meaning": {
+            "en": "There is fish for dinner."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "na-sniadanie",
+        "adam",
+        "jesc-je",
+        "bulka-acc",
+        "z-dzemem",
+        "pic-pije-on",
+        "kawa-acc",
+        "z-mlekiem",
+        "bez-cukru",
+        "na-obiad",
+        "byc-jest",
+        "kotlet",
+        "z-frytkami"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l08-g-e05",
+      "lines": [
+        "Co pijesz rano?",
+        "Kawę z mlekiem.",
+        "Z cukrem?",
+        "Nie, bez cukru."
+      ],
+      "meaning": {
+        "en": "Two friends at breakfast."
+      },
+      "items": [
+        "co",
+        "pic-pijesz",
+        "rano",
+        "kawa-acc",
+        "z-mlekiem",
+        "z-cukrem",
+        "nie",
+        "bez-cukru"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-g-e06",
+      "verb": "jeść",
+      "meaning": {
+        "en": "to eat"
+      },
+      "person": "on",
+      "sentence": "Ewa ___ jajecznicę.",
+      "sentenceMeaning": {
+        "en": "Ewa is eating scrambled eggs."
+      },
+      "acceptedAnswers": [
+        "je"
+      ],
+      "items": [
+        "ewa",
+        "jesc-je",
+        "jajecznica-acc"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-g-e07",
+      "verb": "pić",
+      "meaning": {
+        "en": "to drink"
+      },
+      "person": "ja",
+      "sentence": "Rano ___ sok pomarańczowy.",
+      "sentenceMeaning": {
+        "en": "In the morning I drink orange juice."
+      },
+      "acceptedAnswers": [
+        "piję"
+      ],
+      "items": [
+        "rano",
+        "pic-pije",
+        "sok-pomaranczowy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-g-e08",
+      "prompt": {
+        "en": "I prefer tea with lemon to coffee"
+      },
+      "acceptedAnswers": [
+        "wolę herbatę z cytryną niż kawę"
+      ],
+      "distractors": [
+        "kawa",
+        "herbata"
+      ],
+      "items": [
+        "wolec-wole",
+        "herbata-acc",
+        "z-cytryna",
+        "niz",
+        "kawa-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-g-e09",
+      "text": "masz ochotę na ciasto?",
+      "meaning": {
+        "en": "do you feel like some cake? (one friend)"
+      },
+      "distractors": [
+        "masz ochotę na kawę?",
+        "mam ochotę na ciasto"
+      ],
+      "items": [
+        "mam-ochote-na",
+        "ciasto"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-g-e10",
+      "prompt": {
+        "en": "a strawberry yoghurt, please"
+      },
+      "acceptedAnswers": [
+        "proszę jogurt truskawkowy",
+        "jogurt truskawkowy, proszę"
+      ],
+      "items": [
+        "prosze",
+        "jogurt",
+        "truskawkowy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-g-e11",
+      "text": "Ciasto ___ jest pyszne.",
+      "meaning": {
+        "en": "The apple cake is delicious."
+      },
+      "gaps": [
+        [
+          "jabłkowe"
+        ]
+      ],
+      "distractors": [
+        "jabłkowy",
+        "jabłko"
+      ],
+      "items": [
+        "ciasto",
+        "jablkowy",
+        "byc-jest",
+        "pyszny"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-g-e12",
+      "pairs": [
+        {
+          "polish": "śniadanie",
+          "meaning": {
+            "en": "breakfast"
+          }
+        },
+        {
+          "polish": "obiad",
+          "meaning": {
+            "en": "dinner"
+          }
+        },
+        {
+          "polish": "kolacja",
+          "meaning": {
+            "en": "supper"
+          }
+        },
+        {
+          "polish": "rano",
+          "meaning": {
+            "en": "in the morning"
+          }
+        },
+        {
+          "polish": "po południu",
+          "meaning": {
+            "en": "in the afternoon"
+          }
+        },
+        {
+          "polish": "wieczorem",
+          "meaning": {
+            "en": "in the evening"
+          }
+        }
+      ],
+      "items": [
+        "sniadanie",
+        "obiad",
+        "kolacja",
+        "rano",
+        "po-poludniu",
+        "wieczorem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-g-e13",
+      "prompt": {
+        "en": "the soup is hot"
+      },
+      "acceptedAnswers": [
+        "zupa jest gorąca"
+      ],
+      "distractors": [
+        "gorący",
+        "zimna"
+      ],
+      "items": [
+        "zupa",
+        "byc-jest",
+        "goracy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-g-e14",
+      "prompt": {
+        "en": "I am hungry (a woman says it)"
+      },
+      "acceptedAnswers": [
+        "jestem głodna",
+        "ja jestem głodna"
+      ],
+      "items": [
+        "byc-jestem",
+        "glodny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-g-e15",
+      "acceptedAnswers": [
+        "wolę ryż niż ziemniaki"
+      ],
+      "meaning": {
+        "en": "I prefer rice to potatoes"
+      },
+      "items": [
+        "wolec-wole",
+        "ryz",
+        "niz",
+        "ziemniaki"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-g-e16",
+      "prompt": {
+        "en": "the first course is soup"
+      },
+      "acceptedAnswers": [
+        "pierwsze danie to zupa"
+      ],
+      "items": [
+        "pierwsze-danie",
+        "to",
+        "zupa"
+      ]
+    }
+  ]
+}

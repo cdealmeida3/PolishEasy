@@ -1,0 +1,986 @@
+{
+  "items": [
+    {
+      "id": "glodny",
+      "text": "głodny",
+      "meaning": {
+        "en": "hungry (głodny, głodna, głodne)"
+      },
+      "forms": [
+        "głodna",
+        "głodne"
+      ]
+    },
+    {
+      "id": "sniadanie",
+      "text": "śniadanie",
+      "meaning": {
+        "en": "breakfast"
+      }
+    },
+    {
+      "id": "rano",
+      "text": "rano",
+      "meaning": {
+        "en": "in the morning"
+      }
+    },
+    {
+      "id": "juz",
+      "text": "już",
+      "meaning": {
+        "en": "already; (with nie) not any more"
+      }
+    },
+    {
+      "id": "jeszcze",
+      "text": "jeszcze",
+      "meaning": {
+        "en": "still; (with nie) not yet"
+      }
+    },
+    {
+      "id": "spac-spie",
+      "text": "śpię",
+      "meaning": {
+        "en": "I sleep, I am asleep"
+      }
+    },
+    {
+      "id": "spac-spisz",
+      "text": "śpisz",
+      "meaning": {
+        "en": "you sleep, you are asleep (one friend)"
+      }
+    },
+    {
+      "id": "spac-spia",
+      "text": "śpią",
+      "meaning": {
+        "en": "they sleep, they are asleep"
+      }
+    },
+    {
+      "id": "chleb",
+      "text": "chleb",
+      "meaning": {
+        "en": "bread"
+      }
+    },
+    {
+      "id": "jasny",
+      "text": "jasny",
+      "meaning": {
+        "en": "light, pale; white (of bread) (jasny, jasna, jasne)"
+      },
+      "forms": [
+        "jasna",
+        "jasne"
+      ]
+    },
+    {
+      "id": "ciemny",
+      "text": "ciemny",
+      "meaning": {
+        "en": "dark; brown (of bread) (ciemny, ciemna, ciemne)"
+      },
+      "forms": [
+        "ciemna",
+        "ciemne"
+      ]
+    },
+    {
+      "id": "bulka",
+      "text": "bułka",
+      "meaning": {
+        "en": "a bread roll"
+      }
+    },
+    {
+      "id": "bulka-acc",
+      "text": "bułkę",
+      "meaning": {
+        "en": "a bread roll (after proszę, jem…: jem bułkę)"
+      }
+    },
+    {
+      "id": "ser",
+      "text": "ser",
+      "meaning": {
+        "en": "cheese"
+      }
+    },
+    {
+      "id": "maslo",
+      "text": "masło",
+      "meaning": {
+        "en": "butter"
+      }
+    },
+    {
+      "id": "mleko",
+      "text": "mleko",
+      "meaning": {
+        "en": "milk"
+      }
+    },
+    {
+      "id": "jogurt",
+      "text": "jogurt",
+      "meaning": {
+        "en": "a yoghurt"
+      }
+    },
+    {
+      "id": "dzem",
+      "text": "dżem",
+      "meaning": {
+        "en": "jam"
+      }
+    },
+    {
+      "id": "miod",
+      "text": "miód",
+      "meaning": {
+        "en": "honey"
+      }
+    },
+    {
+      "id": "jajko",
+      "text": "jajko",
+      "meaning": {
+        "en": "an egg (jajka: eggs)"
+      },
+      "forms": [
+        "jajka"
+      ]
+    },
+    {
+      "id": "szynka",
+      "text": "szynka",
+      "meaning": {
+        "en": "ham"
+      }
+    },
+    {
+      "id": "pomidor",
+      "text": "pomidor",
+      "meaning": {
+        "en": "a tomato"
+      }
+    },
+    {
+      "id": "ogorek",
+      "text": "ogórek",
+      "meaning": {
+        "en": "a cucumber"
+      }
+    },
+    {
+      "id": "platki-sniadaniowe",
+      "text": "płatki śniadaniowe",
+      "meaning": {
+        "en": "breakfast cereal"
+      }
+    },
+    {
+      "id": "wolec-wolisz",
+      "text": "wolisz",
+      "meaning": {
+        "en": "you prefer (one friend)"
+      }
+    },
+    {
+      "id": "niz",
+      "text": "niż",
+      "meaning": {
+        "en": "than (wolę kawę niż herbatę)"
+      }
+    },
+    {
+      "id": "kakao",
+      "text": "kakao",
+      "meaning": {
+        "en": "cocoa"
+      }
+    },
+    {
+      "id": "cukier",
+      "text": "cukier",
+      "meaning": {
+        "en": "sugar"
+      }
+    },
+    {
+      "id": "sol",
+      "text": "sól",
+      "meaning": {
+        "en": "salt"
+      }
+    },
+    {
+      "id": "pieprz",
+      "text": "pieprz",
+      "meaning": {
+        "en": "pepper (the spice)"
+      }
+    },
+    {
+      "id": "cytryna",
+      "text": "cytryna",
+      "meaning": {
+        "en": "a lemon"
+      }
+    },
+    {
+      "id": "sok-pomaranczowy",
+      "text": "sok pomarańczowy",
+      "meaning": {
+        "en": "orange juice"
+      }
+    },
+    {
+      "id": "jesc",
+      "text": "jeść",
+      "meaning": {
+        "en": "eat (to eat)"
+      }
+    },
+    {
+      "id": "jesc-jem",
+      "text": "jem",
+      "meaning": {
+        "en": "I eat, I am eating"
+      }
+    },
+    {
+      "id": "jesc-jesz",
+      "text": "jesz",
+      "meaning": {
+        "en": "you eat, you are eating (one friend)"
+      }
+    },
+    {
+      "id": "jesc-je",
+      "text": "je",
+      "meaning": {
+        "en": "he eats, she eats"
+      }
+    },
+    {
+      "id": "pic",
+      "text": "pić",
+      "meaning": {
+        "en": "drink (to drink)"
+      }
+    },
+    {
+      "id": "pic-pije",
+      "text": "piję",
+      "meaning": {
+        "en": "I drink, I am drinking"
+      }
+    },
+    {
+      "id": "pic-pijesz",
+      "text": "pijesz",
+      "meaning": {
+        "en": "you drink, you are drinking (one friend)"
+      }
+    },
+    {
+      "id": "pic-pije-on",
+      "text": "pije",
+      "meaning": {
+        "en": "he drinks, she drinks"
+      }
+    },
+    {
+      "id": "z-maslem",
+      "text": "z masłem",
+      "meaning": {
+        "en": "with butter"
+      }
+    },
+    {
+      "id": "z-dzemem",
+      "text": "z dżemem",
+      "meaning": {
+        "en": "with jam"
+      }
+    },
+    {
+      "id": "z-szynka",
+      "text": "z szynką",
+      "meaning": {
+        "en": "with ham"
+      }
+    },
+    {
+      "id": "z-cytryna",
+      "text": "z cytryną",
+      "meaning": {
+        "en": "with lemon"
+      }
+    },
+    {
+      "id": "z-mlekiem",
+      "text": "z mlekiem",
+      "meaning": {
+        "en": "with milk"
+      }
+    },
+    {
+      "id": "z-cukrem",
+      "text": "z cukrem",
+      "meaning": {
+        "en": "with sugar"
+      }
+    },
+    {
+      "id": "bez-cukru",
+      "text": "bez cukru",
+      "meaning": {
+        "en": "without sugar"
+      }
+    },
+    {
+      "id": "bez-mleka",
+      "text": "bez mleka",
+      "meaning": {
+        "en": "without milk"
+      }
+    },
+    {
+      "id": "talerz",
+      "text": "talerz",
+      "meaning": {
+        "en": "a plate"
+      }
+    },
+    {
+      "id": "noz",
+      "text": "nóż",
+      "meaning": {
+        "en": "a knife"
+      }
+    },
+    {
+      "id": "widelec",
+      "text": "widelec",
+      "meaning": {
+        "en": "a fork"
+      }
+    },
+    {
+      "id": "lyzka",
+      "text": "łyżka",
+      "meaning": {
+        "en": "a spoon"
+      }
+    },
+    {
+      "id": "lyzeczka",
+      "text": "łyżeczka",
+      "meaning": {
+        "en": "a teaspoon"
+      }
+    },
+    {
+      "id": "wedlina",
+      "text": "wędlina",
+      "meaning": {
+        "en": "cold meat (ham, sausage, salami)"
+      }
+    },
+    {
+      "id": "kielbasa",
+      "text": "kiełbasa",
+      "meaning": {
+        "en": "a sausage"
+      }
+    },
+    {
+      "id": "na-przyklad",
+      "text": "na przykład",
+      "meaning": {
+        "en": "for example"
+      }
+    },
+    {
+      "id": "jajecznica",
+      "text": "jajecznica",
+      "meaning": {
+        "en": "scrambled eggs"
+      }
+    },
+    {
+      "id": "omlet",
+      "text": "omlet",
+      "meaning": {
+        "en": "an omelette"
+      }
+    },
+    {
+      "id": "mam-ochote-na",
+      "text": "mam ochotę na",
+      "meaning": {
+        "en": "feel like, fancy (mam ochotę na: I feel like; masz ochotę na?: do you feel like?; ma ochotę na: he or she feels like)"
+      },
+      "forms": [
+        "masz ochotę na",
+        "ma ochotę na"
+      ]
+    },
+    {
+      "id": "jajecznica-acc",
+      "text": "jajecznicę",
+      "meaning": {
+        "en": "scrambled eggs (after mam ochotę na, jem…: jem jajecznicę)"
+      }
+    },
+    {
+      "id": "chetnie",
+      "text": "chętnie",
+      "meaning": {
+        "en": "gladly, with pleasure"
+      }
+    },
+    {
+      "id": "na-miekko",
+      "text": "na miękko",
+      "meaning": {
+        "en": "soft-boiled (of an egg)"
+      }
+    },
+    {
+      "id": "na-twardo",
+      "text": "na twardo",
+      "meaning": {
+        "en": "hard-boiled (of an egg)"
+      }
+    },
+    {
+      "id": "pozno",
+      "text": "późno",
+      "meaning": {
+        "en": "late"
+      }
+    },
+    {
+      "id": "owoc",
+      "text": "owoc",
+      "meaning": {
+        "en": "a fruit (owoce: fruit, several)"
+      },
+      "forms": [
+        "owoce"
+      ]
+    },
+    {
+      "id": "banan",
+      "text": "banan",
+      "meaning": {
+        "en": "a banana"
+      }
+    },
+    {
+      "id": "jablko",
+      "text": "jabłko",
+      "meaning": {
+        "en": "an apple"
+      }
+    },
+    {
+      "id": "pomarancza",
+      "text": "pomarańcza",
+      "meaning": {
+        "en": "an orange (the fruit)"
+      }
+    },
+    {
+      "id": "truskawka",
+      "text": "truskawka",
+      "meaning": {
+        "en": "a strawberry"
+      }
+    },
+    {
+      "id": "malina",
+      "text": "malina",
+      "meaning": {
+        "en": "a raspberry"
+      }
+    },
+    {
+      "id": "goracy",
+      "text": "gorący",
+      "meaning": {
+        "en": "hot (gorący, gorąca, gorące)"
+      },
+      "forms": [
+        "gorąca",
+        "gorące"
+      ]
+    },
+    {
+      "id": "zimny",
+      "text": "zimny",
+      "meaning": {
+        "en": "cold (zimny, zimna, zimne)"
+      },
+      "forms": [
+        "zimna",
+        "zimne"
+      ]
+    },
+    {
+      "id": "naturalny",
+      "text": "naturalny",
+      "meaning": {
+        "en": "natural; plain (of yoghurt) (naturalny, naturalna, naturalne)"
+      },
+      "forms": [
+        "naturalna",
+        "naturalne"
+      ]
+    },
+    {
+      "id": "owocowy",
+      "text": "owocowy",
+      "meaning": {
+        "en": "fruit, made with fruit (owocowy, owocowa, owocowe)"
+      },
+      "forms": [
+        "owocowa",
+        "owocowe"
+      ]
+    },
+    {
+      "id": "truskawkowy",
+      "text": "truskawkowy",
+      "meaning": {
+        "en": "strawberry, made with strawberries (truskawkowy, truskawkowa, truskawkowe)"
+      },
+      "forms": [
+        "truskawkowa",
+        "truskawkowe"
+      ]
+    },
+    {
+      "id": "malinowy",
+      "text": "malinowy",
+      "meaning": {
+        "en": "raspberry, made with raspberries (malinowy, malinowa, malinowe)"
+      },
+      "forms": [
+        "malinowa",
+        "malinowe"
+      ]
+    },
+    {
+      "id": "jablkowy",
+      "text": "jabłkowy",
+      "meaning": {
+        "en": "apple, made with apples (jabłkowy, jabłkowa, jabłkowe)"
+      },
+      "forms": [
+        "jabłkowa",
+        "jabłkowe"
+      ]
+    },
+    {
+      "id": "ciasto",
+      "text": "ciasto",
+      "meaning": {
+        "en": "a cake"
+      }
+    },
+    {
+      "id": "mocny",
+      "text": "mocny",
+      "meaning": {
+        "en": "strong (mocny, mocna, mocne)"
+      },
+      "forms": [
+        "mocna",
+        "mocne"
+      ]
+    },
+    {
+      "id": "slaby",
+      "text": "słaby",
+      "meaning": {
+        "en": "weak (słaby, słaba, słabe)"
+      },
+      "forms": [
+        "słaba",
+        "słabe"
+      ]
+    },
+    {
+      "id": "obiad",
+      "text": "obiad",
+      "meaning": {
+        "en": "dinner, the main meal of the day"
+      }
+    },
+    {
+      "id": "na-sniadanie",
+      "text": "na śniadanie",
+      "meaning": {
+        "en": "for breakfast"
+      }
+    },
+    {
+      "id": "na-obiad",
+      "text": "na obiad",
+      "meaning": {
+        "en": "for dinner"
+      }
+    },
+    {
+      "id": "zupa",
+      "text": "zupa",
+      "meaning": {
+        "en": "soup"
+      }
+    },
+    {
+      "id": "pierwsze-danie",
+      "text": "pierwsze danie",
+      "meaning": {
+        "en": "the first course (often soup)"
+      }
+    },
+    {
+      "id": "drugie-danie",
+      "text": "drugie danie",
+      "meaning": {
+        "en": "the main course"
+      }
+    },
+    {
+      "id": "kurczak",
+      "text": "kurczak",
+      "meaning": {
+        "en": "a chicken; chicken (the meat)"
+      }
+    },
+    {
+      "id": "ziemniaki",
+      "text": "ziemniaki",
+      "meaning": {
+        "en": "potatoes"
+      }
+    },
+    {
+      "id": "mieso",
+      "text": "mięso",
+      "meaning": {
+        "en": "meat"
+      }
+    },
+    {
+      "id": "ryba",
+      "text": "ryba",
+      "meaning": {
+        "en": "a fish; fish (the food)"
+      }
+    },
+    {
+      "id": "kotlet",
+      "text": "kotlet",
+      "meaning": {
+        "en": "a cutlet, a chop"
+      }
+    },
+    {
+      "id": "sos",
+      "text": "sos",
+      "meaning": {
+        "en": "a sauce"
+      }
+    },
+    {
+      "id": "kasza",
+      "text": "kasza",
+      "meaning": {
+        "en": "groats (buckwheat, barley…)"
+      }
+    },
+    {
+      "id": "surowka",
+      "text": "surówka",
+      "meaning": {
+        "en": "a salad of raw grated vegetables"
+      }
+    },
+    {
+      "id": "tlusty",
+      "text": "tłusty",
+      "meaning": {
+        "en": "fatty (tłusty, tłusta, tłuste)"
+      },
+      "forms": [
+        "tłusta",
+        "tłuste"
+      ]
+    },
+    {
+      "id": "chudy",
+      "text": "chudy",
+      "meaning": {
+        "en": "lean, low-fat (chudy, chuda, chude)"
+      },
+      "forms": [
+        "chuda",
+        "chude"
+      ]
+    },
+    {
+      "id": "salata",
+      "text": "sałata",
+      "meaning": {
+        "en": "lettuce"
+      }
+    },
+    {
+      "id": "salatka",
+      "text": "sałatka",
+      "meaning": {
+        "en": "a salad"
+      }
+    },
+    {
+      "id": "frytki",
+      "text": "frytki",
+      "meaning": {
+        "en": "chips, French fries"
+      }
+    },
+    {
+      "id": "warzywa",
+      "text": "warzywa",
+      "meaning": {
+        "en": "vegetables"
+      }
+    },
+    {
+      "id": "ulubiony",
+      "text": "ulubiony",
+      "meaning": {
+        "en": "favourite (ulubiony, ulubiona, ulubione)"
+      },
+      "forms": [
+        "ulubiona",
+        "ulubione"
+      ]
+    },
+    {
+      "id": "potrawa",
+      "text": "potrawa",
+      "meaning": {
+        "en": "a dish"
+      }
+    },
+    {
+      "id": "owoce-morza",
+      "text": "owoce morza",
+      "meaning": {
+        "en": "seafood"
+      }
+    },
+    {
+      "id": "jedzenie",
+      "text": "jedzenie",
+      "meaning": {
+        "en": "food"
+      }
+    },
+    {
+      "id": "oliwki",
+      "text": "oliwki",
+      "meaning": {
+        "en": "olives"
+      }
+    },
+    {
+      "id": "grzyby",
+      "text": "grzyby",
+      "meaning": {
+        "en": "mushrooms"
+      }
+    },
+    {
+      "id": "pieczarki",
+      "text": "pieczarki",
+      "meaning": {
+        "en": "button mushrooms"
+      }
+    },
+    {
+      "id": "brokuly",
+      "text": "brokuły",
+      "meaning": {
+        "en": "broccoli"
+      }
+    },
+    {
+      "id": "z-oliwkami",
+      "text": "z oliwkami",
+      "meaning": {
+        "en": "with olives"
+      }
+    },
+    {
+      "id": "z-pieczarkami",
+      "text": "z pieczarkami",
+      "meaning": {
+        "en": "with button mushrooms"
+      }
+    },
+    {
+      "id": "z-frytkami",
+      "text": "z frytkami",
+      "meaning": {
+        "en": "with chips"
+      }
+    },
+    {
+      "id": "z-warzywami",
+      "text": "z warzywami",
+      "meaning": {
+        "en": "with vegetables"
+      }
+    },
+    {
+      "id": "kolacja",
+      "text": "kolacja",
+      "meaning": {
+        "en": "supper, the evening meal"
+      }
+    },
+    {
+      "id": "na-kolacje",
+      "text": "na kolację",
+      "meaning": {
+        "en": "for supper"
+      }
+    },
+    {
+      "id": "zapraszac-zapraszamy",
+      "text": "zapraszamy",
+      "meaning": {
+        "en": "we invite you (zapraszamy na kolację: come for supper)"
+      }
+    },
+    {
+      "id": "salatka-jarzynowa",
+      "text": "sałatka jarzynowa",
+      "meaning": {
+        "en": "a vegetable salad with mayonnaise"
+      }
+    },
+    {
+      "id": "tost",
+      "text": "tost",
+      "meaning": {
+        "en": "a slice of toast"
+      }
+    },
+    {
+      "id": "grzanka",
+      "text": "grzanka",
+      "meaning": {
+        "en": "a slice of toast (another word for tost)"
+      }
+    },
+    {
+      "id": "pyszny",
+      "text": "pyszny",
+      "meaning": {
+        "en": "delicious (pyszny, pyszna, pyszne)"
+      },
+      "forms": [
+        "pyszna",
+        "pyszne"
+      ]
+    },
+    {
+      "id": "smaczny",
+      "text": "smaczny",
+      "meaning": {
+        "en": "tasty (smaczny, smaczna, smaczne)"
+      },
+      "forms": [
+        "smaczna",
+        "smaczne"
+      ]
+    },
+    {
+      "id": "bar",
+      "text": "bar",
+      "meaning": {
+        "en": "a bar, a snack bar"
+      }
+    },
+    {
+      "id": "zamawiac-zamawiam",
+      "text": "zamawiam",
+      "meaning": {
+        "en": "I order, I am ordering"
+      }
+    },
+    {
+      "id": "zamawiac-zamawiaja",
+      "text": "zamawiają",
+      "meaning": {
+        "en": "they order, they are ordering"
+      }
+    },
+    {
+      "id": "wino",
+      "text": "wino",
+      "meaning": {
+        "en": "wine"
+      }
+    },
+    {
+      "id": "wytrawny",
+      "text": "wytrawny",
+      "meaning": {
+        "en": "dry (of wine) (wytrawny, wytrawna, wytrawne)"
+      },
+      "forms": [
+        "wytrawna",
+        "wytrawne"
+      ]
+    },
+    {
+      "id": "slodki",
+      "text": "słodki",
+      "meaning": {
+        "en": "sweet (słodki, słodka, słodkie)"
+      },
+      "forms": [
+        "słodka",
+        "słodkie"
+      ]
+    },
+    {
+      "id": "wieczorem",
+      "text": "wieczorem",
+      "meaning": {
+        "en": "in the evening"
+      }
+    },
+    {
+      "id": "po-poludniu",
+      "text": "po południu",
+      "meaning": {
+        "en": "in the afternoon"
+      }
+    }
+  ]
+}

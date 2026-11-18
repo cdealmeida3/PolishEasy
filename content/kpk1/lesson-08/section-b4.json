@@ -1,0 +1,423 @@
+{
+  "id": "kpk1-l08-b4",
+  "section": {
+    "letter": "B",
+    "heading": "Obiad",
+    "meaning": {
+      "en": "Dinner"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-b4-t01",
+      "before": "kpk1-l08-b4-e01",
+      "title": {
+        "en": "Narzędnik: the plural"
+      },
+      "body": {
+        "en": "In the plural, the instrumental ends in *-ami* for almost every noun: *z frytkami*, *z oliwkami*, *z grzybami*. An adjective takes *-ymi* (*-imi* after *k* and *g*): *z zielonymi oliwkami*. A few nouns take *-mi* instead: remember *z dziećmi* (with the children)."
+      },
+      "table": {
+        "title": {
+          "en": "Narzędnik, plural"
+        },
+        "columns": [
+          {
+            "header": "grzyby"
+          },
+          {
+            "header": "oliwki"
+          },
+          {
+            "header": "jabłka"
+          }
+        ],
+        "rows": [
+          {
+            "case": "M",
+            "cells": [
+              "grzyby",
+              "oliwki",
+              "jabłka"
+            ]
+          },
+          {
+            "case": "N",
+            "cells": [
+              "grzyb[ami]",
+              "oliwk[ami]",
+              "jabłk[ami]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b4-e01",
+      "prompt": "oliwki",
+      "options": [
+        {
+          "en": "a cucumber"
+        },
+        {
+          "en": "mushrooms"
+        },
+        {
+          "en": "olives"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "oliwki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b4-e02",
+      "prompt": "grzyby",
+      "options": [
+        {
+          "en": "mushrooms"
+        },
+        {
+          "en": "vegetables"
+        },
+        {
+          "en": "olives"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "grzyby"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b4-e03",
+      "prompt": "pieczarki",
+      "options": [
+        {
+          "en": "olives"
+        },
+        {
+          "en": "button mushrooms"
+        },
+        {
+          "en": "broccoli"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pieczarki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b4-e04",
+      "prompt": "brokuły",
+      "options": [
+        {
+          "en": "vegetables"
+        },
+        {
+          "en": "lettuce"
+        },
+        {
+          "en": "broccoli"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "brokuly"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-b4-e05",
+      "prompt": {
+        "en": "broccoli and mushrooms"
+      },
+      "acceptedAnswers": [
+        "brokuły i grzyby",
+        "grzyby i brokuły"
+      ],
+      "items": [
+        "brokuly",
+        "i",
+        "grzyby"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-b4-e06",
+      "prompt": {
+        "en": "button mushrooms and olives"
+      },
+      "acceptedAnswers": [
+        "pieczarki i oliwki"
+      ],
+      "distractors": [
+        "pieczarkami",
+        "oliwkami"
+      ],
+      "items": [
+        "pieczarki",
+        "i",
+        "oliwki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b4-e07",
+      "prompt": "z oliwkami",
+      "options": [
+        {
+          "en": "with olives"
+        },
+        {
+          "en": "olives"
+        },
+        {
+          "en": "with button mushrooms"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-oliwkami"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-b4-e08",
+      "text": "sałatka z oliwkami",
+      "meaning": {
+        "en": "a salad with olives"
+      },
+      "distractors": [
+        "sałatka z pieczarkami",
+        "zupa z oliwkami"
+      ],
+      "items": [
+        "salatka",
+        "z-oliwkami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b4-e09",
+      "prompt": "z pieczarkami",
+      "options": [
+        {
+          "en": "with olives"
+        },
+        {
+          "en": "with button mushrooms"
+        },
+        {
+          "en": "button mushrooms"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-pieczarkami"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-b4-e10",
+      "text": "Chcę pizzę z ___.",
+      "meaning": {
+        "en": "I want a pizza with button mushrooms."
+      },
+      "gaps": [
+        [
+          "pieczarkami"
+        ]
+      ],
+      "distractors": [
+        "pieczarki",
+        "pieczarką"
+      ],
+      "items": [
+        "chciec-chce",
+        "pizza-acc",
+        "z-pieczarkami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b4-e11",
+      "prompt": "z frytkami",
+      "options": [
+        {
+          "en": "chips, French fries"
+        },
+        {
+          "en": "with vegetables"
+        },
+        {
+          "en": "with chips"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-frytkami"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-b4-e12",
+      "prompt": {
+        "en": "fish with chips"
+      },
+      "acceptedAnswers": [
+        "ryba z frytkami"
+      ],
+      "distractors": [
+        "frytki",
+        "sałatka"
+      ],
+      "items": [
+        "ryba",
+        "z-frytkami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b4-e13",
+      "prompt": "z warzywami",
+      "options": [
+        {
+          "en": "with vegetables"
+        },
+        {
+          "en": "vegetables"
+        },
+        {
+          "en": "with chips"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-warzywami"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-b4-e14",
+      "acceptedAnswers": [
+        "kurczak z warzywami"
+      ],
+      "meaning": {
+        "en": "chicken with vegetables"
+      },
+      "items": [
+        "kurczak",
+        "z-warzywami"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-b4-e15",
+      "pairs": [
+        {
+          "polish": "oliwki",
+          "meaning": {
+            "en": "olives"
+          }
+        },
+        {
+          "polish": "grzyby",
+          "meaning": {
+            "en": "mushrooms"
+          }
+        },
+        {
+          "polish": "pieczarki",
+          "meaning": {
+            "en": "button mushrooms"
+          }
+        },
+        {
+          "polish": "brokuły",
+          "meaning": {
+            "en": "broccoli"
+          }
+        },
+        {
+          "polish": "z frytkami",
+          "meaning": {
+            "en": "with chips"
+          }
+        },
+        {
+          "polish": "z warzywami",
+          "meaning": {
+            "en": "with vegetables"
+          }
+        }
+      ],
+      "items": [
+        "oliwki",
+        "grzyby",
+        "pieczarki",
+        "brokuly",
+        "z-frytkami",
+        "z-warzywami"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-b4-e16",
+      "lines": [
+        "Ewa chce pizzę z oliwkami.",
+        "Adam chce pizzę z pieczarkami.",
+        "Tata je kotlet z frytkami."
+      ],
+      "meaning": {
+        "en": "Ordering pizza at home."
+      },
+      "statements": [
+        {
+          "text": "Ewa chce pizzę z oliwkami.",
+          "meaning": {
+            "en": "Ewa wants a pizza with olives."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam chce pizzę z warzywami.",
+          "meaning": {
+            "en": "Adam wants a pizza with vegetables."
+          },
+          "true": false
+        },
+        {
+          "text": "Tata je kotlet z frytkami.",
+          "meaning": {
+            "en": "Dad is eating a cutlet with chips."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "chciec-chce-on",
+        "pizza-acc",
+        "z-oliwkami",
+        "adam",
+        "z-pieczarkami",
+        "tata",
+        "jesc-je",
+        "kotlet",
+        "z-frytkami"
+      ]
+    }
+  ]
+}
