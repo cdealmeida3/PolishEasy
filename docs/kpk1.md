@@ -312,3 +312,26 @@ It gives the later chapters:
 - the accusative pronouns, and their forms after *na*.
 
 It leaves for later: the instrumental and the locative as rules (*rowerem*, *na Wawelu*, *w pubie* are met as phrases), the past of the verbs of motion beyond chapter 13's *szedłem* and *chodziłem*, and the pronouns after other prepositions (*z nim* was met in chapter 10).
+
+## Chapter 15: Karton czy pudełko?
+
+Book pages 116 to 123, recordings 157 to 176. Eighteen parts, 308 Exercises and 131 new Items: containers and amounts, the genitive plural, the post office, asking for help, and the pronouns in the genitive.
+
+- **A** *Puszki, paczki i pudełka*, in five: containers (17: *puszka*, *karton*, *butelka*, *słoik*, *paczka*, *pudełko*, *kawałek*, *plasterek*); the genitive after a container (18: *kostka*, *cola*, *dżemu*, *masła*, *czekoladki*, *zapałki*, *tabliczka*, *czekolady*); what goes in what (17: *lód*, *makaronu*, *kukurydzy*, *kiełbasy*, *szynki*, *tort*, *ciasta*); a favour (16: *mam do ciebie prośbę*, *prośba*, *wolałbym nie*, *naprawdę*, *już idę*, *mamo!*); and at the counter, with a Tip on *gram*, *gramy*, *gramów* (18: *ćwierć kilo*, *gram*, *malinowego*, *żółtego*, *chudego*, *czarnego*, *pomarańczowego*, *jeszcze poproszę*).
+- **B** *Zakupy na piknik*, in six: *dwa kartony*, *pięć kartonów* (16: *piknik*, *na piknik*, *za mało*, *musztardy*, *chipsów*); *ile?* and the words of amount (17: *dużo*, *mało*, *kilka*, *wiele*, *niewiele*, *osoba*, *studentów*, *nauczycieli*); verbs with the genitive, with *potrzebować* and *bać się* as conjugation Tips (17: *potrzebuję*, *potrzebują*, *samochodu*, *szukają*, *boję się*, *boją się*, *kierowców*, *historii*); the genitive plural, with a Tip on *-ów*, no ending, *-i* and *-ych* (18: *owoców*, *kotów*, *koleżanek*, *książek*, *jabłek*, *seriali*, *nowych*, *fajnych*); at the market (17: *co dla pani?*, *pieczarek*, *deka*, *może być*, *ziemniaków*, *kiszone ogórki*, *pół kilograma*, *wystarczy*); and packing for the picnic (17: *pakujesz się*, *ciężki*, *paluszki*, *orzeszki*, *zgrzewka*, *na osobę*, *gazowany*, *niegazowany*).
+- **C** *Poczta, kurier, paczkomat*, in two: the post office (18: *poczta*, *na pocztę*, *znaczek*, *koperta*, *pocztówka*, *listonosz*, *kurier*, *paczkomat*); and at the counter (17: *wysłać*, *ważny*, *list polecony*, *awizo*, *kolejka*, *nie cierpię*, *nadać paczkę*, *zależy*).
+- **D** *Czy pomożesz mi?*, in two: asking for help, from a friend to a stranger (17: *czy pomożesz mi?*, *czy możesz mi pomóc?*, *czy mógłbyś mi pomóc?*, *czy mogłaby mi pani pomóc?*, *czy byłby pan tak uprzejmy?*, *chciałem cię prosić o pomoc*, *pomoc*); and saying yes or no (17: *nie ma sprawy*, *nie ma problemu*, *o co chodzi?*, *czasu*, *umyć naczynia*, *nie mam pojęcia*, *pomogę*).
+- **E** *Zaimki*, in two: after *do*, with a table Tip of the genitive pronouns alone and after *do* (17: *dzwonię*, *do ciebie*, *do niego*, *do niej*, *do nich*, *do mnie*, *do nas*, *do was*); and after *szukać* and *nie* (17: *szukasz*, *jej*, *ich*, *jego*, *nie widzę*, *nie ma go*, *nie odbierasz*).
+- *Ćwiczenia* (17): what is in the bag (*w torbie*, *chusteczki*, *guma do żucia*, *za dużo*).
+
+A container that is counted is one Item with its plural as its first form, its genitive plural as its second and, for a feminine one, its accusative as its third (*butelka*: *butelki*, *butelek*, *butelkę*), and a gender in `practice.json`; `AuthoredContentTest` holds *dwa*, *trzy* and *cztery* to the first form and *pięć* and on to the second. *Kilogram* gained its forms the same way. A noun in the genitive after a container, or a genitive plural after *dużo*, is its own Item (*dżemu*, *studentów*), as chapter 9's *wody* was. *Potrzebować*, *bać się*, *szukać* and *dzwonić* are conjugation tables. A genitive pronoun that is spelled like an older Item (*jej*, *ich*, *jego*) is a separate Item. *Plasterek*, *zapałki*, *zgrzewka*, *kolejka*, *nie cierpię*, *zależy*, *boję się*, *szukają*, *awizo* and *paczkomat*, the words the book sends to the dictionary, are under Look up. There are 64 listening tasks on all 20 recordings, and one Chat: *At the post office* (Pani Ola at the counter, formal: a parcel to Kraków and five stamps; *dzień dobry*, *chciałem* and *dziękuję*, not *cześć*, *chcę* and *dzięki*). Twenty-five Items have pictures (a can, a carton, a bottle, a jar, a package, a gift box, a piece of cake, a slice of bacon, butter, a chocolate bar, a cup with a straw, ice, a cake, a mushroom, a pretzel, peanuts, a basket, a post office, an envelope, a delivery van, a roll of paper, a cucumber, a car, a balance, a postbox).
+
+It gives the later chapters:
+
+- containers and amounts with the genitive: *butelka wody*, *dużo*, *mało*, *kilka*, *trochę*, *ćwierć kilo*;
+- counting with the genitive plural: *dwie butelki*, *pięć butelek*;
+- the genitive plural of nouns and adjectives;
+- the post office, and asking for help politely;
+- the pronouns in the genitive, alone and after *do*.
+
+It leaves for later: the genitive plural as a rule for every noun (*-ów*, *-i* and the dropped ending are met in the words above), the conditional as a tense (*mógłbyś*, *wolałbym* are met as phrases), and people counted with *pięciu* or *dwóch*.

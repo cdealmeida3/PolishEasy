@@ -87,6 +87,10 @@
     {
       "problem": "grammar: ZAIMKI_KROTKIE: go",
       "reason": "False alarm. The rule wants the long form (jego) at the start of a sentence, but \"go\" is never a sentence here: it is the Item on its own, a gap answer or a cell of a table, and in every sentence that uses it it stands after the verb (kocham cię, lubię go, znam go), where the short form is right."
+    },
+    {
+      "problem": "dictionary: paczkomat",
+      "reason": "A real word the dictionary does not have yet: a paczkomat is a parcel locker, the machines all over Poland where you pick up and send parcels. The book's chapter 15 teaches it in its post office section."
     }
   ]
 }

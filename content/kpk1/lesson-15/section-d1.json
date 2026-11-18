@@ -1,0 +1,389 @@
+{
+  "id": "kpk1-l15-d1",
+  "section": {
+    "letter": "D",
+    "heading": "Czy pomożesz mi?",
+    "meaning": {
+      "en": "Will you help me?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-d1-t01",
+      "before": "kpk1-l15-d1-e01",
+      "title": {
+        "en": "Prośba o pomoc"
+      },
+      "body": {
+        "en": "Asking for help, from friendly to polite: *czy pomożesz mi?*, *czy możesz mi pomóc?*, *czy mógłbyś mi pomóc?* (to a woman friend: *mogłabyś*), and to someone you don't know *czy mogłaby mi pani pomóc?* or *czy mógłby mi pan pomóc?*. Most polite is *czy byłby pan tak uprzejmy?* (would you be so kind?)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-d1-e01",
+      "prompt": "czy pomożesz mi?",
+      "options": [
+        {
+          "en": "will you call me?"
+        },
+        {
+          "en": "are you coming?"
+        },
+        {
+          "en": "will you help me? (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czy-pomozesz-mi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-d1-e02",
+      "prompt": "czy możesz mi pomóc?",
+      "options": [
+        {
+          "en": "can you help me? (one friend)"
+        },
+        {
+          "en": "can you call me?"
+        },
+        {
+          "en": "can you come with me?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czy-mozesz-mi-pomoc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-d1-e03",
+      "text": "czy możesz mi pomóc?",
+      "meaning": {
+        "en": "can you help me? (one friend)"
+      },
+      "distractors": [
+        "czy możesz iść ze mną?",
+        "czy mogę ci pomóc?"
+      ],
+      "items": [
+        "czy-mozesz-mi-pomoc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-d1-e04",
+      "prompt": "czy mógłbyś mi pomóc?",
+      "options": [
+        {
+          "en": "could you come with me? (to a man friend)"
+        },
+        {
+          "en": "could you help me? (to a man friend; mogłabyś: to a woman friend)"
+        },
+        {
+          "en": "could you call me? (to a man friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czy-moglbys-mi-pomoc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-d1-e05",
+      "prompt": "pomoc",
+      "options": [
+        {
+          "en": "a request"
+        },
+        {
+          "en": "a question"
+        },
+        {
+          "en": "help (prosić o pomoc: to ask for help)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pomoc-n"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-d1-e06",
+      "prompt": "chciałem cię prosić o pomoc",
+      "options": [
+        {
+          "en": "I wanted to ask you for help (a man says it; chciałam: a woman)"
+        },
+        {
+          "en": "I wanted to help you"
+        },
+        {
+          "en": "I wanted to ask you a question"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chcialem-cie-prosic"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-d1-e07",
+      "prompt": {
+        "en": "I wanted to ask you for help (a man says it)"
+      },
+      "acceptedAnswers": [
+        "chciałem cię prosić o pomoc"
+      ],
+      "distractors": [
+        "pomóc",
+        "chcę"
+      ],
+      "items": [
+        "chcialem-cie-prosic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-d1-e08",
+      "prompt": "czy mogłaby mi pani pomóc?",
+      "options": [
+        {
+          "en": "could you call me? (polite, to a woman)"
+        },
+        {
+          "en": "could you help me? (polite, to a woman; mógłby mi pan: to a man)"
+        },
+        {
+          "en": "could you help me? (to a man friend; mogłabyś: to a woman friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czy-moglaby-pani"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-d1-e09",
+      "prompt": "czy byłby pan tak uprzejmy?",
+      "options": [
+        {
+          "en": "would you like to? (to a man)"
+        },
+        {
+          "en": "are you busy? (to a man)"
+        },
+        {
+          "en": "would you be so kind? (to a man; byłaby pani tak uprzejma: to a woman)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czy-bylby-pan"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-d1-e10",
+      "text": "Przepraszam, czy ___ mi pani pomóc?",
+      "meaning": {
+        "en": "Excuse me, could you help me? (to a woman)"
+      },
+      "gaps": [
+        [
+          "mogłaby"
+        ]
+      ],
+      "distractors": [
+        "mógłbyś",
+        "możesz"
+      ],
+      "items": [
+        "przepraszam",
+        "czy-moglaby-pani"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-d1-e11",
+      "acceptedAnswers": [
+        "czy pomożesz mi?"
+      ],
+      "meaning": {
+        "en": "will you help me?"
+      },
+      "items": [
+        "czy-pomozesz-mi"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-d1-e12",
+      "prompt": {
+        "en": "can you help me? (one friend)"
+      },
+      "acceptedAnswers": [
+        "czy możesz mi pomóc?",
+        "możesz mi pomóc?"
+      ],
+      "items": [
+        "czy-mozesz-mi-pomoc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-d1-e13",
+      "prompt": {
+        "en": "help"
+      },
+      "acceptedAnswers": [
+        "pomoc"
+      ],
+      "items": [
+        "pomoc-n"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-d1-e14",
+      "pairs": [
+        {
+          "polish": "czy pomożesz mi?",
+          "meaning": {
+            "en": "will you help me?"
+          }
+        },
+        {
+          "polish": "czy możesz mi pomóc?",
+          "meaning": {
+            "en": "can you help me?"
+          }
+        },
+        {
+          "polish": "czy mógłbyś mi pomóc?",
+          "meaning": {
+            "en": "could you help me?"
+          }
+        },
+        {
+          "polish": "pomoc",
+          "meaning": {
+            "en": "help"
+          }
+        },
+        {
+          "polish": "czy byłby pan tak uprzejmy?",
+          "meaning": {
+            "en": "would you be so kind?"
+          }
+        },
+        {
+          "polish": "chciałem cię prosić o pomoc",
+          "meaning": {
+            "en": "I wanted to ask you for help"
+          }
+        }
+      ],
+      "items": [
+        "czy-pomozesz-mi",
+        "czy-mozesz-mi-pomoc",
+        "czy-moglbys-mi-pomoc",
+        "pomoc-n",
+        "czy-bylby-pan",
+        "chcialem-cie-prosic"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-d1-e15",
+      "lines": [
+        "Walizka Ewy jest bardzo ciężka.",
+        "Na dworcu nie ma windy.",
+        "Ewa mówi do pana: przepraszam, czy mógłby mi pan pomóc?"
+      ],
+      "meaning": {
+        "en": "A heavy suitcase."
+      },
+      "statements": [
+        {
+          "text": "Walizka Ewy jest ciężka.",
+          "meaning": {
+            "en": "Ewa's suitcase is heavy."
+          },
+          "true": true
+        },
+        {
+          "text": "Na dworcu jest winda.",
+          "meaning": {
+            "en": "There is a lift at the station."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa prosi pana o pomoc.",
+          "meaning": {
+            "en": "Ewa asks a man for help."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ciezki",
+        "czy-moglaby-pani"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-d1-e16",
+      "lines": [
+        "Przepraszam, czy mógłbyś mi pomóc?",
+        "Tak, oczywiście.",
+        "Dziękuję! Ta walizka jest bardzo ciężka.",
+        "Nie ma za co."
+      ],
+      "meaning": {
+        "en": "Helping a friend."
+      },
+      "items": [
+        "przepraszam",
+        "czy-moglbys-mi-pomoc",
+        "tak",
+        "oczywiscie",
+        "dziekuje",
+        "ta",
+        "byc-jest",
+        "bardzo",
+        "ciezki",
+        "nie-ma-za-co"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-d1-e17",
+      "text": "czy byłby pan tak uprzejmy?",
+      "meaning": {
+        "en": "would you be so kind? (to a man)"
+      },
+      "distractors": [
+        "czy pan jest zajęty?",
+        "czy pan ma czas?"
+      ],
+      "items": [
+        "czy-bylby-pan"
+      ]
+    }
+  ]
+}

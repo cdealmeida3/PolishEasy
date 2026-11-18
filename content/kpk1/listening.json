@@ -8094,6 +8094,1064 @@
         13,
         14
       ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-157-1",
+      "track": 157,
+      "question": "Jakie jest pierwsze słowo?",
+      "meaning": {
+        "en": "What is the first word?"
+      },
+      "options": [
+        "Puszka.",
+        "Butelka.",
+        "Kostka."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l15-157-2",
+      "track": 157,
+      "question": "Jakie jest ostatnie słowo?",
+      "meaning": {
+        "en": "What is the last word? (a block)"
+      },
+      "acceptedAnswers": [
+        "kostka"
+      ],
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-158-1",
+      "track": 158,
+      "statement": "Mama ma prośbę.",
+      "meaning": {
+        "en": "Mum has a favour to ask."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-158-2",
+      "track": 158,
+      "question": "Dokąd on ma iść?",
+      "meaning": {
+        "en": "Where is he to go?"
+      },
+      "options": [
+        "Na zakupy.",
+        "Na pocztę.",
+        "Do szkoły."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-158-3",
+      "track": 158,
+      "statement": "On chce iść od razu.",
+      "meaning": {
+        "en": "He wants to go straight away."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-158-4",
+      "track": 158,
+      "statement": "W końcu on idzie.",
+      "meaning": {
+        "en": "In the end he goes."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-159-1",
+      "track": 159,
+      "question": "Jaki dżem on kupuje?",
+      "meaning": {
+        "en": "What jam does he buy?"
+      },
+      "options": [
+        "Malinowy.",
+        "Truskawkowy.",
+        "Pomarańczowy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l15-159-2",
+      "track": 159,
+      "question": "Ile plasterków szynki on kupuje?",
+      "meaning": {
+        "en": "How many slices of ham does he buy? (a number)"
+      },
+      "acceptedAnswers": [
+        "20",
+        "dwadzieścia"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-159-3",
+      "track": 159,
+      "statement": "On kupuje kilo białego sera.",
+      "meaning": {
+        "en": "He buys a kilo of curd cheese."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-159-4",
+      "track": 159,
+      "question": "Jaką herbatę on kupuje?",
+      "meaning": {
+        "en": "What tea does he buy?"
+      },
+      "options": [
+        "Czarną.",
+        "Zieloną.",
+        "Owocową."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l15-159-5",
+      "track": 159,
+      "question": "Ile puszek kukurydzy on kupuje?",
+      "meaning": {
+        "en": "How many cans of sweetcorn does he buy? (a number)"
+      },
+      "acceptedAnswers": [
+        "2",
+        "dwie"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-160-1",
+      "track": 160,
+      "question": "Ilu studentów idzie na piknik?",
+      "meaning": {
+        "en": "How many students are going to the picnic?"
+      },
+      "options": [
+        "Dużo.",
+        "Mało.",
+        "Kilka."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-160-2",
+      "track": 160,
+      "statement": "Na piknik idzie dużo nauczycieli.",
+      "meaning": {
+        "en": "A lot of teachers are going to the picnic."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-161-1",
+      "track": 161,
+      "statement": "Studenci potrzebują samochodu.",
+      "meaning": {
+        "en": "The students need a car."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-161-2",
+      "track": 161,
+      "question": "Kto oferuje swoje auto?",
+      "meaning": {
+        "en": "Who offers their car?"
+      },
+      "options": [
+        "Sekretarka.",
+        "Nauczyciel.",
+        "Student."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-161-3",
+      "track": 161,
+      "statement": "Dziewczyny boją się agresywnych kierowców.",
+      "meaning": {
+        "en": "The girls are afraid of aggressive drivers."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-161-4",
+      "track": 161,
+      "question": "Dlaczego jeden student nie ma czasu na piknik?",
+      "meaning": {
+        "en": "Why does one student have no time for the picnic?"
+      },
+      "options": [
+        "Bo uczy się historii.",
+        "Bo pracuje.",
+        "Bo jest chory."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-161-5",
+      "track": 161,
+      "question": "Co w końcu zamawia sekretarka?",
+      "meaning": {
+        "en": "What does the secretary order in the end?"
+      },
+      "options": [
+        "Taksówkę.",
+        "Autobus.",
+        "Pizzę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-162-1",
+      "track": 162,
+      "question": "Gdzie są osoby w pierwszym dialogu?",
+      "meaning": {
+        "en": "Where are the people in the first dialogue?"
+      },
+      "options": [
+        "Na targu.",
+        "Na poczcie.",
+        "W domu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-162-2",
+      "track": 162,
+      "statement": "W drugim dialogu ktoś pakuje się na piknik.",
+      "meaning": {
+        "en": "In the second dialogue someone is packing for a picnic."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-162-3",
+      "track": 162,
+      "question": "Co kupują w trzecim dialogu?",
+      "meaning": {
+        "en": "What are they buying in the third dialogue?"
+      },
+      "options": [
+        "Piwo, sok i wodę.",
+        "Warzywa.",
+        "Chipsy i colę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-163-1",
+      "track": 163,
+      "question": "Ile pieczarek kupują?",
+      "meaning": {
+        "en": "How many mushrooms do they buy?"
+      },
+      "options": [
+        "Kilogram.",
+        "Pół kilograma.",
+        "Dziesięć deka."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-163-2",
+      "track": 163,
+      "statement": "Pieczarek może być trochę więcej.",
+      "meaning": {
+        "en": "A few more mushrooms are all right."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l15-163-3",
+      "track": 163,
+      "question": "Ile kilogramów ziemniaków kupują?",
+      "meaning": {
+        "en": "How many kilograms of potatoes do they buy? (a number)"
+      },
+      "acceptedAnswers": [
+        "5",
+        "pięć"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-163-4",
+      "track": 163,
+      "statement": "Kupują też kiszone ogórki.",
+      "meaning": {
+        "en": "They buy pickles too."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-163-5",
+      "track": 163,
+      "question": "Co jest blisko?",
+      "meaning": {
+        "en": "What is near?"
+      },
+      "options": [
+        "Samochód.",
+        "Dom.",
+        "Sklep."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-164-1",
+      "track": 164,
+      "statement": "Ona jedzie na piknik za Kraków.",
+      "meaning": {
+        "en": "She is going to a picnic outside Kraków."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-164-2",
+      "track": 164,
+      "statement": "Jej plecak jest lekki.",
+      "meaning": {
+        "en": "Her rucksack is light."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l15-164-3",
+      "track": 164,
+      "question": "Ile paczek chipsów ona ma?",
+      "meaning": {
+        "en": "How many packets of crisps does she have? (a number)"
+      },
+      "acceptedAnswers": [
+        "5",
+        "pięć"
+      ],
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-164-4",
+      "track": 164,
+      "question": "Co ona ma w butelce?",
+      "meaning": {
+        "en": "What has she got in a bottle?"
+      },
+      "options": [
+        "Colę.",
+        "Wodę.",
+        "Sok."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-165-1",
+      "track": 165,
+      "question": "Ile puszek piwa na osobę chce najpierw kupić chłopak?",
+      "meaning": {
+        "en": "How many cans of beer per person does the boy want to buy at first?"
+      },
+      "options": [
+        "Dwie.",
+        "Sześć.",
+        "Dziesięć."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l15-165-2",
+      "track": 165,
+      "question": "Ile puszek jest w zgrzewce?",
+      "meaning": {
+        "en": "How many cans are there in a multipack? (a number)"
+      },
+      "acceptedAnswers": [
+        "6",
+        "sześć"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-165-3",
+      "track": 165,
+      "statement": "Kupują pięć kartonów soku pomarańczowego.",
+      "meaning": {
+        "en": "They buy five cartons of orange juice."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-165-4",
+      "track": 165,
+      "statement": "Kupują dziesięć butelek wody.",
+      "meaning": {
+        "en": "They buy ten bottles of water."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-165-5",
+      "track": 165,
+      "question": "Kto kupuje resztę?",
+      "meaning": {
+        "en": "Who buys the rest?"
+      },
+      "options": [
+        "Dziewczyny.",
+        "Nauczyciel.",
+        "Sekretarka."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-166-1",
+      "track": 166,
+      "question": "Jakie jest pierwsze słowo?",
+      "meaning": {
+        "en": "What is the first word?"
+      },
+      "options": [
+        "Znaczek.",
+        "Koperta.",
+        "List."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l15-166-2",
+      "track": 166,
+      "question": "Jakie jest słowo numer cztery?",
+      "meaning": {
+        "en": "What is word number four? (a parcel locker)"
+      },
+      "acceptedAnswers": [
+        "paczkomat"
+      ],
+      "lines": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-166-3",
+      "track": 166,
+      "question": "Jakie jest słowo numer dziewięć?",
+      "meaning": {
+        "en": "What is word number nine?"
+      },
+      "options": [
+        "Listonosz.",
+        "Kurier.",
+        "Koperta."
+      ],
+      "correctOption": 0,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-167-1",
+      "track": 167,
+      "question": "Co ona musi wysłać?",
+      "meaning": {
+        "en": "What must she send?"
+      },
+      "options": [
+        "Ważny list.",
+        "Paczkę.",
+        "Pocztówkę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-167-2",
+      "track": 167,
+      "statement": "On lubi kolejki.",
+      "meaning": {
+        "en": "He likes queues."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-167-3",
+      "track": 167,
+      "statement": "Ktoś inny idzie z nią na pocztę.",
+      "meaning": {
+        "en": "Someone else goes with her to the post office."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-168-1",
+      "track": 168,
+      "question": "Dokąd ona wysyła list?",
+      "meaning": {
+        "en": "Where is she sending the letter?"
+      },
+      "options": [
+        "Do Japonii.",
+        "Do Argentyny.",
+        "Do Polski."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-168-2",
+      "track": 168,
+      "statement": "Priorytet to bardzo szybki list.",
+      "meaning": {
+        "en": "A priority letter is a very fast letter."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-169-1",
+      "track": 169,
+      "statement": "On musi wysłać oficjalny list.",
+      "meaning": {
+        "en": "He must send an official letter."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-169-2",
+      "track": 169,
+      "question": "Jaki list on wysyła?",
+      "meaning": {
+        "en": "What kind of letter does he send?"
+      },
+      "options": [
+        "List polecony.",
+        "Pocztówkę.",
+        "Paczkę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l15-170-1",
+      "track": 170,
+      "question": "Ile znaczków ona chce?",
+      "meaning": {
+        "en": "How many stamps does she want? (a number)"
+      },
+      "acceptedAnswers": [
+        "6",
+        "sześć"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-170-2",
+      "track": 170,
+      "statement": "Kartka i pocztówka to nie to samo.",
+      "meaning": {
+        "en": "A card and a postcard are not the same."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-171-1",
+      "track": 171,
+      "question": "Dokąd on chce nadać paczkę?",
+      "meaning": {
+        "en": "Where does he want to send a parcel?"
+      },
+      "options": [
+        "Do Argentyny.",
+        "Do Japonii.",
+        "Do Krakowa."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-171-2",
+      "track": 171,
+      "question": "Od czego zależy cena?",
+      "meaning": {
+        "en": "What does the price depend on?"
+      },
+      "options": [
+        "Od wagi.",
+        "Od koloru.",
+        "Od miasta."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-172-1",
+      "track": 172,
+      "statement": "W pierwszym dialogu ktoś nie wie, jak zrobić zadanie.",
+      "meaning": {
+        "en": "In the first dialogue someone does not know how to do an exercise."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-172-2",
+      "track": 172,
+      "statement": "W drugim dialogu odpowiedź to tak.",
+      "meaning": {
+        "en": "In the second dialogue the answer is yes."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-172-3",
+      "track": 172,
+      "question": "Co ktoś robi w trzecim dialogu?",
+      "meaning": {
+        "en": "What is someone making in the third dialogue?"
+      },
+      "options": [
+        "Pierogi.",
+        "Zupę.",
+        "Kanapki."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-172-4",
+      "track": 172,
+      "question": "Co jest ciężkie w czwartym dialogu?",
+      "meaning": {
+        "en": "What is heavy in the fourth dialogue?"
+      },
+      "options": [
+        "Wózek.",
+        "Plecak.",
+        "Paczka."
+      ],
+      "correctOption": 0,
+      "lines": [
+        12,
+        14
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-172-5",
+      "track": 172,
+      "statement": "W piątym dialogu jest winda.",
+      "meaning": {
+        "en": "In the fifth dialogue there is a lift."
+      },
+      "answer": false,
+      "lines": [
+        15,
+        16
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-173-1",
+      "track": 173,
+      "statement": "On nie odbierał, bo miał spotkanie.",
+      "meaning": {
+        "en": "He did not answer, because he had a meeting."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-173-2",
+      "track": 173,
+      "statement": "On zaraz zadzwoni do koleżanek.",
+      "meaning": {
+        "en": "He will call the girls in a moment."
+      },
+      "answer": true,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-173-3",
+      "track": 173,
+      "statement": "On ma wszystkie numery.",
+      "meaning": {
+        "en": "He has all the numbers."
+      },
+      "answer": false,
+      "lines": [
+        11,
+        12
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-174-1",
+      "track": 174,
+      "statement": "On dzwonił do nich wszystkich.",
+      "meaning": {
+        "en": "He called all of them."
+      },
+      "answer": true,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-174-2",
+      "track": 174,
+      "question": "Co on robi?",
+      "meaning": {
+        "en": "What is he doing?"
+      },
+      "options": [
+        "Denerwuje się.",
+        "Śpi.",
+        "Je obiad."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-175-1",
+      "track": 175,
+      "question": "Czego ona szuka?",
+      "meaning": {
+        "en": "What is she looking for?"
+      },
+      "options": [
+        "Telefonu.",
+        "Torby.",
+        "Książki."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-175-2",
+      "track": 175,
+      "question": "Gdzie leży telefon?",
+      "meaning": {
+        "en": "Where is the phone?"
+      },
+      "options": [
+        "Pod książką.",
+        "Na stole.",
+        "W torbie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-175-3",
+      "track": 175,
+      "statement": "Ktoś już zjadł ciastka.",
+      "meaning": {
+        "en": "Someone has already eaten the biscuits."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l15-176-1",
+      "track": 176,
+      "question": "Kogo ona też nie widzi?",
+      "meaning": {
+        "en": "Whom else can she not see?"
+      },
+      "options": [
+        "Ich.",
+        "Jego.",
+        "Nas."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l15-176-2",
+      "track": 176,
+      "statement": "Kolega jest tu teraz.",
+      "meaning": {
+        "en": "The friend is here now."
+      },
+      "answer": false,
+      "lines": [
+        6,
+        6
+      ]
     }
   ]
 }

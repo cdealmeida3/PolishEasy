@@ -295,6 +295,12 @@
             "meaning": "How about a cream horn?"
         },
         {
+            "text": "A nauczycieli?"
+        },
+        {
+            "text": "A nowych książek?"
+        },
+        {
             "text": "A o której wychodzisz z domu?"
         },
         {
@@ -360,6 +366,9 @@
         {
             "text": "A to? Czy to jest ołówek?",
             "meaning": "And this? Is it a pencil?"
+        },
+        {
+            "text": "A tort?"
         },
         {
             "text": "A tu mój brat jest na wakacjach."
@@ -453,6 +462,13 @@
             "meaning": "Adam goes to the swimming pool."
         },
         {
+            "text": "Adam dzwoni do Ewy, ale ona nie odbiera."
+        },
+        {
+            "text": "Adam dzwoni do Ewy.",
+            "meaning": "Adam calls Ewa."
+        },
+        {
             "text": "Adam i Ewa idą na quiz.",
             "meaning": "Adam and Ewa are going to the quiz."
         },
@@ -469,6 +485,10 @@
         },
         {
             "text": "Adam i Ewa mają wolne popołudnie."
+        },
+        {
+            "text": "Adam i Ewa potrzebują samochodu.",
+            "meaning": "Adam and Ewa need a car."
         },
         {
             "text": "Adam i Ewa są tutaj",
@@ -596,7 +616,8 @@
             "meaning": "Adam is from Poland, he is Polish, and Ewa is from England, she is English."
         },
         {
-            "text": "Adam jest zajęty."
+            "text": "Adam jest zajęty.",
+            "meaning": "Adam is busy."
         },
         {
             "text": "Adam jeszcze je śniadanie.",
@@ -605,6 +626,13 @@
         {
             "text": "Adam jeździ na rowerze.",
             "meaning": "Adam rides a bike."
+        },
+        {
+            "text": "Adam kupuje dwie zgrzewki wody: jedna to woda gazowana, a druga niegazowana."
+        },
+        {
+            "text": "Adam kupuje jedną zgrzewkę wody.",
+            "meaning": "Adam buys one pack of water."
         },
         {
             "text": "Adam kupuje kanapkę.",
@@ -625,6 +653,10 @@
         {
             "text": "Adam lubi kawę z mlekiem.",
             "meaning": "Adam likes coffee with milk."
+        },
+        {
+            "text": "Adam lubi kolejki.",
+            "meaning": "Adam likes queues."
         },
         {
             "text": "Adam lubi piwo.",
@@ -692,6 +724,13 @@
             "meaning": "Adam has to study for an exam."
         },
         {
+            "text": "Adam musi uczyć się historii, a Tom słucha muzyki i nie słyszy pytania."
+        },
+        {
+            "text": "Adam myje naczynia.",
+            "meaning": "Adam does the washing-up."
+        },
+        {
             "text": "Adam myśli, że cielęcina jest niedobra.",
             "meaning": "Adam thinks the veal is not good."
         },
@@ -705,6 +744,20 @@
         {
             "text": "Adam mówi trochę po japońsku.",
             "meaning": "Adam speaks a little Japanese."
+        },
+        {
+            "text": "Adam mówi, że jest zajęty.",
+            "meaning": "Adam says he is busy."
+        },
+        {
+            "text": "Adam mówi: jest tam, pod książką!"
+        },
+        {
+            "text": "Adam mówi: wolałbym nie, jestem bardzo zajęty."
+        },
+        {
+            "text": "Adam nie idzie na zakupy.",
+            "meaning": "Adam does not go shopping."
         },
         {
             "text": "Adam nie jest kawalerem, jest żonaty.",
@@ -875,8 +928,14 @@
             "text": "Adam zaraz idzie na legendy."
         },
         {
+            "text": "Adam! Mam do ciebie prośbę."
+        },
+        {
             "text": "Adam.",
             "meaning": "My first name is Adam."
+        },
+        {
+            "text": "Adam: Przepraszam, ale jestem bardzo zajęty."
         },
         {
             "text": "Adres to ulica Spacerowa siedem.",
@@ -938,6 +997,9 @@
             "text": "Architekturą i historią."
         },
         {
+            "text": "Autobus."
+        },
+        {
             "text": "Autobusem."
         },
         {
@@ -956,6 +1018,13 @@
         },
         {
             "text": "Bankomat i kantor."
+        },
+        {
+            "text": "Bardzo boję się kotów.",
+            "meaning": "I am very afraid of cats."
+        },
+        {
+            "text": "Bardzo ciężki!"
         },
         {
             "text": "Bardzo dobrym!"
@@ -1070,6 +1139,9 @@
             "text": "Bo jej mama jest z Polski."
         },
         {
+            "text": "Bo jest chory."
+        },
+        {
             "text": "Bo jest duża."
         },
         {
@@ -1135,6 +1207,12 @@
             "text": "Bo pisze artykuł."
         },
         {
+            "text": "Bo pracuje."
+        },
+        {
+            "text": "Bo uczy się historii."
+        },
+        {
             "text": "Brat chodzi do szkoły.",
             "meaning": "The brother goes to school."
         },
@@ -1167,6 +1245,9 @@
         },
         {
             "text": "Budzik dzwoni o szóstej."
+        },
+        {
+            "text": "Butelka."
         },
         {
             "text": "Bułkę z dżemem."
@@ -1275,6 +1356,9 @@
         {
             "text": "Chcę, ale nie mogę. Muszę uczyć się do egzaminu.",
             "meaning": "I want to, but I have to study for an exam."
+        },
+        {
+            "text": "Chipsy i colę."
         },
         {
             "text": "Chipsy są słodkie.",
@@ -1402,6 +1486,9 @@
             "meaning": "What does the girl want to eat?"
         },
         {
+            "text": "Co dla pani?"
+        },
+        {
             "text": "Co dziewczyna może kupić do picia?",
             "meaning": "What can the girl buy to drink?"
         },
@@ -1444,6 +1531,14 @@
         {
             "text": "Co je na śniadanie?",
             "meaning": "What does he have for breakfast?"
+        },
+        {
+            "text": "Co jest blisko?",
+            "meaning": "What is near?"
+        },
+        {
+            "text": "Co jest ciężkie w czwartym dialogu?",
+            "meaning": "What is heavy in the fourth dialogue?"
         },
         {
             "text": "Co jest dziś na kolację?",
@@ -1496,8 +1591,15 @@
             "meaning": "What does Mami's dad collect?"
         },
         {
+            "text": "Co ktoś robi w trzecim dialogu?",
+            "meaning": "What is someone making in the third dialogue?"
+        },
+        {
             "text": "Co kupiła Angela?",
             "meaning": "What did Angela buy?"
+        },
+        {
+            "text": "Co kupujemy na piknik?"
         },
         {
             "text": "Co kupujemy?",
@@ -1509,6 +1611,10 @@
         },
         {
             "text": "Co kupujesz?"
+        },
+        {
+            "text": "Co kupują w trzecim dialogu?",
+            "meaning": "What are they buying in the third dialogue?"
         },
         {
             "text": "Co lubi jeść Mami?",
@@ -1524,6 +1630,10 @@
         },
         {
             "text": "Co lubisz jeść?"
+        },
+        {
+            "text": "Co masz w torbie? Paczkę chusteczek.",
+            "meaning": "What have you got in your bag? A packet of tissues."
         },
         {
             "text": "Co miesiąc."
@@ -1634,6 +1744,18 @@
         {
             "text": "Co on robi w weekendy?",
             "meaning": "What does he do at weekends?"
+        },
+        {
+            "text": "Co on robi?",
+            "meaning": "What is he doing?"
+        },
+        {
+            "text": "Co ona ma w butelce?",
+            "meaning": "What has she got in a bottle?"
+        },
+        {
+            "text": "Co ona musi wysłać?",
+            "meaning": "What must she send?"
         },
         {
             "text": "Co oni robią w weekend?",
@@ -1838,6 +1960,10 @@
             "text": "Co u ciebie?"
         },
         {
+            "text": "Co w końcu zamawia sekretarka?",
+            "meaning": "What does the secretary order in the end?"
+        },
+        {
             "text": "Co wie o pierwszej żonie?",
             "meaning": "What does he know about his first wife?"
         },
@@ -1866,6 +1992,9 @@
             "text": "Codziennie."
         },
         {
+            "text": "Colę."
+        },
+        {
             "text": "Coś jeszcze?"
         },
         {
@@ -1884,6 +2013,10 @@
         {
             "text": "Czego on szuka?",
             "meaning": "What is he looking for?"
+        },
+        {
+            "text": "Czego ona szuka?",
+            "meaning": "What is she looking for?"
         },
         {
             "text": "Czekam na SMS."
@@ -1953,6 +2086,10 @@
         {
             "text": "Cześć!",
             "meaning": "Hi!"
+        },
+        {
+            "text": "Cześć! Chcę nadać paczkę.",
+            "meaning": "Hi! I want to send a parcel."
         },
         {
             "text": "Cześć! Co robisz?",
@@ -2153,6 +2290,10 @@
             "meaning": "Do you have a brother? (one friend)"
         },
         {
+            "text": "Czy możesz umyć naczynia? Przykro mi, ale nie. Nie mam czasu.",
+            "meaning": "Can you do the washing-up? I'm sorry, but no. I don't have time."
+        },
+        {
             "text": "Czy mówicie po polsku? Tak, mówimy.",
             "meaning": "Do you speak Polish? (several people) Yes, we do."
         },
@@ -2167,6 +2308,10 @@
         {
             "text": "Czy pani mówi po polsku?",
             "meaning": "Do you speak Polish? (to a woman, formal)"
+        },
+        {
+            "text": "Czy pomożesz mi?",
+            "meaning": "Will you help me?"
         },
         {
             "text": "Czy są ciastka? Tak, są.",
@@ -2328,6 +2473,10 @@
             "meaning": "We often walk around Kraków."
         },
         {
+            "text": "Często dzwonię do niej.",
+            "meaning": "I often call her."
+        },
+        {
             "text": "Często gotuje."
         },
         {
@@ -2354,6 +2503,9 @@
         },
         {
             "text": "Daniel"
+        },
+        {
+            "text": "Denerwuje się."
         },
         {
             "text": "Deser owocowy z bitą śmietaną."
@@ -2417,12 +2569,20 @@
             "meaning": "Why is the second dictionary bad?"
         },
         {
+            "text": "Dlaczego jeden student nie ma czasu na piknik?",
+            "meaning": "Why does one student have no time for the picnic?"
+        },
+        {
             "text": "Dlaczego koleżanki chcą iść do klubu?",
             "meaning": "Why do the friends want to go to a club?"
         },
         {
             "text": "Dlaczego musisz pracować?",
             "meaning": "Why do you have to work?"
+        },
+        {
+            "text": "Dlaczego nie dzwonisz do nas?",
+            "meaning": "Why don't you call us?"
         },
         {
             "text": "Dlaczego nie ma Karoliny?",
@@ -2476,7 +2636,23 @@
             "text": "Dlaczego?"
         },
         {
+            "text": "Do Argentyny."
+        },
+        {
+            "text": "Do Japonii."
+        },
+        {
+            "text": "Do Krakowa.",
+            "meaning": "To Kraków."
+        },
+        {
             "text": "Do Nowej Huty."
+        },
+        {
+            "text": "Do Polski."
+        },
+        {
+            "text": "Do Polski?"
         },
         {
             "text": "Do Warszawy zawsze jeździmy pociągiem.",
@@ -2529,6 +2705,9 @@
             "text": "Do pubu."
         },
         {
+            "text": "Do szkoły."
+        },
+        {
             "text": "Do teatru."
         },
         {
@@ -2571,6 +2750,9 @@
             "meaning": "A good camera can cost a thousand złoty."
         },
         {
+            "text": "Dobrze"
+        },
+        {
             "text": "Dobrze!",
             "meaning": "All right! See you!"
         },
@@ -2603,6 +2785,9 @@
             "meaning": "All right! See you!"
         },
         {
+            "text": "Dobrze, pomogę."
+        },
+        {
             "text": "Dobrze, proszę kanapkę i sok."
         },
         {
@@ -2624,6 +2809,10 @@
         {
             "text": "Dobrze, w sobotę. Zaczyna się o dwudziestej.",
             "meaning": "All right, on Saturday. It starts at 8 p.m."
+        },
+        {
+            "text": "Dobrze. Coś jeszcze?",
+            "meaning": "All right. Anything else?"
         },
         {
             "text": "Dobrze. Płacę gotówką.",
@@ -2654,8 +2843,20 @@
             "meaning": "Where does the speaker invite the man?"
         },
         {
+            "text": "Dokąd on chce nadać paczkę?",
+            "meaning": "Where does he want to send a parcel?"
+        },
+        {
+            "text": "Dokąd on ma iść?",
+            "meaning": "Where is he to go?"
+        },
+        {
             "text": "Dokąd ona jedzie jutro? „Do Nowej …”",
             "meaning": "Where is she going tomorrow? \"To Nowa …\""
+        },
+        {
+            "text": "Dokąd ona wysyła list?",
+            "meaning": "Where is she sending the letter?"
         },
         {
             "text": "Dokąd ona zwykle chodzi?",
@@ -2676,6 +2877,9 @@
         {
             "text": "Dokąd zaraz idzie druga dziewczyna?",
             "meaning": "Where is the other girl going in a moment?"
+        },
+        {
+            "text": "Dom."
         },
         {
             "text": "Drogi."
@@ -2735,6 +2939,9 @@
         },
         {
             "text": "Dużo czytała w internecie."
+        },
+        {
+            "text": "Dużo."
         },
         {
             "text": "Duży, mały i zły."
@@ -2847,6 +3054,16 @@
             "text": "Dziesiąta."
         },
         {
+            "text": "Dziesięć butelek?"
+        },
+        {
+            "text": "Dziesięć deka to sto gramów.",
+            "meaning": "Ten decagrams is a hundred grams."
+        },
+        {
+            "text": "Dziesięć deka."
+        },
+        {
             "text": "Dziesięć minus cztery równa się pięć.",
             "meaning": "Ten minus four equals five."
         },
@@ -2857,6 +3074,9 @@
         {
             "text": "Dziesięć plus cztery równa się sześć.",
             "meaning": "Ten plus four equals six."
+        },
+        {
+            "text": "Dziesięć."
         },
         {
             "text": "Dziewczyna chce jeszcze ciemny chleb.",
@@ -2911,12 +3131,19 @@
             "meaning": "The girl is practising numerals."
         },
         {
+            "text": "Dziewczyny boją się agresywnych kierowców.",
+            "meaning": "The girls are afraid of aggressive drivers."
+        },
+        {
             "text": "Dziewczyny kupują coś na kolację.",
             "meaning": "The girls are buying something for supper."
         },
         {
             "text": "Dziewczyny mają plany na jutro.",
             "meaning": "The girls have plans for tomorrow."
+        },
+        {
+            "text": "Dziewczyny."
         },
         {
             "text": "Dziewiąta."
@@ -2934,6 +3161,10 @@
         {
             "text": "Dzień dobry!",
             "meaning": "Hello!"
+        },
+        {
+            "text": "Dzień dobry! Chciałem nadać paczkę.",
+            "meaning": "Hello! I would like to send a parcel."
         },
         {
             "text": "Dzień dobry! Co pan robi?"
@@ -3017,6 +3248,13 @@
             "meaning": "Hello! Come in."
         },
         {
+            "text": "Dzień dobry, chciałem nadać paczkę.",
+            "meaning": "Hello! I would like to send a parcel."
+        },
+        {
+            "text": "Dzień dobry, co dla pana?"
+        },
+        {
             "text": "Dzień dobry, mam rezerwację.",
             "meaning": "Hello, I have a booking."
         },
@@ -3033,11 +3271,15 @@
             "meaning": "Good morning! A newspaper, please."
         },
         {
+            "text": "Dzień dobry, proszę znaczek na pocztówkę."
+        },
+        {
             "text": "Dzień dobry, przepraszam, jak dojść do pubu?",
             "meaning": "Hello! Excuse me, how do I get to the pub?"
         },
         {
-            "text": "Dzień dobry, słucham?"
+            "text": "Dzień dobry, słucham?",
+            "meaning": "Hello, how can I help?"
         },
         {
             "text": "Dzień dobry."
@@ -3105,6 +3347,10 @@
             "meaning": "Thanks! And where is the coffee?"
         },
         {
+            "text": "Dzięki! Cześć!",
+            "meaning": "Thanks! Bye!"
+        },
+        {
             "text": "Dzięki! Ile to jest: dwa plus trzy?",
             "meaning": "Thanks! How much is two plus three?"
         },
@@ -3151,11 +3397,18 @@
             "meaning": "Thank you! And where is the coffee?"
         },
         {
+            "text": "Dziękuję! Ta walizka jest bardzo ciężka."
+        },
+        {
             "text": "Dziękuję, ale nie lubię kina."
         },
         {
             "text": "Dziękuję, do widzenia!",
             "meaning": "Thank you! Goodbye!"
+        },
+        {
+            "text": "Dziękuję, do widzenia!",
+            "meaning": "Thank you, goodbye!"
         },
         {
             "text": "Dziękuję, nawzajem! Do widzenia.",
@@ -3335,8 +3588,16 @@
             "meaning": "Ewa is bored today."
         },
         {
+            "text": "Ewa dzwoni do Adama.",
+            "meaning": "Ewa calls Adam."
+        },
+        {
             "text": "Ewa gotuje polską zupę.",
             "meaning": "Ewa is cooking a Polish soup."
+        },
+        {
+            "text": "Ewa i Adam boją się kierowców.",
+            "meaning": "Ewa and Adam are afraid of drivers."
         },
         {
             "text": "Ewa i Adam często chodzą po Krakowie i fotografują."
@@ -3367,6 +3628,27 @@
             "meaning": "Ewa and Adam are parents."
         },
         {
+            "text": "Ewa i Kasia jeżdżą samochodem.",
+            "meaning": "Ewa and Kasia drive."
+        },
+        {
+            "text": "Ewa i Kasia kupują ziemniaki.",
+            "meaning": "Ewa and Kasia buy potatoes."
+        },
+        {
+            "text": "Ewa i Kasia nie jeżdżą samochodem, bo boją się kierowców."
+        },
+        {
+            "text": "Ewa i Kasia robią zakupy na piknik.",
+            "meaning": "Ewa and Kasia are shopping for the picnic."
+        },
+        {
+            "text": "Ewa i Kasia są na targu."
+        },
+        {
+            "text": "Ewa idzie na pocztę."
+        },
+        {
             "text": "Ewa interesuje się fotografią.",
             "meaning": "Ewa is interested in photography."
         },
@@ -3389,6 +3671,10 @@
         {
             "text": "Ewa je ciasto.",
             "meaning": "Ewa is eating cake."
+        },
+        {
+            "text": "Ewa je dużo owoców.",
+            "meaning": "Ewa eats a lot of fruit."
         },
         {
             "text": "Ewa je jabłko.",
@@ -3475,6 +3761,9 @@
             "meaning": "Ewa is old."
         },
         {
+            "text": "Ewa jest w sklepie."
+        },
+        {
             "text": "Ewa jest w środku.",
             "meaning": "Ewa is inside."
         },
@@ -3501,12 +3790,28 @@
             "meaning": "Ewa bought a jumper."
         },
         {
+            "text": "Ewa kupuje biały i żółty ser.",
+            "meaning": "Ewa buys curd cheese and hard cheese."
+        },
+        {
             "text": "Ewa kupuje bilet na autobus.",
             "meaning": "Ewa buys a bus ticket."
         },
         {
             "text": "Ewa kupuje bilet normalny.",
             "meaning": "Ewa buys a full-price ticket."
+        },
+        {
+            "text": "Ewa kupuje butelkę wody.",
+            "meaning": "Ewa buys a bottle of water."
+        },
+        {
+            "text": "Ewa kupuje dwa znaczki.",
+            "meaning": "Ewa buys two stamps."
+        },
+        {
+            "text": "Ewa kupuje kostkę masła.",
+            "meaning": "Ewa buys a block of butter."
         },
         {
             "text": "Ewa kupuje magazyn.",
@@ -3523,11 +3828,23 @@
             "meaning": "Ewa is buying fish."
         },
         {
+            "text": "Ewa kupuje sok pomarańczowy.",
+            "meaning": "Ewa buys orange juice."
+        },
+        {
+            "text": "Ewa kupuje słoik dżemu.",
+            "meaning": "Ewa buys a jar of jam."
+        },
+        {
             "text": "Ewa kupuje tani aparat i kolorowy magazyn."
         },
         {
             "text": "Ewa kupuje wino.",
             "meaning": "Ewa is buying wine."
+        },
+        {
+            "text": "Ewa kupuje zieloną herbatę.",
+            "meaning": "Ewa buys green tea."
         },
         {
             "text": "Ewa lubi czytać.",
@@ -3544,6 +3861,10 @@
         {
             "text": "Ewa lubi kiwi.",
             "meaning": "Ewa likes kiwi fruit."
+        },
+        {
+            "text": "Ewa lubi koty.",
+            "meaning": "Ewa likes cats."
         },
         {
             "text": "Ewa lubi malować i słuchać muzyki."
@@ -3575,6 +3896,10 @@
             "text": "Ewa ma ciemny chleb i masło."
         },
         {
+            "text": "Ewa ma dużo książek.",
+            "meaning": "Ewa has a lot of books."
+        },
+        {
             "text": "Ewa ma dużo pieniędzy.",
             "meaning": "Ewa has a lot of money."
         },
@@ -3585,6 +3910,10 @@
         {
             "text": "Ewa ma dwie papryki.",
             "meaning": "Ewa has two peppers."
+        },
+        {
+            "text": "Ewa ma dwie puszki orzeszków.",
+            "meaning": "Ewa has two cans of peanuts."
         },
         {
             "text": "Ewa ma jasny chleb.",
@@ -3601,6 +3930,10 @@
         {
             "text": "Ewa ma monety.",
             "meaning": "Ewa has coins."
+        },
+        {
+            "text": "Ewa ma pocztówkę.",
+            "meaning": "Ewa has a postcard."
         },
         {
             "text": "Ewa ma rezerwację.",
@@ -3629,6 +3962,10 @@
             "meaning": "Ewa has invitations."
         },
         {
+            "text": "Ewa ma znaczki.",
+            "meaning": "Ewa has stamps."
+        },
+        {
             "text": "Ewa mieszka w Krakowie.",
             "meaning": "Ewa lives in Kraków."
         },
@@ -3648,12 +3985,25 @@
             "meaning": "Ewa has to study."
         },
         {
+            "text": "Ewa musi wysłać list.",
+            "meaning": "Ewa must send a letter."
+        },
+        {
+            "text": "Ewa musi wysłać ważny list."
+        },
+        {
+            "text": "Ewa mówi do pana: przepraszam, czy mógłby mi pan pomóc?"
+        },
+        {
             "text": "Ewa nie była na meczu.",
             "meaning": "Ewa wasn't at the match."
         },
         {
             "text": "Ewa nie chodzi na siłownię.",
             "meaning": "Ewa doesn't go to the gym."
+        },
+        {
+            "text": "Ewa nie lubi kotów, ale ma dużo książek."
         },
         {
             "text": "Ewa nie ma aparatu.",
@@ -3671,7 +4021,14 @@
             "meaning": "Ewa doesn't drink milk."
         },
         {
+            "text": "Ewa nie słyszała telefonu.",
+            "meaning": "Ewa did not hear the phone."
+        },
+        {
             "text": "Ewa nie umie tańczyć."
+        },
+        {
+            "text": "Ewa pakuje się na piknik."
         },
         {
             "text": "Ewa pije białe wino.",
@@ -3702,6 +4059,27 @@
         {
             "text": "Ewa pisze SMS.",
             "meaning": "Ewa is writing a text message."
+        },
+        {
+            "text": "Ewa prosi Adama o pomoc.",
+            "meaning": "Ewa asks Adam for help."
+        },
+        {
+            "text": "Ewa prosi pana o pomoc.",
+            "meaning": "Ewa asks a man for help."
+        },
+        {
+            "text": "Ewa pyta: kupujemy dwa kartony soku? Kasia mówi: za mało! Pięć kartonów!"
+        },
+        {
+            "text": "Ewa robi zakupy."
+        },
+        {
+            "text": "Ewa szuka telefonu wszędzie."
+        },
+        {
+            "text": "Ewa szuka telefonu.",
+            "meaning": "Ewa is looking for her phone."
         },
         {
             "text": "Ewa też pracuje w biurze!"
@@ -3754,6 +4132,10 @@
             "meaning": "Ewa won the quiz."
         },
         {
+            "text": "Ewa wysyła list polecony.",
+            "meaning": "Ewa sends a registered letter."
+        },
+        {
             "text": "Ewa zamawia barszcz.",
             "meaning": "Ewa orders beetroot soup."
         },
@@ -3772,6 +4154,12 @@
         {
             "text": "Ewa, gdzie ty jesteś?",
             "meaning": "Ewa, where are you?"
+        },
+        {
+            "text": "Ewa: Adam, czy możesz umyć naczynia?"
+        },
+        {
+            "text": "Ewa: Tak? A co robisz? Adam: Nie mam pojęcia!"
         },
         {
             "text": "Fajny długopis! Jaki to kolor? Czerwony?",
@@ -3868,6 +4256,10 @@
             "text": "Gdzie byłeś wczoraj?"
         },
         {
+            "text": "Gdzie jest Adam? Dzwonię do niego. A Ewa? Dzwonię też do niej.",
+            "meaning": "Where is Adam? I am calling him. And Ewa? I am calling her too."
+        },
+        {
             "text": "Gdzie jest Ewa? Czekamy na nią? A Adam? Czekamy też na niego?",
             "meaning": "Where is Ewa? Are we waiting for her? And Adam? Are we waiting for him too?"
         },
@@ -3910,6 +4302,10 @@
         {
             "text": "Gdzie jest…?",
             "meaning": "Where is…?"
+        },
+        {
+            "text": "Gdzie leży telefon?",
+            "meaning": "Where is the phone?"
         },
         {
             "text": "Gdzie mieszka osoba z Anglii?",
@@ -3988,6 +4384,10 @@
         {
             "text": "Gdzie są chipsy?",
             "meaning": "Where are the crisps?"
+        },
+        {
+            "text": "Gdzie są osoby w pierwszym dialogu?",
+            "meaning": "Where are the people in the first dialogue?"
         },
         {
             "text": "Gdzie są ryby?"
@@ -4158,6 +4558,9 @@
             "text": "I drożdżówka na śniadanie."
         },
         {
+            "text": "I jeszcze kopertę."
+        },
+        {
             "text": "I surowe warzywa."
         },
         {
@@ -4175,10 +4578,20 @@
             "meaning": "Their son is five."
         },
         {
+            "text": "Ich."
+        },
+        {
             "text": "Idealne miejsce!"
         },
         {
             "text": "Idzie do kina."
+        },
+        {
+            "text": "Idzie dużo studentów i kilka nauczycielek."
+        },
+        {
+            "text": "Idzie kilka nauczycielek.",
+            "meaning": "A few (women) teachers are going."
         },
         {
             "text": "Idzie na lunch."
@@ -4227,8 +4640,15 @@
             "text": "Idę na koncert. Chcesz iść?"
         },
         {
+            "text": "Ile butelek wody kupujemy?"
+        },
+        {
             "text": "Ile godzin spędziła w galerii? „… godzin”",
             "meaning": "How many hours did she spend at the mall? \"… hours\" (a few)"
+        },
+        {
+            "text": "Ile kilogramów ziemniaków kupują?",
+            "meaning": "How many kilograms of potatoes do they buy? (a number)"
         },
         {
             "text": "Ile koktajli truskawkowych zamawiają?",
@@ -4317,12 +4737,39 @@
             "meaning": "How many invitations does she have?"
         },
         {
+            "text": "Ile osób idzie na piknik?"
+        },
+        {
+            "text": "Ile paczek chipsów ona ma?",
+            "meaning": "How many packets of crisps does she have? (a number)"
+        },
+        {
+            "text": "Ile pieczarek kupują?",
+            "meaning": "How many mushrooms do they buy?"
+        },
+        {
             "text": "Ile piw zamawiają?",
             "meaning": "How many beers do they order? (they say: … razy piwo)"
         },
         {
+            "text": "Ile plasterków szynki on kupuje?",
+            "meaning": "How many slices of ham does he buy? (a number)"
+        },
+        {
             "text": "Ile pomidorów chce klientka?",
             "meaning": "How many tomatoes does the customer want?"
+        },
+        {
+            "text": "Ile puszek jest w zgrzewce?",
+            "meaning": "How many cans are there in a multipack? (a number)"
+        },
+        {
+            "text": "Ile puszek kukurydzy on kupuje?",
+            "meaning": "How many cans of sweetcorn does he buy? (a number)"
+        },
+        {
+            "text": "Ile puszek piwa na osobę chce najpierw kupić chłopak?",
+            "meaning": "How many cans of beer per person does the boy want to buy at first?"
         },
         {
             "text": "Ile razy sernik?",
@@ -4333,8 +4780,16 @@
             "meaning": "How many towers does Kościół Mariacki have? (a number)"
         },
         {
+            "text": "Ile znaczków ona chce?",
+            "meaning": "How many stamps does she want? (a number)"
+        },
+        {
             "text": "Ile złotych masz, kiedy dobrze typujesz trzy numery?",
             "meaning": "How many złoty do you get when you pick three numbers right?"
+        },
+        {
+            "text": "Ilu studentów idzie na piknik?",
+            "meaning": "How many students are going to the picnic?"
         },
         {
             "text": "Imię",
@@ -4677,6 +5132,10 @@
             "meaning": "Which dessert does the first woman order?"
         },
         {
+            "text": "Jaki dżem on kupuje?",
+            "meaning": "What jam does he buy?"
+        },
+        {
             "text": "Jaki jest Adam?",
             "meaning": "What is Adam like?"
         },
@@ -4766,6 +5225,10 @@
             "meaning": "Which number do you hear?"
         },
         {
+            "text": "Jaki list on wysyła?",
+            "meaning": "What kind of letter does he send?"
+        },
+        {
             "text": "Jaki ma pan numer telefonu?",
             "meaning": "What is your phone number?"
         },
@@ -4816,6 +5279,10 @@
             "meaning": "What is the last word?"
         },
         {
+            "text": "Jakie jest ostatnie słowo?",
+            "meaning": "What is the last word? (a block)"
+        },
+        {
             "text": "Jakie jest pierwsze hobby?",
             "meaning": "What is the first hobby?"
         },
@@ -4826,6 +5293,10 @@
         {
             "text": "Jakie jest słowo numer cztery?",
             "meaning": "What is word number four? (a crossroads)"
+        },
+        {
+            "text": "Jakie jest słowo numer cztery?",
+            "meaning": "What is word number four? (a parcel locker)"
         },
         {
             "text": "Jakie jest słowo numer dwanaście?",
@@ -4910,6 +5381,10 @@
             "meaning": "What kind of tea do you like? Green."
         },
         {
+            "text": "Jaką herbatę on kupuje?",
+            "meaning": "What tea does he buy?"
+        },
+        {
             "text": "Jaką kawę chce Mami?",
             "meaning": "What coffee does Mami want?"
         },
@@ -4982,6 +5457,12 @@
         },
         {
             "text": "Jazz."
+        },
+        {
+            "text": "Je dużo jabłek i owoców."
+        },
+        {
+            "text": "Je obiad."
         },
         {
             "text": "Jeden klient nie chce zupy.",
@@ -5065,6 +5546,9 @@
             "text": "Jego żoną."
         },
         {
+            "text": "Jego."
+        },
+        {
             "text": "Jej babcia jeszcze żyje.",
             "meaning": "Her grandmother is still alive."
         },
@@ -5083,6 +5567,13 @@
         {
             "text": "Jej ojciec jest Anglikiem.",
             "meaning": "Her father is English."
+        },
+        {
+            "text": "Jej plecak jest bardzo ciężki: trzy paczki paluszków, butelka coli i dwie puszki orzeszków."
+        },
+        {
+            "text": "Jej plecak jest lekki.",
+            "meaning": "Her rucksack is light."
         },
         {
             "text": "Jej ulubiona potrawa to ryba i frytki.",
@@ -5198,7 +5689,13 @@
             "text": "Jest też kasza i surówka."
         },
         {
+            "text": "Jest też kostka lodu do coli."
+        },
+        {
             "text": "Jest też piekarnia i fryzjer."
+        },
+        {
+            "text": "Jest też sałatka jarzynowa, ale nie ma jabłek."
         },
         {
             "text": "Jest też synem."
@@ -5375,6 +5872,9 @@
             "meaning": "You eat cheese."
         },
         {
+            "text": "Jeszcze poproszę kostkę masła."
+        },
+        {
             "text": "Jeść śniadanie."
         },
         {
@@ -5436,6 +5936,9 @@
             "text": "Kalafior."
         },
         {
+            "text": "Kanapki."
+        },
+        {
             "text": "Karolina interesuje się fotografią.",
             "meaning": "Karolina is interested in photography."
         },
@@ -5455,6 +5958,10 @@
             "meaning": "The cash card is at home."
         },
         {
+            "text": "Kartka i pocztówka to nie to samo.",
+            "meaning": "A card and a postcard are not the same."
+        },
+        {
             "text": "Kartą, proszę.",
             "meaning": "I'll pay by card."
         },
@@ -5464,6 +5971,21 @@
         },
         {
             "text": "Kartę."
+        },
+        {
+            "text": "Kasia chce dwa kartony soku.",
+            "meaning": "Kasia wants two cartons of juice."
+        },
+        {
+            "text": "Kasia chce kiszone ogórki.",
+            "meaning": "Kasia wants pickles."
+        },
+        {
+            "text": "Kasia chce pięć kartonów soku.",
+            "meaning": "Kasia wants five cartons of juice."
+        },
+        {
+            "text": "Kasia chce też kiszone ogórki. Pół kilograma wystarczy."
         },
         {
             "text": "Katedra i Zamek Królewski."
@@ -5601,8 +6123,17 @@
             "meaning": "The sausage is fatty."
         },
         {
+            "text": "Kilka."
+        },
+        {
             "text": "Kilo to kilogram.",
             "meaning": "A kilo is a kilogram."
+        },
+        {
+            "text": "Kilogram pieczarek."
+        },
+        {
+            "text": "Kilogram."
         },
         {
             "text": "Kim był Adam Mickiewicz?",
@@ -5764,8 +6295,16 @@
             "meaning": "Who does this woman have?"
         },
         {
+            "text": "Kogo ona też nie widzi?",
+            "meaning": "Whom else can she not see?"
+        },
+        {
             "text": "Kogo spotkał w muzeum?",
             "meaning": "Whom did he meet at the museum?"
+        },
+        {
+            "text": "Kogo szukasz?",
+            "meaning": "Who are you looking for?"
         },
         {
             "text": "Kogo widzi w lustrze?",
@@ -5795,6 +6334,10 @@
         {
             "text": "Kolega jest też instruktorem tanga.",
             "meaning": "The friend is also a tango instructor."
+        },
+        {
+            "text": "Kolega jest tu teraz.",
+            "meaning": "The friend is here now."
         },
         {
             "text": "Kolega mówi: „Miło mi cię poznać”.",
@@ -5851,8 +6394,14 @@
             "meaning": "Conjugations"
         },
         {
+            "text": "Koperta."
+        },
+        {
             "text": "Kosmetyki są w drogerii.",
             "meaning": "The cosmetics are at the drugstore."
+        },
+        {
+            "text": "Kostka."
         },
         {
             "text": "Kot jest duży.",
@@ -5930,6 +6479,14 @@
             "meaning": "Who is in Kraków at the weekend?"
         },
         {
+            "text": "Kto kupuje resztę?",
+            "meaning": "Who buys the rest?"
+        },
+        {
+            "text": "Kto oferuje swoje auto?",
+            "meaning": "Who offers their car?"
+        },
+        {
             "text": "Kto przyszedł na końcu?",
             "meaning": "Who came at the end?"
         },
@@ -5961,6 +6518,14 @@
             "meaning": "Someone wants to stand in the middle."
         },
         {
+            "text": "Ktoś inny idzie z nią na pocztę.",
+            "meaning": "Someone else goes with her to the post office."
+        },
+        {
+            "text": "Ktoś już zjadł ciastka.",
+            "meaning": "Someone has already eaten the biscuits."
+        },
+        {
             "text": "Kto…? Co…?",
             "meaning": "Who…? What…?"
         },
@@ -5983,7 +6548,39 @@
             "meaning": "I bought a new jumper."
         },
         {
+            "text": "Kupuje butelkę wody, puszkę coli i słoik dżemu."
+        },
+        {
+            "text": "Kupuje jeszcze paczkę czarnej herbaty i karton soku pomarańczowego."
+        },
+        {
             "text": "Kupuje też maliny."
+        },
+        {
+            "text": "Kupuje ćwierć kilo białego sera i kawałek żółtego sera."
+        },
+        {
+            "text": "Kupujemy dwie butelki wody? Za mało! Pięć butelek wody!",
+            "meaning": "Shall we buy two bottles of water? Not enough! Five bottles of water!"
+        },
+        {
+            "text": "Kupują dziesięć butelek wody.",
+            "meaning": "They buy ten bottles of water."
+        },
+        {
+            "text": "Kupują kilogram pieczarek, trzy kilogramy papryki i pięć kilogramów ziemniaków."
+        },
+        {
+            "text": "Kupują pięć kartonów soku pomarańczowego.",
+            "meaning": "They buy five cartons of orange juice."
+        },
+        {
+            "text": "Kupują pięć kilogramów papryki.",
+            "meaning": "They buy five kilograms of peppers."
+        },
+        {
+            "text": "Kupują też kiszone ogórki.",
+            "meaning": "They buy pickles too."
         },
         {
             "text": "Kupuję bilety.",
@@ -5996,6 +6593,9 @@
         {
             "text": "Kurczak jest smażony.",
             "meaning": "The chicken is fried."
+        },
+        {
+            "text": "Kurier."
         },
         {
             "text": "Kwadrans po dwunastej."
@@ -6077,6 +6677,12 @@
             "meaning": "Numbers from 20 to 100"
         },
         {
+            "text": "List polecony."
+        },
+        {
+            "text": "List."
+        },
+        {
             "text": "Lista zakupów jest długa, ale to nie problem."
         },
         {
@@ -6085,6 +6691,13 @@
         },
         {
             "text": "Lista zakupów: dwa zielone jabłka"
+        },
+        {
+            "text": "Listonosz ma list, a kurier ma paczkę.",
+            "meaning": "The postman has a letter, and the courier has a parcel."
+        },
+        {
+            "text": "Listonosz."
         },
         {
             "text": "Lody są zimne.",
@@ -6258,6 +6871,9 @@
             "text": "Ma dwoje dzieci."
         },
         {
+            "text": "Ma list i pocztówkę, ale nie ma znaczków."
+        },
+        {
             "text": "Ma marchewkę, pietruszkę, seler i por."
         },
         {
@@ -6298,6 +6914,10 @@
         {
             "text": "Mam czterdzieści trzy lata, a mój mąż ma czterdzieści pięć lat.",
             "meaning": "I'm forty-three, and my husband is forty-five."
+        },
+        {
+            "text": "Mam dużo fajnych koleżanek.",
+            "meaning": "I have a lot of nice friends (women)."
         },
         {
             "text": "Mam dwa bilety na mecz."
@@ -6384,6 +7004,10 @@
             "text": "Mam też dobrego tatę."
         },
         {
+            "text": "Mam trzy paczki paluszków i dwie puszki orzeszków.",
+            "meaning": "I have three packets of pretzel sticks and two cans of peanuts."
+        },
+        {
             "text": "Mam trzy zaproszenia.",
             "meaning": "I have three invitations."
         },
@@ -6451,6 +7075,17 @@
             "meaning": "Mum is buying vegetables."
         },
         {
+            "text": "Mama ma do Adama prośbę: zakupy."
+        },
+        {
+            "text": "Mama ma prośbę.",
+            "meaning": "Mum has a favour to ask."
+        },
+        {
+            "text": "Mama ma prośbę.",
+            "meaning": "Mum has a request."
+        },
+        {
             "text": "Mama płaci dziewiętnaście złotych.",
             "meaning": "Mum pays nineteen złoty."
         },
@@ -6470,6 +7105,10 @@
         },
         {
             "text": "Mami."
+        },
+        {
+            "text": "Mamo, jestem bardzo zajęty. Naprawdę!",
+            "meaning": "Mum, I am very busy. Really! (a son says it)"
         },
         {
             "text": "Mamę, tatę, siostrę i brata."
@@ -6512,6 +7151,9 @@
         {
             "text": "Masz chleb.",
             "meaning": "You have bread."
+        },
+        {
+            "text": "Masz dużo koleżanek?"
         },
         {
             "text": "Masz ochotę na coś słodkiego?"
@@ -6567,6 +7209,9 @@
         {
             "text": "Mała woda kosztuje trzy złote.",
             "meaning": "A small water costs three złoty."
+        },
+        {
+            "text": "Mało."
         },
         {
             "text": "Mały i nowy."
@@ -6716,6 +7361,9 @@
             "text": "Most."
         },
         {
+            "text": "Może być trochę więcej?"
+        },
+        {
             "text": "Może galeria handlowa?"
         },
         {
@@ -6731,6 +7379,12 @@
         {
             "text": "Może pójdziemy na lunch? Świetny pomysł!",
             "meaning": "Shall we go for lunch? A great idea!"
+        },
+        {
+            "text": "Może trzy paczki chipsów?"
+        },
+        {
+            "text": "Możesz iść na zakupy?"
         },
         {
             "text": "Musi się uczyć."
@@ -6749,6 +7403,10 @@
         {
             "text": "Muszę uczyć się do egzaminu.",
             "meaning": "I want to, but I have to study for an exam."
+        },
+        {
+            "text": "Muszę uczyć się historii. Lubię słuchać muzyki.",
+            "meaning": "I must study history. I like listening to music."
         },
         {
             "text": "Muzeum jest za pomnikiem.",
@@ -6971,6 +7629,13 @@
             "text": "Na dobrej imprezie."
         },
         {
+            "text": "Na dworcu jest winda.",
+            "meaning": "There is a lift at the station."
+        },
+        {
+            "text": "Na dworcu nie ma windy."
+        },
+        {
             "text": "Na film japoński."
         },
         {
@@ -7034,6 +7699,21 @@
         {
             "text": "Na lewo?",
             "meaning": "On the left?"
+        },
+        {
+            "text": "Na liście jest kawałek tortu, puszka kukurydzy i paczka makaronu."
+        },
+        {
+            "text": "Na liście jest kawałek tortu.",
+            "meaning": "A piece of gateau is on the list."
+        },
+        {
+            "text": "Na liście jest kiełbasa.",
+            "meaning": "Sausage is on the list."
+        },
+        {
+            "text": "Na liście jest paczka makaronu.",
+            "meaning": "A packet of pasta is on the list."
         },
         {
             "text": "Na liście są jabłka.",
@@ -7107,10 +7787,43 @@
             "text": "Na pierogi."
         },
         {
+            "text": "Na piknik idzie dużo nauczycieli.",
+            "meaning": "A lot of (men) teachers are going to the picnic."
+        },
+        {
+            "text": "Na piknik idzie dużo nauczycieli.",
+            "meaning": "A lot of teachers are going to the picnic."
+        },
+        {
+            "text": "Na piknik idzie dużo studentów.",
+            "meaning": "A lot of students are going to the picnic."
+        },
+        {
+            "text": "Na piknik idzie wiele osób, ale niewiele nauczycieli.",
+            "meaning": "Many people are going to the picnic, but not many teachers."
+        },
+        {
+            "text": "Na piknik potrzebuję dużo wody.",
+            "meaning": "For the picnic I need a lot of water."
+        },
+        {
             "text": "Na pizzy nie ma oliwek."
         },
         {
             "text": "Na pizzę i zimne piwo."
+        },
+        {
+            "text": "Na poczcie jest kolejka, a Adam nie cierpi kolejek."
+        },
+        {
+            "text": "Na poczcie kupuje dwa znaczki i kopertę."
+        },
+        {
+            "text": "Na poczcie."
+        },
+        {
+            "text": "Na pocztę.",
+            "meaning": "To the post office."
         },
         {
             "text": "Na quiz."
@@ -7149,6 +7862,13 @@
             "text": "Na spaghetti i sałatkę owocową."
         },
         {
+            "text": "Na stole jest pudełko i słoik."
+        },
+        {
+            "text": "Na stole jest słoik.",
+            "meaning": "There is a jar on the table."
+        },
+        {
             "text": "Na stole jest tylko kartka."
         },
         {
@@ -7165,6 +7885,9 @@
         {
             "text": "Na stole są śliwki.",
             "meaning": "There are plums on the table."
+        },
+        {
+            "text": "Na stole."
         },
         {
             "text": "Na targu",
@@ -7356,6 +8079,9 @@
             "meaning": "At last, the weekend!"
         },
         {
+            "text": "Nas."
+        },
+        {
             "text": "Następnie byłem w kinie.",
             "meaning": "Next I was at the cinema."
         },
@@ -7392,7 +8118,13 @@
             "text": "Naturalny."
         },
         {
+            "text": "Nauczyciel."
+        },
+        {
             "text": "Nauczycielem."
+        },
+        {
+            "text": "Nauczycieli idzie mało, bo są bardzo zajęci."
         },
         {
             "text": "Nauczycielki."
@@ -7470,6 +8202,9 @@
             "meaning": "You don't eat cheese."
         },
         {
+            "text": "Nie kupuje masła, bo ma w domu dwie kostki masła."
+        },
+        {
             "text": "Nie lubi kiwi."
         },
         {
@@ -7478,6 +8213,10 @@
         {
             "text": "Nie lubisz kawy.",
             "meaning": "You don't like coffee."
+        },
+        {
+            "text": "Nie lubię ani jej, ani jego.",
+            "meaning": "I like neither her nor him."
         },
         {
             "text": "Nie lubię czytać, wolę grać na komputerze.",
@@ -7512,6 +8251,15 @@
             "text": "Nie ma fasoli."
         },
         {
+            "text": "Nie ma go w torbie, nie ma go na stole."
+        },
+        {
+            "text": "Nie ma go w torbie?"
+        },
+        {
+            "text": "Nie ma kiełbasy."
+        },
+        {
             "text": "Nie ma kwiaciarni."
         },
         {
@@ -7519,6 +8267,9 @@
         },
         {
             "text": "Nie ma problemu, tu jest kantor."
+        },
+        {
+            "text": "Nie ma sprawy, a o co chodzi?"
         },
         {
             "text": "Nie ma za co! Do widzenia!",
@@ -7549,6 +8300,9 @@
             "meaning": "I don't have any beer."
         },
         {
+            "text": "Nie mam pojęcia, jak zrobić to zadanie."
+        },
+        {
             "text": "Nie mam rodzeństwa."
         },
         {
@@ -7576,6 +8330,9 @@
         {
             "text": "Nie odbierałeś telefonu!",
             "meaning": "You didn't answer the phone! (to a man friend)"
+        },
+        {
+            "text": "Nie ogląda seriali, bo nie ma czasu."
         },
         {
             "text": "Nie pamiętam!"
@@ -7681,6 +8438,9 @@
             "text": "Nie, chciałem zobaczyć obrazy."
         },
         {
+            "text": "Nie, do Argentyny. Czy to dużo kosztuje?"
+        },
+        {
             "text": "Nie, dziękuję, poproszę rachunek.",
             "meaning": "No, thank you. I'd like the bill, please."
         },
@@ -7736,6 +8496,9 @@
         },
         {
             "text": "Nie, nie lubię."
+        },
+        {
+            "text": "Nie, nie ma go."
         },
         {
             "text": "Nie, nie ma. Jest kanapka."
@@ -7865,6 +8628,9 @@
         {
             "text": "Niestety, nie mam czasu.",
             "meaning": "Unfortunately, I have no time."
+        },
+        {
+            "text": "Niewiele."
         },
         {
             "text": "Nigdy nie pije herbaty."
@@ -8100,6 +8866,9 @@
             "text": "O ósmej."
         },
         {
+            "text": "O, pakujesz się?"
+        },
+        {
             "text": "Obiad",
             "meaning": "Dinner"
         },
@@ -8136,7 +8905,20 @@
             "text": "Od czasu do czasu."
         },
         {
+            "text": "Od czego zależy cena?",
+            "meaning": "What does the price depend on?"
+        },
+        {
+            "text": "Od koloru."
+        },
+        {
             "text": "Od której do której pracujesz?"
+        },
+        {
+            "text": "Od miasta."
+        },
+        {
+            "text": "Od wagi."
         },
         {
             "text": "Od ósmej do szesnastej."
@@ -8185,12 +8967,20 @@
             "meaning": "He was at the museum yesterday."
         },
         {
+            "text": "On chce iść od razu.",
+            "meaning": "He wants to go straight away."
+        },
+        {
             "text": "On chce oglądać filmy po hiszpańsku.",
             "meaning": "He wants to watch films in Spanish."
         },
         {
             "text": "On często chodzi do kina.",
             "meaning": "He often goes to the cinema."
+        },
+        {
+            "text": "On dzwonił do nich wszystkich.",
+            "meaning": "He called all of them."
         },
         {
             "text": "On gra codziennie."
@@ -8239,8 +9029,16 @@
             "text": "On jest żonaty."
         },
         {
+            "text": "On kupuje kilo białego sera.",
+            "meaning": "He buys a kilo of curd cheese."
+        },
+        {
             "text": "On lubi aktywnie spędzać czas.",
             "meaning": "He likes spending his time actively."
+        },
+        {
+            "text": "On lubi kolejki.",
+            "meaning": "He likes queues."
         },
         {
             "text": "On lubi pracować.",
@@ -8259,12 +9057,24 @@
             "meaning": "He is twenty-eight."
         },
         {
+            "text": "On ma wszystkie numery.",
+            "meaning": "He has all the numbers."
+        },
+        {
             "text": "On mieszka w Berlinie.",
             "meaning": "He lives in Berlin."
         },
         {
+            "text": "On musi wysłać oficjalny list.",
+            "meaning": "He must send an official letter."
+        },
+        {
             "text": "On nie miał czasu.",
             "meaning": "He had no time."
+        },
+        {
+            "text": "On nie odbierał, bo miał spotkanie.",
+            "meaning": "He did not answer, because he had a meeting."
         },
         {
             "text": "On ogląda zdjęcia.",
@@ -8281,6 +9091,10 @@
         {
             "text": "On umie śpiewać.",
             "meaning": "He can sing."
+        },
+        {
+            "text": "On zaraz zadzwoni do koleżanek.",
+            "meaning": "He will call the girls in a moment."
         },
         {
             "text": "On zrobił zdjęcie.",
@@ -8325,6 +9139,10 @@
         {
             "text": "Ona jadła sushi.",
             "meaning": "She ate sushi."
+        },
+        {
+            "text": "Ona jedzie na piknik za Kraków.",
+            "meaning": "She is going to a picnic outside Kraków."
         },
         {
             "text": "Ona jest Japonką.",
@@ -8513,6 +9331,9 @@
             "text": "Owocowy."
         },
         {
+            "text": "Owocową."
+        },
+        {
             "text": "Ołówek jest tam."
         },
         {
@@ -8538,6 +9359,15 @@
         {
             "text": "Pa! Do jutra!",
             "meaning": "Bye-bye! See you tomorrow!"
+        },
+        {
+            "text": "Paczka."
+        },
+        {
+            "text": "Paczkę makaronu i kawałek kiełbasy."
+        },
+        {
+            "text": "Paczkę."
         },
         {
             "text": "Palma."
@@ -8602,6 +9432,9 @@
             "meaning": "The lady is forty-three."
         },
         {
+            "text": "Pani na poczcie mówi: proszę wysłać list polecony."
+        },
+        {
             "text": "Papryka jest żółta.",
             "meaning": "The pepper is yellow."
         },
@@ -8615,6 +9448,10 @@
         {
             "text": "Państwo Maj są w Krakowie.",
             "meaning": "Mr and Mrs Maj are in Kraków."
+        },
+        {
+            "text": "Pieczarek może być trochę więcej.",
+            "meaning": "A few more mushrooms are all right."
         },
         {
             "text": "Pieczona."
@@ -8736,6 +9573,9 @@
             "meaning": "A beer, please."
         },
         {
+            "text": "Piwo, sok i wodę."
+        },
+        {
             "text": "Pizza."
         },
         {
@@ -8764,6 +9604,13 @@
         {
             "text": "Plac Mariacki: jaki numer?",
             "meaning": "Mariacki Square: what number?"
+        },
+        {
+            "text": "Plecak Ewy jest ciężki.",
+            "meaning": "Ewa's rucksack is heavy."
+        },
+        {
+            "text": "Plecak jest ciężki?"
         },
         {
             "text": "Plecak.",
@@ -8801,6 +9648,16 @@
         {
             "text": "Po staremu. A u ciebie?",
             "meaning": "Hi! Same as ever. And with you?"
+        },
+        {
+            "text": "Poczta, kurier, paczkomat",
+            "meaning": "The post office, a courier, a parcel locker"
+        },
+        {
+            "text": "Pocztówkę."
+        },
+        {
+            "text": "Pod książką."
         },
         {
             "text": "Pod numerem siedem jest „po staremu”.",
@@ -8871,6 +9728,9 @@
             "text": "Pomidorowy."
         },
         {
+            "text": "Poproszę butelkę wody."
+        },
+        {
             "text": "Poproszę cztery banany."
         },
         {
@@ -8891,6 +9751,9 @@
         },
         {
             "text": "Poproszę pietruszkę."
+        },
+        {
+            "text": "Poproszę słoik dżemu malinowego."
         },
         {
             "text": "Poproszę żurek z jajkiem.",
@@ -8915,6 +9778,9 @@
             "meaning": "We went to the cinema."
         },
         {
+            "text": "Potem dzwoni do niej jeszcze raz."
+        },
+        {
             "text": "Potem jadłam sushi.",
             "meaning": "Then I ate sushi."
         },
@@ -8927,6 +9793,9 @@
         },
         {
             "text": "Potem mama dodaje warzywa i przyprawy."
+        },
+        {
+            "text": "Potem mówi: dobrze, już idę."
         },
         {
             "text": "Potem padał deszcz.",
@@ -8998,6 +9867,10 @@
             "text": "Precle."
         },
         {
+            "text": "Priorytet to bardzo szybki list.",
+            "meaning": "A priority letter is a very fast letter."
+        },
+        {
             "text": "Produkty zbożowe."
         },
         {
@@ -9024,6 +9897,14 @@
         {
             "text": "Proszę bardzo. Coś jeszcze?",
             "meaning": "Here you are. Anything else?"
+        },
+        {
+            "text": "Proszę bardzo. Dokąd?",
+            "meaning": "Certainly. Where to?"
+        },
+        {
+            "text": "Proszę bardzo. Dziękuję!",
+            "meaning": "Here you are. Thank you!"
         },
         {
             "text": "Proszę bardzo. Smacznego!",
@@ -9116,6 +9997,10 @@
             "meaning": "Drive straight on, then turn right, please."
         },
         {
+            "text": "Proszę kawałek kiełbasy i dwa plasterki szynki.",
+            "meaning": "A piece of sausage and two slices of ham, please."
+        },
+        {
             "text": "Proszę małą wodę.",
             "meaning": "Fine, a small water, please. That's all."
         },
@@ -9158,6 +10043,10 @@
         {
             "text": "Proszę przetłumaczyć.",
             "meaning": "Translate."
+        },
+        {
+            "text": "Proszę pudełko czekoladek i pudełko zapałek.",
+            "meaning": "A box of chocolates and a box of matches, please."
         },
         {
             "text": "Proszę skręcić w lewo i iść prosto."
@@ -9226,8 +10115,19 @@
             "text": "Proszę."
         },
         {
+            "text": "Proszę. Dziękuję bardzo!",
+            "meaning": "Here you are. Thank you!"
+        },
+        {
             "text": "Proszę. Dziękuję, do widzenia!",
             "meaning": "Here you are. Thank you, goodbye!"
+        },
+        {
+            "text": "Proszę. Razem trzydzieści złotych.",
+            "meaning": "Here you are. That's thirty złoty altogether."
+        },
+        {
+            "text": "Proszę. To wszystko?"
         },
         {
             "text": "Przed południem dzieci są w szkole."
@@ -9247,6 +10147,13 @@
         },
         {
             "text": "Przepraszam, co to jest?"
+        },
+        {
+            "text": "Przepraszam, czy mogłaby mi pani pomóc?",
+            "meaning": "Excuse me, could you help me? (to a woman)"
+        },
+        {
+            "text": "Przepraszam, czy mógłbyś mi pomóc?"
         },
         {
             "text": "Przepraszam, dzisiaj tylko gotówką!",
@@ -9321,7 +10228,24 @@
             "meaning": "The pub is far away."
         },
         {
+            "text": "Puszka jest na stole.",
+            "meaning": "The can is on the table."
+        },
+        {
+            "text": "Puszka jest w torbie."
+        },
+        {
+            "text": "Puszka."
+        },
+        {
+            "text": "Puszki, paczki i pudełka",
+            "meaning": "Cans, packets and boxes"
+        },
+        {
             "text": "Pół Polką, pół Angielką."
+        },
+        {
+            "text": "Pół kilograma."
         },
         {
             "text": "Później poszłam do szkoły."
@@ -9558,6 +10482,13 @@
             "meaning": "At the school office: introducing yourself"
         },
         {
+            "text": "Sekretarka zamawia taksówkę.",
+            "meaning": "The secretary orders a taxi."
+        },
+        {
+            "text": "Sekretarka."
+        },
+        {
             "text": "Seler."
         },
         {
@@ -9596,6 +10527,9 @@
         {
             "text": "Siódmy czasownik to „wychodzić z domu”.",
             "meaning": "The seventh verb is \"to leave home\"."
+        },
+        {
+            "text": "Sklep."
         },
         {
             "text": "Sklepy z pamiątkami."
@@ -9738,6 +10672,16 @@
             "meaning": "The table is for two people."
         },
         {
+            "text": "Studenci mają dużo zakupów na piknik i potrzebują samochodu."
+        },
+        {
+            "text": "Studenci potrzebują samochodu.",
+            "meaning": "The students need a car."
+        },
+        {
+            "text": "Student."
+        },
+        {
             "text": "Studenta."
         },
         {
@@ -9799,7 +10743,13 @@
             "meaning": "Too bad! At the weekend we are going to a concert. Do you want to go?"
         },
         {
+            "text": "Szkoła organizuje piknik."
+        },
+        {
             "text": "Szkoła."
+        },
+        {
+            "text": "Szukasz telefonu?"
         },
         {
             "text": "Szósta."
@@ -9816,6 +10766,9 @@
         {
             "text": "Słownik polsko-hiszpański jest stary i duży.",
             "meaning": "The Polish-Spanish dictionary is old and big."
+        },
+        {
+            "text": "Słucham?"
         },
         {
             "text": "Ta gumka jest różowa.",
@@ -9919,6 +10872,9 @@
             "meaning": "Yes, today you can!"
         },
         {
+            "text": "Tak, dziękuję."
+        },
+        {
             "text": "Tak, dziś jest zamknięta."
         },
         {
@@ -9942,6 +10898,9 @@
         },
         {
             "text": "Tak, i na zupę jarzynową."
+        },
+        {
+            "text": "Tak, jadę na piknik."
         },
         {
             "text": "Tak, jadłem godzinę temu.",
@@ -9983,6 +10942,9 @@
             "meaning": "Yes, I'm married."
         },
         {
+            "text": "Tak, kawałek tortu!"
+        },
+        {
             "text": "Tak, lubisz sport.",
             "meaning": "Yes, you like sport."
         },
@@ -9998,12 +10960,18 @@
             "text": "Tak, mam brata."
         },
         {
+            "text": "Tak, mam dużo fajnych koleżanek."
+        },
+        {
             "text": "Tak, mogę iść na kawę!",
             "meaning": "Yes, today I can!"
         },
         {
             "text": "Tak, mogę!",
             "meaning": "Yes, today I can!"
+        },
+        {
+            "text": "Tak, może być."
         },
         {
             "text": "Tak, mówię po polsku.",
@@ -10030,6 +10998,17 @@
             "text": "Tak, o szóstej."
         },
         {
+            "text": "Tak, oczywiście."
+        },
+        {
+            "text": "Tak, poproszę pięć kopert.",
+            "meaning": "Yes, I'd like five envelopes, please."
+        },
+        {
+            "text": "Tak, poproszę pięć znaczków.",
+            "meaning": "Yes, I'd like five stamps, please."
+        },
+        {
             "text": "Tak, poproszę sernik.",
             "meaning": "Yes, I'd like cheesecake, please."
         },
@@ -10054,6 +11033,12 @@
         {
             "text": "Tak, smakuje mi bardzo.",
             "meaning": "Yes, I like it very much."
+        },
+        {
+            "text": "Tak, szukam go wszędzie!"
+        },
+        {
+            "text": "Tak, tabliczkę czekolady."
         },
         {
             "text": "Tak, te zielone, proszę.",
@@ -10145,10 +11130,16 @@
             "text": "Tak. W zeszłym roku byłem w kinie tylko raz."
         },
         {
+            "text": "Tak?"
+        },
+        {
             "text": "Taksówka."
         },
         {
             "text": "Taksówką."
+        },
+        {
+            "text": "Taksówkę."
         },
         {
             "text": "Talerz jest tam.",
@@ -10162,6 +11153,10 @@
         },
         {
             "text": "Tam jest miód."
+        },
+        {
+            "text": "Tam jest zawsze kolejka. Nie cierpię kolejek!",
+            "meaning": "There is always a queue there. I can't stand queues!"
         },
         {
             "text": "Tam są schody.",
@@ -10244,6 +11239,17 @@
             "text": "Te zielone?"
         },
         {
+            "text": "Telefon jest na stole.",
+            "meaning": "The phone is on the table."
+        },
+        {
+            "text": "Telefon jest pod książką.",
+            "meaning": "The phone is under a book."
+        },
+        {
+            "text": "Telefonu."
+        },
+        {
             "text": "Ten aparat jest tani, a ten jest drogi.",
             "meaning": "This camera is cheap, and this one is expensive."
         },
@@ -10311,6 +11317,9 @@
             "text": "Teraz."
         },
         {
+            "text": "Teraz? Wolałbym nie, jestem zajęty."
+        },
+        {
             "text": "Teść i teściowa."
         },
         {
@@ -10352,6 +11361,9 @@
             "text": "To co powiesz na spacer?"
         },
         {
+            "text": "To cztery butelki."
+        },
+        {
             "text": "To daleko?"
         },
         {
@@ -10360,6 +11372,9 @@
         },
         {
             "text": "To dobrze brzmi."
+        },
+        {
+            "text": "To dużo, ale nie za dużo!"
         },
         {
             "text": "To dziecko ma pół roku.",
@@ -10466,6 +11481,10 @@
         {
             "text": "To jest pięć.",
             "meaning": "Two plus three equals five."
+        },
+        {
+            "text": "To jest plasterek, a to jest kawałek.",
+            "meaning": "This is a slice, and this is a piece."
         },
         {
             "text": "To jest plecak.",
@@ -10600,6 +11619,9 @@
             "meaning": "This window is big."
         },
         {
+            "text": "To pięć paczek chipsów."
+        },
+        {
             "text": "To samo, tylko z frytkami."
         },
         {
@@ -10625,7 +11647,16 @@
             "meaning": "This is your grandpa (several people)."
         },
         {
+            "text": "To wszystko?"
+        },
+        {
             "text": "To wszystko? Płaci pan kartą?"
+        },
+        {
+            "text": "To za dużo!"
+        },
+        {
+            "text": "To zależy."
         },
         {
             "text": "To zamawiam pierogi."
@@ -10688,6 +11719,9 @@
             "meaning": "The bag is practical."
         },
         {
+            "text": "Torby."
+        },
+        {
             "text": "Tost to grzanka.",
             "meaning": "A tost is a grzanka (a slice of toast)."
         },
@@ -10738,6 +11772,9 @@
         {
             "text": "Truskawka jest twarda.",
             "meaning": "The strawberry is hard."
+        },
+        {
+            "text": "Truskawkowy."
         },
         {
             "text": "Trwa czterdzieści pięć minut."
@@ -11049,6 +12086,14 @@
             "text": "W drogerii albo w supermarkecie."
         },
         {
+            "text": "W drugim dialogu ktoś pakuje się na piknik.",
+            "meaning": "In the second dialogue someone is packing for a picnic."
+        },
+        {
+            "text": "W drugim dialogu odpowiedź to tak.",
+            "meaning": "In the second dialogue the answer is yes."
+        },
+        {
             "text": "W drugim dialogu to jest ołówek.",
             "meaning": "In the second dialogue it is a pencil."
         },
@@ -11153,6 +12198,17 @@
             "meaning": "There are sweets in the basket."
         },
         {
+            "text": "W końcu on idzie.",
+            "meaning": "In the end he goes."
+        },
+        {
+            "text": "W kuchni jest butelka i karton."
+        },
+        {
+            "text": "W kuchni jest butelka.",
+            "meaning": "There is a bottle in the kitchen."
+        },
+        {
             "text": "W kuchni."
         },
         {
@@ -11237,6 +12293,10 @@
             "meaning": "In the first dialogue the boy is here for the first time."
         },
         {
+            "text": "W pierwszym dialogu ktoś nie wie, jak zrobić zadanie.",
+            "meaning": "In the first dialogue someone does not know how to do an exercise."
+        },
+        {
             "text": "W pierwszym dialogu to jest książka.",
             "meaning": "In the first dialogue it is a book."
         },
@@ -11283,6 +12343,10 @@
         },
         {
             "text": "W piątek."
+        },
+        {
+            "text": "W piątym dialogu jest winda.",
+            "meaning": "In the fifth dialogue there is a lift."
         },
         {
             "text": "W poniedziałek Adam poszedł do kina.",
@@ -11412,8 +12476,26 @@
             "text": "W szkole."
         },
         {
+            "text": "W torbie jest guma do żucia.",
+            "meaning": "There is chewing gum in the bag."
+        },
+        {
             "text": "W torbie jest mapa Krakowa.",
             "meaning": "There is a map of Kraków in the bag."
+        },
+        {
+            "text": "W torbie jest paczka chusteczek, butelka wody i guma do żucia."
+        },
+        {
+            "text": "W torbie jest sałatka jarzynowa.",
+            "meaning": "There is a vegetable salad in the bag."
+        },
+        {
+            "text": "W torbie są jabłka.",
+            "meaning": "There are apples in the bag."
+        },
+        {
+            "text": "W torbie."
         },
         {
             "text": "W tygodniu wstaje wcześnie.",
@@ -11484,6 +12566,13 @@
             "meaning": "Wednesday at a quarter to nine: a lesson."
         },
         {
+            "text": "Walizka Ewy jest bardzo ciężka."
+        },
+        {
+            "text": "Walizka Ewy jest ciężka.",
+            "meaning": "Ewa's suitcase is heavy."
+        },
+        {
             "text": "Warszawa",
             "meaning": "Warsaw"
         },
@@ -11497,6 +12586,12 @@
         {
             "text": "Warzywa są surowe.",
             "meaning": "The vegetables are raw."
+        },
+        {
+            "text": "Warzywa."
+        },
+        {
+            "text": "Ważny list."
         },
         {
             "text": "Wczoraj byłam na imprezie.",
@@ -11586,6 +12681,9 @@
             "meaning": "In the evening they go dancing."
         },
         {
+            "text": "Wieczorem pyta Adama: czy dzwoniłeś do mnie?"
+        },
+        {
             "text": "Wieczorem spotykam się ze znajomymi.",
             "meaning": "In the evening I meet friends."
         },
@@ -11604,6 +12702,9 @@
             "text": "Wieczorem wszyscy wracają do domu."
         },
         {
+            "text": "Wiele osób."
+        },
+        {
             "text": "Wiesz, kto to jest?"
         },
         {
@@ -11612,6 +12713,9 @@
         {
             "text": "Wizyta u dentysty jest o szóstej.",
             "meaning": "The dentist appointment is at six."
+        },
+        {
+            "text": "Więc sekretarka zamawia taksówkę."
         },
         {
             "text": "Wiśnia jest czerwona.",
@@ -11638,6 +12742,9 @@
         },
         {
             "text": "Wody."
+        },
+        {
+            "text": "Wodę."
         },
         {
             "text": "Wolisz jasny czy ciemny chleb?",
@@ -11762,6 +12869,9 @@
         },
         {
             "text": "Wysoki i wysportowany."
+        },
+        {
+            "text": "Wózek."
         },
         {
             "text": "Wędlina jest tu, na przykład kiełbasa."
@@ -11911,11 +13021,22 @@
             "meaning": "By profession I am a musician (a man)."
         },
         {
+            "text": "Za mało!"
+        },
+        {
             "text": "Za pomnikiem jest muzeum, kawiarnia i sklepy z pamiątkami."
         },
         {
             "text": "Zaczyna pracę o dziewiątej.",
             "meaning": "She starts work at nine."
+        },
+        {
+            "text": "Zaimki",
+            "meaning": "Pronouns"
+        },
+        {
+            "text": "Zakupy na piknik",
+            "meaning": "Shopping for a picnic"
         },
         {
             "text": "Zapiekankę."
@@ -11983,6 +13104,9 @@
             "meaning": "The potatoes are boiled."
         },
         {
+            "text": "Znaczek."
+        },
+        {
             "text": "Znam ciocię.",
             "meaning": "I know my aunt."
         },
@@ -12037,6 +13161,9 @@
         },
         {
             "text": "Zupę miso i sushi."
+        },
+        {
+            "text": "Zupę."
         },
         {
             "text": "Zwiedzamy",
@@ -12265,6 +13392,14 @@
         },
         {
             "text": "autobusie"
+        },
+        {
+            "text": "awizo",
+            "meaning": "a delivery notice"
+        },
+        {
+            "text": "awizo",
+            "meaning": "a delivery notice (left when a parcel or a registered letter is waiting for you)"
         },
         {
             "text": "babcia",
@@ -12629,6 +13764,34 @@
             "meaning": "rich (bogaty, bogata, bogate)"
         },
         {
+            "text": "boi się"
+        },
+        {
+            "text": "boicie się"
+        },
+        {
+            "text": "boimy się"
+        },
+        {
+            "text": "boisz się"
+        },
+        {
+            "text": "boją się",
+            "meaning": "they are afraid"
+        },
+        {
+            "text": "boję się",
+            "meaning": "I'm afraid"
+        },
+        {
+            "text": "boję się",
+            "meaning": "I'm afraid (boję się psów: I'm afraid of dogs)"
+        },
+        {
+            "text": "boję się kotów",
+            "meaning": "I'm afraid of cats"
+        },
+        {
             "text": "brat",
             "meaning": "a brother"
         },
@@ -12772,6 +13935,36 @@
         {
             "text": "buraki",
             "meaning": "a beetroot (buraki: beetroots)"
+        },
+        {
+            "text": "butelek",
+            "meaning": "a bottle (dwie butelki, pięć butelek; poproszę butelkę)"
+        },
+        {
+            "text": "butelka",
+            "meaning": "a bottle"
+        },
+        {
+            "text": "butelka",
+            "meaning": "a bottle (dwie butelki, pięć butelek; poproszę butelkę)"
+        },
+        {
+            "text": "butelka coli"
+        },
+        {
+            "text": "butelka soku pomarańczowego"
+        },
+        {
+            "text": "butelka wody",
+            "meaning": "a bottle of water"
+        },
+        {
+            "text": "butelki",
+            "meaning": "a bottle (dwie butelki, pięć butelek; poproszę butelkę)"
+        },
+        {
+            "text": "butelkę",
+            "meaning": "a bottle (dwie butelki, pięć butelek; poproszę butelkę)"
         },
         {
             "text": "bułka",
@@ -13000,6 +14193,10 @@
             "meaning": "I wanted (chciałem: a man says it; chciałam: a woman)"
         },
         {
+            "text": "chciałam cię prosić o pomoc",
+            "meaning": "I wanted to ask you for help (a man says it; chciałam: a woman)"
+        },
+        {
             "text": "chciałam dobrze!"
         },
         {
@@ -13009,6 +14206,18 @@
         {
             "text": "chciałem",
             "meaning": "I wanted (chciałem: a man says it; chciałam: a woman)"
+        },
+        {
+            "text": "chciałem cię prosić o pomoc",
+            "meaning": "I wanted to ask you for help"
+        },
+        {
+            "text": "chciałem cię prosić o pomoc",
+            "meaning": "I wanted to ask you for help (a man says it)"
+        },
+        {
+            "text": "chciałem cię prosić o pomoc",
+            "meaning": "I wanted to ask you for help (a man says it; chciałam: a woman)"
         },
         {
             "text": "chciałem dobrze!",
@@ -13065,12 +14274,24 @@
             "meaning": "I want to go for a massage"
         },
         {
+            "text": "chcę nadać paczkę",
+            "meaning": "I want to send a parcel"
+        },
+        {
             "text": "chcę odwiedzić Kraków",
             "meaning": "I want to visit Kraków"
         },
         {
             "text": "chcę wygrać tysiąc złotych",
             "meaning": "I want to win a thousand złoty"
+        },
+        {
+            "text": "chcę wysłać list polecony",
+            "meaning": "I want to send a registered letter"
+        },
+        {
+            "text": "chcę wysłać paczkę",
+            "meaning": "I want to send a parcel"
         },
         {
             "text": "chcę, ale nie mogę",
@@ -13083,6 +14304,10 @@
         {
             "text": "chipsy",
             "meaning": "crisps, chips"
+        },
+        {
+            "text": "chipsów",
+            "meaning": "crisps (after paczka, dużo, pięć…: pięć paczek chipsów)"
         },
         {
             "text": "chleb",
@@ -13205,12 +14430,32 @@
             "meaning": "lean, low-fat (chudy, chuda, chude)"
         },
         {
+            "text": "chudego",
+            "meaning": "lean (chudego for a masculine noun, chudej for a feminine one, after plasterek, nie mam…: plasterek chudej szynki)"
+        },
+        {
+            "text": "chudej",
+            "meaning": "lean"
+        },
+        {
+            "text": "chudej",
+            "meaning": "lean (chudego for a masculine noun, chudej for a feminine one, after plasterek, nie mam…: plasterek chudej szynki)"
+        },
+        {
             "text": "chudy",
             "meaning": "lean"
         },
         {
             "text": "chudy",
             "meaning": "lean, low-fat (chudy, chuda, chude)"
+        },
+        {
+            "text": "chusteczek",
+            "meaning": "tissues (paczka chusteczek: a packet of tissues)"
+        },
+        {
+            "text": "chusteczki",
+            "meaning": "tissues (paczka chusteczek: a packet of tissues)"
         },
         {
             "text": "chwileczkę",
@@ -13239,6 +14484,10 @@
         {
             "text": "chętnie",
             "meaning": "gladly, with pleasure"
+        },
+        {
+            "text": "chętnie pani pomogę",
+            "meaning": "I'll gladly help you (to a woman)"
         },
         {
             "text": "chłodna",
@@ -13272,6 +14521,10 @@
             "text": "ci"
         },
         {
+            "text": "ciasta",
+            "meaning": "cake (after kawałek, nie mam…: kawałek ciasta)"
+        },
+        {
             "text": "ciastka",
             "meaning": "a biscuit, a small cake (ciastka: biscuits)"
         },
@@ -13289,6 +14542,9 @@
         },
         {
             "text": "ciebie"
+        },
+        {
+            "text": "ciebie, cię"
         },
         {
             "text": "ciekawa",
@@ -13388,12 +14644,36 @@
             "meaning": "you (one friend: kocham cię: I love you)"
         },
         {
+            "text": "ciężka",
+            "meaning": "heavy (ciężki, ciężka, ciężkie)"
+        },
+        {
+            "text": "ciężki",
+            "meaning": "heavy"
+        },
+        {
+            "text": "ciężki",
+            "meaning": "heavy (ciężki, ciężka, ciężkie)"
+        },
+        {
+            "text": "ciężkie",
+            "meaning": "heavy (ciężki, ciężka, ciężkie)"
+        },
+        {
             "text": "co",
             "meaning": "what"
         },
         {
             "text": "co czytasz?",
             "meaning": "what are you reading? (one friend)"
+        },
+        {
+            "text": "co dla pani?",
+            "meaning": "what can I get you?"
+        },
+        {
+            "text": "co dla pani?",
+            "meaning": "what can I get you? (to a woman)"
         },
         {
             "text": "co gotujemy?",
@@ -13439,6 +14719,16 @@
         },
         {
             "text": "co lubisz?"
+        },
+        {
+            "text": "co mam w torbie?"
+        },
+        {
+            "text": "co masz w domu?"
+        },
+        {
+            "text": "co masz w torbie?",
+            "meaning": "what have you got in your bag?"
         },
         {
             "text": "co nowego?",
@@ -13634,6 +14924,17 @@
             "meaning": "I cook every day"
         },
         {
+            "text": "cola",
+            "meaning": "cola (puszka coli: a can of cola)"
+        },
+        {
+            "text": "cola gazowana"
+        },
+        {
+            "text": "coli",
+            "meaning": "cola (puszka coli: a can of cola)"
+        },
+        {
             "text": "coś",
             "meaning": "something"
         },
@@ -13717,6 +15018,18 @@
             "meaning": "black (czarny, czarna, czarne)"
         },
         {
+            "text": "czarnego",
+            "meaning": "black (czarnego for a masculine noun, czarnej for a feminine one, after paczka, nie mam…: paczka czarnej herbaty)"
+        },
+        {
+            "text": "czarnej",
+            "meaning": "black"
+        },
+        {
+            "text": "czarnej",
+            "meaning": "black (czarnego for a masculine noun, czarnej for a feminine one, after paczka, nie mam…: paczka czarnej herbaty)"
+        },
+        {
             "text": "czarny",
             "meaning": "black"
         },
@@ -13739,6 +15052,10 @@
         {
             "text": "czasem gotuję",
             "meaning": "sometimes I cook"
+        },
+        {
+            "text": "czasu",
+            "meaning": "time (after nie mam, mało…: nie mam czasu)"
         },
         {
             "text": "czekaj!",
@@ -13803,6 +15120,18 @@
         {
             "text": "czekolada i cukierki to słodycze",
             "meaning": "chocolate and sweets are confectionery"
+        },
+        {
+            "text": "czekoladek",
+            "meaning": "chocolates (pudełko czekoladek: a box of chocolates)"
+        },
+        {
+            "text": "czekoladki",
+            "meaning": "chocolates (pudełko czekoladek: a box of chocolates)"
+        },
+        {
+            "text": "czekolady",
+            "meaning": "chocolate (after tabliczka, nie mam…: tabliczka czekolady)"
         },
         {
             "text": "czekoladę"
@@ -14032,6 +15361,22 @@
             "meaning": "(starts a yes-or-no question)"
         },
         {
+            "text": "czy byłaby pani tak uprzejma?",
+            "meaning": "would you be so kind? (to a man; byłaby pani tak uprzejma: to a woman)"
+        },
+        {
+            "text": "czy byłby pan tak uprzejmy?",
+            "meaning": "would you be so kind?"
+        },
+        {
+            "text": "czy byłby pan tak uprzejmy?",
+            "meaning": "would you be so kind? (to a man)"
+        },
+        {
+            "text": "czy byłby pan tak uprzejmy?",
+            "meaning": "would you be so kind? (to a man; byłaby pani tak uprzejma: to a woman)"
+        },
+        {
             "text": "czy byłeś tu kiedyś?",
             "meaning": "have you ever been here? (to a man friend)"
         },
@@ -14118,12 +15463,50 @@
             "meaning": "do you live in Warsaw? (several people)"
         },
         {
+            "text": "czy mogę ci pomóc?"
+        },
+        {
+            "text": "czy mogłaby mi pani pomóc?",
+            "meaning": "could you help me? (polite, to a woman; mógłby mi pan: to a man)"
+        },
+        {
+            "text": "czy mogłabyś mi pomóc?",
+            "meaning": "could you help me? (to a man friend; mogłabyś: to a woman friend)"
+        },
+        {
+            "text": "czy możesz iść na zakupy?",
+            "meaning": "can you go shopping?"
+        },
+        {
+            "text": "czy możesz iść ze mną?"
+        },
+        {
+            "text": "czy możesz mi pomóc?",
+            "meaning": "can you help me?"
+        },
+        {
+            "text": "czy możesz mi pomóc?",
+            "meaning": "can you help me? (one friend)"
+        },
+        {
             "text": "czy myślisz, że to jest żart?",
             "meaning": "do you think it is a joke? (one friend)"
         },
         {
             "text": "czy myślisz, że to żart?",
             "meaning": "do you think it is a joke? (one friend)"
+        },
+        {
+            "text": "czy mógłby mi pan pomóc?",
+            "meaning": "could you help me? (polite, to a woman; mógłby mi pan: to a man)"
+        },
+        {
+            "text": "czy mógłbyś mi pomóc?",
+            "meaning": "could you help me?"
+        },
+        {
+            "text": "czy mógłbyś mi pomóc?",
+            "meaning": "could you help me? (to a man friend; mogłabyś: to a woman friend)"
         },
         {
             "text": "czy mówi po angielsku?"
@@ -14145,6 +15528,20 @@
         },
         {
             "text": "czy pamiętasz, kto to jest?"
+        },
+        {
+            "text": "czy pan jest zajęty?"
+        },
+        {
+            "text": "czy pan ma czas?"
+        },
+        {
+            "text": "czy pomożesz mi?",
+            "meaning": "will you help me?"
+        },
+        {
+            "text": "czy pomożesz mi?",
+            "meaning": "will you help me? (one friend)"
         },
         {
             "text": "czy są chipsy? nie, nie ma",
@@ -14609,6 +16006,14 @@
             "meaning": "a vegetarian dish"
         },
         {
+            "text": "deka",
+            "meaning": "ten grams"
+        },
+        {
+            "text": "deka",
+            "meaning": "ten grams (dziesięć deka: 100 grams)"
+        },
+        {
             "text": "delikatna",
             "meaning": "mild, delicate (delikatny, delikatna, delikatne)"
         },
@@ -14677,6 +16082,10 @@
             "meaning": "why"
         },
         {
+            "text": "dlaczego nie odbierasz?",
+            "meaning": "why don't you answer the phone?"
+        },
+        {
             "text": "dlaczego nie?",
             "meaning": "why not?"
         },
@@ -14724,6 +16133,14 @@
             "meaning": "to Warsaw (jedziemy do Warszawy)"
         },
         {
+            "text": "do ciebie",
+            "meaning": "to you"
+        },
+        {
+            "text": "do ciebie",
+            "meaning": "to you (one friend: dzwonię do ciebie)"
+        },
+        {
             "text": "do dentysty",
             "meaning": "to the dentist's"
         },
@@ -14754,6 +16171,46 @@
         {
             "text": "do lekarza",
             "meaning": "to the doctor"
+        },
+        {
+            "text": "do mnie",
+            "meaning": "to me"
+        },
+        {
+            "text": "do mnie",
+            "meaning": "to me (dzwonisz do mnie?)"
+        },
+        {
+            "text": "do nas",
+            "meaning": "to us"
+        },
+        {
+            "text": "do nas",
+            "meaning": "to us (dzwonisz do nas?)"
+        },
+        {
+            "text": "do nich",
+            "meaning": "to them"
+        },
+        {
+            "text": "do nich",
+            "meaning": "to them (dzwonię do nich)"
+        },
+        {
+            "text": "do niego",
+            "meaning": "to him"
+        },
+        {
+            "text": "do niego",
+            "meaning": "to him (dzwonię do niego)"
+        },
+        {
+            "text": "do niej",
+            "meaning": "to her"
+        },
+        {
+            "text": "do niej",
+            "meaning": "to her (dzwonię do niej)"
         },
         {
             "text": "do parku",
@@ -14793,6 +16250,14 @@
         },
         {
             "text": "do usłyszenia"
+        },
+        {
+            "text": "do was",
+            "meaning": "to you (several people)"
+        },
+        {
+            "text": "do was",
+            "meaning": "to you (several people: dzwonię do was)"
         },
         {
             "text": "do widzenia",
@@ -14893,6 +16358,10 @@
         {
             "text": "dobrze, dziękuję, a pani?",
             "meaning": "fine, thank you, and you? (to a woman, formal)"
+        },
+        {
+            "text": "dobrze, już idę",
+            "meaning": "all right, I'm going"
         },
         {
             "text": "dobrą",
@@ -15108,6 +16577,29 @@
             "meaning": "big (dużego for a man or an animal, dużą for a feminine noun: after proszę, mam…)"
         },
         {
+            "text": "dużo",
+            "meaning": "a lot"
+        },
+        {
+            "text": "dużo",
+            "meaning": "a lot, much, many (dużo studentów: a lot of students)"
+        },
+        {
+            "text": "dużo jabłek",
+            "meaning": "a lot of apples"
+        },
+        {
+            "text": "dużo osób",
+            "meaning": "a lot of people"
+        },
+        {
+            "text": "dużo studentów",
+            "meaning": "a lot of students"
+        },
+        {
+            "text": "dużo wody"
+        },
+        {
             "text": "duży",
             "meaning": "big"
         },
@@ -15132,6 +16624,24 @@
         {
             "text": "dwa dni temu byłem w domu",
             "meaning": "two days ago I was at home (a man)"
+        },
+        {
+            "text": "dwa kartony",
+            "meaning": "two cartons"
+        },
+        {
+            "text": "dwa kartony mleka"
+        },
+        {
+            "text": "dwa kartony soku",
+            "meaning": "two cartons of juice"
+        },
+        {
+            "text": "dwa kawałki ciasta",
+            "meaning": "two pieces of cake"
+        },
+        {
+            "text": "dwa kawałki sera"
         },
         {
             "text": "dwa plus dwa jest cztery",
@@ -15170,6 +16680,10 @@
             "meaning": "two plus three is five"
         },
         {
+            "text": "dwa pudełka czekoladek",
+            "meaning": "two boxes of chocolates"
+        },
+        {
             "text": "dwa razy trzydzieści równa się sześćdziesiąt",
             "meaning": "two times thirty equals sixty"
         },
@@ -15178,8 +16692,22 @@
             "meaning": "twice a week"
         },
         {
+            "text": "dwa słoiki",
+            "meaning": "two jars"
+        },
+        {
+            "text": "dwa słoiki dżemu"
+        },
+        {
+            "text": "dwa słoiki musztardy"
+        },
+        {
             "text": "dwa zielone jabłka",
             "meaning": "two green apples"
+        },
+        {
+            "text": "dwa znaczki",
+            "meaning": "two stamps"
         },
         {
             "text": "dwa, trzy, jeden"
@@ -15211,6 +16739,10 @@
         {
             "text": "dwadzieścia pięć",
             "meaning": "twenty-five"
+        },
+        {
+            "text": "dwadzieścia plasterków chudej szynki",
+            "meaning": "twenty slices of lean ham"
         },
         {
             "text": "dwadzieścia po czwartej",
@@ -15297,6 +16829,21 @@
         {
             "text": "dwie",
             "meaning": "two (with a feminine noun: dwie papryki)"
+        },
+        {
+            "text": "dwie butelki",
+            "meaning": "two bottles"
+        },
+        {
+            "text": "dwie koperty"
+        },
+        {
+            "text": "dwie puszki coli",
+            "meaning": "two cans of cola"
+        },
+        {
+            "text": "dwie puszki na osobę",
+            "meaning": "two cans per person"
         },
         {
             "text": "dwie żółte papryki"
@@ -15770,7 +17317,30 @@
             "meaning": "you call, you phone (one friend)"
         },
         {
-            "text": "dzwonię"
+            "text": "dzwonisz do mnie"
+        },
+        {
+            "text": "dzwonisz do mnie?",
+            "meaning": "are you calling me?"
+        },
+        {
+            "text": "dzwonię",
+            "meaning": "I'm calling, I phone"
+        },
+        {
+            "text": "dzwonię do ciebie",
+            "meaning": "I'm calling you"
+        },
+        {
+            "text": "dzwonię do nich",
+            "meaning": "I'm calling them"
+        },
+        {
+            "text": "dzwonię do niego"
+        },
+        {
+            "text": "dzwonię do was",
+            "meaning": "I'm calling you (several people)"
         },
         {
             "text": "długa",
@@ -15831,6 +17401,10 @@
             "meaning": "jam and honey"
         },
         {
+            "text": "dżemu",
+            "meaning": "jam (after słoik, nie mam…: słoik dżemu)"
+        },
+        {
             "text": "e-mail",
             "meaning": "an e-mail"
         },
@@ -15881,6 +17455,10 @@
         {
             "text": "fajny",
             "meaning": "cool, nice (fajny, fajna, fajne)"
+        },
+        {
+            "text": "fajnych",
+            "meaning": "nice, cool (with a plural noun, after dużo, nie mam…: mam dużo fajnych koleżanek)"
         },
         {
             "text": "fasola",
@@ -15961,6 +17539,18 @@
         {
             "text": "gazetę",
             "meaning": "a newspaper (after czytam, kupuję…: czytam gazetę)"
+        },
+        {
+            "text": "gazowana",
+            "meaning": "sparkling, fizzy (woda gazowana: sparkling water) (gazowany, gazowana, gazowane)"
+        },
+        {
+            "text": "gazowane",
+            "meaning": "sparkling, fizzy (woda gazowana: sparkling water) (gazowany, gazowana, gazowane)"
+        },
+        {
+            "text": "gazowany",
+            "meaning": "sparkling, fizzy (woda gazowana: sparkling water) (gazowany, gazowana, gazowane)"
         },
         {
             "text": "gdzie",
@@ -16279,6 +17869,14 @@
             "meaning": "I play"
         },
         {
+            "text": "gram",
+            "meaning": "a gram"
+        },
+        {
+            "text": "gram",
+            "meaning": "a gram (dwa gramy, pięć gramów)"
+        },
+        {
             "text": "gram na gitarze",
             "meaning": "I play the guitar"
         },
@@ -16307,7 +17905,12 @@
             "meaning": "I play tennis, and you? (one friend)"
         },
         {
-            "text": "gramy"
+            "text": "gramy",
+            "meaning": "a gram (dwa gramy, pięć gramów)"
+        },
+        {
+            "text": "gramów",
+            "meaning": "a gram (dwa gramy, pięć gramów)"
         },
         {
             "text": "grasz",
@@ -16459,6 +18062,10 @@
             "meaning": "broccoli and mushrooms"
         },
         {
+            "text": "guma do żucia",
+            "meaning": "chewing gum"
+        },
+        {
             "text": "gumka",
             "meaning": "a rubber, for rubbing out"
         },
@@ -16545,6 +18152,13 @@
             "meaning": "tea (after lubię, mam…: lubię herbatę)"
         },
         {
+            "text": "historia"
+        },
+        {
+            "text": "historii",
+            "meaning": "history (after uczę się, nie lubię…: uczę się historii)"
+        },
+        {
             "text": "historią",
             "meaning": "history"
         },
@@ -16582,7 +18196,15 @@
         },
         {
             "text": "ich",
+            "meaning": "them (after szukam, nie widzę…: nie widzę ich)"
+        },
+        {
+            "text": "ich",
             "meaning": "them (men, or men and women: znam ich)"
+        },
+        {
+            "text": "ich nie widzę",
+            "meaning": "I can't see them"
         },
         {
             "text": "idealna",
@@ -16705,6 +18327,9 @@
             "meaning": "I am going (on foot)"
         },
         {
+            "text": "idę do banku"
+        },
+        {
             "text": "idę do kina"
         },
         {
@@ -16713,6 +18338,10 @@
         },
         {
             "text": "idę na piechotę"
+        },
+        {
+            "text": "idę na pocztę",
+            "meaning": "I'm going to the post office"
         },
         {
             "text": "idę na zakupy"
@@ -17235,7 +18864,12 @@
             "meaning": "I know your brother (one friend)"
         },
         {
-            "text": "jabłek"
+            "text": "jabłek",
+            "meaning": "apples"
+        },
+        {
+            "text": "jabłek",
+            "meaning": "apples (after dużo, kilo…: kilo jabłek)"
         },
         {
             "text": "jabłka",
@@ -17290,6 +18924,9 @@
         {
             "text": "jadę",
             "meaning": "I am going (by car, bus or train; I'm driving, I'm riding)"
+        },
+        {
+            "text": "jadę na pocztę"
         },
         {
             "text": "jadę pociągiem",
@@ -17878,7 +19515,18 @@
             "meaning": "you are going (by car, bus or train; one friend)"
         },
         {
+            "text": "jedziesz na piknik?"
+        },
+        {
             "text": "jedzą"
+        },
+        {
+            "text": "jego",
+            "meaning": "him (stressed)"
+        },
+        {
+            "text": "jego",
+            "meaning": "him (stressed: nie lubię ani jej, ani jego)"
         },
         {
             "text": "jego",
@@ -17894,6 +19542,17 @@
         {
             "text": "jego siostra i jej brat",
             "meaning": "his sister and her brother"
+        },
+        {
+            "text": "jego, go"
+        },
+        {
+            "text": "jej",
+            "meaning": "her"
+        },
+        {
+            "text": "jej",
+            "meaning": "her (after szukam, nie widzę…: szukam jej)"
         },
         {
             "text": "jej",
@@ -17920,6 +19579,9 @@
         },
         {
             "text": "jem chleb"
+        },
+        {
+            "text": "jem owoce"
         },
         {
             "text": "jem śniadanie"
@@ -18191,6 +19853,14 @@
             "meaning": "still; (with nie) not yet"
         },
         {
+            "text": "jeszcze poproszę",
+            "meaning": "and I'd also like…, please (jeszcze poproszę masło)"
+        },
+        {
+            "text": "jeszcze poproszę kawałek ciasta",
+            "meaning": "and I'd also like a piece of cake, please"
+        },
+        {
             "text": "jeszcze raz",
             "meaning": "once more"
         },
@@ -18325,6 +19995,14 @@
             "meaning": "we're coming!"
         },
         {
+            "text": "już idę",
+            "meaning": "I'm going"
+        },
+        {
+            "text": "już idę",
+            "meaning": "I'm going, I'm coming (now)"
+        },
+        {
             "text": "już jest późno",
             "meaning": "it's late already"
         },
@@ -18444,6 +20122,33 @@
             "meaning": "a note, a piece of paper"
         },
         {
+            "text": "karton",
+            "meaning": "a carton"
+        },
+        {
+            "text": "karton",
+            "meaning": "a carton; a cardboard box (dwa kartony, pięć kartonów)"
+        },
+        {
+            "text": "karton soku",
+            "meaning": "a carton of juice"
+        },
+        {
+            "text": "karton soku jabłkowego"
+        },
+        {
+            "text": "karton soku pomarańczowego",
+            "meaning": "a carton of orange juice"
+        },
+        {
+            "text": "kartony",
+            "meaning": "a carton; a cardboard box (dwa kartony, pięć kartonów)"
+        },
+        {
+            "text": "kartonów",
+            "meaning": "a carton; a cardboard box (dwa kartony, pięć kartonów)"
+        },
+        {
             "text": "kartą",
             "meaning": "by card"
         },
@@ -18515,8 +20220,38 @@
             "meaning": "a bachelor (after jestem: jestem kawalerem)"
         },
         {
+            "text": "kawałek",
+            "meaning": "a piece (dwa kawałki, pięć kawałków)"
+        },
+        {
+            "text": "kawałek czekolady"
+        },
+        {
+            "text": "kawałek kiełbasy",
+            "meaning": "a piece of sausage"
+        },
+        {
+            "text": "kawałek lodu"
+        },
+        {
             "text": "kawałek sernika",
             "meaning": "a piece of cheesecake"
+        },
+        {
+            "text": "kawałek tortu",
+            "meaning": "a piece of gateau"
+        },
+        {
+            "text": "kawałek żółtego sera",
+            "meaning": "a piece of hard (yellow) cheese"
+        },
+        {
+            "text": "kawałki",
+            "meaning": "a piece (dwa kawałki, pięć kawałków)"
+        },
+        {
+            "text": "kawałków",
+            "meaning": "a piece (dwa kawałki, pięć kawałków)"
         },
         {
             "text": "kawiarnia",
@@ -18585,6 +20320,14 @@
             "meaning": "ever; once, some time (byłeś tu kiedyś?: have you ever been here?)"
         },
         {
+            "text": "kierowców",
+            "meaning": "drivers"
+        },
+        {
+            "text": "kierowców",
+            "meaning": "drivers (after boję się, dużo…: boję się kierowców)"
+        },
+        {
             "text": "kiełbasa",
             "meaning": "a sausage"
         },
@@ -18601,11 +20344,24 @@
             "meaning": "the sausage is fatty"
         },
         {
-            "text": "kilka"
+            "text": "kiełbasy",
+            "meaning": "sausage (after kawałek, nie mam…: kawałek kiełbasy)"
+        },
+        {
+            "text": "kilka",
+            "meaning": "a few"
+        },
+        {
+            "text": "kilka",
+            "meaning": "a few, several (kilka osób: a few people)"
         },
         {
             "text": "kilka godzin",
             "meaning": "a few hours"
+        },
+        {
+            "text": "kilka osób",
+            "meaning": "a few people"
         },
         {
             "text": "kilo",
@@ -18613,6 +20369,21 @@
         },
         {
             "text": "kilogram",
+            "meaning": "a kilogram"
+        },
+        {
+            "text": "kilogram pieczarek",
+            "meaning": "a kilogram of mushrooms"
+        },
+        {
+            "text": "kilogram ziemniaków"
+        },
+        {
+            "text": "kilogramy",
+            "meaning": "a kilogram"
+        },
+        {
+            "text": "kilogramów",
             "meaning": "a kilogram"
         },
         {
@@ -18659,6 +20430,14 @@
         },
         {
             "text": "kiosku"
+        },
+        {
+            "text": "kiszone ogórki",
+            "meaning": "pickled cucumbers, dill pickles"
+        },
+        {
+            "text": "kiszone ogórki",
+            "meaning": "pickles"
         },
         {
             "text": "kiwi",
@@ -18739,6 +20518,34 @@
             "meaning": "a classmate (a man) and a classmate (a woman)"
         },
         {
+            "text": "kolejek",
+            "meaning": "a queue (nie cierpię kolejek: I hate queues)"
+        },
+        {
+            "text": "kolejka",
+            "meaning": "a queue"
+        },
+        {
+            "text": "kolejka",
+            "meaning": "a queue (nie cierpię kolejek: I hate queues)"
+        },
+        {
+            "text": "kolejki",
+            "meaning": "a queue (nie cierpię kolejek: I hate queues)"
+        },
+        {
+            "text": "kolejkę",
+            "meaning": "a queue (nie cierpię kolejek: I hate queues)"
+        },
+        {
+            "text": "koleżanek",
+            "meaning": "friends (women)"
+        },
+        {
+            "text": "koleżanek",
+            "meaning": "friends, women (after dużo, nie mam…: mam dużo koleżanek)"
+        },
+        {
             "text": "koleżanka",
             "meaning": "a classmate (a woman)"
         },
@@ -18749,6 +20556,9 @@
         {
             "text": "koleżanka i kolega",
             "meaning": "a classmate (a man) and a classmate (a woman)"
+        },
+        {
+            "text": "koleżanki"
         },
         {
             "text": "kolor",
@@ -18815,6 +20625,26 @@
             "meaning": "an injury (after mam: mam kontuzję)"
         },
         {
+            "text": "kopert",
+            "meaning": "an envelope (dwie koperty, pięć kopert; poproszę kopertę)"
+        },
+        {
+            "text": "koperta",
+            "meaning": "an envelope"
+        },
+        {
+            "text": "koperta",
+            "meaning": "an envelope (dwie koperty, pięć kopert; poproszę kopertę)"
+        },
+        {
+            "text": "koperty",
+            "meaning": "an envelope (dwie koperty, pięć kopert; poproszę kopertę)"
+        },
+        {
+            "text": "kopertę",
+            "meaning": "an envelope (dwie koperty, pięć kopert; poproszę kopertę)"
+        },
+        {
             "text": "korzeń",
             "meaning": "a root"
         },
@@ -18827,6 +20657,30 @@
         },
         {
             "text": "kosmetyków"
+        },
+        {
+            "text": "kostek",
+            "meaning": "a block, a cube (kostka masła: a block of butter; dwie kostki, pięć kostek; poproszę kostkę)"
+        },
+        {
+            "text": "kostka",
+            "meaning": "a block, a cube (kostka masła: a block of butter; dwie kostki, pięć kostek; poproszę kostkę)"
+        },
+        {
+            "text": "kostka lodu",
+            "meaning": "an ice cube"
+        },
+        {
+            "text": "kostka masła",
+            "meaning": "a block of butter"
+        },
+        {
+            "text": "kostki",
+            "meaning": "a block, a cube (kostka masła: a block of butter; dwie kostki, pięć kostek; poproszę kostkę)"
+        },
+        {
+            "text": "kostkę",
+            "meaning": "a block, a cube (kostka masła: a block of butter; dwie kostki, pięć kostek; poproszę kostkę)"
         },
         {
             "text": "kosztować",
@@ -18889,6 +20743,17 @@
         {
             "text": "kotlet schabowy i surówka",
             "meaning": "a pork chop and a raw vegetable salad"
+        },
+        {
+            "text": "koty"
+        },
+        {
+            "text": "kotów",
+            "meaning": "cats"
+        },
+        {
+            "text": "kotów",
+            "meaning": "cats (after boję się, dużo…: boję się kotów)"
         },
         {
             "text": "kończy",
@@ -18970,6 +20835,14 @@
         {
             "text": "krótkie",
             "meaning": "short (krótki, krótka, krótkie)"
+        },
+        {
+            "text": "książek",
+            "meaning": "books"
+        },
+        {
+            "text": "książek",
+            "meaning": "books (after dużo, nie mam…: mam dużo książek)"
         },
         {
             "text": "książka",
@@ -19066,6 +20939,10 @@
         {
             "text": "kukurydza jest żółta",
             "meaning": "the sweetcorn is yellow"
+        },
+        {
+            "text": "kukurydzy",
+            "meaning": "sweetcorn (after puszka, nie mam…: puszka kukurydzy)"
         },
         {
             "text": "kupić",
@@ -19223,6 +21100,10 @@
         {
             "text": "kurczak z warzywami",
             "meaning": "chicken with vegetables"
+        },
+        {
+            "text": "kurier",
+            "meaning": "a courier"
         },
         {
             "text": "kurs",
@@ -19386,6 +21267,9 @@
             "text": "lekcja trwa minutę"
         },
         {
+            "text": "lekki"
+        },
+        {
             "text": "lektorka",
             "meaning": "a language teacher (a woman)"
         },
@@ -19435,6 +21319,14 @@
             "meaning": "a letter"
         },
         {
+            "text": "list polecony",
+            "meaning": "a registered letter"
+        },
+        {
+            "text": "list, koperta i znaczek",
+            "meaning": "a letter, an envelope and a stamp"
+        },
+        {
             "text": "lista",
             "meaning": "a list"
         },
@@ -19445,6 +21337,10 @@
         {
             "text": "lista zakupów",
             "meaning": "a shopping list"
+        },
+        {
+            "text": "listonosz",
+            "meaning": "a postman"
         },
         {
             "text": "listę",
@@ -19464,6 +21360,10 @@
         },
         {
             "text": "lodami"
+        },
+        {
+            "text": "lodu",
+            "meaning": "ice (kostka lodu: an ice cube)"
         },
         {
             "text": "lody",
@@ -19689,6 +21589,10 @@
             "meaning": "I like sightseeing"
         },
         {
+            "text": "lód",
+            "meaning": "ice (kostka lodu: an ice cube)"
+        },
+        {
             "text": "ma",
             "meaning": "he has; she has; it has"
         },
@@ -19755,6 +21659,10 @@
             "meaning": "pasta and rice are grains"
         },
         {
+            "text": "makaronu",
+            "meaning": "pasta (after paczka, nie mam…: paczka makaronu)"
+        },
+        {
             "text": "makowiec",
             "meaning": "poppy-seed cake"
         },
@@ -19796,6 +21704,18 @@
         {
             "text": "malinowe",
             "meaning": "raspberry, made with raspberries (malinowy, malinowa, malinowe)"
+        },
+        {
+            "text": "malinowego",
+            "meaning": "raspberry"
+        },
+        {
+            "text": "malinowego",
+            "meaning": "raspberry (malinowego for a masculine noun, malinowej for a feminine one, after słoik, nie mam…: słoik dżemu malinowego)"
+        },
+        {
+            "text": "malinowej",
+            "meaning": "raspberry (malinowego for a masculine noun, malinowej for a feminine one, after słoik, nie mam…: słoik dżemu malinowego)"
         },
         {
             "text": "malinowy",
@@ -19842,6 +21762,9 @@
             "meaning": "I have a brother and a sister"
         },
         {
+            "text": "mam butelkę"
+        },
+        {
             "text": "mam ciocię i wujka",
             "meaning": "I have an aunt and an uncle"
         },
@@ -19851,6 +21774,17 @@
         {
             "text": "mam cztery brzoskwinie",
             "meaning": "I have four peaches"
+        },
+        {
+            "text": "mam do ciebie prośbę",
+            "meaning": "I have a favour to ask you"
+        },
+        {
+            "text": "mam do ciebie prośbę",
+            "meaning": "I have a favour to ask you (one friend)"
+        },
+        {
+            "text": "mam do ciebie pytanie"
         },
         {
             "text": "mam dobrego tatę",
@@ -19971,8 +21905,15 @@
             "meaning": "I am eighteen years old."
         },
         {
+            "text": "mam paczkę",
+            "meaning": "I have a packet"
+        },
+        {
             "text": "mam prawie dwadzieścia lat",
             "meaning": "I'm almost twenty"
+        },
+        {
+            "text": "mam puszkę"
         },
         {
             "text": "mam pytanie, gdzie jest szkoła?",
@@ -20043,6 +21984,14 @@
         {
             "text": "mama ugotowała obiad",
             "meaning": "mum has cooked dinner"
+        },
+        {
+            "text": "mamo!",
+            "meaning": "mum!"
+        },
+        {
+            "text": "mamo!",
+            "meaning": "mum! (calling your mum)"
         },
         {
             "text": "mamy",
@@ -20125,6 +22074,9 @@
             "meaning": "do you have time? (one friend)"
         },
         {
+            "text": "masz do mnie prośbę?"
+        },
+        {
             "text": "masz drobne?",
             "meaning": "do you have small change? (one friend)"
         },
@@ -20188,6 +22140,10 @@
             "meaning": "do you have free time? (one friend)"
         },
         {
+            "text": "masła",
+            "meaning": "butter (after kostka, nie mam…: kostka masła)"
+        },
+        {
             "text": "masłem"
         },
         {
@@ -20224,6 +22180,18 @@
         {
             "text": "małego",
             "meaning": "small (małego for a man or an animal, małą for a feminine noun: after proszę, mam…)"
+        },
+        {
+            "text": "mało",
+            "meaning": "few, little"
+        },
+        {
+            "text": "mało",
+            "meaning": "few, little, not much (mało czasu: not much time)"
+        },
+        {
+            "text": "mało nauczycieli",
+            "meaning": "few teachers"
         },
         {
             "text": "mały",
@@ -20759,6 +22727,14 @@
             "meaning": "maybe"
         },
         {
+            "text": "może być",
+            "meaning": "is that all right? that will do (może być trochę więcej?: is a bit more all right?)"
+        },
+        {
+            "text": "może być?",
+            "meaning": "will that do?"
+        },
+        {
             "text": "może galeria handlowa?",
             "meaning": "maybe the shopping centre?"
         },
@@ -20794,6 +22770,14 @@
         {
             "text": "możesz",
             "meaning": "you can (one friend; you are free to, you may)"
+        },
+        {
+            "text": "możesz iść na zakupy?",
+            "meaning": "can you go shopping?"
+        },
+        {
+            "text": "możesz mi pomóc?",
+            "meaning": "can you help me? (one friend)"
         },
         {
             "text": "mrożonki",
@@ -20861,6 +22845,10 @@
             "meaning": "you must, you have to (one friend)"
         },
         {
+            "text": "musztardy",
+            "meaning": "mustard (after słoik, nie mam…: słoik musztardy)"
+        },
+        {
             "text": "muszą"
         },
         {
@@ -20881,6 +22869,16 @@
         {
             "text": "muszę uczyć się do egzaminu",
             "meaning": "I have to study for an exam"
+        },
+        {
+            "text": "muszę wysłać list polecony"
+        },
+        {
+            "text": "muszę wysłać ważny list",
+            "meaning": "I must send an important letter"
+        },
+        {
+            "text": "muszę wysłać ważną paczkę"
         },
         {
             "text": "muzeum",
@@ -21052,6 +23050,9 @@
             "meaning": "to be able to"
         },
         {
+            "text": "mógłbyś"
+        },
+        {
             "text": "mój",
             "meaning": "my (with a masculine noun)"
         },
@@ -21138,6 +23139,10 @@
         {
             "text": "mój numer telefonu to trzynaście, dwadzieścia sześć, jedenaście",
             "meaning": "my phone number is thirteen, twenty-six, eleven"
+        },
+        {
+            "text": "mój plecak jest bardzo ciężki",
+            "meaning": "my rucksack is very heavy"
         },
         {
             "text": "mój syn"
@@ -21503,6 +23508,14 @@
             "meaning": "there is soup for dinner"
         },
         {
+            "text": "na osobę",
+            "meaning": "per person"
+        },
+        {
+            "text": "na osobę",
+            "meaning": "per person, each (dwie puszki na osobę)"
+        },
+        {
             "text": "na pewno",
             "meaning": "certainly"
         },
@@ -21525,6 +23538,34 @@
         {
             "text": "na piechotę",
             "meaning": "on foot"
+        },
+        {
+            "text": "na piknik",
+            "meaning": "to a picnic; for a picnic (zakupy na piknik: shopping for a picnic)"
+        },
+        {
+            "text": "na piknik idzie dużo nauczycieli"
+        },
+        {
+            "text": "na piknik idzie dużo osób",
+            "meaning": "a lot of people are going to the picnic"
+        },
+        {
+            "text": "na piknik idzie dużo studentów",
+            "meaning": "a lot of students are going to the picnic"
+        },
+        {
+            "text": "na piknik idzie kilka osób"
+        },
+        {
+            "text": "na piknik idzie mało osób"
+        },
+        {
+            "text": "na piknik idzie mało studentów"
+        },
+        {
+            "text": "na pocztę",
+            "meaning": "to the post office (idę na pocztę)"
         },
         {
             "text": "na policję",
@@ -21723,6 +23764,10 @@
             "meaning": "dairy (milk, cheese, yoghurt)"
         },
         {
+            "text": "nadać paczkę",
+            "meaning": "send a parcel (to send a parcel at the post office)"
+        },
+        {
             "text": "nagroda",
             "meaning": "a prize"
         },
@@ -21776,6 +23821,17 @@
         {
             "text": "napoje",
             "meaning": "drinks"
+        },
+        {
+            "text": "naprawdę",
+            "meaning": "really"
+        },
+        {
+            "text": "naprawdę",
+            "meaning": "really, honestly"
+        },
+        {
+            "text": "naprawdę nie"
         },
         {
             "text": "naprzeciwko",
@@ -21916,6 +23972,10 @@
             "meaning": "a teacher (a man) and a teacher (a woman)"
         },
         {
+            "text": "nauczycieli",
+            "meaning": "teachers (men, or men and women; after dużo, mało…: mało nauczycieli)"
+        },
+        {
             "text": "nauczycielka",
             "meaning": "a teacher (a woman)"
         },
@@ -21994,6 +24054,14 @@
             "meaning": "no"
         },
         {
+            "text": "nie cierpię",
+            "meaning": "I can't stand"
+        },
+        {
+            "text": "nie cierpię",
+            "meaning": "I can't stand, I hate (nie cierpię kolejek)"
+        },
+        {
             "text": "nie dam rady",
             "meaning": "I can't make it"
         },
@@ -22005,8 +24073,15 @@
             "text": "nie dam rady, jestem zmęczona"
         },
         {
+            "text": "nie jem owoców",
+            "meaning": "I don't eat fruit"
+        },
+        {
             "text": "nie jem sera",
             "meaning": "I don't eat cheese"
+        },
+        {
+            "text": "nie jem warzyw"
         },
         {
             "text": "nie jestem Polakiem, jestem Anglikiem",
@@ -22029,15 +24104,42 @@
             "meaning": "there isn't, there aren't (czy jest sok? nie, nie ma)"
         },
         {
+            "text": "nie ma go",
+            "meaning": "he isn't here"
+        },
+        {
+            "text": "nie ma go",
+            "meaning": "he isn't here; it isn't here"
+        },
+        {
             "text": "nie ma kompotu",
             "meaning": "there's no compote"
+        },
+        {
+            "text": "nie ma problemu",
+            "meaning": "no problem"
+        },
+        {
+            "text": "nie ma problemu, a co robisz?"
         },
         {
             "text": "nie ma soku"
         },
         {
             "text": "nie ma sprawy",
+            "meaning": "no problem"
+        },
+        {
+            "text": "nie ma sprawy",
+            "meaning": "sure, no problem"
+        },
+        {
+            "text": "nie ma sprawy",
             "meaning": "you're welcome"
+        },
+        {
+            "text": "nie ma sprawy, a o co chodzi?",
+            "meaning": "sure, what's up?"
         },
         {
             "text": "nie ma za co",
@@ -22061,10 +24163,21 @@
         },
         {
             "text": "nie mam czasu",
+            "meaning": "I don't have time"
+        },
+        {
+            "text": "nie mam czasu",
             "meaning": "I have no time"
         },
         {
+            "text": "nie mam czasu, a o co chodzi?"
+        },
+        {
             "text": "nie mam kompotu"
+        },
+        {
+            "text": "nie mam nowych książek",
+            "meaning": "I haven't got any new books"
         },
         {
             "text": "nie mam ochoty na jajecznicę"
@@ -22072,6 +24185,10 @@
         {
             "text": "nie mam planów",
             "meaning": "I have no plans"
+        },
+        {
+            "text": "nie mam pojęcia",
+            "meaning": "I have no idea"
         },
         {
             "text": "nie mam soku",
@@ -22088,6 +24205,14 @@
         {
             "text": "nie mogę dzisiaj",
             "meaning": "I can't today"
+        },
+        {
+            "text": "nie odbierasz",
+            "meaning": "you don't answer"
+        },
+        {
+            "text": "nie odbierasz",
+            "meaning": "you don't answer (the phone)"
         },
         {
             "text": "nie odpisywałaś!",
@@ -22164,6 +24289,18 @@
         {
             "text": "nie umiem śpiewać",
             "meaning": "I can't sing"
+        },
+        {
+            "text": "nie widzę",
+            "meaning": "I can't see"
+        },
+        {
+            "text": "nie widzę",
+            "meaning": "I can't see, I don't see"
+        },
+        {
+            "text": "nie widzę ich",
+            "meaning": "I can't see them"
         },
         {
             "text": "nie wiedziałem",
@@ -22283,6 +24420,18 @@
             "meaning": "Sunday (w niedzielę: on Sunday)"
         },
         {
+            "text": "niegazowana",
+            "meaning": "still, not fizzy (woda niegazowana: still water) (niegazowany, niegazowana, niegazowane)"
+        },
+        {
+            "text": "niegazowane",
+            "meaning": "still, not fizzy (woda niegazowana: still water) (niegazowany, niegazowana, niegazowane)"
+        },
+        {
+            "text": "niegazowany",
+            "meaning": "still, not fizzy (woda niegazowana: still water) (niegazowany, niegazowana, niegazowane)"
+        },
+        {
             "text": "niego"
         },
         {
@@ -22294,11 +24443,23 @@
         },
         {
             "text": "niestety, nie mam czasu",
+            "meaning": "unfortunately, I don't have time"
+        },
+        {
+            "text": "niestety, nie mam czasu",
             "meaning": "unfortunately, I have no time"
         },
         {
             "text": "niestety, nie wiem",
             "meaning": "unfortunately, I don't know"
+        },
+        {
+            "text": "niewiele",
+            "meaning": "not many"
+        },
+        {
+            "text": "niewiele",
+            "meaning": "not many, not much (niewiele osób: not many people)"
         },
         {
             "text": "niezła",
@@ -22405,6 +24566,10 @@
             "meaning": "new (nowy, nowa, nowe)"
         },
         {
+            "text": "nowych",
+            "meaning": "new (with a plural noun, after dużo, nie mam…: nie mam nowych książek)"
+        },
+        {
             "text": "nudzi"
         },
         {
@@ -22493,6 +24658,10 @@
         },
         {
             "text": "o 9"
+        },
+        {
+            "text": "o co chodzi?",
+            "meaning": "what is it about? what's up?"
         },
         {
             "text": "o czternastej",
@@ -22772,6 +24941,16 @@
         {
             "text": "oglądam",
             "meaning": "I watch"
+        },
+        {
+            "text": "oglądam dużo filmów"
+        },
+        {
+            "text": "oglądam dużo seriali",
+            "meaning": "I watch a lot of TV series"
+        },
+        {
+            "text": "oglądam mało seriali"
         },
         {
             "text": "oglądam polską telewizję",
@@ -23513,6 +25692,18 @@
             "meaning": "nuts and raisins"
         },
         {
+            "text": "orzeszki",
+            "meaning": "peanuts"
+        },
+        {
+            "text": "orzeszki",
+            "meaning": "peanuts (puszka orzeszków: a can of peanuts)"
+        },
+        {
+            "text": "orzeszków",
+            "meaning": "peanuts (puszka orzeszków: a can of peanuts)"
+        },
+        {
             "text": "osiem",
             "meaning": "8"
         },
@@ -23587,7 +25778,12 @@
             "text": "osiemset siedemdziesiąt cztery"
         },
         {
-            "text": "osoby"
+            "text": "osoba",
+            "meaning": "a person (dwie osoby; pięć osób; wiele osób: many people)"
+        },
+        {
+            "text": "osoby",
+            "meaning": "a person (dwie osoby; pięć osób; wiele osób: many people)"
         },
         {
             "text": "ostatnio",
@@ -23612,6 +25808,10 @@
         {
             "text": "ostry",
             "meaning": "spicy"
+        },
+        {
+            "text": "osób",
+            "meaning": "a person (dwie osoby; pięć osób; wiele osób: many people)"
         },
         {
             "text": "otwieram",
@@ -23670,6 +25870,14 @@
             "meaning": "fruit, made with fruit (owocowy, owocowa, owocowe)"
         },
         {
+            "text": "owoców",
+            "meaning": "fruit"
+        },
+        {
+            "text": "owoców",
+            "meaning": "fruit (after dużo, nie jem…: nie jem owoców)"
+        },
+        {
             "text": "ołówek",
             "meaning": "a pencil"
         },
@@ -23698,8 +25906,71 @@
             "meaning": "it smells nice (to pachnie!: that smells good!)"
         },
         {
+            "text": "paczek",
+            "meaning": "a packet; a parcel (dwie paczki, pięć paczek; poproszę paczkę)"
+        },
+        {
+            "text": "paczka",
+            "meaning": "a packet"
+        },
+        {
+            "text": "paczka",
+            "meaning": "a packet; a parcel (dwie paczki, pięć paczek; poproszę paczkę)"
+        },
+        {
+            "text": "paczka chusteczek i guma do żucia",
+            "meaning": "a packet of tissues and chewing gum"
+        },
+        {
+            "text": "paczka makaronu",
+            "meaning": "a packet of pasta"
+        },
+        {
+            "text": "paczka makaronu i puszka kukurydzy",
+            "meaning": "a packet of pasta and a can of sweetcorn"
+        },
+        {
+            "text": "paczki",
+            "meaning": "a packet; a parcel (dwie paczki, pięć paczek; poproszę paczkę)"
+        },
+        {
+            "text": "paczkomat",
+            "meaning": "a parcel locker"
+        },
+        {
+            "text": "paczkę",
+            "meaning": "a packet; a parcel (dwie paczki, pięć paczek; poproszę paczkę)"
+        },
+        {
+            "text": "paczkę czarnej herbaty",
+            "meaning": "a packet of black tea"
+        },
+        {
             "text": "padał deszcz",
             "meaning": "it was raining"
+        },
+        {
+            "text": "pakujemy się?"
+        },
+        {
+            "text": "pakujesz się",
+            "meaning": "you are packing (one friend)"
+        },
+        {
+            "text": "pakujesz się?",
+            "meaning": "are you packing?"
+        },
+        {
+            "text": "paluszki",
+            "meaning": "pretzel sticks"
+        },
+        {
+            "text": "paluszki",
+            "meaning": "pretzel sticks (paczka paluszków: a packet of pretzel sticks)"
+        },
+        {
+            "text": "paluszków",
+            "meaning": "pretzel sticks (paczka paluszków: a packet of pretzel sticks)"
         },
         {
             "text": "pamiętam",
@@ -23797,6 +26068,10 @@
         {
             "text": "pewny",
             "meaning": "sure, certain (pewny, pewna, pewne)"
+        },
+        {
+            "text": "pieczarek",
+            "meaning": "mushrooms (after kilo, kilogram…: kilogram pieczarek)"
         },
         {
             "text": "pieczarkami"
@@ -23970,6 +26245,10 @@
             "text": "piję kawę"
         },
         {
+            "text": "piknik",
+            "meaning": "a picnic"
+        },
+        {
             "text": "pisarz",
             "meaning": "a writer"
         },
@@ -24132,7 +26411,32 @@
             "meaning": "five"
         },
         {
+            "text": "pięć butelek",
+            "meaning": "five bottles"
+        },
+        {
             "text": "pięć dni temu"
+        },
+        {
+            "text": "pięć kartonów",
+            "meaning": "five cartons"
+        },
+        {
+            "text": "pięć kartonów soku"
+        },
+        {
+            "text": "pięć kartonów soku!",
+            "meaning": "five cartons of juice!"
+        },
+        {
+            "text": "pięć kawałków ciasta"
+        },
+        {
+            "text": "pięć kilogramów papryki"
+        },
+        {
+            "text": "pięć kilogramów ziemniaków",
+            "meaning": "five kilograms of potatoes"
         },
         {
             "text": "pięć lat"
@@ -24152,6 +26456,10 @@
         {
             "text": "pięć minus jeden to jest cztery",
             "meaning": "five minus one is four"
+        },
+        {
+            "text": "pięć paczek chipsów",
+            "meaning": "five packets of crisps"
         },
         {
             "text": "pięć po czwartej",
@@ -24206,6 +26514,24 @@
             "meaning": "five past eight"
         },
         {
+            "text": "pięć puszek coli",
+            "meaning": "five cans of cola"
+        },
+        {
+            "text": "pięć słoików",
+            "meaning": "five jars"
+        },
+        {
+            "text": "pięć słoików dżemu"
+        },
+        {
+            "text": "pięć słoików musztardy",
+            "meaning": "five jars of mustard"
+        },
+        {
+            "text": "pięć znaczków"
+        },
+        {
             "text": "pięć, cztery, trzy, dwa, jeden, zero",
             "meaning": "five, four, three, two, one, zero"
         },
@@ -24257,6 +26583,22 @@
         {
             "text": "planuję imprezę",
             "meaning": "I'm planning a party"
+        },
+        {
+            "text": "plasterek",
+            "meaning": "a slice (dwa plasterki, pięć plasterków)"
+        },
+        {
+            "text": "plasterek szynki",
+            "meaning": "a slice of ham"
+        },
+        {
+            "text": "plasterki",
+            "meaning": "a slice (dwa plasterki, pięć plasterków)"
+        },
+        {
+            "text": "plasterków",
+            "meaning": "a slice (dwa plasterki, pięć plasterków)"
         },
         {
             "text": "plecak",
@@ -24354,6 +26696,34 @@
         {
             "text": "pociągiem",
             "meaning": "by train (pociąg: a train)"
+        },
+        {
+            "text": "poczta",
+            "meaning": "a post office"
+        },
+        {
+            "text": "poczta",
+            "meaning": "a post office; the post"
+        },
+        {
+            "text": "pocztówek",
+            "meaning": "a postcard (dwie pocztówki, pięć pocztówek; znaczek na pocztówkę: a stamp for a postcard)"
+        },
+        {
+            "text": "pocztówka",
+            "meaning": "a postcard"
+        },
+        {
+            "text": "pocztówka",
+            "meaning": "a postcard (dwie pocztówki, pięć pocztówek; znaczek na pocztówkę: a stamp for a postcard)"
+        },
+        {
+            "text": "pocztówki",
+            "meaning": "a postcard (dwie pocztówki, pięć pocztówek; znaczek na pocztówkę: a stamp for a postcard)"
+        },
+        {
+            "text": "pocztówkę",
+            "meaning": "a postcard (dwie pocztówki, pięć pocztówek; znaczek na pocztówkę: a stamp for a postcard)"
         },
         {
             "text": "pod pomnikiem",
@@ -24526,6 +26896,14 @@
             "meaning": "orange (pomarańczowy, pomarańczowa, pomarańczowe)"
         },
         {
+            "text": "pomarańczowego",
+            "meaning": "orange (pomarańczowego for a masculine noun, pomarańczowej for a feminine one, after karton, nie mam…: karton soku pomarańczowego)"
+        },
+        {
+            "text": "pomarańczowej",
+            "meaning": "orange (pomarańczowego for a masculine noun, pomarańczowej for a feminine one, after karton, nie mam…: karton soku pomarańczowego)"
+        },
+        {
             "text": "pomarańczowy",
             "meaning": "orange"
         },
@@ -24560,8 +26938,23 @@
             "meaning": "a monument, a statue"
         },
         {
+            "text": "pomoc",
+            "meaning": "help"
+        },
+        {
+            "text": "pomoc",
+            "meaning": "help (prosić o pomoc: to ask for help)"
+        },
+        {
+            "text": "pomogę",
+            "meaning": "I'll help (chętnie pani pomogę: I'll gladly help you)"
+        },
+        {
             "text": "pomysł",
             "meaning": "an idea (świetny pomysł!: a great idea!)"
+        },
+        {
+            "text": "pomóc"
         },
         {
             "text": "poniedziałek",
@@ -24774,6 +27167,37 @@
             "meaning": "a dish"
         },
         {
+            "text": "potrzebuje"
+        },
+        {
+            "text": "potrzebujecie"
+        },
+        {
+            "text": "potrzebujemy"
+        },
+        {
+            "text": "potrzebujesz"
+        },
+        {
+            "text": "potrzebują",
+            "meaning": "they need"
+        },
+        {
+            "text": "potrzebuję",
+            "meaning": "I need"
+        },
+        {
+            "text": "potrzebuję",
+            "meaning": "I need (potrzebuję samochodu: I need a car)"
+        },
+        {
+            "text": "potrzebuję roweru"
+        },
+        {
+            "text": "potrzebuję samochodu",
+            "meaning": "I need a car"
+        },
+        {
             "text": "powiedzieć"
         },
         {
@@ -24934,6 +27358,9 @@
         {
             "text": "problem",
             "meaning": "a problem"
+        },
+        {
+            "text": "problemu"
         },
         {
             "text": "produkt",
@@ -25150,6 +27577,18 @@
             "meaning": "here you are, this is the menu"
         },
         {
+            "text": "prośba",
+            "meaning": "a request"
+        },
+        {
+            "text": "prośba",
+            "meaning": "a request, a favour (mam prośbę: I have a favour to ask)"
+        },
+        {
+            "text": "prośbę",
+            "meaning": "a request, a favour (mam prośbę: I have a favour to ask)"
+        },
+        {
             "text": "prysznic",
             "meaning": "a shower (biorę prysznic: I have a shower)"
         },
@@ -25346,6 +27785,60 @@
             "text": "pubu"
         },
         {
+            "text": "pudełek",
+            "meaning": "a box (dwa pudełka, pięć pudełek)"
+        },
+        {
+            "text": "pudełka",
+            "meaning": "a box (dwa pudełka, pięć pudełek)"
+        },
+        {
+            "text": "pudełko",
+            "meaning": "a box"
+        },
+        {
+            "text": "pudełko",
+            "meaning": "a box (dwa pudełka, pięć pudełek)"
+        },
+        {
+            "text": "pudełko czekoladek"
+        },
+        {
+            "text": "pudełko zapałek",
+            "meaning": "a box of matches"
+        },
+        {
+            "text": "puszek",
+            "meaning": "a can, a tin (dwie puszki: two cans; pięć puszek: five cans; poproszę puszkę: a can, please)"
+        },
+        {
+            "text": "puszka",
+            "meaning": "a can"
+        },
+        {
+            "text": "puszka",
+            "meaning": "a can, a tin (dwie puszki: two cans; pięć puszek: five cans; poproszę puszkę: a can, please)"
+        },
+        {
+            "text": "puszka coli",
+            "meaning": "a can of cola"
+        },
+        {
+            "text": "puszka kukurydzy",
+            "meaning": "a can of sweetcorn"
+        },
+        {
+            "text": "puszka piwa"
+        },
+        {
+            "text": "puszki",
+            "meaning": "a can, a tin (dwie puszki: two cans; pięć puszek: five cans; poproszę puszkę: a can, please)"
+        },
+        {
+            "text": "puszkę",
+            "meaning": "a can, a tin (dwie puszki: two cans; pięć puszek: five cans; poproszę puszkę: a can, please)"
+        },
+        {
             "text": "pyszna",
             "meaning": "delicious (pyszny, pyszna, pyszne)"
         },
@@ -25387,6 +27880,17 @@
         {
             "text": "pół kilo, proszę",
             "meaning": "half a kilo, please"
+        },
+        {
+            "text": "pół kilograma",
+            "meaning": "half a kilogram"
+        },
+        {
+            "text": "pół kilograma pieczarek"
+        },
+        {
+            "text": "pół kilograma wystarczy",
+            "meaning": "half a kilogram is enough"
         },
         {
             "text": "pół roku",
@@ -25876,6 +28380,10 @@
             "meaning": "by car"
         },
         {
+            "text": "samochodu",
+            "meaning": "a car (after potrzebuję, nie mam…: potrzebuję samochodu)"
+        },
+        {
             "text": "samoobsługowa",
             "meaning": "self-service (samoobsługowy, samoobsługowa, samoobsługowe)"
         },
@@ -25989,6 +28497,14 @@
         {
             "text": "serial",
             "meaning": "a TV series"
+        },
+        {
+            "text": "seriali",
+            "meaning": "TV series"
+        },
+        {
+            "text": "seriali",
+            "meaning": "TV series (after dużo, nie oglądam…: nie oglądam seriali)"
         },
         {
             "text": "serio?",
@@ -26601,6 +29117,10 @@
             "meaning": "a student (a man) and a student (a woman)"
         },
         {
+            "text": "studentów",
+            "meaning": "students (men, or men and women; after dużo, mało…: dużo studentów)"
+        },
+        {
             "text": "studiować",
             "meaning": "study (at a university)"
         },
@@ -26947,15 +29467,41 @@
             "text": "szkoły"
         },
         {
+            "text": "szukają",
+            "meaning": "they are looking for"
+        },
+        {
+            "text": "szukają osoby",
+            "meaning": "they are looking for a person"
+        },
+        {
             "text": "szukam",
             "meaning": "I am looking for"
+        },
+        {
+            "text": "szukam go"
         },
         {
             "text": "szukam informacji",
             "meaning": "I'm looking for information"
         },
         {
-            "text": "szukasz"
+            "text": "szukam jej",
+            "meaning": "I'm looking for her"
+        },
+        {
+            "text": "szukam samochodu"
+        },
+        {
+            "text": "szukasz",
+            "meaning": "you are looking for"
+        },
+        {
+            "text": "szukasz",
+            "meaning": "you are looking for (one friend)"
+        },
+        {
+            "text": "szukasz jej"
         },
         {
             "text": "szynka",
@@ -26964,6 +29510,10 @@
         {
             "text": "szynka jest dobra",
             "meaning": "the ham is good"
+        },
+        {
+            "text": "szynki",
+            "meaning": "ham (after plasterek, nie mam…: plasterek szynki)"
         },
         {
             "text": "szynką"
@@ -27068,6 +29618,41 @@
         {
             "text": "słodycze i mrożonki",
             "meaning": "frozen food and sweets"
+        },
+        {
+            "text": "słoik",
+            "meaning": "a jar"
+        },
+        {
+            "text": "słoik",
+            "meaning": "a jar (dwa słoiki, pięć słoików)"
+        },
+        {
+            "text": "słoik czy puszka?",
+            "meaning": "a jar or a can?"
+        },
+        {
+            "text": "słoik dżemu",
+            "meaning": "a jar of jam"
+        },
+        {
+            "text": "słoik dżemu malinowego",
+            "meaning": "a jar of raspberry jam"
+        },
+        {
+            "text": "słoik miodu"
+        },
+        {
+            "text": "słoik musztardy",
+            "meaning": "a jar of mustard"
+        },
+        {
+            "text": "słoiki",
+            "meaning": "a jar (dwa słoiki, pięć słoików)"
+        },
+        {
+            "text": "słoików",
+            "meaning": "a jar (dwa słoiki, pięć słoików)"
         },
         {
             "text": "słona",
@@ -27243,6 +29828,26 @@
         {
             "text": "tablica",
             "meaning": "a board, in a classroom"
+        },
+        {
+            "text": "tabliczek",
+            "meaning": "a bar (tabliczka czekolady: a bar of chocolate; dwie tabliczki, pięć tabliczek)"
+        },
+        {
+            "text": "tabliczka",
+            "meaning": "a bar (tabliczka czekolady: a bar of chocolate; dwie tabliczki, pięć tabliczek)"
+        },
+        {
+            "text": "tabliczka czekolady",
+            "meaning": "a bar of chocolate"
+        },
+        {
+            "text": "tabliczki",
+            "meaning": "a bar (tabliczka czekolady: a bar of chocolate; dwie tabliczki, pięć tabliczek)"
+        },
+        {
+            "text": "tabliczkę",
+            "meaning": "a bar (tabliczka czekolady: a bar of chocolate; dwie tabliczki, pięć tabliczek)"
         },
         {
             "text": "tak",
@@ -27772,6 +30377,10 @@
             "text": "to jest biernik"
         },
         {
+            "text": "to jest butelka",
+            "meaning": "this is a bottle"
+        },
+        {
             "text": "to jest ciekawe słowo",
             "meaning": "it is an interesting word"
         },
@@ -27979,6 +30588,10 @@
             "text": "to jest ołówek"
         },
         {
+            "text": "to jest paczkomat",
+            "meaning": "this is a parcel locker"
+        },
+        {
             "text": "to jest patelnia",
             "meaning": "this is a frying pan"
         },
@@ -27999,6 +30612,13 @@
         {
             "text": "to jest pomarańczowy kubek",
             "meaning": "it is an orange mug"
+        },
+        {
+            "text": "to jest pudełko",
+            "meaning": "this is a box"
+        },
+        {
+            "text": "to jest puszka"
         },
         {
             "text": "to jest pytanie"
@@ -28221,6 +30841,9 @@
             "meaning": "it isn't; this isn't (to nie jest ołówek)"
         },
         {
+            "text": "to nie jest butelka"
+        },
+        {
             "text": "to nie jest dziennikarz, to jest fotograf",
             "meaning": "it isn't a journalist, it's a photographer"
         },
@@ -28364,6 +30987,10 @@
             "meaning": "that's all"
         },
         {
+            "text": "to zależy",
+            "meaning": "it depends"
+        },
+        {
             "text": "to znany pomnik",
             "meaning": "this is a famous monument"
         },
@@ -28388,6 +31015,14 @@
         {
             "text": "torba to rzeczownik",
             "meaning": "'torba' is a noun"
+        },
+        {
+            "text": "tort",
+            "meaning": "a gateau, a layer cake (kawałek tortu: a piece of gateau)"
+        },
+        {
+            "text": "tortu",
+            "meaning": "a gateau, a layer cake (kawałek tortu: a piece of gateau)"
         },
         {
             "text": "tost",
@@ -28420,6 +31055,13 @@
         {
             "text": "trochę mówię po polsku",
             "meaning": "I speak a little Polish"
+        },
+        {
+            "text": "trochę wina"
+        },
+        {
+            "text": "trochę wody",
+            "meaning": "a little water"
         },
         {
             "text": "troszeczkę"
@@ -28487,6 +31129,13 @@
         {
             "text": "trzy",
             "meaning": "three"
+        },
+        {
+            "text": "trzy kilogramy papryki",
+            "meaning": "three kilograms of peppers"
+        },
+        {
+            "text": "trzy kilogramy pieczarek"
         },
         {
             "text": "trzy lata temu"
@@ -29056,6 +31705,10 @@
             "meaning": "can you dance? (one friend)"
         },
         {
+            "text": "umyć naczynia",
+            "meaning": "do the washing-up (to wash the dishes)"
+        },
+        {
             "text": "umyłam",
             "meaning": "I washed (umyłam: a woman says it; umyłem: a man; umyłam zęby: I brushed my teeth)"
         },
@@ -29459,6 +32112,10 @@
             "meaning": "tennis (after grać: gram w tenisa)"
         },
         {
+            "text": "w torbie",
+            "meaning": "in the bag"
+        },
+        {
             "text": "w tygodniu",
             "meaning": "a week (dwa razy w tygodniu: twice a week)"
         },
@@ -29577,6 +32234,22 @@
         {
             "text": "wasze mieszkanie",
             "meaning": "your flat (several people)"
+        },
+        {
+            "text": "ważna",
+            "meaning": "important (ważny, ważna, ważne)"
+        },
+        {
+            "text": "ważne",
+            "meaning": "important (ważny, ważna, ważne)"
+        },
+        {
+            "text": "ważny",
+            "meaning": "important"
+        },
+        {
+            "text": "ważny",
+            "meaning": "important (ważny, ważna, ważne)"
         },
         {
             "text": "wcześnie",
@@ -29718,6 +32391,14 @@
         {
             "text": "wiedziałem",
             "meaning": "I knew (wiedziałem: a man says it; wiedziałam: a woman)"
+        },
+        {
+            "text": "wiele",
+            "meaning": "many"
+        },
+        {
+            "text": "wiele",
+            "meaning": "many, a lot of (wiele osób: many people)"
         },
         {
             "text": "wiem",
@@ -29864,8 +32545,16 @@
             "meaning": "water"
         },
         {
+            "text": "woda gazowana",
+            "meaning": "sparkling water"
+        },
+        {
             "text": "woda mineralna",
             "meaning": "mineral water"
+        },
+        {
+            "text": "woda niegazowana",
+            "meaning": "still water"
         },
         {
             "text": "wody",
@@ -29878,6 +32567,22 @@
         {
             "text": "wodę",
             "meaning": "water (after proszę, mam…: proszę wodę)"
+        },
+        {
+            "text": "wolałabym nie",
+            "meaning": "I'd rather not (a man says it; wolałabym nie: a woman)"
+        },
+        {
+            "text": "wolałbym nie",
+            "meaning": "I'd rather not"
+        },
+        {
+            "text": "wolałbym nie",
+            "meaning": "I'd rather not (a man says it)"
+        },
+        {
+            "text": "wolałbym nie",
+            "meaning": "I'd rather not (a man says it; wolałabym nie: a woman)"
         },
         {
             "text": "wolały",
@@ -30310,6 +33015,22 @@
             "meaning": "sporty, athletic (wysportowany, wysportowana, wysportowane)"
         },
         {
+            "text": "wystarczy",
+            "meaning": "that's enough"
+        },
+        {
+            "text": "wystarczy",
+            "meaning": "that's enough, that will do"
+        },
+        {
+            "text": "wysłać",
+            "meaning": "send (to send, once: wysłać list)"
+        },
+        {
+            "text": "wysłać",
+            "meaning": "to send"
+        },
+        {
             "text": "wytrawna",
             "meaning": "dry (of wine) (wytrawny, wytrawna, wytrawne)"
         },
@@ -30580,6 +33301,10 @@
             "meaning": "too (za słony: too salty)"
         },
         {
+            "text": "za dużo",
+            "meaning": "too much, too many"
+        },
+        {
             "text": "za dwadzieścia czwarta",
             "meaning": "3:40"
         },
@@ -30724,6 +33449,10 @@
             "meaning": "7:45"
         },
         {
+            "text": "za mało",
+            "meaning": "too little, not enough"
+        },
+        {
             "text": "za pięć czwarta",
             "meaning": "3:55"
         },
@@ -30840,6 +33569,10 @@
             "meaning": "shopping (robić zakupy: to do the shopping)"
         },
         {
+            "text": "zależy",
+            "meaning": "it depends (to zależy: it depends; zależy od wagi: it depends on the weight)"
+        },
+        {
             "text": "zamawia"
         },
         {
@@ -30882,6 +33615,14 @@
         {
             "text": "zamknięty",
             "meaning": "closed, shut (zamknięty, zamknięta, zamknięte)"
+        },
+        {
+            "text": "zapałek",
+            "meaning": "matches (pudełko zapałek: a box of matches)"
+        },
+        {
+            "text": "zapałki",
+            "meaning": "matches (pudełko zapałek: a box of matches)"
         },
         {
             "text": "zapiekanka",
@@ -31129,6 +33870,26 @@
             "meaning": "a notebook"
         },
         {
+            "text": "zgrzewek",
+            "meaning": "a multipack, a shrink-wrapped pack (zgrzewka wody: a pack of bottles of water, usually six)"
+        },
+        {
+            "text": "zgrzewka",
+            "meaning": "a multipack"
+        },
+        {
+            "text": "zgrzewka",
+            "meaning": "a multipack, a shrink-wrapped pack (zgrzewka wody: a pack of bottles of water, usually six)"
+        },
+        {
+            "text": "zgrzewki",
+            "meaning": "a multipack, a shrink-wrapped pack (zgrzewka wody: a pack of bottles of water, usually six)"
+        },
+        {
+            "text": "zgrzewkę",
+            "meaning": "a multipack, a shrink-wrapped pack (zgrzewka wody: a pack of bottles of water, usually six)"
+        },
+        {
             "text": "zielona",
             "meaning": "green (zielony, zielona, zielone)"
         },
@@ -31170,6 +33931,10 @@
         {
             "text": "ziemniaki",
             "meaning": "potatoes"
+        },
+        {
+            "text": "ziemniaków",
+            "meaning": "potatoes (after kilo, kilogram…: pięć kilogramów ziemniaków)"
         },
         {
             "text": "zimna",
@@ -31242,6 +34007,22 @@
         },
         {
             "text": "znacie"
+        },
+        {
+            "text": "znaczek",
+            "meaning": "a stamp"
+        },
+        {
+            "text": "znaczek",
+            "meaning": "a stamp (dwa znaczki, pięć znaczków)"
+        },
+        {
+            "text": "znaczki",
+            "meaning": "a stamp (dwa znaczki, pięć znaczków)"
+        },
+        {
+            "text": "znaczków",
+            "meaning": "a stamp (dwa znaczki, pięć znaczków)"
         },
         {
             "text": "znaczy"
@@ -31499,6 +34280,10 @@
             "text": "Ćwiczę liczebniki."
         },
         {
+            "text": "Ćwierć kilo to dwieście pięćdziesiąt gramów.",
+            "meaning": "A quarter of a kilo is two hundred and fifty grams."
+        },
+        {
             "text": "ćwiczenie",
             "meaning": "an exercise"
         },
@@ -31520,6 +34305,14 @@
         {
             "text": "ćwiczę liczebniki",
             "meaning": "I practise numerals"
+        },
+        {
+            "text": "ćwierć kilo",
+            "meaning": "a quarter of a kilo"
+        },
+        {
+            "text": "ćwierć kilo",
+            "meaning": "a quarter of a kilo (250 grams)"
         },
         {
             "text": "Ładne zdjęcie i ładna rodzina!",
@@ -31613,6 +34406,9 @@
         {
             "text": "Śniadanie",
             "meaning": "Breakfast"
+        },
+        {
+            "text": "Śpi."
         },
         {
             "text": "Śpiewać."
@@ -31984,6 +34780,18 @@
         {
             "text": "żółte",
             "meaning": "yellow (żółty, żółta, żółte)"
+        },
+        {
+            "text": "żółtego",
+            "meaning": "yellow"
+        },
+        {
+            "text": "żółtego",
+            "meaning": "yellow (żółtego for a masculine noun, żółtej for a feminine one, after kawałek, nie mam…: kawałek żółtego sera)"
+        },
+        {
+            "text": "żółtej",
+            "meaning": "yellow (żółtego for a masculine noun, żółtej for a feminine one, after kawałek, nie mam…: kawałek żółtego sera)"
         },
         {
             "text": "żółty",
@@ -32581,6 +35389,22 @@
         {
             "id": "chat-on-the-desk/t7/2",
             "hash": "f319211d75a0"
+        },
+        {
+            "id": "chat-post-office/t1/2",
+            "hash": "123420bc1f8b"
+        },
+        {
+            "id": "chat-post-office/t2/2",
+            "hash": "028c53c025df"
+        },
+        {
+            "id": "chat-post-office/t3/2",
+            "hash": "b6ac20d40608"
+        },
+        {
+            "id": "chat-post-office/t4/2",
+            "hash": "b7497c826ec9"
         },
         {
             "id": "chat-school-office/t1/2",
@@ -33687,6 +36511,86 @@
         {
             "id": "kpk1-l14-g-t01",
             "hash": "b130c37bfcdc"
+        },
+        {
+            "id": "kpk1-l15-a1-t01",
+            "hash": "8ded21a527dc"
+        },
+        {
+            "id": "kpk1-l15-a2-t01",
+            "hash": "bc596a1c5b22"
+        },
+        {
+            "id": "kpk1-l15-a3-t01",
+            "hash": "ba1c9b073c22"
+        },
+        {
+            "id": "kpk1-l15-a4-t01",
+            "hash": "c2b5aaf50c47"
+        },
+        {
+            "id": "kpk1-l15-a5-t01",
+            "hash": "bf6f6614c78c"
+        },
+        {
+            "id": "kpk1-l15-a5-t02",
+            "hash": "67da5d279cbc"
+        },
+        {
+            "id": "kpk1-l15-b1-t01",
+            "hash": "c899dc935cd5"
+        },
+        {
+            "id": "kpk1-l15-b2-t01",
+            "hash": "b6d382513052"
+        },
+        {
+            "id": "kpk1-l15-b3-t01",
+            "hash": "3e139507c593"
+        },
+        {
+            "id": "kpk1-l15-b3-t02",
+            "hash": "7fdb4676c1fe"
+        },
+        {
+            "id": "kpk1-l15-b4-t01",
+            "hash": "a044713837ea"
+        },
+        {
+            "id": "kpk1-l15-b5-t01",
+            "hash": "1eb285547024"
+        },
+        {
+            "id": "kpk1-l15-b6-t01",
+            "hash": "3bc75717e8b6"
+        },
+        {
+            "id": "kpk1-l15-c1-t01",
+            "hash": "e0188e724da5"
+        },
+        {
+            "id": "kpk1-l15-c2-t01",
+            "hash": "f6ed51504709"
+        },
+        {
+            "id": "kpk1-l15-d1-t01",
+            "hash": "393007c4f598"
+        },
+        {
+            "id": "kpk1-l15-d2-t01",
+            "hash": "bd931c791c1d"
+        },
+        {
+            "id": "kpk1-l15-e1-t01",
+            "hash": "d76f57d234ce"
+        },
+        {
+            "id": "kpk1-l15-e2-t01",
+            "hash": "a66ee9b289d3"
+        },
+        {
+            "id": "kpk1-l15-g-t01",
+            "hash": "394523be5d09"
         }
     ]
 }

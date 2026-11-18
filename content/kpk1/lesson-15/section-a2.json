@@ -1,0 +1,432 @@
+{
+  "id": "kpk1-l15-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Puszki, paczki i pudełka",
+    "meaning": {
+      "en": "Cans, packets and boxes"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-a2-t01",
+      "before": "kpk1-l15-a2-e01",
+      "title": {
+        "en": "Butelka wody"
+      },
+      "body": {
+        "en": "After a word for a container or an amount, the thing in it is in the genitive, as after *nie*: *butelka wody* (a bottle of water), *puszka coli*, *słoik dżemu*, *karton soku*, *pudełko czekoladek* (a box of chocolates). A *kostka* is a block: *kostka masła*. A *tabliczka* is a bar: *tabliczka czekolady*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a2-e01",
+      "prompt": "kostka",
+      "options": [
+        {
+          "en": "a slice"
+        },
+        {
+          "en": "a jar"
+        },
+        {
+          "en": "a block, a cube (kostka masła: a block of butter; dwie kostki, pięć kostek; poproszę kostkę)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kostka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a2-e02",
+      "prompt": "cola",
+      "options": [
+        {
+          "en": "cola (puszka coli: a can of cola)"
+        },
+        {
+          "en": "coffee"
+        },
+        {
+          "en": "cocoa"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cola"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-a2-e03",
+      "text": "puszka coli",
+      "meaning": {
+        "en": "a can of cola"
+      },
+      "distractors": [
+        "butelka coli",
+        "puszka piwa"
+      ],
+      "items": [
+        "puszka",
+        "cola"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a2-e04",
+      "prompt": "dżemu",
+      "options": [
+        {
+          "en": "butter (after kostka, nie mam…: kostka masła)"
+        },
+        {
+          "en": "jam (after słoik, nie mam…: słoik dżemu)"
+        },
+        {
+          "en": "juice (after karton, nie mam…: karton soku)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dzem-gen"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-a2-e05",
+      "prompt": {
+        "en": "a jar of jam"
+      },
+      "acceptedAnswers": [
+        "słoik dżemu"
+      ],
+      "distractors": [
+        "puszka",
+        "masła"
+      ],
+      "items": [
+        "sloik",
+        "dzem-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a2-e06",
+      "prompt": "masła",
+      "options": [
+        {
+          "en": "milk (after karton, nie mam…: karton mleka)"
+        },
+        {
+          "en": "cheese (after kawałek, nie mam…: kawałek sera)"
+        },
+        {
+          "en": "butter (after kostka, nie mam…: kostka masła)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "maslo-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a2-e07",
+      "prompt": "czekoladki",
+      "options": [
+        {
+          "en": "chocolates (pudełko czekoladek: a box of chocolates)"
+        },
+        {
+          "en": "a bar of chocolate"
+        },
+        {
+          "en": "biscuits"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czekoladki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a2-e08",
+      "prompt": "zapałki",
+      "options": [
+        {
+          "en": "cigarettes"
+        },
+        {
+          "en": "matches (pudełko zapałek: a box of matches)"
+        },
+        {
+          "en": "crisps"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zapalki"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-a2-e09",
+      "text": "Proszę pudełko ___ i pudełko ___.",
+      "meaning": {
+        "en": "A box of chocolates and a box of matches, please."
+      },
+      "gaps": [
+        [
+          "czekoladek"
+        ],
+        [
+          "zapałek"
+        ]
+      ],
+      "distractors": [
+        "czekolada",
+        "zapałki"
+      ],
+      "items": [
+        "prosze",
+        "pudelko",
+        "czekoladki",
+        "i",
+        "zapalki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a2-e10",
+      "prompt": "tabliczka",
+      "options": [
+        {
+          "en": "a block"
+        },
+        {
+          "en": "a box"
+        },
+        {
+          "en": "a bar (tabliczka czekolady: a bar of chocolate; dwie tabliczki, pięć tabliczek)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tabliczka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a2-e11",
+      "prompt": "czekolady",
+      "options": [
+        {
+          "en": "chocolate (after tabliczka, nie mam…: tabliczka czekolady)"
+        },
+        {
+          "en": "jam (after słoik, nie mam…: słoik dżemu)"
+        },
+        {
+          "en": "cake (after kawałek, nie mam…: kawałek ciasta)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czekolada-gen"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-a2-e12",
+      "text": "tabliczka czekolady",
+      "meaning": {
+        "en": "a bar of chocolate"
+      },
+      "distractors": [
+        "pudełko czekoladek",
+        "kawałek czekolady"
+      ],
+      "items": [
+        "tabliczka",
+        "czekolada-gen"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-a2-e13",
+      "acceptedAnswers": [
+        "kostka masła"
+      ],
+      "meaning": {
+        "en": "a block of butter"
+      },
+      "items": [
+        "kostka",
+        "maslo-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-a2-e14",
+      "prompt": {
+        "en": "a can of cola"
+      },
+      "acceptedAnswers": [
+        "puszka coli"
+      ],
+      "items": [
+        "puszka",
+        "cola"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-a2-e15",
+      "pairs": [
+        {
+          "polish": "butelka wody",
+          "meaning": {
+            "en": "a bottle of water"
+          }
+        },
+        {
+          "polish": "puszka coli",
+          "meaning": {
+            "en": "a can of cola"
+          }
+        },
+        {
+          "polish": "słoik dżemu",
+          "meaning": {
+            "en": "a jar of jam"
+          }
+        },
+        {
+          "polish": "karton soku",
+          "meaning": {
+            "en": "a carton of juice"
+          }
+        },
+        {
+          "polish": "kostka masła",
+          "meaning": {
+            "en": "a block of butter"
+          }
+        },
+        {
+          "polish": "pudełko zapałek",
+          "meaning": {
+            "en": "a box of matches"
+          }
+        }
+      ],
+      "items": [
+        "butelka",
+        "woda-gen",
+        "puszka",
+        "cola",
+        "sloik",
+        "dzem-gen",
+        "karton",
+        "sok-gen",
+        "kostka",
+        "maslo-gen",
+        "pudelko",
+        "zapalki"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-a2-e16",
+      "lines": [
+        "Dzień dobry, co dla pana?",
+        "Poproszę butelkę wody.",
+        "Coś jeszcze?",
+        "Tak, tabliczkę czekolady."
+      ],
+      "meaning": {
+        "en": "At the kiosk."
+      },
+      "items": [
+        "dzien-dobry",
+        "co",
+        "poprosze",
+        "butelka",
+        "woda-gen",
+        "cos-jeszcze",
+        "tak",
+        "tabliczka",
+        "czekolada-gen"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-a2-e17",
+      "lines": [
+        "Ewa robi zakupy.",
+        "Kupuje butelkę wody, puszkę coli i słoik dżemu.",
+        "Nie kupuje masła, bo ma w domu dwie kostki masła."
+      ],
+      "meaning": {
+        "en": "Ewa's shopping."
+      },
+      "statements": [
+        {
+          "text": "Ewa kupuje butelkę wody.",
+          "meaning": {
+            "en": "Ewa buys a bottle of water."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa kupuje kostkę masła.",
+          "meaning": {
+            "en": "Ewa buys a block of butter."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa kupuje słoik dżemu.",
+          "meaning": {
+            "en": "Ewa buys a jar of jam."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "butelka",
+        "woda-gen",
+        "puszka",
+        "cola",
+        "sloik",
+        "dzem-gen",
+        "kostka",
+        "maslo-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-a2-e18",
+      "prompt": {
+        "en": "a bar of chocolate"
+      },
+      "acceptedAnswers": [
+        "tabliczka czekolady"
+      ],
+      "items": [
+        "tabliczka",
+        "czekolada-gen"
+      ]
+    }
+  ]
+}

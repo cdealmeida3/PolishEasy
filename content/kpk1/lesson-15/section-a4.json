@@ -1,0 +1,382 @@
+{
+  "id": "kpk1-l15-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Puszki, paczki i pudełka",
+    "meaning": {
+      "en": "Cans, packets and boxes"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-a4-t01",
+      "before": "kpk1-l15-a4-e01",
+      "title": {
+        "en": "Mam do ciebie prośbę"
+      },
+      "body": {
+        "en": "*Mam do ciebie prośbę* is I have a favour to ask you: a *prośba* is a request. *Czy możesz iść na zakupy?* asks a friend to go shopping. *Wolałbym nie* is I'd rather not (a woman says *wolałabym nie*), and *już idę* is I'm going. *Mamo!* is how you call your mum."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a4-e01",
+      "prompt": "mam do ciebie prośbę",
+      "options": [
+        {
+          "en": "can you help me?"
+        },
+        {
+          "en": "I have a question for you"
+        },
+        {
+          "en": "I have a favour to ask you (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "mam-do-ciebie-prosbe"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a4-e02",
+      "prompt": "prośba",
+      "options": [
+        {
+          "en": "a request, a favour (mam prośbę: I have a favour to ask)"
+        },
+        {
+          "en": "a question"
+        },
+        {
+          "en": "a list"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "prosba"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-a4-e03",
+      "text": "mam do ciebie prośbę",
+      "meaning": {
+        "en": "I have a favour to ask you"
+      },
+      "distractors": [
+        "mam do ciebie pytanie",
+        "masz do mnie prośbę?"
+      ],
+      "items": [
+        "mam-do-ciebie-prosbe"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a4-e04",
+      "prompt": "wolałbym nie",
+      "options": [
+        {
+          "en": "I'd like to"
+        },
+        {
+          "en": "I'd rather not (a man says it; wolałabym nie: a woman)"
+        },
+        {
+          "en": "I can't"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wolalbym-nie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a4-e05",
+      "prompt": "naprawdę",
+      "options": [
+        {
+          "en": "maybe"
+        },
+        {
+          "en": "of course"
+        },
+        {
+          "en": "really, honestly"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "naprawde"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-a4-e06",
+      "prompt": {
+        "en": "can you go shopping?"
+      },
+      "acceptedAnswers": [
+        "czy możesz iść na zakupy?",
+        "możesz iść na zakupy?"
+      ],
+      "distractors": [
+        "chcesz",
+        "sklep"
+      ],
+      "items": [
+        "czy",
+        "moc-mozesz",
+        "isc",
+        "na-zakupy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a4-e07",
+      "prompt": "już idę",
+      "options": [
+        {
+          "en": "I'm going, I'm coming (now)"
+        },
+        {
+          "en": "I'm not going"
+        },
+        {
+          "en": "I'm waiting"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "juz-ide"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a4-e08",
+      "prompt": "mamo!",
+      "options": [
+        {
+          "en": "grandma!"
+        },
+        {
+          "en": "mum! (calling your mum)"
+        },
+        {
+          "en": "dad!"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "mamo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-a4-e09",
+      "text": "Mamo, jestem bardzo ___. ___!",
+      "meaning": {
+        "en": "Mum, I am very busy. Really! (a son says it)"
+      },
+      "gaps": [
+        [
+          "zajęty"
+        ],
+        [
+          "Naprawdę"
+        ]
+      ],
+      "distractors": [
+        "zajęta",
+        "Dobrze"
+      ],
+      "items": [
+        "mamo",
+        "byc-jestem",
+        "bardzo",
+        "zajety",
+        "naprawde"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-a4-e10",
+      "acceptedAnswers": [
+        "dobrze, już idę"
+      ],
+      "meaning": {
+        "en": "all right, I'm going"
+      },
+      "items": [
+        "dobrze",
+        "juz-ide"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-a4-e11",
+      "prompt": {
+        "en": "I'd rather not (a man says it)"
+      },
+      "acceptedAnswers": [
+        "wolałbym nie"
+      ],
+      "items": [
+        "wolalbym-nie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-a4-e12",
+      "prompt": {
+        "en": "a request"
+      },
+      "acceptedAnswers": [
+        "prośba"
+      ],
+      "items": [
+        "prosba"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-a4-e13",
+      "pairs": [
+        {
+          "polish": "mam do ciebie prośbę",
+          "meaning": {
+            "en": "I have a favour to ask you"
+          }
+        },
+        {
+          "polish": "wolałbym nie",
+          "meaning": {
+            "en": "I'd rather not"
+          }
+        },
+        {
+          "polish": "naprawdę",
+          "meaning": {
+            "en": "really"
+          }
+        },
+        {
+          "polish": "już idę",
+          "meaning": {
+            "en": "I'm going"
+          }
+        },
+        {
+          "polish": "mamo!",
+          "meaning": {
+            "en": "mum!"
+          }
+        },
+        {
+          "polish": "zajęty",
+          "meaning": {
+            "en": "busy"
+          }
+        }
+      ],
+      "items": [
+        "mam-do-ciebie-prosbe",
+        "wolalbym-nie",
+        "naprawde",
+        "juz-ide",
+        "mamo",
+        "zajety"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-a4-e14",
+      "lines": [
+        "Adam! Mam do ciebie prośbę.",
+        "Tak?",
+        "Możesz iść na zakupy?",
+        "Teraz? Wolałbym nie, jestem zajęty."
+      ],
+      "meaning": {
+        "en": "A favour."
+      },
+      "items": [
+        "adam",
+        "mam-do-ciebie-prosbe",
+        "tak",
+        "moc-mozesz",
+        "isc",
+        "na-zakupy",
+        "teraz",
+        "wolalbym-nie",
+        "byc-jestem",
+        "zajety"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-a4-e15",
+      "lines": [
+        "Mama ma do Adama prośbę: zakupy.",
+        "Adam mówi: wolałbym nie, jestem bardzo zajęty.",
+        "Potem mówi: dobrze, już idę."
+      ],
+      "meaning": {
+        "en": "Adam and his mum."
+      },
+      "statements": [
+        {
+          "text": "Mama ma prośbę.",
+          "meaning": {
+            "en": "Mum has a request."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam jest zajęty.",
+          "meaning": {
+            "en": "Adam is busy."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam nie idzie na zakupy.",
+          "meaning": {
+            "en": "Adam does not go shopping."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "prosba",
+        "wolalbym-nie",
+        "zajety",
+        "juz-ide",
+        "bardzo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-a4-e16",
+      "text": "wolałbym nie",
+      "meaning": {
+        "en": "I'd rather not"
+      },
+      "distractors": [
+        "już idę",
+        "naprawdę nie"
+      ],
+      "items": [
+        "wolalbym-nie"
+      ]
+    }
+  ]
+}

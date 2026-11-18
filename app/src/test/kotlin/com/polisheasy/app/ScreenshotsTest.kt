@@ -1024,6 +1024,46 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 15 of the book over the real course in the light theme`() = chapter15Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 15 of the book over the real course in the dark theme`() = chapter15Tour("dark")
+
+    @Test
+    fun `chapter 15 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter15Tour("large") }
+
+    /**
+     * Chapter 15 over the real course: its Lesson screen at the top and its sections, then the
+     * containers in section A, the genitive plural in section B, and the genitive pronouns after do
+     * in section E.
+     */
+    private fun chapter15Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l15") }
+        screen.waitForIdle()
+        shot("322-chapter-15")
+        screen.onAllNodes(hasText("Czy pomożesz mi?", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("322-chapter-15-sections")
+        listOf(
+            "kpk1-l15-a2" to "323-chapter-15-containers",
+            "kpk1-l15-b4" to "324-chapter-15-genitive-plural",
+            "kpk1-l15-e1" to "325-chapter-15-do-niego",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l15")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test

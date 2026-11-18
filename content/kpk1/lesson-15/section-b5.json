@@ -1,0 +1,411 @@
+{
+  "id": "kpk1-l15-b5",
+  "section": {
+    "letter": "B",
+    "heading": "Zakupy na piknik",
+    "meaning": {
+      "en": "Shopping for a picnic"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-b5-t01",
+      "before": "kpk1-l15-b5-e01",
+      "title": {
+        "en": "Kilogram, kilogramy, kilogramów"
+      },
+      "body": {
+        "en": "*Kilogram* counts like every word: *dwa kilogramy*, *pięć kilogramów*, *pół kilograma*. *Dziesięć deka* is 100 grams. What you weigh is in the genitive: *kilogram pieczarek*, *trzy kilogramy papryki*, *pięć kilogramów ziemniaków*. At the market the seller asks *co dla pani?*, and *wystarczy* is that's enough."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b5-e01",
+      "prompt": "co dla pani?",
+      "options": [
+        {
+          "en": "what can I get you? (to a woman)"
+        },
+        {
+          "en": "anything else?"
+        },
+        {
+          "en": "that's all"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "co-dla-pani"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b5-e02",
+      "prompt": "pieczarek",
+      "options": [
+        {
+          "en": "potatoes (after kilo, kilogram…)"
+        },
+        {
+          "en": "mushrooms (after kilo, kilogram…: kilogram pieczarek)"
+        },
+        {
+          "en": "peppers (after kilo, kilogram…)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pieczarek"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-b5-e03",
+      "text": "kilogram pieczarek",
+      "meaning": {
+        "en": "a kilogram of mushrooms"
+      },
+      "distractors": [
+        "kilogram ziemniaków",
+        "pół kilograma pieczarek"
+      ],
+      "items": [
+        "kilogram",
+        "pieczarek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b5-e04",
+      "prompt": "deka",
+      "options": [
+        {
+          "en": "a kilo"
+        },
+        {
+          "en": "a litre"
+        },
+        {
+          "en": "ten grams (dziesięć deka: 100 grams)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "deka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b5-e05",
+      "prompt": "może być",
+      "options": [
+        {
+          "en": "is that all right? that will do (może być trochę więcej?: is a bit more all right?)"
+        },
+        {
+          "en": "it's not possible"
+        },
+        {
+          "en": "maybe not"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "moze-byc"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-b5-e06",
+      "text": "Dziesięć ___ to sto ___.",
+      "meaning": {
+        "en": "Ten decagrams is a hundred grams."
+      },
+      "gaps": [
+        [
+          "deka"
+        ],
+        [
+          "gramów"
+        ]
+      ],
+      "distractors": [
+        "kilo",
+        "gramy"
+      ],
+      "items": [
+        "dziesiec",
+        "deka",
+        "to",
+        "sto",
+        "gram-g"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b5-e07",
+      "prompt": "ziemniaków",
+      "options": [
+        {
+          "en": "mushrooms (after kilo, kilogram…: kilogram pieczarek)"
+        },
+        {
+          "en": "potatoes (after kilo, kilogram…: pięć kilogramów ziemniaków)"
+        },
+        {
+          "en": "tomatoes (after kilo, kilogram…)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ziemniakow"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-b5-e08",
+      "prompt": {
+        "en": "five kilograms of potatoes"
+      },
+      "acceptedAnswers": [
+        "pięć kilogramów ziemniaków"
+      ],
+      "distractors": [
+        "kilogramy",
+        "dwa"
+      ],
+      "items": [
+        "piec",
+        "kilogram",
+        "ziemniakow"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-b5-e09",
+      "text": "trzy kilogramy papryki",
+      "meaning": {
+        "en": "three kilograms of peppers"
+      },
+      "distractors": [
+        "pięć kilogramów papryki",
+        "trzy kilogramy pieczarek"
+      ],
+      "items": [
+        "trzy",
+        "kilogram",
+        "papryka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b5-e10",
+      "prompt": "kiszone ogórki",
+      "options": [
+        {
+          "en": "fresh cucumbers"
+        },
+        {
+          "en": "tomatoes"
+        },
+        {
+          "en": "pickled cucumbers, dill pickles"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kiszone-ogorki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b5-e11",
+      "prompt": "pół kilograma",
+      "options": [
+        {
+          "en": "half a kilogram"
+        },
+        {
+          "en": "a quarter of a kilo (250 grams)"
+        },
+        {
+          "en": "a kilogram"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pol-kilograma"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-b5-e12",
+      "prompt": "wystarczy",
+      "options": [
+        {
+          "en": "too much"
+        },
+        {
+          "en": "that's enough, that will do"
+        },
+        {
+          "en": "not enough"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wystarczy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-b5-e13",
+      "acceptedAnswers": [
+        "pół kilograma wystarczy"
+      ],
+      "meaning": {
+        "en": "half a kilogram is enough"
+      },
+      "items": [
+        "pol-kilograma",
+        "wystarczy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-b5-e14",
+      "prompt": {
+        "en": "a kilogram of mushrooms"
+      },
+      "acceptedAnswers": [
+        "kilogram pieczarek"
+      ],
+      "items": [
+        "kilogram",
+        "pieczarek"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-b5-e15",
+      "pairs": [
+        {
+          "polish": "co dla pani?",
+          "meaning": {
+            "en": "what can I get you?"
+          }
+        },
+        {
+          "polish": "może być?",
+          "meaning": {
+            "en": "will that do?"
+          }
+        },
+        {
+          "polish": "deka",
+          "meaning": {
+            "en": "ten grams"
+          }
+        },
+        {
+          "polish": "pół kilograma",
+          "meaning": {
+            "en": "half a kilogram"
+          }
+        },
+        {
+          "polish": "kiszone ogórki",
+          "meaning": {
+            "en": "pickles"
+          }
+        },
+        {
+          "polish": "wystarczy",
+          "meaning": {
+            "en": "that's enough"
+          }
+        }
+      ],
+      "items": [
+        "co-dla-pani",
+        "moze-byc",
+        "deka",
+        "pol-kilograma",
+        "kiszone-ogorki",
+        "wystarczy"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-b5-e16",
+      "lines": [
+        "Co dla pani?",
+        "Kilogram pieczarek.",
+        "Może być trochę więcej?",
+        "Tak, może być."
+      ],
+      "meaning": {
+        "en": "At the market."
+      },
+      "items": [
+        "co-dla-pani",
+        "kilogram",
+        "pieczarek",
+        "moze-byc",
+        "troche",
+        "tak"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-b5-e17",
+      "lines": [
+        "Ewa i Kasia są na targu.",
+        "Kupują kilogram pieczarek, trzy kilogramy papryki i pięć kilogramów ziemniaków.",
+        "Kasia chce też kiszone ogórki. Pół kilograma wystarczy."
+      ],
+      "meaning": {
+        "en": "At the market."
+      },
+      "statements": [
+        {
+          "text": "Ewa i Kasia kupują ziemniaki.",
+          "meaning": {
+            "en": "Ewa and Kasia buy potatoes."
+          },
+          "true": true
+        },
+        {
+          "text": "Kupują pięć kilogramów papryki.",
+          "meaning": {
+            "en": "They buy five kilograms of peppers."
+          },
+          "true": false
+        },
+        {
+          "text": "Kasia chce kiszone ogórki.",
+          "meaning": {
+            "en": "Kasia wants pickles."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "kilogram",
+        "pieczarek",
+        "papryka",
+        "ziemniakow",
+        "kiszone-ogorki",
+        "pol-kilograma",
+        "wystarczy"
+      ]
+    }
+  ]
+}

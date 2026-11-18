@@ -1,0 +1,410 @@
+{
+  "id": "kpk1-l15-e2",
+  "section": {
+    "letter": "E",
+    "heading": "Zaimki",
+    "meaning": {
+      "en": "Pronouns"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-e2-t01",
+      "before": "kpk1-l15-e2-e01",
+      "title": {
+        "en": "Szukam jej"
+      },
+      "body": {
+        "en": "*Szukać* takes the genitive, and a verb that takes the accusative takes the genitive after *nie*: *szukam go* (I'm looking for him, or for it), *szukam jej*, *szukam ich*; *nie widzę go*, *nie widzę jej*. *Jego* is the stressed *go*: *nie lubię ani jej, ani jego* (I like neither her nor him). *Nie ma go* is he isn't here."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e2-e01",
+      "prompt": "szukasz",
+      "options": [
+        {
+          "en": "you need"
+        },
+        {
+          "en": "you are looking for (one friend)"
+        },
+        {
+          "en": "you see"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szukac-szukasz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e2-e02",
+      "prompt": "jej",
+      "options": [
+        {
+          "en": "him (after szukam, nie widzę…: szukam go)"
+        },
+        {
+          "en": "them (after szukam, nie widzę…)"
+        },
+        {
+          "en": "her (after szukam, nie widzę…: szukam jej)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jej-gen"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-e2-e03",
+      "text": "szukam jej",
+      "meaning": {
+        "en": "I'm looking for her"
+      },
+      "distractors": [
+        "szukam go",
+        "szukasz jej"
+      ],
+      "items": [
+        "szukac-szukam",
+        "jej-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e2-e04",
+      "prompt": "ich",
+      "options": [
+        {
+          "en": "them (after szukam, nie widzę…: nie widzę ich)"
+        },
+        {
+          "en": "her (after szukam, nie widzę…: szukam jej)"
+        },
+        {
+          "en": "us (after szukam, nie widzę…: szukam nas)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ich-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e2-e05",
+      "prompt": "nie widzę",
+      "options": [
+        {
+          "en": "I don't know"
+        },
+        {
+          "en": "I can't see, I don't see"
+        },
+        {
+          "en": "I don't hear"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nie-widze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-e2-e06",
+      "prompt": {
+        "en": "I can't see them"
+      },
+      "acceptedAnswers": [
+        "nie widzę ich",
+        "ich nie widzę"
+      ],
+      "distractors": [
+        "go",
+        "jej"
+      ],
+      "items": [
+        "nie-widze",
+        "ich-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e2-e07",
+      "prompt": "nie ma go",
+      "options": [
+        {
+          "en": "I haven't got it"
+        },
+        {
+          "en": "he is here"
+        },
+        {
+          "en": "he isn't here; it isn't here"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nie-ma-go"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e2-e08",
+      "prompt": "jego",
+      "options": [
+        {
+          "en": "him (stressed: nie lubię ani jej, ani jego)"
+        },
+        {
+          "en": "me (after szukam, nie widzę…: szukasz mnie?)"
+        },
+        {
+          "en": "us (after szukam, nie widzę…: szukam nas)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jego-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e2-e09",
+      "prompt": "ani",
+      "options": [
+        {
+          "en": "and"
+        },
+        {
+          "en": "nor, not even (ani… ani…: neither… nor…)"
+        },
+        {
+          "en": "or"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ani"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-e2-e10",
+      "text": "Nie lubię ani ___, ani ___.",
+      "meaning": {
+        "en": "I like neither her nor him."
+      },
+      "gaps": [
+        [
+          "jej"
+        ],
+        [
+          "jego"
+        ]
+      ],
+      "distractors": [
+        "ją",
+        "go"
+      ],
+      "items": [
+        "nie",
+        "lubic-lubie",
+        "ani",
+        "jej-gen",
+        "jego-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-e2-e11",
+      "prompt": "nie odbierasz",
+      "options": [
+        {
+          "en": "you don't call"
+        },
+        {
+          "en": "you aren't listening"
+        },
+        {
+          "en": "you don't answer (the phone)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nie-odbierasz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-e2-e12",
+      "acceptedAnswers": [
+        "dlaczego nie odbierasz?"
+      ],
+      "meaning": {
+        "en": "why don't you answer the phone?"
+      },
+      "items": [
+        "dlaczego",
+        "nie-odbierasz"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-e2-e13",
+      "prompt": {
+        "en": "he isn't here"
+      },
+      "acceptedAnswers": [
+        "nie ma go"
+      ],
+      "items": [
+        "nie-ma-go"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l15-e2-e14",
+      "verb": "szukać",
+      "meaning": {
+        "en": "to look for"
+      },
+      "person": "ty",
+      "sentence": "Kogo ___?",
+      "sentenceMeaning": {
+        "en": "Who are you looking for?"
+      },
+      "acceptedAnswers": [
+        "szukasz"
+      ],
+      "items": [
+        "kogo",
+        "szukac-szukasz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-e2-e15",
+      "pairs": [
+        {
+          "polish": "szukasz",
+          "meaning": {
+            "en": "you are looking for"
+          }
+        },
+        {
+          "polish": "jej",
+          "meaning": {
+            "en": "her"
+          }
+        },
+        {
+          "polish": "ich",
+          "meaning": {
+            "en": "them"
+          }
+        },
+        {
+          "polish": "nie widzę",
+          "meaning": {
+            "en": "I can't see"
+          }
+        },
+        {
+          "polish": "nie ma go",
+          "meaning": {
+            "en": "he isn't here"
+          }
+        },
+        {
+          "polish": "nie odbierasz",
+          "meaning": {
+            "en": "you don't answer"
+          }
+        }
+      ],
+      "items": [
+        "szukac-szukasz",
+        "jej-gen",
+        "ich-gen",
+        "nie-widze",
+        "nie-ma-go",
+        "nie-odbierasz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-e2-e16",
+      "lines": [
+        "Ewa szuka telefonu wszędzie.",
+        "Nie ma go w torbie, nie ma go na stole.",
+        "Adam mówi: jest tam, pod książką!"
+      ],
+      "meaning": {
+        "en": "Where is the phone?"
+      },
+      "statements": [
+        {
+          "text": "Ewa szuka telefonu.",
+          "meaning": {
+            "en": "Ewa is looking for her phone."
+          },
+          "true": true
+        },
+        {
+          "text": "Telefon jest na stole.",
+          "meaning": {
+            "en": "The phone is on the table."
+          },
+          "true": false
+        },
+        {
+          "text": "Telefon jest pod książką.",
+          "meaning": {
+            "en": "The phone is under a book."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "telefonu",
+        "wszedzie",
+        "nie-ma-go"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-e2-e17",
+      "lines": [
+        "Szukasz telefonu?",
+        "Tak, szukam go wszędzie!",
+        "Nie ma go w torbie?",
+        "Nie, nie ma go."
+      ],
+      "meaning": {
+        "en": "The lost phone."
+      },
+      "items": [
+        "szukac-szukasz",
+        "telefonu",
+        "tak",
+        "szukac-szukam",
+        "go",
+        "wszedzie",
+        "nie-ma-go",
+        "nie"
+      ]
+    }
+  ]
+}

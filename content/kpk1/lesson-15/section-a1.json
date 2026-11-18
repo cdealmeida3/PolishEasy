@@ -1,0 +1,399 @@
+{
+  "id": "kpk1-l15-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Puszki, paczki i pudełka",
+    "meaning": {
+      "en": "Cans, packets and boxes"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-a1-t01",
+      "before": "kpk1-l15-a1-e01",
+      "title": {
+        "en": "Puszka, karton, butelka"
+      },
+      "body": {
+        "en": "Things come in a *puszka* (a can), a *karton* (a carton), a *butelka* (a bottle), a *słoik* (a jar), a *paczka* (a packet) or a *pudełko* (a box). A *kawałek* is a piece, and a *plasterek* is a slice."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a1-e01",
+      "prompt": "puszka",
+      "options": [
+        {
+          "en": "a can, a tin (dwie puszki: two cans; pięć puszek: five cans; poproszę puszkę: a can, please)"
+        },
+        {
+          "en": "a bottle"
+        },
+        {
+          "en": "a jar"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "puszka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a1-e02",
+      "prompt": "karton",
+      "options": [
+        {
+          "en": "a can"
+        },
+        {
+          "en": "a carton; a cardboard box (dwa kartony, pięć kartonów)"
+        },
+        {
+          "en": "a packet"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "karton"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a1-e03",
+      "prompt": "butelka",
+      "options": [
+        {
+          "en": "a jar"
+        },
+        {
+          "en": "a glass"
+        },
+        {
+          "en": "a bottle (dwie butelki, pięć butelek; poproszę butelkę)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "butelka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-a1-e04",
+      "text": "to jest butelka",
+      "meaning": {
+        "en": "this is a bottle"
+      },
+      "distractors": [
+        "to jest puszka",
+        "to nie jest butelka"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "butelka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a1-e05",
+      "prompt": "słoik",
+      "options": [
+        {
+          "en": "a jar (dwa słoiki, pięć słoików)"
+        },
+        {
+          "en": "a box"
+        },
+        {
+          "en": "a bottle"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sloik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a1-e06",
+      "prompt": "paczka",
+      "options": [
+        {
+          "en": "a carton"
+        },
+        {
+          "en": "a packet; a parcel (dwie paczki, pięć paczek; poproszę paczkę)"
+        },
+        {
+          "en": "a slice"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "paczka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a1-e07",
+      "prompt": "pudełko",
+      "options": [
+        {
+          "en": "a can"
+        },
+        {
+          "en": "a piece"
+        },
+        {
+          "en": "a box (dwa pudełka, pięć pudełek)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pudelko"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-a1-e08",
+      "prompt": {
+        "en": "a jar or a can?"
+      },
+      "acceptedAnswers": [
+        "słoik czy puszka?"
+      ],
+      "distractors": [
+        "karton",
+        "butelka"
+      ],
+      "items": [
+        "sloik",
+        "czy",
+        "puszka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a1-e09",
+      "prompt": "kawałek",
+      "options": [
+        {
+          "en": "a piece (dwa kawałki, pięć kawałków)"
+        },
+        {
+          "en": "a slice"
+        },
+        {
+          "en": "a block"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kawalek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a1-e10",
+      "prompt": "plasterek",
+      "options": [
+        {
+          "en": "a piece"
+        },
+        {
+          "en": "a slice (dwa plasterki, pięć plasterków)"
+        },
+        {
+          "en": "a bottle"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "plasterek"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-a1-e11",
+      "text": "To jest ___, a to jest ___.",
+      "meaning": {
+        "en": "This is a slice, and this is a piece."
+      },
+      "gaps": [
+        [
+          "plasterek"
+        ],
+        [
+          "kawałek"
+        ]
+      ],
+      "distractors": [
+        "karton",
+        "słoik"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "plasterek",
+        "a",
+        "kawalek"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-a1-e12",
+      "acceptedAnswers": [
+        "to jest pudełko"
+      ],
+      "meaning": {
+        "en": "this is a box"
+      },
+      "items": [
+        "to",
+        "byc-jest",
+        "pudelko"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-a1-e13",
+      "prompt": {
+        "en": "a bottle"
+      },
+      "acceptedAnswers": [
+        "butelka"
+      ],
+      "items": [
+        "butelka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-a1-e14",
+      "prompt": {
+        "en": "a carton"
+      },
+      "acceptedAnswers": [
+        "karton"
+      ],
+      "items": [
+        "karton"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-a1-e15",
+      "pairs": [
+        {
+          "polish": "puszka",
+          "meaning": {
+            "en": "a can"
+          }
+        },
+        {
+          "polish": "karton",
+          "meaning": {
+            "en": "a carton"
+          }
+        },
+        {
+          "polish": "butelka",
+          "meaning": {
+            "en": "a bottle"
+          }
+        },
+        {
+          "polish": "słoik",
+          "meaning": {
+            "en": "a jar"
+          }
+        },
+        {
+          "polish": "paczka",
+          "meaning": {
+            "en": "a packet"
+          }
+        },
+        {
+          "polish": "pudełko",
+          "meaning": {
+            "en": "a box"
+          }
+        }
+      ],
+      "items": [
+        "puszka",
+        "karton",
+        "butelka",
+        "sloik",
+        "paczka",
+        "pudelko"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-a1-e16",
+      "text": "mam paczkę",
+      "meaning": {
+        "en": "I have a packet"
+      },
+      "distractors": [
+        "mam puszkę",
+        "mam butelkę"
+      ],
+      "items": [
+        "miec-mam",
+        "paczka"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-a1-e17",
+      "lines": [
+        "W kuchni jest butelka i karton.",
+        "Na stole jest pudełko i słoik.",
+        "Puszka jest w torbie."
+      ],
+      "meaning": {
+        "en": "What is where."
+      },
+      "statements": [
+        {
+          "text": "W kuchni jest butelka.",
+          "meaning": {
+            "en": "There is a bottle in the kitchen."
+          },
+          "true": true
+        },
+        {
+          "text": "Puszka jest na stole.",
+          "meaning": {
+            "en": "The can is on the table."
+          },
+          "true": false
+        },
+        {
+          "text": "Na stole jest słoik.",
+          "meaning": {
+            "en": "There is a jar on the table."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "butelka",
+        "karton",
+        "pudelko",
+        "sloik",
+        "puszka"
+      ]
+    }
+  ]
+}

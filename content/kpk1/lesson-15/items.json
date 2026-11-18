@@ -1,0 +1,1071 @@
+{
+  "items": [
+    {
+      "id": "puszka",
+      "text": "puszka",
+      "meaning": {
+        "en": "a can, a tin (dwie puszki: two cans; pięć puszek: five cans; poproszę puszkę: a can, please)"
+      },
+      "forms": [
+        "puszki",
+        "puszek",
+        "puszkę"
+      ]
+    },
+    {
+      "id": "karton",
+      "text": "karton",
+      "meaning": {
+        "en": "a carton; a cardboard box (dwa kartony, pięć kartonów)"
+      },
+      "forms": [
+        "kartony",
+        "kartonów"
+      ]
+    },
+    {
+      "id": "butelka",
+      "text": "butelka",
+      "meaning": {
+        "en": "a bottle (dwie butelki, pięć butelek; poproszę butelkę)"
+      },
+      "forms": [
+        "butelki",
+        "butelek",
+        "butelkę"
+      ]
+    },
+    {
+      "id": "sloik",
+      "text": "słoik",
+      "meaning": {
+        "en": "a jar (dwa słoiki, pięć słoików)"
+      },
+      "forms": [
+        "słoiki",
+        "słoików"
+      ]
+    },
+    {
+      "id": "paczka",
+      "text": "paczka",
+      "meaning": {
+        "en": "a packet; a parcel (dwie paczki, pięć paczek; poproszę paczkę)"
+      },
+      "forms": [
+        "paczki",
+        "paczek",
+        "paczkę"
+      ]
+    },
+    {
+      "id": "pudelko",
+      "text": "pudełko",
+      "meaning": {
+        "en": "a box (dwa pudełka, pięć pudełek)"
+      },
+      "forms": [
+        "pudełka",
+        "pudełek"
+      ]
+    },
+    {
+      "id": "kawalek",
+      "text": "kawałek",
+      "meaning": {
+        "en": "a piece (dwa kawałki, pięć kawałków)"
+      },
+      "forms": [
+        "kawałki",
+        "kawałków"
+      ]
+    },
+    {
+      "id": "plasterek",
+      "text": "plasterek",
+      "meaning": {
+        "en": "a slice (dwa plasterki, pięć plasterków)"
+      },
+      "forms": [
+        "plasterki",
+        "plasterków"
+      ]
+    },
+    {
+      "id": "kostka",
+      "text": "kostka",
+      "meaning": {
+        "en": "a block, a cube (kostka masła: a block of butter; dwie kostki, pięć kostek; poproszę kostkę)"
+      },
+      "forms": [
+        "kostki",
+        "kostek",
+        "kostkę"
+      ]
+    },
+    {
+      "id": "cola",
+      "text": "cola",
+      "meaning": {
+        "en": "cola (puszka coli: a can of cola)"
+      },
+      "forms": [
+        "coli"
+      ]
+    },
+    {
+      "id": "dzem-gen",
+      "text": "dżemu",
+      "meaning": {
+        "en": "jam (after słoik, nie mam…: słoik dżemu)"
+      }
+    },
+    {
+      "id": "maslo-gen",
+      "text": "masła",
+      "meaning": {
+        "en": "butter (after kostka, nie mam…: kostka masła)"
+      }
+    },
+    {
+      "id": "czekoladki",
+      "text": "czekoladki",
+      "meaning": {
+        "en": "chocolates (pudełko czekoladek: a box of chocolates)"
+      },
+      "forms": [
+        "czekoladek"
+      ]
+    },
+    {
+      "id": "zapalki",
+      "text": "zapałki",
+      "meaning": {
+        "en": "matches (pudełko zapałek: a box of matches)"
+      },
+      "forms": [
+        "zapałek"
+      ]
+    },
+    {
+      "id": "tabliczka",
+      "text": "tabliczka",
+      "meaning": {
+        "en": "a bar (tabliczka czekolady: a bar of chocolate; dwie tabliczki, pięć tabliczek)"
+      },
+      "forms": [
+        "tabliczki",
+        "tabliczek",
+        "tabliczkę"
+      ]
+    },
+    {
+      "id": "czekolada-gen",
+      "text": "czekolady",
+      "meaning": {
+        "en": "chocolate (after tabliczka, nie mam…: tabliczka czekolady)"
+      }
+    },
+    {
+      "id": "lod",
+      "text": "lód",
+      "meaning": {
+        "en": "ice (kostka lodu: an ice cube)"
+      },
+      "forms": [
+        "lodu"
+      ]
+    },
+    {
+      "id": "makaron-gen",
+      "text": "makaronu",
+      "meaning": {
+        "en": "pasta (after paczka, nie mam…: paczka makaronu)"
+      }
+    },
+    {
+      "id": "kukurydza-gen",
+      "text": "kukurydzy",
+      "meaning": {
+        "en": "sweetcorn (after puszka, nie mam…: puszka kukurydzy)"
+      }
+    },
+    {
+      "id": "kielbasa-gen",
+      "text": "kiełbasy",
+      "meaning": {
+        "en": "sausage (after kawałek, nie mam…: kawałek kiełbasy)"
+      }
+    },
+    {
+      "id": "szynka-gen",
+      "text": "szynki",
+      "meaning": {
+        "en": "ham (after plasterek, nie mam…: plasterek szynki)"
+      }
+    },
+    {
+      "id": "tort",
+      "text": "tort",
+      "meaning": {
+        "en": "a gateau, a layer cake (kawałek tortu: a piece of gateau)"
+      },
+      "forms": [
+        "tortu"
+      ]
+    },
+    {
+      "id": "ciasto-gen",
+      "text": "ciasta",
+      "meaning": {
+        "en": "cake (after kawałek, nie mam…: kawałek ciasta)"
+      }
+    },
+    {
+      "id": "mam-do-ciebie-prosbe",
+      "text": "mam do ciebie prośbę",
+      "meaning": {
+        "en": "I have a favour to ask you (one friend)"
+      }
+    },
+    {
+      "id": "prosba",
+      "text": "prośba",
+      "meaning": {
+        "en": "a request, a favour (mam prośbę: I have a favour to ask)"
+      },
+      "forms": [
+        "prośbę"
+      ]
+    },
+    {
+      "id": "wolalbym-nie",
+      "text": "wolałbym nie",
+      "meaning": {
+        "en": "I'd rather not (a man says it; wolałabym nie: a woman)"
+      },
+      "forms": [
+        "wolałabym nie"
+      ]
+    },
+    {
+      "id": "naprawde",
+      "text": "naprawdę",
+      "meaning": {
+        "en": "really, honestly"
+      }
+    },
+    {
+      "id": "juz-ide",
+      "text": "już idę",
+      "meaning": {
+        "en": "I'm going, I'm coming (now)"
+      }
+    },
+    {
+      "id": "mamo",
+      "text": "mamo!",
+      "meaning": {
+        "en": "mum! (calling your mum)"
+      }
+    },
+    {
+      "id": "gram-g",
+      "text": "gram",
+      "meaning": {
+        "en": "a gram (dwa gramy, pięć gramów)"
+      },
+      "forms": [
+        "gramy",
+        "gramów"
+      ]
+    },
+    {
+      "id": "cwierc-kilo",
+      "text": "ćwierć kilo",
+      "meaning": {
+        "en": "a quarter of a kilo (250 grams)"
+      }
+    },
+    {
+      "id": "malinowy-gen",
+      "text": "malinowego",
+      "meaning": {
+        "en": "raspberry (malinowego for a masculine noun, malinowej for a feminine one, after słoik, nie mam…: słoik dżemu malinowego)"
+      },
+      "forms": [
+        "malinowej"
+      ]
+    },
+    {
+      "id": "zolty-gen",
+      "text": "żółtego",
+      "meaning": {
+        "en": "yellow (żółtego for a masculine noun, żółtej for a feminine one, after kawałek, nie mam…: kawałek żółtego sera)"
+      },
+      "forms": [
+        "żółtej"
+      ]
+    },
+    {
+      "id": "chudy-gen",
+      "text": "chudego",
+      "meaning": {
+        "en": "lean (chudego for a masculine noun, chudej for a feminine one, after plasterek, nie mam…: plasterek chudej szynki)"
+      },
+      "forms": [
+        "chudej"
+      ]
+    },
+    {
+      "id": "czarny-gen",
+      "text": "czarnego",
+      "meaning": {
+        "en": "black (czarnego for a masculine noun, czarnej for a feminine one, after paczka, nie mam…: paczka czarnej herbaty)"
+      },
+      "forms": [
+        "czarnej"
+      ]
+    },
+    {
+      "id": "pomaranczowy-gen",
+      "text": "pomarańczowego",
+      "meaning": {
+        "en": "orange (pomarańczowego for a masculine noun, pomarańczowej for a feminine one, after karton, nie mam…: karton soku pomarańczowego)"
+      },
+      "forms": [
+        "pomarańczowej"
+      ]
+    },
+    {
+      "id": "jeszcze-poprosze",
+      "text": "jeszcze poproszę",
+      "meaning": {
+        "en": "and I'd also like…, please (jeszcze poproszę masło)"
+      }
+    },
+    {
+      "id": "piknik",
+      "text": "piknik",
+      "meaning": {
+        "en": "a picnic"
+      }
+    },
+    {
+      "id": "na-piknik",
+      "text": "na piknik",
+      "meaning": {
+        "en": "to a picnic; for a picnic (zakupy na piknik: shopping for a picnic)"
+      }
+    },
+    {
+      "id": "za-malo",
+      "text": "za mało",
+      "meaning": {
+        "en": "too little, not enough"
+      }
+    },
+    {
+      "id": "musztarda-gen",
+      "text": "musztardy",
+      "meaning": {
+        "en": "mustard (after słoik, nie mam…: słoik musztardy)"
+      }
+    },
+    {
+      "id": "chipsy-gen",
+      "text": "chipsów",
+      "meaning": {
+        "en": "crisps (after paczka, dużo, pięć…: pięć paczek chipsów)"
+      }
+    },
+    {
+      "id": "duzo",
+      "text": "dużo",
+      "meaning": {
+        "en": "a lot, much, many (dużo studentów: a lot of students)"
+      }
+    },
+    {
+      "id": "malo",
+      "text": "mało",
+      "meaning": {
+        "en": "few, little, not much (mało czasu: not much time)"
+      }
+    },
+    {
+      "id": "kilka",
+      "text": "kilka",
+      "meaning": {
+        "en": "a few, several (kilka osób: a few people)"
+      }
+    },
+    {
+      "id": "wiele",
+      "text": "wiele",
+      "meaning": {
+        "en": "many, a lot of (wiele osób: many people)"
+      }
+    },
+    {
+      "id": "niewiele",
+      "text": "niewiele",
+      "meaning": {
+        "en": "not many, not much (niewiele osób: not many people)"
+      }
+    },
+    {
+      "id": "osoba",
+      "text": "osoba",
+      "meaning": {
+        "en": "a person (dwie osoby; pięć osób; wiele osób: many people)"
+      },
+      "forms": [
+        "osoby",
+        "osób"
+      ]
+    },
+    {
+      "id": "studentow",
+      "text": "studentów",
+      "meaning": {
+        "en": "students (men, or men and women; after dużo, mało…: dużo studentów)"
+      }
+    },
+    {
+      "id": "nauczycieli",
+      "text": "nauczycieli",
+      "meaning": {
+        "en": "teachers (men, or men and women; after dużo, mało…: mało nauczycieli)"
+      }
+    },
+    {
+      "id": "potrzebowac-potrzebuje",
+      "text": "potrzebuję",
+      "meaning": {
+        "en": "I need (potrzebuję samochodu: I need a car)"
+      }
+    },
+    {
+      "id": "potrzebowac-potrzebuja",
+      "text": "potrzebują",
+      "meaning": {
+        "en": "they need"
+      }
+    },
+    {
+      "id": "samochodu",
+      "text": "samochodu",
+      "meaning": {
+        "en": "a car (after potrzebuję, nie mam…: potrzebuję samochodu)"
+      }
+    },
+    {
+      "id": "szukac-szukaja",
+      "text": "szukają",
+      "meaning": {
+        "en": "they are looking for"
+      }
+    },
+    {
+      "id": "bac-sie-boje",
+      "text": "boję się",
+      "meaning": {
+        "en": "I'm afraid (boję się psów: I'm afraid of dogs)"
+      }
+    },
+    {
+      "id": "bac-sie-boja",
+      "text": "boją się",
+      "meaning": {
+        "en": "they are afraid"
+      }
+    },
+    {
+      "id": "kierowcow",
+      "text": "kierowców",
+      "meaning": {
+        "en": "drivers (after boję się, dużo…: boję się kierowców)"
+      }
+    },
+    {
+      "id": "historii",
+      "text": "historii",
+      "meaning": {
+        "en": "history (after uczę się, nie lubię…: uczę się historii)"
+      }
+    },
+    {
+      "id": "owocow",
+      "text": "owoców",
+      "meaning": {
+        "en": "fruit (after dużo, nie jem…: nie jem owoców)"
+      }
+    },
+    {
+      "id": "kotow",
+      "text": "kotów",
+      "meaning": {
+        "en": "cats (after boję się, dużo…: boję się kotów)"
+      }
+    },
+    {
+      "id": "kolezanek",
+      "text": "koleżanek",
+      "meaning": {
+        "en": "friends, women (after dużo, nie mam…: mam dużo koleżanek)"
+      }
+    },
+    {
+      "id": "ksiazek",
+      "text": "książek",
+      "meaning": {
+        "en": "books (after dużo, nie mam…: mam dużo książek)"
+      }
+    },
+    {
+      "id": "jablek",
+      "text": "jabłek",
+      "meaning": {
+        "en": "apples (after dużo, kilo…: kilo jabłek)"
+      }
+    },
+    {
+      "id": "seriali",
+      "text": "seriali",
+      "meaning": {
+        "en": "TV series (after dużo, nie oglądam…: nie oglądam seriali)"
+      }
+    },
+    {
+      "id": "nowych",
+      "text": "nowych",
+      "meaning": {
+        "en": "new (with a plural noun, after dużo, nie mam…: nie mam nowych książek)"
+      }
+    },
+    {
+      "id": "fajnych",
+      "text": "fajnych",
+      "meaning": {
+        "en": "nice, cool (with a plural noun, after dużo, nie mam…: mam dużo fajnych koleżanek)"
+      }
+    },
+    {
+      "id": "co-dla-pani",
+      "text": "co dla pani?",
+      "meaning": {
+        "en": "what can I get you? (to a woman)"
+      }
+    },
+    {
+      "id": "pieczarek",
+      "text": "pieczarek",
+      "meaning": {
+        "en": "mushrooms (after kilo, kilogram…: kilogram pieczarek)"
+      }
+    },
+    {
+      "id": "deka",
+      "text": "deka",
+      "meaning": {
+        "en": "ten grams (dziesięć deka: 100 grams)"
+      }
+    },
+    {
+      "id": "moze-byc",
+      "text": "może być",
+      "meaning": {
+        "en": "is that all right? that will do (może być trochę więcej?: is a bit more all right?)"
+      }
+    },
+    {
+      "id": "ziemniakow",
+      "text": "ziemniaków",
+      "meaning": {
+        "en": "potatoes (after kilo, kilogram…: pięć kilogramów ziemniaków)"
+      }
+    },
+    {
+      "id": "kiszone-ogorki",
+      "text": "kiszone ogórki",
+      "meaning": {
+        "en": "pickled cucumbers, dill pickles"
+      }
+    },
+    {
+      "id": "pol-kilograma",
+      "text": "pół kilograma",
+      "meaning": {
+        "en": "half a kilogram"
+      }
+    },
+    {
+      "id": "wystarczy",
+      "text": "wystarczy",
+      "meaning": {
+        "en": "that's enough, that will do"
+      }
+    },
+    {
+      "id": "pakowac-sie-pakujesz",
+      "text": "pakujesz się",
+      "meaning": {
+        "en": "you are packing (one friend)"
+      }
+    },
+    {
+      "id": "ciezki",
+      "text": "ciężki",
+      "meaning": {
+        "en": "heavy (ciężki, ciężka, ciężkie)"
+      },
+      "forms": [
+        "ciężka",
+        "ciężkie"
+      ]
+    },
+    {
+      "id": "paluszki",
+      "text": "paluszki",
+      "meaning": {
+        "en": "pretzel sticks (paczka paluszków: a packet of pretzel sticks)"
+      },
+      "forms": [
+        "paluszków"
+      ]
+    },
+    {
+      "id": "orzeszki",
+      "text": "orzeszki",
+      "meaning": {
+        "en": "peanuts (puszka orzeszków: a can of peanuts)"
+      },
+      "forms": [
+        "orzeszków"
+      ]
+    },
+    {
+      "id": "zgrzewka",
+      "text": "zgrzewka",
+      "meaning": {
+        "en": "a multipack, a shrink-wrapped pack (zgrzewka wody: a pack of bottles of water, usually six)"
+      },
+      "forms": [
+        "zgrzewki",
+        "zgrzewek",
+        "zgrzewkę"
+      ]
+    },
+    {
+      "id": "na-osobe",
+      "text": "na osobę",
+      "meaning": {
+        "en": "per person, each (dwie puszki na osobę)"
+      }
+    },
+    {
+      "id": "gazowany",
+      "text": "gazowany",
+      "meaning": {
+        "en": "sparkling, fizzy (woda gazowana: sparkling water) (gazowany, gazowana, gazowane)"
+      },
+      "forms": [
+        "gazowana",
+        "gazowane"
+      ]
+    },
+    {
+      "id": "niegazowany",
+      "text": "niegazowany",
+      "meaning": {
+        "en": "still, not fizzy (woda niegazowana: still water) (niegazowany, niegazowana, niegazowane)"
+      },
+      "forms": [
+        "niegazowana",
+        "niegazowane"
+      ]
+    },
+    {
+      "id": "poczta",
+      "text": "poczta",
+      "meaning": {
+        "en": "a post office; the post"
+      }
+    },
+    {
+      "id": "na-poczte",
+      "text": "na pocztę",
+      "meaning": {
+        "en": "to the post office (idę na pocztę)"
+      }
+    },
+    {
+      "id": "znaczek",
+      "text": "znaczek",
+      "meaning": {
+        "en": "a stamp (dwa znaczki, pięć znaczków)"
+      },
+      "forms": [
+        "znaczki",
+        "znaczków"
+      ]
+    },
+    {
+      "id": "koperta",
+      "text": "koperta",
+      "meaning": {
+        "en": "an envelope (dwie koperty, pięć kopert; poproszę kopertę)"
+      },
+      "forms": [
+        "koperty",
+        "kopert",
+        "kopertę"
+      ]
+    },
+    {
+      "id": "pocztowka",
+      "text": "pocztówka",
+      "meaning": {
+        "en": "a postcard (dwie pocztówki, pięć pocztówek; znaczek na pocztówkę: a stamp for a postcard)"
+      },
+      "forms": [
+        "pocztówki",
+        "pocztówek",
+        "pocztówkę"
+      ]
+    },
+    {
+      "id": "listonosz",
+      "text": "listonosz",
+      "meaning": {
+        "en": "a postman"
+      }
+    },
+    {
+      "id": "kurier",
+      "text": "kurier",
+      "meaning": {
+        "en": "a courier"
+      }
+    },
+    {
+      "id": "paczkomat",
+      "text": "paczkomat",
+      "meaning": {
+        "en": "a parcel locker"
+      }
+    },
+    {
+      "id": "wyslac",
+      "text": "wysłać",
+      "meaning": {
+        "en": "send (to send, once: wysłać list)"
+      }
+    },
+    {
+      "id": "wazny",
+      "text": "ważny",
+      "meaning": {
+        "en": "important (ważny, ważna, ważne)"
+      },
+      "forms": [
+        "ważna",
+        "ważne"
+      ]
+    },
+    {
+      "id": "list-polecony",
+      "text": "list polecony",
+      "meaning": {
+        "en": "a registered letter"
+      }
+    },
+    {
+      "id": "awizo",
+      "text": "awizo",
+      "meaning": {
+        "en": "a delivery notice (left when a parcel or a registered letter is waiting for you)"
+      }
+    },
+    {
+      "id": "kolejka",
+      "text": "kolejka",
+      "meaning": {
+        "en": "a queue (nie cierpię kolejek: I hate queues)"
+      },
+      "forms": [
+        "kolejki",
+        "kolejek",
+        "kolejkę"
+      ]
+    },
+    {
+      "id": "nie-cierpie",
+      "text": "nie cierpię",
+      "meaning": {
+        "en": "I can't stand, I hate (nie cierpię kolejek)"
+      }
+    },
+    {
+      "id": "nadac-paczke",
+      "text": "nadać paczkę",
+      "meaning": {
+        "en": "send a parcel (to send a parcel at the post office)"
+      }
+    },
+    {
+      "id": "zalezy",
+      "text": "zależy",
+      "meaning": {
+        "en": "it depends (to zależy: it depends; zależy od wagi: it depends on the weight)"
+      }
+    },
+    {
+      "id": "czy-pomozesz-mi",
+      "text": "czy pomożesz mi?",
+      "meaning": {
+        "en": "will you help me? (one friend)"
+      }
+    },
+    {
+      "id": "czy-mozesz-mi-pomoc",
+      "text": "czy możesz mi pomóc?",
+      "meaning": {
+        "en": "can you help me? (one friend)"
+      }
+    },
+    {
+      "id": "czy-moglbys-mi-pomoc",
+      "text": "czy mógłbyś mi pomóc?",
+      "meaning": {
+        "en": "could you help me? (to a man friend; mogłabyś: to a woman friend)"
+      },
+      "forms": [
+        "czy mogłabyś mi pomóc?"
+      ]
+    },
+    {
+      "id": "czy-moglaby-pani",
+      "text": "czy mogłaby mi pani pomóc?",
+      "meaning": {
+        "en": "could you help me? (polite, to a woman; mógłby mi pan: to a man)"
+      },
+      "forms": [
+        "czy mógłby mi pan pomóc?"
+      ]
+    },
+    {
+      "id": "czy-bylby-pan",
+      "text": "czy byłby pan tak uprzejmy?",
+      "meaning": {
+        "en": "would you be so kind? (to a man; byłaby pani tak uprzejma: to a woman)"
+      },
+      "forms": [
+        "czy byłaby pani tak uprzejma?"
+      ]
+    },
+    {
+      "id": "chcialem-cie-prosic",
+      "text": "chciałem cię prosić o pomoc",
+      "meaning": {
+        "en": "I wanted to ask you for help (a man says it; chciałam: a woman)"
+      },
+      "forms": [
+        "chciałam cię prosić o pomoc"
+      ]
+    },
+    {
+      "id": "pomoc-n",
+      "text": "pomoc",
+      "meaning": {
+        "en": "help (prosić o pomoc: to ask for help)"
+      }
+    },
+    {
+      "id": "nie-ma-sprawy",
+      "text": "nie ma sprawy",
+      "meaning": {
+        "en": "sure, no problem"
+      }
+    },
+    {
+      "id": "nie-ma-problemu",
+      "text": "nie ma problemu",
+      "meaning": {
+        "en": "no problem"
+      }
+    },
+    {
+      "id": "o-co-chodzi",
+      "text": "o co chodzi?",
+      "meaning": {
+        "en": "what is it about? what's up?"
+      }
+    },
+    {
+      "id": "czasu",
+      "text": "czasu",
+      "meaning": {
+        "en": "time (after nie mam, mało…: nie mam czasu)"
+      }
+    },
+    {
+      "id": "umyc-naczynia",
+      "text": "umyć naczynia",
+      "meaning": {
+        "en": "do the washing-up (to wash the dishes)"
+      }
+    },
+    {
+      "id": "nie-mam-pojecia",
+      "text": "nie mam pojęcia",
+      "meaning": {
+        "en": "I have no idea"
+      }
+    },
+    {
+      "id": "pomoge",
+      "text": "pomogę",
+      "meaning": {
+        "en": "I'll help (chętnie pani pomogę: I'll gladly help you)"
+      }
+    },
+    {
+      "id": "dzwonic-dzwonie",
+      "text": "dzwonię",
+      "meaning": {
+        "en": "I'm calling, I phone"
+      }
+    },
+    {
+      "id": "do-ciebie",
+      "text": "do ciebie",
+      "meaning": {
+        "en": "to you (one friend: dzwonię do ciebie)"
+      }
+    },
+    {
+      "id": "do-niego",
+      "text": "do niego",
+      "meaning": {
+        "en": "to him (dzwonię do niego)"
+      }
+    },
+    {
+      "id": "do-niej",
+      "text": "do niej",
+      "meaning": {
+        "en": "to her (dzwonię do niej)"
+      }
+    },
+    {
+      "id": "do-nich",
+      "text": "do nich",
+      "meaning": {
+        "en": "to them (dzwonię do nich)"
+      }
+    },
+    {
+      "id": "do-mnie",
+      "text": "do mnie",
+      "meaning": {
+        "en": "to me (dzwonisz do mnie?)"
+      }
+    },
+    {
+      "id": "do-nas",
+      "text": "do nas",
+      "meaning": {
+        "en": "to us (dzwonisz do nas?)"
+      }
+    },
+    {
+      "id": "do-was",
+      "text": "do was",
+      "meaning": {
+        "en": "to you (several people: dzwonię do was)"
+      }
+    },
+    {
+      "id": "szukac-szukasz",
+      "text": "szukasz",
+      "meaning": {
+        "en": "you are looking for (one friend)"
+      }
+    },
+    {
+      "id": "jej-gen",
+      "text": "jej",
+      "meaning": {
+        "en": "her (after szukam, nie widzę…: szukam jej)"
+      }
+    },
+    {
+      "id": "ich-gen",
+      "text": "ich",
+      "meaning": {
+        "en": "them (after szukam, nie widzę…: nie widzę ich)"
+      }
+    },
+    {
+      "id": "jego-gen",
+      "text": "jego",
+      "meaning": {
+        "en": "him (stressed: nie lubię ani jej, ani jego)"
+      }
+    },
+    {
+      "id": "nie-widze",
+      "text": "nie widzę",
+      "meaning": {
+        "en": "I can't see, I don't see"
+      }
+    },
+    {
+      "id": "nie-ma-go",
+      "text": "nie ma go",
+      "meaning": {
+        "en": "he isn't here; it isn't here"
+      }
+    },
+    {
+      "id": "nie-odbierasz",
+      "text": "nie odbierasz",
+      "meaning": {
+        "en": "you don't answer (the phone)"
+      }
+    },
+    {
+      "id": "chusteczki",
+      "text": "chusteczki",
+      "meaning": {
+        "en": "tissues (paczka chusteczek: a packet of tissues)"
+      },
+      "forms": [
+        "chusteczek"
+      ]
+    },
+    {
+      "id": "guma-do-zucia",
+      "text": "guma do żucia",
+      "meaning": {
+        "en": "chewing gum"
+      }
+    },
+    {
+      "id": "w-torbie",
+      "text": "w torbie",
+      "meaning": {
+        "en": "in the bag"
+      }
+    },
+    {
+      "id": "za-duzo",
+      "text": "za dużo",
+      "meaning": {
+        "en": "too much, too many"
+      }
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "id": "kpk1-l15-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Poczta, kurier, paczkomat",
+    "meaning": {
+      "en": "The post office, a courier, a parcel locker"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-c2-t01",
+      "before": "kpk1-l15-c2-e01",
+      "title": {
+        "en": "List polecony"
+      },
+      "body": {
+        "en": "*Muszę wysłać ważny list* is I must send an important letter. A *list polecony* (a registered letter) comes with a paper that says you sent it, and if nobody is at home the postman leaves an *awizo*. A parcel you *nadać* at the counter, and *to zależy* (it depends) on the weight. *Nie cierpię kolejek!* is I can't stand queues!"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c2-e01",
+      "prompt": "wysłać",
+      "options": [
+        {
+          "en": "send (to send, once: wysłać list)"
+        },
+        {
+          "en": "buy (to buy, once)"
+        },
+        {
+          "en": "bring (to bring)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wyslac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c2-e02",
+      "prompt": "ważny",
+      "options": [
+        {
+          "en": "heavy (ciężki, ciężka, ciężkie)"
+        },
+        {
+          "en": "important (ważny, ważna, ważne)"
+        },
+        {
+          "en": "expensive (drogi, droga, drogie)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wazny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-c2-e03",
+      "text": "muszę wysłać ważny list",
+      "meaning": {
+        "en": "I must send an important letter"
+      },
+      "distractors": [
+        "muszę wysłać ważną paczkę",
+        "muszę wysłać list polecony"
+      ],
+      "items": [
+        "musiec-musze",
+        "wyslac",
+        "wazny",
+        "list"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c2-e04",
+      "prompt": "list polecony",
+      "options": [
+        {
+          "en": "a postcard"
+        },
+        {
+          "en": "an e-mail"
+        },
+        {
+          "en": "a registered letter"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "list-polecony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c2-e05",
+      "prompt": "awizo",
+      "options": [
+        {
+          "en": "a delivery notice (left when a parcel or a registered letter is waiting for you)"
+        },
+        {
+          "en": "a stamp"
+        },
+        {
+          "en": "a parcel locker"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "awizo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-c2-e06",
+      "prompt": {
+        "en": "I want to send a registered letter"
+      },
+      "acceptedAnswers": [
+        "chcę wysłać list polecony"
+      ],
+      "distractors": [
+        "paczkę",
+        "znaczek"
+      ],
+      "items": [
+        "chciec-chce",
+        "wyslac",
+        "list-polecony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c2-e07",
+      "prompt": "kolejka",
+      "options": [
+        {
+          "en": "a counter"
+        },
+        {
+          "en": "a queue (nie cierpię kolejek: I hate queues)"
+        },
+        {
+          "en": "a crowd"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kolejka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c2-e08",
+      "prompt": "nie cierpię",
+      "options": [
+        {
+          "en": "I like"
+        },
+        {
+          "en": "I need"
+        },
+        {
+          "en": "I can't stand, I hate (nie cierpię kolejek)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nie-cierpie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-c2-e09",
+      "text": "Tam jest zawsze ___. Nie cierpię ___!",
+      "meaning": {
+        "en": "There is always a queue there. I can't stand queues!"
+      },
+      "gaps": [
+        [
+          "kolejka"
+        ],
+        [
+          "kolejek"
+        ]
+      ],
+      "distractors": [
+        "paczka",
+        "paczek"
+      ],
+      "items": [
+        "tam",
+        "byc-jest",
+        "zawsze",
+        "kolejka",
+        "nie-cierpie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c2-e10",
+      "prompt": "nadać paczkę",
+      "options": [
+        {
+          "en": "send a parcel (to send a parcel at the post office)"
+        },
+        {
+          "en": "get a parcel (to get a parcel)"
+        },
+        {
+          "en": "open a parcel (to open a parcel)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nadac-paczke"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-c2-e11",
+      "prompt": "zależy",
+      "options": [
+        {
+          "en": "it's ready"
+        },
+        {
+          "en": "it depends (to zależy: it depends; zależy od wagi: it depends on the weight)"
+        },
+        {
+          "en": "it's possible"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zalezy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-c2-e12",
+      "acceptedAnswers": [
+        "to zależy"
+      ],
+      "meaning": {
+        "en": "it depends"
+      },
+      "items": [
+        "to",
+        "zalezy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-c2-e13",
+      "prompt": {
+        "en": "a registered letter"
+      },
+      "acceptedAnswers": [
+        "list polecony"
+      ],
+      "items": [
+        "list-polecony"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-c2-e14",
+      "prompt": {
+        "en": "I want to send a parcel"
+      },
+      "acceptedAnswers": [
+        "chcę nadać paczkę",
+        "chcę wysłać paczkę"
+      ],
+      "items": [
+        "chciec-chce",
+        "nadac-paczke"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-c2-e15",
+      "pairs": [
+        {
+          "polish": "wysłać",
+          "meaning": {
+            "en": "to send"
+          }
+        },
+        {
+          "polish": "ważny",
+          "meaning": {
+            "en": "important"
+          }
+        },
+        {
+          "polish": "list polecony",
+          "meaning": {
+            "en": "a registered letter"
+          }
+        },
+        {
+          "polish": "awizo",
+          "meaning": {
+            "en": "a delivery notice"
+          }
+        },
+        {
+          "polish": "kolejka",
+          "meaning": {
+            "en": "a queue"
+          }
+        },
+        {
+          "polish": "nie cierpię",
+          "meaning": {
+            "en": "I can't stand"
+          }
+        }
+      ],
+      "items": [
+        "wyslac",
+        "wazny",
+        "list-polecony",
+        "awizo",
+        "kolejka",
+        "nie-cierpie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-c2-e16",
+      "lines": [
+        "Ewa musi wysłać ważny list.",
+        "Na poczcie jest kolejka, a Adam nie cierpi kolejek.",
+        "Pani na poczcie mówi: proszę wysłać list polecony."
+      ],
+      "meaning": {
+        "en": "Sending an important letter."
+      },
+      "statements": [
+        {
+          "text": "Ewa musi wysłać list.",
+          "meaning": {
+            "en": "Ewa must send a letter."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam lubi kolejki.",
+          "meaning": {
+            "en": "Adam likes queues."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa wysyła list polecony.",
+          "meaning": {
+            "en": "Ewa sends a registered letter."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "wyslac",
+        "wazny",
+        "kolejka",
+        "list-polecony"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-c2-e17",
+      "lines": [
+        "Dzień dobry, chciałem nadać paczkę.",
+        "Do Polski?",
+        "Nie, do Argentyny. Czy to dużo kosztuje?",
+        "To zależy."
+      ],
+      "meaning": {
+        "en": "Sending a parcel."
+      },
+      "items": [
+        "dzien-dobry",
+        "chciec-chcialem",
+        "nadac-paczke",
+        "nie",
+        "czy",
+        "to",
+        "duzo",
+        "kosztowac-kosztuje",
+        "zalezy"
+      ]
+    }
+  ]
+}

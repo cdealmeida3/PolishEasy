@@ -1,0 +1,418 @@
+{
+  "id": "kpk1-l15-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Puszki, paczki i pudełka",
+    "meaning": {
+      "en": "Cans, packets and boxes"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l15-a3-t01",
+      "before": "kpk1-l15-a3-e01",
+      "title": {
+        "en": "Co w czym?"
+      },
+      "body": {
+        "en": "Not everything goes in everything. A *kostka* is for butter or ice (*kostka lodu*: an ice cube), a *paczka* for pasta, tea or crisps, a *puszka* for sweetcorn or beer, and a *kawałek* or a *plasterek* for sausage, ham, cheese or cake: *plasterek szynki*, *kawałek tortu*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a3-e01",
+      "prompt": "lód",
+      "options": [
+        {
+          "en": "water"
+        },
+        {
+          "en": "ice (kostka lodu: an ice cube)"
+        },
+        {
+          "en": "a block"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "lod"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-a3-e02",
+      "text": "kostka lodu",
+      "meaning": {
+        "en": "an ice cube"
+      },
+      "distractors": [
+        "kostka masła",
+        "kawałek lodu"
+      ],
+      "items": [
+        "kostka",
+        "lod"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a3-e03",
+      "prompt": "makaronu",
+      "options": [
+        {
+          "en": "tea (after nie: nie piję herbaty)"
+        },
+        {
+          "en": "bread (after nie: nie mam chleba)"
+        },
+        {
+          "en": "pasta (after paczka, nie mam…: paczka makaronu)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "makaron-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a3-e04",
+      "prompt": "kukurydzy",
+      "options": [
+        {
+          "en": "sweetcorn (after puszka, nie mam…: puszka kukurydzy)"
+        },
+        {
+          "en": "peppers (after kilo…)"
+        },
+        {
+          "en": "pasta (after paczka, nie mam…: paczka makaronu)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kukurydza-gen"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l15-a3-e05",
+      "prompt": {
+        "en": "a packet of pasta and a can of sweetcorn"
+      },
+      "acceptedAnswers": [
+        "paczka makaronu i puszka kukurydzy"
+      ],
+      "distractors": [
+        "butelka",
+        "sera"
+      ],
+      "items": [
+        "paczka",
+        "makaron-gen",
+        "i",
+        "puszka",
+        "kukurydza-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a3-e06",
+      "prompt": "kiełbasy",
+      "options": [
+        {
+          "en": "ham (after plasterek, nie mam…: plasterek szynki)"
+        },
+        {
+          "en": "sausage (after kawałek, nie mam…: kawałek kiełbasy)"
+        },
+        {
+          "en": "cheese (after nie: nie jem sera)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kielbasa-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a3-e07",
+      "prompt": "szynki",
+      "options": [
+        {
+          "en": "sausage (after kawałek, nie mam…: kawałek kiełbasy)"
+        },
+        {
+          "en": "butter (after kostka, nie mam…: kostka masła)"
+        },
+        {
+          "en": "ham (after plasterek, nie mam…: plasterek szynki)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szynka-gen"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l15-a3-e08",
+      "text": "Proszę kawałek ___ i dwa plasterki ___.",
+      "meaning": {
+        "en": "A piece of sausage and two slices of ham, please."
+      },
+      "gaps": [
+        [
+          "kiełbasy"
+        ],
+        [
+          "szynki"
+        ]
+      ],
+      "distractors": [
+        "szynka",
+        "sera"
+      ],
+      "items": [
+        "prosze",
+        "kawalek",
+        "kielbasa-gen",
+        "i",
+        "dwa",
+        "plasterek",
+        "szynka-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a3-e09",
+      "prompt": "tort",
+      "options": [
+        {
+          "en": "a gateau, a layer cake (kawałek tortu: a piece of gateau)"
+        },
+        {
+          "en": "a biscuit"
+        },
+        {
+          "en": "bread"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tort"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l15-a3-e10",
+      "prompt": "ciasta",
+      "options": [
+        {
+          "en": "cheese (after nie: nie jem sera)"
+        },
+        {
+          "en": "cake (after kawałek, nie mam…: kawałek ciasta)"
+        },
+        {
+          "en": "chocolate (after tabliczka, nie mam…: tabliczka czekolady)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ciasto-gen"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l15-a3-e11",
+      "text": "dwa kawałki ciasta",
+      "meaning": {
+        "en": "two pieces of cake"
+      },
+      "distractors": [
+        "dwa kawałki sera",
+        "pięć kawałków ciasta"
+      ],
+      "items": [
+        "dwa",
+        "kawalek",
+        "ciasto-gen"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l15-a3-e12",
+      "acceptedAnswers": [
+        "plasterek szynki"
+      ],
+      "meaning": {
+        "en": "a slice of ham"
+      },
+      "items": [
+        "plasterek",
+        "szynka-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-a3-e13",
+      "prompt": {
+        "en": "a packet of pasta"
+      },
+      "acceptedAnswers": [
+        "paczka makaronu"
+      ],
+      "items": [
+        "paczka",
+        "makaron-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l15-a3-e14",
+      "prompt": {
+        "en": "an ice cube"
+      },
+      "acceptedAnswers": [
+        "kostka lodu"
+      ],
+      "items": [
+        "kostka",
+        "lod"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l15-a3-e15",
+      "pairs": [
+        {
+          "polish": "kostka lodu",
+          "meaning": {
+            "en": "an ice cube"
+          }
+        },
+        {
+          "polish": "paczka makaronu",
+          "meaning": {
+            "en": "a packet of pasta"
+          }
+        },
+        {
+          "polish": "puszka kukurydzy",
+          "meaning": {
+            "en": "a can of sweetcorn"
+          }
+        },
+        {
+          "polish": "kawałek kiełbasy",
+          "meaning": {
+            "en": "a piece of sausage"
+          }
+        },
+        {
+          "polish": "plasterek szynki",
+          "meaning": {
+            "en": "a slice of ham"
+          }
+        },
+        {
+          "polish": "kawałek tortu",
+          "meaning": {
+            "en": "a piece of gateau"
+          }
+        }
+      ],
+      "items": [
+        "kostka",
+        "lod",
+        "paczka",
+        "makaron-gen",
+        "puszka",
+        "kukurydza-gen",
+        "kawalek",
+        "kielbasa-gen",
+        "plasterek",
+        "szynka-gen",
+        "tort"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l15-a3-e16",
+      "lines": [
+        "Na liście jest kawałek tortu, puszka kukurydzy i paczka makaronu.",
+        "Jest też kostka lodu do coli.",
+        "Nie ma kiełbasy."
+      ],
+      "meaning": {
+        "en": "The shopping list."
+      },
+      "statements": [
+        {
+          "text": "Na liście jest paczka makaronu.",
+          "meaning": {
+            "en": "A packet of pasta is on the list."
+          },
+          "true": true
+        },
+        {
+          "text": "Na liście jest kiełbasa.",
+          "meaning": {
+            "en": "Sausage is on the list."
+          },
+          "true": false
+        },
+        {
+          "text": "Na liście jest kawałek tortu.",
+          "meaning": {
+            "en": "A piece of gateau is on the list."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "kawalek",
+        "tort",
+        "puszka",
+        "kukurydza-gen",
+        "paczka",
+        "makaron-gen",
+        "kostka",
+        "lod",
+        "kielbasa-gen"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l15-a3-e17",
+      "lines": [
+        "Co kupujemy?",
+        "Paczkę makaronu i kawałek kiełbasy.",
+        "A tort?",
+        "Tak, kawałek tortu!"
+      ],
+      "meaning": {
+        "en": "What are we buying?"
+      },
+      "items": [
+        "co",
+        "kupowac-kupujemy",
+        "paczka",
+        "makaron-gen",
+        "i",
+        "kawalek",
+        "kielbasa-gen",
+        "a",
+        "tort",
+        "tak"
+      ]
+    }
+  ]
+}

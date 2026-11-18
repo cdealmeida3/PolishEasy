@@ -17,7 +17,8 @@
     "kpk1/lesson-11/items.json",
     "kpk1/lesson-12/items.json",
     "kpk1/lesson-13/items.json",
-    "kpk1/lesson-14/items.json"
+    "kpk1/lesson-14/items.json",
+    "kpk1/lesson-15/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -44,7 +45,8 @@
     "kpk1/chats/family-photo.json",
     "kpk1/chats/invitation.json",
     "kpk1/chats/weekend.json",
-    "kpk1/chats/the-way.json"
+    "kpk1/chats/the-way.json",
+    "kpk1/chats/post-office.json"
   ],
   "levels": [
     {
@@ -868,7 +870,38 @@
               "rekcja liczebników"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-15/section-a1.json",
+            "kpk1/lesson-15/section-a2.json",
+            "kpk1/lesson-15/section-a3.json",
+            "kpk1/lesson-15/section-a4.json",
+            "kpk1/lesson-15/section-a5.json",
+            "kpk1/lesson-15/section-b1.json",
+            "kpk1/lesson-15/section-b2.json",
+            "kpk1/lesson-15/section-b3.json",
+            "kpk1/lesson-15/section-b4.json",
+            "kpk1/lesson-15/section-b5.json",
+            "kpk1/lesson-15/section-b6.json",
+            "kpk1/lesson-15/section-c1.json",
+            "kpk1/lesson-15/section-c2.json",
+            "kpk1/lesson-15/section-d1.json",
+            "kpk1/lesson-15/section-d2.json",
+            "kpk1/lesson-15/section-e1.json",
+            "kpk1/lesson-15/section-e2.json",
+            "kpk1/lesson-15/section-g.json"
+          ],
+          "lookUp": [
+            "plasterek",
+            "zapalki",
+            "zgrzewka",
+            "kolejka",
+            "nie-cierpie",
+            "zalezy",
+            "bac-sie-boje",
+            "szukac-szukaja",
+            "awizo",
+            "paczkomat"
+          ]
         },
         {
           "id": "kpk1-l16",
