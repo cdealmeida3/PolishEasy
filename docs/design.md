@@ -307,6 +307,7 @@ A chapter, laid out like its opening page in the book, from the top:
 - **"Słuchaj"**: the chapter's class recordings, under "Część A", "Część B" … (with the section's heading once the chapter has it; "Nagrania" in chapter 0, whose recordings have no letter), a `RecordingRow` each, and "3 of 3 recordings on this phone". With none on the phone, a `Point`, "Add the class recordings", and a `TonalButton`, "Add them", which opens Class audio.
 - **"Powtórzenie"**: the three `ToolTile`s, Słownik, Fiszki and Test, open whatever has been completed.
 - **Komentarze gramatyczne**: under them, when the chapter has a grammar table, a `LinkSetting`, "1 of 2 grammar tables of this chapter", to the chapter's own Grammar shelf.
+- **"Gry"**: the chapter's own Games (those whose `Game.chapter` is its number) as the Practice screen's `GameCard`s, without their Bests, then a `GameCard` for each conversation of the Chat it brings, titled by the conversation, with the Chat's icon and "Chat: text back and forth…". Tapping one opens it as from Practice, and leaving it comes back to the chapter. With One a day on, one not yet playable is locked with what opens it, as on Practice.
 - A chapter still being written has, in place of its sections and Powtórzenie, a `Point`: "This lesson is on its way", and then its Słuchaj, since the recordings are there before the sections are.
 
 ## A recording
@@ -326,6 +327,7 @@ The rules of the trail are the Path's own, unchanged by being on a chapter's scr
 
 - **Słownik**: "Słownik" with the chapter under it, the `SearchField`, and every word the chapter teaches as a `DictionaryRow` in the order it teaches them. Typing finds a word by its Polish, with or without its marks (*dziekuje* finds *dziękuję*), or by its meaning. Nothing found says so in a `CardNote`.
 - **Fiszki**: "Card 3 of 30", a label ("Due for Review" in `primary`, "Flashcards" for a word met, "New word"), the `Flashcard` and "Say what it means, then tap to turn it." Once turned, "Not yet" (`SecondaryButton`) and "I knew it" (`PrimaryButton`) side by side at the bottom: the word is rescheduled in Review as an answer would reschedule it. The cards due for Review come first. At the end, "Wszystkie!" in `displaySmall` with "All of them!" under it, how many were known, "Go again" and "Back to the lesson".
+- **Skip**: every Exercise of a Daily Set, a Replay or a Test has a quiet "Skip" (`QuietButton`, subdued) after the progress bar until it is answered (ADR-0016). It moves on at once: the question is not asked again, counts as neither right nor wrong for Review, and is not counted among the right answers.
 - **Test**: the chapter's Checkpoint is played in the Daily Set frame, labelled "Test" like a Replay is labelled "Replay"; a wrong answer is not asked again. **Its result** has the `Seal`, "Zdane!" (passed) or "Jeszcze raz!" (once more) in `displaySmall` with its English, "Test · Dzień dobry!", "New Best" when beaten, a `StatRow` with "17 of 20 right · This time" and "95% · Best", a line on the pass mark, then "Try again" and "Done". A seal newly won gets the confetti. Nothing is locked behind a Test.
 
 ## Settings

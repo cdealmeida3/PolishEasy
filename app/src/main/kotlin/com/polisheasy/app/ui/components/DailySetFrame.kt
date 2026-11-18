@@ -61,6 +61,7 @@ import androidx.compose.ui.unit.Dp
  * What every Tip and Exercise of a Daily Set sits in: a close button and the progress bar at the
  * top, which stay where they are, and below them the [step] being shown. When [step] changes the
  * old one slides out and the new one slides in; [content] draws either, usually as a [DailySetStep].
+ * With [onSkip], a quiet "Skip" ([skipLabel]) sits after the progress bar.
  */
 @Composable
 fun <K> DailySetFrame(
@@ -70,6 +71,8 @@ fun <K> DailySetFrame(
     onClose: () -> Unit,
     step: K,
     modifier: Modifier = Modifier,
+    onSkip: (() -> Unit)? = null,
+    skipLabel: String = "",
     content: @Composable (step: K) -> Unit,
 ) {
     val transition = Motion.step()
@@ -97,6 +100,10 @@ fun <K> DailySetFrame(
             }
             Spacer(Modifier.width(Space.xxs))
             ProgressBar(progress, progressDescription, Modifier.weight(1f))
+            if (onSkip != null) {
+                Spacer(Modifier.width(Space.xs))
+                QuietButton(skipLabel, onSkip, subdued = true)
+            }
         }
         AnimatedContent(
             targetState = step,
