@@ -251,3 +251,24 @@ It gives the later chapters:
 - the times of day and the adverbs of frequency, from *zawsze* to *nigdy*.
 
 It leaves for later: the plural of the possessives with men (*moi* is an Item), the genitive of people (*siostra mojego taty* is heard, not taught), and the past tense of *żyć*.
+
+## Chapter 12: Co robisz w poniedziałek o ósmej?
+
+Book pages 94 to 101 (pages 96 and 97 are missing from the spreads; a frame of them is `teacher-course/pages-extra/lesson-12-pages-96-97.jpg` in the project files), recordings 132 to 143. Seventeen parts, 296 Exercises and 130 new Items.
+
+- **A** *Macie ochotę pójść na spektakl?*, in five: a show tonight (17: *spektakl*, *zaproszenie*, *pójść*, *masz ochotę*, *randka*, *teatr*, *to nie wasza sprawa*, *komedia romantyczna*); inviting, from the box *Umawiamy się* (17: *zapraszam cię*, *na film*, *może pójdziemy…?*, *na spacer*, *co powiesz na…?*, *do parku*, *czy chciałby pan…?*, *umawiamy się*); saying yes (17: *dziękuję za zaproszenie*, *z przyjemnością*, *świetny*, *pomysł*, *jasne!*, *dlaczego nie?*, *na mecz*); saying no, with a Tip on *dokąd?* and *na co?* (18: *przykro mi*, *nie mam czasu*, *nie dam rady*, *dokąd?*, *do teatru*, *do kawiarni*, *na przedstawienie*, *na co?*); and making a plan (17: *potańczyć*, *nie mam planów*, *kto jeszcze?*, *coś innego*, *gdzie się spotkamy?*, *na rynku*, *pod pomnikiem*, *bez dyskusji*).
+- **B** *Która godzina? O której godzinie?*, in five: the hours one to six (17: *godzina*, *która jest godzina?*, *pierwsza* … *szósta*); seven to twelve and *o której?* (17: *siódma* … *dwunasta*, *o*, *o której?*); the 24-hour clock (18: *trzynasta* … *dwudziesta*); minutes, with Tips on *po*, *za*, *wpół do* and the formal way (18: *kwadrans*, *po*, *za*, *wpół do*, *minuta*, *około*, *zegarek*, *budzik*); and *od której do której?* (17: *od*, *do*, *zajęcia*, *trwa*, *wizyta*, *u dentysty*, *szef*).
+- **C** *W poniedziałek czy we wtorek?*, in two: the days of the week, with a Tip on *w* and *we* (17: *poniedziałek* … *niedziela*, *dni tygodnia*); and a week's diary (18: *tydzień*, *spotkanie*, *impreza*, *u babci*, *zaczyna się*, *spotyka się*, *do dentysty*, *w galerii*).
+- **D** *Rutyna dnia*, in four: my morning (17: *budzę się*, *wstaję*, *prysznic*, *myję*, *zęby*, *ubieram się*, *wychodzę*, *z domu*); a friend's day, with *brać* (18: *budzisz się*, *wstajesz*, *bierzesz*, *myjesz*, *ubierasz się*, *wychodzisz*, *sprzątam*, *spać*); the verbs, with *wstawać* (18: *budzić się*, *wstawać*, *brać*, *myć się*, *ubierać się*, *wcześnie*, *odpoczywam*, *spotykam się*); and a working day (17: *zaczynam*, *kończę*, *pracę*, *sprawdzam*, *coś*, *w telefonie*, *otwieram*, *serwis informacyjny*).
+- *Ćwiczenia* (17): invitations and answers, times said both ways, the verbs with what goes with them (*wstawać wcześnie*, *jechać na wycieczkę*), *jechać*, *na lunch*.
+
+An hour is a feminine ordinal, one Item with its form after *o*, *od*, *do* and *około* (*ósma*, *ósmej*); the hours from 21 to 24 are *dwudziesta* with *pierwsza* to *czwarta*. *O*, *po*, *za*, *od* and *do* are Items only in telling the time, and a day carries its *w* or *we* as its form (*środa*, *w środę*). *Zaproszenie*, *umówić się* (as *umawiamy się*), *godzina* and *kwadrans*, the words the book sends to the dictionary, are under Look up. There are 58 listening tasks on all 12 recordings (133 repeats 132; for 136, 138 and 143 the speaker's times are asked letter by letter), and one Chat: *An invitation* (a friend, informal: a concert at the weekend, Friday you cannot, Saturday at eight, meeting by the monument at half past seven). Nine Items have pictures (an alarm clock, a party popper, a calendar, a football, a tooth, the theatre masks, a shower, a watch, a bed).
+
+It gives the later chapters:
+
+- the time: *która jest godzina?*, *o której?*, the hours 1 to 24 both ways, *kwadrans*, *wpół do*, *po*, *za*, *od… do…*, *około*;
+- the days of the week with *w* and *we*;
+- inviting, accepting and refusing, *dokąd?* with *do* and *na co?* with *na*;
+- the daily routine in *ja* and *ty*, with *wstawać* and *brać*.
+
+It leaves for later: the ordinals as adjectives beyond the hours (*pierwszy dzień tygodnia* is heard in the crossword, not taught), the third person of the routine verbs (*budzi się* is only in statements), and the genitive of the days (*do soboty*).

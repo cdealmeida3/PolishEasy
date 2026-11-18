@@ -101,12 +101,32 @@
       "text": "A ja na gofr."
     },
     {
+      "id": "a-jutro",
+      "text": "A jutro?"
+    },
+    {
       "id": "a-kalafior",
       "text": "A kalafior?"
     },
     {
+      "id": "a-kiedy",
+      "text": "A kiedy?"
+    },
+    {
       "id": "a-kto-to-jest",
       "text": "A kto to jest?"
+    },
+    {
+      "id": "a-o-ktorej-wychodzisz-z-domu",
+      "text": "A o której wychodzisz z domu?"
+    },
+    {
+      "id": "a-obiad",
+      "text": "A obiad?"
+    },
+    {
+      "id": "a-potem",
+      "text": "A potem?"
     },
     {
       "id": "a-potem-ide-na-kawe-ze-znajomymi",
@@ -203,6 +223,10 @@
     {
       "id": "a-w-nocy",
       "text": "A w nocy?"
+    },
+    {
+      "id": "a-w-piatek",
+      "text": "A w piątek?"
     },
     {
       "id": "a-woda-mineralna",
@@ -315,6 +339,10 @@
     {
       "id": "adam-nie-lubi-czerwonego-wina",
       "text": "Adam nie lubi czerwonego wina."
+    },
+    {
+      "id": "adam-nie-moze-bo-ma-randke-idzie-na-komedie-roma",
+      "text": "Adam nie może, bo ma randkę: idzie na komedię romantyczną."
     },
     {
       "id": "adam-pije-kawe-bez-cukru",
@@ -625,6 +653,14 @@
       "text": "Bez cukru, dziękuję."
     },
     {
+      "id": "bez-dyskusji",
+      "text": "bez dyskusji"
+    },
+    {
+      "id": "bez-dyskusji-2",
+      "text": "bez dyskusji!"
+    },
+    {
       "id": "bez-mleka",
       "text": "bez mleka"
     },
@@ -651,6 +687,14 @@
     {
       "id": "biegac",
       "text": "biegać"
+    },
+    {
+      "id": "bierzesz",
+      "text": "bierzesz"
+    },
+    {
+      "id": "bierzesz-prysznic",
+      "text": "bierzesz prysznic"
     },
     {
       "id": "bigos",
@@ -681,6 +725,10 @@
       "text": "biorę"
     },
     {
+      "id": "biore-prysznic",
+      "text": "biorę prysznic"
+    },
+    {
       "id": "biore-ten",
       "text": "biorę ten"
     },
@@ -705,8 +753,20 @@
       "text": "Bo moja żona jest z Polski."
     },
     {
+      "id": "bo-o-siodmej-wychodze-z-domu",
+      "text": "Bo o siódmej wychodzę z domu."
+    },
+    {
       "id": "bogaty",
       "text": "bogaty"
+    },
+    {
+      "id": "brac",
+      "text": "brać"
+    },
+    {
+      "id": "brac-prysznic",
+      "text": "brać prysznic"
     },
     {
       "id": "brat",
@@ -751,6 +811,34 @@
     {
       "id": "brzydki",
       "text": "brzydki"
+    },
+    {
+      "id": "budze-sie",
+      "text": "budzę się"
+    },
+    {
+      "id": "budze-sie-o-siodmej",
+      "text": "budzę się o siódmej"
+    },
+    {
+      "id": "budzic-sie",
+      "text": "budzić się"
+    },
+    {
+      "id": "budzic-sie-wczesnie",
+      "text": "budzić się wcześnie"
+    },
+    {
+      "id": "budzik",
+      "text": "budzik"
+    },
+    {
+      "id": "budzik-dzwoni-o-szostej",
+      "text": "Budzik dzwoni o szóstej."
+    },
+    {
+      "id": "budzisz-sie",
+      "text": "budzisz się"
     },
     {
       "id": "bulka",
@@ -845,6 +933,10 @@
       "text": "chcesz"
     },
     {
+      "id": "chcesz-pojsc-do-kawiarni",
+      "text": "Chcesz pójść do kawiarni?"
+    },
+    {
       "id": "chciec",
       "text": "chcieć"
     },
@@ -855,6 +947,10 @@
     {
       "id": "chetnie-2",
       "text": "Chętnie!"
+    },
+    {
+      "id": "chetnie-a-kiedy",
+      "text": "Chętnie! A kiedy?"
     },
     {
       "id": "chetnie-na-twardo-prosze",
@@ -1093,6 +1189,10 @@
       "text": "co jesz na śniadanie?"
     },
     {
+      "id": "co-juz-piata",
+      "text": "Co? Już piąta?"
+    },
+    {
       "id": "co-kupujemy",
       "text": "Co kupujemy?"
     },
@@ -1161,12 +1261,28 @@
       "text": "co powiedzieć"
     },
     {
+      "id": "co-powiesz-na",
+      "text": "co powiesz na…?"
+    },
+    {
+      "id": "co-powiesz-na-koncert",
+      "text": "Co powiesz na koncert?"
+    },
+    {
+      "id": "co-powiesz-na-spacer",
+      "text": "Co powiesz na spacer?"
+    },
+    {
       "id": "co-robi-twoj-tata",
       "text": "co robi twój tata?"
     },
     {
       "id": "co-robicie",
       "text": "co robicie?"
+    },
+    {
+      "id": "co-robicie-jutro-wieczorem",
+      "text": "Co robicie jutro wieczorem?"
     },
     {
       "id": "co-robicie-w-weekend",
@@ -1187,6 +1303,10 @@
     {
       "id": "co-robisz-dzisiaj-nic",
       "text": "Co robisz dzisiaj? Nic."
+    },
+    {
+      "id": "co-robisz-rano-w-pracy",
+      "text": "Co robisz rano w pracy?"
     },
     {
       "id": "co-robisz-w-weekend",
@@ -1289,6 +1409,10 @@
       "text": "Codziennie rano dzwoni do babci."
     },
     {
+      "id": "codziennie-wstaje-o-siodmej",
+      "text": "Codziennie wstaję o siódmej."
+    },
+    {
       "id": "corka",
       "text": "córka"
     },
@@ -1299,6 +1423,14 @@
     {
       "id": "corke",
       "text": "córkę"
+    },
+    {
+      "id": "cos",
+      "text": "coś"
+    },
+    {
+      "id": "cos-innego",
+      "text": "coś innego"
     },
     {
       "id": "cos-jeszcze",
@@ -1537,6 +1669,10 @@
       "text": "Cześć! Mam na imię Leon."
     },
     {
+      "id": "czesc-masz-ochote-pojsc-na-koncert",
+      "text": "Cześć! Masz ochotę pójść na koncert?"
+    },
+    {
       "id": "czesc-po-staremu-a-u-ciebie",
       "text": "Cześć! Po staremu. A u ciebie?"
     },
@@ -1583,6 +1719,10 @@
     {
       "id": "czternascie-pietnascie-szesnascie",
       "text": "czternaście, piętnaście, szesnaście"
+    },
+    {
+      "id": "czternasta",
+      "text": "czternasta"
     },
     {
       "id": "cztery",
@@ -1649,6 +1789,14 @@
       "text": "czterysta pięćdziesiąt sześć"
     },
     {
+      "id": "czwarta",
+      "text": "czwarta"
+    },
+    {
+      "id": "czwartek",
+      "text": "czwartek"
+    },
+    {
       "id": "czy",
       "text": "czy"
     },
@@ -1659,6 +1807,18 @@
     {
       "id": "czy-chcesz-dzisiaj-grac",
       "text": "Czy chcesz dzisiaj grać?"
+    },
+    {
+      "id": "czy-chcialaby-pani-pojsc-do-parku",
+      "text": "czy chciałaby pani pójść do parku?"
+    },
+    {
+      "id": "czy-chcialby-pan",
+      "text": "czy chciałby pan…?"
+    },
+    {
+      "id": "czy-chcialby-pan-pojsc-na-lunch",
+      "text": "czy chciałby pan pójść na lunch?"
     },
     {
       "id": "czy-chodzisz-do-szkoly",
@@ -1989,6 +2149,18 @@
       "text": "czyli"
     },
     {
+      "id": "czyli-o-dwunastej-pietnascie",
+      "text": "Czyli o dwunastej piętnaście?"
+    },
+    {
+      "id": "czyli-o-siodmej-trzydziesci",
+      "text": "Czyli o siódmej trzydzieści?"
+    },
+    {
+      "id": "czyli-o-siodmej-wieczorem",
+      "text": "Czyli o siódmej wieczorem?"
+    },
+    {
       "id": "czym",
       "text": "czym"
     },
@@ -2157,6 +2329,10 @@
       "text": "Dlaczego musisz pracować?"
     },
     {
+      "id": "dlaczego-nie",
+      "text": "dlaczego nie?"
+    },
+    {
       "id": "dlaczego-nie-mozesz",
       "text": "Dlaczego nie możesz?"
     },
@@ -2167,6 +2343,10 @@
     {
       "id": "dlaczego-pytasz",
       "text": "Dlaczego pytasz?"
+    },
+    {
+      "id": "dlaczego-tak-wczesnie",
+      "text": "Dlaczego tak wcześnie?"
     },
     {
       "id": "dlaczego-uczysz-sie-polskiego",
@@ -2193,6 +2373,18 @@
       "text": "długopis i książka"
     },
     {
+      "id": "dni-tygodnia",
+      "text": "dni tygodnia"
+    },
+    {
+      "id": "do",
+      "text": "do"
+    },
+    {
+      "id": "do-dentysty",
+      "text": "do dentysty"
+    },
+    {
       "id": "do-domu",
       "text": "do domu"
     },
@@ -2205,6 +2397,10 @@
       "text": "do jutra"
     },
     {
+      "id": "do-kawiarni",
+      "text": "do kawiarni"
+    },
+    {
       "id": "do-kina",
       "text": "do kina"
     },
@@ -2215,6 +2411,10 @@
     {
       "id": "do-lekarza",
       "text": "do lekarza"
+    },
+    {
+      "id": "do-parku",
+      "text": "do parku"
     },
     {
       "id": "do-picia",
@@ -2243,6 +2443,14 @@
     {
       "id": "do-szkoly",
       "text": "do szkoły"
+    },
+    {
+      "id": "do-teatru",
+      "text": "do teatru"
+    },
+    {
+      "id": "do-teatru-na-przedstawienie",
+      "text": "do teatru, na przedstawienie"
     },
     {
       "id": "do-widzenia",
@@ -2317,6 +2525,10 @@
       "text": "Dobrze, idziemy."
     },
     {
+      "id": "dobrze-mam-czas",
+      "text": "Dobrze, mam czas."
+    },
+    {
       "id": "dobrze-na-razie",
       "text": "Dobrze! Na razie!"
     },
@@ -2341,6 +2553,10 @@
       "text": "Dobrze! Tu jest lista zakupów."
     },
     {
+      "id": "dobrze-w-sobote-zaczyna-sie-o-dwudziestej",
+      "text": "Dobrze, w sobotę. Zaczyna się o dwudziestej."
+    },
+    {
       "id": "dojrzale-banany",
       "text": "dojrzałe banany"
     },
@@ -2351,6 +2567,14 @@
     {
       "id": "dojrzaly",
       "text": "dojrzały"
+    },
+    {
+      "id": "dokad",
+      "text": "dokąd?"
+    },
+    {
+      "id": "dokad-idziesz-do-teatru",
+      "text": "Dokąd idziesz? Do teatru."
     },
     {
       "id": "dopasowac",
@@ -2387,6 +2611,10 @@
     {
       "id": "drozdzowka-i-kawa",
       "text": "drożdżówka i kawa"
+    },
+    {
+      "id": "druga",
+      "text": "druga"
     },
     {
       "id": "drugi-raz",
@@ -2569,6 +2797,30 @@
       "text": "dwoje"
     },
     {
+      "id": "dwudziesta",
+      "text": "dwudziesta"
+    },
+    {
+      "id": "dwudziesta-czwarta",
+      "text": "dwudziesta czwarta"
+    },
+    {
+      "id": "dwudziesta-druga",
+      "text": "dwudziesta druga"
+    },
+    {
+      "id": "dwudziesta-pierwsza",
+      "text": "dwudziesta pierwsza"
+    },
+    {
+      "id": "dwudziesta-trzecia",
+      "text": "dwudziesta trzecia"
+    },
+    {
+      "id": "dwunasta",
+      "text": "dwunasta"
+    },
+    {
       "id": "dynia",
       "text": "dynia"
     },
@@ -2621,6 +2873,10 @@
       "text": "dzięki"
     },
     {
+      "id": "dzieki-ale-nie-dam-rady",
+      "text": "Dzięki, ale nie dam rady."
+    },
+    {
       "id": "dzieki-ile-to-jest-dwa-plus-trzy",
       "text": "Dzięki! Ile to jest: dwa plus trzy?"
     },
@@ -2643,6 +2899,10 @@
     {
       "id": "dziekuje-a-gdzie-jest-kawa",
       "text": "Dziękuję! A gdzie jest kawa?"
+    },
+    {
+      "id": "dziekuje-ale-nie-lubie-kina",
+      "text": "Dziękuję, ale nie lubię kina."
     },
     {
       "id": "dziekuje-bardzo",
@@ -2711,6 +2971,14 @@
     {
       "id": "dziekuje-wszystko-w-porzadku-do-widzenia",
       "text": "Dziękuję. Wszystko w porządku. Do widzenia!"
+    },
+    {
+      "id": "dziekuje-za-zaproszenie",
+      "text": "dziękuję za zaproszenie"
+    },
+    {
+      "id": "dziekuje-za-zaproszenie-2",
+      "text": "Dziękuję za zaproszenie!"
     },
     {
       "id": "dziekujemy",
@@ -2841,6 +3109,10 @@
       "text": "dziennikarz"
     },
     {
+      "id": "dziesiata",
+      "text": "dziesiąta"
+    },
+    {
       "id": "dziesiec",
       "text": "dziesięć"
     },
@@ -2877,6 +3149,10 @@
       "text": "dziewczyną"
     },
     {
+      "id": "dziewiata",
+      "text": "dziewiąta"
+    },
+    {
       "id": "dziewiec",
       "text": "dziewięć"
     },
@@ -2905,6 +3181,10 @@
       "text": "dziewiętnaście"
     },
     {
+      "id": "dziewietnasta",
+      "text": "dziewiętnasta"
+    },
+    {
       "id": "dzis",
       "text": "dziś"
     },
@@ -2931,6 +3211,18 @@
     {
       "id": "dzis-na-obiad-jest-zupa",
       "text": "Dziś na obiad jest zupa."
+    },
+    {
+      "id": "dzis-wieczorem",
+      "text": "Dziś wieczorem."
+    },
+    {
+      "id": "dzis-wieczorem-jest-spektakl-w-teatrze",
+      "text": "Dziś wieczorem jest spektakl w teatrze."
+    },
+    {
+      "id": "dzis-wieczorem-nie-moge",
+      "text": "dziś wieczorem nie mogę"
     },
     {
       "id": "dzis-zamawiam-zurek-i-kompot",
@@ -3177,6 +3469,10 @@
       "text": "Ewa ma trzy lata"
     },
     {
+      "id": "ewa-ma-trzy-zaproszenia",
+      "text": "Ewa ma trzy zaproszenia."
+    },
+    {
       "id": "ewa-ma-wolny-czas-i-sie-nudzi",
       "text": "Ewa ma wolny czas i się nudzi."
     },
@@ -3409,6 +3705,14 @@
       "text": "Gdzie są ryby?"
     },
     {
+      "id": "gdzie-sie-spotkamy",
+      "text": "gdzie się spotkamy?"
+    },
+    {
+      "id": "gdzie-sie-spotkamy-na-rynku-pod-pomnikiem",
+      "text": "Gdzie się spotkamy? Na rynku, pod pomnikiem."
+    },
+    {
       "id": "gdzie-ty-mieszkasz",
       "text": "Gdzie ty mieszkasz?"
     },
@@ -3431,6 +3735,10 @@
     {
       "id": "glodny",
       "text": "głodny"
+    },
+    {
+      "id": "godzina",
+      "text": "godzina"
     },
     {
       "id": "gofr",
@@ -3785,6 +4093,10 @@
       "text": "idziemy"
     },
     {
+      "id": "idziemy-na-mecz",
+      "text": "idziemy na mecz"
+    },
+    {
       "id": "idziemy-na-zakupy",
       "text": "idziemy na zakupy"
     },
@@ -3797,6 +4109,10 @@
       "text": "Idziemy tańczyć. A ty?"
     },
     {
+      "id": "idziemy-wieczorem-na-mecz",
+      "text": "Idziemy wieczorem na mecz."
+    },
+    {
       "id": "idziemy-z-wami",
       "text": "idziemy z wami"
     },
@@ -3807,6 +4123,10 @@
     {
       "id": "idziesz-do-pubu",
       "text": "idziesz do pubu?"
+    },
+    {
+      "id": "idziesz-z-nami",
+      "text": "Idziesz z nami?"
     },
     {
       "id": "idziesz-z-nim",
@@ -3909,6 +4229,14 @@
       "text": "imię, nazwisko, narodowość"
     },
     {
+      "id": "impreza",
+      "text": "impreza"
+    },
+    {
+      "id": "impreza-zaczyna-sie-o-osmej",
+      "text": "impreza zaczyna się o ósmej"
+    },
+    {
       "id": "impreze",
       "text": "imprezę"
     },
@@ -4007,6 +4335,10 @@
     {
       "id": "isc",
       "text": "iść"
+    },
+    {
+      "id": "isc-na-zakupy",
+      "text": "iść na zakupy"
     },
     {
       "id": "ja",
@@ -4581,6 +4913,22 @@
       "text": "Jarzyny to warzywa."
     },
     {
+      "id": "jasne",
+      "text": "jasne!"
+    },
+    {
+      "id": "jasne-dziekuje-za-zaproszenie",
+      "text": "Jasne! Dziękuję za zaproszenie!"
+    },
+    {
+      "id": "jasne-swietny-pomysl",
+      "text": "Jasne! Świetny pomysł!"
+    },
+    {
+      "id": "jasne-w-niedziele-moge",
+      "text": "Jasne, w niedzielę mogę."
+    },
+    {
       "id": "jasny",
       "text": "jasny"
     },
@@ -4591,6 +4939,14 @@
     {
       "id": "je",
       "text": "je"
+    },
+    {
+      "id": "jechac",
+      "text": "jechać"
+    },
+    {
+      "id": "jechac-na-wycieczke",
+      "text": "jechać na wycieczkę"
     },
     {
       "id": "jeden",
@@ -4627,6 +4983,10 @@
     {
       "id": "jedenascie-dwanascie-trzynascie",
       "text": "jedenaście, dwanaście, trzynaście"
+    },
+    {
+      "id": "jedenasta",
+      "text": "jedenasta"
     },
     {
       "id": "jedna",
@@ -4697,6 +5057,10 @@
       "text": "jeść"
     },
     {
+      "id": "jesc-sniadanie",
+      "text": "jeść śniadanie"
+    },
+    {
       "id": "jest",
       "text": "jest"
     },
@@ -4705,8 +5069,20 @@
       "text": "jest córką i żoną"
     },
     {
+      "id": "jest-czwarta",
+      "text": "jest czwarta"
+    },
+    {
       "id": "jest-czynna",
       "text": "Jest czynna."
+    },
+    {
+      "id": "jest-druga",
+      "text": "Jest druga."
+    },
+    {
+      "id": "jest-druga-2",
+      "text": "jest druga"
     },
     {
       "id": "jest-jej-mezem",
@@ -4745,8 +5121,24 @@
       "text": "Jest młodszy czy starszy?"
     },
     {
+      "id": "jest-osiemnasta",
+      "text": "jest osiemnasta"
+    },
+    {
+      "id": "jest-osma",
+      "text": "jest ósma"
+    },
+    {
       "id": "jest-ostra",
       "text": "Jest ostra."
+    },
+    {
+      "id": "jest-piata",
+      "text": "Jest piąta."
+    },
+    {
+      "id": "jest-pierwsza",
+      "text": "Jest pierwsza."
     },
     {
       "id": "jest-pyszna",
@@ -4763,6 +5155,10 @@
     {
       "id": "jest-synem-i-mezem",
       "text": "jest synem i mężem"
+    },
+    {
+      "id": "jest-szosta",
+      "text": "jest szósta"
     },
     {
       "id": "jest-tez-chleb-i-czekolada",
@@ -4789,12 +5185,20 @@
       "text": "Jest trochę podłużna i miękka."
     },
     {
+      "id": "jest-trzecia",
+      "text": "jest trzecia"
+    },
+    {
       "id": "jest-tu-supermarket",
       "text": "jest tu supermarket?"
     },
     {
       "id": "jest-woda-mineralna-nie-nie-ma",
       "text": "jest woda mineralna? nie, nie ma"
+    },
+    {
+      "id": "jest-wpol-do-drugiej",
+      "text": "Jest wpół do drugiej."
     },
     {
       "id": "jest-wysoka-wysportowana-i-wesola",
@@ -4961,6 +5365,10 @@
       "text": "Jestem z Włoch i mieszkam w Krakowie."
     },
     {
+      "id": "jestem-zajety",
+      "text": "Jestem zajęty."
+    },
+    {
       "id": "jestem-zmeczona",
       "text": "jestem zmęczona"
     },
@@ -5103,6 +5511,14 @@
     {
       "id": "jutro-mam-urodziny",
       "text": "jutro mam urodziny"
+    },
+    {
+      "id": "jutro-moge",
+      "text": "Jutro mogę."
+    },
+    {
+      "id": "jutro-wieczorem-nie-mam-planow",
+      "text": "jutro wieczorem nie mam planów"
     },
     {
       "id": "juz",
@@ -5321,8 +5737,20 @@
       "text": "kiedy"
     },
     {
+      "id": "kiedy-jest-film",
+      "text": "Kiedy jest film?"
+    },
+    {
+      "id": "kiedy-jest-impreza",
+      "text": "Kiedy jest impreza?"
+    },
+    {
       "id": "kiedy-jestes-wolny",
       "text": "kiedy jesteś wolny?"
+    },
+    {
+      "id": "kiedy-masz-czas",
+      "text": "Kiedy masz czas?"
     },
     {
       "id": "kiedy-pracujesz",
@@ -5471,6 +5899,10 @@
     {
       "id": "kolorowy-magazyn",
       "text": "kolorowy magazyn"
+    },
+    {
+      "id": "komedia-romantyczna",
+      "text": "komedia romantyczna"
     },
     {
       "id": "komorka",
@@ -5625,6 +6057,10 @@
       "text": "kto? co?"
     },
     {
+      "id": "kto-jeszcze",
+      "text": "kto jeszcze?"
+    },
+    {
       "id": "kto-to",
       "text": "kto to?"
     },
@@ -5651,6 +6087,14 @@
     {
       "id": "kto-to-jest-to-muzyk",
       "text": "kto to jest? to muzyk"
+    },
+    {
+      "id": "ktora-godzina",
+      "text": "która godzina?"
+    },
+    {
+      "id": "ktora-jest-godzina",
+      "text": "która jest godzina?"
     },
     {
       "id": "kubek",
@@ -5757,6 +6201,18 @@
       "text": "kuzynka"
     },
     {
+      "id": "kwadrans",
+      "text": "kwadrans"
+    },
+    {
+      "id": "kwadrans-po-dwunastej",
+      "text": "Kwadrans po dwunastej."
+    },
+    {
+      "id": "kwadrans-po-pierwszej",
+      "text": "kwadrans po pierwszej"
+    },
+    {
       "id": "kwasny",
       "text": "kwaśny"
     },
@@ -5825,8 +6281,24 @@
       "text": "lekcja jeden"
     },
     {
+      "id": "lekcja-jest-o-siedemnastej",
+      "text": "Lekcja jest o siedemnastej."
+    },
+    {
+      "id": "lekcja-jest-o-wpol-do-dziesiatej",
+      "text": "Lekcja jest o wpół do dziesiątej."
+    },
+    {
       "id": "lekcja-numer-jeden",
       "text": "lekcja numer jeden"
+    },
+    {
+      "id": "lekcja-trwa-godzine",
+      "text": "Lekcja trwa godzinę."
+    },
+    {
+      "id": "lekcja-trwa-godzine-2",
+      "text": "lekcja trwa godzinę"
     },
     {
       "id": "lektorka",
@@ -6289,6 +6761,10 @@
       "text": "mam dobrego tatę"
     },
     {
+      "id": "mam-dwa-bilety-na-mecz",
+      "text": "Mam dwa bilety na mecz."
+    },
+    {
       "id": "mam-dwadziescia-jeden-lat",
       "text": "Mam dwadzieścia jeden lat."
     },
@@ -6373,6 +6849,10 @@
       "text": "mam na imię Ewa"
     },
     {
+      "id": "mam-nowy-zegarek",
+      "text": "mam nowy zegarek"
+    },
+    {
       "id": "mam-ochote-na",
       "text": "mam ochotę na"
     },
@@ -6441,6 +6921,10 @@
       "text": "Mam też dobrego tatę."
     },
     {
+      "id": "mam-trzy-zaproszenia",
+      "text": "Mam trzy zaproszenia."
+    },
+    {
       "id": "mam-tu-komorke-klucz-i-paszport",
       "text": "Mam tu komórkę, klucz i paszport."
     },
@@ -6459,6 +6943,10 @@
     {
       "id": "mam-urlop-raz-w-roku",
       "text": "Mam urlop raz w roku."
+    },
+    {
+      "id": "mam-wizyte-u-dentysty",
+      "text": "mam wizytę u dentysty"
     },
     {
       "id": "mam-zone-i-dwoje-dzieci",
@@ -6565,6 +7053,10 @@
       "text": "masz drobne?"
     },
     {
+      "id": "masz-ochote",
+      "text": "masz ochotę"
+    },
+    {
       "id": "masz-ochote-na-ciasto",
       "text": "masz ochotę na ciasto?"
     },
@@ -6579,6 +7071,26 @@
     {
       "id": "masz-ochote-na-omlet",
       "text": "masz ochotę na omlet?"
+    },
+    {
+      "id": "masz-ochote-pojsc",
+      "text": "masz ochotę pójść?"
+    },
+    {
+      "id": "masz-ochote-pojsc-do-teatru",
+      "text": "Masz ochotę pójść do teatru?"
+    },
+    {
+      "id": "masz-ochote-pojsc-na-mecz-dlaczego-nie",
+      "text": "Masz ochotę pójść na mecz? Dlaczego nie?"
+    },
+    {
+      "id": "masz-ochote-pojsc-na-spektakl",
+      "text": "Masz ochotę pójść na spektakl?"
+    },
+    {
+      "id": "masz-ochote-pojsc-w-sobote-na-koncert",
+      "text": "Masz ochotę pójść w sobotę na koncert?"
     },
     {
       "id": "masz-pieniadze",
@@ -6797,6 +7309,10 @@
       "text": "minus"
     },
     {
+      "id": "minuta",
+      "text": "minuta"
+    },
+    {
       "id": "miod",
       "text": "miód"
     },
@@ -6867,6 +7383,10 @@
     {
       "id": "moge",
       "text": "mogę"
+    },
+    {
+      "id": "moge-pic-cos-innego",
+      "text": "mogę pić coś innego"
     },
     {
       "id": "moi",
@@ -7249,6 +7769,30 @@
       "text": "może galeria handlowa?"
     },
     {
+      "id": "moze-na-rynku-pod-pomnikiem-o-wpol-do-osmej",
+      "text": "Może na rynku, pod pomnikiem? O wpół do ósmej."
+    },
+    {
+      "id": "moze-pojdziemy",
+      "text": "może pójdziemy…?"
+    },
+    {
+      "id": "moze-pojdziemy-do-klubu-potanczyc",
+      "text": "Może pójdziemy do klubu potańczyć?"
+    },
+    {
+      "id": "moze-pojdziemy-do-parku",
+      "text": "Może pójdziemy do parku?"
+    },
+    {
+      "id": "moze-pojdziemy-na-lunch-swietny-pomysl",
+      "text": "Może pójdziemy na lunch? Świetny pomysł!"
+    },
+    {
+      "id": "moze-pojdziemy-na-spacer",
+      "text": "może pójdziemy na spacer?"
+    },
+    {
       "id": "moze-tak-moze-nie",
       "text": "może tak, może nie"
     },
@@ -7369,6 +7913,30 @@
       "text": "My umiemy tańczyć tango."
     },
     {
+      "id": "myc-sie",
+      "text": "myć się"
+    },
+    {
+      "id": "myc-sie-i-ubierac-sie",
+      "text": "myć się i ubierać się"
+    },
+    {
+      "id": "myje",
+      "text": "myję"
+    },
+    {
+      "id": "myje-zeby",
+      "text": "myję zęby"
+    },
+    {
+      "id": "myjesz",
+      "text": "myjesz"
+    },
+    {
+      "id": "myjesz-zeby",
+      "text": "myjesz zęby"
+    },
+    {
       "id": "mysle",
       "text": "myślę"
     },
@@ -7425,8 +7993,20 @@
       "text": "na ciepło"
     },
     {
+      "id": "na-co",
+      "text": "na co?"
+    },
+    {
+      "id": "na-co-idziesz",
+      "text": "na co idziesz?"
+    },
+    {
       "id": "na-dyskoteke",
       "text": "na dyskotekę"
+    },
+    {
+      "id": "na-film",
+      "text": "na film"
     },
     {
       "id": "na-gitarze",
@@ -7469,8 +8049,16 @@
       "text": "na lewo"
     },
     {
+      "id": "na-lunch",
+      "text": "na lunch"
+    },
+    {
       "id": "na-masaz",
       "text": "na masaż"
+    },
+    {
+      "id": "na-mecz",
+      "text": "na mecz"
     },
     {
       "id": "na-miekko",
@@ -7537,6 +8125,10 @@
       "text": "na prawo"
     },
     {
+      "id": "na-przedstawienie",
+      "text": "na przedstawienie"
+    },
+    {
       "id": "na-przyklad",
       "text": "na przykład"
     },
@@ -7561,6 +8153,14 @@
       "text": "na rowerze"
     },
     {
+      "id": "na-rynku",
+      "text": "na rynku"
+    },
+    {
+      "id": "na-rynku-pod-pomnikiem",
+      "text": "Na rynku, pod pomnikiem."
+    },
+    {
       "id": "na-salatke",
       "text": "Na sałatkę?"
     },
@@ -7583,6 +8183,10 @@
     {
       "id": "na-sniadanie-jem-chleb-z-maslem",
       "text": "Na śniadanie jem chleb z masłem."
+    },
+    {
+      "id": "na-spacer",
+      "text": "na spacer"
     },
     {
       "id": "na-spacery",
@@ -7613,6 +8217,10 @@
       "text": "na wakacjach"
     },
     {
+      "id": "na-wycieczke",
+      "text": "na wycieczkę"
+    },
+    {
       "id": "na-zakupy",
       "text": "na zakupy"
     },
@@ -7631,6 +8239,14 @@
     {
       "id": "najpierw-cebula-jest-smazona-na-oliwie",
       "text": "Najpierw cebula jest smażona na oliwie."
+    },
+    {
+      "id": "najpierw-otwieram-komputer",
+      "text": "Najpierw otwieram komputer."
+    },
+    {
+      "id": "najpierw-sie-budze",
+      "text": "Najpierw się budzę."
     },
     {
       "id": "najpierw-zupa-potem-ryba",
@@ -7793,6 +8409,10 @@
       "text": "nic nie szkodzi"
     },
     {
+      "id": "nic-nie-szkodzi-mozesz-pic-cos-innego",
+      "text": "Nic nie szkodzi, możesz pić coś innego."
+    },
+    {
       "id": "nic-nowego",
       "text": "nic nowego"
     },
@@ -7827,6 +8447,14 @@
     {
       "id": "nie-bez-cukru",
       "text": "Nie, bez cukru."
+    },
+    {
+      "id": "nie-dam-rady",
+      "text": "nie dam rady"
+    },
+    {
+      "id": "nie-dam-rady-jestem-zajeta",
+      "text": "nie dam rady, jestem zajęta"
     },
     {
       "id": "nie-dziekuje",
@@ -7905,6 +8533,10 @@
       "text": "Nie lubię mleka."
     },
     {
+      "id": "nie-lubie-tanczyc-i-nie-pije-piwa",
+      "text": "Nie lubię tańczyć i nie piję piwa."
+    },
+    {
       "id": "nie-lubie-zimnego-mleka",
       "text": "nie lubię zimnego mleka"
     },
@@ -7965,8 +8597,16 @@
       "text": "Nie ma za co. Miłego dnia!"
     },
     {
+      "id": "nie-ma-za-co-to-w-sobote-pod-pomnikiem",
+      "text": "Nie ma za co! To w sobotę, pod pomnikiem!"
+    },
+    {
       "id": "nie-mam-chleba",
       "text": "nie mam chleba"
+    },
+    {
+      "id": "nie-mam-czasu",
+      "text": "nie mam czasu"
     },
     {
       "id": "nie-mam-pieniedzy-ale-tam-jest-bankomat",
@@ -7975,6 +8615,10 @@
     {
       "id": "nie-mam-piwa",
       "text": "Nie mam piwa."
+    },
+    {
+      "id": "nie-mam-planow",
+      "text": "nie mam planów"
     },
     {
       "id": "nie-mam-rodzenstwa",
@@ -8241,6 +8885,10 @@
       "text": "niedobry"
     },
     {
+      "id": "niedziela",
+      "text": "niedziela"
+    },
+    {
       "id": "niemcem",
       "text": "Niemcem"
     },
@@ -8251,6 +8899,10 @@
     {
       "id": "niestety",
       "text": "niestety"
+    },
+    {
+      "id": "niestety-nie-mam-czasu",
+      "text": "niestety, nie mam czasu"
     },
     {
       "id": "niestety-nie-wiem",
@@ -8291,6 +8943,10 @@
     {
       "id": "niz",
       "text": "niż"
+    },
+    {
+      "id": "no-dobrze-ide-z-wami",
+      "text": "No dobrze, idę z wami."
     },
     {
       "id": "normalny",
@@ -8361,8 +9017,128 @@
       "text": "o"
     },
     {
+      "id": "o-czternastej",
+      "text": "o czternastej"
+    },
+    {
+      "id": "o-czternastej-mam-spotkanie-z-szefem",
+      "text": "O czternastej mam spotkanie z szefem."
+    },
+    {
+      "id": "o-dwudziestej",
+      "text": "o dwudziestej"
+    },
+    {
+      "id": "o-dwudziestej-pierwszej",
+      "text": "o dwudziestej pierwszej"
+    },
+    {
+      "id": "o-dwudziestej-wracam-do-domu",
+      "text": "O dwudziestej wracam do domu."
+    },
+    {
+      "id": "o-dwunastej",
+      "text": "O dwunastej."
+    },
+    {
+      "id": "o-dziesiatej-biore-prysznic",
+      "text": "O dziesiątej biorę prysznic."
+    },
+    {
+      "id": "o-dziesiatej-jest-lekcja",
+      "text": "o dziesiątej jest lekcja"
+    },
+    {
+      "id": "o-dziewiatej",
+      "text": "O dziewiątej."
+    },
+    {
+      "id": "o-dziewiatej-otwieram-komputer",
+      "text": "O dziewiątej otwieram komputer."
+    },
+    {
+      "id": "o-dziewiatej-zaczynam-prace",
+      "text": "o dziewiątej zaczynam pracę"
+    },
+    {
+      "id": "o-dziewietnastej",
+      "text": "O dziewiętnastej."
+    },
+    {
+      "id": "o-jedenastej",
+      "text": "o jedenastej"
+    },
+    {
+      "id": "o-jedenastej-ide-spac",
+      "text": "O jedenastej idę spać."
+    },
+    {
       "id": "o-kreskowane",
       "text": "o kreskowane"
+    },
+    {
+      "id": "o-ktorej",
+      "text": "o której?"
+    },
+    {
+      "id": "o-ktorej-godzinie",
+      "text": "o której godzinie?"
+    },
+    {
+      "id": "o-ktorej-godzinie-jesz-sniadanie",
+      "text": "O której godzinie jesz śniadanie?"
+    },
+    {
+      "id": "o-ktorej-idziesz-spac",
+      "text": "o której idziesz spać?"
+    },
+    {
+      "id": "o-ktorej-jest-film",
+      "text": "O której jest film?"
+    },
+    {
+      "id": "o-ktorej-jest-przerwa",
+      "text": "O której jest przerwa?"
+    },
+    {
+      "id": "o-ktorej-jesz-sniadanie-o-osmej",
+      "text": "O której jesz śniadanie? O ósmej."
+    },
+    {
+      "id": "o-ktorej-sie-budzisz",
+      "text": "O której się budzisz?"
+    },
+    {
+      "id": "o-ktorej-sie-zaczyna",
+      "text": "O której się zaczyna?"
+    },
+    {
+      "id": "o-ktorej-wstajesz",
+      "text": "o której wstajesz?"
+    },
+    {
+      "id": "o-ktorej-zaczyna-sie-impreza",
+      "text": "o której zaczyna się impreza?"
+    },
+    {
+      "id": "o-osmej",
+      "text": "O ósmej."
+    },
+    {
+      "id": "o-osmej-wychodze-z-domu",
+      "text": "o ósmej wychodzę z domu"
+    },
+    {
+      "id": "o-osmej-wychodze-z-domu-2",
+      "text": "O ósmej wychodzę z domu."
+    },
+    {
+      "id": "o-pierwszej-jest-przerwa",
+      "text": "O pierwszej jest przerwa."
+    },
+    {
+      "id": "o-pietnastej",
+      "text": "o piętnastej"
     },
     {
       "id": "o-polnocy",
@@ -8377,6 +9153,54 @@
       "text": "O północy wracam do domu."
     },
     {
+      "id": "o-siedemnastej-koncze-prace",
+      "text": "o siedemnastej kończę pracę"
+    },
+    {
+      "id": "o-siedemnastej-koncze-prace-i-wracam-do-domu",
+      "text": "O siedemnastej kończę pracę i wracam do domu."
+    },
+    {
+      "id": "o-siodmej",
+      "text": "o siódmej"
+    },
+    {
+      "id": "o-siodmej-2",
+      "text": "O siódmej."
+    },
+    {
+      "id": "o-siodmej-pietnascie-wychodze-z-domu",
+      "text": "O siódmej piętnaście wychodzę z domu."
+    },
+    {
+      "id": "o-szesnastej-pije-kawe",
+      "text": "O szesnastej piję kawę."
+    },
+    {
+      "id": "o-szostej-ale-wstaje-o-siodmej",
+      "text": "O szóstej, ale wstaję o siódmej."
+    },
+    {
+      "id": "o-szostej-wstaje",
+      "text": "o szóstej wstaję"
+    },
+    {
+      "id": "o-trzynastej-jem-obiad",
+      "text": "O trzynastej jem obiad."
+    },
+    {
+      "id": "o-wpol-do-osmej",
+      "text": "O wpół do ósmej."
+    },
+    {
+      "id": "o-wpol-do-szostej-mam-wizyte-u-dentysty",
+      "text": "O wpół do szóstej mam wizytę u dentysty."
+    },
+    {
+      "id": "o-wpol-do-trzeciej",
+      "text": "o wpół do trzeciej"
+    },
+    {
       "id": "obiad",
       "text": "obiad"
     },
@@ -8385,12 +9209,20 @@
       "text": "obiad jest dobry"
     },
     {
+      "id": "obiad-jest-o-pierwszej",
+      "text": "Obiad jest o pierwszej."
+    },
+    {
       "id": "och-pieknie-pachnie",
       "text": "Och, pięknie pachnie!"
     },
     {
       "id": "oczywiscie",
       "text": "oczywiście"
+    },
+    {
+      "id": "od",
+      "text": "od"
     },
     {
       "id": "od-czasu-do-czasu",
@@ -8405,12 +9237,36 @@
       "text": "od czasu do czasu jeżdżę taksówką"
     },
     {
+      "id": "od-ktorej-do-ktorej",
+      "text": "od której do której?"
+    },
+    {
+      "id": "od-ktorej-do-ktorej-pracujesz",
+      "text": "Od której do której pracujesz?"
+    },
+    {
+      "id": "od-osmej-do-szesnastej",
+      "text": "Od ósmej do szesnastej."
+    },
+    {
       "id": "od-rana-do-wieczora",
       "text": "od rana do wieczora"
     },
     {
+      "id": "od-siodmej-do-siedemnastej",
+      "text": "od siódmej do siedemnastej"
+    },
+    {
       "id": "odpoczac",
       "text": "odpocząć"
+    },
+    {
+      "id": "odpoczywam",
+      "text": "odpoczywam"
+    },
+    {
+      "id": "odpoczywam-wieczorem",
+      "text": "odpoczywam wieczorem"
     },
     {
       "id": "oglada",
@@ -8459,6 +9315,18 @@
     {
       "id": "okno",
       "text": "okno"
+    },
+    {
+      "id": "okolo",
+      "text": "około"
+    },
+    {
+      "id": "okolo-dwudziestej",
+      "text": "Około dwudziestej."
+    },
+    {
+      "id": "okolo-dwunastej",
+      "text": "około dwunastej"
     },
     {
       "id": "okragly",
@@ -8641,6 +9509,10 @@
       "text": "on ma prawie dwadzieścia lat"
     },
     {
+      "id": "on-ma-randke",
+      "text": "on ma randkę"
+    },
+    {
       "id": "on-ma-rok",
       "text": "on ma rok"
     },
@@ -8795,6 +9667,10 @@
     {
       "id": "ona-sie-teraz-nudzi",
       "text": "ona się teraz nudzi"
+    },
+    {
+      "id": "ona-spotyka-sie-ze-znajomymi",
+      "text": "ona spotyka się ze znajomymi"
     },
     {
       "id": "ona-uczy-sie-polskiego-bo-jej-chlopak-jest-z-pol",
@@ -8961,6 +9837,10 @@
       "text": "osiemnaście minus pięć to trzynaście"
     },
     {
+      "id": "osiemnasta",
+      "text": "osiemnasta"
+    },
+    {
       "id": "osiemset",
       "text": "osiemset"
     },
@@ -8969,8 +9849,20 @@
       "text": "osiemset czterdzieści siedem"
     },
     {
+      "id": "osma",
+      "text": "ósma"
+    },
+    {
       "id": "ostry",
       "text": "ostry"
+    },
+    {
+      "id": "otwieram",
+      "text": "otwieram"
+    },
+    {
+      "id": "otwieram-komputer",
+      "text": "otwieram komputer"
     },
     {
       "id": "owalny",
@@ -9097,6 +9989,14 @@
       "text": "pewny"
     },
     {
+      "id": "piata",
+      "text": "piąta"
+    },
+    {
+      "id": "piatek",
+      "text": "piątek"
+    },
+    {
       "id": "pic",
       "text": "pić"
     },
@@ -9119,6 +10019,10 @@
     {
       "id": "piec-minus-jeden-to-jest-cztery",
       "text": "pięć minus jeden to jest cztery"
+    },
+    {
+      "id": "piec-po-osmej",
+      "text": "pięć po ósmej"
     },
     {
       "id": "piecdziesiat",
@@ -9193,6 +10097,10 @@
       "text": "pierogi ruskie są wegetariańskie"
     },
     {
+      "id": "pierwsza",
+      "text": "pierwsza"
+    },
+    {
       "id": "pierwsze-danie",
       "text": "pierwsze danie"
     },
@@ -9211,6 +10119,10 @@
     {
       "id": "pietnascie-lat",
       "text": "piętnaście lat"
+    },
+    {
+      "id": "pietnasta",
+      "text": "piętnasta"
     },
     {
       "id": "pietruszka",
@@ -9369,6 +10281,10 @@
       "text": "pływać"
     },
     {
+      "id": "po",
+      "text": "po"
+    },
+    {
       "id": "po-angielsku",
       "text": "po angielsku"
     },
@@ -9421,6 +10337,10 @@
       "text": "po włosku"
     },
     {
+      "id": "pod-pomnikiem",
+      "text": "pod pomnikiem"
+    },
+    {
       "id": "podkreslic",
       "text": "podkreślić"
     },
@@ -9431,6 +10351,10 @@
     {
       "id": "podrozowac",
       "text": "podróżować"
+    },
+    {
+      "id": "pojsc",
+      "text": "pójść"
     },
     {
       "id": "pol-kilo",
@@ -9529,6 +10453,14 @@
       "text": "pomidory"
     },
     {
+      "id": "pomysl",
+      "text": "pomysł"
+    },
+    {
+      "id": "poniedzialek",
+      "text": "poniedziałek"
+    },
+    {
       "id": "ponumerowac",
       "text": "ponumerować"
     },
@@ -9597,12 +10529,32 @@
       "text": "posłuchać"
     },
     {
+      "id": "potanczyc",
+      "text": "potańczyć"
+    },
+    {
       "id": "potem",
       "text": "potem"
     },
     {
+      "id": "potem-mam-zajecia",
+      "text": "Potem mam zajęcia."
+    },
+    {
       "id": "potem-mama-dodaje-warzywa-i-przyprawy",
       "text": "Potem mama dodaje warzywa i przyprawy."
+    },
+    {
+      "id": "potem-sie-ubieram",
+      "text": "Potem się ubieram."
+    },
+    {
+      "id": "potem-sprawdzam-cos-w-telefonie-i-pije-kawe",
+      "text": "Potem sprawdzam coś w telefonie i piję kawę."
+    },
+    {
+      "id": "potem-wstaje-i-biore-prysznic",
+      "text": "Potem wstaję i biorę prysznic."
     },
     {
       "id": "potrawa",
@@ -9637,6 +10589,10 @@
       "text": "późno"
     },
     {
+      "id": "prace",
+      "text": "pracę"
+    },
+    {
       "id": "pracoholik",
       "text": "pracoholik"
     },
@@ -9655,6 +10611,10 @@
     {
       "id": "pracuje-2",
       "text": "pracuje"
+    },
+    {
+      "id": "pracuje-od-dziewiatej-do-siedemnastej",
+      "text": "Pracuję od dziewiątej do siedemnastej."
     },
     {
       "id": "pracuje-od-rana-do-wieczora",
@@ -9731,6 +10691,10 @@
     {
       "id": "prosze",
       "text": "proszę"
+    },
+    {
+      "id": "prosze-2",
+      "text": "Proszę."
     },
     {
       "id": "prosze-bardzo",
@@ -9985,6 +10949,10 @@
       "text": "proszę wybrać przykład"
     },
     {
+      "id": "prysznic",
+      "text": "prysznic"
+    },
+    {
       "id": "przeczytac",
       "text": "przeczytać"
     },
@@ -10029,6 +10997,10 @@
       "text": "przepraszam, gdzie jest woda?"
     },
     {
+      "id": "przepraszam-ktora-jest-godzina",
+      "text": "Przepraszam, która jest godzina?"
+    },
+    {
       "id": "przepraszam-mam-pytanie",
       "text": "przepraszam, mam pytanie"
     },
@@ -10057,6 +11029,10 @@
       "text": "przerwa"
     },
     {
+      "id": "przerwa-jest-kwadrans-po-dziesiatej",
+      "text": "Przerwa jest kwadrans po dziesiątej."
+    },
+    {
       "id": "przerwa-jest-pozniej",
       "text": "przerwa jest później"
     },
@@ -10071,6 +11047,26 @@
     {
       "id": "przyklad",
       "text": "przykład"
+    },
+    {
+      "id": "przykro-mi",
+      "text": "przykro mi"
+    },
+    {
+      "id": "przykro-mi-ale-dzis-nie-moge",
+      "text": "przykro mi, ale dziś nie mogę"
+    },
+    {
+      "id": "przykro-mi-ale-nie-dam-rady",
+      "text": "przykro mi, ale nie dam rady"
+    },
+    {
+      "id": "przykro-mi-ale-nie-mam-czasu",
+      "text": "Przykro mi, ale nie mam czasu."
+    },
+    {
+      "id": "przykro-mi-w-sobote-jade-na-wycieczke",
+      "text": "Przykro mi, w sobotę jadę na wycieczkę."
     },
     {
       "id": "przyprawy",
@@ -10105,12 +11101,20 @@
       "text": "rachunek"
     },
     {
+      "id": "randka",
+      "text": "randka"
+    },
+    {
       "id": "rano",
       "text": "rano"
     },
     {
       "id": "rano-adam-jest-glodny",
       "text": "Rano Adam jest głodny."
+    },
+    {
+      "id": "rano-bierzesz-prysznic",
+      "text": "Rano bierzesz prysznic?"
     },
     {
       "id": "rano-czy-wieczorem",
@@ -10131,6 +11135,10 @@
     {
       "id": "rano-jestem-glodny",
       "text": "rano jestem głodny"
+    },
+    {
+      "id": "rano-myje-zeby",
+      "text": "Rano myję zęby."
     },
     {
       "id": "rano-pije-sok-pomaranczowy",
@@ -10461,6 +11469,10 @@
       "text": "sernik jest pyszny"
     },
     {
+      "id": "serwis-informacyjny",
+      "text": "serwis informacyjny"
+    },
+    {
       "id": "sezon",
       "text": "sezon"
     },
@@ -10481,8 +11493,16 @@
       "text": "siedemnaście, osiemnaście, dziewiętnaście"
     },
     {
+      "id": "siedemnasta",
+      "text": "siedemnasta"
+    },
+    {
       "id": "siedemset",
       "text": "siedemset"
+    },
+    {
+      "id": "siodma",
+      "text": "siódma"
     },
     {
       "id": "siostra",
@@ -10665,6 +11685,10 @@
       "text": "śniadanie"
     },
     {
+      "id": "sobota",
+      "text": "sobota"
+    },
+    {
       "id": "sok",
       "text": "sok"
     },
@@ -10713,8 +11737,16 @@
       "text": "sos jest dobry"
     },
     {
+      "id": "spac",
+      "text": "spać"
+    },
+    {
       "id": "spaghetti",
       "text": "spaghetti"
+    },
+    {
+      "id": "spektakl",
+      "text": "spektakl"
     },
     {
       "id": "spia",
@@ -10753,8 +11785,24 @@
       "text": "sportowy"
     },
     {
+      "id": "spotkanie",
+      "text": "spotkanie"
+    },
+    {
+      "id": "spotkanie-jest-w-srode",
+      "text": "spotkanie jest w środę"
+    },
+    {
+      "id": "spotyka-sie",
+      "text": "spotyka się"
+    },
+    {
       "id": "spotykac-sie",
       "text": "spotykać się"
+    },
+    {
+      "id": "spotykam-sie",
+      "text": "spotykam się"
     },
     {
       "id": "spotykamy-sie",
@@ -10763,6 +11811,18 @@
     {
       "id": "spotykamy-sie-w-domu",
       "text": "spotykamy się w domu"
+    },
+    {
+      "id": "sprawdzam",
+      "text": "sprawdzam"
+    },
+    {
+      "id": "sprawdzam-cos-w-telefonie",
+      "text": "sprawdzam coś w telefonie"
+    },
+    {
+      "id": "sprzatam",
+      "text": "sprzątam"
     },
     {
       "id": "sprzedawca",
@@ -10791,6 +11851,10 @@
     {
       "id": "sredniego-wzrostu",
       "text": "średniego wzrostu"
+    },
+    {
+      "id": "sroda",
+      "text": "środa"
     },
     {
       "id": "starszy",
@@ -10933,6 +11997,10 @@
       "text": "Świetnie! Dziękuję, to wszystko. Do widzenia!"
     },
     {
+      "id": "swietnie-gdzie-sie-spotkamy",
+      "text": "Świetnie! Gdzie się spotkamy?"
+    },
+    {
       "id": "swietnie-idziemy",
       "text": "Świetnie! Idziemy!"
     },
@@ -10947,6 +12015,18 @@
     {
       "id": "swietnie-pa-do-jutra",
       "text": "Świetnie! Pa, do jutra!"
+    },
+    {
+      "id": "swietny",
+      "text": "świetny"
+    },
+    {
+      "id": "swietny-pomysl",
+      "text": "świetny pomysł!"
+    },
+    {
+      "id": "swietny-pomysl-gdzie-sie-spotkamy",
+      "text": "Świetny pomysł! Gdzie się spotkamy?"
     },
     {
       "id": "swieza-bazylia",
@@ -11025,6 +12105,10 @@
       "text": "szczupły"
     },
     {
+      "id": "szef",
+      "text": "szef"
+    },
+    {
       "id": "szesc",
       "text": "sześć"
     },
@@ -11085,6 +12169,10 @@
       "text": "szesnaście, dwadzieścia dziewięć, jedenaście"
     },
     {
+      "id": "szesnasta",
+      "text": "szesnasta"
+    },
+    {
       "id": "szkoda",
       "text": "szkoda"
     },
@@ -11099,6 +12187,10 @@
     {
       "id": "szkola",
       "text": "szkoła"
+    },
+    {
+      "id": "szosta",
+      "text": "szósta"
     },
     {
       "id": "szukam",
@@ -11201,6 +12293,10 @@
       "text": "tak"
     },
     {
+      "id": "tak-2",
+      "text": "Tak."
+    },
+    {
       "id": "tak-ale-nie-umiem",
       "text": "Tak, ale nie umiem."
     },
@@ -11231,6 +12327,10 @@
     {
       "id": "tak-chetnie",
       "text": "Tak, chętnie."
+    },
+    {
+      "id": "tak-dokladnie",
+      "text": "Tak, dokładnie."
     },
     {
       "id": "tak-dzis-jest-zamknieta",
@@ -11269,6 +12369,10 @@
       "text": "Tak, mam brata."
     },
     {
+      "id": "tak-mamy-jeszcze-pietnascie-minut",
+      "text": "Tak. Mamy jeszcze piętnaście minut."
+    },
+    {
       "id": "tak-na-lody",
       "text": "Tak, na lody."
     },
@@ -11279,6 +12383,10 @@
     {
       "id": "tak-nudze-sie",
       "text": "Tak, nudzę się."
+    },
+    {
+      "id": "tak-o-szostej",
+      "text": "Tak, o szóstej."
     },
     {
       "id": "tak-oczywiscie",
@@ -11495,6 +12603,10 @@
     {
       "id": "te-zielone",
       "text": "Te zielone?"
+    },
+    {
+      "id": "teatr",
+      "text": "teatr"
     },
     {
       "id": "tekst",
@@ -11749,12 +12861,20 @@
       "text": "to auto jest różowe"
     },
     {
+      "id": "to-bardzo-stary-teatr",
+      "text": "to bardzo stary teatr"
+    },
+    {
       "id": "to-chyba-nowy-student-ciekawe-czy-jest-z-polski",
       "text": "To chyba nowy student. Ciekawe, czy jest z Polski."
     },
     {
       "id": "to-ciekawa-ksiazka",
       "text": "To ciekawa książka."
+    },
+    {
+      "id": "to-co-powiesz-na-spacer",
+      "text": "To co powiesz na spacer?"
     },
     {
       "id": "to-dobrze-brzmi",
@@ -12249,6 +13369,10 @@
       "text": "To może herbata?"
     },
     {
+      "id": "to-moze-w-niedziele",
+      "text": "To może w niedzielę?"
+    },
+    {
       "id": "to-musi-byc",
       "text": "to musi być"
     },
@@ -12295,6 +13419,10 @@
     {
       "id": "to-nie-jest-twoj-problem",
       "text": "to nie jest twój problem"
+    },
+    {
+      "id": "to-nie-wasza-sprawa",
+      "text": "to nie wasza sprawa"
     },
     {
       "id": "to-numer-dziewiec",
@@ -12485,6 +13613,18 @@
       "text": "truskawkowy"
     },
     {
+      "id": "trwa",
+      "text": "trwa"
+    },
+    {
+      "id": "trwa-czterdziesci-piec-minut",
+      "text": "Trwa czterdzieści pięć minut."
+    },
+    {
+      "id": "trzecia",
+      "text": "trzecia"
+    },
+    {
       "id": "trzy",
       "text": "trzy"
     },
@@ -12555,6 +13695,10 @@
     {
       "id": "trzynascie",
       "text": "trzynaście"
+    },
+    {
+      "id": "trzynasta",
+      "text": "trzynasta"
     },
     {
       "id": "trzysta",
@@ -12705,6 +13849,10 @@
       "text": "Ty wolisz kawę czy herbatę?"
     },
     {
+      "id": "tydzien",
+      "text": "tydzień"
+    },
+    {
       "id": "tylko",
       "text": "tylko"
     },
@@ -12723,6 +13871,30 @@
     {
       "id": "u",
       "text": "u"
+    },
+    {
+      "id": "u-babci",
+      "text": "u babci"
+    },
+    {
+      "id": "u-dentysty",
+      "text": "u dentysty"
+    },
+    {
+      "id": "ubierac-sie",
+      "text": "ubierać się"
+    },
+    {
+      "id": "ubieram-sie",
+      "text": "ubieram się"
+    },
+    {
+      "id": "ubierasz-sie",
+      "text": "ubierasz się"
+    },
+    {
+      "id": "ubierasz-sie-czy-myjesz-zeby",
+      "text": "ubierasz się czy myjesz zęby?"
     },
     {
       "id": "ucza-sie",
@@ -12815,6 +13987,14 @@
     {
       "id": "ulubiony",
       "text": "ulubiony"
+    },
+    {
+      "id": "umawiamy-sie",
+      "text": "umawiamy się"
+    },
+    {
+      "id": "umawiamy-sie-na-kawe",
+      "text": "umawiamy się na kawę"
     },
     {
       "id": "umie",
@@ -12917,6 +14097,18 @@
       "text": "w biurze"
     },
     {
+      "id": "w-czwartek",
+      "text": "W czwartek."
+    },
+    {
+      "id": "w-czwartek-ide-do-dentysty",
+      "text": "w czwartek idę do dentysty"
+    },
+    {
+      "id": "w-czwartek-o-wpol-do-siodmej-ide-do-dentysty",
+      "text": "w czwartek o wpół do siódmej idę do dentysty"
+    },
+    {
       "id": "w-domu",
       "text": "w domu"
     },
@@ -12943,6 +14135,10 @@
     {
       "id": "w-dzien-pracuje",
       "text": "w dzień pracuję"
+    },
+    {
+      "id": "w-galerii",
+      "text": "w galerii"
     },
     {
       "id": "w-galerii-jest-bankomat-i-kantor",
@@ -12993,12 +14189,56 @@
       "text": "w Londynie mieszkam"
     },
     {
+      "id": "w-niedziele-jem-obiad-u-babci",
+      "text": "W niedzielę jem obiad u babci."
+    },
+    {
+      "id": "w-niedziele-jestem-w-domu",
+      "text": "W niedzielę jestem w domu."
+    },
+    {
+      "id": "w-niedziele-o-czternastej-obiad-u-babci",
+      "text": "W niedzielę o czternastej: obiad u babci."
+    },
+    {
+      "id": "w-niedziele-odpoczywam",
+      "text": "w niedzielę odpoczywam"
+    },
+    {
+      "id": "w-niedziele-odpoczywam-i-spotykam-sie-ze-znajomy",
+      "text": "W niedzielę odpoczywam i spotykam się ze znajomymi."
+    },
+    {
       "id": "w-nocy",
       "text": "w nocy"
     },
     {
       "id": "w-nocy-spie",
       "text": "W nocy śpię."
+    },
+    {
+      "id": "w-piatek-albo-w-sobote-kiedy-masz-czas",
+      "text": "W piątek albo w sobotę. Kiedy masz czas?"
+    },
+    {
+      "id": "w-piatek-ide-do-kina",
+      "text": "w piątek idę do kina"
+    },
+    {
+      "id": "w-piatek-nie-moge",
+      "text": "W piątek nie mogę."
+    },
+    {
+      "id": "w-piatek-nie-moge-ale-w-sobote-mam-czas",
+      "text": "W piątek nie mogę, ale w sobotę mam czas."
+    },
+    {
+      "id": "w-piatek-o-dwudziestej-impreza",
+      "text": "W piątek o dwudziestej: impreza."
+    },
+    {
+      "id": "w-piatek-wieczorem",
+      "text": "W piątek wieczorem."
     },
     {
       "id": "w-pilke",
@@ -13025,12 +14265,48 @@
       "text": "W południe mają przerwę."
     },
     {
+      "id": "w-poniedzialek",
+      "text": "w poniedziałek"
+    },
+    {
+      "id": "w-poniedzialek-mam-kurs",
+      "text": "W poniedziałek mam kurs."
+    },
+    {
       "id": "w-porzadku",
       "text": "w porządku"
     },
     {
       "id": "w-restauracji",
       "text": "w restauracji"
+    },
+    {
+      "id": "w-sobote-ewa-spotyka-sie-ze-znajomymi-w-galerii",
+      "text": "W sobotę Ewa spotyka się ze znajomymi w galerii."
+    },
+    {
+      "id": "w-sobote-i-w-niedziele",
+      "text": "w sobotę i w niedzielę"
+    },
+    {
+      "id": "w-sobote-spie-do-dziesiatej",
+      "text": "W sobotę śpię do dziesiątej."
+    },
+    {
+      "id": "w-sobote-sprzatam",
+      "text": "w sobotę sprzątam"
+    },
+    {
+      "id": "w-sobote-w-galerii",
+      "text": "w sobotę w galerii"
+    },
+    {
+      "id": "w-srode",
+      "text": "w środę"
+    },
+    {
+      "id": "w-srode-za-kwadrans-osma",
+      "text": "w środę za kwadrans ósma"
     },
     {
       "id": "w-supermarkecie",
@@ -13065,12 +14341,20 @@
       "text": "w teatrze"
     },
     {
+      "id": "w-telefonie",
+      "text": "w telefonie"
+    },
+    {
       "id": "w-tenisa",
       "text": "w tenisa"
     },
     {
       "id": "w-tygodniu",
       "text": "w tygodniu"
+    },
+    {
+      "id": "w-tygodniu-wstaje-wczesnie",
+      "text": "W tygodniu wstaję wcześnie."
     },
     {
       "id": "w-warszawie",
@@ -13141,6 +14425,22 @@
       "text": "wasze mieszkanie"
     },
     {
+      "id": "wczesnie",
+      "text": "wcześnie"
+    },
+    {
+      "id": "we-wtorek-i-w-czwartek-pracuje",
+      "text": "We wtorek i w czwartek pracuję."
+    },
+    {
+      "id": "we-wtorek-jest-lekcja",
+      "text": "We wtorek jest lekcja."
+    },
+    {
+      "id": "we-wtorek-o-dziesiatej-spotkanie-z-szefem",
+      "text": "We wtorek o dziesiątej: spotkanie z szefem."
+    },
+    {
       "id": "wedlina",
       "text": "wędlina"
     },
@@ -13197,8 +14497,20 @@
       "text": "wieczorem ja piję wino"
     },
     {
+      "id": "wieczorem-odpoczywam",
+      "text": "wieczorem odpoczywam"
+    },
+    {
       "id": "wieczorem-ogladam-serial",
       "text": "Wieczorem oglądam serial."
+    },
+    {
+      "id": "wieczorem-ogladam-serwis-informacyjny",
+      "text": "Wieczorem oglądam serwis informacyjny."
+    },
+    {
+      "id": "wieczorem-ogladam-serwis-informacyjny-2",
+      "text": "wieczorem oglądam serwis informacyjny"
     },
     {
       "id": "wieczorem-ogladam-telewizje",
@@ -13207,6 +14519,14 @@
     {
       "id": "wieczorem-pije-wino",
       "text": "wieczorem piję wino"
+    },
+    {
+      "id": "wieczorem-spotykam-sie-ze-znajomymi",
+      "text": "Wieczorem spotykam się ze znajomymi."
+    },
+    {
+      "id": "wieczorem-sprzatam",
+      "text": "Wieczorem sprzątam."
     },
     {
       "id": "wieczorem-wracam-do-domu",
@@ -13279,6 +14599,10 @@
     {
       "id": "witamy",
       "text": "witamy"
+    },
+    {
+      "id": "wizyta",
+      "text": "wizyta"
     },
     {
       "id": "wnuczka",
@@ -13413,8 +14737,48 @@
       "text": "wołowina"
     },
     {
+      "id": "wpol-do",
+      "text": "wpół do"
+    },
+    {
+      "id": "wpol-do-drugiej",
+      "text": "wpół do drugiej"
+    },
+    {
       "id": "wracam",
       "text": "wracam"
+    },
+    {
+      "id": "wstaje",
+      "text": "wstaję"
+    },
+    {
+      "id": "wstaje-o-szostej",
+      "text": "wstaję o szóstej"
+    },
+    {
+      "id": "wstaje-o-wpol-do-siodmej",
+      "text": "Wstaję o wpół do siódmej."
+    },
+    {
+      "id": "wstaje-wczesnie",
+      "text": "wstaję wcześnie"
+    },
+    {
+      "id": "wstajesz",
+      "text": "wstajesz"
+    },
+    {
+      "id": "wstajesz-wczesnie",
+      "text": "Wstajesz wcześnie?"
+    },
+    {
+      "id": "wstawac",
+      "text": "wstawać"
+    },
+    {
+      "id": "wstawac-wczesnie",
+      "text": "wstawać wcześnie"
     },
     {
       "id": "wszedzie",
@@ -13453,6 +14817,10 @@
       "text": "wszystko w porządku, a u pana?"
     },
     {
+      "id": "wtorek",
+      "text": "wtorek"
+    },
+    {
       "id": "wu",
       "text": "wu"
     },
@@ -13483,6 +14851,18 @@
     {
       "id": "wybrac",
       "text": "wybrać"
+    },
+    {
+      "id": "wychodze",
+      "text": "wychodzę"
+    },
+    {
+      "id": "wychodze-z-domu",
+      "text": "wychodzę z domu"
+    },
+    {
+      "id": "wychodzisz",
+      "text": "wychodzisz"
     },
     {
       "id": "wygrac",
@@ -13535,6 +14915,10 @@
     {
       "id": "z-czym-z-serem-czy-z-szynka",
       "text": "Z czym? Z serem czy z szynką?"
+    },
+    {
+      "id": "z-domu",
+      "text": "z domu"
     },
     {
       "id": "z-dzemem",
@@ -13641,6 +15025,10 @@
       "text": "z Polski"
     },
     {
+      "id": "z-przyjemnoscia",
+      "text": "z przyjemnością"
+    },
+    {
       "id": "z-rodzynkami",
       "text": "z rodzynkami"
     },
@@ -13693,6 +15081,34 @@
       "text": "za"
     },
     {
+      "id": "za-kwadrans-druga",
+      "text": "za kwadrans druga"
+    },
+    {
+      "id": "za-piec-dwunasta",
+      "text": "za pięć dwunasta"
+    },
+    {
+      "id": "za-piec-osma",
+      "text": "za pięć ósma"
+    },
+    {
+      "id": "zaczyna-sie",
+      "text": "zaczyna się"
+    },
+    {
+      "id": "zaczynam",
+      "text": "zaczynam"
+    },
+    {
+      "id": "zajecia",
+      "text": "zajęcia"
+    },
+    {
+      "id": "zajecia-sa-od-dziesiatej-do-trzynastej",
+      "text": "zajęcia są od dziesiątej do trzynastej"
+    },
+    {
       "id": "zajety",
       "text": "zajęty"
     },
@@ -13737,8 +15153,24 @@
       "text": "zapraszam"
     },
     {
+      "id": "zapraszam-cie",
+      "text": "zapraszam cię"
+    },
+    {
+      "id": "zapraszam-cie-na-film",
+      "text": "zapraszam cię na film"
+    },
+    {
+      "id": "zapraszam-cie-na-film-2",
+      "text": "Zapraszam cię na film."
+    },
+    {
       "id": "zapraszam-na-obiad",
       "text": "zapraszam na obiad"
+    },
+    {
+      "id": "zapraszam-was-na-kawe",
+      "text": "Zapraszam was na kawę."
     },
     {
       "id": "zapraszamy",
@@ -13747,6 +15179,10 @@
     {
       "id": "zapraszamy-na-kolacje",
       "text": "zapraszamy na kolację!"
+    },
+    {
+      "id": "zaproszenie",
+      "text": "zaproszenie"
     },
     {
       "id": "zaraz",
@@ -13803,6 +15239,14 @@
     {
       "id": "zeby",
       "text": "żeby"
+    },
+    {
+      "id": "zeby-2",
+      "text": "zęby"
+    },
+    {
+      "id": "zegarek",
+      "text": "zegarek"
     },
     {
       "id": "zero",

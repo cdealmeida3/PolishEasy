@@ -1,0 +1,402 @@
+{
+  "id": "kpk1-l12-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Która godzina? O której godzinie?",
+    "meaning": {
+      "en": "What time is it? At what time?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-b1-t01",
+      "before": "kpk1-l12-b1-e01",
+      "title": {
+        "en": "Która jest godzina?"
+      },
+      "body": {
+        "en": "Hours are told with ordinal numbers in the feminine, because they go with *godzina*: *jest pierwsza* (it's one), *jest druga*, *trzecia*, *czwarta*, *piąta*, *szósta*. *Która jest godzina?* or just *która godzina?* asks the time."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b1-e01",
+      "prompt": "godzina",
+      "options": [
+        {
+          "en": "an hour; the time (która godzina?: what time is it?)"
+        },
+        {
+          "en": "time"
+        },
+        {
+          "en": "a day and a night, twenty-four hours"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "godzina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b1-e02",
+      "prompt": "która jest godzina?",
+      "options": [
+        {
+          "en": "how often?"
+        },
+        {
+          "en": "what time is it?"
+        },
+        {
+          "en": "when"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ktora-jest-godzina"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-b1-e03",
+      "text": "która jest godzina?",
+      "meaning": {
+        "en": "what time is it?"
+      },
+      "distractors": [
+        "kiedy jest lekcja?",
+        "gdzie jest zegarek?"
+      ],
+      "items": [
+        "ktora-jest-godzina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b1-e04",
+      "prompt": "pierwsza",
+      "options": [
+        {
+          "en": "two o'clock"
+        },
+        {
+          "en": "eleven o'clock"
+        },
+        {
+          "en": "one o'clock (jest pierwsza: it's one; o pierwszej: at one)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pierwsza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b1-e05",
+      "prompt": "druga",
+      "options": [
+        {
+          "en": "two o'clock (jest druga; o drugiej: at two)"
+        },
+        {
+          "en": "twelve o'clock"
+        },
+        {
+          "en": "three o'clock"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "druga"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-b1-e06",
+      "text": "Jest ___.",
+      "meaning": {
+        "en": "It's two o'clock."
+      },
+      "gaps": [
+        [
+          "druga"
+        ]
+      ],
+      "distractors": [
+        "dwa",
+        "drugi"
+      ],
+      "items": [
+        "byc-jest",
+        "druga"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b1-e07",
+      "prompt": "trzecia",
+      "options": [
+        {
+          "en": "three"
+        },
+        {
+          "en": "three o'clock (jest trzecia; o trzeciej: at three)"
+        },
+        {
+          "en": "four o'clock"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "trzecia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b1-e08",
+      "prompt": "czwarta",
+      "options": [
+        {
+          "en": "five o'clock"
+        },
+        {
+          "en": "four"
+        },
+        {
+          "en": "four o'clock (jest czwarta; o czwartej: at four)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czwarta"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-b1-e09",
+      "prompt": {
+        "en": "it's four o'clock"
+      },
+      "acceptedAnswers": [
+        "jest czwarta"
+      ],
+      "distractors": [
+        "cztery",
+        "piąta"
+      ],
+      "items": [
+        "byc-jest",
+        "czwarta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b1-e10",
+      "prompt": "piąta",
+      "options": [
+        {
+          "en": "five o'clock (jest piąta; o piątej: at five)"
+        },
+        {
+          "en": "five"
+        },
+        {
+          "en": "six o'clock"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "piata"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b1-e11",
+      "prompt": "szósta",
+      "options": [
+        {
+          "en": "six"
+        },
+        {
+          "en": "six o'clock (jest szósta; o szóstej: at six)"
+        },
+        {
+          "en": "seven o'clock"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szosta"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-b1-e12",
+      "acceptedAnswers": [
+        "jest szósta"
+      ],
+      "meaning": {
+        "en": "it's six o'clock"
+      },
+      "items": [
+        "byc-jest",
+        "szosta"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-b1-e13",
+      "prompt": {
+        "en": "it's three o'clock"
+      },
+      "acceptedAnswers": [
+        "jest trzecia",
+        "trzecia"
+      ],
+      "items": [
+        "byc-jest",
+        "trzecia"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-b1-e14",
+      "pairs": [
+        {
+          "polish": "pierwsza",
+          "meaning": {
+            "en": "1:00"
+          }
+        },
+        {
+          "polish": "druga",
+          "meaning": {
+            "en": "2:00"
+          }
+        },
+        {
+          "polish": "trzecia",
+          "meaning": {
+            "en": "3:00"
+          }
+        },
+        {
+          "polish": "czwarta",
+          "meaning": {
+            "en": "4:00"
+          }
+        },
+        {
+          "polish": "piąta",
+          "meaning": {
+            "en": "5:00"
+          }
+        },
+        {
+          "polish": "szósta",
+          "meaning": {
+            "en": "6:00"
+          }
+        }
+      ],
+      "items": [
+        "pierwsza",
+        "druga",
+        "trzecia",
+        "czwarta",
+        "piata",
+        "szosta"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-b1-e15",
+      "lines": [
+        "Która jest godzina?",
+        "Jest piąta.",
+        "Co? Już piąta?"
+      ],
+      "meaning": {
+        "en": "Already?"
+      },
+      "statements": [
+        {
+          "text": "Jest piąta.",
+          "meaning": {
+            "en": "It's five o'clock."
+          },
+          "true": true
+        },
+        {
+          "text": "Jest szósta.",
+          "meaning": {
+            "en": "It's six o'clock."
+          },
+          "true": false
+        },
+        {
+          "text": "Ona pyta, która jest godzina.",
+          "meaning": {
+            "en": "She asks what time it is."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ktora-jest-godzina",
+        "godzina",
+        "byc-jest",
+        "piata",
+        "co",
+        "juz"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-b1-e16",
+      "lines": [
+        "Przepraszam, która jest godzina?",
+        "Jest pierwsza.",
+        "Dziękuję.",
+        "Proszę."
+      ],
+      "meaning": {
+        "en": "Asking the time."
+      },
+      "items": [
+        "przepraszam",
+        "ktora-jest-godzina",
+        "godzina",
+        "byc-jest",
+        "pierwsza",
+        "dziekuje",
+        "prosze"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-b1-e17",
+      "text": "jest druga",
+      "meaning": {
+        "en": "it's two o'clock"
+      },
+      "distractors": [
+        "jest trzecia",
+        "jest dwunasta"
+      ],
+      "items": [
+        "byc-jest",
+        "druga"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "id": "kpk1-l12-d4",
+  "section": {
+    "letter": "D",
+    "heading": "Rutyna dnia",
+    "meaning": {
+      "en": "A daily routine"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-d4-t01",
+      "before": "kpk1-l12-d4-e01",
+      "title": {
+        "en": "Zaczynam pracę"
+      },
+      "body": {
+        "en": "A working day: *zaczynam pracę* (I start work) and *kończę pracę* (I finish it). In between: *otwieram komputer*, *sprawdzam coś w telefonie*, *piję kawę*. In the evening many people watch the news, *serwis informacyjny*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d4-e01",
+      "prompt": "zaczynam",
+      "options": [
+        {
+          "en": "I finish (kończę pracę: I finish work)"
+        },
+        {
+          "en": "I open"
+        },
+        {
+          "en": "I start, I begin (zaczynam pracę: I start work)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zaczynam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d4-e02",
+      "prompt": "kończę",
+      "options": [
+        {
+          "en": "I finish (kończę pracę: I finish work)"
+        },
+        {
+          "en": "I start, I begin (zaczynam pracę: I start work)"
+        },
+        {
+          "en": "I come back, I go back"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "koncze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d4-e03",
+      "prompt": "pracę",
+      "options": [
+        {
+          "en": "a lesson"
+        },
+        {
+          "en": "work (after zaczynam, kończę…: kończę pracę)"
+        },
+        {
+          "en": "a break"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "prace"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-d4-e04",
+      "text": "o dziewiątej zaczynam pracę",
+      "meaning": {
+        "en": "at nine I start work"
+      },
+      "distractors": [
+        "o dziewiątej kończę pracę",
+        "o dziesiątej zaczynam pracę"
+      ],
+      "items": [
+        "o-godz",
+        "dziewiata",
+        "zaczynam",
+        "prace"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d4-e05",
+      "prompt": "sprawdzam",
+      "options": [
+        {
+          "en": "I open"
+        },
+        {
+          "en": "I am looking for"
+        },
+        {
+          "en": "I check"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sprawdzam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d4-e06",
+      "prompt": "coś",
+      "options": [
+        {
+          "en": "something"
+        },
+        {
+          "en": "nothing (nic nie robię: I am doing nothing)"
+        },
+        {
+          "en": "something else"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cos"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d4-e07",
+      "prompt": "w telefonie",
+      "options": [
+        {
+          "en": "on the computer (grać na komputerze: to play computer games)"
+        },
+        {
+          "en": "on the phone, in my phone (sprawdzam coś w telefonie)"
+        },
+        {
+          "en": "a phone number"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-telefonie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-d4-e08",
+      "prompt": {
+        "en": "I check something on my phone"
+      },
+      "acceptedAnswers": [
+        "sprawdzam coś w telefonie"
+      ],
+      "distractors": [
+        "sprawdzasz",
+        "nic"
+      ],
+      "items": [
+        "sprawdzam",
+        "cos",
+        "w-telefonie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d4-e09",
+      "prompt": "otwieram",
+      "options": [
+        {
+          "en": "I start, I begin (zaczynam pracę: I start work)"
+        },
+        {
+          "en": "I check"
+        },
+        {
+          "en": "I open"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "otwieram"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d4-e10",
+      "prompt": "serwis informacyjny",
+      "options": [
+        {
+          "en": "the news (on TV)"
+        },
+        {
+          "en": "a TV series"
+        },
+        {
+          "en": "a film"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "serwis-informacyjny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-d4-e11",
+      "text": "Wieczorem oglądam ___ informacyjny.",
+      "meaning": {
+        "en": "In the evening I watch the news."
+      },
+      "gaps": [
+        [
+          "serwis"
+        ]
+      ],
+      "distractors": [
+        "serial",
+        "film"
+      ],
+      "items": [
+        "wieczorem",
+        "ogladac-ogladam",
+        "serwis-informacyjny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-d4-e12",
+      "acceptedAnswers": [
+        "o siedemnastej kończę pracę"
+      ],
+      "meaning": {
+        "en": "at 5 p.m. I finish work"
+      },
+      "items": [
+        "o-godz",
+        "siedemnasta",
+        "koncze",
+        "prace"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-d4-e13",
+      "prompt": {
+        "en": "I open the computer"
+      },
+      "acceptedAnswers": [
+        "otwieram komputer"
+      ],
+      "items": [
+        "otwieram",
+        "komputer"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-d4-e14",
+      "pairs": [
+        {
+          "polish": "zaczynam",
+          "meaning": {
+            "en": "I start"
+          }
+        },
+        {
+          "polish": "kończę",
+          "meaning": {
+            "en": "I finish"
+          }
+        },
+        {
+          "polish": "pracę",
+          "meaning": {
+            "en": "work"
+          }
+        },
+        {
+          "polish": "sprawdzam",
+          "meaning": {
+            "en": "I check"
+          }
+        },
+        {
+          "polish": "otwieram",
+          "meaning": {
+            "en": "I open"
+          }
+        },
+        {
+          "polish": "coś",
+          "meaning": {
+            "en": "something"
+          }
+        }
+      ],
+      "items": [
+        "zaczynam",
+        "koncze",
+        "prace",
+        "sprawdzam",
+        "otwieram",
+        "cos"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-d4-e15",
+      "lines": [
+        "O dziewiątej otwieram komputer.",
+        "O pierwszej jest przerwa.",
+        "O siedemnastej kończę pracę i wracam do domu."
+      ],
+      "meaning": {
+        "en": "At work."
+      },
+      "statements": [
+        {
+          "text": "Zaczyna pracę o dziewiątej.",
+          "meaning": {
+            "en": "She starts work at nine."
+          },
+          "true": true
+        },
+        {
+          "text": "Przerwa jest o dwunastej.",
+          "meaning": {
+            "en": "The break is at twelve."
+          },
+          "true": false
+        },
+        {
+          "text": "Po pracy wraca do domu.",
+          "meaning": {
+            "en": "After work she goes home."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "o-godz",
+        "dziewiata",
+        "otwieram",
+        "komputer",
+        "byc-jest",
+        "przerwa",
+        "pierwsza",
+        "siedemnasta",
+        "koncze",
+        "prace",
+        "i",
+        "wracac-wracam",
+        "do-domu"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-d4-e16",
+      "lines": [
+        "Co robisz rano w pracy?",
+        "Najpierw otwieram komputer.",
+        "A potem?",
+        "Potem sprawdzam coś w telefonie i piję kawę."
+      ],
+      "meaning": {
+        "en": "A morning at work."
+      },
+      "items": [
+        "co",
+        "robic-robisz",
+        "rano",
+        "najpierw",
+        "otwieram",
+        "komputer",
+        "a",
+        "potem",
+        "sprawdzam",
+        "cos",
+        "w-telefonie",
+        "i",
+        "pic-pije",
+        "kawa-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-d4-e17",
+      "text": "wieczorem oglądam serwis informacyjny",
+      "meaning": {
+        "en": "in the evening I watch the news"
+      },
+      "distractors": [
+        "wieczorem oglądam serial",
+        "rano oglądam serwis informacyjny"
+      ],
+      "items": [
+        "wieczorem",
+        "ogladac-ogladam",
+        "serwis-informacyjny"
+      ]
+    }
+  ]
+}

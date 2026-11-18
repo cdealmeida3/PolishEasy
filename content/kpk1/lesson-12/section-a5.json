@@ -1,0 +1,414 @@
+{
+  "id": "kpk1-l12-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Macie ochotę pójść na spektakl?",
+    "meaning": {
+      "en": "Do you feel like going to a show?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-a5-t01",
+      "before": "kpk1-l12-a5-e01",
+      "title": {
+        "en": "Gdzie się spotkamy?"
+      },
+      "body": {
+        "en": "When the plan is made, ask *gdzie się spotkamy?* (where shall we meet?). In a Polish town people often meet *na rynku*, in the main square, *pod pomnikiem* (by the monument). *Kto jeszcze?* is who else, *coś innego* is something else, and *bez dyskusji!* settles it."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a5-e01",
+      "prompt": "potańczyć",
+      "options": [
+        {
+          "en": "to sing a bit"
+        },
+        {
+          "en": "dance a bit (to have a dance)"
+        },
+        {
+          "en": "to rest"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "potanczyc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a5-e02",
+      "prompt": "nie mam planów",
+      "options": [
+        {
+          "en": "I have no time"
+        },
+        {
+          "en": "nothing new"
+        },
+        {
+          "en": "I have no plans"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nie-mam-planow"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-a5-e03",
+      "text": "jutro wieczorem nie mam planów",
+      "meaning": {
+        "en": "tomorrow evening I have no plans"
+      },
+      "distractors": [
+        "dziś wieczorem nie mam planów",
+        "jutro wieczorem nie mam czasu"
+      ],
+      "items": [
+        "jutro",
+        "wieczorem",
+        "nie-mam-planow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a5-e04",
+      "prompt": "kto jeszcze?",
+      "options": [
+        {
+          "en": "who else?"
+        },
+        {
+          "en": "who"
+        },
+        {
+          "en": "who is it?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kto-jeszcze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a5-e05",
+      "prompt": "coś innego",
+      "options": [
+        {
+          "en": "something sweet (mam ochotę na coś słodkiego)"
+        },
+        {
+          "en": "something else"
+        },
+        {
+          "en": "nothing (nic nie robię: I am doing nothing)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "cos-innego"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-a5-e06",
+      "prompt": {
+        "en": "I can drink something else"
+      },
+      "acceptedAnswers": [
+        "mogę pić coś innego"
+      ],
+      "distractors": [
+        "piję",
+        "nic"
+      ],
+      "items": [
+        "moc-moge",
+        "pic",
+        "cos-innego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a5-e07",
+      "prompt": "gdzie się spotkamy?",
+      "options": [
+        {
+          "en": "where"
+        },
+        {
+          "en": "when"
+        },
+        {
+          "en": "where shall we meet?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "gdzie-sie-spotkamy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a5-e08",
+      "prompt": "na rynku",
+      "options": [
+        {
+          "en": "in the market square"
+        },
+        {
+          "en": "at the market"
+        },
+        {
+          "en": "at home"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-rynku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a5-e09",
+      "prompt": "pod pomnikiem",
+      "options": [
+        {
+          "en": "on the left; to the left"
+        },
+        {
+          "en": "by the monument (under the statue)"
+        },
+        {
+          "en": "on the right; to the right"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pod-pomnikiem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-a5-e10",
+      "acceptedAnswers": [
+        "gdzie się spotkamy?"
+      ],
+      "meaning": {
+        "en": "where shall we meet?"
+      },
+      "items": [
+        "gdzie-sie-spotkamy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-a5-e11",
+      "text": "Gdzie się spotkamy? Na rynku, pod ___.",
+      "meaning": {
+        "en": "Where shall we meet? In the square, by the monument."
+      },
+      "gaps": [
+        [
+          "pomnikiem"
+        ]
+      ],
+      "distractors": [
+        "rynku",
+        "parku"
+      ],
+      "items": [
+        "gdzie-sie-spotkamy",
+        "na-rynku",
+        "pod-pomnikiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a5-e12",
+      "prompt": "bez dyskusji",
+      "options": [
+        {
+          "en": "why not?"
+        },
+        {
+          "en": "all right; fine"
+        },
+        {
+          "en": "no arguing, and that's that"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bez-dyskusji"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-a5-e13",
+      "prompt": {
+        "en": "who else?"
+      },
+      "acceptedAnswers": [
+        "kto jeszcze?"
+      ],
+      "items": [
+        "kto-jeszcze"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-a5-e14",
+      "pairs": [
+        {
+          "polish": "potańczyć",
+          "meaning": {
+            "en": "to dance a bit"
+          }
+        },
+        {
+          "polish": "bez dyskusji",
+          "meaning": {
+            "en": "no arguing"
+          }
+        },
+        {
+          "polish": "kto jeszcze?",
+          "meaning": {
+            "en": "who else?"
+          }
+        },
+        {
+          "polish": "coś innego",
+          "meaning": {
+            "en": "something else"
+          }
+        },
+        {
+          "polish": "na rynku",
+          "meaning": {
+            "en": "in the square"
+          }
+        },
+        {
+          "polish": "nie mam planów",
+          "meaning": {
+            "en": "I have no plans"
+          }
+        }
+      ],
+      "items": [
+        "potanczyc",
+        "bez-dyskusji",
+        "kto-jeszcze",
+        "cos-innego",
+        "na-rynku",
+        "nie-mam-planow"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-a5-e15",
+      "lines": [
+        "Co robicie jutro wieczorem?",
+        "Może pójdziemy do klubu potańczyć?",
+        "Świetny pomysł! Gdzie się spotkamy?",
+        "Na rynku, pod pomnikiem."
+      ],
+      "meaning": {
+        "en": "Tomorrow evening."
+      },
+      "items": [
+        "co",
+        "robic-robicie",
+        "jutro",
+        "wieczorem",
+        "moze-pojdziemy",
+        "do-klubu",
+        "potanczyc",
+        "swietny",
+        "pomysl",
+        "gdzie-sie-spotkamy",
+        "na-rynku",
+        "pod-pomnikiem"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-a5-e16",
+      "lines": [
+        "Nie lubię tańczyć i nie piję piwa.",
+        "Nic nie szkodzi, możesz pić coś innego.",
+        "No dobrze, idę z wami."
+      ],
+      "meaning": {
+        "en": "A night out."
+      },
+      "statements": [
+        {
+          "text": "Ona lubi tańczyć.",
+          "meaning": {
+            "en": "She likes dancing."
+          },
+          "true": false
+        },
+        {
+          "text": "Ona może pić coś innego.",
+          "meaning": {
+            "en": "She can drink something else."
+          },
+          "true": true
+        },
+        {
+          "text": "Ona idzie z nimi.",
+          "meaning": {
+            "en": "She is going with them."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "nie",
+        "lubic-lubie",
+        "tanczyc",
+        "i",
+        "pic-pije",
+        "piwo",
+        "nic-nie-szkodzi",
+        "moc-mozesz",
+        "pic",
+        "cos-innego",
+        "dobrze",
+        "isc-ide",
+        "z-wami"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-a5-e17",
+      "text": "bez dyskusji!",
+      "meaning": {
+        "en": "no arguing!"
+      },
+      "distractors": [
+        "bez kawy!",
+        "bez mleka!"
+      ],
+      "items": [
+        "bez-dyskusji"
+      ]
+    }
+  ]
+}

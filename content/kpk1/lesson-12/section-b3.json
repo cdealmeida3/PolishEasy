@@ -1,0 +1,462 @@
+{
+  "id": "kpk1-l12-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Która godzina? O której godzinie?",
+    "meaning": {
+      "en": "What time is it? At what time?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-b3-t01",
+      "before": "kpk1-l12-b3-e01",
+      "title": {
+        "en": "Trzynasta"
+      },
+      "body": {
+        "en": "Timetables and formal Polish count 24 hours: *trzynasta* is 13:00, *siedemnasta* 17:00, *dwudziesta* 20:00, then *dwudziesta pierwsza*, *dwudziesta druga*, *dwudziesta trzecia* and *dwudziesta czwarta*. With friends people count to twelve twice: *o trzynastej* or *o pierwszej*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b3-e01",
+      "prompt": "trzynasta",
+      "options": [
+        {
+          "en": "3 p.m."
+        },
+        {
+          "en": "1 p.m., thirteen hundred (jest trzynasta; o trzynastej)"
+        },
+        {
+          "en": "thirteen"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "trzynasta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b3-e02",
+      "prompt": "czternasta",
+      "options": [
+        {
+          "en": "fourteen"
+        },
+        {
+          "en": "4 p.m."
+        },
+        {
+          "en": "2 p.m., fourteen hundred (jest czternasta; o czternastej)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czternasta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b3-e03",
+      "prompt": "piętnasta",
+      "options": [
+        {
+          "en": "3 p.m., fifteen hundred (jest piętnasta; o piętnastej)"
+        },
+        {
+          "en": "5 p.m."
+        },
+        {
+          "en": "fifteen"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pietnasta"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-b3-e04",
+      "text": "o piętnastej",
+      "meaning": {
+        "en": "at 3 p.m."
+      },
+      "distractors": [
+        "o piątej",
+        "o szesnastej"
+      ],
+      "items": [
+        "o-godz",
+        "pietnasta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b3-e05",
+      "prompt": "szesnasta",
+      "options": [
+        {
+          "en": "6 p.m."
+        },
+        {
+          "en": "4 p.m., sixteen hundred (jest szesnasta; o szesnastej)"
+        },
+        {
+          "en": "4 a.m."
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szesnasta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b3-e06",
+      "prompt": "siedemnasta",
+      "options": [
+        {
+          "en": "seventeen"
+        },
+        {
+          "en": "7 p.m."
+        },
+        {
+          "en": "5 p.m., seventeen hundred (jest siedemnasta; o siedemnastej)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "siedemnasta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b3-e07",
+      "prompt": "osiemnasta",
+      "options": [
+        {
+          "en": "6 p.m., eighteen hundred (jest osiemnasta; o osiemnastej)"
+        },
+        {
+          "en": "8 p.m."
+        },
+        {
+          "en": "6 a.m."
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "osiemnasta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b3-e08",
+      "prompt": "dziewiętnasta",
+      "options": [
+        {
+          "en": "9 p.m."
+        },
+        {
+          "en": "7 p.m., nineteen hundred (jest dziewiętnasta; o dziewiętnastej)"
+        },
+        {
+          "en": "nineteen"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dziewietnasta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-b3-e09",
+      "prompt": "dwudziesta",
+      "options": [
+        {
+          "en": "twenty"
+        },
+        {
+          "en": "10 p.m."
+        },
+        {
+          "en": "8 p.m., twenty hundred (o dwudziestej; dwudziesta pierwsza: 9 p.m.)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dwudziesta"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-b3-e10",
+      "text": "Lekcja jest o ___.",
+      "meaning": {
+        "en": "The lesson is at 5 p.m."
+      },
+      "gaps": [
+        [
+          "siedemnastej"
+        ]
+      ],
+      "distractors": [
+        "siedemnasta",
+        "siedem"
+      ],
+      "items": [
+        "lekcja",
+        "byc-jest",
+        "o-godz",
+        "siedemnasta"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-b3-e11",
+      "prompt": {
+        "en": "at 9 p.m."
+      },
+      "acceptedAnswers": [
+        "o dwudziestej pierwszej"
+      ],
+      "distractors": [
+        "dwudziesta",
+        "druga"
+      ],
+      "items": [
+        "o-godz",
+        "dwudziesta",
+        "pierwsza"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-b3-e12",
+      "acceptedAnswers": [
+        "jest osiemnasta"
+      ],
+      "meaning": {
+        "en": "it's 6 p.m."
+      },
+      "items": [
+        "byc-jest",
+        "osiemnasta"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-b3-e13",
+      "prompt": {
+        "en": "at 2 p.m. (the 24-hour way)"
+      },
+      "acceptedAnswers": [
+        "o czternastej"
+      ],
+      "items": [
+        "o-godz",
+        "czternasta"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-b3-e14",
+      "pairs": [
+        {
+          "polish": "trzynasta",
+          "meaning": {
+            "en": "13:00"
+          }
+        },
+        {
+          "polish": "czternasta",
+          "meaning": {
+            "en": "14:00"
+          }
+        },
+        {
+          "polish": "piętnasta",
+          "meaning": {
+            "en": "15:00"
+          }
+        },
+        {
+          "polish": "szesnasta",
+          "meaning": {
+            "en": "16:00"
+          }
+        },
+        {
+          "polish": "siedemnasta",
+          "meaning": {
+            "en": "17:00"
+          }
+        },
+        {
+          "polish": "osiemnasta",
+          "meaning": {
+            "en": "18:00"
+          }
+        }
+      ],
+      "items": [
+        "trzynasta",
+        "czternasta",
+        "pietnasta",
+        "szesnasta",
+        "siedemnasta",
+        "osiemnasta"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-b3-e15",
+      "pairs": [
+        {
+          "polish": "dziewiętnasta",
+          "meaning": {
+            "en": "19:00"
+          }
+        },
+        {
+          "polish": "dwudziesta",
+          "meaning": {
+            "en": "20:00"
+          }
+        },
+        {
+          "polish": "dwudziesta pierwsza",
+          "meaning": {
+            "en": "21:00"
+          }
+        },
+        {
+          "polish": "dwudziesta druga",
+          "meaning": {
+            "en": "22:00"
+          }
+        },
+        {
+          "polish": "dwudziesta trzecia",
+          "meaning": {
+            "en": "23:00"
+          }
+        },
+        {
+          "polish": "dwudziesta czwarta",
+          "meaning": {
+            "en": "24:00"
+          }
+        }
+      ],
+      "items": [
+        "dziewietnasta",
+        "dwudziesta",
+        "pierwsza",
+        "druga",
+        "trzecia",
+        "czwarta"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-b3-e16",
+      "lines": [
+        "O trzynastej jem obiad.",
+        "O szesnastej piję kawę.",
+        "O dwudziestej wracam do domu."
+      ],
+      "meaning": {
+        "en": "A long day."
+      },
+      "statements": [
+        {
+          "text": "Obiad jest o pierwszej.",
+          "meaning": {
+            "en": "Dinner is at one."
+          },
+          "true": true
+        },
+        {
+          "text": "Kawa jest o piątej.",
+          "meaning": {
+            "en": "Coffee is at five."
+          },
+          "true": false
+        },
+        {
+          "text": "Do domu wraca o ósmej wieczorem.",
+          "meaning": {
+            "en": "He goes home at eight in the evening."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "o-godz",
+        "trzynasta",
+        "jesc-jem",
+        "obiad",
+        "szesnasta",
+        "pic-pije",
+        "kawa-acc",
+        "dwudziesta",
+        "wracac-wracam",
+        "do-domu"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-b3-e17",
+      "lines": [
+        "O której jest film?",
+        "O dziewiętnastej.",
+        "Czyli o siódmej wieczorem?",
+        "Tak."
+      ],
+      "meaning": {
+        "en": "Nineteen hundred."
+      },
+      "items": [
+        "o-ktorej",
+        "byc-jest",
+        "film",
+        "o-godz",
+        "dziewietnasta",
+        "czyli",
+        "siodma",
+        "wieczorem",
+        "tak"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-b3-e18",
+      "text": "o dwudziestej",
+      "meaning": {
+        "en": "at 8 p.m."
+      },
+      "distractors": [
+        "o dwunastej",
+        "o drugiej"
+      ],
+      "items": [
+        "o-godz",
+        "dwudziesta"
+      ]
+    }
+  ]
+}

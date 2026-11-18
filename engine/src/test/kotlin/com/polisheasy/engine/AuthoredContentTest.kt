@@ -227,7 +227,7 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 } + List(17) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
@@ -240,7 +240,8 @@ class AuthoredContentTest {
                 listOf(8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 0) +
                 listOf(8, 8, 8, 8, 6, 6, 8, 8, 8, 6, 4, 1, 7, 8, 8, 6, 4) +
                 listOf(8, 8, 8, 8, 7, 8, 8, 8, 8, 7, 8, 8, 8, 8) +
-                listOf(8, 8, 8, 8, 8, 7, 5, 8, 7, 8, 8, 8, 3),
+                listOf(8, 8, 8, 8, 8, 7, 5, 8, 7, 8, 8, 8, 3) +
+                listOf(8, 8, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 3),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -294,8 +295,8 @@ class AuthoredContentTest {
         assertEquals(14, book[10].sections)
         assertEquals("Rodzina", book[11].title)
         assertEquals(13, book[11].sections)
-        assertTrue(book.take(12).none { it.coming })
-        assertTrue(book.drop(12).all { it.coming })
+        assertTrue(book.take(13).none { it.coming })
+        assertTrue(book.drop(13).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -648,7 +649,13 @@ class AuthoredContentTest {
     @Test
     fun `a number counts only years, money, lottery tickets and, since chapter 9, things in the plural, dwie a feminine one`() {
         // A house number is joined to its flat's with przez: dziesięć przez trzy is 10/3.
-        val allowed = allNumbers + yearWords + moneyWords.values.flatten() + listOf("plus", "minus", "razy", "równa", "to", "jest", "przez", "kupon")
+        // Chapter 12 tells the time: pięć po ósmej, za pięć ósma, osiem godzin.
+        val hourIds = listOf("pierwsza", "druga", "trzecia", "czwarta", "piata", "szosta", "siodma", "osma", "dziewiata", "dziesiata", "jedenasta", "dwunasta")
+        val hours = course.items.filter { item -> hourIds.any { item.id == it || item.id.startsWith("${it}-") } || item.id.endsWith("nasta") || item.id.startsWith("dwudziesta") }
+            .flatMap { listOf(it.text) + it.forms }.toSet()
+        assertTrue("ósmej" in hours, "The hours are not Items")
+        val allowed = allNumbers + yearWords + moneyWords.values.flatten() + hours +
+            listOf("plus", "minus", "razy", "równa", "to", "jest", "przez", "kupon", "po", "godzin", "minut", "minuty", "minuta")
         // Chapter 9 counts things: jeden pomidor, dwa banany, dwie papryki, trzy słodkie pomarańcze, dwa kilo. The thing is the
         // plural form of an Item with a gender, perhaps after an adjective; dwie goes with a feminine one, dwa with the others.
         val plurals = course.items.filter { it.id in course.genders && it.forms.size == 1 }.associate { it.forms.single() to course.genders.getValue(it.id) }
@@ -658,6 +665,9 @@ class AuthoredContentTest {
             sentence.indices.filter { sentence[it] in allNumbers + "dwie" }.forEach { index ->
                 val next = sentence.getOrNull(index + 1) ?: return@forEach
                 if (next in allowed || next == "kilo") return@forEach
+                // The minutes after an hour: o siódmej piętnaście, o ósmej trzydzieści pięć.
+                val before = sentence.getOrNull(index - 1)
+                if (before in hours || (before in tens && sentence.getOrNull(index - 2) in hours)) return@forEach
                 val thing = if (next in adjectives) sentence.getOrNull(index + 2) else next
                 // Jeden goes with one masculine thing: jeden pomidor.
                 val gender = if (sentence[index] == "jeden") course.items.singleOrNull { it.text == thing }?.let { course.genders[it.id] }?.takeIf { it == Gender.MASCULINE } else plurals[thing]
@@ -706,7 +716,7 @@ class AuthoredContentTest {
         val had = setOf("brata", "siostrę", "syna", "córkę")
         had.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
         val fixedPhrases = listOf(listOf("nie", "ma", "za", "co"), listOf("nie", "ma", "sprawy"))
-        val negatedObjects = setOf("ani", "aparatu", "bananów", "brata", "chleba", "drobnych", "fasoli", "kantoru", "kompotu", "kwiaciarni", "pieniędzy", "piwa", "problemu", "rodzeństwa", "soku", "wody")
+        val negatedObjects = setOf("ani", "aparatu", "bananów", "brata", "chleba", "drobnych", "fasoli", "kantoru", "kompotu", "kwiaciarni", "pieniędzy", "piwa", "planów", "problemu", "rodzeństwa", "soku", "wody", "czasu")
 
         spokenSentences.forEach { sentence ->
             val text = sentence.joinToString(" ")

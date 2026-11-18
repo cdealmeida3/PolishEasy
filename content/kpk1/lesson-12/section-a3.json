@@ -1,0 +1,403 @@
+{
+  "id": "kpk1-l12-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Macie ochotę pójść na spektakl?",
+    "meaning": {
+      "en": "Do you feel like going to a show?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-a3-t01",
+      "before": "kpk1-l12-a3-e01",
+      "title": {
+        "en": "Chętnie!"
+      },
+      "body": {
+        "en": "Saying yes: *chętnie!*, *z przyjemnością*, *świetny pomysł!*, *jasne!*, *dlaczego nie?*, and *dziękuję za zaproszenie*. With friends *dziękuję* is often *dzięki*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a3-e01",
+      "prompt": "dziękuję za zaproszenie",
+      "options": [
+        {
+          "en": "thank you"
+        },
+        {
+          "en": "thank you for the invitation"
+        },
+        {
+          "en": "sorry; excuse me"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dziekuje-za-zaproszenie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a3-e02",
+      "prompt": "z przyjemnością",
+      "options": [
+        {
+          "en": "unfortunately"
+        },
+        {
+          "en": "sorry; excuse me"
+        },
+        {
+          "en": "with pleasure"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-przyjemnoscia"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-a3-e03",
+      "text": "dziękuję za zaproszenie",
+      "meaning": {
+        "en": "thank you for the invitation"
+      },
+      "distractors": [
+        "dziękuję za obiad",
+        "dziękuję za kawę"
+      ],
+      "items": [
+        "dziekuje-za-zaproszenie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a3-e04",
+      "prompt": "świetny",
+      "options": [
+        {
+          "en": "great, excellent (świetny, świetna, świetne)"
+        },
+        {
+          "en": "good (dobry, dobra, dobre)"
+        },
+        {
+          "en": "interesting, curious (ciekawy, ciekawa, ciekawe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "swietny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a3-e05",
+      "prompt": "pomysł",
+      "options": [
+        {
+          "en": "time"
+        },
+        {
+          "en": "an idea (świetny pomysł!: a great idea!)"
+        },
+        {
+          "en": "a ticket (bilety: tickets)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pomysl"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-a3-e06",
+      "prompt": {
+        "en": "a great idea!"
+      },
+      "acceptedAnswers": [
+        "świetny pomysł!"
+      ],
+      "distractors": [
+        "świetna",
+        "dobra"
+      ],
+      "items": [
+        "swietny",
+        "pomysl"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a3-e07",
+      "prompt": "jasne!",
+      "options": [
+        {
+          "en": "unfortunately"
+        },
+        {
+          "en": "no"
+        },
+        {
+          "en": "sure! of course!"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jasne"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a3-e08",
+      "prompt": "dlaczego nie?",
+      "options": [
+        {
+          "en": "why not?"
+        },
+        {
+          "en": "why"
+        },
+        {
+          "en": "when"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dlaczego-nie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a3-e09",
+      "prompt": "na mecz",
+      "options": [
+        {
+          "en": "to a concert"
+        },
+        {
+          "en": "to a match (a football match)"
+        },
+        {
+          "en": "shopping (iść na zakupy: to go shopping)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-mecz"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-a3-e10",
+      "text": "Masz ochotę pójść na mecz? ___ nie?",
+      "meaning": {
+        "en": "Do you feel like going to a match? Why not?"
+      },
+      "gaps": [
+        [
+          "Dlaczego"
+        ]
+      ],
+      "distractors": [
+        "Kiedy",
+        "Gdzie"
+      ],
+      "items": [
+        "masz-ochote",
+        "pojsc",
+        "na-mecz",
+        "dlaczego-nie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-a3-e11",
+      "acceptedAnswers": [
+        "idziemy na mecz"
+      ],
+      "meaning": {
+        "en": "we are going to a match"
+      },
+      "items": [
+        "isc-idziemy",
+        "na-mecz"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-a3-e12",
+      "prompt": {
+        "en": "with pleasure"
+      },
+      "acceptedAnswers": [
+        "z przyjemnością"
+      ],
+      "items": [
+        "z-przyjemnoscia"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-a3-e13",
+      "pairs": [
+        {
+          "polish": "chętnie",
+          "meaning": {
+            "en": "gladly"
+          }
+        },
+        {
+          "polish": "z przyjemnością",
+          "meaning": {
+            "en": "with pleasure"
+          }
+        },
+        {
+          "polish": "świetny pomysł!",
+          "meaning": {
+            "en": "a great idea!"
+          }
+        },
+        {
+          "polish": "jasne!",
+          "meaning": {
+            "en": "sure!"
+          }
+        },
+        {
+          "polish": "dlaczego nie?",
+          "meaning": {
+            "en": "why not?"
+          }
+        },
+        {
+          "polish": "dzięki",
+          "meaning": {
+            "en": "thanks"
+          }
+        }
+      ],
+      "items": [
+        "chetnie",
+        "z-przyjemnoscia",
+        "swietny",
+        "pomysl",
+        "jasne",
+        "dlaczego-nie",
+        "dzieki"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-a3-e14",
+      "lines": [
+        "Mam dwa bilety na mecz.",
+        "Idziesz ze mną?",
+        "Jasne! Świetny pomysł!"
+      ],
+      "meaning": {
+        "en": "Two tickets."
+      },
+      "statements": [
+        {
+          "text": "On ma bilety na mecz.",
+          "meaning": {
+            "en": "He has tickets for a match."
+          },
+          "true": true
+        },
+        {
+          "text": "Ona nie ma czasu.",
+          "meaning": {
+            "en": "She has no time."
+          },
+          "true": false
+        },
+        {
+          "text": "Ona idzie na mecz.",
+          "meaning": {
+            "en": "She is going to the match."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "miec-mam",
+        "dwa",
+        "bilet",
+        "na-mecz",
+        "isc-idziesz",
+        "ze-mna",
+        "jasne",
+        "swietny",
+        "pomysl"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-a3-e15",
+      "lines": [
+        "Idziemy wieczorem na mecz.",
+        "Idziesz z nami?",
+        "Dlaczego nie?",
+        "Dziękuję za zaproszenie!"
+      ],
+      "meaning": {
+        "en": "Going to a match."
+      },
+      "items": [
+        "isc-idziemy",
+        "wieczorem",
+        "na-mecz",
+        "isc-idziesz",
+        "z-nami",
+        "dlaczego-nie",
+        "dziekuje-za-zaproszenie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-a3-e16",
+      "prompt": {
+        "en": "thank you for the invitation"
+      },
+      "acceptedAnswers": [
+        "dziękuję za zaproszenie"
+      ],
+      "distractors": [
+        "proszę",
+        "zaproszenia"
+      ],
+      "items": [
+        "dziekuje-za-zaproszenie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-a3-e17",
+      "text": "świetny pomysł!",
+      "meaning": {
+        "en": "a great idea!"
+      },
+      "distractors": [
+        "dobry pomysł!",
+        "świetny film!"
+      ],
+      "items": [
+        "swietny",
+        "pomysl"
+      ]
+    }
+  ]
+}

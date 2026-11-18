@@ -59,6 +59,14 @@
     {
       "problem": "dictionary: Uwe",
       "reason": "A name. Uwe is the German student of the book's class, as Javier and Mami are; the dictionary has no German first names."
+    },
+    {
+      "problem": "grammar: BRAK_PRZECINKA_KTORY: Od której do której pracujesz?",
+      "reason": "False alarm. The rule expects a relative clause after \"której\", but here \"od której do której\" is the fixed question \"from what time till what time\" (of hours), with no clause to set off; Polish writes it without a comma."
+    },
+    {
+      "problem": "grammar: SIE_SENT_END: myć się i ubierać się",
+      "reason": "False alarm. The rule is about a finite verb whose \"się\" is left at the very end of a sentence for no reason; this is a pair of infinitives listed as verbs to learn (\"to wash and to get dressed\"), and the reflexive infinitive \"ubierać się\" is its dictionary form."
     }
   ]
 }

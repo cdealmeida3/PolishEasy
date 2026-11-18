@@ -1,0 +1,521 @@
+{
+  "id": "kpk1-l12-d3",
+  "section": {
+    "letter": "D",
+    "heading": "Rutyna dnia",
+    "meaning": {
+      "en": "A daily routine"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-d3-t01",
+      "before": "kpk1-l12-d3-e01",
+      "title": {
+        "en": "Wstaję, wstajesz"
+      },
+      "body": {
+        "en": "*Wstawać* drops its *-wa-*: *wstaję*, *wstajesz*, *wstaje*. *Ubierać się* is of the *-am, -asz* kind and keeps its *-a-*: *ubieram się*, *ubierasz się*. In *budzić się* the *dź* hardens to *dz* for *ja*: *budzę się*, but *budzisz się*. Getting up *wcześnie* is getting up early."
+      },
+      "conjugation": {
+        "verb": "wstawać",
+        "meaning": {
+          "en": "to get up"
+        },
+        "forms": {
+          "ja": "wstaję",
+          "ty": "wstajesz",
+          "on": "wstaje",
+          "my": "wstajemy",
+          "wy": "wstajecie",
+          "oni": "wstają"
+        }
+      }
+    },
+    {
+      "id": "kpk1-l12-d3-t02",
+      "before": "kpk1-l12-d3-e08",
+      "title": {
+        "en": "Czasowniki: ja i ty"
+      },
+      "body": {
+        "en": "The routine verbs fall into three groups by their endings for *ja* and *ty*: *-ę, -esz* (*wstaję, wstajesz*; *biorę, bierzesz*), *-ę, -isz* (*budzę się, budzisz się*; *śpię, śpisz*) and *-m, -sz* (*ubieram się, ubierasz się*; *wracam, wracasz*)."
+      },
+      "table": {
+        "title": {
+          "en": "Czasowniki: ja i ty"
+        },
+        "columns": [
+          {
+            "header": "ja"
+          },
+          {
+            "header": "ty"
+          },
+          {
+            "header": "bezokolicznik"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "wstaj[ę]",
+              "wstaj[esz]",
+              "wstawać"
+            ]
+          },
+          {
+            "cells": [
+              "bior[ę]",
+              "bierz[esz]",
+              "brać"
+            ]
+          },
+          {
+            "cells": [
+              "budz[ę] się",
+              "budz[isz] się",
+              "budzić się"
+            ]
+          },
+          {
+            "cells": [
+              "śpi[ę]",
+              "śpi[sz]",
+              "spać"
+            ]
+          },
+          {
+            "cells": [
+              "ubiera[m] się",
+              "ubiera[sz] się",
+              "ubierać się"
+            ]
+          },
+          {
+            "cells": [
+              "wraca[m]",
+              "wraca[sz]",
+              "wracać"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d3-e01",
+      "prompt": "budzić się",
+      "options": [
+        {
+          "en": "wake up (to wake up)"
+        },
+        {
+          "en": "I wake up"
+        },
+        {
+          "en": "get up (to get up)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "budzic-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d3-e02",
+      "prompt": "wstawać",
+      "options": [
+        {
+          "en": "I get up"
+        },
+        {
+          "en": "get up (to get up)"
+        },
+        {
+          "en": "wake up (to wake up)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wstawac"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l12-d3-e03",
+      "verb": "wstawać",
+      "meaning": {
+        "en": "to get up"
+      },
+      "person": "ja",
+      "sentence": "Codziennie ___ o siódmej.",
+      "sentenceMeaning": {
+        "en": "Every day I get up at seven."
+      },
+      "acceptedAnswers": [
+        "wstaję"
+      ],
+      "items": [
+        "codziennie",
+        "wstaje",
+        "o-godz",
+        "siodma"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d3-e04",
+      "prompt": "brać",
+      "options": [
+        {
+          "en": "I take, I'll take (in a shop)"
+        },
+        {
+          "en": "do, make (to do, to make)"
+        },
+        {
+          "en": "take (to take)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "brac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d3-e05",
+      "prompt": "myć się",
+      "options": [
+        {
+          "en": "wash (to wash yourself)"
+        },
+        {
+          "en": "I wash (myję zęby: I brush my teeth)"
+        },
+        {
+          "en": "get dressed (to get dressed)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "myc-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d3-e06",
+      "prompt": "ubierać się",
+      "options": [
+        {
+          "en": "I get dressed"
+        },
+        {
+          "en": "get dressed (to get dressed)"
+        },
+        {
+          "en": "wash (to wash yourself)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ubierac-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d3-e07",
+      "prompt": "wcześnie",
+      "options": [
+        {
+          "en": "later"
+        },
+        {
+          "en": "in the morning"
+        },
+        {
+          "en": "early"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wczesnie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-d3-e08",
+      "text": "wstaję wcześnie",
+      "meaning": {
+        "en": "I get up early"
+      },
+      "distractors": [
+        "wstaję późno",
+        "wstajesz wcześnie"
+      ],
+      "items": [
+        "wstaje",
+        "wczesnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d3-e09",
+      "prompt": "odpoczywam",
+      "options": [
+        {
+          "en": "I rest, I relax"
+        },
+        {
+          "en": "I clean, I tidy up"
+        },
+        {
+          "en": "I work"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "odpoczywam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d3-e10",
+      "prompt": "spotykam się",
+      "options": [
+        {
+          "en": "we meet, we see each other"
+        },
+        {
+          "en": "I meet (spotykam się ze znajomymi: I meet friends)"
+        },
+        {
+          "en": "he meets, she meets (spotyka się z kolegą)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spotykam-sie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-d3-e11",
+      "text": "Wieczorem ___ się ze znajomymi.",
+      "meaning": {
+        "en": "In the evening I meet friends."
+      },
+      "gaps": [
+        [
+          "spotykam"
+        ]
+      ],
+      "distractors": [
+        "spotykasz",
+        "budzę"
+      ],
+      "items": [
+        "wieczorem",
+        "spotykam-sie",
+        "ze-znajomymi"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-d3-e12",
+      "prompt": {
+        "en": "I rest in the evening"
+      },
+      "acceptedAnswers": [
+        "wieczorem odpoczywam",
+        "odpoczywam wieczorem"
+      ],
+      "distractors": [
+        "rano",
+        "odpocząć"
+      ],
+      "items": [
+        "wieczorem",
+        "odpoczywam"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-d3-e13",
+      "acceptedAnswers": [
+        "w niedzielę odpoczywam"
+      ],
+      "meaning": {
+        "en": "on Sunday I rest"
+      },
+      "items": [
+        "niedziela",
+        "odpoczywam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-d3-e14",
+      "prompt": {
+        "en": "to get up"
+      },
+      "acceptedAnswers": [
+        "wstawać"
+      ],
+      "items": [
+        "wstawac"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-d3-e15",
+      "pairs": [
+        {
+          "polish": "budzić się",
+          "meaning": {
+            "en": "to wake up"
+          }
+        },
+        {
+          "polish": "wstawać",
+          "meaning": {
+            "en": "to get up"
+          }
+        },
+        {
+          "polish": "brać",
+          "meaning": {
+            "en": "to take"
+          }
+        },
+        {
+          "polish": "myć się",
+          "meaning": {
+            "en": "to wash"
+          }
+        },
+        {
+          "polish": "ubierać się",
+          "meaning": {
+            "en": "to get dressed"
+          }
+        },
+        {
+          "polish": "spać",
+          "meaning": {
+            "en": "to sleep"
+          }
+        }
+      ],
+      "items": [
+        "budzic-sie",
+        "wstawac",
+        "brac",
+        "myc-sie",
+        "ubierac-sie",
+        "spac"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-d3-e16",
+      "lines": [
+        "W tygodniu wstaję wcześnie.",
+        "W sobotę śpię do dziesiątej.",
+        "W niedzielę odpoczywam i spotykam się ze znajomymi."
+      ],
+      "meaning": {
+        "en": "The week and the weekend."
+      },
+      "statements": [
+        {
+          "text": "W tygodniu wstaje wcześnie.",
+          "meaning": {
+            "en": "In the week he gets up early."
+          },
+          "true": true
+        },
+        {
+          "text": "W sobotę wstaje o szóstej.",
+          "meaning": {
+            "en": "On Saturday he gets up at six."
+          },
+          "true": false
+        },
+        {
+          "text": "W niedzielę spotyka się ze znajomymi.",
+          "meaning": {
+            "en": "On Sunday he meets friends."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "w-tygodniu",
+        "wstaje",
+        "wczesnie",
+        "sobota",
+        "spac-spie",
+        "do-godz",
+        "dziesiata",
+        "niedziela",
+        "odpoczywam",
+        "i",
+        "spotykam-sie",
+        "ze-znajomymi"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-d3-e17",
+      "lines": [
+        "Wstajesz wcześnie?",
+        "Tak, o szóstej.",
+        "Dlaczego tak wcześnie?",
+        "Bo o siódmej wychodzę z domu."
+      ],
+      "meaning": {
+        "en": "Why so early?"
+      },
+      "items": [
+        "wstajesz",
+        "wczesnie",
+        "tak",
+        "o-godz",
+        "szosta",
+        "dlaczego",
+        "bo",
+        "siodma",
+        "wychodze",
+        "z-domu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-d3-e18",
+      "prompt": {
+        "en": "to wash and to get dressed"
+      },
+      "acceptedAnswers": [
+        "myć się i ubierać się"
+      ],
+      "distractors": [
+        "myję",
+        "ubieram"
+      ],
+      "items": [
+        "myc-sie",
+        "i",
+        "ubierac-sie"
+      ]
+    }
+  ]
+}

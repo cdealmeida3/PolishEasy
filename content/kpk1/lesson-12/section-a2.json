@@ -1,0 +1,406 @@
+{
+  "id": "kpk1-l12-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Macie ochotę pójść na spektakl?",
+    "meaning": {
+      "en": "Do you feel like going to a show?"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-a2-t01",
+      "before": "kpk1-l12-a2-e01",
+      "title": {
+        "en": "Zapraszam cię na film"
+      },
+      "body": {
+        "en": "To invite a friend: *zapraszam cię na film*, *może pójdziemy na koncert?*, *masz ochotę pójść na spacer?*, *chcesz pójść na kawę?*. To someone you call *pan* or *pani*: *czy chciałby pan pójść do kina?*, *czy chciałaby pani pójść do parku?*. *Co powiesz na…?* is how about…?"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a2-e01",
+      "prompt": "zapraszam cię",
+      "options": [
+        {
+          "en": "thank you"
+        },
+        {
+          "en": "sorry; excuse me"
+        },
+        {
+          "en": "I invite you (zapraszam cię na film: come to a film with me; zapraszam was: several people)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zapraszam-cie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a2-e02",
+      "prompt": "na film",
+      "options": [
+        {
+          "en": "to a film (iść na film)"
+        },
+        {
+          "en": "to the cinema"
+        },
+        {
+          "en": "to a concert"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-film"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-a2-e03",
+      "text": "zapraszam cię na film",
+      "meaning": {
+        "en": "come to a film with me"
+      },
+      "distractors": [
+        "zapraszam was na film",
+        "zapraszam cię na kawę"
+      ],
+      "items": [
+        "zapraszam-cie",
+        "na-film"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a2-e04",
+      "prompt": "może pójdziemy…?",
+      "options": [
+        {
+          "en": "we are going (on foot)"
+        },
+        {
+          "en": "shall we go…? (może pójdziemy na koncert?)"
+        },
+        {
+          "en": "you want (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "moze-pojdziemy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a2-e05",
+      "prompt": "na spacer",
+      "options": [
+        {
+          "en": "shopping (iść na zakupy: to go shopping)"
+        },
+        {
+          "en": "for a coffee (iść na kawę)"
+        },
+        {
+          "en": "for a walk (iść na spacer)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-spacer"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-a2-e06",
+      "prompt": {
+        "en": "shall we go for a walk?"
+      },
+      "acceptedAnswers": [
+        "może pójdziemy na spacer?"
+      ],
+      "distractors": [
+        "idziemy",
+        "kawę"
+      ],
+      "items": [
+        "moze-pojdziemy",
+        "na-spacer"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a2-e07",
+      "prompt": "co powiesz na…?",
+      "options": [
+        {
+          "en": "how about…? (co powiesz na spacer?)"
+        },
+        {
+          "en": "what"
+        },
+        {
+          "en": "how often?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "co-powiesz-na"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a2-e08",
+      "prompt": "do parku",
+      "options": [
+        {
+          "en": "to the cinema"
+        },
+        {
+          "en": "to the park"
+        },
+        {
+          "en": "home (wracam do domu: I go home)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-parku"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-a2-e09",
+      "text": "Co powiesz na ___?",
+      "meaning": {
+        "en": "How about a walk?"
+      },
+      "gaps": [
+        [
+          "spacer"
+        ]
+      ],
+      "distractors": [
+        "kino",
+        "basen"
+      ],
+      "items": [
+        "co-powiesz-na",
+        "na-spacer"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a2-e10",
+      "prompt": "czy chciałby pan…?",
+      "options": [
+        {
+          "en": "I want"
+        },
+        {
+          "en": "do you feel like…? (one friend: masz ochotę pójść?; several people: macie ochotę)"
+        },
+        {
+          "en": "would you like…? (to a man; czy chciałaby pani…? to a woman)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czy-chcialby-pan"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-a2-e11",
+      "acceptedAnswers": [
+        "czy chciałaby pani pójść do parku?"
+      ],
+      "meaning": {
+        "en": "would you like to go to the park? (to a woman)"
+      },
+      "items": [
+        "czy-chcialby-pan",
+        "pojsc",
+        "do-parku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a2-e12",
+      "prompt": "umawiamy się",
+      "options": [
+        {
+          "en": "we arrange to meet, we make a date"
+        },
+        {
+          "en": "we meet, we see each other"
+        },
+        {
+          "en": "we invite you (zapraszamy na kolację: come for supper)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "umawiamy-sie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-a2-e13",
+      "prompt": {
+        "en": "we arrange to meet"
+      },
+      "acceptedAnswers": [
+        "umawiamy się"
+      ],
+      "items": [
+        "umawiamy-sie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-a2-e14",
+      "pairs": [
+        {
+          "polish": "zapraszam cię",
+          "meaning": {
+            "en": "I invite you"
+          }
+        },
+        {
+          "polish": "może pójdziemy…?",
+          "meaning": {
+            "en": "shall we go…?"
+          }
+        },
+        {
+          "polish": "co powiesz na…?",
+          "meaning": {
+            "en": "how about…?"
+          }
+        },
+        {
+          "polish": "na spacer",
+          "meaning": {
+            "en": "for a walk"
+          }
+        },
+        {
+          "polish": "do parku",
+          "meaning": {
+            "en": "to the park"
+          }
+        },
+        {
+          "polish": "na film",
+          "meaning": {
+            "en": "to a film"
+          }
+        }
+      ],
+      "items": [
+        "zapraszam-cie",
+        "moze-pojdziemy",
+        "co-powiesz-na",
+        "na-spacer",
+        "do-parku",
+        "na-film"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-a2-e15",
+      "lines": [
+        "Zapraszam cię na film.",
+        "Może pójdziemy do parku?",
+        "Co powiesz na koncert?"
+      ],
+      "meaning": {
+        "en": "Three invitations."
+      },
+      "statements": [
+        {
+          "text": "To są zaproszenia.",
+          "meaning": {
+            "en": "These are invitations."
+          },
+          "true": true
+        },
+        {
+          "text": "To jest zaproszenie na kawę.",
+          "meaning": {
+            "en": "This is an invitation for a coffee."
+          },
+          "true": false
+        },
+        {
+          "text": "Jedno zaproszenie jest na koncert.",
+          "meaning": {
+            "en": "One invitation is to a concert."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "zapraszam-cie",
+        "na-film",
+        "moze-pojdziemy",
+        "do-parku",
+        "co-powiesz-na",
+        "na-koncert"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-a2-e16",
+      "lines": [
+        "Zapraszam cię na film.",
+        "Dziękuję, ale nie lubię kina.",
+        "To co powiesz na spacer?",
+        "Chętnie!"
+      ],
+      "meaning": {
+        "en": "A film or a walk?"
+      },
+      "items": [
+        "zapraszam-cie",
+        "na-film",
+        "dziekuje",
+        "ale",
+        "nie",
+        "lubic-lubie",
+        "to",
+        "co-powiesz-na",
+        "na-spacer",
+        "chetnie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-a2-e17",
+      "prompt": {
+        "en": "how about a concert?"
+      },
+      "acceptedAnswers": [
+        "co powiesz na koncert?"
+      ],
+      "distractors": [
+        "kino",
+        "pójdziemy"
+      ],
+      "items": [
+        "co-powiesz-na",
+        "na-koncert"
+      ]
+    }
+  ]
+}

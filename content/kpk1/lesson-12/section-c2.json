@@ -1,0 +1,440 @@
+{
+  "id": "kpk1-l12-c2",
+  "section": {
+    "letter": "C",
+    "heading": "W poniedziałek czy we wtorek?",
+    "meaning": {
+      "en": "On Monday or on Tuesday?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-c2-t01",
+      "before": "kpk1-l12-c2-e01",
+      "title": {
+        "en": "Jeden tydzień"
+      },
+      "body": {
+        "en": "A diary for a *tydzień* (a week): a *spotkanie* on Tuesday, an *impreza* on Friday, *obiad u babci* on Sunday. Ask *o której zaczyna się impreza?* (when does the party start?)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c2-e01",
+      "prompt": "tydzień",
+      "options": [
+        {
+          "en": "a week"
+        },
+        {
+          "en": "a day and a night, twenty-four hours"
+        },
+        {
+          "en": "at the weekend"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tydzien"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c2-e02",
+      "prompt": "spotkanie",
+      "options": [
+        {
+          "en": "an invitation (zaproszenia: invitations)"
+        },
+        {
+          "en": "a meeting"
+        },
+        {
+          "en": "an appointment, a visit (mam wizytę u dentysty)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spotkanie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c2-e03",
+      "prompt": "impreza",
+      "options": [
+        {
+          "en": "supper, the evening meal"
+        },
+        {
+          "en": "a show, a performance (in a theatre)"
+        },
+        {
+          "en": "a party"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "impreza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c2-e04",
+      "prompt": "zaczyna się",
+      "options": [
+        {
+          "en": "it starts, it begins"
+        },
+        {
+          "en": "it lasts (lekcja trwa godzinę: the lesson lasts an hour)"
+        },
+        {
+          "en": "he meets, she meets (spotyka się z kolegą)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zaczyna-sie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-c2-e05",
+      "text": "o której zaczyna się impreza?",
+      "meaning": {
+        "en": "what time does the party start?"
+      },
+      "distractors": [
+        "o której zaczyna się film?",
+        "o której zaczyna się lekcja?"
+      ],
+      "items": [
+        "o-ktorej",
+        "zaczyna-sie",
+        "impreza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c2-e06",
+      "prompt": "u babci",
+      "options": [
+        {
+          "en": "at home"
+        },
+        {
+          "en": "at grandma's"
+        },
+        {
+          "en": "home (wracam do domu: I go home)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "u-babci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c2-e07",
+      "prompt": "spotyka się",
+      "options": [
+        {
+          "en": "we meet, we see each other"
+        },
+        {
+          "en": "it starts, it begins"
+        },
+        {
+          "en": "he meets, she meets (spotyka się z kolegą)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "spotyka-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c2-e08",
+      "prompt": "do dentysty",
+      "options": [
+        {
+          "en": "to the dentist's"
+        },
+        {
+          "en": "at the dentist's"
+        },
+        {
+          "en": "to the doctor"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-dentysty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-c2-e09",
+      "prompt": "w galerii",
+      "options": [
+        {
+          "en": "at a supermarket"
+        },
+        {
+          "en": "at the mall (w galerii handlowej)"
+        },
+        {
+          "en": "a shopping centre, a mall"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-galerii"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-c2-e10",
+      "text": "W niedzielę jem obiad ___ babci.",
+      "meaning": {
+        "en": "On Sunday I have dinner at grandma's."
+      },
+      "gaps": [
+        [
+          "u"
+        ]
+      ],
+      "distractors": [
+        "do",
+        "w"
+      ],
+      "items": [
+        "niedziela",
+        "jesc-jem",
+        "obiad",
+        "u-babci"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-c2-e11",
+      "prompt": {
+        "en": "the party starts at eight"
+      },
+      "acceptedAnswers": [
+        "impreza zaczyna się o ósmej"
+      ],
+      "distractors": [
+        "ósma",
+        "spotyka"
+      ],
+      "items": [
+        "impreza",
+        "zaczyna-sie",
+        "o-godz",
+        "osma"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-c2-e12",
+      "acceptedAnswers": [
+        "w czwartek idę do dentysty"
+      ],
+      "meaning": {
+        "en": "on Thursday I am going to the dentist's"
+      },
+      "items": [
+        "czwartek",
+        "isc-ide",
+        "do-dentysty"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-c2-e13",
+      "prompt": {
+        "en": "on Saturday at the mall"
+      },
+      "acceptedAnswers": [
+        "w sobotę w galerii"
+      ],
+      "items": [
+        "sobota",
+        "w-galerii"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-c2-e14",
+      "pairs": [
+        {
+          "polish": "tydzień",
+          "meaning": {
+            "en": "a week"
+          }
+        },
+        {
+          "polish": "spotkanie",
+          "meaning": {
+            "en": "a meeting"
+          }
+        },
+        {
+          "polish": "impreza",
+          "meaning": {
+            "en": "a party"
+          }
+        },
+        {
+          "polish": "u babci",
+          "meaning": {
+            "en": "at grandma's"
+          }
+        },
+        {
+          "polish": "zaczyna się",
+          "meaning": {
+            "en": "it starts"
+          }
+        },
+        {
+          "polish": "w galerii",
+          "meaning": {
+            "en": "at the mall"
+          }
+        }
+      ],
+      "items": [
+        "tydzien",
+        "spotkanie",
+        "impreza",
+        "u-babci",
+        "zaczyna-sie",
+        "w-galerii"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-c2-e15",
+      "lines": [
+        "We wtorek o dziesiątej: spotkanie z szefem.",
+        "W piątek o dwudziestej: impreza.",
+        "W niedzielę o czternastej: obiad u babci.",
+        "W sobotę Ewa spotyka się ze znajomymi w galerii."
+      ],
+      "meaning": {
+        "en": "A week's diary."
+      },
+      "statements": [
+        {
+          "text": "Spotkanie jest we wtorek.",
+          "meaning": {
+            "en": "The meeting is on Tuesday."
+          },
+          "true": true
+        },
+        {
+          "text": "Impreza zaczyna się o ósmej rano.",
+          "meaning": {
+            "en": "The party starts at eight in the morning."
+          },
+          "true": false
+        },
+        {
+          "text": "Obiad u babci jest o drugiej.",
+          "meaning": {
+            "en": "Dinner at grandma's is at two."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "wtorek",
+        "o-godz",
+        "dziesiata",
+        "spotkanie",
+        "szef",
+        "piatek",
+        "dwudziesta",
+        "impreza",
+        "niedziela",
+        "czternasta",
+        "obiad",
+        "u-babci",
+        "sobota",
+        "ewa",
+        "spotyka-sie",
+        "ze-znajomymi",
+        "w-galerii"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-c2-e16",
+      "lines": [
+        "Kiedy jest impreza?",
+        "W piątek wieczorem.",
+        "O której się zaczyna?",
+        "Około dwudziestej."
+      ],
+      "meaning": {
+        "en": "The party."
+      },
+      "items": [
+        "kiedy",
+        "byc-jest",
+        "impreza",
+        "piatek",
+        "wieczorem",
+        "o-ktorej",
+        "zaczyna-sie",
+        "okolo",
+        "dwudziesta"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-c2-e17",
+      "text": "ona spotyka się ze znajomymi",
+      "meaning": {
+        "en": "she meets friends"
+      },
+      "distractors": [
+        "ja spotykam się ze znajomymi",
+        "ona spotyka się z babcią"
+      ],
+      "items": [
+        "ona",
+        "spotyka-sie",
+        "ze-znajomymi"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-c2-e18",
+      "text": "spotkanie jest w środę",
+      "meaning": {
+        "en": "the meeting is on Wednesday"
+      },
+      "distractors": [
+        "spotkanie jest we wtorek",
+        "impreza jest w środę"
+      ],
+      "items": [
+        "spotkanie",
+        "byc-jest",
+        "sroda"
+      ]
+    }
+  ]
+}

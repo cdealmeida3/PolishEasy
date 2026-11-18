@@ -5699,6 +5699,1022 @@
         2,
         2
       ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-132-1",
+      "track": 132,
+      "statement": "Spektakl to bardzo stary teatr japoński.",
+      "meaning": {
+        "en": "The show is a very old Japanese theatre."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-132-2",
+      "track": 132,
+      "statement": "Spektakl jest jutro wieczorem.",
+      "meaning": {
+        "en": "The show is tomorrow evening."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-132-3",
+      "track": 132,
+      "question": "Ile ona ma zaproszeń?",
+      "meaning": {
+        "en": "How many invitations does she have?"
+      },
+      "acceptedAnswers": [
+        "trzy",
+        "3"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-132-4",
+      "track": 132,
+      "question": "Dlaczego chłopak dziś nie może?",
+      "meaning": {
+        "en": "Why can't the boy go today?"
+      },
+      "options": [
+        "Idzie do kina.",
+        "Pracuje.",
+        "Jest chory."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-132-5",
+      "track": 132,
+      "question": "Na jaki film idzie chłopak?",
+      "meaning": {
+        "en": "What film is the boy going to?"
+      },
+      "options": [
+        "Na komedię romantyczną.",
+        "Na film psychologiczny.",
+        "Na film japoński."
+      ],
+      "correctOption": 1,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-132-6",
+      "track": 132,
+      "statement": "Jego siostra ma czas i idzie na spektakl.",
+      "meaning": {
+        "en": "His sister has time and goes to the show."
+      },
+      "answer": true,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-133-1",
+      "track": 133,
+      "question": "Jaki jest spektakl? Bardzo…",
+      "meaning": {
+        "en": "What is the show like? Very… (interesting)"
+      },
+      "acceptedAnswers": [
+        "ciekawy"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-133-2",
+      "track": 133,
+      "question": "„To nie wasza …”",
+      "meaning": {
+        "en": "\"It's none of your…\" (business)"
+      },
+      "acceptedAnswers": [
+        "sprawa"
+      ],
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-134-1",
+      "track": 134,
+      "question": "Jakie zaproszenie słyszysz najpierw?",
+      "meaning": {
+        "en": "Which invitation do you hear first?"
+      },
+      "options": [
+        "Zapraszam was na obiad.",
+        "Zapraszam cię na film.",
+        "Zapraszam cię na kawę."
+      ],
+      "correctOption": 1,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-134-2",
+      "track": 134,
+      "question": "Dokąd lektor zaprasza pana?",
+      "meaning": {
+        "en": "Where does the speaker invite the man?"
+      },
+      "options": [
+        "Do kina.",
+        "Do parku.",
+        "Do teatru."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-134-3",
+      "track": 134,
+      "question": "„Dziękuję za …”",
+      "meaning": {
+        "en": "\"Thank you for the…\" (invitation)"
+      },
+      "acceptedAnswers": [
+        "zaproszenie"
+      ],
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-134-4",
+      "track": 134,
+      "statement": "Lektor mówi: „Przykro mi, ale jutro nie mogę”.",
+      "meaning": {
+        "en": "The speaker says: \"I'm sorry, but I can't tomorrow.\""
+      },
+      "answer": false,
+      "lines": [
+        18,
+        18
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-134-5",
+      "track": 134,
+      "question": "Co słyszysz na końcu?",
+      "meaning": {
+        "en": "What do you hear at the end?"
+      },
+      "options": [
+        "Niestety, nie mam czasu.",
+        "Dlaczego nie?",
+        "Dzięki, ale nie dam rady."
+      ],
+      "correctOption": 2,
+      "lines": [
+        22,
+        22
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-135-1",
+      "track": 135,
+      "statement": "Dziewczyny mają plany na jutro.",
+      "meaning": {
+        "en": "The girls have plans for tomorrow."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-135-2",
+      "track": 135,
+      "question": "Co proponuje chłopak?",
+      "meaning": {
+        "en": "What does the boy suggest?"
+      },
+      "options": [
+        "Klub, piwo, a potem tańce.",
+        "Kino i kolację.",
+        "Spacer po parku."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-135-3",
+      "track": 135,
+      "statement": "Jedna dziewczyna nie pije piwa.",
+      "meaning": {
+        "en": "One of the girls doesn't drink beer."
+      },
+      "answer": true,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-135-4",
+      "track": 135,
+      "statement": "Ona umie tańczyć.",
+      "meaning": {
+        "en": "She can dance."
+      },
+      "answer": false,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-135-5",
+      "track": 135,
+      "question": "Gdzie się spotkają?",
+      "meaning": {
+        "en": "Where will they meet?"
+      },
+      "options": [
+        "W klubie.",
+        "Na rynku.",
+        "Pod teatrem."
+      ],
+      "correctOption": 1,
+      "lines": [
+        15,
+        15
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-136-1",
+      "track": 136,
+      "question": "Co mówi lektor w drugim punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the second item (b)?"
+      },
+      "options": [
+        "Dwunasta.",
+        "Dwudziesta.",
+        "Druga."
+      ],
+      "correctOption": 1,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-136-2",
+      "track": 136,
+      "question": "Co mówi lektor w trzecim punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the third item (c)?"
+      },
+      "options": [
+        "Piętnasta.",
+        "Piąta.",
+        "Szesnasta."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-136-3",
+      "track": 136,
+      "question": "Co mówi lektor w czwartym punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the fourth item (d)?"
+      },
+      "options": [
+        "Szósta.",
+        "Siedemnasta.",
+        "Szesnasta."
+      ],
+      "correctOption": 2,
+      "lines": [
+        4,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-136-4",
+      "track": 136,
+      "question": "Co mówi lektor w piątym punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the fifth item (e)?"
+      },
+      "options": [
+        "Osiemnasta.",
+        "Ósma.",
+        "Siódma."
+      ],
+      "correctOption": 1,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-136-5",
+      "track": 136,
+      "question": "Co mówi lektor w szóstym punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the sixth item (f)?"
+      },
+      "options": [
+        "Dziewiąta.",
+        "Dziesiąta.",
+        "Dziewiętnasta."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-136-6",
+      "track": 136,
+      "question": "Co mówi lektor w siódmym punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the seventh item (g)?"
+      },
+      "options": [
+        "Czwarta.",
+        "Trzynasta.",
+        "Trzecia."
+      ],
+      "correctOption": 2,
+      "lines": [
+        8,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-137-1",
+      "track": 137,
+      "question": "Która jest godzina w pierwszym dialogu?",
+      "meaning": {
+        "en": "What time is it in the first dialogue?"
+      },
+      "options": [
+        "Wpół do dziesiątej.",
+        "Wpół do dziewiątej.",
+        "Dziesiąta."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-137-2",
+      "track": 137,
+      "question": "O której jest pociąg do Lublina?",
+      "meaning": {
+        "en": "What time is the train to Lublin?"
+      },
+      "options": [
+        "O ósmej dwanaście.",
+        "O ósmej dwadzieścia.",
+        "O dziewiątej dwadzieścia."
+      ],
+      "correctOption": 1,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-137-3",
+      "track": 137,
+      "question": "O której ona zwykle je obiad?",
+      "meaning": {
+        "en": "What time does she usually have dinner?"
+      },
+      "options": [
+        "O szóstej.",
+        "O piętnastej.",
+        "O szesnastej."
+      ],
+      "correctOption": 2,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-137-4",
+      "track": 137,
+      "question": "O której jest następna lekcja?",
+      "meaning": {
+        "en": "What time is the next lesson?"
+      },
+      "acceptedAnswers": [
+        "12:45",
+        "o 12:45",
+        "o dwunastej czterdzieści pięć",
+        "dwunasta czterdzieści pięć",
+        "za kwadrans pierwsza"
+      ],
+      "lines": [
+        6,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-138-1",
+      "track": 138,
+      "question": "Co mówi lektor w pierwszym punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the first item (a)?"
+      },
+      "options": [
+        "O pierwszej.",
+        "O piątej."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-138-2",
+      "track": 138,
+      "question": "Co mówi lektor w drugim punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the second item (b)?"
+      },
+      "options": [
+        "O dwudziestej.",
+        "O dwunastej."
+      ],
+      "correctOption": 1,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-138-3",
+      "track": 138,
+      "question": "Co mówi lektor w trzecim punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the third item (c)?"
+      },
+      "options": [
+        "O dziesiątej.",
+        "O dziewiątej."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-138-4",
+      "track": 138,
+      "question": "Co mówi lektor w piątym punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the fifth item (e)?"
+      },
+      "options": [
+        "O piątej.",
+        "O piętnastej."
+      ],
+      "correctOption": 1,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-138-5",
+      "track": 138,
+      "question": "Co mówi lektor w siódmym punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the seventh item (g)?"
+      },
+      "options": [
+        "O czternastej.",
+        "O czwartej."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-139-1",
+      "track": 139,
+      "question": "„O … rano jeszcze śpię”.",
+      "meaning": {
+        "en": "\"At … in the morning I am still asleep.\" (a time)"
+      },
+      "acceptedAnswers": [
+        "piątej",
+        "o piątej",
+        "5",
+        "o 5"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-139-2",
+      "track": 139,
+      "question": "O której jest śniadanie?",
+      "meaning": {
+        "en": "What time is breakfast?"
+      },
+      "acceptedAnswers": [
+        "o siódmej",
+        "siódmej",
+        "7",
+        "o 7"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-139-3",
+      "track": 139,
+      "question": "Na co czeka o ósmej?",
+      "meaning": {
+        "en": "What is the speaker waiting for at eight?"
+      },
+      "options": [
+        "Na autobus.",
+        "Na tramwaj.",
+        "Na kolegę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-139-4",
+      "track": 139,
+      "question": "O której zaczyna pracę?",
+      "meaning": {
+        "en": "What time does the speaker start work?"
+      },
+      "acceptedAnswers": [
+        "o dziewiątej",
+        "dziewiątej",
+        "9",
+        "o 9"
+      ],
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-139-5",
+      "track": 139,
+      "question": "Co robi w południe?",
+      "meaning": {
+        "en": "What does the speaker do at noon?"
+      },
+      "options": [
+        "Kończy pracę.",
+        "Idzie na lunch.",
+        "Wraca do domu."
+      ],
+      "correctOption": 1,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-139-6",
+      "track": 139,
+      "question": "O której kończy pracę?",
+      "meaning": {
+        "en": "What time does the speaker finish work?"
+      },
+      "options": [
+        "O szóstej.",
+        "O osiemnastej.",
+        "O szesnastej."
+      ],
+      "correctOption": 2,
+      "lines": [
+        6,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-139-7",
+      "track": 139,
+      "statement": "O osiemnastej wraca do domu.",
+      "meaning": {
+        "en": "At 6 p.m. the speaker goes home."
+      },
+      "answer": true,
+      "lines": [
+        8,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-139-8",
+      "track": 139,
+      "question": "Co ogląda o dwudziestej?",
+      "meaning": {
+        "en": "What does the speaker watch at 8 p.m.?"
+      },
+      "options": [
+        "Serwis informacyjny.",
+        "Serial.",
+        "Film."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        11
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-140-1",
+      "track": 140,
+      "question": "Pierwszy dzień: „W …”",
+      "meaning": {
+        "en": "The first day: \"On…\" (Monday)"
+      },
+      "acceptedAnswers": [
+        "poniedziałek"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-140-2",
+      "track": 140,
+      "question": "Co słyszysz po „w środę”?",
+      "meaning": {
+        "en": "What do you hear after \"w środę\"?"
+      },
+      "options": [
+        "We wtorek.",
+        "W czwartek.",
+        "W piątek."
+      ],
+      "correctOption": 1,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-140-3",
+      "track": 140,
+      "statement": "Na końcu lektor mówi: w sobotę.",
+      "meaning": {
+        "en": "At the end the speaker says: on Saturday."
+      },
+      "answer": false,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-141-1",
+      "track": 141,
+      "question": "Pierwszy czasownik to…",
+      "meaning": {
+        "en": "The first verb is… (to wake up)"
+      },
+      "acceptedAnswers": [
+        "budzić się"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-141-2",
+      "track": 141,
+      "question": "Co słyszysz po „wstawać”?",
+      "meaning": {
+        "en": "What do you hear after \"wstawać\"?"
+      },
+      "options": [
+        "Jeść śniadanie.",
+        "Brać prysznic.",
+        "Ubierać się."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-141-3",
+      "track": 141,
+      "statement": "Siódmy czasownik to „wychodzić z domu”.",
+      "meaning": {
+        "en": "The seventh verb is \"to leave home\"."
+      },
+      "answer": true,
+      "lines": [
+        9,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-141-4",
+      "track": 141,
+      "question": "Co słyszysz na końcu?",
+      "meaning": {
+        "en": "What do you hear at the end?"
+      },
+      "options": [
+        "Sprzątać.",
+        "Iść spać.",
+        "Wracać do domu."
+      ],
+      "correctOption": 1,
+      "lines": [
+        17,
+        17
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-142-1",
+      "track": 142,
+      "statement": "Budzik dzwoni i on wstaje.",
+      "meaning": {
+        "en": "The alarm rings and he gets up."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-142-2",
+      "track": 142,
+      "question": "Co je na śniadanie?",
+      "meaning": {
+        "en": "What does he have for breakfast?"
+      },
+      "options": [
+        "Dwa tosty.",
+        "Jajecznicę.",
+        "Płatki."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-142-3",
+      "track": 142,
+      "question": "Kogo widzi w lustrze?",
+      "meaning": {
+        "en": "Whom does he see in the mirror?"
+      },
+      "options": [
+        "Lekarza.",
+        "Typowego urzędnika.",
+        "Studenta."
+      ],
+      "correctOption": 1,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-142-4",
+      "track": 142,
+      "statement": "Po pracy idzie na basen.",
+      "meaning": {
+        "en": "After work he goes to the swimming pool."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l12-142-5",
+      "track": 142,
+      "question": "Z kim spotyka się wieczorem?",
+      "meaning": {
+        "en": "Whom does he meet in the evening?"
+      },
+      "options": [
+        "Z mamą.",
+        "Z szefem.",
+        "Z bratem i jego kolegami."
+      ],
+      "correctOption": 2,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l12-142-6",
+      "track": 142,
+      "statement": "Dzień kończy się serialem, winem i snem.",
+      "meaning": {
+        "en": "The day ends with a series, wine and sleep."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-143-1",
+      "track": 143,
+      "question": "Co mówi lektor w trzecim punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the third item (c)? (a time)"
+      },
+      "acceptedAnswers": [
+        "o czternastej",
+        "czternastej",
+        "14",
+        "o 14"
+      ],
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-143-2",
+      "track": 143,
+      "question": "Co mówi lektor w piątym punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the fifth item (e)? (a time)"
+      },
+      "acceptedAnswers": [
+        "o drugiej",
+        "drugiej",
+        "2",
+        "o 2"
+      ],
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-143-3",
+      "track": 143,
+      "question": "Co mówi lektor w szóstym punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the sixth item (f)? (a time)"
+      },
+      "acceptedAnswers": [
+        "o szóstej",
+        "szóstej",
+        "6",
+        "o 6"
+      ],
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l12-143-4",
+      "track": 143,
+      "question": "Co mówi lektor w ósmym punkcie?",
+      "meaning": {
+        "en": "What does the speaker say in the eighth item (h)? (a time)"
+      },
+      "acceptedAnswers": [
+        "o dwudziestej",
+        "dwudziestej",
+        "20",
+        "o 20"
+      ],
+      "lines": [
+        9,
+        9
+      ]
     }
   ]
 }

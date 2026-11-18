@@ -1,0 +1,478 @@
+{
+  "id": "kpk1-l12-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Macie ochotę pójść na spektakl?",
+    "meaning": {
+      "en": "Do you feel like going to a show?"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-a4-t01",
+      "before": "kpk1-l12-a4-e01",
+      "title": {
+        "en": "Przykro mi"
+      },
+      "body": {
+        "en": "Saying no politely: *niestety, nie mam czasu*, *przykro mi, ale dziś nie mogę*, *przepraszam, ale jestem zajęty* (*zajęta* for a woman). To a friend: *dzięki, ale nie dam rady*."
+      }
+    },
+    {
+      "id": "kpk1-l12-a4-t02",
+      "before": "kpk1-l12-a4-e05",
+      "title": {
+        "en": "Dokąd? Na co?"
+      },
+      "body": {
+        "en": "*Dokąd?* is where to: *do* and a place in the genitive, *do teatru*, *do kina*, *do kawiarni*, *do parku*. *Na co?* is what to: *na* and an event in the accusative, *na przedstawienie*, *na film*, *na kawę*, *na spacer*."
+      },
+      "table": {
+        "title": {
+          "en": "Dokąd? do + dopełniacz. Na co? na + biernik."
+        },
+        "columns": [
+          {
+            "header": "dokąd?"
+          },
+          {
+            "header": "na co?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "do teatr[u]",
+              "na przedstawieni[e]"
+            ]
+          },
+          {
+            "cells": [
+              "do kin[a]",
+              "na film"
+            ]
+          },
+          {
+            "cells": [
+              "do kawiarn[i]",
+              "na kaw[ę]"
+            ]
+          },
+          {
+            "cells": [
+              "do park[u]",
+              "na spacer"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a4-e01",
+      "prompt": "przykro mi",
+      "options": [
+        {
+          "en": "thank you"
+        },
+        {
+          "en": "no problem (answer to \"sorry\")"
+        },
+        {
+          "en": "I'm sorry (przykro mi, ale nie mogę)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przykro-mi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a4-e02",
+      "prompt": "nie mam czasu",
+      "options": [
+        {
+          "en": "I have no time"
+        },
+        {
+          "en": "I have no money"
+        },
+        {
+          "en": "nothing new"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nie-mam-czasu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-a4-e03",
+      "text": "przykro mi, ale dziś nie mogę",
+      "meaning": {
+        "en": "I'm sorry, but I can't today"
+      },
+      "distractors": [
+        "przykro mi, ale jutro nie mogę",
+        "przykro mi, ale dziś mogę"
+      ],
+      "items": [
+        "przykro-mi",
+        "ale",
+        "dzis",
+        "nie",
+        "moc-moge"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a4-e04",
+      "prompt": "nie dam rady",
+      "options": [
+        {
+          "en": "I don't like it"
+        },
+        {
+          "en": "I can't make it"
+        },
+        {
+          "en": "no problem (answer to \"sorry\")"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nie-dam-rady"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a4-e05",
+      "prompt": "dokąd?",
+      "options": [
+        {
+          "en": "where"
+        },
+        {
+          "en": "when"
+        },
+        {
+          "en": "where to?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dokad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a4-e06",
+      "prompt": "do teatru",
+      "options": [
+        {
+          "en": "to the theatre"
+        },
+        {
+          "en": "in a theatre"
+        },
+        {
+          "en": "to the cinema"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-teatru"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-a4-e07",
+      "text": "___ idziesz? Do teatru.",
+      "meaning": {
+        "en": "Where are you going? To the theatre."
+      },
+      "gaps": [
+        [
+          "Dokąd"
+        ]
+      ],
+      "distractors": [
+        "Kiedy",
+        "Jak"
+      ],
+      "items": [
+        "dokad",
+        "isc-idziesz",
+        "do-teatru"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a4-e08",
+      "prompt": "do kawiarni",
+      "options": [
+        {
+          "en": "a café"
+        },
+        {
+          "en": "to a café"
+        },
+        {
+          "en": "to a club"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-kawiarni"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a4-e09",
+      "prompt": "na przedstawienie",
+      "options": [
+        {
+          "en": "an invitation (zaproszenia: invitations)"
+        },
+        {
+          "en": "shopping (iść na zakupy: to go shopping)"
+        },
+        {
+          "en": "to a show, to a play"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-przedstawienie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-a4-e10",
+      "prompt": "na co?",
+      "options": [
+        {
+          "en": "what to? (na co idziesz?: what are you going to?)"
+        },
+        {
+          "en": "where to?"
+        },
+        {
+          "en": "what"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-co"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-a4-e11",
+      "prompt": {
+        "en": "to the theatre, to a play"
+      },
+      "acceptedAnswers": [
+        "do teatru, na przedstawienie"
+      ],
+      "distractors": [
+        "kina",
+        "spektakl"
+      ],
+      "items": [
+        "do-teatru",
+        "na-przedstawienie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-a4-e12",
+      "acceptedAnswers": [
+        "niestety, nie mam czasu"
+      ],
+      "meaning": {
+        "en": "unfortunately, I have no time"
+      },
+      "items": [
+        "niestety",
+        "nie-mam-czasu"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-a4-e13",
+      "prompt": {
+        "en": "I'm sorry, but I can't make it"
+      },
+      "acceptedAnswers": [
+        "przykro mi, ale nie dam rady"
+      ],
+      "items": [
+        "przykro-mi",
+        "ale",
+        "nie-dam-rady"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-a4-e14",
+      "pairs": [
+        {
+          "polish": "dokąd?",
+          "meaning": {
+            "en": "where to?"
+          }
+        },
+        {
+          "polish": "na co?",
+          "meaning": {
+            "en": "what to?"
+          }
+        },
+        {
+          "polish": "do teatru",
+          "meaning": {
+            "en": "to the theatre"
+          }
+        },
+        {
+          "polish": "do kawiarni",
+          "meaning": {
+            "en": "to a café"
+          }
+        },
+        {
+          "polish": "na przedstawienie",
+          "meaning": {
+            "en": "to a show"
+          }
+        },
+        {
+          "polish": "przykro mi",
+          "meaning": {
+            "en": "I'm sorry"
+          }
+        }
+      ],
+      "items": [
+        "dokad",
+        "na-co",
+        "do-teatru",
+        "do-kawiarni",
+        "na-przedstawienie",
+        "przykro-mi"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-a4-e15",
+      "lines": [
+        "Chcesz pójść do kawiarni?",
+        "Przykro mi, ale nie mam czasu.",
+        "A jutro?",
+        "Jutro mogę."
+      ],
+      "meaning": {
+        "en": "A café tomorrow."
+      },
+      "statements": [
+        {
+          "text": "Dziś nie ma czasu.",
+          "meaning": {
+            "en": "Today he has no time."
+          },
+          "true": true
+        },
+        {
+          "text": "Jutro też nie może.",
+          "meaning": {
+            "en": "He can't tomorrow either."
+          },
+          "true": false
+        },
+        {
+          "text": "Ona chce pójść do kawiarni.",
+          "meaning": {
+            "en": "She wants to go to a café."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "chciec-chcesz",
+        "pojsc",
+        "do-kawiarni",
+        "przykro-mi",
+        "ale",
+        "nie-mam-czasu",
+        "a",
+        "jutro",
+        "moc-moge"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-a4-e16",
+      "lines": [
+        "Masz ochotę pójść do teatru?",
+        "Dzięki, ale nie dam rady.",
+        "Dlaczego?",
+        "Jestem zajęty."
+      ],
+      "meaning": {
+        "en": "Not tonight."
+      },
+      "items": [
+        "masz-ochote",
+        "pojsc",
+        "do-teatru",
+        "dzieki",
+        "ale",
+        "nie-dam-rady",
+        "dlaczego",
+        "byc-jestem",
+        "zajety"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-a4-e17",
+      "text": "umawiamy się na kawę",
+      "meaning": {
+        "en": "we arrange to meet for a coffee"
+      },
+      "distractors": [
+        "umawiamy się na film",
+        "zapraszam cię na kawę"
+      ],
+      "items": [
+        "umawiamy-sie",
+        "na-kawe"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-a4-e18",
+      "text": "na co idziesz?",
+      "meaning": {
+        "en": "what are you going to?"
+      },
+      "distractors": [
+        "dokąd idziesz?",
+        "na co idziecie?"
+      ],
+      "items": [
+        "na-co",
+        "isc-idziesz"
+      ]
+    }
+  ]
+}

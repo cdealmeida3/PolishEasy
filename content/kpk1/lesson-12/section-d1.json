@@ -1,0 +1,419 @@
+{
+  "id": "kpk1-l12-d1",
+  "section": {
+    "letter": "D",
+    "heading": "Rutyna dnia",
+    "meaning": {
+      "en": "A daily routine"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l12-d1-t01",
+      "before": "kpk1-l12-d1-e01",
+      "title": {
+        "en": "Rano"
+      },
+      "body": {
+        "en": "A morning: *budzę się* (I wake up), *wstaję* (I get up), *biorę prysznic*, *myję zęby*, *ubieram się*, *jem śniadanie* and *wychodzę z domu*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d1-e01",
+      "prompt": "budzę się",
+      "options": [
+        {
+          "en": "I get up"
+        },
+        {
+          "en": "I sleep, I am asleep"
+        },
+        {
+          "en": "I wake up"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "budze-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d1-e02",
+      "prompt": "wstaję",
+      "options": [
+        {
+          "en": "I get up"
+        },
+        {
+          "en": "I wake up"
+        },
+        {
+          "en": "I get dressed"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wstaje"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-d1-e03",
+      "text": "budzę się o siódmej",
+      "meaning": {
+        "en": "I wake up at seven"
+      },
+      "distractors": [
+        "wstaję o siódmej",
+        "budzę się o szóstej"
+      ],
+      "items": [
+        "budze-sie",
+        "o-godz",
+        "siodma"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d1-e04",
+      "prompt": "prysznic",
+      "options": [
+        {
+          "en": "a bath"
+        },
+        {
+          "en": "a shower (biorę prysznic: I have a shower)"
+        },
+        {
+          "en": "breakfast"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "prysznic"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l12-d1-e05",
+      "prompt": {
+        "en": "I have a shower"
+      },
+      "acceptedAnswers": [
+        "biorę prysznic"
+      ],
+      "distractors": [
+        "bierzesz",
+        "śniadanie"
+      ],
+      "items": [
+        "brac-biore",
+        "prysznic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d1-e06",
+      "prompt": "myję",
+      "options": [
+        {
+          "en": "I eat, I am eating"
+        },
+        {
+          "en": "I drink, I am drinking"
+        },
+        {
+          "en": "I wash (myję zęby: I brush my teeth)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "myje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d1-e07",
+      "prompt": "zęby",
+      "options": [
+        {
+          "en": "teeth"
+        },
+        {
+          "en": "so that; to (żeby pracować: to work)"
+        },
+        {
+          "en": "hands"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zeby-teeth"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l12-d1-e08",
+      "text": "Rano ___ zęby.",
+      "meaning": {
+        "en": "In the morning I brush my teeth."
+      },
+      "gaps": [
+        [
+          "myję"
+        ]
+      ],
+      "distractors": [
+        "myjesz",
+        "jem"
+      ],
+      "items": [
+        "rano",
+        "myje",
+        "zeby-teeth"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d1-e09",
+      "prompt": "ubieram się",
+      "options": [
+        {
+          "en": "I wake up"
+        },
+        {
+          "en": "I get dressed"
+        },
+        {
+          "en": "I come back, I go back"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ubieram-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d1-e10",
+      "prompt": "wychodzę",
+      "options": [
+        {
+          "en": "I come back, I go back"
+        },
+        {
+          "en": "I am going (on foot)"
+        },
+        {
+          "en": "I go out, I leave (wychodzę z domu: I leave home)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wychodze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l12-d1-e11",
+      "prompt": "z domu",
+      "options": [
+        {
+          "en": "from home (wychodzę z domu: I leave home)"
+        },
+        {
+          "en": "home (wracam do domu: I go home)"
+        },
+        {
+          "en": "at home"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-domu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l12-d1-e12",
+      "acceptedAnswers": [
+        "o ósmej wychodzę z domu"
+      ],
+      "meaning": {
+        "en": "at eight I leave home"
+      },
+      "items": [
+        "o-godz",
+        "osma",
+        "wychodze",
+        "z-domu"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l12-d1-e13",
+      "prompt": {
+        "en": "I get up at six"
+      },
+      "acceptedAnswers": [
+        "wstaję o szóstej",
+        "o szóstej wstaję"
+      ],
+      "items": [
+        "wstaje",
+        "o-godz",
+        "szosta"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l12-d1-e14",
+      "pairs": [
+        {
+          "polish": "budzę się",
+          "meaning": {
+            "en": "I wake up"
+          }
+        },
+        {
+          "polish": "wstaję",
+          "meaning": {
+            "en": "I get up"
+          }
+        },
+        {
+          "polish": "biorę prysznic",
+          "meaning": {
+            "en": "I have a shower"
+          }
+        },
+        {
+          "polish": "myję zęby",
+          "meaning": {
+            "en": "I brush my teeth"
+          }
+        },
+        {
+          "polish": "ubieram się",
+          "meaning": {
+            "en": "I get dressed"
+          }
+        },
+        {
+          "polish": "wychodzę z domu",
+          "meaning": {
+            "en": "I leave home"
+          }
+        }
+      ],
+      "items": [
+        "budze-sie",
+        "wstaje",
+        "brac-biore",
+        "prysznic",
+        "myje",
+        "zeby-teeth",
+        "ubieram-sie",
+        "wychodze",
+        "z-domu"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l12-d1-e15",
+      "lines": [
+        "Budzik dzwoni o szóstej.",
+        "Wstaję o wpół do siódmej.",
+        "O siódmej piętnaście wychodzę z domu."
+      ],
+      "meaning": {
+        "en": "An early morning."
+      },
+      "statements": [
+        {
+          "text": "Budzi się o szóstej.",
+          "meaning": {
+            "en": "She wakes up at six."
+          },
+          "true": true
+        },
+        {
+          "text": "Wstaje o siódmej.",
+          "meaning": {
+            "en": "She gets up at seven."
+          },
+          "true": false
+        },
+        {
+          "text": "Wychodzi z domu po siódmej.",
+          "meaning": {
+            "en": "She leaves home after seven."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "budzik",
+        "o-godz",
+        "szosta",
+        "wstaje",
+        "wpol-do",
+        "siodma",
+        "pietnascie",
+        "wychodze",
+        "z-domu"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l12-d1-e16",
+      "lines": [
+        "Najpierw się budzę.",
+        "Potem wstaję i biorę prysznic.",
+        "Potem się ubieram.",
+        "O ósmej wychodzę z domu."
+      ],
+      "meaning": {
+        "en": "First things first."
+      },
+      "items": [
+        "najpierw",
+        "budze-sie",
+        "potem",
+        "wstaje",
+        "i",
+        "brac-biore",
+        "prysznic",
+        "ubieram-sie",
+        "o-godz",
+        "osma",
+        "wychodze",
+        "z-domu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l12-d1-e17",
+      "text": "myję zęby",
+      "meaning": {
+        "en": "I brush my teeth"
+      },
+      "distractors": [
+        "myję się",
+        "jem śniadanie"
+      ],
+      "items": [
+        "myje",
+        "zeby-teeth"
+      ]
+    }
+  ]
+}

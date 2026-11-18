@@ -1,0 +1,1036 @@
+{
+  "items": [
+    {
+      "id": "spektakl",
+      "text": "spektakl",
+      "meaning": {
+        "en": "a show, a performance (in a theatre)"
+      }
+    },
+    {
+      "id": "zaproszenie",
+      "text": "zaproszenie",
+      "meaning": {
+        "en": "an invitation (zaproszenia: invitations)"
+      },
+      "forms": [
+        "zaproszenia"
+      ]
+    },
+    {
+      "id": "pojsc",
+      "text": "pójść",
+      "meaning": {
+        "en": "go (to go, once: chcesz pójść?)"
+      }
+    },
+    {
+      "id": "masz-ochote",
+      "text": "masz ochotę",
+      "meaning": {
+        "en": "do you feel like…? (one friend: masz ochotę pójść?; several people: macie ochotę)"
+      },
+      "forms": [
+        "macie ochotę"
+      ]
+    },
+    {
+      "id": "randka",
+      "text": "randka",
+      "meaning": {
+        "en": "a date (ma randkę: he has a date)"
+      },
+      "forms": [
+        "randkę"
+      ]
+    },
+    {
+      "id": "teatr",
+      "text": "teatr",
+      "meaning": {
+        "en": "a theatre"
+      }
+    },
+    {
+      "id": "to-nie-wasza-sprawa",
+      "text": "to nie wasza sprawa",
+      "meaning": {
+        "en": "it's none of your business (to several people)"
+      }
+    },
+    {
+      "id": "komedia-romantyczna",
+      "text": "komedia romantyczna",
+      "meaning": {
+        "en": "a romantic comedy"
+      },
+      "forms": [
+        "komedię romantyczną"
+      ]
+    },
+    {
+      "id": "zapraszam-cie",
+      "text": "zapraszam cię",
+      "meaning": {
+        "en": "I invite you (zapraszam cię na film: come to a film with me; zapraszam was: several people)"
+      },
+      "forms": [
+        "zapraszam was"
+      ]
+    },
+    {
+      "id": "na-film",
+      "text": "na film",
+      "meaning": {
+        "en": "to a film (iść na film)"
+      }
+    },
+    {
+      "id": "moze-pojdziemy",
+      "text": "może pójdziemy…?",
+      "meaning": {
+        "en": "shall we go…? (może pójdziemy na koncert?)"
+      }
+    },
+    {
+      "id": "na-spacer",
+      "text": "na spacer",
+      "meaning": {
+        "en": "for a walk (iść na spacer)"
+      }
+    },
+    {
+      "id": "co-powiesz-na",
+      "text": "co powiesz na…?",
+      "meaning": {
+        "en": "how about…? (co powiesz na spacer?)"
+      }
+    },
+    {
+      "id": "do-parku",
+      "text": "do parku",
+      "meaning": {
+        "en": "to the park"
+      }
+    },
+    {
+      "id": "czy-chcialby-pan",
+      "text": "czy chciałby pan…?",
+      "meaning": {
+        "en": "would you like…? (to a man; czy chciałaby pani…? to a woman)"
+      },
+      "register": "formal",
+      "forms": [
+        "czy chciałaby pani…?"
+      ]
+    },
+    {
+      "id": "umawiamy-sie",
+      "text": "umawiamy się",
+      "meaning": {
+        "en": "we arrange to meet, we make a date"
+      }
+    },
+    {
+      "id": "dziekuje-za-zaproszenie",
+      "text": "dziękuję za zaproszenie",
+      "meaning": {
+        "en": "thank you for the invitation"
+      }
+    },
+    {
+      "id": "z-przyjemnoscia",
+      "text": "z przyjemnością",
+      "meaning": {
+        "en": "with pleasure"
+      }
+    },
+    {
+      "id": "swietny",
+      "text": "świetny",
+      "meaning": {
+        "en": "great, excellent (świetny, świetna, świetne)"
+      },
+      "forms": [
+        "świetna",
+        "świetne"
+      ]
+    },
+    {
+      "id": "pomysl",
+      "text": "pomysł",
+      "meaning": {
+        "en": "an idea (świetny pomysł!: a great idea!)"
+      }
+    },
+    {
+      "id": "jasne",
+      "text": "jasne!",
+      "meaning": {
+        "en": "sure! of course!"
+      }
+    },
+    {
+      "id": "dlaczego-nie",
+      "text": "dlaczego nie?",
+      "meaning": {
+        "en": "why not?"
+      }
+    },
+    {
+      "id": "na-mecz",
+      "text": "na mecz",
+      "meaning": {
+        "en": "to a match (a football match)"
+      }
+    },
+    {
+      "id": "przykro-mi",
+      "text": "przykro mi",
+      "meaning": {
+        "en": "I'm sorry (przykro mi, ale nie mogę)"
+      }
+    },
+    {
+      "id": "nie-mam-czasu",
+      "text": "nie mam czasu",
+      "meaning": {
+        "en": "I have no time"
+      }
+    },
+    {
+      "id": "nie-dam-rady",
+      "text": "nie dam rady",
+      "meaning": {
+        "en": "I can't make it"
+      }
+    },
+    {
+      "id": "dokad",
+      "text": "dokąd?",
+      "meaning": {
+        "en": "where to?"
+      }
+    },
+    {
+      "id": "do-teatru",
+      "text": "do teatru",
+      "meaning": {
+        "en": "to the theatre"
+      }
+    },
+    {
+      "id": "do-kawiarni",
+      "text": "do kawiarni",
+      "meaning": {
+        "en": "to a café"
+      }
+    },
+    {
+      "id": "na-przedstawienie",
+      "text": "na przedstawienie",
+      "meaning": {
+        "en": "to a show, to a play"
+      }
+    },
+    {
+      "id": "na-co",
+      "text": "na co?",
+      "meaning": {
+        "en": "what to? (na co idziesz?: what are you going to?)"
+      }
+    },
+    {
+      "id": "potanczyc",
+      "text": "potańczyć",
+      "meaning": {
+        "en": "dance a bit (to have a dance)"
+      }
+    },
+    {
+      "id": "nie-mam-planow",
+      "text": "nie mam planów",
+      "meaning": {
+        "en": "I have no plans"
+      }
+    },
+    {
+      "id": "kto-jeszcze",
+      "text": "kto jeszcze?",
+      "meaning": {
+        "en": "who else?"
+      }
+    },
+    {
+      "id": "cos-innego",
+      "text": "coś innego",
+      "meaning": {
+        "en": "something else"
+      }
+    },
+    {
+      "id": "gdzie-sie-spotkamy",
+      "text": "gdzie się spotkamy?",
+      "meaning": {
+        "en": "where shall we meet?"
+      }
+    },
+    {
+      "id": "na-rynku",
+      "text": "na rynku",
+      "meaning": {
+        "en": "in the market square"
+      }
+    },
+    {
+      "id": "pod-pomnikiem",
+      "text": "pod pomnikiem",
+      "meaning": {
+        "en": "by the monument (under the statue)"
+      }
+    },
+    {
+      "id": "bez-dyskusji",
+      "text": "bez dyskusji",
+      "meaning": {
+        "en": "no arguing, and that's that"
+      }
+    },
+    {
+      "id": "godzina",
+      "text": "godzina",
+      "meaning": {
+        "en": "an hour; the time (która godzina?: what time is it?)"
+      },
+      "forms": [
+        "godzinę",
+        "godzinie"
+      ]
+    },
+    {
+      "id": "ktora-jest-godzina",
+      "text": "która jest godzina?",
+      "meaning": {
+        "en": "what time is it?"
+      }
+    },
+    {
+      "id": "pierwsza",
+      "text": "pierwsza",
+      "meaning": {
+        "en": "one o'clock (jest pierwsza: it's one; o pierwszej: at one)"
+      },
+      "forms": [
+        "pierwszej"
+      ]
+    },
+    {
+      "id": "druga",
+      "text": "druga",
+      "meaning": {
+        "en": "two o'clock (jest druga; o drugiej: at two)"
+      },
+      "forms": [
+        "drugiej"
+      ]
+    },
+    {
+      "id": "trzecia",
+      "text": "trzecia",
+      "meaning": {
+        "en": "three o'clock (jest trzecia; o trzeciej: at three)"
+      },
+      "forms": [
+        "trzeciej"
+      ]
+    },
+    {
+      "id": "czwarta",
+      "text": "czwarta",
+      "meaning": {
+        "en": "four o'clock (jest czwarta; o czwartej: at four)"
+      },
+      "forms": [
+        "czwartej"
+      ]
+    },
+    {
+      "id": "piata",
+      "text": "piąta",
+      "meaning": {
+        "en": "five o'clock (jest piąta; o piątej: at five)"
+      },
+      "forms": [
+        "piątej"
+      ]
+    },
+    {
+      "id": "szosta",
+      "text": "szósta",
+      "meaning": {
+        "en": "six o'clock (jest szósta; o szóstej: at six)"
+      },
+      "forms": [
+        "szóstej"
+      ]
+    },
+    {
+      "id": "siodma",
+      "text": "siódma",
+      "meaning": {
+        "en": "seven o'clock (jest siódma; o siódmej: at seven)"
+      },
+      "forms": [
+        "siódmej"
+      ]
+    },
+    {
+      "id": "osma",
+      "text": "ósma",
+      "meaning": {
+        "en": "eight o'clock (jest ósma; o ósmej: at eight)"
+      },
+      "forms": [
+        "ósmej"
+      ]
+    },
+    {
+      "id": "dziewiata",
+      "text": "dziewiąta",
+      "meaning": {
+        "en": "nine o'clock (jest dziewiąta; o dziewiątej: at nine)"
+      },
+      "forms": [
+        "dziewiątej"
+      ]
+    },
+    {
+      "id": "dziesiata",
+      "text": "dziesiąta",
+      "meaning": {
+        "en": "ten o'clock (jest dziesiąta; o dziesiątej: at ten)"
+      },
+      "forms": [
+        "dziesiątej"
+      ]
+    },
+    {
+      "id": "jedenasta",
+      "text": "jedenasta",
+      "meaning": {
+        "en": "eleven o'clock (jest jedenasta; o jedenastej: at eleven)"
+      },
+      "forms": [
+        "jedenastej"
+      ]
+    },
+    {
+      "id": "dwunasta",
+      "text": "dwunasta",
+      "meaning": {
+        "en": "twelve o'clock (jest dwunasta; o dwunastej: at twelve)"
+      },
+      "forms": [
+        "dwunastej"
+      ]
+    },
+    {
+      "id": "o-godz",
+      "text": "o",
+      "meaning": {
+        "en": "at (with the time: o ósmej, at eight)"
+      }
+    },
+    {
+      "id": "o-ktorej",
+      "text": "o której?",
+      "meaning": {
+        "en": "at what time? (o której godzinie?)"
+      },
+      "forms": [
+        "o której godzinie?"
+      ]
+    },
+    {
+      "id": "trzynasta",
+      "text": "trzynasta",
+      "meaning": {
+        "en": "1 p.m., thirteen hundred (jest trzynasta; o trzynastej)"
+      },
+      "forms": [
+        "trzynastej"
+      ]
+    },
+    {
+      "id": "czternasta",
+      "text": "czternasta",
+      "meaning": {
+        "en": "2 p.m., fourteen hundred (jest czternasta; o czternastej)"
+      },
+      "forms": [
+        "czternastej"
+      ]
+    },
+    {
+      "id": "pietnasta",
+      "text": "piętnasta",
+      "meaning": {
+        "en": "3 p.m., fifteen hundred (jest piętnasta; o piętnastej)"
+      },
+      "forms": [
+        "piętnastej"
+      ]
+    },
+    {
+      "id": "szesnasta",
+      "text": "szesnasta",
+      "meaning": {
+        "en": "4 p.m., sixteen hundred (jest szesnasta; o szesnastej)"
+      },
+      "forms": [
+        "szesnastej"
+      ]
+    },
+    {
+      "id": "siedemnasta",
+      "text": "siedemnasta",
+      "meaning": {
+        "en": "5 p.m., seventeen hundred (jest siedemnasta; o siedemnastej)"
+      },
+      "forms": [
+        "siedemnastej"
+      ]
+    },
+    {
+      "id": "osiemnasta",
+      "text": "osiemnasta",
+      "meaning": {
+        "en": "6 p.m., eighteen hundred (jest osiemnasta; o osiemnastej)"
+      },
+      "forms": [
+        "osiemnastej"
+      ]
+    },
+    {
+      "id": "dziewietnasta",
+      "text": "dziewiętnasta",
+      "meaning": {
+        "en": "7 p.m., nineteen hundred (jest dziewiętnasta; o dziewiętnastej)"
+      },
+      "forms": [
+        "dziewiętnastej"
+      ]
+    },
+    {
+      "id": "dwudziesta",
+      "text": "dwudziesta",
+      "meaning": {
+        "en": "8 p.m., twenty hundred (o dwudziestej; dwudziesta pierwsza: 9 p.m.)"
+      },
+      "forms": [
+        "dwudziestej"
+      ]
+    },
+    {
+      "id": "kwadrans",
+      "text": "kwadrans",
+      "meaning": {
+        "en": "a quarter of an hour, fifteen minutes"
+      },
+      "register": "informal"
+    },
+    {
+      "id": "po-godz",
+      "text": "po",
+      "meaning": {
+        "en": "past (with the time: pięć po ósmej, five past eight)"
+      }
+    },
+    {
+      "id": "za-godz",
+      "text": "za",
+      "meaning": {
+        "en": "to (with the time: za pięć ósma, five to eight)"
+      }
+    },
+    {
+      "id": "wpol-do",
+      "text": "wpół do",
+      "meaning": {
+        "en": "half past, half to the next hour (wpół do drugiej: half past one)"
+      },
+      "register": "informal"
+    },
+    {
+      "id": "minuta",
+      "text": "minuta",
+      "meaning": {
+        "en": "a minute (pięć minut: five minutes)"
+      },
+      "forms": [
+        "minut"
+      ]
+    },
+    {
+      "id": "okolo",
+      "text": "około",
+      "meaning": {
+        "en": "about, around (około dwunastej: at about twelve)"
+      }
+    },
+    {
+      "id": "zegarek",
+      "text": "zegarek",
+      "meaning": {
+        "en": "a watch"
+      }
+    },
+    {
+      "id": "budzik",
+      "text": "budzik",
+      "meaning": {
+        "en": "an alarm clock"
+      }
+    },
+    {
+      "id": "od-ktorej-do-ktorej",
+      "text": "od której do której?",
+      "meaning": {
+        "en": "from what time till what time?"
+      }
+    },
+    {
+      "id": "od-godz",
+      "text": "od",
+      "meaning": {
+        "en": "from (with the time: od siódmej, from seven)"
+      }
+    },
+    {
+      "id": "do-godz",
+      "text": "do",
+      "meaning": {
+        "en": "till, until (with the time: do siedemnastej, till 5 p.m.)"
+      }
+    },
+    {
+      "id": "zajecia",
+      "text": "zajęcia",
+      "meaning": {
+        "en": "classes (zajęcia dodatkowe: extra classes)"
+      }
+    },
+    {
+      "id": "trwa",
+      "text": "trwa",
+      "meaning": {
+        "en": "it lasts (lekcja trwa godzinę: the lesson lasts an hour)"
+      }
+    },
+    {
+      "id": "wizyta",
+      "text": "wizyta",
+      "meaning": {
+        "en": "an appointment, a visit (mam wizytę u dentysty)"
+      },
+      "forms": [
+        "wizytę"
+      ]
+    },
+    {
+      "id": "u-dentysty",
+      "text": "u dentysty",
+      "meaning": {
+        "en": "at the dentist's"
+      }
+    },
+    {
+      "id": "szef",
+      "text": "szef",
+      "meaning": {
+        "en": "a boss (spotkanie z szefem: a meeting with the boss)"
+      },
+      "forms": [
+        "szefem"
+      ]
+    },
+    {
+      "id": "poniedzialek",
+      "text": "poniedziałek",
+      "meaning": {
+        "en": "Monday (w poniedziałek: on Monday)"
+      },
+      "forms": [
+        "w poniedziałek"
+      ]
+    },
+    {
+      "id": "wtorek",
+      "text": "wtorek",
+      "meaning": {
+        "en": "Tuesday (we wtorek: on Tuesday)"
+      },
+      "forms": [
+        "we wtorek"
+      ]
+    },
+    {
+      "id": "sroda",
+      "text": "środa",
+      "meaning": {
+        "en": "Wednesday (w środę: on Wednesday)"
+      },
+      "forms": [
+        "w środę"
+      ]
+    },
+    {
+      "id": "czwartek",
+      "text": "czwartek",
+      "meaning": {
+        "en": "Thursday (w czwartek: on Thursday)"
+      },
+      "forms": [
+        "w czwartek"
+      ]
+    },
+    {
+      "id": "piatek",
+      "text": "piątek",
+      "meaning": {
+        "en": "Friday (w piątek: on Friday)"
+      },
+      "forms": [
+        "w piątek"
+      ]
+    },
+    {
+      "id": "sobota",
+      "text": "sobota",
+      "meaning": {
+        "en": "Saturday (w sobotę: on Saturday)"
+      },
+      "forms": [
+        "w sobotę"
+      ]
+    },
+    {
+      "id": "niedziela",
+      "text": "niedziela",
+      "meaning": {
+        "en": "Sunday (w niedzielę: on Sunday)"
+      },
+      "forms": [
+        "w niedzielę"
+      ]
+    },
+    {
+      "id": "dni-tygodnia",
+      "text": "dni tygodnia",
+      "meaning": {
+        "en": "the days of the week"
+      }
+    },
+    {
+      "id": "tydzien",
+      "text": "tydzień",
+      "meaning": {
+        "en": "a week"
+      }
+    },
+    {
+      "id": "spotkanie",
+      "text": "spotkanie",
+      "meaning": {
+        "en": "a meeting"
+      }
+    },
+    {
+      "id": "impreza",
+      "text": "impreza",
+      "meaning": {
+        "en": "a party"
+      }
+    },
+    {
+      "id": "u-babci",
+      "text": "u babci",
+      "meaning": {
+        "en": "at grandma's"
+      }
+    },
+    {
+      "id": "zaczyna-sie",
+      "text": "zaczyna się",
+      "meaning": {
+        "en": "it starts, it begins"
+      }
+    },
+    {
+      "id": "spotyka-sie",
+      "text": "spotyka się",
+      "meaning": {
+        "en": "he meets, she meets (spotyka się z kolegą)"
+      }
+    },
+    {
+      "id": "do-dentysty",
+      "text": "do dentysty",
+      "meaning": {
+        "en": "to the dentist's"
+      }
+    },
+    {
+      "id": "w-galerii",
+      "text": "w galerii",
+      "meaning": {
+        "en": "at the mall (w galerii handlowej)"
+      }
+    },
+    {
+      "id": "budze-sie",
+      "text": "budzę się",
+      "meaning": {
+        "en": "I wake up"
+      }
+    },
+    {
+      "id": "wstaje",
+      "text": "wstaję",
+      "meaning": {
+        "en": "I get up"
+      }
+    },
+    {
+      "id": "prysznic",
+      "text": "prysznic",
+      "meaning": {
+        "en": "a shower (biorę prysznic: I have a shower)"
+      }
+    },
+    {
+      "id": "myje",
+      "text": "myję",
+      "meaning": {
+        "en": "I wash (myję zęby: I brush my teeth)"
+      }
+    },
+    {
+      "id": "zeby-teeth",
+      "text": "zęby",
+      "meaning": {
+        "en": "teeth"
+      }
+    },
+    {
+      "id": "ubieram-sie",
+      "text": "ubieram się",
+      "meaning": {
+        "en": "I get dressed"
+      }
+    },
+    {
+      "id": "wychodze",
+      "text": "wychodzę",
+      "meaning": {
+        "en": "I go out, I leave (wychodzę z domu: I leave home)"
+      }
+    },
+    {
+      "id": "z-domu",
+      "text": "z domu",
+      "meaning": {
+        "en": "from home (wychodzę z domu: I leave home)"
+      }
+    },
+    {
+      "id": "budzisz-sie",
+      "text": "budzisz się",
+      "meaning": {
+        "en": "you wake up (one friend)"
+      }
+    },
+    {
+      "id": "wstajesz",
+      "text": "wstajesz",
+      "meaning": {
+        "en": "you get up (one friend)"
+      }
+    },
+    {
+      "id": "bierzesz",
+      "text": "bierzesz",
+      "meaning": {
+        "en": "you take (one friend; bierzesz prysznic: you have a shower)"
+      }
+    },
+    {
+      "id": "myjesz",
+      "text": "myjesz",
+      "meaning": {
+        "en": "you wash (one friend; myjesz zęby: you brush your teeth)"
+      }
+    },
+    {
+      "id": "ubierasz-sie",
+      "text": "ubierasz się",
+      "meaning": {
+        "en": "you get dressed (one friend)"
+      }
+    },
+    {
+      "id": "wychodzisz",
+      "text": "wychodzisz",
+      "meaning": {
+        "en": "you go out, you leave (one friend)"
+      }
+    },
+    {
+      "id": "sprzatam",
+      "text": "sprzątam",
+      "meaning": {
+        "en": "I clean, I tidy up"
+      }
+    },
+    {
+      "id": "spac",
+      "text": "spać",
+      "meaning": {
+        "en": "sleep (to sleep; idę spać: I go to bed)"
+      }
+    },
+    {
+      "id": "budzic-sie",
+      "text": "budzić się",
+      "meaning": {
+        "en": "wake up (to wake up)"
+      }
+    },
+    {
+      "id": "wstawac",
+      "text": "wstawać",
+      "meaning": {
+        "en": "get up (to get up)"
+      }
+    },
+    {
+      "id": "brac",
+      "text": "brać",
+      "meaning": {
+        "en": "take (to take)"
+      }
+    },
+    {
+      "id": "myc-sie",
+      "text": "myć się",
+      "meaning": {
+        "en": "wash (to wash yourself)"
+      }
+    },
+    {
+      "id": "ubierac-sie",
+      "text": "ubierać się",
+      "meaning": {
+        "en": "get dressed (to get dressed)"
+      }
+    },
+    {
+      "id": "wczesnie",
+      "text": "wcześnie",
+      "meaning": {
+        "en": "early"
+      }
+    },
+    {
+      "id": "odpoczywam",
+      "text": "odpoczywam",
+      "meaning": {
+        "en": "I rest, I relax"
+      }
+    },
+    {
+      "id": "spotykam-sie",
+      "text": "spotykam się",
+      "meaning": {
+        "en": "I meet (spotykam się ze znajomymi: I meet friends)"
+      }
+    },
+    {
+      "id": "zaczynam",
+      "text": "zaczynam",
+      "meaning": {
+        "en": "I start, I begin (zaczynam pracę: I start work)"
+      }
+    },
+    {
+      "id": "koncze",
+      "text": "kończę",
+      "meaning": {
+        "en": "I finish (kończę pracę: I finish work)"
+      }
+    },
+    {
+      "id": "prace",
+      "text": "pracę",
+      "meaning": {
+        "en": "work (after zaczynam, kończę…: kończę pracę)"
+      }
+    },
+    {
+      "id": "sprawdzam",
+      "text": "sprawdzam",
+      "meaning": {
+        "en": "I check"
+      }
+    },
+    {
+      "id": "cos",
+      "text": "coś",
+      "meaning": {
+        "en": "something"
+      }
+    },
+    {
+      "id": "w-telefonie",
+      "text": "w telefonie",
+      "meaning": {
+        "en": "on the phone, in my phone (sprawdzam coś w telefonie)"
+      }
+    },
+    {
+      "id": "otwieram",
+      "text": "otwieram",
+      "meaning": {
+        "en": "I open"
+      }
+    },
+    {
+      "id": "serwis-informacyjny",
+      "text": "serwis informacyjny",
+      "meaning": {
+        "en": "the news (on TV)"
+      }
+    },
+    {
+      "id": "jechac",
+      "text": "jechać",
+      "meaning": {
+        "en": "go (to go by car, bus or train, once)"
+      }
+    },
+    {
+      "id": "na-wycieczke",
+      "text": "na wycieczkę",
+      "meaning": {
+        "en": "on a trip (jechać na wycieczkę: to go on a trip)"
+      }
+    },
+    {
+      "id": "na-lunch",
+      "text": "na lunch",
+      "meaning": {
+        "en": "for lunch (iść na lunch: to go for lunch)"
+      }
+    }
+  ]
+}
