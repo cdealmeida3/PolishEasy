@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -23,6 +25,7 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.semantics
@@ -322,6 +325,83 @@ fun PictureOption(art: PictureArt?, description: String, state: OptionState, onC
         when (state) {
             OptionState.Right -> MarkIcon(Mark.Right, Modifier.align(Alignment.TopEnd).padding(Space.xs))
             OptionState.Wrong -> MarkIcon(Mark.Missed, Modifier.align(Alignment.TopEnd).padding(Space.xs))
+            else -> Unit
+        }
+    }
+}
+
+/** A thing put on a [RoomSpot]: its picture, or with no [art] its Polish ([text]) in a little label. */
+class RoomThingView(val art: PictureArt?, val text: String)
+
+/**
+ * A place of the room of Room scene, to tap as an answer: its Polish, [place], at the top and under
+ * it the [things] already put there, small, a picture each or the word. It has the states of a
+ * [PictureOption]: the right place gets a tick, the one tapped wrongly a cross and one shake, and the
+ * others fade. [description] is what a screen reader says for the place and what is on it.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+fun RoomSpot(place: String, things: List<RoomThingView>, description: String, state: OptionState, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    val look = when (state) {
+        OptionState.Right -> TileLook.Found
+        OptionState.Wrong -> TileLook.Missed
+        OptionState.Chosen -> TileLook.Brand
+        else -> TileLook.Plain
+    }
+    val (fill, edge) = look.colors()
+    val scheme = MaterialTheme.colorScheme
+    Edged(
+        fill = fill,
+        edge = edge,
+        corner = Corner.large,
+        border = Edge.border,
+        enabled = state == OptionState.Idle || state == OptionState.Chosen,
+        onClick = onClick,
+        contentAlignment = Alignment.TopCenter,
+        modifier = modifier
+            .heightIn(min = Size.roomSpot)
+            .shaking(state == OptionState.Wrong)
+            .alpha(if (state == OptionState.Faded) Motion.FADED_ALPHA else 1f)
+            .clearAndSetSemantics { contentDescription = description },
+    ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(Space.xs),
+            modifier = Modifier.fillMaxWidth().padding(Space.xs),
+        ) {
+            Text(
+                place,
+                style = MaterialTheme.typography.titleSmall.inPolish().copy(hyphens = Hyphens.Auto),
+                color = look.content(),
+                textAlign = TextAlign.Center,
+                modifier = Modifier.fillMaxWidth().padding(horizontal = Space.s),
+            )
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(Space.xxs, Alignment.CenterHorizontally),
+                verticalArrangement = Arrangement.spacedBy(Space.xxs),
+                modifier = Modifier.fillMaxWidth(),
+            ) {
+                things.forEach { thing ->
+                    if (thing.art == null) {
+                        Edged(fill = scheme.surfaceContainerLowest, edge = scheme.outlineVariant, corner = Corner.small, border = Edge.hairline, flat = true) {
+                            Text(
+                                thing.text,
+                                style = MaterialTheme.typography.labelSmall.inPolish(),
+                                color = scheme.onSurface,
+                                modifier = Modifier.padding(horizontal = Space.xxs, vertical = Space.xxs),
+                            )
+                        }
+                    } else {
+                        Box(contentAlignment = Alignment.Center, modifier = Modifier.size(Size.roomThing)) {
+                            PictureFace(thing.art, Modifier.fillMaxWidth())
+                        }
+                    }
+                }
+            }
+        }
+        when (state) {
+            OptionState.Right -> MarkIcon(Mark.Right, Modifier.align(Alignment.TopEnd).padding(Space.xxs), size = Size.tileMark)
+            OptionState.Wrong -> MarkIcon(Mark.Missed, Modifier.align(Alignment.TopEnd).padding(Space.xxs), size = Size.tileMark)
             else -> Unit
         }
     }

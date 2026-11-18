@@ -3578,5 +3578,206 @@
         "cells": [null, "na-ciebie", "na-niego", "na-nia", "na-nas", "na-was", "na-nich"]
       }
     ]
+  },
+  "room": {
+    "places": ["lozko", "szafa", "biurko", "regal", "kanapa", "polka", "fotel", "podloga", "sciana", "sufit", "lodowka"],
+    "positions": [
+      ["stac-stoi", "lezec-lezy", "wisiec-wisi"],
+      ["stac-stoja", "lezec-leza", "wisiec-wisza"]
+    ],
+    "scenes": [
+      {
+        "text": "Lampa stoi na biurku.",
+        "meaning": { "en": "The lamp is on the desk." },
+        "thing": "lampa",
+        "place": "biurko",
+        "verb": "stac-stoi",
+        "items": ["lampa", "stac-stoi", "biurko"]
+      },
+      {
+        "text": "Kwiatek stoi na półce.",
+        "meaning": { "en": "The pot plant is on the shelf." },
+        "thing": "kwiatek",
+        "place": "polka",
+        "verb": "stac-stoi",
+        "items": ["kwiatek", "stac-stoi", "polka"]
+      },
+      {
+        "text": "Telewizor stoi na regale.",
+        "meaning": { "en": "The television is on the bookcase." },
+        "thing": "telewizor",
+        "place": "regal",
+        "verb": "stac-stoi",
+        "items": ["telewizor", "stac-stoi", "regal"]
+      },
+      {
+        "text": "Obraz wisi na ścianie.",
+        "meaning": { "en": "The picture hangs on the wall." },
+        "thing": "obraz",
+        "place": "sciana",
+        "verb": "wisiec-wisi",
+        "items": ["obraz", "wisiec-wisi", "sciana"]
+      },
+      {
+        "text": "Zdjęcia wiszą na ścianie.",
+        "meaning": { "en": "The photos hang on the wall." },
+        "thing": "zdjecie",
+        "place": "sciana",
+        "verb": "wisiec-wisza",
+        "items": ["zdjecie", "wisiec-wisza", "sciana"]
+      },
+      {
+        "text": "Książka leży na łóżku.",
+        "meaning": { "en": "The book is lying on the bed." },
+        "thing": "ksiazka",
+        "place": "lozko",
+        "verb": "lezec-lezy",
+        "items": ["ksiazka", "lezec-lezy", "lozko"]
+      },
+      {
+        "text": "Kot leży na kanapie.",
+        "meaning": { "en": "The cat is lying on the sofa." },
+        "thing": "kot",
+        "place": "kanapa",
+        "verb": "lezec-lezy",
+        "items": ["kot", "lezec-lezy", "kanapa"]
+      },
+      {
+        "text": "Sweter leży w szafie.",
+        "meaning": { "en": "The jumper is in the wardrobe, lying flat." },
+        "thing": "sweter",
+        "place": "szafa",
+        "verb": "lezec-lezy",
+        "items": ["sweter", "lezec-lezy", "szafa"]
+      },
+      {
+        "text": "Ubrania wiszą w szafie.",
+        "meaning": { "en": "The clothes hang in the wardrobe." },
+        "thing": "ubranie",
+        "place": "szafa",
+        "verb": "wisiec-wisza",
+        "items": ["ubranie", "wisiec-wisza", "szafa"]
+      },
+      {
+        "text": "Poduszki leżą na kanapie.",
+        "meaning": { "en": "The cushions are on the sofa." },
+        "thing": "poduszka",
+        "place": "kanapa",
+        "verb": "lezec-leza",
+        "items": ["poduszka", "lezec-leza", "kanapa"]
+      },
+      {
+        "text": "Lampa wisi na suficie.",
+        "meaning": { "en": "The lamp hangs from the ceiling." },
+        "thing": "lampa",
+        "place": "sufit",
+        "verb": "wisiec-wisi",
+        "items": ["lampa", "wisiec-wisi", "sufit"]
+      },
+      {
+        "text": "Mleko stoi w lodówce.",
+        "meaning": { "en": "The milk is in the fridge." },
+        "thing": "mleko",
+        "place": "lodowka",
+        "verb": "stac-stoi",
+        "items": ["mleko", "stac-stoi", "lodowka"]
+      },
+      {
+        "text": "Masło leży w lodówce.",
+        "meaning": { "en": "The butter is in the fridge." },
+        "thing": "maslo",
+        "place": "lodowka",
+        "verb": "lezec-lezy",
+        "items": ["maslo", "lezec-lezy", "lodowka"]
+      },
+      {
+        "text": "Dywan leży na podłodze.",
+        "meaning": { "en": "The rug is on the floor." },
+        "thing": "dywan",
+        "place": "podloga",
+        "verb": "lezec-lezy",
+        "items": ["dywan", "lezec-lezy", "podloga"]
+      },
+      {
+        "text": "Torba leży na podłodze.",
+        "meaning": { "en": "The bag is lying on the floor." },
+        "thing": "torba",
+        "place": "podloga",
+        "verb": "lezec-lezy",
+        "items": ["torba", "lezec-lezy", "podloga"]
+      },
+      {
+        "text": "Lustro wisi na ścianie.",
+        "meaning": { "en": "The mirror hangs on the wall." },
+        "thing": "lustro",
+        "place": "sciana",
+        "verb": "wisiec-wisi",
+        "items": ["lustro", "wisiec-wisi", "sciana"]
+      },
+      {
+        "text": "Kwiatki stoją na podłodze.",
+        "meaning": { "en": "The pot plants stand on the floor." },
+        "thing": "kwiatek",
+        "place": "podloga",
+        "verb": "stac-stoja",
+        "items": ["kwiatek", "stac-stoja", "podloga"]
+      },
+      {
+        "text": "Zdjęcia stoją na regale.",
+        "meaning": { "en": "The photos stand on the bookcase." },
+        "thing": "zdjecie",
+        "place": "regal",
+        "verb": "stac-stoja",
+        "items": ["zdjecie", "stac-stoja", "regal"]
+      },
+      {
+        "text": "Kot leży w fotelu.",
+        "meaning": { "en": "The cat is lying in the armchair." },
+        "thing": "kot",
+        "place": "fotel",
+        "verb": "lezec-lezy",
+        "items": ["kot", "lezec-lezy", "fotel"]
+      },
+      {
+        "text": "Koszulka leży na łóżku.",
+        "meaning": { "en": "The T-shirt is lying on the bed." },
+        "thing": "koszulka",
+        "place": "lozko",
+        "verb": "lezec-lezy",
+        "items": ["koszulka", "lezec-lezy", "lozko"]
+      },
+      {
+        "text": "Gazeta leży na biurku.",
+        "meaning": { "en": "The newspaper is lying on the desk." },
+        "thing": "gazeta",
+        "place": "biurko",
+        "verb": "lezec-lezy",
+        "items": ["gazeta", "lezec-lezy", "biurko"]
+      },
+      {
+        "text": "Komputer stoi na biurku.",
+        "meaning": { "en": "The computer is on the desk." },
+        "thing": "komputer",
+        "place": "biurko",
+        "verb": "stac-stoi",
+        "items": ["komputer", "stac-stoi", "biurko"]
+      },
+      {
+        "text": "Książka leży na półce.",
+        "meaning": { "en": "The book is lying on the shelf." },
+        "thing": "ksiazka",
+        "place": "polka",
+        "verb": "lezec-lezy",
+        "items": ["ksiazka", "lezec-lezy", "polka"]
+      },
+      {
+        "text": "Poduszka leży w fotelu.",
+        "meaning": { "en": "The cushion is in the armchair." },
+        "thing": "poduszka",
+        "place": "fotel",
+        "verb": "lezec-lezy",
+        "items": ["poduszka", "lezec-lezy", "fotel"]
+      }
+    ]
   }
 }
