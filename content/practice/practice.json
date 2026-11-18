@@ -1016,5 +1016,365 @@
         "wino"
       ]
     }
+  ],
+  "restaurant": {
+    "forMe": "dla-mnie",
+    "same": "to-samo",
+    "and": "a",
+    "dishes": [
+      "barszcz",
+      "zurek",
+      "rosol",
+      "krupnik",
+      "zupa-pomidorowa",
+      "kotlet-schabowy",
+      "kotlet-mielony",
+      "bigos",
+      "golabki",
+      "pierogi-ruskie",
+      "nalesniki",
+      "placki-ziemniaczane",
+      "sernik",
+      "szarlotka",
+      "makowiec",
+      "gofr",
+      "lody",
+      "rurka-z-kremem",
+      "kompot",
+      "zapiekanka"
+    ]
+  },
+  "negations": [
+    {
+      "yes": "Lubię kawę.",
+      "yesMeaning": {
+        "en": "I like coffee."
+      },
+      "no": "Nie lubię kawy.",
+      "noMeaning": {
+        "en": "I don't like coffee."
+      },
+      "items": [
+        "lubic-lubie",
+        "kawa-acc",
+        "nie",
+        "kawa-gen"
+      ]
+    },
+    {
+      "yes": "Piję herbatę.",
+      "yesMeaning": {
+        "en": "I drink tea."
+      },
+      "no": "Nie piję herbaty.",
+      "noMeaning": {
+        "en": "I don't drink tea."
+      },
+      "items": [
+        "pic-pije",
+        "herbata-acc",
+        "nie",
+        "herbata-gen"
+      ]
+    },
+    {
+      "yes": "Mam wodę.",
+      "yesMeaning": {
+        "en": "I have water."
+      },
+      "no": "Nie mam wody.",
+      "noMeaning": {
+        "en": "I don't have any water."
+      },
+      "items": [
+        "miec-mam",
+        "woda-acc",
+        "nie",
+        "woda-gen"
+      ]
+    },
+    {
+      "yes": "Lubię mleko.",
+      "yesMeaning": {
+        "en": "I like milk."
+      },
+      "no": "Nie lubię mleka.",
+      "noMeaning": {
+        "en": "I don't like milk."
+      },
+      "items": [
+        "lubic-lubie",
+        "mleko",
+        "nie",
+        "mleko-gen"
+      ]
+    },
+    {
+      "yes": "Piję wino.",
+      "yesMeaning": {
+        "en": "I drink wine."
+      },
+      "no": "Nie piję wina.",
+      "noMeaning": {
+        "en": "I don't drink wine."
+      },
+      "items": [
+        "pic-pije",
+        "wino",
+        "nie",
+        "wino-gen"
+      ]
+    },
+    {
+      "yes": "Mam sok.",
+      "yesMeaning": {
+        "en": "I have juice."
+      },
+      "no": "Nie mam soku.",
+      "noMeaning": {
+        "en": "I don't have any juice."
+      },
+      "items": [
+        "miec-mam",
+        "sok",
+        "nie",
+        "sok-gen"
+      ]
+    },
+    {
+      "yes": "Piję kompot.",
+      "yesMeaning": {
+        "en": "I drink compote."
+      },
+      "no": "Nie piję kompotu.",
+      "noMeaning": {
+        "en": "I don't drink compote."
+      },
+      "items": [
+        "pic-pije",
+        "kompot",
+        "nie",
+        "kompot-gen"
+      ]
+    },
+    {
+      "yes": "Jem chleb.",
+      "yesMeaning": {
+        "en": "I eat bread."
+      },
+      "no": "Nie jem chleba.",
+      "noMeaning": {
+        "en": "I don't eat bread."
+      },
+      "items": [
+        "jesc-jem",
+        "chleb",
+        "nie",
+        "chleb-gen"
+      ]
+    },
+    {
+      "yes": "Jem ser.",
+      "yesMeaning": {
+        "en": "I eat cheese."
+      },
+      "no": "Nie jem sera.",
+      "noMeaning": {
+        "en": "I don't eat cheese."
+      },
+      "items": [
+        "jesc-jem",
+        "ser",
+        "nie",
+        "ser-gen"
+      ]
+    },
+    {
+      "yes": "Lubię zimne mleko.",
+      "yesMeaning": {
+        "en": "I like cold milk."
+      },
+      "no": "Nie lubię zimnego mleka.",
+      "noMeaning": {
+        "en": "I don't like cold milk."
+      },
+      "items": [
+        "lubic-lubie",
+        "zimny",
+        "mleko",
+        "nie",
+        "zimny-gen",
+        "mleko-gen"
+      ]
+    },
+    {
+      "yes": "Piję czerwone wino.",
+      "yesMeaning": {
+        "en": "I drink red wine."
+      },
+      "no": "Nie piję czerwonego wina.",
+      "noMeaning": {
+        "en": "I don't drink red wine."
+      },
+      "items": [
+        "pic-pije",
+        "czerwony",
+        "wino",
+        "nie",
+        "czerwony-gen",
+        "wino-gen"
+      ]
+    },
+    {
+      "yes": "Piję białą kawę.",
+      "yesMeaning": {
+        "en": "I drink white coffee."
+      },
+      "no": "Nie piję białej kawy.",
+      "noMeaning": {
+        "en": "I don't drink white coffee."
+      },
+      "items": [
+        "pic-pije",
+        "bialy",
+        "kawa-acc",
+        "nie",
+        "bialy-gen",
+        "kawa-gen"
+      ]
+    },
+    {
+      "yes": "Lubię zimny sok.",
+      "yesMeaning": {
+        "en": "I like cold juice."
+      },
+      "no": "Nie lubię zimnego soku.",
+      "noMeaning": {
+        "en": "I don't like cold juice."
+      },
+      "items": [
+        "lubic-lubie",
+        "zimny",
+        "sok",
+        "nie",
+        "zimny-gen",
+        "sok-gen"
+      ]
+    },
+    {
+      "yes": "Mam piwo.",
+      "yesMeaning": {
+        "en": "I have beer."
+      },
+      "no": "Nie mam piwa.",
+      "noMeaning": {
+        "en": "I don't have any beer."
+      },
+      "items": [
+        "miec-mam",
+        "piwo",
+        "nie"
+      ]
+    },
+    {
+      "yes": "Pijesz herbatę.",
+      "yesMeaning": {
+        "en": "You drink tea."
+      },
+      "no": "Nie pijesz herbaty.",
+      "noMeaning": {
+        "en": "You don't drink tea."
+      },
+      "items": [
+        "pic-pijesz",
+        "herbata-acc",
+        "nie",
+        "herbata-gen"
+      ]
+    },
+    {
+      "yes": "Lubisz kawę.",
+      "yesMeaning": {
+        "en": "You like coffee."
+      },
+      "no": "Nie lubisz kawy.",
+      "noMeaning": {
+        "en": "You don't like coffee."
+      },
+      "items": [
+        "lubic-lubisz",
+        "kawa-acc",
+        "nie",
+        "kawa-gen"
+      ]
+    },
+    {
+      "yes": "Jesz ser.",
+      "yesMeaning": {
+        "en": "You eat cheese."
+      },
+      "no": "Nie jesz sera.",
+      "noMeaning": {
+        "en": "You don't eat cheese."
+      },
+      "items": [
+        "jesc-jesz",
+        "ser",
+        "nie",
+        "ser-gen"
+      ]
+    },
+    {
+      "yes": "Masz chleb.",
+      "yesMeaning": {
+        "en": "You have bread."
+      },
+      "no": "Nie masz chleba.",
+      "noMeaning": {
+        "en": "You don't have any bread."
+      },
+      "items": [
+        "miec-masz",
+        "chleb",
+        "nie",
+        "chleb-gen"
+      ]
+    },
+    {
+      "yes": "Ewa pije mleko.",
+      "yesMeaning": {
+        "en": "Ewa drinks milk."
+      },
+      "no": "Ewa nie pije mleka.",
+      "noMeaning": {
+        "en": "Ewa doesn't drink milk."
+      },
+      "items": [
+        "ewa",
+        "pic-pije-on",
+        "mleko",
+        "nie",
+        "mleko-gen"
+      ]
+    },
+    {
+      "yes": "Adam lubi czerwone wino.",
+      "yesMeaning": {
+        "en": "Adam likes red wine."
+      },
+      "no": "Adam nie lubi czerwonego wina.",
+      "noMeaning": {
+        "en": "Adam doesn't like red wine."
+      },
+      "items": [
+        "adam",
+        "lubic-lubi",
+        "czerwony",
+        "wino",
+        "nie",
+        "czerwony-gen",
+        "wino-gen"
+      ]
+    }
   ]
 }

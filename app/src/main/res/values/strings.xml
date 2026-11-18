@@ -453,6 +453,22 @@
         <item quantity="one">%d product so far</item>
         <item quantity="other">%d products so far</item>
     </plurals>
+    <string name="game_take_the_order">Take the order</string>
+    <string name="game_take_the_order_note">You are the waiter. Hear each guest order, dla mnie żurek, a dla mnie to samo, and write it on your pad.</string>
+    <string name="game_take_the_order_needs">Opens when you learn dla mnie, to samo, a and six dishes, in chapter 10.</string>
+    <string name="choice_table">The table is</string>
+    <string name="option_two_guests">Two guests</string>
+    <string name="option_three_guests">Three guests</string>
+    <string name="order_listen_instruction">Listen to the table and write each guest\'s dish</string>
+    <string name="order_read_instruction">Write each guest\'s dish</string>
+    <string name="order_guest">Guest %d</string>
+    <string name="order_blank">…</string>
+    <string name="order_serve">Serve</string>
+    <string name="game_negation_flip">Negation flip</string>
+    <string name="game_negation_flip_note">Lubię kawę, nie lubię kawy. Pick the right way to say no, before the time runs out.</string>
+    <string name="game_negation_flip_needs">Opens when you learn six sentences and how to say them with nie, in chapter 10.</string>
+    <string name="flip_instruction">Which says it with nie?</string>
+    <string name="flip_missed">%1$s (%2$s) After nie, the thing takes the genitive.</string>
     <string name="game_spell_it">Spell it</string>
     <string name="game_spell_it_note">Tap the letters in order to spell the word.</string>
     <string name="game_spell_it_needs">Opens when you learn four words to spell.</string>

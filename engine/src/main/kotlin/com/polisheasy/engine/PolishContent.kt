@@ -113,6 +113,16 @@ fun polishContent(files: ContentFiles): PolishContent {
         }
     }
 
+    // Negation flip's sentences and their negations, each with what it means. Its wrong option is
+    // made from the sentence, so it is never written to be checked.
+    content.practiceFile?.let { file ->
+        content.practice?.negations.orEmpty().forEachIndexed { index, negation ->
+            val use = { role: PolishRole -> PolishUse(file, "negations/${index + 1}", role) }
+            sentence(negation.yes, negation.yesMeaning, use(PolishRole.PROMPT))
+            sentence(negation.no, negation.noMeaning, use(PolishRole.ANSWER))
+        }
+    }
+
     content.dailySets.forEach { (file, dailySet) ->
         dailySet.section?.let { section ->
             sentence(section.heading, section.meaning, PolishUse(file, dailySet.id, PolishRole.HEADING))

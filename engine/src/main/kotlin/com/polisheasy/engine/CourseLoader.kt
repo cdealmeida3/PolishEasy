@@ -61,7 +61,21 @@ internal data class PracticeFile(
     val market: MarketFile? = null,
     /** The supermarket aisles of Sort the aisles. */
     val aisles: List<AisleFile> = emptyList(),
+    /** The words and dishes of Take the order. */
+    val restaurant: RestaurantFile? = null,
+    /** The sentences of Negation flip. */
+    val negations: List<NegationFile> = emptyList(),
 )
+
+/** The Item ids of Take the order: [forMe] (*dla mnie*), [same] (*to samo*), [and] (*a*), and the [dishes] on the menu. */
+@Serializable
+internal data class RestaurantFile(val forMe: String, val same: String, val and: String, val dishes: List<String>)
+
+/** One sentence of Negation flip, [yes] (*Lubię kawę.*), its negation [no] (*Nie lubię kawy.*), what each means, and the Item ids both use. */
+@Serializable
+internal data class NegationFile(val yes: String, val yesMeaning: Localized, val no: String, val noMeaning: Localized, val items: List<String>) {
+    fun negation(): Negation = Negation(yes, yesMeaning, no, noMeaning, items.distinct())
+}
 
 /**
  * The Item ids of Market list: [and] (*i*), the [numbers] one to four, each its word before a thing
@@ -249,6 +263,8 @@ internal class ReadContent(
                 )
             },
             aisles = practice?.aisles.orEmpty().map { Aisle(it.aisle, it.products.distinct()) }.distinctBy { it.names },
+            restaurant = practice?.restaurant?.let { Restaurant(it.forMe, it.same, it.and, it.dishes.distinct()) },
+            negations = practice?.negations.orEmpty().map { it.negation() }.distinctBy { it.yes },
         )
     }
 
@@ -447,6 +463,8 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         practice.plates?.let { plates -> problems += plateProblems(file, plates, course, content.itemsComplete) }
         practice.market?.let { market -> problems += marketProblems(file, market, practice, course, content.itemsComplete) }
         problems += aisleProblems(file, practice.aisles, course, content.itemsComplete)
+        practice.restaurant?.let { restaurant -> problems += restaurantProblems(file, restaurant, course, content.itemsComplete) }
+        problems += negationProblems(file, practice.negations, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -585,6 +603,39 @@ private fun aisleProblems(file: String, aisles: List<AisleFile>, course: Course,
     }
     aisles.map { it.aisle }.repeated().forEach { id -> problems += ContentProblem(file, id, "The aisle $id is listed more than once") }
     aisles.flatMap { it.products }.repeated().forEach { id -> problems += ContentProblem(file, id, "The product $id is in more than one aisle, or listed twice") }
+    return problems
+}
+
+/** What is wrong with Take the order: every Item defined, and dishes on the menu, each once. */
+private fun restaurantProblems(file: String, restaurant: RestaurantFile, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    (listOf(restaurant.forMe, restaurant.same, restaurant.and) + restaurant.dishes).distinct().filter { itemsComplete && it !in course.itemsById }.forEach { id ->
+        problems += ContentProblem(file, id, "Take the order names Item $id, which is not defined")
+    }
+    if (restaurant.dishes.isEmpty()) problems += ContentProblem(file, null, "Take the order has no dishes")
+    restaurant.dishes.repeated().forEach { id -> problems += ContentProblem(file, id, "The dish $id is listed more than once") }
+    return problems
+}
+
+/**
+ * What is wrong with Negation flip: every Item defined, each negation saying *nie* where the
+ * sentence goes on as it was (*Ewa pije* → *Ewa nie pije*), not the same as keeping the object, and
+ * no sentence listed twice.
+ */
+private fun negationProblems(file: String, negations: List<NegationFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    negations.forEach { entry ->
+        val negation = entry.negation()
+        entry.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "The negation of \"${entry.yes}\" names Item $id, which is not defined")
+        }
+        if (entry.items.isEmpty()) problems += ContentProblem(file, null, "The negation of \"${entry.yes}\" lists no Items")
+        when {
+            negation.negatedAt < 0 -> problems += ContentProblem(file, null, "The negation of \"${entry.yes}\" must say nie where the sentence goes on as it was")
+            negation.kept == entry.no -> problems += ContentProblem(file, null, "The negation of \"${entry.yes}\" is the same as keeping its object, so it has no wrong option")
+        }
+    }
+    negations.map { it.yes }.repeated().forEach { yes -> problems += ContentProblem(file, null, "The sentence \"$yes\" is listed more than once under negations") }
     return problems
 }
 

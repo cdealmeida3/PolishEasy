@@ -161,6 +161,10 @@ _Avoid_: Bingo, number card
 The Game of filling a basket with the goods of a shopping list said in Polish, as many of each as it asks: *dwie gruszki i trzy banany*. Chapter 9's Game.
 _Avoid_: Shopping game, counting quiz
 
+**Negation flip**:
+The Game of picking, against the clock, the right way to say a sentence with *nie*: *Lubię kawę.* is *Nie lubię kawy.*, not *Nie lubię kawę.* Chapter 10's Game.
+_Avoid_: Genitive quiz, negation drill
+
 **Plate builder**:
 The Game of putting on a plate the foods of a dish ordered in Polish, *chleb z masłem*, or of two, *i herbata z cytryną*. Chapter 8's Game.
 _Avoid_: Breakfast game, food quiz
@@ -168,6 +172,10 @@ _Avoid_: Breakfast game, food quiz
 **Sort the aisles**:
 The Game of sorting learned products into the supermarket's aisles, *nabiał*, *pieczywo*, *słodycze*, against the clock. Chapter 9's Game.
 _Avoid_: Supermarket game, aisle quiz
+
+**Take the order**:
+The Game of writing each guest's dish on a waiter's pad as a table orders in Polish: *Dla mnie żurek. A dla mnie to samo.* Chapter 10's Game.
+_Avoid_: Restaurant game, waiter quiz
 
 **Register sort**:
 The Game of sorting learned phrases by Register, against the clock: to *pan* or *pani* (O), to a friend (N) or to anyone (U).

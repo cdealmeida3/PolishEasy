@@ -52,6 +52,10 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     MARKET_LIST("market-list", GameGroup.NUMBERS),
     /** Chapter 9's Game: products sorted into the supermarket's aisles against the clock: nabiał, pieczywo, słodycze. */
     AISLE_SORT("aisle-sort", GameGroup.WORDS),
+    /** Chapter 10's Game: a table orders, dla mnie żurek, a dla mnie to samo, and the Learner, the waiter, writes each guest's dish. */
+    TAKE_THE_ORDER("take-the-order", GameGroup.PHRASES),
+    /** Chapter 10's Game: a sentence negated against the clock, the object in the genitive: Lubię kawę, Nie lubię kawy. */
+    NEGATION_FLIP("negation-flip", GameGroup.PHRASES),
 }
 
 /** Whether a Game can be played now. */
@@ -257,7 +261,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

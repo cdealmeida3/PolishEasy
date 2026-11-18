@@ -125,7 +125,7 @@ internal fun scoreWords(game: Game, score: Score): ScoreWords = when (game) {
         label = pluralStringResource(R.plurals.result_turns, score.value),
         sentence = pluralStringResource(R.plurals.result_turns_sentence, score.value, score.value),
     )
-    Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.AISLE_SORT -> ScoreWords(
+    Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.AISLE_SORT, Game.NEGATION_FLIP -> ScoreWords(
         value = score.value.toString(),
         label = pluralStringResource(R.plurals.result_right, score.value),
         sentence = pluralStringResource(R.plurals.result_right_sentence, score.value, score.value),
@@ -135,7 +135,7 @@ internal fun scoreWords(game: Game, score: Score): ScoreWords = when (game) {
         label = pluralStringResource(R.plurals.result_slips, score.value),
         sentence = pluralStringResource(R.plurals.result_slips_sentence, score.value, score.value),
     )
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.MARKET_LIST, Game.NUMBERS, Game.SPELL_IT, Game.CHAT, Game.ANKIETA -> ScoreWords(
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.MARKET_LIST, Game.TAKE_THE_ORDER, Game.NUMBERS, Game.SPELL_IT, Game.CHAT, Game.ANKIETA -> ScoreWords(
         value = stringResource(R.string.summary_first_try_value, score.value, score.of ?: score.value),
         label = stringResource(R.string.summary_first_try),
         sentence = stringResource(R.string.summary_accuracy, score.value, score.of ?: score.value),

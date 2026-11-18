@@ -658,6 +658,41 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Take the order opens in chapter 10 and serves tables of learned dishes, every one on the menu`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.TAKE_THE_ORDER }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l10-"), course.path[firstReady - 1].id)
+        val all = practiceAfter(course.path.size)
+        assertEquals(listOf(TakeTheOrder.LISTEN, TakeTheOrder.READ), all.setup(Game.TAKE_THE_ORDER).choices[0].options.map { it.id })
+        listOf(TakeTheOrder.LISTEN, TakeTheOrder.READ).forEach { clue ->
+            listOf(TakeTheOrder.TWO, TakeTheOrder.THREE).forEach { guests ->
+                val round = all.start(all.setup(Game.TAKE_THE_ORDER, listOf(clue, guests))) as TableRound
+                assertEquals(TakeTheOrder.QUESTIONS, round.total)
+                round.run.questions.forEach { question ->
+                    if (round.listen) question.lines.flatten().forEach { assertTrue(all.clipOf(it) != null, "No Clip for $it") }
+                    assertEquals(if (guests == TakeTheOrder.TWO) 2 else 3, question.dishes.size)
+                    assertEquals(TakeTheOrder.MENU, question.menu.size)
+                    assertTrue(question.menu.map { it.id }.containsAll(question.dishes), question.key)
+                }
+            }
+        }
+    }
+
+    @Test
+    fun `Negation flip opens in chapter 10, and every sentence's wrong option keeps its object`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.NEGATION_FLIP }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l10-"), course.path[firstReady - 1].id)
+        course.negations.forEach { negation ->
+            assertTrue(negation.kept != negation.no, negation.yes)
+            assertTrue(negation.negatedAt >= 0, negation.no)
+            assertTrue(" nie " in " ${negation.kept.lowercase()}", negation.kept)
+        }
+        val all = practiceAfter(course.path.size)
+        val round = all.start(all.setup(Game.NEGATION_FLIP, listOf("${NegationFlip.SECONDS_PREFIX}60"))) as FlipRound
+        assertEquals(course.negations.map { it.yes }.toSet(), round.cards.map { it.yes }.toSet())
+        round.cards.forEach { card -> assertTrue(all.clipOf(card.no) != null, "No Clip for ${card.no}") }
+    }
+
+    @Test
     fun `the Verb challenge offers chapter 4's conjugation once its verbs are learned`() {
         val afterB = course.path.indexOfFirst { it.id == "kpk1-l04-b3" } + 1
         assertTrue(afterB > 0)

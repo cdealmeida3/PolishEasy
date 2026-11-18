@@ -56,6 +56,10 @@ data class Course(
     val market: Market? = null,
     /** The supermarket aisles of Sort the aisles, each named by an Item and stocked with products, in the content's order. */
     val aisles: List<Aisle> = emptyList(),
+    /** The words and dishes of Take the order, or null if the content has none. */
+    val restaurant: Restaurant? = null,
+    /** The sentences of Negation flip, each with its negation, in the content's order. */
+    val negations: List<Negation> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

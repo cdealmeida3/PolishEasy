@@ -78,6 +78,8 @@ import com.polisheasy.engine.LottoRound
 import com.polisheasy.engine.PlateRound
 import com.polisheasy.engine.MarketRound
 import com.polisheasy.engine.AisleRound
+import com.polisheasy.engine.FlipRound
+import com.polisheasy.engine.TableRound
 import com.polisheasy.engine.TillRound
 import com.polisheasy.engine.ChatRound
 import com.polisheasy.engine.MemoryFace
@@ -806,6 +808,45 @@ class ScreenshotsTest {
         ).forEach { (section, name) ->
             screen.runOnUiThread {
                 model.openLesson("kpk1-l09")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
+    fun `chapter 10 of the book over the real course in the light theme`() = chapter10Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 10 of the book over the real course in the dark theme`() = chapter10Tour("dark")
+
+    @Test
+    fun `chapter 10 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter10Tour("large") }
+
+    /**
+     * Chapter 10 over the real course: its Lesson screen at the top and its sections, then section
+     * B's tables of the genitive after nie, and section C's table of the pronouns after z.
+     */
+    private fun chapter10Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l10") }
+        screen.waitForIdle()
+        shot("252-chapter-10")
+        screen.onAllNodes(hasText("Nareszcie weekend", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("252-chapter-10-sections")
+        listOf(
+            "kpk1-l10-b2" to "253-chapter-10-nie-kawy",
+            "kpk1-l10-b3" to "254-chapter-10-zimnego",
+            "kpk1-l10-c1" to "255-chapter-10-z-kim",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l10")
                 model.openSection(section)
             }
             screen.waitForIdle()
@@ -2296,6 +2337,84 @@ class ScreenshotsTest {
         repeat(3) { sortInto(checkNotNull(aisles().rightAisle).polish) }
         screen.mainClock.advanceTimeBy(46_000)
         shot("251-aisles-result")
+    }
+
+    @Test
+    fun `Take the order and Negation flip over the real course in the light theme`() = chapter10Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Take the order and Negation flip over the real course in the dark theme`() = chapter10Games("dark")
+
+    @Test
+    fun `Take the order and Negation flip over the real course at the largest font size`() = atTheLargestFontSize { chapter10Games("large") }
+
+    /**
+     * Chapter 10's Games: Take the order's setup, a table of three read with a dish on the pad,
+     * served right and wrong, and a table heard; then Negation flip's sentence, a wrong negation,
+     * and its result.
+     */
+    private fun chapter10Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun table() = (viewModel?.screen as Screen.Round).round as TableRound
+
+        fun flip() = (viewModel?.screen as Screen.Round).round as FlipRound
+
+        fun write(id: String) {
+            val dish = checkNotNull(table().question).menu.single { it.id == id }
+            screen.onAllNodes(hasText(dish.polish) and hasClickAction()).onLast().performScrollTo().performClick()
+        }
+
+        fun serveRight() {
+            checkNotNull(table().question).dishes.forEach(::write)
+            tap(R.string.order_serve)
+            tap(R.string.action_continue)
+        }
+
+        openRealPractice()
+        openGame(R.string.game_take_the_order)
+        shot("256-order-setup")
+        tap(R.string.option_read)
+        screen.onNodeWithText(app.getString(R.string.option_three_guests)).performScrollTo().performClick()
+        tap(R.string.setup_play)
+        // The first table where a guest says to samo, if one of the first three does.
+        repeat(2) { if (checkNotNull(table().question).lines.none { it.last() == "to samo" }) serveRight() }
+        val first = checkNotNull(table().question)
+        write(first.dishes[0])
+        shot("257-order-table")
+        first.dishes.drop(1).forEach(::write)
+        screen.mainClock.autoAdvance = false
+        tap(R.string.order_serve)
+        screen.mainClock.advanceTimeBy(100)
+        shot("258-order-right")
+        screen.mainClock.autoAdvance = true
+        tap(R.string.action_continue)
+        val next = checkNotNull(table().question)
+        write(next.menu.first { it.id !in next.dishes }.id)
+        next.dishes.drop(1).forEach(::write)
+        tap(R.string.order_serve)
+        shot("259-order-wrong")
+        leaveRound()
+
+        openGame(R.string.game_take_the_order)
+        tap(R.string.option_listen)
+        tap(R.string.setup_play)
+        write(checkNotNull(table().question).dishes[0])
+        shot("260-order-heard")
+        leaveRound()
+
+        openGame(R.string.game_negation_flip)
+        tap(R.string.setup_play)
+        shot("261-flip-sentence")
+        repeat(2) { tap(checkNotNull(flip().card).no) }
+        val card = checkNotNull(flip().card)
+        screen.onNodeWithText(card.options[1 - card.right]).performScrollTo().performClick()
+        shot("262-flip-wrong")
+        tap(R.string.action_continue)
+        repeat(3) { tap(checkNotNull(flip().card).no) }
+        screen.mainClock.advanceTimeBy(60_000)
+        shot("263-flip-result")
     }
 
     private fun registerSort(theme: String) {

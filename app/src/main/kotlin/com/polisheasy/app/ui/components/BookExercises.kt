@@ -494,7 +494,7 @@ fun GrammarTable(title: String?, columns: List<Pair<String?, GenderMark?>>, rows
                     }
                 }
                 row.cells.forEach { cell ->
-                    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.weight(1f)) {
+                    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.weight(1f).padding(end = Space.xs)) {
                         EndingText(cell.text, cell.ending, Modifier.weight(1f))
                         cell.speaker?.invoke()
                     }
@@ -510,6 +510,7 @@ private const val HeadWeight = 0.8f
  * A word with its ending in a red box, as the book prints endings. It is one line of text, the box
  * drawn around the ending where it falls, with a narrow space either side of it so the box
  * clears the letters; a word too wide for its column at a large font size is set smaller to fit.
+ * Two words, *zimnego soku*, go on two lines when they do not fit on one.
  */
 @Composable
 private fun EndingText(text: String, ending: IntRange?, modifier: Modifier = Modifier) {
@@ -537,8 +538,8 @@ private fun EndingText(text: String, ending: IntRange?, modifier: Modifier = Mod
     BasicText(
         shown,
         style = style,
-        maxLines = 1,
-        softWrap = false,
+        maxLines = if (' ' in text) 2 else 1,
+        softWrap = ' ' in text,
         autoSize = TextAutoSize.StepBased(minFontSize = style.fontSize * 0.5f, maxFontSize = style.fontSize),
         onTextLayout = { layout = it },
         modifier = modifier
@@ -546,12 +547,13 @@ private fun EndingText(text: String, ending: IntRange?, modifier: Modifier = Mod
             .drawBehind {
                 val laid = layout ?: return@drawBehind
                 if (!boxed) return@drawBehind
+                val line = laid.getLineForOffset(from)
                 val left = laid.getHorizontalPosition(from, usePrimaryDirection = true)
                 val right = laid.getHorizontalPosition(until, usePrimaryDirection = true)
                 drawRoundRect(
                     color = scheme.primary,
-                    topLeft = Offset(left, laid.getLineTop(0)),
-                    size = androidx.compose.ui.geometry.Size(right - left, laid.getLineBottom(0) - laid.getLineTop(0)),
+                    topLeft = Offset(left, laid.getLineTop(line)),
+                    size = androidx.compose.ui.geometry.Size(right - left, laid.getLineBottom(line) - laid.getLineTop(line)),
                     cornerRadius = CornerRadius((Corner.extraSmall / 2).toPx()),
                     style = Stroke(edge.toPx()),
                 )
