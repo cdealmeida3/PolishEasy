@@ -1,0 +1,388 @@
+{
+  "id": "kpk1-l10-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Zapraszam was na obiad",
+    "meaning": {
+      "en": "Come for dinner"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-a2-t01",
+      "before": "kpk1-l10-a2-e01",
+      "title": {
+        "en": "Zupy"
+      },
+      "body": {
+        "en": "A Polish menu starts with *zupy*: *barszcz* (red, from beetroot, at Christmas *z uszkami*), *żurek* (sour, from rye, often *z jajkiem* and *z kiełbasą*), *rosół* (clear, *z makaronem*), *krupnik* (with barley) and *zupa pomidorowa*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a2-e01",
+      "prompt": "barszcz",
+      "options": [
+        {
+          "en": "vegetable soup"
+        },
+        {
+          "en": "fish soup"
+        },
+        {
+          "en": "beetroot soup, borscht"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "barszcz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a2-e02",
+      "prompt": "z uszkami",
+      "options": [
+        {
+          "en": "with little dumplings (barszcz z uszkami)"
+        },
+        {
+          "en": "with nuts"
+        },
+        {
+          "en": "with vegetables"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-uszkami"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-a2-e03",
+      "text": "barszcz z uszkami",
+      "meaning": {
+        "en": "beetroot soup with little dumplings"
+      },
+      "distractors": [
+        "barszcz z jajkiem",
+        "żurek z uszkami"
+      ],
+      "items": [
+        "barszcz",
+        "z-uszkami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a2-e04",
+      "prompt": "żurek",
+      "options": [
+        {
+          "en": "beetroot soup, borscht"
+        },
+        {
+          "en": "sour rye soup"
+        },
+        {
+          "en": "fish soup"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zurek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a2-e05",
+      "prompt": "z jajkiem",
+      "options": [
+        {
+          "en": "an egg (jajka: eggs)"
+        },
+        {
+          "en": "with butter"
+        },
+        {
+          "en": "with an egg"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-jajkiem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a2-e06",
+      "prompt": {
+        "en": "sour rye soup with an egg"
+      },
+      "acceptedAnswers": [
+        "żurek z jajkiem"
+      ],
+      "distractors": [
+        "jajko",
+        "rosół"
+      ],
+      "items": [
+        "zurek",
+        "z-jajkiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a2-e07",
+      "prompt": "rosół",
+      "options": [
+        {
+          "en": "clear chicken soup, broth"
+        },
+        {
+          "en": "beetroot soup, borscht"
+        },
+        {
+          "en": "a sauce"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rosol"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a2-e08",
+      "prompt": "z makaronem",
+      "options": [
+        {
+          "en": "pasta"
+        },
+        {
+          "en": "with noodles, with pasta"
+        },
+        {
+          "en": "with cheese"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-makaronem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-a2-e09",
+      "text": "Rosół jest ___ makaronem.",
+      "meaning": {
+        "en": "The chicken soup comes with noodles."
+      },
+      "gaps": [
+        [
+          "z"
+        ]
+      ],
+      "distractors": [
+        "ze",
+        "i"
+      ],
+      "items": [
+        "rosol",
+        "byc-jest",
+        "z-makaronem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a2-e10",
+      "prompt": "krupnik",
+      "options": [
+        {
+          "en": "clear chicken soup, broth"
+        },
+        {
+          "en": "vegetable soup"
+        },
+        {
+          "en": "barley soup"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "krupnik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a2-e11",
+      "prompt": "zupa pomidorowa",
+      "options": [
+        {
+          "en": "tomato soup"
+        },
+        {
+          "en": "fish soup"
+        },
+        {
+          "en": "a tomato (pomidory: tomatoes)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zupa-pomidorowa"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-a2-e12",
+      "acceptedAnswers": [
+        "zupa pomidorowa jest dobra"
+      ],
+      "meaning": {
+        "en": "the tomato soup is good"
+      },
+      "items": [
+        "zupa-pomidorowa",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-a2-e13",
+      "prompt": {
+        "en": "clear chicken soup with noodles"
+      },
+      "acceptedAnswers": [
+        "rosół z makaronem"
+      ],
+      "items": [
+        "rosol",
+        "z-makaronem"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-a2-e14",
+      "pairs": [
+        {
+          "polish": "barszcz",
+          "meaning": {
+            "en": "beetroot soup"
+          }
+        },
+        {
+          "polish": "żurek",
+          "meaning": {
+            "en": "sour rye soup"
+          }
+        },
+        {
+          "polish": "rosół",
+          "meaning": {
+            "en": "clear chicken soup"
+          }
+        },
+        {
+          "polish": "krupnik",
+          "meaning": {
+            "en": "barley soup"
+          }
+        },
+        {
+          "polish": "zupa pomidorowa",
+          "meaning": {
+            "en": "tomato soup"
+          }
+        },
+        {
+          "polish": "z jajkiem",
+          "meaning": {
+            "en": "with an egg"
+          }
+        }
+      ],
+      "items": [
+        "barszcz",
+        "zurek",
+        "rosol",
+        "krupnik",
+        "zupa-pomidorowa",
+        "z-jajkiem"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-a2-e15",
+      "lines": [
+        "Dziś na obiad jest zupa.",
+        "Jest żurek z jajkiem albo rosół.",
+        "Barszcz jest jutro."
+      ],
+      "meaning": {
+        "en": "Today's soups."
+      },
+      "statements": [
+        {
+          "text": "Dziś jest żurek.",
+          "meaning": {
+            "en": "There is sour rye soup today."
+          },
+          "true": true
+        },
+        {
+          "text": "Dziś jest barszcz.",
+          "meaning": {
+            "en": "There is beetroot soup today."
+          },
+          "true": false
+        },
+        {
+          "text": "Rosół jest jutro.",
+          "meaning": {
+            "en": "The chicken soup is tomorrow."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "dzis",
+        "na-obiad",
+        "byc-jest",
+        "zupa",
+        "zurek",
+        "z-jajkiem",
+        "albo",
+        "rosol",
+        "barszcz",
+        "jutro"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a2-e16",
+      "prompt": {
+        "en": "beetroot soup or tomato soup?"
+      },
+      "acceptedAnswers": [
+        "barszcz czy zupa pomidorowa?"
+      ],
+      "distractors": [
+        "albo",
+        "pomidorową"
+      ],
+      "items": [
+        "barszcz",
+        "czy",
+        "zupa-pomidorowa"
+      ]
+    }
+  ]
+}

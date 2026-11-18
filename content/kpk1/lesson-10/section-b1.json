@@ -1,0 +1,436 @@
+{
+  "id": "kpk1-l10-b1",
+  "section": {
+    "letter": "B",
+    "heading": "A może rurka z kremem?",
+    "meaning": {
+      "en": "How about a cream horn?"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-b1-t01",
+      "before": "kpk1-l10-b1-e01",
+      "title": {
+        "en": "Coś słodkiego"
+      },
+      "body": {
+        "en": "In a *kawiarnia* (café) or a *cukiernia* (cake shop): *sernik*, *szarlotka*, *makowiec* (a Christmas favourite), a *gofr* with cream or fruit, and *rurka z kremem*. *Lody* (ice cream) is plural: *lody są zimne*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b1-e01",
+      "prompt": "coś słodkiego",
+      "options": [
+        {
+          "en": "sweets, confectionery"
+        },
+        {
+          "en": "a biscuit, a small cake (ciastka: biscuits)"
+        },
+        {
+          "en": "something sweet (mam ochotę na coś słodkiego)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "cos-slodkiego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b1-e02",
+      "prompt": "deser",
+      "options": [
+        {
+          "en": "a dessert"
+        },
+        {
+          "en": "a main course (on a menu: dania główne)"
+        },
+        {
+          "en": "a cake"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "deser"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-b1-e03",
+      "text": "mam ochotę na coś słodkiego",
+      "meaning": {
+        "en": "I feel like something sweet"
+      },
+      "distractors": [
+        "mam ochotę na deser",
+        "mam ochotę na lody"
+      ],
+      "items": [
+        "mam-ochote-na",
+        "cos-slodkiego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b1-e04",
+      "prompt": "rurka z kremem",
+      "options": [
+        {
+          "en": "a biscuit, a small cake (ciastka: biscuits)"
+        },
+        {
+          "en": "a cream horn (a pastry tube with cream)"
+        },
+        {
+          "en": "a sweet bun"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "rurka-z-kremem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b1-e05",
+      "prompt": "gofr",
+      "options": [
+        {
+          "en": "pancakes, crêpes"
+        },
+        {
+          "en": "a biscuit, a small cake (ciastka: biscuits)"
+        },
+        {
+          "en": "a waffle"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "gofr"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-b1-e06",
+      "prompt": {
+        "en": "a waffle or a cream horn?"
+      },
+      "acceptedAnswers": [
+        "gofr czy rurka z kremem?"
+      ],
+      "distractors": [
+        "lody",
+        "albo"
+      ],
+      "items": [
+        "gofr",
+        "czy",
+        "rurka-z-kremem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b1-e07",
+      "prompt": "lody",
+      "options": [
+        {
+          "en": "ice cream"
+        },
+        {
+          "en": "chocolate"
+        },
+        {
+          "en": "a dessert"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lody"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-b1-e08",
+      "text": "Lody są ___.",
+      "meaning": {
+        "en": "The ice cream is cold."
+      },
+      "gaps": [
+        [
+          "zimne"
+        ]
+      ],
+      "distractors": [
+        "zimny",
+        "zimna"
+      ],
+      "items": [
+        "lody",
+        "byc-sa",
+        "zimny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b1-e09",
+      "prompt": "sernik",
+      "options": [
+        {
+          "en": "apple pie, apple cake"
+        },
+        {
+          "en": "cheesecake"
+        },
+        {
+          "en": "cheese"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sernik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b1-e10",
+      "prompt": "szarlotka",
+      "options": [
+        {
+          "en": "cheesecake"
+        },
+        {
+          "en": "poppy-seed cake"
+        },
+        {
+          "en": "apple pie, apple cake"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szarlotka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b1-e11",
+      "prompt": "makowiec",
+      "options": [
+        {
+          "en": "poppy-seed cake"
+        },
+        {
+          "en": "apple pie, apple cake"
+        },
+        {
+          "en": "a sweet bun"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "makowiec"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-b1-e12",
+      "acceptedAnswers": [
+        "sernik jest pyszny"
+      ],
+      "meaning": {
+        "en": "the cheesecake is delicious"
+      },
+      "items": [
+        "sernik",
+        "byc-jest",
+        "pyszny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-b1-e13",
+      "prompt": {
+        "en": "cheesecake and apple pie"
+      },
+      "acceptedAnswers": [
+        "sernik i szarlotka",
+        "szarlotka i sernik"
+      ],
+      "items": [
+        "sernik",
+        "i",
+        "szarlotka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-b1-e14",
+      "pairs": [
+        {
+          "polish": "deser",
+          "meaning": {
+            "en": "a dessert"
+          }
+        },
+        {
+          "polish": "gofr",
+          "meaning": {
+            "en": "a waffle"
+          }
+        },
+        {
+          "polish": "lody",
+          "meaning": {
+            "en": "ice cream"
+          }
+        },
+        {
+          "polish": "sernik",
+          "meaning": {
+            "en": "cheesecake"
+          }
+        },
+        {
+          "polish": "szarlotka",
+          "meaning": {
+            "en": "apple pie"
+          }
+        },
+        {
+          "polish": "makowiec",
+          "meaning": {
+            "en": "poppy-seed cake"
+          }
+        }
+      ],
+      "items": [
+        "deser",
+        "gofr",
+        "lody",
+        "sernik",
+        "szarlotka",
+        "makowiec"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-b1-e15",
+      "lines": [
+        "Masz ochotę na coś słodkiego?",
+        "Tak, na lody.",
+        "A ja na gofr.",
+        "Dobrze, idziemy."
+      ],
+      "meaning": {
+        "en": "Something sweet."
+      },
+      "items": [
+        "mam-ochote-na",
+        "cos-slodkiego",
+        "tak",
+        "lody",
+        "a",
+        "ja",
+        "gofr",
+        "dobrze",
+        "isc-idziemy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-b1-e16",
+      "prompt": {
+        "en": "the poppy-seed cake is sweet"
+      },
+      "acceptedAnswers": [
+        "makowiec jest słodki"
+      ],
+      "distractors": [
+        "słodka",
+        "sernik"
+      ],
+      "items": [
+        "makowiec",
+        "byc-jest",
+        "slodki"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-b1-e17",
+      "lines": [
+        "Kawiarnia jest czynna.",
+        "Deser to rurka z kremem, a do picia chłodny kompot.",
+        "Ewa daje napiwek."
+      ],
+      "meaning": {
+        "en": "An afternoon at the café."
+      },
+      "statements": [
+        {
+          "text": "Kawiarnia jest zamknięta.",
+          "meaning": {
+            "en": "The café is closed."
+          },
+          "true": false
+        },
+        {
+          "text": "Deser to rurka z kremem.",
+          "meaning": {
+            "en": "The dessert is a cream horn."
+          },
+          "true": true
+        },
+        {
+          "text": "Kompot jest gorący.",
+          "meaning": {
+            "en": "The compote is hot."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "kawiarnia",
+        "byc-jest",
+        "czynny",
+        "deser",
+        "to",
+        "rurka-z-kremem",
+        "a",
+        "do-picia",
+        "chlodny",
+        "kompot",
+        "ewa",
+        "napiwek"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-b1-e18",
+      "prompt": {
+        "en": "do you like the cheesecake? (of food; one friend)"
+      },
+      "acceptedAnswers": [
+        "smakuje ci sernik?"
+      ],
+      "distractors": [
+        "lubisz",
+        "sernika"
+      ],
+      "items": [
+        "smakuje-ci",
+        "sernik"
+      ]
+    }
+  ]
+}

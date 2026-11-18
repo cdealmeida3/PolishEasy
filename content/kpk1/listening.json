@@ -4323,6 +4323,651 @@
         9,
         9
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "l10-112-1",
+      "track": 112,
+      "question": "Rezerwacja jest na godzinę… Na którą?",
+      "meaning": {
+        "en": "The booking is for … o’clock. Which hour?"
+      },
+      "acceptedAnswers": [
+        "16",
+        "szesnastą",
+        "szesnasta",
+        "szesnaście"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-112-2",
+      "track": 112,
+      "statement": "Klienci mają rezerwację.",
+      "meaning": {
+        "en": "The customers have a booking."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-112-3",
+      "track": 112,
+      "question": "Co kelner zaraz poda?",
+      "meaning": {
+        "en": "What will the waiter bring in a moment?"
+      },
+      "options": [
+        "Kartę.",
+        "Rachunek.",
+        "Kawę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-113-1",
+      "track": 113,
+      "question": "Co poleca kelnerka?",
+      "meaning": {
+        "en": "What does the waitress recommend?"
+      },
+      "options": [
+        "Rosół, żurek i bigos.",
+        "Barszcz i pierogi.",
+        "Kotlet schabowy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-113-2",
+      "track": 113,
+      "statement": "Pierwszy klient zamawia rosół.",
+      "meaning": {
+        "en": "The first customer orders chicken soup."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-113-3",
+      "track": 113,
+      "question": "Co zamawia drugi klient?",
+      "meaning": {
+        "en": "What does the second customer order?"
+      },
+      "options": [
+        "To samo, tylko z frytkami.",
+        "Żurek z jajkiem.",
+        "Bigos."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-113-4",
+      "track": 113,
+      "statement": "Żurek jest z jajkiem i kiełbasą.",
+      "meaning": {
+        "en": "The sour rye soup comes with an egg and sausage."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-113-5",
+      "track": 113,
+      "statement": "Jeden klient nie chce zupy.",
+      "meaning": {
+        "en": "One customer does not want soup."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-113-6",
+      "track": 113,
+      "question": "Co zamawiają do picia?",
+      "meaning": {
+        "en": "What do they order to drink?"
+      },
+      "options": [
+        "Dwie herbaty i dwa piwa.",
+        "Cztery piwa.",
+        "Kompot i wodę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-113-7",
+      "track": 113,
+      "statement": "W restauracji można palić.",
+      "meaning": {
+        "en": "You can smoke inside the restaurant."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l10-114-1",
+      "track": 114,
+      "question": "Ile piw zamawiają?",
+      "meaning": {
+        "en": "How many beers do they order? (they say: … razy piwo)"
+      },
+      "acceptedAnswers": [
+        "dwa",
+        "2"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-114-2",
+      "track": 114,
+      "question": "Co jeszcze zamawia klient, który ma ochotę na bigos?",
+      "meaning": {
+        "en": "What else does the customer who fancies bigos order?"
+      },
+      "options": [
+        "Gołąbki.",
+        "Pierogi.",
+        "Rosół."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-114-3",
+      "track": 114,
+      "statement": "Kotlet schabowy jest z ziemniakami.",
+      "meaning": {
+        "en": "The pork chop comes with potatoes."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-114-4",
+      "track": 114,
+      "statement": "Herbata jest z cytryną.",
+      "meaning": {
+        "en": "The tea comes with lemon."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-115-1",
+      "track": 115,
+      "statement": "Dziewczyna ma ochotę na coś słodkiego.",
+      "meaning": {
+        "en": "The girl feels like something sweet."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-115-2",
+      "track": 115,
+      "statement": "Dziewczyna zna dobrą kawiarnię.",
+      "meaning": {
+        "en": "The girl knows a good café."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-115-3",
+      "track": 115,
+      "question": "Czego dziewczyna nie chce pić?",
+      "meaning": {
+        "en": "What does the girl not want to drink?"
+      },
+      "options": [
+        "Piwa ani wina.",
+        "Wody.",
+        "Gorącej czekolady."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-115-4",
+      "track": 115,
+      "question": "Co chce zjeść dziewczyna?",
+      "meaning": {
+        "en": "What does the girl want to eat?"
+      },
+      "options": [
+        "Coś słodkiego.",
+        "Zapiekankę.",
+        "Pierogi."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-115-5",
+      "track": 115,
+      "question": "Gdzie jest kawiarnia?",
+      "meaning": {
+        "en": "Where is the café?"
+      },
+      "options": [
+        "Na rynku.",
+        "Na targu.",
+        "W supermarkecie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-115-6",
+      "track": 115,
+      "statement": "W kawiarni jest czekolada do picia i do jedzenia.",
+      "meaning": {
+        "en": "The café has chocolate to drink and to eat."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-116-1",
+      "track": 116,
+      "question": "Jaki deser zamawia pierwsza pani?",
+      "meaning": {
+        "en": "Which dessert does the first woman order?"
+      },
+      "options": [
+        "Deser owocowy z bitą śmietaną.",
+        "Lody z owocami.",
+        "Tiramisu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-116-2",
+      "track": 116,
+      "statement": "Pierwsza pani pije gorącą czekoladę.",
+      "meaning": {
+        "en": "The first woman drinks hot chocolate."
+      },
+      "answer": true,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-116-3",
+      "track": 116,
+      "question": "Jaką szarlotkę zamawia druga pani?",
+      "meaning": {
+        "en": "Which apple pie does the second woman order?"
+      },
+      "options": [
+        "Na ciepło, z lodami.",
+        "Na zimno, z bitą śmietaną.",
+        "Bez lodów."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-116-4",
+      "track": 116,
+      "statement": "Druga pani pije czarną kawę.",
+      "meaning": {
+        "en": "The second woman drinks black coffee."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-117-1",
+      "track": 117,
+      "statement": "Klient dostaje piwo.",
+      "meaning": {
+        "en": "The customer gets a beer."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-117-2",
+      "track": 117,
+      "question": "Co poleca kelner?",
+      "meaning": {
+        "en": "What does the waiter recommend?"
+      },
+      "options": [
+        "Kawę.",
+        "Herbatę.",
+        "Wino."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-117-3",
+      "track": 117,
+      "question": "Co klient je do kawy?",
+      "meaning": {
+        "en": "What does the customer have with his coffee?"
+      },
+      "options": [
+        "Sernik.",
+        "Szarlotkę.",
+        "Lody."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l10-118-1",
+      "track": 118,
+      "question": "Ile koktajli truskawkowych zamawiają?",
+      "meaning": {
+        "en": "How many strawberry smoothies do they order?"
+      },
+      "acceptedAnswers": [
+        "trzy",
+        "3"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-118-2",
+      "track": 118,
+      "statement": "Klienci zamawiają też koktajle bananowe.",
+      "meaning": {
+        "en": "The customers also order banana smoothies."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-118-3",
+      "track": 118,
+      "question": "Jakie lody zamawiają?",
+      "meaning": {
+        "en": "What ice cream do they order?"
+      },
+      "options": [
+        "Z owocami i bitą śmietaną.",
+        "Czekoladowe.",
+        "Z orzechami."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l10-118-4",
+      "track": 118,
+      "question": "Ile razy sernik?",
+      "meaning": {
+        "en": "How many cheesecakes? (one word: once)"
+      },
+      "acceptedAnswers": [
+        "raz",
+        "1",
+        "jeden"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-119-1",
+      "track": 119,
+      "question": "Dokąd oni idą dzisiaj?",
+      "meaning": {
+        "en": "Where are they going today?"
+      },
+      "options": [
+        "Do pubu.",
+        "Do kina.",
+        "Do kawiarni."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-119-2",
+      "track": 119,
+      "statement": "Ona jeszcze czeka na wiadomość.",
+      "meaning": {
+        "en": "She is still waiting for a message."
+      },
+      "answer": true,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l10-119-3",
+      "track": 119,
+      "question": "Z tobą… Gdzie?",
+      "meaning": {
+        "en": "With you… where? (everywhere)"
+      },
+      "acceptedAnswers": [
+        "wszędzie"
+      ],
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l10-119-4",
+      "track": 119,
+      "question": "Na końcu: z … wszędzie. Z kim?",
+      "meaning": {
+        "en": "At the end: with … everywhere. With whom? (you, several people)"
+      },
+      "acceptedAnswers": [
+        "wami"
+      ],
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-120-1",
+      "track": 120,
+      "question": "Jaki sos ma pierwsza zapiekanka?",
+      "meaning": {
+        "en": "What sauce is on the first zapiekanka?"
+      },
+      "options": [
+        "Czosnkowy.",
+        "Keczup.",
+        "Majonez."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-120-2",
+      "track": 120,
+      "statement": "Druga zapiekanka jest z szynką.",
+      "meaning": {
+        "en": "The second zapiekanka has ham."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l10-120-3",
+      "track": 120,
+      "statement": "Trzecia zapiekanka jest z kurczakiem i kukurydzą.",
+      "meaning": {
+        "en": "The third zapiekanka has chicken and sweetcorn."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l10-120-4",
+      "track": 120,
+      "question": "Co mówi ostatnia osoba?",
+      "meaning": {
+        "en": "What does the last person say?"
+      },
+      "options": [
+        "Dla mnie taka sama.",
+        "Dla mnie bez sera.",
+        "Dla mnie z boczkiem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
     }
   ]
 }

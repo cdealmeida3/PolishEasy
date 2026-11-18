@@ -1,0 +1,370 @@
+{
+  "id": "kpk1-l10-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Zapraszam was na obiad",
+    "meaning": {
+      "en": "Come for dinner"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-a3-t01",
+      "before": "kpk1-l10-a3-e01",
+      "title": {
+        "en": "Dania"
+      },
+      "body": {
+        "en": "A main dish is often meat: *kotlet schabowy* (pork in breadcrumbs), *kotlet mielony* (minced), *bigos* (cabbage and meat) and *gołąbki* (cabbage leaves with meat and rice). Without meat there are *pierogi ruskie* (with potato and cheese), *naleśniki* and *placki ziemniaczane*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a3-e01",
+      "prompt": "danie",
+      "options": [
+        {
+          "en": "food"
+        },
+        {
+          "en": "a dish, a course (dania: dishes)"
+        },
+        {
+          "en": "dinner, the main meal of the day"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "danie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a3-e02",
+      "prompt": "kotlet schabowy",
+      "options": [
+        {
+          "en": "a cutlet, a chop"
+        },
+        {
+          "en": "a chicken; chicken (the meat)"
+        },
+        {
+          "en": "a breaded pork chop"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kotlet-schabowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a3-e03",
+      "prompt": "kotlet mielony",
+      "options": [
+        {
+          "en": "a minced meat patty"
+        },
+        {
+          "en": "a breaded pork chop"
+        },
+        {
+          "en": "a sausage"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kotlet-mielony"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-a3-e04",
+      "text": "kotlet schabowy i surówka",
+      "meaning": {
+        "en": "a pork chop and a raw vegetable salad"
+      },
+      "distractors": [
+        "kotlet mielony i surówka",
+        "kotlet schabowy i frytki"
+      ],
+      "items": [
+        "kotlet-schabowy",
+        "i",
+        "surowka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a3-e05",
+      "prompt": "bigos",
+      "options": [
+        {
+          "en": "cabbage rolls (with meat and rice)"
+        },
+        {
+          "en": "hunter's stew (cabbage and meat)"
+        },
+        {
+          "en": "soup"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bigos"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a3-e06",
+      "prompt": "gołąbki",
+      "options": [
+        {
+          "en": "hunter's stew (cabbage and meat)"
+        },
+        {
+          "en": "pierogi (Polish dumplings)"
+        },
+        {
+          "en": "cabbage rolls (with meat and rice)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "golabki"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a3-e07",
+      "prompt": {
+        "en": "cabbage rolls and hunter's stew"
+      },
+      "acceptedAnswers": [
+        "gołąbki i bigos"
+      ],
+      "distractors": [
+        "gołąbek",
+        "kapusta"
+      ],
+      "items": [
+        "golabki",
+        "i",
+        "bigos"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a3-e08",
+      "prompt": "pierogi ruskie",
+      "options": [
+        {
+          "en": "pierogi with potato and cheese"
+        },
+        {
+          "en": "pierogi (Polish dumplings)"
+        },
+        {
+          "en": "pancakes, crêpes"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pierogi-ruskie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a3-e09",
+      "prompt": "naleśniki",
+      "options": [
+        {
+          "en": "potato pancakes"
+        },
+        {
+          "en": "pancakes, crêpes"
+        },
+        {
+          "en": "a cake"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nalesniki"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-a3-e10",
+      "text": "Naleśniki są ___ serem.",
+      "meaning": {
+        "en": "The pancakes come with cheese."
+      },
+      "gaps": [
+        [
+          "z"
+        ]
+      ],
+      "distractors": [
+        "ze",
+        "i"
+      ],
+      "items": [
+        "nalesniki",
+        "byc-sa",
+        "z-serem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a3-e11",
+      "prompt": "placki ziemniaczane",
+      "options": [
+        {
+          "en": "pancakes, crêpes"
+        },
+        {
+          "en": "potatoes"
+        },
+        {
+          "en": "potato pancakes"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "placki-ziemniaczane"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-a3-e12",
+      "acceptedAnswers": [
+        "bigos to polskie danie"
+      ],
+      "meaning": {
+        "en": "hunter's stew is a Polish dish"
+      },
+      "items": [
+        "bigos",
+        "to",
+        "polski",
+        "danie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-a3-e13",
+      "prompt": {
+        "en": "potato pancakes with sour cream"
+      },
+      "acceptedAnswers": [
+        "placki ziemniaczane ze śmietaną"
+      ],
+      "items": [
+        "placki-ziemniaczane",
+        "ze-smietana"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-a3-e14",
+      "pairs": [
+        {
+          "polish": "kotlet schabowy",
+          "meaning": {
+            "en": "a breaded pork chop"
+          }
+        },
+        {
+          "polish": "kotlet mielony",
+          "meaning": {
+            "en": "a minced meat patty"
+          }
+        },
+        {
+          "polish": "bigos",
+          "meaning": {
+            "en": "hunter's stew"
+          }
+        },
+        {
+          "polish": "gołąbki",
+          "meaning": {
+            "en": "cabbage rolls"
+          }
+        },
+        {
+          "polish": "naleśniki",
+          "meaning": {
+            "en": "pancakes"
+          }
+        },
+        {
+          "polish": "placki ziemniaczane",
+          "meaning": {
+            "en": "potato pancakes"
+          }
+        }
+      ],
+      "items": [
+        "kotlet-schabowy",
+        "kotlet-mielony",
+        "bigos",
+        "golabki",
+        "nalesniki",
+        "placki-ziemniaczane"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-a3-e15",
+      "lines": [
+        "Co jest dziś na obiad?",
+        "Gołąbki albo pierogi ruskie.",
+        "Wolę pierogi.",
+        "Ja też."
+      ],
+      "meaning": {
+        "en": "Choosing today's dinner."
+      },
+      "items": [
+        "co",
+        "byc-jest",
+        "dzis",
+        "na-obiad",
+        "golabki",
+        "albo",
+        "pierogi-ruskie",
+        "wolec-wole",
+        "pierogi",
+        "ja",
+        "tez"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a3-e16",
+      "prompt": {
+        "en": "the dishes are tasty"
+      },
+      "acceptedAnswers": [
+        "dania są smaczne"
+      ],
+      "distractors": [
+        "danie",
+        "smaczny"
+      ],
+      "items": [
+        "danie",
+        "byc-sa",
+        "smaczny"
+      ]
+    }
+  ]
+}

@@ -58,6 +58,9 @@
             "text": "19"
         },
         {
+            "text": "2"
+        },
+        {
             "text": "20 19 25"
         },
         {
@@ -140,10 +143,16 @@
             "meaning": "And bananas? These green ones?"
         },
         {
+            "text": "A co do picia?"
+        },
+        {
             "text": "A co lubisz pić?"
         },
         {
             "text": "A co robi pana córka?"
+        },
+        {
+            "text": "A co z nim?"
         },
         {
             "text": "A cukier?"
@@ -153,8 +162,26 @@
             "meaning": "And is this your dictionary?"
         },
         {
+            "text": "A danie główne?",
+            "meaning": "And the main course?"
+        },
+        {
+            "text": "A deser?",
+            "meaning": "And dessert?"
+        },
+        {
+            "text": "A dla mnie to samo."
+        },
+        {
             "text": "A dlaczego pan uczy się polskiego?",
             "meaning": "And why are you learning Polish?"
+        },
+        {
+            "text": "A do picia?",
+            "meaning": "And to drink?"
+        },
+        {
+            "text": "A drób?"
         },
         {
             "text": "A gdzie jest drogeria?"
@@ -191,10 +218,23 @@
             "text": "A ja interesuję się kinem."
         },
         {
+            "text": "A ja na gofr."
+        },
+        {
             "text": "A kalafior?"
         },
         {
+            "text": "A może rurka z kremem?",
+            "meaning": "How about a cream horn?"
+        },
+        {
             "text": "A potem idę na kawę ze znajomymi."
+        },
+        {
+            "text": "A restauracja?"
+        },
+        {
+            "text": "A sos?"
         },
         {
             "text": "A szampon?"
@@ -363,11 +403,23 @@
             "meaning": "Adam buys water."
         },
         {
+            "text": "Adam lubi kawę z mlekiem.",
+            "meaning": "Adam likes coffee with milk."
+        },
+        {
+            "text": "Adam lubi piwo.",
+            "meaning": "Adam likes beer."
+        },
+        {
             "text": "Adam lubi słuchać muzyki.",
             "meaning": "Adam likes listening to music."
         },
         {
             "text": "Adam lubi tańczyć i chodzić do klubu."
+        },
+        {
+            "text": "Adam lubi zimne mleko.",
+            "meaning": "Adam likes cold milk."
         },
         {
             "text": "Adam ma biały ser.",
@@ -414,6 +466,13 @@
         {
             "text": "Adam musi uczyć się do egzaminu.",
             "meaning": "Adam has to study for an exam."
+        },
+        {
+            "text": "Adam myśli, że cielęcina jest niedobra.",
+            "meaning": "Adam thinks the veal is not good."
+        },
+        {
+            "text": "Adam myśli, że jest niedobra."
         },
         {
             "text": "Adam mówi też po angielsku",
@@ -560,6 +619,13 @@
             "meaning": "Adam works at the weekend."
         },
         {
+            "text": "Adam zamawia gofr.",
+            "meaning": "Adam orders a waffle."
+        },
+        {
+            "text": "Adam zamawia koktajl i gofr z bitą śmietaną."
+        },
+        {
             "text": "Adam.",
             "meaning": "My first name is Adam."
         },
@@ -641,6 +707,12 @@
             "text": "Bardzo?"
         },
         {
+            "text": "Barszcz i pierogi."
+        },
+        {
+            "text": "Barszcz jest jutro."
+        },
+        {
             "text": "Bazylia jest suszona.",
             "meaning": "The basil is dried."
         },
@@ -660,6 +732,9 @@
             "meaning": "Without sugar, thank you."
         },
         {
+            "text": "Bez lodów."
+        },
+        {
             "text": "Biała kawa to kawa z mlekiem.",
             "meaning": "White coffee is coffee with milk."
         },
@@ -669,6 +744,9 @@
         {
             "text": "Biernik",
             "meaning": "The accusative"
+        },
+        {
+            "text": "Bigos."
         },
         {
             "text": "Bilet kosztuje trzy złote i czterdzieści groszy.",
@@ -873,6 +951,10 @@
             "meaning": "I wonder where he is from."
         },
         {
+            "text": "Cielęcina jest z grilla.",
+            "meaning": "The veal is grilled."
+        },
+        {
             "text": "Ciemny chleb z margaryną."
         },
         {
@@ -885,6 +967,10 @@
         {
             "text": "Co bardzo lubi druga dziewczyna?",
             "meaning": "What does the other girl like very much?"
+        },
+        {
+            "text": "Co chce zjeść dziewczyna?",
+            "meaning": "What does the girl want to eat?"
         },
         {
             "text": "Co dziewczyna może kupić do picia?",
@@ -923,6 +1009,9 @@
             "meaning": "What's for supper today?"
         },
         {
+            "text": "Co jest dziś na obiad?"
+        },
+        {
             "text": "Co jest na fotografii z wakacji?",
             "meaning": "What is in the holiday photo?"
         },
@@ -943,7 +1032,19 @@
             "meaning": "What is there in the shopping centre?"
         },
         {
+            "text": "Co jeszcze zamawia klient, który ma ochotę na bigos?",
+            "meaning": "What else does the customer who fancies bigos order?"
+        },
+        {
             "text": "Co jeszcze?"
+        },
+        {
+            "text": "Co kelner zaraz poda?",
+            "meaning": "What will the waiter bring in a moment?"
+        },
+        {
+            "text": "Co klient je do kawy?",
+            "meaning": "What does the customer have with his coffee?"
         },
         {
             "text": "Co kolekcjonuje tata Mami?",
@@ -1004,6 +1105,10 @@
             "meaning": "What does the teacher say instead of “a ty?”?"
         },
         {
+            "text": "Co mówi ostatnia osoba?",
+            "meaning": "What does the last person say?"
+        },
+        {
             "text": "Co mówi pani na początku?",
             "meaning": "What does the woman say first?"
         },
@@ -1031,6 +1136,10 @@
             "meaning": "What are they ordering?"
         },
         {
+            "text": "Co pani poleca?",
+            "meaning": "What do you recommend?"
+        },
+        {
             "text": "Co pani robi?"
         },
         {
@@ -1047,6 +1156,17 @@
         {
             "text": "Co piszesz?",
             "meaning": "What are you writing?"
+        },
+        {
+            "text": "Co podać?"
+        },
+        {
+            "text": "Co poleca kelner?",
+            "meaning": "What does the waiter recommend?"
+        },
+        {
+            "text": "Co poleca kelnerka?",
+            "meaning": "What does the waitress recommend?"
         },
         {
             "text": "Co robi chłopak?",
@@ -1140,7 +1260,18 @@
             "text": "Co u ciebie?"
         },
         {
+            "text": "Co zamawia drugi klient?",
+            "meaning": "What does the second customer order?"
+        },
+        {
+            "text": "Co zamawiają do picia?",
+            "meaning": "What do they order to drink?"
+        },
+        {
             "text": "Coś jeszcze?"
+        },
+        {
+            "text": "Coś słodkiego."
         },
         {
             "text": "Czarne."
@@ -1149,8 +1280,18 @@
             "text": "Czarną."
         },
         {
+            "text": "Czego dziewczyna nie chce pić?",
+            "meaning": "What does the girl not want to drink?"
+        },
+        {
             "text": "Czego on szuka?",
             "meaning": "What is he looking for?"
+        },
+        {
+            "text": "Czekam na SMS."
+        },
+        {
+            "text": "Czekoladowe."
         },
         {
             "text": "Czerwone wino."
@@ -1270,6 +1411,9 @@
             "text": "Cześć."
         },
         {
+            "text": "Czosnkowy."
+        },
+        {
             "text": "Czterdzieści cztery lata."
         },
         {
@@ -1286,6 +1430,9 @@
         },
         {
             "text": "Czternaście lat."
+        },
+        {
+            "text": "Cztery piwa."
         },
         {
             "text": "Cztery złote."
@@ -1364,7 +1511,8 @@
             "meaning": "Is it a board? Yes, it is a board."
         },
         {
-            "text": "Czy to wszystko?"
+            "text": "Czy to wszystko?",
+            "meaning": "Is that all?"
         },
         {
             "text": "Czy ty chodzisz do szkoły?",
@@ -1423,7 +1571,62 @@
             "meaning": "Personal details"
         },
         {
+            "text": "Danie dnia to zupa pomidorowa."
+        },
+        {
+            "text": "Danie dnia to zupa.",
+            "meaning": "The dish of the day is soup."
+        },
+        {
+            "text": "Danie główne to cielęcina z grilla."
+        },
+        {
+            "text": "Danie główne to wołowina.",
+            "meaning": "The main course is beef."
+        },
+        {
             "text": "Daniel"
+        },
+        {
+            "text": "Deser owocowy z bitą śmietaną."
+        },
+        {
+            "text": "Deser to rurka z kremem, a do picia chłodny kompot."
+        },
+        {
+            "text": "Deser to rurka z kremem.",
+            "meaning": "The dessert is a cream horn."
+        },
+        {
+            "text": "Dla mnie barszcz z uszkami.",
+            "meaning": "Beetroot soup with little dumplings for me."
+        },
+        {
+            "text": "Dla mnie barszcz z uszkami.",
+            "meaning": "The beetroot soup with little dumplings for me."
+        },
+        {
+            "text": "Dla mnie bez sera."
+        },
+        {
+            "text": "Dla mnie kawałek sernika."
+        },
+        {
+            "text": "Dla mnie taka sama."
+        },
+        {
+            "text": "Dla mnie to samo.",
+            "meaning": "The same for me."
+        },
+        {
+            "text": "Dla mnie z boczkiem."
+        },
+        {
+            "text": "Dla mnie żurek z jajkiem.",
+            "meaning": "The sour rye soup with an egg for me."
+        },
+        {
+            "text": "Dla mnie żurek."
         },
         {
             "text": "Dlaczego Angela uczy się polskiego?",
@@ -1488,7 +1691,26 @@
             "meaning": "Bye-bye! See you tomorrow!"
         },
         {
+            "text": "Do kawiarni."
+        },
+        {
+            "text": "Do kina."
+        },
+        {
+            "text": "Do picia jest kompot."
+        },
+        {
+            "text": "Do picia jest piwo.",
+            "meaning": "There is beer to drink."
+        },
+        {
             "text": "Do picia kupuje dwa piwa."
+        },
+        {
+            "text": "Do picia ma czarną kawę."
+        },
+        {
+            "text": "Do pubu."
         },
         {
             "text": "Do widzenia!",
@@ -1552,6 +1774,9 @@
             "meaning": "Fine, thank you."
         },
         {
+            "text": "Dobrze, idziemy."
+        },
+        {
             "text": "Dobrze, na razie!",
             "meaning": "All right! See you!"
         },
@@ -1583,6 +1808,10 @@
             "meaning": "Fine. I'll pay by card."
         },
         {
+            "text": "Dokąd oni idą dzisiaj?",
+            "meaning": "Where are they going today?"
+        },
+        {
             "text": "Drogi."
         },
         {
@@ -1602,8 +1831,16 @@
             "meaning": "The other girl has a long list."
         },
         {
+            "text": "Druga pani pije czarną kawę.",
+            "meaning": "The second woman drinks black coffee."
+        },
+        {
             "text": "Druga rzecz to długopis.",
             "meaning": "The second thing is a pen."
+        },
+        {
+            "text": "Druga zapiekanka jest z szynką.",
+            "meaning": "The second zapiekanka has ham."
         },
         {
             "text": "Drugie danie to kotlet, ziemniaki i surówka.",
@@ -1649,6 +1886,9 @@
             "meaning": "Two plus three equals six."
         },
         {
+            "text": "Dwa razy kompot."
+        },
+        {
             "text": "Dwa złote."
         },
         {
@@ -1687,6 +1927,9 @@
             "meaning": "Two red peppers, please."
         },
         {
+            "text": "Dwie herbaty i dwa piwa."
+        },
+        {
             "text": "Dwie żółte papryki, proszę.",
             "meaning": "Two yellow peppers, please."
         },
@@ -1722,6 +1965,10 @@
             "meaning": "The girl is from Japan and speaks Japanese."
         },
         {
+            "text": "Dziewczyna ma ochotę na coś słodkiego.",
+            "meaning": "The girl feels like something sweet."
+        },
+        {
             "text": "Dziewczyna może kupić dwa wina.",
             "meaning": "The girl can buy two wines."
         },
@@ -1744,6 +1991,10 @@
         {
             "text": "Dziewczyna woli grać na komputerze.",
             "meaning": "The girl prefers playing computer games."
+        },
+        {
+            "text": "Dziewczyna zna dobrą kawiarnię.",
+            "meaning": "The girl knows a good café."
         },
         {
             "text": "Dziewczyna ćwiczy liczebniki.",
@@ -1831,6 +2082,18 @@
             "meaning": "Good morning! Everything is fine, and with you?"
         },
         {
+            "text": "Dzień dobry! Zapraszam.",
+            "meaning": "Hello! Come in."
+        },
+        {
+            "text": "Dzień dobry, mam rezerwację.",
+            "meaning": "Hello, I have a booking."
+        },
+        {
+            "text": "Dzień dobry, mam rezerwację.",
+            "meaning": "Hello. I have a booking."
+        },
+        {
             "text": "Dzień dobry, poproszę cztery pomidory.",
             "meaning": "Hello. I'd like four tomatoes, please."
         },
@@ -1854,6 +2117,10 @@
             "text": "Dzień dobry. Ile kosztuje sok?"
         },
         {
+            "text": "Dzień dobry. Mam rezerwację.",
+            "meaning": "Hello. I have a booking."
+        },
+        {
             "text": "Dzień dobry. Nazywam się Adam.",
             "meaning": "Good morning. My name is Adam."
         },
@@ -1864,6 +2131,10 @@
         {
             "text": "Dzień dobry. Poproszę dwa pomidory.",
             "meaning": "Hello. I'd like two tomatoes, please."
+        },
+        {
+            "text": "Dzień dobry. Poproszę rachunek.",
+            "meaning": "Hello. I'd like the bill, please."
         },
         {
             "text": "Dzień dobry. Proszę bilet na autobus."
@@ -1968,14 +2239,36 @@
             "meaning": "Thank you. Everything is in order. Goodbye!"
         },
         {
+            "text": "Dziś jest barszcz.",
+            "meaning": "There is beetroot soup today."
+        },
+        {
+            "text": "Dziś jest kaczka.",
+            "meaning": "There is duck today."
+        },
+        {
+            "text": "Dziś jest żurek.",
+            "meaning": "There is sour rye soup today."
+        },
+        {
             "text": "Dziś kończy kurs i jest zmęczony."
         },
         {
             "text": "Dziś mama robi kolację."
         },
         {
+            "text": "Dziś na obiad jest indyk z grilla."
+        },
+        {
+            "text": "Dziś na obiad jest zupa."
+        },
+        {
             "text": "Dziś one kupują rybę.",
             "meaning": "Today they are buying fish."
+        },
+        {
+            "text": "Dziś zamawiam żurek i kompot.",
+            "meaning": "Today I am ordering sour rye soup and compote."
         },
         {
             "text": "Dziś."
@@ -2016,6 +2309,9 @@
             "meaning": "Ewa is reading a book."
         },
         {
+            "text": "Ewa daje napiwek."
+        },
+        {
             "text": "Ewa dobrze zna Kraków.",
             "meaning": "Ewa knows Kraków well."
         },
@@ -2030,6 +2326,13 @@
         {
             "text": "Ewa gotuje polską zupę.",
             "meaning": "Ewa is cooking a Polish soup."
+        },
+        {
+            "text": "Ewa i Adam idą do kina.",
+            "meaning": "Ewa and Adam are going to the cinema."
+        },
+        {
+            "text": "Ewa i Adam idą do pubu."
         },
         {
             "text": "Ewa i Adam są w supermarkecie."
@@ -2175,6 +2478,10 @@
             "meaning": "Ewa likes reading."
         },
         {
+            "text": "Ewa lubi drób.",
+            "meaning": "Ewa likes poultry."
+        },
+        {
             "text": "Ewa lubi gruszki.",
             "meaning": "Ewa likes pears."
         },
@@ -2228,12 +2535,20 @@
             "meaning": "Ewa has white bread."
         },
         {
+            "text": "Ewa ma jutro urodziny.",
+            "meaning": "It's Ewa's birthday tomorrow."
+        },
+        {
             "text": "Ewa ma kota.",
             "meaning": "Ewa has a cat."
         },
         {
             "text": "Ewa ma monety.",
             "meaning": "Ewa has coins."
+        },
+        {
+            "text": "Ewa ma rezerwację.",
+            "meaning": "Ewa has a booking."
         },
         {
             "text": "Ewa ma trzy lata",
@@ -2292,6 +2607,10 @@
             "meaning": "Ewa is drinking white wine."
         },
         {
+            "text": "Ewa pije herbatę owocową.",
+            "meaning": "Ewa is drinking fruit tea."
+        },
+        {
             "text": "Ewa pije herbatę z cytryną i z cukrem."
         },
         {
@@ -2348,6 +2667,16 @@
             "meaning": "Ewa can sing."
         },
         {
+            "text": "Ewa zamawia barszcz.",
+            "meaning": "Ewa orders beetroot soup."
+        },
+        {
+            "text": "Ewa zamawia szarlotkę na ciepło z lodami."
+        },
+        {
+            "text": "Ewa zamawia żurek z jajkiem."
+        },
+        {
             "text": "Ewa, co czytasz?"
         },
         {
@@ -2400,6 +2729,10 @@
         {
             "text": "Gdzie jest jej rodzina?",
             "meaning": "Where is her family?"
+        },
+        {
+            "text": "Gdzie jest kawiarnia?",
+            "meaning": "Where is the café?"
         },
         {
             "text": "Gdzie jest mój długopis?",
@@ -2494,6 +2827,9 @@
             "meaning": "Where do you live? (several people)"
         },
         {
+            "text": "Gorącej czekolady."
+        },
+        {
             "text": "Gospodarz pracuje w biurze.",
             "meaning": "The host works in an office."
         },
@@ -2524,6 +2860,12 @@
         },
         {
             "text": "Gotówką."
+        },
+        {
+            "text": "Gołąbki albo pierogi ruskie."
+        },
+        {
+            "text": "Gołąbki."
         },
         {
             "text": "Gość dziękuje i idzie na kolację.",
@@ -2567,8 +2909,15 @@
             "text": "Grzybowa."
         },
         {
+            "text": "Herbata jest z cytryną.",
+            "meaning": "The tea comes with lemon."
+        },
+        {
             "text": "Herbata jest zimna.",
             "meaning": "The tea is cold."
+        },
+        {
+            "text": "Herbata owocowa, proszę."
         },
         {
             "text": "Herbatę z cytryną, proszę.",
@@ -2600,7 +2949,17 @@
             "text": "I ze śmietaną."
         },
         {
+            "text": "Idziecie z nami do pubu?"
+        },
+        {
             "text": "Idziemy tańczyć. A ty?"
+        },
+        {
+            "text": "Idziesz do pubu?"
+        },
+        {
+            "text": "Idziesz ze mną?",
+            "meaning": "Are you coming with me? (one friend)"
         },
         {
             "text": "Idą na zakupy."
@@ -2609,7 +2968,15 @@
             "text": "Idą tańczyć."
         },
         {
+            "text": "Idę do kina z nimi.",
+            "meaning": "I am going to the cinema with them."
+        },
+        {
             "text": "Idę na koncert. Chcesz iść?"
+        },
+        {
+            "text": "Ile koktajli truskawkowych zamawiają?",
+            "meaning": "How many strawberry smoothies do they order?"
         },
         {
             "text": "Ile kosztuje gazeta?",
@@ -2682,8 +3049,16 @@
             "meaning": "How many euros does she have?"
         },
         {
+            "text": "Ile piw zamawiają?",
+            "meaning": "How many beers do they order? (they say: … razy piwo)"
+        },
+        {
             "text": "Ile pomidorów chce klientka?",
             "meaning": "How many tomatoes does the customer want?"
+        },
+        {
+            "text": "Ile razy sernik?",
+            "meaning": "How many cheesecakes? (one word: once)"
         },
         {
             "text": "Ile złotych masz, kiedy dobrze typujesz trzy numery?",
@@ -2695,6 +3070,10 @@
         },
         {
             "text": "Imię i nazwisko."
+        },
+        {
+            "text": "Indyk jest z grilla.",
+            "meaning": "The turkey is grilled."
         },
         {
             "text": "Informacji."
@@ -2835,6 +3214,9 @@
             "meaning": "Me too! I think he is sporty too."
         },
         {
+            "text": "Ja też."
+        },
+        {
             "text": "Ja uczę się polskiego, bo moja dziewczyna jest z Polski.",
             "meaning": "I am learning Polish because my girlfriend is from Poland."
         },
@@ -2914,6 +3296,9 @@
             "meaning": "What is the bag like?"
         },
         {
+            "text": "Jaka zapiekanka?"
+        },
+        {
             "text": "Jaka zupa jest dziś?",
             "meaning": "What soup is there today?"
         },
@@ -2923,6 +3308,10 @@
         {
             "text": "Jaki chleb słyszysz?",
             "meaning": "Which bread do you hear?"
+        },
+        {
+            "text": "Jaki deser zamawia pierwsza pani?",
+            "meaning": "Which dessert does the first woman order?"
         },
         {
             "text": "Jaki jest Adam?",
@@ -3033,6 +3422,10 @@
             "meaning": "Which juice do you hear?"
         },
         {
+            "text": "Jaki sos ma pierwsza zapiekanka?",
+            "meaning": "What sauce is on the first zapiekanka?"
+        },
+        {
             "text": "Jaki sport uprawiasz?"
         },
         {
@@ -3070,6 +3463,10 @@
         {
             "text": "Jakie języki zna student z Francji?",
             "meaning": "What languages does the student from France know?"
+        },
+        {
+            "text": "Jakie lody zamawiają?",
+            "meaning": "What ice cream do they order?"
         },
         {
             "text": "Jakie oliwki są na pierwszej pizzy?",
@@ -3134,6 +3531,10 @@
             "meaning": "What pizza does Mami order?"
         },
         {
+            "text": "Jaką szarlotkę zamawia druga pani?",
+            "meaning": "Which apple pie does the second woman order?"
+        },
+        {
             "text": "Japonką",
             "meaning": "Japanese (a woman)"
         },
@@ -3164,6 +3565,10 @@
         },
         {
             "text": "Jasny i ciemny."
+        },
+        {
+            "text": "Jeden klient nie chce zupy.",
+            "meaning": "One customer does not want soup."
         },
         {
             "text": "Jeden kupon kosztuje dwa złote.",
@@ -3226,6 +3631,9 @@
             "meaning": "I am eating a ham sandwich."
         },
         {
+            "text": "Jest czynna."
+        },
+        {
             "text": "Jest już późno, ale Adam jeszcze je śniadanie."
         },
         {
@@ -3285,6 +3693,10 @@
             "text": "Jest trochę podłużna i miękka."
         },
         {
+            "text": "Jest weekend.",
+            "meaning": "It's the weekend."
+        },
+        {
             "text": "Jest wysoka, wysportowana i wesoła."
         },
         {
@@ -3292,6 +3704,9 @@
         },
         {
             "text": "Jest z orzechami i z rodzynkami."
+        },
+        {
+            "text": "Jest żurek z jajkiem albo rosół."
         },
         {
             "text": "Jestem Adam.",
@@ -3439,6 +3854,9 @@
             "text": "Julia"
         },
         {
+            "text": "Jutro jest kaczka."
+        },
+        {
             "text": "Jutro."
         },
         {
@@ -3475,12 +3893,21 @@
             "meaning": "I'll pay by card."
         },
         {
+            "text": "Kartę."
+        },
+        {
             "text": "Kawa bez cukru jest gorzka.",
             "meaning": "Coffee without sugar is bitter."
         },
         {
+            "text": "Kawa czy herbata?"
+        },
+        {
             "text": "Kawa i woda są tam, na prawo.",
             "meaning": "The coffee and the water are over there, on the right."
+        },
+        {
+            "text": "Kawa jest gorąca, a sok zimny."
         },
         {
             "text": "Kawa jest mocna, a herbata jest słaba.",
@@ -3505,6 +3932,17 @@
             "text": "Kawa, herbata."
         },
         {
+            "text": "Kawiarnia jest czynna.",
+            "meaning": "The café is open."
+        },
+        {
+            "text": "Kawiarnia jest nieczynna?"
+        },
+        {
+            "text": "Kawiarnia jest zamknięta.",
+            "meaning": "The café is closed."
+        },
+        {
             "text": "Kawę z mlekiem, proszę.",
             "meaning": "Coffee with milk, please."
         },
@@ -3515,8 +3953,20 @@
             "text": "Kawę."
         },
         {
+            "text": "Keczup i majonez."
+        },
+        {
+            "text": "Keczup."
+        },
+        {
+            "text": "Kelner mówi: zaraz podam menu."
+        },
+        {
             "text": "Kelner pracuje w restauracji.",
             "meaning": "A waiter works in a restaurant."
+        },
+        {
+            "text": "Kelner pyta: co podać?"
         },
         {
             "text": "Kiedy one jedzą rybę?",
@@ -3559,6 +4009,18 @@
         {
             "text": "Klasa, prezentacja",
             "meaning": "In class: introducing yourself"
+        },
+        {
+            "text": "Klienci mają rezerwację.",
+            "meaning": "The customers have a booking."
+        },
+        {
+            "text": "Klienci zamawiają też koktajle bananowe.",
+            "meaning": "The customers also order banana smoothies."
+        },
+        {
+            "text": "Klient dostaje piwo.",
+            "meaning": "The customer gets a beer."
         },
         {
             "text": "Klient kupuje ciastko.",
@@ -3649,6 +4111,10 @@
             "text": "Kolega z pracy."
         },
         {
+            "text": "Koleżanka idzie z nimi.",
+            "meaning": "A friend is going with them."
+        },
+        {
             "text": "Koleżanka jest Japonką.",
             "meaning": "The friend (a woman) is Japanese."
         },
@@ -3666,6 +4132,17 @@
             "meaning": "Colours"
         },
         {
+            "text": "Kompot i wodę."
+        },
+        {
+            "text": "Kompot jest gorący.",
+            "meaning": "The compote is hot."
+        },
+        {
+            "text": "Kompot, proszę.",
+            "meaning": "A compote, please."
+        },
+        {
             "text": "Koniugacja -ę, -isz/-ysz",
             "meaning": "Verbs in -ę, -isz and -ysz"
         },
@@ -3676,6 +4153,25 @@
         {
             "text": "Kosmetyki są w drogerii.",
             "meaning": "The cosmetics are at the drugstore."
+        },
+        {
+            "text": "Kotlet mielony z frytkami, proszę.",
+            "meaning": "A minced meat patty with chips, please."
+        },
+        {
+            "text": "Kotlet schabowy jest z ziemniakami.",
+            "meaning": "The pork chop comes with potatoes."
+        },
+        {
+            "text": "Kotlet schabowy to wieprzowina.",
+            "meaning": "A breaded pork chop is pork."
+        },
+        {
+            "text": "Kotlet schabowy z frytkami, proszę.",
+            "meaning": "A breaded pork chop with chips, please."
+        },
+        {
+            "text": "Kotlet schabowy."
         },
         {
             "text": "Kończę kurs. A ty?"
@@ -3787,6 +4283,16 @@
             "text": "Lista zakupów: dwa zielone jabłka"
         },
         {
+            "text": "Lody są zimne.",
+            "meaning": "The ice cream is cold."
+        },
+        {
+            "text": "Lody z owocami."
+        },
+        {
+            "text": "Lody."
+        },
+        {
             "text": "Login i hasło."
         },
         {
@@ -3818,11 +4324,18 @@
             "meaning": "Do you like doing the shopping?"
         },
         {
+            "text": "Lubisz wołowinę?"
+        },
+        {
             "text": "Lubię biegać i pływać."
         },
         {
             "text": "Lubię grać na gitarze i w szachy.",
             "meaning": "I like playing the guitar and chess."
+        },
+        {
+            "text": "Lubię herbatę, ale nie lubię kawy.",
+            "meaning": "I like tea, but I don't like coffee."
         },
         {
             "text": "Lubię jeździć na rowerze i pływać.",
@@ -3839,6 +4352,10 @@
         {
             "text": "Lubię malować i słuchać muzyki.",
             "meaning": "I like painting and listening to music."
+        },
+        {
+            "text": "Lubię mleko, ale nie lubię zimnego mleka.",
+            "meaning": "I like milk, but I don't like cold milk."
         },
         {
             "text": "Lubię pływać i jeździć na rowerze.",
@@ -3879,7 +4396,13 @@
             "text": "Ma ochotę na jajecznicę."
         },
         {
+            "text": "Ma rezerwację w restauracji."
+        },
+        {
             "text": "Magazyny."
+        },
+        {
+            "text": "Majonez."
         },
         {
             "text": "Mają też wodę mineralną."
@@ -4046,6 +4569,9 @@
         },
         {
             "text": "Maria"
+        },
+        {
+            "text": "Masz ochotę na coś słodkiego?"
         },
         {
             "text": "Masz ochotę na jajko?"
@@ -4248,6 +4774,9 @@
             "meaning": "We can dance the tango."
         },
         {
+            "text": "Myślę, że jest za kwaśny."
+        },
+        {
             "text": "Myślę, że ona jest bardzo miła."
         },
         {
@@ -4341,11 +4870,17 @@
             "meaning": "Does he speak Polish too?"
         },
         {
+            "text": "Mówi: nie smakuje mi."
+        },
+        {
             "text": "Mówię trochę po polsku.",
             "meaning": "Yes, a little."
         },
         {
             "text": "Męski, żeński i nijaki."
+        },
+        {
+            "text": "Na ciepło, z lodami."
         },
         {
             "text": "Na co Karol ma ochotę?",
@@ -4358,6 +4893,9 @@
         {
             "text": "Na co ma ochotę pierwsza dziewczyna?",
             "meaning": "What does the first girl feel like?"
+        },
+        {
+            "text": "Na jakie nazwisko?"
         },
         {
             "text": "Na jogurt."
@@ -4375,6 +4913,10 @@
         {
             "text": "Na końcu lektor mówi: płacę kartą.",
             "meaning": "At the end the speaker says: I pay by card."
+        },
+        {
+            "text": "Na końcu: z … wszędzie. Z kim?",
+            "meaning": "At the end: with … everywhere. With whom? (you, several people)"
         },
         {
             "text": "Na kurczaka z frytkami."
@@ -4404,11 +4946,22 @@
             "text": "Na obiad Ewa gotuje zupę."
         },
         {
+            "text": "Na obiad jest kotlet schabowy.",
+            "meaning": "There is a breaded pork chop for dinner."
+        },
+        {
             "text": "Na obiad jest kotlet z frytkami."
         },
         {
             "text": "Na obiad jest kotlet.",
             "meaning": "There is a cutlet for dinner."
+        },
+        {
+            "text": "Na obiad jest krupnik i kotlet mielony."
+        },
+        {
+            "text": "Na obiad jest krupnik.",
+            "meaning": "There is barley soup for dinner."
         },
         {
             "text": "Na obiad jest pieczony kurczak."
@@ -4463,6 +5016,9 @@
             "text": "Na rybę."
         },
         {
+            "text": "Na rynku."
+        },
+        {
             "text": "Na sałatkę?"
         },
         {
@@ -4488,6 +5044,9 @@
             "meaning": "At the market"
         },
         {
+            "text": "Na targu."
+        },
+        {
             "text": "Na twardo, proszę."
         },
         {
@@ -4502,6 +5061,9 @@
         {
             "text": "Na zdjęciu brat jest na wakacjach.",
             "meaning": "In the photo her brother is on holiday."
+        },
+        {
+            "text": "Na zimno, z bitą śmietaną."
         },
         {
             "text": "Na zupę jarzynową."
@@ -4531,7 +5093,19 @@
             "meaning": "First they want to do some shopping."
         },
         {
+            "text": "Naleśniki są z serem.",
+            "meaning": "The pancakes come with cheese."
+        },
+        {
+            "text": "Naleśniki ze szpinakiem.",
+            "meaning": "Pancakes with spinach."
+        },
+        {
             "text": "Napoje są tutaj."
+        },
+        {
+            "text": "Nareszcie weekend!",
+            "meaning": "At last, the weekend!"
         },
         {
             "text": "Natka czy korzeń?"
@@ -4586,7 +5160,21 @@
             "text": "Nie"
         },
         {
+            "text": "Nie bardzo, jest za tłusty.",
+            "meaning": "Not really, it's too fatty."
+        },
+        {
+            "text": "Nie bardzo."
+        },
+        {
+            "text": "Nie jem sera.",
+            "meaning": "I don't eat cheese."
+        },
+        {
             "text": "Nie lubi kiwi."
+        },
+        {
+            "text": "Nie lubi zimnego mleka."
         },
         {
             "text": "Nie lubię czytać, wolę grać na komputerze.",
@@ -4632,6 +5220,12 @@
         {
             "text": "Nie pamiętam.",
             "meaning": "I don't remember."
+        },
+        {
+            "text": "Nie pije czerwonego wina, ale lubi piwo."
+        },
+        {
+            "text": "Nie piję kawy."
         },
         {
             "text": "Nie rozumiem! Proszę powtórzyć!",
@@ -4689,8 +5283,16 @@
             "text": "Nie, bez cukru."
         },
         {
+            "text": "Nie, dziękuję, poproszę rachunek.",
+            "meaning": "No, thank you. I'd like the bill, please."
+        },
+        {
             "text": "Nie, dziękuję.",
             "meaning": "No, thank you."
+        },
+        {
+            "text": "Nie, dziękuję. Poproszę rachunek.",
+            "meaning": "No, thank you. I'd like the bill, please."
         },
         {
             "text": "Nie, jest bardzo pracowity!"
@@ -4735,6 +5337,10 @@
         {
             "text": "Nie, poproszę jeszcze cztery pomidory.",
             "meaning": "No, I'd like four more tomatoes, please."
+        },
+        {
+            "text": "Nie, poproszę rachunek.",
+            "meaning": "No, I'd like the bill, please."
         },
         {
             "text": "Nie, poproszę te dojrzałe.",
@@ -4787,6 +5393,9 @@
             "text": "Nie, wolę grać na komputerze."
         },
         {
+            "text": "Nie, wolę wieprzowinę."
+        },
+        {
             "text": "Nie, z Anglii.",
             "meaning": "No, I'm from England. And you?"
         },
@@ -4829,6 +5438,9 @@
         },
         {
             "text": "Nowa studentka z Polski."
+        },
+        {
+            "text": "Nowak."
         },
         {
             "text": "Nowy lektor."
@@ -4972,6 +5584,10 @@
         {
             "text": "Ona jest z Polski.",
             "meaning": "She is from Poland."
+        },
+        {
+            "text": "Ona jeszcze czeka na wiadomość.",
+            "meaning": "She is still waiting for a message."
         },
         {
             "text": "Ona lubi owoce morza.",
@@ -5179,6 +5795,10 @@
             "text": "Pierogi."
         },
         {
+            "text": "Pierwsza pani pije gorącą czekoladę.",
+            "meaning": "The first woman drinks hot chocolate."
+        },
+        {
             "text": "Pierwsza rzecz to książka.",
             "meaning": "The first thing is a book."
         },
@@ -5203,6 +5823,10 @@
             "meaning": "The first boy is hungry."
         },
         {
+            "text": "Pierwszy klient zamawia rosół.",
+            "meaning": "The first customer orders chicken soup."
+        },
+        {
             "text": "Pietruszka: natka czy korzeń?",
             "meaning": "Parsley: the leaves or the root?"
         },
@@ -5219,6 +5843,13 @@
         },
         {
             "text": "Pisze e-maile."
+        },
+        {
+            "text": "Piwa ani wina."
+        },
+        {
+            "text": "Piwo, proszę.",
+            "meaning": "A beer, please."
         },
         {
             "text": "Pizza."
@@ -5263,6 +5894,10 @@
         {
             "text": "Polakiem",
             "meaning": "Polish (a man, after jestem, jesteś, jest)"
+        },
+        {
+            "text": "Polecam żurek z jajkiem i bigos.",
+            "meaning": "I recommend the sour rye soup with an egg, and the bigos."
         },
         {
             "text": "Polecenia",
@@ -5311,7 +5946,19 @@
             "meaning": "Two yellow peppers, please."
         },
         {
+            "text": "Poproszę kompot.",
+            "meaning": "A compote, please."
+        },
+        {
+            "text": "Poproszę kotlet schabowy z frytkami.",
+            "meaning": "A breaded pork chop with chips, please."
+        },
+        {
             "text": "Poproszę pietruszkę."
+        },
+        {
+            "text": "Poproszę żurek z jajkiem.",
+            "meaning": "The sour rye soup with an egg for me."
         },
         {
             "text": "Potem mama dodaje warzywa i przyprawy."
@@ -5481,6 +6128,17 @@
             "meaning": "Please, thank you, sorry"
         },
         {
+            "text": "Proszę, rachunek. Dziękuję!",
+            "meaning": "Here is the bill. Thank you!"
+        },
+        {
+            "text": "Proszę, tutaj jest stolik."
+        },
+        {
+            "text": "Proszę, tutaj jest stolik. Co podać?",
+            "meaning": "Here is your table. What can I get you?"
+        },
+        {
             "text": "Proszę. Dziękuję, do widzenia!",
             "meaning": "Here you are. Thank you, goodbye!"
         },
@@ -5529,6 +6187,9 @@
             "text": "Pływać."
         },
         {
+            "text": "Rachunek."
+        },
+        {
             "text": "Rano Adam jest głodny."
         },
         {
@@ -5537,6 +6198,17 @@
         {
             "text": "Rano piję sok pomarańczowy.",
             "meaning": "In the morning I drink orange juice."
+        },
+        {
+            "text": "Rezerwacja jest dla czterech osób."
+        },
+        {
+            "text": "Rezerwacja jest dla dwóch osób.",
+            "meaning": "The booking is for two people."
+        },
+        {
+            "text": "Rezerwacja jest na godzinę… Na którą?",
+            "meaning": "The booking is for … o’clock. Which hour?"
         },
         {
             "text": "Rezerwuję też bilety."
@@ -5549,6 +6221,20 @@
         },
         {
             "text": "Rodzina z Japonii."
+        },
+        {
+            "text": "Rosół jest jutro.",
+            "meaning": "The chicken soup is tomorrow."
+        },
+        {
+            "text": "Rosół jest z makaronem.",
+            "meaning": "The chicken soup comes with noodles."
+        },
+        {
+            "text": "Rosół, żurek i bigos."
+        },
+        {
+            "text": "Rosół."
         },
         {
             "text": "Rozumiem! Dziękuję bardzo.",
@@ -5636,6 +6322,9 @@
             "text": "Serial."
         },
         {
+            "text": "Sernik."
+        },
+        {
             "text": "Siedemnaście."
         },
         {
@@ -5675,7 +6364,18 @@
             "meaning": "Enjoy your meal!"
         },
         {
+            "text": "Smakuje ci żurek?"
+        },
+        {
+            "text": "Smakuje?",
+            "meaning": "Do you like it?"
+        },
+        {
             "text": "Smażone."
+        },
+        {
+            "text": "Sok jest ciepły.",
+            "meaning": "The juice is warm."
         },
         {
             "text": "Sok jest zimny, a herbata gorąca."
@@ -5714,6 +6414,13 @@
             "meaning": "One hundred, two hundred, three hundred, four hundred."
         },
         {
+            "text": "Stolik jest dla czterech osób."
+        },
+        {
+            "text": "Stolik jest dla dwóch osób.",
+            "meaning": "The table is for two people."
+        },
+        {
             "text": "Super! A gdzie jest kasa?"
         },
         {
@@ -5736,6 +6443,17 @@
         {
             "text": "Syn czyta.",
             "meaning": "The son is reading."
+        },
+        {
+            "text": "Szarlotka jest z lodami.",
+            "meaning": "The apple pie comes with ice cream."
+        },
+        {
+            "text": "Szarlotka na ciepło z lodami.",
+            "meaning": "Warm apple pie with ice cream."
+        },
+        {
+            "text": "Szarlotkę."
         },
         {
             "text": "Sześć.",
@@ -5788,6 +6506,10 @@
             "meaning": "This bag costs seven hundred złoty."
         },
         {
+            "text": "Ta zupa jest okropna!",
+            "meaning": "This soup is awful!"
+        },
+        {
             "text": "Tak, ale nie umiem."
         },
         {
@@ -5807,6 +6529,10 @@
             "meaning": "Yes, but only a little. And you?"
         },
         {
+            "text": "Tak, bardzo mi smakuje.",
+            "meaning": "Yes, I like it very much."
+        },
+        {
             "text": "Tak, bardzo sympatyczny.",
             "meaning": "Yes, he is very nice and cheerful."
         },
@@ -5820,6 +6546,9 @@
         {
             "text": "Tak, bardzo.",
             "meaning": "Yes, very!"
+        },
+        {
+            "text": "Tak, chętnie."
         },
         {
             "text": "Tak, czerwony.",
@@ -5836,6 +6565,9 @@
         {
             "text": "Tak, dzisiaj możesz!",
             "meaning": "Yes, today you can!"
+        },
+        {
+            "text": "Tak, dziś jest zamknięta."
         },
         {
             "text": "Tak, gram w tenisa.",
@@ -5916,6 +6648,9 @@
             "meaning": "Yes, a little."
         },
         {
+            "text": "Tak, na lody."
+        },
+        {
             "text": "Tak, na zupę."
         },
         {
@@ -5924,6 +6659,10 @@
         },
         {
             "text": "Tak, nudzę się."
+        },
+        {
+            "text": "Tak, poproszę sernik.",
+            "meaning": "Yes, I'd like cheesecake, please."
         },
         {
             "text": "Tak, pracuję w szpitalu. Pa, do jutra!",
@@ -5939,6 +6678,10 @@
         {
             "text": "Tak, proszę małą kanapkę.",
             "meaning": "Yes, a small sandwich, please."
+        },
+        {
+            "text": "Tak, smakuje mi bardzo.",
+            "meaning": "Yes, I like it very much."
         },
         {
             "text": "Tak, te zielone, proszę.",
@@ -5974,8 +6717,16 @@
             "meaning": "Yes, it is my dictionary."
         },
         {
+            "text": "Tak, to wszystko, dziękuję.",
+            "meaning": "Yes, that's all. Thank you."
+        },
+        {
             "text": "Tak, to wszystko, ile płacę?",
             "meaning": "Yes, that's all. How much is it?"
+        },
+        {
+            "text": "Tak, to wszystko. Dziękuję.",
+            "meaning": "Yes, that's all. Thank you."
         },
         {
             "text": "Tak, to wszystko. Ile płacę?",
@@ -6008,6 +6759,9 @@
         {
             "text": "Tak.",
             "meaning": "Yes, it is my dictionary."
+        },
+        {
+            "text": "Tak. Idziesz ze mną?"
         },
         {
             "text": "Talerz jest tam.",
@@ -6151,6 +6905,12 @@
             "text": "Też dobrze. Czy wiesz, kto to jest?"
         },
         {
+            "text": "Też."
+        },
+        {
+            "text": "Tiramisu."
+        },
+        {
             "text": "To auto jest duże.",
             "meaning": "This car is big."
         },
@@ -6168,6 +6928,9 @@
         {
             "text": "To ciekawe!",
             "meaning": "You're a doctor? That's interesting!"
+        },
+        {
+            "text": "To dobrze brzmi."
         },
         {
             "text": "To dziecko ma pół roku.",
@@ -6301,6 +7064,9 @@
             "meaning": "This is my favourite dish."
         },
         {
+            "text": "To może herbata?"
+        },
+        {
             "text": "To mój plecak.",
             "meaning": "It is my backpack."
         },
@@ -6318,6 +7084,9 @@
         {
             "text": "To okno jest duże.",
             "meaning": "This window is big."
+        },
+        {
+            "text": "To samo, tylko z frytkami."
         },
         {
             "text": "To są owoce.",
@@ -6418,6 +7187,10 @@
         {
             "text": "Truskawka jest twarda.",
             "meaning": "The strawberry is hard."
+        },
+        {
+            "text": "Trzecia zapiekanka jest z kurczakiem i kukurydzą.",
+            "meaning": "The third zapiekanka has chicken and sweetcorn."
         },
         {
             "text": "Trzy razy dwadzieścia równa się sześćdziesiąt.",
@@ -6643,6 +7416,10 @@
             "meaning": "There isn't a bureau de change in the shopping centre."
         },
         {
+            "text": "W kawiarni jest czekolada do picia i do jedzenia.",
+            "meaning": "The café has chocolate to drink and to eat."
+        },
+        {
             "text": "W kiosku są chipsy paprykowe.",
             "meaning": "The kiosk has paprika crisps."
         },
@@ -6694,6 +7471,13 @@
         },
         {
             "text": "W pracy."
+        },
+        {
+            "text": "W restauracji można palić.",
+            "meaning": "You can smoke inside the restaurant."
+        },
+        {
+            "text": "W supermarkecie."
         },
         {
             "text": "W szkole",
@@ -6752,6 +7536,9 @@
             "text": "Wiesz, kto to jest?"
         },
         {
+            "text": "Wino."
+        },
+        {
             "text": "Wiśnia jest czerwona.",
             "meaning": "The sour cherry is red."
         },
@@ -6773,6 +7560,9 @@
         {
             "text": "Woda mineralna jest zimna.",
             "meaning": "The mineral water is cold."
+        },
+        {
+            "text": "Wody."
         },
         {
             "text": "Wolisz jasny czy ciemny chleb?",
@@ -6806,6 +7596,9 @@
         {
             "text": "Wolę kakao niż kawę.",
             "meaning": "I prefer cocoa to coffee."
+        },
+        {
+            "text": "Wolę pierogi."
         },
         {
             "text": "Wszyscy umieją tańczyć.",
@@ -6931,10 +7724,23 @@
             "text": "Z oliwkami."
         },
         {
+            "text": "Z orzechami."
+        },
+        {
+            "text": "Z owocami i bitą śmietaną."
+        },
+        {
             "text": "Z owocami morza."
         },
         {
+            "text": "Z podwójnym serem i z boczkiem."
+        },
+        {
             "text": "Z szynką."
+        },
+        {
+            "text": "Z tobą… Gdzie?",
+            "meaning": "With you… where? (everywhere)"
         },
         {
             "text": "Z zawodu jestem informatyczką.",
@@ -6947,6 +7753,13 @@
         {
             "text": "Z zawodu jestem muzykiem.",
             "meaning": "By profession I am a musician (a man)."
+        },
+        {
+            "text": "Zapiekankę."
+        },
+        {
+            "text": "Zapraszam was na obiad",
+            "meaning": "Come for dinner"
         },
         {
             "text": "Zapraszamy na kolację!"
@@ -7002,6 +7815,10 @@
         {
             "text": "a co do picia?",
             "meaning": "and what about drinks?"
+        },
+        {
+            "text": "a co z nim?",
+            "meaning": "and what about him?"
         },
         {
             "text": "a ty jak masz na imię?",
@@ -7121,6 +7938,10 @@
         {
             "text": "ananasy",
             "meaning": "a pineapple (ananasy: pineapples)"
+        },
+        {
+            "text": "ani",
+            "meaning": "nor, not even (ani… ani…: neither… nor…)"
         },
         {
             "text": "aparat",
@@ -7285,7 +8106,27 @@
             "meaning": "very nice to meet you"
         },
         {
-            "text": "barszcz"
+            "text": "bardzo mi smakuje",
+            "meaning": "I like it very much (of food)"
+        },
+        {
+            "text": "barszcz",
+            "meaning": "beetroot soup"
+        },
+        {
+            "text": "barszcz",
+            "meaning": "beetroot soup, borscht"
+        },
+        {
+            "text": "barszcz czy zupa pomidorowa?",
+            "meaning": "beetroot soup or tomato soup?"
+        },
+        {
+            "text": "barszcz z jajkiem"
+        },
+        {
+            "text": "barszcz z uszkami",
+            "meaning": "beetroot soup with little dumplings"
         },
         {
             "text": "bazylia",
@@ -7304,12 +8145,28 @@
             "meaning": "without milk"
         },
         {
+            "text": "bez smaku",
+            "meaning": "tasteless"
+        },
+        {
+            "text": "bez smaku",
+            "meaning": "tasteless, with no taste"
+        },
+        {
             "text": "biała",
             "meaning": "white (biały, biała, białe)"
         },
         {
             "text": "białe",
             "meaning": "white (biały, biała, białe)"
+        },
+        {
+            "text": "białego",
+            "meaning": "white (białego, białej: after nie, nie piję białej kawy)"
+        },
+        {
+            "text": "białej",
+            "meaning": "white (białego, białej: after nie, nie piję białej kawy)"
         },
         {
             "text": "biały",
@@ -7325,6 +8182,9 @@
         {
             "text": "biały ser",
             "meaning": "white cheese (soft, like quark)"
+        },
+        {
+            "text": "białą"
         },
         {
             "text": "biedna",
@@ -7349,6 +8209,18 @@
         {
             "text": "biegać",
             "meaning": "to run"
+        },
+        {
+            "text": "bigos",
+            "meaning": "hunter's stew"
+        },
+        {
+            "text": "bigos",
+            "meaning": "hunter's stew (cabbage and meat)"
+        },
+        {
+            "text": "bigos to polskie danie",
+            "meaning": "hunter's stew is a Polish dish"
         },
         {
             "text": "bilet",
@@ -7404,6 +8276,9 @@
         },
         {
             "text": "bo jej mama jest z Polski"
+        },
+        {
+            "text": "boczkiem"
         },
         {
             "text": "bogata",
@@ -7669,7 +8544,8 @@
             "text": "chleb z serem"
         },
         {
-            "text": "chleba"
+            "text": "chleba",
+            "meaning": "bread (after nie: nie mam chleba)"
         },
         {
             "text": "chodzi",
@@ -7784,6 +8660,22 @@
             "meaning": "gladly, with pleasure"
         },
         {
+            "text": "chłodna",
+            "meaning": "cool, chilly (chłodny, chłodna, chłodne)"
+        },
+        {
+            "text": "chłodne",
+            "meaning": "cool, chilly (chłodny, chłodna, chłodne)"
+        },
+        {
+            "text": "chłodny",
+            "meaning": "cool"
+        },
+        {
+            "text": "chłodny",
+            "meaning": "cool, chilly (chłodny, chłodna, chłodne)"
+        },
+        {
             "text": "chłopak",
             "meaning": "a boy; a boyfriend"
         },
@@ -7794,6 +8686,9 @@
         {
             "text": "chłopak i dziewczyna",
             "meaning": "a boy and a girl"
+        },
+        {
+            "text": "ci"
         },
         {
             "text": "ciastka",
@@ -7827,6 +8722,10 @@
             "meaning": "interesting, curious (ciekawy, ciekawa, ciekawe)"
         },
         {
+            "text": "cielęcina",
+            "meaning": "veal"
+        },
+        {
             "text": "ciemna",
             "meaning": "dark; brown (of bread) (ciemny, ciemna, ciemne)"
         },
@@ -7844,6 +8743,29 @@
         },
         {
             "text": "ciemny chleb"
+        },
+        {
+            "text": "ciepła",
+            "meaning": "warm (ciepły, ciepła, ciepłe)"
+        },
+        {
+            "text": "ciepła woda"
+        },
+        {
+            "text": "ciepłe",
+            "meaning": "warm (ciepły, ciepła, ciepłe)"
+        },
+        {
+            "text": "ciepłe mleko",
+            "meaning": "warm milk"
+        },
+        {
+            "text": "ciepły",
+            "meaning": "warm"
+        },
+        {
+            "text": "ciepły",
+            "meaning": "warm (ciepły, ciepła, ciepłe)"
         },
         {
             "text": "cieszę się",
@@ -7936,6 +8858,14 @@
         },
         {
             "text": "co pijesz na śniadanie?"
+        },
+        {
+            "text": "co podać?",
+            "meaning": "what can I get you?"
+        },
+        {
+            "text": "co podać?",
+            "meaning": "what can I get you? (a waiter asks)"
         },
         {
             "text": "co robi twoja mama?"
@@ -8047,6 +8977,10 @@
             "text": "co widać?"
         },
         {
+            "text": "co z nim?",
+            "meaning": "what about him?"
+        },
+        {
             "text": "co znasz?"
         },
         {
@@ -8059,6 +8993,10 @@
         {
             "text": "coś jeszcze?",
             "meaning": "anything else?"
+        },
+        {
+            "text": "coś słodkiego",
+            "meaning": "something sweet (mam ochotę na coś słodkiego)"
         },
         {
             "text": "cukier",
@@ -8112,6 +9050,14 @@
             "text": "czarna herbata"
         },
         {
+            "text": "czarna kawa",
+            "meaning": "black coffee"
+        },
+        {
+            "text": "czarna kawa i herbata owocowa",
+            "meaning": "black coffee and fruit tea"
+        },
+        {
             "text": "czarne",
             "meaning": "black (czarny, czarna, czarne)"
         },
@@ -8126,6 +9072,18 @@
         {
             "text": "czas",
             "meaning": "time"
+        },
+        {
+            "text": "czekam",
+            "meaning": "I am waiting"
+        },
+        {
+            "text": "czekam",
+            "meaning": "I am waiting, I wait"
+        },
+        {
+            "text": "czekam tutaj",
+            "meaning": "I am waiting here"
         },
         {
             "text": "czekolada",
@@ -8149,6 +9107,14 @@
         {
             "text": "czerwone",
             "meaning": "red (czerwony, czerwona, czerwone)"
+        },
+        {
+            "text": "czerwonego",
+            "meaning": "red (czerwonego, czerwonej: after nie, nie piję czerwonego wina)"
+        },
+        {
+            "text": "czerwonej",
+            "meaning": "red (czerwonego, czerwonej: after nie, nie piję czerwonego wina)"
         },
         {
             "text": "czerwony",
@@ -8593,6 +9559,22 @@
             "meaning": "what are you interested in? (one friend)"
         },
         {
+            "text": "czynna",
+            "meaning": "open (of a shop or a café) (czynny, czynna, czynne)"
+        },
+        {
+            "text": "czynne",
+            "meaning": "open (of a shop or a café) (czynny, czynna, czynne)"
+        },
+        {
+            "text": "czynny",
+            "meaning": "open"
+        },
+        {
+            "text": "czynny",
+            "meaning": "open (of a shop or a café) (czynny, czynna, czynne)"
+        },
+        {
             "text": "czysta",
             "meaning": "clean (czysty, czysta, czyste)"
         },
@@ -8660,6 +9642,34 @@
             "meaning": "a daughter (after mam, masz, ma…)"
         },
         {
+            "text": "dania",
+            "meaning": "a dish, a course (dania: dishes)"
+        },
+        {
+            "text": "dania są smaczne",
+            "meaning": "the dishes are tasty"
+        },
+        {
+            "text": "danie",
+            "meaning": "a dish, a course (dania: dishes)"
+        },
+        {
+            "text": "danie dnia",
+            "meaning": "the dish of the day"
+        },
+        {
+            "text": "danie dnia to zupa",
+            "meaning": "the dish of the day is soup"
+        },
+        {
+            "text": "danie główne",
+            "meaning": "a main course (on a menu: dania główne)"
+        },
+        {
+            "text": "danie wegetariańskie",
+            "meaning": "a vegetarian dish"
+        },
+        {
             "text": "delikatna",
             "meaning": "mild, delicate (delikatny, delikatna, delikatne)"
         },
@@ -8692,12 +9702,36 @@
             "meaning": "a dentist (a man)"
         },
         {
+            "text": "deser",
+            "meaning": "a dessert"
+        },
+        {
             "text": "dezodorant",
             "meaning": "a deodorant"
         },
         {
             "text": "dialog",
             "meaning": "a dialogue"
+        },
+        {
+            "text": "dla czterech osób",
+            "meaning": "for four people"
+        },
+        {
+            "text": "dla mnie",
+            "meaning": "for me"
+        },
+        {
+            "text": "dla mnie",
+            "meaning": "for me (dla mnie żurek: the sour rye soup for me)"
+        },
+        {
+            "text": "dla mnie kompot",
+            "meaning": "a compote for me"
+        },
+        {
+            "text": "dla mnie to samo",
+            "meaning": "the same for me"
         },
         {
             "text": "dlaczego",
@@ -8748,6 +9782,10 @@
         {
             "text": "do picia",
             "meaning": "to drink (co do picia?: what about drinks?)"
+        },
+        {
+            "text": "do pubu",
+            "meaning": "to the pub"
         },
         {
             "text": "do szkoły",
@@ -8885,6 +9923,14 @@
             "meaning": "to match"
         },
         {
+            "text": "dopełniacz",
+            "meaning": "the genitive"
+        },
+        {
+            "text": "dopełniacz",
+            "meaning": "the genitive (kogo? czego?)"
+        },
+        {
             "text": "dorsz",
             "meaning": "cod"
         },
@@ -8938,6 +9984,10 @@
         {
             "text": "drugie danie to kurczak",
             "meaning": "the main course is chicken"
+        },
+        {
+            "text": "drób",
+            "meaning": "poultry"
         },
         {
             "text": "duszona",
@@ -9394,6 +10444,10 @@
             "meaning": "I am stressed today (a man speaking)"
         },
         {
+            "text": "dziś kawiarnia jest nieczynna",
+            "meaning": "the café is not open today"
+        },
+        {
             "text": "długa",
             "meaning": "long (długi, długa, długie)"
         },
@@ -9673,6 +10727,21 @@
             "meaning": "where do you live? (several people)"
         },
         {
+            "text": "gofr",
+            "meaning": "a waffle"
+        },
+        {
+            "text": "gofr czy rurka z kremem?",
+            "meaning": "a waffle or a cream horn?"
+        },
+        {
+            "text": "gofr z bitą śmietaną",
+            "meaning": "a waffle with whipped cream"
+        },
+        {
+            "text": "gofr z lodami"
+        },
+        {
             "text": "gorzka",
             "meaning": "bitter (gorzki, gorzka, gorzkie)"
         },
@@ -9691,6 +10760,14 @@
         {
             "text": "gorąca",
             "meaning": "hot (gorący, gorąca, gorące)"
+        },
+        {
+            "text": "gorąca czekolada",
+            "meaning": "hot chocolate"
+        },
+        {
+            "text": "gorąca czekolada z bitą śmietaną",
+            "meaning": "hot chocolate with whipped cream"
         },
         {
             "text": "gorące",
@@ -9785,6 +10862,21 @@
         {
             "text": "gotówką",
             "meaning": "in cash (płacę gotówką)"
+        },
+        {
+            "text": "gołąbek"
+        },
+        {
+            "text": "gołąbki",
+            "meaning": "cabbage rolls"
+        },
+        {
+            "text": "gołąbki",
+            "meaning": "cabbage rolls (with meat and rice)"
+        },
+        {
+            "text": "gołąbki i bigos",
+            "meaning": "cabbage rolls and hunter's stew"
         },
         {
             "text": "gr"
@@ -10014,6 +11106,18 @@
             "meaning": "the tea is hot"
         },
         {
+            "text": "herbata owocowa",
+            "meaning": "fruit tea"
+        },
+        {
+            "text": "herbata owocowa i czarna kawa",
+            "meaning": "black coffee and fruit tea"
+        },
+        {
+            "text": "herbaty",
+            "meaning": "tea (after nie: nie piję herbaty)"
+        },
+        {
             "text": "herbatę",
             "meaning": "tea (after lubię)"
         },
@@ -10038,6 +11142,17 @@
             "meaning": "and"
         },
         {
+            "text": "idziecie",
+            "meaning": "you are going (on foot; several people)"
+        },
+        {
+            "text": "idziecie z nami?",
+            "meaning": "are you coming with us? (several people)"
+        },
+        {
+            "text": "idziecie z nimi?"
+        },
+        {
             "text": "idziemy",
             "meaning": "we are going"
         },
@@ -10049,11 +11164,40 @@
             "text": "idziemy do kina"
         },
         {
+            "text": "idziemy do pubu?"
+        },
+        {
             "text": "idziemy na kawę"
         },
         {
             "text": "idziemy na zakupy",
             "meaning": "we're going shopping"
+        },
+        {
+            "text": "idziemy razem",
+            "meaning": "we are going together"
+        },
+        {
+            "text": "idziemy z wami",
+            "meaning": "we are going with you (several people)"
+        },
+        {
+            "text": "idziesz",
+            "meaning": "you are going (on foot; one friend)"
+        },
+        {
+            "text": "idziesz do kina?"
+        },
+        {
+            "text": "idziesz do pubu?",
+            "meaning": "are you going to the pub? (one friend)"
+        },
+        {
+            "text": "idziesz z nami?"
+        },
+        {
+            "text": "idziesz z nim?",
+            "meaning": "are you going with him? (one friend)"
         },
         {
             "text": "idę",
@@ -10069,6 +11213,14 @@
         },
         {
             "text": "idę na zakupy"
+        },
+        {
+            "text": "idę z nią",
+            "meaning": "I'm going with her"
+        },
+        {
+            "text": "idę z tobą",
+            "meaning": "I'm going with you (one friend)"
         },
         {
             "text": "ile",
@@ -10179,6 +11331,14 @@
         {
             "text": "imprezę",
             "meaning": "a party (after organizuję, planuję…)"
+        },
+        {
+            "text": "indyk",
+            "meaning": "a turkey"
+        },
+        {
+            "text": "indyk",
+            "meaning": "a turkey; turkey (the meat)"
         },
         {
             "text": "informacji",
@@ -10341,8 +11501,20 @@
             "meaning": "I"
         },
         {
+            "text": "ja czekam tutaj",
+            "meaning": "I am waiting here"
+        },
+        {
             "text": "ja czytam tekst",
             "meaning": "I read a text"
+        },
+        {
+            "text": "ja idę z nią",
+            "meaning": "I'm going with her"
+        },
+        {
+            "text": "ja idę z tobą",
+            "meaning": "I'm going with you (one friend)"
         },
         {
             "text": "ja jestem Adam",
@@ -10449,6 +11621,10 @@
             "meaning": "I have a cat"
         },
         {
+            "text": "ja mam rezerwację",
+            "meaning": "I have a booking"
+        },
+        {
             "text": "ja mam rodzeństwo, brata i siostrę",
             "meaning": "I have siblings: a brother and a sister"
         },
@@ -10459,6 +11635,22 @@
         {
             "text": "ja nazywam się Adam",
             "meaning": "I am called Adam"
+        },
+        {
+            "text": "ja nie lubię mleka",
+            "meaning": "I don't like milk"
+        },
+        {
+            "text": "ja nie piję ani soku, ani kompotu",
+            "meaning": "I drink neither juice nor compote"
+        },
+        {
+            "text": "ja nie piję czerwonego wina",
+            "meaning": "I don't drink red wine"
+        },
+        {
+            "text": "ja nie piję wina",
+            "meaning": "I don't drink wine"
         },
         {
             "text": "ja oglądam polską telewizję",
@@ -10503,6 +11695,10 @@
         {
             "text": "ja umiem gotować tylko ryż",
             "meaning": "I can only cook rice"
+        },
+        {
+            "text": "ja wolę drób",
+            "meaning": "I prefer poultry"
         },
         {
             "text": "ja wolę grać na komputerze",
@@ -11265,6 +12461,10 @@
             "meaning": "tomorrow I'm busy"
         },
         {
+            "text": "jutro mam urodziny",
+            "meaning": "it's my birthday tomorrow"
+        },
+        {
             "text": "już",
             "meaning": "already"
         },
@@ -11283,6 +12483,17 @@
         {
             "text": "język",
             "meaning": "a language"
+        },
+        {
+            "text": "kaczka",
+            "meaning": "a duck"
+        },
+        {
+            "text": "kaczka",
+            "meaning": "a duck; duck (the meat)"
+        },
+        {
+            "text": "kaczka z grilla"
         },
         {
             "text": "kakao",
@@ -11420,8 +12631,20 @@
             "meaning": "coffee with milk and without sugar"
         },
         {
+            "text": "kawałek sernika",
+            "meaning": "a piece of cheesecake"
+        },
+        {
             "text": "kawiarnia",
             "meaning": "a café"
+        },
+        {
+            "text": "kawiarnia jest dziś nieczynna",
+            "meaning": "the café is not open today"
+        },
+        {
+            "text": "kawy",
+            "meaning": "coffee (after nie: nie piję kawy)"
         },
         {
             "text": "kawę",
@@ -11430,6 +12653,10 @@
         {
             "text": "kawę",
             "meaning": "coffee (after lubię, kupuję…: lubię kawę)"
+        },
+        {
+            "text": "keczup",
+            "meaning": "ketchup"
         },
         {
             "text": "kelner",
@@ -11561,6 +12788,14 @@
             "meaning": "whom? (after znam, mam)"
         },
         {
+            "text": "koktajl",
+            "meaning": "a smoothie"
+        },
+        {
+            "text": "koktajl",
+            "meaning": "a smoothie, a milkshake"
+        },
+        {
             "text": "kolacja",
             "meaning": "supper"
         },
@@ -11615,6 +12850,18 @@
         {
             "text": "kolorowy magazyn",
             "meaning": "a colourful magazine"
+        },
+        {
+            "text": "kompot",
+            "meaning": "compote"
+        },
+        {
+            "text": "kompot",
+            "meaning": "compote, a drink of stewed fruit"
+        },
+        {
+            "text": "kompotu",
+            "meaning": "compote (after nie: nie ma kompotu)"
         },
         {
             "text": "komputer",
@@ -11699,6 +12946,24 @@
             "meaning": "a cutlet, a chop"
         },
         {
+            "text": "kotlet mielony",
+            "meaning": "a minced meat patty"
+        },
+        {
+            "text": "kotlet mielony i surówka"
+        },
+        {
+            "text": "kotlet schabowy",
+            "meaning": "a breaded pork chop"
+        },
+        {
+            "text": "kotlet schabowy i frytki"
+        },
+        {
+            "text": "kotlet schabowy i surówka",
+            "meaning": "a pork chop and a raw vegetable salad"
+        },
+        {
             "text": "kończy",
             "meaning": "he finishes, she finishes"
         },
@@ -11742,6 +13007,10 @@
         {
             "text": "kreatywny",
             "meaning": "creative (kreatywny, kreatywna, kreatywne)"
+        },
+        {
+            "text": "krupnik",
+            "meaning": "barley soup"
         },
         {
             "text": "krzesło",
@@ -11972,6 +13241,13 @@
             "meaning": "chicken and potatoes"
         },
         {
+            "text": "kurczak z frytkami"
+        },
+        {
+            "text": "kurczak z grilla",
+            "meaning": "grilled chicken"
+        },
+        {
             "text": "kurczak z warzywami",
             "meaning": "chicken with vegetables"
         },
@@ -12128,6 +13404,16 @@
         {
             "text": "literaturą",
             "meaning": "literature (after interesuję się: interesuję się literaturą)"
+        },
+        {
+            "text": "lodami"
+        },
+        {
+            "text": "lody",
+            "meaning": "ice cream"
+        },
+        {
+            "text": "lody z bitą śmietaną"
         },
         {
             "text": "loteria",
@@ -12357,6 +13643,10 @@
             "meaning": "a magazine"
         },
         {
+            "text": "majonez",
+            "meaning": "mayonnaise"
+        },
+        {
             "text": "mają",
             "meaning": "they have"
         },
@@ -12370,6 +13660,14 @@
         {
             "text": "makaron i ryż to produkty zbożowe",
             "meaning": "pasta and rice are grains"
+        },
+        {
+            "text": "makowiec",
+            "meaning": "poppy-seed cake"
+        },
+        {
+            "text": "makowiec jest słodki",
+            "meaning": "the poppy-seed cake is sweet"
         },
         {
             "text": "malarstwem",
@@ -12489,6 +13787,10 @@
             "meaning": "I am eleven years old, and you? (one friend)"
         },
         {
+            "text": "mam jutro urodziny",
+            "meaning": "it's my birthday tomorrow"
+        },
+        {
             "text": "mam komputer"
         },
         {
@@ -12525,8 +13827,18 @@
             "text": "mam ochotę na ciasto"
         },
         {
+            "text": "mam ochotę na coś słodkiego",
+            "meaning": "I feel like something sweet"
+        },
+        {
+            "text": "mam ochotę na deser"
+        },
+        {
             "text": "mam ochotę na jajecznicę",
             "meaning": "I feel like scrambled eggs"
+        },
+        {
+            "text": "mam ochotę na lody"
         },
         {
             "text": "mam ochotę na omlet",
@@ -12551,6 +13863,10 @@
         {
             "text": "mam pytanie: co to znaczy?",
             "meaning": "I have a question: what does it mean?"
+        },
+        {
+            "text": "mam rezerwację",
+            "meaning": "I have a booking"
         },
         {
             "text": "mam rodzeństwo, brata i siostrę",
@@ -12746,6 +14062,14 @@
             "meaning": "small (małego for a man or an animal, małą for a feminine noun: after proszę, mam…)"
         },
         {
+            "text": "menu",
+            "meaning": "a menu"
+        },
+        {
+            "text": "menu",
+            "meaning": "a menu (it never changes)"
+        },
+        {
             "text": "mieszka",
             "meaning": "he lives; she lives"
         },
@@ -12922,6 +14246,10 @@
             "meaning": "nice, kind (miłym, miłą: after jest, with a noun)"
         },
         {
+            "text": "mleka",
+            "meaning": "milk (after nie: nie lubię mleka)"
+        },
+        {
             "text": "mleko",
             "meaning": "milk"
         },
@@ -12948,8 +14276,15 @@
             "meaning": "less"
         },
         {
+            "text": "mną"
+        },
+        {
             "text": "mocna",
             "meaning": "strong (mocny, mocna, mocne)"
+        },
+        {
+            "text": "mocna kawa i słaba herbata",
+            "meaning": "strong coffee and weak tea"
         },
         {
             "text": "mocne",
@@ -13520,6 +14855,14 @@
             "meaning": "to the swimming pool"
         },
         {
+            "text": "na ciepło",
+            "meaning": "served warm"
+        },
+        {
+            "text": "na ciepło",
+            "meaning": "served warm (szarlotka na ciepło)"
+        },
+        {
             "text": "na drodze"
         },
         {
@@ -13711,12 +15054,43 @@
             "meaning": "first soup, then fish"
         },
         {
+            "text": "naleśniki",
+            "meaning": "pancakes"
+        },
+        {
+            "text": "naleśniki",
+            "meaning": "pancakes, crêpes"
+        },
+        {
+            "text": "naleśniki są niezłe",
+            "meaning": "the pancakes are not bad"
+        },
+        {
+            "text": "nami"
+        },
+        {
             "text": "napisać",
             "meaning": "write"
         },
         {
+            "text": "napiwek",
+            "meaning": "a tip"
+        },
+        {
+            "text": "napiwek",
+            "meaning": "a tip (for a waiter)"
+        },
+        {
             "text": "napoje",
             "meaning": "drinks"
+        },
+        {
+            "text": "nareszcie",
+            "meaning": "at last"
+        },
+        {
+            "text": "nareszcie",
+            "meaning": "at last, finally"
         },
         {
             "text": "narodowość",
@@ -13840,8 +15214,20 @@
             "meaning": "no"
         },
         {
+            "text": "nie jem sera",
+            "meaning": "I don't eat cheese"
+        },
+        {
             "text": "nie jestem Polakiem, jestem Anglikiem",
             "meaning": "I am not Polish, I am English (a man speaking)"
+        },
+        {
+            "text": "nie lubię mleka",
+            "meaning": "I don't like milk"
+        },
+        {
+            "text": "nie lubię zimnego mleka",
+            "meaning": "I don't like cold milk"
         },
         {
             "text": "nie ma",
@@ -13850,6 +15236,13 @@
         {
             "text": "nie ma",
             "meaning": "there isn't, there aren't (czy jest sok? nie, nie ma)"
+        },
+        {
+            "text": "nie ma kompotu",
+            "meaning": "there's no compote"
+        },
+        {
+            "text": "nie ma soku"
         },
         {
             "text": "nie ma sprawy",
@@ -13868,7 +15261,30 @@
             "meaning": "you're welcome; don't mention it"
         },
         {
+            "text": "nie mam chleba",
+            "meaning": "I don't have any bread"
+        },
+        {
+            "text": "nie mam chleba",
+            "meaning": "I have no bread"
+        },
+        {
+            "text": "nie mam kompotu"
+        },
+        {
             "text": "nie mam ochoty na jajecznicę"
+        },
+        {
+            "text": "nie mam soku",
+            "meaning": "I have no juice"
+        },
+        {
+            "text": "nie mam wody",
+            "meaning": "I don't have any water"
+        },
+        {
+            "text": "nie mam wody",
+            "meaning": "I have no water"
         },
         {
             "text": "nie mogę dzisiaj",
@@ -13883,12 +15299,48 @@
             "meaning": "I don't remember what it's called"
         },
         {
+            "text": "nie piję ani kawy, ani herbaty",
+            "meaning": "I drink neither coffee nor tea"
+        },
+        {
+            "text": "nie piję ani soku, ani kompotu",
+            "meaning": "I drink neither juice nor compote"
+        },
+        {
+            "text": "nie piję białej kawy",
+            "meaning": "I don't drink white coffee"
+        },
+        {
+            "text": "nie piję czerwonego wina",
+            "meaning": "I don't drink red wine"
+        },
+        {
+            "text": "nie piję herbaty",
+            "meaning": "I don't drink tea"
+        },
+        {
+            "text": "nie piję kawy",
+            "meaning": "I don't drink coffee"
+        },
+        {
+            "text": "nie piję wina",
+            "meaning": "I don't drink wine"
+        },
+        {
             "text": "nie rozumiem",
             "meaning": "I don't understand"
         },
         {
             "text": "nie rozumiem, proszę powtórzyć",
             "meaning": "I don't understand, repeat, please"
+        },
+        {
+            "text": "nie smakuje mi",
+            "meaning": "I don't like it (of food)"
+        },
+        {
+            "text": "nie smakuje mi ta zupa",
+            "meaning": "I don't like this soup (of food)"
         },
         {
             "text": "nie szkodzi",
@@ -13972,6 +15424,34 @@
             "meaning": "blue (niebieski, niebieska, niebieskie)"
         },
         {
+            "text": "nieczynna",
+            "meaning": "not open (of a shop or a café) (nieczynny, nieczynna, nieczynne)"
+        },
+        {
+            "text": "nieczynne",
+            "meaning": "not open (of a shop or a café) (nieczynny, nieczynna, nieczynne)"
+        },
+        {
+            "text": "nieczynny",
+            "meaning": "not open (of a shop or a café) (nieczynny, nieczynna, nieczynne)"
+        },
+        {
+            "text": "niedobra",
+            "meaning": "not good, not tasty (niedobry, niedobra, niedobre)"
+        },
+        {
+            "text": "niedobre",
+            "meaning": "not good, not tasty (niedobry, niedobra, niedobre)"
+        },
+        {
+            "text": "niedobry",
+            "meaning": "not good"
+        },
+        {
+            "text": "niedobry",
+            "meaning": "not good, not tasty (niedobry, niedobra, niedobre)"
+        },
+        {
             "text": "niedziela"
         },
         {
@@ -13984,6 +15464,22 @@
         {
             "text": "niestety, nie wiem",
             "meaning": "unfortunately, I don't know"
+        },
+        {
+            "text": "niezła",
+            "meaning": "not bad, quite good (niezły, niezła, niezłe)"
+        },
+        {
+            "text": "niezłe",
+            "meaning": "not bad, quite good (niezły, niezła, niezłe)"
+        },
+        {
+            "text": "niezły",
+            "meaning": "not bad"
+        },
+        {
+            "text": "niezły",
+            "meaning": "not bad, quite good (niezły, niezła, niezłe)"
         },
         {
             "text": "nieźle",
@@ -14011,6 +15507,9 @@
         {
             "text": "niskie",
             "meaning": "short (not tall) (niski, niska, niskie)"
+        },
+        {
+            "text": "nią"
         },
         {
             "text": "niż",
@@ -14171,6 +15670,22 @@
         {
             "text": "okno",
             "meaning": "a window"
+        },
+        {
+            "text": "okropna",
+            "meaning": "awful, horrible (okropny, okropna, okropne)"
+        },
+        {
+            "text": "okropne",
+            "meaning": "awful, horrible (okropny, okropna, okropne)"
+        },
+        {
+            "text": "okropny",
+            "meaning": "awful"
+        },
+        {
+            "text": "okropny",
+            "meaning": "awful, horrible (okropny, okropna, okropne)"
         },
         {
             "text": "okrągła",
@@ -14384,6 +15899,9 @@
         {
             "text": "on się teraz nudzi",
             "meaning": "he is bored now"
+        },
+        {
+            "text": "on, ono"
         },
         {
             "text": "ona",
@@ -14627,6 +16145,9 @@
             "meaning": "they can cook"
         },
         {
+            "text": "oni, one"
+        },
+        {
             "text": "ono",
             "meaning": "it"
         },
@@ -14751,6 +16272,9 @@
         },
         {
             "text": "osiemset siedemdziesiąt cztery"
+        },
+        {
+            "text": "osoby"
         },
         {
             "text": "ostra",
@@ -15011,6 +16535,14 @@
             "meaning": "pierogi (Polish dumplings)"
         },
         {
+            "text": "pierogi ruskie",
+            "meaning": "pierogi with potato and cheese"
+        },
+        {
+            "text": "pierogi ruskie są wegetariańskie",
+            "meaning": "pierogi with potato and cheese are vegetarian"
+        },
+        {
             "text": "pierwsze"
         },
         {
@@ -15061,6 +16593,9 @@
         {
             "text": "piję herbatę z cytryną",
             "meaning": "I drink tea with lemon"
+        },
+        {
+            "text": "piję kawę"
         },
         {
             "text": "pisarz",
@@ -15224,6 +16759,14 @@
             "meaning": "five hundred złoty"
         },
         {
+            "text": "placki ziemniaczane",
+            "meaning": "potato pancakes"
+        },
+        {
+            "text": "placki ziemniaczane ze śmietaną",
+            "meaning": "potato pancakes with sour cream"
+        },
+        {
             "text": "planujesz"
         },
         {
@@ -15328,6 +16871,17 @@
         {
             "text": "poleca",
             "meaning": "he recommends, she recommends (jaki pan poleca?: which one do you recommend?)"
+        },
+        {
+            "text": "polecam",
+            "meaning": "I recommend"
+        },
+        {
+            "text": "polecam barszcz"
+        },
+        {
+            "text": "polecam żurek",
+            "meaning": "I recommend the sour rye soup"
         },
         {
             "text": "polecać",
@@ -15437,6 +16991,9 @@
             "meaning": "a tomato and a cucumber"
         },
         {
+            "text": "pomidorową"
+        },
+        {
             "text": "pomidory",
             "meaning": "a tomato (pomidory: tomatoes)"
         },
@@ -15468,6 +17025,10 @@
             "meaning": "I'd like two onions, please"
         },
         {
+            "text": "poproszę kawałek sernika",
+            "meaning": "a piece of cheesecake, please"
+        },
+        {
             "text": "poproszę kilo"
         },
         {
@@ -15477,6 +17038,21 @@
         {
             "text": "poproszę pół kilo",
             "meaning": "half a kilo, please"
+        },
+        {
+            "text": "poproszę rachunek",
+            "meaning": "I'd like the bill, please"
+        },
+        {
+            "text": "poproszę sos czosnkowy",
+            "meaning": "I'd like garlic sauce, please"
+        },
+        {
+            "text": "poproszę to samo",
+            "meaning": "I'd like the same, please"
+        },
+        {
+            "text": "poproszę żurek"
         },
         {
             "text": "popularna",
@@ -15758,6 +17334,10 @@
             "meaning": "half a kilo, please"
         },
         {
+            "text": "proszę rachunek",
+            "meaning": "I'd like the bill, please"
+        },
+        {
             "text": "proszę się przedstawić",
             "meaning": "introduce yourself, please"
         },
@@ -15776,6 +17356,10 @@
         {
             "text": "proszę wybrać przykład",
             "meaning": "choose an example, please"
+        },
+        {
+            "text": "proszę, to jest menu",
+            "meaning": "here you are, this is the menu"
         },
         {
             "text": "przeczytać",
@@ -15984,6 +17568,14 @@
             "meaning": "to swim"
         },
         {
+            "text": "rachunek",
+            "meaning": "the bill"
+        },
+        {
+            "text": "rachunek",
+            "meaning": "the bill (poproszę rachunek)"
+        },
+        {
             "text": "rano",
             "meaning": "in the morning"
         },
@@ -15995,8 +17587,12 @@
             "text": "raz"
         },
         {
+            "text": "razem",
+            "meaning": "together"
+        },
+        {
             "text": "razy",
-            "meaning": "times (in sums: dwa razy dwa)"
+            "meaning": "times (dwa razy dwa; dwa razy kompot: two compotes)"
         },
         {
             "text": "razy",
@@ -16005,6 +17601,18 @@
         {
             "text": "restauracja",
             "meaning": "a restaurant"
+        },
+        {
+            "text": "restauracja jest zamknięta",
+            "meaning": "the restaurant is closed"
+        },
+        {
+            "text": "rezerwacja",
+            "meaning": "a booking"
+        },
+        {
+            "text": "rezerwacja",
+            "meaning": "a booking, a reservation"
         },
         {
             "text": "rezerwuje"
@@ -16123,8 +17731,24 @@
             "meaning": "romantic (romantyczny, romantyczna, romantyczne)"
         },
         {
+            "text": "rosół",
+            "meaning": "clear chicken soup"
+        },
+        {
+            "text": "rosół",
+            "meaning": "clear chicken soup, broth"
+        },
+        {
+            "text": "rosół z makaronem",
+            "meaning": "clear chicken soup with noodles"
+        },
+        {
             "text": "rozumiem",
             "meaning": "I understand"
+        },
+        {
+            "text": "rurka z kremem",
+            "meaning": "a cream horn (a pastry tube with cream)"
         },
         {
             "text": "ryba",
@@ -16297,11 +17921,30 @@
             "text": "ser to nabiał"
         },
         {
+            "text": "sera",
+            "meaning": "cheese (after nie: nie jem sera)"
+        },
+        {
             "text": "serem"
         },
         {
             "text": "serial",
             "meaning": "a TV series"
+        },
+        {
+            "text": "sernik",
+            "meaning": "cheesecake"
+        },
+        {
+            "text": "sernik i szarlotka",
+            "meaning": "cheesecake and apple pie"
+        },
+        {
+            "text": "sernik jest pyszny",
+            "meaning": "the cheesecake is delicious"
+        },
+        {
+            "text": "sernika"
         },
         {
             "text": "sezon",
@@ -16427,6 +18070,22 @@
             "meaning": "a taste, a flavour"
         },
         {
+            "text": "smakuje ci sernik?",
+            "meaning": "do you like the cheesecake? (of food; one friend)"
+        },
+        {
+            "text": "smakuje ci?",
+            "meaning": "do you like it? (of food; one friend)"
+        },
+        {
+            "text": "smakuje mi",
+            "meaning": "I like it"
+        },
+        {
+            "text": "smakuje mi",
+            "meaning": "I like it (of food)"
+        },
+        {
             "text": "smażona",
             "meaning": "fried (smażony, smażona, smażone)"
         },
@@ -16485,8 +18144,16 @@
             "meaning": "orange juice"
         },
         {
+            "text": "soku",
+            "meaning": "juice (after nie: nie mam soku)"
+        },
+        {
             "text": "sos",
             "meaning": "a sauce"
+        },
+        {
+            "text": "sos czosnkowy",
+            "meaning": "garlic sauce"
         },
         {
             "text": "sos jest dobry",
@@ -16614,6 +18281,18 @@
             "text": "sto złotych"
         },
         {
+            "text": "stolik",
+            "meaning": "a table"
+        },
+        {
+            "text": "stolik",
+            "meaning": "a table (in a restaurant or a café)"
+        },
+        {
+            "text": "stolik dla czterech osób",
+            "meaning": "a table for four people"
+        },
+        {
             "text": "strona",
             "meaning": "a page"
         },
@@ -16737,6 +18416,22 @@
             "meaning": "grey (szary, szara, szare)"
         },
         {
+            "text": "szarlotka",
+            "meaning": "apple pie"
+        },
+        {
+            "text": "szarlotka",
+            "meaning": "apple pie, apple cake"
+        },
+        {
+            "text": "szarlotka i sernik",
+            "meaning": "cheesecake and apple pie"
+        },
+        {
+            "text": "szarlotka z lodami",
+            "meaning": "apple pie with ice cream"
+        },
+        {
             "text": "szary",
             "meaning": "grey"
         },
@@ -16759,6 +18454,12 @@
         {
             "text": "szczupły",
             "meaning": "slim (szczupły, szczupła, szczupłe)"
+        },
+        {
+            "text": "szesnasta"
+        },
+        {
+            "text": "szesnastą"
         },
         {
             "text": "szesnaście",
@@ -17119,8 +18820,16 @@
             "text": "ta torba jest ładna"
         },
         {
+            "text": "ta zupa jest za słona",
+            "meaning": "the soup is too salty"
+        },
+        {
             "text": "ta zupa ma dobry smak",
             "meaning": "this soup tastes good"
+        },
+        {
+            "text": "ta zupa mi nie smakuje",
+            "meaning": "I don't like this soup (of food)"
         },
         {
             "text": "ta zupa pięknie pachnie"
@@ -17403,6 +19112,10 @@
             "meaning": "the cheese is mild"
         },
         {
+            "text": "ten sos jest bez smaku",
+            "meaning": "this sauce is tasteless"
+        },
+        {
             "text": "ten sos jest ostry",
             "meaning": "this sauce is spicy"
         },
@@ -17525,6 +19238,10 @@
             "meaning": "it is an interesting word"
         },
         {
+            "text": "to dobrze brzmi",
+            "meaning": "that sounds good"
+        },
+        {
             "text": "to dziecko jest aktywne",
             "meaning": "this child is active"
         },
@@ -17581,8 +19298,15 @@
             "text": "to jest banan"
         },
         {
+            "text": "to jest biernik"
+        },
+        {
             "text": "to jest ciekawe słowo",
             "meaning": "it is an interesting word"
+        },
+        {
+            "text": "to jest dopełniacz",
+            "meaning": "this is the genitive"
         },
         {
             "text": "to jest duże okno",
@@ -17689,6 +19413,9 @@
         {
             "text": "to jest mapa",
             "meaning": "it is a map"
+        },
+        {
+            "text": "to jest mianownik"
         },
         {
             "text": "to jest moja córka"
@@ -18009,6 +19736,14 @@
             "meaning": "this window, this map, this key"
         },
         {
+            "text": "to samo",
+            "meaning": "the same"
+        },
+        {
+            "text": "to samo",
+            "meaning": "the same (dla mnie to samo: the same for me)"
+        },
+        {
             "text": "to segregator"
         },
         {
@@ -18281,6 +20016,10 @@
         {
             "text": "tutaj",
             "meaning": "here"
+        },
+        {
+            "text": "tutaj czekam",
+            "meaning": "I am waiting here"
         },
         {
             "text": "tutaj jest kawa",
@@ -18639,6 +20378,14 @@
             "meaning": "do (a sport: uprawiać sport)"
         },
         {
+            "text": "urodziny",
+            "meaning": "a birthday"
+        },
+        {
+            "text": "urodziny",
+            "meaning": "a birthday, a birthday party"
+        },
+        {
             "text": "urzędniczka",
             "meaning": "a clerk (a woman)"
         },
@@ -18851,12 +20598,31 @@
             "meaning": "at the weekend I do the shopping"
         },
         {
+            "text": "wami"
+        },
+        {
             "text": "warzywa",
             "meaning": "vegetables"
         },
         {
             "text": "warzywa są zdrowe",
             "meaning": "vegetables are healthy"
+        },
+        {
+            "text": "wegetariańska",
+            "meaning": "vegetarian (wegetariański, wegetariańska, wegetariańskie)"
+        },
+        {
+            "text": "wegetariański",
+            "meaning": "vegetarian (wegetariański, wegetariańska, wegetariańskie)"
+        },
+        {
+            "text": "wegetariańskie",
+            "meaning": "vegetarian (wegetariański, wegetariańska, wegetariańskie)"
+        },
+        {
+            "text": "wegetariańskie danie",
+            "meaning": "a vegetarian dish"
         },
         {
             "text": "wesoła",
@@ -18912,8 +20678,20 @@
             "text": "wiem, że tak"
         },
         {
+            "text": "wieprzowina",
+            "meaning": "pork"
+        },
+        {
+            "text": "wieprzowina czy wołowina?",
+            "meaning": "pork or beef?"
+        },
+        {
             "text": "wiesz",
             "meaning": "you know (one friend)"
+        },
+        {
+            "text": "wina",
+            "meaning": "wine (after nie: nie piję wina)"
         },
         {
             "text": "wino",
@@ -18976,7 +20754,8 @@
             "meaning": "mineral water"
         },
         {
-            "text": "wody"
+            "text": "wody",
+            "meaning": "water (after nie: nie mam wody)"
         },
         {
             "text": "wodę",
@@ -19030,6 +20809,10 @@
             "meaning": "I prefer"
         },
         {
+            "text": "wolę drób",
+            "meaning": "I prefer poultry"
+        },
+        {
             "text": "wolę grać na komputerze",
             "meaning": "I prefer playing computer games"
         },
@@ -19061,6 +20844,10 @@
             "meaning": "I prefer cold juice"
         },
         {
+            "text": "wołowina",
+            "meaning": "beef"
+        },
+        {
             "text": "wszystko",
             "meaning": "everything"
         },
@@ -19079,6 +20866,14 @@
         {
             "text": "wszystko w porządku, a u pana?",
             "meaning": "everything is all right, and with you? (to a man, formal)"
+        },
+        {
+            "text": "wszędzie",
+            "meaning": "everywhere"
+        },
+        {
+            "text": "wszędzie",
+            "meaning": "everywhere, anywhere"
         },
         {
             "text": "wy",
@@ -19222,6 +21017,14 @@
             "meaning": "from Italy"
         },
         {
+            "text": "z bitą śmietaną",
+            "meaning": "with whipped cream"
+        },
+        {
+            "text": "z boczkiem",
+            "meaning": "with bacon"
+        },
+        {
             "text": "z cukrem",
             "meaning": "with sugar"
         },
@@ -19238,12 +21041,64 @@
             "meaning": "with chips"
         },
         {
+            "text": "z grilla",
+            "meaning": "grilled, from the grill"
+        },
+        {
+            "text": "z jajkiem",
+            "meaning": "with an egg"
+        },
+        {
+            "text": "z kim idziesz?",
+            "meaning": "who are you going with? (one friend)"
+        },
+        {
+            "text": "z kim?",
+            "meaning": "who with?"
+        },
+        {
+            "text": "z kim?",
+            "meaning": "who with? with whom?"
+        },
+        {
+            "text": "z kurczakiem",
+            "meaning": "with chicken"
+        },
+        {
+            "text": "z lodami",
+            "meaning": "with ice cream"
+        },
+        {
+            "text": "z makaronem",
+            "meaning": "with noodles, with pasta"
+        },
+        {
             "text": "z masłem",
             "meaning": "with butter"
         },
         {
             "text": "z mlekiem",
             "meaning": "with milk"
+        },
+        {
+            "text": "z nami",
+            "meaning": "with us"
+        },
+        {
+            "text": "z nim",
+            "meaning": "with him"
+        },
+        {
+            "text": "z nim",
+            "meaning": "with him; with it"
+        },
+        {
+            "text": "z nimi",
+            "meaning": "with them"
+        },
+        {
+            "text": "z nią",
+            "meaning": "with her"
         },
         {
             "text": "z oliwkami",
@@ -19258,6 +21113,10 @@
             "meaning": "with button mushrooms"
         },
         {
+            "text": "z podwójnym serem",
+            "meaning": "with double cheese"
+        },
+        {
             "text": "z rodzynkami",
             "meaning": "with raisins"
         },
@@ -19270,12 +21129,44 @@
             "meaning": "with ham"
         },
         {
+            "text": "z tobą",
+            "meaning": "with you"
+        },
+        {
+            "text": "z tobą",
+            "meaning": "with you (one friend)"
+        },
+        {
+            "text": "z tobą wszędzie",
+            "meaning": "with you, anywhere (one friend)"
+        },
+        {
+            "text": "z uszkami",
+            "meaning": "with little dumplings (barszcz z uszkami)"
+        },
+        {
+            "text": "z wami",
+            "meaning": "with you (several people)"
+        },
+        {
+            "text": "z wami",
+            "meaning": "with you, several people"
+        },
+        {
             "text": "z warzywami",
             "meaning": "with vegetables"
         },
         {
             "text": "z zawodu",
             "meaning": "by profession"
+        },
+        {
+            "text": "za",
+            "meaning": "too"
+        },
+        {
+            "text": "za",
+            "meaning": "too (za słony: too salty)"
         },
         {
             "text": "zajęta",
@@ -19316,10 +21207,52 @@
             "meaning": "I order, I am ordering"
         },
         {
+            "text": "zamawiam danie główne",
+            "meaning": "I am ordering a main course"
+        },
+        {
             "text": "zamawiamy"
         },
         {
             "text": "zamawiasz"
+        },
+        {
+            "text": "zamknięta",
+            "meaning": "closed, shut (zamknięty, zamknięta, zamknięte)"
+        },
+        {
+            "text": "zamknięte",
+            "meaning": "closed, shut (zamknięty, zamknięta, zamknięte)"
+        },
+        {
+            "text": "zamknięty",
+            "meaning": "closed"
+        },
+        {
+            "text": "zamknięty",
+            "meaning": "closed, shut (zamknięty, zamknięta, zamknięte)"
+        },
+        {
+            "text": "zapiekanka",
+            "meaning": "a zapiekanka (half a baguette baked with mushrooms and cheese)"
+        },
+        {
+            "text": "zapiekanka z boczkiem"
+        },
+        {
+            "text": "zapiekanka z kurczakiem",
+            "meaning": "a zapiekanka with chicken"
+        },
+        {
+            "text": "zapiekanka z podwójnym serem",
+            "meaning": "a zapiekanka with double cheese"
+        },
+        {
+            "text": "zapiekanka z serem"
+        },
+        {
+            "text": "zapiekanka z szynką",
+            "meaning": "a zapiekanka with ham"
         },
         {
             "text": "zaprasza"
@@ -19331,7 +21264,19 @@
             "text": "zapraszają"
         },
         {
-            "text": "zapraszam"
+            "text": "zapraszam",
+            "meaning": "I invite"
+        },
+        {
+            "text": "zapraszam",
+            "meaning": "I invite (zapraszam na obiad: come for dinner)"
+        },
+        {
+            "text": "zapraszam na kolację"
+        },
+        {
+            "text": "zapraszam na obiad",
+            "meaning": "come for dinner"
         },
         {
             "text": "zapraszamy",
@@ -19346,7 +21291,18 @@
             "meaning": "Come for supper! (we invite you)"
         },
         {
+            "text": "zapraszamy na obiad"
+        },
+        {
             "text": "zapraszasz"
+        },
+        {
+            "text": "zaraz",
+            "meaning": "in a moment"
+        },
+        {
+            "text": "zaraz",
+            "meaning": "in a moment, right away"
         },
         {
             "text": "zdjęcia",
@@ -19387,6 +21343,17 @@
         {
             "text": "zdrowy",
             "meaning": "healthy (zdrowy, zdrowa, zdrowe)"
+        },
+        {
+            "text": "ze"
+        },
+        {
+            "text": "ze mną",
+            "meaning": "with me"
+        },
+        {
+            "text": "ze szpinakiem",
+            "meaning": "with spinach"
         },
         {
             "text": "ze znajomymi",
@@ -19476,8 +21443,37 @@
             "meaning": "cold (zimny, zimna, zimne)"
         },
         {
+            "text": "zimne mleko"
+        },
+        {
+            "text": "zimnego",
+            "meaning": "cold (zimnego, zimnej: after nie, nie lubię zimnego mleka)"
+        },
+        {
+            "text": "zimnego mleka"
+        },
+        {
+            "text": "zimnego soku"
+        },
+        {
+            "text": "zimnej",
+            "meaning": "cold (zimnego, zimnej: after nie, nie lubię zimnego mleka)"
+        },
+        {
+            "text": "zimnej kawy"
+        },
+        {
+            "text": "zimno"
+        },
+        {
             "text": "zimny",
             "meaning": "cold (zimny, zimna, zimne)"
+        },
+        {
+            "text": "zimny sok"
+        },
+        {
+            "text": "zimną kawę"
         },
         {
             "text": "zmęczona",
@@ -19573,8 +21569,20 @@
             "meaning": "there is soup for dinner"
         },
         {
+            "text": "zupa jest za słona",
+            "meaning": "the soup is too salty"
+        },
+        {
             "text": "zupa kalafiorowa",
             "meaning": "cauliflower soup"
+        },
+        {
+            "text": "zupa pomidorowa",
+            "meaning": "tomato soup"
+        },
+        {
+            "text": "zupa pomidorowa jest dobra",
+            "meaning": "the tomato soup is good"
         },
         {
             "text": "zupa rybna",
@@ -19691,6 +21699,26 @@
         {
             "text": "ładowarka i komórka",
             "meaning": "a mobile phone and a charger"
+        },
+        {
+            "text": "łagodna",
+            "meaning": "mild, not spicy (łagodny sos) (łagodny, łagodna, łagodne)"
+        },
+        {
+            "text": "łagodne",
+            "meaning": "mild, not spicy (łagodny sos) (łagodny, łagodna, łagodne)"
+        },
+        {
+            "text": "łagodny",
+            "meaning": "mild"
+        },
+        {
+            "text": "łagodny",
+            "meaning": "mild, not spicy (łagodny sos) (łagodny, łagodna, łagodne)"
+        },
+        {
+            "text": "łagodny sos",
+            "meaning": "a mild sauce"
         },
         {
             "text": "łososia"
@@ -19956,6 +21984,17 @@
             "text": "Żeby studiować w Polsce."
         },
         {
+            "text": "Żurek jest z jajkiem i kiełbasą.",
+            "meaning": "The sour rye soup comes with an egg and sausage."
+        },
+        {
+            "text": "Żurek jest z jajkiem.",
+            "meaning": "The sour rye soup comes with an egg."
+        },
+        {
+            "text": "Żurek z jajkiem."
+        },
+        {
             "text": "Żółte i czerwone."
         },
         {
@@ -19982,6 +22021,17 @@
         {
             "text": "żona",
             "meaning": "a wife"
+        },
+        {
+            "text": "żurek",
+            "meaning": "sour rye soup"
+        },
+        {
+            "text": "żurek z jajkiem",
+            "meaning": "sour rye soup with an egg"
+        },
+        {
+            "text": "żurek z uszkami"
         },
         {
             "text": "żółta",
@@ -20235,6 +22285,38 @@
         {
             "id": "chat-at-the-market/t6/2",
             "hash": "040e9fd1be4e"
+        },
+        {
+            "id": "chat-at-the-restaurant/t1/2",
+            "hash": "e84ee8c66857"
+        },
+        {
+            "id": "chat-at-the-restaurant/t2/2",
+            "hash": "ed37759ebd64"
+        },
+        {
+            "id": "chat-at-the-restaurant/t3/2",
+            "hash": "3918c6b8360c"
+        },
+        {
+            "id": "chat-at-the-restaurant/t4/2",
+            "hash": "1984c8fab348"
+        },
+        {
+            "id": "chat-at-the-restaurant/t5/2",
+            "hash": "1fc37ee68fcb"
+        },
+        {
+            "id": "chat-at-the-restaurant/t6/2",
+            "hash": "459e8b6967cb"
+        },
+        {
+            "id": "chat-at-the-restaurant/t7/2",
+            "hash": "016c219a3637"
+        },
+        {
+            "id": "chat-at-the-restaurant/t8/2",
+            "hash": "18898ec8acb1"
         },
         {
             "id": "chat-breakfast-with-a-friend/t1/2",
@@ -21201,6 +23283,74 @@
         {
             "id": "kpk1-l09-g-t01",
             "hash": "a9739e381de9"
+        },
+        {
+            "id": "kpk1-l10-a1-t01",
+            "hash": "e2fc2fd9cc1e"
+        },
+        {
+            "id": "kpk1-l10-a2-t01",
+            "hash": "f4a3042695ca"
+        },
+        {
+            "id": "kpk1-l10-a3-t01",
+            "hash": "1abe7007203a"
+        },
+        {
+            "id": "kpk1-l10-a4-t01",
+            "hash": "48902fe980b1"
+        },
+        {
+            "id": "kpk1-l10-a5-t01",
+            "hash": "cbc7bec1166f"
+        },
+        {
+            "id": "kpk1-l10-a6-t01",
+            "hash": "93c9f1ead338"
+        },
+        {
+            "id": "kpk1-l10-a6-t02",
+            "hash": "8e1183eda040"
+        },
+        {
+            "id": "kpk1-l10-a7-t01",
+            "hash": "a4d9d1925aa9"
+        },
+        {
+            "id": "kpk1-l10-a7-t02",
+            "hash": "82f3f618caad"
+        },
+        {
+            "id": "kpk1-l10-b1-t01",
+            "hash": "93cabd4964da"
+        },
+        {
+            "id": "kpk1-l10-b2-t01",
+            "hash": "5c49dba7933e"
+        },
+        {
+            "id": "kpk1-l10-b2-t02",
+            "hash": "6acb32fcdaa1"
+        },
+        {
+            "id": "kpk1-l10-b3-t01",
+            "hash": "c36d7ca4710b"
+        },
+        {
+            "id": "kpk1-l10-b4-t01",
+            "hash": "0ebb0ff975a8"
+        },
+        {
+            "id": "kpk1-l10-c1-t01",
+            "hash": "4a559ba6e1d6"
+        },
+        {
+            "id": "kpk1-l10-c2-t01",
+            "hash": "12a6327ed9d7"
+        },
+        {
+            "id": "kpk1-l10-g-t01",
+            "hash": "b75caaa31d22"
         }
     ]
 }

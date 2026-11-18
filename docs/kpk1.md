@@ -212,3 +212,22 @@ It gives the later chapters:
 - *kupować* and *uwielbiać*, and the cooked adjectives (*gotowany*, *pieczony*, *smażony*).
 
 It leaves for later: the genitive plural after five and after *kilo* (*pięć jabłek*, *kilo pomidorów*, only in the Tip and the recordings), the plural of people (*oni*, *studenci*), and the comparative as a rule (*zdrowszy* is an Item).
+
+## Chapter 10: Uwielbiam polskie jedzenie!
+
+Book pages 80 to 85, recordings 112 to 120. Fourteen parts, 239 Exercises and 110 new Items.
+
+- **A** *Zapraszam was na obiad*, in seven: a booking (17: *zapraszam*, *urodziny*, *rezerwacja*, *mam rezerwację*, *stolik*, *dla czterech osób*, *menu*, *zaraz*); soups (16: *barszcz*, *z uszkami*, *żurek*, *z jajkiem*, *rosół*, *z makaronem*, *krupnik*, *zupa pomidorowa*); main dishes (16: *danie*, *kotlet schabowy*, *kotlet mielony*, *bigos*, *gołąbki*, *pierogi ruskie*, *naleśniki*, *placki ziemniaczane*); meat (17: *wieprzowina*, *wołowina*, *cielęcina*, *drób*, *kaczka*, *indyk*, *z grilla*, *wegetariański*); ordering, with a Tip on *dla mnie* and *proszę* (17: *co podać?*, *polecam*, *dla mnie*, *to samo*, *kompot*, *danie główne*, *rachunek*); opinions, with *smakuje mi* and *za* (17: *smakuje ci?*, *smakuje mi*, *nie smakuje mi*, *niezły*, *okropny*, *niedobry*, *bez smaku*, *za*); and the *Zapamiętaj!* of opposites with the café's signs (18: *ciepły*, *chłodny*, *łagodny*, *czynny*, *nieczynny*, *zamknięty*, *danie dnia*, *napiwek*).
+- **B** *A może rurka z kremem?*, in four: something sweet (18: *coś słodkiego*, *deser*, *rurka z kremem*, *gofr*, *lody*, *sernik*, *szarlotka*, *makowiec*); the genitive after *nie*, feminine and neuter, with a table of *biernik* and *dopełniacz* and *ani… ani…* (17: *dopełniacz*, *kawy*, *herbaty*, *wody*, *mleka*, *wina*, *ani*, *to dobrze brzmi*); masculine things and adjectives in *-ego*, *-ej* (17: *soku*, *kompotu*, *chleba*, *sera*, *zimnego*, *czerwonego*, *białego*); and the café's menu (17: *koktajl*, *z bitą śmietaną*, *z lodami*, *na ciepło*, *kawałek sernika*, *herbata owocowa*, *czarna kawa*, *gorąca czekolada*).
+- **C** *Nareszcie weekend!*, in two: *ze mną*, *z tobą*, *z nim*, *z nią*, with the table of pronouns after *z* (16: *nareszcie*, *idziesz*, *do pubu*, *z kim?*); and *z nami*, *z wami*, *z nimi* (18: *idziecie*, *wszędzie*, *co z nim?*, *czekam*, *razem*).
+- *Ćwiczenia* (18): the *zapiekanka* stall (*z podwójnym serem*, *z boczkiem*, *ze szpinakiem*, *z kurczakiem*, *keczup*, *majonez*, *sos czosnkowy*), *zamawiać*.
+
+A noun after *nie* is its own Item (*kawy*, *soku*), as the accusative is (*kawę*); an adjective after *nie* is one Item with its feminine as its form (*zimnego*, *zimnej*). *Razy* now also means portions (*dwa razy kompot*). There are 39 listening tasks on all 9 recordings (114 repeats 113), and one Chat: *At the restaurant* (the waitress, formal: the soup she recommends, a pork chop with chips, a compote, no dessert, the bill). Eight Items have pictures (pancakes, duck, turkey, ice cream, a waffle, a birthday cake, a dessert, the bill).
+
+It gives the later chapters:
+
+- the genitive singular after *nie* (*nie lubię kawy*, *nie mam soku*), with adjectives in *-ego* and *-ej*;
+- the pronouns after *z* (*ze mną … z nimi*), *dla mnie*, *to samo*;
+- the menu: soups, main dishes, meat, desserts and the café's drinks; *smakuje mi*, *za* before an adjective.
+
+It leaves for later: the genitive after *kawałek* as a rule (*kawałek sernika* is an Item), the genitive of people (*nie znam tego profesora*), and the plural genitive (*nie mam pieniędzy* stays an Item).

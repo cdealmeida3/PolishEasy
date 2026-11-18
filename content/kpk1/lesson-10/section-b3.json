@@ -1,0 +1,460 @@
+{
+  "id": "kpk1-l10-b3",
+  "section": {
+    "letter": "B",
+    "heading": "A może rurka z kremem?",
+    "meaning": {
+      "en": "How about a cream horn?"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-b3-t01",
+      "before": "kpk1-l10-b3-e01",
+      "title": {
+        "en": "Nie mam soku"
+      },
+      "body": {
+        "en": "A masculine thing after *nie* ends in *-a* or *-u*: *nie mam chleba*, *nie jem sera*, but *nie mam soku*, *nie ma kompotu*. An adjective ends in *-ego* (masculine and neuter) or *-ej* (feminine): *nie lubię zimnego mleka*, *nie piję białej kawy*."
+      },
+      "table": {
+        "title": {
+          "en": "Dopełniacz: kogo? czego?"
+        },
+        "columns": [
+          {
+            "gender": "m"
+          },
+          {
+            "gender": "f"
+          },
+          {
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "case": "B",
+            "cells": [
+              "zimn[y] sok",
+              "zimn[ą] kawę",
+              "zimn[e] mleko"
+            ]
+          },
+          {
+            "case": "D",
+            "cells": [
+              "zimn[ego] soku",
+              "zimn[ej] kawy",
+              "zimn[ego] mleka"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b3-e01",
+      "prompt": "soku",
+      "options": [
+        {
+          "en": "juice (after nie: nie mam soku)"
+        },
+        {
+          "en": "juice"
+        },
+        {
+          "en": "compote (after nie: nie ma kompotu)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sok-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b3-e02",
+      "prompt": "kompotu",
+      "options": [
+        {
+          "en": "compote, a drink of stewed fruit"
+        },
+        {
+          "en": "compote (after nie: nie ma kompotu)"
+        },
+        {
+          "en": "juice (after nie: nie mam soku)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kompot-gen"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-b3-e03",
+      "text": "nie ma kompotu",
+      "meaning": {
+        "en": "there's no compote"
+      },
+      "distractors": [
+        "nie ma soku",
+        "nie mam kompotu"
+      ],
+      "items": [
+        "nie-ma",
+        "kompot-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b3-e04",
+      "prompt": "chleba",
+      "options": [
+        {
+          "en": "bread"
+        },
+        {
+          "en": "cheese (after nie: nie jem sera)"
+        },
+        {
+          "en": "bread (after nie: nie mam chleba)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chleb-gen"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-b3-e05",
+      "prompt": {
+        "en": "I don't have any bread"
+      },
+      "acceptedAnswers": [
+        "nie mam chleba"
+      ],
+      "distractors": [
+        "chleb",
+        "sera"
+      ],
+      "items": [
+        "nie",
+        "miec-mam",
+        "chleb-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b3-e06",
+      "prompt": "sera",
+      "options": [
+        {
+          "en": "cheese (after nie: nie jem sera)"
+        },
+        {
+          "en": "cheese"
+        },
+        {
+          "en": "bread (after nie: nie mam chleba)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ser-gen"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-b3-e07",
+      "text": "Nie jem ___.",
+      "meaning": {
+        "en": "I don't eat cheese."
+      },
+      "gaps": [
+        [
+          "sera"
+        ]
+      ],
+      "distractors": [
+        "ser",
+        "serem"
+      ],
+      "items": [
+        "nie",
+        "jesc-jem",
+        "ser-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b3-e08",
+      "prompt": "zimnego",
+      "options": [
+        {
+          "en": "cold (zimny, zimna, zimne)"
+        },
+        {
+          "en": "cold (zimnego, zimnej: after nie, nie lubię zimnego mleka)"
+        },
+        {
+          "en": "white (białego, białej: after nie, nie piję białej kawy)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zimny-gen"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-b3-e09",
+      "acceptedAnswers": [
+        "nie lubię zimnego mleka"
+      ],
+      "meaning": {
+        "en": "I don't like cold milk"
+      },
+      "items": [
+        "nie",
+        "lubic-lubie",
+        "zimny-gen",
+        "mleko-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b3-e10",
+      "prompt": "czerwonego",
+      "options": [
+        {
+          "en": "red (czerwony, czerwona, czerwone)"
+        },
+        {
+          "en": "cold (zimnego, zimnej: after nie, nie lubię zimnego mleka)"
+        },
+        {
+          "en": "red (czerwonego, czerwonej: after nie, nie piję czerwonego wina)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czerwony-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-b3-e11",
+      "prompt": {
+        "en": "I don't drink red wine"
+      },
+      "acceptedAnswers": [
+        "nie piję czerwonego wina",
+        "ja nie piję czerwonego wina"
+      ],
+      "items": [
+        "nie",
+        "pic-pije",
+        "czerwony-gen",
+        "wino-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-b3-e12",
+      "prompt": "białego",
+      "options": [
+        {
+          "en": "white (białego, białej: after nie, nie piję białej kawy)"
+        },
+        {
+          "en": "white (biały, biała, białe)"
+        },
+        {
+          "en": "red (czerwonego, czerwonej: after nie, nie piję czerwonego wina)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bialy-gen"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-b3-e13",
+      "prompt": {
+        "en": "I don't drink white coffee"
+      },
+      "acceptedAnswers": [
+        "nie piję białej kawy"
+      ],
+      "distractors": [
+        "białą",
+        "kawę"
+      ],
+      "items": [
+        "nie",
+        "pic-pije",
+        "bialy-gen",
+        "kawa-gen"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-b3-e14",
+      "pairs": [
+        {
+          "polish": "nie mam soku",
+          "meaning": {
+            "en": "I have no juice"
+          }
+        },
+        {
+          "polish": "nie ma kompotu",
+          "meaning": {
+            "en": "there's no compote"
+          }
+        },
+        {
+          "polish": "nie jem sera",
+          "meaning": {
+            "en": "I don't eat cheese"
+          }
+        },
+        {
+          "polish": "nie mam chleba",
+          "meaning": {
+            "en": "I have no bread"
+          }
+        },
+        {
+          "polish": "nie piję białej kawy",
+          "meaning": {
+            "en": "I don't drink white coffee"
+          }
+        },
+        {
+          "polish": "dopełniacz",
+          "meaning": {
+            "en": "the genitive"
+          }
+        }
+      ],
+      "items": [
+        "dopelniacz",
+        "nie",
+        "miec-mam",
+        "sok-gen",
+        "nie-ma",
+        "kompot-gen",
+        "jesc-jem",
+        "ser-gen",
+        "chleb-gen",
+        "pic-pije",
+        "bialy-gen",
+        "kawa-gen"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-b3-e15",
+      "lines": [
+        "Adam lubi kawę z mlekiem.",
+        "Nie lubi zimnego mleka.",
+        "Nie pije czerwonego wina, ale lubi piwo."
+      ],
+      "meaning": {
+        "en": "What Adam likes."
+      },
+      "statements": [
+        {
+          "text": "Adam lubi zimne mleko.",
+          "meaning": {
+            "en": "Adam likes cold milk."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam lubi kawę z mlekiem.",
+          "meaning": {
+            "en": "Adam likes coffee with milk."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam lubi piwo.",
+          "meaning": {
+            "en": "Adam likes beer."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "adam",
+        "lubic-lubi",
+        "kawa-acc",
+        "z-mlekiem",
+        "nie",
+        "zimny-gen",
+        "mleko-gen",
+        "pic-pije-on",
+        "czerwony-gen",
+        "wino-gen",
+        "ale",
+        "piwo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-b3-e16",
+      "text": "Lubię mleko, ale nie lubię ___ mleka.",
+      "meaning": {
+        "en": "I like milk, but I don't like cold milk."
+      },
+      "gaps": [
+        [
+          "zimnego"
+        ]
+      ],
+      "distractors": [
+        "zimne",
+        "zimnej"
+      ],
+      "items": [
+        "lubic-lubie",
+        "mleko",
+        "ale",
+        "nie",
+        "zimny-gen",
+        "mleko-gen"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-b3-e17",
+      "prompt": {
+        "en": "I drink neither juice nor compote"
+      },
+      "acceptedAnswers": [
+        "nie piję ani soku, ani kompotu",
+        "ja nie piję ani soku, ani kompotu"
+      ],
+      "items": [
+        "nie",
+        "pic-pije",
+        "ani",
+        "sok-gen",
+        "kompot-gen"
+      ]
+    }
+  ]
+}

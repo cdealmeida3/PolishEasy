@@ -1,0 +1,414 @@
+{
+  "id": "kpk1-l10-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Zapraszam was na obiad",
+    "meaning": {
+      "en": "Come for dinner"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-a5-t01",
+      "before": "kpk1-l10-a5-e01",
+      "title": {
+        "en": "Dla mnie…"
+      },
+      "body": {
+        "en": "To order, say *dla mnie* and the dish as the menu writes it: *dla mnie żurek*, *dla mnie zupa pomidorowa*. After *proszę* or *poproszę* a feminine dish changes: *poproszę zupę pomidorową*. *Dla mnie to samo* is the same for me, and *dwa razy kompot* is two compotes."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a5-e01",
+      "prompt": "co podać?",
+      "options": [
+        {
+          "en": "anything else?"
+        },
+        {
+          "en": "what is it? what is this?"
+        },
+        {
+          "en": "what can I get you? (a waiter asks)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "co-podac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a5-e02",
+      "prompt": "polecam",
+      "options": [
+        {
+          "en": "I recommend"
+        },
+        {
+          "en": "he recommends, she recommends (jaki pan poleca?: which one do you recommend?)"
+        },
+        {
+          "en": "I invite (zapraszam na obiad: come for dinner)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "polecac-polecam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-a5-e03",
+      "text": "polecam żurek",
+      "meaning": {
+        "en": "I recommend the sour rye soup"
+      },
+      "distractors": [
+        "polecam barszcz",
+        "poproszę żurek"
+      ],
+      "items": [
+        "polecac-polecam",
+        "zurek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a5-e04",
+      "prompt": "dla mnie",
+      "options": [
+        {
+          "en": "me too (said back to \"nice to meet you\")"
+        },
+        {
+          "en": "for me (dla mnie żurek: the sour rye soup for me)"
+        },
+        {
+          "en": "with me"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dla-mnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a5-e05",
+      "prompt": "to samo",
+      "options": [
+        {
+          "en": "that's all"
+        },
+        {
+          "en": "also; too"
+        },
+        {
+          "en": "the same (dla mnie to samo: the same for me)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "to-samo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a5-e06",
+      "prompt": {
+        "en": "the same for me"
+      },
+      "acceptedAnswers": [
+        "dla mnie to samo"
+      ],
+      "distractors": [
+        "ja",
+        "teraz"
+      ],
+      "items": [
+        "dla-mnie",
+        "to-samo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-a5-e07",
+      "text": "Dla ___ barszcz z uszkami.",
+      "meaning": {
+        "en": "Beetroot soup with little dumplings for me."
+      },
+      "gaps": [
+        [
+          "mnie"
+        ]
+      ],
+      "distractors": [
+        "ja",
+        "mną"
+      ],
+      "items": [
+        "dla-mnie",
+        "barszcz",
+        "z-uszkami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a5-e08",
+      "prompt": "kompot",
+      "options": [
+        {
+          "en": "compote, a drink of stewed fruit"
+        },
+        {
+          "en": "juice"
+        },
+        {
+          "en": "coffee"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kompot"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-a5-e09",
+      "acceptedAnswers": [
+        "dla mnie kompot"
+      ],
+      "meaning": {
+        "en": "a compote for me"
+      },
+      "items": [
+        "dla-mnie",
+        "kompot"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a5-e10",
+      "prompt": "danie główne",
+      "options": [
+        {
+          "en": "the first course (often soup)"
+        },
+        {
+          "en": "a main course (on a menu: dania główne)"
+        },
+        {
+          "en": "a dessert"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "danie-glowne"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a5-e11",
+      "prompt": "rachunek",
+      "options": [
+        {
+          "en": "a menu (it never changes)"
+        },
+        {
+          "en": "a tip (for a waiter)"
+        },
+        {
+          "en": "the bill (poproszę rachunek)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "rachunek"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-a5-e12",
+      "prompt": {
+        "en": "I'd like the bill, please"
+      },
+      "acceptedAnswers": [
+        "poproszę rachunek",
+        "proszę rachunek"
+      ],
+      "items": [
+        "poprosze",
+        "rachunek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a5-e13",
+      "prompt": "zamawiam",
+      "options": [
+        {
+          "en": "I order, I am ordering"
+        },
+        {
+          "en": "I recommend"
+        },
+        {
+          "en": "I invite (zapraszam na obiad: come for dinner)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zamawiac-zamawiam"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a5-e14",
+      "prompt": {
+        "en": "I am ordering a main course"
+      },
+      "acceptedAnswers": [
+        "zamawiam danie główne"
+      ],
+      "distractors": [
+        "zamawiamy",
+        "zupa"
+      ],
+      "items": [
+        "zamawiac-zamawiam",
+        "danie-glowne"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-a5-e15",
+      "pairs": [
+        {
+          "polish": "co podać?",
+          "meaning": {
+            "en": "what can I get you?"
+          }
+        },
+        {
+          "polish": "polecam",
+          "meaning": {
+            "en": "I recommend"
+          }
+        },
+        {
+          "polish": "dla mnie",
+          "meaning": {
+            "en": "for me"
+          }
+        },
+        {
+          "polish": "to samo",
+          "meaning": {
+            "en": "the same"
+          }
+        },
+        {
+          "polish": "kompot",
+          "meaning": {
+            "en": "compote"
+          }
+        },
+        {
+          "polish": "rachunek",
+          "meaning": {
+            "en": "the bill"
+          }
+        }
+      ],
+      "items": [
+        "co-podac",
+        "polecac-polecam",
+        "dla-mnie",
+        "to-samo",
+        "kompot",
+        "rachunek"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-a5-e16",
+      "lines": [
+        "Co podać?",
+        "Dla mnie żurek.",
+        "A dla mnie to samo.",
+        "A co do picia?",
+        "Dwa razy kompot."
+      ],
+      "meaning": {
+        "en": "Ordering for two."
+      },
+      "items": [
+        "co-podac",
+        "dla-mnie",
+        "zurek",
+        "a",
+        "to-samo",
+        "co",
+        "do-picia",
+        "dwa",
+        "razy",
+        "kompot"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-a5-e17",
+      "lines": [
+        "Rezerwacja jest dla czterech osób.",
+        "Kelner mówi: zaraz podam menu.",
+        "Na obiad jest krupnik i kotlet mielony."
+      ],
+      "meaning": {
+        "en": "A booking for dinner."
+      },
+      "statements": [
+        {
+          "text": "Rezerwacja jest dla dwóch osób.",
+          "meaning": {
+            "en": "The booking is for two people."
+          },
+          "true": false
+        },
+        {
+          "text": "Na obiad jest krupnik.",
+          "meaning": {
+            "en": "There is barley soup for dinner."
+          },
+          "true": true
+        },
+        {
+          "text": "Na obiad jest kotlet schabowy.",
+          "meaning": {
+            "en": "There is a breaded pork chop for dinner."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "rezerwacja",
+        "byc-jest",
+        "dla-czterech-osob",
+        "kelner",
+        "zaraz",
+        "menu",
+        "na-obiad",
+        "krupnik",
+        "i",
+        "kotlet-mielony"
+      ]
+    }
+  ]
+}

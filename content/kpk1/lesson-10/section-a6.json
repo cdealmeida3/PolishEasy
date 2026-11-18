@@ -1,0 +1,431 @@
+{
+  "id": "kpk1-l10-a6",
+  "section": {
+    "letter": "A",
+    "heading": "Zapraszam was na obiad",
+    "meaning": {
+      "en": "Come for dinner"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-a6-t01",
+      "before": "kpk1-l10-a6-e01",
+      "title": {
+        "en": "Smakuje ci?"
+      },
+      "body": {
+        "en": "*Smakować* is how food tastes to someone: *smakuje ci?* (do you like it?), *smakuje mi* (I like it), *nie smakuje mi* (I don't like it). For food in the plural it is *smakują*: *smakują mi pierogi*."
+      }
+    },
+    {
+      "id": "kpk1-l10-a6-t02",
+      "before": "kpk1-l10-a6-e12",
+      "title": {
+        "en": "Za kwaśny"
+      },
+      "body": {
+        "en": "*Za* before an adjective means too: *za słony*, *za ostry*, *za tłusty*. *Myślę, że…* gives your opinion: *myślę, że żurek jest za kwaśny*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a6-e01",
+      "prompt": "smakuje ci?",
+      "options": [
+        {
+          "en": "you like (one friend)"
+        },
+        {
+          "en": "do you like it? (of food; one friend)"
+        },
+        {
+          "en": "what can I get you? (a waiter asks)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "smakuje-ci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a6-e02",
+      "prompt": "smakuje mi",
+      "options": [
+        {
+          "en": "I like"
+        },
+        {
+          "en": "do you like it? (of food; one friend)"
+        },
+        {
+          "en": "I like it (of food)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "smakuje-mi"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-a6-e03",
+      "text": "bardzo mi smakuje",
+      "meaning": {
+        "en": "I like it very much (of food)"
+      },
+      "distractors": [
+        "nie smakuje mi",
+        "smakuje ci?"
+      ],
+      "items": [
+        "bardzo",
+        "smakuje-mi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a6-e04",
+      "prompt": "nie smakuje mi",
+      "options": [
+        {
+          "en": "I don't like it (of food)"
+        },
+        {
+          "en": "I like it (of food)"
+        },
+        {
+          "en": "I don't know"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nie-smakuje-mi"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a6-e05",
+      "prompt": {
+        "en": "I don't like this soup (of food)"
+      },
+      "acceptedAnswers": [
+        "nie smakuje mi ta zupa",
+        "ta zupa mi nie smakuje"
+      ],
+      "distractors": [
+        "ci",
+        "to"
+      ],
+      "items": [
+        "nie-smakuje-mi",
+        "ta",
+        "zupa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a6-e06",
+      "prompt": "niezły",
+      "options": [
+        {
+          "en": "awful, horrible (okropny, okropna, okropne)"
+        },
+        {
+          "en": "not bad, quite good (niezły, niezła, niezłe)"
+        },
+        {
+          "en": "delicious (pyszny, pyszna, pyszne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "niezly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a6-e07",
+      "prompt": "okropny",
+      "options": [
+        {
+          "en": "not bad, quite good (niezły, niezła, niezłe)"
+        },
+        {
+          "en": "tasty (smaczny, smaczna, smaczne)"
+        },
+        {
+          "en": "awful, horrible (okropny, okropna, okropne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "okropny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-a6-e08",
+      "text": "Ta zupa jest ___!",
+      "meaning": {
+        "en": "This soup is awful!"
+      },
+      "gaps": [
+        [
+          "okropna"
+        ]
+      ],
+      "distractors": [
+        "okropny",
+        "okropne"
+      ],
+      "items": [
+        "ta",
+        "zupa",
+        "byc-jest",
+        "okropny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a6-e09",
+      "prompt": "niedobry",
+      "options": [
+        {
+          "en": "not good, not tasty (niedobry, niedobra, niedobre)"
+        },
+        {
+          "en": "good (dobry, dobra, dobre)"
+        },
+        {
+          "en": "not bad, quite good (niezły, niezła, niezłe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "niedobry"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a6-e10",
+      "prompt": "bez smaku",
+      "options": [
+        {
+          "en": "without sugar"
+        },
+        {
+          "en": "tasteless, with no taste"
+        },
+        {
+          "en": "salty (słony, słona, słone)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bez-smaku"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-a6-e11",
+      "acceptedAnswers": [
+        "ten sos jest bez smaku"
+      ],
+      "meaning": {
+        "en": "this sauce is tasteless"
+      },
+      "items": [
+        "ten",
+        "sos",
+        "byc-jest",
+        "bez-smaku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a6-e12",
+      "prompt": "za",
+      "options": [
+        {
+          "en": "very; very much"
+        },
+        {
+          "en": "only"
+        },
+        {
+          "en": "too (za słony: too salty)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "za"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-a6-e13",
+      "prompt": {
+        "en": "the soup is too salty"
+      },
+      "acceptedAnswers": [
+        "zupa jest za słona",
+        "ta zupa jest za słona"
+      ],
+      "items": [
+        "zupa",
+        "byc-jest",
+        "za",
+        "slony"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-a6-e14",
+      "pairs": [
+        {
+          "polish": "niezły",
+          "meaning": {
+            "en": "not bad"
+          }
+        },
+        {
+          "polish": "okropny",
+          "meaning": {
+            "en": "awful"
+          }
+        },
+        {
+          "polish": "niedobry",
+          "meaning": {
+            "en": "not good"
+          }
+        },
+        {
+          "polish": "bez smaku",
+          "meaning": {
+            "en": "tasteless"
+          }
+        },
+        {
+          "polish": "smakuje mi",
+          "meaning": {
+            "en": "I like it"
+          }
+        },
+        {
+          "polish": "za",
+          "meaning": {
+            "en": "too"
+          }
+        }
+      ],
+      "items": [
+        "niezly",
+        "okropny",
+        "niedobry",
+        "bez-smaku",
+        "smakuje-mi",
+        "za"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-a6-e15",
+      "lines": [
+        "Smakuje ci żurek?",
+        "Nie bardzo.",
+        "Dlaczego?",
+        "Myślę, że jest za kwaśny."
+      ],
+      "meaning": {
+        "en": "Talking about the soup."
+      },
+      "items": [
+        "smakuje-ci",
+        "zurek",
+        "nie",
+        "bardzo",
+        "dlaczego",
+        "myslec-mysle",
+        "ze",
+        "byc-jest",
+        "za",
+        "kwasny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a6-e16",
+      "prompt": {
+        "en": "the pancakes are not bad"
+      },
+      "acceptedAnswers": [
+        "naleśniki są niezłe"
+      ],
+      "distractors": [
+        "niezły",
+        "dobre"
+      ],
+      "items": [
+        "nalesniki",
+        "byc-sa",
+        "niezly"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-a6-e17",
+      "lines": [
+        "Danie główne to cielęcina z grilla.",
+        "Adam myśli, że jest niedobra.",
+        "Mówi: nie smakuje mi."
+      ],
+      "meaning": {
+        "en": "Adam's main course."
+      },
+      "statements": [
+        {
+          "text": "Danie główne to wołowina.",
+          "meaning": {
+            "en": "The main course is beef."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam myśli, że cielęcina jest niedobra.",
+          "meaning": {
+            "en": "Adam thinks the veal is not good."
+          },
+          "true": true
+        },
+        {
+          "text": "Cielęcina jest z grilla.",
+          "meaning": {
+            "en": "The veal is grilled."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "danie-glowne",
+        "to",
+        "cielecina",
+        "z-grilla",
+        "adam",
+        "myslec-mysli",
+        "ze",
+        "byc-jest",
+        "niedobry",
+        "nie-smakuje-mi"
+      ]
+    }
+  ]
+}

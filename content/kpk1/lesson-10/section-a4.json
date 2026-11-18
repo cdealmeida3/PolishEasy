@@ -1,0 +1,413 @@
+{
+  "id": "kpk1-l10-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Zapraszam was na obiad",
+    "meaning": {
+      "en": "Come for dinner"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-a4-t01",
+      "before": "kpk1-l10-a4-e01",
+      "title": {
+        "en": "Mięso"
+      },
+      "body": {
+        "en": "Pork is *wieprzowina*, beef *wołowina* and veal *cielęcina*. *Drób* (poultry) is *kurczak*, *kaczka* and *indyk*. A *kotlet schabowy* is pork. Meat or fish *z grilla* is grilled, and a *danie wegetariańskie* has no meat."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a4-e01",
+      "prompt": "wieprzowina",
+      "options": [
+        {
+          "en": "pork"
+        },
+        {
+          "en": "beef"
+        },
+        {
+          "en": "poultry"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wieprzowina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a4-e02",
+      "prompt": "wołowina",
+      "options": [
+        {
+          "en": "pork"
+        },
+        {
+          "en": "beef"
+        },
+        {
+          "en": "veal"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wolowina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a4-e03",
+      "prompt": "cielęcina",
+      "options": [
+        {
+          "en": "beef"
+        },
+        {
+          "en": "a duck; duck (the meat)"
+        },
+        {
+          "en": "veal"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "cielecina"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a4-e04",
+      "prompt": {
+        "en": "pork or beef?"
+      },
+      "acceptedAnswers": [
+        "wieprzowina czy wołowina?"
+      ],
+      "distractors": [
+        "cielęcina",
+        "i"
+      ],
+      "items": [
+        "wieprzowina",
+        "czy",
+        "wolowina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a4-e05",
+      "prompt": "drób",
+      "options": [
+        {
+          "en": "poultry"
+        },
+        {
+          "en": "meat"
+        },
+        {
+          "en": "a fish; fish, the food (ryby: fish, several)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "drob"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a4-e06",
+      "prompt": "kaczka",
+      "options": [
+        {
+          "en": "a turkey; turkey (the meat)"
+        },
+        {
+          "en": "a duck; duck (the meat)"
+        },
+        {
+          "en": "a chicken; chicken (the meat)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kaczka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a4-e07",
+      "prompt": "indyk",
+      "options": [
+        {
+          "en": "a duck; duck (the meat)"
+        },
+        {
+          "en": "pork"
+        },
+        {
+          "en": "a turkey; turkey (the meat)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "indyk"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-a4-e08",
+      "text": "Kotlet schabowy to ___.",
+      "meaning": {
+        "en": "A breaded pork chop is pork."
+      },
+      "gaps": [
+        [
+          "wieprzowina"
+        ]
+      ],
+      "distractors": [
+        "wołowina",
+        "drób"
+      ],
+      "items": [
+        "kotlet-schabowy",
+        "to",
+        "wieprzowina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a4-e09",
+      "prompt": "z grilla",
+      "options": [
+        {
+          "en": "grilled, from the grill"
+        },
+        {
+          "en": "with chips"
+        },
+        {
+          "en": "roast, baked (pieczony, pieczona, pieczone)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-grilla"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-a4-e10",
+      "text": "kurczak z grilla",
+      "meaning": {
+        "en": "grilled chicken"
+      },
+      "distractors": [
+        "kaczka z grilla",
+        "kurczak z frytkami"
+      ],
+      "items": [
+        "kurczak",
+        "z-grilla"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-a4-e11",
+      "prompt": "wegetariański",
+      "options": [
+        {
+          "en": "with meat"
+        },
+        {
+          "en": "vegetarian (wegetariański, wegetariańska, wegetariańskie)"
+        },
+        {
+          "en": "with fish"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wegetarianski"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-a4-e12",
+      "acceptedAnswers": [
+        "wolę drób"
+      ],
+      "meaning": {
+        "en": "I prefer poultry"
+      },
+      "items": [
+        "wolec-wole",
+        "drob"
+      ],
+      "readingAnswers": [
+        "ja wolę drób"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-a4-e13",
+      "prompt": {
+        "en": "a vegetarian dish"
+      },
+      "acceptedAnswers": [
+        "danie wegetariańskie",
+        "wegetariańskie danie"
+      ],
+      "items": [
+        "danie",
+        "wegetarianski"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-a4-e14",
+      "pairs": [
+        {
+          "polish": "wieprzowina",
+          "meaning": {
+            "en": "pork"
+          }
+        },
+        {
+          "polish": "wołowina",
+          "meaning": {
+            "en": "beef"
+          }
+        },
+        {
+          "polish": "cielęcina",
+          "meaning": {
+            "en": "veal"
+          }
+        },
+        {
+          "polish": "drób",
+          "meaning": {
+            "en": "poultry"
+          }
+        },
+        {
+          "polish": "kaczka",
+          "meaning": {
+            "en": "a duck"
+          }
+        },
+        {
+          "polish": "indyk",
+          "meaning": {
+            "en": "a turkey"
+          }
+        }
+      ],
+      "items": [
+        "wieprzowina",
+        "wolowina",
+        "cielecina",
+        "drob",
+        "kaczka",
+        "indyk"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-a4-e15",
+      "lines": [
+        "Ewa lubi drób.",
+        "Dziś na obiad jest indyk z grilla.",
+        "Jutro jest kaczka."
+      ],
+      "meaning": {
+        "en": "Ewa's favourite meat."
+      },
+      "statements": [
+        {
+          "text": "Ewa lubi drób.",
+          "meaning": {
+            "en": "Ewa likes poultry."
+          },
+          "true": true
+        },
+        {
+          "text": "Dziś jest kaczka.",
+          "meaning": {
+            "en": "There is duck today."
+          },
+          "true": false
+        },
+        {
+          "text": "Indyk jest z grilla.",
+          "meaning": {
+            "en": "The turkey is grilled."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "lubic-lubi",
+        "drob",
+        "dzis",
+        "na-obiad",
+        "byc-jest",
+        "indyk",
+        "z-grilla",
+        "jutro",
+        "kaczka"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-a4-e16",
+      "lines": [
+        "Lubisz wołowinę?",
+        "Nie, wolę wieprzowinę.",
+        "A drób?",
+        "Też."
+      ],
+      "meaning": {
+        "en": "Talking about meat."
+      },
+      "items": [
+        "lubic-lubisz",
+        "nie",
+        "wolec-wole",
+        "a",
+        "drob",
+        "tez"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-a4-e17",
+      "prompt": {
+        "en": "pierogi with potato and cheese are vegetarian"
+      },
+      "acceptedAnswers": [
+        "pierogi ruskie są wegetariańskie"
+      ],
+      "distractors": [
+        "wegetariański",
+        "mięso"
+      ],
+      "items": [
+        "pierogi-ruskie",
+        "byc-sa",
+        "wegetarianski"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "id": "kpk1-l10-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Nareszcie weekend!",
+    "meaning": {
+      "en": "At last, the weekend!"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l10-c2-t01",
+      "before": "kpk1-l10-c2-e01",
+      "title": {
+        "en": "Z tobą wszędzie!"
+      },
+      "body": {
+        "en": "*Z tobą wszędzie!* means with you, anywhere! *Co z nim?* asks what about him: is he coming? And *czekam* is I am waiting: *czekam tutaj*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-c2-e01",
+      "prompt": "z nami",
+      "options": [
+        {
+          "en": "with you (one friend)"
+        },
+        {
+          "en": "with them"
+        },
+        {
+          "en": "with us"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-nami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-c2-e02",
+      "prompt": "idziecie",
+      "options": [
+        {
+          "en": "you are going (on foot; several people)"
+        },
+        {
+          "en": "you are going (on foot; one friend)"
+        },
+        {
+          "en": "we are going (on foot)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "isc-idziecie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l10-c2-e03",
+      "text": "idziecie z nami?",
+      "meaning": {
+        "en": "are you coming with us? (several people)"
+      },
+      "distractors": [
+        "idziecie z nimi?",
+        "idziesz z nami?"
+      ],
+      "items": [
+        "isc-idziecie",
+        "z-nami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-c2-e04",
+      "prompt": "z wami",
+      "options": [
+        {
+          "en": "with us"
+        },
+        {
+          "en": "with you (several people)"
+        },
+        {
+          "en": "with you (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-wami"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-c2-e05",
+      "prompt": {
+        "en": "we are going with you (several people)"
+      },
+      "acceptedAnswers": [
+        "idziemy z wami"
+      ],
+      "distractors": [
+        "idziecie",
+        "nami"
+      ],
+      "items": [
+        "isc-idziemy",
+        "z-wami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-c2-e06",
+      "prompt": "z nimi",
+      "options": [
+        {
+          "en": "with you (several people)"
+        },
+        {
+          "en": "with him; with it"
+        },
+        {
+          "en": "with them"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-nimi"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l10-c2-e07",
+      "text": "Idę do kina ___ nimi.",
+      "meaning": {
+        "en": "I am going to the cinema with them."
+      },
+      "gaps": [
+        [
+          "z"
+        ]
+      ],
+      "distractors": [
+        "ze",
+        "i"
+      ],
+      "items": [
+        "isc-ide",
+        "do-kina",
+        "z-nimi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-c2-e08",
+      "prompt": "wszędzie",
+      "options": [
+        {
+          "en": "everywhere, anywhere"
+        },
+        {
+          "en": "here"
+        },
+        {
+          "en": "there"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wszedzie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-c2-e09",
+      "acceptedAnswers": [
+        "z tobą wszędzie"
+      ],
+      "meaning": {
+        "en": "with you, anywhere (one friend)"
+      },
+      "items": [
+        "z-toba",
+        "wszedzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-c2-e10",
+      "prompt": "co z nim?",
+      "options": [
+        {
+          "en": "who with? with whom?"
+        },
+        {
+          "en": "what about him?"
+        },
+        {
+          "en": "how are things with you? (one friend)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "co-z-nim"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-c2-e11",
+      "prompt": "czekam",
+      "options": [
+        {
+          "en": "I am going (on foot)"
+        },
+        {
+          "en": "I prefer"
+        },
+        {
+          "en": "I am waiting, I wait"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czekac-czekam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l10-c2-e12",
+      "prompt": {
+        "en": "I am waiting here"
+      },
+      "acceptedAnswers": [
+        "czekam tutaj",
+        "tutaj czekam",
+        "ja czekam tutaj"
+      ],
+      "items": [
+        "czekac-czekam",
+        "tutaj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l10-c2-e13",
+      "prompt": "razem",
+      "options": [
+        {
+          "en": "together"
+        },
+        {
+          "en": "times (dwa razy dwa; dwa razy kompot: two compotes)"
+        },
+        {
+          "en": "everywhere, anywhere"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "razem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l10-c2-e14",
+      "prompt": {
+        "en": "we are going together"
+      },
+      "acceptedAnswers": [
+        "idziemy razem"
+      ],
+      "distractors": [
+        "razy",
+        "idziecie"
+      ],
+      "items": [
+        "isc-idziemy",
+        "razem"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l10-c2-e15",
+      "pairs": [
+        {
+          "polish": "z nami",
+          "meaning": {
+            "en": "with us"
+          }
+        },
+        {
+          "polish": "z wami",
+          "meaning": {
+            "en": "with you, several people"
+          }
+        },
+        {
+          "polish": "z nimi",
+          "meaning": {
+            "en": "with them"
+          }
+        },
+        {
+          "polish": "wszędzie",
+          "meaning": {
+            "en": "everywhere"
+          }
+        },
+        {
+          "polish": "razem",
+          "meaning": {
+            "en": "together"
+          }
+        },
+        {
+          "polish": "czekam",
+          "meaning": {
+            "en": "I am waiting"
+          }
+        }
+      ],
+      "items": [
+        "z-nami",
+        "z-wami",
+        "z-nimi",
+        "wszedzie",
+        "razem",
+        "czekac-czekam"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l10-c2-e16",
+      "lines": [
+        "Nareszcie weekend!",
+        "Ewa i Adam idą do pubu.",
+        "Koleżanka idzie z nimi."
+      ],
+      "meaning": {
+        "en": "Friday evening."
+      },
+      "statements": [
+        {
+          "text": "Ewa i Adam idą do kina.",
+          "meaning": {
+            "en": "Ewa and Adam are going to the cinema."
+          },
+          "true": false
+        },
+        {
+          "text": "Koleżanka idzie z nimi.",
+          "meaning": {
+            "en": "A friend is going with them."
+          },
+          "true": true
+        },
+        {
+          "text": "Jest weekend.",
+          "meaning": {
+            "en": "It's the weekend."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "nareszcie",
+        "ewa",
+        "i",
+        "adam",
+        "do-pubu",
+        "kolezanka",
+        "z-nimi"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l10-c2-e17",
+      "lines": [
+        "Idziecie z nami do pubu?",
+        "Tak, chętnie.",
+        "A co z nim?",
+        "Czekam na SMS."
+      ],
+      "meaning": {
+        "en": "Going to the pub together."
+      },
+      "items": [
+        "isc-idziecie",
+        "z-nami",
+        "do-pubu",
+        "tak",
+        "chetnie",
+        "a",
+        "co-z-nim",
+        "czekac-czekam",
+        "sms"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l10-c2-e18",
+      "acceptedAnswers": [
+        "a co z nim?"
+      ],
+      "meaning": {
+        "en": "and what about him?"
+      },
+      "items": [
+        "a",
+        "co-z-nim"
+      ]
+    }
+  ]
+}
