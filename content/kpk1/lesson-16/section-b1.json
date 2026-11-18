@@ -1,0 +1,466 @@
+{
+  "id": "kpk1-l16-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Miesiąc styczeń – czas do życzeń",
+    "meaning": {
+      "en": "January, the month of wishes"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-b1-t01",
+      "before": "kpk1-l16-b1-e01",
+      "title": {
+        "en": "Styczeń, luty, marzec"
+      },
+      "body": {
+        "en": "A year has twelve months, *dwanaście miesięcy*. They are not written with a capital letter. To say when, use *w* and a changed ending: *styczeń*, *w styczniu* (in January); *luty*, *w lutym*; *maj*, *w maju*. Only *wrzesień* takes *we*: *we wrześniu*."
+      },
+      "table": {
+        "title": {
+          "en": "12 miesięcy · kiedy? (when?)"
+        },
+        "columns": [
+          {
+            "header": "miesiąc"
+          },
+          {
+            "header": "kiedy?"
+          }
+        ],
+        "rows": [
+          {
+            "header": "1",
+            "cells": [
+              "styczeń",
+              "w styczniu"
+            ]
+          },
+          {
+            "header": "2",
+            "cells": [
+              "luty",
+              "w lutym"
+            ]
+          },
+          {
+            "header": "3",
+            "cells": [
+              "marzec",
+              "w marcu"
+            ]
+          },
+          {
+            "header": "4",
+            "cells": [
+              "kwiecień",
+              "w kwietniu"
+            ]
+          },
+          {
+            "header": "5",
+            "cells": [
+              "maj",
+              "w maju"
+            ]
+          },
+          {
+            "header": "6",
+            "cells": [
+              "czerwiec",
+              "w czerwcu"
+            ]
+          },
+          {
+            "header": "7",
+            "cells": [
+              "lipiec",
+              "w lipcu"
+            ]
+          },
+          {
+            "header": "8",
+            "cells": [
+              "sierpień",
+              "w sierpniu"
+            ]
+          },
+          {
+            "header": "9",
+            "cells": [
+              "wrzesień",
+              "we wrześniu"
+            ]
+          },
+          {
+            "header": "10",
+            "cells": [
+              "październik",
+              "w październiku"
+            ]
+          },
+          {
+            "header": "11",
+            "cells": [
+              "listopad",
+              "w listopadzie"
+            ]
+          },
+          {
+            "header": "12",
+            "cells": [
+              "grudzień",
+              "w grudniu"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b1-e01",
+      "prompt": "styczeń",
+      "options": [
+        {
+          "en": "February"
+        },
+        {
+          "en": "January (w styczniu: in January)"
+        },
+        {
+          "en": "June"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "styczen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b1-e02",
+      "prompt": "luty",
+      "options": [
+        {
+          "en": "January"
+        },
+        {
+          "en": "July"
+        },
+        {
+          "en": "February (w lutym: in February)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "luty"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-b1-e03",
+      "text": "w styczniu jest zimno",
+      "meaning": {
+        "en": "it's cold in January"
+      },
+      "distractors": [
+        "w lipcu jest zimno",
+        "w styczniu jest ciepło"
+      ],
+      "items": [
+        "styczen",
+        "byc-jest",
+        "zimno"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b1-e04",
+      "prompt": "marzec",
+      "options": [
+        {
+          "en": "March (w marcu: in March)"
+        },
+        {
+          "en": "May"
+        },
+        {
+          "en": "April"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "marzec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b1-e05",
+      "prompt": "kwiecień",
+      "options": [
+        {
+          "en": "March"
+        },
+        {
+          "en": "April (w kwietniu: in April)"
+        },
+        {
+          "en": "August"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kwiecien"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b1-e06",
+      "prompt": "maj",
+      "options": [
+        {
+          "en": "March"
+        },
+        {
+          "en": "June"
+        },
+        {
+          "en": "May (w maju: in May)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "maj"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-b1-e07",
+      "prompt": {
+        "en": "in May it is warm"
+      },
+      "acceptedAnswers": [
+        "w maju jest ciepło"
+      ],
+      "distractors": [
+        "maj",
+        "zimno"
+      ],
+      "items": [
+        "maj",
+        "byc-jest",
+        "cieplo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b1-e08",
+      "prompt": "czerwiec",
+      "options": [
+        {
+          "en": "June (w czerwcu: in June)"
+        },
+        {
+          "en": "July"
+        },
+        {
+          "en": "January"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czerwiec"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-b1-e09",
+      "text": "W styczniu i w ___ jest zima. W marcu, w ___ i w maju jest wiosna.",
+      "meaning": {
+        "en": "In January and February it is winter. In March, April and May it is spring."
+      },
+      "gaps": [
+        [
+          "lutym"
+        ],
+        [
+          "kwietniu"
+        ]
+      ],
+      "distractors": [
+        "luty",
+        "kwiecień"
+      ],
+      "items": [
+        "styczen",
+        "i",
+        "luty",
+        "byc-jest",
+        "zima",
+        "marzec",
+        "kwiecien",
+        "maj",
+        "wiosna"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-b1-e10",
+      "acceptedAnswers": [
+        "w marcu"
+      ],
+      "meaning": {
+        "en": "in March"
+      },
+      "items": [
+        "marzec"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-b1-e11",
+      "prompt": {
+        "en": "June"
+      },
+      "acceptedAnswers": [
+        "czerwiec"
+      ],
+      "items": [
+        "czerwiec"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-b1-e12",
+      "prompt": {
+        "en": "in January"
+      },
+      "acceptedAnswers": [
+        "w styczniu"
+      ],
+      "items": [
+        "styczen"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-b1-e13",
+      "pairs": [
+        {
+          "polish": "styczeń",
+          "meaning": {
+            "en": "January"
+          }
+        },
+        {
+          "polish": "luty",
+          "meaning": {
+            "en": "February"
+          }
+        },
+        {
+          "polish": "marzec",
+          "meaning": {
+            "en": "March"
+          }
+        },
+        {
+          "polish": "kwiecień",
+          "meaning": {
+            "en": "April"
+          }
+        },
+        {
+          "polish": "maj",
+          "meaning": {
+            "en": "May"
+          }
+        },
+        {
+          "polish": "czerwiec",
+          "meaning": {
+            "en": "June"
+          }
+        }
+      ],
+      "items": [
+        "styczen",
+        "luty",
+        "marzec",
+        "kwiecien",
+        "maj",
+        "czerwiec"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-b1-e14",
+      "text": "rok ma dwanaście miesięcy",
+      "meaning": {
+        "en": "a year has twelve months"
+      },
+      "distractors": [
+        "rok ma dziesięć miesięcy",
+        "rok ma cztery pory roku"
+      ],
+      "items": [
+        "rok",
+        "miec-ma",
+        "dwanascie",
+        "miesiac"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-b1-e15",
+      "lines": [
+        "Ewa ma urodziny w kwietniu.",
+        "Adam ma urodziny w czerwcu, a jego mama w lutym.",
+        "W marcu jest jeszcze chłodno."
+      ],
+      "meaning": {
+        "en": "Birthdays from January to June."
+      },
+      "statements": [
+        {
+          "text": "Ewa ma urodziny w kwietniu.",
+          "meaning": {
+            "en": "Ewa has her birthday in April."
+          },
+          "true": true
+        },
+        {
+          "text": "Mama Adama ma urodziny w maju.",
+          "meaning": {
+            "en": "Adam's mum's birthday is in May."
+          },
+          "true": false
+        },
+        {
+          "text": "W marcu jest chłodno.",
+          "meaning": {
+            "en": "In March it is chilly."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "urodziny",
+        "kwiecien",
+        "adam",
+        "czerwiec",
+        "luty",
+        "marzec",
+        "chlodno"
+      ]
+    }
+  ]
+}

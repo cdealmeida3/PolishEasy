@@ -1,0 +1,424 @@
+{
+  "id": "kpk1-l16-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Miesiąc styczeń – czas do życzeń",
+    "meaning": {
+      "en": "January, the month of wishes"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-b3-t01",
+      "before": "kpk1-l16-b3-e01",
+      "title": {
+        "en": "W grudniu jest Boże Narodzenie"
+      },
+      "body": {
+        "en": "*Kiedy masz urodziny?* asks a friend when their birthday is, and *w jakim miesiącu?* in what month. In Poland *Boże Narodzenie* (Christmas) is *w grudniu*, *sylwester* (New Year's Eve) too, *Nowy Rok* *w styczniu* and *walentynki* *w lutym*. *Wakacje*, the summer holidays, are *w lipcu i w sierpniu*. *Zaczyna się* is it begins, *kończy się* it ends."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b3-e01",
+      "prompt": "kiedy masz urodziny?",
+      "options": [
+        {
+          "en": "how old are you?"
+        },
+        {
+          "en": "when's your birthday? (one friend)"
+        },
+        {
+          "en": "where do you live?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kiedy-masz-urodziny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b3-e02",
+      "prompt": "w jakim miesiącu?",
+      "options": [
+        {
+          "en": "what time?"
+        },
+        {
+          "en": "what day?"
+        },
+        {
+          "en": "in what month?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-jakim-miesiacu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-b3-e03",
+      "text": "mam urodziny w maju",
+      "meaning": {
+        "en": "my birthday is in May"
+      },
+      "distractors": [
+        "mam urodziny w marcu",
+        "masz urodziny w maju"
+      ],
+      "items": [
+        "miec-mam",
+        "urodziny",
+        "maj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b3-e04",
+      "prompt": "Boże Narodzenie",
+      "options": [
+        {
+          "en": "Christmas"
+        },
+        {
+          "en": "New Year's Day"
+        },
+        {
+          "en": "Valentine's Day"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "boze-narodzenie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b3-e05",
+      "prompt": "sylwester",
+      "options": [
+        {
+          "en": "Christmas"
+        },
+        {
+          "en": "New Year's Eve (and its party)"
+        },
+        {
+          "en": "a birthday"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sylwester"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b3-e06",
+      "prompt": "Nowy Rok",
+      "options": [
+        {
+          "en": "New Year's Eve"
+        },
+        {
+          "en": "Christmas"
+        },
+        {
+          "en": "New Year's Day"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nowy-rok"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b3-e07",
+      "prompt": "walentynki",
+      "options": [
+        {
+          "en": "Valentine's Day"
+        },
+        {
+          "en": "Christmas"
+        },
+        {
+          "en": "the summer holidays"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "walentynki"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-b3-e08",
+      "text": "Boże Narodzenie jest w ___, a walentynki są w ___.",
+      "meaning": {
+        "en": "Christmas is in December, and Valentine's Day is in February."
+      },
+      "gaps": [
+        [
+          "grudniu"
+        ],
+        [
+          "lutym"
+        ]
+      ],
+      "distractors": [
+        "grudzień",
+        "luty"
+      ],
+      "items": [
+        "boze-narodzenie",
+        "byc-jest",
+        "grudzien",
+        "a",
+        "walentynki",
+        "byc-sa",
+        "luty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b3-e09",
+      "prompt": "wakacje",
+      "options": [
+        {
+          "en": "a birthday"
+        },
+        {
+          "en": "the summer holidays (wakacje są w lipcu i w sierpniu)"
+        },
+        {
+          "en": "a party"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wakacje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b3-e10",
+      "prompt": "kończy się",
+      "options": [
+        {
+          "en": "it begins"
+        },
+        {
+          "en": "it is"
+        },
+        {
+          "en": "it ends, it finishes"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "konczy-sie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-b3-e11",
+      "prompt": {
+        "en": "summer begins in June"
+      },
+      "acceptedAnswers": [
+        "lato zaczyna się w czerwcu"
+      ],
+      "distractors": [
+        "kończy",
+        "lipcu"
+      ],
+      "items": [
+        "lato",
+        "zaczyna-sie",
+        "czerwiec"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-b3-e12",
+      "acceptedAnswers": [
+        "kiedy masz urodziny?"
+      ],
+      "meaning": {
+        "en": "when's your birthday?"
+      },
+      "items": [
+        "kiedy-masz-urodziny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-b3-e13",
+      "prompt": {
+        "en": "Christmas"
+      },
+      "acceptedAnswers": [
+        "Boże Narodzenie"
+      ],
+      "items": [
+        "boze-narodzenie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-b3-e14",
+      "pairs": [
+        {
+          "polish": "Boże Narodzenie",
+          "meaning": {
+            "en": "Christmas"
+          }
+        },
+        {
+          "polish": "Nowy Rok",
+          "meaning": {
+            "en": "New Year's Day"
+          }
+        },
+        {
+          "polish": "sylwester",
+          "meaning": {
+            "en": "New Year's Eve"
+          }
+        },
+        {
+          "polish": "walentynki",
+          "meaning": {
+            "en": "Valentine's Day"
+          }
+        },
+        {
+          "polish": "wakacje",
+          "meaning": {
+            "en": "the summer holidays"
+          }
+        }
+      ],
+      "items": [
+        "boze-narodzenie",
+        "nowy-rok",
+        "sylwester",
+        "walentynki",
+        "wakacje"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-b3-e15",
+      "text": "zima kończy się w marcu",
+      "meaning": {
+        "en": "winter ends in March"
+      },
+      "distractors": [
+        "zima zaczyna się w marcu",
+        "lato kończy się w marcu"
+      ],
+      "items": [
+        "zima",
+        "konczy-sie",
+        "marzec"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l16-b3-e16",
+      "lines": [
+        "Kiedy masz urodziny?",
+        "Zimą.",
+        "W jakim miesiącu?",
+        "W grudniu, ale nie w święta."
+      ],
+      "meaning": {
+        "en": "A birthday in December."
+      },
+      "items": [
+        "kiedy-masz-urodziny",
+        "zima-kiedy",
+        "w-jakim-miesiacu",
+        "grudzien",
+        "ale"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-b3-e17",
+      "prompt": {
+        "en": "in what month is Christmas?"
+      },
+      "acceptedAnswers": [
+        "w jakim miesiącu jest Boże Narodzenie?"
+      ],
+      "distractors": [
+        "kiedy",
+        "miesiąc"
+      ],
+      "items": [
+        "w-jakim-miesiacu",
+        "byc-jest",
+        "boze-narodzenie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-b3-e18",
+      "lines": [
+        "Sylwester jest w grudniu.",
+        "Nowy Rok jest w styczniu.",
+        "Lato kończy się we wrześniu i wtedy zaczyna się szkoła."
+      ],
+      "meaning": {
+        "en": "The calendar."
+      },
+      "statements": [
+        {
+          "text": "Sylwester jest w grudniu.",
+          "meaning": {
+            "en": "New Year's Eve is in December."
+          },
+          "true": true
+        },
+        {
+          "text": "Nowy Rok jest w lutym.",
+          "meaning": {
+            "en": "New Year's Day is in February."
+          },
+          "true": false
+        },
+        {
+          "text": "Szkoła zaczyna się we wrześniu.",
+          "meaning": {
+            "en": "School starts in September."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "sylwester",
+        "grudzien",
+        "nowy-rok",
+        "styczen",
+        "lato",
+        "konczy-sie",
+        "szkola",
+        "zaczyna-sie",
+        "wrzesien"
+      ]
+    }
+  ]
+}

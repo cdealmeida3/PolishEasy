@@ -1,0 +1,845 @@
+{
+  "items": [
+    {
+      "id": "pora-roku",
+      "text": "pora roku",
+      "meaning": {
+        "en": "a season (cztery pory roku: the four seasons)"
+      },
+      "forms": [
+        "pory roku"
+      ]
+    },
+    {
+      "id": "wiosna",
+      "text": "wiosna",
+      "meaning": {
+        "en": "spring (do wiosny: till spring)"
+      },
+      "forms": [
+        "wiosny"
+      ]
+    },
+    {
+      "id": "lato",
+      "text": "lato",
+      "meaning": {
+        "en": "summer"
+      }
+    },
+    {
+      "id": "jesien",
+      "text": "jesień",
+      "meaning": {
+        "en": "autumn"
+      }
+    },
+    {
+      "id": "zima",
+      "text": "zima",
+      "meaning": {
+        "en": "winter"
+      }
+    },
+    {
+      "id": "jaka-to-pora-roku",
+      "text": "jaka to pora roku?",
+      "meaning": {
+        "en": "what season is it?"
+      }
+    },
+    {
+      "id": "wiosna-kiedy",
+      "text": "wiosną",
+      "meaning": {
+        "en": "in spring"
+      }
+    },
+    {
+      "id": "latem",
+      "text": "latem",
+      "meaning": {
+        "en": "in summer"
+      }
+    },
+    {
+      "id": "jesienia",
+      "text": "jesienią",
+      "meaning": {
+        "en": "in autumn"
+      }
+    },
+    {
+      "id": "zima-kiedy",
+      "text": "zimą",
+      "meaning": {
+        "en": "in winter"
+      }
+    },
+    {
+      "id": "czego-sluchasz",
+      "text": "czego słuchasz?",
+      "meaning": {
+        "en": "what are you listening to? (one friend)"
+      }
+    },
+    {
+      "id": "niedaleko",
+      "text": "niedaleko",
+      "meaning": {
+        "en": "not far, near"
+      }
+    },
+    {
+      "id": "czesc-n",
+      "text": "część",
+      "meaning": {
+        "en": "a part (moja ulubiona część: my favourite part)"
+      }
+    },
+    {
+      "id": "zimno",
+      "text": "zimno",
+      "meaning": {
+        "en": "cold (jest zimno: it's cold)"
+      }
+    },
+    {
+      "id": "cieplo",
+      "text": "ciepło",
+      "meaning": {
+        "en": "warm (jest ciepło: it's warm)"
+      }
+    },
+    {
+      "id": "goraco",
+      "text": "gorąco",
+      "meaning": {
+        "en": "hot (jest gorąco: it's hot)"
+      }
+    },
+    {
+      "id": "chlodno",
+      "text": "chłodno",
+      "meaning": {
+        "en": "cool, chilly (jest chłodno: it's chilly)"
+      }
+    },
+    {
+      "id": "brzydko",
+      "text": "brzydko",
+      "meaning": {
+        "en": "badly; nasty (jest brzydko: the weather is nasty)"
+      }
+    },
+    {
+      "id": "zielono",
+      "text": "zielono",
+      "meaning": {
+        "en": "green (jest zielono: everything is green)"
+      }
+    },
+    {
+      "id": "intensywnie",
+      "text": "intensywnie",
+      "meaning": {
+        "en": "intensely, hard"
+      }
+    },
+    {
+      "id": "jaka-jest-pogoda",
+      "text": "jaka jest pogoda?",
+      "meaning": {
+        "en": "what's the weather like?"
+      }
+    },
+    {
+      "id": "pada-deszcz",
+      "text": "pada deszcz",
+      "meaning": {
+        "en": "it's raining"
+      }
+    },
+    {
+      "id": "pada-snieg",
+      "text": "pada śnieg",
+      "meaning": {
+        "en": "it's snowing"
+      }
+    },
+    {
+      "id": "swieci-slonce",
+      "text": "świeci słońce",
+      "meaning": {
+        "en": "the sun is shining"
+      }
+    },
+    {
+      "id": "wieje-wiatr",
+      "text": "wieje wiatr",
+      "meaning": {
+        "en": "the wind is blowing, it's windy"
+      }
+    },
+    {
+      "id": "pochmurno",
+      "text": "pochmurno",
+      "meaning": {
+        "en": "cloudy (jest pochmurno: it's cloudy)"
+      }
+    },
+    {
+      "id": "mgla",
+      "text": "mgła",
+      "meaning": {
+        "en": "fog, mist"
+      }
+    },
+    {
+      "id": "burza",
+      "text": "burza",
+      "meaning": {
+        "en": "a storm, a thunderstorm"
+      }
+    },
+    {
+      "id": "mroz",
+      "text": "mróz",
+      "meaning": {
+        "en": "frost (below zero)"
+      }
+    },
+    {
+      "id": "pada-grad",
+      "text": "pada grad",
+      "meaning": {
+        "en": "it's hailing"
+      }
+    },
+    {
+      "id": "niskie-cisnienie",
+      "text": "niskie ciśnienie",
+      "meaning": {
+        "en": "low pressure (of the air)"
+      }
+    },
+    {
+      "id": "prognoza-pogody",
+      "text": "prognoza pogody",
+      "meaning": {
+        "en": "the weather forecast (sprawdzić prognozę pogody: to check the forecast)"
+      },
+      "forms": [
+        "prognozę pogody"
+      ]
+    },
+    {
+      "id": "temperatura",
+      "text": "temperatura",
+      "meaning": {
+        "en": "the temperature"
+      }
+    },
+    {
+      "id": "w-radiu",
+      "text": "w radiu",
+      "meaning": {
+        "en": "on the radio"
+      }
+    },
+    {
+      "id": "w-telewizji",
+      "text": "w telewizji",
+      "meaning": {
+        "en": "on TV"
+      }
+    },
+    {
+      "id": "bedzie",
+      "text": "będzie",
+      "meaning": {
+        "en": "it will be; he will be, she will be (jutro będzie ciepło)"
+      }
+    },
+    {
+      "id": "stopien",
+      "text": "stopień",
+      "meaning": {
+        "en": "a degree (dwa stopnie: two degrees; pięć stopni: five degrees)"
+      },
+      "forms": [
+        "stopnie",
+        "stopni"
+      ]
+    },
+    {
+      "id": "ponizej-zera",
+      "text": "poniżej zera",
+      "meaning": {
+        "en": "below zero"
+      }
+    },
+    {
+      "id": "powyzej-zera",
+      "text": "powyżej zera",
+      "meaning": {
+        "en": "above zero"
+      }
+    },
+    {
+      "id": "bedzie-padac",
+      "text": "będzie padać",
+      "meaning": {
+        "en": "it will rain, it will snow (będzie padać deszcz)"
+      }
+    },
+    {
+      "id": "bedzie-swiecic-slonce",
+      "text": "będzie świecić słońce",
+      "meaning": {
+        "en": "the sun will shine"
+      }
+    },
+    {
+      "id": "bedzie-wiac-wiatr",
+      "text": "będzie wiać wiatr",
+      "meaning": {
+        "en": "it will be windy"
+      }
+    },
+    {
+      "id": "na-plazy",
+      "text": "na plaży",
+      "meaning": {
+        "en": "on the beach"
+      }
+    },
+    {
+      "id": "w-parku",
+      "text": "w parku",
+      "meaning": {
+        "en": "in the park"
+      }
+    },
+    {
+      "id": "spacerowac",
+      "text": "spacerować",
+      "meaning": {
+        "en": "walk, go for a walk (to walk)"
+      }
+    },
+    {
+      "id": "opalac-sie",
+      "text": "opalać się",
+      "meaning": {
+        "en": "sunbathe (to sunbathe)"
+      }
+    },
+    {
+      "id": "kwiaty",
+      "text": "kwiaty",
+      "meaning": {
+        "en": "flowers"
+      }
+    },
+    {
+      "id": "styczen",
+      "text": "styczeń",
+      "meaning": {
+        "en": "January (w styczniu: in January)"
+      },
+      "forms": [
+        "w styczniu"
+      ]
+    },
+    {
+      "id": "luty",
+      "text": "luty",
+      "meaning": {
+        "en": "February (w lutym: in February)"
+      },
+      "forms": [
+        "w lutym"
+      ]
+    },
+    {
+      "id": "marzec",
+      "text": "marzec",
+      "meaning": {
+        "en": "March (w marcu: in March)"
+      },
+      "forms": [
+        "w marcu"
+      ]
+    },
+    {
+      "id": "kwiecien",
+      "text": "kwiecień",
+      "meaning": {
+        "en": "April (w kwietniu: in April)"
+      },
+      "forms": [
+        "w kwietniu"
+      ]
+    },
+    {
+      "id": "maj",
+      "text": "maj",
+      "meaning": {
+        "en": "May (w maju: in May)"
+      },
+      "forms": [
+        "w maju"
+      ]
+    },
+    {
+      "id": "czerwiec",
+      "text": "czerwiec",
+      "meaning": {
+        "en": "June (w czerwcu: in June)"
+      },
+      "forms": [
+        "w czerwcu"
+      ]
+    },
+    {
+      "id": "lipiec",
+      "text": "lipiec",
+      "meaning": {
+        "en": "July (w lipcu: in July)"
+      },
+      "forms": [
+        "w lipcu"
+      ]
+    },
+    {
+      "id": "sierpien",
+      "text": "sierpień",
+      "meaning": {
+        "en": "August (w sierpniu: in August)"
+      },
+      "forms": [
+        "w sierpniu"
+      ]
+    },
+    {
+      "id": "wrzesien",
+      "text": "wrzesień",
+      "meaning": {
+        "en": "September (we wrześniu: in September)"
+      },
+      "forms": [
+        "we wrześniu"
+      ]
+    },
+    {
+      "id": "pazdziernik",
+      "text": "październik",
+      "meaning": {
+        "en": "October (w październiku: in October)"
+      },
+      "forms": [
+        "w październiku"
+      ]
+    },
+    {
+      "id": "listopad",
+      "text": "listopad",
+      "meaning": {
+        "en": "November (w listopadzie: in November)"
+      },
+      "forms": [
+        "w listopadzie"
+      ]
+    },
+    {
+      "id": "grudzien",
+      "text": "grudzień",
+      "meaning": {
+        "en": "December (w grudniu: in December)"
+      },
+      "forms": [
+        "w grudniu"
+      ]
+    },
+    {
+      "id": "w-jakim-miesiacu",
+      "text": "w jakim miesiącu?",
+      "meaning": {
+        "en": "in what month?"
+      }
+    },
+    {
+      "id": "kiedy-masz-urodziny",
+      "text": "kiedy masz urodziny?",
+      "meaning": {
+        "en": "when's your birthday? (one friend)"
+      }
+    },
+    {
+      "id": "nowy-rok",
+      "text": "Nowy Rok",
+      "meaning": {
+        "en": "New Year's Day"
+      }
+    },
+    {
+      "id": "sylwester",
+      "text": "sylwester",
+      "meaning": {
+        "en": "New Year's Eve (and its party)"
+      }
+    },
+    {
+      "id": "boze-narodzenie",
+      "text": "Boże Narodzenie",
+      "meaning": {
+        "en": "Christmas"
+      }
+    },
+    {
+      "id": "walentynki",
+      "text": "walentynki",
+      "meaning": {
+        "en": "Valentine's Day"
+      }
+    },
+    {
+      "id": "wakacje",
+      "text": "wakacje",
+      "meaning": {
+        "en": "the summer holidays (wakacje są w lipcu i w sierpniu)"
+      }
+    },
+    {
+      "id": "konczy-sie",
+      "text": "kończy się",
+      "meaning": {
+        "en": "it ends, it finishes"
+      }
+    },
+    {
+      "id": "bede",
+      "text": "będę",
+      "meaning": {
+        "en": "I will be (będę w domu: I'll be at home)"
+      }
+    },
+    {
+      "id": "bedziesz",
+      "text": "będziesz",
+      "meaning": {
+        "en": "you will be (one friend)"
+      }
+    },
+    {
+      "id": "bedziemy",
+      "text": "będziemy",
+      "meaning": {
+        "en": "we will be"
+      }
+    },
+    {
+      "id": "bedziecie",
+      "text": "będziecie",
+      "meaning": {
+        "en": "you will be (several people)"
+      }
+    },
+    {
+      "id": "beda",
+      "text": "będą",
+      "meaning": {
+        "en": "they will be"
+      }
+    },
+    {
+      "id": "pojutrze",
+      "text": "pojutrze",
+      "meaning": {
+        "en": "the day after tomorrow"
+      }
+    },
+    {
+      "id": "remont",
+      "text": "remont",
+      "meaning": {
+        "en": "a renovation, building work (w szkole będzie remont)"
+      }
+    },
+    {
+      "id": "mam-nadzieje",
+      "text": "mam nadzieję",
+      "meaning": {
+        "en": "I hope (mam nadzieję, że…: I hope that…)"
+      }
+    },
+    {
+      "id": "zapytac",
+      "text": "zapytać",
+      "meaning": {
+        "en": "ask (to ask, once)"
+      }
+    },
+    {
+      "id": "dobre-pytanie",
+      "text": "dobre pytanie!",
+      "meaning": {
+        "en": "good question!"
+      }
+    },
+    {
+      "id": "organizowac",
+      "text": "organizować",
+      "meaning": {
+        "en": "organise (to organise)"
+      }
+    },
+    {
+      "id": "za-tydzien",
+      "text": "za tydzień",
+      "meaning": {
+        "en": "in a week, a week from now"
+      }
+    },
+    {
+      "id": "za-miesiac",
+      "text": "za miesiąc",
+      "meaning": {
+        "en": "in a month"
+      }
+    },
+    {
+      "id": "za-rok",
+      "text": "za rok",
+      "meaning": {
+        "en": "in a year"
+      }
+    },
+    {
+      "id": "za-dwa-dni",
+      "text": "za dwa dni",
+      "meaning": {
+        "en": "in two days"
+      }
+    },
+    {
+      "id": "w-przyszlym-tygodniu",
+      "text": "w przyszłym tygodniu",
+      "meaning": {
+        "en": "next week"
+      }
+    },
+    {
+      "id": "w-przyszlym-roku",
+      "text": "w przyszłym roku",
+      "meaning": {
+        "en": "next year"
+      }
+    },
+    {
+      "id": "w-przyszly-poniedzialek",
+      "text": "w przyszły poniedziałek",
+      "meaning": {
+        "en": "next Monday"
+      }
+    },
+    {
+      "id": "w-przyszla-sobote",
+      "text": "w przyszłą sobotę",
+      "meaning": {
+        "en": "next Saturday"
+      }
+    },
+    {
+      "id": "musial",
+      "text": "musiał",
+      "meaning": {
+        "en": "have to, in the future (będę musiał: I will have to, a man says it; będę musiała: a woman)"
+      },
+      "forms": [
+        "musiała"
+      ]
+    },
+    {
+      "id": "mogl",
+      "text": "mógł",
+      "meaning": {
+        "en": "be able to, in the future (będę mógł: I will be able to, a man says it; będę mogła: a woman)"
+      },
+      "forms": [
+        "mogła"
+      ]
+    },
+    {
+      "id": "chcial",
+      "text": "chciał",
+      "meaning": {
+        "en": "want, in the future (będę chciał: I will want to, a man says it; będę chciała: a woman)"
+      },
+      "forms": [
+        "chciała"
+      ]
+    },
+    {
+      "id": "wczesnie-rano",
+      "text": "wcześnie rano",
+      "meaning": {
+        "en": "early in the morning"
+      }
+    },
+    {
+      "id": "bawic-sie",
+      "text": "bawić się",
+      "meaning": {
+        "en": "play (to play, of children; bawić się z dzieckiem)"
+      }
+    },
+    {
+      "id": "z-dzieckiem",
+      "text": "z dzieckiem",
+      "meaning": {
+        "en": "with a child, with the baby"
+      }
+    },
+    {
+      "id": "andrzejki",
+      "text": "andrzejki",
+      "meaning": {
+        "en": "St Andrew's Eve (29 November, a night of fortune telling)"
+      }
+    },
+    {
+      "id": "wrozyc",
+      "text": "wróżyć",
+      "meaning": {
+        "en": "tell fortunes (to tell fortunes)"
+      }
+    },
+    {
+      "id": "wrozba",
+      "text": "wróżba",
+      "meaning": {
+        "en": "a fortune, a prophecy"
+      }
+    },
+    {
+      "id": "swieca",
+      "text": "świeca",
+      "meaning": {
+        "en": "a candle (mam świecę: I have a candle)"
+      },
+      "forms": [
+        "świecę"
+      ]
+    },
+    {
+      "id": "wosk",
+      "text": "wosk",
+      "meaning": {
+        "en": "wax"
+      }
+    },
+    {
+      "id": "cien",
+      "text": "cień",
+      "meaning": {
+        "en": "a shadow"
+      }
+    },
+    {
+      "id": "garnek",
+      "text": "garnek",
+      "meaning": {
+        "en": "a pot, a saucepan (w garnku: in a pot)"
+      },
+      "forms": [
+        "w garnku"
+      ]
+    },
+    {
+      "id": "lac",
+      "text": "lać",
+      "meaning": {
+        "en": "pour (to pour)"
+      }
+    },
+    {
+      "id": "co-bedzie",
+      "text": "co będzie?",
+      "meaning": {
+        "en": "what will happen?"
+      }
+    },
+    {
+      "id": "nikt-nie-wie",
+      "text": "nikt nie wie",
+      "meaning": {
+        "en": "nobody knows"
+      }
+    },
+    {
+      "id": "uprawiac-sport",
+      "text": "uprawiać sport",
+      "meaning": {
+        "en": "do sport (to do sport)"
+      }
+    },
+    {
+      "id": "grac-koncerty",
+      "text": "grać koncerty",
+      "meaning": {
+        "en": "play concerts, give concerts"
+      }
+    },
+    {
+      "id": "miec-dziecko",
+      "text": "mieć dziecko",
+      "meaning": {
+        "en": "have a baby (to have a baby)"
+      }
+    },
+    {
+      "id": "paryz",
+      "text": "Paryż",
+      "meaning": {
+        "en": "Paris"
+      }
+    },
+    {
+      "id": "szybko",
+      "text": "szybko",
+      "meaning": {
+        "en": "quickly, fast"
+      }
+    },
+    {
+      "id": "wolno",
+      "text": "wolno",
+      "meaning": {
+        "en": "slowly"
+      }
+    },
+    {
+      "id": "drogo",
+      "text": "drogo",
+      "meaning": {
+        "en": "expensive (jest drogo: it is expensive)"
+      }
+    },
+    {
+      "id": "tanio",
+      "text": "tanio",
+      "meaning": {
+        "en": "cheap (jest tanio: it is cheap)"
+      }
+    },
+    {
+      "id": "milo",
+      "text": "miło",
+      "meaning": {
+        "en": "nicely; nice (jest miło: it is nice, pleasant)"
+      }
+    }
+  ]
+}

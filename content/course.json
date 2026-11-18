@@ -18,7 +18,8 @@
     "kpk1/lesson-12/items.json",
     "kpk1/lesson-13/items.json",
     "kpk1/lesson-14/items.json",
-    "kpk1/lesson-15/items.json"
+    "kpk1/lesson-15/items.json",
+    "kpk1/lesson-16/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -46,7 +47,8 @@
     "kpk1/chats/invitation.json",
     "kpk1/chats/weekend.json",
     "kpk1/chats/the-way.json",
-    "kpk1/chats/post-office.json"
+    "kpk1/chats/post-office.json",
+    "kpk1/chats/weekend-weather.json"
   ],
   "levels": [
     {
@@ -927,7 +929,37 @@
               "czasowniki modalne w czasie przyszłym"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-16/section-a1.json",
+            "kpk1/lesson-16/section-a2.json",
+            "kpk1/lesson-16/section-a3.json",
+            "kpk1/lesson-16/section-a4.json",
+            "kpk1/lesson-16/section-a5.json",
+            "kpk1/lesson-16/section-a6.json",
+            "kpk1/lesson-16/section-a7.json",
+            "kpk1/lesson-16/section-b1.json",
+            "kpk1/lesson-16/section-b2.json",
+            "kpk1/lesson-16/section-b3.json",
+            "kpk1/lesson-16/section-c1.json",
+            "kpk1/lesson-16/section-c2.json",
+            "kpk1/lesson-16/section-c3.json",
+            "kpk1/lesson-16/section-c4.json",
+            "kpk1/lesson-16/section-d1.json",
+            "kpk1/lesson-16/section-d2.json",
+            "kpk1/lesson-16/section-g.json"
+          ],
+          "lookUp": [
+            "czesc-n",
+            "pora-roku",
+            "pogoda",
+            "prognoza-pogody",
+            "zaczyna-sie",
+            "konczy-sie",
+            "mam-nadzieje",
+            "wrozyc",
+            "andrzejki",
+            "cien"
+          ]
         },
         {
           "id": "kpk1-l17",

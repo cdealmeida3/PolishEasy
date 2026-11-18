@@ -1,0 +1,466 @@
+{
+  "id": "kpk1-l16-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Miesiąc styczeń – czas do życzeń",
+    "meaning": {
+      "en": "January, the month of wishes"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-b2-t01",
+      "before": "kpk1-l16-b2-e01",
+      "title": {
+        "en": "Lipiec, sierpień, wrzesień"
+      },
+      "body": {
+        "en": "The second half of the year: *lipiec*, *sierpień*, *wrzesień*, *październik*, *listopad*, *grudzień*. When: *w lipcu*, *w sierpniu*, *we wrześniu*, *w październiku*, *w listopadzie*, *w grudniu*. The summer holidays, *wakacje*, are *w lipcu i w sierpniu*, and school starts again *we wrześniu*."
+      },
+      "table": {
+        "title": {
+          "en": "12 miesięcy · kiedy? (when?)"
+        },
+        "columns": [
+          {
+            "header": "miesiąc"
+          },
+          {
+            "header": "kiedy?"
+          }
+        ],
+        "rows": [
+          {
+            "header": "1",
+            "cells": [
+              "styczeń",
+              "w styczniu"
+            ]
+          },
+          {
+            "header": "2",
+            "cells": [
+              "luty",
+              "w lutym"
+            ]
+          },
+          {
+            "header": "3",
+            "cells": [
+              "marzec",
+              "w marcu"
+            ]
+          },
+          {
+            "header": "4",
+            "cells": [
+              "kwiecień",
+              "w kwietniu"
+            ]
+          },
+          {
+            "header": "5",
+            "cells": [
+              "maj",
+              "w maju"
+            ]
+          },
+          {
+            "header": "6",
+            "cells": [
+              "czerwiec",
+              "w czerwcu"
+            ]
+          },
+          {
+            "header": "7",
+            "cells": [
+              "lipiec",
+              "w lipcu"
+            ]
+          },
+          {
+            "header": "8",
+            "cells": [
+              "sierpień",
+              "w sierpniu"
+            ]
+          },
+          {
+            "header": "9",
+            "cells": [
+              "wrzesień",
+              "we wrześniu"
+            ]
+          },
+          {
+            "header": "10",
+            "cells": [
+              "październik",
+              "w październiku"
+            ]
+          },
+          {
+            "header": "11",
+            "cells": [
+              "listopad",
+              "w listopadzie"
+            ]
+          },
+          {
+            "header": "12",
+            "cells": [
+              "grudzień",
+              "w grudniu"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b2-e01",
+      "prompt": "lipiec",
+      "options": [
+        {
+          "en": "June"
+        },
+        {
+          "en": "July (w lipcu: in July)"
+        },
+        {
+          "en": "April"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "lipiec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b2-e02",
+      "prompt": "sierpień",
+      "options": [
+        {
+          "en": "September"
+        },
+        {
+          "en": "March"
+        },
+        {
+          "en": "August (w sierpniu: in August)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sierpien"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-b2-e03",
+      "text": "w sierpniu jestem na wakacjach",
+      "meaning": {
+        "en": "in August I'm on holiday"
+      },
+      "distractors": [
+        "w lipcu jestem na wakacjach",
+        "w sierpniu jestem w pracy"
+      ],
+      "items": [
+        "sierpien",
+        "byc-jestem",
+        "na-wakacjach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b2-e04",
+      "prompt": "wrzesień",
+      "options": [
+        {
+          "en": "September (we wrześniu: in September)"
+        },
+        {
+          "en": "August"
+        },
+        {
+          "en": "October"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wrzesien"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b2-e05",
+      "prompt": "październik",
+      "options": [
+        {
+          "en": "November"
+        },
+        {
+          "en": "October (w październiku: in October)"
+        },
+        {
+          "en": "September"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pazdziernik"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-b2-e06",
+      "prompt": {
+        "en": "in September I go to school"
+      },
+      "acceptedAnswers": [
+        "we wrześniu idę do szkoły"
+      ],
+      "distractors": [
+        "w",
+        "wrzesień"
+      ],
+      "items": [
+        "wrzesien",
+        "isc-ide",
+        "do-szkoly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b2-e07",
+      "prompt": "listopad",
+      "options": [
+        {
+          "en": "October"
+        },
+        {
+          "en": "December"
+        },
+        {
+          "en": "November (w listopadzie: in November)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "listopad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-b2-e08",
+      "prompt": "grudzień",
+      "options": [
+        {
+          "en": "December (w grudniu: in December)"
+        },
+        {
+          "en": "November"
+        },
+        {
+          "en": "January"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "grudzien"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-b2-e09",
+      "text": "Lato jest w czerwcu, w ___ i w sierpniu. Jesień jest we wrześniu, w październiku i w ___.",
+      "meaning": {
+        "en": "Summer is in June, July and August. Autumn is in September, October and November."
+      },
+      "gaps": [
+        [
+          "lipcu"
+        ],
+        [
+          "listopadzie"
+        ]
+      ],
+      "distractors": [
+        "lipiec",
+        "listopad"
+      ],
+      "items": [
+        "lato",
+        "byc-jest",
+        "czerwiec",
+        "lipiec",
+        "i",
+        "sierpien",
+        "jesien",
+        "wrzesien",
+        "pazdziernik",
+        "listopad"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-b2-e10",
+      "acceptedAnswers": [
+        "w grudniu"
+      ],
+      "meaning": {
+        "en": "in December"
+      },
+      "items": [
+        "grudzien"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-b2-e11",
+      "prompt": {
+        "en": "October"
+      },
+      "acceptedAnswers": [
+        "październik"
+      ],
+      "items": [
+        "pazdziernik"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-b2-e12",
+      "prompt": {
+        "en": "in September"
+      },
+      "acceptedAnswers": [
+        "we wrześniu"
+      ],
+      "items": [
+        "wrzesien"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-b2-e13",
+      "pairs": [
+        {
+          "polish": "lipiec",
+          "meaning": {
+            "en": "July"
+          }
+        },
+        {
+          "polish": "sierpień",
+          "meaning": {
+            "en": "August"
+          }
+        },
+        {
+          "polish": "wrzesień",
+          "meaning": {
+            "en": "September"
+          }
+        },
+        {
+          "polish": "październik",
+          "meaning": {
+            "en": "October"
+          }
+        },
+        {
+          "polish": "listopad",
+          "meaning": {
+            "en": "November"
+          }
+        },
+        {
+          "polish": "grudzień",
+          "meaning": {
+            "en": "December"
+          }
+        }
+      ],
+      "items": [
+        "lipiec",
+        "sierpien",
+        "wrzesien",
+        "pazdziernik",
+        "listopad",
+        "grudzien"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-b2-e14",
+      "text": "w listopadzie często pada deszcz",
+      "meaning": {
+        "en": "in November it often rains"
+      },
+      "distractors": [
+        "w listopadzie często pada śnieg",
+        "w lipcu często pada deszcz"
+      ],
+      "items": [
+        "listopad",
+        "czesto",
+        "pada-deszcz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-b2-e15",
+      "lines": [
+        "W lipcu Ewa jest na plaży.",
+        "We wrześniu zaczyna się szkoła.",
+        "W grudniu pada śnieg i jest zimno."
+      ],
+      "meaning": {
+        "en": "From July to December."
+      },
+      "statements": [
+        {
+          "text": "W lipcu Ewa jest w górach.",
+          "meaning": {
+            "en": "In July Ewa is in the mountains."
+          },
+          "true": false
+        },
+        {
+          "text": "Szkoła zaczyna się we wrześniu.",
+          "meaning": {
+            "en": "School starts in September."
+          },
+          "true": true
+        },
+        {
+          "text": "W grudniu jest zimno.",
+          "meaning": {
+            "en": "In December it is cold."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "lipiec",
+        "na-plazy",
+        "wrzesien",
+        "zaczyna-sie",
+        "szkola",
+        "grudzien",
+        "pada-snieg",
+        "zimno"
+      ]
+    }
+  ]
+}

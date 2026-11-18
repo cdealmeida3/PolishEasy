@@ -1,0 +1,436 @@
+{
+  "id": "kpk1-l16-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Dzieci najmilsze, gdy śpią",
+    "meaning": {
+      "en": "Children are sweetest when asleep"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-c2-t01",
+      "before": "kpk1-l16-c2-e01",
+      "title": {
+        "en": "Będę robić"
+      },
+      "body": {
+        "en": "For what you will be doing, put *będę*, *będziesz*… before a verb's dictionary form: *będę pracować* (I'll be working), *będziemy czytać*, *oni będą organizować imprezę*. Polish also says *będę robił* (a man) or *będę robiła* (a woman), with the past tense form; both mean the same."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-c2-e01",
+      "text": "jutro będę pracować",
+      "meaning": {
+        "en": "tomorrow I'll be working"
+      },
+      "distractors": [
+        "jutro będę czytać",
+        "jutro będziesz pracować"
+      ],
+      "items": [
+        "jutro",
+        "bede",
+        "pracowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c2-e02",
+      "prompt": "nic nowego",
+      "options": [
+        {
+          "en": "nothing new"
+        },
+        {
+          "en": "what's new?"
+        },
+        {
+          "en": "nothing at all"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nic-nowego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c2-e03",
+      "prompt": "remont",
+      "options": [
+        {
+          "en": "a lesson"
+        },
+        {
+          "en": "a renovation, building work (w szkole będzie remont)"
+        },
+        {
+          "en": "a holiday"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "remont"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-c2-e04",
+      "prompt": {
+        "en": "there will be building work at school"
+      },
+      "acceptedAnswers": [
+        "w szkole będzie remont"
+      ],
+      "distractors": [
+        "są",
+        "będą"
+      ],
+      "items": [
+        "w-szkole",
+        "bedzie",
+        "remont"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c2-e05",
+      "prompt": "mam nadzieję",
+      "options": [
+        {
+          "en": "I know"
+        },
+        {
+          "en": "I think"
+        },
+        {
+          "en": "I hope (mam nadzieję, że…: I hope that…)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "mam-nadzieje"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-c2-e06",
+      "text": "Mam ___, że wszystko jest w porządku.",
+      "meaning": {
+        "en": "I hope that everything is all right."
+      },
+      "gaps": [
+        [
+          "nadzieję"
+        ]
+      ],
+      "distractors": [
+        "pytanie",
+        "czas"
+      ],
+      "items": [
+        "mam-nadzieje",
+        "ze",
+        "wszystko",
+        "byc-jest",
+        "w-porzadku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c2-e07",
+      "prompt": "zapytać",
+      "options": [
+        {
+          "en": "ask (to ask, once)"
+        },
+        {
+          "en": "answer (to answer)"
+        },
+        {
+          "en": "say (to say)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zapytac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c2-e08",
+      "prompt": "dobre pytanie!",
+      "options": [
+        {
+          "en": "good idea!"
+        },
+        {
+          "en": "good question!"
+        },
+        {
+          "en": "of course!"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dobre-pytanie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-c2-e09",
+      "prompt": "organizować",
+      "options": [
+        {
+          "en": "travel (to travel)"
+        },
+        {
+          "en": "work (to work)"
+        },
+        {
+          "en": "organise (to organise)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "organizowac"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-c2-e10",
+      "text": "Ewa i Adam będą ___ w parku, a my będziemy ___.",
+      "meaning": {
+        "en": "Ewa and Adam will be studying in the park, and we will be working."
+      },
+      "gaps": [
+        [
+          "uczyć się"
+        ],
+        [
+          "pracować"
+        ]
+      ],
+      "distractors": [
+        "uczą się",
+        "pracujemy"
+      ],
+      "items": [
+        "ewa",
+        "i",
+        "adam",
+        "beda",
+        "uczyc-sie",
+        "w-parku",
+        "a",
+        "my",
+        "bedziemy",
+        "pracowac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-c2-e11",
+      "prompt": {
+        "en": "I will be reading"
+      },
+      "acceptedAnswers": [
+        "będę czytać"
+      ],
+      "distractors": [
+        "czytam",
+        "będzie"
+      ],
+      "items": [
+        "bede",
+        "czytac"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-c2-e12",
+      "acceptedAnswers": [
+        "będziemy organizować imprezę"
+      ],
+      "meaning": {
+        "en": "we will be organising a party"
+      },
+      "items": [
+        "bedziemy",
+        "organizowac",
+        "impreza-acc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-c2-e13",
+      "prompt": {
+        "en": "nothing new"
+      },
+      "acceptedAnswers": [
+        "nic nowego"
+      ],
+      "items": [
+        "nic-nowego"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-c2-e14",
+      "pairs": [
+        {
+          "polish": "będę pracować",
+          "meaning": {
+            "en": "I'll be working"
+          }
+        },
+        {
+          "polish": "będziesz czytać",
+          "meaning": {
+            "en": "you'll be reading"
+          }
+        },
+        {
+          "polish": "będziemy pisać",
+          "meaning": {
+            "en": "we'll be writing"
+          }
+        },
+        {
+          "polish": "będą oglądać",
+          "meaning": {
+            "en": "they'll be watching"
+          }
+        },
+        {
+          "polish": "mam nadzieję",
+          "meaning": {
+            "en": "I hope"
+          }
+        }
+      ],
+      "items": [
+        "bede",
+        "pracowac",
+        "bedziesz",
+        "czytac",
+        "bedziemy",
+        "pisac",
+        "beda",
+        "ogladac",
+        "mam-nadzieje"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l16-c2-e15",
+      "lines": [
+        "Co słychać w biurze?",
+        "Nic nowego. Za tydzień w szkole będzie remont.",
+        "A studenci? Gdzie będą się uczyć?",
+        "Dobre pytanie! Nie wiem. Muszę zapytać szefa."
+      ],
+      "meaning": {
+        "en": "Building work at the school."
+      },
+      "items": [
+        "co-slychac",
+        "nic-nowego",
+        "w-szkole",
+        "bedzie",
+        "remont",
+        "beda",
+        "dobre-pytanie",
+        "nie-wiem",
+        "musiec-musze",
+        "zapytac"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-c2-e16",
+      "lines": [
+        "Anna jest nauczycielką.",
+        "Za tydzień w szkole będzie remont.",
+        "Studenci będą się uczyć w parku, a Anna będzie pracować w domu."
+      ],
+      "meaning": {
+        "en": "Anna's week at the school."
+      },
+      "statements": [
+        {
+          "text": "W szkole będzie remont.",
+          "meaning": {
+            "en": "There will be building work at the school."
+          },
+          "true": true
+        },
+        {
+          "text": "Studenci będą się uczyć w domu.",
+          "meaning": {
+            "en": "The students will study at home."
+          },
+          "true": false
+        },
+        {
+          "text": "Anna będzie pracować w domu.",
+          "meaning": {
+            "en": "Anna will work at home."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "w-szkole",
+        "bedzie",
+        "remont",
+        "beda",
+        "uczyc-sie",
+        "w-parku",
+        "pracowac",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-c2-e17",
+      "prompt": {
+        "en": "to ask"
+      },
+      "acceptedAnswers": [
+        "zapytać"
+      ],
+      "items": [
+        "zapytac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-c2-e18",
+      "text": "dobre pytanie! kto będzie organizować imprezę?",
+      "meaning": {
+        "en": "good question! who will be organising the party?"
+      },
+      "distractors": [
+        "dobre pytanie! kto będzie robić zakupy?",
+        "dobry pomysł! kto będzie organizować imprezę?"
+      ],
+      "items": [
+        "dobre-pytanie",
+        "kto",
+        "bedzie",
+        "organizowac",
+        "impreza-acc"
+      ]
+    }
+  ]
+}

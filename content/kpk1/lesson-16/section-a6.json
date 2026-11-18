@@ -1,0 +1,421 @@
+{
+  "id": "kpk1-l16-a6",
+  "section": {
+    "letter": "A",
+    "heading": "Parasol noś i przy pogodzie",
+    "meaning": {
+      "en": "Take an umbrella even when it is fine"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-a6-t01",
+      "before": "kpk1-l16-a6-e01",
+      "title": {
+        "en": "Jeden stopień, dwa stopnie, pięć stopni"
+      },
+      "body": {
+        "en": "Temperature is in degrees: *jeden stopień*, *dwa*, *trzy*, *cztery stopnie*, from *pięć* to *dwadzieścia jeden*, *stopni*. *Zero stopni* is zero; *poniżej zera* is below zero, *powyżej zera* above. *Około* is about. Tomorrow's weather takes *będzie*: *jutro będzie ciepło*, *będzie padać*, *będzie świecić słońce*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a6-e01",
+      "prompt": "stopień",
+      "options": [
+        {
+          "en": "a month"
+        },
+        {
+          "en": "a minute"
+        },
+        {
+          "en": "a degree (dwa stopnie: two degrees; pięć stopni: five degrees)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "stopien"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a6-e02",
+      "text": "jutro będzie dziesięć stopni",
+      "meaning": {
+        "en": "tomorrow it will be ten degrees"
+      },
+      "distractors": [
+        "jutro będą dwa stopnie",
+        "dzisiaj jest dziesięć stopni"
+      ],
+      "items": [
+        "jutro",
+        "bedzie",
+        "dziesiec",
+        "stopien"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a6-e03",
+      "prompt": "poniżej zera",
+      "options": [
+        {
+          "en": "below zero"
+        },
+        {
+          "en": "above zero"
+        },
+        {
+          "en": "about zero"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ponizej-zera"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a6-e04",
+      "prompt": "powyżej zera",
+      "options": [
+        {
+          "en": "below zero"
+        },
+        {
+          "en": "above zero"
+        },
+        {
+          "en": "very cold"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "powyzej-zera"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a6-e05",
+      "prompt": "około",
+      "options": [
+        {
+          "en": "below"
+        },
+        {
+          "en": "exactly"
+        },
+        {
+          "en": "about, around (około dwunastej: at about twelve)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "okolo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-a6-e06",
+      "text": "Dzisiaj są ___ stopnie, a jutro będzie ___ stopni.",
+      "meaning": {
+        "en": "Today it is two degrees, and tomorrow it will be five."
+      },
+      "gaps": [
+        [
+          "dwa"
+        ],
+        [
+          "pięć"
+        ]
+      ],
+      "distractors": [
+        "dwie",
+        "jeden"
+      ],
+      "items": [
+        "dzisiaj",
+        "byc-sa",
+        "dwa",
+        "stopien",
+        "a",
+        "jutro",
+        "bedzie",
+        "piec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a6-e07",
+      "prompt": "będzie padać",
+      "options": [
+        {
+          "en": "it will rain, it will snow (będzie padać deszcz)"
+        },
+        {
+          "en": "the sun will shine"
+        },
+        {
+          "en": "it will be windy"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bedzie-padac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a6-e08",
+      "prompt": "będzie świecić słońce",
+      "options": [
+        {
+          "en": "it will rain"
+        },
+        {
+          "en": "the sun will shine"
+        },
+        {
+          "en": "it will be cold"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bedzie-swiecic-slonce"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a6-e09",
+      "prompt": "będzie wiać wiatr",
+      "options": [
+        {
+          "en": "it will rain"
+        },
+        {
+          "en": "the sun will shine"
+        },
+        {
+          "en": "it will be windy"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bedzie-wiac-wiatr"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-a6-e10",
+      "prompt": {
+        "en": "tomorrow it will rain"
+      },
+      "acceptedAnswers": [
+        "jutro będzie padać"
+      ],
+      "distractors": [
+        "pada",
+        "jest"
+      ],
+      "items": [
+        "jutro",
+        "bedzie-padac"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-a6-e11",
+      "acceptedAnswers": [
+        "będzie zimno"
+      ],
+      "meaning": {
+        "en": "it will be cold"
+      },
+      "items": [
+        "bedzie",
+        "zimno"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a6-e12",
+      "prompt": {
+        "en": "it will be warm"
+      },
+      "acceptedAnswers": [
+        "będzie ciepło"
+      ],
+      "items": [
+        "bedzie",
+        "cieplo"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-a6-e13",
+      "pairs": [
+        {
+          "polish": "jeden stopień",
+          "meaning": {
+            "en": "one degree"
+          }
+        },
+        {
+          "polish": "trzy stopnie",
+          "meaning": {
+            "en": "three degrees"
+          }
+        },
+        {
+          "polish": "pięć stopni",
+          "meaning": {
+            "en": "five degrees"
+          }
+        },
+        {
+          "polish": "poniżej zera",
+          "meaning": {
+            "en": "below zero"
+          }
+        },
+        {
+          "polish": "powyżej zera",
+          "meaning": {
+            "en": "above zero"
+          }
+        },
+        {
+          "polish": "około",
+          "meaning": {
+            "en": "about"
+          }
+        }
+      ],
+      "items": [
+        "jeden",
+        "stopien",
+        "trzy",
+        "piec",
+        "ponizej-zera",
+        "powyzej-zera",
+        "okolo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a6-e14",
+      "text": "w nocy będzie poniżej zera",
+      "meaning": {
+        "en": "at night it will be below zero"
+      },
+      "distractors": [
+        "w nocy będzie powyżej zera",
+        "w dzień będzie poniżej zera"
+      ],
+      "items": [
+        "w-nocy",
+        "bedzie",
+        "ponizej-zera"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a6-e15",
+      "text": "jutro będzie intensywnie padać",
+      "meaning": {
+        "en": "tomorrow it will rain hard"
+      },
+      "distractors": [
+        "dzisiaj będzie intensywnie padać",
+        "jutro będzie trochę padać"
+      ],
+      "items": [
+        "jutro",
+        "bedzie-padac",
+        "intensywnie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-a6-e16",
+      "acceptedAnswers": [
+        "temperatura powyżej zera"
+      ],
+      "meaning": {
+        "en": "a temperature above zero"
+      },
+      "items": [
+        "temperatura",
+        "powyzej-zera"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-a6-e17",
+      "lines": [
+        "Jutro rano będzie mróz, około pięciu stopni poniżej zera.",
+        "Po południu będzie świecić słońce.",
+        "Wieczorem będzie wiać silny wiatr."
+      ],
+      "meaning": {
+        "en": "Tomorrow's forecast."
+      },
+      "statements": [
+        {
+          "text": "Jutro rano będzie ciepło.",
+          "meaning": {
+            "en": "Tomorrow morning it will be warm."
+          },
+          "true": false
+        },
+        {
+          "text": "Po południu będzie świecić słońce.",
+          "meaning": {
+            "en": "In the afternoon the sun will shine."
+          },
+          "true": true
+        },
+        {
+          "text": "Wieczorem będzie wiać wiatr.",
+          "meaning": {
+            "en": "In the evening it will be windy."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "jutro",
+        "rano",
+        "bedzie",
+        "mroz",
+        "okolo",
+        "ponizej-zera",
+        "po-poludniu",
+        "bedzie-swiecic-slonce",
+        "wieczorem",
+        "bedzie-wiac-wiatr"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a6-e18",
+      "prompt": {
+        "en": "below zero"
+      },
+      "acceptedAnswers": [
+        "poniżej zera"
+      ],
+      "items": [
+        "ponizej-zera"
+      ]
+    }
+  ]
+}

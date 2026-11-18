@@ -1,0 +1,407 @@
+{
+  "id": "kpk1-l16-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Parasol noś i przy pogodzie",
+    "meaning": {
+      "en": "Take an umbrella even when it is fine"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-a4-t01",
+      "before": "kpk1-l16-a4-e01",
+      "title": {
+        "en": "Pada deszcz"
+      },
+      "body": {
+        "en": "*Jaka jest pogoda?* asks what the weather is like. Rain and snow fall: *pada deszcz* (it's raining), *pada śnieg* (it's snowing). The sun shines, *świeci słońce*, and the wind blows, *wieje wiatr*. *Jest pochmurno* is it's cloudy; *mgła* is fog and *burza* a thunderstorm."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a4-e01",
+      "prompt": "jaka jest pogoda?",
+      "options": [
+        {
+          "en": "what season is it?"
+        },
+        {
+          "en": "what's the weather like?"
+        },
+        {
+          "en": "what time is it?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jaka-jest-pogoda"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a4-e02",
+      "prompt": "pada deszcz",
+      "options": [
+        {
+          "en": "it's snowing"
+        },
+        {
+          "en": "the sun is shining"
+        },
+        {
+          "en": "it's raining"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pada-deszcz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a4-e03",
+      "prompt": "pada śnieg",
+      "options": [
+        {
+          "en": "it's snowing"
+        },
+        {
+          "en": "it's raining"
+        },
+        {
+          "en": "it's windy"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pada-snieg"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a4-e04",
+      "text": "dzisiaj pada deszcz",
+      "meaning": {
+        "en": "it's raining today"
+      },
+      "distractors": [
+        "dzisiaj pada śnieg",
+        "jutro pada deszcz"
+      ],
+      "items": [
+        "dzisiaj",
+        "pada-deszcz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a4-e05",
+      "prompt": "świeci słońce",
+      "options": [
+        {
+          "en": "it's raining"
+        },
+        {
+          "en": "the sun is shining"
+        },
+        {
+          "en": "it's cloudy"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "swieci-slonce"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a4-e06",
+      "prompt": "wieje wiatr",
+      "options": [
+        {
+          "en": "the sun is shining"
+        },
+        {
+          "en": "it's snowing"
+        },
+        {
+          "en": "the wind is blowing, it's windy"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wieje-wiatr"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-a4-e07",
+      "prompt": {
+        "en": "what's the weather like today?"
+      },
+      "acceptedAnswers": [
+        "jaka jest pogoda dzisiaj?",
+        "jaka jest dzisiaj pogoda?"
+      ],
+      "distractors": [
+        "pora",
+        "jaki"
+      ],
+      "items": [
+        "jaka-jest-pogoda",
+        "dzisiaj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a4-e08",
+      "prompt": "pochmurno",
+      "options": [
+        {
+          "en": "cloudy (jest pochmurno: it's cloudy)"
+        },
+        {
+          "en": "sunny"
+        },
+        {
+          "en": "cold"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pochmurno"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a4-e09",
+      "prompt": "mgła",
+      "options": [
+        {
+          "en": "a storm"
+        },
+        {
+          "en": "fog, mist"
+        },
+        {
+          "en": "snow"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "mgla"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a4-e10",
+      "prompt": "burza",
+      "options": [
+        {
+          "en": "fog"
+        },
+        {
+          "en": "frost (below zero)"
+        },
+        {
+          "en": "a storm, a thunderstorm"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "burza"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-a4-e11",
+      "text": "Jest pochmurno i ___ deszcz.",
+      "meaning": {
+        "en": "It is cloudy and it is raining."
+      },
+      "gaps": [
+        [
+          "pada"
+        ]
+      ],
+      "distractors": [
+        "świeci",
+        "wieje"
+      ],
+      "items": [
+        "byc-jest",
+        "pochmurno",
+        "i",
+        "pada-deszcz"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-a4-e12",
+      "text": "Świeci ___, ale wieje ___.",
+      "meaning": {
+        "en": "The sun is shining, but it is windy."
+      },
+      "gaps": [
+        [
+          "słońce"
+        ],
+        [
+          "wiatr"
+        ]
+      ],
+      "distractors": [
+        "deszcz",
+        "śnieg"
+      ],
+      "items": [
+        "swieci-slonce",
+        "ale",
+        "wieje-wiatr"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-a4-e13",
+      "acceptedAnswers": [
+        "pada śnieg"
+      ],
+      "meaning": {
+        "en": "it's snowing"
+      },
+      "items": [
+        "pada-snieg"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a4-e14",
+      "prompt": {
+        "en": "the sun is shining"
+      },
+      "acceptedAnswers": [
+        "świeci słońce",
+        "słońce świeci"
+      ],
+      "items": [
+        "swieci-slonce"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-a4-e15",
+      "pairs": [
+        {
+          "polish": "pada deszcz",
+          "meaning": {
+            "en": "it's raining"
+          }
+        },
+        {
+          "polish": "pada śnieg",
+          "meaning": {
+            "en": "it's snowing"
+          }
+        },
+        {
+          "polish": "świeci słońce",
+          "meaning": {
+            "en": "the sun is shining"
+          }
+        },
+        {
+          "polish": "wieje wiatr",
+          "meaning": {
+            "en": "it's windy"
+          }
+        },
+        {
+          "polish": "mgła",
+          "meaning": {
+            "en": "fog"
+          }
+        },
+        {
+          "polish": "burza",
+          "meaning": {
+            "en": "a storm"
+          }
+        }
+      ],
+      "items": [
+        "pada-deszcz",
+        "pada-snieg",
+        "swieci-slonce",
+        "wieje-wiatr",
+        "mgla",
+        "burza"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-a4-e16",
+      "lines": [
+        "Rano jest mgła i jest pochmurno.",
+        "Po południu świeci słońce.",
+        "Wieczorem jest burza i pada deszcz."
+      ],
+      "meaning": {
+        "en": "A day of weather."
+      },
+      "statements": [
+        {
+          "text": "Rano jest mgła.",
+          "meaning": {
+            "en": "In the morning there is fog."
+          },
+          "true": true
+        },
+        {
+          "text": "Po południu pada deszcz.",
+          "meaning": {
+            "en": "In the afternoon it is raining."
+          },
+          "true": false
+        },
+        {
+          "text": "Wieczorem jest burza.",
+          "meaning": {
+            "en": "In the evening there is a storm."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "rano",
+        "mgla",
+        "pochmurno",
+        "po-poludniu",
+        "swieci-slonce",
+        "wieczorem",
+        "burza",
+        "pada-deszcz"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a4-e17",
+      "prompt": {
+        "en": "it's raining"
+      },
+      "acceptedAnswers": [
+        "pada deszcz",
+        "deszcz pada"
+      ],
+      "items": [
+        "pada-deszcz"
+      ]
+    }
+  ]
+}

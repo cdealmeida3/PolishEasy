@@ -1066,6 +1066,45 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 16 of the book over the real course in the light theme`() = chapter16Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 16 of the book over the real course in the dark theme`() = chapter16Tour("dark")
+
+    @Test
+    fun `chapter 16 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter16Tour("large") }
+
+    /**
+     * Chapter 16 over the real course: its Lesson screen at the top and its sections, then the
+     * weather in section A, the months in section B, and the future of być in section C.
+     */
+    private fun chapter16Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l16") }
+        screen.waitForIdle()
+        shot("336-chapter-16")
+        screen.onAllNodes(hasText("Andrzejki", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("336-chapter-16-sections")
+        listOf(
+            "kpk1-l16-a4" to "337-chapter-16-weather",
+            "kpk1-l16-b1" to "338-chapter-16-months",
+            "kpk1-l16-c1" to "339-chapter-16-bede",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l16")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test

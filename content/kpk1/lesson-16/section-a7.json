@@ -1,0 +1,411 @@
+{
+  "id": "kpk1-l16-a7",
+  "section": {
+    "letter": "A",
+    "heading": "Parasol noś i przy pogodzie",
+    "meaning": {
+      "en": "Take an umbrella even when it is fine"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-a7-t01",
+      "before": "kpk1-l16-a7-e01",
+      "title": {
+        "en": "Latem na plaży"
+      },
+      "body": {
+        "en": "What you like to do depends on the season, and *bo* says why: *latem lubię opalać się na plaży, bo jest gorąco*. *Wiosną lubię spacerować w parku, bo są kwiaty.* *Zimą jeżdżę na nartach w górach.*"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a7-e01",
+      "prompt": "na plaży",
+      "options": [
+        {
+          "en": "on the beach"
+        },
+        {
+          "en": "in the mountains"
+        },
+        {
+          "en": "in the park"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-plazy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a7-e02",
+      "prompt": "w górach",
+      "options": [
+        {
+          "en": "on the beach"
+        },
+        {
+          "en": "in the mountains"
+        },
+        {
+          "en": "at home"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-gorach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a7-e03",
+      "prompt": "w parku",
+      "options": [
+        {
+          "en": "in the mountains"
+        },
+        {
+          "en": "at the cinema"
+        },
+        {
+          "en": "in the park"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-parku"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a7-e04",
+      "text": "zimą jeżdżę na nartach w górach",
+      "meaning": {
+        "en": "in winter I ski in the mountains"
+      },
+      "distractors": [
+        "latem jeżdżę na rowerze w górach",
+        "zimą jeżdżę na nartach w parku"
+      ],
+      "items": [
+        "zima-kiedy",
+        "jezdzic-jezdze",
+        "na-nartach",
+        "w-gorach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a7-e05",
+      "prompt": "spacerować",
+      "options": [
+        {
+          "en": "walk, go for a walk (to walk)"
+        },
+        {
+          "en": "swim (to swim)"
+        },
+        {
+          "en": "run (to run)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "spacerowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a7-e06",
+      "prompt": "opalać się",
+      "options": [
+        {
+          "en": "swim (to swim)"
+        },
+        {
+          "en": "sunbathe (to sunbathe)"
+        },
+        {
+          "en": "paint (to paint)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "opalac-sie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-a7-e07",
+      "prompt": {
+        "en": "in summer I like to sunbathe on the beach"
+      },
+      "acceptedAnswers": [
+        "latem lubię opalać się na plaży"
+      ],
+      "distractors": [
+        "zimą",
+        "górach"
+      ],
+      "items": [
+        "latem",
+        "lubic-lubie",
+        "opalac-sie",
+        "na-plazy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a7-e08",
+      "prompt": "malować",
+      "options": [
+        {
+          "en": "walk (to walk)"
+        },
+        {
+          "en": "cook (to cook)"
+        },
+        {
+          "en": "paint (to paint)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "malowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a7-e09",
+      "prompt": "kwiaty",
+      "options": [
+        {
+          "en": "flowers"
+        },
+        {
+          "en": "trees"
+        },
+        {
+          "en": "leaves"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kwiaty"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-a7-e10",
+      "text": "Wiosną lubię ___ w parku, bo są ___.",
+      "meaning": {
+        "en": "In spring I like to walk in the park, because there are flowers."
+      },
+      "gaps": [
+        [
+          "spacerować"
+        ],
+        [
+          "kwiaty"
+        ]
+      ],
+      "distractors": [
+        "opalać się",
+        "narty"
+      ],
+      "items": [
+        "wiosna-kiedy",
+        "lubic-lubie",
+        "spacerowac",
+        "w-parku",
+        "bo",
+        "byc-sa",
+        "kwiaty"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-a7-e11",
+      "acceptedAnswers": [
+        "lubię malować"
+      ],
+      "meaning": {
+        "en": "I like painting"
+      },
+      "items": [
+        "lubic-lubie",
+        "malowac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a7-e12",
+      "prompt": {
+        "en": "in the park"
+      },
+      "acceptedAnswers": [
+        "w parku"
+      ],
+      "items": [
+        "w-parku"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-a7-e13",
+      "pairs": [
+        {
+          "polish": "na plaży",
+          "meaning": {
+            "en": "on the beach"
+          }
+        },
+        {
+          "polish": "w górach",
+          "meaning": {
+            "en": "in the mountains"
+          }
+        },
+        {
+          "polish": "w parku",
+          "meaning": {
+            "en": "in the park"
+          }
+        },
+        {
+          "polish": "kwiaty",
+          "meaning": {
+            "en": "flowers"
+          }
+        },
+        {
+          "polish": "spacerować",
+          "meaning": {
+            "en": "to walk"
+          }
+        },
+        {
+          "polish": "malować",
+          "meaning": {
+            "en": "to paint"
+          }
+        }
+      ],
+      "items": [
+        "na-plazy",
+        "w-gorach",
+        "w-parku",
+        "kwiaty",
+        "spacerowac",
+        "malowac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a7-e14",
+      "text": "jesienią lubię czytać w domu, bo jest zimno",
+      "meaning": {
+        "en": "in autumn I like reading at home, because it's cold"
+      },
+      "distractors": [
+        "jesienią lubię czytać w parku, bo jest ciepło",
+        "zimą lubię czytać w domu, bo jest zimno"
+      ],
+      "items": [
+        "jesienia",
+        "lubic-lubie",
+        "czytac",
+        "w-domu",
+        "bo",
+        "byc-jest",
+        "zimno"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-a7-e15",
+      "lines": [
+        "Wiosną Ewa lubi malować w parku, bo jest ciepło.",
+        "Latem opala się na plaży.",
+        "Zimą jeździ na nartach w górach, a jesienią czyta w domu."
+      ],
+      "meaning": {
+        "en": "What Ewa likes to do in each season."
+      },
+      "statements": [
+        {
+          "text": "Wiosną Ewa maluje w parku.",
+          "meaning": {
+            "en": "In spring Ewa paints in the park."
+          },
+          "true": true
+        },
+        {
+          "text": "Latem Ewa jeździ na nartach.",
+          "meaning": {
+            "en": "In summer Ewa skis."
+          },
+          "true": false
+        },
+        {
+          "text": "Jesienią Ewa czyta w domu.",
+          "meaning": {
+            "en": "In autumn Ewa reads at home."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "wiosna-kiedy",
+        "malowac",
+        "w-parku",
+        "latem",
+        "na-plazy",
+        "zima-kiedy",
+        "na-nartach",
+        "w-gorach",
+        "jesienia",
+        "w-domu"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a7-e16",
+      "prompt": {
+        "en": "in the mountains"
+      },
+      "acceptedAnswers": [
+        "w górach"
+      ],
+      "items": [
+        "w-gorach"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a7-e17",
+      "text": "jutro będzie świecić słońce i będzie wiać wiatr",
+      "meaning": {
+        "en": "tomorrow the sun will shine and it will be windy"
+      },
+      "distractors": [
+        "jutro będzie padać i będzie wiać wiatr",
+        "dzisiaj świeci słońce i wieje wiatr"
+      ],
+      "items": [
+        "jutro",
+        "bedzie-swiecic-slonce",
+        "i",
+        "bedzie-wiac-wiatr"
+      ]
+    }
+  ]
+}

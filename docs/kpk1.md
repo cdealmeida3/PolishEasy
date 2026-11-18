@@ -335,3 +335,25 @@ It gives the later chapters:
 - the pronouns in the genitive, alone and after *do*.
 
 It leaves for later: the genitive plural as a rule for every noun (*-ów*, *-i* and the dropped ending are met in the words above), the conditional as a tense (*mógłbyś*, *wolałbym* are met as phrases), and people counted with *pięciu* or *dwóch*.
+
+## Chapter 16: Co ma być, to będzie
+
+Book pages 124 to 131, recordings 177 to 183. Seventeen parts, 294 Exercises and 111 new Items: the seasons and the weather, the forecast, the months and the holidays, the future with *będę*, plans, and Andrzejki.
+
+- **A** *Parasol noś i przy pogodzie*, in seven: the seasons (18: *pora roku*, *wiosna*, *lato*, *jesień*, *zima*, *będzie*); when, with a Tip on *wiosną*, *latem*, *jesienią*, *zimą* (18: *czego słuchasz?*, *niedaleko*, *część*); how it is, with a Tip on *zimny*, *zimno* (17: *zimno*, *ciepło*, *gorąco*, *chłodno*, *brzydko*, *zielono*); the weather (17: *jaka jest pogoda?*, *pada deszcz*, *pada śnieg*, *świeci słońce*, *wieje wiatr*, *pochmurno*, *mgła*, *burza*); the forecast (18: *mróz*, *pada grad*, *prognoza pogody*, *temperatura*, *w radiu*, *w telewizji*, *niskie ciśnienie*); degrees and the weather to come, with a Tip on *jeden stopień*, *dwa stopnie*, *pięć stopni* (18: *poniżej zera*, *powyżej zera*, *będzie padać*, *będzie świecić słońce*, *będzie wiać wiatr*); and summer (17: *na plaży*, *w parku*, *spacerować*, *opalać się*, *kwiaty*).
+- **B** *Miesiąc styczeń – czas do życzeń*, in three: the months, with a table Tip of each with its *w* (15 and 15: *styczeń* to *grudzień*, *w styczniu*, *we wrześniu*); and the holidays (18: *kiedy masz urodziny?*, *w jakim miesiącu?*, *Boże Narodzenie*, *sylwester*, *Nowy Rok*, *walentynki*, *wakacje*, *kończy się*).
+- **C** *Dzieci najmilsze, gdy śpią*, in four: *być* in the future, with a table Tip (16: *będę*, *będziesz*, *będziemy*, *będziecie*, *będą*, *pojutrze*); *będę* with a verb, with a Tip (18: *remont*, *mam nadzieję*, *zapytać*, *dobre pytanie!*, *organizować*); when, with a Tip on *za* and *w przyszłym* (18: *za tydzień*, *za miesiąc*, *za rok*, *za dwa dni*, *w przyszłym tygodniu*, *w przyszłym roku*, *w przyszły poniedziałek*, *w przyszłą sobotę*); and *będę musiał*, *będę mogła* (18: *musiał*, *mógł*, *chciał*, *wcześnie rano*, *bawić się*, *z dzieckiem*).
+- **D** *Andrzejki*, in two: the night of fortunes (17: *andrzejki*, *wróżyć*, *wróżba*, *świeca*, *wosk*, *cień*, *garnek*); and what the year will bring (18: *co będzie?*, *nikt nie wie*, *lać*, *uprawiać sport*, *grać koncerty*, *mieć dziecko*, *Paryż*).
+- *Ćwiczenia* (18): adverbs, with a Tip on *szybki*, *szybko* (*szybko*, *wolno*, *drogo*, *tanio*, *miło*).
+
+A month is one Item with its *w* as its form (*styczeń*, *w styczniu*; *wrzesień*, *we wrześniu*), as a day is since chapter 12; *wiosna* carries its genitive (*do wiosny*), chapter 13's *pogoda* gained its own (*od pogody*), and *miesiąc* its genitive plural (*miesięcy*). *Stopień* carries *stopnie* and *stopni* and a gender in `practice.json`, so the number test holds *dwa stopnie* and *dziesięć stopni*. The future of *być* is a table Tip, not a conjugation table; *będę* before an infinitive is the same Item (*będę robić*), and *musiał*, *mógł* and *chciał* carry their forms for a woman (*musiała*). *Część*, *pora roku*, *pogoda*, *prognoza pogody*, *zaczyna się*, *kończy się*, *mam nadzieję*, *wróżyć*, *andrzejki* and *cień*, the words the book sends to the dictionary, are under Look up. There are 32 listening tasks on all 7 recordings (181 repeats 180; 182 is the months), and one Chat: *Weekend weather* (Marek, a friend, informal: it depends on the weather, sun on Saturday so a walk in the park, rain and wind on Sunday, so a film at home; *do zobaczenia*, not *do widzenia*). Twenty-four Items have pictures (the seasons, rain, snow, the sun, wind, a cloud, fog, a storm, a snowflake, a thermometer, a bouquet, a Christmas tree, a heart with a ribbon, fireworks, a candle, a crystal ball, a radio, a television, a pot, tools, an island).
+
+It gives the later chapters:
+
+- the weather, now and in a forecast, and the seasons;
+- the months, with *w*, and the holidays of the year;
+- the future of *być*, and *będę* with an infinitive;
+- *za tydzień*, *w przyszłym roku* and the other ways to say when;
+- adverbs from adjectives, *szybko*, *tanio*.
+
+It leaves for later: the future of perfective verbs (*zrobię*, *pójdę*), dates as ordinals with the month in the genitive (*dwudziestego dziewiątego listopada*), and *będę robił* (the future with the past form) beyond *musiał*, *mógł* and *chciał*.

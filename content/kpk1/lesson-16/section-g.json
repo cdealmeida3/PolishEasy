@@ -1,0 +1,439 @@
+{
+  "id": "kpk1-l16-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Practice"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-g-t01",
+      "before": "kpk1-l16-g-e01",
+      "title": {
+        "en": "Szybki, szybko"
+      },
+      "body": {
+        "en": "Most adverbs end in *-o*: *szybki*, *szybko* (fast); *wolny*, *wolno* (slowly); *drogi*, *drogo*; *tani*, *tanio*; *miły*, *miło*; *bliski*, *blisko*; *daleki*, *daleko*. Some end in *-e*: *ładny*, *ładnie*; *intensywny*, *intensywnie*. Two you must learn: *dobry*, *dobrze*; *zły*, *źle*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-g-e01",
+      "prompt": "szybko",
+      "options": [
+        {
+          "en": "slowly"
+        },
+        {
+          "en": "far"
+        },
+        {
+          "en": "quickly, fast"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szybko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-g-e02",
+      "prompt": "wolno",
+      "options": [
+        {
+          "en": "slowly"
+        },
+        {
+          "en": "quickly, fast"
+        },
+        {
+          "en": "badly"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wolno"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-g-e03",
+      "text": "on mówi bardzo szybko",
+      "meaning": {
+        "en": "he speaks very fast"
+      },
+      "distractors": [
+        "on mówi bardzo wolno",
+        "ona mówi bardzo szybko"
+      ],
+      "items": [
+        "on",
+        "mowic-mowi",
+        "bardzo",
+        "szybko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-g-e04",
+      "prompt": "drogo",
+      "options": [
+        {
+          "en": "cheap (jest tanio: it is cheap)"
+        },
+        {
+          "en": "expensive (jest drogo: it is expensive)"
+        },
+        {
+          "en": "far"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "drogo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-g-e05",
+      "prompt": "tanio",
+      "options": [
+        {
+          "en": "expensive (jest drogo: it is expensive)"
+        },
+        {
+          "en": "quickly, fast"
+        },
+        {
+          "en": "cheap (jest tanio: it is cheap)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tanio"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-g-e06",
+      "text": "W Krakowie jest ___, a w Warszawie jest ___.",
+      "meaning": {
+        "en": "In Kraków it is cheap, and in Warsaw it is expensive."
+      },
+      "gaps": [
+        [
+          "tanio"
+        ],
+        [
+          "drogo"
+        ]
+      ],
+      "distractors": [
+        "tani",
+        "drogi"
+      ],
+      "items": [
+        "w-krakowie",
+        "byc-jest",
+        "tanio",
+        "a",
+        "w-warszawie",
+        "drogo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-g-e07",
+      "prompt": "miło",
+      "options": [
+        {
+          "en": "nicely; nice (jest miło: it is nice, pleasant)"
+        },
+        {
+          "en": "badly; bad (czuję się źle: I feel bad)"
+        },
+        {
+          "en": "expensive (jest drogo: it is expensive)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "milo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-g-e08",
+      "prompt": "źle",
+      "options": [
+        {
+          "en": "nicely; nice (jest miło: it is nice, pleasant)"
+        },
+        {
+          "en": "badly; bad"
+        },
+        {
+          "en": "slowly"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zle"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-g-e09",
+      "prompt": {
+        "en": "it is nice here"
+      },
+      "acceptedAnswers": [
+        "tu jest miło",
+        "jest tu miło"
+      ],
+      "distractors": [
+        "miły",
+        "źle"
+      ],
+      "items": [
+        "tu",
+        "byc-jest",
+        "milo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-g-e10",
+      "text": "Pogoda jest ___. Jest zimno i pada deszcz.",
+      "meaning": {
+        "en": "The weather is bad. It is cold and it is raining."
+      },
+      "gaps": [
+        [
+          "brzydka"
+        ]
+      ],
+      "distractors": [
+        "brzydko",
+        "ładnie"
+      ],
+      "items": [
+        "pogoda",
+        "byc-jest",
+        "brzydki",
+        "zimno",
+        "i",
+        "pada-deszcz"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-g-e11",
+      "text": "Jest ___. Świeci słońce i jest ciepło.",
+      "meaning": {
+        "en": "It is nice out. The sun is shining and it is warm."
+      },
+      "gaps": [
+        [
+          "ładnie"
+        ]
+      ],
+      "distractors": [
+        "ładna",
+        "brzydko"
+      ],
+      "items": [
+        "byc-jest",
+        "ladnie",
+        "swieci-slonce",
+        "i",
+        "cieplo"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-g-e12",
+      "acceptedAnswers": [
+        "jest daleko"
+      ],
+      "meaning": {
+        "en": "it is far"
+      },
+      "items": [
+        "byc-jest",
+        "daleko"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-g-e13",
+      "prompt": {
+        "en": "slowly"
+      },
+      "acceptedAnswers": [
+        "wolno"
+      ],
+      "items": [
+        "wolno"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-g-e14",
+      "prompt": {
+        "en": "to sunbathe"
+      },
+      "acceptedAnswers": [
+        "opalać się"
+      ],
+      "items": [
+        "opalac-sie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-g-e15",
+      "pairs": [
+        {
+          "polish": "szybko",
+          "meaning": {
+            "en": "fast"
+          }
+        },
+        {
+          "polish": "wolno",
+          "meaning": {
+            "en": "slowly"
+          }
+        },
+        {
+          "polish": "drogo",
+          "meaning": {
+            "en": "expensive"
+          }
+        },
+        {
+          "polish": "tanio",
+          "meaning": {
+            "en": "cheap"
+          }
+        },
+        {
+          "polish": "miło",
+          "meaning": {
+            "en": "nice, pleasant"
+          }
+        },
+        {
+          "polish": "źle",
+          "meaning": {
+            "en": "badly"
+          }
+        }
+      ],
+      "items": [
+        "szybko",
+        "wolno",
+        "drogo",
+        "tanio",
+        "milo",
+        "zle"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-g-e16",
+      "text": "w listopadzie jest zimno i brzydko",
+      "meaning": {
+        "en": "in November it is cold and nasty"
+      },
+      "distractors": [
+        "w listopadzie jest ciepło i ładnie",
+        "w lipcu jest zimno i brzydko"
+      ],
+      "items": [
+        "listopad",
+        "byc-jest",
+        "zimno",
+        "i",
+        "brzydko"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l16-g-e17",
+      "lines": [
+        "Jak było na wakacjach?",
+        "Bardzo miło! Było ciepło i świeciło słońce.",
+        "A w przyszłym roku?",
+        "W przyszłym roku będę zwiedzać Paryż."
+      ],
+      "meaning": {
+        "en": "Holidays this year and next."
+      },
+      "items": [
+        "jak",
+        "bardzo",
+        "milo",
+        "w-przyszlym-roku",
+        "bede",
+        "zwiedzac",
+        "paryz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-g-e18",
+      "lines": [
+        "Adam jeździ szybko, a Ewa jeździ wolno.",
+        "W Krakowie jest tanio, a w Paryżu jest drogo.",
+        "Adam czuje się źle, bo jest bardzo zimno."
+      ],
+      "meaning": {
+        "en": "Fast and slow, cheap and expensive."
+      },
+      "statements": [
+        {
+          "text": "Ewa jeździ szybko.",
+          "meaning": {
+            "en": "Ewa drives fast."
+          },
+          "true": false
+        },
+        {
+          "text": "W Paryżu jest drogo.",
+          "meaning": {
+            "en": "In Paris it is expensive."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam czuje się źle.",
+          "meaning": {
+            "en": "Adam feels bad."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "adam",
+        "szybko",
+        "ewa",
+        "wolno",
+        "w-krakowie",
+        "tanio",
+        "drogo",
+        "zle",
+        "zimno"
+      ]
+    }
+  ]
+}

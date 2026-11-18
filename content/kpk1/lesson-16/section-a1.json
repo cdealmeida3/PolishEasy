@@ -1,0 +1,410 @@
+{
+  "id": "kpk1-l16-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Parasol noś i przy pogodzie",
+    "meaning": {
+      "en": "Take an umbrella even when it is fine"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-a1-t01",
+      "before": "kpk1-l16-a1-e01",
+      "title": {
+        "en": "Cztery pory roku"
+      },
+      "body": {
+        "en": "A year has four seasons, *cztery pory roku*: *wiosna* (spring), *lato* (summer), *jesień* (autumn) and *zima* (winter). *Jaka to pora roku?* asks which season it is."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a1-e01",
+      "prompt": "pora roku",
+      "options": [
+        {
+          "en": "a season (cztery pory roku: the four seasons)"
+        },
+        {
+          "en": "a month"
+        },
+        {
+          "en": "a week"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pora-roku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a1-e02",
+      "prompt": "wiosna",
+      "options": [
+        {
+          "en": "summer"
+        },
+        {
+          "en": "spring (do wiosny: till spring)"
+        },
+        {
+          "en": "autumn"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wiosna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a1-e03",
+      "prompt": "lato",
+      "options": [
+        {
+          "en": "spring"
+        },
+        {
+          "en": "winter"
+        },
+        {
+          "en": "summer"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "lato"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a1-e04",
+      "text": "to jest lato",
+      "meaning": {
+        "en": "this is summer"
+      },
+      "distractors": [
+        "to jest zima",
+        "to nie jest lato"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "lato"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a1-e05",
+      "prompt": "jesień",
+      "options": [
+        {
+          "en": "autumn"
+        },
+        {
+          "en": "winter"
+        },
+        {
+          "en": "spring"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jesien"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a1-e06",
+      "prompt": "zima",
+      "options": [
+        {
+          "en": "autumn"
+        },
+        {
+          "en": "winter"
+        },
+        {
+          "en": "summer"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zima"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-a1-e07",
+      "prompt": {
+        "en": "is it winter or spring?"
+      },
+      "acceptedAnswers": [
+        "czy to jest zima, czy wiosna?"
+      ],
+      "distractors": [
+        "lato",
+        "jesień"
+      ],
+      "items": [
+        "czy",
+        "to",
+        "byc-jest",
+        "zima",
+        "wiosna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a1-e08",
+      "prompt": "jaka to pora roku?",
+      "options": [
+        {
+          "en": "what month is it?"
+        },
+        {
+          "en": "what time is it?"
+        },
+        {
+          "en": "what season is it?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jaka-to-pora-roku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a1-e09",
+      "prompt": "będzie",
+      "options": [
+        {
+          "en": "it will be; he will be, she will be (jutro będzie ciepło)"
+        },
+        {
+          "en": "it was"
+        },
+        {
+          "en": "it is"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bedzie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-a1-e10",
+      "text": "Teraz jest ___, a potem będzie lato.",
+      "meaning": {
+        "en": "Now it is spring, and then it will be summer."
+      },
+      "gaps": [
+        [
+          "wiosna"
+        ]
+      ],
+      "distractors": [
+        "zima",
+        "jesień"
+      ],
+      "items": [
+        "teraz",
+        "byc-jest",
+        "wiosna",
+        "a",
+        "potem",
+        "bedzie",
+        "lato"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-a1-e11",
+      "acceptedAnswers": [
+        "jaka to pora roku?"
+      ],
+      "meaning": {
+        "en": "what season is it?"
+      },
+      "items": [
+        "jaka-to-pora-roku"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a1-e12",
+      "prompt": {
+        "en": "autumn"
+      },
+      "acceptedAnswers": [
+        "jesień"
+      ],
+      "items": [
+        "jesien"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a1-e13",
+      "prompt": {
+        "en": "winter"
+      },
+      "acceptedAnswers": [
+        "zima"
+      ],
+      "items": [
+        "zima"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a1-e14",
+      "prompt": {
+        "en": "what season is it?"
+      },
+      "acceptedAnswers": [
+        "jaka to pora roku?"
+      ],
+      "items": [
+        "jaka-to-pora-roku"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-a1-e15",
+      "pairs": [
+        {
+          "polish": "wiosna",
+          "meaning": {
+            "en": "spring"
+          }
+        },
+        {
+          "polish": "lato",
+          "meaning": {
+            "en": "summer"
+          }
+        },
+        {
+          "polish": "jesień",
+          "meaning": {
+            "en": "autumn"
+          }
+        },
+        {
+          "polish": "zima",
+          "meaning": {
+            "en": "winter"
+          }
+        },
+        {
+          "polish": "pora roku",
+          "meaning": {
+            "en": "a season"
+          }
+        }
+      ],
+      "items": [
+        "wiosna",
+        "lato",
+        "jesien",
+        "zima",
+        "pora-roku"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a1-e16",
+      "text": "moja ulubiona pora roku to jesień",
+      "meaning": {
+        "en": "my favourite season is autumn"
+      },
+      "distractors": [
+        "moja ulubiona pora roku to zima",
+        "moja ulubiona pora roku to lato"
+      ],
+      "items": [
+        "moja",
+        "ulubiony",
+        "pora-roku",
+        "to",
+        "jesien"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-a1-e17",
+      "prompt": {
+        "en": "my favourite season is summer"
+      },
+      "acceptedAnswers": [
+        "moja ulubiona pora roku to lato"
+      ],
+      "distractors": [
+        "zima",
+        "mój"
+      ],
+      "items": [
+        "moja",
+        "ulubiony",
+        "pora-roku",
+        "to",
+        "lato"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-a1-e18",
+      "lines": [
+        "Rok ma cztery pory roku.",
+        "Po zimie jest wiosna, a po lecie jesień.",
+        "Ulubiona pora roku Ewy to lato."
+      ],
+      "meaning": {
+        "en": "The seasons."
+      },
+      "statements": [
+        {
+          "text": "Rok ma cztery pory roku.",
+          "meaning": {
+            "en": "A year has four seasons."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa lubi zimę najbardziej.",
+          "meaning": {
+            "en": "Ewa likes winter best."
+          },
+          "true": false
+        },
+        {
+          "text": "Po zimie jest wiosna.",
+          "meaning": {
+            "en": "After winter comes spring."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "rok",
+        "cztery",
+        "pora-roku",
+        "wiosna",
+        "jesien",
+        "ulubiony",
+        "lato"
+      ]
+    }
+  ]
+}

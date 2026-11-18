@@ -1,0 +1,418 @@
+{
+  "id": "kpk1-l16-d2",
+  "section": {
+    "letter": "D",
+    "heading": "Andrzejki",
+    "meaning": {
+      "en": "St Andrew's Eve"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-d2-t01",
+      "before": "kpk1-l16-d2-e01",
+      "title": {
+        "en": "Co będzie w przyszłym roku?"
+      },
+      "body": {
+        "en": "A *wróżba* tells *co będzie* (what will happen): *będziesz podróżować*, *będziesz zwiedzać Paryż*, *będziesz uprawiać sport*, *będziesz mieć dziecko*. But really, *nikt nie wie*, nobody knows. To make one, you *lać* (pour) hot wax into *zimna woda*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d2-e01",
+      "prompt": "co będzie?",
+      "options": [
+        {
+          "en": "what is it?"
+        },
+        {
+          "en": "what will happen?"
+        },
+        {
+          "en": "what was it?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "co-bedzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d2-e02",
+      "prompt": "nikt nie wie",
+      "options": [
+        {
+          "en": "I don't know"
+        },
+        {
+          "en": "everybody knows"
+        },
+        {
+          "en": "nobody knows"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nikt-nie-wie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-d2-e03",
+      "text": "co będzie w przyszłym roku?",
+      "meaning": {
+        "en": "what will happen next year?"
+      },
+      "distractors": [
+        "co będzie w przyszłym tygodniu?",
+        "co było w zeszłym roku?"
+      ],
+      "items": [
+        "co-bedzie",
+        "w-przyszlym-roku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d2-e04",
+      "prompt": "lać",
+      "options": [
+        {
+          "en": "pour (to pour)"
+        },
+        {
+          "en": "drink (to drink)"
+        },
+        {
+          "en": "cook (to cook)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-d2-e05",
+      "prompt": {
+        "en": "you will pour wax"
+      },
+      "acceptedAnswers": [
+        "będziesz lać wosk"
+      ],
+      "distractors": [
+        "woda",
+        "garnek"
+      ],
+      "items": [
+        "bedziesz",
+        "lac",
+        "wosk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d2-e06",
+      "prompt": "uprawiać sport",
+      "options": [
+        {
+          "en": "play concerts"
+        },
+        {
+          "en": "do sport (to do sport)"
+        },
+        {
+          "en": "go sightseeing"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "uprawiac-sport"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d2-e07",
+      "prompt": "grać koncerty",
+      "options": [
+        {
+          "en": "do sport"
+        },
+        {
+          "en": "listen to music"
+        },
+        {
+          "en": "play concerts, give concerts"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "grac-koncerty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d2-e08",
+      "prompt": "mieć dziecko",
+      "options": [
+        {
+          "en": "have a baby (to have a baby)"
+        },
+        {
+          "en": "have a party"
+        },
+        {
+          "en": "have a dog"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "miec-dziecko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-d2-e09",
+      "prompt": "Paryż",
+      "options": [
+        {
+          "en": "Prague"
+        },
+        {
+          "en": "Paris"
+        },
+        {
+          "en": "Warsaw"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "paryz"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-d2-e10",
+      "text": "W przyszłym roku będziesz ___ i będziesz zwiedzać ___.",
+      "meaning": {
+        "en": "Next year you will be travelling, and you will visit Paris."
+      },
+      "gaps": [
+        [
+          "podróżować"
+        ],
+        [
+          "Paryż"
+        ]
+      ],
+      "distractors": [
+        "podróżujesz",
+        "Kraków"
+      ],
+      "items": [
+        "w-przyszlym-roku",
+        "bedziesz",
+        "podrozowac",
+        "i",
+        "zwiedzac",
+        "paryz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-d2-e11",
+      "acceptedAnswers": [
+        "będziesz uprawiać sport"
+      ],
+      "meaning": {
+        "en": "you will be doing sport"
+      },
+      "items": [
+        "bedziesz",
+        "uprawiac-sport"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-d2-e12",
+      "prompt": {
+        "en": "nobody knows"
+      },
+      "acceptedAnswers": [
+        "nikt nie wie"
+      ],
+      "items": [
+        "nikt-nie-wie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-d2-e13",
+      "pairs": [
+        {
+          "polish": "podróżować",
+          "meaning": {
+            "en": "to travel"
+          }
+        },
+        {
+          "polish": "zwiedzać",
+          "meaning": {
+            "en": "to go sightseeing"
+          }
+        },
+        {
+          "polish": "uprawiać sport",
+          "meaning": {
+            "en": "to do sport"
+          }
+        },
+        {
+          "polish": "grać koncerty",
+          "meaning": {
+            "en": "to give concerts"
+          }
+        },
+        {
+          "polish": "mieć dziecko",
+          "meaning": {
+            "en": "to have a baby"
+          }
+        }
+      ],
+      "items": [
+        "podrozowac",
+        "zwiedzac",
+        "uprawiac-sport",
+        "grac-koncerty",
+        "miec-dziecko"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-d2-e14",
+      "text": "Ewa będzie grać koncerty",
+      "meaning": {
+        "en": "Ewa will be giving concerts"
+      },
+      "distractors": [
+        "Ewa będzie uprawiać sport",
+        "Adam będzie grać koncerty"
+      ],
+      "items": [
+        "ewa",
+        "bedzie",
+        "grac-koncerty"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-d2-e15",
+      "lines": [
+        "W andrzejki Ewa leje wosk przez klucz.",
+        "Cień wygląda jak wieża Eiffla.",
+        "Ewa mówi: W przyszłym roku będę zwiedzać Paryż!"
+      ],
+      "meaning": {
+        "en": "Ewa's fortune."
+      },
+      "statements": [
+        {
+          "text": "Ewa leje wosk przez klucz.",
+          "meaning": {
+            "en": "Ewa pours wax through a key."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa będzie zwiedzać Paryż.",
+          "meaning": {
+            "en": "Ewa will visit Paris."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa będzie mieć dziecko.",
+          "meaning": {
+            "en": "Ewa will have a baby."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "andrzejki",
+        "ewa",
+        "wosk",
+        "klucz",
+        "cien",
+        "w-przyszlym-roku",
+        "bede",
+        "zwiedzac",
+        "paryz"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-d2-e16",
+      "prompt": {
+        "en": "to have a baby"
+      },
+      "acceptedAnswers": [
+        "mieć dziecko"
+      ],
+      "items": [
+        "miec-dziecko"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-d2-e17",
+      "text": "to jest dobra wróżba",
+      "meaning": {
+        "en": "it is a good fortune"
+      },
+      "distractors": [
+        "to jest zła wróżba",
+        "to jest dobra świeca"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "dobry",
+        "wrozba"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l16-d2-e18",
+      "lines": [
+        "Co będzie w przyszłym roku?",
+        "Nikt nie wie!",
+        "Możemy lać wosk i zobaczymy.",
+        "Dobry pomysł!"
+      ],
+      "meaning": {
+        "en": "Shall we tell fortunes?"
+      },
+      "items": [
+        "co-bedzie",
+        "w-przyszlym-roku",
+        "nikt-nie-wie",
+        "lac",
+        "wosk",
+        "zobaczymy",
+        "pomysl",
+        "dobry"
+      ]
+    }
+  ]
+}

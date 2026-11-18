@@ -1,0 +1,422 @@
+{
+  "id": "kpk1-l16-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Parasol noś i przy pogodzie",
+    "meaning": {
+      "en": "Take an umbrella even when it is fine"
+    },
+    "strands": [
+      "G",
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-a2-t01",
+      "before": "kpk1-l16-a2-e01",
+      "title": {
+        "en": "Wiosną, latem, jesienią, zimą"
+      },
+      "body": {
+        "en": "When something happens is one word: *wiosną* (in spring), *latem* (in summer), *jesienią* (in autumn), *zimą* (in winter). *Zimą jest zimno* is it's cold in winter."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a2-e01",
+      "prompt": "wiosną",
+      "options": [
+        {
+          "en": "in summer"
+        },
+        {
+          "en": "in spring"
+        },
+        {
+          "en": "in winter"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wiosna-kiedy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a2-e02",
+      "prompt": "latem",
+      "options": [
+        {
+          "en": "in spring"
+        },
+        {
+          "en": "in autumn"
+        },
+        {
+          "en": "in summer"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "latem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a2-e03",
+      "text": "latem jestem na wakacjach",
+      "meaning": {
+        "en": "in summer I'm on holiday"
+      },
+      "distractors": [
+        "zimą jestem na wakacjach",
+        "latem jestem w pracy"
+      ],
+      "items": [
+        "latem",
+        "byc-jestem",
+        "na-wakacjach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a2-e04",
+      "prompt": "jesienią",
+      "options": [
+        {
+          "en": "in autumn"
+        },
+        {
+          "en": "in winter"
+        },
+        {
+          "en": "in spring"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jesienia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a2-e05",
+      "prompt": "zimą",
+      "options": [
+        {
+          "en": "in autumn"
+        },
+        {
+          "en": "in winter"
+        },
+        {
+          "en": "in summer"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zima-kiedy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-a2-e06",
+      "text": "Lubię lato, ale ___ też jest ładnie.",
+      "meaning": {
+        "en": "I like summer, but in autumn it is nice too."
+      },
+      "gaps": [
+        [
+          "jesienią"
+        ]
+      ],
+      "distractors": [
+        "jesień",
+        "zima"
+      ],
+      "items": [
+        "lubic-lubie",
+        "lato",
+        "ale",
+        "jesienia",
+        "tez",
+        "byc-jest",
+        "ladnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a2-e07",
+      "prompt": "czego słuchasz?",
+      "options": [
+        {
+          "en": "what are you reading?"
+        },
+        {
+          "en": "what are you watching?"
+        },
+        {
+          "en": "what are you listening to? (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czego-sluchasz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-a2-e08",
+      "prompt": {
+        "en": "what are you listening to?"
+      },
+      "acceptedAnswers": [
+        "czego słuchasz?"
+      ],
+      "distractors": [
+        "co",
+        "muzyki"
+      ],
+      "items": [
+        "czego-sluchasz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a2-e09",
+      "prompt": "niedaleko",
+      "options": [
+        {
+          "en": "not far, near"
+        },
+        {
+          "en": "far away"
+        },
+        {
+          "en": "here"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "niedaleko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a2-e10",
+      "prompt": "część",
+      "options": [
+        {
+          "en": "a song"
+        },
+        {
+          "en": "a part (moja ulubiona część: my favourite part)"
+        },
+        {
+          "en": "a season"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czesc-n"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-a2-e11",
+      "acceptedAnswers": [
+        "zimą"
+      ],
+      "meaning": {
+        "en": "in winter"
+      },
+      "items": [
+        "zima-kiedy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a2-e12",
+      "prompt": {
+        "en": "in spring"
+      },
+      "acceptedAnswers": [
+        "wiosną"
+      ],
+      "items": [
+        "wiosna-kiedy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-a2-e13",
+      "pairs": [
+        {
+          "polish": "wiosną",
+          "meaning": {
+            "en": "in spring"
+          }
+        },
+        {
+          "polish": "latem",
+          "meaning": {
+            "en": "in summer"
+          }
+        },
+        {
+          "polish": "jesienią",
+          "meaning": {
+            "en": "in autumn"
+          }
+        },
+        {
+          "polish": "zimą",
+          "meaning": {
+            "en": "in winter"
+          }
+        },
+        {
+          "polish": "niedaleko",
+          "meaning": {
+            "en": "not far"
+          }
+        }
+      ],
+      "items": [
+        "wiosna-kiedy",
+        "latem",
+        "jesienia",
+        "zima-kiedy",
+        "niedaleko"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l16-a2-e14",
+      "lines": [
+        "Cześć! Czego słuchasz?",
+        "To Vivaldi, „Cztery pory roku”.",
+        "Znam! Moja ulubiona część to lato.",
+        "A ja lubię jesień."
+      ],
+      "meaning": {
+        "en": "Music for the seasons."
+      },
+      "items": [
+        "czesc",
+        "czego-sluchasz",
+        "to",
+        "cztery",
+        "pora-roku",
+        "znac-znam",
+        "moja",
+        "ulubiony",
+        "czesc-n",
+        "lato",
+        "a",
+        "ja",
+        "lubic-lubie",
+        "jesien"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a2-e15",
+      "text": "do wiosny niedaleko",
+      "meaning": {
+        "en": "spring isn't far off"
+      },
+      "distractors": [
+        "do zimy niedaleko",
+        "do wiosny daleko"
+      ],
+      "items": [
+        "do-godz",
+        "wiosna",
+        "niedaleko"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-a2-e16",
+      "lines": [
+        "Ewa słucha muzyki.",
+        "To jest Vivaldi, „Cztery pory roku”.",
+        "Ewa lubi lato, a Adam lubi jesień, ale jesień już się skończyła."
+      ],
+      "meaning": {
+        "en": "Ewa and Adam talk about the seasons."
+      },
+      "statements": [
+        {
+          "text": "Ewa słucha muzyki.",
+          "meaning": {
+            "en": "Ewa is listening to music."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam lubi zimę.",
+          "meaning": {
+            "en": "Adam likes winter."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa lubi lato.",
+          "meaning": {
+            "en": "Ewa likes summer."
+          },
+          "true": true
+        }
+      ],
+      "listen": true,
+      "items": [
+        "ewa",
+        "muzyka-gen",
+        "cztery",
+        "pora-roku",
+        "lato",
+        "jesien"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a2-e17",
+      "prompt": {
+        "en": "in summer"
+      },
+      "acceptedAnswers": [
+        "latem"
+      ],
+      "items": [
+        "latem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-a2-e18",
+      "prompt": {
+        "en": "my favourite part is summer"
+      },
+      "acceptedAnswers": [
+        "moja ulubiona część to lato"
+      ],
+      "distractors": [
+        "pora",
+        "zima"
+      ],
+      "items": [
+        "moja",
+        "ulubiony",
+        "czesc-n",
+        "to",
+        "lato"
+      ]
+    }
+  ]
+}

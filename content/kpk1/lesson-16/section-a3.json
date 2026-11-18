@@ -1,0 +1,410 @@
+{
+  "id": "kpk1-l16-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Parasol noś i przy pogodzie",
+    "meaning": {
+      "en": "Take an umbrella even when it is fine"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l16-a3-t01",
+      "before": "kpk1-l16-a3-e01",
+      "title": {
+        "en": "Zimny, zimno"
+      },
+      "body": {
+        "en": "An adjective goes with a noun: *zimny dzień* (a cold day). To say what it is like, *jest* takes a word that ends in *-o* or *-e*: *jest zimno* (it's cold), *jest ciepło*, *jest gorąco*, *jest chłodno*, *jest ładnie*, *jest brzydko*. From *intensywny*, *intensywnie*; from *dobry*, *dobrze*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a3-e01",
+      "prompt": "zimno",
+      "options": [
+        {
+          "en": "warm"
+        },
+        {
+          "en": "hot"
+        },
+        {
+          "en": "cold (jest zimno: it's cold)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zimno"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a3-e02",
+      "prompt": "ciepło",
+      "options": [
+        {
+          "en": "warm (jest ciepło: it's warm)"
+        },
+        {
+          "en": "cold"
+        },
+        {
+          "en": "cool, chilly"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cieplo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a3-e03",
+      "text": "dzisiaj jest zimno",
+      "meaning": {
+        "en": "it's cold today"
+      },
+      "distractors": [
+        "dzisiaj jest ciepło",
+        "jutro jest zimno"
+      ],
+      "items": [
+        "dzisiaj",
+        "byc-jest",
+        "zimno"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a3-e04",
+      "prompt": "gorąco",
+      "options": [
+        {
+          "en": "cold"
+        },
+        {
+          "en": "hot (jest gorąco: it's hot)"
+        },
+        {
+          "en": "cool, chilly"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "goraco"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a3-e05",
+      "prompt": "chłodno",
+      "options": [
+        {
+          "en": "hot"
+        },
+        {
+          "en": "warm"
+        },
+        {
+          "en": "cool, chilly (jest chłodno: it's chilly)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "chlodno"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l16-a3-e06",
+      "text": "Zimą jest ___, a latem jest ___.",
+      "meaning": {
+        "en": "In winter it is cold, and in summer it is hot."
+      },
+      "gaps": [
+        [
+          "zimno"
+        ],
+        [
+          "gorąco"
+        ]
+      ],
+      "distractors": [
+        "zimny",
+        "gorący"
+      ],
+      "items": [
+        "zima-kiedy",
+        "byc-jest",
+        "zimno",
+        "a",
+        "latem",
+        "goraco"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a3-e07",
+      "prompt": "ładnie",
+      "options": [
+        {
+          "en": "nicely; nice (było ładnie: the weather was nice)"
+        },
+        {
+          "en": "badly"
+        },
+        {
+          "en": "cold"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ladnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a3-e08",
+      "prompt": "brzydko",
+      "options": [
+        {
+          "en": "nicely"
+        },
+        {
+          "en": "badly; nasty (jest brzydko: the weather is nasty)"
+        },
+        {
+          "en": "warm"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "brzydko"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l16-a3-e09",
+      "prompt": {
+        "en": "it's nice today"
+      },
+      "acceptedAnswers": [
+        "dzisiaj jest ładnie"
+      ],
+      "distractors": [
+        "ładny",
+        "brzydko"
+      ],
+      "items": [
+        "dzisiaj",
+        "byc-jest",
+        "ladnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a3-e10",
+      "prompt": "zielono",
+      "options": [
+        {
+          "en": "cold"
+        },
+        {
+          "en": "yellow"
+        },
+        {
+          "en": "green (jest zielono: everything is green)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zielono"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l16-a3-e11",
+      "prompt": "intensywnie",
+      "options": [
+        {
+          "en": "intensely, hard"
+        },
+        {
+          "en": "slowly"
+        },
+        {
+          "en": "nicely"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "intensywnie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l16-a3-e12",
+      "acceptedAnswers": [
+        "jest ciepło"
+      ],
+      "meaning": {
+        "en": "it's warm"
+      },
+      "items": [
+        "byc-jest",
+        "cieplo"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a3-e13",
+      "prompt": {
+        "en": "it's cold"
+      },
+      "acceptedAnswers": [
+        "jest zimno",
+        "zimno"
+      ],
+      "items": [
+        "byc-jest",
+        "zimno"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l16-a3-e14",
+      "pairs": [
+        {
+          "polish": "zimno",
+          "meaning": {
+            "en": "cold"
+          }
+        },
+        {
+          "polish": "ciepło",
+          "meaning": {
+            "en": "warm"
+          }
+        },
+        {
+          "polish": "gorąco",
+          "meaning": {
+            "en": "hot"
+          }
+        },
+        {
+          "polish": "chłodno",
+          "meaning": {
+            "en": "chilly"
+          }
+        },
+        {
+          "polish": "ładnie",
+          "meaning": {
+            "en": "nicely"
+          }
+        },
+        {
+          "polish": "brzydko",
+          "meaning": {
+            "en": "nasty, badly"
+          }
+        }
+      ],
+      "items": [
+        "zimno",
+        "cieplo",
+        "goraco",
+        "chlodno",
+        "ladnie",
+        "brzydko"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l16-a3-e15",
+      "text": "jeszcze dwa miesiące i będzie zielono",
+      "meaning": {
+        "en": "two more months and it will be green"
+      },
+      "distractors": [
+        "jeszcze dwa miesiące i będzie zimno",
+        "jeszcze dwa tygodnie i będzie zielono"
+      ],
+      "items": [
+        "jeszcze",
+        "dwa",
+        "miesiac",
+        "i",
+        "bedzie",
+        "zielono"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l16-a3-e16",
+      "lines": [
+        "Dzisiaj jest brzydko i chłodno.",
+        "Adam słucha muzyki bardzo intensywnie.",
+        "Ewa mówi, że w maju będzie ciepło i zielono."
+      ],
+      "meaning": {
+        "en": "A chilly day."
+      },
+      "statements": [
+        {
+          "text": "Dzisiaj jest ładnie.",
+          "meaning": {
+            "en": "It is nice today."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam słucha muzyki.",
+          "meaning": {
+            "en": "Adam is listening to music."
+          },
+          "true": true
+        },
+        {
+          "text": "W maju będzie ciepło.",
+          "meaning": {
+            "en": "It will be warm in May."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "dzisiaj",
+        "brzydko",
+        "chlodno",
+        "intensywnie",
+        "cieplo",
+        "zielono",
+        "bedzie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l16-a3-e17",
+      "prompt": {
+        "en": "it's hot"
+      },
+      "acceptedAnswers": [
+        "jest gorąco",
+        "gorąco"
+      ],
+      "items": [
+        "byc-jest",
+        "goraco"
+      ]
+    }
+  ]
+}
