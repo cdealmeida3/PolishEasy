@@ -719,6 +719,39 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Tell the time opens in chapter 12 and says every time on its clock, each with a Clip`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.TELL_THE_TIME }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l12-"), course.path[firstReady - 1].id)
+        val all = practiceAfter(course.path.size)
+        listOf(TellTheTime.READ, TellTheTime.FIND).forEach { way ->
+            val round = all.start(all.setup(Game.TELL_THE_TIME, listOf(way))) as TimeRound
+            assertEquals(TellTheTime.QUESTIONS, round.total)
+            round.run.questions.flatMap { it.options }.forEach { time -> assertTrue(all.clipOf(time.polish) != null, "No Clip for ${time.polish}") }
+        }
+        assertEquals(12 * CLOCK_MINUTES.size, course.clockPhrases().size)
+        assertTrue("wpół do dziewiątej" in course.clockPhrases())
+        assertTrue("za kwadrans dziewiąta" in course.clockPhrases())
+    }
+
+    @Test
+    fun `Week planner opens in chapter 12, every plan's words are its Items' and every plan has a Clip`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.WEEK_PLANNER }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l12-"), course.path[firstReady - 1].id)
+        val week = checkNotNull(course.week)
+        assertEquals(7, week.days.size)
+        week.plans.forEach { plan ->
+            val words = plan.items.mapNotNull(course.itemsById::get).flatMap { listOf(it.text) + it.forms }
+                .flatMap { it.lowercase().split(" ") }.toSet()
+            plan.text.lowercase().split(" ", ":", ".").filter { it.isNotBlank() }.forEach { word -> assertTrue(word in words, "${plan.text}: $word is not one of its Items") }
+            assertTrue(course.clipFor(plan.text) != null, "No Clip for ${plan.text}")
+        }
+        val all = practiceAfter(course.path.size)
+        assertEquals(listOf(WeekPlanner.LISTEN, WeekPlanner.READ), all.setup(Game.WEEK_PLANNER).choices[0].options.map { it.id })
+        val round = all.start(all.setup(Game.WEEK_PLANNER, listOf(WeekPlanner.LISTEN))) as PlannerRound
+        assertEquals(WeekPlanner.PLANS, round.total)
+    }
+
+    @Test
     fun `the Verb challenge offers chapter 4's conjugation once its verbs are learned`() {
         val afterB = course.path.indexOfFirst { it.id == "kpk1-l04-b3" } + 1
         assertTrue(afterB > 0)
