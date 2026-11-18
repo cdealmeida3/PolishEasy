@@ -205,7 +205,48 @@
     "tost": "m",
     "grzanka": "f",
     "bar": "m",
-    "wino": "n"
+    "wino": "n",
+    "gruszka": "f",
+    "sliwka": "f",
+    "brzoskwinia": "f",
+    "wisnia": "f",
+    "ananas": "m",
+    "arbuz": "m",
+    "kiwi": "n",
+    "marchewka": "f",
+    "cebula": "f",
+    "czosnek": "m",
+    "papryka": "f",
+    "kapusta": "f",
+    "kalafior": "m",
+    "burak": "m",
+    "por": "m",
+    "seler": "m",
+    "pietruszka": "f",
+    "rzodkiewka": "f",
+    "fasola": "f",
+    "groszek": "m",
+    "kukurydza": "f",
+    "dynia": "f",
+    "smietana": "f",
+    "oliwa": "f",
+    "smak": "m",
+    "ksztalt": "m",
+    "targ": "m",
+    "jarzyna": "f",
+    "produkt": "m",
+    "piwo": "n",
+    "bazylia": "f",
+    "natka": "f",
+    "korzen": "m",
+    "patelnia": "f",
+    "pieczywo": "n",
+    "czekolada": "f",
+    "drozdzowka": "f",
+    "pstrag": "m",
+    "dorsz": "m",
+    "sledz": "m",
+    "losos": "m"
   },
   "realWords": [
     "aktorką",
@@ -454,7 +495,41 @@
     "że",
     "żoną",
     "żupa",
-    "żupę"
+    "żupę",
+    "gruszką",
+    "śliwką",
+    "brzoskwinią",
+    "wisznia",
+    "wiśnią",
+    "marchewką",
+    "cebulą",
+    "papryką",
+    "kapustą",
+    "pietruska",
+    "pietruszką",
+    "rzodkiewką",
+    "fasolą",
+    "kukurydzą",
+    "dynią",
+    "śmietaną",
+    "oliwą",
+    "śmietana",
+    "kupuję",
+    "jarzyną",
+    "kiło",
+    "bazylią",
+    "tę",
+    "natką",
+    "sprzedawcą",
+    "liczbą",
+    "mnogą",
+    "jedną",
+    "patelnią",
+    "rybną",
+    "napoję",
+    "czekoladą",
+    "drożdżówką",
+    "zwykłe"
   ],
   "letters": {
     "a": "a",
@@ -491,22 +566,82 @@
     "ż": "żet"
   },
   "opposites": [
-    ["nowy", "stary"],
-    ["dobry", "zly"],
-    ["duzy", "maly"],
-    ["czarny", "bialy"],
-    ["wesoly", "smutny"],
-    ["wysoki", "niski"],
-    ["mlody", "stary"],
-    ["pracowity", "leniwy"],
-    ["gruby", "szczuply"],
-    ["ladny", "brzydki"],
-    ["zdrowy", "chory"],
-    ["czysty", "brudny"],
-    ["jasny", "ciemny"],
-    ["mocny", "slaby"],
-    ["tlusty", "chudy"],
-    ["goracy", "zimny"]
+    [
+      "nowy",
+      "stary"
+    ],
+    [
+      "dobry",
+      "zly"
+    ],
+    [
+      "duzy",
+      "maly"
+    ],
+    [
+      "czarny",
+      "bialy"
+    ],
+    [
+      "wesoly",
+      "smutny"
+    ],
+    [
+      "wysoki",
+      "niski"
+    ],
+    [
+      "mlody",
+      "stary"
+    ],
+    [
+      "pracowity",
+      "leniwy"
+    ],
+    [
+      "gruby",
+      "szczuply"
+    ],
+    [
+      "ladny",
+      "brzydki"
+    ],
+    [
+      "zdrowy",
+      "chory"
+    ],
+    [
+      "czysty",
+      "brudny"
+    ],
+    [
+      "jasny",
+      "ciemny"
+    ],
+    [
+      "mocny",
+      "slaby"
+    ],
+    [
+      "tlusty",
+      "chudy"
+    ],
+    [
+      "goracy",
+      "zimny"
+    ],
+    [
+      "miekki",
+      "twardy"
+    ],
+    [
+      "swiezy",
+      "suszony"
+    ],
+    [
+      "surowy",
+      "gotowany"
+    ]
   ],
   "jobs": {
     "after": "kim",
@@ -542,49 +677,160 @@
     ]
   },
   "hobbies": [
-    ["gotowac"],
-    ["grac", "na-komputerze"],
-    ["podrozowac"],
-    ["jezdzic", "na-rowerze"],
-    ["jezdzic", "na-nartach"],
-    ["jezdzic", "konno"],
-    ["jezdzic", "na-rolkach"],
-    ["grac", "w-pilke"],
-    ["grac", "w-szachy"],
-    ["grac", "w-karty"],
-    ["grac", "w-tenisa"],
-    ["grac", "na-pianinie"],
-    ["grac", "na-gitarze"],
-    ["chodzic", "na-spacery"],
-    ["chodzic", "do-kina"],
-    ["spiewac"],
-    ["biegac"],
-    ["plywac"],
-    ["malowac"],
-    ["sluchac", "muzyka-gen"],
-    ["robic", "zakupy"]
+    [
+      "gotowac"
+    ],
+    [
+      "grac",
+      "na-komputerze"
+    ],
+    [
+      "podrozowac"
+    ],
+    [
+      "jezdzic",
+      "na-rowerze"
+    ],
+    [
+      "jezdzic",
+      "na-nartach"
+    ],
+    [
+      "jezdzic",
+      "konno"
+    ],
+    [
+      "jezdzic",
+      "na-rolkach"
+    ],
+    [
+      "grac",
+      "w-pilke"
+    ],
+    [
+      "grac",
+      "w-szachy"
+    ],
+    [
+      "grac",
+      "w-karty"
+    ],
+    [
+      "grac",
+      "w-tenisa"
+    ],
+    [
+      "grac",
+      "na-pianinie"
+    ],
+    [
+      "grac",
+      "na-gitarze"
+    ],
+    [
+      "chodzic",
+      "na-spacery"
+    ],
+    [
+      "chodzic",
+      "do-kina"
+    ],
+    [
+      "spiewac"
+    ],
+    [
+      "biegac"
+    ],
+    [
+      "plywac"
+    ],
+    [
+      "malowac"
+    ],
+    [
+      "sluchac",
+      "muzyka-gen"
+    ],
+    [
+      "robic",
+      "zakupy"
+    ]
   ],
   "till": {
     "zloty": "zloty",
     "grosz": "grosz",
     "and": "i",
     "costs": "kosztowac-kosztuje",
-    "goods": ["gazeta", "bilet", "woda", "kanapka", "sok", "kawa", "herbata", "ciastko", "kupon"]
+    "goods": [
+      "gazeta",
+      "bilet",
+      "woda",
+      "kanapka",
+      "sok",
+      "kawa",
+      "herbata",
+      "ciastko",
+      "kupon"
+    ]
   },
   "plates": {
     "and": "i",
     "dishes": [
-      ["chleb", "z-maslem", "maslo"],
-      ["herbata", "z-cytryna", "cytryna"],
-      ["kawa", "z-mlekiem", "mleko"],
-      ["herbata", "z-mlekiem", "mleko"],
-      ["kanapka", "z-serem", "ser"],
-      ["chleb", "z-serem", "ser"],
-      ["ryba", "z-frytkami", "frytki"],
-      ["kurczak", "z-frytkami", "frytki"],
-      ["salatka", "z-oliwkami", "oliwki"],
-      ["salatka", "z-pieczarkami", "pieczarki"],
-      ["makaron", "z-serem", "ser"]
+      [
+        "chleb",
+        "z-maslem",
+        "maslo"
+      ],
+      [
+        "herbata",
+        "z-cytryna",
+        "cytryna"
+      ],
+      [
+        "kawa",
+        "z-mlekiem",
+        "mleko"
+      ],
+      [
+        "herbata",
+        "z-mlekiem",
+        "mleko"
+      ],
+      [
+        "kanapka",
+        "z-serem",
+        "ser"
+      ],
+      [
+        "chleb",
+        "z-serem",
+        "ser"
+      ],
+      [
+        "ryba",
+        "z-frytkami",
+        "frytki"
+      ],
+      [
+        "kurczak",
+        "z-frytkami",
+        "frytki"
+      ],
+      [
+        "salatka",
+        "z-oliwkami",
+        "oliwki"
+      ],
+      [
+        "salatka",
+        "z-pieczarkami",
+        "pieczarki"
+      ],
+      [
+        "makaron",
+        "z-serem",
+        "ser"
+      ]
     ]
   }
 }

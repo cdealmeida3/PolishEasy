@@ -11,7 +11,8 @@
     "kpk1/lesson-05/items.json",
     "kpk1/lesson-06/items.json",
     "kpk1/lesson-07/items.json",
-    "kpk1/lesson-08/items.json"
+    "kpk1/lesson-08/items.json",
+    "kpk1/lesson-09/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -32,7 +33,8 @@
     "kpk1/chats/tango-class.json",
     "kpk1/chats/weekend-plans.json",
     "kpk1/chats/at-the-kiosk.json",
-    "kpk1/chats/breakfast-with-a-friend.json"
+    "kpk1/chats/breakfast-with-a-friend.json",
+    "kpk1/chats/at-the-market.json"
   ],
   "levels": [
     {
@@ -552,7 +554,39 @@
               "mianownik i biernik l.mn. rzeczowników niemęskoosobowych"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-09/section-a1.json",
+            "kpk1/lesson-09/section-a2.json",
+            "kpk1/lesson-09/section-a3.json",
+            "kpk1/lesson-09/section-a4.json",
+            "kpk1/lesson-09/section-a5.json",
+            "kpk1/lesson-09/section-a6.json",
+            "kpk1/lesson-09/section-b1.json",
+            "kpk1/lesson-09/section-b2.json",
+            "kpk1/lesson-09/section-b3.json",
+            "kpk1/lesson-09/section-b4.json",
+            "kpk1/lesson-09/section-c1.json",
+            "kpk1/lesson-09/section-c2.json",
+            "kpk1/lesson-09/section-d1.json",
+            "kpk1/lesson-09/section-d2.json",
+            "kpk1/lesson-09/section-d3.json",
+            "kpk1/lesson-09/section-d4.json",
+            "kpk1/lesson-09/section-g.json"
+          ],
+          "lookUp": [
+            "swiezy",
+            "suszony",
+            "miekki",
+            "twardy",
+            "dojrzaly",
+            "kupowac-kupujemy",
+            "poprosze",
+            "pol-kilo",
+            "targ",
+            "smak",
+            "ksztalt",
+            "te"
+          ]
         },
         {
           "id": "kpk1-l10",

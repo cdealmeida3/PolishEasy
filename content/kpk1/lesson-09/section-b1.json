@@ -1,0 +1,401 @@
+{
+  "id": "kpk1-l09-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Na targu",
+    "meaning": {
+      "en": "At the market"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-b1-t01",
+      "before": "kpk1-l09-b1-e01",
+      "title": {
+        "en": "Kupować"
+      },
+      "body": {
+        "en": "*Kupować* is to buy: *kupuję, kupujesz, kupuje, kupujemy, kupujecie, kupują*. What you buy takes the accusative: *kupuję marchewkę*, *kupujemy owoce*."
+      },
+      "conjugation": {
+        "verb": "kupować",
+        "meaning": {
+          "en": "to buy"
+        },
+        "forms": {
+          "ja": "kupuję",
+          "ty": "kupujesz",
+          "on": "kupuje",
+          "my": "kupujemy",
+          "wy": "kupujecie",
+          "oni": "kupują"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b1-e01",
+      "prompt": "targ",
+      "options": [
+        {
+          "en": "a shop"
+        },
+        {
+          "en": "a supermarket"
+        },
+        {
+          "en": "a market"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "targ"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b1-e02",
+      "prompt": "na targu",
+      "options": [
+        {
+          "en": "at the market"
+        },
+        {
+          "en": "a market"
+        },
+        {
+          "en": "at the shop"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-targu"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-b1-e03",
+      "text": "kupuję owoce na targu",
+      "meaning": {
+        "en": "I buy fruit at the market"
+      },
+      "distractors": [
+        "kupuję warzywa na targu",
+        "kupujemy owoce na targu"
+      ],
+      "items": [
+        "kupowac-kupuje",
+        "owoc",
+        "na-targu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b1-e04",
+      "prompt": "kupujemy",
+      "options": [
+        {
+          "en": "I buy, I am buying"
+        },
+        {
+          "en": "we buy, we are buying"
+        },
+        {
+          "en": "they buy"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kupowac-kupujemy"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l09-b1-e05",
+      "verb": "kupować",
+      "meaning": {
+        "en": "to buy"
+      },
+      "person": "my",
+      "sentence": "Co ___?",
+      "sentenceMeaning": {
+        "en": "What are we buying?"
+      },
+      "acceptedAnswers": [
+        "kupujemy"
+      ],
+      "items": [
+        "co",
+        "kupowac-kupujemy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b1-e06",
+      "prompt": "kupujesz",
+      "options": [
+        {
+          "en": "we buy, we are buying"
+        },
+        {
+          "en": "he buys, she buys"
+        },
+        {
+          "en": "you buy, you are buying (one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kupowac-kupujesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b1-e07",
+      "prompt": "kupuje",
+      "options": [
+        {
+          "en": "he buys, she buys"
+        },
+        {
+          "en": "you buy, you are buying (one friend)"
+        },
+        {
+          "en": "I buy, I am buying"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kupowac-kupuje-on"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l09-b1-e08",
+      "verb": "kupować",
+      "meaning": {
+        "en": "to buy"
+      },
+      "person": "on",
+      "sentence": "Mama ___ warzywa.",
+      "sentenceMeaning": {
+        "en": "Mum is buying vegetables."
+      },
+      "acceptedAnswers": [
+        "kupuje"
+      ],
+      "items": [
+        "mama",
+        "kupowac-kupuje-on",
+        "warzywa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b1-e09",
+      "prompt": "zupa jarzynowa",
+      "options": [
+        {
+          "en": "a salad"
+        },
+        {
+          "en": "vegetable soup"
+        },
+        {
+          "en": "fish soup"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zupa-jarzynowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b1-e10",
+      "prompt": "jarzyna",
+      "options": [
+        {
+          "en": "a fruit (owoce: fruit, several)"
+        },
+        {
+          "en": "vegetables"
+        },
+        {
+          "en": "a vegetable, another word for warzywo (jarzyny: vegetables)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jarzyna"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-b1-e11",
+      "text": "Jarzyny to ___.",
+      "meaning": {
+        "en": "Jarzyny are vegetables (warzywa)."
+      },
+      "gaps": [
+        [
+          "warzywa"
+        ]
+      ],
+      "distractors": [
+        "owoce",
+        "owoc"
+      ],
+      "items": [
+        "jarzyna",
+        "to",
+        "warzywa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b1-e12",
+      "prompt": "spaghetti",
+      "options": [
+        {
+          "en": "spaghetti"
+        },
+        {
+          "en": "pasta"
+        },
+        {
+          "en": "a salad"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "spaghetti"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-b1-e13",
+      "prompt": {
+        "en": "I feel like spaghetti"
+      },
+      "acceptedAnswers": [
+        "mam ochotę na spaghetti"
+      ],
+      "distractors": [
+        "zupę",
+        "masz"
+      ],
+      "items": [
+        "mam-ochote-na",
+        "spaghetti"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-b1-e14",
+      "prompt": {
+        "en": "what are you buying? (one friend)"
+      },
+      "acceptedAnswers": [
+        "co kupujesz?",
+        "co ty kupujesz?"
+      ],
+      "items": [
+        "co",
+        "kupowac-kupujesz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-b1-e15",
+      "pairs": [
+        {
+          "polish": "targ",
+          "meaning": {
+            "en": "a market"
+          }
+        },
+        {
+          "polish": "na targu",
+          "meaning": {
+            "en": "at the market"
+          }
+        },
+        {
+          "polish": "kupujemy",
+          "meaning": {
+            "en": "we buy"
+          }
+        },
+        {
+          "polish": "kupuje",
+          "meaning": {
+            "en": "she buys"
+          }
+        },
+        {
+          "polish": "jarzyna",
+          "meaning": {
+            "en": "a vegetable"
+          }
+        },
+        {
+          "polish": "zupa jarzynowa",
+          "meaning": {
+            "en": "vegetable soup"
+          }
+        }
+      ],
+      "items": [
+        "targ",
+        "na-targu",
+        "kupowac-kupujemy",
+        "kupowac-kupuje-on",
+        "jarzyna",
+        "zupa-jarzynowa"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l09-b1-e16",
+      "lines": [
+        "Co kupujemy?",
+        "Owoce i warzywa.",
+        "Na sałatkę?",
+        "Tak, i na zupę jarzynową."
+      ],
+      "meaning": {
+        "en": "Two sisters at the market."
+      },
+      "items": [
+        "co",
+        "kupowac-kupujemy",
+        "owoc",
+        "i",
+        "warzywa",
+        "tak"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-b1-e17",
+      "prompt": {
+        "en": "the market is big"
+      },
+      "acceptedAnswers": [
+        "targ jest duży"
+      ],
+      "items": [
+        "targ",
+        "byc-jest",
+        "duzy"
+      ]
+    }
+  ]
+}

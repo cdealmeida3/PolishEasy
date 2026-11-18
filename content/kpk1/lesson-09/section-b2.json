@@ -1,0 +1,418 @@
+{
+  "id": "kpk1-l09-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Na targu",
+    "meaning": {
+      "en": "At the market"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-b2-t01",
+      "before": "kpk1-l09-b2-e01",
+      "title": {
+        "en": "Dwa, dwie"
+      },
+      "body": {
+        "en": "With a masculine thing (not a man) or a neuter noun two is *dwa*: *dwa banany*, *dwa piwa*. With a feminine noun it is *dwie*: *dwie papryki*, *dwie cebule*. After *dwa*, *trzy*, *cztery* the noun is plural: *trzy gruszki*, *cztery pomidory*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b2-e01",
+      "prompt": "poproszę",
+      "options": [
+        {
+          "en": "please; here you are"
+        },
+        {
+          "en": "I'd like…, please (poproszę kilo jabłek)"
+        },
+        {
+          "en": "thank you"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "poprosze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b2-e02",
+      "prompt": "kilo",
+      "options": [
+        {
+          "en": "half a kilo"
+        },
+        {
+          "en": "a litre"
+        },
+        {
+          "en": "a kilo"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kilo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b2-e03",
+      "prompt": "pół kilo",
+      "options": [
+        {
+          "en": "half a kilo"
+        },
+        {
+          "en": "a kilo"
+        },
+        {
+          "en": "a quarter of a kilo"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pol-kilo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-b2-e04",
+      "text": "poproszę pół kilo",
+      "meaning": {
+        "en": "I'd like half a kilo, please"
+      },
+      "distractors": [
+        "poproszę kilo",
+        "proszę pół kilo"
+      ],
+      "items": [
+        "poprosze",
+        "pol-kilo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b2-e05",
+      "prompt": "dwie",
+      "options": [
+        {
+          "en": "two"
+        },
+        {
+          "en": "two (with a feminine noun: dwie papryki)"
+        },
+        {
+          "en": "three"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dwie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-b2-e06",
+      "text": "Poproszę ___ papryki i ___ banany.",
+      "meaning": {
+        "en": "I'd like two peppers and two bananas, please."
+      },
+      "gaps": [
+        [
+          "dwie"
+        ],
+        [
+          "dwa"
+        ]
+      ],
+      "distractors": [
+        "trzy",
+        "jedna"
+      ],
+      "items": [
+        "poprosze",
+        "dwie",
+        "papryka",
+        "i",
+        "dwa",
+        "banan"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b2-e07",
+      "prompt": "produkt",
+      "options": [
+        {
+          "en": "food"
+        },
+        {
+          "en": "a fruit (owoce: fruit, several)"
+        },
+        {
+          "en": "a product, an ingredient (produkty: products)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "produkt"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b2-e08",
+      "prompt": "do picia",
+      "options": [
+        {
+          "en": "to drink (co do picia?: what about drinks?)"
+        },
+        {
+          "en": "for supper"
+        },
+        {
+          "en": "for dinner"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-picia"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-b2-e09",
+      "prompt": {
+        "en": "and what about drinks?"
+      },
+      "acceptedAnswers": [
+        "a co do picia?"
+      ],
+      "distractors": [
+        "do",
+        "jedzenia"
+      ],
+      "items": [
+        "a",
+        "co",
+        "do-picia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b2-e10",
+      "prompt": "piwo",
+      "options": [
+        {
+          "en": "wine"
+        },
+        {
+          "en": "beer, a beer (piwa: beers)"
+        },
+        {
+          "en": "juice"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "piwo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-b2-e11",
+      "prompt": "w takim razie",
+      "options": [
+        {
+          "en": "for example"
+        },
+        {
+          "en": "all right; fine"
+        },
+        {
+          "en": "in that case"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-takim-razie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-b2-e12",
+      "acceptedAnswers": [
+        "w takim razie poproszę dwa piwa"
+      ],
+      "meaning": {
+        "en": "in that case two beers, please"
+      },
+      "items": [
+        "w-takim-razie",
+        "poprosze",
+        "dwa",
+        "piwo"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-b2-e13",
+      "prompt": {
+        "en": "I'd like four tomatoes, please"
+      },
+      "acceptedAnswers": [
+        "poproszę cztery pomidory",
+        "cztery pomidory, poproszę"
+      ],
+      "items": [
+        "poprosze",
+        "cztery",
+        "pomidor"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-b2-e14",
+      "pairs": [
+        {
+          "polish": "kilo",
+          "meaning": {
+            "en": "a kilo"
+          }
+        },
+        {
+          "polish": "pół kilo",
+          "meaning": {
+            "en": "half a kilo"
+          }
+        },
+        {
+          "polish": "dwie",
+          "meaning": {
+            "en": "two (feminine)"
+          }
+        },
+        {
+          "polish": "piwo",
+          "meaning": {
+            "en": "beer"
+          }
+        },
+        {
+          "polish": "produkty",
+          "meaning": {
+            "en": "products"
+          }
+        },
+        {
+          "polish": "poproszę",
+          "meaning": {
+            "en": "I'd like, please"
+          }
+        }
+      ],
+      "items": [
+        "kilo",
+        "pol-kilo",
+        "dwie",
+        "piwo",
+        "produkt",
+        "poprosze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-b2-e15",
+      "prompt": {
+        "en": "I'd like two onions, please"
+      },
+      "acceptedAnswers": [
+        "poproszę dwie cebule"
+      ],
+      "distractors": [
+        "dwa",
+        "cebulę"
+      ],
+      "items": [
+        "poprosze",
+        "dwie",
+        "cebula"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-b2-e16",
+      "lines": [
+        "Ewa kupuje produkty na sos.",
+        "Ma dwie papryki i cztery pomidory.",
+        "Do picia kupuje dwa piwa."
+      ],
+      "meaning": {
+        "en": "Shopping for supper."
+      },
+      "statements": [
+        {
+          "text": "Ewa ma trzy pomidory.",
+          "meaning": {
+            "en": "Ewa has three tomatoes."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa ma dwie papryki.",
+          "meaning": {
+            "en": "Ewa has two peppers."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa kupuje wino.",
+          "meaning": {
+            "en": "Ewa is buying wine."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "ewa",
+        "kupowac-kupuje-on",
+        "produkt",
+        "sos",
+        "miec-ma",
+        "dwie",
+        "papryka",
+        "i",
+        "cztery",
+        "pomidor",
+        "do-picia",
+        "dwa",
+        "piwo"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-b2-e17",
+      "prompt": {
+        "en": "in that case, two beers"
+      },
+      "acceptedAnswers": [
+        "w takim razie dwa piwa"
+      ],
+      "items": [
+        "w-takim-razie",
+        "dwa",
+        "piwo"
+      ]
+    }
+  ]
+}

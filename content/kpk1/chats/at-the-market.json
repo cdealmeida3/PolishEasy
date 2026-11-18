@@ -1,0 +1,234 @@
+{
+  "id": "chat-at-the-market",
+  "person": "Pani Ewa",
+  "title": {
+    "en": "At the market"
+  },
+  "scene": {
+    "en": "You are Adam, shopping at the market for supper. You need four tomatoes, two yellow peppers and fresh basil in a pot. You also want bananas, but only ripe ones, not green. The seller is a woman you don't know: to her you are pan."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "slucham",
+    "poprosze",
+    "cztery",
+    "dwa",
+    "pomidor",
+    "prosze",
+    "bardzo",
+    "cos-jeszcze",
+    "dwie",
+    "zolty",
+    "czerwony",
+    "papryka",
+    "bazylia",
+    "swiezy",
+    "czy",
+    "suszony",
+    "w-doniczce",
+    "a",
+    "banan",
+    "te",
+    "zielony",
+    "nie",
+    "dojrzaly",
+    "tak",
+    "to-wszystko",
+    "ile",
+    "placic-place",
+    "dwadziescia",
+    "zloty",
+    "dziekuje",
+    "do-widzenia"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry! Słucham?",
+      "meaning": {
+        "en": "Hello! What would you like?"
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry. Poproszę cztery pomidory.",
+          "meaning": {
+            "en": "Hello. I'd like four tomatoes, please."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Dzień dobry. Poproszę cztery pomidory.",
+            "Dzień dobry, poproszę cztery pomidory."
+          ]
+        },
+        {
+          "text": "Dzień dobry. Poproszę dwa pomidory.",
+          "meaning": {
+            "en": "Hello. I'd like two tomatoes, please."
+          },
+          "note": {
+            "en": "You need four tomatoes: *cztery pomidory*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Proszę bardzo. Coś jeszcze?",
+      "meaning": {
+        "en": "Here you are. Anything else?"
+      },
+      "replies": [
+        {
+          "text": "Dwie żółte papryki, proszę.",
+          "meaning": {
+            "en": "Two yellow peppers, please."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Dwie żółte papryki, proszę.",
+            "Poproszę dwie żółte papryki."
+          ]
+        },
+        {
+          "text": "Dwie czerwone papryki, proszę.",
+          "meaning": {
+            "en": "Two red peppers, please."
+          },
+          "note": {
+            "en": "You want yellow peppers: *dwie żółte papryki*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Bazylia świeża czy suszona?",
+      "meaning": {
+        "en": "Fresh or dried basil?"
+      },
+      "replies": [
+        {
+          "text": "Świeża, w doniczce.",
+          "meaning": {
+            "en": "Fresh, in a pot."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Świeża, w doniczce.",
+            "Świeża w doniczce, proszę."
+          ]
+        },
+        {
+          "text": "Suszona, proszę.",
+          "meaning": {
+            "en": "Dried, please."
+          },
+          "note": {
+            "en": "You want fresh basil in a pot: *świeża, w doniczce*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "A banany? Te zielone?",
+      "meaning": {
+        "en": "And bananas? These green ones?"
+      },
+      "replies": [
+        {
+          "text": "Nie, te dojrzałe, proszę.",
+          "meaning": {
+            "en": "No, the ripe ones, please."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Nie, te dojrzałe, proszę.",
+            "Nie, poproszę te dojrzałe."
+          ]
+        },
+        {
+          "text": "Tak, te zielone, proszę.",
+          "meaning": {
+            "en": "Yes, the green ones, please."
+          },
+          "note": {
+            "en": "You want ripe bananas, not green: *te dojrzałe*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Proszę bardzo. To wszystko?",
+      "meaning": {
+        "en": "Here you are. Is that all?"
+      },
+      "replies": [
+        {
+          "text": "Tak, to wszystko. Ile płacę?",
+          "meaning": {
+            "en": "Yes, that's all. How much is it?"
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Tak, to wszystko. Ile płacę?",
+            "Tak, to wszystko, ile płacę?"
+          ]
+        },
+        {
+          "text": "Nie, poproszę jeszcze cztery pomidory.",
+          "meaning": {
+            "en": "No, I'd like four more tomatoes, please."
+          },
+          "note": {
+            "en": "You have your four tomatoes already: say *to wszystko*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Dwadzieścia dwa złote.",
+      "meaning": {
+        "en": "Twenty-two złoty."
+      },
+      "replies": [
+        {
+          "text": "Proszę. Dziękuję, do widzenia!",
+          "meaning": {
+            "en": "Here you are. Thank you, goodbye!"
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Proszę. Dziękuję, do widzenia!",
+            "Proszę, dziękuję, do widzenia!"
+          ]
+        },
+        {
+          "text": "Dziękuję. Coś jeszcze?",
+          "meaning": {
+            "en": "Thank you. Anything else?"
+          },
+          "note": {
+            "en": "You are the customer: pay and say *dziękuję, do widzenia*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Dziękuję. Do widzenia!",
+      "meaning": {
+        "en": "Thank you. Goodbye!"
+      }
+    }
+  ]
+}

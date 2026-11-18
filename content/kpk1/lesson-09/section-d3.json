@@ -1,0 +1,419 @@
+{
+  "id": "kpk1-l09-d3",
+  "section": {
+    "letter": "D",
+    "heading": "Supermarket",
+    "meaning": {
+      "en": "The supermarket"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-d3-t01",
+      "before": "kpk1-l09-d3-e01",
+      "title": {
+        "en": "W supermarkecie"
+      },
+      "body": {
+        "en": "A Polish supermarket has aisles for *nabiał* (milk, cheese, yoghurt), *pieczywo* (bread and rolls), *mięso i wędliny*, *mrożonki* (frozen food), *słodycze* (sweets), *napoje* (drinks) and *alkohole*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d3-e01",
+      "prompt": "nabiał",
+      "options": [
+        {
+          "en": "bread and rolls; the bread aisle"
+        },
+        {
+          "en": "meat"
+        },
+        {
+          "en": "dairy (milk, cheese, yoghurt)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nabial"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d3-e02",
+      "prompt": "pieczywo",
+      "options": [
+        {
+          "en": "bread and rolls; the bread aisle"
+        },
+        {
+          "en": "dairy (milk, cheese, yoghurt)"
+        },
+        {
+          "en": "sweets, confectionery"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pieczywo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-d3-e03",
+      "text": "mleko to nabiał",
+      "meaning": {
+        "en": "milk is dairy"
+      },
+      "distractors": [
+        "ser to nabiał",
+        "chleb to pieczywo"
+      ],
+      "items": [
+        "mleko",
+        "to",
+        "nabial"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d3-e04",
+      "prompt": "mrożonki",
+      "options": [
+        {
+          "en": "sweets, confectionery"
+        },
+        {
+          "en": "frozen food"
+        },
+        {
+          "en": "drinks"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "mrozonki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d3-e05",
+      "prompt": "słodycze",
+      "options": [
+        {
+          "en": "frozen food"
+        },
+        {
+          "en": "dairy (milk, cheese, yoghurt)"
+        },
+        {
+          "en": "sweets, confectionery"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "slodycze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-d3-e06",
+      "prompt": {
+        "en": "bread is a baked good"
+      },
+      "acceptedAnswers": [
+        "chleb to pieczywo"
+      ],
+      "distractors": [
+        "nabiał",
+        "jest"
+      ],
+      "items": [
+        "chleb",
+        "to",
+        "pieczywo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d3-e07",
+      "prompt": "napoje",
+      "options": [
+        {
+          "en": "drinks"
+        },
+        {
+          "en": "alcoholic drinks"
+        },
+        {
+          "en": "food"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "napoje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d3-e08",
+      "prompt": "alkohole",
+      "options": [
+        {
+          "en": "drinks"
+        },
+        {
+          "en": "alcoholic drinks"
+        },
+        {
+          "en": "sweets, confectionery"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "alkohole"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-d3-e09",
+      "text": "Woda i sok to ___, a piwo i wino to ___.",
+      "meaning": {
+        "en": "Water and juice are drinks, and beer and wine are alcoholic drinks."
+      },
+      "gaps": [
+        [
+          "napoje"
+        ],
+        [
+          "alkohole"
+        ]
+      ],
+      "distractors": [
+        "słodycze",
+        "nabiał"
+      ],
+      "items": [
+        "woda",
+        "i",
+        "sok",
+        "to",
+        "napoje",
+        "a",
+        "piwo",
+        "wino",
+        "alkohole"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d3-e10",
+      "prompt": "czekolada",
+      "options": [
+        {
+          "en": "sweets, candy"
+        },
+        {
+          "en": "a biscuit, a small cake (ciastka: biscuits)"
+        },
+        {
+          "en": "chocolate"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czekolada"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-d3-e11",
+      "prompt": "cukierki",
+      "options": [
+        {
+          "en": "sweets, candy"
+        },
+        {
+          "en": "chocolate"
+        },
+        {
+          "en": "raisins"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cukierki"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-d3-e12",
+      "acceptedAnswers": [
+        "czekolada i cukierki to słodycze"
+      ],
+      "meaning": {
+        "en": "chocolate and sweets are confectionery"
+      },
+      "items": [
+        "czekolada",
+        "i",
+        "cukierki",
+        "to",
+        "slodycze"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-d3-e13",
+      "prompt": {
+        "en": "frozen food and sweets"
+      },
+      "acceptedAnswers": [
+        "mrożonki i słodycze",
+        "słodycze i mrożonki"
+      ],
+      "items": [
+        "mrozonki",
+        "i",
+        "slodycze"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-d3-e14",
+      "pairs": [
+        {
+          "polish": "nabiał",
+          "meaning": {
+            "en": "dairy"
+          }
+        },
+        {
+          "polish": "pieczywo",
+          "meaning": {
+            "en": "bread and rolls"
+          }
+        },
+        {
+          "polish": "mrożonki",
+          "meaning": {
+            "en": "frozen food"
+          }
+        },
+        {
+          "polish": "słodycze",
+          "meaning": {
+            "en": "sweets"
+          }
+        },
+        {
+          "polish": "napoje",
+          "meaning": {
+            "en": "drinks"
+          }
+        },
+        {
+          "polish": "czekolada",
+          "meaning": {
+            "en": "chocolate"
+          }
+        }
+      ],
+      "items": [
+        "nabial",
+        "pieczywo",
+        "mrozonki",
+        "slodycze",
+        "napoje",
+        "czekolada"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-d3-e15",
+      "lines": [
+        "W koszyku jest mleko i ser.",
+        "Jest też chleb i czekolada.",
+        "Nie ma piwa ani wina."
+      ],
+      "meaning": {
+        "en": "What's in the basket."
+      },
+      "statements": [
+        {
+          "text": "W koszyku jest nabiał.",
+          "meaning": {
+            "en": "There is dairy in the basket."
+          },
+          "true": true
+        },
+        {
+          "text": "W koszyku są alkohole.",
+          "meaning": {
+            "en": "There are alcoholic drinks in the basket."
+          },
+          "true": false
+        },
+        {
+          "text": "W koszyku są słodycze.",
+          "meaning": {
+            "en": "There are sweets in the basket."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "byc-jest",
+        "mleko",
+        "i",
+        "ser",
+        "tez",
+        "chleb",
+        "czekolada",
+        "nie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-d3-e16",
+      "prompt": {
+        "en": "wine and beer are alcoholic drinks"
+      },
+      "acceptedAnswers": [
+        "wino i piwo to alkohole",
+        "piwo i wino to alkohole"
+      ],
+      "items": [
+        "wino",
+        "i",
+        "piwo",
+        "to",
+        "alkohole"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-d3-e17",
+      "prompt": {
+        "en": "chocolate and sweets"
+      },
+      "acceptedAnswers": [
+        "czekolada i cukierki"
+      ],
+      "distractors": [
+        "czekoladę",
+        "cukierek"
+      ],
+      "items": [
+        "czekolada",
+        "i",
+        "cukierki"
+      ]
+    }
+  ]
+}

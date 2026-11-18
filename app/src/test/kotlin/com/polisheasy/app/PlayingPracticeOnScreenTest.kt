@@ -894,8 +894,8 @@ class PlayingPracticeOnScreenTest {
 
         val first = checkNotNull(sorting().question)
         shows(first.meaning)
-        // Only the meaning, which is all that holds the noun's letters when it is written the same (sport is "sport").
-        screen.onAllNodesWithText(first.polish).assertCountEquals(if (first.polish in first.meaning) 1 else 0)
+        // Only the meaning, which is the noun's letters when it is written the same (sport is "sport").
+        screen.onAllNodesWithText(first.polish).assertCountEquals(if (first.polish == first.meaning) 1 else 0)
         tapBucket(sorting().buckets.first { it.gender == first.gender }.word)
         shows(first.phrase)
         back()
@@ -1477,10 +1477,10 @@ class PlayingPracticeOnScreenTest {
         screen.onNodeWithText(text).assertIsDisplayed()
     }
 
-    /** Shows the noun [polish], which a [meaning] such as "sport" holds too: then it is on the screen twice. */
+    /** Shows the noun [polish], which a [meaning] such as "sport" may be too: then it is on the screen twice. A meaning that only holds it, "a pineapple (ananasy: pineapples)", is another text. */
     private fun showsNoun(polish: String, meaning: String) {
         val nodes = screen.onAllNodesWithText(polish)
-        nodes.assertCountEquals(if (polish in meaning) 2 else 1)
+        nodes.assertCountEquals(if (polish == meaning) 2 else 1)
         nodes[0].assertIsDisplayed()
     }
 

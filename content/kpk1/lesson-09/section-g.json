@@ -1,0 +1,417 @@
+{
+  "id": "kpk1-l09-g",
+  "section": {
+    "heading": "Ćwiczenia",
+    "meaning": {
+      "en": "Exercises"
+    },
+    "strands": [
+      "K",
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-g-t01",
+      "before": "kpk1-l09-g-e01",
+      "title": {
+        "en": "Jaka zupa? Jaki sok?"
+      },
+      "body": {
+        "en": "A soup or a juice is named by an adjective made from what is in it: *zupa grzybowa* (mushroom soup), *zupa cebulowa*, *zupa kalafiorowa*, *zupa jarzynowa*; *sok jabłkowy*, *sok malinowy*, *sok pomarańczowy*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-g-e01",
+      "prompt": "grzybowy",
+      "options": [
+        {
+          "en": "onion, made with onions (cebulowy, cebulowa, cebulowe)"
+        },
+        {
+          "en": "a vegetable, another word for warzywo (jarzyny: vegetables)"
+        },
+        {
+          "en": "mushroom, made with mushrooms (grzybowy, grzybowa, grzybowe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "grzybowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-g-e02",
+      "prompt": "cebulowy",
+      "options": [
+        {
+          "en": "onion, made with onions (cebulowy, cebulowa, cebulowe)"
+        },
+        {
+          "en": "cauliflower, made with cauliflower (kalafiorowy, kalafiorowa, kalafiorowe)"
+        },
+        {
+          "en": "mushroom, made with mushrooms (grzybowy, grzybowa, grzybowe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cebulowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-g-e03",
+      "prompt": "kalafiorowy",
+      "options": [
+        {
+          "en": "mushroom, made with mushrooms (grzybowy, grzybowa, grzybowe)"
+        },
+        {
+          "en": "cauliflower, made with cauliflower (kalafiorowy, kalafiorowa, kalafiorowe)"
+        },
+        {
+          "en": "onion, made with onions (cebulowy, cebulowa, cebulowe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kalafiorowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-g-e04",
+      "prompt": "zwykle",
+      "options": [
+        {
+          "en": "now"
+        },
+        {
+          "en": "today"
+        },
+        {
+          "en": "usually"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zwykle"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-g-e05",
+      "text": "zupa grzybowa",
+      "meaning": {
+        "en": "mushroom soup"
+      },
+      "distractors": [
+        "zupa cebulowa",
+        "zupa jarzynowa"
+      ],
+      "items": [
+        "zupa",
+        "grzybowy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-g-e06",
+      "prompt": {
+        "en": "onion soup"
+      },
+      "acceptedAnswers": [
+        "zupa cebulowa"
+      ],
+      "distractors": [
+        "cebulowy",
+        "rybna"
+      ],
+      "items": [
+        "zupa",
+        "cebulowy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-g-e07",
+      "text": "Zupa ___ jest dobra.",
+      "meaning": {
+        "en": "The cauliflower soup is good."
+      },
+      "gaps": [
+        [
+          "kalafiorowa"
+        ]
+      ],
+      "distractors": [
+        "kalafiorową",
+        "kalafiorowy"
+      ],
+      "items": [
+        "zupa",
+        "kalafiorowy",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-g-e08",
+      "pairs": [
+        {
+          "polish": "zupa grzybowa",
+          "meaning": {
+            "en": "mushroom soup"
+          }
+        },
+        {
+          "polish": "zupa cebulowa",
+          "meaning": {
+            "en": "onion soup"
+          }
+        },
+        {
+          "polish": "zupa kalafiorowa",
+          "meaning": {
+            "en": "cauliflower soup"
+          }
+        },
+        {
+          "polish": "zupa jarzynowa",
+          "meaning": {
+            "en": "vegetable soup"
+          }
+        },
+        {
+          "polish": "zupa rybna",
+          "meaning": {
+            "en": "fish soup"
+          }
+        },
+        {
+          "polish": "zwykle",
+          "meaning": {
+            "en": "usually"
+          }
+        }
+      ],
+      "items": [
+        "zupa",
+        "grzybowy",
+        "cebulowy",
+        "kalafiorowy",
+        "zupa-jarzynowa",
+        "zupa-rybna",
+        "zwykle"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-g-e09",
+      "text": "To są ___.",
+      "meaning": {
+        "en": "These are fruit."
+      },
+      "gaps": [
+        [
+          "owoce"
+        ]
+      ],
+      "distractors": [
+        "owoc",
+        "owocowe"
+      ],
+      "items": [
+        "to-sa",
+        "owoc"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-g-e10",
+      "lines": [
+        "Ewa i Adam są w supermarkecie.",
+        "Ewa kupuje ryby, a Adam owoce.",
+        "Mają też wodę mineralną."
+      ],
+      "meaning": {
+        "en": "Shopping together."
+      },
+      "statements": [
+        {
+          "text": "Ewa kupuje ryby.",
+          "meaning": {
+            "en": "Ewa is buying fish."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam kupuje warzywa.",
+          "meaning": {
+            "en": "Adam is buying vegetables."
+          },
+          "true": false
+        },
+        {
+          "text": "Oni są na targu.",
+          "meaning": {
+            "en": "They are at the market."
+          },
+          "true": false
+        }
+      ],
+      "listen": true,
+      "items": [
+        "ewa",
+        "i",
+        "adam",
+        "byc-sa",
+        "kupowac-kupuje-on",
+        "ryba",
+        "a",
+        "owoc",
+        "tez"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l09-g-e11",
+      "verb": "kupować",
+      "meaning": {
+        "en": "to buy"
+      },
+      "person": "my",
+      "sentence": "___ owoce na targu.",
+      "sentenceMeaning": {
+        "en": "We buy fruit at the market."
+      },
+      "acceptedAnswers": [
+        "kupujemy"
+      ],
+      "items": [
+        "kupowac-kupujemy",
+        "owoc",
+        "na-targu"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-g-e12",
+      "prompt": {
+        "en": "I prefer raw vegetables"
+      },
+      "acceptedAnswers": [
+        "wolę surowe warzywa"
+      ],
+      "distractors": [
+        "surowy",
+        "gotowane"
+      ],
+      "items": [
+        "wolec-wole",
+        "surowy",
+        "warzywa"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-g-e13",
+      "prompt": {
+        "en": "what do you usually buy at the market? (one friend)"
+      },
+      "acceptedAnswers": [
+        "co zwykle kupujesz na targu?"
+      ],
+      "items": [
+        "co",
+        "zwykle",
+        "kupowac-kupujesz",
+        "na-targu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-g-e14",
+      "acceptedAnswers": [
+        "mam cztery brzoskwinie"
+      ],
+      "meaning": {
+        "en": "I have four peaches"
+      },
+      "items": [
+        "miec-mam",
+        "cztery",
+        "brzoskwinia"
+      ],
+      "readingAnswers": [
+        "ja mam cztery brzoskwinie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-g-e15",
+      "prompt": {
+        "en": "these grapes are sweet"
+      },
+      "acceptedAnswers": [
+        "te winogrona są słodkie"
+      ],
+      "distractors": [
+        "słodki",
+        "ta"
+      ],
+      "items": [
+        "te",
+        "winogrona",
+        "byc-sa",
+        "slodki"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l09-g-e16",
+      "lines": [
+        "Co kupujesz?",
+        "Dwa kilo ziemniaków.",
+        "Na obiad?",
+        "Tak, na zupę."
+      ],
+      "meaning": {
+        "en": "At the market."
+      },
+      "items": [
+        "co",
+        "kupowac-kupujesz",
+        "dwa",
+        "kilo",
+        "na-obiad",
+        "tak",
+        "zupa-acc"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-g-e17",
+      "prompt": {
+        "en": "my favourite fruit is the peach"
+      },
+      "acceptedAnswers": [
+        "mój ulubiony owoc to brzoskwinia"
+      ],
+      "items": [
+        "moj",
+        "ulubiony",
+        "owoc",
+        "to",
+        "brzoskwinia"
+      ]
+    }
+  ]
+}

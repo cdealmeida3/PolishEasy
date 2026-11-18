@@ -1,0 +1,443 @@
+{
+  "id": "kpk1-l09-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Liczba mnoga",
+    "meaning": {
+      "en": "The plural"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-c2-t01",
+      "before": "kpk1-l09-c2-e01",
+      "title": {
+        "en": "Jakie?"
+      },
+      "body": {
+        "en": "An adjective with a plural thing ends in *-e*, whatever its gender: *dojrzałe pomidory*, *świeże ryby*, *zielone jabłka*. *Jakie są te banany?* *Te banany są dojrzałe.*"
+      },
+      "table": {
+        "title": {
+          "en": "Jakie? Plural"
+        },
+        "columns": [
+          {
+            "gender": "m"
+          },
+          {
+            "gender": "f"
+          },
+          {
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "header": "pojedyncza",
+            "cells": [
+              "dojrzały",
+              "świeża",
+              "zielone"
+            ]
+          },
+          {
+            "header": "mnoga",
+            "cells": [
+              "dojrzał[e]",
+              "śwież[e]",
+              "zielon[e]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-c2-e01",
+      "prompt": "lista zakupów",
+      "options": [
+        {
+          "en": "a shopping list"
+        },
+        {
+          "en": "a list"
+        },
+        {
+          "en": "shopping (robić zakupy: to do the shopping)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lista-zakupow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-c2-e02",
+      "prompt": "średni",
+      "options": [
+        {
+          "en": "big (duży, duża, duże)"
+        },
+        {
+          "en": "medium, medium-sized (średni, średnia, średnie)"
+        },
+        {
+          "en": "small (mały, mała, małe)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sredni"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-c2-e03",
+      "text": "dojrzałe pomidory",
+      "meaning": {
+        "en": "ripe tomatoes"
+      },
+      "distractors": [
+        "dojrzały pomidor",
+        "świeże pomidory"
+      ],
+      "items": [
+        "dojrzaly",
+        "pomidor"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-c2-e04",
+      "text": "Te ryby są ___.",
+      "meaning": {
+        "en": "These fish are fresh."
+      },
+      "gaps": [
+        [
+          "świeże"
+        ]
+      ],
+      "distractors": [
+        "świeży",
+        "świeża"
+      ],
+      "items": [
+        "te",
+        "ryba",
+        "byc-sa",
+        "swiezy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-c2-e05",
+      "prompt": {
+        "en": "two green apples"
+      },
+      "acceptedAnswers": [
+        "dwa zielone jabłka"
+      ],
+      "distractors": [
+        "zielony",
+        "dwie"
+      ],
+      "items": [
+        "dwa",
+        "zielony",
+        "jablko"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-c2-e06",
+      "text": "Dwie ___ papryki.",
+      "meaning": {
+        "en": "Two yellow peppers."
+      },
+      "gaps": [
+        [
+          "żółte"
+        ]
+      ],
+      "distractors": [
+        "żółta",
+        "żółty"
+      ],
+      "items": [
+        "dwie",
+        "zolty",
+        "papryka"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-c2-e07",
+      "acceptedAnswers": [
+        "trzy słodkie pomarańcze"
+      ],
+      "meaning": {
+        "en": "three sweet oranges"
+      },
+      "items": [
+        "trzy",
+        "slodki",
+        "pomarancza"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-c2-e08",
+      "prompt": {
+        "en": "three medium cucumbers"
+      },
+      "acceptedAnswers": [
+        "trzy średnie ogórki"
+      ],
+      "items": [
+        "trzy",
+        "sredni",
+        "ogorek"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-c2-e09",
+      "prompt": {
+        "en": "four dark beers"
+      },
+      "acceptedAnswers": [
+        "cztery ciemne piwa"
+      ],
+      "distractors": [
+        "ciemny",
+        "piwo"
+      ],
+      "items": [
+        "cztery",
+        "ciemny",
+        "piwo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-c2-e10",
+      "text": "Jakie są te ___?",
+      "meaning": {
+        "en": "What are these plums like?"
+      },
+      "gaps": [
+        [
+          "śliwki"
+        ]
+      ],
+      "distractors": [
+        "śliwka",
+        "śliwkę"
+      ],
+      "items": [
+        "jakie",
+        "byc-sa",
+        "te",
+        "sliwka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-c2-e11",
+      "pairs": [
+        {
+          "polish": "dojrzałe banany",
+          "meaning": {
+            "en": "ripe bananas"
+          }
+        },
+        {
+          "polish": "świeże ryby",
+          "meaning": {
+            "en": "fresh fish"
+          }
+        },
+        {
+          "polish": "zielone jabłka",
+          "meaning": {
+            "en": "green apples"
+          }
+        },
+        {
+          "polish": "słodkie maliny",
+          "meaning": {
+            "en": "sweet raspberries"
+          }
+        },
+        {
+          "polish": "średnie ogórki",
+          "meaning": {
+            "en": "medium cucumbers"
+          }
+        },
+        {
+          "polish": "lista zakupów",
+          "meaning": {
+            "en": "a shopping list"
+          }
+        }
+      ],
+      "items": [
+        "dojrzaly",
+        "banan",
+        "swiezy",
+        "ryba",
+        "zielony",
+        "jablko",
+        "slodki",
+        "malina",
+        "sredni",
+        "ogorek",
+        "lista-zakupow"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-c2-e12",
+      "prompt": {
+        "en": "the strawberries are sweet"
+      },
+      "acceptedAnswers": [
+        "truskawki są słodkie"
+      ],
+      "items": [
+        "truskawka",
+        "byc-sa",
+        "slodki"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-c2-e13",
+      "lines": [
+        "Lista zakupów: dwa zielone jabłka",
+        "dwie żółte papryki",
+        "trzy średnie ogórki"
+      ],
+      "meaning": {
+        "en": "A shopping list on the fridge."
+      },
+      "statements": [
+        {
+          "text": "Na liście są jabłka.",
+          "meaning": {
+            "en": "There are apples on the list."
+          },
+          "true": true
+        },
+        {
+          "text": "Papryki są czerwone.",
+          "meaning": {
+            "en": "The peppers are red."
+          },
+          "true": false
+        },
+        {
+          "text": "Ogórki są duże.",
+          "meaning": {
+            "en": "The cucumbers are big."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "lista-zakupow",
+        "dwa",
+        "zielony",
+        "jablko",
+        "dwie",
+        "zolty",
+        "papryka",
+        "trzy",
+        "sredni",
+        "ogorek"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-c2-e14",
+      "prompt": {
+        "en": "these cherries are sour"
+      },
+      "acceptedAnswers": [
+        "te wiśnie są kwaśne"
+      ],
+      "distractors": [
+        "ta",
+        "kwaśna"
+      ],
+      "items": [
+        "te",
+        "wisnia",
+        "byc-sa",
+        "kwasny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-c2-e15",
+      "prompt": {
+        "en": "one pear, two pears"
+      },
+      "acceptedAnswers": [
+        "jedna gruszka, dwie gruszki"
+      ],
+      "items": [
+        "jedna",
+        "gruszka",
+        "dwie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-c2-e16",
+      "text": "Jedno ___, dwa piwa.",
+      "meaning": {
+        "en": "One beer, two beers."
+      },
+      "gaps": [
+        [
+          "piwo"
+        ]
+      ],
+      "distractors": [
+        "piwa",
+        "piwem"
+      ],
+      "items": [
+        "jedno",
+        "piwo",
+        "dwa"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-c2-e17",
+      "text": "liczba mnoga",
+      "meaning": {
+        "en": "the plural"
+      },
+      "distractors": [
+        "lista zakupów",
+        "liczba"
+      ],
+      "items": [
+        "liczba-mnoga"
+      ]
+    }
+  ]
+}

@@ -166,15 +166,21 @@
       "id": "pomidor",
       "text": "pomidor",
       "meaning": {
-        "en": "a tomato"
-      }
+        "en": "a tomato (pomidory: tomatoes)"
+      },
+      "forms": [
+        "pomidory"
+      ]
     },
     {
       "id": "ogorek",
       "text": "ogórek",
       "meaning": {
-        "en": "a cucumber"
-      }
+        "en": "a cucumber (ogórki: cucumbers)"
+      },
+      "forms": [
+        "ogórki"
+      ]
     },
     {
       "id": "platki-sniadaniowe",
@@ -229,8 +235,11 @@
       "id": "cytryna",
       "text": "cytryna",
       "meaning": {
-        "en": "a lemon"
-      }
+        "en": "a lemon (cytryny: lemons)"
+      },
+      "forms": [
+        "cytryny"
+      ]
     },
     {
       "id": "sok-pomaranczowy",
@@ -481,36 +490,51 @@
       "id": "banan",
       "text": "banan",
       "meaning": {
-        "en": "a banana"
-      }
+        "en": "a banana (banany: bananas)"
+      },
+      "forms": [
+        "banany"
+      ]
     },
     {
       "id": "jablko",
       "text": "jabłko",
       "meaning": {
-        "en": "an apple"
-      }
+        "en": "an apple (jabłka: apples)"
+      },
+      "forms": [
+        "jabłka"
+      ]
     },
     {
       "id": "pomarancza",
       "text": "pomarańcza",
       "meaning": {
-        "en": "an orange (the fruit)"
-      }
+        "en": "an orange, the fruit (pomarańcze: oranges)"
+      },
+      "forms": [
+        "pomarańcze"
+      ]
     },
     {
       "id": "truskawka",
       "text": "truskawka",
       "meaning": {
-        "en": "a strawberry"
-      }
+        "en": "a strawberry (truskawki: strawberries)"
+      },
+      "forms": [
+        "truskawki"
+      ]
     },
     {
       "id": "malina",
       "text": "malina",
       "meaning": {
-        "en": "a raspberry"
-      }
+        "en": "a raspberry (maliny: raspberries)"
+      },
+      "forms": [
+        "maliny"
+      ]
     },
     {
       "id": "goracy",
@@ -685,8 +709,11 @@
       "id": "ryba",
       "text": "ryba",
       "meaning": {
-        "en": "a fish; fish (the food)"
-      }
+        "en": "a fish; fish, the food (ryby: fish, several)"
+      },
+      "forms": [
+        "ryby"
+      ]
     },
     {
       "id": "kotlet",

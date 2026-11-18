@@ -1,0 +1,388 @@
+{
+  "id": "kpk1-l09-a6",
+  "section": {
+    "letter": "A",
+    "heading": "Owoce i warzywa",
+    "meaning": {
+      "en": "Fruit and vegetables"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l09-a6-t01",
+      "before": "kpk1-l09-a6-e01",
+      "title": {
+        "en": "Mój ulubiony owoc"
+      },
+      "body": {
+        "en": "To say what your favourite fruit is like, give its *smak* (taste) and *kształt* (shape): *Truskawka jest mała, czerwona i słodka, trochę podłużna i miękka.* *Miękki* (soft) is the opposite of *twardy* (hard)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a6-e01",
+      "prompt": "kształt",
+      "options": [
+        {
+          "en": "a taste, a flavour"
+        },
+        {
+          "en": "a size"
+        },
+        {
+          "en": "a shape"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ksztalt"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a6-e02",
+      "prompt": "okrągły",
+      "options": [
+        {
+          "en": "round (okrągły, okrągła, okrągłe)"
+        },
+        {
+          "en": "oval (owalny, owalna, owalne)"
+        },
+        {
+          "en": "long, oblong (podłużny, podłużna, podłużne)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "okragly"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l09-a6-e03",
+      "text": "pomarańcza jest okrągła",
+      "meaning": {
+        "en": "the orange is round"
+      },
+      "distractors": [
+        "pomarańcza jest owalna",
+        "brzoskwinia jest okrągła"
+      ],
+      "items": [
+        "pomarancza",
+        "byc-jest",
+        "okragly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a6-e04",
+      "prompt": "owalny",
+      "options": [
+        {
+          "en": "round (okrągły, okrągła, okrągłe)"
+        },
+        {
+          "en": "oval (owalny, owalna, owalne)"
+        },
+        {
+          "en": "long, oblong (podłużny, podłużna, podłużne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "owalny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a6-e05",
+      "prompt": "podłużny",
+      "options": [
+        {
+          "en": "oval (owalny, owalna, owalne)"
+        },
+        {
+          "en": "big (duży, duża, duże)"
+        },
+        {
+          "en": "long, oblong (podłużny, podłużna, podłużne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "podluzny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-a6-e06",
+      "prompt": {
+        "en": "the banana is long and yellow"
+      },
+      "acceptedAnswers": [
+        "banan jest podłużny i żółty"
+      ],
+      "distractors": [
+        "podłużna",
+        "żółta"
+      ],
+      "items": [
+        "banan",
+        "byc-jest",
+        "podluzny",
+        "i",
+        "zolty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a6-e07",
+      "prompt": "miękki",
+      "options": [
+        {
+          "en": "soft (miękki, miękka, miękkie)"
+        },
+        {
+          "en": "hard (twardy, twarda, twarde)"
+        },
+        {
+          "en": "mild, delicate (delikatny, delikatna, delikatne)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "miekki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l09-a6-e08",
+      "prompt": "twardy",
+      "options": [
+        {
+          "en": "soft (miękki, miękka, miękkie)"
+        },
+        {
+          "en": "hard (twardy, twarda, twarde)"
+        },
+        {
+          "en": "hot, spicy; sharp (ostry, ostra, ostre)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "twardy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-a6-e09",
+      "text": "Brzoskwinia jest ___, a jabłko jest ___.",
+      "meaning": {
+        "en": "The peach is soft and the apple is hard."
+      },
+      "gaps": [
+        [
+          "miękka"
+        ],
+        [
+          "twarde"
+        ]
+      ],
+      "distractors": [
+        "miękki",
+        "twardy"
+      ],
+      "items": [
+        "brzoskwinia",
+        "byc-jest",
+        "miekki",
+        "a",
+        "jablko",
+        "twardy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l09-a6-e10",
+      "acceptedAnswers": [
+        "kiwi jest owalne"
+      ],
+      "meaning": {
+        "en": "the kiwi fruit is oval"
+      },
+      "items": [
+        "kiwi",
+        "byc-jest",
+        "owalny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l09-a6-e11",
+      "prompt": {
+        "en": "the watermelon is round"
+      },
+      "acceptedAnswers": [
+        "arbuz jest okrągły"
+      ],
+      "items": [
+        "arbuz",
+        "byc-jest",
+        "okragly"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l09-a6-e12",
+      "pairs": [
+        {
+          "polish": "okrągły",
+          "meaning": {
+            "en": "round"
+          }
+        },
+        {
+          "polish": "owalny",
+          "meaning": {
+            "en": "oval"
+          }
+        },
+        {
+          "polish": "podłużny",
+          "meaning": {
+            "en": "long"
+          }
+        },
+        {
+          "polish": "miękki",
+          "meaning": {
+            "en": "soft"
+          }
+        },
+        {
+          "polish": "twardy",
+          "meaning": {
+            "en": "hard"
+          }
+        },
+        {
+          "polish": "kształt",
+          "meaning": {
+            "en": "a shape"
+          }
+        }
+      ],
+      "items": [
+        "okragly",
+        "owalny",
+        "podluzny",
+        "miekki",
+        "twardy",
+        "ksztalt"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l09-a6-e13",
+      "lines": [
+        "Mój ulubiony owoc to truskawka.",
+        "Jest mała, czerwona i słodka.",
+        "Jest trochę podłużna i miękka."
+      ],
+      "meaning": {
+        "en": "My favourite fruit."
+      },
+      "statements": [
+        {
+          "text": "Truskawka jest duża.",
+          "meaning": {
+            "en": "The strawberry is big."
+          },
+          "true": false
+        },
+        {
+          "text": "Truskawka jest słodka.",
+          "meaning": {
+            "en": "The strawberry is sweet."
+          },
+          "true": true
+        },
+        {
+          "text": "Truskawka jest twarda.",
+          "meaning": {
+            "en": "The strawberry is hard."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "moj",
+        "ulubiony",
+        "owoc",
+        "to",
+        "truskawka",
+        "byc-jest",
+        "maly",
+        "czerwony",
+        "i",
+        "slodki",
+        "troche",
+        "podluzny",
+        "miekki"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l09-a6-e14",
+      "prompt": {
+        "en": "the pear is sweet and soft"
+      },
+      "acceptedAnswers": [
+        "gruszka jest słodka i miękka"
+      ],
+      "distractors": [
+        "słodki",
+        "twarda"
+      ],
+      "items": [
+        "gruszka",
+        "byc-jest",
+        "slodki",
+        "i",
+        "miekki"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l09-a6-e15",
+      "text": "Jaki ___ ma banan?",
+      "meaning": {
+        "en": "What shape is a banana?"
+      },
+      "gaps": [
+        [
+          "kształt"
+        ]
+      ],
+      "distractors": [
+        "smak",
+        "kolor"
+      ],
+      "items": [
+        "jaki",
+        "ksztalt",
+        "miec-ma",
+        "banan"
+      ]
+    }
+  ]
+}
