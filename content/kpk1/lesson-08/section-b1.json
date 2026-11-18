@@ -1,0 +1,412 @@
+{
+  "id": "kpk1-l08-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Obiad",
+    "meaning": {
+      "en": "Dinner"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-b1-t01",
+      "before": "kpk1-l08-b1-e01",
+      "title": {
+        "en": "Meals"
+      },
+      "body": {
+        "en": "Poles eat *śniadanie* (breakfast) *rano*, *obiad* (the main, hot meal) in the afternoon, and *kolacja* (supper) in the evening. Say what you eat with *na* and the accusative: *na śniadanie jem bułkę*, *co jesz na obiad?* *Obiad* has a *pierwsze danie* (often *zupa*) and a *drugie danie*, the main course."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b1-e01",
+      "prompt": "obiad",
+      "options": [
+        {
+          "en": "breakfast"
+        },
+        {
+          "en": "supper"
+        },
+        {
+          "en": "dinner, the main meal of the day"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "obiad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b1-e02",
+      "prompt": "na śniadanie",
+      "options": [
+        {
+          "en": "for breakfast"
+        },
+        {
+          "en": "for dinner"
+        },
+        {
+          "en": "in the morning"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-sniadanie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-b1-e03",
+      "text": "co jesz na śniadanie?",
+      "meaning": {
+        "en": "what do you eat for breakfast?"
+      },
+      "distractors": [
+        "co jesz na obiad?",
+        "co pijesz na śniadanie?"
+      ],
+      "items": [
+        "co",
+        "jesc-jesz",
+        "na-sniadanie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b1-e04",
+      "prompt": "na obiad",
+      "options": [
+        {
+          "en": "for breakfast"
+        },
+        {
+          "en": "for dinner"
+        },
+        {
+          "en": "dinner, the main meal of the day"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-obiad"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-b1-e05",
+      "prompt": {
+        "en": "what do you eat for dinner? (one friend)"
+      },
+      "acceptedAnswers": [
+        "co jesz na obiad?"
+      ],
+      "distractors": [
+        "śniadanie",
+        "jem"
+      ],
+      "items": [
+        "co",
+        "jesc-jesz",
+        "na-obiad"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-b1-e06",
+      "prompt": {
+        "en": "dinner is good"
+      },
+      "acceptedAnswers": [
+        "obiad jest dobry"
+      ],
+      "items": [
+        "obiad",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b1-e07",
+      "prompt": "zupa",
+      "options": [
+        {
+          "en": "a sauce"
+        },
+        {
+          "en": "pasta"
+        },
+        {
+          "en": "soup"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zupa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b1-e08",
+      "prompt": "pierwsze danie",
+      "options": [
+        {
+          "en": "the first course (often soup)"
+        },
+        {
+          "en": "the main course"
+        },
+        {
+          "en": "dinner, the main meal of the day"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pierwsze-danie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b1-e09",
+      "prompt": "drugie danie",
+      "options": [
+        {
+          "en": "the first course (often soup)"
+        },
+        {
+          "en": "the main course"
+        },
+        {
+          "en": "breakfast"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "drugie-danie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-b1-e10",
+      "text": "Pierwsze danie to ___.",
+      "meaning": {
+        "en": "The first course is soup."
+      },
+      "gaps": [
+        [
+          "zupa"
+        ]
+      ],
+      "distractors": [
+        "zupę",
+        "sos"
+      ],
+      "items": [
+        "pierwsze-danie",
+        "to",
+        "zupa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b1-e11",
+      "prompt": "kurczak",
+      "options": [
+        {
+          "en": "a fish; fish (the food)"
+        },
+        {
+          "en": "cheese"
+        },
+        {
+          "en": "a chicken; chicken (the meat)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kurczak"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b1-e12",
+      "prompt": "ziemniaki",
+      "options": [
+        {
+          "en": "potatoes"
+        },
+        {
+          "en": "chips, French fries"
+        },
+        {
+          "en": "a tomato"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ziemniaki"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-b1-e13",
+      "acceptedAnswers": [
+        "na obiad jest zupa"
+      ],
+      "meaning": {
+        "en": "there is soup for dinner"
+      },
+      "items": [
+        "na-obiad",
+        "byc-jest",
+        "zupa"
+      ],
+      "readingAnswers": [
+        "zupa jest na obiad"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-b1-e14",
+      "prompt": {
+        "en": "chicken and potatoes"
+      },
+      "acceptedAnswers": [
+        "kurczak i ziemniaki"
+      ],
+      "items": [
+        "kurczak",
+        "i",
+        "ziemniaki"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-b1-e15",
+      "prompt": {
+        "en": "the main course is chicken"
+      },
+      "acceptedAnswers": [
+        "drugie danie to kurczak"
+      ],
+      "distractors": [
+        "pierwsze",
+        "zupa"
+      ],
+      "items": [
+        "drugie-danie",
+        "to",
+        "kurczak"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-b1-e16",
+      "pairs": [
+        {
+          "polish": "obiad",
+          "meaning": {
+            "en": "dinner"
+          }
+        },
+        {
+          "polish": "na śniadanie",
+          "meaning": {
+            "en": "for breakfast"
+          }
+        },
+        {
+          "polish": "na obiad",
+          "meaning": {
+            "en": "for dinner"
+          }
+        },
+        {
+          "polish": "zupa",
+          "meaning": {
+            "en": "soup"
+          }
+        },
+        {
+          "polish": "kurczak",
+          "meaning": {
+            "en": "chicken"
+          }
+        },
+        {
+          "polish": "ziemniaki",
+          "meaning": {
+            "en": "potatoes"
+          }
+        }
+      ],
+      "items": [
+        "obiad",
+        "na-sniadanie",
+        "na-obiad",
+        "zupa",
+        "kurczak",
+        "ziemniaki"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-b1-e17",
+      "lines": [
+        "Na obiad Ewa gotuje zupę.",
+        "Drugie danie to kurczak i ziemniaki.",
+        "Na śniadanie Ewa je jogurt."
+      ],
+      "meaning": {
+        "en": "Ewa's day."
+      },
+      "statements": [
+        {
+          "text": "Pierwsze danie to zupa.",
+          "meaning": {
+            "en": "The first course is soup."
+          },
+          "true": true
+        },
+        {
+          "text": "Drugie danie to zupa.",
+          "meaning": {
+            "en": "The main course is soup."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa je jogurt na obiad.",
+          "meaning": {
+            "en": "Ewa eats a yoghurt for dinner."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "na-obiad",
+        "ewa",
+        "gotowac-gotuje-on",
+        "zupa-acc",
+        "drugie-danie",
+        "to",
+        "kurczak",
+        "i",
+        "ziemniaki",
+        "na-sniadanie",
+        "jesc-je",
+        "jogurt"
+      ]
+    }
+  ]
+}

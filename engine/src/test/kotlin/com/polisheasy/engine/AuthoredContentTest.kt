@@ -227,7 +227,7 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
@@ -236,7 +236,8 @@ class AuthoredContentTest {
                 listOf(6, 7, 4, 4, 7, 6, 4, 8, 0, 5, 7, 0) + listOf(8, 8, 7, 4, 8, 8, 6, 8, 4, 0) +
                 listOf(8, 8, 8, 7, 8, 8, 8, 8, 8, 0) + listOf(3, 5, 5, 7, 7, 8, 8, 8, 6, 6, 4, 8, 8, 0) +
                 listOf(7, 7, 6, 8, 3, 6, 8, 8, 7, 7, 5, 8, 8, 7, 8, 8, 5) +
-                listOf(8, 8, 8, 8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 8, 0),
+                listOf(8, 8, 8, 8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 8, 0) +
+                listOf(8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 0),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -282,8 +283,10 @@ class AuthoredContentTest {
         assertEquals(17, book[6].sections)
         assertEquals("Małe zakupy", book[7].title)
         assertEquals(15, book[7].sections)
-        assertTrue(book.take(8).none { it.coming })
-        assertTrue(book.drop(8).all { it.coming })
+        assertEquals("Mami, jesteś głodna?", book[8].title)
+        assertEquals(17, book[8].sections)
+        assertTrue(book.take(9).none { it.coming })
+        assertTrue(book.drop(9).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -647,11 +650,13 @@ class AuthoredContentTest {
     @Test
     fun `mój, moja, moje, twój, twoja and twoje agree with the gender of the noun after them`() {
         val masculine = setOf("brat", "tata", "syn", "mąż", "dziadek", "problem", "numer", "czas", "chłopak", "adres", "plecak", "słownik", "kolega", "gospodarz", "kot")
-        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna", "torba", "koleżanka", "dentystka", "gospodyni")
+        val feminine = setOf("mama", "siostra", "córka", "żona", "babcia", "rodzina", "dziewczyna", "torba", "koleżanka", "dentystka", "gospodyni", "potrawa")
         val neuter = setOf("dziecko", "pytanie", "rodzeństwo", "hobby")
         val possessives = mapOf(
             "mój" to masculine, "twój" to masculine, "moja" to feminine, "twoja" to feminine, "moje" to neuter, "twoje" to neuter,
         )
+        val adjectives = course.items.filter { it.forms.size == 2 && (it.text.endsWith("y") || it.text.endsWith("i")) }
+            .flatMap { listOf(it.text) + it.forms }.toSet()
         possessives.keys.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
         assertTrue(
             dailySetIntroducing("mój").tips.any { tip -> lowerCaseWords(tip.body.getValue("en")).containsAll(setOf("mój", "moja")) },
@@ -662,7 +667,9 @@ class AuthoredContentTest {
         spokenSentences.filter { it.size > 1 }.forEach { sentence ->
             sentence.forEachIndexed { index, word ->
                 val nouns = possessives[word] ?: return@forEachIndexed
-                val noun = sentence.getOrNull(index + 1) ?: return@forEachIndexed
+                // An adjective may come between: moja ulubiona potrawa.
+                val next = sentence.getOrNull(index + 1) ?: return@forEachIndexed
+                val noun = if (next in adjectives) sentence.getOrNull(index + 2) ?: return@forEachIndexed else next
                 assertTrue(noun in nouns, "\"${sentence.joinToString(" ")}\" has $word before $noun")
                 used += word
             }

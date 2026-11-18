@@ -173,3 +173,22 @@ It gives the later chapters:
 - the numbers to 1000.
 
 It leaves for later: the genitive after *nie ma* (*nie ma kantoru*, *nie mam pieniędzy* are learned as phrases), the locative of shops (*w drogerii*, *w supermarkecie* are Items), and the accusative plural.
+
+## Chapter 8: Mami, jesteś głodna?
+
+Book pages 66 to 73 (pages 72 and 73 are missing from the spreads; a frame of them is `teacher-course/pages-extra/lesson-08-pages-72-73.jpg` in the project files), recordings 093 to 102. Seventeen parts, 288 Exercises and 128 new Items.
+
+- **A** *Śniadanie*, in ten: Saturday morning (16, *spać*'s table and a Tip on *już* and *jeszcze*: *głodny*, *śniadanie*, *rano*, *śpię*, *śpisz*, *śpią*); bread and milk (18: *chleb*, *jasny*, *ciemny*, *bułka*, *bułkę*, *ser*, *masło*, *mleko*); more for breakfast (17: *jogurt*, *dżem*, *miód*, *jajko*, *szynka*, *pomidor*, *ogórek*, *płatki śniadaniowe*); *woleć* (18, its table: *wolisz*, *niż*, *kakao*, *cukier*, *sól*, *pieprz*, *cytryna*, *sok pomarańczowy*); *jeść* and *pić* (18, both tables: *jem*, *jesz*, *je*, *piję*, *pijesz*, *pije*); *z czym?* (17, a table of the instrumental after *z* and a *Zapamiętaj!* of *z cukrem ≠ bez cukru*: *z masłem*, *z dżemem*, *z szynką*, *z cytryną*, *z mlekiem*, *z cukrem*, *bez cukru*, *bez mleka*); the table (17: *talerz*, *nóż*, *widelec*, *łyżka*, *łyżeczka*, *wędlina*, *kiełbasa*, *na przykład*); eggs (17: *jajecznica*, *omlet*, *mam ochotę na*, *chętnie*, *na miękko*, *na twardo*, *późno*); fruit (16: *owoc*, *banan*, *jabłko*, *pomarańcza*, *truskawka*, *malina*, *gorący*, *zimny*); and adjectives made from food (16, a table: *naturalny*, *owocowy*, *truskawkowy*, *malinowy*, *jabłkowy*, *ciasto*, *mocny*, *słaby*).
+- **B** *Obiad*, in four: meals (17: *obiad*, *na śniadanie*, *na obiad*, *zupa*, *pierwsze danie*, *drugie danie*, *kurczak*, *ziemniaki*); the main course (16: *mięso*, *ryba*, *kotlet*, *sos*, *kasza*, *surówka*, *tłusty*, *chudy*); a favourite dish (17: *sałata*, *sałatka*, *frytki*, *warzywa*, *ulubiony*, *potrawa*, *owoce morza*, *jedzenie*); and pizza with the instrumental plural (16, a table of *-ami*: *oliwki*, *grzyby*, *pieczarki*, *brokuły*, *z oliwkami*, *z pieczarkami*, *z frytkami*, *z warzywami*).
+- **C** *Kolacja*, in two: supper at the neighbours' (18, *zapraszać*'s table: *kolacja*, *na kolację*, *zapraszamy*, *sałatka jarzynowa*, *tost*, *grzanka*, *pyszny*, *smaczny*); and a snack bar (18, *zamawiać*'s table: *bar*, *zamawiam*, *zamawiają*, *wino*, *wytrawny*, *słodki*, *wieczorem*, *po południu*).
+- *Ćwiczenia* (16): the accusative or the instrumental (*jem chleb z masłem*), *jeść* and *pić*, opposites, the meals of the day.
+
+The phrases with *z* and *bez* are Items of their own (*z masłem*, *z cytryną*, *bez cukru*), as the case forms were in chapter 7; *mam ochotę na* carries *masz ochotę na* and *ma ochotę na* as its forms. There are 42 listening tasks on all 10 recordings (094 and 098 are word lists), and one Chat: *Breakfast with a friend* (Karolina, informal: brown bread with butter and ham, tea with lemon and no sugar, a hard-boiled egg). The new nouns are in Practice's `genders`, *jasny / ciemny*, *mocny / słaby*, *tłusty / chudy* and *gorący / zimny* are in `opposites`, and 32 Items have pictures (the food, the drinks, a knife and a spoon).
+
+It gives the later chapters:
+
+- *jeść*, *pić*, *woleć* and *spać*, and *mam ochotę na* with the accusative;
+- the instrumental after *z*, singular and plural, and *bez* as phrases;
+- the meals, *na śniadanie / obiad / kolację*, and the times of day *rano*, *po południu*, *wieczorem*.
+
+It leaves for later: the genitive after *bez* as a rule (*bez cukru* and *bez mleka* are Items), the accusative of masculine animate food (*jem kurczaka*), and adjectives in the instrumental (*z czarnymi oliwkami* is only in a Tip).

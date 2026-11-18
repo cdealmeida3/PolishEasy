@@ -1,0 +1,410 @@
+{
+  "id": "kpk1-l08-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Śniadanie",
+    "meaning": {
+      "en": "Breakfast"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-a3-t01",
+      "before": "kpk1-l08-a3-e01",
+      "title": {
+        "en": "More for breakfast"
+      },
+      "body": {
+        "en": "On a breakfast table there is often *dżem* (jam), *miód* (honey), *jajka* (eggs), *szynka* (ham), a *pomidor* and an *ogórek*. *Płatki śniadaniowe* are breakfast cereal, eaten with *mleko* or a *jogurt*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a3-e01",
+      "prompt": "jogurt",
+      "options": [
+        {
+          "en": "milk"
+        },
+        {
+          "en": "a yoghurt"
+        },
+        {
+          "en": "cheese"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jogurt"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a3-e02",
+      "prompt": "dżem",
+      "options": [
+        {
+          "en": "honey"
+        },
+        {
+          "en": "butter"
+        },
+        {
+          "en": "jam"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dzem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a3-e03",
+      "prompt": "miód",
+      "options": [
+        {
+          "en": "honey"
+        },
+        {
+          "en": "jam"
+        },
+        {
+          "en": "sugar"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "miod"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a3-e04",
+      "text": "dżem i miód",
+      "meaning": {
+        "en": "jam and honey"
+      },
+      "distractors": [
+        "dżem i masło",
+        "ser i miód"
+      ],
+      "items": [
+        "dzem",
+        "i",
+        "miod"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a3-e05",
+      "prompt": "jajko",
+      "options": [
+        {
+          "en": "cheese"
+        },
+        {
+          "en": "an egg (jajka: eggs)"
+        },
+        {
+          "en": "a tomato"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jajko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a3-e06",
+      "prompt": "szynka",
+      "options": [
+        {
+          "en": "a sausage"
+        },
+        {
+          "en": "cheese"
+        },
+        {
+          "en": "ham"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szynka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a3-e07",
+      "prompt": {
+        "en": "the ham is good"
+      },
+      "acceptedAnswers": [
+        "szynka jest dobra"
+      ],
+      "distractors": [
+        "dobry",
+        "ser"
+      ],
+      "items": [
+        "szynka",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a3-e08",
+      "prompt": "pomidor",
+      "options": [
+        {
+          "en": "a tomato"
+        },
+        {
+          "en": "a cucumber"
+        },
+        {
+          "en": "an apple"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pomidor"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a3-e09",
+      "prompt": "ogórek",
+      "options": [
+        {
+          "en": "a tomato"
+        },
+        {
+          "en": "a cucumber"
+        },
+        {
+          "en": "a lettuce"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ogorek"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-a3-e10",
+      "text": "Pomidor jest ___, a ogórek jest ___.",
+      "meaning": {
+        "en": "The tomato is red and the cucumber is green."
+      },
+      "gaps": [
+        [
+          "czerwony"
+        ],
+        [
+          "zielony"
+        ]
+      ],
+      "distractors": [
+        "czerwona",
+        "zielona"
+      ],
+      "items": [
+        "pomidor",
+        "byc-jest",
+        "czerwony",
+        "a",
+        "ogorek",
+        "zielony"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a3-e11",
+      "prompt": {
+        "en": "a tomato and a cucumber"
+      },
+      "acceptedAnswers": [
+        "pomidor i ogórek"
+      ],
+      "distractors": [
+        "jajko",
+        "ser"
+      ],
+      "items": [
+        "pomidor",
+        "i",
+        "ogorek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a3-e12",
+      "prompt": "płatki śniadaniowe",
+      "options": [
+        {
+          "en": "rice"
+        },
+        {
+          "en": "bread"
+        },
+        {
+          "en": "breakfast cereal"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "platki-sniadaniowe"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-a3-e13",
+      "acceptedAnswers": [
+        "lubię płatki śniadaniowe"
+      ],
+      "meaning": {
+        "en": "I like breakfast cereal"
+      },
+      "items": [
+        "lubic-lubie",
+        "platki-sniadaniowe"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a3-e14",
+      "prompt": {
+        "en": "breakfast cereal and milk"
+      },
+      "acceptedAnswers": [
+        "płatki śniadaniowe i mleko",
+        "mleko i płatki śniadaniowe"
+      ],
+      "items": [
+        "platki-sniadaniowe",
+        "i",
+        "mleko"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a3-e15",
+      "prompt": {
+        "en": "the yoghurt is good"
+      },
+      "acceptedAnswers": [
+        "jogurt jest dobry"
+      ],
+      "items": [
+        "jogurt",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-a3-e16",
+      "pairs": [
+        {
+          "polish": "jogurt",
+          "meaning": {
+            "en": "a yoghurt"
+          }
+        },
+        {
+          "polish": "dżem",
+          "meaning": {
+            "en": "jam"
+          }
+        },
+        {
+          "polish": "miód",
+          "meaning": {
+            "en": "honey"
+          }
+        },
+        {
+          "polish": "jajko",
+          "meaning": {
+            "en": "an egg"
+          }
+        },
+        {
+          "polish": "szynka",
+          "meaning": {
+            "en": "ham"
+          }
+        },
+        {
+          "polish": "ogórek",
+          "meaning": {
+            "en": "a cucumber"
+          }
+        }
+      ],
+      "items": [
+        "jogurt",
+        "dzem",
+        "miod",
+        "jajko",
+        "szynka",
+        "ogorek"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-a3-e17",
+      "lines": [
+        "Tu jest dżem.",
+        "Tam jest miód.",
+        "Jajka są tutaj."
+      ],
+      "meaning": {
+        "en": "Laying the breakfast table."
+      },
+      "statements": [
+        {
+          "text": "Miód jest tam.",
+          "meaning": {
+            "en": "The honey is there."
+          },
+          "true": true
+        },
+        {
+          "text": "Dżem jest tam.",
+          "meaning": {
+            "en": "The jam is there."
+          },
+          "true": false
+        },
+        {
+          "text": "Tu są jajka.",
+          "meaning": {
+            "en": "The eggs are here."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "tu",
+        "byc-jest",
+        "dzem",
+        "tam",
+        "miod",
+        "jajko",
+        "byc-sa",
+        "tutaj"
+      ]
+    }
+  ]
+}

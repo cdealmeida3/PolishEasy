@@ -1,0 +1,416 @@
+{
+  "id": "kpk1-l08-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Obiad",
+    "meaning": {
+      "en": "Dinner"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-b3-t01",
+      "before": "kpk1-l08-b3-e01",
+      "title": {
+        "en": "Ulubiona potrawa"
+      },
+      "body": {
+        "en": "*Ulubiony* is favourite: *moja ulubiona potrawa* (my favourite dish). *Potrawa* and *danie* both mean a dish. *Sałata* is lettuce, but a *sałatka* is a salad. *Owoce morza* (fruit of the sea) are seafood."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b3-e01",
+      "prompt": "sałata",
+      "options": [
+        {
+          "en": "lettuce"
+        },
+        {
+          "en": "a salad"
+        },
+        {
+          "en": "a cucumber"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "salata"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b3-e02",
+      "prompt": "sałatka",
+      "options": [
+        {
+          "en": "lettuce"
+        },
+        {
+          "en": "a salad"
+        },
+        {
+          "en": "soup"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "salatka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-b3-e03",
+      "text": "sałatka jest dobra",
+      "meaning": {
+        "en": "the salad is good"
+      },
+      "distractors": [
+        "sałata jest dobra",
+        "zupa jest dobra"
+      ],
+      "items": [
+        "salatka",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-b3-e04",
+      "prompt": {
+        "en": "the lettuce is green"
+      },
+      "acceptedAnswers": [
+        "sałata jest zielona"
+      ],
+      "items": [
+        "salata",
+        "byc-jest",
+        "zielony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b3-e05",
+      "prompt": "frytki",
+      "options": [
+        {
+          "en": "potatoes"
+        },
+        {
+          "en": "groats (buckwheat, barley…)"
+        },
+        {
+          "en": "chips, French fries"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "frytki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b3-e06",
+      "prompt": "warzywa",
+      "options": [
+        {
+          "en": "vegetables"
+        },
+        {
+          "en": "a fruit (owoce: fruit, several)"
+        },
+        {
+          "en": "meat"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "warzywa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-b3-e07",
+      "prompt": {
+        "en": "fish and chips"
+      },
+      "acceptedAnswers": [
+        "ryba i frytki"
+      ],
+      "distractors": [
+        "ryż",
+        "sałata"
+      ],
+      "items": [
+        "ryba",
+        "i",
+        "frytki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b3-e08",
+      "prompt": "ulubiony",
+      "options": [
+        {
+          "en": "good (dobry, dobra, dobre)"
+        },
+        {
+          "en": "favourite (ulubiony, ulubiona, ulubione)"
+        },
+        {
+          "en": "popular (popularny, popularna, popularne)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ulubiony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b3-e09",
+      "prompt": "potrawa",
+      "options": [
+        {
+          "en": "the first course (often soup)"
+        },
+        {
+          "en": "supper, the evening meal"
+        },
+        {
+          "en": "a dish"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "potrawa"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-b3-e10",
+      "text": "To moja ___ potrawa.",
+      "meaning": {
+        "en": "This is my favourite dish."
+      },
+      "gaps": [
+        [
+          "ulubiona"
+        ]
+      ],
+      "distractors": [
+        "ulubiony",
+        "ulubione"
+      ],
+      "items": [
+        "to",
+        "moja",
+        "ulubiony",
+        "potrawa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b3-e11",
+      "prompt": "owoce morza",
+      "options": [
+        {
+          "en": "seafood"
+        },
+        {
+          "en": "a fruit (owoce: fruit, several)"
+        },
+        {
+          "en": "a fish; fish (the food)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "owoce-morza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-b3-e12",
+      "prompt": "jedzenie",
+      "options": [
+        {
+          "en": "dinner, the main meal of the day"
+        },
+        {
+          "en": "food"
+        },
+        {
+          "en": "a dish"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jedzenie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-b3-e13",
+      "acceptedAnswers": [
+        "lubię polskie jedzenie"
+      ],
+      "meaning": {
+        "en": "I like Polish food"
+      },
+      "items": [
+        "lubic-lubie",
+        "polski",
+        "jedzenie"
+      ],
+      "readingAnswers": [
+        "ja lubię polskie jedzenie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-b3-e14",
+      "prompt": {
+        "en": "the food is good"
+      },
+      "acceptedAnswers": [
+        "jedzenie jest dobre"
+      ],
+      "distractors": [
+        "dobry",
+        "obiad"
+      ],
+      "items": [
+        "jedzenie",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-b3-e15",
+      "prompt": {
+        "en": "vegetables are healthy"
+      },
+      "acceptedAnswers": [
+        "warzywa są zdrowe"
+      ],
+      "items": [
+        "warzywa",
+        "byc-sa",
+        "zdrowy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-b3-e16",
+      "pairs": [
+        {
+          "polish": "sałata",
+          "meaning": {
+            "en": "lettuce"
+          }
+        },
+        {
+          "polish": "sałatka",
+          "meaning": {
+            "en": "a salad"
+          }
+        },
+        {
+          "polish": "frytki",
+          "meaning": {
+            "en": "chips"
+          }
+        },
+        {
+          "polish": "ulubiony",
+          "meaning": {
+            "en": "favourite"
+          }
+        },
+        {
+          "polish": "owoce morza",
+          "meaning": {
+            "en": "seafood"
+          }
+        },
+        {
+          "polish": "warzywa",
+          "meaning": {
+            "en": "vegetables"
+          }
+        }
+      ],
+      "items": [
+        "salata",
+        "salatka",
+        "frytki",
+        "ulubiony",
+        "owoce-morza",
+        "warzywa"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-b3-e17",
+      "lines": [
+        "Moja ulubiona potrawa to ryba i frytki.",
+        "Lubię też owoce morza.",
+        "Sałatka jest dobra, ale wolę frytki."
+      ],
+      "meaning": {
+        "en": "Angela talks about food."
+      },
+      "statements": [
+        {
+          "text": "Jej ulubiona potrawa to ryba i frytki.",
+          "meaning": {
+            "en": "Her favourite dish is fish and chips."
+          },
+          "true": true
+        },
+        {
+          "text": "Ona lubi owoce morza.",
+          "meaning": {
+            "en": "She likes seafood."
+          },
+          "true": true
+        },
+        {
+          "text": "Sałatka nie jest dobra.",
+          "meaning": {
+            "en": "The salad is not good."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "moja",
+        "ulubiony",
+        "potrawa",
+        "to",
+        "ryba",
+        "i",
+        "frytki",
+        "lubic-lubie",
+        "tez",
+        "owoce-morza",
+        "salatka",
+        "byc-jest",
+        "dobry",
+        "ale",
+        "wolec-wole"
+      ]
+    }
+  ]
+}

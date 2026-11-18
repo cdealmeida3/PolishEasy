@@ -1,0 +1,416 @@
+{
+  "id": "kpk1-l08-a7",
+  "section": {
+    "letter": "A",
+    "heading": "Śniadanie",
+    "meaning": {
+      "en": "Breakfast"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-a7-t01",
+      "before": "kpk1-l08-a7-e01",
+      "title": {
+        "en": "Na stole"
+      },
+      "body": {
+        "en": "Lay the table with a *talerz* (plate), a *nóż* (knife), a *widelec* (fork) and a *łyżka* (spoon); a *łyżeczka* is a small spoon for tea. *Wędlina* is cold meat: *na przykład* (for example) *szynka*, *kiełbasa* or *salami*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a7-e01",
+      "prompt": "talerz",
+      "options": [
+        {
+          "en": "a plate"
+        },
+        {
+          "en": "a mug"
+        },
+        {
+          "en": "a bowl"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "talerz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a7-e02",
+      "prompt": "nóż",
+      "options": [
+        {
+          "en": "a fork"
+        },
+        {
+          "en": "a knife"
+        },
+        {
+          "en": "a spoon"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "noz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a7-e03",
+      "prompt": "widelec",
+      "options": [
+        {
+          "en": "a knife"
+        },
+        {
+          "en": "a teaspoon"
+        },
+        {
+          "en": "a fork"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "widelec"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a7-e04",
+      "text": "to jest nóż, a to jest widelec",
+      "meaning": {
+        "en": "this is a knife, and this is a fork"
+      },
+      "distractors": [
+        "to jest widelec, a to jest łyżka",
+        "to jest nóż, a to jest łyżka"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "noz",
+        "a",
+        "widelec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a7-e05",
+      "prompt": "łyżka",
+      "options": [
+        {
+          "en": "a spoon"
+        },
+        {
+          "en": "a teaspoon"
+        },
+        {
+          "en": "a fork"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lyzka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a7-e06",
+      "prompt": "łyżeczka",
+      "options": [
+        {
+          "en": "a spoon"
+        },
+        {
+          "en": "a teaspoon"
+        },
+        {
+          "en": "a knife"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "lyzeczka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a7-e07",
+      "text": "łyżka i łyżeczka",
+      "meaning": {
+        "en": "a spoon and a teaspoon"
+      },
+      "distractors": [
+        "łyżka i widelec",
+        "nóż i łyżeczka"
+      ],
+      "items": [
+        "lyzka",
+        "i",
+        "lyzeczka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a7-e08",
+      "prompt": {
+        "en": "the plate is white"
+      },
+      "acceptedAnswers": [
+        "talerz jest biały"
+      ],
+      "distractors": [
+        "biała",
+        "kubek"
+      ],
+      "items": [
+        "talerz",
+        "byc-jest",
+        "bialy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a7-e09",
+      "prompt": "wędlina",
+      "options": [
+        {
+          "en": "cheese"
+        },
+        {
+          "en": "vegetables"
+        },
+        {
+          "en": "cold meat (ham, sausage, salami)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wedlina"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a7-e10",
+      "prompt": "kiełbasa",
+      "options": [
+        {
+          "en": "a sausage"
+        },
+        {
+          "en": "ham"
+        },
+        {
+          "en": "cheese"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kielbasa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a7-e11",
+      "prompt": "na przykład",
+      "options": [
+        {
+          "en": "for breakfast"
+        },
+        {
+          "en": "for example"
+        },
+        {
+          "en": "maybe"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-przyklad"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-a7-e12",
+      "text": "Wędlina to na przykład ___ albo kiełbasa.",
+      "meaning": {
+        "en": "Cold meat is, for example, ham or sausage."
+      },
+      "gaps": [
+        [
+          "szynka"
+        ]
+      ],
+      "distractors": [
+        "szynkę",
+        "ser"
+      ],
+      "items": [
+        "wedlina",
+        "to",
+        "na-przyklad",
+        "szynka",
+        "albo",
+        "kielbasa"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-a7-e13",
+      "acceptedAnswers": [
+        "kiełbasa jest dobra"
+      ],
+      "meaning": {
+        "en": "the sausage is good"
+      },
+      "items": [
+        "kielbasa",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a7-e14",
+      "prompt": {
+        "en": "a knife and a fork"
+      },
+      "acceptedAnswers": [
+        "nóż i widelec",
+        "widelec i nóż"
+      ],
+      "items": [
+        "noz",
+        "i",
+        "widelec"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-a7-e15",
+      "pairs": [
+        {
+          "polish": "talerz",
+          "meaning": {
+            "en": "a plate"
+          }
+        },
+        {
+          "polish": "nóż",
+          "meaning": {
+            "en": "a knife"
+          }
+        },
+        {
+          "polish": "widelec",
+          "meaning": {
+            "en": "a fork"
+          }
+        },
+        {
+          "polish": "łyżka",
+          "meaning": {
+            "en": "a spoon"
+          }
+        },
+        {
+          "polish": "łyżeczka",
+          "meaning": {
+            "en": "a teaspoon"
+          }
+        },
+        {
+          "polish": "kubek",
+          "meaning": {
+            "en": "a mug"
+          }
+        }
+      ],
+      "items": [
+        "talerz",
+        "noz",
+        "widelec",
+        "lyzka",
+        "lyzeczka",
+        "kubek"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a7-e16",
+      "prompt": {
+        "en": "the sausage is Polish"
+      },
+      "acceptedAnswers": [
+        "kiełbasa jest polska"
+      ],
+      "distractors": [
+        "polski",
+        "szynka"
+      ],
+      "items": [
+        "kielbasa",
+        "byc-jest",
+        "polski"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-a7-e17",
+      "lines": [
+        "Talerz jest tutaj.",
+        "Nóż i widelec są tam.",
+        "Wędlina jest tu, na przykład kiełbasa."
+      ],
+      "meaning": {
+        "en": "Laying the table."
+      },
+      "statements": [
+        {
+          "text": "Talerz jest tam.",
+          "meaning": {
+            "en": "The plate is there."
+          },
+          "true": false
+        },
+        {
+          "text": "Nóż jest tam.",
+          "meaning": {
+            "en": "The knife is there."
+          },
+          "true": true
+        },
+        {
+          "text": "Wędlina jest tutaj.",
+          "meaning": {
+            "en": "The cold meat is here."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "talerz",
+        "byc-jest",
+        "tutaj",
+        "noz",
+        "i",
+        "widelec",
+        "byc-sa",
+        "tam",
+        "wedlina",
+        "tu",
+        "na-przyklad",
+        "kielbasa"
+      ]
+    }
+  ]
+}

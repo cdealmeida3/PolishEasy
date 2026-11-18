@@ -1,0 +1,463 @@
+{
+  "id": "kpk1-l08-a6",
+  "section": {
+    "letter": "A",
+    "heading": "Śniadanie",
+    "meaning": {
+      "en": "Breakfast"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-a6-t01",
+      "before": "kpk1-l08-a6-e01",
+      "title": {
+        "en": "Z czym?"
+      },
+      "body": {
+        "en": "*Z* (with) takes the instrumental (*narzędnik*: *z kim? z czym?*). A masculine or neuter noun ends in *-em*, a feminine one in *-ą*: *chleb z masłem*, *herbata z cytryną*. *Bez* (without) takes the genitive: *kawa bez cukru*, *herbata bez mleka*."
+      },
+      "table": {
+        "title": {
+          "en": "Narzędnik: z czym?"
+        },
+        "columns": [
+          {
+            "gender": "m"
+          },
+          {
+            "gender": "f"
+          },
+          {
+            "gender": "n"
+          }
+        ],
+        "rows": [
+          {
+            "case": "M",
+            "cells": [
+              "ser",
+              "szynk[a]",
+              "masł[o]"
+            ]
+          },
+          {
+            "case": "N",
+            "cells": [
+              "ser[em]",
+              "szynk[ą]",
+              "masł[em]"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "kpk1-l08-a6-t02",
+      "before": "kpk1-l08-a6-e11",
+      "title": {
+        "en": "Zapamiętaj"
+      },
+      "body": {
+        "en": "*z cukrem* ≠ *bez cukru*, *z mlekiem* ≠ *bez mleka*, *z cytryną* ≠ *bez cytryny*, *z lodem* ≠ *bez lodu*."
+      },
+      "kind": "zapamietaj"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a6-e01",
+      "prompt": "z masłem",
+      "options": [
+        {
+          "en": "with jam"
+        },
+        {
+          "en": "with butter"
+        },
+        {
+          "en": "with cheese"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-maslem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a6-e02",
+      "text": "chleb z masłem",
+      "meaning": {
+        "en": "bread and butter"
+      },
+      "distractors": [
+        "chleb z serem",
+        "bułka z masłem"
+      ],
+      "items": [
+        "chleb",
+        "z-maslem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a6-e03",
+      "prompt": "z dżemem",
+      "options": [
+        {
+          "en": "with butter"
+        },
+        {
+          "en": "jam"
+        },
+        {
+          "en": "with jam"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-dzemem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a6-e04",
+      "prompt": {
+        "en": "a bread roll with jam"
+      },
+      "acceptedAnswers": [
+        "bułka z dżemem"
+      ],
+      "distractors": [
+        "dżem",
+        "masłem"
+      ],
+      "items": [
+        "bulka",
+        "z-dzemem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a6-e05",
+      "prompt": "z szynką",
+      "options": [
+        {
+          "en": "with ham"
+        },
+        {
+          "en": "with cheese"
+        },
+        {
+          "en": "ham"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-szynka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-a6-e06",
+      "text": "Jem kanapkę z ___.",
+      "meaning": {
+        "en": "I am eating a ham sandwich."
+      },
+      "gaps": [
+        [
+          "szynką"
+        ]
+      ],
+      "distractors": [
+        "szynka",
+        "szynkę"
+      ],
+      "items": [
+        "jesc-jem",
+        "kanapka-acc",
+        "z-szynka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a6-e07",
+      "text": "kanapka z szynką",
+      "meaning": {
+        "en": "a ham sandwich"
+      },
+      "distractors": [
+        "kanapka z serem",
+        "bułka z szynką"
+      ],
+      "items": [
+        "kanapka",
+        "z-szynka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a6-e08",
+      "prompt": "z cytryną",
+      "options": [
+        {
+          "en": "with milk"
+        },
+        {
+          "en": "with lemon"
+        },
+        {
+          "en": "a lemon"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-cytryna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a6-e09",
+      "prompt": "z mlekiem",
+      "options": [
+        {
+          "en": "with lemon"
+        },
+        {
+          "en": "milk"
+        },
+        {
+          "en": "with milk"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-mlekiem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-a6-e10",
+      "acceptedAnswers": [
+        "piję herbatę z cytryną"
+      ],
+      "meaning": {
+        "en": "I drink tea with lemon"
+      },
+      "items": [
+        "pic-pije",
+        "herbata-acc",
+        "z-cytryna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a6-e11",
+      "prompt": "z cukrem",
+      "options": [
+        {
+          "en": "with sugar"
+        },
+        {
+          "en": "without sugar"
+        },
+        {
+          "en": "sugar"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-cukrem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a6-e12",
+      "prompt": "bez cukru",
+      "options": [
+        {
+          "en": "with sugar"
+        },
+        {
+          "en": "without sugar"
+        },
+        {
+          "en": "without milk"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bez-cukru"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a6-e13",
+      "prompt": "bez mleka",
+      "options": [
+        {
+          "en": "with milk"
+        },
+        {
+          "en": "without sugar"
+        },
+        {
+          "en": "without milk"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bez-mleka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a6-e14",
+      "prompt": {
+        "en": "coffee with milk and without sugar"
+      },
+      "acceptedAnswers": [
+        "kawa z mlekiem i bez cukru",
+        "kawa z mlekiem, bez cukru"
+      ],
+      "items": [
+        "kawa",
+        "z-mlekiem",
+        "i",
+        "bez-cukru"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-a6-e15",
+      "text": "Pijesz kawę z ___ czy bez ___?",
+      "meaning": {
+        "en": "Do you drink coffee with milk or without milk?"
+      },
+      "gaps": [
+        [
+          "mlekiem"
+        ],
+        [
+          "mleka"
+        ]
+      ],
+      "distractors": [
+        "mleko",
+        "mleku"
+      ],
+      "items": [
+        "pic-pijesz",
+        "kawa-acc",
+        "z-mlekiem",
+        "czy",
+        "bez-mleka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-a6-e16",
+      "pairs": [
+        {
+          "polish": "z masłem",
+          "meaning": {
+            "en": "with butter"
+          }
+        },
+        {
+          "polish": "z dżemem",
+          "meaning": {
+            "en": "with jam"
+          }
+        },
+        {
+          "polish": "z cytryną",
+          "meaning": {
+            "en": "with lemon"
+          }
+        },
+        {
+          "polish": "z cukrem",
+          "meaning": {
+            "en": "with sugar"
+          }
+        },
+        {
+          "polish": "bez cukru",
+          "meaning": {
+            "en": "without sugar"
+          }
+        },
+        {
+          "polish": "bez mleka",
+          "meaning": {
+            "en": "without milk"
+          }
+        }
+      ],
+      "items": [
+        "z-maslem",
+        "z-dzemem",
+        "z-cytryna",
+        "z-cukrem",
+        "bez-cukru",
+        "bez-mleka"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-a6-e17",
+      "lines": [
+        "Adam pije kawę bez cukru.",
+        "Ewa pije herbatę z cytryną i z cukrem.",
+        "Adam je chleb z masłem."
+      ],
+      "meaning": {
+        "en": "Breakfast drinks."
+      },
+      "statements": [
+        {
+          "text": "Adam pije kawę z cukrem.",
+          "meaning": {
+            "en": "Adam drinks coffee with sugar."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa pije herbatę z cytryną.",
+          "meaning": {
+            "en": "Ewa drinks tea with lemon."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam je chleb z dżemem.",
+          "meaning": {
+            "en": "Adam is eating bread with jam."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "adam",
+        "pic-pije-on",
+        "kawa-acc",
+        "bez-cukru",
+        "ewa",
+        "herbata-acc",
+        "z-cytryna",
+        "i",
+        "z-cukrem",
+        "jesc-je",
+        "chleb",
+        "z-maslem"
+      ]
+    }
+  ]
+}

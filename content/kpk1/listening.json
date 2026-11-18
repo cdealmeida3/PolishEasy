@@ -3004,6 +3004,713 @@
         8,
         8
       ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-093-1",
+      "track": 93,
+      "statement": "Karolina pyta, czy Mami jeszcze śpi.",
+      "meaning": {
+        "en": "Karolina asks if Mami is still asleep."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-093-2",
+      "track": 93,
+      "statement": "Druga dziewczyna jeszcze śpi.",
+      "meaning": {
+        "en": "The other girl is still asleep."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-093-3",
+      "track": 93,
+      "question": "Kto dziś robi śniadanie?",
+      "meaning": {
+        "en": "Who is making breakfast today?"
+      },
+      "options": [
+        "Karolina.",
+        "Mama.",
+        "Mami."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-093-4",
+      "track": 93,
+      "statement": "Mama i tata jeszcze śpią.",
+      "meaning": {
+        "en": "Mum and Dad are still asleep."
+      },
+      "answer": true,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-093-5",
+      "track": 93,
+      "question": "Co lubi jeść Mami?",
+      "meaning": {
+        "en": "What does Mami like to eat?"
+      },
+      "options": [
+        "Wszystko.",
+        "Tylko chleb.",
+        "Jajecznicę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-094-1",
+      "track": 94,
+      "question": "Jaki chleb słyszysz?",
+      "meaning": {
+        "en": "Which bread do you hear?"
+      },
+      "options": [
+        "Jasny i ciemny.",
+        "Tylko jasny.",
+        "Tylko ciemny."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-094-2",
+      "track": 94,
+      "question": "Jaki sok słyszysz?",
+      "meaning": {
+        "en": "Which juice do you hear?"
+      },
+      "options": [
+        "Pomarańczowy.",
+        "Jabłkowy.",
+        "Malinowy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        15,
+        15
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l08-094-3",
+      "track": 94,
+      "question": "Jakie jest ostatnie słowo?",
+      "meaning": {
+        "en": "What is the last word?"
+      },
+      "acceptedAnswers": [
+        "cytryna"
+      ],
+      "lines": [
+        18,
+        18
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-095-1",
+      "track": 95,
+      "statement": "Gość woli ciemny chleb.",
+      "meaning": {
+        "en": "The guest prefers brown bread."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-095-2",
+      "track": 95,
+      "question": "Co je Karolina?",
+      "meaning": {
+        "en": "What does Karolina eat?"
+      },
+      "options": [
+        "Ciemny chleb z margaryną.",
+        "Jasny chleb z masłem.",
+        "Bułkę z dżemem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-095-3",
+      "track": 95,
+      "question": "Dlaczego Karolina je margarynę?",
+      "meaning": {
+        "en": "Why does Karolina have margarine?"
+      },
+      "options": [
+        "Bo chce być szczupła.",
+        "Bo nie lubi masła.",
+        "Bo jest głodna."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-095-4",
+      "track": 95,
+      "statement": "Gość prosi o szynkę.",
+      "meaning": {
+        "en": "The guest asks for ham."
+      },
+      "answer": false,
+      "lines": [
+        10,
+        11
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-095-5",
+      "track": 95,
+      "statement": "Kiełbasa jest tłusta.",
+      "meaning": {
+        "en": "The sausage is fatty."
+      },
+      "answer": true,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-095-6",
+      "track": 95,
+      "question": "Jakie jajko chce Mami?",
+      "meaning": {
+        "en": "Which egg does Mami want?"
+      },
+      "options": [
+        "Na twardo.",
+        "Na miękko.",
+        "Jajecznicę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        15,
+        19
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l08-095-7",
+      "track": 95,
+      "question": "Ile minut gotujesz jajko na twardo?",
+      "meaning": {
+        "en": "How many minutes do you boil a hard-boiled egg?"
+      },
+      "acceptedAnswers": [
+        "8",
+        "osiem"
+      ],
+      "lines": [
+        18,
+        18
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-096-1",
+      "track": 96,
+      "statement": "Jest już późno.",
+      "meaning": {
+        "en": "It's already late."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-096-2",
+      "track": 96,
+      "question": "Na co Karol ma ochotę?",
+      "meaning": {
+        "en": "What does Karol feel like?"
+      },
+      "options": [
+        "Na omlet albo jajecznicę.",
+        "Na jogurt.",
+        "Na kawę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-096-3",
+      "track": 96,
+      "question": "Co Karol w końcu woli?",
+      "meaning": {
+        "en": "What does Karol prefer in the end?"
+      },
+      "options": [
+        "Jogurt z płatkami.",
+        "Omlet.",
+        "Bułkę z masłem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-096-4",
+      "track": 96,
+      "question": "Jaki jogurt woli Mami?",
+      "meaning": {
+        "en": "Which yoghurt does Mami prefer?"
+      },
+      "options": [
+        "Owocowy.",
+        "Naturalny.",
+        "Jabłkowy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l08-096-5",
+      "track": 96,
+      "question": "Jaki jogurt? Jogurt…",
+      "meaning": {
+        "en": "What kind of yoghurt? A … yoghurt (made with malina)"
+      },
+      "acceptedAnswers": [
+        "malinowy"
+      ],
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-097-1",
+      "track": 97,
+      "question": "Co pije Karolina?",
+      "meaning": {
+        "en": "What does Karolina drink?"
+      },
+      "options": [
+        "Herbatę z cytryną.",
+        "Kawę z mlekiem.",
+        "Kakao."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-097-2",
+      "track": 97,
+      "question": "Jaką kawę chce Mami?",
+      "meaning": {
+        "en": "What coffee does Mami want?"
+      },
+      "options": [
+        "Białą.",
+        "Czarną.",
+        "Zieloną."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-097-3",
+      "track": 97,
+      "statement": "Biała kawa to kawa z mlekiem.",
+      "meaning": {
+        "en": "White coffee is coffee with milk."
+      },
+      "answer": true,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-097-4",
+      "track": 97,
+      "statement": "Gość pije kawę bez cukru.",
+      "meaning": {
+        "en": "The guest drinks her coffee without sugar."
+      },
+      "answer": false,
+      "lines": [
+        7,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-097-5",
+      "track": 97,
+      "question": "Co dziś pije Karol?",
+      "meaning": {
+        "en": "What is Karol drinking today?"
+      },
+      "options": [
+        "Kakao.",
+        "Herbatę.",
+        "Kawę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l08-098-1",
+      "track": 98,
+      "question": "Jakie jest ostatnie słowo?",
+      "meaning": {
+        "en": "What is the last word?"
+      },
+      "acceptedAnswers": [
+        "sos"
+      ],
+      "lines": [
+        16,
+        16
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-098-2",
+      "track": 98,
+      "question": "Co słyszysz po słowie „ryż”?",
+      "meaning": {
+        "en": "Which word comes after ryż?"
+      },
+      "options": [
+        "kasza",
+        "kurczak",
+        "makaron"
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        11
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-099-1",
+      "track": 99,
+      "question": "O co pyta Mami?",
+      "meaning": {
+        "en": "What does Mami ask about?"
+      },
+      "options": [
+        "O rybę z frytkami.",
+        "O pizzę.",
+        "O zupę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-099-2",
+      "track": 99,
+      "statement": "Dziewczyna mówi, że to tylko stereotyp.",
+      "meaning": {
+        "en": "The girl says it is only a stereotype."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-099-3",
+      "track": 99,
+      "statement": "Ona lubi spaghetti i pizzę.",
+      "meaning": {
+        "en": "She likes spaghetti and pizza."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-099-4",
+      "track": 99,
+      "question": "Co gotuje jej mama?",
+      "meaning": {
+        "en": "What does her mum cook?"
+      },
+      "options": [
+        "Mięso z sosem.",
+        "Rybę z frytkami.",
+        "Pizzę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-099-5",
+      "track": 99,
+      "question": "Co bardzo lubi druga dziewczyna?",
+      "meaning": {
+        "en": "What does the other girl like very much?"
+      },
+      "options": [
+        "Owoce morza.",
+        "Frytki.",
+        "Pizzę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        11
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-100-1",
+      "track": 100,
+      "statement": "Oni są głodni.",
+      "meaning": {
+        "en": "They are hungry."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-100-2",
+      "track": 100,
+      "question": "Jaką pizzę zamawia Mami?",
+      "meaning": {
+        "en": "What pizza does Mami order?"
+      },
+      "options": [
+        "Z owocami morza.",
+        "Z szynką.",
+        "Z oliwkami."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-100-3",
+      "track": 100,
+      "question": "Jakie oliwki są na pierwszej pizzy?",
+      "meaning": {
+        "en": "What olives are on the first pizza?"
+      },
+      "options": [
+        "Czarne.",
+        "Zielone.",
+        "Na pizzy nie ma oliwek."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-100-4",
+      "track": 100,
+      "statement": "Chłopak zamawia pizzę z pieczarkami.",
+      "meaning": {
+        "en": "The boy orders a pizza with button mushrooms."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-101-1",
+      "track": 101,
+      "question": "Co jest dziś na kolację?",
+      "meaning": {
+        "en": "What's for supper today?"
+      },
+      "options": [
+        "Sałatka jarzynowa.",
+        "Pizza.",
+        "Zupa."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-101-2",
+      "track": 101,
+      "question": "Co robią Karol i Karolina?",
+      "meaning": {
+        "en": "What are Karol and Karolina making?"
+      },
+      "options": [
+        "Tosty i herbatę.",
+        "Sałatkę.",
+        "Kawę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-101-3",
+      "track": 101,
+      "statement": "Gość dziękuje i idzie na kolację.",
+      "meaning": {
+        "en": "The guest says thank you and comes to supper."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-102-1",
+      "track": 102,
+      "statement": "Pierwszy chłopak jest głodny.",
+      "meaning": {
+        "en": "The first boy is hungry."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l08-102-2",
+      "track": 102,
+      "statement": "Blisko jest dobry bar.",
+      "meaning": {
+        "en": "There is a good snack bar nearby."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l08-102-3",
+      "track": 102,
+      "question": "Na co ma ochotę drugi chłopak?",
+      "meaning": {
+        "en": "What does the second boy feel like?"
+      },
+      "options": [
+        "Na pizzę i zimne piwo.",
+        "Na pierogi.",
+        "Na kurczaka z frytkami."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
     }
   ]
 }

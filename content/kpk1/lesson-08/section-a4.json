@@ -1,0 +1,430 @@
+{
+  "id": "kpk1-l08-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Śniadanie",
+    "meaning": {
+      "en": "Breakfast"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-a4-t01",
+      "before": "kpk1-l08-a4-e01",
+      "title": {
+        "en": "Woleć"
+      },
+      "body": {
+        "en": "*Woleć* is to prefer: *wolę, wolisz, woli, wolimy, wolicie, wolą*. Like *lubię*, it takes the accusative: *wolę herbatę*. To compare, add *niż* (than): *wolę kawę niż herbatę*."
+      },
+      "conjugation": {
+        "verb": "woleć",
+        "meaning": {
+          "en": "to prefer"
+        },
+        "forms": {
+          "ja": "wolę",
+          "ty": "wolisz",
+          "on": "woli",
+          "my": "wolimy",
+          "wy": "wolicie",
+          "oni": "wolą"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a4-e01",
+      "prompt": "wolisz",
+      "options": [
+        {
+          "en": "you prefer (one friend)"
+        },
+        {
+          "en": "I prefer"
+        },
+        {
+          "en": "you like (one friend)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wolec-wolisz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a4-e02",
+      "text": "wolisz kawę czy herbatę?",
+      "meaning": {
+        "en": "do you prefer coffee or tea? (one friend)"
+      },
+      "distractors": [
+        "wolisz kawę czy wodę?",
+        "wolę kawę"
+      ],
+      "items": [
+        "wolec-wolisz",
+        "kawa-acc",
+        "czy",
+        "herbata-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a4-e03",
+      "prompt": "niż",
+      "options": [
+        {
+          "en": "or"
+        },
+        {
+          "en": "than (wolę kawę niż herbatę)"
+        },
+        {
+          "en": "and"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "niz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a4-e04",
+      "prompt": {
+        "en": "I prefer tea to coffee"
+      },
+      "acceptedAnswers": [
+        "wolę herbatę niż kawę"
+      ],
+      "distractors": [
+        "herbata",
+        "kawa"
+      ],
+      "items": [
+        "wolec-wole",
+        "herbata-acc",
+        "niz",
+        "kawa-acc"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-a4-e05",
+      "verb": "woleć",
+      "meaning": {
+        "en": "to prefer"
+      },
+      "person": "ty",
+      "sentence": "Ty ___ kawę czy herbatę?",
+      "sentenceMeaning": {
+        "en": "Do you prefer coffee or tea?"
+      },
+      "acceptedAnswers": [
+        "wolisz"
+      ],
+      "items": [
+        "ty",
+        "wolec-wolisz",
+        "kawa-acc",
+        "czy",
+        "herbata-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a4-e06",
+      "prompt": "kakao",
+      "options": [
+        {
+          "en": "coffee"
+        },
+        {
+          "en": "milk"
+        },
+        {
+          "en": "cocoa"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kakao"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-a4-e07",
+      "text": "Wolę kakao ___ kawę.",
+      "meaning": {
+        "en": "I prefer cocoa to coffee."
+      },
+      "gaps": [
+        [
+          "niż"
+        ]
+      ],
+      "distractors": [
+        "i",
+        "czy"
+      ],
+      "items": [
+        "wolec-wole",
+        "kakao",
+        "niz",
+        "kawa-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a4-e08",
+      "prompt": "cukier",
+      "options": [
+        {
+          "en": "sugar"
+        },
+        {
+          "en": "salt"
+        },
+        {
+          "en": "honey"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cukier"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a4-e09",
+      "prompt": "sól",
+      "options": [
+        {
+          "en": "sugar"
+        },
+        {
+          "en": "salt"
+        },
+        {
+          "en": "pepper (the spice)"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sol"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a4-e10",
+      "prompt": "pieprz",
+      "options": [
+        {
+          "en": "salt"
+        },
+        {
+          "en": "paprika"
+        },
+        {
+          "en": "pepper (the spice)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pieprz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a4-e11",
+      "text": "sól i pieprz",
+      "meaning": {
+        "en": "salt and pepper"
+      },
+      "distractors": [
+        "sól i cukier",
+        "pieprz i cytryna"
+      ],
+      "items": [
+        "sol",
+        "i",
+        "pieprz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a4-e12",
+      "prompt": "cytryna",
+      "options": [
+        {
+          "en": "a lemon"
+        },
+        {
+          "en": "an orange"
+        },
+        {
+          "en": "a tomato"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "cytryna"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a4-e13",
+      "prompt": {
+        "en": "a lemon and sugar"
+      },
+      "acceptedAnswers": [
+        "cytryna i cukier"
+      ],
+      "distractors": [
+        "cytryną",
+        "sól"
+      ],
+      "items": [
+        "cytryna",
+        "i",
+        "cukier"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a4-e14",
+      "prompt": "sok pomarańczowy",
+      "options": [
+        {
+          "en": "apple juice"
+        },
+        {
+          "en": "orange juice"
+        },
+        {
+          "en": "cocoa"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sok-pomaranczowy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-a4-e15",
+      "acceptedAnswers": [
+        "wolę sok pomarańczowy"
+      ],
+      "meaning": {
+        "en": "I prefer orange juice"
+      },
+      "items": [
+        "wolec-wole",
+        "sok-pomaranczowy"
+      ],
+      "readingAnswers": [
+        "ja wolę sok pomarańczowy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-a4-e16",
+      "pairs": [
+        {
+          "polish": "kakao",
+          "meaning": {
+            "en": "cocoa"
+          }
+        },
+        {
+          "polish": "cukier",
+          "meaning": {
+            "en": "sugar"
+          }
+        },
+        {
+          "polish": "sól",
+          "meaning": {
+            "en": "salt"
+          }
+        },
+        {
+          "polish": "pieprz",
+          "meaning": {
+            "en": "pepper"
+          }
+        },
+        {
+          "polish": "cytryna",
+          "meaning": {
+            "en": "a lemon"
+          }
+        },
+        {
+          "polish": "niż",
+          "meaning": {
+            "en": "than"
+          }
+        }
+      ],
+      "items": [
+        "kakao",
+        "cukier",
+        "sol",
+        "pieprz",
+        "cytryna",
+        "niz"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l08-a4-e17",
+      "lines": [
+        "Wolisz kawę czy herbatę?",
+        "Wolę herbatę niż kawę.",
+        "A cukier?",
+        "Nie, dziękuję."
+      ],
+      "meaning": {
+        "en": "Breakfast at a friend's."
+      },
+      "items": [
+        "wolec-wolisz",
+        "kawa-acc",
+        "czy",
+        "herbata-acc",
+        "wolec-wole",
+        "niz",
+        "a",
+        "cukier",
+        "nie",
+        "dziekuje"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a4-e18",
+      "text": "proszę sok pomarańczowy",
+      "meaning": {
+        "en": "orange juice, please"
+      },
+      "distractors": [
+        "proszę kakao",
+        "wolę sok pomarańczowy"
+      ],
+      "items": [
+        "prosze",
+        "sok-pomaranczowy"
+      ]
+    }
+  ]
+}

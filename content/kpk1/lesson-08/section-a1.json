@@ -1,0 +1,426 @@
+{
+  "id": "kpk1-l08-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Śniadanie",
+    "meaning": {
+      "en": "Breakfast"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-a1-t01",
+      "before": "kpk1-l08-a1-e01",
+      "title": {
+        "en": "Już or jeszcze?"
+      },
+      "body": {
+        "en": "*Już* means already and *jeszcze* still: *już jem śniadanie* (I'm already having breakfast), *mama jeszcze śpi* (Mum is still asleep). With *nie* they mean not any more and not yet: *już nie śpię* (I'm not asleep any more), *jeszcze nie jem* (I'm not eating yet)."
+      }
+    },
+    {
+      "id": "kpk1-l08-a1-t02",
+      "before": "kpk1-l08-a1-e06",
+      "title": {
+        "en": "Spać"
+      },
+      "body": {
+        "en": "*Spać* is to sleep: *śpię, śpisz, śpi, śpimy, śpicie, śpią*. *Czy ty jeszcze śpisz?* asks a friend if they are still asleep."
+      },
+      "conjugation": {
+        "verb": "spać",
+        "meaning": {
+          "en": "to sleep"
+        },
+        "forms": {
+          "ja": "śpię",
+          "ty": "śpisz",
+          "on": "śpi",
+          "my": "śpimy",
+          "wy": "śpicie",
+          "oni": "śpią"
+        }
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a1-e01",
+      "prompt": "głodny",
+      "options": [
+        {
+          "en": "hungry (głodny, głodna, głodne)"
+        },
+        {
+          "en": "tired (zmęczony, zmęczona, zmęczone)"
+        },
+        {
+          "en": "healthy (zdrowy, zdrowa, zdrowe)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "glodny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a1-e02",
+      "text": "jesteś głodna?",
+      "meaning": {
+        "en": "are you hungry? (to a woman)"
+      },
+      "distractors": [
+        "jesteś zmęczona?",
+        "jestem głodna"
+      ],
+      "items": [
+        "byc-jestes",
+        "glodny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a1-e03",
+      "prompt": "śniadanie",
+      "options": [
+        {
+          "en": "lunch"
+        },
+        {
+          "en": "breakfast"
+        },
+        {
+          "en": "supper"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sniadanie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a1-e04",
+      "prompt": "rano",
+      "options": [
+        {
+          "en": "today (the same as dziś)"
+        },
+        {
+          "en": "in the evening"
+        },
+        {
+          "en": "in the morning"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "rano"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a1-e05",
+      "prompt": {
+        "en": "in the morning I am hungry (a man says it)"
+      },
+      "acceptedAnswers": [
+        "rano jestem głodny"
+      ],
+      "distractors": [
+        "głodna",
+        "jesteś"
+      ],
+      "items": [
+        "rano",
+        "byc-jestem",
+        "glodny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a1-e06",
+      "prompt": "śpię",
+      "options": [
+        {
+          "en": "I sleep, I am asleep"
+        },
+        {
+          "en": "I do, I make"
+        },
+        {
+          "en": "I am hungry"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "spac-spie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a1-e07",
+      "prompt": "śpisz",
+      "options": [
+        {
+          "en": "I sleep, I am asleep"
+        },
+        {
+          "en": "you sleep, you are asleep (one friend)"
+        },
+        {
+          "en": "they sleep, they are asleep"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spac-spisz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a1-e08",
+      "prompt": "już",
+      "options": [
+        {
+          "en": "still; (with nie) not yet"
+        },
+        {
+          "en": "now"
+        },
+        {
+          "en": "already; (with nie) not any more"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "juz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a1-e09",
+      "prompt": "jeszcze",
+      "options": [
+        {
+          "en": "still; (with nie) not yet"
+        },
+        {
+          "en": "already; (with nie) not any more"
+        },
+        {
+          "en": "also; too"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jeszcze"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "id": "kpk1-l08-a1-e10",
+      "verb": "spać",
+      "meaning": {
+        "en": "to sleep"
+      },
+      "person": "ty",
+      "sentence": "Czy ty jeszcze ___?",
+      "sentenceMeaning": {
+        "en": "Are you still asleep?"
+      },
+      "acceptedAnswers": [
+        "śpisz"
+      ],
+      "items": [
+        "czy",
+        "ty",
+        "jeszcze",
+        "spac-spisz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a1-e11",
+      "prompt": "śpią",
+      "options": [
+        {
+          "en": "you sleep, you are asleep (one friend)"
+        },
+        {
+          "en": "they sleep, they are asleep"
+        },
+        {
+          "en": "we sleep, we are asleep"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spac-spia"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-a1-e12",
+      "acceptedAnswers": [
+        "mama i tata jeszcze śpią"
+      ],
+      "meaning": {
+        "en": "Mum and Dad are still asleep"
+      },
+      "items": [
+        "mama",
+        "i",
+        "tata",
+        "jeszcze",
+        "spac-spia"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a1-e13",
+      "prompt": {
+        "en": "I'm not asleep any more"
+      },
+      "acceptedAnswers": [
+        "już nie śpię",
+        "ja już nie śpię"
+      ],
+      "items": [
+        "juz",
+        "nie",
+        "spac-spie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-a1-e14",
+      "pairs": [
+        {
+          "polish": "głodny",
+          "meaning": {
+            "en": "hungry"
+          }
+        },
+        {
+          "polish": "śniadanie",
+          "meaning": {
+            "en": "breakfast"
+          }
+        },
+        {
+          "polish": "rano",
+          "meaning": {
+            "en": "in the morning"
+          }
+        },
+        {
+          "polish": "już",
+          "meaning": {
+            "en": "already"
+          }
+        },
+        {
+          "polish": "jeszcze",
+          "meaning": {
+            "en": "still"
+          }
+        },
+        {
+          "polish": "śpię",
+          "meaning": {
+            "en": "I am asleep"
+          }
+        }
+      ],
+      "items": [
+        "glodny",
+        "sniadanie",
+        "rano",
+        "juz",
+        "jeszcze",
+        "spac-spie"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l08-a1-e15",
+      "lines": [
+        "Czy ty jeszcze śpisz?",
+        "Nie, już nie śpię.",
+        "Jesteś głodna?",
+        "Tak, bardzo!"
+      ],
+      "meaning": {
+        "en": "A girl knocks at her friend's door in the morning."
+      },
+      "items": [
+        "czy",
+        "ty",
+        "jeszcze",
+        "spac-spisz",
+        "nie",
+        "juz",
+        "spac-spie",
+        "byc-jestes",
+        "glodny",
+        "tak",
+        "bardzo"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-a1-e16",
+      "lines": [
+        "Rano Adam jest głodny.",
+        "Mama i tata jeszcze śpią.",
+        "Adam robi śniadanie."
+      ],
+      "meaning": {
+        "en": "Saturday morning at home."
+      },
+      "statements": [
+        {
+          "text": "Adam jest głodny.",
+          "meaning": {
+            "en": "Adam is hungry."
+          },
+          "true": true
+        },
+        {
+          "text": "Mama i tata już nie śpią.",
+          "meaning": {
+            "en": "Mum and Dad are not asleep any more."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam robi śniadanie.",
+          "meaning": {
+            "en": "Adam is making breakfast."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "rano",
+        "adam",
+        "byc-jest",
+        "glodny",
+        "mama",
+        "i",
+        "tata",
+        "jeszcze",
+        "spac-spia",
+        "robic-robi",
+        "sniadanie"
+      ]
+    }
+  ]
+}

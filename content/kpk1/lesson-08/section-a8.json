@@ -1,0 +1,417 @@
+{
+  "id": "kpk1-l08-a8",
+  "section": {
+    "letter": "A",
+    "heading": "Śniadanie",
+    "meaning": {
+      "en": "Breakfast"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l08-a8-t01",
+      "before": "kpk1-l08-a8-e01",
+      "title": {
+        "en": "Mam ochotę na…"
+      },
+      "body": {
+        "en": "*Mam ochotę na* and the accusative says what you feel like: *mam ochotę na kawę*, *masz ochotę na jajecznicę?* A happy yes is *chętnie!* (gladly!). Eggs come *na miękko* (soft-boiled, about three minutes) or *na twardo* (hard-boiled), and *jajecznica* is scrambled eggs."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a8-e01",
+      "prompt": "jajecznica",
+      "options": [
+        {
+          "en": "an omelette"
+        },
+        {
+          "en": "an egg (jajka: eggs)"
+        },
+        {
+          "en": "scrambled eggs"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jajecznica"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a8-e02",
+      "prompt": "omlet",
+      "options": [
+        {
+          "en": "an omelette"
+        },
+        {
+          "en": "scrambled eggs"
+        },
+        {
+          "en": "a sandwich"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "omlet"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a8-e03",
+      "prompt": "mam ochotę na",
+      "options": [
+        {
+          "en": "I prefer"
+        },
+        {
+          "en": "feel like, fancy (mam ochotę na: I feel like; masz ochotę na?: do you feel like?; ma ochotę na: he or she feels like)"
+        },
+        {
+          "en": "I like"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "mam-ochote-na"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a8-e04",
+      "prompt": "jajecznicę",
+      "options": [
+        {
+          "en": "scrambled eggs"
+        },
+        {
+          "en": "a sandwich (after proszę, kupuję…: proszę kanapkę)"
+        },
+        {
+          "en": "scrambled eggs (after mam ochotę na, jem…: jem jajecznicę)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jajecznica-acc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l08-a8-e05",
+      "text": "mam ochotę na jajecznicę",
+      "meaning": {
+        "en": "I feel like scrambled eggs"
+      },
+      "distractors": [
+        "mam ochotę na omlet",
+        "nie mam ochoty na jajecznicę"
+      ],
+      "items": [
+        "mam-ochote-na",
+        "jajecznica-acc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a8-e06",
+      "prompt": {
+        "en": "do you feel like an omelette? (one friend)"
+      },
+      "acceptedAnswers": [
+        "masz ochotę na omlet?"
+      ],
+      "distractors": [
+        "mam",
+        "jajecznica"
+      ],
+      "items": [
+        "mam-ochote-na",
+        "omlet"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l08-a8-e07",
+      "prompt": {
+        "en": "the scrambled eggs are good"
+      },
+      "acceptedAnswers": [
+        "jajecznica jest dobra"
+      ],
+      "distractors": [
+        "dobry",
+        "omlet"
+      ],
+      "items": [
+        "jajecznica",
+        "byc-jest",
+        "dobry"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a8-e08",
+      "prompt": "chętnie",
+      "options": [
+        {
+          "en": "gladly, with pleasure"
+        },
+        {
+          "en": "thank you"
+        },
+        {
+          "en": "well; OK"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chetnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a8-e09",
+      "prompt": "na miękko",
+      "options": [
+        {
+          "en": "hard-boiled (of an egg)"
+        },
+        {
+          "en": "soft-boiled (of an egg)"
+        },
+        {
+          "en": "fried"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-miekko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a8-e10",
+      "prompt": "na twardo",
+      "options": [
+        {
+          "en": "soft-boiled (of an egg)"
+        },
+        {
+          "en": "raw"
+        },
+        {
+          "en": "hard-boiled (of an egg)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-twardo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l08-a8-e11",
+      "text": "Jajko na ___ czy na twardo?",
+      "meaning": {
+        "en": "A soft-boiled or a hard-boiled egg?"
+      },
+      "gaps": [
+        [
+          "miękko"
+        ]
+      ],
+      "distractors": [
+        "twardo",
+        "miękki"
+      ],
+      "items": [
+        "jajko",
+        "na-miekko",
+        "czy",
+        "na-twardo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l08-a8-e12",
+      "prompt": "późno",
+      "options": [
+        {
+          "en": "late"
+        },
+        {
+          "en": "in the morning"
+        },
+        {
+          "en": "now"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pozno"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l08-a8-e13",
+      "acceptedAnswers": [
+        "jest już późno"
+      ],
+      "meaning": {
+        "en": "it's late already"
+      },
+      "items": [
+        "byc-jest",
+        "juz",
+        "pozno"
+      ],
+      "readingAnswers": [
+        "już jest późno"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l08-a8-e14",
+      "prompt": {
+        "en": "I feel like an omelette"
+      },
+      "acceptedAnswers": [
+        "mam ochotę na omlet"
+      ],
+      "items": [
+        "mam-ochote-na",
+        "omlet"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l08-a8-e15",
+      "pairs": [
+        {
+          "polish": "jajecznica",
+          "meaning": {
+            "en": "scrambled eggs"
+          }
+        },
+        {
+          "polish": "omlet",
+          "meaning": {
+            "en": "an omelette"
+          }
+        },
+        {
+          "polish": "na miękko",
+          "meaning": {
+            "en": "soft-boiled"
+          }
+        },
+        {
+          "polish": "na twardo",
+          "meaning": {
+            "en": "hard-boiled"
+          }
+        },
+        {
+          "polish": "chętnie",
+          "meaning": {
+            "en": "gladly"
+          }
+        },
+        {
+          "polish": "późno",
+          "meaning": {
+            "en": "late"
+          }
+        }
+      ],
+      "items": [
+        "jajecznica",
+        "omlet",
+        "na-miekko",
+        "na-twardo",
+        "chetnie",
+        "pozno"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l08-a8-e16",
+      "lines": [
+        "Masz ochotę na jajko?",
+        "Chętnie!",
+        "Na miękko czy na twardo?",
+        "Na twardo, proszę."
+      ],
+      "meaning": {
+        "en": "A friend makes breakfast."
+      },
+      "items": [
+        "mam-ochote-na",
+        "jajko",
+        "chetnie",
+        "na-miekko",
+        "czy",
+        "na-twardo",
+        "prosze"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l08-a8-e17",
+      "lines": [
+        "Jest już późno, ale Adam jeszcze je śniadanie.",
+        "Ma ochotę na jajecznicę.",
+        "Ewa je omlet."
+      ],
+      "meaning": {
+        "en": "A late breakfast."
+      },
+      "statements": [
+        {
+          "text": "Adam ma ochotę na omlet.",
+          "meaning": {
+            "en": "Adam feels like an omelette."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa je omlet.",
+          "meaning": {
+            "en": "Ewa is eating an omelette."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam jeszcze je śniadanie.",
+          "meaning": {
+            "en": "Adam is still having breakfast."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "byc-jest",
+        "juz",
+        "pozno",
+        "ale",
+        "adam",
+        "jeszcze",
+        "jesc-je",
+        "sniadanie",
+        "mam-ochote-na",
+        "jajecznica-acc",
+        "ewa",
+        "omlet"
+      ]
+    }
+  ]
+}
