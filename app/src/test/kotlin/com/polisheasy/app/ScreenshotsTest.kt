@@ -87,6 +87,8 @@ import com.polisheasy.engine.PlannerRound
 import com.polisheasy.engine.SpeakerRound
 import com.polisheasy.engine.DirectionsRound
 import com.polisheasy.engine.SwapRound
+import com.polisheasy.engine.PackagingRound
+import com.polisheasy.engine.HowManyRound
 import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.SaidTime
 import com.polisheasy.engine.TreeRound
@@ -2698,6 +2700,69 @@ class ScreenshotsTest {
         tap(R.string.action_continue)
         screen.mainClock.advanceTimeBy(60_000)
         shot("277-times-result")
+    }
+
+    @Test
+    fun `Packaging match and How many over the real course in the light theme`() = chapter15Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Packaging match and How many over the real course in the dark theme`() = chapter15Games("dark")
+
+    @Test
+    fun `Packaging match and How many over the real course at the largest font size`() = atTheLargestFontSize { chapter15Games("large") }
+
+    /**
+     * Chapter 15's Games: Packaging match's setup, a phrase, a wrong container, a right one, and the
+     * result; then How many?'s setup, a picture counted, a wrong phrase, a right one, and the result.
+     */
+    private fun chapter15Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun packaging() = (viewModel?.screen as Screen.Round).round as PackagingRound
+
+        fun howMany() = (viewModel?.screen as Screen.Round).round as HowManyRound
+
+        fun tapContainer(index: Int) =
+            screen.onNode(hasText(checkNotNull(packaging().question).offered[index].text) and hasClickAction()).performScrollTo().performClick()
+
+        fun tapPhrase(index: Int) = screen.onNode(hasText(checkNotNull(howMany().question).offered[index]) and hasClickAction()).performScrollTo().performClick()
+
+        openRealPractice()
+        openGame(R.string.game_packaging)
+        shot("326-packaging-setup")
+        tap(R.string.setup_play)
+        shot("327-packaging-phrase")
+        val first = checkNotNull(packaging().question)
+        tapContainer(first.offered.indices.first { it != first.right })
+        shot("328-packaging-wrong")
+        tap(R.string.action_continue)
+        tapContainer(checkNotNull(packaging().question).right)
+        shot("329-packaging-right")
+        tap(R.string.action_continue)
+        while (viewModel?.screen is Screen.Round) {
+            tapContainer(checkNotNull(packaging().question).right)
+            tap(R.string.action_continue)
+        }
+        shot("330-packaging-result")
+        tap(R.string.result_done)
+
+        openGame(R.string.game_how_many)
+        shot("331-how-many-setup")
+        tap(R.string.setup_play)
+        shot("332-how-many-pictures")
+        val counted = checkNotNull(howMany().question)
+        tapPhrase(counted.offered.indices.first { it != counted.right })
+        shot("333-how-many-wrong")
+        tap(R.string.action_continue)
+        tapPhrase(checkNotNull(howMany().question).right)
+        shot("334-how-many-right")
+        tap(R.string.action_continue)
+        while (viewModel?.screen is Screen.Round) {
+            tapPhrase(checkNotNull(howMany().question).right)
+            tap(R.string.action_continue)
+        }
+        shot("335-how-many-result")
     }
 
     @Test

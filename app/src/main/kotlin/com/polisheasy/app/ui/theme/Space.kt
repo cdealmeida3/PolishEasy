@@ -89,6 +89,9 @@ object Size {
     /** The least height of a picture to choose as an answer. */
     val pictureOption: Dp = 120.dp
 
+    /** One of the pictures How many? counts: five fit across a phone, so ten make two rows. */
+    val countPicture: Dp = 60.dp
+
     /** The least and the most height of a tile of Memory pairs: a board fills the screen between the two. */
     val memoryTileMin: Dp = 64.dp
     val memoryTileMax: Dp = 160.dp

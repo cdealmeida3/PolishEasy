@@ -72,6 +72,10 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
     DIRECTIONS("directions", GameGroup.PHRASES),
     /** Chapter 14's Game: a sentence with its noun marked, Kocham tatę., and the pronoun that says it shorter: go, ją, je, ich, or after na, niego, nią, nich. */
     PRONOUN_SWAP("pronoun-swap", GameGroup.WORDS),
+    /** Chapter 15's Game: what is in a container, ___ coli, and the container it comes in: puszka, słoik, kostka. */
+    PACKAGING("packaging", GameGroup.WORDS),
+    /** Chapter 15's Game: a picture shown two to ten times and the phrase that counts them: pięć butelek, not pięć butelki. */
+    HOW_MANY("how-many", GameGroup.WORDS),
 }
 
 /** Whether a Game can be played now. */
@@ -277,7 +281,7 @@ class Practice internal constructor(
     private val random: Random,
     private val isOpen: () -> Boolean,
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt, Directions, PronounSwap).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt, Directions, PronounSwap, PackagingMatch, HowMany).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

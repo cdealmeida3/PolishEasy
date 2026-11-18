@@ -795,6 +795,37 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Packaging match opens in chapter 15, every phrase's words its Items', with a Clip and three containers to offer as wrong`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.PACKAGING }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l15-"), course.path[firstReady - 1].id)
+        course.packaging.forEach { phrase ->
+            val words = wordsOfItems(phrase.items)
+            wordsOf(phrase.text).forEach { word -> assertTrue(word in words, "${phrase.text}: $word is not one of its Items") }
+            assertTrue(course.clipFor(phrase.text) != null, "No Clip for ${phrase.text}")
+        }
+        val all = practiceAfter(course.path.size)
+        val round = all.start(all.setup(Game.PACKAGING, emptyList())) as PackagingRound
+        assertEquals(PackagingMatch.QUESTIONS, round.total)
+        round.run.questions.forEach { assertEquals(PackagingMatch.OFFERED, it.offered.size, it.text) }
+    }
+
+    @Test
+    fun `How many opens in chapter 15, every phrase's words its Items', counting a pictured Item, with a Clip`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.HOW_MANY }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l15-"), course.path[firstReady - 1].id)
+        course.counting.forEach { phrase ->
+            val words = wordsOfItems(phrase.items)
+            wordsOf(phrase.text).forEach { word -> assertTrue(word in words, "${phrase.text}: $word is not one of its Items") }
+            assertTrue(phrase.item in course.pictures, "${phrase.text}: ${phrase.item} has no Picture")
+            assertTrue(course.clipFor(phrase.text) != null, "No Clip for ${phrase.text}")
+        }
+        val all = practiceAfter(course.path.size)
+        val round = all.start(all.setup(Game.HOW_MANY, emptyList())) as HowManyRound
+        assertEquals(HowMany.QUESTIONS, round.total)
+        round.run.questions.forEach { assertEquals(3, it.offered.size, it.text) }
+    }
+
+    @Test
     fun `Pronoun swap opens in chapter 14, every sentence's words and its shorter one's are its Items', each with a Clip`() {
         val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.PRONOUN_SWAP }.state == GameState.READY }
         assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l14-"), course.path[firstReady - 1].id)

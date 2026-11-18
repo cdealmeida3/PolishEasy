@@ -83,7 +83,19 @@ internal data class PracticeFile(
     val places: List<String> = emptyList(),
     /** The sentences of Pronoun swap. */
     val swaps: List<SwapFile> = emptyList(),
+    /** The phrases of Packaging match. */
+    val packaging: List<PackageFile> = emptyList(),
+    /** The phrases of How many?. */
+    val counting: List<CountFile> = emptyList(),
 )
+
+/** One phrase of Packaging match: its [text], *puszka coli*, what it means, the [container] Item it starts with, the other containers that [also] go with it, and the Items it uses. */
+@Serializable
+internal data class PackageFile(val text: String, val meaning: Localized, val container: String, val also: List<String> = emptyList(), val items: List<String>)
+
+/** One phrase of How many?: its [text], *pięć butelek*, what it means, the counted [item], how many it [count]s, and the Items it uses. */
+@Serializable
+internal data class CountFile(val text: String, val meaning: Localized, val item: String, val count: Int, val items: List<String>)
 
 /** One route of Directions: its [text], *Proszę iść prosto, potem skręcić w lewo.*, what it means, and the Items it uses. */
 @Serializable
@@ -348,6 +360,10 @@ internal class ReadContent(
             places = practice?.places.orEmpty().distinct(),
             swaps = practice?.swaps.orEmpty().map { SwapSentence(it.text, it.meaning, it.noun, it.pronoun, it.shortMeaning, it.items.distinct()) }
                 .filter { it.noun in it.text && it.pronoun in it.offered }.distinctBy { it.text },
+            packaging = practice?.packaging.orEmpty().map { PackagePhrase(it.text, it.meaning, it.container, it.also.distinct(), it.items.distinct()) }
+                .filter { ' ' in it.text }.distinctBy { it.text },
+            counting = practice?.counting.orEmpty().map { CountPhrase(it.text, it.meaning, it.item, it.count, it.items.distinct()) }
+                .filter { ' ' in it.text && it.count in Counting.COUNTS }.distinctBy { it.text },
         )
     }
 
@@ -556,6 +572,8 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         problems += speakerProblems(file, practice.speakers, course, content.itemsComplete)
         problems += routeProblems(file, practice.routes, practice.places, course, content.itemsComplete)
         problems += swapProblems(file, practice.swaps, course, content.itemsComplete)
+        problems += packagingProblems(file, practice.packaging, course, content.itemsComplete)
+        problems += countingProblems(file, practice.counting, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -845,6 +863,55 @@ private fun swapProblems(file: String, swaps: List<SwapFile>, course: Course, it
         }
     }
     swaps.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The sentence \"$text\" is listed more than once") }
+    return problems
+}
+
+/** What is wrong with Packaging match: each phrase starting with its container's word, the container and those that [PackageFile.also] go with it defined Items, enough containers to offer, Items; nothing twice. */
+private fun packagingProblems(file: String, phrases: List<PackageFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    phrases.forEach { phrase ->
+        val container = course.itemsById[phrase.container]
+        when {
+            itemsComplete && container == null -> problems += ContentProblem(file, phrase.container, "The phrase \"${phrase.text}\" starts with Item ${phrase.container}, which is not defined")
+            container != null && !phrase.text.startsWith(container.text + " ") ->
+                problems += ContentProblem(file, phrase.container, "The phrase \"${phrase.text}\" does not start with its container, ${container.text}")
+        }
+        phrase.also.filter { itemsComplete && it !in course.itemsById }.forEach { id ->
+            problems += ContentProblem(file, id, "The phrase \"${phrase.text}\" goes with container $id, which is not defined")
+        }
+        if (phrase.container in phrase.also) problems += ContentProblem(file, phrase.container, "The phrase \"${phrase.text}\" lists its own container among those it also goes with")
+        if (phrase.container !in phrase.items) problems += ContentProblem(file, phrase.container, "The phrase \"${phrase.text}\" does not list its container among its Items")
+        phrase.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "The phrase \"${phrase.text}\" names Item $id, which is not defined")
+        }
+        val wrong = phrases.map { it.container }.distinct().filter { it != phrase.container && it !in phrase.also }
+        if (wrong.size < PackagingMatch.OFFERED - 1) {
+            problems += ContentProblem(file, null, "The phrase \"${phrase.text}\" leaves ${wrong.size} containers to offer as wrong, fewer than ${PackagingMatch.OFFERED - 1}")
+        }
+    }
+    phrases.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The phrase \"$text\" is listed more than once") }
+    return problems
+}
+
+/** What is wrong with How many?: each phrase a number and the counted Item's word that follows it, a count it can show, an Item with forms and a Picture, Items; nothing twice. */
+private fun countingProblems(file: String, phrases: List<CountFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    phrases.forEach { phrase ->
+        val item = course.itemsById[phrase.item]
+        if (phrase.count !in Counting.COUNTS) problems += ContentProblem(file, phrase.item, "The phrase \"${phrase.text}\" counts ${phrase.count}, not ${Counting.COUNTS.first} to ${Counting.COUNTS.last}")
+        when {
+            itemsComplete && item == null -> problems += ContentProblem(file, phrase.item, "The phrase \"${phrase.text}\" counts Item ${phrase.item}, which is not defined")
+            item != null && item.forms.size < 2 -> problems += ContentProblem(file, phrase.item, "The phrase \"${phrase.text}\" counts ${item.text}, which has no plural and genitive plural forms")
+            item != null && phrase.count in Counting.COUNTS && phrase.text.substringAfter(' ') != item.forms[Counting.formFor(phrase.count)] ->
+                problems += ContentProblem(file, phrase.item, "The phrase \"${phrase.text}\" should end in ${item.forms[Counting.formFor(phrase.count)]} after ${phrase.count}")
+        }
+        if (itemsComplete && phrase.item !in course.pictures) problems += ContentProblem(file, phrase.item, "The phrase \"${phrase.text}\" counts ${phrase.item}, which has no Picture")
+        if (phrase.items.isEmpty()) problems += ContentProblem(file, null, "The phrase \"${phrase.text}\" lists no Items")
+        phrase.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "The phrase \"${phrase.text}\" names Item $id, which is not defined")
+        }
+    }
+    phrases.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The phrase \"$text\" is listed more than once") }
     return problems
 }
 

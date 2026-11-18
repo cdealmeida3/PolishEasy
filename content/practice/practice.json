@@ -2706,5 +2706,582 @@
         "na-nich"
       ]
     }
+  ],
+  "packaging": [
+    {
+      "text": "puszka coli",
+      "meaning": {
+        "en": "a can of cola"
+      },
+      "container": "puszka",
+      "also": [
+        "butelka"
+      ],
+      "items": [
+        "puszka",
+        "cola"
+      ]
+    },
+    {
+      "text": "butelka wody",
+      "meaning": {
+        "en": "a bottle of water"
+      },
+      "container": "butelka",
+      "also": [
+        "puszka",
+        "karton"
+      ],
+      "items": [
+        "butelka",
+        "woda-gen"
+      ]
+    },
+    {
+      "text": "słoik dżemu",
+      "meaning": {
+        "en": "a jar of jam"
+      },
+      "container": "sloik",
+      "also": [],
+      "items": [
+        "sloik",
+        "dzem-gen"
+      ]
+    },
+    {
+      "text": "karton soku",
+      "meaning": {
+        "en": "a carton of juice"
+      },
+      "container": "karton",
+      "also": [
+        "butelka",
+        "puszka"
+      ],
+      "items": [
+        "karton",
+        "sok-gen"
+      ]
+    },
+    {
+      "text": "pudełko czekoladek",
+      "meaning": {
+        "en": "a box of chocolates"
+      },
+      "container": "pudelko",
+      "also": [
+        "paczka",
+        "puszka"
+      ],
+      "items": [
+        "pudelko",
+        "czekoladki"
+      ]
+    },
+    {
+      "text": "kostka masła",
+      "meaning": {
+        "en": "a block of butter"
+      },
+      "container": "kostka",
+      "also": [
+        "kawalek"
+      ],
+      "items": [
+        "kostka",
+        "maslo-gen"
+      ]
+    },
+    {
+      "text": "tabliczka czekolady",
+      "meaning": {
+        "en": "a bar of chocolate"
+      },
+      "container": "tabliczka",
+      "also": [
+        "kawalek",
+        "kostka"
+      ],
+      "items": [
+        "tabliczka",
+        "czekolada-gen"
+      ]
+    },
+    {
+      "text": "puszka kukurydzy",
+      "meaning": {
+        "en": "a can of sweetcorn"
+      },
+      "container": "puszka",
+      "also": [
+        "sloik",
+        "paczka"
+      ],
+      "items": [
+        "puszka",
+        "kukurydza-gen"
+      ]
+    },
+    {
+      "text": "paczka makaronu",
+      "meaning": {
+        "en": "a packet of pasta"
+      },
+      "container": "paczka",
+      "also": [
+        "pudelko",
+        "karton"
+      ],
+      "items": [
+        "paczka",
+        "makaron-gen"
+      ]
+    },
+    {
+      "text": "kawałek kiełbasy",
+      "meaning": {
+        "en": "a piece of sausage"
+      },
+      "container": "kawalek",
+      "also": [
+        "plasterek"
+      ],
+      "items": [
+        "kawalek",
+        "kielbasa-gen"
+      ]
+    },
+    {
+      "text": "plasterek szynki",
+      "meaning": {
+        "en": "a slice of ham"
+      },
+      "container": "plasterek",
+      "also": [
+        "kawalek",
+        "paczka",
+        "puszka"
+      ],
+      "items": [
+        "plasterek",
+        "szynka-gen"
+      ]
+    },
+    {
+      "text": "kawałek tortu",
+      "meaning": {
+        "en": "a piece of gateau"
+      },
+      "container": "kawalek",
+      "also": [],
+      "items": [
+        "kawalek",
+        "tort"
+      ]
+    },
+    {
+      "text": "kostka lodu",
+      "meaning": {
+        "en": "an ice cube"
+      },
+      "container": "kostka",
+      "also": [],
+      "items": [
+        "kostka",
+        "lod"
+      ]
+    },
+    {
+      "text": "słoik musztardy",
+      "meaning": {
+        "en": "a jar of mustard"
+      },
+      "container": "sloik",
+      "also": [],
+      "items": [
+        "sloik",
+        "musztarda-gen"
+      ]
+    },
+    {
+      "text": "paczka chipsów",
+      "meaning": {
+        "en": "a packet of crisps"
+      },
+      "container": "paczka",
+      "also": [
+        "puszka"
+      ],
+      "items": [
+        "paczka",
+        "chipsy-gen"
+      ]
+    },
+    {
+      "text": "pudełko zapałek",
+      "meaning": {
+        "en": "a box of matches"
+      },
+      "container": "pudelko",
+      "also": [
+        "paczka"
+      ],
+      "items": [
+        "pudelko",
+        "zapalki"
+      ]
+    },
+    {
+      "text": "paczka chusteczek",
+      "meaning": {
+        "en": "a packet of tissues"
+      },
+      "container": "paczka",
+      "also": [
+        "pudelko"
+      ],
+      "items": [
+        "paczka",
+        "chusteczki"
+      ]
+    },
+    {
+      "text": "puszka orzeszków",
+      "meaning": {
+        "en": "a can of peanuts"
+      },
+      "container": "puszka",
+      "also": [
+        "paczka",
+        "sloik"
+      ],
+      "items": [
+        "puszka",
+        "orzeszki"
+      ]
+    },
+    {
+      "text": "paczka paluszków",
+      "meaning": {
+        "en": "a packet of pretzel sticks"
+      },
+      "container": "paczka",
+      "also": [
+        "pudelko"
+      ],
+      "items": [
+        "paczka",
+        "paluszki"
+      ]
+    },
+    {
+      "text": "kawałek ciasta",
+      "meaning": {
+        "en": "a piece of cake"
+      },
+      "container": "kawalek",
+      "also": [],
+      "items": [
+        "kawalek",
+        "ciasto-gen"
+      ]
+    },
+    {
+      "text": "paczka herbaty",
+      "meaning": {
+        "en": "a packet of tea"
+      },
+      "container": "paczka",
+      "also": [
+        "pudelko",
+        "puszka"
+      ],
+      "items": [
+        "paczka",
+        "herbata-gen"
+      ]
+    },
+    {
+      "text": "karton mleka",
+      "meaning": {
+        "en": "a carton of milk"
+      },
+      "container": "karton",
+      "also": [
+        "butelka",
+        "puszka"
+      ],
+      "items": [
+        "karton",
+        "mleko-gen"
+      ]
+    }
+  ],
+  "counting": [
+    {
+      "text": "dwie puszki",
+      "meaning": {
+        "en": "two cans"
+      },
+      "item": "puszka",
+      "count": 2,
+      "items": [
+        "dwie",
+        "puszka"
+      ]
+    },
+    {
+      "text": "sześć puszek",
+      "meaning": {
+        "en": "six cans"
+      },
+      "item": "puszka",
+      "count": 6,
+      "items": [
+        "szesc",
+        "puszka"
+      ]
+    },
+    {
+      "text": "trzy butelki",
+      "meaning": {
+        "en": "three bottles"
+      },
+      "item": "butelka",
+      "count": 3,
+      "items": [
+        "trzy",
+        "butelka"
+      ]
+    },
+    {
+      "text": "pięć butelek",
+      "meaning": {
+        "en": "five bottles"
+      },
+      "item": "butelka",
+      "count": 5,
+      "items": [
+        "piec",
+        "butelka"
+      ]
+    },
+    {
+      "text": "dwa kartony",
+      "meaning": {
+        "en": "two cartons"
+      },
+      "item": "karton",
+      "count": 2,
+      "items": [
+        "dwa",
+        "karton"
+      ]
+    },
+    {
+      "text": "siedem kartonów",
+      "meaning": {
+        "en": "seven cartons"
+      },
+      "item": "karton",
+      "count": 7,
+      "items": [
+        "siedem",
+        "karton"
+      ]
+    },
+    {
+      "text": "cztery słoiki",
+      "meaning": {
+        "en": "four jars"
+      },
+      "item": "sloik",
+      "count": 4,
+      "items": [
+        "cztery",
+        "sloik"
+      ]
+    },
+    {
+      "text": "osiem słoików",
+      "meaning": {
+        "en": "eight jars"
+      },
+      "item": "sloik",
+      "count": 8,
+      "items": [
+        "osiem",
+        "sloik"
+      ]
+    },
+    {
+      "text": "trzy paczki",
+      "meaning": {
+        "en": "three packets"
+      },
+      "item": "paczka",
+      "count": 3,
+      "items": [
+        "trzy",
+        "paczka"
+      ]
+    },
+    {
+      "text": "dziewięć paczek",
+      "meaning": {
+        "en": "nine packets"
+      },
+      "item": "paczka",
+      "count": 9,
+      "items": [
+        "dziewiec",
+        "paczka"
+      ]
+    },
+    {
+      "text": "dwa pudełka",
+      "meaning": {
+        "en": "two boxes"
+      },
+      "item": "pudelko",
+      "count": 2,
+      "items": [
+        "dwa",
+        "pudelko"
+      ]
+    },
+    {
+      "text": "pięć pudełek",
+      "meaning": {
+        "en": "five boxes"
+      },
+      "item": "pudelko",
+      "count": 5,
+      "items": [
+        "piec",
+        "pudelko"
+      ]
+    },
+    {
+      "text": "cztery kawałki",
+      "meaning": {
+        "en": "four pieces"
+      },
+      "item": "kawalek",
+      "count": 4,
+      "items": [
+        "cztery",
+        "kawalek"
+      ]
+    },
+    {
+      "text": "sześć kawałków",
+      "meaning": {
+        "en": "six pieces"
+      },
+      "item": "kawalek",
+      "count": 6,
+      "items": [
+        "szesc",
+        "kawalek"
+      ]
+    },
+    {
+      "text": "trzy plasterki",
+      "meaning": {
+        "en": "three slices"
+      },
+      "item": "plasterek",
+      "count": 3,
+      "items": [
+        "trzy",
+        "plasterek"
+      ]
+    },
+    {
+      "text": "dziesięć plasterków",
+      "meaning": {
+        "en": "ten slices"
+      },
+      "item": "plasterek",
+      "count": 10,
+      "items": [
+        "dziesiec",
+        "plasterek"
+      ]
+    },
+    {
+      "text": "dwie kostki",
+      "meaning": {
+        "en": "two blocks"
+      },
+      "item": "kostka",
+      "count": 2,
+      "items": [
+        "dwie",
+        "kostka"
+      ]
+    },
+    {
+      "text": "siedem kostek",
+      "meaning": {
+        "en": "seven blocks"
+      },
+      "item": "kostka",
+      "count": 7,
+      "items": [
+        "siedem",
+        "kostka"
+      ]
+    },
+    {
+      "text": "cztery tabliczki",
+      "meaning": {
+        "en": "four bars"
+      },
+      "item": "tabliczka",
+      "count": 4,
+      "items": [
+        "cztery",
+        "tabliczka"
+      ]
+    },
+    {
+      "text": "pięć tabliczek",
+      "meaning": {
+        "en": "five bars"
+      },
+      "item": "tabliczka",
+      "count": 5,
+      "items": [
+        "piec",
+        "tabliczka"
+      ]
+    },
+    {
+      "text": "dwie koperty",
+      "meaning": {
+        "en": "two envelopes"
+      },
+      "item": "koperta",
+      "count": 2,
+      "items": [
+        "dwie",
+        "koperta"
+      ]
+    },
+    {
+      "text": "osiem kopert",
+      "meaning": {
+        "en": "eight envelopes"
+      },
+      "item": "koperta",
+      "count": 8,
+      "items": [
+        "osiem",
+        "koperta"
+      ]
+    }
   ]
 }

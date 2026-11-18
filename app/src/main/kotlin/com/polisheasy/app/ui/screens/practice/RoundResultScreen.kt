@@ -135,7 +135,7 @@ internal fun scoreWords(game: Game, score: Score): ScoreWords = when (game) {
         label = pluralStringResource(R.plurals.result_slips, score.value),
         sentence = pluralStringResource(R.plurals.result_slips_sentence, score.value, score.value),
     )
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.MARKET_LIST, Game.TAKE_THE_ORDER, Game.FAMILY_TREE, Game.TELL_THE_TIME, Game.WEEK_PLANNER, Game.STORY_STRIP, Game.WHO_SAID_IT, Game.DIRECTIONS, Game.PRONOUN_SWAP, Game.NUMBERS, Game.SPELL_IT, Game.CHAT, Game.ANKIETA -> ScoreWords(
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.MARKET_LIST, Game.TAKE_THE_ORDER, Game.FAMILY_TREE, Game.TELL_THE_TIME, Game.WEEK_PLANNER, Game.STORY_STRIP, Game.WHO_SAID_IT, Game.DIRECTIONS, Game.PRONOUN_SWAP, Game.PACKAGING, Game.HOW_MANY, Game.NUMBERS, Game.SPELL_IT, Game.CHAT, Game.ANKIETA -> ScoreWords(
         value = stringResource(R.string.summary_first_try_value, score.value, score.of ?: score.value),
         label = stringResource(R.string.summary_first_try),
         sentence = stringResource(R.string.summary_accuracy, score.value, score.of ?: score.value),

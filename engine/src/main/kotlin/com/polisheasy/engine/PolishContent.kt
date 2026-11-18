@@ -145,6 +145,13 @@ fun polishContent(files: ContentFiles): PolishContent {
             sentence(swap.text, swap.meaning, PolishUse(file, "swaps/${index + 1}", PolishRole.PROMPT))
             sentence(swap.text.replaceFirst(swap.noun, swap.pronoun), swap.shortMeaning, PolishUse(file, "swaps/${index + 1}", PolishRole.ANSWER))
         }
+        // Packaging match's phrases and How many?'s.
+        content.practice?.packaging.orEmpty().forEachIndexed { index, phrase ->
+            sentence(phrase.text, phrase.meaning, PolishUse(file, "packaging/${index + 1}", PolishRole.ANSWER))
+        }
+        content.practice?.counting.orEmpty().forEachIndexed { index, phrase ->
+            sentence(phrase.text, phrase.meaning, PolishUse(file, "counting/${index + 1}", PolishRole.ANSWER))
+        }
         content.course().allClockTimes().forEach { time ->
             sentence(time.polish, mapOf(language to "${time.hour}:${time.minute.toString().padStart(2, '0')}"), PolishUse(file, "clock", PolishRole.ANSWER))
         }
