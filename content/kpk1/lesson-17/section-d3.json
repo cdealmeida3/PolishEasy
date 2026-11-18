@@ -1,0 +1,414 @@
+{
+  "id": "kpk1-l17-d3",
+  "section": {
+    "letter": "D",
+    "heading": "Co mu kupić?",
+    "meaning": {
+      "en": "What shall we buy him?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-d3-t01",
+      "before": "kpk1-l17-d3-e01",
+      "title": {
+        "en": "Co ty na to?"
+      },
+      "body": {
+        "en": "To suggest something, *może kupimy mu płytę?*, and then *co ty na to?* (what do you say?). Yes: *świetny pomysł!*, *idealnie!* (perfect!). No: *to bez sensu* (that makes no sense), *to banalne* (that's too obvious), *nie, to zły pomysł*, *lepiej coś praktycznego* (something practical would be better). *Nie znam się na tym* is I know nothing about it."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d3-e01",
+      "prompt": "co ty na to?",
+      "options": [
+        {
+          "en": "what do you say? what do you think? (one friend)"
+        },
+        {
+          "en": "what is it?"
+        },
+        {
+          "en": "who is it for?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "co-ty-na-to"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d3-e02",
+      "prompt": "idealnie!",
+      "options": [
+        {
+          "en": "perhaps"
+        },
+        {
+          "en": "perfect!"
+        },
+        {
+          "en": "not really"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "idealnie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-d3-e03",
+      "text": "co ty na to?",
+      "meaning": {
+        "en": "what do you say?"
+      },
+      "distractors": [
+        "co to jest?",
+        "co ty masz?"
+      ],
+      "items": [
+        "co-ty-na-to"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d3-e04",
+      "prompt": "to bez sensu",
+      "options": [
+        {
+          "en": "that's a good idea"
+        },
+        {
+          "en": "I don't mind"
+        },
+        {
+          "en": "that makes no sense, that is pointless"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "to-bez-sensu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d3-e05",
+      "prompt": "banalny",
+      "options": [
+        {
+          "en": "unoriginal, too obvious (banalny, banalna, banalne)"
+        },
+        {
+          "en": "special"
+        },
+        {
+          "en": "practical"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "banalny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-d3-e06",
+      "text": "Płyta? Nie, to zły ___.",
+      "meaning": {
+        "en": "A record? No, that is a bad idea."
+      },
+      "gaps": [
+        [
+          "pomysł"
+        ]
+      ],
+      "distractors": [
+        "pomysłu",
+        "prezent"
+      ],
+      "items": [
+        "plyta",
+        "nie",
+        "to",
+        "zly",
+        "pomysl"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d3-e07",
+      "prompt": "coś specjalnego",
+      "options": [
+        {
+          "en": "something practical"
+        },
+        {
+          "en": "something special"
+        },
+        {
+          "en": "something sweet"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "cos-specjalnego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d3-e08",
+      "prompt": "coś praktycznego",
+      "options": [
+        {
+          "en": "something special"
+        },
+        {
+          "en": "something new"
+        },
+        {
+          "en": "something practical"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "cos-praktycznego"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-d3-e09",
+      "prompt": {
+        "en": "I must choose something special"
+      },
+      "acceptedAnswers": [
+        "muszę wybrać coś specjalnego"
+      ],
+      "distractors": [
+        "praktycznego",
+        "musisz"
+      ],
+      "items": [
+        "musiec-musze",
+        "wybrac",
+        "cos-specjalnego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d3-e10",
+      "prompt": "lepiej",
+      "options": [
+        {
+          "en": "better (lepiej coś praktycznego: something practical would be better)"
+        },
+        {
+          "en": "worse"
+        },
+        {
+          "en": "a lot"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lepiej"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d3-e11",
+      "prompt": "nie znam się na tym",
+      "options": [
+        {
+          "en": "I don't know him"
+        },
+        {
+          "en": "I know nothing about it, it's not my thing"
+        },
+        {
+          "en": "I can't decide"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nie-znam-sie-na-tym"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-d3-e12",
+      "acceptedAnswers": [
+        "idealnie!"
+      ],
+      "meaning": {
+        "en": "perfect!"
+      },
+      "items": [
+        "idealnie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-d3-e13",
+      "prompt": {
+        "en": "that makes no sense"
+      },
+      "acceptedAnswers": [
+        "to bez sensu"
+      ],
+      "items": [
+        "to-bez-sensu"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-d3-e14",
+      "pairs": [
+        {
+          "polish": "co ty na to?",
+          "meaning": {
+            "en": "what do you say?"
+          }
+        },
+        {
+          "polish": "idealnie!",
+          "meaning": {
+            "en": "perfect!"
+          }
+        },
+        {
+          "polish": "to bez sensu",
+          "meaning": {
+            "en": "that makes no sense"
+          }
+        },
+        {
+          "polish": "to banalne",
+          "meaning": {
+            "en": "that's too obvious"
+          }
+        },
+        {
+          "polish": "lepiej",
+          "meaning": {
+            "en": "better"
+          }
+        }
+      ],
+      "items": [
+        "co-ty-na-to",
+        "idealnie",
+        "to-bez-sensu",
+        "banalny",
+        "lepiej"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l17-d3-e15",
+      "lines": [
+        "Może kupimy mu płytę? Co ty na to?",
+        "Nie znam się na tym. To bez sensu.",
+        "To może coś praktycznego?",
+        "Słownik! Idealnie!"
+      ],
+      "meaning": {
+        "en": "Choosing a present."
+      },
+      "items": [
+        "moze",
+        "kupimy",
+        "mu",
+        "plyta",
+        "co-ty-na-to",
+        "nie-znam-sie-na-tym",
+        "to-bez-sensu",
+        "cos-praktycznego",
+        "slownik",
+        "idealnie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-d3-e16",
+      "prompt": {
+        "en": "something practical would be better"
+      },
+      "acceptedAnswers": [
+        "lepiej coś praktycznego"
+      ],
+      "distractors": [
+        "specjalnego",
+        "dobrze"
+      ],
+      "items": [
+        "lepiej",
+        "cos-praktycznego"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-d3-e17",
+      "lines": [
+        "Ewa i Kasia szukają prezentu dla Adama.",
+        "Kasia mówi: „Może kubek? Co ty na to?”",
+        "Ewa mówi: „To banalne. Musimy wybrać coś specjalnego”."
+      ],
+      "meaning": {
+        "en": "A special present."
+      },
+      "statements": [
+        {
+          "text": "Ewa i Kasia szukają prezentu.",
+          "meaning": {
+            "en": "Ewa and Kasia are looking for a present."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewie podoba się pomysł z kubkiem.",
+          "meaning": {
+            "en": "Ewa likes the mug idea."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa chce coś specjalnego.",
+          "meaning": {
+            "en": "Ewa wants something special."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "kubek",
+        "co-ty-na-to",
+        "banalny",
+        "wybrac",
+        "cos-specjalnego"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-d3-e18",
+      "prompt": {
+        "en": "I know nothing about it"
+      },
+      "acceptedAnswers": [
+        "nie znam się na tym"
+      ],
+      "items": [
+        "nie-znam-sie-na-tym"
+      ]
+    }
+  ]
+}

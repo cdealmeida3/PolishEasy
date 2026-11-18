@@ -19,7 +19,8 @@
     "kpk1/lesson-13/items.json",
     "kpk1/lesson-14/items.json",
     "kpk1/lesson-15/items.json",
-    "kpk1/lesson-16/items.json"
+    "kpk1/lesson-16/items.json",
+    "kpk1/lesson-17/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -48,7 +49,8 @@
     "kpk1/chats/weekend.json",
     "kpk1/chats/the-way.json",
     "kpk1/chats/post-office.json",
-    "kpk1/chats/weekend-weather.json"
+    "kpk1/chats/weekend-weather.json",
+    "kpk1/chats/birthday-present.json"
   ],
   "levels": [
     {
@@ -983,7 +985,33 @@
               "deklinacja zaimków osobowych"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-17/section-a1.json",
+            "kpk1/lesson-17/section-a2.json",
+            "kpk1/lesson-17/section-a3.json",
+            "kpk1/lesson-17/section-a4.json",
+            "kpk1/lesson-17/section-b1.json",
+            "kpk1/lesson-17/section-b2.json",
+            "kpk1/lesson-17/section-b3.json",
+            "kpk1/lesson-17/section-c1.json",
+            "kpk1/lesson-17/section-c2.json",
+            "kpk1/lesson-17/section-c3.json",
+            "kpk1/lesson-17/section-c4.json",
+            "kpk1/lesson-17/section-d1.json",
+            "kpk1/lesson-17/section-d2.json",
+            "kpk1/lesson-17/section-d3.json",
+            "kpk1/lesson-17/section-p1.json"
+          ],
+          "lookUp": [
+            "modny",
+            "marudny",
+            "wygladac",
+            "plotki",
+            "strasznie",
+            "bizuteria",
+            "bluzka",
+            "spodnie"
+          ]
         },
         {
           "id": "kpk1-l18",

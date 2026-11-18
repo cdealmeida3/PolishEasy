@@ -1,0 +1,407 @@
+{
+  "id": "kpk1-l17-p1",
+  "section": {
+    "letter": "P",
+    "heading": "Powtórzenie",
+    "meaning": {
+      "en": "Revision"
+    },
+    "strands": [
+      "K",
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-p1-t01",
+      "before": "kpk1-l17-p1-e01",
+      "title": {
+        "en": "Sto lat!"
+      },
+      "body": {
+        "en": "On a Polish birthday everyone sings *sto lat!*, may you live a hundred years. To thank people, *dziękuję za prezent*, or *dziękuję za wszystkie piękne prezenty*. *Moi drodzy* is my dear friends, and *przyjaciel* a close friend: *mam tak dużo przyjaciół* (I have so many friends)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-p1-e01",
+      "prompt": "sto lat!",
+      "options": [
+        {
+          "en": "thank you!"
+        },
+        {
+          "en": "good luck!"
+        },
+        {
+          "en": "happy birthday! (a song: may you live a hundred years)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sto-lat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-p1-e02",
+      "prompt": "moi drodzy",
+      "options": [
+        {
+          "en": "my dear friends, my dears"
+        },
+        {
+          "en": "my parents"
+        },
+        {
+          "en": "ladies and gentlemen"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "moi-drodzy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-p1-e03",
+      "text": "sto lat!",
+      "meaning": {
+        "en": "happy birthday!"
+      },
+      "distractors": [
+        "sto złotych",
+        "dwa lata"
+      ],
+      "items": [
+        "sto-lat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-p1-e04",
+      "prompt": "przyjaciel",
+      "options": [
+        {
+          "en": "a neighbour"
+        },
+        {
+          "en": "a friend, a close friend (przyjaciele: friends; dużo przyjaciół: a lot of friends)"
+        },
+        {
+          "en": "a brother"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przyjaciel"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-p1-e05",
+      "prompt": "tak dużo",
+      "options": [
+        {
+          "en": "too much"
+        },
+        {
+          "en": "not much"
+        },
+        {
+          "en": "so much, so many"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tak-duzo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-p1-e06",
+      "text": "Nie wiedziałem, że mam tak dużo ___.",
+      "meaning": {
+        "en": "I did not know I had so many friends."
+      },
+      "gaps": [
+        [
+          "przyjaciół"
+        ]
+      ],
+      "distractors": [
+        "przyjaciel",
+        "przyjaciele"
+      ],
+      "items": [
+        "nie",
+        "wiedziec-wiedzialem",
+        "ze",
+        "miec-mam",
+        "tak-duzo",
+        "przyjaciel"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-p1-e07",
+      "prompt": "dziękuję za",
+      "options": [
+        {
+          "en": "thank you for (dziękuję za prezent: thank you for the present)"
+        },
+        {
+          "en": "excuse me for"
+        },
+        {
+          "en": "please"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dziekuje-za"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-p1-e08",
+      "prompt": "jeszcze raz",
+      "options": [
+        {
+          "en": "not yet"
+        },
+        {
+          "en": "once more"
+        },
+        {
+          "en": "for the first time"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jeszcze-raz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-p1-e09",
+      "prompt": "wszystkie",
+      "options": [
+        {
+          "en": "everything"
+        },
+        {
+          "en": "some"
+        },
+        {
+          "en": "all (wszystkie prezenty: all the presents)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wszystkie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-p1-e10",
+      "prompt": {
+        "en": "thank you for all the presents"
+      },
+      "acceptedAnswers": [
+        "dziękuję za wszystkie prezenty"
+      ],
+      "distractors": [
+        "wszystko",
+        "prezent"
+      ],
+      "items": [
+        "dziekuje-za",
+        "wszystkie",
+        "prezent"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-p1-e11",
+      "acceptedAnswers": [
+        "moi drodzy"
+      ],
+      "meaning": {
+        "en": "my dear friends"
+      },
+      "items": [
+        "moi-drodzy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-p1-e12",
+      "prompt": {
+        "en": "happy birthday!"
+      },
+      "acceptedAnswers": [
+        "sto lat!"
+      ],
+      "items": [
+        "sto-lat"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-p1-e13",
+      "pairs": [
+        {
+          "polish": "ładnie ci w tym kolorze",
+          "meaning": {
+            "en": "that colour suits you"
+          }
+        },
+        {
+          "polish": "denerwuje mnie to",
+          "meaning": {
+            "en": "it annoys me"
+          }
+        },
+        {
+          "polish": "irytuje mnie to",
+          "meaning": {
+            "en": "it irritates me"
+          }
+        },
+        {
+          "polish": "plotki",
+          "meaning": {
+            "en": "gossip"
+          }
+        },
+        {
+          "polish": "sprawy rodzinne",
+          "meaning": {
+            "en": "family matters"
+          }
+        }
+      ],
+      "items": [
+        "ladnie-ci-w-tym-kolorze",
+        "denerwuje-mnie-to",
+        "irytuje-mnie-to",
+        "plotki",
+        "sprawy-rodzinne"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-p1-e14",
+      "text": "Idziecie do kina? Mogę iść z ___? Podoba ___ się ten film?",
+      "meaning": {
+        "en": "Are you going to the cinema? Can I go with you? Do you like this film?"
+      },
+      "gaps": [
+        [
+          "wami"
+        ],
+        [
+          "wam"
+        ]
+      ],
+      "distractors": [
+        "was",
+        "wy"
+      ],
+      "items": [
+        "isc-idziecie",
+        "do-kina",
+        "moc-moge",
+        "isc",
+        "z-wami",
+        "podoba-sie",
+        "wam",
+        "ten",
+        "film"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-p1-e15",
+      "prompt": {
+        "en": "we like Kraków"
+      },
+      "acceptedAnswers": [
+        "Kraków nam się podoba",
+        "podoba nam się Kraków"
+      ],
+      "distractors": [
+        "nas",
+        "mi"
+      ],
+      "items": [
+        "krakow",
+        "nam",
+        "podoba-sie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-p1-e16",
+      "text": "dziękuję za prezent. Jest dla mnie idealny!",
+      "meaning": {
+        "en": "thank you for the present. It is perfect for me!"
+      },
+      "distractors": [
+        "dziękuję za kwiaty. Są piękne!",
+        "dziękuję za prezent. Jest dla ciebie!"
+      ],
+      "items": [
+        "dziekuje-za",
+        "prezent",
+        "byc-jest",
+        "dla-mnie",
+        "idealny"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l17-p1-e17",
+      "lines": [
+        "Moi drodzy!",
+        "Nie wiedziałem, że mam tak dużo przyjaciół w Polsce.",
+        "Bardzo się cieszę i jeszcze raz dziękuję za wszystkie piękne prezenty."
+      ],
+      "meaning": {
+        "en": "Adam's thank-you."
+      },
+      "items": [
+        "moi-drodzy",
+        "nie",
+        "wiedziec-wiedzialem",
+        "tak-duzo",
+        "przyjaciel",
+        "bardzo",
+        "jeszcze-raz",
+        "dziekuje-za",
+        "wszystkie",
+        "piekny",
+        "prezent"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-p1-e18",
+      "prompt": {
+        "en": "we're talking about you (several people)"
+      },
+      "acceptedAnswers": [
+        "mówimy o was",
+        "o was mówimy"
+      ],
+      "items": [
+        "mowic-mowimy",
+        "o-was"
+      ]
+    }
+  ]
+}

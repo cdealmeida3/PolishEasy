@@ -1,0 +1,490 @@
+{
+  "id": "kpk1-l17-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Co o nim myślisz?",
+    "meaning": {
+      "en": "What do you think of him?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-c3-t01",
+      "before": "kpk1-l17-c3-e01",
+      "title": {
+        "en": "Ze mną, z tobą"
+      },
+      "body": {
+        "en": "After *z* (with), *ja* becomes *mną*, and *z* becomes *ze* before it: *idziesz ze mną?* (are you coming with me?). The others: *z tobą*, *z nim*, *z nią*, *z nami*, *z wami*, *z nimi*. *Poznać* is to meet someone for the first time."
+      },
+      "table": {
+        "title": {
+          "en": "Kto? · o kim? · z kim?"
+        },
+        "columns": [
+          {
+            "header": "kto?"
+          },
+          {
+            "header": "o kim?"
+          },
+          {
+            "header": "z kim?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "ja",
+              "o mnie",
+              "ze mną"
+            ]
+          },
+          {
+            "cells": [
+              "ty",
+              "o tobie",
+              "z tobą"
+            ]
+          },
+          {
+            "cells": [
+              "on, ono",
+              "o nim",
+              "z nim"
+            ]
+          },
+          {
+            "cells": [
+              "ona",
+              "o niej",
+              "z nią"
+            ]
+          },
+          {
+            "cells": [
+              "my",
+              "o nas",
+              "z nami"
+            ]
+          },
+          {
+            "cells": [
+              "wy",
+              "o was",
+              "z wami"
+            ]
+          },
+          {
+            "cells": [
+              "oni, one",
+              "o nich",
+              "z nimi"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c3-e01",
+      "prompt": "ze mną",
+      "options": [
+        {
+          "en": "about me"
+        },
+        {
+          "en": "for me"
+        },
+        {
+          "en": "with me"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ze-mna"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-c3-e02",
+      "text": "idziesz ze mną?",
+      "meaning": {
+        "en": "are you coming with me?"
+      },
+      "distractors": [
+        "idziesz z nami?",
+        "idę z tobą"
+      ],
+      "items": [
+        "isc-idziesz",
+        "ze-mna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c3-e03",
+      "prompt": "poznać",
+      "options": [
+        {
+          "en": "get to know, meet (to meet someone for the first time)"
+        },
+        {
+          "en": "know (to know)"
+        },
+        {
+          "en": "invite (to invite)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "poznac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c3-e04",
+      "prompt": "rozmawiałam",
+      "options": [
+        {
+          "en": "I was talking about you"
+        },
+        {
+          "en": "I talked (rozmawiałam: a woman says it; rozmawiałem: a man)"
+        },
+        {
+          "en": "I wrote"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "rozmawiac-rozmawialam"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-c3-e05",
+      "text": "To Ewa. Rozmawiałam z ___ wczoraj.",
+      "meaning": {
+        "en": "This is Ewa. I talked to her yesterday."
+      },
+      "gaps": [
+        [
+          "nią"
+        ]
+      ],
+      "distractors": [
+        "niej",
+        "ją"
+      ],
+      "items": [
+        "to",
+        "ewa",
+        "rozmawiac-rozmawialam",
+        "z-nia",
+        "wczoraj"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-c3-e06",
+      "prompt": {
+        "en": "she wants to get to know us"
+      },
+      "acceptedAnswers": [
+        "chce nas poznać"
+      ],
+      "distractors": [
+        "nami",
+        "znać"
+      ],
+      "items": [
+        "chciec-chce-on",
+        "nas",
+        "poznac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c3-e07",
+      "prompt": "podobał się",
+      "options": [
+        {
+          "en": "is liked"
+        },
+        {
+          "en": "will be liked"
+        },
+        {
+          "en": "was liked (podobał mi się film: I liked the film; podobała, podobało, podobały for a feminine, a neuter, more than one)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "podobal-sie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-c3-e08",
+      "text": "Ten film jest świetny! Podobał ___ się?",
+      "meaning": {
+        "en": "This film is great! Did you like it?"
+      },
+      "gaps": [
+        [
+          "ci"
+        ]
+      ],
+      "distractors": [
+        "cię",
+        "ty"
+      ],
+      "items": [
+        "ten",
+        "film",
+        "byc-jest",
+        "swietny",
+        "podobal-sie",
+        "ci"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-c3-e09",
+      "acceptedAnswers": [
+        "podobała mi się"
+      ],
+      "meaning": {
+        "en": "I liked it (a feminine noun)"
+      },
+      "items": [
+        "podobal-sie",
+        "mi"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-c3-e10",
+      "text": "To były świetne warsztaty. Podobały ___ się?",
+      "meaning": {
+        "en": "That was a great workshop. Did you like it?"
+      },
+      "gaps": [
+        [
+          "wam"
+        ]
+      ],
+      "distractors": [
+        "was",
+        "wy"
+      ],
+      "items": [
+        "to",
+        "byc-byly",
+        "swietny",
+        "warsztaty",
+        "podobal-sie",
+        "wam"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-c3-e11",
+      "pairs": [
+        {
+          "polish": "ze mną",
+          "meaning": {
+            "en": "with me"
+          }
+        },
+        {
+          "polish": "z tobą",
+          "meaning": {
+            "en": "with you"
+          }
+        },
+        {
+          "polish": "z nim",
+          "meaning": {
+            "en": "with him"
+          }
+        },
+        {
+          "polish": "z nią",
+          "meaning": {
+            "en": "with her"
+          }
+        },
+        {
+          "polish": "z nami",
+          "meaning": {
+            "en": "with us"
+          }
+        },
+        {
+          "polish": "z wami",
+          "meaning": {
+            "en": "with you (several)"
+          }
+        }
+      ],
+      "items": [
+        "ze-mna",
+        "z-toba",
+        "z-nim",
+        "z-nia",
+        "z-nami",
+        "z-wami"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-c3-e12",
+      "acceptedAnswers": [
+        "z tobą"
+      ],
+      "meaning": {
+        "en": "with you (one friend)"
+      },
+      "items": [
+        "z-toba"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-c3-e13",
+      "text": "Idziemy do kina. Idziesz z ___?",
+      "meaning": {
+        "en": "We're going to the cinema. Are you coming with us?"
+      },
+      "gaps": [
+        [
+          "nami"
+        ]
+      ],
+      "distractors": [
+        "nas",
+        "my"
+      ],
+      "items": [
+        "isc-idziemy",
+        "do-kina",
+        "isc-idziesz",
+        "z-nami"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-c3-e14",
+      "text": "chcę cię poznać",
+      "meaning": {
+        "en": "I want to get to know you"
+      },
+      "distractors": [
+        "chcę cię zaprosić",
+        "chcę go poznać"
+      ],
+      "items": [
+        "chciec-chce",
+        "cie",
+        "poznac"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l17-c3-e15",
+      "lines": [
+        "Widziałaś nowe studentki?",
+        "Tak, rozmawiałam z nimi. Są bardzo fajne.",
+        "Możemy je zaprosić na urodziny.",
+        "Dobry pomysł! One chcą nas poznać."
+      ],
+      "meaning": {
+        "en": "New students."
+      },
+      "items": [
+        "nowy",
+        "rozmawiac-rozmawialam",
+        "z-nimi",
+        "byc-sa",
+        "bardzo",
+        "fajny",
+        "zaprosic",
+        "urodziny",
+        "dobry",
+        "pomysl",
+        "nas",
+        "poznac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-c3-e16",
+      "prompt": {
+        "en": "I talked with them"
+      },
+      "acceptedAnswers": [
+        "rozmawiałam z nimi"
+      ],
+      "distractors": [
+        "nich",
+        "ich"
+      ],
+      "items": [
+        "rozmawiac-rozmawialam",
+        "z-nimi"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-c3-e17",
+      "lines": [
+        "W grupie są nowe studentki.",
+        "Kasia rozmawiała z nimi wczoraj.",
+        "Chce je zaprosić na urodziny, bo chcą nas poznać."
+      ],
+      "meaning": {
+        "en": "New faces."
+      },
+      "statements": [
+        {
+          "text": "W grupie są nowe studentki.",
+          "meaning": {
+            "en": "There are new students in the group."
+          },
+          "true": true
+        },
+        {
+          "text": "Kasia nie rozmawiała z nimi.",
+          "meaning": {
+            "en": "Kasia hasn't talked to them."
+          },
+          "true": false
+        },
+        {
+          "text": "Kasia chce je zaprosić.",
+          "meaning": {
+            "en": "Kasia wants to invite them."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "nowy",
+        "z-nimi",
+        "wczoraj",
+        "zaprosic",
+        "urodziny",
+        "nas",
+        "poznac"
+      ]
+    }
+  ]
+}

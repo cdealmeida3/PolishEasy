@@ -95,6 +95,34 @@
     {
       "problem": "dictionary: paczkomat",
       "reason": "A real word the dictionary does not have yet: a paczkomat is a parcel locker, the machines all over Poland where you pick up and send parcels. The book's chapter 15 teaches it in its post office section."
+    },
+    {
+      "problem": "grammar: ZAIMKI_KROTKIE: mi",
+      "reason": "False alarm. The rule wants the long form (mnie) at the start of a sentence, but \"mi\" is never a sentence here: it is the Item on its own, a pair in a matching Exercise or a cell of a table, and in every sentence that uses it it stands after the verb or the adverb (podoba mi się, smutno mi), where the short form is right."
+    },
+    {
+      "problem": "grammar: ZAIMKI_KROTKIE: mu",
+      "reason": "False alarm. The rule wants the long form (jemu) at the start of a sentence, but \"mu\" is never a sentence here: it is the Item on its own, a pair in a matching Exercise or a cell of a table, and in every sentence that uses it it stands after the verb (podoba mu się, kupimy mu płytę), where the short form is right."
+    },
+    {
+      "problem": "grammar: BOWIEM_ZAS: ale jesteś dziś marudna!",
+      "reason": "False alarm. In this exclamation ale is not the conjunction \"but\" but the intensifying particle of exclamations (ale upał!, ale jesteś marudna!: how grumpy you are!), which always stands first. The book teaches it in chapter 17."
+    },
+    {
+      "problem": "grammar: BOWIEM_ZAS: ale jesteś dziś wesoła!",
+      "reason": "False alarm. In this exclamation ale is not the conjunction \"but\" but the intensifying particle of exclamations (ale upał!, ale jesteś marudna!: how grumpy you are!), which always stands first. The book teaches it in chapter 17."
+    },
+    {
+      "problem": "grammar: BOWIEM_ZAS: ale jestem dziś marudna!",
+      "reason": "False alarm. In this exclamation ale is not the conjunction \"but\" but the intensifying particle of exclamations (ale upał!, ale jesteś marudna!: how grumpy you are!), which always stands first. The book teaches it in chapter 17."
+    },
+    {
+      "problem": "grammar: BOWIEM_ZAS: Ale dziś upał! Gorąco mi.",
+      "reason": "False alarm. In this exclamation ale is not the conjunction \"but\" but the intensifying particle of exclamations (ale upał!, ale jesteś marudna!: how grumpy you are!), which always stands first. The book teaches it in chapter 17."
+    },
+    {
+      "problem": "grammar: PRZECINEK_POROWNANIE: To skandal, jak tu brudno!",
+      "reason": "False alarm. Jak here does not compare two things; it opens a clause (how dirty it is here), and a clause after \"to skandal\" is set off by a comma."
     }
   ]
 }

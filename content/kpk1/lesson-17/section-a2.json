@@ -1,0 +1,424 @@
+{
+  "id": "kpk1-l17-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Co o tym myślisz?",
+    "meaning": {
+      "en": "What do you think about it?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-a2-t01",
+      "before": "kpk1-l17-a2-e01",
+      "title": {
+        "en": "W tej bluzce"
+      },
+      "body": {
+        "en": "After *o* (about) and *w* (in), *ta bluzka* becomes *tej bluzce*: *co myślisz o tej bluzce?* (what do you think of this top?). With a masculine noun it is *tym*: *ładnie ci w tym kolorze* (that colour suits you). Instead of the noun, *w niej* (in it, for a feminine noun) and *w nim* (for a masculine one)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a2-e01",
+      "prompt": "bluzka",
+      "options": [
+        {
+          "en": "a jumper"
+        },
+        {
+          "en": "a blouse, a top (w tej bluzce: in this top)"
+        },
+        {
+          "en": "trousers"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bluzka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a2-e02",
+      "prompt": "tej",
+      "options": [
+        {
+          "en": "that one"
+        },
+        {
+          "en": "these"
+        },
+        {
+          "en": "this (after o, w, with a feminine noun: o tej bluzce)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tej"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-a2-e03",
+      "text": "co myślisz o tej bluzce?",
+      "meaning": {
+        "en": "what do you think of this top?"
+      },
+      "distractors": [
+        "co myślisz o tym swetrze?",
+        "co masz w tej bluzce?"
+      ],
+      "items": [
+        "co",
+        "myslec-myslisz",
+        "o-about",
+        "tej",
+        "bluzka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a2-e04",
+      "prompt": "spodnie",
+      "options": [
+        {
+          "en": "trousers (nie mam spodni: I have no trousers)"
+        },
+        {
+          "en": "a top"
+        },
+        {
+          "en": "shoes"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "spodnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a2-e05",
+      "prompt": "w niej",
+      "options": [
+        {
+          "en": "with her"
+        },
+        {
+          "en": "in it, in her (for a feminine noun: w tej bluzce, w niej)"
+        },
+        {
+          "en": "about her"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-niej"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a2-e06",
+      "prompt": "wyglądać",
+      "options": [
+        {
+          "en": "see (to see)"
+        },
+        {
+          "en": "wear (to wear)"
+        },
+        {
+          "en": "look (to look: dobrze wyglądać: to look good)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wygladac"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-a2-e07",
+      "text": "Ta bluzka jest modna. Będziesz w ___ dobrze wyglądać.",
+      "meaning": {
+        "en": "This top is fashionable. You will look good in it."
+      },
+      "gaps": [
+        [
+          "niej"
+        ]
+      ],
+      "distractors": [
+        "nim",
+        "nią"
+      ],
+      "items": [
+        "ta",
+        "bluzka",
+        "byc-jest",
+        "modny",
+        "bedziesz",
+        "w-niej",
+        "dobrze",
+        "wygladac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a2-e08",
+      "prompt": "ładnie ci w tym kolorze",
+      "options": [
+        {
+          "en": "that colour suits you (one friend)"
+        },
+        {
+          "en": "I like this colour"
+        },
+        {
+          "en": "what colour is it?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ladnie-ci-w-tym-kolorze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-a2-e09",
+      "prompt": {
+        "en": "that colour suits you"
+      },
+      "acceptedAnswers": [
+        "ładnie ci w tym kolorze"
+      ],
+      "distractors": [
+        "mi",
+        "ta"
+      ],
+      "items": [
+        "ladnie-ci-w-tym-kolorze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a2-e10",
+      "prompt": "nic ładnego",
+      "options": [
+        {
+          "en": "something nice"
+        },
+        {
+          "en": "nothing nice (nie mam nic ładnego: I have nothing nice)"
+        },
+        {
+          "en": "nothing new"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nic-ladnego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a2-e11",
+      "prompt": "na imprezę",
+      "options": [
+        {
+          "en": "to the cinema"
+        },
+        {
+          "en": "at a party"
+        },
+        {
+          "en": "to a party, for a party"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-impreze"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-a2-e12",
+      "acceptedAnswers": [
+        "spodnie"
+      ],
+      "meaning": {
+        "en": "trousers"
+      },
+      "items": [
+        "spodnie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-a2-e13",
+      "prompt": {
+        "en": "a top"
+      },
+      "acceptedAnswers": [
+        "bluzka"
+      ],
+      "items": [
+        "bluzka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-a2-e14",
+      "prompt": {
+        "en": "I have nothing nice for the party"
+      },
+      "acceptedAnswers": [
+        "nie mam nic ładnego na imprezę"
+      ],
+      "distractors": [
+        "ładna",
+        "jest"
+      ],
+      "items": [
+        "nie",
+        "miec-mam",
+        "nic-ladnego",
+        "na-impreze"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-a2-e15",
+      "pairs": [
+        {
+          "polish": "bluzka",
+          "meaning": {
+            "en": "a top"
+          }
+        },
+        {
+          "polish": "spodnie",
+          "meaning": {
+            "en": "trousers"
+          }
+        },
+        {
+          "polish": "sweter",
+          "meaning": {
+            "en": "a jumper"
+          }
+        },
+        {
+          "polish": "w niej",
+          "meaning": {
+            "en": "in it (a top)"
+          }
+        },
+        {
+          "polish": "w tej bluzce",
+          "meaning": {
+            "en": "in this top"
+          }
+        }
+      ],
+      "items": [
+        "bluzka",
+        "spodnie",
+        "sweter",
+        "w-niej",
+        "tej"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-a2-e16",
+      "text": "nie mam do niej spodni",
+      "meaning": {
+        "en": "I have no trousers to go with it"
+      },
+      "distractors": [
+        "nie mam do niej butów",
+        "mam do niej spodnie"
+      ],
+      "items": [
+        "nie",
+        "miec-mam",
+        "do-niej",
+        "spodnie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-a2-e17",
+      "text": "Nie mam nic ___ na imprezę.",
+      "meaning": {
+        "en": "I have nothing nice for the party."
+      },
+      "gaps": [
+        [
+          "ładnego"
+        ]
+      ],
+      "distractors": [
+        "ładna",
+        "ładnie"
+      ],
+      "items": [
+        "nie",
+        "miec-mam",
+        "nic-ladnego",
+        "na-impreze"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-a2-e18",
+      "lines": [
+        "Ewa idzie na imprezę i nie ma nic ładnego.",
+        "Ma nową bluzkę, ale nie ma do niej spodni.",
+        "Adam mówi, że ładnie jej w tym kolorze."
+      ],
+      "meaning": {
+        "en": "A party top."
+      },
+      "statements": [
+        {
+          "text": "Ewa ma nową bluzkę.",
+          "meaning": {
+            "en": "Ewa has a new top."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa ma spodnie do bluzki.",
+          "meaning": {
+            "en": "Ewa has trousers to go with the top."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam mówi, że bluzka jest ładna.",
+          "meaning": {
+            "en": "Adam says the top is nice."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "na-impreze",
+        "nic-ladnego",
+        "bluzka",
+        "do-niej",
+        "spodnie"
+      ]
+    }
+  ]
+}

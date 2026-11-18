@@ -1,0 +1,423 @@
+{
+  "id": "kpk1-l17-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Co o tym myślisz?",
+    "meaning": {
+      "en": "What do you think about it?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-a4-t01",
+      "before": "kpk1-l17-a4-e01",
+      "title": {
+        "en": "Smutno mi, zimno mi"
+      },
+      "body": {
+        "en": "How you feel takes *mi* (to me), not *ja*: *smutno mi* (I feel sad), *zimno mi* (I'm cold), *ciepło mi*, *gorąco mi*. So does wanting: *chce mi się pić* (I'm thirsty, I feel like a drink), *nie chce mi się* (I can't be bothered). *Co się dzieje?* asks what's wrong."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a4-e01",
+      "prompt": "smutno mi",
+      "options": [
+        {
+          "en": "I'm sorry"
+        },
+        {
+          "en": "I feel sad"
+        },
+        {
+          "en": "I'm cold"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "smutno-mi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a4-e02",
+      "prompt": "zimno mi",
+      "options": [
+        {
+          "en": "it's cold today"
+        },
+        {
+          "en": "I'm hot"
+        },
+        {
+          "en": "I'm cold"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zimno-mi"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-a4-e03",
+      "text": "zimno mi",
+      "meaning": {
+        "en": "I'm cold"
+      },
+      "distractors": [
+        "gorąco mi",
+        "smutno mi"
+      ],
+      "items": [
+        "zimno-mi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a4-e04",
+      "prompt": "gorąco mi",
+      "options": [
+        {
+          "en": "I'm hot"
+        },
+        {
+          "en": "I'm cold"
+        },
+        {
+          "en": "it's warm"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "goraco-mi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a4-e05",
+      "prompt": "chce mi się",
+      "options": [
+        {
+          "en": "I want you"
+        },
+        {
+          "en": "I feel like (chce mi się pić: I'm thirsty; nie chce mi się: I can't be bothered)"
+        },
+        {
+          "en": "I'd like"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "chce-mi-sie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-a4-e06",
+      "text": "Gorąco tu. Pić mi się ___.",
+      "meaning": {
+        "en": "It's hot in here. I'm thirsty."
+      },
+      "gaps": [
+        [
+          "chce"
+        ]
+      ],
+      "distractors": [
+        "chcę",
+        "chcesz"
+      ],
+      "items": [
+        "goraco",
+        "tu",
+        "pic",
+        "chce-mi-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a4-e07",
+      "prompt": "zły dzień",
+      "options": [
+        {
+          "en": "a bad idea"
+        },
+        {
+          "en": "a nice day"
+        },
+        {
+          "en": "a bad day (mam dziś zły dzień: I am having a bad day)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zly-dzien"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a4-e08",
+      "prompt": "co się dzieje?",
+      "options": [
+        {
+          "en": "what's wrong? what's going on?"
+        },
+        {
+          "en": "what's new?"
+        },
+        {
+          "en": "what is it called?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "co-sie-dzieje"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a4-e09",
+      "prompt": "beznadziejny",
+      "options": [
+        {
+          "en": "great"
+        },
+        {
+          "en": "hopeless, awful (beznadziejny, beznadziejna, beznadziejne)"
+        },
+        {
+          "en": "fashionable"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "beznadziejny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-a4-e10",
+      "prompt": {
+        "en": "I'm having a bad day today"
+      },
+      "acceptedAnswers": [
+        "mam dziś zły dzień",
+        "dziś mam zły dzień"
+      ],
+      "distractors": [
+        "dobry",
+        "jest"
+      ],
+      "items": [
+        "miec-mam",
+        "dzis",
+        "zly-dzien"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-a4-e11",
+      "acceptedAnswers": [
+        "smutno mi"
+      ],
+      "meaning": {
+        "en": "I feel sad"
+      },
+      "items": [
+        "smutno-mi"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-a4-e12",
+      "prompt": {
+        "en": "I'm hot"
+      },
+      "acceptedAnswers": [
+        "gorąco mi"
+      ],
+      "items": [
+        "goraco-mi"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-a4-e13",
+      "pairs": [
+        {
+          "polish": "smutno mi",
+          "meaning": {
+            "en": "I feel sad"
+          }
+        },
+        {
+          "polish": "zimno mi",
+          "meaning": {
+            "en": "I'm cold"
+          }
+        },
+        {
+          "polish": "gorąco mi",
+          "meaning": {
+            "en": "I'm hot"
+          }
+        },
+        {
+          "polish": "chce mi się pić",
+          "meaning": {
+            "en": "I'm thirsty"
+          }
+        },
+        {
+          "polish": "co się dzieje?",
+          "meaning": {
+            "en": "what's wrong?"
+          }
+        }
+      ],
+      "items": [
+        "smutno-mi",
+        "zimno-mi",
+        "goraco-mi",
+        "chce-mi-sie",
+        "pic",
+        "co-sie-dzieje"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l17-a4-e14",
+      "lines": [
+        "Mam dziś zły dzień.",
+        "Widzę. A co się dzieje?",
+        "Smutno mi. Pogoda jest beznadziejna.",
+        "To idziemy na kawę!"
+      ],
+      "meaning": {
+        "en": "A bad day."
+      },
+      "items": [
+        "miec-mam",
+        "dzis",
+        "zly-dzien",
+        "a",
+        "co-sie-dzieje",
+        "smutno-mi",
+        "pogoda",
+        "byc-jest",
+        "beznadziejny",
+        "to",
+        "isc-idziemy",
+        "na-kawe"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-a4-e15",
+      "text": "nie chce mi się jeść",
+      "meaning": {
+        "en": "I don't feel like eating"
+      },
+      "distractors": [
+        "chce mi się jeść",
+        "nie chce mi się spać"
+      ],
+      "items": [
+        "nie",
+        "chce-mi-sie",
+        "jesc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a4-e16",
+      "prompt": "marudny",
+      "options": [
+        {
+          "en": "cheerful"
+        },
+        {
+          "en": "tired"
+        },
+        {
+          "en": "grumpy, moaning (marudny, marudna, marudne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "marudny"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-a4-e17",
+      "lines": [
+        "Adam ma dziś zły dzień.",
+        "Pogoda jest beznadziejna i jest zimno.",
+        "Adam mówi: „Nie chce mi się jeść”."
+      ],
+      "meaning": {
+        "en": "Adam's bad day."
+      },
+      "statements": [
+        {
+          "text": "Adam ma dziś zły dzień.",
+          "meaning": {
+            "en": "Adam is having a bad day today."
+          },
+          "true": true
+        },
+        {
+          "text": "Jest gorąco.",
+          "meaning": {
+            "en": "It is hot."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam nie chce jeść.",
+          "meaning": {
+            "en": "Adam doesn't want to eat."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "adam",
+        "zly-dzien",
+        "pogoda",
+        "beznadziejny",
+        "zimno",
+        "mowic-mowi",
+        "chce-mi-sie",
+        "jesc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-a4-e18",
+      "text": "ale jesteś dziś marudna!",
+      "meaning": {
+        "en": "you're so grumpy today!"
+      },
+      "distractors": [
+        "ale jesteś dziś wesoła!",
+        "ale jestem dziś marudna!"
+      ],
+      "items": [
+        "ale",
+        "byc-jestes",
+        "dzis",
+        "marudny"
+      ]
+    }
+  ]
+}

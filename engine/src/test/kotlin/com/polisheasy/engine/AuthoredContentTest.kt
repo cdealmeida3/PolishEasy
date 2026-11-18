@@ -227,7 +227,7 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 } + List(17) { 8 } + List(14) { 8 } + List(15) { 8 } + List(18) { 8 } + List(17) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 } + List(17) { 8 } + List(14) { 8 } + List(15) { 8 } + List(18) { 8 } + List(17) { 8 } + List(15) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
@@ -245,7 +245,8 @@ class AuthoredContentTest {
                 listOf(8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 8, 7, 7, 8) +
                 listOf(8, 6, 6, 8, 7, 7, 8, 8, 7, 8, 7, 8, 8, 8, 4) +
                 listOf(8, 8, 7, 6, 8, 5, 8, 8, 8, 8, 8, 8, 8, 7, 7, 8, 7, 4) +
-                listOf(7, 7, 7, 8, 7, 6, 5, 6, 6, 8, 6, 5, 8, 6, 7, 7, 5),
+                listOf(7, 7, 7, 8, 7, 6, 5, 6, 6, 8, 6, 5, 8, 6, 7, 7, 5) +
+                listOf(7, 8, 7, 8, 8, 6, 8, 8, 8, 3, 8, 8, 7, 8, 6),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -299,8 +300,8 @@ class AuthoredContentTest {
         assertEquals(14, book[10].sections)
         assertEquals("Rodzina", book[11].title)
         assertEquals(13, book[11].sections)
-        assertTrue(book.take(17).none { it.coming })
-        assertTrue(book.drop(17).all { it.coming })
+        assertTrue(book.take(18).none { it.coming })
+        assertTrue(book.drop(18).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -730,7 +731,7 @@ class AuthoredContentTest {
         val had = setOf("brata", "siostrę", "syna", "córkę")
         had.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
         val fixedPhrases = listOf(listOf("nie", "ma", "za", "co"), listOf("nie", "ma", "sprawy"))
-        val negatedObjects = setOf("ani", "aparatu", "bananów", "brata", "chleba", "drobnych", "fasoli", "kantoru", "kompotu", "kwiaciarni", "pieniędzy", "piwa", "planów", "problemu", "rodzeństwa", "soku", "wody", "czasu", "kiełbasy", "go", "jabłek", "windy", "znaczków", "nowych", "pojęcia")
+        val negatedObjects = setOf("ani", "aparatu", "bananów", "brata", "chleba", "drobnych", "fasoli", "kantoru", "kompotu", "kwiaciarni", "pieniędzy", "piwa", "planów", "problemu", "rodzeństwa", "soku", "wody", "czasu", "kiełbasy", "go", "jabłek", "windy", "znaczków", "nowych", "pojęcia", "zdania", "nic", "spodni", "butów")
 
         spokenSentences.forEach { sentence ->
             val text = sentence.joinToString(" ")
@@ -745,7 +746,9 @@ class AuthoredContentTest {
                 val fixedPhrase = fixedPhrases.any { phrase -> sentence.drop(index).take(phrase.size) == phrase }
                 if (word == "nie" && sentence.getOrNull(index + 1) in formsOfMiec && !fixedPhrase) {
                     // Chapter 7 brings nie ma with the genitive: each one is checked by hand and listed here.
-                    assertTrue(index + 2 >= sentence.size || sentence[index + 2] in negatedObjects, "\"$text\" negates mieć with an object not known to be genitive")
+                    // Chapter 17 puts what it is for first: nie mam do niej spodni.
+                    val at = if (sentence.getOrNull(index + 2) == "do") index + 4 else index + 2
+                    assertTrue(at >= sentence.size || sentence[at] in negatedObjects, "\"$text\" negates mieć with an object not known to be genitive")
                 }
             }
         }

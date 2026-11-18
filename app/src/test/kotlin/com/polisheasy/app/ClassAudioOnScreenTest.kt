@@ -88,17 +88,17 @@ class ClassAudioOnScreenTest {
 
         back()
         // A chapter still being written lists its recordings too, by the book's sections.
-        lesson("Plotki, plotki. Kto z kim i o czym?")
+        lesson("Pokaż mi swoje mieszkanie…")
         scrollTo(text(R.string.listen_section, "A"))
         scrollTo(text(R.string.listen_section, "B"))
-        screen.onNodeWithContentDescription("186", substring = true).performScrollTo().assertIsDisplayed()
+        screen.onNodeWithContentDescription("193", substring = true).performScrollTo().assertIsDisplayed()
 
         // "Add them" goes to Class audio, and back comes back to the chapter.
         screen.onNodeWithText(text(R.string.listen_add)).performScrollTo().performClick()
         shows(R.string.class_audio_title)
         showsOnPhone(0)
         back()
-        shows("Plotki, plotki. Kto z kim i o czym?")
+        shows("Pokaż mi swoje mieszkanie…")
     }
 
     @Test

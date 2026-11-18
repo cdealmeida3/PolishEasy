@@ -1107,6 +1107,47 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 17 of the book over the real course in the light theme`() = chapter17Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 17 of the book over the real course in the dark theme`() = chapter17Tour("dark")
+
+    @Test
+    fun `chapter 17 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter17Tour("large") }
+
+    /**
+     * Chapter 17 over the real course: its Lesson screen at the top and its sections, then moods in
+     * section A, the dative table in section B, the pronouns after a preposition in section C, and
+     * souvenirs in section D.
+     */
+    private fun chapter17Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l17") }
+        screen.waitForIdle()
+        shot("351-chapter-17")
+        screen.onAllNodes(hasText("Powtórzenie", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("351-chapter-17-sections")
+        listOf(
+            "kpk1-l17-a4" to "352-chapter-17-moods",
+            "kpk1-l17-b3" to "353-chapter-17-dative",
+            "kpk1-l17-c2" to "354-chapter-17-pronouns",
+            "kpk1-l17-d1" to "355-chapter-17-souvenirs",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l17")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test

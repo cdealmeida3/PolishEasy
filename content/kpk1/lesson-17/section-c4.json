@@ -1,0 +1,437 @@
+{
+  "id": "kpk1-l17-c4",
+  "section": {
+    "letter": "C",
+    "heading": "Co o nim myślisz?",
+    "meaning": {
+      "en": "What do you think of him?"
+    },
+    "strands": [
+      "G",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-c4-t01",
+      "before": "kpk1-l17-c4-e01",
+      "title": {
+        "en": "Dla ciebie, dla niego"
+      },
+      "body": {
+        "en": "After *dla* (for), *do* (to) and other little words, *go* and *jej* get an *n*: *prezent dla niego*, *dla niej*, *idę do niego*. *Ty* becomes *ciebie*: *to dla ciebie*. When you stress a person, use the long forms: *jemu nie dam nic* (to him I'll give nothing), *kocham tylko ciebie* (I love only you), *tobie dam prezent*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c4-e01",
+      "prompt": "prezent",
+      "options": [
+        {
+          "en": "a present (prezenty: presents)"
+        },
+        {
+          "en": "a party"
+        },
+        {
+          "en": "a postcard"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "prezent"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c4-e02",
+      "prompt": "dla ciebie",
+      "options": [
+        {
+          "en": "with you"
+        },
+        {
+          "en": "for you (one friend)"
+        },
+        {
+          "en": "about you"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dla-ciebie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c4-e03",
+      "prompt": "dla niego",
+      "options": [
+        {
+          "en": "for her"
+        },
+        {
+          "en": "with him"
+        },
+        {
+          "en": "for him"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dla-niego"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-c4-e04",
+      "text": "to prezent dla ciebie",
+      "meaning": {
+        "en": "it's a present for you"
+      },
+      "distractors": [
+        "to prezent dla niego",
+        "to prezent dla mnie"
+      ],
+      "items": [
+        "to",
+        "prezent",
+        "dla-ciebie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c4-e05",
+      "prompt": "dla niej",
+      "options": [
+        {
+          "en": "for her"
+        },
+        {
+          "en": "for him"
+        },
+        {
+          "en": "about her"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dla-niej"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-c4-e06",
+      "text": "Mam prezent dla ___. To jego urodziny.",
+      "meaning": {
+        "en": "I have a present for him. It is his birthday."
+      },
+      "gaps": [
+        [
+          "niego"
+        ]
+      ],
+      "distractors": [
+        "jego",
+        "go"
+      ],
+      "items": [
+        "miec-mam",
+        "prezent",
+        "dla-niego",
+        "to",
+        "jego",
+        "urodziny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c4-e07",
+      "prompt": "ciebie",
+      "options": [
+        {
+          "en": "him"
+        },
+        {
+          "en": "you (one friend, stressed: kocham ciebie, nie jego)"
+        },
+        {
+          "en": "me"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ciebie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c4-e08",
+      "prompt": "jemu",
+      "options": [
+        {
+          "en": "him (lubię go)"
+        },
+        {
+          "en": "his"
+        },
+        {
+          "en": "to him (stressed: jemu nie dam nic)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jemu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c4-e09",
+      "prompt": "tobie",
+      "options": [
+        {
+          "en": "to you (one friend, stressed: tobie dam prezent)"
+        },
+        {
+          "en": "about you"
+        },
+        {
+          "en": "you (kocham cię)"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tobie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-c4-e10",
+      "prompt": {
+        "en": "I love only you"
+      },
+      "acceptedAnswers": [
+        "kocham tylko ciebie",
+        "tylko ciebie kocham"
+      ],
+      "distractors": [
+        "cię",
+        "go"
+      ],
+      "items": [
+        "kochac-kocham",
+        "tylko",
+        "ciebie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c4-e11",
+      "prompt": "do ciebie",
+      "options": [
+        {
+          "en": "from you"
+        },
+        {
+          "en": "to you (one friend: dzwonię do ciebie)"
+        },
+        {
+          "en": "with you"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-ciebie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-c4-e12",
+      "text": "Jutro idę do ___. Masz czas?",
+      "meaning": {
+        "en": "Tomorrow I'm coming to your place. Have you got time?"
+      },
+      "gaps": [
+        [
+          "ciebie"
+        ]
+      ],
+      "distractors": [
+        "cię",
+        "tobie"
+      ],
+      "items": [
+        "jutro",
+        "isc-ide",
+        "do-ciebie",
+        "miec-masz",
+        "czas"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-c4-e13",
+      "pairs": [
+        {
+          "polish": "dla ciebie",
+          "meaning": {
+            "en": "for you"
+          }
+        },
+        {
+          "polish": "dla niego",
+          "meaning": {
+            "en": "for him"
+          }
+        },
+        {
+          "polish": "dla niej",
+          "meaning": {
+            "en": "for her"
+          }
+        },
+        {
+          "polish": "jemu",
+          "meaning": {
+            "en": "to him (stressed)"
+          }
+        },
+        {
+          "polish": "tobie",
+          "meaning": {
+            "en": "to you (stressed)"
+          }
+        },
+        {
+          "polish": "ciebie",
+          "meaning": {
+            "en": "you (stressed)"
+          }
+        }
+      ],
+      "items": [
+        "dla-ciebie",
+        "dla-niego",
+        "dla-niej",
+        "jemu",
+        "tobie",
+        "ciebie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-c4-e14",
+      "acceptedAnswers": [
+        "dla niej"
+      ],
+      "meaning": {
+        "en": "for her"
+      },
+      "items": [
+        "dla-niej"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c4-e15",
+      "prompt": "dam",
+      "options": [
+        {
+          "en": "I have"
+        },
+        {
+          "en": "I take"
+        },
+        {
+          "en": "I'll give (dam ci prezent: I'll give you a present)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-c4-e16",
+      "text": "jemu nie dam nic",
+      "meaning": {
+        "en": "I won't give him anything"
+      },
+      "distractors": [
+        "tobie nie dam nic",
+        "jemu dam wszystko"
+      ],
+      "items": [
+        "jemu",
+        "nie",
+        "dam",
+        "nic"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-c4-e17",
+      "prompt": {
+        "en": "to you I will give a present"
+      },
+      "acceptedAnswers": [
+        "tobie dam prezent"
+      ],
+      "distractors": [
+        "ci",
+        "ciebie"
+      ],
+      "items": [
+        "tobie",
+        "dam",
+        "prezent"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-c4-e18",
+      "lines": [
+        "Kasia kupuje prezent dla Adama.",
+        "Ewa pyta: „Co kupiłaś dla niego?”",
+        "Kasia mówi: „Jeszcze nic, bo nie wiem, co mu się podoba”."
+      ],
+      "meaning": {
+        "en": "A present for Adam."
+      },
+      "statements": [
+        {
+          "text": "Kasia ma już prezent dla Adama.",
+          "meaning": {
+            "en": "Kasia already has a present for Adam."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa pyta o prezent.",
+          "meaning": {
+            "en": "Ewa asks about the present."
+          },
+          "true": true
+        },
+        {
+          "text": "Kasia nie wie, co mu się podoba.",
+          "meaning": {
+            "en": "Kasia doesn't know what he likes."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "prezent",
+        "ewa",
+        "dla-niego",
+        "nic",
+        "mu",
+        "podoba-sie"
+      ]
+    }
+  ]
+}

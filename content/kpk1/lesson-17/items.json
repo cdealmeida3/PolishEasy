@@ -1,0 +1,836 @@
+{
+  "items": [
+    {
+      "id": "o-about",
+      "text": "o",
+      "meaning": {
+        "en": "about (o czym?: about what?; o tobie: about you)"
+      }
+    },
+    {
+      "id": "co-o-tym-myslisz",
+      "text": "co o tym myślisz?",
+      "meaning": {
+        "en": "what do you think about it? (one friend)"
+      }
+    },
+    {
+      "id": "podoba-mi-sie",
+      "text": "podoba mi się",
+      "meaning": {
+        "en": "I like it (podoba mi się ta bluzka: I like this top)"
+      }
+    },
+    {
+      "id": "czy-ja-wiem",
+      "text": "czy ja wiem?",
+      "meaning": {
+        "en": "I'm not sure (literally: do I know?)"
+      }
+    },
+    {
+      "id": "nie-mam-zdania",
+      "text": "nie mam zdania",
+      "meaning": {
+        "en": "I have no opinion"
+      }
+    },
+    {
+      "id": "wszystko-jedno",
+      "text": "wszystko jedno",
+      "meaning": {
+        "en": "it's all the same to me, I don't mind"
+      }
+    },
+    {
+      "id": "nie-moge-sie-zdecydowac",
+      "text": "nie mogę się zdecydować",
+      "meaning": {
+        "en": "I can't decide"
+      }
+    },
+    {
+      "id": "bluzka",
+      "text": "bluzka",
+      "meaning": {
+        "en": "a blouse, a top (w tej bluzce: in this top)"
+      },
+      "forms": [
+        "bluzkę",
+        "bluzce"
+      ]
+    },
+    {
+      "id": "tej",
+      "text": "tej",
+      "meaning": {
+        "en": "this (after o, w, with a feminine noun: o tej bluzce)"
+      }
+    },
+    {
+      "id": "w-niej",
+      "text": "w niej",
+      "meaning": {
+        "en": "in it, in her (for a feminine noun: w tej bluzce, w niej)"
+      }
+    },
+    {
+      "id": "spodnie",
+      "text": "spodnie",
+      "meaning": {
+        "en": "trousers (nie mam spodni: I have no trousers)"
+      },
+      "forms": [
+        "spodni"
+      ]
+    },
+    {
+      "id": "ladnie-ci-w-tym-kolorze",
+      "text": "ładnie ci w tym kolorze",
+      "meaning": {
+        "en": "that colour suits you (one friend)"
+      }
+    },
+    {
+      "id": "nic-ladnego",
+      "text": "nic ładnego",
+      "meaning": {
+        "en": "nothing nice (nie mam nic ładnego: I have nothing nice)"
+      }
+    },
+    {
+      "id": "na-impreze",
+      "text": "na imprezę",
+      "meaning": {
+        "en": "to a party, for a party"
+      }
+    },
+    {
+      "id": "wygladac",
+      "text": "wyglądać",
+      "meaning": {
+        "en": "look (to look: dobrze wyglądać: to look good)"
+      }
+    },
+    {
+      "id": "wygladac-wygladam",
+      "text": "wyglądam",
+      "meaning": {
+        "en": "I look (dobrze wyglądam: I look good)"
+      }
+    },
+    {
+      "id": "wygladac-wygladasz",
+      "text": "wyglądasz",
+      "meaning": {
+        "en": "you look (one friend: ładnie wyglądasz: you look nice)"
+      }
+    },
+    {
+      "id": "wygladac-wyglada",
+      "text": "wygląda",
+      "meaning": {
+        "en": "he looks, she looks; it looks"
+      }
+    },
+    {
+      "id": "w-nim",
+      "text": "w nim",
+      "meaning": {
+        "en": "in it, in him (for a masculine noun: w tym swetrze, w nim)"
+      }
+    },
+    {
+      "id": "grubo",
+      "text": "grubo",
+      "meaning": {
+        "en": "fat (grubo wyglądam: I look fat)"
+      }
+    },
+    {
+      "id": "cos-ty",
+      "text": "coś ty!",
+      "meaning": {
+        "en": "come on! don't be silly! (to one friend)"
+      }
+    },
+    {
+      "id": "chcialabym",
+      "text": "chciałabym",
+      "meaning": {
+        "en": "I'd like (chciałabym: a woman says it; chciałbym: a man)"
+      },
+      "forms": [
+        "chciałbym"
+      ]
+    },
+    {
+      "id": "smutno-mi",
+      "text": "smutno mi",
+      "meaning": {
+        "en": "I feel sad"
+      }
+    },
+    {
+      "id": "zimno-mi",
+      "text": "zimno mi",
+      "meaning": {
+        "en": "I'm cold"
+      }
+    },
+    {
+      "id": "goraco-mi",
+      "text": "gorąco mi",
+      "meaning": {
+        "en": "I'm hot"
+      }
+    },
+    {
+      "id": "chce-mi-sie",
+      "text": "chce mi się",
+      "meaning": {
+        "en": "I feel like (chce mi się pić: I'm thirsty; nie chce mi się: I can't be bothered)"
+      }
+    },
+    {
+      "id": "zly-dzien",
+      "text": "zły dzień",
+      "meaning": {
+        "en": "a bad day (mam dziś zły dzień: I am having a bad day)"
+      }
+    },
+    {
+      "id": "co-sie-dzieje",
+      "text": "co się dzieje?",
+      "meaning": {
+        "en": "what's wrong? what's going on?"
+      }
+    },
+    {
+      "id": "beznadziejny",
+      "text": "beznadziejny",
+      "meaning": {
+        "en": "hopeless, awful (beznadziejny, beznadziejna, beznadziejne)"
+      },
+      "forms": [
+        "beznadziejna",
+        "beznadziejne"
+      ]
+    },
+    {
+      "id": "marudny",
+      "text": "marudny",
+      "meaning": {
+        "en": "grumpy, moaning (marudny, marudna, marudne)"
+      },
+      "forms": [
+        "marudna",
+        "marudne"
+      ]
+    },
+    {
+      "id": "fuj",
+      "text": "fuj!",
+      "meaning": {
+        "en": "yuck!"
+      }
+    },
+    {
+      "id": "strasznie",
+      "text": "strasznie",
+      "meaning": {
+        "en": "terribly, awfully (strasznie mi zimno: I am awfully cold)"
+      }
+    },
+    {
+      "id": "upal",
+      "text": "upał",
+      "meaning": {
+        "en": "scorching heat, a heatwave (ale upał!: it is so hot!)"
+      }
+    },
+    {
+      "id": "czekac",
+      "text": "czekać",
+      "meaning": {
+        "en": "wait (to wait: nie lubię czekać: I do not like waiting)"
+      }
+    },
+    {
+      "id": "w-korku",
+      "text": "w korku",
+      "meaning": {
+        "en": "in a traffic jam"
+      }
+    },
+    {
+      "id": "skandal",
+      "text": "skandal",
+      "meaning": {
+        "en": "a scandal (to skandal!: it is outrageous!)"
+      }
+    },
+    {
+      "id": "brudno",
+      "text": "brudno",
+      "meaning": {
+        "en": "dirty (jak tu brudno!: how dirty it is here!)"
+      }
+    },
+    {
+      "id": "chodzmy",
+      "text": "chodźmy",
+      "meaning": {
+        "en": "let's go (chodźmy na obiad: let's go and eat)"
+      }
+    },
+    {
+      "id": "podoba-ci-sie",
+      "text": "podoba ci się?",
+      "meaning": {
+        "en": "do you like it? (one friend: podoba ci się ten film?)"
+      }
+    },
+    {
+      "id": "podobaja-mi-sie",
+      "text": "podobają mi się",
+      "meaning": {
+        "en": "I like them (podobają mi się te spodnie: I like these trousers)"
+      }
+    },
+    {
+      "id": "nie-bardzo",
+      "text": "nie bardzo",
+      "meaning": {
+        "en": "not really, not much"
+      }
+    },
+    {
+      "id": "sliczny",
+      "text": "śliczny",
+      "meaning": {
+        "en": "lovely, pretty (śliczny, śliczna, śliczne)"
+      },
+      "forms": [
+        "śliczna",
+        "śliczne"
+      ]
+    },
+    {
+      "id": "denerwuje-mnie-to",
+      "text": "denerwuje mnie to",
+      "meaning": {
+        "en": "it annoys me, it gets on my nerves"
+      }
+    },
+    {
+      "id": "irytuje-mnie-to",
+      "text": "irytuje mnie to",
+      "meaning": {
+        "en": "it irritates me"
+      }
+    },
+    {
+      "id": "mi",
+      "text": "mi",
+      "meaning": {
+        "en": "to me, me (podoba mi się: I like it)"
+      }
+    },
+    {
+      "id": "ci",
+      "text": "ci",
+      "meaning": {
+        "en": "to you, you (one friend: podoba ci się?: do you like it?)"
+      }
+    },
+    {
+      "id": "mu",
+      "text": "mu",
+      "meaning": {
+        "en": "to him, him (podoba mu się: he likes it)"
+      }
+    },
+    {
+      "id": "jej-dat",
+      "text": "jej",
+      "meaning": {
+        "en": "to her, her (podoba jej się: she likes it)"
+      }
+    },
+    {
+      "id": "nam",
+      "text": "nam",
+      "meaning": {
+        "en": "to us, us (podoba nam się: we like it)"
+      }
+    },
+    {
+      "id": "wam",
+      "text": "wam",
+      "meaning": {
+        "en": "to you, you (several people: podoba wam się?)"
+      }
+    },
+    {
+      "id": "im",
+      "text": "im",
+      "meaning": {
+        "en": "to them, them (podoba im się: they like it)"
+      }
+    },
+    {
+      "id": "podoba-sie",
+      "text": "podoba się",
+      "meaning": {
+        "en": "is liked, appeals to (podoba mu się: he likes it; podobają się: for more than one)"
+      }
+    },
+    {
+      "id": "plotki",
+      "text": "plotki",
+      "meaning": {
+        "en": "gossip (plotki, plotki!)"
+      }
+    },
+    {
+      "id": "zakochany",
+      "text": "zakochany",
+      "meaning": {
+        "en": "in love (zakochany, zakochana, zakochane)"
+      },
+      "forms": [
+        "zakochana",
+        "zakochane"
+      ]
+    },
+    {
+      "id": "kochac-kochasz",
+      "text": "kochasz",
+      "meaning": {
+        "en": "you love (one friend)"
+      }
+    },
+    {
+      "id": "kochac-kocha",
+      "text": "kocha",
+      "meaning": {
+        "en": "he loves, she loves"
+      }
+    },
+    {
+      "id": "sprawy-rodzinne",
+      "text": "sprawy rodzinne",
+      "meaning": {
+        "en": "family matters"
+      }
+    },
+    {
+      "id": "o-czyms-innym",
+      "text": "o czymś innym",
+      "meaning": {
+        "en": "about something else"
+      }
+    },
+    {
+      "id": "spokojnie",
+      "text": "spokojnie",
+      "meaning": {
+        "en": "calm down, take it easy; calmly"
+      }
+    },
+    {
+      "id": "nieprawda",
+      "text": "nieprawda!",
+      "meaning": {
+        "en": "that's not true!"
+      }
+    },
+    {
+      "id": "o-mnie",
+      "text": "o mnie",
+      "meaning": {
+        "en": "about me"
+      }
+    },
+    {
+      "id": "o-tobie",
+      "text": "o tobie",
+      "meaning": {
+        "en": "about you (one friend)"
+      }
+    },
+    {
+      "id": "o-nim",
+      "text": "o nim",
+      "meaning": {
+        "en": "about him; about it (for a masculine noun)"
+      }
+    },
+    {
+      "id": "o-niej",
+      "text": "o niej",
+      "meaning": {
+        "en": "about her; about it (for a feminine noun)"
+      }
+    },
+    {
+      "id": "o-nas",
+      "text": "o nas",
+      "meaning": {
+        "en": "about us"
+      }
+    },
+    {
+      "id": "o-was",
+      "text": "o was",
+      "meaning": {
+        "en": "about you (several people)"
+      }
+    },
+    {
+      "id": "o-nich",
+      "text": "o nich",
+      "meaning": {
+        "en": "about them"
+      }
+    },
+    {
+      "id": "zaprosic",
+      "text": "zaprosić",
+      "meaning": {
+        "en": "invite (to invite, once: chce je zaprosić: he wants to invite them)"
+      }
+    },
+    {
+      "id": "poznac",
+      "text": "poznać",
+      "meaning": {
+        "en": "get to know, meet (to meet someone for the first time)"
+      }
+    },
+    {
+      "id": "rozmawiac-rozmawialam",
+      "text": "rozmawiałam",
+      "meaning": {
+        "en": "I talked (rozmawiałam: a woman says it; rozmawiałem: a man)"
+      },
+      "forms": [
+        "rozmawiałem"
+      ]
+    },
+    {
+      "id": "podobal-sie",
+      "text": "podobał się",
+      "meaning": {
+        "en": "was liked (podobał mi się film: I liked the film; podobała, podobało, podobały for a feminine, a neuter, more than one)"
+      },
+      "forms": [
+        "podobała się",
+        "podobało się",
+        "podobały się"
+      ]
+    },
+    {
+      "id": "dla-ciebie",
+      "text": "dla ciebie",
+      "meaning": {
+        "en": "for you (one friend)"
+      }
+    },
+    {
+      "id": "dla-niego",
+      "text": "dla niego",
+      "meaning": {
+        "en": "for him"
+      }
+    },
+    {
+      "id": "dla-niej",
+      "text": "dla niej",
+      "meaning": {
+        "en": "for her"
+      }
+    },
+    {
+      "id": "ciebie",
+      "text": "ciebie",
+      "meaning": {
+        "en": "you (one friend, stressed: kocham ciebie, nie jego)"
+      }
+    },
+    {
+      "id": "jemu",
+      "text": "jemu",
+      "meaning": {
+        "en": "to him (stressed: jemu nie dam nic)"
+      }
+    },
+    {
+      "id": "prezent",
+      "text": "prezent",
+      "meaning": {
+        "en": "a present (prezenty: presents)"
+      },
+      "forms": [
+        "prezenty"
+      ]
+    },
+    {
+      "id": "dam",
+      "text": "dam",
+      "meaning": {
+        "en": "I'll give (dam ci prezent: I'll give you a present)"
+      }
+    },
+    {
+      "id": "tobie",
+      "text": "tobie",
+      "meaning": {
+        "en": "to you (one friend, stressed: tobie dam prezent)"
+      }
+    },
+    {
+      "id": "pamiatka",
+      "text": "pamiątka",
+      "meaning": {
+        "en": "a souvenir (pamiątki z Polski: souvenirs from Poland)"
+      },
+      "forms": [
+        "pamiątki"
+      ]
+    },
+    {
+      "id": "bursztyn",
+      "text": "bursztyn",
+      "meaning": {
+        "en": "amber (z bursztynu: made of amber)"
+      },
+      "forms": [
+        "z bursztynu"
+      ]
+    },
+    {
+      "id": "bizuteria",
+      "text": "biżuteria",
+      "meaning": {
+        "en": "jewellery (srebrna biżuteria: silver jewellery)"
+      },
+      "forms": [
+        "biżuterię"
+      ]
+    },
+    {
+      "id": "srebrny",
+      "text": "srebrny",
+      "meaning": {
+        "en": "silver (srebrny, srebrna, srebrne)"
+      },
+      "forms": [
+        "srebrna",
+        "srebrne"
+      ]
+    },
+    {
+      "id": "oscypek",
+      "text": "oscypek",
+      "meaning": {
+        "en": "oscypek, a smoked sheep cheese from the mountains"
+      }
+    },
+    {
+      "id": "obwarzanek",
+      "text": "obwarzanek",
+      "meaning": {
+        "en": "obwarzanek, a ring of bread from Kraków"
+      }
+    },
+    {
+      "id": "grzaniec",
+      "text": "grzaniec",
+      "meaning": {
+        "en": "mulled wine"
+      }
+    },
+    {
+      "id": "kupimy",
+      "text": "kupimy",
+      "meaning": {
+        "en": "we'll buy (kupimy mu płytę: we'll buy him a record)"
+      }
+    },
+    {
+      "id": "co-mu-kupic",
+      "text": "co mu kupić?",
+      "meaning": {
+        "en": "what shall we buy him?"
+      }
+    },
+    {
+      "id": "plyta",
+      "text": "płyta",
+      "meaning": {
+        "en": "a record, a CD (kupić płytę: to buy a record)"
+      },
+      "forms": [
+        "płytę"
+      ]
+    },
+    {
+      "id": "koszulka",
+      "text": "koszulka",
+      "meaning": {
+        "en": "a T-shirt (kupić koszulkę: to buy a T-shirt)"
+      },
+      "forms": [
+        "koszulkę"
+      ]
+    },
+    {
+      "id": "magnes",
+      "text": "magnes",
+      "meaning": {
+        "en": "a fridge magnet, a magnet"
+      }
+    },
+    {
+      "id": "ksiazka-do-sluchania",
+      "text": "książka do słuchania",
+      "meaning": {
+        "en": "an audiobook (książki do słuchania: audiobooks)"
+      },
+      "forms": [
+        "książkę do słuchania",
+        "książki do słuchania"
+      ]
+    },
+    {
+      "id": "haftowany",
+      "text": "haftowany",
+      "meaning": {
+        "en": "embroidered (haftowany, haftowana, haftowane)"
+      },
+      "forms": [
+        "haftowana",
+        "haftowane"
+      ]
+    },
+    {
+      "id": "tradycyjny",
+      "text": "tradycyjny",
+      "meaning": {
+        "en": "traditional (tradycyjny, tradycyjna, tradycyjne)"
+      },
+      "forms": [
+        "tradycyjna",
+        "tradycyjne"
+      ]
+    },
+    {
+      "id": "co-ty-na-to",
+      "text": "co ty na to?",
+      "meaning": {
+        "en": "what do you say? what do you think? (one friend)"
+      }
+    },
+    {
+      "id": "idealnie",
+      "text": "idealnie!",
+      "meaning": {
+        "en": "perfect!"
+      }
+    },
+    {
+      "id": "to-bez-sensu",
+      "text": "to bez sensu",
+      "meaning": {
+        "en": "that makes no sense, that is pointless"
+      }
+    },
+    {
+      "id": "banalny",
+      "text": "banalny",
+      "meaning": {
+        "en": "unoriginal, too obvious (banalny, banalna, banalne)"
+      },
+      "forms": [
+        "banalna",
+        "banalne"
+      ]
+    },
+    {
+      "id": "cos-specjalnego",
+      "text": "coś specjalnego",
+      "meaning": {
+        "en": "something special"
+      }
+    },
+    {
+      "id": "cos-praktycznego",
+      "text": "coś praktycznego",
+      "meaning": {
+        "en": "something practical"
+      }
+    },
+    {
+      "id": "lepiej",
+      "text": "lepiej",
+      "meaning": {
+        "en": "better (lepiej coś praktycznego: something practical would be better)"
+      }
+    },
+    {
+      "id": "nie-znam-sie-na-tym",
+      "text": "nie znam się na tym",
+      "meaning": {
+        "en": "I know nothing about it, it's not my thing"
+      }
+    },
+    {
+      "id": "sto-lat",
+      "text": "sto lat!",
+      "meaning": {
+        "en": "happy birthday! (a song: may you live a hundred years)"
+      }
+    },
+    {
+      "id": "moi-drodzy",
+      "text": "moi drodzy",
+      "meaning": {
+        "en": "my dear friends, my dears"
+      }
+    },
+    {
+      "id": "przyjaciel",
+      "text": "przyjaciel",
+      "meaning": {
+        "en": "a friend, a close friend (przyjaciele: friends; dużo przyjaciół: a lot of friends)"
+      },
+      "forms": [
+        "przyjaciele",
+        "przyjaciół"
+      ]
+    },
+    {
+      "id": "tak-duzo",
+      "text": "tak dużo",
+      "meaning": {
+        "en": "so much, so many"
+      }
+    },
+    {
+      "id": "dziekuje-za",
+      "text": "dziękuję za",
+      "meaning": {
+        "en": "thank you for (dziękuję za prezent: thank you for the present)"
+      }
+    },
+    {
+      "id": "wszystkie",
+      "text": "wszystkie",
+      "meaning": {
+        "en": "all (wszystkie prezenty: all the presents)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "id": "kpk1-l17-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Co o nim myślisz?",
+    "meaning": {
+      "en": "What do you think of him?"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-c1-t01",
+      "before": "kpk1-l17-c1-e01",
+      "title": {
+        "en": "Plotki, plotki"
+      },
+      "body": {
+        "en": "Friends gossip, *plotki*: who likes whom and who is *zakochany* (in love). *Kochać* is to love: *kocham*, *kochasz*, *kocha*. When the talk gets too personal, *porozmawiajmy o czymś innym* (let's talk about something else), *spokojnie!* (calm down!) or simply *nieprawda!* (that's not true!)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c1-e01",
+      "prompt": "plotki",
+      "options": [
+        {
+          "en": "problems"
+        },
+        {
+          "en": "gossip (plotki, plotki!)"
+        },
+        {
+          "en": "presents"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "plotki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c1-e02",
+      "prompt": "zakochany",
+      "options": [
+        {
+          "en": "married"
+        },
+        {
+          "en": "tired"
+        },
+        {
+          "en": "in love (zakochany, zakochana, zakochane)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zakochany"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-c1-e03",
+      "text": "jesteś w nim zakochana!",
+      "meaning": {
+        "en": "you're in love with him!"
+      },
+      "distractors": [
+        "jesteś w nim zakochany!",
+        "jestem w nim zakochana!"
+      ],
+      "items": [
+        "byc-jestes",
+        "w-nim",
+        "zakochany"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c1-e04",
+      "prompt": "kochasz",
+      "options": [
+        {
+          "en": "you love (one friend)"
+        },
+        {
+          "en": "you know"
+        },
+        {
+          "en": "you like"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kochac-kochasz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c1-e05",
+      "prompt": "kocha",
+      "options": [
+        {
+          "en": "he lives, she lives"
+        },
+        {
+          "en": "he loves, she loves"
+        },
+        {
+          "en": "he waits, she waits"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kochac-kocha"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-c1-e06",
+      "text": "Wiem, że go ___!",
+      "meaning": {
+        "en": "I know that you love him!"
+      },
+      "gaps": [
+        [
+          "kochasz"
+        ]
+      ],
+      "distractors": [
+        "kocham",
+        "kocha"
+      ],
+      "items": [
+        "wiem",
+        "ze",
+        "go",
+        "kochac-kochasz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c1-e07",
+      "prompt": "sprawy rodzinne",
+      "options": [
+        {
+          "en": "family photos"
+        },
+        {
+          "en": "a family party"
+        },
+        {
+          "en": "family matters"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sprawy-rodzinne"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c1-e08",
+      "prompt": "o czymś innym",
+      "options": [
+        {
+          "en": "about something else"
+        },
+        {
+          "en": "about everything"
+        },
+        {
+          "en": "something else"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "o-czyms-innym"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-c1-e09",
+      "prompt": {
+        "en": "we're talking about something else"
+      },
+      "acceptedAnswers": [
+        "mówimy o czymś innym",
+        "o czymś innym mówimy"
+      ],
+      "distractors": [
+        "coś",
+        "inny"
+      ],
+      "items": [
+        "mowic-mowimy",
+        "o-czyms-innym"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c1-e10",
+      "prompt": "spokojnie",
+      "options": [
+        {
+          "en": "quickly"
+        },
+        {
+          "en": "calm down, take it easy; calmly"
+        },
+        {
+          "en": "nicely"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spokojnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-c1-e11",
+      "prompt": "nieprawda!",
+      "options": [
+        {
+          "en": "that's right!"
+        },
+        {
+          "en": "of course!"
+        },
+        {
+          "en": "that's not true!"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nieprawda"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-c1-e12",
+      "acceptedAnswers": [
+        "nieprawda"
+      ],
+      "meaning": {
+        "en": "that's not true!"
+      },
+      "items": [
+        "nieprawda"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-c1-e13",
+      "prompt": {
+        "en": "calm down"
+      },
+      "acceptedAnswers": [
+        "spokojnie"
+      ],
+      "items": [
+        "spokojnie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-c1-e14",
+      "prompt": {
+        "en": "grumpy (a woman)"
+      },
+      "acceptedAnswers": [
+        "marudna"
+      ],
+      "items": [
+        "marudny"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-c1-e15",
+      "pairs": [
+        {
+          "polish": "plotki",
+          "meaning": {
+            "en": "gossip"
+          }
+        },
+        {
+          "polish": "zakochana",
+          "meaning": {
+            "en": "in love"
+          }
+        },
+        {
+          "polish": "kochasz",
+          "meaning": {
+            "en": "you love"
+          }
+        },
+        {
+          "polish": "spokojnie!",
+          "meaning": {
+            "en": "calm down!"
+          }
+        },
+        {
+          "polish": "nieprawda!",
+          "meaning": {
+            "en": "that's not true!"
+          }
+        }
+      ],
+      "items": [
+        "plotki",
+        "zakochany",
+        "kochac-kochasz",
+        "spokojnie",
+        "nieprawda"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l17-c1-e16",
+      "lines": [
+        "Wiem, że jesteś w nim zakochana!",
+        "Nieprawda!",
+        "Tak, tak! I wiem, że go kochasz.",
+        "Spokojnie! Może o czymś innym?"
+      ],
+      "meaning": {
+        "en": "Gossip."
+      },
+      "items": [
+        "wiem",
+        "ze",
+        "byc-jestes",
+        "w-nim",
+        "zakochany",
+        "nieprawda",
+        "tak",
+        "i",
+        "go",
+        "kochac-kochasz",
+        "spokojnie",
+        "moze",
+        "o-czyms-innym"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-c1-e17",
+      "text": "Adam ją kocha",
+      "meaning": {
+        "en": "Adam loves her"
+      },
+      "distractors": [
+        "Adam go kocha",
+        "Adam ją lubi"
+      ],
+      "items": [
+        "adam",
+        "ja-acc",
+        "kochac-kocha"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-c1-e18",
+      "lines": [
+        "Ewa ma różne sprawy rodzinne, ale nie chce o nich mówić.",
+        "Woli porozmawiać o czymś innym.",
+        "Na przykład o tym, że Adam kocha Kasię."
+      ],
+      "meaning": {
+        "en": "Ewa would rather not say."
+      },
+      "statements": [
+        {
+          "text": "Ewa chce mówić o sprawach rodzinnych.",
+          "meaning": {
+            "en": "Ewa wants to talk about family matters."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa woli porozmawiać o czymś innym.",
+          "meaning": {
+            "en": "Ewa would rather talk about something else."
+          },
+          "true": true
+        },
+        {
+          "text": "Adam kocha Kasię.",
+          "meaning": {
+            "en": "Adam loves Kasia."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "sprawy-rodzinne",
+        "o-czyms-innym",
+        "adam",
+        "kochac-kocha"
+      ]
+    }
+  ]
+}

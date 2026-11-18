@@ -1,0 +1,404 @@
+{
+  "id": "kpk1-l17-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Co o tym myślisz?",
+    "meaning": {
+      "en": "What do you think about it?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-a1-t01",
+      "before": "kpk1-l17-a1-e01",
+      "title": {
+        "en": "Co o tym myślisz?"
+      },
+      "body": {
+        "en": "To ask for an opinion, *co o tym myślisz?* (what do you think about it?). You can say *podoba mi się* (I like it), *nie podoba mi się*, or, when you are not sure, *czy ja wiem?* *Nie mam zdania* is I have no opinion, *wszystko jedno* is I don't mind, and *nie mogę się zdecydować* is I can't decide."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a1-e01",
+      "prompt": "co o tym myślisz?",
+      "options": [
+        {
+          "en": "what do you think about it? (one friend)"
+        },
+        {
+          "en": "what are you doing?"
+        },
+        {
+          "en": "where are you going?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "co-o-tym-myslisz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a1-e02",
+      "prompt": "podoba mi się",
+      "options": [
+        {
+          "en": "I don't know"
+        },
+        {
+          "en": "I like it (podoba mi się ta bluzka: I like this top)"
+        },
+        {
+          "en": "I'm sorry"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "podoba-mi-sie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-a1-e03",
+      "text": "podoba mi się",
+      "meaning": {
+        "en": "I like it"
+      },
+      "distractors": [
+        "nie podoba mi się",
+        "przykro mi"
+      ],
+      "items": [
+        "podoba-mi-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a1-e04",
+      "prompt": "czy ja wiem?",
+      "options": [
+        {
+          "en": "I know"
+        },
+        {
+          "en": "I have no time"
+        },
+        {
+          "en": "I'm not sure (literally: do I know?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czy-ja-wiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a1-e05",
+      "prompt": "nie mam zdania",
+      "options": [
+        {
+          "en": "I have no opinion"
+        },
+        {
+          "en": "I have no idea where"
+        },
+        {
+          "en": "I have no plans"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nie-mam-zdania"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-a1-e06",
+      "prompt": {
+        "en": "I don't like it"
+      },
+      "acceptedAnswers": [
+        "nie podoba mi się"
+      ],
+      "distractors": [
+        "ci",
+        "lubię"
+      ],
+      "items": [
+        "nie",
+        "podoba-mi-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a1-e07",
+      "prompt": "wszystko jedno",
+      "options": [
+        {
+          "en": "everything is fine"
+        },
+        {
+          "en": "it's all the same to me, I don't mind"
+        },
+        {
+          "en": "that's all"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wszystko-jedno"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a1-e08",
+      "prompt": "nie mogę się zdecydować",
+      "options": [
+        {
+          "en": "I can't come"
+        },
+        {
+          "en": "I don't feel like it"
+        },
+        {
+          "en": "I can't decide"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nie-moge-sie-zdecydowac"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-a1-e09",
+      "text": "Co o tym ___? Podoba mi się.",
+      "meaning": {
+        "en": "What do you think about it? I like it."
+      },
+      "gaps": [
+        [
+          "myślisz"
+        ]
+      ],
+      "distractors": [
+        "myślę",
+        "myśli"
+      ],
+      "items": [
+        "co-o-tym-myslisz",
+        "podoba-mi-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a1-e10",
+      "prompt": "o",
+      "options": [
+        {
+          "en": "about (o czym?: about what?; o tobie: about you)"
+        },
+        {
+          "en": "with"
+        },
+        {
+          "en": "for"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "o-about"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-a1-e11",
+      "acceptedAnswers": [
+        "wszystko jedno"
+      ],
+      "meaning": {
+        "en": "I don't mind"
+      },
+      "items": [
+        "wszystko-jedno"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-a1-e12",
+      "prompt": {
+        "en": "I have no opinion"
+      },
+      "acceptedAnswers": [
+        "nie mam zdania"
+      ],
+      "items": [
+        "nie-mam-zdania"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-a1-e13",
+      "pairs": [
+        {
+          "polish": "podoba mi się",
+          "meaning": {
+            "en": "I like it"
+          }
+        },
+        {
+          "polish": "czy ja wiem?",
+          "meaning": {
+            "en": "I'm not sure"
+          }
+        },
+        {
+          "polish": "nie mam zdania",
+          "meaning": {
+            "en": "I have no opinion"
+          }
+        },
+        {
+          "polish": "wszystko jedno",
+          "meaning": {
+            "en": "I don't mind"
+          }
+        },
+        {
+          "polish": "nie mogę się zdecydować",
+          "meaning": {
+            "en": "I can't decide"
+          }
+        }
+      ],
+      "items": [
+        "podoba-mi-sie",
+        "czy-ja-wiem",
+        "nie-mam-zdania",
+        "wszystko-jedno",
+        "nie-moge-sie-zdecydowac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-a1-e14",
+      "text": "o czym myślisz?",
+      "meaning": {
+        "en": "what are you thinking about?"
+      },
+      "distractors": [
+        "o czym mówisz?",
+        "co myślisz?"
+      ],
+      "items": [
+        "o-about",
+        "czym",
+        "myslec-myslisz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-a1-e15",
+      "prompt": {
+        "en": "I can't decide"
+      },
+      "acceptedAnswers": [
+        "nie mogę się zdecydować"
+      ],
+      "distractors": [
+        "chcę",
+        "mam"
+      ],
+      "items": [
+        "nie-moge-sie-zdecydowac"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l17-a1-e16",
+      "lines": [
+        "Gdzie chcesz iść?",
+        "Wszystko jedno. Nie mam zdania.",
+        "Do kina czy do kawiarni?",
+        "Czy ja wiem? Nie mogę się zdecydować."
+      ],
+      "meaning": {
+        "en": "Where to go?"
+      },
+      "items": [
+        "gdzie",
+        "chciec-chcesz",
+        "isc",
+        "wszystko-jedno",
+        "nie-mam-zdania",
+        "do-kina",
+        "czy",
+        "czy-ja-wiem",
+        "nie-moge-sie-zdecydowac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-a1-e17",
+      "prompt": {
+        "en": "I'm not sure"
+      },
+      "acceptedAnswers": [
+        "czy ja wiem?"
+      ],
+      "items": [
+        "czy-ja-wiem"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-a1-e18",
+      "lines": [
+        "Ewa pyta Adama: „Co o tym myślisz?”",
+        "Adam mówi: „Czy ja wiem? Nie mam zdania”.",
+        "Ewa nie może się zdecydować."
+      ],
+      "meaning": {
+        "en": "Ewa asks for an opinion."
+      },
+      "statements": [
+        {
+          "text": "Adam ma zdanie.",
+          "meaning": {
+            "en": "Adam has an opinion."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa pyta o zdanie.",
+          "meaning": {
+            "en": "Ewa asks for an opinion."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa nie może się zdecydować.",
+          "meaning": {
+            "en": "Ewa can't decide."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "co-o-tym-myslisz",
+        "adam",
+        "czy-ja-wiem",
+        "nie-mam-zdania"
+      ]
+    }
+  ]
+}

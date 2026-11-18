@@ -1,0 +1,443 @@
+{
+  "id": "kpk1-l17-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Podoba ci się?",
+    "meaning": {
+      "en": "Do you like it?"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-b2-t01",
+      "before": "kpk1-l17-b2-e01",
+      "title": {
+        "en": "Lubię Adama, podoba mi się Adam"
+      },
+      "body": {
+        "en": "*Lubię* takes what you like as its object: *lubię Adama*, *lubię tę dziewczynę*. With *podoba mi się* the thing you like is the subject, in its basic form: *podoba mi się Adam*, *podoba mi się ta dziewczyna*. For more than one, *podobają mi się*: *podobają mi się te buty*. *Lubię* is for what you know well; *podoba mi się* often for a first look."
+      },
+      "table": {
+        "title": {
+          "en": "Lubię · podoba mi się"
+        },
+        "columns": [
+          {
+            "header": "lubię"
+          },
+          {
+            "header": "podoba mi się"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Adama",
+              "Adam"
+            ]
+          },
+          {
+            "cells": [
+              "tę dziewczynę",
+              "ta dziewczyna"
+            ]
+          },
+          {
+            "cells": [
+              "to dziecko",
+              "to dziecko"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b2-e01",
+      "prompt": "podoba ci się?",
+      "options": [
+        {
+          "en": "do you know it?"
+        },
+        {
+          "en": "do you want it?"
+        },
+        {
+          "en": "do you like it? (one friend: podoba ci się ten film?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "podoba-ci-sie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-b2-e02",
+      "text": "podoba ci się ta bluzka?",
+      "meaning": {
+        "en": "do you like this top?"
+      },
+      "distractors": [
+        "podoba mi się ta bluzka",
+        "podoba ci się ten sweter?"
+      ],
+      "items": [
+        "podoba-ci-sie",
+        "ta",
+        "bluzka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b2-e03",
+      "prompt": "podobają mi się",
+      "options": [
+        {
+          "en": "I like them (podobają mi się te spodnie: I like these trousers)"
+        },
+        {
+          "en": "I like it"
+        },
+        {
+          "en": "I like you"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "podobaja-mi-sie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-b2-e04",
+      "text": "Lubię ___ dziecko, bo jest wesołe.",
+      "meaning": {
+        "en": "I like this child, because it is cheerful."
+      },
+      "gaps": [
+        [
+          "to"
+        ]
+      ],
+      "distractors": [
+        "ta",
+        "ten"
+      ],
+      "items": [
+        "lubic-lubie",
+        "to",
+        "dziecko",
+        "bo",
+        "byc-jest",
+        "wesoly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b2-e05",
+      "prompt": "nie bardzo",
+      "options": [
+        {
+          "en": "very much"
+        },
+        {
+          "en": "not really, not much"
+        },
+        {
+          "en": "not at all"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nie-bardzo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-b2-e06",
+      "prompt": {
+        "en": "I like these trousers"
+      },
+      "acceptedAnswers": [
+        "podobają mi się te spodnie"
+      ],
+      "distractors": [
+        "podoba",
+        "ten"
+      ],
+      "items": [
+        "podobaja-mi-sie",
+        "te",
+        "spodnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b2-e07",
+      "prompt": "śliczny",
+      "options": [
+        {
+          "en": "ugly"
+        },
+        {
+          "en": "dirty"
+        },
+        {
+          "en": "lovely, pretty (śliczny, śliczna, śliczne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "sliczny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b2-e08",
+      "prompt": "denerwuje mnie to",
+      "options": [
+        {
+          "en": "it annoys me, it gets on my nerves"
+        },
+        {
+          "en": "I like it"
+        },
+        {
+          "en": "it makes me laugh"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "denerwuje-mnie-to"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-b2-e09",
+      "prompt": "irytuje mnie to",
+      "options": [
+        {
+          "en": "it suits me"
+        },
+        {
+          "en": "it irritates me"
+        },
+        {
+          "en": "I don't mind"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "irytuje-mnie-to"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-b2-e10",
+      "text": "Podoba mi się ta ___. Jest śliczna.",
+      "meaning": {
+        "en": "I like this top. It is lovely."
+      },
+      "gaps": [
+        [
+          "bluzka"
+        ]
+      ],
+      "distractors": [
+        "bluzkę",
+        "bluzce"
+      ],
+      "items": [
+        "podoba-mi-sie",
+        "ta",
+        "bluzka",
+        "byc-jest",
+        "sliczny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-b2-e11",
+      "acceptedAnswers": [
+        "nie bardzo"
+      ],
+      "meaning": {
+        "en": "not really"
+      },
+      "items": [
+        "nie-bardzo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-b2-e12",
+      "text": "będziesz w niej ładnie wyglądać",
+      "meaning": {
+        "en": "you will look nice in it"
+      },
+      "distractors": [
+        "będziesz w nim ładnie wyglądać",
+        "będziesz w niej grubo wyglądać"
+      ],
+      "items": [
+        "bedziesz",
+        "w-niej",
+        "ladnie",
+        "wygladac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-b2-e13",
+      "prompt": {
+        "en": "do you like it?"
+      },
+      "acceptedAnswers": [
+        "podoba ci się?"
+      ],
+      "items": [
+        "podoba-ci-sie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-b2-e14",
+      "pairs": [
+        {
+          "polish": "podoba mi się",
+          "meaning": {
+            "en": "I like it"
+          }
+        },
+        {
+          "polish": "podobają mi się",
+          "meaning": {
+            "en": "I like them"
+          }
+        },
+        {
+          "polish": "nie bardzo",
+          "meaning": {
+            "en": "not really"
+          }
+        },
+        {
+          "polish": "denerwuje mnie to",
+          "meaning": {
+            "en": "it annoys me"
+          }
+        },
+        {
+          "polish": "śliczny",
+          "meaning": {
+            "en": "lovely"
+          }
+        }
+      ],
+      "items": [
+        "podoba-mi-sie",
+        "podobaja-mi-sie",
+        "nie-bardzo",
+        "denerwuje-mnie-to",
+        "sliczny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-b2-e15",
+      "text": "nie podoba mi się to",
+      "meaning": {
+        "en": "I don't like it"
+      },
+      "distractors": [
+        "podoba mi się to",
+        "nie podobają mi się te spodnie"
+      ],
+      "items": [
+        "nie",
+        "podoba-mi-sie",
+        "to"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-b2-e16",
+      "prompt": {
+        "en": "it irritates me"
+      },
+      "acceptedAnswers": [
+        "irytuje mnie to",
+        "to mnie irytuje"
+      ],
+      "distractors": [
+        "mi",
+        "denerwuje"
+      ],
+      "items": [
+        "irytuje-mnie-to"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-b2-e17",
+      "lines": [
+        "Ewa lubi Adama, bo jest wesoły i inteligentny.",
+        "Ewie podoba się Kraków, ale nie podobają jej się korki.",
+        "Korki ją denerwują."
+      ],
+      "meaning": {
+        "en": "What Ewa likes."
+      },
+      "statements": [
+        {
+          "text": "Ewa lubi Adama.",
+          "meaning": {
+            "en": "Ewa likes Adam."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewie podobają się korki.",
+          "meaning": {
+            "en": "Ewa likes the traffic jams."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewie podoba się Kraków.",
+          "meaning": {
+            "en": "Ewa likes Kraków."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "lubic-lubi",
+        "wesoly",
+        "inteligentny",
+        "krakow"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-b2-e18",
+      "prompt": {
+        "en": "I like them"
+      },
+      "acceptedAnswers": [
+        "podobają mi się"
+      ],
+      "items": [
+        "podobaja-mi-sie"
+      ]
+    }
+  ]
+}

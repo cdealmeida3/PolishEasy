@@ -1,0 +1,413 @@
+{
+  "id": "kpk1-l17-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Co o tym myślisz?",
+    "meaning": {
+      "en": "What do you think about it?"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-a3-t01",
+      "before": "kpk1-l17-a3-e01",
+      "title": {
+        "en": "Ładnie wyglądasz"
+      },
+      "body": {
+        "en": "*Wyglądać* is to look: *wyglądam*, *wyglądasz*, *wygląda*. A word in *-o* or *-e* says how: *ładnie wyglądasz* (you look nice), *dobrze wyglądasz*, *grubo w nim wyglądam* (I look fat in it). When a friend runs themselves down, *coś ty!* means come on, don't be silly."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a3-e01",
+      "prompt": "wyglądam",
+      "options": [
+        {
+          "en": "I look (dobrze wyglądam: I look good)"
+        },
+        {
+          "en": "I see"
+        },
+        {
+          "en": "I watch"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wygladac-wygladam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a3-e02",
+      "prompt": "wyglądasz",
+      "options": [
+        {
+          "en": "you see"
+        },
+        {
+          "en": "you look (one friend: ładnie wyglądasz: you look nice)"
+        },
+        {
+          "en": "you think"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wygladac-wygladasz"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-a3-e03",
+      "text": "ładnie wyglądasz",
+      "meaning": {
+        "en": "you look nice"
+      },
+      "distractors": [
+        "ładnie wyglądam",
+        "grubo wyglądasz"
+      ],
+      "items": [
+        "ladnie",
+        "wygladac-wygladasz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a3-e04",
+      "prompt": "wygląda",
+      "options": [
+        {
+          "en": "he watches, she watches"
+        },
+        {
+          "en": "he waits, she waits"
+        },
+        {
+          "en": "he looks, she looks; it looks"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wygladac-wyglada"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a3-e05",
+      "prompt": "w nim",
+      "options": [
+        {
+          "en": "in it, in him (for a masculine noun: w tym swetrze, w nim)"
+        },
+        {
+          "en": "in her"
+        },
+        {
+          "en": "with him"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-nim"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a3-e06",
+      "prompt": "grubo",
+      "options": [
+        {
+          "en": "nicely"
+        },
+        {
+          "en": "fat (grubo wyglądam: I look fat)"
+        },
+        {
+          "en": "badly"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "grubo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-a3-e07",
+      "prompt": {
+        "en": "I look fat in it"
+      },
+      "acceptedAnswers": [
+        "grubo w nim wyglądam"
+      ],
+      "distractors": [
+        "ładnie",
+        "niej"
+      ],
+      "items": [
+        "grubo",
+        "w-nim",
+        "wygladac-wygladam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a3-e08",
+      "prompt": "coś ty!",
+      "options": [
+        {
+          "en": "what is it?"
+        },
+        {
+          "en": "something else"
+        },
+        {
+          "en": "come on! don't be silly! (to one friend)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "cos-ty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-a3-e09",
+      "prompt": "chciałabym",
+      "options": [
+        {
+          "en": "I'd like (chciałabym: a woman says it; chciałbym: a man)"
+        },
+        {
+          "en": "I wanted"
+        },
+        {
+          "en": "I can"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chcialabym"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-a3-e10",
+      "text": "Coś ty! Bardzo ładnie ___.",
+      "meaning": {
+        "en": "Come on! You look very nice."
+      },
+      "gaps": [
+        [
+          "wyglądasz"
+        ]
+      ],
+      "distractors": [
+        "wyglądam",
+        "wygląda"
+      ],
+      "items": [
+        "cos-ty",
+        "bardzo",
+        "ladnie",
+        "wygladac-wygladasz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-a3-e11",
+      "acceptedAnswers": [
+        "wyglądam"
+      ],
+      "meaning": {
+        "en": "I look"
+      },
+      "items": [
+        "wygladac-wygladam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-a3-e12",
+      "prompt": {
+        "en": "you look nice"
+      },
+      "acceptedAnswers": [
+        "ładnie wyglądasz",
+        "wyglądasz ładnie"
+      ],
+      "items": [
+        "ladnie",
+        "wygladac-wygladasz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-a3-e13",
+      "pairs": [
+        {
+          "polish": "wyglądam",
+          "meaning": {
+            "en": "I look"
+          }
+        },
+        {
+          "polish": "wyglądasz",
+          "meaning": {
+            "en": "you look"
+          }
+        },
+        {
+          "polish": "wygląda",
+          "meaning": {
+            "en": "she looks"
+          }
+        },
+        {
+          "polish": "grubo",
+          "meaning": {
+            "en": "fat"
+          }
+        },
+        {
+          "polish": "coś ty!",
+          "meaning": {
+            "en": "don't be silly!"
+          }
+        }
+      ],
+      "items": [
+        "wygladac-wygladam",
+        "wygladac-wygladasz",
+        "wygladac-wyglada",
+        "grubo",
+        "cos-ty"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l17-a3-e14",
+      "lines": [
+        "A ten sweter? Jak w nim wyglądam?",
+        "Grubo w nim wyglądam.",
+        "Coś ty! Bardzo ładnie wyglądasz."
+      ],
+      "meaning": {
+        "en": "Trying on a jumper."
+      },
+      "items": [
+        "a",
+        "ten",
+        "sweter",
+        "jak",
+        "grubo",
+        "w-nim",
+        "wygladac-wygladam",
+        "cos-ty",
+        "bardzo",
+        "ladnie",
+        "wygladac-wygladasz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-a3-e15",
+      "prompt": {
+        "en": "I'd like this jumper"
+      },
+      "acceptedAnswers": [
+        "chciałabym ten sweter"
+      ],
+      "distractors": [
+        "ta",
+        "chcę"
+      ],
+      "items": [
+        "chcialabym",
+        "ten",
+        "sweter"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-a3-e16",
+      "acceptedAnswers": [
+        "chciałabym"
+      ],
+      "meaning": {
+        "en": "I'd like (a woman says it)"
+      },
+      "items": [
+        "chcialabym"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-a3-e17",
+      "lines": [
+        "Ewa mierzy sweter.",
+        "Mówi, że grubo w nim wygląda.",
+        "Adam mówi: „Coś ty! Ładnie w nim wyglądasz”."
+      ],
+      "meaning": {
+        "en": "Is the jumper all right?"
+      },
+      "statements": [
+        {
+          "text": "Ewa mówi, że ładnie wygląda.",
+          "meaning": {
+            "en": "Ewa says she looks nice."
+          },
+          "true": false
+        },
+        {
+          "text": "Adam mówi, że Ewa ładnie wygląda.",
+          "meaning": {
+            "en": "Adam says Ewa looks nice."
+          },
+          "true": true
+        },
+        {
+          "text": "Ewa mierzy sweter.",
+          "meaning": {
+            "en": "Ewa is trying on a jumper."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "sweter",
+        "grubo",
+        "w-nim",
+        "wygladac-wyglada",
+        "adam",
+        "cos-ty",
+        "ladnie",
+        "wygladac-wygladasz"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-a3-e18",
+      "prompt": {
+        "en": "in it (a jumper)"
+      },
+      "acceptedAnswers": [
+        "w nim"
+      ],
+      "items": [
+        "w-nim"
+      ]
+    }
+  ]
+}

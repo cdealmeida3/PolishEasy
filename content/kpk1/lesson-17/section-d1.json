@@ -1,0 +1,415 @@
+{
+  "id": "kpk1-l17-d1",
+  "section": {
+    "letter": "D",
+    "heading": "Co mu kupić?",
+    "meaning": {
+      "en": "What shall we buy him?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l17-d1-t01",
+      "before": "kpk1-l17-d1-e01",
+      "title": {
+        "en": "Pamiątki z Krakowa"
+      },
+      "body": {
+        "en": "A present from Poland is often a souvenir, *pamiątka*: *srebrna biżuteria z bursztynem* (silver jewellery with amber), Polish honey, *miód*, or a CD of Polish music. From the mountains comes *oscypek*, a smoked sheep cheese; *obwarzanek* is a ring of bread sold on the streets of *Kraków*; and in winter people drink *grzaniec*, mulled wine."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d1-e01",
+      "prompt": "pamiątka",
+      "options": [
+        {
+          "en": "a souvenir (pamiątki z Polski: souvenirs from Poland)"
+        },
+        {
+          "en": "a postcard"
+        },
+        {
+          "en": "a present"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pamiatka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d1-e02",
+      "prompt": "bursztyn",
+      "options": [
+        {
+          "en": "silver"
+        },
+        {
+          "en": "amber (z bursztynu: made of amber)"
+        },
+        {
+          "en": "gold"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "bursztyn"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-d1-e03",
+      "text": "to jest bursztyn",
+      "meaning": {
+        "en": "this is amber"
+      },
+      "distractors": [
+        "to jest miód",
+        "to nie jest bursztyn"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "bursztyn"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d1-e04",
+      "prompt": "biżuteria",
+      "options": [
+        {
+          "en": "a watch"
+        },
+        {
+          "en": "a bag"
+        },
+        {
+          "en": "jewellery (srebrna biżuteria: silver jewellery)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bizuteria"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d1-e05",
+      "prompt": "srebrny",
+      "options": [
+        {
+          "en": "silver (srebrny, srebrna, srebrne)"
+        },
+        {
+          "en": "golden"
+        },
+        {
+          "en": "green"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "srebrny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d1-e06",
+      "prompt": "kupimy",
+      "options": [
+        {
+          "en": "we bought"
+        },
+        {
+          "en": "we'll buy (kupimy mu płytę: we'll buy him a record)"
+        },
+        {
+          "en": "we sell"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kupimy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l17-d1-e07",
+      "text": "Kupimy jej ___ z bursztynu.",
+      "meaning": {
+        "en": "We will buy her jewellery made of amber."
+      },
+      "gaps": [
+        [
+          "biżuterię"
+        ]
+      ],
+      "distractors": [
+        "biżuteria",
+        "bursztyn"
+      ],
+      "items": [
+        "kupimy",
+        "jej-dat",
+        "bizuteria",
+        "bursztyn"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-d1-e08",
+      "prompt": {
+        "en": "silver jewellery"
+      },
+      "acceptedAnswers": [
+        "srebrna biżuteria"
+      ],
+      "items": [
+        "srebrny",
+        "bizuteria"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d1-e09",
+      "prompt": "oscypek",
+      "options": [
+        {
+          "en": "a sausage"
+        },
+        {
+          "en": "a cake"
+        },
+        {
+          "en": "oscypek, a smoked sheep cheese from the mountains"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "oscypek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d1-e10",
+      "prompt": "obwarzanek",
+      "options": [
+        {
+          "en": "obwarzanek, a ring of bread from Kraków"
+        },
+        {
+          "en": "a doughnut"
+        },
+        {
+          "en": "a sandwich"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "obwarzanek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l17-d1-e11",
+      "prompt": "grzaniec",
+      "options": [
+        {
+          "en": "hot chocolate"
+        },
+        {
+          "en": "mulled wine"
+        },
+        {
+          "en": "a beer"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "grzaniec"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-d1-e12",
+      "prompt": {
+        "en": "souvenirs from Poland"
+      },
+      "acceptedAnswers": [
+        "pamiątki z Polski"
+      ],
+      "distractors": [
+        "pamiątka",
+        "Polska"
+      ],
+      "items": [
+        "pamiatka",
+        "z-polski"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l17-d1-e13",
+      "acceptedAnswers": [
+        "oscypek"
+      ],
+      "meaning": {
+        "en": "a smoked sheep cheese"
+      },
+      "items": [
+        "oscypek"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l17-d1-e14",
+      "prompt": {
+        "en": "amber"
+      },
+      "acceptedAnswers": [
+        "bursztyn"
+      ],
+      "items": [
+        "bursztyn"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l17-d1-e15",
+      "pairs": [
+        {
+          "polish": "bursztyn",
+          "meaning": {
+            "en": "amber"
+          }
+        },
+        {
+          "polish": "biżuteria",
+          "meaning": {
+            "en": "jewellery"
+          }
+        },
+        {
+          "polish": "oscypek",
+          "meaning": {
+            "en": "a smoked sheep cheese"
+          }
+        },
+        {
+          "polish": "obwarzanek",
+          "meaning": {
+            "en": "a ring of bread"
+          }
+        },
+        {
+          "polish": "grzaniec",
+          "meaning": {
+            "en": "mulled wine"
+          }
+        },
+        {
+          "polish": "miód",
+          "meaning": {
+            "en": "honey"
+          }
+        }
+      ],
+      "items": [
+        "bursztyn",
+        "bizuteria",
+        "oscypek",
+        "obwarzanek",
+        "grzaniec",
+        "miod"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l17-d1-e16",
+      "text": "zimą piję grzaniec",
+      "meaning": {
+        "en": "in winter I drink mulled wine"
+      },
+      "distractors": [
+        "zimą piję herbatę",
+        "latem piję grzaniec"
+      ],
+      "items": [
+        "zima-kiedy",
+        "pic-pije",
+        "grzaniec"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l17-d1-e17",
+      "prompt": {
+        "en": "silver jewellery"
+      },
+      "acceptedAnswers": [
+        "srebrna biżuteria"
+      ],
+      "distractors": [
+        "srebrny",
+        "bursztyn"
+      ],
+      "items": [
+        "srebrny",
+        "bizuteria"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l17-d1-e18",
+      "lines": [
+        "Ewa jest w Krakowie i kupuje pamiątki.",
+        "Dla mamy kupuje biżuterię z bursztynu, a dla taty oscypek.",
+        "Sobie kupuje obwarzanek."
+      ],
+      "meaning": {
+        "en": "Souvenirs."
+      },
+      "statements": [
+        {
+          "text": "Ewa kupuje pamiątki.",
+          "meaning": {
+            "en": "Ewa is buying souvenirs."
+          },
+          "true": true
+        },
+        {
+          "text": "Dla taty kupuje biżuterię.",
+          "meaning": {
+            "en": "For her dad she buys jewellery."
+          },
+          "true": false
+        },
+        {
+          "text": "Ewa kupuje sobie obwarzanek.",
+          "meaning": {
+            "en": "Ewa buys herself an obwarzanek."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "ewa",
+        "w-krakowie",
+        "pamiatka",
+        "bizuteria",
+        "bursztyn",
+        "oscypek",
+        "obwarzanek"
+      ]
+    }
+  ]
+}
