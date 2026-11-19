@@ -11067,6 +11067,1145 @@
         17,
         17
       ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-197-1",
+      "track": 197,
+      "statement": "Jest poniedziałek rano.",
+      "meaning": {
+        "en": "It is Monday morning."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-197-2",
+      "track": 197,
+      "statement": "Angela jest wesoła.",
+      "meaning": {
+        "en": "Angela is cheerful."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-197-3",
+      "track": 197,
+      "question": "Kto pyta Angelę, co się stało?",
+      "meaning": {
+        "en": "Who asks Angela what happened?"
+      },
+      "options": [
+        "Javier.",
+        "Mami.",
+        "Uwe."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-197-4",
+      "track": 197,
+      "question": "O której Angela poszła spać?",
+      "meaning": {
+        "en": "What time did Angela go to bed?"
+      },
+      "options": [
+        "O piątej rano.",
+        "O północy.",
+        "O dziesiątej wieczorem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-197-5",
+      "track": 197,
+      "question": "Kto robił imprezę?",
+      "meaning": {
+        "en": "Who was having a party?"
+      },
+      "options": [
+        "Studenci z mieszkania obok.",
+        "Pani Maj.",
+        "Javier i Uwe."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-197-6",
+      "track": 197,
+      "statement": "Angela spała tylko cztery godziny.",
+      "meaning": {
+        "en": "Angela slept only four hours."
+      },
+      "answer": true,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l19-197-7",
+      "track": 197,
+      "question": "Jaka jest Angela?",
+      "meaning": {
+        "en": "What is Angela like? (one word)"
+      },
+      "acceptedAnswers": [
+        "wściekła"
+      ],
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-197-8",
+      "track": 197,
+      "statement": "Angela często spóźnia się do szkoły.",
+      "meaning": {
+        "en": "Angela is often late for school."
+      },
+      "answer": false,
+      "lines": [
+        11,
+        12
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-197-9",
+      "track": 197,
+      "question": "Co da Angeli Javier?",
+      "meaning": {
+        "en": "What will Javier give Angela?"
+      },
+      "options": [
+        "Notatki z lekcji.",
+        "Kawę.",
+        "Klucz do mieszkania."
+      ],
+      "correctOption": 0,
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-197-10",
+      "track": 197,
+      "question": "Gdzie Angela przeprowadza się dzisiaj?",
+      "meaning": {
+        "en": "Where is Angela moving today?"
+      },
+      "options": [
+        "Do hotelu.",
+        "Do Mami.",
+        "Do akademika."
+      ],
+      "correctOption": 0,
+      "lines": [
+        15,
+        15
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-198-1",
+      "track": 198,
+      "question": "Jaki pokój chce zarezerwować Angela?",
+      "meaning": {
+        "en": "What room does Angela want to book?"
+      },
+      "options": [
+        "Jednoosobowy z łazienką.",
+        "Dwuosobowy z balkonem.",
+        "Jednoosobowy bez łazienki."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-198-2",
+      "track": 198,
+      "statement": "Dziś w hotelu są wolne pokoje jednoosobowe.",
+      "meaning": {
+        "en": "Today the hotel has single rooms free."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-198-3",
+      "track": 198,
+      "question": "Od kiedy jest rezerwacja?",
+      "meaning": {
+        "en": "From when is the booking?"
+      },
+      "options": [
+        "Od jutra.",
+        "Od dziś.",
+        "Od piątku."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-198-4",
+      "track": 198,
+      "question": "Na jak długo?",
+      "meaning": {
+        "en": "For how long?"
+      },
+      "options": [
+        "Na cały tydzień.",
+        "Na jedną noc.",
+        "Na weekend."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l19-198-5",
+      "track": 198,
+      "question": "Na jakie nazwisko jest rezerwacja?",
+      "meaning": {
+        "en": "In what name is the booking? (the surname)"
+      },
+      "acceptedAnswers": [
+        "Brown"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-198-6",
+      "track": 198,
+      "question": "Od której godziny zaczyna się doba hotelowa?",
+      "meaning": {
+        "en": "From what time does the hotel day begin?"
+      },
+      "options": [
+        "Od trzynastej.",
+        "Od dziesiątej.",
+        "Od piętnastej."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-199-1",
+      "track": 199,
+      "statement": "Angela woli spać w hotelu.",
+      "meaning": {
+        "en": "Angela would rather sleep in the hotel."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-199-2",
+      "track": 199,
+      "question": "Czego potrzebuje Angela?",
+      "meaning": {
+        "en": "What does Angela need?"
+      },
+      "options": [
+        "Pobyć sama, w ciszy.",
+        "Nowego współlokatora.",
+        "Dużego mieszkania."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-199-3",
+      "track": 199,
+      "statement": "Angela lubi się pakować.",
+      "meaning": {
+        "en": "Angela likes packing."
+      },
+      "answer": false,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-199-4",
+      "track": 199,
+      "question": "Kto lubi pakowanie?",
+      "meaning": {
+        "en": "Who likes packing?"
+      },
+      "options": [
+        "Mami.",
+        "Angela.",
+        "Pani Maj."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-199-5",
+      "track": 199,
+      "question": "O której przyjdzie Mami?",
+      "meaning": {
+        "en": "What time will Mami come?"
+      },
+      "options": [
+        "Około trzeciej.",
+        "O piątej.",
+        "Rano."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-199-6",
+      "track": 199,
+      "question": "Jakie jest mieszkanie Angeli?",
+      "meaning": {
+        "en": "What is Angela's flat like?"
+      },
+      "options": [
+        "Ciemne i zimne.",
+        "Jasne i ciepłe.",
+        "Duże i słoneczne."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l19-199-7",
+      "track": 199,
+      "question": "Ile metrów kwadratowych ma mieszkanie?",
+      "meaning": {
+        "en": "How many square metres is the flat? (a number)"
+      },
+      "acceptedAnswers": [
+        "18",
+        "osiemnaście"
+      ],
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-199-8",
+      "track": 199,
+      "question": "Gdzie ma przyjechać taksówka?",
+      "meaning": {
+        "en": "Where should the taxi come?"
+      },
+      "options": [
+        "Na ulicę Długą 3.",
+        "Pod hotel.",
+        "Do szkoły."
+      ],
+      "correctOption": 0,
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-199-9",
+      "track": 199,
+      "question": "Kiedy będzie taksówka?",
+      "meaning": {
+        "en": "When will the taxi come?"
+      },
+      "options": [
+        "Za dziesięć minut.",
+        "Za godzinę.",
+        "Za pięć minut."
+      ],
+      "correctOption": 0,
+      "lines": [
+        14,
+        14
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-199-10",
+      "track": 199,
+      "statement": "Taksówka to czerwony fiat.",
+      "meaning": {
+        "en": "The taxi is a red Fiat."
+      },
+      "answer": true,
+      "lines": [
+        14,
+        14
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-200-1",
+      "track": 200,
+      "question": "Jakie jest przeciwieństwo słowa „wspólne”?",
+      "meaning": {
+        "en": "What is the opposite of “wspólne”?"
+      },
+      "options": [
+        "Samodzielne.",
+        "Jasne.",
+        "Duże."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l19-200-2",
+      "track": 200,
+      "question": "Jakie słowo słyszysz po słowie „ciasne”?",
+      "meaning": {
+        "en": "What word do you hear after “ciasne”? (one word)"
+      },
+      "acceptedAnswers": [
+        "przestronne"
+      ],
+      "lines": [
+        10,
+        11
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-200-3",
+      "track": 200,
+      "question": "Jakie jest przeciwieństwo słowa „zimne”?",
+      "meaning": {
+        "en": "What is the opposite of “zimne”?"
+      },
+      "options": [
+        "Ciepłe.",
+        "Ciemne.",
+        "Stare."
+      ],
+      "correctOption": 0,
+      "lines": [
+        12,
+        13
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-200-4",
+      "track": 200,
+      "statement": "Przeciwieństwo słowa „słoneczne” to „ponure”.",
+      "meaning": {
+        "en": "The opposite of “sunny” is “gloomy”."
+      },
+      "answer": true,
+      "lines": [
+        15,
+        16
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-200-5",
+      "track": 200,
+      "question": "Jakie jest przeciwieństwo słowa „nowoczesne”?",
+      "meaning": {
+        "en": "What is the opposite of “nowoczesne”?"
+      },
+      "options": [
+        "Stylowe.",
+        "Nowe.",
+        "Przytulne."
+      ],
+      "correctOption": 0,
+      "lines": [
+        18,
+        19
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l19-200-6",
+      "track": 200,
+      "question": "Jakie jest przeciwieństwo słowa „nowe”?",
+      "meaning": {
+        "en": "What is the opposite of “nowe”? (one word)"
+      },
+      "acceptedAnswers": [
+        "stare"
+      ],
+      "lines": [
+        21,
+        22
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-201-1",
+      "track": 201,
+      "question": "Jakiego mieszkania szuka Angela?",
+      "meaning": {
+        "en": "What flat is Angela looking for?"
+      },
+      "options": [
+        "Małego, jednopokojowego.",
+        "Dużego, dwupokojowego.",
+        "Domu jednorodzinnego."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-201-2",
+      "track": 201,
+      "question": "Ile metrów może mieć mieszkanie?",
+      "meaning": {
+        "en": "How big can the flat be?"
+      },
+      "options": [
+        "Od trzydziestu do czterdziestu metrów.",
+        "Osiemnaście metrów.",
+        "Sto metrów."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-201-3",
+      "track": 201,
+      "statement": "Mieszkanie powinno być blisko szkoły.",
+      "meaning": {
+        "en": "The flat should be near the school."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-201-4",
+      "track": 201,
+      "question": "Jakie ogrzewanie radzi Mami?",
+      "meaning": {
+        "en": "What heating does Mami advise?"
+      },
+      "options": [
+        "Centralne.",
+        "Elektryczne.",
+        "Gazowe."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-201-5",
+      "track": 201,
+      "statement": "Angela chce mieszkać na parterze.",
+      "meaning": {
+        "en": "Angela wants to live on the ground floor."
+      },
+      "answer": false,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-201-6",
+      "track": 201,
+      "statement": "Balkon jest bardzo ważny dla Angeli.",
+      "meaning": {
+        "en": "A balcony is very important to Angela."
+      },
+      "answer": false,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-201-7",
+      "track": 201,
+      "question": "Jakie budownictwo woli Angela?",
+      "meaning": {
+        "en": "What kind of building does Angela prefer?"
+      },
+      "options": [
+        "Raczej nowe.",
+        "Raczej stare.",
+        "To nie ma znaczenia."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        9
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l19-201-8",
+      "track": 201,
+      "question": "Jakie mieszkanie wolałaby Angela?",
+      "meaning": {
+        "en": "What flat would Angela prefer? (one word)"
+      },
+      "acceptedAnswers": [
+        "samodzielne"
+      ],
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-201-9",
+      "track": 201,
+      "statement": "Jeśli Angela nie znajdzie mieszkania, będzie szukała pokoju.",
+      "meaning": {
+        "en": "If Angela finds no flat, she will look for a room."
+      },
+      "answer": true,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-202-1",
+      "track": 202,
+      "statement": "Oferta jest jeszcze aktualna.",
+      "meaning": {
+        "en": "The offer is still available."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-202-2",
+      "track": 202,
+      "question": "Dlaczego mieszkanie jest słoneczne?",
+      "meaning": {
+        "en": "Why is the flat sunny?"
+      },
+      "options": [
+        "Jest od strony południowej.",
+        "Ma duże okna.",
+        "Jest na ostatnim piętrze."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-202-3",
+      "track": 202,
+      "question": "Ile kosztuje wynajem?",
+      "meaning": {
+        "en": "How much is the rent?"
+      },
+      "options": [
+        "2500 złotych.",
+        "600 złotych.",
+        "350 złotych."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-202-4",
+      "track": 202,
+      "question": "Ile wynosi czynsz?",
+      "meaning": {
+        "en": "How much are the monthly charges?"
+      },
+      "options": [
+        "600 złotych.",
+        "2500 złotych.",
+        "300 złotych."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-202-5",
+      "track": 202,
+      "question": "Jakie jest ogrzewanie?",
+      "meaning": {
+        "en": "What is the heating?"
+      },
+      "options": [
+        "Centralne.",
+        "Elektryczne.",
+        "Gazowe."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l19-202-6",
+      "track": 202,
+      "question": "Kiedy można obejrzeć mieszkanie?",
+      "meaning": {
+        "en": "When can you view the flat? (two words)"
+      },
+      "acceptedAnswers": [
+        "od zaraz"
+      ],
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-203-1",
+      "track": 203,
+      "statement": "Znajomi pomagają Angeli w przeprowadzce.",
+      "meaning": {
+        "en": "Friends help Angela move."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l19-203-2",
+      "track": 203,
+      "question": "Bardzo wam dziękuję za…",
+      "meaning": {
+        "en": "Thank you so much for… (one word)"
+      },
+      "acceptedAnswers": [
+        "pomoc"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-203-3",
+      "track": 203,
+      "question": "Gdzie jest nowe mieszkanie?",
+      "meaning": {
+        "en": "Where is the new flat?"
+      },
+      "options": [
+        "W centrum.",
+        "Daleko od centrum.",
+        "Blisko lasu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-203-4",
+      "track": 203,
+      "statement": "Przyjaciele chcą wpadać po imprezie.",
+      "meaning": {
+        "en": "The friends want to drop in after a party."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-203-5",
+      "track": 203,
+      "question": "Jakie jest mieszkanie?",
+      "meaning": {
+        "en": "What is the flat like?"
+      },
+      "options": [
+        "Małe, ale dobrze rozplanowane.",
+        "Duże i ponure.",
+        "Ciasne i zimne."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-203-6",
+      "track": 203,
+      "question": "Jakie kolory ma mieszkanie?",
+      "meaning": {
+        "en": "What colours has the flat?"
+      },
+      "options": [
+        "Piękne, ciepłe.",
+        "Ciemne, zimne.",
+        "Szare."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-204-1",
+      "track": 204,
+      "question": "Co ma mieszkanie Angeli?",
+      "meaning": {
+        "en": "What does Angela's flat have?"
+      },
+      "options": [
+        "Kuchnię, łazienkę i jeden pokój.",
+        "Dwa pokoje i balkon.",
+        "Tylko jeden pokój."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-204-2",
+      "track": 204,
+      "statement": "Kuchnia jest po prawej stronie.",
+      "meaning": {
+        "en": "The kitchen is on the right."
+      },
+      "answer": false,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-204-3",
+      "track": 204,
+      "question": "Co stoi na środku pokoju?",
+      "meaning": {
+        "en": "What stands in the middle of the room?"
+      },
+      "options": [
+        "Kanapa.",
+        "Stolik.",
+        "Łóżko."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-204-4",
+      "track": 204,
+      "question": "Gdzie wisi telewizor?",
+      "meaning": {
+        "en": "Where does the television hang?"
+      },
+      "options": [
+        "Na ścianie, przed kanapą.",
+        "Nad łóżkiem.",
+        "Obok okna."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-204-5",
+      "track": 204,
+      "statement": "Łóżko stoi w rogu, obok szafy.",
+      "meaning": {
+        "en": "The bed is in the corner, next to the wardrobe."
+      },
+      "answer": true,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l19-204-6",
+      "track": 204,
+      "question": "Co stoi pod oknem?",
+      "meaning": {
+        "en": "What stands under the window? (one word)"
+      },
+      "acceptedAnswers": [
+        "biurko"
+      ],
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-204-7",
+      "track": 204,
+      "question": "Co stoi między regałem a biurkiem?",
+      "meaning": {
+        "en": "What is between the bookcase and the desk?"
+      },
+      "options": [
+        "Fotel.",
+        "Lampa.",
+        "Komoda."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-204-8",
+      "track": 204,
+      "statement": "Przed biurkiem jest krzesło.",
+      "meaning": {
+        "en": "There is a chair in front of the desk."
+      },
+      "answer": true,
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-205-1",
+      "track": 205,
+      "question": "Gdzie stoi samochód?",
+      "meaning": {
+        "en": "Where is the car?"
+      },
+      "options": [
+        "Za domem.",
+        "Przed domem.",
+        "Na dachu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-205-2",
+      "track": 205,
+      "question": "Kto siedzi przed domem?",
+      "meaning": {
+        "en": "Who is sitting in front of the house?"
+      },
+      "options": [
+        "Pies.",
+        "Kot.",
+        "Dziecko."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-205-3",
+      "track": 205,
+      "statement": "Kot jest na dachu.",
+      "meaning": {
+        "en": "The cat is on the roof."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l19-205-4",
+      "track": 205,
+      "question": "Gdzie jest pies?",
+      "meaning": {
+        "en": "Where is the dog? (two words)"
+      },
+      "acceptedAnswers": [
+        "pod drzewem"
+      ],
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l19-205-5",
+      "track": 205,
+      "question": "Gdzie jest łyżka?",
+      "meaning": {
+        "en": "Where is the spoon?"
+      },
+      "options": [
+        "W kubku.",
+        "Obok talerza.",
+        "Pod serwetką."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l19-205-6",
+      "track": 205,
+      "statement": "Serwetka jest na talerzu.",
+      "meaning": {
+        "en": "The napkin is on the plate."
+      },
+      "answer": false,
+      "lines": [
+        11,
+        11
+      ]
     }
   ]
 }

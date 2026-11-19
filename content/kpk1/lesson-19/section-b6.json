@@ -1,0 +1,397 @@
+{
+  "id": "kpk1-l19-b6",
+  "section": {
+    "letter": "B",
+    "heading": "W poszukiwaniu mieszkania",
+    "meaning": {
+      "en": "Looking for a flat"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-b6-t01",
+      "before": "kpk1-l19-b6-e01",
+      "title": {
+        "en": "Trochę ciemne masz to mieszkanie"
+      },
+      "body": {
+        "en": "Mami helps Angela *spakować się* (pack). Angela has not many *rzeczy* (things), and she needs *pobyć sama*, to be on her own for a while, *w ciszy*. Her flat is dark and cold: the windows are *od podwórka* (onto the courtyard), so there is *mało słońca*. Then she rings for a taxi: *chciałabym zamówić taksówkę*, and it will come *za dziesięć minut*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b6-e01",
+      "prompt": "spakować się",
+      "options": [
+        {
+          "en": "to unpack"
+        },
+        {
+          "en": "to pack (your things)"
+        },
+        {
+          "en": "to tidy up"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spakowac-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b6-e02",
+      "prompt": "rzeczy",
+      "options": [
+        {
+          "en": "clothes"
+        },
+        {
+          "en": "books"
+        },
+        {
+          "en": "things, belongings"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "rzeczy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-b6-e03",
+      "text": "Pomogę ci się spakować.",
+      "meaning": {
+        "en": "I will help you pack."
+      },
+      "distractors": [
+        "Pomogę ci gotować.",
+        "Pomogę ci jutro."
+      ],
+      "items": [
+        "pomoge",
+        "ci",
+        "spakowac-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b6-e04",
+      "prompt": "pobyć sama",
+      "options": [
+        {
+          "en": "to have some time on my own (a man says pobyć sam)"
+        },
+        {
+          "en": "to be with friends"
+        },
+        {
+          "en": "to go out"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pobyc-sama"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b6-e05",
+      "prompt": "w ciszy",
+      "options": [
+        {
+          "en": "in the dark"
+        },
+        {
+          "en": "in peace and quiet"
+        },
+        {
+          "en": "in the cold"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-ciszy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b6-e06",
+      "text": "Potrzebuję pobyć ___ w ciszy.",
+      "meaning": {
+        "en": "I need some time on my own, in peace and quiet."
+      },
+      "gaps": [
+        [
+          "sama"
+        ]
+      ],
+      "distractors": [
+        "sam",
+        "samo"
+      ],
+      "items": [
+        "potrzebowac-potrzebuje",
+        "pobyc-sama",
+        "w-ciszy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b6-e07",
+      "prompt": "od podwórka",
+      "options": [
+        {
+          "en": "facing the street"
+        },
+        {
+          "en": "on the ground floor"
+        },
+        {
+          "en": "facing the courtyard, at the back"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "od-podworka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b6-e08",
+      "prompt": "mało słońca",
+      "options": [
+        {
+          "en": "not much sun"
+        },
+        {
+          "en": "a lot of sun"
+        },
+        {
+          "en": "too hot"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "malo-slonca"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-b6-e09",
+      "prompt": {
+        "en": "the window faces the courtyard and there is not much sun"
+      },
+      "acceptedAnswers": [
+        "okno jest od podwórka i jest mało słońca"
+      ],
+      "distractors": [
+        "okna",
+        "dużo"
+      ],
+      "items": [
+        "okno",
+        "byc-jest",
+        "od-podworka",
+        "i",
+        "malo-slonca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b6-e10",
+      "prompt": "zamówić taksówkę",
+      "options": [
+        {
+          "en": "to take a bus"
+        },
+        {
+          "en": "to order a taxi, to call a taxi"
+        },
+        {
+          "en": "to drive a car"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zamowic-taksowke"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b6-e11",
+      "prompt": "za dziesięć minut",
+      "options": [
+        {
+          "en": "ten minutes ago"
+        },
+        {
+          "en": "for ten minutes"
+        },
+        {
+          "en": "in ten minutes"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "za-dziesiec-minut"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-b6-e12",
+      "prompt": {
+        "en": "I would like to order a taxi"
+      },
+      "acceptedAnswers": [
+        "chciałabym zamówić taksówkę",
+        "chciałbym zamówić taksówkę"
+      ],
+      "items": [
+        "chcialabym",
+        "zamowic-taksowke"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-b6-e13",
+      "acceptedAnswers": [
+        "chcę zamówić taksówkę"
+      ],
+      "meaning": {
+        "en": "I want to order a taxi"
+      },
+      "items": [
+        "chciec-chce",
+        "zamowic-taksowke"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-b6-e14",
+      "prompt": {
+        "en": "in ten minutes"
+      },
+      "acceptedAnswers": [
+        "za dziesięć minut"
+      ],
+      "items": [
+        "za-dziesiec-minut"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-b6-e15",
+      "pairs": [
+        {
+          "polish": "spakować się",
+          "meaning": {
+            "en": "to pack"
+          }
+        },
+        {
+          "polish": "rzeczy",
+          "meaning": {
+            "en": "things"
+          }
+        },
+        {
+          "polish": "w ciszy",
+          "meaning": {
+            "en": "in peace and quiet"
+          }
+        },
+        {
+          "polish": "mało słońca",
+          "meaning": {
+            "en": "not much sun"
+          }
+        },
+        {
+          "polish": "za dziesięć minut",
+          "meaning": {
+            "en": "in ten minutes"
+          }
+        }
+      ],
+      "items": [
+        "spakowac-sie",
+        "rzeczy",
+        "w-ciszy",
+        "malo-slonca",
+        "za-dziesiec-minut"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b6-e16",
+      "text": "Nie mam dużo ___.",
+      "meaning": {
+        "en": "I haven't got many things."
+      },
+      "gaps": [
+        [
+          "rzeczy"
+        ]
+      ],
+      "distractors": [
+        "rzecz",
+        "rzeczą"
+      ],
+      "items": [
+        "nie",
+        "miec-mam",
+        "duzo",
+        "rzeczy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-b6-e17",
+      "lines": [
+        "Przyjaciółka pomaga Angeli się spakować.",
+        "Mieszkanie Angeli jest małe, ciemne i zimne.",
+        "Angela zamawia taksówkę."
+      ],
+      "meaning": {
+        "en": "Angela leaves her flat."
+      },
+      "statements": [
+        {
+          "text": "Angela pakuje się sama.",
+          "meaning": {
+            "en": "Angela packs on her own."
+          },
+          "true": false
+        },
+        {
+          "text": "Mieszkanie jest słoneczne.",
+          "meaning": {
+            "en": "The flat is sunny."
+          },
+          "true": false
+        },
+        {
+          "text": "Angela jedzie taksówką.",
+          "meaning": {
+            "en": "Angela goes by taxi."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "spakowac-sie",
+        "mieszkanie",
+        "maly",
+        "ciemny",
+        "zimny"
+      ]
+    }
+  ]
+}

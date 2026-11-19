@@ -1,0 +1,408 @@
+{
+  "id": "kpk1-l19-b2",
+  "section": {
+    "letter": "B",
+    "heading": "W poszukiwaniu mieszkania",
+    "meaning": {
+      "en": "Looking for a flat"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-b2-t01",
+      "before": "kpk1-l19-b2-e01",
+      "title": {
+        "en": "Kawalerka, kamienica, blok"
+      },
+      "body": {
+        "en": "*Kawalerka* is a studio flat, one room with a kitchen corner. A flat is *jednopokojowe* or *dwupokojowe*, by its rooms; *w bloku* (a block of flats) or *w kamienicy* (an old town house of flats); and an advert gives its size in *metry kwadratowe*: *trzydzieści metrów kwadratowych*, 30 m². *Po remoncie* is newly done up; *ogrzewanie* is the heating. A family lives in *dom jednorodzinny*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b2-e01",
+      "prompt": "kawalerka",
+      "options": [
+        {
+          "en": "a family house"
+        },
+        {
+          "en": "a hotel room"
+        },
+        {
+          "en": "a studio flat, a bedsit"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kawalerka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b2-e02",
+      "prompt": "kamienica",
+      "options": [
+        {
+          "en": "a tenement house, an old town house of flats (w kamienicy: in a tenement house)"
+        },
+        {
+          "en": "a block of flats"
+        },
+        {
+          "en": "a castle"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kamienica"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-b2-e03",
+      "text": "Mieszkam w kamienicy.",
+      "meaning": {
+        "en": "I live in a tenement house."
+      },
+      "distractors": [
+        "Mieszkam w bloku.",
+        "Mieszkam w hotelu."
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "kamienica"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b2-e04",
+      "prompt": "jednopokojowy",
+      "options": [
+        {
+          "en": "two-room"
+        },
+        {
+          "en": "one-room (mieszkanie jednopokojowe: a one-room flat) (jednopokojowy, jednopokojowa, jednopokojowe)"
+        },
+        {
+          "en": "for one night"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "jednopokojowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b2-e05",
+      "prompt": "dwupokojowy",
+      "options": [
+        {
+          "en": "one-room"
+        },
+        {
+          "en": "for two people"
+        },
+        {
+          "en": "two-room (mieszkanie dwupokojowe: a two-room flat) (dwupokojowy, dwupokojowa, dwupokojowe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dwupokojowy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b2-e06",
+      "text": "Mieszkanie jest ___: ma dwa pokoje.",
+      "meaning": {
+        "en": "The flat is a two-room one: it has two rooms."
+      },
+      "gaps": [
+        [
+          "dwupokojowe"
+        ]
+      ],
+      "distractors": [
+        "dwupokojowy",
+        "jednopokojowe"
+      ],
+      "items": [
+        "mieszkanie",
+        "byc-jest",
+        "dwupokojowy",
+        "miec-ma",
+        "dwa",
+        "pokoj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b2-e07",
+      "prompt": "metr kwadratowy",
+      "options": [
+        {
+          "en": "a square metre, m² (trzydzieści metrów kwadratowych: thirty square metres)"
+        },
+        {
+          "en": "a kilometre"
+        },
+        {
+          "en": "a square"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "metr-kwadratowy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-b2-e08",
+      "prompt": {
+        "en": "the flat has thirty square metres"
+      },
+      "acceptedAnswers": [
+        "mieszkanie ma trzydzieści metrów kwadratowych"
+      ],
+      "distractors": [
+        "metry",
+        "trzy"
+      ],
+      "items": [
+        "mieszkanie",
+        "miec-ma",
+        "trzydziesci",
+        "metr-kwadratowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b2-e09",
+      "prompt": "po remoncie",
+      "options": [
+        {
+          "en": "before the renovation"
+        },
+        {
+          "en": "renovated, newly done up"
+        },
+        {
+          "en": "very old"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "po-remoncie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b2-e10",
+      "prompt": "ogrzewanie",
+      "options": [
+        {
+          "en": "a fridge"
+        },
+        {
+          "en": "a lift"
+        },
+        {
+          "en": "heating"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ogrzewanie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b2-e11",
+      "prompt": "dom jednorodzinny",
+      "options": [
+        {
+          "en": "a detached house, a family house"
+        },
+        {
+          "en": "a block of flats"
+        },
+        {
+          "en": "a family"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dom-jednorodzinny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-b2-e12",
+      "prompt": {
+        "en": "a studio flat in a block of flats"
+      },
+      "acceptedAnswers": [
+        "kawalerka w bloku"
+      ],
+      "items": [
+        "kawalerka",
+        "blok"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-b2-e13",
+      "acceptedAnswers": [
+        "mieszkanie jednopokojowe"
+      ],
+      "meaning": {
+        "en": "a one-room flat"
+      },
+      "items": [
+        "mieszkanie",
+        "jednopokojowy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-b2-e14",
+      "pairs": [
+        {
+          "polish": "kawalerka",
+          "meaning": {
+            "en": "a studio flat"
+          }
+        },
+        {
+          "polish": "kamienica",
+          "meaning": {
+            "en": "a tenement house"
+          }
+        },
+        {
+          "polish": "po remoncie",
+          "meaning": {
+            "en": "renovated"
+          }
+        },
+        {
+          "polish": "ogrzewanie",
+          "meaning": {
+            "en": "heating"
+          }
+        },
+        {
+          "polish": "dom jednorodzinny",
+          "meaning": {
+            "en": "a detached house"
+          }
+        }
+      ],
+      "items": [
+        "kawalerka",
+        "kamienica",
+        "po-remoncie",
+        "ogrzewanie",
+        "dom-jednorodzinny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b2-e15",
+      "text": "Mieszkanie jest w starej kamienicy, ale jest po ___.",
+      "meaning": {
+        "en": "The flat is in an old tenement house, but it has been renovated."
+      },
+      "gaps": [
+        [
+          "remoncie"
+        ]
+      ],
+      "distractors": [
+        "remont",
+        "remontu"
+      ],
+      "items": [
+        "mieszkanie",
+        "byc-jest",
+        "w-starej-kamienicy",
+        "ale",
+        "po-remoncie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-b2-e16",
+      "lines": [
+        "Mieszkam w kawalerce w bloku.",
+        "Mieszkanie ma osiemnaście metrów kwadratowych.",
+        "Jest małe, ale po remoncie."
+      ],
+      "meaning": {
+        "en": "A small flat."
+      },
+      "statements": [
+        {
+          "text": "Mieszkanie jest duże.",
+          "meaning": {
+            "en": "The flat is big."
+          },
+          "true": false
+        },
+        {
+          "text": "Mieszkanie jest w bloku.",
+          "meaning": {
+            "en": "The flat is in a block of flats."
+          },
+          "true": true
+        },
+        {
+          "text": "Mieszkanie jest po remoncie.",
+          "meaning": {
+            "en": "The flat has been renovated."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "blok",
+        "mieszkanie",
+        "miec-ma",
+        "osiemnascie",
+        "metr-kwadratowy",
+        "maly",
+        "ale",
+        "po-remoncie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-b2-e17",
+      "prompt": {
+        "en": "the heating is old"
+      },
+      "acceptedAnswers": [
+        "ogrzewanie jest stare"
+      ],
+      "distractors": [
+        "stary",
+        "są"
+      ],
+      "items": [
+        "ogrzewanie",
+        "byc-jest",
+        "stary"
+      ]
+    }
+  ]
+}

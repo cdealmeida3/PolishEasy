@@ -1,0 +1,430 @@
+{
+  "id": "kpk1-l19-p2",
+  "section": {
+    "letter": "P",
+    "heading": "Powtórzenie",
+    "meaning": {
+      "en": "Revision"
+    },
+    "strands": [
+      "K",
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-p2-t01",
+      "before": "kpk1-l19-p2-e01",
+      "title": {
+        "en": "Na górze, na dole"
+      },
+      "body": {
+        "en": "A bookcase has *góra* (the top) and *dół* (the bottom): *na górze* stands a plant, *na dole* lie the books. The chapter in a few words: a hotel room *jednoosobowy* or *dwuosobowy*; a flat *jednopokojowe* or *dwupokojowe*, *samodzielne* or shared, *stylowe* in an old house; a *dom jednorodzinny*; and *od podwórka*, at the back, there is little sun."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-p2-e01",
+      "prompt": "góra",
+      "options": [
+        {
+          "en": "the top (na górze: at the top)"
+        },
+        {
+          "en": "the side"
+        },
+        {
+          "en": "the middle"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "gora"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-p2-e02",
+      "prompt": "dół",
+      "options": [
+        {
+          "en": "the top"
+        },
+        {
+          "en": "the bottom (na dole: at the bottom)"
+        },
+        {
+          "en": "the back"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dol"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-p2-e03",
+      "text": "Na górze stoi kwiatek, a na dole leży książka.",
+      "meaning": {
+        "en": "At the top there is a plant, and at the bottom there is a book."
+      },
+      "distractors": [
+        "Na dole stoi kwiatek, a na górze leży książka.",
+        "Na górze stoi lampa, a na dole leży książka."
+      ],
+      "items": [
+        "na-gorze",
+        "stac-stoi",
+        "kwiatek",
+        "a",
+        "na-dole",
+        "lezec-lezy",
+        "ksiazka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-p2-e04",
+      "text": "Wolałabym mieszkanie ___, a nie wspólne.",
+      "meaning": {
+        "en": "I would rather have a self-contained flat, not a shared one."
+      },
+      "gaps": [
+        [
+          "samodzielne"
+        ]
+      ],
+      "distractors": [
+        "samodzielny",
+        "samodzielna"
+      ],
+      "items": [
+        "wolalabym",
+        "mieszkanie",
+        "samodzielny",
+        "a",
+        "nie",
+        "wspolny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-p2-e05",
+      "prompt": {
+        "en": "a one-room flat or a two-room flat?"
+      },
+      "acceptedAnswers": [
+        "mieszkanie jednopokojowe czy dwupokojowe?"
+      ],
+      "distractors": [
+        "jednopokojowy",
+        "dwa"
+      ],
+      "items": [
+        "mieszkanie",
+        "jednopokojowy",
+        "czy",
+        "dwupokojowy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-p2-e06",
+      "pairs": [
+        {
+          "polish": "jednopokojowe",
+          "meaning": {
+            "en": "one-room"
+          }
+        },
+        {
+          "polish": "dwupokojowe",
+          "meaning": {
+            "en": "two-room"
+          }
+        },
+        {
+          "polish": "samodzielne",
+          "meaning": {
+            "en": "self-contained"
+          }
+        },
+        {
+          "polish": "stylowe",
+          "meaning": {
+            "en": "full of character"
+          }
+        },
+        {
+          "polish": "dom jednorodzinny",
+          "meaning": {
+            "en": "a detached house"
+          }
+        }
+      ],
+      "items": [
+        "jednopokojowy",
+        "dwupokojowy",
+        "samodzielny",
+        "stylowy",
+        "dom-jednorodzinny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-p2-e07",
+      "prompt": {
+        "en": "a detached house"
+      },
+      "acceptedAnswers": [
+        "dom jednorodzinny"
+      ],
+      "items": [
+        "dom-jednorodzinny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-p2-e08",
+      "acceptedAnswers": [
+        "to nie ma znaczenia"
+      ],
+      "meaning": {
+        "en": "it does not matter"
+      },
+      "items": [
+        "to-nie-ma-znaczenia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-p2-e09",
+      "text": "Potrzebuję ___ sama.",
+      "meaning": {
+        "en": "I need some time on my own."
+      },
+      "gaps": [
+        [
+          "pobyć"
+        ]
+      ],
+      "distractors": [
+        "pobyła",
+        "być"
+      ],
+      "items": [
+        "potrzebowac-potrzebuje",
+        "pobyc-sama"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-p2-e10",
+      "prompt": {
+        "en": "the window faces the courtyard"
+      },
+      "acceptedAnswers": [
+        "okno jest od podwórka"
+      ],
+      "distractors": [
+        "ulica",
+        "na"
+      ],
+      "items": [
+        "okno",
+        "byc-jest",
+        "od-podworka"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-p2-e11",
+      "lines": [
+        "Mieszkam w stylowej kamienicy, w mieszkaniu dwupokojowym.",
+        "Okna są od podwórka, więc jest mało słońca.",
+        "Mieszkanie jest jednak samodzielne i przytulne."
+      ],
+      "meaning": {
+        "en": "Where I live."
+      },
+      "statements": [
+        {
+          "text": "Mieszkanie jest w bloku.",
+          "meaning": {
+            "en": "The flat is in a block of flats."
+          },
+          "true": false
+        },
+        {
+          "text": "Jest mało słońca.",
+          "meaning": {
+            "en": "There is not much sun."
+          },
+          "true": true
+        },
+        {
+          "text": "Mieszkanie jest samodzielne.",
+          "meaning": {
+            "en": "The flat is self-contained."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "od-podworka",
+        "malo-slonca",
+        "mieszkanie",
+        "byc-jest",
+        "samodzielny",
+        "przytulny"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l19-p2-e12",
+      "lines": [
+        "Jakiego mieszkania szukasz?",
+        "Mieszkanie jednopokojowe, samodzielne.",
+        "Na którym piętrze?",
+        "To nie ma znaczenia."
+      ],
+      "meaning": {
+        "en": "Looking for a flat."
+      },
+      "items": [
+        "mieszkanie",
+        "jednopokojowy",
+        "samodzielny",
+        "na-ktorym-pietrze",
+        "to-nie-ma-znaczenia"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-p2-e13",
+      "prompt": {
+        "en": "we will drop in on you"
+      },
+      "acceptedAnswers": [
+        "wpadniemy do ciebie"
+      ],
+      "items": [
+        "wpadniemy-do-ciebie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-p2-e14",
+      "pairs": [
+        {
+          "polish": "góra",
+          "meaning": {
+            "en": "the top"
+          }
+        },
+        {
+          "polish": "dół",
+          "meaning": {
+            "en": "the bottom"
+          }
+        },
+        {
+          "polish": "na górze",
+          "meaning": {
+            "en": "at the top"
+          }
+        },
+        {
+          "polish": "na dole",
+          "meaning": {
+            "en": "at the bottom"
+          }
+        },
+        {
+          "polish": "wieszak",
+          "meaning": {
+            "en": "a coat hook"
+          }
+        },
+        {
+          "polish": "szafka",
+          "meaning": {
+            "en": "a cupboard"
+          }
+        }
+      ],
+      "items": [
+        "gora",
+        "dol",
+        "na-gorze",
+        "na-dole",
+        "wieszak",
+        "szafka"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-p2-e15",
+      "acceptedAnswers": [
+        "góra i dół"
+      ],
+      "meaning": {
+        "en": "the top and the bottom"
+      },
+      "items": [
+        "gora",
+        "i",
+        "dol"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-p2-e16",
+      "text": "Ręcznik wisi na dole, a kosmetyki stoją na ___.",
+      "meaning": {
+        "en": "The towel hangs at the bottom, and the cosmetics stand at the top."
+      },
+      "gaps": [
+        [
+          "górze"
+        ]
+      ],
+      "distractors": [
+        "góra",
+        "dole"
+      ],
+      "items": [
+        "recznik",
+        "wisiec-wisi",
+        "na-dole",
+        "a",
+        "kosmetyki",
+        "stac-stoja",
+        "na-gorze"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-p2-e17",
+      "text": "Mam dość, potrzebuję pobyć sama w ciszy.",
+      "meaning": {
+        "en": "I've had enough, I need some time alone in peace and quiet."
+      },
+      "distractors": [
+        "Mam dość, potrzebuję pobyć sama w domu.",
+        "Mam czas, potrzebuję pobyć sama w ciszy."
+      ],
+      "items": [
+        "mam-dosc",
+        "potrzebowac-potrzebuje",
+        "pobyc-sama",
+        "w-ciszy"
+      ]
+    }
+  ]
+}

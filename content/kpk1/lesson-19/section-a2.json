@@ -1,0 +1,383 @@
+{
+  "id": "kpk1-l19-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Nie mam gdzie mieszkać",
+    "meaning": {
+      "en": "I have nowhere to live"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-a2-t01",
+      "before": "kpk1-l19-a2-e01",
+      "title": {
+        "en": "Chciałabym zarezerwować pokój"
+      },
+      "body": {
+        "en": "To book a room, *zarezerwować pokój*, say what kind and from when: *pokój jednoosobowy* (a single room), *dwuosobowy* (a double), *z łazienką* (with a bathroom), *od dziś* or *od jutra*, *na cały tydzień*. Reception asks *na jakie nazwisko?*: in what name? A man says *chciałbym*, a woman *chciałabym*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a2-e01",
+      "prompt": "zarezerwować",
+      "options": [
+        {
+          "en": "to cancel"
+        },
+        {
+          "en": "to pay"
+        },
+        {
+          "en": "to book, to reserve (chciałabym zarezerwować pokój: I would like to book a room)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zarezerwowac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a2-e02",
+      "prompt": "jednoosobowy",
+      "options": [
+        {
+          "en": "single, for one person (pokój jednoosobowy: a single room) (jednoosobowy, jednoosobowa, jednoosobowe)"
+        },
+        {
+          "en": "double"
+        },
+        {
+          "en": "for a family"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "jednoosobowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a2-e03",
+      "prompt": "dwuosobowy",
+      "options": [
+        {
+          "en": "single"
+        },
+        {
+          "en": "double, for two people (pokój dwuosobowy: a double room) (dwuosobowy, dwuosobowa, dwuosobowe)"
+        },
+        {
+          "en": "for four people"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dwuosobowy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-a2-e04",
+      "text": "Chciałabym zarezerwować pokój.",
+      "meaning": {
+        "en": "I would like to book a room."
+      },
+      "distractors": [
+        "Chciałabym zarezerwować stolik.",
+        "Chciałabym zapłacić kartą."
+      ],
+      "items": [
+        "chcialabym",
+        "zarezerwowac",
+        "pokoj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a2-e05",
+      "prompt": "z łazienką",
+      "options": [
+        {
+          "en": "with a balcony"
+        },
+        {
+          "en": "without a bathroom"
+        },
+        {
+          "en": "with a bathroom"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-lazienka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-a2-e06",
+      "text": "Pokój ___ z łazienką, proszę.",
+      "meaning": {
+        "en": "A single room with a bathroom, please."
+      },
+      "gaps": [
+        [
+          "jednoosobowy"
+        ]
+      ],
+      "distractors": [
+        "jednoosobowa",
+        "dwuosobowa"
+      ],
+      "items": [
+        "pokoj",
+        "jednoosobowy",
+        "z-lazienka",
+        "prosze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a2-e07",
+      "prompt": "od dziś",
+      "options": [
+        {
+          "en": "from today"
+        },
+        {
+          "en": "until today"
+        },
+        {
+          "en": "since yesterday"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "od-dzis"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a2-e08",
+      "prompt": "od jutra",
+      "options": [
+        {
+          "en": "until tomorrow"
+        },
+        {
+          "en": "from tomorrow"
+        },
+        {
+          "en": "from yesterday"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "od-jutra"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-a2-e09",
+      "prompt": {
+        "en": "today all the rooms are taken"
+      },
+      "acceptedAnswers": [
+        "dziś wszystkie pokoje są zajęte"
+      ],
+      "distractors": [
+        "jest",
+        "pokój"
+      ],
+      "items": [
+        "dzis",
+        "wszystkie",
+        "pokoj",
+        "byc-sa",
+        "zajety"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a2-e10",
+      "prompt": "na cały tydzień",
+      "options": [
+        {
+          "en": "every week"
+        },
+        {
+          "en": "for a day"
+        },
+        {
+          "en": "for the whole week"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-caly-tydzien"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a2-e11",
+      "prompt": "na jakie nazwisko?",
+      "options": [
+        {
+          "en": "in what name?"
+        },
+        {
+          "en": "for how long?"
+        },
+        {
+          "en": "what time?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-jakie-nazwisko"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-a2-e12",
+      "prompt": {
+        "en": "from tomorrow"
+      },
+      "acceptedAnswers": [
+        "od jutra"
+      ],
+      "items": [
+        "od-jutra"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-a2-e13",
+      "acceptedAnswers": [
+        "na cały tydzień"
+      ],
+      "meaning": {
+        "en": "for the whole week"
+      },
+      "items": [
+        "na-caly-tydzien"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-a2-e14",
+      "pairs": [
+        {
+          "polish": "jednoosobowy",
+          "meaning": {
+            "en": "single"
+          }
+        },
+        {
+          "polish": "dwuosobowy",
+          "meaning": {
+            "en": "double"
+          }
+        },
+        {
+          "polish": "z łazienką",
+          "meaning": {
+            "en": "with a bathroom"
+          }
+        },
+        {
+          "polish": "od dziś",
+          "meaning": {
+            "en": "from today"
+          }
+        },
+        {
+          "polish": "od jutra",
+          "meaning": {
+            "en": "from tomorrow"
+          }
+        }
+      ],
+      "items": [
+        "jednoosobowy",
+        "dwuosobowy",
+        "z-lazienka",
+        "od-dzis",
+        "od-jutra"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l19-a2-e15",
+      "lines": [
+        "Dzień dobry, chciałabym zarezerwować pokój.",
+        "Jednoosobowy czy dwuosobowy?",
+        "Jednoosobowy z łazienką, od jutra na cały tydzień.",
+        "Dobrze. Na jakie nazwisko?"
+      ],
+      "meaning": {
+        "en": "Booking a room."
+      },
+      "items": [
+        "dzien-dobry",
+        "chcialabym",
+        "zarezerwowac",
+        "pokoj",
+        "jednoosobowy",
+        "dwuosobowy",
+        "z-lazienka",
+        "od-jutra",
+        "na-caly-tydzien",
+        "na-jakie-nazwisko"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-a2-e16",
+      "prompt": {
+        "en": "a double room from today"
+      },
+      "acceptedAnswers": [
+        "pokój dwuosobowy od dziś"
+      ],
+      "distractors": [
+        "jednoosobowy",
+        "jutra"
+      ],
+      "items": [
+        "pokoj",
+        "dwuosobowy",
+        "od-dzis"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-a2-e17",
+      "text": "Dobrze. Na jakie ___?",
+      "meaning": {
+        "en": "All right. In what name?"
+      },
+      "gaps": [
+        [
+          "nazwisko"
+        ]
+      ],
+      "distractors": [
+        "nazwiska",
+        "nazwiskiem"
+      ],
+      "items": [
+        "dobrze",
+        "na-jakie-nazwisko"
+      ]
+    }
+  ]
+}

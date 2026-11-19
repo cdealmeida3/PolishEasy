@@ -1,0 +1,450 @@
+{
+  "id": "kpk1-l19-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Przeprowadzka",
+    "meaning": {
+      "en": "Moving house"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-c3-t01",
+      "before": "kpk1-l19-c3-e01",
+      "title": {
+        "en": "Przed, za, pod, nad, między"
+      },
+      "body": {
+        "en": "When they say where something is (*gdzie?*), five prepositions take the instrumental, the case of *z kim?*: *przed* (in front of: *przed domem*), *za* (behind: *za drzewem*), *pod* (under: *pod krzesłem*), *nad* (above: *nad stołem*) and *między* (between: *między oknem a drzwiami*). The endings are those after *z*: *-em* for most masculine and neuter nouns, *-ą* for feminine ones: *pod lampą*."
+      },
+      "table": {
+        "title": {
+          "en": "Przyimki + narzędnik"
+        },
+        "columns": [
+          {
+            "header": "przyimek"
+          },
+          {
+            "header": "gdzie?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "przed",
+              "przed domem"
+            ]
+          },
+          {
+            "cells": [
+              "za",
+              "za drzewem"
+            ]
+          },
+          {
+            "cells": [
+              "pod",
+              "pod krzesłem"
+            ]
+          },
+          {
+            "cells": [
+              "nad",
+              "nad stołem"
+            ]
+          },
+          {
+            "cells": [
+              "między",
+              "między oknem a drzwiami"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c3-e01",
+      "prompt": "przed",
+      "options": [
+        {
+          "en": "behind"
+        },
+        {
+          "en": "in front of (przed domem: in front of the house)"
+        },
+        {
+          "en": "under"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przed"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c3-e02",
+      "prompt": "przed domem",
+      "options": [
+        {
+          "en": "behind the house"
+        },
+        {
+          "en": "in the house"
+        },
+        {
+          "en": "in front of the house"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przed-domem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-c3-e03",
+      "text": "Auto stoi przed domem.",
+      "meaning": {
+        "en": "The car is in front of the house."
+      },
+      "distractors": [
+        "Rower stoi przed domem.",
+        "Auto stoi w garażu."
+      ],
+      "items": [
+        "auto",
+        "stac-stoi",
+        "przed-domem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c3-e04",
+      "prompt": "za",
+      "options": [
+        {
+          "en": "behind (za drzewem: behind the tree)"
+        },
+        {
+          "en": "in front of"
+        },
+        {
+          "en": "next to"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "za-instr"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c3-e05",
+      "prompt": "pod",
+      "options": [
+        {
+          "en": "above"
+        },
+        {
+          "en": "under (pod krzesłem: under the chair)"
+        },
+        {
+          "en": "between"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pod"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c3-e06",
+      "prompt": "pod krzesłem",
+      "options": [
+        {
+          "en": "on the chair"
+        },
+        {
+          "en": "next to the chair"
+        },
+        {
+          "en": "under the chair"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pod-krzeslem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-c3-e07",
+      "text": "Kot leży pod ___.",
+      "meaning": {
+        "en": "The cat is lying under the chair."
+      },
+      "gaps": [
+        [
+          "krzesłem"
+        ]
+      ],
+      "distractors": [
+        "krzesło",
+        "krzesłu"
+      ],
+      "items": [
+        "kot",
+        "lezec-lezy",
+        "pod-krzeslem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c3-e08",
+      "prompt": "nad",
+      "options": [
+        {
+          "en": "above, over (nad stołem: above the table)"
+        },
+        {
+          "en": "under"
+        },
+        {
+          "en": "in front of"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c3-e09",
+      "prompt": "nad stołem",
+      "options": [
+        {
+          "en": "on the table"
+        },
+        {
+          "en": "above the table"
+        },
+        {
+          "en": "under the table"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nad-stolem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c3-e10",
+      "prompt": "między",
+      "options": [
+        {
+          "en": "behind"
+        },
+        {
+          "en": "along"
+        },
+        {
+          "en": "between (między oknem a drzwiami: between the window and the door)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "miedzy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-c3-e11",
+      "prompt": {
+        "en": "the lamp hangs above the table"
+      },
+      "acceptedAnswers": [
+        "lampa wisi nad stołem"
+      ],
+      "distractors": [
+        "stół",
+        "pod"
+      ],
+      "items": [
+        "lampa",
+        "wisiec-wisi",
+        "nad",
+        "nad-stolem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-c3-e12",
+      "prompt": {
+        "en": "under the chair"
+      },
+      "acceptedAnswers": [
+        "pod krzesłem"
+      ],
+      "items": [
+        "pod",
+        "pod-krzeslem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-c3-e13",
+      "acceptedAnswers": [
+        "przed domem"
+      ],
+      "meaning": {
+        "en": "in front of the house"
+      },
+      "items": [
+        "przed",
+        "przed-domem"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-c3-e14",
+      "pairs": [
+        {
+          "polish": "przed",
+          "meaning": {
+            "en": "in front of"
+          }
+        },
+        {
+          "polish": "za",
+          "meaning": {
+            "en": "behind"
+          }
+        },
+        {
+          "polish": "pod",
+          "meaning": {
+            "en": "under"
+          }
+        },
+        {
+          "polish": "nad",
+          "meaning": {
+            "en": "above"
+          }
+        },
+        {
+          "polish": "między",
+          "meaning": {
+            "en": "between"
+          }
+        }
+      ],
+      "items": [
+        "przed",
+        "za-instr",
+        "pod",
+        "nad",
+        "miedzy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-c3-e15",
+      "text": "Lampa wisi ___ stołem.",
+      "meaning": {
+        "en": "The lamp hangs above the table."
+      },
+      "gaps": [
+        [
+          "nad"
+        ]
+      ],
+      "distractors": [
+        "pod",
+        "przed"
+      ],
+      "items": [
+        "lampa",
+        "wisiec-wisi",
+        "nad-stolem"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-c3-e16",
+      "lines": [
+        "Mój dom jest mały.",
+        "Przed domem stoi auto, a pod drzewem leży kot.",
+        "W kuchni nad stołem wisi lampa."
+      ],
+      "meaning": {
+        "en": "My house."
+      },
+      "statements": [
+        {
+          "text": "Auto stoi przed domem.",
+          "meaning": {
+            "en": "The car is in front of the house."
+          },
+          "true": true
+        },
+        {
+          "text": "Kot leży w domu.",
+          "meaning": {
+            "en": "The cat is lying in the house."
+          },
+          "true": false
+        },
+        {
+          "text": "Lampa wisi nad stołem.",
+          "meaning": {
+            "en": "The lamp hangs above the table."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "dom",
+        "maly",
+        "przed-domem",
+        "stac-stoi",
+        "auto",
+        "kot",
+        "kuchnia",
+        "nad-stolem",
+        "wisiec-wisi",
+        "lampa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-c3-e17",
+      "prompt": {
+        "en": "the dog is lying under the chair"
+      },
+      "acceptedAnswers": [
+        "pies leży pod krzesłem"
+      ],
+      "distractors": [
+        "krzesło",
+        "nad"
+      ],
+      "items": [
+        "pies",
+        "lezec-lezy",
+        "pod-krzeslem"
+      ]
+    }
+  ]
+}

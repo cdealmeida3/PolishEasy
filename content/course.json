@@ -21,7 +21,8 @@
     "kpk1/lesson-15/items.json",
     "kpk1/lesson-16/items.json",
     "kpk1/lesson-17/items.json",
-    "kpk1/lesson-18/items.json"
+    "kpk1/lesson-18/items.json",
+    "kpk1/lesson-19/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -52,7 +53,8 @@
     "kpk1/chats/post-office.json",
     "kpk1/chats/weekend-weather.json",
     "kpk1/chats/birthday-present.json",
-    "kpk1/chats/new-flat.json"
+    "kpk1/chats/new-flat.json",
+    "kpk1/chats/hotel-room.json"
   ],
   "levels": [
     {
@@ -1092,7 +1094,36 @@
               "przyimki statyczne"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-19/section-a1.json",
+            "kpk1/lesson-19/section-a2.json",
+            "kpk1/lesson-19/section-a3.json",
+            "kpk1/lesson-19/section-a4.json",
+            "kpk1/lesson-19/section-a5.json",
+            "kpk1/lesson-19/section-b1.json",
+            "kpk1/lesson-19/section-b2.json",
+            "kpk1/lesson-19/section-b3.json",
+            "kpk1/lesson-19/section-b4.json",
+            "kpk1/lesson-19/section-b5.json",
+            "kpk1/lesson-19/section-b6.json",
+            "kpk1/lesson-19/section-c1.json",
+            "kpk1/lesson-19/section-c2.json",
+            "kpk1/lesson-19/section-c3.json",
+            "kpk1/lesson-19/section-c4.json",
+            "kpk1/lesson-19/section-p1.json",
+            "kpk1/lesson-19/section-p2.json"
+          ],
+          "lookUp": [
+            "wsciekly",
+            "przeprowadzac-sie-przeprowadzam",
+            "zaspac-zaspalam",
+            "przytulny",
+            "przestronny",
+            "ponury",
+            "kawalerka",
+            "czynsz",
+            "kaucja"
+          ]
         },
         {
           "id": "kpk1-l20",

@@ -1,0 +1,400 @@
+{
+  "id": "kpk1-l19-p1",
+  "section": {
+    "letter": "P",
+    "heading": "Powtórzenie",
+    "meaning": {
+      "en": "Revision"
+    },
+    "strands": [
+      "K",
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-p1-t01",
+      "before": "kpk1-l19-p1-e01",
+      "title": {
+        "en": "Gdzie to postawić?"
+      },
+      "body": {
+        "en": "Moving in, you ask where things go. A thing that stands you *postawić* (*postaw książki na regale*), a thing that lies you *położyć* (*połóż ręcznik w łazience*), and a thing that hangs you *powiesić* (*powieś kurtkę na wieszaku*). Then it *stoi*, *leży* or *wisi*: *książki stoją na regale*, *ręcznik leży w łazience*. Small things go *w szafce* or *na parapecie*, the windowsill."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-p1-e01",
+      "prompt": "postawić",
+      "options": [
+        {
+          "en": "to hang up"
+        },
+        {
+          "en": "to throw away"
+        },
+        {
+          "en": "to put, to stand (something upright: postawić książki na półce)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "postawic"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-p1-e02",
+      "prompt": "położyć",
+      "options": [
+        {
+          "en": "to put, to lay (something flat: położyć książkę na biurku)"
+        },
+        {
+          "en": "to stand up"
+        },
+        {
+          "en": "to take"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "polozyc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-p1-e03",
+      "prompt": "powiesić",
+      "options": [
+        {
+          "en": "to put down"
+        },
+        {
+          "en": "to hang (up) (powiesić obraz na ścianie)"
+        },
+        {
+          "en": "to wash"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "powiesic"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-p1-e04",
+      "text": "Gdzie mogę postawić kwiatek?",
+      "meaning": {
+        "en": "Where can I put the plant?"
+      },
+      "distractors": [
+        "Gdzie mogę położyć kwiatek?",
+        "Gdzie mogę powiesić obraz?"
+      ],
+      "items": [
+        "gdzie",
+        "moc-moge",
+        "postawic",
+        "kwiatek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-p1-e05",
+      "prompt": "wieszak",
+      "options": [
+        {
+          "en": "a shelf"
+        },
+        {
+          "en": "a wardrobe"
+        },
+        {
+          "en": "a coat hook, a hanger (na wieszaku: on the hook)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wieszak"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-p1-e06",
+      "prompt": "parapet",
+      "options": [
+        {
+          "en": "a windowsill (na parapecie: on the windowsill)"
+        },
+        {
+          "en": "a balcony"
+        },
+        {
+          "en": "a floor"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "parapet"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-p1-e07",
+      "prompt": "szafka",
+      "options": [
+        {
+          "en": "a fridge"
+        },
+        {
+          "en": "a cupboard, a cabinet (w szafce: in the cupboard)"
+        },
+        {
+          "en": "a drawer"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szafka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-p1-e08",
+      "prompt": "ręcznik",
+      "options": [
+        {
+          "en": "a tie"
+        },
+        {
+          "en": "a scarf"
+        },
+        {
+          "en": "a towel"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "recznik"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-p1-e09",
+      "text": "Ręcznik wisi na ___.",
+      "meaning": {
+        "en": "The towel hangs on the hook."
+      },
+      "gaps": [
+        [
+          "wieszaku"
+        ]
+      ],
+      "distractors": [
+        "wieszak",
+        "wieszakiem"
+      ],
+      "items": [
+        "recznik",
+        "wisiec-wisi",
+        "wieszak"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-p1-e10",
+      "prompt": {
+        "en": "the cosmetics are in the cupboard"
+      },
+      "acceptedAnswers": [
+        "kosmetyki są w szafce"
+      ],
+      "distractors": [
+        "szafka",
+        "na"
+      ],
+      "items": [
+        "kosmetyki",
+        "byc-sa",
+        "szafka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-p1-e11",
+      "prompt": {
+        "en": "on the windowsill"
+      },
+      "acceptedAnswers": [
+        "na parapecie"
+      ],
+      "items": [
+        "parapet"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-p1-e12",
+      "pairs": [
+        {
+          "polish": "postawić",
+          "meaning": {
+            "en": "to put (standing)"
+          }
+        },
+        {
+          "polish": "położyć",
+          "meaning": {
+            "en": "to lay (flat)"
+          }
+        },
+        {
+          "polish": "powiesić",
+          "meaning": {
+            "en": "to hang up"
+          }
+        },
+        {
+          "polish": "parapet",
+          "meaning": {
+            "en": "a windowsill"
+          }
+        },
+        {
+          "polish": "ręcznik",
+          "meaning": {
+            "en": "a towel"
+          }
+        }
+      ],
+      "items": [
+        "postawic",
+        "polozyc",
+        "powiesic",
+        "parapet",
+        "recznik"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l19-p1-e13",
+      "lines": [
+        "Co się stało? Jesteś wściekła?",
+        "Nie mam gdzie mieszkać!",
+        "Przeprowadzam się do hotelu.",
+        "Gotowe! Mam pokój jednoosobowy."
+      ],
+      "meaning": {
+        "en": "Angela leaves home."
+      },
+      "items": [
+        "co-sie-stalo",
+        "byc-jestes",
+        "wsciekly",
+        "nie-mam-gdzie-mieszkac",
+        "przeprowadzac-sie-przeprowadzam",
+        "hotel",
+        "gotowe",
+        "miec-mam",
+        "pokoj",
+        "jednoosobowy"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-p1-e14",
+      "acceptedAnswers": [
+        "gdzie mogę położyć ręcznik?"
+      ],
+      "meaning": {
+        "en": "where can I put the towel?"
+      },
+      "items": [
+        "gdzie",
+        "moc-moge",
+        "polozyc",
+        "recznik"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-p1-e15",
+      "text": "Co się stało? Nie mam gdzie ___!",
+      "meaning": {
+        "en": "What happened? I've got nowhere to live!"
+      },
+      "gaps": [
+        [
+          "mieszkać"
+        ]
+      ],
+      "distractors": [
+        "mieszkam",
+        "mieszka"
+      ],
+      "items": [
+        "co-sie-stalo",
+        "nie-mam-gdzie-mieszkac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-p1-e16",
+      "prompt": {
+        "en": "the school is near home"
+      },
+      "acceptedAnswers": [
+        "szkoła jest blisko domu"
+      ],
+      "distractors": [
+        "dom",
+        "daleko"
+      ],
+      "items": [
+        "szkola",
+        "byc-jest",
+        "blisko-domu"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-p1-e17",
+      "prompt": {
+        "en": "to hang the picture on the wall"
+      },
+      "acceptedAnswers": [
+        "powiesić obraz na ścianie"
+      ],
+      "items": [
+        "powiesic",
+        "obraz",
+        "sciana"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-p1-e18",
+      "prompt": {
+        "en": "done! the picture hangs on the wall"
+      },
+      "acceptedAnswers": [
+        "gotowe! obraz wisi na ścianie"
+      ],
+      "distractors": [
+        "ściana",
+        "stoi"
+      ],
+      "items": [
+        "gotowe",
+        "obraz",
+        "wisiec-wisi",
+        "sciana"
+      ]
+    }
+  ]
+}

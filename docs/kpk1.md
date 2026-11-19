@@ -399,3 +399,23 @@ It gives the later chapters:
 - *marzyć o*, *myśleć o*, *rozmawiać o*, and *po* as around.
 
 It leaves for later: *pod*, *nad* and *za* for where things are, and the locative of the months and years (*w maju*, *w 2020 roku*).
+
+## Chapter 19: Wszędzie dobrze, ale w domu najlepiej
+
+Book pages 146 to 151, recordings 197 to 205. Seventeen parts, 292 Exercises and 128 new Items: a bad morning and a move to a hotel, booking a room, the kinds of hotel room, what a flat is like, kinds of flat, looking for one, adverts and a call about one, moving house, the prepositions of place with the genitive and the instrumental, and putting things where they go.
+
+- **A** *Nie mam gdzie mieszkać*, in five: a bad morning (18: *spóźniony*, *co się stało?*, *wściekły*, *zaspałam*, *sąsiad*, *nie mam gdzie mieszkać*, *hotel*, *przeprowadzam się*); booking a room (17: *zarezerwować*, *jednoosobowy*, *dwuosobowy*, *z łazienką*, *od dziś*, *od jutra*, *na cały tydzień*, *na jakie nazwisko?*); the kinds of room (16: *trzyosobowy*, *czteroosobowy*, *z klimatyzacją*, *z widokiem na morze*, *z dostępem do internetu*, *ze śniadaniem*, *na pierwszym piętrze*, *na ostatnim piętrze*); how long and from when, with a table Tip (17: *na jak długo?*, *od kiedy?*, *noc*, *na weekend*, *od środy*, *do piątku*, *na którym piętrze?*, *z czym?*); and at reception (18: *recepcja*, *czy jest wolny pokój?*, *w cenie*, *bez łazienki*, *taras*, *gotowe!*, *mieszkać*).
+- **B** *W poszukiwaniu mieszkania*, in six: what a flat is like, with a table Tip of opposites (18: *słoneczny*, *przestronny*, *przytulny*, *nowoczesny*, *stylowy*, *ponury*, *samodzielny*, *wspólny*); kinds of flat (17: *kawalerka*, *kamienica*, *jednopokojowy*, *dwupokojowy*, *metr kwadratowy*, *po remoncie*, *ogrzewanie*, *dom jednorodzinny*); *szukam mieszkania* (17: *blisko szkoły*, *wolałabym*, *sam*, *współlokator*, *maksymalnie*, *to nie ma znaczenia*, *ile możesz zapłacić?*); adverts (16: *do wynajęcia*, *umeblowany*, *czynsz*, *kaucja*, *media*, *prąd*, *gaz*, *aneks kuchenny*); a call about an advert (16: *dzwonię w sprawie ogłoszenia*, *czy oferta jest jeszcze aktualna?*, *obejrzeć*, *kiedy mogę przyjść?*, *koszty miesięczne*, *centralne ogrzewanie*, *od strony południowej*, *zapraszam od zaraz*); and packing (17: *spakować się*, *rzeczy*, *pobyć sama*, *w ciszy*, *od podwórka*, *mało słońca*, *zamówić taksówkę*, *za dziesięć minut*).
+- **C** *Przeprowadzka*, in four: moving day (18: *przeprowadzka*, *dziękuję za pomoc*, *wszystko się dobrze skończyło*, *rozplanowany*, *pasują do ciebie*, *wpadniemy do ciebie*, *w każdy weekend*, *macie rację*); the prepositions with the genitive, with a table Tip (17: *koło*, *obok szafy*, *koło okna*, *blisko domu*, *na wprost drzwi*, *wzdłuż*, *wzdłuż ściany*, *pies*); the prepositions with the instrumental, with a table Tip (17: *przed*, *przed domem*, *za*, *pod*, *pod krzesłem*, *nad*, *nad stołem*, *między*); and Angela's new room (18: *komoda*, *przed telewizorem*, *pod oknem*, *między regałem a biurkiem*, *za biurkiem*, *nad łóżkiem*, *obok łóżka*, *za drzewem*).
+- *Powtórzenie*, in two: *postawić*, *położyć*, *powiesić* (18: *wieszak*, *parapet*, *szafka*, *ręcznik*), and *na górze*, *na dole* (17: *góra*, *dół*), with the chapter's words again.
+
+The prepositions of place are taught as Items with their meaning of where (*przed*, *za*, *pod*, *nad*, *między*, *koło*, *wzdłuż*) and as phrase Items (*przed domem*, *obok szafy*), and the Tip on the instrumental says they take it when they say where something is. *Wściekły*, *przeprowadzam się*, *zaspałam*, *przytulny*, *przestronny*, *ponury*, *kawalerka*, *czynsz* and *kaucja*, the words the book sends to the dictionary, are under Look up. There are 67 listening tasks on all 9 recordings, and one Chat: *A hotel room* (a receptionist, formal: you book a single room with a bathroom for a week, and give your name). Fourteen Items have pictures (a hotel, a night, a dog, a taxi, a reception bell, a quiet face, a furious face, a sleeping face, electricity, the sea, a house with a garden, the sun, luggage and a television).
+
+It gives the later chapters:
+
+- booking a room, and how long and from when (*na jak długo?*, *od środy do piątku*);
+- describing a flat and reading a flat advert;
+- *przed*, *za*, *pod*, *nad* and *między* with the instrumental, and *obok*, *koło*, *blisko*, *na wprost* and *wzdłuż* with the genitive, for where things are;
+- *postawić*, *położyć*, *powiesić* beside *stoi*, *leży*, *wisi*.
+
+It leaves for later: the same prepositions with the accusative for where things go (*pod stół*, *nad morze*).

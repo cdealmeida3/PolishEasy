@@ -1,0 +1,384 @@
+{
+  "id": "kpk1-l19-b5",
+  "section": {
+    "letter": "B",
+    "heading": "W poszukiwaniu mieszkania",
+    "meaning": {
+      "en": "Looking for a flat"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-b5-t01",
+      "before": "kpk1-l19-b5-e01",
+      "title": {
+        "en": "Dzwonię w sprawie ogłoszenia"
+      },
+      "body": {
+        "en": "On the phone: *dzień dobry, dzwonię w sprawie ogłoszenia* (I'm calling about the advert). Ask *czy oferta jest jeszcze aktualna?* (is it still available?), *a jakie jest ogrzewanie?* (*centralne ogrzewanie*: central heating), *jakie są koszty miesięczne?* and *kiedy mogę przyjść obejrzeć mieszkanie?*. A flat *od strony południowej* faces south and has sun all day. The owner says *zapraszam od zaraz*: you can move in right away, it is free now."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b5-e01",
+      "prompt": "dzwonię w sprawie ogłoszenia",
+      "options": [
+        {
+          "en": "I'm calling about the bill"
+        },
+        {
+          "en": "I'm writing an advert"
+        },
+        {
+          "en": "I'm calling about the advert"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dzwonie-w-sprawie-ogloszenia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b5-e02",
+      "prompt": "czy oferta jest jeszcze aktualna?",
+      "options": [
+        {
+          "en": "is the offer still available?"
+        },
+        {
+          "en": "is the offer cheap?"
+        },
+        {
+          "en": "is the flat new?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czy-oferta-jest-aktualna"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-b5-e03",
+      "text": "Dzień dobry, dzwonię w sprawie ogłoszenia.",
+      "meaning": {
+        "en": "Hello, I'm calling about the advert."
+      },
+      "distractors": [
+        "Dzień dobry, dzwonię w sprawie pokoju.",
+        "Dobry wieczór, dzwonię w sprawie ogłoszenia."
+      ],
+      "items": [
+        "dzien-dobry",
+        "dzwonie-w-sprawie-ogloszenia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b5-e04",
+      "prompt": "obejrzeć",
+      "options": [
+        {
+          "en": "to rent"
+        },
+        {
+          "en": "to see, to view (obejrzeć mieszkanie: to view a flat)"
+        },
+        {
+          "en": "to buy"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "obejrzec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b5-e05",
+      "prompt": "kiedy mogę przyjść?",
+      "options": [
+        {
+          "en": "when can I pay?"
+        },
+        {
+          "en": "where can I go?"
+        },
+        {
+          "en": "when can I come?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kiedy-moge-przyjsc"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b5-e06",
+      "text": "Kiedy mogę przyjść ___ mieszkanie?",
+      "meaning": {
+        "en": "When can I come and view the flat?"
+      },
+      "gaps": [
+        [
+          "obejrzeć"
+        ]
+      ],
+      "distractors": [
+        "obejrzę",
+        "oglądać"
+      ],
+      "items": [
+        "kiedy-moge-przyjsc",
+        "obejrzec",
+        "mieszkanie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b5-e07",
+      "prompt": "koszty miesięczne",
+      "options": [
+        {
+          "en": "the monthly costs"
+        },
+        {
+          "en": "the price per night"
+        },
+        {
+          "en": "the deposit"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "koszty-miesieczne"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b5-e08",
+      "prompt": "centralne ogrzewanie",
+      "options": [
+        {
+          "en": "gas heating"
+        },
+        {
+          "en": "central heating"
+        },
+        {
+          "en": "air conditioning"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "centralne-ogrzewanie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b5-e09",
+      "prompt": "od strony południowej",
+      "options": [
+        {
+          "en": "facing north"
+        },
+        {
+          "en": "in the south of Poland"
+        },
+        {
+          "en": "facing south, on the south side"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "od-strony-poludniowej"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b5-e10",
+      "prompt": "zapraszam od zaraz",
+      "options": [
+        {
+          "en": "you can move in right away, it is free now"
+        },
+        {
+          "en": "please wait"
+        },
+        {
+          "en": "come tomorrow"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zapraszam-od-zaraz"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-b5-e11",
+      "prompt": {
+        "en": "the heating is central"
+      },
+      "acceptedAnswers": [
+        "ogrzewanie jest centralne"
+      ],
+      "distractors": [
+        "centrum",
+        "są"
+      ],
+      "items": [
+        "ogrzewanie",
+        "byc-jest",
+        "centralne-ogrzewanie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-b5-e12",
+      "prompt": {
+        "en": "is the offer still available?"
+      },
+      "acceptedAnswers": [
+        "czy oferta jest jeszcze aktualna?"
+      ],
+      "items": [
+        "czy-oferta-jest-aktualna"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-b5-e13",
+      "acceptedAnswers": [
+        "zapraszam od zaraz"
+      ],
+      "meaning": {
+        "en": "you can move in right away"
+      },
+      "items": [
+        "zapraszam-od-zaraz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-b5-e14",
+      "pairs": [
+        {
+          "polish": "koszty miesięczne",
+          "meaning": {
+            "en": "the monthly costs"
+          }
+        },
+        {
+          "polish": "centralne ogrzewanie",
+          "meaning": {
+            "en": "central heating"
+          }
+        },
+        {
+          "polish": "od strony południowej",
+          "meaning": {
+            "en": "facing south"
+          }
+        },
+        {
+          "polish": "obejrzeć",
+          "meaning": {
+            "en": "to view"
+          }
+        },
+        {
+          "polish": "kiedy mogę przyjść?",
+          "meaning": {
+            "en": "when can I come?"
+          }
+        }
+      ],
+      "items": [
+        "koszty-miesieczne",
+        "centralne-ogrzewanie",
+        "od-strony-poludniowej",
+        "obejrzec",
+        "kiedy-moge-przyjsc"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l19-b5-e15",
+      "lines": [
+        "Dzień dobry, dzwonię w sprawie ogłoszenia.",
+        "Słucham?",
+        "Czy oferta jest jeszcze aktualna?",
+        "Tak, jest aktualna.",
+        "Kiedy mogę przyjść obejrzeć mieszkanie?",
+        "Zapraszam od zaraz."
+      ],
+      "meaning": {
+        "en": "A call about a flat."
+      },
+      "items": [
+        "dzien-dobry",
+        "dzwonie-w-sprawie-ogloszenia",
+        "slucham",
+        "czy-oferta-jest-aktualna",
+        "kiedy-moge-przyjsc",
+        "obejrzec",
+        "mieszkanie",
+        "zapraszam-od-zaraz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-b5-e16",
+      "lines": [
+        "Mieszkanie jest od strony południowej, więc jest słoneczne.",
+        "Ogrzewanie jest centralne.",
+        "Koszty miesięczne to tysiąc pięćset złotych."
+      ],
+      "meaning": {
+        "en": "About the flat."
+      },
+      "statements": [
+        {
+          "text": "Mieszkanie jest ciemne.",
+          "meaning": {
+            "en": "The flat is dark."
+          },
+          "true": false
+        },
+        {
+          "text": "Ogrzewanie jest centralne.",
+          "meaning": {
+            "en": "The heating is central."
+          },
+          "true": true
+        },
+        {
+          "text": "Mieszkanie kosztuje tysiąc pięćset złotych miesięcznie.",
+          "meaning": {
+            "en": "The flat costs one thousand five hundred złoty a month."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "mieszkanie",
+        "od-strony-poludniowej",
+        "sloneczny",
+        "ogrzewanie",
+        "centralne-ogrzewanie",
+        "koszty-miesieczne",
+        "tysiac",
+        "piecset",
+        "zloty"
+      ]
+    }
+  ]
+}

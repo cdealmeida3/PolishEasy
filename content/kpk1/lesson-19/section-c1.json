@@ -1,0 +1,420 @@
+{
+  "id": "kpk1-l19-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Przeprowadzka",
+    "meaning": {
+      "en": "Moving house"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-c1-t01",
+      "before": "kpk1-l19-c1-e01",
+      "title": {
+        "en": "Przeprowadzka"
+      },
+      "body": {
+        "en": "Angela's friends help with *przeprowadzka*, the move. She says *dziękuję za pomoc!*, and they answer *nie ma za co* (don't mention it): *wszystko się dobrze skończyło*, everything ended well. The flat is small, *ale dobrze rozplanowane* (well laid out), and its colours *pasują do ciebie*, suit you. It is in the centre, so the friends will drop in after a party: *wpadniemy do ciebie*. Not *w każdy weekend*, Angela laughs. *Macie rację!*: you are right!"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c1-e01",
+      "prompt": "przeprowadzka",
+      "options": [
+        {
+          "en": "a move, moving house"
+        },
+        {
+          "en": "a party"
+        },
+        {
+          "en": "a holiday"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przeprowadzka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c1-e02",
+      "prompt": "dziękuję za pomoc",
+      "options": [
+        {
+          "en": "thank you for the present"
+        },
+        {
+          "en": "thank you for your help"
+        },
+        {
+          "en": "can you help me?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dziekuje-za-pomoc"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-c1-e03",
+      "text": "Bardzo wam dziękuję za pomoc!",
+      "meaning": {
+        "en": "Thank you so much for your help!"
+      },
+      "distractors": [
+        "Bardzo ci dziękuję za pomoc!",
+        "Bardzo wam dziękuję za prezent!"
+      ],
+      "items": [
+        "bardzo",
+        "wam",
+        "dziekuje-za-pomoc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c1-e04",
+      "prompt": "wszystko się dobrze skończyło",
+      "options": [
+        {
+          "en": "everything is ready"
+        },
+        {
+          "en": "nothing happened"
+        },
+        {
+          "en": "everything ended well"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wszystko-sie-dobrze-skonczylo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-c1-e05",
+      "text": "Nie ma za co! Wszystko się dobrze ___.",
+      "meaning": {
+        "en": "Don't mention it! Everything ended well."
+      },
+      "gaps": [
+        [
+          "skończyło"
+        ]
+      ],
+      "distractors": [
+        "skończy",
+        "skończyła"
+      ],
+      "items": [
+        "nie-ma-za-co",
+        "wszystko-sie-dobrze-skonczylo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c1-e06",
+      "prompt": "rozplanowany",
+      "options": [
+        {
+          "en": "laid out (dobrze rozplanowane: well laid out) (rozplanowany, rozplanowana, rozplanowane)"
+        },
+        {
+          "en": "decorated"
+        },
+        {
+          "en": "cleaned"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rozplanowany"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c1-e07",
+      "prompt": "pasują do ciebie",
+      "options": [
+        {
+          "en": "they are for you"
+        },
+        {
+          "en": "they suit you"
+        },
+        {
+          "en": "they like you"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pasuja-do-ciebie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-c1-e08",
+      "prompt": {
+        "en": "the flat is small, but well laid out"
+      },
+      "acceptedAnswers": [
+        "mieszkanie jest małe, ale dobrze rozplanowane"
+      ],
+      "distractors": [
+        "mały",
+        "dobry"
+      ],
+      "items": [
+        "mieszkanie",
+        "byc-jest",
+        "maly",
+        "ale",
+        "dobrze",
+        "rozplanowany"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c1-e09",
+      "prompt": "wpadniemy do ciebie",
+      "options": [
+        {
+          "en": "we will call you"
+        },
+        {
+          "en": "we will wait for you"
+        },
+        {
+          "en": "we will drop in on you"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wpadniemy-do-ciebie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c1-e10",
+      "prompt": "w każdy weekend",
+      "options": [
+        {
+          "en": "every weekend"
+        },
+        {
+          "en": "next weekend"
+        },
+        {
+          "en": "at the weekend"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-kazdy-weekend"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c1-e11",
+      "prompt": "macie rację",
+      "options": [
+        {
+          "en": "you are welcome"
+        },
+        {
+          "en": "you are right (said to several people)"
+        },
+        {
+          "en": "you are late"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "macie-racje"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-c1-e12",
+      "prompt": {
+        "en": "thank you for your help"
+      },
+      "acceptedAnswers": [
+        "dziękuję za pomoc"
+      ],
+      "items": [
+        "dziekuje-za-pomoc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-c1-e13",
+      "acceptedAnswers": [
+        "wpadniemy do ciebie w każdy weekend"
+      ],
+      "meaning": {
+        "en": "we will drop in on you every weekend"
+      },
+      "items": [
+        "wpadniemy-do-ciebie",
+        "w-kazdy-weekend"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-c1-e14",
+      "pairs": [
+        {
+          "polish": "przeprowadzka",
+          "meaning": {
+            "en": "moving house"
+          }
+        },
+        {
+          "polish": "dziękuję za pomoc",
+          "meaning": {
+            "en": "thank you for your help"
+          }
+        },
+        {
+          "polish": "macie rację",
+          "meaning": {
+            "en": "you (all) are right"
+          }
+        },
+        {
+          "polish": "w każdy weekend",
+          "meaning": {
+            "en": "every weekend"
+          }
+        },
+        {
+          "polish": "pasują do ciebie",
+          "meaning": {
+            "en": "they suit you"
+          }
+        }
+      ],
+      "items": [
+        "przeprowadzka",
+        "dziekuje-za-pomoc",
+        "macie-racje",
+        "w-kazdy-weekend",
+        "pasuja-do-ciebie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-c1-e15",
+      "text": "Ładne! ___ do ciebie.",
+      "meaning": {
+        "en": "Nice! They suit you."
+      },
+      "gaps": [
+        [
+          "Pasują"
+        ]
+      ],
+      "distractors": [
+        "Pasuje",
+        "Pasujesz"
+      ],
+      "items": [
+        "ladny",
+        "pasuja-do-ciebie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-c1-e16",
+      "prompt": {
+        "en": "you (all) are right, everything ended well"
+      },
+      "acceptedAnswers": [
+        "macie rację, wszystko się dobrze skończyło"
+      ],
+      "distractors": [
+        "racja",
+        "dobry"
+      ],
+      "items": [
+        "macie-racje",
+        "wszystko-sie-dobrze-skonczylo"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-c1-e17",
+      "text": "Jutro jest moja ___!",
+      "meaning": {
+        "en": "Tomorrow is my move!"
+      },
+      "gaps": [
+        [
+          "przeprowadzka"
+        ]
+      ],
+      "distractors": [
+        "przeprowadzki",
+        "przeprowadzkę"
+      ],
+      "items": [
+        "jutro",
+        "byc-jest",
+        "moja",
+        "przeprowadzka"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-c1-e18",
+      "lines": [
+        "Mieszkanie Angeli jest w centrum.",
+        "Jest małe, ale dobrze rozplanowane.",
+        "Przyjaciele wpadną do Angeli po imprezie."
+      ],
+      "meaning": {
+        "en": "Angela's new flat."
+      },
+      "statements": [
+        {
+          "text": "Mieszkanie jest daleko od centrum.",
+          "meaning": {
+            "en": "The flat is far from the centre."
+          },
+          "true": false
+        },
+        {
+          "text": "Mieszkanie jest dobrze rozplanowane.",
+          "meaning": {
+            "en": "The flat is well laid out."
+          },
+          "true": true
+        },
+        {
+          "text": "Angela przeprowadza się sama, bez pomocy.",
+          "meaning": {
+            "en": "Angela moves on her own, with no help."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "mieszkanie",
+        "w-centrum",
+        "maly",
+        "rozplanowany"
+      ]
+    }
+  ]
+}
