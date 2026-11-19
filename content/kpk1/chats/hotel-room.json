@@ -1,0 +1,210 @@
+{
+  "id": "chat-hotel-room",
+  "person": "Recepcjonistka",
+  "title": {
+    "en": "A room for three nights"
+  },
+  "scene": {
+    "en": "You need a hotel room in Kraków from tomorrow, and you ring the hotel. The receptionist is a stranger, so you speak formally. Ask for a single room with a bathroom, and answer her questions: from when, for how long and in what name."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "recepcja",
+    "slucham",
+    "chcialabym",
+    "zarezerwowac",
+    "pokoj",
+    "czy",
+    "byc-jest",
+    "wolny",
+    "stolik",
+    "jaki",
+    "jednoosobowy",
+    "dwuosobowy",
+    "z-lazienka",
+    "prosze",
+    "z-widokiem-na-morze",
+    "od-kiedy",
+    "od-jutra",
+    "na-caly-tydzien",
+    "na-jak-dlugo",
+    "na-loc",
+    "trzy",
+    "noc",
+    "na-pierwszym-pietrze",
+    "dobrze",
+    "na-jakie-nazwisko",
+    "bedzie",
+    "rezerwacja",
+    "moje",
+    "nazwisko",
+    "ile",
+    "kosztowac-kosztuje",
+    "doba",
+    "gotowe",
+    "sniadanie",
+    "w-cenie",
+    "zapraszac-zapraszamy",
+    "jutro"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry, recepcja, słucham?",
+      "meaning": {
+        "en": "Hello, reception, how can I help?"
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry, chciałabym zarezerwować pokój.",
+          "meaning": {
+            "en": "Hello, I would like to book a room."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Dzień dobry, chciałabym zarezerwować pokój.",
+            "Dzień dobry, chciałbym zarezerwować pokój.",
+            "Dzień dobry. Chciałabym zarezerwować pokój."
+          ]
+        },
+        {
+          "text": "Dzień dobry, czy jest wolny stolik?",
+          "meaning": {
+            "en": "Hello, is there a table free?"
+          },
+          "note": {
+            "en": "A *stolik* is a table in a café or a restaurant. At a hotel you book a room: *chciałabym zarezerwować pokój*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Jaki pokój? Jednoosobowy czy dwuosobowy?",
+      "meaning": {
+        "en": "What kind of room? Single or double?"
+      },
+      "replies": [
+        {
+          "text": "Jednoosobowy z łazienką, proszę.",
+          "meaning": {
+            "en": "A single with a bathroom, please."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Jednoosobowy z łazienką, proszę.",
+            "Jednoosobowy z łazienką."
+          ]
+        },
+        {
+          "text": "Z widokiem na morze, proszę.",
+          "meaning": {
+            "en": "With a sea view, please."
+          },
+          "note": {
+            "en": "She asked *jaki?*, for how many people: *jednoosobowy* for one, *dwuosobowy* for two. *Kraków* is a long way from the sea, too."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Od kiedy?",
+      "meaning": {
+        "en": "From when?"
+      },
+      "replies": [
+        {
+          "text": "Od jutra.",
+          "meaning": {
+            "en": "From tomorrow."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Od jutra.",
+            "Od jutra"
+          ]
+        },
+        {
+          "text": "Na cały tydzień.",
+          "meaning": {
+            "en": "For the whole week."
+          },
+          "note": {
+            "en": "That says how long. *Od kiedy?* asks from when: *od jutra*, *od dziś*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Na jak długo?",
+      "meaning": {
+        "en": "For how long?"
+      },
+      "replies": [
+        {
+          "text": "Na trzy noce.",
+          "meaning": {
+            "en": "For three nights."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Na trzy noce.",
+            "Na trzy noce"
+          ]
+        },
+        {
+          "text": "Na pierwszym piętrze.",
+          "meaning": {
+            "en": "On the first floor."
+          },
+          "note": {
+            "en": "That says where the room is. *Na jak długo?* asks how long: *na trzy noce*, *na weekend*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Dobrze. Na jakie nazwisko będzie rezerwacja?",
+      "meaning": {
+        "en": "All right. In what name will the booking be?"
+      },
+      "replies": [
+        {
+          "text": "Na moje nazwisko, proszę.",
+          "meaning": {
+            "en": "In my name, please."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Na moje nazwisko, proszę."
+          ]
+        },
+        {
+          "text": "Ile kosztuje doba?",
+          "meaning": {
+            "en": "How much is a night?"
+          },
+          "note": {
+            "en": "First give what she asked for, the name for the booking: *na moje nazwisko*. The price can come after."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Gotowe! Śniadanie jest w cenie. Zapraszamy jutro.",
+      "meaning": {
+        "en": "All set! Breakfast is included. We look forward to seeing you tomorrow."
+      }
+    }
+  ]
+}

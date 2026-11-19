@@ -1,0 +1,419 @@
+{
+  "id": "kpk1-l19-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Nie mam gdzie mieszkać",
+    "meaning": {
+      "en": "I have nowhere to live"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-a5-t01",
+      "before": "kpk1-l19-a5-e01",
+      "title": {
+        "en": "W recepcji"
+      },
+      "body": {
+        "en": "At reception, *w recepcji*, ask *czy jest wolny pokój?* (is there a room free?) and *ile kosztuje doba?* (how much is a night?). Breakfast may be *w cenie*, included in the price. A cheap room is *bez łazienki*, a better one *z tarasem*. When all is booked, the receptionist says *gotowe!*: all set!"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a5-e01",
+      "prompt": "recepcja",
+      "options": [
+        {
+          "en": "a restaurant"
+        },
+        {
+          "en": "a lift"
+        },
+        {
+          "en": "reception, the front desk (w recepcji: at reception)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "recepcja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a5-e02",
+      "prompt": "czy jest wolny pokój?",
+      "options": [
+        {
+          "en": "is there a room free?"
+        },
+        {
+          "en": "is the room clean?"
+        },
+        {
+          "en": "where is my room?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czy-jest-wolny-pokoj"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-a5-e03",
+      "text": "Dzień dobry, czy jest wolny pokój?",
+      "meaning": {
+        "en": "Hello, is there a room free?"
+      },
+      "distractors": [
+        "Dzień dobry, czy jest wolny stolik?",
+        "Dzień dobry, gdzie jest mój pokój?"
+      ],
+      "items": [
+        "dzien-dobry",
+        "czy-jest-wolny-pokoj"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-a5-e04",
+      "text": "Ile kosztuje ___?",
+      "meaning": {
+        "en": "How much is a night?"
+      },
+      "gaps": [
+        [
+          "doba"
+        ]
+      ],
+      "distractors": [
+        "doby",
+        "dobę"
+      ],
+      "items": [
+        "ile",
+        "kosztowac-kosztuje",
+        "doba"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a5-e05",
+      "prompt": "w cenie",
+      "options": [
+        {
+          "en": "extra"
+        },
+        {
+          "en": "included in the price (śniadanie jest w cenie: breakfast is included)"
+        },
+        {
+          "en": "on sale"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-cenie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-a5-e06",
+      "prompt": {
+        "en": "breakfast is included in the price"
+      },
+      "acceptedAnswers": [
+        "śniadanie jest w cenie"
+      ],
+      "distractors": [
+        "cena",
+        "są"
+      ],
+      "items": [
+        "sniadanie",
+        "byc-jest",
+        "w-cenie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a5-e07",
+      "prompt": "bez łazienki",
+      "options": [
+        {
+          "en": "with a bathroom"
+        },
+        {
+          "en": "next to the bathroom"
+        },
+        {
+          "en": "without a bathroom"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bez-lazienki"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a5-e08",
+      "prompt": "taras",
+      "options": [
+        {
+          "en": "a terrace (z tarasem: with a terrace)"
+        },
+        {
+          "en": "a balcony"
+        },
+        {
+          "en": "a garden"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "taras"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-a5-e09",
+      "text": "Pokój z ___ jest na ostatnim piętrze.",
+      "meaning": {
+        "en": "The room with a terrace is on the top floor."
+      },
+      "gaps": [
+        [
+          "tarasem"
+        ]
+      ],
+      "distractors": [
+        "taras",
+        "tarasie"
+      ],
+      "items": [
+        "pokoj",
+        "taras",
+        "byc-jest",
+        "na-ostatnim-pietrze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a5-e10",
+      "prompt": "gotowe!",
+      "options": [
+        {
+          "en": "open!"
+        },
+        {
+          "en": "done! all set!"
+        },
+        {
+          "en": "sorry!"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gotowe"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-a5-e11",
+      "prompt": {
+        "en": "a room without a bathroom"
+      },
+      "acceptedAnswers": [
+        "pokój bez łazienki"
+      ],
+      "items": [
+        "pokoj",
+        "bez-lazienki"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-a5-e12",
+      "acceptedAnswers": [
+        "w recepcji"
+      ],
+      "meaning": {
+        "en": "at reception"
+      },
+      "items": [
+        "recepcja"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-a5-e13",
+      "pairs": [
+        {
+          "polish": "recepcja",
+          "meaning": {
+            "en": "reception"
+          }
+        },
+        {
+          "polish": "w cenie",
+          "meaning": {
+            "en": "included in the price"
+          }
+        },
+        {
+          "polish": "bez łazienki",
+          "meaning": {
+            "en": "without a bathroom"
+          }
+        },
+        {
+          "polish": "z tarasem",
+          "meaning": {
+            "en": "with a terrace"
+          }
+        },
+        {
+          "polish": "doba",
+          "meaning": {
+            "en": "a day and a night"
+          }
+        }
+      ],
+      "items": [
+        "recepcja",
+        "w-cenie",
+        "bez-lazienki",
+        "taras",
+        "doba"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l19-a5-e14",
+      "lines": [
+        "Dzień dobry, czy jest wolny pokój?",
+        "Tak, jednoosobowy bez łazienki.",
+        "Ile kosztuje doba?",
+        "Sto złotych, śniadanie jest w cenie."
+      ],
+      "meaning": {
+        "en": "At reception."
+      },
+      "items": [
+        "dzien-dobry",
+        "czy-jest-wolny-pokoj",
+        "tak",
+        "jednoosobowy",
+        "bez-lazienki",
+        "ile",
+        "kosztowac-kosztuje",
+        "doba",
+        "sniadanie",
+        "byc-jest",
+        "w-cenie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-a5-e15",
+      "lines": [
+        "Dzień dobry, mam rezerwację na nazwisko Brown.",
+        "Tak, pokój dwuosobowy z tarasem, na trzy noce.",
+        "Gotowe! Pokój jest na pierwszym piętrze."
+      ],
+      "meaning": {
+        "en": "A booking at reception."
+      },
+      "statements": [
+        {
+          "text": "Pan Brown ma rezerwację.",
+          "meaning": {
+            "en": "Mr Brown has a booking."
+          },
+          "true": true
+        },
+        {
+          "text": "Pokój jest na trzy noce.",
+          "meaning": {
+            "en": "The room is for three nights."
+          },
+          "true": true
+        },
+        {
+          "text": "Pokój jest na ostatnim piętrze.",
+          "meaning": {
+            "en": "The room is on the top floor."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "dzien-dobry",
+        "miec-mam",
+        "nazwisko",
+        "pokoj",
+        "dwuosobowy",
+        "taras",
+        "trzy",
+        "noc",
+        "gotowe",
+        "na-pierwszym-pietrze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a5-e16",
+      "prompt": "mieszkać",
+      "options": [
+        {
+          "en": "to sleep"
+        },
+        {
+          "en": "to work"
+        },
+        {
+          "en": "to live, to stay (mieszkać w hotelu: to live in a hotel)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "mieszkac"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-a5-e17",
+      "acceptedAnswers": [
+        "mieszkać w hotelu"
+      ],
+      "meaning": {
+        "en": "to live in a hotel"
+      },
+      "items": [
+        "mieszkac",
+        "w-hotelu"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-a5-e18",
+      "prompt": {
+        "en": "from Wednesday until Friday, with internet access"
+      },
+      "acceptedAnswers": [
+        "od środy do piątku, z dostępem do internetu"
+      ],
+      "items": [
+        "od-srody",
+        "do-piatku",
+        "z-dostepem-do-internetu"
+      ]
+    }
+  ]
+}

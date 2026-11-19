@@ -1,0 +1,401 @@
+{
+  "id": "kpk1-l19-b3",
+  "section": {
+    "letter": "B",
+    "heading": "W poszukiwaniu mieszkania",
+    "meaning": {
+      "en": "Looking for a flat"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-b3-t01",
+      "before": "kpk1-l19-b3-e01",
+      "title": {
+        "en": "Szukam mieszkania"
+      },
+      "body": {
+        "en": "*Szukać* (to look for) takes the genitive: *szukam mieszkania*, *szukam małego mieszkania*, *szukam pokoju*. Angela would like a flat *blisko szkoły* (near the school), and *wolałabym* (I would rather) live *sama*, alone, without *współlokatorów* (flatmates). A man says *wolałbym* and *sam*. Her friends ask *ile możesz zapłacić?*, and she can pay *maksymalnie* (at most) 2000 *złotych*. The floor? *To nie ma znaczenia*: it does not matter."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b3-e01",
+      "prompt": "szukam mieszkania",
+      "options": [
+        {
+          "en": "I have a flat"
+        },
+        {
+          "en": "I am looking for a flat"
+        },
+        {
+          "en": "I am selling a flat"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szukam-mieszkania"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b3-e02",
+      "prompt": "blisko szkoły",
+      "options": [
+        {
+          "en": "far from school"
+        },
+        {
+          "en": "at school"
+        },
+        {
+          "en": "near the school"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "blisko-szkoly"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-b3-e03",
+      "text": "Szukam mieszkania blisko szkoły.",
+      "meaning": {
+        "en": "I am looking for a flat near the school."
+      },
+      "distractors": [
+        "Szukam mieszkania w centrum.",
+        "Mam mieszkanie blisko szkoły."
+      ],
+      "items": [
+        "szukam-mieszkania",
+        "blisko-szkoly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b3-e04",
+      "prompt": "wolałabym",
+      "options": [
+        {
+          "en": "I would rather (a woman; a man says wolałbym)"
+        },
+        {
+          "en": "I would like to"
+        },
+        {
+          "en": "I do not want to"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wolalabym"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b3-e05",
+      "prompt": "sam",
+      "options": [
+        {
+          "en": "together"
+        },
+        {
+          "en": "alone, on my own (a woman says sama)"
+        },
+        {
+          "en": "with friends"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sam"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b3-e06",
+      "text": "Wolałabym mieszkać ___.",
+      "meaning": {
+        "en": "I would rather live alone."
+      },
+      "gaps": [
+        [
+          "sama"
+        ]
+      ],
+      "distractors": [
+        "sam",
+        "samo"
+      ],
+      "items": [
+        "wolalabym",
+        "mieszkac",
+        "sam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b3-e07",
+      "prompt": "współlokator",
+      "options": [
+        {
+          "en": "a landlord"
+        },
+        {
+          "en": "a neighbour"
+        },
+        {
+          "en": "a flatmate (współlokatorka: a woman flatmate)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wspollokator"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-b3-e08",
+      "prompt": {
+        "en": "I do not want flatmates"
+      },
+      "acceptedAnswers": [
+        "nie chcę współlokatorów"
+      ],
+      "distractors": [
+        "współlokator",
+        "chce"
+      ],
+      "items": [
+        "nie",
+        "chciec-chce",
+        "wspollokator"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b3-e09",
+      "prompt": "maksymalnie",
+      "options": [
+        {
+          "en": "at most, at the most"
+        },
+        {
+          "en": "at least"
+        },
+        {
+          "en": "exactly"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "maksymalnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b3-e10",
+      "prompt": "to nie ma znaczenia",
+      "options": [
+        {
+          "en": "that is important"
+        },
+        {
+          "en": "it does not matter"
+        },
+        {
+          "en": "that is not true"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "to-nie-ma-znaczenia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b3-e11",
+      "prompt": "ile możesz zapłacić?",
+      "options": [
+        {
+          "en": "how much does it cost?"
+        },
+        {
+          "en": "can you pay?"
+        },
+        {
+          "en": "how much can you pay?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ile-mozesz-zaplacic"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-b3-e12",
+      "prompt": {
+        "en": "it doesn't matter"
+      },
+      "acceptedAnswers": [
+        "to nie ma znaczenia"
+      ],
+      "items": [
+        "to-nie-ma-znaczenia"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-b3-e13",
+      "acceptedAnswers": [
+        "maksymalnie tysiąc złotych"
+      ],
+      "meaning": {
+        "en": "a thousand złoty at most"
+      },
+      "items": [
+        "maksymalnie",
+        "tysiac",
+        "zloty"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-b3-e14",
+      "pairs": [
+        {
+          "polish": "szukam mieszkania",
+          "meaning": {
+            "en": "I am looking for a flat"
+          }
+        },
+        {
+          "polish": "wolałabym",
+          "meaning": {
+            "en": "I would rather"
+          }
+        },
+        {
+          "polish": "współlokatorka",
+          "meaning": {
+            "en": "a woman flatmate"
+          }
+        },
+        {
+          "polish": "maksymalnie",
+          "meaning": {
+            "en": "at most"
+          }
+        },
+        {
+          "polish": "blisko szkoły",
+          "meaning": {
+            "en": "near the school"
+          }
+        }
+      ],
+      "items": [
+        "szukam-mieszkania",
+        "wolalabym",
+        "wspollokator",
+        "maksymalnie",
+        "blisko-szkoly"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l19-b3-e15",
+      "lines": [
+        "Jakiego mieszkania szukasz?",
+        "Szukam mieszkania blisko szkoły.",
+        "A ile możesz zapłacić?",
+        "Maksymalnie tysiąc pięćset złotych."
+      ],
+      "meaning": {
+        "en": "What flat are you looking for?"
+      },
+      "items": [
+        "szukam-mieszkania",
+        "blisko-szkoly",
+        "a",
+        "ile-mozesz-zaplacic",
+        "maksymalnie",
+        "tysiac",
+        "piecset",
+        "zloty"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-b3-e16",
+      "lines": [
+        "Szukam mieszkania w centrum, blisko szkoły.",
+        "Wolałabym mieszkać sama, bez współlokatorów.",
+        "Piętro nie ma znaczenia."
+      ],
+      "meaning": {
+        "en": "What Angela is looking for."
+      },
+      "statements": [
+        {
+          "text": "Angela szuka mieszkania w centrum.",
+          "meaning": {
+            "en": "Angela is looking for a flat in the centre."
+          },
+          "true": true
+        },
+        {
+          "text": "Angela chce mieszkać ze współlokatorką.",
+          "meaning": {
+            "en": "Angela wants to live with a flatmate."
+          },
+          "true": false
+        },
+        {
+          "text": "Piętro jest bardzo ważne.",
+          "meaning": {
+            "en": "The floor is very important."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "szukam-mieszkania",
+        "w-centrum",
+        "blisko-szkoly",
+        "wolalabym",
+        "mieszkac",
+        "sam",
+        "wspollokator",
+        "pietro"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-b3-e17",
+      "prompt": {
+        "en": "how much can you pay?"
+      },
+      "acceptedAnswers": [
+        "ile możesz zapłacić?"
+      ],
+      "distractors": [
+        "może",
+        "płacić"
+      ],
+      "items": [
+        "ile-mozesz-zaplacic"
+      ]
+    }
+  ]
+}

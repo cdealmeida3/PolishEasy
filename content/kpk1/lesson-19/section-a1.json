@@ -1,0 +1,412 @@
+{
+  "id": "kpk1-l19-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Nie mam gdzie mieszkać",
+    "meaning": {
+      "en": "I have nowhere to live"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-a1-t01",
+      "before": "kpk1-l19-a1-e01",
+      "title": {
+        "en": "Jestem wściekła!"
+      },
+      "body": {
+        "en": "Angela comes in late, *spóźniona*, and *wściekła* (furious). The students next door had a party, so she slept little and *zaspałam*: I overslept. A man says *zaspałem*, *spóźniony*, *wściekły*. Her answer: *przeprowadzam się do hotelu*, I am moving into a hotel, because *nie mam gdzie mieszkać*: I have nowhere to live."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a1-e01",
+      "prompt": "spóźniony",
+      "options": [
+        {
+          "en": "late (jesteś spóźniona: you are late) (spóźniony, spóźniona, spóźnione)"
+        },
+        {
+          "en": "tired"
+        },
+        {
+          "en": "angry"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "spozniony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a1-e02",
+      "prompt": "co się stało?",
+      "options": [
+        {
+          "en": "what time is it?"
+        },
+        {
+          "en": "what happened?"
+        },
+        {
+          "en": "where is it?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "co-sie-stalo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-a1-e03",
+      "text": "Co się stało? Jesteś spóźniona!",
+      "meaning": {
+        "en": "What happened? You're late!"
+      },
+      "distractors": [
+        "Co się stało? Jesteś zmęczona!",
+        "Co się stało? Jesteś w domu!"
+      ],
+      "items": [
+        "co-sie-stalo",
+        "byc-jestes",
+        "spozniony"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a1-e04",
+      "prompt": "wściekły",
+      "options": [
+        {
+          "en": "happy"
+        },
+        {
+          "en": "tired"
+        },
+        {
+          "en": "furious (jestem wściekła: I am furious) (wściekły, wściekła, wściekłe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wsciekly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a1-e05",
+      "prompt": "zaspałam",
+      "options": [
+        {
+          "en": "I overslept (a woman says zaspałam, a man zaspałem)"
+        },
+        {
+          "en": "I fell asleep"
+        },
+        {
+          "en": "I woke up early"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zaspac-zaspalam"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-a1-e06",
+      "text": "Jestem ___! Zaspałam.",
+      "meaning": {
+        "en": "I'm furious! I overslept."
+      },
+      "gaps": [
+        [
+          "wściekła"
+        ]
+      ],
+      "distractors": [
+        "wściekły",
+        "wściekłe"
+      ],
+      "items": [
+        "byc-jestem",
+        "wsciekly",
+        "zaspac-zaspalam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-a1-e07",
+      "prompt": {
+        "en": "I overslept (a woman)"
+      },
+      "acceptedAnswers": [
+        "zaspałam"
+      ],
+      "items": [
+        "zaspac-zaspalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a1-e08",
+      "prompt": "sąsiad",
+      "options": [
+        {
+          "en": "a friend"
+        },
+        {
+          "en": "a neighbour (sąsiedzi: neighbours)"
+        },
+        {
+          "en": "a student"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sasiad"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-a1-e09",
+      "prompt": {
+        "en": "the neighbours are having a party"
+      },
+      "acceptedAnswers": [
+        "sąsiedzi mają imprezę"
+      ],
+      "distractors": [
+        "impreza",
+        "sąsiad"
+      ],
+      "items": [
+        "sasiad",
+        "miec-maja",
+        "impreza-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a1-e10",
+      "prompt": "nie mam gdzie mieszkać",
+      "options": [
+        {
+          "en": "I have nothing to wear"
+        },
+        {
+          "en": "I do not know where it is"
+        },
+        {
+          "en": "I have nowhere to live"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nie-mam-gdzie-mieszkac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a1-e11",
+      "prompt": "hotel",
+      "options": [
+        {
+          "en": "a hotel (do hotelu: to a hotel)"
+        },
+        {
+          "en": "a hospital"
+        },
+        {
+          "en": "a house"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "hotel"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a1-e12",
+      "prompt": "przeprowadzam się",
+      "options": [
+        {
+          "en": "I am going out"
+        },
+        {
+          "en": "I am moving house (przeprowadzam się do hotelu: I am moving into a hotel)"
+        },
+        {
+          "en": "I am staying at home"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przeprowadzac-sie-przeprowadzam"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-a1-e13",
+      "acceptedAnswers": [
+        "przeprowadzam się do hotelu"
+      ],
+      "meaning": {
+        "en": "I am moving into a hotel"
+      },
+      "items": [
+        "przeprowadzac-sie-przeprowadzam",
+        "hotel"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-a1-e14",
+      "pairs": [
+        {
+          "polish": "spóźniona",
+          "meaning": {
+            "en": "late"
+          }
+        },
+        {
+          "polish": "wściekła",
+          "meaning": {
+            "en": "furious"
+          }
+        },
+        {
+          "polish": "zmęczona",
+          "meaning": {
+            "en": "tired"
+          }
+        },
+        {
+          "polish": "zaspałam",
+          "meaning": {
+            "en": "I overslept"
+          }
+        },
+        {
+          "polish": "sąsiad",
+          "meaning": {
+            "en": "a neighbour"
+          }
+        }
+      ],
+      "items": [
+        "spozniony",
+        "wsciekly",
+        "zmeczony",
+        "zaspac-zaspalam",
+        "sasiad"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-a1-e15",
+      "text": "Dzisiaj ___ się do hotelu.",
+      "meaning": {
+        "en": "Today I am moving into a hotel."
+      },
+      "gaps": [
+        [
+          "przeprowadzam"
+        ]
+      ],
+      "distractors": [
+        "przeprowadzasz",
+        "przeprowadza"
+      ],
+      "items": [
+        "dzisiaj",
+        "przeprowadzac-sie-przeprowadzam",
+        "hotel"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-a1-e16",
+      "lines": [
+        "Jestem wściekła.",
+        "Sąsiedzi mają imprezę w nocy i nie śpię.",
+        "Dzisiaj przeprowadzam się do hotelu."
+      ],
+      "meaning": {
+        "en": "Angela's bad morning."
+      },
+      "statements": [
+        {
+          "text": "Angela jest wesoła.",
+          "meaning": {
+            "en": "Angela is cheerful."
+          },
+          "true": false
+        },
+        {
+          "text": "Sąsiedzi mają imprezę.",
+          "meaning": {
+            "en": "The neighbours are having a party."
+          },
+          "true": true
+        },
+        {
+          "text": "Angela przeprowadza się do hotelu.",
+          "meaning": {
+            "en": "Angela is moving into a hotel."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "byc-jestem",
+        "wsciekly",
+        "sasiad",
+        "impreza-acc",
+        "dzisiaj",
+        "przeprowadzac-sie-przeprowadzam",
+        "hotel"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-a1-e17",
+      "prompt": {
+        "en": "I have nowhere to live"
+      },
+      "acceptedAnswers": [
+        "nie mam gdzie mieszkać"
+      ],
+      "distractors": [
+        "mieszkam",
+        "jest"
+      ],
+      "items": [
+        "nie-mam-gdzie-mieszkac"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-a1-e18",
+      "prompt": {
+        "en": "I'm late (a man)"
+      },
+      "acceptedAnswers": [
+        "jestem spóźniony"
+      ],
+      "items": [
+        "byc-jestem",
+        "spozniony"
+      ]
+    }
+  ]
+}

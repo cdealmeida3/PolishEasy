@@ -1,0 +1,452 @@
+{
+  "id": "kpk1-l19-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Przeprowadzka",
+    "meaning": {
+      "en": "Moving house"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-c2-t01",
+      "before": "kpk1-l19-c2-e01",
+      "title": {
+        "en": "Obok, koło, blisko, na wprost, wzdłuż"
+      },
+      "body": {
+        "en": "Where something is, *na*, *w* and *przy* take the locative (*na stole*, *w butelce*). Five more take the genitive: *obok* and *koło* (next to, by: *obok szafy*, *koło okna*), *blisko* (near: *blisko domu*), *na wprost* (opposite, facing: *na wprost drzwi*) and *wzdłuż* (along: *wzdłuż ściany*). *Pies* becomes *psa*: *kot siedzi obok psa*."
+      },
+      "table": {
+        "title": {
+          "en": "Przyimki + dopełniacz"
+        },
+        "columns": [
+          {
+            "header": "przyimek"
+          },
+          {
+            "header": "gdzie?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "obok",
+              "obok szafy"
+            ]
+          },
+          {
+            "cells": [
+              "koło",
+              "koło okna"
+            ]
+          },
+          {
+            "cells": [
+              "blisko",
+              "blisko domu"
+            ]
+          },
+          {
+            "cells": [
+              "na wprost",
+              "na wprost drzwi"
+            ]
+          },
+          {
+            "cells": [
+              "wzdłuż",
+              "wzdłuż ściany"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c2-e01",
+      "prompt": "koło",
+      "options": [
+        {
+          "en": "under"
+        },
+        {
+          "en": "behind"
+        },
+        {
+          "en": "near, by (koło okna: by the window)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kolo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c2-e02",
+      "prompt": "obok szafy",
+      "options": [
+        {
+          "en": "next to the wardrobe"
+        },
+        {
+          "en": "in the wardrobe"
+        },
+        {
+          "en": "on the wardrobe"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "obok-szafy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-c2-e03",
+      "text": "Łóżko stoi obok szafy.",
+      "meaning": {
+        "en": "The bed is next to the wardrobe."
+      },
+      "distractors": [
+        "Łóżko stoi w szafie.",
+        "Lampa stoi obok szafy."
+      ],
+      "items": [
+        "lozko",
+        "stac-stoi",
+        "obok-szafy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c2-e04",
+      "prompt": "koło okna",
+      "options": [
+        {
+          "en": "in the window"
+        },
+        {
+          "en": "by the window"
+        },
+        {
+          "en": "under the window"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kolo-okna"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-c2-e05",
+      "text": "Biurko stoi koło ___.",
+      "meaning": {
+        "en": "The desk is by the window."
+      },
+      "gaps": [
+        [
+          "okna"
+        ]
+      ],
+      "distractors": [
+        "okno",
+        "oknie"
+      ],
+      "items": [
+        "biurko",
+        "stac-stoi",
+        "kolo",
+        "kolo-okna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c2-e06",
+      "prompt": "blisko domu",
+      "options": [
+        {
+          "en": "at home"
+        },
+        {
+          "en": "far from home"
+        },
+        {
+          "en": "near the house, near home"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "blisko-domu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c2-e07",
+      "prompt": "na wprost drzwi",
+      "options": [
+        {
+          "en": "opposite the door, facing the door"
+        },
+        {
+          "en": "behind the door"
+        },
+        {
+          "en": "by the window"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-wprost-drzwi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c2-e08",
+      "prompt": "wzdłuż",
+      "options": [
+        {
+          "en": "across"
+        },
+        {
+          "en": "along (wzdłuż ściany: along the wall)"
+        },
+        {
+          "en": "above"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wzdluz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c2-e09",
+      "prompt": "wzdłuż ściany",
+      "options": [
+        {
+          "en": "on the wall"
+        },
+        {
+          "en": "between the walls"
+        },
+        {
+          "en": "along the wall"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wzdluz-sciany"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-c2-e10",
+      "prompt": {
+        "en": "the shelves stand along the wall"
+      },
+      "acceptedAnswers": [
+        "regał stoi wzdłuż ściany"
+      ],
+      "distractors": [
+        "ściana",
+        "na"
+      ],
+      "items": [
+        "regal",
+        "stac-stoi",
+        "wzdluz",
+        "wzdluz-sciany"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c2-e11",
+      "prompt": "pies",
+      "options": [
+        {
+          "en": "a dog (obok psa: next to the dog)"
+        },
+        {
+          "en": "a cat"
+        },
+        {
+          "en": "a horse"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pies"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-c2-e12",
+      "prompt": {
+        "en": "by the dog"
+      },
+      "acceptedAnswers": [
+        "koło psa"
+      ],
+      "items": [
+        "kolo",
+        "pies"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-c2-e13",
+      "acceptedAnswers": [
+        "wzdłuż ściany"
+      ],
+      "meaning": {
+        "en": "along the wall"
+      },
+      "items": [
+        "wzdluz",
+        "wzdluz-sciany"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-c2-e14",
+      "pairs": [
+        {
+          "polish": "obok szafy",
+          "meaning": {
+            "en": "next to the wardrobe"
+          }
+        },
+        {
+          "polish": "koło okna",
+          "meaning": {
+            "en": "by the window"
+          }
+        },
+        {
+          "polish": "blisko domu",
+          "meaning": {
+            "en": "near home"
+          }
+        },
+        {
+          "polish": "na wprost drzwi",
+          "meaning": {
+            "en": "opposite the door"
+          }
+        },
+        {
+          "polish": "wzdłuż ściany",
+          "meaning": {
+            "en": "along the wall"
+          }
+        }
+      ],
+      "items": [
+        "obok-szafy",
+        "kolo-okna",
+        "blisko-domu",
+        "na-wprost-drzwi",
+        "wzdluz-sciany"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-c2-e15",
+      "text": "Kot leży obok ___.",
+      "meaning": {
+        "en": "The cat is lying next to the dog."
+      },
+      "gaps": [
+        [
+          "psa"
+        ]
+      ],
+      "distractors": [
+        "pies",
+        "psem"
+      ],
+      "items": [
+        "kot",
+        "lezec-lezy",
+        "obok",
+        "pies"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-c2-e16",
+      "prompt": {
+        "en": "the sofa is opposite the door"
+      },
+      "acceptedAnswers": [
+        "kanapa stoi na wprost drzwi"
+      ],
+      "distractors": [
+        "drzwiach",
+        "przy"
+      ],
+      "items": [
+        "kanapa",
+        "stac-stoi",
+        "na-wprost-drzwi"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-c2-e17",
+      "lines": [
+        "Mój pokój jest mały.",
+        "Łóżko stoi obok szafy, a biurko koło okna.",
+        "Na wprost drzwi wisi lustro."
+      ],
+      "meaning": {
+        "en": "My room."
+      },
+      "statements": [
+        {
+          "text": "Biurko stoi koło okna.",
+          "meaning": {
+            "en": "The desk is by the window."
+          },
+          "true": true
+        },
+        {
+          "text": "Łóżko stoi w szafie.",
+          "meaning": {
+            "en": "The bed is in the wardrobe."
+          },
+          "true": false
+        },
+        {
+          "text": "Lustro wisi na wprost drzwi.",
+          "meaning": {
+            "en": "The mirror hangs opposite the door."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "pokoj",
+        "maly",
+        "lozko",
+        "stac-stoi",
+        "obok-szafy",
+        "biurko",
+        "kolo-okna",
+        "na-wprost-drzwi",
+        "wisiec-wisi",
+        "lustro"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "id": "kpk1-l19-b4",
+  "section": {
+    "letter": "B",
+    "heading": "W poszukiwaniu mieszkania",
+    "meaning": {
+      "en": "Looking for a flat"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-b4-t01",
+      "before": "kpk1-l19-b4-e01",
+      "title": {
+        "en": "Ogłoszenia"
+      },
+      "body": {
+        "en": "A flat *do wynajęcia* is to let. The advert says if it is *umeblowane* (furnished), has *aneks kuchenny* (a kitchen corner), and what you pay: the rent, *czynsz* (in adverts, the monthly charges for the building), *media* (the bills: *prąd*, electricity, *gaz* and water) and *kaucja*, a deposit you get back when you leave."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b4-e01",
+      "prompt": "do wynajęcia",
+      "options": [
+        {
+          "en": "to let, for rent"
+        },
+        {
+          "en": "for sale"
+        },
+        {
+          "en": "sold"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-wynajecia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b4-e02",
+      "prompt": "umeblowany",
+      "options": [
+        {
+          "en": "empty"
+        },
+        {
+          "en": "furnished (umeblowany, umeblowana, umeblowane)"
+        },
+        {
+          "en": "new"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "umeblowany"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-b4-e03",
+      "text": "Mieszkanie do wynajęcia, umeblowane.",
+      "meaning": {
+        "en": "A flat to let, furnished."
+      },
+      "distractors": [
+        "Mieszkanie do wynajęcia, nowe.",
+        "Pokój do wynajęcia, umeblowany."
+      ],
+      "items": [
+        "mieszkanie",
+        "do-wynajecia",
+        "umeblowany"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b4-e04",
+      "prompt": "czynsz",
+      "options": [
+        {
+          "en": "a deposit"
+        },
+        {
+          "en": "a tax"
+        },
+        {
+          "en": "rent; in adverts, the monthly charges for the building"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czynsz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b4-e05",
+      "prompt": "kaucja",
+      "options": [
+        {
+          "en": "a deposit"
+        },
+        {
+          "en": "the rent"
+        },
+        {
+          "en": "a bill"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kaucja"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b4-e06",
+      "text": "Czynsz: sześćset złotych, ___: tysiąc.",
+      "meaning": {
+        "en": "Monthly charges: six hundred złoty, deposit: a thousand."
+      },
+      "gaps": [
+        [
+          "kaucja"
+        ]
+      ],
+      "distractors": [
+        "kaucji",
+        "kaucję"
+      ],
+      "items": [
+        "czynsz",
+        "szescset",
+        "zloty",
+        "kaucja",
+        "tysiac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b4-e07",
+      "prompt": "media",
+      "options": [
+        {
+          "en": "the furniture"
+        },
+        {
+          "en": "the bills: electricity, gas and water"
+        },
+        {
+          "en": "the neighbours"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "media"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b4-e08",
+      "prompt": "prąd",
+      "options": [
+        {
+          "en": "water"
+        },
+        {
+          "en": "heating"
+        },
+        {
+          "en": "electricity"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "prad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b4-e09",
+      "prompt": "gaz",
+      "options": [
+        {
+          "en": "gas"
+        },
+        {
+          "en": "electricity"
+        },
+        {
+          "en": "a cooker"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "gaz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b4-e10",
+      "prompt": "aneks kuchenny",
+      "options": [
+        {
+          "en": "a big kitchen"
+        },
+        {
+          "en": "a kitchenette, a kitchen corner (z aneksem kuchennym: with a kitchenette)"
+        },
+        {
+          "en": "a dining room"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "aneks-kuchenny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-b4-e11",
+      "prompt": {
+        "en": "a studio flat with a kitchenette"
+      },
+      "acceptedAnswers": [
+        "kawalerka z aneksem kuchennym"
+      ],
+      "distractors": [
+        "aneks",
+        "kuchnia"
+      ],
+      "items": [
+        "kawalerka",
+        "aneks-kuchenny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-b4-e12",
+      "prompt": {
+        "en": "to let"
+      },
+      "acceptedAnswers": [
+        "do wynajęcia"
+      ],
+      "items": [
+        "do-wynajecia"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-b4-e13",
+      "acceptedAnswers": [
+        "prąd i gaz"
+      ],
+      "meaning": {
+        "en": "electricity and gas"
+      },
+      "items": [
+        "prad",
+        "i",
+        "gaz"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-b4-e14",
+      "pairs": [
+        {
+          "polish": "do wynajęcia",
+          "meaning": {
+            "en": "to let"
+          }
+        },
+        {
+          "polish": "umeblowane",
+          "meaning": {
+            "en": "furnished"
+          }
+        },
+        {
+          "polish": "czynsz",
+          "meaning": {
+            "en": "the monthly charges"
+          }
+        },
+        {
+          "polish": "kaucja",
+          "meaning": {
+            "en": "a deposit"
+          }
+        },
+        {
+          "polish": "media",
+          "meaning": {
+            "en": "the bills"
+          }
+        }
+      ],
+      "items": [
+        "do-wynajecia",
+        "umeblowany",
+        "czynsz",
+        "kaucja",
+        "media"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-b4-e15",
+      "lines": [
+        "Do wynajęcia: kawalerka, dwadzieścia sześć metrów kwadratowych.",
+        "Umeblowana, z aneksem kuchennym.",
+        "Cena: tysiąc dziewięćset złotych plus prąd."
+      ],
+      "meaning": {
+        "en": "An advert."
+      },
+      "statements": [
+        {
+          "text": "Kawalerka jest umeblowana.",
+          "meaning": {
+            "en": "The studio flat is furnished."
+          },
+          "true": true
+        },
+        {
+          "text": "Kawalerka ma dużą kuchnię.",
+          "meaning": {
+            "en": "The studio flat has a big kitchen."
+          },
+          "true": false
+        },
+        {
+          "text": "Prąd nie jest w cenie.",
+          "meaning": {
+            "en": "Electricity is not included in the price."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "do-wynajecia",
+        "kawalerka",
+        "dwadziescia",
+        "szesc",
+        "metr-kwadratowy",
+        "umeblowany",
+        "aneks-kuchenny",
+        "tysiac",
+        "zloty",
+        "prad"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b4-e16",
+      "text": "Media: ___, gaz i woda.",
+      "meaning": {
+        "en": "Bills: electricity, gas and water."
+      },
+      "gaps": [
+        [
+          "prąd"
+        ]
+      ],
+      "distractors": [
+        "prądu",
+        "gaz"
+      ],
+      "items": [
+        "media",
+        "prad",
+        "gaz",
+        "i",
+        "woda"
+      ]
+    }
+  ]
+}

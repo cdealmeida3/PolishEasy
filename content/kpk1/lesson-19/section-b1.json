@@ -1,0 +1,483 @@
+{
+  "id": "kpk1-l19-b1",
+  "section": {
+    "letter": "B",
+    "heading": "W poszukiwaniu mieszkania",
+    "meaning": {
+      "en": "Looking for a flat"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-b1-t01",
+      "before": "kpk1-l19-b1-e01",
+      "title": {
+        "en": "Słoneczne czy ciemne?"
+      },
+      "body": {
+        "en": "*Mieszkanie* is neuter, so the words that describe it end in *-e*: *słoneczne* (sunny) or *ciemne*, *przestronne* (spacious) or *ciasne*, *przytulne* (cosy) or *ponure* (gloomy), *ciepłe* or *zimne*. A new block is *nowoczesny*, an old house, *dom*, *stylowy*. A flat just for you is *samodzielne*; one you share is *wspólne*."
+      },
+      "table": {
+        "title": {
+          "en": "Mieszkanie jest…"
+        },
+        "columns": [
+          {
+            "header": "+"
+          },
+          {
+            "header": "–"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "słoneczne",
+              "ciemne"
+            ]
+          },
+          {
+            "cells": [
+              "przestronne",
+              "ciasne"
+            ]
+          },
+          {
+            "cells": [
+              "przytulne",
+              "ponure"
+            ]
+          },
+          {
+            "cells": [
+              "ciepłe",
+              "zimne"
+            ]
+          },
+          {
+            "cells": [
+              "samodzielne",
+              "wspólne"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b1-e01",
+      "prompt": "słoneczny",
+      "options": [
+        {
+          "en": "sunny (słoneczny, słoneczna, słoneczne)"
+        },
+        {
+          "en": "dark"
+        },
+        {
+          "en": "cold"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sloneczny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b1-e02",
+      "prompt": "przestronny",
+      "options": [
+        {
+          "en": "cramped"
+        },
+        {
+          "en": "spacious, roomy (przestronny, przestronna, przestronne)"
+        },
+        {
+          "en": "tidy"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przestronny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-b1-e03",
+      "text": "Mieszkanie jest słoneczne i przestronne.",
+      "meaning": {
+        "en": "The flat is sunny and spacious."
+      },
+      "distractors": [
+        "Mieszkanie jest ciemne i ciasne.",
+        "Mieszkanie jest małe i zimne."
+      ],
+      "items": [
+        "mieszkanie",
+        "byc-jest",
+        "sloneczny",
+        "i",
+        "przestronny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b1-e04",
+      "prompt": "przytulny",
+      "options": [
+        {
+          "en": "cold"
+        },
+        {
+          "en": "noisy"
+        },
+        {
+          "en": "cosy (przytulny, przytulna, przytulne)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przytulny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b1-e05",
+      "text": "Mieszkanie jest ciemne, ale ___.",
+      "meaning": {
+        "en": "The flat is dark, but cosy."
+      },
+      "gaps": [
+        [
+          "przytulne"
+        ]
+      ],
+      "distractors": [
+        "przytulny",
+        "przytulna"
+      ],
+      "items": [
+        "mieszkanie",
+        "byc-jest",
+        "ciemny",
+        "ale",
+        "przytulny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b1-e06",
+      "prompt": "nowoczesny",
+      "options": [
+        {
+          "en": "modern (nowoczesny, nowoczesna, nowoczesne)"
+        },
+        {
+          "en": "old"
+        },
+        {
+          "en": "cheap"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "nowoczesny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b1-e07",
+      "prompt": "stylowy",
+      "options": [
+        {
+          "en": "modern"
+        },
+        {
+          "en": "stylish, full of character (of an old house) (stylowy, stylowa, stylowe)"
+        },
+        {
+          "en": "ugly"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "stylowy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-b1-e08",
+      "prompt": {
+        "en": "the flat is modern"
+      },
+      "acceptedAnswers": [
+        "mieszkanie jest nowoczesne"
+      ],
+      "distractors": [
+        "nowoczesny",
+        "stare"
+      ],
+      "items": [
+        "mieszkanie",
+        "byc-jest",
+        "nowoczesny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b1-e09",
+      "prompt": "ponury",
+      "options": [
+        {
+          "en": "bright"
+        },
+        {
+          "en": "sunny"
+        },
+        {
+          "en": "gloomy, dreary (ponury, ponura, ponure)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ponury"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b1-e10",
+      "prompt": "samodzielny",
+      "options": [
+        {
+          "en": "self-contained (samodzielne mieszkanie: a flat of your own, not shared) (samodzielny, samodzielna, samodzielne)"
+        },
+        {
+          "en": "shared"
+        },
+        {
+          "en": "big"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "samodzielny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-b1-e11",
+      "prompt": "wspólny",
+      "options": [
+        {
+          "en": "own"
+        },
+        {
+          "en": "shared, common (wspólna kuchnia: a shared kitchen) (wspólny, wspólna, wspólne)"
+        },
+        {
+          "en": "empty"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wspolny"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-b1-e12",
+      "pairs": [
+        {
+          "polish": "słoneczne",
+          "meaning": {
+            "en": "sunny"
+          }
+        },
+        {
+          "polish": "przestronne",
+          "meaning": {
+            "en": "spacious"
+          }
+        },
+        {
+          "polish": "przytulne",
+          "meaning": {
+            "en": "cosy"
+          }
+        },
+        {
+          "polish": "ponure",
+          "meaning": {
+            "en": "gloomy"
+          }
+        },
+        {
+          "polish": "wspólne",
+          "meaning": {
+            "en": "shared"
+          }
+        }
+      ],
+      "items": [
+        "sloneczny",
+        "przestronny",
+        "przytulny",
+        "ponury",
+        "wspolny"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-b1-e13",
+      "prompt": {
+        "en": "a sunny flat"
+      },
+      "acceptedAnswers": [
+        "słoneczne mieszkanie",
+        "mieszkanie słoneczne"
+      ],
+      "items": [
+        "sloneczny",
+        "mieszkanie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-b1-e14",
+      "acceptedAnswers": [
+        "przytulne mieszkanie"
+      ],
+      "meaning": {
+        "en": "a cosy flat"
+      },
+      "items": [
+        "przytulny",
+        "mieszkanie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b1-e15",
+      "text": "Mieszkanie nie jest wspólne, jest ___.",
+      "meaning": {
+        "en": "The flat is not shared, it is self-contained."
+      },
+      "gaps": [
+        [
+          "samodzielne"
+        ]
+      ],
+      "distractors": [
+        "samodzielna",
+        "samodzielny"
+      ],
+      "items": [
+        "mieszkanie",
+        "nie",
+        "byc-jest",
+        "wspolny",
+        "samodzielny"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-b1-e16",
+      "lines": [
+        "Moje mieszkanie jest małe, ale bardzo przytulne.",
+        "Jest słoneczne i ciepłe.",
+        "Kuchnia jest wspólna."
+      ],
+      "meaning": {
+        "en": "My flat."
+      },
+      "statements": [
+        {
+          "text": "Mieszkanie jest duże.",
+          "meaning": {
+            "en": "The flat is big."
+          },
+          "true": false
+        },
+        {
+          "text": "Mieszkanie jest słoneczne.",
+          "meaning": {
+            "en": "The flat is sunny."
+          },
+          "true": true
+        },
+        {
+          "text": "Kuchnia jest wspólna.",
+          "meaning": {
+            "en": "The kitchen is shared."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "moje",
+        "mieszkanie",
+        "maly",
+        "bardzo",
+        "przytulny",
+        "sloneczny",
+        "cieply",
+        "kuchnia",
+        "wspolny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-b1-e17",
+      "text": "Ten blok jest nowoczesny, a ten dom jest ___.",
+      "meaning": {
+        "en": "This block is modern, and this house is full of character."
+      },
+      "gaps": [
+        [
+          "stylowy"
+        ]
+      ],
+      "distractors": [
+        "stylowa",
+        "stylowe"
+      ],
+      "items": [
+        "ten",
+        "blok",
+        "byc-jest",
+        "nowoczesny",
+        "a",
+        "dom",
+        "stylowy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-b1-e18",
+      "prompt": {
+        "en": "the room is gloomy and cold"
+      },
+      "acceptedAnswers": [
+        "pokój jest ponury i zimny"
+      ],
+      "distractors": [
+        "ponure",
+        "zimne"
+      ],
+      "items": [
+        "pokoj",
+        "byc-jest",
+        "ponury",
+        "i",
+        "zimny"
+      ]
+    }
+  ]
+}

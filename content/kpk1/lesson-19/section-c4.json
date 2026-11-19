@@ -1,0 +1,429 @@
+{
+  "id": "kpk1-l19-c4",
+  "section": {
+    "letter": "C",
+    "heading": "Przeprowadzka",
+    "meaning": {
+      "en": "Moving house"
+    },
+    "strands": [
+      "G",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-c4-t01",
+      "before": "kpk1-l19-c4-e01",
+      "title": {
+        "en": "Pokój Angeli"
+      },
+      "body": {
+        "en": "Describing a room puts it all together: *na środku stoi kanapa*, *przed telewizorem* is a little table, *w rogu* the bed, and *obok łóżka* a chest of drawers, *komoda*. *Pod oknem* stands the bookcase, and *między regałem a biurkiem* an armchair. A man works *za biurkiem*, behind the desk, and a picture hangs *nad łóżkiem*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c4-e01",
+      "prompt": "komoda",
+      "options": [
+        {
+          "en": "a chest of drawers"
+        },
+        {
+          "en": "a wardrobe"
+        },
+        {
+          "en": "a desk"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "komoda"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c4-e02",
+      "prompt": "przed telewizorem",
+      "options": [
+        {
+          "en": "behind the television"
+        },
+        {
+          "en": "in front of the television"
+        },
+        {
+          "en": "on the television"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przed-telewizorem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-c4-e03",
+      "text": "Przed telewizorem stoi stolik.",
+      "meaning": {
+        "en": "A little table stands in front of the television."
+      },
+      "distractors": [
+        "Na telewizorze stoi stolik.",
+        "Przed telewizorem stoi lampa."
+      ],
+      "items": [
+        "przed-telewizorem",
+        "stac-stoi",
+        "stolik"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c4-e04",
+      "prompt": "pod oknem",
+      "options": [
+        {
+          "en": "above the window"
+        },
+        {
+          "en": "in the window"
+        },
+        {
+          "en": "under the window"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pod-oknem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-c4-e05",
+      "text": "Regał stoi pod ___.",
+      "meaning": {
+        "en": "The bookcase stands under the window."
+      },
+      "gaps": [
+        [
+          "oknem"
+        ]
+      ],
+      "distractors": [
+        "oknie",
+        "okno"
+      ],
+      "items": [
+        "regal",
+        "stac-stoi",
+        "pod-oknem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c4-e06",
+      "prompt": "między regałem a biurkiem",
+      "options": [
+        {
+          "en": "between the bookcase and the desk"
+        },
+        {
+          "en": "behind the bookcase"
+        },
+        {
+          "en": "on the desk"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "miedzy-regalem-a-biurkiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c4-e07",
+      "prompt": "za biurkiem",
+      "options": [
+        {
+          "en": "at the desk"
+        },
+        {
+          "en": "behind the desk"
+        },
+        {
+          "en": "under the desk"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "za-biurkiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c4-e08",
+      "prompt": "nad łóżkiem",
+      "options": [
+        {
+          "en": "under the bed"
+        },
+        {
+          "en": "next to the bed"
+        },
+        {
+          "en": "above the bed"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "nad-lozkiem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c4-e09",
+      "prompt": "obok łóżka",
+      "options": [
+        {
+          "en": "next to the bed"
+        },
+        {
+          "en": "on the bed"
+        },
+        {
+          "en": "above the bed"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "obok-lozka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-c4-e10",
+      "prompt": "za drzewem",
+      "options": [
+        {
+          "en": "in front of the tree"
+        },
+        {
+          "en": "behind the tree"
+        },
+        {
+          "en": "in the tree"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "za-drzewem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-c4-e11",
+      "prompt": {
+        "en": "the chest of drawers stands next to the bed"
+      },
+      "acceptedAnswers": [
+        "komoda stoi obok łóżka"
+      ],
+      "distractors": [
+        "łóżko",
+        "na"
+      ],
+      "items": [
+        "komoda",
+        "stac-stoi",
+        "obok-lozka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-c4-e12",
+      "prompt": {
+        "en": "above the bed"
+      },
+      "acceptedAnswers": [
+        "nad łóżkiem"
+      ],
+      "items": [
+        "nad-lozkiem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-c4-e13",
+      "acceptedAnswers": [
+        "między regałem a biurkiem"
+      ],
+      "meaning": {
+        "en": "between the bookcase and the desk"
+      },
+      "items": [
+        "miedzy",
+        "miedzy-regalem-a-biurkiem"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-c4-e14",
+      "pairs": [
+        {
+          "polish": "przed telewizorem",
+          "meaning": {
+            "en": "in front of the television"
+          }
+        },
+        {
+          "polish": "pod oknem",
+          "meaning": {
+            "en": "under the window"
+          }
+        },
+        {
+          "polish": "za biurkiem",
+          "meaning": {
+            "en": "behind the desk"
+          }
+        },
+        {
+          "polish": "nad łóżkiem",
+          "meaning": {
+            "en": "above the bed"
+          }
+        },
+        {
+          "polish": "za drzewem",
+          "meaning": {
+            "en": "behind the tree"
+          }
+        }
+      ],
+      "items": [
+        "przed-telewizorem",
+        "pod-oknem",
+        "za-biurkiem",
+        "nad-lozkiem",
+        "za-drzewem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-c4-e15",
+      "text": "Fotel stoi między regałem a ___.",
+      "meaning": {
+        "en": "The armchair stands between the bookcase and the desk."
+      },
+      "gaps": [
+        [
+          "biurkiem"
+        ]
+      ],
+      "distractors": [
+        "biurku",
+        "biurko"
+      ],
+      "items": [
+        "fotel",
+        "stac-stoi",
+        "miedzy-regalem-a-biurkiem"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-c4-e16",
+      "lines": [
+        "Na środku pokoju stoi kanapa.",
+        "Na ścianie wisi telewizor, a przed telewizorem stoi stolik.",
+        "W rogu stoi łóżko, a obok łóżka komoda."
+      ],
+      "meaning": {
+        "en": "Angela's room."
+      },
+      "statements": [
+        {
+          "text": "Kanapa stoi na środku pokoju.",
+          "meaning": {
+            "en": "The sofa stands in the middle of the room."
+          },
+          "true": true
+        },
+        {
+          "text": "Telewizor stoi na podłodze.",
+          "meaning": {
+            "en": "The television stands on the floor."
+          },
+          "true": false
+        },
+        {
+          "text": "Komoda stoi obok łóżka.",
+          "meaning": {
+            "en": "The chest of drawers stands next to the bed."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "na-srodku",
+        "stac-stoi",
+        "kanapa",
+        "sciana",
+        "wisiec-wisi",
+        "telewizor",
+        "przed-telewizorem",
+        "stolik",
+        "w-rogu",
+        "lozko",
+        "obok-lozka",
+        "komoda"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-c4-e17",
+      "prompt": {
+        "en": "the cat is behind the tree"
+      },
+      "acceptedAnswers": [
+        "kot jest za drzewem"
+      ],
+      "distractors": [
+        "drzewo",
+        "przed"
+      ],
+      "items": [
+        "kot",
+        "byc-jest",
+        "za-instr",
+        "za-drzewem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-c4-e18",
+      "text": "Tata pracuje za ___.",
+      "meaning": {
+        "en": "Dad is working behind the desk."
+      },
+      "gaps": [
+        [
+          "biurkiem"
+        ]
+      ],
+      "distractors": [
+        "biurku",
+        "biurko"
+      ],
+      "items": [
+        "tata",
+        "pracowac-pracuje-on",
+        "za-biurkiem"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1018 @@
+{
+  "items": [
+    {
+      "id": "spozniony",
+      "text": "spóźniony",
+      "meaning": {
+        "en": "late (jesteś spóźniona: you are late) (spóźniony, spóźniona, spóźnione)"
+      },
+      "forms": [
+        "spóźniona",
+        "spóźnione"
+      ]
+    },
+    {
+      "id": "co-sie-stalo",
+      "text": "co się stało?",
+      "meaning": {
+        "en": "what happened?"
+      }
+    },
+    {
+      "id": "wsciekly",
+      "text": "wściekły",
+      "meaning": {
+        "en": "furious (jestem wściekła: I am furious) (wściekły, wściekła, wściekłe)"
+      },
+      "forms": [
+        "wściekła",
+        "wściekłe"
+      ]
+    },
+    {
+      "id": "zaspac-zaspalam",
+      "text": "zaspałam",
+      "meaning": {
+        "en": "I overslept (a woman says zaspałam, a man zaspałem)"
+      }
+    },
+    {
+      "id": "sasiad",
+      "text": "sąsiad",
+      "meaning": {
+        "en": "a neighbour (sąsiedzi: neighbours)"
+      },
+      "forms": [
+        "sąsiedzi",
+        "sąsiadów"
+      ]
+    },
+    {
+      "id": "nie-mam-gdzie-mieszkac",
+      "text": "nie mam gdzie mieszkać",
+      "meaning": {
+        "en": "I have nowhere to live"
+      }
+    },
+    {
+      "id": "hotel",
+      "text": "hotel",
+      "meaning": {
+        "en": "a hotel (do hotelu: to a hotel)"
+      },
+      "forms": [
+        "do hotelu",
+        "hotelu"
+      ]
+    },
+    {
+      "id": "przeprowadzac-sie-przeprowadzam",
+      "text": "przeprowadzam się",
+      "meaning": {
+        "en": "I am moving house (przeprowadzam się do hotelu: I am moving into a hotel)"
+      }
+    },
+    {
+      "id": "zarezerwowac",
+      "text": "zarezerwować",
+      "meaning": {
+        "en": "to book, to reserve (chciałabym zarezerwować pokój: I would like to book a room)"
+      }
+    },
+    {
+      "id": "jednoosobowy",
+      "text": "jednoosobowy",
+      "meaning": {
+        "en": "single, for one person (pokój jednoosobowy: a single room) (jednoosobowy, jednoosobowa, jednoosobowe)"
+      },
+      "forms": [
+        "jednoosobowa",
+        "jednoosobowe"
+      ]
+    },
+    {
+      "id": "dwuosobowy",
+      "text": "dwuosobowy",
+      "meaning": {
+        "en": "double, for two people (pokój dwuosobowy: a double room) (dwuosobowy, dwuosobowa, dwuosobowe)"
+      },
+      "forms": [
+        "dwuosobowa",
+        "dwuosobowe"
+      ]
+    },
+    {
+      "id": "z-lazienka",
+      "text": "z łazienką",
+      "meaning": {
+        "en": "with a bathroom"
+      }
+    },
+    {
+      "id": "od-dzis",
+      "text": "od dziś",
+      "meaning": {
+        "en": "from today"
+      }
+    },
+    {
+      "id": "od-jutra",
+      "text": "od jutra",
+      "meaning": {
+        "en": "from tomorrow"
+      }
+    },
+    {
+      "id": "na-caly-tydzien",
+      "text": "na cały tydzień",
+      "meaning": {
+        "en": "for the whole week"
+      }
+    },
+    {
+      "id": "na-jakie-nazwisko",
+      "text": "na jakie nazwisko?",
+      "meaning": {
+        "en": "in what name?"
+      }
+    },
+    {
+      "id": "trzyosobowy",
+      "text": "trzyosobowy",
+      "meaning": {
+        "en": "for three people (pokój trzyosobowy: a triple room) (trzyosobowy, trzyosobowa, trzyosobowe)"
+      },
+      "forms": [
+        "trzyosobowa",
+        "trzyosobowe"
+      ]
+    },
+    {
+      "id": "czteroosobowy",
+      "text": "czteroosobowy",
+      "meaning": {
+        "en": "for four people (pokój czteroosobowy: a room for four) (czteroosobowy, czteroosobowa, czteroosobowe)"
+      },
+      "forms": [
+        "czteroosobowa",
+        "czteroosobowe"
+      ]
+    },
+    {
+      "id": "z-klimatyzacja",
+      "text": "z klimatyzacją",
+      "meaning": {
+        "en": "with air conditioning"
+      }
+    },
+    {
+      "id": "z-widokiem-na-morze",
+      "text": "z widokiem na morze",
+      "meaning": {
+        "en": "with a sea view"
+      }
+    },
+    {
+      "id": "z-dostepem-do-internetu",
+      "text": "z dostępem do internetu",
+      "meaning": {
+        "en": "with internet access"
+      }
+    },
+    {
+      "id": "ze-sniadaniem",
+      "text": "ze śniadaniem",
+      "meaning": {
+        "en": "with breakfast"
+      }
+    },
+    {
+      "id": "na-ostatnim-pietrze",
+      "text": "na ostatnim piętrze",
+      "meaning": {
+        "en": "on the top floor"
+      }
+    },
+    {
+      "id": "na-pierwszym-pietrze",
+      "text": "na pierwszym piętrze",
+      "meaning": {
+        "en": "on the first floor"
+      }
+    },
+    {
+      "id": "na-jak-dlugo",
+      "text": "na jak długo?",
+      "meaning": {
+        "en": "for how long?"
+      }
+    },
+    {
+      "id": "od-kiedy",
+      "text": "od kiedy?",
+      "meaning": {
+        "en": "from when? since when?"
+      }
+    },
+    {
+      "id": "na-ktorym-pietrze",
+      "text": "na którym piętrze?",
+      "meaning": {
+        "en": "on which floor?"
+      }
+    },
+    {
+      "id": "z-czym",
+      "text": "z czym?",
+      "meaning": {
+        "en": "with what?"
+      }
+    },
+    {
+      "id": "noc",
+      "text": "noc",
+      "meaning": {
+        "en": "a night (dwie noce: two nights)"
+      },
+      "forms": [
+        "noce"
+      ]
+    },
+    {
+      "id": "na-weekend",
+      "text": "na weekend",
+      "meaning": {
+        "en": "for the weekend"
+      }
+    },
+    {
+      "id": "od-srody",
+      "text": "od środy",
+      "meaning": {
+        "en": "from Wednesday"
+      }
+    },
+    {
+      "id": "do-piatku",
+      "text": "do piątku",
+      "meaning": {
+        "en": "until Friday"
+      }
+    },
+    {
+      "id": "recepcja",
+      "text": "recepcja",
+      "meaning": {
+        "en": "reception, the front desk (w recepcji: at reception)"
+      },
+      "forms": [
+        "w recepcji"
+      ]
+    },
+    {
+      "id": "czy-jest-wolny-pokoj",
+      "text": "czy jest wolny pokój?",
+      "meaning": {
+        "en": "is there a room free?"
+      }
+    },
+    {
+      "id": "w-cenie",
+      "text": "w cenie",
+      "meaning": {
+        "en": "included in the price (śniadanie jest w cenie: breakfast is included)"
+      }
+    },
+    {
+      "id": "bez-lazienki",
+      "text": "bez łazienki",
+      "meaning": {
+        "en": "without a bathroom"
+      }
+    },
+    {
+      "id": "taras",
+      "text": "taras",
+      "meaning": {
+        "en": "a terrace (z tarasem: with a terrace)"
+      },
+      "forms": [
+        "z tarasem"
+      ]
+    },
+    {
+      "id": "gotowe",
+      "text": "gotowe!",
+      "meaning": {
+        "en": "done! all set!"
+      }
+    },
+    {
+      "id": "mieszkac",
+      "text": "mieszkać",
+      "meaning": {
+        "en": "to live, to stay (mieszkać w hotelu: to live in a hotel)"
+      }
+    },
+    {
+      "id": "sloneczny",
+      "text": "słoneczny",
+      "meaning": {
+        "en": "sunny (słoneczny, słoneczna, słoneczne)"
+      },
+      "forms": [
+        "słoneczna",
+        "słoneczne"
+      ]
+    },
+    {
+      "id": "przestronny",
+      "text": "przestronny",
+      "meaning": {
+        "en": "spacious, roomy (przestronny, przestronna, przestronne)"
+      },
+      "forms": [
+        "przestronna",
+        "przestronne"
+      ]
+    },
+    {
+      "id": "przytulny",
+      "text": "przytulny",
+      "meaning": {
+        "en": "cosy (przytulny, przytulna, przytulne)"
+      },
+      "forms": [
+        "przytulna",
+        "przytulne"
+      ]
+    },
+    {
+      "id": "nowoczesny",
+      "text": "nowoczesny",
+      "meaning": {
+        "en": "modern (nowoczesny, nowoczesna, nowoczesne)"
+      },
+      "forms": [
+        "nowoczesna",
+        "nowoczesne"
+      ]
+    },
+    {
+      "id": "stylowy",
+      "text": "stylowy",
+      "meaning": {
+        "en": "stylish, full of character (of an old house) (stylowy, stylowa, stylowe)"
+      },
+      "forms": [
+        "stylowa",
+        "stylowe"
+      ]
+    },
+    {
+      "id": "ponury",
+      "text": "ponury",
+      "meaning": {
+        "en": "gloomy, dreary (ponury, ponura, ponure)"
+      },
+      "forms": [
+        "ponura",
+        "ponure"
+      ]
+    },
+    {
+      "id": "samodzielny",
+      "text": "samodzielny",
+      "meaning": {
+        "en": "self-contained (samodzielne mieszkanie: a flat of your own, not shared) (samodzielny, samodzielna, samodzielne)"
+      },
+      "forms": [
+        "samodzielna",
+        "samodzielne"
+      ]
+    },
+    {
+      "id": "wspolny",
+      "text": "wspólny",
+      "meaning": {
+        "en": "shared, common (wspólna kuchnia: a shared kitchen) (wspólny, wspólna, wspólne)"
+      },
+      "forms": [
+        "wspólna",
+        "wspólne"
+      ]
+    },
+    {
+      "id": "kawalerka",
+      "text": "kawalerka",
+      "meaning": {
+        "en": "a studio flat, a bedsit"
+      }
+    },
+    {
+      "id": "kamienica",
+      "text": "kamienica",
+      "meaning": {
+        "en": "a tenement house, an old town house of flats (w kamienicy: in a tenement house)"
+      },
+      "forms": [
+        "w kamienicy"
+      ]
+    },
+    {
+      "id": "jednopokojowy",
+      "text": "jednopokojowy",
+      "meaning": {
+        "en": "one-room (mieszkanie jednopokojowe: a one-room flat) (jednopokojowy, jednopokojowa, jednopokojowe)"
+      },
+      "forms": [
+        "jednopokojowa",
+        "jednopokojowe"
+      ]
+    },
+    {
+      "id": "dwupokojowy",
+      "text": "dwupokojowy",
+      "meaning": {
+        "en": "two-room (mieszkanie dwupokojowe: a two-room flat) (dwupokojowy, dwupokojowa, dwupokojowe)"
+      },
+      "forms": [
+        "dwupokojowa",
+        "dwupokojowe"
+      ]
+    },
+    {
+      "id": "metr-kwadratowy",
+      "text": "metr kwadratowy",
+      "meaning": {
+        "en": "a square metre, m² (trzydzieści metrów kwadratowych: thirty square metres)"
+      },
+      "forms": [
+        "metry kwadratowe",
+        "metrów kwadratowych"
+      ]
+    },
+    {
+      "id": "po-remoncie",
+      "text": "po remoncie",
+      "meaning": {
+        "en": "renovated, newly done up"
+      }
+    },
+    {
+      "id": "ogrzewanie",
+      "text": "ogrzewanie",
+      "meaning": {
+        "en": "heating"
+      }
+    },
+    {
+      "id": "dom-jednorodzinny",
+      "text": "dom jednorodzinny",
+      "meaning": {
+        "en": "a detached house, a family house"
+      }
+    },
+    {
+      "id": "szukam-mieszkania",
+      "text": "szukam mieszkania",
+      "meaning": {
+        "en": "I am looking for a flat"
+      }
+    },
+    {
+      "id": "blisko-szkoly",
+      "text": "blisko szkoły",
+      "meaning": {
+        "en": "near the school"
+      }
+    },
+    {
+      "id": "wolalabym",
+      "text": "wolałabym",
+      "meaning": {
+        "en": "I would rather (a woman; a man says wolałbym)"
+      }
+    },
+    {
+      "id": "wspollokator",
+      "text": "współlokator",
+      "meaning": {
+        "en": "a flatmate (współlokatorka: a woman flatmate)"
+      },
+      "forms": [
+        "współlokatorka",
+        "współlokatorów"
+      ]
+    },
+    {
+      "id": "sam",
+      "text": "sam",
+      "meaning": {
+        "en": "alone, on my own (a woman says sama)"
+      },
+      "forms": [
+        "sama"
+      ]
+    },
+    {
+      "id": "maksymalnie",
+      "text": "maksymalnie",
+      "meaning": {
+        "en": "at most, at the most"
+      }
+    },
+    {
+      "id": "to-nie-ma-znaczenia",
+      "text": "to nie ma znaczenia",
+      "meaning": {
+        "en": "it does not matter"
+      }
+    },
+    {
+      "id": "ile-mozesz-zaplacic",
+      "text": "ile możesz zapłacić?",
+      "meaning": {
+        "en": "how much can you pay?"
+      }
+    },
+    {
+      "id": "do-wynajecia",
+      "text": "do wynajęcia",
+      "meaning": {
+        "en": "to let, for rent"
+      }
+    },
+    {
+      "id": "umeblowany",
+      "text": "umeblowany",
+      "meaning": {
+        "en": "furnished (umeblowany, umeblowana, umeblowane)"
+      },
+      "forms": [
+        "umeblowana",
+        "umeblowane"
+      ]
+    },
+    {
+      "id": "czynsz",
+      "text": "czynsz",
+      "meaning": {
+        "en": "rent; in adverts, the monthly charges for the building"
+      }
+    },
+    {
+      "id": "kaucja",
+      "text": "kaucja",
+      "meaning": {
+        "en": "a deposit"
+      }
+    },
+    {
+      "id": "media",
+      "text": "media",
+      "meaning": {
+        "en": "the bills: electricity, gas and water"
+      }
+    },
+    {
+      "id": "prad",
+      "text": "prąd",
+      "meaning": {
+        "en": "electricity"
+      }
+    },
+    {
+      "id": "gaz",
+      "text": "gaz",
+      "meaning": {
+        "en": "gas"
+      }
+    },
+    {
+      "id": "aneks-kuchenny",
+      "text": "aneks kuchenny",
+      "meaning": {
+        "en": "a kitchenette, a kitchen corner (z aneksem kuchennym: with a kitchenette)"
+      },
+      "forms": [
+        "z aneksem kuchennym"
+      ]
+    },
+    {
+      "id": "dzwonie-w-sprawie-ogloszenia",
+      "text": "dzwonię w sprawie ogłoszenia",
+      "meaning": {
+        "en": "I'm calling about the advert"
+      }
+    },
+    {
+      "id": "czy-oferta-jest-aktualna",
+      "text": "czy oferta jest jeszcze aktualna?",
+      "meaning": {
+        "en": "is the offer still available?"
+      }
+    },
+    {
+      "id": "obejrzec",
+      "text": "obejrzeć",
+      "meaning": {
+        "en": "to see, to view (obejrzeć mieszkanie: to view a flat)"
+      }
+    },
+    {
+      "id": "kiedy-moge-przyjsc",
+      "text": "kiedy mogę przyjść?",
+      "meaning": {
+        "en": "when can I come?"
+      }
+    },
+    {
+      "id": "koszty-miesieczne",
+      "text": "koszty miesięczne",
+      "meaning": {
+        "en": "the monthly costs"
+      }
+    },
+    {
+      "id": "centralne-ogrzewanie",
+      "text": "centralne ogrzewanie",
+      "meaning": {
+        "en": "central heating"
+      }
+    },
+    {
+      "id": "od-strony-poludniowej",
+      "text": "od strony południowej",
+      "meaning": {
+        "en": "facing south, on the south side"
+      }
+    },
+    {
+      "id": "zapraszam-od-zaraz",
+      "text": "zapraszam od zaraz",
+      "meaning": {
+        "en": "you can move in right away, it is free now"
+      }
+    },
+    {
+      "id": "zamowic-taksowke",
+      "text": "zamówić taksówkę",
+      "meaning": {
+        "en": "to order a taxi, to call a taxi"
+      }
+    },
+    {
+      "id": "za-dziesiec-minut",
+      "text": "za dziesięć minut",
+      "meaning": {
+        "en": "in ten minutes"
+      }
+    },
+    {
+      "id": "spakowac-sie",
+      "text": "spakować się",
+      "meaning": {
+        "en": "to pack (your things)"
+      }
+    },
+    {
+      "id": "rzeczy",
+      "text": "rzeczy",
+      "meaning": {
+        "en": "things, belongings"
+      }
+    },
+    {
+      "id": "pobyc-sama",
+      "text": "pobyć sama",
+      "meaning": {
+        "en": "to have some time on my own (a man says pobyć sam)"
+      }
+    },
+    {
+      "id": "w-ciszy",
+      "text": "w ciszy",
+      "meaning": {
+        "en": "in peace and quiet"
+      }
+    },
+    {
+      "id": "malo-slonca",
+      "text": "mało słońca",
+      "meaning": {
+        "en": "not much sun"
+      }
+    },
+    {
+      "id": "od-podworka",
+      "text": "od podwórka",
+      "meaning": {
+        "en": "facing the courtyard, at the back"
+      }
+    },
+    {
+      "id": "przeprowadzka",
+      "text": "przeprowadzka",
+      "meaning": {
+        "en": "a move, moving house"
+      }
+    },
+    {
+      "id": "dziekuje-za-pomoc",
+      "text": "dziękuję za pomoc",
+      "meaning": {
+        "en": "thank you for your help"
+      }
+    },
+    {
+      "id": "rozplanowany",
+      "text": "rozplanowany",
+      "meaning": {
+        "en": "laid out (dobrze rozplanowane: well laid out) (rozplanowany, rozplanowana, rozplanowane)"
+      },
+      "forms": [
+        "rozplanowana",
+        "rozplanowane"
+      ]
+    },
+    {
+      "id": "pasuja-do-ciebie",
+      "text": "pasują do ciebie",
+      "meaning": {
+        "en": "they suit you"
+      }
+    },
+    {
+      "id": "wpadniemy-do-ciebie",
+      "text": "wpadniemy do ciebie",
+      "meaning": {
+        "en": "we will drop in on you"
+      }
+    },
+    {
+      "id": "w-kazdy-weekend",
+      "text": "w każdy weekend",
+      "meaning": {
+        "en": "every weekend"
+      }
+    },
+    {
+      "id": "macie-racje",
+      "text": "macie rację",
+      "meaning": {
+        "en": "you are right (said to several people)"
+      }
+    },
+    {
+      "id": "wszystko-sie-dobrze-skonczylo",
+      "text": "wszystko się dobrze skończyło",
+      "meaning": {
+        "en": "everything ended well"
+      }
+    },
+    {
+      "id": "kolo",
+      "text": "koło",
+      "meaning": {
+        "en": "near, by (koło okna: by the window)"
+      }
+    },
+    {
+      "id": "wzdluz",
+      "text": "wzdłuż",
+      "meaning": {
+        "en": "along (wzdłuż ściany: along the wall)"
+      }
+    },
+    {
+      "id": "obok-szafy",
+      "text": "obok szafy",
+      "meaning": {
+        "en": "next to the wardrobe"
+      }
+    },
+    {
+      "id": "kolo-okna",
+      "text": "koło okna",
+      "meaning": {
+        "en": "by the window"
+      }
+    },
+    {
+      "id": "blisko-domu",
+      "text": "blisko domu",
+      "meaning": {
+        "en": "near the house, near home"
+      }
+    },
+    {
+      "id": "na-wprost-drzwi",
+      "text": "na wprost drzwi",
+      "meaning": {
+        "en": "opposite the door, facing the door"
+      }
+    },
+    {
+      "id": "wzdluz-sciany",
+      "text": "wzdłuż ściany",
+      "meaning": {
+        "en": "along the wall"
+      }
+    },
+    {
+      "id": "pies",
+      "text": "pies",
+      "meaning": {
+        "en": "a dog (obok psa: next to the dog)"
+      },
+      "forms": [
+        "psa"
+      ]
+    },
+    {
+      "id": "przed",
+      "text": "przed",
+      "meaning": {
+        "en": "in front of (przed domem: in front of the house)"
+      }
+    },
+    {
+      "id": "za-instr",
+      "text": "za",
+      "meaning": {
+        "en": "behind (za drzewem: behind the tree)"
+      }
+    },
+    {
+      "id": "pod",
+      "text": "pod",
+      "meaning": {
+        "en": "under (pod krzesłem: under the chair)"
+      }
+    },
+    {
+      "id": "nad",
+      "text": "nad",
+      "meaning": {
+        "en": "above, over (nad stołem: above the table)"
+      }
+    },
+    {
+      "id": "miedzy",
+      "text": "między",
+      "meaning": {
+        "en": "between (między oknem a drzwiami: between the window and the door)"
+      }
+    },
+    {
+      "id": "przed-domem",
+      "text": "przed domem",
+      "meaning": {
+        "en": "in front of the house"
+      }
+    },
+    {
+      "id": "pod-krzeslem",
+      "text": "pod krzesłem",
+      "meaning": {
+        "en": "under the chair"
+      }
+    },
+    {
+      "id": "nad-stolem",
+      "text": "nad stołem",
+      "meaning": {
+        "en": "above the table"
+      }
+    },
+    {
+      "id": "za-drzewem",
+      "text": "za drzewem",
+      "meaning": {
+        "en": "behind the tree"
+      }
+    },
+    {
+      "id": "komoda",
+      "text": "komoda",
+      "meaning": {
+        "en": "a chest of drawers"
+      }
+    },
+    {
+      "id": "przed-telewizorem",
+      "text": "przed telewizorem",
+      "meaning": {
+        "en": "in front of the television"
+      }
+    },
+    {
+      "id": "pod-oknem",
+      "text": "pod oknem",
+      "meaning": {
+        "en": "under the window"
+      }
+    },
+    {
+      "id": "miedzy-regalem-a-biurkiem",
+      "text": "między regałem a biurkiem",
+      "meaning": {
+        "en": "between the bookcase and the desk"
+      }
+    },
+    {
+      "id": "za-biurkiem",
+      "text": "za biurkiem",
+      "meaning": {
+        "en": "behind the desk"
+      }
+    },
+    {
+      "id": "nad-lozkiem",
+      "text": "nad łóżkiem",
+      "meaning": {
+        "en": "above the bed"
+      }
+    },
+    {
+      "id": "obok-lozka",
+      "text": "obok łóżka",
+      "meaning": {
+        "en": "next to the bed"
+      }
+    },
+    {
+      "id": "postawic",
+      "text": "postawić",
+      "meaning": {
+        "en": "to put, to stand (something upright: postawić książki na półce)"
+      }
+    },
+    {
+      "id": "polozyc",
+      "text": "położyć",
+      "meaning": {
+        "en": "to put, to lay (something flat: położyć książkę na biurku)"
+      }
+    },
+    {
+      "id": "powiesic",
+      "text": "powiesić",
+      "meaning": {
+        "en": "to hang (up) (powiesić obraz na ścianie)"
+      }
+    },
+    {
+      "id": "wieszak",
+      "text": "wieszak",
+      "meaning": {
+        "en": "a coat hook, a hanger (na wieszaku: on the hook)"
+      },
+      "forms": [
+        "na wieszaku"
+      ]
+    },
+    {
+      "id": "parapet",
+      "text": "parapet",
+      "meaning": {
+        "en": "a windowsill (na parapecie: on the windowsill)"
+      },
+      "forms": [
+        "na parapecie"
+      ]
+    },
+    {
+      "id": "szafka",
+      "text": "szafka",
+      "meaning": {
+        "en": "a cupboard, a cabinet (w szafce: in the cupboard)"
+      },
+      "forms": [
+        "w szafce"
+      ]
+    },
+    {
+      "id": "recznik",
+      "text": "ręcznik",
+      "meaning": {
+        "en": "a towel"
+      }
+    },
+    {
+      "id": "gora",
+      "text": "góra",
+      "meaning": {
+        "en": "the top (na górze: at the top)"
+      }
+    },
+    {
+      "id": "dol",
+      "text": "dół",
+      "meaning": {
+        "en": "the bottom (na dole: at the bottom)"
+      }
+    }
+  ]
+}

@@ -1326,6 +1326,47 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 19 of the book over the real course in the light theme`() = chapter19Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 19 of the book over the real course in the dark theme`() = chapter19Tour("dark")
+
+    @Test
+    fun `chapter 19 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter19Tour("large") }
+
+    /**
+     * Chapter 19 over the real course: its Lesson screen at the top and its sections, then the
+     * hotel's questions in section A, what a flat is like and the adverts in section B, and the
+     * prepositions with the instrumental in section C.
+     */
+    private fun chapter19Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l19") }
+        screen.waitForIdle()
+        shot("372-chapter-19")
+        screen.onAllNodes(hasText("Powtórzenie", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("372-chapter-19-sections")
+        listOf(
+            "kpk1-l19-a4" to "373-chapter-19-hotel-questions",
+            "kpk1-l19-b1" to "374-chapter-19-what-a-flat-is-like",
+            "kpk1-l19-b4" to "375-chapter-19-adverts",
+            "kpk1-l19-c3" to "376-chapter-19-prepositions",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l19")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test

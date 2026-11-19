@@ -1,0 +1,421 @@
+{
+  "id": "kpk1-l19-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Nie mam gdzie mieszkać",
+    "meaning": {
+      "en": "I have nowhere to live"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-a4-t01",
+      "before": "kpk1-l19-a4-e01",
+      "title": {
+        "en": "Na jak długo?"
+      },
+      "body": {
+        "en": "Reception asks five things: *jaki?* (what kind?), *z czym?* (with what?), *od kiedy?* (from when?), *na jak długo?* (for how long?) and *na którym piętrze?* (on which floor?). A hotel counts *doba*, a day and a night: *jedna noc*, *dwie noce*, *trzy noce*. From a day is *od* and until is *do*, with the genitive: *od środy do piątku*."
+      },
+      "table": {
+        "title": {
+          "en": "Pokój w hotelu"
+        },
+        "columns": [
+          {
+            "header": "pytanie"
+          },
+          {
+            "header": "odpowiedź"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Jaki?",
+              "jednoosobowy, dwuosobowy"
+            ]
+          },
+          {
+            "cells": [
+              "Z czym?",
+              "z łazienką, ze śniadaniem"
+            ]
+          },
+          {
+            "cells": [
+              "Od kiedy?",
+              "od dziś, od jutra, od środy"
+            ]
+          },
+          {
+            "cells": [
+              "Na jak długo?",
+              "na jedną noc, na weekend, na cały tydzień"
+            ]
+          },
+          {
+            "cells": [
+              "Na którym piętrze?",
+              "na pierwszym, na ostatnim"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a4-e01",
+      "prompt": "na jak długo?",
+      "options": [
+        {
+          "en": "for how long?"
+        },
+        {
+          "en": "since when?"
+        },
+        {
+          "en": "how much?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-jak-dlugo"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a4-e02",
+      "prompt": "od kiedy?",
+      "options": [
+        {
+          "en": "for how long?"
+        },
+        {
+          "en": "from when? since when?"
+        },
+        {
+          "en": "until when?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "od-kiedy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-a4-e03",
+      "text": "Od kiedy? Od jutra.",
+      "meaning": {
+        "en": "From when? From tomorrow."
+      },
+      "distractors": [
+        "Od kiedy? Od dziś.",
+        "Na jak długo? Na tydzień."
+      ],
+      "items": [
+        "od-kiedy",
+        "od-jutra"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a4-e04",
+      "prompt": "noc",
+      "options": [
+        {
+          "en": "a day"
+        },
+        {
+          "en": "an evening"
+        },
+        {
+          "en": "a night (dwie noce: two nights)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "noc"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-a4-e05",
+      "text": "Na jak długo? Na dwie ___.",
+      "meaning": {
+        "en": "For how long? For two nights."
+      },
+      "gaps": [
+        [
+          "noce"
+        ]
+      ],
+      "distractors": [
+        "noc",
+        "nocą"
+      ],
+      "items": [
+        "na-jak-dlugo",
+        "dwie",
+        "noc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a4-e06",
+      "prompt": "na weekend",
+      "options": [
+        {
+          "en": "for the weekend"
+        },
+        {
+          "en": "every weekend"
+        },
+        {
+          "en": "at the weekend"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-weekend"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a4-e07",
+      "prompt": "od środy",
+      "options": [
+        {
+          "en": "until Wednesday"
+        },
+        {
+          "en": "from Wednesday"
+        },
+        {
+          "en": "on Wednesday"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "od-srody"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a4-e08",
+      "prompt": "do piątku",
+      "options": [
+        {
+          "en": "from Friday"
+        },
+        {
+          "en": "on Friday"
+        },
+        {
+          "en": "until Friday"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-piatku"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-a4-e09",
+      "prompt": {
+        "en": "from Wednesday until Friday"
+      },
+      "acceptedAnswers": [
+        "od środy do piątku"
+      ],
+      "distractors": [
+        "środa",
+        "piątek"
+      ],
+      "items": [
+        "od-srody",
+        "do-piatku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a4-e10",
+      "prompt": "na którym piętrze?",
+      "options": [
+        {
+          "en": "on which floor?"
+        },
+        {
+          "en": "on which street?"
+        },
+        {
+          "en": "how many floors?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-ktorym-pietrze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a4-e11",
+      "prompt": "z czym?",
+      "options": [
+        {
+          "en": "with whom?"
+        },
+        {
+          "en": "with what?"
+        },
+        {
+          "en": "for what?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-czym"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-a4-e12",
+      "prompt": {
+        "en": "for how long?"
+      },
+      "acceptedAnswers": [
+        "na jak długo?"
+      ],
+      "items": [
+        "na-jak-dlugo"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-a4-e13",
+      "acceptedAnswers": [
+        "na którym piętrze?"
+      ],
+      "meaning": {
+        "en": "on which floor?"
+      },
+      "items": [
+        "na-ktorym-pietrze"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-a4-e14",
+      "pairs": [
+        {
+          "polish": "od kiedy?",
+          "meaning": {
+            "en": "from when?"
+          }
+        },
+        {
+          "polish": "na jak długo?",
+          "meaning": {
+            "en": "for how long?"
+          }
+        },
+        {
+          "polish": "z czym?",
+          "meaning": {
+            "en": "with what?"
+          }
+        },
+        {
+          "polish": "na którym piętrze?",
+          "meaning": {
+            "en": "on which floor?"
+          }
+        },
+        {
+          "polish": "na weekend",
+          "meaning": {
+            "en": "for the weekend"
+          }
+        }
+      ],
+      "items": [
+        "od-kiedy",
+        "na-jak-dlugo",
+        "z-czym",
+        "na-ktorym-pietrze",
+        "na-weekend"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-a4-e15",
+      "text": "Z czym? Z ___.",
+      "meaning": {
+        "en": "With what? With a bathroom."
+      },
+      "gaps": [
+        [
+          "łazienką"
+        ]
+      ],
+      "distractors": [
+        "łazienka",
+        "łazience"
+      ],
+      "items": [
+        "z-czym",
+        "z-lazienka"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l19-a4-e16",
+      "lines": [
+        "Na jak długo?",
+        "Na weekend, od piątku.",
+        "A na którym piętrze jest pokój?",
+        "Na pierwszym piętrze."
+      ],
+      "meaning": {
+        "en": "A weekend in a hotel."
+      },
+      "items": [
+        "na-jak-dlugo",
+        "na-weekend",
+        "a",
+        "na-ktorym-pietrze",
+        "byc-jest",
+        "pokoj",
+        "na-pierwszym-pietrze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-a4-e17",
+      "prompt": {
+        "en": "one night, a double room"
+      },
+      "acceptedAnswers": [
+        "jedna noc, pokój dwuosobowy"
+      ],
+      "distractors": [
+        "noce",
+        "jednoosobowy"
+      ],
+      "items": [
+        "jedna",
+        "noc",
+        "pokoj",
+        "dwuosobowy"
+      ]
+    }
+  ]
+}

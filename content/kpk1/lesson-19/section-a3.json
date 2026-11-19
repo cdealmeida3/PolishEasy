@@ -1,0 +1,380 @@
+{
+  "id": "kpk1-l19-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Nie mam gdzie mieszkać",
+    "meaning": {
+      "en": "I have nowhere to live"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l19-a3-t01",
+      "before": "kpk1-l19-a3-e01",
+      "title": {
+        "en": "Pokój w hotelu"
+      },
+      "body": {
+        "en": "A hotel room is described by who it is for, *jednoosobowy*, *dwuosobowy*, *trzyosobowy*, *czteroosobowy*, by what it has, with *z* and the instrumental (*z klimatyzacją*, *z widokiem na morze*, *z dostępem do internetu*, *ze śniadaniem*), and by its floor: *na pierwszym piętrze*, *na ostatnim piętrze*. Before *ś*, *z* becomes *ze*: *ze śniadaniem*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a3-e01",
+      "prompt": "trzyosobowy",
+      "options": [
+        {
+          "en": "for two people"
+        },
+        {
+          "en": "for three people (pokój trzyosobowy: a triple room) (trzyosobowy, trzyosobowa, trzyosobowe)"
+        },
+        {
+          "en": "for one person"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "trzyosobowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a3-e02",
+      "prompt": "czteroosobowy",
+      "options": [
+        {
+          "en": "for three people"
+        },
+        {
+          "en": "for a week"
+        },
+        {
+          "en": "for four people (pokój czteroosobowy: a room for four) (czteroosobowy, czteroosobowa, czteroosobowe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czteroosobowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a3-e03",
+      "prompt": "z klimatyzacją",
+      "options": [
+        {
+          "en": "with air conditioning"
+        },
+        {
+          "en": "with a kitchen"
+        },
+        {
+          "en": "with heating"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-klimatyzacja"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l19-a3-e04",
+      "text": "pokój z klimatyzacją",
+      "meaning": {
+        "en": "a room with air conditioning"
+      },
+      "distractors": [
+        "pokój z łazienką",
+        "pokój z balkonem"
+      ],
+      "items": [
+        "pokoj",
+        "z-klimatyzacja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a3-e05",
+      "prompt": "z widokiem na morze",
+      "options": [
+        {
+          "en": "with a view of the park"
+        },
+        {
+          "en": "with a sea view"
+        },
+        {
+          "en": "by the sea"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-widokiem-na-morze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a3-e06",
+      "prompt": "z dostępem do internetu",
+      "options": [
+        {
+          "en": "with a television"
+        },
+        {
+          "en": "without internet"
+        },
+        {
+          "en": "with internet access"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "z-dostepem-do-internetu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a3-e07",
+      "prompt": "ze śniadaniem",
+      "options": [
+        {
+          "en": "with breakfast"
+        },
+        {
+          "en": "without breakfast"
+        },
+        {
+          "en": "with dinner"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ze-sniadaniem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-a3-e08",
+      "text": "Pokój dwuosobowy ___ śniadaniem.",
+      "meaning": {
+        "en": "A double room with breakfast."
+      },
+      "gaps": [
+        [
+          "ze"
+        ]
+      ],
+      "distractors": [
+        "z",
+        "na"
+      ],
+      "items": [
+        "pokoj",
+        "dwuosobowy",
+        "ze-sniadaniem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a3-e09",
+      "prompt": "na pierwszym piętrze",
+      "options": [
+        {
+          "en": "on the ground floor"
+        },
+        {
+          "en": "on the first floor"
+        },
+        {
+          "en": "on the top floor"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-pierwszym-pietrze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l19-a3-e10",
+      "prompt": "na ostatnim piętrze",
+      "options": [
+        {
+          "en": "on the first floor"
+        },
+        {
+          "en": "in the cellar"
+        },
+        {
+          "en": "on the top floor"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-ostatnim-pietrze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l19-a3-e11",
+      "prompt": {
+        "en": "a room for four with a sea view"
+      },
+      "acceptedAnswers": [
+        "pokój czteroosobowy z widokiem na morze"
+      ],
+      "distractors": [
+        "trzyosobowy",
+        "park"
+      ],
+      "items": [
+        "pokoj",
+        "czteroosobowy",
+        "z-widokiem-na-morze"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l19-a3-e12",
+      "prompt": {
+        "en": "with internet access"
+      },
+      "acceptedAnswers": [
+        "z dostępem do internetu"
+      ],
+      "items": [
+        "z-dostepem-do-internetu"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l19-a3-e13",
+      "acceptedAnswers": [
+        "na ostatnim piętrze"
+      ],
+      "meaning": {
+        "en": "on the top floor"
+      },
+      "items": [
+        "na-ostatnim-pietrze"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l19-a3-e14",
+      "pairs": [
+        {
+          "polish": "trzyosobowy",
+          "meaning": {
+            "en": "for three people"
+          }
+        },
+        {
+          "polish": "czteroosobowy",
+          "meaning": {
+            "en": "for four people"
+          }
+        },
+        {
+          "polish": "z klimatyzacją",
+          "meaning": {
+            "en": "with air conditioning"
+          }
+        },
+        {
+          "polish": "ze śniadaniem",
+          "meaning": {
+            "en": "with breakfast"
+          }
+        },
+        {
+          "polish": "na pierwszym piętrze",
+          "meaning": {
+            "en": "on the first floor"
+          }
+        }
+      ],
+      "items": [
+        "trzyosobowy",
+        "czteroosobowy",
+        "z-klimatyzacja",
+        "ze-sniadaniem",
+        "na-pierwszym-pietrze"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l19-a3-e15",
+      "text": "Pokój ___ jest na pierwszym piętrze.",
+      "meaning": {
+        "en": "The room for three is on the first floor."
+      },
+      "gaps": [
+        [
+          "trzyosobowy"
+        ]
+      ],
+      "distractors": [
+        "trzyosobowa",
+        "trzyosobowe"
+      ],
+      "items": [
+        "pokoj",
+        "trzyosobowy",
+        "byc-jest",
+        "na-pierwszym-pietrze"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l19-a3-e16",
+      "lines": [
+        "Mamy pokój dwuosobowy z klimatyzacją.",
+        "Jest na ostatnim piętrze, z widokiem na morze.",
+        "Śniadanie jest od siódmej."
+      ],
+      "meaning": {
+        "en": "A room by the sea."
+      },
+      "statements": [
+        {
+          "text": "Pokój jest dla dwóch osób.",
+          "meaning": {
+            "en": "The room is for two people."
+          },
+          "true": true
+        },
+        {
+          "text": "Pokój jest na pierwszym piętrze.",
+          "meaning": {
+            "en": "The room is on the first floor."
+          },
+          "true": false
+        },
+        {
+          "text": "Z pokoju widać morze.",
+          "meaning": {
+            "en": "You can see the sea from the room."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "miec-mamy",
+        "pokoj",
+        "dwuosobowy",
+        "z-klimatyzacja",
+        "na-ostatnim-pietrze",
+        "z-widokiem-na-morze",
+        "sniadanie"
+      ]
+    }
+  ]
+}
