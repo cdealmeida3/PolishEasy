@@ -74,7 +74,8 @@ fun Course.spokenTexts(): List<String> =
             forecasts.map { it.text } +
             room?.scenes.orEmpty().map { it.text } +
             flatHunt.map { it.wish.text } +
-            polandMap.map { it.says.text }
+            polandMap.map { it.says.text } +
+            calendar.map { it.says.text }
         )
         .distinctBy(::audioKey)
 

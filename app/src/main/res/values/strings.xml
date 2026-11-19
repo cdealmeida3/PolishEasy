@@ -593,6 +593,11 @@
     <string name="game_poland_map_needs">Opens when you learn four places and where they lie, Gdańsk, na północy and the rest, in chapter 20.</string>
     <string name="poland_map_instruction">Where in Poland is it? Tap the part of the map.</string>
     <string name="poland_map_note">%1$s · %2$s</string>
+    <string name="game_calendar">Calendar</string>
+    <string name="game_calendar_note">A page of the calendar shows a holiday and its date. Tap how you say when it is.</string>
+    <string name="game_calendar_needs">Opens when you learn four holidays and their dates, pierwszego czerwca and the rest, in chapter 21.</string>
+    <string name="calendar_instruction">When is it? Tap how you say the date.</string>
+    <string name="calendar_note">%1$s · %2$s</string>
     <plurals name="how_many_pictures">
         <item quantity="one">%d picture</item>
         <item quantity="other">%d pictures</item>

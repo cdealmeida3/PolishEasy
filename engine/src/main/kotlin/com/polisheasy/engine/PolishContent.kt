@@ -179,6 +179,13 @@ fun polishContent(files: ContentFiles): PolishContent {
         if (polandMap.isNotEmpty()) {
             Compass.entries.forEach { part -> sentence(part.polish, mapOf(language to part.meaning), PolishUse(file, "polandMap/compass/${part.key}", PolishRole.ANSWER)) }
         }
+        // Calendar's sentences, holidays and options.
+        content.practice?.calendar.orEmpty().forEach { page ->
+            sentence(page.says.text, page.says.meaning, PolishUse(file, "calendar/${page.id}", PolishRole.PROMPT))
+            page.options.forEachIndexed { index, option ->
+                sentence(option.text, option.meaning, PolishUse(file, "calendar/${page.id}/${index + 1}", PolishRole.ANSWER))
+            }
+        }
         content.course().allClockTimes().forEach { time ->
             sentence(time.polish, mapOf(language to "${time.hour}:${time.minute.toString().padStart(2, '0')}"), PolishUse(file, "clock", PolishRole.ANSWER))
         }

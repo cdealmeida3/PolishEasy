@@ -94,6 +94,8 @@ data class Course(
     val flatHunt: List<FlatHuntCase> = emptyList(),
     /** The places of Poland map, in the content's order. */
     val polandMap: List<PolandMapPlace> = emptyList(),
+    /** The pages of Calendar, in the content's order. */
+    val calendar: List<CalendarPage> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }
