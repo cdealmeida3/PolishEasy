@@ -4563,5 +4563,618 @@
         ]
       }
     }
+  ],
+  "calendar": [
+    {
+      "id": "walentynki",
+      "date": "14.02",
+      "holiday": "Walentynki",
+      "options": [
+        {
+          "text": "czternastego lutego",
+          "meaning": {
+            "en": "on the fourteenth of February"
+          },
+          "items": [
+            "czternasty",
+            "lutego"
+          ]
+        },
+        {
+          "text": "czternasty lutego",
+          "meaning": {
+            "en": "the fourteenth of February"
+          },
+          "items": [
+            "czternasty",
+            "lutego"
+          ]
+        },
+        {
+          "text": "czwartego lutego",
+          "meaning": {
+            "en": "on the fourth of February"
+          },
+          "items": [
+            "czwarty",
+            "lutego"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Walentynki są czternastego lutego.",
+        "meaning": {
+          "en": "Valentine's Day is on the fourteenth of February."
+        },
+        "items": [
+          "walentynki",
+          "byc-sa",
+          "czternasty",
+          "lutego"
+        ]
+      }
+    },
+    {
+      "id": "dzien-kobiet",
+      "date": "08.03",
+      "holiday": "Dzień Kobiet",
+      "options": [
+        {
+          "text": "ósmego marca",
+          "meaning": {
+            "en": "on the eighth of March"
+          },
+          "items": [
+            "osmy",
+            "marca"
+          ]
+        },
+        {
+          "text": "ósmy marca",
+          "meaning": {
+            "en": "the eighth of March"
+          },
+          "items": [
+            "osmy",
+            "marca"
+          ]
+        },
+        {
+          "text": "ósmego maja",
+          "meaning": {
+            "en": "on the eighth of May"
+          },
+          "items": [
+            "osmy",
+            "maja"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Dzień Kobiet jest ósmego marca.",
+        "meaning": {
+          "en": "Women's Day is on the eighth of March."
+        },
+        "items": [
+          "dzien-kobiet",
+          "byc-jest",
+          "osmy",
+          "marca"
+        ]
+      }
+    },
+    {
+      "id": "prima-aprilis",
+      "date": "01.04",
+      "holiday": "Prima aprilis",
+      "options": [
+        {
+          "text": "pierwszego kwietnia",
+          "meaning": {
+            "en": "on the first of April"
+          },
+          "items": [
+            "pierwszy",
+            "kwietnia"
+          ]
+        },
+        {
+          "text": "pierwszy kwietnia",
+          "meaning": {
+            "en": "the first of April"
+          },
+          "items": [
+            "pierwszy",
+            "kwietnia"
+          ]
+        },
+        {
+          "text": "pierwszego sierpnia",
+          "meaning": {
+            "en": "on the first of August"
+          },
+          "items": [
+            "pierwszy",
+            "sierpnia"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Prima aprilis jest pierwszego kwietnia.",
+        "meaning": {
+          "en": "April Fools' Day is on the first of April."
+        },
+        "items": [
+          "prima-aprilis",
+          "byc-jest",
+          "pierwszy",
+          "kwietnia"
+        ]
+      }
+    },
+    {
+      "id": "dzien-matki",
+      "date": "26.05",
+      "holiday": "Dzień Matki",
+      "options": [
+        {
+          "text": "dwudziestego szóstego maja",
+          "meaning": {
+            "en": "on the twenty-sixth of May"
+          },
+          "items": [
+            "dwudziesty",
+            "szosty",
+            "maja"
+          ]
+        },
+        {
+          "text": "szóstego maja",
+          "meaning": {
+            "en": "on the sixth of May"
+          },
+          "items": [
+            "szosty",
+            "maja"
+          ]
+        },
+        {
+          "text": "dwudziestego szóstego marca",
+          "meaning": {
+            "en": "on the twenty-sixth of March"
+          },
+          "items": [
+            "dwudziesty",
+            "szosty",
+            "marca"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Dzień Matki jest dwudziestego szóstego maja.",
+        "meaning": {
+          "en": "Mother's Day is on the twenty-sixth of May."
+        },
+        "items": [
+          "dzien-matki",
+          "byc-jest",
+          "dwudziesty",
+          "szosty",
+          "maja"
+        ]
+      }
+    },
+    {
+      "id": "dzien-dziecka",
+      "date": "01.06",
+      "holiday": "Dzień Dziecka",
+      "options": [
+        {
+          "text": "pierwszego czerwca",
+          "meaning": {
+            "en": "on the first of June"
+          },
+          "items": [
+            "pierwszy",
+            "czerwca"
+          ]
+        },
+        {
+          "text": "pierwszy czerwca",
+          "meaning": {
+            "en": "the first of June"
+          },
+          "items": [
+            "pierwszy",
+            "czerwca"
+          ]
+        },
+        {
+          "text": "pierwszego lipca",
+          "meaning": {
+            "en": "on the first of July"
+          },
+          "items": [
+            "pierwszy",
+            "lipca"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Dzień Dziecka jest pierwszego czerwca.",
+        "meaning": {
+          "en": "Children's Day is on the first of June."
+        },
+        "items": [
+          "dzien-dziecka",
+          "byc-jest",
+          "pierwszy",
+          "czerwca"
+        ]
+      }
+    },
+    {
+      "id": "dzien-nauczyciela",
+      "date": "14.10",
+      "holiday": "Dzień Nauczyciela",
+      "options": [
+        {
+          "text": "czternastego października",
+          "meaning": {
+            "en": "on the fourteenth of October"
+          },
+          "items": [
+            "czternasty",
+            "pazdziernika"
+          ]
+        },
+        {
+          "text": "czwartego października",
+          "meaning": {
+            "en": "on the fourth of October"
+          },
+          "items": [
+            "czwarty",
+            "pazdziernika"
+          ]
+        },
+        {
+          "text": "czternastego listopada",
+          "meaning": {
+            "en": "on the fourteenth of November"
+          },
+          "items": [
+            "czternasty",
+            "listopada"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Dzień Nauczyciela jest czternastego października.",
+        "meaning": {
+          "en": "Teachers' Day is on the fourteenth of October."
+        },
+        "items": [
+          "dzien-nauczyciela",
+          "byc-jest",
+          "czternasty",
+          "pazdziernika"
+        ]
+      }
+    },
+    {
+      "id": "wszystkich-swietych",
+      "date": "01.11",
+      "holiday": "Wszystkich Świętych",
+      "options": [
+        {
+          "text": "pierwszego listopada",
+          "meaning": {
+            "en": "on the first of November"
+          },
+          "items": [
+            "pierwszy",
+            "listopada"
+          ]
+        },
+        {
+          "text": "jedenastego listopada",
+          "meaning": {
+            "en": "on the eleventh of November"
+          },
+          "items": [
+            "jedenasty",
+            "listopada"
+          ]
+        },
+        {
+          "text": "pierwszego października",
+          "meaning": {
+            "en": "on the first of October"
+          },
+          "items": [
+            "pierwszy",
+            "pazdziernika"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Wszystkich Świętych jest pierwszego listopada.",
+        "meaning": {
+          "en": "All Saints' Day is on the first of November."
+        },
+        "items": [
+          "wszystkich-swietych",
+          "byc-jest",
+          "pierwszy",
+          "listopada"
+        ]
+      }
+    },
+    {
+      "id": "swieto-niepodleglosci",
+      "date": "11.11",
+      "holiday": "Święto Niepodległości",
+      "options": [
+        {
+          "text": "jedenastego listopada",
+          "meaning": {
+            "en": "on the eleventh of November"
+          },
+          "items": [
+            "jedenasty",
+            "listopada"
+          ]
+        },
+        {
+          "text": "jedenasty listopada",
+          "meaning": {
+            "en": "the eleventh of November"
+          },
+          "items": [
+            "jedenasty",
+            "listopada"
+          ]
+        },
+        {
+          "text": "pierwszego listopada",
+          "meaning": {
+            "en": "on the first of November"
+          },
+          "items": [
+            "pierwszy",
+            "listopada"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Święto Niepodległości jest jedenastego listopada.",
+        "meaning": {
+          "en": "Independence Day is on the eleventh of November."
+        },
+        "items": [
+          "swieto-niepodleglosci",
+          "byc-jest",
+          "jedenasty",
+          "listopada"
+        ]
+      }
+    },
+    {
+      "id": "wigilia",
+      "date": "24.12",
+      "holiday": "Wigilia",
+      "options": [
+        {
+          "text": "dwudziestego czwartego grudnia",
+          "meaning": {
+            "en": "on the twenty-fourth of December"
+          },
+          "items": [
+            "dwudziesty",
+            "czwarty",
+            "grudnia"
+          ]
+        },
+        {
+          "text": "dwudziesty czwarty grudnia",
+          "meaning": {
+            "en": "the twenty-fourth of December"
+          },
+          "items": [
+            "dwudziesty",
+            "czwarty",
+            "grudnia"
+          ]
+        },
+        {
+          "text": "czwartego grudnia",
+          "meaning": {
+            "en": "on the fourth of December"
+          },
+          "items": [
+            "czwarty",
+            "grudnia"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Wigilia jest dwudziestego czwartego grudnia.",
+        "meaning": {
+          "en": "Christmas Eve is on the twenty-fourth of December."
+        },
+        "items": [
+          "wigilia",
+          "byc-jest",
+          "dwudziesty",
+          "czwarty",
+          "grudnia"
+        ]
+      }
+    },
+    {
+      "id": "boze-narodzenie",
+      "date": "25.12",
+      "holiday": "Boże Narodzenie",
+      "options": [
+        {
+          "text": "dwudziestego piątego grudnia",
+          "meaning": {
+            "en": "on the twenty-fifth of December"
+          },
+          "items": [
+            "dwudziesty",
+            "piaty",
+            "grudnia"
+          ]
+        },
+        {
+          "text": "dwudziestego czwartego grudnia",
+          "meaning": {
+            "en": "on the twenty-fourth of December"
+          },
+          "items": [
+            "dwudziesty",
+            "czwarty",
+            "grudnia"
+          ]
+        },
+        {
+          "text": "piętnastego grudnia",
+          "meaning": {
+            "en": "on the fifteenth of December"
+          },
+          "items": [
+            "pietnasty",
+            "grudnia"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Boże Narodzenie jest dwudziestego piątego grudnia.",
+        "meaning": {
+          "en": "Christmas is on the twenty-fifth of December."
+        },
+        "items": [
+          "boze-narodzenie",
+          "byc-jest",
+          "dwudziesty",
+          "piaty",
+          "grudnia"
+        ]
+      }
+    },
+    {
+      "id": "sylwester",
+      "date": "31.12",
+      "holiday": "Sylwester",
+      "options": [
+        {
+          "text": "trzydziestego pierwszego grudnia",
+          "meaning": {
+            "en": "on the thirty-first of December"
+          },
+          "items": [
+            "trzydziesty",
+            "pierwszy",
+            "grudnia"
+          ]
+        },
+        {
+          "text": "trzydziestego grudnia",
+          "meaning": {
+            "en": "on the thirtieth of December"
+          },
+          "items": [
+            "trzydziesty",
+            "grudnia"
+          ]
+        },
+        {
+          "text": "pierwszego stycznia",
+          "meaning": {
+            "en": "on the first of January"
+          },
+          "items": [
+            "pierwszy",
+            "stycznia"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Sylwester jest trzydziestego pierwszego grudnia.",
+        "meaning": {
+          "en": "New Year's Eve is on the thirty-first of December."
+        },
+        "items": [
+          "sylwester",
+          "byc-jest",
+          "trzydziesty",
+          "pierwszy",
+          "grudnia"
+        ]
+      }
+    },
+    {
+      "id": "nowy-rok",
+      "date": "01.01",
+      "holiday": "Nowy Rok",
+      "options": [
+        {
+          "text": "pierwszego stycznia",
+          "meaning": {
+            "en": "on the first of January"
+          },
+          "items": [
+            "pierwszy",
+            "stycznia"
+          ]
+        },
+        {
+          "text": "pierwszy stycznia",
+          "meaning": {
+            "en": "the first of January"
+          },
+          "items": [
+            "pierwszy",
+            "stycznia"
+          ]
+        },
+        {
+          "text": "pierwszego lipca",
+          "meaning": {
+            "en": "on the first of July"
+          },
+          "items": [
+            "pierwszy",
+            "lipca"
+          ]
+        }
+      ],
+      "right": 0,
+      "says": {
+        "text": "Nowy Rok jest pierwszego stycznia.",
+        "meaning": {
+          "en": "New Year's Day is on the first of January."
+        },
+        "items": [
+          "nowy-rok",
+          "byc-jest",
+          "pierwszy",
+          "stycznia"
+        ]
+      }
+    }
   ]
 }

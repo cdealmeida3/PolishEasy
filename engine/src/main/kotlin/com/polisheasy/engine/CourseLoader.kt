@@ -99,7 +99,13 @@ internal data class PracticeFile(
     val flatHunt: List<FlatHuntFile> = emptyList(),
     /** The places of Poland map. */
     val polandMap: List<PolandMapFile> = emptyList(),
+    /** The pages of Calendar. */
+    val calendar: List<CalendarFile> = emptyList(),
 )
+
+/** A page of Calendar: its stable [id], the [date] as a calendar prints it, the [holiday] on it, the [options] to choose from with the [right] one, and the sentence that [says] when it is. */
+@Serializable
+internal data class CalendarFile(val id: String, val date: String, val holiday: String, val options: List<FlatTextFile>, val right: Int, val says: FlatTextFile)
 
 /** A place of Poland map: its stable [id], the [place] as the question shows it, the [region] where it lies, a [Compass] key, and the sentence that [says] so. */
 @Serializable
@@ -429,6 +435,13 @@ internal class ReadContent(
                 .filter { Compass.of(it.region) != null }
                 .distinctBy { it.id }
                 .map { place -> PolandMapPlace(place.id, place.place, Compass.of(place.region)!!, FlatText(place.says.text, place.says.meaning, place.says.items.distinct())) },
+            calendar = practice?.calendar.orEmpty()
+                .filter { it.options.size == CalendarRules.OPTIONS && it.right in it.options.indices }
+                .distinctBy { it.id }
+                .map { page ->
+                    fun text(file: FlatTextFile) = FlatText(file.text, file.meaning, file.items.distinct())
+                    CalendarPage(page.id, page.date, page.holiday, page.options.map(::text), page.right, text(page.says))
+                },
             room = practice?.room?.let { room ->
                 val places = room.places.distinct()
                 val positions = room.positions.filter { it.isNotEmpty() }
@@ -655,6 +668,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         practice.room?.let { room -> problems += roomProblems(file, room, course, content.itemsComplete) }
         problems += flatHuntProblems(file, practice.flatHunt, course, content.itemsComplete)
         problems += polandMapProblems(file, practice.polandMap, course, content.itemsComplete)
+        problems += calendarProblems(file, practice.calendar, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -1464,5 +1478,34 @@ private fun polandMapProblems(file: String, places: List<PolandMapFile>, course:
     }
     places.map { it.id }.repeated().forEach { id -> problems += ContentProblem(file, id, "The place $id is listed more than once") }
     places.map { it.place }.repeated().forEach { place -> problems += ContentProblem(file, null, "The place \"$place\" is listed more than once") }
+    return problems
+}
+
+/**
+ * What is wrong with Calendar: each page with a date as a calendar prints it, *14.02*, a holiday,
+ * [CalendarRules.OPTIONS] different options and a right one among them, and a sentence that names
+ * the holiday and says the right option; every text lists Items that are defined; no id or date twice.
+ */
+private fun calendarProblems(file: String, pages: List<CalendarFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    pages.forEach { page ->
+        if (!Regex("""(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[0-2])""").matches(page.date)) problems += ContentProblem(file, page.id, "The page ${page.id} has the date \"${page.date}\", not a day and a month like 14.02")
+        if (page.options.size != CalendarRules.OPTIONS) problems += ContentProblem(file, page.id, "The page ${page.id} has ${page.options.size} options, not ${CalendarRules.OPTIONS}")
+        if (page.options.map { it.text }.toSet().size != page.options.size) problems += ContentProblem(file, page.id, "The page ${page.id} has an option twice")
+        if (page.right !in page.options.indices) {
+            problems += ContentProblem(file, page.id, "The page ${page.id} has no option ${page.right}")
+        } else if (page.options[page.right].text !in page.says.text) {
+            problems += ContentProblem(file, page.id, "The sentence \"${page.says.text}\" of the page ${page.id} does not say its right option, ${page.options[page.right].text}")
+        }
+        if (!page.says.text.lowercase().contains(page.holiday.lowercase())) problems += ContentProblem(file, page.id, "The sentence \"${page.says.text}\" of the page ${page.id} does not name ${page.holiday}")
+        (page.options + page.says).forEach { text ->
+            if (text.items.isEmpty()) problems += ContentProblem(file, page.id, "The text \"${text.text}\" of the page ${page.id} lists no Items")
+            text.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+                problems += ContentProblem(file, id, "The text \"${text.text}\" of the page ${page.id} names Item $id, which is not defined")
+            }
+        }
+    }
+    pages.map { it.id }.repeated().forEach { id -> problems += ContentProblem(file, id, "The page $id is listed more than once") }
+    pages.map { it.date }.repeated().forEach { date -> problems += ContentProblem(file, null, "The date $date is listed more than once") }
     return problems
 }

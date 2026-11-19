@@ -1772,6 +1772,10 @@
             "meaning": "Christmas"
         },
         {
+            "text": "Boże Narodzenie jest dwudziestego piątego grudnia.",
+            "meaning": "Christmas is on the twenty-fifth of December."
+        },
+        {
             "text": "Boże Narodzenie jest w grudniu, a walentynki są w lutym.",
             "meaning": "Christmas is in December, and Valentine's Day is in February."
         },
@@ -4603,6 +4607,10 @@
         {
             "text": "Dzień Dziecka jest pierwszego czerwca",
             "meaning": "Children's Day is on the first of June"
+        },
+        {
+            "text": "Dzień Dziecka jest pierwszego czerwca.",
+            "meaning": "Children's Day is on the first of June."
         },
         {
             "text": "Dzień Kobiet",
@@ -12973,6 +12981,10 @@
             "meaning": "New Year's Day"
         },
         {
+            "text": "Nowy Rok jest pierwszego stycznia.",
+            "meaning": "New Year's Day is on the first of January."
+        },
+        {
             "text": "Nowy Rok jest w lutym.",
             "meaning": "New Year's Day is in February."
         },
@@ -15035,6 +15047,10 @@
             "text": "Prezydent."
         },
         {
+            "text": "Prima aprilis jest pierwszego kwietnia.",
+            "meaning": "April Fools' Day is on the first of April."
+        },
+        {
             "text": "Priorytet to bardzo szybki list.",
             "meaning": "A priority letter is a very fast letter."
         },
@@ -16307,6 +16323,10 @@
         },
         {
             "text": "Sycylię"
+        },
+        {
+            "text": "Sylwester jest trzydziestego pierwszego grudnia.",
+            "meaning": "New Year's Eve is on the thirty-first of December."
         },
         {
             "text": "Sylwester jest w grudniu.",
@@ -19606,6 +19626,10 @@
             "meaning": "Christmas Eve, the big family supper on 24 December (w Wigilię: on Christmas Eve)"
         },
         {
+            "text": "Wigilia jest dwudziestego czwartego grudnia.",
+            "meaning": "Christmas Eve is on the twenty-fourth of December."
+        },
+        {
             "text": "Wigilia jest w grudniu."
         },
         {
@@ -19830,6 +19854,10 @@
         {
             "text": "Wszystkich Świętych",
             "meaning": "All Saints' Day, 1 November"
+        },
+        {
+            "text": "Wszystkich Świętych jest pierwszego listopada.",
+            "meaning": "All Saints' Day is on the first of November."
         },
         {
             "text": "Wszystkich Świętych jest w listopadzie.",
@@ -23349,12 +23377,28 @@
             "meaning": "on the fourteenth"
         },
         {
+            "text": "czternastego listopada",
+            "meaning": "on the fourteenth of November"
+        },
+        {
+            "text": "czternastego lutego",
+            "meaning": "on the fourteenth of February"
+        },
+        {
+            "text": "czternastego października",
+            "meaning": "on the fourteenth of October"
+        },
+        {
             "text": "czternastej",
             "meaning": "2 p.m., fourteen hundred (jest czternasta; o czternastej)"
         },
         {
             "text": "czternasty",
             "meaning": "fourteenth (czternastego: on the fourteenth)"
+        },
+        {
+            "text": "czternasty lutego",
+            "meaning": "the fourteenth of February"
         },
         {
             "text": "czternastym",
@@ -23477,6 +23521,18 @@
         {
             "text": "czwartego",
             "meaning": "fourth (czwartego: on the fourth)"
+        },
+        {
+            "text": "czwartego grudnia",
+            "meaning": "on the fourth of December"
+        },
+        {
+            "text": "czwartego lutego",
+            "meaning": "on the fourth of February"
+        },
+        {
+            "text": "czwartego października",
+            "meaning": "on the fourth of October"
         },
         {
             "text": "czwartej",
@@ -25455,8 +25511,20 @@
             "meaning": "twentieth (dwudziesty piąty: twenty-fifth; dwudziestego piątego: on the twenty-fifth)"
         },
         {
+            "text": "dwudziestego czwartego grudnia",
+            "meaning": "on the twenty-fourth of December"
+        },
+        {
             "text": "dwudziestego piątego grudnia",
             "meaning": "on the twenty-fifth of December"
+        },
+        {
+            "text": "dwudziestego szóstego maja",
+            "meaning": "on the twenty-sixth of May"
+        },
+        {
+            "text": "dwudziestego szóstego marca",
+            "meaning": "on the twenty-sixth of March"
         },
         {
             "text": "dwudziestej",
@@ -25465,6 +25533,10 @@
         {
             "text": "dwudziesty",
             "meaning": "twentieth (dwudziesty piąty: twenty-fifth; dwudziestego piątego: on the twenty-fifth)"
+        },
+        {
+            "text": "dwudziesty czwarty grudnia",
+            "meaning": "the twenty-fourth of December"
         },
         {
             "text": "dwudziestym",
@@ -28591,6 +28663,10 @@
         {
             "text": "jedenasty",
             "meaning": "eleventh (jedenastego: on the eleventh)"
+        },
+        {
+            "text": "jedenasty listopada",
+            "meaning": "the eleventh of November"
         },
         {
             "text": "jedenastym",
@@ -37970,7 +38046,27 @@
             "meaning": "on the first of June"
         },
         {
+            "text": "pierwszego kwietnia",
+            "meaning": "on the first of April"
+        },
+        {
+            "text": "pierwszego lipca",
+            "meaning": "on the first of July"
+        },
+        {
+            "text": "pierwszego listopada",
+            "meaning": "on the first of November"
+        },
+        {
             "text": "pierwszego maja"
+        },
+        {
+            "text": "pierwszego października",
+            "meaning": "on the first of October"
+        },
+        {
+            "text": "pierwszego sierpnia",
+            "meaning": "on the first of August"
         },
         {
             "text": "pierwszego stycznia",
@@ -37985,7 +38081,12 @@
             "meaning": "first (pierwszy maja: the first of May; pierwszego maja: on the first of May)"
         },
         {
-            "text": "pierwszy kwietnia"
+            "text": "pierwszy czerwca",
+            "meaning": "the first of June"
+        },
+        {
+            "text": "pierwszy kwietnia",
+            "meaning": "the first of April"
         },
         {
             "text": "pierwszy maja"
@@ -37995,7 +38096,8 @@
             "meaning": "for the first time (jestem tu pierwszy raz)"
         },
         {
-            "text": "pierwszy stycznia"
+            "text": "pierwszy stycznia",
+            "meaning": "the first of January"
         },
         {
             "text": "pierwszym",
@@ -38260,6 +38362,10 @@
         {
             "text": "piętnastego",
             "meaning": "on the fifteenth"
+        },
+        {
+            "text": "piętnastego grudnia",
+            "meaning": "on the fifteenth of December"
         },
         {
             "text": "piętnastego sierpnia",
@@ -43306,6 +43412,10 @@
             "meaning": "on the sixth of July"
         },
         {
+            "text": "szóstego maja",
+            "meaning": "on the sixth of May"
+        },
+        {
             "text": "szóstej",
             "meaning": "six o'clock (jest szósta; o szóstej: at six)"
         },
@@ -45252,6 +45362,14 @@
         {
             "text": "trzydziestego",
             "meaning": "thirtieth (trzydziesty pierwszy: thirty-first; trzydziestego pierwszego: on the thirty-first)"
+        },
+        {
+            "text": "trzydziestego grudnia",
+            "meaning": "on the thirtieth of December"
+        },
+        {
+            "text": "trzydziestego pierwszego grudnia",
+            "meaning": "on the thirty-first of December"
         },
         {
             "text": "trzydziesty",
@@ -50430,12 +50548,24 @@
             "meaning": "on the eighth of December"
         },
         {
+            "text": "ósmego maja",
+            "meaning": "on the eighth of May"
+        },
+        {
+            "text": "ósmego marca",
+            "meaning": "on the eighth of March"
+        },
+        {
             "text": "ósmej",
             "meaning": "eight o'clock (jest ósma; o ósmej: at eight)"
         },
         {
             "text": "ósmy",
             "meaning": "eighth (ósmego: on the eighth)"
+        },
+        {
+            "text": "ósmy marca",
+            "meaning": "the eighth of March"
         },
         {
             "text": "ósmym",
@@ -50772,6 +50902,10 @@
         {
             "text": "Święto Niepodległości jest jedenastego listopada",
             "meaning": "Independence Day is on the eleventh of November"
+        },
+        {
+            "text": "Święto Niepodległości jest jedenastego listopada.",
+            "meaning": "Independence Day is on the eleventh of November."
         },
         {
             "text": "Święto Niepodległości jest w październiku.",

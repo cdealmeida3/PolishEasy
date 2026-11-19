@@ -93,6 +93,9 @@ enum class Game(val id: String, val group: GameGroup, val fewestWins: Boolean = 
 
     /** Chapter 20's Game: where a place lies on a compass of Poland, *Gdańsk leży na północy.* */
     POLAND_MAP("poland-map", GameGroup.PHRASES, chapter = 20),
+
+    /** Chapter 21's Game: how a holiday's date is said, *Walentynki są czternastego lutego.* */
+    CALENDAR("calendar", GameGroup.PHRASES, chapter = 21),
 }
 
 /** Whether a Game can be played now. */
@@ -300,7 +303,7 @@ class Practice internal constructor(
     /** Whether every Game is open with the whole book, as if every Daily Set were completed. */
     private val everything: () -> Boolean = { false },
 ) {
-    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt, Directions, PronounSwap, PackagingMatch, HowMany, Forecaster, WordSearch, PronounGrid, RoomScene, StoiLezyWisi, FlatHunt, PolandMap).associateBy { it.game }
+    private val rules: Map<Game, GameRules> = listOf(ChatRules, PictureCards, MemoryPairs, PhraseChains, RegisterSort, Ankieta, VerbChallenge, VerbGroups, ListenAndTap, SoundGaps, SpellIt, QuickRoundRules, MojMojaMoje, TenTaTo, LabelIt, OppositesSnap, WhosWho, HobbyCharades, Numbers, KioskTill, Lotto, PlateBuilder, MarketList, AisleSort, TakeTheOrder, NegationFlip, FamilyTree, TimesOfDay, TellTheTime, WeekPlanner, StoryStrip, WhoSaidIt, Directions, PronounSwap, PackagingMatch, HowMany, Forecaster, WordSearch, PronounGrid, RoomScene, StoiLezyWisi, FlatHunt, PolandMap, CalendarRules).associateBy { it.game }
 
     /** What each Game asked today, so a new Round asks something else first, and what its last Round opened with. */
     private var seenOn: LocalDate? = null

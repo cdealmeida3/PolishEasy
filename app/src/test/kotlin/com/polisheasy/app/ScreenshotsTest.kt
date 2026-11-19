@@ -96,6 +96,7 @@ import com.polisheasy.engine.RoomSceneRound
 import com.polisheasy.engine.PositionsRound
 import com.polisheasy.engine.FlatHuntRound
 import com.polisheasy.engine.PolandMapRound
+import com.polisheasy.engine.CalendarRound
 import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.SaidTime
 import com.polisheasy.engine.TreeRound
@@ -1405,6 +1406,46 @@ class ScreenshotsTest {
         screen.mainClock.autoAdvance = true
         screen.waitForIdle()
         shot("389-poland-map-result")
+    }
+
+    @Test
+    fun `Calendar over the real course in the light theme`() = chapter21Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Calendar over the real course in the dark theme`() = chapter21Games("dark")
+
+    @Test
+    fun `Calendar over the real course at the largest font size`() = atTheLargestFontSize { chapter21Games("large") }
+
+    /** Chapter 21's Game, Calendar: its setup, a page with its three options, a wrong option and the result. */
+    private fun chapter21Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun calendar() = (viewModel?.screen as Screen.Round).round as CalendarRound
+
+        fun move(round: com.polisheasy.engine.Round) {
+            screen.runOnUiThread { checkNotNull(viewModel).move(round) }
+            screen.waitForIdle()
+        }
+
+        openRealPractice()
+        openGame(R.string.game_calendar)
+        shot("395-calendar-setup")
+        tap(R.string.setup_play)
+        shot("396-calendar-page")
+        val first = checkNotNull(calendar().question)
+        move(calendar().choose(first.options.indices.first { it != first.right }))
+        shot("397-calendar-wrong")
+        tap(R.string.action_continue)
+        screen.mainClock.autoAdvance = false
+        var round = calendar()
+        while (round.question != null) round = round.choose(checkNotNull(round.question).right).next()
+        move(round)
+        screen.mainClock.advanceTimeBy(2_000)
+        screen.mainClock.autoAdvance = true
+        screen.waitForIdle()
+        shot("398-calendar-result")
     }
 
     @Test

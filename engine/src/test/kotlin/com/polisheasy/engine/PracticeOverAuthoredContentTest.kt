@@ -972,6 +972,27 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Calendar opens in chapter 21, and every page is said and has one right option of three that its sentence says`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.CALENDAR }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l21-"), course.path[firstReady - 1].id)
+        assertTrue(course.calendar.size >= CalendarRules.QUESTIONS * 2, "${course.calendar.size} pages")
+        course.calendar.forEach { page ->
+            assertTrue(course.clipFor(page.says.text) != null, "No Clip for ${page.says.text}")
+            assertEquals(CalendarRules.OPTIONS, page.options.size, page.id)
+            assertTrue(page.options[page.right].text in page.says.text, page.says.text)
+        }
+        val practice = practiceAfter(course.path.size)
+        repeat(5) {
+            val round = practice.start(practice.setup(Game.CALENDAR, emptyList())) as CalendarRound
+            assertEquals(CalendarRules.QUESTIONS, round.total)
+            round.run.questions.forEach { question ->
+                val page = course.calendar.single { it.id == question.key }
+                assertEquals(page.options[page.right].text, question.options[question.right])
+            }
+        }
+    }
+
+    @Test
     fun `Flat hunt opens in chapter 19, and every wish is said and has one right advert of three`() {
         val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.FLAT_HUNT }.state == GameState.READY }
         assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l19-"), course.path[firstReady - 1].id)
