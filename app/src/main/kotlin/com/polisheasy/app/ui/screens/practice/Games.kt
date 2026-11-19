@@ -105,6 +105,8 @@ internal fun Game.words(): GameWords = when (this) {
         GameWords(R.string.game_room_scene, R.string.game_room_scene_note, R.string.game_room_scene_needs, R.drawable.game_room_scene)
     Game.STOI_LEZY_WISI ->
         GameWords(R.string.game_stoi_lezy_wisi, R.string.game_stoi_lezy_wisi_note, R.string.game_stoi_lezy_wisi_needs, R.drawable.game_stoi_lezy_wisi)
+    Game.FLAT_HUNT ->
+        GameWords(R.string.game_flat_hunt, R.string.game_flat_hunt_note, R.string.game_flat_hunt_needs, R.drawable.game_flat_hunt)
 }
 
 @StringRes
@@ -119,7 +121,7 @@ internal fun GameGroup.title(): Int = when (this) {
 /** A Best in words, as the result of [game] is counted: "14 right". */
 @Composable
 internal fun bestValue(game: Game, value: Int): String = when (game) {
-    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.MARKET_LIST, Game.AISLE_SORT, Game.TAKE_THE_ORDER, Game.NEGATION_FLIP, Game.FAMILY_TREE, Game.TIMES_OF_DAY, Game.TELL_THE_TIME, Game.WEEK_PLANNER, Game.STORY_STRIP, Game.WHO_SAID_IT, Game.DIRECTIONS, Game.PRONOUN_SWAP, Game.PACKAGING, Game.HOW_MANY, Game.FORECASTER, Game.WORD_SEARCH, Game.CHAT, Game.ANKIETA, Game.PRONOUN_GRID, Game.ROOM_SCENE, Game.STOI_LEZY_WISI -> pluralStringResource(R.plurals.practice_right, value, value)
+    Game.VERB_CHALLENGE, Game.LISTEN_AND_TAP, Game.SOUND_GAPS, Game.MOJ_MOJA_MOJE, Game.TEN_TA_TO, Game.LABEL_IT, Game.NUMBERS, Game.SPELL_IT, Game.QUICK_ROUND, Game.REGISTER_SORT, Game.OPPOSITES_SNAP, Game.WHOS_WHO, Game.VERB_GROUPS, Game.HOBBY_CHARADES, Game.KIOSK_TILL, Game.LOTTO, Game.PLATE_BUILDER, Game.MARKET_LIST, Game.AISLE_SORT, Game.TAKE_THE_ORDER, Game.NEGATION_FLIP, Game.FAMILY_TREE, Game.TIMES_OF_DAY, Game.TELL_THE_TIME, Game.WEEK_PLANNER, Game.STORY_STRIP, Game.WHO_SAID_IT, Game.DIRECTIONS, Game.PRONOUN_SWAP, Game.PACKAGING, Game.HOW_MANY, Game.FORECASTER, Game.WORD_SEARCH, Game.CHAT, Game.ANKIETA, Game.PRONOUN_GRID, Game.ROOM_SCENE, Game.STOI_LEZY_WISI, Game.FLAT_HUNT -> pluralStringResource(R.plurals.practice_right, value, value)
     Game.PHRASE_CHAINS -> pluralStringResource(R.plurals.practice_slips, value, value)
     Game.MEMORY_PAIRS -> pluralStringResource(R.plurals.practice_turns, value, value)
     Game.PICTURE_CARDS -> error("Picture cards has no Best")

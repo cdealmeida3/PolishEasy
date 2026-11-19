@@ -164,6 +164,13 @@ fun polishContent(files: ContentFiles): PolishContent {
         content.practice?.room?.scenes.orEmpty().forEachIndexed { index, scene ->
             sentence(scene.text, scene.meaning, PolishUse(file, "room/${index + 1}", PolishRole.PROMPT))
         }
+        // Flat hunt's wishes and adverts.
+        content.practice?.flatHunt.orEmpty().forEach { hunt ->
+            sentence(hunt.wish.text, hunt.wish.meaning, PolishUse(file, "flatHunt/${hunt.id}/wish", PolishRole.PROMPT))
+            hunt.adverts.forEachIndexed { index, advert ->
+                sentence(advert.text, advert.meaning, PolishUse(file, "flatHunt/${hunt.id}/${index + 1}", PolishRole.ANSWER))
+            }
+        }
         content.course().allClockTimes().forEach { time ->
             sentence(time.polish, mapOf(language to "${time.hour}:${time.minute.toString().padStart(2, '0')}"), PolishUse(file, "clock", PolishRole.ANSWER))
         }

@@ -72,7 +72,8 @@ fun Course.spokenTexts(): List<String> =
             packaging.map { it.text } +
             counting.map { it.text } +
             forecasts.map { it.text } +
-            room?.scenes.orEmpty().map { it.text }
+            room?.scenes.orEmpty().map { it.text } +
+            flatHunt.map { it.wish.text }
         )
         .distinctBy(::audioKey)
 

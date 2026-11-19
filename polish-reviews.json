@@ -1759,6 +1759,10 @@
             "text": "Chcieliście pizzę czy zupę?"
         },
         {
+            "text": "Chcę mieszkać sam. Mieszkanie wspólne? Nie, dziękuję.",
+            "meaning": "I want to live alone. A shared flat? No, thank you."
+        },
+        {
             "text": "Chcę pizzę z pieczarkami.",
             "meaning": "I want a pizza with button mushrooms."
         },
@@ -3682,6 +3686,14 @@
         {
             "text": "Dokąd zaraz idzie druga dziewczyna?",
             "meaning": "Where is the other girl going in a moment?"
+        },
+        {
+            "text": "Dom jednorodzinny na wsi, po remoncie.",
+            "meaning": "A detached house in the country, just renovated."
+        },
+        {
+            "text": "Dom jednorodzinny na wsi. 1200 złotych.",
+            "meaning": "A detached house in the country. 1,200 złoty."
         },
         {
             "text": "Dom."
@@ -7741,12 +7753,44 @@
             "text": "Kawa, herbata."
         },
         {
+            "text": "Kawalerka blisko szkoły, po remoncie. 2500 złotych.",
+            "meaning": "A studio near the school, just renovated. 2,500 złoty."
+        },
+        {
+            "text": "Kawalerka blisko szkoły. 1400 złotych, czynsz w cenie.",
+            "meaning": "A studio near the school. 1,400 złoty, the monthly charges included."
+        },
+        {
             "text": "Kawalerka jest umeblowana.",
             "meaning": "The studio flat is furnished."
         },
         {
             "text": "Kawalerka ma dużą kuchnię.",
             "meaning": "The studio flat has a big kitchen."
+        },
+        {
+            "text": "Kawalerka na ostatnim piętrze.",
+            "meaning": "A studio on the top floor."
+        },
+        {
+            "text": "Kawalerka od podwórka, cicha i przytulna.",
+            "meaning": "A studio facing the courtyard, quiet and cosy."
+        },
+        {
+            "text": "Kawalerka samodzielna, z łazienką i z aneksem kuchennym.",
+            "meaning": "A self-contained studio, with a bathroom and a kitchenette."
+        },
+        {
+            "text": "Kawalerka w centrum. Jest głośno, ale tanio.",
+            "meaning": "A studio in the centre. It is noisy, but cheap."
+        },
+        {
+            "text": "Kawalerka w kamienicy, ciemna, ale stylowa.",
+            "meaning": "A studio in a tenement house, dark, but full of character."
+        },
+        {
+            "text": "Kawalerka w Śródmieściu, nowoczesna.",
+            "meaning": "A studio in the city centre, modern."
         },
         {
             "text": "Kawiarnia jest czynna.",
@@ -8809,6 +8853,10 @@
             "meaning": "Yes, I like sport."
         },
         {
+            "text": "Lubię słońce. Szukam mieszkania od strony południowej.",
+            "meaning": "I like the sun. I'm looking for a flat on the south side."
+        },
+        {
             "text": "Lubię tańczyć tango."
         },
         {
@@ -8978,6 +9026,10 @@
             "meaning": "I'm twenty-eight."
         },
         {
+            "text": "Mam dzieci i psa. Chcę mieszkać na wsi.",
+            "meaning": "I have children and a dog. I want to live in the country."
+        },
+        {
             "text": "Mam dziewiętnaście lat. Co lubisz robić?"
         },
         {
@@ -9043,6 +9095,10 @@
         {
             "text": "Mam prezent dla niego. To jego urodziny.",
             "meaning": "I have a present for him. It is his birthday."
+        },
+        {
+            "text": "Mam psa. Szukam mieszkania na parterze.",
+            "meaning": "I have a dog. I'm looking for a flat on the ground floor."
         },
         {
             "text": "Mam sok.",
@@ -9439,6 +9495,14 @@
             "meaning": "A flat to let, furnished."
         },
         {
+            "text": "Mieszkanie dwupokojowe na parterze, z widokiem na park.",
+            "meaning": "A two-room flat on the ground floor, with a view of the park."
+        },
+        {
+            "text": "Mieszkanie dwupokojowe w centrum, na ostatnim piętrze.",
+            "meaning": "A two-room flat in the centre, on the top floor."
+        },
+        {
             "text": "Mieszkanie jednopokojowe, samodzielne."
         },
         {
@@ -9513,12 +9577,36 @@
             "text": "Mieszkanie ma osiemnaście metrów kwadratowych."
         },
         {
+            "text": "Mieszkanie na czwartym piętrze, słoneczne i przestronne.",
+            "meaning": "A flat on the fourth floor, sunny and spacious."
+        },
+        {
             "text": "Mieszkanie nie jest wspólne, jest samodzielne.",
             "meaning": "The flat is not shared, it is self-contained."
         },
         {
+            "text": "Mieszkanie od podwórka, ciemne, mało słońca.",
+            "meaning": "A flat facing the courtyard, dark, little sun."
+        },
+        {
             "text": "Mieszkanie powinno być blisko szkoły.",
             "meaning": "The flat should be near the school."
+        },
+        {
+            "text": "Mieszkanie słoneczne, od strony południowej, z tarasem.",
+            "meaning": "A sunny flat on the south side, with a terrace."
+        },
+        {
+            "text": "Mieszkanie wspólne w kamienicy, cztery osoby.",
+            "meaning": "A shared flat in a tenement house, four people."
+        },
+        {
+            "text": "Mieszkanie wspólne, dwa pokoje, jeden współlokator.",
+            "meaning": "A shared flat, two rooms, one flatmate."
+        },
+        {
+            "text": "Mieszkanie wspólne: pięć osób i impreza w każdy weekend.",
+            "meaning": "A shared flat: five people and a party every weekend."
         },
         {
             "text": "Mieszkasz w Krakowie.",
@@ -12567,11 +12655,35 @@
             "text": "Pokój do wynajęcia, umeblowany."
         },
         {
+            "text": "Pokój dwuosobowy bez łazienki, na ostatnim piętrze.",
+            "meaning": "A double room without a bathroom, on the top floor."
+        },
+        {
+            "text": "Pokój dwuosobowy bez łazienki, ze śniadaniem.",
+            "meaning": "A double room without a bathroom, with breakfast."
+        },
+        {
+            "text": "Pokój dwuosobowy z widokiem na morze, ze śniadaniem.",
+            "meaning": "A double room with a sea view, with breakfast."
+        },
+        {
             "text": "Pokój dwuosobowy ze śniadaniem.",
             "meaning": "A double room with breakfast."
         },
         {
             "text": "Pokój i balkon."
+        },
+        {
+            "text": "Pokój jednoosobowy bez łazienki, z dostępem do internetu.",
+            "meaning": "A single room without a bathroom, with internet access."
+        },
+        {
+            "text": "Pokój jednoosobowy z widokiem na park, z klimatyzacją.",
+            "meaning": "A single room with a view of the park, with air conditioning."
+        },
+        {
+            "text": "Pokój jednoosobowy z łazienką i z dostępem do internetu.",
+            "meaning": "A single room with a bathroom and internet access."
         },
         {
             "text": "Pokój jednoosobowy z łazienką, proszę.",
@@ -12842,6 +12954,10 @@
         {
             "text": "Pracuję w biurze.",
             "meaning": "I work in an office."
+        },
+        {
+            "text": "Pracuję w domu. Chcę mieszkać w ciszy.",
+            "meaning": "I work at home. I want to live in quiet."
         },
         {
             "text": "Pracuję w szpitalu. A ty?"
@@ -14021,10 +14137,22 @@
             "meaning": "I am looking for a flat near the school."
         },
         {
+            "text": "Szukam mieszkania blisko szkoły. Mogę płacić maksymalnie 1500 złotych.",
+            "meaning": "I'm looking for a flat near the school. I can pay 1,500 złoty at most."
+        },
+        {
             "text": "Szukam mieszkania w centrum, blisko szkoły."
         },
         {
             "text": "Szukam mieszkania w centrum."
+        },
+        {
+            "text": "Szukam pokoju na noc, z łazienką i z dostępem do internetu.",
+            "meaning": "I'm looking for a room for the night, with a bathroom and internet access."
+        },
+        {
+            "text": "Szukam pokoju na weekend, z widokiem na morze.",
+            "meaning": "I'm looking for a room for the weekend, with a sea view."
         },
         {
             "text": "Szukasz telefonu?"

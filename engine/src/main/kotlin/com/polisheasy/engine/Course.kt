@@ -90,6 +90,8 @@ data class Course(
     val pronounGrid: PronounTable? = null,
     /** The room of Room scene and Stoi, leży czy wisi?, or null where the content has none. */
     val room: Room? = null,
+    /** The hunts of Flat hunt, in the content's order. */
+    val flatHunt: List<FlatHuntCase> = emptyList(),
 ) {
     /** Every Daily Set in Path order. */
     val path: List<DailySet> = levels.flatMap { level -> level.units.flatMap { it.dailySets } }

@@ -95,7 +95,17 @@ internal data class PracticeFile(
     val pronounGrid: PronounGridFile? = null,
     /** The room of Room scene and Stoi, leży czy wisi?. */
     val room: RoomFile? = null,
+    /** The hunts of Flat hunt. */
+    val flatHunt: List<FlatHuntFile> = emptyList(),
 )
+
+/** A hunt of Flat hunt: its stable [id], someone's [wish], the [adverts] they read and the index of the [right] one. */
+@Serializable
+internal data class FlatHuntFile(val id: String, val wish: FlatTextFile, val adverts: List<FlatTextFile>, val right: Int)
+
+/** A wish or an advert of Flat hunt: its [text], what it means and the Items it uses, every word of it. */
+@Serializable
+internal data class FlatTextFile(val text: String, val meaning: Localized, val items: List<String>)
 
 /** The room of chapter 18's Games: its [places] (Items), its [positions] (rows of verb Items: stoi, leży, wisi) and its [scenes]. */
 @Serializable
@@ -402,6 +412,13 @@ internal class ReadContent(
                         .map { PronounColumn(it.id, it.question, it.meaning, it.cells) },
                 )
             },
+            flatHunt = practice?.flatHunt.orEmpty()
+                .filter { it.adverts.size == FlatHunt.ADVERTS && it.right in it.adverts.indices }
+                .distinctBy { it.id }
+                .map { hunt ->
+                    fun text(file: FlatTextFile) = FlatText(file.text, file.meaning, file.items.distinct())
+                    FlatHuntCase(hunt.id, text(hunt.wish), hunt.adverts.map(::text), hunt.right)
+                },
             room = practice?.room?.let { room ->
                 val places = room.places.distinct()
                 val positions = room.positions.filter { it.isNotEmpty() }
@@ -626,6 +643,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         problems += wordSearchProblems(file, practice.wordSearch, course, content.itemsComplete)
         practice.pronounGrid?.let { grid -> problems += pronounGridProblems(file, grid, course, content.itemsComplete) }
         practice.room?.let { room -> problems += roomProblems(file, room, course, content.itemsComplete) }
+        problems += flatHuntProblems(file, practice.flatHunt, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -1394,5 +1412,27 @@ private fun roomProblems(file: String, room: RoomFile, course: Course, itemsComp
         }
     }
     room.scenes.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The room's sentence \"$text\" is listed more than once") }
+    return problems
+}
+
+/**
+ * What is wrong with Flat hunt: each hunt with [FlatHunt.ADVERTS] adverts and a right one among
+ * them, its wish and adverts each with Items that are defined; no id or text twice.
+ */
+private fun flatHuntProblems(file: String, hunts: List<FlatHuntFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    hunts.forEach { hunt ->
+        if (hunt.adverts.size != FlatHunt.ADVERTS) problems += ContentProblem(file, hunt.id, "The hunt ${hunt.id} has ${hunt.adverts.size} adverts, not ${FlatHunt.ADVERTS}")
+        if (hunt.right !in hunt.adverts.indices) problems += ContentProblem(file, hunt.id, "The hunt ${hunt.id} has no advert ${hunt.right} to be the right one")
+        (listOf(hunt.wish) + hunt.adverts).forEach { text ->
+            if (text.items.isEmpty()) problems += ContentProblem(file, hunt.id, "The text \"${text.text}\" of the hunt ${hunt.id} lists no Items")
+            text.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+                problems += ContentProblem(file, id, "The text \"${text.text}\" of the hunt ${hunt.id} names Item $id, which is not defined")
+            }
+        }
+        hunt.adverts.map { it.text }.repeated().forEach { text -> problems += ContentProblem(file, hunt.id, "The hunt ${hunt.id} has the advert \"$text\" more than once") }
+    }
+    hunts.map { it.id }.repeated().forEach { id -> problems += ContentProblem(file, id, "The hunt $id is listed more than once") }
+    hunts.map { it.wish.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The wish \"$text\" is listed more than once") }
     return problems
 }

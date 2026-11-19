@@ -953,4 +953,24 @@ class PracticeOverAuthoredContentTest {
             positions.run.questions.forEach { assertEquals(3, it.offered.size, it.text) }
         }
     }
+
+    @Test
+    fun `Flat hunt opens in chapter 19, and every wish is said and has one right advert of three`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.FLAT_HUNT }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l19-"), course.path[firstReady - 1].id)
+        assertTrue(course.flatHunt.size >= FlatHunt.QUESTIONS * 2, "${course.flatHunt.size} hunts")
+        course.flatHunt.forEach { hunt ->
+            assertTrue(course.clipFor(hunt.wish.text) != null, "No Clip for ${hunt.wish.text}")
+            assertEquals(FlatHunt.ADVERTS, hunt.adverts.size, hunt.id)
+        }
+        val practice = practiceAfter(course.path.size)
+        repeat(5) {
+            val round = practice.start(practice.setup(Game.FLAT_HUNT, emptyList())) as FlatHuntRound
+            assertEquals(FlatHunt.QUESTIONS, round.total)
+            round.run.questions.forEach { question ->
+                val hunt = course.flatHunt.single { it.id == question.key }
+                assertEquals(hunt.adverts[hunt.right].text, question.adverts[question.right].text)
+            }
+        }
+    }
 }
