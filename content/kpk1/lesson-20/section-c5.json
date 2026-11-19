@@ -1,0 +1,404 @@
+{
+  "id": "kpk1-l20-c5",
+  "section": {
+    "letter": "C",
+    "heading": "Gdzie jesteś? Dokąd jedziesz?",
+    "meaning": {
+      "en": "Where are you? Where are you going?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-c5-t01",
+      "before": "kpk1-l20-c5-e01",
+      "title": {
+        "en": "Na rynku, na rynek"
+      },
+      "body": {
+        "en": "A square, an island and some other places take *na*. *Gdzie?* takes the locative: *jestem na rynku, na dworcu, na Sycylii*. *Dokąd?* takes the accusative: *idę na rynek, na dworzec*, *jadę na Sycylię*. The lakes of Masuria too: *na Mazurach*, *na Mazury*."
+      },
+      "table": {
+        "title": {
+          "en": "Plac, wyspa"
+        },
+        "columns": [
+          {
+            "header": "gdzie?"
+          },
+          {
+            "header": "dokąd?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "na rynku",
+              "na rynek"
+            ]
+          },
+          {
+            "cells": [
+              "na dworcu",
+              "na dworzec"
+            ]
+          },
+          {
+            "cells": [
+              "na peronie",
+              "na peron"
+            ]
+          },
+          {
+            "cells": [
+              "na szczycie",
+              "na szczyt"
+            ]
+          },
+          {
+            "cells": [
+              "na wyspie",
+              "na wyspę"
+            ]
+          },
+          {
+            "cells": [
+              "na Sycylii",
+              "na Sycylię"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c5-e01",
+      "prompt": "na rynek",
+      "options": [
+        {
+          "en": "to the market square"
+        },
+        {
+          "en": "on the market square"
+        },
+        {
+          "en": "to the castle"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-rynek"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-c5-e02",
+      "text": "Idziemy na rynek na kawę.",
+      "meaning": {
+        "en": "We are going to the market square for a coffee."
+      },
+      "distractors": [
+        "Idziemy na rynek na obiad.",
+        "Idziemy do kawiarni na kawę."
+      ],
+      "items": [
+        "isc-idziemy",
+        "na-rynek",
+        "na-kawe"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c5-e03",
+      "text": "Czekam na ciebie na ___ o piątej.",
+      "meaning": {
+        "en": "I am waiting for you in the market square at five."
+      },
+      "gaps": [
+        [
+          "rynku"
+        ]
+      ],
+      "distractors": [
+        "rynek",
+        "rynkiem"
+      ],
+      "items": [
+        "czekac-czekam",
+        "na-ciebie",
+        "na-rynku",
+        "o-godz",
+        "piata"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c5-e04",
+      "prompt": "Sycylia",
+      "options": [
+        {
+          "en": "Sardinia"
+        },
+        {
+          "en": "Sicily (na Sycylii: in Sicily; na Sycylię: to Sicily)"
+        },
+        {
+          "en": "Malta"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sycylia"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-c5-e05",
+      "prompt": {
+        "en": "in summer we are going to Sicily"
+      },
+      "acceptedAnswers": [
+        "latem jedziemy na Sycylię"
+      ],
+      "distractors": [
+        "Sycylii",
+        "do"
+      ],
+      "items": [
+        "latem",
+        "jechac-jedziemy",
+        "sycylia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c5-e06",
+      "prompt": "na Mazury",
+      "options": [
+        {
+          "en": "in Masuria"
+        },
+        {
+          "en": "to the mountains"
+        },
+        {
+          "en": "to Masuria"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-mazury"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-c5-e07",
+      "pairs": [
+        {
+          "polish": "na rynku",
+          "meaning": {
+            "en": "in the market square"
+          }
+        },
+        {
+          "polish": "na rynek",
+          "meaning": {
+            "en": "to the market square"
+          }
+        },
+        {
+          "polish": "na peronie",
+          "meaning": {
+            "en": "on the platform"
+          }
+        },
+        {
+          "polish": "na peron",
+          "meaning": {
+            "en": "to the platform"
+          }
+        },
+        {
+          "polish": "na Mazury",
+          "meaning": {
+            "en": "to Masuria"
+          }
+        }
+      ],
+      "items": [
+        "na-rynku",
+        "na-rynek",
+        "peron",
+        "na-mazury"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-c5-e08",
+      "prompt": {
+        "en": "to the island"
+      },
+      "acceptedAnswers": [
+        "na wyspę"
+      ],
+      "items": [
+        "wyspa"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-c5-e09",
+      "acceptedAnswers": [
+        "jedziemy na Mazury"
+      ],
+      "meaning": {
+        "en": "we are going to Masuria"
+      },
+      "items": [
+        "jechac-jedziemy",
+        "na-mazury"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c5-e10",
+      "text": "Jestem już na ___. Pociąg odjeżdża o ósmej.",
+      "meaning": {
+        "en": "I am already on the platform. The train leaves at eight."
+      },
+      "gaps": [
+        [
+          "peronie"
+        ]
+      ],
+      "distractors": [
+        "peron",
+        "peronu"
+      ],
+      "items": [
+        "byc-jestem",
+        "juz",
+        "peron",
+        "pociag",
+        "odjezdzac-odjezdza",
+        "o-godz",
+        "osma"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-c5-e11",
+      "lines": [
+        "Na Mazurach jest bardzo dużo jezior.",
+        "Na wyspie na jeziorze jest stary zamek.",
+        "W sierpniu jedziemy na Mazury."
+      ],
+      "meaning": {
+        "en": "The lakes."
+      },
+      "statements": [
+        {
+          "text": "Na Mazurach jest dużo jezior.",
+          "meaning": {
+            "en": "There are a lot of lakes in Masuria."
+          },
+          "true": true
+        },
+        {
+          "text": "Zamek jest na szczycie.",
+          "meaning": {
+            "en": "The castle is on the summit."
+          },
+          "true": false
+        },
+        {
+          "text": "W sierpniu jadą na Mazury.",
+          "meaning": {
+            "en": "In August they are going to Masuria."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "na-mazurach",
+        "byc-jest",
+        "bardzo",
+        "duzo",
+        "jezioro",
+        "wyspa",
+        "stary",
+        "zamek",
+        "sierpien",
+        "jechac-jedziemy",
+        "na-mazury"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c5-e12",
+      "text": "Idę na dworzec, a potem na ___ numer dwa.",
+      "meaning": {
+        "en": "I am going to the station, and then to platform two."
+      },
+      "gaps": [
+        [
+          "peron"
+        ]
+      ],
+      "distractors": [
+        "peronie",
+        "peronu"
+      ],
+      "items": [
+        "isc-ide",
+        "dworzec",
+        "a",
+        "potem",
+        "peron",
+        "numer",
+        "dwa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-c5-e13",
+      "prompt": {
+        "en": "on Sicily it is warm"
+      },
+      "acceptedAnswers": [
+        "na Sycylii jest ciepło"
+      ],
+      "distractors": [
+        "Sycylię",
+        "zimno"
+      ],
+      "items": [
+        "sycylia",
+        "byc-jest",
+        "cieplo"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-c5-e14",
+      "text": "Na wyspie są piękne lasy.",
+      "meaning": {
+        "en": "On the island there are beautiful forests."
+      },
+      "distractors": [
+        "Na wyspę jedziemy w sobotę.",
+        "Na wyspie jest stary zamek."
+      ],
+      "items": [
+        "wyspa",
+        "byc-sa",
+        "piekny",
+        "las"
+      ]
+    }
+  ]
+}

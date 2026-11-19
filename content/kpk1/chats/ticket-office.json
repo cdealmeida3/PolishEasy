@@ -1,0 +1,229 @@
+{
+  "id": "chat-ticket-office",
+  "person": "Kasjerka",
+  "title": {
+    "en": "A ticket to Toruń"
+  },
+  "scene": {
+    "en": "You are at the railway station in Kraków, at the ticket office. You want to go to Toruń for the weekend and come back on Sunday. You pay the full price, you travel second class and you would like to pay by card. The cashier is a stranger, so you speak formally."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "slucham",
+    "poprosze",
+    "bilet",
+    "torun",
+    "rozklad-jazdy",
+    "w-jedna-strone",
+    "czy",
+    "tam-i-z-powrotem",
+    "prosze",
+    "przez-warszawe",
+    "normalny",
+    "ulgowy",
+    "ktora-klasa",
+    "druga",
+    "z-drugiego-peronu",
+    "sto",
+    "czterdziesci",
+    "dziewiec",
+    "zloty",
+    "czy-mozna-placic-karta",
+    "ile-trwa-podroz",
+    "tak",
+    "oczywiscie",
+    "z-ktorego-peronu",
+    "odjezdzac-odjezdza",
+    "ten",
+    "pociag",
+    "o-cene-prosze-pytac",
+    "w-kasie",
+    "dziekuje",
+    "do-widzenia"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry, słucham?",
+      "meaning": {
+        "en": "Hello, how can I help?"
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry, poproszę bilet do Torunia.",
+          "meaning": {
+            "en": "Hello, a ticket to Toruń, please."
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Dzień dobry, poproszę bilet do Torunia.",
+            "Dzień dobry. Poproszę bilet do Torunia."
+          ]
+        },
+        {
+          "text": "Dzień dobry, poproszę rozkład jazdy.",
+          "meaning": {
+            "en": "Hello, a timetable, please."
+          },
+          "note": {
+            "en": "The timetable is on the wall and at the information desk. At the ticket office you buy a ticket: *poproszę bilet do Torunia*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "W jedną stronę czy tam i z powrotem?",
+      "meaning": {
+        "en": "One way or return?"
+      },
+      "replies": [
+        {
+          "text": "Tam i z powrotem, proszę.",
+          "meaning": {
+            "en": "Return, please."
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Tam i z powrotem, proszę."
+          ]
+        },
+        {
+          "text": "Przez Warszawę, proszę.",
+          "meaning": {
+            "en": "Via Warsaw, please."
+          },
+          "note": {
+            "en": "She asked if you are coming back. You return on Sunday, so the answer is *tam i z powrotem*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Normalny czy ulgowy?",
+      "meaning": {
+        "en": "Full price or reduced?"
+      },
+      "replies": [
+        {
+          "text": "Normalny, proszę.",
+          "meaning": {
+            "en": "Full price, please."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Normalny, proszę."
+          ]
+        },
+        {
+          "text": "Druga, proszę.",
+          "meaning": {
+            "en": "Second, please."
+          },
+          "note": {
+            "en": "That answers *która klasa?*. Here she asks about the price: *normalny* is full price, *ulgowy* is with a discount."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "Która klasa?",
+      "meaning": {
+        "en": "Which class?"
+      },
+      "replies": [
+        {
+          "text": "Druga, proszę.",
+          "meaning": {
+            "en": "Second, please."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Druga, proszę."
+          ]
+        },
+        {
+          "text": "Z drugiego peronu.",
+          "meaning": {
+            "en": "From platform two."
+          },
+          "note": {
+            "en": "A *peron* is a platform. *Która klasa?* asks which class: *druga*, second."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "Sto czterdzieści dziewięć złotych.",
+      "meaning": {
+        "en": "149 złoty."
+      },
+      "replies": [
+        {
+          "text": "Czy można płacić kartą?",
+          "meaning": {
+            "en": "Can I pay by card?"
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Czy można płacić kartą?"
+          ]
+        },
+        {
+          "text": "Ile trwa podróż?",
+          "meaning": {
+            "en": "How long is the journey?"
+          },
+          "note": {
+            "en": "She has just told you the price, so now you pay. You want to pay by card: *czy można płacić kartą?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "Tak, oczywiście. Proszę.",
+      "meaning": {
+        "en": "Yes, of course. Here you are."
+      },
+      "replies": [
+        {
+          "text": "Z którego peronu odjeżdża ten pociąg?",
+          "meaning": {
+            "en": "Which platform does this train leave from?"
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Z którego peronu odjeżdża ten pociąg?"
+          ]
+        },
+        {
+          "text": "O cenę proszę pytać w kasie.",
+          "meaning": {
+            "en": "Please ask at the ticket office about the price."
+          },
+          "note": {
+            "en": "That is what the information desk says to a passenger. You have the ticket now, so ask about the platform: *z którego peronu?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Z drugiego peronu. Dziękuję, do widzenia!",
+      "meaning": {
+        "en": "From platform two. Thank you, goodbye!"
+      }
+    }
+  ]
+}

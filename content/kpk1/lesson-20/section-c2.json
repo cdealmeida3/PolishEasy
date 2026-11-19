@@ -1,0 +1,458 @@
+{
+  "id": "kpk1-l20-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Gdzie jesteś? Dokąd jedziesz?",
+    "meaning": {
+      "en": "Where are you? Where are you going?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-c2-t01",
+      "before": "kpk1-l20-c2-e01",
+      "title": {
+        "en": "W Krakowie, do Krakowa"
+      },
+      "body": {
+        "en": "For most cities and countries, and many regions and buildings, *gdzie?* takes *w* and the locative, and *dokąd?* takes *do* and the genitive: *jestem w Krakowie, jadę do Krakowa*. The same goes for *w Polsce, do Polski* and *w parku, do parku*. Some countries are plural: *w Niemczech, do Niemiec; w Czechach, do Czech*. Some places take *na* instead, like *na dworcu* and *na Mazurach*: they come in the next sets."
+      },
+      "table": {
+        "title": {
+          "en": "Miasto, kraj, budynek"
+        },
+        "columns": [
+          {
+            "header": "gdzie?"
+          },
+          {
+            "header": "dokąd?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "w Krakowie",
+              "do Krakowa"
+            ]
+          },
+          {
+            "cells": [
+              "w Toruniu",
+              "do Torunia"
+            ]
+          },
+          {
+            "cells": [
+              "w Polsce",
+              "do Polski"
+            ]
+          },
+          {
+            "cells": [
+              "w Niemczech",
+              "do Niemiec"
+            ]
+          },
+          {
+            "cells": [
+              "w Wieliczce",
+              "do Wieliczki"
+            ]
+          },
+          {
+            "cells": [
+              "w parku",
+              "do parku"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c2-e01",
+      "prompt": "do Polski",
+      "options": [
+        {
+          "en": "in Poland"
+        },
+        {
+          "en": "from Poland"
+        },
+        {
+          "en": "to Poland"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-polski"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-c2-e02",
+      "text": "W piątek jadę do Polski.",
+      "meaning": {
+        "en": "On Friday I am going to Poland."
+      },
+      "distractors": [
+        "W piątek jestem w Polsce.",
+        "W piątek jadę z Polski."
+      ],
+      "items": [
+        "piatek",
+        "jechac-jade",
+        "do-polski"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c2-e03",
+      "prompt": "w Niemczech",
+      "options": [
+        {
+          "en": "in Germany"
+        },
+        {
+          "en": "to Germany"
+        },
+        {
+          "en": "from Germany"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-niemczech"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c2-e04",
+      "prompt": "do Niemiec",
+      "options": [
+        {
+          "en": "in Germany"
+        },
+        {
+          "en": "to Germany"
+        },
+        {
+          "en": "in Austria"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "do-niemiec"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c2-e05",
+      "text": "Mieszkam w ___, ale często jeżdżę do Polski.",
+      "meaning": {
+        "en": "I live in Germany, but I often go to Poland."
+      },
+      "gaps": [
+        [
+          "Niemczech"
+        ]
+      ],
+      "distractors": [
+        "Niemiec",
+        "Niemcy"
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "w-niemczech",
+        "ale",
+        "czesto",
+        "jezdzic-jezdze",
+        "do-polski"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c2-e06",
+      "prompt": "w Czechach",
+      "options": [
+        {
+          "en": "to the Czech Republic"
+        },
+        {
+          "en": "in Slovakia"
+        },
+        {
+          "en": "in the Czech Republic"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-czechach"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c2-e07",
+      "prompt": "do Czech",
+      "options": [
+        {
+          "en": "to the Czech Republic"
+        },
+        {
+          "en": "in the Czech Republic"
+        },
+        {
+          "en": "to Germany"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "do-czech"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-c2-e08",
+      "prompt": {
+        "en": "we are going to the Czech Republic"
+      },
+      "acceptedAnswers": [
+        "jedziemy do Czech"
+      ],
+      "distractors": [
+        "Czechach",
+        "w"
+      ],
+      "items": [
+        "jechac-jedziemy",
+        "do-czech"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c2-e09",
+      "prompt": "Europa",
+      "options": [
+        {
+          "en": "Poland"
+        },
+        {
+          "en": "Europe (w Europie: in Europe; do Europy: to Europe)"
+        },
+        {
+          "en": "the world"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "europa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c2-e10",
+      "prompt": "Małopolska",
+      "options": [
+        {
+          "en": "Mazury"
+        },
+        {
+          "en": "Pomorze"
+        },
+        {
+          "en": "Małopolska, the region around Kraków (w Małopolsce: in Małopolska; do Małopolski: to Małopolska)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "malopolska"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c2-e11",
+      "prompt": "Wieliczka",
+      "options": [
+        {
+          "en": "Wieliczka, a town with an old salt mine (w Wieliczce: in Wieliczka; do Wieliczki: to Wieliczka)"
+        },
+        {
+          "en": "Toruń"
+        },
+        {
+          "en": "Zakopane"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wieliczka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-c2-e12",
+      "pairs": [
+        {
+          "polish": "w Polsce",
+          "meaning": {
+            "en": "in Poland"
+          }
+        },
+        {
+          "polish": "do Polski",
+          "meaning": {
+            "en": "to Poland"
+          }
+        },
+        {
+          "polish": "w Niemczech",
+          "meaning": {
+            "en": "in Germany"
+          }
+        },
+        {
+          "polish": "do Niemiec",
+          "meaning": {
+            "en": "to Germany"
+          }
+        },
+        {
+          "polish": "w Czechach",
+          "meaning": {
+            "en": "in the Czech Republic"
+          }
+        }
+      ],
+      "items": [
+        "w-polsce",
+        "do-polski",
+        "w-niemczech",
+        "do-niemiec",
+        "w-czechach"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-c2-e13",
+      "prompt": {
+        "en": "to Wieliczka"
+      },
+      "acceptedAnswers": [
+        "do Wieliczki"
+      ],
+      "items": [
+        "wieliczka"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-c2-e14",
+      "acceptedAnswers": [
+        "w Wieliczce jest kopalnia soli"
+      ],
+      "meaning": {
+        "en": "in Wieliczka there is a salt mine"
+      },
+      "items": [
+        "wieliczka",
+        "byc-jest",
+        "kopalnia-soli"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c2-e15",
+      "text": "Kraków i Wieliczka leżą w ___.",
+      "meaning": {
+        "en": "Kraków and Wieliczka are in Małopolska."
+      },
+      "gaps": [
+        [
+          "Małopolsce"
+        ]
+      ],
+      "distractors": [
+        "Małopolski",
+        "Małopolska"
+      ],
+      "items": [
+        "krakow",
+        "i",
+        "wieliczka",
+        "lezec-leza",
+        "malopolska"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-c2-e16",
+      "lines": [
+        "Polska leży w Europie Środkowej.",
+        "Kraków leży w Małopolsce.",
+        "Z Krakowa do Wieliczki jest niedaleko."
+      ],
+      "meaning": {
+        "en": "Where things are."
+      },
+      "statements": [
+        {
+          "text": "Polska leży w Europie.",
+          "meaning": {
+            "en": "Poland is in Europe."
+          },
+          "true": true
+        },
+        {
+          "text": "Kraków leży na Mazurach.",
+          "meaning": {
+            "en": "Kraków is in Masuria."
+          },
+          "true": false
+        },
+        {
+          "text": "Wieliczka jest niedaleko Krakowa.",
+          "meaning": {
+            "en": "Wieliczka is not far from Kraków."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "polska-kraj",
+        "lezec-lezy",
+        "w-europie-srodkowej",
+        "europa",
+        "krakow",
+        "malopolska",
+        "do-krakowa",
+        "wieliczka",
+        "byc-jest",
+        "niedaleko"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-c2-e17",
+      "prompt": {
+        "en": "a trip to Małopolska"
+      },
+      "acceptedAnswers": [
+        "wycieczka do Małopolski"
+      ],
+      "distractors": [
+        "Małopolsce",
+        "w"
+      ],
+      "items": [
+        "wycieczka",
+        "malopolska"
+      ]
+    }
+  ]
+}

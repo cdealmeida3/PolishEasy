@@ -1,0 +1,475 @@
+{
+  "id": "kpk1-l20-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Dokąd można pojechać na weekend?",
+    "meaning": {
+      "en": "Where can you go for the weekend?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-a2-t01",
+      "before": "kpk1-l20-a2-e01",
+      "title": {
+        "en": "Na północnym zachodzie"
+      },
+      "body": {
+        "en": "Between two points the first one becomes a describing word: *północny zachód* (north-west), *południowy wschód* (south-east). With *na* both take the locative: *na północnym zachodzie*, *na południowym wschodzie*. *Szczecin leży na północnym zachodzie, a Lublin na wschodzie*."
+      },
+      "table": {
+        "title": {
+          "en": "Gdzie to jest?"
+        },
+        "columns": [
+          {
+            "header": "kierunek"
+          },
+          {
+            "header": "gdzie?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "północ",
+              "na północy"
+            ]
+          },
+          {
+            "cells": [
+              "południe",
+              "na południu"
+            ]
+          },
+          {
+            "cells": [
+              "wschód",
+              "na wschodzie"
+            ]
+          },
+          {
+            "cells": [
+              "zachód",
+              "na zachodzie"
+            ]
+          },
+          {
+            "cells": [
+              "północny zachód",
+              "na północnym zachodzie"
+            ]
+          },
+          {
+            "cells": [
+              "południowy wschód",
+              "na południowym wschodzie"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a2-e01",
+      "prompt": "na północnym zachodzie",
+      "options": [
+        {
+          "en": "in the south-east"
+        },
+        {
+          "en": "in the north-west"
+        },
+        {
+          "en": "in the north-east"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-polnocnym-zachodzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a2-e02",
+      "prompt": "Szczecin",
+      "options": [
+        {
+          "en": "Lublin"
+        },
+        {
+          "en": "Poznań"
+        },
+        {
+          "en": "Szczecin (w Szczecinie: in Szczecin; do Szczecina: to Szczecin)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szczecin"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-a2-e03",
+      "text": "Szczecin leży na północnym zachodzie.",
+      "meaning": {
+        "en": "Szczecin is in the north-west."
+      },
+      "distractors": [
+        "Szczecin leży na północnym wschodzie.",
+        "Szczecin leży na południu."
+      ],
+      "items": [
+        "szczecin",
+        "lezec-lezy",
+        "na-polnocnym-zachodzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a2-e04",
+      "prompt": "na północnym wschodzie",
+      "options": [
+        {
+          "en": "in the north-east"
+        },
+        {
+          "en": "in the south-west"
+        },
+        {
+          "en": "in the north-west"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-polnocnym-wschodzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a2-e05",
+      "prompt": "na południowym zachodzie",
+      "options": [
+        {
+          "en": "in the north-east"
+        },
+        {
+          "en": "in the south-west"
+        },
+        {
+          "en": "in the south-east"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "na-poludniowym-zachodzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a2-e06",
+      "prompt": "Wrocław",
+      "options": [
+        {
+          "en": "Gdańsk"
+        },
+        {
+          "en": "Szczecin"
+        },
+        {
+          "en": "Wrocław (we Wrocławiu: in Wrocław; do Wrocławia: to Wrocław)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wroclaw"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a2-e07",
+      "text": "Wrocław leży na ___ zachodzie.",
+      "meaning": {
+        "en": "Wrocław is in the south-west."
+      },
+      "gaps": [
+        [
+          "południowym"
+        ]
+      ],
+      "distractors": [
+        "północnym",
+        "południe"
+      ],
+      "items": [
+        "wroclaw",
+        "lezec-lezy",
+        "na-poludniowym-zachodzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a2-e08",
+      "prompt": "na południowym wschodzie",
+      "options": [
+        {
+          "en": "in the south-east"
+        },
+        {
+          "en": "in the north-west"
+        },
+        {
+          "en": "in the south-west"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-poludniowym-wschodzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a2-e09",
+      "prompt": "Poznań",
+      "options": [
+        {
+          "en": "Wrocław"
+        },
+        {
+          "en": "Poznań (w Poznaniu: in Poznań; do Poznania: to Poznań)"
+        },
+        {
+          "en": "Kraków"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "poznan"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a2-e10",
+      "prompt": "Lublin",
+      "options": [
+        {
+          "en": "Poznań"
+        },
+        {
+          "en": "Gdańsk"
+        },
+        {
+          "en": "Lublin (w Lublinie: in Lublin; do Lublina: to Lublin)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "lublin"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a2-e11",
+      "prompt": {
+        "en": "Lublin is in the east"
+      },
+      "acceptedAnswers": [
+        "Lublin leży na wschodzie"
+      ],
+      "distractors": [
+        "zachodzie",
+        "jest"
+      ],
+      "items": [
+        "lublin",
+        "lezec-lezy",
+        "wschod"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-a2-e12",
+      "pairs": [
+        {
+          "polish": "na północnym zachodzie",
+          "meaning": {
+            "en": "in the north-west"
+          }
+        },
+        {
+          "polish": "na północnym wschodzie",
+          "meaning": {
+            "en": "in the north-east"
+          }
+        },
+        {
+          "polish": "na południowym zachodzie",
+          "meaning": {
+            "en": "in the south-west"
+          }
+        },
+        {
+          "polish": "na południowym wschodzie",
+          "meaning": {
+            "en": "in the south-east"
+          }
+        },
+        {
+          "polish": "na zachodzie",
+          "meaning": {
+            "en": "in the west"
+          }
+        }
+      ],
+      "items": [
+        "na-polnocnym-zachodzie",
+        "na-polnocnym-wschodzie",
+        "na-poludniowym-zachodzie",
+        "na-poludniowym-wschodzie",
+        "zachod"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-a2-e13",
+      "prompt": {
+        "en": "in the south-east"
+      },
+      "acceptedAnswers": [
+        "na południowym wschodzie"
+      ],
+      "items": [
+        "na-poludniowym-wschodzie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-a2-e14",
+      "acceptedAnswers": [
+        "na północnym wschodzie"
+      ],
+      "meaning": {
+        "en": "in the north-east"
+      },
+      "items": [
+        "na-polnocnym-wschodzie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a2-e15",
+      "text": "Poznań leży na ___.",
+      "meaning": {
+        "en": "Poznań is in the west."
+      },
+      "gaps": [
+        [
+          "zachodzie"
+        ]
+      ],
+      "distractors": [
+        "zachód",
+        "wschodzie"
+      ],
+      "items": [
+        "poznan",
+        "lezec-lezy",
+        "zachod"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l20-a2-e16",
+      "lines": [
+        "Gdzie leży Wrocław?",
+        "Wrocław leży na południowym zachodzie.",
+        "A Lublin?",
+        "Lublin leży na wschodzie."
+      ],
+      "meaning": {
+        "en": "Where are the cities?"
+      },
+      "items": [
+        "gdzie",
+        "lezec-lezy",
+        "wroclaw",
+        "na-poludniowym-zachodzie",
+        "a",
+        "lublin",
+        "wschod"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-a2-e17",
+      "lines": [
+        "Szczecin leży na północnym zachodzie.",
+        "Poznań leży na zachodzie.",
+        "Lublin leży na wschodzie."
+      ],
+      "meaning": {
+        "en": "Where the cities are."
+      },
+      "statements": [
+        {
+          "text": "Szczecin leży na wschodzie.",
+          "meaning": {
+            "en": "Szczecin is in the east."
+          },
+          "true": false
+        },
+        {
+          "text": "Poznań leży na zachodzie.",
+          "meaning": {
+            "en": "Poznań is in the west."
+          },
+          "true": true
+        },
+        {
+          "text": "Lublin leży na wschodzie.",
+          "meaning": {
+            "en": "Lublin is in the east."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "szczecin",
+        "lezec-lezy",
+        "na-polnocnym-zachodzie",
+        "poznan",
+        "zachod",
+        "lublin",
+        "wschod"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a2-e18",
+      "prompt": {
+        "en": "Wrocław and Poznań are in the west"
+      },
+      "acceptedAnswers": [
+        "Wrocław i Poznań leżą na zachodzie"
+      ],
+      "distractors": [
+        "leży",
+        "wschodzie"
+      ],
+      "items": [
+        "wroclaw",
+        "i",
+        "poznan",
+        "lezec-leza",
+        "zachod"
+      ]
+    }
+  ]
+}

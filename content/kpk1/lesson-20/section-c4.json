@@ -1,0 +1,398 @@
+{
+  "id": "kpk1-l20-c4",
+  "section": {
+    "letter": "C",
+    "heading": "Gdzie jesteś? Dokąd jedziesz?",
+    "meaning": {
+      "en": "Where are you? Where are you going?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-c4-t01",
+      "before": "kpk1-l20-c4-e01",
+      "title": {
+        "en": "Nad morzem, nad morze"
+      },
+      "body": {
+        "en": "By a sea, a lake or a river you use *nad*. *Gdzie?* takes the instrumental: *jesteśmy nad morzem, nad Wisłą*. *Dokąd?* takes the accusative: *jedziemy nad morze, nad Wisłę*. Poland's sea is *Bałtyk*; the warm *Adriatyk* is further south, and *Morskie Oko* is a famous lake in the Tatras."
+      },
+      "table": {
+        "title": {
+          "en": "Woda"
+        },
+        "columns": [
+          {
+            "header": "gdzie?"
+          },
+          {
+            "header": "dokąd?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "nad Bałtykiem",
+              "nad Bałtyk"
+            ]
+          },
+          {
+            "cells": [
+              "nad morzem",
+              "nad morze"
+            ]
+          },
+          {
+            "cells": [
+              "nad jeziorem",
+              "nad jezioro"
+            ]
+          },
+          {
+            "cells": [
+              "nad Wisłą",
+              "nad Wisłę"
+            ]
+          },
+          {
+            "cells": [
+              "nad Dunajcem",
+              "nad Dunajec"
+            ]
+          },
+          {
+            "cells": [
+              "nad Morskim Okiem",
+              "nad Morskie Oko"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-c4-e01",
+      "text": "W lipcu jedziemy nad morze.",
+      "meaning": {
+        "en": "In July we are going to the seaside."
+      },
+      "distractors": [
+        "W lipcu jesteśmy nad morzem.",
+        "W lipcu jedziemy nad jezioro."
+      ],
+      "items": [
+        "lipiec",
+        "jechac-jedziemy",
+        "morze"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c4-e02",
+      "text": "Jestem nad ___. Woda jest zimna!",
+      "meaning": {
+        "en": "I am at the Baltic. The water is cold!"
+      },
+      "gaps": [
+        [
+          "Bałtykiem"
+        ]
+      ],
+      "distractors": [
+        "Bałtyk",
+        "Bałtyku"
+      ],
+      "items": [
+        "byc-jestem",
+        "baltyk",
+        "woda",
+        "byc-jest",
+        "zimny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c4-e03",
+      "prompt": "Dunajec",
+      "options": [
+        {
+          "en": "the Dunajec, a mountain river (nad Dunajcem: by the Dunajec; nad Dunajec: to the Dunajec)"
+        },
+        {
+          "en": "the Vistula"
+        },
+        {
+          "en": "the Baltic"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dunajec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c4-e04",
+      "prompt": "Adriatyk",
+      "options": [
+        {
+          "en": "the Baltic"
+        },
+        {
+          "en": "the Adriatic Sea (nad Adriatykiem: by the Adriatic; nad Adriatyk: to the Adriatic)"
+        },
+        {
+          "en": "Lake Morskie Oko"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "adriatyk"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-c4-e05",
+      "prompt": {
+        "en": "I would like to go to the Adriatic"
+      },
+      "acceptedAnswers": [
+        "chciałabym jechać nad Adriatyk"
+      ],
+      "distractors": [
+        "Adriatykiem",
+        "do"
+      ],
+      "items": [
+        "chcialabym",
+        "jechac",
+        "adriatyk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c4-e06",
+      "prompt": "Morskie Oko",
+      "options": [
+        {
+          "en": "the Dunajec"
+        },
+        {
+          "en": "the Adriatic"
+        },
+        {
+          "en": "Morskie Oko, a lake in the Tatras (nad Morskim Okiem: by Morskie Oko; nad Morskie Oko: to Morskie Oko)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "morskie-oko"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-c4-e07",
+      "pairs": [
+        {
+          "polish": "nad morzem",
+          "meaning": {
+            "en": "by the sea"
+          }
+        },
+        {
+          "polish": "nad morze",
+          "meaning": {
+            "en": "to the seaside"
+          }
+        },
+        {
+          "polish": "nad Wisłą",
+          "meaning": {
+            "en": "by the Vistula"
+          }
+        },
+        {
+          "polish": "nad Dunajec",
+          "meaning": {
+            "en": "to the Dunajec"
+          }
+        },
+        {
+          "polish": "nad Morskim Okiem",
+          "meaning": {
+            "en": "by Morskie Oko"
+          }
+        }
+      ],
+      "items": [
+        "morze",
+        "wisla",
+        "dunajec",
+        "morskie-oko"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-c4-e08",
+      "prompt": {
+        "en": "to the lake"
+      },
+      "acceptedAnswers": [
+        "nad jezioro"
+      ],
+      "items": [
+        "jezioro"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-c4-e09",
+      "acceptedAnswers": [
+        "spaceruję nad Wisłą"
+      ],
+      "meaning": {
+        "en": "I am walking by the Vistula"
+      },
+      "items": [
+        "spacerowac-spaceruje",
+        "wisla"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c4-e10",
+      "text": "W Tatrach idziemy szlakiem nad Morskie ___.",
+      "meaning": {
+        "en": "In the Tatras we walk along the trail to Morskie Oko."
+      },
+      "gaps": [
+        [
+          "Oko"
+        ]
+      ],
+      "distractors": [
+        "Okiem",
+        "Oka"
+      ],
+      "items": [
+        "tatry",
+        "isc-idziemy",
+        "szlak",
+        "morskie-oko"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-c4-e11",
+      "lines": [
+        "Latem jedziemy nad Bałtyk.",
+        "Woda jest zimna, ale plaże są piękne.",
+        "Wieczorem spacerujemy nad morzem."
+      ],
+      "meaning": {
+        "en": "Summer at the Baltic."
+      },
+      "statements": [
+        {
+          "text": "Latem jadą nad Bałtyk.",
+          "meaning": {
+            "en": "In summer they go to the Baltic."
+          },
+          "true": true
+        },
+        {
+          "text": "Woda w Bałtyku jest ciepła.",
+          "meaning": {
+            "en": "The water in the Baltic is warm."
+          },
+          "true": false
+        },
+        {
+          "text": "Wieczorem spacerują nad morzem.",
+          "meaning": {
+            "en": "In the evening they walk by the sea."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "latem",
+        "jechac-jedziemy",
+        "baltyk",
+        "woda",
+        "byc-jest",
+        "zimny",
+        "ale",
+        "byc-sa",
+        "piekny",
+        "wieczorem",
+        "morze"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c4-e12",
+      "text": "Mieszkam w Krakowie, nad ___.",
+      "meaning": {
+        "en": "I live in Kraków, by the Vistula."
+      },
+      "gaps": [
+        [
+          "Wisłą"
+        ]
+      ],
+      "distractors": [
+        "Wisłę",
+        "Wisła"
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "w-krakowie",
+        "wisla"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-c4-e13",
+      "prompt": {
+        "en": "the Dunajec is a beautiful river"
+      },
+      "acceptedAnswers": [
+        "Dunajec to piękna rzeka"
+      ],
+      "distractors": [
+        "Dunajcem",
+        "jezioro"
+      ],
+      "items": [
+        "dunajec",
+        "to",
+        "piekny",
+        "rzeka"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-c4-e14",
+      "text": "Nad Dunajcem jest bardzo pięknie.",
+      "meaning": {
+        "en": "It is very beautiful by the Dunajec."
+      },
+      "distractors": [
+        "Nad Dunajec jedziemy w sobotę.",
+        "Nad Wisłą jest bardzo pięknie."
+      ],
+      "items": [
+        "dunajec",
+        "byc-jest",
+        "bardzo",
+        "pieknie"
+      ]
+    }
+  ]
+}

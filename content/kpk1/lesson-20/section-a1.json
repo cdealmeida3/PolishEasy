@@ -1,0 +1,382 @@
+{
+  "id": "kpk1-l20-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Dokąd można pojechać na weekend?",
+    "meaning": {
+      "en": "Where can you go for the weekend?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-a1-t01",
+      "before": "kpk1-l20-a1-e01",
+      "title": {
+        "en": "Północ, południe, wschód, zachód"
+      },
+      "body": {
+        "en": "The four points of the compass are *północ* (north), *południe* (south), *wschód* (east) and *zachód* (west). Where a place is goes with *na* and the locative: *na północy*, *na południu*, *na wschodzie*, *na zachodzie*. *Gdańsk leży na północy*: it is in the north. To plan a trip ask *dokąd można pojechać?*: where can you go?"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a1-e01",
+      "prompt": "można",
+      "options": [
+        {
+          "en": "one can, you can (dokąd można pojechać?: where can you go?)"
+        },
+        {
+          "en": "you must"
+        },
+        {
+          "en": "it is far"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mozna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a1-e02",
+      "prompt": "pojechać",
+      "options": [
+        {
+          "en": "to stay"
+        },
+        {
+          "en": "to go (by car, train or bus), to travel (pojechać na weekend: to go away for the weekend)"
+        },
+        {
+          "en": "to walk"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pojechac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-a1-e03",
+      "text": "Dokąd można pojechać na weekend?",
+      "meaning": {
+        "en": "Where can you go for the weekend?"
+      },
+      "distractors": [
+        "Gdzie można zjeść na weekend?",
+        "Dokąd jedziesz w piątek?"
+      ],
+      "items": [
+        "dokad",
+        "mozna",
+        "pojechac",
+        "na-weekend"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a1-e04",
+      "prompt": "północ",
+      "options": [
+        {
+          "en": "the south"
+        },
+        {
+          "en": "the east"
+        },
+        {
+          "en": "the north (na północy: in the north)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "polnoc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a1-e05",
+      "prompt": "południe",
+      "options": [
+        {
+          "en": "the south (na południu: in the south)"
+        },
+        {
+          "en": "the north"
+        },
+        {
+          "en": "the west"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "poludnie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a1-e06",
+      "prompt": "Gdańsk",
+      "options": [
+        {
+          "en": "Kraków"
+        },
+        {
+          "en": "Gdańsk (w Gdańsku: in Gdańsk; do Gdańska: to Gdańsk)"
+        },
+        {
+          "en": "Warsaw"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "gdansk"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a1-e07",
+      "text": "Gdańsk leży na ___.",
+      "meaning": {
+        "en": "Gdańsk is in the north."
+      },
+      "gaps": [
+        [
+          "północy"
+        ]
+      ],
+      "distractors": [
+        "północ",
+        "południe"
+      ],
+      "items": [
+        "gdansk",
+        "lezec-lezy",
+        "polnoc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a1-e08",
+      "prompt": "wschód",
+      "options": [
+        {
+          "en": "the west"
+        },
+        {
+          "en": "the north"
+        },
+        {
+          "en": "the east (na wschodzie: in the east)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wschod"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a1-e09",
+      "prompt": "zachód",
+      "options": [
+        {
+          "en": "the west (na zachodzie: in the west)"
+        },
+        {
+          "en": "the east"
+        },
+        {
+          "en": "the south"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zachod"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a1-e10",
+      "prompt": {
+        "en": "Kraków is in the south"
+      },
+      "acceptedAnswers": [
+        "Kraków leży na południu"
+      ],
+      "distractors": [
+        "północy",
+        "jest"
+      ],
+      "items": [
+        "krakow",
+        "lezec-lezy",
+        "poludnie"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-a1-e11",
+      "pairs": [
+        {
+          "polish": "północ",
+          "meaning": {
+            "en": "the north"
+          }
+        },
+        {
+          "polish": "południe",
+          "meaning": {
+            "en": "the south"
+          }
+        },
+        {
+          "polish": "wschód",
+          "meaning": {
+            "en": "the east"
+          }
+        },
+        {
+          "polish": "zachód",
+          "meaning": {
+            "en": "the west"
+          }
+        },
+        {
+          "polish": "dokąd?",
+          "meaning": {
+            "en": "where to?"
+          }
+        }
+      ],
+      "items": [
+        "polnoc",
+        "poludnie",
+        "wschod",
+        "zachod",
+        "dokad"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-a1-e12",
+      "prompt": {
+        "en": "in the east"
+      },
+      "acceptedAnswers": [
+        "na wschodzie"
+      ],
+      "items": [
+        "wschod"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-a1-e13",
+      "acceptedAnswers": [
+        "na zachodzie"
+      ],
+      "meaning": {
+        "en": "in the west"
+      },
+      "items": [
+        "zachod"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a1-e14",
+      "text": "Dokąd można ___ na weekend? Do Gdańska!",
+      "meaning": {
+        "en": "Where can you go for the weekend? To Gdańsk!"
+      },
+      "gaps": [
+        [
+          "pojechać"
+        ]
+      ],
+      "distractors": [
+        "jechać",
+        "jedziesz"
+      ],
+      "items": [
+        "dokad",
+        "mozna",
+        "pojechac",
+        "na-weekend",
+        "gdansk"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-a1-e15",
+      "lines": [
+        "Gdańsk leży na północy.",
+        "Kraków leży na południu.",
+        "Warszawa leży w centrum."
+      ],
+      "meaning": {
+        "en": "Three cities of Poland."
+      },
+      "statements": [
+        {
+          "text": "Gdańsk leży na południu.",
+          "meaning": {
+            "en": "Gdańsk is in the south."
+          },
+          "true": false
+        },
+        {
+          "text": "Kraków leży na południu.",
+          "meaning": {
+            "en": "Kraków is in the south."
+          },
+          "true": true
+        },
+        {
+          "text": "Warszawa leży w centrum.",
+          "meaning": {
+            "en": "Warsaw is in the centre."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "gdansk",
+        "lezec-lezy",
+        "polnoc",
+        "krakow",
+        "poludnie",
+        "warszawa",
+        "w-centrum"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a1-e16",
+      "prompt": {
+        "en": "where can you go?"
+      },
+      "acceptedAnswers": [
+        "dokąd można pojechać?"
+      ],
+      "distractors": [
+        "gdzie",
+        "jechać"
+      ],
+      "items": [
+        "dokad",
+        "mozna",
+        "pojechac"
+      ]
+    }
+  ]
+}

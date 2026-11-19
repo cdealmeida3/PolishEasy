@@ -1,0 +1,408 @@
+{
+  "id": "kpk1-l20-a6",
+  "section": {
+    "letter": "A",
+    "heading": "Dokąd można pojechać na weekend?",
+    "meaning": {
+      "en": "Where can you go for the weekend?"
+    },
+    "strands": [
+      "L",
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-a6-t01",
+      "before": "kpk1-l20-a6-e01",
+      "title": {
+        "en": "Warto zobaczyć!"
+      },
+      "body": {
+        "en": "A *zabytek* is a historic sight: a *zamek* (castle), a *kościół*, a *ratusz* (town hall) on *Stare Miasto*, the Old Town, or *kopalnia soli*, the salt mine in Wieliczka. To praise one say *warto zobaczyć*: it is worth seeing. *Najstarszy* is the oldest, *największy* the biggest and *najwyższy* the highest: *Rysy to najwyższy szczyt w Polsce*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a6-e01",
+      "prompt": "zabytek",
+      "options": [
+        {
+          "en": "a historic monument, a sight (zabytki: sights)"
+        },
+        {
+          "en": "a museum"
+        },
+        {
+          "en": "a shop"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zabytek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a6-e02",
+      "prompt": "kopalnia soli",
+      "options": [
+        {
+          "en": "a sugar factory"
+        },
+        {
+          "en": "a salt mine (w kopalni soli: in the salt mine)"
+        },
+        {
+          "en": "a castle"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kopalnia-soli"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-a6-e03",
+      "text": "W Polsce jest stara kopalnia soli.",
+      "meaning": {
+        "en": "In Poland there is an old salt mine."
+      },
+      "distractors": [
+        "W Polsce jest stary zamek.",
+        "W Polsce jest duże jezioro."
+      ],
+      "items": [
+        "w-polsce",
+        "byc-jest",
+        "stary",
+        "kopalnia-soli"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a6-e04",
+      "prompt": "warto zobaczyć",
+      "options": [
+        {
+          "en": "you must pay"
+        },
+        {
+          "en": "it is closed"
+        },
+        {
+          "en": "it is worth seeing"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "warto-zobaczyc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a6-e05",
+      "prompt": "Stare Miasto",
+      "options": [
+        {
+          "en": "the Old Town (na Starym Mieście: in the Old Town)"
+        },
+        {
+          "en": "the new town"
+        },
+        {
+          "en": "the city centre"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "stare-miasto"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a6-e06",
+      "prompt": {
+        "en": "the Old Town is worth seeing"
+      },
+      "acceptedAnswers": [
+        "warto zobaczyć Stare Miasto"
+      ],
+      "distractors": [
+        "nowe",
+        "jest"
+      ],
+      "items": [
+        "warto-zobaczyc",
+        "stare-miasto"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a6-e07",
+      "prompt": "średniowieczny",
+      "options": [
+        {
+          "en": "modern"
+        },
+        {
+          "en": "medieval (średniowieczny, średniowieczna, średniowieczne)"
+        },
+        {
+          "en": "wooden"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sredniowieczny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a6-e08",
+      "prompt": "największy",
+      "options": [
+        {
+          "en": "the smallest"
+        },
+        {
+          "en": "the oldest"
+        },
+        {
+          "en": "the biggest (największy, największa, największe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "najwiekszy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a6-e09",
+      "text": "W Polsce jest duży ___ zamek.",
+      "meaning": {
+        "en": "In Poland there is a big medieval castle."
+      },
+      "gaps": [
+        [
+          "średniowieczny"
+        ]
+      ],
+      "distractors": [
+        "średniowieczna",
+        "średniowieczne"
+      ],
+      "items": [
+        "w-polsce",
+        "byc-jest",
+        "duzy",
+        "sredniowieczny",
+        "zamek"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a6-e10",
+      "prompt": "najstarszy",
+      "options": [
+        {
+          "en": "the oldest (najstarszy, najstarsza, najstarsze)"
+        },
+        {
+          "en": "the newest"
+        },
+        {
+          "en": "the biggest"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "najstarszy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a6-e11",
+      "prompt": "najwyższy",
+      "options": [
+        {
+          "en": "the lowest"
+        },
+        {
+          "en": "the highest, the tallest (najwyższy, najwyższa, najwyższe)"
+        },
+        {
+          "en": "the longest"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "najwyzszy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-a6-e12",
+      "pairs": [
+        {
+          "polish": "zabytek",
+          "meaning": {
+            "en": "a historic sight"
+          }
+        },
+        {
+          "polish": "kopalnia soli",
+          "meaning": {
+            "en": "a salt mine"
+          }
+        },
+        {
+          "polish": "Stare Miasto",
+          "meaning": {
+            "en": "the Old Town"
+          }
+        },
+        {
+          "polish": "średniowieczny",
+          "meaning": {
+            "en": "medieval"
+          }
+        },
+        {
+          "polish": "najwyższy",
+          "meaning": {
+            "en": "the highest"
+          }
+        }
+      ],
+      "items": [
+        "zabytek",
+        "kopalnia-soli",
+        "stare-miasto",
+        "sredniowieczny",
+        "najwyzszy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-a6-e13",
+      "prompt": {
+        "en": "the biggest castle"
+      },
+      "acceptedAnswers": [
+        "największy zamek"
+      ],
+      "items": [
+        "najwiekszy",
+        "zamek"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-a6-e14",
+      "acceptedAnswers": [
+        "na Starym Mieście"
+      ],
+      "meaning": {
+        "en": "in the Old Town"
+      },
+      "items": [
+        "stare-miasto"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a6-e15",
+      "text": "To ___ szczyt w Polsce.",
+      "meaning": {
+        "en": "This is the highest peak in Poland."
+      },
+      "gaps": [
+        [
+          "najwyższy"
+        ]
+      ],
+      "distractors": [
+        "najwyższa",
+        "najdłuższy"
+      ],
+      "items": [
+        "to",
+        "najwyzszy",
+        "szczyt",
+        "w-polsce"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-a6-e16",
+      "lines": [
+        "Na Starym Mieście jest ratusz i stary kościół.",
+        "To najstarszy zabytek w mieście.",
+        "Warto zobaczyć!"
+      ],
+      "meaning": {
+        "en": "A sight in town."
+      },
+      "statements": [
+        {
+          "text": "Na Starym Mieście jest ratusz.",
+          "meaning": {
+            "en": "There is a town hall in the Old Town."
+          },
+          "true": true
+        },
+        {
+          "text": "Kościół jest nowy.",
+          "meaning": {
+            "en": "The church is new."
+          },
+          "true": false
+        },
+        {
+          "text": "Warto zobaczyć ten zabytek.",
+          "meaning": {
+            "en": "This sight is worth seeing."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "stare-miasto",
+        "byc-jest",
+        "ratusz",
+        "i",
+        "stary",
+        "kosciol",
+        "to",
+        "najstarszy",
+        "zabytek",
+        "w-miescie",
+        "warto-zobaczyc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a6-e17",
+      "prompt": {
+        "en": "the biggest sights of Poland"
+      },
+      "acceptedAnswers": [
+        "największe zabytki Polski"
+      ],
+      "distractors": [
+        "największy",
+        "Polska"
+      ],
+      "items": [
+        "najwiekszy",
+        "zabytek",
+        "polska-kraj"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "id": "kpk1-l20-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Gdzie jesteś? Dokąd jedziesz?",
+    "meaning": {
+      "en": "Where are you? Where are you going?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-c3-t01",
+      "before": "kpk1-l20-c3-e01",
+      "title": {
+        "en": "W Tatrach, w Tatry"
+      },
+      "body": {
+        "en": "Mountains keep *w* for both questions. *Gdzie?* takes the locative: *jestem w Tatrach, w górach*. *Dokąd?* takes the accusative: *jadę w Tatry, w góry*. Poland has *Tatry* with Zakopane, the quieter *Beskidy*, *Sudety* in the south-west and *Bieszczady* in the south-east. In winter you go *na narty*, skiing."
+      },
+      "table": {
+        "title": {
+          "en": "Góry"
+        },
+        "columns": [
+          {
+            "header": "gdzie?"
+          },
+          {
+            "header": "dokąd?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "w Tatrach",
+              "w Tatry"
+            ]
+          },
+          {
+            "cells": [
+              "w Beskidach",
+              "w Beskidy"
+            ]
+          },
+          {
+            "cells": [
+              "w Bieszczadach",
+              "w Bieszczady"
+            ]
+          },
+          {
+            "cells": [
+              "w Sudetach",
+              "w Sudety"
+            ]
+          },
+          {
+            "cells": [
+              "w Alpach",
+              "w Alpy"
+            ]
+          },
+          {
+            "cells": [
+              "w górach",
+              "w góry"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c3-e01",
+      "prompt": "Beskidy",
+      "options": [
+        {
+          "en": "the Tatras"
+        },
+        {
+          "en": "the Beskids, mountains in the south (w Beskidach: in the Beskids; w Beskidy: to the Beskids)"
+        },
+        {
+          "en": "the Alps"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "beskidy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-c3-e02",
+      "text": "W sierpniu jedziemy w Beskidy.",
+      "meaning": {
+        "en": "In August we are going to the Beskids."
+      },
+      "distractors": [
+        "W sierpniu jesteśmy w Beskidach.",
+        "W sierpniu jedziemy w Tatry."
+      ],
+      "items": [
+        "sierpien",
+        "jechac-jedziemy",
+        "beskidy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c3-e03",
+      "prompt": "Bieszczady",
+      "options": [
+        {
+          "en": "the Sudetes"
+        },
+        {
+          "en": "the Beskids"
+        },
+        {
+          "en": "the Bieszczady, mountains in the south-east (w Bieszczadach: in the Bieszczady; w Bieszczady: to the Bieszczady)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "bieszczady"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c3-e04",
+      "prompt": "Sudety",
+      "options": [
+        {
+          "en": "the Sudetes, mountains in the south-west (w Sudetach: in the Sudetes; w Sudety: to the Sudetes)"
+        },
+        {
+          "en": "the Bieszczady"
+        },
+        {
+          "en": "the Tatras"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sudety"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c3-e05",
+      "text": "Bieszczady leżą na południowym wschodzie, a Sudety na południowym ___.",
+      "meaning": {
+        "en": "The Bieszczady are in the south-east, and the Sudetes in the south-west."
+      },
+      "gaps": [
+        [
+          "zachodzie"
+        ]
+      ],
+      "distractors": [
+        "wschodzie",
+        "zachód"
+      ],
+      "items": [
+        "bieszczady",
+        "lezec-leza",
+        "na-poludniowym-wschodzie",
+        "a",
+        "sudety",
+        "na-poludniowym-zachodzie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c3-e06",
+      "prompt": "Alpy",
+      "options": [
+        {
+          "en": "the Tatras"
+        },
+        {
+          "en": "the Alps (w Alpach: in the Alps; w Alpy: to the Alps)"
+        },
+        {
+          "en": "Masuria"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "alpy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c3-e07",
+      "prompt": "na narty",
+      "options": [
+        {
+          "en": "to the beach"
+        },
+        {
+          "en": "for a walk"
+        },
+        {
+          "en": "skiing, for a skiing trip (jadę na narty: I am going skiing)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-narty"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-c3-e08",
+      "prompt": {
+        "en": "in winter I go skiing in the Alps"
+      },
+      "acceptedAnswers": [
+        "zimą jeżdżę na narty w Alpy"
+      ],
+      "distractors": [
+        "Alpach",
+        "nartach"
+      ],
+      "items": [
+        "zima-kiedy",
+        "jezdzic-jezdze",
+        "na-narty",
+        "alpy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-c3-e09",
+      "pairs": [
+        {
+          "polish": "w Tatrach",
+          "meaning": {
+            "en": "in the Tatras"
+          }
+        },
+        {
+          "polish": "w Tatry",
+          "meaning": {
+            "en": "to the Tatras"
+          }
+        },
+        {
+          "polish": "w Beskidach",
+          "meaning": {
+            "en": "in the Beskids"
+          }
+        },
+        {
+          "polish": "w Alpy",
+          "meaning": {
+            "en": "to the Alps"
+          }
+        },
+        {
+          "polish": "na narty",
+          "meaning": {
+            "en": "skiing"
+          }
+        }
+      ],
+      "items": [
+        "tatry",
+        "beskidy",
+        "alpy",
+        "na-narty"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c3-e10",
+      "text": "Jestem w ___, na szczycie.",
+      "meaning": {
+        "en": "I am in the Sudetes, on the summit."
+      },
+      "gaps": [
+        [
+          "Sudetach"
+        ]
+      ],
+      "distractors": [
+        "Sudety",
+        "Sudetów"
+      ],
+      "items": [
+        "byc-jestem",
+        "sudety",
+        "szczyt"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-c3-e11",
+      "prompt": {
+        "en": "to the Bieszczady"
+      },
+      "acceptedAnswers": [
+        "w Bieszczady"
+      ],
+      "items": [
+        "bieszczady"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-c3-e12",
+      "acceptedAnswers": [
+        "Tatry są bardzo turystyczne"
+      ],
+      "meaning": {
+        "en": "the Tatras are very touristy"
+      },
+      "items": [
+        "tatry",
+        "byc-sa",
+        "bardzo",
+        "turystyczny"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-c3-e13",
+      "lines": [
+        "W Tatrach jest dużo turystów.",
+        "W Bieszczadach jest cicho i spokojnie.",
+        "Tam są lasy, szlaki i schroniska."
+      ],
+      "meaning": {
+        "en": "Two kinds of mountains."
+      },
+      "statements": [
+        {
+          "text": "Tatry są turystyczne.",
+          "meaning": {
+            "en": "The Tatras are touristy."
+          },
+          "true": true
+        },
+        {
+          "text": "W Bieszczadach jest dużo turystów.",
+          "meaning": {
+            "en": "There are a lot of tourists in the Bieszczady."
+          },
+          "true": false
+        },
+        {
+          "text": "W Bieszczadach są lasy.",
+          "meaning": {
+            "en": "There are forests in the Bieszczady."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "tatry",
+        "byc-jest",
+        "bieszczady",
+        "spokojnie",
+        "tam",
+        "byc-sa",
+        "las",
+        "szlak",
+        "schronisko"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c3-e14",
+      "text": "Szlakiem idziemy na ___ i potem do schroniska.",
+      "meaning": {
+        "en": "We go up the trail to the summit and then to the hut."
+      },
+      "gaps": [
+        [
+          "szczyt"
+        ]
+      ],
+      "distractors": [
+        "szczycie",
+        "szczytu"
+      ],
+      "items": [
+        "szlak",
+        "isc-idziemy",
+        "szczyt",
+        "i",
+        "potem",
+        "schronisko"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-c3-e15",
+      "prompt": {
+        "en": "the rocks in the Tatras are beautiful"
+      },
+      "acceptedAnswers": [
+        "skały w Tatrach są piękne"
+      ],
+      "distractors": [
+        "Tatry",
+        "jest"
+      ],
+      "items": [
+        "skala",
+        "tatry",
+        "byc-sa",
+        "piekny"
+      ]
+    }
+  ]
+}
