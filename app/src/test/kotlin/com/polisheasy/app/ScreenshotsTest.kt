@@ -94,6 +94,7 @@ import com.polisheasy.engine.WordSearchRound
 import com.polisheasy.engine.PronounGridRound
 import com.polisheasy.engine.RoomSceneRound
 import com.polisheasy.engine.PositionsRound
+import com.polisheasy.engine.FlatHuntRound
 import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.SaidTime
 import com.polisheasy.engine.TreeRound
@@ -1323,6 +1324,46 @@ class ScreenshotsTest {
             screen.waitForIdle()
             shot(name)
         }
+    }
+
+    @Test
+    fun `Flat hunt over the real course in the light theme`() = chapter19Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Flat hunt over the real course in the dark theme`() = chapter19Games("dark")
+
+    @Test
+    fun `Flat hunt over the real course at the largest font size`() = atTheLargestFontSize { chapter19Games("large") }
+
+    /** Chapter 19's Game, Flat hunt: its setup, a wish over three adverts, a wrong advert and the result. */
+    private fun chapter19Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun hunt() = (viewModel?.screen as Screen.Round).round as FlatHuntRound
+
+        fun move(round: com.polisheasy.engine.Round) {
+            screen.runOnUiThread { checkNotNull(viewModel).move(round) }
+            screen.waitForIdle()
+        }
+
+        openRealPractice()
+        openGame(R.string.game_flat_hunt)
+        shot("377-flat-hunt-setup")
+        tap(R.string.setup_play)
+        shot("378-flat-hunt-adverts")
+        val first = checkNotNull(hunt().question)
+        move(hunt().choose((first.right + 1) % first.adverts.size))
+        shot("379-flat-hunt-wrong")
+        tap(R.string.action_continue)
+        screen.mainClock.autoAdvance = false
+        var round = hunt()
+        while (round.question != null) round = round.choose(checkNotNull(round.question).right).next()
+        move(round)
+        screen.mainClock.advanceTimeBy(2_000)
+        screen.mainClock.autoAdvance = true
+        screen.waitForIdle()
+        shot("380-flat-hunt-result")
     }
 
     @Test

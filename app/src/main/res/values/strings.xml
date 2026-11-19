@@ -583,6 +583,11 @@
     <string name="game_stoi_lezy_wisi_needs">Opens when you learn stoi, leży and wisi and four sentences of the room, in chapter 18. Stoją, leżą and wiszą come in with them.</string>
     <string name="stoi_lezy_wisi_instruction">Does it stand, lie or hang? Tap the verb.</string>
     <string name="stoi_lezy_wisi_note">%1$s · %2$s</string>
+    <string name="game_flat_hunt">Flat hunt</string>
+    <string name="game_flat_hunt_note">Someone is looking for a flat or a room. Read three adverts and pick the one that fits.</string>
+    <string name="game_flat_hunt_needs">Opens when you learn the words of three hunts, kawalerka, od podwórka, z łazienką and the rest, in chapter 19.</string>
+    <string name="flat_hunt_instruction">Which advert fits? Tap it.</string>
+    <string name="flat_hunt_note">%1$s · The one that fits: %2$s</string>
     <plurals name="how_many_pictures">
         <item quantity="one">%d picture</item>
         <item quantity="other">%d pictures</item>

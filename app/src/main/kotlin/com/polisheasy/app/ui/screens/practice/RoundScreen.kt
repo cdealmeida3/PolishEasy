@@ -44,6 +44,7 @@ import com.polisheasy.engine.SwapRound
 import com.polisheasy.engine.PronounGridRound
 import com.polisheasy.engine.RoomSceneRound
 import com.polisheasy.engine.PositionsRound
+import com.polisheasy.engine.FlatHuntRound
 import com.polisheasy.engine.PackagingRound
 import com.polisheasy.engine.HowManyRound
 import com.polisheasy.engine.ForecasterRound
@@ -116,6 +117,7 @@ internal fun RoundScreen(
         is PronounGridRound -> PronounGridStep(round, say, onMove)
         is RoomSceneRound -> RoomSceneStep(round, say, onMove)
         is PositionsRound -> StoiLezyWisiStep(round, say, onMove)
+        is FlatHuntRound -> FlatHuntStep(round, say, onMove)
         is PackagingRound -> PackagingStep(round, say, onMove)
         is HowManyRound -> HowManyStep(round, say, onMove)
         is ForecasterRound -> ForecasterStep(round, say, onMove)
