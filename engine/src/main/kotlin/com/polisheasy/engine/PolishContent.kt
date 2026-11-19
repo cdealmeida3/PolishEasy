@@ -171,6 +171,14 @@ fun polishContent(files: ContentFiles): PolishContent {
                 sentence(advert.text, advert.meaning, PolishUse(file, "flatHunt/${hunt.id}/${index + 1}", PolishRole.ANSWER))
             }
         }
+        // Poland map's sentences, and the parts of its compass.
+        val polandMap = content.practice?.polandMap.orEmpty()
+        polandMap.forEach { place ->
+            sentence(place.says.text, place.says.meaning, PolishUse(file, "polandMap/${place.id}", PolishRole.PROMPT))
+        }
+        if (polandMap.isNotEmpty()) {
+            Compass.entries.forEach { part -> sentence(part.polish, mapOf(language to part.meaning), PolishUse(file, "polandMap/compass/${part.key}", PolishRole.ANSWER)) }
+        }
         content.course().allClockTimes().forEach { time ->
             sentence(time.polish, mapOf(language to "${time.hour}:${time.minute.toString().padStart(2, '0')}"), PolishUse(file, "clock", PolishRole.ANSWER))
         }

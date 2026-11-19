@@ -95,6 +95,7 @@ import com.polisheasy.engine.PronounGridRound
 import com.polisheasy.engine.RoomSceneRound
 import com.polisheasy.engine.PositionsRound
 import com.polisheasy.engine.FlatHuntRound
+import com.polisheasy.engine.PolandMapRound
 import com.polisheasy.engine.StoryRound
 import com.polisheasy.engine.SaidTime
 import com.polisheasy.engine.TreeRound
@@ -1364,6 +1365,46 @@ class ScreenshotsTest {
         screen.mainClock.autoAdvance = true
         screen.waitForIdle()
         shot("380-flat-hunt-result")
+    }
+
+    @Test
+    fun `Poland map over the real course in the light theme`() = chapter20Games("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `Poland map over the real course in the dark theme`() = chapter20Games("dark")
+
+    @Test
+    fun `Poland map over the real course at the largest font size`() = atTheLargestFontSize { chapter20Games("large") }
+
+    /** Chapter 20's Game, Poland map: its setup, a place over the compass, a wrong part and the result. */
+    private fun chapter20Games(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+
+        fun map() = (viewModel?.screen as Screen.Round).round as PolandMapRound
+
+        fun move(round: com.polisheasy.engine.Round) {
+            screen.runOnUiThread { checkNotNull(viewModel).move(round) }
+            screen.waitForIdle()
+        }
+
+        openRealPractice()
+        openGame(R.string.game_poland_map)
+        shot("386-poland-map-setup")
+        tap(R.string.setup_play)
+        shot("387-poland-map-compass")
+        val first = checkNotNull(map().question)
+        move(map().choose(com.polisheasy.engine.Compass.entries.first { it != first.region }))
+        shot("388-poland-map-wrong")
+        tap(R.string.action_continue)
+        screen.mainClock.autoAdvance = false
+        var round = map()
+        while (round.question != null) round = round.choose(checkNotNull(round.question).region).next()
+        move(round)
+        screen.mainClock.advanceTimeBy(2_000)
+        screen.mainClock.autoAdvance = true
+        screen.waitForIdle()
+        shot("389-poland-map-result")
     }
 
     @Test

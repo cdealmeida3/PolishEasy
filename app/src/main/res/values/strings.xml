@@ -588,6 +588,11 @@
     <string name="game_flat_hunt_needs">Opens when you learn the words of three hunts, kawalerka, od podwórka, z łazienką and the rest, in chapter 19.</string>
     <string name="flat_hunt_instruction">Which advert fits? Tap it.</string>
     <string name="flat_hunt_note">%1$s · The one that fits: %2$s</string>
+    <string name="game_poland_map">Poland map</string>
+    <string name="game_poland_map_note">A city, a sea or a range of mountains is named. Tap where in Poland it lies.</string>
+    <string name="game_poland_map_needs">Opens when you learn four places and where they lie, Gdańsk, na północy and the rest, in chapter 20.</string>
+    <string name="poland_map_instruction">Where in Poland is it? Tap the part of the map.</string>
+    <string name="poland_map_note">%1$s · %2$s</string>
     <plurals name="how_many_pictures">
         <item quantity="one">%d picture</item>
         <item quantity="other">%d pictures</item>

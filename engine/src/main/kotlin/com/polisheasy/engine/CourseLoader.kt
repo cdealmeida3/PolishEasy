@@ -97,7 +97,13 @@ internal data class PracticeFile(
     val room: RoomFile? = null,
     /** The hunts of Flat hunt. */
     val flatHunt: List<FlatHuntFile> = emptyList(),
+    /** The places of Poland map. */
+    val polandMap: List<PolandMapFile> = emptyList(),
 )
+
+/** A place of Poland map: its stable [id], the [place] as the question shows it, the [region] where it lies, a [Compass] key, and the sentence that [says] so. */
+@Serializable
+internal data class PolandMapFile(val id: String, val place: String, val region: String, val says: FlatTextFile)
 
 /** A hunt of Flat hunt: its stable [id], someone's [wish], the [adverts] they read and the index of the [right] one. */
 @Serializable
@@ -419,6 +425,10 @@ internal class ReadContent(
                     fun text(file: FlatTextFile) = FlatText(file.text, file.meaning, file.items.distinct())
                     FlatHuntCase(hunt.id, text(hunt.wish), hunt.adverts.map(::text), hunt.right)
                 },
+            polandMap = practice?.polandMap.orEmpty()
+                .filter { Compass.of(it.region) != null }
+                .distinctBy { it.id }
+                .map { place -> PolandMapPlace(place.id, place.place, Compass.of(place.region)!!, FlatText(place.says.text, place.says.meaning, place.says.items.distinct())) },
             room = practice?.room?.let { room ->
                 val places = room.places.distinct()
                 val positions = room.positions.filter { it.isNotEmpty() }
@@ -644,6 +654,7 @@ internal fun loadingProblems(content: ReadContent): List<ContentProblem> {
         practice.pronounGrid?.let { grid -> problems += pronounGridProblems(file, grid, course, content.itemsComplete) }
         practice.room?.let { room -> problems += roomProblems(file, room, course, content.itemsComplete) }
         problems += flatHuntProblems(file, practice.flatHunt, course, content.itemsComplete)
+        problems += polandMapProblems(file, practice.polandMap, course, content.itemsComplete)
     }
     problems += classAudioProblems(content)
     problems += chatProblems(content)
@@ -1434,5 +1445,24 @@ private fun flatHuntProblems(file: String, hunts: List<FlatHuntFile>, course: Co
     }
     hunts.map { it.id }.repeated().forEach { id -> problems += ContentProblem(file, id, "The hunt $id is listed more than once") }
     hunts.map { it.wish.text }.repeated().forEach { text -> problems += ContentProblem(file, null, "The wish \"$text\" is listed more than once") }
+    return problems
+}
+
+/**
+ * What is wrong with Poland map: each place in a part of the country that the compass has, with a
+ * sentence that names the place and lists Items that are defined; no id or place twice.
+ */
+private fun polandMapProblems(file: String, places: List<PolandMapFile>, course: Course, itemsComplete: Boolean): List<ContentProblem> {
+    val problems = mutableListOf<ContentProblem>()
+    places.forEach { place ->
+        if (Compass.of(place.region) == null) problems += ContentProblem(file, place.id, "The place ${place.id} lies in \"${place.region}\", which is not a part of the compass")
+        if (place.place !in place.says.text) problems += ContentProblem(file, place.id, "The sentence \"${place.says.text}\" of the place ${place.id} does not name ${place.place}")
+        if (place.says.items.isEmpty()) problems += ContentProblem(file, place.id, "The sentence \"${place.says.text}\" of the place ${place.id} lists no Items")
+        place.says.items.filter { itemsComplete && it !in course.itemsById }.distinct().forEach { id ->
+            problems += ContentProblem(file, id, "The sentence \"${place.says.text}\" of the place ${place.id} names Item $id, which is not defined")
+        }
+    }
+    places.map { it.id }.repeated().forEach { id -> problems += ContentProblem(file, id, "The place $id is listed more than once") }
+    places.map { it.place }.repeated().forEach { place -> problems += ContentProblem(file, null, "The place \"$place\" is listed more than once") }
     return problems
 }
