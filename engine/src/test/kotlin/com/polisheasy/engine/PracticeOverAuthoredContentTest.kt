@@ -955,6 +955,22 @@ class PracticeOverAuthoredContentTest {
     }
 
     @Test
+    fun `Poland map opens in chapter 20, and every place is said and lies in a part of the compass its sentence names`() {
+        val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.POLAND_MAP }.state == GameState.READY }
+        assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l20-"), course.path[firstReady - 1].id)
+        assertTrue(course.polandMap.size >= PolandMap.QUESTIONS * 2, "${course.polandMap.size} places")
+        course.polandMap.forEach { place ->
+            assertTrue(course.clipFor(place.says.text) != null, "No Clip for ${place.says.text}")
+            assertTrue(place.region.polish in place.says.text, place.says.text)
+        }
+        val practice = practiceAfter(course.path.size)
+        repeat(5) {
+            val round = practice.start(practice.setup(Game.POLAND_MAP, emptyList())) as PolandMapRound
+            assertEquals(PolandMap.QUESTIONS, round.total)
+        }
+    }
+
+    @Test
     fun `Flat hunt opens in chapter 19, and every wish is said and has one right advert of three`() {
         val firstReady = (1..course.path.size).first { days -> practiceAfter(days).view().games.single { it.game == Game.FLAT_HUNT }.state == GameState.READY }
         assertTrue(course.path[firstReady - 1].id.startsWith("kpk1-l19-"), course.path[firstReady - 1].id)

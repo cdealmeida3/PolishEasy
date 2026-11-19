@@ -176,7 +176,7 @@ Shared components live in `ui/components`, one screen per file in `ui/screens`. 
 - **`SecondaryButton`**: 56 high, `surfaceContainerLowest` fill, outlined, `primary` text. Used rarely; most screens have no second button.
 - **`QuietButton`** (a text button): `primary` text, 48 high. Subdued, it is `onSurfaceVariant`: a way out that is rarely taken, such as "Can't listen now".
 - **`TonalButton`**: a small helper beside a bigger control. A pill at least 48 high in `primaryContainer` with an icon and a word in `onPrimaryContainer`. "Slow".
-- **`OptionCard`**: an answer to choose. Full width, at least 56 high, text at the start in `titleMedium`, an icon slot at the end. States:
+- **`OptionCard`**: an answer to choose. Full width, at least 56 high, text at the start in `titleMedium`, an icon slot at the end; a compact one, for a grid of narrow cells, has its text centred in `labelMedium` and the icon under it. States:
   - idle: `surfaceContainerLowest`, `outlineVariant` border
   - chosen (before Check, where there is one): `primaryContainer`, `primary` border
   - right: `successContainer`, `success` border, tick icon
@@ -420,6 +420,7 @@ Practice is the fourth tab, between the Path and Settings, with a game controlle
 - **Room scene**: the instruction; heard, a `PlayButton`, read and once answered a `PromptCard` with the sentence in `titleMedium`; the room as `RoomSpot`s three across in two rows, each place's word in `titleSmall` at the top and under it the things put there, a small picture each (`roomThing`) or the word in a little `labelSmall` label, with the states of a `PictureOption` (a screen reader hears the place and what is on it); a `RoundNote` gives the sentence and what it means.
 - **Stoi, leży czy wisi?**: the instruction; a `PromptCard` with the thing's Picture at `pictureOption` size, when it has one, over the sentence in `headlineSmall` with its verb a gap, whole once answered; the three verbs as `OptionCard`s side by side; a `RoundNote` gives the sentence and what it means.
 - **Flat hunt**: the instruction; the wish in a `PromptCard` in `titleLarge`; the three adverts as `OptionCard`s one under another, each the whole width; a `RoundNote` gives what the wish and the right advert mean.
+- **Poland map**: the instruction; the place in a `PromptCard` in `headlineMedium`; the eight parts of the country as compact `OptionCard`s (`labelMedium`, centred, the tick or cross under the words) in a 3 by 3 grid, north at the top and west on the left, the middle left empty, the cells of a row the same height; from a font scale of 1.5 the parts are full-width `OptionCard`s one under another, north first, as three cells across no longer fit the words; a `RoundNote` gives the sentence that says where the place lies and what it means.
 - **Ten, ta, to**: Mój, moja, moje's layout, with *ten, ta, to* in the `BucketRow`.
 - **Spell it aloud**: Spell it with the play button where the Picture or meaning was; the meaning is written under the word once it is whole.
 - **`ChatHeader`**: who the chat is with: the first letter of their name in a `primaryContainer` circle 48 across (the app shows no faces), the name in `titleLarge`, the chat's `RegisterChip` beside it, and the scene under them in `bodyMedium` `onSurfaceVariant`.
