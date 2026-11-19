@@ -12206,6 +12206,797 @@
         11,
         11
       ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-206-1",
+      "track": 206,
+      "statement": "Polska leży w Europie Środkowej.",
+      "meaning": {
+        "en": "Poland lies in Central Europe."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-206-2",
+      "track": 206,
+      "question": "Z jakim krajem Polska graniczy na zachodzie?",
+      "meaning": {
+        "en": "Which country does Poland border in the west?"
+      },
+      "options": [
+        "Z Niemcami.",
+        "Z Czechami.",
+        "Z Litwą."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-206-3",
+      "track": 206,
+      "statement": "Na wschodzie Polska graniczy z Ukrainą.",
+      "meaning": {
+        "en": "In the east Poland borders Ukraine."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-206-4",
+      "track": 206,
+      "statement": "Polska to mały kraj.",
+      "meaning": {
+        "en": "Poland is a small country."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l20-206-5",
+      "track": 206,
+      "question": "Jakie miasto jest stolicą Polski?",
+      "meaning": {
+        "en": "Which city is the capital of Poland? (one word)"
+      },
+      "acceptedAnswers": [
+        "Warszawa"
+      ],
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-206-6",
+      "track": 206,
+      "question": "Kto mieszka w Warszawie?",
+      "meaning": {
+        "en": "Who lives in Warsaw?"
+      },
+      "options": [
+        "Prezydent.",
+        "Król.",
+        "Turyści."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-206-7",
+      "track": 206,
+      "question": "Co jest symbolem Warszawy?",
+      "meaning": {
+        "en": "What is the symbol of Warsaw?"
+      },
+      "options": [
+        "Syrena.",
+        "Smok.",
+        "Zamek."
+      ],
+      "correctOption": 0,
+      "lines": [
+        11,
+        11
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-206-8",
+      "track": 206,
+      "question": "Jaka jest najdłuższa polska rzeka?",
+      "meaning": {
+        "en": "What is the longest Polish river?"
+      },
+      "options": [
+        "Wisła.",
+        "Odra.",
+        "Warta."
+      ],
+      "correctOption": 0,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-206-9",
+      "track": 206,
+      "statement": "Na Bałtyku są polskie wyspy.",
+      "meaning": {
+        "en": "There are Polish islands in the Baltic."
+      },
+      "answer": true,
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-206-10",
+      "track": 206,
+      "question": "Gdzie są góry?",
+      "meaning": {
+        "en": "Where are the mountains?"
+      },
+      "options": [
+        "Na południu Polski.",
+        "Na północy Polski.",
+        "Na zachodzie Polski."
+      ],
+      "correctOption": 0,
+      "lines": [
+        14,
+        14
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-206-11",
+      "track": 206,
+      "statement": "Beskidy są bardziej popularne niż Tatry.",
+      "meaning": {
+        "en": "The Beskids are more popular than the Tatras."
+      },
+      "answer": false,
+      "lines": [
+        15,
+        15
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-206-12",
+      "track": 206,
+      "question": "Gdzie leżą Bieszczady?",
+      "meaning": {
+        "en": "Where are the Bieszczady?"
+      },
+      "options": [
+        "Na południowym wschodzie.",
+        "Na północnym zachodzie.",
+        "Na południowym zachodzie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        16,
+        16
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-206-13",
+      "track": 206,
+      "question": "Jaki region leży na północnym wschodzie?",
+      "meaning": {
+        "en": "Which region lies in the north-east?"
+      },
+      "options": [
+        "Mazury.",
+        "Tatry.",
+        "Sudety."
+      ],
+      "correctOption": 0,
+      "lines": [
+        17,
+        17
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l20-206-14",
+      "track": 206,
+      "question": "Mazury to kraina tysiąca…",
+      "meaning": {
+        "en": "Masuria is a land of a thousand… (one word)"
+      },
+      "acceptedAnswers": [
+        "jezior"
+      ],
+      "lines": [
+        18,
+        18
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l20-207-1",
+      "track": 207,
+      "question": "Jakie jest pierwsze słowo?",
+      "meaning": {
+        "en": "What is the first word? (one word)"
+      },
+      "acceptedAnswers": [
+        "skała"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-207-2",
+      "track": 207,
+      "question": "Jakie dwa słowa słychać?",
+      "meaning": {
+        "en": "Which two words do you hear?"
+      },
+      "options": [
+        "Wyspa i ziemia.",
+        "Wyspa i woda.",
+        "Skała i ziemia."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-207-3",
+      "track": 207,
+      "question": "Jakie słowo słychać?",
+      "meaning": {
+        "en": "Which word do you hear?"
+      },
+      "options": [
+        "Szczyt.",
+        "Szlak.",
+        "Schronisko."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        10
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l20-207-4",
+      "track": 207,
+      "question": "Jakie słowo słychać?",
+      "meaning": {
+        "en": "Which word do you hear? (one word)"
+      },
+      "acceptedAnswers": [
+        "kamienica"
+      ],
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l20-207-5",
+      "track": 207,
+      "question": "Jakie słowo słychać?",
+      "meaning": {
+        "en": "Which word do you hear? (one word)"
+      },
+      "acceptedAnswers": [
+        "mur"
+      ],
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-207-6",
+      "track": 207,
+      "question": "Jakie słowo słychać?",
+      "meaning": {
+        "en": "Which word do you hear?"
+      },
+      "options": [
+        "Cegła.",
+        "Skała.",
+        "Brama."
+      ],
+      "correctOption": 0,
+      "lines": [
+        14,
+        14
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l20-207-7",
+      "track": 207,
+      "question": "Jakie słowo słychać?",
+      "meaning": {
+        "en": "Which word do you hear? (one word)"
+      },
+      "acceptedAnswers": [
+        "las"
+      ],
+      "lines": [
+        15,
+        15
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l20-207-8",
+      "track": 207,
+      "question": "Jakie słowo słychać?",
+      "meaning": {
+        "en": "Which word do you hear? (one word)"
+      },
+      "acceptedAnswers": [
+        "most"
+      ],
+      "lines": [
+        19,
+        19
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-207-9",
+      "track": 207,
+      "question": "Jakie jest ostatnie słowo?",
+      "meaning": {
+        "en": "What is the last word?"
+      },
+      "options": [
+        "Góry.",
+        "Wyspy.",
+        "Lasy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        20,
+        20
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-208-1",
+      "track": 208,
+      "question": "Dokąd chcą jechać studenci?",
+      "meaning": {
+        "en": "Where do the students want to go?"
+      },
+      "options": [
+        "Z Krakowa do Torunia.",
+        "Z Warszawy do Torunia.",
+        "Z Krakowa do Warszawy."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-208-2",
+      "track": 208,
+      "question": "Kiedy chcą jechać?",
+      "meaning": {
+        "en": "When do they want to go?"
+      },
+      "options": [
+        "W piątek po południu.",
+        "W sobotę rano.",
+        "W piątek rano."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-208-3",
+      "track": 208,
+      "statement": "Jest bezpośrednie połączenie.",
+      "meaning": {
+        "en": "There is a direct connection."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-208-4",
+      "track": 208,
+      "question": "Gdzie jest przesiadka?",
+      "meaning": {
+        "en": "Where is the change of trains?"
+      },
+      "options": [
+        "W Warszawie.",
+        "W Krakowie.",
+        "W Toruniu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-208-5",
+      "track": 208,
+      "question": "Ile czasu jest na przesiadkę?",
+      "meaning": {
+        "en": "How much time is there for the change?"
+      },
+      "options": [
+        "Kwadrans.",
+        "Godzina.",
+        "Pięć minut."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-208-6",
+      "track": 208,
+      "question": "O której będą na miejscu?",
+      "meaning": {
+        "en": "What time will they arrive?"
+      },
+      "options": [
+        "O dziewiętnastej czterdzieści dwa.",
+        "O czternastej.",
+        "O siedemnastej."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-208-7",
+      "track": 208,
+      "statement": "Studenci mogą kupić bilet ulgowy.",
+      "meaning": {
+        "en": "The students can buy a reduced ticket."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-208-8",
+      "track": 208,
+      "question": "Gdzie trzeba pytać o cenę?",
+      "meaning": {
+        "en": "Where do you have to ask about the price?"
+      },
+      "options": [
+        "W kasie.",
+        "W informacji.",
+        "W pociągu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-209-1",
+      "track": 209,
+      "question": "Dokąd jest bilet?",
+      "meaning": {
+        "en": "Where is the ticket to?"
+      },
+      "options": [
+        "Do Torunia przez Warszawę.",
+        "Do Warszawy przez Toruń.",
+        "Do Krakowa."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-209-2",
+      "track": 209,
+      "statement": "Pasażer kupuje bilet ulgowy.",
+      "meaning": {
+        "en": "The passenger buys a reduced ticket."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l20-209-3",
+      "track": 209,
+      "question": "Ile kosztuje Intercity z Krakowa do Warszawy?",
+      "meaning": {
+        "en": "How much is the Intercity from Kraków to Warsaw? (a number)"
+      },
+      "acceptedAnswers": [
+        "107",
+        "sto siedem"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l20-209-4",
+      "track": 209,
+      "question": "Ile kosztuje pociąg pospieszny do Torunia?",
+      "meaning": {
+        "en": "How much is the fast train to Toruń? (a number)"
+      },
+      "acceptedAnswers": [
+        "42",
+        "czterdzieści dwa"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-209-5",
+      "track": 209,
+      "question": "Jaką klasą jedzie pasażer?",
+      "meaning": {
+        "en": "Which class does the passenger travel?"
+      },
+      "options": [
+        "Drugą.",
+        "Pierwszą.",
+        "Nie wiadomo."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-209-6",
+      "track": 209,
+      "statement": "W tej kasie można płacić kartą.",
+      "meaning": {
+        "en": "You can pay by card at this ticket window."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-209-7",
+      "track": 209,
+      "question": "Z którego peronu odjeżdża pociąg?",
+      "meaning": {
+        "en": "Which platform does the train leave from?"
+      },
+      "options": [
+        "Z drugiego.",
+        "Z pierwszego.",
+        "Z trzeciego."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-210-1",
+      "track": 210,
+      "question": "Gdzie jest Mami?",
+      "meaning": {
+        "en": "Where is Mami?"
+      },
+      "options": [
+        "Na dworcu.",
+        "Nad Wisłą.",
+        "W Toruniu."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-210-2",
+      "track": 210,
+      "question": "O co pytała Mami na dworcu?",
+      "meaning": {
+        "en": "What did Mami ask about at the station?"
+      },
+      "options": [
+        "O drogę do Torunia.",
+        "O cenę biletu do Krakowa.",
+        "O pociąg do Zakopanego."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-210-3",
+      "track": 210,
+      "question": "Dokąd wolałaby jechać Angela?",
+      "meaning": {
+        "en": "Where would Angela rather go?"
+      },
+      "options": [
+        "Do puszczy.",
+        "Do miasta.",
+        "Nad morze."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-210-4",
+      "track": 210,
+      "statement": "Angela lubi weekendy w mieście.",
+      "meaning": {
+        "en": "Angela likes weekends in town."
+      },
+      "answer": false,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-210-5",
+      "track": 210,
+      "question": "Gdzie Mami woli oglądać naturę?",
+      "meaning": {
+        "en": "Where does Mami prefer to watch nature?"
+      },
+      "options": [
+        "W telewizji.",
+        "W lesie.",
+        "W górach."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l20-210-6",
+      "track": 210,
+      "question": "Dokąd chce jechać Javier?",
+      "meaning": {
+        "en": "Where does Javier want to go?"
+      },
+      "options": [
+        "W Tatry.",
+        "Do Torunia.",
+        "Nad morze."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l20-210-7",
+      "track": 210,
+      "statement": "Przyjaciele spacerują teraz nad Wisłą.",
+      "meaning": {
+        "en": "The friends are walking by the Vistula now."
+      },
+      "answer": true,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l20-210-8",
+      "track": 210,
+      "question": "Gdzie spacerują przyjaciele?",
+      "meaning": {
+        "en": "Where are the friends walking? (two words)"
+      },
+      "acceptedAnswers": [
+        "nad Wisłą"
+      ],
+      "lines": [
+        1,
+        1
+      ]
     }
   ]
 }

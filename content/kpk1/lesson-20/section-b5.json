@@ -1,0 +1,452 @@
+{
+  "id": "kpk1-l20-b5",
+  "section": {
+    "letter": "B",
+    "heading": "Dworzec PKP",
+    "meaning": {
+      "en": "The railway station"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-b5-t01",
+      "before": "kpk1-l20-b5-e01",
+      "title": {
+        "en": "W kasie"
+      },
+      "body": {
+        "en": "At the ticket office: *przepraszam, ile kosztuje bilet normalny do Torunia przez Warszawę?* (via Warsaw). The cashier asks *która klasa?*, and you answer *druga*. Ask *czy można płacić kartą?* (can I pay by card?): perhaps only *w okienku obok*, at the next window. Last, *z którego peronu odjeżdża ten pociąg?*: *z drugiego*, from platform two."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b5-e01",
+      "prompt": "przez Warszawę",
+      "options": [
+        {
+          "en": "via Warsaw"
+        },
+        {
+          "en": "from Warsaw"
+        },
+        {
+          "en": "to Warsaw"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przez-warszawe"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-b5-e02",
+      "text": "Ile kosztuje bilet do Torunia przez Warszawę?",
+      "meaning": {
+        "en": "How much is a ticket to Toruń via Warsaw?"
+      },
+      "distractors": [
+        "Ile kosztuje bilet do Warszawy przez Toruń?",
+        "Ile kosztuje bilet z Torunia?"
+      ],
+      "items": [
+        "ile",
+        "kosztowac-kosztuje",
+        "bilet",
+        "torun",
+        "przez-warszawe"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b5-e03",
+      "prompt": "obcokrajowiec",
+      "options": [
+        {
+          "en": "a student"
+        },
+        {
+          "en": "a foreigner (jesteśmy obcokrajowcami: we are foreigners)"
+        },
+        {
+          "en": "a pensioner"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "obcokrajowiec"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-b5-e04",
+      "text": "Przepraszam, jesteśmy ___.",
+      "meaning": {
+        "en": "Excuse me, we are foreigners."
+      },
+      "gaps": [
+        [
+          "obcokrajowcami"
+        ]
+      ],
+      "distractors": [
+        "obcokrajowiec",
+        "obcokrajowca"
+      ],
+      "items": [
+        "przepraszam",
+        "byc-jestesmy",
+        "obcokrajowiec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b5-e05",
+      "prompt": "klasa",
+      "options": [
+        {
+          "en": "a carriage"
+        },
+        {
+          "en": "a seat"
+        },
+        {
+          "en": "a class (druga klasa: second class; która klasa?: which class?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "klasa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b5-e06",
+      "prompt": "która klasa?",
+      "options": [
+        {
+          "en": "which class?"
+        },
+        {
+          "en": "which carriage?"
+        },
+        {
+          "en": "which platform?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "ktora-klasa"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-b5-e07",
+      "text": "Bilet do Torunia, druga ___, proszę.",
+      "meaning": {
+        "en": "A ticket to Toruń, second class, please."
+      },
+      "gaps": [
+        [
+          "klasa"
+        ]
+      ],
+      "distractors": [
+        "klasy",
+        "klasę"
+      ],
+      "items": [
+        "bilet",
+        "torun",
+        "druga",
+        "klasa",
+        "prosze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b5-e08",
+      "prompt": "czy można płacić kartą?",
+      "options": [
+        {
+          "en": "can I pay in cash?"
+        },
+        {
+          "en": "can I pay by card?"
+        },
+        {
+          "en": "how much is it?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "czy-mozna-placic-karta"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b5-e09",
+      "prompt": "okienko",
+      "options": [
+        {
+          "en": "a platform"
+        },
+        {
+          "en": "a door"
+        },
+        {
+          "en": "a ticket window (w okienku obok: at the next window)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "okienko"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-b5-e10",
+      "prompt": {
+        "en": "yes, but only at the next window"
+      },
+      "acceptedAnswers": [
+        "tak, ale tylko w okienku obok"
+      ],
+      "distractors": [
+        "okienko",
+        "kasie"
+      ],
+      "items": [
+        "tak",
+        "ale",
+        "tylko",
+        "okienko",
+        "obok"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b5-e11",
+      "prompt": "z którego peronu?",
+      "options": [
+        {
+          "en": "from which platform?"
+        },
+        {
+          "en": "at what time?"
+        },
+        {
+          "en": "which class?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-ktorego-peronu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b5-e12",
+      "prompt": "z drugiego peronu",
+      "options": [
+        {
+          "en": "from platform one"
+        },
+        {
+          "en": "from platform two"
+        },
+        {
+          "en": "to the second platform"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-drugiego-peronu"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-b5-e13",
+      "pairs": [
+        {
+          "polish": "która klasa?",
+          "meaning": {
+            "en": "which class?"
+          }
+        },
+        {
+          "polish": "przez Warszawę",
+          "meaning": {
+            "en": "via Warsaw"
+          }
+        },
+        {
+          "polish": "w okienku obok",
+          "meaning": {
+            "en": "at the next window"
+          }
+        },
+        {
+          "polish": "z którego peronu?",
+          "meaning": {
+            "en": "from which platform?"
+          }
+        },
+        {
+          "polish": "z drugiego peronu",
+          "meaning": {
+            "en": "from platform two"
+          }
+        }
+      ],
+      "items": [
+        "ktora-klasa",
+        "przez-warszawe",
+        "okienko",
+        "obok",
+        "z-ktorego-peronu",
+        "z-drugiego-peronu"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-b5-e14",
+      "prompt": {
+        "en": "can I pay by card?"
+      },
+      "acceptedAnswers": [
+        "czy można płacić kartą?"
+      ],
+      "items": [
+        "czy-mozna-placic-karta"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-b5-e15",
+      "acceptedAnswers": [
+        "z którego peronu odjeżdża pociąg do Torunia?"
+      ],
+      "meaning": {
+        "en": "from which platform does the train to Toruń leave?"
+      },
+      "items": [
+        "z-ktorego-peronu",
+        "odjezdzac-odjezdza",
+        "pociag",
+        "torun"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l20-b5-e16",
+      "lines": [
+        "Słucham?",
+        "Przepraszam, ile kosztuje bilet normalny do Torunia przez Warszawę?",
+        "Sto czterdzieści dziewięć złotych. Która klasa?",
+        "Druga. Czy można płacić kartą?",
+        "Tak, ale tylko w okienku obok."
+      ],
+      "meaning": {
+        "en": "At the ticket office."
+      },
+      "items": [
+        "slucham",
+        "przepraszam",
+        "ile",
+        "kosztowac-kosztuje",
+        "bilet",
+        "normalny",
+        "torun",
+        "przez-warszawe",
+        "zloty",
+        "ktora-klasa",
+        "druga",
+        "czy-mozna-placic-karta",
+        "tak",
+        "ale",
+        "tylko",
+        "okienko",
+        "obok"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-b5-e17",
+      "text": "Pociąg do Torunia odjeżdża z drugiego ___.",
+      "meaning": {
+        "en": "The train to Toruń leaves from platform two."
+      },
+      "gaps": [
+        [
+          "peronu"
+        ]
+      ],
+      "distractors": [
+        "peron",
+        "peronie"
+      ],
+      "items": [
+        "pociag",
+        "torun",
+        "odjezdzac-odjezdza",
+        "z-drugiego-peronu"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-b5-e18",
+      "lines": [
+        "Bilet do Torunia przez Warszawę kosztuje sto czterdzieści dziewięć złotych.",
+        "Kartą można płacić tylko w okienku obok.",
+        "Pociąg odjeżdża z drugiego peronu."
+      ],
+      "meaning": {
+        "en": "Buying a ticket to Toruń."
+      },
+      "statements": [
+        {
+          "text": "Bilet kosztuje sto czterdzieści dziewięć złotych.",
+          "meaning": {
+            "en": "The ticket costs 149 złoty."
+          },
+          "true": true
+        },
+        {
+          "text": "Kartą można płacić w każdym okienku.",
+          "meaning": {
+            "en": "You can pay by card at any window."
+          },
+          "true": false
+        },
+        {
+          "text": "Pociąg odjeżdża z drugiego peronu.",
+          "meaning": {
+            "en": "The train leaves from platform two."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "bilet",
+        "torun",
+        "przez-warszawe",
+        "kosztowac-kosztuje",
+        "zloty",
+        "karta-instr",
+        "mozna",
+        "tylko",
+        "okienko",
+        "obok",
+        "pociag",
+        "odjezdzac-odjezdza",
+        "z-drugiego-peronu"
+      ]
+    }
+  ]
+}

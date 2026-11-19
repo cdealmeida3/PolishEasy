@@ -1,0 +1,410 @@
+{
+  "id": "kpk1-l20-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Dokąd można pojechać na weekend?",
+    "meaning": {
+      "en": "Where can you go for the weekend?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-a4-t01",
+      "before": "kpk1-l20-a4-e01",
+      "title": {
+        "en": "Morze, rzeka, góry, jeziora"
+      },
+      "body": {
+        "en": "In the north Poland lies on the sea, *nad morzem*: *nad Bałtykiem*. *Wisła*, the longest river, *najdłuższa rzeka*, runs into it. In the south are the mountains, and the most popular with tourists, *najbardziej turystyczne*, are *Tatry*. In the north-east is *Mazury*, a region, *region*, of a thousand lakes: *jezioro*, *jeziora*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a4-e01",
+      "prompt": "morze",
+      "options": [
+        {
+          "en": "a lake"
+        },
+        {
+          "en": "a river"
+        },
+        {
+          "en": "the sea (nad morzem: at the seaside; nad morze: to the seaside)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "morze"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a4-e02",
+      "prompt": "Bałtyk",
+      "options": [
+        {
+          "en": "the Baltic Sea (nad Bałtykiem: on the Baltic; nad Bałtyk: to the Baltic)"
+        },
+        {
+          "en": "the Vistula"
+        },
+        {
+          "en": "the Tatras"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "baltyk"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-a4-e03",
+      "text": "Polska leży nad Bałtykiem.",
+      "meaning": {
+        "en": "Poland lies on the Baltic."
+      },
+      "distractors": [
+        "Polska leży w Tatrach.",
+        "Polska leży nad Wisłą."
+      ],
+      "items": [
+        "polska-kraj",
+        "lezec-lezy",
+        "baltyk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a4-e04",
+      "prompt": "Wisła",
+      "options": [
+        {
+          "en": "the Baltic"
+        },
+        {
+          "en": "the Vistula, the longest river in Poland (nad Wisłą: on the Vistula; nad Wisłę: to the Vistula)"
+        },
+        {
+          "en": "the Oder"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wisla"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a4-e05",
+      "prompt": "najdłuższy",
+      "options": [
+        {
+          "en": "the shortest"
+        },
+        {
+          "en": "the oldest"
+        },
+        {
+          "en": "the longest (najdłuższa rzeka: the longest river) (najdłuższy, najdłuższa, najdłuższe)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "najdluzszy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a4-e06",
+      "text": "Wisła to ___ polska rzeka.",
+      "meaning": {
+        "en": "The Vistula is the longest Polish river."
+      },
+      "gaps": [
+        [
+          "najdłuższa"
+        ]
+      ],
+      "distractors": [
+        "najdłuższy",
+        "najdłuższe"
+      ],
+      "items": [
+        "wisla",
+        "to",
+        "najdluzszy",
+        "polski",
+        "rzeka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a4-e07",
+      "prompt": "Tatry",
+      "options": [
+        {
+          "en": "the Tatras, the highest mountains in Poland (w Tatrach: in the Tatras; w Tatry: to the Tatras)"
+        },
+        {
+          "en": "the Baltic"
+        },
+        {
+          "en": "the lakes"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "tatry"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a4-e08",
+      "prompt": "turystyczny",
+      "options": [
+        {
+          "en": "quiet"
+        },
+        {
+          "en": "popular with tourists, touristy (turystyczny, turystyczna, turystyczne)"
+        },
+        {
+          "en": "small"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "turystyczny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a4-e09",
+      "prompt": {
+        "en": "the Tatras are very touristy"
+      },
+      "acceptedAnswers": [
+        "Tatry są bardzo turystyczne"
+      ],
+      "distractors": [
+        "jest",
+        "turystyczny"
+      ],
+      "items": [
+        "tatry",
+        "byc-sa",
+        "bardzo",
+        "turystyczny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a4-e10",
+      "prompt": "jezioro",
+      "options": [
+        {
+          "en": "a forest"
+        },
+        {
+          "en": "a sea"
+        },
+        {
+          "en": "a lake (jeziora: lakes; nad jeziorem: by a lake; nad jezioro: to a lake)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "jezioro"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a4-e11",
+      "prompt": "region",
+      "options": [
+        {
+          "en": "a region (piękny region: a beautiful region)"
+        },
+        {
+          "en": "a country"
+        },
+        {
+          "en": "a town"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "region"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a4-e12",
+      "text": "Na północnym wschodzie jest piękny ___.",
+      "meaning": {
+        "en": "In the north-east there is a beautiful region."
+      },
+      "gaps": [
+        [
+          "region"
+        ]
+      ],
+      "distractors": [
+        "regiony",
+        "kraj"
+      ],
+      "items": [
+        "na-polnocnym-wschodzie",
+        "byc-jest",
+        "piekny",
+        "region"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-a4-e13",
+      "pairs": [
+        {
+          "polish": "morze",
+          "meaning": {
+            "en": "the sea"
+          }
+        },
+        {
+          "polish": "jezioro",
+          "meaning": {
+            "en": "a lake"
+          }
+        },
+        {
+          "polish": "rzeka",
+          "meaning": {
+            "en": "a river"
+          }
+        },
+        {
+          "polish": "region",
+          "meaning": {
+            "en": "a region"
+          }
+        },
+        {
+          "polish": "Tatry",
+          "meaning": {
+            "en": "the Tatras"
+          }
+        }
+      ],
+      "items": [
+        "morze",
+        "jezioro",
+        "rzeka",
+        "region",
+        "tatry"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-a4-e14",
+      "prompt": {
+        "en": "the longest river"
+      },
+      "acceptedAnswers": [
+        "najdłuższa rzeka"
+      ],
+      "items": [
+        "najdluzszy",
+        "rzeka"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-a4-e15",
+      "acceptedAnswers": [
+        "na Mazurach są jeziora"
+      ],
+      "meaning": {
+        "en": "there are lakes in Mazury"
+      },
+      "items": [
+        "na-mazurach",
+        "byc-sa",
+        "jezioro"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-a4-e16",
+      "lines": [
+        "Polska leży nad morzem.",
+        "Na południu są góry: Tatry.",
+        "Na Mazurach jest dużo jezior."
+      ],
+      "meaning": {
+        "en": "Poland from north to south."
+      },
+      "statements": [
+        {
+          "text": "W Polsce nie ma morza.",
+          "meaning": {
+            "en": "There is no sea in Poland."
+          },
+          "true": false
+        },
+        {
+          "text": "Tatry są na południu.",
+          "meaning": {
+            "en": "The Tatras are in the south."
+          },
+          "true": true
+        },
+        {
+          "text": "Na Mazurach są jeziora.",
+          "meaning": {
+            "en": "There are lakes in Mazury."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "polska-kraj",
+        "lezec-lezy",
+        "morze",
+        "poludnie",
+        "byc-sa",
+        "tatry",
+        "na-mazurach",
+        "byc-jest",
+        "duzo",
+        "jezioro"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a4-e17",
+      "prompt": {
+        "en": "the Vistula is a long river"
+      },
+      "acceptedAnswers": [
+        "Wisła to długa rzeka"
+      ],
+      "distractors": [
+        "długi",
+        "jezioro"
+      ],
+      "items": [
+        "wisla",
+        "to",
+        "dlugi",
+        "rzeka"
+      ]
+    }
+  ]
+}

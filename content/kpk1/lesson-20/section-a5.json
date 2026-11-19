@@ -1,0 +1,408 @@
+{
+  "id": "kpk1-l20-a5",
+  "section": {
+    "letter": "A",
+    "heading": "Dokąd można pojechać na weekend?",
+    "meaning": {
+      "en": "Where can you go for the weekend?"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-a5-t01",
+      "before": "kpk1-l20-a5-e01",
+      "title": {
+        "en": "Co to jest?"
+      },
+      "body": {
+        "en": "In the mountains, *w górach*, you walk a *szlak* (a trail) to a *szczyt* (a peak) past a *skała* (a rock), and sleep in a *schronisko*, a mountain hut. By the sea there is a *wyspa*, an island. A *las* is a forest. An old town has *mury*, walls, and a *brama*, a gate."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a5-e01",
+      "prompt": "skała",
+      "options": [
+        {
+          "en": "a tree"
+        },
+        {
+          "en": "a rock, a cliff (skały: rocks)"
+        },
+        {
+          "en": "a lake"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "skala"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a5-e02",
+      "prompt": "szczyt",
+      "options": [
+        {
+          "en": "a valley"
+        },
+        {
+          "en": "a bridge"
+        },
+        {
+          "en": "a peak, a summit (na szczycie: at the top; na szczyt: to the top)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szczyt"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a5-e03",
+      "prompt": "schronisko",
+      "options": [
+        {
+          "en": "a mountain hut, a hostel (w schronisku: in the mountain hut)"
+        },
+        {
+          "en": "a castle"
+        },
+        {
+          "en": "a hotel by the sea"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "schronisko"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a5-e04",
+      "prompt": "szlak",
+      "options": [
+        {
+          "en": "a river"
+        },
+        {
+          "en": "a trail (czerwony szlak: the red trail; szlaki: trails)"
+        },
+        {
+          "en": "a gate"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szlak"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-a5-e05",
+      "text": "Na szczycie jest schronisko.",
+      "meaning": {
+        "en": "There is a mountain hut at the top."
+      },
+      "distractors": [
+        "Na szczycie jest zamek.",
+        "Na wyspie jest schronisko."
+      ],
+      "items": [
+        "szczyt",
+        "byc-jest",
+        "schronisko"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a5-e06",
+      "prompt": {
+        "en": "the red trail goes to the top"
+      },
+      "acceptedAnswers": [
+        "czerwony szlak idzie na szczyt"
+      ],
+      "distractors": [
+        "szczycie",
+        "jedzie"
+      ],
+      "items": [
+        "czerwony",
+        "szlak",
+        "isc-idzie",
+        "szczyt"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a5-e07",
+      "prompt": "wyspa",
+      "options": [
+        {
+          "en": "a lake"
+        },
+        {
+          "en": "a forest"
+        },
+        {
+          "en": "an island (wyspy: islands; na wyspie: on an island; na wyspę: to an island)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wyspa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a5-e08",
+      "prompt": "las",
+      "options": [
+        {
+          "en": "a forest, a wood (lasy: forests)"
+        },
+        {
+          "en": "a field"
+        },
+        {
+          "en": "a rock"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "las"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a5-e09",
+      "text": "Na ___ jest las i jezioro.",
+      "meaning": {
+        "en": "On the island there is a forest and a lake."
+      },
+      "gaps": [
+        [
+          "wyspie"
+        ]
+      ],
+      "distractors": [
+        "wyspa",
+        "wyspę"
+      ],
+      "items": [
+        "wyspa",
+        "byc-jest",
+        "las",
+        "i",
+        "jezioro"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a5-e10",
+      "prompt": "brama",
+      "options": [
+        {
+          "en": "a wall"
+        },
+        {
+          "en": "a gate (bramy: gates)"
+        },
+        {
+          "en": "a window"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "brama"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a5-e11",
+      "prompt": "mur",
+      "options": [
+        {
+          "en": "a gate"
+        },
+        {
+          "en": "a tower"
+        },
+        {
+          "en": "a wall of a town or a castle (mury: walls)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "mur"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-a5-e12",
+      "pairs": [
+        {
+          "polish": "skała",
+          "meaning": {
+            "en": "a rock"
+          }
+        },
+        {
+          "polish": "szczyt",
+          "meaning": {
+            "en": "a peak"
+          }
+        },
+        {
+          "polish": "schronisko",
+          "meaning": {
+            "en": "a mountain hut"
+          }
+        },
+        {
+          "polish": "wyspa",
+          "meaning": {
+            "en": "an island"
+          }
+        },
+        {
+          "polish": "las",
+          "meaning": {
+            "en": "a forest"
+          }
+        }
+      ],
+      "items": [
+        "skala",
+        "szczyt",
+        "schronisko",
+        "wyspa",
+        "las"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-a5-e13",
+      "prompt": {
+        "en": "a mountain hut"
+      },
+      "acceptedAnswers": [
+        "schronisko"
+      ],
+      "items": [
+        "schronisko"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-a5-e14",
+      "acceptedAnswers": [
+        "stare mury i brama"
+      ],
+      "meaning": {
+        "en": "old walls and a gate"
+      },
+      "items": [
+        "stary",
+        "mur",
+        "i",
+        "brama"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a5-e15",
+      "text": "Idziemy ___ na szczyt.",
+      "meaning": {
+        "en": "We walk along the trail to the top."
+      },
+      "gaps": [
+        [
+          "szlakiem"
+        ]
+      ],
+      "distractors": [
+        "szlak",
+        "szczyt"
+      ],
+      "items": [
+        "isc-idziemy",
+        "szlak",
+        "szczyt"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-a5-e16",
+      "lines": [
+        "Idziemy w góry czerwonym szlakiem.",
+        "Na szczycie jest małe schronisko.",
+        "Tam można spać."
+      ],
+      "meaning": {
+        "en": "A walk in the mountains."
+      },
+      "statements": [
+        {
+          "text": "Idą czerwonym szlakiem.",
+          "meaning": {
+            "en": "They walk along the red trail."
+          },
+          "true": true
+        },
+        {
+          "text": "Na szczycie jest hotel.",
+          "meaning": {
+            "en": "There is a hotel at the top."
+          },
+          "true": false
+        },
+        {
+          "text": "W schronisku można spać.",
+          "meaning": {
+            "en": "You can sleep in the mountain hut."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "isc-idziemy",
+        "w-gory",
+        "szlak",
+        "szczyt",
+        "byc-jest",
+        "maly",
+        "schronisko",
+        "tam",
+        "mozna",
+        "spac"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a5-e17",
+      "prompt": {
+        "en": "lakes and forests"
+      },
+      "acceptedAnswers": [
+        "jeziora i lasy"
+      ],
+      "distractors": [
+        "jezioro",
+        "las"
+      ],
+      "items": [
+        "jezioro",
+        "i",
+        "las"
+      ]
+    }
+  ]
+}

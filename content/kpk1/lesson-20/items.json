@@ -1,0 +1,1115 @@
+{
+  "items": [
+    {
+      "id": "mozna",
+      "text": "można",
+      "meaning": {
+        "en": "one can, you can (dokąd można pojechać?: where can you go?)"
+      }
+    },
+    {
+      "id": "pojechac",
+      "text": "pojechać",
+      "meaning": {
+        "en": "to go (by car, train or bus), to travel (pojechać na weekend: to go away for the weekend)"
+      }
+    },
+    {
+      "id": "polnoc",
+      "text": "północ",
+      "meaning": {
+        "en": "the north (na północy: in the north)"
+      },
+      "forms": [
+        "na północy"
+      ]
+    },
+    {
+      "id": "poludnie",
+      "text": "południe",
+      "meaning": {
+        "en": "the south (na południu: in the south)"
+      },
+      "forms": [
+        "na południu"
+      ]
+    },
+    {
+      "id": "wschod",
+      "text": "wschód",
+      "meaning": {
+        "en": "the east (na wschodzie: in the east)"
+      },
+      "forms": [
+        "na wschodzie"
+      ]
+    },
+    {
+      "id": "zachod",
+      "text": "zachód",
+      "meaning": {
+        "en": "the west (na zachodzie: in the west)"
+      },
+      "forms": [
+        "na zachodzie"
+      ]
+    },
+    {
+      "id": "gdansk",
+      "text": "Gdańsk",
+      "meaning": {
+        "en": "Gdańsk (w Gdańsku: in Gdańsk; do Gdańska: to Gdańsk)"
+      },
+      "forms": [
+        "w Gdańsku",
+        "do Gdańska"
+      ]
+    },
+    {
+      "id": "na-polnocnym-zachodzie",
+      "text": "na północnym zachodzie",
+      "meaning": {
+        "en": "in the north-west"
+      }
+    },
+    {
+      "id": "na-polnocnym-wschodzie",
+      "text": "na północnym wschodzie",
+      "meaning": {
+        "en": "in the north-east"
+      }
+    },
+    {
+      "id": "na-poludniowym-zachodzie",
+      "text": "na południowym zachodzie",
+      "meaning": {
+        "en": "in the south-west"
+      }
+    },
+    {
+      "id": "na-poludniowym-wschodzie",
+      "text": "na południowym wschodzie",
+      "meaning": {
+        "en": "in the south-east"
+      }
+    },
+    {
+      "id": "wroclaw",
+      "text": "Wrocław",
+      "meaning": {
+        "en": "Wrocław (we Wrocławiu: in Wrocław; do Wrocławia: to Wrocław)"
+      },
+      "forms": [
+        "we Wrocławiu",
+        "do Wrocławia"
+      ]
+    },
+    {
+      "id": "poznan",
+      "text": "Poznań",
+      "meaning": {
+        "en": "Poznań (w Poznaniu: in Poznań; do Poznania: to Poznań)"
+      },
+      "forms": [
+        "w Poznaniu",
+        "do Poznania"
+      ]
+    },
+    {
+      "id": "lublin",
+      "text": "Lublin",
+      "meaning": {
+        "en": "Lublin (w Lublinie: in Lublin; do Lublina: to Lublin)"
+      },
+      "forms": [
+        "w Lublinie",
+        "do Lublina"
+      ]
+    },
+    {
+      "id": "szczecin",
+      "text": "Szczecin",
+      "meaning": {
+        "en": "Szczecin (w Szczecinie: in Szczecin; do Szczecina: to Szczecin)"
+      },
+      "forms": [
+        "w Szczecinie",
+        "do Szczecina"
+      ]
+    },
+    {
+      "id": "polska-kraj",
+      "text": "Polska",
+      "meaning": {
+        "en": "Poland (do Polski: to Poland; stolica Polski: the capital of Poland)"
+      },
+      "forms": [
+        "Polski"
+      ]
+    },
+    {
+      "id": "kraj",
+      "text": "kraj",
+      "meaning": {
+        "en": "a country (duży kraj: a big country)"
+      },
+      "forms": [
+        "kraju"
+      ]
+    },
+    {
+      "id": "w-europie-srodkowej",
+      "text": "w Europie Środkowej",
+      "meaning": {
+        "en": "in Central Europe"
+      }
+    },
+    {
+      "id": "graniczyc-graniczy",
+      "text": "graniczy",
+      "meaning": {
+        "en": "it borders (Polska graniczy z Niemcami: Poland borders Germany)"
+      }
+    },
+    {
+      "id": "granica",
+      "text": "granica",
+      "meaning": {
+        "en": "a border (granica z Niemcami: the border with Germany)"
+      },
+      "forms": [
+        "granicy",
+        "granicę"
+      ]
+    },
+    {
+      "id": "z-niemcami",
+      "text": "z Niemcami",
+      "meaning": {
+        "en": "with Germany"
+      }
+    },
+    {
+      "id": "z-czechami",
+      "text": "z Czechami",
+      "meaning": {
+        "en": "with the Czech Republic"
+      }
+    },
+    {
+      "id": "z-ukraina",
+      "text": "z Ukrainą",
+      "meaning": {
+        "en": "with Ukraine"
+      }
+    },
+    {
+      "id": "wisla",
+      "text": "Wisła",
+      "meaning": {
+        "en": "the Vistula, the longest river in Poland (nad Wisłą: on the Vistula; nad Wisłę: to the Vistula)"
+      },
+      "forms": [
+        "nad Wisłą",
+        "nad Wisłę"
+      ]
+    },
+    {
+      "id": "najdluzszy",
+      "text": "najdłuższy",
+      "meaning": {
+        "en": "the longest (najdłuższa rzeka: the longest river) (najdłuższy, najdłuższa, najdłuższe)"
+      },
+      "forms": [
+        "najdłuższa",
+        "najdłuższe"
+      ]
+    },
+    {
+      "id": "morze",
+      "text": "morze",
+      "meaning": {
+        "en": "the sea (nad morzem: at the seaside; nad morze: to the seaside)"
+      },
+      "forms": [
+        "nad morzem",
+        "nad morze"
+      ]
+    },
+    {
+      "id": "baltyk",
+      "text": "Bałtyk",
+      "meaning": {
+        "en": "the Baltic Sea (nad Bałtykiem: on the Baltic; nad Bałtyk: to the Baltic)"
+      },
+      "forms": [
+        "nad Bałtykiem",
+        "nad Bałtyk"
+      ]
+    },
+    {
+      "id": "tatry",
+      "text": "Tatry",
+      "meaning": {
+        "en": "the Tatras, the highest mountains in Poland (w Tatrach: in the Tatras; w Tatry: to the Tatras)"
+      },
+      "forms": [
+        "w Tatrach",
+        "w Tatry"
+      ]
+    },
+    {
+      "id": "jezioro",
+      "text": "jezioro",
+      "meaning": {
+        "en": "a lake (jeziora: lakes; nad jeziorem: by a lake; nad jezioro: to a lake)"
+      },
+      "forms": [
+        "jeziora",
+        "jezior",
+        "nad jeziorem",
+        "nad jezioro"
+      ]
+    },
+    {
+      "id": "region",
+      "text": "region",
+      "meaning": {
+        "en": "a region (piękny region: a beautiful region)"
+      },
+      "forms": [
+        "regiony"
+      ]
+    },
+    {
+      "id": "turystyczny",
+      "text": "turystyczny",
+      "meaning": {
+        "en": "popular with tourists, touristy (turystyczny, turystyczna, turystyczne)"
+      },
+      "forms": [
+        "turystyczna",
+        "turystyczne"
+      ]
+    },
+    {
+      "id": "skala",
+      "text": "skała",
+      "meaning": {
+        "en": "a rock, a cliff (skały: rocks)"
+      },
+      "forms": [
+        "skały"
+      ]
+    },
+    {
+      "id": "szczyt",
+      "text": "szczyt",
+      "meaning": {
+        "en": "a peak, a summit (na szczycie: at the top; na szczyt: to the top)"
+      },
+      "forms": [
+        "na szczycie",
+        "na szczyt"
+      ]
+    },
+    {
+      "id": "schronisko",
+      "text": "schronisko",
+      "meaning": {
+        "en": "a mountain hut, a hostel (w schronisku: in the mountain hut)"
+      },
+      "forms": [
+        "w schronisku",
+        "schroniska",
+        "do schroniska"
+      ]
+    },
+    {
+      "id": "szlak",
+      "text": "szlak",
+      "meaning": {
+        "en": "a trail (czerwony szlak: the red trail; szlaki: trails)"
+      },
+      "forms": [
+        "szlakiem",
+        "szlaki"
+      ]
+    },
+    {
+      "id": "wyspa",
+      "text": "wyspa",
+      "meaning": {
+        "en": "an island (wyspy: islands; na wyspie: on an island; na wyspę: to an island)"
+      },
+      "forms": [
+        "wyspy",
+        "na wyspie",
+        "na wyspę"
+      ]
+    },
+    {
+      "id": "las",
+      "text": "las",
+      "meaning": {
+        "en": "a forest, a wood (lasy: forests)"
+      },
+      "forms": [
+        "lasy",
+        "lasów"
+      ]
+    },
+    {
+      "id": "brama",
+      "text": "brama",
+      "meaning": {
+        "en": "a gate (bramy: gates)"
+      },
+      "forms": [
+        "bramy"
+      ]
+    },
+    {
+      "id": "mur",
+      "text": "mur",
+      "meaning": {
+        "en": "a wall of a town or a castle (mury: walls)"
+      },
+      "forms": [
+        "mury"
+      ]
+    },
+    {
+      "id": "zabytek",
+      "text": "zabytek",
+      "meaning": {
+        "en": "a historic monument, a sight (zabytki: sights)"
+      },
+      "forms": [
+        "zabytki",
+        "zabytków"
+      ]
+    },
+    {
+      "id": "kopalnia-soli",
+      "text": "kopalnia soli",
+      "meaning": {
+        "en": "a salt mine (w kopalni soli: in the salt mine)"
+      },
+      "forms": [
+        "w kopalni soli"
+      ]
+    },
+    {
+      "id": "stare-miasto",
+      "text": "Stare Miasto",
+      "meaning": {
+        "en": "the Old Town (na Starym Mieście: in the Old Town)"
+      },
+      "forms": [
+        "na Starym Mieście"
+      ]
+    },
+    {
+      "id": "sredniowieczny",
+      "text": "średniowieczny",
+      "meaning": {
+        "en": "medieval (średniowieczny, średniowieczna, średniowieczne)"
+      },
+      "forms": [
+        "średniowieczna",
+        "średniowieczne"
+      ]
+    },
+    {
+      "id": "najwiekszy",
+      "text": "największy",
+      "meaning": {
+        "en": "the biggest (największy, największa, największe)"
+      },
+      "forms": [
+        "największa",
+        "największe"
+      ]
+    },
+    {
+      "id": "najstarszy",
+      "text": "najstarszy",
+      "meaning": {
+        "en": "the oldest (najstarszy, najstarsza, najstarsze)"
+      },
+      "forms": [
+        "najstarsza",
+        "najstarsze"
+      ]
+    },
+    {
+      "id": "najwyzszy",
+      "text": "najwyższy",
+      "meaning": {
+        "en": "the highest, the tallest (najwyższy, najwyższa, najwyższe)"
+      },
+      "forms": [
+        "najwyższa",
+        "najwyższe"
+      ]
+    },
+    {
+      "id": "warto-zobaczyc",
+      "text": "warto zobaczyć",
+      "meaning": {
+        "en": "it is worth seeing"
+      }
+    },
+    {
+      "id": "dworzec",
+      "text": "dworzec",
+      "meaning": {
+        "en": "a station (na dworzec: to the station; z dworca: from the station)"
+      },
+      "forms": [
+        "na dworzec",
+        "z dworca",
+        "dworca"
+      ]
+    },
+    {
+      "id": "pociag",
+      "text": "pociąg",
+      "meaning": {
+        "en": "a train (pociągi: trains)"
+      },
+      "forms": [
+        "pociągi",
+        "pociągu"
+      ]
+    },
+    {
+      "id": "peron",
+      "text": "peron",
+      "meaning": {
+        "en": "a platform (na peron: to the platform; na peronie: on the platform; z peronu: from the platform)"
+      },
+      "forms": [
+        "na peronie",
+        "z peronu",
+        "na peron"
+      ]
+    },
+    {
+      "id": "informacja",
+      "text": "informacja",
+      "meaning": {
+        "en": "the information desk (w informacji: at the information desk)"
+      },
+      "forms": [
+        "w informacji"
+      ]
+    },
+    {
+      "id": "w-kasie",
+      "text": "w kasie",
+      "meaning": {
+        "en": "at the ticket office"
+      }
+    },
+    {
+      "id": "odjezdzac-odjezdza",
+      "text": "odjeżdża",
+      "meaning": {
+        "en": "it leaves, it departs (pociąg odjeżdża o ósmej: the train leaves at eight)"
+      }
+    },
+    {
+      "id": "przyjezdzac-przyjezdza",
+      "text": "przyjeżdża",
+      "meaning": {
+        "en": "it arrives (pociąg przyjeżdża o dziesiątej: the train arrives at ten)"
+      }
+    },
+    {
+      "id": "rozklad-jazdy",
+      "text": "rozkład jazdy",
+      "meaning": {
+        "en": "a timetable"
+      }
+    },
+    {
+      "id": "tam-i-z-powrotem",
+      "text": "tam i z powrotem",
+      "meaning": {
+        "en": "there and back, return (bilet tam i z powrotem: a return ticket)"
+      }
+    },
+    {
+      "id": "w-jedna-strone",
+      "text": "w jedną stronę",
+      "meaning": {
+        "en": "one way (bilet w jedną stronę: a single ticket)"
+      }
+    },
+    {
+      "id": "znizka",
+      "text": "zniżka",
+      "meaning": {
+        "en": "a discount (ze zniżką: with a discount)"
+      },
+      "forms": [
+        "ze zniżką"
+      ]
+    },
+    {
+      "id": "student-dla",
+      "text": "dla studentów",
+      "meaning": {
+        "en": "for students (dla studenta: for a student)"
+      },
+      "forms": [
+        "dla studenta"
+      ]
+    },
+    {
+      "id": "dla-emerytow",
+      "text": "dla emerytów",
+      "meaning": {
+        "en": "for pensioners"
+      }
+    },
+    {
+      "id": "miejscowka",
+      "text": "miejscówka",
+      "meaning": {
+        "en": "a seat reservation (z miejscówką: with a seat reservation)"
+      },
+      "forms": [
+        "z miejscówką"
+      ]
+    },
+    {
+      "id": "za-sto-procent-ceny",
+      "text": "za sto procent ceny",
+      "meaning": {
+        "en": "at the full price, for a hundred per cent of the price"
+      }
+    },
+    {
+      "id": "pociag-osobowy",
+      "text": "pociąg osobowy",
+      "meaning": {
+        "en": "a slow local train"
+      }
+    },
+    {
+      "id": "pociag-pospieszny",
+      "text": "pociąg pospieszny",
+      "meaning": {
+        "en": "a fast train that stops only at bigger stations"
+      }
+    },
+    {
+      "id": "intercity",
+      "text": "Intercity",
+      "meaning": {
+        "en": "Intercity, a very fast train with seat reservations"
+      }
+    },
+    {
+      "id": "bezposredni",
+      "text": "bezpośredni",
+      "meaning": {
+        "en": "direct (pociąg bezpośredni: a direct train; nie ma bezpośredniego połączenia: there is no direct connection) (bezpośredni, bezpośrednia, bezpośrednie)"
+      },
+      "forms": [
+        "bezpośrednia",
+        "bezpośrednie",
+        "bezpośredniego"
+      ]
+    },
+    {
+      "id": "przesiadka",
+      "text": "przesiadka",
+      "meaning": {
+        "en": "a change of trains (na przesiadkę: for the change; bez przesiadki: without changing)"
+      },
+      "forms": [
+        "na przesiadkę",
+        "bez przesiadki",
+        "z przesiadką"
+      ]
+    },
+    {
+      "id": "wagon",
+      "text": "wagon",
+      "meaning": {
+        "en": "a carriage (w wagonie: in the carriage)"
+      },
+      "forms": [
+        "w wagonie"
+      ]
+    },
+    {
+      "id": "przedzial",
+      "text": "przedział",
+      "meaning": {
+        "en": "a compartment, a \"room\" in a carriage (w przedziale: in the compartment)"
+      },
+      "forms": [
+        "w przedziale"
+      ]
+    },
+    {
+      "id": "szybki",
+      "text": "szybki",
+      "meaning": {
+        "en": "fast (bardzo szybki pociąg: a very fast train) (szybki, szybka, szybkie)"
+      },
+      "forms": [
+        "szybka",
+        "szybkie"
+      ]
+    },
+    {
+      "id": "o-ktorej-godzinie",
+      "text": "o której godzinie?",
+      "meaning": {
+        "en": "at what time?"
+      }
+    },
+    {
+      "id": "polaczenie",
+      "text": "połączenie",
+      "meaning": {
+        "en": "a connection (bezpośrednie połączenie: a direct connection)"
+      },
+      "forms": [
+        "połączenia"
+      ]
+    },
+    {
+      "id": "to-znaczy",
+      "text": "to znaczy",
+      "meaning": {
+        "en": "that means, I mean"
+      }
+    },
+    {
+      "id": "trzeba",
+      "text": "trzeba",
+      "meaning": {
+        "en": "one has to, you need to (trzeba jechać: you need to go)"
+      }
+    },
+    {
+      "id": "bedziemy-na-miejscu",
+      "text": "będziemy na miejscu",
+      "meaning": {
+        "en": "we will be there, we will arrive"
+      }
+    },
+    {
+      "id": "za-pozno",
+      "text": "za późno",
+      "meaning": {
+        "en": "too late"
+      }
+    },
+    {
+      "id": "obcokrajowiec",
+      "text": "obcokrajowiec",
+      "meaning": {
+        "en": "a foreigner (jesteśmy obcokrajowcami: we are foreigners)"
+      },
+      "forms": [
+        "obcokrajowcami"
+      ]
+    },
+    {
+      "id": "o-cene-prosze-pytac",
+      "text": "o cenę proszę pytać",
+      "meaning": {
+        "en": "please ask about the price"
+      }
+    },
+    {
+      "id": "klasa",
+      "text": "klasa",
+      "meaning": {
+        "en": "a class (druga klasa: second class; która klasa?: which class?)"
+      },
+      "forms": [
+        "klasy"
+      ]
+    },
+    {
+      "id": "ktora-klasa",
+      "text": "która klasa?",
+      "meaning": {
+        "en": "which class?"
+      }
+    },
+    {
+      "id": "z-ktorego-peronu",
+      "text": "z którego peronu?",
+      "meaning": {
+        "en": "from which platform?"
+      }
+    },
+    {
+      "id": "z-drugiego-peronu",
+      "text": "z drugiego peronu",
+      "meaning": {
+        "en": "from platform two"
+      }
+    },
+    {
+      "id": "przez-warszawe",
+      "text": "przez Warszawę",
+      "meaning": {
+        "en": "via Warsaw"
+      }
+    },
+    {
+      "id": "okienko",
+      "text": "okienko",
+      "meaning": {
+        "en": "a ticket window (w okienku obok: at the next window)"
+      },
+      "forms": [
+        "w okienku"
+      ]
+    },
+    {
+      "id": "czy-mozna-placic-karta",
+      "text": "czy można płacić kartą?",
+      "meaning": {
+        "en": "can I pay by card?"
+      }
+    },
+    {
+      "id": "torun",
+      "text": "Toruń",
+      "meaning": {
+        "en": "Toruń (w Toruniu: in Toruń; do Torunia: to Toruń)"
+      },
+      "forms": [
+        "w Toruniu",
+        "do Torunia"
+      ]
+    },
+    {
+      "id": "ile-trwa-podroz",
+      "text": "ile trwa podróż?",
+      "meaning": {
+        "en": "how long is the journey?"
+      }
+    },
+    {
+      "id": "odjazd",
+      "text": "odjazd",
+      "meaning": {
+        "en": "a departure (odjazdy: departures)"
+      },
+      "forms": [
+        "odjazdy"
+      ]
+    },
+    {
+      "id": "przyjazd",
+      "text": "przyjazd",
+      "meaning": {
+        "en": "an arrival (przyjazdy: arrivals)"
+      },
+      "forms": [
+        "przyjazdy"
+      ]
+    },
+    {
+      "id": "opozniony",
+      "text": "opóźniony",
+      "meaning": {
+        "en": "late, delayed (pociąg jest opóźniony: the train is delayed) (opóźniony, opóźniona, opóźnione)"
+      },
+      "forms": [
+        "opóźniona",
+        "opóźnione"
+      ]
+    },
+    {
+      "id": "zakopane",
+      "text": "Zakopane",
+      "meaning": {
+        "en": "Zakopane, a town in the Tatras (w Zakopanem: in Zakopane; do Zakopanego: to Zakopane)"
+      },
+      "forms": [
+        "w Zakopanem",
+        "do Zakopanego"
+      ]
+    },
+    {
+      "id": "wycieczka",
+      "text": "wycieczka",
+      "meaning": {
+        "en": "a trip, an excursion (planuję wycieczkę: I am planning a trip)"
+      },
+      "forms": [
+        "wycieczki",
+        "wycieczkę"
+      ]
+    },
+    {
+      "id": "malbork",
+      "text": "Malbork",
+      "meaning": {
+        "en": "Malbork, a town with a great castle (w Malborku: in Malbork; do Malborka: to Malbork)"
+      },
+      "forms": [
+        "w Malborku",
+        "do Malborka"
+      ]
+    },
+    {
+      "id": "dojechac",
+      "text": "dojechać",
+      "meaning": {
+        "en": "to get to (jak dojechać do Torunia?: how do I get to Toruń?; jak dojadę?: how will I get there?)"
+      },
+      "forms": [
+        "dojadę"
+      ]
+    },
+    {
+      "id": "po-co",
+      "text": "po co?",
+      "meaning": {
+        "en": "what for?, why?"
+      }
+    },
+    {
+      "id": "puszcza",
+      "text": "puszcza",
+      "meaning": {
+        "en": "a primeval forest (do puszczy: to the forest; w puszczy: in the forest)"
+      },
+      "forms": [
+        "do puszczy",
+        "w puszczy"
+      ]
+    },
+    {
+      "id": "natura",
+      "text": "natura",
+      "meaning": {
+        "en": "nature (naturę: nature, after a verb)"
+      },
+      "forms": [
+        "naturę"
+      ]
+    },
+    {
+      "id": "zwierzeta",
+      "text": "zwierzęta",
+      "meaning": {
+        "en": "animals"
+      }
+    },
+    {
+      "id": "do-miasta",
+      "text": "do miasta",
+      "meaning": {
+        "en": "to the city, to town"
+      }
+    },
+    {
+      "id": "skad-wiesz",
+      "text": "skąd wiesz?",
+      "meaning": {
+        "en": "how do you know?"
+      }
+    },
+    {
+      "id": "przyjedz",
+      "text": "przyjedź!",
+      "meaning": {
+        "en": "come over! (to one person)"
+      }
+    },
+    {
+      "id": "do-polski",
+      "text": "do Polski",
+      "meaning": {
+        "en": "to Poland"
+      }
+    },
+    {
+      "id": "w-niemczech",
+      "text": "w Niemczech",
+      "meaning": {
+        "en": "in Germany"
+      }
+    },
+    {
+      "id": "do-niemiec",
+      "text": "do Niemiec",
+      "meaning": {
+        "en": "to Germany"
+      }
+    },
+    {
+      "id": "w-czechach",
+      "text": "w Czechach",
+      "meaning": {
+        "en": "in the Czech Republic"
+      }
+    },
+    {
+      "id": "do-czech",
+      "text": "do Czech",
+      "meaning": {
+        "en": "to the Czech Republic"
+      }
+    },
+    {
+      "id": "europa",
+      "text": "Europa",
+      "meaning": {
+        "en": "Europe (w Europie: in Europe; do Europy: to Europe)"
+      },
+      "forms": [
+        "w Europie",
+        "do Europy",
+        "Europy"
+      ]
+    },
+    {
+      "id": "malopolska",
+      "text": "Małopolska",
+      "meaning": {
+        "en": "Małopolska, the region around Kraków (w Małopolsce: in Małopolska; do Małopolski: to Małopolska)"
+      },
+      "forms": [
+        "w Małopolsce",
+        "do Małopolski"
+      ]
+    },
+    {
+      "id": "wieliczka",
+      "text": "Wieliczka",
+      "meaning": {
+        "en": "Wieliczka, a town with an old salt mine (w Wieliczce: in Wieliczka; do Wieliczki: to Wieliczka)"
+      },
+      "forms": [
+        "w Wieliczce",
+        "do Wieliczki"
+      ]
+    },
+    {
+      "id": "beskidy",
+      "text": "Beskidy",
+      "meaning": {
+        "en": "the Beskids, mountains in the south (w Beskidach: in the Beskids; w Beskidy: to the Beskids)"
+      },
+      "forms": [
+        "w Beskidach",
+        "w Beskidy"
+      ]
+    },
+    {
+      "id": "bieszczady",
+      "text": "Bieszczady",
+      "meaning": {
+        "en": "the Bieszczady, mountains in the south-east (w Bieszczadach: in the Bieszczady; w Bieszczady: to the Bieszczady)"
+      },
+      "forms": [
+        "w Bieszczadach",
+        "w Bieszczady"
+      ]
+    },
+    {
+      "id": "sudety",
+      "text": "Sudety",
+      "meaning": {
+        "en": "the Sudetes, mountains in the south-west (w Sudetach: in the Sudetes; w Sudety: to the Sudetes)"
+      },
+      "forms": [
+        "w Sudetach",
+        "w Sudety"
+      ]
+    },
+    {
+      "id": "alpy",
+      "text": "Alpy",
+      "meaning": {
+        "en": "the Alps (w Alpach: in the Alps; w Alpy: to the Alps)"
+      },
+      "forms": [
+        "w Alpach",
+        "w Alpy"
+      ]
+    },
+    {
+      "id": "na-narty",
+      "text": "na narty",
+      "meaning": {
+        "en": "skiing, for a skiing trip (jadę na narty: I am going skiing)"
+      }
+    },
+    {
+      "id": "dunajec",
+      "text": "Dunajec",
+      "meaning": {
+        "en": "the Dunajec, a mountain river (nad Dunajcem: by the Dunajec; nad Dunajec: to the Dunajec)"
+      },
+      "forms": [
+        "nad Dunajcem",
+        "nad Dunajec"
+      ]
+    },
+    {
+      "id": "adriatyk",
+      "text": "Adriatyk",
+      "meaning": {
+        "en": "the Adriatic Sea (nad Adriatykiem: by the Adriatic; nad Adriatyk: to the Adriatic)"
+      },
+      "forms": [
+        "nad Adriatykiem",
+        "nad Adriatyk"
+      ]
+    },
+    {
+      "id": "morskie-oko",
+      "text": "Morskie Oko",
+      "meaning": {
+        "en": "Morskie Oko, a lake in the Tatras (nad Morskim Okiem: by Morskie Oko; nad Morskie Oko: to Morskie Oko)"
+      },
+      "forms": [
+        "nad Morskim Okiem",
+        "nad Morskie Oko"
+      ]
+    },
+    {
+      "id": "na-rynek",
+      "text": "na rynek",
+      "meaning": {
+        "en": "to the market square"
+      }
+    },
+    {
+      "id": "sycylia",
+      "text": "Sycylia",
+      "meaning": {
+        "en": "Sicily (na Sycylii: in Sicily; na Sycylię: to Sicily)"
+      },
+      "forms": [
+        "na Sycylii",
+        "na Sycylię"
+      ]
+    },
+    {
+      "id": "na-mazury",
+      "text": "na Mazury",
+      "meaning": {
+        "en": "to Masuria"
+      }
+    }
+  ]
+}

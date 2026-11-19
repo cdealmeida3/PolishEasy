@@ -1,0 +1,432 @@
+{
+  "id": "kpk1-l20-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Dokąd można pojechać na weekend?",
+    "meaning": {
+      "en": "Where can you go for the weekend?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-a3-t01",
+      "before": "kpk1-l20-a3-e01",
+      "title": {
+        "en": "Polska graniczy z Niemcami"
+      },
+      "body": {
+        "en": "*Polska* lies *w Europie Środkowej*, in Central Europe. It is *duży kraj*, a big country. What it borders takes *z* and the instrumental: *Polska graniczy z Niemcami na zachodzie, z Czechami i ze Słowacją na południu, z Ukrainą, z Białorusią i z Litwą na wschodzie, a z Rosją na północy*. *Granica z Niemcami* is the border with Germany. *Polski* is of Poland: *stolica Polski*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a3-e01",
+      "prompt": "Polska",
+      "options": [
+        {
+          "en": "Poland (do Polski: to Poland; stolica Polski: the capital of Poland)"
+        },
+        {
+          "en": "Polish"
+        },
+        {
+          "en": "Germany"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "polska-kraj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a3-e02",
+      "prompt": "w Europie Środkowej",
+      "options": [
+        {
+          "en": "in Western Europe"
+        },
+        {
+          "en": "in Central Europe"
+        },
+        {
+          "en": "in the north of Europe"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-europie-srodkowej"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-a3-e03",
+      "text": "Polska leży w Europie Środkowej.",
+      "meaning": {
+        "en": "Poland is in Central Europe."
+      },
+      "distractors": [
+        "Polska leży na północy Europy.",
+        "Polska to mały kraj."
+      ],
+      "items": [
+        "polska-kraj",
+        "lezec-lezy",
+        "w-europie-srodkowej"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a3-e04",
+      "prompt": "kraj",
+      "options": [
+        {
+          "en": "a city"
+        },
+        {
+          "en": "a region"
+        },
+        {
+          "en": "a country (duży kraj: a big country)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kraj"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a3-e05",
+      "text": "Polska to duży ___.",
+      "meaning": {
+        "en": "Poland is a big country."
+      },
+      "gaps": [
+        [
+          "kraj"
+        ]
+      ],
+      "distractors": [
+        "kraju",
+        "miasto"
+      ],
+      "items": [
+        "polska-kraj",
+        "to",
+        "duzy",
+        "kraj"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a3-e06",
+      "prompt": "graniczy",
+      "options": [
+        {
+          "en": "it borders (Polska graniczy z Niemcami: Poland borders Germany)"
+        },
+        {
+          "en": "it lies"
+        },
+        {
+          "en": "it travels"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "graniczyc-graniczy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a3-e07",
+      "prompt": "z Niemcami",
+      "options": [
+        {
+          "en": "with Ukraine"
+        },
+        {
+          "en": "with Germany"
+        },
+        {
+          "en": "from Germany"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-niemcami"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a3-e08",
+      "prompt": {
+        "en": "Poland borders Germany"
+      },
+      "acceptedAnswers": [
+        "Polska graniczy z Niemcami"
+      ],
+      "distractors": [
+        "leży",
+        "Niemiec"
+      ],
+      "items": [
+        "polska-kraj",
+        "graniczyc-graniczy",
+        "z-niemcami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a3-e09",
+      "prompt": "granica",
+      "options": [
+        {
+          "en": "a river"
+        },
+        {
+          "en": "a road"
+        },
+        {
+          "en": "a border (granica z Niemcami: the border with Germany)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "granica"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a3-e10",
+      "prompt": "z Czechami",
+      "options": [
+        {
+          "en": "with the Czech Republic"
+        },
+        {
+          "en": "with Germany"
+        },
+        {
+          "en": "in the Czech Republic"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-czechami"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-a3-e11",
+      "prompt": "z Ukrainą",
+      "options": [
+        {
+          "en": "with the Czech Republic"
+        },
+        {
+          "en": "with Ukraine"
+        },
+        {
+          "en": "in Ukraine"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "z-ukraina"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a3-e12",
+      "text": "Na wschodzie Polska graniczy z ___.",
+      "meaning": {
+        "en": "In the east Poland borders Ukraine."
+      },
+      "gaps": [
+        [
+          "Ukrainą"
+        ]
+      ],
+      "distractors": [
+        "Ukraina",
+        "Ukrainy"
+      ],
+      "items": [
+        "wschod",
+        "polska-kraj",
+        "graniczyc-graniczy",
+        "z-ukraina"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-a3-e13",
+      "pairs": [
+        {
+          "polish": "kraj",
+          "meaning": {
+            "en": "a country"
+          }
+        },
+        {
+          "polish": "granica",
+          "meaning": {
+            "en": "a border"
+          }
+        },
+        {
+          "polish": "graniczy",
+          "meaning": {
+            "en": "it borders"
+          }
+        },
+        {
+          "polish": "z Niemcami",
+          "meaning": {
+            "en": "with Germany"
+          }
+        },
+        {
+          "polish": "z Czechami",
+          "meaning": {
+            "en": "with the Czech Republic"
+          }
+        }
+      ],
+      "items": [
+        "kraj",
+        "granica",
+        "graniczyc-graniczy",
+        "z-niemcami",
+        "z-czechami"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-a3-e14",
+      "prompt": {
+        "en": "in Central Europe"
+      },
+      "acceptedAnswers": [
+        "w Europie Środkowej"
+      ],
+      "items": [
+        "w-europie-srodkowej"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-a3-e15",
+      "acceptedAnswers": [
+        "granica z Niemcami"
+      ],
+      "meaning": {
+        "en": "the border with Germany"
+      },
+      "items": [
+        "granica",
+        "z-niemcami"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-a3-e16",
+      "lines": [
+        "Polska leży w Europie Środkowej.",
+        "Na zachodzie graniczy z Niemcami, a na południu z Czechami.",
+        "Stolica Polski to Warszawa."
+      ],
+      "meaning": {
+        "en": "Poland in a few words."
+      },
+      "statements": [
+        {
+          "text": "Polska leży w Europie Środkowej.",
+          "meaning": {
+            "en": "Poland is in Central Europe."
+          },
+          "true": true
+        },
+        {
+          "text": "Na zachodzie Polska graniczy z Czechami.",
+          "meaning": {
+            "en": "In the west Poland borders the Czech Republic."
+          },
+          "true": false
+        },
+        {
+          "text": "Warszawa to stolica Polski.",
+          "meaning": {
+            "en": "Warsaw is the capital of Poland."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "polska-kraj",
+        "lezec-lezy",
+        "w-europie-srodkowej",
+        "zachod",
+        "graniczyc-graniczy",
+        "z-niemcami",
+        "a",
+        "poludnie",
+        "z-czechami",
+        "stolica",
+        "to",
+        "warszawa"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-a3-e17",
+      "prompt": {
+        "en": "Warsaw is the capital of Poland"
+      },
+      "acceptedAnswers": [
+        "Warszawa to stolica Polski"
+      ],
+      "distractors": [
+        "Polska",
+        "jest"
+      ],
+      "items": [
+        "warszawa",
+        "to",
+        "stolica",
+        "polska-kraj"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-a3-e18",
+      "text": "Na południu Polska graniczy z ___.",
+      "meaning": {
+        "en": "In the south Poland borders the Czech Republic."
+      },
+      "gaps": [
+        [
+          "Czechami"
+        ]
+      ],
+      "distractors": [
+        "Czechy",
+        "Czech"
+      ],
+      "items": [
+        "poludnie",
+        "polska-kraj",
+        "graniczyc-graniczy",
+        "z-czechami"
+      ]
+    }
+  ]
+}

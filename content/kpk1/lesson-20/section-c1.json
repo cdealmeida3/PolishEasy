@@ -1,0 +1,438 @@
+{
+  "id": "kpk1-l20-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Gdzie jesteś? Dokąd jedziesz?",
+    "meaning": {
+      "en": "Where are you? Where are you going?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-c1-t01",
+      "before": "kpk1-l20-c1-e01",
+      "title": {
+        "en": "Gdzie jesteś? Dokąd jedziesz?"
+      },
+      "body": {
+        "en": "Two questions, two answers. *Gdzie jesteś?* asks where you are: *jestem na dworcu, w Toruniu, w puszczy*. *Dokąd jedziesz?* asks where you are going: *jadę na dworzec, do Torunia, do puszczy*. To ask the way: *jak dojechać do Torunia?*, how do I get there?."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c1-e01",
+      "prompt": "dojechać",
+      "options": [
+        {
+          "en": "to get to (jak dojechać do Torunia?: how do I get to Toruń?; jak dojadę?: how will I get there?)"
+        },
+        {
+          "en": "to leave"
+        },
+        {
+          "en": "to stay"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dojechac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-c1-e02",
+      "text": "Jak dojechać do Torunia?",
+      "meaning": {
+        "en": "How do I get to Toruń?"
+      },
+      "distractors": [
+        "Jak długo jesteś w Toruniu?",
+        "Gdzie jest dworzec w Toruniu?"
+      ],
+      "items": [
+        "jak",
+        "dojechac",
+        "torun"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c1-e03",
+      "prompt": "po co?",
+      "options": [
+        {
+          "en": "where to?"
+        },
+        {
+          "en": "what for?, why?"
+        },
+        {
+          "en": "how long?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "po-co"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c1-e04",
+      "text": "Jesteś na dworcu? Po co? Jedziesz ___ Torunia?",
+      "meaning": {
+        "en": "You are at the station? What for? Are you going to Toruń?"
+      },
+      "gaps": [
+        [
+          "do"
+        ]
+      ],
+      "distractors": [
+        "w",
+        "na"
+      ],
+      "items": [
+        "byc-jestes",
+        "na-dworcu",
+        "po-co",
+        "jechac-jedziesz",
+        "torun"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c1-e05",
+      "prompt": "puszcza",
+      "options": [
+        {
+          "en": "a lake"
+        },
+        {
+          "en": "a town"
+        },
+        {
+          "en": "a primeval forest (do puszczy: to the forest; w puszczy: in the forest)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "puszcza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c1-e06",
+      "prompt": "natura",
+      "options": [
+        {
+          "en": "nature (naturę: nature, after a verb)"
+        },
+        {
+          "en": "a town"
+        },
+        {
+          "en": "the weather"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "natura"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c1-e07",
+      "prompt": "zwierzęta",
+      "options": [
+        {
+          "en": "trees"
+        },
+        {
+          "en": "animals"
+        },
+        {
+          "en": "tourists"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zwierzeta"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-c1-e08",
+      "prompt": {
+        "en": "I would rather go to the forest"
+      },
+      "acceptedAnswers": [
+        "wolałabym jechać do puszczy"
+      ],
+      "distractors": [
+        "puszcza",
+        "w"
+      ],
+      "items": [
+        "wolalabym",
+        "jechac",
+        "puszcza"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c1-e09",
+      "prompt": "do miasta",
+      "options": [
+        {
+          "en": "in the city"
+        },
+        {
+          "en": "from the city"
+        },
+        {
+          "en": "to the city, to town"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-miasta"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-c1-e10",
+      "pairs": [
+        {
+          "polish": "do puszczy",
+          "meaning": {
+            "en": "to the forest"
+          }
+        },
+        {
+          "polish": "w puszczy",
+          "meaning": {
+            "en": "in the forest"
+          }
+        },
+        {
+          "polish": "do miasta",
+          "meaning": {
+            "en": "to town"
+          }
+        },
+        {
+          "polish": "po co?",
+          "meaning": {
+            "en": "what for?"
+          }
+        },
+        {
+          "polish": "natura",
+          "meaning": {
+            "en": "nature"
+          }
+        }
+      ],
+      "items": [
+        "puszcza",
+        "do-miasta",
+        "po-co",
+        "natura"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c1-e11",
+      "prompt": "skąd wiesz?",
+      "options": [
+        {
+          "en": "how do you know?"
+        },
+        {
+          "en": "what do you know?"
+        },
+        {
+          "en": "where are you?"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "skad-wiesz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-c1-e12",
+      "prompt": "przyjedź!",
+      "options": [
+        {
+          "en": "go away!"
+        },
+        {
+          "en": "come over! (to one person)"
+        },
+        {
+          "en": "call me!"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przyjedz"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-c1-e13",
+      "prompt": {
+        "en": "how do you know?"
+      },
+      "acceptedAnswers": [
+        "skąd wiesz?"
+      ],
+      "items": [
+        "skad-wiesz"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-c1-e14",
+      "acceptedAnswers": [
+        "w puszczy są zwierzęta"
+      ],
+      "meaning": {
+        "en": "there are animals in the forest"
+      },
+      "items": [
+        "puszcza",
+        "byc-sa",
+        "zwierzeta"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l20-c1-e15",
+      "lines": [
+        "Halo, gdzie jesteś?",
+        "Na dworcu. Pytam, jak dojechać do Torunia.",
+        "Po co? Nie lubisz jeździć do miasta.",
+        "W Toruniu nigdy nie byłam.",
+        "Jesteśmy nad Wisłą. Przyjedź!"
+      ],
+      "meaning": {
+        "en": "A phone call."
+      },
+      "items": [
+        "halo",
+        "gdzie",
+        "byc-jestes",
+        "na-dworcu",
+        "jak",
+        "dojechac",
+        "torun",
+        "po-co",
+        "lubic-lubisz",
+        "do-miasta",
+        "nigdy",
+        "byc-bylam",
+        "wisla",
+        "przyjedz"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-c1-e16",
+      "lines": [
+        "Natura, las i zwierzęta to dla mnie weekend.",
+        "Do miasta nie jadę.",
+        "Naturę wolę oglądać w lesie, nie w telewizji."
+      ],
+      "meaning": {
+        "en": "What I like."
+      },
+      "statements": [
+        {
+          "text": "Ona lubi naturę.",
+          "meaning": {
+            "en": "She likes nature."
+          },
+          "true": true
+        },
+        {
+          "text": "Ona chce jechać do miasta.",
+          "meaning": {
+            "en": "She wants to go to town."
+          },
+          "true": false
+        },
+        {
+          "text": "Ona woli oglądać naturę w telewizji.",
+          "meaning": {
+            "en": "She prefers to watch nature on television."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "natura",
+        "las",
+        "i",
+        "zwierzeta",
+        "weekend",
+        "do-miasta",
+        "nie",
+        "jechac-jade",
+        "wolec-wole",
+        "ogladac",
+        "w-telewizji"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-c1-e17",
+      "prompt": {
+        "en": "come over, we are by the Vistula"
+      },
+      "acceptedAnswers": [
+        "przyjedź, jesteśmy nad Wisłą"
+      ],
+      "distractors": [
+        "Wisła",
+        "jesteś"
+      ],
+      "items": [
+        "przyjedz",
+        "byc-jestesmy",
+        "wisla"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-c1-e18",
+      "text": "Jak ___ z dworca nad Wisłę?",
+      "meaning": {
+        "en": "How will I get from the station to the Vistula?"
+      },
+      "gaps": [
+        [
+          "dojadę"
+        ]
+      ],
+      "distractors": [
+        "dojechać",
+        "dojedziesz"
+      ],
+      "items": [
+        "jak",
+        "dojechac",
+        "dworzec",
+        "wisla"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "id": "kpk1-l20-p1",
+  "section": {
+    "letter": "P",
+    "heading": "Powtórzenie",
+    "meaning": {
+      "en": "Revision"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-p1-t01",
+      "before": "kpk1-l20-p1-e01",
+      "title": {
+        "en": "Gdzie? Dokąd?"
+      },
+      "body": {
+        "en": "All four in one place. A city or a country: *w* + locative, *do* + genitive. Mountains: *w* + locative, *w* + accusative. Water: *nad* + instrumental, *nad* + accusative. A square or an island: *na* + locative, *na* + accusative."
+      },
+      "table": {
+        "title": {
+          "en": "Gdzie? Dokąd?"
+        },
+        "columns": [
+          {
+            "header": "co?"
+          },
+          {
+            "header": "gdzie?"
+          },
+          {
+            "header": "dokąd?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "miasto, kraj",
+              "w Toruniu",
+              "do Torunia"
+            ]
+          },
+          {
+            "cells": [
+              "góry",
+              "w Tatrach",
+              "w Tatry"
+            ]
+          },
+          {
+            "cells": [
+              "woda",
+              "nad morzem",
+              "nad morze"
+            ]
+          },
+          {
+            "cells": [
+              "plac, wyspa",
+              "na rynku",
+              "na rynek"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-p1-e01",
+      "text": "W sobotę jedziemy do Niemiec.",
+      "meaning": {
+        "en": "On Saturday we are going to Germany."
+      },
+      "distractors": [
+        "W sobotę jesteśmy w Niemczech.",
+        "W sobotę jedziemy do Czech."
+      ],
+      "items": [
+        "sobota",
+        "jechac-jedziemy",
+        "do-niemiec"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-p1-e02",
+      "text": "Mieszkam w ___, ale jestem z Polski.",
+      "meaning": {
+        "en": "I live in the Czech Republic, but I am from Poland."
+      },
+      "gaps": [
+        [
+          "Czechach"
+        ]
+      ],
+      "distractors": [
+        "Czech",
+        "Czechy"
+      ],
+      "items": [
+        "mieszkac-mieszkam",
+        "w-czechach",
+        "ale",
+        "byc-jestem",
+        "z-polski"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-p1-e03",
+      "prompt": {
+        "en": "in winter we go to the Czech Republic"
+      },
+      "acceptedAnswers": [
+        "zimą jedziemy do Czech"
+      ],
+      "distractors": [
+        "Czechach",
+        "w"
+      ],
+      "items": [
+        "zima-kiedy",
+        "jechac-jedziemy",
+        "do-czech"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-p1-e04",
+      "pairs": [
+        {
+          "polish": "w Europie",
+          "meaning": {
+            "en": "in Europe"
+          }
+        },
+        {
+          "polish": "do Europy",
+          "meaning": {
+            "en": "to Europe"
+          }
+        },
+        {
+          "polish": "w Tatrach",
+          "meaning": {
+            "en": "in the Tatras"
+          }
+        },
+        {
+          "polish": "nad morze",
+          "meaning": {
+            "en": "to the seaside"
+          }
+        },
+        {
+          "polish": "na rynek",
+          "meaning": {
+            "en": "to the market square"
+          }
+        }
+      ],
+      "items": [
+        "europa",
+        "tatry",
+        "morze",
+        "na-rynek"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-p1-e05",
+      "prompt": {
+        "en": "in Europe"
+      },
+      "acceptedAnswers": [
+        "w Europie"
+      ],
+      "items": [
+        "europa"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-p1-e06",
+      "acceptedAnswers": [
+        "jedziemy nad Adriatyk"
+      ],
+      "meaning": {
+        "en": "we are going to the Adriatic"
+      },
+      "items": [
+        "jechac-jedziemy",
+        "adriatyk"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-p1-e07",
+      "text": "Polska graniczy z ___ na wschodzie.",
+      "meaning": {
+        "en": "Poland borders Ukraine in the east."
+      },
+      "gaps": [
+        [
+          "Ukrainą"
+        ]
+      ],
+      "distractors": [
+        "Ukraina",
+        "Ukrainy"
+      ],
+      "items": [
+        "polska-kraj",
+        "graniczyc-graniczy",
+        "z-ukraina",
+        "wschod"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-p1-e08",
+      "text": "Skąd wiesz, że on jest w Gdańsku?",
+      "meaning": {
+        "en": "How do you know he is in Gdańsk?"
+      },
+      "distractors": [
+        "Skąd wiesz, że on jedzie do Gdańska?",
+        "Skąd wiesz, że on jest w Toruniu?"
+      ],
+      "items": [
+        "skad-wiesz",
+        "ze",
+        "on",
+        "byc-jest",
+        "gdansk"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-p1-e09",
+      "lines": [
+        "Jestem w Gdańsku, nad morzem.",
+        "Jutro jadę do Torunia, a potem w Tatry.",
+        "W sierpniu chcę jechać na Mazury."
+      ],
+      "meaning": {
+        "en": "A summer in Poland."
+      },
+      "statements": [
+        {
+          "text": "Teraz jestem nad morzem.",
+          "meaning": {
+            "en": "Now I am at the seaside."
+          },
+          "true": true
+        },
+        {
+          "text": "Jutro jadę w Tatry.",
+          "meaning": {
+            "en": "Tomorrow I am going to the Tatras."
+          },
+          "true": false
+        },
+        {
+          "text": "W sierpniu jadę na Mazury.",
+          "meaning": {
+            "en": "In August I am going to Masuria."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "byc-jestem",
+        "gdansk",
+        "morze",
+        "jutro",
+        "jechac-jade",
+        "torun",
+        "a",
+        "potem",
+        "tatry",
+        "sierpien",
+        "chciec-chce",
+        "jechac",
+        "na-mazury"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l20-p1-e10",
+      "lines": [
+        "Gdzie jesteś?",
+        "Jestem na dworcu w Krakowie.",
+        "Dokąd jedziesz?",
+        "Jadę do Zakopanego, w Tatry.",
+        "A potem?",
+        "Potem nad morze, do Gdańska."
+      ],
+      "meaning": {
+        "en": "Where are you going?"
+      },
+      "items": [
+        "gdzie",
+        "byc-jestes",
+        "byc-jestem",
+        "na-dworcu",
+        "w-krakowie",
+        "dokad",
+        "jechac-jedziesz",
+        "jechac-jade",
+        "zakopane",
+        "tatry",
+        "a",
+        "potem",
+        "morze",
+        "gdansk"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-p1-e11",
+      "prompt": {
+        "en": "the Adriatic is in the south of Europe"
+      },
+      "acceptedAnswers": [
+        "Adriatyk jest na południu Europy"
+      ],
+      "distractors": [
+        "Europie",
+        "północy"
+      ],
+      "items": [
+        "adriatyk",
+        "byc-jest",
+        "poludnie",
+        "europa"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-p1-e12",
+      "text": "Jedziesz na weekend nad ___ czy w góry?",
+      "meaning": {
+        "en": "Are you going to the lake or to the mountains for the weekend?"
+      },
+      "gaps": [
+        [
+          "jezioro"
+        ]
+      ],
+      "distractors": [
+        "jeziorem",
+        "jeziora"
+      ],
+      "items": [
+        "jechac-jedziesz",
+        "na-weekend",
+        "jezioro",
+        "czy",
+        "w-gory"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-p1-e13",
+      "prompt": {
+        "en": "how do you know?"
+      },
+      "acceptedAnswers": [
+        "skąd wiesz?"
+      ],
+      "items": [
+        "skad-wiesz"
+      ]
+    }
+  ]
+}

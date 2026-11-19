@@ -1,0 +1,384 @@
+{
+  "id": "kpk1-l20-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Dworzec PKP",
+    "meaning": {
+      "en": "The railway station"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-b1-t01",
+      "before": "kpk1-l20-b1-e01",
+      "title": {
+        "en": "Na dworcu"
+      },
+      "body": {
+        "en": "At the station, *na dworcu*, you check *rozkład jazdy* (the timetable): when the train, *pociąg*, *odjeżdża* (leaves) and *przyjeżdża* (arrives), and from which *peron* (platform). You ask questions *w informacji*, at the information desk, and buy a ticket *w kasie*, at the ticket office. PKP is the Polish railway, *Polskie Koleje Państwowe*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b1-e01",
+      "prompt": "dworzec",
+      "options": [
+        {
+          "en": "a bus stop"
+        },
+        {
+          "en": "an airport"
+        },
+        {
+          "en": "a station (na dworzec: to the station; z dworca: from the station)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dworzec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b1-e02",
+      "prompt": "pociąg",
+      "options": [
+        {
+          "en": "a train (pociągi: trains)"
+        },
+        {
+          "en": "a bus"
+        },
+        {
+          "en": "a plane"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pociag"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b1-e03",
+      "prompt": "odjeżdża",
+      "options": [
+        {
+          "en": "it arrives"
+        },
+        {
+          "en": "it leaves, it departs (pociąg odjeżdża o ósmej: the train leaves at eight)"
+        },
+        {
+          "en": "it stops"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "odjezdzac-odjezdza"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-b1-e04",
+      "text": "Pociąg odjeżdża z dworca o ósmej.",
+      "meaning": {
+        "en": "The train leaves the station at eight."
+      },
+      "distractors": [
+        "Pociąg przyjeżdża na dworzec o ósmej.",
+        "Autobus odjeżdża z dworca o ósmej."
+      ],
+      "items": [
+        "pociag",
+        "odjezdzac-odjezdza",
+        "dworzec",
+        "o-godz",
+        "osma"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b1-e05",
+      "prompt": "przyjeżdża",
+      "options": [
+        {
+          "en": "it leaves"
+        },
+        {
+          "en": "it is late"
+        },
+        {
+          "en": "it arrives (pociąg przyjeżdża o dziesiątej: the train arrives at ten)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przyjezdzac-przyjezdza"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-b1-e06",
+      "text": "Pociąg ___ o dziesiątej.",
+      "meaning": {
+        "en": "The train arrives at ten."
+      },
+      "gaps": [
+        [
+          "przyjeżdża"
+        ]
+      ],
+      "distractors": [
+        "przyjeżdżam",
+        "przyjeżdżasz"
+      ],
+      "items": [
+        "pociag",
+        "przyjezdzac-przyjezdza",
+        "o-godz",
+        "dziesiata"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b1-e07",
+      "prompt": "peron",
+      "options": [
+        {
+          "en": "a platform (na peron: to the platform; na peronie: on the platform; z peronu: from the platform)"
+        },
+        {
+          "en": "a ticket"
+        },
+        {
+          "en": "a carriage"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "peron"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b1-e08",
+      "prompt": "informacja",
+      "options": [
+        {
+          "en": "the ticket office"
+        },
+        {
+          "en": "the information desk (w informacji: at the information desk)"
+        },
+        {
+          "en": "the waiting room"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "informacja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b1-e09",
+      "prompt": "w kasie",
+      "options": [
+        {
+          "en": "at the information desk"
+        },
+        {
+          "en": "on the train"
+        },
+        {
+          "en": "at the ticket office"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-kasie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-b1-e10",
+      "prompt": {
+        "en": "I buy a ticket at the ticket office"
+      },
+      "acceptedAnswers": [
+        "kupuję bilet w kasie"
+      ],
+      "distractors": [
+        "kasa",
+        "informacji"
+      ],
+      "items": [
+        "kupowac-kupuje",
+        "bilet",
+        "w-kasie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b1-e11",
+      "prompt": "rozkład jazdy",
+      "options": [
+        {
+          "en": "a timetable"
+        },
+        {
+          "en": "a ticket"
+        },
+        {
+          "en": "a map"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "rozklad-jazdy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-b1-e12",
+      "pairs": [
+        {
+          "polish": "dworzec",
+          "meaning": {
+            "en": "a station"
+          }
+        },
+        {
+          "polish": "pociąg",
+          "meaning": {
+            "en": "a train"
+          }
+        },
+        {
+          "polish": "peron",
+          "meaning": {
+            "en": "a platform"
+          }
+        },
+        {
+          "polish": "w kasie",
+          "meaning": {
+            "en": "at the ticket office"
+          }
+        },
+        {
+          "polish": "rozkład jazdy",
+          "meaning": {
+            "en": "a timetable"
+          }
+        }
+      ],
+      "items": [
+        "dworzec",
+        "pociag",
+        "peron",
+        "w-kasie",
+        "rozklad-jazdy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-b1-e13",
+      "prompt": {
+        "en": "at the information desk"
+      },
+      "acceptedAnswers": [
+        "w informacji"
+      ],
+      "items": [
+        "informacja"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-b1-e14",
+      "acceptedAnswers": [
+        "pociąg odjeżdża z peronu"
+      ],
+      "meaning": {
+        "en": "the train leaves from the platform"
+      },
+      "items": [
+        "pociag",
+        "odjezdzac-odjezdza",
+        "peron"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-b1-e15",
+      "lines": [
+        "Jestem na dworcu.",
+        "Sprawdzam rozkład jazdy w informacji.",
+        "Pociąg odjeżdża o ósmej z drugiego peronu."
+      ],
+      "meaning": {
+        "en": "At the station."
+      },
+      "statements": [
+        {
+          "text": "Jestem na dworcu.",
+          "meaning": {
+            "en": "I am at the station."
+          },
+          "true": true
+        },
+        {
+          "text": "Rozkład jazdy jest w kasie.",
+          "meaning": {
+            "en": "The timetable is at the ticket office."
+          },
+          "true": false
+        },
+        {
+          "text": "Pociąg odjeżdża o ósmej.",
+          "meaning": {
+            "en": "The train leaves at eight."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "byc-jestem",
+        "na-dworcu",
+        "rozklad-jazdy",
+        "informacja",
+        "pociag",
+        "odjezdzac-odjezdza",
+        "o-godz",
+        "osma"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-b1-e16",
+      "prompt": {
+        "en": "the train arrives at the station"
+      },
+      "acceptedAnswers": [
+        "pociąg przyjeżdża na dworzec"
+      ],
+      "distractors": [
+        "odjeżdża",
+        "dworcu"
+      ],
+      "items": [
+        "pociag",
+        "przyjezdzac-przyjezdza",
+        "dworzec"
+      ]
+    }
+  ]
+}

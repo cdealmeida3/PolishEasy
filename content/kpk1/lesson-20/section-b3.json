@@ -1,0 +1,409 @@
+{
+  "id": "kpk1-l20-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Dworzec PKP",
+    "meaning": {
+      "en": "The railway station"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-b3-t01",
+      "before": "kpk1-l20-b3-e01",
+      "title": {
+        "en": "Jaki pociąg?"
+      },
+      "body": {
+        "en": "*Pociąg osobowy* is a slow local train, often almost empty. *Pociąg pospieszny* is faster and stops only at bigger stations, and *Intercity* is the fastest, where you need *miejscówka*, a seat reservation. A *pociąg bezpośredni* goes from A to B *bez przesiadki*, without a change. A train has *wagony* (carriages), and an old one has *przedziały*, like little rooms."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b3-e01",
+      "prompt": "pociąg osobowy",
+      "options": [
+        {
+          "en": "a very fast train"
+        },
+        {
+          "en": "a night train"
+        },
+        {
+          "en": "a slow local train"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pociag-osobowy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b3-e02",
+      "prompt": "pociąg pospieszny",
+      "options": [
+        {
+          "en": "a fast train that stops only at bigger stations"
+        },
+        {
+          "en": "a slow local train"
+        },
+        {
+          "en": "a bus"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pociag-pospieszny"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-b3-e03",
+      "text": "To jest pociąg pospieszny do Krakowa.",
+      "meaning": {
+        "en": "This is a fast train to Kraków."
+      },
+      "distractors": [
+        "To jest pociąg osobowy do Krakowa.",
+        "To jest Intercity do Krakowa."
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "pociag-pospieszny",
+        "do-krakowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b3-e04",
+      "prompt": "Intercity",
+      "options": [
+        {
+          "en": "a slow train"
+        },
+        {
+          "en": "Intercity, a very fast train with seat reservations"
+        },
+        {
+          "en": "a tram"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "intercity"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b3-e05",
+      "prompt": "szybki",
+      "options": [
+        {
+          "en": "slow"
+        },
+        {
+          "en": "expensive"
+        },
+        {
+          "en": "fast (bardzo szybki pociąg: a very fast train) (szybki, szybka, szybkie)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szybki"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-b3-e06",
+      "text": "Intercity to bardzo ___ pociąg.",
+      "meaning": {
+        "en": "Intercity is a very fast train."
+      },
+      "gaps": [
+        [
+          "szybki"
+        ]
+      ],
+      "distractors": [
+        "szybka",
+        "szybko"
+      ],
+      "items": [
+        "intercity",
+        "to",
+        "bardzo",
+        "szybki",
+        "pociag"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b3-e07",
+      "prompt": "bezpośredni",
+      "options": [
+        {
+          "en": "direct (pociąg bezpośredni: a direct train; nie ma bezpośredniego połączenia: there is no direct connection) (bezpośredni, bezpośrednia, bezpośrednie)"
+        },
+        {
+          "en": "slow"
+        },
+        {
+          "en": "late"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bezposredni"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b3-e08",
+      "prompt": "przesiadka",
+      "options": [
+        {
+          "en": "a ticket"
+        },
+        {
+          "en": "a change of trains (na przesiadkę: for the change; bez przesiadki: without changing)"
+        },
+        {
+          "en": "a seat"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "przesiadka"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-b3-e09",
+      "prompt": {
+        "en": "a direct train, without a change"
+      },
+      "acceptedAnswers": [
+        "pociąg bezpośredni, bez przesiadki"
+      ],
+      "distractors": [
+        "przesiadkę",
+        "osobowy"
+      ],
+      "items": [
+        "pociag",
+        "bezposredni",
+        "przesiadka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b3-e10",
+      "prompt": "wagon",
+      "options": [
+        {
+          "en": "a platform"
+        },
+        {
+          "en": "a compartment"
+        },
+        {
+          "en": "a carriage (w wagonie: in the carriage)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wagon"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b3-e11",
+      "prompt": "przedział",
+      "options": [
+        {
+          "en": "a compartment, a \"room\" in a carriage (w przedziale: in the compartment)"
+        },
+        {
+          "en": "a carriage"
+        },
+        {
+          "en": "a ticket window"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przedzial"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-b3-e12",
+      "pairs": [
+        {
+          "polish": "pociąg osobowy",
+          "meaning": {
+            "en": "a slow local train"
+          }
+        },
+        {
+          "polish": "pociąg pospieszny",
+          "meaning": {
+            "en": "a fast train"
+          }
+        },
+        {
+          "polish": "bezpośredni",
+          "meaning": {
+            "en": "direct"
+          }
+        },
+        {
+          "polish": "przesiadka",
+          "meaning": {
+            "en": "a change of trains"
+          }
+        },
+        {
+          "polish": "wagon",
+          "meaning": {
+            "en": "a carriage"
+          }
+        }
+      ],
+      "items": [
+        "pociag-osobowy",
+        "pociag-pospieszny",
+        "bezposredni",
+        "przesiadka",
+        "wagon"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-b3-e13",
+      "prompt": {
+        "en": "in the compartment"
+      },
+      "acceptedAnswers": [
+        "w przedziale"
+      ],
+      "items": [
+        "przedzial"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-b3-e14",
+      "acceptedAnswers": [
+        "Intercity jest bardzo szybki"
+      ],
+      "meaning": {
+        "en": "Intercity is very fast"
+      },
+      "items": [
+        "intercity",
+        "byc-jest",
+        "bardzo",
+        "szybki"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-b3-e15",
+      "text": "Jestem w ___ numer pięć.",
+      "meaning": {
+        "en": "I am in carriage number five."
+      },
+      "gaps": [
+        [
+          "wagonie"
+        ]
+      ],
+      "distractors": [
+        "wagon",
+        "wagonu"
+      ],
+      "items": [
+        "byc-jestem",
+        "wagon",
+        "numer",
+        "piec"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-b3-e16",
+      "lines": [
+        "Pociąg osobowy jest wolny i często pusty.",
+        "Intercity jest szybki, ale drogi.",
+        "Do Krakowa nie ma pociągu bezpośredniego."
+      ],
+      "meaning": {
+        "en": "Trains in Poland."
+      },
+      "statements": [
+        {
+          "text": "Pociąg osobowy jest bardzo szybki.",
+          "meaning": {
+            "en": "A local train is very fast."
+          },
+          "true": false
+        },
+        {
+          "text": "Intercity jest drogi.",
+          "meaning": {
+            "en": "Intercity is expensive."
+          },
+          "true": true
+        },
+        {
+          "text": "Do Krakowa nie ma pociągu bez przesiadki.",
+          "meaning": {
+            "en": "There is no train to Kraków without a change."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "pociag-osobowy",
+        "byc-jest",
+        "wolny",
+        "intercity",
+        "szybki",
+        "ale",
+        "drogi",
+        "do-krakowa",
+        "nie",
+        "pociag"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-b3-e17",
+      "prompt": {
+        "en": "there is a change in Warsaw"
+      },
+      "acceptedAnswers": [
+        "przesiadka jest w Warszawie"
+      ],
+      "distractors": [
+        "Warszawa",
+        "przesiadkę"
+      ],
+      "items": [
+        "przesiadka",
+        "byc-jest",
+        "w-warszawie"
+      ]
+    }
+  ]
+}

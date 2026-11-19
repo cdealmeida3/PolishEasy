@@ -1,0 +1,433 @@
+{
+  "id": "kpk1-l20-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Dworzec PKP",
+    "meaning": {
+      "en": "The railway station"
+    },
+    "strands": [
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-b2-t01",
+      "before": "kpk1-l20-b2-e01",
+      "title": {
+        "en": "Jaki bilet?"
+      },
+      "body": {
+        "en": "A ticket, *bilet*, is *normalny* (full price, *za sto procent ceny*) or *ulgowy*, *ze zniżką* (with a discount), for example *dla studentów* or *dla emerytów*. It is *w jedną stronę* (one way) or *tam i z powrotem* (there and back). On a fast train you also need *miejscówka*, a seat reservation."
+      },
+      "table": {
+        "title": {
+          "en": "Bilet"
+        },
+        "columns": [
+          {
+            "header": "jaki?"
+          },
+          {
+            "header": "co to znaczy?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "normalny",
+              "za sto procent ceny"
+            ]
+          },
+          {
+            "cells": [
+              "ulgowy",
+              "ze zniżką, dla studentów"
+            ]
+          },
+          {
+            "cells": [
+              "w jedną stronę",
+              "tylko tam"
+            ]
+          },
+          {
+            "cells": [
+              "tam i z powrotem",
+              "w obie strony"
+            ]
+          },
+          {
+            "cells": [
+              "z miejscówką",
+              "z rezerwacją miejsca"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b2-e01",
+      "prompt": "w jedną stronę",
+      "options": [
+        {
+          "en": "there and back"
+        },
+        {
+          "en": "one way (bilet w jedną stronę: a single ticket)"
+        },
+        {
+          "en": "second class"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-jedna-strone"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b2-e02",
+      "prompt": "tam i z powrotem",
+      "options": [
+        {
+          "en": "one way"
+        },
+        {
+          "en": "every day"
+        },
+        {
+          "en": "there and back, return (bilet tam i z powrotem: a return ticket)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tam-i-z-powrotem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-b2-e03",
+      "text": "Poproszę bilet tam i z powrotem.",
+      "meaning": {
+        "en": "A return ticket, please."
+      },
+      "distractors": [
+        "Poproszę bilet w jedną stronę.",
+        "Poproszę bilet ulgowy."
+      ],
+      "items": [
+        "poprosze",
+        "bilet",
+        "tam-i-z-powrotem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b2-e04",
+      "prompt": "zniżka",
+      "options": [
+        {
+          "en": "a discount (ze zniżką: with a discount)"
+        },
+        {
+          "en": "a fine"
+        },
+        {
+          "en": "a seat"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "znizka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b2-e05",
+      "prompt": "dla studentów",
+      "options": [
+        {
+          "en": "for children"
+        },
+        {
+          "en": "for students (dla studenta: for a student)"
+        },
+        {
+          "en": "for pensioners"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "student-dla"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-b2-e06",
+      "text": "Bilet ulgowy jest ze ___.",
+      "meaning": {
+        "en": "A reduced ticket is with a discount."
+      },
+      "gaps": [
+        [
+          "zniżką"
+        ]
+      ],
+      "distractors": [
+        "zniżka",
+        "zniżki"
+      ],
+      "items": [
+        "bilet",
+        "ulgowy",
+        "byc-jest",
+        "znizka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b2-e07",
+      "prompt": "dla emerytów",
+      "options": [
+        {
+          "en": "for students"
+        },
+        {
+          "en": "for everyone"
+        },
+        {
+          "en": "for pensioners"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dla-emerytow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b2-e08",
+      "prompt": "za sto procent ceny",
+      "options": [
+        {
+          "en": "at the full price, for a hundred per cent of the price"
+        },
+        {
+          "en": "half price"
+        },
+        {
+          "en": "free of charge"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "za-sto-procent-ceny"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-b2-e09",
+      "prompt": {
+        "en": "a full-price ticket one way"
+      },
+      "acceptedAnswers": [
+        "bilet normalny w jedną stronę"
+      ],
+      "distractors": [
+        "ulgowy",
+        "powrotem"
+      ],
+      "items": [
+        "bilet",
+        "normalny",
+        "w-jedna-strone"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b2-e10",
+      "prompt": "miejscówka",
+      "options": [
+        {
+          "en": "a timetable"
+        },
+        {
+          "en": "a seat reservation (z miejscówką: with a seat reservation)"
+        },
+        {
+          "en": "a discount"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "miejscowka"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-b2-e11",
+      "pairs": [
+        {
+          "polish": "w jedną stronę",
+          "meaning": {
+            "en": "one way"
+          }
+        },
+        {
+          "polish": "tam i z powrotem",
+          "meaning": {
+            "en": "there and back"
+          }
+        },
+        {
+          "polish": "ze zniżką",
+          "meaning": {
+            "en": "with a discount"
+          }
+        },
+        {
+          "polish": "dla studentów",
+          "meaning": {
+            "en": "for students"
+          }
+        },
+        {
+          "polish": "z miejscówką",
+          "meaning": {
+            "en": "with a seat reservation"
+          }
+        }
+      ],
+      "items": [
+        "w-jedna-strone",
+        "tam-i-z-powrotem",
+        "znizka",
+        "student-dla",
+        "miejscowka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-b2-e12",
+      "prompt": {
+        "en": "a reduced ticket for students"
+      },
+      "acceptedAnswers": [
+        "bilet ulgowy dla studentów"
+      ],
+      "items": [
+        "bilet",
+        "ulgowy",
+        "student-dla"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-b2-e13",
+      "acceptedAnswers": [
+        "bilet z miejscówką"
+      ],
+      "meaning": {
+        "en": "a ticket with a seat reservation"
+      },
+      "items": [
+        "bilet",
+        "miejscowka"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-b2-e14",
+      "text": "Bilet normalny jest za sto procent ___.",
+      "meaning": {
+        "en": "A full-price ticket is at a hundred per cent of the price."
+      },
+      "gaps": [
+        [
+          "ceny"
+        ]
+      ],
+      "distractors": [
+        "cena",
+        "cenie"
+      ],
+      "items": [
+        "bilet",
+        "normalny",
+        "byc-jest",
+        "za-sto-procent-ceny"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-b2-e15",
+      "lines": [
+        "Poproszę dwa bilety tam i z powrotem.",
+        "Normalny i ulgowy dla studenta.",
+        "Z miejscówką, proszę."
+      ],
+      "meaning": {
+        "en": "Two tickets."
+      },
+      "statements": [
+        {
+          "text": "Pasażer kupuje dwa bilety.",
+          "meaning": {
+            "en": "The passenger buys two tickets."
+          },
+          "true": true
+        },
+        {
+          "text": "Oba bilety są normalne.",
+          "meaning": {
+            "en": "Both tickets are full price."
+          },
+          "true": false
+        },
+        {
+          "text": "Pasażer chce bilety z miejscówką.",
+          "meaning": {
+            "en": "The passenger wants tickets with seat reservations."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "poprosze",
+        "dwa",
+        "bilet",
+        "tam-i-z-powrotem",
+        "normalny",
+        "i",
+        "ulgowy",
+        "student-dla",
+        "miejscowka",
+        "prosze"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-b2-e16",
+      "prompt": {
+        "en": "tickets for pensioners are reduced"
+      },
+      "acceptedAnswers": [
+        "bilety dla emerytów są ulgowe"
+      ],
+      "distractors": [
+        "jest",
+        "normalne"
+      ],
+      "items": [
+        "bilet",
+        "dla-emerytow",
+        "byc-sa",
+        "ulgowy"
+      ]
+    }
+  ]
+}

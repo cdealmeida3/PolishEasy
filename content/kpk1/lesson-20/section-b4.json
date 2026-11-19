@@ -1,0 +1,369 @@
+{
+  "id": "kpk1-l20-b4",
+  "section": {
+    "letter": "B",
+    "heading": "Dworzec PKP",
+    "meaning": {
+      "en": "The railway station"
+    },
+    "strands": [
+      "K"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-b4-t01",
+      "before": "kpk1-l20-b4-e01",
+      "title": {
+        "en": "W informacji"
+      },
+      "body": {
+        "en": "At the information desk ask *o której godzinie odjeżdża pociąg do Torunia?* (at what time?). The answer may be *nie ma bezpośredniego połączenia* (there is no direct connection), *to znaczy* (that means) *najpierw trzeba jechać do Warszawy, a potem do Torunia*. Ask too *o której będziemy na miejscu?*: when will we get there? For the price: *o cenę proszę pytać w kasie*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b4-e01",
+      "prompt": "Toruń",
+      "options": [
+        {
+          "en": "Kraków"
+        },
+        {
+          "en": "Toruń (w Toruniu: in Toruń; do Torunia: to Toruń)"
+        },
+        {
+          "en": "Gdańsk"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "torun"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b4-e02",
+      "prompt": "o której godzinie?",
+      "options": [
+        {
+          "en": "how long?"
+        },
+        {
+          "en": "which platform?"
+        },
+        {
+          "en": "at what time?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "o-ktorej-godzinie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b4-e03",
+      "prompt": "połączenie",
+      "options": [
+        {
+          "en": "a connection (bezpośrednie połączenie: a direct connection)"
+        },
+        {
+          "en": "a ticket"
+        },
+        {
+          "en": "a timetable"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "polaczenie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-b4-e04",
+      "text": "O której godzinie odjeżdża pociąg do Torunia?",
+      "meaning": {
+        "en": "At what time does the train to Toruń leave?"
+      },
+      "distractors": [
+        "O której godzinie przyjeżdża pociąg z Torunia?",
+        "Z którego peronu odjeżdża pociąg do Torunia?"
+      ],
+      "items": [
+        "o-ktorej-godzinie",
+        "odjezdzac-odjezdza",
+        "pociag",
+        "torun"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b4-e05",
+      "prompt": "to znaczy",
+      "options": [
+        {
+          "en": "for example"
+        },
+        {
+          "en": "that means, I mean"
+        },
+        {
+          "en": "of course"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "to-znaczy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b4-e06",
+      "prompt": "trzeba",
+      "options": [
+        {
+          "en": "one may"
+        },
+        {
+          "en": "one likes"
+        },
+        {
+          "en": "one has to, you need to (trzeba jechać: you need to go)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "trzeba"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-b4-e07",
+      "text": "Nie ma bezpośredniego ___.",
+      "meaning": {
+        "en": "There is no direct connection."
+      },
+      "gaps": [
+        [
+          "połączenia"
+        ]
+      ],
+      "distractors": [
+        "połączenie",
+        "pociąg"
+      ],
+      "items": [
+        "nie",
+        "miec-ma",
+        "bezposredni",
+        "polaczenie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b4-e08",
+      "prompt": "będziemy na miejscu",
+      "options": [
+        {
+          "en": "we will be there, we will arrive"
+        },
+        {
+          "en": "we will leave"
+        },
+        {
+          "en": "we are at home"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "bedziemy-na-miejscu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b4-e09",
+      "prompt": "za późno",
+      "options": [
+        {
+          "en": "too early"
+        },
+        {
+          "en": "too late"
+        },
+        {
+          "en": "on time"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "za-pozno"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-b4-e10",
+      "prompt": {
+        "en": "first you need to go to Warsaw"
+      },
+      "acceptedAnswers": [
+        "najpierw trzeba jechać do Warszawy"
+      ],
+      "distractors": [
+        "Warszawie",
+        "potem"
+      ],
+      "items": [
+        "najpierw",
+        "trzeba",
+        "jechac",
+        "do-warszawy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l20-b4-e11",
+      "prompt": "o cenę proszę pytać",
+      "options": [
+        {
+          "en": "please pay by card"
+        },
+        {
+          "en": "please wait here"
+        },
+        {
+          "en": "please ask about the price"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "o-cene-prosze-pytac"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-b4-e12",
+      "pairs": [
+        {
+          "polish": "o której godzinie?",
+          "meaning": {
+            "en": "at what time?"
+          }
+        },
+        {
+          "polish": "połączenie",
+          "meaning": {
+            "en": "a connection"
+          }
+        },
+        {
+          "polish": "to znaczy",
+          "meaning": {
+            "en": "that means"
+          }
+        },
+        {
+          "polish": "trzeba",
+          "meaning": {
+            "en": "you need to"
+          }
+        },
+        {
+          "polish": "za późno",
+          "meaning": {
+            "en": "too late"
+          }
+        }
+      ],
+      "items": [
+        "o-ktorej-godzinie",
+        "polaczenie",
+        "to-znaczy",
+        "trzeba",
+        "za-pozno"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-b4-e13",
+      "prompt": {
+        "en": "we will be there at seven"
+      },
+      "acceptedAnswers": [
+        "będziemy na miejscu o siódmej"
+      ],
+      "items": [
+        "bedziemy-na-miejscu",
+        "o-godz",
+        "siodma"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-b4-e14",
+      "acceptedAnswers": [
+        "o cenę proszę pytać w kasie"
+      ],
+      "meaning": {
+        "en": "please ask about the price at the ticket office"
+      },
+      "items": [
+        "o-cene-prosze-pytac",
+        "w-kasie"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l20-b4-e15",
+      "lines": [
+        "Przepraszam, o której godzinie odjeżdża pociąg do Torunia?",
+        "Niestety nie ma bezpośredniego połączenia.",
+        "Najpierw trzeba jechać do Warszawy, a potem do Torunia.",
+        "O której będziemy na miejscu?",
+        "O dziewiętnastej."
+      ],
+      "meaning": {
+        "en": "At the information desk."
+      },
+      "items": [
+        "przepraszam",
+        "o-ktorej-godzinie",
+        "odjezdzac-odjezdza",
+        "pociag",
+        "torun",
+        "niestety",
+        "bezposredni",
+        "polaczenie",
+        "najpierw",
+        "trzeba",
+        "do-warszawy",
+        "potem",
+        "bedziemy-na-miejscu",
+        "dziewietnasta"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-b4-e16",
+      "prompt": {
+        "en": "that is fine, not too late"
+      },
+      "acceptedAnswers": [
+        "może być, nie za późno"
+      ],
+      "distractors": [
+        "wcześnie",
+        "jest"
+      ],
+      "items": [
+        "moze-byc",
+        "nie",
+        "za-pozno"
+      ]
+    }
+  ]
+}

@@ -123,6 +123,10 @@
     {
       "problem": "grammar: PRZECINEK_POROWNANIE: To skandal, jak tu brudno!",
       "reason": "False alarm. Jak here does not compare two things; it opens a clause (how dirty it is here), and a clause after \"to skandal\" is set off by a comma."
+    },
+    {
+      "problem": "dictionary: Intercity",
+      "reason": "The name of the Polish railway's fast trains, written so on tickets and timetables (chapter 20)."
     }
   ]
 }

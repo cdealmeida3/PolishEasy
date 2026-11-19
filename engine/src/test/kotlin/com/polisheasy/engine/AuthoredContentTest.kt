@@ -227,7 +227,7 @@ class AuthoredContentTest {
         val days = playTheCourse(InMemoryLearnerProgress(), FakeClock())
 
         assertEquals(
-            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 } + List(17) { 8 } + List(14) { 8 } + List(15) { 8 } + List(18) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 },
+            listOf(0, 5, 6, 8, 8, 8, 8) + List(8) { 8 } + List(8) { 8 } + List(5) { 8 } + List(9) { 8 } + List(12) { 8 } + List(10) { 8 } + List(10) { 8 } + List(14) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(14) { 8 } + List(13) { 8 } + List(17) { 8 } + List(14) { 8 } + List(15) { 8 } + List(18) { 8 } + List(17) { 8 } + List(15) { 8 } + List(17) { 8 } + List(17) { 8 } + List(19) { 8 },
             days.map { steps -> steps.count { it is Step.ShowExercise && it.review } },
         )
         assertEquals(
@@ -248,7 +248,8 @@ class AuthoredContentTest {
                 listOf(7, 7, 7, 8, 7, 6, 5, 6, 6, 8, 6, 5, 8, 6, 7, 7, 5) +
                 listOf(7, 8, 7, 8, 8, 6, 8, 8, 8, 3, 8, 8, 7, 8, 6) +
                 listOf(8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 8, 3) +
-                listOf(8, 8, 8, 8, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 7, 2),
+                listOf(8, 8, 8, 8, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 7, 2) +
+                listOf(7, 8, 8, 8, 8, 8, 8, 7, 8, 8, 8, 7, 8, 8, 5, 3, 3, 0, 0),
             days.map { steps -> (steps.last() as Step.ShowSummary).itemsLearned.size },
         )
     }
@@ -302,8 +303,8 @@ class AuthoredContentTest {
         assertEquals(14, book[10].sections)
         assertEquals("Rodzina", book[11].title)
         assertEquals(13, book[11].sections)
-        assertTrue(book.take(20).none { it.coming })
-        assertTrue(book.drop(20).all { it.coming })
+        assertTrue(book.take(21).none { it.coming })
+        assertTrue(book.drop(21).all { it.coming })
         assertEquals(Strand.entries.toSet(), course.levels[1].units[1].strands.keys)
     }
 
@@ -658,13 +659,13 @@ class AuthoredContentTest {
     fun `a number counts only years, money, lottery tickets and, since chapter 9, things in the plural, dwie a feminine one, and from chapter 15 pięć a genitive plural`() {
         // A house number is joined to its flat's with przez: dziesięć przez trzy is 10/3.
         // Chapter 12 tells the time: pięć po ósmej, za pięć ósma, osiem godzin.
-        // Chapter 13 says how long ago: dwa dni temu. Chapter 16 has the four seasons: cztery pory roku. Chapter 18 has trzy pokoje, and chapter 19 books na trzy noce and has a flat of trzydzieści metrów kwadratowych.
+        // Chapter 13 says how long ago: dwa dni temu. Chapter 16 has the four seasons: cztery pory roku. Chapter 18 has trzy pokoje, and chapter 19 books na trzy noce and has a flat of trzydzieści metrów kwadratowych. Chapter 20 sells a ticket za sto procent ceny.
         val hourIds = listOf("pierwsza", "druga", "trzecia", "czwarta", "piata", "szosta", "siodma", "osma", "dziewiata", "dziesiata", "jedenasta", "dwunasta")
         val hours = course.items.filter { item -> hourIds.any { item.id == it || item.id.startsWith("${it}-") } || item.id.endsWith("nasta") || item.id.startsWith("dwudziesta") }
             .flatMap { listOf(it.text) + it.forms }.toSet()
         assertTrue("ósmej" in hours, "The hours are not Items")
         val allowed = allNumbers + yearWords + moneyWords.values.flatten() + hours +
-            listOf("plus", "minus", "razy", "równa", "to", "jest", "przez", "kupon", "po", "dni", "godzin", "minut", "minuty", "minuta", "pory", "pokoje", "noce", "metrów", "godziny")
+            listOf("plus", "minus", "razy", "równa", "to", "jest", "przez", "kupon", "po", "dni", "godzin", "minut", "minuty", "minuta", "pory", "pokoje", "noce", "metrów", "godziny", "procent")
         // Chapter 9 counts things: jeden pomidor, dwa banany, dwie papryki, trzy słodkie pomarańcze, dwa kilo. The thing is the
         // plural form of an Item with a gender, perhaps after an adjective; dwie goes with a feminine one, dwa with the others.
         val plurals = course.items.filter { it.id in course.genders && it.forms.size == 1 }.associate { it.forms.single() to course.genders.getValue(it.id) }
@@ -733,7 +734,7 @@ class AuthoredContentTest {
         val had = setOf("brata", "siostrę", "syna", "córkę")
         had.forEach { word -> assertTrue(course.items.any { it.text == word }, "$word is not an Item") }
         val fixedPhrases = listOf(listOf("nie", "ma", "za", "co"), listOf("nie", "ma", "sprawy"), listOf("nie", "mam", "gdzie"))
-        val negatedObjects = setOf("ani", "aparatu", "bananów", "brata", "chleba", "drobnych", "fasoli", "kantoru", "kompotu", "kwiaciarni", "pieniędzy", "piwa", "planów", "problemu", "rodzeństwa", "soku", "wody", "czasu", "kiełbasy", "go", "jabłek", "windy", "znaczków", "nowych", "pojęcia", "zdania", "nic", "spodni", "butów", "zmywarki", "znaczenia", "dużo")
+        val negatedObjects = setOf("ani", "aparatu", "bananów", "brata", "chleba", "drobnych", "fasoli", "kantoru", "kompotu", "kwiaciarni", "pieniędzy", "piwa", "planów", "problemu", "rodzeństwa", "soku", "wody", "czasu", "kiełbasy", "go", "jabłek", "windy", "znaczków", "nowych", "pojęcia", "zdania", "nic", "spodni", "butów", "zmywarki", "znaczenia", "dużo", "pociągu", "bezpośredniego", "połączenia")
 
         spokenSentences.forEach { sentence ->
             val text = sentence.joinToString(" ")

@@ -1,0 +1,325 @@
+{
+  "id": "kpk1-l20-p2",
+  "section": {
+    "letter": "P",
+    "heading": "Powtórzenie",
+    "meaning": {
+      "en": "Revision"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l20-p2-t01",
+      "before": "kpk1-l20-p2-e01",
+      "title": {
+        "en": "W podróży"
+      },
+      "body": {
+        "en": "To plan a trip: ask *w informacji* about the train, *o której godzinie odjeżdża?*, buy the ticket *w kasie*, *normalny* or *ulgowy*, *w jedną stronę* or *tam i z powrotem*, find your *peron*, *wagon* and *przedział*. Then see the town: *Stare Miasto*, *mury*, *bramy* and *najstarszy kościół*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-p2-e01",
+      "text": "Bilet normalny jest za sto procent ceny.",
+      "meaning": {
+        "en": "A full-price ticket is at a hundred per cent of the price."
+      },
+      "distractors": [
+        "Bilet ulgowy jest dla studentów.",
+        "Bilet normalny jest tam i z powrotem."
+      ],
+      "items": [
+        "bilet",
+        "normalny",
+        "byc-jest",
+        "za-sto-procent-ceny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-p2-e02",
+      "text": "Bilety ulgowe są dla studentów i ___ emerytów.",
+      "meaning": {
+        "en": "Reduced tickets are for students and for pensioners."
+      },
+      "gaps": [
+        [
+          "dla"
+        ]
+      ],
+      "distractors": [
+        "do",
+        "na"
+      ],
+      "items": [
+        "bilet",
+        "ulgowy",
+        "byc-sa",
+        "student-dla",
+        "i",
+        "dla-emerytow"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-p2-e03",
+      "prompt": {
+        "en": "we are in the compartment"
+      },
+      "acceptedAnswers": [
+        "jesteśmy w przedziale"
+      ],
+      "distractors": [
+        "przedział",
+        "wagon"
+      ],
+      "items": [
+        "byc-jestesmy",
+        "przedzial"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l20-p2-e04",
+      "text": "O cenę proszę pytać w kasie.",
+      "meaning": {
+        "en": "Please ask at the ticket office about the price."
+      },
+      "distractors": [
+        "O cenę proszę pytać w informacji.",
+        "O peron proszę pytać w kasie."
+      ],
+      "items": [
+        "o-cene-prosze-pytac",
+        "w-kasie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-p2-e05",
+      "text": "Nie ma bezpośredniego połączenia, to ___, że trzeba jechać z przesiadką.",
+      "meaning": {
+        "en": "There is no direct connection, that means you need to change trains."
+      },
+      "gaps": [
+        [
+          "znaczy"
+        ]
+      ],
+      "distractors": [
+        "znaczenie",
+        "znam"
+      ],
+      "items": [
+        "nie",
+        "miec-ma",
+        "bezposredni",
+        "polaczenie",
+        "to-znaczy",
+        "ze",
+        "trzeba",
+        "jechac",
+        "przesiadka"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l20-p2-e06",
+      "prompt": {
+        "en": "second class"
+      },
+      "acceptedAnswers": [
+        "druga klasa"
+      ],
+      "items": [
+        "druga",
+        "klasa"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l20-p2-e07",
+      "acceptedAnswers": [
+        "jesteśmy obcokrajowcami"
+      ],
+      "meaning": {
+        "en": "we are foreigners"
+      },
+      "items": [
+        "byc-jestesmy",
+        "obcokrajowiec"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l20-p2-e08",
+      "pairs": [
+        {
+          "polish": "mury",
+          "meaning": {
+            "en": "walls"
+          }
+        },
+        {
+          "polish": "bramy",
+          "meaning": {
+            "en": "gates"
+          }
+        },
+        {
+          "polish": "najstarszy",
+          "meaning": {
+            "en": "the oldest"
+          }
+        },
+        {
+          "polish": "przedział",
+          "meaning": {
+            "en": "a compartment"
+          }
+        },
+        {
+          "polish": "klasa",
+          "meaning": {
+            "en": "a class"
+          }
+        }
+      ],
+      "items": [
+        "mur",
+        "brama",
+        "najstarszy",
+        "przedzial",
+        "klasa"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l20-p2-e09",
+      "lines": [
+        "W Toruniu jest piękne Stare Miasto.",
+        "Tam są stare mury i bramy.",
+        "To jedno z najstarszych miast w Polsce."
+      ],
+      "meaning": {
+        "en": "Toruń."
+      },
+      "statements": [
+        {
+          "text": "W Toruniu jest Stare Miasto.",
+          "meaning": {
+            "en": "Toruń has an Old Town."
+          },
+          "true": true
+        },
+        {
+          "text": "W Toruniu nie ma murów.",
+          "meaning": {
+            "en": "Toruń has no walls."
+          },
+          "true": false
+        },
+        {
+          "text": "Toruń to nowe miasto.",
+          "meaning": {
+            "en": "Toruń is a new town."
+          },
+          "true": false
+        }
+      ],
+      "items": [
+        "torun",
+        "byc-jest",
+        "piekny",
+        "stare-miasto",
+        "tam",
+        "byc-sa",
+        "stary",
+        "mur",
+        "i",
+        "brama",
+        "w-polsce"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l20-p2-e10",
+      "text": "To jest najstarszy kościół w ___.",
+      "meaning": {
+        "en": "This is the oldest church in Toruń."
+      },
+      "gaps": [
+        [
+          "Toruniu"
+        ]
+      ],
+      "distractors": [
+        "Toruń",
+        "Torunia"
+      ],
+      "items": [
+        "to",
+        "byc-jest",
+        "najstarszy",
+        "kosciol",
+        "torun"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l20-p2-e11",
+      "lines": [
+        "Najpierw jadę na dworzec.",
+        "W informacji pytam o pociąg.",
+        "W kasie kupuję bilet tam i z powrotem.",
+        "Potem idę na peron.",
+        "W pociągu siedzę w przedziale."
+      ],
+      "meaning": {
+        "en": "A trip by train."
+      },
+      "items": [
+        "najpierw",
+        "jechac-jade",
+        "dworzec",
+        "informacja",
+        "pociag",
+        "w-kasie",
+        "kupowac-kupuje",
+        "bilet",
+        "tam-i-z-powrotem",
+        "potem",
+        "isc-ide",
+        "peron",
+        "przedzial"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l20-p2-e12",
+      "prompt": {
+        "en": "the town walls are very old"
+      },
+      "acceptedAnswers": [
+        "mury są bardzo stare"
+      ],
+      "distractors": [
+        "mur",
+        "jest"
+      ],
+      "items": [
+        "mur",
+        "byc-sa",
+        "bardzo",
+        "stary"
+      ]
+    }
+  ]
+}
