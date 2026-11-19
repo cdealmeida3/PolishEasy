@@ -451,7 +451,8 @@ class PracticeOverAuthoredContentTest {
     @Test
     fun `Opposites snap opens with three learned pairs and shows only learned adjectives, in one gender, opposites only when a pair says so`() {
         val pairs = course.opposites.flatMap { (one, other) -> listOf(one to other, other to one) }.toSet()
-        fun idOf(form: String) = course.items.single { form in it.spellings && it.forms.isNotEmpty() }.id
+        val bySpelling = course.items.filter { it.forms.isNotEmpty() }.flatMap { item -> item.spellings.distinct().map { it to item } }.groupBy({ it.first }, { it.second })
+        fun idOf(form: String) = bySpelling.getValue(form).single().id
         var opened = false
         (1..course.path.size).forEach { days ->
             val learned = course.path.take(days).flatMap { it.itemIds() }.toSet()

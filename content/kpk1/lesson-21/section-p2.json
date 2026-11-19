@@ -1,0 +1,356 @@
+{
+  "id": "kpk1-l21-p2",
+  "section": {
+    "letter": "P",
+    "heading": "Powtórzenie",
+    "meaning": {
+      "en": "Revision"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-p2-t01",
+      "before": "kpk1-l21-p2-e01",
+      "title": {
+        "en": "Co robiłaś w weekend?"
+      },
+      "body": {
+        "en": "To tell about a weekend, mix both. The imperfective sets the scene, what went on for a while: *w sobotę długo spałam, potem gotowałam*. The perfective tells what got done: *w końcu posprzątałam mieszkanie i zaprosiłam gości*. And *kiedy byłam mała, codziennie wstawałam o siódmej* is a habit of the past, so it is imperfective."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-p2-e01",
+      "text": "Co robiłaś w weekend?",
+      "meaning": {
+        "en": "What did you do at the weekend? (to a woman)"
+      },
+      "distractors": [
+        "Co zrobiłaś w weekend?",
+        "Co robiłeś w weekend?"
+      ],
+      "items": [
+        "co",
+        "robic-robilas",
+        "w-weekend"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-p2-e02",
+      "text": "Na studiach często ___ gości.",
+      "meaning": {
+        "en": "At university I often invited guests."
+      },
+      "gaps": [
+        [
+          "zapraszałam"
+        ]
+      ],
+      "distractors": [
+        "zaprosiłam",
+        "zaproszenie"
+      ],
+      "items": [
+        "studia",
+        "czesto",
+        "zapraszac-zapraszalam",
+        "gosc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-p2-e03",
+      "prompt": {
+        "en": "I used to get up at six"
+      },
+      "acceptedAnswers": [
+        "wstawałam o szóstej"
+      ],
+      "distractors": [
+        "wstałam",
+        "sześć"
+      ],
+      "items": [
+        "wstawac-wstawalam",
+        "o-godz",
+        "szosta"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-p2-e04",
+      "acceptedAnswers": [
+        "rozmawialiśmy cały wieczór"
+      ],
+      "meaning": {
+        "en": "we were talking all evening"
+      },
+      "items": [
+        "rozmawiac-rozmawialismy",
+        "caly",
+        "wieczor"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-p2-e05",
+      "text": "Najpierw wypiliśmy kawę, a potem ___.",
+      "meaning": {
+        "en": "First we drank our coffee, and then we had a talk."
+      },
+      "gaps": [
+        [
+          "porozmawialiśmy"
+        ]
+      ],
+      "distractors": [
+        "rozmawialiśmy",
+        "rozmawiamy"
+      ],
+      "items": [
+        "najpierw",
+        "wypic-wypilam",
+        "kawa-acc",
+        "a",
+        "potem",
+        "porozmawiac-porozmawialismy"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-p2-e06",
+      "lines": [
+        "W sobotę rano długo spałam.",
+        "Potem posprzątałam mieszkanie.",
+        "Wieczorem obejrzałam film do końca."
+      ],
+      "meaning": {
+        "en": "My Saturday."
+      },
+      "statements": [
+        {
+          "text": "W sobotę wstała wcześnie.",
+          "meaning": {
+            "en": "On Saturday she got up early."
+          },
+          "true": false
+        },
+        {
+          "text": "Posprzątała mieszkanie.",
+          "meaning": {
+            "en": "She cleaned the flat."
+          },
+          "true": true
+        },
+        {
+          "text": "Wieczorem obejrzała cały film.",
+          "meaning": {
+            "en": "In the evening she watched the whole film."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "sobota",
+        "rano",
+        "dlugo",
+        "spac-spalam",
+        "potem",
+        "posprzatac-posprzatalam",
+        "mieszkanie",
+        "wieczorem",
+        "obejrzec-obejrzalem",
+        "film",
+        "do-konca"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-p2-e07",
+      "pairs": [
+        {
+          "polish": "robiłam",
+          "meaning": {
+            "en": "I was doing"
+          }
+        },
+        {
+          "polish": "zrobiłam",
+          "meaning": {
+            "en": "I got it done"
+          }
+        },
+        {
+          "polish": "dzwoniłem",
+          "meaning": {
+            "en": "I kept calling"
+          }
+        },
+        {
+          "polish": "zadzwoniłem",
+          "meaning": {
+            "en": "I called once"
+          }
+        },
+        {
+          "polish": "spotykaliśmy się",
+          "meaning": {
+            "en": "we used to meet"
+          }
+        }
+      ],
+      "items": [
+        "robic-robilam",
+        "zrobic-zrobilam",
+        "dzwonic-dzwonilem",
+        "zadzwonic-zadzwonilem",
+        "spotykac-sie-spotykalismy"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-p2-e08",
+      "lines": [
+        "Co robiłaś w weekend?",
+        "W sobotę gotowałam, a w niedzielę zaprosiłam gości.",
+        "A co ugotowałaś?",
+        "Zupę i pierogi."
+      ],
+      "meaning": {
+        "en": "A weekend with guests."
+      },
+      "items": [
+        "co",
+        "robic-robilas",
+        "w-weekend",
+        "sobota",
+        "gotowac-gotowalam",
+        "a",
+        "niedziela",
+        "zaprosic-zaprosilam",
+        "gosc",
+        "ugotowac-ugotowalam",
+        "zupa-acc",
+        "i",
+        "pierogi"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-p2-e09",
+      "prompt": {
+        "en": "I read it to the end (said by a man)"
+      },
+      "acceptedAnswers": [
+        "przeczytałem"
+      ],
+      "items": [
+        "przeczytac-przeczytalam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-p2-e10",
+      "text": "Kiedy byłam mała, codziennie wstawałam o siódmej.",
+      "meaning": {
+        "en": "When I was little, I got up at seven every day."
+      },
+      "distractors": [
+        "Kiedy byłam mała, codziennie wstawałam o ósmej.",
+        "Wczoraj wstałam o siódmej."
+      ],
+      "items": [
+        "kiedy",
+        "byc-bylam",
+        "maly",
+        "codziennie",
+        "wstawac-wstawalam",
+        "o-godz",
+        "siodma"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-p2-e11",
+      "text": "Wczoraj długo ___ telewizję.",
+      "meaning": {
+        "en": "Yesterday I watched television for a long time."
+      },
+      "gaps": [
+        [
+          "oglądałam"
+        ]
+      ],
+      "distractors": [
+        "obejrzałam",
+        "oglądam"
+      ],
+      "items": [
+        "wczoraj",
+        "dlugo",
+        "ogladac-ogladalam",
+        "telewizja-acc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-p2-e12",
+      "prompt": {
+        "en": "at last I passed the exam"
+      },
+      "acceptedAnswers": [
+        "wreszcie zdałam egzamin"
+      ],
+      "distractors": [
+        "zdawałam",
+        "egzaminu"
+      ],
+      "items": [
+        "wreszcie",
+        "zdac-zdalem",
+        "egzamin"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-p2-e13",
+      "acceptedAnswers": [
+        "najpierw zrobiłam zakupy"
+      ],
+      "meaning": {
+        "en": "first I did the shopping"
+      },
+      "items": [
+        "najpierw",
+        "zrobic-zrobilam",
+        "zakupy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-p2-e14",
+      "text": "Rozmawialiśmy i jednocześnie piliśmy kawę.",
+      "meaning": {
+        "en": "We were talking and drinking coffee at the same time."
+      },
+      "distractors": [
+        "Porozmawialiśmy, a potem wypiliśmy kawę.",
+        "Rozmawialiśmy i jednocześnie piliśmy herbatę."
+      ],
+      "items": [
+        "rozmawiac-rozmawialismy",
+        "i",
+        "jednoczesnie",
+        "pic-pilam",
+        "kawa-acc"
+      ]
+    }
+  ]
+}

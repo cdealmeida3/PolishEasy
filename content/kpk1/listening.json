@@ -12997,6 +12997,1359 @@
         1,
         1
       ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-211-1",
+      "track": 211,
+      "statement": "Karolina zaprasza Mami do Gdańska.",
+      "meaning": {
+        "en": "Karolina invites Mami to Gdańsk."
+      },
+      "answer": true,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-211-2",
+      "track": 211,
+      "statement": "Dziadkowie chcą poznać Mami.",
+      "meaning": {
+        "en": "The grandparents want to meet Mami."
+      },
+      "answer": true,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-211-3",
+      "track": 211,
+      "statement": "Jadą do Gdańska pociągiem.",
+      "meaning": {
+        "en": "They are going to Gdańsk by train."
+      },
+      "answer": false,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-211-4",
+      "track": 211,
+      "statement": "To są imieniny dziadka.",
+      "meaning": {
+        "en": "It is grandad's name day."
+      },
+      "answer": false,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-211-5",
+      "track": 211,
+      "statement": "Przyjeżdża cała rodzina.",
+      "meaning": {
+        "en": "The whole family is coming."
+      },
+      "answer": true,
+      "lines": [
+        7,
+        8
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-211-6",
+      "track": 211,
+      "statement": "Imieniny można mieć kilka razy w roku.",
+      "meaning": {
+        "en": "You can have a name day several times a year."
+      },
+      "answer": false,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-212-1",
+      "track": 212,
+      "question": "Kiedy jest impreza?",
+      "meaning": {
+        "en": "When is the party?"
+      },
+      "options": [
+        "W tę sobotę.",
+        "W tę niedzielę.",
+        "W piątek."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-212-2",
+      "track": 212,
+      "question": "Które urodziny ma dziadek?",
+      "meaning": {
+        "en": "Which birthday is grandad having? (one word)"
+      },
+      "acceptedAnswers": [
+        "osiemdziesiąte",
+        "80"
+      ],
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-212-3",
+      "track": 212,
+      "question": "Kiedy Karolina ma imieniny?",
+      "meaning": {
+        "en": "When is Karolina's name day?"
+      },
+      "options": [
+        "Piątego lipca.",
+        "Dziewiątego maja.",
+        "Osiemnastego listopada."
+      ],
+      "correctOption": 0,
+      "lines": [
+        10,
+        11
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-212-4",
+      "track": 212,
+      "question": "Gdzie są wszystkie imieniny?",
+      "meaning": {
+        "en": "Where are all the name days?"
+      },
+      "options": [
+        "W polskich kalendarzach.",
+        "W gazecie.",
+        "W internecie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-212-5",
+      "track": 212,
+      "question": "Co obchodzą u Karoliny w domu?",
+      "meaning": {
+        "en": "What do they celebrate at Karolina's home?"
+      },
+      "options": [
+        "Urodziny.",
+        "Imieniny.",
+        "Urodziny i imieniny."
+      ],
+      "correctOption": 0,
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-212-6",
+      "track": 212,
+      "statement": "W firmach raczej obchodzi się imieniny.",
+      "meaning": {
+        "en": "At work people tend to celebrate name days."
+      },
+      "answer": true,
+      "lines": [
+        15,
+        15
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-212-7",
+      "track": 212,
+      "statement": "Imię tej dziewczyny jest w polskim kalendarzu.",
+      "meaning": {
+        "en": "This girl's name is in the Polish calendar."
+      },
+      "answer": false,
+      "lines": [
+        17,
+        17
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-213-1",
+      "track": 213,
+      "question": "Kiedy ta osoba ma urodziny?",
+      "meaning": {
+        "en": "When is this person's birthday?"
+      },
+      "options": [
+        "Ósmego marca.",
+        "Ósmego maja.",
+        "Osiemnastego marca."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-213-2",
+      "track": 213,
+      "statement": "W Anglii obchodzi się imieniny.",
+      "meaning": {
+        "en": "In England people celebrate name days."
+      },
+      "answer": false,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-213-3",
+      "track": 213,
+      "question": "Kiedy ta osoba ma urodziny?",
+      "meaning": {
+        "en": "When is this person's birthday?"
+      },
+      "options": [
+        "Dwudziestego piątego czerwca.",
+        "Dwudziestego piątego lipca.",
+        "Piątego czerwca."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-213-4",
+      "track": 213,
+      "statement": "W Niemczech jest tradycja imienin.",
+      "meaning": {
+        "en": "In Germany there is a tradition of name days."
+      },
+      "answer": false,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-213-5",
+      "track": 213,
+      "question": "Kiedy ta osoba ma urodziny?",
+      "meaning": {
+        "en": "When is this person's birthday?"
+      },
+      "options": [
+        "Czwartego kwietnia.",
+        "Czternastego kwietnia.",
+        "Czwartego sierpnia."
+      ],
+      "correctOption": 0,
+      "lines": [
+        12,
+        12
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-213-6",
+      "track": 213,
+      "statement": "W Japonii nie ma tradycji imienin.",
+      "meaning": {
+        "en": "In Japan there is no tradition of name days."
+      },
+      "answer": true,
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-213-7",
+      "track": 213,
+      "question": "Co ta osoba organizuje na imieniny?",
+      "meaning": {
+        "en": "What does this person organise for the name day?"
+      },
+      "options": [
+        "Imprezę dla kolegów z pracy.",
+        "Kolację z rodziną.",
+        "Wycieczkę w góry."
+      ],
+      "correctOption": 0,
+      "lines": [
+        15,
+        15
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-213-8",
+      "track": 213,
+      "question": "Kiedy ta osoba ma urodziny?",
+      "meaning": {
+        "en": "When is this person's birthday?"
+      },
+      "options": [
+        "Pierwszego stycznia.",
+        "Pierwszego czerwca.",
+        "Jedenastego stycznia."
+      ],
+      "correctOption": 0,
+      "lines": [
+        16,
+        16
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-213-9",
+      "track": 213,
+      "question": "Kiedy urodził się ten pan?",
+      "meaning": {
+        "en": "When was this man born?"
+      },
+      "options": [
+        "W walentynki.",
+        "W Wigilię.",
+        "W Nowy Rok."
+      ],
+      "correctOption": 0,
+      "lines": [
+        18,
+        18
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-213-10",
+      "track": 213,
+      "statement": "Ta osoba ma urodziny co cztery lata.",
+      "meaning": {
+        "en": "This person has a birthday every four years."
+      },
+      "answer": true,
+      "lines": [
+        20,
+        20
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-214-1",
+      "track": 214,
+      "question": "Na czyje urodziny jedzie ta dziewczyna?",
+      "meaning": {
+        "en": "Whose birthday party is this girl going to?"
+      },
+      "options": [
+        "Dziadka Karoliny i Karola.",
+        "Babci Angeli.",
+        "Mamy Karoliny."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-214-2",
+      "track": 214,
+      "statement": "Ona chce powiedzieć życzenia po polsku.",
+      "meaning": {
+        "en": "She wants to say her wishes in Polish."
+      },
+      "answer": true,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-214-3",
+      "track": 214,
+      "question": "Jakie życzenia słychać?",
+      "meaning": {
+        "en": "Which wish do you hear?"
+      },
+      "options": [
+        "Wszystkiego najlepszego!",
+        "Wesołych świąt!",
+        "Szczęśliwej podróży!"
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-214-4",
+      "track": 214,
+      "question": "Dużo zdrowia i…",
+      "meaning": {
+        "en": "Lots of health and… (one word)"
+      },
+      "acceptedAnswers": [
+        "pomyślności"
+      ],
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-214-5",
+      "track": 214,
+      "statement": "Pomyślności życzymy, kiedy chcemy życzyć sukcesów.",
+      "meaning": {
+        "en": "We wish pomyślności when we want to wish success."
+      },
+      "answer": true,
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-214-6",
+      "track": 214,
+      "question": "Kiedy śpiewa się Sto lat?",
+      "meaning": {
+        "en": "When do people sing Sto lat?"
+      },
+      "options": [
+        "Na urodziny, imieniny i inne okazje.",
+        "Tylko na urodziny.",
+        "Tylko w Wigilię."
+      ],
+      "correctOption": 0,
+      "lines": [
+        17,
+        17
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-215-1",
+      "track": 215,
+      "question": "Niech żyje, żyje…",
+      "meaning": {
+        "en": "May he live, live… (one word)"
+      },
+      "acceptedAnswers": [
+        "nam"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-215-2",
+      "track": 215,
+      "question": "Jakie słowa słychać?",
+      "meaning": {
+        "en": "Which words do you hear?"
+      },
+      "options": [
+        "Jeszcze raz, jeszcze raz.",
+        "Jeszcze dziś, jeszcze dziś.",
+        "Jeszcze tak, jeszcze tak."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-216-1",
+      "track": 216,
+      "question": "Na jaką okazję są te życzenia?",
+      "meaning": {
+        "en": "Which occasion is this wish for?"
+      },
+      "options": [
+        "Na święta.",
+        "Na urodziny.",
+        "Na ślub."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-216-2",
+      "track": 216,
+      "question": "Szczęśliwego Nowego…",
+      "meaning": {
+        "en": "A happy New… (one word)"
+      },
+      "acceptedAnswers": [
+        "Roku"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-216-3",
+      "track": 216,
+      "question": "Na jakie święto są te życzenia?",
+      "meaning": {
+        "en": "Which holiday is this wish for?"
+      },
+      "options": [
+        "Na Wielkanoc.",
+        "Na Boże Narodzenie.",
+        "Na Nowy Rok."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-216-4",
+      "track": 216,
+      "question": "Na jaką okazję są te życzenia?",
+      "meaning": {
+        "en": "Which occasion is this wish for?"
+      },
+      "options": [
+        "Na ślub.",
+        "Na urodziny.",
+        "Na wyjazd."
+      ],
+      "correctOption": 0,
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-216-5",
+      "track": 216,
+      "question": "Na jaką okazję są te życzenia?",
+      "meaning": {
+        "en": "Which occasion is this wish for?"
+      },
+      "options": [
+        "Na urlop.",
+        "Na egzamin.",
+        "Na sylwestra."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-216-6",
+      "track": 216,
+      "question": "Na jaką okazję są te życzenia?",
+      "meaning": {
+        "en": "Which occasion is this wish for?"
+      },
+      "options": [
+        "Na wyjazd.",
+        "Na ślub.",
+        "Na egzamin."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-216-7",
+      "track": 216,
+      "question": "Na jaką okazję są te życzenia?",
+      "meaning": {
+        "en": "Which occasion is this wish for?"
+      },
+      "options": [
+        "Na egzamin.",
+        "Na Wielkanoc.",
+        "Na wyjazd."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-216-8",
+      "track": 216,
+      "question": "Komu mówimy te życzenia?",
+      "meaning": {
+        "en": "Who do we say this wish to?"
+      },
+      "options": [
+        "Osobie, która jest chora.",
+        "Osobie, która ma urodziny.",
+        "Osobie, która jedzie na urlop."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-217-1",
+      "track": 217,
+      "question": "Jakie słowa słychać?",
+      "meaning": {
+        "en": "Which words do you hear? (two words)"
+      },
+      "acceptedAnswers": [
+        "urodzić się"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-217-2",
+      "track": 217,
+      "question": "Dokąd chodzi małe dziecko?",
+      "meaning": {
+        "en": "Where does a small child go?"
+      },
+      "options": [
+        "Do przedszkola.",
+        "Do liceum.",
+        "Na uniwersytet."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-217-3",
+      "track": 217,
+      "question": "Co trzeba zdać?",
+      "meaning": {
+        "en": "What do you have to pass?"
+      },
+      "options": [
+        "Maturę.",
+        "Studia.",
+        "Szkołę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-217-4",
+      "track": 217,
+      "question": "Gdzie się studiuje?",
+      "meaning": {
+        "en": "Where do you study?"
+      },
+      "options": [
+        "Na uniwersytecie.",
+        "W przedszkolu.",
+        "W szkole podstawowej."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-217-5",
+      "track": 217,
+      "question": "Jakie słowa słychać?",
+      "meaning": {
+        "en": "Which words do you hear? (two words)"
+      },
+      "acceptedAnswers": [
+        "zakochać się"
+      ],
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-217-6",
+      "track": 217,
+      "question": "Jakie słowa słychać?",
+      "meaning": {
+        "en": "Which words do you hear?"
+      },
+      "options": [
+        "Pobrać się, ożenić się, wyjść za mąż.",
+        "Poznać, zakochać się, pobrać się.",
+        "Pracować, robić karierę, mieć wnuki."
+      ],
+      "correctOption": 0,
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-217-7",
+      "track": 217,
+      "question": "Jakie słowa słychać?",
+      "meaning": {
+        "en": "Which words do you hear?"
+      },
+      "options": [
+        "Mieć wnuki.",
+        "Mieć dzieci.",
+        "Mieć pracę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        23,
+        23
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-217-8",
+      "track": 217,
+      "question": "Jakie jest ostatnie słowo?",
+      "meaning": {
+        "en": "What is the last word? (one word)"
+      },
+      "acceptedAnswers": [
+        "umrzeć"
+      ],
+      "lines": [
+        27,
+        27
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-218-1",
+      "track": 218,
+      "question": "Gdzie urodził się dziadek?",
+      "meaning": {
+        "en": "Where was grandad born?"
+      },
+      "options": [
+        "W Warszawie.",
+        "W Gdańsku.",
+        "W Krakowie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        7,
+        7
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-218-2",
+      "track": 218,
+      "question": "W którym roku urodził się dziadek?",
+      "meaning": {
+        "en": "In which year was grandad born?"
+      },
+      "options": [
+        "W tysiąc dziewięćset trzydziestym roku.",
+        "W tysiąc dziewięćset czterdziestym roku.",
+        "W tysiąc dziewięćset trzydziestym dziewiątym roku."
+      ],
+      "correctOption": 0,
+      "lines": [
+        8,
+        8
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-218-3",
+      "track": 218,
+      "question": "Ile lat miał dziadek, kiedy zaczęła się wojna?",
+      "meaning": {
+        "en": "How old was grandad when the war began? (a number)"
+      },
+      "acceptedAnswers": [
+        "9",
+        "dziewięć"
+      ],
+      "lines": [
+        9,
+        10
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-218-4",
+      "track": 218,
+      "statement": "Matka dziadka zginęła w Powstaniu Warszawskim.",
+      "meaning": {
+        "en": "Grandad's mother was killed in the Warsaw Uprising."
+      },
+      "answer": true,
+      "lines": [
+        14,
+        14
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-218-5",
+      "track": 218,
+      "statement": "W czasie wojny dziadek pracował na wsi.",
+      "meaning": {
+        "en": "During the war grandad worked in the country."
+      },
+      "answer": true,
+      "lines": [
+        19,
+        21
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-218-6",
+      "track": 218,
+      "question": "Kiedy skończyła się wojna w Europie?",
+      "meaning": {
+        "en": "When did the war in Europe end?"
+      },
+      "options": [
+        "Ósmego maja tysiąc dziewięćset czterdziestego piątego roku.",
+        "Pierwszego września tysiąc dziewięćset trzydziestego dziewiątego roku.",
+        "Ósmego marca tysiąc dziewięćset czterdziestego piątego roku."
+      ],
+      "correctOption": 0,
+      "lines": [
+        21,
+        21
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-218-7",
+      "track": 218,
+      "question": "W którym roku dziadek zdał maturę?",
+      "meaning": {
+        "en": "In which year did grandad pass his school-leaving exam?"
+      },
+      "options": [
+        "W tysiąc dziewięćset pięćdziesiątym roku.",
+        "W tysiąc dziewięćset pięćdziesiątym piątym roku.",
+        "W tysiąc dziewięćset czterdziestym piątym roku."
+      ],
+      "correctOption": 0,
+      "lines": [
+        25,
+        25
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-218-8",
+      "track": 218,
+      "question": "Dokąd dziadek poszedł po maturze?",
+      "meaning": {
+        "en": "Where did grandad go after his school-leaving exam?"
+      },
+      "options": [
+        "Na politechnikę.",
+        "Na uniwersytet.",
+        "Do pracy w fabryce."
+      ],
+      "correctOption": 0,
+      "lines": [
+        26,
+        26
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-218-9",
+      "track": 218,
+      "question": "Gdzie dziadek pracował trzydzieści lat?",
+      "meaning": {
+        "en": "Where did grandad work for thirty years?"
+      },
+      "options": [
+        "W Stoczni Gdańskiej.",
+        "Na wsi.",
+        "W Warszawie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        32,
+        33
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-218-10",
+      "track": 218,
+      "statement": "W komunizmie mieli mieszkanie, ale nie mieli wolności.",
+      "meaning": {
+        "en": "Under communism they had a flat, but they had no freedom."
+      },
+      "answer": true,
+      "lines": [
+        34,
+        35
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-218-11",
+      "track": 218,
+      "statement": "Dziadek nie był w Solidarności.",
+      "meaning": {
+        "en": "Grandad was not in Solidarity."
+      },
+      "answer": false,
+      "lines": [
+        36,
+        36
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-218-12",
+      "track": 218,
+      "question": "W którym roku upadł komunizm?",
+      "meaning": {
+        "en": "In which year did communism fall?"
+      },
+      "options": [
+        "W tysiąc dziewięćset osiemdziesiątym dziewiątym roku.",
+        "W tysiąc dziewięćset osiemdziesiątym trzecim roku.",
+        "W tysiąc dziewięćset dziewięćdziesiątym roku."
+      ],
+      "correctOption": 0,
+      "lines": [
+        41,
+        41
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-219-1",
+      "track": 219,
+      "question": "Co było w tysiąc dziewięćset czterdziestym roku?",
+      "meaning": {
+        "en": "What happened in 1940?"
+      },
+      "options": [
+        "Zginął ojciec dziadka.",
+        "Zaczęła się wojna.",
+        "Dziadek zdał maturę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        15,
+        17
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-219-2",
+      "track": 219,
+      "question": "Co było w tysiąc dziewięćset trzydziestym dziewiątym roku?",
+      "meaning": {
+        "en": "What happened in 1939?"
+      },
+      "options": [
+        "Zaczęła się wojna.",
+        "Skończyła się wojna.",
+        "Dziadek się urodził."
+      ],
+      "correctOption": 0,
+      "lines": [
+        9,
+        9
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-219-3",
+      "track": 219,
+      "question": "Co było w tysiąc dziewięćset czterdziestym czwartym roku?",
+      "meaning": {
+        "en": "What happened in 1944?"
+      },
+      "options": [
+        "Powstanie Warszawskie.",
+        "Koniec wojny.",
+        "Ślub dziadka."
+      ],
+      "correctOption": 0,
+      "lines": [
+        13,
+        13
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-219-4",
+      "track": 219,
+      "question": "Co było w tysiąc dziewięćset pięćdziesiątym piątym roku?",
+      "meaning": {
+        "en": "What happened in 1955?"
+      },
+      "options": [
+        "Dziadek ożenił się z babcią Karoliny.",
+        "Dziadek zdał maturę.",
+        "Lech Wałęsa dostał Nobla."
+      ],
+      "correctOption": 0,
+      "lines": [
+        27,
+        27
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-219-5",
+      "track": 219,
+      "question": "Co było w tysiąc dziewięćset osiemdziesiątym trzecim roku?",
+      "meaning": {
+        "en": "What happened in 1983?"
+      },
+      "options": [
+        "Lech Wałęsa dostał Nobla.",
+        "Upadł komunizm.",
+        "Dziadek poszedł na politechnikę."
+      ],
+      "correctOption": 0,
+      "lines": [
+        37,
+        38
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-220-1",
+      "track": 220,
+      "question": "Jaki to rok?",
+      "meaning": {
+        "en": "Which year is it? (in figures)"
+      },
+      "acceptedAnswers": [
+        "1999"
+      ],
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-220-2",
+      "track": 220,
+      "question": "Jaki to rok?",
+      "meaning": {
+        "en": "Which year is it? (in figures)"
+      },
+      "acceptedAnswers": [
+        "2002"
+      ],
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-220-3",
+      "track": 220,
+      "question": "Jaki to rok?",
+      "meaning": {
+        "en": "Which year is it? (in figures)"
+      },
+      "acceptedAnswers": [
+        "1536"
+      ],
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-220-4",
+      "track": 220,
+      "question": "Jaki to rok?",
+      "meaning": {
+        "en": "Which year is it? (in figures)"
+      },
+      "acceptedAnswers": [
+        "1973"
+      ],
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-220-5",
+      "track": 220,
+      "question": "Jaki to rok?",
+      "meaning": {
+        "en": "Which year is it? (in figures)"
+      },
+      "acceptedAnswers": [
+        "1939"
+      ],
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-220-6",
+      "track": 220,
+      "question": "Jaki to rok?",
+      "meaning": {
+        "en": "Which year is it? (in figures)"
+      },
+      "acceptedAnswers": [
+        "1844"
+      ],
+      "lines": [
+        6,
+        6
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-221-1",
+      "track": 221,
+      "question": "Jaki był weekend Angeli?",
+      "meaning": {
+        "en": "What was Angela's weekend like?"
+      },
+      "options": [
+        "Nudny.",
+        "Fantastyczny.",
+        "Bardzo fajny."
+      ],
+      "correctOption": 0,
+      "lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-221-2",
+      "track": 221,
+      "question": "Co robiła Angela pół dnia?",
+      "meaning": {
+        "en": "What was Angela doing for half the day?"
+      },
+      "options": [
+        "Sprzątała mieszkanie.",
+        "Gotowała obiad.",
+        "Spała."
+      ],
+      "correctOption": 0,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-221-3",
+      "track": 221,
+      "statement": "Angela szybko napisała pracę domową.",
+      "meaning": {
+        "en": "Angela wrote her homework quickly."
+      },
+      "answer": false,
+      "lines": [
+        2,
+        2
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-221-4",
+      "track": 221,
+      "question": "Co Angela robiła w niedzielę?",
+      "meaning": {
+        "en": "What was Angela doing on Sunday?"
+      },
+      "options": [
+        "Czytała książkę i oglądała telewizję.",
+        "Była w kinie.",
+        "Spotkała się z koleżanką."
+      ],
+      "correctOption": 0,
+      "lines": [
+        3,
+        3
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "l21-221-5",
+      "track": 221,
+      "question": "Wieczorem Angela siedziała przed…",
+      "meaning": {
+        "en": "In the evening Angela sat in front of the… (one word)"
+      },
+      "acceptedAnswers": [
+        "komputerem"
+      ],
+      "lines": [
+        4,
+        4
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-221-6",
+      "track": 221,
+      "statement": "W Gdańsku ta dziewczyna poznała nowych ludzi.",
+      "meaning": {
+        "en": "In Gdańsk this girl met new people."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-221-7",
+      "track": 221,
+      "question": "Z kim porozmawiała Mami?",
+      "meaning": {
+        "en": "Who did Mami have a talk with?"
+      },
+      "options": [
+        "Z dziadkiem Karoliny.",
+        "Z mamą Karoliny.",
+        "Z Karolem."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "choose",
+      "id": "l21-221-8",
+      "track": 221,
+      "question": "Co zobaczyła Mami?",
+      "meaning": {
+        "en": "What did Mami see?"
+      },
+      "options": [
+        "Morze Bałtyckie.",
+        "Tatry.",
+        "Wisłę w Krakowie."
+      ],
+      "correctOption": 0,
+      "lines": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "l21-221-9",
+      "track": 221,
+      "statement": "W Gdańsku zrobiła świetne zdjęcia.",
+      "meaning": {
+        "en": "In Gdańsk she took great photos."
+      },
+      "answer": true,
+      "lines": [
+        5,
+        5
+      ]
     }
   ]
 }

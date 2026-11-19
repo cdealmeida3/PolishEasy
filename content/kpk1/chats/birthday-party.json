@@ -1,0 +1,254 @@
+{
+  "id": "chat-birthday-party",
+  "person": "Pan Henryk",
+  "title": {
+    "en": "An eightieth birthday"
+  },
+  "scene": {
+    "en": "You are Adam. You were born in Kraków in 1990, your birthday is on 5 May, and as Adam your name day is on Christmas Eve. Your friend has invited you to her grandfather's eightieth birthday party. Pan Henryk is a stranger to you, so be polite: to him you are pan, and he is pan."
+  },
+  "register": "formal",
+  "items": [
+    "dzien-dobry",
+    "wszystkiego-najlepszego",
+    "z-okazji-urodzin",
+    "osiemdziesiat",
+    "lat",
+    "zyczyc-zycze",
+    "zdrowia",
+    "szczescia",
+    "sto-lat",
+    "kiedy",
+    "piaty",
+    "maja",
+    "imieniny",
+    "w-polsce",
+    "obchodzic-obchodzi",
+    "dwudziesty",
+    "czwarty",
+    "grudnia",
+    "wigilia",
+    "urodzic-sie-urodzilem",
+    "w-krakowie",
+    "w-roku",
+    "tysiac",
+    "dziewiecset",
+    "dziewiecdziesiaty",
+    "gdansk",
+    "wojna",
+    "caly",
+    "zycie",
+    "pracowac-pracowalem",
+    "stocznia",
+    "naprawde",
+    "byc-byl",
+    "solidarnosc",
+    "osiemdziesiaty",
+    "tort",
+    "dziekuje",
+    "dzis",
+    "miec-mam",
+    "miec-ma",
+    "urodziny",
+    "juz",
+    "duzo",
+    "to",
+    "bardzo",
+    "i",
+    "o-panu",
+    "pan",
+    "a",
+    "tez",
+    "urodzic-sie-urodzil",
+    "piekny",
+    "gdzie",
+    "ja",
+    "zaraz",
+    "od-godz",
+    "tak",
+    "teraz"
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "says": "Dzień dobry! Dziś mam urodziny.",
+      "meaning": {
+        "en": "Hello! Today is my birthday."
+      },
+      "replies": [
+        {
+          "text": "Dzień dobry! Wszystkiego najlepszego z okazji urodzin!",
+          "meaning": {
+            "en": "Hello! All the best for your birthday!"
+          },
+          "right": true,
+          "next": "t2",
+          "acceptedAnswers": [
+            "Dzień dobry! Wszystkiego najlepszego z okazji urodzin!"
+          ]
+        },
+        {
+          "text": "Dzień dobry! Wesołych świąt!",
+          "meaning": {
+            "en": "Hello! Merry Christmas!"
+          },
+          "note": {
+            "en": "It is his birthday, not Christmas: *wszystkiego najlepszego z okazji urodzin!*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "says": "Dziękuję bardzo! Osiemdziesiąt lat to już dużo.",
+      "meaning": {
+        "en": "Thank you very much! Eighty years, that is a lot."
+      },
+      "replies": [
+        {
+          "text": "Życzę panu zdrowia i szczęścia. Sto lat!",
+          "meaning": {
+            "en": "I wish you health and happiness. Sto lat!"
+          },
+          "right": true,
+          "next": "t3",
+          "acceptedAnswers": [
+            "Życzę panu zdrowia i szczęścia. Sto lat!"
+          ]
+        },
+        {
+          "text": "Życzę panu szybkiego powrotu do zdrowia.",
+          "meaning": {
+            "en": "I wish you a quick recovery."
+          },
+          "note": {
+            "en": "That is for someone who is ill. On a birthday wish *zdrowia i szczęścia*, and *sto lat!*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "says": "Dziękuję! A kiedy pan ma urodziny?",
+      "meaning": {
+        "en": "Thank you! And when is your birthday?"
+      },
+      "replies": [
+        {
+          "text": "Piątego maja.",
+          "meaning": {
+            "en": "On the fifth of May."
+          },
+          "right": true,
+          "next": "t4",
+          "acceptedAnswers": [
+            "Piątego maja."
+          ]
+        },
+        {
+          "text": "Piąty maja.",
+          "meaning": {
+            "en": "The fifth of May."
+          },
+          "note": {
+            "en": "He asks *kiedy?*, when, so the day goes into the genitive: *piątego maja*. *Piąty maja* answers *który dziś jest?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "says": "A imieniny? W Polsce obchodzimy też imieniny.",
+      "meaning": {
+        "en": "And your name day? In Poland we also celebrate name days."
+      },
+      "replies": [
+        {
+          "text": "Mam imieniny dwudziestego czwartego grudnia, w Wigilię.",
+          "meaning": {
+            "en": "My name day is on the twenty-fourth of December, on Christmas Eve."
+          },
+          "right": true,
+          "next": "t5",
+          "acceptedAnswers": [
+            "Mam imieniny dwudziestego czwartego grudnia, w Wigilię."
+          ]
+        },
+        {
+          "text": "Mam imieniny raz w miesiącu.",
+          "meaning": {
+            "en": "I have a name day once a month."
+          },
+          "note": {
+            "en": "A name day comes *raz w roku*, once a year, on the day of your name. For Adam it is *dwudziestego czwartego grudnia*."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "says": "W Wigilię! To piękny dzień. A gdzie pan się urodził?",
+      "meaning": {
+        "en": "On Christmas Eve! That is a lovely day. And where were you born?"
+      },
+      "replies": [
+        {
+          "text": "Urodziłem się w Krakowie, w tysiąc dziewięćset dziewięćdziesiątym roku.",
+          "meaning": {
+            "en": "I was born in Kraków, in 1990."
+          },
+          "right": true,
+          "next": "t6",
+          "acceptedAnswers": [
+            "Urodziłem się w Krakowie, w tysiąc dziewięćset dziewięćdziesiątym roku."
+          ]
+        },
+        {
+          "text": "Urodziłam się w Krakowie.",
+          "meaning": {
+            "en": "I was born in Kraków (said by a woman)."
+          },
+          "note": {
+            "en": "Adam is a man, so he says *urodziłem się*. *Urodziłam się* is what a woman says."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "says": "A ja w Gdańsku, zaraz po wojnie. Całe życie pracowałem w stoczni.",
+      "meaning": {
+        "en": "And I was born in Gdańsk, just after the war. All my life I worked at the shipyard."
+      },
+      "replies": [
+        {
+          "text": "Naprawdę? Był pan w Solidarności?",
+          "meaning": {
+            "en": "Really? Were you in Solidarity?"
+          },
+          "right": true,
+          "next": "t7",
+          "acceptedAnswers": [
+            "Naprawdę? Był pan w Solidarności?"
+          ]
+        },
+        {
+          "text": "Naprawdę? Kiedy pan przejdzie na emeryturę?",
+          "meaning": {
+            "en": "Really? When will you retire?"
+          },
+          "note": {
+            "en": "He is eighty and his working life is behind him, so ask about the past: *był pan w Solidarności?*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "says": "Tak, od tysiąc dziewięćset osiemdziesiątego roku. A teraz tort!",
+      "meaning": {
+        "en": "Yes, since 1980. And now, the cake!"
+      }
+    }
+  ]
+}

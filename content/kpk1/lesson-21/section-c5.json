@@ -1,0 +1,450 @@
+{
+  "id": "kpk1-l21-c5",
+  "section": {
+    "letter": "C",
+    "heading": "Biografia",
+    "meaning": {
+      "en": "A life story"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-c5-t01",
+      "before": "kpk1-l21-c5-e01",
+      "title": {
+        "en": "W którym roku?"
+      },
+      "body": {
+        "en": "To say a year, the last number is an ordinal in the locative, and then *roku*: *w tysiąc dziewięćset osiemdziesiątym pierwszym roku* is in 1981. Only the last one or two words change; the thousand and the hundreds stay as they are. After 2000 it is *dwa tysiące*: *w dwa tysiące piątym roku*, and 2000 itself is *w dwutysięcznym roku*."
+      },
+      "table": {
+        "title": {
+          "en": "W którym roku?"
+        },
+        "columns": [
+          {
+            "header": "rok"
+          },
+          {
+            "header": "w którym roku?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "1981",
+              "w tysiąc dziewięćset osiemdziesiątym pierwszym roku"
+            ]
+          },
+          {
+            "cells": [
+              "1990",
+              "w tysiąc dziewięćset dziewięćdziesiątym roku"
+            ]
+          },
+          {
+            "cells": [
+              "2000",
+              "w dwutysięcznym roku"
+            ]
+          },
+          {
+            "cells": [
+              "2005",
+              "w dwa tysiące piątym roku"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c5-e01",
+      "prompt": "w którym roku?",
+      "options": [
+        {
+          "en": "in which month?"
+        },
+        {
+          "en": "in which year?"
+        },
+        {
+          "en": "how many years?"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "w-ktorym-roku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c5-e02",
+      "prompt": "w roku",
+      "options": [
+        {
+          "en": "in a month"
+        },
+        {
+          "en": "every year"
+        },
+        {
+          "en": "in the year (w dwutysięcznym roku: in the year 2000)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-roku"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c5-e03",
+      "text": "Urodziłem się w tysiąc dziewięćset osiemdziesiątym roku.",
+      "meaning": {
+        "en": "I was born in 1980 (said by a man)."
+      },
+      "distractors": [
+        "Urodziłem się w tysiąc dziewięćset osiemdziesiątym pierwszym roku.",
+        "Urodziłam się w tysiąc dziewięćset osiemdziesiątym roku."
+      ],
+      "items": [
+        "urodzic-sie-urodzilem",
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "osiemdziesiaty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c5-e04",
+      "prompt": "dziewięćdziesiąty",
+      "options": [
+        {
+          "en": "ninetieth (w tysiąc dziewięćset dziewięćdziesiątym roku: in 1990)"
+        },
+        {
+          "en": "nineteenth"
+        },
+        {
+          "en": "ninety"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dziewiecdziesiaty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c5-e05",
+      "prompt": "siedemdziesiąty",
+      "options": [
+        {
+          "en": "seventeenth"
+        },
+        {
+          "en": "seventieth (w tysiąc dziewięćset siedemdziesiątym roku: in 1970)"
+        },
+        {
+          "en": "seventy"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "siedemdziesiaty"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c5-e06",
+      "text": "Mama urodziła się w tysiąc dziewięćset ___ roku.",
+      "meaning": {
+        "en": "Mum was born in 1970."
+      },
+      "gaps": [
+        [
+          "siedemdziesiątym"
+        ]
+      ],
+      "distractors": [
+        "siedemdziesiąt",
+        "siedemdziesiąty"
+      ],
+      "items": [
+        "mama",
+        "urodzic-sie-urodzil",
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "siedemdziesiaty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c5-e07",
+      "prompt": "sześćdziesiąty",
+      "options": [
+        {
+          "en": "sixteenth"
+        },
+        {
+          "en": "sixty"
+        },
+        {
+          "en": "sixtieth (w tysiąc dziewięćset sześćdziesiątym roku: in 1960)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szescdziesiaty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c5-e08",
+      "prompt": "czterdziesty",
+      "options": [
+        {
+          "en": "fortieth (w tysiąc dziewięćset czterdziestym roku: in 1940)"
+        },
+        {
+          "en": "fourteenth"
+        },
+        {
+          "en": "forty"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czterdziesty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c5-e09",
+      "prompt": "dwutysięczny",
+      "options": [
+        {
+          "en": "two thousand"
+        },
+        {
+          "en": "two-thousandth (w dwutysięcznym roku: in the year 2000)"
+        },
+        {
+          "en": "twentieth"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dwutysieczny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c5-e10",
+      "prompt": "tysiące",
+      "options": [
+        {
+          "en": "hundreds"
+        },
+        {
+          "en": "millions"
+        },
+        {
+          "en": "thousands (dwa tysiące: two thousand)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "tysiace"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-c5-e11",
+      "prompt": {
+        "en": "in the year 2000"
+      },
+      "acceptedAnswers": [
+        "w dwutysięcznym roku"
+      ],
+      "distractors": [
+        "dwa",
+        "tysiące"
+      ],
+      "items": [
+        "w-roku",
+        "dwutysieczny"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-c5-e12",
+      "pairs": [
+        {
+          "polish": "w tysiąc dziewięćset dziewięćdziesiątym roku",
+          "meaning": {
+            "en": "in 1990"
+          }
+        },
+        {
+          "polish": "w tysiąc dziewięćset sześćdziesiątym roku",
+          "meaning": {
+            "en": "in 1960"
+          }
+        },
+        {
+          "polish": "w tysiąc dziewięćset czterdziestym roku",
+          "meaning": {
+            "en": "in 1940"
+          }
+        },
+        {
+          "polish": "w dwutysięcznym roku",
+          "meaning": {
+            "en": "in 2000"
+          }
+        },
+        {
+          "polish": "w dwa tysiące piątym roku",
+          "meaning": {
+            "en": "in 2005"
+          }
+        }
+      ],
+      "items": [
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "dziewiecdziesiaty",
+        "szescdziesiaty",
+        "czterdziesty",
+        "dwutysieczny",
+        "dwa",
+        "tysiace",
+        "piaty"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-c5-e13",
+      "prompt": {
+        "en": "in which year?"
+      },
+      "acceptedAnswers": [
+        "w którym roku?"
+      ],
+      "items": [
+        "w-ktorym-roku"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-c5-e14",
+      "acceptedAnswers": [
+        "w dwa tysiące piątym roku"
+      ],
+      "meaning": {
+        "en": "in 2005"
+      },
+      "items": [
+        "w-roku",
+        "dwa",
+        "tysiace",
+        "piaty"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-c5-e15",
+      "lines": [
+        "W którym roku się urodziłeś?",
+        "W tysiąc dziewięćset dziewięćdziesiątym.",
+        "A twój brat?",
+        "W dwutysięcznym."
+      ],
+      "meaning": {
+        "en": "Two brothers."
+      },
+      "items": [
+        "w-ktorym-roku",
+        "urodzic-sie-urodzilem",
+        "tysiac",
+        "dziewiecset",
+        "dziewiecdziesiaty",
+        "a",
+        "twoj",
+        "brat",
+        "dwutysieczny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c5-e16",
+      "text": "Dziadek urodził się w tysiąc dziewięćset ___ roku.",
+      "meaning": {
+        "en": "Grandad was born in 1940."
+      },
+      "gaps": [
+        [
+          "czterdziestym"
+        ]
+      ],
+      "distractors": [
+        "czterdziesty",
+        "czterdzieści"
+      ],
+      "items": [
+        "dziadek",
+        "urodzic-sie-urodzil",
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "czterdziesty"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c5-e17",
+      "text": "Pobrali się w tysiąc dziewięćset sześćdziesiątym roku.",
+      "meaning": {
+        "en": "They got married in 1960."
+      },
+      "distractors": [
+        "Pobrali się w tysiąc dziewięćset siedemdziesiątym roku.",
+        "Pobrali się w tysiąc dziewięćset sześćdziesiątym szóstym roku."
+      ],
+      "items": [
+        "pobrac-sie",
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "szescdziesiaty"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-c5-e18",
+      "prompt": {
+        "en": "in 1970"
+      },
+      "acceptedAnswers": [
+        "w tysiąc dziewięćset siedemdziesiątym roku"
+      ],
+      "items": [
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "siedemdziesiaty"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "id": "kpk1-l21-d3",
+  "section": {
+    "letter": "D",
+    "heading": "Mami, co robiłaś?",
+    "meaning": {
+      "en": "Mami, what were you doing?"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-d3-t01",
+      "before": "kpk1-l21-d3-e01",
+      "title": {
+        "en": "Ile razy?"
+      },
+      "body": {
+        "en": "The imperfective tells how often or how long: *dzwoniłem do ciebie cały wieczór*, I kept calling you all evening; *na studiach spotykaliśmy się co tydzień*, at university we met every week. The perfective says it happened once and is done: *zadzwoniłem do mamy*, I called mum. In the same way *zapraszać* and *zaprosić*, *spotykać* and *spotkać*, *dziękować* and *podziękować*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d3-e01",
+      "prompt": "dzwoniłem",
+      "options": [
+        {
+          "en": "I was calling, I kept calling (said by a man; a woman says dzwoniłam)"
+        },
+        {
+          "en": "I was waiting"
+        },
+        {
+          "en": "I was writing"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dzwonic-dzwonilem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d3-e02",
+      "prompt": "zadzwoniłem",
+      "options": [
+        {
+          "en": "I wrote"
+        },
+        {
+          "en": "I called, I rang (once) (said by a man; a woman says zadzwoniłam; you called, to a woman: zadzwoniłaś; she called: zadzwoniła)"
+        },
+        {
+          "en": "I visited"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zadzwonic-zadzwonilem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-d3-e03",
+      "text": "Dzwoniłem do ciebie cały wieczór!",
+      "meaning": {
+        "en": "I kept calling you all evening! (said by a man)"
+      },
+      "distractors": [
+        "Zadzwoniłem do ciebie wieczorem.",
+        "Dzwoniłam do ciebie cały wieczór!"
+      ],
+      "items": [
+        "dzwonic-dzwonilem",
+        "do-ciebie",
+        "caly",
+        "wieczor"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d3-e04",
+      "prompt": "zapraszałam",
+      "options": [
+        {
+          "en": "I was calling"
+        },
+        {
+          "en": "I was asking"
+        },
+        {
+          "en": "I was inviting, I used to invite (said by a woman; a man says zapraszałem)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zapraszac-zapraszalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d3-e05",
+      "prompt": "zaprosiłam",
+      "options": [
+        {
+          "en": "I invited (said by a woman; a man says zaprosiłem)"
+        },
+        {
+          "en": "I visited"
+        },
+        {
+          "en": "I thanked"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zaprosic-zaprosilam"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-d3-e06",
+      "text": "Na urodziny ___ też dziadka.",
+      "meaning": {
+        "en": "I invited grandad to my birthday party too."
+      },
+      "gaps": [
+        [
+          "zaprosiłam"
+        ]
+      ],
+      "distractors": [
+        "zapraszałam",
+        "zaproszenie"
+      ],
+      "items": [
+        "na-urodziny",
+        "zaprosic-zaprosilam",
+        "tez",
+        "dziadek-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d3-e07",
+      "prompt": "spotykaliśmy się",
+      "options": [
+        {
+          "en": "we were talking"
+        },
+        {
+          "en": "we used to meet, we were meeting (said by women: spotykałyśmy się)"
+        },
+        {
+          "en": "we were travelling"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spotykac-sie-spotykalismy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d3-e08",
+      "prompt": "spotkałam",
+      "options": [
+        {
+          "en": "I lost"
+        },
+        {
+          "en": "I called"
+        },
+        {
+          "en": "I met, I ran into (said by a woman; a man says spotkałem)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "spotkac-spotkalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d3-e09",
+      "prompt": "podziękowałam",
+      "options": [
+        {
+          "en": "I thanked (said by a woman; a man says podziękowałem)"
+        },
+        {
+          "en": "I asked"
+        },
+        {
+          "en": "I apologised"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "podziekowac-podziekowalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d3-e10",
+      "prompt": "co tydzień",
+      "options": [
+        {
+          "en": "this week"
+        },
+        {
+          "en": "every week"
+        },
+        {
+          "en": "last week"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "co-tydzien"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-d3-e11",
+      "prompt": {
+        "en": "at university we met every week"
+      },
+      "acceptedAnswers": [
+        "na studiach spotykaliśmy się co tydzień"
+      ],
+      "distractors": [
+        "spotkaliśmy",
+        "razem"
+      ],
+      "items": [
+        "studia",
+        "spotykac-sie-spotykalismy",
+        "co-tydzien"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-d3-e12",
+      "pairs": [
+        {
+          "polish": "dzwoniłem",
+          "meaning": {
+            "en": "I kept calling"
+          }
+        },
+        {
+          "polish": "zadzwoniłem",
+          "meaning": {
+            "en": "I called once"
+          }
+        },
+        {
+          "polish": "zaprosiłam",
+          "meaning": {
+            "en": "I invited"
+          }
+        },
+        {
+          "polish": "spotkałam",
+          "meaning": {
+            "en": "I met"
+          }
+        },
+        {
+          "polish": "podziękowałam",
+          "meaning": {
+            "en": "I thanked"
+          }
+        }
+      ],
+      "items": [
+        "dzwonic-dzwonilem",
+        "zadzwonic-zadzwonilem",
+        "zaprosic-zaprosilam",
+        "spotkac-spotkalam",
+        "podziekowac-podziekowalam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-d3-e13",
+      "prompt": {
+        "en": "I called (said by a woman)"
+      },
+      "acceptedAnswers": [
+        "zadzwoniłam"
+      ],
+      "items": [
+        "zadzwonic-zadzwonilem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-d3-e14",
+      "acceptedAnswers": [
+        "spotkałam ją w kinie"
+      ],
+      "meaning": {
+        "en": "I ran into her at the cinema"
+      },
+      "items": [
+        "spotkac-spotkalam",
+        "ja-acc",
+        "w-kinie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-d3-e15",
+      "lines": [
+        "Na studiach często zapraszałam gości.",
+        "Spotykaliśmy się co tydzień.",
+        "Wczoraj zaprosiłam ich na moje urodziny."
+      ],
+      "meaning": {
+        "en": "Old friends."
+      },
+      "statements": [
+        {
+          "text": "Na studiach często miała gości.",
+          "meaning": {
+            "en": "At university she often had guests."
+          },
+          "true": true
+        },
+        {
+          "text": "Spotykali się raz w roku.",
+          "meaning": {
+            "en": "They met once a year."
+          },
+          "true": false
+        },
+        {
+          "text": "Zaprosiła ich na urodziny.",
+          "meaning": {
+            "en": "She invited them to her birthday party."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "studia",
+        "czesto",
+        "zapraszac-zapraszalam",
+        "gosc",
+        "spotykac-sie-spotykalismy",
+        "co-tydzien",
+        "wczoraj",
+        "zaprosic-zaprosilam",
+        "ich-acc",
+        "moje",
+        "urodziny"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-d3-e16",
+      "lines": [
+        "Dzwoniłem do ciebie trzy razy!",
+        "Przepraszam, byłam w kinie.",
+        "A potem zadzwoniłaś do mnie?",
+        "Nie, bo było już późno."
+      ],
+      "meaning": {
+        "en": "Where were you?"
+      },
+      "items": [
+        "dzwonic-dzwonilem",
+        "do-ciebie",
+        "trzy",
+        "razy",
+        "przepraszam",
+        "byc-bylam",
+        "w-kinie",
+        "a",
+        "potem",
+        "zadzwonic-zadzwonilem",
+        "do-mnie",
+        "nie",
+        "bo",
+        "byc-bylo",
+        "juz",
+        "pozno"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-d3-e17",
+      "text": "Zadzwoniłam do niego i podziękowałam.",
+      "meaning": {
+        "en": "I called him and thanked him."
+      },
+      "distractors": [
+        "Zadzwoniłam do niej i podziękowałam.",
+        "Dzwoniłam do niego i dziękowałam."
+      ],
+      "items": [
+        "zadzwonic-zadzwonilem",
+        "do-niego",
+        "i",
+        "podziekowac-podziekowalam"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-d3-e18",
+      "acceptedAnswers": [
+        "spotykaliśmy się co tydzień"
+      ],
+      "meaning": {
+        "en": "we used to meet every week"
+      },
+      "items": [
+        "spotykac-sie-spotykalismy",
+        "co-tydzien"
+      ]
+    }
+  ]
+}

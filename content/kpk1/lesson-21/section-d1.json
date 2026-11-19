@@ -1,0 +1,435 @@
+{
+  "id": "kpk1-l21-d1",
+  "section": {
+    "letter": "D",
+    "heading": "Mami, co robiłaś?",
+    "meaning": {
+      "en": "Mami, what were you doing?"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-d1-t01",
+      "before": "kpk1-l21-d1-e01",
+      "title": {
+        "en": "Robiłam czy zrobiłam?"
+      },
+      "body": {
+        "en": "Most Polish verbs come in pairs. The imperfective one, *robić*, *czytać*, shows an action as a process or a habit: *wczoraj długo czytałam*, yesterday I was reading for a long time. The perfective one, *zrobić*, *przeczytać*, shows one action done to the end, with a result: *przeczytałam książkę*, I read the book, I finished it. Often the perfective is the same verb with a prefix: *robić* and *zrobić*, *czytać* and *przeczytać*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d1-e01",
+      "prompt": "robiłam",
+      "options": [
+        {
+          "en": "I wanted"
+        },
+        {
+          "en": "I read"
+        },
+        {
+          "en": "I was doing, I used to do (said by a woman; a man says robiłem)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "robic-robilam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d1-e02",
+      "prompt": "zrobiłam",
+      "options": [
+        {
+          "en": "I did, I got (it) done (said by a woman; a man says zrobiłem)"
+        },
+        {
+          "en": "I saw"
+        },
+        {
+          "en": "I bought"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zrobic-zrobilam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-d1-e03",
+      "text": "Co robiłaś wczoraj wieczorem?",
+      "meaning": {
+        "en": "What were you doing yesterday evening?"
+      },
+      "distractors": [
+        "Co zrobiłaś wczoraj wieczorem?",
+        "Co robiłaś w sobotę wieczorem?"
+      ],
+      "items": [
+        "co",
+        "robic-robilas",
+        "wczoraj",
+        "wieczorem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d1-e04",
+      "prompt": "praca domowa",
+      "options": [
+        {
+          "en": "a home office"
+        },
+        {
+          "en": "homework"
+        },
+        {
+          "en": "a day off"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "praca-domowa"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-d1-e05",
+      "text": "Wczoraj długo ___ pracę domową.",
+      "meaning": {
+        "en": "Yesterday I spent a long time doing my homework."
+      },
+      "gaps": [
+        [
+          "robiłam"
+        ]
+      ],
+      "distractors": [
+        "zrobiłam",
+        "robię"
+      ],
+      "items": [
+        "wczoraj",
+        "dlugo",
+        "robic-robilam",
+        "praca-domowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d1-e06",
+      "prompt": "zrobiłaś",
+      "options": [
+        {
+          "en": "you bought"
+        },
+        {
+          "en": "you saw"
+        },
+        {
+          "en": "you did, you got (it) done (to a woman; to a man: zrobiłeś)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zrobic-zrobilas"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d1-e07",
+      "prompt": "przeczytałam",
+      "options": [
+        {
+          "en": "I read (it to the end) (said by a woman; a man says przeczytałem)"
+        },
+        {
+          "en": "I wrote"
+        },
+        {
+          "en": "I bought"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przeczytac-przeczytalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d1-e08",
+      "prompt": "cały",
+      "options": [
+        {
+          "en": "half"
+        },
+        {
+          "en": "the whole, all (cały wieczór: all evening) (cały, cała, całe)"
+        },
+        {
+          "en": "every"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "caly"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d1-e09",
+      "prompt": "do końca",
+      "options": [
+        {
+          "en": "from the start"
+        },
+        {
+          "en": "at home"
+        },
+        {
+          "en": "to the end"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "do-konca"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-d1-e10",
+      "prompt": {
+        "en": "I read the whole book"
+      },
+      "acceptedAnswers": [
+        "przeczytałam całą książkę"
+      ],
+      "distractors": [
+        "czytałam",
+        "cała"
+      ],
+      "items": [
+        "przeczytac-przeczytalam",
+        "caly",
+        "ksiazka-acc"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-d1-e11",
+      "pairs": [
+        {
+          "polish": "robiłam",
+          "meaning": {
+            "en": "I was doing"
+          }
+        },
+        {
+          "polish": "zrobiłam",
+          "meaning": {
+            "en": "I got it done"
+          }
+        },
+        {
+          "polish": "przeczytałam",
+          "meaning": {
+            "en": "I read it to the end"
+          }
+        },
+        {
+          "polish": "całą książkę",
+          "meaning": {
+            "en": "the whole book"
+          }
+        },
+        {
+          "polish": "do końca",
+          "meaning": {
+            "en": "to the end"
+          }
+        }
+      ],
+      "items": [
+        "robic-robilam",
+        "zrobic-zrobilam",
+        "przeczytac-przeczytalam",
+        "caly",
+        "ksiazka-acc",
+        "do-konca"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-d1-e12",
+      "prompt": {
+        "en": "I got it done (said by a man)"
+      },
+      "acceptedAnswers": [
+        "zrobiłem"
+      ],
+      "items": [
+        "zrobic-zrobilam"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-d1-e13",
+      "acceptedAnswers": [
+        "co zrobiłaś?"
+      ],
+      "meaning": {
+        "en": "what did you do?"
+      },
+      "items": [
+        "co",
+        "zrobic-zrobilas"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-d1-e14",
+      "lines": [
+        "W sobotę rano zrobiłam zakupy.",
+        "Potem długo czytałam.",
+        "Wieczorem przeczytałam książkę do końca."
+      ],
+      "meaning": {
+        "en": "My Saturday."
+      },
+      "statements": [
+        {
+          "text": "Rano zrobiła zakupy.",
+          "meaning": {
+            "en": "In the morning she did the shopping."
+          },
+          "true": true
+        },
+        {
+          "text": "Cały dzień robiła zakupy.",
+          "meaning": {
+            "en": "She was shopping all day."
+          },
+          "true": false
+        },
+        {
+          "text": "Przeczytała książkę do końca.",
+          "meaning": {
+            "en": "She read the book to the end."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "sobota",
+        "rano",
+        "zrobic-zrobilam",
+        "zakupy",
+        "potem",
+        "dlugo",
+        "czytac-czytalem",
+        "wieczorem",
+        "przeczytac-przeczytalam",
+        "ksiazka-acc",
+        "do-konca"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-d1-e15",
+      "text": "Nie mam pracy domowej, bo już ją ___.",
+      "meaning": {
+        "en": "I have no homework, because I have already done it."
+      },
+      "gaps": [
+        [
+          "zrobiłam"
+        ]
+      ],
+      "distractors": [
+        "robiłam",
+        "robię"
+      ],
+      "items": [
+        "nie",
+        "miec-mam",
+        "praca-domowa",
+        "bo",
+        "juz",
+        "ja-acc",
+        "zrobic-zrobilam"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-d1-e16",
+      "lines": [
+        "Co robiłaś wczoraj?",
+        "Robiłam pracę domową.",
+        "Zrobiłaś wszystko?",
+        "Tak, wszystko zrobiłam do końca."
+      ],
+      "meaning": {
+        "en": "Homework."
+      },
+      "items": [
+        "co",
+        "robic-robilas",
+        "wczoraj",
+        "robic-robilam",
+        "praca-domowa",
+        "zrobic-zrobilas",
+        "wszystko",
+        "tak",
+        "zrobic-zrobilam",
+        "do-konca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d1-e17",
+      "prompt": "wieczór",
+      "options": [
+        {
+          "en": "an evening (cały wieczór: all evening)"
+        },
+        {
+          "en": "a morning"
+        },
+        {
+          "en": "a night"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wieczor"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-d1-e18",
+      "prompt": {
+        "en": "the whole evening"
+      },
+      "acceptedAnswers": [
+        "cały wieczór"
+      ],
+      "distractors": [
+        "całą",
+        "wieczorem"
+      ],
+      "items": [
+        "caly",
+        "wieczor"
+      ]
+    }
+  ]
+}

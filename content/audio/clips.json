@@ -33,12 +33,20 @@
       "text": "A co robi pana córka?"
     },
     {
+      "id": "a-co-ugotowalas",
+      "text": "A co ugotowałaś?"
+    },
+    {
       "id": "a-co-z-nim",
       "text": "A co z nim?"
     },
     {
       "id": "a-cukier",
       "text": "A cukier?"
+    },
+    {
+      "id": "a-czternastego-pazdziernika-jest-dzien-nauczycie",
+      "text": "A czternastego października jest Dzień Nauczyciela."
     },
     {
       "id": "a-czy-to-jest-twoj-slownik",
@@ -125,6 +133,10 @@
       "text": "A ile możesz zapłacić?"
     },
     {
+      "id": "a-imieniny-w-polsce-obchodzimy-tez-imieniny",
+      "text": "A imieniny? W Polsce obchodzimy też imieniny."
+    },
+    {
       "id": "a-ja-bylam-w-gorach-nie-mialam-zasiegu",
       "text": "A ja byłam w górach! Nie miałam zasięgu."
     },
@@ -173,6 +185,10 @@
       "text": "A ja w dużym mieście, w nowym bloku na czwartym piętrze."
     },
     {
+      "id": "a-ja-w-gdansku-zaraz-po-wojnie-cale-zycie-pracow",
+      "text": "A ja w Gdańsku, zaraz po wojnie. Całe życie pracowałem w stoczni."
+    },
+    {
       "id": "a-jaka-bedzie-pogoda",
       "text": "A jaka będzie pogoda?"
     },
@@ -203,6 +219,10 @@
     {
       "id": "a-lublin",
       "text": "A Lublin?"
+    },
+    {
+      "id": "a-mama-ma-imieniny-szostego-maja",
+      "text": "A mama ma imieniny szóstego maja."
     },
     {
       "id": "a-moze-tez-koszulke",
@@ -245,6 +265,10 @@
       "text": "A potem idę na kawę ze znajomymi."
     },
     {
+      "id": "a-potem-zadzwonilas-do-mnie",
+      "text": "A potem zadzwoniłaś do mnie?"
+    },
+    {
       "id": "a-restauracja",
       "text": "A restauracja?"
     },
@@ -261,6 +285,10 @@
       "text": "A szampon?"
     },
     {
+      "id": "a-szkola-tez-w-gdansku",
+      "text": "A szkoła? Też w Gdańsku?"
+    },
+    {
       "id": "a-te-ksiazke",
       "text": "A tę książkę?"
     },
@@ -271,6 +299,10 @@
     {
       "id": "a-ten-sweter-jak-w-nim-wygladam",
       "text": "A ten sweter? Jak w nim wyglądam?"
+    },
+    {
+      "id": "a-teraz",
+      "text": "A teraz?"
     },
     {
       "id": "a-to",
@@ -303,6 +335,10 @@
     {
       "id": "a-tort",
       "text": "A tort?"
+    },
+    {
+      "id": "a-trzydziesty-pierwszy-grudnia",
+      "text": "A trzydziesty pierwszy grudnia?"
     },
     {
       "id": "a-tu-moj-brat-jest-na-wakacjach",
@@ -353,6 +389,10 @@
       "text": "a u pani?"
     },
     {
+      "id": "a-urodziny",
+      "text": "A urodziny?"
+    },
+    {
       "id": "a-w-niedziele",
       "text": "A w niedzielę?"
     },
@@ -383,6 +423,10 @@
     {
       "id": "a-w-przyszlym-roku",
       "text": "A w przyszłym roku?"
+    },
+    {
+      "id": "a-w-sobote-mam-egzamin",
+      "text": "A w sobotę mam egzamin."
     },
     {
       "id": "a-w-zeszlym-tygodniu",
@@ -883,6 +927,18 @@
     {
       "id": "babcia-i-dziadek-to-dziadkowie",
       "text": "Babcia i dziadek to dziadkowie."
+    },
+    {
+      "id": "babcia-jest-na-emeryturze",
+      "text": "babcia jest na emeryturze"
+    },
+    {
+      "id": "babcia-mieszkala-w-gdansku-cale-zycie",
+      "text": "Babcia mieszkała w Gdańsku całe życie."
+    },
+    {
+      "id": "babcia-urodzila-sie-w-lublinie",
+      "text": "Babcia urodziła się w Lublinie."
     },
     {
       "id": "balkon",
@@ -1557,8 +1613,16 @@
       "text": "Był na meczu."
     },
     {
+      "id": "byl-pan-w-solidarnosci",
+      "text": "Był pan w Solidarności?"
+    },
+    {
       "id": "byla",
       "text": "była"
+    },
+    {
+      "id": "byla-w-ciazy",
+      "text": "była w ciąży"
     },
     {
       "id": "byla-w-kinie",
@@ -1693,8 +1757,24 @@
       "text": "byłyśmy w kinie"
     },
     {
+      "id": "cala-ksiazke",
+      "text": "całą książkę"
+    },
+    {
+      "id": "cala-rodzina",
+      "text": "cała rodzina"
+    },
+    {
+      "id": "caly",
+      "text": "cały"
+    },
+    {
       "id": "caly-dzien",
       "text": "Cały dzień?"
+    },
+    {
+      "id": "caly-wieczor",
+      "text": "cały wieczór"
     },
     {
       "id": "ce",
@@ -1993,8 +2073,20 @@
       "text": "chodzicie"
     },
     {
+      "id": "chodzil",
+      "text": "chodził"
+    },
+    {
+      "id": "chodzilam-do-szkoly-w-toruniu",
+      "text": "Chodziłam do szkoły w Toruniu."
+    },
+    {
       "id": "chodzilem",
       "text": "chodziłem"
+    },
+    {
+      "id": "chodzilem-do-liceum-w-poznaniu",
+      "text": "Chodziłem do liceum w Poznaniu."
     },
     {
       "id": "chodzimy",
@@ -2019,6 +2111,10 @@
     {
       "id": "chodzmy-na-obiad",
       "text": "chodźmy na obiad"
+    },
+    {
+      "id": "choroba",
+      "text": "choroba"
     },
     {
       "id": "chory",
@@ -2389,8 +2485,20 @@
       "text": "co robiłaś w weekend?"
     },
     {
+      "id": "co-robilas-wczoraj",
+      "text": "Co robiłaś wczoraj?"
+    },
+    {
+      "id": "co-robilas-wczoraj-wieczorem",
+      "text": "Co robiłaś wczoraj wieczorem?"
+    },
+    {
       "id": "co-robiles-w-niedziele",
       "text": "Co robiłeś w niedzielę?"
+    },
+    {
+      "id": "co-robiles-wieczorem",
+      "text": "Co robiłeś wieczorem?"
     },
     {
       "id": "co-robimy-dzisiaj-po-poludniu",
@@ -2485,6 +2593,14 @@
       "text": "co to jest? To jest słownik."
     },
     {
+      "id": "co-to-za-swieto",
+      "text": "co to za święto?"
+    },
+    {
+      "id": "co-to-za-swieto-dwudziesty-czwarty-grudnia",
+      "text": "Co to za święto, dwudziesty czwarty grudnia?"
+    },
+    {
       "id": "co-to-znaczy",
       "text": "co to znaczy?"
     },
@@ -2509,6 +2625,10 @@
       "text": "Co ty robisz?"
     },
     {
+      "id": "co-tydzien",
+      "text": "co tydzień"
+    },
+    {
       "id": "co-u-ciebie",
       "text": "co u ciebie?"
     },
@@ -2527,6 +2647,10 @@
     {
       "id": "co-z-nim",
       "text": "co z nim?"
+    },
+    {
+      "id": "co-zrobilas",
+      "text": "co zrobiłaś?"
     },
     {
       "id": "co-zwykle-kupujesz-na-targu",
@@ -2551,6 +2675,10 @@
     {
       "id": "codziennie-wstaje-o-siodmej",
       "text": "Codziennie wstaję o siódmej."
+    },
+    {
+      "id": "codziennie-wstawalam-o-siodmej",
+      "text": "Codziennie wstawałam o siódmej."
     },
     {
       "id": "cola",
@@ -2821,6 +2949,10 @@
       "text": "czekolady"
     },
     {
+      "id": "czerwca",
+      "text": "czerwca"
+    },
+    {
       "id": "czerwiec",
       "text": "czerwiec"
     },
@@ -3053,6 +3185,10 @@
       "text": "czterdzieści dwa lata"
     },
     {
+      "id": "czterdziesty",
+      "text": "czterdziesty"
+    },
+    {
       "id": "czternascie",
       "text": "czternaście"
     },
@@ -3063,6 +3199,14 @@
     {
       "id": "czternasta",
       "text": "czternasta"
+    },
+    {
+      "id": "czternastego",
+      "text": "czternastego"
+    },
+    {
+      "id": "czternasty",
+      "text": "czternasty"
     },
     {
       "id": "czteroosobowy",
@@ -3151,6 +3295,10 @@
     {
       "id": "czwartek",
       "text": "czwartek"
+    },
+    {
+      "id": "czwarty",
+      "text": "czwarty"
     },
     {
       "id": "czy",
@@ -3589,6 +3737,14 @@
       "text": "Czyli o siódmej wieczorem?"
     },
     {
+      "id": "czyli-w-grudniu",
+      "text": "Czyli w grudniu!"
+    },
+    {
+      "id": "czyli-w-maju-masz-urodziny",
+      "text": "Czyli w maju masz urodziny!"
+    },
+    {
       "id": "czym",
       "text": "czym"
     },
@@ -3623,6 +3779,10 @@
     {
       "id": "czynsz-szescset-zlotych-kaucja-tysiac",
       "text": "Czynsz: sześćset złotych, kaucja: tysiąc."
+    },
+    {
+      "id": "czysto",
+      "text": "czysto"
     },
     {
       "id": "czysty",
@@ -3905,6 +4065,10 @@
       "text": "długo"
     },
     {
+      "id": "dlugo-sprzatalam-ale-jeszcze-nie-jest-czysto",
+      "text": "Długo sprzątałam, ale jeszcze nie jest czysto."
+    },
+    {
       "id": "dlugopis",
       "text": "długopis"
     },
@@ -3967,6 +4131,10 @@
     {
       "id": "do-klubu",
       "text": "do klubu"
+    },
+    {
+      "id": "do-konca",
+      "text": "do końca"
     },
     {
       "id": "do-krakowa",
@@ -4401,6 +4569,14 @@
       "text": "Druga, proszę."
     },
     {
+      "id": "drugi",
+      "text": "drugi"
+    },
+    {
+      "id": "drugi-kwietnia-naprawde",
+      "text": "Drugi kwietnia? Naprawdę?"
+    },
+    {
       "id": "drugi-raz",
       "text": "drugi raz"
     },
@@ -4741,6 +4917,22 @@
       "text": "dwudziesta trzecia"
     },
     {
+      "id": "dwudziestego-czwartego-grudnia-jest-wigilia",
+      "text": "Dwudziestego czwartego grudnia jest Wigilia."
+    },
+    {
+      "id": "dwudziestego-piatego-grudnia",
+      "text": "dwudziestego piątego grudnia"
+    },
+    {
+      "id": "dwudziestego-szostego-lipca-to-jest-w-kalendarzu",
+      "text": "Dwudziestego szóstego lipca, to jest w kalendarzu."
+    },
+    {
+      "id": "dwudziesty",
+      "text": "dwudziesty"
+    },
+    {
       "id": "dwunasta",
       "text": "dwunasta"
     },
@@ -4755,6 +4947,10 @@
     {
       "id": "dwupokojowy",
       "text": "dwupokojowy"
+    },
+    {
+      "id": "dwutysieczny",
+      "text": "dwutysięczny"
     },
     {
       "id": "dynia",
@@ -4791,6 +4987,46 @@
     {
       "id": "dziadek",
       "text": "dziadek"
+    },
+    {
+      "id": "dziadek-i-babcia-pobrali-sie-w-czerwcu",
+      "text": "Dziadek i babcia pobrali się w czerwcu."
+    },
+    {
+      "id": "dziadek-ma-osiemdziesiat-lat",
+      "text": "Dziadek ma osiemdziesiąt lat."
+    },
+    {
+      "id": "dziadek-ma-tort-i-duzo-swieczek",
+      "text": "Dziadek ma tort i dużo świeczek."
+    },
+    {
+      "id": "dziadek-pracowal-w-gdansku-a-mieszkal-na-wsi",
+      "text": "Dziadek pracował w Gdańsku, a mieszkał na wsi."
+    },
+    {
+      "id": "dziadek-pracowal-w-stoczni-gdanskiej",
+      "text": "Dziadek pracował w Stoczni Gdańskiej."
+    },
+    {
+      "id": "dziadek-urodzil-sie-w-tysiac-dziewiecset-czterdz",
+      "text": "Dziadek urodził się w tysiąc dziewięćset czterdziestym roku."
+    },
+    {
+      "id": "dziadek-urodzil-sie-w-tysiac-dziewiecset-trzydzi",
+      "text": "Dziadek urodził się w tysiąc dziewięćset trzydziestym roku."
+    },
+    {
+      "id": "dziadek-zdal-mature-w-gdansku",
+      "text": "Dziadek zdał maturę w Gdańsku."
+    },
+    {
+      "id": "dziadek-zdal-mature-w-tysiac-dziewiecset-piecdzi",
+      "text": "Dziadek zdał maturę w tysiąc dziewięćset pięćdziesiątym roku."
+    },
+    {
+      "id": "dziadka",
+      "text": "dziadka"
     },
     {
       "id": "dziadkiem",
@@ -4857,8 +5093,16 @@
       "text": "Dziękuję."
     },
     {
+      "id": "dziekuje-3",
+      "text": "Dziękuję!"
+    },
+    {
       "id": "dziekuje-a-gdzie-jest-kawa",
       "text": "Dziękuję! A gdzie jest kawa?"
+    },
+    {
+      "id": "dziekuje-a-kiedy-pan-ma-urodziny",
+      "text": "Dziękuję! A kiedy pan ma urodziny?"
     },
     {
       "id": "dziekuje-ale-nie-lubie-kina",
@@ -4877,6 +5121,14 @@
       "text": "Dziękuję bardzo!"
     },
     {
+      "id": "dziekuje-bardzo-osiemdziesiat-lat-to-juz-duzo",
+      "text": "Dziękuję bardzo! Osiemdziesiąt lat to już dużo."
+    },
+    {
+      "id": "dziekuje-bardzo-to-bardzo-mile",
+      "text": "Dziękuję bardzo, to bardzo miłe."
+    },
+    {
       "id": "dziekuje-ciasne-ale-wlasne-chcesz-kawe",
       "text": "Dziękuję! Ciasne, ale własne. Chcesz kawę?"
     },
@@ -4893,8 +5145,16 @@
       "text": "Dziękuję, do widzenia!"
     },
     {
+      "id": "dziekuje-do-zobaczenia",
+      "text": "Dziękuję! Do zobaczenia!"
+    },
+    {
       "id": "dziekuje-dobrze-a-pani",
       "text": "dziękuję, dobrze, a pani?"
+    },
+    {
+      "id": "dziekuje-dziekuje-bardzo",
+      "text": "Dziękuję, dziękuję bardzo!"
     },
     {
       "id": "dziekuje-nawzajem",
@@ -5029,6 +5289,10 @@
       "text": "Dzień dobry. Czy są chipsy?"
     },
     {
+      "id": "dzien-dobry-dzis-mam-urodziny",
+      "text": "Dzień dobry! Dziś mam urodziny."
+    },
+    {
       "id": "dzien-dobry-dzwonie-w-sprawie-ogloszenia",
       "text": "Dzień dobry, dzwonię w sprawie ogłoszenia."
     },
@@ -5133,12 +5397,48 @@
       "text": "dzień dobry, witamy"
     },
     {
+      "id": "dzien-dobry-wszystkiego-najlepszego-z-okazji-uro",
+      "text": "Dzień dobry! Wszystkiego najlepszego z okazji urodzin!"
+    },
+    {
       "id": "dzien-dobry-wszystko-dobrze-a-u-pani",
       "text": "Dzień dobry! Wszystko dobrze, a u pani?"
     },
     {
       "id": "dzien-dobry-zapraszam",
       "text": "Dzień dobry! Zapraszam."
+    },
+    {
+      "id": "dzien-dziecka",
+      "text": "Dzień Dziecka"
+    },
+    {
+      "id": "dzien-dziecka-jest-pierwszego-czerwca",
+      "text": "Dzień Dziecka jest pierwszego czerwca"
+    },
+    {
+      "id": "dzien-kobiet",
+      "text": "Dzień Kobiet"
+    },
+    {
+      "id": "dzien-kobiet-jest-osmego-marca",
+      "text": "Dzień Kobiet jest ósmego marca."
+    },
+    {
+      "id": "dzien-matki",
+      "text": "Dzień Matki"
+    },
+    {
+      "id": "dzien-matki-jest-dwudziestego-szostego-maja",
+      "text": "Dzień Matki jest dwudziestego szóstego maja."
+    },
+    {
+      "id": "dzien-nauczyciela",
+      "text": "Dzień Nauczyciela"
+    },
+    {
+      "id": "dzien-nauczyciela-jest-czternastego-pazdziernika",
+      "text": "Dzień Nauczyciela jest czternastego października."
     },
     {
       "id": "dziennikarka",
@@ -5151,6 +5451,18 @@
     {
       "id": "dziesiata",
       "text": "dziesiąta"
+    },
+    {
+      "id": "dziesiatego-listopada-a-ty",
+      "text": "Dziesiątego listopada. A ty?"
+    },
+    {
+      "id": "dziesiaty",
+      "text": "dziesiąty"
+    },
+    {
+      "id": "dziesiaty-listopada",
+      "text": "dziesiąty listopada"
     },
     {
       "id": "dziesiec",
@@ -5253,6 +5565,10 @@
       "text": "dziewiąta"
     },
     {
+      "id": "dziewiaty",
+      "text": "dziewiąty"
+    },
+    {
       "id": "dziewiec",
       "text": "dziewięć"
     },
@@ -5271,6 +5587,10 @@
     {
       "id": "dziewiecdziesiat-szesc-minus-dwanascie-rowna-sie",
       "text": "dziewięćdziesiąt sześć minus dwanaście równa się osiemdziesiąt cztery"
+    },
+    {
+      "id": "dziewiecdziesiaty",
+      "text": "dziewięćdziesiąty"
     },
     {
       "id": "dziewiecset",
@@ -5295,6 +5615,34 @@
     {
       "id": "dzis-chca-cos-nowego-ida-na-quiz-o-krakowie-nagr",
       "text": "Dziś chcą coś nowego: idą na quiz o Krakowie. Nagroda to przewodnik po Krakowie."
+    },
+    {
+      "id": "dzis-jest-drugi-kwietnia",
+      "text": "Dziś jest drugi kwietnia."
+    },
+    {
+      "id": "dzis-jest-drugi-lutego",
+      "text": "Dziś jest drugi lutego."
+    },
+    {
+      "id": "dzis-jest-dwudziesty-wrzesnia",
+      "text": "Dziś jest dwudziesty września."
+    },
+    {
+      "id": "dzis-jest-piaty-sierpnia",
+      "text": "Dziś jest piąty sierpnia."
+    },
+    {
+      "id": "dzis-jest-pierwszy-stycznia",
+      "text": "Dziś jest pierwszy stycznia."
+    },
+    {
+      "id": "dzis-jest-pierwszy-stycznia-a-jutro-drugi",
+      "text": "Dziś jest pierwszy stycznia, a jutro drugi."
+    },
+    {
+      "id": "dzis-jest-trzeci-marca",
+      "text": "dziś jest trzeci marca"
     },
     {
       "id": "dzis-jestem-zestresowany",
@@ -5429,6 +5777,18 @@
       "text": "dzwonię w sprawie ogłoszenia"
     },
     {
+      "id": "dzwonilem",
+      "text": "dzwoniłem"
+    },
+    {
+      "id": "dzwonilem-do-ciebie-caly-wieczor",
+      "text": "Dzwoniłem do ciebie cały wieczór!"
+    },
+    {
+      "id": "dzwonilem-do-ciebie-trzy-razy",
+      "text": "Dzwoniłem do ciebie trzy razy!"
+    },
+    {
       "id": "dzwonisz",
       "text": "dzwonisz"
     },
@@ -5453,6 +5813,10 @@
       "text": "ef"
     },
     {
+      "id": "egzamin",
+      "text": "egzamin"
+    },
+    {
       "id": "el",
       "text": "el"
     },
@@ -5467,6 +5831,10 @@
     {
       "id": "emeryt",
       "text": "emeryt"
+    },
+    {
+      "id": "emerytura",
+      "text": "emerytura"
     },
     {
       "id": "en",
@@ -6193,6 +6561,14 @@
       "text": "gdzie pan mieszka?"
     },
     {
+      "id": "gdzie-pan-pracowal",
+      "text": "Gdzie pan pracował?"
+    },
+    {
+      "id": "gdzie-pan-pracowal-po-wojnie",
+      "text": "Gdzie pan pracował po wojnie?"
+    },
+    {
       "id": "gdzie-panstwo-sa",
       "text": "gdzie państwo są?"
     },
@@ -6333,6 +6709,18 @@
       "text": "gorzki"
     },
     {
+      "id": "gosc",
+      "text": "gość"
+    },
+    {
+      "id": "goscie",
+      "text": "goście"
+    },
+    {
+      "id": "goscie-skladaja-zyczenia",
+      "text": "goście składają życzenia"
+    },
+    {
       "id": "gospodarz",
       "text": "gospodarz"
     },
@@ -6343,6 +6731,14 @@
     {
       "id": "gotowac",
       "text": "gotować"
+    },
+    {
+      "id": "gotowalam",
+      "text": "gotowałam"
+    },
+    {
+      "id": "gotowalam-i-pilam-wino",
+      "text": "Gotowałam i piłam wino."
     },
     {
       "id": "gotowane-mieso-jest-zdrowsze-niz-smazone",
@@ -6539,6 +6935,10 @@
     {
       "id": "gruby",
       "text": "gruby"
+    },
+    {
+      "id": "grudnia",
+      "text": "grudnia"
     },
     {
       "id": "grudzien",
@@ -7025,6 +7425,10 @@
       "text": "imię, nazwisko, narodowość"
     },
     {
+      "id": "imieniny",
+      "text": "imieniny"
+    },
+    {
       "id": "impreza",
       "text": "impreza"
     },
@@ -7199,6 +7603,10 @@
     {
       "id": "ja-czytam-tekst",
       "text": "ja czytam tekst"
+    },
+    {
+      "id": "ja-dziewiatego-grudnia",
+      "text": "Ja? Dziewiątego grudnia."
     },
     {
       "id": "ja-gotuje-ryz-a-ty",
@@ -7451,6 +7859,10 @@
     {
       "id": "jade",
       "text": "jadę"
+    },
+    {
+      "id": "jade-do-domu-na-swieta",
+      "text": "jadę do domu na święta"
     },
     {
       "id": "jade-do-rodzicow-mama-ma-urodziny",
@@ -7853,6 +8265,10 @@
       "text": "Jakie są te śliwki?"
     },
     {
+      "id": "jakie-swieto-jest-dwudziestego-piatego-grudnia-b",
+      "text": "Jakie święto jest dwudziestego piątego grudnia? Boże Narodzenie."
+    },
+    {
       "id": "jakiego",
       "text": "jakiego"
     },
@@ -7989,6 +8405,22 @@
       "text": "jedenasta"
     },
     {
+      "id": "jedenastego",
+      "text": "jedenastego"
+    },
+    {
+      "id": "jedenastego-listopada",
+      "text": "jedenastego listopada"
+    },
+    {
+      "id": "jedenastego-listopada-jest-swieto-niepodleglosci",
+      "text": "Jedenastego listopada jest Święto Niepodległości."
+    },
+    {
+      "id": "jedenasty",
+      "text": "jedenasty"
+    },
+    {
       "id": "jedli",
       "text": "jedli"
     },
@@ -8119,6 +8551,10 @@
     {
       "id": "jego-mama-jest-z-polski",
       "text": "jego mama jest z Polski"
+    },
+    {
+      "id": "jego-ojciec-zginal-w-powstaniu-warszawskim",
+      "text": "Jego ojciec zginął w Powstaniu Warszawskim."
     },
     {
       "id": "jego-siostra-i-jej-brat",
@@ -8745,6 +9181,10 @@
       "text": "jeszcze raz"
     },
     {
+      "id": "jeszcze-raz-jeszcze-raz",
+      "text": "Jeszcze raz, jeszcze raz!"
+    },
+    {
       "id": "jeszcze-raz-prosze",
       "text": "jeszcze raz, proszę"
     },
@@ -8897,6 +9337,10 @@
       "text": "Jutro idę do ciebie. Masz czas?"
     },
     {
+      "id": "jutro-ide-na-urodziny-dziadka",
+      "text": "Jutro idę na urodziny dziadka."
+    },
+    {
       "id": "jutro-jade-do-krakowa",
       "text": "jutro jadę do Krakowa"
     },
@@ -8909,8 +9353,16 @@
       "text": "Jutro jadę do Warszawy."
     },
     {
+      "id": "jutro-jade-na-wakacje",
+      "text": "Jutro jadę na wakacje."
+    },
+    {
       "id": "jutro-jedziemy-do-krakowa",
       "text": "Jutro jedziemy do Krakowa."
+    },
+    {
+      "id": "jutro-jedziesz-do-gdanska-szczesliwej-podrozy",
+      "text": "Jutro jedziesz do Gdańska? Szczęśliwej podróży!"
     },
     {
       "id": "jutro-jest-kaczka",
@@ -8925,8 +9377,16 @@
       "text": "jutro jestem zajęty"
     },
     {
+      "id": "jutro-mam-egzamin-powodzenia",
+      "text": "Jutro mam egzamin. Powodzenia!"
+    },
+    {
       "id": "jutro-mam-urodziny",
       "text": "jutro mam urodziny"
+    },
+    {
+      "id": "jutro-mam-wyjazd-do-gdanska",
+      "text": "Jutro mam wyjazd do Gdańska."
     },
     {
       "id": "jutro-moge",
@@ -8935,6 +9395,14 @@
     {
       "id": "jutro-rano-bedzie-mroz-okolo-pieciu-stopni-poniz",
       "text": "Jutro rano będzie mróz, około pięciu stopni poniżej zera."
+    },
+    {
+      "id": "jutro-sa-moje-urodziny",
+      "text": "Jutro są moje urodziny!"
+    },
+    {
+      "id": "jutro-siostra-ma-slub",
+      "text": "Jutro siostra ma ślub."
     },
     {
       "id": "jutro-wieczorem-nie-mam-planow",
@@ -9023,6 +9491,10 @@
     {
       "id": "kapusta-i-burak",
       "text": "kapusta i burak"
+    },
+    {
+      "id": "kariera",
+      "text": "kariera"
     },
     {
       "id": "karta",
@@ -9241,6 +9713,18 @@
       "text": "kawy"
     },
     {
+      "id": "kazdy",
+      "text": "każdy"
+    },
+    {
+      "id": "kazdy-lubi-prezenty-z-okazji-urodzin",
+      "text": "Każdy lubi prezenty z okazji urodzin."
+    },
+    {
+      "id": "kazdy-ma-imieniny",
+      "text": "każdy ma imieniny"
+    },
+    {
       "id": "keczup",
       "text": "keczup"
     },
@@ -9273,6 +9757,10 @@
       "text": "kiedy"
     },
     {
+      "id": "kiedy-bylam-mala-codziennie-wstawalam-o-siodmej",
+      "text": "Kiedy byłam mała, codziennie wstawałam o siódmej."
+    },
+    {
       "id": "kiedy-bylam-mala-rzadko-chodzilam-do-kina",
       "text": "Kiedy byłam mała, rzadko chodziłam do kina."
     },
@@ -9301,8 +9789,16 @@
       "text": "Kiedy masz czas?"
     },
     {
+      "id": "kiedy-masz-imieniny",
+      "text": "kiedy masz imieniny?"
+    },
+    {
       "id": "kiedy-masz-urodziny",
       "text": "kiedy masz urodziny?"
+    },
+    {
+      "id": "kiedy-masz-urodziny-piatego-czerwca",
+      "text": "Kiedy masz urodziny? Piątego czerwca."
     },
     {
       "id": "kiedy-moge-przyjsc",
@@ -9313,12 +9809,24 @@
       "text": "Kiedy mogę przyjść obejrzeć mieszkanie?"
     },
     {
+      "id": "kiedy-obchodzisz-imieniny",
+      "text": "Kiedy obchodzisz imieniny?"
+    },
+    {
       "id": "kiedy-ostatnio-byles-w-kinie",
       "text": "Kiedy ostatnio byłeś w kinie?"
     },
     {
       "id": "kiedy-pracujesz",
       "text": "Kiedy pracujesz?"
+    },
+    {
+      "id": "kiedy-sie-urodzilas",
+      "text": "Kiedy się urodziłaś?"
+    },
+    {
+      "id": "kiedy-sie-urodziles",
+      "text": "kiedy się urodziłeś?"
     },
     {
       "id": "kiedy-szedlem-do-domu-padal-deszcz",
@@ -9331,6 +9839,10 @@
     {
       "id": "kiedys",
       "text": "kiedyś"
+    },
+    {
+      "id": "kiedys-kupowalam-chleb-w-supermarkecie",
+      "text": "Kiedyś kupowałam chleb w supermarkecie."
     },
     {
       "id": "kielbasa",
@@ -9623,6 +10135,18 @@
     {
       "id": "komputer-stoi-na-biurku",
       "text": "Komputer stoi na biurku."
+    },
+    {
+      "id": "komunizm",
+      "text": "komunizm"
+    },
+    {
+      "id": "komunizm-upadl-w-polsce-w-tysiac-dziewiecset-osi",
+      "text": "Komunizm upadł w Polsce w tysiąc dziewięćset osiemdziesiątym dziewiątym roku."
+    },
+    {
+      "id": "komunizm-upadl-w-tysiac-dziewiecset-osiemdziesia",
+      "text": "komunizm upadł w tysiąc dziewięćset osiemdziesiątym dziewiątym roku"
     },
     {
       "id": "koncze",
@@ -9961,6 +10485,10 @@
       "text": "która klasa?"
     },
     {
+      "id": "ktory-dzis-jest",
+      "text": "który dziś jest?"
+    },
+    {
       "id": "kubek",
       "text": "kubek"
     },
@@ -10027,6 +10555,10 @@
     {
       "id": "kupowac",
       "text": "kupować"
+    },
+    {
+      "id": "kupowalam",
+      "text": "kupowałam"
     },
     {
       "id": "kupuja-kilogram-pieczarek-trzy-kilogramy-papryki",
@@ -10239,6 +10771,10 @@
     {
       "id": "kwiecien",
       "text": "kwiecień"
+    },
+    {
+      "id": "kwietnia",
+      "text": "kwietnia"
     },
     {
       "id": "lac",
@@ -10465,12 +11001,20 @@
       "text": "leży"
     },
     {
+      "id": "liceum",
+      "text": "liceum"
+    },
+    {
       "id": "liczba-mnoga",
       "text": "liczba mnoga"
     },
     {
       "id": "liczebnik",
       "text": "liczebnik"
+    },
+    {
+      "id": "lipca",
+      "text": "lipca"
     },
     {
       "id": "lipiec",
@@ -10523,6 +11067,10 @@
     {
       "id": "listopad",
       "text": "listopad"
+    },
+    {
+      "id": "listopada",
+      "text": "listopada"
     },
     {
       "id": "literatura",
@@ -10869,6 +11417,10 @@
       "text": "Lustro wisi na ścianie."
     },
     {
+      "id": "lutego",
+      "text": "lutego"
+    },
+    {
       "id": "luty",
       "text": "luty"
     },
@@ -10959,6 +11511,10 @@
     {
       "id": "maja",
       "text": "mają"
+    },
+    {
+      "id": "maja-2",
+      "text": "maja"
     },
     {
       "id": "maja-dziesiec-lat",
@@ -11193,6 +11749,18 @@
       "text": "Mam dziś zły dzień."
     },
     {
+      "id": "mam-imieniny-dwudziestego-czwartego-grudnia-w-wi",
+      "text": "Mam imieniny dwudziestego czwartego grudnia, w Wigilię."
+    },
+    {
+      "id": "mam-imieniny-raz-w-roku",
+      "text": "mam imieniny raz w roku"
+    },
+    {
+      "id": "mam-imieniny-siodmego-czerwca",
+      "text": "mam imieniny siódmego czerwca"
+    },
+    {
       "id": "mam-inteligentnego-brata",
       "text": "mam inteligentnego brata"
     },
@@ -11373,6 +11941,10 @@
       "text": "Mam urlop raz w roku."
     },
     {
+      "id": "mam-urodziny-czwartego-maja",
+      "text": "Mam urodziny czwartego maja."
+    },
+    {
       "id": "mam-urodziny-w-maju",
       "text": "mam urodziny w maju"
     },
@@ -11433,6 +12005,14 @@
       "text": "Mama ma do Adama prośbę: zakupy."
     },
     {
+      "id": "mama-poznala-tate-na-studiach",
+      "text": "Mama poznała tatę na studiach."
+    },
+    {
+      "id": "mama-robila-kariere-w-banku",
+      "text": "Mama robiła karierę w banku."
+    },
+    {
       "id": "mama-tutaj-jest",
       "text": "mama tutaj jest"
     },
@@ -11443,6 +12023,10 @@
     {
       "id": "mama-ugotowala-obiad-2",
       "text": "Mama ugotowała obiad."
+    },
+    {
+      "id": "mama-urodzila-sie-w-tysiac-dziewiecset-siedemdzi",
+      "text": "Mama urodziła się w tysiąc dziewięćset siedemdziesiątym roku."
     },
     {
       "id": "mamo",
@@ -11487,6 +12071,10 @@
     {
       "id": "mapa",
       "text": "mapa"
+    },
+    {
+      "id": "marca",
+      "text": "marca"
     },
     {
       "id": "marchewka",
@@ -11681,6 +12269,10 @@
       "text": "matka i ojciec"
     },
     {
+      "id": "matura",
+      "text": "matura"
+    },
+    {
       "id": "maz",
       "text": "mąż"
     },
@@ -11839,6 +12431,10 @@
     {
       "id": "mieszkaja",
       "text": "mieszkają"
+    },
+    {
+      "id": "mieszkal",
+      "text": "mieszkał"
     },
     {
       "id": "mieszkam",
@@ -12073,6 +12669,10 @@
       "text": "miło mi panią poznać"
     },
     {
+      "id": "milosci",
+      "text": "miłości"
+    },
+    {
       "id": "mily",
       "text": "miły"
     },
@@ -12221,8 +12821,16 @@
       "text": "Mój brat ma na imię Adam i ma szesnaście lat."
     },
     {
+      "id": "moj-brat-ma-urodziny-czwartego-sierpnia",
+      "text": "Mój brat ma urodziny czwartego sierpnia."
+    },
+    {
       "id": "moj-brat-pracuje-w-firmie",
       "text": "Mój brat pracuje w firmie."
+    },
+    {
+      "id": "moj-brat-sie-ozenil",
+      "text": "Mój brat się ożenił!"
     },
     {
       "id": "moj-brat-to-dentysta",
@@ -12251,6 +12859,10 @@
     {
       "id": "moj-dziadek-prawie-nigdy-nie-jezdzi-taksowka",
       "text": "Mój dziadek prawie nigdy nie jeździ taksówką."
+    },
+    {
+      "id": "moj-dziadek-zostal-inzynierem",
+      "text": "Mój dziadek został inżynierem."
     },
     {
       "id": "moj-gospodarz-pracuje-w-domu",
@@ -12433,12 +13045,20 @@
       "text": "Moja babcia ma na imię Ewa."
     },
     {
+      "id": "moja-babcia-mieszkala-w-lublinie",
+      "text": "Moja babcia mieszkała w Lublinie."
+    },
+    {
       "id": "moja-ciocia",
       "text": "moja ciocia"
     },
     {
       "id": "moja-ciocia-ma-blizniaki",
       "text": "Moja ciocia ma bliźniaki."
+    },
+    {
+      "id": "moja-corka-chodzi-do-przedszkola",
+      "text": "Moja córka chodzi do przedszkola."
     },
     {
       "id": "moja-corka-i-moj-syn",
@@ -12493,6 +13113,10 @@
       "text": "moja mama ma na imię Ewa"
     },
     {
+      "id": "moja-mama-ma-urodziny-dziewiatego-pazdziernika",
+      "text": "Moja mama ma urodziny dziewiątego października."
+    },
+    {
       "id": "moja-rodzina-jest-duza",
       "text": "Moja rodzina jest duża."
     },
@@ -12515,6 +13139,18 @@
     {
       "id": "moja-siostra-ma-dwanascie-lat",
       "text": "Moja siostra ma dwanaście lat."
+    },
+    {
+      "id": "moja-siostra-ma-urodziny-siodmego-lipca",
+      "text": "Moja siostra ma urodziny siódmego lipca."
+    },
+    {
+      "id": "moja-siostra-wyszla-za-maz-w-maju",
+      "text": "Moja siostra wyszła za mąż w maju."
+    },
+    {
+      "id": "moja-siostra-zdala-mature-w-maju",
+      "text": "Moja siostra zdała maturę w maju."
     },
     {
       "id": "moja-starsza-siostra",
@@ -13249,6 +13885,10 @@
       "text": "na niego"
     },
     {
+      "id": "na-nowej-drodze-zycia",
+      "text": "na nowej drodze życia"
+    },
+    {
       "id": "na-obiad",
       "text": "na obiad"
     },
@@ -13561,6 +14201,14 @@
       "text": "Na stole są owoce."
     },
     {
+      "id": "na-studiach-czesto-zapraszalam-gosci",
+      "text": "Na studiach często zapraszałam gości."
+    },
+    {
+      "id": "na-studiach-spotykalismy-sie-co-tydzien",
+      "text": "na studiach spotykaliśmy się co tydzień"
+    },
+    {
       "id": "na-suficie-sa-plastikowe-gwiazdki",
       "text": "Na suficie są plastikowe gwiazdki."
     },
@@ -13615,6 +14263,18 @@
     {
       "id": "na-uniwersytecie",
       "text": "na uniwersytecie"
+    },
+    {
+      "id": "na-urodziny",
+      "text": "na urodziny"
+    },
+    {
+      "id": "na-urodziny-przyjezdza-cala-rodzina",
+      "text": "Na urodziny przyjeżdża cała rodzina."
+    },
+    {
+      "id": "na-urodziny-zaprosilam-tez-dziadka",
+      "text": "Na urodziny zaprosiłam też dziadka."
     },
     {
       "id": "na-wakacjach",
@@ -13773,6 +14433,14 @@
       "text": "nadać paczkę"
     },
     {
+      "id": "nagle",
+      "text": "nagle"
+    },
+    {
+      "id": "nagle-zadzwonila-mama",
+      "text": "Nagle zadzwoniła mama."
+    },
+    {
       "id": "nagroda",
       "text": "nagroda"
     },
@@ -13853,8 +14521,20 @@
       "text": "najpierw wstałem, potem umyłem zęby"
     },
     {
+      "id": "najpierw-wypilismy-kawe-a-potem-porozmawialismy",
+      "text": "najpierw wypiliśmy kawę, a potem porozmawialiśmy"
+    },
+    {
+      "id": "najpierw-wypilismy-kawe-a-potem-porozmawialismy-2",
+      "text": "Najpierw wypiliśmy kawę, a potem porozmawialiśmy."
+    },
+    {
       "id": "najpierw-zdjecie-na-zewnatrz",
       "text": "Najpierw zdjęcie na zewnątrz."
+    },
+    {
+      "id": "najpierw-zrobilam-zakupy",
+      "text": "najpierw zrobiłam zakupy"
     },
     {
       "id": "najpierw-zupa-potem-ryba",
@@ -13923,6 +14603,14 @@
     {
       "id": "naprawde-2",
       "text": "naprawdę"
+    },
+    {
+      "id": "naprawde-byl-pan-w-solidarnosci",
+      "text": "Naprawdę? Był pan w Solidarności?"
+    },
+    {
+      "id": "naprawde-kiedy",
+      "text": "Naprawdę? Kiedy?"
     },
     {
       "id": "naprzeciwko",
@@ -14173,6 +14861,10 @@
       "text": "Nie, bez cukru."
     },
     {
+      "id": "nie-bo-bylo-juz-pozno",
+      "text": "Nie, bo było już późno."
+    },
+    {
       "id": "nie-bylem-w-domu-spalem-i-czytalem",
       "text": "Nie, byłem w domu. Spałem i czytałem."
     },
@@ -14203,6 +14895,10 @@
     {
       "id": "nie-do-argentyny-czy-to-duzo-kosztuje",
       "text": "Nie, do Argentyny. Czy to dużo kosztuje?"
+    },
+    {
+      "id": "nie-do-szkoly-chodzilam-w-toruniu",
+      "text": "Nie, do szkoły chodziłam w Toruniu."
     },
     {
       "id": "nie-dziekuje",
@@ -14477,6 +15173,10 @@
       "text": "Nie mam pojęcia, jak zrobić to zadanie."
     },
     {
+      "id": "nie-mam-pracy-domowej-bo-juz-ja-zrobilam",
+      "text": "Nie mam pracy domowej, bo już ją zrobiłam."
+    },
+    {
       "id": "nie-mam-rodzenstwa",
       "text": "Nie mam rodzeństwa."
     },
@@ -14737,6 +15437,10 @@
       "text": "Nie umiem śpiewać, ale lubię tańczyć."
     },
     {
+      "id": "nie-w-koncu-poszedlem-spac",
+      "text": "Nie, w końcu poszedłem spać."
+    },
+    {
       "id": "nie-widze",
       "text": "nie widzę"
     },
@@ -14835,6 +15539,10 @@
     {
       "id": "niebieski",
       "text": "niebieski"
+    },
+    {
+      "id": "niech-zyje",
+      "text": "niech żyje"
     },
     {
       "id": "nieczynny",
@@ -15353,8 +16061,24 @@
       "text": "o wpół do trzeciej"
     },
     {
+      "id": "obchodze-imieniny",
+      "text": "obchodzę imieniny"
+    },
+    {
+      "id": "obchodzic",
+      "text": "obchodzić"
+    },
+    {
       "id": "obcokrajowiec",
       "text": "obcokrajowiec"
+    },
+    {
+      "id": "obejrzalem",
+      "text": "obejrzałem"
+    },
+    {
+      "id": "obejrzales-go-do-konca",
+      "text": "Obejrzałeś go do końca?"
     },
     {
       "id": "obejrzec",
@@ -15435,6 +16159,10 @@
     {
       "id": "od-czasu-do-czasu-jezdze-taksowka",
       "text": "od czasu do czasu jeżdżę taksówką"
+    },
+    {
+      "id": "od-czasu-do-czasu-ogladalem-telewizje",
+      "text": "Od czasu do czasu oglądałem telewizję."
     },
     {
       "id": "od-dzis",
@@ -15555,6 +16283,10 @@
     {
       "id": "ogladalam-polski-film-2",
       "text": "Oglądałam polski film."
+    },
+    {
+      "id": "ogladalem-film",
+      "text": "Oglądałem film."
     },
     {
       "id": "ogladam",
@@ -16233,6 +16965,14 @@
       "text": "osiemdziesiąt osiem"
     },
     {
+      "id": "osiemdziesiate-urodziny-dziadka",
+      "text": "osiemdziesiąte urodziny dziadka"
+    },
+    {
+      "id": "osiemdziesiaty",
+      "text": "osiemdziesiąty"
+    },
+    {
       "id": "osiemnascie",
       "text": "osiemnaście"
     },
@@ -16267,6 +17007,22 @@
     {
       "id": "osma",
       "text": "ósma"
+    },
+    {
+      "id": "osmego",
+      "text": "ósmego"
+    },
+    {
+      "id": "osmego-grudnia",
+      "text": "ósmego grudnia"
+    },
+    {
+      "id": "osmego-maja-tysiac-dziewiecset-osiemdziesiatego",
+      "text": "Ósmego maja tysiąc dziewięćset osiemdziesiątego roku."
+    },
+    {
+      "id": "osmy",
+      "text": "ósmy"
     },
     {
       "id": "osoba",
@@ -16315,6 +17071,14 @@
     {
       "id": "owocowy",
       "text": "owocowy"
+    },
+    {
+      "id": "ozenil-sie",
+      "text": "ożenił się"
+    },
+    {
+      "id": "ozenilem-sie-w-dwa-tysiace-dziesiatym-roku",
+      "text": "ożeniłem się w dwa tysiące dziesiątym roku"
     },
     {
       "id": "pa",
@@ -16525,6 +17289,10 @@
       "text": "październik"
     },
     {
+      "id": "pazdziernika",
+      "text": "października"
+    },
+    {
       "id": "pe",
       "text": "pe"
     },
@@ -16541,8 +17309,20 @@
       "text": "piąta"
     },
     {
+      "id": "piatego",
+      "text": "piątego"
+    },
+    {
+      "id": "piatego-maja",
+      "text": "Piątego maja."
+    },
+    {
       "id": "piatek",
       "text": "piątek"
+    },
+    {
+      "id": "piaty",
+      "text": "piąty"
     },
     {
       "id": "pic",
@@ -16677,6 +17457,10 @@
       "text": "Pięćdziesiąt plus pięćdziesiąt równa się sto."
     },
     {
+      "id": "piecdziesiaty",
+      "text": "pięćdziesiąty"
+    },
+    {
       "id": "piecset",
       "text": "pięćset"
     },
@@ -16761,6 +17545,22 @@
       "text": "pierwsze danie to zupa"
     },
     {
+      "id": "pierwszego-czerwca",
+      "text": "pierwszego czerwca"
+    },
+    {
+      "id": "pierwszego-listopada-jest-wszystkich-swietych",
+      "text": "Pierwszego listopada jest Wszystkich Świętych."
+    },
+    {
+      "id": "pierwszego-stycznia",
+      "text": "pierwszego stycznia"
+    },
+    {
+      "id": "pierwszy",
+      "text": "pierwszy"
+    },
+    {
       "id": "pierwszy-raz",
       "text": "pierwszy raz"
     },
@@ -16787,6 +17587,18 @@
     {
       "id": "pietnasta",
       "text": "piętnasta"
+    },
+    {
+      "id": "pietnastego",
+      "text": "piętnastego"
+    },
+    {
+      "id": "pietnastego-sierpnia",
+      "text": "piętnastego sierpnia"
+    },
+    {
+      "id": "pietnasty",
+      "text": "piętnasty"
     },
     {
       "id": "pietro",
@@ -16839,6 +17651,14 @@
     {
       "id": "piknik",
       "text": "piknik"
+    },
+    {
+      "id": "pilam",
+      "text": "piłam"
+    },
+    {
+      "id": "pilismy-kawe-i-rozmawialismy",
+      "text": "piliśmy kawę i rozmawialiśmy"
     },
     {
       "id": "pisac",
@@ -17137,8 +17957,24 @@
       "text": "po włosku"
     },
     {
+      "id": "po-wojnie-pracowal-w-stoczni-i-byl-w-solidarnosc",
+      "text": "Po wojnie pracował w stoczni i był w Solidarności."
+    },
+    {
       "id": "po-zimie-jest-wiosna-a-po-lecie-jesien",
       "text": "Po zimie jest wiosna, a po lecie jesień."
+    },
+    {
+      "id": "pobrali-sie",
+      "text": "pobrali się"
+    },
+    {
+      "id": "pobrali-sie-w-lipcu",
+      "text": "Pobrali się w lipcu."
+    },
+    {
+      "id": "pobrali-sie-w-tysiac-dziewiecset-szescdziesiatym",
+      "text": "Pobrali się w tysiąc dziewięćset sześćdziesiątym roku."
     },
     {
       "id": "pobyc-sama",
@@ -17345,6 +18181,10 @@
       "text": "Poduszki leżą na kanapie."
     },
     {
+      "id": "podziekowalam",
+      "text": "podziękowałam"
+    },
+    {
       "id": "poeta",
       "text": "poeta"
     },
@@ -17493,6 +18333,10 @@
       "text": "policjant"
     },
     {
+      "id": "politechnika",
+      "text": "politechnika"
+    },
+    {
       "id": "polityka",
       "text": "polityką"
     },
@@ -17621,6 +18465,10 @@
       "text": "pomysł"
     },
     {
+      "id": "pomyslnosci",
+      "text": "pomyślności"
+    },
+    {
       "id": "poniedzialek",
       "text": "poniedziałek"
     },
@@ -17713,6 +18561,10 @@
       "text": "pora roku"
     },
     {
+      "id": "porozmawialismy",
+      "text": "porozmawialiśmy"
+    },
+    {
       "id": "portfel",
       "text": "portfel"
     },
@@ -17723,6 +18575,14 @@
     {
       "id": "posluchac",
       "text": "posłuchać"
+    },
+    {
+      "id": "posprzatalam",
+      "text": "posprzątałam"
+    },
+    {
+      "id": "posprzatalam-mieszkanie-i-teraz-jest-czysto",
+      "text": "posprzątałam mieszkanie i teraz jest czysto"
     },
     {
       "id": "postawic",
@@ -17797,6 +18657,10 @@
       "text": "potem"
     },
     {
+      "id": "potem-dlugo-czytalam",
+      "text": "Potem długo czytałam."
+    },
+    {
       "id": "potem-dzwoni-do-niej-jeszcze-raz",
       "text": "Potem dzwoni do niej jeszcze raz."
     },
@@ -17813,6 +18677,10 @@
       "text": "Potem mama dodaje warzywa i przyprawy."
     },
     {
+      "id": "potem-mama-urodzila-mnie",
+      "text": "Potem mama urodziła mnie."
+    },
+    {
       "id": "potem-mowi-dobrze-juz-ide",
       "text": "Potem mówi: dobrze, już idę."
     },
@@ -17825,6 +18693,10 @@
       "text": "Potem patrzy na cień na ścianie."
     },
     {
+      "id": "potem-posprzatalam-mieszkanie",
+      "text": "Potem posprzątałam mieszkanie."
+    },
+    {
       "id": "potem-prosze-dojsc-do-skrzyzowania-i-przejsc-prz",
       "text": "Potem proszę dojść do skrzyżowania i przejść przez park."
     },
@@ -17835,6 +18707,18 @@
     {
       "id": "potem-sprawdzam-cos-w-telefonie-i-pije-kawe",
       "text": "Potem sprawdzam coś w telefonie i piję kawę."
+    },
+    {
+      "id": "potem-studiowal-na-politechnice",
+      "text": "Potem studiował na politechnice."
+    },
+    {
+      "id": "potem-studiowalam-w-krakowie-i-tam-duzo-sie-uczy",
+      "text": "Potem studiowałam w Krakowie i tam dużo się uczyłam."
+    },
+    {
+      "id": "potem-ugotowalam-obiad",
+      "text": "Potem ugotowałam obiad."
     },
     {
       "id": "potem-umylam-zeby",
@@ -17881,8 +18765,20 @@
       "text": "powodzenia"
     },
     {
+      "id": "powodzenia-2",
+      "text": "powodzenia!"
+    },
+    {
       "id": "powodzenia-do-widzenia",
       "text": "powodzenia, do widzenia"
+    },
+    {
+      "id": "powstanie-warszawskie",
+      "text": "Powstanie Warszawskie"
+    },
+    {
+      "id": "powstanie-warszawskie-bylo-w-tysiac-dziewiecset",
+      "text": "Powstanie Warszawskie było w tysiąc dziewięćset czterdziestym czwartym roku."
     },
     {
       "id": "powtorzyc",
@@ -17895,6 +18791,10 @@
     {
       "id": "poznac",
       "text": "poznać"
+    },
+    {
+      "id": "poznal",
+      "text": "poznał"
     },
     {
       "id": "poznalam",
@@ -17929,6 +18829,10 @@
       "text": "późno"
     },
     {
+      "id": "praca-domowa",
+      "text": "praca domowa"
+    },
+    {
       "id": "prace",
       "text": "pracę"
     },
@@ -17939,6 +18843,14 @@
     {
       "id": "pracowac",
       "text": "pracować"
+    },
+    {
+      "id": "pracowal",
+      "text": "pracował"
+    },
+    {
+      "id": "pracowal-trzydziesci-lat-w-gdansku",
+      "text": "Pracował trzydzieści lat w Gdańsku."
     },
     {
       "id": "pracowalam-w-sobote",
@@ -18059,6 +18971,10 @@
     {
       "id": "prezent",
       "text": "prezent"
+    },
+    {
+      "id": "prima-aprilis",
+      "text": "prima aprilis"
     },
     {
       "id": "problem",
@@ -18477,6 +19393,18 @@
       "text": "przeczytać"
     },
     {
+      "id": "przeczytalam",
+      "text": "przeczytałam"
+    },
+    {
+      "id": "przeczytalam-cala-ksiazke",
+      "text": "przeczytałam całą książkę"
+    },
+    {
+      "id": "przeczytalem",
+      "text": "przeczytałem"
+    },
+    {
       "id": "przed",
       "text": "przed"
     },
@@ -18525,6 +19453,10 @@
       "text": "przedstawić się"
     },
     {
+      "id": "przedszkole",
+      "text": "przedszkole"
+    },
+    {
       "id": "przedwczoraj",
       "text": "przedwczoraj"
     },
@@ -18547,6 +19479,10 @@
     {
       "id": "przepraszam",
       "text": "przepraszam"
+    },
+    {
+      "id": "przepraszam-bylam-w-kinie",
+      "text": "Przepraszam, byłam w kinie."
     },
     {
       "id": "przepraszam-co-to-jest",
@@ -18591,6 +19527,10 @@
     {
       "id": "przepraszam-ktora-jest-godzina",
       "text": "Przepraszam, która jest godzina?"
+    },
+    {
+      "id": "przepraszam-ktory-dzis-jest",
+      "text": "Przepraszam, który dziś jest?"
     },
     {
       "id": "przepraszam-mam-pytanie",
@@ -18669,6 +19609,14 @@
       "text": "przestronny"
     },
     {
+      "id": "przeszedl",
+      "text": "przeszedł"
+    },
+    {
+      "id": "przeszedl-na-emeryture",
+      "text": "przeszedł na emeryturę"
+    },
+    {
       "id": "przetlumaczyc",
       "text": "przetłumaczyć"
     },
@@ -18735,6 +19683,10 @@
     {
       "id": "przyjezdza",
       "text": "przyjeżdża"
+    },
+    {
+      "id": "przyjezdza-cala-rodzina",
+      "text": "Przyjeżdża cała rodzina."
     },
     {
       "id": "przyklad",
@@ -18847,6 +19799,10 @@
     {
       "id": "rachunek",
       "text": "rachunek"
+    },
+    {
+      "id": "raczej",
+      "text": "raczej"
     },
     {
       "id": "randka",
@@ -19021,6 +19977,22 @@
       "text": "Robię zakupy i spotykam się ze znajomymi."
     },
     {
+      "id": "robil",
+      "text": "robił"
+    },
+    {
+      "id": "robil-kariere",
+      "text": "robił karierę"
+    },
+    {
+      "id": "robilam",
+      "text": "robiłam"
+    },
+    {
+      "id": "robilam-prace-domowa",
+      "text": "Robiłam pracę domową."
+    },
+    {
       "id": "robilas",
       "text": "robiłaś"
     },
@@ -19073,6 +20045,10 @@
       "text": "rok ma dwanaście miesięcy"
     },
     {
+      "id": "roku",
+      "text": "roku"
+    },
+    {
       "id": "rolnik",
       "text": "rolnik"
     },
@@ -19111,6 +20087,18 @@
     {
       "id": "rozmawialam-z-nimi",
       "text": "rozmawiałam z nimi"
+    },
+    {
+      "id": "rozmawialismy",
+      "text": "rozmawialiśmy"
+    },
+    {
+      "id": "rozmawialismy-caly-wieczor",
+      "text": "rozmawialiśmy cały wieczór"
+    },
+    {
+      "id": "rozmawialismy-i-jednoczesnie-pilismy-kawe",
+      "text": "Rozmawialiśmy i jednocześnie piliśmy kawę."
     },
     {
       "id": "rozmawiam",
@@ -19429,6 +20417,10 @@
       "text": "siedemdziesiąt"
     },
     {
+      "id": "siedemdziesiaty",
+      "text": "siedemdziesiąty"
+    },
+    {
       "id": "siedemnascie",
       "text": "siedemnaście"
     },
@@ -19461,8 +20453,20 @@
       "text": "sierpień"
     },
     {
+      "id": "sierpnia",
+      "text": "sierpnia"
+    },
+    {
       "id": "siodma",
       "text": "siódma"
+    },
+    {
+      "id": "siodmego-sierpnia",
+      "text": "siódmego sierpnia"
+    },
+    {
+      "id": "siodmy",
+      "text": "siódmy"
     },
     {
       "id": "siostra",
@@ -19517,8 +20521,24 @@
       "text": "skandal"
     },
     {
+      "id": "skladac",
+      "text": "składać"
+    },
+    {
+      "id": "skladam-ci-zyczenia",
+      "text": "składam ci życzenia"
+    },
+    {
       "id": "sklep",
       "text": "sklep"
+    },
+    {
+      "id": "skonczylam-studia-w-lipcu",
+      "text": "Skończyłam studia w lipcu."
+    },
+    {
+      "id": "skonczylem",
+      "text": "skończyłem"
     },
     {
       "id": "skrecic",
@@ -19635,6 +20655,10 @@
     {
       "id": "slowo",
       "text": "słowo"
+    },
+    {
+      "id": "slub",
+      "text": "ślub"
     },
     {
       "id": "sluchac",
@@ -19789,6 +20813,10 @@
       "text": "sól i pieprz"
     },
     {
+      "id": "solidarnosc",
+      "text": "Solidarność"
+    },
+    {
       "id": "sos",
       "text": "sos"
     },
@@ -19849,6 +20877,14 @@
       "text": "śpiewać"
     },
     {
+      "id": "spiewamy",
+      "text": "śpiewamy"
+    },
+    {
+      "id": "spiewamy-sto-lat",
+      "text": "śpiewamy sto lat"
+    },
+    {
       "id": "spisz",
       "text": "śpisz"
     },
@@ -19897,6 +20933,14 @@
       "text": "sportowy"
     },
     {
+      "id": "spotkalam",
+      "text": "spotkałam"
+    },
+    {
+      "id": "spotkalam-ja-w-kinie",
+      "text": "spotkałam ją w kinie"
+    },
+    {
       "id": "spotkanie",
       "text": "spotkanie"
     },
@@ -19911,6 +20955,18 @@
     {
       "id": "spotykac-sie",
       "text": "spotykać się"
+    },
+    {
+      "id": "spotykalismy-sie",
+      "text": "spotykaliśmy się"
+    },
+    {
+      "id": "spotykalismy-sie-co-tydzien",
+      "text": "Spotykaliśmy się co tydzień."
+    },
+    {
+      "id": "spotykalismy-sie-co-tydzien-2",
+      "text": "spotykaliśmy się co tydzień"
     },
     {
       "id": "spotykam-sie",
@@ -19959,6 +21015,14 @@
     {
       "id": "sprawy-rodzinne",
       "text": "sprawy rodzinne"
+    },
+    {
+      "id": "sprzatalam",
+      "text": "sprzątałam"
+    },
+    {
+      "id": "sprzatalem",
+      "text": "sprzątałem"
     },
     {
       "id": "sprzatam",
@@ -20073,8 +21137,16 @@
       "text": "sto lat!"
     },
     {
+      "id": "sto-lat-sto-lat-niech-zyje-zyje-nam",
+      "text": "Sto lat, sto lat, niech żyje, żyje nam!"
+    },
+    {
       "id": "sto-zlotych-sniadanie-jest-w-cenie",
       "text": "Sto złotych, śniadanie jest w cenie."
+    },
+    {
+      "id": "stocznia",
+      "text": "stocznia"
     },
     {
       "id": "stoi",
@@ -20165,8 +21237,24 @@
       "text": "studentów"
     },
     {
+      "id": "studia",
+      "text": "studia"
+    },
+    {
       "id": "studiowac",
       "text": "studiować"
+    },
+    {
+      "id": "studiowalem",
+      "text": "studiowałem"
+    },
+    {
+      "id": "studiowalem-na-politechnice",
+      "text": "studiowałem na politechnice"
+    },
+    {
+      "id": "studiowalem-piec-lat-a-potem-skonczylem-studia",
+      "text": "Studiowałem pięć lat, a potem skończyłem studia."
     },
     {
       "id": "stuprocentowy",
@@ -20175,6 +21263,10 @@
     {
       "id": "styczen",
       "text": "styczeń"
+    },
+    {
+      "id": "stycznia",
+      "text": "stycznia"
     },
     {
       "id": "stylowe",
@@ -20195,6 +21287,10 @@
     {
       "id": "sufit",
       "text": "sufit"
+    },
+    {
+      "id": "sukcesow",
+      "text": "sukcesów"
     },
     {
       "id": "super-a-gdzie-jest-kasa",
@@ -20277,6 +21373,14 @@
       "text": "Świeci słońce, ale wieje wiatr."
     },
     {
+      "id": "swieczka",
+      "text": "świeczka"
+    },
+    {
+      "id": "swieczki",
+      "text": "świeczki"
+    },
+    {
       "id": "swietnie",
       "text": "świetnie"
     },
@@ -20333,6 +21437,10 @@
       "text": "Świetnie! To będziemy spacerować w parku."
     },
     {
+      "id": "swietnie-udanych-wakacji",
+      "text": "Świetnie! Udanych wakacji!"
+    },
+    {
       "id": "swietnie-w-sobote-bylem-w-kinie",
       "text": "Świetnie! W sobotę byłem w kinie."
     },
@@ -20351,6 +21459,18 @@
     {
       "id": "swietny-pomysl-gdzie-sie-spotkamy",
       "text": "Świetny pomysł! Gdzie się spotkamy?"
+    },
+    {
+      "id": "swieto",
+      "text": "święto"
+    },
+    {
+      "id": "swieto-niepodleglosci",
+      "text": "Święto Niepodległości"
+    },
+    {
+      "id": "swieto-niepodleglosci-jest-jedenastego-listopada",
+      "text": "Święto Niepodległości jest jedenastego listopada"
     },
     {
       "id": "swieza-bazylia",
@@ -20425,6 +21545,10 @@
       "text": "szafka"
     },
     {
+      "id": "szampan",
+      "text": "szampan"
+    },
+    {
       "id": "szampon",
       "text": "szampon"
     },
@@ -20461,8 +21585,20 @@
       "text": "Szczecin leży na północnym zachodzie."
     },
     {
+      "id": "szczescia",
+      "text": "szczęścia"
+    },
+    {
       "id": "szczescie",
       "text": "szczęście"
+    },
+    {
+      "id": "szczesliwego-nowego-roku",
+      "text": "szczęśliwego Nowego Roku!"
+    },
+    {
+      "id": "szczesliwej-podrozy",
+      "text": "szczęśliwej podróży!"
     },
     {
       "id": "szczesliwy",
@@ -20537,6 +21673,10 @@
       "text": "sześćdziesiąt minus dziesięć równa się pięćdziesiąt"
     },
     {
+      "id": "szescdziesiaty",
+      "text": "sześćdziesiąty"
+    },
+    {
       "id": "szescset",
       "text": "sześćset"
     },
@@ -20581,6 +21721,14 @@
       "text": "Szkoła organizuje piknik."
     },
     {
+      "id": "szkola-podstawowa",
+      "text": "szkoła podstawowa"
+    },
+    {
+      "id": "szkola-zaczyna-sie-pierwszego-wrzesnia",
+      "text": "Szkoła zaczyna się pierwszego września."
+    },
+    {
       "id": "szlak",
       "text": "szlak"
     },
@@ -20595,6 +21743,14 @@
     {
       "id": "szosta",
       "text": "szósta"
+    },
+    {
+      "id": "szostego-lipca",
+      "text": "szóstego lipca"
+    },
+    {
+      "id": "szosty",
+      "text": "szósty"
     },
     {
       "id": "szukaja",
@@ -20651,6 +21807,14 @@
     {
       "id": "szybki",
       "text": "szybki"
+    },
+    {
+      "id": "szybkiego-powrotu-do-zdrowia",
+      "text": "szybkiego powrotu do zdrowia!"
+    },
+    {
+      "id": "szybkiego-powrotu-do-zdrowia-2",
+      "text": "szybkiego powrotu do zdrowia"
     },
     {
       "id": "szybko",
@@ -20771,6 +21935,14 @@
     {
       "id": "tak-3",
       "text": "Tak?"
+    },
+    {
+      "id": "tak-a-co",
+      "text": "Tak, a co?"
+    },
+    {
+      "id": "tak-a-imieniny-w-lipcu",
+      "text": "Tak, a imieniny w lipcu."
     },
     {
       "id": "tak-a-potem-prosze-przejsc-przez-park",
@@ -20937,6 +22109,10 @@
       "text": "Tak, oczywiście. Proszę."
     },
     {
+      "id": "tak-od-tysiac-dziewiecset-osiemdziesiatego-roku",
+      "text": "Tak, od tysiąc dziewięćset osiemdziesiątego roku. A teraz tort!"
+    },
+    {
       "id": "tak-pamietam",
       "text": "tak, pamiętam"
     },
@@ -21029,8 +22205,16 @@
       "text": "Tak, trochę, ale tutaj mówimy po polsku!"
     },
     {
+      "id": "tak-w-osiemdziesiatym-roku",
+      "text": "Tak, w osiemdziesiątym roku."
+    },
+    {
       "id": "tak-w-zeszlym-roku-bylem-w-kinie-tylko-raz",
       "text": "Tak. W zeszłym roku byłem w kinie tylko raz."
+    },
+    {
+      "id": "tak-wszystko-zrobilam-do-konca",
+      "text": "Tak, wszystko zrobiłam do końca."
     },
     {
       "id": "tak-znam-go",
@@ -21059,6 +22243,10 @@
     {
       "id": "tam-2",
       "text": "Tam."
+    },
+    {
+      "id": "tam-chodzila-do-szkoly-podstawowej-i-do-liceum",
+      "text": "Tam chodziła do szkoły podstawowej i do liceum."
     },
     {
       "id": "tam-i-z-powrotem",
@@ -21449,8 +22637,24 @@
       "text": "Teraz jest mu smutno."
     },
     {
+      "id": "teraz-jest-na-emeryturze",
+      "text": "Teraz jest na emeryturze."
+    },
+    {
       "id": "teraz-jest-wiosna-a-potem-bedzie-lato",
       "text": "Teraz jest wiosna, a potem będzie lato."
+    },
+    {
+      "id": "teraz-jestem-na-emeryturze-i-robie-co-chce",
+      "text": "Teraz jestem na emeryturze i robię, co chcę."
+    },
+    {
+      "id": "teraz-ma-osiemdziesiat-lat",
+      "text": "Teraz ma osiemdziesiąt lat."
+    },
+    {
+      "id": "teraz-mieszka-w-warszawie",
+      "text": "Teraz mieszka w Warszawie."
     },
     {
       "id": "teraz-mieszkam-w-polsce",
@@ -22397,6 +23601,10 @@
       "text": "to studentka"
     },
     {
+      "id": "to-sylwester",
+      "text": "To sylwester!"
+    },
+    {
       "id": "to-szkola",
       "text": "to szkoła"
     },
@@ -22419,6 +23627,10 @@
     {
       "id": "to-wasz-dziadek",
       "text": "To wasz dziadek."
+    },
+    {
+      "id": "to-wigilia",
+      "text": "To Wigilia."
     },
     {
       "id": "to-wszystko",
@@ -22601,6 +23813,14 @@
       "text": "trzeba"
     },
     {
+      "id": "trzeci",
+      "text": "trzeci"
+    },
+    {
+      "id": "trzeci-kwietnia",
+      "text": "trzeci kwietnia"
+    },
+    {
       "id": "trzecia",
       "text": "trzecia"
     },
@@ -22691,6 +23911,18 @@
     {
       "id": "trzydziesci-trzy",
       "text": "trzydzieści trzy"
+    },
+    {
+      "id": "trzydziestego",
+      "text": "trzydziestego"
+    },
+    {
+      "id": "trzydziestego-pierwszego-stycznia",
+      "text": "Trzydziestego pierwszego stycznia."
+    },
+    {
+      "id": "trzydziesty",
+      "text": "trzydziesty"
     },
     {
       "id": "trzynascie",
@@ -22909,6 +24141,10 @@
       "text": "tysiąc złotych"
     },
     {
+      "id": "tysiace",
+      "text": "tysiące"
+    },
+    {
       "id": "u",
       "text": "u"
     },
@@ -23017,6 +24253,14 @@
       "text": "uczycie się w Krakowie?"
     },
     {
+      "id": "uczylem-sie",
+      "text": "uczyłem się"
+    },
+    {
+      "id": "uczylem-sie-w-liceum",
+      "text": "uczyłem się w liceum"
+    },
+    {
       "id": "uczymy-sie",
       "text": "uczymy się"
     },
@@ -23029,8 +24273,24 @@
       "text": "uczysz się polskiego"
     },
     {
+      "id": "udanych-wakacji",
+      "text": "udanych wakacji!"
+    },
+    {
       "id": "ugotowala",
       "text": "ugotowała"
+    },
+    {
+      "id": "ugotowalam",
+      "text": "ugotowałam"
+    },
+    {
+      "id": "ugotowalam-pierogi",
+      "text": "Ugotowałam pierogi."
+    },
+    {
+      "id": "ugotowalam-zupe",
+      "text": "ugotowałam zupę"
     },
     {
       "id": "ulgowy",
@@ -23051,6 +24311,14 @@
     {
       "id": "ulubiony",
       "text": "ulubiony"
+    },
+    {
+      "id": "umarl",
+      "text": "umarł"
+    },
+    {
+      "id": "umarla-w-zeszlym-roku",
+      "text": "Umarła w zeszłym roku."
     },
     {
       "id": "umawiamy-sie",
@@ -23141,6 +24409,10 @@
       "text": "umywalka jest obok wanny"
     },
     {
+      "id": "upadl",
+      "text": "upadł"
+    },
+    {
       "id": "upal",
       "text": "upał"
     },
@@ -23159,6 +24431,58 @@
     {
       "id": "urlop-ma-raz-w-roku",
       "text": "Urlop ma raz w roku."
+    },
+    {
+      "id": "urodzil-sie",
+      "text": "urodził się"
+    },
+    {
+      "id": "urodzil-sie-w-gdansku",
+      "text": "urodził się w Gdańsku"
+    },
+    {
+      "id": "urodzila",
+      "text": "urodziła"
+    },
+    {
+      "id": "urodzila-corke-w-marcu",
+      "text": "Urodziła córkę w marcu."
+    },
+    {
+      "id": "urodzila-sie-pierwszego-czerwca-dwutysiecznego-r",
+      "text": "Urodziła się pierwszego czerwca dwutysięcznego roku."
+    },
+    {
+      "id": "urodzila-syna",
+      "text": "urodziła syna"
+    },
+    {
+      "id": "urodzilam-sie",
+      "text": "urodziłam się"
+    },
+    {
+      "id": "urodzilam-sie-dwudziestego-marca-tysiac-dziewiec",
+      "text": "Urodziłam się dwudziestego marca tysiąc dziewięćset dziewięćdziesiątego roku."
+    },
+    {
+      "id": "urodzilam-sie-piatego-maja",
+      "text": "urodziłam się piątego maja"
+    },
+    {
+      "id": "urodzilem-sie",
+      "text": "urodziłem się"
+    },
+    {
+      "id": "urodzilem-sie-w-krakowie",
+      "text": "Urodziłem się w Krakowie."
+    },
+    {
+      "id": "urodzilem-sie-w-krakowie-w-tysiac-dziewiecset-dz",
+      "text": "Urodziłem się w Krakowie, w tysiąc dziewięćset dziewięćdziesiątym roku."
+    },
+    {
+      "id": "urodzilem-sie-w-tysiac-dziewiecset-osiemdziesiat",
+      "text": "Urodziłem się w tysiąc dziewięćset osiemdziesiątym roku."
     },
     {
       "id": "urodziny",
@@ -23233,8 +24557,16 @@
       "text": "w centrum"
     },
     {
+      "id": "w-ciazy",
+      "text": "w ciąży"
+    },
+    {
       "id": "w-ciszy",
       "text": "w ciszy"
+    },
+    {
+      "id": "w-czasie-wojny-byl-maly",
+      "text": "W czasie wojny był mały."
     },
     {
       "id": "w-czechach",
@@ -23269,6 +24601,10 @@
       "text": "w domu"
     },
     {
+      "id": "w-domu-raczej-obchodzimy-urodziny",
+      "text": "w domu raczej obchodzimy urodziny"
+    },
+    {
       "id": "w-doniczce",
       "text": "w doniczce"
     },
@@ -23299,6 +24635,18 @@
     {
       "id": "w-duzym-miescie",
       "text": "w dużym mieście"
+    },
+    {
+      "id": "w-dwa-tysiace-piatym-roku",
+      "text": "w dwa tysiące piątym roku"
+    },
+    {
+      "id": "w-dwutysiecznym",
+      "text": "W dwutysięcznym."
+    },
+    {
+      "id": "w-dwutysiecznym-roku",
+      "text": "w dwutysięcznym roku"
     },
     {
       "id": "w-dzien",
@@ -23335,6 +24683,10 @@
     {
       "id": "w-galerii-spedzilam-kilka-godzin",
       "text": "W galerii spędziłam kilka godzin."
+    },
+    {
+      "id": "w-gdansku-bylem-inzynierem",
+      "text": "W Gdańsku. Byłem inżynierem."
     },
     {
       "id": "w-gorach",
@@ -23437,6 +24789,10 @@
       "text": "W jedną stronę czy tam i z powrotem?"
     },
     {
+      "id": "w-kalendarzu",
+      "text": "w kalendarzu"
+    },
+    {
       "id": "w-karty",
       "text": "w karty"
     },
@@ -23463,6 +24819,14 @@
     {
       "id": "w-klubie",
       "text": "w klubie"
+    },
+    {
+      "id": "w-koncu",
+      "text": "w końcu"
+    },
+    {
+      "id": "w-koncu-posprzatalam-i-teraz-jest-czysto",
+      "text": "W końcu posprzątałam i teraz jest czysto."
     },
     {
       "id": "w-korku",
@@ -23509,6 +24873,14 @@
       "text": "W Krakowie. Spotykamy się rzadko, raz w roku."
     },
     {
+      "id": "w-ktorym-roku",
+      "text": "w którym roku?"
+    },
+    {
+      "id": "w-ktorym-roku-sie-urodziles",
+      "text": "W którym roku się urodziłeś?"
+    },
+    {
       "id": "w-kuchni-jest-butelka-i-karton",
       "text": "W kuchni jest butelka i karton."
     },
@@ -23543,6 +24915,10 @@
     {
       "id": "w-lipcu-jedziemy-nad-morze",
       "text": "W lipcu jedziemy nad morze."
+    },
+    {
+      "id": "w-lipcu-w-gdansku",
+      "text": "W lipcu, w Gdańsku."
     },
     {
       "id": "w-listopadzie-czesto-pada-deszcz",
@@ -23797,6 +25173,10 @@
       "text": "w pracy"
     },
     {
+      "id": "w-pracy-raczej-obchodzimy-imieniny-a-w-domu-urod",
+      "text": "W pracy raczej obchodzimy imieniny, a w domu urodziny."
+    },
+    {
       "id": "w-prawo",
       "text": "w prawo"
     },
@@ -23885,6 +25265,10 @@
       "text": "W rogu stoi łóżko, a obok łóżka komoda."
     },
     {
+      "id": "w-roku",
+      "text": "w roku"
+    },
+    {
       "id": "w-roznych-miejscach",
       "text": "w różnych miejscach"
     },
@@ -23929,6 +25313,10 @@
       "text": "W sobotę Ewa spotyka się ze znajomymi w galerii."
     },
     {
+      "id": "w-sobote-gotowalam-a-w-niedziele-zaprosilam-gosc",
+      "text": "W sobotę gotowałam, a w niedzielę zaprosiłam gości."
+    },
+    {
       "id": "w-sobote-gralem-w-tenisa",
       "text": "W sobotę grałem w tenisa."
     },
@@ -23947,6 +25335,14 @@
     {
       "id": "w-sobote-jedziemy-do-niemiec",
       "text": "W sobotę jedziemy do Niemiec."
+    },
+    {
+      "id": "w-sobote-jego-zona-jest-w-ciazy",
+      "text": "W sobotę. Jego żona jest w ciąży."
+    },
+    {
+      "id": "w-sobote-kupilam-mieso-i-warzywa",
+      "text": "W sobotę kupiłam mięso i warzywa."
     },
     {
       "id": "w-sobote-mialysmy-impreze",
@@ -23969,6 +25365,18 @@
       "text": "w sobotę pracowałem"
     },
     {
+      "id": "w-sobote-rano-dlugo-spalam",
+      "text": "W sobotę rano długo spałam."
+    },
+    {
+      "id": "w-sobote-rano-zrobilam-zakupy",
+      "text": "W sobotę rano zrobiłam zakupy."
+    },
+    {
+      "id": "w-sobote-sa-jego-osiemdziesiate-urodziny",
+      "text": "W sobotę są jego osiemdziesiąte urodziny."
+    },
+    {
       "id": "w-sobote-spie-do-dziesiatej",
       "text": "W sobotę śpię do dziesiątej."
     },
@@ -23987,6 +25395,10 @@
     {
       "id": "w-sobote-wieczorem-bylam-w-klubie-ze-znajomymi",
       "text": "W sobotę wieczorem byłam w klubie ze znajomymi."
+    },
+    {
+      "id": "w-sobote-wreszcie-obejrzalem-caly-film",
+      "text": "W sobotę wreszcie obejrzałem cały film."
     },
     {
       "id": "w-sobote-zwykle-jezdzimy-na-targ",
@@ -24035,6 +25447,10 @@
     {
       "id": "w-starej-kamienicy",
       "text": "w starej kamienicy"
+    },
+    {
+      "id": "w-stoczni-w-gdansku",
+      "text": "W stoczni, w Gdańsku."
     },
     {
       "id": "w-styczniu",
@@ -24145,6 +25561,30 @@
       "text": "W tygodniu wstaję wcześnie."
     },
     {
+      "id": "w-tysiac-dziewiecset-czterdziestym-roku",
+      "text": "w tysiąc dziewięćset czterdziestym roku"
+    },
+    {
+      "id": "w-tysiac-dziewiecset-dziewiecdziesiatym",
+      "text": "W tysiąc dziewięćset dziewięćdziesiątym."
+    },
+    {
+      "id": "w-tysiac-dziewiecset-dziewiecdziesiatym-roku",
+      "text": "w tysiąc dziewięćset dziewięćdziesiątym roku"
+    },
+    {
+      "id": "w-tysiac-dziewiecset-piecdziesiatym-roku-dziadek",
+      "text": "W tysiąc dziewięćset pięćdziesiątym roku dziadek chodził do liceum."
+    },
+    {
+      "id": "w-tysiac-dziewiecset-siedemdziesiatym-roku",
+      "text": "w tysiąc dziewięćset siedemdziesiątym roku"
+    },
+    {
+      "id": "w-tysiac-dziewiecset-szescdziesiatym-roku",
+      "text": "w tysiąc dziewięćset sześćdziesiątym roku"
+    },
+    {
       "id": "w-wannie",
       "text": "w wannie"
     },
@@ -24221,6 +25661,10 @@
       "text": "w Wieliczce jest kopalnia soli"
     },
     {
+      "id": "w-wigilie-to-piekny-dzien-a-gdzie-pan-sie-urodzi",
+      "text": "W Wigilię! To piękny dzień. A gdzie pan się urodził?"
+    },
+    {
       "id": "w-zeszla-sobote",
       "text": "w zeszłą sobotę"
     },
@@ -24259,6 +25703,10 @@
     {
       "id": "walentynki",
       "text": "walentynki"
+    },
+    {
+      "id": "walentynki-sa-czternastego-lutego",
+      "text": "Walentynki są czternastego lutego."
     },
     {
       "id": "walizka-ewy-jest-bardzo-ciezka",
@@ -24381,6 +25829,18 @@
       "text": "Wczoraj czytałam książkę."
     },
     {
+      "id": "wczoraj-dlugo-gotowalam-obiad",
+      "text": "Wczoraj długo gotowałam obiad."
+    },
+    {
+      "id": "wczoraj-dlugo-ogladalam-telewizje",
+      "text": "Wczoraj długo oglądałam telewizję."
+    },
+    {
+      "id": "wczoraj-dlugo-robilam-prace-domowa",
+      "text": "Wczoraj długo robiłam pracę domową."
+    },
+    {
       "id": "wczoraj-mialam-test",
       "text": "wczoraj miałam test"
     },
@@ -24399,6 +25859,14 @@
     {
       "id": "wczoraj-poszlam-na-premiere-2",
       "text": "Wczoraj poszłam na premierę."
+    },
+    {
+      "id": "wczoraj-wstalam-o-dziesiatej-bo-zaspalam",
+      "text": "Wczoraj wstałam o dziesiątej, bo zaspałam."
+    },
+    {
+      "id": "wczoraj-zaprosilam-ich-na-moje-urodziny",
+      "text": "Wczoraj zaprosiłam ich na moje urodziny."
     },
     {
       "id": "we-wrzesniu",
@@ -24465,8 +25933,24 @@
       "text": "wegetariańskie danie"
     },
     {
+      "id": "wesolego-alleluja",
+      "text": "wesołego Alleluja!"
+    },
+    {
+      "id": "wesolego-alleluja-2",
+      "text": "wesołego Alleluja"
+    },
+    {
       "id": "wesoly",
       "text": "wesoły"
+    },
+    {
+      "id": "wesolych-swiat",
+      "text": "wesołych świąt!"
+    },
+    {
+      "id": "wesolych-swiat-i-szczesliwego-nowego-roku",
+      "text": "Wesołych świąt i szczęśliwego Nowego Roku!"
     },
     {
       "id": "widelec",
@@ -24501,6 +25985,10 @@
       "text": "Więc sekretarka zamawia taksówkę."
     },
     {
+      "id": "wieczor",
+      "text": "wieczór"
+    },
+    {
       "id": "wieczorem",
       "text": "wieczorem"
     },
@@ -24529,6 +26017,10 @@
       "text": "Wieczorem jest burza i pada deszcz."
     },
     {
+      "id": "wieczorem-obejrzalam-film-do-konca",
+      "text": "Wieczorem obejrzałam film do końca."
+    },
+    {
       "id": "wieczorem-odpoczywam",
       "text": "wieczorem odpoczywam"
     },
@@ -24551,6 +26043,10 @@
     {
       "id": "wieczorem-pije-wino",
       "text": "wieczorem piję wino"
+    },
+    {
+      "id": "wieczorem-przeczytalam-ksiazke-do-konca",
+      "text": "Wieczorem przeczytałam książkę do końca."
     },
     {
       "id": "wieczorem-pyta-adama-czy-dzwoniles-do-mnie",
@@ -24605,6 +26101,14 @@
       "text": "Wieliczka leży na południu, w Małopolsce."
     },
     {
+      "id": "wielkanoc",
+      "text": "Wielkanoc"
+    },
+    {
+      "id": "wielkanoc-jest-w-marcu-albo-w-kwietniu",
+      "text": "Wielkanoc jest w marcu albo w kwietniu."
+    },
+    {
       "id": "wiem",
       "text": "wiem"
     },
@@ -24643,6 +26147,10 @@
     {
       "id": "wieza",
       "text": "wieża"
+    },
+    {
+      "id": "wigilia",
+      "text": "Wigilia"
     },
     {
       "id": "wina",
@@ -24799,6 +26307,10 @@
     {
       "id": "wody",
       "text": "wody"
+    },
+    {
+      "id": "wojna",
+      "text": "wojna"
     },
     {
       "id": "wolalabym",
@@ -24993,6 +26505,18 @@
       "text": "wracam"
     },
     {
+      "id": "wreszcie",
+      "text": "wreszcie"
+    },
+    {
+      "id": "wreszcie-skonczylam-prace",
+      "text": "Wreszcie skończyłam pracę!"
+    },
+    {
+      "id": "wreszcie-zdalam-egzamin",
+      "text": "wreszcie zdałam egzamin"
+    },
+    {
       "id": "wrocilam",
       "text": "wróciłam"
     },
@@ -25039,6 +26563,10 @@
     {
       "id": "wrzesien",
       "text": "wrzesień"
+    },
+    {
+      "id": "wrzesnia",
+      "text": "września"
     },
     {
       "id": "wschod",
@@ -25117,6 +26645,14 @@
       "text": "wstawać wcześnie"
     },
     {
+      "id": "wstawalam",
+      "text": "wstawałam"
+    },
+    {
+      "id": "wstawalam-o-szostej",
+      "text": "wstawałam o szóstej"
+    },
+    {
       "id": "wstyd",
       "text": "wstyd"
     },
@@ -25141,6 +26677,14 @@
       "text": "wszyscy mówią o nas"
     },
     {
+      "id": "wszyscy-razem",
+      "text": "Wszyscy razem!"
+    },
+    {
+      "id": "wszyscy-razem-spiewamy-sto-lat",
+      "text": "Wszyscy razem śpiewamy sto lat."
+    },
+    {
       "id": "wszyscy-sa-w-domu",
       "text": "wszyscy są w domu"
     },
@@ -25153,8 +26697,40 @@
       "text": "wszyscy śmiali się głośno"
     },
     {
+      "id": "wszystkich-swietych",
+      "text": "Wszystkich Świętych"
+    },
+    {
       "id": "wszystkie",
       "text": "wszystkie"
+    },
+    {
+      "id": "wszystkie-imieniny-sa-w-kalendarzu",
+      "text": "Wszystkie imieniny są w kalendarzu."
+    },
+    {
+      "id": "wszystkiego-dobrego",
+      "text": "wszystkiego dobrego!"
+    },
+    {
+      "id": "wszystkiego-dobrego-i-duzo-zdrowia",
+      "text": "wszystkiego dobrego i dużo zdrowia"
+    },
+    {
+      "id": "wszystkiego-dobrego-i-powodzenia",
+      "text": "wszystkiego dobrego i powodzenia!"
+    },
+    {
+      "id": "wszystkiego-najlepszego",
+      "text": "wszystkiego najlepszego!"
+    },
+    {
+      "id": "wszystkiego-najlepszego-na-nowej-drodze-zycia",
+      "text": "Wszystkiego najlepszego na nowej drodze życia!"
+    },
+    {
+      "id": "wszystkiego-najlepszego-z-okazji-urodzin",
+      "text": "Wszystkiego najlepszego z okazji urodzin!"
     },
     {
       "id": "wszystko",
@@ -25191,6 +26767,10 @@
     {
       "id": "wszystko-w-porzadku-a-u-pana",
       "text": "wszystko w porządku, a u pana?"
+    },
+    {
+      "id": "wszystko-zjadlam",
+      "text": "Wszystko zjadłam!"
     },
     {
       "id": "wtorek",
@@ -25281,6 +26861,18 @@
       "text": "wygrać"
     },
     {
+      "id": "wyjazd",
+      "text": "wyjazd"
+    },
+    {
+      "id": "wypilam",
+      "text": "wypiłam"
+    },
+    {
+      "id": "wypilam-cala-kawe",
+      "text": "Wypiłam całą kawę."
+    },
+    {
       "id": "wyslac",
       "text": "wysłać"
     },
@@ -25303,6 +26895,10 @@
     {
       "id": "wystarczy",
       "text": "wystarczy"
+    },
+    {
+      "id": "wyszla-za-maz",
+      "text": "wyszła za mąż"
     },
     {
       "id": "wytrawny",
@@ -25503,6 +27099,10 @@
     {
       "id": "z-nimi",
       "text": "z nimi"
+    },
+    {
+      "id": "z-okazji-urodzin",
+      "text": "z okazji urodzin"
     },
     {
       "id": "z-oliwkami",
@@ -25893,6 +27493,18 @@
       "text": "zadzwonić"
     },
     {
+      "id": "zadzwonilam",
+      "text": "zadzwoniłam"
+    },
+    {
+      "id": "zadzwonilam-do-niego-i-podziekowalam",
+      "text": "Zadzwoniłam do niego i podziękowałam."
+    },
+    {
+      "id": "zadzwonilem",
+      "text": "zadzwoniłem"
+    },
+    {
       "id": "zajecia",
       "text": "zajęcia"
     },
@@ -25903,6 +27515,14 @@
     {
       "id": "zajety",
       "text": "zajęty"
+    },
+    {
+      "id": "zakochal-sie",
+      "text": "zakochał się"
+    },
+    {
+      "id": "zakochal-sie-kiedy-poznal-ja-na-studiach",
+      "text": "Zakochał się, kiedy poznał ją na studiach."
     },
     {
       "id": "zakochana",
@@ -25973,6 +27593,10 @@
       "text": "zapiekanka z szynką"
     },
     {
+      "id": "zapraszalam",
+      "text": "zapraszałam"
+    },
+    {
       "id": "zapraszam",
       "text": "zapraszam"
     },
@@ -26021,6 +27645,10 @@
       "text": "zaprosić"
     },
     {
+      "id": "zaprosilam",
+      "text": "zaprosiłam"
+    },
+    {
       "id": "zaproszenie",
       "text": "zaproszenie"
     },
@@ -26061,6 +27689,22 @@
       "text": "zawsze piję kawę"
     },
     {
+      "id": "zdal",
+      "text": "zdał"
+    },
+    {
+      "id": "zdalam",
+      "text": "zdałam"
+    },
+    {
+      "id": "zdalem",
+      "text": "zdałem"
+    },
+    {
+      "id": "zdalem-mature-w-czerwcu",
+      "text": "Zdałem maturę w czerwcu."
+    },
+    {
       "id": "zdalnie",
       "text": "zdalnie"
     },
@@ -26083,6 +27727,10 @@
     {
       "id": "zdjecie-na-zewnatrz",
       "text": "zdjęcie na zewnątrz"
+    },
+    {
+      "id": "zdrowia",
+      "text": "zdrowia"
     },
     {
       "id": "zdrowszy",
@@ -26159,6 +27807,14 @@
     {
       "id": "zet-2",
       "text": "żet"
+    },
+    {
+      "id": "zginal",
+      "text": "zginął"
+    },
+    {
+      "id": "zginal-w-czasie-wojny",
+      "text": "zginął w czasie wojny"
     },
     {
       "id": "zgrzewka",
@@ -26433,12 +28089,32 @@
       "text": "żonę"
     },
     {
+      "id": "zostal",
+      "text": "został"
+    },
+    {
       "id": "zrobic",
       "text": "zrobić"
     },
     {
       "id": "zrobic-zdjecie",
       "text": "zrobić zdjęcie"
+    },
+    {
+      "id": "zrobilam",
+      "text": "zrobiłam"
+    },
+    {
+      "id": "zrobilas",
+      "text": "zrobiłaś"
+    },
+    {
+      "id": "zrobilas-wszystko",
+      "text": "Zrobiłaś wszystko?"
+    },
+    {
+      "id": "zrobilem",
+      "text": "zrobiłem"
     },
     {
       "id": "zupa",
@@ -26495,6 +28171,10 @@
     {
       "id": "zupe",
       "text": "zupę"
+    },
+    {
+      "id": "zupe-i-pierogi",
+      "text": "Zupę i pierogi."
     },
     {
       "id": "zupe-i-pizze",
@@ -26555,6 +28235,46 @@
     {
       "id": "zwykle-jezdzi-samochodem",
       "text": "Zwykle jeździ samochodem."
+    },
+    {
+      "id": "zycie",
+      "text": "życie"
+    },
+    {
+      "id": "zycze",
+      "text": "życzę"
+    },
+    {
+      "id": "zycze-ci-milosci",
+      "text": "życzę ci miłości"
+    },
+    {
+      "id": "zycze-ci-szczescia",
+      "text": "życzę ci szczęścia"
+    },
+    {
+      "id": "zycze-ci-zdrowia-i-szczescia",
+      "text": "Życzę ci zdrowia i szczęścia!"
+    },
+    {
+      "id": "zycze-ci-zdrowia-szczescia-i-pomyslnosci",
+      "text": "Życzę ci zdrowia, szczęścia i pomyślności."
+    },
+    {
+      "id": "zycze-jej-wszystkiego-najlepszego-na-nowej-drodz",
+      "text": "Życzę jej wszystkiego najlepszego na nowej drodze życia."
+    },
+    {
+      "id": "zycze-panu-zdrowia-i-szczescia-sto-lat",
+      "text": "Życzę panu zdrowia i szczęścia. Sto lat!"
+    },
+    {
+      "id": "zyczenia",
+      "text": "życzenia"
+    },
+    {
+      "id": "zyczymy-ci-sukcesow-w-pracy",
+      "text": "Życzymy ci sukcesów w pracy!"
     }
   ]
 }
