@@ -1,0 +1,438 @@
+{
+  "id": "kpk1-l21-c4",
+  "section": {
+    "letter": "C",
+    "heading": "Biografia",
+    "meaning": {
+      "en": "A life story"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-c4-t01",
+      "before": "kpk1-l21-c4-e01",
+      "title": {
+        "en": "Praca i emerytura"
+      },
+      "body": {
+        "en": "*Pracował*, *pracowała*: he or she worked; *mieszkał*, *mieszkała*: lived; *robił*, *robiła*: did. *Robić karierę* is to build a career, and *został*, *została* is became: *został inżynierem*. At the end of a working life you retire, *przechodzisz na emeryturę*: *przeszedł na emeryturę*, and then you are *na emeryturze*. *Umarł*, *umarła* is he or she died."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c4-e01",
+      "prompt": "pracował",
+      "options": [
+        {
+          "en": "he lived"
+        },
+        {
+          "en": "he studied"
+        },
+        {
+          "en": "he worked (she worked: pracowała)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pracowac-pracowal"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c4-e02",
+      "prompt": "mieszkał",
+      "options": [
+        {
+          "en": "he lived (she lived: mieszkała)"
+        },
+        {
+          "en": "he worked"
+        },
+        {
+          "en": "he waited"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "mieszkac-mieszkal"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c4-e03",
+      "text": "Dziadek pracował w Gdańsku, a mieszkał na wsi.",
+      "meaning": {
+        "en": "Grandad worked in Gdańsk, but lived in the country."
+      },
+      "distractors": [
+        "Dziadek mieszkał w Gdańsku, a pracował na wsi.",
+        "Dziadek pracował w Gdańsku i mieszkał w Gdańsku."
+      ],
+      "items": [
+        "dziadek",
+        "pracowac-pracowal",
+        "gdansk",
+        "a",
+        "mieszkac-mieszkal",
+        "na-wsi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c4-e04",
+      "prompt": "robił",
+      "options": [
+        {
+          "en": "he wanted"
+        },
+        {
+          "en": "he did, he was doing (she did: robiła)"
+        },
+        {
+          "en": "he read"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "robic-robil"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c4-e05",
+      "prompt": "kariera",
+      "options": [
+        {
+          "en": "a job interview"
+        },
+        {
+          "en": "a salary"
+        },
+        {
+          "en": "a career (robić karierę: to build a career)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kariera"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c4-e06",
+      "text": "Mama robiła ___ w banku.",
+      "meaning": {
+        "en": "Mum was building a career at a bank."
+      },
+      "gaps": [
+        [
+          "karierę"
+        ]
+      ],
+      "distractors": [
+        "kariera",
+        "kariery"
+      ],
+      "items": [
+        "mama",
+        "robic-robil",
+        "kariera",
+        "w-banku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c4-e07",
+      "prompt": "został",
+      "options": [
+        {
+          "en": "he became (został inżynierem: he became an engineer; she became: została)"
+        },
+        {
+          "en": "he left"
+        },
+        {
+          "en": "he worked"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zostac-zostal"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c4-e08",
+      "prompt": "emerytura",
+      "options": [
+        {
+          "en": "a holiday"
+        },
+        {
+          "en": "retirement, a pension (na emeryturze: retired; przejść na emeryturę: to retire)"
+        },
+        {
+          "en": "a salary"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "emerytura"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c4-e09",
+      "prompt": "przeszedł",
+      "options": [
+        {
+          "en": "he came back"
+        },
+        {
+          "en": "he arrived"
+        },
+        {
+          "en": "he went over (przeszedł na emeryturę: he retired; she: przeszła)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "przejsc-przeszedl"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c4-e10",
+      "prompt": "umarł",
+      "options": [
+        {
+          "en": "he died (she died: umarła)"
+        },
+        {
+          "en": "he was born"
+        },
+        {
+          "en": "he moved"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "umrzec-umarl"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-c4-e11",
+      "prompt": {
+        "en": "he retired"
+      },
+      "acceptedAnswers": [
+        "przeszedł na emeryturę"
+      ],
+      "distractors": [
+        "emerytura",
+        "przeszła"
+      ],
+      "items": [
+        "przejsc-przeszedl",
+        "emerytura"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-c4-e12",
+      "pairs": [
+        {
+          "polish": "pracował",
+          "meaning": {
+            "en": "he worked"
+          }
+        },
+        {
+          "polish": "mieszkał",
+          "meaning": {
+            "en": "he lived"
+          }
+        },
+        {
+          "polish": "został",
+          "meaning": {
+            "en": "he became"
+          }
+        },
+        {
+          "polish": "przeszedł na emeryturę",
+          "meaning": {
+            "en": "he retired"
+          }
+        },
+        {
+          "polish": "umarł",
+          "meaning": {
+            "en": "he died"
+          }
+        }
+      ],
+      "items": [
+        "pracowac-pracowal",
+        "mieszkac-mieszkal",
+        "zostac-zostal",
+        "przejsc-przeszedl",
+        "emerytura",
+        "umrzec-umarl"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-c4-e13",
+      "acceptedAnswers": [
+        "babcia jest na emeryturze"
+      ],
+      "meaning": {
+        "en": "grandma is retired"
+      },
+      "items": [
+        "babcia",
+        "byc-jest",
+        "emerytura"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-c4-e14",
+      "lines": [
+        "Mój dziadek został inżynierem.",
+        "Pracował trzydzieści lat w Gdańsku.",
+        "Teraz jest na emeryturze."
+      ],
+      "meaning": {
+        "en": "My grandad."
+      },
+      "statements": [
+        {
+          "text": "Dziadek był inżynierem.",
+          "meaning": {
+            "en": "Grandad was an engineer."
+          },
+          "true": true
+        },
+        {
+          "text": "Dziadek pracował w Warszawie.",
+          "meaning": {
+            "en": "Grandad worked in Warsaw."
+          },
+          "true": false
+        },
+        {
+          "text": "Teraz dziadek nie pracuje.",
+          "meaning": {
+            "en": "Grandad does not work now."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "moj",
+        "dziadek",
+        "zostac-zostal",
+        "inzynier",
+        "pracowac-pracowal",
+        "trzydziesci",
+        "lat",
+        "gdansk",
+        "teraz",
+        "byc-jest",
+        "emerytura"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c4-e15",
+      "text": "Moja babcia ___ w Lublinie.",
+      "meaning": {
+        "en": "My grandma lived in Lublin."
+      },
+      "gaps": [
+        [
+          "mieszkała"
+        ]
+      ],
+      "distractors": [
+        "mieszkał",
+        "mieszkałam"
+      ],
+      "items": [
+        "moja",
+        "babcia",
+        "mieszkac-mieszkal",
+        "lublin"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-c4-e16",
+      "lines": [
+        "Gdzie pan pracował?",
+        "W Gdańsku. Byłem inżynierem.",
+        "A teraz?",
+        "Teraz jestem na emeryturze i robię, co chcę."
+      ],
+      "meaning": {
+        "en": "A retired man."
+      },
+      "items": [
+        "gdzie",
+        "pan",
+        "pracowac-pracowal",
+        "gdansk",
+        "byc-bylem",
+        "inzynier",
+        "a",
+        "teraz",
+        "byc-jestem",
+        "emerytura",
+        "i",
+        "robic-robie",
+        "co",
+        "chciec-chce"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c4-e17",
+      "text": "Umarła w zeszłym roku.",
+      "meaning": {
+        "en": "She died last year."
+      },
+      "distractors": [
+        "Urodziła się w zeszłym roku.",
+        "Umarł w zeszłym roku."
+      ],
+      "items": [
+        "umrzec-umarl",
+        "w-zeszlym-roku"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-c4-e18",
+      "acceptedAnswers": [
+        "robił karierę"
+      ],
+      "meaning": {
+        "en": "he was building a career"
+      },
+      "items": [
+        "robic-robil",
+        "kariera"
+      ]
+    }
+  ]
+}

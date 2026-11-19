@@ -23,7 +23,8 @@
     "kpk1/lesson-17/items.json",
     "kpk1/lesson-18/items.json",
     "kpk1/lesson-19/items.json",
-    "kpk1/lesson-20/items.json"
+    "kpk1/lesson-20/items.json",
+    "kpk1/lesson-21/items.json"
   ],
   "audio": "audio/clips.json",
   "pictures": "pictures/pictures.json",
@@ -56,7 +57,8 @@
     "kpk1/chats/birthday-present.json",
     "kpk1/chats/new-flat.json",
     "kpk1/chats/hotel-room.json",
-    "kpk1/chats/ticket-office.json"
+    "kpk1/chats/ticket-office.json",
+    "kpk1/chats/birthday-party.json"
   ],
   "levels": [
     {
@@ -1199,7 +1201,36 @@
               "daty"
             ]
           },
-          "coming": true
+          "dailySets": [
+            "kpk1/lesson-21/section-a1.json",
+            "kpk1/lesson-21/section-a2.json",
+            "kpk1/lesson-21/section-a3.json",
+            "kpk1/lesson-21/section-a4.json",
+            "kpk1/lesson-21/section-a5.json",
+            "kpk1/lesson-21/section-b1.json",
+            "kpk1/lesson-21/section-b2.json",
+            "kpk1/lesson-21/section-b3.json",
+            "kpk1/lesson-21/section-b4.json",
+            "kpk1/lesson-21/section-b5.json",
+            "kpk1/lesson-21/section-c1.json",
+            "kpk1/lesson-21/section-c2.json",
+            "kpk1/lesson-21/section-c3.json",
+            "kpk1/lesson-21/section-c4.json",
+            "kpk1/lesson-21/section-c5.json",
+            "kpk1/lesson-21/section-c6.json",
+            "kpk1/lesson-21/section-d1.json",
+            "kpk1/lesson-21/section-d2.json",
+            "kpk1/lesson-21/section-d3.json",
+            "kpk1/lesson-21/section-d4.json",
+            "kpk1/lesson-21/section-p1.json",
+            "kpk1/lesson-21/section-p2.json"
+          ],
+          "lookUp": [
+            "obchodzic-obchodzi",
+            "imieniny",
+            "upasc",
+            "komunizm"
+          ]
         },
         {
           "id": "kpk1-l22",

@@ -1,0 +1,409 @@
+{
+  "id": "kpk1-l21-b4",
+  "section": {
+    "letter": "B",
+    "heading": "Sto lat i wszystkiego najlepszego!",
+    "meaning": {
+      "en": "Sto lat and all the best!"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-b4-t01",
+      "before": "kpk1-l21-b4-e01",
+      "title": {
+        "en": "Okazje i święta"
+      },
+      "body": {
+        "en": "More occasions for a wish: *ślub* (a wedding), *egzamin* (an exam), *choroba* (an illness) and *wyjazd* (going away). The holidays are *święta*: *Wigilia* is Christmas Eve on 24 December with a big family supper, then *Boże Narodzenie*, *sylwester* on 31 December, *Nowy Rok*, and *Wielkanoc* in March or April. *Na święta* is for the holidays, usually Christmas: *jadę do domu na święta*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b4-e01",
+      "prompt": "ślub",
+      "options": [
+        {
+          "en": "a birthday"
+        },
+        {
+          "en": "a funeral"
+        },
+        {
+          "en": "a wedding (na ślub: for a wedding)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "slub"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b4-e02",
+      "prompt": "egzamin",
+      "options": [
+        {
+          "en": "an exam (przed egzaminem: before an exam)"
+        },
+        {
+          "en": "a holiday"
+        },
+        {
+          "en": "a lesson"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "egzamin"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-b4-e03",
+      "text": "Jutro mam egzamin. Powodzenia!",
+      "meaning": {
+        "en": "Tomorrow I have an exam. Good luck!"
+      },
+      "distractors": [
+        "Jutro mam ślub. Powodzenia!",
+        "Jutro mam egzamin. Wesołych świąt!"
+      ],
+      "items": [
+        "jutro",
+        "miec-mam",
+        "egzamin",
+        "powodzenia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b4-e04",
+      "prompt": "choroba",
+      "options": [
+        {
+          "en": "a doctor"
+        },
+        {
+          "en": "an illness"
+        },
+        {
+          "en": "a hospital"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "choroba"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b4-e05",
+      "prompt": "wyjazd",
+      "options": [
+        {
+          "en": "a return"
+        },
+        {
+          "en": "an arrival"
+        },
+        {
+          "en": "a trip away, leaving (przed wyjazdem: before leaving)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wyjazd"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-b4-e06",
+      "text": "Jutro mam ___ do Gdańska.",
+      "meaning": {
+        "en": "Tomorrow I am leaving for Gdańsk."
+      },
+      "gaps": [
+        [
+          "wyjazd"
+        ]
+      ],
+      "distractors": [
+        "podróży",
+        "wakacje"
+      ],
+      "items": [
+        "jutro",
+        "miec-mam",
+        "wyjazd",
+        "gdansk"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b4-e07",
+      "prompt": "Wielkanoc",
+      "options": [
+        {
+          "en": "Easter (na Wielkanoc: for Easter)"
+        },
+        {
+          "en": "Christmas"
+        },
+        {
+          "en": "New Year"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wielkanoc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b4-e08",
+      "prompt": "Wigilia",
+      "options": [
+        {
+          "en": "New Year's Eve"
+        },
+        {
+          "en": "Christmas Eve, the big family supper on 24 December (w Wigilię: on Christmas Eve)"
+        },
+        {
+          "en": "Christmas Day"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wigilia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b4-e09",
+      "prompt": "święto",
+      "options": [
+        {
+          "en": "a weekend"
+        },
+        {
+          "en": "a name day"
+        },
+        {
+          "en": "a holiday, a feast day (święta: Christmas or Easter; na święta: for Christmas)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "swieto"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b4-e10",
+      "prompt": "sylwester",
+      "options": [
+        {
+          "en": "New Year's Eve (and its party)"
+        },
+        {
+          "en": "Christmas Eve"
+        },
+        {
+          "en": "New Year's Day"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sylwester"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-b4-e11",
+      "prompt": {
+        "en": "I am going home for Christmas"
+      },
+      "acceptedAnswers": [
+        "jadę do domu na święta"
+      ],
+      "distractors": [
+        "świąt",
+        "w"
+      ],
+      "items": [
+        "jechac-jade",
+        "do-domu",
+        "swieto"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-b4-e12",
+      "pairs": [
+        {
+          "polish": "ślub",
+          "meaning": {
+            "en": "a wedding"
+          }
+        },
+        {
+          "polish": "egzamin",
+          "meaning": {
+            "en": "an exam"
+          }
+        },
+        {
+          "polish": "choroba",
+          "meaning": {
+            "en": "an illness"
+          }
+        },
+        {
+          "polish": "wyjazd",
+          "meaning": {
+            "en": "going away"
+          }
+        },
+        {
+          "polish": "sylwester",
+          "meaning": {
+            "en": "New Year's Eve"
+          }
+        }
+      ],
+      "items": [
+        "slub",
+        "egzamin",
+        "choroba",
+        "wyjazd",
+        "sylwester"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-b4-e13",
+      "prompt": {
+        "en": "Easter"
+      },
+      "acceptedAnswers": [
+        "Wielkanoc"
+      ],
+      "items": [
+        "wielkanoc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-b4-e14",
+      "acceptedAnswers": [
+        "wesołego Alleluja"
+      ],
+      "meaning": {
+        "en": "happy Easter"
+      },
+      "items": [
+        "wesolego-alleluja"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-b4-e15",
+      "lines": [
+        "Jutro siostra ma ślub.",
+        "Życzę jej wszystkiego najlepszego na nowej drodze życia.",
+        "A w sobotę mam egzamin."
+      ],
+      "meaning": {
+        "en": "A busy week."
+      },
+      "statements": [
+        {
+          "text": "Siostra ma jutro ślub.",
+          "meaning": {
+            "en": "My sister is getting married tomorrow."
+          },
+          "true": true
+        },
+        {
+          "text": "Egzamin jest w niedzielę.",
+          "meaning": {
+            "en": "The exam is on Sunday."
+          },
+          "true": false
+        },
+        {
+          "text": "Mam egzamin w sobotę.",
+          "meaning": {
+            "en": "I have an exam on Saturday."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "jutro",
+        "siostra",
+        "miec-ma",
+        "slub",
+        "zyczyc-zycze",
+        "jej-dat",
+        "wszystkiego-najlepszego",
+        "na-nowej-drodze-zycia",
+        "a",
+        "sobota",
+        "miec-mam",
+        "egzamin"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-b4-e16",
+      "text": "Dwudziestego czwartego grudnia jest ___.",
+      "meaning": {
+        "en": "On the twenty-fourth of December it is Christmas Eve."
+      },
+      "gaps": [
+        [
+          "Wigilia"
+        ]
+      ],
+      "distractors": [
+        "Wigilię",
+        "sylwester"
+      ],
+      "items": [
+        "dwudziesty",
+        "czwarty",
+        "grudnia",
+        "byc-jest",
+        "wigilia"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-b4-e17",
+      "text": "Wielkanoc jest w marcu albo w kwietniu.",
+      "meaning": {
+        "en": "Easter is in March or in April."
+      },
+      "distractors": [
+        "Wielkanoc jest w kwietniu albo w maju.",
+        "Wigilia jest w grudniu."
+      ],
+      "items": [
+        "wielkanoc",
+        "byc-jest",
+        "marzec",
+        "albo",
+        "kwiecien"
+      ]
+    }
+  ]
+}

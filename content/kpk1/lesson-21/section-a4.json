@@ -1,0 +1,369 @@
+{
+  "id": "kpk1-l21-a4",
+  "section": {
+    "letter": "A",
+    "heading": "Kiedy masz urodziny i imieniny?",
+    "meaning": {
+      "en": "When is your birthday and your name day?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-a4-t01",
+      "before": "kpk1-l21-a4-e01",
+      "title": {
+        "en": "Dwudziestego piątego grudnia"
+      },
+      "body": {
+        "en": "The last four months: *września*, *października*, *listopada*, *grudnia*. From the twenty-first on, except the thirtieth, a date has two ordinals and both change: *dwudziesty piąty grudnia* is the twenty-fifth of December, *dwudziestego piątego grudnia* is on the twenty-fifth of December. Written down it is just 25.12, day first and then the month."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a4-e01",
+      "prompt": "września",
+      "options": [
+        {
+          "en": "of September (pierwszego września: on the first of September)"
+        },
+        {
+          "en": "in September"
+        },
+        {
+          "en": "of November"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wrzesnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a4-e02",
+      "prompt": "ósmy",
+      "options": [
+        {
+          "en": "eighty"
+        },
+        {
+          "en": "eighth (ósmego: on the eighth)"
+        },
+        {
+          "en": "eighteenth"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "osmy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-a4-e03",
+      "text": "Szkoła zaczyna się pierwszego września.",
+      "meaning": {
+        "en": "School starts on the first of September."
+      },
+      "distractors": [
+        "Szkoła zaczyna się pierwszego października.",
+        "Szkoła kończy się pierwszego września."
+      ],
+      "items": [
+        "szkola",
+        "zaczyna-sie",
+        "pierwszy",
+        "wrzesnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a4-e04",
+      "prompt": "października",
+      "options": [
+        {
+          "en": "of September"
+        },
+        {
+          "en": "of December"
+        },
+        {
+          "en": "of October (dziewiątego października: on the ninth of October)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "pazdziernika"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a4-e05",
+      "prompt": "dziewiąty",
+      "options": [
+        {
+          "en": "ninth (dziewiątego: on the ninth)"
+        },
+        {
+          "en": "nineteenth"
+        },
+        {
+          "en": "ninety"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dziewiaty"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-a4-e06",
+      "text": "Moja mama ma urodziny ___ października.",
+      "meaning": {
+        "en": "My mum's birthday is on the ninth of October."
+      },
+      "gaps": [
+        [
+          "dziewiątego"
+        ]
+      ],
+      "distractors": [
+        "dziewiąty",
+        "dziewięć"
+      ],
+      "items": [
+        "moja",
+        "mama",
+        "miec-ma",
+        "urodziny",
+        "dziewiaty",
+        "pazdziernika"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a4-e07",
+      "prompt": "listopada",
+      "options": [
+        {
+          "en": "of October"
+        },
+        {
+          "en": "of November (dziesiąty listopada: the tenth of November)"
+        },
+        {
+          "en": "in November"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "listopada"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a4-e08",
+      "prompt": "dziesiąty",
+      "options": [
+        {
+          "en": "tenth of a second"
+        },
+        {
+          "en": "twelfth"
+        },
+        {
+          "en": "tenth (dziesiątego: on the tenth)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dziesiaty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a4-e09",
+      "prompt": "grudnia",
+      "options": [
+        {
+          "en": "of December (dwudziestego piątego grudnia: on the twenty-fifth of December)"
+        },
+        {
+          "en": "of January"
+        },
+        {
+          "en": "in December"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "grudnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a4-e10",
+      "prompt": "dwudziesty",
+      "options": [
+        {
+          "en": "twelfth"
+        },
+        {
+          "en": "twentieth (dwudziesty piąty: twenty-fifth; dwudziestego piątego: on the twenty-fifth)"
+        },
+        {
+          "en": "twenty"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dwudziesty"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-a4-e11",
+      "prompt": {
+        "en": "on the twenty-fifth of December"
+      },
+      "acceptedAnswers": [
+        "dwudziestego piątego grudnia"
+      ],
+      "distractors": [
+        "dwudziesty",
+        "piąty"
+      ],
+      "items": [
+        "dwudziesty",
+        "piaty",
+        "grudnia"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-a4-e12",
+      "pairs": [
+        {
+          "polish": "września",
+          "meaning": {
+            "en": "of September"
+          }
+        },
+        {
+          "polish": "października",
+          "meaning": {
+            "en": "of October"
+          }
+        },
+        {
+          "polish": "listopada",
+          "meaning": {
+            "en": "of November"
+          }
+        },
+        {
+          "polish": "grudnia",
+          "meaning": {
+            "en": "of December"
+          }
+        },
+        {
+          "polish": "ósmego",
+          "meaning": {
+            "en": "on the eighth"
+          }
+        }
+      ],
+      "items": [
+        "wrzesnia",
+        "pazdziernika",
+        "listopada",
+        "grudnia",
+        "osmy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-a4-e13",
+      "prompt": {
+        "en": "the tenth of November"
+      },
+      "acceptedAnswers": [
+        "dziesiąty listopada"
+      ],
+      "items": [
+        "dziesiaty",
+        "listopada"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-a4-e14",
+      "acceptedAnswers": [
+        "ósmego grudnia"
+      ],
+      "meaning": {
+        "en": "on the eighth of December"
+      },
+      "items": [
+        "osmy",
+        "grudnia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-a4-e15",
+      "text": "Dziś jest ___ września.",
+      "meaning": {
+        "en": "Today is the twentieth of September."
+      },
+      "gaps": [
+        [
+          "dwudziesty"
+        ]
+      ],
+      "distractors": [
+        "dwudziestego",
+        "dwadzieścia"
+      ],
+      "items": [
+        "dzis",
+        "byc-jest",
+        "dwudziesty",
+        "wrzesnia"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-a4-e16",
+      "lines": [
+        "Kiedy masz urodziny?",
+        "Dziesiątego listopada. A ty?",
+        "Ja? Dziewiątego grudnia.",
+        "Czyli w grudniu!"
+      ],
+      "meaning": {
+        "en": "When is your birthday?"
+      },
+      "items": [
+        "kiedy-masz-urodziny",
+        "dziesiaty",
+        "listopada",
+        "a",
+        "ty",
+        "ja",
+        "dziewiaty",
+        "grudnia",
+        "czyli",
+        "grudzien"
+      ]
+    }
+  ]
+}

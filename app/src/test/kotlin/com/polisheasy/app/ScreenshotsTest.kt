@@ -1490,6 +1490,47 @@ class ScreenshotsTest {
     }
 
     @Test
+    fun `chapter 21 of the book over the real course in the light theme`() = chapter21Tour("light")
+
+    @Test
+    @Config(qualifiers = "+night")
+    fun `chapter 21 of the book over the real course in the dark theme`() = chapter21Tour("dark")
+
+    @Test
+    fun `chapter 21 of the book over the real course at the largest font size`() = atTheLargestFontSize { chapter21Tour("large") }
+
+    /**
+     * Chapter 21 over the real course: its Lesson screen at the top and its sections, then the
+     * dates in section A, Sto lat in section B, the years of section C and the table of aspect
+     * pairs in section D.
+     */
+    private fun chapter21Tour(theme: String) {
+        fun shot(name: String) = this.shot("$theme-$name")
+        val course = loadCourse { path -> app.assets.open(path).bufferedReader().use { it.readText() } }
+        val engine = CourseEngine(course, InMemoryLearnerProgress(), clock, oneADay = { false }, checkpoints = InMemoryCheckpointBests())
+        val model = CourseViewModel(app, engine, engine.practice(InMemoryPracticeProgress(), Random(7)))
+        open(model)
+        screen.runOnUiThread { model.openLesson("kpk1-l21") }
+        screen.waitForIdle()
+        shot("390-chapter-21")
+        screen.onAllNodes(hasText("Powtórzenie", substring = true), useUnmergedTree = true).onFirst().performScrollTo()
+        shot("390-chapter-21-sections")
+        listOf(
+            "kpk1-l21-a3" to "391-chapter-21-dates",
+            "kpk1-l21-b2" to "392-chapter-21-sto-lat",
+            "kpk1-l21-c5" to "393-chapter-21-years",
+            "kpk1-l21-d2" to "394-chapter-21-aspect-pairs",
+        ).forEach { (section, name) ->
+            screen.runOnUiThread {
+                model.openLesson("kpk1-l21")
+                model.openSection(section)
+            }
+            screen.waitForIdle()
+            shot(name)
+        }
+    }
+
+    @Test
     fun `the book's Exercises, a table Tip and the Grammar shelf in the light theme`() = bookExercisesTour("light")
 
     @Test

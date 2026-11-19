@@ -1,0 +1,422 @@
+{
+  "id": "kpk1-l21-c1",
+  "section": {
+    "letter": "C",
+    "heading": "Biografia",
+    "meaning": {
+      "en": "A life story"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-c1-t01",
+      "before": "kpk1-l21-c1-e01",
+      "title": {
+        "en": "Urodziłem się"
+      },
+      "body": {
+        "en": "A life story is told in the past tense. *Urodziłem się* (said by a man) and *urodziłam się* (by a woman) is I was born; *urodził się*, *urodziła się* is he or she was born. Then you go somewhere regularly, *chodzić*: *chodziłem do przedszkola*, then *do szkoły podstawowej* and *do liceum*. *Kiedy się urodziłeś?* asks a man when he was born, *kiedy się urodziłaś?* a woman."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c1-e01",
+      "prompt": "urodziłem się",
+      "options": [
+        {
+          "en": "I was born (said by a man; a woman says urodziłam się; you were born: urodziłeś się, urodziłaś się)"
+        },
+        {
+          "en": "I lived"
+        },
+        {
+          "en": "I got married"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "urodzic-sie-urodzilem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c1-e02",
+      "prompt": "urodził się",
+      "options": [
+        {
+          "en": "he died"
+        },
+        {
+          "en": "he was born (she was born: urodziła się)"
+        },
+        {
+          "en": "he lived"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "urodzic-sie-urodzil"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c1-e03",
+      "text": "Urodziłem się w Krakowie.",
+      "meaning": {
+        "en": "I was born in Kraków (said by a man)."
+      },
+      "distractors": [
+        "Urodziłam się w Krakowie.",
+        "Urodził się w Krakowie."
+      ],
+      "items": [
+        "urodzic-sie-urodzilem",
+        "w-krakowie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c1-e04",
+      "prompt": "kiedy się urodziłeś?",
+      "options": [
+        {
+          "en": "where do you live?"
+        },
+        {
+          "en": "how old are you?"
+        },
+        {
+          "en": "when were you born? (to a woman: kiedy się urodziłaś?)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kiedy-sie-urodziles"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c1-e05",
+      "prompt": "przedszkole",
+      "options": [
+        {
+          "en": "a nursery school, a kindergarten (do przedszkola: to nursery school)"
+        },
+        {
+          "en": "a school"
+        },
+        {
+          "en": "a playground"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "przedszkole"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c1-e06",
+      "text": "Moja córka chodzi do ___.",
+      "meaning": {
+        "en": "My daughter goes to nursery school."
+      },
+      "gaps": [
+        [
+          "przedszkola"
+        ]
+      ],
+      "distractors": [
+        "przedszkole",
+        "liceum"
+      ],
+      "items": [
+        "moja",
+        "corka",
+        "chodzic-chodzi",
+        "przedszkole"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c1-e07",
+      "prompt": "szkoła podstawowa",
+      "options": [
+        {
+          "en": "a secondary school"
+        },
+        {
+          "en": "a primary school (do szkoły podstawowej: to primary school)"
+        },
+        {
+          "en": "a university"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szkola-podstawowa"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c1-e08",
+      "prompt": "liceum",
+      "options": [
+        {
+          "en": "a primary school"
+        },
+        {
+          "en": "a library"
+        },
+        {
+          "en": "a secondary school, a high school (do liceum: to secondary school)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "liceum"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c1-e09",
+      "prompt": "chodził",
+      "options": [
+        {
+          "en": "he went, he attended (regularly, for some time; she went: chodziła)"
+        },
+        {
+          "en": "he lived"
+        },
+        {
+          "en": "he worked"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "chodzic-chodzil"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c1-e10",
+      "prompt": "życie",
+      "options": [
+        {
+          "en": "a house"
+        },
+        {
+          "en": "life (w życiu: in life)"
+        },
+        {
+          "en": "a family"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zycie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-c1-e11",
+      "prompt": {
+        "en": "he was born in Gdańsk"
+      },
+      "acceptedAnswers": [
+        "urodził się w Gdańsku"
+      ],
+      "distractors": [
+        "urodziłem",
+        "Gdańsk"
+      ],
+      "items": [
+        "urodzic-sie-urodzil",
+        "gdansk"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-c1-e12",
+      "pairs": [
+        {
+          "polish": "przedszkole",
+          "meaning": {
+            "en": "a nursery school"
+          }
+        },
+        {
+          "polish": "szkoła podstawowa",
+          "meaning": {
+            "en": "a primary school"
+          }
+        },
+        {
+          "polish": "liceum",
+          "meaning": {
+            "en": "a secondary school"
+          }
+        },
+        {
+          "polish": "życie",
+          "meaning": {
+            "en": "life"
+          }
+        },
+        {
+          "polish": "urodził się",
+          "meaning": {
+            "en": "he was born"
+          }
+        }
+      ],
+      "items": [
+        "przedszkole",
+        "szkola-podstawowa",
+        "liceum",
+        "zycie",
+        "urodzic-sie-urodzil"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-c1-e13",
+      "prompt": {
+        "en": "I was born (said by a woman)"
+      },
+      "acceptedAnswers": [
+        "urodziłam się"
+      ],
+      "items": [
+        "urodzic-sie-urodzilem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-c1-e14",
+      "acceptedAnswers": [
+        "kiedy się urodziłeś?"
+      ],
+      "meaning": {
+        "en": "when were you born?"
+      },
+      "items": [
+        "kiedy-sie-urodziles"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-c1-e15",
+      "lines": [
+        "Babcia urodziła się w Lublinie.",
+        "Tam chodziła do szkoły podstawowej i do liceum.",
+        "Teraz mieszka w Warszawie."
+      ],
+      "meaning": {
+        "en": "Grandma's life."
+      },
+      "statements": [
+        {
+          "text": "Babcia urodziła się w Lublinie.",
+          "meaning": {
+            "en": "Grandma was born in Lublin."
+          },
+          "true": true
+        },
+        {
+          "text": "Babcia chodziła do liceum w Warszawie.",
+          "meaning": {
+            "en": "Grandma went to secondary school in Warsaw."
+          },
+          "true": false
+        },
+        {
+          "text": "Teraz babcia mieszka w Warszawie.",
+          "meaning": {
+            "en": "Now grandma lives in Warsaw."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "babcia",
+        "urodzic-sie-urodzil",
+        "lublin",
+        "tam",
+        "chodzic-chodzil",
+        "szkola-podstawowa",
+        "i",
+        "liceum",
+        "teraz",
+        "mieszkac-mieszka",
+        "w-warszawie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c1-e16",
+      "text": "Chodziłem do ___ w Poznaniu.",
+      "meaning": {
+        "en": "I went to secondary school in Poznań."
+      },
+      "gaps": [
+        [
+          "liceum"
+        ]
+      ],
+      "distractors": [
+        "przedszkole",
+        "szkoła"
+      ],
+      "items": [
+        "chodzic-chodzilem",
+        "liceum",
+        "poznan"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-c1-e17",
+      "lines": [
+        "Kiedy się urodziłaś?",
+        "W lipcu, w Gdańsku.",
+        "A szkoła? Też w Gdańsku?",
+        "Nie, do szkoły chodziłam w Toruniu."
+      ],
+      "meaning": {
+        "en": "Where did you grow up?"
+      },
+      "items": [
+        "kiedy-sie-urodziles",
+        "lipiec",
+        "gdansk",
+        "a",
+        "szkola",
+        "tez",
+        "nie",
+        "do-szkoly",
+        "chodzic-chodzilem",
+        "torun"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-c1-e18",
+      "prompt": {
+        "en": "life"
+      },
+      "acceptedAnswers": [
+        "życie"
+      ],
+      "items": [
+        "zycie"
+      ]
+    }
+  ]
+}

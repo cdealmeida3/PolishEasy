@@ -1,0 +1,417 @@
+{
+  "id": "kpk1-l21-b5",
+  "section": {
+    "letter": "B",
+    "heading": "Sto lat i wszystkiego najlepszego!",
+    "meaning": {
+      "en": "Sto lat and all the best!"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-b5-t01",
+      "before": "kpk1-l21-b5-e01",
+      "title": {
+        "en": "Co to za święto?"
+      },
+      "body": {
+        "en": "Some Polish holidays and their dates: *Dzień Kobiet* is *ósmego marca*, *prima aprilis* *pierwszego kwietnia*, *Dzień Matki* *dwudziestego szóstego maja*, *Dzień Dziecka* *pierwszego czerwca*, *Dzień Nauczyciela* *czternastego października*, *Wszystkich Świętych* *pierwszego listopada* and *Święto Niepodległości* *jedenastego listopada*. To ask about one say *co to za święto?*"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b5-e01",
+      "prompt": "Dzień Kobiet",
+      "options": [
+        {
+          "en": "Mother's Day"
+        },
+        {
+          "en": "Women's Day, 8 March"
+        },
+        {
+          "en": "Children's Day"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "dzien-kobiet"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b5-e02",
+      "prompt": "Dzień Matki",
+      "options": [
+        {
+          "en": "Women's Day"
+        },
+        {
+          "en": "Father's Day"
+        },
+        {
+          "en": "Mother's Day, 26 May"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dzien-matki"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-b5-e03",
+      "text": "Dzień Matki jest dwudziestego szóstego maja.",
+      "meaning": {
+        "en": "Mother's Day is on the twenty-sixth of May."
+      },
+      "distractors": [
+        "Dzień Matki jest dwudziestego szóstego marca.",
+        "Dzień Kobiet jest dwudziestego szóstego maja."
+      ],
+      "items": [
+        "dzien-matki",
+        "byc-jest",
+        "dwudziesty",
+        "szosty",
+        "maja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b5-e04",
+      "prompt": "Dzień Dziecka",
+      "options": [
+        {
+          "en": "Children's Day, 1 June"
+        },
+        {
+          "en": "Teachers' Day"
+        },
+        {
+          "en": "Women's Day"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dzien-dziecka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b5-e05",
+      "prompt": "prima aprilis",
+      "options": [
+        {
+          "en": "New Year's Day"
+        },
+        {
+          "en": "April Fools' Day, 1 April"
+        },
+        {
+          "en": "Valentine's Day"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "prima-aprilis"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-b5-e06",
+      "text": "Dzień Kobiet jest ___ marca.",
+      "meaning": {
+        "en": "Women's Day is on the eighth of March."
+      },
+      "gaps": [
+        [
+          "ósmego"
+        ]
+      ],
+      "distractors": [
+        "ósmy",
+        "osiem"
+      ],
+      "items": [
+        "dzien-kobiet",
+        "byc-jest",
+        "osmy",
+        "marca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b5-e07",
+      "prompt": "Dzień Nauczyciela",
+      "options": [
+        {
+          "en": "Children's Day"
+        },
+        {
+          "en": "All Saints' Day"
+        },
+        {
+          "en": "Teachers' Day, 14 October"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "dzien-nauczyciela"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b5-e08",
+      "prompt": "Wszystkich Świętych",
+      "options": [
+        {
+          "en": "All Saints' Day, 1 November"
+        },
+        {
+          "en": "Christmas Day"
+        },
+        {
+          "en": "Independence Day"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wszystkich-swietych"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b5-e09",
+      "prompt": "Święto Niepodległości",
+      "options": [
+        {
+          "en": "All Saints' Day"
+        },
+        {
+          "en": "Independence Day, 11 November"
+        },
+        {
+          "en": "New Year's Eve"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "swieto-niepodleglosci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b5-e10",
+      "prompt": "co to za święto?",
+      "options": [
+        {
+          "en": "what time is it?"
+        },
+        {
+          "en": "where is the party?"
+        },
+        {
+          "en": "what holiday is that?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "co-to-za-swieto"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-b5-e11",
+      "prompt": {
+        "en": "Children's Day is on the first of June"
+      },
+      "acceptedAnswers": [
+        "Dzień Dziecka jest pierwszego czerwca"
+      ],
+      "distractors": [
+        "pierwszy",
+        "czerwiec"
+      ],
+      "items": [
+        "dzien-dziecka",
+        "byc-jest",
+        "pierwszy",
+        "czerwca"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-b5-e12",
+      "pairs": [
+        {
+          "polish": "Dzień Kobiet",
+          "meaning": {
+            "en": "Women's Day"
+          }
+        },
+        {
+          "polish": "Dzień Matki",
+          "meaning": {
+            "en": "Mother's Day"
+          }
+        },
+        {
+          "polish": "Dzień Dziecka",
+          "meaning": {
+            "en": "Children's Day"
+          }
+        },
+        {
+          "polish": "prima aprilis",
+          "meaning": {
+            "en": "April Fools' Day"
+          }
+        },
+        {
+          "polish": "Wszystkich Świętych",
+          "meaning": {
+            "en": "All Saints' Day"
+          }
+        }
+      ],
+      "items": [
+        "dzien-kobiet",
+        "dzien-matki",
+        "dzien-dziecka",
+        "prima-aprilis",
+        "wszystkich-swietych"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-b5-e13",
+      "prompt": {
+        "en": "April Fools' Day"
+      },
+      "acceptedAnswers": [
+        "prima aprilis"
+      ],
+      "items": [
+        "prima-aprilis"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-b5-e14",
+      "acceptedAnswers": [
+        "co to za święto?"
+      ],
+      "meaning": {
+        "en": "what holiday is that?"
+      },
+      "items": [
+        "co-to-za-swieto"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-b5-e15",
+      "lines": [
+        "Pierwszego listopada jest Wszystkich Świętych.",
+        "Jedenastego listopada jest Święto Niepodległości.",
+        "A czternastego października jest Dzień Nauczyciela."
+      ],
+      "meaning": {
+        "en": "Holidays in autumn."
+      },
+      "statements": [
+        {
+          "text": "Wszystkich Świętych jest w listopadzie.",
+          "meaning": {
+            "en": "All Saints' Day is in November."
+          },
+          "true": true
+        },
+        {
+          "text": "Święto Niepodległości jest w październiku.",
+          "meaning": {
+            "en": "Independence Day is in October."
+          },
+          "true": false
+        },
+        {
+          "text": "Dzień Nauczyciela jest w październiku.",
+          "meaning": {
+            "en": "Teachers' Day is in October."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "pierwszy",
+        "listopada",
+        "byc-jest",
+        "wszystkich-swietych",
+        "jedenasty",
+        "swieto-niepodleglosci",
+        "a",
+        "czternasty",
+        "pazdziernika",
+        "dzien-nauczyciela"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-b5-e16",
+      "lines": [
+        "Co to za święto, dwudziesty czwarty grudnia?",
+        "To Wigilia.",
+        "A trzydziesty pierwszy grudnia?",
+        "To sylwester!"
+      ],
+      "meaning": {
+        "en": "Two holidays in December."
+      },
+      "items": [
+        "co-to-za-swieto",
+        "dwudziesty",
+        "czwarty",
+        "grudnia",
+        "to",
+        "wigilia",
+        "a",
+        "trzydziesty",
+        "pierwszy",
+        "sylwester"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-b5-e17",
+      "text": "Jakie ___ jest dwudziestego piątego grudnia? Boże Narodzenie.",
+      "meaning": {
+        "en": "Which holiday is on the twenty-fifth of December? Christmas."
+      },
+      "gaps": [
+        [
+          "święto"
+        ]
+      ],
+      "distractors": [
+        "święta",
+        "świąt"
+      ],
+      "items": [
+        "jakie",
+        "swieto",
+        "byc-jest",
+        "dwudziesty",
+        "piaty",
+        "grudnia",
+        "boze-narodzenie"
+      ]
+    }
+  ]
+}

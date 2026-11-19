@@ -1,0 +1,380 @@
+{
+  "id": "kpk1-l21-b2",
+  "section": {
+    "letter": "B",
+    "heading": "Sto lat i wszystkiego najlepszego!",
+    "meaning": {
+      "en": "Sto lat and all the best!"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-b2-t01",
+      "before": "kpk1-l21-b2-e01",
+      "title": {
+        "en": "Sto lat!"
+      },
+      "body": {
+        "en": "At a birthday or a name day everyone sings *Sto lat*, a hundred years: *sto lat, sto lat, niech żyje, żyje nam*, may he or she live a hundred years among us, and then *jeszcze raz*, once more. Then the guests, *goście*, *składają życzenia*: they give their good wishes. There is a cake with *świeczki* (candles), and often a glass of *szampan*. *Wszystkiego dobrego!* is all the best, a little less festive than *wszystkiego najlepszego!*"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b2-e01",
+      "prompt": "niech żyje",
+      "options": [
+        {
+          "en": "long may he or she live, long live"
+        },
+        {
+          "en": "let him go"
+        },
+        {
+          "en": "he is sleeping"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "niech-zyje"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-b2-e02",
+      "text": "Sto lat, sto lat, niech żyje, żyje nam!",
+      "meaning": {
+        "en": "A hundred years, a hundred years, may he live among us!"
+      },
+      "distractors": [
+        "Sto lat, sto lat, niech żyje nam!",
+        "Jeszcze raz, jeszcze raz, niech żyje nam!"
+      ],
+      "items": [
+        "sto-lat",
+        "niech-zyje",
+        "nam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b2-e03",
+      "prompt": "śpiewamy",
+      "options": [
+        {
+          "en": "we dance"
+        },
+        {
+          "en": "we sing (śpiewają: they sing)"
+        },
+        {
+          "en": "we drink"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "spiewac-spiewamy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-b2-e04",
+      "text": "Wszyscy razem ___ sto lat.",
+      "meaning": {
+        "en": "We all sing Sto lat together."
+      },
+      "gaps": [
+        [
+          "śpiewamy"
+        ]
+      ],
+      "distractors": [
+        "śpiewać",
+        "śpiewam"
+      ],
+      "items": [
+        "wszyscy",
+        "razem",
+        "spiewac-spiewamy",
+        "sto-lat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b2-e05",
+      "prompt": "składać",
+      "options": [
+        {
+          "en": "to buy"
+        },
+        {
+          "en": "to open"
+        },
+        {
+          "en": "to give, to offer (składać życzenia: to give your good wishes)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "skladac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b2-e06",
+      "prompt": "gość",
+      "options": [
+        {
+          "en": "a guest (goście: guests)"
+        },
+        {
+          "en": "a host"
+        },
+        {
+          "en": "a neighbour"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "gosc"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-b2-e07",
+      "prompt": {
+        "en": "the guests give their good wishes"
+      },
+      "acceptedAnswers": [
+        "goście składają życzenia"
+      ],
+      "distractors": [
+        "gość",
+        "życzę"
+      ],
+      "items": [
+        "gosc",
+        "skladac",
+        "zyczenia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b2-e08",
+      "prompt": "świeczka",
+      "options": [
+        {
+          "en": "a cake"
+        },
+        {
+          "en": "a candle (świeczki na torcie: candles on the cake)"
+        },
+        {
+          "en": "a lamp"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "swieczka"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b2-e09",
+      "prompt": "szampan",
+      "options": [
+        {
+          "en": "wine"
+        },
+        {
+          "en": "beer"
+        },
+        {
+          "en": "champagne"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szampan"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b2-e10",
+      "prompt": "wszystkiego dobrego!",
+      "options": [
+        {
+          "en": "all the best!"
+        },
+        {
+          "en": "good morning!"
+        },
+        {
+          "en": "good luck!"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wszystkiego-dobrego"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-b2-e11",
+      "pairs": [
+        {
+          "polish": "świeczki",
+          "meaning": {
+            "en": "candles"
+          }
+        },
+        {
+          "polish": "szampan",
+          "meaning": {
+            "en": "champagne"
+          }
+        },
+        {
+          "polish": "goście",
+          "meaning": {
+            "en": "guests"
+          }
+        },
+        {
+          "polish": "niech żyje",
+          "meaning": {
+            "en": "long may he live"
+          }
+        },
+        {
+          "polish": "jeszcze raz",
+          "meaning": {
+            "en": "once more"
+          }
+        }
+      ],
+      "items": [
+        "swieczka",
+        "szampan",
+        "gosc",
+        "niech-zyje",
+        "jeszcze-raz"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-b2-e12",
+      "prompt": {
+        "en": "champagne"
+      },
+      "acceptedAnswers": [
+        "szampan"
+      ],
+      "items": [
+        "szampan"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-b2-e13",
+      "acceptedAnswers": [
+        "składam ci życzenia"
+      ],
+      "meaning": {
+        "en": "I give you my good wishes"
+      },
+      "items": [
+        "skladac",
+        "ci",
+        "zyczenia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-b2-e14",
+      "text": "Dziadek ma tort i dużo ___.",
+      "meaning": {
+        "en": "Grandad has a cake and lots of candles."
+      },
+      "gaps": [
+        [
+          "świeczek"
+        ]
+      ],
+      "distractors": [
+        "świeczki",
+        "świeczka"
+      ],
+      "items": [
+        "dziadek",
+        "miec-ma",
+        "tort",
+        "i",
+        "duzo",
+        "swieczka"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-b2-e15",
+      "lines": [
+        "Wszyscy razem!",
+        "Sto lat, sto lat, niech żyje, żyje nam!",
+        "Jeszcze raz, jeszcze raz!",
+        "Dziękuję, dziękuję bardzo!"
+      ],
+      "meaning": {
+        "en": "Singing Sto lat."
+      },
+      "items": [
+        "wszyscy",
+        "razem",
+        "sto-lat",
+        "niech-zyje",
+        "nam",
+        "jeszcze-raz",
+        "dziekuje",
+        "bardzo"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-b2-e16",
+      "prompt": {
+        "en": "all the best and lots of health"
+      },
+      "acceptedAnswers": [
+        "wszystkiego dobrego i dużo zdrowia"
+      ],
+      "distractors": [
+        "najlepszego",
+        "zdrowie"
+      ],
+      "items": [
+        "wszystkiego-dobrego",
+        "i",
+        "duzo",
+        "zdrowia"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-b2-e17",
+      "acceptedAnswers": [
+        "śpiewamy sto lat"
+      ],
+      "meaning": {
+        "en": "we sing Sto lat"
+      },
+      "items": [
+        "spiewac-spiewamy",
+        "sto-lat"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "id": "kpk1-l21-d4",
+  "section": {
+    "letter": "D",
+    "heading": "Mami, co robiłaś?",
+    "meaning": {
+      "en": "Mami, what were you doing?"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-d4-t01",
+      "before": "kpk1-l21-d4-e01",
+      "title": {
+        "en": "Kiedy który?"
+      },
+      "body": {
+        "en": "Some words point to the imperfective: *codziennie*, *zawsze*, *od czasu do czasu* (a habit), *długo* (a process), *jednocześnie* (two things at the same time). Others point to the perfective: *nagle*, *od razu* (a moment), *najpierw… potem* (one after another), *w końcu*, *wreszcie*, *już* (a result). Words like *wczoraj* or *w piątek* do not decide: the question is whether you mean the process or the result."
+      },
+      "table": {
+        "title": {
+          "en": "Niedokonany czy dokonany?"
+        },
+        "columns": [
+          {
+            "header": "niedokonany"
+          },
+          {
+            "header": "dokonany"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "codziennie wstawałam o siódmej",
+              "wczoraj wstałam o dziesiątej"
+            ]
+          },
+          {
+            "cells": [
+              "długo jadłem obiad",
+              "szybko zjadłem obiad"
+            ]
+          },
+          {
+            "cells": [
+              "piliśmy kawę i rozmawialiśmy",
+              "najpierw wypiliśmy kawę, a potem porozmawialiśmy"
+            ]
+          },
+          {
+            "cells": [
+              "sprzątałam, ale nie jest czysto",
+              "w końcu posprzątałam"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d4-e01",
+      "prompt": "od czasu do czasu",
+      "options": [
+        {
+          "en": "every day"
+        },
+        {
+          "en": "never"
+        },
+        {
+          "en": "from time to time"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "od-czasu-do-czasu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d4-e02",
+      "prompt": "wstawałam",
+      "options": [
+        {
+          "en": "I used to get up (said by a woman; a man says wstawałem)"
+        },
+        {
+          "en": "I went to bed"
+        },
+        {
+          "en": "I fell asleep"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wstawac-wstawalam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-d4-e03",
+      "text": "Codziennie wstawałam o siódmej.",
+      "meaning": {
+        "en": "Every day I used to get up at seven."
+      },
+      "distractors": [
+        "Wczoraj wstałam o siódmej.",
+        "Codziennie wstawałam o ósmej."
+      ],
+      "items": [
+        "codziennie",
+        "wstawac-wstawalam",
+        "o-godz",
+        "siodma"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d4-e04",
+      "prompt": "nagle",
+      "options": [
+        {
+          "en": "slowly"
+        },
+        {
+          "en": "suddenly"
+        },
+        {
+          "en": "often"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "nagle"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-d4-e05",
+      "text": "Wczoraj ___ o dziesiątej, bo zaspałam.",
+      "meaning": {
+        "en": "Yesterday I got up at ten, because I overslept."
+      },
+      "gaps": [
+        [
+          "wstałam"
+        ]
+      ],
+      "distractors": [
+        "wstawałam",
+        "wstaję"
+      ],
+      "items": [
+        "wczoraj",
+        "wstac-wstalam",
+        "o-godz",
+        "dziesiata",
+        "bo",
+        "zaspac-zaspalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d4-e06",
+      "prompt": "w końcu",
+      "options": [
+        {
+          "en": "at the beginning"
+        },
+        {
+          "en": "at the same time"
+        },
+        {
+          "en": "in the end, finally"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "w-koncu"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d4-e07",
+      "prompt": "wreszcie",
+      "options": [
+        {
+          "en": "at last"
+        },
+        {
+          "en": "again"
+        },
+        {
+          "en": "not yet"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wreszcie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d4-e08",
+      "prompt": "obejrzałem",
+      "options": [
+        {
+          "en": "I was watching"
+        },
+        {
+          "en": "I watched (all of it) (said by a man; a woman says obejrzałam; you watched, to a man: obejrzałeś)"
+        },
+        {
+          "en": "I listened"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "obejrzec-obejrzalem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d4-e09",
+      "prompt": "rozmawialiśmy",
+      "options": [
+        {
+          "en": "we were singing"
+        },
+        {
+          "en": "we were sleeping"
+        },
+        {
+          "en": "we were talking"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "rozmawiac-rozmawialismy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d4-e10",
+      "prompt": "porozmawialiśmy",
+      "options": [
+        {
+          "en": "we had a talk"
+        },
+        {
+          "en": "we had dinner"
+        },
+        {
+          "en": "we argued"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "porozmawiac-porozmawialismy"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-d4-e11",
+      "prompt": {
+        "en": "first we drank our coffee, and then we had a talk"
+      },
+      "acceptedAnswers": [
+        "najpierw wypiliśmy kawę, a potem porozmawialiśmy"
+      ],
+      "distractors": [
+        "piliśmy",
+        "rozmawialiśmy"
+      ],
+      "items": [
+        "najpierw",
+        "wypic-wypilam",
+        "kawa-acc",
+        "a",
+        "potem",
+        "porozmawiac-porozmawialismy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-d4-e12",
+      "pairs": [
+        {
+          "polish": "od czasu do czasu",
+          "meaning": {
+            "en": "from time to time"
+          }
+        },
+        {
+          "polish": "nagle",
+          "meaning": {
+            "en": "suddenly"
+          }
+        },
+        {
+          "polish": "w końcu",
+          "meaning": {
+            "en": "in the end"
+          }
+        },
+        {
+          "polish": "wreszcie",
+          "meaning": {
+            "en": "at last"
+          }
+        },
+        {
+          "polish": "jednocześnie",
+          "meaning": {
+            "en": "at the same time"
+          }
+        }
+      ],
+      "items": [
+        "od-czasu-do-czasu",
+        "nagle",
+        "w-koncu",
+        "wreszcie",
+        "jednoczesnie"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-d4-e13",
+      "prompt": {
+        "en": "at last"
+      },
+      "acceptedAnswers": [
+        "wreszcie"
+      ],
+      "items": [
+        "wreszcie"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-d4-e14",
+      "acceptedAnswers": [
+        "piliśmy kawę i rozmawialiśmy"
+      ],
+      "meaning": {
+        "en": "we were drinking coffee and talking"
+      },
+      "items": [
+        "pic-pilam",
+        "kawa-acc",
+        "i",
+        "rozmawiac-rozmawialismy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-d4-e15",
+      "text": "W końcu ___ i teraz jest czysto.",
+      "meaning": {
+        "en": "In the end I cleaned up and now it is clean."
+      },
+      "gaps": [
+        [
+          "posprzątałam"
+        ]
+      ],
+      "distractors": [
+        "sprzątałam",
+        "sprzątam"
+      ],
+      "items": [
+        "w-koncu",
+        "posprzatac-posprzatalam",
+        "i",
+        "teraz",
+        "byc-jest",
+        "czysto"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-d4-e16",
+      "lines": [
+        "Od czasu do czasu oglądałem telewizję.",
+        "W sobotę wreszcie obejrzałem cały film.",
+        "Nagle zadzwoniła mama."
+      ],
+      "meaning": {
+        "en": "A Saturday at home."
+      },
+      "statements": [
+        {
+          "text": "W sobotę obejrzał cały film.",
+          "meaning": {
+            "en": "On Saturday he watched the whole film."
+          },
+          "true": true
+        },
+        {
+          "text": "Codziennie oglądał filmy.",
+          "meaning": {
+            "en": "He watched films every day."
+          },
+          "true": false
+        },
+        {
+          "text": "Mama zadzwoniła.",
+          "meaning": {
+            "en": "Mum called."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "od-czasu-do-czasu",
+        "ogladac-ogladalam",
+        "telewizja-acc",
+        "sobota",
+        "wreszcie",
+        "obejrzec-obejrzalem",
+        "caly",
+        "film",
+        "nagle",
+        "zadzwonic-zadzwonilem",
+        "mama"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-d4-e17",
+      "lines": [
+        "Co robiłeś wieczorem?",
+        "Oglądałem film.",
+        "Obejrzałeś go do końca?",
+        "Nie, w końcu poszedłem spać."
+      ],
+      "meaning": {
+        "en": "An evening with a film."
+      },
+      "items": [
+        "co",
+        "robic-robilas",
+        "wieczorem",
+        "ogladac-ogladalam",
+        "film",
+        "obejrzec-obejrzalem",
+        "go",
+        "do-konca",
+        "nie",
+        "w-koncu",
+        "pojsc-poszedlem",
+        "spac"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-d4-e18",
+      "text": "Wreszcie skończyłam pracę!",
+      "meaning": {
+        "en": "At last I have finished work!"
+      },
+      "distractors": [
+        "W końcu skończyłam pracę!",
+        "Wreszcie skończyłam książkę!"
+      ],
+      "items": [
+        "wreszcie",
+        "skonczyc-skonczylem",
+        "prace"
+      ]
+    }
+  ]
+}

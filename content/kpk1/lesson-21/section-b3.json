@@ -1,0 +1,372 @@
+{
+  "id": "kpk1-l21-b3",
+  "section": {
+    "letter": "B",
+    "heading": "Sto lat i wszystkiego najlepszego!",
+    "meaning": {
+      "en": "Sto lat and all the best!"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-b3-t01",
+      "before": "kpk1-l21-b3-e01",
+      "title": {
+        "en": "Na każdą okazję"
+      },
+      "body": {
+        "en": "Each occasion has its wish, and the wish is in the genitive: *wesołych świąt!* at Christmas or Easter, *szczęśliwego Nowego Roku!*, *udanych wakacji!* before a holiday, *szczęśliwej podróży!* before a trip, *powodzenia!* before an exam and *szybkiego powrotu do zdrowia!* to someone who is ill. At Easter you can also say *wesołego Alleluja!*, and at a wedding *wszystkiego najlepszego na nowej drodze życia!*"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b3-e01",
+      "prompt": "wesołych świąt!",
+      "options": [
+        {
+          "en": "happy birthday!"
+        },
+        {
+          "en": "merry Christmas!, happy Easter!, happy holidays!"
+        },
+        {
+          "en": "good night!"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wesolych-swiat"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b3-e02",
+      "prompt": "szczęśliwego Nowego Roku!",
+      "options": [
+        {
+          "en": "happy Easter!"
+        },
+        {
+          "en": "have a good trip!"
+        },
+        {
+          "en": "happy New Year!"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szczesliwego-nowego-roku"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-b3-e03",
+      "text": "Wesołych świąt i szczęśliwego Nowego Roku!",
+      "meaning": {
+        "en": "Merry Christmas and a happy New Year!"
+      },
+      "distractors": [
+        "Wesołych świąt i wszystkiego najlepszego!",
+        "Szczęśliwego Nowego Roku i udanych wakacji!"
+      ],
+      "items": [
+        "wesolych-swiat",
+        "i",
+        "szczesliwego-nowego-roku"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b3-e04",
+      "prompt": "udanych wakacji!",
+      "options": [
+        {
+          "en": "have a great holiday!"
+        },
+        {
+          "en": "get well soon!"
+        },
+        {
+          "en": "merry Christmas!"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "udanych-wakacji"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b3-e05",
+      "prompt": "szczęśliwej podróży!",
+      "options": [
+        {
+          "en": "have a great holiday!"
+        },
+        {
+          "en": "have a good trip!"
+        },
+        {
+          "en": "good luck!"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szczesliwej-podrozy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-b3-e06",
+      "text": "Jutro jedziesz do Gdańska? Szczęśliwej ___!",
+      "meaning": {
+        "en": "Are you going to Gdańsk tomorrow? Have a good trip!"
+      },
+      "gaps": [
+        [
+          "podróży"
+        ]
+      ],
+      "distractors": [
+        "podróż",
+        "drogi"
+      ],
+      "items": [
+        "jutro",
+        "jechac-jedziesz",
+        "gdansk",
+        "szczesliwej-podrozy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b3-e07",
+      "prompt": "szybkiego powrotu do zdrowia!",
+      "options": [
+        {
+          "en": "all the best!"
+        },
+        {
+          "en": "have a nice day!"
+        },
+        {
+          "en": "get well soon!"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "szybkiego-powrotu-do-zdrowia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b3-e08",
+      "prompt": "na nowej drodze życia",
+      "options": [
+        {
+          "en": "on your new path in life (a wish at a wedding)"
+        },
+        {
+          "en": "in a new house"
+        },
+        {
+          "en": "on a long journey"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "na-nowej-drodze-zycia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b3-e09",
+      "prompt": "wesołego Alleluja!",
+      "options": [
+        {
+          "en": "happy New Year!"
+        },
+        {
+          "en": "happy Easter!"
+        },
+        {
+          "en": "merry Christmas!"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wesolego-alleluja"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-b3-e10",
+      "prompt": {
+        "en": "have a great holiday!"
+      },
+      "acceptedAnswers": [
+        "udanych wakacji!"
+      ],
+      "distractors": [
+        "wakacje",
+        "udane"
+      ],
+      "items": [
+        "udanych-wakacji"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-b3-e11",
+      "pairs": [
+        {
+          "polish": "wesołych świąt!",
+          "meaning": {
+            "en": "merry Christmas!"
+          }
+        },
+        {
+          "polish": "udanych wakacji!",
+          "meaning": {
+            "en": "have a great holiday!"
+          }
+        },
+        {
+          "polish": "szczęśliwej podróży!",
+          "meaning": {
+            "en": "have a good trip!"
+          }
+        },
+        {
+          "polish": "powodzenia!",
+          "meaning": {
+            "en": "good luck!"
+          }
+        },
+        {
+          "polish": "szybkiego powrotu do zdrowia!",
+          "meaning": {
+            "en": "get well soon!"
+          }
+        }
+      ],
+      "items": [
+        "wesolych-swiat",
+        "udanych-wakacji",
+        "szczesliwej-podrozy",
+        "powodzenia",
+        "szybkiego-powrotu-do-zdrowia"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-b3-e12",
+      "prompt": {
+        "en": "happy New Year!"
+      },
+      "acceptedAnswers": [
+        "szczęśliwego Nowego Roku!"
+      ],
+      "items": [
+        "szczesliwego-nowego-roku"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-b3-e13",
+      "acceptedAnswers": [
+        "szybkiego powrotu do zdrowia"
+      ],
+      "meaning": {
+        "en": "get well soon"
+      },
+      "items": [
+        "szybkiego-powrotu-do-zdrowia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-b3-e14",
+      "text": "Wszystkiego najlepszego na nowej ___ życia!",
+      "meaning": {
+        "en": "All the best on your new path in life!"
+      },
+      "gaps": [
+        [
+          "drodze"
+        ]
+      ],
+      "distractors": [
+        "droga",
+        "drogi"
+      ],
+      "items": [
+        "wszystkiego-najlepszego",
+        "na-nowej-drodze-zycia"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-b3-e15",
+      "lines": [
+        "Jutro jadę na wakacje.",
+        "Świetnie! Udanych wakacji!",
+        "Dziękuję! Do zobaczenia!",
+        "Szczęśliwej podróży!"
+      ],
+      "meaning": {
+        "en": "Before a holiday."
+      },
+      "items": [
+        "jutro",
+        "jechac-jade",
+        "na-wakacje",
+        "swietnie",
+        "udanych-wakacji",
+        "dziekuje",
+        "do-zobaczenia",
+        "szczesliwej-podrozy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-b3-e16",
+      "text": "Wesołego Alleluja!",
+      "meaning": {
+        "en": "Happy Easter!"
+      },
+      "distractors": [
+        "Wesołych świąt!",
+        "Sto lat!"
+      ],
+      "items": [
+        "wesolego-alleluja"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-b3-e17",
+      "prompt": {
+        "en": "all the best and good luck!"
+      },
+      "acceptedAnswers": [
+        "wszystkiego dobrego i powodzenia!"
+      ],
+      "distractors": [
+        "najlepszego",
+        "zdrowia"
+      ],
+      "items": [
+        "wszystkiego-dobrego",
+        "i",
+        "powodzenia"
+      ]
+    }
+  ]
+}

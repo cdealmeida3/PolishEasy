@@ -1,0 +1,372 @@
+{
+  "id": "kpk1-l21-p1",
+  "section": {
+    "letter": "P",
+    "heading": "Powtórzenie",
+    "meaning": {
+      "en": "Revision"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-p1-t01",
+      "before": "kpk1-l21-p1-e01",
+      "title": {
+        "en": "Kiedy to było?"
+      },
+      "body": {
+        "en": "Three ways to say when. A day: the ordinal and the month in the genitive, *piątego maja*. A year: the ordinal in the locative and *roku*, *w tysiąc dziewięćset pięćdziesiątym roku*. A whole date: the year goes into the genitive too and there is no *w*, *piątego maja tysiąc dziewięćset pięćdziesiątego roku*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-p1-e01",
+      "text": "W tysiąc dziewięćset pięćdziesiątym roku dziadek chodził do liceum.",
+      "meaning": {
+        "en": "In 1950 grandad went to secondary school."
+      },
+      "distractors": [
+        "W tysiąc dziewięćset sześćdziesiątym roku dziadek chodził do liceum.",
+        "W tysiąc dziewięćset pięćdziesiątym roku dziadek chodził do przedszkola."
+      ],
+      "items": [
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "piecdziesiaty",
+        "dziadek",
+        "chodzic-chodzil",
+        "liceum"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-p1-e02",
+      "text": "Komunizm ___ w Polsce w tysiąc dziewięćset osiemdziesiątym dziewiątym roku.",
+      "meaning": {
+        "en": "Communism fell in Poland in 1989."
+      },
+      "gaps": [
+        [
+          "upadł"
+        ]
+      ],
+      "distractors": [
+        "upadła",
+        "upadli"
+      ],
+      "items": [
+        "komunizm",
+        "upasc",
+        "w-polsce",
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "osiemdziesiaty",
+        "dziewiaty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-p1-e03",
+      "prompt": "roku",
+      "options": [
+        {
+          "en": "of the month"
+        },
+        {
+          "en": "of the year (in a whole date: piątego maja dwutysięcznego roku, on 5 May 2000)"
+        },
+        {
+          "en": "of the day"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "roku"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-p1-e04",
+      "prompt": {
+        "en": "Independence Day is on the eleventh of November"
+      },
+      "acceptedAnswers": [
+        "Święto Niepodległości jest jedenastego listopada"
+      ],
+      "distractors": [
+        "jedenasty",
+        "listopad"
+      ],
+      "items": [
+        "swieto-niepodleglosci",
+        "byc-jest",
+        "jedenasty",
+        "listopada"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-p1-e05",
+      "text": "Dzień ___ jest czternastego października.",
+      "meaning": {
+        "en": "Teachers' Day is on the fourteenth of October."
+      },
+      "gaps": [
+        [
+          "Nauczyciela"
+        ]
+      ],
+      "distractors": [
+        "Nauczyciel",
+        "Nauczycielka"
+      ],
+      "items": [
+        "dzien-nauczyciela",
+        "byc-jest",
+        "czternasty",
+        "pazdziernika"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-p1-e06",
+      "prompt": {
+        "en": "an illness"
+      },
+      "acceptedAnswers": [
+        "choroba"
+      ],
+      "items": [
+        "choroba"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-p1-e07",
+      "pairs": [
+        {
+          "polish": "pierwszego stycznia",
+          "meaning": {
+            "en": "on the first of January"
+          }
+        },
+        {
+          "polish": "w dwutysięcznym roku",
+          "meaning": {
+            "en": "in the year 2000"
+          }
+        },
+        {
+          "polish": "raz w roku",
+          "meaning": {
+            "en": "once a year"
+          }
+        },
+        {
+          "polish": "urodził się",
+          "meaning": {
+            "en": "he was born"
+          }
+        },
+        {
+          "polish": "uczyłem się",
+          "meaning": {
+            "en": "I studied"
+          }
+        }
+      ],
+      "items": [
+        "pierwszy",
+        "stycznia",
+        "w-roku",
+        "dwutysieczny",
+        "raz-w-roku",
+        "urodzic-sie-urodzil",
+        "uczyc-sie-uczylem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-p1-e08",
+      "acceptedAnswers": [
+        "urodziłam się piątego maja"
+      ],
+      "meaning": {
+        "en": "I was born on the fifth of May"
+      },
+      "items": [
+        "urodzic-sie-urodzilem",
+        "piaty",
+        "maja"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-p1-e09",
+      "lines": [
+        "Urodziłam się dwudziestego marca tysiąc dziewięćset dziewięćdziesiątego roku.",
+        "Chodziłam do szkoły w Toruniu.",
+        "Potem studiowałam w Krakowie i tam dużo się uczyłam."
+      ],
+      "meaning": {
+        "en": "My life so far."
+      },
+      "statements": [
+        {
+          "text": "Urodziła się w marcu.",
+          "meaning": {
+            "en": "She was born in March."
+          },
+          "true": true
+        },
+        {
+          "text": "Chodziła do szkoły w Krakowie.",
+          "meaning": {
+            "en": "She went to school in Kraków."
+          },
+          "true": false
+        },
+        {
+          "text": "Studiowała w Krakowie.",
+          "meaning": {
+            "en": "She studied in Kraków."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "urodzic-sie-urodzilem",
+        "dwudziesty",
+        "marca",
+        "tysiac",
+        "dziewiecset",
+        "dziewiecdziesiaty",
+        "roku",
+        "chodzic-chodzilem",
+        "do-szkoly",
+        "torun",
+        "potem",
+        "studiowac-studiowalem",
+        "w-krakowie",
+        "i",
+        "tam",
+        "duzo"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-p1-e10",
+      "lines": [
+        "Kiedy się urodziłeś?",
+        "Ósmego maja tysiąc dziewięćset osiemdziesiątego roku.",
+        "Czyli w maju masz urodziny!",
+        "Tak, a imieniny w lipcu."
+      ],
+      "meaning": {
+        "en": "Birthday and name day."
+      },
+      "items": [
+        "kiedy-sie-urodziles",
+        "osmy",
+        "maja",
+        "tysiac",
+        "dziewiecset",
+        "osiemdziesiaty",
+        "roku",
+        "czyli",
+        "maj",
+        "miec-masz",
+        "urodziny",
+        "tak",
+        "a",
+        "imieniny",
+        "lipiec"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-p1-e11",
+      "text": "Babcia ___ w Gdańsku całe życie.",
+      "meaning": {
+        "en": "Grandma lived in Gdańsk all her life."
+      },
+      "gaps": [
+        [
+          "mieszkała"
+        ]
+      ],
+      "distractors": [
+        "mieszkał",
+        "mieszkanie"
+      ],
+      "items": [
+        "babcia",
+        "mieszkac-mieszkal",
+        "gdansk",
+        "caly",
+        "zycie"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-p1-e12",
+      "prompt": {
+        "en": "I got married in 2010"
+      },
+      "acceptedAnswers": [
+        "ożeniłem się w dwa tysiące dziesiątym roku"
+      ],
+      "distractors": [
+        "ożenił",
+        "dziesięć"
+      ],
+      "items": [
+        "ozenic-sie",
+        "w-roku",
+        "dwa",
+        "tysiace",
+        "dziesiaty"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-p1-e13",
+      "prompt": {
+        "en": "once a year"
+      },
+      "acceptedAnswers": [
+        "raz w roku"
+      ],
+      "items": [
+        "raz-w-roku"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-p1-e14",
+      "text": "Urodziła się pierwszego czerwca dwutysięcznego roku.",
+      "meaning": {
+        "en": "She was born on 1 June 2000."
+      },
+      "distractors": [
+        "Urodziła się pierwszego lipca dwutysięcznego roku.",
+        "Urodził się pierwszego czerwca dwutysięcznego roku."
+      ],
+      "items": [
+        "urodzic-sie-urodzil",
+        "pierwszy",
+        "czerwca",
+        "dwutysieczny",
+        "roku"
+      ]
+    }
+  ]
+}

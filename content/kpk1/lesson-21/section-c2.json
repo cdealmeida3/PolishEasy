@@ -1,0 +1,408 @@
+{
+  "id": "kpk1-l21-c2",
+  "section": {
+    "letter": "C",
+    "heading": "Biografia",
+    "meaning": {
+      "en": "A life story"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-c2-t01",
+      "before": "kpk1-l21-c2-e01",
+      "title": {
+        "en": "Matura i studia"
+      },
+      "body": {
+        "en": "*Matura* is the big exam at the end of *liceum*. *Zdać maturę* is to pass it: *zdałem maturę*, *zdałam maturę*, *zdał*, *zdała*. Then come *studia*, university studies: *studiowałem na uniwersytecie* or *na politechnice* (a technical university), and in the end *skończyłem studia*, I graduated. *Uczyłem się* is I studied or learned, at school or on my own."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c2-e01",
+      "prompt": "matura",
+      "options": [
+        {
+          "en": "a wedding"
+        },
+        {
+          "en": "a degree"
+        },
+        {
+          "en": "the school-leaving exam at the end of secondary school (zdać maturę: to pass it)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "matura"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c2-e02",
+      "prompt": "zdałem",
+      "options": [
+        {
+          "en": "I passed (an exam; said by a man, a woman says zdałam)"
+        },
+        {
+          "en": "I wrote"
+        },
+        {
+          "en": "I bought"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zdac-zdalem"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c2-e03",
+      "text": "Zdałem maturę w czerwcu.",
+      "meaning": {
+        "en": "I passed my school-leaving exam in June (said by a man)."
+      },
+      "distractors": [
+        "Zdałam maturę w czerwcu.",
+        "Zdałem maturę w lipcu."
+      ],
+      "items": [
+        "zdac-zdalem",
+        "matura",
+        "czerwiec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c2-e04",
+      "prompt": "zdał",
+      "options": [
+        {
+          "en": "he gave"
+        },
+        {
+          "en": "he passed (an exam; she passed: zdała)"
+        },
+        {
+          "en": "he wrote"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "zdac-zdal"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c2-e05",
+      "prompt": "studia",
+      "options": [
+        {
+          "en": "a studio"
+        },
+        {
+          "en": "a school"
+        },
+        {
+          "en": "university studies, a degree (na studiach: at university)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "studia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c2-e06",
+      "prompt": "studiowałem",
+      "options": [
+        {
+          "en": "I studied at university (said by a man; studiowałam: said by a woman; studiował, studiowała: he, she studied)"
+        },
+        {
+          "en": "I worked"
+        },
+        {
+          "en": "I lived"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "studiowac-studiowalem"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c2-e07",
+      "prompt": "skończyłem",
+      "options": [
+        {
+          "en": "I started"
+        },
+        {
+          "en": "I finished (said by a man, a woman says skończyłam)"
+        },
+        {
+          "en": "I bought"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "skonczyc-skonczylem"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c2-e08",
+      "text": "Studiowałem pięć lat, a potem skończyłem ___.",
+      "meaning": {
+        "en": "I studied for five years, and then I graduated."
+      },
+      "gaps": [
+        [
+          "studia"
+        ]
+      ],
+      "distractors": [
+        "studiów",
+        "studiach"
+      ],
+      "items": [
+        "studiowac-studiowalem",
+        "piec",
+        "lat",
+        "a",
+        "potem",
+        "skonczyc-skonczylem",
+        "studia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c2-e09",
+      "prompt": "politechnika",
+      "options": [
+        {
+          "en": "a hospital"
+        },
+        {
+          "en": "a police station"
+        },
+        {
+          "en": "a technical university (na politechnice: at a technical university)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "politechnika"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c2-e10",
+      "prompt": "uczyłem się",
+      "options": [
+        {
+          "en": "I studied, I learned (said by a man, a woman says uczyłam się)"
+        },
+        {
+          "en": "I taught"
+        },
+        {
+          "en": "I played"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "uczyc-sie-uczylem"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-c2-e11",
+      "prompt": {
+        "en": "I studied at a technical university"
+      },
+      "acceptedAnswers": [
+        "studiowałem na politechnice"
+      ],
+      "distractors": [
+        "politechnika",
+        "uniwersytecie"
+      ],
+      "items": [
+        "studiowac-studiowalem",
+        "politechnika"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-c2-e12",
+      "pairs": [
+        {
+          "polish": "matura",
+          "meaning": {
+            "en": "the school-leaving exam"
+          }
+        },
+        {
+          "polish": "studia",
+          "meaning": {
+            "en": "university studies"
+          }
+        },
+        {
+          "polish": "politechnika",
+          "meaning": {
+            "en": "a technical university"
+          }
+        },
+        {
+          "polish": "zdał",
+          "meaning": {
+            "en": "he passed"
+          }
+        },
+        {
+          "polish": "skończyłem",
+          "meaning": {
+            "en": "I finished"
+          }
+        }
+      ],
+      "items": [
+        "matura",
+        "studia",
+        "politechnika",
+        "zdac-zdal",
+        "skonczyc-skonczylem"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-c2-e13",
+      "prompt": {
+        "en": "I passed (said by a woman)"
+      },
+      "acceptedAnswers": [
+        "zdałam"
+      ],
+      "items": [
+        "zdac-zdalem"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-c2-e14",
+      "acceptedAnswers": [
+        "uczyłem się w liceum"
+      ],
+      "meaning": {
+        "en": "I studied at secondary school"
+      },
+      "items": [
+        "uczyc-sie-uczylem",
+        "liceum"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-c2-e15",
+      "lines": [
+        "Dziadek zdał maturę w Gdańsku.",
+        "Potem studiował na politechnice.",
+        "Teraz ma osiemdziesiąt lat."
+      ],
+      "meaning": {
+        "en": "Grandad's studies."
+      },
+      "statements": [
+        {
+          "text": "Dziadek zdał maturę w Gdańsku.",
+          "meaning": {
+            "en": "Grandad passed his school-leaving exam in Gdańsk."
+          },
+          "true": true
+        },
+        {
+          "text": "Dziadek studiował na uniwersytecie.",
+          "meaning": {
+            "en": "Grandad studied at a university."
+          },
+          "true": false
+        },
+        {
+          "text": "Dziadek ma osiemdziesiąt lat.",
+          "meaning": {
+            "en": "Grandad is eighty."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "dziadek",
+        "zdac-zdal",
+        "matura",
+        "gdansk",
+        "potem",
+        "studiowac-studiowalem",
+        "politechnika",
+        "teraz",
+        "miec-ma",
+        "osiemdziesiat",
+        "lat"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c2-e16",
+      "text": "Moja siostra ___ maturę w maju.",
+      "meaning": {
+        "en": "My sister passed her school-leaving exam in May."
+      },
+      "gaps": [
+        [
+          "zdała"
+        ]
+      ],
+      "distractors": [
+        "zdał",
+        "zdałam"
+      ],
+      "items": [
+        "moja",
+        "siostra",
+        "zdac-zdal",
+        "matura",
+        "maj"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c2-e17",
+      "text": "Skończyłam studia w lipcu.",
+      "meaning": {
+        "en": "I graduated in July (said by a woman)."
+      },
+      "distractors": [
+        "Skończyłam szkołę w lipcu.",
+        "Skończyłem studia w lipcu."
+      ],
+      "items": [
+        "skonczyc-skonczylem",
+        "studia",
+        "lipiec"
+      ]
+    }
+  ]
+}

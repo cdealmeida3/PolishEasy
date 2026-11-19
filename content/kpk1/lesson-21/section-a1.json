@@ -1,0 +1,424 @@
+{
+  "id": "kpk1-l21-a1",
+  "section": {
+    "letter": "A",
+    "heading": "Kiedy masz urodziny i imieniny?",
+    "meaning": {
+      "en": "When is your birthday and your name day?"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-a1-t01",
+      "before": "kpk1-l21-a1-e01",
+      "title": {
+        "en": "Urodziny i imieniny"
+      },
+      "body": {
+        "en": "*Urodziny* is a birthday, the day you were born. *Imieniny* is a name day: every Polish name has its own day in the calendar, and on it everyone with that name celebrates. Both words are plural: *moje urodziny*, *twoje imieniny*. To celebrate is *obchodzić*: *obchodzę imieniny w maju*. A present *z okazji urodzin* is a present for a birthday."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a1-e01",
+      "prompt": "imieniny",
+      "options": [
+        {
+          "en": "a name day, the day of the saint you are named after (mam imieniny: it is my name day)"
+        },
+        {
+          "en": "a birthday"
+        },
+        {
+          "en": "a wedding"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "imieniny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a1-e02",
+      "prompt": "obchodzić",
+      "options": [
+        {
+          "en": "to invite"
+        },
+        {
+          "en": "to celebrate (a birthday or a holiday)"
+        },
+        {
+          "en": "to buy"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "obchodzic-obchodzi"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-a1-e03",
+      "text": "Kiedy obchodzisz imieniny?",
+      "meaning": {
+        "en": "When do you celebrate your name day?"
+      },
+      "distractors": [
+        "Kiedy masz urodziny?",
+        "Kiedy obchodzisz urodziny?"
+      ],
+      "items": [
+        "kiedy",
+        "obchodzic-obchodzi",
+        "imieniny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a1-e04",
+      "prompt": "na urodziny",
+      "options": [
+        {
+          "en": "for dinner"
+        },
+        {
+          "en": "to work"
+        },
+        {
+          "en": "to a birthday party, for a birthday"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "na-urodziny"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a1-e05",
+      "prompt": "dziadka",
+      "options": [
+        {
+          "en": "grandad's, of grandad (urodziny dziadka: grandad's birthday)"
+        },
+        {
+          "en": "grandma's"
+        },
+        {
+          "en": "dad's"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "dziadek-gen"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-a1-e06",
+      "text": "Jutro idę na urodziny ___.",
+      "meaning": {
+        "en": "Tomorrow I am going to grandad's birthday party."
+      },
+      "gaps": [
+        [
+          "dziadka"
+        ]
+      ],
+      "distractors": [
+        "dziadek",
+        "dziadkiem"
+      ],
+      "items": [
+        "jutro",
+        "isc-ide",
+        "na-urodziny",
+        "dziadek-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a1-e07",
+      "prompt": "osiemdziesiąty",
+      "options": [
+        {
+          "en": "eighteenth"
+        },
+        {
+          "en": "eightieth (osiemdziesiąte urodziny: an eightieth birthday)"
+        },
+        {
+          "en": "eighty"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "osiemdziesiaty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a1-e08",
+      "prompt": "cała rodzina",
+      "options": [
+        {
+          "en": "a big family"
+        },
+        {
+          "en": "the whole house"
+        },
+        {
+          "en": "the whole family"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "cala-rodzina"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-a1-e09",
+      "prompt": {
+        "en": "grandad's eightieth birthday"
+      },
+      "acceptedAnswers": [
+        "osiemdziesiąte urodziny dziadka"
+      ],
+      "distractors": [
+        "osiemdziesiąt",
+        "dziadek"
+      ],
+      "items": [
+        "osiemdziesiaty",
+        "urodziny",
+        "dziadek-gen"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a1-e10",
+      "prompt": "z okazji urodzin",
+      "options": [
+        {
+          "en": "for a birthday (z okazji imienin: for a name day; z okazji świąt: for the holidays)"
+        },
+        {
+          "en": "after the birthday"
+        },
+        {
+          "en": "without a birthday"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "z-okazji-urodzin"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a1-e11",
+      "prompt": "każdy",
+      "options": [
+        {
+          "en": "nobody"
+        },
+        {
+          "en": "every, everyone (każdy, każda, każde)"
+        },
+        {
+          "en": "somebody"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "kazdy"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-a1-e12",
+      "text": "Każdy lubi prezenty z okazji urodzin.",
+      "meaning": {
+        "en": "Everyone likes presents for their birthday."
+      },
+      "distractors": [
+        "Każdy lubi prezenty z okazji imienin.",
+        "Każdy lubi urodziny."
+      ],
+      "items": [
+        "kazdy",
+        "lubic-lubi",
+        "prezent",
+        "z-okazji-urodzin"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-a1-e13",
+      "pairs": [
+        {
+          "polish": "urodziny",
+          "meaning": {
+            "en": "a birthday"
+          }
+        },
+        {
+          "polish": "imieniny",
+          "meaning": {
+            "en": "a name day"
+          }
+        },
+        {
+          "polish": "cała rodzina",
+          "meaning": {
+            "en": "the whole family"
+          }
+        },
+        {
+          "polish": "na urodziny",
+          "meaning": {
+            "en": "to a birthday party"
+          }
+        },
+        {
+          "polish": "każdy",
+          "meaning": {
+            "en": "everyone, every"
+          }
+        }
+      ],
+      "items": [
+        "urodziny",
+        "imieniny",
+        "cala-rodzina",
+        "na-urodziny",
+        "kazdy"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-a1-e14",
+      "text": "Na urodziny przyjeżdża ___ rodzina.",
+      "meaning": {
+        "en": "The whole family is coming to the birthday party."
+      },
+      "gaps": [
+        [
+          "cała"
+        ]
+      ],
+      "distractors": [
+        "całą",
+        "każda"
+      ],
+      "items": [
+        "na-urodziny",
+        "przyjezdzac-przyjezdza",
+        "cala-rodzina"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-a1-e15",
+      "prompt": {
+        "en": "a name day"
+      },
+      "acceptedAnswers": [
+        "imieniny"
+      ],
+      "items": [
+        "imieniny"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-a1-e16",
+      "acceptedAnswers": [
+        "obchodzę imieniny"
+      ],
+      "meaning": {
+        "en": "I celebrate my name day"
+      },
+      "items": [
+        "obchodzic-obchodzi",
+        "imieniny"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-a1-e17",
+      "lines": [
+        "Dziadek ma osiemdziesiąt lat.",
+        "W sobotę są jego osiemdziesiąte urodziny.",
+        "Przyjeżdża cała rodzina."
+      ],
+      "meaning": {
+        "en": "Grandad's birthday."
+      },
+      "statements": [
+        {
+          "text": "Dziadek ma osiemdziesiąt lat.",
+          "meaning": {
+            "en": "Grandad is eighty."
+          },
+          "true": true
+        },
+        {
+          "text": "Urodziny są w niedzielę.",
+          "meaning": {
+            "en": "The birthday is on Sunday."
+          },
+          "true": false
+        },
+        {
+          "text": "Przyjeżdża cała rodzina.",
+          "meaning": {
+            "en": "The whole family is coming."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "dziadek",
+        "miec-ma",
+        "osiemdziesiat",
+        "lat",
+        "sobota",
+        "byc-sa",
+        "jego",
+        "osiemdziesiaty",
+        "urodziny",
+        "przyjezdzac-przyjezdza",
+        "cala-rodzina"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-a1-e18",
+      "prompt": {
+        "en": "everyone has a name day"
+      },
+      "acceptedAnswers": [
+        "każdy ma imieniny"
+      ],
+      "distractors": [
+        "każda",
+        "urodziny"
+      ],
+      "items": [
+        "kazdy",
+        "miec-ma",
+        "imieniny"
+      ]
+    }
+  ]
+}

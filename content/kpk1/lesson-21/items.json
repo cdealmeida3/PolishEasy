@@ -1,0 +1,1447 @@
+{
+  "items": [
+    {
+      "id": "imieniny",
+      "text": "imieniny",
+      "meaning": {
+        "en": "a name day, the day of the saint you are named after (mam imieniny: it is my name day)"
+      },
+      "forms": [
+        "imienin"
+      ]
+    },
+    {
+      "id": "obchodzic-obchodzi",
+      "text": "obchodzić",
+      "meaning": {
+        "en": "to celebrate (a birthday or a holiday)"
+      },
+      "forms": [
+        "obchodzę",
+        "obchodzisz",
+        "obchodzi",
+        "obchodzimy"
+      ]
+    },
+    {
+      "id": "na-urodziny",
+      "text": "na urodziny",
+      "meaning": {
+        "en": "to a birthday party, for a birthday"
+      }
+    },
+    {
+      "id": "dziadek-gen",
+      "text": "dziadka",
+      "meaning": {
+        "en": "grandad's, of grandad (urodziny dziadka: grandad's birthday)"
+      }
+    },
+    {
+      "id": "osiemdziesiaty",
+      "text": "osiemdziesiąty",
+      "meaning": {
+        "en": "eightieth (osiemdziesiąte urodziny: an eightieth birthday)"
+      },
+      "forms": [
+        "osiemdziesiątego",
+        "osiemdziesiątym",
+        "osiemdziesiąte"
+      ]
+    },
+    {
+      "id": "cala-rodzina",
+      "text": "cała rodzina",
+      "meaning": {
+        "en": "the whole family"
+      }
+    },
+    {
+      "id": "z-okazji-urodzin",
+      "text": "z okazji urodzin",
+      "meaning": {
+        "en": "for a birthday (z okazji imienin: for a name day; z okazji świąt: for the holidays)"
+      },
+      "forms": [
+        "z okazji imienin",
+        "z okazji świąt"
+      ]
+    },
+    {
+      "id": "kazdy",
+      "text": "każdy",
+      "meaning": {
+        "en": "every, everyone (każdy, każda, każde)"
+      },
+      "forms": [
+        "każda",
+        "każde"
+      ]
+    },
+    {
+      "id": "ktory-dzis-jest",
+      "text": "który dziś jest?",
+      "meaning": {
+        "en": "what's the date today?"
+      }
+    },
+    {
+      "id": "pierwszy",
+      "text": "pierwszy",
+      "meaning": {
+        "en": "first (pierwszy maja: the first of May; pierwszego maja: on the first of May)"
+      },
+      "forms": [
+        "pierwszego",
+        "pierwszym"
+      ]
+    },
+    {
+      "id": "drugi",
+      "text": "drugi",
+      "meaning": {
+        "en": "second (drugi maja: the second of May; drugiego maja: on the second of May)"
+      },
+      "forms": [
+        "drugiego",
+        "drugim"
+      ]
+    },
+    {
+      "id": "trzeci",
+      "text": "trzeci",
+      "meaning": {
+        "en": "third (trzeci maja: the third of May; trzeciego maja: on the third of May)"
+      },
+      "forms": [
+        "trzeciego",
+        "trzecim"
+      ]
+    },
+    {
+      "id": "stycznia",
+      "text": "stycznia",
+      "meaning": {
+        "en": "of January (pierwszy stycznia: the first of January)"
+      }
+    },
+    {
+      "id": "lutego",
+      "text": "lutego",
+      "meaning": {
+        "en": "of February (drugi lutego: the second of February)"
+      }
+    },
+    {
+      "id": "marca",
+      "text": "marca",
+      "meaning": {
+        "en": "of March (trzeci marca: the third of March)"
+      }
+    },
+    {
+      "id": "kwietnia",
+      "text": "kwietnia",
+      "meaning": {
+        "en": "of April (pierwszy kwietnia: the first of April)"
+      }
+    },
+    {
+      "id": "maja",
+      "text": "maja",
+      "meaning": {
+        "en": "of May (trzeciego maja: on the third of May)"
+      }
+    },
+    {
+      "id": "czerwca",
+      "text": "czerwca",
+      "meaning": {
+        "en": "of June (piątego czerwca: on the fifth of June)"
+      }
+    },
+    {
+      "id": "lipca",
+      "text": "lipca",
+      "meaning": {
+        "en": "of July (szóstego lipca: on the sixth of July)"
+      }
+    },
+    {
+      "id": "sierpnia",
+      "text": "sierpnia",
+      "meaning": {
+        "en": "of August (siódmego sierpnia: on the seventh of August)"
+      }
+    },
+    {
+      "id": "czwarty",
+      "text": "czwarty",
+      "meaning": {
+        "en": "fourth (czwartego: on the fourth)"
+      },
+      "forms": [
+        "czwartego",
+        "czwartym"
+      ]
+    },
+    {
+      "id": "piaty",
+      "text": "piąty",
+      "meaning": {
+        "en": "fifth (piątego: on the fifth)"
+      },
+      "forms": [
+        "piątego",
+        "piątym"
+      ]
+    },
+    {
+      "id": "szosty",
+      "text": "szósty",
+      "meaning": {
+        "en": "sixth (szóstego: on the sixth)"
+      },
+      "forms": [
+        "szóstego",
+        "szóstym"
+      ]
+    },
+    {
+      "id": "siodmy",
+      "text": "siódmy",
+      "meaning": {
+        "en": "seventh (siódmego: on the seventh)"
+      },
+      "forms": [
+        "siódmego",
+        "siódmym"
+      ]
+    },
+    {
+      "id": "wrzesnia",
+      "text": "września",
+      "meaning": {
+        "en": "of September (pierwszego września: on the first of September)"
+      }
+    },
+    {
+      "id": "pazdziernika",
+      "text": "października",
+      "meaning": {
+        "en": "of October (dziewiątego października: on the ninth of October)"
+      }
+    },
+    {
+      "id": "listopada",
+      "text": "listopada",
+      "meaning": {
+        "en": "of November (dziesiąty listopada: the tenth of November)"
+      }
+    },
+    {
+      "id": "grudnia",
+      "text": "grudnia",
+      "meaning": {
+        "en": "of December (dwudziestego piątego grudnia: on the twenty-fifth of December)"
+      }
+    },
+    {
+      "id": "osmy",
+      "text": "ósmy",
+      "meaning": {
+        "en": "eighth (ósmego: on the eighth)"
+      },
+      "forms": [
+        "ósmego",
+        "ósmym"
+      ]
+    },
+    {
+      "id": "dziewiaty",
+      "text": "dziewiąty",
+      "meaning": {
+        "en": "ninth (dziewiątego: on the ninth)"
+      },
+      "forms": [
+        "dziewiątego",
+        "dziewiątym"
+      ]
+    },
+    {
+      "id": "dziesiaty",
+      "text": "dziesiąty",
+      "meaning": {
+        "en": "tenth (dziesiątego: on the tenth)"
+      },
+      "forms": [
+        "dziesiątego",
+        "dziesiątym"
+      ]
+    },
+    {
+      "id": "dwudziesty",
+      "text": "dwudziesty",
+      "meaning": {
+        "en": "twentieth (dwudziesty piąty: twenty-fifth; dwudziestego piątego: on the twenty-fifth)"
+      },
+      "forms": [
+        "dwudziestego",
+        "dwudziestym"
+      ]
+    },
+    {
+      "id": "kiedy-masz-imieniny",
+      "text": "kiedy masz imieniny?",
+      "meaning": {
+        "en": "when is your name day?"
+      }
+    },
+    {
+      "id": "w-kalendarzu",
+      "text": "w kalendarzu",
+      "meaning": {
+        "en": "in the calendar"
+      }
+    },
+    {
+      "id": "jedenasty",
+      "text": "jedenasty",
+      "meaning": {
+        "en": "eleventh (jedenastego: on the eleventh)"
+      },
+      "forms": [
+        "jedenastego",
+        "jedenastym"
+      ]
+    },
+    {
+      "id": "czternasty",
+      "text": "czternasty",
+      "meaning": {
+        "en": "fourteenth (czternastego: on the fourteenth)"
+      },
+      "forms": [
+        "czternastego",
+        "czternastym"
+      ]
+    },
+    {
+      "id": "pietnasty",
+      "text": "piętnasty",
+      "meaning": {
+        "en": "fifteenth (piętnastego: on the fifteenth)"
+      },
+      "forms": [
+        "piętnastego",
+        "piętnastym"
+      ]
+    },
+    {
+      "id": "trzydziesty",
+      "text": "trzydziesty",
+      "meaning": {
+        "en": "thirtieth (trzydziesty pierwszy: thirty-first; trzydziestego pierwszego: on the thirty-first)"
+      },
+      "forms": [
+        "trzydziestego",
+        "trzydziestym"
+      ]
+    },
+    {
+      "id": "raczej",
+      "text": "raczej",
+      "meaning": {
+        "en": "rather, more often (w pracy raczej imieniny: at work it is rather name days)"
+      }
+    },
+    {
+      "id": "wszystkiego-najlepszego",
+      "text": "wszystkiego najlepszego!",
+      "meaning": {
+        "en": "all the best!, happy birthday!"
+      }
+    },
+    {
+      "id": "zyczyc-zycze",
+      "text": "życzę",
+      "meaning": {
+        "en": "I wish (życzę ci zdrowia: I wish you health; życzymy: we wish; życzy: he or she wishes)"
+      },
+      "forms": [
+        "życzymy",
+        "życzy"
+      ]
+    },
+    {
+      "id": "zdrowia",
+      "text": "zdrowia",
+      "meaning": {
+        "en": "health (in a wish: życzę ci zdrowia)"
+      }
+    },
+    {
+      "id": "szczescia",
+      "text": "szczęścia",
+      "meaning": {
+        "en": "happiness, luck (in a wish: życzę ci szczęścia)"
+      }
+    },
+    {
+      "id": "milosci",
+      "text": "miłości",
+      "meaning": {
+        "en": "love (in a wish: życzę ci miłości)"
+      }
+    },
+    {
+      "id": "sukcesow",
+      "text": "sukcesów",
+      "meaning": {
+        "en": "success (in a wish: sukcesów w pracy: success at work)"
+      }
+    },
+    {
+      "id": "pomyslnosci",
+      "text": "pomyślności",
+      "meaning": {
+        "en": "good fortune, prosperity (in a wish)"
+      }
+    },
+    {
+      "id": "zyczenia",
+      "text": "życzenia",
+      "meaning": {
+        "en": "good wishes (składać życzenia: to give your good wishes)"
+      },
+      "forms": [
+        "życzeń"
+      ]
+    },
+    {
+      "id": "niech-zyje",
+      "text": "niech żyje",
+      "meaning": {
+        "en": "long may he or she live, long live"
+      }
+    },
+    {
+      "id": "spiewac-spiewamy",
+      "text": "śpiewamy",
+      "meaning": {
+        "en": "we sing (śpiewają: they sing)"
+      },
+      "forms": [
+        "śpiewają"
+      ]
+    },
+    {
+      "id": "skladac",
+      "text": "składać",
+      "meaning": {
+        "en": "to give, to offer (składać życzenia: to give your good wishes)"
+      },
+      "forms": [
+        "składam",
+        "składamy",
+        "składają"
+      ]
+    },
+    {
+      "id": "gosc",
+      "text": "gość",
+      "meaning": {
+        "en": "a guest (goście: guests)"
+      },
+      "forms": [
+        "goście",
+        "gości"
+      ]
+    },
+    {
+      "id": "swieczka",
+      "text": "świeczka",
+      "meaning": {
+        "en": "a candle (świeczki na torcie: candles on the cake)"
+      },
+      "forms": [
+        "świeczki",
+        "świeczek"
+      ]
+    },
+    {
+      "id": "szampan",
+      "text": "szampan",
+      "meaning": {
+        "en": "champagne"
+      },
+      "forms": [
+        "szampana"
+      ]
+    },
+    {
+      "id": "wszystkiego-dobrego",
+      "text": "wszystkiego dobrego!",
+      "meaning": {
+        "en": "all the best!"
+      }
+    },
+    {
+      "id": "wesolych-swiat",
+      "text": "wesołych świąt!",
+      "meaning": {
+        "en": "merry Christmas!, happy Easter!, happy holidays!"
+      }
+    },
+    {
+      "id": "szczesliwego-nowego-roku",
+      "text": "szczęśliwego Nowego Roku!",
+      "meaning": {
+        "en": "happy New Year!"
+      }
+    },
+    {
+      "id": "udanych-wakacji",
+      "text": "udanych wakacji!",
+      "meaning": {
+        "en": "have a great holiday!"
+      }
+    },
+    {
+      "id": "szczesliwej-podrozy",
+      "text": "szczęśliwej podróży!",
+      "meaning": {
+        "en": "have a good trip!"
+      }
+    },
+    {
+      "id": "szybkiego-powrotu-do-zdrowia",
+      "text": "szybkiego powrotu do zdrowia!",
+      "meaning": {
+        "en": "get well soon!"
+      }
+    },
+    {
+      "id": "na-nowej-drodze-zycia",
+      "text": "na nowej drodze życia",
+      "meaning": {
+        "en": "on your new path in life (a wish at a wedding)"
+      }
+    },
+    {
+      "id": "wesolego-alleluja",
+      "text": "wesołego Alleluja!",
+      "meaning": {
+        "en": "happy Easter!"
+      }
+    },
+    {
+      "id": "slub",
+      "text": "ślub",
+      "meaning": {
+        "en": "a wedding (na ślub: for a wedding)"
+      },
+      "forms": [
+        "ślubu",
+        "na ślub"
+      ]
+    },
+    {
+      "id": "egzamin",
+      "text": "egzamin",
+      "meaning": {
+        "en": "an exam (przed egzaminem: before an exam)"
+      },
+      "forms": [
+        "egzaminem",
+        "przed egzaminem"
+      ]
+    },
+    {
+      "id": "choroba",
+      "text": "choroba",
+      "meaning": {
+        "en": "an illness"
+      },
+      "forms": [
+        "choroby"
+      ]
+    },
+    {
+      "id": "wyjazd",
+      "text": "wyjazd",
+      "meaning": {
+        "en": "a trip away, leaving (przed wyjazdem: before leaving)"
+      },
+      "forms": [
+        "przed wyjazdem"
+      ]
+    },
+    {
+      "id": "wielkanoc",
+      "text": "Wielkanoc",
+      "meaning": {
+        "en": "Easter (na Wielkanoc: for Easter)"
+      },
+      "forms": [
+        "na Wielkanoc"
+      ]
+    },
+    {
+      "id": "wigilia",
+      "text": "Wigilia",
+      "meaning": {
+        "en": "Christmas Eve, the big family supper on 24 December (w Wigilię: on Christmas Eve)"
+      },
+      "forms": [
+        "w Wigilię"
+      ]
+    },
+    {
+      "id": "swieto",
+      "text": "święto",
+      "meaning": {
+        "en": "a holiday, a feast day (święta: Christmas or Easter; na święta: for Christmas)"
+      },
+      "forms": [
+        "święta",
+        "świąt",
+        "na święta"
+      ]
+    },
+    {
+      "id": "dzien-kobiet",
+      "text": "Dzień Kobiet",
+      "meaning": {
+        "en": "Women's Day, 8 March"
+      }
+    },
+    {
+      "id": "dzien-matki",
+      "text": "Dzień Matki",
+      "meaning": {
+        "en": "Mother's Day, 26 May"
+      }
+    },
+    {
+      "id": "dzien-dziecka",
+      "text": "Dzień Dziecka",
+      "meaning": {
+        "en": "Children's Day, 1 June"
+      }
+    },
+    {
+      "id": "prima-aprilis",
+      "text": "prima aprilis",
+      "meaning": {
+        "en": "April Fools' Day, 1 April"
+      }
+    },
+    {
+      "id": "dzien-nauczyciela",
+      "text": "Dzień Nauczyciela",
+      "meaning": {
+        "en": "Teachers' Day, 14 October"
+      }
+    },
+    {
+      "id": "wszystkich-swietych",
+      "text": "Wszystkich Świętych",
+      "meaning": {
+        "en": "All Saints' Day, 1 November"
+      }
+    },
+    {
+      "id": "swieto-niepodleglosci",
+      "text": "Święto Niepodległości",
+      "meaning": {
+        "en": "Independence Day, 11 November"
+      }
+    },
+    {
+      "id": "co-to-za-swieto",
+      "text": "co to za święto?",
+      "meaning": {
+        "en": "what holiday is that?"
+      }
+    },
+    {
+      "id": "urodzic-sie-urodzilem",
+      "text": "urodziłem się",
+      "meaning": {
+        "en": "I was born (said by a man; a woman says urodziłam się; you were born: urodziłeś się, urodziłaś się)"
+      },
+      "forms": [
+        "urodziłam się",
+        "urodziłeś się",
+        "urodziłaś się"
+      ]
+    },
+    {
+      "id": "urodzic-sie-urodzil",
+      "text": "urodził się",
+      "meaning": {
+        "en": "he was born (she was born: urodziła się)"
+      },
+      "forms": [
+        "urodziła się"
+      ]
+    },
+    {
+      "id": "kiedy-sie-urodziles",
+      "text": "kiedy się urodziłeś?",
+      "meaning": {
+        "en": "when were you born? (to a woman: kiedy się urodziłaś?)"
+      },
+      "forms": [
+        "kiedy się urodziłaś?"
+      ]
+    },
+    {
+      "id": "przedszkole",
+      "text": "przedszkole",
+      "meaning": {
+        "en": "a nursery school, a kindergarten (do przedszkola: to nursery school)"
+      },
+      "forms": [
+        "przedszkola",
+        "do przedszkola"
+      ]
+    },
+    {
+      "id": "szkola-podstawowa",
+      "text": "szkoła podstawowa",
+      "meaning": {
+        "en": "a primary school (do szkoły podstawowej: to primary school)"
+      },
+      "forms": [
+        "szkoły podstawowej",
+        "do szkoły podstawowej"
+      ]
+    },
+    {
+      "id": "liceum",
+      "text": "liceum",
+      "meaning": {
+        "en": "a secondary school, a high school (do liceum: to secondary school)"
+      },
+      "forms": [
+        "do liceum",
+        "w liceum"
+      ]
+    },
+    {
+      "id": "chodzic-chodzil",
+      "text": "chodził",
+      "meaning": {
+        "en": "he went, he attended (regularly, for some time; she went: chodziła)"
+      },
+      "forms": [
+        "chodziła"
+      ]
+    },
+    {
+      "id": "zycie",
+      "text": "życie",
+      "meaning": {
+        "en": "life (w życiu: in life)"
+      },
+      "forms": [
+        "życia",
+        "w życiu"
+      ]
+    },
+    {
+      "id": "matura",
+      "text": "matura",
+      "meaning": {
+        "en": "the school-leaving exam at the end of secondary school (zdać maturę: to pass it)"
+      },
+      "forms": [
+        "maturę"
+      ]
+    },
+    {
+      "id": "zdac-zdalem",
+      "text": "zdałem",
+      "meaning": {
+        "en": "I passed (an exam; said by a man, a woman says zdałam)"
+      },
+      "forms": [
+        "zdałam"
+      ]
+    },
+    {
+      "id": "zdac-zdal",
+      "text": "zdał",
+      "meaning": {
+        "en": "he passed (an exam; she passed: zdała)"
+      },
+      "forms": [
+        "zdała"
+      ]
+    },
+    {
+      "id": "studia",
+      "text": "studia",
+      "meaning": {
+        "en": "university studies, a degree (na studiach: at university)"
+      },
+      "forms": [
+        "studiów",
+        "na studiach"
+      ]
+    },
+    {
+      "id": "studiowac-studiowalem",
+      "text": "studiowałem",
+      "meaning": {
+        "en": "I studied at university (said by a man; studiowałam: said by a woman; studiował, studiowała: he, she studied)"
+      },
+      "forms": [
+        "studiowałam",
+        "studiował",
+        "studiowała"
+      ]
+    },
+    {
+      "id": "skonczyc-skonczylem",
+      "text": "skończyłem",
+      "meaning": {
+        "en": "I finished (said by a man, a woman says skończyłam)"
+      },
+      "forms": [
+        "skończyłam"
+      ]
+    },
+    {
+      "id": "politechnika",
+      "text": "politechnika",
+      "meaning": {
+        "en": "a technical university (na politechnice: at a technical university)"
+      },
+      "forms": [
+        "na politechnice"
+      ]
+    },
+    {
+      "id": "uczyc-sie-uczylem",
+      "text": "uczyłem się",
+      "meaning": {
+        "en": "I studied, I learned (said by a man, a woman says uczyłam się)"
+      },
+      "forms": [
+        "uczyłam się"
+      ]
+    },
+    {
+      "id": "poznac-poznal",
+      "text": "poznał",
+      "meaning": {
+        "en": "he met, he got to know (she met: poznała; they met: poznali)"
+      },
+      "forms": [
+        "poznała",
+        "poznali"
+      ]
+    },
+    {
+      "id": "zakochac-sie",
+      "text": "zakochał się",
+      "meaning": {
+        "en": "he fell in love (she: zakochała się; I fell in love: zakochałem się, zakochałam się)"
+      },
+      "forms": [
+        "zakochała się",
+        "zakochałem się",
+        "zakochałam się"
+      ]
+    },
+    {
+      "id": "pobrac-sie",
+      "text": "pobrali się",
+      "meaning": {
+        "en": "they got married (we got married: pobraliśmy się)"
+      },
+      "forms": [
+        "pobraliśmy się"
+      ]
+    },
+    {
+      "id": "ozenic-sie",
+      "text": "ożenił się",
+      "meaning": {
+        "en": "he got married (said of a man; I got married, said by a man: ożeniłem się)"
+      },
+      "forms": [
+        "ożeniłem się"
+      ]
+    },
+    {
+      "id": "wyjsc-za-maz",
+      "text": "wyszła za mąż",
+      "meaning": {
+        "en": "she got married (said of a woman; I got married, said by a woman: wyszłam za mąż)"
+      },
+      "forms": [
+        "wyszłam za mąż"
+      ]
+    },
+    {
+      "id": "w-ciazy",
+      "text": "w ciąży",
+      "meaning": {
+        "en": "pregnant (być w ciąży: to be pregnant)"
+      }
+    },
+    {
+      "id": "urodzic",
+      "text": "urodziła",
+      "meaning": {
+        "en": "she gave birth to, she had (a baby) (I had: urodziłam)"
+      },
+      "forms": [
+        "urodziłam"
+      ]
+    },
+    {
+      "id": "pracowac-pracowal",
+      "text": "pracował",
+      "meaning": {
+        "en": "he worked (she worked: pracowała)"
+      },
+      "forms": [
+        "pracowała"
+      ]
+    },
+    {
+      "id": "mieszkac-mieszkal",
+      "text": "mieszkał",
+      "meaning": {
+        "en": "he lived (she lived: mieszkała)"
+      },
+      "forms": [
+        "mieszkała"
+      ]
+    },
+    {
+      "id": "robic-robil",
+      "text": "robił",
+      "meaning": {
+        "en": "he did, he was doing (she did: robiła)"
+      },
+      "forms": [
+        "robiła"
+      ]
+    },
+    {
+      "id": "kariera",
+      "text": "kariera",
+      "meaning": {
+        "en": "a career (robić karierę: to build a career)"
+      },
+      "forms": [
+        "karierę"
+      ]
+    },
+    {
+      "id": "zostac-zostal",
+      "text": "został",
+      "meaning": {
+        "en": "he became (został inżynierem: he became an engineer; she became: została)"
+      },
+      "forms": [
+        "została"
+      ]
+    },
+    {
+      "id": "emerytura",
+      "text": "emerytura",
+      "meaning": {
+        "en": "retirement, a pension (na emeryturze: retired; przejść na emeryturę: to retire)"
+      },
+      "forms": [
+        "na emeryturę",
+        "na emeryturze"
+      ]
+    },
+    {
+      "id": "przejsc-przeszedl",
+      "text": "przeszedł",
+      "meaning": {
+        "en": "he went over (przeszedł na emeryturę: he retired; she: przeszła)"
+      },
+      "forms": [
+        "przeszła"
+      ]
+    },
+    {
+      "id": "umrzec-umarl",
+      "text": "umarł",
+      "meaning": {
+        "en": "he died (she died: umarła)"
+      },
+      "forms": [
+        "umarła"
+      ]
+    },
+    {
+      "id": "w-ktorym-roku",
+      "text": "w którym roku?",
+      "meaning": {
+        "en": "in which year?"
+      }
+    },
+    {
+      "id": "w-roku",
+      "text": "w roku",
+      "meaning": {
+        "en": "in the year (w dwutysięcznym roku: in the year 2000)"
+      }
+    },
+    {
+      "id": "dziewiecdziesiaty",
+      "text": "dziewięćdziesiąty",
+      "meaning": {
+        "en": "ninetieth (w tysiąc dziewięćset dziewięćdziesiątym roku: in 1990)"
+      },
+      "forms": [
+        "dziewięćdziesiątego",
+        "dziewięćdziesiątym"
+      ]
+    },
+    {
+      "id": "siedemdziesiaty",
+      "text": "siedemdziesiąty",
+      "meaning": {
+        "en": "seventieth (w tysiąc dziewięćset siedemdziesiątym roku: in 1970)"
+      },
+      "forms": [
+        "siedemdziesiątego",
+        "siedemdziesiątym"
+      ]
+    },
+    {
+      "id": "szescdziesiaty",
+      "text": "sześćdziesiąty",
+      "meaning": {
+        "en": "sixtieth (w tysiąc dziewięćset sześćdziesiątym roku: in 1960)"
+      },
+      "forms": [
+        "sześćdziesiątego",
+        "sześćdziesiątym"
+      ]
+    },
+    {
+      "id": "czterdziesty",
+      "text": "czterdziesty",
+      "meaning": {
+        "en": "fortieth (w tysiąc dziewięćset czterdziestym roku: in 1940)"
+      },
+      "forms": [
+        "czterdziestego",
+        "czterdziestym"
+      ]
+    },
+    {
+      "id": "dwutysieczny",
+      "text": "dwutysięczny",
+      "meaning": {
+        "en": "two-thousandth (w dwutysięcznym roku: in the year 2000)"
+      },
+      "forms": [
+        "dwutysięcznym",
+        "dwutysięcznego"
+      ]
+    },
+    {
+      "id": "tysiace",
+      "text": "tysiące",
+      "meaning": {
+        "en": "thousands (dwa tysiące: two thousand)"
+      }
+    },
+    {
+      "id": "wojna",
+      "text": "wojna",
+      "meaning": {
+        "en": "a war (po wojnie: after the war; w czasie wojny: during the war)"
+      },
+      "forms": [
+        "wojny",
+        "po wojnie",
+        "przed wojną",
+        "w czasie wojny"
+      ]
+    },
+    {
+      "id": "powstanie-warszawskie",
+      "text": "Powstanie Warszawskie",
+      "meaning": {
+        "en": "the Warsaw Uprising of 1944 (w Powstaniu Warszawskim: in the Warsaw Uprising)"
+      },
+      "forms": [
+        "w Powstaniu Warszawskim"
+      ]
+    },
+    {
+      "id": "zginac",
+      "text": "zginął",
+      "meaning": {
+        "en": "he was killed, he died (in a war or an accident; she: zginęła; they: zginęli)"
+      },
+      "forms": [
+        "zginęła",
+        "zginęli"
+      ]
+    },
+    {
+      "id": "stocznia",
+      "text": "stocznia",
+      "meaning": {
+        "en": "a shipyard (w Stoczni Gdańskiej: in the Gdańsk Shipyard)"
+      },
+      "forms": [
+        "w stoczni",
+        "w Stoczni Gdańskiej"
+      ]
+    },
+    {
+      "id": "solidarnosc",
+      "text": "Solidarność",
+      "meaning": {
+        "en": "Solidarity, the free trade union born in 1980 (w Solidarności: in Solidarity)"
+      },
+      "forms": [
+        "w Solidarności"
+      ]
+    },
+    {
+      "id": "komunizm",
+      "text": "komunizm",
+      "meaning": {
+        "en": "communism (w komunizmie: under communism)"
+      },
+      "forms": [
+        "w komunizmie"
+      ]
+    },
+    {
+      "id": "upasc",
+      "text": "upadł",
+      "meaning": {
+        "en": "it fell, it collapsed (komunizm upadł: communism fell)"
+      }
+    },
+    {
+      "id": "piecdziesiaty",
+      "text": "pięćdziesiąty",
+      "meaning": {
+        "en": "fiftieth (w tysiąc dziewięćset pięćdziesiątym roku: in 1950)"
+      },
+      "forms": [
+        "pięćdziesiątego",
+        "pięćdziesiątym"
+      ]
+    },
+    {
+      "id": "robic-robilam",
+      "text": "robiłam",
+      "meaning": {
+        "en": "I was doing, I used to do (said by a woman; a man says robiłem)"
+      },
+      "forms": [
+        "robiłem"
+      ]
+    },
+    {
+      "id": "zrobic-zrobilam",
+      "text": "zrobiłam",
+      "meaning": {
+        "en": "I did, I got (it) done (said by a woman; a man says zrobiłem)"
+      },
+      "forms": [
+        "zrobiłem"
+      ]
+    },
+    {
+      "id": "zrobic-zrobilas",
+      "text": "zrobiłaś",
+      "meaning": {
+        "en": "you did, you got (it) done (to a woman; to a man: zrobiłeś)"
+      },
+      "forms": [
+        "zrobiłeś"
+      ]
+    },
+    {
+      "id": "przeczytac-przeczytalam",
+      "text": "przeczytałam",
+      "meaning": {
+        "en": "I read (it to the end) (said by a woman; a man says przeczytałem)"
+      },
+      "forms": [
+        "przeczytałem"
+      ]
+    },
+    {
+      "id": "caly",
+      "text": "cały",
+      "meaning": {
+        "en": "the whole, all (cały wieczór: all evening) (cały, cała, całe)"
+      },
+      "forms": [
+        "cała",
+        "całe",
+        "całą"
+      ]
+    },
+    {
+      "id": "do-konca",
+      "text": "do końca",
+      "meaning": {
+        "en": "to the end"
+      }
+    },
+    {
+      "id": "wieczor",
+      "text": "wieczór",
+      "meaning": {
+        "en": "an evening (cały wieczór: all evening)"
+      }
+    },
+    {
+      "id": "praca-domowa",
+      "text": "praca domowa",
+      "meaning": {
+        "en": "homework"
+      },
+      "forms": [
+        "pracę domową",
+        "pracy domowej"
+      ]
+    },
+    {
+      "id": "pic-pilam",
+      "text": "piłam",
+      "meaning": {
+        "en": "I was drinking, I drank (said by a woman; a man says piłem; we were drinking: piliśmy)"
+      },
+      "forms": [
+        "piłem",
+        "piliśmy"
+      ]
+    },
+    {
+      "id": "wypic-wypilam",
+      "text": "wypiłam",
+      "meaning": {
+        "en": "I drank (it all up) (said by a woman; a man says wypiłem; we drank: wypiliśmy)"
+      },
+      "forms": [
+        "wypiłem",
+        "wypiliśmy"
+      ]
+    },
+    {
+      "id": "gotowac-gotowalam",
+      "text": "gotowałam",
+      "meaning": {
+        "en": "I was cooking (said by a woman; a man says gotowałem)"
+      },
+      "forms": [
+        "gotowałem"
+      ]
+    },
+    {
+      "id": "ugotowac-ugotowalam",
+      "text": "ugotowałam",
+      "meaning": {
+        "en": "I cooked (it, and it was ready) (said by a woman; a man says ugotowałem; you cooked, to a woman: ugotowałaś)"
+      },
+      "forms": [
+        "ugotowałem",
+        "ugotowałaś"
+      ]
+    },
+    {
+      "id": "kupowac-kupowalam",
+      "text": "kupowałam",
+      "meaning": {
+        "en": "I was buying, I used to buy (said by a woman; a man says kupowałem)"
+      },
+      "forms": [
+        "kupowałem"
+      ]
+    },
+    {
+      "id": "sprzatac-sprzatalam",
+      "text": "sprzątałam",
+      "meaning": {
+        "en": "I was cleaning (said by a woman; a man says sprzątałem)"
+      },
+      "forms": [
+        "sprzątałem"
+      ]
+    },
+    {
+      "id": "posprzatac-posprzatalam",
+      "text": "posprzątałam",
+      "meaning": {
+        "en": "I cleaned (it all, and it was clean) (said by a woman; a man says posprzątałem)"
+      },
+      "forms": [
+        "posprzątałem"
+      ]
+    },
+    {
+      "id": "czysto",
+      "text": "czysto",
+      "meaning": {
+        "en": "clean (jest czysto: it is clean)"
+      }
+    },
+    {
+      "id": "dzwonic-dzwonilem",
+      "text": "dzwoniłem",
+      "meaning": {
+        "en": "I was calling, I kept calling (said by a man; a woman says dzwoniłam)"
+      },
+      "forms": [
+        "dzwoniłam"
+      ]
+    },
+    {
+      "id": "zadzwonic-zadzwonilem",
+      "text": "zadzwoniłem",
+      "meaning": {
+        "en": "I called, I rang (once) (said by a man; a woman says zadzwoniłam; you called, to a woman: zadzwoniłaś; she called: zadzwoniła)"
+      },
+      "forms": [
+        "zadzwoniłam",
+        "zadzwoniłaś",
+        "zadzwoniła"
+      ]
+    },
+    {
+      "id": "zapraszac-zapraszalam",
+      "text": "zapraszałam",
+      "meaning": {
+        "en": "I was inviting, I used to invite (said by a woman; a man says zapraszałem)"
+      },
+      "forms": [
+        "zapraszałem"
+      ]
+    },
+    {
+      "id": "zaprosic-zaprosilam",
+      "text": "zaprosiłam",
+      "meaning": {
+        "en": "I invited (said by a woman; a man says zaprosiłem)"
+      },
+      "forms": [
+        "zaprosiłem"
+      ]
+    },
+    {
+      "id": "spotykac-sie-spotykalismy",
+      "text": "spotykaliśmy się",
+      "meaning": {
+        "en": "we used to meet, we were meeting (said by women: spotykałyśmy się)"
+      },
+      "forms": [
+        "spotykałyśmy się"
+      ]
+    },
+    {
+      "id": "spotkac-spotkalam",
+      "text": "spotkałam",
+      "meaning": {
+        "en": "I met, I ran into (said by a woman; a man says spotkałem)"
+      },
+      "forms": [
+        "spotkałem"
+      ]
+    },
+    {
+      "id": "podziekowac-podziekowalam",
+      "text": "podziękowałam",
+      "meaning": {
+        "en": "I thanked (said by a woman; a man says podziękowałem)"
+      },
+      "forms": [
+        "podziękowałem"
+      ]
+    },
+    {
+      "id": "co-tydzien",
+      "text": "co tydzień",
+      "meaning": {
+        "en": "every week"
+      }
+    },
+    {
+      "id": "wstawac-wstawalam",
+      "text": "wstawałam",
+      "meaning": {
+        "en": "I used to get up (said by a woman; a man says wstawałem)"
+      },
+      "forms": [
+        "wstawałem"
+      ]
+    },
+    {
+      "id": "nagle",
+      "text": "nagle",
+      "meaning": {
+        "en": "suddenly"
+      }
+    },
+    {
+      "id": "w-koncu",
+      "text": "w końcu",
+      "meaning": {
+        "en": "in the end, finally"
+      }
+    },
+    {
+      "id": "wreszcie",
+      "text": "wreszcie",
+      "meaning": {
+        "en": "at last"
+      }
+    },
+    {
+      "id": "obejrzec-obejrzalem",
+      "text": "obejrzałem",
+      "meaning": {
+        "en": "I watched (all of it) (said by a man; a woman says obejrzałam; you watched, to a man: obejrzałeś)"
+      },
+      "forms": [
+        "obejrzałam",
+        "obejrzałeś"
+      ]
+    },
+    {
+      "id": "rozmawiac-rozmawialismy",
+      "text": "rozmawialiśmy",
+      "meaning": {
+        "en": "we were talking"
+      }
+    },
+    {
+      "id": "porozmawiac-porozmawialismy",
+      "text": "porozmawialiśmy",
+      "meaning": {
+        "en": "we had a talk"
+      }
+    },
+    {
+      "id": "roku",
+      "text": "roku",
+      "meaning": {
+        "en": "of the year (in a whole date: piątego maja dwutysięcznego roku, on 5 May 2000)"
+      }
+    }
+  ]
+}

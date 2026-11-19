@@ -1,0 +1,487 @@
+{
+  "id": "kpk1-l21-d2",
+  "section": {
+    "letter": "D",
+    "heading": "Mami, co robiłaś?",
+    "meaning": {
+      "en": "Mami, what were you doing?"
+    },
+    "strands": [
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-d2-t01",
+      "before": "kpk1-l21-d2-e01",
+      "title": {
+        "en": "Pary aspektowe"
+      },
+      "body": {
+        "en": "Pairs to learn by heart: *pić* and *wypić*, *jeść* and *zjeść*, *gotować* and *ugotować*, *kupować* and *kupić*, *sprzątać* and *posprzątać*. *Gotowałam obiad* says what I was busy with; *ugotowałam obiad* says the lunch is ready. *Sprzątałam, ale jeszcze nie jest czysto*: I was cleaning, but it is not clean yet. *Posprzątałam*: it is clean now."
+      },
+      "table": {
+        "title": {
+          "en": "Pary aspektowe"
+        },
+        "columns": [
+          {
+            "header": "niedokonany"
+          },
+          {
+            "header": "dokonany"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "pić",
+              "wypić"
+            ]
+          },
+          {
+            "cells": [
+              "jeść",
+              "zjeść"
+            ]
+          },
+          {
+            "cells": [
+              "gotować",
+              "ugotować"
+            ]
+          },
+          {
+            "cells": [
+              "kupować",
+              "kupić"
+            ]
+          },
+          {
+            "cells": [
+              "sprzątać",
+              "posprzątać"
+            ]
+          },
+          {
+            "cells": [
+              "czytać",
+              "przeczytać"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d2-e01",
+      "prompt": "piłam",
+      "options": [
+        {
+          "en": "I was eating"
+        },
+        {
+          "en": "I was drinking, I drank (said by a woman; a man says piłem; we were drinking: piliśmy)"
+        },
+        {
+          "en": "I paid"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pic-pilam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d2-e02",
+      "prompt": "wypiłam",
+      "options": [
+        {
+          "en": "I cooked"
+        },
+        {
+          "en": "I ate"
+        },
+        {
+          "en": "I drank (it all up) (said by a woman; a man says wypiłem; we drank: wypiliśmy)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wypic-wypilam"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-d2-e03",
+      "text": "Wypiłam całą kawę.",
+      "meaning": {
+        "en": "I drank all the coffee."
+      },
+      "distractors": [
+        "Piłam kawę.",
+        "Wypiłam całą herbatę."
+      ],
+      "items": [
+        "wypic-wypilam",
+        "caly",
+        "kawa-acc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d2-e04",
+      "prompt": "gotowałam",
+      "options": [
+        {
+          "en": "I was cooking (said by a woman; a man says gotowałem)"
+        },
+        {
+          "en": "I was eating"
+        },
+        {
+          "en": "I was cleaning"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "gotowac-gotowalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d2-e05",
+      "prompt": "ugotowałam",
+      "options": [
+        {
+          "en": "I bought"
+        },
+        {
+          "en": "I cooked (it, and it was ready) (said by a woman; a man says ugotowałem; you cooked, to a woman: ugotowałaś)"
+        },
+        {
+          "en": "I cleaned"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ugotowac-ugotowalam"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-d2-e06",
+      "text": "Wczoraj długo ___ obiad.",
+      "meaning": {
+        "en": "Yesterday I spent a long time cooking lunch."
+      },
+      "gaps": [
+        [
+          "gotowałam"
+        ]
+      ],
+      "distractors": [
+        "ugotowałam",
+        "gotuję"
+      ],
+      "items": [
+        "wczoraj",
+        "dlugo",
+        "gotowac-gotowalam",
+        "obiad"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d2-e07",
+      "prompt": "kupowałam",
+      "options": [
+        {
+          "en": "I sold"
+        },
+        {
+          "en": "I was reading"
+        },
+        {
+          "en": "I was buying, I used to buy (said by a woman; a man says kupowałem)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "kupowac-kupowalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d2-e08",
+      "prompt": "sprzątałam",
+      "options": [
+        {
+          "en": "I was cleaning (said by a woman; a man says sprzątałem)"
+        },
+        {
+          "en": "I was cooking"
+        },
+        {
+          "en": "I was sleeping"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sprzatac-sprzatalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d2-e09",
+      "prompt": "posprzątałam",
+      "options": [
+        {
+          "en": "I cooked"
+        },
+        {
+          "en": "I cleaned (it all, and it was clean) (said by a woman; a man says posprzątałem)"
+        },
+        {
+          "en": "I washed"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "posprzatac-posprzatalam"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-d2-e10",
+      "prompt": "czysto",
+      "options": [
+        {
+          "en": "dirty"
+        },
+        {
+          "en": "quiet"
+        },
+        {
+          "en": "clean (jest czysto: it is clean)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czysto"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-d2-e11",
+      "prompt": {
+        "en": "I cleaned the flat and now it is clean"
+      },
+      "acceptedAnswers": [
+        "posprzątałam mieszkanie i teraz jest czysto"
+      ],
+      "distractors": [
+        "sprzątałam",
+        "czysty"
+      ],
+      "items": [
+        "posprzatac-posprzatalam",
+        "mieszkanie",
+        "i",
+        "teraz",
+        "byc-jest",
+        "czysto"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-d2-e12",
+      "pairs": [
+        {
+          "polish": "piłam",
+          "meaning": {
+            "en": "I was drinking"
+          }
+        },
+        {
+          "polish": "wypiłam",
+          "meaning": {
+            "en": "I drank it all"
+          }
+        },
+        {
+          "polish": "gotowałam",
+          "meaning": {
+            "en": "I was cooking"
+          }
+        },
+        {
+          "polish": "ugotowałam",
+          "meaning": {
+            "en": "I cooked it"
+          }
+        },
+        {
+          "polish": "kupowałam",
+          "meaning": {
+            "en": "I used to buy"
+          }
+        }
+      ],
+      "items": [
+        "pic-pilam",
+        "wypic-wypilam",
+        "gotowac-gotowalam",
+        "ugotowac-ugotowalam",
+        "kupowac-kupowalam"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-d2-e13",
+      "prompt": {
+        "en": "I was cleaning (said by a man)"
+      },
+      "acceptedAnswers": [
+        "sprzątałem"
+      ],
+      "items": [
+        "sprzatac-sprzatalam"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-d2-e14",
+      "acceptedAnswers": [
+        "ugotowałam zupę"
+      ],
+      "meaning": {
+        "en": "I cooked some soup"
+      },
+      "items": [
+        "ugotowac-ugotowalam",
+        "zupa-acc"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-d2-e15",
+      "text": "Długo ___, ale jeszcze nie jest czysto.",
+      "meaning": {
+        "en": "I was cleaning for a long time, but it is not clean yet."
+      },
+      "gaps": [
+        [
+          "sprzątałam"
+        ]
+      ],
+      "distractors": [
+        "posprzątałam",
+        "sprzątam"
+      ],
+      "items": [
+        "dlugo",
+        "sprzatac-sprzatalam",
+        "ale",
+        "jeszcze",
+        "nie",
+        "byc-jest",
+        "czysto"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-d2-e16",
+      "lines": [
+        "W sobotę kupiłam mięso i warzywa.",
+        "Potem ugotowałam obiad.",
+        "Wszystko zjadłam!"
+      ],
+      "meaning": {
+        "en": "Lunch on Saturday."
+      },
+      "statements": [
+        {
+          "text": "W sobotę zrobiła zakupy.",
+          "meaning": {
+            "en": "On Saturday she did the shopping."
+          },
+          "true": true
+        },
+        {
+          "text": "Obiad nie jest gotowy.",
+          "meaning": {
+            "en": "Lunch is not ready."
+          },
+          "true": false
+        },
+        {
+          "text": "Zjadła wszystko.",
+          "meaning": {
+            "en": "She ate everything."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "sobota",
+        "kupic-kupilam",
+        "mieso",
+        "i",
+        "warzywa",
+        "potem",
+        "ugotowac-ugotowalam",
+        "obiad",
+        "wszystko",
+        "zjesc-zjadlam"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-d2-e17",
+      "lines": [
+        "Co robiłaś wczoraj wieczorem?",
+        "Gotowałam i piłam wino.",
+        "A co ugotowałaś?",
+        "Ugotowałam pierogi."
+      ],
+      "meaning": {
+        "en": "An evening at home."
+      },
+      "items": [
+        "co",
+        "robic-robilas",
+        "wczoraj",
+        "wieczorem",
+        "gotowac-gotowalam",
+        "i",
+        "pic-pilam",
+        "wino",
+        "a",
+        "ugotowac-ugotowalam",
+        "pierogi"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-d2-e18",
+      "text": "Kiedyś kupowałam chleb w supermarkecie.",
+      "meaning": {
+        "en": "I used to buy bread in a supermarket."
+      },
+      "distractors": [
+        "Kiedyś kupiłam chleb w supermarkecie.",
+        "Kiedyś kupowałam chleb na rynku."
+      ],
+      "items": [
+        "kiedys",
+        "kupowac-kupowalam",
+        "chleb",
+        "w-supermarkecie"
+      ]
+    }
+  ]
+}

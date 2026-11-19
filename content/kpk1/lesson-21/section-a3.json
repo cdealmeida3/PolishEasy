@@ -1,0 +1,451 @@
+{
+  "id": "kpk1-l21-a3",
+  "section": {
+    "letter": "A",
+    "heading": "Kiedy masz urodziny i imieniny?",
+    "meaning": {
+      "en": "When is your birthday and your name day?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-a3-t01",
+      "before": "kpk1-l21-a3-e01",
+      "title": {
+        "en": "Kiedy? Pierwszego maja"
+      },
+      "body": {
+        "en": "To say on which day something happens, the ordinal goes into the genitive too, and there is no word for *on*: *pierwszego maja*, on the first of May. The ending is *-ego*: *drugiego*, *trzeciego*, *piątego*. *Kiedy masz urodziny? Piątego czerwca.* But to say what the date is, the ordinal stays as it is: *dziś jest piąty czerwca*."
+      },
+      "table": {
+        "title": {
+          "en": "Kiedy?"
+        },
+        "columns": [
+          {
+            "header": "który dziś jest?"
+          },
+          {
+            "header": "kiedy?"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "pierwszy maja",
+              "pierwszego maja"
+            ]
+          },
+          {
+            "cells": [
+              "drugi czerwca",
+              "drugiego czerwca"
+            ]
+          },
+          {
+            "cells": [
+              "trzeci lipca",
+              "trzeciego lipca"
+            ]
+          },
+          {
+            "cells": [
+              "piąty sierpnia",
+              "piątego sierpnia"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a3-e01",
+      "prompt": "maja",
+      "options": [
+        {
+          "en": "in May"
+        },
+        {
+          "en": "of May (trzeciego maja: on the third of May)"
+        },
+        {
+          "en": "of March"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "maja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a3-e02",
+      "prompt": "czwarty",
+      "options": [
+        {
+          "en": "fourteenth"
+        },
+        {
+          "en": "forty"
+        },
+        {
+          "en": "fourth (czwartego: on the fourth)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "czwarty"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-a3-e03",
+      "text": "Mam urodziny czwartego maja.",
+      "meaning": {
+        "en": "My birthday is on the fourth of May."
+      },
+      "distractors": [
+        "Mam urodziny czwartego marca.",
+        "Mam imieniny czwartego maja."
+      ],
+      "items": [
+        "miec-mam",
+        "urodziny",
+        "czwarty",
+        "maja"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a3-e04",
+      "prompt": "czerwca",
+      "options": [
+        {
+          "en": "of June (piątego czerwca: on the fifth of June)"
+        },
+        {
+          "en": "of July"
+        },
+        {
+          "en": "in June"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "czerwca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a3-e05",
+      "prompt": "piąty",
+      "options": [
+        {
+          "en": "fifteenth"
+        },
+        {
+          "en": "fifth (piątego: on the fifth)"
+        },
+        {
+          "en": "fourth"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "piaty"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-a3-e06",
+      "text": "Kiedy masz urodziny? ___ czerwca.",
+      "meaning": {
+        "en": "When is your birthday? On the fifth of June."
+      },
+      "gaps": [
+        [
+          "Piątego"
+        ]
+      ],
+      "distractors": [
+        "Piąty",
+        "Pięć"
+      ],
+      "items": [
+        "kiedy-masz-urodziny",
+        "piaty",
+        "czerwca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a3-e07",
+      "prompt": "lipca",
+      "options": [
+        {
+          "en": "of June"
+        },
+        {
+          "en": "of April"
+        },
+        {
+          "en": "of July (szóstego lipca: on the sixth of July)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "lipca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a3-e08",
+      "prompt": "szósty",
+      "options": [
+        {
+          "en": "sixth (szóstego: on the sixth)"
+        },
+        {
+          "en": "seventh"
+        },
+        {
+          "en": "sixty"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "szosty"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-a3-e09",
+      "prompt": {
+        "en": "on the sixth of July"
+      },
+      "acceptedAnswers": [
+        "szóstego lipca"
+      ],
+      "distractors": [
+        "szósty",
+        "lipiec"
+      ],
+      "items": [
+        "szosty",
+        "lipca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a3-e10",
+      "prompt": "sierpnia",
+      "options": [
+        {
+          "en": "of September"
+        },
+        {
+          "en": "of August (siódmego sierpnia: on the seventh of August)"
+        },
+        {
+          "en": "in August"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "sierpnia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a3-e11",
+      "prompt": "siódmy",
+      "options": [
+        {
+          "en": "seventeenth"
+        },
+        {
+          "en": "sixth"
+        },
+        {
+          "en": "seventh (siódmego: on the seventh)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "siodmy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-a3-e12",
+      "prompt": {
+        "en": "on the seventh of August"
+      },
+      "acceptedAnswers": [
+        "siódmego sierpnia"
+      ],
+      "items": [
+        "siodmy",
+        "sierpnia"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-a3-e13",
+      "pairs": [
+        {
+          "polish": "maja",
+          "meaning": {
+            "en": "of May"
+          }
+        },
+        {
+          "polish": "czerwca",
+          "meaning": {
+            "en": "of June"
+          }
+        },
+        {
+          "polish": "lipca",
+          "meaning": {
+            "en": "of July"
+          }
+        },
+        {
+          "polish": "sierpnia",
+          "meaning": {
+            "en": "of August"
+          }
+        },
+        {
+          "polish": "piątego",
+          "meaning": {
+            "en": "on the fifth"
+          }
+        }
+      ],
+      "items": [
+        "maja",
+        "czerwca",
+        "lipca",
+        "sierpnia",
+        "piaty"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-a3-e14",
+      "acceptedAnswers": [
+        "pierwszego czerwca"
+      ],
+      "meaning": {
+        "en": "on the first of June"
+      },
+      "items": [
+        "pierwszy",
+        "czerwca"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-a3-e15",
+      "lines": [
+        "Moja siostra ma urodziny siódmego lipca.",
+        "Mój brat ma urodziny czwartego sierpnia.",
+        "A mama ma imieniny szóstego maja."
+      ],
+      "meaning": {
+        "en": "Birthdays in my family."
+      },
+      "statements": [
+        {
+          "text": "Siostra ma urodziny w lipcu.",
+          "meaning": {
+            "en": "My sister's birthday is in July."
+          },
+          "true": true
+        },
+        {
+          "text": "Brat ma urodziny w czerwcu.",
+          "meaning": {
+            "en": "My brother's birthday is in June."
+          },
+          "true": false
+        },
+        {
+          "text": "Mama ma imieniny w maju.",
+          "meaning": {
+            "en": "Mum's name day is in May."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "moja",
+        "siostra",
+        "miec-ma",
+        "urodziny",
+        "siodmy",
+        "lipca",
+        "moj",
+        "brat",
+        "czwarty",
+        "sierpnia",
+        "a",
+        "mama",
+        "imieniny",
+        "szosty",
+        "maja"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-a3-e16",
+      "text": "Dziś jest ___ sierpnia.",
+      "meaning": {
+        "en": "Today is the fifth of August."
+      },
+      "gaps": [
+        [
+          "piąty"
+        ]
+      ],
+      "distractors": [
+        "piątego",
+        "pięć"
+      ],
+      "items": [
+        "dzis",
+        "byc-jest",
+        "piaty",
+        "sierpnia"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-a3-e17",
+      "prompt": {
+        "en": "my name day is on the seventh of June"
+      },
+      "acceptedAnswers": [
+        "mam imieniny siódmego czerwca"
+      ],
+      "distractors": [
+        "siódmy",
+        "czerwiec"
+      ],
+      "items": [
+        "miec-mam",
+        "imieniny",
+        "siodmy",
+        "czerwca"
+      ]
+    }
+  ]
+}

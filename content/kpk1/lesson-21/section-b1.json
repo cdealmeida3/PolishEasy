@@ -1,0 +1,381 @@
+{
+  "id": "kpk1-l21-b1",
+  "section": {
+    "letter": "B",
+    "heading": "Sto lat i wszystkiego najlepszego!",
+    "meaning": {
+      "en": "Sto lat and all the best!"
+    },
+    "strands": [
+      "K",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-b1-t01",
+      "before": "kpk1-l21-b1-e01",
+      "title": {
+        "en": "Wszystkiego najlepszego!"
+      },
+      "body": {
+        "en": "*Wszystkiego najlepszego!* is all the best, the Polish happy birthday. To wish someone something say *życzę* and *ci* (to you), and put the wish in the genitive: *życzę ci zdrowia*, *szczęścia*, *miłości*, *pomyślności* and *sukcesów w pracy*. From a whole family it is *życzymy*. Good wishes are *życzenia*."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b1-e01",
+      "prompt": "wszystkiego najlepszego!",
+      "options": [
+        {
+          "en": "good night!"
+        },
+        {
+          "en": "all the best!, happy birthday!"
+        },
+        {
+          "en": "enjoy your meal!"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "wszystkiego-najlepszego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b1-e02",
+      "prompt": "życzę",
+      "options": [
+        {
+          "en": "I invite"
+        },
+        {
+          "en": "I thank"
+        },
+        {
+          "en": "I wish (życzę ci zdrowia: I wish you health; życzymy: we wish; życzy: he or she wishes)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zyczyc-zycze"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-b1-e03",
+      "text": "Wszystkiego najlepszego z okazji urodzin!",
+      "meaning": {
+        "en": "All the best for your birthday!"
+      },
+      "distractors": [
+        "Wszystkiego najlepszego z okazji imienin!",
+        "Wszystkiego najlepszego z okazji świąt!"
+      ],
+      "items": [
+        "wszystkiego-najlepszego",
+        "z-okazji-urodzin"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b1-e04",
+      "prompt": "zdrowia",
+      "options": [
+        {
+          "en": "health (in a wish: życzę ci zdrowia)"
+        },
+        {
+          "en": "luck"
+        },
+        {
+          "en": "love"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "zdrowia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b1-e05",
+      "prompt": "szczęścia",
+      "options": [
+        {
+          "en": "health"
+        },
+        {
+          "en": "happiness, luck (in a wish: życzę ci szczęścia)"
+        },
+        {
+          "en": "money"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "szczescia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-b1-e06",
+      "text": "Życzę ci ___ i szczęścia!",
+      "meaning": {
+        "en": "I wish you health and happiness!"
+      },
+      "gaps": [
+        [
+          "zdrowia"
+        ]
+      ],
+      "distractors": [
+        "zdrowie",
+        "zdrowy"
+      ],
+      "items": [
+        "zyczyc-zycze",
+        "ci",
+        "zdrowia",
+        "i",
+        "szczescia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b1-e07",
+      "prompt": "miłości",
+      "options": [
+        {
+          "en": "friendship"
+        },
+        {
+          "en": "health"
+        },
+        {
+          "en": "love (in a wish: życzę ci miłości)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "milosci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b1-e08",
+      "prompt": "sukcesów",
+      "options": [
+        {
+          "en": "success (in a wish: sukcesów w pracy: success at work)"
+        },
+        {
+          "en": "holidays"
+        },
+        {
+          "en": "problems"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "sukcesow"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b1-e09",
+      "prompt": "pomyślności",
+      "options": [
+        {
+          "en": "patience"
+        },
+        {
+          "en": "good fortune, prosperity (in a wish)"
+        },
+        {
+          "en": "good weather"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "pomyslnosci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-b1-e10",
+      "prompt": "życzenia",
+      "options": [
+        {
+          "en": "presents"
+        },
+        {
+          "en": "invitations"
+        },
+        {
+          "en": "good wishes (składać życzenia: to give your good wishes)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zyczenia"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-b1-e11",
+      "prompt": {
+        "en": "I wish you love"
+      },
+      "acceptedAnswers": [
+        "życzę ci miłości"
+      ],
+      "distractors": [
+        "miłość",
+        "życzenia"
+      ],
+      "items": [
+        "zyczyc-zycze",
+        "ci",
+        "milosci"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-b1-e12",
+      "pairs": [
+        {
+          "polish": "zdrowia",
+          "meaning": {
+            "en": "health"
+          }
+        },
+        {
+          "polish": "szczęścia",
+          "meaning": {
+            "en": "happiness, luck"
+          }
+        },
+        {
+          "polish": "miłości",
+          "meaning": {
+            "en": "love"
+          }
+        },
+        {
+          "polish": "sukcesów",
+          "meaning": {
+            "en": "success"
+          }
+        },
+        {
+          "polish": "pomyślności",
+          "meaning": {
+            "en": "good fortune"
+          }
+        }
+      ],
+      "items": [
+        "zdrowia",
+        "szczescia",
+        "milosci",
+        "sukcesow",
+        "pomyslnosci"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-b1-e13",
+      "prompt": {
+        "en": "all the best!"
+      },
+      "acceptedAnswers": [
+        "wszystkiego najlepszego!"
+      ],
+      "items": [
+        "wszystkiego-najlepszego"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-b1-e14",
+      "acceptedAnswers": [
+        "życzę ci szczęścia"
+      ],
+      "meaning": {
+        "en": "I wish you happiness"
+      },
+      "items": [
+        "zyczyc-zycze",
+        "ci",
+        "szczescia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-b1-e15",
+      "text": "Życzymy ci sukcesów w ___!",
+      "meaning": {
+        "en": "We wish you success at work!"
+      },
+      "gaps": [
+        [
+          "pracy"
+        ]
+      ],
+      "distractors": [
+        "praca",
+        "pracę"
+      ],
+      "items": [
+        "zyczyc-zycze",
+        "ci",
+        "sukcesow",
+        "w-pracy"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-b1-e16",
+      "lines": [
+        "Wszystkiego najlepszego z okazji urodzin!",
+        "Dziękuję!",
+        "Życzę ci zdrowia, szczęścia i pomyślności.",
+        "Dziękuję bardzo, to bardzo miłe."
+      ],
+      "meaning": {
+        "en": "A birthday wish."
+      },
+      "items": [
+        "wszystkiego-najlepszego",
+        "z-okazji-urodzin",
+        "dziekuje",
+        "zyczyc-zycze",
+        "ci",
+        "zdrowia",
+        "szczescia",
+        "i",
+        "pomyslnosci",
+        "bardzo",
+        "to",
+        "mily"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-b1-e17",
+      "prompt": {
+        "en": "good wishes"
+      },
+      "acceptedAnswers": [
+        "życzenia"
+      ],
+      "items": [
+        "zyczenia"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "id": "kpk1-l21-c3",
+  "section": {
+    "letter": "C",
+    "heading": "Biografia",
+    "meaning": {
+      "en": "A life story"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-c3-t01",
+      "before": "kpk1-l21-c3-e01",
+      "title": {
+        "en": "Miłość i rodzina"
+      },
+      "body": {
+        "en": "*Poznał*, *poznała*: he or she met someone. *Zakochał się*, *zakochała się*: fell in love. Then they *pobrali się*, got married. Of one person: a man *ożenił się*, a woman *wyszła za mąż*. *Była w ciąży* is she was pregnant, and *urodziła syna* or *córkę* is she had a son or a daughter."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c3-e01",
+      "prompt": "poznał",
+      "options": [
+        {
+          "en": "he forgot"
+        },
+        {
+          "en": "he met, he got to know (she met: poznała; they met: poznali)"
+        },
+        {
+          "en": "he visited"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "poznac-poznal"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c3-e02",
+      "prompt": "zakochał się",
+      "options": [
+        {
+          "en": "he got angry"
+        },
+        {
+          "en": "he fell asleep"
+        },
+        {
+          "en": "he fell in love (she: zakochała się; I fell in love: zakochałem się, zakochałam się)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zakochac-sie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c3-e03",
+      "text": "Zakochał się, kiedy poznał ją na studiach.",
+      "meaning": {
+        "en": "He fell in love when he met her at university."
+      },
+      "distractors": [
+        "Zakochał się, kiedy poznał ją w pracy.",
+        "Zakochała się, kiedy poznała go na studiach."
+      ],
+      "items": [
+        "zakochac-sie",
+        "kiedy",
+        "poznac-poznal",
+        "ja-acc",
+        "studia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c3-e04",
+      "prompt": "pobrali się",
+      "options": [
+        {
+          "en": "they got married (we got married: pobraliśmy się)"
+        },
+        {
+          "en": "they got divorced"
+        },
+        {
+          "en": "they moved house"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pobrac-sie"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c3-e05",
+      "prompt": "ożenił się",
+      "options": [
+        {
+          "en": "he got divorced"
+        },
+        {
+          "en": "he got married (said of a man; I got married, said by a man: ożeniłem się)"
+        },
+        {
+          "en": "he got a job"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "ozenic-sie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c3-e06",
+      "text": "Dziadek i babcia ___ się w czerwcu.",
+      "meaning": {
+        "en": "Grandad and grandma got married in June."
+      },
+      "gaps": [
+        [
+          "pobrali"
+        ]
+      ],
+      "distractors": [
+        "pobrał",
+        "pobrała"
+      ],
+      "items": [
+        "dziadek",
+        "i",
+        "babcia",
+        "pobrac-sie",
+        "czerwiec"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c3-e07",
+      "prompt": "wyszła za mąż",
+      "options": [
+        {
+          "en": "she went out"
+        },
+        {
+          "en": "she left her husband"
+        },
+        {
+          "en": "she got married (said of a woman; I got married, said by a woman: wyszłam za mąż)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "wyjsc-za-maz"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c3-e08",
+      "prompt": "w ciąży",
+      "options": [
+        {
+          "en": "pregnant (być w ciąży: to be pregnant)"
+        },
+        {
+          "en": "ill"
+        },
+        {
+          "en": "on holiday"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "w-ciazy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c3-e09",
+      "prompt": "urodziła",
+      "options": [
+        {
+          "en": "she brought up"
+        },
+        {
+          "en": "she gave birth to, she had (a baby) (I had: urodziłam)"
+        },
+        {
+          "en": "she met"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "urodzic"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-c3-e10",
+      "prompt": {
+        "en": "she was pregnant"
+      },
+      "acceptedAnswers": [
+        "była w ciąży"
+      ],
+      "distractors": [
+        "był",
+        "ciąża"
+      ],
+      "items": [
+        "byc-byla",
+        "w-ciazy"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-c3-e11",
+      "pairs": [
+        {
+          "polish": "poznał",
+          "meaning": {
+            "en": "he met"
+          }
+        },
+        {
+          "polish": "zakochał się",
+          "meaning": {
+            "en": "he fell in love"
+          }
+        },
+        {
+          "polish": "pobrali się",
+          "meaning": {
+            "en": "they got married"
+          }
+        },
+        {
+          "polish": "wyszła za mąż",
+          "meaning": {
+            "en": "she got married"
+          }
+        },
+        {
+          "polish": "w ciąży",
+          "meaning": {
+            "en": "pregnant"
+          }
+        }
+      ],
+      "items": [
+        "poznac-poznal",
+        "zakochac-sie",
+        "pobrac-sie",
+        "wyjsc-za-maz",
+        "w-ciazy"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-c3-e12",
+      "prompt": {
+        "en": "she had a son"
+      },
+      "acceptedAnswers": [
+        "urodziła syna"
+      ],
+      "items": [
+        "urodzic",
+        "syn-acc"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-c3-e13",
+      "acceptedAnswers": [
+        "ożenił się"
+      ],
+      "meaning": {
+        "en": "he got married"
+      },
+      "items": [
+        "ozenic-sie"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-c3-e14",
+      "lines": [
+        "Mama poznała tatę na studiach.",
+        "Pobrali się w lipcu.",
+        "Potem mama urodziła mnie."
+      ],
+      "meaning": {
+        "en": "How my parents met."
+      },
+      "statements": [
+        {
+          "text": "Rodzice poznali się na studiach.",
+          "meaning": {
+            "en": "My parents met at university."
+          },
+          "true": true
+        },
+        {
+          "text": "Pobrali się w czerwcu.",
+          "meaning": {
+            "en": "They got married in June."
+          },
+          "true": false
+        },
+        {
+          "text": "Mama i tata pobrali się w lipcu.",
+          "meaning": {
+            "en": "Mum and dad got married in July."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "mama",
+        "poznac-poznal",
+        "tata-acc",
+        "studia",
+        "pobrac-sie",
+        "lipiec",
+        "potem",
+        "urodzic",
+        "mnie"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c3-e15",
+      "text": "Moja siostra ___ za mąż w maju.",
+      "meaning": {
+        "en": "My sister got married in May."
+      },
+      "gaps": [
+        [
+          "wyszła"
+        ]
+      ],
+      "distractors": [
+        "wyszłam",
+        "ożeniła"
+      ],
+      "items": [
+        "moja",
+        "siostra",
+        "wyjsc-za-maz",
+        "maj"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-c3-e16",
+      "lines": [
+        "Mój brat się ożenił!",
+        "Naprawdę? Kiedy?",
+        "W sobotę. Jego żona jest w ciąży.",
+        "Wszystkiego najlepszego!"
+      ],
+      "meaning": {
+        "en": "A wedding in the family."
+      },
+      "items": [
+        "moj",
+        "brat",
+        "ozenic-sie",
+        "naprawde",
+        "kiedy",
+        "sobota",
+        "jego",
+        "zona",
+        "byc-jest",
+        "w-ciazy",
+        "wszystkiego-najlepszego"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c3-e17",
+      "text": "Urodziła córkę w marcu.",
+      "meaning": {
+        "en": "She had a daughter in March."
+      },
+      "distractors": [
+        "Urodziła syna w marcu.",
+        "Urodziła córkę w maju."
+      ],
+      "items": [
+        "urodzic",
+        "corka-acc",
+        "marzec"
+      ]
+    }
+  ]
+}

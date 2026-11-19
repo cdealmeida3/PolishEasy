@@ -1,0 +1,444 @@
+{
+  "id": "kpk1-l21-c6",
+  "section": {
+    "letter": "C",
+    "heading": "Biografia",
+    "meaning": {
+      "en": "A life story"
+    },
+    "strands": [
+      "K",
+      "L"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-c6-t01",
+      "before": "kpk1-l21-c6-e01",
+      "title": {
+        "en": "Historia"
+      },
+      "body": {
+        "en": "Some dates of Polish history. *Wojna*, the Second World War, began in 1939. In 1944 Warsaw rose against the German army, *Powstanie Warszawskie*, and many people *zginęli*, were killed. In 1980 the workers of *Stocznia Gdańska*, the shipyard in *Gdańsk*, started *Solidarność*, and in 1989 *komunizm upadł*: communism fell."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c6-e01",
+      "prompt": "wojna",
+      "options": [
+        {
+          "en": "a war (po wojnie: after the war; w czasie wojny: during the war)"
+        },
+        {
+          "en": "peace"
+        },
+        {
+          "en": "an army"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "wojna"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c6-e02",
+      "prompt": "Powstanie Warszawskie",
+      "options": [
+        {
+          "en": "the Warsaw Metro"
+        },
+        {
+          "en": "the Warsaw Uprising of 1944 (w Powstaniu Warszawskim: in the Warsaw Uprising)"
+        },
+        {
+          "en": "Warsaw University"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "powstanie-warszawskie"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c6-e03",
+      "text": "Powstanie Warszawskie było w tysiąc dziewięćset czterdziestym czwartym roku.",
+      "meaning": {
+        "en": "The Warsaw Uprising was in 1944."
+      },
+      "distractors": [
+        "Powstanie Warszawskie było w tysiąc dziewięćset czterdziestym piątym roku.",
+        "Wojna była w tysiąc dziewięćset czterdziestym czwartym roku."
+      ],
+      "items": [
+        "powstanie-warszawskie",
+        "byc-bylo",
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "czterdziesty",
+        "czwarty"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c6-e04",
+      "prompt": "zginął",
+      "options": [
+        {
+          "en": "he was born"
+        },
+        {
+          "en": "he was saved"
+        },
+        {
+          "en": "he was killed, he died (in a war or an accident; she: zginęła; they: zginęli)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "zginac"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c6-e05",
+      "prompt": "stocznia",
+      "options": [
+        {
+          "en": "a shipyard (w Stoczni Gdańskiej: in the Gdańsk Shipyard)"
+        },
+        {
+          "en": "a station"
+        },
+        {
+          "en": "a factory"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "stocznia"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c6-e06",
+      "text": "Dziadek pracował w ___ Gdańskiej.",
+      "meaning": {
+        "en": "Grandad worked in the Gdańsk Shipyard."
+      },
+      "gaps": [
+        [
+          "Stoczni"
+        ]
+      ],
+      "distractors": [
+        "Stocznia",
+        "Stocznię"
+      ],
+      "items": [
+        "dziadek",
+        "pracowac-pracowal",
+        "stocznia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c6-e07",
+      "prompt": "Solidarność",
+      "options": [
+        {
+          "en": "freedom"
+        },
+        {
+          "en": "Solidarity, the free trade union born in 1980 (w Solidarności: in Solidarity)"
+        },
+        {
+          "en": "friendship"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "solidarnosc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c6-e08",
+      "prompt": "komunizm",
+      "options": [
+        {
+          "en": "capitalism"
+        },
+        {
+          "en": "a communist"
+        },
+        {
+          "en": "communism (w komunizmie: under communism)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "komunizm"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c6-e09",
+      "prompt": "upadł",
+      "options": [
+        {
+          "en": "it fell, it collapsed (komunizm upadł: communism fell)"
+        },
+        {
+          "en": "it began"
+        },
+        {
+          "en": "it won"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "upasc"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-c6-e10",
+      "prompt": "pięćdziesiąty",
+      "options": [
+        {
+          "en": "fifteenth"
+        },
+        {
+          "en": "fiftieth (w tysiąc dziewięćset pięćdziesiątym roku: in 1950)"
+        },
+        {
+          "en": "fifty"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "piecdziesiaty"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-c6-e11",
+      "prompt": {
+        "en": "communism fell in 1989"
+      },
+      "acceptedAnswers": [
+        "komunizm upadł w tysiąc dziewięćset osiemdziesiątym dziewiątym roku"
+      ],
+      "distractors": [
+        "upadła",
+        "dziewięćdziesiątym"
+      ],
+      "items": [
+        "komunizm",
+        "upasc",
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "osiemdziesiaty",
+        "dziewiaty"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-c6-e12",
+      "pairs": [
+        {
+          "polish": "wojna",
+          "meaning": {
+            "en": "a war"
+          }
+        },
+        {
+          "polish": "Powstanie Warszawskie",
+          "meaning": {
+            "en": "the Warsaw Uprising"
+          }
+        },
+        {
+          "polish": "stocznia",
+          "meaning": {
+            "en": "a shipyard"
+          }
+        },
+        {
+          "polish": "Solidarność",
+          "meaning": {
+            "en": "Solidarity"
+          }
+        },
+        {
+          "polish": "komunizm",
+          "meaning": {
+            "en": "communism"
+          }
+        }
+      ],
+      "items": [
+        "wojna",
+        "powstanie-warszawskie",
+        "stocznia",
+        "solidarnosc",
+        "komunizm"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-c6-e13",
+      "prompt": {
+        "en": "a war"
+      },
+      "acceptedAnswers": [
+        "wojna"
+      ],
+      "items": [
+        "wojna"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-c6-e14",
+      "acceptedAnswers": [
+        "zginął w czasie wojny"
+      ],
+      "meaning": {
+        "en": "he was killed in the war"
+      },
+      "items": [
+        "zginac",
+        "wojna"
+      ]
+    },
+    {
+      "type": "true_false",
+      "id": "kpk1-l21-c6-e15",
+      "lines": [
+        "Dziadek urodził się w tysiąc dziewięćset trzydziestym roku.",
+        "W czasie wojny był mały.",
+        "Po wojnie pracował w stoczni i był w Solidarności."
+      ],
+      "meaning": {
+        "en": "Grandad's story."
+      },
+      "statements": [
+        {
+          "text": "Dziadek urodził się przed wojną.",
+          "meaning": {
+            "en": "Grandad was born before the war."
+          },
+          "true": true
+        },
+        {
+          "text": "W czasie wojny dziadek był dorosły.",
+          "meaning": {
+            "en": "During the war grandad was a grown-up."
+          },
+          "true": false
+        },
+        {
+          "text": "Dziadek był w Solidarności.",
+          "meaning": {
+            "en": "Grandad was in Solidarity."
+          },
+          "true": true
+        }
+      ],
+      "items": [
+        "dziadek",
+        "urodzic-sie-urodzil",
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "trzydziesty",
+        "wojna",
+        "byc-byl",
+        "maly",
+        "pracowac-pracowal",
+        "stocznia",
+        "i",
+        "solidarnosc"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-c6-e16",
+      "text": "Dziadek zdał maturę w tysiąc dziewięćset ___ roku.",
+      "meaning": {
+        "en": "Grandad passed his school-leaving exam in 1950."
+      },
+      "gaps": [
+        [
+          "pięćdziesiątym"
+        ]
+      ],
+      "distractors": [
+        "pięćdziesiąt",
+        "pięćdziesiąty"
+      ],
+      "items": [
+        "dziadek",
+        "zdac-zdal",
+        "matura",
+        "w-roku",
+        "tysiac",
+        "dziewiecset",
+        "piecdziesiaty"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-c6-e17",
+      "lines": [
+        "Gdzie pan pracował po wojnie?",
+        "W stoczni, w Gdańsku.",
+        "Był pan w Solidarności?",
+        "Tak, w osiemdziesiątym roku."
+      ],
+      "meaning": {
+        "en": "After the war."
+      },
+      "items": [
+        "gdzie",
+        "pan",
+        "pracowac-pracowal",
+        "wojna",
+        "stocznia",
+        "gdansk",
+        "byc-byl",
+        "solidarnosc",
+        "tak",
+        "w-roku",
+        "osiemdziesiaty"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-c6-e18",
+      "text": "Jego ojciec zginął w Powstaniu Warszawskim.",
+      "meaning": {
+        "en": "His father was killed in the Warsaw Uprising."
+      },
+      "distractors": [
+        "Jego matka zginęła w Powstaniu Warszawskim.",
+        "Jego ojciec zginął w czasie wojny."
+      ],
+      "items": [
+        "jego",
+        "ojciec",
+        "zginac",
+        "powstanie-warszawskie"
+      ]
+    }
+  ]
+}

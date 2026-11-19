@@ -1,0 +1,414 @@
+{
+  "id": "kpk1-l21-a2",
+  "section": {
+    "letter": "A",
+    "heading": "Kiedy masz urodziny i imieniny?",
+    "meaning": {
+      "en": "When is your birthday and your name day?"
+    },
+    "strands": [
+      "L",
+      "G"
+    ]
+  },
+  "tips": [
+    {
+      "id": "kpk1-l21-a2-t01",
+      "before": "kpk1-l21-a2-e01",
+      "title": {
+        "en": "Który dziś jest?"
+      },
+      "body": {
+        "en": "To ask the date say *który dziś jest?*: which day is it today? The answer is an ordinal number, *pierwszy* (first), *drugi* (second), *trzeci* (third), and the month in the genitive: *dziś jest pierwszy marca*, today is the first of March. Most months end in *-a* there, *stycznia*, *marca*, *kwietnia*, but *luty* becomes *lutego*."
+      },
+      "table": {
+        "title": {
+          "en": "Który dziś jest?"
+        },
+        "columns": [
+          {
+            "header": "miesiąc"
+          },
+          {
+            "header": "data"
+          }
+        ],
+        "rows": [
+          {
+            "cells": [
+              "styczeń",
+              "pierwszy stycznia"
+            ]
+          },
+          {
+            "cells": [
+              "luty",
+              "drugi lutego"
+            ]
+          },
+          {
+            "cells": [
+              "marzec",
+              "trzeci marca"
+            ]
+          },
+          {
+            "cells": [
+              "kwiecień",
+              "pierwszy kwietnia"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a2-e01",
+      "prompt": "który dziś jest?",
+      "options": [
+        {
+          "en": "what time is it?"
+        },
+        {
+          "en": "how old are you?"
+        },
+        {
+          "en": "what's the date today?"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "ktory-dzis-jest"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a2-e02",
+      "prompt": "pierwszy",
+      "options": [
+        {
+          "en": "first (pierwszy maja: the first of May; pierwszego maja: on the first of May)"
+        },
+        {
+          "en": "second"
+        },
+        {
+          "en": "last"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "pierwszy"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a2-e03",
+      "prompt": "stycznia",
+      "options": [
+        {
+          "en": "of March"
+        },
+        {
+          "en": "of January (pierwszy stycznia: the first of January)"
+        },
+        {
+          "en": "in June"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "stycznia"
+      ]
+    },
+    {
+      "type": "listen_choose",
+      "id": "kpk1-l21-a2-e04",
+      "text": "Dziś jest pierwszy stycznia.",
+      "meaning": {
+        "en": "Today is the first of January."
+      },
+      "distractors": [
+        "Dziś jest pierwszy lutego.",
+        "Dziś jest drugi stycznia."
+      ],
+      "items": [
+        "dzis",
+        "byc-jest",
+        "pierwszy",
+        "stycznia"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a2-e05",
+      "prompt": "drugi",
+      "options": [
+        {
+          "en": "third"
+        },
+        {
+          "en": "first"
+        },
+        {
+          "en": "second (drugi maja: the second of May; drugiego maja: on the second of May)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "drugi"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a2-e06",
+      "prompt": "lutego",
+      "options": [
+        {
+          "en": "of February (drugi lutego: the second of February)"
+        },
+        {
+          "en": "of January"
+        },
+        {
+          "en": "of April"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "lutego"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-a2-e07",
+      "text": "Dziś jest drugi ___.",
+      "meaning": {
+        "en": "Today is the second of February."
+      },
+      "gaps": [
+        [
+          "lutego"
+        ]
+      ],
+      "distractors": [
+        "luty",
+        "w lutym"
+      ],
+      "items": [
+        "dzis",
+        "byc-jest",
+        "drugi",
+        "lutego"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a2-e08",
+      "prompt": "trzeci",
+      "options": [
+        {
+          "en": "second"
+        },
+        {
+          "en": "third (trzeci maja: the third of May; trzeciego maja: on the third of May)"
+        },
+        {
+          "en": "thirteenth"
+        }
+      ],
+      "correctOption": 1,
+      "items": [
+        "trzeci"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a2-e09",
+      "prompt": "marca",
+      "options": [
+        {
+          "en": "of May"
+        },
+        {
+          "en": "in March"
+        },
+        {
+          "en": "of March (trzeci marca: the third of March)"
+        }
+      ],
+      "correctOption": 2,
+      "items": [
+        "marca"
+      ]
+    },
+    {
+      "type": "choose_translation",
+      "id": "kpk1-l21-a2-e10",
+      "prompt": "kwietnia",
+      "options": [
+        {
+          "en": "of April (pierwszy kwietnia: the first of April)"
+        },
+        {
+          "en": "of August"
+        },
+        {
+          "en": "of February"
+        }
+      ],
+      "correctOption": 0,
+      "items": [
+        "kwietnia"
+      ]
+    },
+    {
+      "type": "word_tiles",
+      "id": "kpk1-l21-a2-e11",
+      "prompt": {
+        "en": "today is the third of March"
+      },
+      "acceptedAnswers": [
+        "dziś jest trzeci marca"
+      ],
+      "distractors": [
+        "marzec",
+        "trzy"
+      ],
+      "items": [
+        "dzis",
+        "byc-jest",
+        "trzeci",
+        "marca"
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "id": "kpk1-l21-a2-e12",
+      "pairs": [
+        {
+          "polish": "stycznia",
+          "meaning": {
+            "en": "of January"
+          }
+        },
+        {
+          "polish": "lutego",
+          "meaning": {
+            "en": "of February"
+          }
+        },
+        {
+          "polish": "marca",
+          "meaning": {
+            "en": "of March"
+          }
+        },
+        {
+          "polish": "kwietnia",
+          "meaning": {
+            "en": "of April"
+          }
+        },
+        {
+          "polish": "który dziś jest?",
+          "meaning": {
+            "en": "what's the date today?"
+          }
+        }
+      ],
+      "items": [
+        "stycznia",
+        "lutego",
+        "marca",
+        "kwietnia",
+        "ktory-dzis-jest"
+      ]
+    },
+    {
+      "type": "type_answer",
+      "id": "kpk1-l21-a2-e13",
+      "prompt": {
+        "en": "the third of April"
+      },
+      "acceptedAnswers": [
+        "trzeci kwietnia"
+      ],
+      "items": [
+        "trzeci",
+        "kwietnia"
+      ]
+    },
+    {
+      "type": "listen_type",
+      "id": "kpk1-l21-a2-e14",
+      "acceptedAnswers": [
+        "który dziś jest?"
+      ],
+      "meaning": {
+        "en": "what's the date today?"
+      },
+      "items": [
+        "ktory-dzis-jest"
+      ]
+    },
+    {
+      "type": "order_lines",
+      "id": "kpk1-l21-a2-e15",
+      "lines": [
+        "Przepraszam, który dziś jest?",
+        "Dziś jest drugi kwietnia.",
+        "Drugi kwietnia? Naprawdę?",
+        "Tak, a co?",
+        "Jutro są moje urodziny!"
+      ],
+      "meaning": {
+        "en": "What's the date?"
+      },
+      "items": [
+        "przepraszam",
+        "ktory-dzis-jest",
+        "dzis",
+        "byc-jest",
+        "drugi",
+        "kwietnia",
+        "naprawde",
+        "tak",
+        "a",
+        "co",
+        "jutro",
+        "byc-sa",
+        "moje",
+        "urodziny"
+      ]
+    },
+    {
+      "type": "fill_gaps",
+      "id": "kpk1-l21-a2-e16",
+      "text": "Dziś jest ___ stycznia, a jutro drugi.",
+      "meaning": {
+        "en": "Today is the first of January, and tomorrow the second."
+      },
+      "gaps": [
+        [
+          "pierwszy"
+        ]
+      ],
+      "distractors": [
+        "pierwszego",
+        "pierwsza"
+      ],
+      "items": [
+        "dzis",
+        "byc-jest",
+        "pierwszy",
+        "stycznia",
+        "a",
+        "jutro",
+        "drugi"
+      ]
+    }
+  ]
+}
